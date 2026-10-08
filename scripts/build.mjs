@@ -111,7 +111,7 @@ function renderPage({ id, title, path, body, extraClass = "" }) {
     ${body}
   </main>
   <footer class="site-footer">
-    <p>公开页。内容来自公开时间线、信号表、权重追踪与 FLUX 3 提示词速查。</p>
+    <p>公开页。内容来自公开时间线、信号表、权重追踪与 FLUX 3 提示词速查、示例库、相机术语表。</p>
   </footer>
   <script src="${jsHref}"></script>
 </body>

@@ -1,8 +1,14 @@
 # AI前沿趋势
 
-公开静态站：趋势时间线、升级/推翻信号表、待交付权重追踪、FLUX 3 提示词速查表。
+公开静态站：趋势时间线、升级/推翻信号表、待交付权重追踪、FLUX 3 提示词速查表 / 官方示例库 / 相机术语表。
 
 站点地址：<https://codyshen0000.github.io/ai-frontier-trends/>
+
+FLUX 3 三页：
+
+- 速查表：<https://codyshen0000.github.io/ai-frontier-trends/flux3/>
+- 官方示例库：<https://codyshen0000.github.io/ai-frontier-trends/flux3/examples/>
+- 相机术语表：<https://codyshen0000.github.io/ai-frontier-trends/flux3/camera-terms/>
 
 ## 本地
 

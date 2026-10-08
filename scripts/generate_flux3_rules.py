@@ -1,4 +1,12 @@
-# FLUX 3 提示词速查表
+#!/usr/bin/env python3
+"""Write the FLUX 3 rules cheatsheet. Facts only from official docs."""
+
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+OUT = ROOT / "content" / "flux3-prompt-cheatsheet.md"
+
+MD = r'''# FLUX 3 提示词速查表
 
 整理自 Black Forest Labs 官方文档。检索日期：**2026-10-08**。说明用中文；**官方 prompt 保持英文原文**。完整长 prompt 在 [官方示例库](./examples/)，本页若缩短会标 **…** 并给出链接。未在文档出现的参数、上限或例子一律不写；自拟内容会标「示例（非官方）」。
 
@@ -425,3 +433,7 @@ flytrap、typewriter 对照及其他 cookbook prompt 全文在 [示例库 · Coo
 - Prompting：[summary](https://docs.bfl.ml/guides/prompting_summary) · [basics](https://docs.bfl.ml/guides/prompting_unified_basics) · [building](https://docs.bfl.ml/guides/prompting_unified_building) · [style](https://docs.bfl.ml/guides/prompting_unified_style) · [reference](https://docs.bfl.ml/guides/prompting_unified_reference) · [technical](https://docs.bfl.ml/guides/prompting_unified_technical) · [layout](https://docs.bfl.ml/guides/prompting_layout) · editing overview / single / multi
 - Video：[overview](https://docs.bfl.ml/guides/prompting_video_overview) · t2v / i2v / audio / editing / [camera terms](https://docs.bfl.ml/guides/prompting_video_camera_terms) · [FLUX 3 Video](https://docs.bfl.ml/flux_3/flux3_video) · [FLUX 3 overview](https://docs.bfl.ml/flux_3/flux3_overview) · [Video API](https://docs.bfl.ml/api-reference/utility/generate-a-video-with-flux-3)
 - Cookbook：quickstart · start_from_images · recast_continue · multishot_films
+'''
+
+OUT.write_text(MD.lstrip("\n"), encoding="utf-8")
+print(f"wrote {OUT} ({OUT.stat().st_size} bytes)")

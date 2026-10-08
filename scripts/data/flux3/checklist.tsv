@@ -1,0 +1,168 @@
+page	item	covered	correct	note
+guides/prompting_summary	10-rule summary / one-pager	yes	yes	
+guides/prompting_summary	Word order matters; main subject first	yes	yes	
+guides/prompting_unified_basics	Subject + Action + Style + Context structure	yes	yes	
+guides/prompting_unified_basics	Short-to-long prompt progression (beach example)	yes	yes	
+guides/prompting_unified_basics	Prompt length guidance (short/medium/long)	yes	yes	
+guides/prompting_unified_basics	FLUX 3 expands short prompts before generating (result.prompt)	no	yes	Not stated
+guides/prompting_unified_basics	Ballet long caption example	partial	yes	Summarized, not quoted
+guides/prompting_unified_basics	Bison long caption example	no	yes	
+guides/prompting_unified_basics	Literal \n line breaks in text (on-time poster)	no	yes	
+guides/prompting_unified_basics	Natural language over keyword lists	yes	yes	
+guides/prompting_unified_building	Components table (subject/location/style/lighting/color/effects/extra)	yes	yes	
+guides/prompting_unified_building	Step-by-step portrait build	yes	yes	
+guides/prompting_unified_building	Image-type list (portrait/landscape/birds-eye/macro/abstract)	no	yes	
+guides/prompting_unified_building	5 art-form prompts (sandcastle photo, impressionist robot, childlike dinosaurs, lo-fi convenience store, burning buildings film still)	no	yes	
+guides/prompting_unified_building	Use one or two strong effects	no	yes	
+guides/prompting_unified_building	One generic realism cue is enough	no	yes	
+guides/prompting_unified_building	Subject action/feel/mood detail guidance	partial	yes	
+guides/prompting_unified_building	Per-component example lists	partial	yes	
+guides/prompting_unified_building	Color-scheme prompt example	no	yes	
+guides/prompting_unified_building	Changing only location = fastest variation	no	yes	
+guides/prompting_unified_building	Clear structure matters more than length	no	yes	
+guides/prompting_unified_style	Style keyword / medium table	yes	yes	
+guides/prompting_unified_style	Camera/lens/film cues	yes	yes	
+guides/prompting_unified_style	Lighting cues table	yes	yes	
+guides/prompting_unified_style	Environmental light qualities (window/golden/blue/overhead)	no	yes	
+guides/prompting_unified_style	3 regenerated art prompts (1990s editorial, bison cobalt room, golden-hour guitarist)	no	yes	
+guides/prompting_unified_style	Character sheet / design categories opening sentences	no	yes	
+guides/prompting_unified_style	Style fusion (earlier model) & Style/Mood tags (FLUX.2 klein) templates	no	yes	Two ```text templates omitted
+guides/prompting_unified_style	Text: quote exact text	yes	yes	
+guides/prompting_unified_style	Text: placement/size/hierarchy	yes	yes	
+guides/prompting_unified_style	Text: color/effects (red neon letters, gold serif, chalk on blackboard)	no	yes	
+guides/prompting_unified_style	Text: font character (serif formal / sans modern / script elegant / display bold)	no	yes	
+guides/prompting_unified_style	Text: split long text into blocks; proofread every quoted string	no	yes	
+guides/prompting_unified_style	"Text: ""arranged in two centered lines"""	no	yes	
+guides/prompting_unified_style	Tokyo multilingual text table	yes	yes	
+guides/prompting_unified_style	Bilingual stamp panel & Cabin/Sauna layout examples	no	yes	
+guides/prompting_unified_style	Describe graphics with text in same box	no	yes	
+guides/prompting_unified_style	"a paper poster on the wall that reads ""OPEN LATE"""	no	yes	
+guides/prompting_unified_reference	Camera / lighting / composition reference tables	yes	yes	
+guides/prompting_unified_reference	Style Keywords table (Photographic/Cinematic/Artistic/Digital art/Illustration/Vintage)	no	yes	
+guides/prompting_unified_reference	Model-specific notes (FLUX.2 / Kontext)	no	yes	Out of scope; mention only
+guides/prompting_unified_technical	Negative -> positive phrasing table + examples	yes	yes	
+guides/prompting_unified_technical	aspect_ratio list (15 + auto) & auto behavior	yes	yes	"auto w/o refs=1:1 per guide; API ref adds ""ratio requested in prompt wins"" (doc nuance)"
+guides/prompting_unified_technical	Resolution values	partial	no	Cheat sheet lists 4 (768sq/1k/2k/4k); flux3_image_overview + API ref also have 1.5k; technical page lists 4 (doc inconsistency)
+guides/prompting_unified_technical	Set ratio explicitly when an edit should change frame + describe new space	no	yes	
+guides/prompting_unified_technical	HEX color usage	yes	yes	
+guides/prompting_unified_technical	JSON structured prompts	yes	yes	
+guides/prompting_editing_overview	Edit = say what changes and what stays	yes	yes	
+guides/prompting_editing_overview	Iteration chain (edit records)	yes	yes	
+guides/prompting_editing_overview	Check results when color accuracy matters	no	yes	
+guides/prompting_editing_overview	EditingShowcase 4 prompts (silver fox, zoom out, alter action, environment)	no	yes	
+guides/prompting_editing_single_reference	Edit catalog table	yes	yes	
+guides/prompting_editing_single_reference	FLUX.2 vs FLUX 3 result attribution	partial	no	Header claims FLUX.2 marks follow page, but only the can is marked; page labels only bottle/cow/neon zum Schlappen/outfit/ice butterfly/owl eyes as FLUX 3, rest are FLUX.2 results
+guides/prompting_editing_single_reference	Cow hex recolor prompt	partial	no	"Truncated w/o ellipsis: missing ""Keep the dark eyes, nose openings, collar, yellow ear tag and hooves unchanged..."" sentences"
+guides/prompting_editing_single_reference	"Neon ""zum Schlappen"" prompt"	partial	no	"Missing ""The new letters use continuous neon tubing and remain readable, with lowercase 'zum' and an uppercase 'S'..."""
+guides/prompting_editing_single_reference	Vague -> specific table	yes	yes	
+guides/prompting_editing_single_reference	Checklist row: Fix the image -> Open the owl's eyes	no	yes	
+guides/prompting_editing_single_reference	Background: describe new setting and its lighting	no	yes	
+guides/prompting_editing_single_reference	Style transfer: say what keeps its shape	no	yes	
+guides/prompting_editing_single_reference	12 omitted examples (mountain vista, remove vegetation, bike->horse, feathers->petals, ice butterfly, autumn, Flux.2 text, Night Bloom, Black Friday, #87CEEB dress, owl eyes, model pose)	no	yes	
+guides/prompting_editing_multi_reference	Refer to images by number (image 1 / image 2)	yes	yes	
+guides/prompting_editing_multi_reference	Multi-ref table / patterns	yes	yes	
+guides/prompting_editing_multi_reference	Plate pattern prompt	partial	no	"Truncated w/o ellipsis: missing ""The pattern follows the curved plate surface... Preserve the saturated burnt-orange..."""
+guides/prompting_editing_multi_reference	Lamp-on-sideboard record & rows	partial	yes	Described, not quoted
+guides/prompting_editing_multi_reference	A reference can supply more than one feature	no	yes	
+guides/prompting_editing_multi_reference	Set aspect_ratio when no reference has the shape	no	yes	
+guides/prompting_editing_multi_reference	FLUX.2 examples (Kodak skating, underwater room, impasto cat, animal pattern, smoke logo)	no	yes	
+guides/prompting_editing_multi_reference	Checklist rows: style of other one / add the product / make them wear it	no	yes	
+guides/prompting_layout	Layout JSON format (id, bbox, desc)	yes	yes	
+guides/prompting_layout	Row types (new / keep / from ref)	yes	yes	
+guides/prompting_layout	Keep ids short and unique	no	yes	
+guides/prompting_layout	Text rows: specify case, color, type style, alignment	partial	yes	"Only ""quote the text"""
+guides/prompting_layout	To change a planned layout, edit boxes and resend	no	yes	
+guides/prompting_layout	Six launch layout examples (soleil, panels, spectators, garden dinner, Tools, 4x4 grid)	no	yes	
+flux_3/flux3_image_bounding_boxes	Coordinates 0-1000 normalized / to_bbox conversion	yes	yes	
+flux_3/flux3_image_bounding_boxes	Small-box limit	yes	no	"Cheat sheet ""40×25 网格单位""; doc: ""a box of about 40 × 25 pixels"""
+flux_3/flux3_image_bounding_boxes	Tip: have an LLM draft the layout	no	yes	
+flux_3/flux3_image_bounding_boxes	Tip: vision model lists elements for edits	no	yes	
+flux_3/flux3_image_bounding_boxes	Tip: keep every row as Keep, change only edited rows	no	yes	
+flux_3/flux3_image_bounding_boxes	Unlisted areas usually hold, anchors make it explicit	no	yes	
+flux_3/flux3_image_bounding_boxes	Launch layout/edit explorer examples (~17 captions/records)	no	yes	
+flux_3/flux3_image_layout	FLUX 3 expands edit instruction & often auto-adds a box (returned in result.prompt)	no	yes	
+flux_3/flux3_image_layout	"Owl quickstart pattern ""In this image, change <owl_subject>, previously described as..."""	no	yes	
+flux_3/flux3_image_layout	Pixels outside boxes usually stay; shadows/reflections/nearby light may change	no	yes	
+flux_3/flux3_image_layout	Multi-image examples (bag #CC5500 #F5A623 #6B8E23, lake+ducks, furnish room, jacket from image 2)	no	yes	
+flux_3/flux3_image_layout	Box size limit	yes	no	Same unit error as bounding_boxes: doc says pixels
+api-reference/generate-an-image-with-flux-3 + flux3_image_overview + flux3_image_generate	POST /v1/flux-3-image endpoint	no	yes	
+api-reference/generate-an-image-with-flux-3 + flux3_image_overview + flux3_image_generate	prompt (required)	yes	yes	
+api-reference/generate-an-image-with-flux-3 + flux3_image_overview + flux3_image_generate	images 1-10, URL/base64, 256x256..16MP	yes	yes	
+api-reference/generate-an-image-with-flux-3 + flux3_image_overview + flux3_image_generate	aspect_ratio 15 + auto	yes	yes	
+api-reference/generate-an-image-with-flux-3 + flux3_image_overview + flux3_image_generate	resolution incl. 1.5k	partial	no	1.5k missing
+api-reference/generate-an-image-with-flux-3 + flux3_image_overview + flux3_image_generate	safety_tolerance 0-4 default 2	no	yes	
+api-reference/generate-an-image-with-flux-3 + flux3_image_overview + flux3_image_generate	grounding bool default true (web+image search; false = faster; Oktoberfest example)	no	yes	
+api-reference/generate-an-image-with-flux-3 + flux3_image_overview + flux3_image_generate	version: latest	no	yes	
+api-reference/generate-an-image-with-flux-3 + flux3_image_overview + flux3_image_generate	additionalProperties false -> 422 on unknown field	no	yes	
+api-reference/generate-an-image-with-flux-3 + flux3_image_overview + flux3_image_generate	Async polling: polling_url, statuses Pending/Reasoning/Generating/Ready/Request Moderated/Content Moderated/Error/Task not found	no	yes	
+api-reference/generate-an-image-with-flux-3 + flux3_image_overview + flux3_image_generate	Submit response id/polling_url/cost/input_mp/output_mp	no	yes	
+api-reference/generate-an-image-with-flux-3 + flux3_image_overview + flux3_image_generate	result.sample expires 1h; result.prompt = expanded prompt; result.duration	no	yes	
+api-reference/generate-an-image-with-flux-3 + flux3_image_overview + flux3_image_generate	Errors: 400 refs >16MP; 422 blank prompt/invalid/image<256; 503 JSON body	no	yes	
+api-reference/generate-an-image-with-flux-3 + flux3_image_overview + flux3_image_generate	Rabbit risograph quickstart prompt + 26 gallery prompts (photoreal/typography/infographic/illustration)	no	yes	
+guides/prompting_video_overview	Workflows t2v / i2v / v2v / edit	yes	yes	
+guides/prompting_video_overview	One-liner template & labeled fields	yes	yes	
+guides/prompting_video_overview	Timestep / HARD CUT phrasing	yes	yes	
+guides/prompting_video_overview	5-point strong-prompt checklist (continuity constraints, motion qualities)	partial	yes	
+guides/prompting_video_overview	Phase prompts (beekeeper/tram)	partial	yes	Only phase names
+guides/prompting_video_overview	Six v2v continuation prompts (elephants, penguin, hikers, Iguazu, giraffe, SUV)	no	yes	
+guides/prompting_video_overview	Pigeons video-edit example	no	yes	
+guides/prompting_video_overview	12 t2v gallery prompts	no	yes	
+guides/prompting_video_overview	Keyframe timestamps example 0:00/0:03/0:07/0:10	no	yes	
+guides/prompting_video_overview	i2v horse/car startframe example	yes	yes	
+guides/prompting_video_text_to_video	Six-part schema	yes	yes	
+guides/prompting_video_text_to_video	Desert schema example	partial	yes	Excerpted
+guides/prompting_video_text_to_video	Per-element schema descriptions (who/where/arc; setting/light/DOF; timecoded camera; per-shot audio; realism/palette/grain)	partial	yes	
+guides/prompting_video_text_to_video	When-to-use tip per format	no	yes	
+guides/prompting_video_text_to_video	Use concrete nouns/verbs the camera can see	no	yes	
+guides/prompting_video_text_to_video	Footsteps/impacts/rain/engines give audio clearer material	no	yes	
+guides/prompting_video_audio	Audio layers (dialogue/SFX/ambience/music)	yes	yes	
+guides/prompting_video_audio	Quoted dialogue + speaker attribution	yes	yes	
+guides/prompting_video_audio	Troubleshooting table	yes	yes	
+guides/prompting_video_audio	Four-layer table examples	partial	yes	
+guides/prompting_video_audio	"Use only details that change the read; adjective stacks fight; ""one audible breath"" too prominent"	no	yes	
+guides/prompting_video_audio	Five dialogue-writing rules (contractions, cut setup, no slogans, reason to speak, simple punctuation)	no	yes	
+guides/prompting_video_audio	Do not force several speakers/long script into short clip; split scene	no	yes	
+guides/prompting_video_audio	Multi-speaker attribution is review-heavy; keep other voices out when speech is focus	no	yes	
+guides/prompting_video_audio	Multilingual multi-speaker: identify by visible role, no overlap; accents paired with pace/emotion	no	yes	
+guides/prompting_video_audio	Directable targets, not exact controls	no	yes	
+guides/prompting_video_audio	Prompts: diner, aurora conductor EN/DE, orbital greenhouse ES/FR, Hindi chai	no	yes	
+guides/prompting_video_image_to_video	Startframe / start+end / keyframes modes table	yes	yes	
+guides/prompting_video_image_to_video	Explicit duration with timestamps or 3+ frames	yes	yes	API ref: [seconds,image] + duration auto runs to last pair rounded up (doc nuance)
+guides/prompting_video_image_to_video	Start+end use cases (reveal/transformation/loop)	no	yes	
+guides/prompting_video_image_to_video	Space frames achievably; keep look consistent	no	yes	
+guides/prompting_video_image_to_video	Rising sea & city day-cycle keyframe prompts	no	yes	
+guides/prompting_video_editing	Video edit guidance & examples (9 prompts)	yes	yes	
+guides/prompting_video_camera_terms	119 camera terms in 14 groups with desc + example prompt	no	no	Cheat sheet claims .md has no term list; it does (CAMERA_TERMS data)
+flux_3/flux3_video + flux3_overview + api-reference/generate-a-video-with-flux-3	POST /v1/flux-3-video; modes t2v/i2v/v2v/draft_enhance	partial	yes	
+flux_3/flux3_video + flux3_overview + api-reference/generate-a-video-with-flux-3	duration 5-20 or auto; v2v 5-15	no	yes	
+flux_3/flux3_video + flux3_overview + api-reference/generate-a-video-with-flux-3	Video aspect ratios auto/21:9/2:1/16:9/4:3/1:1/3:4/9:16/9:21	no	yes	
+flux_3/flux3_video + flux3_overview + api-reference/generate-a-video-with-flux-3	resolution hd(default)/fhd/qhd/uhd + dimension table (x32; uhd 16:9=3840x2176)	no	yes	
+flux_3/flux3_video + flux3_overview + api-reference/generate-a-video-with-flux-3	generate_audio default true	no	yes	
+flux_3/flux3_video + flux3_overview + api-reference/generate-a-video-with-flux-3	draft / draft_cache / draft_enhance (~1/3 cost, drafts hd; enhance fhd)	no	yes	
+flux_3/flux3_video + flux3_overview + api-reference/generate-a-video-with-flux-3	safety_tolerance 0-4 (sexual capped 3, hate 2)	no	yes	
+flux_3/flux3_video + flux3_overview + api-reference/generate-a-video-with-flux-3	keyframes 1-10 or [seconds,image]; start_video mp4; user; webhook_url	partial	yes	
+flux_3/flux3_video + flux3_overview + api-reference/generate-a-video-with-flux-3	Video Edit [fast] endpoint /v1/flux-tools/video-edit-v1 (video+prompt, no mode)	no	yes	
+flux_3/flux3_video + flux3_overview + api-reference/generate-a-video-with-flux-3	24 fps, up to 4K; preview model; Omni Reference soon; pricing; URLs expire ~2h	no	yes	
+flux_3/flux3_video + flux3_overview + api-reference/generate-a-video-with-flux-3	API example prompts (alley t2v/i2v/v2v, fox, seed->tree, 2D fox, FLUX kinetic title)	no	yes	
+cookbook/video/quickstart	Speaker needs a described mouth (flytrap)	no	yes	Cookbook absent from cheat sheet; note cookbook API shape (flux-3-preview-high, 480p/720p, frame_index keyframes) differs from main API ref
+cookbook/video/quickstart	Counting beats is load-bearing (typewriter described vs directed)	no	yes	Cookbook absent from cheat sheet; note cookbook API shape (flux-3-preview-high, 480p/720p, frame_index keyframes) differs from main API ref
+cookbook/video/quickstart	Pin a setting only when you can say why	no	yes	Cookbook absent from cheat sheet; note cookbook API shape (flux-3-preview-high, 480p/720p, frame_index keyframes) differs from main API ref
+cookbook/video/quickstart	"Speech trap fix: voiceover + ""These are the only words"", no captions"	no	yes	Cookbook absent from cheat sheet; note cookbook API shape (flux-3-preview-high, 480p/720p, frame_index keyframes) differs from main API ref
+cookbook/video/quickstart	Concurrency 5/org, 429; latency minutes; webhook_url	no	yes	Cookbook absent from cheat sheet; note cookbook API shape (flux-3-preview-high, 480p/720p, frame_index keyframes) differs from main API ref
+cookbook/video/quickstart	480p/720p settings table; status flow incl Reasoning	no	yes	Cookbook absent from cheat sheet; note cookbook API shape (flux-3-preview-high, 480p/720p, frame_index keyframes) differs from main API ref
+cookbook/video/start_from_images	Prompt the motion, not the scene	no	yes	Cookbook absent from cheat sheet; note cookbook API shape (flux-3-preview-high, 480p/720p, frame_index keyframes) differs from main API ref
+cookbook/video/start_from_images	Two-keyframe end pinning experimental; closing frame = duration x 24; integer duration	no	yes	Cookbook absent from cheat sheet; note cookbook API shape (flux-3-preview-high, 480p/720p, frame_index keyframes) differs from main API ref
+cookbook/video/start_from_images	reference_images: multi-view sheet, re-list anchors; never on screen	no	yes	Cookbook absent from cheat sheet; note cookbook API shape (flux-3-preview-high, 480p/720p, frame_index keyframes) differs from main API ref
+cookbook/video/start_from_images	keyframes + reference_images together -> 422	no	yes	Cookbook absent from cheat sheet; note cookbook API shape (flux-3-preview-high, 480p/720p, frame_index keyframes) differs from main API ref
+cookbook/video/start_from_images	5s clip fits only a short line	no	yes	Cookbook absent from cheat sheet; note cookbook API shape (flux-3-preview-high, 480p/720p, frame_index keyframes) differs from main API ref
+cookbook/video/edit_recast_continue	reference_video vs start_video	no	yes	Cookbook absent from cheat sheet; note cookbook API shape (flux-3-preview-high, 480p/720p, frame_index keyframes) differs from main API ref
+cookbook/video/edit_recast_continue	Recast medium: restate staging (silent-film sound swap); omit for new shot same cast	no	yes	Cookbook absent from cheat sheet; note cookbook API shape (flux-3-preview-high, 480p/720p, frame_index keyframes) differs from main API ref
+cookbook/video/edit_recast_continue	Continuation: name final frames first; duration = new segment only; carry sounds through seam	no	yes	Cookbook absent from cheat sheet; note cookbook API shape (flux-3-preview-high, 480p/720p, frame_index keyframes) differs from main API ref
+cookbook/video/edit_recast_continue	Mechanical subjects need imperfection written in	no	yes	Cookbook absent from cheat sheet; note cookbook API shape (flux-3-preview-high, 480p/720p, frame_index keyframes) differs from main API ref
+cookbook/video/edit_recast_continue	Inputs <=50MB, <=15s; 720p reference output caps 15s	no	yes	Cookbook absent from cheat sheet; note cookbook API shape (flux-3-preview-high, 480p/720p, frame_index keyframes) differs from main API ref
+cookbook/video/multishot_films	Consecutive shots differ strongly (scale)	no	yes	Cookbook absent from cheat sheet; note cookbook API shape (flux-3-preview-high, 480p/720p, frame_index keyframes) differs from main API ref
+cookbook/video/multishot_films	One audio bed; 2-3 shots per generation	no	yes	Cookbook absent from cheat sheet; note cookbook API shape (flux-3-preview-high, 480p/720p, frame_index keyframes) differs from main API ref
+cookbook/video/multishot_films	World bible pasted verbatim; audio motif staged per shot; one beat per shot	no	yes	Cookbook absent from cheat sheet; note cookbook API shape (flux-3-preview-high, 480p/720p, frame_index keyframes) differs from main API ref
+cookbook/video/multishot_films	Exactly-once direction; language lock	no	yes	Cookbook absent from cheat sheet; note cookbook API shape (flux-3-preview-high, 480p/720p, frame_index keyframes) differs from main API ref
+cookbook/video/multishot_films	Duration 5 action / 10-20 dialogue	no	yes	Cookbook absent from cheat sheet; note cookbook API shape (flux-3-preview-high, 480p/720p, frame_index keyframes) differs from main API ref
+guides/prompting_*	Common mistakes section	yes	yes	

@@ -153,6 +153,10 @@ a:hover {
   padding: 0 1.2rem;
 }
 
+.site-main.prose {
+  max-width: 1040px;
+}
+
 .site-main {
   padding-top: 2rem;
   padding-bottom: 3rem;
@@ -337,6 +341,81 @@ a:hover {
 .tag-narrative {
   color: var(--narrative);
   background: var(--narrative-bg);
+}
+
+.page-toc {
+  margin: 0 0 1.6rem;
+  padding: 0.9rem 1rem 1rem;
+  background: var(--bg-accent);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  font-family: "IBM Plex Sans", "Noto Sans SC", "PingFang SC", sans-serif;
+  font-size: 0.92rem;
+}
+
+.page-toc p {
+  margin: 0 0 0.45rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.page-toc ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  columns: 2;
+  column-gap: 1.4rem;
+}
+
+@media (max-width: 720px) {
+  .page-toc ul {
+    columns: 1;
+  }
+}
+
+.sister-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.85rem;
+  margin: 0 0 1.2rem;
+  font-family: "IBM Plex Sans", "Noto Sans SC", sans-serif;
+  font-size: 0.92rem;
+}
+
+.callout {
+  margin: 1rem 0 1.4rem;
+  padding: 0.85rem 1rem;
+  border-left: 4px solid var(--inferred);
+  background: var(--inferred-bg);
+  border-radius: 0 12px 12px 0;
+}
+
+.callout strong {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.05em 0.45em;
+  border-radius: 999px;
+  font-size: 0.78em;
+  font-family: "IBM Plex Sans", "Noto Sans SC", sans-serif;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.ex-meta {
+  margin: 0 0 0.35rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-family: "IBM Plex Sans", "Noto Sans SC", sans-serif;
+}
+
+.term-zh {
+  color: var(--muted);
+  font-weight: 500;
 }
 
 @media (max-width: 720px) {

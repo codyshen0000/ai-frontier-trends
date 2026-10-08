@@ -40,7 +40,23 @@
       "title": "FLUX 3 提示词速查表",
       "nav": "FLUX 3",
       "path": "/flux3/",
-      "summary": "官方 FLUX 3 文生图、编辑、bbox 与视频提示词速查，示例保持英文原文。"
+      "summary": "官方 FLUX 3 Image / Video 规则、参数、上限、字段、错误码、状态与定价。"
+    },
+    {
+      "id": "flux3-examples",
+      "file": "flux3-examples.md",
+      "title": "FLUX 3 官方示例库",
+      "nav": "示例库",
+      "path": "/flux3/examples/",
+      "summary": "官方文档中的全部示例 prompt，英文原文按工作流分组。"
+    },
+    {
+      "id": "flux3-camera",
+      "file": "flux3-camera-terms.md",
+      "title": "FLUX 3 相机术语表",
+      "nav": "相机术语",
+      "path": "/flux3/camera-terms/",
+      "summary": "官方 CAMERA_TERMS：119 个术语、14 组、说明与示例 prompt。"
     }
   ],
   "privatePages": []
