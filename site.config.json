@@ -33,6 +33,14 @@
       "nav": "权重追踪",
       "path": "/weights/",
       "summary": "已宣布、待交付的开源权重与产品上线跟踪。"
+    },
+    {
+      "id": "flux3",
+      "file": "flux3-prompt-cheatsheet.md",
+      "title": "FLUX 3 提示词速查表",
+      "nav": "FLUX 3",
+      "path": "/flux3/",
+      "summary": "官方 FLUX 3 文生图、编辑、bbox 与视频提示词速查，示例保持英文原文。"
     }
   ],
   "privatePages": []

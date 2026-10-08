@@ -14,6 +14,25 @@ const privatePages = new Set(config.privatePages ?? []);
 
 marked.setOptions({ gfm: true, breaks: false });
 
+function slugify(text) {
+  return String(text)
+    .replace(/<[^>]+>/g, "")
+    .trim()
+    .toLowerCase()
+    .replace(/[.]/g, "")
+    .replace(/[^\p{L}\p{N}\s-]/gu, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-");
+}
+
+const renderer = new marked.Renderer();
+renderer.heading = function heading({ tokens, depth }) {
+  const text = this.parser.parseInline(tokens);
+  const id = slugify(text);
+  return `<h${depth} id="${escapeHtml(id)}">${text}</h${depth}>\n`;
+};
+marked.use({ renderer });
+
 function decorateTags(html) {
   return html.replace(/【(证实|推断|叙事)[^】]*】/g, (match, kind) => {
     const cls =
@@ -92,7 +111,7 @@ function renderPage({ id, title, path, body, extraClass = "" }) {
     ${body}
   </main>
   <footer class="site-footer">
-    <p>公开页。内容来自公开时间线、信号表与权重追踪。</p>
+    <p>公开页。内容来自公开时间线、信号表、权重追踪与 FLUX 3 提示词速查。</p>
   </footer>
   <script src="${jsHref}"></script>
 </body>

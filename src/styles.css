@@ -196,7 +196,7 @@ a:hover {
 
 @media (min-width: 720px) {
   .card-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
 
@@ -236,8 +236,10 @@ a:hover {
 }
 
 .prose h2,
-.prose h3 {
+.prose h3,
+.prose h4 {
   line-height: 1.35;
+  scroll-margin-top: 5rem;
 }
 
 .prose h2 {
@@ -291,6 +293,27 @@ a:hover {
 .prose th {
   background: var(--bg-accent);
   font-weight: 600;
+}
+
+.prose pre {
+  overflow-x: auto;
+  background: var(--bg-accent);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  font-size: 0.84rem;
+  line-height: 1.55;
+}
+
+.prose code {
+  font-family: "IBM Plex Mono", "SFMono-Regular", ui-monospace, Menlo, Consolas, monospace;
+  font-size: 0.88em;
+}
+
+.prose :not(pre) > code {
+  background: var(--bg-accent);
+  border-radius: 6px;
+  padding: 0.08em 0.35em;
 }
 
 .tag {
