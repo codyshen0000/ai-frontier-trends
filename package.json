@@ -1,0 +1,17 @@
+{
+  "name": "ai-frontier-trends",
+  "private": true,
+  "type": "module",
+  "description": "AI前沿趋势公开静态站",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:public": "PUBLIC_DEPLOY=1 node scripts/build.mjs",
+    "preview": "node scripts/preview.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "marked": "^15.0.12"
+  }
+}

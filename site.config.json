@@ -1,0 +1,39 @@
+{
+  "title": "AI前沿趋势",
+  "description": "公开的 AI 前沿趋势时间线、升级/推翻信号与待交付权重追踪。",
+  "basePath": "/ai-frontier-trends",
+  "pages": [
+    {
+      "id": "home",
+      "title": "首页",
+      "nav": "首页",
+      "path": "/",
+      "home": true
+    },
+    {
+      "id": "timeline",
+      "file": "trend-timeline-public.md",
+      "title": "趋势时间线",
+      "nav": "时间线",
+      "path": "/timeline/",
+      "summary": "按主线整理的公开趋势判断，含证实/推断/叙事标注与升级、推翻信号。"
+    },
+    {
+      "id": "signals",
+      "file": "signals-tracker.md",
+      "title": "信号表",
+      "nav": "信号表",
+      "path": "/signals/",
+      "summary": "日报顺带检查的升级信号与推翻信号。"
+    },
+    {
+      "id": "weights",
+      "file": "weights-tracker.md",
+      "title": "开源权重追踪",
+      "nav": "权重追踪",
+      "path": "/weights/",
+      "summary": "已宣布、待交付的开源权重与产品上线跟踪。"
+    }
+  ],
+  "privatePages": []
+}
