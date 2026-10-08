@@ -12,11 +12,11 @@
     },
     {
       "id": "timeline",
-      "file": "trend-timeline-public.md",
+      "htmlFile": "timeline.html",
       "title": "趋势时间线",
       "nav": "时间线",
       "path": "/timeline/",
-      "summary": "按主线整理的公开趋势判断，含证实/推断/叙事标注与升级、推翻信号。"
+      "summary": "结论置顶、谱系图与可折叠主线：先模仿再强化，少步蒸馏未定型。"
     },
     {
       "id": "signals",

@@ -159,8 +159,19 @@ mkdirSync(distDir, { recursive: true });
 const contentPages = [];
 
 for (const page of config.pages) {
-  if (!page.file) continue;
   if (publicDeploy && privatePages.has(page.id)) continue;
+
+  if (page.htmlFile) {
+    const raw = readFileSync(join(contentDir, page.htmlFile), "utf8");
+    writePage(page.path, raw);
+    contentPages.push({
+      ...page,
+      summary: page.summary || page.title,
+    });
+    continue;
+  }
+
+  if (!page.file) continue;
 
   const source = prepareMarkdown(readFileSync(join(contentDir, page.file), "utf8"));
   const html = decorateTags(marked.parse(source)).replace(

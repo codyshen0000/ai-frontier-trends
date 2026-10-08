@@ -4,6 +4,8 @@
 
 站点地址：<https://codyshen0000.github.io/ai-frontier-trends/>
 
+趋势时间线（结论置顶 + 谱系图）：<https://codyshen0000.github.io/ai-frontier-trends/timeline/>
+
 FLUX 3 三页：
 
 - 速查表：<https://codyshen0000.github.io/ai-frontier-trends/flux3/>
