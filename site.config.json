@@ -11,6 +11,14 @@
       "home": true
     },
     {
+      "id": "live",
+      "htmlFile": "live.html",
+      "title": "实时热点看板",
+      "nav": "实时热点看板",
+      "path": "/live/",
+      "summary": "每晚简报后刷新的公开热点看板：重点方向、谱系与当日条目。"
+    },
+    {
       "id": "timeline",
       "htmlFile": "timeline.html",
       "title": "趋势时间线",
