@@ -14,7 +14,7 @@ pre.mermaid{background:#fff;text-align:center} a{color:#0969da}
 <p id="back-home"><a href="../">← 返回首页</a></p>
 <div id="ctl"><button onclick="t(false)">全部展开</button><button onclick="t(true)">全部折叠</button></div>
 <h1>AI 前沿趋势时间线（前沿趋势分析维护）</h1>
-<p><strong>一句话结论：训练配方正在收敛到"先模仿、再强化"。视频少步的研究主流仍是修 DMD，自动指标已经分不出好坏。</strong></p>
+<p><strong>一句话结论：傍晚 Rubric-CEPR 用内部 Critic 自蒸馏抬高 Qwen-Image-Edit 的 VIEScore；视频少步仍修 DMD；主线无推翻。</strong></p>
 <pre class="mermaid">graph LR
   A["LLM 后训练<br/>先 SFT/OPD 再 RL【证实】<br/>OPD 锐化分布，不扩边界"] --> B["共同原则<br/>反向 KL 下学自己的样本【推断】"]
   B --> C["扩散 OPD<br/>GFD-OPD · MILD"]
@@ -22,8 +22,9 @@ pre.mermaid{background:#fff;text-align:center} a{color:#0969da}
   D --> F["留在 DMD 上修（研究主流）<br/>PDMD · DMAD · DuoMatching · Salt++"]
   C --> E
   D -. 推翻信号 .-> G["无老师少步目标<br/>MeanFlow · shortcut"]
-  H["自动指标饱和<br/>学生超老师，人评不认"] --> I["可验证环境在链路两端【推断】<br/>VLM 评审闭环 · 世界动作模型"]
+  H["自动指标饱和<br/>学生超老师，人评不认"] --> I["可验证环境在链路两端【推断】<br/>内部 Critic 自蒸馏 · 世界动作模型"]
   E --> H
+  R["Rubric-CEPR<br/>Qwen-Image-Edit + VIEScore"] --> I
   J["数据差距<br/>LLM【证实】· 生图【叙事】"] --> A
   K["竞争转向可控【推断】"] --> L["结构化条件数据"]
   M["决策模型成品类【推断】<br/>Jev · d1 · Clef"]
@@ -31,7 +32,7 @@ pre.mermaid{background:#fff;text-align:center} a{color:#0969da}
 <blockquote>
 <p>标注规则：<strong>【证实】</strong>有对照实验或官方一手数据；<strong>【推断】</strong>我们的归纳，有间接证据；<strong>【叙事】</strong>常见说法，缺少能区分的证据。
 每条主线都写明"升级信号"（出现就上调置信度）和"推翻信号"（出现就撤回或改写）。有新证据时直接对照，不用从头再争。
-数据来源：每日热点汇总（X、小红书、官方博客、arXiv、HF Daily Papers）。</p>
+数据来源：AI热点追踪日报存档。</p>
 </blockquote>
 <hr />
 <h2>2026-10-08 首版（经前沿追踪群讨论修订，总控bot 主持，AI热点追踪 担任反方）</h2>
@@ -65,6 +66,7 @@ pre.mermaid{background:#fff;text-align:center} a{color:#0969da}
 <li>依据：纯生图里能自动判分的奖励已经接近饱和（GFD-OPD 学生 GenEval 0.963，超过老师的 0.949）；拉开差距的是美感和物理合理性，只能靠偏好判断。Kandinsky 6.0 用了 8 个奖励，自家人评里画面仍然输给 MiniMax H3 和 Seedance 2.0。</li>
 <li>补充（2026-10-08）：VIEScore2（<a href="https://arxiv.org/abs/2610.00994">arXiv 2610.00994</a>）给生成图打分并标出 16×16 缺陷格，先 SFT 再 RL，和人评的秩相关是 0.601。它是学出来的评审，不是可验证奖励，不满足下面的推翻信号。</li>
 <li>补充（2026-10-09）：世界动作模型这一端在升温。Long-WAM（<a href="https://arxiv.org/abs/2610.10528">arXiv 2610.10528</a>）把历史上下文加长后，RoboCasa 成功率从 63.3% 升到 78.7%（作者自报）。另有 Meta 的 RoboJEPA（8B latent 世界模型，arXiv 2610.10515）和 Odyssey-3（Physics-IQ 66.1，官方自报）。三者都是预训练加适配，不是用模拟器成功率做 RL，所以不满足升级信号。</li>
+<li>补充（2026-10-09 傍晚）：Rubric-CEPR（<a href="https://arxiv.org/abs/2610.12469">arXiv 2610.12469</a>）在 Qwen-Image-Edit-2509 上用内部 Critic 门控后自蒸馏，无人工编辑对、无外部奖励模型。ImgEdit <strong>4.36→4.60</strong>（+5.5%），物体分离 <strong>3.41→4.26</strong>（+24.9%）；GEdit-Bench Overall VIEScore <strong>7.39→8.31</strong>（+12.4%）。这是靠近升级信号的证据，但还不是开源「VLM 评审 + 生成器」闭环 RL 框架，也没有相对纯偏好奖励的对照增益，所以主线等级不变。</li>
 <li>升级信号：出现开源的"VLM 评审 + 生成器"闭环 RL 训练框架或技术报告，并给出相对纯偏好奖励的增益；世界动作模型用模拟器成功率做 RL，且公开数据。</li>
 <li>推翻信号：纯文生图出现新的、可规模化的可验证奖励（不是 OCR、计数这一类），并带来显著的人评提升。</li>
 </ul>
@@ -82,8 +84,9 @@ pre.mermaid{background:#fff;text-align:center} a{color:#0969da}
 <li>补充（2026-10-09）：GRACE（arXiv 2610.10524）在冻结的 Wan2.1-14B 上换成生成感知的 latent，token 约少 8 倍，延迟快 11 到 15 倍，VBench 基本不变（作者自报）。改 latent 不用重训 DiT，又一例和蒸馏叠加使用。</li>
 <li>证据：Qwen-Image 2.1 已改成 16 倍压缩的 VAE，仍在做 8 步蒸馏版；fv-loss 的提速是训练收敛变快，不是采样步数变少；RealtimeWAM 一步出动作仍靠一致性蒸馏；Kandinsky 实测 DMD、DMD2、SID 在视频上容易坍缩，改用 π-Flow 加 Sim-LADD；DMAD 去掉了 DMD 的 fake score。CFG 是 GFD-OPD 和 IB-Flow 共同在对付的瓶颈。</li>
 <li>补充（2026-10-08）：BFL 的 FLUX 3 Action 技术报告也是分段蒸馏，先做 guidance distillation（快 1.8 到 2 倍），再从 4 步蒸到 1 步（再快 3 到 4 倍，成功率降 3.5 到 4.3 个百分点）；报告里没说有没有对抗精修。Draft 预览要能用同一个种子重新渲染成完整版，所以它更可能用保持轨迹的蒸馏（推断）。这只算部分满足下面的升级信号。</li>
-<li>补充（2026-10-08，PDMD）：字节/UCSD 的 PDMD（<a href="https://arxiv.org/abs/2609.35768">arXiv 2609.35768</a>）也报告 DMD 训练中样本会过饱和、出伪影。修法是把更新里平行于学生和 critic 终点残差的分量投影掉，不加网络、数据或额外前向。论文自己的对照是 Wan2.1 四步 VBench 83.73，只比同设置 DMD 高 1.03，不是微信解读里训练中途的约 63 对约 83。MiniMax-H3 四步视觉总分 83.17，比最强蒸馏基线高 0.41，六项音频最好。这是留在 DMD 上修的一路，和 Kandinsky 换 π-Flow 不是同一派（推断）。另外，Wan2.1 上四步 PDMD 的 VBench 83.73 高于 50 步老师的 83.06，但在 H3 上 50 步老师人评仍整体胜出。学生在自动指标上超过老师而人评不认，又多了一例（同 GFD-OPD）。</li>
-<li>真正可能取代蒸馏的是 MeanFlow、shortcut 这类不需要老师、训练目标本身支持少步的方法（社区里属于持续的小热度，不是爆点）。</li>
+<li>补充（2026-10-08，PDMD）：字节/UCSD 的 PDMD（<a href="https://arxiv.org/abs/2609.35768">arXiv 2609.35768</a>，与此前社区拆解为同一篇，不是第二个独立来源）也报告 DMD 训练中样本会过饱和、出伪影。修法是把更新里平行于学生和 critic 终点残差的分量投影掉，不加网络、数据或额外前向。论文自己的对照是 Wan2.1 四步 VBench 83.73，只比同设置 DMD 高 1.03，不是微信解读里训练中途的约 63 对约 83。MiniMax-H3 四步视觉总分 83.17，比最强蒸馏基线高 0.41，六项音频最好。这是留在 DMD 上修的一路，和 Kandinsky 换 π-Flow 不是同一派（推断）。另外，Wan2.1 上四步 PDMD 的 VBench 83.73 高于 50 步老师的 83.06，但在 H3 上 50 步老师人评仍整体胜出。学生在自动指标上超过老师而人评不认，又多了一例（同 GFD-OPD）。</li>
+<li>补充（2026-10-09 傍晚）：BudgetPix（<a href="https://arxiv.org/abs/2610.12307">arXiv 2610.12307</a>）用 MeanFlow 骨干做像素空间自适应 token，属于骨干用法，<strong>不计入</strong>「无老师少步上线」推翻信号。AgentGarten（<a href="https://arxiv.org/abs/2610.12374">arXiv 2610.12374</a>）的 Adversarial Forcing 仍属 DMD/分布匹配族，<strong>不计入</strong>绕开信号。</li>
+<li>真正可能取代蒸馏的是 MeanFlow、shortcut 这类不需要老师、训练目标本身支持少步的方法（社区收藏中有 MeanFlow / iMF 一类少步目标笔记。</li>
 <li>升级信号（轨迹蒸馏加对抗精修成为默认）：Kling、Wan 下一代或其他大厂视频技术报告也采用这套组合。</li>
 <li>推翻信号：出现不靠老师、直接用 MeanFlow 这类少步目标从头训练就上线的前沿视频模型。</li>
 </ul>
@@ -98,13 +101,13 @@ pre.mermaid{background:#fff;text-align:center} a{color:#0969da}
 <h3>主线 7：决策模型或结构化输出正在成为一个品类　【推断，热度待观察】</h3>
 <ul>
 <li>证据：Jev（TypeSafe，9-15）；Liquid d1-3B 和 d1-omni（<a href="https://www.liquid.ai/blog/d1-open">Liquid 博客</a>）；EmbeddingGemma 2 加 MediaPipe Decision Task；Cloudflare Clef 和 AWS Strands Decider 2B 都直接兼容 Jev 的 <code>/v1/systemone</code> 接口（厂商自报）。</li>
-<li>限定：社区讨论集中在 9 月中下旬发布前后，之后明显降温，目前更像发布脉冲。</li>
+<li>限定：Jev 相关讨论在 9 月中下旬出现脉冲，之后跟进变少。</li>
 <li>升级信号：第三方在同一基准上横评 Jev、d1、Clef；主流推理框架原生支持这个接口。</li>
 <li>推翻信号：一两个月内没有新的模型或接口跟进，热度归零。</li>
 </ul>
 <hr />
 <h2>跟踪中的"已宣布未交付"（权重或产品）</h2>
-<p>详见权重追踪页。重点：FLUX 3 Image 开源权重（官方说几周内）、Runway Praxis-1 权重（未来几个月）、可灵 4.0 完整版（10 月）、Mistral Large 4 权重（月底，各家报 10/27–10/31）、Reflection Beam 权重和技术报告（本月晚些时候）、阶跃星辰 Step 5 权重（官方说 10-15）。热度判断以实际交付日期为准。</p>
+<p>详见 AI热点追踪 的 <code>weights-tracker.md</code>。重点：FLUX 3 Image 开源权重（官方说几周内）、Runway Praxis-1 权重（未来几个月）、可灵 4.0 完整版（10 月）、Mistral Large 4 权重（月底，各家报 10/27–10/31）、Reflection Beam 权重和技术报告（本月晚些时候）、阶跃星辰 Step 5 权重（官方说 10-15）。热度判断以实际交付日期为准。</p>
 <hr />
 <h2>2026-10-09 变更</h2>
 <ul>
@@ -113,6 +116,7 @@ pre.mermaid{background:#fff;text-align:center} a{color:#0969da}
 <li>主线 2 加限定：老师对学生样本的评价不可靠时，OPD 会放大坏样本。</li>
 <li>主线 3、4 补证据：世界动作模型升温，但还没有用模拟器做 RL；LLM 侧的差距在环境，新增 Mellum2.1 和 MIMESIS。</li>
 <li>已宣布未交付新增 Step 5（10-15）。</li>
+<li>傍晚补丁：主线 3 写入 Rubric-CEPR（内部 Critic 自蒸馏 + VIEScore）；主线 5 注明 BudgetPix / AgentGarten 不计入推翻或绕开信号。顶部结论改为傍晚版。</li>
 </ul>
 <script type="module">
 import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
