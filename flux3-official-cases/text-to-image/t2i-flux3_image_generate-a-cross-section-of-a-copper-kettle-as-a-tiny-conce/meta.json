@@ -1,0 +1,25 @@
+{
+  "id": "t2i-flux3_image_generate-a-cross-section-of-a-copper-kettle-as-a-tiny-conce",
+  "category": "t2i",
+  "title": "A cross-section of a copper kettle as a tiny concert hall, titled The Orchestra Inside a Kettle.",
+  "prompt": "Create a finished 2:3 long-form infographic poster. This is a TEXT-RICH graphic design study. Give the artwork a memorable composition specific to its concept, with roughly half the area for legible longer text. Integrate the prose into the authored visual arrangement; do not default to repeated cards or a generic five-panel grid.\nART DIRECTION: Cutaway copper kettle with miniature instruments and steam shaped as music staffs; cream ground, turquoise arrows, classic concert-program typography and long captions.\nVISUAL SUBJECT: A detailed cross-section of a vintage copper kettle reveals a multi-tiered concert hall. Tiny figures with violins occupy the curved walls, while percussionists stand on the heating coil. Turquoise arrows trace the path of steam as it twists into musical staves, connecting the internal instruments to the whistling spout against a calm cream background.\nSOURCE BRIEF FOR DIAGRAM CONTENT: An ordinary kettle becomes a tiny fictional orchestra whose parts contribute different textures.\nEXACT VISIBLE COPY, reproduce every sentence verbatim with correct spelling and punctuation. The headings below describe layout roles and are not extra printed words.\nTITLE: \"THE ORCHESTRA INSIDE A KETTLE\"\nINTRODUCTION: \"Beneath the copper dome, a miniature ensemble waits for the pilot light. As heat rises, household utility transforms into a complex, multi-layered symphonic performance.\"\nSECTION 1 HEADING: \"Percussion of the Base\"\nSECTION 1 BODY: \"The base plate acts as a massive percussion section. As the heating element glows, microscopic hammers strike the metal floor, creating a rhythmic, rhythmic ticking that signals the overtureâs beginning.\"\nSECTION 2 HEADING: \"The Bubbling Woodwinds\"\nSECTION 2 BODY: \"Tiny flutists ride the rising bubbles, their notes popping as they reach the surface. This chaotic staccato mimics the frantic pace of a forest stream, providing a textured, liquid woodwind melody.\"\nSECTION 3 HEADING: \"Convex String Section\"\nSECTION 3 BODY: \"Copper walls reflect sound like a celloâs body. Micro-violinists perched on the interior rivets draw bows across tensioned wires, amplifying the resonance as the water temperature reaches a steady, vibrating hum.\"\nSECTION 4 HEADING: \"Steam Pipe Brass\"\nSECTION 4 BODY: \"Pressure builds toward the spout, where a miniature brass brigade waits. They channel the escaping vapor through narrow valves, turning raw kinetic energy into a sustained, piercing high-note finale that commands attention.\"\nSECTION 5 HEADING: \"The Hissing Choir\"\nSECTION 5 BODY: \"A ghostly choir of mist-dwellers sings in the condensation. Their voices are white noise, filling the gaps between mechanical clinks with a soft, atmospheric blur that softens the sharp edges of the metal.\"\nBOTTOM TAKEAWAY: \"Every morning ritual contains a hidden concert; once the whistle blows, the tiny conductor finally takes a bow.\"\nFOOTER: \"A creative design study\"\nTYPESETTING: The 220 words of supplied prose are essential visual content, not instructions to summarize. Set complete paragraphs in comfortably readable body type, roughly 26â32 pixels at a 2K long edge. Short line lengths, generous leading and at least 5 percent exterior margins. Headings clearly larger than body text. Keep all 5 sections, introduction and takeaway fully visible. Add only the supplied diagram labels where needed. Avoid duplicate paragraphs, invented filler, ellipses, illegible pseudo-text or cut-off sentences. Keep diagram lines away from prose. A polished flat artwork filling the whole image, not a framed mockup.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_generate",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/be330cdce4458ec7e722f8406a2ae572fc9a1017-1200x1812.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-flux3_image_generate-a-cross-section-of-a-copper-kettle-as-a-tiny-conce/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "ClipSlider on flux3_image_generate.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

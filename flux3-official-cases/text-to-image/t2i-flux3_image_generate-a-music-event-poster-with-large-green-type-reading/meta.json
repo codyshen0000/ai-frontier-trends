@@ -1,0 +1,25 @@
+{
+  "id": "t2i-flux3_image_generate-a-music-event-poster-with-large-green-type-reading",
+  "category": "t2i",
+  "title": "A music event poster with large green type reading Open Air Register on deep blue.",
+  "prompt": "Create a finished 1:1 graphic design artwork for an original fictional design study.\nART DIRECTION: Experimental music event poster: expressive typography with highly legible event details, luminous abstract forms, punchy spot colors, deliberate off-center rhythm. Midnight blue, coral and acid yellow.\nORIGINAL VISUAL: a cluster of translucent tuning-fork sculptures. Balance a small isolated subject against very large type.\nEXACT VISIBLE TITLE: \"Open Air Register\"\nEXACT SUPPORTING COPY: \"Outdoor listening / 05 December / 17:00\"\nUse the supporting copy as a carefully typeset secondary block; slashes indicate line breaks.\nCreate a coherent, distinctive new layout with readable text and intentional hierarchy. Full-bleed artwork, except for the requested packaging presentation. Keep important text at least 5 percent from all edges. Fine print texture and polished professional art direction. Use only the supplied visible copy. No real brands, logos, named artists, existing book covers, famous characters, copied campaign slogans, signatures, watermarks, QR codes or borrowed artwork. Invent all visual forms from this description; this is not a remake of a specific existing design.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_generate",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/488a6ce1990121bf58885f9c6c626a75b499d80e-1800x1800.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-flux3_image_generate-a-music-event-poster-with-large-green-type-reading/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "ClipSlider on flux3_image_generate.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

@@ -1,0 +1,25 @@
+{
+  "id": "t2i-oktoberfest-grounding",
+  "category": "t2i",
+  "title": "Oktoberfest poster grounding comparison",
+  "prompt": "A photograph of this year's official Oktoberfest poster",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_overview",
+  "image_urls": [
+    "https://mintcdn.com/bfl/uV8o4_J7ma5eIAOv/images/flux3-image/grounding/oktoberfest-grounding-ab.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-oktoberfest-grounding/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "grounding on/off comparison AB image from overview",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

@@ -1,0 +1,25 @@
+{
+  "id": "t2i-flux3_image_generate-an-ochre-and-black-infographic-titled-the-anatomy",
+  "category": "t2i",
+  "title": "An ochre and black infographic titled The Anatomy of a Stage Direction, with a hand reaching toward a lamp.",
+  "prompt": "Create a finished 1:1 long-form infographic poster. This is a TEXT-RICH graphic design study. Give the artwork a memorable composition specific to its concept, with roughly half the area for legible longer text. Integrate the prose into the authored visual arrangement; do not default to repeated cards or a generic five-panel grid.\nART DIRECTION: Graphic woodcut-like silhouettes, saturated ochre and ink black, strong contours and undistracted text blocks. Invent a bespoke central diagram specifically for this concept: the anatomy of a stage direction. Shape the composition around the relationships in the brief, not a reusable card grid. The prose should occupy clear uncluttered areas alongside the diagram. Keep a strong reading sequence, large body text and no text over detailed illustration.\nVISUAL SUBJECT: A central diagram features a thick, ink-black silhouette of a hand reaching toward a stark ochre lamp. Stylized vectors emerge from the hand, branching into three distinct paths: one leading to a block of dialogue, another to a clock face representing the pause, and a third to a sliding map. The ochre background provides a high-contrast negative space.\nSOURCE BRIEF FOR DIAGRAM CONTENT: An original short script becomes a visual diagram linking spoken words, a gesture, a pause and an unexpected prop movement.\nEXACT VISIBLE COPY, reproduce every sentence verbatim with correct spelling and punctuation. The headings below describe layout roles and are not extra printed words.\nTITLE: \"THE ANATOMY OF A STAGE DIRECTION\"\nINTRODUCTION: \"Discover how a single line of instructional text transforms static ink into a synchronized mechanical ballet of physical motion, silence, and sudden prop utility.\"\nSECTION 1 HEADING: \"The Pivot of Action\"\nSECTION 1 BODY: \"A scriptural command dictates when a hand reaches for a heavy brass lamp. This physical anchor connects the characterâs internal tension to the tangible world, forcing the actor to navigate the distance between a spoken threat and a violent grasp.\"\nSECTION 2 HEADING: \"The Weight of Silence\"\nSECTION 2 BODY: \"The pause serves as a structural void where the audience breathes. It is not empty space but a pressurized interval that gives the subsequent gesture its impact, ensuring the clatter of a falling chair resonates louder than any shouted dialogue.\"\nSECTION 3 HEADING: \"The Prop Narrative\"\nSECTION 3 BODY: \"When a map slides across a table, the inanimate object gains agency. This specific movement redirects the viewer's gaze, shifting the focus from the speakerâs face to the physical evidence of the plot, cementing the reality of the unfolding drama.\"\nBOTTOM TAKEAWAY: \"Drama lives in the friction between the written word and the physical constraints of the performance space.\"\nFOOTER: \"A creative design study\"\nTYPESETTING: The 178 words of supplied prose are essential visual content, not instructions to summarize. Set complete paragraphs in comfortably readable body type, roughly 30â36 pixels at a 2K long edge. Short line lengths, generous leading and at least 5 percent exterior margins. Headings clearly larger than body text. Keep all 3 sections, introduction and takeaway fully visible. Add only the supplied diagram labels where needed. Avoid duplicate paragraphs, invented filler, ellipses, illegible pseudo-text or cut-off sentences. Keep diagram lines away from prose. A polished flat artwork filling the whole image, not a framed mockup.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_generate",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/e9e429c91b673cc56b3ba4ba2f624b86ff4c50bd-1800x1800.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-flux3_image_generate-an-ochre-and-black-infographic-titled-the-anatomy/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "ClipSlider on flux3_image_generate.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

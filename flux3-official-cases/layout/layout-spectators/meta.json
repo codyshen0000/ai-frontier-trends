@@ -1,0 +1,138 @@
+{
+  "id": "layout-spectators",
+  "category": "layout",
+  "title": "Winter spectators",
+  "prompt": "Full-color outdoor photograph with a shallow depth of field, taken under overcast daytime light at a winter sporting event. A medium close-up captures a row of spectators, focusing on a woman <person_1> seated in the left foreground in profile, facing right. Tucked into her coat and held closely in her lap is a small Pomeranian dog <animal_1>. Seated slightly out of alignment next to her on the right is a man <person_2>, also in profile facing right, holding a Jack Russell Terrier <animal_2> in his lap. Extending to the left behind them is a row of softly blurred spectators, including two blonde women <person_3> <person_4> wearing winter attire. In the background, a hillside covered with dark evergreen trees <region_1> rises against a pale sky. To the upper right, event structures are visible, featuring a white flag <flag_3>, a German flag <flag_1>, a Swiss flag <flag_2>, and a blue banner <structure_1> bearing illegible white text. The composition contrasts the warm browns of the fur coats and dogs with the cooler blues of denim jeans and the muted winter landscape.\n[{\"id\": \"person_1\", \"bbox\": [150, 200, 950, 550], \"desc\": \"A woman seen in profile facing right, with fair skin. She wears a voluminous, light brown fur coat, a matching plush fur headband over her hair, oversized dark sunglasses with a silver accent on the frame, and a large, round pearl earring. A patterned silk scarf is tied around her neck, its edges slightly wrinkled. She wears blue denim jeans on her lower half.\"}, {\"id\": \"animal_1\", \"bbox\": [500, 320, 750, 520], \"desc\": \"A small, fluffy Pomeranian dog with reddish-brown fur, tucked partially inside the woman's coat and resting in her lap. The dog's head is turned to look directly toward the camera, featuring dark, alert eyes and a black nose.\"}, {\"id\": \"person_2\", \"bbox\": [180, 520, 950, 880], \"desc\": \"A man seen in profile facing right, with fair skin. He wears a dark brown knit beanie, wire-rimmed eyeglasses, a dark leather jacket layered over a red sweater, black leather gloves showing a few stray light dog hairs, and blue denim jeans.\"}, {\"id\": \"animal_2\", \"bbox\": [520, 650, 850, 850], \"desc\": \"A medium-sized Jack Russell Terrier with white, black, and brown markings and a brown leather collar. The dog sits upright in the man's lap, its body and gaze directed intently to the right.\"}, {\"id\": \"person_3\", \"bbox\": [250, 50, 700, 220], \"desc\": \"A softly blurred figure of a woman with blonde hair, wearing sunglasses and a bulky winter coat, seated in the background row.\"}, {\"id\": \"person_4\", \"bbox\": [260, 0, 650, 120], \"desc\": \"A softly blurred figure of a woman with blonde hair, wearing a fur hat and a winter jacket, seated further down the row near the left edge of the frame.\"}, {\"id\": \"region_1\", \"bbox\": [0, 0, 350, 1000.0], \"desc\": \"A softly blurred background expanse of a hillside densely covered with dark evergreen trees, sitting below a flat, pale overcast sky.\"}, {\"id\": \"flag_3\", \"bbox\": [70, 680, 210, 760], \"desc\": \"A softly blurred plain white flag flying from a pole.\"}, {\"id\": \"flag_1\", \"bbox\": [80, 780, 220, 860], \"desc\": \"A softly blurred German flag with black, red, and gold horizontal stripes, flapping from a pole.\"}, {\"id\": \"flag_2\", \"bbox\": [90, 880, 230, 960], \"desc\": \"A softly blurred Swiss flag, featuring a red square with a white cross, flying from a pole.\"}, {\"id\": \"structure_1\", \"bbox\": [250, 750, 450, 980], \"desc\": \"A softly blurred blue banner attached to a distant metal event structure, displaying illegible white text.\"}]",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_overview",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/1ecb99e9f04048560a6b220a0a6accfda39919c0-1400x927.webp"
+  ],
+  "image_files": [
+    "layout/layout-spectators/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "layout prompt with bounding boxes; image may show boxes overlaid on overview",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": 1400,
+  "height": 927,
+  "aspect_ratio": "3:2",
+  "rows": [
+    {
+      "id": "person_1",
+      "bbox": [
+        150,
+        200,
+        950,
+        550
+      ],
+      "desc": "A woman seen in profile facing right, with fair skin. She wears a voluminous, light brown fur coat, a matching plush fur headband over her hair, oversized dark sunglasses with a silver accent on the frame, and a large, round pearl earring. A patterned silk scarf is tied around her neck, its edges slightly wrinkled. She wears blue denim jeans on her lower half."
+    },
+    {
+      "id": "animal_1",
+      "bbox": [
+        500,
+        320,
+        750,
+        520
+      ],
+      "desc": "A small, fluffy Pomeranian dog with reddish-brown fur, tucked partially inside the woman's coat and resting in her lap. The dog's head is turned to look directly toward the camera, featuring dark, alert eyes and a black nose."
+    },
+    {
+      "id": "person_2",
+      "bbox": [
+        180,
+        520,
+        950,
+        880
+      ],
+      "desc": "A man seen in profile facing right, with fair skin. He wears a dark brown knit beanie, wire-rimmed eyeglasses, a dark leather jacket layered over a red sweater, black leather gloves showing a few stray light dog hairs, and blue denim jeans."
+    },
+    {
+      "id": "animal_2",
+      "bbox": [
+        520,
+        650,
+        850,
+        850
+      ],
+      "desc": "A medium-sized Jack Russell Terrier with white, black, and brown markings and a brown leather collar. The dog sits upright in the man's lap, its body and gaze directed intently to the right."
+    },
+    {
+      "id": "person_3",
+      "bbox": [
+        250,
+        50,
+        700,
+        220
+      ],
+      "desc": "A softly blurred figure of a woman with blonde hair, wearing sunglasses and a bulky winter coat, seated in the background row."
+    },
+    {
+      "id": "person_4",
+      "bbox": [
+        260,
+        0,
+        650,
+        120
+      ],
+      "desc": "A softly blurred figure of a woman with blonde hair, wearing a fur hat and a winter jacket, seated further down the row near the left edge of the frame."
+    },
+    {
+      "id": "region_1",
+      "bbox": [
+        0,
+        0,
+        350,
+        1000.0
+      ],
+      "desc": "A softly blurred background expanse of a hillside densely covered with dark evergreen trees, sitting below a flat, pale overcast sky."
+    },
+    {
+      "id": "flag_3",
+      "bbox": [
+        70,
+        680,
+        210,
+        760
+      ],
+      "desc": "A softly blurred plain white flag flying from a pole."
+    },
+    {
+      "id": "flag_1",
+      "bbox": [
+        80,
+        780,
+        220,
+        860
+      ],
+      "desc": "A softly blurred German flag with black, red, and gold horizontal stripes, flapping from a pole."
+    },
+    {
+      "id": "flag_2",
+      "bbox": [
+        90,
+        880,
+        230,
+        960
+      ],
+      "desc": "A softly blurred Swiss flag, featuring a red square with a white cross, flying from a pole."
+    },
+    {
+      "id": "structure_1",
+      "bbox": [
+        250,
+        750,
+        450,
+        980
+      ],
+      "desc": "A softly blurred blue banner attached to a distant metal event structure, displaying illegible white text."
+    }
+  ],
+  "caption": "Full-color outdoor photograph with a shallow depth of field, taken under overcast daytime light at a winter sporting event. A medium close-up captures a row of spectators, focusing on a woman <person_1> seated in the left foreground in profile, facing right. Tucked into her coat and held closely in her lap is a small Pomeranian dog <animal_1>. Seated slightly out of alignment next to her on the right is a man <person_2>, also in profile facing right, holding a Jack Russell Terrier <animal_2> in his lap. Extending to the left behind them is a row of softly blurred spectators, including two blonde women <person_3> <person_4> wearing winter attire. In the background, a hillside covered with dark evergreen trees <region_1> rises against a pale sky. To the upper right, event structures are visible, featuring a white flag <flag_3>, a German flag <flag_1>, a Swiss flag <flag_2>, and a blue banner <structure_1> bearing illegible white text. The composition contrasts the warm browns of the fur coats and dogs with the cooler blues of denim jeans and the muted winter landscape."
+}

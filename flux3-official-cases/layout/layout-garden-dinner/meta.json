@@ -1,0 +1,128 @@
+{
+  "id": "layout-garden-dinner",
+  "category": "layout",
+  "title": "Dinner by the garden",
+  "prompt": "High-angle, full-color 35mm indoor-outdoor film photograph captured at night, featuring visible grain, deep shadows, and a shallow depth of field that renders the foreground in an atmospheric blur. The composition divides a dimly lit interior dining area on the right from an illuminated exterior garden on the left. In the blurred foreground, bathed in deep, monochromatic red light, two silhouetted figures sit at a dining table <table_1>. A young child with dark hair <person_1> faces the camera as an out-of-focus red shape, while the profile of an adult <person_2> occupies the right edge. Between them, the table holds blurred dishes <dishes_1> and a small candle <candle_1> that provides a warm orange point of light. Through a large window on the left, the sharp exterior scene is set against a pitch-black night sky <sky_1>. A Japanese pine tree <tree_1> is illuminated by a cool, artificial green light, resolving its textured bark and dense needle clusters. Below the tree, a low bamboo fence <fence_1> runs horizontally. Further back, a stone-paved path <path_1> leads into the dark garden, dotted with a few scattered warm-toned lights <lights_1>.\n[{\"id\": \"table_1\", \"bbox\": [700, 200, 1000.0, 1000.0], \"desc\": \"A blurred, dark dining table occupying the lower foreground, reflecting patches of red and orange light.\"}, {\"id\": \"person_1\", \"bbox\": [500, 350, 950, 650], \"desc\": \"An out-of-focus silhouette of a young child with dark hair, rendered as a soft mass of deep red light and shadow facing the camera.\"}, {\"id\": \"person_2\", \"bbox\": [400, 700, 1000.0, 1000.0], \"desc\": \"A heavily blurred silhouette of an adult in profile, bathed in monochromatic red light, occupying the right edge of the frame.\"}, {\"id\": \"dishes_1\", \"bbox\": [800, 400, 1000.0, 900], \"desc\": \"A collection of heavily blurred plates and bowls, appearing as indistinct dark and red shapes on the table.\"}, {\"id\": \"candle_1\", \"bbox\": [750, 600, 820, 650], \"desc\": \"A small, out-of-focus candle flame forming a bright, warm orange point of light amidst the red foreground.\"}, {\"id\": \"sky_1\", \"bbox\": [0, 0, 500, 600], \"desc\": \"A pitch-black night sky filling the upper left background behind the garden foliage.\"}, {\"id\": \"tree_1\", \"bbox\": [100, 50, 750, 550], \"desc\": \"A sharply focused Japanese pine tree illuminated by cool, vibrant emerald green light. The trunk features textured bark, supporting dense, layered clusters of needle-like foliage.\"}, {\"id\": \"fence_1\", \"bbox\": [700, 0, 850, 600], \"desc\": \"A traditional low bamboo fence running horizontally across the garden, composed of thin, vertically aligned bamboo stalks tied with dark twine.\"}, {\"id\": \"path_1\", \"bbox\": [750, 100, 950, 400], \"desc\": \"A stone-paved path or bridge in the deep background, slightly obscured by shadows, leading back into the dark garden.\"}, {\"id\": \"lights_1\", \"bbox\": [600, 100, 750, 500], \"desc\": \"A few small, distant points of warm-toned light scattered across the dark landscaping in the background.\"}]",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_overview",
+  "image_urls": [
+    "https://docs.bfl.ml/images/flux3-image/layouts/garden-dinner.webp"
+  ],
+  "image_files": [
+    "layout/layout-garden-dinner/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "layout prompt with bounding boxes; image may show boxes overlaid on overview",
+  "downloaded_at": "2026-10-09T09:31:01.753964+08:00",
+  "missing_image_urls": [],
+  "width": 1400,
+  "height": 927,
+  "aspect_ratio": "3:2",
+  "rows": [
+    {
+      "id": "table_1",
+      "bbox": [
+        700,
+        200,
+        1000.0,
+        1000.0
+      ],
+      "desc": "A blurred, dark dining table occupying the lower foreground, reflecting patches of red and orange light."
+    },
+    {
+      "id": "person_1",
+      "bbox": [
+        500,
+        350,
+        950,
+        650
+      ],
+      "desc": "An out-of-focus silhouette of a young child with dark hair, rendered as a soft mass of deep red light and shadow facing the camera."
+    },
+    {
+      "id": "person_2",
+      "bbox": [
+        400,
+        700,
+        1000.0,
+        1000.0
+      ],
+      "desc": "A heavily blurred silhouette of an adult in profile, bathed in monochromatic red light, occupying the right edge of the frame."
+    },
+    {
+      "id": "dishes_1",
+      "bbox": [
+        800,
+        400,
+        1000.0,
+        900
+      ],
+      "desc": "A collection of heavily blurred plates and bowls, appearing as indistinct dark and red shapes on the table."
+    },
+    {
+      "id": "candle_1",
+      "bbox": [
+        750,
+        600,
+        820,
+        650
+      ],
+      "desc": "A small, out-of-focus candle flame forming a bright, warm orange point of light amidst the red foreground."
+    },
+    {
+      "id": "sky_1",
+      "bbox": [
+        0,
+        0,
+        500,
+        600
+      ],
+      "desc": "A pitch-black night sky filling the upper left background behind the garden foliage."
+    },
+    {
+      "id": "tree_1",
+      "bbox": [
+        100,
+        50,
+        750,
+        550
+      ],
+      "desc": "A sharply focused Japanese pine tree illuminated by cool, vibrant emerald green light. The trunk features textured bark, supporting dense, layered clusters of needle-like foliage."
+    },
+    {
+      "id": "fence_1",
+      "bbox": [
+        700,
+        0,
+        850,
+        600
+      ],
+      "desc": "A traditional low bamboo fence running horizontally across the garden, composed of thin, vertically aligned bamboo stalks tied with dark twine."
+    },
+    {
+      "id": "path_1",
+      "bbox": [
+        750,
+        100,
+        950,
+        400
+      ],
+      "desc": "A stone-paved path or bridge in the deep background, slightly obscured by shadows, leading back into the dark garden."
+    },
+    {
+      "id": "lights_1",
+      "bbox": [
+        600,
+        100,
+        750,
+        500
+      ],
+      "desc": "A few small, distant points of warm-toned light scattered across the dark landscaping in the background."
+    }
+  ],
+  "caption": "High-angle, full-color 35mm indoor-outdoor film photograph captured at night, featuring visible grain, deep shadows, and a shallow depth of field that renders the foreground in an atmospheric blur. The composition divides a dimly lit interior dining area on the right from an illuminated exterior garden on the left. In the blurred foreground, bathed in deep, monochromatic red light, two silhouetted figures sit at a dining table <table_1>. A young child with dark hair <person_1> faces the camera as an out-of-focus red shape, while the profile of an adult <person_2> occupies the right edge. Between them, the table holds blurred dishes <dishes_1> and a small candle <candle_1> that provides a warm orange point of light. Through a large window on the left, the sharp exterior scene is set against a pitch-black night sky <sky_1>. A Japanese pine tree <tree_1> is illuminated by a cool, artificial green light, resolving its textured bark and dense needle clusters. Below the tree, a low bamboo fence <fence_1> runs horizontally. Further back, a stone-paved path <path_1> leads into the dark garden, dotted with a few scattered warm-toned lights <lights_1>."
+}

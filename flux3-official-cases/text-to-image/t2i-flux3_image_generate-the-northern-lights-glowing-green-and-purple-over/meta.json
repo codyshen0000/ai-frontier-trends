@@ -1,0 +1,25 @@
+{
+  "id": "t2i-flux3_image_generate-the-northern-lights-glowing-green-and-purple-over",
+  "category": "t2i",
+  "title": "The Northern Lights glowing green and purple over a dark landscape under a starry sky.",
+  "prompt": "A serene night scene with the Northern Lights casting a vibrant green and purplish glow across the sky. Stars dot the background, adding a speckled effect. A silhouette of hilly terrain outlines the horizon, and the colorful aurora and stars perfectly reflect in a still body of water, creating a symmetrical and tranquil visual.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_generate",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/2b8d383e03ff2f79c010dbd75cfe0053ceb9dde2-1800x1192.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-flux3_image_generate-the-northern-lights-glowing-green-and-purple-over/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "ClipSlider on flux3_image_generate.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

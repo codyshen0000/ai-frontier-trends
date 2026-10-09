@@ -1,0 +1,25 @@
+{
+  "id": "t2i-flux3_image_generate-sewn-inflatable-letters-reading-air-is-taking-a-st",
+  "category": "t2i",
+  "title": "Sewn inflatable letters reading Air Is Taking a Stand, lit theatrically on a blue backdrop.",
+  "prompt": "Create a finished 4:3 original experimental graphic design artwork.\nDESIGN LANGUAGE: Tactile sewn inflatable objects, exaggerated seams, theatrical hard lighting, a bold saturated background. Title made of inflated forms with visible air valves; assertive graphic framing.\nUNIQUE VISUAL IDEA: inflated pillar-shaped letters leaning together like a soft crowd.\nCOMPOSITION: Make the visual and title physically interact across most of the canvas; use intentional overlap while preserving legibility. Let this specific visual idea determine the layout. Preserve its conceptual surprise.\nEXACT TITLE: \"AIR IS TAKING A STAND\"\nEXACT SECONDARY COPY: \"Firm ideas / Flexible structure.\"\nArtwork fills the image; no framed poster mockup and no presentation board.\nThe title must be confidently typeset and readable. The small supplied sentence is the only supporting copy. No invented filler paragraphs. Type should feel integral to the material, scene or composition, not automatically placed as a generic heading over a small centered object. Design a visually adventurous, professionally resolved piece with clear hierarchy, deliberate contrast and rich details. Use fresh invented imagery and original letter arrangements; do not reproduce any existing poster, brand, logo, artwork, artist signature, campaign, famous character or reference photograph. No reference image is supplied. No watermarks, web addresses or QR codes.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_generate",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/f88ebefd91598e48647da176d4006bcc0b9f6b56-1800x1350.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-flux3_image_generate-sewn-inflatable-letters-reading-air-is-taking-a-st/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "ClipSlider on flux3_image_generate.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

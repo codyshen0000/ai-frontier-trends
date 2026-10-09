@@ -1,0 +1,25 @@
+{
+  "id": "t2i-a-split-over-under-shot-of-a-swimmer-in-a-black-cap-mid-stro",
+  "category": "t2i",
+  "title": "A split over-under shot of a swimmer in a black cap mid-stroke in dark green lak",
+  "prompt": "A split-level photograph from a half-submerged dome port in a cold lake at dawn. Below, a swimmer in a black cap hangs mid-stroke in dark green water; above, mist, a pine shoreline, and a pale orange sunrise.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_overview",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/bca9089afaaf144fa9d6ba32caa9405240d8eb44-1800x1013.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-a-split-over-under-shot-of-a-swimmer-in-a-black-cap-mid-stro/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "FLUX 3 Image overview — Text to image showcase",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

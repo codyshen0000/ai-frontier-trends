@@ -1,0 +1,25 @@
+{
+  "id": "t2i-flux3_image_generate-a-needle-felted-wool-miniature-of-a-badger-running",
+  "category": "t2i",
+  "title": "A needle-felted wool miniature of a badger running a bakery inside a tree stump.",
+  "prompt": "Create a finished 1:1 original artwork.\nMEDIUM AND VISUAL LANGUAGE: Hand-needlefelted wool miniature illustration, visible fibers, soft overcast light, moss green and warm peach, no glossy surfaces. Remain faithful to this specific medium, including its physical marks, lighting and limitations.\nSUBJECT AND STORY: badger bakery. Invent the details from scratch and make the scene emotionally engaging and visually surprising.\nCOMPOSITION: An expansive environmental scene with foreground, middle distance and a tiny unexpected discovery in the background.\nCreate an original illustrated cover with the exact title \"BADGER BAKERY\"; lettering belongs organically to the visual world, never a generic heading pasted over a stock image.\nArt direction: develop a coherent distinctive palette within this medium; use thoughtful contrast, beautifully observed texture and a memorable visual hierarchy. This must feel like a complete artwork, not a moodboard, not a sample grid and not a generic centered object poster. Fill the frame with the artwork. No decorative presentation border. Invent all characters and settings. Do not reproduce existing artworks, brands, mascots, recognizable franchise characters, signatures or campaigns. No reference image is supplied. No watermarks or web addresses.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_generate",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/b3a6e06032706add9971b8a5ddb61551a017fdbd-1800x1800.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-flux3_image_generate-a-needle-felted-wool-miniature-of-a-badger-running/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "ClipSlider on flux3_image_generate.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

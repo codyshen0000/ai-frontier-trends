@@ -2,7 +2,7 @@
 
 整理自 Black Forest Labs 官方文档。检索日期：**2026-10-08**。说明用中文；**官方 prompt 保持英文原文**。完整长 prompt 在 [官方示例库](./examples/)，本页若缩短会标 **…** 并给出链接。未在文档出现的参数、上限或例子一律不写；自拟内容会标「示例（非官方）」。
 
-<p class="sister-nav">相关页：<a href="./examples/">官方示例库</a> · <a href="./camera-terms/">相机术语表</a></p>
+<p class="sister-nav">相关页：<a href="./examples/">官方示例库</a> · <a href="./cases/">官方案例</a> · <a href="./camera-terms/">相机术语表</a></p>
 
 <nav class="page-toc" aria-label="本页目录">
 <p>本页目录</p>

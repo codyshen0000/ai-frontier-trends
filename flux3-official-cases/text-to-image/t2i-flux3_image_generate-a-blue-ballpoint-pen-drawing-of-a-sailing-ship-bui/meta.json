@@ -1,0 +1,25 @@
+{
+  "id": "t2i-flux3_image_generate-a-blue-ballpoint-pen-drawing-of-a-sailing-ship-bui",
+  "category": "t2i",
+  "title": "A blue ballpoint pen drawing of a sailing ship built from leaves on rolling waves.",
+  "prompt": "Create a finished 3:4 original artwork.\nMEDIUM AND VISUAL LANGUAGE: Obsessively detailed blue ballpoint drawing on pale paper, crosshatched shadows, scribbled energy and extreme fine-line density. Remain faithful to this specific medium, including its physical marks, lighting and limitations.\nSUBJECT AND STORY: ship built from leaves. Invent the details from scratch and make the scene emotionally engaging and visually surprising.\nCOMPOSITION: A quiet asymmetric tableau balancing two different scales with a memorable silhouette.\nIntegrate only the exact small title \"SHIP BUILT FROM LEAVES\" using lettering appropriate to this medium; image remains dominant.\nArt direction: develop a coherent distinctive palette within this medium; use thoughtful contrast, beautifully observed texture and a memorable visual hierarchy. This must feel like a complete artwork, not a moodboard, not a sample grid and not a generic centered object poster. Fill the frame with the artwork. No decorative presentation border. Invent all characters and settings. Do not reproduce existing artworks, brands, mascots, recognizable franchise characters, signatures or campaigns. No reference image is supplied. No watermarks or web addresses.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_generate",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/0037f82e4f6be65a905f8cbb0b2dd4d6fe36a8cc-1200x1600.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-flux3_image_generate-a-blue-ballpoint-pen-drawing-of-a-sailing-ship-bui/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "ClipSlider on flux3_image_generate.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

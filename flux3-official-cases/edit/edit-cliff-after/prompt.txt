@@ -1,0 +1,1 @@
+In <ref_image_0>, change the bright red hooded jacket worn by the person <person_1> standing atop the rock pinnacle <rock_1> to blue. Keep everything else in the image exactly unchanged, including the text <En_Text_1>, the overcast sky <sky_1>, the distant hills <hills_1>, the composition, and the lighting.

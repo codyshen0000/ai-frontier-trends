@@ -1,0 +1,25 @@
+{
+  "id": "t2i-a-high-speed-flash-photograph-of-a-plum-bursting-open-as-a-p",
+  "category": "t2i",
+  "title": "A high-speed flash photograph of a plum bursting open as a pebble strikes it, ju",
+  "prompt": "A high-speed flash photograph against pure black: a ripe plum split open by a thrown pebble, a crown of sharp juice droplets suspended around it. Deep purple and gold, extreme macro detail.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_overview",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/a518d2b0b7c03719a97742a4ab363187cd0c7726-1800x1013.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-a-high-speed-flash-photograph-of-a-plum-bursting-open-as-a-p/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "FLUX 3 Image overview — Text to image showcase",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

@@ -1,0 +1,28 @@
+{
+  "id": "edit-flux3_image_layout-a-short-eared-owl-in-flight-over-dried-wildflowers",
+  "category": "edit",
+  "title": "a short-eared owl in flight over dried wildflowers, recolored from brown and tan to snowy white and charcoal grey.",
+  "prompt": "",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_layout",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/1731db585c799dbb4e2c48731ea0b5bfc92a47d7-1800x1193.webp",
+    "https://cdn.sanity.io/images/2gpum2i6/production/785b2fe272b900971e6521f3265f7596fbf4779e-1800x1193.webp"
+  ],
+  "image_files": [
+    "edit/edit-flux3_image_layout-a-short-eared-owl-in-flight-over-dried-wildflowers/before.webp",
+    "edit/edit-flux3_image_layout-a-short-eared-owl-in-flight-over-dried-wildflowers/after.webp"
+  ],
+  "roles": [
+    "before",
+    "after"
+  ],
+  "labels": [],
+  "notes": "ClipSlider on flux3_image_layout.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

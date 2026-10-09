@@ -1,0 +1,25 @@
+{
+  "id": "layout-style-categories",
+  "category": "layout",
+  "title": "Design categories",
+  "prompt": "Flat-color digital illustration of a minimalist graphic design presented against a solid black background. The composition is organized into a vertical list of horizontal rows separated by thin, crisp white lines that span the full width of the frame. The lighting is perfectly flat and even, with no shadows, gradients, or textures, emphasizing a high-contrast, Swiss-inspired geometric layout. The framing is a tight, medium-close shot focusing on the middle section of the list. At the top edge, a partially visible upper row <row_1> is cut off by the frame. Below it, the first fully visible row <row_2> spans the width. The list continues downwards with four more complete, identically structured rows: the second full row <row_3>, the third full row <row_4>, the fourth full row <row_5>, and the fifth full row <row_6>. Each full row places a vibrant, colored circular badge with a black two-digit number on the left, followed by a bold, white sans-serif text label on the right. At the very bottom, another partially cropped lower row <row_7> extends off the lower edge of the canvas.\n[{\"id\": \"row_1\", \"bbox\": [0, 0, 60, 1000.0], \"desc\": \"A partially cropped horizontal list row set against a solid black background. On the left, only the bottom sliver of a yellow circular badge is present. To its right, the bottom portion of bold, white sans-serif text reads \\\"Logo\\\". A thin white horizontal line forms the bottom boundary of the row.\"}, {\"id\": \"row_2\", \"bbox\": [60, 0, 220, 1000.0], \"desc\": \"A complete horizontal list row set against a solid black background. On the left sits a bright pink circular badge containing the number \\\"02\\\" in black. To the right of the badge is the word \\\"Colors\\\" in a bold, white sans-serif typeface reminiscent of Helvetica or Inter. A thin white horizontal line runs across the bottom edge.\"}, {\"id\": \"row_3\", \"bbox\": [220, 0, 380, 1000.0], \"desc\": \"A horizontal list row featuring a bright green circular badge on the left, containing the black number \\\"03\\\". Beside it is the word \\\"Typography\\\" in bold, white sans-serif text. A thin white horizontal line marks the bottom edge.\"}, {\"id\": \"row_4\", \"bbox\": [380, 0, 540, 1000.0], \"desc\": \"A horizontal list row with a vibrant orange circular badge on the left displaying the black number \\\"04\\\". To its right, the text \\\"Graphic Elements\\\" appears in bold, white sans-serif typography. A thin white horizontal line spans the bottom.\"}, {\"id\": \"row_5\", \"bbox\": [540, 0, 700, 1000.0], \"desc\": \"A horizontal list row containing a saturated blue circular badge on the left with the black number \\\"05\\\". The phrase \\\"Grid & Composition\\\" is written to its right in bold, white sans-serif letters. A thin white horizontal line defines the bottom border.\"}, {\"id\": \"row_6\", \"bbox\": [700, 0, 860, 1000.0], \"desc\": \"A horizontal list row showing a bold red circular badge on the left that holds the black number \\\"06\\\". Next to it is the word \\\"Photography\\\" in bold, white sans-serif text. A thin white horizontal line runs along the bottom.\"}, {\"id\": \"row_7\", \"bbox\": [860, 0, 1000.0, 1000.0], \"desc\": \"A partially cropped horizontal list row set against a solid black background. On the left, the top half of a yellow circular badge is present. To its right, the top halves of bold, white sans-serif letters spell out the beginning of the phrase \\\"Social Media\\\".\"}]",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/guides/prompting_unified_style",
+  "image_urls": [
+    "https://docs.bfl.ml/images/flux3-image/layouts/categories.webp"
+  ],
+  "image_files": [
+    "layout/layout-style-categories/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "from FLUX3_STYLE_EXAMPLES on prompting_unified_style.html",
+  "downloaded_at": "2026-10-09T09:31:01.753964+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

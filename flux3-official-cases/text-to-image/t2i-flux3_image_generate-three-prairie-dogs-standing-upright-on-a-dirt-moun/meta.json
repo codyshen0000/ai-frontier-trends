@@ -1,0 +1,25 @@
+{
+  "id": "t2i-flux3_image_generate-three-prairie-dogs-standing-upright-on-a-dirt-moun",
+  "category": "t2i",
+  "title": "Three prairie dogs standing upright on a dirt mound in warm, golden light.",
+  "prompt": "Three prairie dogs stand upright on a small dirt mound, facing the camera. The background is a blurred, sunlit field with golden hues, emphasizing the warm lighting. The prairie dogs appear alert, with a few green plants and scattered dry grass visible around them.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_generate",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/3a258758daf37d78e7d7b22f92c65c8c57521818-1800x1192.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-flux3_image_generate-three-prairie-dogs-standing-upright-on-a-dirt-moun/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "ClipSlider on flux3_image_generate.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

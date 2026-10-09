@@ -4,7 +4,7 @@
 
 共 **119** 个术语、**14** 组。每条含官方英文术语、中文说明、官方 description、官方 example prompt（英文原文）。中文翻译是阅读辅助，不是文档原文。
 
-<p class="sister-nav">相关页：<a href="../">FLUX 3 提示词速查表</a> · <a href="../examples/">官方示例库</a></p>
+<p class="sister-nav">相关页：<a href="../">FLUX 3 提示词速查表</a> · <a href="../examples/">官方示例库</a> · <a href="../cases/">官方案例</a></p>
 
 <nav class="page-toc" aria-label="本页目录">
 <p>本页目录</p>

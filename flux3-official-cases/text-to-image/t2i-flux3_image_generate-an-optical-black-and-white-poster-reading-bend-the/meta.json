@@ -1,0 +1,25 @@
+{
+  "id": "t2i-flux3_image_generate-an-optical-black-and-white-poster-reading-bend-the",
+  "category": "t2i",
+  "title": "An optical black and white poster reading Bend the Silence, cut by a vivid orange plane.",
+  "prompt": "Create a finished 4:3 original experimental graphic design artwork.\nDESIGN LANGUAGE: Black and white optical geometry interrupted by one vivid orange plane. Thin parallel lines bend around negative-space lettering; use precise printing and a highly original spatial illusion.\nUNIQUE VISUAL IDEA: a long curved corridor whose striped walls become the negative space of the title.\nCOMPOSITION: Build a strongly asymmetric composition with one enormous focal gesture and a tightly aligned small caption. Let this specific visual idea determine the layout. Preserve its conceptual surprise.\nEXACT TITLE: \"BEND THE SILENCE\"\nEXACT SECONDARY COPY: \"Listening has a shape.\"\nArtwork fills the image; no framed poster mockup and no presentation board.\nThe title must be confidently typeset and readable. The small supplied sentence is the only supporting copy. No invented filler paragraphs. Type should feel integral to the material, scene or composition, not automatically placed as a generic heading over a small centered object. Design a visually adventurous, professionally resolved piece with clear hierarchy, deliberate contrast and rich details. Use fresh invented imagery and original letter arrangements; do not reproduce any existing poster, brand, logo, artwork, artist signature, campaign, famous character or reference photograph. No reference image is supplied. No watermarks, web addresses or QR codes.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_generate",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/61bce4d7d5cf8d2d5cadfee09f1b7f2165780223-1800x1350.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-flux3_image_generate-an-optical-black-and-white-poster-reading-bend-the/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "ClipSlider on flux3_image_generate.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

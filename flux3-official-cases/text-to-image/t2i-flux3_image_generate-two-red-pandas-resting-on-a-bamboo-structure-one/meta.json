@@ -1,0 +1,25 @@
+{
+  "id": "t2i-flux3_image_generate-two-red-pandas-resting-on-a-bamboo-structure-one",
+  "category": "t2i",
+  "title": "Two red pandas resting on a bamboo structure, one half asleep and one fully asleep.",
+  "prompt": "Two red pandas resting on a bamboo structure. One is lying down with eyes partially open, while the other is fully asleep. Their reddish-brown fur contrasts with the light brown bamboo. The background is softly blurred with green and brown tones, suggesting a natural setting.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_generate",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/3e26933f5362d96aa85b68c3f9e19fb4f7d9835f-1800x1192.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-flux3_image_generate-two-red-pandas-resting-on-a-bamboo-structure-one/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "ClipSlider on flux3_image_generate.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

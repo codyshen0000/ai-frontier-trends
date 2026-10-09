@@ -1,0 +1,25 @@
+{
+  "id": "t2i-flux3_image_generate-a-hot-pink-technical-schematic-on-black-titled-the",
+  "category": "t2i",
+  "title": "A hot pink technical schematic on black titled The Blueprint of a Paper Crown, with an exploded crown.",
+  "prompt": "Create a finished 1:1 long-form infographic poster. This is a TEXT-RICH graphic design study. Give the artwork a memorable composition specific to its concept, with roughly half the area for legible longer text. Integrate the prose into the authored visual arrangement; do not default to repeated cards or a generic five-panel grid.\nART DIRECTION: Experimental contemporary typography, black and hot pink, mixed large and small scales with highly legible prose. Invent a bespoke central diagram specifically for this concept: the blueprint of a paper crown. Shape the composition around the relationships in the brief, not a reusable card grid. The prose should occupy clear uncluttered areas alongside the diagram. Keep a strong reading sequence, large body text and no text over detailed illustration.\nVISUAL SUBJECT: A technical schematic rendered in hot pink against a black void. A deconstructed crown appears as a flat, unrolled strip at the bottom, while a central exploded view shows the three-dimensional assembly. Dotted lines trace the arc of the seam, connecting the flat notches to a floating, holographic circular crown hovering in the upper center.\nSOURCE BRIEF FOR DIAGRAM CONTENT: Explore how flat printed symbols become theatrical authority through notches, a circular seam, height and repeated motifs.\nEXACT VISIBLE COPY, reproduce every sentence verbatim with correct spelling and punctuation. The headings below describe layout roles and are not extra printed words.\nTITLE: \"THE BLUEPRINT OF A PAPER CROWN\"\nINTRODUCTION: \"Discover how mundane cardstock transforms into a symbol of temporary majesty through precise geometry, serrated peaks, and the structural alchemy of a simple closed loop.\"\nSECTION 1 HEADING: \"The Serrated Silhouette\"\nSECTION 1 BODY: \"A crown begins with the rhythmic repetition of isosceles triangles. These jagged peaks create a visual shorthand for fortresses and solar rays. By cutting sharp notches into the upper margin, the flat material sheds its utility and adopts a ceremonial jaggedness.\"\nSECTION 2 HEADING: \"Tensile Sovereignty\"\nSECTION 2 BODY: \"Authority requires a seam. When the two ends meet, the flat plane buckles into a rigid cylinder. This tension allows the paper to support its own weight, turning a flimsy sheet into a self-supporting ring that grips the wearerâs temples.\"\nSECTION 3 HEADING: \"Graphic Embellishment\"\nSECTION 3 BODY: \"Printed motifs serve as fictional jewels. Large circles and bold lines mimic the weight of heavy gold without the physical burden. These symbols provide the optical illusion of value, using ink to trick the eye into seeing depth and preciousness.\"\nBOTTOM TAKEAWAY: \"True power lies in the notch and the fold, proving that even paper can command a room when shaped with intent.\"\nFOOTER: \"A creative design study\"\nTYPESETTING: The 180 words of supplied prose are essential visual content, not instructions to summarize. Set complete paragraphs in comfortably readable body type, roughly 30â36 pixels at a 2K long edge. Short line lengths, generous leading and at least 5 percent exterior margins. Headings clearly larger than body text. Keep all 3 sections, introduction and takeaway fully visible. Add only the supplied diagram labels where needed. Avoid duplicate paragraphs, invented filler, ellipses, illegible pseudo-text or cut-off sentences. Keep diagram lines away from prose. A polished flat artwork filling the whole image, not a framed mockup.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_generate",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/ca59e15b9746af58a3d83056eb7dee5e9fec70ce-1800x1800.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-flux3_image_generate-a-hot-pink-technical-schematic-on-black-titled-the/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "ClipSlider on flux3_image_generate.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

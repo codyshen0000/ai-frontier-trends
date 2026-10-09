@@ -1,0 +1,25 @@
+{
+  "id": "t2i-a-lone-american-bison-walking-past-a-steaming-river-in-a-mis",
+  "category": "t2i",
+  "title": "A lone American bison walking past a steaming river in a misty geothermal landsc",
+  "prompt": "A wide-angle photograph of a lone American bison walking through a misty geothermal landscape. The dark brown bison stands in profile at the lower left, half hidden by white steam. A slate-blue stream winds past a tall dead tree, with evergreens fading into the mist behind. Muted, cool palette, soft overcast light.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_overview",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/29c3c221a61b66808abc7dc70c3e7f5c57ee7cce-1800x1193.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-a-lone-american-bison-walking-past-a-steaming-river-in-a-mis/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "FLUX 3 Image overview — Text to image showcase",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

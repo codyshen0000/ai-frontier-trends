@@ -1,0 +1,25 @@
+{
+  "id": "t2i-a-cemetery-on-colour-infrared-film-candy-pink-trees-and-gras",
+  "category": "t2i",
+  "title": "A cemetery on colour infrared film: candy-pink trees and grass, pale headstones,",
+  "prompt": "A cemetery on colour infrared film at midday: foliage and grass glow candy pink, the sky turns deep cyan, and pale headstones stay neutral. A lone figure in a dark coat sits on a bench, facing away. Grainy and dreamlike.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_overview",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/c8606897f52eb0deb43173a0eee4cc30a07725e1-1800x1013.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-a-cemetery-on-colour-infrared-film-candy-pink-trees-and-gras/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "FLUX 3 Image overview — Text to image showcase",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

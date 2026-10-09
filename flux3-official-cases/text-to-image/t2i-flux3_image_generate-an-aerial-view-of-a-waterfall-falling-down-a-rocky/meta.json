@@ -1,0 +1,25 @@
+{
+  "id": "t2i-flux3_image_generate-an-aerial-view-of-a-waterfall-falling-down-a-rocky",
+  "category": "t2i",
+  "title": "An aerial view of a waterfall falling down a rocky cliff into a misty pool in dense forest.",
+  "prompt": "An aerial view of a waterfall cascading through a dense, verdant forest. The water flows down a rocky cliff into a pool, creating mist around the base. Lush, dark green trees surround the waterfall, contrasting with the lighter green grass visible in the bottom left. A pathway winds through the forest, leading towards the waterfall, suggesting a blend of untamed nature and human access.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_generate",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/b13254437dafd1a8b74e4e6f673a75031f54027b-1800x1192.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-flux3_image_generate-an-aerial-view-of-a-waterfall-falling-down-a-rocky/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "ClipSlider on flux3_image_generate.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

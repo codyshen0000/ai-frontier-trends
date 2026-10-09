@@ -1,0 +1,25 @@
+{
+  "id": "t2i-a-schlieren-photograph-of-a-person-in-silhouette-exhaling",
+  "category": "t2i",
+  "title": "A Schlieren photograph of a person in silhouette exhaling, the breath visible as",
+  "prompt": "A Schlieren photograph that makes air visible: a dark silhouette in profile at the right, exhaling. The breath spreads left as turbulent silvery grey plumes and curling vortices against a featureless grey disc of light.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_overview",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/d2da92e4e075af04679972e2d79f8f269892db45-1800x1013.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-a-schlieren-photograph-of-a-person-in-silhouette-exhaling/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "FLUX 3 Image overview — Text to image showcase",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

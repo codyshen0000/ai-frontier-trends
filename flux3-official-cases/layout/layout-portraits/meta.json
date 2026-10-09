@@ -1,0 +1,188 @@
+{
+  "id": "layout-portraits",
+  "category": "layout",
+  "title": "Portrait grid",
+  "prompt": "Studio photograph of a fashion mood board arranged as a grid of fifteen rectangular images separated by clean white borders <board_1>. The top row contains five images: a woman sitting with a wide stance in a black leather jumpsuit <image_1>, a close-up of legs in red tights <image_2>, a blurred figure in a dark blue velvet garment <image_3>, a woman in a black ribbed turtleneck with closed eyes <image_4>, and a black-and-white shot of legs in high heels on a chair <image_5>. The middle row features a high-contrast face close-up <image_6>, a portrait of a woman with closed eyes and a pearl earring <image_7>, the back of a head with wavy hair being combed <image_8>, a motion-blurred facial profile <image_9>, and a figure mid-stride in a dark skirt and boots <image_10>. The bottom row displays a black-and-white profile of a bob haircut <image_11>, an extreme close-up of an eye and damp hair <image_12>, white flower petals on a black background <image_13>, a low-angle shot of a teal leather jacket and silver trousers <image_14>, and a close-up of a hand wearing silver rings <image_15>.\n[{\"id\": \"board_1\", \"bbox\": [0, 0, 1000.0, 1000.0], \"desc\": \"A flat white surface forming the background and intersecting borders of the grid layout.\"}, {\"id\": \"image_1\", \"bbox\": [20, 20, 326, 196], \"desc\": \"A color photograph of a woman with fair skin sitting on a stool with a wide stance, wearing a glossy black leather jumpsuit.\"}, {\"id\": \"image_2\", \"bbox\": [20, 216, 326, 392], \"desc\": \"A color photograph focusing on a pair of legs wearing vibrant red opaque tights against a neutral grey background.\"}, {\"id\": \"image_3\", \"bbox\": [20, 412, 326, 588], \"desc\": \"A color photograph showing a figure in a dark blue velvet garment, heavily motion-blurred to obscure the body details.\"}, {\"id\": \"image_4\", \"bbox\": [20, 608, 326, 784], \"desc\": \"A black-and-white photograph of a woman with dark skin wearing a black ribbed turtleneck sweater, her head tilted slightly back with her eyes closed.\"}, {\"id\": \"image_5\", \"bbox\": [20, 804, 326, 980], \"desc\": \"A black-and-white photograph showing a woman's legs crossed, wearing dark high heels, resting on the edge of a minimalist wire chair.\"}, {\"id\": \"image_6\", \"bbox\": [346, 20, 652, 196], \"desc\": \"A black-and-white photograph featuring a tight close-up of a woman's face with pale skin, illuminated by harsh directional light casting deep shadows.\"}, {\"id\": \"image_7\", \"bbox\": [346, 216, 652, 392], \"desc\": \"A color photograph of a woman with olive skin facing forward, her eyes closed, wearing a single large pearl earring.\"}, {\"id\": \"image_8\", \"bbox\": [346, 412, 652, 588], \"desc\": \"A black-and-white photograph showing the back of a person's head with long wavy hair; a black comb is caught mid-stroke through the strands.\"}, {\"id\": \"image_9\", \"bbox\": [346, 608, 652, 784], \"desc\": \"A black-and-white photograph of a woman's profile, rendered with horizontal motion blur that smears her features.\"}, {\"id\": \"image_10\", \"bbox\": [346, 804, 652, 980], \"desc\": \"A color photograph of a person captured mid-stride, wearing a dark flowing skirt and black leather boots, the fabric trailing behind them.\"}, {\"id\": \"image_11\", \"bbox\": [672, 20, 978, 196], \"desc\": \"A black-and-white photograph of a woman's profile, featuring a sharp, chin-length bob haircut against a bright white background.\"}, {\"id\": \"image_12\", \"bbox\": [672, 216, 978, 392], \"desc\": \"A black-and-white extreme close-up of a single human eye, surrounded by strands of damp, dark hair clinging to the skin.\"}, {\"id\": \"image_13\", \"bbox\": [672, 412, 978, 588], \"desc\": \"A black-and-white photograph of white flower petals scattered against a solid black background.\"}, {\"id\": \"image_14\", \"bbox\": [672, 608, 978, 784], \"desc\": \"A color photograph taken from a low angle, showing a person wearing a dark teal leather jacket and shimmering silver trousers.\"}, {\"id\": \"image_15\", \"bbox\": [672, 804, 978, 980], \"desc\": \"A black-and-white photograph of a hand with fair skin resting on dark fabric, adorned with multiple thick silver rings.\"}]",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_overview",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/f8ae52b08b10a2c3f4f346dbce43216e2357d3dd-1400x927.webp"
+  ],
+  "image_files": [
+    "layout/layout-portraits/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "layout prompt with bounding boxes; image may show boxes overlaid on overview",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": 1400,
+  "height": 927,
+  "aspect_ratio": "3:2",
+  "rows": [
+    {
+      "id": "board_1",
+      "bbox": [
+        0,
+        0,
+        1000.0,
+        1000.0
+      ],
+      "desc": "A flat white surface forming the background and intersecting borders of the grid layout."
+    },
+    {
+      "id": "image_1",
+      "bbox": [
+        20,
+        20,
+        326,
+        196
+      ],
+      "desc": "A color photograph of a woman with fair skin sitting on a stool with a wide stance, wearing a glossy black leather jumpsuit."
+    },
+    {
+      "id": "image_2",
+      "bbox": [
+        20,
+        216,
+        326,
+        392
+      ],
+      "desc": "A color photograph focusing on a pair of legs wearing vibrant red opaque tights against a neutral grey background."
+    },
+    {
+      "id": "image_3",
+      "bbox": [
+        20,
+        412,
+        326,
+        588
+      ],
+      "desc": "A color photograph showing a figure in a dark blue velvet garment, heavily motion-blurred to obscure the body details."
+    },
+    {
+      "id": "image_4",
+      "bbox": [
+        20,
+        608,
+        326,
+        784
+      ],
+      "desc": "A black-and-white photograph of a woman with dark skin wearing a black ribbed turtleneck sweater, her head tilted slightly back with her eyes closed."
+    },
+    {
+      "id": "image_5",
+      "bbox": [
+        20,
+        804,
+        326,
+        980
+      ],
+      "desc": "A black-and-white photograph showing a woman's legs crossed, wearing dark high heels, resting on the edge of a minimalist wire chair."
+    },
+    {
+      "id": "image_6",
+      "bbox": [
+        346,
+        20,
+        652,
+        196
+      ],
+      "desc": "A black-and-white photograph featuring a tight close-up of a woman's face with pale skin, illuminated by harsh directional light casting deep shadows."
+    },
+    {
+      "id": "image_7",
+      "bbox": [
+        346,
+        216,
+        652,
+        392
+      ],
+      "desc": "A color photograph of a woman with olive skin facing forward, her eyes closed, wearing a single large pearl earring."
+    },
+    {
+      "id": "image_8",
+      "bbox": [
+        346,
+        412,
+        652,
+        588
+      ],
+      "desc": "A black-and-white photograph showing the back of a person's head with long wavy hair; a black comb is caught mid-stroke through the strands."
+    },
+    {
+      "id": "image_9",
+      "bbox": [
+        346,
+        608,
+        652,
+        784
+      ],
+      "desc": "A black-and-white photograph of a woman's profile, rendered with horizontal motion blur that smears her features."
+    },
+    {
+      "id": "image_10",
+      "bbox": [
+        346,
+        804,
+        652,
+        980
+      ],
+      "desc": "A color photograph of a person captured mid-stride, wearing a dark flowing skirt and black leather boots, the fabric trailing behind them."
+    },
+    {
+      "id": "image_11",
+      "bbox": [
+        672,
+        20,
+        978,
+        196
+      ],
+      "desc": "A black-and-white photograph of a woman's profile, featuring a sharp, chin-length bob haircut against a bright white background."
+    },
+    {
+      "id": "image_12",
+      "bbox": [
+        672,
+        216,
+        978,
+        392
+      ],
+      "desc": "A black-and-white extreme close-up of a single human eye, surrounded by strands of damp, dark hair clinging to the skin."
+    },
+    {
+      "id": "image_13",
+      "bbox": [
+        672,
+        412,
+        978,
+        588
+      ],
+      "desc": "A black-and-white photograph of white flower petals scattered against a solid black background."
+    },
+    {
+      "id": "image_14",
+      "bbox": [
+        672,
+        608,
+        978,
+        784
+      ],
+      "desc": "A color photograph taken from a low angle, showing a person wearing a dark teal leather jacket and shimmering silver trousers."
+    },
+    {
+      "id": "image_15",
+      "bbox": [
+        672,
+        804,
+        978,
+        980
+      ],
+      "desc": "A black-and-white photograph of a hand with fair skin resting on dark fabric, adorned with multiple thick silver rings."
+    }
+  ],
+  "caption": "Studio photograph of a fashion mood board arranged as a grid of fifteen rectangular images separated by clean white borders <board_1>. The top row contains five images: a woman sitting with a wide stance in a black leather jumpsuit <image_1>, a close-up of legs in red tights <image_2>, a blurred figure in a dark blue velvet garment <image_3>, a woman in a black ribbed turtleneck with closed eyes <image_4>, and a black-and-white shot of legs in high heels on a chair <image_5>. The middle row features a high-contrast face close-up <image_6>, a portrait of a woman with closed eyes and a pearl earring <image_7>, the back of a head with wavy hair being combed <image_8>, a motion-blurred facial profile <image_9>, and a figure mid-stride in a dark skirt and boots <image_10>. The bottom row displays a black-and-white profile of a bob haircut <image_11>, an extreme close-up of an eye and damp hair <image_12>, white flower petals on a black background <image_13>, a low-angle shot of a teal leather jacket and silver trousers <image_14>, and a close-up of a hand wearing silver rings <image_15>."
+}

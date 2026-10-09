@@ -1,0 +1,25 @@
+{
+  "id": "t2i-flux3_image_generate-a-calm-autumn-lake-with-golden-trees-reflected-in",
+  "category": "t2i",
+  "title": "A calm autumn lake with golden trees reflected in the water and a wooden rowboat at the shore.",
+  "prompt": "A tranquil autumn scene featuring a serene lake surrounded by vibrant, golden-hued trees reflecting in the calm water. In the foreground, a wooden rowboat gently rocks near the shore, and a family of ducks glides gracefully across the surface. The sky is overcast, casting a soft, diffused light that enhances the rich colors of the foliage. The air is crisp and cool, suggesting the peaceful transition from fall to winter.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_generate",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/b9702979b380c61fff69e0bb747a45f0578fd81d-1800x1192.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-flux3_image_generate-a-calm-autumn-lake-with-golden-trees-reflected-in/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "ClipSlider on flux3_image_generate.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

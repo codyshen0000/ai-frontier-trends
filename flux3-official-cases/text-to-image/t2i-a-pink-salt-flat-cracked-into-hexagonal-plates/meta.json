@@ -1,0 +1,25 @@
+{
+  "id": "t2i-a-pink-salt-flat-cracked-into-hexagonal-plates",
+  "category": "t2i",
+  "title": "A pink salt flat cracked into hexagonal plates, with three flamingos in shallow ",
+  "prompt": "A vast pink salt flat at low sun, cracked into hexagonal plates. Far out stands a figure in a glowing orange mesh coat and mirrored helmet, with three flamingos reflected in the water. Palette: burnt orange (#FF6B35), peach (#F7C59F), cream (#EFEFD0), and deep blue (#004E89).",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_overview",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/d828fce10b550c4e8048b7763fa4005f90e58615-1800x1013.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-a-pink-salt-flat-cracked-into-hexagonal-plates/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "FLUX 3 Image overview — Text to image showcase",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

@@ -1,0 +1,110 @@
+{
+  "id": "edit-tiger-after",
+  "category": "edit",
+  "title": "Recolor two boxes",
+  "prompt": "In <ref_image_0>, change the large tiger <animal_1> and the small glowing butterfly <insect_1> to be pink. Keep the massive fallen log <log_1>, the falling snow <snow_1>, and the dark background trees <trees_1> exactly unchanged.",
+  "instruction_short": "Make both pink.",
+  "op": "recolour",
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_overview",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/b6476b163e11444d6d5490ac1fa1e610d4eab85e-1360x768.webp",
+    "https://cdn.sanity.io/images/2gpum2i6/production/3c884e72074d330bd62f27e8d222b294b855eb74-1360x768.webp"
+  ],
+  "image_files": [
+    "edit/edit-tiger-after/before.webp",
+    "edit/edit-tiger-after/after.webp"
+  ],
+  "roles": [
+    "before",
+    "after"
+  ],
+  "labels": [],
+  "notes": "op=recolour; overview edit slider (knight-after/bamboo-wolf etc)",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": 1360,
+  "height": 768,
+  "aspect_ratio": null,
+  "rows": [
+    {
+      "id": "animal_1",
+      "from": null,
+      "src_bbox": null,
+      "tgt_bbox": [
+        250,
+        50,
+        850,
+        650
+      ],
+      "desc": "Make both pink.",
+      "kind": "new"
+    },
+    {
+      "id": "insect_1",
+      "from": null,
+      "src_bbox": null,
+      "tgt_bbox": [
+        650,
+        680,
+        750,
+        750
+      ],
+      "desc": "Make both pink.",
+      "kind": "new"
+    },
+    {
+      "id": "log_1",
+      "from": "ref_image_0",
+      "src_bbox": [
+        600,
+        0,
+        1000.0,
+        1000.0
+      ],
+      "tgt_bbox": [
+        600,
+        0,
+        1000.0,
+        1000.0
+      ],
+      "desc": "A massive, fallen tree log stretching horizontally across the foreground. The surface features deep, rough-textured bark, weathered cracks, and small pockets of frost.",
+      "kind": "anchor"
+    },
+    {
+      "id": "snow_1",
+      "from": "ref_image_0",
+      "src_bbox": [
+        0,
+        0,
+        1000.0,
+        1000.0
+      ],
+      "tgt_bbox": [
+        0,
+        0,
+        1000.0,
+        1000.0
+      ],
+      "desc": "Numerous white snowflakes of varying sizes falling across the scene. Some flakes are sharp and distinct, while others closer to the lens appear as blurred white streaks.",
+      "kind": "anchor"
+    },
+    {
+      "id": "trees_1",
+      "from": "ref_image_0",
+      "src_bbox": [
+        0,
+        0,
+        650,
+        1000.0
+      ],
+      "tgt_bbox": [
+        0,
+        0,
+        650,
+        1000.0
+      ],
+      "desc": "A dense stand of tall, dark, vertical tree trunks receding into the distance. A cool, blue misty light permeates the spaces between the trees, glowing most intensely from the right edge.",
+      "kind": "anchor"
+    }
+  ]
+}

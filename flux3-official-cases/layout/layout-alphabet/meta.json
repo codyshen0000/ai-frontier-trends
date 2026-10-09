@@ -1,0 +1,118 @@
+{
+  "id": "layout-alphabet",
+  "category": "layout",
+  "title": "Alphabet poster",
+  "prompt": "Digital graphic design mockup shot straight-on with a top-down view under flat, even studio-style lighting. A flat, neutral gray background <background_1> fills the frame. Centered in the composition is a vertical, rectangular black poster <poster_1>, appearing to hover just above the surface due to a soft, diffuse drop shadow extending along its left and bottom edges. The poster displays the complete English alphabet rendered in stark white with a geometric glitch aesthetic, featuring horizontal shifts and missing angular slices. The letters are arranged systematically across five horizontal rows: the first row <En_Text_1>, the second row <En_Text_2>, the third row <En_Text_3>, the fourth row <En_Text_4>, and the fifth row <En_Text_5>. Centered near the bottom edge of the poster is a logo <graphic_1>. Immediately below this emblem, a small line of text <En_Text_6> completes the design.\n[{\"id\": \"background_1\", \"bbox\": [0, 0, 1000.0, 1000.0], \"desc\": \"A flat, neutral gray background filling the entire frame, completely devoid of surface glare or texture.\"}, {\"id\": \"poster_1\", \"bbox\": [100, 250, 900, 750], \"desc\": \"A vertical, rectangular black poster centered in the frame with perfectly straight, undistorted edges. A soft, diffuse drop shadow extends along its left and bottom edges, creating a hovering illusion.\"}, {\"id\": \"En_Text_1\", \"bbox\": [150, 300, 250, 700], \"desc\": \"Stark white, uppercase letters \\\"A B C D E F\\\" featuring a geometric glitch aesthetic with horizontal shifts, staggered alignments, and missing angular slices mimicking digital distortion.\"}, {\"id\": \"En_Text_2\", \"bbox\": [280, 300, 380, 700], \"desc\": \"Stark white, uppercase letters \\\"G H I J K L\\\" featuring a geometric glitch aesthetic with horizontal shifts, staggered alignments, and missing angular slices mimicking digital distortion.\"}, {\"id\": \"En_Text_3\", \"bbox\": [410, 320, 510, 680], \"desc\": \"Stark white, uppercase letters \\\"M N O P Q\\\" featuring a geometric glitch aesthetic with horizontal shifts, staggered alignments, and missing angular slices mimicking digital distortion.\"}, {\"id\": \"En_Text_4\", \"bbox\": [540, 320, 640, 680], \"desc\": \"Stark white, uppercase letters \\\"R S T U V\\\" featuring a geometric glitch aesthetic with horizontal shifts, staggered alignments, and missing angular slices mimicking digital distortion.\"}, {\"id\": \"En_Text_5\", \"bbox\": [670, 350, 770, 650], \"desc\": \"Stark white, uppercase letters \\\"W X Y Z\\\" featuring a geometric glitch aesthetic with horizontal shifts, staggered alignments, and missing angular slices mimicking digital distortion.\"}, {\"id\": \"graphic_1\", \"bbox\": [800, 460, 830, 540], \"desc\": \"A minimalist logo depicting a stylized letter \\\"M\\\" constructed from overlapping, thin white triangular outlines.\"}, {\"id\": \"En_Text_6\", \"bbox\": [840, 450, 860, 550], \"desc\": \"The text \\\"MIKE NESS\\\" printed in a very small, clean, white sans-serif typeface.\"}]",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_overview",
+  "image_urls": [
+    "https://docs.bfl.ml/images/flux3-image/layouts/alphabet.webp"
+  ],
+  "image_files": [
+    "layout/layout-alphabet/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "layout prompt with bounding boxes; image may show boxes overlaid on overview",
+  "downloaded_at": "2026-10-09T09:31:01.753964+08:00",
+  "missing_image_urls": [],
+  "width": 1400,
+  "height": 1400,
+  "aspect_ratio": "1:1",
+  "rows": [
+    {
+      "id": "background_1",
+      "bbox": [
+        0,
+        0,
+        1000.0,
+        1000.0
+      ],
+      "desc": "A flat, neutral gray background filling the entire frame, completely devoid of surface glare or texture."
+    },
+    {
+      "id": "poster_1",
+      "bbox": [
+        100,
+        250,
+        900,
+        750
+      ],
+      "desc": "A vertical, rectangular black poster centered in the frame with perfectly straight, undistorted edges. A soft, diffuse drop shadow extends along its left and bottom edges, creating a hovering illusion."
+    },
+    {
+      "id": "En_Text_1",
+      "bbox": [
+        150,
+        300,
+        250,
+        700
+      ],
+      "desc": "Stark white, uppercase letters \"A B C D E F\" featuring a geometric glitch aesthetic with horizontal shifts, staggered alignments, and missing angular slices mimicking digital distortion."
+    },
+    {
+      "id": "En_Text_2",
+      "bbox": [
+        280,
+        300,
+        380,
+        700
+      ],
+      "desc": "Stark white, uppercase letters \"G H I J K L\" featuring a geometric glitch aesthetic with horizontal shifts, staggered alignments, and missing angular slices mimicking digital distortion."
+    },
+    {
+      "id": "En_Text_3",
+      "bbox": [
+        410,
+        320,
+        510,
+        680
+      ],
+      "desc": "Stark white, uppercase letters \"M N O P Q\" featuring a geometric glitch aesthetic with horizontal shifts, staggered alignments, and missing angular slices mimicking digital distortion."
+    },
+    {
+      "id": "En_Text_4",
+      "bbox": [
+        540,
+        320,
+        640,
+        680
+      ],
+      "desc": "Stark white, uppercase letters \"R S T U V\" featuring a geometric glitch aesthetic with horizontal shifts, staggered alignments, and missing angular slices mimicking digital distortion."
+    },
+    {
+      "id": "En_Text_5",
+      "bbox": [
+        670,
+        350,
+        770,
+        650
+      ],
+      "desc": "Stark white, uppercase letters \"W X Y Z\" featuring a geometric glitch aesthetic with horizontal shifts, staggered alignments, and missing angular slices mimicking digital distortion."
+    },
+    {
+      "id": "graphic_1",
+      "bbox": [
+        800,
+        460,
+        830,
+        540
+      ],
+      "desc": "A minimalist logo depicting a stylized letter \"M\" constructed from overlapping, thin white triangular outlines."
+    },
+    {
+      "id": "En_Text_6",
+      "bbox": [
+        840,
+        450,
+        860,
+        550
+      ],
+      "desc": "The text \"MIKE NESS\" printed in a very small, clean, white sans-serif typeface."
+    }
+  ],
+  "caption": "Digital graphic design mockup shot straight-on with a top-down view under flat, even studio-style lighting. A flat, neutral gray background <background_1> fills the frame. Centered in the composition is a vertical, rectangular black poster <poster_1>, appearing to hover just above the surface due to a soft, diffuse drop shadow extending along its left and bottom edges. The poster displays the complete English alphabet rendered in stark white with a geometric glitch aesthetic, featuring horizontal shifts and missing angular slices. The letters are arranged systematically across five horizontal rows: the first row <En_Text_1>, the second row <En_Text_2>, the third row <En_Text_3>, the fourth row <En_Text_4>, and the fifth row <En_Text_5>. Centered near the bottom edge of the poster is a logo <graphic_1>. Immediately below this emblem, a small line of text <En_Text_6> completes the design."
+}

@@ -1,0 +1,28 @@
+{
+  "id": "edit-flux3_image_layout-a-dome-pendant-lamp-with-a-slatted-lower-shade-ove",
+  "category": "edit",
+  "title": "a dome pendant lamp with a slatted lower shade over a living room, recolored from yellow and orange to green.",
+  "prompt": "Change the Lamp color to #34eb61",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_layout",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/fcefd3884f37d5bccfe9db0cd9c675c451712e6d-1200x1600.webp",
+    "https://cdn.sanity.io/images/2gpum2i6/production/c239b5e1960e2efb20494f59575d5dacfd550ad3-1350x1800.webp"
+  ],
+  "image_files": [
+    "edit/edit-flux3_image_layout-a-dome-pendant-lamp-with-a-slatted-lower-shade-ove/before.webp",
+    "edit/edit-flux3_image_layout-a-dome-pendant-lamp-with-a-slatted-lower-shade-ove/after.webp"
+  ],
+  "roles": [
+    "before",
+    "after"
+  ],
+  "labels": [],
+  "notes": "ClipSlider on flux3_image_layout.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

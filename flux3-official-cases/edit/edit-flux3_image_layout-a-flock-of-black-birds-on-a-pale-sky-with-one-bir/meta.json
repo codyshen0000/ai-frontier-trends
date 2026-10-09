@@ -1,0 +1,28 @@
+{
+  "id": "edit-flux3_image_layout-a-flock-of-black-birds-on-a-pale-sky-with-one-bir",
+  "category": "edit",
+  "title": "a flock of black birds on a pale sky, with one bird in the middle recolored pink.",
+  "prompt": "",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_layout",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/4792198dfeba9223bf3ecf020fed2942de7f0bd7-1800x1200.webp",
+    "https://cdn.sanity.io/images/2gpum2i6/production/6995df5d4ab590ca0b4eec142c27a643582a5f01-1248x832.webp"
+  ],
+  "image_files": [
+    "edit/edit-flux3_image_layout-a-flock-of-black-birds-on-a-pale-sky-with-one-bir/before.webp",
+    "edit/edit-flux3_image_layout-a-flock-of-black-birds-on-a-pale-sky-with-one-bir/after.webp"
+  ],
+  "roles": [
+    "before",
+    "after"
+  ],
+  "labels": [],
+  "notes": "ClipSlider on flux3_image_layout.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

@@ -1,0 +1,35 @@
+{
+  "id": "multi_ref-record-van",
+  "category": "multi_ref",
+  "title": "Replace cartridge with van",
+  "prompt": "replace the cartridge from image 1 with the van in image 2, adjust the lighting on the van to integrate well within image 1",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_overview",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/ec365238b6efa1b29f573e83b774c6d539408ea8-1800x1200.webp",
+    "https://cdn.sanity.io/images/2gpum2i6/production/ff3bf81b5a8b38f0d870561217b68a72964259ab-1131x1414.webp",
+    "https://cdn.sanity.io/images/2gpum2i6/production/0fc855dcc110a26d1689f1fd70005f4f80d58ce2-1800x1193.webp"
+  ],
+  "image_files": [
+    "multi-reference/multi_ref-record-van/ref1.webp",
+    "multi-reference/multi_ref-record-van/ref2.webp",
+    "multi-reference/multi_ref-record-van/result.webp"
+  ],
+  "roles": [
+    "ref1",
+    "ref2",
+    "result"
+  ],
+  "labels": [
+    "Image 1: a record spinning on a turntable",
+    "Image 2: a red and white van on a highway",
+    "FLUX 3 Image result: a miniature van in place of the cartridge"
+  ],
+  "notes": "overview MultiRefGrid showcase",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

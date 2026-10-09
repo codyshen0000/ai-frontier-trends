@@ -1,0 +1,25 @@
+{
+  "id": "t2i-flux3_image_generate-an-infographic-poster-titled-the-garden-of-misplac",
+  "category": "t2i",
+  "title": "An infographic poster titled The Garden of Misplaced Apostrophes, with a winding comma-shaped topiary path.",
+  "prompt": "Create a finished 1:1 long-form infographic poster. This is a TEXT-RICH graphic design study. Give the artwork a memorable composition specific to its concept, with roughly half the area for legible longer text. Integrate the prose into the authored visual arrangement; do not default to repeated cards or a generic five-panel grid.\nART DIRECTION: Warm risograph-like texture, burgundy and sage with visible paper grain, bold headlines and clean readable text. Invent a bespoke central diagram specifically for this concept: the garden of misplaced apostrophes. Shape the composition around the relationships in the brief, not a reusable card grid. The prose should occupy clear uncluttered areas alongside the diagram. Keep a strong reading sequence, large body text and no text over detailed illustration.\nVISUAL SUBJECT: A central, winding topiary path shaped like a giant comma. At each bend, stylized plants represent different grammatical rules. The Cyclops Fern has one large leaf, while the Neighbors' Ivy intertwines multiple stems. Faded burgundy shop signs float above the sage-colored foliage, with glowing red apostrophes highlighting the specific placement errors discussed in the text.\nSOURCE BRIEF FOR DIAGRAM CONTENT: Turn punctuation errors into a whimsical planted landscape; explain how placement changes ownership, omission and the reading of invented shop names.\nEXACT VISIBLE COPY, reproduce every sentence verbatim with correct spelling and punctuation. The headings below describe layout roles and are not extra printed words.\nTITLE: \"THE GARDEN OF MISPLACED APOSTROPHES\"\nINTRODUCTION: \"Wander through a botanical sanctuary where errant punctuation sprouts into strange life, demonstrating how a single floating mark reshapes the ownership of every leaf.\"\nSECTION 1 HEADING: \"The Singular Shift\"\nSECTION 1 BODY: \"Look at the Cyclops Fern. When the mark sits before the 's', the entire plant belongs to one lonely gardener. This possessive placement anchors the identity to a solitary figure, turning a communal thicket into a private, guarded specimen.\"\nSECTION 2 HEADING: \"Plurality in Bloom\"\nSECTION 2 BODY: \"Beside the path, the Neighbors' Ivy displays the mark after the 's'. Here, the punctuation indicates shared ownership between multiple inhabitants. The vine stretches across fences, signifying a collective boundary that changes based entirely on where the tiny hook lands.\"\nSECTION 3 HEADING: \"Vanishing Omissions\"\nSECTION 3 BODY: \"The 'Its' Orchid suffers when an apostrophe is forced into its name. A contraction implies the plant 'is' something else, while the clean, unmarked version claims true possession. Misplacing this speck creates a linguistic weed that chokes the intended meaning.\"\nSECTION 4 HEADING: \"Signage and Shadows\"\nSECTION 4 BODY: \"Forged shop signs like 'Joes Pizzas' hang over the beds. Without the necessary mark, the name suggests a terrifying army of men named Joe rather than a single owner. The missing curve strips the personhood from the humble storefront.\"\nBOTTOM TAKEAWAY: \"In this landscape, punctuation acts as the root system, dictating whether a noun stands alone or belongs to a crowd.\"\nFOOTER: \"A creative design study\"\nTYPESETTING: The 218 words of supplied prose are essential visual content, not instructions to summarize. Set complete paragraphs in comfortably readable body type, roughly 30â36 pixels at a 2K long edge. Short line lengths, generous leading and at least 5 percent exterior margins. Headings clearly larger than body text. Keep all 4 sections, introduction and takeaway fully visible. Add only the supplied diagram labels where needed. Avoid duplicate paragraphs, invented filler, ellipses, illegible pseudo-text or cut-off sentences. Keep diagram lines away from prose. A polished flat artwork filling the whole image, not a framed mockup.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_generate",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/3e48c60fc2e9b033fa122191bcfe4aa28dd6ac6a-1800x1800.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-flux3_image_generate-an-infographic-poster-titled-the-garden-of-misplac/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "ClipSlider on flux3_image_generate.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

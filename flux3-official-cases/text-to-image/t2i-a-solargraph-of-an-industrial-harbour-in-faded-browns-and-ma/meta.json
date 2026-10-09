@@ -1,0 +1,25 @@
+{
+  "id": "t2i-a-solargraph-of-an-industrial-harbour-in-faded-browns-and-ma",
+  "category": "t2i",
+  "title": "A solargraph of an industrial harbour in faded browns and mauves, with dozens of",
+  "prompt": "A six-month solargraph from a pinhole camera: an industrial harbour in soft inverted browns and mauves. More than a hundred white sun trails arc across the sky, with ghostly cranes, light leaks, and chemical stains.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_overview",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/1617e9d64bb61a878dab26b1b33b4f06a0527322-1800x1013.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-a-solargraph-of-an-industrial-harbour-in-faded-browns-and-ma/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "FLUX 3 Image overview — Text to image showcase",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

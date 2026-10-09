@@ -1,0 +1,25 @@
+{
+  "id": "t2i-flux3_image_generate-a-type-led-poster-reading-room-between-words-with",
+  "category": "t2i",
+  "title": "A type-led poster reading Room Between Words, with oversized red letterforms and blue accents.",
+  "prompt": "Create a finished 3:4 graphic design artwork for an original fictional design study.\nART DIRECTION: Type-led graphic poster with a newly composed layout and striking scale contrasts. Typography is the visual subject; use only supplied copy. Crisp ink, subtle paper grain, two strong colors with a neutral ground.\nORIGINAL VISUAL: title words at different scales joined by thin rules. Crop the main form boldly at one edge while keeping every word inside the trim.\nEXACT VISIBLE TITLE: \"Room Between Words\"\nEXACT SUPPORTING COPY: \"A small study in visual rhythm\"\nUse the supporting copy as a carefully typeset secondary block; slashes indicate line breaks.\nCreate a coherent, distinctive new layout with readable text and intentional hierarchy. Full-bleed artwork, except for the requested packaging presentation. Keep important text at least 5 percent from all edges. Fine print texture and polished professional art direction. Use only the supplied visible copy. No real brands, logos, named artists, existing book covers, famous characters, copied campaign slogans, signatures, watermarks, QR codes or borrowed artwork. Invent all visual forms from this description; this is not a remake of a specific existing design.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_generate",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/7824df14acf4677f3f7ce882ea8b92d985b1112a-1200x1600.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-flux3_image_generate-a-type-led-poster-reading-room-between-words-with/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "ClipSlider on flux3_image_generate.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

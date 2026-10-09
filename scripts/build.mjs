@@ -2,6 +2,7 @@ import { cpSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs"
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { marked } from "marked";
+import { casesGalleryBody, casesSummary, copyCaseAssets } from "./flux3_cases_page.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const distDir = join(root, "dist");
@@ -111,7 +112,7 @@ function renderPage({ id, title, path, body, extraClass = "" }) {
     ${body}
   </main>
   <footer class="site-footer">
-    <p>公开页。内容来自公开时间线、信号表、权重追踪与 FLUX 3 提示词速查、示例库、相机术语表。</p>
+    <p>公开页。内容来自公开时间线、信号表、权重追踪与 FLUX 3 提示词速查、示例库、相机术语表、官方案例。</p>
   </footer>
   <script src="${jsHref}"></script>
 </body>
@@ -160,6 +161,24 @@ const contentPages = [];
 
 for (const page of config.pages) {
   if (publicDeploy && privatePages.has(page.id)) continue;
+
+  if (page.gallery === "flux3-cases") {
+    writePage(
+      page.path,
+      renderPage({
+        id: page.id,
+        title: page.title,
+        path: page.path,
+        extraClass: "prose cases-page",
+        body: casesGalleryBody(root),
+      }),
+    );
+    contentPages.push({
+      ...page,
+      summary: page.summary || casesSummary(root),
+    });
+    continue;
+  }
 
   if (page.htmlFile) {
     const raw = readFileSync(join(contentDir, page.htmlFile), "utf8");
@@ -211,6 +230,7 @@ if (!publicDeploy || !privatePages.has("home")) {
 
 cpSync(join(srcDir, "styles.css"), join(distDir, "styles.css"));
 cpSync(join(srcDir, "theme.js"), join(distDir, "theme.js"));
+const copiedImages = copyCaseAssets(root, distDir);
 writeFileSync(join(distDir, ".nojekyll"), "");
 
-console.log(`Built ${contentPages.length + 1} pages → dist/ (public=${publicDeploy})`);
+console.log(`Built ${contentPages.length + 1} pages → dist/ (public=${publicDeploy}, case images=${copiedImages})`);

@@ -1,0 +1,168 @@
+{
+  "id": "layout-arches",
+  "category": "layout",
+  "title": "Concrete arches",
+  "prompt": "Full-color architectural photograph shot on 35mm film from a low-angle perspective at ground level, featuring bright, direct sunlight and visible film grain. Under a clear, pale blue sky <sky_1>, a Brutalist concrete structure <building_1> dominates the right and center of the frame. The building features three clusters of tall, nested parabolic arches. At the base of the central section, a flat concrete overhang <overhang_1> shelters a small, dark entrance <entrance_1>. Mounted on the overhang is a large, rectangular red sign <sign_1> displaying a circular emblem <emblem_1> on the left, a line of Georgian script <Ka_Text_1> on top, and English text <En_Text_1> below. Along the ledge behind the sign, several small flags on thin poles <flags_1> are visible. To the left stands a portion of an older, traditional building <building_2> with a slender, tiered tower topped by a metallic spire and a five-pointed star. In the foreground on the far left, a dark green coniferous tree <tree_1> partially obscures the lower levels of a glass-fronted building <building_3>. The structures sit behind a wide set of shallow concrete steps <steps_1> that lead down to a paved plaza made of grey stone blocks <plaza_1> filling the bottom of the frame.\n[{\"id\": \"sky_1\", \"bbox\": [0, 0, 400, 1000.0], \"desc\": \"A clear, pale blue sky filling the upper background, with a slight gradient toward white near the horizon and a faint film grain visible.\"}, {\"id\": \"building_1\", \"bbox\": [150, 350, 750, 950], \"desc\": \"A Brutalist concrete structure featuring three distinct clusters of tall, nested parabolic arches, with the central cluster reaching the highest. The raw, weathered concrete shows subtle variations in grey tones, vertical water streaking, and deep, sharp shadows cast within the recesses.\"}, {\"id\": \"overhang_1\", \"bbox\": [650, 500, 700, 750], \"desc\": \"A flat, thick concrete overhang protruding from the base of the central arched section, casting a harsh, dark shadow beneath it.\"}, {\"id\": \"entrance_1\", \"bbox\": [700, 550, 750, 700], \"desc\": \"A small, dark entrance area recessed beneath the concrete overhang, its interior details lost in deep shadow.\"}, {\"id\": \"sign_1\", \"bbox\": [640, 520, 690, 730], \"desc\": \"A large, rectangular red sign mounted securely to the front face of the concrete overhang, bearing yellow text and a circular emblem.\"}, {\"id\": \"emblem_1\", \"bbox\": [645, 525, 685, 555], \"desc\": \"A circular yellow emblem positioned on the left side of the red sign, featuring abstract geometric inner markings.\"}, {\"id\": \"Ka_Text_1\", \"bbox\": [645, 560, 660, 720], \"desc\": \"Yellow Georgian script reading \\\"á¡áá¥áá áááááá¡ á¥á áá¡á¢ááá-áááááá áá¢áá£áá áááá¨áá á\\\" printed along the upper section of the red sign in a bold, sans-serif font.\"}, {\"id\": \"En_Text_1\", \"bbox\": [665, 560, 685, 720], \"desc\": \"Yellow, bold sans-serif typography reading \\\"CHRISTIAN DEMOCRATIC UNION OF GEORGIA\\\" arranged across two lines on the lower portion of the red sign.\"}, {\"id\": \"flags_1\", \"bbox\": [590, 520, 640, 730], \"desc\": \"Several small, slightly drooping flags attached to thin, mismatched metal poles positioned along the ledge just behind the red sign.\"}, {\"id\": \"building_2\", \"bbox\": [100, 100, 550, 320], \"desc\": \"A portion of an older, traditional building featuring a tall, slender tower topped with a metallic spire and a five-pointed star. It has a classic, tiered design with arched windows, decorative stonework, and uneven weathering on its pale facade.\"}, {\"id\": \"tree_1\", \"bbox\": [450, 0, 850, 280], \"desc\": \"A dark green coniferous tree with dense, textured branches, standing in the foreground and partially obscuring the lower levels of the glass building.\"}, {\"id\": \"building_3\", \"bbox\": [400, 0, 700, 200], \"desc\": \"A modern, glass-fronted building with dark, reflective windows, partially visible behind the foreground tree.\"}, {\"id\": \"steps_1\", \"bbox\": [750, 300, 820, 1000.0], \"desc\": \"A set of shallow concrete steps spanning the width of the arched structure, showing minor edge wear and a few scattered dry leaves.\"}, {\"id\": \"plaza_1\", \"bbox\": [820, 0, 1000.0, 1000.0], \"desc\": \"A wide, paved plaza occupying the foreground, constructed of grey stone blocks with slightly uneven seams and a few scuff marks visible under the bright, direct lighting.\"}]",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_overview",
+  "image_urls": [
+    "https://docs.bfl.ml/images/flux3-image/layouts/arches.webp"
+  ],
+  "image_files": [
+    "layout/layout-arches/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "layout prompt with bounding boxes; image may show boxes overlaid on overview",
+  "downloaded_at": "2026-10-09T09:31:01.753964+08:00",
+  "missing_image_urls": [],
+  "width": 1400,
+  "height": 1400,
+  "aspect_ratio": "1:1",
+  "rows": [
+    {
+      "id": "sky_1",
+      "bbox": [
+        0,
+        0,
+        400,
+        1000.0
+      ],
+      "desc": "A clear, pale blue sky filling the upper background, with a slight gradient toward white near the horizon and a faint film grain visible."
+    },
+    {
+      "id": "building_1",
+      "bbox": [
+        150,
+        350,
+        750,
+        950
+      ],
+      "desc": "A Brutalist concrete structure featuring three distinct clusters of tall, nested parabolic arches, with the central cluster reaching the highest. The raw, weathered concrete shows subtle variations in grey tones, vertical water streaking, and deep, sharp shadows cast within the recesses."
+    },
+    {
+      "id": "overhang_1",
+      "bbox": [
+        650,
+        500,
+        700,
+        750
+      ],
+      "desc": "A flat, thick concrete overhang protruding from the base of the central arched section, casting a harsh, dark shadow beneath it."
+    },
+    {
+      "id": "entrance_1",
+      "bbox": [
+        700,
+        550,
+        750,
+        700
+      ],
+      "desc": "A small, dark entrance area recessed beneath the concrete overhang, its interior details lost in deep shadow."
+    },
+    {
+      "id": "sign_1",
+      "bbox": [
+        640,
+        520,
+        690,
+        730
+      ],
+      "desc": "A large, rectangular red sign mounted securely to the front face of the concrete overhang, bearing yellow text and a circular emblem."
+    },
+    {
+      "id": "emblem_1",
+      "bbox": [
+        645,
+        525,
+        685,
+        555
+      ],
+      "desc": "A circular yellow emblem positioned on the left side of the red sign, featuring abstract geometric inner markings."
+    },
+    {
+      "id": "Ka_Text_1",
+      "bbox": [
+        645,
+        560,
+        660,
+        720
+      ],
+      "desc": "Yellow Georgian script reading \"á¡áá¥áá áááááá¡ á¥á áá¡á¢ááá-áááááá áá¢áá£áá áááá¨áá á\" printed along the upper section of the red sign in a bold, sans-serif font."
+    },
+    {
+      "id": "En_Text_1",
+      "bbox": [
+        665,
+        560,
+        685,
+        720
+      ],
+      "desc": "Yellow, bold sans-serif typography reading \"CHRISTIAN DEMOCRATIC UNION OF GEORGIA\" arranged across two lines on the lower portion of the red sign."
+    },
+    {
+      "id": "flags_1",
+      "bbox": [
+        590,
+        520,
+        640,
+        730
+      ],
+      "desc": "Several small, slightly drooping flags attached to thin, mismatched metal poles positioned along the ledge just behind the red sign."
+    },
+    {
+      "id": "building_2",
+      "bbox": [
+        100,
+        100,
+        550,
+        320
+      ],
+      "desc": "A portion of an older, traditional building featuring a tall, slender tower topped with a metallic spire and a five-pointed star. It has a classic, tiered design with arched windows, decorative stonework, and uneven weathering on its pale facade."
+    },
+    {
+      "id": "tree_1",
+      "bbox": [
+        450,
+        0,
+        850,
+        280
+      ],
+      "desc": "A dark green coniferous tree with dense, textured branches, standing in the foreground and partially obscuring the lower levels of the glass building."
+    },
+    {
+      "id": "building_3",
+      "bbox": [
+        400,
+        0,
+        700,
+        200
+      ],
+      "desc": "A modern, glass-fronted building with dark, reflective windows, partially visible behind the foreground tree."
+    },
+    {
+      "id": "steps_1",
+      "bbox": [
+        750,
+        300,
+        820,
+        1000.0
+      ],
+      "desc": "A set of shallow concrete steps spanning the width of the arched structure, showing minor edge wear and a few scattered dry leaves."
+    },
+    {
+      "id": "plaza_1",
+      "bbox": [
+        820,
+        0,
+        1000.0,
+        1000.0
+      ],
+      "desc": "A wide, paved plaza occupying the foreground, constructed of grey stone blocks with slightly uneven seams and a few scuff marks visible under the bright, direct lighting."
+    }
+  ],
+  "caption": "Full-color architectural photograph shot on 35mm film from a low-angle perspective at ground level, featuring bright, direct sunlight and visible film grain. Under a clear, pale blue sky <sky_1>, a Brutalist concrete structure <building_1> dominates the right and center of the frame. The building features three clusters of tall, nested parabolic arches. At the base of the central section, a flat concrete overhang <overhang_1> shelters a small, dark entrance <entrance_1>. Mounted on the overhang is a large, rectangular red sign <sign_1> displaying a circular emblem <emblem_1> on the left, a line of Georgian script <Ka_Text_1> on top, and English text <En_Text_1> below. Along the ledge behind the sign, several small flags on thin poles <flags_1> are visible. To the left stands a portion of an older, traditional building <building_2> with a slender, tiered tower topped by a metallic spire and a five-pointed star. In the foreground on the far left, a dark green coniferous tree <tree_1> partially obscures the lower levels of a glass-fronted building <building_3>. The structures sit behind a wide set of shallow concrete steps <steps_1> that lead down to a paved plaza made of grey stone blocks <plaza_1> filling the bottom of the frame."
+}

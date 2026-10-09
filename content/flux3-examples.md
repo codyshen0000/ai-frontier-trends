@@ -4,7 +4,7 @@
 
 每条含一行中文说明、文档若标明则给出模型标签（FLUX 3 / FLUX.2）、以及来源链接。中文说明是阅读辅助，不是官方原文。
 
-<p class="sister-nav">相关页：<a href="../">FLUX 3 提示词速查表</a> · <a href="../camera-terms/">相机术语表</a></p>
+<p class="sister-nav">相关页：<a href="../">FLUX 3 提示词速查表</a> · <a href="../cases/">官方案例</a> · <a href="../camera-terms/">相机术语表</a></p>
 
 <nav class="page-toc" aria-label="本页目录">
 <p>本页目录</p>

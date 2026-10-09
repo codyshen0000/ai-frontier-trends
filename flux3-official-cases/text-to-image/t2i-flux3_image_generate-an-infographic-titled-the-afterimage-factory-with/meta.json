@@ -1,0 +1,25 @@
+{
+  "id": "t2i-flux3_image_generate-an-infographic-titled-the-afterimage-factory-with",
+  "category": "t2i",
+  "title": "An infographic titled The Afterimage Factory, with a red circle and fading ghost outlines on charcoal.",
+  "prompt": "Create a finished 1:1 long-form infographic poster. This is a TEXT-RICH graphic design study. Give the artwork a memorable composition specific to its concept, with roughly half the area for legible longer text. Integrate the prose into the authored visual arrangement; do not default to repeated cards or a generic five-panel grid.\nART DIRECTION: A brilliant red circle passes through three translucent ghost outlines on charcoal, wide white reading bands, technical registration marks.\nVISUAL SUBJECT: A vibrant red circle sits at the far left of a charcoal field. Extending to the right, three translucent, desaturated ghost outlines overlap, mimicking a motion trail. Wide white horizontal bands anchor the text blocks, while thin technical registration marks and crosshairs surround the shapes to emphasize the factory's clinical, manufactured approach to visual echoes.\nSOURCE BRIEF FOR DIAGRAM CONTENT: A fictional studio makes visual echoes from bright shapes, explicitly an artistic metaphor rather than medical explanation.\nEXACT VISIBLE COPY, reproduce every sentence verbatim with correct spelling and punctuation. The headings below describe layout roles and are not extra printed words.\nTITLE: \"THE AFTERIMAGE FACTORY\"\nINTRODUCTION: \"This fictional studio treats optical fatigue as a manufacturing process, refining the stubborn ghosts left behind when brilliant light sources vanish from view.\"\nSECTION 1 HEADING: \"Retinal Stamping\"\nSECTION 1 BODY: \"Technicians project high-intensity primary hues onto charcoal backdrops. By overstimulating specific receptors, they force the eye to fabricate complementary shades that exist only within the observerâs perception.\"\nSECTION 2 HEADING: \"Phosphor Drag\"\nSECTION 2 BODY: \"The factory mimics the physical smear of movement. When a scarlet disc shifts rapidly, it leaves a trail of cyan silhouettes, creating a rhythmic sequence of fading architectural imprints.\"\nSECTION 3 HEADING: \"Static Decay\"\nSECTION 3 BODY: \"Each translucent outline represents a distinct stage of visual evaporation. These echoes lose saturation and structural integrity as the brain attempts to recalibrate its sense of neutral white balance.\"\nSECTION 4 HEADING: \"Registration Marks\"\nSECTION 4 BODY: \"Precise crosshairs align the phantom shapes with the original catalyst. These technical guides ensure the subjective hallucination remains tethered to the geometric reality of the initial brilliant red circle.\"\nSECTION 5 HEADING: \"Ghost Harvesting\"\nSECTION 5 BODY: \"Artisans capture these fleeting impressions before they dissolve into darkness. The resulting compositions stabilize the transient nature of sight, turning a biological glitch into a permanent graphic record.\"\nBOTTOM TAKEAWAY: \"The studio proves that what we see after the light dies is as structurally significant as the original flash.\"\nFOOTER: \"A creative design study\"\nTYPESETTING: The 197 words of supplied prose are essential visual content, not instructions to summarize. Set complete paragraphs in comfortably readable body type, roughly 26â32 pixels at a 2K long edge. Short line lengths, generous leading and at least 5 percent exterior margins. Headings clearly larger than body text. Keep all 5 sections, introduction and takeaway fully visible. Add only the supplied diagram labels where needed. Avoid duplicate paragraphs, invented filler, ellipses, illegible pseudo-text or cut-off sentences. Keep diagram lines away from prose. A polished flat artwork filling the whole image, not a framed mockup.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_generate",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/5520d6605e4f64ab0f8d9868e93e01b882a9a4c9-1800x1800.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-flux3_image_generate-an-infographic-titled-the-afterimage-factory-with/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "ClipSlider on flux3_image_generate.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

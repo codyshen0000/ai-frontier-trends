@@ -1,0 +1,223 @@
+{
+  "id": "edit-bamboo-wolf",
+  "category": "edit",
+  "title": "Swap the subject",
+  "prompt": "In <ref_image_0>, replace the tiny anthropomorphic wolf standing on the left side of the frosty path with a dog <wolf_1>. Keep the rest of the image exactly unchanged, including the illuminated upper bamboo leaves <bamboo_1>, the shadowed vertical trunks <bamboo_2>, the frost-covered lower stalks and ground <bamboo_3>, the slanting shafts of light <light_1>, the massive foreground trunk <bamboo_4>, the fallen hollow log <log_1>, the frozen stream <stream_1>, the stone lantern <lantern_1>, the floating frost flakes <particles_1>, and the small perched bird <bird_1>.",
+  "instruction_short": "a Dog",
+  "op": "replace",
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_overview",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/fa34bced7273bdc735dad58a65c225d8d5ff63e6-1360x768.webp",
+    "https://cdn.sanity.io/images/2gpum2i6/production/50631bead7e36e98e8901c717fa58c1f46a5dbb8-1360x768.webp"
+  ],
+  "image_files": [
+    "edit/edit-bamboo-wolf/before.webp",
+    "edit/edit-bamboo-wolf/after.webp"
+  ],
+  "roles": [
+    "before",
+    "after"
+  ],
+  "labels": [],
+  "notes": "op=replace; overview edit slider (knight-after/bamboo-wolf etc)",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": 1360,
+  "height": 768,
+  "aspect_ratio": null,
+  "rows": [
+    {
+      "id": "wolf_1",
+      "from": null,
+      "src_bbox": null,
+      "tgt_bbox": [
+        817,
+        120,
+        950,
+        167
+      ],
+      "desc": "a Dog",
+      "kind": "new"
+    },
+    {
+      "id": "bamboo_1",
+      "from": "ref_image_0",
+      "src_bbox": [
+        0,
+        0,
+        350,
+        1000.0
+      ],
+      "tgt_bbox": [
+        0,
+        0,
+        350,
+        1000.0
+      ],
+      "desc": "Dense bamboo leaves and upper stalks illuminated by white sunlight. Translucent dew drops cling to the bright green foliage, creating small specular highlights.",
+      "kind": "anchor"
+    },
+    {
+      "id": "bamboo_2",
+      "from": "ref_image_0",
+      "src_bbox": [
+        300,
+        0,
+        750,
+        1000.0
+      ],
+      "tgt_bbox": [
+        300,
+        0,
+        750,
+        1000.0
+      ],
+      "desc": "Thick, vertical bamboo trunks receding into dense, charcoal-tinted shadows. The green color of the stalks is darkened by the heavy shade and foggy atmosphere.",
+      "kind": "anchor"
+    },
+    {
+      "id": "bamboo_3",
+      "from": "ref_image_0",
+      "src_bbox": [
+        700,
+        0,
+        1000.0,
+        1000.0
+      ],
+      "tgt_bbox": [
+        700,
+        0,
+        1000.0,
+        1000.0
+      ],
+      "desc": "The lower segments of the bamboo stalks and the ground, encrusted in sharp, frozen white frost crystals. The textures are crisp and perfectly still.",
+      "kind": "anchor"
+    },
+    {
+      "id": "light_1",
+      "from": "ref_image_0",
+      "src_bbox": [
+        200,
+        0,
+        900,
+        1000.0
+      ],
+      "tgt_bbox": [
+        200,
+        0,
+        900,
+        1000.0
+      ],
+      "desc": "Parallel, slanting shafts of bright cream-white light slicing diagonally through the atmospheric fog, creating sharp, alternating bands of illumination and velvet shadow.",
+      "kind": "anchor"
+    },
+    {
+      "id": "bamboo_4",
+      "from": "ref_image_0",
+      "src_bbox": [
+        0,
+        850,
+        1000.0,
+        1000.0
+      ],
+      "tgt_bbox": [
+        0,
+        850,
+        1000.0,
+        1000.0
+      ],
+      "desc": "A massive, thick bamboo trunk positioned in the immediate foreground on the right side, its surface detailed with horizontal nodes and a light dusting of frost near the bottom.",
+      "kind": "anchor"
+    },
+    {
+      "id": "log_1",
+      "from": "ref_image_0",
+      "src_bbox": [
+        850,
+        600,
+        950,
+        850
+      ],
+      "tgt_bbox": [
+        850,
+        600,
+        950,
+        850
+      ],
+      "desc": "A fallen, hollow bamboo log resting horizontally on the ground, heavily coated in sharp white frost crystals.",
+      "kind": "anchor"
+    },
+    {
+      "id": "stream_1",
+      "from": "ref_image_0",
+      "src_bbox": [
+        800,
+        400,
+        1000.0,
+        550
+      ],
+      "tgt_bbox": [
+        800,
+        400,
+        1000.0,
+        550
+      ],
+      "desc": "A narrow, frozen stream winding through the frosty terrain, its icy surface reflecting the ambient light.",
+      "kind": "anchor"
+    },
+    {
+      "id": "lantern_1",
+      "from": "ref_image_0",
+      "src_bbox": [
+        750,
+        300,
+        880,
+        380
+      ],
+      "tgt_bbox": [
+        750,
+        300,
+        880,
+        380
+      ],
+      "desc": "A stone lantern, partially buried in the frost, constructed from dark charcoal-colored stone.",
+      "kind": "anchor"
+    },
+    {
+      "id": "particles_1",
+      "from": "ref_image_0",
+      "src_bbox": [
+        400,
+        200,
+        700,
+        800
+      ],
+      "tgt_bbox": [
+        400,
+        200,
+        700,
+        800
+      ],
+      "desc": "Tiny, floating frost flakes suspended in the foggy air, illuminated by the slanting light shafts.",
+      "kind": "anchor"
+    },
+    {
+      "id": "bird_1",
+      "from": "ref_image_0",
+      "src_bbox": [
+        450,
+        500,
+        480,
+        530
+      ],
+      "tgt_bbox": [
+        450,
+        500,
+        480,
+        530
+      ],
+      "desc": "A small, dark-feathered bird perched motionless on a bamboo node, forming a silhouette against the fog.",
+      "kind": "anchor"
+    }
+  ]
+}

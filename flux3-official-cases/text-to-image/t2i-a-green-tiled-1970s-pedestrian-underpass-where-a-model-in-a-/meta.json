@@ -1,0 +1,25 @@
+{
+  "id": "t2i-a-green-tiled-1970s-pedestrian-underpass-where-a-model-in-a-",
+  "category": "t2i",
+  "title": "A green-tiled 1970s pedestrian underpass where a model in a silver sequin gown a",
+  "prompt": "A 1970s pedestrian underpass with a strong central vanishing point. A model in a silver sequin gown and oversized leather bomber stands against the left wall; at the far end, a fox looks back at her. Cold green strip lighting, 28mm, deadpan and cinematic.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_overview",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/0f34ebc8e46fb9158176fb2766ea3dc2f0577b04-1800x1013.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-a-green-tiled-1970s-pedestrian-underpass-where-a-model-in-a-/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "FLUX 3 Image overview — Text to image showcase",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

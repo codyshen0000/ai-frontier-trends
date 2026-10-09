@@ -1,0 +1,108 @@
+{
+  "id": "layout-bench",
+  "category": "layout",
+  "title": "Three on a bench",
+  "prompt": "Full-color indoor 35mm photograph with a slight film grain and a warm color cast, lit by harsh, direct camera flash that casts sharp shadows against the background. A light-colored wooden bench <bench_1> sits against a wall of horizontal light-wood panels <wall_1>. On the floor beneath the bench is a vibrant moss-green rug <rug_1>. Seated on the left side of the bench is a man <person_1> captured mid-sip from a glass of amber liquid <glass_1>. In the center sits a humanoid figure <figure_1>. To the right, another man <person_2> sits with a slumped posture, looking downward at a second glass of amber liquid <glass_2> held in his hand. The framing is a full-body shot centered on the three figures, leaving a significant expanse of the wood-paneled wall visible above their heads.\n[{\"id\": \"wall_1\", \"bbox\": [0, 0, 750, 1000.0], \"desc\": \"An indoor wall covered in horizontal light-wood panels. The surface bears sharp, dark cast shadows from the seated subjects, characteristic of a direct, built-in camera flash.\"}, {\"id\": \"bench_1\", \"bbox\": [480, 50, 780, 950], \"desc\": \"A simple, light-colored wooden bench frame topped with a thick, flat white cushion, spanning the width of the frame behind the subjects.\"}, {\"id\": \"rug_1\", \"bbox\": [730, 0, 1000.0, 1000.0], \"desc\": \"A vibrant moss-green rug covering the floor area beneath the bench, its textured surface illuminated by the harsh overhead flash.\"}, {\"id\": \"person_1\", \"bbox\": [300, 80, 920, 380], \"desc\": \"A man with fair skin, short brown hair, and glasses. He wears a white short-sleeved button-down shirt with thin vertical black stripes and embroidered patches, including a cartoon dog on the chest. He has black trousers and bright red high-top sneakers. His left hand rests on his knee, revealing a black wristwatch, while his right hand holds a glass to his mouth.\"}, {\"id\": \"glass_1\", \"bbox\": [360, 240, 430, 300], \"desc\": \"A clear glass tumbler partially filled with an amber liquid, held up near the face of the man on the left.\"}, {\"id\": \"figure_1\", \"bbox\": [320, 360, 900, 640], \"desc\": \"A humanoid figure encased in a matte grey, form-fitting fabric suit. The rounded head features two small, dark, circular eyes. Large, white-and-grey robotic hands with articulated fingers are held in a stylized, geometric pose across its chest. Its feet are covered in bulky, rounded grey footwear matching the suit.\"}, {\"id\": \"person_2\", \"bbox\": [350, 620, 920, 920], \"desc\": \"A man with fair skin and short dark hair. He wears a black t-shirt and loose-fitting blue jeans. He has a slumped posture with his left arm resting across his lap, looking downward. His right hand holds a glass of liquid.\"}, {\"id\": \"glass_2\", \"bbox\": [640, 680, 720, 750], \"desc\": \"A clear glass tumbler containing amber liquid, held low over the lap in the right hand of the man on the right.\"}]",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_overview",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/1c91f02039d9af9fbffa95a034c72f01dd1006a5-927x1400.webp"
+  ],
+  "image_files": [
+    "layout/layout-bench/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "layout prompt with bounding boxes; image may show boxes overlaid on overview",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": 927,
+  "height": 1400,
+  "aspect_ratio": "2:3",
+  "rows": [
+    {
+      "id": "wall_1",
+      "bbox": [
+        0,
+        0,
+        750,
+        1000.0
+      ],
+      "desc": "An indoor wall covered in horizontal light-wood panels. The surface bears sharp, dark cast shadows from the seated subjects, characteristic of a direct, built-in camera flash."
+    },
+    {
+      "id": "bench_1",
+      "bbox": [
+        480,
+        50,
+        780,
+        950
+      ],
+      "desc": "A simple, light-colored wooden bench frame topped with a thick, flat white cushion, spanning the width of the frame behind the subjects."
+    },
+    {
+      "id": "rug_1",
+      "bbox": [
+        730,
+        0,
+        1000.0,
+        1000.0
+      ],
+      "desc": "A vibrant moss-green rug covering the floor area beneath the bench, its textured surface illuminated by the harsh overhead flash."
+    },
+    {
+      "id": "person_1",
+      "bbox": [
+        300,
+        80,
+        920,
+        380
+      ],
+      "desc": "A man with fair skin, short brown hair, and glasses. He wears a white short-sleeved button-down shirt with thin vertical black stripes and embroidered patches, including a cartoon dog on the chest. He has black trousers and bright red high-top sneakers. His left hand rests on his knee, revealing a black wristwatch, while his right hand holds a glass to his mouth."
+    },
+    {
+      "id": "glass_1",
+      "bbox": [
+        360,
+        240,
+        430,
+        300
+      ],
+      "desc": "A clear glass tumbler partially filled with an amber liquid, held up near the face of the man on the left."
+    },
+    {
+      "id": "figure_1",
+      "bbox": [
+        320,
+        360,
+        900,
+        640
+      ],
+      "desc": "A humanoid figure encased in a matte grey, form-fitting fabric suit. The rounded head features two small, dark, circular eyes. Large, white-and-grey robotic hands with articulated fingers are held in a stylized, geometric pose across its chest. Its feet are covered in bulky, rounded grey footwear matching the suit."
+    },
+    {
+      "id": "person_2",
+      "bbox": [
+        350,
+        620,
+        920,
+        920
+      ],
+      "desc": "A man with fair skin and short dark hair. He wears a black t-shirt and loose-fitting blue jeans. He has a slumped posture with his left arm resting across his lap, looking downward. His right hand holds a glass of liquid."
+    },
+    {
+      "id": "glass_2",
+      "bbox": [
+        640,
+        680,
+        720,
+        750
+      ],
+      "desc": "A clear glass tumbler containing amber liquid, held low over the lap in the right hand of the man on the right."
+    }
+  ],
+  "caption": "Full-color indoor 35mm photograph with a slight film grain and a warm color cast, lit by harsh, direct camera flash that casts sharp shadows against the background. A light-colored wooden bench <bench_1> sits against a wall of horizontal light-wood panels <wall_1>. On the floor beneath the bench is a vibrant moss-green rug <rug_1>. Seated on the left side of the bench is a man <person_1> captured mid-sip from a glass of amber liquid <glass_1>. In the center sits a humanoid figure <figure_1>. To the right, another man <person_2> sits with a slumped posture, looking downward at a second glass of amber liquid <glass_2> held in his hand. The framing is a full-body shot centered on the three figures, leaving a significant expanse of the wood-paneled wall visible above their heads."
+}

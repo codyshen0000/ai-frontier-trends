@@ -1,0 +1,20 @@
+Create a finished 1:1 long-form infographic poster. This is a TEXT-RICH graphic design study. Give the artwork a memorable composition specific to its concept, with roughly half the area for legible longer text. Integrate the prose into the authored visual arrangement; do not default to repeated cards or a generic five-panel grid.
+ART DIRECTION: A top-down suitcase uses brightly colored geometric luggage silhouettes, one exploded packing layer, cobalt and peach, four clear editorial commentary fields.
+VISUAL SUBJECT: A top-down view shows a suitcase filled with cobalt and peach geometric silhouettes representing clothes and gear. One central layer is exploded upward, revealing how a ceramic jar fits into a nest of rolled fabrics. Four thin lines connect the editorial fields to specific interlocking shapes, highlighting the structural logic of the packed luggage.
+SOURCE BRIEF FOR DIAGRAM CONTENT: An imagined journey is told through the spatial puzzle of objects inside a suitcase.
+EXACT VISIBLE COPY, reproduce every sentence verbatim with correct spelling and punctuation. The headings below describe layout roles and are not extra printed words.
+TITLE: "THE SHAPES OF A PACKED SUITCASE"
+INTRODUCTION: "This imagined journey unfolds through the spatial puzzle of objects tucked into a suitcase, where personal belongings map a fictional travelerâs destination."
+SECTION 1 HEADING: "The Heavy Foundations"
+SECTION 1 BODY: "Sturdy leather boots anchor the bottom corners, providing a weighted base for lighter garments. Their rigid soles act as internal walls, shielding delicate souvenirs from the shifting pressure of transport."
+SECTION 2 HEADING: "Interlocking Textile Grids"
+SECTION 2 BODY: "Rolled linens and folded cottons create a soft mosaic of cylinders and rectangles. These fabric units fill the gaps between hard containers, ensuring that no hollow space remains to rattle during transit."
+SECTION 3 HEADING: "The Fragile Core"
+SECTION 3 BODY: "A single ceramic vessel sits protected within the center of the textile mass. Wrapped in thick wool socks, this central artifact serves as the metaphorical heart of the entire packing arrangement."
+SECTION 4 HEADING: "External Mesh Limits"
+SECTION 4 BODY: "The zippered lid contains paper maps and flat journals, pressing down to compress the bulk below. This final layer turns a chaotic pile into a singular, portable block of organized geometry."
+SECTION 5 HEADING: "Small Corner Curios"
+SECTION 5 BODY: "Loose coins and brass keys occupy the remaining nooks near the hinges. These tiny metallic shapes provide the final clinking soundtrack to a suitcase that is now perfectly balanced and ready."
+BOTTOM TAKEAWAY: "Packing is an act of spatial storytelling, turning disparate personal artifacts into a dense, coherent geometry of travel."
+FOOTER: "A creative design study"
+TYPESETTING: The 216 words of supplied prose are essential visual content, not instructions to summarize. Set complete paragraphs in comfortably readable body type, roughly 26â32 pixels at a 2K long edge. Short line lengths, generous leading and at least 5 percent exterior margins. Headings clearly larger than body text. Keep all 5 sections, introduction and takeaway fully visible. Add only the supplied diagram labels where needed. Avoid duplicate paragraphs, invented filler, ellipses, illegible pseudo-text or cut-off sentences. Keep diagram lines away from prose. A polished flat artwork filling the whole image, not a framed mockup.

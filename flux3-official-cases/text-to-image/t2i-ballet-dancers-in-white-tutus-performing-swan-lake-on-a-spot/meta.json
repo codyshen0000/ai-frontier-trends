@@ -1,0 +1,25 @@
+{
+  "id": "t2i-ballet-dancers-in-white-tutus-performing-swan-lake-on-a-spot",
+  "category": "t2i",
+  "title": "Ballet dancers in white tutus performing Swan Lake on a spotlit stage, seen from",
+  "prompt": "A candid photograph from the wings of a theater, looking out at ballet dancers performing Swan Lake. Dark, blurred onlookers fill the foreground; on stage, ballerinas in white tutus are caught mid-motion under a strong central spotlight. Deep blacks, shadowy purples, and stark white. Grainy mid-20th-century color film, shallow depth of field.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_overview",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/4f87df66414a5b74b5c85b35d2aba27a7a8ce4fe-1800x1193.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-ballet-dancers-in-white-tutus-performing-swan-lake-on-a-spot/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "FLUX 3 Image overview — Text to image showcase",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

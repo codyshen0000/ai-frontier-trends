@@ -1,0 +1,158 @@
+{
+  "id": "layout-picnic",
+  "category": "layout",
+  "title": "Picnic in the park",
+  "prompt": "Full-color outdoor photograph with a slight film grain and shallow depth of field, captured from a ground-level, low-angle perspective in an urban park. Warm, directional late-afternoon sunlight filters through a dense canopy of deciduous trees <trees_1> in the background. Occupying the center and extending to the left is a white picnic blanket with thin red horizontal stripes <blanket_1>. A young girl of East Asian descent <girl_1> lies prone on the blanket, leaning forward on her elbows. Her left hand rests near her chest with fingers slightly curled, while her right hand extends toward the right edge of the frame. Just off the blanket on the green grass <grass_1> stands a small brown sparrow <sparrow_1> facing her. In the lower right foreground, a second sparrow <sparrow_2> is partially visible, heavily blurred by the shallow depth of field. Scattered on the left side of the blanket are several picnic items: a clear plastic water bottle with a blue cap <bottle_1>, a red cardboard box <box_1> displaying white text <En_Text_1>, scattered papers <papers_1>, and a small open snack container <container_1>. In the blurred background, a black lamppost <lamppost_1> stands among the trees, and several distant, out-of-focus figures <figures_1> are visible walking and sitting on benches.\n[{\"id\": \"trees_1\", \"bbox\": [0, 0, 400, 1000.0], \"desc\": \"Soft bokeh masses of green and golden-green foliage forming a dense deciduous canopy in the upper background, pierced by warm patches of sunlight.\"}, {\"id\": \"blanket_1\", \"bbox\": [450, 50, 950, 750], \"desc\": \"A white fabric picnic blanket featuring thin, horizontal red stripes, spread across the ground and slightly wrinkled from use.\"}, {\"id\": \"girl_1\", \"bbox\": [250, 200, 850, 700], \"desc\": \"A young girl of East Asian descent with fair skin and dark hair styled in pigtails with front bangs. She wears a white t-shirt featuring a faint, slightly faded pastel rainbow graphic across the chest. She is lying on her stomach, propped up on her elbows. Her expression shows quiet concentration, eyes fixed forward. Her left hand is near her collarbone with curled fingers; her right arm reaches out toward the right side.\"}, {\"id\": \"grass_1\", \"bbox\": [400, 600, 950, 1000.0], \"desc\": \"A manicured lawn of bright green grass bordering the blanket, illuminated by patches of warm, directional sunlight revealing individual blades.\"}, {\"id\": \"sparrow_1\", \"bbox\": [650, 720, 800, 850], \"desc\": \"A small, sharp-focused brown and grey sparrow standing on the grass, facing left toward the girl's extended hand.\"}, {\"id\": \"sparrow_2\", \"bbox\": [800, 850, 1000.0, 1000.0], \"desc\": \"A heavily blurred brown sparrow in the extreme lower right foreground, only partially visible as a soft brown mass with no fine details.\"}, {\"id\": \"bottle_1\", \"bbox\": [600, 80, 700, 250], \"desc\": \"A clear plastic water bottle with a blue plastic screw-on cap, half full of water, lying on its side on the blanket.\"}, {\"id\": \"box_1\", \"bbox\": [500, 150, 620, 350], \"desc\": \"A rectangular red cardboard box sitting on the blanket, angled slightly, with white text printed on its visible side.\"}, {\"id\": \"En_Text_1\", \"bbox\": [540, 160, 590, 340], \"desc\": \"The word \\\"MONOPOLY\\\" printed in bold, white capital letters along the side of the red cardboard box.\"}, {\"id\": \"papers_1\", \"bbox\": [680, 100, 780, 280], \"desc\": \"A few loose, slightly crumpled white papers resting flat on the striped blanket.\"}, {\"id\": \"container_1\", \"bbox\": [720, 250, 820, 380], \"desc\": \"A small, translucent plastic snack container holding a few round crackers.\"}, {\"id\": \"lamppost_1\", \"bbox\": [150, 750, 450, 800], \"desc\": \"A tall, classic black metal park lamppost, rendered as a soft, blurred vertical shape in the background.\"}, {\"id\": \"figures_1\", \"bbox\": [300, 100, 450, 900], \"desc\": \"Several unidentifiable blurred figures in casual clothing, appearing as soft shapes of color sitting on park benches and walking in the distant background.\"}]",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_overview",
+  "image_urls": [
+    "https://docs.bfl.ml/images/flux3-image/layouts/picnic.webp"
+  ],
+  "image_files": [
+    "layout/layout-picnic/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "layout prompt with bounding boxes; image may show boxes overlaid on overview",
+  "downloaded_at": "2026-10-09T09:31:01.753964+08:00",
+  "missing_image_urls": [],
+  "width": 1400,
+  "height": 927,
+  "aspect_ratio": "3:2",
+  "rows": [
+    {
+      "id": "trees_1",
+      "bbox": [
+        0,
+        0,
+        400,
+        1000.0
+      ],
+      "desc": "Soft bokeh masses of green and golden-green foliage forming a dense deciduous canopy in the upper background, pierced by warm patches of sunlight."
+    },
+    {
+      "id": "blanket_1",
+      "bbox": [
+        450,
+        50,
+        950,
+        750
+      ],
+      "desc": "A white fabric picnic blanket featuring thin, horizontal red stripes, spread across the ground and slightly wrinkled from use."
+    },
+    {
+      "id": "girl_1",
+      "bbox": [
+        250,
+        200,
+        850,
+        700
+      ],
+      "desc": "A young girl of East Asian descent with fair skin and dark hair styled in pigtails with front bangs. She wears a white t-shirt featuring a faint, slightly faded pastel rainbow graphic across the chest. She is lying on her stomach, propped up on her elbows. Her expression shows quiet concentration, eyes fixed forward. Her left hand is near her collarbone with curled fingers; her right arm reaches out toward the right side."
+    },
+    {
+      "id": "grass_1",
+      "bbox": [
+        400,
+        600,
+        950,
+        1000.0
+      ],
+      "desc": "A manicured lawn of bright green grass bordering the blanket, illuminated by patches of warm, directional sunlight revealing individual blades."
+    },
+    {
+      "id": "sparrow_1",
+      "bbox": [
+        650,
+        720,
+        800,
+        850
+      ],
+      "desc": "A small, sharp-focused brown and grey sparrow standing on the grass, facing left toward the girl's extended hand."
+    },
+    {
+      "id": "sparrow_2",
+      "bbox": [
+        800,
+        850,
+        1000.0,
+        1000.0
+      ],
+      "desc": "A heavily blurred brown sparrow in the extreme lower right foreground, only partially visible as a soft brown mass with no fine details."
+    },
+    {
+      "id": "bottle_1",
+      "bbox": [
+        600,
+        80,
+        700,
+        250
+      ],
+      "desc": "A clear plastic water bottle with a blue plastic screw-on cap, half full of water, lying on its side on the blanket."
+    },
+    {
+      "id": "box_1",
+      "bbox": [
+        500,
+        150,
+        620,
+        350
+      ],
+      "desc": "A rectangular red cardboard box sitting on the blanket, angled slightly, with white text printed on its visible side."
+    },
+    {
+      "id": "En_Text_1",
+      "bbox": [
+        540,
+        160,
+        590,
+        340
+      ],
+      "desc": "The word \"MONOPOLY\" printed in bold, white capital letters along the side of the red cardboard box."
+    },
+    {
+      "id": "papers_1",
+      "bbox": [
+        680,
+        100,
+        780,
+        280
+      ],
+      "desc": "A few loose, slightly crumpled white papers resting flat on the striped blanket."
+    },
+    {
+      "id": "container_1",
+      "bbox": [
+        720,
+        250,
+        820,
+        380
+      ],
+      "desc": "A small, translucent plastic snack container holding a few round crackers."
+    },
+    {
+      "id": "lamppost_1",
+      "bbox": [
+        150,
+        750,
+        450,
+        800
+      ],
+      "desc": "A tall, classic black metal park lamppost, rendered as a soft, blurred vertical shape in the background."
+    },
+    {
+      "id": "figures_1",
+      "bbox": [
+        300,
+        100,
+        450,
+        900
+      ],
+      "desc": "Several unidentifiable blurred figures in casual clothing, appearing as soft shapes of color sitting on park benches and walking in the distant background."
+    }
+  ],
+  "caption": "Full-color outdoor photograph with a slight film grain and shallow depth of field, captured from a ground-level, low-angle perspective in an urban park. Warm, directional late-afternoon sunlight filters through a dense canopy of deciduous trees <trees_1> in the background. Occupying the center and extending to the left is a white picnic blanket with thin red horizontal stripes <blanket_1>. A young girl of East Asian descent <girl_1> lies prone on the blanket, leaning forward on her elbows. Her left hand rests near her chest with fingers slightly curled, while her right hand extends toward the right edge of the frame. Just off the blanket on the green grass <grass_1> stands a small brown sparrow <sparrow_1> facing her. In the lower right foreground, a second sparrow <sparrow_2> is partially visible, heavily blurred by the shallow depth of field. Scattered on the left side of the blanket are several picnic items: a clear plastic water bottle with a blue cap <bottle_1>, a red cardboard box <box_1> displaying white text <En_Text_1>, scattered papers <papers_1>, and a small open snack container <container_1>. In the blurred background, a black lamppost <lamppost_1> stands among the trees, and several distant, out-of-focus figures <figures_1> are visible walking and sitting on benches."
+}

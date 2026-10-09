@@ -6,9 +6,10 @@
 
 趋势时间线（结论置顶 + 谱系图）：<https://codyshen0000.github.io/ai-frontier-trends/timeline/>
 
-FLUX 3 三页：
+FLUX 3 四页：
 
 - 速查表：<https://codyshen0000.github.io/ai-frontier-trends/flux3/>
+- 官方案例：<https://codyshen0000.github.io/ai-frontier-trends/flux3/cases/>
 - 官方示例库：<https://codyshen0000.github.io/ai-frontier-trends/flux3/examples/>
 - 相机术语表：<https://codyshen0000.github.io/ai-frontier-trends/flux3/camera-terms/>
 

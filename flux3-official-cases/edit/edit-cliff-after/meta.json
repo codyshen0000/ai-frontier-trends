@@ -1,0 +1,115 @@
+{
+  "id": "edit-cliff-after",
+  "category": "edit",
+  "title": "Recolor, keep the text",
+  "prompt": "In <ref_image_0>, change the bright red hooded jacket worn by the person <person_1> standing atop the rock pinnacle <rock_1> to blue. Keep everything else in the image exactly unchanged, including the text <En_Text_1>, the overcast sky <sky_1>, the distant hills <hills_1>, the composition, and the lighting.",
+  "instruction_short": "Change the jacket to blue.",
+  "op": "recolour",
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_overview",
+  "image_urls": [
+    "https://docs.bfl.ml/images/flux3-image/layouts/cliff-before.webp",
+    "https://docs.bfl.ml/images/flux3-image/layouts/cliff-after.webp"
+  ],
+  "image_files": [
+    "edit/edit-cliff-after/before.webp",
+    "edit/edit-cliff-after/after.webp"
+  ],
+  "roles": [
+    "before",
+    "after"
+  ],
+  "labels": [],
+  "notes": "op=recolour; overview edit slider (knight-after/bamboo-wolf etc)",
+  "downloaded_at": "2026-10-09T09:31:01.753964+08:00",
+  "missing_image_urls": [],
+  "width": 768,
+  "height": 1360,
+  "aspect_ratio": null,
+  "rows": [
+    {
+      "id": "person_1",
+      "from": null,
+      "src_bbox": null,
+      "tgt_bbox": [
+        378,
+        542,
+        492,
+        734
+      ],
+      "desc": "Change the jacket to blue.",
+      "kind": "new"
+    },
+    {
+      "id": "rock_1",
+      "from": "ref_image_0",
+      "src_bbox": [
+        485,
+        0,
+        1000.0,
+        875
+      ],
+      "tgt_bbox": [
+        485,
+        0,
+        1000.0,
+        875
+      ],
+      "desc": "A steep, jagged rock formation rising to a point. It is dark gray and brown, covered in patches of green moss and some white snow or frost near the bottom.",
+      "kind": "anchor"
+    },
+    {
+      "id": "En_Text_1",
+      "from": "ref_image_0",
+      "src_bbox": [
+        49,
+        0,
+        372,
+        1000.0
+      ],
+      "tgt_bbox": [
+        49,
+        0,
+        372,
+        1000.0
+      ],
+      "desc": "The text \"bigger\\\\nidiots\\\\nthan you\\\\nhave done it\" written in large, bold, lowercase, white sans-serif font. The text is center-aligned and spans four lines.",
+      "kind": "anchor"
+    },
+    {
+      "id": "sky_1",
+      "from": "ref_image_0",
+      "src_bbox": [
+        0,
+        0,
+        1000.0,
+        1000.0
+      ],
+      "tgt_bbox": [
+        0,
+        0,
+        1000.0,
+        1000.0
+      ],
+      "desc": "A pale, overcast sky filled with thick, diffused fog, casting a soft, even, muted gray-white light over the entire scene.",
+      "kind": "anchor"
+    },
+    {
+      "id": "hills_1",
+      "from": "ref_image_0",
+      "src_bbox": [
+        400,
+        0,
+        550,
+        1000.0
+      ],
+      "tgt_bbox": [
+        400,
+        0,
+        550,
+        1000.0
+      ],
+      "desc": "The hazy, barely discernible silhouettes of distant rolling hills and mountains, appearing as soft, flat bands of muted blue-gray through the thick fog along the horizon.",
+      "kind": "anchor"
+    }
+  ]
+}

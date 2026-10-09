@@ -1,0 +1,35 @@
+{
+  "id": "multi_ref-prompting_editing_overview-flux-3-image-result-the-temple-in-the-p",
+  "category": "multi_ref",
+  "title": "FLUX 3 Image result: the temple in the palette and texture of image 2",
+  "prompt": "Turn Image 1 in the Style of Image 2",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/guides/prompting_editing_overview",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/ababcf5c9cf86074d71c92d6362ff63545d90661-1800x1201.webp",
+    "https://cdn.sanity.io/images/2gpum2i6/production/dc642f5b01040c4afc46c1b4f8c4945152932683-1350x1800.webp",
+    "https://cdn.sanity.io/images/2gpum2i6/production/c1923cb51f693f1abee0c35fc41f9a0be6104e66-1248x832.webp"
+  ],
+  "image_files": [
+    "multi-reference/multi_ref-prompting_editing_overview-flux-3-image-result-the-temple-in-the-p/ref1.webp",
+    "multi-reference/multi_ref-prompting_editing_overview-flux-3-image-result-the-temple-in-the-p/ref2.webp",
+    "multi-reference/multi_ref-prompting_editing_overview-flux-3-image-result-the-temple-in-the-p/result.webp"
+  ],
+  "roles": [
+    "ref1",
+    "ref2",
+    "result"
+  ],
+  "labels": [
+    "Image 1: a weathered stone temple",
+    "Image 2: a watercolor of a figure pinning a crescent moon to a clothesline",
+    "FLUX 3 Image result: the temple in the palette and texture of image 2"
+  ],
+  "notes": "MultiRefGrid on prompting_editing_overview.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

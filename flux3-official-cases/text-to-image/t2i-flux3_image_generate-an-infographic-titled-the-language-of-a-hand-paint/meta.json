@@ -1,0 +1,25 @@
+{
+  "id": "t2i-flux3_image_generate-an-infographic-titled-the-language-of-a-hand-paint",
+  "category": "t2i",
+  "title": "An infographic titled The Language of a Hand-Painted Scoreboard, showing an exploded scoreboard module.",
+  "prompt": "Create a finished 1:1 long-form infographic poster. This is a TEXT-RICH graphic design study. Give the artwork a memorable composition specific to its concept, with roughly half the area for legible longer text. Integrate the prose into the authored visual arrangement; do not default to repeated cards or a generic five-panel grid.\nART DIRECTION: Detailed colored-pencil illustration with modern typographic hierarchy, terracotta, indigo and natural paper white. Invent a bespoke central diagram specifically for this concept: the language of a hand-painted scoreboard. Shape the composition around the relationships in the brief, not a reusable card grid. The prose should occupy clear uncluttered areas alongside the diagram. Keep a strong reading sequence, large body text and no text over detailed illustration.\nVISUAL SUBJECT: A central diagram depicts a disassembled scoreboard module. Exploded views show the heavy iron hooks, the chipped indigo plywood backing, and a set of hand-lettered terracotta numerals. Dotted lines connect these components to the three text blocks, illustrating how the physical weight of the timber interacts with the painted typography to form a cohesive visual language.\nSOURCE BRIEF FOR DIAGRAM CONTENT: A fictional local game display uses movable numerals, worn color fields and irregular lettering to create a communal graphic identity.\nEXACT VISIBLE COPY, reproduce every sentence verbatim with correct spelling and punctuation. The headings below describe layout roles and are not extra printed words.\nTITLE: \"THE LANGUAGE OF A HAND-PAINTED SCOREBOARD\"\nINTRODUCTION: \"Local athletics rely on weather-beaten plywood and manual labor to broadcast the drama of the game through tactile, hand-lettered graphic systems and shifting pigments.\"\nSECTION 1 HEADING: \"The Anatomy of Weathered Pigment\"\nSECTION 1 BODY: \"Layers of indigo paint crack under relentless sun, revealing previous seasonsâ scores beneath the surface. These worn color fields function as a communal palimpsest, where the physical erosion of the board reflects the long, gritty history of the local playing field.\"\nSECTION 2 HEADING: \"Glyphs of Human Error\"\nSECTION 2 BODY: \"Movable wooden numerals feature irregular serifs and inconsistent widths, rejecting the clinical perfection of digital displays. Each digit carries the distinct weight of its makerâs brushstrokes, turning simple statistics into a visible dialogue between the scorekeeper and the watching crowd.\"\nSECTION 3 HEADING: \"Terracotta and Indigo Logic\"\nSECTION 3 BODY: \"The high-contrast palette uses earthy terracotta for home totals and deep indigo for visitors, ensuring legibility across the dusty expanse. This color logic establishes a regional aesthetic identity that prioritizes rugged utility over the fleeting trends of modern sports branding.\"\nBOTTOM TAKEAWAY: \"The scoreboard survives as a functional sculpture, celebrating the imperfect beauty of manual record-keeping in a digital age.\"\nFOOTER: \"A creative design study\"\nTYPESETTING: The 182 words of supplied prose are essential visual content, not instructions to summarize. Set complete paragraphs in comfortably readable body type, roughly 30â36 pixels at a 2K long edge. Short line lengths, generous leading and at least 5 percent exterior margins. Headings clearly larger than body text. Keep all 3 sections, introduction and takeaway fully visible. Add only the supplied diagram labels where needed. Avoid duplicate paragraphs, invented filler, ellipses, illegible pseudo-text or cut-off sentences. Keep diagram lines away from prose. A polished flat artwork filling the whole image, not a framed mockup.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_generate",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/72bd338e66122442e63c842c82eb58d25f92dc79-1800x1800.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-flux3_image_generate-an-infographic-titled-the-language-of-a-hand-paint/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "ClipSlider on flux3_image_generate.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

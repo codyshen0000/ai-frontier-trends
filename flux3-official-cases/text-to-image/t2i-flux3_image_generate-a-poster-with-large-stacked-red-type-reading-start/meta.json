@@ -1,0 +1,25 @@
+{
+  "id": "t2i-flux3_image_generate-a-poster-with-large-stacked-red-type-reading-start",
+  "category": "t2i",
+  "title": "A poster with large stacked red type reading Start Somewhere Soft on a warm cream background.",
+  "prompt": "Create a finished 2:3 graphic design artwork for an original fictional design study.\nART DIRECTION: Type-led graphic poster with a newly composed layout and striking scale contrasts. Typography is the visual subject; use only supplied copy. Crisp ink, subtle paper grain, two strong colors with a neutral ground.\nORIGINAL VISUAL: rounded title lettering on a sharply divided color field. Balance a small isolated subject against very large type.\nEXACT VISIBLE TITLE: \"Start Somewhere Soft\"\nEXACT SUPPORTING COPY: \"Open studio / All ideas welcome\"\nUse the supporting copy as a carefully typeset secondary block; slashes indicate line breaks.\nCreate a coherent, distinctive new layout with readable text and intentional hierarchy. Full-bleed artwork, except for the requested packaging presentation. Keep important text at least 5 percent from all edges. Fine print texture and polished professional art direction. Use only the supplied visible copy. No real brands, logos, named artists, existing book covers, famous characters, copied campaign slogans, signatures, watermarks, QR codes or borrowed artwork. Invent all visual forms from this description; this is not a remake of a specific existing design.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_generate",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/9e8848b3caa90627b6ea181805a1e6c03f3647a7-1200x1812.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-flux3_image_generate-a-poster-with-large-stacked-red-type-reading-start/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "ClipSlider on flux3_image_generate.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

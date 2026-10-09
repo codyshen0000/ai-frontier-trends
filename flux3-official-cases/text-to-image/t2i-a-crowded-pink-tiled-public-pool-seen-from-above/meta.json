@@ -1,0 +1,25 @@
+{
+  "id": "t2i-a-crowded-pink-tiled-public-pool-seen-from-above",
+  "category": "t2i",
+  "title": "A crowded pink-tiled public pool seen from above, dozens of swimmers in red, gre",
+  "prompt": "A crowded public pool on a hot day, photographed from a high platform: eighty swimmers, each individually posed, arranged like a painting. In the lower left, one woman stares up at the camera with unexplained dread. Hyper-saturated candy colour, hard sunlight.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_overview",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/5b61010514b10d05eb08b3caf755f3d15dd939c2-1800x1013.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-a-crowded-pink-tiled-public-pool-seen-from-above/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "FLUX 3 Image overview — Text to image showcase",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

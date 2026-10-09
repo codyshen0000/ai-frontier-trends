@@ -1,0 +1,25 @@
+{
+  "id": "t2i-flux3_image_generate-a-busy-street-at-night-lined-with-bright-japanese",
+  "category": "t2i",
+  "title": "A busy street at night lined with bright Japanese signs and crowds of shoppers.",
+  "prompt": "A bustling urban street scene filled with bright, colorful signs in Japanese, featuring numerous people engaged in shopping and walking. The atmosphere is lively, with illuminated storefronts and a prominent lamp post casting a warm glow. A giant ramen sign and various food images contribute to the vibrant street market vibe. The setting captures a typical busy street market scene, likely in Japan, during the evening.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_generate",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/85bbcd5e0b77baf9fd3c35d6551958cbd771ddd7-1800x1192.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-flux3_image_generate-a-busy-street-at-night-lined-with-bright-japanese/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "ClipSlider on flux3_image_generate.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

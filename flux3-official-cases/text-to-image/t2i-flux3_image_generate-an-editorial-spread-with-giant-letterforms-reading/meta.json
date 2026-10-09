@@ -1,0 +1,25 @@
+{
+  "id": "t2i-flux3_image_generate-an-editorial-spread-with-giant-letterforms-reading",
+  "category": "t2i",
+  "title": "An editorial spread with giant letterforms reading Notes from an Empty Pool across orange and white.",
+  "prompt": "Create a finished 3:4 original experimental graphic design artwork.\nDESIGN LANGUAGE: Experimental flat double-page editorial spread. Giant letterforms cross the central gutter, tiny photographs interrupt the grid, one vivid field contrasts with a grayscale image field. Supplied copy only, no filler paragraphs.\nUNIQUE VISUAL IDEA: overhead photographs of an invented empty swimming pool interrupted by enormous circular letter counters.\nCOMPOSITION: Make the visual and title physically interact across most of the canvas; use intentional overlap while preserving legibility. Let this specific visual idea determine the layout. Preserve its conceptual surprise.\nEXACT TITLE: \"NOTES FROM AN EMPTY POOL\"\nEXACT SECONDARY COPY: \"Deep end / No water required.\"\nShow the complete designed double-page spread, filling the image, with a narrow visible gutter.\nThe title must be confidently typeset and readable. The small supplied sentence is the only supporting copy. No invented filler paragraphs. Type should feel integral to the material, scene or composition, not automatically placed as a generic heading over a small centered object. Design a visually adventurous, professionally resolved piece with clear hierarchy, deliberate contrast and rich details. Use fresh invented imagery and original letter arrangements; do not reproduce any existing poster, brand, logo, artwork, artist signature, campaign, famous character or reference photograph. No reference image is supplied. No watermarks, web addresses or QR codes.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_generate",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/ea83280c7eb142d8f4643a0fb64a520fce0047ba-1200x1600.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-flux3_image_generate-an-editorial-spread-with-giant-letterforms-reading/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "ClipSlider on flux3_image_generate.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

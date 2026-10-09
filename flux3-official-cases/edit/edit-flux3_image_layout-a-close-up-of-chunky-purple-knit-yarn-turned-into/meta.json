@@ -1,0 +1,28 @@
+{
+  "id": "edit-flux3_image_layout-a-close-up-of-chunky-purple-knit-yarn-turned-into",
+  "category": "edit",
+  "title": "a close-up of chunky purple knit yarn, turned into a purple chunky-knit blanket draped over a white studio block.",
+  "prompt": "Create a blanket using the exact texture from the uploaded image, photographed in a clean studio setup.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_layout",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/c76b5b5eb7ff5e4e8ed72fe2b0a84204bfe0d750-1265x1265.webp",
+    "https://cdn.sanity.io/images/2gpum2i6/production/217b4ef022a6ad6bf80846967a5648d845bfabbb-1800x1800.webp"
+  ],
+  "image_files": [
+    "edit/edit-flux3_image_layout-a-close-up-of-chunky-purple-knit-yarn-turned-into/before.webp",
+    "edit/edit-flux3_image_layout-a-close-up-of-chunky-purple-knit-yarn-turned-into/after.webp"
+  ],
+  "roles": [
+    "before",
+    "after"
+  ],
+  "labels": [],
+  "notes": "ClipSlider on flux3_image_layout.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

@@ -1,0 +1,25 @@
+{
+  "id": "t2i-flux3_image_generate-a-snow-capped-mountain-range-glowing-orange-and-pi",
+  "category": "t2i",
+  "title": "A snow-capped mountain range glowing orange and pink at sunset under soft clouds.",
+  "prompt": "A breathtaking mountain range bathed in the warm glow of a sunset. The peaks, partially covered in snow, reflect hues of orange and pink. Fluffy clouds hover above, blending into a sky that transitions from golden to soft blue.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_generate",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/f030452346578c40318af32c8f3ecb91ee3adffc-1800x1192.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-flux3_image_generate-a-snow-capped-mountain-range-glowing-orange-and-pi/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "ClipSlider on flux3_image_generate.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

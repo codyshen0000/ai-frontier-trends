@@ -1,0 +1,20 @@
+Create a finished 2:3 long-form infographic poster. This is a TEXT-RICH graphic design study. Give the artwork a memorable composition specific to its concept, with roughly half the area for legible longer text. Integrate the prose into the authored visual arrangement; do not default to repeated cards or a generic five-panel grid.
+ART DIRECTION: Cutaway copper kettle with miniature instruments and steam shaped as music staffs; cream ground, turquoise arrows, classic concert-program typography and long captions.
+VISUAL SUBJECT: A detailed cross-section of a vintage copper kettle reveals a multi-tiered concert hall. Tiny figures with violins occupy the curved walls, while percussionists stand on the heating coil. Turquoise arrows trace the path of steam as it twists into musical staves, connecting the internal instruments to the whistling spout against a calm cream background.
+SOURCE BRIEF FOR DIAGRAM CONTENT: An ordinary kettle becomes a tiny fictional orchestra whose parts contribute different textures.
+EXACT VISIBLE COPY, reproduce every sentence verbatim with correct spelling and punctuation. The headings below describe layout roles and are not extra printed words.
+TITLE: "THE ORCHESTRA INSIDE A KETTLE"
+INTRODUCTION: "Beneath the copper dome, a miniature ensemble waits for the pilot light. As heat rises, household utility transforms into a complex, multi-layered symphonic performance."
+SECTION 1 HEADING: "Percussion of the Base"
+SECTION 1 BODY: "The base plate acts as a massive percussion section. As the heating element glows, microscopic hammers strike the metal floor, creating a rhythmic, rhythmic ticking that signals the overtureâs beginning."
+SECTION 2 HEADING: "The Bubbling Woodwinds"
+SECTION 2 BODY: "Tiny flutists ride the rising bubbles, their notes popping as they reach the surface. This chaotic staccato mimics the frantic pace of a forest stream, providing a textured, liquid woodwind melody."
+SECTION 3 HEADING: "Convex String Section"
+SECTION 3 BODY: "Copper walls reflect sound like a celloâs body. Micro-violinists perched on the interior rivets draw bows across tensioned wires, amplifying the resonance as the water temperature reaches a steady, vibrating hum."
+SECTION 4 HEADING: "Steam Pipe Brass"
+SECTION 4 BODY: "Pressure builds toward the spout, where a miniature brass brigade waits. They channel the escaping vapor through narrow valves, turning raw kinetic energy into a sustained, piercing high-note finale that commands attention."
+SECTION 5 HEADING: "The Hissing Choir"
+SECTION 5 BODY: "A ghostly choir of mist-dwellers sings in the condensation. Their voices are white noise, filling the gaps between mechanical clinks with a soft, atmospheric blur that softens the sharp edges of the metal."
+BOTTOM TAKEAWAY: "Every morning ritual contains a hidden concert; once the whistle blows, the tiny conductor finally takes a bow."
+FOOTER: "A creative design study"
+TYPESETTING: The 220 words of supplied prose are essential visual content, not instructions to summarize. Set complete paragraphs in comfortably readable body type, roughly 26â32 pixels at a 2K long edge. Short line lengths, generous leading and at least 5 percent exterior margins. Headings clearly larger than body text. Keep all 5 sections, introduction and takeaway fully visible. Add only the supplied diagram labels where needed. Avoid duplicate paragraphs, invented filler, ellipses, illegible pseudo-text or cut-off sentences. Keep diagram lines away from prose. A polished flat artwork filling the whole image, not a framed mockup.

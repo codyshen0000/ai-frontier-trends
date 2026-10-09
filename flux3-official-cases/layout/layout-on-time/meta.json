@@ -1,0 +1,98 @@
+{
+  "id": "layout-on-time",
+  "category": "layout",
+  "title": "You'll do everything on time",
+  "prompt": "Monochromatic graphic design poster framed by solid black letterbox bars at the top <bar_1> and bottom <bar_2>. The background is a textured, off-white surface <background_1>. Dominating the left side of the vertical frame is a large, abstract black mass <mass_1>. To the right of this mass, stacked lowercase text is printed <En_Text_1>. Further down on the right side, a second block of text sits <En_Text_2>. Near the bottom center, positioned below the abstract mass and to the left of the lower text, is a pair of disembodied eyes <eyes_1>. The entire composition features a distressed, photocopy-like aesthetic with heavy grain, noise, and stark black-and-white contrast.\n[{\"id\": \"bar_1\", \"bbox\": [0, 0, 80, 1000.0], \"desc\": \"a solid black horizontal rectangle forming a top letterbox border\"}, {\"id\": \"bar_2\", \"bbox\": [920, 0, 1000.0, 1000.0], \"desc\": \"a solid black horizontal rectangle forming a bottom letterbox border\"}, {\"id\": \"background_1\", \"bbox\": [80, 0, 920, 1000.0], \"desc\": \"a textured, off-white surface spanning the area between the black bars\"}, {\"id\": \"mass_1\", \"bbox\": [150, 50, 750, 480], \"desc\": \"a large, abstract black smear resembling a distorted face\"}, {\"id\": \"En_Text_1\", \"bbox\": [350, 500, 520, 920], \"desc\": \"legible black lowercase text reading \\\"you'll do\\\\\\\\neverything\\\"\"}, {\"id\": \"En_Text_2\", \"bbox\": [700, 550, 780, 880], \"desc\": \"black lowercase text reading \\\"on time\\\"\"}, {\"id\": \"eyes_1\", \"bbox\": [760, 250, 860, 500], \"desc\": \"a pair of human eyes, cropped without a surrounding face\"}]",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_overview",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/395c953738988b8a24832fe2c3ca843a5a40d096-786x1400.webp"
+  ],
+  "image_files": [
+    "layout/layout-on-time/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "layout prompt with bounding boxes; image may show boxes overlaid on overview",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": 786,
+  "height": 1400,
+  "aspect_ratio": "9:16",
+  "rows": [
+    {
+      "id": "bar_1",
+      "bbox": [
+        0,
+        0,
+        80,
+        1000.0
+      ],
+      "desc": "a solid black horizontal rectangle forming a top letterbox border"
+    },
+    {
+      "id": "bar_2",
+      "bbox": [
+        920,
+        0,
+        1000.0,
+        1000.0
+      ],
+      "desc": "a solid black horizontal rectangle forming a bottom letterbox border"
+    },
+    {
+      "id": "background_1",
+      "bbox": [
+        80,
+        0,
+        920,
+        1000.0
+      ],
+      "desc": "a textured, off-white surface spanning the area between the black bars"
+    },
+    {
+      "id": "mass_1",
+      "bbox": [
+        150,
+        50,
+        750,
+        480
+      ],
+      "desc": "a large, abstract black smear resembling a distorted face"
+    },
+    {
+      "id": "En_Text_1",
+      "bbox": [
+        350,
+        500,
+        520,
+        920
+      ],
+      "desc": "legible black lowercase text reading \"you'll do\\\\neverything\""
+    },
+    {
+      "id": "En_Text_2",
+      "bbox": [
+        700,
+        550,
+        780,
+        880
+      ],
+      "desc": "black lowercase text reading \"on time\""
+    },
+    {
+      "id": "eyes_1",
+      "bbox": [
+        760,
+        250,
+        860,
+        500
+      ],
+      "desc": "a pair of human eyes, cropped without a surrounding face"
+    }
+  ],
+  "caption": "Monochromatic graphic design poster framed by solid black letterbox bars at the top <bar_1> and bottom <bar_2>. The background is a textured, off-white surface <background_1>. Dominating the left side of the vertical frame is a large, abstract black mass <mass_1>. To the right of this mass, stacked lowercase text is printed <En_Text_1>. Further down on the right side, a second block of text sits <En_Text_2>. Near the bottom center, positioned below the abstract mass and to the left of the lower text, is a pair of disembodied eyes <eyes_1>. The entire composition features a distressed, photocopy-like aesthetic with heavy grain, noise, and stark black-and-white contrast."
+}

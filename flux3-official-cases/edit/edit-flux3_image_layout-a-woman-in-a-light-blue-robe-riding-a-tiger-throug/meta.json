@@ -1,0 +1,28 @@
+{
+  "id": "edit-flux3_image_layout-a-woman-in-a-light-blue-robe-riding-a-tiger-throug",
+  "category": "edit",
+  "title": "a woman in a light blue robe riding a tiger through green forest, moved to a snowy Japanese landscape with red maple trees.",
+  "prompt": "Now they are in a snowy Japanese landscape with a Japanese Maple tree.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_layout",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/1d4748b785ee6342041c883a40e77073a366e7d6-960x1440.webp",
+    "https://cdn.sanity.io/images/2gpum2i6/production/d78a7cb67e8d53b462ac5a9fdf53e27c2b547884-1192x1800.webp"
+  ],
+  "image_files": [
+    "edit/edit-flux3_image_layout-a-woman-in-a-light-blue-robe-riding-a-tiger-throug/before.webp",
+    "edit/edit-flux3_image_layout-a-woman-in-a-light-blue-robe-riding-a-tiger-throug/after.webp"
+  ],
+  "roles": [
+    "before",
+    "after"
+  ],
+  "labels": [],
+  "notes": "ClipSlider on flux3_image_layout.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

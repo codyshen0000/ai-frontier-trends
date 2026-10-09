@@ -1,0 +1,25 @@
+{
+  "id": "t2i-flux3_image_generate-two-clownfish-swimming-in-a-dimly-lit-aquarium-in",
+  "category": "t2i",
+  "title": "Two clownfish swimming in a dimly lit aquarium in front of soft orange coral.",
+  "prompt": "Two vibrant clownfish swimming together in a dimly lit aquarium. The water reflects warm, earthy tones, and the background features soft orange coral formations, creating an underwater atmosphere.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_generate",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/026cedbac59df79483d3440ff2aa2bf03434c2fc-1800x1192.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-flux3_image_generate-two-clownfish-swimming-in-a-dimly-lit-aquarium-in/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "ClipSlider on flux3_image_generate.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

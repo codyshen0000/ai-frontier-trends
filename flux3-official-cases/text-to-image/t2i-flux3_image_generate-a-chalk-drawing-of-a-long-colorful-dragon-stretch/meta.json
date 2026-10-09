@@ -1,0 +1,25 @@
+{
+  "id": "t2i-flux3_image_generate-a-chalk-drawing-of-a-long-colorful-dragon-stretch",
+  "category": "t2i",
+  "title": "A chalk drawing of a long, colorful dragon stretching across a street.",
+  "prompt": "Create a finished 1:1 original artwork.\nMEDIUM AND VISUAL LANGUAGE: Vivid chalk pastel on rough dark pavement, powdery broken edges, overhead composition, playful handmade immediacy. Remain faithful to this specific medium, including its physical marks, lighting and limitations.\nSUBJECT AND STORY: street-length dragon. Invent the details from scratch and make the scene emotionally engaging and visually surprising.\nCOMPOSITION: A formally composed frontal view with rhythmic repetition and one surprising interruption.\nThis is a purely visual artwork. Do not include any text, lettering, captions, logos or words.\nArt direction: develop a coherent distinctive palette within this medium; use thoughtful contrast, beautifully observed texture and a memorable visual hierarchy. This must feel like a complete artwork, not a moodboard, not a sample grid and not a generic centered object poster. Fill the frame with the artwork. No decorative presentation border. Invent all characters and settings. Do not reproduce existing artworks, brands, mascots, recognizable franchise characters, signatures or campaigns. No reference image is supplied. No watermarks or web addresses.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_generate",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/a56598aac13327d23b10e6401934f24bd4435495-1800x1800.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-flux3_image_generate-a-chalk-drawing-of-a-long-colorful-dragon-stretch/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "ClipSlider on flux3_image_generate.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}

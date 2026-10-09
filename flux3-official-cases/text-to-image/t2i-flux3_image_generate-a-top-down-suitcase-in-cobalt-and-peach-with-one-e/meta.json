@@ -1,0 +1,25 @@
+{
+  "id": "t2i-flux3_image_generate-a-top-down-suitcase-in-cobalt-and-peach-with-one-e",
+  "category": "t2i",
+  "title": "A top-down suitcase in cobalt and peach with one exploded layer, titled The Shapes of a Packed Suitcase.",
+  "prompt": "Create a finished 1:1 long-form infographic poster. This is a TEXT-RICH graphic design study. Give the artwork a memorable composition specific to its concept, with roughly half the area for legible longer text. Integrate the prose into the authored visual arrangement; do not default to repeated cards or a generic five-panel grid.\nART DIRECTION: A top-down suitcase uses brightly colored geometric luggage silhouettes, one exploded packing layer, cobalt and peach, four clear editorial commentary fields.\nVISUAL SUBJECT: A top-down view shows a suitcase filled with cobalt and peach geometric silhouettes representing clothes and gear. One central layer is exploded upward, revealing how a ceramic jar fits into a nest of rolled fabrics. Four thin lines connect the editorial fields to specific interlocking shapes, highlighting the structural logic of the packed luggage.\nSOURCE BRIEF FOR DIAGRAM CONTENT: An imagined journey is told through the spatial puzzle of objects inside a suitcase.\nEXACT VISIBLE COPY, reproduce every sentence verbatim with correct spelling and punctuation. The headings below describe layout roles and are not extra printed words.\nTITLE: \"THE SHAPES OF A PACKED SUITCASE\"\nINTRODUCTION: \"This imagined journey unfolds through the spatial puzzle of objects tucked into a suitcase, where personal belongings map a fictional travelerâs destination.\"\nSECTION 1 HEADING: \"The Heavy Foundations\"\nSECTION 1 BODY: \"Sturdy leather boots anchor the bottom corners, providing a weighted base for lighter garments. Their rigid soles act as internal walls, shielding delicate souvenirs from the shifting pressure of transport.\"\nSECTION 2 HEADING: \"Interlocking Textile Grids\"\nSECTION 2 BODY: \"Rolled linens and folded cottons create a soft mosaic of cylinders and rectangles. These fabric units fill the gaps between hard containers, ensuring that no hollow space remains to rattle during transit.\"\nSECTION 3 HEADING: \"The Fragile Core\"\nSECTION 3 BODY: \"A single ceramic vessel sits protected within the center of the textile mass. Wrapped in thick wool socks, this central artifact serves as the metaphorical heart of the entire packing arrangement.\"\nSECTION 4 HEADING: \"External Mesh Limits\"\nSECTION 4 BODY: \"The zippered lid contains paper maps and flat journals, pressing down to compress the bulk below. This final layer turns a chaotic pile into a singular, portable block of organized geometry.\"\nSECTION 5 HEADING: \"Small Corner Curios\"\nSECTION 5 BODY: \"Loose coins and brass keys occupy the remaining nooks near the hinges. These tiny metallic shapes provide the final clinking soundtrack to a suitcase that is now perfectly balanced and ready.\"\nBOTTOM TAKEAWAY: \"Packing is an act of spatial storytelling, turning disparate personal artifacts into a dense, coherent geometry of travel.\"\nFOOTER: \"A creative design study\"\nTYPESETTING: The 216 words of supplied prose are essential visual content, not instructions to summarize. Set complete paragraphs in comfortably readable body type, roughly 26â32 pixels at a 2K long edge. Short line lengths, generous leading and at least 5 percent exterior margins. Headings clearly larger than body text. Keep all 5 sections, introduction and takeaway fully visible. Add only the supplied diagram labels where needed. Avoid duplicate paragraphs, invented filler, ellipses, illegible pseudo-text or cut-off sentences. Keep diagram lines away from prose. A polished flat artwork filling the whole image, not a framed mockup.",
+  "instruction_short": null,
+  "op": null,
+  "source_page": "https://docs.bfl.ml/flux_3/flux3_image_generate",
+  "image_urls": [
+    "https://cdn.sanity.io/images/2gpum2i6/production/ef886864f43fa2227e14e0c366a862e2195d8248-1800x1800.webp"
+  ],
+  "image_files": [
+    "text-to-image/t2i-flux3_image_generate-a-top-down-suitcase-in-cobalt-and-peach-with-one-e/result.webp"
+  ],
+  "roles": [
+    "result"
+  ],
+  "labels": [],
+  "notes": "ClipSlider on flux3_image_generate.html",
+  "downloaded_at": "2026-10-09T09:30:16.642387+08:00",
+  "missing_image_urls": [],
+  "width": null,
+  "height": null,
+  "aspect_ratio": null
+}
