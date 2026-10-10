@@ -14,20 +14,21 @@ pre.mermaid{background:#fff;text-align:center} a{color:#0969da}
 <p id="back-home"><a href="../">← 返回首页</a></p>
 <div id="ctl"><button onclick="t(false)">全部展开</button><button onclick="t(true)">全部折叠</button></div>
 <h1>AI 前沿趋势时间线（前沿趋势分析维护）</h1>
-<p><strong>一句话结论：傍晚 Rubric-CEPR 用内部 Critic 自蒸馏抬高 Qwen-Image-Edit 的 VIEScore；视频少步仍修 DMD；主线无推翻。</strong></p>
+<p><strong>一句话结论：视频少步出现第二条绕开 DMD 的路（PTD）；偏好加 rubric 奖励让评审进入文生图 RL；OPD 教技能不教知识；主线无推翻。</strong></p>
 <pre class="mermaid">graph LR
-  A["LLM 后训练<br/>先 SFT/OPD 再 RL【证实】<br/>OPD 锐化分布，不扩边界"] --> B["共同原则<br/>反向 KL 下学自己的样本【推断】"]
+  A["LLM 后训练【证实】<br/>SFT 热身 → OPD → RL<br/>OPD 也可在 RL 后合并多老师"] --> B["在学生样本上学【推断】<br/>样本来源管组合 · KL 方向管新知识"]
   B --> C["扩散 OPD<br/>GFD-OPD · MILD"]
   D["少步生成【推断】"] --> E["工业端分段蒸馏<br/>CFG 蒸馏 → 轨迹蒸馏 → 对抗精修<br/>FLUX 3 · Kandinsky 6.0"]
   D --> F["留在 DMD 上修（研究主流）<br/>PDMD · DMAD · DuoMatching · Salt++"]
-  C --> E
+  D --> P["绕开 DMD（两家）<br/>Kandinsky π-Flow · NVIDIA PTD"]
+  B --> P
   D -. 推翻信号 .-> G["无老师少步目标<br/>MeanFlow · shortcut"]
-  H["自动指标饱和<br/>学生超老师，人评不认"] --> I["可验证环境在链路两端【推断】<br/>内部 Critic 自蒸馏 · 世界动作模型"]
-  E --> H
-  R["Rubric-CEPR<br/>Qwen-Image-Edit + VIEScore"] --> I
-  J["数据差距<br/>LLM【证实】· 生图【叙事】"] --> A
-  K["竞争转向可控【推断】"] --> L["结构化条件数据"]
-  M["决策模型成品类【推断】<br/>Jev · d1 · Clef"]
+  H["单一偏好奖励被钻空子<br/>自动指标饱和"] --> I["评审进入 RL 闭环【推断，升级】<br/>偏好 + rubric · 内部 Critic"]
+  I --> W["世界动作模型端<br/>仍未用模拟器做 RL"]
+  J["数据差距<br/>LLM【证实】· 生图后训练首个对照"] --> A
+  J --> I
+  K["竞争转向可控【推断】"] --> L["多轮编辑漂移评测<br/>AA 30 轮 · RISEBench++"]
+  M["决策模型成品类【推断】<br/>Jev · Clef-omni · MS-Decision-1"]
 </pre>
 <blockquote>
 <p>标注规则：<strong>【证实】</strong>有对照实验或官方一手数据；<strong>【推断】</strong>我们的归纳，有间接证据；<strong>【叙事】</strong>常见说法，缺少能区分的证据。
@@ -47,16 +48,20 @@ pre.mermaid{background:#fff;text-align:center} a{color:#0969da}
 <li>Purdue《Does OPD Really Distill?》（<a href="https://arxiv.org/abs/2608.31046">arXiv 2608.31046</a>）认为增益主要来自压低学生自采的低概率 token，而不是老师的信号。</li>
 <li>剑桥 On-/Off-Policy（<a href="https://arxiv.org/abs/2609.35259">arXiv 2609.35259</a>）：只有反向 KL 偏好学生自己的 rollout，前向 KL 几乎不敏感；on-policy 带来的泛化优势接上 RLVR 后不一定还在。</li>
 <li>补充（2026-10-09）：Gains and Collapse（<a href="https://arxiv.org/abs/2610.03185">arXiv 2610.03185</a>）从 RL 角度解释 OPD：老师是隐式奖励。OPD 让对的答案更容易采到，但不扩大学生的能力边界。老师评价不可靠时，学生会钻空子，回答变长、重复，最后塌掉。论文说用 SFT 初始化能缓解塌缩，这支持「先 SFT 冷启动」的顺序【证实，单篇】。它也和 Purdue 的结论一致：OPD 的增益来自锐化学生自己的分布。</li>
+<li>补充（2026-10-10）：Salesforce 稿（<a href="https://arxiv.org/abs/2609.31900">arXiv 2609.31900</a>）用 Qwen3 做对照。短 SFT 热身让 OPD 更好；同等准确率下，OPD 给后续 RLVR 的起点比 SFT 好，RL 算力越大差距越大。被 RLVR 强化过的学生，再做同一老师的 OPD 会退步【证实，单篇】。顺序可写成「SFT 热身 → OPD → RL」。</li>
+<li>补充（2026-10-10）：小米 MiMo-V2.6 技术报告（<a href="https://arxiv.org/abs/2610.11959">arXiv 2610.11959</a>）是短 SFT、大规模 RL，最后用多老师 OPD（MOPD2）合并各领域老师。所以 OPD 有两个位置：RL 前热身，RL 后合并多个老师。RL 每步 1,568 个 prompt×16 条，约 25K 条轨迹；为大 batch 把优化器从 AdamW 换成 Muon 变体，并冻结 MoE 路由【证实，官方报告】。</li>
 <li>升级信号：Beam 或 Mistral Large 4 放权重时公开的后训练配方也是"OPD 或 SFT 冷启动，然后 RL"；多 seed 复现。</li>
 <li>推翻信号：出现大规模对照，同步融合（joint）稳定优于先后串行；或者 OPD 预热的增益在多 seed 下消失。</li>
 </ul>
-<h3>主线 2：两个领域共同的设计原则是"用模式寻找型目标时，在学生自己的样本上学"　【推断】</h3>
+<h3>主线 2：两个领域共同的设计原则是"在学生自己的样本上学"，但样本来源和 KL 方向要分开看　【推断】</h3>
 <ul>
 <li>原说法"生图在重走大语言模型的路、晚半年到一年"<strong>已撤回</strong>：扩散模型是先做少步蒸馏（LCM、DMD，2023 年前后），后来才引入 RL（Flow-GRPO），顺序和大语言模型相反。</li>
 <li>修订后：反向 KL 或模式寻找型目标（大语言模型 OPD、DMD 系）更适合在学生自己的样本上训练。π-Flow 一类属于轨迹模仿，<strong>不和 DMD 归为同一类</strong>。</li>
 <li>证据：剑桥 2609.35259（KL 方向才是主要变量）；DMAD（<a href="https://arxiv.org/abs/2610.02188">arXiv 2610.02188</a>）在学生样本上做对抗化的 DMD；Kandinsky 6.0（<a href="https://arxiv.org/abs/2610.05608">arXiv 2610.05608</a>）用 π-Flow 在学生 rollout 上模仿老师。</li>
 <li>反方意见（保留）：扩散 OPD（GFD-OPD <a href="https://arxiv.org/abs/2609.39692">arXiv 2609.39692</a> 处理 CFG 放大误差，MILD <a href="https://arxiv.org/abs/2609.34371">arXiv 2609.34371</a> 做跨模态老师）和大语言模型 OPD 要解决的问题不同，只是名字相同。</li>
 <li>限定（2026-10-09）：在学生自己的样本上学有前提，老师对学生 rollout 的评价必须可靠。评价不可靠时，模式寻找会放大学生的坏样本（Gains and Collapse，<a href="https://arxiv.org/abs/2610.03185">arXiv 2610.03185</a>）。</li>
+<li>改写（2026-10-10）：「样本来源」和「KL 方向」要拆成两个变量。港科大稿（<a href="https://arxiv.org/abs/2610.09639">arXiv 2610.09639</a>）在合成任务上做 2×2 对照：反向 KL 的 OPD 能教组合技能（未见结构 79.10%），几乎不教新事实（13.12%）；换前向 KL，事实准确率回到约 54%（Qwen3-4B）。学生样本在两种 KL 下都改善组合执行【证实，合成任务 + 两个真实基准】。这和剑桥稿「只有反向 KL 偏好学生样本」部分冲突，待更多复现。</li>
+<li>扩散侧旁证（2026-10-10）：PTD（<a href="https://arxiv.org/abs/2610.11498">arXiv 2610.11498</a>）用回归型轨迹目标，但在学生自己预测的路径上查询老师；消融显示这比让老师逐段积分更保细节。也就是说，在学生样本上学，对非模式寻找目标也有用【推断】。</li>
 <li>升级信号：有人在扩散 OPD 上做 Purdue 式的归因审计，并发现同样的"增益来自压低学生自身错误模式"。</li>
 <li>推翻信号：扩散侧的对照实验显示，前向和反向目标对样本来源同样不敏感。</li>
 </ul>
@@ -67,6 +72,7 @@ pre.mermaid{background:#fff;text-align:center} a{color:#0969da}
 <li>补充（2026-10-08）：VIEScore2（<a href="https://arxiv.org/abs/2610.00994">arXiv 2610.00994</a>）给生成图打分并标出 16×16 缺陷格，先 SFT 再 RL，和人评的秩相关是 0.601。它是学出来的评审，不是可验证奖励，不满足下面的推翻信号。</li>
 <li>补充（2026-10-09）：世界动作模型这一端在升温。Long-WAM（<a href="https://arxiv.org/abs/2610.10528">arXiv 2610.10528</a>）把历史上下文加长后，RoboCasa 成功率从 63.3% 升到 78.7%（作者自报）。另有 Meta 的 RoboJEPA（8B latent 世界模型，arXiv 2610.10515）和 Odyssey-3（Physics-IQ 66.1，官方自报）。三者都是预训练加适配，不是用模拟器成功率做 RL，所以不满足升级信号。</li>
 <li>补充（2026-10-09 傍晚）：Rubric-CEPR（<a href="https://arxiv.org/abs/2610.12469">arXiv 2610.12469</a>）在 Qwen-Image-Edit-2509 上用内部 Critic 门控后自蒸馏，无人工编辑对、无外部奖励模型。ImgEdit <strong>4.36→4.60</strong>（+5.5%），物体分离 <strong>3.41→4.26</strong>（+24.9%）；GEdit-Bench Overall VIEScore <strong>7.39→8.31</strong>（+12.4%）。这是靠近升级信号的证据，但还不是开源「VLM 评审 + 生成器」闭环 RL 框架，也没有相对纯偏好奖励的对照增益，所以主线等级不变。</li>
+<li>补充（2026-10-10，升级一档）：Arena 团队（<a href="https://arxiv.org/abs/2610.02967">arXiv 2610.02967</a>）在 FLUX.2-dev 和 Ideogram-4 上做文生图 RL。奖励是偏好模型（约 560 万对 Arena 投票）加 rubric 奖励；rubric 由 Qwen3.6-27B 判官逐题回答。只用偏好奖励时，忠实度持续下降；加 rubric 后，对基座胜率从 0.507 升到 0.642，FLUX.2-dev 线上 Arena 分 +69【证实，单 seed】。这满足升级信号里「技术报告 + 相对纯偏好奖励的增益」；但只放 1K 训练数据，框架未开源。它发生在纯文生图里，但 rubric 判官是学出来的，不是可验证奖励，所以不触发推翻信号。</li>
 <li>升级信号：出现开源的"VLM 评审 + 生成器"闭环 RL 训练框架或技术报告，并给出相对纯偏好奖励的增益；世界动作模型用模拟器成功率做 RL，且公开数据。</li>
 <li>推翻信号：纯文生图出现新的、可规模化的可验证奖励（不是 OCR、计数这一类），并带来显著的人评提升。</li>
 </ul>
@@ -75,10 +81,12 @@ pre.mermaid{background:#fff;text-align:center} a{color:#0969da}
 <li>大语言模型（有"同模型、同流程、只换数据"的对照）：腾讯混元 RSR（<a href="https://arxiv.org/abs/2610.02826">arXiv 2610.02826</a>）原始轨迹 SFT 在 Terminal-Bench 2 上 53.4%，改写后 74.2%；HF × Liquid 多 harness RL（<a href="https://huggingface.co/spaces/FineEnvs/multi-harness-rl">博客</a>）中模仿 27B 老师轨迹做 SFT 不如在目标 harness 里做 RL；DeepSeek V4.1 Flash 公开了算法之后再说增益来自数据和环境管线。</li>
 <li>补充（2026-10-09）：JetBrains Mellum2.1 架构和 Mellum2 相同，变化几乎全在真实环境 RL（<a href="https://blog.jetbrains.com/ai/2026/10/mellum2-1-gets-to-work-a-fast-open-model-for-coding-agents/">官方博客</a>）。MIMESIS（<a href="https://arxiv.org/abs/2610.09484">arXiv 2610.09484</a>）发现，现成 LLM 扮用户会过度配合，τ-bench 上把成功率从真人的 63.6% 抬到 82.4% 以上，所以环境本身也要训练。LLM 侧的差距在数据和环境，这条继续加固。</li>
 <li>生图：GPT Image 2.5"靠数据"来自博主综合披露文件和访谈，没有消融；Qwen-Image 2.1 反而公开了大量架构细节。</li>
+<li>补充（2026-10-10）：生图后训练侧出现首个「同架构、同算法、只换数据」对照。Arena 稿（<a href="https://arxiv.org/abs/2610.02967">arXiv 2610.02967</a>）固定 RL 配方，只改奖励模型的偏好数据量：1 万对时胜率 0.537，约 560 万对时 0.642；过滤后的 1 万条 prompt 也胜过未过滤的 10 万条【证实，单 seed】。这只覆盖后训练数据，预训练数据那半句仍是【叙事】。</li>
+<li>补充（2026-10-10）：LLM 侧继续加固。MiMo-V2.6 把大量算力放在环境合成、评分器和防钻空子上（<a href="https://arxiv.org/abs/2610.11959">arXiv 2610.11959</a>）；Trace2Env 把历史轨迹重建成可交互环境（arXiv 2610.06100，作者自报 ALFWorld 85% 对 3%）。</li>
 <li>升级信号（生图）：出现"同架构、同算法、只换数据"的生图对照实验。</li>
 <li>推翻信号（生图）：开源技术报告显示，同等数据下架构改动带来的差距大于数据改动。</li>
 </ul>
-<h3>主线 5：少步生成——VAE/latent 改进和蒸馏会叠加使用；视频少步的研究主流是留在 DMD 上修，换路线目前只有 Kandinsky 一家　【推断】</h3>
+<h3>主线 5：少步生成——VAE/latent 改进和蒸馏会叠加使用；视频少步的研究主流仍留在 DMD 上修，换路线增至两家（Kandinsky π-Flow、NVIDIA PTD）　【推断】</h3>
 <ul>
 <li>修订（2026-10-09）：原标题说「轨迹蒸馏加对抗精修」是候选默认方案。现在 PDMD（<a href="https://arxiv.org/abs/2609.35768">arXiv 2609.35768</a>）、DMAD（<a href="https://arxiv.org/abs/2610.02188">arXiv 2610.02188</a>，Wan2.1-14B 四步 VBench 85.15）、DuoMatching（arXiv 2610.03543，两步 VBench 83.53）、Salt++（arXiv 2609.36995，自回归 DMD）四篇都留在 DMD 上修，所以把它下调成工业端的一种做法（FLUX 3、Kandinsky）。DuoMatching 和 Salt++ 的数字来自 AI热点追踪 的日报，原文未逐篇核对。</li>
 <li>补充（2026-10-09）：GRACE（arXiv 2610.10524）在冻结的 Wan2.1-14B 上换成生成感知的 latent，token 约少 8 倍，延迟快 11 到 15 倍，VBench 基本不变（作者自报）。改 latent 不用重训 DiT，又一例和蒸馏叠加使用。</li>
@@ -86,6 +94,8 @@ pre.mermaid{background:#fff;text-align:center} a{color:#0969da}
 <li>补充（2026-10-08）：BFL 的 FLUX 3 Action 技术报告也是分段蒸馏，先做 guidance distillation（快 1.8 到 2 倍），再从 4 步蒸到 1 步（再快 3 到 4 倍，成功率降 3.5 到 4.3 个百分点）；报告里没说有没有对抗精修。Draft 预览要能用同一个种子重新渲染成完整版，所以它更可能用保持轨迹的蒸馏（推断）。这只算部分满足下面的升级信号。</li>
 <li>补充（2026-10-08，PDMD）：字节/UCSD 的 PDMD（<a href="https://arxiv.org/abs/2609.35768">arXiv 2609.35768</a>，与此前社区拆解为同一篇，不是第二个独立来源）也报告 DMD 训练中样本会过饱和、出伪影。修法是把更新里平行于学生和 critic 终点残差的分量投影掉，不加网络、数据或额外前向。论文自己的对照是 Wan2.1 四步 VBench 83.73，只比同设置 DMD 高 1.03，不是微信解读里训练中途的约 63 对约 83。MiniMax-H3 四步视觉总分 83.17，比最强蒸馏基线高 0.41，六项音频最好。这是留在 DMD 上修的一路，和 Kandinsky 换 π-Flow 不是同一派（推断）。另外，Wan2.1 上四步 PDMD 的 VBench 83.73 高于 50 步老师的 83.06，但在 H3 上 50 步老师人评仍整体胜出。学生在自动指标上超过老师而人评不认，又多了一例（同 GFD-OPD）。</li>
 <li>补充（2026-10-09 傍晚）：BudgetPix（<a href="https://arxiv.org/abs/2610.12307">arXiv 2610.12307</a>）用 MeanFlow 骨干做像素空间自适应 token，属于骨干用法，<strong>不计入</strong>「无老师少步上线」推翻信号。AgentGarten（<a href="https://arxiv.org/abs/2610.12374">arXiv 2610.12374</a>）的 Adversarial Forcing 仍属 DMD/分布匹配族，<strong>不计入</strong>绕开信号。</li>
+<li>修订（2026-10-10）：绕开 DMD 的视频方法增至两家。NVIDIA/EPFL 的 PTD（<a href="https://arxiv.org/abs/2610.11498">arXiv 2610.11498</a>）只用轨迹监督，不加分布匹配损失。它在 33B MiniMax-H3 上做 LoRA 4 步蒸馏，对 DMD 学生 LightX2V Turbo：多样性 1.55→2.81，盲测人评 63.4%（n=82，p=0.010）；在 Wan2.1-14B 上对 PDD 人评 55.1%，不显著（p=0.36）【证实】。它的诊断是 DMD 求峰值，细节锐但多样性低。研究主流仍是修 DMD（另有数据空间迭代 arXiv 2610.12102 接在 DMD 上）。</li>
+<li>补充（2026-10-10）：Qwen-Image-2.1-Turbo 已开权重，同 7B 架构，8 步，CFG=1，研究许可（<a href="https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo">HF 模型卡</a>）。加速方法未公开，社区猜 DMD2 类【未证实】，不计入任何信号。</li>
 <li>真正可能取代蒸馏的是 MeanFlow、shortcut 这类不需要老师、训练目标本身支持少步的方法（社区讨论中已有 MeanFlow / iMF 一类少步目标）。</li>
 <li>升级信号（轨迹蒸馏加对抗精修成为默认）：Kling、Wan 下一代或其他大厂视频技术报告也采用这套组合。</li>
 <li>推翻信号：出现不靠老师、直接用 MeanFlow 这类少步目标从头训练就上线的前沿视频模型。</li>
@@ -94,6 +104,7 @@ pre.mermaid{background:#fff;text-align:center} a{color:#0969da}
 <ul>
 <li>证据：FLUX 3 Image 支持多轮编辑只改指定区域、JSON 边界框排版、最多 10 张参考图；Nano Banana 2.1 支持 mask 编辑、14 张参考图（<a href="https://deepmind.google/models/model-cards/nano-banana-2-1/">DeepMind 模型卡</a>）；Seedance 2.5 按时间轴写提示词、给参考图分槽位（<a href="https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5">Seed 博客</a>）。可灵 4.0 的"15 个参考位、10 个关键帧"<strong>产品还没上线，只是宣传口径</strong>。</li>
 <li>补充（2026-10-08）：Ideogram 4.5 把卖点放在多轮修图不越改越坏、只动指定区域，权重说以后开放。这是产品口径，没有技术报告，不算升级。</li>
+<li>补充（2026-10-10，升级信号部分满足）：Artificial Analysis 做了第三方 30 轮连续编辑测试。Ideogram 4.5 和 FLUX 3 小改动保留 ≥95% 画面，GPT Image 2.5 每轮近乎整图重绘，约 1/5 不变（AA 帖文口径，<a href="https://x.com/ArtificialAnlys/status/2108600224478572767">原帖</a>）。RISEBench++（arXiv 2610.12343）测推理式编辑，58 种方法最高 56.6%。这是「多轮漂移第三方评测」的第一例，还不算常规基准。</li>
 <li>推论：训练数据需要越来越多带框、时间轴、参考图对应关系的结构化条件。</li>
 <li>升级信号：技术报告公开结构化条件数据的构造方法；多轮编辑漂移的第三方评测成为常规基准。</li>
 <li>推翻信号：下一批旗舰发布重新以画质或分辨率为主要卖点。</li>
@@ -102,6 +113,7 @@ pre.mermaid{background:#fff;text-align:center} a{color:#0969da}
 <ul>
 <li>证据：Jev（TypeSafe，9-15）；Liquid d1-3B 和 d1-omni（<a href="https://www.liquid.ai/blog/d1-open">Liquid 博客</a>）；EmbeddingGemma 2 加 MediaPipe Decision Task；Cloudflare Clef 和 AWS Strands Decider 2B 都直接兼容 Jev 的 <code>/v1/systemone</code> 接口（厂商自报）。</li>
 <li>限定：Jev 相关讨论在 9 月中下旬出现脉冲，之后跟进变少。</li>
+<li>补充（2026-10-10）：跟进继续。Microsoft-Decision-1（基于 Qwen3.5-9B，厂商自报）；Cloudflare Clef-omni 开权重并加视频输入（<a href="https://blog.cloudflare.com/clef-faster-cheaper-multimodal/">Cloudflare 博客</a>）。推翻信号（无人跟进）更远，等级不变。</li>
 <li>升级信号：第三方在同一基准上横评 Jev、d1、Clef；主流推理框架原生支持这个接口。</li>
 <li>推翻信号：一两个月内没有新的模型或接口跟进，热度归零。</li>
 </ul>
@@ -117,6 +129,16 @@ pre.mermaid{background:#fff;text-align:center} a{color:#0969da}
 <li>主线 3、4 补证据：世界动作模型升温，但还没有用模拟器做 RL；LLM 侧的差距在环境，新增 Mellum2.1 和 MIMESIS。</li>
 <li>已宣布未交付新增 Step 5（10-15）。</li>
 <li>傍晚补丁：主线 3 写入 Rubric-CEPR（内部 Critic 自蒸馏 + VIEScore）；主线 5 注明 BudgetPix / AgentGarten 不计入推翻或绕开信号。顶部结论改为傍晚版。</li>
+</ul>
+<h2>2026-10-10 变更</h2>
+<ul>
+<li>主线 5 改标题：绕开 DMD 的视频方法增至两家（Kandinsky π-Flow、NVIDIA PTD）；PTD 在 MiniMax-H3 上多样性和自然度好于 DMD 学生，画质持平。</li>
+<li>主线 3 升级一档：Arena 偏好 + rubric 奖励的文生图 RL 给出相对纯偏好奖励的增益；不触发推翻信号。</li>
+<li>主线 2 改写：样本来源管组合执行，KL 方向管能否学到新事实（2610.09639）。</li>
+<li>主线 1 加固：SFT 热身 → OPD → RL（2609.31900）；OPD 也可放在 RL 后合并多老师（MiMo-V2.6）。</li>
+<li>主线 4：生图后训练侧出现首个只换数据对照（Arena 奖励数据量）。</li>
+<li>主线 6：第三方多轮编辑漂移测试出现（AA 30 轮）。主线 7：新增 Microsoft-Decision-1、Clef-omni。</li>
+<li>已宣布未交付：无变化。</li>
 </ul>
 <script type="module">
 import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
