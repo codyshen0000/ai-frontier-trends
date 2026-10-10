@@ -7,7 +7,8 @@
     "build": "node scripts/build.mjs",
     "build:public": "PUBLIC_DEPLOY=1 node scripts/build.mjs",
     "preview": "node scripts/preview.mjs",
-    "verify:flux3": "python3 scripts/verify_flux3_coverage.py"
+    "verify:flux3": "python3 scripts/verify_flux3_coverage.py",
+    "verify:ia": "node scripts/verify_ia.mjs"
   },
   "engines": {
     "node": ">=20"
