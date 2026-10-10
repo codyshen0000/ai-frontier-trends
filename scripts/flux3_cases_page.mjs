@@ -83,7 +83,8 @@ function findLocalImages(casesRoot, rec) {
 }
 
 function imgTag(rel, alt) {
-  return `<img src="./${escapeHtml(rel)}" alt="${escapeHtml(alt)}" loading="lazy" decoding="async">`;
+  const src = `./${escapeHtml(rel)}`;
+  return `<button type="button" class="zoom" data-full="${src}" aria-label="查看大图：${escapeHtml(alt)}"><img src="${src}" alt="${escapeHtml(alt)}" loading="lazy" decoding="async"></button>`;
 }
 
 function renderMedia(rec, byRole, listed) {
@@ -143,7 +144,7 @@ export function casesGalleryBody(root) {
         ? rec.source_page
         : "";
       const cat = rec.category;
-      return `<article class="case-card" data-cat="${escapeHtml(cat)}" id="${escapeHtml(rec.id)}">
+      return `<article class="ds-card case-card" data-cat="${escapeHtml(cat)}" id="${escapeHtml(rec.id)}">
   <p class="ex-meta"><span class="badge">${escapeHtml(CAT_LABEL[cat] || cat)}</span>${
     source ? ` · <a href="${escapeHtml(source)}">来源</a>` : ""
   }</p>
@@ -154,8 +155,8 @@ export function casesGalleryBody(root) {
     })
     .join("\n");
 
-  return `<article class="doc cases-doc">
-  <h1>FLUX 3 Image 官方案例</h1>
+  return `<article class="cases-doc">
+  <h1 class="ds-section-title">FLUX 3 Image 官方案例</h1>
   <p class="lede"><strong>一句话结论：官方文档共 ${total} 条 FLUX 3 Image 有图案例——文生图 ${counts.t2i}、编辑 ${counts.edit}、多参考 ${counts.multi_ref}、布局 ${counts.layout}——均为文档原图与英文 prompt，未改像素。</strong></p>
   <p class="sister-nav">相关页：<a href="../">FLUX 3 提示词速查表</a> · <a href="../examples/">官方示例库</a> · <a href="../camera-terms/">相机术语表</a> · <a href="../../">首页</a></p>
   <p class="ex-meta">抓取自 <a href="https://docs.bfl.ml/flux_3/flux3_image_overview">BFL FLUX 3 Image</a> 文档（2026-10-09）。图片按原文件提供，未重编码。</p>

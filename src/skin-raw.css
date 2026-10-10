@@ -1,0 +1,143 @@
+/* Skin for builder-injected htmlFile pages (live, timeline, future raw pages).
+   Harmonizes fonts / background / accent / radius / links with ds.css.
+   Does not restyle widget internals, SVG charts, or mermaid geometry.
+   Private selectors stay unprefixed only when targeting the raw page's own ids. */
+
+html {
+  background: var(--ds-bg);
+}
+
+body {
+  font-family: var(--ds-font-sans) !important;
+  background: var(--ds-bg) !important;
+  color: var(--ds-text) !important;
+}
+
+:root {
+  --fg: var(--ds-text);
+  --mut: var(--ds-text-secondary);
+  --bd: var(--ds-hairline);
+  --bg: var(--ds-bg);
+}
+
+body > a,
+main a,
+#back-home a,
+.meta a {
+  color: var(--ds-accent);
+}
+
+body > a:hover,
+main a:hover,
+#back-home a:hover,
+.meta a:hover {
+  color: var(--ds-accent-hover);
+}
+
+/* Script-owned back link stays in the DOM; the injected nav replaces it visually. */
+#back-home {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Full-bleed frosted bar when the raw page centers body as a column (timeline). */
+body > .ds-nav[data-ds-injected="nav"] {
+  width: 100vw;
+  max-width: none;
+  margin-left: calc(50% - 50vw);
+  box-sizing: border-box;
+}
+
+.panel,
+.card {
+  background: var(--ds-bg-elevated) !important;
+  border-color: var(--ds-hairline) !important;
+  border-radius: var(--ds-radius-md) !important;
+}
+
+header .concl {
+  background: var(--ds-text) !important;
+  color: var(--ds-bg) !important;
+  border-radius: var(--ds-radius-md) !important;
+}
+
+header .sub,
+.note,
+.secnote,
+.meta {
+  color: var(--ds-text-secondary);
+}
+
+h2 {
+  border-bottom-color: var(--ds-hairline) !important;
+}
+
+/* Timeline section headers only (direct children of body). */
+body > h3 {
+  background: var(--ds-surface-3) !important;
+  border-left-color: var(--ds-accent) !important;
+  color: var(--ds-text);
+  border-radius: 0 var(--ds-radius-sm) var(--ds-radius-sm) 0;
+}
+
+blockquote {
+  color: var(--ds-text-secondary) !important;
+  border-left-color: var(--ds-hairline-strong) !important;
+}
+
+pre.mermaid {
+  background: var(--ds-bg-elevated) !important;
+  border-radius: var(--ds-radius-md);
+}
+
+.filters {
+  top: var(--ds-nav-h) !important;
+  background: var(--ds-bg) !important;
+}
+
+.filters button,
+#ctl button {
+  font-family: var(--ds-font-sans);
+  background: var(--ds-bg-elevated);
+  color: var(--ds-text);
+  border: 1px solid var(--ds-hairline-strong);
+  border-radius: var(--ds-radius-pill);
+  cursor: pointer;
+}
+
+#ctl button {
+  padding: 6px 12px;
+}
+
+.filters button.on {
+  background: var(--ds-accent) !important;
+  color: var(--ds-accent-ink) !important;
+  border-color: var(--ds-accent) !important;
+}
+
+.topics span {
+  background: var(--ds-bg-elevated);
+  border-color: var(--ds-hairline-strong);
+}
+
+table {
+  border-color: var(--ds-hairline);
+}
+
+td,
+th {
+  border-bottom-color: var(--ds-hairline) !important;
+}
+
+@media (max-width: 734px) {
+  .ds-nav-tools {
+    margin-left: auto;
+  }
+}

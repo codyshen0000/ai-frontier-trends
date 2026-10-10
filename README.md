@@ -15,6 +15,8 @@ FLUX 3 四页：
 - 官方示例库：<https://codyshen0000.github.io/ai-frontier-trends/flux3/examples/>
 - 相机术语表：<https://codyshen0000.github.io/ai-frontier-trends/flux3/camera-terms/>
 
+视觉语言跟个人主页同一套 [共享设计系统](https://github.com/codyshen0000/codyshen0000.github.io/blob/main/DESIGN.md)（`ds.css`）。站点页用 `ds-page` / `ds-nav` / `ds-hero` / `ds-card` / `ds-prose` / `ds-footer`；浅色/深色由 `ds.css` 的 `data-theme` 与 `prefers-color-scheme` 处理。
+
 ## 本地
 
 ```bash
@@ -35,10 +37,19 @@ SITE_BASE=/ai-frontier-trends npm run preview
 
 推送到 `main` 后，GitHub Actions 会构建公开站点并发布到 GitHub Pages。
 
-## 刷新 /live/
+## 刷新 /live/ 与其它 htmlFile 页
 
-`/live/` 是自包含单页，构建器按 `site.config.json` 的 `htmlFile` **原样拷贝** `content/live.html`，不会套站点模板。
+`site.config.json` 里带 `htmlFile` 的页面（目前是 `content/live.html` → `/live/`、`content/timeline.html` → `/timeline/`）由另一台机器上的脚本每隔约 30 分钟整份覆盖，并通过 GitHub contents API 推送。这些文件是自包含单页，**不要改它们的内部 markup**，也不要把站点模板拆进去。
 
-每晚简报后刷新公开看板：用新的单文件 HTML **整份替换** `content/live.html`，保留页内 `← 返回首页` 链接（指向 `../`），然后推送到 `main`。不要拆成多文件，也不要改站点生成器。
+构建器仍然按 `htmlFile` **拷贝**源文件，然后**幂等地注入**一层站点皮肤（已注入则跳过，不会叠两份）：
+
+1. 在 `</head>` 前插入  
+   `<link rel="stylesheet" href="https://codyshen0000.github.io/assets/ds.css">`  
+   以及相对路径的 `assets/skin-raw.css`（只调和字体、背景、强调色、圆角、链接色；不改图表/控件几何）。
+2. 在 `<body>` 后插入一条 `ds-nav` 磨砂顶栏（含「个人主页」「看板 Studio」和本站各页），以及一小段主题/移动菜单脚本。
+
+因此未来只要在 `site.config.json` 增加新的 `htmlFile` 页，就会自动带上同一套导航和皮肤，无需改源 HTML。
+
+脚本插入的 `← 返回首页` 必须保留在固定锚点 `#back-home`（指向 `../`）。注入的导航在视觉上取代它；`#back-home` 仍留在 DOM 里，链接继续可用。
 
 发布前检查：不要包含本机路径（`/workspace`、`/cursor/`、`/home/box`）、百度链接、token，或私有「收藏」内容。
