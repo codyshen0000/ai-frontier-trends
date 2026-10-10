@@ -86,7 +86,7 @@ pre.mermaid{background:#fff;text-align:center} a{color:#0969da}
 <li>补充（2026-10-08）：BFL 的 FLUX 3 Action 技术报告也是分段蒸馏，先做 guidance distillation（快 1.8 到 2 倍），再从 4 步蒸到 1 步（再快 3 到 4 倍，成功率降 3.5 到 4.3 个百分点）；报告里没说有没有对抗精修。Draft 预览要能用同一个种子重新渲染成完整版，所以它更可能用保持轨迹的蒸馏（推断）。这只算部分满足下面的升级信号。</li>
 <li>补充（2026-10-08，PDMD）：字节/UCSD 的 PDMD（<a href="https://arxiv.org/abs/2609.35768">arXiv 2609.35768</a>，与此前社区拆解为同一篇，不是第二个独立来源）也报告 DMD 训练中样本会过饱和、出伪影。修法是把更新里平行于学生和 critic 终点残差的分量投影掉，不加网络、数据或额外前向。论文自己的对照是 Wan2.1 四步 VBench 83.73，只比同设置 DMD 高 1.03，不是微信解读里训练中途的约 63 对约 83。MiniMax-H3 四步视觉总分 83.17，比最强蒸馏基线高 0.41，六项音频最好。这是留在 DMD 上修的一路，和 Kandinsky 换 π-Flow 不是同一派（推断）。另外，Wan2.1 上四步 PDMD 的 VBench 83.73 高于 50 步老师的 83.06，但在 H3 上 50 步老师人评仍整体胜出。学生在自动指标上超过老师而人评不认，又多了一例（同 GFD-OPD）。</li>
 <li>补充（2026-10-09 傍晚）：BudgetPix（<a href="https://arxiv.org/abs/2610.12307">arXiv 2610.12307</a>）用 MeanFlow 骨干做像素空间自适应 token，属于骨干用法，<strong>不计入</strong>「无老师少步上线」推翻信号。AgentGarten（<a href="https://arxiv.org/abs/2610.12374">arXiv 2610.12374</a>）的 Adversarial Forcing 仍属 DMD/分布匹配族，<strong>不计入</strong>绕开信号。</li>
-<li>真正可能取代蒸馏的是 MeanFlow、shortcut 这类不需要老师、训练目标本身支持少步的方法（社区收藏中有 MeanFlow / iMF 一类少步目标笔记。</li>
+<li>真正可能取代蒸馏的是 MeanFlow、shortcut 这类不需要老师、训练目标本身支持少步的方法（社区讨论中已有 MeanFlow / iMF 一类少步目标）。</li>
 <li>升级信号（轨迹蒸馏加对抗精修成为默认）：Kling、Wan 下一代或其他大厂视频技术报告也采用这套组合。</li>
 <li>推翻信号：出现不靠老师、直接用 MeanFlow 这类少步目标从头训练就上线的前沿视频模型。</li>
 </ul>
