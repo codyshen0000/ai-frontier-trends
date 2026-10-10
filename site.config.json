@@ -1,78 +1,158 @@
 {
   "title": "AI前沿趋势",
-  "description": "公开的 AI 前沿趋势时间线、升级/推翻信号与待交付权重追踪。",
+  "description": "每天追踪 AI 生成、蒸馏与后训练的前沿变化，先给结论。",
+  "heroLine": "每天追踪 AI 生成、蒸馏与后训练的前沿变化，先给结论",
   "basePath": "/ai-frontier-trends",
+  "nav": {
+    "primary": [
+      { "id": "live", "label": "今日", "path": "/live/" },
+      {
+        "id": "timeline",
+        "label": "趋势",
+        "path": "/timeline/",
+        "children": [
+          { "id": "signals", "label": "信号表", "path": "/signals/" },
+          { "id": "weights", "label": "权重追踪", "path": "/weights/" }
+        ]
+      },
+      {
+        "id": "flux3",
+        "label": "专题",
+        "path": "/flux3/",
+        "match": ["flux3", "flux3-cases", "flux3-examples", "flux3-camera"]
+      },
+      { "id": "about", "label": "关于", "path": "/about/" }
+    ],
+    "external": [
+      { "label": "个人主页", "href": "https://codyshen0000.github.io/" },
+      { "label": "看板 Studio", "href": "https://codyshen0000.github.io/studio/" }
+    ]
+  },
+  "threadsFallback": [
+    {
+      "sentence": "大语言模型后训练配方收敛到\"先 OPD 或 SFT，再 RL\"",
+      "status": "加强",
+      "anchor": "thread-1"
+    },
+    {
+      "sentence": "两个领域共同的设计原则是\"用模式寻找型目标时，在学生自己的样本上学\"",
+      "status": "持平",
+      "anchor": "thread-2"
+    },
+    {
+      "sentence": "视觉的可验证\"环境\"会先出现在生成链路的两端，不会出现在纯文生图里",
+      "status": "加强",
+      "anchor": "thread-3"
+    },
+    {
+      "sentence": "\"差距在数据\"：大语言模型后训练；生图",
+      "status": "加强",
+      "anchor": "thread-4"
+    },
+    {
+      "sentence": "少步生成——VAE/latent 改进和蒸馏会叠加使用；视频少步的研究主流是留在 DMD 上修，换路线目前只有 Kandinsky 一家",
+      "status": "持平",
+      "anchor": "thread-5"
+    }
+  ],
   "pages": [
     {
       "id": "home",
       "title": "首页",
-      "nav": "首页",
       "path": "/",
       "home": true
     },
     {
       "id": "live",
       "htmlFile": "live.html",
-      "title": "实时热点看板",
-      "nav": "实时热点看板",
+      "title": "今日热点",
       "path": "/live/",
-      "summary": "每晚简报后刷新的公开热点看板：重点方向、谱系与当日条目。"
+      "section": "今日",
+      "crumb": "今日",
+      "summary": "今天公开讨论里最值得看的变化，结论放在最前面。"
     },
     {
       "id": "timeline",
       "htmlFile": "timeline.html",
       "title": "趋势时间线",
-      "nav": "时间线",
       "path": "/timeline/",
-      "summary": "结论置顶、谱系图与可折叠主线：先模仿再强化，少步蒸馏未定型。"
+      "section": "趋势",
+      "crumb": "时间线",
+      "group": "trends",
+      "summary": "几条还站得住的判断，以及后来补上的证据。"
     },
     {
       "id": "signals",
       "file": "signals-tracker.md",
       "title": "信号表",
-      "nav": "信号表",
       "path": "/signals/",
-      "summary": "日报顺带检查的升级信号与推翻信号。"
+      "section": "趋势",
+      "crumb": "信号表",
+      "group": "trends",
+      "summary": "哪些新证据让判断更站得住，或把它推翻。"
     },
     {
       "id": "weights",
       "file": "weights-tracker.md",
-      "title": "开源权重追踪",
-      "nav": "权重追踪",
+      "title": "权重追踪",
       "path": "/weights/",
-      "summary": "已宣布、待交付的开源权重与产品上线跟踪。"
+      "section": "趋势",
+      "crumb": "权重追踪",
+      "group": "trends",
+      "summary": "已宣布、但还没放出权重或还没上线的模型。"
     },
     {
       "id": "flux3",
       "file": "flux3-prompt-cheatsheet.md",
       "title": "FLUX 3 提示词速查表",
-      "nav": "FLUX 3",
       "path": "/flux3/",
-      "summary": "官方 FLUX 3 Image / Video 规则、参数、上限、字段、错误码、状态与定价。"
+      "section": "专题",
+      "crumb": "FLUX 3",
+      "topic": "flux3",
+      "tab": "cheatsheet",
+      "summary": "官方提示词规则、参数、上限和常见错误。"
     },
     {
       "id": "flux3-cases",
       "gallery": "flux3-cases",
       "title": "FLUX 3 官方案例",
-      "nav": "案例",
       "path": "/flux3/cases/",
-      "summary": "官方文档 80 条 FLUX 3 Image 案例：文生图、编辑、多参考与布局原图。"
+      "section": "专题",
+      "crumb": "官方案例",
+      "topic": "flux3",
+      "tab": "cases",
+      "summary": "官方文档里的文生图、编辑、多参考和布局原图。"
     },
     {
       "id": "flux3-examples",
       "file": "flux3-examples.md",
       "title": "FLUX 3 官方示例库",
-      "nav": "示例库",
       "path": "/flux3/examples/",
+      "section": "专题",
+      "crumb": "示例库",
+      "topic": "flux3",
+      "tab": "examples",
       "summary": "官方文档中的全部示例 prompt，英文原文按工作流分组。"
     },
     {
       "id": "flux3-camera",
       "file": "flux3-camera-terms.md",
       "title": "FLUX 3 相机术语表",
-      "nav": "相机术语",
       "path": "/flux3/camera-terms/",
-      "summary": "官方 CAMERA_TERMS：119 个术语、14 组、说明与示例 prompt。"
+      "section": "专题",
+      "crumb": "相机术语",
+      "topic": "flux3",
+      "tab": "camera",
+      "summary": "官方相机术语：119 个词、14 组，带说明和示例。"
+    },
+    {
+      "id": "about",
+      "file": "about.md",
+      "title": "关于",
+      "path": "/about/",
+      "section": "关于",
+      "crumb": "关于",
+      "summary": "这个站是什么、材料从哪来、标签是什么意思。"
     }
   ],
   "privatePages": []

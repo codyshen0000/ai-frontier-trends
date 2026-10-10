@@ -23,3 +23,6 @@ jobs:
 
       - name: Build public site
         run: npm run build:public
+
+      - name: Verify information architecture
+        run: npm run verify:ia
