@@ -143,6 +143,7 @@ for (const path of paths) {
 }
 
 const home = readFileSync(join(distDir, "index.html"), "utf8");
+assert(home.includes('class="ds-wrap trend-home"') || home.includes('class="ds-wrap'), "home uses the centered ds-wrap shell");
 assert(home.includes(config.heroLine), "home hero uses site one-liner");
 assert(home.includes(live.conclusion), "home shows today's conclusion");
 assert(home.includes("看今天的热点"), "home CTA to /live/");
@@ -156,6 +157,7 @@ assert(!home.includes("谱系"), "home avoids 谱系 jargon");
 assert(!home.includes("待交付权重"), "home avoids 待交付 jargon");
 
 const about = readFileSync(join(distDir, "about", "index.html"), "utf8");
+assert(about.includes('class="ds-wrap'), "about uses the centered ds-wrap shell");
 assert(about.includes("公开论文"), "about lists sources");
 assert(about.includes("少步蒸馏"), "about explains 少步蒸馏");
 assert(about.includes("当前位置") && about.includes("关于"), "about has section label");
@@ -181,8 +183,12 @@ for (const needle of ["/workspace", "/home/box", "/cursor/stores"]) {
   assert(!livePage.includes(needle), `live has no ${needle}`);
 }
 
+assert(/body\{[^}]*max-width:\s*\d+px;[^}]*margin:[^;]*auto/.test(timelineRaw), "timeline source keeps a centered reading column");
+assert(/main\{[^}]*max-width:\s*\d+px;[^}]*margin:[^;]*auto/.test(liveRaw), "live source keeps a centered main column");
+
 const timelinePage = readFileSync(join(distDir, "timeline", "index.html"), "utf8");
 assert(timelinePage.includes('id="thread-1"'), "timeline output has thread anchors");
+assert(timelinePage.includes("skin-raw.css"), "timeline loads skin-raw.css");
 for (const needle of ["/workspace", "/home/box", "/cursor/stores"]) {
   assert(!timelinePage.includes(needle), `timeline has no ${needle}`);
 }
@@ -193,6 +199,21 @@ assert(weeklyIndex.includes("2026-10-12"), "weekly index lists 2026-10-12");
 assert(weeklyIndex.includes("weekly/2026-10-12/") || weeklyIndex.includes("./2026-10-12/"), "weekly index links to the issue");
 assert(weeklyIndex.includes(">周报<"), "weekly tab is in trend sub-nav");
 
+const skinRaw = readFileSync(join(root, "src", "skin-raw.css"), "utf8");
+assert(
+  /html\.ds-page\s+body\s*\{[^}]*margin-inline:\s*auto/.test(skinRaw),
+  "skin-raw restores body centering after ds.css margin reset",
+);
+assert(
+  /html\.ds-page\s+main\s*\{[^}]*margin-inline:\s*auto/.test(skinRaw),
+  "skin-raw keeps live's main{margin:auto} column after inject",
+);
+assert(
+  !/html\.ds-page\s+body\s*\{[^}]*max-width/.test(skinRaw),
+  "skin-raw does not force a body max-width onto live",
+);
+assert(weeklyIndex.includes('class="ds-wrap'), "weekly index uses the centered ds-wrap shell");
+
 const weeklyIssue = readFileSync(join(distDir, "weekly", "2026-10-12", "index.html"), "utf8");
 const weeklyNav = weeklyIssue.match(/data-ds-injected="nav"[\s\S]*?<\/header>/)?.[0] || "";
 assert(weeklyNav.includes(">今日<") && weeklyNav.includes(">趋势<") && weeklyNav.includes(">专题<") && weeklyNav.includes(">关于<"), "weekly injected nav is the 4-item IA");
@@ -201,6 +222,8 @@ assert(weeklyIssue.includes("一句话结论"), "weekly issue keeps the report l
 assert(weeklyIssue.includes("data-ds-injected=\"weekly\""), "weekly issue has download chrome");
 assert(weeklyIssue.includes("./report.md") && weeklyIssue.includes("./timeline.md"), "weekly issue links markdown downloads");
 assert(weeklyIssue.includes("https://codyshen0000.github.io/assets/ds.css"), "weekly issue uses shared ds.css");
+assert(weeklyIssue.includes("skin-raw.css"), "weekly issue loads skin-raw.css");
+assert(/body\{[^}]*max-width:\s*\d+px;[^}]*margin:[^;]*auto/.test(weeklyIssue), "weekly issue source keeps a reading-column max-width");
 for (const needle of ["/workspace", "/home/box", "/cursor/stores", "收藏"]) {
   assert(!weeklyIssue.includes(needle), `weekly issue has no ${needle}`);
   assert(!weeklyIndex.includes(needle), `weekly index has no ${needle}`);

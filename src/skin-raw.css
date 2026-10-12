@@ -1,4 +1,4 @@
-/* Skin for builder-injected htmlFile pages (live, timeline, future raw pages).
+/* Skin for builder-injected htmlFile pages (live, timeline, weekly, future raw pages).
    Harmonizes fonts / background / accent / radius / links with ds.css.
    Does not restyle widget internals, SVG charts, or mermaid geometry.
    Private selectors stay unprefixed only when targeting the raw page's own ids. */
@@ -11,6 +11,22 @@ body {
   font-family: var(--ds-font-sans) !important;
   background: var(--ds-bg) !important;
   color: var(--ds-text) !important;
+}
+
+/* Two reading-column contracts, both restored here so inject CSS
+   cannot left-hug the page. Do not rewrite htmlFile source markup.
+   - weekly / timeline: source centers `body{max-width:…;margin:auto}`.
+     ds.css `html.ds-page body { margin: 0 }` is more specific and
+     wipes that; restore horizontal auto only.
+   - /live/: source centers `main{max-width:1000px;margin:0 auto}`
+     (body stays full-bleed). Keep that main column centered after
+     inject; do not move live centering onto body. */
+html.ds-page body {
+  margin-inline: auto;
+}
+
+html.ds-page main {
+  margin-inline: auto;
 }
 
 :root {
