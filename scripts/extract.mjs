@@ -48,15 +48,33 @@ function statusFromHeading(raw) {
 function statusFromChangeLine(text) {
   if (/待观察|待验证/.test(text)) return "待验证";
   if (/等级不变/.test(text)) return "持平";
-  if (/加固|补证据/.test(text)) return "加强";
+  if (/加固|补证据|升级|上调|加强/.test(text)) return "加强";
   if (/下调|加限定|注明/.test(text)) return "持平";
   return "";
 }
 
-function latestChangeBlock(html) {
-  const blocks = [...String(html).matchAll(/<h2\b[^>]*>[\s\S]*?变更[\s\S]*?<\/h2>\s*<ul>([\s\S]*?)<\/ul>/gi)];
-  if (!blocks.length) return "";
-  return blocks[blocks.length - 1][1];
+function changeLists(html) {
+  return [...String(html).matchAll(/<h2\b[^>]*>\s*\d{4}-\d{2}-\d{2}[^<]*变更[^<]*<\/h2>\s*<ul>([\s\S]*?)<\/ul>/gi)].map(
+    (match) => match[1],
+  );
+}
+
+function applyChangeList(changeHtml, statusByN) {
+  for (const li of String(changeHtml).matchAll(/<li\b[^>]*>([\s\S]*?)<\/li>/gi)) {
+    let lastNums = [];
+    for (const text of stripTags(li[1]).split(/[；。]/)) {
+      if (!text.trim()) continue;
+      const mentioned = numsFromChangeLine(text);
+      if (mentioned.length) lastNums = mentioned;
+      const nums = mentioned.length ? mentioned : lastNums;
+      const status = statusFromChangeLine(text);
+      if (!status || !nums.length) continue;
+      for (const n of nums) {
+        if (statusByN[n] === "待验证") continue;
+        statusByN[n] = status;
+      }
+    }
+  }
 }
 
 function numsFromChangeLine(text) {
@@ -99,20 +117,8 @@ export function extractThreads(html, fallback = [], limit = 5) {
     statusByN[thread.n] = fromHeading || "持平";
   }
 
-  const changeHtml = latestChangeBlock(html);
-  if (changeHtml) {
-    for (const li of changeHtml.matchAll(/<li\b[^>]*>([\s\S]*?)<\/li>/gi)) {
-      const clauses = stripTags(li[1]).split(/[；。]/);
-      for (const text of clauses) {
-        const nums = numsFromChangeLine(text);
-        const status = statusFromChangeLine(text);
-        if (!status || !nums.length) continue;
-        for (const n of nums) {
-          if (statusByN[n] === "待验证") continue;
-          statusByN[n] = status;
-        }
-      }
-    }
+  for (const changeHtml of changeLists(html)) {
+    applyChangeList(changeHtml, statusByN);
   }
 
   const parsed = threads.slice(0, limit).map((thread) => ({

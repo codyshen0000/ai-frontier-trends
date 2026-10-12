@@ -36,13 +36,60 @@ assert(
   "thread sentences reuse heading text",
 );
 assert(extracted.lede.includes("主线无推翻") || extracted.lede.length > 8, "timeline lede from 一句话结论");
-assert(extracted.threads[0]?.status === "加强", "主线 1 加固 → 加强");
-assert(extracted.threads[3]?.status === "加强", "主线 4 补证据 → 加强");
 
-const pairSample = `<h3>主线 1：先 OPD　【证实】</h3><h3>主线 2：学生样本　【推断】</h3><h3>主线 3：视觉环境　【推断】</h3><h3>主线 4：差距在数据　【叙事】</h3><h2>2026-10-09 变更</h2><ul><li>主线 3、4 补证据：世界动作模型升温。</li><li>傍晚补丁：主线 3 写入 Rubric-CEPR；主线 5 注明 BudgetPix。</li></ul>`;
+function threadSample(lists) {
+  const heads = [1, 2, 3, 4, 5]
+    .map((n) => `<h3>主线 ${n}：标题${n}　【推断】</h3>`)
+    .join("");
+  return (
+    heads +
+    lists
+      .map(([date, items]) => `<h2>${date} 变更</h2><ul>${items}</ul>`)
+      .join("")
+  );
+}
+
+const harden = extractThreads(threadSample([["2026-10-09", "<li>主线 1 加固：OPD 能锐化分布。</li>"]]), [], 5);
+assert(harden.threads.find((t) => t.anchor === "thread-1")?.status === "加强", "主线 1 加固 → 加强");
+
+const evidence = extractThreads(threadSample([["2026-10-09", "<li>主线 4 补证据：世界动作模型升温。</li>"]]), [], 5);
+assert(evidence.threads.find((t) => t.anchor === "thread-4")?.status === "加强", "主线 4 补证据 → 加强");
+
+const pairSample = threadSample([
+  [
+    "2026-10-09",
+    "<li>主线 3、4 补证据：世界动作模型升温。</li><li>傍晚补丁：主线 3 写入 Rubric-CEPR；主线 5 注明 BudgetPix。</li>",
+  ],
+]);
 const pair = extractThreads(pairSample, [], 5);
 assert(pair.threads.find((t) => t.anchor === "thread-4")?.status === "加强", "主线 3、4 补证据 applies to both numbers");
 assert(pair.threads.find((t) => t.anchor === "thread-3")?.status === "加强", "evening 写入 clause does not downgrade 主线 3");
+
+const hold = extractThreads(
+  threadSample([
+    [
+      "2026-10-11",
+      "<li>主线 1 补充：ReSPO 修复用 rollout 时 clip 的不对称；等级不变。</li><li>主线 4 补充：STS、ETM 数据引擎；等级不变。</li>",
+    ],
+  ]),
+  [],
+  5,
+);
+assert(hold.threads.find((t) => t.anchor === "thread-1")?.status === "持平", "主线 1 补充…等级不变 → 持平");
+assert(hold.threads.find((t) => t.anchor === "thread-4")?.status === "持平", "主线 4 补充…等级不变 → 持平");
+
+const bump = extractThreads(threadSample([["2026-10-10", "<li>主线 3 升级一档：Arena 奖励增益。</li>"]]), [], 5);
+assert(bump.threads.find((t) => t.anchor === "thread-3")?.status === "加强", "主线 3 升级一档 → 加强");
+
+const inherit = extractThreads(
+  threadSample([
+    ["2026-10-09", "<li>主线 4 补证据：世界动作模型升温。</li>"],
+    ["2026-10-10", "<li>主线 4：生图后训练侧出现首个只换数据对照。</li>"],
+  ]),
+  [],
+  5,
+);
+assert(inherit.threads.find((t) => t.anchor === "thread-4")?.status === "加强", "主线 4： with no verb keeps 补证据");
 
 const broken = extractThreads("<html><body><p>no threads</p></body></html>", config.threadsFallback, 5);
 assert(broken.source === "fallback", "fallback when parsing fails");
