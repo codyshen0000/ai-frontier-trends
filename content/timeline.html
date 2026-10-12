@@ -14,22 +14,22 @@ pre.mermaid{background:#fff;text-align:center} a{color:#0969da}
 <p id="back-home"><a href="../">← 返回首页</a></p>
 <div id="ctl"><button onclick="t(false)">全部展开</button><button onclick="t(true)">全部折叠</button></div>
 <h1>AI 前沿趋势时间线（前沿趋势分析维护）</h1>
-<p><strong>一句话结论（2026-10-12 周报版）：对比 10-08 首版，评审进 RL 升一档并扩到视频；视频少步降一档，主流仍修 DMD；OPD 从默认配方变成要看师生重叠率的工具。</strong></p>
+<p><strong>一句话结论（2026-10-12 晚）：主线无升级。OPD 诊断扩到交互状态接地与 critique 条件打分；视频 flow RL 出稳定性补丁（留观察）；信号表仍无翻转。</strong></p>
 <pre class="mermaid">graph LR
-  A["LLM 后训练【证实】<br/>SFT 热身 → OPD → RL<br/>OPD 也可在 RL 后合并多老师<br/>OPD 有适用条件 · batch RL 修稳定性"] --> B["在学生样本上学【推断】<br/>样本来源管组合 · KL 方向管新知识<br/>样本不能离老师太远（重叠率门控）"]
+  A["LLM 后训练【证实】<br/>SFT 热身 → OPD → RL<br/>OPD 有适用条件 · 状态接地 · critique 找错"] --> B["在学生样本上学【推断】<br/>样本来源 · KL 方向 · 重叠率门控<br/>老师上下文要干净"]
   B --> C["扩散侧<br/>GFD-OPD · MILD · Omni-Diffusion-Distill"]
-  D["少步生成【推断，本周下调】"] --> E["工业端分段蒸馏<br/>CFG 蒸馏 → 轨迹蒸馏 → 对抗精修<br/>FLUX 3 · Kandinsky 6.0"]
-  D --> F["留在 DMD 上修（研究主流）<br/>PDMD · DMAD · RMD<br/>MBDMD：DMD ≡ Drifting"]
-  D --> P["绕开 DMD（两家）<br/>Kandinsky π-Flow · NVIDIA PTD"]
+  D["少步生成【推断，本周下调】"] --> E["工业端分段蒸馏<br/>FLUX 3 · Kandinsky 6.0"]
+  D --> F["留在 DMD 上修（研究主流）<br/>PDMD · DMAD · RMD · MBDMD"]
+  D --> P["绕开 DMD（两家）<br/>π-Flow · PTD"]
   B --> P
-  D -. 推翻信号 .-> G["无老师少步目标<br/>MeanFlow · shortcut"]
-  V["观察：VAE 与因果生成<br/>CRP/Optica 无双向老师 · 仍 50 步"] -. 可当因果老师 .-> D
-  H["单一偏好奖励被钻空子<br/>自动指标饱和"] --> I["评审进入 RL 闭环【推断，本周升级】<br/>图：偏好 + rubric<br/>视频：WorldAlign 4D 奖励"]
-  I --> W["世界模型三形态<br/>代码 · 像素 · 潜空间<br/>仍无人在其中用 RL 训策略"]
-  J["数据差距<br/>LLM【证实】· 生图后训练【证实，单篇】<br/>生图预训练【叙事】"] --> A
+  D -. 推翻信号 .-> G["无老师少步<br/>MeanFlow · shortcut"]
+  V["观察：VAE 与因果<br/>CRP/Optica · 仍 50 步"] -. 可当因果老师 .-> D
+  H["单一偏好奖励被钻空子"] --> I["评审进入 RL 闭环【推断】<br/>图：偏好+rubric · 视频：WorldAlign<br/>观察：DiffusionART / GraftOOD"]
+  I --> W["世界模型三形态<br/>代码 · 像素 · 潜空间<br/>RSI/DreamTrue 观察 · 信号4仍空"]
+  J["数据差距<br/>LLM【证实】· 生图后训练【证实】· 预训练【叙事】"] --> A
   J --> I
-  K["竞争转向可控【推断】"] --> L["多轮编辑漂移评测<br/>AA 30 轮 · VINCIE-NExT"]
-  M["决策模型成品类【推断】<br/>Jev · Clef-omni · MS-Decision-1"]
+  K["竞争转向可控【推断】"] --> L["多轮编辑 · VINCIE-NExT"]
+  M["决策模型成品类【推断】"]
 </pre>
 <blockquote>
 <p>标注规则：<strong>【证实】</strong>有对照实验或官方一手数据；<strong>【推断】</strong>我们的归纳，有间接证据；<strong>【叙事】</strong>常见说法，缺少能区分的证据。
@@ -54,6 +54,7 @@ pre.mermaid{background:#fff;text-align:center} a{color:#0969da}
 <li>补充（2026-10-11）：大 batch 和 rollout 复用的稳定性成为独立问题。ReSPO（<a href="https://arxiv.org/abs/2609.35433">arXiv 2609.35433</a>）发现，复用 rollout 时 clip 压掉概率变低的正样本、放过概率变高的负样本，改用两支平滑核替代 clip。N=32 时训练分比最强 clip 基线高 7.9 和 8.4 分，留出基准只高 0.8 到 3.2 分，只有 N=32 跑了 3 个 seed【证实，单篇】。它和 MiMo-V2.6 换优化器同属「省采样后保稳定」【推断】。主线 1 的顺序判断不受影响。</li>
 <li>补充（2026-10-12，周报）：OPD 进入「诊断期」，四篇同向。NVIDIA 的 Semi-OPD（<a href="https://arxiv.org/abs/2610.11291">arXiv 2610.11291</a>）只用初始学生采一次 rollout，离线算老师监督。17 对师生（1.5B–235B）里 14 对胜过标准 OPD，最高 +13.6%，训练快 11.4 倍。增益和初始师生 top-64 重叠率负相关（r=−0.73）；重叠率 89.3% 的一对两者持平【证实，单篇；图 1b 为 3 seed】。Vanishing Signals（<a href="https://arxiv.org/abs/2610.11247">arXiv 2610.11247</a>）：大老师 OPD 200 步 loss 只降 25.1%，自 RL 老师降 96.2%【证实】。DIAL-OPD（<a href="https://arxiv.org/abs/2610.11659">arXiv 2610.11659</a>）只留 40% token，均值高 5.25 个百分点【证实】。Cross-Tokenizer OPD（<a href="https://arxiv.org/abs/2610.08448">arXiv 2610.08448</a>）：给错配位置补监督反而掉点【证实】。合起来看，OPD 是有适用条件的工具，条件是师生分布要对得上【推断】。「SFT 热身 → OPD → RL」的顺序判断不变。</li>
 <li>冲突（2026-10-12，待复现）：Semi-OPD 发现，先在老师 rollout 上 SFT 再蒸馏，不如直接 Semi-OPD。Salesforce 稿（2609.31900）则说短 SFT 热身让 OPD 更好。两者设置不同：Semi-OPD 的学生已做过指令微调，起点更高【推断】。暂不改顺序。</li>
+<li>补充（2026-10-12 晚，等级不变）：State-OPD（<a href="https://arxiv.org/abs/2610.13238">arXiv 2610.13238</a>，阿里+清华等）把交互状态定义为「任务+已执行动作+观测」，老师不看学生先验推理。Qwen3-4B 宏平均成功率 26.07%→31.74%；ALFWorld Seen 43.39% 超过 Qwen3-32B 老师 38.39%【证实】。Critique-OPD（<a href="https://arxiv.org/abs/2610.13744">arXiv 2610.13744</a>）证明参考条件下的 KL / token log-ratio 在金标错跨上既不定位也不纠错；改 critique 条件后定位/纠错显著（K&amp;K +0.75/−0.62，DeepMath L5-7 +0.99/−0.90）【证实】。二者加固「OPD 有适用条件」，不升档。</li>
 <li>升级信号：Beam 或 Mistral Large 4 放权重时公开的后训练配方也是"OPD 或 SFT 冷启动，然后 RL"；多 seed 复现。</li>
 <li>推翻信号：出现大规模对照，同步融合（joint）稳定优于先后串行；或者 OPD 预热的增益在多 seed 下消失。</li>
 </ul>
@@ -68,6 +69,7 @@ pre.mermaid{background:#fff;text-align:center} a{color:#0969da}
 <li>扩散侧旁证（2026-10-10）：PTD（<a href="https://arxiv.org/abs/2610.11498">arXiv 2610.11498</a>）用回归型轨迹目标，但在学生自己预测的路径上查询老师；消融显示这比让老师逐段积分更保细节。也就是说，在学生样本上学，对非模式寻找目标也有用【推断】。</li>
 <li>扩散侧旁证（2026-10-11）：Omni-Diffusion-Distill（<a href="https://arxiv.org/abs/2610.10990">arXiv 2610.10990</a>）蒸馏离散扩散统一模型。先回放老师轨迹，再在学生自己的 rollout 上纠偏；文生图 128→8 步，GenEval 0.828。它把丢细节归因于 CFG 让熵塌缩，用「熵匹配引导」来修【证实，单篇】。它蒸馏的是离散 token 的 dLLM，只在 Lumina-DiMOO 上验证，和 PTD、DMD 的连续扩散不在同一比较轴，只能当机制类比【推断】。它不是视频，不计入主线 5 的绕开 DMD 信号。</li>
 <li>细化（2026-10-12，周报）：样本来源要分三档：老师 rollout、初始学生 rollout、当前学生 rollout。Semi-OPD（<a href="https://arxiv.org/abs/2610.11291">arXiv 2610.11291</a>）的对照里，初始学生 rollout 胜过老师 rollout；师生重叠率低时，也胜过当前学生 rollout（标准 OPD）【证实，单篇】。作者的解释：样本既要在学生分布内，也要在老师分布内。OPD 的 rollout 越训越长，后段离老师分布越远【证实】。所以本主线细化为：在学生样本上学，但样本不能离老师太远【推断】。扩散侧要问同一个问题：学生 rollout 离老师多远时还该 on-policy【推断】。</li>
+<li>补充（2026-10-12 晚，等级不变）：State-OPD 说明 agent 场景里「老师上下文被学生推理污染」是另一类分布不对齐；Critique-OPD 说明特权打分本身不做搜索。扩散侧仍要问：学生 rollout 离老师多远、打分前要不要先找错【推断】。</li>
 <li>升级信号：有人在扩散 OPD 上做 Purdue 式的归因审计，并发现同样的"增益来自压低学生自身错误模式"。</li>
 <li>推翻信号：扩散侧的对照实验显示，前向和反向目标对样本来源同样不敏感。</li>
 </ul>
@@ -83,6 +85,7 @@ pre.mermaid{background:#fff;text-align:center} a{color:#0969da}
 <li>世界模型补充信号（2026-10-11 定义，对应 AI热点追踪 信号表 4）：有人把代码世界当 RL 环境来更新权重 → 本主线再升一档；像素世界不靠学出来的评审就能稳定判定任务完成 → 改写「环境只在两端」的说法。</li>
 <li>补充（2026-10-12，视频版，等级不变）：WorldAlign（<a href="https://arxiv.org/abs/2610.12382">arXiv 2610.12382</a>，港科大（广州）+ 快手可灵）把「评审进 RL」搬到图生视频。静态区域用几何基础模型做掩码重投影奖励，另加相机运动奖励，防模型靠「不动」骗分。动态主体由 VLM 按样本专属 checklist 打分。训练用 Flow-GRPO 在线更新，不用人类偏好标注。在 Wan2.1 和 Wan2.2 上同时改善静态和动态一致性（摘要口径）；Wan2.1-I2V-14B 的 checklist 通过率 0.760→0.856，人评胜率 76.0%（作者自报，引 AI热点追踪 日报）。它没有和纯偏好奖励对照，所以不再升档。几何奖励来自学出来的几何模型，任务也不是纯文生图，不触发推翻信号。</li>
 <li>补充（2026-10-12，信号 4 不翻转）：DreamTrue（<a href="https://arxiv.org/abs/2610.12468">arXiv 2610.12468</a>，中科院自动化所 + 高德）用 4.49 万条人标缺陷视频训 Qwen3.5-9B 奖励模型，再用 DiffusionNFT 对机器人世界模型本身做 RL。反事实动作下，交互缺陷 48.12%→6.25%，物体缺陷 31.88%→3.12%（160 个条件，三人盲评）【证实，单篇】。它改的是世界模型的预测，不是把世界模型当环境训策略；评审也是学出来的。所以不计入信号 4。它当策略评估器时，成功率误差从 12.92 降到 7.08 个百分点，像素世界作评估器在变准【推断】。</li>
+<li>补充（2026-10-12 晚，观察，等级不变）：DiffusionART（<a href="https://arxiv.org/abs/2610.12572">arXiv 2610.12572</a>，NUS+可灵）指认 DiffusionNFT 目标内「前向–反向一致性力」，改聚合奖励+trust region；HunyuanVideo-13B 上相对 NFT/Flow-GRPO-Fast 约 12× 更省 GPU 时【证实】。GraftOOD（<a href="https://arxiv.org/abs/2610.13470">arXiv 2610.13470</a>）用 OOD 示范嫁接防视频运动坍缩；Wan2.1-1.3B Dynamic Degree 4.86→44.41，HPSv3 8.10→7.32【证实】。二者为同架构 RL 稳定性修正，不进信号正表。RSI-Anything（<a href="https://arxiv.org/abs/2610.13912">arXiv 2610.13912</a>）用世界模型筛候选并留存策略–模型对；代码修复实验冻住 coder，不计入信号 4 正表。</li>
 <li>升级信号：出现开源的"VLM 评审 + 生成器"闭环 RL 训练框架或技术报告，并给出相对纯偏好奖励的增益；世界动作模型用模拟器成功率做 RL，且公开数据。</li>
 <li>推翻信号：纯文生图出现新的、可规模化的可验证奖励（不是 OCR、计数这一类），并带来显著的人评提升。</li>
 </ul>
@@ -178,6 +181,14 @@ pre.mermaid{background:#fff;text-align:center} a{color:#0969da}
 <li>信号表：一周无翻转。表 3 正表加 PTD；表 2 加 Arena（部分证据），观察区加 Sora100K、UltraText；表 1、表 4 仍空。</li>
 <li>已宣布未交付：一周零交付。下周节点是 Step 5（10-15）。</li>
 <li>顶部结论和脉络图换成周报版，render_timeline.py 的 HEAD 同步。</li>
+</ul>
+<h2>变更 2026-10-12（晚间日报）</h2>
+<ul>
+<li>主线 1–2：补充 State-OPD、Critique-OPD；等级不变。</li>
+<li>主线 3：补充 DiffusionART、GraftOOD 观察；RSI-Anything 留信号 4 观察；等级不变。</li>
+<li>主线 4–7、5：无等级变化。信号表无翻转。</li>
+<li>已宣布未交付：无交付。Step 5 仍承诺 10-15。</li>
+<li>顶部结论换成晚间版；脉络图补 State/Critique 与 flow-RL 观察节点。</li>
 </ul>
 <script type="module">
 import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
