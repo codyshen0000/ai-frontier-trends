@@ -117,6 +117,45 @@ pre.mermaid {
   padding: 6px 12px;
 }
 
+.weekly-chrome {
+  margin: 12px 0 4px;
+}
+
+.weekly-chrome .trend-subnav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 8px;
+}
+
+.weekly-chrome .trend-subnav a {
+  height: 32px;
+  padding: 0 12px;
+  border-radius: var(--ds-radius-pill);
+  border: 1px solid var(--ds-hairline-strong);
+  font-size: 13px;
+  color: var(--ds-text-secondary) !important;
+  display: inline-flex;
+  align-items: center;
+}
+
+.weekly-chrome .trend-subnav a[aria-current="page"],
+.weekly-chrome .trend-subnav a.active {
+  background: var(--ds-accent-soft);
+  border-color: var(--ds-accent);
+  color: var(--ds-accent) !important;
+}
+
+.weekly-dl {
+  margin: 0 0 8px;
+  font-size: 13px;
+  color: var(--ds-text-secondary);
+}
+
+.weekly-dl a {
+  color: var(--ds-accent);
+}
+
 .filters button.on {
   background: var(--ds-accent) !important;
   color: var(--ds-accent-ink) !important;

@@ -1,4 +1,4 @@
-import { cpSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { marked } from "marked";
@@ -8,6 +8,13 @@ import {
   extractThreads,
   ensureThreadAnchors,
 } from "./extract.mjs";
+import {
+  assertPublicSafe,
+  latestWeeklyCard,
+  listWeeklyIssues,
+  weeklyIndexBody,
+  weeklyIssueChrome,
+} from "./weekly.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const distDir = join(root, "dist");
@@ -29,6 +36,7 @@ const FLUX_TABS = [
 
 const TREND_SUBNAV = [
   { id: "timeline", label: "时间线", path: "/timeline/" },
+  { id: "weekly", label: "周报", path: "/weekly/" },
   { id: "signals", label: "信号表", path: "/signals/" },
   { id: "weights", label: "权重追踪", path: "/weights/" },
 ];
@@ -220,6 +228,7 @@ function stripInjected(html) {
     .replace(/<script[^>]*data-ds-injected="theme"[^>]*>[\s\S]*?<\/script>\s*/gi, "")
     .replace(/<header[^>]*data-ds-injected="nav"[^>]*>[\s\S]*?<\/header>\s*/gi, "")
     .replace(/<script[^>]*data-ds-injected="ui"[^>]*>[\s\S]*?<\/script>\s*/gi, "")
+    .replace(/<div[^>]*data-ds-injected="weekly"[^>]*>[\s\S]*?<\/div>\s*/gi, "")
     .replace(/(<body\b[^>]*>)\s+/i, "$1");
 }
 
@@ -233,7 +242,7 @@ function injectAfterBodyOpen(html, snippet) {
   return `${snippet}${html}`;
 }
 
-export function injectHtmlFile(raw, { currentId, path }) {
+export function injectHtmlFile(raw, { currentId, path, extraBody = "" }) {
   const skinHref = assetHref(path, "assets/skin-raw.css");
   const cssLink = `<link rel="stylesheet" href="${DS_CSS}" data-ds-injected="css">`;
   const skinLink = `<link rel="stylesheet" href="${skinHref}" data-ds-injected="skin">`;
@@ -242,7 +251,7 @@ export function injectHtmlFile(raw, { currentId, path }) {
   html = injectBeforeHeadEnd(html, cssLink);
   html = injectBeforeHeadEnd(html, skinLink);
   html = injectBeforeHeadEnd(html, THEME_BOOT);
-  html = injectAfterBodyOpen(html, `${navBar({ currentId, fromPath: path })}${RAW_NAV_UI}`);
+  html = injectAfterBodyOpen(html, `${navBar({ currentId, fromPath: path })}${RAW_NAV_UI}${extraBody}`);
   return html;
 }
 
@@ -317,7 +326,7 @@ function chipClass(status) {
   return "ds-chip";
 }
 
-function homeBody({ live, threads, lede }) {
+function homeBody({ live, threads, lede, weekly }) {
   const today = live.conclusion
     ? `<div class="ds-card trend-today">
         <p class="trend-today-kicker">今天</p>
@@ -352,6 +361,7 @@ function homeBody({ live, threads, lede }) {
     ${ledeHtml}
     <div class="trend-thread-grid">${cards}</div>
   </section>
+  ${latestWeeklyCard(weekly, { hrefBetween, escapeHtml })}
   <section class="ds-section" id="topics">
     <div class="ds-section-header">
       <h2 class="ds-section-title">专题</h2>
@@ -373,7 +383,7 @@ function homeBody({ live, threads, lede }) {
         <li><strong>【未证实】</strong>：还没找到一手来源。</li>
         <li><strong>【推断】</strong>：我们的归纳，有间接证据。</li>
       </ul>
-      <p>看板每 30 分钟检查一次，有变化就更新。时间线每晚更新。</p>
+      <p>看板每 30 分钟检查一次，有变化就更新。时间线每晚更新。周报按周发布。</p>
     </div>
   </section>`;
 }
@@ -386,14 +396,37 @@ function assertNoLocalPaths(html, label) {
   }
 }
 
-function verifyRawInjection(page, raw, injected) {
+function writeWeeklyIssue(issue) {
+  const raw = readFileSync(issue.htmlPath, "utf8");
+  const extraBody = weeklyIssueChrome({ hrefBetween, trendSubnav, fromPath: issue.path });
+  const injected = injectHtmlFile(raw, {
+    currentId: "weekly",
+    path: issue.path,
+    extraBody,
+  });
+  verifyRawInjection({ id: `weekly-${issue.date}`, currentId: "weekly", path: issue.path }, raw, injected, extraBody);
+  assertPublicSafe(injected, `weekly ${issue.date}`);
+  if (issue.markdownPath) assertPublicSafe(readFileSync(issue.markdownPath, "utf8"), `weekly ${issue.date} markdown`);
+  if (issue.timelinePath) assertPublicSafe(readFileSync(issue.timelinePath, "utf8"), `weekly ${issue.date} timeline`);
+
+  writePage(issue.path, injected);
+  const destDir = join(distDir, "weekly", issue.date);
+  mkdirSync(destDir, { recursive: true });
+  cpSync(issue.htmlPath, join(destDir, "report.html"));
+  if (issue.markdownPath) cpSync(issue.markdownPath, join(destDir, "report.md"));
+  if (issue.timelinePath) cpSync(issue.timelinePath, join(destDir, "timeline.md"));
+  if (issue.chartsDir) cpSync(issue.chartsDir, join(destDir, "charts"), { recursive: true });
+}
+
+function verifyRawInjection(page, raw, injected, extraBody = "") {
   if (!injected.includes(DS_CSS)) throw new Error(`${page.id}: missing ds.css`);
   if (!injected.includes("skin-raw.css")) throw new Error(`${page.id}: missing skin-raw.css`);
   if (!injected.includes('data-ds-injected="nav"')) throw new Error(`${page.id}: missing injected nav`);
   if (!injected.includes(">今日<") || !injected.includes(">趋势<") || !injected.includes(">专题<") || !injected.includes(">关于<")) {
     throw new Error(`${page.id}: injected nav missing primary items`);
   }
-  const twice = injectHtmlFile(injected, { currentId: page.id, path: page.path });
+  const currentId = page.currentId || page.id;
+  const twice = injectHtmlFile(injected, { currentId, path: page.path, extraBody });
   if (twice !== injected) {
     throw new Error(`${page.id}: raw injection is not idempotent`);
   }
@@ -413,10 +446,31 @@ export function buildSite() {
   mkdirSync(distDir, { recursive: true });
 
   const contentPages = [];
+  const weeklyIssues = listWeeklyIssues(contentDir);
 
   for (const page of config.pages) {
     if (publicDeploy && privatePages.has(page.id)) continue;
     if (page.home) continue;
+
+    if (page.weeklyIndex) {
+      const body = weeklyIndexBody(weeklyIssues, { hrefBetween, escapeHtml });
+      writePage(
+        page.path,
+        renderPage({
+          id: page.id,
+          title: page.title,
+          path: page.path,
+          extraClass: "ds-section",
+          description: page.summary || config.description,
+          body,
+        }),
+      );
+      contentPages.push({
+        ...page,
+        summary: page.summary || page.title,
+      });
+      continue;
+    }
 
     if (page.gallery === "flux3-cases") {
       writePage(
@@ -478,6 +532,16 @@ export function buildSite() {
     );
   }
 
+  for (const issue of weeklyIssues) {
+    writeWeeklyIssue(issue);
+    contentPages.push({
+      id: `weekly-${issue.date}`,
+      title: issue.title,
+      path: issue.path,
+      summary: issue.summary,
+    });
+  }
+
   if (!publicDeploy || !privatePages.has("home")) {
     const homeData = readHomeData();
     writePage(
@@ -488,7 +552,7 @@ export function buildSite() {
         path: "/",
         extraClass: "trend-home",
         description: homeData.live.conclusion || config.description,
-        body: homeBody(homeData),
+        body: homeBody({ ...homeData, weekly: weeklyIssues[0] || null }),
       }),
     );
   }

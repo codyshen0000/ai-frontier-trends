@@ -6,10 +6,14 @@
 
 - 今日：<https://codyshen0000.github.io/ai-frontier-trends/live/>
 - 趋势时间线：<https://codyshen0000.github.io/ai-frontier-trends/timeline/>
+- 周报：<https://codyshen0000.github.io/ai-frontier-trends/weekly/>
+- 2026-10-12 周报：<https://codyshen0000.github.io/ai-frontier-trends/weekly/2026-10-12/>
 - 专题 FLUX 3：<https://codyshen0000.github.io/ai-frontier-trends/flux3/>
 - 关于：<https://codyshen0000.github.io/ai-frontier-trends/about/>
 
-导航只有四项：今日、趋势（信号表 / 权重追踪为栏目内二级）、专题、关于。FLUX 3 的速查表、官方案例、示例库、相机术语仍走原来的 URL，顶上用同一组分段控件切换。
+导航只有四项：今日、趋势（周报 / 信号表 / 权重追踪为栏目内二级）、专题、关于。FLUX 3 的速查表、官方案例、示例库、相机术语仍走原来的 URL，顶上用同一组分段控件切换。
+
+新的一周放到 `content/weekly/YYYY-MM-DD/`：`report.html`（单页周报）、`report.md`、`timeline.md`，可选 `meta.json` 和 `charts/`。构建时会生成 `/weekly/` 列表和 `/weekly/YYYY-MM-DD/`。
 
 视觉语言跟个人主页同一套 [共享设计系统](https://github.com/codyshen0000/codyshen0000.github.io/blob/main/DESIGN.md)（`ds.css`）。
 
