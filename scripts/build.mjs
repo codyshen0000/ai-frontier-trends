@@ -2,6 +2,7 @@ import { cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } fr
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { marked } from "marked";
+import { CHART_CSS, flux3Chart, homeCharts, signalsChart, timelineCharts, weightsChart } from "./charts.mjs";
 import { casesGalleryBody, casesSummary, copyCaseAssets } from "./flux3_cases_page.mjs";
 import {
   extractLiveSpotlight,
@@ -228,6 +229,7 @@ function stripInjected(html) {
     .replace(/<script[^>]*data-ds-injected="theme"[^>]*>[\s\S]*?<\/script>\s*/gi, "")
     .replace(/<header[^>]*data-ds-injected="nav"[^>]*>[\s\S]*?<\/header>\s*/gi, "")
     .replace(/<script[^>]*data-ds-injected="ui"[^>]*>[\s\S]*?<\/script>\s*/gi, "")
+    .replace(/<aside[^>]*data-ds-injected="charts"[^>]*>[\s\S]*?<\/aside>\s*/gi, "")
     .replace(/<div[^>]*data-ds-injected="weekly"[^>]*>[\s\S]*?<\/div>\s*/gi, "")
     .replace(/(<body\b[^>]*>)\s+/i, "$1");
 }
@@ -270,6 +272,7 @@ function renderPage({ id, title, path, body, extraClass = "", description = conf
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="stylesheet" href="${DS_CSS}">
   <link rel="stylesheet" href="${cssHref}">
+  <style>${CHART_CSS}</style>
   <script>
     (function () {
       try {
@@ -326,7 +329,7 @@ function chipClass(status) {
   return "ds-chip";
 }
 
-function homeBody({ live, threads, lede, weekly }) {
+function homeBody({ live, threads, lede, weekly, threadSource, timelineRaw }) {
   const today = live.conclusion
     ? `<div class="ds-card trend-today">
         <p class="trend-today-kicker">今天</p>
@@ -361,6 +364,7 @@ function homeBody({ live, threads, lede, weekly }) {
     ${ledeHtml}
     <div class="trend-thread-grid">${cards}</div>
   </section>
+  ${homeCharts({ threads, threadSource, timelineHtml: timelineRaw, href: (p) => hrefBetween("/", p) })}
   ${latestWeeklyCard(weekly, { hrefBetween, escapeHtml })}
   <section class="ds-section" id="topics">
     <div class="ds-section-header">
@@ -438,7 +442,7 @@ function readHomeData() {
   const timelineRaw = readFileSync(join(contentDir, "timeline.html"), "utf8");
   const live = extractLiveSpotlight(liveRaw);
   const extracted = extractThreads(timelineRaw, config.threadsFallback, 5);
-  return { live, threads: extracted.threads, lede: extracted.lede, threadSource: extracted.source };
+  return { live, threads: extracted.threads, lede: extracted.lede, threadSource: extracted.source, timelineRaw };
 }
 
 export function buildSite() {
@@ -493,8 +497,9 @@ export function buildSite() {
 
     if (page.htmlFile) {
       const raw = readFileSync(join(contentDir, page.htmlFile), "utf8");
-      const injected = injectHtmlFile(raw, { currentId: page.id, path: page.path });
-      verifyRawInjection(page, raw, injected);
+      const extraBody = page.id === "timeline" ? timelineCharts(raw) : "";
+      const injected = injectHtmlFile(raw, { currentId: page.id, path: page.path, extraBody });
+      verifyRawInjection(page, raw, injected, extraBody);
       writePage(page.path, injected);
       contentPages.push({
         ...page,
@@ -518,6 +523,12 @@ export function buildSite() {
       html,
     });
 
+    const rawMd = readFileSync(join(contentDir, page.file), "utf8");
+    const chart =
+      page.id === "signals" ? signalsChart(rawMd)
+      : page.id === "weights" ? weightsChart(rawMd)
+      : page.id === "flux3" ? flux3Chart(root, (p) => hrefBetween(page.path, p))
+      : "";
     const extraClass = ["ds-section", page.topic === "flux3" ? "trend-has-tabs" : ""].filter(Boolean).join(" ");
     writePage(
       page.path,
@@ -527,7 +538,7 @@ export function buildSite() {
         path: page.path,
         extraClass,
         description: page.summary || config.description,
-        body: `<article class="ds-prose">${html}</article>`,
+        body: `${chart}<article class="ds-prose">${html}</article>`,
       }),
     );
   }
