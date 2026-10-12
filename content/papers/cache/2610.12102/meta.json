@@ -1,0 +1,12 @@
+{
+ "id": "2610.12102",
+ "abs": "https://arxiv.org/abs/2610.12102",
+ "title": "Few-Step Generation via Data-Space Iteration",
+ "abstract_first": "Flow matching has emerged as a scalable paradigm for training high-quality generative models, but sampling from the learned probability flow requires many network evaluations.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.jpg",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.12102/img/hero/flow_1.jpg",
+ "fig_caption": "(a) Existing few-step generators perform iterative sampling in probability-flow space, requiring a predefined timestep discretization that can be suboptimal. (b…"
+}

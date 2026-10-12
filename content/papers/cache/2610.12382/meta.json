@@ -1,0 +1,8 @@
+{
+ "id": "2610.12382",
+ "abs": "https://arxiv.org/abs/2610.12382",
+ "title": "WorldAlign: Decoupled 4D Reward for World-Consistent Video Generation",
+ "abstract_first": "Faithful visual world simulation requires generated videos to maintain 4D world consistency, encompassing both static and dynamic consistency.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}

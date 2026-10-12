@@ -1,0 +1,12 @@
+{
+ "id": "2610.02959",
+ "abs": "https://arxiv.org/abs/2610.02959",
+ "title": "TerraVis: Towards Evaluation of World-Grounded Visual Consistency in Text-to-Image Generation via MLLM Workflows",
+ "abstract_first": "Recent text-to-image models have made substantial progress in photorealism, aesthetics, and text-image alignment.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig2.png",
+ "fig_no": 2,
+ "fig_src": "https://arxiv.org/html/2610.02959/taxonomy.png",
+ "fig_caption": "Overview of the TerraVis world-consistency violation taxonomy. TerraVis organizes world-consistency violations into three levels: object-level, interaction-leve…"
+}

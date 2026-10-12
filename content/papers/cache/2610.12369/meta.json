@@ -1,0 +1,8 @@
+{
+ "id": "2610.12369",
+ "abs": "https://arxiv.org/abs/2610.12369",
+ "title": "Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement",
+ "abstract_first": "Most robot policies keep a model in the control loop: a VLA maps observations to actions, and an Agent Harness, such as Agent-as-Policy or Harness VLA queries a VLM for decision making at run time.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}

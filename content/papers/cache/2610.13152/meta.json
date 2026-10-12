@@ -1,0 +1,8 @@
+{
+ "id": "2610.13152",
+ "abs": "https://arxiv.org/abs/2610.13152",
+ "title": "Quality, Not Just Outcome: A Structural Scoring Framework for Selecting Coding-Agent Trajectories for Supervised Fine-Tuning",
+ "abstract_first": "Open coding agents are commonly trained through supervised fine-tuning on interaction trajectories whose final patches pass the benchmark test suite.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}

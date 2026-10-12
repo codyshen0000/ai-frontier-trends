@@ -1,0 +1,8 @@
+{
+ "id": "2610.10990",
+ "abs": "https://arxiv.org/abs/2610.10990",
+ "title": "Omni-Diffusion-Distill: Few-Step Distillation of Unified Multimodal Diffusion Large Language Models",
+ "abstract_first": "Unified multimodal diffusion large language models (dLLMs) offer a single architecture for both image generation and multimodal understanding, but their iterative decoding requires tens to hundreds of forward passes.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}

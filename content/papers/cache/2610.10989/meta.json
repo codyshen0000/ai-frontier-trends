@@ -1,0 +1,8 @@
+{
+ "id": "2610.10989",
+ "abs": "https://arxiv.org/abs/2610.10989",
+ "title": "Multi-Bandwidth Distribution Matching Distillation: On the Equivalence of Distribution Matching Distillation and Drifting Models",
+ "abstract_first": "Researchers are exploring effective one-step generative model continuously, and, Drifting Models (Deng et al., 2026), demonstrate great potential in one-step generation recently.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}

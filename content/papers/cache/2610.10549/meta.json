@@ -1,0 +1,12 @@
+{
+ "id": "2610.10549",
+ "abs": "https://arxiv.org/abs/2610.10549",
+ "title": "Synthesis Through Simulation: Generating Coherent Enterprise Data via Scalable Agent-System Interaction",
+ "abstract_first": "Tool-calling agents have become central to enterprise AI, yet training and evaluating them at scale remains severely constrained due to business and legal restrictions on enterprise systems, data, and database schemas.",
+ "license": "https://creativecommons.org/licenses/by-nc-sa/",
+ "reuse_ok": true,
+ "fig_file": "fig1.png",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.10549/STS_pipeline_final_nondual.png",
+ "fig_caption": "Overview of the STS framework. GP operates as an outer loop of    N  N    trajectories, each passing through three phases ( Explore ,  Plan ,  Execute ) against…"
+}

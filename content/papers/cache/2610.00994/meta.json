@@ -1,0 +1,12 @@
+{
+ "id": "2610.00994",
+ "abs": "https://arxiv.org/abs/2610.00994",
+ "title": "VIEScore2: Unified Image Evaluation with Spatially Grounded Explanations",
+ "abstract_first": "Existing synthetic image evaluators typically provide only a scalar quality score and do not identify the image regions that support it.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig2.png",
+ "fig_no": 2,
+ "fig_src": "https://arxiv.org/html/2610.00994/method.png",
+ "fig_caption": "Overview of VIEScore2: data preparation, SFT and GRPO training, and inference. GRPO combines Dice, score, and format rewards. The parameter-free parser converts…"
+}

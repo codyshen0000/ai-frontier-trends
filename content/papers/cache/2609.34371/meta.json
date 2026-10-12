@@ -1,0 +1,8 @@
+{
+ "id": "2609.34371",
+ "abs": "https://arxiv.org/abs/2609.34371",
+ "title": "From Static to Dynamic: On-Policy Distillation from Image to Video Diffusion Models",
+ "abstract_first": "On-policy distillation (OPD) specializes pretrained video diffusion models through teacher supervision along the student's own generation trajectory.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}

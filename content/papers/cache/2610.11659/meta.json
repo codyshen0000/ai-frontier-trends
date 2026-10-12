@@ -1,0 +1,12 @@
+{
+ "id": "2610.11659",
+ "abs": "https://arxiv.org/abs/2610.11659",
+ "title": "DIAL-OPD: Learning More from Fewer Tokens in On-Policy Distillation",
+ "abstract_first": "On-policy distillation (OPD) supervises student-generated trajectories with token-level teacher signals.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig2.png",
+ "fig_no": 2,
+ "fig_src": "https://arxiv.org/html/2610.11659/supervision_density_curves.png",
+ "fig_caption": "Supervision density has a non-monotonic effect.  Random selection (1–90%) vs. full-token OPD (100%), 0.6B student; inset: final accuracy."
+}

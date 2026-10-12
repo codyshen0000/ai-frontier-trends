@@ -1,0 +1,12 @@
+{
+ "id": "2609.35768",
+ "abs": "https://arxiv.org/abs/2609.35768",
+ "title": "PDMD: Projected Distribution Matching Distillation for Video Diffusion Models",
+ "abstract_first": "Modern video diffusion models require tens of denoising evaluations over long spatiotemporal token sequences.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig2.jpg",
+ "fig_no": 2,
+ "fig_src": "https://arxiv.org/html/2609.35768/figures/src/degradation/v4/dmd_100_925_f64.jpg",
+ "fig_caption": "Qualitative comparisons over matched 4-NFE training.   DMD  and  DMD2  develop unnatural textures after 500 iterations, whereas  PDMD  keeps a natural appearanc…"
+}

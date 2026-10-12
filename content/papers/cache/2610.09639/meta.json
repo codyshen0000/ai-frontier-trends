@@ -1,0 +1,12 @@
+{
+ "id": "2610.09639",
+ "abs": "https://arxiv.org/abs/2610.09639",
+ "title": "On-Policy Distillation Teaches New Skills but Not New Knowledge",
+ "abstract_first": "On-policy distillation (OPD) strengthens language-model reasoning, yet whether students acquire new factual knowledge or compositional skill for multi-step reasoning remains unknown.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.svg",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.09639/overview.svg",
+ "fig_caption": "Overview of the setup. (a) Random lookup tables represent facts; chains and trees specify how their query results are combined. (b) Starting from     S  0   S_{…"
+}

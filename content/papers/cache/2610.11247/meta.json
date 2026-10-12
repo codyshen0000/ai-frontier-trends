@@ -1,0 +1,12 @@
+{
+ "id": "2610.11247",
+ "abs": "https://arxiv.org/abs/2610.11247",
+ "title": "Why On-Policy Distillation Sometimes Fails: Vanishing Learning Signals",
+ "abstract_first": "On-policy distillation (OPD) enables effective capability transfer between language models, yet the mechanisms underlying its failures are not fully understood.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.svg",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.11247/teacher_trainability_multigroup.svg",
+ "fig_caption": "Validation accuracy (top) and OPD loss (bottom) over 200 updates. The black point in panels (a) and (c) is the shared initial-student evaluation. Dashed lines m…"
+}

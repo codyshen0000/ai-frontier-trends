@@ -1,0 +1,12 @@
+{
+ "id": "2610.11287",
+ "abs": "https://arxiv.org/abs/2610.11287",
+ "title": "REMORY: Learning Residual Memory for Context Compaction",
+ "abstract_first": "Long-horizon agents compact their history to continue within a finite context window, but a textual summary alone may not support every subsequent decision.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.svg",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.11287/headline_benchmarks.svg",
+ "fig_caption": "BrowseComp and Terminal-Bench 2.1 scores. Pale and solid bars compare the same local actor without and with residual memory. Gray bars are published frontier re…"
+}

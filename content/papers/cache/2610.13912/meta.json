@@ -1,0 +1,8 @@
+{
+ "id": "2610.13912",
+ "abs": "https://arxiv.org/abs/2610.13912",
+ "title": "RSI-Anything: Unlocking Recursive Self-Improvement with World Models",
+ "abstract_first": "Recursive self-improvement (RSI) aims to transform interaction experience into persistent improvements, yet external feedback is costly and world-model predictions may become unreliable as policies evolve.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}

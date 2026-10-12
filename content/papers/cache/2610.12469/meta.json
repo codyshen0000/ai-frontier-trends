@@ -1,0 +1,8 @@
+{
+ "id": "2610.12469",
+ "abs": "https://arxiv.org/abs/2610.12469",
+ "title": "Rubric-CEPR: Self-Evolving Image Editing via Reward-Verified Self-Distillation",
+ "abstract_first": "Instruction-guided image editors have become highly capable, yet improving them further still depends on human-edited training pairs or external reward models.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}

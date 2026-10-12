@@ -1,0 +1,12 @@
+{
+ "id": "2610.11479",
+ "abs": "https://arxiv.org/abs/2610.11479",
+ "title": "Conditional Residual Prediction: Improving Autoregressive Video Diffusion without a Bidirectional Teacher",
+ "abstract_first": "Causal video diffusion models generate video autoregressively, which suits streaming, interactive, and long-video generation.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.svg",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.11479/method_overview_crp_left.svg",
+ "fig_caption": "Overview.   (a)  Conditional Residual Prediction (CRP) applied to history. The same network     f  θ   f_{\\theta}    is evaluated twice on the same input: the H…"
+}

@@ -1,0 +1,8 @@
+{
+ "id": "2609.31900",
+ "abs": "https://arxiv.org/abs/2609.31900",
+ "title": "Understanding the Synergy between SFT, RLVR, and OPD in LLM Post-Training",
+ "abstract_first": "Modern LLM post-training composes supervised fine-tuning (SFT), reinforcement learning with verifiable rewards (RLVR), and on-policy distillation (OPD) into multi-stage pipelines, yet these stages are typically designed and evaluated in isolation.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}

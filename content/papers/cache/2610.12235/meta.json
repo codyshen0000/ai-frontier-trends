@@ -1,0 +1,12 @@
+{
+ "id": "2610.12235",
+ "abs": "https://arxiv.org/abs/2610.12235",
+ "title": "Language Models as AI Research World Models",
+ "abstract_first": "AI research agents automate the cycle of proposing, implementing, and evaluating experiments, opening a path toward recursive self-improvement.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.png",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.12235/teaser-aligned-v4.png",
+ "fig_caption": "Large language models as Research World Models.  Given a research environment     E  τ   E_{\\tau}    and candidate interventions    a  a   , an RWM predicts gai…"
+}

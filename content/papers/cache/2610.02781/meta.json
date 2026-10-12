@@ -1,0 +1,12 @@
+{
+ "id": "2610.02781",
+ "abs": "https://arxiv.org/abs/2610.02781",
+ "title": "OPD Before RL: Warm-Starting Rubric-Based RL with On-Policy Distillation",
+ "abstract_first": "Many useful language-model tasks cannot be evaluated by exact outcome verification.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.svg",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.02781/fig_opd_schematic.svg",
+ "fig_caption": "Overview of  RP-OPD  +  Rubric-RL .  Stage 1 ( RP-OPD ):  The student receives dense supervision from a rubric-conditioned teacher by minimizing the KL divergen…"
+}

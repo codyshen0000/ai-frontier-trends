@@ -1,0 +1,12 @@
+{
+ "id": "2610.13238",
+ "abs": "https://arxiv.org/abs/2610.13238",
+ "title": "State-OPD: State-Grounded On-Policy Distillation for Multi-Turn Agents",
+ "abstract_first": "On-Policy Distillation (OPD) has emerged as a powerful paradigm for transferring reasoning capabilities from frontier models to smaller models, while extending its success to multi-turn agentic environments remains challenging.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.png",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.13238/state_opd_pipeline.png",
+ "fig_caption": "Overview of State-OPD. The teacher conditions on the interaction state rather than prior student reasoning; the student retains its full history and samples add…"
+}

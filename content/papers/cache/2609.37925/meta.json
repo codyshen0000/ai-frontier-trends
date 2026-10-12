@@ -1,0 +1,8 @@
+{
+ "id": "2609.37925",
+ "abs": "https://arxiv.org/abs/2609.37925",
+ "title": "Rollout-Marginal Distillation for Long-Horizon Autoregressive Video Generation",
+ "abstract_first": "Autoregressive (AR) video diffusion enables low-latency, streamable video generation, but prediction errors often accumulate over long rollouts.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}

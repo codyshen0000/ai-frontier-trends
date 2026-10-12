@@ -1,0 +1,8 @@
+{
+ "id": "2610.13356",
+ "abs": "https://arxiv.org/abs/2610.13356",
+ "title": "SWE-Critix: Post-Training Generalist Verifiers for Assessing Coding-Agent Trajectories",
+ "abstract_first": "Coding agents are increasingly deployed for end-to-end software engineering tasks, where a readily available oracle evaluator that defines the success criteria is often absent.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}

@@ -1,0 +1,12 @@
+{
+ "id": "2610.12104",
+ "abs": "https://arxiv.org/abs/2610.12104",
+ "title": "VINCIE-NExT: Unlocking Video Editing from Images via In-Context Modeling",
+ "abstract_first": "Building a capable video editor remains significantly harder than a video generator: editing requires (source, instruction, edited) triplets that are prohibitively expensive to annotate and difficult to synthesize at scale, whereas image editing has already reached maturity with millions of such pairs readily available.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.png",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.12104/case_study_ours_frame_config_20260505_215415_v1.png",
+ "fig_caption": "Qualitative showcase of VINCIE-NExT across diverse video editing scenarios.  Each case presents frames extracted from the source video and the edited output. Ou…"
+}

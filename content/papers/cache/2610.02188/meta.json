@@ -1,0 +1,9 @@
+{
+ "id": "2610.02188",
+ "abs": "https://arxiv.org/abs/2610.02188",
+ "title": "DMAD: Distribution Matching as Adversarial Distillation for Fast Visual Generation",
+ "abstract_first": "Distribution Matching Distillation (DMD) trains a few-step student from the difference between separately estimated target and student scores, so it must keep an auxiliary diffusion model fitted to the student's evolving distribution at extra memory and computation cost.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_error": "no arXiv HTML (HTTPError)"
+}

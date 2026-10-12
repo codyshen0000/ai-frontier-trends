@@ -1,0 +1,12 @@
+{
+ "id": "2610.11794",
+ "abs": "https://arxiv.org/abs/2610.11794",
+ "title": "Memento 3: Model-Based Recursive Self-Improvement through Reflective Rulebooks",
+ "abstract_first": "Learning to act in unfamiliar environments requires agents to infer how the world works and revise that understanding as new evidence arrives.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.png",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.11794/codeasmodel-rulebook-mini.png",
+ "fig_caption": "From a rulebook to an executable world model.  Numbered rules map to corresponding branches of a simplified transition function. A planner uses the model to pre…"
+}

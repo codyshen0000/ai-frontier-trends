@@ -1,0 +1,12 @@
+{
+ "id": "2610.12899",
+ "abs": "https://arxiv.org/abs/2610.12899",
+ "title": "A Lightweight Velocity Correction Framework for Improving Instruction Following in Few-Step Text-to-Image Generation",
+ "abstract_first": "Few-step text-to-image generators produce high-quality images with few network forward passes, yet struggle with complex prompts involving multiple subjects, interactions, spatial relations, counting, and attribute binding.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig3.png",
+ "fig_no": 3,
+ "fig_src": "https://arxiv.org/html/2610.12899/fig2_new_0916.png",
+ "fig_caption": "Overview of velocity residual correction.  A lightweight corrector augments a frozen few-step generator without changing its sampling schedule or forward-pass c…"
+}
