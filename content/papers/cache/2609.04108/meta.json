@@ -1,0 +1,12 @@
+{
+ "id": "2609.04108",
+ "abs": "https://arxiv.org/abs/2609.04108",
+ "title": "Sequential Beats Joint: On the Interplay between On-Policy Distillation and RLVR",
+ "abstract_first": "Reinforcement learning with verifiable rewards (RLVR) and on-policy distillation (OPD) have emerged as two dominant methods for post-training reasoning LLMs.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.svg",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2609.04108/fig01_passk_scatter_grouped.svg",
+ "fig_caption": "Pass@1 vs. pass@32 averaged across logic reasoning tasks.  Each point is a post-training algorithm. OPD-then-RL (red star) leads on both axes, surpassing OPD, R…"
+}

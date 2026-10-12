@@ -1,0 +1,12 @@
+{
+ "id": "2610.12459",
+ "abs": "https://arxiv.org/abs/2610.12459",
+ "title": "WorldGuide: Goal-Directed Video World Model for Procedural Task Execution",
+ "abstract_first": "Video generators and video-based world models can synthesize plausible visual trajectories, but long-horizon procedural tasks require generation to adapt to what has actually been produced.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig2.png",
+ "fig_no": 2,
+ "fig_src": "https://arxiv.org/html/2610.12459/WorldGuide_main_v10.png",
+ "fig_caption": "Overview of WorldGuide.  Given the initial image     x  0   x_{0}   , task goal    g  g   , and the latest     K  =  3   K{=}3    clip–action pairs     h  t   h…"
+}

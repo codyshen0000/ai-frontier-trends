@@ -1,0 +1,12 @@
+{
+ "id": "2610.10528",
+ "abs": "https://arxiv.org/abs/2610.10528",
+ "title": "Long-WAM: Scaling the Context of World-Action Models",
+ "abstract_first": "Real-time robot control demands enough visual history to infer motion and task progress, but processing that history can delay action.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.png",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.10528/1_2.png",
+ "fig_caption": "Overview of Long-WAM.   (1) AR video pretraining.  LongLive2.0-Robot learns predictive dynamics from approximately 10,000 window-equivalent hours of robot and e…"
+}

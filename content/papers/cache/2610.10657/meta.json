@@ -1,0 +1,12 @@
+{
+ "id": "2610.10657",
+ "abs": "https://arxiv.org/abs/2610.10657",
+ "title": "Beyond Owls: Subliminal Learning Can Transfer Learned Capabilities and Backdoors",
+ "abstract_first": "In subliminal learning (SL), a teacher model passes on a trait to a student model by distillation on data semantically unrelated to the trait.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.png",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.10657/randomMLP.png",
+ "fig_caption": "Overview of the random MLP transfer setup.  We finetune a teacher to reproduce the outputs of a fixed random neural network with two hidden layers (    4  →  16…"
+}

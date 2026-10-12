@@ -1,0 +1,12 @@
+{
+ "id": "2610.12307",
+ "abs": "https://arxiv.org/abs/2610.12307",
+ "title": "BudgetPix: Compute-Adaptive Tokenization for Pixel-Space Image Diffusion",
+ "abstract_first": "Most image generation models rely on uniform tokenization, allocating the exact same computational budget to equally-sized image patches.",
+ "license": "https://creativecommons.org/licenses/by-nc-nd/",
+ "reuse_ok": true,
+ "fig_file": "fig1.png",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.12307/teaser.png",
+ "fig_caption": "Test-time compute adjustment.  BudgetPix dynamically scales inference costs, achieving a strong quality-efficiency tradeoff across JiT (top), MiniT2I (bottom le…"
+}

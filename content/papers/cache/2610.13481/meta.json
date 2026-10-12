@@ -1,0 +1,12 @@
+{
+ "id": "2610.13481",
+ "abs": "https://arxiv.org/abs/2610.13481",
+ "title": "Branching On-Policy Distillation",
+ "abstract_first": "On-policy distillation (OPD) provides teacher supervision on student-generated trajectories, but a single trajectory realizes only one continuation at each decision, limiting supervision coverage under a finite sampling budget.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig2.svg",
+ "fig_no": 2,
+ "fig_src": "https://arxiv.org/html/2610.13481/method.svg",
+ "fig_caption": "Overview of BranchOPD. Fork points are selected on the main trajectory, suffixes are resampled from the student, and the teacher scores every generated token; s…"
+}

@@ -1,0 +1,12 @@
+{
+ "id": "2610.12274",
+ "abs": "https://arxiv.org/abs/2610.12274",
+ "title": "HarnessSQL: Harness-Native Training for SQL Agents in Realistic Database Environments",
+ "abstract_first": "Text-to-SQL models are commonly trained to map questions directly to static queries, whereas real-world database agents operate through stateful, multi-turn interaction with live databases -- inspecting schemas, executing probe queries, diagnosing errors, and revising hypotheses.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig2.svg",
+ "fig_no": 2,
+ "fig_src": "https://arxiv.org/html/2610.12274/Harness_SQL_pipeline.svg",
+ "fig_caption": "Overview of  HarnessSQL , our harness-native post-training framework for interactive SQL agents. (a) Databases and hidden execution oracles are encapsulated int…"
+}

@@ -1,0 +1,12 @@
+{
+ "id": "2610.02967",
+ "abs": "https://arxiv.org/abs/2610.02967",
+ "title": "Post-Training Frontier Text-to-Image Models by Composing Preference and Rubric Rewards",
+ "abstract_first": "Recent text-to-image generation models have achieved remarkable visual quality, but improving them through post-training remains challenging because no single reward signal captures the full range of human preference.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.png",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.02967/sec/figures/qual_rewarddesign_grid.png",
+ "fig_caption": "Visualization. Preference-only training drifts toward generic embellishment and ignores requested content; faithfulness-only training washes out detail and drop…"
+}

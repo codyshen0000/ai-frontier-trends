@@ -1,0 +1,12 @@
+{
+ "id": "2610.09823",
+ "abs": "https://arxiv.org/abs/2610.09823",
+ "title": "UltraText Bench: A Comprehensive Bilingual Benchmark for Evaluating Visual Text Rendering in Image Generation",
+ "abstract_first": "Dense visual text requires image generators to reproduce long strings across multiple regions with correct placement and legibility.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.jpg",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.09823/resources/figures/v8_gpt2_low_gallery_l3/A1_L3_EN_003_1.jpg",
+ "fig_caption": "Scene coverage at L3.  One selected output per category in taxonomy order, from GPT Image 2 at API quality  Low . L3 denotes Extreme workload; EN/ZH denote Engl…"
+}

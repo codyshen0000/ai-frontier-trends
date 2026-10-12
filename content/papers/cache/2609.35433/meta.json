@@ -1,0 +1,12 @@
+{
+ "id": "2609.35433",
+ "abs": "https://arxiv.org/abs/2609.35433",
+ "title": "ReSPO: Reshaped Sequence Policy Optimization for Gradient Starvation in Off-Policy Learning",
+ "abstract_first": "Reinforcement learning from verifiable rewards (RLVR) frequently reuses rollouts across multiple policy updates, increasing the mismatch between the current policy and the data-generating policy.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig3.svg",
+ "fig_no": 3,
+ "fig_src": "https://arxiv.org/html/2609.35433/training_accuracy_alpha1.svg",
+ "fig_caption": "Normalized training-score curves and summaries. Tables report the peak through step    256  256    and the last-   128  128    mean. Early peaks have no error b…"
+}

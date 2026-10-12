@@ -1,0 +1,12 @@
+{
+ "id": "2610.12299",
+ "abs": "https://arxiv.org/abs/2610.12299",
+ "title": "Multi-Agent Egocentric World Model with Fine-Grained Embodied Interaction",
+ "abstract_first": "Egocentric world models predict first-person observations conditioned on an agent's actions, but most focus on a single agent.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig3.png",
+ "fig_no": 3,
+ "fig_src": "https://arxiv.org/html/2610.12299/main_architecture.png",
+ "fig_caption": "Overall architecture  (a) For each agent, ME-World builds viewing ray conditions and shared-action conditions from agents’ input and build shared environment me…"
+}

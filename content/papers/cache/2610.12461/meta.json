@@ -1,0 +1,12 @@
+{
+ "id": "2610.12461",
+ "abs": "https://arxiv.org/abs/2610.12461",
+ "title": "OuroWorld: Bringing Any 3D World Alive as Diverse, Endlessly Looping 3D Cinemagraphs",
+ "abstract_first": "Recent 3D world models generate photorealistic, explorable scenes that remain frozen in time.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig2.png",
+ "fig_no": 2,
+ "fig_src": "https://arxiv.org/html/2610.12461/motivation.png",
+ "fig_caption": "Motivation.   Left:  3D world models generate frozen worlds; 3D cinemagraphs bring them alive.  Middle:  Existing 3D cinemagraph methods rely on Eulerian flow a…"
+}

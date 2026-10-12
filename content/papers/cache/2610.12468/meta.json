@@ -1,0 +1,8 @@
+{
+ "id": "2610.12468",
+ "abs": "https://arxiv.org/abs/2610.12468",
+ "title": "DreamTrue: Action-Faithful Robot World Model with Counterfactual Post-Training",
+ "abstract_first": "We present DreamTrue, a multi-view, cross-embodiment robot world model for action-faithful and physically plausible video prediction.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}

@@ -1,0 +1,12 @@
+{
+ "id": "2610.11291",
+ "abs": "https://arxiv.org/abs/2610.11291",
+ "title": "When Do We Need On-Policy Distillation? Distilling on Offline Student Rollouts Is Often Better",
+ "abstract_first": "On-policy distillation (OPD) has become increasingly popular for transferring teacher capabilities to student models.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.svg",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.11291/fig_overlap_combo.svg",
+ "fig_caption": "Semi-OPD outperforms standard OPD when the initial teacher–student overlap is low.   (a)  Accuracy gain vs. initial top-64 overlap across 17 pairs ranging from …"
+}

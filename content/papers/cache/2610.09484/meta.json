@@ -1,0 +1,12 @@
+{
+ "id": "2610.09484",
+ "abs": "https://arxiv.org/abs/2610.09484",
+ "title": "MIMESIS: Learning User Simulators as Training Environments for Interactive Agents",
+ "abstract_first": "Training and evaluating interactive language agents typically requires rich user interactions, yet collecting human feedback is expensive and difficult to scale.",
+ "license": "https://creativecommons.org/publicdomain/zero/",
+ "reuse_ok": true,
+ "fig_file": "fig3.png",
+ "fig_no": 3,
+ "fig_src": "https://arxiv.org/html/2610.09484/overview.png",
+ "fig_caption": "Overview of our proposed method.  We couple user-simulator learning with simulator-driven agent post-training.  Stage I  trains MIMESIS through user-side mid-tr…"
+}

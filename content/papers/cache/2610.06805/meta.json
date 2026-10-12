@@ -1,0 +1,12 @@
+{
+ "id": "2610.06805",
+ "abs": "https://arxiv.org/abs/2610.06805",
+ "title": "H-JEPA: End-to-End Learning of Hierarchical World Models for Visual Planning",
+ "abstract_first": "Long-horizon planning with latent world models requires reasoning across timescales and levels of abstraction.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.png",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.06805/teaser.png",
+ "fig_caption": "Hierarchical abstractions support planning at multiple timescales.   Left:  visualization of hierarchical planning in Visual AntMaze. Level 3 plans toward the f…"
+}

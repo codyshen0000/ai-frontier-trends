@@ -1,0 +1,8 @@
+{
+ "id": "2609.39692",
+ "abs": "https://arxiv.org/abs/2609.39692",
+ "title": "GFD-OPD: Guidance-Folded On-Policy Distillation of Diffusion Models Across Scales",
+ "abstract_first": "On-policy distillation (OPD) has demonstrated two important capabilities in language models: compressing large teachers into smaller students and merging expert models into a single model.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}

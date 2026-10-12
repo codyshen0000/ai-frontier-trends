@@ -1,0 +1,12 @@
+{
+ "id": "2610.02826",
+ "abs": "https://arxiv.org/abs/2610.02826",
+ "title": "Scaling Trajectories for Complex Tasks through Recursive Self-Rewrite",
+ "abstract_first": "Successful trajectories on difficult tasks provide valuable supervision for model improvement, but specialized harnesses introduce interventions that may be unavailable during deployment.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig2.svg",
+ "fig_no": 2,
+ "fig_src": "https://arxiv.org/html/2610.02826/trajectory_rewriting_pipeline_simple.svg",
+ "fig_caption": "Turning multi-harness successes into learning experiences with  Recursive Self-Rewrite .  Different discovery harnesses enable the same model to solve more diff…"
+}

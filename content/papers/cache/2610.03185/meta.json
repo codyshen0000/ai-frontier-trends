@@ -1,0 +1,12 @@
+{
+ "id": "2610.03185",
+ "abs": "https://arxiv.org/abs/2610.03185",
+ "title": "Gains and Collapse in On-Policy Distillation:A Reinforcement Learning Perspective",
+ "abstract_first": "On-policy distillation (OPD) has become an important approach to language model post-training.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig2.svg",
+ "fig_no": 2,
+ "fig_src": "https://arxiv.org/html/2610.03185/dsr_s3_pass_at_k_mpl.svg",
+ "fig_caption": "pass @k curves of     S  INIT   S_{\\mathrm{INIT}}    and     S  OPD   S_{\\mathrm{OPD}}   .   Across AMC23 and AIME24–26, OPD gains are largest at small    k  k …"
+}

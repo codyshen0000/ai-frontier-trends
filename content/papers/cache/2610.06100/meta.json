@@ -1,0 +1,8 @@
+{
+ "id": "2610.06100",
+ "abs": "https://arxiv.org/abs/2610.06100",
+ "title": "From Traces to Agentic Worlds: Agentic Language World Models for Interactive Environment Simulation",
+ "abstract_first": "Realistic environment replicas are increasingly valuable for training and evaluating LLM agents, yet the original systems may be inaccessible or impractical to reproduce.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}

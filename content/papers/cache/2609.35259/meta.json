@@ -1,0 +1,12 @@
+{
+ "id": "2609.35259",
+ "abs": "https://arxiv.org/abs/2609.35259",
+ "title": "On-Policy or Off-Policy Learning? A Systematic Study of Distillation Dynamics",
+ "abstract_first": "On-policy learning has been argued to reduce catastrophic forgetting, produce sparser parameter updates, and improve generalisation.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.svg",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2609.35259/02_full_kl_final_metrics.svg",
+ "fig_caption": "Comparison of OnPD and OffPD across three reasoning tasks.  Held-out ID accuracy in the left and middle panels is averaged across MedReason, Science, and Countd…"
+}

@@ -1,0 +1,8 @@
+{
+ "id": "2610.13257",
+ "abs": "https://arxiv.org/abs/2610.13257",
+ "title": "CAST: Credit Alignment for Cross-Tokenizer On-Policy Distillation",
+ "abstract_first": "Cross-tokenizer on-policy distillation (OPD) requires aligning teacher and student sequences before their scores can be compared.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}

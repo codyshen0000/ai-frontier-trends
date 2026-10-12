@@ -1,0 +1,8 @@
+{
+ "id": "2610.13322",
+ "abs": "https://arxiv.org/abs/2610.13322",
+ "title": "CoVA: Composing VAE Representations for Generative Learning",
+ "abstract_first": "Representation alignment with pretrained visual encoders improves diffusion transformer training but requires auxiliary encoders and extra training overhead.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}

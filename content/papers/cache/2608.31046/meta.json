@@ -1,0 +1,12 @@
+{
+ "id": "2608.31046",
+ "abs": "https://arxiv.org/abs/2608.31046",
+ "title": "Does On-Policy Distillation Really Distill? From Noisy Teacher to Self-Improvement",
+ "abstract_first": "On-policy distillation (OPD) offers dense token-level supervision as an alternative to the sparse outcome-level advantages of reinforcement learning with verifiable rewards (RLVR).",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.png",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2608.31046/opsa.png",
+ "fig_caption": "Left:  Overview of different on-policy reinforcement learning algorithms. Unlike existing methods that derive advantages from external supervision, OPSA enables…"
+}

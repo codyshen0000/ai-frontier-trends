@@ -1,0 +1,12 @@
+{
+ "id": "2610.11770",
+ "abs": "https://arxiv.org/abs/2610.11770",
+ "title": "From Video Clips to Creation Trajectory: Sora100K for AI-Native Video Creation",
+ "abstract_first": "AI-Native video creation is shifting from isolated video clips toward iterative video creation workflows.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig2.png",
+ "fig_no": 2,
+ "fig_src": "https://arxiv.org/html/2610.11770/tezhen-1.png",
+ "fig_caption": "Comparison between representative video datasets and Sora100K. Prior datasets typically store video generation and editing as separate clip-level samples. Sora1…"
+}

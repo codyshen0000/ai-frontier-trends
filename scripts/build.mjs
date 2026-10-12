@@ -3,6 +3,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { marked } from "marked";
 import { CHART_CSS, flux3Chart, homeCharts, signalsChart, timelineCharts, weightsChart } from "./charts.mjs";
+import { PAPER_CSS, addExplainLinks, copyPaperAssets, loadPapers, papersBody } from "./papers.mjs";
 import { casesGalleryBody, casesSummary, copyCaseAssets } from "./flux3_cases_page.mjs";
 import {
   extractLiveSpotlight,
@@ -27,6 +28,7 @@ const publicDeploy = process.env.PUBLIC_DEPLOY === "1";
 const privatePages = new Set(config.privatePages ?? []);
 
 const DS_CSS = "https://codyshen0000.github.io/assets/ds.css";
+const PAPERS = loadPapers(contentDir);
 
 const FLUX_TABS = [
   { tab: "cheatsheet", label: "速查表", path: "/flux3/" },
@@ -115,7 +117,8 @@ function primaryActiveId(currentId) {
   return currentId;
 }
 
-const NAV_EXTRA_CSS = `.trend-dd{position:relative;display:flex;align-items:center}
+const NAV_EXTRA_CSS = PAPER_CSS + `
+.trend-dd{position:relative;display:flex;align-items:center}
 .trend-dd-menu{display:none;position:absolute;top:calc(100% + 8px);left:0;min-width:148px;padding:8px;background:var(--ds-bg-elevated);border:1px solid var(--ds-hairline);border-radius:var(--ds-radius-sm);box-shadow:var(--ds-shadow-2);z-index:60;flex-direction:column;gap:2px}
 .trend-dd:hover .trend-dd-menu,.trend-dd:focus-within .trend-dd-menu{display:flex}
 .trend-dd-menu a{padding:8px 10px;font-size:13px;color:var(--ds-text-secondary)!important;border-radius:8px}
@@ -229,6 +232,7 @@ function stripInjected(html) {
     .replace(/<script[^>]*data-ds-injected="theme"[^>]*>[\s\S]*?<\/script>\s*/gi, "")
     .replace(/<header[^>]*data-ds-injected="nav"[^>]*>[\s\S]*?<\/header>\s*/gi, "")
     .replace(/<script[^>]*data-ds-injected="ui"[^>]*>[\s\S]*?<\/script>\s*/gi, "")
+    .replace(/<a class="paper-explain" data-ds-injected="pf"[^>]*>图解<\/a>/g, "")
     .replace(/<aside[^>]*data-ds-injected="charts"[^>]*>[\s\S]*?<\/aside>\s*/gi, "")
     .replace(/<div[^>]*data-ds-injected="weekly"[^>]*>[\s\S]*?<\/div>\s*/gi, "")
     .replace(/(<body\b[^>]*>)\s+/i, "$1");
@@ -249,6 +253,7 @@ export function injectHtmlFile(raw, { currentId, path, extraBody = "" }) {
   const cssLink = `<link rel="stylesheet" href="${DS_CSS}" data-ds-injected="css">`;
   const skinLink = `<link rel="stylesheet" href="${skinHref}" data-ds-injected="skin">`;
   let html = stripInjected(raw);
+  if (PAPERS.length) html = addExplainLinks(html, PAPERS, hrefBetween(path, "/papers/"));
   if (path === "/timeline/") html = ensureThreadAnchors(html);
   html = injectBeforeHeadEnd(html, cssLink);
   html = injectBeforeHeadEnd(html, skinLink);
@@ -512,7 +517,7 @@ export function buildSite() {
 
     const source = prepareMarkdown(readFileSync(join(contentDir, page.file), "utf8"));
     const html = wrapTables(
-      decorateTags(marked.parse(source)).replace(
+      addExplainLinks(decorateTags(marked.parse(source)), PAPERS, hrefBetween(page.path, "/papers/")).replace(
         /详见权重追踪页/g,
         `详见<a href="${hrefBetween(page.path, "/weights/")}">权重追踪页</a>`,
       ),
@@ -568,6 +573,12 @@ export function buildSite() {
     );
   }
 
+  if (PAPERS.length) {
+    writePage("/papers/", renderPage({ id: "papers", title: "论文图解", path: "/papers/", extraClass: "ds-section",
+      description: "站内引用论文的主图和一句话说明", body: papersBody(PAPERS) }));
+    copyPaperAssets(contentDir, distDir);
+    contentPages.push({ id: "papers", title: "论文图解", path: "/papers/", summary: "论文图解" });
+  }
   mkdirSync(join(distDir, "assets"), { recursive: true });
   cpSync(join(srcDir, "styles.css"), join(distDir, "styles.css"));
   cpSync(join(srcDir, "theme.js"), join(distDir, "theme.js"));

@@ -1,0 +1,12 @@
+{
+ "id": "2610.06801",
+ "abs": "https://arxiv.org/abs/2610.06801",
+ "title": "MC-Sparse: Deconstructing and Closing the Dense-Sparse Attention Gap in Diffusion Transformers",
+ "abstract_first": "Sparse attention is a primary approach to reducing the latency of diffusion transformers in long-sequence generation tasks, such as video and high-resolution 3D asset generation.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.png",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.06801/teaser.png",
+ "fig_caption": "Quality and efficiency of MC-Sparse on Minimax-H3-Base at 768p. Left: quality metrics and DiT denoising latency. At 15% and 25% attention density, MC-Sparse ach…"
+}

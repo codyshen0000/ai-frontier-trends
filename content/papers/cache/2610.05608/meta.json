@@ -1,0 +1,12 @@
+{
+ "id": "2610.05608",
+ "abs": "https://arxiv.org/abs/2610.05608",
+ "title": "Kandinsky 6.0 Video: Foundation Models for Synchronized Video and Audio Generation",
+ "abstract_first": "We present Kandinsky 6.0 Video, a family of foundation diffusion models for synchronized text-to-audio-video generation, comprising Kandinsky 6.0 Video Lite (3B parameters) and Kandinsky 6.0 Video Pro (29B parameters).",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig3.png",
+ "fig_no": 3,
+ "fig_src": "https://arxiv.org/html/2610.05608/images/sr/modules/SR_DiT.png",
+ "fig_caption": "SR-DiT architecture. The noisy video latent, first-frame HQ anchor, and binary anchor mask are concatenated along the channel dimension and processed by timeste…"
+}

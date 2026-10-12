@@ -1,0 +1,12 @@
+{
+ "id": "2610.06617",
+ "abs": "https://arxiv.org/abs/2610.06617",
+ "title": "RealtimeWAM: One-Step Asynchronous World Action Models",
+ "abstract_first": "World Action Models (WAMs) incorporate visual representations from video generation backbones to guide action prediction.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig2.png",
+ "fig_no": 2,
+ "fig_src": "https://arxiv.org/html/2610.06617/method1_new.png",
+ "fig_caption": "Overview of Teacher-Anchored Consistency Distillation (TACD). The frozen Video Expert provides shared KV conditioning, while the action student is trained with …"
+}

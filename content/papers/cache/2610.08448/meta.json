@@ -1,0 +1,12 @@
+{
+ "id": "2610.08448",
+ "abs": "https://arxiv.org/abs/2610.08448",
+ "title": "Rethinking Cross-Tokenizer On-Policy Distillation: From Alignment Coverage to Supervision Reliability",
+ "abstract_first": "On-Policy Distillation (OPD) trains a student on its own generations using teacher feedback.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.png",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.08448/overview.png",
+ "fig_caption": "Three diagnostics of Cross-Tokenizer OPD for Qwen2.5-7B-Instruct   →  \\rightarrow   Llama-3.2-3B-Instruct.  Left:  The logged student-side alignment ratio remai…"
+}

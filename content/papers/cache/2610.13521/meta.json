@@ -1,0 +1,12 @@
+{
+ "id": "2610.13521",
+ "abs": "https://arxiv.org/abs/2610.13521",
+ "title": "Beyond Domain-Routed Supervision: Cross-Teacher Guarding for Multi-Teacher On-Policy Distillation",
+ "abstract_first": "Multi-teacher on-policy distillation (MOPD) extends on-policy distillation (OPD) by routing domain-specific data to specialized teachers, integrating their capabilities through dense token-level supervision on student-generated trajectories.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.png",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.13521/mopd_method_overview_revised.png",
+ "fig_caption": "Vanilla MOPD and  Road MOPD .  Left: Vanilla MOPD’s domain-routed supervision can produce conflicting updates to shared parameters. Right:  Road MOPD  uses same…"
+}
