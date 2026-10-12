@@ -1,6 +1,12 @@
 /* Site-specific layout on top of the shared ds.css tokens.
    Do not fork --ds-accent. Prefix private selectors (trend-, case-, page-). */
 
+/* Keep the shell reading column centered even if a later reset
+   wipes body/main auto margins the way ds.css does on htmlFile pages. */
+main.ds-wrap {
+  margin-inline: auto;
+}
+
 .ds-nav-tools {
   margin-left: 0;
 }

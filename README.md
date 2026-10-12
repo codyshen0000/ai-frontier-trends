@@ -49,7 +49,7 @@ SITE_BASE=/ai-frontier-trends npm run preview
 
 1. 在 `</head>` 前插入  
    `<link rel="stylesheet" href="https://codyshen0000.github.io/assets/ds.css">`  
-   以及相对路径的 `assets/skin-raw.css`（只调和字体、背景、强调色、圆角、链接色；不改图表/控件几何）。
+   以及相对路径的 `assets/skin-raw.css`（调和字体、背景、强调色、圆角、链接色；并在 `ds.css` 把 `body` 的 `margin` 清掉之后，把阅读栏水平居中加回去。不改图表/控件几何）。
 2. 在 `<body>` 后插入一条 `ds-nav` 磨砂顶栏（今日 / 趋势 / 专题 / 关于，右侧个人主页、看板 Studio、主题切换），以及一小段主题/移动菜单脚本。
 3. `/timeline/` 的输出会给「主线 N」标题补上 `id="thread-N"`，方便首页卡片跳转；源文件不动。
 
