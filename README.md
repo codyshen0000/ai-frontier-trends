@@ -39,7 +39,7 @@ SITE_BASE=/ai-frontier-trends npm run preview
 构建时从现有文件抽句子，不另写事实：
 
 - 今天的一句话：`content/live.html` 的 `<meta name="description">`；更新时间取正文里的「构建于 …」。
-- 本周主线：`content/timeline.html` 的「主线 N」标题和「一句话结论」。状态芯片（加强 / 持平 / 待验证）根据标题里的「待观察」和各次「变更」列表用词映射（加固 / 补证据 / 升级 → 加强，下调 / 等级不变 → 持平）。后一次覆盖前一次；没有用词的行保持原状态。同一条里分句写出的「等级不变」仍算到该主线。解析失败则退回 `site.config.json` 的 `threadsFallback`。
+- 本周主线：`content/timeline.html` 的「主线 N」标题和「一句话结论」（标签后可带「（日期 周报版）」这类括号，抽取冒号后的结论句）。状态芯片（加强 / 持平 / 待验证）根据标题里的「待观察」和各次「变更」列表用词映射（加固 / 补证据 / 升级 → 加强，下调 / 等级不变 → 持平）。后一次覆盖前一次；没有用词的行保持原状态。同一条里分句写出的「等级不变」仍算到该主线。解析失败则退回 `site.config.json` 的 `threadsFallback`。
 
 ## 刷新 /live/ 与其它 htmlFile 页
 

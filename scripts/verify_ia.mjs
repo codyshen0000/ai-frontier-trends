@@ -1,7 +1,7 @@
 import { existsSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { extractLiveSpotlight, extractThreads, ensureThreadAnchors } from "./extract.mjs";
+import { extractLiveSpotlight, extractThreads, extractTimelineLede, ensureThreadAnchors } from "./extract.mjs";
 import { injectHtmlFile } from "./build.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -90,6 +90,30 @@ const inherit = extractThreads(
   5,
 );
 assert(inherit.threads.find((t) => t.anchor === "thread-4")?.status === "加强", "主线 4： with no verb keeps 补证据");
+
+assert(
+  extractTimelineLede("<p><strong>一句话结论：主线无升降级；batch RL 修稳定性。</strong></p>") ===
+    "主线无升降级；batch RL 修稳定性。",
+  "plain 一句话结论 lede",
+);
+
+const weeklyEditionLede = extractTimelineLede(
+  "<p><strong>一句话结论（2026-10-12 周报版）：对比 10-08 首版，评审进 RL 升一档并扩到视频。</strong></p>",
+);
+assert(
+  weeklyEditionLede === "对比 10-08 首版，评审进 RL 升一档并扩到视频。",
+  "weekly-edition 一句话结论（…） lede",
+);
+
+const futureEdition = extractThreads(
+  `<p><strong>一句话结论（2026-10-19 周报版）：下周括号标签仍应抽出结论句。</strong></p>${threadSample([])}`,
+  [],
+  5,
+);
+assert(
+  futureEdition.lede === "下周括号标签仍应抽出结论句。",
+  "future 一句话结论（日期 周报版） still extracts lede",
+);
 
 const broken = extractThreads("<html><body><p>no threads</p></body></html>", config.threadsFallback, 5);
 assert(broken.source === "fallback", "fallback when parsing fails");

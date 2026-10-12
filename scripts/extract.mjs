@@ -34,7 +34,7 @@ export function extractLiveSpotlight(html) {
 }
 
 export function extractTimelineLede(html) {
-  const match = String(html).match(/一句话结论：\s*([^<]+)/);
+  const match = String(html).match(/一句话结论(?:\s*[（(][^）)]*[）)])?\s*[：:]\s*([^<]+)/);
   return match ? decodeHtml(match[1]).replace(/<\/?strong>/gi, "").trim() : "";
 }
 
