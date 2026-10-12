@@ -11,6 +11,7 @@
         "label": "趋势",
         "path": "/timeline/",
         "children": [
+          { "id": "weekly", "label": "周报", "path": "/weekly/" },
           { "id": "signals", "label": "信号表", "path": "/signals/" },
           { "id": "weights", "label": "权重追踪", "path": "/weights/" }
         ]
@@ -80,6 +81,16 @@
       "crumb": "时间线",
       "group": "trends",
       "summary": "几条还站得住的判断，以及后来补上的证据。"
+    },
+    {
+      "id": "weekly",
+      "title": "周报",
+      "path": "/weekly/",
+      "section": "趋势",
+      "crumb": "周报",
+      "group": "trends",
+      "weeklyIndex": true,
+      "summary": "按周归纳主线升降、改写和下周要盯的信号。"
     },
     {
       "id": "signals",

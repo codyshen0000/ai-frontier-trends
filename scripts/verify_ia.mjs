@@ -103,6 +103,8 @@ const paths = [
   "/",
   "/live/",
   "/timeline/",
+  "/weekly/",
+  "/weekly/2026-10-12/",
   "/signals/",
   "/weights/",
   "/flux3/",
@@ -122,6 +124,8 @@ assert(home.includes(live.conclusion), "home shows today's conclusion");
 assert(home.includes("看今天的热点"), "home CTA to /live/");
 assert(home.includes("本周主线"), "home has 本周主线");
 assert(home.includes("怎么读这个站"), "home has reader guide");
+assert(home.includes("周报"), "home links to weekly");
+assert(home.includes("/weekly/2026-10-12/") || home.includes("weekly/2026-10-12/"), "home links to latest weekly issue");
 assert(home.includes(">FLUX 3<") || home.includes("FLUX 3"), "home has one FLUX 3 topic card");
 assert((home.match(/class="ds-card trend-thread-card"/g) || []).length >= 3, "home has 3–5 thread cards");
 assert(!home.includes("谱系"), "home avoids 谱系 jargon");
@@ -142,6 +146,7 @@ assert(cases.includes("trend-tabs"), "cases page keeps tab bar");
 const signals = readFileSync(join(distDir, "signals", "index.html"), "utf8");
 assert(signals.includes("升级信号：出现了"), "signals intro is plain language");
 assert(signals.includes("趋势栏目"), "signals has trend sub-nav");
+assert(signals.includes(">周报<"), "signals trend sub-nav includes 周报");
 
 const livePage = readFileSync(join(distDir, "live", "index.html"), "utf8");
 const liveNav = livePage.match(/data-ds-injected="nav"[\s\S]*?<\/header>/)?.[0] || "";
@@ -157,6 +162,30 @@ assert(timelinePage.includes('id="thread-1"'), "timeline output has thread ancho
 for (const needle of ["/workspace", "/home/box", "/cursor/stores"]) {
   assert(!timelinePage.includes(needle), `timeline has no ${needle}`);
 }
+
+const weeklyIndex = readFileSync(join(distDir, "weekly", "index.html"), "utf8");
+assert(weeklyIndex.includes("趋势栏目"), "weekly index has trend sub-nav");
+assert(weeklyIndex.includes("2026-10-12"), "weekly index lists 2026-10-12");
+assert(weeklyIndex.includes("weekly/2026-10-12/") || weeklyIndex.includes("./2026-10-12/"), "weekly index links to the issue");
+assert(weeklyIndex.includes(">周报<"), "weekly tab is in trend sub-nav");
+
+const weeklyIssue = readFileSync(join(distDir, "weekly", "2026-10-12", "index.html"), "utf8");
+const weeklyNav = weeklyIssue.match(/data-ds-injected="nav"[\s\S]*?<\/header>/)?.[0] || "";
+assert(weeklyNav.includes(">今日<") && weeklyNav.includes(">趋势<") && weeklyNav.includes(">专题<") && weeklyNav.includes(">关于<"), "weekly injected nav is the 4-item IA");
+assert(weeklyNav.includes(">周报<"), "weekly dropdown includes 周报");
+assert(weeklyIssue.includes("一句话结论"), "weekly issue keeps the report lede");
+assert(weeklyIssue.includes("data-ds-injected=\"weekly\""), "weekly issue has download chrome");
+assert(weeklyIssue.includes("./report.md") && weeklyIssue.includes("./timeline.md"), "weekly issue links markdown downloads");
+assert(weeklyIssue.includes("https://codyshen0000.github.io/assets/ds.css"), "weekly issue uses shared ds.css");
+for (const needle of ["/workspace", "/home/box", "/cursor/stores", "收藏"]) {
+  assert(!weeklyIssue.includes(needle), `weekly issue has no ${needle}`);
+  assert(!weeklyIndex.includes(needle), `weekly index has no ${needle}`);
+}
+
+for (const file of ["report.md", "timeline.md", "report.html"]) {
+  assert(existsSync(join(distDir, "weekly", "2026-10-12", file)), `weekly issue ships ${file}`);
+}
+assert(existsSync(join(distDir, "weekly", "2026-10-12", "charts", "2026-10-12-evidence-by-line.png")), "weekly issue ships chart pngs");
 
 const injected = injectHtmlFile(liveRaw, { currentId: "live", path: "/live/" });
 assert(injectHtmlFile(injected, { currentId: "live", path: "/live/" }) === injected, "injectHtmlFile is idempotent");
