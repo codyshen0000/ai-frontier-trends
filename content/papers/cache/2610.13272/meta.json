@@ -1,0 +1,8 @@
+{
+ "id": "2610.13272",
+ "abs": "https://arxiv.org/abs/2610.13272",
+ "title": "OWLET: On-Policy Weighted Learning via Evidence Transfer for Video Large Language Model Post-Training",
+ "abstract_first": "Post-training has become a key stage for eliciting reasoning capabilities in Video Large Language Models (Video-LLMs).",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}

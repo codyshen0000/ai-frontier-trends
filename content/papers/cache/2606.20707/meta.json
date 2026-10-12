@@ -1,0 +1,12 @@
+{
+ "id": "2606.20707",
+ "abs": "https://arxiv.org/abs/2606.20707",
+ "title": "GEOPHYS: The Geometry of Physical Plausibility",
+ "abstract_first": "While humans can identify physically implausible events within milliseconds, machine learning approaches addressing the same problem are extremely slow and expensive.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig2.png",
+ "fig_no": 2,
+ "fig_src": "https://arxiv.org/html/2606.20707/figures/backbone_input/frame_01.png",
+ "fig_caption": "GeoPhys  pipeline.  A single video     𝐕  =   (   𝐱  1   ,  …  ,   𝐱  T   )    \\mathbf{V}=(\\mathbf{x}_{1},\\ldots,\\mathbf{x}_{T})    feeds each backbone     f  θ…"
+}

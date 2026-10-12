@@ -1,0 +1,12 @@
+{
+ "id": "2610.13470",
+ "abs": "https://arxiv.org/abs/2610.13470",
+ "title": "GraftOOD: Grafting Out-of-Distribution Exemplars into Advantage-Weighted Rectification for Video Reward Optimization",
+ "abstract_first": "Video reward optimization can increase proxy rewards while reducing video dynamics, a mismatch we identify as \\emph{motion collapse}, including under a video-level motion-quality reward.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig2.png",
+ "fig_no": 2,
+ "fig_src": "https://arxiv.org/html/2610.13470/GraftOOD.png",
+ "fig_caption": "GraftOOD motivation and overview.   Top:  exemplar-guided correction      w  s   ​   (    v  ood   −   v  old  ⋆    )    w_{s}(v^{\\mathrm{ood}}-v_{\\mathrm{old}}…"
+}

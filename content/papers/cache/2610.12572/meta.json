@@ -1,0 +1,8 @@
+{
+ "id": "2610.12572",
+ "abs": "https://arxiv.org/abs/2610.12572",
+ "title": "DiffusionART: Efficient, Stable and Scalable Reinforcement of Diffusion Models",
+ "abstract_first": "Online reinforcement learning (RL) fine-tunes diffusion models with black-box rewards, but reverse-process methods such as Flow-GRPO are limited in efficiency by poor credit assignment, while forward-process methods such as DiffusionNFT are efficient yet unstable without carefully tuned exponential-moving-average (EMA) off-policy training.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}

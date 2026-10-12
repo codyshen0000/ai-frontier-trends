@@ -1,0 +1,12 @@
+{
+ "id": "2610.13740",
+ "abs": "https://arxiv.org/abs/2610.13740",
+ "title": "SmolWAM: A Latent World-Action Model for Robotic Manipulation on Edge Devices",
+ "abstract_first": "World-action models (WAMs) predict a robot's actions together with the observations those actions will produce.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig2.png",
+ "fig_no": 2,
+ "fig_src": "https://arxiv.org/html/2610.13740/figs/world_head_forecast.png",
+ "fig_caption": "World-head forecast , decoded only for display."
+}

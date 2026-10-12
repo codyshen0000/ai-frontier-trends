@@ -1,0 +1,12 @@
+{
+ "id": "2610.13166",
+ "abs": "https://arxiv.org/abs/2610.13166",
+ "title": "Scaling Agentic Data for Long-Horizon Terminal Intelligence",
+ "abstract_first": "Terminal agents are moving beyond local operations toward completing real-world professional tasks.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig2.png",
+ "fig_no": 2,
+ "fig_src": "https://arxiv.org/html/2610.13166/pipline.png",
+ "fig_caption": "Overview of TerminalHorizon. Challenge-guided synthesis refines task environments through independent execution to preserve core problem-solving work. Progressi…"
+}

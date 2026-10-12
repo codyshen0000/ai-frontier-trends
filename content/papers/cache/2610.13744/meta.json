@@ -1,0 +1,12 @@
+{
+ "id": "2610.13744",
+ "abs": "https://arxiv.org/abs/2610.13744",
+ "title": "A Privileged Teacher That Only Scores Cannot Search: Critique-Conditioned On-Policy Self-Distillation for Reasoning",
+ "abstract_first": "On-policy self-distillation promises to replace the sparse outcome signal of verifiable-reward RL with dense token-level credit: a teacher conditioned on the reference solution scores the student's own rollout, and the resulting distributional shift is distilled back into the policy.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.svg",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.13744/fig_loc_twin4_17b_scaleup_v2.svg",
+ "fig_caption": "The reference-conditioned teacher barely reacts at the student’s errors.  Content KL (top) and     Δ  ​   log  ⁡  p    \\Delta\\log p    of the student’s token (b…"
+}

@@ -1,0 +1,12 @@
+{
+ "id": "2610.13395",
+ "abs": "https://arxiv.org/abs/2610.13395",
+ "title": "ProgramGym: Scaling Training Environments for Long-Horizon Program Reproduction Agents",
+ "abstract_first": "Coding agents are increasingly used to build programs from scratch as software engineers do rather than to resolve issues within a repository or to generate a repository from a given requirements document.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.png",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.13395/motivation.png",
+ "fig_caption": "Overview of  ProgramGym ."
+}

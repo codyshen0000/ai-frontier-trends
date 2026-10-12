@@ -1,0 +1,12 @@
+{
+ "id": "2610.13045",
+ "abs": "https://arxiv.org/abs/2610.13045",
+ "title": "Redirecting Teacher Supervision: Temporal-Response-Guided Latent Distillation for Video-Language Models",
+ "abstract_first": "On-policy distillation (OPD) transfers capabilities through teacher predictions on student-generated sequences, as studied by GKD and MiniLLM for language models and Video-OPD for video tasks.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig2.png",
+ "fig_no": 2,
+ "fig_src": "https://arxiv.org/html/2610.13045/figures/figure2.png",
+ "fig_caption": "TRG training framework. Frames and question: Video-R1-260k, STAR sample #1552  ( Feng et al., 2025 ) . Student rollouts receive output supervision; accepted tea…"
+}
