@@ -13,12 +13,19 @@ body {
   color: var(--ds-text) !important;
 }
 
-/* ds.css `html.ds-page, html.ds-page body { margin: 0 }` is more specific
-   than source `body{max-width:920px;margin:auto}` (weekly, timeline).
-   That leaves a 900–920px column hugging the left on wide screens.
-   Restore horizontal centering only; keep source max-width / padding.
-   The injected nav still full-bleeds via the rule below. */
+/* Two reading-column contracts, both restored here so inject CSS
+   cannot left-hug the page. Do not rewrite htmlFile source markup.
+   - weekly / timeline: source centers `body{max-width:…;margin:auto}`.
+     ds.css `html.ds-page body { margin: 0 }` is more specific and
+     wipes that; restore horizontal auto only.
+   - /live/: source centers `main{max-width:1000px;margin:0 auto}`
+     (body stays full-bleed). Keep that main column centered after
+     inject; do not move live centering onto body. */
 html.ds-page body {
+  margin-inline: auto;
+}
+
+html.ds-page main {
   margin-inline: auto;
 }
 

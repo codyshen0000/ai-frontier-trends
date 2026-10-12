@@ -204,6 +204,14 @@ assert(
   /html\.ds-page\s+body\s*\{[^}]*margin-inline:\s*auto/.test(skinRaw),
   "skin-raw restores body centering after ds.css margin reset",
 );
+assert(
+  /html\.ds-page\s+main\s*\{[^}]*margin-inline:\s*auto/.test(skinRaw),
+  "skin-raw keeps live's main{margin:auto} column after inject",
+);
+assert(
+  !/html\.ds-page\s+body\s*\{[^}]*max-width/.test(skinRaw),
+  "skin-raw does not force a body max-width onto live",
+);
 assert(weeklyIndex.includes('class="ds-wrap'), "weekly index uses the centered ds-wrap shell");
 
 const weeklyIssue = readFileSync(join(distDir, "weekly", "2026-10-12", "index.html"), "utf8");
