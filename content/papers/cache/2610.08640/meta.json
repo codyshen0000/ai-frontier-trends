@@ -1,0 +1,8 @@
+{
+ "id": "2610.08640",
+ "abs": "https://arxiv.org/abs/2610.08640",
+ "title": "RIWANav: Recursive World-Action Models with Self-Improvement for Urban Navigation",
+ "abstract_first": "Long-horizon urban navigation requires sequential local decisions whose errors can compound over time.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}
