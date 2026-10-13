@@ -1,0 +1,12 @@
+{
+ "id": "2609.35738",
+ "abs": "https://arxiv.org/abs/2609.35738",
+ "title": "Harness Learning Enables Generalizable Test-Time Adaptation",
+ "abstract_first": "A language-model agent is jointly defined by its model and its harness, the executable program that organizes model calls, tool use, and information flow.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.png",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2609.35738/presentation-teasor.png",
+ "fig_caption": "Harness learning.  The proposer reads the task description, the current harness     h   t  −  1    h_{t-1}   , and its execution report, and writes a code edit …"
+}

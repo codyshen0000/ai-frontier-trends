@@ -1,0 +1,12 @@
+{
+ "id": "2610.13098",
+ "abs": "https://arxiv.org/abs/2610.13098",
+ "title": "VETR: Execution-Grounded Self-Improving Agent for Symbolic Graphics Reasoning",
+ "abstract_first": "Visual agents for symbolic graphics reasoning depend on executable world representations, yet continued improvement remains bottlenecked by ambiguous supervision from final renders.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.png",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.13098/VETR_figure1.png",
+ "fig_caption": "Conceptual overview of VETR.  VETR refines scenes through execution-grounded evidence, bridging a scene program, its execution trace, and the realized 3D scene.…"
+}

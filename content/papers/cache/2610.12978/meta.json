@@ -1,0 +1,8 @@
+{
+ "id": "2610.12978",
+ "abs": "https://arxiv.org/abs/2610.12978",
+ "title": "Learning Representations to Guide Pixel Diffusion Transformers",
+ "abstract_first": "Visual representations are largely developed for understanding, yet what makes them useful for generation remains unclear.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}

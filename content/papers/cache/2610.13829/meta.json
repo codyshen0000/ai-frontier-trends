@@ -1,0 +1,12 @@
+{
+ "id": "2610.13829",
+ "abs": "https://arxiv.org/abs/2610.13829",
+ "title": "MC-EvoBench: Auditing Experience-Driven Self-Improvement in Minecraft Agents",
+ "abstract_first": "A central challenge in embodied recursive self-improvement is enabling agents to convert interaction history into capabilities that persist beyond one world and transfer to later tasks.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.png",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.13829/Diff.png",
+ "fig_caption": "Evaluation mechanism of MC-EvoBench. A conventional benchmark records only whether an agent reaches the goal. MC-EvoBench also measures progress through the tas…"
+}

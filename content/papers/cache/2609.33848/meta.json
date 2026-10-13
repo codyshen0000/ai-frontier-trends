@@ -1,0 +1,8 @@
+{
+ "id": "2609.33848",
+ "abs": "https://arxiv.org/abs/2609.33848",
+ "title": "QwenGyre: An Elastic Reinforcement Learning Framework for Training xLong-Horizon Agents",
+ "abstract_first": "Large language model (LLM) agents increasingly undertake extreme-long (xlong) horizon tasks, where a single execution can span hours, hundreds of model--environment interactions, and nearly 1M tokens per rollout.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}

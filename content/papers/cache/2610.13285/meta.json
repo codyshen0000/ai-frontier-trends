@@ -1,0 +1,8 @@
+{
+ "id": "2610.13285",
+ "abs": "https://arxiv.org/abs/2610.13285",
+ "title": "BoundaryEvo: Data-Model Co-Evolution at the Capability Boundary for Long-Chain Reasoning Distillation",
+ "abstract_first": "Distilling long-chain reasoning trajectories from large teacher models provides an effective way to improve the reasoning ability of small language models.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}

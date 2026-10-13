@@ -1,0 +1,8 @@
+{
+ "id": "2609.36014",
+ "abs": "https://arxiv.org/abs/2609.36014",
+ "title": "Persistence Forcing: Exploiting Feature Specialization in Pixel-Space Diffusion",
+ "abstract_first": "Pixel-space diffusion Transformers (DiTs) directly operate on high-dimensional visual data, yet their hidden representations typically undergo uniform refinement across depth.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}

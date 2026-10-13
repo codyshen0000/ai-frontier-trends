@@ -1,0 +1,12 @@
+{
+ "id": "2610.12855",
+ "abs": "https://arxiv.org/abs/2610.12855",
+ "title": "Mitigating Capability Degradation in LLM Self-Improvement via Representation Geometry Regularization",
+ "abstract_first": "On-Policy Self-distillation is a self-improvement paradigm that enables large language models (LLMs) to improve their capabilities by leveraging the same model as both teacher and student under different conditioning contexts.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.png",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.12855/intro-1.png",
+ "fig_caption": "(a) The capability degradation ratio of existing methods; (b) Although the overall performance improves during training, some problems that were previously resp…"
+}

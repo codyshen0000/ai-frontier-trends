@@ -1,0 +1,8 @@
+{
+ "id": "2610.04272",
+ "abs": "https://arxiv.org/abs/2610.04272",
+ "title": "Rethinking Self-Distillation for Multi-Teacher Capability Merging",
+ "abstract_first": "Combining capabilities of multiple expert models trained starting from the same base checkpoint has become increasingly common in frontier language-model post-training.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}

@@ -1,0 +1,12 @@
+{
+ "id": "2609.33298",
+ "abs": "https://arxiv.org/abs/2609.33298",
+ "title": "Direct Hidden-State Alignment: Mapping and Controlling Preference Expression in LLMs",
+ "abstract_first": "In many settings, post-training need not create the target behavior from scratch: the base model can already produce it, but not reliably.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.svg",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2609.33298/figure1_overview.svg",
+ "fig_caption": "Overview of RCM-guided direct hidden-state alignment.  (a) A schematic sampling contrast illustrates the gap between behavioral reachability and reliable expres…"
+}

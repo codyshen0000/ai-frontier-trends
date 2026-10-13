@@ -1,0 +1,12 @@
+{
+ "id": "2610.12536",
+ "abs": "https://arxiv.org/abs/2610.12536",
+ "title": "EliteTable: Self-Improving Program Search for Executable Control Policies",
+ "abstract_first": "EliteTable is a self-improving program-search algorithm guided by large language models (LLMs) that uses a fixed-capacity table of high-scoring solutions to guide new proposals, edits of existing solutions, and remixes of several solutions.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig2.svg",
+ "fig_no": 2,
+ "fig_src": "https://arxiv.org/html/2610.12536/population-distributions-wide.svg",
+ "fig_caption": "Candidate search-return distributions across generations, pooled over ten searches per task. Solid blue lines show pooled candidate medians; faint lines show me…"
+}
