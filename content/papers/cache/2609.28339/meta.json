@@ -1,0 +1,8 @@
+{
+ "id": "2609.28339",
+ "abs": "https://arxiv.org/abs/2609.28339",
+ "title": "Beyond Future Prediction: Denoising as Generative Adaptation for Robot Control",
+ "abstract_first": "Pretrained generative Diffusion Transformers (DiTs) capture rich pixel-level visual and language-conditioned structure through large-scale image and video generation training.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}

@@ -1,0 +1,12 @@
+{
+ "id": "2610.12099",
+ "abs": "https://arxiv.org/abs/2610.12099",
+ "title": "UNITAS: A 3D-Native World Action Model for Embodied Manipulation",
+ "abstract_first": "World action models (WAMs) aim to answer a coupled physical question: given a task instruction, what motion should the robot execute, and how will that motion change the surrounding world?",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.png",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.12099/unitas_overview.png",
+ "fig_caption": "Unitas  is a 3D-native world action model.   Observations, action flow, and scene flow share a metric frame within each prediction window, with a common represe…"
+}

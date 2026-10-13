@@ -1,0 +1,12 @@
+{
+ "id": "2610.12176",
+ "abs": "https://arxiv.org/abs/2610.12176",
+ "title": "Recursive Self-Improvement through Multi-Agent Self-Supervision",
+ "abstract_first": "Recursive self-improvement (RSI) of a model on non-verifiable tasks, such as open-ended research, faces a supervision bottleneck when its outputs exceed what even human experts can reliably assess, leaving the model itself (optimizee) as the best available optimizer and evaluator.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.png",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.12176/ICLRpaper_new11.png",
+ "fig_caption": "Recursive self-improvement with multi-agent self-supervision (MASS). The agent, evaluator, and optimizer share the same language model (LM). MASS encodes multi-…"
+}

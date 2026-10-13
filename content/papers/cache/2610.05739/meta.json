@@ -1,0 +1,12 @@
+{
+ "id": "2610.05739",
+ "abs": "https://arxiv.org/abs/2610.05739",
+ "title": "HLA-WM: Hybrid Linear Attention for Long-Horizon Video World Models",
+ "abstract_first": "Long-horizon video world models require persistent memory to preserve scene consistency over extended rollouts.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig3.png",
+ "fig_no": 3,
+ "fig_src": "https://arxiv.org/html/2610.05739/hla_wm_method.png",
+ "fig_caption": "Overview of HLA-WM. Historical video chunks are represented by independent GDN summaries. Given the current query, geometry-guided retrieval selects scene-relev…"
+}
