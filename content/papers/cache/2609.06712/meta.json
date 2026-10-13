@@ -1,0 +1,8 @@
+{
+ "id": "2609.06712",
+ "abs": "https://arxiv.org/abs/2609.06712",
+ "title": "RoLA: Rotary-Positioned Low-Rank Linear Attention for Efficient Diffusion Transformers",
+ "abstract_first": "Diffusion Transformers (DiTs) achieve strong video generation quality, but their dense spatiotemporal self-attention scales quadratically with sequence length and quickly becomes the dominant inference bottleneck.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}

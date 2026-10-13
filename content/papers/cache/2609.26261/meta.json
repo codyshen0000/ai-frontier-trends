@@ -1,0 +1,12 @@
+{
+ "id": "2609.26261",
+ "abs": "https://arxiv.org/abs/2609.26261",
+ "title": "Coding Agents are Strong Prompt Optimizers",
+ "abstract_first": "Search-based prompt optimizers improve prompts through iterative search: they propose edits, execute fresh rollouts, score the resulting trajectories, and retain only edits that improve a validation metric.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.svg",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2609.26261/fig_teaser.svg",
+ "fig_caption": "A coding agent as a prompt optimizer.   Left:  Search-based optimizers (GEPA, SkillOpt) iteratively refine prompts using environment rollouts and validation fee…"
+}
