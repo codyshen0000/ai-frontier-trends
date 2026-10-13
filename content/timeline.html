@@ -14,7 +14,7 @@ pre.mermaid{background:#fff;text-align:center} a{color:#0969da}
 <p id="back-home"><a href="../">← 返回首页</a></p>
 <div id="ctl"><button onclick="t(false)">全部展开</button><button onclick="t(true)">全部折叠</button></div>
 <h1>AI 前沿趋势时间线（前沿趋势分析维护）</h1>
-<p><strong>一句话结论（2026-10-12 晚）：主线无升级。OPD 诊断扩到交互状态接地与 critique 条件打分；视频 flow RL 出稳定性补丁（留观察）；信号表仍无翻转。</strong></p>
+<p><strong>一句话结论（2026-10-13 午）：主线无升级。信号 4 出现首个结构样本 RIWANav（在世界模型里 RL 训权重并留存，学术单篇，未升档）；RSI 留存的证伪侧多两条弱证据。</strong></p>
 <pre class="mermaid">graph LR
   A["LLM 后训练【证实】<br/>SFT 热身 → OPD → RL<br/>OPD 有适用条件 · 状态接地 · critique 找错"] --> B["在学生样本上学【推断】<br/>样本来源 · KL 方向 · 重叠率门控<br/>老师上下文要干净"]
   B --> C["扩散侧<br/>GFD-OPD · MILD · Omni-Diffusion-Distill"]
@@ -25,7 +25,7 @@ pre.mermaid{background:#fff;text-align:center} a{color:#0969da}
   D -. 推翻信号 .-> G["无老师少步<br/>MeanFlow · shortcut"]
   V["观察：VAE 与因果<br/>CRP/Optica · 仍 50 步"] -. 可当因果老师 .-> D
   H["单一偏好奖励被钻空子"] --> I["评审进入 RL 闭环【推断】<br/>图：偏好+rubric · 视频：WorldAlign<br/>观察：DiffusionART / GraftOOD"]
-  I --> W["世界模型三形态<br/>代码 · 像素 · 潜空间<br/>RSI/DreamTrue 观察 · 信号4仍空"]
+  I --> W["世界模型三形态<br/>代码 · 像素 · 潜空间<br/>信号4：RIWANav 首例（单篇，未升档）<br/>RSI-Anything/DreamTrue 观察"]
   J["数据差距<br/>LLM【证实】· 生图后训练【证实】· 预训练【叙事】"] --> A
   J --> I
   K["竞争转向可控【推断】"] --> L["多轮编辑 · VINCIE-NExT"]
@@ -86,6 +86,7 @@ pre.mermaid{background:#fff;text-align:center} a{color:#0969da}
 <li>补充（2026-10-12，视频版，等级不变）：WorldAlign（<a href="https://arxiv.org/abs/2610.12382">arXiv 2610.12382</a>，港科大（广州）+ 快手可灵）把「评审进 RL」搬到图生视频。静态区域用几何基础模型做掩码重投影奖励，另加相机运动奖励，防模型靠「不动」骗分。动态主体由 VLM 按样本专属 checklist 打分。训练用 Flow-GRPO 在线更新，不用人类偏好标注。在 Wan2.1 和 Wan2.2 上同时改善静态和动态一致性（摘要口径）；Wan2.1-I2V-14B 的 checklist 通过率 0.760→0.856，人评胜率 76.0%（作者自报，引 AI热点追踪 日报）。它没有和纯偏好奖励对照，所以不再升档。几何奖励来自学出来的几何模型，任务也不是纯文生图，不触发推翻信号。</li>
 <li>补充（2026-10-12，信号 4 不翻转）：DreamTrue（<a href="https://arxiv.org/abs/2610.12468">arXiv 2610.12468</a>，中科院自动化所 + 高德）用 4.49 万条人标缺陷视频训 Qwen3.5-9B 奖励模型，再用 DiffusionNFT 对机器人世界模型本身做 RL。反事实动作下，交互缺陷 48.12%→6.25%，物体缺陷 31.88%→3.12%（160 个条件，三人盲评）【证实，单篇】。它改的是世界模型的预测，不是把世界模型当环境训策略；评审也是学出来的。所以不计入信号 4。它当策略评估器时，成功率误差从 12.92 降到 7.08 个百分点，像素世界作评估器在变准【推断】。</li>
 <li>补充（2026-10-12 晚，观察，等级不变）：DiffusionART（<a href="https://arxiv.org/abs/2610.12572">arXiv 2610.12572</a>，NUS+可灵）指认 DiffusionNFT 目标内「前向–反向一致性力」，改聚合奖励+trust region；HunyuanVideo-13B 上相对 NFT/Flow-GRPO-Fast 约 12× 更省 GPU 时【证实】。GraftOOD（<a href="https://arxiv.org/abs/2610.13470">arXiv 2610.13470</a>）用 OOD 示范嫁接防视频运动坍缩；Wan2.1-1.3B Dynamic Degree 4.86→44.41，HPSv3 8.10→7.32【证实】。二者为同架构 RL 稳定性修正，不进信号正表。RSI-Anything（<a href="https://arxiv.org/abs/2610.13912">arXiv 2610.13912</a>）用世界模型筛候选并留存策略–模型对；代码修复实验冻住 coder，不计入信号 4 正表。</li>
+<li>补充（2026-10-13 午间 RSI 巡查，信号 4 首个结构样本，主线等级不变）：RIWANav（<a href="https://arxiv.org/abs/2610.08640">arXiv 2610.08640</a>，上海交大等）在像素世界模型 Cosmos 里用 GRPO 训导航策略权重。每轮再用新策略产出、且与专家一致的动作–视频对更新世界模型。更新后的世界模型给下一轮策略打分，共 19 轮。UrbanNav 未见区成功率：冻结世界模型（GRPO-WM）80.31%，RIWANav 88.25%（3 seed，作者自报）【证实，单篇】。只用专家数据更新世界模型，反而降到 78.23%。这是信号 4 的第一例「在世界模型里用 RL 训权重，且留存更新进入下一轮」。不升档，原因有三：学术单篇，不是大厂报告；离线数据集、单一任务；打分函数 R_nav 细节未公开，可能依赖学出来的评审【推断】。升级还差：第二个独立复现，或大厂报告写明同一做法。同日旁证：Harness Learning（<a href="https://arxiv.org/abs/2609.35738">arXiv 2609.35738</a>）用 RL 训 4B 改写器，21 个未见任务均分 0.62，高于 35B 老师的 0.56；但用多轮留存状态训练没有稳定增益（format-varied 0.649 对 0.725）【证实】。MC-EvoBench（<a href="https://arxiv.org/abs/2610.13829">arXiv 2610.13829</a>）在 Minecraft 审计经验留存：相关经验没有稳定迁移，三组区间都含零【证实】；但基线执行力接近地板，只算证伪侧弱证据【推断】。VETR（2610.13098）、EliteTable（2610.12536）、BoundaryEvo（2610.13285）借用 RSI 说法，不在世界模型里训权重，留观察【叙事】。</li>
 <li>升级信号：出现开源的"VLM 评审 + 生成器"闭环 RL 训练框架或技术报告，并给出相对纯偏好奖励的增益；世界动作模型用模拟器成功率做 RL，且公开数据。</li>
 <li>推翻信号：纯文生图出现新的、可规模化的可验证奖励（不是 OCR、计数这一类），并带来显著的人评提升。</li>
 </ul>
@@ -189,6 +190,13 @@ pre.mermaid{background:#fff;text-align:center} a{color:#0969da}
 <li>主线 4–7、5：无等级变化。信号表无翻转。</li>
 <li>已宣布未交付：无交付。Step 5 仍承诺 10-15。</li>
 <li>顶部结论换成晚间版；脉络图补 State/Critique 与 flow-RL 观察节点。</li>
+</ul>
+<h2>变更 2026-10-13（午间 RSI 巡查）</h2>
+<ul>
+<li>主线 3：信号 4 出现首个结构样本 RIWANav（学术单篇）；不升档，等独立复现或大厂报告。</li>
+<li>RSI 证伪侧：Harness Learning 多轮留存训练无稳定增益；MC-EvoBench 经验留存无稳定迁移。两条都是弱证据，不翻转。</li>
+<li>RSI-Anything 基线不变：仍在信号 4 观察区。其他主线无变化。</li>
+<li>顶部结论和脉络图换成午间版。</li>
 </ul>
 <script type="module">
 import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
