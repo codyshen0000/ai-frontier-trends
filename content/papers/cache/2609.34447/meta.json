@@ -1,0 +1,12 @@
+{
+ "id": "2609.34447",
+ "abs": "https://arxiv.org/abs/2609.34447",
+ "title": "Unbiased Top-$k$ Estimation for On-Policy Distillation",
+ "abstract_first": "On-policy distillation (OPD) is becoming an important component of large language model (LLM) post-training for transferring the reasoning capability of a strong teacher LLM to a weaker student LLM.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.svg",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2609.34447/tt_opd_overview_latex.svg",
+ "fig_caption": "Overview of TT-OPD.  The notation     s  ​  g  ​   (  ⋅  )    sg(\\cdot)    denotes the stop-gradient operator. At each student-visited state     Z  t   Z_{t}   …"
+}

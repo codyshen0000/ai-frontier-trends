@@ -1,0 +1,12 @@
+{
+ "id": "2610.13361",
+ "abs": "https://arxiv.org/abs/2610.13361",
+ "title": "AgentSWE: Can Coding Agents Build the Agent You Actually Want?",
+ "abstract_first": "As the production of software passes into the hands of software itself, coding agents are increasingly commissioned to build agents fitted to their users' own workflows.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.svg",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.13361/fig1-agentswe-overview.svg",
+ "fig_caption": "AgentSWE at a glance. (a) Existing benchmarks grade the patch a coding agent writes, or the performance of an agent someone else built; neither asks whether a c…"
+}

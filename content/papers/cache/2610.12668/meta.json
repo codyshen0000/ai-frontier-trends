@@ -1,0 +1,8 @@
+{
+ "id": "2610.12668",
+ "abs": "https://arxiv.org/abs/2610.12668",
+ "title": "Recurrent Harness for Agentic Continual Learning",
+ "abstract_first": "Language model agents increasingly operate over long interaction streams, requiring online adaptation to distribution shifts through continual learning.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}
