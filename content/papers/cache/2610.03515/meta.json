@@ -1,0 +1,8 @@
+{
+ "id": "2610.03515",
+ "abs": "https://arxiv.org/abs/2610.03515",
+ "title": "Learning from Repaired Reasoning: Root-Cause-Guided On-Policy Distillation",
+ "abstract_first": "On-policy self-distillation (OPSD) uses reference solutions as privileged hindsight to supervise student-generated reasoning trajectories.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}

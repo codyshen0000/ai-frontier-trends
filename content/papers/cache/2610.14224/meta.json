@@ -1,0 +1,12 @@
+{
+ "id": "2610.14224",
+ "abs": "https://arxiv.org/abs/2610.14224",
+ "title": "Harness^2: Recursive Agent Harnessing for an Open World",
+ "abstract_first": "LLM agents' capabilities depend not only on their underlying models but also on their execution harnesses.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig3.png",
+ "fig_no": 3,
+ "fig_src": "https://arxiv.org/html/2610.14224/harness2_main_new.png",
+ "fig_caption": "The  Harness  2    pipeline. Task-level recursion proposes invariant and domain-specific harness edits, probes their effects, and composes a successor execution…"
+}

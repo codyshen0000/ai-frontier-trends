@@ -1,0 +1,12 @@
+{
+ "id": "2610.18011",
+ "abs": "https://arxiv.org/abs/2610.18011",
+ "title": "Correcting or Continuing? What On-Policy Distillation Learns from Student Errors",
+ "abstract_first": "On-policy distillation (OPD) trains a student on its own rollouts under a frozen teacher, mitigating the distribution mismatch of off-policy supervision.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig2.svg",
+ "fig_no": 2,
+ "fig_src": "https://arxiv.org/html/2610.18011/summary_forest.svg",
+ "fig_caption": "Accuracy change relative to the frozen student on the competent-student hard subset. All evaluated mechanisms yield non-positive changes. Single-run results are…"
+}

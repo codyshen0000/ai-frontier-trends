@@ -1,0 +1,12 @@
+{
+ "id": "2610.14118",
+ "abs": "https://arxiv.org/abs/2610.14118",
+ "title": "ClawLoop: Self-Improving Agents via Harness-Native Training Loop",
+ "abstract_first": "The rapid advancement of Large Language Models (LLMs) has driven their deployment toward general-purpose harness environments, where LLM-based agents operate in sandbox workspaces and interact directly with file systems and shells.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.png",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.14118/Figures/main.png",
+ "fig_caption": "Overview of  ClawLoop . Within a specific iteration, the agent need to experience three phases:  1. Task Synthesis and Selection, 2. Train  and  3. Diagnosis an…"
+}

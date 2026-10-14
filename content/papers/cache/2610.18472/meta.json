@@ -1,0 +1,8 @@
+{
+ "id": "2610.18472",
+ "abs": "https://arxiv.org/abs/2610.18472",
+ "title": "Simplifying and Improving On-Policy Distillation for Few-Step Diffusion",
+ "abstract_first": "Few-step distillation reduces the sampling cost of diffusion and flow models, but existing approaches often require auxiliary score models or specialized architectures.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}
