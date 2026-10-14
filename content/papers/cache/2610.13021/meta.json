@@ -1,0 +1,12 @@
+{
+ "id": "2610.13021",
+ "abs": "https://arxiv.org/abs/2610.13021",
+ "title": "EmbodiedCLBench: Evaluating Continual Learning for Self-Evolving Embodied Agents",
+ "abstract_first": "Continual learning requires models to accumulate past experience and transfer it to new tasks.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig2.png",
+ "fig_no": 2,
+ "fig_src": "https://arxiv.org/html/2610.13021/tongbench_pipeline_overview_lrx_refine.png",
+ "fig_caption": "Overview of the construction process of  EmbodiedCLBench .  During task generation, basic tasks connect a few atomic actions into simple household operations, a…"
+}

@@ -1,0 +1,12 @@
+{
+ "id": "2609.32423",
+ "abs": "https://arxiv.org/abs/2609.32423",
+ "title": "PluginRSI: Recursive Improvement of Agent Harnesses with Reusable Plugins",
+ "abstract_first": "The harness surrounding a language model is a central determinant of agent performance.",
+ "license": "https://creativecommons.org/licenses/by-sa/",
+ "reuse_ok": true,
+ "fig_file": "fig2.png",
+ "fig_no": 2,
+ "fig_src": "https://arxiv.org/html/2609.32423/framework.png",
+ "fig_caption": "Overview of PluginRSI.   (1) Plugin mutation  explores individual plugin changes in parallel while keeping the remaining harness fixed.  (2) Harness recompositi…"
+}

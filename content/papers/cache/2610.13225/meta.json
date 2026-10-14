@@ -1,0 +1,12 @@
+{
+ "id": "2610.13225",
+ "abs": "https://arxiv.org/abs/2610.13225",
+ "title": "ReSFlow: Rectifying Categorical Flows on Statistical Manifolds for One-Step Generation",
+ "abstract_first": "Generative modeling for discrete data has been significantly advanced by learning continuous vector fields on the statistical manifolds to transport simple priors to target discrete distributions.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.png",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.13225/figure_1.png",
+ "fig_caption": "Overview of Spherical Rectified Flow.   Top:  Standard reflow straightens linear paths on the simplex, but their corresponding spherical geodesics still interse…"
+}

@@ -1,0 +1,12 @@
+{
+ "id": "2610.13024",
+ "abs": "https://arxiv.org/abs/2610.13024",
+ "title": "What Visual Representations Do World Action Models Need?",
+ "abstract_first": "World Action Models (WAMs) inherit powerful priors from pretrained video generation models, but their variational autoencoder (VAE) representations are optimized for visual reconstruction rather than manipulation.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.png",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.13024/teaser_rq3_synced.png",
+ "fig_caption": "Overview of our systematic study of visual representations in WAMs. Under a shared training protocol, we compare visual feature sources (RQ1), five integration …"
+}

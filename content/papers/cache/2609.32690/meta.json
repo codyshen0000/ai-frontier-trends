@@ -1,0 +1,12 @@
+{
+ "id": "2609.32690",
+ "abs": "https://arxiv.org/abs/2609.32690",
+ "title": "MM-OPD: Towards One More Bottleneck Between Perception and Reasoning",
+ "abstract_first": "Recent multimodal large language models (MLLMs) advance visual reasoning by strengthening both perception and reasoning, implicitly assuming a process that transitions seamlessly from perception to reasoning.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.jpg",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2609.32690/figure/teaser.jpg",
+ "fig_caption": "(Left)  A case of replacing the question image with its symbolic view, under the same model, question, and decoding procedure.  (Right)  The  Symbolic Visual Ga…"
+}

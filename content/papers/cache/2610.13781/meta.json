@@ -1,0 +1,8 @@
+{
+ "id": "2610.13781",
+ "abs": "https://arxiv.org/abs/2610.13781",
+ "title": "SimVTA: Simulation-Grounded Video-Trajectory Alignment for Driving World Action Models",
+ "abstract_first": "Driving world action models (WAMs) learn from paired trajectories and future observations.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}
