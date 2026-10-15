@@ -1,0 +1,12 @@
+{
+ "id": "2610.19820",
+ "abs": "https://arxiv.org/abs/2610.19820",
+ "title": "ActionOPD: Distilling Decisions, Not Tokens",
+ "abstract_first": "Distilling capable language-model agents into smaller models requires aligning the student's behavior with the teacher's.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.svg",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.19820/teaser.svg",
+ "fig_caption": "Student–teacher scaling of ActionOPD. Larger students attain higher final averages. DeepSeek-V4-Flash yields higher student averages than Qwen3.7-Flash."
+}

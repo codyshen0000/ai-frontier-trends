@@ -1,0 +1,8 @@
+{
+ "id": "2610.20220",
+ "abs": "https://arxiv.org/abs/2610.20220",
+ "title": "Glance Forcing: Making Bidirectional Diffusion Autoregressive at a Glance",
+ "abstract_first": "Autoregressive generation underlies real-time, causal video synthesis and is the backbone of video world models.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}
