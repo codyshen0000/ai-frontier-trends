@@ -1,0 +1,12 @@
+{
+ "id": "2610.20431",
+ "abs": "https://arxiv.org/abs/2610.20431",
+ "title": "SwarmRSI: Recursive Self-Improvement through Evolving Scientific Agent Swarm",
+ "abstract_first": "Recursive self-improvement (RSI) in scientific research aims to improve agents' research capabilities through their own experimental experience.",
+ "license": "https://creativecommons.org/licenses/by-nc-sa/",
+ "reuse_ok": true,
+ "fig_file": "fig2.png",
+ "fig_no": 2,
+ "fig_src": "https://arxiv.org/html/2610.20431/fig_architecture_review.png",
+ "fig_caption": "Overview of  SwarmRSI . Scientific agents use research states assembled from a shared graph. Feedback-Guided Swarm Mutation revises a hypothesis and implements …"
+}

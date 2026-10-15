@@ -1,0 +1,8 @@
+{
+ "id": "2610.20474",
+ "abs": "https://arxiv.org/abs/2610.20474",
+ "title": "AdaRSI: On-Demand Recursive Self-Improvement for Embodied Agents",
+ "abstract_first": "Pretrained vision-language-action models (VLAs) often fail midway through unseen long-horizon tasks.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}

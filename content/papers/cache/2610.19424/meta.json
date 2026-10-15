@@ -1,0 +1,8 @@
+{
+ "id": "2610.19424",
+ "abs": "https://arxiv.org/abs/2610.19424",
+ "title": "VideoHarness-SRSI: Structured Recursive Self-Improvement for Video Understanding Harness",
+ "abstract_first": "LLM system capabilities depend not only on model parameters but also on the executable harnesses that organize information acquisition, tool use, reasoning, and memory.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}
