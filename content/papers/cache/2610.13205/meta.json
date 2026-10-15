@@ -1,0 +1,8 @@
+{
+ "id": "2610.13205",
+ "abs": "https://arxiv.org/abs/2610.13205",
+ "title": "Rethinking Relative Policy Differences Transfer of On-Policy Distillation",
+ "abstract_first": "On-policy distillation (OPD) trains a target policy on its own rollouts using token-level supervision from a stronger teacher, but typically relies on the teacher being substantially more capable than the target.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}
