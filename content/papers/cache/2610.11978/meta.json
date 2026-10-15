@@ -1,0 +1,8 @@
+{
+ "id": "2610.11978",
+ "abs": "https://arxiv.org/abs/2610.11978",
+ "title": "Specialized Decision Models vs. General-Purpose LLMs: Benchmarking Jev Across Knowledge, Reasoning, and Multilingual Tasks",
+ "abstract_first": "Jev is a \"System One\" model that returns a choice among given options instead of generating text.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}
