@@ -1,0 +1,8 @@
+{
+ "id": "2610.15782",
+ "abs": "https://arxiv.org/abs/2610.15782",
+ "title": "Data-Centric Recursive Self-Improvement for Navigation via Policy-Synchronized Language-Action Dual Bootstrapping",
+ "abstract_first": "Vision-language navigation requires agents to follow natural-language instructions to reach target locations, making high-quality language supervision essential.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}

@@ -1,0 +1,8 @@
+{
+ "id": "2609.36642",
+ "abs": "https://arxiv.org/abs/2609.36642",
+ "title": "PR-OPD: Privileged Representation On-policy Self-Distillation for Agentic Reinforcement Learning",
+ "abstract_first": "Language-model agents are usually trained by reinforcement learning from one reward per episode, and privileged self-distillation enriches it by letting the same policy, given a skill, teach its skill-free self through token probabilities.",
+ "license": "arXiv non-exclusive (no reuse)",
+ "reuse_ok": false
+}
