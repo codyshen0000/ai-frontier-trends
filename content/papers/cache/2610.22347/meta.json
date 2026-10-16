@@ -1,0 +1,12 @@
+{
+ "id": "2610.22347",
+ "abs": "https://arxiv.org/abs/2610.22347",
+ "title": "Speculative Forcing for Efficient Autoregressive Video Generation",
+ "abstract_first": "Few-step autoregressive video generators enable streaming generation, yet they run every token through the final denoising step, regardless of how much refinement it needs.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig1.png",
+ "fig_no": 1,
+ "fig_src": "https://arxiv.org/html/2610.22347/teaser_pipe_final_v1.png",
+ "fig_caption": "Compared with full-step sampling (a), Speculative Forcing treats intermediate token estimates as drafts, accepts those that have converged, and refines only the…"
+}

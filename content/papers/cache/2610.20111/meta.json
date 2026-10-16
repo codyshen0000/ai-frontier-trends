@@ -1,0 +1,12 @@
+{
+ "id": "2610.20111",
+ "abs": "https://arxiv.org/abs/2610.20111",
+ "title": "RepForcing: Representation-Space Initialization for Autoregressive Video Distillation",
+ "abstract_first": "Distilling pretrained video diffusion models into few-step autoregressive (AR) generators typically combines student initialization with distribution matching distillation (DMD).",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig3.png",
+ "fig_no": 3,
+ "fig_src": "https://arxiv.org/html/2610.20111/pipeline.png",
+ "fig_caption": "Representation Forcing Initialization Pipeline.  Training videos are encoded into clean latent blocks by a VAE encoder. The trainable causal DiT reconstructs cl…"
+}
