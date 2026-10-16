@@ -1,0 +1,12 @@
+{
+ "id": "2610.22192",
+ "abs": "https://arxiv.org/abs/2610.22192",
+ "title": "Terminal-RSI: Recursive Self-Improving Terminal Agents via Recursive Self-Rewrite and Policy-Refine",
+ "abstract_first": "Converting verifier outcomes into useful policy updates and partial progress into complete task resolution is crucial for terminal agents.",
+ "license": "https://creativecommons.org/licenses/by/",
+ "reuse_ok": true,
+ "fig_file": "fig2.png",
+ "fig_no": 2,
+ "fig_src": "https://arxiv.org/html/2610.22192/terminal_rsi_overall_from_ppt.png",
+ "fig_caption": "The recursive loop carries critic weights through supervised transitions.  Blue blocks distinguish actor-only RSR from joint actor–critic RPR; the bypass preser…"
+}
