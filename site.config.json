@@ -1,11 +1,13 @@
 {
-  "title": "AI前沿趋势",
+  "title": "前沿趋势",
+  "brand": "前沿趋势",
   "description": "每天追踪 AI 生成、蒸馏与后训练的前沿变化，先给结论。",
   "heroLine": "每天追踪 AI 生成、蒸馏与后训练的前沿变化，先给结论",
   "basePath": "/ai-frontier-trends",
   "nav": {
     "primary": [
-      { "id": "live", "label": "今日", "path": "/live/" },
+      { "id": "live", "label": "精选", "path": "/live/" },
+      { "id": "hot", "label": "热点", "path": "/hot/" },
       {
         "id": "timeline",
         "label": "趋势",
@@ -17,16 +19,24 @@
         ]
       },
       {
-        "id": "flux3",
-        "label": "专题",
-        "path": "/flux3/",
-        "match": ["flux3", "flux3-cases", "flux3-examples", "flux3-camera"]
-      },
-      { "id": "about", "label": "关于", "path": "/about/" }
+        "id": "more",
+        "label": "更多",
+        "path": "/more/",
+        "match": ["about", "flux3", "flux3-cases", "flux3-examples", "flux3-camera", "papers", "home"]
+      }
     ],
-    "external": [
+    "more": [
+      { "label": "研究主页", "path": "/" },
+      { "label": "本周主线", "path": "/#threads" },
+      { "label": "时间线", "path": "/timeline/" },
+      { "label": "推翻信号", "path": "/signals/" },
+      { "label": "权重待交付", "path": "/weights/" },
+      { "label": "周报", "path": "/weekly/" },
+      { "label": "看板 Studio", "href": "https://codyshen0000.github.io/studio/" },
+      { "label": "FLUX 3", "path": "/flux3/" },
+      { "label": "关于", "path": "/about/" },
       { "label": "个人主页", "href": "https://codyshen0000.github.io/" },
-      { "label": "看板 Studio", "href": "https://codyshen0000.github.io/studio/" }
+      { "label": "原始看板", "path": "/live/#board" }
     ]
   },
   "threadsFallback": [
@@ -66,11 +76,20 @@
     {
       "id": "live",
       "htmlFile": "live.html",
-      "title": "今日热点",
+      "title": "精选",
       "path": "/live/",
-      "section": "今日",
-      "crumb": "今日",
-      "summary": "今天公开讨论里最值得看的变化，结论放在最前面。"
+      "section": "精选",
+      "crumb": "精选",
+      "summary": "当前热点与按日精选。今天公开讨论里最值得看的变化。"
+    },
+    {
+      "id": "hot",
+      "generated": "hot",
+      "title": "热点",
+      "path": "/hot/",
+      "section": "热点",
+      "crumb": "热点榜",
+      "summary": "存档窗内按独立来源数排序的热点榜，不用点赞当热度。"
     },
     {
       "id": "timeline",
@@ -113,11 +132,20 @@
       "summary": "已宣布、但还没放出权重或还没上线的模型。"
     },
     {
+      "id": "more",
+      "generated": "more",
+      "title": "更多",
+      "path": "/more/",
+      "section": "更多",
+      "crumb": "更多",
+      "summary": "Studio、信号、权重、专题和关于。"
+    },
+    {
       "id": "flux3",
       "file": "flux3-prompt-cheatsheet.md",
       "title": "FLUX 3 提示词速查表",
       "path": "/flux3/",
-      "section": "专题",
+      "section": "更多",
       "crumb": "FLUX 3",
       "topic": "flux3",
       "tab": "cheatsheet",
@@ -128,7 +156,7 @@
       "gallery": "flux3-cases",
       "title": "FLUX 3 官方案例",
       "path": "/flux3/cases/",
-      "section": "专题",
+      "section": "更多",
       "crumb": "官方案例",
       "topic": "flux3",
       "tab": "cases",
@@ -139,7 +167,7 @@
       "file": "flux3-examples.md",
       "title": "FLUX 3 官方示例库",
       "path": "/flux3/examples/",
-      "section": "专题",
+      "section": "更多",
       "crumb": "示例库",
       "topic": "flux3",
       "tab": "examples",
@@ -150,7 +178,7 @@
       "file": "flux3-camera-terms.md",
       "title": "FLUX 3 相机术语表",
       "path": "/flux3/camera-terms/",
-      "section": "专题",
+      "section": "更多",
       "crumb": "相机术语",
       "topic": "flux3",
       "tab": "camera",
@@ -161,7 +189,7 @@
       "file": "about.md",
       "title": "关于",
       "path": "/about/",
-      "section": "关于",
+      "section": "更多",
       "crumb": "关于",
       "summary": "这个站是什么、材料从哪来、标签是什么意思。"
     }

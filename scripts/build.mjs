@@ -10,6 +10,8 @@ import {
   extractThreads,
   ensureThreadAnchors,
 } from "./extract.mjs";
+import { extractLiveCards } from "./live_cards.mjs";
+import { curateLivePage, hotPageBody, morePageBody, stripLiveCurate } from "./live_curate.mjs";
 import {
   assertPublicSafe,
   latestWeeklyCard,
@@ -90,11 +92,14 @@ function prepareMarkdown(text) {
 }
 
 function hrefBetween(fromPath, toPath) {
+  const hashIndex = String(toPath).indexOf("#");
+  const hash = hashIndex >= 0 ? toPath.slice(hashIndex) : "";
+  const clean = hashIndex >= 0 ? toPath.slice(0, hashIndex) || "/" : toPath;
   const fromParts = fromPath.split("/").filter(Boolean);
-  const toParts = toPath.split("/").filter(Boolean);
+  const toParts = clean.split("/").filter(Boolean);
   const prefix = fromParts.length === 0 ? "./" : "../".repeat(fromParts.length);
-  if (toParts.length === 0) return prefix;
-  return `${prefix}${toParts.join("/")}/`;
+  if (toParts.length === 0) return `${prefix}${hash}`;
+  return `${prefix}${toParts.join("/")}/${hash}`;
 }
 
 function assetHref(fromPath, fileName) {
@@ -117,17 +122,17 @@ function primaryActiveId(currentId) {
   return currentId;
 }
 
-const NAV_EXTRA_CSS = PAPER_CSS + `
-.trend-dd{position:relative;display:flex;align-items:center}
-.trend-dd-menu{display:none;position:absolute;top:calc(100% + 8px);left:0;min-width:148px;padding:8px;background:var(--ds-bg-elevated);border:1px solid var(--ds-hairline);border-radius:var(--ds-radius-sm);box-shadow:var(--ds-shadow-2);z-index:60;flex-direction:column;gap:2px}
-.trend-dd:hover .trend-dd-menu,.trend-dd:focus-within .trend-dd-menu{display:flex}
-.trend-dd-menu a{padding:8px 10px;font-size:13px;color:var(--ds-text-secondary)!important;border-radius:8px}
-.trend-dd-menu a:hover,.trend-dd-menu a.active{color:var(--ds-text)!important;background:var(--ds-surface-3)}
-@media (max-width:734px){
-.trend-dd{flex-direction:column;align-items:stretch}
-.trend-dd-menu{display:flex;position:static;border:0;box-shadow:none;padding:0 0 0 12px;background:transparent;min-width:0}
-.trend-dd-menu a{padding:12px 4px;font-size:17px;border-bottom:1px solid var(--ds-hairline);border-radius:0}
-}`;
+const NAV_EXTRA_CSS = PAPER_CSS;
+
+const ICONS = {
+  brand:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12 20 4l-5 16-3.5-6.5Z"/></svg>',
+  live: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.6"/><rect x="13" y="4" width="7" height="7" rx="1.6"/><rect x="4" y="13" width="7" height="7" rx="1.6"/><path d="M13 16h7M13 20h4"/></svg>',
+  hot: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s4 4.4 4 8.2A4 4 0 1 1 8 11.1C8 7.3 12 3 12 3Z"/><path d="M10 18c0 1.2.9 2 2 2s2-.8 2-2"/></svg>',
+  timeline:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18V6"/><path d="m4 18 5-6 4 3 7-8"/></svg>',
+  more: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="1.35"/><circle cx="17" cy="7" r="1.35"/><circle cx="7" cy="17" r="1.35"/><circle cx="17" cy="17" r="1.35"/></svg>',
+};
 
 function navLink(href, label, { current = false, extraClass = "" } = {}) {
   const cls = [current ? "active" : "", extraClass].filter(Boolean).join(" ");
@@ -141,45 +146,34 @@ function navLink(href, label, { current = false, extraClass = "" } = {}) {
   return `<a ${attrs}>${escapeHtml(label)}</a>`;
 }
 
-function siteNavLinks(currentId, fromPath) {
+function shellLink(item, currentId, fromPath) {
   const active = primaryActiveId(currentId);
-  const primary = (config.nav?.primary ?? []).map((item) => {
-    const href = hrefBetween(fromPath, item.path);
-    const current = item.id === active;
-    if (item.children?.length) {
-      const childLinks = item.children
-        .map((child) =>
-          navLink(hrefBetween(fromPath, child.path), child.label, {
-            current: child.id === currentId,
-          }),
-        )
-        .join("");
-      return `<div class="trend-dd">
-        ${navLink(href, item.label, { current, extraClass: "trend-dd-trigger" })}
-        <div class="trend-dd-menu">${childLinks}</div>
-      </div>`;
-    }
-    return navLink(href, item.label, { current });
-  });
+  const href = hrefBetween(fromPath, item.path);
+  const current = item.id === active;
+  const icon = ICONS[item.id] || ICONS.more;
+  return `<a href="${href}" class="${current ? "active" : ""}"${current ? ' aria-current="page"' : ""}>${icon}<span>${escapeHtml(item.label)}</span></a>`;
+}
 
-  const external = (config.nav?.external ?? []).map((link) => `<a href="${escapeHtml(link.href)}">${escapeHtml(link.label)}</a>`);
-  return `${primary.join("")}<span class="ds-nav-sep" aria-hidden="true"></span>${external.join("")}`;
+function shellLinks(currentId, fromPath) {
+  return (config.nav?.primary ?? []).map((item) => shellLink(item, currentId, fromPath)).join("");
 }
 
 function navBar({ currentId, fromPath }) {
+  const brand = escapeHtml(config.brand || config.title);
+  const homeHref = hrefBetween(fromPath, "/live/");
   return `<style data-ds-injected="nav-css">${NAV_EXTRA_CSS}</style>
-  <header class="ds-nav" id="nav" data-ds-injected="nav">
-    <div class="ds-nav-inner">
-      <a class="ds-nav-brand" href="${hrefBetween(fromPath, "/")}">${escapeHtml(config.title)}</a>
-      <nav class="ds-nav-links" aria-label="站点导航">
-        ${siteNavLinks(currentId, fromPath)}
-      </nav>
-      <div class="ds-nav-tools">
-        <button type="button" id="theme-toggle" aria-label="切换配色">☾</button>
-        <button type="button" class="ds-nav-menu" id="nav-menu" aria-label="打开菜单" aria-expanded="false"><span></span></button>
-      </div>
+  <aside class="ft-sidebar" id="nav" data-ds-injected="nav">
+    <a class="ft-brand" href="${homeHref}">${ICONS.brand}<span>${brand}</span></a>
+    <nav class="ft-side-links" aria-label="站点导航">${shellLinks(currentId, fromPath)}</nav>
+    <div class="ft-side-tools">
+      <button type="button" class="ft-theme-toggle" aria-label="切换配色">☾</button>
     </div>
-  </header>`;
+  </aside>
+  <header class="ft-topbar" data-ds-injected="topbar">
+    <a class="ft-brand" href="${homeHref}">${ICONS.brand}<span>${brand}</span></a>
+    <button type="button" class="ft-theme-toggle" aria-label="切换配色">☾</button>
+  </header>
+  <nav class="ft-tabbar" data-ds-injected="tabbar" aria-label="底部导航">${shellLinks(currentId, fromPath)}</nav>`;
 }
 
 function crumbBar(page) {
@@ -219,23 +213,29 @@ function pageChrome(page, fromPath) {
 }
 
 const THEME_BOOT =
-  '<script data-ds-injected="theme">(function(){try{var t=localStorage.getItem("theme");if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t;document.documentElement.classList.add("ds-page");}catch(e){document.documentElement.classList.add("ds-page");}})();</script>';
+  '<script data-ds-injected="theme">(function(){try{var t=localStorage.getItem("theme");if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t;document.documentElement.classList.add("ds-page","ft-shell");}catch(e){document.documentElement.classList.add("ds-page","ft-shell");}})();</script>';
 
 const RAW_NAV_UI =
-  '<script data-ds-injected="ui">(function(){var root=document.documentElement,nav=document.getElementById("nav"),menu=document.getElementById("nav-menu"),btn=document.getElementById("theme-toggle");function apply(t){root.dataset.theme=t;if(!btn)return;var d=t==="dark";btn.setAttribute("aria-pressed",d?"true":"false");btn.setAttribute("aria-label",d?"切换到浅色模式":"切换到深色模式");btn.textContent=d?"☀":"☾";}function pref(){try{var s=localStorage.getItem("theme");if(s==="light"||s==="dark")return s;}catch(e){}return matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}apply(pref());btn&&btn.addEventListener("click",function(){var n=root.dataset.theme==="dark"?"light":"dark";try{localStorage.setItem("theme",n);}catch(e){}apply(n);});function setMenu(o){if(!nav)return;nav.classList.toggle("is-open",o);menu&&menu.setAttribute("aria-expanded",o?"true":"false");menu&&menu.setAttribute("aria-label",o?"关闭菜单":"打开菜单");}menu&&menu.addEventListener("click",function(){setMenu(!nav.classList.contains("is-open"));});nav&&nav.querySelectorAll(".ds-nav-links a").forEach(function(a){a.addEventListener("click",function(){setMenu(false);});});window.addEventListener("resize",function(){if(window.innerWidth>734)setMenu(false);});function onScroll(){nav&&nav.classList.toggle("scrolled",window.scrollY>8);}window.addEventListener("scroll",onScroll,{passive:true});onScroll();})();</script>';
+  '<script data-ds-injected="ui">(function(){var root=document.documentElement;function apply(t){root.dataset.theme=t;document.querySelectorAll(".ft-theme-toggle").forEach(function(btn){var d=t==="dark";btn.setAttribute("aria-pressed",d?"true":"false");btn.setAttribute("aria-label",d?"切换到浅色模式":"切换到深色模式");btn.textContent=d?"☀":"☾";});}function pref(){try{var s=localStorage.getItem("theme");if(s==="light"||s==="dark")return s;}catch(e){}return matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}apply(pref());document.querySelectorAll(".ft-theme-toggle").forEach(function(btn){btn.addEventListener("click",function(){var n=root.dataset.theme==="dark"?"light":"dark";try{localStorage.setItem("theme",n);}catch(e){}apply(n);});});function applyBoard(){var board=location.hash==="#board";var curate=document.querySelector(\'[data-ds-injected="live-curate"]\');var archive=document.querySelector(\'[data-ds-injected="live-archive"]\');if(!curate||!archive)return;curate.hidden=board;archive.hidden=!board;root.classList.toggle("ft-board",board);}window.addEventListener("hashchange",applyBoard);applyBoard();})();</script>';
 
 function stripInjected(html) {
-  return String(html)
-    .replace(/<link[^>]*data-ds-injected="css"[^>]*>\s*/gi, "")
-    .replace(/<link[^>]*data-ds-injected="skin"[^>]*>\s*/gi, "")
-    .replace(/<style[^>]*data-ds-injected="nav-css"[^>]*>[\s\S]*?<\/style>\s*/gi, "")
-    .replace(/<script[^>]*data-ds-injected="theme"[^>]*>[\s\S]*?<\/script>\s*/gi, "")
-    .replace(/<header[^>]*data-ds-injected="nav"[^>]*>[\s\S]*?<\/header>\s*/gi, "")
-    .replace(/<script[^>]*data-ds-injected="ui"[^>]*>[\s\S]*?<\/script>\s*/gi, "")
-    .replace(/<a class="paper-explain" data-ds-injected="pf"[^>]*>图解<\/a>/g, "")
-    .replace(/<aside[^>]*data-ds-injected="charts"[^>]*>[\s\S]*?<\/aside>\s*/gi, "")
-    .replace(/<div[^>]*data-ds-injected="weekly"[^>]*>[\s\S]*?<\/div>\s*/gi, "")
-    .replace(/(<body\b[^>]*>)\s+/i, "$1");
+  return stripLiveCurate(
+    String(html)
+      .replace(/<link[^>]*data-ds-injected="css"[^>]*>\s*/gi, "")
+      .replace(/<link[^>]*data-ds-injected="skin"[^>]*>\s*/gi, "")
+      .replace(/<style[^>]*data-ds-injected="nav-css"[^>]*>[\s\S]*?<\/style>\s*/gi, "")
+      .replace(/<script[^>]*data-ds-injected="theme"[^>]*>[\s\S]*?<\/script>\s*/gi, "")
+      .replace(/<aside[^>]*data-ds-injected="nav"[^>]*>[\s\S]*?<\/aside>\s*/gi, "")
+      .replace(/<header[^>]*data-ds-injected="nav"[^>]*>[\s\S]*?<\/header>\s*/gi, "")
+      .replace(/<header[^>]*data-ds-injected="topbar"[^>]*>[\s\S]*?<\/header>\s*/gi, "")
+      .replace(/<nav[^>]*data-ds-injected="tabbar"[^>]*>[\s\S]*?<\/nav>\s*/gi, "")
+      .replace(/<div[^>]*data-ds-injected="more"[^>]*>[\s\S]*?<\/div>\s*/gi, "")
+      .replace(/<script[^>]*data-ds-injected="ui"[^>]*>[\s\S]*?<\/script>\s*/gi, "")
+      .replace(/<a class="paper-explain" data-ds-injected="pf"[^>]*>图解<\/a>/g, "")
+      .replace(/<aside[^>]*data-ds-injected="charts"[^>]*>[\s\S]*?<\/aside>\s*/gi, "")
+      .replace(/<div[^>]*data-ds-injected="weekly"[^>]*>[\s\S]*?<\/div>\s*/gi, "")
+      .replace(/(<body\b[^>]*>)\s+/i, "$1"),
+  );
 }
 
 function injectBeforeHeadEnd(html, snippet) {
@@ -253,6 +253,7 @@ export function injectHtmlFile(raw, { currentId, path, extraBody = "" }) {
   const cssLink = `<link rel="stylesheet" href="${DS_CSS}" data-ds-injected="css">`;
   const skinLink = `<link rel="stylesheet" href="${skinHref}" data-ds-injected="skin">`;
   let html = stripInjected(raw);
+  if (path === "/live/") html = curateLivePage(html, { hrefBetween, escapeHtml });
   if (PAPERS.length) html = addExplainLinks(html, PAPERS, hrefBetween(path, "/papers/"));
   if (path === "/timeline/") html = ensureThreadAnchors(html);
   html = injectBeforeHeadEnd(html, cssLink);
@@ -268,14 +269,16 @@ function renderPage({ id, title, path, body, extraClass = "", description = conf
   const pageTitle = id === "home" ? config.title : `${title} · ${config.title}`;
   const page = pageById(id);
 
+  const skinHref = assetHref(path, "assets/skin-raw.css");
   return `<!DOCTYPE html>
-<html lang="zh-CN" class="ds-page">
+<html lang="zh-CN" class="ds-page ft-shell">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${escapeHtml(pageTitle)}</title>
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="stylesheet" href="${DS_CSS}">
+  <link rel="stylesheet" href="${skinHref}">
   <link rel="stylesheet" href="${cssHref}">
   <style>${CHART_CSS}</style>
   <script>
@@ -358,7 +361,7 @@ function homeBody({ live, threads, lede, weekly, threadSource, timelineRaw }) {
     <h1 class="trend-hero-title">${escapeHtml(config.heroLine || config.description)}</h1>
     ${today}
     <div class="ds-hero-actions">
-      <a class="ds-btn-fill" href="${hrefBetween("/", "/live/")}">看今天的热点 ›</a>
+      <a class="ds-btn-fill" href="${hrefBetween("/", "/live/")}">看精选 ›</a>
     </div>
   </section>
   <section class="ds-section" id="threads">
@@ -431,7 +434,7 @@ function verifyRawInjection(page, raw, injected, extraBody = "") {
   if (!injected.includes(DS_CSS)) throw new Error(`${page.id}: missing ds.css`);
   if (!injected.includes("skin-raw.css")) throw new Error(`${page.id}: missing skin-raw.css`);
   if (!injected.includes('data-ds-injected="nav"')) throw new Error(`${page.id}: missing injected nav`);
-  if (!injected.includes(">今日<") || !injected.includes(">趋势<") || !injected.includes(">专题<") || !injected.includes(">关于<")) {
+  if (!injected.includes(">精选<") || !injected.includes(">热点<") || !injected.includes(">趋势<") || !injected.includes(">更多<")) {
     throw new Error(`${page.id}: injected nav missing primary items`);
   }
   const currentId = page.currentId || page.id;
@@ -456,10 +459,45 @@ export function buildSite() {
 
   const contentPages = [];
   const weeklyIssues = listWeeklyIssues(contentDir);
+  const liveRaw = readFileSync(join(contentDir, "live.html"), "utf8");
+  const liveCards = extractLiveCards(liveRaw);
+  const liveMeta = extractLiveSpotlight(liveRaw);
 
   for (const page of config.pages) {
     if (publicDeploy && privatePages.has(page.id)) continue;
     if (page.home) continue;
+
+    if (page.generated === "hot") {
+      writePage(
+        page.path,
+        renderPage({
+          id: page.id,
+          title: page.title,
+          path: page.path,
+          extraClass: "ds-section ft-page",
+          description: page.summary || config.description,
+          body: hotPageBody(liveCards, liveMeta, { escapeHtml }),
+        }),
+      );
+      contentPages.push({ ...page, summary: page.summary || page.title });
+      continue;
+    }
+
+    if (page.generated === "more") {
+      writePage(
+        page.path,
+        renderPage({
+          id: page.id,
+          title: page.title,
+          path: page.path,
+          extraClass: "ds-section ft-page",
+          description: page.summary || config.description,
+          body: morePageBody({ hrefBetween, escapeHtml }),
+        }),
+      );
+      contentPages.push({ ...page, summary: page.summary || page.title });
+      continue;
+    }
 
     if (page.weeklyIndex) {
       const body = weeklyIndexBody(weeklyIssues, { hrefBetween, escapeHtml });
