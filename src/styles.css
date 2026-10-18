@@ -7,14 +7,12 @@ main.ds-wrap {
   margin-inline: auto;
 }
 
-.ds-nav-tools {
-  margin-left: 0;
+html.ft-shell .ds-footer {
+  background: transparent;
 }
 
-@media (max-width: 734px) {
-  .ds-nav-tools {
-    margin-left: auto;
-  }
+html.ft-shell main.ds-wrap {
+  padding-top: 12px;
 }
 
 .trend-hero {

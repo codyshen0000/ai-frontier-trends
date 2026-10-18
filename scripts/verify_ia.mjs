@@ -2,6 +2,7 @@ import { existsSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { extractLiveSpotlight, extractThreads, extractTimelineLede, ensureThreadAnchors } from "./extract.mjs";
+import { extractLiveCards, rankHot, selectPins } from "./live_cards.mjs";
 import { injectHtmlFile } from "./build.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -123,9 +124,17 @@ const anchored = ensureThreadAnchors(timelineRaw);
 assert(anchored.includes('id="thread-1"'), "thread anchors added in output");
 assert(ensureThreadAnchors(anchored) === anchored, "thread anchors are idempotent");
 
+const liveCards = extractLiveCards(liveRaw);
+assert(liveCards.length >= 8, `live cards extracted (${liveCards.length})`);
+assert(liveCards.every((card) => card.title && card.day && card.summary), "live cards have title/day/summary");
+assert(selectPins(liveCards, 4).length === 4, "pinned 当前热点 is Top 4");
+assert(rankHot(liveCards).every((card) => card.sourceCount >= 1), "hot rank uses source counts");
+
 const paths = [
   "/",
   "/live/",
+  "/hot/",
+  "/more/",
   "/timeline/",
   "/weekly/",
   "/weekly/2026-10-12/",
@@ -146,7 +155,7 @@ const home = readFileSync(join(distDir, "index.html"), "utf8");
 assert(home.includes('class="ds-wrap trend-home"') || home.includes('class="ds-wrap'), "home uses the centered ds-wrap shell");
 assert(home.includes(config.heroLine), "home hero uses site one-liner");
 assert(home.includes(live.conclusion), "home shows today's conclusion");
-assert(home.includes("看今天的热点"), "home CTA to /live/");
+assert(home.includes("看精选"), "home CTA to /live/");
 assert(home.includes("本周主线"), "home has 本周主线");
 assert(home.includes("怎么读这个站"), "home has reader guide");
 assert(home.includes("周报"), "home links to weekly");
@@ -175,13 +184,37 @@ assert(signals.includes("趋势栏目"), "signals has trend sub-nav");
 assert(signals.includes(">周报<"), "signals trend sub-nav includes 周报");
 
 const livePage = readFileSync(join(distDir, "live", "index.html"), "utf8");
-const liveNav = livePage.match(/data-ds-injected="nav"[\s\S]*?<\/header>/)?.[0] || "";
-assert(liveNav.includes(">今日<") && liveNav.includes(">趋势<") && liveNav.includes(">专题<") && liveNav.includes(">关于<"), "live injected nav is the 4-item IA");
+const liveNav = livePage.match(/data-ds-injected="nav"[\s\S]*?<\/aside>/)?.[0] || "";
+assert(liveNav.includes(">精选<") && liveNav.includes(">热点<") && liveNav.includes(">趋势<") && liveNav.includes(">更多<"), "live injected nav is the 4-item IA");
 assert(!liveNav.includes(">案例<") && !liveNav.includes(">示例库<") && !liveNav.includes(">相机术语<"), "live nav is not 11 flat links");
+assert(!liveNav.includes("AIHOT") && !liveNav.includes("MyHOT"), "live nav has no *HOT product brand");
+assert(livePage.includes("当前热点"), "live curated homepage has 当前热点");
+assert(livePage.includes("data-ds-injected=\"live-curate\""), "live has curated transform");
+assert(livePage.includes("data-ds-injected=\"live-archive\""), "live keeps original board in archive");
+assert(livePage.includes("data-ds-injected=\"tabbar\""), "live has mobile tab bar");
+assert(livePage.includes("ft-story"), "live maps cards into the date feed");
+assert(livePage.includes('id="back-home"'), "live output keeps #back-home");
 assert(liveRaw.includes('id="back-home"'), "live source keeps #back-home");
+assert(livePage.includes("Hub 趋势") && livePage.includes("已宣布、待交付"), "research blocks remain in the live archive");
+assert(livePage.includes("DOMContentLoaded") && livePage.includes("#board"), "live board view waits for DOM before hash switch");
+const curatedBlock = livePage.match(/<!--ds-live-curate:start-->[\s\S]*?<!--ds-live-curate:end-->/)?.[0] || "";
+assert(curatedBlock.includes("当前热点"), "curated block is marked for strip/rebuild");
+assert(!curatedBlock.includes("paper-explain"), "curated feed does not inject 图解 into new cards");
 for (const needle of ["/workspace", "/home/box", "/cursor/stores"]) {
   assert(!livePage.includes(needle), `live has no ${needle}`);
 }
+
+const hotPage = readFileSync(join(distDir, "hot", "index.html"), "utf8");
+assert(hotPage.includes("热点榜"), "hot page title");
+assert(hotPage.includes("独立来源"), "hot page explains source-count heat");
+assert(hotPage.includes("ft-rank"), "hot page is a ranked list");
+assert(!hotPage.includes("AIHOT") && !hotPage.includes("MyHOT"), "hot page has no *HOT product brand");
+
+const morePage = readFileSync(join(distDir, "more", "index.html"), "utf8");
+assert(morePage.includes("看板 Studio"), "Studio stays under 更多");
+assert(morePage.includes("推翻信号") && morePage.includes("权重待交付"), "signals and weights are under 更多");
+assert(morePage.includes("时间线"), "timeline is reachable from 更多");
+assert(!morePage.includes("AIHOT") && !morePage.includes("MyHOT"), "more page has no *HOT product brand");
 
 assert(/body\{[^}]*max-width:\s*\d+px;[^}]*margin:[^;]*auto/.test(timelineRaw), "timeline source keeps a centered reading column");
 assert(/main\{[^}]*max-width:\s*\d+px;[^}]*margin:[^;]*auto/.test(liveRaw), "live source keeps a centered main column");
@@ -212,12 +245,15 @@ assert(
   !/html\.ds-page\s+body\s*\{[^}]*max-width/.test(skinRaw),
   "skin-raw does not force a body max-width onto live",
 );
+assert(skinRaw.includes("#faf9f6") && skinRaw.includes("#f3f3ef"), "skin-raw defines warm-paper tokens");
+assert(skinRaw.includes("--ft-teal") && !/#0071e3/.test(skinRaw), "reading shell uses a single teal accent");
+assert(skinRaw.includes("@media (max-width: 960px)"), "shell collapses to a bottom tab bar below 961px");
 assert(weeklyIndex.includes('class="ds-wrap'), "weekly index uses the centered ds-wrap shell");
 
 const weeklyIssue = readFileSync(join(distDir, "weekly", "2026-10-12", "index.html"), "utf8");
-const weeklyNav = weeklyIssue.match(/data-ds-injected="nav"[\s\S]*?<\/header>/)?.[0] || "";
-assert(weeklyNav.includes(">今日<") && weeklyNav.includes(">趋势<") && weeklyNav.includes(">专题<") && weeklyNav.includes(">关于<"), "weekly injected nav is the 4-item IA");
-assert(weeklyNav.includes(">周报<"), "weekly dropdown includes 周报");
+const weeklyNav = weeklyIssue.match(/data-ds-injected="nav"[\s\S]*?<\/aside>/)?.[0] || "";
+assert(weeklyNav.includes(">精选<") && weeklyNav.includes(">热点<") && weeklyNav.includes(">趋势<") && weeklyNav.includes(">更多<"), "weekly injected nav is the 4-item IA");
+assert(weeklyIssue.includes(">周报<"), "weekly issue still exposes 周报");
 assert(weeklyIssue.includes("一句话结论"), "weekly issue keeps the report lede");
 assert(weeklyIssue.includes("data-ds-injected=\"weekly\""), "weekly issue has download chrome");
 assert(weeklyIssue.includes("./report.md") && weeklyIssue.includes("./timeline.md"), "weekly issue links markdown downloads");
