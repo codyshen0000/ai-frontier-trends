@@ -362,6 +362,197 @@ function issueHtml(edition, days, ctx, { hidden = false } = {}) {
   </article>`;
 }
 
+const DAILY_FONT_HREF =
+  "https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@500;600;700&display=swap";
+
+const DAILY_SKIN = `<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="${DAILY_FONT_HREF}">
+<style data-ds-injected="daily-skin">
+html.ft-shell:has(.ft-daily) {
+  --paper: #F7F4EC;
+  --ink: #1A1A1A;
+  --ink-muted: #5C574F;
+  --rule: #D9D2C5;
+  --card: #FFFEFA;
+  --accent: #8B1E1E;
+  --link: #1F3A5F;
+  --stats-bg: #EFEAE0;
+  --ft-serif: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "Newsreader", Georgia, serif;
+  --ft-sans: "Noto Sans SC", "Source Sans 3", "PingFang SC", system-ui, sans-serif;
+  --ft-paper: var(--paper);
+  --ft-sunk: var(--stats-bg);
+  --ft-elev: var(--card);
+  --ft-ink: var(--ink);
+  --ft-muted: var(--ink-muted);
+  --ft-line: var(--rule);
+  --ft-teal: var(--accent);
+  --ft-teal-hover: #6E1717;
+  --ft-teal-soft: var(--stats-bg);
+  --ds-font-sans: var(--ft-sans);
+  --ds-font-display: var(--ft-serif);
+  --ds-accent: var(--link);
+  --ds-accent-hover: var(--accent);
+  --ds-bg: var(--paper);
+  --ds-text: var(--ink);
+  --ds-text-secondary: var(--ink-muted);
+  --ds-hairline: var(--rule);
+  background: var(--paper);
+}
+html.ft-shell:has(.ft-daily) body,
+html.ft-shell:has(.ft-daily) .ft-sidebar,
+html.ft-shell:has(.ft-daily) .ft-topbar,
+html.ft-shell:has(.ft-daily) .ft-tabbar,
+html.ft-shell:has(.ft-daily) .ds-footer {
+  font-family: var(--ft-sans) !important;
+  background: var(--paper) !important;
+  color: var(--ink);
+}
+html.ft-shell[data-theme="dark"]:has(.ft-daily) {
+  --paper: #1C1B18;
+  --ink: #F3F0E7;
+  --ink-muted: #A8A297;
+  --rule: #3A372F;
+  --card: #24221C;
+  --accent: #D46A5C;
+  --link: #9BB4D0;
+  --stats-bg: #2A2822;
+}
+.ft-daily {
+  font-family: var(--ft-sans);
+  color: var(--ink);
+}
+.ft-daily-name h1,
+.ft-daily-card-day,
+.ft-daily-past-n,
+.ft-daily-lead h2,
+.ft-daily-story h3,
+.ft-daily-pagehead {
+  font-family: var(--ft-serif);
+  font-weight: 700;
+  text-wrap: balance;
+}
+.ft-daily-name h1 {
+  font-size: clamp(2.4rem, 1.2rem + 8vw, 5.75rem);
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 0.86;
+  color: var(--ink);
+}
+.ft-daily-imprint {
+  font-family: var(--ft-serif);
+  font-size: clamp(1rem, 0.9rem + 0.4vw, 1.2rem);
+  letter-spacing: 0.14em;
+  color: var(--ink-muted);
+}
+.ft-daily-card-day {
+  font-family: "Newsreader", var(--ft-serif);
+  font-size: clamp(2.4rem, 1.2rem + 4vw, 3.6rem);
+}
+.ft-daily-dek,
+.ft-daily-story p {
+  font-size: 17.5px;
+  line-height: 1.8;
+  max-width: 36em;
+  text-wrap: pretty;
+  color: var(--ink);
+}
+.ft-daily-lead h2 {
+  font-size: clamp(1.55rem, 1.2rem + 1.4vw, 2.15rem);
+  letter-spacing: -0.02em;
+  line-height: 1.28;
+}
+.ft-daily-story h3 {
+  font-size: 1.15rem;
+  line-height: 1.4;
+}
+.ft-daily-pagehead span,
+.ft-daily-index a span,
+.ft-daily-num {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+}
+.ft-daily-kinds {
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 0;
+  gap: 0;
+}
+.ft-daily-kinds a,
+.ft-daily-kinds span {
+  border-radius: 0;
+  color: var(--ink-muted) !important;
+}
+.ft-daily-kinds a.is-on {
+  background: var(--ink);
+  color: var(--paper) !important;
+}
+.ft-daily-past.is-current {
+  background: var(--stats-bg);
+  box-shadow: inset 2px 0 0 var(--accent);
+}
+.ft-daily-card {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+.ft-daily-dot.is-current {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.ft-daily-stats {
+  background: var(--stats-bg);
+  border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--rule);
+  padding: 12px 14px;
+  margin: 0 -4px;
+}
+.ft-daily-mast {
+  border-bottom: 2px solid var(--ink);
+}
+.ft-daily-chip {
+  border-radius: 4px;
+  background: var(--card);
+  border-color: var(--rule);
+  color: var(--ink) !important;
+  transition: color 150ms ease, border-color 150ms ease;
+}
+.ft-daily-chip:hover,
+.ft-daily-look a:hover,
+.ft-daily-index a:hover,
+.ft-daily-lead h2 a:hover,
+.ft-daily-story h3 a:hover,
+.ft-daily-nb:hover,
+.ft-daily-foot a:hover {
+  color: var(--link) !important;
+  border-color: var(--link);
+}
+.ft-daily-hand {
+  color: var(--accent);
+}
+.ft-daily-colo a,
+.ft-daily-foot a,
+.ft-daily-nb {
+  color: var(--link) !important;
+  transition: color 150ms ease;
+}
+.ft-daily a:focus-visible,
+.ft-daily-kinds a:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ft-daily *,
+  .ft-daily *::before,
+  .ft-daily *::after {
+    transition: none !important;
+  }
+}
+</style>`;
+
 const SWITCH_JS = `<script data-ds-injected="daily">
 (function () {
   var issues = document.querySelectorAll("[data-ft-issue]");
@@ -403,7 +594,8 @@ export function dailyPageBody(cards, meta, { escapeHtml, hrefBetween }) {
     .join("");
   const updated = meta.updatedAt ? `看板更新于 ${escapeHtml(meta.updatedAt)}` : "";
 
-  return `<div class="ft-daily" data-ds-generated="daily">
+  return `${DAILY_SKIN}
+<div class="ft-daily" data-ds-generated="daily">
   <div class="ft-daily-phonekinds">${kindSwitch({ escapeHtml, hrefBetween })}</div>
   <div class="ft-daily-frame">
     ${chromeHtml(current.day, days, editions, { escapeHtml, hrefBetween })}

@@ -239,6 +239,13 @@ assert(dailyNav.includes(">日报<") && dailyNav.includes("aria-current=\"page\"
 assert((dailyTab.match(/<a /g) || []).length === 4, "daily keeps the 4-item mobile tab bar");
 assert(!dailyPage.includes("AIHOT") && !dailyPage.includes("MyHOT"), "daily has no *HOT product brand");
 assert(!dailyPage.includes("第180期") && !dailyPage.includes("AI日报"), "daily does not copy aihot masthead copy");
+assert(dailyPage.includes("Noto Serif SC") && dailyPage.includes("Noto Sans SC"), "daily loads Noto Serif/Sans SC");
+assert(dailyPage.includes("#F7F4EC") && dailyPage.includes("#8B1E1E") && dailyPage.includes("#1F3A5F"), "daily embeds E-Ink paper tokens");
+assert(dailyPage.includes('data-ds-injected="daily-skin"'), "daily injects editorial skin");
+{
+  const dailySkin = dailyPage.match(/data-ds-injected="daily-skin"[\s\S]*?<\/style>/)?.[0] || "";
+  assert(dailySkin && !/Inter/.test(dailySkin), "daily skin stack has no Inter");
+}
 assert(livePage.includes("data-ds-injected=\"live-curate\""), " /live/ curated homepage remains");
 
 assert(/body\{[^}]*max-width:\s*\d+px;[^}]*margin:[^;]*auto/.test(timelineRaw), "timeline source keeps a centered reading column");

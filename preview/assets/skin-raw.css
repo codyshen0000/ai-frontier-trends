@@ -799,6 +799,7 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
   max-width: 1180px;
   width: min(1180px, calc(100% - 28px));
   padding-top: 4px;
+  background: transparent;
 }
 
 .ft-daily-phonekinds {
@@ -820,11 +821,12 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 
 .ft-daily-kinds {
   display: flex;
-  gap: 2px;
+  gap: 0;
   margin: 0 0 18px;
-  padding: 3px;
-  background: var(--ft-sunk);
-  border-radius: 999px;
+  padding: 0;
+  background: transparent;
+  border: 1px solid var(--ft-line);
+  border-radius: 4px;
 }
 
 .ft-daily-kinds a,
@@ -834,15 +836,15 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 999px;
+  border-radius: 0;
   font-size: 13px;
   color: var(--ft-muted) !important;
   text-decoration: none;
 }
 
 .ft-daily-kinds a.is-on {
-  background: var(--ft-elev);
-  color: var(--ft-ink) !important;
+  background: var(--ft-ink);
+  color: var(--ft-paper, #F7F4EC) !important;
   font-weight: 600;
 }
 
@@ -880,10 +882,12 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 }
 
 .ft-daily-past.is-current {
-  background: var(--ft-teal-soft);
+  background: #EFEAE0;
+  box-shadow: inset 2px 0 0 #8B1E1E;
 }
 
 .ft-daily-past-n {
+  font-family: "Noto Serif SC", "Newsreader", Georgia, serif;
   font-size: 28px;
   font-weight: 650;
   letter-spacing: -0.04em;
@@ -943,34 +947,39 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 
 .ft-daily-name h1 {
   margin: 0 0 8px;
-  font-size: clamp(72px, 12vw, 112px);
-  font-weight: 800;
-  letter-spacing: -0.07em;
-  line-height: 0.8;
+  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "Newsreader", Georgia, serif;
+  font-size: clamp(2.4rem, 1.2rem + 8vw, 5.75rem);
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 0.86;
   border: 0 !important;
   padding: 0;
+  text-wrap: balance;
 }
 
 .ft-daily-imprint {
   margin: 0;
+  font-family: "Noto Serif SC", "Newsreader", Georgia, serif;
   font-size: 14px;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.14em;
   color: var(--ft-muted);
 }
 
 .ft-daily-card {
   width: 176px;
   padding: 12px 14px 14px;
-  background: var(--ft-elev);
+  background: #FFFEFA;
   border: 1px solid var(--ft-line);
-  border-radius: var(--ft-r-12);
+  border-radius: 6px;
   text-align: right;
   box-sizing: border-box;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
 }
 
 .ft-daily-card-day {
   margin: 0;
-  font-size: 56px;
+  font-family: "Newsreader", "Noto Serif SC", Georgia, serif;
+  font-size: clamp(2.4rem, 1.2rem + 4vw, 3.6rem);
   font-weight: 700;
   letter-spacing: -0.06em;
   line-height: 0.86;
@@ -1021,8 +1030,8 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 }
 
 .ft-daily-dot.is-current {
-  background: var(--ft-teal);
-  border-color: var(--ft-teal);
+  background: #8B1E1E;
+  border-color: #8B1E1E;
   transform: scale(1.25);
 }
 
@@ -1031,9 +1040,11 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
   flex-wrap: wrap;
   align-items: baseline;
   gap: 8px 22px;
-  margin: 0;
-  padding: 14px 0 16px;
-  border-top: 1px solid var(--ft-line);
+  margin: 0 -4px;
+  padding: 12px 14px;
+  border-top: 2px solid var(--ft-ink);
+  border-bottom: 1px solid var(--ft-line);
+  background: #EFEAE0;
   font-size: 14px;
   color: var(--ft-muted);
 }
@@ -1064,30 +1075,34 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 
 .ft-daily-lead h2 {
   margin: 0 0 14px;
-  font-size: clamp(28px, 4vw, 40px);
+  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "Newsreader", Georgia, serif;
+  font-size: clamp(1.55rem, 1.2rem + 1.4vw, 2.15rem);
   font-weight: 700;
-  letter-spacing: -0.035em;
-  line-height: 1.22;
+  letter-spacing: -0.02em;
+  line-height: 1.28;
   border: 0 !important;
   padding: 0;
+  text-wrap: balance;
 }
 
 .ft-daily-lead h2 a,
 .ft-daily-story h3 a {
   color: inherit !important;
   text-decoration: none;
+  transition: color 150ms ease;
 }
 
 .ft-daily-lead h2 a:hover,
 .ft-daily-story h3 a:hover {
-  color: var(--ft-teal) !important;
+  color: #1F3A5F !important;
 }
 
 .ft-daily-dek {
   margin: 0 0 16px;
-  font-size: 16px;
-  line-height: 1.7;
-  max-width: 42rem;
+  font-size: 17.5px;
+  line-height: 1.8;
+  max-width: 36em;
+  text-wrap: pretty;
 }
 
 .ft-daily-lead-meta,
@@ -1105,15 +1120,16 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
   height: 26px;
   padding: 0 10px;
   border: 1px solid var(--ft-line);
-  border-radius: 999px;
+  border-radius: 4px;
   font-size: 12px;
   color: var(--ft-ink) !important;
   text-decoration: none;
-  background: var(--ft-elev);
+  background: #FFFEFA;
+  transition: color 150ms ease, border-color 150ms ease;
 }
 
 .ft-daily-hand {
-  color: var(--ft-teal);
+  color: #8B1E1E;
   font-size: 11px;
 }
 
@@ -1151,7 +1167,8 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 
 .ft-daily-num {
   font-variant-numeric: tabular-nums;
-  color: var(--ft-muted);
+  letter-spacing: 0.12em;
+  color: #8B1E1E;
 }
 
 .ft-daily-index {
@@ -1188,14 +1205,16 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
   margin: 0 0 16px;
   padding-bottom: 10px;
   border-bottom: 2px solid var(--ft-ink) !important;
+  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "Newsreader", Georgia, serif;
   font-size: 22px;
   font-weight: 650;
+  text-wrap: balance;
 }
 
 .ft-daily-pagehead span {
   font-size: 14px;
-  letter-spacing: 0.06em;
-  color: var(--ft-teal);
+  letter-spacing: 0.12em;
+  color: #8B1E1E;
   font-variant-numeric: tabular-nums;
 }
 
@@ -1217,16 +1236,20 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 
 .ft-daily-story h3 {
   margin: 0 0 8px;
-  font-size: 18px;
+  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "Newsreader", Georgia, serif;
+  font-size: 1.15rem;
   font-weight: 650;
   letter-spacing: -0.02em;
-  line-height: 1.35;
+  line-height: 1.4;
+  text-wrap: balance;
 }
 
 .ft-daily-story p {
   margin: 0 0 10px;
-  font-size: 14px;
-  line-height: 1.65;
+  font-size: 17.5px;
+  line-height: 1.8;
+  max-width: 36em;
+  text-wrap: pretty;
 }
 
 .ft-daily-nbs {
@@ -1245,7 +1268,7 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 }
 
 .ft-daily-nb:hover {
-  color: var(--ft-teal) !important;
+  color: #1F3A5F !important;
 }
 
 .ft-daily-end {
@@ -1321,7 +1344,7 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
   }
 
   .ft-daily-name h1 {
-    font-size: 56px;
+    font-size: clamp(2.4rem, 12vw, 3.4rem);
   }
 
   .ft-daily-card {
@@ -1331,5 +1354,19 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 
   .ft-daily-card-day {
     font-size: 36px;
+  }
+}
+
+.ft-daily a:focus-visible,
+.ft-daily-kinds a:focus-visible {
+  outline: 2px solid #1F3A5F;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ft-daily *,
+  .ft-daily *::before,
+  .ft-daily *::after {
+    transition: none !important;
   }
 }
