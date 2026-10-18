@@ -1138,8 +1138,8 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 .ft-daily-front {
   display: grid;
   grid-template-columns: minmax(0, 1.5fr) minmax(210px, 0.6fr);
-  gap: 28px;
-  padding: 16px 0 8px;
+  gap: 20px;
+  padding: 10px 0 8px;
   border-bottom: 1px solid var(--ft-line);
 }
 
@@ -1388,15 +1388,30 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
   min-width: 168px;
 }
 
-.ft-daily-front + .ft-daily-roster,
+.ft-daily-mast + .ft-daily-roster,
 .ft-daily-roster {
-  margin: 8px 0 10px;
-  padding-top: 2px;
+  margin: 6px 0 2px;
+  padding-top: 0;
+}
+
+.ft-daily-roster .ft-daily-kicker {
+  margin-bottom: 4px;
 }
 
 .ft-daily-roster .ft-daily-table th,
 .ft-daily-roster .ft-daily-table td {
-  padding: 4px 7px;
+  padding: 3px 6px;
+}
+
+.ft-daily-roster .ft-daily-table-note {
+  margin-top: 4px;
+}
+
+@media (min-width: 961px) {
+  .ft-daily-roster .ft-daily-table-wrap {
+    max-height: 9.75rem;
+    overflow: auto;
+  }
 }
 
 .ft-daily-rail .ft-daily-index {

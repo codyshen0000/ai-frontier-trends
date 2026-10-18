@@ -599,8 +599,8 @@ function issueHtml(edition, days, ctx, { hidden = false } = {}) {
   const pages = edition.sections.map((section, i) => sectionPage(edition, section, i, escapeHtml)).join("");
   return `<article class="ft-daily-issue" data-ft-issue="${escapeHtml(edition.day)}" id="d-${escapeHtml(edition.day)}"${hidden ? " hidden" : ""}>
     ${masthead(edition, days, escapeHtml)}
-    ${frontPage(edition, ctx)}
     ${rosterTable(edition, escapeHtml)}
+    ${frontPage(edition, ctx)}
     ${pages}
     ${neighbours(edition, days, escapeHtml)}
     <p class="ft-daily-end">（本期完）</p>
