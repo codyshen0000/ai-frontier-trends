@@ -817,6 +817,7 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
   padding-top: 2px;
   padding-bottom: 48px;
   background: transparent;
+  overflow-x: clip;
 }
 
 .ft-daily {
@@ -1022,13 +1023,14 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 }
 
 .ft-daily-card {
-  width: 168px;
-  padding: 10px 12px 12px;
+  width: 176px;
+  padding: 10px 6px 12px;
   background: var(--ft-elev);
   border: 1px solid var(--ft-line);
   border-radius: var(--ft-r-8);
   text-align: right;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .ft-daily-card-day {
@@ -1054,9 +1056,11 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 .ft-daily-week,
 .ft-daily-dots {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 4px;
-  justify-items: end;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 2px;
+  justify-items: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .ft-daily-week span {
@@ -1069,9 +1073,11 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
   position: relative;
   width: 22px;
   height: 22px;
+  max-width: 100%;
   border: 0;
   background: transparent;
   box-sizing: border-box;
+  padding: 0;
 }
 
 .ft-daily-dot::after {
@@ -1099,7 +1105,7 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 .ft-daily-dot.is-current::after {
   background: var(--ft-teal);
   border-color: var(--ft-teal);
-  transform: scale(1.2);
+  transform: scale(1.12);
 }
 
 .ft-daily-stats {
@@ -1447,7 +1453,8 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 
   .ft-daily-card {
     width: 148px;
-    padding: 8px;
+    padding: 8px 4px;
+    overflow: hidden;
   }
 
   .ft-daily-card-day {
