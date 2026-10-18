@@ -206,7 +206,7 @@ function calendarCard(edition, days, escapeHtml) {
     .join("");
   return `<div class="ft-daily-card" aria-label="${escapeHtml(grid.title)}">
     <p class="ft-daily-card-day">${Number(dom)}</p>
-    <p class="ft-daily-card-month">${escapeHtml(grid.monthWord)}</p>
+    <p class="ft-daily-card-month">${escapeHtml(grid.monthWord)} · 星期${escapeHtml(formatZhDate(edition.day).long.slice(-1))}</p>
     <div class="ft-daily-cal">
       <div class="ft-daily-week">${heads}</div>
       <div class="ft-daily-dots">${dots}</div>
@@ -219,7 +219,6 @@ function masthead(edition, days, escapeHtml) {
   const { day, date, stats } = edition;
   const [year, month, dom] = day.split("-");
   const week = date.long.slice(-1);
-  const line = `前沿趋势日报 · ${Number(year)} 年 ${Number(month)} 月 ${Number(dom)} 日 · 星期${week}`;
   const metrics = [
     { value: stats.events, unit: "件大事" },
     { value: stats.sources, unit: "个来源" },
@@ -231,12 +230,15 @@ function masthead(edition, days, escapeHtml) {
     .join("");
 
   return `<header class="ft-daily-mast">
-    <p class="ft-daily-dateline">${escapeHtml(line)}</p>
+    <p class="ft-daily-dateline">
+      <span>${Number(year)} 年 ${Number(month)} 月 ${Number(dom)} 日星期${escapeHtml(week)}</span>
+      <span>前沿热点看板</span>
+      <span>按存档日整理</span>
+    </p>
     <div class="ft-daily-nameplate">
       <div class="ft-daily-name">
-        <p class="ft-daily-brand">前沿趋势</p>
         <h1>日报</h1>
-        <p class="ft-daily-imprint">前沿热点看板 · 按存档日整理</p>
+        <p class="ft-daily-imprint">前沿趋势日报</p>
       </div>
       ${calendarCard(edition, days, escapeHtml)}
     </div>

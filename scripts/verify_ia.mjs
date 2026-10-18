@@ -229,6 +229,7 @@ assert(dailyPage.includes("件大事") && dailyPage.includes("个来源"), "dail
 assert(dailyPage.includes("头条"), "daily has 头条");
 assert(dailyPage.includes("往期") && dailyPage.includes("ft-daily-chrome"), "daily has left 往期 chrome");
 assert(dailyPage.includes("ft-daily-card") && dailyPage.includes("ft-daily-dots"), "daily calendar card sits in the nameplate");
+assert(dailyPage.includes("前沿热点看板"), "daily dateline uses 前沿热点看板");
 assert(dailyPage.includes("今日看点") && dailyPage.includes("本期版面"), "daily front rail has 今日看点 / 本期版面");
 assert(dailyPage.includes("（本期完）"), "daily ends with 本期完");
 assert(dailyPage.includes("ft-daily-kinds") && dailyPage.includes(">周报<"), "daily chrome has 日报/周报/月报");
@@ -273,6 +274,8 @@ assert(skinRaw.includes("#faf9f6") && skinRaw.includes("#f3f3ef"), "skin-raw def
 assert(skinRaw.includes("--ft-teal") && !/#0071e3/.test(skinRaw), "reading shell uses a single teal accent");
 assert(skinRaw.includes("@media (max-width: 960px)"), "shell collapses to a bottom tab bar below 961px");
 assert(!/ft-daily-rail\s*\{[^}]*position:\s*sticky/.test(skinRaw), "daily 今日看点 rail is not sticky");
+assert(/\.ft-daily-card\s*\{[^}]*border:/.test(skinRaw), "daily calendar is a bordered card");
+assert(/\.ft-daily-chrome\s*\{\s*display:\s*none;/.test(skinRaw), "mobile hides 往期 chrome so the calendar keeps the nameplate");
 assert(weeklyIndex.includes('class="ds-wrap'), "weekly index uses the centered ds-wrap shell");
 
 const weeklyIssue = readFileSync(join(distDir, "weekly", "2026-10-12", "index.html"), "utf8");
