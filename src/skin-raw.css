@@ -299,7 +299,7 @@ th {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  margin: 28px 0 auto;
+  margin: 28px 0 0;
 }
 
 .ft-side-links a,
@@ -331,7 +331,7 @@ th {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  margin: 18px 0 0;
+  margin: 18px 0 auto;
   padding-top: 16px;
   border-top: 1px solid var(--ft-line);
 }
@@ -1312,16 +1312,25 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
   }
 
   .ft-daily-nameplate {
-    flex-wrap: wrap;
-    align-items: flex-start;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    gap: 12px;
+  }
+
+  .ft-daily-name {
+    min-width: 0;
   }
 
   .ft-daily-name h1 {
-    font-size: 64px;
+    font-size: 52px;
   }
 
   .ft-daily-card {
-    flex: 0 0 auto;
-    text-align: left;
+    flex: 0 0 124px;
+    text-align: right;
+  }
+
+  .ft-daily-card-day {
+    font-size: 36px;
   }
 }
