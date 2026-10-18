@@ -138,6 +138,7 @@ const paths = [
   "/timeline/",
   "/weekly/",
   "/weekly/2026-10-12/",
+  "/weekly/2026-10-18/",
   "/signals/",
   "/weights/",
   "/flux3/",
@@ -159,7 +160,7 @@ assert(home.includes("看精选"), "home CTA to /live/");
 assert(home.includes("本周主线"), "home has 本周主线");
 assert(home.includes("怎么读这个站"), "home has reader guide");
 assert(home.includes("周报"), "home links to weekly");
-assert(home.includes("/weekly/2026-10-12/") || home.includes("weekly/2026-10-12/"), "home links to latest weekly issue");
+assert(home.includes("/weekly/2026-10-18/") || home.includes("weekly/2026-10-18/"), "home links to latest weekly issue");
 assert(home.includes(">FLUX 3<") || home.includes("FLUX 3"), "home has one FLUX 3 topic card");
 assert((home.match(/class="ds-card trend-thread-card"/g) || []).length >= 3, "home has 3–5 thread cards");
 assert(!home.includes("谱系"), "home avoids 谱系 jargon");
@@ -229,7 +230,9 @@ for (const needle of ["/workspace", "/home/box", "/cursor/stores"]) {
 const weeklyIndex = readFileSync(join(distDir, "weekly", "index.html"), "utf8");
 assert(weeklyIndex.includes("趋势栏目"), "weekly index has trend sub-nav");
 assert(weeklyIndex.includes("2026-10-12"), "weekly index lists 2026-10-12");
-assert(weeklyIndex.includes("weekly/2026-10-12/") || weeklyIndex.includes("./2026-10-12/"), "weekly index links to the issue");
+assert(weeklyIndex.includes("weekly/2026-10-12/") || weeklyIndex.includes("./2026-10-12/"), "weekly index links to 2026-10-12");
+assert(weeklyIndex.includes("2026-10-18"), "weekly index lists 2026-10-18");
+assert(weeklyIndex.includes("weekly/2026-10-18/") || weeklyIndex.includes("./2026-10-18/"), "weekly index links to 2026-10-18");
 assert(weeklyIndex.includes(">周报<"), "weekly tab is in trend sub-nav");
 
 const skinRaw = readFileSync(join(root, "src", "skin-raw.css"), "utf8");
@@ -266,9 +269,13 @@ for (const needle of ["/workspace", "/home/box", "/cursor/stores", "收藏"]) {
 }
 
 for (const file of ["report.md", "timeline.md", "report.html"]) {
-  assert(existsSync(join(distDir, "weekly", "2026-10-12", file)), `weekly issue ships ${file}`);
+  assert(existsSync(join(distDir, "weekly", "2026-10-12", file)), `weekly 2026-10-12 ships ${file}`);
+  assert(existsSync(join(distDir, "weekly", "2026-10-18", file)), `weekly 2026-10-18 ships ${file}`);
 }
-assert(existsSync(join(distDir, "weekly", "2026-10-12", "charts", "2026-10-12-evidence-by-line.png")), "weekly issue ships chart pngs");
+assert(existsSync(join(distDir, "weekly", "2026-10-12", "charts", "2026-10-12-evidence-by-line.png")), "weekly 2026-10-12 ships chart pngs");
+assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-evidence-by-line.png")), "weekly 2026-10-18 ships chart pngs");
+assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-signal-candidates.png")), "weekly 2026-10-18 ships signal chart");
+assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-weights-delivery.png")), "weekly 2026-10-18 ships weights chart");
 
 const injected = injectHtmlFile(liveRaw, { currentId: "live", path: "/live/" });
 assert(injectHtmlFile(injected, { currentId: "live", path: "/live/" }) === injected, "injectHtmlFile is idempotent");
