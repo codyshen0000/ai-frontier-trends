@@ -155,20 +155,16 @@ function monthGrid(day, issueDays) {
   };
 }
 
-function calendarHtml(current, days, editions, { escapeHtml }) {
-  const grid = monthGrid(current, days);
-  const heads = WEEK_HEADS.map((d) => `<span>${d}</span>`).join("");
-  const cells = grid.cells
-    .map((cell) => {
-      if (cell.state === "pad") return `<span class="ft-daily-cell is-pad" aria-hidden="true"></span>`;
-      if (cell.state === "none") return `<span class="ft-daily-cell is-none">${cell.n}</span>`;
-      const href = `#d-${cell.iso}`;
-      const cls = cell.state === "current" ? "is-current" : "is-issue";
-      return `<a class="ft-daily-cell ${cls}" data-ft-cal="${escapeHtml(cell.iso)}" href="${href}">${cell.n}</a>`;
-    })
-    .join("");
+function kindSwitch({ escapeHtml, hrefBetween }) {
+  return `<nav class="ft-daily-kinds" aria-label="成刊">
+    <a class="is-on" aria-current="page">日报</a>
+    <a href="${hrefBetween("/daily/", "/weekly/")}">周报</a>
+    <span class="is-off" title="尚无月报存档">月报</span>
+  </nav>`;
+}
 
-  const list = days
+function pastList(current, days, editions, escapeHtml) {
+  return days
     .map((iso) => {
       const edition = editions.find((item) => item.day === iso);
       const mark = formatZhDate(iso);
@@ -176,25 +172,50 @@ function calendarHtml(current, days, editions, { escapeHtml }) {
       const currentCls = iso === current ? " is-current" : "";
       return `<a class="ft-daily-past${currentCls}" data-ft-cal="${escapeHtml(iso)}" href="#d-${iso}">
         <span class="ft-daily-past-n">${Number(iso.slice(8, 10))}</span>
-        <span class="ft-daily-past-w">星期${mark.long.slice(-1)}</span>
-        <span class="ft-daily-past-t">${escapeHtml(title)}</span>
+        <span class="ft-daily-past-meta">
+          <span class="ft-daily-past-w">星期${mark.long.slice(-1)}</span>
+          <span class="ft-daily-past-t">${escapeHtml(title)}</span>
+        </span>
       </a>`;
     })
     .join("");
+}
 
-  return `<aside class="ft-daily-cal" aria-label="往期">
-    <p class="ft-daily-cal-kicker">往期</p>
-    <p class="ft-daily-cal-month">${escapeHtml(grid.title)}</p>
-    <div class="ft-daily-grid" aria-label="${escapeHtml(grid.monthWord)}">
-      <div class="ft-daily-week">${heads}</div>
-      <div class="ft-daily-days">${cells}</div>
-    </div>
-    <p class="ft-daily-cal-note">${escapeHtml(grid.note)}</p>
-    <div class="ft-daily-pasts">${list}</div>
+function chromeHtml(current, days, editions, ctx) {
+  const { escapeHtml } = ctx;
+  return `<aside class="ft-daily-chrome" aria-label="往期">
+    ${kindSwitch(ctx)}
+    <p class="ft-daily-kicker">往期</p>
+    <div class="ft-daily-pasts">${pastList(current, days, editions, escapeHtml)}</div>
   </aside>`;
 }
 
-function masthead(edition, escapeHtml) {
+function calendarCard(edition, days, escapeHtml) {
+  const grid = monthGrid(edition.day, days);
+  const [year, month, dom] = edition.day.split("-");
+  const heads = WEEK_HEADS.map((d) => `<span>${d}</span>`).join("");
+  const dots = grid.cells
+    .map((cell) => {
+      if (cell.state === "pad") return `<span class="ft-daily-dot is-pad" aria-hidden="true"></span>`;
+      if (cell.state === "none") {
+        return `<span class="ft-daily-dot is-none" title="${Number(month)}月${cell.n}日"></span>`;
+      }
+      const cls = cell.state === "current" ? "is-current" : "is-issue";
+      return `<a class="ft-daily-dot ${cls}" data-ft-cal="${escapeHtml(cell.iso)}" href="#d-${cell.iso}" title="${escapeHtml(formatZhDate(cell.iso).short)}"></a>`;
+    })
+    .join("");
+  return `<div class="ft-daily-card" aria-label="${escapeHtml(grid.title)}">
+    <p class="ft-daily-card-day">${Number(dom)}</p>
+    <p class="ft-daily-card-month">${escapeHtml(grid.monthWord)}</p>
+    <div class="ft-daily-cal">
+      <div class="ft-daily-week">${heads}</div>
+      <div class="ft-daily-dots">${dots}</div>
+    </div>
+    <p class="ft-daily-card-date">${Number(year)} 年 ${Number(month)} 月 ${Number(dom)} 日</p>
+  </div>`;
+}
+
+function masthead(edition, days, escapeHtml) {
   const { day, date, stats } = edition;
   const [year, month, dom] = day.split("-");
   const week = date.long.slice(-1);
@@ -217,11 +238,7 @@ function masthead(edition, escapeHtml) {
         <h1>日报</h1>
         <p class="ft-daily-imprint">前沿热点看板 · 按存档日整理</p>
       </div>
-      <div class="ft-daily-eye" aria-hidden="true">
-        <p class="ft-daily-eye-fig">${Number(dom)}</p>
-        <p class="ft-daily-eye-top">${Number(year)} 年 ${Number(month)} 月</p>
-        <p class="ft-daily-eye-bot">星期${week}</p>
-      </div>
+      ${calendarCard(edition, days, escapeHtml)}
     </div>
     <p class="ft-daily-stats">${metricHtml}<span class="ft-daily-read">约 ${stats.minutes} 分钟读完</span></p>
   </header>`;
@@ -316,13 +333,28 @@ function sectionPage(edition, section, index, escapeHtml) {
   </section>`;
 }
 
-function issueHtml(edition, ctx, { hidden = false } = {}) {
+function neighbours(edition, days, escapeHtml) {
+  const i = days.indexOf(edition.day);
+  const newer = i > 0 ? days[i - 1] : "";
+  const older = i >= 0 && i < days.length - 1 ? days[i + 1] : "";
+  const cell = (iso, label) => {
+    if (!iso) return `<span class="ft-daily-nb is-empty"></span>`;
+    return `<a class="ft-daily-nb" href="#d-${iso}">
+      <span>${escapeHtml(label)} · ${escapeHtml(formatZhDate(iso).short)}</span>
+    </a>`;
+  };
+  if (!newer && !older) return "";
+  return `<nav class="ft-daily-nbs" aria-label="相邻存档日">${cell(older, "前一日")}${cell(newer, "后一日")}</nav>`;
+}
+
+function issueHtml(edition, days, ctx, { hidden = false } = {}) {
   const { escapeHtml } = ctx;
   const pages = edition.sections.map((section, i) => sectionPage(edition, section, i, escapeHtml)).join("");
   return `<article class="ft-daily-issue" data-ft-issue="${escapeHtml(edition.day)}" id="d-${escapeHtml(edition.day)}"${hidden ? " hidden" : ""}>
-    ${masthead(edition, escapeHtml)}
+    ${masthead(edition, days, escapeHtml)}
     ${frontPage(edition, ctx)}
     ${pages}
+    ${neighbours(edition, days, escapeHtml)}
     <p class="ft-daily-end">（本期完）</p>
     <p class="ft-daily-colo">前沿趋势日报根据公开报道整理，每条都附原文。材料来自当前看板存档日，不另写事实。</p>
   </article>`;
@@ -365,13 +397,14 @@ export function dailyPageBody(cards, meta, { escapeHtml, hrefBetween }) {
   }
 
   const papers = editions
-    .map((edition, index) => issueHtml(edition, { escapeHtml, hrefBetween }, { hidden: index > 0 }))
+    .map((edition, index) => issueHtml(edition, days, { escapeHtml, hrefBetween }, { hidden: index > 0 }))
     .join("");
   const updated = meta.updatedAt ? `看板更新于 ${escapeHtml(meta.updatedAt)}` : "";
 
   return `<div class="ft-daily" data-ds-generated="daily">
+  <div class="ft-daily-phonekinds">${kindSwitch({ escapeHtml, hrefBetween })}</div>
   <div class="ft-daily-frame">
-    ${calendarHtml(current.day, days, editions, { escapeHtml })}
+    ${chromeHtml(current.day, days, editions, { escapeHtml, hrefBetween })}
     <div class="ft-daily-paper">
       ${papers}
       <p class="ft-daily-foot">
