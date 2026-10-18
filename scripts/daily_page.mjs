@@ -171,7 +171,8 @@ function pastRow(iso, current, editions, escapeHtml) {
   const mark = formatZhDate(iso);
   const title = edition?.lead?.title || `${mark.short} 日报`;
   const currentCls = iso === current ? " is-current" : "";
-  return `<a class="ft-daily-past${currentCls}" data-ft-cal="${escapeHtml(iso)}" href="#d-${iso}">
+  const curAttr = iso === current ? ' aria-current="true"' : "";
+  return `<a class="ft-daily-past${currentCls}" data-ft-cal="${escapeHtml(iso)}" href="#d-${iso}"${curAttr}>
         <span class="ft-daily-past-n">${Number(iso.slice(8, 10))}</span>
         <span class="ft-daily-past-meta">
           <span class="ft-daily-past-w">星期${mark.long.slice(-1)}</span>
@@ -223,7 +224,9 @@ function calendarCard(edition, days, escapeHtml) {
         return `<span class="ft-daily-dot is-none" title="${Number(month)}月${cell.n}日"></span>`;
       }
       const cls = cell.state === "current" ? "is-current" : "is-issue";
-      return `<a class="ft-daily-dot ${cls}" data-ft-cal="${escapeHtml(cell.iso)}" href="#d-${cell.iso}" title="${escapeHtml(formatZhDate(cell.iso).short)}"></a>`;
+      const label = escapeHtml(formatZhDate(cell.iso).short);
+      const cur = cell.state === "current" ? ' aria-current="true"' : "";
+      return `<a class="ft-daily-dot ${cls}" data-ft-cal="${escapeHtml(cell.iso)}" href="#d-${cell.iso}" title="${label}" aria-label="${label}"${cur}></a>`;
     })
     .join("");
   return `<div class="ft-daily-card" aria-label="${escapeHtml(grid.title)}">
@@ -389,8 +392,18 @@ const SWITCH_JS = `<script data-ds-injected="daily">
   var issues = document.querySelectorAll("[data-ft-issue]");
   if (!issues.length) return;
   function dayFromHash() {
-    var m = location.hash.match(/^#d-(\\d{4}-\\d{2}-\\d{2})/);
-    return m ? m[1] : issues[0].getAttribute("data-ft-issue");
+    var h = location.hash;
+    var m = h.match(/^#d-(\\d{4}-\\d{2}-\\d{2})/);
+    if (m) return m[1];
+    if (h && h.length > 1) {
+      try {
+        var target = document.querySelector(h);
+        var issue = target && target.closest("[data-ft-issue]");
+        if (issue) return issue.getAttribute("data-ft-issue");
+      } catch (e) {}
+    }
+    var visible = document.querySelector("[data-ft-issue]:not([hidden])");
+    return (visible || issues[0]).getAttribute("data-ft-issue");
   }
   function show(day) {
     var known = false;
@@ -406,11 +419,14 @@ const SWITCH_JS = `<script data-ds-injected="daily">
     document.querySelectorAll("[data-ft-cal]").forEach(function (el) {
       var on = el.getAttribute("data-ft-cal") === day;
       el.classList.toggle("is-current", on);
+      if (on) el.setAttribute("aria-current", "true");
+      else el.removeAttribute("aria-current");
       if (el.classList.contains("ft-daily-dot")) {
         el.classList.toggle("is-issue", !on);
       }
     });
   }
+
   show(dayFromHash());
   window.addEventListener("hashchange", function () { show(dayFromHash()); });
 })();

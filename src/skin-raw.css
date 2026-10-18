@@ -1066,28 +1066,40 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 }
 
 .ft-daily-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
+  position: relative;
+  width: 22px;
+  height: 22px;
+  border: 0;
   background: transparent;
-  border: 1px solid var(--ft-line);
   box-sizing: border-box;
 }
 
-.ft-daily-dot.is-pad {
+.ft-daily-dot::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 1px solid var(--ft-line);
+  background: transparent;
+}
+
+.ft-daily-dot.is-pad::after {
   border-color: transparent;
 }
 
-.ft-daily-dot.is-issue {
-  background: var(--ft-ink);
-  border-color: var(--ft-ink);
-  opacity: 0.28;
+.ft-daily-dot.is-issue::after {
+  background: var(--ft-muted);
+  border-color: var(--ft-muted);
 }
 
-.ft-daily-dot.is-current {
+.ft-daily-dot.is-current::after {
   background: var(--ft-teal);
   border-color: var(--ft-teal);
-  transform: scale(1.25);
+  transform: scale(1.2);
 }
 
 .ft-daily-stats {
@@ -1424,7 +1436,7 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
   }
 
   .ft-daily-nameplate {
-    grid-template-columns: minmax(0, 1fr) 124px;
+    grid-template-columns: minmax(0, 1fr) 148px;
     gap: 8px;
     align-items: end;
   }
@@ -1434,12 +1446,21 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
   }
 
   .ft-daily-card {
-    width: 124px;
+    width: 148px;
     padding: 8px;
   }
 
   .ft-daily-card-day {
     font-size: 32px;
+  }
+
+  .ft-daily-dot {
+    width: 16px;
+    height: 16px;
+  }
+
+  .ft-daily-dot::after {
+    top: 4px;
   }
 
   .ft-daily-chip,
