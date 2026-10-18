@@ -39,6 +39,8 @@ html.ds-page main {
 
 /* —— 暖纸阅读 token（趋势子站壳层） —— */
 html.ft-shell {
+  --ds-font-sans: "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
+  --ds-font-display: var(--ds-font-sans);
   --ft-paper: #faf9f6;
   --ft-sunk: #f3f3ef;
   --ft-elev: #fffefb;
@@ -570,8 +572,13 @@ th {
   color: var(--ft-teal);
 }
 
-.ft-board-link {
+.ft-board-link,
+.ft-board-back {
   margin: 28px 0 8px;
+}
+
+.ft-board-back {
+  margin: 8px 0 16px;
 }
 
 .ft-live-archive[hidden],

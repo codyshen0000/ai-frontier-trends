@@ -10,7 +10,7 @@ const ARCHIVE_END = "<!--ds-live-archive:end-->";
 export function stripLiveCurate(html) {
   return String(html)
     .replace(new RegExp(`${CURATE_START}[\\s\\S]*?${CURATE_END}\\s*`, "g"), "")
-    .replace(new RegExp(`${ARCHIVE_START}\\s*<div[^>]*data-ds-injected="live-archive"[^>]*>`, "i"), "")
+    .replace(new RegExp(`${ARCHIVE_START}\\s*<div[^>]*data-ds-injected="live-archive"[^>]*>\\s*(<p class="ft-board-back">[\\s\\S]*?<\\/p>)?`, "i"), "")
     .replace(new RegExp(`<\\/div>\\s*${ARCHIVE_END}`, "i"), "");
 }
 
@@ -97,7 +97,7 @@ export function curateLivePage(html, ctx) {
     return `${chrome}${ARCHIVE_START}<div class="ft-live-archive" data-ds-injected="live-archive" id="ft-board" hidden>${raw}</div>${ARCHIVE_END}`;
   }
   return raw
-    .replace(/<main\b[^>]*>/i, (open) => `${open}${chrome}${ARCHIVE_START}<div class="ft-live-archive" data-ds-injected="live-archive" id="ft-board" hidden>`)
+    .replace(/<main\b[^>]*>/i, (open) => `${open}${chrome}${ARCHIVE_START}<div class="ft-live-archive" data-ds-injected="live-archive" id="ft-board" hidden><p class="ft-board-back"><a href="#curated">返回精选</a></p>`)
     .replace(/<\/main>/i, `</div>${ARCHIVE_END}</main>`);
 }
 

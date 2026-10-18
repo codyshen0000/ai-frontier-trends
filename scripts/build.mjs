@@ -216,7 +216,7 @@ const THEME_BOOT =
   '<script data-ds-injected="theme">(function(){try{var t=localStorage.getItem("theme");if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t;document.documentElement.classList.add("ds-page","ft-shell");}catch(e){document.documentElement.classList.add("ds-page","ft-shell");}})();</script>';
 
 const RAW_NAV_UI =
-  '<script data-ds-injected="ui">(function(){var root=document.documentElement;function apply(t){root.dataset.theme=t;document.querySelectorAll(".ft-theme-toggle").forEach(function(btn){var d=t==="dark";btn.setAttribute("aria-pressed",d?"true":"false");btn.setAttribute("aria-label",d?"切换到浅色模式":"切换到深色模式");btn.textContent=d?"☀":"☾";});}function pref(){try{var s=localStorage.getItem("theme");if(s==="light"||s==="dark")return s;}catch(e){}return matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}apply(pref());document.querySelectorAll(".ft-theme-toggle").forEach(function(btn){btn.addEventListener("click",function(){var n=root.dataset.theme==="dark"?"light":"dark";try{localStorage.setItem("theme",n);}catch(e){}apply(n);});});function applyBoard(){var board=location.hash==="#board";var curate=document.querySelector(\'[data-ds-injected="live-curate"]\');var archive=document.querySelector(\'[data-ds-injected="live-archive"]\');if(!curate||!archive)return;curate.hidden=board;archive.hidden=!board;root.classList.toggle("ft-board",board);}window.addEventListener("hashchange",applyBoard);applyBoard();})();</script>';
+  '<script data-ds-injected="ui">(function(){var root=document.documentElement;function apply(t){root.dataset.theme=t;document.querySelectorAll(".ft-theme-toggle").forEach(function(btn){var d=t==="dark";btn.setAttribute("aria-pressed",d?"true":"false");btn.setAttribute("aria-label",d?"切换到浅色模式":"切换到深色模式");btn.textContent=d?"☀":"☾";});}function pref(){try{var s=localStorage.getItem("theme");if(s==="light"||s==="dark")return s;}catch(e){}return matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}apply(pref());document.querySelectorAll(".ft-theme-toggle").forEach(function(btn){btn.addEventListener("click",function(){var n=root.dataset.theme==="dark"?"light":"dark";try{localStorage.setItem("theme",n);}catch(e){}apply(n);});});function applyBoard(){var board=location.hash==="#board";var curate=document.querySelector(\'[data-ds-injected="live-curate"]\');var archive=document.querySelector(\'[data-ds-injected="live-archive"]\');if(!curate||!archive)return;curate.hidden=board;archive.hidden=!board;root.classList.toggle("ft-board",board);}window.addEventListener("hashchange",applyBoard);if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",applyBoard);else applyBoard();})();</script>';
 
 function stripInjected(html) {
   return stripLiveCurate(
@@ -253,9 +253,9 @@ export function injectHtmlFile(raw, { currentId, path, extraBody = "" }) {
   const cssLink = `<link rel="stylesheet" href="${DS_CSS}" data-ds-injected="css">`;
   const skinLink = `<link rel="stylesheet" href="${skinHref}" data-ds-injected="skin">`;
   let html = stripInjected(raw);
-  if (path === "/live/") html = curateLivePage(html, { hrefBetween, escapeHtml });
   if (PAPERS.length) html = addExplainLinks(html, PAPERS, hrefBetween(path, "/papers/"));
   if (path === "/timeline/") html = ensureThreadAnchors(html);
+  if (path === "/live/") html = curateLivePage(html, { hrefBetween, escapeHtml });
   html = injectBeforeHeadEnd(html, cssLink);
   html = injectBeforeHeadEnd(html, skinLink);
   html = injectBeforeHeadEnd(html, THEME_BOOT);

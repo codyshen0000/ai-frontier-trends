@@ -196,6 +196,10 @@ assert(livePage.includes("ft-story"), "live maps cards into the date feed");
 assert(livePage.includes('id="back-home"'), "live output keeps #back-home");
 assert(liveRaw.includes('id="back-home"'), "live source keeps #back-home");
 assert(livePage.includes("Hub 趋势") && livePage.includes("已宣布、待交付"), "research blocks remain in the live archive");
+assert(livePage.includes("DOMContentLoaded") && livePage.includes("#board"), "live board view waits for DOM before hash switch");
+const curatedBlock = livePage.match(/<!--ds-live-curate:start-->[\s\S]*?<!--ds-live-curate:end-->/)?.[0] || "";
+assert(curatedBlock.includes("当前热点"), "curated block is marked for strip/rebuild");
+assert(!curatedBlock.includes("paper-explain"), "curated feed does not inject 图解 into new cards");
 for (const needle of ["/workspace", "/home/box", "/cursor/stores"]) {
   assert(!livePage.includes(needle), `live has no ${needle}`);
 }
