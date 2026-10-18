@@ -703,6 +703,10 @@ html.ft-board .ft-live-archive {
 }
 
 @media (max-width: 960px) {
+  .ft-pagehead h1 {
+    font-size: 24px;
+  }
+
   .ft-pin-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
