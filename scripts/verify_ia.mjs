@@ -134,6 +134,7 @@ const paths = [
   "/",
   "/live/",
   "/hot/",
+  "/daily/",
   "/more/",
   "/timeline/",
   "/weekly/",
@@ -185,7 +186,10 @@ assert(signals.includes(">周报<"), "signals trend sub-nav includes 周报");
 
 const livePage = readFileSync(join(distDir, "live", "index.html"), "utf8");
 const liveNav = livePage.match(/data-ds-injected="nav"[\s\S]*?<\/aside>/)?.[0] || "";
+const liveTab = livePage.match(/data-ds-injected="tabbar"[\s\S]*?<\/nav>/)?.[0] || "";
 assert(liveNav.includes(">精选<") && liveNav.includes(">热点<") && liveNav.includes(">趋势<") && liveNav.includes(">更多<"), "live injected nav is the 4-item IA");
+assert(liveNav.includes(">日报<"), "desktop sidebar surfaces 日报 under 成刊");
+assert((liveTab.match(/<a /g) || []).length === 4 && !liveTab.includes(">日报<"), "mobile tab bar stays 精选/热点/趋势/更多");
 assert(!liveNav.includes(">案例<") && !liveNav.includes(">示例库<") && !liveNav.includes(">相机术语<"), "live nav is not 11 flat links");
 assert(!liveNav.includes("AIHOT") && !liveNav.includes("MyHOT"), "live nav has no *HOT product brand");
 assert(livePage.includes("当前热点"), "live curated homepage has 当前热点");
@@ -214,7 +218,23 @@ const morePage = readFileSync(join(distDir, "more", "index.html"), "utf8");
 assert(morePage.includes("看板 Studio"), "Studio stays under 更多");
 assert(morePage.includes("推翻信号") && morePage.includes("权重待交付"), "signals and weights are under 更多");
 assert(morePage.includes("时间线"), "timeline is reachable from 更多");
+assert(morePage.includes("日报"), "more page lists 日报");
 assert(!morePage.includes("AIHOT") && !morePage.includes("MyHOT"), "more page has no *HOT product brand");
+
+const dailyPage = readFileSync(join(distDir, "daily", "index.html"), "utf8");
+const dailyNav = dailyPage.match(/data-ds-injected="nav"[\s\S]*?<\/aside>/)?.[0] || "";
+const dailyTab = dailyPage.match(/data-ds-injected="tabbar"[\s\S]*?<\/nav>/)?.[0] || "";
+assert(dailyPage.includes("前沿趋势日报"), "daily masthead uses 前沿趋势日报");
+assert(dailyPage.includes("件大事") && dailyPage.includes("个来源"), "daily has derived stats strip");
+assert(dailyPage.includes("头条"), "daily has 头条");
+assert(dailyPage.includes("往期") && dailyPage.includes("ft-daily-cal"), "daily has calendar / 往期 column");
+assert(dailyPage.includes("ft-daily-issue") && dailyPage.includes("data-ft-issue"), "daily renders edition(s) from live cards");
+assert(dailyPage.includes("data-ds-generated=\"daily\""), "daily is generated at build time");
+assert(dailyNav.includes(">日报<") && dailyNav.includes("aria-current=\"page\""), "sidebar 日报 is current on /daily/");
+assert((dailyTab.match(/<a /g) || []).length === 4, "daily keeps the 4-item mobile tab bar");
+assert(!dailyPage.includes("AIHOT") && !dailyPage.includes("MyHOT"), "daily has no *HOT product brand");
+assert(!dailyPage.includes("第180期") && !dailyPage.includes("AI日报"), "daily does not copy aihot masthead copy");
+assert(livePage.includes("data-ds-injected=\"live-curate\""), " /live/ curated homepage remains");
 
 assert(/body\{[^}]*max-width:\s*\d+px;[^}]*margin:[^;]*auto/.test(timelineRaw), "timeline source keeps a centered reading column");
 assert(/main\{[^}]*max-width:\s*\d+px;[^}]*margin:[^;]*auto/.test(liveRaw), "live source keeps a centered main column");

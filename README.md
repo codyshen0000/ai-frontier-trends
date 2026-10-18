@@ -5,6 +5,7 @@
 站点地址：<https://codyshen0000.github.io/ai-frontier-trends/>
 
 - 精选：<https://codyshen0000.github.io/ai-frontier-trends/live/>
+- 日报：<https://codyshen0000.github.io/ai-frontier-trends/daily/>
 - 热点榜：<https://codyshen0000.github.io/ai-frontier-trends/hot/>
 - 趋势时间线：<https://codyshen0000.github.io/ai-frontier-trends/timeline/>
 - 周报：<https://codyshen0000.github.io/ai-frontier-trends/weekly/>
@@ -13,9 +14,10 @@
 - 专题 FLUX 3：<https://codyshen0000.github.io/ai-frontier-trends/flux3/>
 - 关于：<https://codyshen0000.github.io/ai-frontier-trends/about/>
 
-导航四项：**精选 / 热点 / 趋势 / 更多**。桌面是左侧栏，宽度小于 961px 时换成底栏四格。品牌文案是「前沿趋势 / 前沿热点看板」，不用任何 `*HOT` 产品名。
+导航四项：**精选 / 热点 / 趋势 / 更多**。桌面是左侧栏，宽度小于 961px 时换成底栏四格。品牌文案是「前沿趋势 / 前沿热点看板」，不用任何 `*HOT` 产品名。桌面侧栏「成刊」下另挂 **日报** → `/daily/`；手机从「更多」进。
 
 - **精选**（`/live/`）：顶置「当前热点」+ 按日精选卡片流。
+- **日报**（`/daily/`）：从同一批 live 卡片按存档日生成的报纸版（刊头、月历、统计条、头条与栏目）。不改 `content/live.html`。
 - **热点**（`/hot/`）：存档窗内按独立来源数排序，不用点赞当热度。
 - **趋势**（`/timeline/`）：本周主线、时间线修订史；周报 / 信号表 / 权重追踪仍是栏目内二级。
 - **更多**：Studio、信号、权重、专题、关于、个人主页。Studio 不占首页。
@@ -62,7 +64,7 @@ SITE_BASE=/ai-frontier-trends npm run preview
 2. 在 `<body>` 后插入阅读站壳层：左侧栏 + 手机顶栏/底栏（精选 / 热点 / 趋势 / 更多）和主题脚本。
 3. `/live/` 额外跑一遍幂等的精选变换（`scripts/live_curate.mjs`）：从 `article.card[data-id][data-day]` 抽出标题、中文摘要、来源、日期，生成顶置「当前热点」和按日精选流；原文（Hub / 主线表 / 待交付 / 过滤器）包进 `#board` 档案，不删。`/live/#board` 仍可看原始看板。
 4. `/timeline/` 的输出会给「主线 N」标题补上 `id="thread-N"`，方便首页卡片跳转；源文件不动。
-5. `/hot/`、`/more/` 由构建器生成，不写进被同步覆盖的 `live.html`。
+5. `/hot/`、`/more/`、`/daily/` 由构建器生成，不写进被同步覆盖的 `live.html`。`/daily/` 用 `scripts/daily_page.mjs` 按存档日分组，统计条只从卡片来源数、【官方自报】和「大模型」栏目推导。
 
 脚本插入的 `← 返回首页` 必须保留在固定锚点 `#back-home`（指向 `../`）。注入的导航在视觉上取代它；`#back-home` 仍留在 DOM 里，链接继续可用。
 

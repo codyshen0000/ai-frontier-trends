@@ -81,7 +81,7 @@ export function renderCuratedHome(cards, meta, { escapeHtml, hrefBetween }) {
   </header>
   <section class="ft-pins" aria-label="当前热点">
     <div class="ft-pin-grid">${pinHtml}</div>
-    <p class="ft-pins-foot"><a href="${hrefBetween("/live/", "/hot/")}">查看热点榜</a></p>
+    <p class="ft-pins-foot"><a href="${hrefBetween("/live/", "/hot/")}">查看热点榜</a><span class="ft-dot" aria-hidden="true">·</span><a href="${hrefBetween("/live/", "/daily/")}">看日报</a></p>
   </section>
   <div class="ft-feed">${feed || `<p class="ft-empty">这一期还没有可展开的精选条目。</p>`}</div>
   <p class="ft-board-link"><a href="#board">查看原始看板（Hub / 主线 / 待交付）</a></p>
@@ -137,13 +137,19 @@ export function hotPageBody(cards, meta, { escapeHtml }) {
 export function morePageBody({ hrefBetween, escapeHtml }) {
   const groups = [
     {
+      title: "成刊",
+      items: [
+        { label: "日报", href: hrefBetween("/more/", "/daily/"), note: "按存档日整理的报纸版" },
+        { label: "周报", href: hrefBetween("/more/", "/weekly/"), note: "按周归纳升降与改写" },
+      ],
+    },
+    {
       title: "研究资产",
       items: [
         { label: "研究主页 · 本周主线", href: hrefBetween("/more/", "/"), note: "结论先行的主线与读法" },
         { label: "时间线", href: hrefBetween("/more/", "/timeline/"), note: "主线修订史" },
         { label: "推翻信号", href: hrefBetween("/more/", "/signals/"), note: "让判断加强或翻盘的证据" },
         { label: "权重待交付", href: hrefBetween("/more/", "/weights/"), note: "已宣布、尚未放出的权重" },
-        { label: "周报", href: hrefBetween("/more/", "/weekly/"), note: "按周归纳升降与改写" },
       ],
     },
     {
