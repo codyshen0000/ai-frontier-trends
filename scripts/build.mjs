@@ -624,6 +624,14 @@ export function buildSite() {
   const copiedImages = copyCaseAssets(root, distDir);
   writeFileSync(join(distDir, ".nojekyll"), "");
 
+  // Tasks #6 preview staging: snapshot /daily/ until PR #11 lands. Do not replace live/hot.
+  const stagedDaily = join(root, "staging", "daily-preview");
+  if (existsSync(join(stagedDaily, "index.html"))) {
+    const dest = join(distDir, "daily");
+    mkdirSync(dest, { recursive: true });
+    cpSync(stagedDaily, dest, { recursive: true });
+  }
+
   console.log(`Built ${contentPages.length + 1} pages → dist/ (public=${publicDeploy}, case images=${copiedImages})`);
 }
 
