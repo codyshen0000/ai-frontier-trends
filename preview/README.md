@@ -7,7 +7,8 @@
 公开点击（commit SHA 写在 PR 正文，合并前以分支 HEAD 为准；**优先 jsDelivr**）：
 
 - 日报：`https://cdn.jsdelivr.net/gh/codyshen0000/ai-frontier-trends@<SHA>/preview/daily/index.html`
-- 日报自评：`preview/daily/CRITIQUE.md`
+- 日报门禁：`preview/daily/IMPECCABLE.md`
+- 日报自评（旧）：`preview/daily/CRITIQUE.md`
 - 精选：`preview/live/index.html`
 - 热点：`preview/hot/index.html`
 - 更多：`preview/more/index.html`

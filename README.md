@@ -14,7 +14,7 @@
 - 专题 FLUX 3：<https://codyshen0000.github.io/ai-frontier-trends/flux3/>
 - 关于：<https://codyshen0000.github.io/ai-frontier-trends/about/>
 
-导航四项：**精选 / 热点 / 趋势 / 更多**。桌面是左侧栏，宽度小于 961px 时换成底栏四格。品牌文案是「前沿趋势 / 前沿热点看板」，不用任何 `*HOT` 产品名。桌面侧栏「成刊」下另挂 **日报** → `/daily/`；手机从「更多」进。
+导航四项：**精选 / 热点 / 趋势 / 更多**。桌面是左侧栏；宽度小于 961px 时换成底栏，并加上 **日报**（精选 / 热点 / 日报 / 趋势 / 更多）。品牌文案是「前沿趋势 / 前沿热点看板」，不用任何 `*HOT` 产品名。桌面侧栏「成刊」下另挂 **日报** → `/daily/`。
 
 - **精选**（`/live/`）：顶置「当前热点」+ 按日精选卡片流。
 - **日报**（`/daily/`）：从同一批 live 卡片按存档日生成的报纸版（刊头、月历、统计条、头条与栏目）。不改 `content/live.html`。
@@ -61,7 +61,7 @@ SITE_BASE=/ai-frontier-trends npm run preview
 1. 在 `</head>` 前插入  
    `<link rel="stylesheet" href="https://codyshen0000.github.io/assets/ds.css">`  
    以及相对路径的 `assets/skin-raw.css`（暖纸 token、侧栏/底栏、字体与强调色；并在注入后把阅读栏水平居中加回去：周报/时间线走 `body` 栏，`/live/` 走源文件自己的 `main{max-width:1000px;margin:0 auto}`。不改图表/控件几何，也不改这些源 HTML）。
-2. 在 `<body>` 后插入阅读站壳层：左侧栏 + 手机顶栏/底栏（精选 / 热点 / 趋势 / 更多）和主题脚本。
+2. 在 `<body>` 后插入阅读站壳层：左侧栏 + 手机顶栏/底栏（精选 / 热点 / 日报 / 趋势 / 更多）和主题脚本。
 3. `/live/` 额外跑一遍幂等的精选变换（`scripts/live_curate.mjs`）：从 `article.card[data-id][data-day]` 抽出标题、中文摘要、来源、日期，生成顶置「当前热点」和按日精选流；原文（Hub / 主线表 / 待交付 / 过滤器）包进 `#board` 档案，不删。`/live/#board` 仍可看原始看板。
 4. `/timeline/` 的输出会给「主线 N」标题补上 `id="thread-N"`，方便首页卡片跳转；源文件不动。
 5. `/hot/`、`/more/`、`/daily/` 由构建器生成，不写进被同步覆盖的 `live.html`。`/daily/` 用 `scripts/daily_page.mjs` 按存档日分组，统计条只从卡片来源数、【官方自报】和「大模型」栏目推导。

@@ -189,7 +189,7 @@ const liveNav = livePage.match(/data-ds-injected="nav"[\s\S]*?<\/aside>/)?.[0] |
 const liveTab = livePage.match(/data-ds-injected="tabbar"[\s\S]*?<\/nav>/)?.[0] || "";
 assert(liveNav.includes(">精选<") && liveNav.includes(">热点<") && liveNav.includes(">趋势<") && liveNav.includes(">更多<"), "live injected nav is the 4-item IA");
 assert(liveNav.includes(">日报<"), "desktop sidebar surfaces 日报 under 成刊");
-assert((liveTab.match(/<a /g) || []).length === 4 && !liveTab.includes(">日报<"), "mobile tab bar stays 精选/热点/趋势/更多");
+assert((liveTab.match(/<a /g) || []).length === 5 && liveTab.includes(">日报<"), "mobile tab bar includes 日报");
 assert(!liveNav.includes(">案例<") && !liveNav.includes(">示例库<") && !liveNav.includes(">相机术语<"), "live nav is not 11 flat links");
 assert(!liveNav.includes("AIHOT") && !liveNav.includes("MyHOT"), "live nav has no *HOT product brand");
 assert(livePage.includes("当前热点"), "live curated homepage has 当前热点");
@@ -236,15 +236,18 @@ assert(dailyPage.includes("ft-daily-kinds") && dailyPage.includes(">周报<"), "
 assert(dailyPage.includes("ft-daily-issue") && dailyPage.includes("data-ft-issue"), "daily renders edition(s) from live cards");
 assert(dailyPage.includes("data-ds-generated=\"daily\""), "daily is generated at build time");
 assert(dailyNav.includes(">日报<") && dailyNav.includes("aria-current=\"page\""), "sidebar 日报 is current on /daily/");
-assert((dailyTab.match(/<a /g) || []).length === 4, "daily keeps the 4-item mobile tab bar");
+assert((dailyTab.match(/<a /g) || []).length === 5 && dailyTab.includes(">日报<"), "daily mobile tab bar includes 日报");
+assert(dailyTab.includes("aria-current=\"page\"") && dailyTab.includes(">日报<"), "tab bar 日报 is current on /daily/");
 assert(!dailyPage.includes("AIHOT") && !dailyPage.includes("MyHOT"), "daily has no *HOT product brand");
 assert(!dailyPage.includes("第180期") && !dailyPage.includes("AI日报"), "daily does not copy aihot masthead copy");
-assert(dailyPage.includes("Noto Serif SC") && dailyPage.includes("Noto Sans SC"), "daily loads Noto Serif/Sans SC");
-assert(dailyPage.includes("#F7F4EC") && dailyPage.includes("#8B1E1E") && dailyPage.includes("#1F3A5F"), "daily embeds E-Ink paper tokens");
-assert(dailyPage.includes('data-ds-injected="daily-skin"'), "daily injects editorial skin");
+assert(dailyPage.includes("另外") && dailyPage.includes("原文"), "daily source chips include 另外 N 家 / 原文");
+assert(dailyPage.includes("ft-daily-monthhead"), "daily archive is grouped by month");
+assert(!dailyPage.includes("Noto Serif") && !dailyPage.includes("Newsreader"), "daily does not load a serif display stack");
+assert(!dailyPage.includes("#F7F4EC") && !dailyPage.includes("#8B1E1E") && !dailyPage.includes("#1F3A5F"), "daily does not override shell with E-Ink tokens");
+assert(!dailyPage.includes('data-ds-injected="daily-skin"'), "daily uses shared reading-station skin");
 {
-  const dailySkin = dailyPage.match(/data-ds-injected="daily-skin"[\s\S]*?<\/style>/)?.[0] || "";
-  assert(dailySkin && !/Inter/.test(dailySkin), "daily skin stack has no Inter");
+  const dailyHtml = dailyPage;
+  assert(!/Inter/.test(dailyHtml.match(/class="ft-daily"[\s\S]*?<\/div>\s*<script data-ds-injected="daily">/)?.[0] || ""), "daily newspaper markup stack has no Inter");
 }
 assert(livePage.includes("data-ds-injected=\"live-curate\""), " /live/ curated homepage remains");
 
@@ -279,6 +282,7 @@ assert(
 );
 assert(skinRaw.includes("#faf9f6") && skinRaw.includes("#f3f3ef"), "skin-raw defines warm-paper tokens");
 assert(skinRaw.includes("--ft-teal") && !/#0071e3/.test(skinRaw), "reading shell uses a single teal accent");
+assert(!/Noto Serif/.test(skinRaw) && !/#8B1E1E/.test(skinRaw), "daily CSS stays on the shared sans/teal tokens");
 assert(skinRaw.includes("@media (max-width: 960px)"), "shell collapses to a bottom tab bar below 961px");
 assert(!/ft-daily-rail\s*\{[^}]*position:\s*sticky/.test(skinRaw), "daily 今日看点 rail is not sticky");
 assert(/\.ft-daily-card\s*\{[^}]*border:/.test(skinRaw), "daily calendar is a bordered card");

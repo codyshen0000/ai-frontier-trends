@@ -83,6 +83,7 @@ html.ft-shell {
   --ds-shadow-3: none;
   background: var(--ft-paper);
   color: var(--ft-ink);
+  color-scheme: light;
   padding-left: var(--ft-sidebar);
 }
 
@@ -99,6 +100,7 @@ html.ft-shell[data-theme="dark"] {
   --ds-hairline-strong: rgba(255, 255, 255, 0.18);
   --ds-accent-ink: #082f2c;
   --ds-overlay: rgba(0, 0, 0, 0.64);
+  color-scheme: dark;
 }
 
 @media (max-width: 960px) {
@@ -425,9 +427,17 @@ th {
   flex-direction: column;
   justify-content: center;
   gap: 2px;
+  min-width: 44px;
   min-height: 0;
   padding: 6px 0;
   font-size: 11px;
+  touch-action: manipulation;
+}
+
+.ft-side-links a,
+.ft-side-editions a,
+.ft-theme-toggle {
+  touch-action: manipulation;
 }
 
 @media (max-width: 960px) {
@@ -635,6 +645,12 @@ html.ft-board .ft-live-archive {
   display: block !important;
 }
 
+html.ft-shell .meta a,
+html.ft-shell #back-home a,
+html.ft-shell .hub a {
+  color: var(--ft-teal) !important;
+}
+
 .ft-rank-list {
   list-style: none;
   margin: 0;
@@ -796,10 +812,16 @@ html.ft-board .ft-live-archive {
 
 /* —— 日报报纸版（对标 aihot daily IA，自有品牌） —— */
 html.ft-shell main.ds-wrap.ft-daily-wrap {
-  max-width: 1180px;
-  width: min(1180px, calc(100% - 28px));
-  padding-top: 4px;
+  max-width: 1120px;
+  width: min(1120px, calc(100% - 24px));
+  padding-top: 2px;
+  padding-bottom: 48px;
   background: transparent;
+}
+
+.ft-daily {
+  font-family: var(--ds-font-sans);
+  color: var(--ft-ink);
 }
 
 .ft-daily-phonekinds {
@@ -808,25 +830,26 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 
 .ft-daily-frame {
   display: grid;
-  grid-template-columns: 220px minmax(0, 1fr);
-  gap: 28px 40px;
+  grid-template-columns: 200px minmax(0, 1fr);
+  gap: 16px 28px;
   align-items: start;
 }
 
 .ft-daily-chrome {
   position: sticky;
-  top: 16px;
-  padding-top: 4px;
+  top: 12px;
+  padding-top: 2px;
 }
 
 .ft-daily-kinds {
   display: flex;
   gap: 0;
-  margin: 0 0 18px;
+  margin: 0 0 14px;
   padding: 0;
-  background: transparent;
+  background: var(--ft-elev);
   border: 1px solid var(--ft-line);
-  border-radius: 4px;
+  border-radius: var(--ft-r-8);
+  overflow: hidden;
 }
 
 .ft-daily-kinds a,
@@ -844,7 +867,7 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 
 .ft-daily-kinds a.is-on {
   background: var(--ft-ink);
-  color: var(--ft-paper, #F7F4EC) !important;
+  color: var(--ft-paper) !important;
   font-weight: 600;
 }
 
@@ -854,11 +877,44 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 }
 
 .ft-daily-kicker {
-  margin: 0 0 8px;
+  margin: 0 0 6px;
   font-size: 12px;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   color: var(--ft-muted);
+}
+
+.ft-daily-lead > .ft-daily-kicker {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ft-teal);
+}
+
+.ft-daily-lead > .ft-daily-kicker::before {
+  content: "";
+  width: 16px;
+  height: 2px;
+  background: var(--ft-teal);
+}
+
+.ft-daily-month {
+  margin: 0 0 8px;
+}
+
+.ft-daily-monthhead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 0 4px;
+  padding: 0 6px;
+  font-size: 12px;
+  color: var(--ft-muted);
+}
+
+.ft-daily-monthhead em {
+  font-style: normal;
+  font-variant-numeric: tabular-nums;
 }
 
 .ft-daily-pasts {
@@ -868,13 +924,14 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 
 .ft-daily-past {
   display: grid;
-  grid-template-columns: 36px 1fr;
-  gap: 10px;
+  grid-template-columns: 32px 1fr;
+  gap: 8px;
   align-items: start;
-  padding: 10px 6px;
+  padding: 8px 6px;
   border-bottom: 1px solid var(--ft-line);
   color: inherit !important;
   text-decoration: none;
+  border-radius: var(--ft-r-5);
 }
 
 .ft-daily-past:hover {
@@ -882,16 +939,16 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 }
 
 .ft-daily-past.is-current {
-  background: #EFEAE0;
-  box-shadow: inset 2px 0 0 #8B1E1E;
+  background: var(--ft-elev);
+  box-shadow: inset 2px 0 0 var(--ft-teal);
 }
 
 .ft-daily-past-n {
-  font-family: "Noto Serif SC", "Newsreader", Georgia, serif;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 650;
   letter-spacing: -0.04em;
   line-height: 1;
+  font-variant-numeric: tabular-nums;
 }
 
 .ft-daily-past-meta {
@@ -908,28 +965,28 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 
 .ft-daily-past-t {
   font-size: 12px;
-  line-height: 1.4;
+  line-height: 1.35;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .ft-daily-mast {
-  padding-bottom: 4px;
-  border-bottom: 2px solid var(--ft-ink);
+  padding-bottom: 0;
+  border-bottom: 1px solid var(--ft-line);
 }
 
 .ft-daily-dateline {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   gap: 12px;
-  margin: 0 0 14px;
-  font-size: 13px;
+  margin: 0 0 8px;
+  font-size: 12px;
   color: var(--ft-muted);
 }
 
 .ft-daily-dateline span:nth-child(2) {
-  letter-spacing: 0.18em;
+  letter-spacing: 0.16em;
   text-align: center;
 }
 
@@ -941,17 +998,17 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: end;
-  gap: 24px;
-  padding-bottom: 10px;
+  gap: 20px;
+  padding-bottom: 8px;
 }
 
 .ft-daily-name h1 {
-  margin: 0 0 8px;
-  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "Newsreader", Georgia, serif;
-  font-size: clamp(2.4rem, 1.2rem + 8vw, 5.75rem);
+  margin: 0 0 6px;
+  font-family: var(--ds-font-sans);
+  font-size: clamp(2.6rem, 1rem + 5.8vw, 4.6rem);
   font-weight: 700;
-  letter-spacing: -0.045em;
-  line-height: 0.86;
+  letter-spacing: -0.05em;
+  line-height: 0.88;
   border: 0 !important;
   padding: 0;
   text-wrap: balance;
@@ -959,36 +1016,34 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 
 .ft-daily-imprint {
   margin: 0;
-  font-family: "Noto Serif SC", "Newsreader", Georgia, serif;
-  font-size: 14px;
-  letter-spacing: 0.14em;
+  font-size: 13px;
+  letter-spacing: 0.18em;
   color: var(--ft-muted);
 }
 
 .ft-daily-card {
-  width: 176px;
-  padding: 12px 14px 14px;
-  background: #FFFEFA;
+  width: 168px;
+  padding: 10px 12px 12px;
+  background: var(--ft-elev);
   border: 1px solid var(--ft-line);
-  border-radius: 6px;
+  border-radius: var(--ft-r-8);
   text-align: right;
   box-sizing: border-box;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
 }
 
 .ft-daily-card-day {
   margin: 0;
-  font-family: "Newsreader", "Noto Serif SC", Georgia, serif;
-  font-size: clamp(2.4rem, 1.2rem + 4vw, 3.6rem);
+  font-size: clamp(2.2rem, 1rem + 3.2vw, 3.1rem);
   font-weight: 700;
   letter-spacing: -0.06em;
   line-height: 0.86;
+  font-variant-numeric: tabular-nums;
 }
 
 .ft-daily-card-month,
 .ft-daily-card-date {
   margin: 4px 0 0;
-  font-size: 12px;
+  font-size: 11px;
   color: var(--ft-muted);
 }
 
@@ -1030,8 +1085,8 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 }
 
 .ft-daily-dot.is-current {
-  background: #8B1E1E;
-  border-color: #8B1E1E;
+  background: var(--ft-teal);
+  border-color: var(--ft-teal);
   transform: scale(1.25);
 }
 
@@ -1039,22 +1094,23 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  gap: 8px 22px;
-  margin: 0 -4px;
-  padding: 12px 14px;
-  border-top: 2px solid var(--ft-ink);
+  gap: 6px 20px;
+  margin: 0;
+  padding: 8px 10px;
+  border-top: 1px solid var(--ft-line);
   border-bottom: 1px solid var(--ft-line);
-  background: #EFEAE0;
-  font-size: 14px;
+  background: var(--ft-sunk);
+  font-size: 13px;
   color: var(--ft-muted);
 }
 
 .ft-daily-metric b {
   margin-right: 4px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 650;
   letter-spacing: -0.03em;
   color: var(--ft-ink);
+  font-variant-numeric: tabular-nums;
 }
 
 .ft-daily-read {
@@ -1063,9 +1119,9 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 
 .ft-daily-front {
   display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(220px, 0.65fr);
-  gap: 36px;
-  padding: 28px 0 12px;
+  grid-template-columns: minmax(0, 1.5fr) minmax(210px, 0.6fr);
+  gap: 28px;
+  padding: 16px 0 8px;
   border-bottom: 1px solid var(--ft-line);
 }
 
@@ -1074,11 +1130,11 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 }
 
 .ft-daily-lead h2 {
-  margin: 0 0 14px;
-  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "Newsreader", Georgia, serif;
-  font-size: clamp(1.55rem, 1.2rem + 1.4vw, 2.15rem);
+  margin: 0 0 10px;
+  font-family: var(--ds-font-sans);
+  font-size: clamp(1.35rem, 1.05rem + 1.1vw, 1.85rem);
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
   line-height: 1.28;
   border: 0 !important;
   padding: 0;
@@ -1093,15 +1149,17 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 }
 
 .ft-daily-lead h2 a:hover,
-.ft-daily-story h3 a:hover {
-  color: #1F3A5F !important;
+.ft-daily-story h3 a:hover,
+.ft-daily-look a:hover,
+.ft-daily-index a:hover {
+  color: var(--ft-teal) !important;
 }
 
 .ft-daily-dek {
-  margin: 0 0 16px;
-  font-size: 17.5px;
-  line-height: 1.8;
-  max-width: 36em;
+  margin: 0 0 12px;
+  font-size: 15px;
+  line-height: 1.65;
+  max-width: 42em;
   text-wrap: pretty;
 }
 
@@ -1110,26 +1168,37 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 }
 
 .ft-daily-chip {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  height: 26px;
-  padding: 0 10px;
+  gap: 5px;
+  height: 24px;
+  padding: 0 8px;
   border: 1px solid var(--ft-line);
-  border-radius: 4px;
+  border-radius: var(--ft-r-5);
   font-size: 12px;
   color: var(--ft-ink) !important;
   text-decoration: none;
-  background: #FFFEFA;
+  background: var(--ft-elev);
   transition: color 150ms ease, border-color 150ms ease;
 }
 
+.ft-daily-chip:hover,
+.ft-daily-nb:hover,
+.ft-daily-foot a:hover {
+  color: var(--ft-teal) !important;
+  border-color: var(--ft-teal);
+}
+
+.ft-daily-chip.is-more {
+  color: var(--ft-muted) !important;
+}
+
 .ft-daily-hand {
-  color: #8B1E1E;
+  color: var(--ft-teal);
   font-size: 11px;
 }
 
@@ -1138,17 +1207,23 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
   color: var(--ft-muted);
 }
 
+.ft-daily-issue,
+.ft-daily-page,
+.ft-daily-story {
+  scroll-margin-top: 16px;
+}
+
 .ft-daily-look {
   list-style: none;
-  margin: 0 0 22px;
+  margin: 0 0 16px;
   padding: 0;
 }
 
 .ft-daily-look li {
   display: grid;
-  grid-template-columns: 22px 1fr;
-  gap: 10px;
-  padding: 10px 0;
+  grid-template-columns: 20px 1fr;
+  gap: 8px;
+  padding: 8px 0;
   border-bottom: 1px solid var(--ft-line);
 }
 
@@ -1156,19 +1231,19 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
   color: inherit !important;
   text-decoration: none;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .ft-daily-look p {
-  margin: 4px 0 0;
+  margin: 3px 0 0;
   font-size: 12px;
   color: var(--ft-muted);
 }
 
 .ft-daily-num {
   font-variant-numeric: tabular-nums;
-  letter-spacing: 0.12em;
-  color: #8B1E1E;
+  letter-spacing: 0.08em;
+  color: var(--ft-teal);
 }
 
 .ft-daily-index {
@@ -1178,14 +1253,20 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 
 .ft-daily-index a {
   display: grid;
-  grid-template-columns: 28px 1fr auto;
-  gap: 10px;
+  grid-template-columns: 26px 1fr auto;
+  gap: 8px;
   align-items: center;
-  padding: 9px 0;
+  padding: 7px 0;
   color: inherit !important;
   text-decoration: none;
   border-bottom: 1px solid var(--ft-line);
-  font-size: 14px;
+  font-size: 13px;
+}
+
+.ft-daily-index a span {
+  font-variant-numeric: tabular-nums;
+  color: var(--ft-teal);
+  letter-spacing: 0.08em;
 }
 
 .ft-daily-index em {
@@ -1195,38 +1276,38 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 }
 
 .ft-daily-page {
-  padding: 32px 0 4px;
+  padding: 22px 0 4px;
 }
 
 .ft-daily-pagehead {
   display: flex;
   align-items: baseline;
-  gap: 12px;
-  margin: 0 0 16px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid var(--ft-ink) !important;
-  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "Newsreader", Georgia, serif;
-  font-size: 22px;
+  gap: 10px;
+  margin: 0 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--ft-ink) !important;
+  font-family: var(--ds-font-sans);
+  font-size: 18px;
   font-weight: 650;
   text-wrap: balance;
 }
 
 .ft-daily-pagehead span {
-  font-size: 14px;
-  letter-spacing: 0.12em;
-  color: #8B1E1E;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: var(--ft-teal);
   font-variant-numeric: tabular-nums;
 }
 
 .ft-daily-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0 32px;
+  gap: 0 28px;
   border-bottom: 1px solid var(--ft-line);
 }
 
 .ft-daily-story {
-  padding: 16px 0 20px;
+  padding: 14px 0 16px;
 }
 
 .ft-daily-row .ft-daily-story:nth-child(2) {
@@ -1235,20 +1316,20 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 }
 
 .ft-daily-story h3 {
-  margin: 0 0 8px;
-  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "Newsreader", Georgia, serif;
-  font-size: 1.15rem;
+  margin: 0 0 6px;
+  font-family: var(--ds-font-sans);
+  font-size: 1.05rem;
   font-weight: 650;
   letter-spacing: -0.02em;
-  line-height: 1.4;
+  line-height: 1.35;
   text-wrap: balance;
 }
 
 .ft-daily-story p {
-  margin: 0 0 10px;
-  font-size: 17.5px;
-  line-height: 1.8;
-  max-width: 36em;
+  margin: 0 0 8px;
+  font-size: 14px;
+  line-height: 1.65;
+  max-width: 40em;
   text-wrap: pretty;
 }
 
@@ -1256,50 +1337,55 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
-  margin: 28px 0 8px;
-  padding-top: 16px;
+  margin: 22px 0 8px;
+  padding-top: 14px;
   border-top: 1px solid var(--ft-line);
 }
 
 .ft-daily-nb {
   color: var(--ft-muted) !important;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .ft-daily-nb:hover {
-  color: #1F3A5F !important;
+  color: var(--ft-teal) !important;
 }
 
 .ft-daily-end {
-  margin: 36px 0 8px;
+  margin: 28px 0 8px;
   text-align: center;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.18em;
   color: var(--ft-muted);
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .ft-daily-colo,
 .ft-daily-foot {
-  font-size: 13px;
+  font-size: 12px;
   color: var(--ft-muted);
 }
 
 .ft-daily-foot {
-  margin: 24px 0 8px;
-  padding-top: 16px;
+  margin: 20px 0 8px;
+  padding-top: 14px;
   border-top: 1px solid var(--ft-line);
+}
+
+.ft-daily-colo a,
+.ft-daily-foot a {
+  color: var(--ft-teal) !important;
 }
 
 @media (max-width: 960px) {
   .ft-daily-phonekinds {
     display: block;
-    margin: 0 0 12px;
+    margin: 0 0 10px;
   }
 
   .ft-daily-frame {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 12px;
   }
 
   .ft-daily-chrome {
@@ -1328,7 +1414,7 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 
   .ft-daily-dateline {
     grid-template-columns: 1fr;
-    gap: 4px;
+    gap: 2px;
   }
 
   .ft-daily-dateline span:nth-child(2),
@@ -1338,28 +1424,43 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
   }
 
   .ft-daily-nameplate {
-    grid-template-columns: minmax(0, 1fr) 132px;
-    gap: 10px;
+    grid-template-columns: minmax(0, 1fr) 124px;
+    gap: 8px;
     align-items: end;
   }
 
   .ft-daily-name h1 {
-    font-size: clamp(2.4rem, 12vw, 3.4rem);
+    font-size: clamp(2.2rem, 11vw, 3rem);
   }
 
   .ft-daily-card {
-    width: 132px;
-    padding: 8px 8px 10px;
+    width: 124px;
+    padding: 8px;
   }
 
   .ft-daily-card-day {
-    font-size: 36px;
+    font-size: 32px;
+  }
+
+  .ft-daily-chip,
+  .ft-daily-kinds a,
+  .ft-daily-past {
+    min-height: 44px;
+  }
+
+  .ft-daily-kinds a,
+  .ft-daily-kinds span {
+    height: 44px;
   }
 }
 
 .ft-daily a:focus-visible,
-.ft-daily-kinds a:focus-visible {
-  outline: 2px solid #1F3A5F;
+.ft-daily-kinds a:focus-visible,
+.ft-side-links a:focus-visible,
+.ft-tabbar a:focus-visible,
+.ft-side-editions a:focus-visible,
+.ft-theme-toggle:focus-visible {
+  outline: 2px solid var(--ft-teal);
   outline-offset: 2px;
 }
 

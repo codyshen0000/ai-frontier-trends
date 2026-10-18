@@ -149,16 +149,41 @@ function navLink(href, label, { current = false, extraClass = "" } = {}) {
   return `<a ${attrs}>${escapeHtml(label)}</a>`;
 }
 
-function shellLink(item, currentId, fromPath) {
-  const active = primaryActiveId(currentId);
+function editionIds() {
+  return new Set((config.nav?.editions ?? []).map((item) => item.id));
+}
+
+function isChromeActive(item, currentId) {
+  if (editionIds().has(currentId)) return item.id === currentId;
+  return item.id === primaryActiveId(currentId);
+}
+
+function shellLink(item, currentId, fromPath, { active } = {}) {
   const href = hrefBetween(fromPath, item.path);
-  const current = item.id === active;
+  const current = active ?? isChromeActive(item, currentId);
   const icon = ICONS[item.id] || ICONS.more;
   return `<a href="${href}" class="${current ? "active" : ""}"${current ? ' aria-current="page"' : ""}>${icon}<span>${escapeHtml(item.label)}</span></a>`;
 }
 
 function shellLinks(currentId, fromPath) {
   return (config.nav?.primary ?? []).map((item) => shellLink(item, currentId, fromPath)).join("");
+}
+
+function tabbarItems() {
+  const primary = config.nav?.primary ?? [];
+  const editions = config.nav?.editions ?? [];
+  const items = [];
+  for (const item of primary) {
+    if (item.id === "timeline") items.push(...editions);
+    items.push(item);
+  }
+  return items;
+}
+
+function tabbarLinks(currentId, fromPath) {
+  return tabbarItems()
+    .map((item) => shellLink(item, currentId, fromPath, { active: isChromeActive(item, currentId) }))
+    .join("");
 }
 
 function editionLinks(currentId, fromPath) {
@@ -192,7 +217,7 @@ function navBar({ currentId, fromPath }) {
     <a class="ft-brand" href="${homeHref}">${ICONS.brand}<span>${brand}</span></a>
     <button type="button" class="ft-theme-toggle" aria-label="切换配色">☾</button>
   </header>
-  <nav class="ft-tabbar" data-ds-injected="tabbar" aria-label="底部导航">${shellLinks(currentId, fromPath)}</nav>`;
+  <nav class="ft-tabbar" data-ds-injected="tabbar" aria-label="底部导航">${tabbarLinks(currentId, fromPath)}</nav>`;
 }
 
 function crumbBar(page) {
