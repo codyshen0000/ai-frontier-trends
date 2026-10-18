@@ -1,4 +1,5 @@
 /** Build-time newspaper for /daily/ from live.html cards. Does not edit live.html. */
+import { barChart } from "./charts.mjs";
 import { formatZhDate } from "./live_cards.mjs";
 
 const SECTION_ORDER = ["大模型", "生图/生视频", "产品和工具", "研究论文"];
@@ -133,6 +134,217 @@ function storyLink(card, escapeHtml) {
   const href = card.sources[0]?.href;
   if (!href) return escapeHtml(card.title);
   return `<a href="${escapeHtml(href)}" target="_blank" rel="noopener">${escapeHtml(card.title)}</a>`;
+}
+
+const ROSTER_LIMIT = 12;
+const BUILD_NOTE = "构建时从当日卡片统计";
+
+function truncateText(text, max) {
+  const value = String(text || "").replace(/\s+/g, " ").trim();
+  if (value.length <= max) return value;
+  return `${value.slice(0, max)}…`;
+}
+
+function cardAnchor(card) {
+  return card?.id ? `#c-${card.id}` : "";
+}
+
+function storyHref(card) {
+  return card?.sources?.[0]?.href || "";
+}
+
+function uniqueHostCount(card) {
+  const hosts = new Set();
+  for (const source of card.sources || []) {
+    if (source.host || source.name) hosts.add(source.host || source.name);
+  }
+  return hosts.size || card.sourceCount || 0;
+}
+
+function parsePipeTable(text) {
+  const lines = String(text || "")
+    .split(/\n/)
+    .map((line) => line.trim())
+    .filter(Boolean);
+  const collected = [];
+  for (const line of lines) {
+    if (!/^\|.+\|$/.test(line)) {
+      if (collected.length) break;
+      continue;
+    }
+    const cells = line
+      .slice(1, -1)
+      .split("|")
+      .map((cell) => cell.trim());
+    if (!cells.length) continue;
+    if (cells.every((cell) => /^:?-{2,}:?$/.test(cell))) continue;
+    collected.push(cells);
+  }
+  if (collected.length < 4) return null;
+  const headers = collected[0];
+  const rows = collected.slice(1);
+  if (headers.length < 2 || rows.length < 3) return null;
+  if (rows.some((row) => row.length < 2)) return null;
+  return { headers, rows };
+}
+
+function structuredCompare(card) {
+  const table = card?.compare_table;
+  if (table?.headers?.length >= 2 && Array.isArray(table.rows) && table.rows.length >= 3) {
+    const rows = table.rows.filter((row) => Array.isArray(row) && row.length >= 2);
+    if (rows.length >= 3) {
+      return { title: "对照", headers: table.headers, rows };
+    }
+  }
+  const markdown = parsePipeTable(card?.summary);
+  if (markdown) return { title: "对照", ...markdown };
+  return null;
+}
+
+function modelNameFromCard(card) {
+  const title = String(card?.title || "").trim();
+  if (!title) return "";
+  return title.split(/[：:]/)[0].replace(/（[^）]*）|\([^)]*\)/g, "").trim() || title;
+}
+
+function paramSizeFromCard(card) {
+  const text = `${card?.title || ""} ${card?.summary || ""}`;
+  const match = text.match(/(\d+(?:\.\d+)?\s*[Bb](?:illion)?|\d+(?:\.\d+)?\s*[Tt](?:rillion)?)/);
+  return match ? match[1].replace(/\s+/g, "") : "";
+}
+
+function openSourceFromCard(card) {
+  const text = `${card?.title || ""} ${card?.summary || ""}`;
+  if (/非开源|不开源|非\s*OSS/i.test(text)) return "否";
+  if (/开源权重落地|开源权重|已开源|开源/.test(text)) return "是";
+  return "";
+}
+
+function deliverableRows(card) {
+  const rows = [];
+  const model = modelNameFromCard(card);
+  if (model) rows.push(["模型", model]);
+  const params = paramSizeFromCard(card);
+  if (params) rows.push(["参数量", params]);
+  const open = openSourceFromCard(card);
+  if (open) rows.push(["开源", open]);
+  const host = card?.sources?.[0]?.host;
+  if (host) rows.push(["来源", host]);
+  if (card?.section && rows.length < 3) rows.push(["栏目", card.section]);
+  if (rows.length < 3) rows.push(["一手", card?.firstParty ? "是" : "否"]);
+  if (rows.length < 3) return null;
+  return { title: "交付要点", headers: ["项", "值"], rows: rows.slice(0, 6) };
+}
+
+function sourceOverviewRows(card) {
+  const rows = (card?.sources || []).map((source, index) => [
+    source.name || "来源",
+    source.host || "—",
+    card?.firstParty && index === 0 ? "是" : "否",
+  ]);
+  if (card?.section && !rows.some((row) => row[0] === "栏目")) {
+    rows.push(["栏目", card.section, "—"]);
+  }
+  if (rows.length < 3) {
+    rows.push(["独立来源", String(uniqueHostCount(card) || 0), "—"]);
+  }
+  if (rows.length < 3) {
+    rows.push(["条目", "看板卡片", card?.firstParty ? "是" : "否"]);
+  }
+  return { title: "来源一览表", headers: ["类型", "host", "一手"], rows: rows.slice(0, 8) };
+}
+
+function leadCompareData(card) {
+  return structuredCompare(card) || deliverableRows(card) || sourceOverviewRows(card);
+}
+
+function htmlTable({ className, caption, headers, rows, note, escapeHtml, hideCaption = false }) {
+  const head = headers.map((item) => `<th>${escapeHtml(item)}</th>`).join("");
+  const body = rows
+    .map((row) => {
+      const cells = row
+        .map((cell) => {
+          if (cell && typeof cell === "object" && cell.html) return `<td>${cell.html}</td>`;
+          return `<td>${escapeHtml(String(cell ?? "—"))}</td>`;
+        })
+        .join("");
+      return `<tr>${cells}</tr>`;
+    })
+    .join("");
+  const captionClass = hideCaption ? ' class="ft-daily-caption-hide"' : "";
+  return `<div class="${className}">
+    <div class="ft-daily-table-wrap">
+      <table class="ft-daily-table">
+        <caption${captionClass}>${escapeHtml(caption)}</caption>
+        <thead><tr>${head}</tr></thead>
+        <tbody>${body}</tbody>
+      </table>
+    </div>
+    ${note ? `<p class="ft-daily-table-note">${escapeHtml(note)}</p>` : ""}
+  </div>`;
+}
+
+function sectionChart(edition) {
+  const { sections } = edition;
+  if (!sections.length) {
+    return `<p class="ft-daily-chart-empty">本期版面暂无分栏条目。</p>`;
+  }
+  const rows = sections.map((section) => ({ label: section.label, value: section.items.length }));
+  const total = rows.reduce((sum, row) => sum + row.value, 0);
+  return `<div class="ft-daily-chart">${barChart({
+    title: "版面分布",
+    sub: `${rows.length} 栏 · ${total} 件`,
+    rows,
+    unit: " 件",
+    source: BUILD_NOTE,
+    aria: `本期版面各栏件数，共 ${total} 件`,
+  })}</div>`;
+}
+
+function rosterTable(edition, escapeHtml) {
+  const cards = edition.cards || [];
+  const shown = cards.slice(0, ROSTER_LIMIT);
+  const extra = Math.max(0, cards.length - shown.length);
+  const rows = shown.map((card) => {
+    const title = truncateText(card.title, 28);
+    const href = cardAnchor(card) || storyHref(card);
+    const titleCell = href
+      ? { html: `<a href="${escapeHtml(href)}">${escapeHtml(title)}</a>` }
+      : title;
+    return [
+      titleCell,
+      card.section || "—",
+      String(uniqueHostCount(card)),
+      card.firstParty ? "是" : "否",
+    ];
+  });
+  if (!rows.length) return "";
+  const note = extra > 0 ? `另有 ${extra} 条见正文 · ${BUILD_NOTE}` : BUILD_NOTE;
+  return `<div class="ft-daily-roster">
+    <p class="ft-daily-kicker">本期定档</p>
+    ${htmlTable({
+      className: "ft-daily-roster-table",
+      caption: "本期定档",
+      headers: ["条目", "栏目", "独立来源", "一手"],
+      rows,
+      note,
+      hideCaption: true,
+      escapeHtml,
+    })}
+  </div>`;
+}
+
+function leadCompareTable(card, escapeHtml) {
+  if (!card) return "";
+  const data = leadCompareData(card);
+  return htmlTable({
+    className: "ft-daily-compare",
+    caption: data.title,
+    headers: data.headers,
+    rows: data.rows,
+    note: BUILD_NOTE,
+    escapeHtml,
+  });
 }
 
 function monthGrid(day, issueDays) {
@@ -285,7 +497,7 @@ function frontPage(edition, { escapeHtml, hrefBetween }) {
   const highlightHtml = highlights
     .map((card, i) => {
       const href = card.sources[0]?.href || `${hrefBetween("/daily/", "/live/")}#c-${card.id}`;
-      return `<li>
+      return `<li id="c-${escapeHtml(card.id)}">
         <span class="ft-daily-num">${i + 1}</span>
         <div>
           <a href="${escapeHtml(href)}"${card.sources[0] ? ' target="_blank" rel="noopener"' : ""}>${escapeHtml(card.title)}</a>
@@ -305,25 +517,33 @@ function frontPage(edition, { escapeHtml, hrefBetween }) {
     )
     .join("");
 
+  const compare = leadCompareTable(lead, escapeHtml);
+  const chart = sectionChart(edition);
+
   return `<section class="ft-daily-front" id="d-${escapeHtml(edition.day)}-front">
     <div class="ft-daily-lead">
       <p class="ft-daily-kicker">头条</p>
-      <h2>${storyLink(lead, escapeHtml)}</h2>
-      ${lead.summary ? `<p class="ft-daily-dek">${escapeHtml(lead.summary)}</p>` : ""}
-      <p class="ft-daily-lead-meta">
-        ${sourceChips(lead, escapeHtml)}
-        <span class="ft-daily-mins">约 ${storyMinutes(lead)} 分钟</span>
-      </p>
+      <h2 id="c-${escapeHtml(lead.id)}">${storyLink(lead, escapeHtml)}</h2>
+      <div class="ft-daily-lead-split">
+        <div class="ft-daily-lead-copy">
+          ${lead.summary ? `<p class="ft-daily-dek">${escapeHtml(lead.summary)}</p>` : ""}
+          <p class="ft-daily-lead-meta">
+            ${sourceChips(lead, escapeHtml)}
+            <span class="ft-daily-mins">约 ${storyMinutes(lead)} 分钟</span>
+          </p>
+        </div>
+        ${compare}
+      </div>
     </div>
     <aside class="ft-daily-rail">
       ${
-        highlights.length
-          ? `<p class="ft-daily-kicker">今日看点</p><ol class="ft-daily-look">${highlightHtml}</ol>`
-          : ""
+        index.length
+          ? `<p class="ft-daily-kicker">本期版面</p>${chart}<nav class="ft-daily-index" aria-label="本期版面">${indexHtml}</nav>`
+          : `${chart}`
       }
       ${
-        index.length
-          ? `<p class="ft-daily-kicker">本期版面</p><nav class="ft-daily-index" aria-label="本期版面">${indexHtml}</nav>`
+        highlights.length
+          ? `<p class="ft-daily-kicker">今日看点</p><ol class="ft-daily-look">${highlightHtml}</ol>`
           : ""
       }
     </aside>
@@ -380,6 +600,7 @@ function issueHtml(edition, days, ctx, { hidden = false } = {}) {
   return `<article class="ft-daily-issue" data-ft-issue="${escapeHtml(edition.day)}" id="d-${escapeHtml(edition.day)}"${hidden ? " hidden" : ""}>
     ${masthead(edition, days, escapeHtml)}
     ${frontPage(edition, ctx)}
+    ${rosterTable(edition, escapeHtml)}
     ${pages}
     ${neighbours(edition, days, escapeHtml)}
     <p class="ft-daily-end">（本期完）</p>

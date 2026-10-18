@@ -12,6 +12,7 @@
 Impeccable 门禁（markdown，jsDelivr 可用）：
 
 - `preview/daily/IMPECCABLE.md`
+- `preview/daily/IMPECCABLE-VIZ.md`（Tasks #6 图/表返工自审）
 - `preview/daily/CRITIQUE.md`（旧自评）
 
 相对资源：`assets/ds.css`、`assets/skin-raw.css`、`styles.css`、`theme.js`。品牌文案是「前沿趋势 / 前沿热点看板」，没有 `*HOT` 产品名。

@@ -3,6 +3,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { extractLiveSpotlight, extractThreads, extractTimelineLede, ensureThreadAnchors } from "./extract.mjs";
 import { extractLiveCards, rankHot, selectPins } from "./live_cards.mjs";
+import { buildEdition, latestDay } from "./daily_page.mjs";
 import { injectHtmlFile } from "./build.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -242,6 +243,35 @@ assert(dailyTab.includes("aria-current=\"page\"") && dailyTab.includes(">日报<
 assert(!dailyPage.includes("AIHOT") && !dailyPage.includes("MyHOT"), "daily has no *HOT product brand");
 assert(!dailyPage.includes("第180期") && !dailyPage.includes("AI日报"), "daily does not copy aihot masthead copy");
 assert(dailyPage.includes("另外") && dailyPage.includes("原文"), "daily source chips include 另外 N 家 / 原文");
+assert(dailyPage.includes("ft-daily-chart") || dailyPage.includes("本期版面暂无分栏"), "daily has section bar chart or empty hint");
+assert(dailyPage.includes("ft-daily-table") && dailyPage.includes("<thead>"), "daily roster/compare use HTML tables");
+assert(
+  dailyPage.includes(">条目</th>") &&
+    dailyPage.includes(">栏目</th>") &&
+    dailyPage.includes(">独立来源</th>") &&
+    dailyPage.includes(">一手</th>"),
+  "daily roster columns are 条目｜栏目｜独立来源｜一手",
+);
+assert(dailyPage.includes("构建时从当日卡片统计"), "daily viz captions cite build-time card stats");
+assert(
+  dailyPage.includes("交付要点") || dailyPage.includes("来源一览表") || dailyPage.includes(">对照<"),
+  "daily lead has compare table or honest fallback",
+);
+assert(!/>热度</.test(dailyPage), "daily tables do not invent a heat column");
+{
+  const edition = buildEdition(liveCards, latestDay(liveCards));
+  const sectionSum = edition.sections.reduce((sum, section) => sum + section.items.length, 0);
+  assert(
+    sectionSum === Math.max(0, edition.cards.length - 1 - edition.highlights.length),
+    "daily section bar counts exclude lead and 今日看点",
+  );
+  for (const section of edition.sections) {
+    assert(dailyPage.includes(`${section.items.length} 件`), `daily 本期版面 count for ${section.label}`);
+  }
+  if (edition.cards.length > 12) {
+    assert(dailyPage.includes(`另有 ${edition.cards.length - 12} 条见正文`), "daily roster footnotes extra rows");
+  }
+}
 assert(dailyPage.includes("ft-daily-monthhead"), "daily archive is grouped by month");
 assert(!dailyPage.includes("Noto Serif") && !dailyPage.includes("Newsreader"), "daily does not load a serif display stack");
 assert(!dailyPage.includes("#F7F4EC") && !dailyPage.includes("#8B1E1E") && !dailyPage.includes("#1F3A5F"), "daily does not override shell with E-Ink tokens");
