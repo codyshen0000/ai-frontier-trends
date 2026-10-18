@@ -25,7 +25,11 @@
         "match": ["about", "flux3", "flux3-cases", "flux3-examples", "flux3-camera", "papers", "home"]
       }
     ],
+    "editions": [
+      { "id": "daily", "label": "日报", "path": "/daily/" }
+    ],
     "more": [
+      { "label": "日报", "path": "/daily/" },
       { "label": "研究主页", "path": "/" },
       { "label": "本周主线", "path": "/#threads" },
       { "label": "时间线", "path": "/timeline/" },
@@ -90,6 +94,15 @@
       "section": "热点",
       "crumb": "热点榜",
       "summary": "存档窗内按独立来源数排序的热点榜，不用点赞当热度。"
+    },
+    {
+      "id": "daily",
+      "generated": "daily",
+      "title": "日报",
+      "path": "/daily/",
+      "section": "日报",
+      "crumb": "日报",
+      "summary": "从前沿热点看板按存档日整理的报纸版日报。"
     },
     {
       "id": "timeline",

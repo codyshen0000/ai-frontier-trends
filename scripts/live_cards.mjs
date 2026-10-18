@@ -52,6 +52,26 @@ export function shiftDay(iso, delta) {
   return date.toISOString().slice(0, 10);
 }
 
+const SECTION_FROM_SEC = {
+  llm: "大模型",
+  gen: "生图/生视频",
+  product: "产品和工具",
+  paper: "研究论文",
+};
+
+function enclosingSection(html, index) {
+  const before = html.slice(0, index);
+  let last = "";
+  const re = /<details\b([^>]*)>/gi;
+  let match;
+  while ((match = re.exec(before))) {
+    const dataSec = attr(match[1], "data-sec");
+    if (dataSec && SECTION_FROM_SEC[dataSec]) last = SECTION_FROM_SEC[dataSec];
+    else if (dataSec === "focus") last = "";
+  }
+  return last;
+}
+
 function parseCard(attrs, inner) {
   const id = attr(attrs, "data-id") || "";
   const day = attr(attrs, "data-day") || "";
@@ -60,6 +80,7 @@ function parseCard(attrs, inner) {
   const h3 = inner.match(/<h3\b[^>]*>([\s\S]*?)<\/h3>/i);
   const titleHtml = h3 ? h3[1] : "";
   const focus = /<span\b[^>]*class=["'][^"']*\bbadge\b[^"']*["'][^>]*>\s*重点/.test(titleHtml);
+  const tags = [...titleHtml.matchAll(/【([^】]+)】/g)].map((item) => item[1]);
   const title = stripTags(titleHtml.replace(/<span\b[^>]*>[\s\S]*?<\/span>/gi, ""));
   const paragraphs = [...inner.matchAll(/<p(\b[^>]*)>([\s\S]*?)<\/p>/gi)];
   let section = "";
@@ -91,11 +112,14 @@ function parseCard(attrs, inner) {
     seen.add(link.host);
     sources.push({ ...link, name: sourceLabel(link.host) });
   }
+  const firstParty = tags.some((tag) => tag.includes("官方自报"));
   return {
     id: id || title,
     day,
     old,
     focus,
+    tags,
+    firstParty,
     title,
     summary: summaries.join(" ").trim(),
     section,
@@ -117,6 +141,7 @@ export function extractLiveCards(html) {
     if (!/\bclass=["'][^"']*\bcard\b/.test(match[1])) continue;
     const card = parseCard(match[1], match[2]);
     if (!card.title || !card.day) continue;
+    if (!card.section) card.section = enclosingSection(html, match.index);
     found.push(card);
   }
   const byId = new Map();

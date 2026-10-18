@@ -14,7 +14,8 @@
 | 强调浅底 | `--ft-teal-soft` `#e7f3f1` | `--ds-accent-soft` 蓝 10% | 当前导航 |
 | 圆角阶梯 | 5 / 8 / 10 / 12 / 14 / 16 | 12 / 18 / 28 / pill | `--ds-radius-sm/md/lg` 映射到 8 / 12 / 16 |
 | 侧栏宽 | `--ft-sidebar` `220px` | 顶栏 `--ds-nav-h` `52px` | `≥961px` 左侧栏 |
-| 底栏高 | `--ft-tabbar` `64px` | 无 | `<961px` 四格底栏 |
+| 底栏高 | `--ft-tabbar` `64px` | 无 | `<961px` 五格底栏（含日报） |
+| 日报页 | 复用上表 token | 上一轮 E-Ink 衬线/暗红已撤回 | 刊头无衬线；白卡 hairline；单色 teal |
 | 阴影 | 关闭（`--ds-shadow-*` = none） | 多层 Apple 阴影 | 靠线与微浮 |
 
 暗色：纸面 `#141413`，sunk `#0f0f0e`，强调改为 cyan。无无限 pulse，无渐变 CTA。

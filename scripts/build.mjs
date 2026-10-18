@@ -11,6 +11,7 @@ import {
   ensureThreadAnchors,
 } from "./extract.mjs";
 import { extractLiveCards } from "./live_cards.mjs";
+import { dailyPageBody } from "./daily_page.mjs";
 import { curateLivePage, hotPageBody, morePageBody, stripLiveCurate } from "./live_curate.mjs";
 import {
   assertPublicSafe,
@@ -132,6 +133,8 @@ const ICONS = {
   timeline:
     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18V6"/><path d="m4 18 5-6 4 3 7-8"/></svg>',
   more: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="1.35"/><circle cx="17" cy="7" r="1.35"/><circle cx="7" cy="17" r="1.35"/><circle cx="17" cy="17" r="1.35"/></svg>',
+  daily:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5h11a2 2 0 0 1 2 2v13H7a2 2 0 0 1-2-2V5Z"/><path d="M18 7h1.5A1.5 1.5 0 0 1 21 8.5V18a3 3 0 0 1-3 3"/><path d="M8 10h7M8 14h7"/></svg>',
 };
 
 function navLink(href, label, { current = false, extraClass = "" } = {}) {
@@ -146,10 +149,18 @@ function navLink(href, label, { current = false, extraClass = "" } = {}) {
   return `<a ${attrs}>${escapeHtml(label)}</a>`;
 }
 
-function shellLink(item, currentId, fromPath) {
-  const active = primaryActiveId(currentId);
+function editionIds() {
+  return new Set((config.nav?.editions ?? []).map((item) => item.id));
+}
+
+function isChromeActive(item, currentId) {
+  if (editionIds().has(currentId)) return item.id === currentId;
+  return item.id === primaryActiveId(currentId);
+}
+
+function shellLink(item, currentId, fromPath, { active } = {}) {
   const href = hrefBetween(fromPath, item.path);
-  const current = item.id === active;
+  const current = active ?? isChromeActive(item, currentId);
   const icon = ICONS[item.id] || ICONS.more;
   return `<a href="${href}" class="${current ? "active" : ""}"${current ? ' aria-current="page"' : ""}>${icon}<span>${escapeHtml(item.label)}</span></a>`;
 }
@@ -158,13 +169,46 @@ function shellLinks(currentId, fromPath) {
   return (config.nav?.primary ?? []).map((item) => shellLink(item, currentId, fromPath)).join("");
 }
 
+function tabbarItems() {
+  const primary = config.nav?.primary ?? [];
+  const editions = config.nav?.editions ?? [];
+  const items = [];
+  for (const item of primary) {
+    if (item.id === "timeline") items.push(...editions);
+    items.push(item);
+  }
+  return items;
+}
+
+function tabbarLinks(currentId, fromPath) {
+  return tabbarItems()
+    .map((item) => shellLink(item, currentId, fromPath, { active: isChromeActive(item, currentId) }))
+    .join("");
+}
+
+function editionLinks(currentId, fromPath) {
+  return (config.nav?.editions ?? [])
+    .map((item) => {
+      const href = hrefBetween(fromPath, item.path);
+      const current = item.id === currentId;
+      const icon = ICONS[item.id] || ICONS.daily;
+      return `<a href="${href}" class="${current ? "active" : ""}"${current ? ' aria-current="page"' : ""}>${icon}<span>${escapeHtml(item.label)}</span></a>`;
+    })
+    .join("");
+}
+
 function navBar({ currentId, fromPath }) {
   const brand = escapeHtml(config.brand || config.title);
   const homeHref = hrefBetween(fromPath, "/live/");
+  const editions = editionLinks(currentId, fromPath);
+  const editionNav = editions
+    ? `<nav class="ft-side-editions" aria-label="成刊"><p class="ft-side-kicker">成刊</p>${editions}</nav>`
+    : "";
   return `<style data-ds-injected="nav-css">${NAV_EXTRA_CSS}</style>
   <aside class="ft-sidebar" id="nav" data-ds-injected="nav">
     <a class="ft-brand" href="${homeHref}">${ICONS.brand}<span>${brand}</span></a>
     <nav class="ft-side-links" aria-label="站点导航">${shellLinks(currentId, fromPath)}</nav>
+    ${editionNav}
     <div class="ft-side-tools">
       <button type="button" class="ft-theme-toggle" aria-label="切换配色">☾</button>
     </div>
@@ -173,7 +217,7 @@ function navBar({ currentId, fromPath }) {
     <a class="ft-brand" href="${homeHref}">${ICONS.brand}<span>${brand}</span></a>
     <button type="button" class="ft-theme-toggle" aria-label="切换配色">☾</button>
   </header>
-  <nav class="ft-tabbar" data-ds-injected="tabbar" aria-label="底部导航">${shellLinks(currentId, fromPath)}</nav>`;
+  <nav class="ft-tabbar" data-ds-injected="tabbar" aria-label="底部导航">${tabbarLinks(currentId, fromPath)}</nav>`;
 }
 
 function crumbBar(page) {
@@ -205,7 +249,7 @@ function fluxTabs(currentTab, fromPath) {
 }
 
 function pageChrome(page, fromPath) {
-  if (!page) return "";
+  if (!page || page.id === "daily") return "";
   const bits = [crumbBar(page)];
   if (page.group === "trends") bits.push(trendSubnav(page.id, fromPath));
   if (page.topic === "flux3") bits.push(fluxTabs(page.tab, fromPath));
@@ -466,6 +510,22 @@ export function buildSite() {
   for (const page of config.pages) {
     if (publicDeploy && privatePages.has(page.id)) continue;
     if (page.home) continue;
+
+    if (page.generated === "daily") {
+      writePage(
+        page.path,
+        renderPage({
+          id: page.id,
+          title: page.title,
+          path: page.path,
+          extraClass: "ds-section ft-page ft-daily-wrap",
+          description: page.summary || config.description,
+          body: dailyPageBody(liveCards, liveMeta, { escapeHtml, hrefBetween }),
+        }),
+      );
+      contentPages.push({ ...page, summary: page.summary || page.title });
+      continue;
+    }
 
     if (page.generated === "hot") {
       writePage(

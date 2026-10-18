@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="ds-page ft-shell">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>日报 · 前沿趋势</title>
+  <meta name="description" content="从前沿热点看板按存档日整理的报纸版日报。">
+  <link rel="stylesheet" href="https://codyshen0000.github.io/assets/ds.css">
+  <link rel="stylesheet" href="../assets/skin-raw.css">
+  <link rel="stylesheet" href="../styles.css">
+  <style>.chart-fig{margin:24px 0;padding:20px 20px 14px;background:var(--ds-bg-elevated,#fff);border:1px solid var(--ds-hairline,#e5e5ea);border-radius:var(--ds-radius-md,14px);max-width:860px}
+.chart-fig h3{margin:0 0 4px;font-size:17px;line-height:1.35;color:var(--ds-text,#1d1d1f)}
+.chart-fig .chart-sub{margin:0 0 10px;font-size:13px;color:var(--ds-text-secondary,#6e6e73)}
+.cb{display:grid;gap:8px}
+.cb-row{display:grid;grid-template-columns:minmax(0,38%) 1fr auto;align-items:center;gap:10px;font-size:13px;color:var(--ds-text,#1d1d1f)}
+.cb-lbl{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cb-track{height:14px;border-radius:7px;background:var(--ds-surface-3,#f2f2f7);overflow:hidden}
+.cb-bar{display:block;height:100%;min-width:3px;border-radius:7px;background:var(--ds-accent,#0071e3)}
+.cb-bar.b2{background:#34c759}.cb-bar.b3{background:#ff9f0a}.cb-bar.b4{background:#8e8e93;min-width:0}
+.cb-val{font-weight:600;font-variant-numeric:tabular-nums;min-width:3.5em;text-align:right}
+@media (max-width:734px){.chart-fig{padding:16px 14px 12px}.cb-row{grid-template-columns:1fr auto;gap:2px 8px}.cb-lbl{grid-column:1/-1;white-space:normal}.cb-track{grid-column:1}}
+.chart-fig figcaption{margin-top:8px;font-size:12px;color:var(--ds-text-tertiary,#8e8e93)}
+.chart-fig figcaption a{color:inherit;text-decoration:underline}
+.chart-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.chart-grid .chart-fig{margin:0}</style>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t !== "light" && t !== "dark") {
+          t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="ds-skip" href="#main">跳到正文</a>
+  <style data-ds-injected="nav-css">.paper-card{margin:0 0 28px;padding:20px;background:var(--ds-bg-elevated,#fff);border:1px solid var(--ds-hairline,#e5e5ea);border-radius:var(--ds-radius-md,14px);scroll-margin-top:80px}
+.paper-card h3{margin:0 0 6px;font-size:18px;line-height:1.35}.paper-card .paper-id{font-size:12px;color:var(--ds-text-tertiary,#8e8e93)}
+.paper-card .paper-sum{margin:8px 0 12px;font-size:15px;line-height:1.6}
+.paper-card figure{margin:0}.paper-card img{display:block;width:100%;height:auto;border-radius:8px;background:#fff;cursor:zoom-in}
+.paper-card figcaption{margin-top:6px;font-size:12px;color:var(--ds-text-tertiary,#8e8e93);line-height:1.5}
+.paper-card figcaption a{color:inherit;text-decoration:underline}
+.paper-nofig{font-size:13px;color:var(--ds-text-secondary,#6e6e73)}
+a.paper-explain{margin-left:4px;font-size:.78em;padding:1px 6px;border-radius:999px;background:var(--ds-surface-3,#f2f2f7);color:var(--ds-text-secondary,#6e6e73)!important;text-decoration:none;white-space:nowrap}</style>
+  <aside class="ft-sidebar" id="nav" data-ds-injected="nav">
+    <a class="ft-brand" href="../live/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12 20 4l-5 16-3.5-6.5Z"/></svg><span>前沿趋势</span></a>
+    <nav class="ft-side-links" aria-label="站点导航"><a href="../live/" class=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.6"/><rect x="13" y="4" width="7" height="7" rx="1.6"/><rect x="4" y="13" width="7" height="7" rx="1.6"/><path d="M13 16h7M13 20h4"/></svg><span>精选</span></a><a href="../hot/" class=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s4 4.4 4 8.2A4 4 0 1 1 8 11.1C8 7.3 12 3 12 3Z"/><path d="M10 18c0 1.2.9 2 2 2s2-.8 2-2"/></svg><span>热点</span></a><a href="../timeline/" class=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18V6"/><path d="m4 18 5-6 4 3 7-8"/></svg><span>趋势</span></a><a href="../more/" class=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="1.35"/><circle cx="17" cy="7" r="1.35"/><circle cx="7" cy="17" r="1.35"/><circle cx="17" cy="17" r="1.35"/></svg><span>更多</span></a></nav>
+    <nav class="ft-side-editions" aria-label="成刊"><p class="ft-side-kicker">成刊</p><a href="../daily/" class="active" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5h11a2 2 0 0 1 2 2v13H7a2 2 0 0 1-2-2V5Z"/><path d="M18 7h1.5A1.5 1.5 0 0 1 21 8.5V18a3 3 0 0 1-3 3"/><path d="M8 10h7M8 14h7"/></svg><span>日报</span></a></nav>
+    <div class="ft-side-tools">
+      <button type="button" class="ft-theme-toggle" aria-label="切换配色">☾</button>
+    </div>
+  </aside>
+  <header class="ft-topbar" data-ds-injected="topbar">
+    <a class="ft-brand" href="../live/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12 20 4l-5 16-3.5-6.5Z"/></svg><span>前沿趋势</span></a>
+    <button type="button" class="ft-theme-toggle" aria-label="切换配色">☾</button>
+  </header>
+  <nav class="ft-tabbar" data-ds-injected="tabbar" aria-label="底部导航"><a href="../live/" class=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.6"/><rect x="13" y="4" width="7" height="7" rx="1.6"/><rect x="4" y="13" width="7" height="7" rx="1.6"/><path d="M13 16h7M13 20h4"/></svg><span>精选</span></a><a href="../hot/" class=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s4 4.4 4 8.2A4 4 0 1 1 8 11.1C8 7.3 12 3 12 3Z"/><path d="M10 18c0 1.2.9 2 2 2s2-.8 2-2"/></svg><span>热点</span></a><a href="../daily/" class="active" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5h11a2 2 0 0 1 2 2v13H7a2 2 0 0 1-2-2V5Z"/><path d="M18 7h1.5A1.5 1.5 0 0 1 21 8.5V18a3 3 0 0 1-3 3"/><path d="M8 10h7M8 14h7"/></svg><span>日报</span></a><a href="../timeline/" class=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18V6"/><path d="m4 18 5-6 4 3 7-8"/></svg><span>趋势</span></a><a href="../more/" class=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="1.35"/><circle cx="17" cy="7" r="1.35"/><circle cx="7" cy="17" r="1.35"/><circle cx="17" cy="17" r="1.35"/></svg><span>更多</span></a></nav>
+  <main id="main" class="ds-wrap ds-section ft-page ft-daily-wrap">
+    
+    <div class="ft-daily" data-ds-generated="daily">
+  <div class="ft-daily-phonekinds"><nav class="ft-daily-kinds" aria-label="成刊">
+    <a class="is-on" href="./" aria-current="page">日报</a>
+    <a href="../weekly/">周报</a>
+    <span class="is-off" title="尚无月报存档">月报</span>
+  </nav></div>
+  <div class="ft-daily-frame">
+    <aside class="ft-daily-chrome" aria-label="往期">
+    <nav class="ft-daily-kinds" aria-label="成刊">
+    <a class="is-on" href="./" aria-current="page">日报</a>
+    <a href="../weekly/">周报</a>
+    <span class="is-off" title="尚无月报存档">月报</span>
+  </nav>
+    <p class="ft-daily-kicker">往期</p>
+    <div class="ft-daily-month">
+      <p class="ft-daily-monthhead"><span>2026 年 10 月</span><em>3</em></p>
+      <div class="ft-daily-pasts"><a class="ft-daily-past is-current" data-ft-cal="2026-10-16" href="#d-2026-10-16" aria-current="true">
+        <span class="ft-daily-past-n">16</span>
+        <span class="ft-daily-past-meta">
+          <span class="ft-daily-past-w">星期五</span>
+          <span class="ft-daily-past-t">BFL FLUX 3 Image Klein：开源权重落地（5.6B）</span>
+        </span>
+      </a><a class="ft-daily-past" data-ft-cal="2026-10-15" href="#d-2026-10-15">
+        <span class="ft-daily-past-n">15</span>
+        <span class="ft-daily-past-meta">
+          <span class="ft-daily-past-w">星期四</span>
+          <span class="ft-daily-past-t">Jev 1.14 预览：实验性图像 / box / 长上下文</span>
+        </span>
+      </a><a class="ft-daily-past" data-ft-cal="2026-10-14" href="#d-2026-10-14">
+        <span class="ft-daily-past-n">14</span>
+        <span class="ft-daily-past-meta">
+          <span class="ft-daily-past-w">星期三</span>
+          <span class="ft-daily-past-t">BranchOPD：不确定决策点分支采样</span>
+        </span>
+      </a></div>
+    </div>
+  </aside>
+    <div class="ft-daily-paper">
+      <article class="ft-daily-issue" data-ft-issue="2026-10-16" id="d-2026-10-16">
+    <header class="ft-daily-mast">
+    <p class="ft-daily-dateline">
+      <span>2026 年 10 月 16 日星期五</span>
+      <span>前沿热点看板</span>
+      <span>按存档日整理</span>
+    </p>
+    <div class="ft-daily-nameplate">
+      <div class="ft-daily-name">
+        <h1>日报</h1>
+        <p class="ft-daily-imprint">前沿趋势日报</p>
+      </div>
+      <div class="ft-daily-card" aria-label="2026 年 10 月">
+    <p class="ft-daily-card-day">16</p>
+    <p class="ft-daily-card-month">十月 · 星期五</p>
+    <div class="ft-daily-cal">
+      <div class="ft-daily-week"><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span>日</span></div>
+      <div class="ft-daily-dots"><span class="ft-daily-dot is-pad" aria-hidden="true"></span><span class="ft-daily-dot is-pad" aria-hidden="true"></span><span class="ft-daily-dot is-pad" aria-hidden="true"></span><span class="ft-daily-dot is-none" title="10月1日"></span><span class="ft-daily-dot is-none" title="10月2日"></span><span class="ft-daily-dot is-none" title="10月3日"></span><span class="ft-daily-dot is-none" title="10月4日"></span><span class="ft-daily-dot is-none" title="10月5日"></span><span class="ft-daily-dot is-none" title="10月6日"></span><span class="ft-daily-dot is-none" title="10月7日"></span><span class="ft-daily-dot is-none" title="10月8日"></span><span class="ft-daily-dot is-none" title="10月9日"></span><span class="ft-daily-dot is-none" title="10月10日"></span><span class="ft-daily-dot is-none" title="10月11日"></span><span class="ft-daily-dot is-none" title="10月12日"></span><span class="ft-daily-dot is-none" title="10月13日"></span><a class="ft-daily-dot is-issue" data-ft-cal="2026-10-14" href="#d-2026-10-14" title="10月14日" aria-label="10月14日"></a><a class="ft-daily-dot is-issue" data-ft-cal="2026-10-15" href="#d-2026-10-15" title="10月15日" aria-label="10月15日"></a><a class="ft-daily-dot is-current" data-ft-cal="2026-10-16" href="#d-2026-10-16" title="10月16日" aria-label="10月16日" aria-current="true"></a><span class="ft-daily-dot is-none" title="10月17日"></span><span class="ft-daily-dot is-none" title="10月18日"></span><span class="ft-daily-dot is-none" title="10月19日"></span><span class="ft-daily-dot is-none" title="10月20日"></span><span class="ft-daily-dot is-none" title="10月21日"></span><span class="ft-daily-dot is-none" title="10月22日"></span><span class="ft-daily-dot is-none" title="10月23日"></span><span class="ft-daily-dot is-none" title="10月24日"></span><span class="ft-daily-dot is-none" title="10月25日"></span><span class="ft-daily-dot is-none" title="10月26日"></span><span class="ft-daily-dot is-none" title="10月27日"></span><span class="ft-daily-dot is-none" title="10月28日"></span><span class="ft-daily-dot is-none" title="10月29日"></span><span class="ft-daily-dot is-none" title="10月30日"></span><span class="ft-daily-dot is-none" title="10月31日"></span></div>
+    </div>
+    <p class="ft-daily-card-date">2026 年 10 月 16 日</p>
+  </div>
+    </div>
+    <p class="ft-daily-stats"><span class="ft-daily-metric"><b>16</b>件大事</span><span class="ft-daily-metric"><b>7</b>个来源</span><span class="ft-daily-metric"><b>6</b>件一手</span><span class="ft-daily-metric"><b>4</b>个新模型</span><span class="ft-daily-read">约 6 分钟读完</span></p>
+  </header>
+    <section class="ft-daily-front" id="d-2026-10-16-front">
+    <div class="ft-daily-lead">
+      <p class="ft-daily-kicker">头条</p>
+      <h2><a href="https://bfl.ai/blog/flux-3-image-klein" target="_blank" rel="noopener">BFL FLUX 3 Image Klein：开源权重落地（5.6B）</a></h2>
+      <p class="ft-daily-dek">单消费级 GPU、原生 4K、bbox 编辑。与已报 FLUX 3 Video 定价分开。HF black-forest-labs/flux-3-image-klein。权重跟踪：Klein 记交付；完整非-Klein FLUX 3 Image 仍非本批。六件套其余仍空。</p>
+      <p class="ft-daily-lead-meta">
+        <a class="ft-daily-chip" href="https://bfl.ai/blog/flux-3-image-klein" target="_blank" rel="noopener">BFL<span class="ft-daily-hand">一手</span></a><span class="ft-daily-chip is-more" title="Hugging Face、X">另外 2 家</span><a class="ft-daily-chip is-orig" href="https://bfl.ai/blog/flux-3-image-klein" target="_blank" rel="noopener">原文</a>
+        <span class="ft-daily-mins">约 1 分钟</span>
+      </p>
+    </div>
+    <aside class="ft-daily-rail">
+      <p class="ft-daily-kicker">今日看点</p><ol class="ft-daily-look"><li>
+        <span class="ft-daily-num">1</span>
+        <div>
+          <a href="https://github.com/thesysdev/openui" target="_blank" rel="noopener">OpenUI 1.0：Agent 交互界面框架</a>
+          <p>GitHub · 产品和工具</p>
+        </div>
+      </li><li>
+        <span class="ft-daily-num">2</span>
+        <div>
+          <a href="https://github.com/Prism-Shadow/penguin-harness" target="_blank" rel="noopener">LlamaFactory RSI：PenguinHarness / awesome-rsi / GDPevo（观察）</a>
+          <p>GitHub · 研究论文</p>
+        </div>
+      </li><li>
+        <span class="ft-daily-num">3</span>
+        <div>
+          <a href="https://arxiv.org/abs/2609.36642" target="_blank" rel="noopener">PR-OPD：事后技能对齐隐藏状态</a>
+          <p>arXiv · 研究论文</p>
+        </div>
+      </li></ol>
+      <p class="ft-daily-kicker">本期版面</p><nav class="ft-daily-index" aria-label="本期版面"><a href="#s-2026-10-16-1">
+        <span>01</span>
+        <strong>大模型</strong>
+        <em>4 件</em>
+      </a><a href="#s-2026-10-16-2">
+        <span>02</span>
+        <strong>生图/生视频</strong>
+        <em>1 件</em>
+      </a><a href="#s-2026-10-16-3">
+        <span>03</span>
+        <strong>产品和工具</strong>
+        <em>3 件</em>
+      </a><a href="#s-2026-10-16-4">
+        <span>04</span>
+        <strong>研究论文</strong>
+        <em>4 件</em>
+      </a></nav>
+    </aside>
+  </section>
+    <section class="ft-daily-page" id="s-2026-10-16-1">
+    <h2 class="ft-daily-pagehead"><span>01</span>大模型</h2>
+    <div class="ft-daily-row"><article class="ft-daily-story" id="c-mai-base-2">
+            <h3><a href="https://x.com/i/trending/2110798757025702396" target="_blank" rel="noopener">Microsoft MAI-Base-2：预训练完成</a></h3>
+            <p>报道 MoE 约 80B active / 2.8T total、16K GB200、约 38 天、约 50T tokens；后训练进行中；Foundry 合作伙伴 —— 非公开 open-weight【新闻】。预训练完 ≠ HF 交付。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://x.com/i/trending/2110798757025702396" target="_blank" rel="noopener">X</a><a class="ft-daily-chip is-orig" href="https://x.com/i/trending/2110798757025702396" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article><article class="ft-daily-story" id="c-liquid-d1-ultra">
+            <h3><a href="https://x.com/liquidai/status/2110777964489285875" target="_blank" rel="noopener">Liquid AI d1-ultra：决策模型上线</a></h3>
+            <p>Artificial Analysis Decision Index #1（65）【官方自报】；多模态、44 语；同日 OpenRouter/Vercel。决策模型产品事件，不进训练方法主线。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://x.com/liquidai/status/2110777964489285875" target="_blank" rel="noopener">X<span class="ft-daily-hand">一手</span></a><a class="ft-daily-chip is-orig" href="https://x.com/liquidai/status/2110777964489285875" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article></div><div class="ft-daily-row"><article class="ft-daily-story" id="c-muse-spark-open">
+            <h3><a href="https://x.com/AIatMeta/status/2110779754274292212" target="_blank" rel="noopener">Meta Muse Spark Open：开源权重落地</a></h3>
+            <p>总参约 816B、激活约 42B、上下文 1M；定位 coding+agentic。属开源权重/agent 栈事件，不进训练方法主线。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://x.com/AIatMeta/status/2110779754274292212" target="_blank" rel="noopener">X<span class="ft-daily-hand">一手</span></a><a class="ft-daily-chip is-orig" href="https://x.com/AIatMeta/status/2110779754274292212" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article><article class="ft-daily-story" id="c-nemotron-35-super-vl">
+            <h3><a href="https://x.com/nvidia/status/2110750157272719562" target="_blank" rel="noopener">NVIDIA Nemotron 3.5 Super VL（+Bolt 开源簇）</a></h3>
+            <p>视觉+推理+工具，面向 agent。新闻簇称约 120B/12B 激活【新闻摘要】。开源权重/agent 栈，不进训练方法主线。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://x.com/nvidia/status/2110750157272719562" target="_blank" rel="noopener">X<span class="ft-daily-hand">一手</span></a><a class="ft-daily-chip is-orig" href="https://x.com/nvidia/status/2110750157272719562" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article></div>
+  </section><section class="ft-daily-page" id="s-2026-10-16-2">
+    <h2 class="ft-daily-pagehead"><span>02</span>生图/生视频</h2>
+    <div class="ft-daily-row"><article class="ft-daily-story" id="c-kling-4-0-ga">
+            <h3><a href="https://x.com/Kling_ai/status/2110747537187709424" target="_blank" rel="noopener">Kling 4.0：产品全量上线（非开源权重）</a></h3>
+            <p>新 UI + MCP/CLI；官方 release history 标 2026-10-15 Major。HDR 4K/API 将至。产品全量，非 OSS 权重。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://x.com/Kling_ai/status/2110747537187709424" target="_blank" rel="noopener">X<span class="ft-daily-hand">一手</span></a><a class="ft-daily-chip is-orig" href="https://x.com/Kling_ai/status/2110747537187709424" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article></div>
+  </section><section class="ft-daily-page" id="s-2026-10-16-3">
+    <h2 class="ft-daily-pagehead"><span>03</span>产品和工具</h2>
+    <div class="ft-daily-row"><article class="ft-daily-story" id="c-agent-reflex">
+            <h3><a href="https://www.xiaohongshu.com/explore/6ad176eb000000000a023985" target="_blank" rel="noopener">Agent-Reflex：把反思训成元技能并接 OPD</a></h3>
+            <p>RSD→ReSFT→ORPO；称 8B 在 τ²-Bench 等与 AgentNoiseBench 上超对照。代码/模型/数据称已开源，正文无仓库地址。Agent 工具进产品和工具栏，不进训练配方时间线。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://www.xiaohongshu.com/explore/6ad176eb000000000a023985" target="_blank" rel="noopener">小红书</a><a class="ft-daily-chip is-orig" href="https://www.xiaohongshu.com/explore/6ad176eb000000000a023985" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article><article class="ft-daily-story" id="c-gpt-live-1.1">
+            <h3><a href="https://x.com/OpenAI/status/2110797830361436604" target="_blank" rel="noopener">OpenAI GPT-Live-1.1：语音升级</a></h3>
+            <p>多语口音、减少 “checking…”；FR/DE/HI/MX-ES/KO/JA。ChatGPT/Codex 可用，API 将至。产品事件，不进主线。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://x.com/OpenAI/status/2110797830361436604" target="_blank" rel="noopener">X<span class="ft-daily-hand">一手</span></a><a class="ft-daily-chip is-orig" href="https://x.com/OpenAI/status/2110797830361436604" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article></div><div class="ft-daily-row"><article class="ft-daily-story" id="c-argon-pro-rollout">
+            <h3><a href="https://www.xiaohongshu.com/explore/6ad181eb000000001b023dac" target="_blank" rel="noopener">Gemini 4 Argon：开始给付费 Pro</a></h3>
+            <p>小红书称 Antigravity 向付费 Google AI Pro 放 Argon 配额【笔记转述】。续热，非首发；不改训练类主线。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://www.xiaohongshu.com/explore/6ad181eb000000001b023dac" target="_blank" rel="noopener">小红书</a><a class="ft-daily-chip is-orig" href="https://www.xiaohongshu.com/explore/6ad181eb000000001b023dac" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article></div>
+  </section><section class="ft-daily-page" id="s-2026-10-16-4">
+    <h2 class="ft-daily-pagehead"><span>04</span>研究论文</h2>
+    <div class="ft-daily-row"><article class="ft-daily-story" id="c-terminal-rsi">
+            <h3><a href="https://arxiv.org/abs/2610.22192" target="_blank" rel="noopener">Terminal-RSI：终端 agent 递归改写 + 策略精炼（观察）</a></h3>
+            <p>交替 RSR（自改写）与 RPR（策略精炼），RPR 更新策略权重；Qwen3.8-27B 底座。作者称四套终端基准宏均 50.58%（较底座 +29.90pp）；TB2.1 86.52% / Hard 79%【作者自报】。环境是终端沙箱+保护校验器，不是 learned WM 内 RL → 挂 RSI/harness 观察、不进信号表 4、不升档（趋势分析已定性）。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://arxiv.org/abs/2610.22192" target="_blank" rel="noopener">arXiv</a><span class="ft-daily-chip is-more" title="X">另外 1 家</span><a class="ft-daily-chip is-orig" href="https://arxiv.org/abs/2610.22192" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article><article class="ft-daily-story" id="c-repforcing">
+            <h3><a href="https://arxiv.org/abs/2610.20111" target="_blank" rel="noopener">RepForcing：表征 teacher forcing，仍接 asymmetric DMD</a></h3>
+            <p>用表征空间 teacher forcing 换中间 AR 老师+因果 ODE 初始化，随后仍做 asymmetric DMD；4 步 chunk VBench Total 84.04→84.66【证实，作者自报】。与 Causal Forcing / Glance Forcing 同族旁证，挂表 3 观察、不进正表。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://arxiv.org/abs/2610.20111" target="_blank" rel="noopener">arXiv</a><a class="ft-daily-chip is-orig" href="https://arxiv.org/abs/2610.20111" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article></div><div class="ft-daily-row"><article class="ft-daily-story" id="c-rsi-nav">
+            <h3><a href="https://arxiv.org/abs/2610.15782" target="_blank" rel="noopener">RSI-Nav：观察，不进信号表 4</a></h3>
+            <p>Qwen3.5-9B 统一 VL2A/VA2L；自产指令→自执行→筛样本→更新。R2R-CE 成功率笔记称 68.6%（+15.7pp）【笔记转述】。数据中心闭环，非 WM 内 RL。挂观察、不升档。基线仍 RSI-Anything / RIWANav；ClawLoop 不进表。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://arxiv.org/abs/2610.15782" target="_blank" rel="noopener">arXiv</a><a class="ft-daily-chip is-orig" href="https://arxiv.org/abs/2610.15782" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article><article class="ft-daily-story" id="c-speculative-forcing">
+            <h3><a href="https://arxiv.org/abs/2610.22347" target="_blank" rel="noopener">Speculative Forcing：AR 视频中间步投机加速（非绕开 DMD）</a></h3>
+            <p>AR 视频中间步投机加速【证实，摘要】；非 π-Flow / PTD 式绕开 DMD。挂表 3 / 主线 5 旁证，不进正表、不升档。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://arxiv.org/abs/2610.22347" target="_blank" rel="noopener">arXiv</a><a class="ft-daily-chip is-orig" href="https://arxiv.org/abs/2610.22347" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article></div>
+  </section>
+    <nav class="ft-daily-nbs" aria-label="相邻存档日"><a class="ft-daily-nb" href="#d-2026-10-15">
+      <span>前一日 · 10月15日</span>
+    </a><span class="ft-daily-nb is-empty"></span></nav>
+    <p class="ft-daily-end">（本期完）</p>
+    <p class="ft-daily-colo">前沿趋势日报根据公开报道整理，每条都附原文。材料来自当前看板存档日，不另写事实。</p>
+  </article><article class="ft-daily-issue" data-ft-issue="2026-10-15" id="d-2026-10-15" hidden>
+    <header class="ft-daily-mast">
+    <p class="ft-daily-dateline">
+      <span>2026 年 10 月 15 日星期四</span>
+      <span>前沿热点看板</span>
+      <span>按存档日整理</span>
+    </p>
+    <div class="ft-daily-nameplate">
+      <div class="ft-daily-name">
+        <h1>日报</h1>
+        <p class="ft-daily-imprint">前沿趋势日报</p>
+      </div>
+      <div class="ft-daily-card" aria-label="2026 年 10 月">
+    <p class="ft-daily-card-day">15</p>
+    <p class="ft-daily-card-month">十月 · 星期四</p>
+    <div class="ft-daily-cal">
+      <div class="ft-daily-week"><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span>日</span></div>
+      <div class="ft-daily-dots"><span class="ft-daily-dot is-pad" aria-hidden="true"></span><span class="ft-daily-dot is-pad" aria-hidden="true"></span><span class="ft-daily-dot is-pad" aria-hidden="true"></span><span class="ft-daily-dot is-none" title="10月1日"></span><span class="ft-daily-dot is-none" title="10月2日"></span><span class="ft-daily-dot is-none" title="10月3日"></span><span class="ft-daily-dot is-none" title="10月4日"></span><span class="ft-daily-dot is-none" title="10月5日"></span><span class="ft-daily-dot is-none" title="10月6日"></span><span class="ft-daily-dot is-none" title="10月7日"></span><span class="ft-daily-dot is-none" title="10月8日"></span><span class="ft-daily-dot is-none" title="10月9日"></span><span class="ft-daily-dot is-none" title="10月10日"></span><span class="ft-daily-dot is-none" title="10月11日"></span><span class="ft-daily-dot is-none" title="10月12日"></span><span class="ft-daily-dot is-none" title="10月13日"></span><a class="ft-daily-dot is-issue" data-ft-cal="2026-10-14" href="#d-2026-10-14" title="10月14日" aria-label="10月14日"></a><a class="ft-daily-dot is-current" data-ft-cal="2026-10-15" href="#d-2026-10-15" title="10月15日" aria-label="10月15日" aria-current="true"></a><a class="ft-daily-dot is-issue" data-ft-cal="2026-10-16" href="#d-2026-10-16" title="10月16日" aria-label="10月16日"></a><span class="ft-daily-dot is-none" title="10月17日"></span><span class="ft-daily-dot is-none" title="10月18日"></span><span class="ft-daily-dot is-none" title="10月19日"></span><span class="ft-daily-dot is-none" title="10月20日"></span><span class="ft-daily-dot is-none" title="10月21日"></span><span class="ft-daily-dot is-none" title="10月22日"></span><span class="ft-daily-dot is-none" title="10月23日"></span><span class="ft-daily-dot is-none" title="10月24日"></span><span class="ft-daily-dot is-none" title="10月25日"></span><span class="ft-daily-dot is-none" title="10月26日"></span><span class="ft-daily-dot is-none" title="10月27日"></span><span class="ft-daily-dot is-none" title="10月28日"></span><span class="ft-daily-dot is-none" title="10月29日"></span><span class="ft-daily-dot is-none" title="10月30日"></span><span class="ft-daily-dot is-none" title="10月31日"></span></div>
+    </div>
+    <p class="ft-daily-card-date">2026 年 10 月 15 日</p>
+  </div>
+    </div>
+    <p class="ft-daily-stats"><span class="ft-daily-metric"><b>16</b>件大事</span><span class="ft-daily-metric"><b>7</b>个来源</span><span class="ft-daily-metric"><b>4</b>件一手</span><span class="ft-daily-metric"><b>2</b>个新模型</span><span class="ft-daily-read">约 5 分钟读完</span></p>
+  </header>
+    <section class="ft-daily-front" id="d-2026-10-15-front">
+    <div class="ft-daily-lead">
+      <p class="ft-daily-kicker">头条</p>
+      <h2><a href="https://typesafe.ai/blog/jev-1-14" target="_blank" rel="noopener">Jev 1.14 预览：实验性图像 / box / 长上下文</a></h2>
+      <p class="ft-daily-dek">TypeSafe 托管 Jev 上 jev-preview（约一周后切 jev-latest）。多语微调；图像、box 框、长上下文需 danger-zone 头。独立评测口径：MMLU-Redux 95.0 / ARC-C 97.6 表内最高；MathQA 相对 frontier 中位约 −17.7。产品用法：路由/审核/置信度门控；不当推理机。不进信号表 1–4。</p>
+      <p class="ft-daily-lead-meta">
+        <a class="ft-daily-chip" href="https://typesafe.ai/blog/jev-1-14" target="_blank" rel="noopener">typesafe<span class="ft-daily-hand">一手</span></a><span class="ft-daily-chip is-more" title="X、arXiv">另外 2 家</span><a class="ft-daily-chip is-orig" href="https://typesafe.ai/blog/jev-1-14" target="_blank" rel="noopener">原文</a>
+        <span class="ft-daily-mins">约 1 分钟</span>
+      </p>
+    </div>
+    <aside class="ft-daily-rail">
+      <p class="ft-daily-kicker">今日看点</p><ol class="ft-daily-look"><li>
+        <span class="ft-daily-num">1</span>
+        <div>
+          <a href="https://huggingface.co/autotrust/JEV-35B" target="_blank" rel="noopener">JEV-35B：单次前向结构化决策头</a>
+          <p>Hugging Face · 产品和工具</p>
+        </div>
+      </li><li>
+        <span class="ft-daily-num">2</span>
+        <div>
+          <a href="https://jevland.mnimiy.com/projects/jevany/" target="_blank" rel="noopener">JevAny：任意骨干 → typed 决策头 / LoRA</a>
+          <p>jevland.mnimiy · 产品和工具</p>
+        </div>
+      </li><li>
+        <span class="ft-daily-num">3</span>
+        <div>
+          <a href="https://arxiv.org/abs/2610.13205" target="_blank" rel="noopener">策略差蒸馏：有用的可能是相对参照的对数概率差</a>
+          <p>arXiv · 大模型</p>
+        </div>
+      </li></ol>
+      <p class="ft-daily-kicker">本期版面</p><nav class="ft-daily-index" aria-label="本期版面"><a href="#s-2026-10-15-1">
+        <span>01</span>
+        <strong>大模型</strong>
+        <em>4 件</em>
+      </a><a href="#s-2026-10-15-2">
+        <span>02</span>
+        <strong>生图/生视频</strong>
+        <em>3 件</em>
+      </a><a href="#s-2026-10-15-3">
+        <span>03</span>
+        <strong>产品和工具</strong>
+        <em>1 件</em>
+      </a><a href="#s-2026-10-15-4">
+        <span>04</span>
+        <strong>研究论文</strong>
+        <em>4 件</em>
+      </a></nav>
+    </aside>
+  </section>
+    <section class="ft-daily-page" id="s-2026-10-15-1">
+    <h2 class="ft-daily-pagehead"><span>01</span>大模型</h2>
+    <div class="ft-daily-row"><article class="ft-daily-story" id="c-opsa-old-reread">
+            <h3><a href="https://arxiv.org/abs/2608.31046" target="_blank" rel="noopener">OPSA：旧稿新解读——OPD 真的在蒸馏吗？</a></h3>
+            <p>称教师信号噪声大，学生主要压低坏 token。2608 旧稿今日推热，不升档。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://arxiv.org/abs/2608.31046" target="_blank" rel="noopener">arXiv</a><a class="ft-daily-chip is-orig" href="https://arxiv.org/abs/2608.31046" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article><article class="ft-daily-story" id="c-ling-3.1-flash">
+            <h3><a href="https://huggingface.co/inclusionAI/Ling-3.1-flash" target="_blank" rel="noopener">Ling-3.1-flash：蚂蚁开源权重落地</a></h3>
+            <p>HF inclusionAI/Ling-3.1-flash，MIT。总参约 560B、激活约 25B、上下文 1M。主打 agent/原型；属开源权重/agent 栈事件，不进训练方法主线。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://huggingface.co/inclusionAI/Ling-3.1-flash" target="_blank" rel="noopener">Hugging Face<span class="ft-daily-hand">一手</span></a><a class="ft-daily-chip is-orig" href="https://huggingface.co/inclusionAI/Ling-3.1-flash" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article></div><div class="ft-daily-row"><article class="ft-daily-story" id="c-step-5-preview">
+            <h3><a href="https://huggingface.co/stepfun-ai/Step-5-Preview" target="_blank" rel="noopener">Step 5 Preview：官方开源权重落地</a></h3>
+            <p>HF stepfun-ai/Step-5-Preview（及 BF16、NVFP4）。约 600B 总参 / 27B 激活 MoE；StepFun Model License 1.0。属产品/权重事件，不进信号表 1–4。其余五件套仍空。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://huggingface.co/stepfun-ai/Step-5-Preview" target="_blank" rel="noopener">Hugging Face<span class="ft-daily-hand">一手</span></a><a class="ft-daily-chip is-orig" href="https://huggingface.co/stepfun-ai/Step-5-Preview" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article><article class="ft-daily-story" id="c-rlvr-rank1-extrapolate">
+            <h3><a href="https://www.xiaohongshu.com/explore/6acfc4d80000000018016da8" target="_blank" rel="noopener">RLVR Rank-1：权重更新主方向外推</a></h3>
+            <p>称每步更新主沿 SVD 一主方向，短训后线性外推约 500 步。训练动态，无闭环留存证据，不升档。无 arXiv 号。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://www.xiaohongshu.com/explore/6acfc4d80000000018016da8" target="_blank" rel="noopener">小红书</a><a class="ft-daily-chip is-orig" href="https://www.xiaohongshu.com/explore/6acfc4d80000000018016da8" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article></div>
+  </section><section class="ft-daily-page" id="s-2026-10-15-2">
+    <h2 class="ft-daily-pagehead"><span>02</span>生图/生视频</h2>
+    <div class="ft-daily-row"><article class="ft-daily-story" id="c-data-space-iteration">
+            <h3><a href="https://arxiv.org/abs/2610.12102" target="_blank" rel="noopener">Data-Space Iteration：少步丢掉 flow 固定离散</a></h3>
+            <p>改成 data-space iteration；训练仍要 online rollout，DMD 训练不变；只做了 ImageNet。表 1/3 不翻转。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://arxiv.org/abs/2610.12102" target="_blank" rel="noopener">arXiv</a><a class="ft-daily-chip is-orig" href="https://arxiv.org/abs/2610.12102" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article><article class="ft-daily-story" id="c-flashvsr-ry-dmd">
+            <h3><a href="https://www.xiaohongshu.com/explore/6acf4782000000000a024221" target="_blank" rel="noopener">FlashVSR+：RY-DMD 把不可微奖励塞进单步 DMD</a></h3>
+            <p>奖励只打分不反传。视频超分 OCR 与单步 SDXL OCR 有笔记数字。不升档。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://www.xiaohongshu.com/explore/6acf4782000000000a024221" target="_blank" rel="noopener">小红书</a><a class="ft-daily-chip is-orig" href="https://www.xiaohongshu.com/explore/6acf4782000000000a024221" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article></div><div class="ft-daily-row"><article class="ft-daily-story" id="c-pvd-two-half">
+            <h3><a href="https://www.xiaohongshu.com/explore/6acf6d1000000000140330f7" target="_blank" rel="noopener">PVD：两个半网，算力仍约等于教师一步</a></h3>
+            <p>结构/细节两段各半骨干。ImageNet 256 一步等价预算数字未对原文。不升档。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://www.xiaohongshu.com/explore/6acf6d1000000000140330f7" target="_blank" rel="noopener">小红书</a><a class="ft-daily-chip is-orig" href="https://www.xiaohongshu.com/explore/6acf6d1000000000140330f7" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article></div>
+  </section><section class="ft-daily-page" id="s-2026-10-15-3">
+    <h2 class="ft-daily-pagehead"><span>03</span>产品和工具</h2>
+    <div class="ft-daily-row"><article class="ft-daily-story" id="c-bfl-flux3-video-faster">
+            <h3><a href="https://x.com/bfl_ai/status/2110386847528681774" target="_blank" rel="noopener">BFL：FLUX 3 Video 提速约 2×、原生 2K/4K 成本约降 50%</a></h3>
+            <p>服务侧优化。当时不是 FLUX 3 Image 权重交付；Image Klein 已于次日早报记开源（见 10-16 卡）。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://x.com/bfl_ai/status/2110386847528681774" target="_blank" rel="noopener">X<span class="ft-daily-hand">一手</span></a><a class="ft-daily-chip is-orig" href="https://x.com/bfl_ai/status/2110386847528681774" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article></div>
+  </section><section class="ft-daily-page" id="s-2026-10-15-4">
+    <h2 class="ft-daily-pagehead"><span>04</span>研究论文</h2>
+    <div class="ft-daily-row"><article class="ft-daily-story" id="c-action-opd">
+            <h3><a href="https://arxiv.org/abs/2610.19820" target="_blank" rel="noopener">ActionOPD：动作级 OPD（黑盒教师）</a></h3>
+            <p>在学生状态上对齐教师语义动作，不需教师 token 概率或同 tokenizer。Qwen3-4B/8B 四 OOD 基准均分相对 Base +3.3–6.9 个百分点【作者自报】。挂主线 1–2 OPD 观察，不升档。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://arxiv.org/abs/2610.19820" target="_blank" rel="noopener">arXiv</a><a class="ft-daily-chip is-orig" href="https://arxiv.org/abs/2610.19820" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article><article class="ft-daily-story" id="c-glance-forcing">
+            <h3><a href="https://arxiv.org/abs/2610.20220" target="_blank" rel="noopener">Glance Forcing：单条 PF-ODE 视频少步</a></h3>
+            <p>Slow/Fast LoRA；单条 PF-ODE 时 VBench 84.04→84.22 超 Causal Forcing【作者自报】。PF-ODE 主要拉直少步几何，分布质量仍靠后续 DMD【证实，摘要】；不是绕开 DMD。挂表 3 / 主线 5 旁证，不升档。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://arxiv.org/abs/2610.20220" target="_blank" rel="noopener">arXiv</a><a class="ft-daily-chip is-orig" href="https://arxiv.org/abs/2610.20220" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article></div><div class="ft-daily-row"><article class="ft-daily-story" id="c-reality-check-agent-rl">
+            <h3><a href="https://arxiv.org/abs/2610.19789" target="_blank" rel="noopener">Reality Check：11 种 Agentic RL 自蒸馏无一稳超 GRPO</a></h3>
+            <p>统一复现自蒸馏 vs GRPO；无一方法全场景稳超 GRPO【证实】。10-16 续热：笔记称仅 PCSD / AgentOPSD 均值超 GRPO（+4.58 / +1.66）；按时长重算后 AgentOPSD ALFWorld 68.10%→37.63%【笔记转述】。挂 Agent RL 自蒸馏适用条件观察。不进主线、不升档。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://arxiv.org/abs/2610.19789" target="_blank" rel="noopener">arXiv</a><a class="ft-daily-chip is-orig" href="https://arxiv.org/abs/2610.19789" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article><article class="ft-daily-story" id="c-rsi-midday-observe">
+            <h3><a href="https://arxiv.org/abs/2610.20474" target="_blank" rel="noopener">RSI 午间：AdaRSI / SwarmRSI / VideoHarness-SRSI 挂观察，不进信号表 4</a></h3>
+            <p>AdaRSI 先改 harness 再按需微调 VLA（RoboCasa 仿真，非 learned WM 内 RL）。SwarmRSI 是科研 swarm 状态演化。VideoHarness-SRSI 冻 VLM。三者均 harness/RSI 观察。基线仍 RSI-Anything / RIWANav；ClawLoop 不进表。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://arxiv.org/abs/2610.20474" target="_blank" rel="noopener">arXiv</a><a class="ft-daily-chip is-orig" href="https://arxiv.org/abs/2610.20474" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article></div>
+  </section>
+    <nav class="ft-daily-nbs" aria-label="相邻存档日"><a class="ft-daily-nb" href="#d-2026-10-14">
+      <span>前一日 · 10月14日</span>
+    </a><a class="ft-daily-nb" href="#d-2026-10-16">
+      <span>后一日 · 10月16日</span>
+    </a></nav>
+    <p class="ft-daily-end">（本期完）</p>
+    <p class="ft-daily-colo">前沿趋势日报根据公开报道整理，每条都附原文。材料来自当前看板存档日，不另写事实。</p>
+  </article><article class="ft-daily-issue" data-ft-issue="2026-10-14" id="d-2026-10-14" hidden>
+    <header class="ft-daily-mast">
+    <p class="ft-daily-dateline">
+      <span>2026 年 10 月 14 日星期三</span>
+      <span>前沿热点看板</span>
+      <span>按存档日整理</span>
+    </p>
+    <div class="ft-daily-nameplate">
+      <div class="ft-daily-name">
+        <h1>日报</h1>
+        <p class="ft-daily-imprint">前沿趋势日报</p>
+      </div>
+      <div class="ft-daily-card" aria-label="2026 年 10 月">
+    <p class="ft-daily-card-day">14</p>
+    <p class="ft-daily-card-month">十月 · 星期三</p>
+    <div class="ft-daily-cal">
+      <div class="ft-daily-week"><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span>日</span></div>
+      <div class="ft-daily-dots"><span class="ft-daily-dot is-pad" aria-hidden="true"></span><span class="ft-daily-dot is-pad" aria-hidden="true"></span><span class="ft-daily-dot is-pad" aria-hidden="true"></span><span class="ft-daily-dot is-none" title="10月1日"></span><span class="ft-daily-dot is-none" title="10月2日"></span><span class="ft-daily-dot is-none" title="10月3日"></span><span class="ft-daily-dot is-none" title="10月4日"></span><span class="ft-daily-dot is-none" title="10月5日"></span><span class="ft-daily-dot is-none" title="10月6日"></span><span class="ft-daily-dot is-none" title="10月7日"></span><span class="ft-daily-dot is-none" title="10月8日"></span><span class="ft-daily-dot is-none" title="10月9日"></span><span class="ft-daily-dot is-none" title="10月10日"></span><span class="ft-daily-dot is-none" title="10月11日"></span><span class="ft-daily-dot is-none" title="10月12日"></span><span class="ft-daily-dot is-none" title="10月13日"></span><a class="ft-daily-dot is-current" data-ft-cal="2026-10-14" href="#d-2026-10-14" title="10月14日" aria-label="10月14日" aria-current="true"></a><a class="ft-daily-dot is-issue" data-ft-cal="2026-10-15" href="#d-2026-10-15" title="10月15日" aria-label="10月15日"></a><a class="ft-daily-dot is-issue" data-ft-cal="2026-10-16" href="#d-2026-10-16" title="10月16日" aria-label="10月16日"></a><span class="ft-daily-dot is-none" title="10月17日"></span><span class="ft-daily-dot is-none" title="10月18日"></span><span class="ft-daily-dot is-none" title="10月19日"></span><span class="ft-daily-dot is-none" title="10月20日"></span><span class="ft-daily-dot is-none" title="10月21日"></span><span class="ft-daily-dot is-none" title="10月22日"></span><span class="ft-daily-dot is-none" title="10月23日"></span><span class="ft-daily-dot is-none" title="10月24日"></span><span class="ft-daily-dot is-none" title="10月25日"></span><span class="ft-daily-dot is-none" title="10月26日"></span><span class="ft-daily-dot is-none" title="10月27日"></span><span class="ft-daily-dot is-none" title="10月28日"></span><span class="ft-daily-dot is-none" title="10月29日"></span><span class="ft-daily-dot is-none" title="10月30日"></span><span class="ft-daily-dot is-none" title="10月31日"></span></div>
+    </div>
+    <p class="ft-daily-card-date">2026 年 10 月 14 日</p>
+  </div>
+    </div>
+    <p class="ft-daily-stats"><span class="ft-daily-metric"><b>20</b>件大事</span><span class="ft-daily-metric"><b>4</b>个来源</span><span class="ft-daily-metric"><b>3</b>件一手</span><span class="ft-daily-metric"><b>2</b>个新模型</span><span class="ft-daily-read">约 5 分钟读完</span></p>
+  </header>
+    <section class="ft-daily-front" id="d-2026-10-14-front">
+    <div class="ft-daily-lead">
+      <p class="ft-daily-kicker">头条</p>
+      <h2><a href="https://arxiv.org/abs/2610.13481" target="_blank" rel="noopener">BranchOPD：不确定决策点分支采样</a></h2>
+      <p class="ft-daily-dek">相对 Vanilla OPD：数学 avg@16 +18.55pp；ALFWorld ID/OOD 均值 +13.8。只改采哪些额外轨迹，不是换老师。挂主线 1–2 观察、不进正表（与 Semi-OPD「何时离线」同属适用条件）【推断】。</p>
+      <p class="ft-daily-lead-meta">
+        <a class="ft-daily-chip" href="https://arxiv.org/abs/2610.13481" target="_blank" rel="noopener">arXiv</a><span class="ft-daily-chip is-more" title="GitHub">另外 1 家</span><a class="ft-daily-chip is-orig" href="https://arxiv.org/abs/2610.13481" target="_blank" rel="noopener">原文</a>
+        <span class="ft-daily-mins">约 1 分钟</span>
+      </p>
+    </div>
+    <aside class="ft-daily-rail">
+      <p class="ft-daily-kicker">今日看点</p><ol class="ft-daily-look"><li>
+        <span class="ft-daily-num">1</span>
+        <div>
+          <a href="https://arxiv.org/abs/2610.14224" target="_blank" rel="noopener">Harness²：开放世界递归 harnessing（冻权重）</a>
+          <p>arXiv · 大模型</p>
+        </div>
+      </li><li>
+        <span class="ft-daily-num">2</span>
+        <div>
+          <a href="https://arxiv.org/abs/2610.12419" target="_blank" rel="noopener">OneSearch-VL：统一多模态深度研究 agent</a>
+          <p>arXiv · 产品和工具</p>
+        </div>
+      </li><li>
+        <span class="ft-daily-num">3</span>
+        <div>
+          <a href="https://arxiv.org/abs/2610.03515" target="_blank" rel="noopener">RC-OPD：根因引导的 on-policy 蒸馏</a>
+          <p>arXiv · 大模型</p>
+        </div>
+      </li></ol>
+      <p class="ft-daily-kicker">本期版面</p><nav class="ft-daily-index" aria-label="本期版面"><a href="#s-2026-10-14-1">
+        <span>01</span>
+        <strong>大模型</strong>
+        <em>9 件</em>
+      </a><a href="#s-2026-10-14-2">
+        <span>02</span>
+        <strong>生图/生视频</strong>
+        <em>2 件</em>
+      </a><a href="#s-2026-10-14-3">
+        <span>03</span>
+        <strong>产品和工具</strong>
+        <em>3 件</em>
+      </a><a href="#s-2026-10-14-4">
+        <span>04</span>
+        <strong>研究论文</strong>
+        <em>2 件</em>
+      </a></nav>
+    </aside>
+  </section>
+    <section class="ft-daily-page" id="s-2026-10-14-1">
+    <h2 class="ft-daily-pagehead"><span>01</span>大模型</h2>
+    <div class="ft-daily-row"><article class="ft-daily-story" id="c-liquid-lfm25">
+            <h3><a href="https://x.com/liquidai/status/2110055807194931348" target="_blank" rel="noopener">Liquid LFM2.5-24B-A2B：开源权重交付</a></h3>
+            <p>24B 总参 / 2B 激活、131K 上下文。新闻称偏本地 agent【第三方】。不在原跟踪六件套内。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://x.com/liquidai/status/2110055807194931348" target="_blank" rel="noopener">X<span class="ft-daily-hand">一手</span></a><span class="ft-daily-chip is-more" title="Hugging Face">另外 1 家</span><a class="ft-daily-chip is-orig" href="https://x.com/liquidai/status/2110055807194931348" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article><article class="ft-daily-story" id="c-clawloop">
+            <h3><a href="https://arxiv.org/abs/2610.14118" target="_blank" rel="noopener">ClawLoop：harness 内 SFT/GRPO 多轮自进化</a></h3>
+            <p>美团+北大：无外部老师。任务合成→SFT/GRPO 更新权重→诊断反馈进下一轮。Qwen3.6-27B SkillsBench Avg@5 46.3→57.2；Claw-Eval-Live 69.3→76.9（作者自报）。不进信号表 4、RSI 不升档：是 harness 沙箱自进化，不是 WM 内 RL；挂 RSI/harness 权重环观察，与 RSI-Anything 同族旁证。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://arxiv.org/abs/2610.14118" target="_blank" rel="noopener">arXiv</a><a class="ft-daily-chip is-orig" href="https://arxiv.org/abs/2610.14118" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article></div><div class="ft-daily-row"><article class="ft-daily-story" id="c-embodiedclbench">
+            <h3><a href="https://arxiv.org/abs/2610.13021" target="_blank" rel="noopener">EmbodiedCLBench：具身持续学习评测</a></h3>
+            <p>同 DeepRSI 口径：是评测，不触发 RSI 升级。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://arxiv.org/abs/2610.13021" target="_blank" rel="noopener">arXiv</a><a class="ft-daily-chip is-orig" href="https://arxiv.org/abs/2610.13021" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article><article class="ft-daily-story" id="c-mm-opd">
+            <h3><a href="https://arxiv.org/abs/2609.32690" target="_blank" rel="noopener">MM-OPD：绘图代码当特权教师</a></h3>
+            <p>学生只看图，教师看代码/描述。Qwen3.5-9B ChartQA 85.4→93.7；同数据 SFT 平均掉 3+ 点【笔记转述】。挂主线 1–2 观察，不升档。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://arxiv.org/abs/2609.32690" target="_blank" rel="noopener">arXiv</a><a class="ft-daily-chip is-orig" href="https://arxiv.org/abs/2609.32690" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article></div><div class="ft-daily-row"><article class="ft-daily-story" id="c-opd-failure-negative">
+            <h3><a href="https://arxiv.org/abs/2610.18011" target="_blank" rel="noopener">OPD 负结果：失败题上五种机制不涨反跌</a></h3>
+            <p>TUM 等：只在学生当前失败题上训 OPD，五种机制都不涨反跌（作者自报，仅 AIME24 30 题）。只作主线 1–2 方向性反证，不引幅度。「先 SFT 再 OPD」顺序仍是开放冲突。与 BranchOPD 并列挂适用条件观察【推断】。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://arxiv.org/abs/2610.18011" target="_blank" rel="noopener">arXiv</a><a class="ft-daily-chip is-orig" href="https://arxiv.org/abs/2610.18011" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article><article class="ft-daily-story" id="c-pluginrsi">
+            <h3><a href="https://arxiv.org/abs/2609.32423" target="_blank" rel="noopener">PluginRSI：插件式递归改进（旧稿旁证）</a></h3>
+            <p>9-26 旧稿补漏。harness 旁证，非隔夜新文，不升档。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://arxiv.org/abs/2609.32423" target="_blank" rel="noopener">arXiv</a><a class="ft-daily-chip is-orig" href="https://arxiv.org/abs/2609.32423" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article></div><div class="ft-daily-row"><article class="ft-daily-story" id="c-reharness">
+            <h3><a href="https://arxiv.org/abs/2610.12668" target="_blank" rel="noopener">ReHarness：向后修订 harness 文字状态</a></h3>
+            <p>MIT+Meta：只改文字 harness、不训权重。三基准×三骨干平均归一化增益 0.240【官方自报】。harness rewrite 旁证；不满足「可验证世界里训权重且留存」→ RSI / 信号 4 不升档。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://arxiv.org/abs/2610.12668" target="_blank" rel="noopener">arXiv</a><a class="ft-daily-chip is-orig" href="https://arxiv.org/abs/2610.12668" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article><article class="ft-daily-story" id="c-tt-opd">
+            <h3><a href="https://arxiv.org/abs/2609.34447" target="_blank" rel="noopener">TT-OPD：Top-k OPD 无偏梯度（9-26 旧稿）</a></h3>
+            <p>小红书推热；核对为 9-26 Tail-Corrected Top-k OPD。旧稿新热，不当隔夜新交付；挂 OPD 观察旁证。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://arxiv.org/abs/2609.34447" target="_blank" rel="noopener">arXiv</a><a class="ft-daily-chip is-orig" href="https://arxiv.org/abs/2609.34447" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article></div><div class="ft-daily-row"><article class="ft-daily-story" id="c-gemini-4-argon">
+            <h3><a href="https://x.com/Google/status/2110041297360699856" target="_blank" rel="noopener">Gemini 4 Argon：Google/DeepMind 官宣全球可用</a></h3>
+            <p>昨夜仅为泄露传闻【未证实】，现已坐实。官方 demo：视频教 Apollo 连投 7 次 cornhole；助 Chrome 拆约 600 万行 legacy 消一类崩溃。产品事件，不进主线。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://x.com/Google/status/2110041297360699856" target="_blank" rel="noopener">X<span class="ft-daily-hand">一手</span></a><a class="ft-daily-chip is-orig" href="https://x.com/Google/status/2110041297360699856" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article></div>
+  </section><section class="ft-daily-page" id="s-2026-10-14-2">
+    <h2 class="ft-daily-pagehead"><span>02</span>生图/生视频</h2>
+    <div class="ft-daily-row"><article class="ft-daily-story" id="c-resflow">
+            <h3><a href="https://arxiv.org/abs/2610.13225" target="_blank" rel="noopener">ReSFlow：一步离散流</a></h3>
+            <p>表 1 观察候选。不擅自升档。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://arxiv.org/abs/2610.13225" target="_blank" rel="noopener">arXiv</a><a class="ft-daily-chip is-orig" href="https://arxiv.org/abs/2610.13225" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article><article class="ft-daily-story" id="c-smd-pivot">
+            <h3><a href="https://arxiv.org/abs/2610.18472" target="_blank" rel="noopener">SMD / Pivot：简化 on-policy 少步蒸馏（4-NFE）</a></h3>
+            <p>回归式 on-policy 速度匹配做 4-NFE；无辅助 score、无对抗，可扩到 33B 和音视频（摘要）。仍依赖老师。记少步「绕开 DMD」候选，不计入第三家；挂表 3 / 主线 5 旁证【推断】。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://arxiv.org/abs/2610.18472" target="_blank" rel="noopener">arXiv</a><a class="ft-daily-chip is-orig" href="https://arxiv.org/abs/2610.18472" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article></div>
+  </section><section class="ft-daily-page" id="s-2026-10-14-3">
+    <h2 class="ft-daily-pagehead"><span>03</span>产品和工具</h2>
+    <div class="ft-daily-row"><article class="ft-daily-story" id="c-anthropic-source-control">
+            <h3><a href="https://x.com/AnthropicAI/status/2110047081414987957" target="_blank" rel="noopener">Anthropic 自研源控：为人设计的基建成 agent 瓶颈</a></h3>
+            <p>日合并约 2500→30000。博客级工程叙事，非模型发布。属 Agent 工具，不进训练配方时间线。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://x.com/AnthropicAI/status/2110047081414987957" target="_blank" rel="noopener">X<span class="ft-daily-hand">一手</span></a><a class="ft-daily-chip is-orig" href="https://x.com/AnthropicAI/status/2110047081414987957" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article><article class="ft-daily-story" id="c-agentswe">
+            <h3><a href="https://arxiv.org/abs/2610.13361" target="_blank" rel="noopener">AgentSWE：coding agent 造 agent 评测</a></h3>
+            <p>BAAI：25 题 Creation/Editing/Optimization。最强 Creation 约 19.1/100、Editing 约 31.6/100【第三方摘要】。评测不是训练报告；记 Agent 工具栏，不进信号 4。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://arxiv.org/abs/2610.13361" target="_blank" rel="noopener">arXiv</a><a class="ft-daily-chip is-orig" href="https://arxiv.org/abs/2610.13361" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article></div><div class="ft-daily-row"><article class="ft-daily-story" id="c-runway-replit">
+            <h3><a href="https://x.com/runwayml/status/2110061567383577037" target="_blank" rel="noopener">Runway × Replit：生图/视频资产进项目</a></h3>
+            <p>web design 协作演示。产品事件，不推主线。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://x.com/runwayml/status/2110061567383577037" target="_blank" rel="noopener">X</a><a class="ft-daily-chip is-orig" href="https://x.com/runwayml/status/2110061567383577037" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article></div>
+  </section><section class="ft-daily-page" id="s-2026-10-14-4">
+    <h2 class="ft-daily-pagehead"><span>04</span>研究论文</h2>
+    <div class="ft-daily-row"><article class="ft-daily-story" id="c-simvta">
+            <h3><a href="https://arxiv.org/abs/2610.13781" target="_blank" rel="noopener">SimVTA：驾驶 WAM + RL（外部仿真器）</a></h3>
+            <p>挂主线 3 观察。用外部仿真器做视频监督，不进信号 4。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://arxiv.org/abs/2610.13781" target="_blank" rel="noopener">arXiv</a><a class="ft-daily-chip is-orig" href="https://arxiv.org/abs/2610.13781" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article><article class="ft-daily-story" id="c-r2-wam">
+            <h3><a href="https://arxiv.org/abs/2610.13024" target="_blank" rel="noopener">R²-WAM：WAM 需要何种视觉表征</a></h3>
+            <p>挂主线 3 观察区。不进信号表 4。</p>
+            <p class="ft-daily-story-meta">
+              <a class="ft-daily-chip" href="https://arxiv.org/abs/2610.13024" target="_blank" rel="noopener">arXiv</a><a class="ft-daily-chip is-orig" href="https://arxiv.org/abs/2610.13024" target="_blank" rel="noopener">原文</a>
+              <span class="ft-daily-mins">约 1 分钟</span>
+            </p>
+          </article></div>
+  </section>
+    <nav class="ft-daily-nbs" aria-label="相邻存档日"><span class="ft-daily-nb is-empty"></span><a class="ft-daily-nb" href="#d-2026-10-15">
+      <span>后一日 · 10月15日</span>
+    </a></nav>
+    <p class="ft-daily-end">（本期完）</p>
+    <p class="ft-daily-colo">前沿趋势日报根据公开报道整理，每条都附原文。材料来自当前看板存档日，不另写事实。</p>
+  </article>
+      <p class="ft-daily-foot">
+        看板更新于 2026-10-17 10:35（北京时间）
+        · <a href="../live/">精选</a>
+        · <a href="../hot/">热点榜</a>
+      </p>
+    </div>
+  </div>
+  <script data-ds-injected="daily">
+(function () {
+  var issues = document.querySelectorAll("[data-ft-issue]");
+  if (!issues.length) return;
+  function dayFromHash() {
+    var h = location.hash;
+    var m = h.match(/^#d-(\d{4}-\d{2}-\d{2})/);
+    if (m) return m[1];
+    if (h && h.length > 1) {
+      try {
+        var target = document.querySelector(h);
+        var issue = target && target.closest("[data-ft-issue]");
+        if (issue) return issue.getAttribute("data-ft-issue");
+      } catch (e) {}
+    }
+    var visible = document.querySelector("[data-ft-issue]:not([hidden])");
+    return (visible || issues[0]).getAttribute("data-ft-issue");
+  }
+  function show(day) {
+    var known = false;
+    issues.forEach(function (el) {
+      var on = el.getAttribute("data-ft-issue") === day;
+      el.hidden = !on;
+      if (on) known = true;
+    });
+    if (!known) {
+      issues[0].hidden = false;
+      day = issues[0].getAttribute("data-ft-issue");
+    }
+    document.querySelectorAll("[data-ft-cal]").forEach(function (el) {
+      var on = el.getAttribute("data-ft-cal") === day;
+      el.classList.toggle("is-current", on);
+      if (on) el.setAttribute("aria-current", "true");
+      else el.removeAttribute("aria-current");
+      if (el.classList.contains("ft-daily-dot")) {
+        el.classList.toggle("is-issue", !on);
+      }
+    });
+  }
+
+  show(dayFromHash());
+  window.addEventListener("hashchange", function () { show(dayFromHash()); });
+})();
+</script>
+</div>
+  </main>
+  <footer class="ds-footer">
+    <div class="ds-wrap ds-footer-inner">
+      <p>材料来自公开论文、官方博客和公开热帖。看板每 30 分钟检查一次；时间线每晚更新。</p>
+      <p><a href="../about/">关于这个站</a></p>
+    </div>
+  </footer>
+  <div class="lightbox" id="lightbox" hidden>
+    <button type="button" aria-label="关闭">×</button>
+    <img alt="">
+  </div>
+  <script src="../theme.js"></script>
+</body>
+</html>
