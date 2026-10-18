@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="ds-page ft-shell">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>更多 · 前沿趋势</title>
+  <meta name="description" content="Studio、信号、权重、专题和关于。">
+  <link rel="stylesheet" href="../assets/ds.css">
+  <link rel="stylesheet" href="../assets/skin-raw.css">
+  <link rel="stylesheet" href="../styles.css">
+  <style>.chart-fig{margin:24px 0;padding:20px 20px 14px;background:var(--ds-bg-elevated,#fff);border:1px solid var(--ds-hairline,#e5e5ea);border-radius:var(--ds-radius-md,14px);max-width:860px}
+.chart-fig h3{margin:0 0 4px;font-size:17px;line-height:1.35;color:var(--ds-text,#1d1d1f)}
+.chart-fig .chart-sub{margin:0 0 10px;font-size:13px;color:var(--ds-text-secondary,#6e6e73)}
+.cb{display:grid;gap:8px}
+.cb-row{display:grid;grid-template-columns:minmax(0,38%) 1fr auto;align-items:center;gap:10px;font-size:13px;color:var(--ds-text,#1d1d1f)}
+.cb-lbl{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cb-track{height:14px;border-radius:7px;background:var(--ds-surface-3,#f2f2f7);overflow:hidden}
+.cb-bar{display:block;height:100%;min-width:3px;border-radius:7px;background:var(--ds-accent,#0071e3)}
+.cb-bar.b2{background:#34c759}.cb-bar.b3{background:#ff9f0a}.cb-bar.b4{background:#8e8e93;min-width:0}
+.cb-val{font-weight:600;font-variant-numeric:tabular-nums;min-width:3.5em;text-align:right}
+@media (max-width:734px){.chart-fig{padding:16px 14px 12px}.cb-row{grid-template-columns:1fr auto;gap:2px 8px}.cb-lbl{grid-column:1/-1;white-space:normal}.cb-track{grid-column:1}}
+.chart-fig figcaption{margin-top:8px;font-size:12px;color:var(--ds-text-tertiary,#8e8e93)}
+.chart-fig figcaption a{color:inherit;text-decoration:underline}
+.chart-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.chart-grid .chart-fig{margin:0}</style>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t !== "light" && t !== "dark") {
+          t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="ds-skip" href="#main">跳到正文</a>
+  <style data-ds-injected="nav-css">.paper-card{margin:0 0 28px;padding:20px;background:var(--ds-bg-elevated,#fff);border:1px solid var(--ds-hairline,#e5e5ea);border-radius:var(--ds-radius-md,14px);scroll-margin-top:80px}
+.paper-card h3{margin:0 0 6px;font-size:18px;line-height:1.35}.paper-card .paper-id{font-size:12px;color:var(--ds-text-tertiary,#8e8e93)}
+.paper-card .paper-sum{margin:8px 0 12px;font-size:15px;line-height:1.6}
+.paper-card figure{margin:0}.paper-card img{display:block;width:100%;height:auto;border-radius:8px;background:#fff;cursor:zoom-in}
+.paper-card figcaption{margin-top:6px;font-size:12px;color:var(--ds-text-tertiary,#8e8e93);line-height:1.5}
+.paper-card figcaption a{color:inherit;text-decoration:underline}
+.paper-nofig{font-size:13px;color:var(--ds-text-secondary,#6e6e73)}
+a.paper-explain{margin-left:4px;font-size:.78em;padding:1px 6px;border-radius:999px;background:var(--ds-surface-3,#f2f2f7);color:var(--ds-text-secondary,#6e6e73)!important;text-decoration:none;white-space:nowrap}</style>
+  <aside class="ft-sidebar" id="nav" data-ds-injected="nav">
+    <a class="ft-brand" href="../live/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12 20 4l-5 16-3.5-6.5Z"/></svg><span>前沿趋势</span></a>
+    <nav class="ft-side-links" aria-label="站点导航"><a href="../live/" class=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.6"/><rect x="13" y="4" width="7" height="7" rx="1.6"/><rect x="4" y="13" width="7" height="7" rx="1.6"/><path d="M13 16h7M13 20h4"/></svg><span>精选</span></a><a href="../hot/" class=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s4 4.4 4 8.2A4 4 0 1 1 8 11.1C8 7.3 12 3 12 3Z"/><path d="M10 18c0 1.2.9 2 2 2s2-.8 2-2"/></svg><span>热点</span></a><a href="../timeline/" class=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18V6"/><path d="m4 18 5-6 4 3 7-8"/></svg><span>趋势</span></a><a href="../more/" class="active" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="1.35"/><circle cx="17" cy="7" r="1.35"/><circle cx="7" cy="17" r="1.35"/><circle cx="17" cy="17" r="1.35"/></svg><span>更多</span></a></nav>
+    <div class="ft-side-tools">
+      <button type="button" class="ft-theme-toggle" aria-label="切换配色">☾</button>
+    </div>
+  </aside>
+  <header class="ft-topbar" data-ds-injected="topbar">
+    <a class="ft-brand" href="../live/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12 20 4l-5 16-3.5-6.5Z"/></svg><span>前沿趋势</span></a>
+    <button type="button" class="ft-theme-toggle" aria-label="切换配色">☾</button>
+  </header>
+  <nav class="ft-tabbar" data-ds-injected="tabbar" aria-label="底部导航"><a href="../live/" class=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.6"/><rect x="13" y="4" width="7" height="7" rx="1.6"/><rect x="4" y="13" width="7" height="7" rx="1.6"/><path d="M13 16h7M13 20h4"/></svg><span>精选</span></a><a href="../hot/" class=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s4 4.4 4 8.2A4 4 0 1 1 8 11.1C8 7.3 12 3 12 3Z"/><path d="M10 18c0 1.2.9 2 2 2s2-.8 2-2"/></svg><span>热点</span></a><a href="../timeline/" class=""><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18V6"/><path d="m4 18 5-6 4 3 7-8"/></svg><span>趋势</span></a><a href="../more/" class="active" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="1.35"/><circle cx="17" cy="7" r="1.35"/><circle cx="7" cy="17" r="1.35"/><circle cx="17" cy="17" r="1.35"/></svg><span>更多</span></a></nav>
+  <main id="main" class="ds-wrap ds-section ft-page">
+    <nav class="trend-crumb" aria-label="当前位置"><span>更多</span></nav>
+    <header class="ft-pagehead">
+    <div>
+      <p class="ft-kicker">更多</p>
+      <h1>研究资产与工具</h1>
+    </div>
+  </header>
+  <p class="ft-lede">Studio 和专题不占首页。主线、信号、权重和时间线都从这里进。</p>
+  <section class="ft-more-group"><h2>研究资产</h2><div class="ft-more-grid"><a class="ft-more-card" href="../">
+            <h3>研究主页 · 本周主线</h3>
+            <p>结论先行的主线与读法</p>
+          </a><a class="ft-more-card" href="../timeline/">
+            <h3>时间线</h3>
+            <p>主线修订史</p>
+          </a><a class="ft-more-card" href="../signals/">
+            <h3>推翻信号</h3>
+            <p>让判断加强或翻盘的证据</p>
+          </a><a class="ft-more-card" href="../weights/">
+            <h3>权重待交付</h3>
+            <p>已宣布、尚未放出的权重</p>
+          </a><a class="ft-more-card" href="../weekly/">
+            <h3>周报</h3>
+            <p>按周归纳升降与改写</p>
+          </a></div></section><section class="ft-more-group"><h2>工具与站点</h2><div class="ft-more-grid"><a class="ft-more-card" href="https://codyshen0000.github.io/studio/" target="_blank" rel="noopener">
+            <h3>看板 Studio</h3>
+            <p>KPI / 表 / 图分析</p>
+          </a><a class="ft-more-card" href="../flux3/">
+            <h3>FLUX 3 专题</h3>
+            <p>速查表、案例与术语</p>
+          </a><a class="ft-more-card" href="../about/">
+            <h3>关于</h3>
+            <p>材料来源与标签</p>
+          </a><a class="ft-more-card" href="https://codyshen0000.github.io/" target="_blank" rel="noopener">
+            <h3>个人主页</h3>
+            <p>学术主页入口</p>
+          </a><a class="ft-more-card" href="../live/#board">
+            <h3>原始看板</h3>
+            <p>Hub、分类过滤、待交付表</p>
+          </a></div></section>
+  </main>
+  <footer class="ds-footer">
+    <div class="ds-wrap ds-footer-inner">
+      <p>材料来自公开论文、官方博客和公开热帖。看板每 30 分钟检查一次；时间线每晚更新。</p>
+      <p><a href="../about/">关于这个站</a></p>
+    </div>
+  </footer>
+  <div class="lightbox" id="lightbox" hidden>
+    <button type="button" aria-label="关闭">×</button>
+    <img alt="">
+  </div>
+  <script src="../theme.js"></script>
+</body>
+</html>

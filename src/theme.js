@@ -10,22 +10,24 @@
 
   function apply(theme) {
     root.dataset.theme = theme;
-    const button = document.getElementById("theme-toggle");
-    if (!button) return;
     const dark = theme === "dark";
-    button.setAttribute("aria-pressed", dark ? "true" : "false");
-    button.setAttribute("aria-label", dark ? "切换到浅色模式" : "切换到深色模式");
-    button.textContent = dark ? "☀" : "☾";
+    document.querySelectorAll(".ft-theme-toggle, #theme-toggle").forEach((button) => {
+      button.setAttribute("aria-pressed", dark ? "true" : "false");
+      button.setAttribute("aria-label", dark ? "切换到浅色模式" : "切换到深色模式");
+      button.textContent = dark ? "☀" : "☾";
+    });
   }
 
   apply(preferredTheme());
 
   document.addEventListener("DOMContentLoaded", () => {
     apply(preferredTheme());
-    document.getElementById("theme-toggle")?.addEventListener("click", () => {
-      const next = root.dataset.theme === "dark" ? "light" : "dark";
-      localStorage.setItem(storageKey, next);
-      apply(next);
+    document.querySelectorAll(".ft-theme-toggle, #theme-toggle").forEach((button) => {
+      button.addEventListener("click", () => {
+        const next = root.dataset.theme === "dark" ? "light" : "dark";
+        localStorage.setItem(storageKey, next);
+        apply(next);
+      });
     });
 
     const nav = document.getElementById("nav");
