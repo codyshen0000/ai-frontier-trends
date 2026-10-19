@@ -13,4 +13,4 @@
 | 48h 热度引擎 / 聚类 | **未做（L3）** |
 | 采集管道 / Docker / Postgres | **未做（L4，K1 禁止）** |
 
-诚实：热度指数、涨跌%、spark、AI 评分、推荐理由均来自 fixture JSON，不是生产 worker。
+诚实：热度指数、涨跌%、spark、AI 评分、推荐理由默认来自 fixture JSON，不是生产 worker。`data/engine/` 若有契约 JSON（见 `data/engine/CONTRACT.md`），预渲染改用导出切片；仍不是采集管道或 48h 实算。

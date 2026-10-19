@@ -10,7 +10,7 @@ import HotPage from "../../../vendor/mit/apps/web/app/routes/hot";
 import { ReportLayout } from "../../../vendor/mit/apps/web/app/features/report/ReportLayout";
 import { ReportPaper, reportOutline } from "../../../vendor/mit/apps/web/app/features/report/ReportPaper";
 import { StaticLocation } from "./react-router";
-import { daily, dailyIndex, hot, timeline, today } from "./fixture";
+import { daily, dailyIndex, hot, timeline, today } from "./data";
 
 function Shell({ pathname, children }: { pathname: string; children: ReactNode }) {
   return (

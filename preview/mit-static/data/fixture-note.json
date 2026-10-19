@@ -1,6 +1,8 @@
 {
   "site": "前沿趋势",
   "asOf": "2026-10-18T08:20:00+08:00",
+  "source": "fixture",
+  "engineFiles": [],
   "note": "fixture mock · 热度/涨跌/spark/评分不是 48h 实算",
   "pages": ["index.html", "hot.html", "daily.html"]
 }

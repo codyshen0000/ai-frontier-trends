@@ -2,12 +2,28 @@ import { defineConfig } from "vite";
 import tailwindcss from "@tailwindcss/vite";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { engineDirFromRoot, readEngineDir } from "./engine.mjs";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
+const repoRoot = path.resolve(here, "../..");
 const mit = path.resolve(here, "../../vendor/mit");
 
+function engineDataPlugin() {
+  return {
+    name: "engine-data",
+    resolveId(id) {
+      if (id === "virtual:engine-data") return "\0virtual:engine-data";
+    },
+    load(id) {
+      if (id !== "\0virtual:engine-data") return;
+      const payload = readEngineDir(engineDirFromRoot(repoRoot));
+      return `export const enginePayload = ${JSON.stringify(payload)};`;
+    },
+  };
+}
+
 export default defineConfig({
-  plugins: [tailwindcss()],
+  plugins: [tailwindcss(), engineDataPlugin()],
   resolve: {
     dedupe: ["react", "react-dom"],
     alias: {

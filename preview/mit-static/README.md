@@ -6,7 +6,9 @@
 - 热点：`hot.html`
 - 日报：`daily.html`
 
-品牌为「前沿趋势」。无 Docker / Postgres。热度为 fixture，不是 48h 实算。
+品牌为「前沿趋势」。无 Docker / Postgres。默认热度为 fixture，不是 48h 实算。
+
+若 `data/engine/` 里有契约 JSON（见 [`data/engine/CONTRACT.md`](../../data/engine/CONTRACT.md)），`npm run build:public` 预渲染时改用那些文件。
 
 本地：`python3 -m http.server 8767 --directory preview/mit-static`
 

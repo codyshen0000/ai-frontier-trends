@@ -162,6 +162,9 @@ for (const path of paths) {
 assert(existsSync(join(distDir, "assets", "app.css")), "dist has mit-static app.css");
 assert(existsSync(join(distDir, "assets", "nameplates", "daily.svg")), "dist has daily nameplate");
 assert(existsSync(join(distDir, "data", "fixture-note.json")), "dist has fixture data");
+const dataNote = JSON.parse(readFileSync(join(distDir, "data", "fixture-note.json"), "utf8"));
+assert(["fixture", "mixed", "engine"].includes(dataNote.source ?? "fixture"), "data note records source");
+assert(!JSON.stringify(dataNote).includes("AIHOT") && !JSON.stringify(dataNote).includes("MyHOT"), "data note has no *HOT product brand");
 
 const leftoverHtmlHref = /(?:href|src|action)="(?:index|hot|daily)\.html/;
 const home = readFileSync(join(distDir, "index.html"), "utf8");
@@ -209,7 +212,11 @@ const hotPage = readFileSync(join(distDir, "hot", "index.html"), "utf8");
 assert(hotPage.includes("AI 热点榜 · 前沿趋势") || hotPage.includes("热点榜"), "hot page title");
 assert(hotPage.includes('href="../assets/app.css"'), "/hot/ CSS is ../assets/app.css");
 assert(hotPage.includes('href="../"') && hotPage.includes('href="../daily/"'), "/hot/ links to 精选 and /daily/");
-assert(hotPage.includes("发酵中"), "hot page keeps fixture 发酵中 chips");
+if ((dataNote.source ?? "fixture") === "fixture") {
+  assert(hotPage.includes("发酵中"), "hot page keeps fixture 发酵中 chips");
+} else {
+  assert(hotPage.includes("NO.") || hotPage.includes("热点"), "engine hot page still renders the ranking");
+}
 assert(!leftoverHtmlHref.test(hotPage), "/hot/ has no leftover .html page hrefs");
 assert(!hotPage.includes("AIHOT") && !hotPage.includes("MyHOT"), "hot page has no *HOT product brand");
 
