@@ -109,7 +109,13 @@ async function snap(page) {
       "|hiddenLb" +
       (document.getElementById("lightbox")?.hidden !== false) +
       "|hash" +
-      location.hash;
+      location.hash +
+      "|toast" +
+      (document.getElementById("ft-toast")?.textContent || "") +
+      "|toastH" +
+      (document.getElementById("ft-toast")?.hidden !== false) +
+      "|live" +
+      (document.getElementById("ft-live")?.textContent || "");
     for (let i = 0; i < s.length; i++) h = ((h * 31 + s.charCodeAt(i)) | 0);
     const sel = [...document.querySelectorAll("[aria-pressed],[aria-current],[aria-selected],[aria-expanded]")]
       .map((el) => [el.getAttribute("data-ft-filter") || el.id || el.tagName, el.getAttribute("aria-pressed"), el.getAttribute("aria-current"), el.getAttribute("aria-selected"), el.getAttribute("aria-expanded")].join(":"))
@@ -152,9 +158,11 @@ function r4For(href, abs, pageUrl, pageName, text) {
   return "";
 }
 
+const onlyPaths = new Set((process.env.ONLY_PATHS || "").split(",").map((s) => s.trim()).filter(Boolean));
 const pages = walkHtml(distDir)
   .map(pagePath)
   .filter((p) => !p.includes("hot-empty") && !p.includes("daily-empty"))
+  .filter((p) => !onlyPaths.size || onlyPaths.has(p) || onlyPaths.has(p === "" ? "/" : `/${p}`))
   .sort();
 
 const phonePages = new Set(["", "live/", "hot/", "daily/", "more/", "weekly/2026-10-18/", "timeline/", "flux3/cases/"]);
@@ -309,7 +317,14 @@ async function clickControls(path, w, js) {
       before.y = b2.y;
     }
     try {
-      await p.evaluate((i) => document.querySelector(`[data-qa-i="${i}"]`)?.click(), e.i);
+      await p.evaluate((i) => {
+        const el = document.querySelector(`[data-qa-i="${i}"]`);
+        if (!el) return;
+        if (el instanceof HTMLInputElement || el instanceof HTMLSelectElement || el instanceof HTMLTextAreaElement) {
+          el.focus();
+        }
+        el.click();
+      }, e.i);
     } catch (x) {
       err = String(x).split("\n")[0].slice(0, 140);
     }
@@ -348,6 +363,13 @@ async function clickControls(path, w, js) {
     const absHref = e.href ? new URL(e.href, startUrl).href : "";
     if (!popup && e.tag === "a" && /^https?:/.test(absHref) && !absHref.startsWith(BASE.replace(/\/ai-frontier-trends\/$/, ""))) {
       changes.push("外链");
+    }
+    if (e.href && e.href.startsWith("#") && !changes.length) changes.push("锚点");
+    if (e.tag === "a" && e.href && /\.(webp|png|jpe?g|gif|svg)(\?|#|$)/i.test(e.href) && !changes.length) {
+      changes.push("资源");
+    }
+    if ((e.tag === "input" || e.tag === "select" || e.tag === "textarea") && !changes.length) {
+      changes.push("焦点");
     }
     const r4 = e.tag === "a" ? r4For(e.href, absHref, BASE + path, pname, e.text) : "";
     const urlOnly = queryOnly && !changes.length;
