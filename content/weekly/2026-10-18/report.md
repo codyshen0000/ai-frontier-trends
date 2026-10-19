@@ -1,6 +1,6 @@
 # AI 前沿趋势周报 · 2026-10-18（第 2 期）
 
-**一句话结论：主线无升级、无降级、无新增【推断，对照趋势定性】；FLUX 3 Image Klein 与 Kling 4.0 属权重/产品交付【证实】；PR-OPD 把 OPD 监督从词概率改到隐状态【证实，单篇】；Terminal-RSI / LlamaFactory RSI / PenguinHarness 挂观察，未写入信号表 4【证实】；信号表 1–4 一周无翻转【证实】。**
+**一句话结论：主线无升级、无降级、无新增【推断，对照趋势定性】；FLUX 3 Image Klein 与 Kling 4.0 属权重/产品交付【证实】；PR-OPD 把 OPD 监督从词概率改到隐状态【证实，单篇】；Terminal-RSI / LlamaFactory RSI / PenguinHarness 列为观察，未写入信号表 4【证实】；信号表 1–4 一周无翻转【证实】。**
 
 - 对比基线：2026-10-12 第 1 期周报。
 - 覆盖时间：2026-10-13 至 2026-10-18（Asia/Shanghai）。10-17 / 10-18 无新日报或趋势定性，看板 archive_date 仍停在 2026-10-16。
@@ -36,9 +36,9 @@ graph LR
 
 ## 关键图
 
-![本周证据写入按主线：交付与 OPD 观察最多](charts/2026-10-18-evidence-by-line.png)
+![本周证据写入：交付与 OPD/RSI 观察最多；主线等级全不变](charts/2026-10-18-evidence-by-line.png)
 
-![信号表 1–4：本周候选续核，正表仍零新增](charts/2026-10-18-signal-candidates.png)
+![信号表 1–4：本周续核多篇，正表零新增；一周无翻转](charts/2026-10-18-signal-candidates.png)
 
 ![权重与产品：本周兑现 3 项，仍空 3 项（截至 2026-10-16 傍晚）](charts/2026-10-18-weights-delivery.png)
 
@@ -51,13 +51,13 @@ graph LR
 
 ### 加固：主线 1–2「OPD 适用条件」池扩大，等级不变【证实（多篇单 seed）】
 - **Apple/Duke（2610.04272）**：调好的 SFT 与多教师 OPD，域内四种方法最大相差 3.5/4.6 个百分点，无一致优势；MOPD 训练算力是 SFT 的 14.8×/23.1×（Qwen3-8B 两组任务）【证实】。大教师时是取舍：SFT 换域内、OPD 守域外【推断】。
-- **BranchOPD（2610.13481）**：相对 Vanilla OPD，数学 avg@16 +18.55pp、ALFWorld 均值 +13.8【证实，作者自报】。只改不确定点分支采样；挂适用条件观察，不进正表。
+- **BranchOPD（2610.13481）**：相对 Vanilla OPD，数学 avg@16 +18.55pp、ALFWorld 均值 +13.8【证实，作者自报】。只改不确定点分支采样；列为适用条件观察，未写入正表。
 - **OPD 失败题反证（2610.18011）+ RC-OPD（2610.03515）**：失败题上训会掉点；根因修补再蒸。方向性反证，不引幅度进主结论。
 - **PR-OPD（2609.36642）**：事后技能对齐隐藏状态，而非词概率。Qwen2.5-3B 相对 GRPO：ALFWorld All +4.7pp（66.4→71.1），WebShop Acc +11.7pp（55.5→67.2）【证实，表 1】。技能在场时改动的采样 token 概率不足四分之一，隐状态改动超过八成【证实，作者自报】。进 OPD 适用条件池「信道：隐状态 vs token」。
 - 同窗续热：Semi-OPD、Critique-OPD、MM-OPD、ActionOPD、Reality Check（Agent RL 自蒸馏无一稳超 GRPO）——均作观察，主线等级不变。
 - 「先 SFT 再 OPD」顺序冲突仍开放（Semi-OPD vs Salesforce 稿）；Apple/Duke 未测该顺序。
 
-### 交付：主线 4 权重/产品侧部分兑现，不进信号表【证实】
+### 交付：主线 4 权重/产品侧部分兑现，未写入信号表【证实】
 | 模型 | 本周状态 | 证据 |
 |---|---|---|
 | FLUX 3 Image Klein（5.6B） | **开源权重交付**（约 10-15/16） | [BFL 博客](https://bfl.ai/blog/flux-3-image-klein) · [HF](https://huggingface.co/black-forest-labs/flux-3-image-klein) |
@@ -72,16 +72,16 @@ graph LR
 - 生图预训练「只换数据」仍【叙事】；GPT Image 2.5 无新一手。
 
 ### 新增观察（主线等级不变）：RSI / harness 权重环扩窗，信号表 4 仍空【证实】
-- **Terminal-RSI（2610.22192）**：终端 agent 交替 RSR+RPR 并更新策略权重；可验证终端环境，但非 learned WM 内 RL → **挂 RSI/harness 观察，未写入信号表 4**。
+- **Terminal-RSI（2610.22192）**：终端 agent 交替 RSR+RPR 并更新策略权重；可验证终端环境，但非 learned WM 内 RL → **列入 RSI/harness 观察，未写入信号表 4**。
 - **LlamaFactory RSI / PenguinHarness**（主仓 [Prism-Shadow/penguin-harness](https://github.com/Prism-Shadow/penguin-harness)）：README 明确 model 固定、演进 harness；无 WM 内 RL 留存训权重 → 观察，主线等级不变。
 - **ClawLoop（2610.14118）**：会 SFT/GRPO 更新权重并多轮留存（SkillsBench 46.3→57.2 作者自报）【证实】，但是 harness 沙箱自进化，不是 WM 内 RL → 未写入信号表 4。
 - 旁证窗：RSI-Nav、AdaRSI、SwarmRSI、VideoHarness-SRSI、MetaShare、RSIFlow、MetaExp。
-- 表 4 升级条件未变：大厂写清「可验证世界里训策略权重且留存进下一轮」。基线仍 RSI-Anything / RIWANav（结构样本，主线等级未变）。
+- 表 4 升级条件未变：大厂写清「可验证世界里训策略权重且留存进下一轮」。基线仍 RSI-Anything / RIWANav（它们只是结构上的例子，主线评级没有变化）。
 
 ### 旁证：主线 5 少步续热，仍无第三家绕开 DMD【推断】
 - **SMD（2610.18472）**：少步「绕开 DMD」候选，**不计第三家**（π-Flow、PTD 仍是仅有两家）。
 - **Glance Forcing（2610.20220）**：单条 PF-ODE + Slow/Fast LoRA；VBench 84.04→84.22【作者自报】→ 旁证。
-- **Speculative Forcing（2610.22347） / RepForcing（2610.20111）**：投机/表征初始化；RepForcing 仍接 asymmetric DMD（VBench Total 84.04→84.66【作者自报】）→ 旁证，不进正表。
+- **Speculative Forcing（2610.22347） / RepForcing（2610.20111）**：投机/表征初始化；RepForcing 仍接 asymmetric DMD（VBench Total 84.04→84.66【作者自报】）→ 旁证，未写入正表。
 - **DMAD** 续热：仍在 DMD 族。
 - Data-Space Iteration / PVD / RY-DMD：结构旁证，主线等级不变。
 
@@ -103,7 +103,7 @@ graph LR
 | Qwen-Image | 无新对比 | 无 |
 | VIEScore2 | 无新版本 | 无 |
 | 后训练 / OPD | PR-OPD、BranchOPD、Apple/Duke、失败题反证、MM-OPD、ActionOPD、Agent-Reflex | 适用条件池加固 |
-| 生图/生视频 | Klein 开源、Kling 产品全量 | 交付，不进信号表 |
+| 生图/生视频 | Klein 开源、Kling 产品全量 | 交付，未写入信号表 |
 | RSI | Terminal-RSI、PenguinHarness、RSI-Nav、ClawLoop 旁证 | 观察，未写入信号表 4 |
 
 ## 对照第 1 期「下周要盯」核对

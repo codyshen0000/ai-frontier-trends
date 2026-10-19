@@ -225,9 +225,9 @@ const rewritten = rewriteMitStatic(
   "/hot/",
 );
 assert.match(rewritten, /src="\.\.\/assets\/covers\/a-1600\.webp"/);
-assert.match(rewritten, /srcSet="\.\.\/assets\/covers\/a-720\.webp 720w, \.\.\/assets\/covers\/a-1200\.webp 1200w, \.\.\/assets\/covers\/a-1600\.webp 1600w"/);
-assert.match(rewritten, /imageSrcSet="\.\.\/assets\/covers\/a-720\.webp 720w, \.\.\/assets\/covers\/a-1200\.webp 1200w, \.\.\/assets\/covers\/a-1600\.webp 1600w"/);
-assert.doesNotMatch(rewritten, /(?:src|srcSet|imageSrcSet)="assets\//);
+assert.match(rewritten, /srcset="\.\.\/assets\/covers\/a-720\.webp 720w, \.\.\/assets\/covers\/a-1200\.webp 1200w, \.\.\/assets\/covers\/a-1600\.webp 1600w"/);
+assert.match(rewritten, /imagesrcset="\.\.\/assets\/covers\/a-720\.webp 720w, \.\.\/assets\/covers\/a-1200\.webp 1200w, \.\.\/assets\/covers\/a-1600\.webp 1600w"/);
+assert.doesNotMatch(rewritten, /(?:src|srcset|imagesrcset)="assets\//i);
 const atRoot = rewriteMitStatic(`<img src="assets/covers/a.webp" srcSet="assets/covers/a.webp 1600w"/>`, "/");
 assert.match(atRoot, /src="assets\/covers\/a\.webp"/);
 assert.doesNotMatch(atRoot, /src="\.\.\/assets\//);
