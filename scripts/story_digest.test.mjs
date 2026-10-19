@@ -1,10 +1,13 @@
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import {
   applyStoryDigest,
   assertCoverRecords,
+  assertNoBannedPublicCopyInDir,
+  assertWeeklyMetaCopy,
   assertWeeklyReportCopy,
   assertWeeklyReports,
   coverAltProblem,
@@ -25,6 +28,9 @@ assert.doesNotMatch(klein.digest, /本条未覆盖/);
 assert.equal(findBannedMeta(klein.digest), null);
 assert.equal(findBannedMeta("完整非 Klein 版权重本条未覆盖。"), "本条未覆盖");
 assert.equal(findBannedMeta("权重跟踪：Klein 记交付；六件套其余仍空。"), "权重跟踪");
+assert.equal(findBannedMeta("PenguinHarness 挂观察，未写入信号表 4"), "挂观察");
+assert.equal(findBannedMeta("旁证，不进正表。"), "不进正表");
+assert.equal(findBannedMeta("权重追踪栏目名应放行"), null);
 
 const ids = (generated.hotEntries || []).map((e) => e.itemId);
 assert.ok(ids.length >= 5, "at least 5 hot cards");
@@ -72,6 +78,38 @@ assert.throws(
 );
 
 assertWeeklyReports(join(here, ".."));
+assert.throws(
+  () => assertWeeklyMetaCopy(JSON.stringify({ summary: "挂观察，不进信号表 4" }), "content/weekly/neg/meta.json"),
+  /挂观察|不进信号表/,
+  "negative: banned word in weekly meta.json summary fails",
+);
+{
+  const tmp = mkdtempSync(join(tmpdir(), "digest-banned-json-"));
+  try {
+    writeFileSync(join(tmp, "sitemap.json"), '{"note":"不进正表"}');
+    assert.throws(
+      () => assertNoBannedPublicCopyInDir(tmp, { prefix: "dist/" }),
+      /sitemap\.json[\s\S]*不进正表/,
+      "negative: banned word in a dist json file fails",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "digest-banned-page-"));
+  try {
+    mkdirSync(join(tmp, "timeline"), { recursive: true });
+    writeFileSync(join(tmp, "timeline", "index.html"), "<p>仍不升档</p>");
+    assert.throws(
+      () => assertNoBannedPublicCopyInDir(tmp, { prefix: "dist/" }),
+      /timeline\/index\.html[\s\S]*不升档/,
+      "negative: banned word in a non-weekly page fails",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
 assert.throws(
   () => assertWeeklyReportCopy("交付，不进信号表", "<p>ok</p>", "neg-md"),
   /不进信号表/,

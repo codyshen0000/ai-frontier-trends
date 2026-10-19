@@ -1,6 +1,6 @@
 /** Map live cards onto public title/digest. Ban internal editorial meta. */
-import { existsSync, readdirSync, readFileSync } from "node:fs";
-import { dirname, join } from "node:path";
+import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
+import { dirname, extname, join, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -9,7 +9,8 @@ const FILENAME_ALT = /^(?:[\w./~:@%+-]+)\.(?:webp|png|jpe?g|gif|svg|avif)(?:\?.*
 const URL_ALT = /^(?:https?:)?\/\/|^https?:\/\//i;
 
 export const BANNED_PUBLIC_COPY =
-  /权重跟踪|记交付|本批|六件套|低于门槛|\[低于门槛补位\]|补位|score=|闸分|闸\s*[AB]|资料是否齐全|本条材料未披露故|本条未覆盖|不进信号表|不升档|趋势分析已定性|不碰训练配方|不进训练方法主线|挂主线|挂 RSI|日常降为简讯|不当推理机/;
+  /权重跟踪|记交付|本批|六件套|低于门槛|\[低于门槛补位\]|补位|score=|闸分|闸\s*[AB]|资料是否齐全|本条材料未披露故|本条未覆盖|不进信号表|不进正表|不升档|趋势分析已定性|不碰训练配方|不进训练方法主线|挂主线|挂 RSI|挂观察|日常降为简讯|不当推理机/;
+const PUBLIC_COPY_SCAN_EXTS = new Set([".html", ".json", ".xml"]);
 
 let cached = null;
 
@@ -19,9 +20,17 @@ export function loadStoryDigest() {
   return cached;
 }
 
+function bannedCopyGlobal() {
+  return new RegExp(BANNED_PUBLIC_COPY.source, `${BANNED_PUBLIC_COPY.flags.replace("g", "")}g`);
+}
+
 export function findBannedMeta(text) {
   const match = String(text || "").match(BANNED_PUBLIC_COPY);
   return match ? match[0] : null;
+}
+
+export function findAllBannedMeta(text) {
+  return [...String(text || "").matchAll(bannedCopyGlobal())].map((match) => match[0]);
 }
 
 export function assertNoInternalMeta(text, label) {
@@ -139,11 +148,73 @@ export function assertWeeklyReports(rootDir = join(here, "..")) {
     const dir = join(weeklyDir, name);
     const mdPath = join(dir, "report.md");
     const htmlPath = join(dir, "report.html");
-    if (!existsSync(mdPath) && !existsSync(htmlPath)) continue;
+    const metaPath = join(dir, "meta.json");
+    if (!existsSync(mdPath) && !existsSync(htmlPath) && !existsSync(metaPath)) continue;
     const md = existsSync(mdPath) ? readFileSync(mdPath, "utf8") : "";
     const html = existsSync(htmlPath) ? readFileSync(htmlPath, "utf8") : "";
-    assertWeeklyReportCopy(md, html, `weekly/${name}`);
+    if (existsSync(mdPath) || existsSync(htmlPath)) {
+      assertWeeklyReportCopy(md, html, `weekly/${name}`);
+    }
+    if (existsSync(metaPath)) {
+      assertWeeklyMetaCopy(readFileSync(metaPath, "utf8"), `content/weekly/${name}/meta.json`);
+    }
   }
+}
+
+export function assertWeeklyMetaCopy(raw, label) {
+  const text = String(raw ?? "");
+  assertNoInternalMeta(text, label);
+  try {
+    const meta = JSON.parse(text);
+    if (meta && typeof meta.summary === "string") {
+      assertNoInternalMeta(meta.summary, `${label} summary`);
+    }
+  } catch (err) {
+    if (err instanceof SyntaxError) return;
+    throw err;
+  }
+}
+
+export function walkPublicCopyFiles(rootDir, extensions = PUBLIC_COPY_SCAN_EXTS, acc = []) {
+  if (!existsSync(rootDir)) return acc;
+  for (const name of readdirSync(rootDir)) {
+    const full = join(rootDir, name);
+    if (statSync(full).isDirectory()) walkPublicCopyFiles(full, extensions, acc);
+    else if (extensions.has(extname(name).toLowerCase())) acc.push(full);
+  }
+  return acc;
+}
+
+export function collectBannedPublicCopyHits(rootDir, { extensions = PUBLIC_COPY_SCAN_EXTS, prefix = "" } = {}) {
+  const hits = [];
+  for (const full of walkPublicCopyFiles(rootDir, extensions)) {
+    const rel = `${prefix}${relative(rootDir, full).split("\\").join("/")}`;
+    for (const word of findAllBannedMeta(readFileSync(full, "utf8"))) {
+      hits.push({ file: rel, word });
+    }
+  }
+  return hits;
+}
+
+export function assertNoBannedPublicCopyInDir(rootDir, options = {}) {
+  const hits = collectBannedPublicCopyHits(rootDir, options);
+  if (!hits.length) return hits;
+  const lines = hits.map((hit) => `${hit.file} contains internal meta «${hit.word}»`);
+  throw new Error(lines.join("\n"));
+}
+
+export function assertWeeklyMetaSources(rootDir = join(here, "..")) {
+  const weeklyDir = join(rootDir, "content", "weekly");
+  if (!existsSync(weeklyDir)) return;
+  for (const name of readdirSync(weeklyDir)) {
+    const metaPath = join(weeklyDir, name, "meta.json");
+    if (!existsSync(metaPath)) continue;
+    assertWeeklyMetaCopy(readFileSync(metaPath, "utf8"), `content/weekly/${name}/meta.json`);
+  }
+}
+
+export function assertDistPublicCopy(distDir, options = {}) {
+  return assertNoBannedPublicCopyInDir(distDir, { prefix: "dist/", ...options });
 }
 
 export function applyStoryDigest(generated, table = loadStoryDigest()) {

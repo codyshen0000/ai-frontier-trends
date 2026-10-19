@@ -20,7 +20,7 @@ import {
   weeklyIndexBody,
   weeklyIssueChrome,
 } from "./weekly.mjs";
-import { assertCoverRecords, assertWeeklyReports } from "./story_digest.mjs";
+import { assertCoverRecords, assertDistPublicCopy, assertWeeklyMetaSources, assertWeeklyReports } from "./story_digest.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const distDir = join(root, "dist");
@@ -581,6 +581,7 @@ function readHomeData() {
 export function buildSite() {
   assertCoverRecords(JSON.parse(readFileSync(join(root, "scripts", "mit-static", "src", "covers.generated.json"), "utf8")));
   assertWeeklyReports(root);
+  assertWeeklyMetaSources(root);
   rmSync(distDir, { recursive: true, force: true });
   mkdirSync(distDir, { recursive: true });
 
@@ -770,6 +771,7 @@ export function buildSite() {
   const copiedImages = copyCaseAssets(root, distDir);
   writeFileSync(join(distDir, ".nojekyll"), "");
   publishMitStatic();
+  assertDistPublicCopy(distDir);
 
   console.log(`Built ${contentPages.length + 1} pages → dist/ (public=${publicDeploy}, case images=${copiedImages}, mit-static overlay)`);
 }

@@ -1,10 +1,22 @@
-import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
 import { dirname, join, normalize, relative, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { extractLiveSpotlight, extractThreads, extractTimelineLede, ensureThreadAnchors } from "./extract.mjs";
 import { clipSummary, extractLiveCards, rankHot, selectPins } from "./live_cards.mjs";
 import { injectHtmlFile } from "./build.mjs";
-import { assertCoverRecords, assertWeeklyReports, coverAltProblem, coverEntries } from "./story_digest.mjs";
+import {
+  assertCoverRecords,
+  assertDistPublicCopy,
+  assertNoBannedPublicCopyInDir,
+  assertWeeklyMetaCopy,
+  assertWeeklyMetaSources,
+  assertWeeklyReports,
+  collectBannedPublicCopyHits,
+  coverAltProblem,
+  coverEntries,
+  walkPublicCopyFiles,
+} from "./story_digest.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const config = JSON.parse(readFileSync(join(root, "site.config.json"), "utf8"));
@@ -401,7 +413,71 @@ try {
 }
 try {
   assertWeeklyReports(root);
-  assert(true, "weekly report.md/html have no banned public copy");
+  assert(true, "weekly report.md/html/meta.json have no banned public copy");
+} catch (err) {
+  assert(false, err.message);
+}
+try {
+  assertWeeklyMetaSources(root);
+  assert(true, "content weekly meta.json sources have no banned public copy");
+} catch (err) {
+  assert(false, err.message);
+}
+
+function expectThrow(fn, re, message) {
+  try {
+    fn();
+    assert(false, message);
+  } catch (err) {
+    assert(re.test(String(err.message)), `${message} (got: ${err.message})`);
+  }
+}
+
+{
+  const tmp = mkdtempSync(join(tmpdir(), "ia-banned-json-"));
+  try {
+    writeFileSync(join(tmp, "feed.json"), JSON.stringify({ summary: "本条未覆盖" }));
+    expectThrow(
+      () => assertNoBannedPublicCopyInDir(tmp, { prefix: "dist/" }),
+      /feed\.json[\s\S]*本条未覆盖/,
+      "negative: banned word in a dist json file fails verify:ia",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+expectThrow(
+  () => assertWeeklyMetaCopy(JSON.stringify({ summary: "PenguinHarness 挂观察" }), "content/weekly/neg/meta.json"),
+  /挂观察/,
+  "negative: banned word in a weekly meta.json summary fails verify:ia",
+);
+{
+  const tmp = mkdtempSync(join(tmpdir(), "ia-banned-page-"));
+  try {
+    mkdirSync(join(tmp, "about"), { recursive: true });
+    writeFileSync(join(tmp, "about", "index.html"), "<p>评级讨论：不升档</p>");
+    expectThrow(
+      () => assertNoBannedPublicCopyInDir(tmp, { prefix: "dist/" }),
+      /about\/index\.html[\s\S]*不升档/,
+      "negative: banned word in a non-weekly page fails verify:ia",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+
+const distCopyFiles = walkPublicCopyFiles(distDir);
+const distCopyHits = collectBannedPublicCopyHits(distDir, { prefix: "dist/" });
+for (const hit of distCopyHits) {
+  console.error(`FAIL banned «${hit.word}» in ${hit.file}`);
+}
+assert(
+  distCopyHits.length === 0,
+  `dist html/json/xml have 0 banned-word hits (${distCopyHits.length} hits across ${distCopyFiles.length} files)`,
+);
+try {
+  assertDistPublicCopy(distDir);
+  assert(true, "assertDistPublicCopy matches the dist html/json/xml scan");
 } catch (err) {
   assert(false, err.message);
 }
