@@ -33,9 +33,45 @@ const TRACKING_HOSTS = new Set([
   "onetag-sys.com",
 ]);
 
+function hostOf(src) {
+  try {
+    return new URL(src).hostname.replace(/^www\./, "").toLowerCase();
+  } catch {
+    return "";
+  }
+}
+
+function decodeCamoPayload(pathname) {
+  const last = String(pathname).split("/").filter(Boolean).at(-1) || "";
+  if (!/^[0-9a-f]+$/i.test(last) || last.length % 2) return "";
+  try {
+    return Buffer.from(last, "hex").toString("utf8");
+  } catch {
+    return "";
+  }
+}
+
+/** GitHub camo / shields.io badge proxies — not article photographs. */
+export function isBadgeProxy(src) {
+  const url = String(src || "");
+  if (!url) return false;
+  if (/camo\.githubusercontent\.com/i.test(url) || /shields\.io/i.test(url)) return true;
+  const host = hostOf(url);
+  if (host === "camo.githubusercontent.com") return true;
+  if (host === "shields.io" || host.endsWith(".shields.io")) return true;
+  try {
+    const inner = decodeCamoPayload(new URL(url).pathname);
+    if (inner && /shields\.io/i.test(inner)) return true;
+  } catch {
+    /* keep */
+  }
+  return false;
+}
+
 export function isNonArticleImage(src, width, height) {
   if (/^data:/i.test(src) && !/^data:image\/[a-z0-9.+-]+[;,]/i.test(src)) return true;
   if (width !== undefined && height !== undefined && Number(width) <= 1 && Number(height) <= 1) return true;
+  if (isBadgeProxy(src)) return true;
   try {
     if (TRACKING_HOSTS.has(new URL(src).hostname)) return true;
   } catch {
@@ -83,7 +119,12 @@ export function firstQualifyingImage(media, { listed = true, bodyMode = "full" }
   let sawSvg = false;
   let sawShort = false;
   let sawNarrow = false;
+  let sawBadge = false;
   for (const item of images) {
+    if (isBadgeProxy(item.url)) {
+      sawBadge = true;
+      continue;
+    }
     if (isNonArticleImage(item.url, item.width ?? undefined, item.height ?? undefined)) continue;
     if (isSvgCover(item)) {
       sawSvg = true;
@@ -108,6 +149,7 @@ export function firstQualifyingImage(media, { listed = true, bodyMode = "full" }
   if (sawNarrow) return { image: null, reason: "below_480" };
   if (sawShort) return { image: null, reason: "below_240" };
   if (sawSvg) return { image: null, reason: "svg" };
+  if (sawBadge) return { image: null, reason: "badge" };
   return { image: null, reason: "no_image" };
 }
 
@@ -183,7 +225,9 @@ export function pickCover(publications, { representativeId, leadItemId, mode }) 
         ? "below_240"
         : log.some((row) => row.reason === "svg")
           ? "svg"
-          : "no_image";
+          : log.some((row) => row.reason === "badge")
+            ? "badge"
+            : "no_image";
   return { cover: null, reason, articleId: null, log };
 }
 

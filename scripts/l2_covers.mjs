@@ -1,6 +1,6 @@
 /** Build-time cover resolver: MIT extract/queryHotCovers/leadCover + static imgproxy (sharp). */
 import { createHash } from "node:crypto";
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync, unlinkSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import {
@@ -281,13 +281,10 @@ async function emitRenditions(id, original, sharp) {
         fit: "inside",
       });
       const webpBuf = await pipeline.clone().webp({ quality: 78 }).toBuffer();
-      const jpgBuf = await pipeline.clone().jpeg({ quality: 78, mozjpeg: true }).toBuffer();
       const webpName = `${id}-${targetW}.webp`;
-      const jpgName = `${id}-${targetW}.jpg`;
       writeFileSync(join(coverAssetDir, webpName), webpBuf);
-      writeFileSync(join(coverAssetDir, jpgName), jpgBuf);
-      bytes += webpBuf.length + jpgBuf.length;
-      files.push({ mode, width: targetW, webp: `assets/covers/${webpName}`, jpg: `assets/covers/${jpgName}`, bytes: webpBuf.length });
+      bytes += webpBuf.length;
+      files.push({ mode, width: targetW, webp: `assets/covers/${webpName}`, bytes: webpBuf.length });
     }
   } catch {
     return noneRendition("resize_failed", original, buf.length);
@@ -551,7 +548,7 @@ async function main() {
         Object.values(generated.renditions).map((r) => (r.files || []).map((f) => f.webp).join("|")),
       ).size,
       modes: HERO_MODES.map((mode) => ({ mode, width: IMAGE_WIDTHS[mode] })),
-      note: "Build-time sharp = MIT image-proxy static equivalent. hero srcSet widths thumb/720, image-1200/1200, full/1600. webp+jpeg, withoutEnlargement. Fail → no-image (never hotlink). Product-approved: skip SVG and known height < 240.",
+      note: "Build-time sharp = MIT image-proxy static equivalent. hero srcSet widths thumb/720, image-1200/1200, full/1600. webp only, withoutEnlargement. Fail → no-image (never hotlink). Product-approved: skip SVG, known height < 240, and camo.githubusercontent.com / shields.io badge proxies.",
     },
   };
 
@@ -570,6 +567,11 @@ async function main() {
     2,
   ));
   writeFileSync(generatedPath, JSON.stringify(generated, null, 2));
+  if (existsSync(coverAssetDir)) {
+    for (const name of readdirSync(coverAssetDir)) {
+      if (/\.(jpe?g)$/i.test(name)) unlinkSync(join(coverAssetDir, name));
+    }
+  }
   console.log("l2_covers hot", hotEntries.length, "lead", hotEntries[0]?.itemId, hotEntries[0]?.coverReason, hotEntries[0]?.coverOriginal?.url || "none");
   console.log("l2_covers daily", generated.daily.itemId, generated.daily.coverReason, generated.daily.coverOriginal?.url || "none");
   console.log("l2_covers sharp", Boolean(sharp), "bytes", coverage.sizeBudget.coverFilesBytes);

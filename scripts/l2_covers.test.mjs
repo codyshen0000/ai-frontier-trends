@@ -5,6 +5,8 @@ import {
   UNKNOWN_WIDTH,
   MIN_COVER_HEIGHT,
   firstQualifyingImage,
+  isBadgeProxy,
+  isNonArticleImage,
   queryHotCovers,
   leadCover,
   sortHotPublications,
@@ -70,6 +72,46 @@ const svgThenRaster = firstQualifyingImage([
 ]);
 assert.equal(svgThenRaster.reason, "ok");
 assert.equal(svgThenRaster.image.url, "https://ex/photo.jpg");
+
+assert.equal(isBadgeProxy("https://img.shields.io/npm/v/@prismshadow/penguin-core"), true);
+assert.equal(isBadgeProxy("https://camo.githubusercontent.com/abc/def"), true);
+assert.equal(isNonArticleImage("https://img.shields.io/badge/license-MIT-blue.svg", 160, 20), true);
+assert.equal(isNonArticleImage("https://camo.githubusercontent.com/aa/bb", null, null), true);
+
+const shields = firstQualifyingImage([
+  { kind: "image", url: "https://img.shields.io/npm/v/@prismshadow/penguin-core", width: null, height: null },
+]);
+assert.equal(shields.image, null);
+assert.equal(shields.reason, "badge");
+
+const camoShields = firstQualifyingImage([
+  {
+    kind: "image",
+    url: "https://camo.githubusercontent.com/6d3dccb6eb734f8d94b7b90f3cc427ec926395162802eed440bc5727d3068895/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f762f40707269736d736861646f772f70656e6775696e2d636f7265",
+    width: null,
+    height: null,
+  },
+]);
+assert.equal(camoShields.image, null);
+assert.equal(camoShields.reason, "badge");
+
+const camoOnly = firstQualifyingImage([
+  {
+    kind: "image",
+    url: "https://camo.githubusercontent.com/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/bbbb",
+    width: 800,
+    height: 400,
+  },
+]);
+assert.equal(camoOnly.image, null);
+assert.equal(camoOnly.reason, "badge");
+
+const badgeThenPhoto = firstQualifyingImage([
+  { kind: "image", url: "https://img.shields.io/badge/license-MIT-blue.svg", width: 160, height: 20 },
+  { kind: "image", url: "https://ex/hero.jpg", width: 1200, height: 800 },
+]);
+assert.equal(badgeThenPhoto.reason, "ok");
+assert.equal(badgeThenPhoto.image.url, "https://ex/hero.jpg");
 
 const pubs = [
   { articleId: "c", firstParty: false, selected: true, score: 9, media: [{ kind: "image", url: "https://ex/c.jpg", width: 800 }] },
