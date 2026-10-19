@@ -110,6 +110,17 @@ function assetHref(fromPath, fileName) {
   return `${prefix}${fileName}`;
 }
 
+function faviconLinks(fromPath) {
+  const svg = assetHref(fromPath, "assets/favicon.svg");
+  const png = assetHref(fromPath, "assets/favicon.png");
+  const ico = assetHref(fromPath, "favicon.ico");
+  return [
+    `<link rel="icon" href="${svg}" type="image/svg+xml" data-ds-injected="favicon">`,
+    `<link rel="icon" href="${png}" type="image/png" sizes="32x32" data-ds-injected="favicon">`,
+    `<link rel="icon" href="${ico}" sizes="any" data-ds-injected="favicon">`,
+  ].join("");
+}
+
 function pageById(id) {
   return config.pages.find((page) => page.id === id);
 }
@@ -261,6 +272,7 @@ function stripInjected(html) {
     String(html)
       .replace(/<link[^>]*data-ds-injected="css"[^>]*>\s*/gi, "")
       .replace(/<link[^>]*data-ds-injected="skin"[^>]*>\s*/gi, "")
+      .replace(/<link[^>]*data-ds-injected="favicon"[^>]*>\s*/gi, "")
       .replace(/<style[^>]*data-ds-injected="nav-css"[^>]*>[\s\S]*?<\/style>\s*/gi, "")
       .replace(/<script[^>]*data-ds-injected="theme"[^>]*>[\s\S]*?<\/script>\s*/gi, "")
       .replace(/<aside[^>]*data-ds-injected="nav"[^>]*>[\s\S]*?<\/aside>\s*/gi, "")
@@ -296,6 +308,7 @@ export function injectHtmlFile(raw, { currentId, path, extraBody = "" }) {
   if (path === "/live/") html = curateLivePage(html, { hrefBetween, escapeHtml });
   html = injectBeforeHeadEnd(html, cssLink);
   html = injectBeforeHeadEnd(html, skinLink);
+  html = injectBeforeHeadEnd(html, faviconLinks(path));
   html = injectBeforeHeadEnd(html, THEME_BOOT);
   html = injectAfterBodyOpen(html, `${navBar({ currentId, fromPath: path })}${RAW_NAV_UI}${extraBody}`);
   return html;
@@ -318,6 +331,7 @@ function renderPage({ id, title, path, body, extraClass = "", description = conf
   <link rel="stylesheet" href="${DS_CSS}">
   <link rel="stylesheet" href="${skinHref}">
   <link rel="stylesheet" href="${cssHref}">
+  ${faviconLinks(path)}
   <style>${CHART_CSS}</style>
   <script>
     (function () {
@@ -388,13 +402,20 @@ export function rewriteMitAssetAttrs(html, prefix) {
   });
 }
 
+export function normalizeResponsiveImageAttrs(html) {
+  return String(html)
+    .replace(/\bsrcSet=/g, "srcset=")
+    .replace(/\bimageSrcSet=/g, "imagesrcset=")
+    .replace(/\bimageSizes=/g, "imagesizes=");
+}
+
 export function rewriteMitStatic(html, fromPath) {
   const prefixedPages = String(html).replace(/(href|src|action)="((?:index|hot|daily)\.html)([^"]*)"/g, (_, attr, file, suffix) => {
     const page = file.replace(/\.html$/, "");
     const dest = page === "index" ? "/" : `/${page}/`;
     return `${attr}="${hrefBetween(fromPath, dest)}${suffix}"`;
   });
-  return rewriteMitAssetAttrs(prefixedPages, mitAssetPrefix(fromPath));
+  return normalizeResponsiveImageAttrs(rewriteMitAssetAttrs(prefixedPages, mitAssetPrefix(fromPath)));
 }
 
 function publishMitStatic() {
@@ -426,10 +447,10 @@ function publishMitStatic() {
   const indexHtml = readFileSync(join(src, "index.html"), "utf8");
   const hotHtml = readFileSync(join(src, "hot.html"), "utf8");
   const dailyHtml = readFileSync(join(src, "daily.html"), "utf8");
-  writePage("/", rewriteMitStatic(indexHtml, "/"));
-  writePage("/live/", rewriteMitStatic(indexHtml, "/live/"));
-  writePage("/hot/", rewriteMitStatic(hotHtml, "/hot/"));
-  writePage("/daily/", rewriteMitStatic(dailyHtml, "/daily/"));
+  writePage("/", injectBeforeHeadEnd(rewriteMitStatic(indexHtml, "/"), faviconLinks("/")));
+  writePage("/live/", injectBeforeHeadEnd(rewriteMitStatic(indexHtml, "/live/"), faviconLinks("/live/")));
+  writePage("/hot/", injectBeforeHeadEnd(rewriteMitStatic(hotHtml, "/hot/"), faviconLinks("/hot/")));
+  writePage("/daily/", injectBeforeHeadEnd(rewriteMitStatic(dailyHtml, "/daily/"), faviconLinks("/daily/")));
 }
 
 function chipClass(status) {
@@ -525,7 +546,10 @@ function writeWeeklyIssue(issue) {
   writePage(issue.path, injected);
   const destDir = join(distDir, "weekly", issue.date);
   mkdirSync(destDir, { recursive: true });
-  cpSync(issue.htmlPath, join(destDir, "report.html"));
+  writeFileSync(
+    join(destDir, "report.html"),
+    injectBeforeHeadEnd(raw.replace(/<link[^>]*data-ds-injected="favicon"[^>]*>\s*/gi, ""), faviconLinks(issue.path)),
+  );
   if (issue.markdownPath) cpSync(issue.markdownPath, join(destDir, "report.md"));
   if (issue.timelinePath) cpSync(issue.timelinePath, join(destDir, "timeline.md"));
   if (issue.chartsDir) cpSync(issue.chartsDir, join(destDir, "charts"), { recursive: true });
@@ -740,6 +764,9 @@ export function buildSite() {
   cpSync(join(srcDir, "styles.css"), join(distDir, "styles.css"));
   cpSync(join(srcDir, "theme.js"), join(distDir, "theme.js"));
   cpSync(join(srcDir, "skin-raw.css"), join(distDir, "assets", "skin-raw.css"));
+  cpSync(join(srcDir, "favicon.svg"), join(distDir, "assets", "favicon.svg"));
+  cpSync(join(srcDir, "favicon.png"), join(distDir, "assets", "favicon.png"));
+  cpSync(join(srcDir, "favicon.ico"), join(distDir, "favicon.ico"));
   const copiedImages = copyCaseAssets(root, distDir);
   writeFileSync(join(distDir, ".nojekyll"), "");
   publishMitStatic();

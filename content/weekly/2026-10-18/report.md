@@ -36,9 +36,9 @@ graph LR
 
 ## 关键图
 
-![本周证据写入按主线：交付与 OPD 观察最多](charts/2026-10-18-evidence-by-line.png)
+![本周证据写入：交付与 OPD/RSI 观察最多；主线等级全不变](charts/2026-10-18-evidence-by-line.png)
 
-![信号表 1–4：本周候选续核，正表仍零新增](charts/2026-10-18-signal-candidates.png)
+![信号表 1–4：本周续核多篇，正表零新增；一周无翻转](charts/2026-10-18-signal-candidates.png)
 
 ![权重与产品：本周兑现 3 项，仍空 3 项（截至 2026-10-16 傍晚）](charts/2026-10-18-weights-delivery.png)
 

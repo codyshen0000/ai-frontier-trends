@@ -173,6 +173,9 @@ for (const path of paths) {
 assert(existsSync(join(distDir, "assets", "app.css")), "dist has mit-static app.css");
 assert(existsSync(join(distDir, "assets", "nameplates", "daily.svg")), "dist has daily nameplate");
 assert(existsSync(join(distDir, "data", "fixture-note.json")), "dist has fixture data");
+assert(existsSync(join(distDir, "assets", "favicon.svg")), "dist has favicon.svg");
+assert(existsSync(join(distDir, "assets", "favicon.png")), "dist has favicon.png");
+assert(existsSync(join(distDir, "favicon.ico")), "dist has favicon.ico");
 
 const leftoverHtmlHref = /(?:href|src|action)="(?:index|hot|daily)\.html/;
 const home = readFileSync(join(distDir, "index.html"), "utf8");
@@ -226,11 +229,13 @@ assert(hotPage.includes("24 小时") || hotPage.includes("24小时") || hotPage.
 const hotCoverImgs = [...hotPage.matchAll(/<img\b[^>]*>/g)].filter((m) => /assets\/covers\//.test(m[0]));
 assert(hotCoverImgs.length <= 1, `hot paints at most one cover (${hotCoverImgs.length})`);
 if (hotCoverImgs.length === 1) {
-  assert(hotCoverImgs[0][0].includes("720w") && hotCoverImgs[0][0].includes("1200w") && hotCoverImgs[0][0].includes("1600w"), "hot lead srcSet is MIT hero 720/1200/1600");
+  assert(hotCoverImgs[0][0].includes("720w") && hotCoverImgs[0][0].includes("1200w") && hotCoverImgs[0][0].includes("1600w"), "hot lead srcset is MIT hero 720/1200/1600");
   assert(/src="\.\.\/assets\/covers\//.test(hotCoverImgs[0][0]), "hot lead src is ../assets/covers");
-  assert(/srcSet="\.\.\/assets\/covers\//.test(hotCoverImgs[0][0]), "hot lead srcSet uses the same ../assets/covers prefix");
-  assert(/imageSrcSet="\.\.\/assets\/covers\//.test(hotPage), "hot preload imageSrcSet uses ../assets/covers");
-  assert(!/(?:src|srcSet|imageSrcSet)="assets\/covers\//.test(hotPage), "hot cover attrs do not keep unprefixed assets/covers");
+  assert(/\bsrcset="\.\.\/assets\/covers\//.test(hotCoverImgs[0][0]), "hot lead srcset uses the same ../assets/covers prefix");
+  assert(/\bsizes="/.test(hotCoverImgs[0][0]), "hot lead img has sizes");
+  assert(/\bimagesrcset="\.\.\/assets\/covers\//.test(hotPage), "hot preload imagesrcset uses ../assets/covers");
+  assert(/\bimagesizes="/.test(hotPage), "hot preload has imagesizes");
+  assert(!/(?:src|srcset|imagesrcset)="assets\/covers\//i.test(hotPage), "hot cover attrs do not keep unprefixed assets/covers");
   assert(/\bwidth="\d+"/.test(hotCoverImgs[0][0]) && /\bheight="\d+"/.test(hotCoverImgs[0][0]), "hot cover has width/height");
   assert(!/src="https?:\/\//.test(hotCoverImgs[0][0]), "hot cover is not a hotlink");
   const hotAlt = decodeHtmlAttr((hotCoverImgs[0][0].match(/\balt="([^"]*)"/) || [])[1] || "");
@@ -286,11 +291,13 @@ if (existsSync(emptyDailyPreview)) {
 }
 assert(dailyCoverImgs.length <= 1, `daily paints at most one headline cover (${dailyCoverImgs.length})`);
 if (dailyCoverImgs.length === 1) {
-  assert(dailyCoverImgs[0][0].includes("720w") && dailyCoverImgs[0][0].includes("1200w") && dailyCoverImgs[0][0].includes("1600w"), "daily headline srcSet is MIT hero 720/1200/1600");
+  assert(dailyCoverImgs[0][0].includes("720w") && dailyCoverImgs[0][0].includes("1200w") && dailyCoverImgs[0][0].includes("1600w"), "daily headline srcset is MIT hero 720/1200/1600");
   assert(/src="\.\.\/assets\/covers\//.test(dailyCoverImgs[0][0]), "daily headline src is ../assets/covers");
-  assert(/srcSet="\.\.\/assets\/covers\//.test(dailyCoverImgs[0][0]), "daily headline srcSet uses the same ../assets/covers prefix");
-  assert(/imageSrcSet="\.\.\/assets\/covers\//.test(dailyPage), "daily preload imageSrcSet uses ../assets/covers");
-  assert(!/(?:src|srcSet|imageSrcSet)="assets\/covers\//.test(dailyPage), "daily cover attrs do not keep unprefixed assets/covers");
+  assert(/\bsrcset="\.\.\/assets\/covers\//.test(dailyCoverImgs[0][0]), "daily headline srcset uses the same ../assets/covers prefix");
+  assert(/\bsizes="/.test(dailyCoverImgs[0][0]), "daily headline img has sizes");
+  assert(/\bimagesrcset="\.\.\/assets\/covers\//.test(dailyPage), "daily preload imagesrcset uses ../assets/covers");
+  assert(/\bimagesizes="/.test(dailyPage), "daily preload has imagesizes");
+  assert(!/(?:src|srcset|imagesrcset)="assets\/covers\//i.test(dailyPage), "daily cover attrs do not keep unprefixed assets/covers");
   assert(/\bwidth="\d+"/.test(dailyCoverImgs[0][0]) && /\bheight="\d+"/.test(dailyCoverImgs[0][0]), "daily cover has width/height");
   assert(!/src="https?:\/\//.test(dailyCoverImgs[0][0]), "daily cover is not a hotlink");
   const dailyAlt = decodeHtmlAttr((dailyCoverImgs[0][0].match(/\balt="([^"]*)"/) || [])[1] || "");
@@ -367,6 +374,17 @@ assert(existsSync(join(distDir, "weekly", "2026-10-12", "charts", "2026-10-12-ev
 assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-evidence-by-line.png")), "weekly 2026-10-18 ships chart pngs");
 assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-signal-candidates.png")), "weekly 2026-10-18 ships signal chart");
 assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-weights-delivery.png")), "weekly 2026-10-18 ships weights chart");
+{
+  const weeklyReport = readFileSync(join(root, "content", "weekly", "2026-10-18", "report.html"), "utf8");
+  const weeklyMd = readFileSync(join(root, "content", "weekly", "2026-10-18", "report.md"), "utf8");
+  assert(weeklyReport.includes('alt="本周证据写入：交付与 OPD/RSI 观察最多；主线等级全不变"'), "evidence chart alt matches the image title");
+  assert(weeklyReport.includes("<figcaption>本周证据写入：交付与 OPD/RSI 观察最多；主线等级全不变</figcaption>"), "evidence chart figcaption matches the image title");
+  assert(weeklyReport.includes('alt="信号表 1–4：本周续核多篇，正表零新增；一周无翻转"'), "signal chart alt matches the image title");
+  assert(weeklyReport.includes("<figcaption>信号表 1–4：本周续核多篇，正表零新增；一周无翻转</figcaption>"), "signal chart figcaption matches the image title");
+  assert(!weeklyReport.includes("正表仍零新增") && !weeklyMd.includes("正表仍零新增"), "weekly copy no longer says 正表仍零新增");
+  assert(weeklyMd.includes("![本周证据写入：交付与 OPD/RSI 观察最多；主线等级全不变]"), "weekly md evidence alt matches the image");
+  assert(weeklyMd.includes("![信号表 1–4：本周续核多篇，正表零新增；一周无翻转]"), "weekly md signal alt matches the image");
+}
 {
   const weightsPng = readFileSync(join(root, "content", "weekly", "2026-10-18", "charts", "2026-10-18-weights-delivery.png"));
   const weeklyHtml = readFileSync(join(root, "content", "weekly", "2026-10-18", "report.html"), "utf8");
@@ -448,6 +466,28 @@ for (const pageFile of htmlPages) {
   }
 }
 assert(missingAssets === 0, `every img src/srcset/imagesrcset on dist HTML resolves (${missingAssets} missing)`);
+
+let missingFavicons = 0;
+for (const pageFile of htmlPages) {
+  const html = readFileSync(pageFile, "utf8");
+  const relPage = relative(distDir, pageFile);
+  const icons = [...html.matchAll(/<link\b[^>]*rel="(?:icon|alternate icon|shortcut icon)"[^>]*>/gi)];
+  if (!icons.length) {
+    missingFavicons += 1;
+    console.error(`FAIL ${relPage} has no favicon link`);
+    continue;
+  }
+  for (const tag of icons) {
+    const href = (tag[0].match(/\bhref="([^"]+)"/i) || [])[1];
+    if (!href || skipRemoteOrEmpty(href)) continue;
+    const hit = resolveInDist(pageFile, href);
+    if (!hit.ok) {
+      missingFavicons += 1;
+      console.error(`FAIL favicon on ${relPage}: ${href} → ${relative(distDir, hit.resolved)}`);
+    }
+  }
+}
+assert(missingFavicons === 0, `every dist HTML page has a resolving favicon (${missingFavicons} missing)`);
 
 const expectedCoverAlts = new Set(
   coverEntries(generatedCovers)
