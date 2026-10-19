@@ -168,6 +168,27 @@ html.ft-shell[data-theme="dark"] .lead p:first-child {
   border-left-color: #d4a72c;
 }
 
+html.ft-shell[data-theme="dark"] h1,
+html.ft-shell[data-theme="dark"] h2,
+html.ft-shell[data-theme="dark"] h3,
+html.ft-shell[data-theme="dark"] h4,
+html.ft-shell[data-theme="dark"] h5,
+html.ft-shell[data-theme="dark"] h6,
+html.ft-shell[data-theme="dark"] th {
+  color: var(--ft-ink) !important;
+  background: var(--ft-sunk) !important;
+}
+
+html.ft-shell[data-theme="dark"] body,
+html.ft-shell[data-theme="dark"] p,
+html.ft-shell[data-theme="dark"] li,
+html.ft-shell[data-theme="dark"] td,
+html.ft-shell[data-theme="dark"] blockquote,
+html.ft-shell[data-theme="dark"] figcaption,
+html.ft-shell[data-theme="dark"] summary {
+  color: var(--ft-ink) !important;
+}
+
 html.no-js .ft-theme-toggle,
 html.no-js #ctl {
   display: none !important;

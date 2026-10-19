@@ -1607,6 +1607,41 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
   }
 }
 
-html.no-js .ft-theme-toggle {
+html.no-js .ft-theme-toggle,
+html.no-js #ctl,
+html.no-js .case-filters {
   display: none !important;
+}
+
+.ft-more-theme {
+  display: none;
+  align-items: center;
+  gap: 12px;
+}
+
+@media (max-width: 960px) {
+  .ft-more-theme {
+    display: flex;
+  }
+}
+
+html.ft-shell[data-theme="dark"] h1,
+html.ft-shell[data-theme="dark"] h2,
+html.ft-shell[data-theme="dark"] h3,
+html.ft-shell[data-theme="dark"] h4,
+html.ft-shell[data-theme="dark"] h5,
+html.ft-shell[data-theme="dark"] h6,
+html.ft-shell[data-theme="dark"] th {
+  color: var(--ft-ink) !important;
+  background: var(--ft-sunk) !important;
+}
+
+html.ft-shell[data-theme="dark"] body,
+html.ft-shell[data-theme="dark"] p,
+html.ft-shell[data-theme="dark"] li,
+html.ft-shell[data-theme="dark"] td,
+html.ft-shell[data-theme="dark"] blockquote,
+html.ft-shell[data-theme="dark"] figcaption,
+html.ft-shell[data-theme="dark"] summary {
+  color: var(--ft-ink) !important;
 }
