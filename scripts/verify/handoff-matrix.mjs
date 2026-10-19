@@ -40,7 +40,24 @@ const CONTRAST = `(() => {
     const f = (v) => (v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4));
     return [0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b), a];
   };
+  const paint = (v) => v && v !== "none" && v !== "transparent" && !/rgba?\(\s*0,\s*0,\s*0,\s*0/.test(v);
   const bgOf = (el) => {
+    const svgHost = el.closest?.("svg");
+    if (svgHost && (el.closest("foreignObject") || el.tagName === "text" || el.tagName === "tspan" || el.closest(".nodeLabel") || el.closest(".edgeLabel"))) {
+      const node = el.closest("g.node, g.cluster, g.edgeLabel, g.label") || el.closest("g");
+      const shape = node?.querySelector("rect, polygon, circle, ellipse, path");
+      if (shape) {
+        const fill = getComputedStyle(shape).fill;
+        if (paint(fill)) return fill;
+        const attr = shape.getAttribute("fill");
+        if (paint(attr)) return attr;
+      }
+      const plate = el.closest(".mermaid-wrap");
+      if (plate) {
+        const plateBg = getComputedStyle(plate).backgroundColor;
+        if (lum(plateBg)[1] > 0.5) return plateBg;
+      }
+    }
     let e = el;
     while (e) {
       const b = getComputedStyle(e).backgroundColor;
@@ -54,15 +71,19 @@ const CONTRAST = `(() => {
   };
   window.__ratio = (el) => {
     const cs = getComputedStyle(el);
-    const [l1] = lum(cs.color);
+    let color = cs.color;
+    if (el instanceof SVGElement || el.tagName === "text" || el.tagName === "tspan") {
+      if (paint(cs.fill)) color = cs.fill;
+    }
+    const [l1] = lum(color);
     const bg = bgOf(el);
     const [l2] = lum(bg);
     const r = (Math.max(l1, l2) + 0.05) / (Math.min(l1, l2) + 0.05);
-    return { ratio: +r.toFixed(2), color: cs.color, bg, size: cs.fontSize, weight: cs.fontWeight };
+    return { ratio: +r.toFixed(2), color, bg, size: cs.fontSize, weight: cs.fontWeight };
   };
 })()`;
 
-const HEAD_BODY = "h1,h2,h3,h4,h5,h6,p,li,td,th,blockquote,figcaption,summary,body";
+const HEAD_BODY = "h1,h2,h3,h4,h5,h6,p,li,td,th,blockquote,figcaption,summary,body,a,svg text,svg tspan,svg foreignObject,svg foreignObject *";
 const STAR = '[{"id":"x-bfl-klein","title":"t","url":"","source":"s","date":""}]';
 
 function vp(w) {
@@ -90,6 +111,12 @@ async function snap(page) {
       "|hash" +
       location.hash;
     for (let i = 0; i < s.length; i++) h = ((h * 31 + s.charCodeAt(i)) | 0);
+    const sel = [...document.querySelectorAll("[aria-pressed],[aria-current],[aria-selected],[aria-expanded]")]
+      .map((el) => [el.getAttribute("data-ft-filter") || el.id || el.tagName, el.getAttribute("aria-pressed"), el.getAttribute("aria-current"), el.getAttribute("aria-selected"), el.getAttribute("aria-expanded")].join(":"))
+      .join(";");
+    const active = document.activeElement
+      ? `${document.activeElement.tagName}:${document.activeElement.id || document.activeElement.getAttribute("name") || ""}`
+      : "";
     return {
       url: location.href,
       theme: document.documentElement.getAttribute("data-theme"),
@@ -97,6 +124,8 @@ async function snap(page) {
       dom: h,
       y: Math.round(scrollY),
       stars: localStorage.getItem("ft:starred:v1"),
+      sel,
+      active,
       nojs: document.documentElement.classList.contains("no-js"),
       js: document.documentElement.classList.contains("js"),
     };
@@ -290,18 +319,37 @@ async function clickControls(path, w, js) {
       after = { url: p.url() };
     }
     const changes = [];
-    if (after.url !== before.url) changes.push("URL");
+    let beforeU;
+    let afterU;
+    try {
+      beforeU = new URL(before.url);
+      afterU = new URL(after.url);
+    } catch {
+      beforeU = null;
+      afterU = null;
+    }
+    const samePath = !!(beforeU && afterU && beforeU.pathname === afterU.pathname);
+    const queryOnly = !!(beforeU && afterU && samePath && beforeU.search !== afterU.search && beforeU.hash === afterU.hash);
+    const hashChanged = !!(beforeU && afterU && samePath && beforeU.hash !== afterU.hash);
     if (after.theme !== before.theme || after.pref !== before.pref) changes.push("主题");
-    if (after.dom !== before.dom && after.url === before.url) changes.push("DOM");
-    if (after.y !== before.y && after.url === before.url) changes.push("滚动");
+    if (after.dom !== before.dom) changes.push("DOM");
+    if (after.y !== before.y) changes.push("滚动");
     if (after.stars !== before.stars) changes.push("收藏");
+    if (after.sel !== before.sel) changes.push("选中");
+    if (after.active !== before.active) changes.push("焦点");
     if (popup) changes.push("新标签");
+    if (after.url !== before.url) {
+      if (!samePath) changes.push("URL");
+      else if (hashChanged) changes.push("锚点");
+      else if (queryOnly && (after.dom !== before.dom || after.sel !== before.sel)) changes.push("筛选");
+    }
     const absHref = e.href ? new URL(e.href, startUrl).href : "";
     if (!popup && e.tag === "a" && /^https?:/.test(absHref) && !absHref.startsWith(BASE.replace(/\/ai-frontier-trends\/$/, ""))) {
       changes.push("外链");
     }
     const r4 = e.tag === "a" ? r4For(e.href, absHref, BASE + path, pname, e.text) : "";
-    const ok = changes.length > 0 && !r4;
+    const urlOnly = queryOnly && !changes.length;
+    const ok = changes.length > 0 && !r4 && !urlOnly;
     if (ok) clickPass += 1;
     else clickFail += 1;
     rows.push({

@@ -449,15 +449,21 @@ assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-we
     );
     assert(!/cdn\.jsdelivr\.net|import mermaid/.test(reportDist), `dist weekly ${date}/report.html has no mermaid CDN`);
     assert(/<svg[\s\S]*<\/svg>/.test(reportDist), `dist weekly ${date}/report.html inlines mermaid as SVG`);
+    assert(/class="mermaid-wrap"/.test(reportDist), `dist weekly ${date}/report.html wraps mermaid in a light plate`);
     assert(/height:\s*auto/.test(reportDist), `dist weekly ${date}/report.html keeps image height:auto`);
     assert(!/<script[^>]+src=["']https?:/i.test(reportDist), `dist weekly ${date}/report.html has no external script`);
     const weeklyOnline = readFileSync(join(distDir, "weekly", date, "index.html"), "utf8");
     assert(!/cdn\.jsdelivr\.net|import mermaid/.test(weeklyOnline), `dist weekly ${date}/index.html has no mermaid runtime`);
     assert(/<svg[\s\S]*<\/svg>/.test(weeklyOnline), `dist weekly ${date}/index.html inlines mermaid as SVG`);
+    assert(/class="mermaid-wrap"/.test(weeklyOnline), `dist weekly ${date}/index.html wraps mermaid in a light plate`);
   }
   const timelineDist = readFileSync(join(distDir, "timeline", "index.html"), "utf8");
   assert(!/cdn\.jsdelivr\.net|import mermaid/.test(timelineDist), "dist timeline has no mermaid runtime");
   assert(/<svg[\s\S]*<\/svg>/.test(timelineDist), "dist timeline inlines mermaid as SVG");
+  assert(/class="mermaid-wrap"/.test(timelineDist), "dist timeline wraps mermaid in a light plate");
+  const appCss = readFileSync(join(distDir, "assets", "app.css"), "utf8");
+  assert(/html\.no-js \[data-ft-filter-group\]/.test(appCss) || /html\.no-js \[data-ft-search\]/.test(appCss), "no-js hides filter chips and search");
+  assert(/#0058b0/.test(readFileSync(join(distDir, "styles.css"), "utf8")), "light link accent is #0058b0");
 }
 
 try {

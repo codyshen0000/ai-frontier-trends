@@ -1,5 +1,14 @@
 /* Site-specific layout on top of the shared ds.css tokens.
-   Do not fork --ds-accent. Prefix private selectors (trend-, case-, page-). */
+   Light-theme --ds-accent is deepened to #0058b0 so links hit ≥5.5:1 on #f5f5f7.
+   Prefix private selectors (trend-, case-, page-). */
+
+html.ds-page:not([data-theme="dark"]),
+html.ds-page[data-theme="light"] {
+  --ds-accent: #0058b0;
+  --ds-accent-hover: #004a96;
+  --ds-accent-active: #003e80;
+  --ds-accent-soft: rgba(0, 88, 176, 0.12);
+}
 
 /* Keep the shell reading column centered even if a later reset
    wipes body/main auto margins the way ds.css does on htmlFile pages. */
@@ -264,23 +273,23 @@ html.ft-shell main.ds-wrap {
 }
 
 .tag-confirmed {
-  color: #1b7f4a;
-  background: color-mix(in srgb, #1b7f4a 12%, var(--ds-surface-2));
+  color: #0f6b38;
+  background: color-mix(in srgb, #0f6b38 12%, var(--ds-surface-2));
 }
 
 .tag-inferred {
-  color: #9a6700;
-  background: color-mix(in srgb, #9a6700 12%, var(--ds-surface-2));
+  color: #6b4700;
+  background: color-mix(in srgb, #6b4700 12%, var(--ds-surface-2));
 }
 
 .tag-narrative {
-  color: #6e56cf;
-  background: color-mix(in srgb, #6e56cf 12%, var(--ds-surface-2));
+  color: #5b3db8;
+  background: color-mix(in srgb, #5b3db8 12%, var(--ds-surface-2));
 }
 
 .tag-unverified {
-  color: #b45309;
-  background: color-mix(in srgb, #b45309 12%, var(--ds-surface-2));
+  color: #8a3d07;
+  background: color-mix(in srgb, #8a3d07 12%, var(--ds-surface-2));
 }
 
 [data-theme="dark"] .tag-confirmed {

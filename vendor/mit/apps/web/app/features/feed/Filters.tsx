@@ -44,7 +44,11 @@ function filterKey(category: CategoryKey | null, channel: ChannelKey): string {
 /** Desktop: the filter as a row of tabs beside the search field. */
 export function CategoryTabs({ base, category, channel = "all", layoutId, className = "" }: { base: string; category: CategoryKey | null; channel?: ChannelKey; layoutId: string; className?: string }) {
   const [params] = useSearchParams();
-  return <PillTabs items={filterOptions(base, params, "全部").map(o => ({ ...o, prefetchOnPress: true }))} active={filterKey(category, channel)} layoutId={layoutId} label="筛选" className={className} />;
+  return (
+    <div data-ft-filter-group>
+      <PillTabs items={filterOptions(base, params, "全部").map(o => ({ ...o, prefetchOnPress: true }))} active={filterKey(category, channel)} layoutId={layoutId} label="筛选" className={className} />
+    </div>
+  );
 }
 
 /**

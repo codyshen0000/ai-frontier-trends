@@ -306,11 +306,15 @@ function injectAfterBodyOpen(html, snippet) {
 
 function ensureNoJsClass(html) {
   return String(html).replace(/<html\b([^>]*)>/i, (full, attrs) => {
-    if (/\bno-js\b/.test(attrs)) return full;
+    const extras = [];
+    if (!/\bno-js\b/.test(attrs)) extras.push("no-js");
+    if (!/\bds-page\b/.test(attrs)) extras.push("ds-page");
+    if (!/\bft-shell\b/.test(attrs)) extras.push("ft-shell");
+    if (!extras.length) return full;
     if (/\bclass=["']/.test(attrs)) {
-      return full.replace(/class=["']([^"']*)["']/, (m, cls) => `class="${cls} no-js"`);
+      return full.replace(/class=["']([^"']*)["']/, (_m, cls) => `class="${cls} ${extras.join(" ")}"`);
     }
-    return `<html${attrs} class="no-js">`;
+    return `<html${attrs} class="${extras.join(" ")}">`;
   });
 }
 

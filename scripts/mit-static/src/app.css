@@ -109,8 +109,8 @@
   --line: #dfe4e1;
   --line-strong: #d1d9d5;
   --line-soft: #e9ede9;
-  --accent: #176b75;
-  --accent-ink: #145f68;
+  --accent: #145f68;
+  --accent-ink: #0f4f56;
   --accent-soft: rgba(23, 107, 117, 0.08);
   --accent-softer: rgba(23, 107, 117, 0.05);
   --accent-contrast: #ffffff;
@@ -760,7 +760,15 @@
 html.no-js [data-ft-theme-choice],
 html.no-js [data-ft-star],
 html.no-js [data-ft-filters-open],
+html.no-js [data-ft-filter-group],
+html.no-js [data-ft-filter-sheet],
+html.no-js [data-pill-track][aria-label="筛选"],
+html.no-js [data-ft-search],
 html.no-js [data-ft-search="phone"],
+html.no-js form[role="search"],
+html.no-js #site-search,
+html.no-js #ft-search-q,
+html.no-js .ft-search-head,
 html.no-js [data-ft-toc],
 html.no-js [data-ft-hot-method],
 html.no-js [data-ft-top],

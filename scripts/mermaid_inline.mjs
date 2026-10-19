@@ -82,8 +82,28 @@ export function stripMermaidRuntime(html) {
     .replace(/<script[^>]+src="https?:\/\/[^"]*mermaid[^"]*"[^>]*>\s*<\/script>\s*/gi, "");
 }
 
+/** Light plate so mermaid node labels stay ≥4.5:1 in both themes. */
+export const MERMAID_WRAP_CSS =
+  ".mermaid-wrap{background:#f5f5f7;color:#1d1d1f;border-radius:12px;padding:12px 8px;overflow-x:auto}" +
+  ".mermaid-wrap svg text,.mermaid-wrap svg tspan,.mermaid-wrap svg .nodeLabel,.mermaid-wrap svg .edgeLabel," +
+  ".mermaid-wrap svg foreignObject,.mermaid-wrap svg foreignObject *{color:#1d1d1f!important;fill:#1d1d1f!important;background:transparent!important}";
+
+export function wrapMermaidSvg(svg) {
+  const markup = String(svg);
+  if (markup.includes("mermaid-wrap")) return markup;
+  return `<div class="mermaid-wrap">${markup}</div>`;
+}
+
+export function ensureMermaidWrapCss(html) {
+  const out = String(html);
+  if (out.includes(".mermaid-wrap{") || out.includes(".mermaid-wrap {")) return out;
+  if (/<\/style>/i.test(out)) return out.replace(/<\/style>/i, `${MERMAID_WRAP_CSS}</style>`);
+  if (/<\/head>/i.test(out)) return out.replace(/<\/head>/i, `<style>${MERMAID_WRAP_CSS}</style></head>`);
+  return `<style>${MERMAID_WRAP_CSS}</style>${out}`;
+}
+
 export function ensureReportImageFlex(html) {
-  let out = String(html);
+  let out = ensureMermaidWrapCss(html);
   if (!/figure\s+(?:picture\s+)?img[^}]*height\s*:\s*auto/.test(out) && !/img\{[^}]*height:\s*auto/.test(out)) {
     out = out.replace(/<\/style>/i, "figure img,figure picture img,img,svg{max-width:100%;height:auto}</style>");
   } else if (!/svg\{[^}]*height:\s*auto/.test(out)) {
@@ -98,7 +118,10 @@ export async function replaceMermaidWithSvg(html) {
   if (sources.length) {
     const svgs = renderSvgs(sources);
     let i = 0;
-    out = out.replace(/<pre class="mermaid">[\s\S]*?<\/pre>/gi, () => svgs[i++]);
+    out = out.replace(/<pre class="mermaid">[\s\S]*?<\/pre>/gi, () => wrapMermaidSvg(svgs[i++]));
   }
-  return stripMermaidRuntime(out);
+  out = out.replace(/<svg\b[^>]*(?:class="flowchart"|aria-roledescription="flowchart-v2")[^>]*>[\s\S]*?<\/svg>/gi, (svg) =>
+    wrapMermaidSvg(svg),
+  );
+  return ensureMermaidWrapCss(stripMermaidRuntime(out));
 }
