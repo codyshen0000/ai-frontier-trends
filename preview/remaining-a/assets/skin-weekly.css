@@ -168,9 +168,52 @@ html.ft-shell[data-theme="dark"] .lead p:first-child {
   border-left-color: #d4a72c;
 }
 
+html.ft-shell[data-theme="dark"] h1,
+html.ft-shell[data-theme="dark"] h2,
+html.ft-shell[data-theme="dark"] h3,
+html.ft-shell[data-theme="dark"] h4,
+html.ft-shell[data-theme="dark"] h5,
+html.ft-shell[data-theme="dark"] h6,
+html.ft-shell[data-theme="dark"] th {
+  color: var(--ft-ink) !important;
+  background: var(--ft-sunk) !important;
+}
+
+html.ft-shell[data-theme="dark"] footer,
+html.ft-shell[data-theme="dark"] body,
+html.ft-shell[data-theme="dark"] p,
+html.ft-shell[data-theme="dark"] li,
+html.ft-shell[data-theme="dark"] td,
+html.ft-shell[data-theme="dark"] blockquote,
+html.ft-shell[data-theme="dark"] figcaption,
+html.ft-shell[data-theme="dark"] summary {
+  color: var(--ft-ink) !important;
+}
+
+html.ft-shell[data-theme="dark"] svg,
+html.ft-shell[data-theme="dark"] svg * {
+  color: unset !important;
+  background: unset !important;
+}
+
 html.no-js .ft-theme-toggle,
 html.no-js #ctl {
   display: none !important;
+}
+
+.ds-skip {
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+}
+.ds-skip:focus {
+  width: auto !important;
+  height: auto !important;
+  clip: auto !important;
+  padding: 8px 12px !important;
 }
 
 .ft-sidebar,
@@ -219,7 +262,9 @@ html.no-js #ctl {
 }
 
 .ft-side-links a,
-.ft-tabbar a {
+.ft-side-links span.active,
+.ft-tabbar a,
+.ft-tabbar span.active {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -238,7 +283,9 @@ html.no-js #ctl {
 }
 
 .ft-side-links a.active,
-.ft-tabbar a.active {
+.ft-side-links span.active,
+.ft-tabbar a.active,
+.ft-tabbar span.active {
   color: var(--ft-teal) !important;
   background: var(--ft-teal-soft);
 }
@@ -260,7 +307,8 @@ html.no-js #ctl {
   color: var(--ft-muted);
 }
 
-.ft-side-editions a {
+.ft-side-editions a,
+.ft-side-editions span.active {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -277,7 +325,8 @@ html.no-js #ctl {
   background: var(--ft-sunk);
 }
 
-.ft-side-editions a.active {
+.ft-side-editions a.active,
+.ft-side-editions span.active {
   color: var(--ft-teal) !important;
   background: var(--ft-teal-soft);
 }
@@ -336,7 +385,8 @@ html.no-js #ctl {
   align-items: stretch;
 }
 
-.ft-tabbar a {
+.ft-tabbar a,
+.ft-tabbar span.active {
   flex: 1;
   flex-direction: column;
   justify-content: center;

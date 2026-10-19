@@ -304,8 +304,14 @@ th {
   margin: 28px 0 auto;
 }
 
+figcaption {
+  color: var(--ft-ink) !important;
+}
+
 .ft-side-links a,
-.ft-tabbar a {
+.ft-side-links span.active,
+.ft-tabbar a,
+.ft-tabbar span.active {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -324,7 +330,9 @@ th {
 }
 
 .ft-side-links a.active,
-.ft-tabbar a.active {
+.ft-side-links span.active,
+.ft-tabbar a.active,
+.ft-tabbar span.active {
   color: var(--ft-teal) !important;
   background: var(--ft-teal-soft);
 }
@@ -346,7 +354,8 @@ th {
   color: var(--ft-muted);
 }
 
-.ft-side-editions a {
+.ft-side-editions a,
+.ft-side-editions span.active {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -363,7 +372,8 @@ th {
   background: var(--ft-sunk);
 }
 
-.ft-side-editions a.active {
+.ft-side-editions a.active,
+.ft-side-editions span.active {
   color: var(--ft-teal) !important;
   background: var(--ft-teal-soft);
 }
@@ -422,7 +432,8 @@ th {
   align-items: stretch;
 }
 
-.ft-tabbar a {
+.ft-tabbar a,
+.ft-tabbar span.active {
   flex: 1;
   flex-direction: column;
   justify-content: center;
@@ -1607,6 +1618,62 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
   }
 }
 
-html.no-js .ft-theme-toggle {
+html.no-js .ft-theme-toggle,
+html.no-js #ctl,
+html.no-js .case-filters {
   display: none !important;
+}
+
+.ds-skip {
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+}
+.ds-skip:focus {
+  width: auto !important;
+  height: auto !important;
+  clip: auto !important;
+  padding: 8px 12px !important;
+}
+
+.ft-more-theme {
+  display: none;
+  align-items: center;
+  gap: 12px;
+}
+
+@media (max-width: 960px) {
+  .ft-more-theme {
+    display: flex;
+  }
+}
+
+html.ft-shell[data-theme="dark"] h1,
+html.ft-shell[data-theme="dark"] h2,
+html.ft-shell[data-theme="dark"] h3,
+html.ft-shell[data-theme="dark"] h4,
+html.ft-shell[data-theme="dark"] h5,
+html.ft-shell[data-theme="dark"] h6,
+html.ft-shell[data-theme="dark"] th {
+  color: var(--ft-ink) !important;
+  background: var(--ft-sunk) !important;
+}
+
+html.ft-shell[data-theme="dark"] body,
+html.ft-shell[data-theme="dark"] p,
+html.ft-shell[data-theme="dark"] li,
+html.ft-shell[data-theme="dark"] td,
+html.ft-shell[data-theme="dark"] blockquote,
+html.ft-shell[data-theme="dark"] figcaption,
+html.ft-shell[data-theme="dark"] summary {
+  color: var(--ft-ink) !important;
+}
+
+html.ft-shell[data-theme="dark"] svg,
+html.ft-shell[data-theme="dark"] svg * {
+  color: unset !important;
+  background: unset !important;
 }
