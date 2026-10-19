@@ -18,7 +18,7 @@ function withSubjectSafe(noun: string) {
   return /[A-Za-z0-9]$/.test(SITE.subject) ? `${SITE.subject} ${noun}` : `${SITE.subject}${noun}`;
 }
 
-const BOOT = `(function(){try{var t=localStorage.getItem("ft:theme");if(!t){var old=localStorage.getItem("theme");if(old==="light"||old==="dark"||old==="system"){t=old;localStorage.setItem("ft:theme",old)}}if(t!=="light"&&t!=="dark"&&t!=="system")t="system";var resolved=t==="system"?(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"):t;document.documentElement.setAttribute("data-theme",resolved);document.documentElement.setAttribute("data-ft-theme-pref",t)}catch(e){document.documentElement.setAttribute("data-theme","light")}})();`;
+const BOOT = `(function(){try{var t=localStorage.getItem("ft:theme");if(!t){var old=localStorage.getItem("theme");if(old==="light"||old==="dark"||old==="system"){t=old;localStorage.setItem("ft:theme",old)}}if(t!=="light"&&t!=="dark"&&t!=="system")t="system";var resolved=t==="system"?(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"):t;document.documentElement.setAttribute("data-theme",resolved);document.documentElement.setAttribute("data-ft-theme-pref",t);document.documentElement.classList.add("js");document.documentElement.classList.remove("no-js");}catch(e){document.documentElement.setAttribute("data-theme","light");document.documentElement.classList.add("js");document.documentElement.classList.remove("no-js");}})();`;
 
 export function renderPage(node: JSX.Element, title: string, cssHref: string, extra: {
   page: string;

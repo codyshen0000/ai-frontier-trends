@@ -21,6 +21,7 @@ import {
   weeklyIssueChrome,
 } from "./weekly.mjs";
 import { convertWeeklyCharts, embedWeeklyChartsAsDataUri, rewriteWeeklyChartEmbeds } from "./weekly_charts.mjs";
+import { ensureReportImageFlex, replaceMermaidWithSvg } from "./mermaid_inline.mjs";
 import { assertCoverRecords, assertDistPublicCopy, assertWeeklyMetaSources, assertWeeklyReports } from "./story_digest.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -299,11 +300,21 @@ function injectAfterBodyOpen(html, snippet) {
   return `${snippet}${html}`;
 }
 
+function ensureNoJsClass(html) {
+  return String(html).replace(/<html\b([^>]*)>/i, (full, attrs) => {
+    if (/\bno-js\b/.test(attrs)) return full;
+    if (/\bclass=["']/.test(attrs)) {
+      return full.replace(/class=["']([^"']*)["']/, (m, cls) => `class="${cls} no-js"`);
+    }
+    return `<html${attrs} class="no-js">`;
+  });
+}
+
 export function injectHtmlFile(raw, { currentId, path, extraBody = "", skinAsset = "assets/skin-raw.css" } = {}) {
   const skinHref = assetHref(path, skinAsset);
   const cssLink = `<link rel="stylesheet" href="${DS_CSS}" data-ds-injected="css">`;
   const skinLink = `<link rel="stylesheet" href="${skinHref}" data-ds-injected="skin">`;
-  let html = stripInjected(raw);
+  let html = ensureNoJsClass(stripInjected(raw));
   if (PAPERS.length) html = addExplainLinks(html, PAPERS, hrefBetween(path, "/papers/"));
   if (path === "/timeline/") html = ensureThreadAnchors(html);
   if (path === "/live/") html = curateLivePage(html, { hrefBetween, escapeHtml });
@@ -349,7 +360,12 @@ function renderPage({ id, title, path, body, extraClass = "", description = conf
         var resolved = t === "system" ? (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") : t;
         document.documentElement.dataset.theme = resolved;
         document.documentElement.setAttribute("data-ft-theme-pref", t);
-      } catch (e) {}
+        document.documentElement.classList.add("js");
+        document.documentElement.classList.remove("no-js");
+      } catch (e) {
+        document.documentElement.classList.add("js");
+        document.documentElement.classList.remove("no-js");
+      }
     })();
   </script>
 </head>
@@ -561,7 +577,7 @@ function assertNoLocalPaths(html, label) {
 
 async function writeWeeklyIssue(issue) {
   const charts = issue.chartsDir ? await convertWeeklyCharts(issue.chartsDir) : [];
-  const raw = rewriteWeeklyChartEmbeds(readFileSync(issue.htmlPath, "utf8"), charts);
+  const raw = await replaceMermaidWithSvg(rewriteWeeklyChartEmbeds(readFileSync(issue.htmlPath, "utf8"), charts));
   const extraBody = weeklyIssueChrome({ hrefBetween, trendSubnav, fromPath: issue.path });
   const injectOpts = { skinAsset: "assets/skin-weekly.css" };
   const injected = injectHtmlFile(raw, {
@@ -578,10 +594,15 @@ async function writeWeeklyIssue(issue) {
   writePage(issue.path, injected);
   const destDir = join(distDir, "weekly", issue.date);
   mkdirSync(destDir, { recursive: true });
+  const standalone = ensureReportImageFlex(
+    embedWeeklyChartsAsDataUri(raw.replace(/<link[^>]*data-ds-injected="favicon"[^>]*>\s*/gi, ""), charts),
+  );
   writeFileSync(
     join(destDir, "report.html"),
     injectBeforeHeadEnd(
-      embedWeeklyChartsAsDataUri(raw.replace(/<link[^>]*data-ds-injected="favicon"[^>]*>\s*/gi, ""), charts),
+      standalone.includes('classList.remove("no-js")')
+        ? standalone
+        : standalone.replace(/<head\b[^>]*>/i, (open) => `${open}<script>document.documentElement.classList.add("js");document.documentElement.classList.remove("no-js");</script>`),
       faviconLinks(issue.path),
     ),
   );
@@ -728,7 +749,7 @@ export async function buildSite() {
     }
 
     if (page.htmlFile) {
-      const raw = readFileSync(join(contentDir, page.htmlFile), "utf8");
+      const raw = await replaceMermaidWithSvg(readFileSync(join(contentDir, page.htmlFile), "utf8"));
       const extraBody = page.id === "timeline" ? timelineCharts(raw) : "";
       const injected = injectHtmlFile(raw, { currentId: page.id, path: page.path, extraBody });
       verifyRawInjection(page, raw, injected, extraBody);
