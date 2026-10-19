@@ -447,7 +447,17 @@ assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-we
       ),
       `dist weekly ${date}/report.html has no external image src`,
     );
+    assert(!/cdn\.jsdelivr\.net|import mermaid/.test(reportDist), `dist weekly ${date}/report.html has no mermaid CDN`);
+    assert(/<svg[\s\S]*<\/svg>/.test(reportDist), `dist weekly ${date}/report.html inlines mermaid as SVG`);
+    assert(/height:\s*auto/.test(reportDist), `dist weekly ${date}/report.html keeps image height:auto`);
+    assert(!/<script[^>]+src=["']https?:/i.test(reportDist), `dist weekly ${date}/report.html has no external script`);
+    const weeklyOnline = readFileSync(join(distDir, "weekly", date, "index.html"), "utf8");
+    assert(!/cdn\.jsdelivr\.net|import mermaid/.test(weeklyOnline), `dist weekly ${date}/index.html has no mermaid runtime`);
+    assert(/<svg[\s\S]*<\/svg>/.test(weeklyOnline), `dist weekly ${date}/index.html inlines mermaid as SVG`);
   }
+  const timelineDist = readFileSync(join(distDir, "timeline", "index.html"), "utf8");
+  assert(!/cdn\.jsdelivr\.net|import mermaid/.test(timelineDist), "dist timeline has no mermaid runtime");
+  assert(/<svg[\s\S]*<\/svg>/.test(timelineDist), "dist timeline inlines mermaid as SVG");
 }
 
 try {
@@ -612,6 +622,45 @@ try {
       () => assertNoRootAbsoluteUrls(tmp, { prefix: "dist/" }),
       /starred\.html[\s\S]*\/weekly\/2026-10-18\//,
       "negative: injected root-absolute in-site URL fails verify:ia",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "ia-root-xml-"));
+  try {
+    writeFileSync(join(tmp, "feed.xml"), "<rss><item><link>/weekly/2026-10-18/</link></item></rss>");
+    expectThrow(
+      () => assertNoRootAbsoluteUrls(tmp, { prefix: "dist/" }),
+      /feed\.xml[\s\S]*\/weekly\/2026-10-18\//,
+      "negative: injected RSS <link> text root-absolute fails verify:ia",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "ia-root-md-"));
+  try {
+    writeFileSync(join(tmp, "note.md"), "[x](/weekly/2026-10-18/)");
+    expectThrow(
+      () => assertNoRootAbsoluteUrls(tmp, { prefix: "dist/" }),
+      /note\.md[\s\S]*\/weekly\/2026-10-18\//,
+      "negative: injected Markdown link root-absolute fails verify:ia",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "ia-root-js-"));
+  try {
+    writeFileSync(join(tmp, "app.js"), 'fetch("/data/meta.json")');
+    expectThrow(
+      () => assertNoRootAbsoluteUrls(tmp, { prefix: "dist/" }),
+      /app\.js[\s\S]*\/data\/meta\.json/,
+      "negative: injected JS string root-absolute fails verify:ia",
     );
   } finally {
     rmSync(tmp, { recursive: true, force: true });
@@ -934,13 +983,16 @@ try {
   const apiIndex = JSON.parse(readFileSync(join(distDir, "api", "v1", "index.json"), "utf8"));
   const weeklyIndex = JSON.parse(readFileSync(join(distDir, "api", "v1", "weekly", "index.json"), "utf8"));
   const weeklyItem = JSON.parse(readFileSync(join(distDir, "api", "v1", "weekly", "2026-10-18.json"), "utf8"));
+  assert(apiIndex.path_base === "site", "api/v1/index.json documents path_base=site");
   for (const file of apiIndex.files || []) {
     assert(file.path && !String(file.path).startsWith("/"), `api/v1/index.json path is relative (${file.path})`);
+    assert(String(file.path).startsWith("api/v1/"), `api catalog path is site-base (${file.path})`);
   }
   for (const item of weeklyIndex.items || []) {
     assert(item.path && !String(item.path).startsWith("/"), `weekly/index.json item.path is relative (${item.path})`);
+    assert(String(item.path).startsWith("weekly/"), `weekly item path is site-base (${item.path})`);
   }
-  assert(weeklyItem.path && !String(weeklyItem.path).startsWith("/"), "weekly/2026-10-18.json path is relative");
+  assert(weeklyItem.path && String(weeklyItem.path).startsWith("weekly/"), "weekly/2026-10-18.json path is site-base");
 }
 
 {
@@ -949,6 +1001,21 @@ try {
   assert(href, "more page has 研究主页 · 本周主线");
   assert(href.includes("weekly/2026-10-18"), `more 本周主线 points at latest weekly (got ${href})`);
   assert(href !== "../" && href !== "./", "more 本周主线 is not the home href");
+  assert(!/原始看板[\s\S]{0,120}#board/.test(more), "more 原始看板 is not a dead #board link");
+  assert(more.includes("ft-theme-toggle"), "more page includes a theme entry");
+}
+
+{
+  let noJsBare = 0;
+  for (const file of walkHtmlFiles(distDir)) {
+    const html = readFileSync(file, "utf8");
+    if (!/\bno-js\b/.test(html)) continue;
+    if (!/classList\.remove\(["']no-js["']\)/.test(html)) {
+      noJsBare += 1;
+      console.error(`FAIL no-js without swap script in ${relative(distDir, file)}`);
+    }
+  }
+  assert(noJsBare === 0, `every dist HTML with no-js also swaps it in a head script (${noJsBare} missing)`);
 }
 
 if (failed) {
