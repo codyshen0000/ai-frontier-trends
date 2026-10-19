@@ -209,7 +209,7 @@ function weeklyApi(issue) {
     title: issue.title,
     summary: publicSummary(issue.summary, issue.title),
     issue: issue.issue,
-    path: issue.path,
+    path: publicRel(issue.path),
     url: `${SITE_URL}${issue.path}`,
   };
 }
@@ -392,11 +392,11 @@ export async function exportStatic({ distDir, contentDir, dataset = "", dataAsOf
   }
 
   const listed = [
-    { path: "/api/v1/index.json", note: "接口目录", schema_version: "1.0.0" },
-    { path: "/api/v1/meta.json", note: "站点元数据", schema_version: "1.0.0" },
-    { path: "/api/v1/weekly/index.json", note: "周报目录", schema_version: "1.0.0" },
+    { path: "index.json", note: "接口目录", schema_version: "1.0.0" },
+    { path: "meta.json", note: "站点元数据", schema_version: "1.0.0" },
+    { path: "weekly/index.json", note: "周报目录", schema_version: "1.0.0" },
     ...weeklySummaries.map((issue) => ({
-      path: `/api/v1/weekly/${issue.date}.json`,
+      path: `weekly/${issue.date}.json`,
       note: `周报 ${issue.date}`,
       schema_version: "1.0.0",
     })),
