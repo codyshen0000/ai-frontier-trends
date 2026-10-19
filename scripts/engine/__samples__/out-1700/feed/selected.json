@@ -1,0 +1,22 @@
+{
+ "feed": {
+  "id": "selected",
+  "path": "/feed.xml",
+  "title": "前沿趋势 — 精选",
+  "limit": 50,
+  "description": "最新 50 条前沿趋势精选摘要，保留标题、摘要与原文入口。"
+ },
+ "items": [
+  {
+   "guid": "sha256:931ff0f85ef4bf70",
+   "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
+   "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017：基准更好、完成任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API。The Decoder 与量子位均有报道。",
+   "originalUrl": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/",
+   "pubDate": "2026-10-17T10:33:28.000Z",
+   "sourceName": "The Decoder",
+   "category": "model",
+   "categoryLabel": "模型",
+   "eventPublicId": "2026-10-19-deepseek-v41-flash-1017"
+  }
+ ]
+}

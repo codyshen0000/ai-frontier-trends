@@ -1,0 +1,46 @@
+{
+  "synthetic": true,
+  "note": "SYNTHETIC. Hand-calc fixtures for B2-01. Not production. Not Remaining-A fixtures.",
+  "at": "2026-10-19T12:00:00.000Z",
+  "events": [
+    {
+      "publicId": "2026-10-19-synthetic-heat-fresh",
+      "title": "SYNTHETIC · heat-fresh 两家同时首报",
+      "expectedHeat": 20.0,
+      "expectedTrend": "new",
+      "expectedTrendPct": null,
+      "expectedBadges": ["new"],
+      "arithmetic": "T=12:00Z; two editorial last_at=T; raw=1+1=2; round(200)/10=20.0; first report <6h → new",
+      "participants": [
+        { "key": "lab", "name": "公开实验室", "kind": "editorial", "publishedAt": "2026-10-19T12:00:00.000Z" },
+        { "key": "notes", "name": "复现笔记", "kind": "editorial", "publishedAt": "2026-10-19T12:00:00.000Z" }
+      ]
+    },
+    {
+      "publicId": "2026-10-19-synthetic-heat-day",
+      "title": "SYNTHETIC · heat-day 两家 24h 前",
+      "expectedHeat": 10.0,
+      "expectedTrend": "down",
+      "expectedTrendPct": -16.0,
+      "expectedBadges": [],
+      "arithmetic": "two editorial last_at=T-24h; raw=0.5+0.5=1 → 10.0; T-6h hours=18, 0.5^(0.75)*2=1.189207 → 11.9; pct=(10-11.9)/11.9=-15.966 → -16.0 down",
+      "participants": [
+        { "key": "lab", "name": "公开实验室", "kind": "editorial", "publishedAt": "2026-10-18T12:00:00.000Z" },
+        { "key": "notes", "name": "复现笔记", "kind": "editorial", "publishedAt": "2026-10-18T12:00:00.000Z" }
+      ]
+    },
+    {
+      "publicId": "2026-10-19-synthetic-heat-mixed",
+      "title": "SYNTHETIC · heat-mixed 12h + 36h",
+      "expectedHeat": 10.6,
+      "expectedTrend": "down",
+      "expectedTrendPct": -15.9,
+      "expectedBadges": [],
+      "arithmetic": "editorial A T-12h: 0.5^(0.5)=0.707107; editorial B T-36h: 0.5^(1.5)=0.353553; raw=1.060660 → 10.6; T-6h: 0.840896+0.420448=1.261345 → 12.6; pct=(10.6-12.6)/12.6=-15.873 → -15.9 down",
+      "participants": [
+        { "key": "lab", "name": "公开实验室", "kind": "editorial", "publishedAt": "2026-10-19T00:00:00.000Z" },
+        { "key": "notes", "name": "复现笔记", "kind": "editorial", "publishedAt": "2026-10-18T00:00:00.000Z" }
+      ]
+    }
+  ]
+}

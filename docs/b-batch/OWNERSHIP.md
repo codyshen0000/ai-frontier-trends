@@ -17,7 +17,9 @@
 | `scripts/static_export.mjs` | **B1** | feed / api / timeline 接真实数据。B0 只留注释钩子；`writeRedirects` 从 `build.mjs` 调 |
 | `scripts/build.mjs` | **B0 已接线**；B1 把 fallback 做成真实回退 | `loadEngineForBuild()` + `writeRedirects(dist, engine)`。缺数据时 **不失败**（仍走 fixture），B1 收紧 |
 | `scripts/engine/groupByEvent.mjs` | **B2** | B0 是恒等桩；B2 改实现，不改调用点 |
+| `scripts/engine/heat.mjs` `dedupe.mjs` | **B2** | 复算校验器（不是生产热度源）+ event_id/URL 去重 |
 | `scripts/redirects.mjs` | **B2** | B0 是 no-op；B2 实现 `writeRedirects(dist, data)` |
+| `scripts/verify/b2-*.mjs` | **B2** | 热度复算 / 去重 / 跳转页；注册表按 `export function verify` 加载。`*.test.mjs` 不导出 `verify`，不会进 glob |
 | `scripts/engine/loader.mjs` `site-data.ts` | 公共（B0） | B1/B2 消费；不要各写一套类型 |
 | `scripts/verify/*.mjs` | 按文件 | **只加载 `export function verify` 的模块**。Remaining-A 独立脚本（`starred-base.mjs` 等）走 `verify:remaining`，不进 glob |
 | `scripts/verify_ia.mjs` | **B0 已接线** | 末尾 `runVerifyRegistry(ctx)`。A-4 旧断言仍留在文件里 |
@@ -33,14 +35,14 @@ B2 需要的「另 N 家」展示走数据字段（`sourceCount` / `sourceNames`
 | 生产树 | `engine-data` 分支上的 `data/engine/v1/`（内容 = 盒子 `site-data/out/`，契约 1.1） |
 | 构建读取 | `process.env.FT_ENGINE_DIR`，默认 `data/engine/v1`（相对仓库根） |
 | CI | W1 把 `engine-data` checkout 到 `FT_ENGINE_DIR`，再跑 `build:public` |
-| 本地 / QA | `FT_ENGINE_DIR=/path/to/snapshot` 指向固定快照；B0 合成样本在 `scripts/engine/__samples__/v1/`（标明 SYNTHETIC，不得当生产数据） |
+| 本地 / QA | `FT_ENGINE_DIR=/path/to/snapshot` 指向固定快照；B0 合成样本在 `scripts/engine/__samples__/v1/`（标明 SYNTHETIC，不得当生产数据）。B2 热度复算另用真实快照 `scripts/engine/__samples__/out-1700/` 和 SYNTHETIC `heat-cases/` |
 | 格式 | 只认站点契约 1.1。公开 JSON **禁止 `score` 键**。封面 class 同时接受 `official_diagram` 与 `official_explainer` |
 | 坏数据回退 | `loadEngineForBuild()` 捕获 `EngineDataError`。B1 把上一份合格导出接到这里：优先 **engine-data 的上一个提交**，否则 **Pages 上一份 artifact**。都没有且已不走 fixture → 公开构建失败，**禁止回退 fixture**。B0 阶段缺目录只 warn，继续 fixture 构建 |
 
 ## 3. phase 2 已接线的钩子
 
-1. **`scripts/build.mjs`**：`loadEngineForBuild()` + `writeRedirects(distDir, engine)`（engine 为 `null` 时 no-op 仍安全）。
-2. **`scripts/verify_ia.mjs`**：`await runVerifyRegistry({ root, distDir, engineDir })`。现有 Remaining-A 独立脚本不导出 `verify`，不会被 import。
+1. **`scripts/build.mjs`**：`loadEngineForBuild()` + `writeRedirects(distDir, engine)`（engine 为 `null` 时 no-op 仍安全）。B2 把 `writeRedirects` 从 no-op 换成真实跳转页生成。
+2. **`scripts/verify_ia.mjs`**：`await runVerifyRegistry({ root, distDir, engineDir })`。现有 Remaining-A 独立脚本不导出 `verify`，不会被 import。B2 门在无 engine 目录时 skip，有 `hot.json` 时复算误差 >0.1 失败。
 3. **`package.json`**：
    - `"test:engine": "node --test scripts/engine/"`
    - `"test:b1"` / `"test:b2"`：glob `scripts/b1` / `scripts/b2` 下 `*.test.mjs`；零文件 exit 0
@@ -48,8 +50,8 @@ B2 需要的「另 N 家」展示走数据字段（`sourceCount` / `sourceNames`
 
 ## 4. B1 接线状态
 
-- `pages.tsx` / prerender 读 `virtual:ft-engine`（B0 loader + publicize），渲染前 `groupByEvent(cards)`。
+- `pages.tsx` / prerender 读 `virtual:ft-engine`（B0 loader + publicize），渲染前 `groupByEvent(cards)`。B2 **不改** `pages.tsx`；第二参 `engine` 可选。
 - `static_export.mjs` 从 engine 写 `feed.xml` / `/api/v1/hot.json` / timeline；**不再**调用 `writeRedirects`（`build.mjs` 已调一次）。
 - `PUBLIC_DEPLOY=1` 且无合格 engine、无 last-good → 构建失败，禁止回退 fixture。
 - `scripts/verify/b1-*.mjs` 由 B0 glob 注册。
-- `scripts/engine/heat-copy.mjs` 导出 `HEAT_METHOD_COPY`（B2 应再导出，不要另写一句）。热度/涨跌/spark 按 `hot.json` 原值展示，不 `Math.round`。
+- `scripts/engine/heat-copy.mjs` 导出 `HEAT_METHOD_COPY`；B2 `heat.mjs` 再导出同一句，不另写。热度/涨跌/spark 按 `hot.json` 原值展示，不 `Math.round`。
