@@ -8,6 +8,8 @@ export const pages = [
   { file: "daily.html", title: withSubjectSafe("日报"), pathname: "/daily", node: <DailyScreen /> },
 ];
 
+export const comparePages = [];
+
 function withSubjectSafe(noun: string) {
   return /[A-Za-z0-9]$/.test(SITE.subject) ? `${SITE.subject} ${noun}` : `${SITE.subject}${noun}`;
 }
@@ -25,6 +27,16 @@ export function renderPage(node: JSX.Element, title: string, cssHref: string) {
 </head>
 <body class="bg-bg text-ink antialiased">
 ${markup}
+<script>
+document.addEventListener("error", function (event) {
+  var target = event.target;
+  if (!target || target.tagName !== "IMG") return;
+  var figure = target.closest("figure");
+  if (figure) { figure.remove(); return; }
+  var well = target.closest(".well");
+  if (well) well.remove();
+}, true);
+</script>
 </body>
 </html>
 `;

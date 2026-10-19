@@ -374,13 +374,17 @@ function mitAssetPrefix(fromPath) {
 }
 
 function rewriteMitStatic(html, fromPath) {
+  const prefix = mitAssetPrefix(fromPath);
   return html
     .replace(/(href|src|action)="((?:index|hot|daily)\.html)([^"]*)"/g, (_, attr, file, suffix) => {
       const page = file.replace(/\.html$/, "");
       const dest = page === "index" ? "/" : `/${page}/`;
       return `${attr}="${hrefBetween(fromPath, dest)}${suffix}"`;
     })
-    .replace(/(href|src)="((?:assets|data)\/[^"]*)"/g, (_, attr, path) => `${attr}="${mitAssetPrefix(fromPath)}${path}"`);
+    .replace(/(href|src|srcSet|imageSrcSet)="([^"]*)"/g, (match, attr, val) => {
+      if (!/(^|,\s*)(?:assets|data)\//.test(val)) return match;
+      return `${attr}="${val.replace(/(^|,\s*)((?:assets|data)\/)/g, `$1${prefix}$2`)}"`;
+    });
 }
 
 function publishMitStatic() {
@@ -402,6 +406,11 @@ function publishMitStatic() {
   if (existsSync(dataDir)) {
     mkdirSync(join(distDir, "data"), { recursive: true });
     cpSync(dataDir, join(distDir, "data"), { recursive: true });
+  }
+  const coversDir = join(src, "assets", "covers");
+  if (existsSync(coversDir)) {
+    mkdirSync(join(distDir, "assets", "covers"), { recursive: true });
+    cpSync(coversDir, join(distDir, "assets", "covers"), { recursive: true });
   }
 
   const indexHtml = readFileSync(join(src, "index.html"), "utf8");

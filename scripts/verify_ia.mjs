@@ -210,6 +210,13 @@ assert(hotPage.includes("AI 热点榜 · 前沿趋势") || hotPage.includes("热
 assert(hotPage.includes('href="../assets/app.css"'), "/hot/ CSS is ../assets/app.css");
 assert(hotPage.includes('href="../"') && hotPage.includes('href="../daily/"'), "/hot/ links to 精选 and /daily/");
 assert(hotPage.includes("发酵中"), "hot page keeps fixture 发酵中 chips");
+assert(hotPage.includes("48") && hotPage.includes("小时"), "hot ranking window remains 48h");
+assert(hotPage.includes("24 小时") || hotPage.includes("24小时"), "hot sparkline window is 24h");
+const hotLeadImgs = [...hotPage.matchAll(/<img\b[^>]*>/g)].filter((m) => /aspect-\[16\/9\]/.test(m[0]));
+assert(hotLeadImgs.length === 1, `hot paints exactly one lead picture (${hotLeadImgs.length})`);
+assert(hotLeadImgs[0][0].includes("720w") && hotLeadImgs[0][0].includes("1200w") && hotLeadImgs[0][0].includes("1600w"), "hot lead srcSet is MIT hero 720/1200/1600");
+assert(hotLeadImgs[0][0].includes("../assets/covers/"), "hot lead pictures are local build-time thumbs");
+assert((hotPage.match(/<img\b/g) || []).length === 1, "hot page has a single <img> (NO.01 only)");
 assert(!leftoverHtmlHref.test(hotPage), "/hot/ has no leftover .html page hrefs");
 assert(!hotPage.includes("AIHOT") && !hotPage.includes("MyHOT"), "hot page has no *HOT product brand");
 
@@ -228,6 +235,14 @@ assert(dailyPage.includes('href="../"') && dailyPage.includes('href="../hot/"'),
 assert(dailyPage.includes(">日报<") && dailyPage.includes('aria-current="page"'), "daily marks 日报 current");
 assert(!leftoverHtmlHref.test(dailyPage), "/daily/ has no leftover .html page hrefs");
 assert(!dailyPage.includes("AIHOT") && !dailyPage.includes("MyHOT"), "daily has no *HOT product brand");
+const dailyStoryImgs = [...dailyPage.matchAll(/<article\b[^>]*class="[^"]*flex min-w-0[^"]*"[^>]*>[\s\S]*?<\/article>/g)]
+  .filter((m) => /<img\b/.test(m[0]));
+assert(dailyStoryImgs.length === 0, "daily section stories have no pictures");
+const dailyImgs = [...dailyPage.matchAll(/<img\b[^>]*>/g)];
+assert(dailyImgs.length === 1, `daily paints exactly one headline picture (${dailyImgs.length})`);
+assert(dailyImgs[0][0].includes("720w") && dailyImgs[0][0].includes("1200w") && dailyImgs[0][0].includes("1600w"), "daily headline srcSet is MIT hero 720/1200/1600");
+assert(dailyImgs[0][0].includes("../assets/covers/"), "daily headline uses local build-time thumbs");
+assert(dailyImgs[0][0].includes('loading="eager"'), "daily headline is eager LCP");
 
 assert(/body\{[^}]*max-width:\s*\d+px;[^}]*margin:[^;]*auto/.test(timelineRaw), "timeline source keeps a centered reading column");
 assert(/main\{[^}]*max-width:\s*\d+px;[^}]*margin:[^;]*auto/.test(liveRaw), "live source keeps a centered main column");

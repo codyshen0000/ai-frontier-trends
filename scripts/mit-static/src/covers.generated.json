@@ -1,0 +1,981 @@
+{
+  "sparkHours": 24,
+  "rankWindowHours": 48,
+  "asOf": "2026-10-18T00:20:00.000Z",
+  "day": "2026-10-16",
+  "sharp": true,
+  "hotEntries": [
+    {
+      "rank": 1,
+      "itemId": "flux-3-image-klein",
+      "storyPublicId": "st-flux-3-image-klein",
+      "title": "BFL FLUX 3 Image Klein：开源权重落地（5.6B）",
+      "summary": "单消费级 GPU、原生 4K、bbox 编辑。与已报 FLUX 3 Video 定价分开。HF black-forest-labs/flux-3-image-klein。权重跟踪：Klein 记交付；完整非-Klein FLUX 3 Image 仍非本批。六件套其余仍空。",
+      "latest": null,
+      "sourceCount": 3,
+      "sourceNames": [
+        "BFL",
+        "Hugging Face"
+      ],
+      "firstParty": true,
+      "selected": true,
+      "representativeItemId": "flux-3-image-klein::0::bfl.ai",
+      "coverReason": "ok",
+      "coverArticleId": "flux-3-image-klein::0::bfl.ai",
+      "coverOriginal": {
+        "url": "https://cdn.sanity.io/images/2gpum2i6/production/eada5ee663c5523ab6d43c858baaf037867d324e-2000x1344.webp",
+        "width": 2000,
+        "height": 1344
+      },
+      "coverOurs": {
+        "url": "assets/covers/hot-flux-3-image-klein-1600.webp",
+        "srcSet": "assets/covers/hot-flux-3-image-klein-720.webp 720w, assets/covers/hot-flux-3-image-klein-1200.webp 1200w, assets/covers/hot-flux-3-image-klein-1600.webp 1600w",
+        "width": 1600,
+        "height": 1075
+      },
+      "pickLog": [
+        {
+          "articleId": "flux-3-image-klein::0::bfl.ai",
+          "url": "https://bfl.ai/blog/flux-3-image-klein",
+          "bodyMode": "full",
+          "listed": true,
+          "firstParty": true,
+          "selected": true,
+          "score": 0,
+          "representative": true,
+          "isLead": false,
+          "reason": "ok",
+          "image": {
+            "url": "https://cdn.sanity.io/images/2gpum2i6/production/eada5ee663c5523ab6d43c858baaf037867d324e-2000x1344.webp",
+            "width": 2000,
+            "height": 1344
+          }
+        }
+      ],
+      "heat": 333,
+      "trend": "down",
+      "trendPct": 11,
+      "badges": [
+        "rising"
+      ],
+      "participantCount": 47,
+      "participants": [
+        {
+          "name": "BFL",
+          "kind": "editorial"
+        },
+        {
+          "name": "Hugging Face",
+          "kind": "signal"
+        },
+        {
+          "name": "X",
+          "kind": "signal"
+        }
+      ],
+      "spark": [
+        60,
+        67,
+        73,
+        93,
+        117,
+        133,
+        160,
+        183,
+        206,
+        233,
+        260,
+        293,
+        316,
+        333,
+        306,
+        300,
+        293,
+        283,
+        286,
+        300,
+        313,
+        323,
+        330,
+        333
+      ]
+    },
+    {
+      "rank": 2,
+      "itemId": "openui-1.0",
+      "storyPublicId": "st-openui-1.0",
+      "title": "OpenUI 1.0：Agent 交互界面框架",
+      "summary": "开源协议/运行时：agent 用 schema + OpenUI Lang 组合地图、表单、图表、按钮；支持 React/Vue/Svelte/Angular。仓库 thesysdev/openui（★约 11203）+ openui.com。午间 Agent 栏空、傍晚放大。Agent 工具进产品和工具栏，不碰训练配方。",
+      "latest": null,
+      "sourceCount": 3,
+      "sourceNames": [
+        "GitHub",
+        "openui"
+      ],
+      "firstParty": false,
+      "selected": false,
+      "representativeItemId": "openui-1.0::0::github.com",
+      "coverReason": "ok_unknown_width_as_800",
+      "coverArticleId": "openui-1.0::0::github.com",
+      "coverOriginal": {
+        "url": "https://github.com/thesysdev/openui/raw/main/assets/banner.png",
+        "width": null,
+        "height": null
+      },
+      "coverOurs": null,
+      "pickLog": [
+        {
+          "articleId": "openui-1.0::0::github.com",
+          "url": "https://github.com/thesysdev/openui",
+          "bodyMode": "full",
+          "listed": true,
+          "firstParty": false,
+          "selected": false,
+          "score": 0,
+          "representative": true,
+          "isLead": false,
+          "reason": "ok_unknown_width_as_800",
+          "image": {
+            "url": "https://github.com/thesysdev/openui/raw/main/assets/banner.png",
+            "width": null,
+            "height": null
+          }
+        }
+      ],
+      "heat": 150,
+      "trend": "down",
+      "trendPct": 29,
+      "badges": [],
+      "participantCount": 39,
+      "participants": [
+        {
+          "name": "GitHub",
+          "kind": "editorial"
+        },
+        {
+          "name": "openui",
+          "kind": "signal"
+        },
+        {
+          "name": "X",
+          "kind": "signal"
+        }
+      ],
+      "spark": [
+        27,
+        30,
+        33,
+        42,
+        53,
+        60,
+        72,
+        83,
+        93,
+        105,
+        117,
+        132,
+        143,
+        150,
+        138,
+        135,
+        132,
+        128,
+        129,
+        135,
+        141,
+        146,
+        149,
+        150
+      ]
+    },
+    {
+      "rank": 3,
+      "itemId": "jev-1-14-preview",
+      "storyPublicId": "st-jev-1-14-preview",
+      "title": "Jev 1.14 预览：实验性图像 / box / 长上下文",
+      "summary": "TypeSafe 托管 Jev 上 jev-preview（约一周后切 jev-latest）。多语微调；图像、box 框、长上下文需 danger-zone 头。独立评测口径：MMLU-Redux 95.0 / ARC-C 97.6 表内最高；MathQA 相对 frontier 中位约 −17.7。产品用法：路由/审核/置信度门控；不当推理机。不进信号表 1–4。",
+      "latest": null,
+      "sourceCount": 3,
+      "sourceNames": [
+        "typesafe",
+        "X"
+      ],
+      "firstParty": true,
+      "selected": false,
+      "representativeItemId": "jev-1-14-preview::0::typesafe.ai",
+      "coverReason": "ok",
+      "coverArticleId": "jev-1-14-preview::0::typesafe.ai",
+      "coverOriginal": {
+        "url": "https://framerusercontent.com/images/9xWPxly4HZ7S43IpAEGS2VOFM.png?width=1528&height=1078",
+        "width": 764,
+        "height": 539
+      },
+      "coverOurs": null,
+      "pickLog": [
+        {
+          "articleId": "jev-1-14-preview::0::typesafe.ai",
+          "url": "https://typesafe.ai/blog/jev-1-14",
+          "bodyMode": "full",
+          "listed": true,
+          "firstParty": true,
+          "selected": false,
+          "score": 0,
+          "representative": true,
+          "isLead": false,
+          "reason": "ok",
+          "image": {
+            "url": "https://framerusercontent.com/images/9xWPxly4HZ7S43IpAEGS2VOFM.png?width=1528&height=1078",
+            "width": 764,
+            "height": 539
+          }
+        }
+      ],
+      "heat": 86,
+      "trend": "up",
+      "trendPct": 11,
+      "badges": [],
+      "participantCount": 17,
+      "participants": [
+        {
+          "name": "typesafe",
+          "kind": "editorial"
+        },
+        {
+          "name": "X",
+          "kind": "signal"
+        },
+        {
+          "name": "arXiv",
+          "kind": "signal"
+        }
+      ],
+      "spark": [
+        15,
+        17,
+        19,
+        24,
+        30,
+        34,
+        41,
+        47,
+        53,
+        60,
+        67,
+        76,
+        82,
+        86,
+        79,
+        77,
+        76,
+        73,
+        74,
+        77,
+        81,
+        83,
+        85,
+        86
+      ]
+    },
+    {
+      "rank": 4,
+      "itemId": "jev-35b",
+      "storyPublicId": "st-jev-35b",
+      "title": "JEV-35B：单次前向结构化决策头",
+      "summary": "基于 Qwen3.5-35B-A3B 的开源决策头（Apache-2.0）；约 35B 总参 / 3B 激活。定位与托管 Jev 同族：单次前向结构化决策，不做逐 token 生成。自报 Decision Index 0.3=59.73【未进官方榜】。属开源决策头，非统一理解+生成，不进训练方法主线。",
+      "latest": null,
+      "sourceCount": 3,
+      "sourceNames": [
+        "Hugging Face",
+        "ModelScope"
+      ],
+      "firstParty": false,
+      "selected": false,
+      "representativeItemId": "jev-35b::0::huggingface.co",
+      "coverReason": "ok_unknown_width_as_800",
+      "coverArticleId": "jev-35b::0::huggingface.co",
+      "coverOriginal": {
+        "url": "https://huggingface.co/autotrust/JEV-27B/resolve/main/assets/autotrust_gurusearch_demo.png",
+        "width": null,
+        "height": null
+      },
+      "coverOurs": null,
+      "pickLog": [
+        {
+          "articleId": "jev-35b::0::huggingface.co",
+          "url": "https://huggingface.co/autotrust/JEV-35B",
+          "bodyMode": "full",
+          "listed": true,
+          "firstParty": false,
+          "selected": false,
+          "score": 0,
+          "representative": true,
+          "isLead": false,
+          "reason": "ok_unknown_width_as_800",
+          "image": {
+            "url": "https://huggingface.co/autotrust/JEV-27B/resolve/main/assets/autotrust_gurusearch_demo.png",
+            "width": null,
+            "height": null
+          }
+        }
+      ],
+      "heat": 80,
+      "trend": "up",
+      "trendPct": 709,
+      "badges": [],
+      "participantCount": 14,
+      "participants": [
+        {
+          "name": "Hugging Face",
+          "kind": "editorial"
+        },
+        {
+          "name": "ModelScope",
+          "kind": "signal"
+        },
+        {
+          "name": "小红书",
+          "kind": "signal"
+        }
+      ],
+      "spark": [
+        14,
+        16,
+        18,
+        22,
+        28,
+        32,
+        38,
+        44,
+        50,
+        56,
+        62,
+        70,
+        76,
+        80,
+        74,
+        72,
+        70,
+        68,
+        69,
+        72,
+        75,
+        78,
+        79,
+        80
+      ]
+    },
+    {
+      "rank": 5,
+      "itemId": "llamafactory-rsi",
+      "storyPublicId": "st-llamafactory-rsi",
+      "title": "LlamaFactory RSI：PenguinHarness / awesome-rsi / GDPevo（观察）",
+      "summary": "@code_hiyouga 称 GitHub 过 70k★ 后做「LlamaFactory of recursive self-improvement」。三件：主仓 PenguinHarness（Prism-Shadow/penguin-harness，★2669；README：model 固定、演进 harness，OPRO/APE/ACE/AWM + snapshot）、awesome-rsi（★740）、企业评测 GDPevo（★85）。无 WM 内 RL 留存训权重 → 挂 RSI/harness 观察、不进信号表 4、不升档（趋势分析已定性）。",
+      "latest": null,
+      "sourceCount": 2,
+      "sourceNames": [
+        "GitHub",
+        "X"
+      ],
+      "firstParty": false,
+      "selected": true,
+      "representativeItemId": "llamafactory-rsi::0::github.com",
+      "coverReason": "ok",
+      "coverArticleId": "llamafactory-rsi::1::x.com",
+      "coverOriginal": {
+        "url": "https://pbs.twimg.com/media/HUvWAY_bEAAiOQj.jpg?name=orig",
+        "width": 2934,
+        "height": 1966
+      },
+      "coverOurs": null,
+      "pickLog": [
+        {
+          "articleId": "llamafactory-rsi::0::github.com",
+          "url": "https://github.com/Prism-Shadow/penguin-harness",
+          "bodyMode": "full",
+          "listed": true,
+          "firstParty": false,
+          "selected": true,
+          "score": 0,
+          "representative": true,
+          "isLead": false,
+          "reason": "svg",
+          "image": null
+        },
+        {
+          "articleId": "llamafactory-rsi::1::x.com",
+          "url": "https://x.com/code_hiyouga/status/2111016204785922481",
+          "bodyMode": "full",
+          "listed": true,
+          "firstParty": false,
+          "selected": false,
+          "score": 0,
+          "representative": false,
+          "isLead": false,
+          "reason": "ok",
+          "image": {
+            "url": "https://pbs.twimg.com/media/HUvWAY_bEAAiOQj.jpg?name=orig",
+            "width": 2934,
+            "height": 1966
+          }
+        }
+      ],
+      "heat": 74,
+      "trend": "down",
+      "trendPct": 16,
+      "badges": [],
+      "participantCount": 11,
+      "participants": [
+        {
+          "name": "GitHub",
+          "kind": "editorial"
+        },
+        {
+          "name": "X",
+          "kind": "signal"
+        }
+      ],
+      "spark": [
+        13,
+        15,
+        16,
+        21,
+        26,
+        30,
+        36,
+        41,
+        46,
+        52,
+        58,
+        65,
+        70,
+        74,
+        68,
+        67,
+        65,
+        63,
+        64,
+        67,
+        70,
+        72,
+        73,
+        74
+      ]
+    },
+    {
+      "rank": 6,
+      "itemId": "pr-opd",
+      "storyPublicId": "st-pr-opd",
+      "title": "PR-OPD：事后技能对齐隐藏状态",
+      "summary": "先 GRPO，再让策略写事后技能，并对齐各层隐状态（非词概率）。Qwen2.5-3B 相对 GRPO：ALFWorld All +4.7pp（66.4→71.1），WebShop Acc +11.7pp（55.5→67.2）【证实，表 1】；技能在场时 WebShop 42.2%→56.2%，改动的采样 token 概率不足四分之一、隐状态改动超过八成【证实，作者自报】。挂主线 1–2 OPD 观察，加固适用条件，不升档。",
+      "latest": null,
+      "sourceCount": 2,
+      "sourceNames": [
+        "arXiv",
+        "小红书"
+      ],
+      "firstParty": false,
+      "selected": true,
+      "representativeItemId": "pr-opd::0::arxiv.org",
+      "coverReason": "ok",
+      "coverArticleId": "pr-opd::0::arxiv.org",
+      "coverOriginal": {
+        "url": "https://arxiv.org/html/2609.36642v1/PROPD_final.png",
+        "width": 543,
+        "height": 269
+      },
+      "coverOurs": null,
+      "pickLog": [
+        {
+          "articleId": "pr-opd::0::arxiv.org",
+          "url": "https://arxiv.org/abs/2609.36642",
+          "bodyMode": "full",
+          "listed": true,
+          "firstParty": false,
+          "selected": true,
+          "score": 0,
+          "representative": true,
+          "isLead": false,
+          "reason": "ok",
+          "image": {
+            "url": "https://arxiv.org/html/2609.36642v1/PROPD_final.png",
+            "width": 543,
+            "height": 269
+          }
+        }
+      ],
+      "heat": 71,
+      "trend": "up",
+      "trendPct": 8,
+      "badges": [],
+      "participantCount": 9,
+      "participants": [
+        {
+          "name": "arXiv",
+          "kind": "editorial"
+        },
+        {
+          "name": "小红书",
+          "kind": "signal"
+        }
+      ],
+      "spark": [
+        13,
+        14,
+        16,
+        20,
+        25,
+        28,
+        34,
+        39,
+        44,
+        50,
+        55,
+        62,
+        67,
+        71,
+        65,
+        64,
+        62,
+        60,
+        61,
+        64,
+        67,
+        69,
+        70,
+        71
+      ]
+    },
+    {
+      "rank": 7,
+      "itemId": "terminal-rsi",
+      "storyPublicId": "st-terminal-rsi",
+      "title": "Terminal-RSI：终端 agent 递归改写 + 策略精炼（观察）",
+      "summary": "交替 RSR（自改写）与 RPR（策略精炼），RPR 更新策略权重；Qwen3.8-27B 底座。作者称四套终端基准宏均 50.58%（较底座 +29.90pp）；TB2.1 86.52% / Hard 79%【作者自报】。环境是终端沙箱+保护校验器，不是 learned WM 内 RL → 挂 RSI/harness 观察、不进信号表 4、不升档（趋势分析已定性）。",
+      "latest": null,
+      "sourceCount": 2,
+      "sourceNames": [
+        "arXiv",
+        "X"
+      ],
+      "firstParty": false,
+      "selected": true,
+      "representativeItemId": "terminal-rsi::0::arxiv.org",
+      "coverReason": "ok",
+      "coverArticleId": "terminal-rsi::1::x.com",
+      "coverOriginal": {
+        "url": "https://pbs.twimg.com/media/HUuEgnGaIAApXW-.jpg?name=orig",
+        "width": 1428,
+        "height": 1973
+      },
+      "coverOurs": null,
+      "pickLog": [
+        {
+          "articleId": "terminal-rsi::0::arxiv.org",
+          "url": "https://arxiv.org/abs/2610.22192",
+          "bodyMode": "full",
+          "listed": true,
+          "firstParty": false,
+          "selected": true,
+          "score": 0,
+          "representative": true,
+          "isLead": false,
+          "reason": "below_240",
+          "image": null
+        },
+        {
+          "articleId": "terminal-rsi::1::x.com",
+          "url": "https://x.com/Yucheng__Shi/status/2110926888319517119",
+          "bodyMode": "full",
+          "listed": true,
+          "firstParty": false,
+          "selected": false,
+          "score": 0,
+          "representative": false,
+          "isLead": false,
+          "reason": "ok",
+          "image": {
+            "url": "https://pbs.twimg.com/media/HUuEgnGaIAApXW-.jpg?name=orig",
+            "width": 1428,
+            "height": 1973
+          }
+        }
+      ],
+      "heat": 64,
+      "trend": "flat",
+      "trendPct": null,
+      "badges": [],
+      "participantCount": 8,
+      "participants": [
+        {
+          "name": "arXiv",
+          "kind": "editorial"
+        },
+        {
+          "name": "X",
+          "kind": "signal"
+        }
+      ],
+      "spark": [
+        12,
+        13,
+        14,
+        18,
+        22,
+        26,
+        31,
+        35,
+        40,
+        45,
+        50,
+        56,
+        61,
+        64,
+        59,
+        58,
+        56,
+        54,
+        55,
+        58,
+        60,
+        62,
+        63,
+        64
+      ]
+    },
+    {
+      "rank": 8,
+      "itemId": "jevany",
+      "storyPublicId": "st-jevany",
+      "title": "JevAny：任意骨干 → typed 决策头 / LoRA",
+      "summary": "把任意骨干训成 typed 决策头。与 JEV-35B 同属开源仿制/迁移路线。研究侧可当决策头数据源候选【推断】；日常降为简讯，不进训练方法主线。",
+      "latest": null,
+      "sourceCount": 2,
+      "sourceNames": [
+        "jevland.mnimiy",
+        "小红书"
+      ],
+      "firstParty": false,
+      "selected": false,
+      "representativeItemId": "jevany::0::jevland.mnimiy.com",
+      "coverReason": "svg",
+      "coverArticleId": null,
+      "coverOriginal": null,
+      "coverOurs": null,
+      "pickLog": [
+        {
+          "articleId": "jevany::0::jevland.mnimiy.com",
+          "url": "https://jevland.mnimiy.com/projects/jevany/",
+          "bodyMode": "full",
+          "listed": true,
+          "firstParty": false,
+          "selected": false,
+          "score": 0,
+          "representative": true,
+          "isLead": false,
+          "reason": "no_image",
+          "image": null
+        },
+        {
+          "articleId": "jevany::1::xiaohongshu.com",
+          "url": "https://www.xiaohongshu.com/explore/6ac0bb1c000000001901f5be",
+          "bodyMode": "full",
+          "listed": true,
+          "firstParty": false,
+          "selected": false,
+          "score": 0,
+          "representative": false,
+          "isLead": false,
+          "reason": "svg",
+          "image": null
+        }
+      ],
+      "heat": 58,
+      "trend": "down",
+      "trendPct": 4,
+      "badges": [],
+      "participantCount": 6,
+      "participants": [
+        {
+          "name": "jevland.mnimiy",
+          "kind": "editorial"
+        },
+        {
+          "name": "小红书",
+          "kind": "signal"
+        }
+      ],
+      "spark": [
+        10,
+        12,
+        13,
+        16,
+        20,
+        23,
+        28,
+        32,
+        36,
+        41,
+        45,
+        51,
+        55,
+        58,
+        53,
+        52,
+        51,
+        49,
+        50,
+        52,
+        55,
+        56,
+        57,
+        58
+      ]
+    },
+    {
+      "rank": 9,
+      "itemId": "agent-reflex",
+      "storyPublicId": "st-agent-reflex",
+      "title": "Agent-Reflex：把反思训成元技能并接 OPD",
+      "summary": "RSD→ReSFT→ORPO；称 8B 在 τ²-Bench 等与 AgentNoiseBench 上超对照。代码/模型/数据称已开源，正文无仓库地址。Agent 工具进产品和工具栏，不进训练配方时间线。",
+      "latest": null,
+      "sourceCount": 1,
+      "sourceNames": [
+        "小红书"
+      ],
+      "firstParty": false,
+      "selected": true,
+      "representativeItemId": "agent-reflex::0::xiaohongshu.com",
+      "coverReason": "svg",
+      "coverArticleId": null,
+      "coverOriginal": null,
+      "coverOurs": null,
+      "pickLog": [
+        {
+          "articleId": "agent-reflex::0::xiaohongshu.com",
+          "url": "https://www.xiaohongshu.com/explore/6ad176eb000000000a023985",
+          "bodyMode": "full",
+          "listed": true,
+          "firstParty": false,
+          "selected": true,
+          "score": 0,
+          "representative": true,
+          "isLead": false,
+          "reason": "svg",
+          "image": null
+        }
+      ],
+      "heat": 52,
+      "trend": "up",
+      "trendPct": 6,
+      "badges": [],
+      "participantCount": 7,
+      "participants": [
+        {
+          "name": "小红书",
+          "kind": "editorial"
+        }
+      ],
+      "spark": [
+        9,
+        10,
+        11,
+        15,
+        18,
+        21,
+        25,
+        29,
+        32,
+        36,
+        41,
+        46,
+        49,
+        52,
+        48,
+        47,
+        46,
+        44,
+        45,
+        47,
+        49,
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "rank": 10,
+      "itemId": "kling-4-0-ga",
+      "storyPublicId": "st-kling-4-0-ga",
+      "title": "Kling 4.0：产品全量上线（非开源权重）",
+      "summary": "新 UI + MCP/CLI；官方 release history 标 2026-10-15 Major。HDR 4K/API 将至。产品全量，非 OSS 权重。",
+      "latest": null,
+      "sourceCount": 1,
+      "sourceNames": [
+        "X"
+      ],
+      "firstParty": true,
+      "selected": true,
+      "representativeItemId": "kling-4-0-ga::0::x.com",
+      "coverReason": "ok",
+      "coverArticleId": "kling-4-0-ga::0::x.com",
+      "coverOriginal": {
+        "url": "https://pbs.twimg.com/media/HUrcseNbQAAYZiF.jpg?name=orig",
+        "width": 1600,
+        "height": 2000
+      },
+      "coverOurs": null,
+      "pickLog": [
+        {
+          "articleId": "kling-4-0-ga::0::x.com",
+          "url": "https://x.com/Kling_ai/status/2110747537187709424",
+          "bodyMode": "full",
+          "listed": true,
+          "firstParty": true,
+          "selected": true,
+          "score": 0,
+          "representative": true,
+          "isLead": false,
+          "reason": "ok",
+          "image": {
+            "url": "https://pbs.twimg.com/media/HUrcseNbQAAYZiF.jpg?name=orig",
+            "width": 1600,
+            "height": 2000
+          }
+        }
+      ],
+      "heat": 48,
+      "trend": "flat",
+      "trendPct": null,
+      "badges": [],
+      "participantCount": 5,
+      "participants": [
+        {
+          "name": "X",
+          "kind": "editorial"
+        }
+      ],
+      "spark": [
+        9,
+        10,
+        11,
+        13,
+        17,
+        19,
+        23,
+        26,
+        30,
+        34,
+        37,
+        42,
+        46,
+        48,
+        44,
+        43,
+        42,
+        41,
+        41,
+        43,
+        45,
+        47,
+        48,
+        48
+      ]
+    }
+  ],
+  "daily": {
+    "itemId": "flux-3-image-klein",
+    "title": "BFL FLUX 3 Image Klein：开源权重落地（5.6B）",
+    "leadParagraph": "单消费级 GPU、原生 4K、bbox 编辑。与已报 FLUX 3 Video 定价分开。HF black-forest-labs/flux-3-image-klein。权重跟踪：Klein 记交付；完整非-Klein FLUX 3 Image 仍非本批。六件套其余仍空。",
+    "sourceName": "BFL",
+    "sourceUrl": "https://bfl.ai/blog/flux-3-image-klein",
+    "firstParty": true,
+    "publishedAt": "2026-10-16T00:00:00.000Z",
+    "otherSources": 2,
+    "coverReason": "ok",
+    "coverArticleId": "flux-3-image-klein::0::bfl.ai",
+    "coverOriginal": {
+      "url": "https://cdn.sanity.io/images/2gpum2i6/production/eada5ee663c5523ab6d43c858baaf037867d324e-2000x1344.webp",
+      "width": 2000,
+      "height": 1344
+    },
+    "coverOurs": {
+      "url": "assets/covers/hot-flux-3-image-klein-1600.webp",
+      "srcSet": "assets/covers/hot-flux-3-image-klein-720.webp 720w, assets/covers/hot-flux-3-image-klein-1200.webp 1200w, assets/covers/hot-flux-3-image-klein-1600.webp 1600w",
+      "width": 1600,
+      "height": 1075
+    },
+    "pickLog": [
+      {
+        "articleId": "flux-3-image-klein::0::bfl.ai",
+        "url": "https://bfl.ai/blog/flux-3-image-klein",
+        "bodyMode": "full",
+        "listed": true,
+        "firstParty": true,
+        "selected": true,
+        "score": 0,
+        "representative": false,
+        "isLead": true,
+        "reason": "ok",
+        "image": {
+          "url": "https://cdn.sanity.io/images/2gpum2i6/production/eada5ee663c5523ab6d43c858baaf037867d324e-2000x1344.webp",
+          "width": 2000,
+          "height": 1344
+        }
+      }
+    ]
+  },
+  "renditions": {
+    "hot-flux-3-image-klein": {
+      "fallback": "none",
+      "bytes": 350504,
+      "actualWidth": 2000,
+      "actualHeight": 1344,
+      "files": [
+        {
+          "mode": "thumb",
+          "width": 720,
+          "webp": "assets/covers/hot-flux-3-image-klein-720.webp",
+          "bytes": 57898
+        },
+        {
+          "mode": "image-1200",
+          "width": 1200,
+          "webp": "assets/covers/hot-flux-3-image-klein-1200.webp",
+          "bytes": 121382
+        },
+        {
+          "mode": "full",
+          "width": 1600,
+          "webp": "assets/covers/hot-flux-3-image-klein-1600.webp",
+          "bytes": 171224
+        }
+      ]
+    },
+    "daily-flux-3-image-klein": {
+      "fallback": "none",
+      "bytes": 350504,
+      "actualWidth": 2000,
+      "actualHeight": 1344,
+      "files": [
+        {
+          "mode": "thumb",
+          "width": 720,
+          "webp": "assets/covers/hot-flux-3-image-klein-720.webp",
+          "bytes": 57898
+        },
+        {
+          "mode": "image-1200",
+          "width": 1200,
+          "webp": "assets/covers/hot-flux-3-image-klein-1200.webp",
+          "bytes": 121382
+        },
+        {
+          "mode": "full",
+          "width": 1600,
+          "webp": "assets/covers/hot-flux-3-image-klein-1600.webp",
+          "bytes": 171224
+        }
+      ]
+    }
+  }
+}

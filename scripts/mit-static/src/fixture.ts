@@ -3,11 +3,14 @@ import type {
   HotEntryView,
   HotResponse,
   HotStripEntry,
+  ReportCitation,
   ReportDetail,
   ReportNavigationEntry,
   TimelineCard,
   TimelineResponse,
 } from "@aihot/contracts/site";
+import { RANK_WINDOW_HOURS } from "./constants";
+import generated from "./covers.generated.json";
 
 function spark(peak: number, shape: number[]): Array<number | null> {
   const max = Math.max(...shape, 1);
@@ -107,7 +110,39 @@ export const cards: TimelineCard[] = [
 const faces = (names: string[]): HotStripEntry["participants"] =>
   names.map((name, i) => ({ name, kind: i === 0 ? "editorial" : "signal" as const }));
 
-export const hotStrip: HotStripEntry[] = [
+function pictureOf(
+  row: { coverOurs?: { url: string; srcSet?: string; width: number | null; height: number | null } | null },
+) {
+  const pic = row.coverOurs;
+  if (!pic?.url) return null;
+  return { url: pic.url, srcSet: pic.srcSet, width: pic.width ?? null, height: pic.height ?? null };
+}
+
+function generatedHot(): HotResponse {
+  const rows = generated.hotEntries ?? [];
+  return {
+    computedAt: generated.asOf,
+    windowHours: RANK_WINDOW_HOURS,
+    entries: rows.map((row) => ({
+      rank: row.rank,
+      story: { publicId: row.storyPublicId, title: row.title },
+      heat: row.heat,
+      trend: row.trend as HotEntryView["trend"],
+      trendPct: row.trendPct,
+      badges: row.badges as HotEntryView["badges"],
+      participantCount: row.participantCount,
+      sourceCount: row.sourceCount,
+      sourceNames: row.sourceNames,
+      participants: row.participants as HotEntryView["participants"],
+      spark: row.spark,
+      summary: row.summary,
+      latest: row.latest,
+      cover: row.rank === 1 ? pictureOf(row) : null,
+    })),
+  };
+}
+
+const fixtureHotStrip: HotStripEntry[] = [
   { rank: 1, title: "开源模型侧发布 Flash 变体并开放检索 API", heat: 333, trend: "up", storyPublicId: "st-flash", itemId: "flash-api", participants: faces(["数字前沿", "DeepSeek", "评测组", "X 观察"]), participantCount: 47 },
   { rank: 2, title: "超大参数多模态模型开源，社区复现评测启动", heat: 150, trend: "down", storyPublicId: "st-mm", itemId: "mm-816b", participants: faces(["Frontier", "实验室", "GitHub"]), participantCount: 39 },
   { rank: 3, title: "边缘 AI 笔记本开售，本地推理成为卖点", heat: 86, trend: "up", storyPublicId: "st-edge", itemId: "edge-nb", participants: faces(["硬件周报", "零售观察"]), participantCount: 17 },
@@ -115,13 +150,6 @@ export const hotStrip: HotStripEntry[] = [
   { rank: 5, title: "推理成本再降：新一批 API 调价与缓存策略", heat: 74, trend: "flat", storyPublicId: "st-price", itemId: "api-price", participants: faces(["API 日志", "采购指南"]), participantCount: 11 },
 ];
 
-export const timeline: TimelineResponse = {
-  filters: { channel: "all", category: null, tag: null },
-  cards,
-  nextCursor: null,
-  hot: hotStrip,
-  dayCounts: { "2026-10-18": 6 },
-};
 
 function hotEntry(rank: number, title: string, heat: number, trend: HotEntryView["trend"], trendPct: number | null, sources: number, people: number, summary: string, latest: string | null, names: string[], badges: HotEntryView["badges"] = []): HotEntryView {
   return {
@@ -142,9 +170,9 @@ function hotEntry(rank: number, title: string, heat: number, trend: HotEntryView
   };
 }
 
-export const hot: HotResponse = {
+const fixtureHot: HotResponse = {
   computedAt: "2026-10-18T00:20:00.000Z",
-  windowHours: 48,
+  windowHours: RANK_WINDOW_HOURS,
   entries: [
     hotEntry(1, "开源模型侧发布 Flash 变体并开放检索 API", 333, "down", 11, 15, 47,
       "官方将 Flash 升级为检索增强变体，网页端与 API 同步替换，调用方式与价格不变。社区对照显示阅读与长上下文抬升。",
@@ -188,7 +216,7 @@ export const dailyIndex: ReportNavigationEntry[] = [
   { key: "2026-10-14", issueNumber: 14, title: "推理缓存策略落地", count: 3 },
 ];
 
-export const daily: ReportDetail = {
+const fixtureDaily: ReportDetail = {
   kind: "daily",
   key: "2026-10-18",
   issueNumber: 18,
@@ -306,6 +334,62 @@ export const daily: ReportDetail = {
   readingMinutes: 4,
   prev: "2026-10-17",
   next: null,
+};
+
+function applyDailyLead(base: ReportDetail): ReportDetail {
+  const d = generated.daily;
+  if (!d?.itemId) return { ...base, cover: null };
+  const pic = pictureOf(d);
+  const cover = pic ? { ...pic, caption: null as string | null } : null;
+  const cite: ReportCitation = {
+    itemId: d.itemId,
+    title: d.title,
+    summary: d.leadParagraph,
+    sourceName: d.sourceName,
+    sourceUrl: d.sourceUrl,
+    sourceIconUrl: null,
+    firstParty: d.firstParty,
+    publishedAt: d.publishedAt,
+    available: true,
+    otherSources: d.otherSources,
+  };
+  const restHighlights = base.highlights.filter((h) => h.itemId !== cite.itemId);
+  return {
+    ...base,
+    title: d.title,
+    lead: { title: d.title, leadParagraph: d.leadParagraph },
+    leadItemId: d.itemId,
+    cover,
+    highlights: [cite, ...restHighlights].slice(0, 2),
+    sections: base.sections.map((section, i) =>
+      i === 0
+        ? { ...section, items: [cite, ...section.items.filter((item) => item.itemId !== cite.itemId)] }
+        : section,
+    ),
+  };
+}
+
+export const hot: HotResponse = generated.hotEntries?.length ? generatedHot() : fixtureHot;
+
+export const hotStrip: HotStripEntry[] = (hot.entries.length ? hot.entries : fixtureHot.entries).slice(0, 5).map((e) => ({
+  rank: e.rank,
+  title: e.story.title,
+  heat: e.heat,
+  trend: e.trend === "unknown" ? "flat" : e.trend,
+  storyPublicId: e.story.publicId,
+  itemId: generated.hotEntries?.find((row) => row.rank === e.rank)?.itemId ?? e.story.publicId,
+  participants: e.participants,
+  participantCount: e.participantCount,
+}));
+
+export const daily: ReportDetail = applyDailyLead(fixtureDaily);
+
+export const timeline: TimelineResponse = {
+  filters: { channel: "all", category: null, tag: null },
+  cards,
+  nextCursor: null,
+  hot: hotStrip,
+  dayCounts: { "2026-10-18": 6 },
 };
 
 export const today = "2026-10-18";
