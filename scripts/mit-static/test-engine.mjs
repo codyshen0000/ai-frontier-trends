@@ -68,10 +68,21 @@ try {
       },
     ],
   }));
+  writeFileSync(path.join(dir, "daily.json"), JSON.stringify({
+    kind: "daily",
+    key: "2026-10-19",
+    title: "engine daily",
+    lead: { title: "engine lead", leadParagraph: "p" },
+    leadItemId: "lead-1",
+    highlights: [{ itemId: "lead-1", title: "engine lead", sourceName: "E", sourceUrl: "https://example.com/d", firstParty: true }],
+    cover: { url: "https://example.com/daily.jpg", width: 960, height: 540 },
+  }));
   const payload = readEngineDir(dir);
-  assert.deepEqual(payload.present, ["hot.json"]);
+  assert.deepEqual(payload.present, ["hot.json", "daily.json"]);
   assert.equal(dataSourceOf(payload.present), "mixed");
   const mixed = resolveSiteData({ fixture, engine: payload });
+  assert.equal(mixed.daily.sections[0].items[0].itemId, "lead-1");
+  assert.equal(mixed.daily.cover.url, "https://example.com/daily.jpg");
   assert.equal(mixed.source, "mixed");
   assert.equal(mixed.hot.entries[0].story.title, "engine lead");
   assert.equal(mixed.hot.entries[0].cover.url, wider.url);

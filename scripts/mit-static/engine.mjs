@@ -282,6 +282,19 @@ export function normalizeDaily(raw) {
   const lead = raw.lead && typeof raw.lead === "object"
     ? { title: String(raw.lead.title ?? raw.title), leadParagraph: String(raw.lead.leadParagraph ?? "") }
     : raw.lead === null ? null : { title: raw.title, leadParagraph: String(raw.overview ?? "") };
+  const leadItemId = raw.leadItemId ?? null;
+  const highlights = asArray(raw.highlights).map(normalizeCitation);
+  let sections = asArray(raw.sections).map((section) => ({
+    label: String(section.label ?? "栏目"),
+    summary: section.summary ?? null,
+    items: asArray(section.items).map(normalizeCitation),
+  }));
+  // MIT ReportPaper only treats an item in sections as the lead. Lift it from highlights so a
+  // headline + cover export is not rendered as a quiet day.
+  if (leadItemId && !sections.some((section) => section.items.some((item) => item.itemId === leadItemId))) {
+    const lifted = highlights.find((item) => item.itemId === leadItemId);
+    if (lifted) sections = [{ label: "头条", summary: null, items: [lifted] }, ...sections];
+  }
   return {
     kind: "daily",
     key: raw.key,
@@ -289,14 +302,10 @@ export function normalizeDaily(raw) {
     title: raw.title,
     generatedAt: raw.generatedAt ?? `${raw.key}T00:00:00.000Z`,
     lead,
-    leadItemId: raw.leadItemId ?? null,
+    leadItemId,
     overview: raw.overview ?? null,
-    highlights: asArray(raw.highlights).map(normalizeCitation),
-    sections: asArray(raw.sections).map((section) => ({
-      label: String(section.label ?? "栏目"),
-      summary: section.summary ?? null,
-      items: asArray(section.items).map(normalizeCitation),
-    })),
+    highlights,
+    sections,
     flashes: asArray(raw.flashes).map(normalizeCitation),
     cover: resolveCover(raw),
     metrics: raw.metrics && typeof raw.metrics === "object" ? raw.metrics : { totalEvents: 0 },

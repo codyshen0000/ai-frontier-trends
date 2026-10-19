@@ -76,15 +76,17 @@ const noteDir = path.join(outDir, "data");
 fs.mkdirSync(noteDir, { recursive: true });
 const notePath = path.join(noteDir, "fixture-note.json");
 const previousNote = fs.existsSync(notePath) ? JSON.parse(fs.readFileSync(notePath, "utf8")) : {};
-const asOf = engineSource === "fixture" && previousNote.asOf ? previousNote.asOf : new Date().toISOString();
-fs.writeFileSync(
-  notePath,
-  `${JSON.stringify(fixtureNote({
-    source: engineSource,
-    present: enginePresent,
-    asOf,
-  }), null, 2)}\n`,
-);
+if (engineSource !== "fixture" || previousNote.source !== "fixture") {
+  const asOf = engineSource === "fixture" && previousNote.asOf ? previousNote.asOf : new Date().toISOString();
+  fs.writeFileSync(
+    notePath,
+    `${JSON.stringify(fixtureNote({
+      source: engineSource,
+      present: enginePresent,
+      asOf,
+    }), null, 2)}\n`,
+  );
+}
 
 fs.rmSync(tmpCss, { recursive: true, force: true });
 fs.rmSync(tmpSsr, { recursive: true, force: true });

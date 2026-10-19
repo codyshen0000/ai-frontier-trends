@@ -243,7 +243,7 @@ interface HotResponse {
 
 TypeScript：`ReportDetail`（`kind` 必须是 `"daily"`）。
 
-头条文案走 `lead`；头条链接走 `leadItemId`（须能在 `highlights` / `sections` 里找到同一 `itemId`）。封面走 `cover`（L2，仅头条）。
+头条文案走 `lead`；头条链接走 `leadItemId`。壳层只把 **`sections[].items` 里** 同 `itemId` 的条目当头条；若只写在 `highlights` 里，加载器会自动抬进一个「头条」栏目，否则会被当成无稿日、**封面不会出现**。封面走 `cover`（L2，仅头条）。
 
 ```ts
 interface ReportCitation {
