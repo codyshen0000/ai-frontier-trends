@@ -222,6 +222,9 @@ if (hotCoverImgs.length === 1) {
   assert(!/(?:src|srcSet|imageSrcSet)="assets\/covers\//.test(hotPage), "hot cover attrs do not keep unprefixed assets/covers");
   assert(/\bwidth="\d+"/.test(hotCoverImgs[0][0]) && /\bheight="\d+"/.test(hotCoverImgs[0][0]), "hot cover has width/height");
   assert(!/src="https?:\/\//.test(hotCoverImgs[0][0]), "hot cover is not a hotlink");
+  assert(/alt="FLUX\.3 Image Klein 模型生成样图拼贴"/.test(hotCoverImgs[0][0]), "hot cover alt is a short Chinese description");
+  assert(!/\balt=""/.test(hotCoverImgs[0][0]), "hot cover alt is not empty");
+  assert(!/\balt="[^"]*\.(?:webp|png|jpe?g|gif|svg)"/i.test(hotCoverImgs[0][0]), "hot cover alt is not a filename");
 } else {
   assert(!/>24 小时热度</.test(hotPage), "empty hot cover slot is not filled with a heat panel");
 }
@@ -229,9 +232,14 @@ assert(!leftoverHtmlHref.test(hotPage), "/hot/ has no leftover .html page hrefs"
 assert(!hotPage.includes("AIHOT") && !hotPage.includes("MyHOT"), "hot page has no *HOT product brand");
 assert(hotPage.includes("Black Forest Labs 开源 FLUX.3 Image Klein"), "hot NO.01 uses story-digest Klein title");
 assert(hotPage.includes("在 Hugging Face 放出"), "hot NO.01 digest is answer-first");
-for (const needle of ["权重跟踪", "记交付", "六件套", "低于门槛", "本批", "score=", "闸分", "补位"]) {
+for (const needle of ["权重跟踪", "记交付", "六件套", "低于门槛", "本批", "本条未覆盖", "score=", "闸分", "补位"]) {
   assert(!hotPage.includes(needle), `/hot/ public copy has no ${needle}`);
 }
+assert(
+  (hotPage.match(/text-\[12px\] leading-none text-ink-4">示例/g) || []).length >= 1,
+  "hot sparkline 示例 label is text-[12px]",
+);
+assert(!/text-\[10px\] leading-none text-ink-4">示例/.test(hotPage), "hot sparkline 示例 is not 10px");
 
 const morePage = readFileSync(join(distDir, "more", "index.html"), "utf8");
 assert(morePage.includes("看板 Studio"), "Studio stays under 更多");
@@ -249,7 +257,7 @@ assert(dailyPage.includes(">日报<") && dailyPage.includes('aria-current="page"
 assert(!leftoverHtmlHref.test(dailyPage), "/daily/ has no leftover .html page hrefs");
 assert(!dailyPage.includes("AIHOT") && !dailyPage.includes("MyHOT"), "daily has no *HOT product brand");
 assert(dailyPage.includes("Black Forest Labs 开源 FLUX.3 Image Klein"), "daily headline uses story-digest Klein title");
-for (const needle of ["权重跟踪", "记交付", "六件套", "低于门槛", "本批", "score=", "闸分", "补位"]) {
+for (const needle of ["权重跟踪", "记交付", "六件套", "低于门槛", "本批", "本条未覆盖", "score=", "闸分", "补位"]) {
   assert(!dailyPage.includes(needle), `/daily/ public copy has no ${needle}`);
 }
 const dailyCoverImgs = [...dailyPage.matchAll(/<img\b[^>]*>/g)].filter((m) => /assets\/covers\//.test(m[0]));
@@ -273,6 +281,9 @@ if (dailyCoverImgs.length === 1) {
   assert(!/(?:src|srcSet|imageSrcSet)="assets\/covers\//.test(dailyPage), "daily cover attrs do not keep unprefixed assets/covers");
   assert(/\bwidth="\d+"/.test(dailyCoverImgs[0][0]) && /\bheight="\d+"/.test(dailyCoverImgs[0][0]), "daily cover has width/height");
   assert(!/src="https?:\/\//.test(dailyCoverImgs[0][0]), "daily cover is not a hotlink");
+  assert(/alt="FLUX\.3 Image Klein 模型生成样图拼贴"/.test(dailyCoverImgs[0][0]), "daily cover alt is a short Chinese description");
+  assert(!/\balt=""/.test(dailyCoverImgs[0][0]), "daily cover alt is not empty");
+  assert(!/\balt="[^"]*\.(?:webp|png|jpe?g|gif|svg)"/i.test(dailyCoverImgs[0][0]), "daily cover alt is not a filename");
 }
 
 assert(/body\{[^}]*max-width:\s*\d+px;[^}]*margin:[^;]*auto/.test(timelineRaw), "timeline source keeps a centered reading column");

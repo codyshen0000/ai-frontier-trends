@@ -12,7 +12,9 @@ assert.ok(table.items["flux-3-image-klein"], "Klein overlay exists");
 const klein = publicCopyFor("flux-3-image-klein");
 assert.equal(klein.title, "Black Forest Labs 开源 FLUX.3 Image Klein（5.6B）");
 assert.match(klein.digest, /^Black Forest Labs 在 Hugging Face 放出/);
+assert.doesNotMatch(klein.digest, /本条未覆盖/);
 assert.equal(findBannedMeta(klein.digest), null);
+assert.equal(findBannedMeta("完整非 Klein 版权重本条未覆盖。"), "本条未覆盖");
 assert.equal(findBannedMeta("权重跟踪：Klein 记交付；六件套其余仍空。"), "权重跟踪");
 
 const ids = (generated.hotEntries || []).map((e) => e.itemId);
