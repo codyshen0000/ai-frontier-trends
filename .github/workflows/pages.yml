@@ -1,9 +1,21 @@
+# Deploy the public static site to GitHub Pages.
+#
+# Do NOT add a `push` trigger for branch `engine-data`. GitHub runs the
+# workflow file from the pushed ref; that branch is data-only and has no
+# workflow file, so a push there would never start this job on main.
+# R1 must call workflow_dispatch (or repository_dispatch) after it pushes
+# engine-data. The hourly cron is a backup.
 name: Deploy GitHub Pages
 
 on:
   push:
     branches: [main]
   workflow_dispatch:
+  repository_dispatch:
+    types: [engine-data-updated]
+  schedule:
+    # UTC. Hourly cadence; minute 40 lags the typical :00 data export.
+    - cron: "40 * * * *"
 
 permissions:
   contents: read
@@ -12,7 +24,8 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  # Queue instead of cancelling: a cancelled deploy can leave Pages mid-update.
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -37,6 +50,7 @@ jobs:
           cp -a .engine-data/data/engine/v1 data/engine/v1
           rm -rf .engine-data
           test -f data/engine/v1/meta.json
+          echo "FT_ENGINE_DIR=${GITHUB_WORKSPACE}/data/engine/v1" >> "${GITHUB_ENV}"
 
       - name: Setup Node
         uses: actions/setup-node@v4
