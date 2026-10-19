@@ -87,11 +87,12 @@ html.ft-shell {
   padding-left: var(--ft-sidebar);
 }
 
-html.ft-shell[data-theme="light"] {
-  --ds-accent: #0058b0;
-  --ds-accent-hover: #004a96;
-  --ds-accent-active: #003e80;
-  --ds-accent-soft: rgba(0, 88, 176, 0.12);
+html.ft-shell[data-theme="light"],
+html.ft-shell:not([data-theme="dark"]) {
+  --ds-accent: #0058b0 !important;
+  --ds-accent-hover: #004a96 !important;
+  --ds-accent-active: #003e80 !important;
+  --ds-accent-soft: rgba(0, 88, 176, 0.12) !important;
 }
 
 html.ft-shell[data-theme="dark"] {
@@ -105,9 +106,9 @@ html.ft-shell[data-theme="dark"] {
   --ft-teal-hover: #67e8f9;
   --ft-teal-soft: rgba(34, 211, 238, 0.12);
   --ds-hairline-strong: rgba(255, 255, 255, 0.18);
-  --ds-accent: var(--ft-teal);
-  --ds-accent-hover: var(--ft-teal-hover);
-  --ds-accent-soft: var(--ft-teal-soft);
+  --ds-accent: var(--ft-teal) !important;
+  --ds-accent-hover: var(--ft-teal-hover) !important;
+  --ds-accent-soft: var(--ft-teal-soft) !important;
   --ds-accent-ink: #082f2c;
   --ds-overlay: rgba(0, 0, 0, 0.64);
   color-scheme: dark;
@@ -125,6 +126,17 @@ main a,
 #back-home a,
 .meta a {
   color: var(--ds-accent);
+}
+
+html.ft-shell:not([data-theme="dark"]) body > a,
+html.ft-shell:not([data-theme="dark"]) main a,
+html.ft-shell:not([data-theme="dark"]) #back-home a,
+html.ft-shell:not([data-theme="dark"]) .meta a,
+html.ft-shell[data-theme="light"] body > a,
+html.ft-shell[data-theme="light"] main a,
+html.ft-shell[data-theme="light"] #back-home a,
+html.ft-shell[data-theme="light"] .meta a {
+  color: #0058b0;
 }
 
 body > a:hover,

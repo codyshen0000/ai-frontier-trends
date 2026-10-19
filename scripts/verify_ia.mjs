@@ -463,6 +463,7 @@ assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-we
   assert(/class="mermaid-wrap"/.test(timelineDist), "dist timeline wraps mermaid in a light plate");
   const appCss = readFileSync(join(distDir, "assets", "app.css"), "utf8");
   assert(/html\.no-js \[data-ft-filter-group\]/.test(appCss) || /html\.no-js \[data-ft-search\]/.test(appCss), "no-js hides filter chips and search");
+  assert(!/html\.no-js[^{]*筛选/.test(appCss), "no-js hide selectors stay ASCII so minify cannot drop the rule");
   assert(/#0058b0/.test(readFileSync(join(distDir, "styles.css"), "utf8")), "light link accent is #0058b0");
 }
 

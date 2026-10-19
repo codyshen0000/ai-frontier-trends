@@ -157,7 +157,7 @@ const pages = walkHtml(distDir)
   .filter((p) => !p.includes("hot-empty") && !p.includes("daily-empty"))
   .sort();
 
-const phonePages = new Set(["", "hot/", "daily/", "more/", "weekly/2026-10-18/", "timeline/", "flux3/cases/"]);
+const phonePages = new Set(["", "live/", "hot/", "daily/", "more/", "weekly/2026-10-18/", "timeline/", "flux3/cases/"]);
 
 const browser = await chromium.launch({ executablePath: CHROME, args: ["--no-sandbox"] });
 const rows = [];
@@ -216,7 +216,9 @@ async function scanContrastAndLinks(path, w, theme, js) {
       if (cs.visibility === "hidden" || cs.display === "none" || el.closest("[hidden]")) continue;
       n += 1;
       const x = __ratio(el);
-      if (x.ratio < 4.5) bad.push({ txt: own.slice(0, 24), tag: el.tagName, ...x });
+      const themeNow = document.documentElement.getAttribute("data-theme") || "light";
+      const min = el.tagName === "A" && themeNow !== "dark" ? 5.5 : 4.5;
+      if (x.ratio < min) bad.push({ txt: own.slice(0, 24), tag: el.tagName, min, ...x });
     }
     return { checked: n, below: bad.length, worst: bad.sort((a, b) => a.ratio - b.ratio).slice(0, 5) };
   }, HEAD_BODY);

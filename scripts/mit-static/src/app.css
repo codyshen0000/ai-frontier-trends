@@ -771,7 +771,7 @@ html.no-js .ft-search-head,
 html.no-js [data-ft-toc],
 html.no-js [data-ft-hot-method],
 html.no-js [data-ft-top],
-html.no-js button[aria-label*="位参与者"] {
+html.no-js button[aria-controls][aria-expanded] {
   display: none !important;
 }
 html.js [data-ft-top]:not(.is-on) {
