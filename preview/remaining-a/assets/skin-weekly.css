@@ -162,6 +162,17 @@ figure img {
   height: auto;
 }
 
+html.ft-shell[data-theme="dark"] .lead p:first-child {
+  color: #1c1c1a !important;
+  background: #fff8c5;
+  border-left-color: #d4a72c;
+}
+
+html.no-js .ft-theme-toggle,
+html.no-js #ctl {
+  display: none !important;
+}
+
 .ft-sidebar,
 .ft-topbar,
 .ft-tabbar {

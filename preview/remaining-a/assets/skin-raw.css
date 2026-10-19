@@ -1606,3 +1606,7 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
     transition: none !important;
   }
 }
+
+html.no-js .ft-theme-toggle {
+  display: none !important;
+}
