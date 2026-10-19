@@ -1181,6 +1181,75 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
   text-wrap: pretty;
 }
 
+.ft-daily-lead-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.72fr);
+  gap: 16px 20px;
+  align-items: start;
+  margin: 0 0 12px;
+}
+
+.ft-daily-lead-body > .ft-daily-dek {
+  margin: 0;
+}
+
+.ft-daily-item-viz {
+  margin: 0 0 10px;
+  min-width: 0;
+}
+
+.ft-daily-item-fig {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--ft-line);
+  border-radius: var(--ft-r-8);
+  background: var(--ft-elev);
+}
+
+.ft-daily-item-fig img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 280px;
+  object-fit: contain;
+  object-position: center top;
+  background: var(--ft-sunk);
+}
+
+.ft-daily-item-fig figcaption {
+  margin: 0;
+  padding: 6px 10px 8px;
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--ft-muted);
+}
+
+.ft-daily-item-table {
+  margin: 8px 0 0;
+  overflow-x: auto;
+  border: 1px solid var(--ft-line);
+  border-radius: var(--ft-r-8);
+  background: var(--ft-elev);
+}
+
+.ft-daily-item-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.ft-daily-item-table th,
+.ft-daily-item-table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--ft-line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.ft-daily-story .ft-daily-item-fig img {
+  max-height: 220px;
+}
+
 .ft-daily-lead-meta,
 .ft-daily-story-meta {
   display: flex;
@@ -1412,7 +1481,8 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 
   .ft-daily-front,
   .ft-daily-row,
-  .ft-daily-nbs {
+  .ft-daily-nbs,
+  .ft-daily-lead-body {
     grid-template-columns: 1fr;
     gap: 8px;
   }

@@ -113,6 +113,14 @@ function parseCard(attrs, inner) {
     sources.push({ ...link, name: sourceLabel(link.host) });
   }
   const firstParty = tags.some((tag) => tag.includes("官方自报"));
+  const images = [...inner.matchAll(/<img\b([^>]*)>/gi)].map((item) => ({
+    src: attr(item[1], "src") || attr(item[1], "data-src"),
+    alt: attr(item[1], "alt"),
+    width: attr(item[1], "width"),
+    height: attr(item[1], "height"),
+  })).filter((img) => img.src);
+  const tables = [...inner.matchAll(/<table\b[^>]*>[\s\S]*?<\/table>/gi)].map((item) => item[0]);
+  const cover = attr(attrs, "data-cover") || attr(attrs, "data-image") || "";
   return {
     id: id || title,
     day,
@@ -126,6 +134,10 @@ function parseCard(attrs, inner) {
     time: timeMatch ? timeMatch[1].trim() : day,
     sources,
     sourceCount: sources.length,
+    images,
+    tables,
+    cover,
+    image: cover,
   };
 }
 

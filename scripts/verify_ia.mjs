@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import { extractLiveSpotlight, extractThreads, extractTimelineLede, ensureThreadAnchors } from "./extract.mjs";
 import { extractLiveCards, rankHot, selectPins } from "./live_cards.mjs";
 import { injectHtmlFile } from "./build.mjs";
+import { rejectReason, scoreCandidate } from "./daily_images.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const config = JSON.parse(readFileSync(join(root, "site.config.json"), "utf8"));
@@ -242,6 +243,30 @@ assert(dailyTab.includes("aria-current=\"page\"") && dailyTab.includes(">日报<
 assert(!dailyPage.includes("AIHOT") && !dailyPage.includes("MyHOT"), "daily has no *HOT product brand");
 assert(!dailyPage.includes("第180期") && !dailyPage.includes("AI日报"), "daily does not copy aihot masthead copy");
 assert(dailyPage.includes("另外") && dailyPage.includes("原文"), "daily source chips include 另外 N 家 / 原文");
+assert(!dailyPage.includes("暂无配图"), "daily does not ship a 暂无配图 placeholder");
+assert(!dailyPage.includes("ft-daily-roster") && !dailyPage.includes("ft-daily-compare"), "daily has no PR #14/#15 summary/field table slots");
+assert(!/<th>\s*栏目\s*<\/th>/.test(dailyPage) && !/<td>\s*独立来源\s*<\/td>/.test(dailyPage), "daily does not invent 栏目/独立来源 field tables");
+assert(dailyPage.includes("ft-daily-item-viz") && dailyPage.includes("ft-daily-item-fig"), "daily hangs per-item source figures");
+{
+  const logo = rejectReason({ url: "https://arxiv.org/static/base/arxiv-logo-primary-light.svg", alt: "arXiv logo", kind: "og" });
+  assert(logo === "logo_or_avatar", `arxiv logo rejected (${logo})`);
+  assert(
+    rejectReason({ url: "data:image/png;base64,iVBORw0KGgo", alt: "小红书", kind: "body" }) === "logo_or_avatar",
+    "inline data URI images are not treated as source photos",
+  );
+  const pipeline = scoreCandidate(
+    { url: "https://arxiv.org/html/2610.20111/pipeline.png", alt: "architecture pipeline", kind: "paper", width: 900, caption: "method overview" },
+    "RepForcing 表征 teacher forcing",
+    { title: "RepForcing：表征 teacher forcing", id: "repforcing" },
+  );
+  assert(pipeline.pass, "architecture/pipeline figure passes the value gate");
+  const defaultOg = scoreCandidate(
+    { url: "https://opengraph.githubassets.com/abc/org/repo", alt: "", kind: "og", width: 1200 },
+    "PenguinHarness RSI",
+    { title: "Terminal-RSI 观察", id: "x" },
+  );
+  assert(!defaultOg.pass, "GitHub default OG does not pass as a valuable image");
+}
 assert(dailyPage.includes("ft-daily-monthhead"), "daily archive is grouped by month");
 assert(!dailyPage.includes("Noto Serif") && !dailyPage.includes("Newsreader"), "daily does not load a serif display stack");
 assert(!dailyPage.includes("#F7F4EC") && !dailyPage.includes("#8B1E1E") && !dailyPage.includes("#1F3A5F"), "daily does not override shell with E-Ink tokens");

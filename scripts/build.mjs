@@ -12,6 +12,7 @@ import {
 } from "./extract.mjs";
 import { extractLiveCards } from "./live_cards.mjs";
 import { dailyPageBody } from "./daily_page.mjs";
+import { formatCoverageMarkdown, resolveDailyViz } from "./daily_images.mjs";
 import { curateLivePage, hotPageBody, morePageBody, stripLiveCurate } from "./live_curate.mjs";
 import {
   assertPublicSafe,
@@ -497,7 +498,7 @@ function readHomeData() {
   return { live, threads: extracted.threads, lede: extracted.lede, threadSource: extracted.source, timelineRaw };
 }
 
-export function buildSite() {
+export async function buildSite() {
   rmSync(distDir, { recursive: true, force: true });
   mkdirSync(distDir, { recursive: true });
 
@@ -506,6 +507,7 @@ export function buildSite() {
   const liveRaw = readFileSync(join(contentDir, "live.html"), "utf8");
   const liveCards = extractLiveCards(liveRaw);
   const liveMeta = extractLiveSpotlight(liveRaw);
+  const { report: dailyVizReport } = await resolveDailyViz(liveCards, { root, papers: PAPERS });
 
   for (const page of config.pages) {
     if (publicDeploy && privatePages.has(page.id)) continue;
@@ -684,9 +686,19 @@ export function buildSite() {
   const copiedImages = copyCaseAssets(root, distDir);
   writeFileSync(join(distDir, ".nojekyll"), "");
 
+  const vizDir = join(root, "preview", "daily");
+  mkdirSync(vizDir, { recursive: true });
+  writeFileSync(join(vizDir, "COVERAGE-REALIMG.md"), formatCoverageMarkdown(dailyVizReport));
+  writeFileSync(join(distDir, "daily", "coverage-realimg.md"), formatCoverageMarkdown(dailyVizReport));
+
   console.log(`Built ${contentPages.length + 1} pages → dist/ (public=${publicDeploy}, case images=${copiedImages})`);
+  if (dailyVizReport.total) {
+    console.log(
+      `daily viz ${dailyVizReport.success}/${dailyVizReport.total} (${Math.round(dailyVizReport.coverage * 100)}%) on ${dailyVizReport.day}`,
+    );
+  }
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
-  buildSite();
+  await buildSite();
 }

@@ -135,6 +135,25 @@ function storyLink(card, escapeHtml) {
   return `<a href="${escapeHtml(href)}" target="_blank" rel="noopener">${escapeHtml(card.title)}</a>`;
 }
 
+function itemViz(card, escapeHtml) {
+  const viz = card.viz;
+  if (!viz) return "";
+  const figure = viz.image?.url
+    ? `<figure class="ft-daily-item-fig" data-viz-kind="${escapeHtml(viz.image.kind || "image")}">
+        <img loading="lazy" decoding="async" src="${escapeHtml(viz.image.url)}" alt="${escapeHtml(viz.image.alt || card.title)}" onerror="var f=this.closest('figure'); if(f) f.hidden=true;">
+        ${viz.image.caption ? `<figcaption>${escapeHtml(String(viz.image.caption).replace(/api\.fxtwitter\.com|pbs\.twimg\.com/g, "x.com"))}</figcaption>` : ""}
+      </figure>`
+    : "";
+  const table = viz.tableHtml
+    ? `<div class="ft-daily-item-table">${String(viz.tableHtml)
+        .replace(/<script[\s\S]*?<\/script>/gi, "")
+        .replace(/<style[\s\S]*?<\/style>/gi, "")
+        .replace(/\son\w+=(?:"[^"]*"|'[^']*')/gi, "")}</div>`
+    : "";
+  if (!figure && !table) return "";
+  return `<div class="ft-daily-item-viz" data-id="${escapeHtml(card.id)}">${figure}${table}</div>`;
+}
+
 function monthGrid(day, issueDays) {
   const [year, month] = day.split("-").map(Number);
   const total = daysInMonth(year, month);
@@ -305,11 +324,15 @@ function frontPage(edition, { escapeHtml, hrefBetween }) {
     )
     .join("");
 
+  const dek = lead.summary ? `<p class="ft-daily-dek">${escapeHtml(lead.summary)}</p>` : "";
+  const viz = itemViz(lead, escapeHtml);
+  const leadBody = viz ? `<div class="ft-daily-lead-body">${dek}${viz}</div>` : dek;
+
   return `<section class="ft-daily-front" id="d-${escapeHtml(edition.day)}-front">
-    <div class="ft-daily-lead">
+    <div class="ft-daily-lead" id="c-${escapeHtml(lead.id)}" data-id="${escapeHtml(lead.id)}">
       <p class="ft-daily-kicker">头条</p>
       <h2>${storyLink(lead, escapeHtml)}</h2>
-      ${lead.summary ? `<p class="ft-daily-dek">${escapeHtml(lead.summary)}</p>` : ""}
+      ${leadBody}
       <p class="ft-daily-lead-meta">
         ${sourceChips(lead, escapeHtml)}
         <span class="ft-daily-mins">约 ${storyMinutes(lead)} 分钟</span>
@@ -340,9 +363,10 @@ function sectionPage(edition, section, index, escapeHtml) {
     .map((row) => {
       const cells = row
         .map((card) => {
-          return `<article class="ft-daily-story" id="c-${escapeHtml(card.id)}">
+          return `<article class="ft-daily-story" id="c-${escapeHtml(card.id)}" data-id="${escapeHtml(card.id)}">
             <h3>${storyLink(card, escapeHtml)}</h3>
             ${card.summary ? `<p>${escapeHtml(card.summary)}</p>` : ""}
+            ${itemViz(card, escapeHtml)}
             <p class="ft-daily-story-meta">
               ${sourceChips(card, escapeHtml)}
               <span class="ft-daily-mins">约 ${storyMinutes(card)} 分钟</span>
