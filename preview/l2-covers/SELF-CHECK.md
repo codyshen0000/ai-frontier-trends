@@ -36,7 +36,8 @@
 
 ## 门禁
 
-`npm run test:covers` / `build` / `build:public` / `verify:ia`  
-`python3 -m http.server` 于 `dist/`：`/hot/` `/daily/` 封面 srcSet 0 个 404。
+`npm run test:covers` / `build` / `build:public` / `verify:ia`（均通过；`verify:ia` 含 dist 全页 img URL 存在性扫描 + 旧预览作废条）。
+
+HTTP：`python3 -m http.server` 于 `dist/` 后打开 `/hot/` `/daily/`。每页 src + srcSet + imageSrcSet 共 6 条封面 URL 均解析为 `/assets/covers/hot-flux-3-image-klein-{720,1200,1600}.webp` 且 **0 个 404**。旧路径 `/hot/assets/covers/…` 与 `/daily/assets/covers/…` 仍 404（证明未再走未加 `../` 的 srcSet）。
 
 下一步：测试审校按 v5.1 §4 A+B 抽查后，产品终审。不合入 #19 / #20。
