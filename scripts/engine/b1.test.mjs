@@ -100,6 +100,20 @@ describe("B1 publicize", () => {
     });
     assert.equal(dropped, null);
   });
+
+  it("drops belowThreshold preview rows", () => {
+    assert.equal(publicizeHotEntry({ rank: 9, story: { publicId: "x", title: "补位预览" }, belowThreshold: true }), null);
+    assert.equal(
+      publicizeCard({
+        key: "bt",
+        anchorAt: "2026-10-19T00:00:00.000Z",
+        belowThreshold: true,
+        item: { id: "sha256:bt", title: "未过闸", summary: "x", reason: "y", source: { name: "x" }, publishedAt: null, timelineAt: "2026-10-19T00:00:00.000Z", category: "model", tags: [], selected: false, channel: "news", x: null },
+        group: null,
+      }),
+      null,
+    );
+  });
 });
 
 describe("B1 resolve fallback", () => {

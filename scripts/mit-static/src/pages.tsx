@@ -106,7 +106,9 @@ export function DailyScreen({ emptyCover = false }: { emptyCover?: boolean }) {
   if (!daily) {
     return (
       <Shell pathname="/daily">
-        <EmptyState title="过去 24 小时没有达到上榜条件的事件。" />
+        <div id="report-start">
+          <EmptyState title="过去 24 小时没有达到上榜条件的事件。" />
+        </div>
         <AsOfAndRss rssHref={hasSelectedFeed ? "../feed.xml" : "../feed/weekly.xml"} />
       </Shell>
     );

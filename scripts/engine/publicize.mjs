@@ -56,6 +56,7 @@ function cleanText(value) {
 
 export function publicizeHotEntry(entry) {
   if (!entry || typeof entry !== "object") return null;
+  if (entry.belowThreshold) return null;
   const spark = Array.isArray(entry.spark) ? entry.spark : [];
   const observed = spark.filter((v) => v != null);
   const heat = typeof entry.heat === "number" && Number.isFinite(entry.heat) ? entry.heat : null;
@@ -83,6 +84,7 @@ export function publicizeHotEntry(entry) {
 
 export function publicizeCard(card) {
   if (!card?.item?.id || !card.item.title) return null;
+  if (card.belowThreshold || card.item.belowThreshold) return null;
   if (FIXTURE_IDS.includes(card.item.id) || textHasFixtureId(card.item.id)) return null;
   const extra = Number(card.group?.additionalSourceCount) || 0;
   const reports = Number(card.group?.reportCount) || 0;
@@ -144,7 +146,7 @@ export function publicizeBundle(bundle, meta = {}) {
     windowHours: bundle.hot?.windowHours ?? 48,
     entries: hotEntries,
   };
-  const hotStrip = (bundle.hotStrip || []).map((row) =>
+  const hotStrip = (bundle.hotStrip || []).filter((row) => !row?.belowThreshold).map((row) =>
     stripScore({
       rank: row.rank,
       title: row.title,
