@@ -43,10 +43,10 @@ html.ft-shell {
   --ds-text-secondary: var(--ft-muted);
   --ds-hairline: var(--ft-line);
   --ds-hairline-strong: #d9d6cc;
-  --ds-accent: var(--ft-teal);
-  --ds-accent-hover: var(--ft-teal-hover);
-  --ds-accent-active: #0a534c;
-  --ds-accent-soft: var(--ft-teal-soft);
+  --ds-accent: #0058b0;
+  --ds-accent-hover: #004a96;
+  --ds-accent-active: #003e80;
+  --ds-accent-soft: rgba(0, 88, 176, 0.12);
   --ds-accent-ink: #fffefb;
   --ds-nav-bg: var(--ft-paper);
   --ds-radius-sm: var(--ft-r-8);
@@ -60,6 +60,13 @@ html.ft-shell {
   padding-left: var(--ft-sidebar);
 }
 
+html.ft-shell[data-theme="light"] {
+  --ds-accent: #0058b0;
+  --ds-accent-hover: #004a96;
+  --ds-accent-active: #003e80;
+  --ds-accent-soft: rgba(0, 88, 176, 0.12);
+}
+
 html.ft-shell[data-theme="dark"] {
   --ft-paper: #141413;
   --ft-sunk: #0f0f0e;
@@ -71,6 +78,9 @@ html.ft-shell[data-theme="dark"] {
   --ft-teal-hover: #67e8f9;
   --ft-teal-soft: rgba(34, 211, 238, 0.12);
   --ds-hairline-strong: rgba(255, 255, 255, 0.18);
+  --ds-accent: var(--ft-teal);
+  --ds-accent-hover: var(--ft-teal-hover);
+  --ds-accent-soft: var(--ft-teal-soft);
   --ds-accent-ink: #082f2c;
   --ds-overlay: rgba(0, 0, 0, 0.64);
   color-scheme: dark;
@@ -190,14 +200,36 @@ html.ft-shell[data-theme="dark"] summary {
   color: var(--ft-ink) !important;
 }
 
-html.ft-shell[data-theme="dark"] svg,
-html.ft-shell[data-theme="dark"] svg * {
+html.ft-shell[data-theme="dark"] svg:not(.flowchart),
+html.ft-shell[data-theme="dark"] svg:not(.flowchart) * {
   color: unset !important;
   background: unset !important;
 }
 
+.mermaid-wrap {
+  background: #f5f5f7;
+  color: #1d1d1f;
+  border-radius: 12px;
+  padding: 12px 8px;
+  overflow-x: auto;
+}
+
+html.ft-shell[data-theme="dark"] .mermaid-wrap svg text,
+html.ft-shell[data-theme="dark"] .mermaid-wrap svg tspan,
+html.ft-shell[data-theme="dark"] .mermaid-wrap svg .nodeLabel,
+html.ft-shell[data-theme="dark"] .mermaid-wrap svg .edgeLabel,
+html.ft-shell[data-theme="dark"] .mermaid-wrap svg foreignObject,
+html.ft-shell[data-theme="dark"] .mermaid-wrap svg foreignObject * {
+  color: #1d1d1f !important;
+  fill: #1d1d1f !important;
+  background: transparent !important;
+}
+
 html.no-js .ft-theme-toggle,
-html.no-js #ctl {
+html.no-js #ctl,
+html.no-js [data-ft-filter-group],
+html.no-js [data-ft-search],
+html.no-js form[role="search"] {
   display: none !important;
 }
 

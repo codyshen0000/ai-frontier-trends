@@ -120,8 +120,10 @@ export async function replaceMermaidWithSvg(html) {
     let i = 0;
     out = out.replace(/<pre class="mermaid">[\s\S]*?<\/pre>/gi, () => wrapMermaidSvg(svgs[i++]));
   }
-  out = out.replace(/<svg\b[^>]*(?:class="flowchart"|aria-roledescription="flowchart-v2")[^>]*>[\s\S]*?<\/svg>/gi, (svg) =>
-    wrapMermaidSvg(svg),
-  );
+  out = out.replace(/<svg\b[^>]*(?:class="flowchart"|aria-roledescription="flowchart-v2")[^>]*>[\s\S]*?<\/svg>/gi, (svg, offset) => {
+    const before = out.slice(Math.max(0, offset - 80), offset);
+    if (before.includes("mermaid-wrap")) return svg;
+    return wrapMermaidSvg(svg);
+  });
   return ensureMermaidWrapCss(stripMermaidRuntime(out));
 }
