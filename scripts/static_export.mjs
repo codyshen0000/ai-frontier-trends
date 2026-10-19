@@ -10,7 +10,6 @@ import { extractLiveCards } from "./live_cards.mjs";
 import { extractTimelineLede } from "./extract.mjs";
 import { isValuableCoverClass } from "./cover_rules.mjs";
 import { publicizeBundle, isPublicHttpUrl, stripScore as stripScoreDeep } from "./engine/publicize.mjs";
-import { writeRedirects } from "./redirects.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const SITE = "前沿趋势";
@@ -429,7 +428,9 @@ function engineSearchDocs(site) {
       source: item.source?.name || "",
       category: item.category || null,
       date: item.publishedAt || "",
-      url: item.storyPublicId ? `hot.html#s-${item.storyPublicId}` : (item.originalUrl || "index.html"),
+      url: item.originalUrl && isPublicHttpUrl(item.originalUrl)
+        ? item.originalUrl
+        : publicRel(item.storyPublicId ? `hot/#s-${item.storyPublicId}` : "/"),
     });
   }
   for (const entry of site.hot?.entries || []) {
@@ -443,7 +444,7 @@ function engineSearchDocs(site) {
       source: (entry.sourceNames || []).join("、"),
       category: null,
       date: "",
-      url: `hot.html#s-${id}`,
+      url: publicRel(`hot/#s-${id}`),
     });
   }
   if (site.daily?.key) {
@@ -455,7 +456,7 @@ function engineSearchDocs(site) {
       source: SITE,
       category: null,
       date: `${site.daily.key}T00:00:00+08:00`,
-      url: "daily.html",
+      url: publicRel("daily/"),
     });
   }
   return docs.filter((doc) => !FIXTURE_IDS.some((id) => doc.id.includes(id)));
@@ -519,7 +520,6 @@ function writeEngineOutputs(distDir, engine, site, { asOf, built }) {
       ...site.daily,
     }));
   }
-  writeRedirects(distDir, engine);
 }
 
 export async function exportStatic({ distDir, contentDir, dataset = "", dataAsOf, builtAt, engine = null, site = null }) {
@@ -598,14 +598,14 @@ export async function exportStatic({ distDir, contentDir, dataset = "", dataAsOf
   });
   if (publicSite) {
     if (publicSite.hot?.entries?.length) {
-      listed.push({ path: "/api/v1/hot.json", note: "热点榜", schema_version: "1.1.0" });
+      listed.push({ path: "api/v1/hot.json", note: "热点榜", schema_version: "1.1.0" });
     }
     if (publicSite.timeline?.cards?.length) {
-      listed.push({ path: "/api/v1/timeline/latest.json", note: "时间线最新一页", schema_version: "1.1.0" });
+      listed.push({ path: "api/v1/timeline/latest.json", note: "时间线最新一页", schema_version: "1.1.0" });
     }
     if (publicSite.daily) {
-      listed.push({ path: "/api/v1/daily/latest.json", note: "最新日报", schema_version: "1.1.0" });
-      listed.push({ path: `/api/v1/daily/${publicSite.daily.key}.json`, note: `日报 ${publicSite.daily.key}`, schema_version: "1.1.0" });
+      listed.push({ path: "api/v1/daily/latest.json", note: "最新日报", schema_version: "1.1.0" });
+      listed.push({ path: `api/v1/daily/${publicSite.daily.key}.json`, note: `日报 ${publicSite.daily.key}`, schema_version: "1.1.0" });
     }
   }
   writeJson(join(distDir, "api", "v1", "index.json"), {

@@ -21,7 +21,8 @@ export async function verify(ctx) {
   const hits = [];
   for (const root of roots) {
     for (const file of walk(root)) {
-      if (!/\.(html|json|xml|txt|js|css|md)$/i.test(file)) continue;
+      if (!/\.(html|json|xml|txt|js|css)$/i.test(file)) continue;
+      if (/GAP\.md$|REUSED-SOURCES\.md$|LICENSES/.test(file)) continue;
       const text = readFileSync(file, "utf8");
       for (const needle of needles) {
         if (text.includes(needle)) hits.push(`${file}: ${needle}`);

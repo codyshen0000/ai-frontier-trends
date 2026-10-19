@@ -1,3 +1,4 @@
+import { spawnSync } from "node:child_process";
 import { cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
@@ -848,6 +849,16 @@ export async function buildSite() {
   cpSync(join(srcDir, "favicon.ico"), join(distDir, "favicon.ico"));
   const copiedImages = copyCaseAssets(root, distDir);
   writeFileSync(join(distDir, ".nojekyll"), "");
+  if (process.env.FT_SKIP_MIT_PRERENDER !== "1") {
+    const prerender = spawnSync(process.execPath, [join(root, "scripts", "mit-static", "prerender.mjs")], {
+      cwd: root,
+      stdio: "inherit",
+      env: process.env,
+    });
+    if (prerender.status !== 0) {
+      throw new Error(`mit-static prerender failed (${prerender.status ?? "spawn"})`);
+    }
+  }
   publishMitStatic();
   let engine = null;
   let engineSite = null;
