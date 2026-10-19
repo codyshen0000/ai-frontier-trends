@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "strict": false,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "react-router": ["./src/react-router.tsx"],
+      "@aihot/site": ["../../vendor/mit/site/site.ts"],
+      "@aihot/site/brand/Logo.tsx": ["../../vendor/mit/site/brand/Logo.tsx"],
+      "@aihot/site/brand/nameplates/*": ["../../vendor/mit/site/brand/nameplates/*"],
+      "@aihot/site/modules/web": ["../../vendor/mit/site/modules/web.ts"],
+      "@aihot/contracts/site": ["../../vendor/mit/packages/contracts/src/site.ts"],
+      "@aihot/contracts/taxonomy": ["../../vendor/mit/packages/contracts/src/taxonomy.ts"],
+      "@aihot/contracts/time": ["../../vendor/mit/packages/contracts/src/time.ts"],
+      "@aihot/contracts/site-config": ["../../vendor/mit/packages/contracts/src/site-config.ts"],
+      "@aihot/industry/taxonomy": ["./src/industry-taxonomy.ts"]
+    }
+  },
+  "include": ["src", "../../vendor/mit"]
+}
