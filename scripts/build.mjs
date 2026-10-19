@@ -355,7 +355,7 @@ function renderPage({ id, title, path, body, extraClass = "", description = conf
   <footer class="ds-footer">
     <div class="ds-wrap ds-footer-inner">
       <p>材料来自公开论文、官方博客和公开热帖。看板每 30 分钟检查一次；时间线每晚更新。</p>
-      <p><a href="${hrefBetween(path, "/about/")}">关于这个站</a></p>
+      <p>${path === "/about/" ? '<a href="#main">关于这个站</a>' : `<a href="${hrefBetween(path, "/about/")}">关于这个站</a>`}</p>
     </div>
   </footer>
   <div class="lightbox" id="lightbox" hidden>
@@ -410,7 +410,11 @@ export function normalizeResponsiveImageAttrs(html) {
 }
 
 export function rewriteMitStatic(html, fromPath) {
-  const prefixedPages = String(html).replace(/(href|src|action)="((?:index|hot|daily|search|starred)\.html)([^"]*)"/g, (_, attr, file, suffix) => {
+  const prefixedPages = String(html).replace(/(href|src|action)="((?:index|hot|daily|search|starred|more|weekly)\.html|weekly\/[^"]+\.html)([^"]*)"/g, (_, attr, file, suffix) => {
+    if (file.startsWith("weekly/") && file.endsWith(".html")) {
+      const dest = `/${file.replace(/\.html$/, "")}/`;
+      return `${attr}="${hrefBetween(fromPath, dest)}${suffix}"`;
+    }
     const page = file.replace(/\.html$/, "");
     const dest = page === "index" ? "/" : `/${page}/`;
     return `${attr}="${hrefBetween(fromPath, dest)}${suffix}"`;
@@ -808,13 +812,21 @@ function snapshotRemainingA() {
   const dest = join(root, "preview", "remaining-a");
   const src = join(root, "preview", "mit-static");
   mkdirSync(dest, { recursive: true });
-  for (const name of ["index.html", "hot.html", "daily.html", "search.html", "starred.html"]) {
+  for (const name of ["index.html", "hot.html", "daily.html", "search.html", "starred.html", "more.html"]) {
     const from = join(src, name);
     if (existsSync(from)) writeFileSync(join(dest, name), readFileSync(from));
   }
-  for (const dir of ["assets", "data", "feed", "api"]) {
+  for (const dir of ["assets", "data", "feed", "api", "weekly"]) {
     const from = join(distDir, dir);
     if (existsSync(from)) cpSync(from, join(dest, dir), { recursive: true });
+  }
+  for (const file of ["index.html", "hot.html", "daily.html", "search.html", "starred.html", "more.html"]) {
+    const full = join(dest, file);
+    if (!existsSync(full)) continue;
+    const rewritten = readFileSync(full, "utf8")
+      .replaceAll('href="weekly.html', 'href="weekly/index.html')
+      .replace(/href="weekly\/(\d{4}-\d{2}-\d{2})\.html/g, 'href="weekly/$1/index.html');
+    writeFileSync(full, injectBeforeHeadEnd(rewritten, faviconLinks("/")));
   }
 }
 

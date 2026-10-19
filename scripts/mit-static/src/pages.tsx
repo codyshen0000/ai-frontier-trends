@@ -12,9 +12,11 @@ import { ReportPaper, reportOutline } from "../../../vendor/mit/apps/web/app/fea
 import { StaticLocation } from "./react-router";
 import type { HotResponse, ReportDetail } from "@aihot/contracts/site";
 import { EmptyState } from "../../../vendor/mit/apps/web/app/components/ui/Page";
+import { ThemeSwitch } from "../../../vendor/mit/apps/web/app/components/shell/ThemeSwitch";
 import { daily, dailyIndex, hot, timeline, today } from "./fixture";
 import { DataAsOf, RssLink } from "./asof";
 import generated from "./covers.generated.json";
+import { Link } from "./react-router";
 
 const DATA_AS_OF = generated.asOf || "2026-10-18T00:20:00.000Z";
 const BUILT_AT = new Date().toISOString();
@@ -66,10 +68,14 @@ export function HomeScreen() {
         </div>
         {timeline.hot && inNav("/hot") && <HotTopics entries={timeline.hot} />}
         <div data-ft-timeline data-ft-filter="all">
-          <Timeline initial={timeline} filters={filters} />
+          {timeline.cards.length ? (
+            <Timeline initial={timeline} filters={filters} />
+          ) : (
+            <EmptyState title="过去 48 小时没有达到上榜条件的事件。" />
+          )}
         </div>
         <DataAsOf dataAsOf={DATA_AS_OF} builtAt={BUILT_AT} />
-        <RssLink />
+        <RssLink href="feed/weekly.xml" />
       </div>
     </Shell>
   );
@@ -80,7 +86,7 @@ export function HotScreen({ emptyCover = false }: { emptyCover?: boolean }) {
     <Shell pathname="/hot">
       <HotPage hot={emptyCover ? hotWithoutCover(hot) : hot} />
       <DataAsOf dataAsOf={DATA_AS_OF} builtAt={BUILT_AT} />
-      <RssLink />
+      <RssLink href="../feed/weekly.xml" />
     </Shell>
   );
 }
@@ -93,7 +99,7 @@ export function DailyScreen({ emptyCover = false }: { emptyCover?: boolean }) {
         <ReportPaper report={report} index={dailyIndex} />
       </ReportLayout>
       <DataAsOf dataAsOf={DATA_AS_OF} builtAt={BUILT_AT} />
-      <RssLink />
+      <RssLink href="../feed/weekly.xml" />
     </Shell>
   );
 }
@@ -111,6 +117,39 @@ export function SearchScreen() {
           <p className="text-[14px] text-ink-4">输入关键词搜索标题和摘要。</p>
         </div>
         <DataAsOf dataAsOf={DATA_AS_OF} builtAt={BUILT_AT} />
+      </div>
+    </Shell>
+  );
+}
+
+export function MoreScreen() {
+  return (
+    <Shell pathname="/more">
+      <div className="pb-6">
+        <h1 className="pt-4 text-[24px] font-semibold leading-[1.3] text-ink">我的</h1>
+        <p className="mt-2 text-[13.5px] text-ink-3">外观保存在这台浏览器里。收藏和搜索也在本机完成。</p>
+        <div className="mt-5">
+          <ThemeSwitch />
+        </div>
+        <ul className="mt-6 divide-y divide-line-soft border-y border-line-soft">
+          <li>
+            <Link to="/starred" className="flex min-h-11 items-center text-[15px] font-medium text-ink">
+              收藏
+            </Link>
+          </li>
+          <li>
+            <Link to="/search" className="flex min-h-11 items-center text-[15px] font-medium text-ink">
+              搜索
+            </Link>
+          </li>
+          <li>
+            <Link to="/weekly" className="flex min-h-11 items-center text-[15px] font-medium text-ink">
+              周报
+            </Link>
+          </li>
+        </ul>
+        <DataAsOf dataAsOf={DATA_AS_OF} builtAt={BUILT_AT} />
+        <RssLink href="../feed/weekly.xml" />
       </div>
     </Shell>
   );

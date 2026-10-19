@@ -28,10 +28,10 @@ export function DataAsOf({ dataAsOf, builtAt }: { dataAsOf: string; builtAt: str
   );
 }
 
-export function RssLink() {
+export function RssLink({ href = "feed/weekly.xml" }: { href?: string }) {
   return (
     <p className="ft-rss">
-      <a href="feed/weekly.xml" rel="alternate" type="application/rss+xml">
+      <a href={href} rel="alternate" type="application/rss+xml">
         RSS
       </a>
     </p>

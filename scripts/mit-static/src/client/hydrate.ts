@@ -4,7 +4,7 @@ type Star = { id: string; title: string; url: string; source: string; date: stri
 type ThemePref = "light" | "dark" | "system";
 type FtConfig = {
   base: string;
-  page: "home" | "hot" | "daily" | "search" | "starred";
+  page: "home" | "hot" | "daily" | "search" | "starred" | "more";
   dataAsOf: string;
   builtAt: string;
   hasTimeline: boolean;
@@ -594,7 +594,7 @@ function asset(path: string) {
   return `${cfg.base}${path.replace(/^\//, "")}`;
 }
 
-function pageHref(name: "search" | "starred" | "index" | "hot" | "daily") {
+function pageHref(name: "search" | "starred" | "index" | "hot" | "daily" | "more" | "weekly") {
   if (cfg.base === "./" || cfg.base === "") return `${name === "index" ? "index" : name}.html`;
   if (name === "index") return cfg.base;
   return `${cfg.base}${name}/`;
@@ -782,6 +782,68 @@ async function refreshFromMeta() {
   }
 }
 
+function bindTop() {
+  const btn = document.querySelector<HTMLButtonElement>("[data-ft-top]");
+  if (!btn) return;
+  const sync = () => {
+    const show = window.scrollY > Math.min(320, window.innerHeight * 0.6);
+    btn.classList.toggle("opacity-0", !show);
+    btn.classList.toggle("pointer-events-none", !show);
+    btn.classList.toggle("translate-y-2", !show);
+  };
+  btn.addEventListener("click", (event) => {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: reduceMotion() ? "auto" : "smooth" });
+  });
+  window.addEventListener("scroll", sync, { passive: true });
+  sync();
+}
+
+function bindToc() {
+  const btn = document.querySelector<HTMLButtonElement>("[data-ft-toc]");
+  const panel = document.querySelector<HTMLElement>("[data-ft-outline]");
+  if (!btn || !panel) return;
+  const close = () => {
+    panel.hidden = true;
+    btn.setAttribute("aria-expanded", "false");
+  };
+  const open = () => {
+    panel.hidden = false;
+    btn.setAttribute("aria-expanded", "true");
+  };
+  btn.addEventListener("click", (event) => {
+    event.preventDefault();
+    if (panel.hidden) open();
+    else close();
+  });
+  panel.querySelector("[data-ft-outline-close]")?.addEventListener("click", (event) => {
+    event.preventDefault();
+    close();
+    btn.focus();
+  });
+  panel.querySelectorAll("a[href^='#']").forEach((link) => {
+    link.addEventListener("click", () => close());
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !panel.hidden) {
+      close();
+      btn.focus();
+    }
+  });
+}
+
+function bindHotMethod() {
+  document.querySelectorAll("[data-ft-hot-method]").forEach((btn) => {
+    btn.addEventListener("click", (event) => {
+      event.preventDefault();
+      const method = document.getElementById("hot-method");
+      if (!(method instanceof HTMLDetailsElement)) return;
+      method.open = true;
+      method.scrollIntoView({ behavior: reduceMotion() ? "auto" : "smooth", block: "center" });
+    });
+  });
+}
+
 function bindPtr() {
   let startY = 0;
   let pulling = false;
@@ -797,7 +859,7 @@ function bindPtr() {
     if (window.scrollY <= 0 && y - startY >= 64) void refreshFromMeta();
   }, { passive: true });
 
-  document.querySelectorAll("nav[aria-label='底部导航'] a[aria-current='page']").forEach((tab) => {
+  document.querySelectorAll("nav[aria-label='底部导航'] [aria-current='page']").forEach((tab) => {
     tab.addEventListener("click", (event) => {
       if (window.scrollY > 0) return;
       event.preventDefault();
@@ -812,6 +874,9 @@ function boot() {
   bindFilters();
   bindSearch();
   bindPtr();
+  bindTop();
+  bindToc();
+  bindHotMethod();
   if (cfg.page === "starred") renderStarred();
 }
 

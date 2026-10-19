@@ -55,7 +55,7 @@ export function MediaThumbs({ media, className = "" }: { media: MediaView[]; cla
   );
 }
 
-type Starrable = Pick<FeedItemSummary, "id" | "title" | "summary" | "source" | "publishedAt" | "selected">;
+type Starrable = Pick<FeedItemSummary, "id" | "title" | "summary" | "source" | "publishedAt" | "selected"> & { url?: string };
 
 /** Whether an item is in this browser's 收藏, a toggle, and a counter that bumps when it is added. */
 export function useStar(item: Starrable) {
@@ -77,7 +77,7 @@ export function StarButton({ item, size, className = "size-[26px]" }: { item: St
   const snapshot = JSON.stringify({
     id: item.id,
     title: item.title,
-    url: "",
+    url: item.url || "",
     source: item.source?.name || "",
     date: item.publishedAt || "",
   });

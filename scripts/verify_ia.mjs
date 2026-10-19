@@ -19,6 +19,12 @@ import {
   coverEntries,
   walkPublicCopyFiles,
 } from "./story_digest.mjs";
+import {
+  assertPublicLinks,
+  collectExampleComHits,
+  collectHomeFallbackHits,
+  collectSelfLinkHits,
+} from "./static_links.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const config = JSON.parse(readFileSync(join(root, "site.config.json"), "utf8"));
@@ -274,10 +280,7 @@ assert(hotPage.includes("在 Hugging Face 放出"), "hot NO.01 digest is answer-
 for (const needle of ["权重跟踪", "记交付", "六件套", "低于门槛", "本批", "本条未覆盖", "score=", "闸分", "补位"]) {
   assert(!hotPage.includes(needle), `/hot/ public copy has no ${needle}`);
 }
-assert(
-  (hotPage.match(/text-\[12px\] leading-none text-ink-4">示例/g) || []).length >= 1,
-  "hot sparkline 示例 label is text-[12px]",
-);
+assert(!/>示例</.test(hotPage), "hot sparkline no longer writes 示例");
 assert(!/text-\[10px\] leading-none text-ink-4">示例/.test(hotPage), "hot sparkline 示例 is not 10px");
 
 const morePage = readFileSync(join(distDir, "more", "index.html"), "utf8");
@@ -742,6 +745,76 @@ const homeHtml = readFileSync(join(distDir, "index.html"), "utf8");
 assert(!/\bNaN\b/.test(homeHtml), "home HTML has no NaN from absent score");
 assert(!/data-score|score-label|item-score|ft-score/i.test(homeHtml), "home HTML has no score slot");
 assert(!/class="[^"]*score/.test(homeHtml), "home HTML has no score class slot");
+
+assert(existsSync(join(distDir, "more", "index.html")), "dist has /more/");
+for (const rel of ["index.html", join("hot", "index.html"), join("daily", "index.html")]) {
+  const html = readFileSync(join(distDir, rel), "utf8");
+  assert(html.includes("hydrate.js"), `${rel} ships hydrate.js`);
+  assert(html.includes("<script"), `${rel} has a script tag`);
+  for (const id of FIXTURE_IDS) {
+    assert(!html.includes(id), `${rel} does not render fixture id ${id}`);
+  }
+}
+
+{
+  const tmp = mkdtempSync(join(tmpdir(), "ia-example-"));
+  try {
+    writeFileSync(join(tmp, "daily.html"), `<a href="https://example.com/flash">原文</a>`);
+    expectThrow(
+      () => {
+        const hits = collectExampleComHits(tmp, { prefix: "dist/" });
+        if (hits.length) throw new Error(`example.com in ${hits[0].file}`);
+      },
+      /example\.com/,
+      "negative: example.com URL fails verify:ia",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "ia-selflink-"));
+  try {
+    writeFileSync(join(tmp, "daily.html"), `<a href="daily.html">17 周六</a>`);
+    expectThrow(
+      () => {
+        const hits = collectSelfLinkHits(tmp, { prefix: "dist/" });
+        if (hits.length) throw new Error(`self-link ${hits[0].file} «${hits[0].text}» → ${hits[0].href}`);
+      },
+      /self-link/,
+      "negative: link resolving to the current page fails verify:ia",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "ia-homefall-"));
+  try {
+    writeFileSync(join(tmp, "index.html"), `<h1>home</h1>`);
+    writeFileSync(join(tmp, "daily.html"), `<a href="index.html">关于</a>`);
+    expectThrow(
+      () => {
+        const hits = collectHomeFallbackHits(tmp, { prefix: "dist/" });
+        if (hits.length) throw new Error(`home-fallback ${hits[0].file} «${hits[0].text}» → ${hits[0].href}`);
+      },
+      /home-fallback/,
+      "negative: unknown route falling back to home fails verify:ia",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+
+try {
+  assertPublicLinks(distDir, {
+    prefix: "dist/",
+    pages: ["index.html", "hot/index.html", "daily/index.html", "search/index.html", "starred/index.html", "live/index.html"],
+  });
+  assert(true, "dist public links: no example.com, no self-page href, no home fallback");
+} catch (err) {
+  assert(false, err.message);
+}
 
 if (failed) {
   console.error(`\n${failed} check(s) failed`);

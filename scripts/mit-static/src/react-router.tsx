@@ -7,38 +7,10 @@ import {
   type ReactNode,
 } from "react";
 
-const PAGE = {
-  "/": "index.html",
-  "/hot": "hot.html",
-  "/daily": "daily.html",
-  "/weekly": "daily.html",
-  "/monthly": "daily.html",
-  "/all": "index.html",
-  "/more": "index.html",
-  "/topics": "index.html",
-  "/starred": "starred.html",
-  "/search": "search.html",
-  "/about": "index.html",
-  "/agent": "index.html",
-  "/changelog": "index.html",
-  "/feedback": "index.html",
-  "/daily/archive": "daily.html",
-} as const;
+import { resolveHref } from "./routes";
 
-export function hrefOf(to: string | { pathname?: string; search?: string; hash?: string }): string {
-  if (typeof to !== "string") {
-    const path = to.pathname ?? "/";
-    const extra = `${to.search ?? ""}${to.hash ?? ""}`;
-    return hrefOf(path) + extra;
-  }
-  const [pathAndQuery, hash] = to.split("#");
-  const [path, query] = pathAndQuery.split("?");
-  if (path.startsWith("/story/") || path.startsWith("/items/")) return `hot.html${hash ? `#${hash}` : ""}`;
-  if (path.startsWith("/daily/") || path.startsWith("/weekly/") || path.startsWith("/monthly/")) {
-    return `daily.html${hash ? `#${hash}` : ""}`;
-  }
-  const mapped = PAGE[path as keyof typeof PAGE] ?? "index.html";
-  return `${mapped}${query ? `?${query}` : ""}${hash ? `#${hash}` : ""}`;
+export function hrefOf(to: string | { pathname?: string; search?: string; hash?: string }, currentPath?: string): string {
+  return resolveHref(to, currentPath).href;
 }
 
 export type Location = { pathname: string; search: string; hash: string; key: string; state: unknown };
@@ -79,8 +51,14 @@ export function useRevalidator() {
 
 export function useMatches() {
   const { pathname } = useLocation();
-  const tab = pathname.startsWith("/hot") ? "hot" : pathname.startsWith("/daily") || pathname.startsWith("/weekly") ? "daily" : "featured";
-  const name = tab === "hot" ? "热点" : tab === "daily" ? "日报" : "精选";
+  const tab = pathname.startsWith("/hot")
+    ? "hot"
+    : pathname.startsWith("/daily") || pathname.startsWith("/weekly")
+      ? "daily"
+      : pathname.startsWith("/more") || pathname.startsWith("/starred") || pathname.startsWith("/search")
+        ? "me"
+        : "featured";
+  const name = tab === "hot" ? "热点" : tab === "daily" ? "日报" : tab === "me" ? "我的" : "精选";
   return [{ handle: { tab, name } }];
 }
 
@@ -117,8 +95,20 @@ export function Link({ to, className, children, onClick, ...rest }: LinkProps) {
     replace, preventScrollReset, viewTransition, prefetch, reloadDocument, ...anchor
   } = rest as LinkProps & Record<string, unknown>;
   void replace; void preventScrollReset; void viewTransition; void prefetch; void reloadDocument;
+  const { pathname } = useLocation();
+  const resolved = resolveHref(to, pathname);
+  if (resolved.kind === "unbuilt" || !resolved.href) {
+    return <span className={className}>{children}</span>;
+  }
+  const external = resolved.kind === "external";
   return (
-    <a href={hrefOf(to)} className={className} onClick={onClick} {...anchor}>
+    <a
+      href={resolved.href}
+      className={className}
+      onClick={onClick}
+      {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+      {...anchor}
+    >
       {children}
     </a>
   );
@@ -138,8 +128,10 @@ export function Form({
   children?: ReactNode;
   onSubmit?: (event: FormEvent) => void;
 }) {
+  const { pathname } = useLocation();
+  const dest = action ? hrefOf(action, pathname) : "";
   return (
-    <form action={action ? hrefOf(action) : undefined} method={method} role={role} className={className} onSubmit={onSubmit}>
+    <form action={dest || undefined} method={method} role={role} className={className} onSubmit={onSubmit}>
       {children}
     </form>
   );

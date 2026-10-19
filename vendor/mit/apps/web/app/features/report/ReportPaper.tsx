@@ -15,6 +15,7 @@ import { IconArrowLeft, IconArrowRight, IconArrowUpRight } from "../../component
 import { Kicker } from "../../components/ui/Kicker";
 import type { OutlineEntry } from "../../components/ui/OutlineSheet";
 import { SourceAvatar } from "../../components/ui/SourceAvatar";
+import { StarButton } from "../feed/parts";
 import { Halftone } from "./Halftone";
 import { Nameplate } from "./Nameplate";
 import { IssueDots } from "./IssueDots";
@@ -23,7 +24,9 @@ import { EDITION, MOTTO, dateLine, dateMark, headline, metricItems, neighbourLab
 
 const pad = (n: number) => String(n).padStart(2, "0");
 const keyOf = (c: ReportCitation) => c.itemId ?? c.title;
-const anchorOf = (c: ReportCitation) => (c.itemId ? `r-${c.itemId}` : null);
+const anchorOf = (c: ReportCitation) => (c.itemId ? `s-${c.itemId}` : null);
+const isPublicUrl = (url?: string | null): url is string =>
+  !!url && /^https?:\/\//i.test(url) && !/example\.com/i.test(url);
 const LINK = "inline-flex min-h-7 items-center gap-0.5 font-medium transition-colors hover:text-accent";
 /** What comes before `noun` at the end of `phrase` ("往期 AI " of "往期 AI 周报"), so the kind's name is its own text. */
 const before = (phrase: string, noun: string) => phrase.slice(0, -noun.length);
@@ -98,6 +101,7 @@ function Source({ c, size = 16 }: { c: ReportCitation; size?: number }) {
  * chose: first-hand first, then the best scored), so there is one place to go.
  */
 function Original({ c, className = "" }: { c: ReportCitation; className?: string }) {
+  if (!isPublicUrl(c.sourceUrl)) return null;
   return (
     <a href={c.sourceUrl} target="_blank" rel="noopener noreferrer" aria-label={`阅读${c.sourceName}原文：${c.title}（新标签页）`} className={`${LINK} text-[12.5px] text-ink-3 ${className}`}>
       原文 <IconArrowUpRight size={12} />
@@ -116,7 +120,11 @@ function Related({ items, className = "" }: { items: ReportCitation[]; className
         <li key={keyOf(r)} className="flex gap-2.5 text-[13.5px] leading-[1.65]">
           <span className="mt-[9px] size-1 shrink-0 rounded-full bg-ink-4" aria-hidden="true" />
           <span className="min-w-0">
-            {r.available && r.itemId ? (
+            {r.available && isPublicUrl(r.sourceUrl) ? (
+              <a href={r.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-ink-2 transition-colors hover:text-accent">
+                {r.title}
+              </a>
+            ) : r.available && r.itemId ? (
               <IntentLink viewTransition to={`/items/${r.itemId}`} className="text-ink-2 transition-colors hover:text-accent">
                 {r.title}
               </IntentLink>
@@ -144,16 +152,36 @@ function Coverage({ c }: { c: ReportCitation }) {
 /** One story: source, headline, at most four lines of summary, and the original at the foot. */
 function Story({ c, dated, className = "" }: { c: ReportCitation; dated: boolean; className?: string }) {
   return (
-    <article id={anchorOf(c) ?? undefined} className={`flex min-w-0 scroll-mt-[calc(var(--bar-h)+1.5rem)] flex-col py-6 ${className}`}>
+    <article id={anchorOf(c) ?? undefined} className={`flex min-w-0 scroll-mt-[calc(var(--bar-h)+1.5rem)] flex-col py-6 ${className}`} data-item-id={c.itemId ?? undefined}>
       <div className="flex items-center gap-2 text-[12px] text-ink-3">
         <Source c={c} />
         {c.available && <Coverage c={c} />}
-        {dated && c.publishedAt && <span className="num ml-auto shrink-0 text-ink-4">{shortDay(c.publishedAt)}</span>}
+        {c.itemId && (
+          <span className="ml-auto">
+            <StarButton
+              item={{
+                id: c.itemId,
+                title: c.title,
+                summary: c.summary,
+                source: { name: c.sourceName },
+                publishedAt: c.publishedAt,
+                selected: false,
+                url: isPublicUrl(c.sourceUrl) ? c.sourceUrl : "",
+              }}
+              className="size-11 lg:size-[26px]"
+            />
+          </span>
+        )}
+        {dated && c.publishedAt && <span className="num shrink-0 text-ink-4">{shortDay(c.publishedAt)}</span>}
       </div>
       {c.available ? (
         <>
           <h3 className="mt-3 text-[19px] font-bold leading-[1.5] tracking-[-0.01em] text-ink [text-wrap:pretty] @[880px]:text-[20px]">
-            {c.itemId ? (
+            {isPublicUrl(c.sourceUrl) ? (
+              <a href={c.sourceUrl} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-accent">
+                {c.title}
+              </a>
+            ) : c.itemId ? (
               <IntentLink viewTransition to={`/items/${c.itemId}`} className="transition-colors hover:text-accent">
                 {c.title}
               </IntentLink>
@@ -291,7 +319,11 @@ function FrontPage({ report, pages, leadStory, count }: { report: ReportDetail; 
         <Kicker>{byEvent ? "头条" : "本期导读"}</Kicker>
         {cover && wide && <LeadPicture cover={cover} onError={() => setBroken(cover.url)} priority className="order-2 mt-5 @[560px]:order-1" />}
         <h2 className="order-1 mt-4 text-[32px] font-black leading-[1.28] tracking-[-0.03em] text-ink [text-wrap:balance] @[520px]:text-[40px] @[560px]:order-2 @[1040px]:text-[48px] @[1040px]:leading-[1.22]">
-          {leadStory?.itemId ? (
+          {isPublicUrl(leadStory?.sourceUrl) ? (
+            <a href={leadStory.sourceUrl} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-accent">
+              {title}
+            </a>
+          ) : leadStory?.itemId ? (
             <IntentLink viewTransition to={`/items/${leadStory.itemId}`} className="transition-colors hover:text-accent">
               {title}
             </IntentLink>
@@ -310,6 +342,20 @@ function FrontPage({ report, pages, leadStory, count }: { report: ReportDetail; 
             <Source c={leadStory} size={18} />
             <Coverage c={leadStory} />
             <Original c={leadStory} />
+            {leadStory.itemId && (
+              <StarButton
+                item={{
+                  id: leadStory.itemId,
+                  title: leadStory.title,
+                  summary: leadStory.summary,
+                  source: { name: leadStory.sourceName },
+                  publishedAt: leadStory.publishedAt,
+                  selected: false,
+                  url: isPublicUrl(leadStory.sourceUrl) ? leadStory.sourceUrl : "",
+                }}
+                className="size-11 lg:size-[26px]"
+              />
+            )}
           </div>
         )}
         {!!leadStory?.related?.length && <Related items={leadStory.related} className="order-5 mt-5 border-t border-line pt-4" />}
@@ -457,8 +503,9 @@ function History({ report, index }: { report: ReportDetail; index: ReportNavigat
 
 /** The issue's pages for the phone outline: the front page, each page under its number, then 快讯. */
 export function reportOutline(report: ReportDetail): OutlineEntry[] {
-  const pages = pagesOf(report, leadStoryOf(report));
-  if (pages.length === 0 && report.flashes.length === 0) return [];
+  const lead = leadStoryOf(report);
+  const pages = pagesOf(report, lead);
+  if (pages.length === 0 && report.flashes.length === 0 && !lead && !report.lead) return [];
   return [
     { id: "report-start", text: "头版", level: 2, mark: "" },
     ...pages.map((p, i) => ({ id: p.id, text: p.label, level: 2, mark: pad(i + 1), note: `${p.items.length} 件` })),
@@ -474,7 +521,7 @@ export function ReportPaper({ report, index }: { report: ReportDetail; index: Re
   // Only a daily comes out with nothing in it: a day the editors judged with nothing new (REPORTS.quiet).
   const quiet = count === 0 && report.flashes.length === 0;
   return (
-    <article className="@container [overflow-wrap:anywhere]">
+    <article id={`d-${report.key}`} className="@container [overflow-wrap:anywhere]">
       <Masthead report={report} index={index} quiet={quiet} />
       {quiet ? (
         report.lead && <QuietFront lead={report.lead} />

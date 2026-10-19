@@ -1,5 +1,5 @@
 import { renderToString } from "react-dom/server";
-import { DailyScreen, HomeScreen, HotScreen, SearchScreen, StarredScreen } from "./pages";
+import { DailyScreen, HomeScreen, HotScreen, MoreScreen, SearchScreen, StarredScreen } from "./pages";
 import { SITE } from "@aihot/site";
 import generated from "./covers.generated.json";
 
@@ -9,6 +9,7 @@ export const pages = [
   { file: "daily.html", title: withSubjectSafe("日报"), pathname: "/daily", page: "daily", node: <DailyScreen /> },
   { file: "search.html", title: "搜索", pathname: "/search", page: "search", node: <SearchScreen /> },
   { file: "starred.html", title: "收藏", pathname: "/starred", page: "starred", node: <StarredScreen /> },
+  { file: "more.html", title: "我的", pathname: "/more", page: "more", node: <MoreScreen /> },
   { file: "hot-empty.html", title: withSubjectSafe("热点榜"), pathname: "/hot", page: "hot", node: <HotScreen emptyCover /> },
   { file: "daily-empty.html", title: withSubjectSafe("日报"), pathname: "/daily", page: "daily", node: <DailyScreen emptyCover /> },
 ];

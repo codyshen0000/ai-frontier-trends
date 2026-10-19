@@ -7,6 +7,7 @@ import { EmptyState } from "../components/ui/Page";
 import { IconChevronDown, IconInfo } from "../components/icons";
 import { Sparkline } from "../features/hot/Sparkline";
 import { Faces } from "../features/hot/Faces";
+import { StarButton } from "../features/feed/parts";
 import { Delta } from "../features/hot/Delta";
 import { PhoneBar } from "../components/shell/PhoneBar";
 import { scrollBehavior } from "../lib/motion";
@@ -49,6 +50,10 @@ function Badges({ e }: { e: HotEntryView }) {
 }
 
 /** The whole card opens the event; the title carries the link and stretches over the card. */
+function storyIds(e: HotEntryView) {
+  return { publicId: e.story.publicId, itemId: e.story.publicId.replace(/^st-/, "") };
+}
+
 function StoryLink({ e, className }: { e: HotEntryView; className: string }) {
   return (
     <IntentLink viewTransition to={`/story/${e.story.publicId}`} className={`transition-colors after:absolute after:inset-0 after:content-[''] ${className}`}>
@@ -57,15 +62,35 @@ function StoryLink({ e, className }: { e: HotEntryView; className: string }) {
   );
 }
 
+function storyAnchorProps(e: HotEntryView) {
+  const { publicId, itemId } = storyIds(e);
+  return {
+    id: `s-${publicId}`,
+    "data-item-id": itemId,
+  };
+}
+
 /** No. 1: the event people are talking about most, with its picture when valuable, digest, latest turn and heat. */
 function Lead({ e }: { e: HotEntryView }) {
   return (
-    <article className="card card-hover group relative flex flex-col overflow-hidden p-5 sm:p-6">
+    <article {...storyAnchorProps(e)} className="card card-hover group relative flex flex-col overflow-hidden p-5 sm:p-6">
       <div className="flex items-center gap-2.5">
         <span className={`mono text-[12px] font-bold tracking-[0.16em] ${rankColor(e.rank)}`}>NO.{pad(e.rank)}</span>
         <Badges e={e} />
         <Delta trend={e.trend} pct={e.trendPct} className="ml-auto" />
+        <StarButton
+          item={{
+            id: e.story.publicId,
+            title: e.story.title,
+            summary: e.summary,
+            source: { name: e.sourceNames[0] || "" },
+            publishedAt: null,
+            selected: false,
+          }}
+          className="size-11 lg:size-[26px]"
+        />
       </div>
+      {storyIds(e).itemId !== e.story.publicId && <span id={`s-${storyIds(e).itemId}`} hidden />}
       <div className={`mt-4 grid gap-5 ${e.cover ? "xl:grid-cols-[minmax(0,1fr)_minmax(0,0.72fr)] xl:gap-7" : ""}`}>
         <div className="min-w-0">
           <h2 className="text-[21px] font-bold leading-[1.4] tracking-[-0.01em] text-ink sm:text-[23px] lg:text-[25px] lg:leading-[1.38]">
@@ -98,7 +123,6 @@ function Lead({ e }: { e: HotEntryView }) {
         <div className="flex w-full shrink-0 items-end justify-between gap-5 sm:ml-auto sm:w-auto sm:justify-end">
           <span className="flex flex-col items-end gap-1">
             <Sparkline values={e.spark} className="h-10 w-[140px]" />
-            <span className="text-[12px] leading-none text-ink-4">示例</span>
           </span>
           <div className="text-right">
             <div className="mono text-[34px] font-semibold leading-none tracking-[-0.03em] text-ink">{Math.round(e.heat)}</div>
@@ -113,7 +137,7 @@ function Lead({ e }: { e: HotEntryView }) {
 /** No. 2 and 3: the same card, smaller, without the picture. */
 function Runner({ e }: { e: HotEntryView }) {
   return (
-    <article className="card card-hover group relative flex flex-col px-5 py-4">
+    <article {...storyAnchorProps(e)} className="card card-hover group relative flex flex-col px-5 py-4">
       <div className="flex items-center gap-2.5">
         <span className={`mono text-[12px] font-bold tracking-[0.16em] ${rankColor(e.rank)}`}>NO.{pad(e.rank)}</span>
         <Badges e={e} />
@@ -134,7 +158,6 @@ function Runner({ e }: { e: HotEntryView }) {
         <div className="flex items-end gap-3">
           <span className="flex flex-col items-end gap-1">
             <Sparkline values={e.spark} className="h-7 w-[92px]" />
-            <span className="text-[12px] leading-none text-ink-4">示例</span>
           </span>
           <span className="mono text-[24px] font-semibold leading-none tracking-[-0.02em] text-ink">{Math.round(e.heat)}</span>
         </div>
@@ -146,7 +169,7 @@ function Runner({ e }: { e: HotEntryView }) {
 /** No. 4–10: a row each, with a line of the digest, faces, the day of heat and the index. */
 function Row({ e }: { e: HotEntryView }) {
   return (
-    <li className="group relative grid grid-cols-[30px_minmax(0,1fr)] items-start gap-x-3 px-4 py-3 transition-colors hover:bg-bg-sunk/70 sm:px-5 lg:grid-cols-[44px_minmax(0,1fr)_auto_104px_76px] lg:items-center lg:gap-x-6 lg:px-6 lg:py-3.5 dark:hover:bg-bg-muted/40">
+    <li {...storyAnchorProps(e)} className="group relative grid grid-cols-[30px_minmax(0,1fr)] items-start gap-x-3 px-4 py-3 transition-colors hover:bg-bg-sunk/70 sm:px-5 lg:grid-cols-[44px_minmax(0,1fr)_auto_104px_76px] lg:items-center lg:gap-x-6 lg:px-6 lg:py-3.5 dark:hover:bg-bg-muted/40">
       <span className={`mono text-[16px] font-semibold leading-[24px] lg:text-[17px] ${rankColor(e.rank)}`} aria-label={`热度排名第 ${e.rank} 位`}>
         {pad(e.rank)}
       </span>
@@ -176,7 +199,6 @@ function Row({ e }: { e: HotEntryView }) {
       </div>
       <span className="hidden flex-col items-end justify-center gap-1 lg:flex">
         <Sparkline values={e.spark} className="h-7 w-[104px]" />
-        <span className="text-[12px] leading-none text-ink-4">示例</span>
       </span>
       <div className="hidden flex-col items-end gap-1 lg:flex">
         <span className="mono text-[20px] font-semibold leading-none tracking-[-0.02em] text-ink">{Math.round(e.heat)}</span>
@@ -215,7 +237,7 @@ export default function HotPage({ hot }: { hot: HotResponse }) {
           </>
         }
         actions={
-          <button type="button" onClick={showMethod} className="flex h-11 items-center gap-1 px-3 text-[14px] text-accent active:opacity-50">
+          <button type="button" data-ft-hot-method onClick={showMethod} className="flex h-11 items-center gap-1 px-3 text-[14px] text-accent active:opacity-50">
             <IconInfo size={17} /> 怎么算
           </button>
         }
@@ -262,7 +284,7 @@ export default function HotPage({ hot }: { hot: HotResponse }) {
                 <h2 className="text-[15px] font-semibold text-ink">
                   继续看 <span className="num font-normal text-ink-4">No.{pad(others[0]!.rank)}–{pad(others[others.length - 1]!.rank)}</span>
                 </h2>
-                <span className="hidden text-[12px] text-ink-4 lg:block">参与者 · {SPARK_HOURS} 小时走势（示例） · 热度指数</span>
+                <span className="hidden text-[12px] text-ink-4 lg:block">参与者 · {SPARK_HOURS} 小时走势 · 热度指数</span>
               </div>
               <ol className="card divide-y divide-line-soft overflow-hidden">
                 {others.map((e) => (
