@@ -232,7 +232,7 @@
    {
     "rank": 1,
     "title": "Anthropic 技术岗初级招聘占比从 27% 降到 9%",
-    "heat": 9.3,
+    "heat": 8.3,
     "trend": "down",
     "storyPublicId": "2026-10-19-anthropic-workforce-junior",
     "itemId": "sha256:5365820f4dd21c16",
@@ -252,7 +252,7 @@
    {
     "rank": 2,
     "title": "Meta 删除可能允许抓取新闻站训练 AI 的条款",
-    "heat": 6.7,
+    "heat": 6.0,
     "trend": "down",
     "storyPublicId": "2026-10-19-meta-terms-scraping",
     "itemId": "sha256:0b81a58f5b3fe131",
@@ -268,45 +268,6 @@
     ],
     "participantCount": 2,
     "belowThreshold": true
-   },
-   {
-    "rank": 3,
-    "title": "Claude 30 分钟内解开 NIST 曲线种子 25 年谜题",
-    "heat": 5.8,
-    "trend": "down",
-    "storyPublicId": "2026-10-19-claude-nist-ecdsa",
-    "itemId": "sha256:584592e06b7b9958",
-    "participants": [
-     {
-      "name": "The Decoder",
-      "kind": "editorial"
-     },
-     {
-      "name": "量子位",
-      "kind": "editorial"
-     }
-    ],
-    "participantCount": 2,
-    "belowThreshold": true
-   },
-   {
-    "rank": 4,
-    "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
-    "heat": 5.5,
-    "trend": "down",
-    "storyPublicId": "2026-10-19-deepseek-v41-flash-1017",
-    "itemId": "sha256:931ff0f85ef4bf70",
-    "participants": [
-     {
-      "name": "量子位",
-      "kind": "editorial"
-     },
-     {
-      "name": "The Decoder",
-      "kind": "editorial"
-     }
-    ],
-    "participantCount": 2
    }
   ],
   "dayCounts": {
@@ -319,7 +280,7 @@
   {
    "rank": 1,
    "title": "Anthropic 技术岗初级招聘占比从 27% 降到 9%",
-   "heat": 9.3,
+   "heat": 8.3,
    "trend": "down",
    "storyPublicId": "2026-10-19-anthropic-workforce-junior",
    "itemId": "sha256:5365820f4dd21c16",
@@ -339,7 +300,7 @@
   {
    "rank": 2,
    "title": "Meta 删除可能允许抓取新闻站训练 AI 的条款",
-   "heat": 6.7,
+   "heat": 6.0,
    "trend": "down",
    "storyPublicId": "2026-10-19-meta-terms-scraping",
    "itemId": "sha256:0b81a58f5b3fe131",
@@ -355,49 +316,10 @@
    ],
    "participantCount": 2,
    "belowThreshold": true
-  },
-  {
-   "rank": 3,
-   "title": "Claude 30 分钟内解开 NIST 曲线种子 25 年谜题",
-   "heat": 5.8,
-   "trend": "down",
-   "storyPublicId": "2026-10-19-claude-nist-ecdsa",
-   "itemId": "sha256:584592e06b7b9958",
-   "participants": [
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "量子位",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 2,
-   "belowThreshold": true
-  },
-  {
-   "rank": 4,
-   "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
-   "heat": 5.5,
-   "trend": "down",
-   "storyPublicId": "2026-10-19-deepseek-v41-flash-1017",
-   "itemId": "sha256:931ff0f85ef4bf70",
-   "participants": [
-    {
-     "name": "量子位",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 2
   }
  ],
  "hot": {
-  "computedAt": "2026-10-19T08:27:16.000Z",
+  "computedAt": "2026-10-19T12:25:37.000Z",
   "windowHours": 48,
   "entries": [
    {
@@ -406,9 +328,9 @@
      "publicId": "2026-10-19-anthropic-workforce-junior",
      "title": "Anthropic 技术岗初级招聘占比从 27% 降到 9%"
     },
-    "heat": 9.3,
+    "heat": 8.3,
     "trend": "down",
-    "trendPct": -15.5,
+    "trendPct": -15.3,
     "badges": [],
     "participantCount": 2,
     "sourceCount": 2,
@@ -427,10 +349,6 @@
      }
     ],
     "spark": [
-     7.1,
-     6.9,
-     6.7,
-     6.6,
      6.4,
      6.2,
      15.8,
@@ -451,7 +369,11 @@
      10.3,
      10.0,
      9.7,
-     9.4
+     9.4,
+     9.1,
+     8.9,
+     8.6,
+     8.4
     ],
     "summary": "The Decoder 报道：Anthropic 技术岗新招聘中初级职位占比自 2025 年初的 27% 降至 9%；到 2026 年 8 月，公司内 AI 智能体的工作时长已达员工的约六倍。",
     "latest": null,
@@ -464,9 +386,9 @@
      "publicId": "2026-10-19-meta-terms-scraping",
      "title": "Meta 删除可能允许抓取新闻站训练 AI 的条款"
     },
-    "heat": 6.7,
+    "heat": 6.0,
     "trend": "down",
-    "trendPct": -15.2,
+    "trendPct": -15.5,
     "badges": [],
     "participantCount": 2,
     "sourceCount": 2,
@@ -485,10 +407,6 @@
      }
     ],
     "spark": [
-     13.5,
-     13.1,
-     12.8,
-     12.4,
      12.0,
      11.7,
      11.4,
@@ -509,127 +427,16 @@
      7.4,
      7.2,
      7.0,
-     6.8
+     6.8,
+     6.6,
+     6.4,
+     6.2,
+     6.0
     ],
     "summary": "遭反对后，Meta 再次修改商业条款，删除暗示可抓取包括新闻网站在内的内容用于训练 AI 的表述。",
     "latest": null,
     "cover": null,
     "belowThreshold": true
-   },
-   {
-    "rank": 3,
-    "story": {
-     "publicId": "2026-10-19-claude-nist-ecdsa",
-     "title": "Claude 30 分钟内解开 NIST 曲线种子 25 年谜题"
-    },
-    "heat": 5.8,
-    "trend": "down",
-    "trendPct": -15.9,
-    "badges": [],
-    "participantCount": 2,
-    "sourceCount": 2,
-    "sourceNames": [
-     "The Decoder",
-     "量子位"
-    ],
-    "participants": [
-     {
-      "name": "The Decoder",
-      "kind": "editorial"
-     },
-     {
-      "name": "量子位",
-      "kind": "editorial"
-     }
-    ],
-    "spark": [
-     11.7,
-     11.4,
-     11.0,
-     10.7,
-     10.4,
-     10.1,
-     9.8,
-     9.6,
-     9.3,
-     9.0,
-     8.8,
-     8.5,
-     8.3,
-     8.0,
-     7.8,
-     7.6,
-     7.4,
-     7.2,
-     7.0,
-     6.8,
-     6.6,
-     6.4,
-     6.2,
-     6.0,
-     5.9
-    ],
-    "summary": "Anthropic 的 Claude 解开了一个 25 年的密码学谜题：NIST 数字签名标准曲线的种子由 NSA 提供且无解释，长期引发后门疑虑。",
-    "latest": null,
-    "cover": null,
-    "belowThreshold": true
-   },
-   {
-    "rank": 4,
-    "story": {
-     "publicId": "2026-10-19-deepseek-v41-flash-1017",
-     "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API"
-    },
-    "heat": 5.5,
-    "trend": "down",
-    "trendPct": -15.4,
-    "badges": [],
-    "participantCount": 2,
-    "sourceCount": 2,
-    "sourceNames": [
-     "量子位",
-     "The Decoder"
-    ],
-    "participants": [
-     {
-      "name": "量子位",
-      "kind": "editorial"
-     },
-     {
-      "name": "The Decoder",
-      "kind": "editorial"
-     }
-    ],
-    "spark": [
-     11.1,
-     10.7,
-     10.4,
-     10.1,
-     9.8,
-     9.6,
-     9.3,
-     9.0,
-     8.8,
-     8.5,
-     8.3,
-     8.0,
-     7.8,
-     7.6,
-     7.4,
-     7.2,
-     7.0,
-     6.8,
-     6.6,
-     6.4,
-     6.2,
-     6.0,
-     5.9,
-     5.7,
-     5.5
-    ],
-    "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017：基准更好、完成任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API。The Decoder 与量子位均有报道。",
-    "latest": null,
-    "cover": null
    }
   ]
  },
