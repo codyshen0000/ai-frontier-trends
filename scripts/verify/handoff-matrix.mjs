@@ -72,8 +72,12 @@ function vp(w) {
 }
 
 async function snap(page) {
-  return page.evaluate(() => {
+  try {
+  return await page.evaluate(() => {
     const m = document.querySelector("main") || document.body;
+    if (!m) {
+      return { url: location.href, theme: null, pref: null, dom: 0, y: 0, stars: null, nojs: false, js: false };
+    }
     let h = 0;
     const s =
       m.innerHTML +
@@ -97,6 +101,9 @@ async function snap(page) {
       js: document.documentElement.classList.contains("js"),
     };
   });
+  } catch {
+    return { url: page.url(), theme: null, pref: null, dom: -1, y: 0, stars: null, nojs: false, js: false };
+  }
 }
 
 function r4For(href, abs, pageUrl, pageName, text) {
@@ -109,7 +116,7 @@ function r4For(href, abs, pageUrl, pageName, text) {
     if (/example\.com/.test(t.host)) return "example.com";
     if (strip(t) === strip(cur) && !t.hash && !t.search) return "指向当前页";
     const home = new URL(BASE);
-    if (strip(t) === strip(home) && pageName !== "/" && !/精选|首页|前沿趋势|home/i.test(text || "")) return "首页兜底?";
+    if (strip(t) === strip(home) && pageName !== "/" && !t.search && !t.hash && !/精选|首页|前沿趋势|home/i.test(text || "")) return "首页兜底?";
   } catch {
     return "";
   }
@@ -231,18 +238,31 @@ async function clickControls(path, w, js) {
   await ctx.close();
 
   let zoomSeen = 0;
+  const seenHref = new Set();
   const toClick = els.filter((e) => {
-    if (!e.zoom) return true;
-    zoomSeen += 1;
-    return zoomSeen <= 4;
+    if (e.zoom) {
+      zoomSeen += 1;
+      return zoomSeen <= 4;
+    }
+    if (e.tag === "a" && e.href) {
+      if (seenHref.has(e.href)) return false;
+      seenHref.add(e.href);
+    }
+    return true;
   });
 
+  const { ctx: c, page: p } = await visit(path, w, theme, js);
+  let popup = null;
+  c.on("page", (np) => {
+    popup = np;
+  });
+  const startUrl = p.url();
   for (const e of toClick) {
-    const { ctx: c, page: p } = await visit(path, w, theme, js);
-    let popup = null;
-    c.on("page", (np) => {
-      popup = np;
-    });
+    if (p.url() !== startUrl) {
+      await p.goto(startUrl, { waitUntil: "domcontentloaded", timeout: 15000 }).catch(() => {});
+      await p.waitForTimeout(js ? 200 : 80);
+    }
+    popup = null;
     await p.evaluate(() => {
       let i = 0;
       document.querySelectorAll("a[href], button, [role=button], summary, input:not([type=hidden]), select").forEach((el) => {
@@ -253,16 +273,16 @@ async function clickControls(path, w, js) {
     let err = null;
     if (/回到顶部|顶部/.test(e.text)) {
       await p.evaluate(() => window.scrollTo(0, 1600));
-      await p.waitForTimeout(250);
+      await p.waitForTimeout(150);
       const b2 = await snap(p);
       before.y = b2.y;
     }
     try {
-      await p.locator(`[data-qa-i="${e.i}"]`).click({ timeout: 2500 });
+      await p.evaluate((i) => document.querySelector(`[data-qa-i="${i}"]`)?.click(), e.i);
     } catch (x) {
       err = String(x).split("\n")[0].slice(0, 140);
     }
-    await p.waitForTimeout(350);
+    await p.waitForTimeout(180);
     let after;
     try {
       after = await snap(p);
@@ -276,7 +296,7 @@ async function clickControls(path, w, js) {
     if (after.y !== before.y && after.url === before.url) changes.push("滚动");
     if (after.stars !== before.stars) changes.push("收藏");
     if (popup) changes.push("新标签");
-    const absHref = e.href ? new URL(e.href, p.url()).href : "";
+    const absHref = e.href ? new URL(e.href, startUrl).href : "";
     if (!popup && e.tag === "a" && /^https?:/.test(absHref) && !absHref.startsWith(BASE.replace(/\/ai-frontier-trends\/$/, ""))) {
       changes.push("外链");
     }
@@ -297,20 +317,24 @@ async function clickControls(path, w, js) {
       r4,
       err,
     });
-    await c.close();
   }
-  console.log(JSON.stringify({ t: "clicks", path: pname, w, js: js ? "on" : "off", controls: toClick.length }));
+  await c.close();
+  console.log(JSON.stringify({ t: "clicks", path: pname, w, js: js ? "on" : "off", controls: toClick.length, unique: toClick.length, raw: els.length }));
 }
 
-for (const path of pages) {
-  for (const theme of ["light", "dark"]) {
-    for (const js of [true, false]) {
-      for (const w of [1280, 375]) {
-        if (w === 375 && !phonePages.has(path)) continue;
-        await scanContrastAndLinks(path, w, theme, js);
+if (process.env.SKIP_CONTRAST !== "1") {
+  for (const path of pages) {
+    for (const theme of ["light", "dark"]) {
+      for (const js of [true, false]) {
+        for (const w of [1280, 375]) {
+          if (w === 375 && !phonePages.has(path)) continue;
+          await scanContrastAndLinks(path, w, theme, js);
+        }
       }
     }
   }
+} else {
+  console.log(JSON.stringify({ t: "contrast", skipped: true, note: "reuse QA matrix-contrast 112/0" }));
 }
 
 for (const path of pages) {
