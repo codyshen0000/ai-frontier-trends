@@ -10,7 +10,7 @@ const URL_ALT = /^(?:https?:)?\/\/|^https?:\/\//i;
 
 export const BANNED_PUBLIC_COPY =
   /权重跟踪|记交付|本批|六件套|低于门槛|\[低于门槛补位\]|补位|score=|闸分|闸\s*[AB]|资料是否齐全|本条材料未披露故|本条未覆盖|不进信号表|不进正表|不升档|趋势分析已定性|不碰训练配方|不进训练方法主线|挂主线|挂 RSI|挂观察|日常降为简讯|不当推理机/;
-export const PUBLIC_COPY_SCAN_EXTS = new Set([".html", ".json", ".xml", ".md", ".svg", ".js"]);
+export const PUBLIC_COPY_SCAN_EXTS = new Set([".html", ".json", ".xml", ".md", ".svg", ".js", ".css", ".txt"]);
 
 let cached = null;
 

@@ -50,6 +50,20 @@ export function ReportLayout({ kind, index, current, today, outline = [], back, 
             />
             <ReportPhoneNav kind={kind} index={index} current={current} today={today} />
             {outline.length > 0 && (
+              <div className="mb-3 hidden lg:flex">
+                <button
+                  type="button"
+                  data-ft-toc
+                  aria-expanded={outlineOpen}
+                  aria-controls="ft-outline"
+                  onClick={() => setOutlineOpen((open) => !open)}
+                  className="inline-flex min-h-11 items-center rounded-full border border-line px-3 text-[13px] font-medium text-ink-2 hover:bg-bg-sunk"
+                >
+                  本期目录
+                </button>
+              </div>
+            )}
+            {outline.length > 0 && (
               <nav id="ft-outline" hidden={!outlineOpen} data-ft-outline className="ft-outline-sheet" aria-label="本期目录">
                 <div className="ft-outline-head">
                   <strong>本期目录</strong>

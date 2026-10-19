@@ -58,6 +58,12 @@ function assertPublicText(text, label) {
   if (hit) throw new Error(`${label} contains banned copy «${hit}»`);
 }
 
+function publicRel(url) {
+  if (!url) return "";
+  if (/^https?:\/\//i.test(url)) return url;
+  return String(url).replace(/^\//, "");
+}
+
 function clip(text, max) {
   const clean = String(text || "").replace(/\s+/g, " ").trim();
   if (clean.length <= max) return clean;
@@ -79,7 +85,7 @@ function weeklyDocs(contentDir) {
       source: SITE,
       category: null,
       date: `${issue.date}T00:00:00+08:00`,
-      url: `${issue.path}`,
+      url: publicRel(issue.path),
     });
   }
   return out;
@@ -111,7 +117,7 @@ function liveDocs(contentDir) {
       source: x ? `@${String(x.href).replace(/^https?:\/\/(?:www\.)?(?:x|twitter)\.com\//i, "").split("/")[0]}` : (card.sources?.[0]?.name || ""),
       category,
       date: card.day ? `${card.day}T00:00:00+08:00` : "",
-      url: card.sources?.[0]?.href || "/live/",
+      url: publicRel(card.sources?.[0]?.href || "live/"),
     });
   }
   return out;
@@ -131,7 +137,7 @@ function timelineDocs(contentDir) {
     source: SITE,
     category: null,
     date: "",
-    url: "/timeline/",
+    url: "timeline/",
   }];
 }
 
@@ -185,8 +191,9 @@ export function buildSearchIndex({ contentDir, builtAt, dataAsOf }) {
     if (!doc.id || seen.has(doc.id)) continue;
     if (FIXTURE_IDS.some((id) => doc.id.includes(id))) continue;
     seen.add(doc.id);
-    docs.push(doc);
+    docs.push({ ...doc, url: publicRel(doc.url) });
   }
+  docs.sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")));
   return { v: 1, built_at: builtAt, data_as_of: dataAsOf, docs };
 }
 
@@ -290,10 +297,23 @@ export function writeTimelinePages(outDir, cards, { builtAt, dataAsOf }) {
     if (clean.item?.selected || clean.item?.firstParty) byFilter.firstParty.push(clean);
   }
   for (const filter of FILTERS) {
-    const list = byFilter[filter].slice(0, PAGE_SIZE * MAX_PAGES);
+    const list = byFilter[filter]
+      .slice()
+      .sort((a, b) => String(b.anchorAt || b.item?.publishedAt || "").localeCompare(String(a.anchorAt || a.item?.publishedAt || "")))
+      .slice(0, PAGE_SIZE * MAX_PAGES)
+      .map((card) => {
+        const item = card.item || {};
+        const url = item.url || item.links?.original || `hot.html#s-${item.id || card.key}`;
+        return { ...card, item: { ...item, url } };
+      });
     const dir = join(outDir, "data", "timeline", filter);
     mkdirSync(dir, { recursive: true });
     const pages = Math.max(1, Math.ceil(list.length / PAGE_SIZE));
+    const day_counts = {};
+    for (const card of list) {
+      const day = String(card.anchorAt || "").slice(0, 10);
+      if (day) day_counts[day] = (day_counts[day] || 0) + 1;
+    }
     writeJson(join(dir, "index.json"), {
       v: 1,
       filter,
@@ -305,11 +325,6 @@ export function writeTimelinePages(outDir, cards, { builtAt, dataAsOf }) {
     });
     for (let i = 0; i < Math.min(pages, MAX_PAGES); i++) {
       const slice = list.slice(i * PAGE_SIZE, (i + 1) * PAGE_SIZE);
-      const day_counts = {};
-      for (const card of slice) {
-        const day = String(card.anchorAt || "").slice(0, 10);
-        if (day) day_counts[day] = (day_counts[day] || 0) + 1;
-      }
       const file = join(dir, `page-${i + 1}.json`);
       writeJson(file, {
         v: 1,
@@ -329,7 +344,17 @@ export async function exportStatic({ distDir, contentDir, dataset = "", dataAsOf
   mkdirSync(distDir, { recursive: true });
   const leakNote = join(distDir, "data", "fixture-note.json");
   if (existsSync(leakNote)) rmSync(leakNote);
-  const asOf = dataAsOf || `${beijingNow()}:00+08:00`;
+  const contentStamp = (() => {
+    try {
+      const covers = JSON.parse(readFileSync(join(root, "scripts", "mit-static", "src", "covers.generated.json"), "utf8"));
+      if (covers.asOf) return covers.asOf;
+    } catch {
+      /* ignore */
+    }
+    const issues = listWeeklyIssues(contentDir);
+    return issues[0] ? `${issues[0].date}T00:00:00+08:00` : null;
+  })();
+  const asOf = dataAsOf || contentStamp || `${beijingNow()}:00+08:00`;
   const built = builtAt || new Date().toISOString();
 
   const index = buildSearchIndex({ contentDir, builtAt: built, dataAsOf: asOf });

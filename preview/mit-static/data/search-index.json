@@ -1,7 +1,7 @@
 {
   "v": 1,
-  "built_at": "2026-10-19T08:42:52.588Z",
-  "data_as_of": "2026-10-19T16:42:00+08:00",
+  "built_at": "2026-10-19T08:57:08.033Z",
+  "data_as_of": "2026-10-18T00:20:00.000Z",
   "docs": [
     {
       "id": "weekly-2026-10-18",
@@ -11,17 +11,7 @@
       "source": "前沿趋势",
       "category": null,
       "date": "2026-10-18T00:00:00+08:00",
-      "url": "/weekly/2026-10-18/"
-    },
-    {
-      "id": "weekly-2026-10-12",
-      "t": "weekly",
-      "title": "AI 前沿趋势周报 · 2026-10-12（第 1 期）",
-      "summary": "评审进 RL 升一档，并从图像扩到视频；视频少步降一档，研究主流仍在修 DMD；OPD 从默认配方变成要看师生重叠率的工具。四张信号表一周无翻转。",
-      "source": "前沿趋势",
-      "category": null,
-      "date": "2026-10-12T00:00:00+08:00",
-      "url": "/weekly/2026-10-12/"
+      "url": "weekly/2026-10-18/"
     },
     {
       "id": "live-terminal-rsi",
@@ -42,26 +32,6 @@
       "category": "paper",
       "date": "2026-10-16T00:00:00+08:00",
       "url": "https://github.com/Prism-Shadow/penguin-harness"
-    },
-    {
-      "id": "live-data-space-iteration",
-      "t": "card",
-      "title": "Data-Space Iteration：少步丢掉 flow 固定离散",
-      "summary": "改成 data-space iteration；训练仍要 online rollout，DMD 训练不变；只做了 ImageNet。表 1/3 不翻转。",
-      "source": "arXiv",
-      "category": "model",
-      "date": "2026-10-15T00:00:00+08:00",
-      "url": "https://arxiv.org/abs/2610.12102"
-    },
-    {
-      "id": "live-smd-pivot",
-      "t": "card",
-      "title": "SMD / Pivot：简化 on-policy 少步蒸馏（4-NFE）",
-      "summary": "回归式 on-policy 速度匹配做 4-NFE；无辅助 score、无对抗，可扩到 33B 和音视频（摘要）。仍依赖老师。记少步「绕开 DMD」候选，不计入第三家；挂表 3 / 主线 5 旁证【推断】。",
-      "source": "arXiv",
-      "category": "model",
-      "date": "2026-10-14T00:00:00+08:00",
-      "url": "https://arxiv.org/abs/2610.18472"
     },
     {
       "id": "live-mai-base-2",
@@ -114,6 +84,46 @@
       "url": "https://arxiv.org/abs/2610.20111"
     },
     {
+      "id": "live-gpt-live-1-1",
+      "t": "card",
+      "title": "OpenAI GPT-Live-1.1：语音升级",
+      "summary": "多语口音、减少 “checking…”；FR/DE/HI/MX-ES/KO/JA。ChatGPT/Codex 可用，API 将至。产品事件，不进主线。",
+      "source": "@OpenAI",
+      "category": "product",
+      "date": "2026-10-16T00:00:00+08:00",
+      "url": "https://x.com/OpenAI/status/2110797830361436604"
+    },
+    {
+      "id": "live-argon-pro-rollout",
+      "t": "card",
+      "title": "Gemini 4 Argon：开始给付费 Pro",
+      "summary": "小红书称 Antigravity 向付费 Google AI Pro 放 Argon 配额【笔记转述】。续热，非首发；不改训练类主线。",
+      "source": "小红书",
+      "category": "product",
+      "date": "2026-10-16T00:00:00+08:00",
+      "url": "https://www.xiaohongshu.com/explore/6ad181eb000000001b023dac"
+    },
+    {
+      "id": "live-openui-1-0",
+      "t": "card",
+      "title": "OpenUI 1.0：Agent 交互界面框架",
+      "summary": "开源协议/运行时：agent 用 schema + OpenUI Lang 组合地图、表单、图表、按钮；支持 React/Vue/Svelte/Angular。仓库 thesysdev/openui（★约 11203）+ openui.co",
+      "source": "@i",
+      "category": "product",
+      "date": "2026-10-16T00:00:00+08:00",
+      "url": "https://github.com/thesysdev/openui"
+    },
+    {
+      "id": "live-data-space-iteration",
+      "t": "card",
+      "title": "Data-Space Iteration：少步丢掉 flow 固定离散",
+      "summary": "改成 data-space iteration；训练仍要 online rollout，DMD 训练不变；只做了 ImageNet。表 1/3 不翻转。",
+      "source": "arXiv",
+      "category": "model",
+      "date": "2026-10-15T00:00:00+08:00",
+      "url": "https://arxiv.org/abs/2610.12102"
+    },
+    {
       "id": "live-glance-forcing",
       "t": "card",
       "title": "Glance Forcing：单条 PF-ODE 视频少步",
@@ -132,6 +142,46 @@
       "category": "paper",
       "date": "2026-10-15T00:00:00+08:00",
       "url": "https://arxiv.org/abs/2610.19789"
+    },
+    {
+      "id": "live-bfl-flux3-video-faster",
+      "t": "card",
+      "title": "BFL：FLUX 3 Video 提速约 2×、原生 2K/4K 成本约降 50%",
+      "summary": "服务侧优化。当时不是 FLUX 3 Image 权重交付；Image Klein 已于次日早报记开源（见 10-16 卡）。",
+      "source": "@bfl_ai",
+      "category": "product",
+      "date": "2026-10-15T00:00:00+08:00",
+      "url": "https://x.com/bfl_ai/status/2110386847528681774"
+    },
+    {
+      "id": "live-jev-35b",
+      "t": "card",
+      "title": "JEV-35B：单次前向结构化决策头",
+      "summary": "基于 Qwen3.5-35B-A3B 的开源决策头（Apache-2.0）；约 35B 总参 / 3B 激活。定位与托管 Jev 同族：单次前向结构化决策，不做逐 token 生成。自报 Decision Index 0.3=59.73【未",
+      "source": "Hugging Face",
+      "category": "product",
+      "date": "2026-10-15T00:00:00+08:00",
+      "url": "https://huggingface.co/autotrust/JEV-35B"
+    },
+    {
+      "id": "live-jev-1-14-preview",
+      "t": "card",
+      "title": "Jev 1.14 预览：实验性图像 / box / 长上下文",
+      "summary": "TypeSafe 托管 Jev 上 jev-preview（约一周后切 jev-latest）。多语微调；图像、box 框、长上下文需 danger-zone 头。独立评测口径：MMLU-Redux 95.0 / ARC-C 97.6 表内",
+      "source": "@typesafeai",
+      "category": "product",
+      "date": "2026-10-15T00:00:00+08:00",
+      "url": "https://typesafe.ai/blog/jev-1-14"
+    },
+    {
+      "id": "live-smd-pivot",
+      "t": "card",
+      "title": "SMD / Pivot：简化 on-policy 少步蒸馏（4-NFE）",
+      "summary": "回归式 on-policy 速度匹配做 4-NFE；无辅助 score、无对抗，可扩到 33B 和音视频（摘要）。仍依赖老师。记少步「绕开 DMD」候选，不计入第三家；挂表 3 / 主线 5 旁证【推断】。",
+      "source": "arXiv",
+      "category": "model",
+      "date": "2026-10-14T00:00:00+08:00",
+      "url": "https://arxiv.org/abs/2610.18472"
     },
     {
       "id": "live-embodiedclbench",
@@ -204,66 +254,6 @@
       "url": "https://x.com/Google/status/2110041297360699856"
     },
     {
-      "id": "live-gpt-live-1-1",
-      "t": "card",
-      "title": "OpenAI GPT-Live-1.1：语音升级",
-      "summary": "多语口音、减少 “checking…”；FR/DE/HI/MX-ES/KO/JA。ChatGPT/Codex 可用，API 将至。产品事件，不进主线。",
-      "source": "@OpenAI",
-      "category": "product",
-      "date": "2026-10-16T00:00:00+08:00",
-      "url": "https://x.com/OpenAI/status/2110797830361436604"
-    },
-    {
-      "id": "live-argon-pro-rollout",
-      "t": "card",
-      "title": "Gemini 4 Argon：开始给付费 Pro",
-      "summary": "小红书称 Antigravity 向付费 Google AI Pro 放 Argon 配额【笔记转述】。续热，非首发；不改训练类主线。",
-      "source": "小红书",
-      "category": "product",
-      "date": "2026-10-16T00:00:00+08:00",
-      "url": "https://www.xiaohongshu.com/explore/6ad181eb000000001b023dac"
-    },
-    {
-      "id": "live-openui-1-0",
-      "t": "card",
-      "title": "OpenUI 1.0：Agent 交互界面框架",
-      "summary": "开源协议/运行时：agent 用 schema + OpenUI Lang 组合地图、表单、图表、按钮；支持 React/Vue/Svelte/Angular。仓库 thesysdev/openui（★约 11203）+ openui.co",
-      "source": "@i",
-      "category": "product",
-      "date": "2026-10-16T00:00:00+08:00",
-      "url": "https://github.com/thesysdev/openui"
-    },
-    {
-      "id": "live-bfl-flux3-video-faster",
-      "t": "card",
-      "title": "BFL：FLUX 3 Video 提速约 2×、原生 2K/4K 成本约降 50%",
-      "summary": "服务侧优化。当时不是 FLUX 3 Image 权重交付；Image Klein 已于次日早报记开源（见 10-16 卡）。",
-      "source": "@bfl_ai",
-      "category": "product",
-      "date": "2026-10-15T00:00:00+08:00",
-      "url": "https://x.com/bfl_ai/status/2110386847528681774"
-    },
-    {
-      "id": "live-jev-35b",
-      "t": "card",
-      "title": "JEV-35B：单次前向结构化决策头",
-      "summary": "基于 Qwen3.5-35B-A3B 的开源决策头（Apache-2.0）；约 35B 总参 / 3B 激活。定位与托管 Jev 同族：单次前向结构化决策，不做逐 token 生成。自报 Decision Index 0.3=59.73【未",
-      "source": "Hugging Face",
-      "category": "product",
-      "date": "2026-10-15T00:00:00+08:00",
-      "url": "https://huggingface.co/autotrust/JEV-35B"
-    },
-    {
-      "id": "live-jev-1-14-preview",
-      "t": "card",
-      "title": "Jev 1.14 预览：实验性图像 / box / 长上下文",
-      "summary": "TypeSafe 托管 Jev 上 jev-preview（约一周后切 jev-latest）。多语微调；图像、box 框、长上下文需 danger-zone 头。独立评测口径：MMLU-Redux 95.0 / ARC-C 97.6 表内",
-      "source": "@typesafeai",
-      "category": "product",
-      "date": "2026-10-15T00:00:00+08:00",
-      "url": "https://typesafe.ai/blog/jev-1-14"
-    },
-    {
       "id": "live-anthropic-source-control",
       "t": "card",
       "title": "Anthropic 自研源控：为人设计的基建成 agent 瓶颈",
@@ -294,6 +284,16 @@
       "url": "https://arxiv.org/abs/2610.13361"
     },
     {
+      "id": "weekly-2026-10-12",
+      "t": "weekly",
+      "title": "AI 前沿趋势周报 · 2026-10-12（第 1 期）",
+      "summary": "评审进 RL 升一档，并从图像扩到视频；视频少步降一档，研究主流仍在修 DMD；OPD 从默认配方变成要看师生重叠率的工具。四张信号表一周无翻转。",
+      "source": "前沿趋势",
+      "category": null,
+      "date": "2026-10-12T00:00:00+08:00",
+      "url": "weekly/2026-10-12/"
+    },
+    {
       "id": "timeline-lede",
       "t": "event",
       "title": "时间线",
@@ -301,7 +301,7 @@
       "source": "前沿趋势",
       "category": null,
       "date": "",
-      "url": "/timeline/"
+      "url": "timeline/"
     },
     {
       "id": "x-bfl_ai",

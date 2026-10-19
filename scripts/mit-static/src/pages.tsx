@@ -86,7 +86,7 @@ export function HotScreen({ emptyCover = false }: { emptyCover?: boolean }) {
     <Shell pathname="/hot">
       <HotPage hot={emptyCover ? hotWithoutCover(hot) : hot} />
       <DataAsOf dataAsOf={DATA_AS_OF} builtAt={BUILT_AT} />
-      <RssLink href="../feed/weekly.xml" />
+      <RssLink href="feed/weekly.xml" />
     </Shell>
   );
 }
@@ -99,7 +99,7 @@ export function DailyScreen({ emptyCover = false }: { emptyCover?: boolean }) {
         <ReportPaper report={report} index={dailyIndex} />
       </ReportLayout>
       <DataAsOf dataAsOf={DATA_AS_OF} builtAt={BUILT_AT} />
-      <RssLink href="../feed/weekly.xml" />
+      <RssLink href="feed/weekly.xml" />
     </Shell>
   );
 }
@@ -149,7 +149,7 @@ export function MoreScreen() {
           </li>
         </ul>
         <DataAsOf dataAsOf={DATA_AS_OF} builtAt={BUILT_AT} />
-        <RssLink href="../feed/weekly.xml" />
+        <RssLink href="feed/weekly.xml" />
       </div>
     </Shell>
   );

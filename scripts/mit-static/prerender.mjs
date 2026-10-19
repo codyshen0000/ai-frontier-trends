@@ -136,7 +136,7 @@ fs.writeFileSync(
 </head>
 <body>
 <h1>L2 封面 v5（ours）</h1>
-<p>有用才放，没有就不放。本目录只有我们站点的静态页副本，不是 aihot.news。</p>
+<p>有用才放，没有就不放。本目录只有我们站点的静态页副本。</p>
 <ul>
   <li><a href="ours-hot.html">/hot/ NO.01（价值门后的真实槽）</a></li>
   <li><a href="ours-hot-empty.html">/hot/ 无图样例（同一壳，封面置空）</a></li>

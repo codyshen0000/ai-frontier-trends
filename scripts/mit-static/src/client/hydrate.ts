@@ -194,10 +194,13 @@ function bindStars() {
       }
     }
     if (!item?.id || !item.title) return;
+    const fallback = item.url
+      || article?.querySelector("a")?.getAttribute("href")
+      || "";
     const result = toggleStar({
       id: item.id,
       title: item.title,
-      url: item.url || "",
+      url: fallback,
       source: item.source || "",
       date: item.date || "",
     });
@@ -280,6 +283,8 @@ type PageJson = {
       publishedAt: string | null;
       category: string | null;
       channel?: string;
+      url?: string;
+      links?: { original?: string };
       x?: { authorName?: string; handle?: string; avatarUrl?: string | null; text?: string } | null;
       /** site-data removed this; tolerate leftover keys and never render. */
       score?: unknown;
@@ -319,10 +324,11 @@ function cardHtml(card: PageJson["cards"][number]) {
   const reason = item.reason
     ? `<p class="mt-1 text-[12.5px] text-ink-4">${escapeHtml(item.reason)}</p>`
     : "";
+  const href = siteHref(item.url || item.links?.original || `${pageHref("hot")}#s-${item.id}`);
   const snapshot = escapeHtml(JSON.stringify({
     id: item.id,
     title: item.title,
-    url: "",
+    url: href,
     source: sourceName,
     date: item.publishedAt || "",
   }));
@@ -334,7 +340,7 @@ function cardHtml(card: PageJson["cards"][number]) {
           <button type="button" class="inline-flex size-11 items-center justify-center rounded-control text-ink-4 lg:size-[26px]" data-ft-star='${snapshot}' aria-pressed="false" aria-label="收藏">☆</button>
         </span>
       </header>
-      <h3 class="mt-1.5 text-[17px] font-[650] leading-[1.5] text-ink">${escapeHtml(item.title)}</h3>
+      <h3 class="mt-1.5 text-[17px] font-[650] leading-[1.5] text-ink"><a href="${escapeHtml(href)}">${escapeHtml(item.title)}</a></h3>
       ${excerpt}${reason}${more}
     </article>
   </li>`;
@@ -370,21 +376,32 @@ function timelineRoot() {
   return document.querySelector<HTMLElement>("[data-ft-timeline]");
 }
 
+function emptyStateHtml(filter = "all") {
+  const title = filter === "all"
+    ? "过去 48 小时没有达到上榜条件的事件。"
+    : "这个筛选下还没有精选内容";
+  const hint = filter === "all" ? "" : `<p class="mt-1.5 max-w-sm text-[13px] leading-relaxed text-ink-4">换个类别看看，或者去全部动态里找找。</p>`;
+  return `<div class="lg:card"><div class="flex flex-col items-center px-6 py-14 text-center"><div class="text-[15px] font-semibold text-ink-2">${title}</div>${hint}<p class="ft-asof mt-2">${asofLine()}</p></div></div>`;
+}
+
 function renderTimeline() {
   const root = timelineRoot();
   if (!root) return;
   if (!timelineState.days.size) {
-    root.innerHTML = `<div class="lg:card"><div class="flex flex-col items-center px-6 py-14 text-center"><div class="text-[15px] font-semibold text-ink-2">过去 48 小时没有达到上榜条件的事件。</div><p class="ft-asof mt-2">${asofLine()}</p></div></div>`;
+    root.innerHTML = emptyStateHtml(timelineState.filter);
     return;
   }
   const sections = [...timelineState.days.entries()]
     .sort((a, b) => b[0].localeCompare(a[0]))
-    .map(([day, pack]) => `<section aria-label="${escapeHtml(day)}">
+    .map(([day, pack]) => {
+      pack.cards.sort((a, b) => String(b.anchorAt || "").localeCompare(String(a.anchorAt || "")));
+      return `<section aria-label="${escapeHtml(day)}">
       <div class="bleed sticky top-[var(--bar-h)] z-20 bg-daybar lg:bg-bg">
         <div class="flex h-11 items-center gap-2 text-[14px] font-bold text-ink">${escapeHtml(dayLabel(day))}<span class="ml-auto text-[12.5px] font-normal text-ink-4">${pack.count} 条</span></div>
       </div>
       <ol>${pack.cards.map(cardHtml).join("")}</ol>
-    </section>`)
+    </section>`;
+    })
     .join("");
   const end = timelineState.loading
     ? `<div class="ft-feed-end"><span class="ft-feed-end-note">正在加载</span></div>`
@@ -407,6 +424,7 @@ function ingestPage(page: PageJson) {
     if (!day) continue;
     const pack = timelineState.days.get(day) || { count: page.day_counts?.[day] || 0, cards: [] };
     pack.cards.push({ ...card, item: dropScore(card.item) });
+    pack.cards.sort((a, b) => String(b.anchorAt || "").localeCompare(String(a.anchorAt || "")));
     pack.count = page.day_counts?.[day] || pack.cards.length;
     timelineState.days.set(day, pack);
   }
@@ -455,15 +473,23 @@ function observeSentinel() {
   io.observe(el);
 }
 
+function visibleCardKey() {
+  const cards = [...document.querySelectorAll<HTMLElement>("[data-card-key]")];
+  const mid = window.innerHeight * 0.35;
+  return cards.find((el) => {
+    const top = el.getBoundingClientRect().top;
+    return top >= 0 && top <= mid;
+  })?.dataset.cardKey || cards.find((el) => el.getBoundingClientRect().bottom > 0)?.dataset.cardKey || null;
+}
+
 function saveTimelinePos() {
   const store = session();
   if (!store) return;
-  const anchor = document.querySelector<HTMLElement>("[data-card-key]");
   writeJson(store, TIMELINE_PREFIX + timelineState.filter, {
     pages: timelineState.pages,
     fetches: timelineState.fetches,
     next: timelineState.next,
-    anchor: anchor?.dataset.cardKey || null,
+    anchor: visibleCardKey(),
     y: window.scrollY,
   });
 }
@@ -485,9 +511,11 @@ async function restoreTimeline(filter: string) {
   }
   timelineState.fetches = snap.fetches || Math.max(0, snap.pages - 1);
   renderTimeline();
-  const target = snap.anchor && document.querySelector(`[data-card-key="${snap.anchor}"]`);
-  if (target) target.scrollIntoView();
-  else if (typeof snap.y === "number") window.scrollTo(0, snap.y);
+  if (typeof snap.y === "number") window.scrollTo(0, snap.y);
+  const target = snap.anchor && document.querySelector(`[data-card-key="${CSS.escape(snap.anchor)}"]`);
+  if (target && Math.abs((target as HTMLElement).getBoundingClientRect().top) > window.innerHeight) {
+    target.scrollIntoView();
+  }
   return true;
 }
 
@@ -505,7 +533,8 @@ async function applyFilter(filter: string, push = true) {
     : filter === "all"
       ? { channel: null, category: null }
       : { category: filter, channel: null }));
-  document.querySelectorAll("[data-ft-filter]").forEach((el) => {
+  document.querySelectorAll("a[data-ft-filter], button[data-ft-filter]").forEach((el) => {
+    if (el.closest("[data-ft-timeline]")) return;
     const on = el.getAttribute("data-ft-filter") === filter;
     if (on) el.setAttribute("aria-current", "page");
     else el.removeAttribute("aria-current");
@@ -518,7 +547,7 @@ async function applyFilter(filter: string, push = true) {
       syncStarButtons(root);
       return;
     }
-    root.innerHTML = `<div class="lg:card"><div class="flex flex-col items-center px-6 py-14 text-center"><div class="text-[15px] font-semibold text-ink-2">过去 48 小时没有达到上榜条件的事件。</div><p class="ft-asof mt-2">${asofLine()}</p></div></div>`;
+    root.innerHTML = emptyStateHtml(filter);
     return;
   }
   try {
@@ -529,7 +558,7 @@ async function applyFilter(filter: string, push = true) {
     const restored = await restoreTimeline(filter);
     if (!restored) observeSentinel();
   } catch {
-    root.innerHTML = `<div class="lg:card"><div class="flex flex-col items-center px-6 py-14 text-center"><div class="text-[15px] font-semibold text-ink-2">过去 48 小时没有达到上榜条件的事件。</div><p class="ft-asof mt-2">${asofLine()}</p></div></div>`;
+    root.innerHTML = emptyStateHtml(filter);
   }
 }
 
@@ -585,6 +614,35 @@ function bindFilters() {
     event.preventDefault();
     void loadMore();
   });
+  document.addEventListener("click", (event) => {
+    const open = (event.target as HTMLElement).closest("[data-ft-filters-open]");
+    if (open) {
+      event.preventDefault();
+      const sheet = document.querySelector<HTMLElement>("[data-ft-filter-sheet]");
+      if (sheet) {
+        sheet.hidden = false;
+        document.querySelectorAll("[data-ft-filters-open]").forEach((btn) => btn.setAttribute("aria-expanded", "true"));
+      }
+      return;
+    }
+    const close = (event.target as HTMLElement).closest("[data-ft-filters-close]");
+    if (close) {
+      event.preventDefault();
+      const sheet = document.querySelector<HTMLElement>("[data-ft-filter-sheet]");
+      if (sheet) sheet.hidden = true;
+      document.querySelectorAll("[data-ft-filters-open]").forEach((btn) => btn.setAttribute("aria-expanded", "false"));
+    }
+  });
+  document.addEventListener("click", (event) => {
+    const card = (event.target as HTMLElement).closest<HTMLElement>("[data-card-key]");
+    if (card?.dataset.cardKey) {
+      const store = session();
+      if (store) {
+        const prev = readJson<Record<string, unknown>>(store, TIMELINE_PREFIX + timelineState.filter, {});
+        writeJson(store, TIMELINE_PREFIX + timelineState.filter, { ...prev, anchor: card.dataset.cardKey, y: window.scrollY, pages: timelineState.pages, fetches: timelineState.fetches, next: timelineState.next });
+      }
+    }
+  });
   window.addEventListener("popstate", () => {
     void applyFilter(filterFromParams(currentParams()).filter, false);
   });
@@ -610,6 +668,18 @@ function pageHref(name: "search" | "starred" | "index" | "hot" | "daily" | "more
   if (cfg.base === "./" || cfg.base === "") return `${name === "index" ? "index" : name}.html`;
   if (name === "index") return cfg.base;
   return `${cfg.base}${name}/`;
+}
+
+function siteHref(url: string) {
+  if (!url) return pageHref("hot");
+  if (/^https?:\/\//i.test(url) || url.startsWith("#") || url.startsWith("mailto:")) return url;
+  if (url.includes(".html")) {
+    if (cfg.base === "./" || cfg.base === "") return url;
+    const [file, hash = ""] = url.split("#");
+    const page = file.replace(/\.html$/, "").replace(/^\.\//, "");
+    return `${cfg.base}${page === "index" ? "" : `${page}/`}${hash ? `#${hash}` : ""}`;
+  }
+  return asset(url.replace(/^\//, ""));
 }
 
 let searchModuleLoaded = false;
@@ -656,7 +726,10 @@ function renderHits(host: HTMLElement, q: string, docs: Array<{ title: string; s
   }
   host.innerHTML = `<p class="mb-3 text-[13px] text-ink-4" aria-live="polite">${docs.length} 条结果</p>${docs
     .slice(0, 20)
-    .map((d) => `<a class="ft-search-hit" href="${escapeHtml(d.url)}"><h3>${escapeHtml(d.title)}</h3>${d.summary ? `<p>${escapeHtml(d.summary)}</p>` : ""}${d.source || d.date ? `<p>${escapeHtml([d.source, d.date].filter(Boolean).join(" · "))}</p>` : ""}</a>`)
+    .map((d) => {
+      const href = /^https?:\/\//i.test(d.url) ? d.url : asset(String(d.url || "").replace(/^\//, ""));
+      return `<a class="ft-search-hit" href="${escapeHtml(href)}"><h3>${escapeHtml(d.title)}</h3>${d.summary ? `<p>${escapeHtml(d.summary)}</p>` : ""}${d.source || d.date ? `<p>${escapeHtml([d.source, d.date].filter(Boolean).join(" · "))}</p>` : ""}</a>`;
+    })
     .join("")}`;
   announce(`${Math.min(docs.length, 20)} 条结果`);
 }
@@ -795,43 +868,45 @@ async function refreshFromMeta() {
 }
 
 function bindTop() {
-  const btn = document.querySelector<HTMLButtonElement>("[data-ft-top]");
-  if (!btn) return;
-  const sync = () => {
-    const show = window.scrollY > Math.min(320, window.innerHeight * 0.6);
-    btn.classList.toggle("opacity-0", !show);
-    btn.classList.toggle("pointer-events-none", !show);
-    btn.classList.toggle("translate-y-2", !show);
-  };
-  btn.addEventListener("click", (event) => {
-    event.preventDefault();
-    window.scrollTo({ top: 0, behavior: reduceMotion() ? "auto" : "smooth" });
+  document.querySelectorAll<HTMLButtonElement>("[data-ft-top]").forEach((btn) => {
+    const sync = () => {
+      const show = window.scrollY > 80;
+      btn.classList.toggle("opacity-40", !show);
+      btn.classList.toggle("translate-y-2", !show);
+    };
+    btn.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      window.scrollTo({ top: 0, left: 0, behavior: reduceMotion() ? "auto" : "smooth" });
+    });
+    window.addEventListener("scroll", sync, { passive: true });
+    sync();
   });
-  window.addEventListener("scroll", sync, { passive: true });
-  sync();
 }
 
 function bindToc() {
-  const btn = document.querySelector<HTMLButtonElement>("[data-ft-toc]");
+  const buttons = [...document.querySelectorAll<HTMLButtonElement>("[data-ft-toc]")];
   const panel = document.querySelector<HTMLElement>("[data-ft-outline]");
-  if (!btn || !panel) return;
+  if (!buttons.length || !panel) return;
   const close = () => {
     panel.hidden = true;
-    btn.setAttribute("aria-expanded", "false");
+    buttons.forEach((btn) => btn.setAttribute("aria-expanded", "false"));
   };
   const open = () => {
     panel.hidden = false;
-    btn.setAttribute("aria-expanded", "true");
+    buttons.forEach((btn) => btn.setAttribute("aria-expanded", "true"));
   };
-  btn.addEventListener("click", (event) => {
-    event.preventDefault();
-    if (panel.hidden) open();
-    else close();
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", (event) => {
+      event.preventDefault();
+      if (panel.hidden) open();
+      else close();
+    });
   });
   panel.querySelector("[data-ft-outline-close]")?.addEventListener("click", (event) => {
     event.preventDefault();
     close();
-    btn.focus();
+    buttons[0]?.focus();
   });
   panel.querySelectorAll("a[href^='#']").forEach((link) => {
     link.addEventListener("click", () => close());
@@ -839,7 +914,7 @@ function bindToc() {
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape" && !panel.hidden) {
       close();
-      btn.focus();
+      buttons[0]?.focus();
     }
   });
 }

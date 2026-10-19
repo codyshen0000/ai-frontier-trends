@@ -293,6 +293,9 @@ assert(!morePage.includes("AIHOT") && !morePage.includes("MyHOT"), "more page ha
 const dailyPage = readFileSync(join(distDir, "daily", "index.html"), "utf8");
 assert(dailyPage.includes("AI 日报 · 前沿趋势"), "daily title uses 前沿趋势");
 assert(dailyPage.includes('href="../assets/app.css"'), "/daily/ CSS is ../assets/app.css");
+assert(dailyPage.includes('href="../feed/weekly.xml"'), "/daily/ RSS is ../feed/weekly.xml");
+assert(home.includes('href="feed/weekly.xml"'), "home RSS is feed/weekly.xml");
+assert(hotPage.includes('href="../feed/weekly.xml"'), "/hot/ RSS is ../feed/weekly.xml");
 assert(dailyPage.includes("../assets/nameplates/daily.svg"), "/daily/ nameplate is a relative asset");
 assert(dailyPage.includes('href="../"') && dailyPage.includes('href="../hot/"'), "/daily/ links to 精选 and /hot/");
 assert(dailyPage.includes(">日报<") && dailyPage.includes('aria-current="page"'), "daily marks 日报 current");
@@ -517,6 +520,32 @@ expectThrow(
     rmSync(tmp, { recursive: true, force: true });
   }
 }
+{
+  const tmp = mkdtempSync(join(tmpdir(), "ia-banned-css-"));
+  try {
+    writeFileSync(join(tmp, "skin-raw.css"), "/* 挂观察 */ body{color:red}");
+    expectThrow(
+      () => assertNoBannedPublicCopyInDir(tmp, { prefix: "dist/" }),
+      /skin-raw\.css[\s\S]*挂观察/,
+      "negative: banned word in a dist css file fails verify:ia",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "ia-brand-css-"));
+  try {
+    writeFileSync(join(tmp, "skin-raw.css"), "/* aihot daily IA */ body{color:red}");
+    let hits = 0;
+    for (const file of walkPublicCopyFiles(tmp, PUBLIC_COPY_SCAN_EXTS)) {
+      if (/aihot|myhot/i.test(readFileSync(file, "utf8"))) hits += 1;
+    }
+    assert(hits > 0, "negative: aihot in skin-raw.css fails the brand scan");
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
 
 const distCopyFiles = walkPublicCopyFiles(distDir);
 const distCopyHits = collectBannedPublicCopyHits(distDir, { prefix: "dist/" });
@@ -525,11 +554,11 @@ for (const hit of distCopyHits) {
 }
 assert(
   distCopyHits.length === 0,
-  `dist html/json/xml/md/svg/js have 0 banned-word hits (${distCopyHits.length} hits across ${distCopyFiles.length} files)`,
+  `dist html/json/xml/md/svg/js/css/txt have 0 banned-word hits (${distCopyHits.length} hits across ${distCopyFiles.length} files)`,
 );
 try {
   assertDistPublicCopy(distDir);
-  assert(true, "assertDistPublicCopy matches the dist html/json/xml/md/svg/js scan");
+  assert(true, "assertDistPublicCopy matches the dist html/json/xml/md/svg/js/css/txt scan");
 } catch (err) {
   assert(false, err.message);
 }
@@ -682,7 +711,7 @@ for (const file of walkPublicCopyFiles(distDir, PUBLIC_COPY_SCAN_EXTS)) {
     console.error(`FAIL brand «${brand[0]}» in ${rel}`);
   }
 }
-assert(brandHits === 0, `brand aihot/myhot scan of dist html/json/xml/md/svg/js is 0 (${brandHits})`);
+assert(brandHits === 0, `brand aihot/myhot scan of dist html/json/xml/md/svg/js/css/txt is 0 (${brandHits})`);
 void BANNED_PUBLIC_COPY;
 
 let fixtureLeaks = 0;
@@ -721,6 +750,13 @@ assert(externalImgs === 0, `external images in dist are 0 (${externalImgs})`);
 const searchIndex = JSON.parse(readFileSync(join(distDir, "data", "search-index.json"), "utf8"));
 assert(!JSON.stringify(searchIndex).includes('"score"'), "search index does not copy score");
 assert(searchIndex.docs.some((d) => /FLUX/i.test(d.title) || /FLUX/i.test(d.summary)), "search index contains FLUX from real weekly/covers");
+assert(typeof searchIndex.data_as_of === "string" && searchIndex.data_as_of.length > 8, "search index has data_as_of");
+assert(typeof searchIndex.built_at === "string" && searchIndex.built_at.length > 8, "search index has built_at");
+assert(searchIndex.data_as_of !== searchIndex.built_at, "data_as_of is content time, not the same as built_at");
+const metaJson = JSON.parse(readFileSync(join(distDir, "data", "meta.json"), "utf8"));
+assert(metaJson.data_as_of && metaJson.built_at && metaJson.data_as_of !== metaJson.built_at, "meta.json separates data_as_of and built_at");
+assert(!String(searchIndex.docs.map((d) => d.url).join(" ")).includes("/ai-frontier-trends/"), "search urls are not hard-coded to the Pages prefix");
+assert(searchIndex.docs.every((d) => !String(d.url || "").startsWith("/")), "search urls are relative (no root /)");
 
 function jsonHasScoreKey(value) {
   if (Array.isArray(value)) return value.some(jsonHasScoreKey);

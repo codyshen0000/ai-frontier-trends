@@ -27,11 +27,18 @@
   <script>
     (function () {
       try {
-        var t = localStorage.getItem("theme");
-        if (t !== "light" && t !== "dark") {
-          t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        var t = localStorage.getItem("ft:theme");
+        if (!t) {
+          var old = localStorage.getItem("theme");
+          if (old === "light" || old === "dark" || old === "system") {
+            t = old;
+            localStorage.setItem("ft:theme", old);
+          }
         }
-        document.documentElement.dataset.theme = t;
+        if (t !== "light" && t !== "dark" && t !== "system") t = "system";
+        var resolved = t === "system" ? (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") : t;
+        document.documentElement.dataset.theme = resolved;
+        document.documentElement.setAttribute("data-ft-theme-pref", t);
       } catch (e) {}
     })();
   </script>

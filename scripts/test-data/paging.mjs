@@ -24,6 +24,7 @@ export function buildTestPagingCards() {
           ? `两字词「开源」出现在摘要里，便于检索。条目 ${i} 属于 ${labelOf(category)}。`
           : `条目 ${i} 记录公开进展，便于分页与筛选。`,
         source: { name: isX ? handle : `公开笔记 ${i}` },
+        url: `weekly/2026-10-18/`,
         publishedAt: at,
         category,
         selected: i % 4 === 0,

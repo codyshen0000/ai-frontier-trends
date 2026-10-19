@@ -914,7 +914,7 @@ html.ft-shell .hub a {
   }
 }
 
-/* —— 日报报纸版（对标 aihot daily IA，自有品牌） —— */
+/* —— 日报报纸版（对标公开日报信息架构，自有品牌） —— */
 html.ft-shell main.ds-wrap.ft-daily-wrap {
   max-width: 1120px;
   width: min(1120px, calc(100% - 24px));
