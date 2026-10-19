@@ -43,7 +43,7 @@ export function renderPage(node: JSX.Element, title: string, cssHref: string, ex
     filter: "all",
   };
   return `<!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" class="no-js">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>

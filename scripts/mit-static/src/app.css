@@ -755,3 +755,15 @@
   .animate-fade-up,
   .ft-ptr-bounce { animation: none !important; }
 }
+
+/* JS-only controls stay hidden until hydrate removes html.no-js (B-8). */
+html.no-js [data-ft-theme-choice],
+html.no-js [data-ft-star],
+html.no-js [data-ft-filters-open],
+html.no-js [data-ft-search="phone"],
+html.no-js [data-ft-toc],
+html.no-js [data-ft-hot-method],
+html.no-js [data-ft-top],
+html.no-js button[aria-label*="位参与者"] {
+  display: none !important;
+}

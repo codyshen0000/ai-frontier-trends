@@ -1,4 +1,4 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<!doctype html><html lang="zh-CN" class="no-js"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>AI 前沿趋势周报 · 2026-10-18</title>
 <style>
@@ -16,6 +16,7 @@ table{border-collapse:collapse;width:100%;margin:0.8rem 0;font-size:0.95rem}
 th,td{border:1px solid #d0d7de;padding:0.4rem 0.55rem;text-align:left;vertical-align:top}
 th{background:#f6f8fa}
 a{color:#0969da} #ctl{margin:1rem 0} button{margin-right:.5rem}
+html.no-js #ctl{display:none}
 footer{color:#57606a;font-size:.85rem;margin:2rem 0}
 </style></head><body>
 <div id="ctl"><button onclick="t(true)">全部展开</button><button onclick="t(false)">全部折叠</button></div>
@@ -255,5 +256,5 @@ footer{color:#57606a;font-size:.85rem;margin:2rem 0}
 import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
 mermaid.initialize({startOnLoad:true});
 </script>
-<script>function t(o){document.querySelectorAll("details").forEach(d=>d.open=o)}</script>
+<script>document.documentElement.classList.remove("no-js");document.documentElement.classList.add("js");function t(o){document.querySelectorAll("details").forEach(d=>d.open=o)}</script>
 </body></html>
