@@ -403,6 +403,11 @@ function publishMitStatic() {
     mkdirSync(join(distDir, "data"), { recursive: true });
     cpSync(dataDir, join(distDir, "data"), { recursive: true });
   }
+  const coversDir = join(src, "assets", "covers");
+  if (existsSync(coversDir)) {
+    mkdirSync(join(distDir, "assets", "covers"), { recursive: true });
+    cpSync(coversDir, join(distDir, "assets", "covers"), { recursive: true });
+  }
 
   const indexHtml = readFileSync(join(src, "index.html"), "utf8");
   const hotHtml = readFileSync(join(src, "hot.html"), "utf8");

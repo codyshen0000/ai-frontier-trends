@@ -56,16 +56,63 @@ await build({
   ssr: { noExternal: true },
 });
 
+function rewriteMitHtml(html) {
+  return html
+    .replaceAll(/\/assets\/[^"'\s]+\.svg/g, (m) => `assets/nameplates/${path.basename(m)}`)
+    .replaceAll(/assets\/nameplates\/(daily|weekly|monthly|archive)-[A-Za-z0-9]+\.svg/g, "assets/nameplates/$1.svg")
+    .replaceAll(/assets\/[^"'\s]+\/([^/"'\s]+\.svg)/g, "assets/nameplates/$1")
+    .replaceAll(/assets\/nameplates\/(daily|weekly|monthly|archive)-[A-Za-z0-9]+\.svg/g, "assets/nameplates/$1.svg");
+}
+
 const mod = await import(pathToFileURL(path.join(tmpSsr, "prerender.js")).href);
 for (const page of mod.pages) {
-  let html = mod.renderPage(page.node, page.title, "assets/app.css");
-  html = html.replaceAll(/\/assets\/[^"'\s]+\.svg/g, (m) => `assets/nameplates/${path.basename(m)}`);
-  html = html.replaceAll(/assets\/nameplates\/(daily|weekly|monthly|archive)-[A-Za-z0-9]+\.svg/g, "assets/nameplates/$1.svg");
-  html = html.replaceAll(/assets\/[^"'\s]+\/([^/"'\s]+\.svg)/g, "assets/nameplates/$1");
-  html = html.replaceAll(/assets\/nameplates\/(daily|weekly|monthly|archive)-[A-Za-z0-9]+\.svg/g, "assets/nameplates/$1.svg");
+  const html = rewriteMitHtml(mod.renderPage(page.node, page.title, "assets/app.css"));
   fs.writeFileSync(path.join(outDir, page.file), html);
   console.log("wrote", page.file, html.length);
 }
+
+const compareDir = path.resolve(here, "../../preview/l2-covers");
+fs.mkdirSync(compareDir, { recursive: true });
+const comparePrefix = "../mit-static/";
+function toCompare(html) {
+  return html.replace(/(href|src|srcSet|imageSrcSet)="([^"]*)"/g, (match, attr, val) => {
+    if (!/(^|,\s*)(?:assets|data)\//.test(val)) return match;
+    return `${attr}="${val.replace(/(^|,\s*)((?:assets|data)\/)/g, `$1${comparePrefix}$2`)}"`;
+  });
+}
+fs.writeFileSync(path.join(compareDir, "ours-hot.html"), toCompare(fs.readFileSync(path.join(outDir, "hot.html"), "utf8")));
+fs.writeFileSync(path.join(compareDir, "ours-daily.html"), toCompare(fs.readFileSync(path.join(outDir, "daily.html"), "utf8")));
+fs.writeFileSync(path.join(compareDir, "ours-hot-empty.html"), toCompare(fs.readFileSync(path.join(outDir, "hot-empty.html"), "utf8")));
+fs.writeFileSync(path.join(compareDir, "ours-daily-empty.html"), toCompare(fs.readFileSync(path.join(outDir, "daily-empty.html"), "utf8")));
+fs.writeFileSync(
+  path.join(compareDir, "index.html"),
+  `<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>L2 有用才放 · ours</title>
+<style>
+  body{font:15px/1.55 ui-sans-serif,system-ui;margin:24px;color:#111;max-width:42em}
+  a{color:#0b57d0}
+  li{margin:6px 0}
+</style>
+</head>
+<body>
+<h1>L2 封面 v5（ours）</h1>
+<p>有用才放，没有就不放。本目录只有我们站点的静态页副本，不是 aihot.news。</p>
+<ul>
+  <li><a href="ours-hot.html">/hot/ NO.01（价值门后的真实槽）</a></li>
+  <li><a href="ours-hot-empty.html">/hot/ 无图样例（同一壳，封面置空）</a></li>
+  <li><a href="ours-daily.html">/daily/ 头条（价值门后的真实槽）</a></li>
+  <li><a href="ours-daily-empty.html">/daily/ 无图样例</a></li>
+  <li><a href="CLASSIFICATION.md">分类表</a></li>
+</ul>
+</body>
+</html>
+`,
+);
+console.log("wrote preview/l2-covers ours pages");
 
 fs.rmSync(tmpCss, { recursive: true, force: true });
 fs.rmSync(tmpSsr, { recursive: true, force: true });
