@@ -15,7 +15,7 @@ graph LR
     L3["主线3 评审进RL<br/>已升一档【推断】"]
     L4["主线4 数据差距<br/>后训练【证实】预训练【叙事】"]
     L5["主线5 少步<br/>研究主流修 DMD【推断】"]
-    W["六件套待交付"]
+    W["权重与产品待兑现"]
   end
   subgraph WEEK["本周净变化"]
     F12["加固：OPD 适用条件池<br/>Apple/Duke · BranchOPD<br/>失败题反证 · PR-OPD 信道"]
@@ -40,7 +40,7 @@ graph LR
 
 ![信号表 1–4：本周候选续核，正表仍零新增](charts/2026-10-18-signal-candidates.png)
 
-![权重六件套：本周兑现 3，仍空 3](charts/2026-10-18-weights-delivery.png)
+![权重与产品：本周兑现 3 项，仍空 3 项](charts/2026-10-18-weights-delivery.png)
 
 ## 本周变化
 
@@ -68,7 +68,7 @@ graph LR
 | Reflection Beam | 仍空 | ReflectionAI org 空 |
 
 - 同窗开源/产品但不改训练主线：Gemini 4 Argon GA（10-14）、Liquid LFM2.5-24B-A2B、Ling-3.1-flash、Muse Spark Open、Nemotron 3.5 Super VL、Liquid d1-ultra。
-- 完整非-Klein FLUX 3 Image 仍非本批开源对象【官方博客口径】。
+- 完整非-Klein FLUX 3 Image 不是此次开源对象【官方博客口径】。
 - 生图预训练「只换数据」仍【叙事】；GPT Image 2.5 无新一手。
 
 ### 新增观察（不升档）：RSI / harness 权重环扩窗，信号表 4 仍空【证实】
