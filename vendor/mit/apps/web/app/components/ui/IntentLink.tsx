@@ -16,6 +16,7 @@ export function IntentLink({
   "aria-current"?: "page" | "true" | undefined;
   "aria-label"?: string;
   title?: string;
+  "data-ft-filter"?: string;
 }) {
   void viewTransition; void resetScroll; void prefetchOnPress;
   return (

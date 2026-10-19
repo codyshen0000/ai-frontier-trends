@@ -1,0 +1,198 @@
+[
+  {
+    "tag": "before-8b09f25",
+    "page": "home",
+    "button": "深色",
+    "js": true,
+    "after": "missing"
+  },
+  {
+    "tag": "before-8b09f25",
+    "page": "home",
+    "button": "跟随系统",
+    "js": true,
+    "after": "missing"
+  },
+  {
+    "tag": "before-8b09f25",
+    "page": "home",
+    "button": "浅色",
+    "js": true,
+    "after": "missing"
+  },
+  {
+    "tag": "before-8b09f25",
+    "page": "home",
+    "button": "筛选",
+    "js": true,
+    "after": "missing"
+  },
+  {
+    "tag": "before-8b09f25",
+    "page": "home",
+    "button": "搜索",
+    "js": true,
+    "after": "missing"
+  },
+  {
+    "tag": "before-8b09f25",
+    "page": "home",
+    "button": "回到顶部",
+    "js": true,
+    "after": "scrolled-top"
+  },
+  {
+    "tag": "before-8b09f25",
+    "page": "daily",
+    "button": "本期目录",
+    "js": true,
+    "after": "missing"
+  },
+  {
+    "tag": "before-8b09f25",
+    "page": "home",
+    "button": "深色",
+    "js": false,
+    "after": "missing"
+  },
+  {
+    "tag": "before-8b09f25",
+    "page": "home",
+    "button": "跟随系统",
+    "js": false,
+    "after": "missing"
+  },
+  {
+    "tag": "before-8b09f25",
+    "page": "home",
+    "button": "浅色",
+    "js": false,
+    "after": "missing"
+  },
+  {
+    "tag": "before-8b09f25",
+    "page": "home",
+    "button": "筛选",
+    "js": false,
+    "after": "missing"
+  },
+  {
+    "tag": "before-8b09f25",
+    "page": "home",
+    "button": "搜索",
+    "js": false,
+    "after": "missing"
+  },
+  {
+    "tag": "before-8b09f25",
+    "page": "home",
+    "button": "回到顶部",
+    "js": false,
+    "after": "visible-nojs"
+  },
+  {
+    "tag": "before-8b09f25",
+    "page": "daily",
+    "button": "本期目录",
+    "js": false,
+    "after": "missing"
+  },
+  {
+    "tag": "after",
+    "page": "home",
+    "button": "深色",
+    "js": true,
+    "after": "dark"
+  },
+  {
+    "tag": "after",
+    "page": "home",
+    "button": "跟随系统",
+    "js": true,
+    "after": "light"
+  },
+  {
+    "tag": "after",
+    "page": "home",
+    "button": "浅色",
+    "js": true,
+    "after": "light"
+  },
+  {
+    "tag": "after",
+    "page": "home",
+    "button": "筛选",
+    "js": true,
+    "after": "sheet-open"
+  },
+  {
+    "tag": "after",
+    "page": "home",
+    "button": "搜索",
+    "js": true,
+    "after": "search-open"
+  },
+  {
+    "tag": "after",
+    "page": "home",
+    "button": "回到顶部",
+    "js": true,
+    "after": "y=448"
+  },
+  {
+    "tag": "after",
+    "page": "daily",
+    "button": "本期目录",
+    "js": true,
+    "after": "open"
+  },
+  {
+    "tag": "after",
+    "page": "home",
+    "button": "深色",
+    "js": false,
+    "after": "visible-nojs"
+  },
+  {
+    "tag": "after",
+    "page": "home",
+    "button": "跟随系统",
+    "js": false,
+    "after": "visible-nojs"
+  },
+  {
+    "tag": "after",
+    "page": "home",
+    "button": "浅色",
+    "js": false,
+    "after": "visible-nojs"
+  },
+  {
+    "tag": "after",
+    "page": "home",
+    "button": "筛选",
+    "js": false,
+    "after": "visible-nojs"
+  },
+  {
+    "tag": "after",
+    "page": "home",
+    "button": "搜索",
+    "js": false,
+    "after": "visible-nojs"
+  },
+  {
+    "tag": "after",
+    "page": "home",
+    "button": "回到顶部",
+    "js": false,
+    "after": "visible-nojs"
+  },
+  {
+    "tag": "after",
+    "page": "daily",
+    "button": "本期目录",
+    "js": false,
+    "after": "clicked"
+  }
+]

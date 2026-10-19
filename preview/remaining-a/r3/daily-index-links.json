@@ -1,0 +1,82 @@
+[
+  {
+    "page": "daily.html",
+    "text": "前沿趋势",
+    "href": "index.html",
+    "resolved": "index.html",
+    "kind": "real-nav",
+    "label": "8b09f25"
+  },
+  {
+    "page": "daily.html",
+    "text": "精选",
+    "href": "index.html",
+    "resolved": "index.html",
+    "kind": "real-nav",
+    "label": "8b09f25"
+  },
+  {
+    "page": "daily.html",
+    "text": "周报",
+    "href": "weekly/index.html",
+    "resolved": "weekly/index.html",
+    "kind": "review",
+    "label": "8b09f25"
+  },
+  {
+    "page": "daily.html",
+    "text": "周报",
+    "href": "weekly/index.html",
+    "resolved": "weekly/index.html",
+    "kind": "review",
+    "label": "8b09f25"
+  },
+  {
+    "page": "daily.html",
+    "text": "精选",
+    "href": "index.html",
+    "resolved": "index.html",
+    "kind": "real-nav",
+    "label": "8b09f25"
+  },
+  {
+    "page": "daily.html",
+    "text": "前沿趋势",
+    "href": "index.html",
+    "resolved": "index.html",
+    "kind": "real-nav",
+    "label": "after"
+  },
+  {
+    "page": "daily.html",
+    "text": "精选",
+    "href": "index.html",
+    "resolved": "index.html",
+    "kind": "real-nav",
+    "label": "after"
+  },
+  {
+    "page": "daily.html",
+    "text": "周报",
+    "href": "weekly/index.html",
+    "resolved": "weekly/index.html",
+    "kind": "review",
+    "label": "after"
+  },
+  {
+    "page": "daily.html",
+    "text": "周报",
+    "href": "weekly/index.html",
+    "resolved": "weekly/index.html",
+    "kind": "review",
+    "label": "after"
+  },
+  {
+    "page": "daily.html",
+    "text": "精选",
+    "href": "index.html",
+    "resolved": "index.html",
+    "kind": "real-nav",
+    "label": "after"
+  }
+]

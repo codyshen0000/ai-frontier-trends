@@ -103,12 +103,12 @@ export const BarButton = forwardRef<HTMLButtonElement, ButtonHTMLAttributes<HTML
     <button
       ref={ref}
       type="button"
-      aria-label={label}
       title={label}
-      className={`relative grid size-11 shrink-0 place-items-center rounded-full transition-colors active:bg-bg-sunk ${on ? "text-accent" : "text-ink-2"} ${className}`}
+      className={`relative inline-flex min-h-11 shrink-0 items-center justify-center gap-1 rounded-full px-2 text-[13px] font-medium transition-colors active:bg-bg-sunk ${on ? "text-accent" : "text-ink-2"} ${className}`}
       {...rest}
     >
       {children}
+      <span>{label}</span>
     </button>
   );
 });

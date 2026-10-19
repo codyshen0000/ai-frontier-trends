@@ -6,7 +6,7 @@ import { CATEGORY_KEYS, CATEGORY_LABELS, CHANNEL_LABELS, type CategoryKey, type 
 import { SITE } from "@aihot/site";
 import { IconClose, IconFilter, IconSearch } from "../../components/icons";
 import { PillTabs } from "../../components/ui/Tabs";
-import { ChoiceTick, Sheet, sheetChoice } from "../../components/ui/Sheet";
+import { ChoiceTick, sheetChoice } from "../../components/ui/Sheet";
 import { Wordmark } from "@aihot/site/brand/Logo.tsx";
 import { BarButton, PhoneBar } from "../../components/shell/PhoneBar";
 import { openSearch } from "../search/SearchOverlay";
@@ -44,7 +44,11 @@ function filterKey(category: CategoryKey | null, channel: ChannelKey): string {
 /** Desktop: the filter as a row of tabs beside the search field. */
 export function CategoryTabs({ base, category, channel = "all", layoutId, className = "" }: { base: string; category: CategoryKey | null; channel?: ChannelKey; layoutId: string; className?: string }) {
   const [params] = useSearchParams();
-  return <PillTabs items={filterOptions(base, params, "全部").map(o => ({ ...o, prefetchOnPress: true }))} active={filterKey(category, channel)} layoutId={layoutId} label="筛选" className={className} />;
+  return (
+    <div data-ft-filter-group>
+      <PillTabs items={filterOptions(base, params, "全部").map(o => ({ ...o, prefetchOnPress: true }))} active={filterKey(category, channel)} layoutId={layoutId} label="筛选" className={className} />
+    </div>
+  );
 }
 
 /**
@@ -78,7 +82,7 @@ export function FeedBar({ base, category, channel }: { base: "/" | "/all"; categ
         }
         actions={
           <>
-            <BarButton label={filtered ? "筛选（已选）" : "筛选"} on={filtered} onClick={() => setSheet(true)}>
+            <BarButton label="筛选" data-ft-filters-open aria-expanded={sheet} aria-controls="ft-filter-sheet" on={filtered} onClick={() => setSheet(true)}>
               <IconFilter size={21} />
               {filtered && <span aria-hidden="true" className="absolute right-[9px] top-[9px] size-[7px] rounded-full bg-accent ring-2 ring-bg" />}
             </BarButton>
@@ -87,6 +91,26 @@ export function FeedBar({ base, category, channel }: { base: "/" | "/all"; categ
         }
       />
       <FilterSheet open={sheet} onClose={() => setSheet(false)} base={base} active={filterKey(category, channel)} />
+      <div className="hidden pb-3 pt-2 lg:flex lg:items-center lg:gap-2">
+        <button
+          type="button"
+          data-ft-filters-open
+          aria-expanded={sheet}
+          aria-controls="ft-filter-sheet"
+          onClick={() => setSheet(true)}
+          className="inline-flex min-h-11 items-center rounded-full border border-line px-3 text-[13px] font-medium text-ink-2 hover:bg-bg-sunk"
+        >
+          筛选
+        </button>
+        <button
+          type="button"
+          data-ft-search="phone"
+          onClick={(event) => openSearch("", event.currentTarget)}
+          className="inline-flex min-h-11 items-center rounded-full border border-line px-3 text-[13px] font-medium text-ink-2 hover:bg-bg-sunk"
+        >
+          搜索
+        </button>
+      </div>
     </>
   );
 }
@@ -95,14 +119,21 @@ export function FeedBar({ base, category, channel }: { base: "/" | "/all"; categ
 function FilterSheet({ open, onClose, base, active }: { open: boolean; onClose: () => void; base: string; active: string }) {
   const [params] = useSearchParams();
   return (
-    <Sheet open={open} onClose={onClose} title="筛选">
-      <ul className="mx-4 divide-y divide-line-soft">
+    <div id="ft-filter-sheet" hidden={!open} data-ft-filter-sheet className="ft-filter-sheet mb-3 rounded-card border border-line bg-surface p-3">
+      <div className="mb-2 flex items-center justify-between">
+        <strong className="text-[14px]">筛选</strong>
+        <button type="button" data-ft-filters-close className="min-h-11 px-2 text-[13px]" onClick={onClose}>
+          关闭
+        </button>
+      </div>
+      <ul className="divide-y divide-line-soft">
         {filterOptions(base, params, "不限").map((o) => {
           const on = o.key === active;
           return (
             <li key={o.key}>
               <Link
                 to={o.to}
+                data-ft-filter={o.key}
                 onClick={onClose}
                 aria-current={on ? "true" : undefined}
                 className={`-mx-2 rounded-tile px-2 ${sheetChoice(on)}`}
@@ -114,7 +145,7 @@ function FilterSheet({ open, onClose, base, active }: { open: boolean; onClose: 
           );
         })}
       </ul>
-    </Sheet>
+    </div>
   );
 }
 
@@ -145,7 +176,7 @@ export function ActiveFilters({ base, category, channel, tag }: { base: string; 
 /** Phones: the magnifier in a bar; the search opens over the page with the keyboard up. */
 function SearchButton() {
   return (
-    <BarButton label="搜索" onClick={(event) => openSearch("", event.currentTarget)}>
+    <BarButton label="搜索" data-ft-search="phone" onClick={(event) => openSearch("", event.currentTarget)}>
       <IconSearch size={21} />
     </BarButton>
   );
@@ -171,11 +202,11 @@ export function SearchField({ defaultValue = "", keep = {} }: { defaultValue?: s
   const inputRef = useRef<HTMLInputElement>(null);
   useEffect(() => setValue(defaultValue), [defaultValue]);
   useSlashFocus(inputRef);
-  const searching = navigation.state === "loading" && navigation.location?.pathname === "/all" && !!new URLSearchParams(navigation.location.search).get("q");
+  const searching = navigation.state === "loading" && navigation.location?.pathname === "/search" && !!new URLSearchParams(navigation.location.search).get("q");
   const hidden = Object.entries(keep).map(([k, v]) => (v ? <input key={k} type="hidden" name={k} value={v} /> : null));
 
   return (
-    <Form method="get" action="/all" role="search" className="group relative w-full shrink-0 lg:w-60">
+    <Form method="get" action="/search" role="search" data-ft-search="desk" className="group relative w-full shrink-0 lg:w-60">
       {hidden}
       <label htmlFor="site-search" className="sr-only">
         搜索标题、摘要与正文

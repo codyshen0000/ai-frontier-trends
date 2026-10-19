@@ -64,9 +64,45 @@ function rewriteMitHtml(html) {
     .replaceAll(/assets\/nameplates\/(daily|weekly|monthly|archive)-[A-Za-z0-9]+\.svg/g, "assets/nameplates/$1.svg");
 }
 
+for (const name of ["hydrate", "search"]) {
+  const dest = path.join(tmpCss, `client-${name}`);
+  await build({
+    configFile: path.join(here, "vite.config.ts"),
+    root: here,
+    logLevel: "error",
+    build: {
+      outDir: dest,
+      emptyOutDir: true,
+      minify: true,
+      lib: {
+        entry: path.join(here, `src/client/${name}.ts`),
+        name: name === "search" ? "FTSearch" : "FTHydrate",
+        formats: ["iife"],
+        fileName: () => `${name}.js`,
+      },
+    },
+  });
+  fs.copyFileSync(path.join(dest, `${name}.js`), path.join(outDir, "assets", `${name}.js`));
+}
+
+const { exportStatic } = await import("../static_export.mjs");
+const exported = await exportStatic({
+  distDir: outDir,
+  contentDir: path.resolve(here, "../../content"),
+  dataset: process.env.FT_DATASET || "",
+  dataAsOf: undefined,
+  builtAt: new Date().toISOString(),
+});
+
 const mod = await import(pathToFileURL(path.join(tmpSsr, "prerender.js")).href);
 for (const page of mod.pages) {
-  const html = rewriteMitHtml(mod.renderPage(page.node, page.title, "assets/app.css"));
+  const html = rewriteMitHtml(mod.renderPage(page.node, page.title, "assets/app.css", {
+    page: page.page,
+    hasTimeline: exported.dataset === "test-paging",
+    hydrateHref: "assets/hydrate.js",
+    rssHref: "feed/weekly.xml",
+    base: "./",
+  }));
   fs.writeFileSync(path.join(outDir, page.file), html);
   console.log("wrote", page.file, html.length);
 }
@@ -100,7 +136,7 @@ fs.writeFileSync(
 </head>
 <body>
 <h1>L2 封面 v5（ours）</h1>
-<p>有用才放，没有就不放。本目录只有我们站点的静态页副本，不是 aihot.news。</p>
+<p>有用才放，没有就不放。本目录只有我们站点的静态页副本。</p>
 <ul>
   <li><a href="ours-hot.html">/hot/ NO.01（价值门后的真实槽）</a></li>
   <li><a href="ours-hot-empty.html">/hot/ 无图样例（同一壳，封面置空）</a></li>

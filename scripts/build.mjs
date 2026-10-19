@@ -20,6 +20,8 @@ import {
   weeklyIndexBody,
   weeklyIssueChrome,
 } from "./weekly.mjs";
+import { convertWeeklyCharts, embedWeeklyChartsAsDataUri, rewriteWeeklyChartEmbeds } from "./weekly_charts.mjs";
+import { ensureReportImageFlex, replaceMermaidWithSvg } from "./mermaid_inline.mjs";
 import { assertCoverRecords, assertDistPublicCopy, assertWeeklyMetaSources, assertWeeklyReports } from "./story_digest.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -151,13 +153,11 @@ const ICONS = {
 
 function navLink(href, label, { current = false, extraClass = "" } = {}) {
   const cls = [current ? "active" : "", extraClass].filter(Boolean).join(" ");
-  const attrs = [
-    `href="${href}"`,
-    cls ? `class="${cls}"` : "",
-    current ? 'aria-current="page"' : "",
-  ]
-    .filter(Boolean)
-    .join(" ");
+  if (current) {
+    const attrs = [cls ? `class="${cls}"` : "", 'aria-current="page"'].filter(Boolean).join(" ");
+    return `<span ${attrs}>${escapeHtml(label)}</span>`;
+  }
+  const attrs = [`href="${href}"`, cls ? `class="${cls}"` : ""].filter(Boolean).join(" ");
   return `<a ${attrs}>${escapeHtml(label)}</a>`;
 }
 
@@ -174,7 +174,10 @@ function shellLink(item, currentId, fromPath, { active } = {}) {
   const href = hrefBetween(fromPath, item.path);
   const current = active ?? isChromeActive(item, currentId);
   const icon = ICONS[item.id] || ICONS.more;
-  return `<a href="${href}" class="${current ? "active" : ""}"${current ? ' aria-current="page"' : ""}>${icon}<span>${escapeHtml(item.label)}</span></a>`;
+  if (current) {
+    return `<span class="active" aria-current="page">${icon}<span>${escapeHtml(item.label)}</span></span>`;
+  }
+  return `<a href="${href}">${icon}<span>${escapeHtml(item.label)}</span></a>`;
 }
 
 function shellLinks(currentId, fromPath) {
@@ -197,7 +200,10 @@ function editionLinks(currentId, fromPath) {
       const href = hrefBetween(fromPath, item.path);
       const current = item.id === currentId;
       const icon = ICONS[item.id] || ICONS.daily;
-      return `<a href="${href}" class="${current ? "active" : ""}"${current ? ' aria-current="page"' : ""}>${icon}<span>${escapeHtml(item.label)}</span></a>`;
+      if (current) {
+        return `<span class="active" aria-current="page">${icon}<span>${escapeHtml(item.label)}</span></span>`;
+      }
+      return `<a href="${href}">${icon}<span>${escapeHtml(item.label)}</span></a>`;
     })
     .join("");
 }
@@ -262,10 +268,10 @@ function pageChrome(page, fromPath) {
 }
 
 const THEME_BOOT =
-  '<script data-ds-injected="theme">(function(){try{var t=localStorage.getItem("theme");if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t;document.documentElement.classList.add("ds-page","ft-shell");}catch(e){document.documentElement.classList.add("ds-page","ft-shell");}})();</script>';
+  '<script data-ds-injected="theme">(function(){try{var t=localStorage.getItem("ft:theme");if(!t){var old=localStorage.getItem("theme");if(old==="light"||old==="dark"||old==="system"){t=old;localStorage.setItem("ft:theme",old)}}if(t!=="light"&&t!=="dark"&&t!=="system")t="system";var resolved=t==="system"?(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"):t;document.documentElement.dataset.theme=resolved;document.documentElement.setAttribute("data-ft-theme-pref",t);document.documentElement.classList.add("ds-page","ft-shell","js");document.documentElement.classList.remove("no-js");}catch(e){document.documentElement.classList.add("ds-page","ft-shell","js");document.documentElement.classList.remove("no-js");}})();</script>';
 
 const RAW_NAV_UI =
-  '<script data-ds-injected="ui">(function(){var root=document.documentElement;function apply(t){root.dataset.theme=t;document.querySelectorAll(".ft-theme-toggle").forEach(function(btn){var d=t==="dark";btn.setAttribute("aria-pressed",d?"true":"false");btn.setAttribute("aria-label",d?"切换到浅色模式":"切换到深色模式");btn.textContent=d?"☀":"☾";});}function pref(){try{var s=localStorage.getItem("theme");if(s==="light"||s==="dark")return s;}catch(e){}return matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}apply(pref());document.querySelectorAll(".ft-theme-toggle").forEach(function(btn){btn.addEventListener("click",function(){var n=root.dataset.theme==="dark"?"light":"dark";try{localStorage.setItem("theme",n);}catch(e){}apply(n);});});function applyBoard(){var board=location.hash==="#board";var curate=document.querySelector(\'[data-ds-injected="live-curate"]\');var archive=document.querySelector(\'[data-ds-injected="live-archive"]\');if(!curate||!archive)return;curate.hidden=board;archive.hidden=!board;root.classList.toggle("ft-board",board);}window.addEventListener("hashchange",applyBoard);if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",applyBoard);else applyBoard();})();</script>';
+  '<script data-ds-injected="ui">(function(){var root=document.documentElement;function resolved(pref){if(pref==="light"||pref==="dark")return pref;try{return matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}catch(e){return"light"}}function apply(pref){var t=resolved(pref);root.dataset.theme=t;root.setAttribute("data-ft-theme-pref",pref);document.querySelectorAll(".ft-theme-toggle").forEach(function(btn){var d=t==="dark";btn.setAttribute("aria-pressed",d?"true":"false");btn.setAttribute("aria-label",d?"切换到浅色模式":"切换到深色模式");btn.textContent=d?"☀":"☾";});}function pref(){try{var s=localStorage.getItem("ft:theme");if(!s){var old=localStorage.getItem("theme");if(old==="light"||old==="dark"||old==="system"){s=old;localStorage.setItem("ft:theme",old)}}if(s==="light"||s==="dark"||s==="system")return s;}catch(e){}return"system";}apply(pref());document.querySelectorAll(".ft-theme-toggle").forEach(function(btn){btn.addEventListener("click",function(){var n=root.dataset.theme==="dark"?"light":"dark";try{localStorage.setItem("ft:theme",n);}catch(e){}apply(n);});});function applyBoard(){var board=location.hash==="#board";var curate=document.querySelector(\'[data-ds-injected="live-curate"]\');var archive=document.querySelector(\'[data-ds-injected="live-archive"]\');if(!curate||!archive)return;curate.hidden=board;archive.hidden=!board;root.classList.toggle("ft-board",board);}window.addEventListener("hashchange",applyBoard);if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",applyBoard);else applyBoard();})();</script>';
 
 function stripInjected(html) {
   return stripLiveCurate(
@@ -298,11 +304,25 @@ function injectAfterBodyOpen(html, snippet) {
   return `${snippet}${html}`;
 }
 
-export function injectHtmlFile(raw, { currentId, path, extraBody = "" }) {
-  const skinHref = assetHref(path, "assets/skin-raw.css");
+function ensureNoJsClass(html) {
+  return String(html).replace(/<html\b([^>]*)>/i, (full, attrs) => {
+    const extras = [];
+    if (!/\bno-js\b/.test(attrs)) extras.push("no-js");
+    if (!/\bds-page\b/.test(attrs)) extras.push("ds-page");
+    if (!/\bft-shell\b/.test(attrs)) extras.push("ft-shell");
+    if (!extras.length) return full;
+    if (/\bclass=["']/.test(attrs)) {
+      return full.replace(/class=["']([^"']*)["']/, (_m, cls) => `class="${cls} ${extras.join(" ")}"`);
+    }
+    return `<html${attrs} class="${extras.join(" ")}">`;
+  });
+}
+
+export function injectHtmlFile(raw, { currentId, path, extraBody = "", skinAsset = "assets/skin-raw.css" } = {}) {
+  const skinHref = assetHref(path, skinAsset);
   const cssLink = `<link rel="stylesheet" href="${DS_CSS}" data-ds-injected="css">`;
   const skinLink = `<link rel="stylesheet" href="${skinHref}" data-ds-injected="skin">`;
-  let html = stripInjected(raw);
+  let html = ensureNoJsClass(stripInjected(raw));
   if (PAPERS.length) html = addExplainLinks(html, PAPERS, hrefBetween(path, "/papers/"));
   if (path === "/timeline/") html = ensureThreadAnchors(html);
   if (path === "/live/") html = curateLivePage(html, { hrefBetween, escapeHtml });
@@ -322,7 +342,7 @@ function renderPage({ id, title, path, body, extraClass = "", description = conf
 
   const skinHref = assetHref(path, "assets/skin-raw.css");
   return `<!DOCTYPE html>
-<html lang="zh-CN" class="ds-page ft-shell">
+<html lang="zh-CN" class="ds-page ft-shell no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -336,12 +356,24 @@ function renderPage({ id, title, path, body, extraClass = "", description = conf
   <script>
     (function () {
       try {
-        var t = localStorage.getItem("theme");
-        if (t !== "light" && t !== "dark") {
-          t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        var t = localStorage.getItem("ft:theme");
+        if (!t) {
+          var old = localStorage.getItem("theme");
+          if (old === "light" || old === "dark" || old === "system") {
+            t = old;
+            localStorage.setItem("ft:theme", old);
+          }
         }
-        document.documentElement.dataset.theme = t;
-      } catch (e) {}
+        if (t !== "light" && t !== "dark" && t !== "system") t = "system";
+        var resolved = t === "system" ? (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") : t;
+        document.documentElement.dataset.theme = resolved;
+        document.documentElement.setAttribute("data-ft-theme-pref", t);
+        document.documentElement.classList.add("js");
+        document.documentElement.classList.remove("no-js");
+      } catch (e) {
+        document.documentElement.classList.add("js");
+        document.documentElement.classList.remove("no-js");
+      }
     })();
   </script>
 </head>
@@ -355,7 +387,7 @@ function renderPage({ id, title, path, body, extraClass = "", description = conf
   <footer class="ds-footer">
     <div class="ds-wrap ds-footer-inner">
       <p>材料来自公开论文、官方博客和公开热帖。看板每 30 分钟检查一次；时间线每晚更新。</p>
-      <p><a href="${hrefBetween(path, "/about/")}">关于这个站</a></p>
+      <p>${path === "/about/" ? '<a href="#main">关于这个站</a>' : `<a href="${hrefBetween(path, "/about/")}">关于这个站</a>`}</p>
     </div>
   </footer>
   <div class="lightbox" id="lightbox" hidden>
@@ -391,13 +423,13 @@ function mitAssetPrefix(fromPath) {
 /** Prefix every local assets/ or data/ URL in a src, href, or comma-separated srcset value. */
 export function prefixLocalAssetUrls(value, prefix) {
   if (!prefix) return value;
-  return String(value).replace(/(^|,\s*)((?:assets|data)\/)/g, `$1${prefix}$2`);
+  return String(value).replace(/(^|,\s*)((?:assets|data|feed|api)\/)/g, `$1${prefix}$2`);
 }
 
 /** Rewrite src, srcSet, imageSrcSet, href, action from the same prefix helper. */
 export function rewriteMitAssetAttrs(html, prefix) {
   return String(html).replace(/\b(href|src|srcset|imagesrcset|action)="([^"]*)"/gi, (match, attr, val) => {
-    if (!/(?:^|,\s*)(?:assets|data)\//.test(val)) return match;
+    if (!/(?:^|,\s*)(?:assets|data|feed|api)\//.test(val)) return match;
     return `${attr}="${prefixLocalAssetUrls(val, prefix)}"`;
   });
 }
@@ -410,12 +442,19 @@ export function normalizeResponsiveImageAttrs(html) {
 }
 
 export function rewriteMitStatic(html, fromPath) {
-  const prefixedPages = String(html).replace(/(href|src|action)="((?:index|hot|daily)\.html)([^"]*)"/g, (_, attr, file, suffix) => {
+  const prefixedPages = String(html).replace(/(href|src|action)="((?:index|hot|daily|search|starred|more|weekly)\.html|weekly\/[^"]+\.html)([^"]*)"/g, (_, attr, file, suffix) => {
+    if (file.startsWith("weekly/") && file.endsWith(".html")) {
+      const dest = `/${file.replace(/\.html$/, "")}/`;
+      return `${attr}="${hrefBetween(fromPath, dest)}${suffix}"`;
+    }
     const page = file.replace(/\.html$/, "");
     const dest = page === "index" ? "/" : `/${page}/`;
     return `${attr}="${hrefBetween(fromPath, dest)}${suffix}"`;
   });
-  return normalizeResponsiveImageAttrs(rewriteMitAssetAttrs(prefixedPages, mitAssetPrefix(fromPath)));
+  const prefix = mitAssetPrefix(fromPath);
+  const withAssets = normalizeResponsiveImageAttrs(rewriteMitAssetAttrs(prefixedPages, prefix));
+  const base = prefix || "./";
+  return withAssets.replace(/"base":"\.\/"/g, `"base":"${base}"`);
 }
 
 function publishMitStatic() {
@@ -443,6 +482,14 @@ function publishMitStatic() {
     mkdirSync(join(distDir, "assets", "covers"), { recursive: true });
     cpSync(coversDir, join(distDir, "assets", "covers"), { recursive: true });
   }
+  for (const extra of ["avatars", "hydrate.js", "search.js"]) {
+    const from = join(src, "assets", extra);
+    if (existsSync(from)) cpSync(from, join(distDir, "assets", extra), { recursive: true });
+  }
+  for (const extra of ["feed", "api"]) {
+    const from = join(src, extra);
+    if (existsSync(from)) cpSync(from, join(distDir, extra), { recursive: true });
+  }
 
   const indexHtml = readFileSync(join(src, "index.html"), "utf8");
   const hotHtml = readFileSync(join(src, "hot.html"), "utf8");
@@ -451,6 +498,12 @@ function publishMitStatic() {
   writePage("/live/", injectBeforeHeadEnd(rewriteMitStatic(indexHtml, "/live/"), faviconLinks("/live/")));
   writePage("/hot/", injectBeforeHeadEnd(rewriteMitStatic(hotHtml, "/hot/"), faviconLinks("/hot/")));
   writePage("/daily/", injectBeforeHeadEnd(rewriteMitStatic(dailyHtml, "/daily/"), faviconLinks("/daily/")));
+  if (existsSync(join(src, "search.html"))) {
+    writePage("/search/", injectBeforeHeadEnd(rewriteMitStatic(readFileSync(join(src, "search.html"), "utf8"), "/search/"), faviconLinks("/search/")));
+  }
+  if (existsSync(join(src, "starred.html"))) {
+    writePage("/starred/", injectBeforeHeadEnd(rewriteMitStatic(readFileSync(join(src, "starred.html"), "utf8"), "/starred/"), faviconLinks("/starred/")));
+  }
 }
 
 function chipClass(status) {
@@ -530,15 +583,18 @@ function assertNoLocalPaths(html, label) {
   }
 }
 
-function writeWeeklyIssue(issue) {
-  const raw = readFileSync(issue.htmlPath, "utf8");
+async function writeWeeklyIssue(issue) {
+  const charts = issue.chartsDir ? await convertWeeklyCharts(issue.chartsDir) : [];
+  const raw = await replaceMermaidWithSvg(rewriteWeeklyChartEmbeds(readFileSync(issue.htmlPath, "utf8"), charts));
   const extraBody = weeklyIssueChrome({ hrefBetween, trendSubnav, fromPath: issue.path });
+  const injectOpts = { skinAsset: "assets/skin-weekly.css" };
   const injected = injectHtmlFile(raw, {
     currentId: "weekly",
     path: issue.path,
     extraBody,
+    ...injectOpts,
   });
-  verifyRawInjection({ id: `weekly-${issue.date}`, currentId: "weekly", path: issue.path }, raw, injected, extraBody);
+  verifyRawInjection({ id: `weekly-${issue.date}`, currentId: "weekly", path: issue.path, ...injectOpts }, raw, injected, extraBody);
   assertPublicSafe(injected, `weekly ${issue.date}`);
   if (issue.markdownPath) assertPublicSafe(readFileSync(issue.markdownPath, "utf8"), `weekly ${issue.date} markdown`);
   if (issue.timelinePath) assertPublicSafe(readFileSync(issue.timelinePath, "utf8"), `weekly ${issue.date} timeline`);
@@ -546,9 +602,17 @@ function writeWeeklyIssue(issue) {
   writePage(issue.path, injected);
   const destDir = join(distDir, "weekly", issue.date);
   mkdirSync(destDir, { recursive: true });
+  const standalone = ensureReportImageFlex(
+    embedWeeklyChartsAsDataUri(raw.replace(/<link[^>]*data-ds-injected="favicon"[^>]*>\s*/gi, ""), charts),
+  );
   writeFileSync(
     join(destDir, "report.html"),
-    injectBeforeHeadEnd(raw.replace(/<link[^>]*data-ds-injected="favicon"[^>]*>\s*/gi, ""), faviconLinks(issue.path)),
+    injectBeforeHeadEnd(
+      standalone.includes('classList.remove("no-js")')
+        ? standalone
+        : standalone.replace(/<head\b[^>]*>/i, (open) => `${open}<script>document.documentElement.classList.add("js");document.documentElement.classList.remove("no-js");</script>`),
+      faviconLinks(issue.path),
+    ),
   );
   if (issue.markdownPath) cpSync(issue.markdownPath, join(destDir, "report.md"));
   if (issue.timelinePath) cpSync(issue.timelinePath, join(destDir, "timeline.md"));
@@ -556,14 +620,22 @@ function writeWeeklyIssue(issue) {
 }
 
 function verifyRawInjection(page, raw, injected, extraBody = "") {
+  const skinAsset = page.skinAsset || "assets/skin-raw.css";
+  const skinName = skinAsset.split("/").pop();
   if (!injected.includes(DS_CSS)) throw new Error(`${page.id}: missing ds.css`);
-  if (!injected.includes("skin-raw.css")) throw new Error(`${page.id}: missing skin-raw.css`);
+  if (!injected.includes(skinName)) throw new Error(`${page.id}: missing ${skinName}`);
+  if (String(page.id).startsWith("weekly-")) {
+    if (injected.includes("skin-raw.css")) throw new Error(`${page.id}: weekly page must not load Remaining-A skin-raw.css`);
+    if (injected.includes("app.css") || injected.includes("hydrate.js")) {
+      throw new Error(`${page.id}: weekly page must not load Remaining-A assets`);
+    }
+  }
   if (!injected.includes('data-ds-injected="nav"')) throw new Error(`${page.id}: missing injected nav`);
   if (!injected.includes(">精选<") || !injected.includes(">热点<") || !injected.includes(">日报<") || !injected.includes(">更多<")) {
     throw new Error(`${page.id}: injected nav missing primary items`);
   }
   const currentId = page.currentId || page.id;
-  const twice = injectHtmlFile(injected, { currentId, path: page.path, extraBody });
+  const twice = injectHtmlFile(injected, { currentId, path: page.path, extraBody, skinAsset });
   if (twice !== injected) {
     throw new Error(`${page.id}: raw injection is not idempotent`);
   }
@@ -578,7 +650,9 @@ function readHomeData() {
   return { live, threads: extracted.threads, lede: extracted.lede, threadSource: extracted.source, timelineRaw };
 }
 
-export function buildSite() {
+const dataset = (process.argv.find((a) => a.startsWith("--dataset=")) || "").slice(10) || process.env.FT_DATASET || "";
+
+export async function buildSite() {
   assertCoverRecords(JSON.parse(readFileSync(join(root, "scripts", "mit-static", "src", "covers.generated.json"), "utf8")));
   assertWeeklyReports(root);
   assertWeeklyMetaSources(root);
@@ -636,7 +710,7 @@ export function buildSite() {
           path: page.path,
           extraClass: "ds-section ft-page",
           description: page.summary || config.description,
-          body: morePageBody({ hrefBetween, escapeHtml }),
+          body: morePageBody({ hrefBetween, escapeHtml, weeklyPath: weeklyIssues[0]?.path || "/weekly/" }),
         }),
       );
       contentPages.push({ ...page, summary: page.summary || page.title });
@@ -683,7 +757,7 @@ export function buildSite() {
     }
 
     if (page.htmlFile) {
-      const raw = readFileSync(join(contentDir, page.htmlFile), "utf8");
+      const raw = await replaceMermaidWithSvg(readFileSync(join(contentDir, page.htmlFile), "utf8"));
       const extraBody = page.id === "timeline" ? timelineCharts(raw) : "";
       const injected = injectHtmlFile(raw, { currentId: page.id, path: page.path, extraBody });
       verifyRawInjection(page, raw, injected, extraBody);
@@ -731,7 +805,7 @@ export function buildSite() {
   }
 
   for (const issue of weeklyIssues) {
-    writeWeeklyIssue(issue);
+    await writeWeeklyIssue(issue);
     contentPages.push({
       id: `weekly-${issue.date}`,
       title: issue.title,
@@ -765,17 +839,49 @@ export function buildSite() {
   cpSync(join(srcDir, "styles.css"), join(distDir, "styles.css"));
   cpSync(join(srcDir, "theme.js"), join(distDir, "theme.js"));
   cpSync(join(srcDir, "skin-raw.css"), join(distDir, "assets", "skin-raw.css"));
+  cpSync(join(srcDir, "skin-weekly.css"), join(distDir, "assets", "skin-weekly.css"));
   cpSync(join(srcDir, "favicon.svg"), join(distDir, "assets", "favicon.svg"));
   cpSync(join(srcDir, "favicon.png"), join(distDir, "assets", "favicon.png"));
   cpSync(join(srcDir, "favicon.ico"), join(distDir, "favicon.ico"));
   const copiedImages = copyCaseAssets(root, distDir);
   writeFileSync(join(distDir, ".nojekyll"), "");
   publishMitStatic();
+  const { exportStatic } = await import("./static_export.mjs");
+  await exportStatic({
+    distDir,
+    contentDir,
+    dataset,
+    dataAsOf: undefined,
+    builtAt: new Date().toISOString(),
+  });
   assertDistPublicCopy(distDir);
+  snapshotRemainingA();
 
-  console.log(`Built ${contentPages.length + 1} pages → dist/ (public=${publicDeploy}, case images=${copiedImages}, mit-static overlay)`);
+  console.log(`Built ${contentPages.length + 1} pages → dist/ (public=${publicDeploy}, case images=${copiedImages}, mit-static overlay, dataset=${dataset || "none"})`);
+}
+
+function snapshotRemainingA() {
+  const dest = join(root, "preview", "remaining-a");
+  const src = join(root, "preview", "mit-static");
+  mkdirSync(dest, { recursive: true });
+  for (const name of ["index.html", "hot.html", "daily.html", "search.html", "starred.html", "more.html"]) {
+    const from = join(src, name);
+    if (existsSync(from)) writeFileSync(join(dest, name), readFileSync(from));
+  }
+  for (const dir of ["assets", "data", "feed", "api", "weekly"]) {
+    const from = join(distDir, dir);
+    if (existsSync(from)) cpSync(from, join(dest, dir), { recursive: true });
+  }
+  for (const file of ["index.html", "hot.html", "daily.html", "search.html", "starred.html", "more.html"]) {
+    const full = join(dest, file);
+    if (!existsSync(full)) continue;
+    const rewritten = readFileSync(full, "utf8")
+      .replaceAll('href="weekly.html', 'href="weekly/index.html')
+      .replace(/href="weekly\/(\d{4}-\d{2}-\d{2})\.html/g, 'href="weekly/$1/index.html');
+    writeFileSync(full, injectBeforeHeadEnd(rewritten, faviconLinks("/")));
+  }
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
-  buildSite();
+  await buildSite();
 }

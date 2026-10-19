@@ -20,7 +20,7 @@ const labelOf = (group: GroupInfo) => (group.additionalSourceCount > 0 ? `另外
 // The groups left open in each history entry, with what they showed (null: still loading): back from an
 // item finds them open again. In memory for back within the app; in session storage for a page the
 // browser reloaded on back/forward.
-const openGroups = sessionCache<{ savedAt: number; groups: Record<string, GroupReport[] | null> }>("aihot:open-groups:", 30 * 60 * 1000);
+const openGroups = sessionCache<{ savedAt: number; groups: Record<string, GroupReport[] | null> }>("ft:open-groups:", 30 * 60 * 1000);
 
 /** Keeps what an open group shows for its history entry; `undefined` forgets a closed one. */
 function remember(entry: string, key: string, reports: GroupReport[] | null | undefined) {

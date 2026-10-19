@@ -168,7 +168,7 @@ export function hotPageBody(cards, meta, { escapeHtml }) {
   </aside>`;
 }
 
-export function morePageBody({ hrefBetween, escapeHtml }) {
+export function morePageBody({ hrefBetween, escapeHtml, weeklyPath = "/weekly/" }) {
   const groups = [
     {
       title: "成刊",
@@ -180,7 +180,7 @@ export function morePageBody({ hrefBetween, escapeHtml }) {
     {
       title: "研究资产",
       items: [
-        { label: "研究主页 · 本周主线", href: hrefBetween("/more/", "/"), note: "结论先行的主线与读法" },
+        { label: "研究主页 · 本周主线", href: hrefBetween("/more/", weeklyPath), note: "结论先行的主线与读法" },
         { label: "时间线", href: hrefBetween("/more/", "/timeline/"), note: "主线修订史" },
         { label: "推翻信号", href: hrefBetween("/more/", "/signals/"), note: "让判断加强或翻盘的证据" },
         { label: "权重待交付", href: hrefBetween("/more/", "/weights/"), note: "已宣布、尚未放出的权重" },
@@ -192,8 +192,9 @@ export function morePageBody({ hrefBetween, escapeHtml }) {
         { label: "看板 Studio", href: "https://codyshen0000.github.io/studio/", note: "KPI / 表 / 图分析", external: true },
         { label: "FLUX 3 专题", href: hrefBetween("/more/", "/flux3/"), note: "速查表、案例与术语" },
         { label: "关于", href: hrefBetween("/more/", "/about/"), note: "材料来源与标签" },
+        { label: "RSS", href: "../feed/weekly.xml", note: "订阅周报" },
         { label: "个人主页", href: "https://codyshen0000.github.io/", note: "学术主页入口", external: true },
-        { label: "原始看板", href: hrefBetween("/more/", "/live/") + "#board", note: "Hub、分类过滤、待交付表" },
+        { label: "原始看板", href: "", note: "Hub、分类过滤、待交付表已收进精选流，不再单独成页", textOnly: true },
       ],
     },
   ];
@@ -202,6 +203,12 @@ export function morePageBody({ hrefBetween, escapeHtml }) {
     .map((group) => {
       const links = group.items
         .map((item) => {
+          if (item.textOnly || !item.href) {
+            return `<div class="ft-more-card is-static">
+            <h3>${escapeHtml(item.label)}</h3>
+            <p>${escapeHtml(item.note)}</p>
+          </div>`;
+          }
           const extra = item.external ? ' target="_blank" rel="noopener"' : "";
           return `<a class="ft-more-card" href="${escapeHtml(item.href)}"${extra}>
             <h3>${escapeHtml(item.label)}</h3>
@@ -217,6 +224,10 @@ export function morePageBody({ hrefBetween, escapeHtml }) {
     <div>
       <p class="ft-kicker">更多</p>
       <h1>研究资产与工具</h1>
+    </div>
+    <div class="ft-more-theme">
+      <p class="ft-kicker">外观</p>
+      <button type="button" class="ft-theme-toggle" aria-label="切换配色">☾</button>
     </div>
   </header>
   <p class="ft-lede">时间线、周报、信号和权重收在这里。Studio 和专题不占首页。</p>

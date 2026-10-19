@@ -20,6 +20,7 @@ export function SourceLine({ item, className = "" }: { item: Pick<FeedItemSummar
       </span>
     );
   }
+  if (!item.source?.name) return null;
   return <span className={`min-w-0 truncate ${className}`}>{item.source.name}</span>;
 }
 
@@ -54,7 +55,7 @@ export function MediaThumbs({ media, className = "" }: { media: MediaView[]; cla
   );
 }
 
-type Starrable = Pick<FeedItemSummary, "id" | "title" | "summary" | "source" | "publishedAt" | "score" | "selected">;
+type Starrable = Pick<FeedItemSummary, "id" | "title" | "summary" | "source" | "publishedAt" | "selected"> & { url?: string };
 
 /** Whether an item is in this browser's 收藏, a toggle, and a counter that bumps when it is added. */
 export function useStar(item: Starrable) {
@@ -62,8 +63,8 @@ export function useStar(item: Starrable) {
   const [pulse, setPulse] = useState(0);
   const toggle = () => {
     const added = toggleStar({
-      id: item.id, title: item.title, summary: item.summary, sourceName: item.source.name,
-      publishedAt: item.publishedAt, score: item.score, aiSelected: item.selected,
+      id: item.id, title: item.title, summary: item.summary, sourceName: item.source?.name || "",
+      publishedAt: item.publishedAt, aiSelected: item.selected,
     });
     if (added) setPulse((p) => p + 1);
   };
@@ -73,12 +74,20 @@ export function useStar(item: Starrable) {
 /** Bookmark toggle kept in this browser (收藏): 26px, or sized by `size` or by `className`. */
 export function StarButton({ item, size, className = "size-[26px]" }: { item: Starrable; size?: number; className?: string }) {
   const { on, toggle, pulse } = useStar(item);
+  const snapshot = JSON.stringify({
+    id: item.id,
+    title: item.title,
+    url: item.url || "",
+    source: item.source?.name || "",
+    date: item.publishedAt || "",
+  });
   return (
     <button
       type="button"
       aria-pressed={on}
       aria-label={on ? "取消收藏" : "收藏"}
       title={on ? "取消收藏" : "收藏"}
+      data-ft-star={snapshot}
       onClick={(e) => {
         e.preventDefault();
         e.stopPropagation();

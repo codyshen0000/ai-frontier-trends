@@ -1,9 +1,16 @@
 (() => {
-  const storageKey = "theme";
+  const storageKey = "ft:theme";
   const root = document.documentElement;
 
   function preferredTheme() {
-    const saved = localStorage.getItem(storageKey);
+    let saved = localStorage.getItem(storageKey);
+    if (!saved) {
+      const old = localStorage.getItem("theme");
+      if (old === "light" || old === "dark" || old === "system") {
+        saved = old;
+        localStorage.setItem(storageKey, old);
+      }
+    }
     if (saved === "light" || saved === "dark") return saved;
     return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
   }

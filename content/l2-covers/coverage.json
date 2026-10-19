@@ -17,28 +17,28 @@
     {
       "id": "openui-1.0",
       "rank": 2,
-      "title": "OpenUI 1.0：Agent 交互界面框架",
+      "title": "OpenUI 1.0 开源 Agent 界面框架",
       "reason": "badge",
       "slot": "not a cover slot"
     },
     {
       "id": "jev-1-14-preview",
       "rank": 3,
-      "title": "Jev 1.14 预览：实验性图像 / box / 长上下文",
+      "title": "TypeSafe 开放 Jev 1.14 实验性预览",
       "reason": "valuable",
       "slot": "not a cover slot"
     },
     {
       "id": "jev-35b",
       "rank": 4,
-      "title": "JEV-35B：单次前向结构化决策头",
+      "title": "JEV-35B 开源单次前向决策头",
       "reason": "unsure",
       "slot": "not a cover slot"
     },
     {
       "id": "llamafactory-rsi",
       "rank": 5,
-      "title": "LlamaFactory RSI：PenguinHarness / awesome-rsi / GDPevo（观察）",
+      "title": "LlamaFactory 开源 RSI 工具链",
       "reason": "badge",
       "slot": "not a cover slot"
     },
@@ -52,28 +52,28 @@
     {
       "id": "terminal-rsi",
       "rank": 7,
-      "title": "Terminal-RSI：终端 agent 递归改写 + 策略精炼（观察）",
+      "title": "Terminal-RSI：终端 agent 递归自改进",
       "reason": "unsure",
       "slot": "not a cover slot"
     },
     {
       "id": "jevany",
       "rank": 8,
-      "title": "JevAny：任意骨干 → typed 决策头 / LoRA",
+      "title": "JevAny 把任意骨干训成决策头",
       "reason": "svg",
       "slot": "not a cover slot"
     },
     {
       "id": "agent-reflex",
       "rank": 9,
-      "title": "Agent-Reflex：把反思训成元技能并接 OPD",
+      "title": "Agent-Reflex 把反思训成元技能",
       "reason": "svg",
       "slot": "not a cover slot"
     },
     {
       "id": "kling-4-0-ga",
       "rank": 10,
-      "title": "Kling 4.0：产品全量上线（非开源权重）",
+      "title": "Kling 4.0 产品全量上线",
       "reason": "unsure",
       "slot": "not a cover slot"
     }

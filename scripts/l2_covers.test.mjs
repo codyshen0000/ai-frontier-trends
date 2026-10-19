@@ -14,6 +14,8 @@ import {
   sortHotPublications,
   sortLeadPublications,
   V5_OG_LOGO_SAMPLES,
+  isOfficialDiagramClass,
+  isValuableCoverClass,
 } from "./cover_rules.mjs";
 
 assert.equal(SPARK_HOURS, 24);
@@ -213,7 +215,11 @@ const officialFlux = pickFirstValuableImage(
   },
 );
 assert.equal(officialFlux.reason, "valuable");
-assert.ok(["model_sample", "product_ui", "official_explainer"].includes(officialFlux.category));
+assert.ok(["model_sample", "product_ui", "official_explainer", "official_diagram"].includes(officialFlux.category));
+assert.equal(isOfficialDiagramClass("official_diagram"), true);
+assert.equal(isOfficialDiagramClass("official_explainer"), true);
+assert.equal(isValuableCoverClass("official_diagram"), true);
+assert.equal(isValuableCoverClass("official_explainer"), true);
 
 const { rewriteMitStatic, prefixLocalAssetUrls } = await import("./build.mjs");
 assert.equal(

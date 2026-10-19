@@ -1,0 +1,138 @@
+# AI 前沿趋势周报 · 2026-10-12（第 1 期）
+
+**一句话结论：评审进 RL 升一档，并从图像扩到视频【推断】；视频少步降一档，研究主流仍在修 DMD【推断】；OPD 从默认配方变成要看师生重叠率的工具【证实，单篇为主】。四张信号表一周无翻转。**
+
+- 对比基线：2026-10-08 时间线首版。本期是第一期周报，没有上一期可比。
+- 覆盖时间：2026-10-08 至 2026-10-12（Asia/Shanghai）。
+- 标注：【证实】有对照实验或官方一手数据；【推断】是我们的归纳；【叙事】是常见说法，缺少能区分的证据。
+
+## 一周脉络
+
+```mermaid
+graph LR
+  subgraph BASE["10-08 首版"]
+    L1["主线1 LLM 后训练<br/>先 OPD/SFT 再 RL【证实】"]
+    L2["主线2 在学生样本上学【推断】"]
+    L3["主线3 可验证环境在链路两端【推断】"]
+    L4["主线4 差距在数据<br/>LLM【证实】· 生图【叙事】"]
+    L5["主线5 少步：轨迹蒸馏+对抗精修<br/>是候选默认【推断】"]
+  end
+  subgraph WEEK["本周净变化"]
+    U3["升一档：评审进 RL<br/>图：Arena 偏好+rubric<br/>视频：WorldAlign 4D 奖励"]
+    D5["降一档：研究主流留在 DMD<br/>绕开仅两家：π-Flow · PTD<br/>MBDMD：DMD ≡ Drifting"]
+    R2["改写：样本来源 / KL 方向 /<br/>师生重叠率 三个变量分开"]
+    R4["拆分：生图后训练【证实，单篇】<br/>生图预训练仍【叙事】"]
+    F1["加固+限定：SFT 热身 → OPD → RL<br/>OPD 有适用条件"]
+    O["新增观察：世界模型三形态<br/>VAE 与因果生成"]
+  end
+  L3 --> U3
+  L5 --> D5
+  L2 --> R2
+  L4 --> R4
+  L1 --> F1
+  F1 --> R2
+  U3 --> O
+  D5 --> O
+```
+
+## 关键图
+
+![首版后一周：新证据集中在主线 5、4、3、1](charts/2026-10-12-evidence-by-line.png)
+
+![一周核对 25 个候选，只有 2 个计入正表](charts/2026-10-12-signal-candidates.png)
+
+![师生越不像，越不该用标准 OPD](charts/2026-10-12-semi-opd-overlap.png)
+
+## 本周变化
+
+### 升级：主线 3「评审进入 RL 闭环」升一档【推断】
+- Arena 团队在 FLUX.2-dev 上做文生图 RL【证实，单 seed】。
+- 只用偏好奖励时，忠实度持续下降。
+- 加 rubric 奖励后，对基座胜率 0.507→0.642（[arXiv 2610.02967](https://arxiv.org/abs/2610.02967)）。
+- 这满足升级信号：技术报告加相对纯偏好奖励的增益。
+- 10-12 出现视频版。WorldAlign 用几何重投影奖励加 VLM checklist，跑 Flow-GRPO（[arXiv 2610.12382](https://arxiv.org/abs/2610.12382)）。
+- 它另加相机运动奖励，专门防模型靠「不动」骗分。
+- WorldAlign 没和纯偏好奖励对照，所以不再升档。
+- 判官都是学出来的，不算可验证奖励，不触发推翻信号。
+
+### 降级：主线 5「少步生成」降一档【推断】
+- 首版说「轨迹蒸馏加对抗精修」是候选默认。现在降为工业端做法（FLUX 3、Kandinsky）。
+- 研究主流留在 DMD 上修：PDMD、DMAD、DuoMatching、Salt++、RMD。
+- MBDMD 证明 DMD 等价于特定核下的 Drifting Model（[arXiv 2610.10989](https://arxiv.org/abs/2610.10989)）。
+- 所以 Drifting 也算 DMD 族，不算绕开【推断】。
+- 绕开 DMD 的视频方法只有两家：Kandinsky π-Flow 和 NVIDIA PTD。
+- PTD 在 33B MiniMax-H3 上 4 步，对 DMD 学生人评 63.4%（p=0.010）（[arXiv 2610.11498](https://arxiv.org/abs/2610.11498)）【证实】。
+- 它在 Wan2.1 上对 PDD 是 55.1%，不显著（p=0.36）【证实】。
+
+### 改写：主线 2「在学生样本上学」改写两次【推断】
+- 10-10：样本来源和 KL 方向拆成两个变量（[arXiv 2610.09639](https://arxiv.org/abs/2610.09639)）。
+- 反向 KL 的 OPD 能教组合技能，几乎不教新事实【证实，合成任务】。
+- 10-12：再加第三个变量，师生重叠率。
+- Semi-OPD 只用初始学生采一次 rollout（[arXiv 2610.11291](https://arxiv.org/abs/2610.11291)）。
+- 17 对师生里 14 对胜过标准 OPD，最高 +13.6%，训练快 11.4 倍【证实】。
+- 增益和初始 top-64 重叠率负相关，r=−0.73【证实】。
+- 初始学生 rollout 也胜过老师 rollout。所以样本要来自学生，又不能离老师太远【推断】。
+
+### 拆分：主线 4「差距在数据」生图半句拆成两段
+- 生图后训练：Arena 只换奖励数据量，胜率 0.537→0.642【证实，单 seed】。
+- 生图预训练：仍【叙事】。「GPT Image 2.5 靠数据」没有消融。
+- 视频侧多一组小对照，留观察。Sora100K 同一 LTX-2 各用 3000 条：70.41 对 76.43（[arXiv 2610.11770](https://arxiv.org/abs/2610.11770)，作者自报）。
+- LLM 侧继续加固。HarnessSQL 让 Qwen3-8B 从 15.5% 到 45.2%（[arXiv 2610.12274](https://arxiv.org/abs/2610.12274)，作者自报）。
+
+### 加固并加限定：主线 1「LLM 后训练」等级不变【证实（文本任务）】
+- 顺序细化为「SFT 热身 → OPD → RL」（[arXiv 2609.31900](https://arxiv.org/abs/2609.31900)）。
+- 小米 MiMo-V2.6 把多老师 OPD 放在 RL 之后（[arXiv 2610.11959](https://arxiv.org/abs/2610.11959)）【证实，官方报告】。
+- 它每步 RL 约 25K 条轨迹，为大 batch 换了 Muon 变体优化器。
+- ReSPO 修复用 rollout 时 clip 的不对称（[arXiv 2609.35433](https://arxiv.org/abs/2609.35433)）。
+- 它在留出基准上只高 0.8 到 3.2 分【证实，单篇】。
+- OPD 进入诊断期。Vanishing Signals、DIAL-OPD、Cross-Tokenizer OPD 都指向「监督要准，不要多」【推断】。
+- 有一处冲突待复现。Semi-OPD 认为先在老师 rollout 上 SFT 有害；Salesforce 稿认为短 SFT 热身有益。
+
+### 新增
+- 新增主线：无。
+- 新增观察 1：世界模型分代码、像素、潜空间三种形态（主线 3）。
+- 三类都还没在世界模型里用 RL 训策略。信号表 4 仍空【证实】。
+- DreamTrue 对世界模型本身做 RL，交互缺陷 48.12%→6.25%（[arXiv 2610.12468](https://arxiv.org/abs/2610.12468)）。它改的是预测，不是训策略，不翻转信号 4。
+- 新增观察 2：VAE 与因果生成（主线 5）。
+- CRP / Optica 全程不用双向视频老师（[arXiv 2610.11479](https://arxiv.org/abs/2610.11479)，港中深 + 腾讯混元）。
+- 受控实验里，因果模型从 71.14 升到 77.48，追平双向参考 77.28【证实，单篇】。
+- 视频 VAE 的因果压缩会传播早期误差；换逐帧图像 VAE 更好。
+- Optica 仍跑 50 步，不触发「无老师少步」推翻信号。
+- 新增观察 3：batch RL 的稳定性成为独立问题（主线 1）。
+
+### 撤回
+- 无。「生图重走 LLM 路、晚半年到一年」在首版内已撤回，不计入本周。
+
+### 不变
+- 主线 6「竞争转向可控」：AA 30 轮漂移测试部分满足升级信号；本周加 VINCIE-NExT，等级不变。
+- 主线 7「决策模型成品类」：10-10 加 Microsoft-Decision-1、Clef-omni；10-11 起无新证据。
+- 已宣布未交付：一周零交付（FLUX 3 Image、Praxis-1、可灵 4.0、Mistral Large 4、Beam、Step 5）。
+
+## 重点方向命中
+
+- 少步与视频蒸馏：PTD 绕开 DMD；MBDMD、RMD 留在 DMD 族；Omni-Diffusion-Distill 在学生 rollout 上纠偏。
+- batch RL：MiMo-V2.6 每步约 25K 条轨迹；ReSPO 修 clip。
+- GPT Image 2.5 怎么训的：无新一手材料。AA 测试里它每轮近乎整图重绘（AA 帖文口径），这只说明编辑行为【推断】。
+- Qwen-Image 与混元：Qwen-Image-2.1-Turbo 开权重，8 步，加速方法未公开（[HF 模型卡](https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo)）。
+- Arena 9-04 快照里，Qwen-Image-2.0-Pro 1191，Hunyuan-image-3.0 1151（[arXiv 2610.02967](https://arxiv.org/abs/2610.02967) 表 1）。
+- 没有同条件的正面对比。腾讯混元参与了 Optica，属视频因果生成。
+- VIEScore2 与生图评审：Rubric-CEPR 把 GEdit VIEScore 从 7.39 提到 8.31（[arXiv 2610.12469](https://arxiv.org/abs/2610.12469)）。VIEScore2 本身无新版本。
+
+## 下周要盯的信号
+
+1. **Step 5 权重（官方承诺 10-15）**：交付时看是否附后训练配方。若写明「SFT/OPD 冷启动再 RL」，主线 1 再加一个独立来源。
+2. **Mistral Large 4、Reflection Beam 技术报告（10 月下旬）**：这是主线 1 写明的升级信号。
+3. **Optica 蒸成少步**：有人在无双向老师的因果模型上做无老师少步，就是信号表 1 的首个候选。
+4. **代码世界当 RL 环境训权重**：FineEnvs、Memento 3、Trace2Env 一类环境被用来更新权重，主线 3 再升一档。
+5. **扩散侧的重叠率诊断**：有人在扩散 OPD 上测师生重叠或做 Purdue 式归因，主线 2 可升级。
+6. **视频 RL 和纯偏好奖励对照**：WorldAlign 类方法补上这组对照，视频侧单独计入主线 3 升级。
+7. **生图预训练只换数据的对照**：出现即把主线 4 的预训练半句从【叙事】上调。
+8. **Semi-OPD 与 SFT 热身的冲突**：看是否有多 seed 复现。
+
+## 来源
+
+- 一手论文（本期核对过摘要或正文）：[2610.11291 Semi-OPD](https://arxiv.org/abs/2610.11291) · [2610.12382 WorldAlign](https://arxiv.org/abs/2610.12382) · [2610.12468 DreamTrue](https://arxiv.org/abs/2610.12468) · [2610.11479 CRP/Optica](https://arxiv.org/abs/2610.11479) · [2610.10989 MBDMD](https://arxiv.org/abs/2610.10989) · [2610.11770 Sora100K](https://arxiv.org/abs/2610.11770) · [2610.11247 Vanishing Signals](https://arxiv.org/abs/2610.11247) · [2610.11659 DIAL-OPD](https://arxiv.org/abs/2610.11659) · [2610.08448 Cross-Tokenizer OPD](https://arxiv.org/abs/2610.08448) · [2610.12274 HarnessSQL](https://arxiv.org/abs/2610.12274) · [2610.12235 RWM](https://arxiv.org/abs/2610.12235) · [2610.09823 UltraText](https://arxiv.org/abs/2610.09823)
+- 前几日已核对：[2610.02967 Arena](https://arxiv.org/abs/2610.02967) · [2610.11498 PTD](https://arxiv.org/abs/2610.11498) · [2610.09639 OPD 技能与知识](https://arxiv.org/abs/2610.09639) · [2609.31900 Salesforce](https://arxiv.org/abs/2609.31900) · [2610.11959 MiMo-V2.6](https://arxiv.org/abs/2610.11959) · [2609.35433 ReSPO](https://arxiv.org/abs/2609.35433) · [2610.10990 Omni-Diffusion-Distill](https://arxiv.org/abs/2610.10990) · [2610.12369 ETM](https://arxiv.org/abs/2610.12369) · [2610.12469 Rubric-CEPR](https://arxiv.org/abs/2610.12469)
+- 官方与数据集：[FineEnvs/openai-math](https://huggingface.co/datasets/FineEnvs/openai-math) · [Qwen-Image-2.1-Turbo 模型卡](https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo) · [AA 30 轮编辑帖](https://x.com/ArtificialAnlys/status/2108600224478572767)
+- 未逐篇核对原文的数字（引 AI热点追踪 日报）：WorldAlign 的 0.760→0.856 和 76.0%、MBDMD 的 8k 对 24k 步、Sora100K 的 70.41/76.43 和 34.0→32.0、VINCIE-NExT 的 3.08/3.65、RMD。
+- 公开时间线：[AI 前沿趋势时间线](https://codyshen0000.github.io/ai-frontier-trends/timeline/)。

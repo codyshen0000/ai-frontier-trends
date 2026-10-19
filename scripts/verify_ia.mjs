@@ -6,17 +6,27 @@ import { extractLiveSpotlight, extractThreads, extractTimelineLede, ensureThread
 import { clipSummary, extractLiveCards, rankHot, selectPins } from "./live_cards.mjs";
 import { injectHtmlFile } from "./build.mjs";
 import {
+  BANNED_PUBLIC_COPY,
   assertCoverRecords,
   assertDistPublicCopy,
   assertNoBannedPublicCopyInDir,
+  assertNoRootAbsoluteUrls,
   assertWeeklyMetaCopy,
   assertWeeklyMetaSources,
   assertWeeklyReports,
   collectBannedPublicCopyHits,
+  collectRootAbsoluteUrlHits,
   coverAltProblem,
   coverEntries,
   walkPublicCopyFiles,
 } from "./story_digest.mjs";
+import { assertStandaloneReportCharts } from "./weekly_charts.mjs";
+import {
+  assertPublicLinks,
+  collectExampleComHits,
+  collectHomeFallbackHits,
+  collectSelfLinkHits,
+} from "./static_links.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const config = JSON.parse(readFileSync(join(root, "site.config.json"), "utf8"));
@@ -184,10 +194,18 @@ for (const path of paths) {
 
 assert(existsSync(join(distDir, "assets", "app.css")), "dist has mit-static app.css");
 assert(existsSync(join(distDir, "assets", "nameplates", "daily.svg")), "dist has daily nameplate");
-assert(existsSync(join(distDir, "data", "fixture-note.json")), "dist has fixture data");
+assert(!existsSync(join(distDir, "data", "fixture-note.json")), "dist/data has no fixture-note");
 assert(existsSync(join(distDir, "assets", "favicon.svg")), "dist has favicon.svg");
 assert(existsSync(join(distDir, "assets", "favicon.png")), "dist has favicon.png");
 assert(existsSync(join(distDir, "favicon.ico")), "dist has favicon.ico");
+assert(existsSync(join(distDir, "search", "index.html")), "dist has /search/");
+assert(existsSync(join(distDir, "starred", "index.html")), "dist has /starred/");
+assert(existsSync(join(distDir, "feed", "weekly.xml")), "dist has /feed/weekly.xml");
+assert(!existsSync(join(distDir, "feed.xml")), "dist has no fixture feed.xml");
+assert(existsSync(join(distDir, "api", "v1", "index.json")), "dist has /api/v1/index.json");
+assert(existsSync(join(distDir, "data", "meta.json")), "dist has /data/meta.json");
+assert(existsSync(join(distDir, "data", "search-index.json")), "dist has search index");
+assert(existsSync(join(distDir, "assets", "hydrate.js")), "dist has hydrate.js");
 
 const leftoverHtmlHref = /(?:href|src|action)="(?:index|hot|daily)\.html/;
 const home = readFileSync(join(distDir, "index.html"), "utf8");
@@ -264,10 +282,7 @@ assert(hotPage.includes("在 Hugging Face 放出"), "hot NO.01 digest is answer-
 for (const needle of ["权重跟踪", "记交付", "六件套", "低于门槛", "本批", "本条未覆盖", "score=", "闸分", "补位"]) {
   assert(!hotPage.includes(needle), `/hot/ public copy has no ${needle}`);
 }
-assert(
-  (hotPage.match(/text-\[12px\] leading-none text-ink-4">示例/g) || []).length >= 1,
-  "hot sparkline 示例 label is text-[12px]",
-);
+assert(!/>示例</.test(hotPage), "hot sparkline no longer writes 示例");
 assert(!/text-\[10px\] leading-none text-ink-4">示例/.test(hotPage), "hot sparkline 示例 is not 10px");
 
 const morePage = readFileSync(join(distDir, "more", "index.html"), "utf8");
@@ -280,6 +295,9 @@ assert(!morePage.includes("AIHOT") && !morePage.includes("MyHOT"), "more page ha
 const dailyPage = readFileSync(join(distDir, "daily", "index.html"), "utf8");
 assert(dailyPage.includes("AI 日报 · 前沿趋势"), "daily title uses 前沿趋势");
 assert(dailyPage.includes('href="../assets/app.css"'), "/daily/ CSS is ../assets/app.css");
+assert(dailyPage.includes('href="../feed/weekly.xml"'), "/daily/ RSS is ../feed/weekly.xml");
+assert(home.includes('href="feed/weekly.xml"'), "home RSS is feed/weekly.xml");
+assert(hotPage.includes('href="../feed/weekly.xml"'), "/hot/ RSS is ../feed/weekly.xml");
 assert(dailyPage.includes("../assets/nameplates/daily.svg"), "/daily/ nameplate is a relative asset");
 assert(dailyPage.includes('href="../"') && dailyPage.includes('href="../hot/"'), "/daily/ links to 精选 and /hot/");
 assert(dailyPage.includes(">日报<") && dailyPage.includes('aria-current="page"'), "daily marks 日报 current");
@@ -371,7 +389,9 @@ assert(weeklyIssue.includes("一句话结论"), "weekly issue keeps the report l
 assert(weeklyIssue.includes("data-ds-injected=\"weekly\""), "weekly issue has download chrome");
 assert(weeklyIssue.includes("./report.md") && weeklyIssue.includes("./timeline.md"), "weekly issue links markdown downloads");
 assert(weeklyIssue.includes("https://codyshen0000.github.io/assets/ds.css"), "weekly issue uses shared ds.css");
-assert(weeklyIssue.includes("skin-raw.css"), "weekly issue loads skin-raw.css");
+assert(weeklyIssue.includes("skin-weekly.css"), "weekly issue loads weekly-only skin");
+assert(!weeklyIssue.includes("skin-raw.css"), "weekly issue does not load Remaining-A skin-raw.css");
+assert(!weeklyIssue.includes("app.css") && !weeklyIssue.includes("hydrate.js"), "weekly issue does not load Remaining-A assets");
 assert(/body\{[^}]*max-width:\s*\d+px;[^}]*margin:[^;]*auto/.test(weeklyIssue), "weekly issue source keeps a reading-column max-width");
 for (const needle of ["/workspace", "/home/box", "/cursor/stores", "收藏"]) {
   assert(!weeklyIssue.includes(needle), `weekly issue has no ${needle}`);
@@ -383,26 +403,69 @@ for (const file of ["report.md", "timeline.md", "report.html"]) {
   assert(existsSync(join(distDir, "weekly", "2026-10-18", file)), `weekly 2026-10-18 ships ${file}`);
 }
 assert(existsSync(join(distDir, "weekly", "2026-10-12", "charts", "2026-10-12-evidence-by-line.png")), "weekly 2026-10-12 ships chart pngs");
+assert(existsSync(join(distDir, "weekly", "2026-10-12", "charts", "2026-10-12-evidence-by-line.webp")), "weekly 2026-10-12 ships chart webp");
 assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-evidence-by-line.png")), "weekly 2026-10-18 ships chart pngs");
+assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-evidence-by-line.webp")), "weekly 2026-10-18 ships evidence webp");
 assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-signal-candidates.png")), "weekly 2026-10-18 ships signal chart");
+assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-signal-candidates.webp")), "weekly 2026-10-18 ships signal webp");
 assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-weights-delivery.png")), "weekly 2026-10-18 ships weights chart");
+assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-weights-delivery.webp")), "weekly 2026-10-18 ships weights webp");
 {
   const weeklyReport = readFileSync(join(root, "content", "weekly", "2026-10-18", "report.html"), "utf8");
   const weeklyMd = readFileSync(join(root, "content", "weekly", "2026-10-18", "report.md"), "utf8");
+  const weeklyDist = readFileSync(join(distDir, "weekly", "2026-10-18", "index.html"), "utf8");
   assert(weeklyReport.includes('alt="本周证据写入：交付与 OPD/RSI 观察最多；主线等级全不变"'), "evidence chart alt matches the image title");
   assert(weeklyReport.includes("<figcaption>本周证据写入：交付与 OPD/RSI 观察最多；主线等级全不变</figcaption>"), "evidence chart figcaption matches the image title");
   assert(weeklyReport.includes('alt="信号表 1–4：本周续核多篇，正表零新增；一周无翻转"'), "signal chart alt matches the image title");
   assert(weeklyReport.includes("<figcaption>信号表 1–4：本周续核多篇，正表零新增；一周无翻转</figcaption>"), "signal chart figcaption matches the image title");
+  assert(weeklyReport.includes('alt="权重与产品：本周兑现 3 项，仍空 3 项（截至 2026-10-16 傍晚）"'), "weights chart alt matches the image title");
+  assert(weeklyReport.includes("<figcaption>权重与产品：本周兑现 3 项，仍空 3 项（截至 2026-10-16 傍晚）</figcaption>"), "weights chart figcaption matches the image title");
   assert(!weeklyReport.includes("正表仍零新增") && !weeklyMd.includes("正表仍零新增"), "weekly copy no longer says 正表仍零新增");
   assert(weeklyMd.includes("![本周证据写入：交付与 OPD/RSI 观察最多；主线等级全不变]"), "weekly md evidence alt matches the image");
   assert(weeklyMd.includes("![信号表 1–4：本周续核多篇，正表零新增；一周无翻转]"), "weekly md signal alt matches the image");
-}
-{
-  const weightsPng = readFileSync(join(root, "content", "weekly", "2026-10-18", "charts", "2026-10-18-weights-delivery.png"));
-  const weeklyHtml = readFileSync(join(root, "content", "weekly", "2026-10-18", "report.html"), "utf8");
-  const embedded = weeklyHtml.match(/<img alt="权重与产品：本周兑现 3 项，仍空 3 项（截至 2026-10-16 傍晚）" src="data:image\/png;base64,([^"]+)"/);
-  assert(Boolean(embedded), "weekly report.html embeds the weights-delivery chart");
-  assert(embedded && Buffer.from(embedded[1], "base64").equals(weightsPng), "embedded weights-delivery PNG matches the chart file bytes");
+  for (const name of ["2026-10-18-evidence-by-line", "2026-10-18-signal-candidates", "2026-10-18-weights-delivery"]) {
+    assert(weeklyDist.includes(`srcset="charts/${name}.webp"`), `dist weekly uses ${name}.webp`);
+    assert(weeklyDist.includes(`src="charts/${name}.png"`), `dist weekly keeps ${name}.png fallback`);
+    assert(weeklyReport.includes(`srcset="charts/${name}.webp"`) || weeklyReport.includes(`src="charts/${name}.png"`), `content weekly report references ${name}`);
+  }
+  assert(!weeklyDist.includes("data:image/png;base64"), "dist weekly issue no longer embeds PNG data URIs");
+  for (const date of ["2026-10-12", "2026-10-18"]) {
+    const reportDist = readFileSync(join(distDir, "weekly", date, "report.html"), "utf8");
+    try {
+      assertStandaloneReportCharts(reportDist);
+      assert(true, `dist weekly ${date}/report.html embeds WebP data URIs`);
+    } catch (err) {
+      assert(false, err.message);
+    }
+    assert(
+      /<picture><source type="image\/webp" srcset="data:image\/webp;base64,/.test(reportDist),
+      `dist weekly ${date}/report.html keeps weekly <picture> + WebP data URI format`,
+    );
+    assert(
+      !/\b(?:src|srcset|imagesrcset)=["'](?!data:image\/webp;base64,)[^"']+["']/.test(
+        reportDist.replace(/<script\b[\s\S]*?<\/script>/gi, ""),
+      ),
+      `dist weekly ${date}/report.html has no external image src`,
+    );
+    assert(!/cdn\.jsdelivr\.net|import mermaid/.test(reportDist), `dist weekly ${date}/report.html has no mermaid CDN`);
+    assert(/<svg[\s\S]*<\/svg>/.test(reportDist), `dist weekly ${date}/report.html inlines mermaid as SVG`);
+    assert(/class="mermaid-wrap"/.test(reportDist), `dist weekly ${date}/report.html wraps mermaid in a light plate`);
+    assert(/a\{color:#0058b0\}/.test(reportDist), `dist weekly ${date}/report.html light links are #0058b0`);
+    assert(/height:\s*auto/.test(reportDist), `dist weekly ${date}/report.html keeps image height:auto`);
+    assert(!/<script[^>]+src=["']https?:/i.test(reportDist), `dist weekly ${date}/report.html has no external script`);
+    const weeklyOnline = readFileSync(join(distDir, "weekly", date, "index.html"), "utf8");
+    assert(!/cdn\.jsdelivr\.net|import mermaid/.test(weeklyOnline), `dist weekly ${date}/index.html has no mermaid runtime`);
+    assert(/<svg[\s\S]*<\/svg>/.test(weeklyOnline), `dist weekly ${date}/index.html inlines mermaid as SVG`);
+    assert(/class="mermaid-wrap"/.test(weeklyOnline), `dist weekly ${date}/index.html wraps mermaid in a light plate`);
+  }
+  const timelineDist = readFileSync(join(distDir, "timeline", "index.html"), "utf8");
+  assert(!/cdn\.jsdelivr\.net|import mermaid/.test(timelineDist), "dist timeline has no mermaid runtime");
+  assert(/<svg[\s\S]*<\/svg>/.test(timelineDist), "dist timeline inlines mermaid as SVG");
+  assert(/class="mermaid-wrap"/.test(timelineDist), "dist timeline wraps mermaid in a light plate");
+  const appCss = readFileSync(join(distDir, "assets", "app.css"), "utf8");
+  assert(/html\.no-js \[data-ft-filter-group\]/.test(appCss) || /html\.no-js \[data-ft-search\]/.test(appCss), "no-js hides filter chips and search");
+  assert(!/html\.no-js[^{]*筛选/.test(appCss), "no-js hide selectors stay ASCII so minify cannot drop the rule");
+  assert(/#0058b0/.test(readFileSync(join(distDir, "styles.css"), "utf8")), "light link accent is #0058b0");
 }
 
 try {
@@ -413,7 +476,7 @@ try {
 }
 try {
   assertWeeklyReports(root);
-  assert(true, "weekly report.md/html/meta.json have no banned public copy");
+  assert(true, "weekly report.md/html/timeline.md/meta.json have no banned public copy");
 } catch (err) {
   assert(false, err.message);
 }
@@ -465,6 +528,71 @@ expectThrow(
     rmSync(tmp, { recursive: true, force: true });
   }
 }
+{
+  const tmp = mkdtempSync(join(tmpdir(), "ia-banned-md-"));
+  try {
+    writeFileSync(join(tmp, "note.md"), "正文写了不进正表。");
+    expectThrow(
+      () => assertNoBannedPublicCopyInDir(tmp, { prefix: "dist/" }),
+      /note\.md[\s\S]*不进正表/,
+      "negative: banned word in a dist md file fails verify:ia",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "ia-banned-svg-"));
+  try {
+    writeFileSync(join(tmp, "mark.svg"), `<svg xmlns="http://www.w3.org/2000/svg"><text>挂观察</text></svg>`);
+    expectThrow(
+      () => assertNoBannedPublicCopyInDir(tmp, { prefix: "dist/" }),
+      /mark\.svg[\s\S]*挂观察/,
+      "negative: banned word in a dist svg file fails verify:ia",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "ia-banned-js-"));
+  try {
+    writeFileSync(join(tmp, "app.js"), `const note = "不进信号表";`);
+    expectThrow(
+      () => assertNoBannedPublicCopyInDir(tmp, { prefix: "dist/" }),
+      /app\.js[\s\S]*不进信号表/,
+      "negative: banned word in a dist js file fails verify:ia",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "ia-banned-css-"));
+  try {
+    writeFileSync(join(tmp, "skin-raw.css"), "/* 挂观察 */ body{color:red}");
+    expectThrow(
+      () => assertNoBannedPublicCopyInDir(tmp, { prefix: "dist/" }),
+      /skin-raw\.css[\s\S]*挂观察/,
+      "negative: banned word in a dist css file fails verify:ia",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "ia-brand-css-"));
+  try {
+    writeFileSync(join(tmp, "skin-raw.css"), "/* aihot daily IA */ body{color:red}");
+    let hits = 0;
+    for (const file of walkPublicCopyFiles(tmp)) {
+      if (/aihot|myhot/i.test(readFileSync(file, "utf8"))) hits += 1;
+    }
+    assert(hits > 0, "negative: aihot in skin-raw.css fails the brand scan");
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
 
 const distCopyFiles = walkPublicCopyFiles(distDir);
 const distCopyHits = collectBannedPublicCopyHits(distDir, { prefix: "dist/" });
@@ -473,13 +601,85 @@ for (const hit of distCopyHits) {
 }
 assert(
   distCopyHits.length === 0,
-  `dist html/json/xml have 0 banned-word hits (${distCopyHits.length} hits across ${distCopyFiles.length} files)`,
+  `dist text files (including .map) have 0 banned-word hits (${distCopyHits.length} hits across ${distCopyFiles.length} files)`,
 );
 try {
   assertDistPublicCopy(distDir);
-  assert(true, "assertDistPublicCopy matches the dist html/json/xml scan");
+  assert(true, "assertDistPublicCopy matches the all-text dist scan including .map");
 } catch (err) {
   assert(false, err.message);
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "ia-banned-map-"));
+  try {
+    writeFileSync(join(tmp, "hydrate.js.map"), '{"mappings":"","note":"本批"}');
+    expectThrow(
+      () => assertNoBannedPublicCopyInDir(tmp, { prefix: "dist/" }),
+      /hydrate\.js\.map[\s\S]*本批/,
+      "negative: banned word in a dist .map file fails verify:ia",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "ia-root-abs-"));
+  try {
+    writeFileSync(join(tmp, "starred.html"), '<a href="/weekly/2026-10-18/">周报</a>');
+    expectThrow(
+      () => assertNoRootAbsoluteUrls(tmp, { prefix: "dist/" }),
+      /starred\.html[\s\S]*\/weekly\/2026-10-18\//,
+      "negative: injected root-absolute in-site URL fails verify:ia",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "ia-root-xml-"));
+  try {
+    writeFileSync(join(tmp, "feed.xml"), "<rss><item><link>/weekly/2026-10-18/</link></item></rss>");
+    expectThrow(
+      () => assertNoRootAbsoluteUrls(tmp, { prefix: "dist/" }),
+      /feed\.xml[\s\S]*\/weekly\/2026-10-18\//,
+      "negative: injected RSS <link> text root-absolute fails verify:ia",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "ia-root-md-"));
+  try {
+    writeFileSync(join(tmp, "note.md"), "[x](/weekly/2026-10-18/)");
+    expectThrow(
+      () => assertNoRootAbsoluteUrls(tmp, { prefix: "dist/" }),
+      /note\.md[\s\S]*\/weekly\/2026-10-18\//,
+      "negative: injected Markdown link root-absolute fails verify:ia",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "ia-root-js-"));
+  try {
+    writeFileSync(join(tmp, "app.js"), 'fetch("/data/meta.json")');
+    expectThrow(
+      () => assertNoRootAbsoluteUrls(tmp, { prefix: "dist/" }),
+      /app\.js[\s\S]*\/data\/meta\.json/,
+      "negative: injected JS string root-absolute fails verify:ia",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const rootAbs = collectRootAbsoluteUrlHits(distDir, { prefix: "dist/" });
+  for (const hit of rootAbs) {
+    console.error(`FAIL root-absolute ${hit.kind} «${hit.value}» in ${hit.file}`);
+  }
+  assert(rootAbs.length === 0, `in-site URLs in dist do not start with / (${rootAbs.length})`);
 }
 
 function walkHtmlFiles(dir, acc = []) {
@@ -492,7 +692,11 @@ function walkHtmlFiles(dir, acc = []) {
 }
 
 function parseSrcsetUrls(value) {
-  return String(value)
+  const raw = String(value).trim();
+  if (/^data:/i.test(raw)) {
+    return [raw.replace(/\s+(?:\d+(?:\.\d+)?x|\d+w)\s*$/i, "").trim()].filter(Boolean);
+  }
+  return raw
     .split(",")
     .map((part) => part.trim().split(/\s+/)[0])
     .filter(Boolean);
@@ -605,8 +809,227 @@ for (const rel of retiredPreview) {
 const injected = injectHtmlFile(liveRaw, { currentId: "live", path: "/live/" });
 assert(injectHtmlFile(injected, { currentId: "live", path: "/live/" }) === injected, "injectHtmlFile is idempotent");
 
+const FIXTURE_IDS = ["flash-api", "mm-816b", "edge-nb", "agent-2", "api-price", "longctx-eval"];
+const BRAND_RE = /aihot|myhot/i;
+
+function walkFiles(dir, pred, acc = []) {
+  if (!existsSync(dir)) return acc;
+  for (const name of readdirSync(dir)) {
+    const full = join(dir, name);
+    if (statSync(full).isDirectory()) {
+      if (name === "LICENSES") continue;
+      walkFiles(full, pred, acc);
+    } else if (pred(name, full)) acc.push(full);
+  }
+  return acc;
+}
+
+let brandHits = 0;
+for (const file of walkPublicCopyFiles(distDir)) {
+  const text = readFileSync(file, "utf8");
+  const rel = `dist/${relative(distDir, file).split("\\").join("/")}`;
+  const brand = text.match(BRAND_RE);
+  if (brand) {
+    brandHits += 1;
+    console.error(`FAIL brand «${brand[0]}» in ${rel}`);
+  }
+}
+assert(brandHits === 0, `brand aihot/myhot scan of all dist text (including .map) is 0 (${brandHits})`);
+void BANNED_PUBLIC_COPY;
+
+let fixtureLeaks = 0;
+for (const zone of ["data", "api", "feed", join("assets", "avatars")]) {
+  const dir = join(distDir, zone);
+  for (const file of walkFiles(dir, () => true)) {
+    const text = readFileSync(file);
+    const body = text.toString("utf8");
+    for (const id of FIXTURE_IDS) {
+      if (body.includes(id)) {
+        fixtureLeaks += 1;
+        console.error(`FAIL fixture id ${id} in ${relative(distDir, file)}`);
+      }
+    }
+  }
+}
+assert(fixtureLeaks === 0, `fixture ids in /data /api /feed /assets/avatars are 0 (${fixtureLeaks})`);
+
+let externalImgs = 0;
+for (const file of walkFiles(distDir, (name) => /\.(html|xml|json)$/i.test(name))) {
+  const text = readFileSync(file, "utf8");
+  if (/\b(?:src|srcset|imagesrcset|enclosure)=["']https?:\/\//i.test(text) || /"url"\s*:\s*"https?:\/\/[^"]+\.(?:png|jpe?g|webp|gif|svg)/i.test(text)) {
+    if (/twitter\.com|x\.com|twimg/.test(text) && /\.(png|jpe?g|webp|gif|svg)/i.test(text)) {
+      externalImgs += 1;
+      console.error(`FAIL external image in ${relative(distDir, file)}`);
+    }
+    const hits = text.match(/\b(?:src|srcset|imagesrcset)=["']https?:\/\//gi) || [];
+    if (hits.length) {
+      externalImgs += hits.length;
+      console.error(`FAIL hotlink image attr in ${relative(distDir, file)}`);
+    }
+  }
+}
+assert(externalImgs === 0, `external images in dist are 0 (${externalImgs})`);
+
+const searchIndex = JSON.parse(readFileSync(join(distDir, "data", "search-index.json"), "utf8"));
+assert(!JSON.stringify(searchIndex).includes('"score"'), "search index does not copy score");
+assert(searchIndex.docs.some((d) => /FLUX/i.test(d.title) || /FLUX/i.test(d.summary)), "search index contains FLUX from real weekly/covers");
+assert(typeof searchIndex.data_as_of === "string" && searchIndex.data_as_of.length > 8, "search index has data_as_of");
+assert(typeof searchIndex.built_at === "string" && searchIndex.built_at.length > 8, "search index has built_at");
+assert(searchIndex.data_as_of !== searchIndex.built_at, "data_as_of is content time, not the same as built_at");
+const metaJson = JSON.parse(readFileSync(join(distDir, "data", "meta.json"), "utf8"));
+assert(metaJson.data_as_of && metaJson.built_at && metaJson.data_as_of !== metaJson.built_at, "meta.json separates data_as_of and built_at");
+assert(!String(searchIndex.docs.map((d) => d.url).join(" ")).includes("/ai-frontier-trends/"), "search urls are not hard-coded to the Pages prefix");
+assert(searchIndex.docs.every((d) => !String(d.url || "").startsWith("/")), "search urls are relative (no root /)");
+
+function jsonHasScoreKey(value) {
+  if (Array.isArray(value)) return value.some(jsonHasScoreKey);
+  if (!value || typeof value !== "object") return false;
+  if (Object.prototype.hasOwnProperty.call(value, "score")) return true;
+  return Object.values(value).some(jsonHasScoreKey);
+}
+
+let publicScoreKeys = 0;
+for (const zone of ["data", "api", "feed"]) {
+  for (const file of walkFiles(join(distDir, zone), (name) => /\.json$/i.test(name))) {
+    const body = JSON.parse(readFileSync(file, "utf8"));
+    if (jsonHasScoreKey(body)) {
+      publicScoreKeys += 1;
+      console.error(`FAIL public JSON still has score key: ${relative(distDir, file)}`);
+    }
+  }
+}
+assert(publicScoreKeys === 0, `public JSON has no score keys (${publicScoreKeys})`);
+
+const homeHtml = readFileSync(join(distDir, "index.html"), "utf8");
+assert(!/\bNaN\b/.test(homeHtml), "home HTML has no NaN from absent score");
+assert(!/data-score|score-label|item-score|ft-score/i.test(homeHtml), "home HTML has no score slot");
+assert(!/class="[^"]*score/.test(homeHtml), "home HTML has no score class slot");
+
+assert(existsSync(join(distDir, "more", "index.html")), "dist has /more/");
+for (const rel of ["index.html", join("hot", "index.html"), join("daily", "index.html")]) {
+  const html = readFileSync(join(distDir, rel), "utf8");
+  assert(html.includes("hydrate.js"), `${rel} ships hydrate.js`);
+  assert(html.includes("<script"), `${rel} has a script tag`);
+  for (const id of FIXTURE_IDS) {
+    assert(!html.includes(id), `${rel} does not render fixture id ${id}`);
+  }
+}
+
+{
+  const tmp = mkdtempSync(join(tmpdir(), "ia-example-"));
+  try {
+    writeFileSync(join(tmp, "daily.html"), `<a href="https://example.com/flash">原文</a>`);
+    expectThrow(
+      () => {
+        const hits = collectExampleComHits(tmp, { prefix: "dist/" });
+        if (hits.length) throw new Error(`example.com in ${hits[0].file}`);
+      },
+      /example\.com/,
+      "negative: example.com URL fails verify:ia",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "ia-selflink-"));
+  try {
+    writeFileSync(join(tmp, "daily.html"), `<a href="daily.html">17 周六</a>`);
+    expectThrow(
+      () => {
+        const hits = collectSelfLinkHits(tmp, { prefix: "dist/" });
+        if (hits.length) throw new Error(`self-link ${hits[0].file} «${hits[0].text}» → ${hits[0].href}`);
+      },
+      /self-link/,
+      "negative: link resolving to the current page fails verify:ia",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "ia-homefall-"));
+  try {
+    writeFileSync(join(tmp, "index.html"), `<h1>home</h1>`);
+    writeFileSync(join(tmp, "daily.html"), `<a href="index.html">关于</a>`);
+    expectThrow(
+      () => {
+        const hits = collectHomeFallbackHits(tmp, { prefix: "dist/" });
+        if (hits.length) throw new Error(`home-fallback ${hits[0].file} «${hits[0].text}» → ${hits[0].href}`);
+      },
+      /home-fallback/,
+      "negative: unknown route falling back to home fails verify:ia",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+
+try {
+  assertPublicLinks(distDir, {
+    prefix: "dist/",
+    pages: ["index.html", "hot/index.html", "daily/index.html", "search/index.html", "starred/index.html", "live/index.html"],
+  });
+  assert(true, "dist public links: no example.com, no self-page href, no home fallback");
+} catch (err) {
+  assert(false, err.message);
+}
+
+{
+  const hydrate = readFileSync(join(distDir, "assets", "hydrate.js"), "utf8");
+  const starred = readFileSync(join(distDir, "starred", "index.html"), "utf8");
+  assert(
+    hydrate.includes(".replace(/^\\.\\//,\"\").replace(/^\\//,\"\")"),
+    "hydrate strips leading ./ and / from saved starred urls",
+  );
+  assert(starred.includes('"base":"../"') || starred.includes('"base": "../"'), "starred page uses site-root base ../");
+  assert(hydrate.includes("暂无符合条件的内容"), "hydrate empty filter copy is 暂无符合条件的内容");
+  assert(!hydrate.includes("全部动态"), "hydrate empty state has no fake 全部动态 link");
+}
+
+{
+  const apiIndex = JSON.parse(readFileSync(join(distDir, "api", "v1", "index.json"), "utf8"));
+  const weeklyIndex = JSON.parse(readFileSync(join(distDir, "api", "v1", "weekly", "index.json"), "utf8"));
+  const weeklyItem = JSON.parse(readFileSync(join(distDir, "api", "v1", "weekly", "2026-10-18.json"), "utf8"));
+  assert(apiIndex.path_base === "site", "api/v1/index.json documents path_base=site");
+  for (const file of apiIndex.files || []) {
+    assert(file.path && !String(file.path).startsWith("/"), `api/v1/index.json path is relative (${file.path})`);
+    assert(String(file.path).startsWith("api/v1/"), `api catalog path is site-base (${file.path})`);
+  }
+  for (const item of weeklyIndex.items || []) {
+    assert(item.path && !String(item.path).startsWith("/"), `weekly/index.json item.path is relative (${item.path})`);
+    assert(String(item.path).startsWith("weekly/"), `weekly item path is site-base (${item.path})`);
+  }
+  assert(weeklyItem.path && String(weeklyItem.path).startsWith("weekly/"), "weekly/2026-10-18.json path is site-base");
+}
+
+{
+  const more = readFileSync(join(distDir, "more", "index.html"), "utf8");
+  const href = (more.match(/<a class="ft-more-card" href="([^"]+)"[^>]*>\s*<h3>研究主页 · 本周主线<\/h3>/) || [])[1];
+  assert(href, "more page has 研究主页 · 本周主线");
+  assert(href.includes("weekly/2026-10-18"), `more 本周主线 points at latest weekly (got ${href})`);
+  assert(href !== "../" && href !== "./", "more 本周主线 is not the home href");
+  assert(!/原始看板[\s\S]{0,120}#board/.test(more), "more 原始看板 is not a dead #board link");
+  assert(more.includes("ft-theme-toggle"), "more page includes a theme entry");
+}
+
+{
+  let noJsBare = 0;
+  for (const file of walkHtmlFiles(distDir)) {
+    const html = readFileSync(file, "utf8");
+    if (!/\bno-js\b/.test(html)) continue;
+    if (!/classList\.remove\(["']no-js["']\)/.test(html)) {
+      noJsBare += 1;
+      console.error(`FAIL no-js without swap script in ${relative(distDir, file)}`);
+    }
+  }
+  assert(noJsBare === 0, `every dist HTML with no-js also swaps it in a head script (${noJsBare} missing)`);
+}
+
 if (failed) {
   console.error(`\n${failed} check(s) failed`);
   process.exit(1);
 }
 console.log("\nIA verification passed");
+console.log("verify:ia remaining-a: banned=0 brand=0 fixture=0 external-img=0");
+

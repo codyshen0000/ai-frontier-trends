@@ -42,7 +42,6 @@ export const cards: TimelineCard[] = [
     publishedAt: "2026-10-18T10:53:00.000Z",
     timelineAt: "2026-10-18T10:53:00.000Z",
     category: "model",
-    score: 67,
     selected: true,
   }), 12),
   card("mm816", item({
@@ -54,7 +53,6 @@ export const cards: TimelineCard[] = [
     publishedAt: "2026-10-18T10:37:00.000Z",
     timelineAt: "2026-10-18T10:37:00.000Z",
     category: "model",
-    score: 62,
     selected: true,
   }), 8),
   card("edge", item({
@@ -66,7 +64,6 @@ export const cards: TimelineCard[] = [
     publishedAt: "2026-10-18T08:19:00.000Z",
     timelineAt: "2026-10-18T08:19:00.000Z",
     category: "product",
-    score: 58,
     selected: true,
   }), 6),
   card("agent", item({
@@ -78,7 +75,6 @@ export const cards: TimelineCard[] = [
     publishedAt: "2026-10-18T06:02:00.000Z",
     timelineAt: "2026-10-18T06:02:00.000Z",
     category: "product",
-    score: 55,
     selected: true,
   }), 5),
   card("price", item({
@@ -90,7 +86,6 @@ export const cards: TimelineCard[] = [
     publishedAt: "2026-10-18T04:40:00.000Z",
     timelineAt: "2026-10-18T04:40:00.000Z",
     category: "industry",
-    score: 54,
     selected: false,
   }), 4),
   card("eval", item({
@@ -102,9 +97,26 @@ export const cards: TimelineCard[] = [
     publishedAt: "2026-10-18T02:11:00.000Z",
     timelineAt: "2026-10-18T02:11:00.000Z",
     category: "paper",
-    score: 51,
     selected: true,
   }), 3),
+  card("x-bfl-klein", item({
+    id: "x-bfl-klein",
+    title: "BFL FLUX 3 Image Klein：开源权重落地（5.6B）",
+    summary: "BFL FLUX 3 Image Klein：开源权重落地（5.6B）",
+    source: { name: "BFL" },
+    publishedAt: "2026-10-16T12:00:00.000Z",
+    timelineAt: "2026-10-16T12:00:00.000Z",
+    category: "model",
+    selected: false,
+    channel: "x",
+    x: {
+      authorName: "BFL",
+      handle: "bfl_ai",
+      avatarUrl: null,
+      media: [],
+      quoted: null,
+    },
+  })),
 ];
 
 const faces = (names: string[]): HotStripEntry["participants"] =>
@@ -370,9 +382,75 @@ function applyDailyLead(base: ReportDetail): ReportDetail {
   };
 }
 
-export const hot: HotResponse = generated.hotEntries?.length ? generatedHot() : fixtureHot;
+function isPublicHttpUrl(url: string | null | undefined): url is string {
+  return !!url && /^https?:\/\//i.test(url) && !/example\.com/i.test(url);
+}
 
-export const hotStrip: HotStripEntry[] = (hot.entries.length ? hot.entries : fixtureHot.entries).slice(0, 5).map((e) => ({
+function publicDaily(): ReportDetail {
+  const d = generated.daily;
+  const day = generated.day || (d?.publishedAt ? d.publishedAt.slice(0, 10) : "2026-10-16");
+  if (!d?.itemId || !isPublicHttpUrl(d.sourceUrl)) {
+    return {
+      kind: "daily",
+      key: day,
+      issueNumber: 1,
+      title: "过去 24 小时没有达到上榜条件的事件",
+      generatedAt: generated.asOf,
+      lead: { title: "过去 24 小时没有达到上榜条件的事件", leadParagraph: "" },
+      leadItemId: null,
+      overview: null,
+      highlights: [],
+      sections: [],
+      flashes: [],
+      cover: null,
+      metrics: { totalEvents: 0, sourcesCount: 0, firstPartyEvents: 0, modelsReleased: 0 },
+      readingMinutes: 1,
+      prev: null,
+      next: null,
+    };
+  }
+  const cite: ReportCitation = {
+    itemId: d.itemId,
+    title: d.title,
+    summary: d.leadParagraph,
+    sourceName: d.sourceName,
+    sourceUrl: d.sourceUrl,
+    sourceIconUrl: null,
+    firstParty: d.firstParty,
+    publishedAt: d.publishedAt,
+    available: true,
+    otherSources: d.otherSources,
+  };
+  const pic = pictureOf(d);
+  return {
+    kind: "daily",
+    key: day,
+    issueNumber: 1,
+    title: d.title,
+    generatedAt: generated.asOf,
+    lead: { title: d.title, leadParagraph: d.leadParagraph },
+    leadItemId: d.itemId,
+    overview: null,
+    highlights: [cite],
+    sections: [{ label: "模型", summary: null, items: [cite] }],
+    flashes: [],
+    cover: pic ? { ...pic, caption: null } : null,
+    metrics: {
+      totalEvents: 1,
+      sourcesCount: (d.otherSources || 0) + 1,
+      firstPartyEvents: d.firstParty ? 1 : 0,
+      modelsReleased: 1,
+    },
+    readingMinutes: 2,
+    prev: null,
+    next: null,
+  };
+}
+
+/** Public MIT pages: generated covers / real URLs only. Fixture cards stay exported for tests, not rendered. */
+export const hot: HotResponse = generated.hotEntries?.length ? generatedHot() : { computedAt: generated.asOf, windowHours: RANK_WINDOW_HOURS, entries: [] };
+
+export const hotStrip: HotStripEntry[] = hot.entries.slice(0, 5).map((e) => ({
   rank: e.rank,
   title: e.story.title,
   heat: e.heat,
@@ -383,18 +461,18 @@ export const hotStrip: HotStripEntry[] = (hot.entries.length ? hot.entries : fix
   participantCount: e.participantCount,
 }));
 
-export const daily: ReportDetail = applyDailyLead(fixtureDaily);
+export const daily: ReportDetail = publicDaily();
 
-export const dailyIndex: ReportNavigationEntry[] = fixtureDailyIndex.map((entry, i) =>
-  i === 0 && generated.daily?.title ? { ...entry, title: generated.daily.title } : entry,
-);
+export const dailyIndex: ReportNavigationEntry[] = daily.leadItemId
+  ? [{ key: daily.key, issueNumber: daily.issueNumber, title: daily.title, count: 1 }]
+  : [];
 
 export const timeline: TimelineResponse = {
   filters: { channel: "all", category: null, tag: null },
-  cards,
+  cards: [],
   nextCursor: null,
-  hot: hotStrip.length ? hotStrip : fixtureHotStrip,
-  dayCounts: { "2026-10-18": 6 },
+  hot: hotStrip,
+  dayCounts: {},
 };
 
-export const today = "2026-10-18";
+export const today = daily.key;

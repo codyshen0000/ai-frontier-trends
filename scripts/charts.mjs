@@ -13,11 +13,11 @@ export const CHART_CSS = `.chart-fig{margin:24px 0;padding:20px 20px 14px;backgr
 .cb-row{display:grid;grid-template-columns:minmax(0,38%) 1fr auto;align-items:center;gap:10px;font-size:13px;color:var(--ds-text,#1d1d1f)}
 .cb-lbl{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .cb-track{height:14px;border-radius:7px;background:var(--ds-surface-3,#f2f2f7);overflow:hidden}
-.cb-bar{display:block;height:100%;min-width:3px;border-radius:7px;background:var(--ds-accent,#0071e3)}
+.cb-bar{display:block;height:100%;min-width:3px;border-radius:7px;background:var(--ds-accent,#0058b0)}
 .cb-bar.b2{background:#34c759}.cb-bar.b3{background:#ff9f0a}.cb-bar.b4{background:#8e8e93;min-width:0}
 .cb-val{font-weight:600;font-variant-numeric:tabular-nums;min-width:3.5em;text-align:right}
 @media (max-width:734px){.chart-fig{padding:16px 14px 12px}.cb-row{grid-template-columns:1fr auto;gap:2px 8px}.cb-lbl{grid-column:1/-1;white-space:normal}.cb-track{grid-column:1}}
-.chart-fig figcaption{margin-top:8px;font-size:12px;color:var(--ds-text-tertiary,#8e8e93)}
+.chart-fig figcaption{margin-top:8px;font-size:12px;color:var(--ds-text-secondary,var(--ft-ink,#4f5b61))}
 .chart-fig figcaption a{color:inherit;text-decoration:underline}
 .chart-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
 .chart-grid .chart-fig{margin:0}`;

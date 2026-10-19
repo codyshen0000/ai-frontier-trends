@@ -65,7 +65,7 @@ export const SITE = {
   /** 对外联系邮箱（选填）：llms.txt 和给 Agent 的使用说明里会写。 */
   contactEmail: null as string | null,
   /** 关于页底部的一行小字（选填）。 */
-  footerNote: "静态预览 · MIT 壳层移植 · fixture 数据",
+  footerNote: "静态预览 · MIT 壳层移植",
   /** 中国大陆网站的 ICP 备案号（选填），填了就显示在侧栏底部和“我的”页底部，并链接到工信部备案系统。 */
   icp: null as string | null,
   /** 中国大陆网站的公安备案信息（选填），填了显示在侧栏底部和“我的”页底部。 */
@@ -128,8 +128,8 @@ export const NAV = {
 export const ITEM_COPY = {
   /** 模型写的那句理由叫什么：卡片、详情页、Markdown 导出、给 Agent 的回答和群推送都用它。 */
   reasonLabel: "推荐理由",
-  /** 读者在网页和分享图上看不看得到 AI 评分。只管显示：公开 API 和 MCP 的数据照样带 score，后台照常显示。 */
-  showScore: true,
+  /** 读者看不到 R2 注意力分。site-data 已删除 score；热度指数可以显示。 */
+  showScore: false,
 };
 
 /** 关于页的一张二维码卡片。 */

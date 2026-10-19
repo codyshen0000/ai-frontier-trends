@@ -1,5 +1,23 @@
 /* Site-specific layout on top of the shared ds.css tokens.
-   Do not fork --ds-accent. Prefix private selectors (trend-, case-, page-). */
+   Light-theme --ds-accent is deepened to #0058b0 so links hit ≥5.5:1 on #f5f5f7.
+   Prefix private selectors (trend-, case-, page-). */
+
+html.ds-page:not([data-theme="dark"]),
+html.ds-page[data-theme="light"],
+html.ft-shell:not([data-theme="dark"]),
+html.ft-shell[data-theme="light"] {
+  --ds-accent: #0058b0 !important;
+  --ds-accent-hover: #004a96 !important;
+  --ds-accent-active: #003e80 !important;
+  --ds-accent-soft: rgba(0, 88, 176, 0.12) !important;
+}
+
+html.ds-page:not([data-theme="dark"]) .ds-footer a,
+html.ds-page[data-theme="light"] .ds-footer a,
+html.ds-page:not([data-theme="dark"]) .ds-prose a,
+html.ds-page[data-theme="light"] .ds-prose a {
+  color: #0058b0 !important;
+}
 
 /* Keep the shell reading column centered even if a later reset
    wipes body/main auto margins the way ds.css does on htmlFile pages. */
@@ -144,7 +162,7 @@ html.ft-shell main.ds-wrap {
   border-radius: var(--ds-radius-pill);
   border: 1px solid var(--ds-hairline-strong);
   font-size: 13px;
-  color: var(--ds-text-secondary) !important;
+  color: #3a3a3c !important;
   display: inline-flex;
   align-items: center;
 }
@@ -174,7 +192,7 @@ html.ft-shell main.ds-wrap {
   border-radius: var(--ds-radius-pill);
   font-size: 13px;
   font-weight: 500;
-  color: var(--ds-text-secondary) !important;
+  color: #3a3a3c !important;
   display: inline-flex;
   align-items: center;
 }
@@ -184,6 +202,11 @@ html.ft-shell main.ds-wrap {
   background: var(--ds-bg-elevated);
   color: var(--ds-text) !important;
   box-shadow: var(--ds-shadow-1);
+}
+
+html[data-theme="dark"] .trend-subnav a,
+html[data-theme="dark"] .trend-tabs a {
+  color: #e8e8ed !important;
 }
 
 .trend-has-tabs .sister-nav {
@@ -264,23 +287,23 @@ html.ft-shell main.ds-wrap {
 }
 
 .tag-confirmed {
-  color: #1b7f4a;
-  background: color-mix(in srgb, #1b7f4a 12%, var(--ds-surface-2));
+  color: #0f6b38;
+  background: color-mix(in srgb, #0f6b38 12%, var(--ds-surface-2));
 }
 
 .tag-inferred {
-  color: #9a6700;
-  background: color-mix(in srgb, #9a6700 12%, var(--ds-surface-2));
+  color: #6b4700;
+  background: color-mix(in srgb, #6b4700 12%, var(--ds-surface-2));
 }
 
 .tag-narrative {
-  color: #6e56cf;
-  background: color-mix(in srgb, #6e56cf 12%, var(--ds-surface-2));
+  color: #5b3db8;
+  background: color-mix(in srgb, #5b3db8 12%, var(--ds-surface-2));
 }
 
 .tag-unverified {
-  color: #b45309;
-  background: color-mix(in srgb, #b45309 12%, var(--ds-surface-2));
+  color: #8a3d07;
+  background: color-mix(in srgb, #8a3d07 12%, var(--ds-surface-2));
 }
 
 [data-theme="dark"] .tag-confirmed {

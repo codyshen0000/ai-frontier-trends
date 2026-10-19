@@ -51,14 +51,18 @@ export interface ItemSummary {
   timelineAt: string;
   category: CategoryKey | null;
   tags: string[];
-  score: number | null;
+  /**
+   * Site-data removed this field (events story.score and timeline card.item.score).
+   * Keep it optional on the private summary only; FeedItemSummary must not require it.
+   */
+  score?: number | null;
   selected: boolean;
   channel: "news" | "x";
   story: StoryRef | null;
 }
 
 /** The fields rendered by a site feed card; full original text lives in the item detail. */
-export interface FeedItemSummary extends Pick<ItemSummary, "id" | "title" | "summary" | "reason" | "source" | "publishedAt" | "timelineAt" | "category" | "tags" | "score" | "selected" | "channel"> {
+export interface FeedItemSummary extends Pick<ItemSummary, "id" | "title" | "summary" | "reason" | "source" | "publishedAt" | "timelineAt" | "category" | "tags" | "selected" | "channel"> {
   x: (Pick<XPostView, "authorName" | "handle" | "avatarUrl" | "avatarSrcSet" | "media"> & {
     quoted: Omit<NonNullable<XPostView["quoted"]>, "url"> | null;
   }) | null;

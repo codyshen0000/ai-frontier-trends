@@ -1,0 +1,786 @@
+[
+  {
+    "label": "head",
+    "page": "home",
+    "form": "mobile",
+    "url": "http://127.0.0.1:40349/",
+    "runs": [
+      {
+        "performance": 99,
+        "accessibility": 96,
+        "bestPractices": 96,
+        "seo": 90,
+        "lcp": 1805.6218,
+        "cls": 0,
+        "tbt": 0,
+        "bytes": 132680
+      },
+      {
+        "performance": 99,
+        "accessibility": 96,
+        "bestPractices": 96,
+        "seo": 90,
+        "lcp": 1801.9009,
+        "cls": 0,
+        "tbt": 0,
+        "bytes": 132680
+      },
+      {
+        "performance": 99,
+        "accessibility": 96,
+        "bestPractices": 96,
+        "seo": 90,
+        "lcp": 1800.8314,
+        "cls": 0,
+        "tbt": 0,
+        "bytes": 132680
+      }
+    ],
+    "median": {
+      "performance": 99,
+      "accessibility": 96,
+      "bestPractices": 96,
+      "seo": 90,
+      "lcp": 1801.9009,
+      "cls": 0,
+      "tbt": 0,
+      "bytes": 132680
+    },
+    "medianRun": 1
+  },
+  {
+    "label": "base",
+    "page": "home",
+    "form": "mobile",
+    "url": "https://codyshen0000.github.io/ai-frontier-trends/",
+    "runs": [
+      {
+        "performance": 100,
+        "accessibility": 96,
+        "bestPractices": 100,
+        "seo": 90,
+        "lcp": 1044.9859999999999,
+        "cls": 0,
+        "tbt": 20.499999999999886,
+        "bytes": 25953
+      },
+      {
+        "performance": 100,
+        "accessibility": 96,
+        "bestPractices": 100,
+        "seo": 90,
+        "lcp": 988.633,
+        "cls": 0,
+        "tbt": 0,
+        "bytes": 25949
+      },
+      {
+        "performance": 100,
+        "accessibility": 96,
+        "bestPractices": 100,
+        "seo": 90,
+        "lcp": 1009.544,
+        "cls": 0,
+        "tbt": 0,
+        "bytes": 25951
+      }
+    ],
+    "median": {
+      "performance": 100,
+      "accessibility": 96,
+      "bestPractices": 100,
+      "seo": 90,
+      "lcp": 1009.544,
+      "cls": 0,
+      "tbt": 0,
+      "bytes": 25951
+    },
+    "medianRun": 1
+  },
+  {
+    "label": "head",
+    "page": "home",
+    "form": "desktop",
+    "url": "http://127.0.0.1:45671/",
+    "runs": [
+      {
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 96,
+        "seo": 90,
+        "lcp": 402.1884,
+        "cls": 0,
+        "tbt": 0,
+        "bytes": 132617
+      },
+      {
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 96,
+        "seo": 90,
+        "lcp": 401.42949999999996,
+        "cls": 0,
+        "tbt": 0,
+        "bytes": 132617
+      },
+      {
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 96,
+        "seo": 90,
+        "lcp": 401.3416,
+        "cls": 0,
+        "tbt": 0,
+        "bytes": 132617
+      }
+    ],
+    "median": {
+      "performance": 100,
+      "accessibility": 100,
+      "bestPractices": 96,
+      "seo": 90,
+      "lcp": 401.42949999999996,
+      "cls": 0,
+      "tbt": 0,
+      "bytes": 132617
+    },
+    "medianRun": 1
+  },
+  {
+    "label": "base",
+    "page": "home",
+    "form": "desktop",
+    "url": "https://codyshen0000.github.io/ai-frontier-trends/",
+    "runs": [
+      {
+        "performance": 100,
+        "accessibility": 96,
+        "bestPractices": 100,
+        "seo": 90,
+        "lcp": 347.58299999999997,
+        "cls": 0,
+        "tbt": 0,
+        "bytes": 25956
+      },
+      {
+        "performance": 100,
+        "accessibility": 96,
+        "bestPractices": 100,
+        "seo": 90,
+        "lcp": 284.302,
+        "cls": 0,
+        "tbt": 0,
+        "bytes": 25953
+      },
+      {
+        "performance": 100,
+        "accessibility": 96,
+        "bestPractices": 100,
+        "seo": 90,
+        "lcp": 283.669,
+        "cls": 0,
+        "tbt": 0,
+        "bytes": 25953
+      }
+    ],
+    "median": {
+      "performance": 100,
+      "accessibility": 96,
+      "bestPractices": 100,
+      "seo": 90,
+      "lcp": 284.302,
+      "cls": 0,
+      "tbt": 0,
+      "bytes": 25953
+    },
+    "medianRun": 1
+  },
+  {
+    "label": "head",
+    "page": "weekly",
+    "form": "mobile",
+    "url": "http://127.0.0.1:40349/weekly/",
+    "runs": [
+      {
+        "performance": 100,
+        "accessibility": 92,
+        "bestPractices": 100,
+        "seo": 100,
+        "lcp": 1451.5554,
+        "cls": 0,
+        "tbt": 0,
+        "bytes": 57604
+      },
+      {
+        "performance": 100,
+        "accessibility": 92,
+        "bestPractices": 100,
+        "seo": 100,
+        "lcp": 1361.7942,
+        "cls": 0,
+        "tbt": 0,
+        "bytes": 57606
+      },
+      {
+        "performance": 100,
+        "accessibility": 92,
+        "bestPractices": 100,
+        "seo": 100,
+        "lcp": 1362.5040000000004,
+        "cls": 0,
+        "tbt": 0,
+        "bytes": 57605
+      }
+    ],
+    "median": {
+      "performance": 100,
+      "accessibility": 92,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp": 1362.5040000000004,
+      "cls": 0,
+      "tbt": 0,
+      "bytes": 57605
+    },
+    "medianRun": 1
+  },
+  {
+    "label": "base",
+    "page": "weekly",
+    "form": "mobile",
+    "url": "https://codyshen0000.github.io/ai-frontier-trends/weekly/",
+    "runs": [
+      {
+        "performance": 100,
+        "accessibility": 92,
+        "bestPractices": 100,
+        "seo": 100,
+        "lcp": 1001.5005,
+        "cls": 0,
+        "tbt": 0,
+        "bytes": 19641
+      },
+      {
+        "performance": 100,
+        "accessibility": 92,
+        "bestPractices": 100,
+        "seo": 100,
+        "lcp": 910.1915,
+        "cls": 0,
+        "tbt": 0,
+        "bytes": 19595
+      },
+      {
+        "performance": 100,
+        "accessibility": 92,
+        "bestPractices": 100,
+        "seo": 100,
+        "lcp": 909.826,
+        "cls": 0,
+        "tbt": 0,
+        "bytes": 19640
+      }
+    ],
+    "median": {
+      "performance": 100,
+      "accessibility": 92,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp": 910.1915,
+      "cls": 0,
+      "tbt": 0,
+      "bytes": 19640
+    },
+    "medianRun": 1
+  },
+  {
+    "label": "head",
+    "page": "weekly",
+    "form": "desktop",
+    "url": "http://127.0.0.1:40349/weekly/",
+    "runs": [
+      {
+        "performance": 100,
+        "accessibility": 92,
+        "bestPractices": 100,
+        "seo": 100,
+        "lcp": 372.08260000000007,
+        "cls": 0,
+        "tbt": 0,
+        "bytes": 57605
+      },
+      {
+        "performance": 100,
+        "accessibility": 92,
+        "bestPractices": 100,
+        "seo": 100,
+        "lcp": 372.22939999999994,
+        "cls": 0,
+        "tbt": 0,
+        "bytes": 57606
+      },
+      {
+        "performance": 100,
+        "accessibility": 92,
+        "bestPractices": 100,
+        "seo": 100,
+        "lcp": 371.79019999999997,
+        "cls": 0,
+        "tbt": 0,
+        "bytes": 57605
+      }
+    ],
+    "median": {
+      "performance": 100,
+      "accessibility": 92,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp": 372.08260000000007,
+      "cls": 0,
+      "tbt": 0,
+      "bytes": 57605
+    },
+    "medianRun": 1
+  },
+  {
+    "label": "base",
+    "page": "weekly",
+    "form": "desktop",
+    "url": "https://codyshen0000.github.io/ai-frontier-trends/weekly/",
+    "runs": [
+      {
+        "performance": 100,
+        "accessibility": 92,
+        "bestPractices": 100,
+        "seo": 100,
+        "lcp": 341.688,
+        "cls": 0,
+        "tbt": 0,
+        "bytes": 19626
+      },
+      {
+        "performance": 100,
+        "accessibility": 92,
+        "bestPractices": 100,
+        "seo": 100,
+        "lcp": 250.028,
+        "cls": 0,
+        "tbt": 0,
+        "bytes": 19641
+      },
+      {
+        "performance": 100,
+        "accessibility": 92,
+        "bestPractices": 100,
+        "seo": 100,
+        "lcp": 250.797,
+        "cls": 0,
+        "tbt": 0,
+        "bytes": 19620
+      }
+    ],
+    "median": {
+      "performance": 100,
+      "accessibility": 92,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcp": 250.797,
+      "cls": 0,
+      "tbt": 0,
+      "bytes": 19626
+    },
+    "medianRun": 1
+  },
+  {
+    "label": "head",
+    "page": "timeline",
+    "form": "mobile",
+    "url": "http://127.0.0.1:40349/timeline/",
+    "runs": [
+      {
+        "performance": 97,
+        "accessibility": 96,
+        "bestPractices": 100,
+        "seo": 90,
+        "lcp": 1661.2144,
+        "cls": 0.04891107669553529,
+        "tbt": 141,
+        "bytes": 341374
+      },
+      {
+        "performance": 96,
+        "accessibility": 96,
+        "bestPractices": 100,
+        "seo": 90,
+        "lcp": 1661.3606000000004,
+        "cls": 0.04891107669553529,
+        "tbt": 176,
+        "bytes": 348343
+      },
+      {
+        "performance": 96,
+        "accessibility": 96,
+        "bestPractices": 100,
+        "seo": 90,
+        "lcp": 1663.3104000000003,
+        "cls": 0.04891107669553529,
+        "tbt": 171,
+        "bytes": 348392
+      }
+    ],
+    "median": {
+      "performance": 96,
+      "accessibility": 96,
+      "bestPractices": 100,
+      "seo": 90,
+      "lcp": 1661.3606000000004,
+      "cls": 0.04891107669553529,
+      "tbt": 171,
+      "bytes": 348343
+    },
+    "medianRun": 2
+  },
+  {
+    "label": "base",
+    "page": "timeline",
+    "form": "mobile",
+    "url": "https://codyshen0000.github.io/ai-frontier-trends/timeline/",
+    "runs": [
+      {
+        "performance": 98,
+        "accessibility": 96,
+        "bestPractices": 100,
+        "seo": 90,
+        "lcp": 1048.176,
+        "cls": 0.04891107669553529,
+        "tbt": 142,
+        "bytes": 277823
+      },
+      {
+        "performance": 97,
+        "accessibility": 96,
+        "bestPractices": 100,
+        "seo": 90,
+        "lcp": 1082.183,
+        "cls": 0.04891107669553529,
+        "tbt": 172,
+        "bytes": 277852
+      },
+      {
+        "performance": 98,
+        "accessibility": 96,
+        "bestPractices": 100,
+        "seo": 90,
+        "lcp": 1056.2939999999999,
+        "cls": 0.04891107669553529,
+        "tbt": 141,
+        "bytes": 284828
+      }
+    ],
+    "median": {
+      "performance": 98,
+      "accessibility": 96,
+      "bestPractices": 100,
+      "seo": 90,
+      "lcp": 1056.2939999999999,
+      "cls": 0.04891107669553529,
+      "tbt": 142,
+      "bytes": 277852
+    },
+    "medianRun": 1
+  },
+  {
+    "label": "head",
+    "page": "timeline",
+    "form": "desktop",
+    "url": "http://127.0.0.1:40349/timeline/",
+    "runs": [
+      {
+        "performance": 99,
+        "accessibility": 96,
+        "bestPractices": 100,
+        "seo": 90,
+        "lcp": 451.62919999999997,
+        "cls": 0.0776936687771949,
+        "tbt": 0,
+        "bytes": 341374
+      },
+      {
+        "performance": 99,
+        "accessibility": 96,
+        "bestPractices": 100,
+        "seo": 90,
+        "lcp": 451.3084,
+        "cls": 0.0776936687771949,
+        "tbt": 0,
+        "bytes": 348370
+      },
+      {
+        "performance": 99,
+        "accessibility": 96,
+        "bestPractices": 100,
+        "seo": 90,
+        "lcp": 452.16779999999994,
+        "cls": 0.0776936687771949,
+        "tbt": 0,
+        "bytes": 348376
+      }
+    ],
+    "median": {
+      "performance": 99,
+      "accessibility": 96,
+      "bestPractices": 100,
+      "seo": 90,
+      "lcp": 451.62919999999997,
+      "cls": 0.0776936687771949,
+      "tbt": 0,
+      "bytes": 348370
+    },
+    "medianRun": 1
+  },
+  {
+    "label": "base",
+    "page": "timeline",
+    "form": "desktop",
+    "url": "https://codyshen0000.github.io/ai-frontier-trends/timeline/",
+    "runs": [
+      {
+        "performance": 99,
+        "accessibility": 96,
+        "bestPractices": 100,
+        "seo": 90,
+        "lcp": 286.7845,
+        "cls": 0.0776936687771949,
+        "tbt": 0,
+        "bytes": 284836
+      },
+      {
+        "performance": 99,
+        "accessibility": 96,
+        "bestPractices": 100,
+        "seo": 90,
+        "lcp": 291.26,
+        "cls": 0.0776936687771949,
+        "tbt": 0,
+        "bytes": 284838
+      },
+      {
+        "performance": 99,
+        "accessibility": 96,
+        "bestPractices": 100,
+        "seo": 90,
+        "lcp": 289.4875,
+        "cls": 0.0776936687771949,
+        "tbt": 11,
+        "bytes": 284822
+      }
+    ],
+    "median": {
+      "performance": 99,
+      "accessibility": 96,
+      "bestPractices": 100,
+      "seo": 90,
+      "lcp": 289.4875,
+      "cls": 0.0776936687771949,
+      "tbt": 0,
+      "bytes": 284836
+    },
+    "medianRun": 1
+  },
+  {
+    "label": "head",
+    "page": "event",
+    "form": "mobile",
+    "url": "http://127.0.0.1:45671/weekly/2026-10-18/",
+    "runs": [
+      {
+        "performance": 99,
+        "accessibility": 95,
+        "bestPractices": 100,
+        "seo": 91,
+        "lcp": 1582.57305,
+        "cls": 0,
+        "tbt": 58,
+        "bytes": 374270
+      },
+      {
+        "performance": 99,
+        "accessibility": 95,
+        "bestPractices": 100,
+        "seo": 91,
+        "lcp": 1582.9430499999999,
+        "cls": 0,
+        "tbt": 53.5,
+        "bytes": 374268
+      },
+      {
+        "performance": 99,
+        "accessibility": 95,
+        "bestPractices": 100,
+        "seo": 91,
+        "lcp": 1581.84875,
+        "cls": 0,
+        "tbt": 101,
+        "bytes": 381270
+      }
+    ],
+    "median": {
+      "performance": 99,
+      "accessibility": 95,
+      "bestPractices": 100,
+      "seo": 91,
+      "lcp": 1582.57305,
+      "cls": 0,
+      "tbt": 58,
+      "bytes": 374270
+    },
+    "medianRun": 1
+  },
+  {
+    "label": "base",
+    "page": "event",
+    "form": "mobile",
+    "url": "https://codyshen0000.github.io/ai-frontier-trends/weekly/2026-10-18/",
+    "runs": [
+      {
+        "performance": 80,
+        "accessibility": 95,
+        "bestPractices": 100,
+        "seo": 91,
+        "lcp": 4132.2785,
+        "cls": 0,
+        "tbt": 60.500000000000455,
+        "bytes": 479892
+      },
+      {
+        "performance": 97,
+        "accessibility": 95,
+        "bestPractices": 100,
+        "seo": 91,
+        "lcp": 2034.3905,
+        "cls": 0,
+        "tbt": 68.89199999999983,
+        "bytes": 479881
+      },
+      {
+        "performance": 98,
+        "accessibility": 95,
+        "bestPractices": 100,
+        "seo": 91,
+        "lcp": 2038.7035,
+        "cls": 0,
+        "tbt": 57.99999999999977,
+        "bytes": 479926
+      }
+    ],
+    "median": {
+      "performance": 97,
+      "accessibility": 95,
+      "bestPractices": 100,
+      "seo": 91,
+      "lcp": 2038.7035,
+      "cls": 0,
+      "tbt": 60.500000000000455,
+      "bytes": 479892
+    },
+    "medianRun": 2
+  },
+  {
+    "label": "head",
+    "page": "event",
+    "form": "desktop",
+    "url": "http://127.0.0.1:40349/weekly/2026-10-18/",
+    "runs": [
+      {
+        "performance": 97,
+        "accessibility": 95,
+        "bestPractices": 100,
+        "seo": 91,
+        "lcp": 653.2495999999999,
+        "cls": 0.09717980035116278,
+        "tbt": 0,
+        "bytes": 616248
+      },
+      {
+        "performance": 97,
+        "accessibility": 95,
+        "bestPractices": 100,
+        "seo": 91,
+        "lcp": 652.8983999999999,
+        "cls": 0.09717980035116278,
+        "tbt": 0,
+        "bytes": 609214
+      },
+      {
+        "performance": 97,
+        "accessibility": 95,
+        "bestPractices": 100,
+        "seo": 91,
+        "lcp": 653.8788,
+        "cls": 0.09717980035116278,
+        "tbt": 0,
+        "bytes": 609222
+      }
+    ],
+    "median": {
+      "performance": 97,
+      "accessibility": 95,
+      "bestPractices": 100,
+      "seo": 91,
+      "lcp": 653.2495999999999,
+      "cls": 0.09717980035116278,
+      "tbt": 0,
+      "bytes": 609222
+    },
+    "medianRun": 1
+  },
+  {
+    "label": "base",
+    "page": "event",
+    "form": "desktop",
+    "url": "https://codyshen0000.github.io/ai-frontier-trends/weekly/2026-10-18/",
+    "runs": [
+      {
+        "performance": 98,
+        "accessibility": 95,
+        "bestPractices": 100,
+        "seo": 91,
+        "lcp": 444.77,
+        "cls": 0.09717980035116278,
+        "tbt": 0,
+        "bytes": 479903
+      },
+      {
+        "performance": 98,
+        "accessibility": 95,
+        "bestPractices": 100,
+        "seo": 91,
+        "lcp": 447.14750000000004,
+        "cls": 0.09717980035116278,
+        "tbt": 0,
+        "bytes": 479899
+      },
+      {
+        "performance": 98,
+        "accessibility": 95,
+        "bestPractices": 100,
+        "seo": 91,
+        "lcp": 447.03049999999996,
+        "cls": 0.09717980035116278,
+        "tbt": 0,
+        "bytes": 472901
+      }
+    ],
+    "median": {
+      "performance": 98,
+      "accessibility": 95,
+      "bestPractices": 100,
+      "seo": 91,
+      "lcp": 447.03049999999996,
+      "cls": 0.09717980035116278,
+      "tbt": 0,
+      "bytes": 479899
+    },
+    "medianRun": 1
+  }
+]

@@ -1,0 +1,653 @@
+[
+  {
+    "page": "daily",
+    "text": "跳到正文",
+    "href": "#main",
+    "target": "#main",
+    "status": "anchor-found"
+  },
+  {
+    "page": "daily",
+    "text": "前沿趋势",
+    "href": "../",
+    "target": "index.html",
+    "status": "200"
+  },
+  {
+    "page": "daily",
+    "text": "精选",
+    "href": "../",
+    "target": "index.html",
+    "status": "200"
+  },
+  {
+    "page": "daily",
+    "text": "热点榜",
+    "href": "../hot/",
+    "target": "hot/index.html",
+    "status": "200"
+  },
+  {
+    "page": "daily",
+    "text": "AI 日报",
+    "href": "#report-start",
+    "target": "#report-start",
+    "status": "anchor-found"
+  },
+  {
+    "page": "daily",
+    "text": "收藏",
+    "href": "../starred/",
+    "target": "starred/index.html",
+    "status": "200"
+  },
+  {
+    "page": "daily",
+    "text": "GitHub 开源",
+    "href": "https://github.com/codyshen0000/ai-frontier-trends",
+    "target": "https://github.com/codyshen0000/ai-frontier-trends",
+    "status": "external"
+  },
+  {
+    "page": "daily",
+    "text": "日报",
+    "href": "#report-start",
+    "target": "#report-start",
+    "status": "anchor-found"
+  },
+  {
+    "page": "daily",
+    "text": "周报",
+    "href": "../weekly/",
+    "target": "weekly/index.html",
+    "status": "200"
+  },
+  {
+    "page": "daily",
+    "text": "16 周五 Black Forest Labs 开源 FLUX.3 Image Klein（5.6B）",
+    "href": "../daily/#d-2026-10-16",
+    "target": "daily/index.html#d-2026-10-16",
+    "status": "anchor-found"
+  },
+  {
+    "page": "daily",
+    "text": "日报",
+    "href": "#report-start",
+    "target": "#report-start",
+    "status": "anchor-found"
+  },
+  {
+    "page": "daily",
+    "text": "周报",
+    "href": "../weekly/",
+    "target": "weekly/index.html",
+    "status": "200"
+  },
+  {
+    "page": "daily",
+    "text": "今天",
+    "href": "../daily/#d-2026-10-16",
+    "target": "daily/index.html#d-2026-10-16",
+    "status": "anchor-found"
+  },
+  {
+    "page": "daily",
+    "text": "头版",
+    "href": "#report-start",
+    "target": "#report-start",
+    "status": "anchor-found"
+  },
+  {
+    "page": "daily",
+    "text": "Black Forest Labs 开源 FLUX.3 Image Klein（5.6B）",
+    "href": "https://bfl.ai/blog/flux-3-image-klein",
+    "target": "https://bfl.ai/blog/flux-3-image-klein",
+    "status": "external"
+  },
+  {
+    "page": "daily",
+    "text": "原文",
+    "href": "https://bfl.ai/blog/flux-3-image-klein",
+    "target": "https://bfl.ai/blog/flux-3-image-klein",
+    "status": "external"
+  },
+  {
+    "page": "daily",
+    "text": "RSS",
+    "href": "feed/weekly.xml",
+    "target": "daily/feed/weekly.xml",
+    "status": "missing"
+  },
+  {
+    "page": "daily",
+    "text": "精选",
+    "href": "../",
+    "target": "index.html",
+    "status": "200"
+  },
+  {
+    "page": "daily",
+    "text": "热点",
+    "href": "../hot/",
+    "target": "hot/index.html",
+    "status": "200"
+  },
+  {
+    "page": "daily",
+    "text": "日报",
+    "href": "#report-start",
+    "target": "#report-start",
+    "status": "anchor-found"
+  },
+  {
+    "page": "daily",
+    "text": "我的",
+    "href": "../more/",
+    "target": "more/index.html",
+    "status": "200"
+  },
+  {
+    "page": "home",
+    "text": "跳到正文",
+    "href": "#main",
+    "target": "#main",
+    "status": "anchor-found"
+  },
+  {
+    "page": "home",
+    "text": "前沿趋势",
+    "href": "#main",
+    "target": "#main",
+    "status": "anchor-found"
+  },
+  {
+    "page": "home",
+    "text": "精选",
+    "href": "#main",
+    "target": "#main",
+    "status": "anchor-found"
+  },
+  {
+    "page": "home",
+    "text": "热点榜",
+    "href": "./hot/",
+    "target": "hot/index.html",
+    "status": "200"
+  },
+  {
+    "page": "home",
+    "text": "AI 日报",
+    "href": "./daily/",
+    "target": "daily/index.html",
+    "status": "200"
+  },
+  {
+    "page": "home",
+    "text": "收藏",
+    "href": "./starred/",
+    "target": "starred/index.html",
+    "status": "200"
+  },
+  {
+    "page": "home",
+    "text": "GitHub 开源",
+    "href": "https://github.com/codyshen0000/ai-frontier-trends",
+    "target": "https://github.com/codyshen0000/ai-frontier-trends",
+    "status": "external"
+  },
+  {
+    "page": "home",
+    "text": "前沿趋势",
+    "href": "#main",
+    "target": "#main",
+    "status": "anchor-found"
+  },
+  {
+    "page": "home",
+    "text": "精选",
+    "href": "#main",
+    "target": "#main",
+    "status": "anchor-found"
+  },
+  {
+    "page": "home",
+    "text": "全部",
+    "href": "#main",
+    "target": "#main",
+    "status": "anchor-found"
+  },
+  {
+    "page": "home",
+    "text": "一手",
+    "href": "./?channel=firstParty",
+    "target": "index.html",
+    "status": "200"
+  },
+  {
+    "page": "home",
+    "text": "模型",
+    "href": "./?category=model",
+    "target": "index.html",
+    "status": "200"
+  },
+  {
+    "page": "home",
+    "text": "产品",
+    "href": "./?category=product",
+    "target": "index.html",
+    "status": "200"
+  },
+  {
+    "page": "home",
+    "text": "行业",
+    "href": "./?category=industry",
+    "target": "index.html",
+    "status": "200"
+  },
+  {
+    "page": "home",
+    "text": "论文",
+    "href": "./?category=paper",
+    "target": "index.html",
+    "status": "200"
+  },
+  {
+    "page": "home",
+    "text": "教程",
+    "href": "./?category=tutorial",
+    "target": "index.html",
+    "status": "200"
+  },
+  {
+    "page": "home",
+    "text": "观点",
+    "href": "./?category=opinion",
+    "target": "index.html",
+    "status": "200"
+  },
+  {
+    "page": "home",
+    "text": "完整榜单",
+    "href": "./hot/",
+    "target": "hot/index.html",
+    "status": "200"
+  },
+  {
+    "page": "home",
+    "text": "1 Black Forest Labs 开源 FLUX.3 Image Klein（5.6B） B + 46 333 热度",
+    "href": "https://bfl.ai/blog/flux-3-image-klein",
+    "target": "https://bfl.ai/blog/flux-3-image-klein",
+    "status": "external"
+  },
+  {
+    "page": "home",
+    "text": "2 OpenUI 1.0 开源 Agent 界面框架 G + 38 150 热度",
+    "href": "https://github.com/thesysdev/openui",
+    "target": "https://github.com/thesysdev/openui",
+    "status": "external"
+  },
+  {
+    "page": "home",
+    "text": "3 TypeSafe 开放 Jev 1.14 实验性预览 T + 16 86 热度",
+    "href": "https://typesafe.ai/blog/jev-1-14",
+    "target": "https://typesafe.ai/blog/jev-1-14",
+    "status": "external"
+  },
+  {
+    "page": "home",
+    "text": "4 JEV-35B 开源单次前向决策头 H + 13 80 热度",
+    "href": "https://huggingface.co/autotrust/JEV-35B",
+    "target": "https://huggingface.co/autotrust/JEV-35B",
+    "status": "external"
+  },
+  {
+    "page": "home",
+    "text": "5 LlamaFactory 开源 RSI 工具链 G + 10 74 热度",
+    "href": "https://github.com/Prism-Shadow/penguin-harness",
+    "target": "https://github.com/Prism-Shadow/penguin-harness",
+    "status": "external"
+  },
+  {
+    "page": "home",
+    "text": "RSS",
+    "href": "feed/weekly.xml",
+    "target": "feed/weekly.xml",
+    "status": "200"
+  },
+  {
+    "page": "home",
+    "text": "精选",
+    "href": "#main",
+    "target": "#main",
+    "status": "anchor-found"
+  },
+  {
+    "page": "home",
+    "text": "热点",
+    "href": "./hot/",
+    "target": "hot/index.html",
+    "status": "200"
+  },
+  {
+    "page": "home",
+    "text": "日报",
+    "href": "./daily/",
+    "target": "daily/index.html",
+    "status": "200"
+  },
+  {
+    "page": "home",
+    "text": "我的",
+    "href": "./more/",
+    "target": "more/index.html",
+    "status": "200"
+  },
+  {
+    "page": "hot",
+    "text": "跳到正文",
+    "href": "#main",
+    "target": "#main",
+    "status": "anchor-found"
+  },
+  {
+    "page": "hot",
+    "text": "前沿趋势",
+    "href": "../",
+    "target": "index.html",
+    "status": "200"
+  },
+  {
+    "page": "hot",
+    "text": "精选",
+    "href": "../",
+    "target": "index.html",
+    "status": "200"
+  },
+  {
+    "page": "hot",
+    "text": "热点榜",
+    "href": "#main",
+    "target": "#main",
+    "status": "anchor-found"
+  },
+  {
+    "page": "hot",
+    "text": "AI 日报",
+    "href": "../daily/",
+    "target": "daily/index.html",
+    "status": "200"
+  },
+  {
+    "page": "hot",
+    "text": "收藏",
+    "href": "../starred/",
+    "target": "starred/index.html",
+    "status": "200"
+  },
+  {
+    "page": "hot",
+    "text": "GitHub 开源",
+    "href": "https://github.com/codyshen0000/ai-frontier-trends",
+    "target": "https://github.com/codyshen0000/ai-frontier-trends",
+    "status": "external"
+  },
+  {
+    "page": "hot",
+    "text": "Black Forest Labs 开源 FLUX.3 Image Klein（5.6B）",
+    "href": "https://bfl.ai/blog/flux-3-image-klein",
+    "target": "https://bfl.ai/blog/flux-3-image-klein",
+    "status": "external"
+  },
+  {
+    "page": "hot",
+    "text": "OpenUI 1.0 开源 Agent 界面框架",
+    "href": "https://github.com/thesysdev/openui",
+    "target": "https://github.com/thesysdev/openui",
+    "status": "external"
+  },
+  {
+    "page": "hot",
+    "text": "TypeSafe 开放 Jev 1.14 实验性预览",
+    "href": "https://typesafe.ai/blog/jev-1-14",
+    "target": "https://typesafe.ai/blog/jev-1-14",
+    "status": "external"
+  },
+  {
+    "page": "hot",
+    "text": "JEV-35B 开源单次前向决策头",
+    "href": "https://huggingface.co/autotrust/JEV-35B",
+    "target": "https://huggingface.co/autotrust/JEV-35B",
+    "status": "external"
+  },
+  {
+    "page": "hot",
+    "text": "LlamaFactory 开源 RSI 工具链",
+    "href": "https://github.com/Prism-Shadow/penguin-harness",
+    "target": "https://github.com/Prism-Shadow/penguin-harness",
+    "status": "external"
+  },
+  {
+    "page": "hot",
+    "text": "PR-OPD：事后技能对齐隐藏状态",
+    "href": "https://arxiv.org/abs/2609.36642",
+    "target": "https://arxiv.org/abs/2609.36642",
+    "status": "external"
+  },
+  {
+    "page": "hot",
+    "text": "Terminal-RSI：终端 agent 递归自改进",
+    "href": "https://arxiv.org/abs/2610.22192",
+    "target": "https://arxiv.org/abs/2610.22192",
+    "status": "external"
+  },
+  {
+    "page": "hot",
+    "text": "JevAny 把任意骨干训成决策头",
+    "href": "https://jevland.mnimiy.com/projects/jevany/",
+    "target": "https://jevland.mnimiy.com/projects/jevany/",
+    "status": "external"
+  },
+  {
+    "page": "hot",
+    "text": "Agent-Reflex 把反思训成元技能",
+    "href": "https://www.xiaohongshu.com/explore/6ad176eb000000000a023985",
+    "target": "https://www.xiaohongshu.com/explore/6ad176eb000000000a023985",
+    "status": "external"
+  },
+  {
+    "page": "hot",
+    "text": "Kling 4.0 产品全量上线",
+    "href": "https://x.com/Kling_ai/status/2110747537187709424",
+    "target": "https://x.com/Kling_ai/status/2110747537187709424",
+    "status": "external"
+  },
+  {
+    "page": "hot",
+    "text": "RSS",
+    "href": "feed/weekly.xml",
+    "target": "hot/feed/weekly.xml",
+    "status": "missing"
+  },
+  {
+    "page": "hot",
+    "text": "精选",
+    "href": "../",
+    "target": "index.html",
+    "status": "200"
+  },
+  {
+    "page": "hot",
+    "text": "热点",
+    "href": "#main",
+    "target": "#main",
+    "status": "anchor-found"
+  },
+  {
+    "page": "hot",
+    "text": "日报",
+    "href": "../daily/",
+    "target": "daily/index.html",
+    "status": "200"
+  },
+  {
+    "page": "hot",
+    "text": "我的",
+    "href": "../more/",
+    "target": "more/index.html",
+    "status": "200"
+  },
+  {
+    "page": "search",
+    "text": "跳到正文",
+    "href": "#main",
+    "target": "#main",
+    "status": "anchor-found"
+  },
+  {
+    "page": "search",
+    "text": "前沿趋势",
+    "href": "../",
+    "target": "index.html",
+    "status": "200"
+  },
+  {
+    "page": "search",
+    "text": "精选",
+    "href": "../",
+    "target": "index.html",
+    "status": "200"
+  },
+  {
+    "page": "search",
+    "text": "热点榜",
+    "href": "../hot/",
+    "target": "hot/index.html",
+    "status": "200"
+  },
+  {
+    "page": "search",
+    "text": "AI 日报",
+    "href": "../daily/",
+    "target": "daily/index.html",
+    "status": "200"
+  },
+  {
+    "page": "search",
+    "text": "收藏",
+    "href": "../starred/",
+    "target": "starred/index.html",
+    "status": "200"
+  },
+  {
+    "page": "search",
+    "text": "GitHub 开源",
+    "href": "https://github.com/codyshen0000/ai-frontier-trends",
+    "target": "https://github.com/codyshen0000/ai-frontier-trends",
+    "status": "external"
+  },
+  {
+    "page": "search",
+    "text": "精选",
+    "href": "../",
+    "target": "index.html",
+    "status": "200"
+  },
+  {
+    "page": "search",
+    "text": "热点",
+    "href": "../hot/",
+    "target": "hot/index.html",
+    "status": "200"
+  },
+  {
+    "page": "search",
+    "text": "日报",
+    "href": "../daily/",
+    "target": "daily/index.html",
+    "status": "200"
+  },
+  {
+    "page": "search",
+    "text": "我的",
+    "href": "../more/",
+    "target": "more/index.html",
+    "status": "200"
+  },
+  {
+    "page": "starred",
+    "text": "跳到正文",
+    "href": "#main",
+    "target": "#main",
+    "status": "anchor-found"
+  },
+  {
+    "page": "starred",
+    "text": "前沿趋势",
+    "href": "../",
+    "target": "index.html",
+    "status": "200"
+  },
+  {
+    "page": "starred",
+    "text": "精选",
+    "href": "../",
+    "target": "index.html",
+    "status": "200"
+  },
+  {
+    "page": "starred",
+    "text": "热点榜",
+    "href": "../hot/",
+    "target": "hot/index.html",
+    "status": "200"
+  },
+  {
+    "page": "starred",
+    "text": "AI 日报",
+    "href": "../daily/",
+    "target": "daily/index.html",
+    "status": "200"
+  },
+  {
+    "page": "starred",
+    "text": "收藏",
+    "href": "#main",
+    "target": "#main",
+    "status": "anchor-found"
+  },
+  {
+    "page": "starred",
+    "text": "GitHub 开源",
+    "href": "https://github.com/codyshen0000/ai-frontier-trends",
+    "target": "https://github.com/codyshen0000/ai-frontier-trends",
+    "status": "external"
+  },
+  {
+    "page": "starred",
+    "text": "精选",
+    "href": "../",
+    "target": "index.html",
+    "status": "200"
+  },
+  {
+    "page": "starred",
+    "text": "热点",
+    "href": "../hot/",
+    "target": "hot/index.html",
+    "status": "200"
+  },
+  {
+    "page": "starred",
+    "text": "日报",
+    "href": "../daily/",
+    "target": "daily/index.html",
+    "status": "200"
+  },
+  {
+    "page": "starred",
+    "text": "我的",
+    "href": "../more/",
+    "target": "more/index.html",
+    "status": "200"
+  }
+]

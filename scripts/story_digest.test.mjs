@@ -14,6 +14,9 @@ import {
   findBannedMeta,
   loadStoryDigest,
   publicCopyFor,
+  PUBLIC_COPY_SCAN_EXTS,
+  assertNoRootAbsoluteUrls,
+  walkPublicCopyFiles,
 } from "./story_digest.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -125,5 +128,129 @@ assert.throws(
   /不进信号表/,
   "negative: banned copy in weekly figcaption fails",
 );
+
+assert.ok([".html", ".json", ".xml", ".md", ".svg", ".js", ".map"].every((ext) => PUBLIC_COPY_SCAN_EXTS.has(ext)));
+{
+  const tmp = mkdtempSync(join(tmpdir(), "digest-banned-md-"));
+  try {
+    writeFileSync(join(tmp, "note.md"), "正文不进正表。");
+    assert.throws(
+      () => assertNoBannedPublicCopyInDir(tmp, { prefix: "dist/" }),
+      /note\.md[\s\S]*不进正表/,
+      "negative: banned word in a dist md file fails",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "digest-banned-svg-"));
+  try {
+    writeFileSync(join(tmp, "mark.svg"), "<svg><text>挂观察</text></svg>");
+    assert.throws(
+      () => assertNoBannedPublicCopyInDir(tmp, { prefix: "dist/" }),
+      /mark\.svg[\s\S]*挂观察/,
+      "negative: banned word in a dist svg file fails",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "digest-banned-js-"));
+  try {
+    writeFileSync(join(tmp, "app.js"), 'const note = "不进信号表";');
+    assert.throws(
+      () => assertNoBannedPublicCopyInDir(tmp, { prefix: "dist/" }),
+      /app\.js[\s\S]*不进信号表/,
+      "negative: banned word in a dist js file fails",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "digest-weekly-timeline-"));
+  try {
+    mkdirSync(join(tmp, "content", "weekly", "neg"), { recursive: true });
+    writeFileSync(join(tmp, "content", "weekly", "neg", "timeline.md"), "- 旁证，不进正表。\n");
+    assert.throws(
+      () => assertWeeklyReports(tmp),
+      /content\/weekly\/neg\/timeline\.md[\s\S]*不进正表/,
+      "negative: banned word in weekly timeline.md fails",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "digest-banned-map-"));
+  try {
+    writeFileSync(join(tmp, "hydrate.js.map"), '{"note":"本批"}');
+    writeFileSync(join(tmp, "ok.png"), "not-text");
+    const files = walkPublicCopyFiles(tmp);
+    assert.ok(files.some((file) => file.endsWith("hydrate.js.map")), "default walk includes .map");
+    assert.ok(!files.some((file) => file.endsWith(".png")), "default walk skips binary png");
+    assert.throws(
+      () => assertNoBannedPublicCopyInDir(tmp, { prefix: "dist/" }),
+      /hydrate\.js\.map[\s\S]*本批/,
+      "negative: banned word in a dist .map file fails",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "digest-root-abs-"));
+  try {
+    writeFileSync(join(tmp, "starred.html"), '<a href="/weekly/2026-10-18/">周报</a>');
+    assert.throws(
+      () => assertNoRootAbsoluteUrls(tmp, { prefix: "dist/" }),
+      /starred\.html[\s\S]*\/weekly\/2026-10-18\//,
+      "negative: root-absolute in-site URL fails",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "digest-root-xml-"));
+  try {
+    writeFileSync(join(tmp, "weekly.xml"), "<rss><channel><item><link>/weekly/2026-10-18/</link></item></channel></rss>");
+    assert.throws(
+      () => assertNoRootAbsoluteUrls(tmp, { prefix: "dist/" }),
+      /weekly\.xml[\s\S]*\/weekly\/2026-10-18\//,
+      "negative: RSS <link> text root-absolute fails",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "digest-root-md-"));
+  try {
+    writeFileSync(join(tmp, "note.md"), "[x](/weekly/2026-10-18/)");
+    assert.throws(
+      () => assertNoRootAbsoluteUrls(tmp, { prefix: "dist/" }),
+      /note\.md[\s\S]*\/weekly\/2026-10-18\//,
+      "negative: Markdown link root-absolute fails",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "digest-root-js-"));
+  try {
+    writeFileSync(join(tmp, "app.js"), 'fetch("/data/meta.json")');
+    assert.throws(
+      () => assertNoRootAbsoluteUrls(tmp, { prefix: "dist/" }),
+      /app\.js[\s\S]*\/data\/meta\.json/,
+      "negative: JS string root-absolute fails",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
 
 console.log("story_digest tests passed");

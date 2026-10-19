@@ -84,7 +84,7 @@ function findLocalImages(casesRoot, rec) {
 
 function imgTag(rel, alt) {
   const src = `./${escapeHtml(rel)}`;
-  return `<button type="button" class="zoom" data-full="${src}" aria-label="查看大图：${escapeHtml(alt)}"><img src="${src}" alt="${escapeHtml(alt)}" loading="lazy" decoding="async"></button>`;
+  return `<a class="zoom" href="${src}" data-full="${src}" aria-label="查看大图：${escapeHtml(alt)}"><img src="${src}" alt="${escapeHtml(alt)}" loading="lazy" decoding="async"></a>`;
 }
 
 function renderMedia(rec, byRole, listed) {
