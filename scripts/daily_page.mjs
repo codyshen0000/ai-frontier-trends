@@ -135,23 +135,60 @@ function storyLink(card, escapeHtml) {
   return `<a href="${escapeHtml(href)}" target="_blank" rel="noopener">${escapeHtml(card.title)}</a>`;
 }
 
-function itemViz(card, escapeHtml) {
-  const viz = card.viz;
-  if (!viz) return "";
-  const figure = viz.image?.url
-    ? `<figure class="ft-daily-item-fig" data-viz-kind="${escapeHtml(viz.image.kind || "image")}">
-        <img loading="lazy" decoding="async" src="${escapeHtml(viz.image.url)}" alt="${escapeHtml(viz.image.alt || card.title)}" onerror="var f=this.closest('figure'); if(f) f.hidden=true;">
-        ${viz.image.caption ? `<figcaption>${escapeHtml(String(viz.image.caption).replace(/api\.fxtwitter\.com|pbs\.twimg\.com/g, "x.com"))}</figcaption>` : ""}
-      </figure>`
+function hasItemImage(card) {
+  return Boolean(card.viz?.image?.url);
+}
+
+const VIZ_ONERROR =
+  "var fig=this.closest('figure');var viz=this.closest('.ft-daily-item-viz');var split=this.closest('.ft-daily-split');var card=this.closest('.has-media');if(fig)fig.hidden=true;if(viz)viz.hidden=true;if(split)split.classList.add('is-collapsed');if(card)card.classList.remove('has-media');";
+
+function itemFigure(card, escapeHtml) {
+  const image = card.viz?.image;
+  if (!image?.url) return "";
+  const caption = image.caption
+    ? `<figcaption>${escapeHtml(String(image.caption).replace(/api\.fxtwitter\.com|pbs\.twimg\.com/g, "x.com"))}</figcaption>`
     : "";
-  const table = viz.tableHtml
-    ? `<div class="ft-daily-item-table">${String(viz.tableHtml)
-        .replace(/<script[\s\S]*?<\/script>/gi, "")
-        .replace(/<style[\s\S]*?<\/style>/gi, "")
-        .replace(/\son\w+=(?:"[^"]*"|'[^']*')/gi, "")}</div>`
+  return `<div class="ft-daily-item-viz" data-id="${escapeHtml(card.id)}"><figure class="ft-daily-item-fig" data-viz-kind="${escapeHtml(image.kind || "image")}">
+        <img loading="lazy" decoding="async" src="${escapeHtml(image.url)}" alt="${escapeHtml(image.alt || card.title)}" onerror="${VIZ_ONERROR}">
+        ${caption}
+      </figure></div>`;
+}
+
+function itemTable(card) {
+  const html = card.viz?.tableHtml;
+  if (!html) return "";
+  return `<div class="ft-daily-item-table">${String(html)
+    .replace(/<script[\s\S]*?<\/script>/gi, "")
+    .replace(/<style[\s\S]*?<\/style>/gi, "")
+    .replace(/\son\w+=(?:"[^"]*"|'[^']*')/gi, "")}</div>`;
+}
+
+function itemCopy(card, escapeHtml, { lead = false } = {}) {
+  const title = lead
+    ? `<h2>${storyLink(card, escapeHtml)}</h2>`
+    : `<h3>${storyLink(card, escapeHtml)}</h3>`;
+  const kicker = lead ? `<p class="ft-daily-kicker">头条</p>` : "";
+  const dek = card.summary
+    ? `<p class="${lead ? "ft-daily-dek" : "ft-daily-story-dek"}">${escapeHtml(card.summary)}</p>`
     : "";
-  if (!figure && !table) return "";
-  return `<div class="ft-daily-item-viz" data-id="${escapeHtml(card.id)}">${figure}${table}</div>`;
+  const metaClass = lead ? "ft-daily-lead-meta" : "ft-daily-story-meta";
+  return `<div class="ft-daily-copy">
+      ${kicker}
+      ${title}
+      ${dek}
+      <p class="${metaClass}">
+        ${sourceChips(card, escapeHtml)}
+        <span class="ft-daily-mins">约 ${storyMinutes(card)} 分钟</span>
+      </p>
+    </div>`;
+}
+
+function itemCardInner(card, escapeHtml, { lead = false } = {}) {
+  const copy = itemCopy(card, escapeHtml, { lead });
+  const figure = itemFigure(card, escapeHtml);
+  const table = itemTable(card);
+  if (!figure) return `${copy}${table}`;
+  return `<div class="ft-daily-split">${copy}${figure}</div>${table}`;
 }
 
 function monthGrid(day, issueDays) {
@@ -324,19 +361,11 @@ function frontPage(edition, { escapeHtml, hrefBetween }) {
     )
     .join("");
 
-  const dek = lead.summary ? `<p class="ft-daily-dek">${escapeHtml(lead.summary)}</p>` : "";
-  const viz = itemViz(lead, escapeHtml);
-  const leadBody = viz ? `<div class="ft-daily-lead-body">${dek}${viz}</div>` : dek;
+  const mediaClass = hasItemImage(lead) ? " has-media" : "";
 
   return `<section class="ft-daily-front" id="d-${escapeHtml(edition.day)}-front">
-    <div class="ft-daily-lead" id="c-${escapeHtml(lead.id)}" data-id="${escapeHtml(lead.id)}">
-      <p class="ft-daily-kicker">头条</p>
-      <h2>${storyLink(lead, escapeHtml)}</h2>
-      ${leadBody}
-      <p class="ft-daily-lead-meta">
-        ${sourceChips(lead, escapeHtml)}
-        <span class="ft-daily-mins">约 ${storyMinutes(lead)} 分钟</span>
-      </p>
+    <div class="ft-daily-lead${mediaClass}" id="c-${escapeHtml(lead.id)}" data-id="${escapeHtml(lead.id)}">
+      ${itemCardInner(lead, escapeHtml, { lead: true })}
     </div>
     <aside class="ft-daily-rail">
       ${
@@ -353,28 +382,42 @@ function frontPage(edition, { escapeHtml, hrefBetween }) {
   </section>`;
 }
 
+function packStoryRows(items) {
+  const rows = [];
+  let pair = [];
+  for (const card of items) {
+    if (hasItemImage(card)) {
+      if (pair.length) {
+        rows.push(pair);
+        pair = [];
+      }
+      rows.push([card]);
+    } else {
+      pair.push(card);
+      if (pair.length === 2) {
+        rows.push(pair);
+        pair = [];
+      }
+    }
+  }
+  if (pair.length) rows.push(pair);
+  return rows;
+}
+
 function sectionPage(edition, section, index, escapeHtml) {
   const no = pad(index + 1);
-  const rows = [];
-  for (let i = 0; i < section.items.length; i += 2) {
-    rows.push(section.items.slice(i, i + 2));
-  }
-  const rowHtml = rows
+  const rowHtml = packStoryRows(section.items)
     .map((row) => {
+      const span = row.length === 1;
       const cells = row
         .map((card) => {
-          return `<article class="ft-daily-story" id="c-${escapeHtml(card.id)}" data-id="${escapeHtml(card.id)}">
-            <h3>${storyLink(card, escapeHtml)}</h3>
-            ${card.summary ? `<p>${escapeHtml(card.summary)}</p>` : ""}
-            ${itemViz(card, escapeHtml)}
-            <p class="ft-daily-story-meta">
-              ${sourceChips(card, escapeHtml)}
-              <span class="ft-daily-mins">约 ${storyMinutes(card)} 分钟</span>
-            </p>
+          const mediaClass = hasItemImage(card) ? " has-media" : "";
+          return `<article class="ft-daily-story${mediaClass}" id="c-${escapeHtml(card.id)}" data-id="${escapeHtml(card.id)}">
+            ${itemCardInner(card, escapeHtml)}
           </article>`;
         })
         .join("");
-      return `<div class="ft-daily-row">${cells}</div>`;
+      return `<div class="ft-daily-row${span ? " is-span" : ""}">${cells}</div>`;
     })
     .join("");
 

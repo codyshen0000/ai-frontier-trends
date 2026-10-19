@@ -247,6 +247,13 @@ assert(!dailyPage.includes("暂无配图"), "daily does not ship a 暂无配图 
 assert(!dailyPage.includes("ft-daily-roster") && !dailyPage.includes("ft-daily-compare"), "daily has no PR #14/#15 summary/field table slots");
 assert(!/<th>\s*栏目\s*<\/th>/.test(dailyPage) && !/<td>\s*独立来源\s*<\/td>/.test(dailyPage), "daily does not invent 栏目/独立来源 field tables");
 assert(dailyPage.includes("ft-daily-item-viz") && dailyPage.includes("ft-daily-item-fig"), "daily hangs per-item source figures");
+assert(dailyPage.includes("ft-daily-split") && dailyPage.includes("has-media"), "daily image cards put title+dek beside the figure");
+assert(!dailyPage.includes("ft-daily-lead-body"), "daily no longer uses stacked lead-body newspaper inserts");
+assert(
+  (dailyPage.match(/class="ft-daily-story has-media"/g) || []).length >= 2,
+  "at least two story cards with images span as has-media",
+);
+assert(dailyPage.includes('class="ft-daily-row is-span"'), "image stories occupy a full-width row");
 {
   const logo = rejectReason({ url: "https://arxiv.org/static/base/arxiv-logo-primary-light.svg", alt: "arXiv logo", kind: "og" });
   assert(logo === "logo_or_avatar", `arxiv logo rejected (${logo})`);
@@ -316,6 +323,11 @@ assert(!/ft-daily-rail\s*\{[^}]*position:\s*sticky/.test(skinRaw), "daily 今日
 assert(/\.ft-daily-card\s*\{[^}]*border:/.test(skinRaw), "daily calendar is a bordered card");
 assert(/\.ft-daily-chrome\s*\{\s*display:\s*none;/.test(skinRaw), "mobile hides 往期 chrome so the calendar keeps the nameplate");
 assert(/\.ft-daily-dot\s*\{[^}]*width:\s*22px/.test(skinRaw), "calendar dots have a 22px hit target");
+assert(
+  /grid-template-columns:\s*minmax\(0,\s*1\.5fr\)\s*minmax\(0,\s*1fr\)/.test(skinRaw),
+  "desktop split is ~60/40 text|image",
+);
+assert(/\.ft-daily-lead\.has-media/.test(skinRaw) && /\.ft-daily-story\.has-media/.test(skinRaw), "image cards share has-media chrome");
 assert(
   /\.ft-daily-dots\s*\{[^}]*minmax\(0,\s*1fr\)/.test(skinRaw),
   "calendar dots use shrinking columns so 1280 nameplate does not overflow",

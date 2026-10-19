@@ -12,7 +12,7 @@
 
 ## Critique（Assessment A）
 
-**设计特异性：通过。** 图挂在该条目摘要下（头条桌面为文+图并排，对标 AIHOT 卡+说明图结构，未抄品牌）。不是刊头汇总，也不是栏目/标签小表。
+**设计特异性：通过。** 有图的头条/story 是同一张卡内左文右图（`.ft-daily-split`，约 60/40，16px gutter），标题+摘要+chips 与说明图同列。对标 AIHOT 热点卡 / Cody Arena 旁图结构，未抄品牌。不是刊头汇总，也不是文下整幅插页。
 
 ### Nielsen（0–4）
 
@@ -24,16 +24,16 @@
 | 4 | 一致性 | 4 | 暖纸边框/圆角/单色 teal；与日报壳一致 |
 | 5 | 防错 | 4 | 价值门拒绝 Logo/data URI/站点默认 OG |
 | 6 | 再认而非回忆 | 3 | 评测图/对照表让人一眼知道「发了什么、怎么比」 |
-| 7 | 灵活高效 | 3 | lazy-load；桌面 max-height 280 |
+| 7 | 灵活高效 | 3 | lazy-load；桌面图列 ~40%、max-height 280 |
 | 8 | 美观克制 | 4 | 无多色渐变 CTA；无 *HOT |
 | 9 | 纠错 | 3 | 坏链隐藏 figure，不回退字段表 |
 | 10 | 帮助 | 2 | caption 仅源 host |
 
 ### 优势
 
-1. 头条 Flux 3 挂 Elo 评测图，体感接近 Cody 正例。  
-2. Muse Spark 挂多模型评测表；Liquid d1-ultra 挂对照点图。  
-3. 无合用图的条目留白，没有硬塞感。
+1. 头条 Flux 3 卡：标题+摘要在左、Elo 评测图在右，体感接近 Cody 正例与 aihot NO.01。  
+2. 有图 story（Muse Spark、Kling 等）独占整行同一分栏卡，不再塞进两栏报纸格把图垫在文下。  
+3. 无合用图的条目仍两栏纯文，不挂灰骨架。
 
 ### 残留（非阻塞）
 
@@ -50,7 +50,7 @@
 | Accessibility | 3 | figure+alt；onerror 隐藏；未加灰骨架 |
 | Performance | 3 | 构建期解析+缓存；img lazy；远程热链 |
 | Theming | 4 | 沿用 `--ft-line` / `--ft-r-8` / 暖纸 |
-| Responsive | 3 | 1280 头条文图并排；960 以下单列；390 可读 |
+| Responsive | 4 | 1280 有图卡左文右图；390 仍一张卡内上堆叠；坏链 collapse 分栏 |
 | Implementation Integrity | 4 | 无字段表；无 PR14 槽；无 AIHOT/MyHOT 名 |
 | **合计** | **17/20** | **Good**（覆盖率须 Cody 点头） |
 
@@ -74,7 +74,8 @@
 | 无 Logo/头像/无关 OG 充数 | 通过（小红书 Logo、Nemotron 字标已拒） |
 | 无字段元数据表 / 无 PR14 三槽 | 通过 |
 | 空态省略 | 通过 |
-| 1280 / 390 不撑破页壳 | 通过（截图） |
+| 1280 / 390 不撑破页壳 | 通过（`shots/daily-1280-lead-realimg.png`、`daily-1280-cards-realimg.png`、`daily-390-realimg.png`） |
+| §2.5 有图卡同一卡内左文右图（非文下插页） | 通过；对比 `shots/layout-vs-aihot-hot.png`（Cody Arena 旁图）与 `layout-vs-aihot-daily.png` |
 | ≥70% 有价值真图 | **未达（69%）** · 诚实列出失败 `data-id` |
 | `npm run build` / `verify:ia` | 通过 |
 | 无 *HOT | 通过 |

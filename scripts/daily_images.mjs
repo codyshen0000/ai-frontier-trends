@@ -829,6 +829,7 @@ export function formatCoverageMarkdown(report) {
 
 - 可见 lead + story：**${report.success}/${report.total}** 挂上有价值真图（**${pct}%**）
 - 门禁：≥70% 有价值真图；表不计入覆盖率；禁止字段小表凑数
+- 版式：有图条目同一卡内左文右图（\`.ft-daily-split\` / \`.has-media\`）；无图条目仍两栏纯文
 - 结论：${pct >= 70 ? "达到 ≥70%" : "未达 70% — 失败项为诚实降级，未用 Logo/字段表凑数"}
 
 ## 成功 \`data-id\`
