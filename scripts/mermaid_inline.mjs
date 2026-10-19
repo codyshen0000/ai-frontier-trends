@@ -35,7 +35,19 @@ function renderSvgs(sources) {
 <script>
 (async function () {
   var sources = ${payload};
-  mermaid.initialize({ startOnLoad: false, securityLevel: "strict", theme: "neutral" });
+  mermaid.initialize({
+    startOnLoad: false,
+    securityLevel: "strict",
+    theme: "neutral",
+    themeVariables: {
+      primaryColor: "#eeeeee",
+      primaryTextColor: "#1d1d1f",
+      lineColor: "#4a4a4f",
+      secondaryColor: "#e8e8ed",
+      tertiaryColor: "#f5f5f7",
+      nodeTextColor: "#1d1d1f",
+    },
+  });
   var out = [];
   for (var i = 0; i < sources.length; i++) {
     var r = await mermaid.render("m" + i, sources[i]);

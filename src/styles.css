@@ -3,11 +3,20 @@
    Prefix private selectors (trend-, case-, page-). */
 
 html.ds-page:not([data-theme="dark"]),
-html.ds-page[data-theme="light"] {
-  --ds-accent: #0058b0;
-  --ds-accent-hover: #004a96;
-  --ds-accent-active: #003e80;
-  --ds-accent-soft: rgba(0, 88, 176, 0.12);
+html.ds-page[data-theme="light"],
+html.ft-shell:not([data-theme="dark"]),
+html.ft-shell[data-theme="light"] {
+  --ds-accent: #0058b0 !important;
+  --ds-accent-hover: #004a96 !important;
+  --ds-accent-active: #003e80 !important;
+  --ds-accent-soft: rgba(0, 88, 176, 0.12) !important;
+}
+
+html.ds-page:not([data-theme="dark"]) .ds-footer a,
+html.ds-page[data-theme="light"] .ds-footer a,
+html.ds-page:not([data-theme="dark"]) .ds-prose a,
+html.ds-page[data-theme="light"] .ds-prose a {
+  color: #0058b0 !important;
 }
 
 /* Keep the shell reading column centered even if a later reset
@@ -153,7 +162,7 @@ html.ft-shell main.ds-wrap {
   border-radius: var(--ds-radius-pill);
   border: 1px solid var(--ds-hairline-strong);
   font-size: 13px;
-  color: var(--ds-text-secondary) !important;
+  color: #3a3a3c !important;
   display: inline-flex;
   align-items: center;
 }
@@ -183,7 +192,7 @@ html.ft-shell main.ds-wrap {
   border-radius: var(--ds-radius-pill);
   font-size: 13px;
   font-weight: 500;
-  color: var(--ds-text-secondary) !important;
+  color: #3a3a3c !important;
   display: inline-flex;
   align-items: center;
 }
