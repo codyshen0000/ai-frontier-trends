@@ -11,10 +11,13 @@ const starred = readFileSync(join(root, "dist", "starred", "index.html"), "utf8"
 
 assert.match(hydrateSrc, /function siteRel/);
 assert.match(hydrateSrc, /function siteHref/);
-assert.match(hydrateSrc, /replace\(\/\^\\\.\//);
+assert.ok(hydrateSrc.includes('replace(/^\\.\\//, "")'), "siteRel strips leading ./");
+assert.ok(hydrateSrc.includes('replace(/^\\//, "")'), "siteRel strips leading /");
 assert.match(hydrateSrc, /url: siteRel\(/);
-assert.match(hydrate, /replace\(\/\^\\\.\//);
-assert.match(hydrate, /replace\(\/\^\//);
+assert.ok(
+  hydrate.includes('.replace(/^\\.\\//,"").replace(/^\\//,"")'),
+  "minified hydrate strips leading ./ and /",
+);
 assert.match(starred, /"base":"\.\.\/"/);
 assert.doesNotMatch(hydrateSrc, /url: item\.url \|\| "\.\/weekly\//);
 

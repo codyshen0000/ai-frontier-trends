@@ -68,7 +68,11 @@ export function embedWeeklyChartsAsDataUri(html, charts) {
 }
 
 function parseSrcsetUrls(value) {
-  return String(value)
+  const raw = String(value).trim();
+  if (/^data:/i.test(raw)) {
+    return [raw.replace(/\s+(?:\d+(?:\.\d+)?x|\d+w)\s*$/i, "").trim()].filter(Boolean);
+  }
+  return raw
     .split(",")
     .map((part) => part.trim().split(/\s+/)[0])
     .filter(Boolean);

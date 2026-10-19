@@ -635,7 +635,11 @@ function walkHtmlFiles(dir, acc = []) {
 }
 
 function parseSrcsetUrls(value) {
-  return String(value)
+  const raw = String(value).trim();
+  if (/^data:/i.test(raw)) {
+    return [raw.replace(/\s+(?:\d+(?:\.\d+)?x|\d+w)\s*$/i, "").trim()].filter(Boolean);
+  }
+  return raw
     .split(",")
     .map((part) => part.trim().split(/\s+/)[0])
     .filter(Boolean);
@@ -917,7 +921,10 @@ try {
 {
   const hydrate = readFileSync(join(distDir, "assets", "hydrate.js"), "utf8");
   const starred = readFileSync(join(distDir, "starred", "index.html"), "utf8");
-  assert(/replace\(\/\^\\\.\//.test(hydrate) && /replace\(\/\^\//.test(hydrate), "hydrate strips leading ./ and / from saved starred urls");
+  assert(
+    hydrate.includes(".replace(/^\\.\\//,\"\").replace(/^\\//,\"\")"),
+    "hydrate strips leading ./ and / from saved starred urls",
+  );
   assert(starred.includes('"base":"../"') || starred.includes('"base": "../"'), "starred page uses site-root base ../");
   assert(hydrate.includes("暂无符合条件的内容"), "hydrate empty filter copy is 暂无符合条件的内容");
   assert(!hydrate.includes("全部动态"), "hydrate empty state has no fake 全部动态 link");
