@@ -26,6 +26,7 @@ export async function convertWeeklyCharts(chartsDir) {
       pngName,
       webpName,
       png,
+      webp: webpBuf,
       width: meta.width,
       height: meta.height,
       shaPng: sha256(png),
@@ -54,6 +55,49 @@ export function rewriteWeeklyChartEmbeds(html, charts) {
     return pictureForChart(alt, hit, { eager: n++ === 0 });
   });
   return next;
+}
+
+export function embedWeeklyChartsAsDataUri(html, charts) {
+  let out = String(html);
+  for (const chart of charts) {
+    const uri = `data:image/webp;base64,${chart.webp.toString("base64")}`;
+    out = out.replaceAll(`srcset="charts/${chart.webpName}"`, `srcset="${uri}"`);
+    out = out.replaceAll(`src="charts/${chart.pngName}"`, `src="${uri}"`);
+  }
+  return out;
+}
+
+function parseSrcsetUrls(value) {
+  return String(value)
+    .split(",")
+    .map((part) => part.trim().split(/\s+/)[0])
+    .filter(Boolean);
+}
+
+export function collectReportImageSrcs(html) {
+  const urls = [];
+  for (const tag of String(html).matchAll(/<(?:img|source)\b[^>]*>/gi)) {
+    for (const attr of tag[0].matchAll(/\b(?:src|srcset|imagesrcset)=["']([^"']+)["']/gi)) {
+      urls.push(...parseSrcsetUrls(attr[1]));
+    }
+  }
+  return urls;
+}
+
+export function assertStandaloneReportCharts(html, charts = []) {
+  const urls = collectReportImageSrcs(html);
+  if (!urls.length) throw new Error("report.html has no chart images");
+  for (const url of urls) {
+    if (!url.startsWith("data:image/webp;base64,")) {
+      throw new Error(`report.html has external image src «${url.slice(0, 96)}»`);
+    }
+  }
+  for (const chart of charts) {
+    const uri = `data:image/webp;base64,${chart.webp.toString("base64")}`;
+    if (!String(html).includes(`srcset="${uri}"`) || !String(html).includes(`src="${uri}"`)) {
+      throw new Error(`report.html missing WebP data URI for ${chart.webpName || chart.pngName}`);
+    }
+  }
 }
 
 export function assertWeeklyChartPictures(html, charts) {
