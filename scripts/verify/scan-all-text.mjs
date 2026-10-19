@@ -55,5 +55,35 @@ assert.equal(rootAbs.length, 0, rootAbs.map((hit) => `${hit.file} «${hit.value}
     rmSync(tmp, { recursive: true, force: true });
   }
 }
+{
+  const tmp = mkdtempSync(join(tmpdir(), "verify-root-xml-"));
+  try {
+    writeFileSync(join(tmp, "feed.xml"), "<rss><item><link>/weekly/2026-10-18/</link></item></rss>");
+    assert.throws(() => assertNoRootAbsoluteUrls(tmp, { prefix: "dist/" }), /\/weekly\/2026-10-18\//);
+    console.log("verify/scan-all-text negative: RSS <link> text exits non-zero");
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "verify-root-md-"));
+  try {
+    writeFileSync(join(tmp, "a.md"), "[x](/weekly/2026-10-18/)");
+    assert.throws(() => assertNoRootAbsoluteUrls(tmp, { prefix: "dist/" }), /\/weekly\/2026-10-18\//);
+    console.log("verify/scan-all-text negative: Markdown link exits non-zero");
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "verify-root-js-"));
+  try {
+    writeFileSync(join(tmp, "x.js"), 'const u = "/ai-frontier-trends/hot/";');
+    assert.throws(() => assertNoRootAbsoluteUrls(tmp, { prefix: "dist/" }), /\/ai-frontier-trends\/hot\//);
+    console.log("verify/scan-all-text negative: JS string literal exits non-zero");
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
 
 console.log(`verify/scan-all-text: B-4/R-5 ${files.length} text files, banned=0, root-absolute=0`);

@@ -21,6 +21,9 @@ export const PUBLIC_COPY_SKIP_DIRS = new Set(["node_modules", ".git", "LICENSES"
 const ROOT_ABS_ATTR = /\b(?:href|src|srcset|imagesrcset|action|poster|data-href|data-src)=["'](\/(?!\/)[^"']*)["']/gi;
 const ROOT_ABS_JSON = /"(?:path|url|href|src|link|canonical)":\s*"(\/(?!\/)[^"]*)"/g;
 const ROOT_ABS_CSS = /url\(\s*["']?(\/(?!\/)[^"')]+)/g;
+const ROOT_ABS_XML_TEXT = /<(?:link|atom:link|guid)\b[^>]*>\s*(\/(?!\/)[^<\s]+)/gi;
+const ROOT_ABS_MD = /\[[^\]]*\]\((\/(?!\/)[^)\s]+)\)/g;
+const ROOT_ABS_JS_STR = /(["'`])(\/(?!\/)[a-zA-Z][\w./-]*)\1/g;
 
 let cached = null;
 
@@ -234,6 +237,23 @@ export function collectRootAbsoluteUrlHits(rootDir, { extensions, prefix = "" } 
     }
     for (const match of text.matchAll(ROOT_ABS_CSS)) {
       hits.push({ file: rel, kind: "css", value: match[1] });
+    }
+    for (const match of text.matchAll(ROOT_ABS_XML_TEXT)) {
+      hits.push({ file: rel, kind: "xml-text", value: match[1] });
+    }
+    for (const match of text.matchAll(ROOT_ABS_MD)) {
+      hits.push({ file: rel, kind: "md", value: match[1] });
+    }
+    if (/\.(js|mjs|cjs|map)$/i.test(full)) {
+      for (const match of text.matchAll(ROOT_ABS_JS_STR)) {
+        hits.push({ file: rel, kind: "js-string", value: match[2] });
+      }
+    } else {
+      for (const script of text.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi)) {
+        for (const match of script[1].matchAll(ROOT_ABS_JS_STR)) {
+          hits.push({ file: rel, kind: "js-string", value: match[2] });
+        }
+      }
     }
   }
   return hits;

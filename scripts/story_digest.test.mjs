@@ -213,5 +213,44 @@ assert.ok([".html", ".json", ".xml", ".md", ".svg", ".js", ".map"].every((ext) =
     rmSync(tmp, { recursive: true, force: true });
   }
 }
+{
+  const tmp = mkdtempSync(join(tmpdir(), "digest-root-xml-"));
+  try {
+    writeFileSync(join(tmp, "weekly.xml"), "<rss><channel><item><link>/weekly/2026-10-18/</link></item></channel></rss>");
+    assert.throws(
+      () => assertNoRootAbsoluteUrls(tmp, { prefix: "dist/" }),
+      /weekly\.xml[\s\S]*\/weekly\/2026-10-18\//,
+      "negative: RSS <link> text root-absolute fails",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "digest-root-md-"));
+  try {
+    writeFileSync(join(tmp, "note.md"), "[x](/weekly/2026-10-18/)");
+    assert.throws(
+      () => assertNoRootAbsoluteUrls(tmp, { prefix: "dist/" }),
+      /note\.md[\s\S]*\/weekly\/2026-10-18\//,
+      "negative: Markdown link root-absolute fails",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "digest-root-js-"));
+  try {
+    writeFileSync(join(tmp, "app.js"), 'fetch("/data/meta.json")');
+    assert.throws(
+      () => assertNoRootAbsoluteUrls(tmp, { prefix: "dist/" }),
+      /app\.js[\s\S]*\/data\/meta\.json/,
+      "negative: JS string root-absolute fails",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
 
 console.log("story_digest tests passed");
