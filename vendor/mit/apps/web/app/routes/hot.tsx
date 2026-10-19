@@ -10,6 +10,7 @@ import { Faces } from "../features/hot/Faces";
 import { Delta } from "../features/hot/Delta";
 import { PhoneBar } from "../components/shell/PhoneBar";
 import { scrollBehavior } from "../lib/motion";
+import { SPARK_HOURS } from "@l2/constants";
 
 const BADGES: Record<HotEntryView["badges"][number], { label: string; tone: "hot" | "accent" | "amber"; hint: string }> = {
   surge: { label: "爆", tone: "hot", hint: "讨论快速增加" },
@@ -67,7 +68,7 @@ function HeatPanel({ e }: { e: HotEntryView }) {
   return (
     <div className="order-first flex aspect-[2/1] flex-col rounded-panel bg-accent-softer p-4 ring-1 ring-inset ring-line-soft xl:order-none xl:aspect-[16/10] dark:bg-accent-soft">
       <div className="flex items-baseline justify-between text-[11.5px] text-ink-4">
-        <span className="font-semibold text-ink-3">24 小时热度</span>
+        <span className="font-semibold text-ink-3">{SPARK_HOURS} 小时热度</span>
         <span>
           峰值 <span className="mono text-ink-2">{Math.round(peak)}</span>
           {peakAt >= 0 && <span> · {peakAt === e.spark.length - 1 ? "当前" : `${e.spark.length - 1 - peakAt} 小时前`}</span>}
@@ -75,7 +76,7 @@ function HeatPanel({ e }: { e: HotEntryView }) {
       </div>
       <Sparkline values={e.spark} className="mt-3 min-h-0 w-full flex-1" />
       <div className="mt-2 flex justify-between text-[11px] text-ink-4">
-        <span>24 小时前</span>
+        <span>{SPARK_HOURS} 小时前</span>
         <span>现在</span>
       </div>
     </div>
@@ -281,7 +282,7 @@ export default function HotPage({ hot }: { hot: HotResponse }) {
                 <h2 className="text-[15px] font-semibold text-ink">
                   继续看 <span className="num font-normal text-ink-4">No.{pad(others[0]!.rank)}–{pad(others[others.length - 1]!.rank)}</span>
                 </h2>
-                <span className="hidden text-[12px] text-ink-4 lg:block">参与者 · 24 小时走势 · 热度指数</span>
+                <span className="hidden text-[12px] text-ink-4 lg:block">参与者 · {SPARK_HOURS} 小时走势 · 热度指数</span>
               </div>
               <ol className="card divide-y divide-line-soft overflow-hidden">
                 {others.map((e) => (

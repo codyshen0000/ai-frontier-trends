@@ -10,7 +10,7 @@ import HotPage from "../../../vendor/mit/apps/web/app/routes/hot";
 import { ReportLayout } from "../../../vendor/mit/apps/web/app/features/report/ReportLayout";
 import { ReportPaper, reportOutline } from "../../../vendor/mit/apps/web/app/features/report/ReportPaper";
 import { StaticLocation } from "./react-router";
-import { daily, dailyIndex, hot, timeline, today } from "./fixture";
+import { daily, dailyIndex, dailySource, hot, hotSource, timeline, today } from "./fixture";
 
 function Shell({ pathname, children }: { pathname: string; children: ReactNode }) {
   return (
@@ -53,19 +53,20 @@ export function HomeScreen() {
   );
 }
 
-export function HotScreen() {
+export function HotScreen({ variant = "ours" }: { variant?: "ours" | "source" }) {
   return (
     <Shell pathname="/hot">
-      <HotPage hot={hot} />
+      <HotPage hot={variant === "source" ? hotSource : hot} />
     </Shell>
   );
 }
 
-export function DailyScreen() {
+export function DailyScreen({ variant = "ours" }: { variant?: "ours" | "source" }) {
+  const report = variant === "source" ? dailySource : daily;
   return (
     <Shell pathname="/daily">
-      <ReportLayout kind="daily" index={dailyIndex} current={daily.key} today={today} outline={reportOutline(daily)}>
-        <ReportPaper report={daily} index={dailyIndex} />
+      <ReportLayout kind="daily" index={dailyIndex} current={report.key} today={today} outline={reportOutline(report)}>
+        <ReportPaper report={report} index={dailyIndex} />
       </ReportLayout>
     </Shell>
   );

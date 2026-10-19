@@ -1,0 +1,1070 @@
+{
+  "hot": [
+    {
+      "id": "flux-3-image-klein",
+      "representativeItemId": "flux-3-image-klein::0::bfl.ai",
+      "publications": [
+        {
+          "articleId": "flux-3-image-klein::0::bfl.ai",
+          "url": "https://bfl.ai/blog/flux-3-image-klein",
+          "sourceName": "BFL",
+          "firstParty": true,
+          "selected": true,
+          "score": 0,
+          "listed": true,
+          "bodyMode": "full",
+          "via": "readability",
+          "media": [
+            {
+              "kind": "image",
+              "url": "https://cdn.sanity.io/images/2gpum2i6/production/eada5ee663c5523ab6d43c858baaf037867d324e-2000x1344.webp",
+              "width": 2000,
+              "height": 1344
+            },
+            {
+              "kind": "image",
+              "url": "https://cdn.sanity.io/images/2gpum2i6/production/1cc58ca0649334f7f1557c983b3b219f2bef9379-1888x788.png",
+              "width": 1888,
+              "height": 788
+            },
+            {
+              "kind": "image",
+              "url": "https://cdn.sanity.io/images/2gpum2i6/production/b43aa0509192765a51274c30875ddcbefb963859-1568x974.png",
+              "width": 1568,
+              "height": 974
+            },
+            {
+              "kind": "image",
+              "url": "https://cdn.sanity.io/images/2gpum2i6/production/1c8179858d888670db2c1486f61024e6710509ff-1568x974.png",
+              "width": 1568,
+              "height": 974
+            },
+            {
+              "kind": "image",
+              "url": "https://cdn.sanity.io/images/2gpum2i6/production/a1e83f645466d8d5ea8fb6bfa3a6e6e2489b3af2-1888x788.png",
+              "width": 1888,
+              "height": 788
+            }
+          ]
+        },
+        {
+          "articleId": "flux-3-image-klein::1::huggingface.co",
+          "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
+          "sourceName": "Hugging Face",
+          "firstParty": false,
+          "selected": false,
+          "score": 0,
+          "listed": true,
+          "bodyMode": "full",
+          "via": "readability",
+          "media": [
+            {
+              "kind": "image",
+              "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein/media/main/launch-gallery.jpg",
+              "width": null,
+              "height": null
+            },
+            {
+              "kind": "image",
+              "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein/media/main/teaser.jpg",
+              "width": null,
+              "height": null
+            }
+          ]
+        },
+        {
+          "articleId": "flux-3-image-klein::2::x.com",
+          "url": "https://x.com/bfl_ai/status/2110751201105256925",
+          "sourceName": "X",
+          "firstParty": false,
+          "selected": false,
+          "score": 0,
+          "listed": true,
+          "bodyMode": "full",
+          "via": "fxtwitter",
+          "media": []
+        }
+      ],
+      "picked": {
+        "cover": {
+          "url": "https://cdn.sanity.io/images/2gpum2i6/production/eada5ee663c5523ab6d43c858baaf037867d324e-2000x1344.webp",
+          "width": 2000,
+          "height": 1344
+        },
+        "reason": "ok",
+        "articleId": "flux-3-image-klein::0::bfl.ai",
+        "log": [
+          {
+            "articleId": "flux-3-image-klein::0::bfl.ai",
+            "url": "https://bfl.ai/blog/flux-3-image-klein",
+            "bodyMode": "full",
+            "listed": true,
+            "firstParty": true,
+            "selected": true,
+            "score": 0,
+            "representative": true,
+            "isLead": false,
+            "reason": "ok",
+            "image": {
+              "url": "https://cdn.sanity.io/images/2gpum2i6/production/eada5ee663c5523ab6d43c858baaf037867d324e-2000x1344.webp",
+              "width": 2000,
+              "height": 1344
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "openui-1.0",
+      "representativeItemId": "openui-1.0::0::github.com",
+      "publications": [
+        {
+          "articleId": "openui-1.0::0::github.com",
+          "url": "https://github.com/thesysdev/openui",
+          "sourceName": "GitHub",
+          "firstParty": false,
+          "selected": false,
+          "score": 0,
+          "listed": true,
+          "bodyMode": "full",
+          "via": "readability",
+          "media": [
+            {
+              "kind": "image",
+              "url": "https://github.com/thesysdev/openui/raw/main/assets/banner.png",
+              "width": null,
+              "height": null
+            },
+            {
+              "kind": "image",
+              "url": "https://github.com/thesysdev/openui/actions/workflows/build-js.yml/badge.svg",
+              "width": null,
+              "height": null
+            },
+            {
+              "kind": "image",
+              "url": "https://camo.githubusercontent.com/08cef40a9105b6526ca22088bc514fbfdbc9aac1ddbf8d4e6c750e3a88a44dca/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6963656e73652d4d49542d626c75652e737667",
+              "width": null,
+              "height": null
+            },
+            {
+              "kind": "image",
+              "url": "https://camo.githubusercontent.com/182a55ce84771c5bf5b3e1be21eaeb119df1c74685fb513321c1ca32cfe76d56/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f64796e616d69632f6a736f6e3f75726c3d6874747073253341253246253246646973636f72642e636f6d253246617069253246763130253246696e766974657325324650627635507371555376253346776974685f636f756e7473253344747275652671756572793d2532342e617070726f78696d6174655f70726573656e63655f636f756e74266c6162656c3d446973636f7264267375666669783d2532306f6e6c696e65266c6f676f3d646973636f7264266c6f676f436f6c6f723d776869746526636f6c6f723d353836354632",
+              "width": null,
+              "height": null
+            },
+            {
+              "kind": "image",
+              "url": "https://camo.githubusercontent.com/5b2e958bf0485798995448d5ac534cc3d59c1a5dd44c75db4f5bb9616ab1be1a/68747470733a2f2f7472656e6473686966742e696f2f6170692f62616467652f7265706f7369746f726965732f3232333537",
+              "width": 250,
+              "height": 55
+            },
+            {
+              "kind": "image",
+              "url": "https://github.com/thesysdev/openui/raw/main/assets/demo.gif",
+              "width": null,
+              "height": null
+            }
+          ]
+        },
+        {
+          "articleId": "openui-1.0::1::openui.com",
+          "url": "https://www.openui.com/",
+          "sourceName": "openui",
+          "firstParty": false,
+          "selected": false,
+          "score": 0,
+          "listed": true,
+          "bodyMode": "full",
+          "via": "readability",
+          "media": [
+            {
+              "kind": "image",
+              "url": "https://www.openui.com/shaders/faded-dither-light-wide.webp",
+              "width": null,
+              "height": null
+            },
+            {
+              "kind": "image",
+              "url": "https://www.openui.com/shaders/faded-dither-light-wide.webp",
+              "width": null,
+              "height": null
+            },
+            {
+              "kind": "image",
+              "url": "https://www.openui.com/shaders/faded-dither-light-wide.webp",
+              "width": null,
+              "height": null
+            },
+            {
+              "kind": "image",
+              "url": "https://www.openui.com/shaders/faded-dither-dark-wide.webp",
+              "width": null,
+              "height": null
+            }
+          ]
+        },
+        {
+          "articleId": "openui-1.0::2::x.com",
+          "url": "https://x.com/i/trending/2110753248026284494",
+          "sourceName": "X",
+          "firstParty": false,
+          "selected": false,
+          "score": 0,
+          "listed": true,
+          "bodyMode": "full",
+          "via": "readability",
+          "media": []
+        }
+      ],
+      "picked": {
+        "cover": {
+          "url": "https://github.com/thesysdev/openui/raw/main/assets/banner.png",
+          "width": null,
+          "height": null
+        },
+        "reason": "ok_unknown_width_as_800",
+        "articleId": "openui-1.0::0::github.com",
+        "log": [
+          {
+            "articleId": "openui-1.0::0::github.com",
+            "url": "https://github.com/thesysdev/openui",
+            "bodyMode": "full",
+            "listed": true,
+            "firstParty": false,
+            "selected": false,
+            "score": 0,
+            "representative": true,
+            "isLead": false,
+            "reason": "ok_unknown_width_as_800",
+            "image": {
+              "url": "https://github.com/thesysdev/openui/raw/main/assets/banner.png",
+              "width": null,
+              "height": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "jev-1-14-preview",
+      "representativeItemId": "jev-1-14-preview::0::typesafe.ai",
+      "publications": [
+        {
+          "articleId": "jev-1-14-preview::0::typesafe.ai",
+          "url": "https://typesafe.ai/blog/jev-1-14",
+          "sourceName": "typesafe",
+          "firstParty": true,
+          "selected": false,
+          "score": 0,
+          "listed": true,
+          "bodyMode": "full",
+          "via": "readability",
+          "media": [
+            {
+              "kind": "image",
+              "url": "https://framerusercontent.com/images/9xWPxly4HZ7S43IpAEGS2VOFM.png?width=1528&height=1078",
+              "width": 764,
+              "height": 539
+            },
+            {
+              "kind": "image",
+              "url": "https://framerusercontent.com/images/IMAdGJMIKQYl8JkqnebGaIB3g.png?width=2136&height=1372",
+              "width": 1068,
+              "height": 686
+            },
+            {
+              "kind": "image",
+              "url": "https://framerusercontent.com/images/TmIsBzc45HeG5x98MZM5oHM.png?width=2136&height=1372",
+              "width": 1068,
+              "height": 686
+            },
+            {
+              "kind": "image",
+              "url": "https://framerusercontent.com/images/UHjjLTnHvk90WzLkGbrDdbSHkM.png?width=2136&height=1372",
+              "width": 1068,
+              "height": 686
+            }
+          ]
+        },
+        {
+          "articleId": "jev-1-14-preview::1::x.com",
+          "url": "https://x.com/typesafeai/status/2110536685805355064",
+          "sourceName": "X",
+          "firstParty": false,
+          "selected": false,
+          "score": 0,
+          "listed": true,
+          "bodyMode": "full",
+          "via": "fxtwitter",
+          "media": [
+            {
+              "kind": "image",
+              "url": "https://pbs.twimg.com/media/HUocW4abQAAsHO4.jpg?name=orig",
+              "width": 1574,
+              "height": 996
+            }
+          ]
+        },
+        {
+          "articleId": "jev-1-14-preview::2::arxiv.org",
+          "url": "https://arxiv.org/abs/2610.11978",
+          "sourceName": "arXiv",
+          "firstParty": false,
+          "selected": false,
+          "score": 0,
+          "listed": true,
+          "bodyMode": "full",
+          "via": "readability",
+          "media": []
+        }
+      ],
+      "picked": {
+        "cover": {
+          "url": "https://framerusercontent.com/images/9xWPxly4HZ7S43IpAEGS2VOFM.png?width=1528&height=1078",
+          "width": 764,
+          "height": 539
+        },
+        "reason": "ok",
+        "articleId": "jev-1-14-preview::0::typesafe.ai",
+        "log": [
+          {
+            "articleId": "jev-1-14-preview::0::typesafe.ai",
+            "url": "https://typesafe.ai/blog/jev-1-14",
+            "bodyMode": "full",
+            "listed": true,
+            "firstParty": true,
+            "selected": false,
+            "score": 0,
+            "representative": true,
+            "isLead": false,
+            "reason": "ok",
+            "image": {
+              "url": "https://framerusercontent.com/images/9xWPxly4HZ7S43IpAEGS2VOFM.png?width=1528&height=1078",
+              "width": 764,
+              "height": 539
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "jev-35b",
+      "representativeItemId": "jev-35b::0::huggingface.co",
+      "publications": [
+        {
+          "articleId": "jev-35b::0::huggingface.co",
+          "url": "https://huggingface.co/autotrust/JEV-35B",
+          "sourceName": "Hugging Face",
+          "firstParty": false,
+          "selected": false,
+          "score": 0,
+          "listed": true,
+          "bodyMode": "full",
+          "via": "readability",
+          "media": [
+            {
+              "kind": "image",
+              "url": "https://huggingface.co/autotrust/JEV-27B/resolve/main/assets/autotrust_gurusearch_demo.png",
+              "width": null,
+              "height": null
+            }
+          ]
+        },
+        {
+          "articleId": "jev-35b::1::modelscope.cn",
+          "url": "https://modelscope.cn/models/autotrust/JEV-35B",
+          "sourceName": "ModelScope",
+          "firstParty": false,
+          "selected": false,
+          "score": 0,
+          "listed": true,
+          "bodyMode": "summary",
+          "via": "html-fallback",
+          "media": []
+        },
+        {
+          "articleId": "jev-35b::2::xiaohongshu.com",
+          "url": "https://www.xiaohongshu.com/explore/6acf3113000000001c02d62d",
+          "sourceName": "小红书",
+          "firstParty": false,
+          "selected": false,
+          "score": 0,
+          "listed": true,
+          "bodyMode": "full",
+          "via": "readability",
+          "media": [
+            {
+              "kind": "image",
+              "url": "https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/svg/standardSearchIcon.8bb9dd9c.svg",
+              "width": null,
+              "height": null
+            }
+          ]
+        }
+      ],
+      "picked": {
+        "cover": {
+          "url": "https://huggingface.co/autotrust/JEV-27B/resolve/main/assets/autotrust_gurusearch_demo.png",
+          "width": null,
+          "height": null
+        },
+        "reason": "ok_unknown_width_as_800",
+        "articleId": "jev-35b::0::huggingface.co",
+        "log": [
+          {
+            "articleId": "jev-35b::0::huggingface.co",
+            "url": "https://huggingface.co/autotrust/JEV-35B",
+            "bodyMode": "full",
+            "listed": true,
+            "firstParty": false,
+            "selected": false,
+            "score": 0,
+            "representative": true,
+            "isLead": false,
+            "reason": "ok_unknown_width_as_800",
+            "image": {
+              "url": "https://huggingface.co/autotrust/JEV-27B/resolve/main/assets/autotrust_gurusearch_demo.png",
+              "width": null,
+              "height": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "llamafactory-rsi",
+      "representativeItemId": "llamafactory-rsi::0::github.com",
+      "publications": [
+        {
+          "articleId": "llamafactory-rsi::0::github.com",
+          "url": "https://github.com/Prism-Shadow/penguin-harness",
+          "sourceName": "GitHub",
+          "firstParty": false,
+          "selected": true,
+          "score": 0,
+          "listed": true,
+          "bodyMode": "full",
+          "via": "readability",
+          "media": [
+            {
+              "kind": "image",
+              "url": "https://github.com/Prism-Shadow/penguin-harness/raw/main/packages/landing/public/penguin-logo.svg",
+              "width": 88,
+              "height": null
+            },
+            {
+              "kind": "image",
+              "url": "https://github.com/Prism-Shadow/penguin-harness/raw/main/assets/readme/download-en-light.svg",
+              "width": null,
+              "height": 44
+            },
+            {
+              "kind": "image",
+              "url": "https://camo.githubusercontent.com/6d3dccb6eb734f8d94b7b90f3cc427ec926395162802eed440bc5727d3068895/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f762f40707269736d736861646f772f70656e6775696e2d636f7265",
+              "width": null,
+              "height": null
+            },
+            {
+              "kind": "image",
+              "url": "https://github.com/Prism-Shadow/penguin-harness/actions/workflows/ci.yml/badge.svg",
+              "width": null,
+              "height": null
+            },
+            {
+              "kind": "image",
+              "url": "https://github.com/Prism-Shadow/penguin-harness/actions/workflows/pages.yml/badge.svg",
+              "width": null,
+              "height": null
+            },
+            {
+              "kind": "image",
+              "url": "https://camo.githubusercontent.com/35b94db23d3ed026343335f74d52ce31e74b77ad7dab4e4b89f49f2026e0937f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4170616368652d2d322e302d626c7565",
+              "width": null,
+              "height": null
+            },
+            {
+              "kind": "image",
+              "url": "https://camo.githubusercontent.com/5a0481779ffc2758b2368e4170b8158d293fcdfa5ccc22d1db1b745fd910b709/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6e6f64652d25453225383925413525323032342d627269676874677265656e",
+              "width": null,
+              "height": null
+            },
+            {
+              "kind": "image",
+              "url": "https://camo.githubusercontent.com/a812af7b7e4b4a9bcafee0f0d07aa6d84db3d9cc4620599b09134bbb0b331ed7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f576562736974652d70656e6775696e2e6f6f6f2d3166366665623f6c6f676f3d676f6f676c656368726f6d65266c6f676f436f6c6f723d7768697465",
+              "width": null,
+              "height": null
+            },
+            {
+              "kind": "image",
+              "url": "https://camo.githubusercontent.com/d00d51ef6e3b126021b7bfaa4e380e4e1db498e4222c6363d43fe974cda7cd59/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446f63732d70656e6775696e2e6f6f6f253246646f63732d3166366665623f6c6f676f3d72656164746865646f6373266c6f676f436f6c6f723d7768697465",
+              "width": null,
+              "height": null
+            },
+            {
+              "kind": "image",
+              "url": "https://camo.githubusercontent.com/7bf5aee7ac899bdabd0c890e745a899ffd8b0ec9c8407a2d301980a1a597d94d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f426c6f672d70656e6775696e2e6f6f6f253246626c6f672d3166366665623f6c6f676f3d727373266c6f676f436f6c6f723d7768697465",
+              "width": null,
+              "height": null
+            },
+            {
+              "kind": "image",
+              "url": "https://camo.githubusercontent.com/71b2e994c8d1233a620b53049a877bd3a27778622d49352a74c732d510a3404c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446973636f72642d6a6f696e253230636861742d3538363546323f6c6f676f3d646973636f7264266c6f676f436f6c6f723d7768697465",
+              "width": null,
+              "height": null
+            },
+            {
+              "kind": "image",
+              "url": "https://camo.githubusercontent.com/867182691afd855634ce97dcfa3e185d401265d38c4c8ca6569af4529088f6ec/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f582d636f64652535466869796f7567612d3030303030303f6c6f676f3d78266c6f676f436f6c6f723d7768697465",
+              "width": null,
+              "height": null
+            }
+          ]
+        },
+        {
+          "articleId": "llamafactory-rsi::1::x.com",
+          "url": "https://x.com/code_hiyouga/status/2111016204785922481",
+          "sourceName": "X",
+          "firstParty": false,
+          "selected": false,
+          "score": 0,
+          "listed": true,
+          "bodyMode": "full",
+          "via": "fxtwitter",
+          "media": [
+            {
+              "kind": "image",
+              "url": "https://pbs.twimg.com/media/HUvWAY_bEAAiOQj.jpg?name=orig",
+              "width": 2934,
+              "height": 1966
+            },
+            {
+              "kind": "image",
+              "url": "https://pbs.twimg.com/media/HUvWBysbkAAeRpD.jpg?name=orig",
+              "width": 1452,
+              "height": 1826
+            },
+            {
+              "kind": "image",
+              "url": "https://pbs.twimg.com/media/HUvWCfxbAAA_SF5.jpg?name=orig",
+              "width": 1562,
+              "height": 1838
+            }
+          ]
+        }
+      ],
+      "picked": {
+        "cover": {
+          "url": "https://github.com/Prism-Shadow/penguin-harness/raw/main/assets/readme/download-en-light.svg",
+          "width": null,
+          "height": 44
+        },
+        "reason": "ok_unknown_width_as_800",
+        "articleId": "llamafactory-rsi::0::github.com",
+        "log": [
+          {
+            "articleId": "llamafactory-rsi::0::github.com",
+            "url": "https://github.com/Prism-Shadow/penguin-harness",
+            "bodyMode": "full",
+            "listed": true,
+            "firstParty": false,
+            "selected": true,
+            "score": 0,
+            "representative": true,
+            "isLead": false,
+            "reason": "ok_unknown_width_as_800",
+            "image": {
+              "url": "https://github.com/Prism-Shadow/penguin-harness/raw/main/assets/readme/download-en-light.svg",
+              "width": null,
+              "height": 44
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pr-opd",
+      "representativeItemId": "pr-opd::0::arxiv.org",
+      "publications": [
+        {
+          "articleId": "pr-opd::0::arxiv.org",
+          "url": "https://arxiv.org/abs/2609.36642",
+          "sourceName": "arXiv",
+          "firstParty": false,
+          "selected": true,
+          "score": 0,
+          "listed": true,
+          "bodyMode": "full",
+          "via": "readability",
+          "media": [
+            {
+              "kind": "image",
+              "url": "https://arxiv.org/html/2609.36642v1/motivation_channels_warmstart_abc_grouped_palette_v26.png",
+              "width": 548,
+              "height": 202
+            },
+            {
+              "kind": "image",
+              "url": "https://arxiv.org/html/2609.36642v1/PROPD_final.png",
+              "width": 543,
+              "height": 269
+            },
+            {
+              "kind": "image",
+              "url": "https://arxiv.org/html/2609.36642v1/cka_layerwise_maps_v3.png",
+              "width": 548,
+              "height": 177
+            }
+          ]
+        },
+        {
+          "articleId": "pr-opd::1::xiaohongshu.com",
+          "url": "https://www.xiaohongshu.com/explore/6ad132870000000018007ca1",
+          "sourceName": "小红书",
+          "firstParty": false,
+          "selected": false,
+          "score": 0,
+          "listed": true,
+          "bodyMode": "full",
+          "via": "readability",
+          "media": [
+            {
+              "kind": "image",
+              "url": "https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/svg/standardSearchIcon.8bb9dd9c.svg",
+              "width": null,
+              "height": null
+            }
+          ]
+        }
+      ],
+      "picked": {
+        "cover": {
+          "url": "https://arxiv.org/html/2609.36642v1/motivation_channels_warmstart_abc_grouped_palette_v26.png",
+          "width": 548,
+          "height": 202
+        },
+        "reason": "ok",
+        "articleId": "pr-opd::0::arxiv.org",
+        "log": [
+          {
+            "articleId": "pr-opd::0::arxiv.org",
+            "url": "https://arxiv.org/abs/2609.36642",
+            "bodyMode": "full",
+            "listed": true,
+            "firstParty": false,
+            "selected": true,
+            "score": 0,
+            "representative": true,
+            "isLead": false,
+            "reason": "ok",
+            "image": {
+              "url": "https://arxiv.org/html/2609.36642v1/motivation_channels_warmstart_abc_grouped_palette_v26.png",
+              "width": 548,
+              "height": 202
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "terminal-rsi",
+      "representativeItemId": "terminal-rsi::0::arxiv.org",
+      "publications": [
+        {
+          "articleId": "terminal-rsi::0::arxiv.org",
+          "url": "https://arxiv.org/abs/2610.22192",
+          "sourceName": "arXiv",
+          "firstParty": false,
+          "selected": true,
+          "score": 0,
+          "listed": true,
+          "bodyMode": "full",
+          "via": "readability",
+          "media": [
+            {
+              "kind": "image",
+              "url": "https://arxiv.org/html/2610.22192v1/assets/github-logo.png",
+              "width": 17,
+              "height": 17
+            },
+            {
+              "kind": "image",
+              "url": "https://arxiv.org/html/2610.22192v1/assets/hf-logo.png",
+              "width": 17,
+              "height": 17
+            },
+            {
+              "kind": "image",
+              "url": "https://arxiv.org/html/2610.22192v1/terminal_rsi_overall_from_ppt.png",
+              "width": 476,
+              "height": 175
+            },
+            {
+              "kind": "image",
+              "url": "https://arxiv.org/html/2610.22192v1/terminal_rsi_single_step_from_ppt.png",
+              "width": 476,
+              "height": 207
+            }
+          ]
+        },
+        {
+          "articleId": "terminal-rsi::1::x.com",
+          "url": "https://x.com/Yucheng__Shi/status/2110926888319517119",
+          "sourceName": "X",
+          "firstParty": false,
+          "selected": false,
+          "score": 0,
+          "listed": true,
+          "bodyMode": "full",
+          "via": "fxtwitter",
+          "media": [
+            {
+              "kind": "image",
+              "url": "https://pbs.twimg.com/media/HUuEgnGaIAApXW-.jpg?name=orig",
+              "width": 1428,
+              "height": 1973
+            }
+          ]
+        }
+      ],
+      "picked": {
+        "cover": {
+          "url": "https://pbs.twimg.com/media/HUuEgnGaIAApXW-.jpg?name=orig",
+          "width": 1428,
+          "height": 1973
+        },
+        "reason": "ok",
+        "articleId": "terminal-rsi::1::x.com",
+        "log": [
+          {
+            "articleId": "terminal-rsi::0::arxiv.org",
+            "url": "https://arxiv.org/abs/2610.22192",
+            "bodyMode": "full",
+            "listed": true,
+            "firstParty": false,
+            "selected": true,
+            "score": 0,
+            "representative": true,
+            "isLead": false,
+            "reason": "below_480",
+            "image": null
+          },
+          {
+            "articleId": "terminal-rsi::1::x.com",
+            "url": "https://x.com/Yucheng__Shi/status/2110926888319517119",
+            "bodyMode": "full",
+            "listed": true,
+            "firstParty": false,
+            "selected": false,
+            "score": 0,
+            "representative": false,
+            "isLead": false,
+            "reason": "ok",
+            "image": {
+              "url": "https://pbs.twimg.com/media/HUuEgnGaIAApXW-.jpg?name=orig",
+              "width": 1428,
+              "height": 1973
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "jevany",
+      "representativeItemId": "jevany::0::jevland.mnimiy.com",
+      "publications": [
+        {
+          "articleId": "jevany::0::jevland.mnimiy.com",
+          "url": "https://jevland.mnimiy.com/projects/jevany/",
+          "sourceName": "jevland.mnimiy",
+          "firstParty": false,
+          "selected": false,
+          "score": 0,
+          "listed": true,
+          "bodyMode": "full",
+          "via": "readability",
+          "media": []
+        },
+        {
+          "articleId": "jevany::1::xiaohongshu.com",
+          "url": "https://www.xiaohongshu.com/explore/6ac0bb1c000000001901f5be",
+          "sourceName": "小红书",
+          "firstParty": false,
+          "selected": false,
+          "score": 0,
+          "listed": true,
+          "bodyMode": "full",
+          "via": "readability",
+          "media": [
+            {
+              "kind": "image",
+              "url": "https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/svg/standardSearchIcon.8bb9dd9c.svg",
+              "width": null,
+              "height": null
+            }
+          ]
+        }
+      ],
+      "picked": {
+        "cover": {
+          "url": "https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/svg/standardSearchIcon.8bb9dd9c.svg",
+          "width": null,
+          "height": null
+        },
+        "reason": "ok_unknown_width_as_800",
+        "articleId": "jevany::1::xiaohongshu.com",
+        "log": [
+          {
+            "articleId": "jevany::0::jevland.mnimiy.com",
+            "url": "https://jevland.mnimiy.com/projects/jevany/",
+            "bodyMode": "full",
+            "listed": true,
+            "firstParty": false,
+            "selected": false,
+            "score": 0,
+            "representative": true,
+            "isLead": false,
+            "reason": "no_image",
+            "image": null
+          },
+          {
+            "articleId": "jevany::1::xiaohongshu.com",
+            "url": "https://www.xiaohongshu.com/explore/6ac0bb1c000000001901f5be",
+            "bodyMode": "full",
+            "listed": true,
+            "firstParty": false,
+            "selected": false,
+            "score": 0,
+            "representative": false,
+            "isLead": false,
+            "reason": "ok_unknown_width_as_800",
+            "image": {
+              "url": "https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/svg/standardSearchIcon.8bb9dd9c.svg",
+              "width": null,
+              "height": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "agent-reflex",
+      "representativeItemId": "agent-reflex::0::xiaohongshu.com",
+      "publications": [
+        {
+          "articleId": "agent-reflex::0::xiaohongshu.com",
+          "url": "https://www.xiaohongshu.com/explore/6ad176eb000000000a023985",
+          "sourceName": "小红书",
+          "firstParty": false,
+          "selected": true,
+          "score": 0,
+          "listed": true,
+          "bodyMode": "full",
+          "via": "readability",
+          "media": [
+            {
+              "kind": "image",
+              "url": "https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/svg/standardSearchIcon.8bb9dd9c.svg",
+              "width": null,
+              "height": null
+            }
+          ]
+        }
+      ],
+      "picked": {
+        "cover": {
+          "url": "https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/svg/standardSearchIcon.8bb9dd9c.svg",
+          "width": null,
+          "height": null
+        },
+        "reason": "ok_unknown_width_as_800",
+        "articleId": "agent-reflex::0::xiaohongshu.com",
+        "log": [
+          {
+            "articleId": "agent-reflex::0::xiaohongshu.com",
+            "url": "https://www.xiaohongshu.com/explore/6ad176eb000000000a023985",
+            "bodyMode": "full",
+            "listed": true,
+            "firstParty": false,
+            "selected": true,
+            "score": 0,
+            "representative": true,
+            "isLead": false,
+            "reason": "ok_unknown_width_as_800",
+            "image": {
+              "url": "https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/svg/standardSearchIcon.8bb9dd9c.svg",
+              "width": null,
+              "height": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kling-4-0-ga",
+      "representativeItemId": "kling-4-0-ga::0::x.com",
+      "publications": [
+        {
+          "articleId": "kling-4-0-ga::0::x.com",
+          "url": "https://x.com/Kling_ai/status/2110747537187709424",
+          "sourceName": "X",
+          "firstParty": true,
+          "selected": true,
+          "score": 0,
+          "listed": true,
+          "bodyMode": "full",
+          "via": "fxtwitter",
+          "media": [
+            {
+              "kind": "image",
+              "url": "https://pbs.twimg.com/media/HUrcseNbQAAYZiF.jpg?name=orig",
+              "width": 1600,
+              "height": 2000
+            }
+          ]
+        }
+      ],
+      "picked": {
+        "cover": {
+          "url": "https://pbs.twimg.com/media/HUrcseNbQAAYZiF.jpg?name=orig",
+          "width": 1600,
+          "height": 2000
+        },
+        "reason": "ok",
+        "articleId": "kling-4-0-ga::0::x.com",
+        "log": [
+          {
+            "articleId": "kling-4-0-ga::0::x.com",
+            "url": "https://x.com/Kling_ai/status/2110747537187709424",
+            "bodyMode": "full",
+            "listed": true,
+            "firstParty": true,
+            "selected": true,
+            "score": 0,
+            "representative": true,
+            "isLead": false,
+            "reason": "ok",
+            "image": {
+              "url": "https://pbs.twimg.com/media/HUrcseNbQAAYZiF.jpg?name=orig",
+              "width": 1600,
+              "height": 2000
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "daily": {
+    "id": "flux-3-image-klein",
+    "publications": [
+      {
+        "articleId": "flux-3-image-klein::0::bfl.ai",
+        "url": "https://bfl.ai/blog/flux-3-image-klein",
+        "sourceName": "BFL",
+        "firstParty": true,
+        "selected": true,
+        "score": 0,
+        "listed": true,
+        "bodyMode": "full",
+        "via": "readability",
+        "media": [
+          {
+            "kind": "image",
+            "url": "https://cdn.sanity.io/images/2gpum2i6/production/eada5ee663c5523ab6d43c858baaf037867d324e-2000x1344.webp",
+            "width": 2000,
+            "height": 1344
+          },
+          {
+            "kind": "image",
+            "url": "https://cdn.sanity.io/images/2gpum2i6/production/1cc58ca0649334f7f1557c983b3b219f2bef9379-1888x788.png",
+            "width": 1888,
+            "height": 788
+          },
+          {
+            "kind": "image",
+            "url": "https://cdn.sanity.io/images/2gpum2i6/production/b43aa0509192765a51274c30875ddcbefb963859-1568x974.png",
+            "width": 1568,
+            "height": 974
+          },
+          {
+            "kind": "image",
+            "url": "https://cdn.sanity.io/images/2gpum2i6/production/1c8179858d888670db2c1486f61024e6710509ff-1568x974.png",
+            "width": 1568,
+            "height": 974
+          },
+          {
+            "kind": "image",
+            "url": "https://cdn.sanity.io/images/2gpum2i6/production/a1e83f645466d8d5ea8fb6bfa3a6e6e2489b3af2-1888x788.png",
+            "width": 1888,
+            "height": 788
+          }
+        ]
+      },
+      {
+        "articleId": "flux-3-image-klein::1::huggingface.co",
+        "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
+        "sourceName": "Hugging Face",
+        "firstParty": false,
+        "selected": false,
+        "score": 0,
+        "listed": true,
+        "bodyMode": "full",
+        "via": "readability",
+        "media": [
+          {
+            "kind": "image",
+            "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein/media/main/launch-gallery.jpg",
+            "width": null,
+            "height": null
+          },
+          {
+            "kind": "image",
+            "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein/media/main/teaser.jpg",
+            "width": null,
+            "height": null
+          }
+        ]
+      },
+      {
+        "articleId": "flux-3-image-klein::2::x.com",
+        "url": "https://x.com/bfl_ai/status/2110751201105256925",
+        "sourceName": "X",
+        "firstParty": false,
+        "selected": false,
+        "score": 0,
+        "listed": true,
+        "bodyMode": "full",
+        "via": "fxtwitter",
+        "media": []
+      }
+    ],
+    "picked": {
+      "cover": {
+        "url": "https://cdn.sanity.io/images/2gpum2i6/production/eada5ee663c5523ab6d43c858baaf037867d324e-2000x1344.webp",
+        "width": 2000,
+        "height": 1344
+      },
+      "reason": "ok",
+      "articleId": "flux-3-image-klein::0::bfl.ai",
+      "log": [
+        {
+          "articleId": "flux-3-image-klein::0::bfl.ai",
+          "url": "https://bfl.ai/blog/flux-3-image-klein",
+          "bodyMode": "full",
+          "listed": true,
+          "firstParty": true,
+          "selected": true,
+          "score": 0,
+          "representative": false,
+          "isLead": true,
+          "reason": "ok",
+          "image": {
+            "url": "https://cdn.sanity.io/images/2gpum2i6/production/eada5ee663c5523ab6d43c858baaf037867d324e-2000x1344.webp",
+            "width": 2000,
+            "height": 1344
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "sparkHours": 24,
+  "rankWindowHours": 48,
+  "hot": {
+    "total": 10,
+    "withCover": 10,
+    "render": 1,
+    "renderNote": "MIT UI only paints the picture on NO.01; runners/rows keep sparkline only"
+  },
+  "daily": {
+    "headlineHasCover": true,
+    "renders": true,
+    "noSparklineWhenMissing": true
+  },
+  "missing": [],
+  "dailyMissingReason": null,
+  "samples": [
+    {
+      "id": "flux-3-image-klein",
+      "rank": 1,
+      "representative": "flux-3-image-klein::0::bfl.ai",
+      "winner": "flux-3-image-klein::0::bfl.ai",
+      "reason": "ok",
+      "image": "https://cdn.sanity.io/images/2gpum2i6/production/eada5ee663c5523ab6d43c858baaf037867d324e-2000x1344.webp",
+      "log": [
+        {
+          "articleId": "flux-3-image-klein::0::bfl.ai",
+          "url": "https://bfl.ai/blog/flux-3-image-klein",
+          "bodyMode": "full",
+          "listed": true,
+          "firstParty": true,
+          "selected": true,
+          "score": 0,
+          "representative": true,
+          "isLead": false,
+          "reason": "ok",
+          "image": {
+            "url": "https://cdn.sanity.io/images/2gpum2i6/production/eada5ee663c5523ab6d43c858baaf037867d324e-2000x1344.webp",
+            "width": 2000,
+            "height": 1344
+          }
+        }
+      ]
+    },
+    {
+      "id": "openui-1.0",
+      "rank": 2,
+      "representative": "openui-1.0::0::github.com",
+      "winner": "openui-1.0::0::github.com",
+      "reason": "ok_unknown_width_as_800",
+      "image": "https://github.com/thesysdev/openui/raw/main/assets/banner.png",
+      "log": [
+        {
+          "articleId": "openui-1.0::0::github.com",
+          "url": "https://github.com/thesysdev/openui",
+          "bodyMode": "full",
+          "listed": true,
+          "firstParty": false,
+          "selected": false,
+          "score": 0,
+          "representative": true,
+          "isLead": false,
+          "reason": "ok_unknown_width_as_800",
+          "image": {
+            "url": "https://github.com/thesysdev/openui/raw/main/assets/banner.png",
+            "width": null,
+            "height": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "jev-1-14-preview",
+      "rank": 3,
+      "representative": "jev-1-14-preview::0::typesafe.ai",
+      "winner": "jev-1-14-preview::0::typesafe.ai",
+      "reason": "ok",
+      "image": "https://framerusercontent.com/images/9xWPxly4HZ7S43IpAEGS2VOFM.png?width=1528&height=1078",
+      "log": [
+        {
+          "articleId": "jev-1-14-preview::0::typesafe.ai",
+          "url": "https://typesafe.ai/blog/jev-1-14",
+          "bodyMode": "full",
+          "listed": true,
+          "firstParty": true,
+          "selected": false,
+          "score": 0,
+          "representative": true,
+          "isLead": false,
+          "reason": "ok",
+          "image": {
+            "url": "https://framerusercontent.com/images/9xWPxly4HZ7S43IpAEGS2VOFM.png?width=1528&height=1078",
+            "width": 764,
+            "height": 539
+          }
+        }
+      ]
+    },
+    {
+      "id": "jev-35b",
+      "rank": 4,
+      "representative": "jev-35b::0::huggingface.co",
+      "winner": "jev-35b::0::huggingface.co",
+      "reason": "ok_unknown_width_as_800",
+      "image": "https://huggingface.co/autotrust/JEV-27B/resolve/main/assets/autotrust_gurusearch_demo.png",
+      "log": [
+        {
+          "articleId": "jev-35b::0::huggingface.co",
+          "url": "https://huggingface.co/autotrust/JEV-35B",
+          "bodyMode": "full",
+          "listed": true,
+          "firstParty": false,
+          "selected": false,
+          "score": 0,
+          "representative": true,
+          "isLead": false,
+          "reason": "ok_unknown_width_as_800",
+          "image": {
+            "url": "https://huggingface.co/autotrust/JEV-27B/resolve/main/assets/autotrust_gurusearch_demo.png",
+            "width": null,
+            "height": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "llamafactory-rsi",
+      "rank": 5,
+      "representative": "llamafactory-rsi::0::github.com",
+      "winner": "llamafactory-rsi::0::github.com",
+      "reason": "ok_unknown_width_as_800",
+      "image": "https://github.com/Prism-Shadow/penguin-harness/raw/main/assets/readme/download-en-light.svg",
+      "log": [
+        {
+          "articleId": "llamafactory-rsi::0::github.com",
+          "url": "https://github.com/Prism-Shadow/penguin-harness",
+          "bodyMode": "full",
+          "listed": true,
+          "firstParty": false,
+          "selected": true,
+          "score": 0,
+          "representative": true,
+          "isLead": false,
+          "reason": "ok_unknown_width_as_800",
+          "image": {
+            "url": "https://github.com/Prism-Shadow/penguin-harness/raw/main/assets/readme/download-en-light.svg",
+            "width": null,
+            "height": 44
+          }
+        }
+      ]
+    }
+  ],
+  "sizeBudget": {
+    "coverFilesBytes": 781594,
+    "uniqueRenditions": 1,
+    "modes": [
+      {
+        "mode": "thumb",
+        "width": 720
+      },
+      {
+        "mode": "image-1200",
+        "width": 1200
+      },
+      {
+        "mode": "full",
+        "width": 1600
+      }
+    ],
+    "note": "Build-time sharp = MIT image-proxy static equivalent. hero srcSet widths thumb/720, image-1200/1200, full/1600. webp+jpeg, withoutEnlargement. Fail → hotlink original, then hide figure on error."
+  }
+}
