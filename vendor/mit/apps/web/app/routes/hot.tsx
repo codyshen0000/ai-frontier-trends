@@ -88,7 +88,7 @@ function Lead({ e }: { e: HotEntryView }) {
         <span className={`mono text-[12px] font-bold tracking-[0.16em] ${rankColor(e.rank)}`}>NO.{pad(e.rank)}</span>
         <Badges e={e} />
         <Delta trend={e.trend} pct={e.trendPct} storyPublicId={e.story.publicId} className="ml-auto" />
-        <StarButton>
+        <StarButton
           item={{
             id: e.story.publicId,
             title: e.story.title,
