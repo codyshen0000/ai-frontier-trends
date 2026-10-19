@@ -2,7 +2,7 @@
  {
   "rank": 1,
   "title": "[低于门槛补位]Anthropic 技术岗初级招聘占比从 27% 降到 9%",
-  "heat": 10.7,
+  "heat": 10.1,
   "trend": "down",
   "storyPublicId": "2026-10-19-anthropic-workforce-junior",
   "itemId": "sha256:5365820f4dd21c16",
@@ -21,7 +21,7 @@
  {
   "rank": 2,
   "title": "[低于门槛补位]Meta 删除可能允许抓取新闻站训练 AI 的条款",
-  "heat": 7.7,
+  "heat": 7.3,
   "trend": "down",
   "storyPublicId": "2026-10-19-meta-terms-scraping",
   "itemId": "sha256:0b81a58f5b3fe131",
@@ -40,7 +40,7 @@
  {
   "rank": 3,
   "title": "[低于门槛补位]Claude 30 分钟内解开 NIST 曲线种子 25 年谜题",
-  "heat": 6.7,
+  "heat": 6.3,
   "trend": "down",
   "storyPublicId": "2026-10-19-claude-nist-ecdsa",
   "itemId": "sha256:584592e06b7b9958",
@@ -59,7 +59,7 @@
  {
   "rank": 4,
   "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
-  "heat": 6.3,
+  "heat": 6.0,
   "trend": "down",
   "storyPublicId": "2026-10-19-deepseek-v41-flash-1017",
   "itemId": "sha256:931ff0f85ef4bf70",
