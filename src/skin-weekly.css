@@ -384,7 +384,8 @@ html.no-js #ctl {
   align-items: stretch;
 }
 
-.ft-tabbar a {
+.ft-tabbar a,
+.ft-tabbar span.active {
   flex: 1;
   flex-direction: column;
   justify-content: center;
