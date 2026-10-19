@@ -881,15 +881,20 @@ async function refreshFromMeta() {
 function bindTop() {
   document.querySelectorAll<HTMLButtonElement>("[data-ft-top]").forEach((btn) => {
     const sync = () => {
-      const show = window.scrollY > 80;
+      const canScroll = document.documentElement.scrollHeight > window.innerHeight + 8;
+      const show = canScroll && window.scrollY > 80;
+      btn.hidden = !show;
+      btn.classList.toggle("is-on", show);
       btn.classList.toggle("translate-y-2", !show);
     };
+    btn.hidden = true;
     btn.addEventListener("click", (event) => {
       event.preventDefault();
       event.stopPropagation();
       window.scrollTo({ top: 0, left: 0, behavior: reduceMotion() ? "auto" : "smooth" });
     });
     window.addEventListener("scroll", sync, { passive: true });
+    window.addEventListener("resize", sync);
     sync();
   });
 }

@@ -767,3 +767,6 @@ html.no-js [data-ft-top],
 html.no-js button[aria-label*="位参与者"] {
   display: none !important;
 }
+html.js [data-ft-top]:not(.is-on) {
+  display: none !important;
+}
