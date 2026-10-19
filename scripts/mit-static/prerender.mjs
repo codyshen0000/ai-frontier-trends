@@ -2,7 +2,7 @@ import { build } from "vite";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
-import { dataSourceOf, engineDirFromRoot, fixtureNote, listPresentEngineFiles } from "./engine.mjs";
+import { dataSourceOf, engineDirFromRoot, fixtureNote, listPresentEngineFiles, readEngineDir } from "./engine.mjs";
 
 process.env.NODE_ENV = "production";
 
@@ -78,12 +78,14 @@ const notePath = path.join(noteDir, "fixture-note.json");
 const previousNote = fs.existsSync(notePath) ? JSON.parse(fs.readFileSync(notePath, "utf8")) : {};
 if (engineSource !== "fixture" || previousNote.source !== "fixture") {
   const asOf = engineSource === "fixture" && previousNote.asOf ? previousNote.asOf : new Date().toISOString();
+  const engine = readEngineDir(engineDirFromRoot(repoRoot));
   fs.writeFileSync(
     notePath,
     `${JSON.stringify(fixtureNote({
       source: engineSource,
       present: enginePresent,
       asOf,
+      meta: engine.meta,
     }), null, 2)}\n`,
   );
 }

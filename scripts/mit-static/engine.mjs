@@ -9,6 +9,7 @@ export const ENGINE_FILES = {
   daily: "daily.json",
   dailyIndex: "daily-index.json",
   meta: "meta.json",
+  fixture: "fixture.json",
 };
 
 export const PRIMARY_ENGINE_FILES = [
@@ -41,21 +42,24 @@ export function readJsonIfPresent(filePath) {
 
 export function readEngineDir(dir) {
   const present = listPresentEngineFiles(dir);
+  const bundle = readJsonIfPresent(path.join(dir, ENGINE_FILES.fixture));
+  const metaFile = readJsonIfPresent(path.join(dir, ENGINE_FILES.meta));
   return {
     present,
-    timeline: readJsonIfPresent(path.join(dir, ENGINE_FILES.timeline)),
-    hotStrip: readJsonIfPresent(path.join(dir, ENGINE_FILES.hotStrip)),
-    hot: readJsonIfPresent(path.join(dir, ENGINE_FILES.hot)),
-    daily: readJsonIfPresent(path.join(dir, ENGINE_FILES.daily)),
-    dailyIndex: readJsonIfPresent(path.join(dir, ENGINE_FILES.dailyIndex)),
-    meta: readJsonIfPresent(path.join(dir, ENGINE_FILES.meta)),
+    timeline: readJsonIfPresent(path.join(dir, ENGINE_FILES.timeline)) ?? bundle?.timeline ?? null,
+    hotStrip: readJsonIfPresent(path.join(dir, ENGINE_FILES.hotStrip)) ?? bundle?.hotStrip ?? null,
+    hot: readJsonIfPresent(path.join(dir, ENGINE_FILES.hot)) ?? bundle?.hot ?? null,
+    daily: readJsonIfPresent(path.join(dir, ENGINE_FILES.daily)) ?? bundle?.daily ?? null,
+    dailyIndex: readJsonIfPresent(path.join(dir, ENGINE_FILES.dailyIndex)) ?? bundle?.dailyIndex ?? null,
+    meta: metaFile ?? (bundle?.today ? { today: bundle.today } : null),
   };
 }
 
 export function dataSourceOf(present) {
   if (present.length === 0) return "fixture";
+  if (present.includes(ENGINE_FILES.fixture)) return "engine";
   const hasPrimary = PRIMARY_ENGINE_FILES.some((name) => present.includes(name));
-  if (!hasPrimary) return "fixture";
+  if (!hasPrimary) return present.includes(ENGINE_FILES.meta) || present.includes(ENGINE_FILES.dailyIndex) ? "mixed" : "fixture";
   const hasAllPrimary = PRIMARY_ENGINE_FILES.every((name) => present.includes(name));
   return hasAllPrimary ? "engine" : "mixed";
 }
@@ -380,6 +384,8 @@ export function resolveSiteData({ fixture, engine }) {
     (engine?.daily != null ? daily.key : null) ||
     fixture.today;
 
+  const meta = engine?.meta && typeof engine.meta === "object" ? engine.meta : {};
+
   return applyImagePolicy({
     source,
     present,
@@ -388,10 +394,15 @@ export function resolveSiteData({ fixture, engine }) {
     daily,
     dailyIndex,
     today,
+    asOf: typeof meta.data_as_of === "string" ? meta.data_as_of : null,
+    asOfLabel: typeof meta.data_as_of_label === "string" ? meta.data_as_of_label : null,
+    passedCount: typeof meta.passed_count === "number" ? meta.passed_count : null,
+    fillCount: typeof meta.fill_count === "number" ? meta.fill_count : null,
+    fillLabel: typeof meta.fill_label === "string" ? meta.fill_label : "[低于门槛补位]",
   });
 }
 
-export function fixtureNote({ source, present, asOf }) {
+export function fixtureNote({ source, present, asOf, meta }) {
   const notes = {
     fixture: "fixture mock · 热度/涨跌/spark/评分不是 48h 实算",
     mixed: "部分切片来自 data/engine JSON，缺的切片仍用 fixture",
@@ -399,9 +410,12 @@ export function fixtureNote({ source, present, asOf }) {
   };
   return {
     site: "前沿趋势",
-    asOf,
+    asOf: meta?.data_as_of ?? asOf,
+    asOfLabel: meta?.data_as_of_label ?? null,
     source,
     engineFiles: present,
+    passedCount: meta?.passed_count ?? null,
+    fillCount: meta?.fill_count ?? null,
     note: notes[source] ?? notes.fixture,
     pages: ["index.html", "hot.html", "daily.html"],
   };

@@ -89,6 +89,48 @@ try {
   assert.equal(mixed.hot.entries[1].cover, null);
   assert.equal(mixed.timeline.cards[0].item.title, "fixture card");
   assert.equal(mixed.timeline.hot[0].title, "engine lead");
+
+  writeFileSync(path.join(dir, "fixture.json"), JSON.stringify({
+    today: "2026-10-19",
+    timeline: {
+      filters: { channel: "all", category: null, tag: null },
+      cards: [{ key: "fill", anchorAt: "2026-10-19T00:00:00.000Z", item: { id: "fill", title: "[低于门槛补位] keep me", summary: "（低于门槛）", reason: "[低于门槛补位] r", source: { name: "E" }, publishedAt: "2026-10-19T00:00:00.000Z", timelineAt: "2026-10-19T00:00:00.000Z", category: "model", tags: [], score: 57, selected: true, channel: "news", x: null }, group: null }],
+      nextCursor: null,
+      hot: null,
+      dayCounts: { "2026-10-19": 1 },
+    },
+  }));
+  writeFileSync(path.join(dir, "meta.json"), JSON.stringify({
+    today: "2026-10-19",
+    data_as_of: "2026-10-19T11:28:46+08:00",
+    data_as_of_label: "数据截至 2026-10-19 11:28（北京时间）",
+    passed_count: 1,
+    fill_count: 7,
+  }));
+  writeFileSync(path.join(dir, "hot.json"), JSON.stringify({
+    computedAt: "2026-10-19T03:28:46.000Z",
+    windowHours: 48,
+    entries: [{
+      rank: 1,
+      story: { publicId: "st-1", title: "[低于门槛补位] keep hot" },
+      heat: 10.7,
+      trend: "down",
+      spark: Array.from({ length: 25 }, (_, i) => i + 1),
+      cover: null,
+    }],
+  }));
+  const full = readEngineDir(dir);
+  assert.ok(full.present.includes("fixture.json"));
+  const engine = resolveSiteData({ fixture, engine: full });
+  assert.equal(engine.source, "engine");
+  assert.equal(engine.asOfLabel, "数据截至 2026-10-19 11:28（北京时间）");
+  assert.equal(engine.passedCount, 1);
+  assert.equal(engine.fillCount, 7);
+  assert.equal(engine.hot.entries[0].spark.length, 25);
+  assert.equal(engine.hot.entries[0].cover, null);
+  assert.equal(engine.hot.entries[0].heat, 10.7);
+  assert.match(engine.timeline.cards[0].item.title, /\[低于门槛补位\]/);
+  assert.match(engine.hot.entries[0].story.title, /\[低于门槛补位\]/);
 } finally {
   rmSync(dir, { recursive: true, force: true });
 }

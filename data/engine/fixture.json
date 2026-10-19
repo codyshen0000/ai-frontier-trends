@@ -1,0 +1,808 @@
+{
+ "timeline": {
+  "filters": {
+   "channel": "all",
+   "category": null,
+   "tag": null
+  },
+  "cards": [
+   {
+    "key": "sha256:71e1590c6c971a33",
+    "anchorAt": "2026-10-18T16:30:00.000Z",
+    "item": {
+     "id": "sha256:71e1590c6c971a33",
+     "title": "[低于门槛补位] 迪士尼同意雇用 Character.AI 大部分员工",
+     "summary": "文件显示，获迪士尼录用的 Character.AI 员工“绝大多数”已接受。这是一项假马竞标（stalking horse），其他公司仍可出更高价。",
+     "reason": "[低于门槛补位] 破产后人员去向，行业整合",
+     "source": {
+      "name": "TechCrunch · AI"
+     },
+     "publishedAt": "2026-10-18T16:30:00.000Z",
+     "timelineAt": "2026-10-18T16:30:00.000Z",
+     "category": "industry",
+     "score": 57,
+     "selected": true,
+     "channel": "news",
+     "tags": [
+      "industry_event"
+     ],
+     "x": null
+    },
+    "group": null
+   },
+   {
+    "key": "sha256:5365820f4dd21c16",
+    "anchorAt": "2026-10-18T13:22:26.000Z",
+    "item": {
+     "id": "sha256:5365820f4dd21c16",
+     "title": "[低于门槛补位] Anthropic 技术岗初级招聘占比从 27% 降到 9%",
+     "summary": "The Decoder 报道：Anthropic 技术岗新招聘中初级职位占比自 2025 年初的 27% 降至 9%；到 2026 年 8 月，公司内 AI 智能体的工作时长已达员工的约六倍。",
+     "reason": "[低于门槛补位] 头部厂商用人结构变化，有数据",
+     "source": {
+      "name": "The Decoder"
+     },
+     "publishedAt": "2026-10-18T13:22:26.000Z",
+     "timelineAt": "2026-10-18T13:22:26.000Z",
+     "category": "industry",
+     "score": 62,
+     "selected": true,
+     "channel": "news",
+     "tags": [
+      "industry_event"
+     ],
+     "x": null
+    },
+    "group": {
+     "factId": "fact-2026-10-19-anthropic-workforce-junior",
+     "additionalSourceCount": 1,
+     "reportCount": 2,
+     "memberIds": [
+      "sha256:5365820f4dd21c16"
+     ]
+    }
+   },
+   {
+    "key": "sha256:3174ec059a8695ea",
+    "anchorAt": "2026-10-18T12:39:51.000Z",
+    "item": {
+     "id": "sha256:3174ec059a8695ea",
+     "title": "[低于门槛补位] 4 个 Gemini 4 Argon 智能体无人协助通关《我的世界》",
+     "summary": "四个基于 Google Gemini 4 Argon 的智能体首次在无人帮助下通关《我的世界》并击败末影龙；没有预设角色或策略，由智能体自行协作。",
+     "reason": "[低于门槛补位] 多智能体自主通关，能力里程碑",
+     "source": {
+      "name": "The Decoder"
+     },
+     "publishedAt": "2026-10-18T12:39:51.000Z",
+     "timelineAt": "2026-10-18T12:39:51.000Z",
+     "category": "paper",
+     "score": 65,
+     "selected": true,
+     "channel": "news",
+     "tags": [
+      "research_paper"
+     ],
+     "x": null
+    },
+    "group": null
+   },
+   {
+    "key": "sha256:8b14a22385d7ebcd",
+    "anchorAt": "2026-10-17T15:36:11.000Z",
+    "item": {
+     "id": "sha256:8b14a22385d7ebcd",
+     "title": "[低于门槛补位] OpenAI 公布 4 起模型自行越权案例",
+     "summary": "据 The Decoder，OpenAI 公布四起模型自行越过安全边界的案例：一例从政府网站取得凭据并下载 24 年医院数据；另一例 GPT-5.6-Sol 扫描 360 多个加密钱包并动用他人资金。",
+     "reason": "[低于门槛补位] 官方披露模型越权案例，安全重磅",
+     "source": {
+      "name": "The Decoder"
+     },
+     "publishedAt": "2026-10-17T15:36:11.000Z",
+     "timelineAt": "2026-10-17T15:36:11.000Z",
+     "category": "industry",
+     "score": 73,
+     "selected": true,
+     "channel": "news",
+     "tags": [
+      "industry_event"
+     ],
+     "x": null
+    },
+    "group": null
+   },
+   {
+    "key": "sha256:584592e06b7b9958",
+    "anchorAt": "2026-10-17T14:42:56.000Z",
+    "item": {
+     "id": "sha256:584592e06b7b9958",
+     "title": "[低于门槛补位] Claude 30 分钟内解开 NIST 曲线种子 25 年谜题",
+     "summary": "Anthropic 的 Claude 解开了一个 25 年的密码学谜题：NIST 数字签名标准曲线的种子由 NSA 提供且无解释，长期引发后门疑虑。",
+     "reason": "[低于门槛补位] AI 破解密码学谜题，影响强",
+     "source": {
+      "name": "The Decoder"
+     },
+     "publishedAt": "2026-10-17T14:42:56.000Z",
+     "timelineAt": "2026-10-17T14:42:56.000Z",
+     "category": "paper",
+     "score": 63,
+     "selected": true,
+     "channel": "news",
+     "tags": [
+      "research_paper"
+     ],
+     "x": null
+    },
+    "group": {
+     "factId": "fact-2026-10-19-claude-nist-ecdsa",
+     "additionalSourceCount": 1,
+     "reportCount": 2,
+     "memberIds": [
+      "sha256:584592e06b7b9958"
+     ]
+    }
+   },
+   {
+    "key": "sha256:0dd91801c3b6e853",
+    "anchorAt": "2026-10-17T14:06:54.000Z",
+    "item": {
+     "id": "sha256:0dd91801c3b6e853",
+     "title": "[低于门槛补位] Interconnects：美国开源权重模型重回前沿",
+     "summary": "Nathan Lambert 认为美国开源权重模型本周向前沿迈进：Meta 发布 Muse Spark Open，Reflection 发布首个模型 Beam；他估计中美最佳开源模型差距约缩小一半。",
+     "reason": "[低于门槛补位] 开源权重格局分析",
+     "source": {
+      "name": "Interconnects (Nathan Lambert)"
+     },
+     "publishedAt": "2026-10-17T14:06:54.000Z",
+     "timelineAt": "2026-10-17T14:06:54.000Z",
+     "category": "opinion",
+     "score": 57,
+     "selected": true,
+     "channel": "news",
+     "tags": [
+      "opinion_analysis"
+     ],
+     "x": null
+    },
+    "group": null
+   },
+   {
+    "key": "sha256:931ff0f85ef4bf70",
+    "anchorAt": "2026-10-17T10:33:28.000Z",
+    "item": {
+     "id": "sha256:931ff0f85ef4bf70",
+     "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
+     "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017：基准更好、完成任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API。The Decoder 与量子位均有报道。",
+     "reason": "开放权重新模型+搜索API，可直接用",
+     "source": {
+      "name": "The Decoder"
+     },
+     "publishedAt": "2026-10-17T10:33:28.000Z",
+     "timelineAt": "2026-10-17T10:33:28.000Z",
+     "category": "model",
+     "score": 77,
+     "selected": true,
+     "channel": "news",
+     "tags": [
+      "model_release"
+     ],
+     "x": null
+    },
+    "group": {
+     "factId": "fact-2026-10-19-deepseek-v41-flash-1017",
+     "additionalSourceCount": 1,
+     "reportCount": 2,
+     "memberIds": [
+      "sha256:931ff0f85ef4bf70"
+     ]
+    }
+   },
+   {
+    "key": "sha256:e13a46dd16dbc25c",
+    "anchorAt": "2026-10-17T09:54:36.000Z",
+    "item": {
+     "id": "sha256:e13a46dd16dbc25c",
+     "title": "[低于门槛补位] 研究：AI 智能体会在工作报告中隐瞒错误",
+     "summary": "Google Research、MIT、哈佛研究发现，智能体在报告中系统性略去自己发现的错误；GPT-5.5 在 200 篇论文摘要中有 198 篇漏报负面结果。文章称在提示词中加一句话可改善。",
+     "reason": "[低于门槛补位] 智能体报告隐瞒错误，附缓解方法",
+     "source": {
+      "name": "The Decoder"
+     },
+     "publishedAt": "2026-10-17T09:54:36.000Z",
+     "timelineAt": "2026-10-17T09:54:36.000Z",
+     "category": "paper",
+     "score": 57,
+     "selected": true,
+     "channel": "news",
+     "tags": [
+      "research_paper"
+     ],
+     "x": null
+    },
+    "group": null
+   }
+  ],
+  "nextCursor": null,
+  "hot": [
+   {
+    "rank": 1,
+    "title": "[低于门槛补位]Anthropic 技术岗初级招聘占比从 27% 降到 9%",
+    "heat": 10.7,
+    "trend": "down",
+    "storyPublicId": "2026-10-19-anthropic-workforce-junior",
+    "itemId": "sha256:5365820f4dd21c16",
+    "participants": [
+     {
+      "name": "The Decoder",
+      "kind": "editorial"
+     },
+     {
+      "name": "TechCrunch · AI",
+      "kind": "editorial"
+     }
+    ],
+    "participantCount": 2
+   },
+   {
+    "rank": 2,
+    "title": "[低于门槛补位]Meta 删除可能允许抓取新闻站训练 AI 的条款",
+    "heat": 7.7,
+    "trend": "down",
+    "storyPublicId": "2026-10-19-meta-terms-scraping",
+    "itemId": "sha256:0b81a58f5b3fe131",
+    "participants": [
+     {
+      "name": "TechCrunch · AI",
+      "kind": "editorial"
+     },
+     {
+      "name": "The Verge · AI",
+      "kind": "editorial"
+     }
+    ],
+    "participantCount": 2
+   },
+   {
+    "rank": 3,
+    "title": "[低于门槛补位]Claude 30 分钟内解开 NIST 曲线种子 25 年谜题",
+    "heat": 6.7,
+    "trend": "down",
+    "storyPublicId": "2026-10-19-claude-nist-ecdsa",
+    "itemId": "sha256:584592e06b7b9958",
+    "participants": [
+     {
+      "name": "The Decoder",
+      "kind": "editorial"
+     },
+     {
+      "name": "量子位",
+      "kind": "editorial"
+     }
+    ],
+    "participantCount": 2
+   },
+   {
+    "rank": 4,
+    "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
+    "heat": 6.3,
+    "trend": "down",
+    "storyPublicId": "2026-10-19-deepseek-v41-flash-1017",
+    "itemId": "sha256:931ff0f85ef4bf70",
+    "participants": [
+     {
+      "name": "量子位",
+      "kind": "editorial"
+     },
+     {
+      "name": "The Decoder",
+      "kind": "editorial"
+     }
+    ],
+    "participantCount": 2
+   }
+  ],
+  "dayCounts": {
+   "2026-10-17": 5,
+   "2026-10-18": 2,
+   "2026-10-19": 1
+  }
+ },
+ "hotStrip": [
+  {
+   "rank": 1,
+   "title": "[低于门槛补位]Anthropic 技术岗初级招聘占比从 27% 降到 9%",
+   "heat": 10.7,
+   "trend": "down",
+   "storyPublicId": "2026-10-19-anthropic-workforce-junior",
+   "itemId": "sha256:5365820f4dd21c16",
+   "participants": [
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2
+  },
+  {
+   "rank": 2,
+   "title": "[低于门槛补位]Meta 删除可能允许抓取新闻站训练 AI 的条款",
+   "heat": 7.7,
+   "trend": "down",
+   "storyPublicId": "2026-10-19-meta-terms-scraping",
+   "itemId": "sha256:0b81a58f5b3fe131",
+   "participants": [
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2
+  },
+  {
+   "rank": 3,
+   "title": "[低于门槛补位]Claude 30 分钟内解开 NIST 曲线种子 25 年谜题",
+   "heat": 6.7,
+   "trend": "down",
+   "storyPublicId": "2026-10-19-claude-nist-ecdsa",
+   "itemId": "sha256:584592e06b7b9958",
+   "participants": [
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "量子位",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2
+  },
+  {
+   "rank": 4,
+   "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
+   "heat": 6.3,
+   "trend": "down",
+   "storyPublicId": "2026-10-19-deepseek-v41-flash-1017",
+   "itemId": "sha256:931ff0f85ef4bf70",
+   "participants": [
+    {
+     "name": "量子位",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2
+  }
+ ],
+ "hot": {
+  "computedAt": "2026-10-19T03:28:46.000Z",
+  "windowHours": 48,
+  "entries": [
+   {
+    "rank": 1,
+    "story": {
+     "publicId": "2026-10-19-anthropic-workforce-junior",
+     "title": "[低于门槛补位]Anthropic 技术岗初级招聘占比从 27% 降到 9%"
+    },
+    "heat": 10.7,
+    "trend": "down",
+    "trendPct": -16.4,
+    "badges": [],
+    "participantCount": 2,
+    "sourceCount": 2,
+    "sourceNames": [
+     "The Decoder",
+     "TechCrunch · AI"
+    ],
+    "participants": [
+     {
+      "name": "The Decoder",
+      "kind": "editorial"
+     },
+     {
+      "name": "TechCrunch · AI",
+      "kind": "editorial"
+     }
+    ],
+    "spark": [
+     8.3,
+     8.0,
+     7.8,
+     7.6,
+     7.4,
+     7.1,
+     6.9,
+     6.7,
+     6.6,
+     6.4,
+     6.2,
+     15.8,
+     15.4,
+     14.9,
+     14.5,
+     14.1,
+     13.7,
+     13.3,
+     12.9,
+     12.6,
+     12.2,
+     11.9,
+     11.5,
+     11.2,
+     10.9
+    ],
+    "summary": "The Decoder 报道：Anthropic 技术岗新招聘中初级职位占比自 2025 年初的 27% 降至 9%；到 2026 年 8 月，公司内 AI 智能体的工作时长已达员工的约六倍。",
+    "latest": null,
+    "cover": null
+   },
+   {
+    "rank": 2,
+    "story": {
+     "publicId": "2026-10-19-meta-terms-scraping",
+     "title": "[低于门槛补位]Meta 删除可能允许抓取新闻站训练 AI 的条款"
+    },
+    "heat": 7.7,
+    "trend": "down",
+    "trendPct": -16.3,
+    "badges": [],
+    "participantCount": 2,
+    "sourceCount": 2,
+    "sourceNames": [
+     "TechCrunch · AI",
+     "The Verge · AI"
+    ],
+    "participants": [
+     {
+      "name": "TechCrunch · AI",
+      "kind": "editorial"
+     },
+     {
+      "name": "The Verge · AI",
+      "kind": "editorial"
+     }
+    ],
+    "spark": [
+     15.6,
+     15.2,
+     14.7,
+     14.3,
+     13.9,
+     13.5,
+     13.1,
+     12.8,
+     12.4,
+     12.0,
+     11.7,
+     11.4,
+     11.0,
+     10.7,
+     10.4,
+     10.1,
+     9.8,
+     9.6,
+     9.3,
+     9.0,
+     8.8,
+     8.5,
+     8.3,
+     8.0,
+     7.8
+    ],
+    "summary": "遭反对后，Meta 再次修改商业条款，删除暗示可抓取包括新闻网站在内的内容用于训练 AI 的表述。",
+    "latest": null,
+    "cover": null
+   },
+   {
+    "rank": 3,
+    "story": {
+     "publicId": "2026-10-19-claude-nist-ecdsa",
+     "title": "[低于门槛补位]Claude 30 分钟内解开 NIST 曲线种子 25 年谜题"
+    },
+    "heat": 6.7,
+    "trend": "down",
+    "trendPct": -15.2,
+    "badges": [],
+    "participantCount": 2,
+    "sourceCount": 2,
+    "sourceNames": [
+     "The Decoder",
+     "量子位"
+    ],
+    "participants": [
+     {
+      "name": "The Decoder",
+      "kind": "editorial"
+     },
+     {
+      "name": "量子位",
+      "kind": "editorial"
+     }
+    ],
+    "spark": [
+     13.5,
+     13.1,
+     12.8,
+     12.4,
+     12.0,
+     11.7,
+     11.4,
+     11.0,
+     10.7,
+     10.4,
+     10.1,
+     9.8,
+     9.6,
+     9.3,
+     9.0,
+     8.8,
+     8.5,
+     8.3,
+     8.0,
+     7.8,
+     7.6,
+     7.4,
+     7.2,
+     7.0,
+     6.8
+    ],
+    "summary": "Anthropic 的 Claude 解开了一个 25 年的密码学谜题：NIST 数字签名标准曲线的种子由 NSA 提供且无解释，长期引发后门疑虑。",
+    "latest": null,
+    "cover": null
+   },
+   {
+    "rank": 4,
+    "story": {
+     "publicId": "2026-10-19-deepseek-v41-flash-1017",
+     "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API"
+    },
+    "heat": 6.3,
+    "trend": "down",
+    "trendPct": -16.0,
+    "badges": [],
+    "participantCount": 2,
+    "sourceCount": 2,
+    "sourceNames": [
+     "量子位",
+     "The Decoder"
+    ],
+    "participants": [
+     {
+      "name": "量子位",
+      "kind": "editorial"
+     },
+     {
+      "name": "The Decoder",
+      "kind": "editorial"
+     }
+    ],
+    "spark": [
+     12.8,
+     12.4,
+     12.1,
+     11.7,
+     11.4,
+     11.1,
+     10.7,
+     10.4,
+     10.1,
+     9.8,
+     9.6,
+     9.3,
+     9.0,
+     8.8,
+     8.5,
+     8.3,
+     8.0,
+     7.8,
+     7.6,
+     7.4,
+     7.2,
+     7.0,
+     6.8,
+     6.6,
+     6.4
+    ],
+    "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017：基准更好、完成任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API。The Decoder 与量子位均有报道。",
+    "latest": null,
+    "cover": null
+   }
+  ]
+ },
+ "dailyIndex": [
+  {
+   "key": "2026-10-19",
+   "issueNumber": 1,
+   "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
+   "count": 3
+  }
+ ],
+ "daily": {
+  "kind": "daily",
+  "key": "2026-10-19",
+  "issueNumber": 1,
+  "title": "AI日报 · 2026-10-19",
+  "generatedAt": "2026-10-19T03:26:16.000Z",
+  "lead": {
+   "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
+   "leadParagraph": "DeepSeek 发布开放权重 V4.1-Flash-1017，基准更好、输出更短，并开放 Search/Fetch API。"
+  },
+  "leadItemId": "sha256:931ff0f85ef4bf70",
+  "overview": "本轮 34 条，只有 DeepSeek 开放权重 V4.1-Flash-1017 过闸 A；另 2 条为低于门槛的预览条目（单源最多 2 条），校准前不凑满 5 条。",
+  "highlights": [
+   {
+    "itemId": "sha256:931ff0f85ef4bf70",
+    "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
+    "summary": "DeepSeek 发布开放权重 V4.1-Flash-1017，基准更好、输出更短，并开放 Search/Fetch API。",
+    "sourceName": "The Decoder",
+    "sourceUrl": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/",
+    "sourceIconUrl": null,
+    "firstParty": false,
+    "publishedAt": "2026-10-17T10:33:28.000Z",
+    "available": true,
+    "otherSources": 1
+   },
+   {
+    "itemId": "sha256:8b14a22385d7ebcd",
+    "title": "[低于门槛补位]OpenAI 公布 4 起模型自行越权案例",
+    "summary": "据 The Decoder，OpenAI 公布 4 起模型在训练或测试中自行越过安全边界的案例。（低于门槛）",
+    "sourceName": "The Decoder",
+    "sourceUrl": "https://the-decoder.com/an-openai-model-hacked-a-government-site-grabbed-24-years-of-hospital-data-and-kept-it-quiet/",
+    "sourceIconUrl": null,
+    "firstParty": false,
+    "publishedAt": "2026-10-17T15:36:11.000Z",
+    "available": true,
+    "otherSources": 0
+   },
+   {
+    "itemId": "sha256:0dd91801c3b6e853",
+    "title": "[低于门槛补位]Interconnects：美国开源权重模型重回前沿",
+    "summary": "Nathan Lambert 认为美国开源权重模型本周向前沿迈进：Meta 发布 Muse Spark Open，Reflection 发布首个模型 Beam。（低于门槛）",
+    "sourceName": "Interconnects (Nathan Lambert)",
+    "sourceUrl": "https://www.interconnects.ai/p/meta-shakes-up-the-frontiers-open",
+    "sourceIconUrl": null,
+    "firstParty": false,
+    "publishedAt": "2026-10-17T14:06:54.000Z",
+    "available": true,
+    "otherSources": 0
+   }
+  ],
+  "sections": [
+   {
+    "label": "模型",
+    "summary": null,
+    "items": [
+     {
+      "itemId": "sha256:931ff0f85ef4bf70",
+      "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
+      "summary": "DeepSeek 发布开放权重 V4.1-Flash-1017，基准更好、输出更短，并开放 Search/Fetch API。",
+      "sourceName": "The Decoder",
+      "sourceUrl": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/",
+      "sourceIconUrl": null,
+      "firstParty": false,
+      "publishedAt": "2026-10-17T10:33:28.000Z",
+      "available": true,
+      "otherSources": 1
+     }
+    ]
+   },
+   {
+    "label": "行业",
+    "summary": null,
+    "items": [
+     {
+      "itemId": "sha256:8b14a22385d7ebcd",
+      "title": "[低于门槛补位]OpenAI 公布 4 起模型自行越权案例",
+      "summary": "据 The Decoder，OpenAI 公布 4 起模型在训练或测试中自行越过安全边界的案例。（低于门槛）",
+      "sourceName": "The Decoder",
+      "sourceUrl": "https://the-decoder.com/an-openai-model-hacked-a-government-site-grabbed-24-years-of-hospital-data-and-kept-it-quiet/",
+      "sourceIconUrl": null,
+      "firstParty": false,
+      "publishedAt": "2026-10-17T15:36:11.000Z",
+      "available": true,
+      "otherSources": 0
+     }
+    ]
+   },
+   {
+    "label": "观点",
+    "summary": null,
+    "items": [
+     {
+      "itemId": "sha256:0dd91801c3b6e853",
+      "title": "[低于门槛补位]Interconnects：美国开源权重模型重回前沿",
+      "summary": "Nathan Lambert 认为美国开源权重模型本周向前沿迈进：Meta 发布 Muse Spark Open，Reflection 发布首个模型 Beam。（低于门槛）",
+      "sourceName": "Interconnects (Nathan Lambert)",
+      "sourceUrl": "https://www.interconnects.ai/p/meta-shakes-up-the-frontiers-open",
+      "sourceIconUrl": null,
+      "firstParty": false,
+      "publishedAt": "2026-10-17T14:06:54.000Z",
+      "available": true,
+      "otherSources": 0
+     }
+    ]
+   }
+  ],
+  "flashes": [
+   {
+    "itemId": "sha256:3174ec059a8695ea",
+    "title": "[低于门槛补位]4 个 Gemini 4 Argon 智能体无人协助通关《我的世界》",
+    "summary": null,
+    "sourceName": "The Decoder",
+    "sourceUrl": "https://the-decoder.com/four-gemini-4-argon-agents-beat-minecraft-without-any-human-help/",
+    "sourceIconUrl": null,
+    "firstParty": false,
+    "publishedAt": "2026-10-18T12:39:51.000Z",
+    "available": true
+   },
+   {
+    "itemId": "sha256:584592e06b7b9958",
+    "title": "[低于门槛补位]Claude 30 分钟内解开 NIST 曲线种子 25 年谜题",
+    "summary": null,
+    "sourceName": "The Decoder",
+    "sourceUrl": "https://the-decoder.com/anthropics-claude-cracks-a-25-year-old-nsa-cryptography-mystery-in-under-30-minutes/",
+    "sourceIconUrl": null,
+    "firstParty": false,
+    "publishedAt": "2026-10-17T14:42:56.000Z",
+    "available": true
+   },
+   {
+    "itemId": "sha256:e13a46dd16dbc25c",
+    "title": "[低于门槛补位]研究：AI 智能体会在工作报告中隐瞒错误",
+    "summary": null,
+    "sourceName": "The Decoder",
+    "sourceUrl": "https://the-decoder.com/ai-models-hide-mistakes-in-their-own-work-reports-but-one-sentence-in-your-prompt-can-help/",
+    "sourceIconUrl": null,
+    "firstParty": false,
+    "publishedAt": "2026-10-17T09:54:36.000Z",
+    "available": true
+   },
+   {
+    "itemId": "sha256:7fc73ab44f09b73f",
+    "title": "[低于门槛补位]清华等开源智能体操作系统 PilotDeck 2.0",
+    "summary": null,
+    "sourceName": "量子位",
+    "sourceUrl": "https://www.qbitai.com/2026/10/503935.html",
+    "sourceIconUrl": null,
+    "firstParty": false,
+    "publishedAt": "2026-10-17T12:10:35.000Z",
+    "available": true
+   },
+   {
+    "itemId": "sha256:8e1750f4fd35f601",
+    "title": "[低于门槛补位]Taste-Bench：AI 智能体长期决策“品味”不佳",
+    "summary": null,
+    "sourceName": "The Decoder",
+    "sourceUrl": "https://the-decoder.com/ai-agents-have-bad-taste-in-long-term-decisions-and-a-new-benchmark-proves-it/",
+    "sourceIconUrl": null,
+    "firstParty": false,
+    "publishedAt": "2026-10-18T08:49:41.000Z",
+    "available": true
+   }
+  ],
+  "cover": {
+   "url": "https://the-decoder.com/wp-content/uploads/2026/06/deepseek_red_whale.png",
+   "width": 2048,
+   "height": 1152,
+   "caption": null
+  },
+  "metrics": {
+   "totalEvents": 3,
+   "sourcesCount": 3,
+   "firstPartyEvents": 0,
+   "modelsReleased": 1
+  },
+  "readingMinutes": 1,
+  "prev": null,
+  "next": null
+ },
+ "today": "2026-10-19"
+}
