@@ -4,12 +4,23 @@ import { fileURLToPath } from "node:url";
 import { extractLiveSpotlight, extractThreads, extractTimelineLede, ensureThreadAnchors } from "./extract.mjs";
 import { clipSummary, extractLiveCards, rankHot, selectPins } from "./live_cards.mjs";
 import { injectHtmlFile } from "./build.mjs";
+import { assertCoverRecords, assertWeeklyReports, coverAltProblem, coverEntries } from "./story_digest.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const config = JSON.parse(readFileSync(join(root, "site.config.json"), "utf8"));
 const liveRaw = readFileSync(join(root, "content", "live.html"), "utf8");
 const timelineRaw = readFileSync(join(root, "content", "timeline.html"), "utf8");
 const distDir = join(root, "dist");
+const generatedCovers = JSON.parse(readFileSync(join(root, "scripts", "mit-static", "src", "covers.generated.json"), "utf8"));
+
+function decodeHtmlAttr(value) {
+  return String(value)
+    .replaceAll("&quot;", '"')
+    .replaceAll("&#39;", "'")
+    .replaceAll("&lt;", "<")
+    .replaceAll("&gt;", ">")
+    .replaceAll("&amp;", "&");
+}
 
 let failed = 0;
 function assert(cond, message) {
@@ -222,9 +233,10 @@ if (hotCoverImgs.length === 1) {
   assert(!/(?:src|srcSet|imageSrcSet)="assets\/covers\//.test(hotPage), "hot cover attrs do not keep unprefixed assets/covers");
   assert(/\bwidth="\d+"/.test(hotCoverImgs[0][0]) && /\bheight="\d+"/.test(hotCoverImgs[0][0]), "hot cover has width/height");
   assert(!/src="https?:\/\//.test(hotCoverImgs[0][0]), "hot cover is not a hotlink");
-  assert(/alt="FLUX\.3 Image Klein 模型生成样图拼贴"/.test(hotCoverImgs[0][0]), "hot cover alt is a short Chinese description");
-  assert(!/\balt=""/.test(hotCoverImgs[0][0]), "hot cover alt is not empty");
-  assert(!/\balt="[^"]*\.(?:webp|png|jpe?g|gif|svg)"/i.test(hotCoverImgs[0][0]), "hot cover alt is not a filename");
+  const hotAlt = decodeHtmlAttr((hotCoverImgs[0][0].match(/\balt="([^"]*)"/) || [])[1] || "");
+  assert(Boolean(generatedCovers.hotEntries?.[0]?.coverOurs?.alt), "hot cover data has alt");
+  assert(hotAlt === generatedCovers.hotEntries[0].coverOurs.alt, "hot cover img alt matches cover data");
+  assert(!coverAltProblem(hotAlt), "hot cover alt is not empty, a filename, or a URL");
 } else {
   assert(!/>24 小时热度</.test(hotPage), "empty hot cover slot is not filled with a heat panel");
 }
@@ -281,9 +293,10 @@ if (dailyCoverImgs.length === 1) {
   assert(!/(?:src|srcSet|imageSrcSet)="assets\/covers\//.test(dailyPage), "daily cover attrs do not keep unprefixed assets/covers");
   assert(/\bwidth="\d+"/.test(dailyCoverImgs[0][0]) && /\bheight="\d+"/.test(dailyCoverImgs[0][0]), "daily cover has width/height");
   assert(!/src="https?:\/\//.test(dailyCoverImgs[0][0]), "daily cover is not a hotlink");
-  assert(/alt="FLUX\.3 Image Klein 模型生成样图拼贴"/.test(dailyCoverImgs[0][0]), "daily cover alt is a short Chinese description");
-  assert(!/\balt=""/.test(dailyCoverImgs[0][0]), "daily cover alt is not empty");
-  assert(!/\balt="[^"]*\.(?:webp|png|jpe?g|gif|svg)"/i.test(dailyCoverImgs[0][0]), "daily cover alt is not a filename");
+  const dailyAlt = decodeHtmlAttr((dailyCoverImgs[0][0].match(/\balt="([^"]*)"/) || [])[1] || "");
+  assert(Boolean(generatedCovers.daily?.coverOurs?.alt), "daily cover data has alt");
+  assert(dailyAlt === generatedCovers.daily.coverOurs.alt, "daily cover img alt matches cover data");
+  assert(!coverAltProblem(dailyAlt), "daily cover alt is not empty, a filename, or a URL");
 }
 
 assert(/body\{[^}]*max-width:\s*\d+px;[^}]*margin:[^;]*auto/.test(timelineRaw), "timeline source keeps a centered reading column");
@@ -354,6 +367,26 @@ assert(existsSync(join(distDir, "weekly", "2026-10-12", "charts", "2026-10-12-ev
 assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-evidence-by-line.png")), "weekly 2026-10-18 ships chart pngs");
 assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-signal-candidates.png")), "weekly 2026-10-18 ships signal chart");
 assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-weights-delivery.png")), "weekly 2026-10-18 ships weights chart");
+{
+  const weightsPng = readFileSync(join(root, "content", "weekly", "2026-10-18", "charts", "2026-10-18-weights-delivery.png"));
+  const weeklyHtml = readFileSync(join(root, "content", "weekly", "2026-10-18", "report.html"), "utf8");
+  const embedded = weeklyHtml.match(/<img alt="权重与产品：本周兑现 3 项，仍空 3 项（截至 2026-10-16 傍晚）" src="data:image\/png;base64,([^"]+)"/);
+  assert(Boolean(embedded), "weekly report.html embeds the weights-delivery chart");
+  assert(embedded && Buffer.from(embedded[1], "base64").equals(weightsPng), "embedded weights-delivery PNG matches the chart file bytes");
+}
+
+try {
+  assertCoverRecords(generatedCovers);
+  assert(true, "cover records in generated data have usable alt");
+} catch (err) {
+  assert(false, err.message);
+}
+try {
+  assertWeeklyReports(root);
+  assert(true, "weekly report.md/html have no banned public copy");
+} catch (err) {
+  assert(false, err.message);
+}
 
 function walkHtmlFiles(dir, acc = []) {
   for (const name of readdirSync(dir)) {
@@ -415,6 +448,26 @@ for (const pageFile of htmlPages) {
   }
 }
 assert(missingAssets === 0, `every img src/srcset/imagesrcset on dist HTML resolves (${missingAssets} missing)`);
+
+const expectedCoverAlts = new Set(
+  coverEntries(generatedCovers)
+    .map(([, entry]) => String(entry?.coverOurs?.alt || "").trim())
+    .filter(Boolean),
+);
+let coverImgMismatches = 0;
+for (const pageFile of htmlPages) {
+  const html = readFileSync(pageFile, "utf8");
+  const relPage = relative(distDir, pageFile);
+  for (const match of html.matchAll(/<img\b[^>]*>/g)) {
+    if (!/assets\/covers\//.test(match[0])) continue;
+    const alt = decodeHtmlAttr((match[0].match(/\balt="([^"]*)"/) || [])[1] || "");
+    if (coverAltProblem(alt) || !expectedCoverAlts.has(alt)) {
+      coverImgMismatches += 1;
+      console.error(`FAIL cover img alt on ${relPage}: ${JSON.stringify(alt)}`);
+    }
+  }
+}
+assert(coverImgMismatches === 0, `every dist cover <img> alt is non-empty and matches cover data (${coverImgMismatches} bad)`);
 
 const retiredPreview = [
   "preview/hot/index.html",

@@ -200,7 +200,7 @@ export interface HotEntryView {
   /** The latest development, one line. */
   latest: string | null;
   /** A picture from the story's public reports (the representative first), for the leading cards. */
-  cover: { url: string; srcSet?: string; width: number | null; height: number | null } | null;
+  cover: { url: string; srcSet?: string; width: number | null; height: number | null; alt: string } | null;
 }
 
 export interface HotResponse {
@@ -320,7 +320,7 @@ export interface ReportDetail {
    * The front page's picture: from the lead item (a daily's lead, a weekly or monthly's first highlight),
    * else from another public report of that event. Captioned with the story when it is not the lead's own.
    */
-  cover: { url: string; srcSet?: string; width: number | null; height: number | null; caption: string | null } | null;
+  cover: { url: string; srcSet?: string; width: number | null; height: number | null; caption: string | null; alt: string } | null;
   metrics: Record<string, number>;
   readingMinutes: number;
   prev: string | null;

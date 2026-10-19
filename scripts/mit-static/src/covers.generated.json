@@ -34,7 +34,8 @@
         "url": "assets/covers/hot-flux-3-image-klein-1600.webp",
         "srcSet": "assets/covers/hot-flux-3-image-klein-720.webp 720w, assets/covers/hot-flux-3-image-klein-1200.webp 1200w, assets/covers/hot-flux-3-image-klein-1600.webp 1600w",
         "width": 1600,
-        "height": 1075
+        "height": 1075,
+        "alt": "FLUX.3 Image Klein 模型生成样图拼贴"
       },
       "pickLog": [
         {
@@ -1058,7 +1059,8 @@
       "url": "assets/covers/hot-flux-3-image-klein-1600.webp",
       "srcSet": "assets/covers/hot-flux-3-image-klein-720.webp 720w, assets/covers/hot-flux-3-image-klein-1200.webp 1200w, assets/covers/hot-flux-3-image-klein-1600.webp 1600w",
       "width": 1600,
-      "height": 1075
+      "height": 1075,
+      "alt": "FLUX.3 Image Klein 模型生成样图拼贴"
     },
     "pickLog": [
       {

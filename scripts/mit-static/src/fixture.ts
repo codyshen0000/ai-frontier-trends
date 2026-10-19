@@ -119,11 +119,13 @@ const fixtureHotStrip: HotStripEntry[] = [
 ];
 
 function pictureOf(
-  row: { coverOurs?: { url: string; srcSet?: string; width: number | null; height: number | null } | null },
+  row: { coverOurs?: { url: string; srcSet?: string; width: number | null; height: number | null; alt?: string } | null },
 ) {
   const pic = row.coverOurs;
   if (!pic?.url) return null;
-  return { url: pic.url, srcSet: pic.srcSet, width: pic.width ?? null, height: pic.height ?? null };
+  const alt = String(pic.alt || "").trim();
+  if (!alt) throw new Error("coverOurs is missing a public alt");
+  return { url: pic.url, srcSet: pic.srcSet, width: pic.width ?? null, height: pic.height ?? null, alt };
 }
 
 function generatedHot(): HotResponse {

@@ -2,7 +2,16 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { applyStoryDigest, findBannedMeta, loadStoryDigest, publicCopyFor } from "./story_digest.mjs";
+import {
+  applyStoryDigest,
+  assertCoverRecords,
+  assertWeeklyReportCopy,
+  assertWeeklyReports,
+  coverAltProblem,
+  findBannedMeta,
+  loadStoryDigest,
+  publicCopyFor,
+} from "./story_digest.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const generated = JSON.parse(readFileSync(join(here, "mit-static/src/covers.generated.json"), "utf8"));
@@ -33,5 +42,50 @@ assert.equal(applied.hotEntries[0].summary, klein.digest);
 assert.equal(applied.daily.title, klein.title);
 assert.ok(!findBannedMeta(applied.daily.leadParagraph));
 assert.doesNotMatch(JSON.stringify({ t: applied.hotEntries.map((e) => e.title), s: applied.hotEntries.map((e) => e.summary) }), /权重跟踪|记交付|本批|六件套|低于门槛|补位|score=/);
+
+assert.equal(klein.alt, "FLUX.3 Image Klein 模型生成样图拼贴");
+assert.equal(applied.hotEntries[0].coverOurs.alt, klein.alt);
+assert.equal(applied.daily.coverOurs.alt, klein.alt);
+assertCoverRecords(generated);
+assert.equal(coverAltProblem(""), "empty");
+assert.equal(coverAltProblem("   "), "empty");
+assert.equal(coverAltProblem("hot-flux-3-image-klein-1600.webp"), "filename");
+assert.equal(coverAltProblem("assets/covers/hot-flux-3-image-klein-1600.webp"), "filename");
+assert.equal(coverAltProblem("https://cdn.example/cover.webp"), "url");
+assert.equal(coverAltProblem(klein.alt), null);
+
+const missingAlt = structuredClone(generated);
+delete missingAlt.hotEntries[0].coverOurs.alt;
+delete missingAlt.daily.coverOurs.alt;
+assert.throws(() => assertCoverRecords(missingAlt), /cover alt is empty/, "negative: missing cover alt fails");
+
+const filenameAlt = structuredClone(generated);
+filenameAlt.hotEntries[0].coverOurs.alt = "hot-flux-3-image-klein-1600.webp";
+assert.throws(() => assertCoverRecords(filenameAlt), /filename/, "negative: filename cover alt fails");
+
+const overlayWithoutAlt = structuredClone(loadStoryDigest());
+delete overlayWithoutAlt.items["flux-3-image-klein"].alt;
+assert.throws(
+  () => applyStoryDigest(missingAlt, overlayWithoutAlt),
+  /cover alt is empty/,
+  "negative: applyStoryDigest fails when cover alt is removed",
+);
+
+assertWeeklyReports(join(here, ".."));
+assert.throws(
+  () => assertWeeklyReportCopy("交付，不进信号表", "<p>ok</p>", "neg-md"),
+  /不进信号表/,
+  "negative: banned 不进信号表 in weekly md fails",
+);
+assert.throws(
+  () => assertWeeklyReportCopy("# ok", '<p>正文</p><img alt="挂 RSI 观察">', "neg-alt"),
+  /挂 RSI/,
+  "negative: banned 挂 RSI in weekly img alt fails",
+);
+assert.throws(
+  () => assertWeeklyReportCopy("# ok", "<p>ok</p><figcaption>不进信号表</figcaption>", "neg-fig"),
+  /不进信号表/,
+  "negative: banned copy in weekly figcaption fails",
+);
 
 console.log("story_digest tests passed");

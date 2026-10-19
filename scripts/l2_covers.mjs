@@ -16,7 +16,7 @@ import {
   queryHotCovers,
 } from "./cover_rules.mjs";
 import { extractLiveCards, rankHot } from "./live_cards.mjs";
-import { applyStoryDigest, publicCopyFor } from "./story_digest.mjs";
+import { applyStoryDigest, assertCoverAlt, publicCopyFor } from "./story_digest.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = join(here, "..");
@@ -355,9 +355,11 @@ function heatTemplate() {
   ].map((row) => ({ ...row, spark: spark(row.heat), participants: faces(["数字前沿", "跟进源", "评测组"]) }));
 }
 
-function coverView(resolved, rendition) {
+function coverView(resolved, rendition, alt) {
   if (!resolved?.cover || !rendition?.local) return null;
-  return rendition.local;
+  const text = String(alt || "").trim();
+  assertCoverAlt(text, "coverOurs");
+  return { ...rendition.local, alt: text };
 }
 
 function emitReason(rendition) {
@@ -569,8 +571,8 @@ async function main() {
   const hotEntries = hotStories.map((row, i) => {
     const names = row.card.sources?.map((s) => s.name).filter(Boolean) || [];
     const leadRendition = i === 0 ? renditions[`hot-${row.card.id}`] : null;
-    const coverOurs = i === 0 ? coverView(row.picked, leadRendition) : null;
     const copy = publicCopyFor(row.card.id, row.card);
+    const coverOurs = i === 0 ? coverView(row.picked, leadRendition, copy.alt) : null;
     return {
       rank: i + 1,
       itemId: row.card.id,
@@ -603,8 +605,8 @@ async function main() {
   });
 
   const dailyRendition = renditions[`daily-${dailyLeadCard.id}`];
-  const dailyOurs = coverView(dailyPicked, dailyRendition);
   const dailyCopy = publicCopyFor(dailyLeadCard.id, dailyLeadCard);
+  const dailyOurs = coverView(dailyPicked, dailyRendition, dailyCopy.alt);
   const generated = applyStoryDigest({
     sparkHours: SPARK_HOURS,
     rankWindowHours: RANK_WINDOW_HOURS,
