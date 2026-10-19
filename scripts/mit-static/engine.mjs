@@ -117,6 +117,23 @@ function asArray(value) {
   return Array.isArray(value) ? value : [];
 }
 
+export const DEFAULT_FILL_LABEL = "[低于门槛补位]";
+const FILL_SUMMARY_MARK = "（低于门槛）";
+
+export function visibleFillTitle(title, below, label = DEFAULT_FILL_LABEL) {
+  if (typeof title !== "string" || !title) return title;
+  if (title.includes("低于门槛")) return title;
+  if (!below) return title;
+  return `${label}${title}`;
+}
+
+export function visibleFillSummary(summary, below) {
+  if (!below) return summary ?? null;
+  if (typeof summary === "string" && summary.includes("低于门槛")) return summary;
+  if (!summary) return FILL_SUMMARY_MARK;
+  return `${summary}${FILL_SUMMARY_MARK}`;
+}
+
 function normalizeItem(raw) {
   if (!raw || typeof raw !== "object") {
     throw new Error("timeline card is missing item");
@@ -138,6 +155,7 @@ function normalizeItem(raw) {
     channel: raw.channel === "x" ? "x" : "news",
     x: raw.x ?? null,
     sameEvent: raw.sameEvent ?? null,
+    belowThreshold: raw.belowThreshold === true,
   };
 }
 
@@ -199,6 +217,7 @@ export function normalizeStripEntry(raw, index = 0) {
     itemId: raw.itemId ?? null,
     participants: asArray(raw.participants).map(normalizeParticipant),
     participantCount: typeof raw.participantCount === "number" ? raw.participantCount : asArray(raw.participants).length,
+    belowThreshold: raw.belowThreshold === true,
   };
 }
 
@@ -219,6 +238,7 @@ function stripFromHotEntries(entries) {
       itemId: entry.itemId ?? null,
       participants: entry.participants,
       participantCount: entry.participantCount,
+      belowThreshold: entry.belowThreshold,
     }),
   );
 }
@@ -252,6 +272,7 @@ export function normalizeHot(raw) {
         latest: entry.latest ?? null,
         cover: rank === 1 ? resolveCover(entry) : null,
         images: undefined,
+        belowThreshold: entry.belowThreshold === true,
       };
     }),
   };
@@ -274,6 +295,7 @@ function normalizeCitation(raw, index = 0) {
     otherSources: raw.otherSources,
     related: Array.isArray(raw.related) ? raw.related.map(normalizeCitation) : undefined,
     followUp: raw.followUp,
+    belowThreshold: raw.belowThreshold === true,
   };
 }
 
@@ -385,8 +407,9 @@ export function resolveSiteData({ fixture, engine }) {
     fixture.today;
 
   const meta = engine?.meta && typeof engine.meta === "object" ? engine.meta : {};
+  const fillLabel = typeof meta.fill_label === "string" ? meta.fill_label : DEFAULT_FILL_LABEL;
 
-  return applyImagePolicy({
+  const resolved = applyImagePolicy({
     source,
     present,
     timeline: mergedTimeline,
@@ -398,8 +421,34 @@ export function resolveSiteData({ fixture, engine }) {
     asOfLabel: typeof meta.data_as_of_label === "string" ? meta.data_as_of_label : null,
     passedCount: typeof meta.passed_count === "number" ? meta.passed_count : null,
     fillCount: typeof meta.fill_count === "number" ? meta.fill_count : null,
-    fillLabel: typeof meta.fill_label === "string" ? meta.fill_label : "[低于门槛补位]",
+    fillLabel,
   });
+  return decorateFillLabels(resolved, fillLabel);
+}
+
+function decorateFillLabels(data, fillLabel) {
+  const cite = (item) => {
+    if (!item || typeof item !== "object") return item;
+    const below = item.belowThreshold === true;
+    item.title = visibleFillTitle(item.title, below, fillLabel);
+    if ("summary" in item) item.summary = visibleFillSummary(item.summary, below);
+    if ("reason" in item) item.reason = visibleFillTitle(item.reason, below, fillLabel);
+    return item;
+  };
+  for (const card of data.timeline.cards) cite(card.item);
+  if (Array.isArray(data.timeline.hot)) {
+    for (const entry of data.timeline.hot) {
+      entry.title = visibleFillTitle(entry.title, entry.belowThreshold === true, fillLabel);
+    }
+  }
+  for (const entry of data.hot.entries) {
+    const below = entry.belowThreshold === true;
+    entry.story = { ...entry.story, title: visibleFillTitle(entry.story.title, below, fillLabel) };
+  }
+  data.daily.highlights.forEach(cite);
+  data.daily.sections.forEach((section) => section.items.forEach(cite));
+  data.daily.flashes.forEach(cite);
+  return data;
 }
 
 export function fixtureNote({ source, present, asOf, meta }) {

@@ -9,7 +9,7 @@
   "leadParagraph": "DeepSeek 发布开放权重 V4.1-Flash-1017，基准更好、输出更短，并开放 Search/Fetch API。"
  },
  "leadItemId": "sha256:931ff0f85ef4bf70",
- "overview": "本轮 34 条，只有 DeepSeek 开放权重 V4.1-Flash-1017 过闸 A；另 2 条为低于门槛的预览条目（单源最多 2 条），校准前不凑满 5 条。",
+ "overview": "DeepSeek 发布开放权重 V4.1-Flash-1017，基准更好、输出更短，并开放 Search/Fetch API。",
  "highlights": [
   {
    "itemId": "sha256:931ff0f85ef4bf70",
@@ -25,27 +25,29 @@
   },
   {
    "itemId": "sha256:8b14a22385d7ebcd",
-   "title": "[低于门槛补位]OpenAI 公布 4 起模型自行越权案例",
-   "summary": "据 The Decoder，OpenAI 公布 4 起模型在训练或测试中自行越过安全边界的案例。（低于门槛）",
+   "title": "OpenAI 公布 4 起模型自行越权案例",
+   "summary": "据 The Decoder，OpenAI 公布 4 起模型在训练或测试中自行越过安全边界的案例。",
    "sourceName": "The Decoder",
    "sourceUrl": "https://the-decoder.com/an-openai-model-hacked-a-government-site-grabbed-24-years-of-hospital-data-and-kept-it-quiet/",
    "sourceIconUrl": null,
    "firstParty": false,
    "publishedAt": "2026-10-17T15:36:11.000Z",
    "available": true,
-   "otherSources": 0
+   "otherSources": 0,
+   "belowThreshold": true
   },
   {
    "itemId": "sha256:0dd91801c3b6e853",
-   "title": "[低于门槛补位]Interconnects：美国开源权重模型重回前沿",
-   "summary": "Nathan Lambert 认为美国开源权重模型本周向前沿迈进：Meta 发布 Muse Spark Open，Reflection 发布首个模型 Beam。（低于门槛）",
+   "title": "Interconnects：美国开源权重模型重回前沿",
+   "summary": "Nathan Lambert 认为美国开源权重模型本周向前沿迈进：Meta 发布 Muse Spark Open，Reflection 发布首个模型 Beam。",
    "sourceName": "Interconnects (Nathan Lambert)",
    "sourceUrl": "https://www.interconnects.ai/p/meta-shakes-up-the-frontiers-open",
    "sourceIconUrl": null,
    "firstParty": false,
    "publishedAt": "2026-10-17T14:06:54.000Z",
    "available": true,
-   "otherSources": 0
+   "otherSources": 0,
+   "belowThreshold": true
   }
  ],
  "sections": [
@@ -73,15 +75,16 @@
    "items": [
     {
      "itemId": "sha256:8b14a22385d7ebcd",
-     "title": "[低于门槛补位]OpenAI 公布 4 起模型自行越权案例",
-     "summary": "据 The Decoder，OpenAI 公布 4 起模型在训练或测试中自行越过安全边界的案例。（低于门槛）",
+     "title": "OpenAI 公布 4 起模型自行越权案例",
+     "summary": "据 The Decoder，OpenAI 公布 4 起模型在训练或测试中自行越过安全边界的案例。",
      "sourceName": "The Decoder",
      "sourceUrl": "https://the-decoder.com/an-openai-model-hacked-a-government-site-grabbed-24-years-of-hospital-data-and-kept-it-quiet/",
      "sourceIconUrl": null,
      "firstParty": false,
      "publishedAt": "2026-10-17T15:36:11.000Z",
      "available": true,
-     "otherSources": 0
+     "otherSources": 0,
+     "belowThreshold": true
     }
    ]
   },
@@ -91,15 +94,16 @@
    "items": [
     {
      "itemId": "sha256:0dd91801c3b6e853",
-     "title": "[低于门槛补位]Interconnects：美国开源权重模型重回前沿",
-     "summary": "Nathan Lambert 认为美国开源权重模型本周向前沿迈进：Meta 发布 Muse Spark Open，Reflection 发布首个模型 Beam。（低于门槛）",
+     "title": "Interconnects：美国开源权重模型重回前沿",
+     "summary": "Nathan Lambert 认为美国开源权重模型本周向前沿迈进：Meta 发布 Muse Spark Open，Reflection 发布首个模型 Beam。",
      "sourceName": "Interconnects (Nathan Lambert)",
      "sourceUrl": "https://www.interconnects.ai/p/meta-shakes-up-the-frontiers-open",
      "sourceIconUrl": null,
      "firstParty": false,
      "publishedAt": "2026-10-17T14:06:54.000Z",
      "available": true,
-     "otherSources": 0
+     "otherSources": 0,
+     "belowThreshold": true
     }
    ]
   }
@@ -107,66 +111,66 @@
  "flashes": [
   {
    "itemId": "sha256:3174ec059a8695ea",
-   "title": "[低于门槛补位]4 个 Gemini 4 Argon 智能体无人协助通关《我的世界》",
+   "title": "4 个 Gemini 4 Argon 智能体无人协助通关《我的世界》",
    "summary": null,
    "sourceName": "The Decoder",
    "sourceUrl": "https://the-decoder.com/four-gemini-4-argon-agents-beat-minecraft-without-any-human-help/",
    "sourceIconUrl": null,
    "firstParty": false,
    "publishedAt": "2026-10-18T12:39:51.000Z",
-   "available": true
+   "available": true,
+   "belowThreshold": true
   },
   {
    "itemId": "sha256:584592e06b7b9958",
-   "title": "[低于门槛补位]Claude 30 分钟内解开 NIST 曲线种子 25 年谜题",
+   "title": "Claude 30 分钟内解开 NIST 曲线种子 25 年谜题",
    "summary": null,
    "sourceName": "The Decoder",
    "sourceUrl": "https://the-decoder.com/anthropics-claude-cracks-a-25-year-old-nsa-cryptography-mystery-in-under-30-minutes/",
    "sourceIconUrl": null,
    "firstParty": false,
    "publishedAt": "2026-10-17T14:42:56.000Z",
-   "available": true
+   "available": true,
+   "belowThreshold": true
   },
   {
    "itemId": "sha256:e13a46dd16dbc25c",
-   "title": "[低于门槛补位]研究：AI 智能体会在工作报告中隐瞒错误",
+   "title": "研究：AI 智能体会在工作报告中隐瞒错误",
    "summary": null,
    "sourceName": "The Decoder",
    "sourceUrl": "https://the-decoder.com/ai-models-hide-mistakes-in-their-own-work-reports-but-one-sentence-in-your-prompt-can-help/",
    "sourceIconUrl": null,
    "firstParty": false,
    "publishedAt": "2026-10-17T09:54:36.000Z",
-   "available": true
+   "available": true,
+   "belowThreshold": true
   },
   {
    "itemId": "sha256:7fc73ab44f09b73f",
-   "title": "[低于门槛补位]清华等开源智能体操作系统 PilotDeck 2.0",
+   "title": "清华等开源智能体操作系统 PilotDeck 2.0",
    "summary": null,
    "sourceName": "量子位",
    "sourceUrl": "https://www.qbitai.com/2026/10/503935.html",
    "sourceIconUrl": null,
    "firstParty": false,
    "publishedAt": "2026-10-17T12:10:35.000Z",
-   "available": true
+   "available": true,
+   "belowThreshold": true
   },
   {
    "itemId": "sha256:8e1750f4fd35f601",
-   "title": "[低于门槛补位]Taste-Bench：AI 智能体长期决策“品味”不佳",
+   "title": "Taste-Bench：AI 智能体长期决策“品味”不佳",
    "summary": null,
    "sourceName": "The Decoder",
    "sourceUrl": "https://the-decoder.com/ai-agents-have-bad-taste-in-long-term-decisions-and-a-new-benchmark-proves-it/",
    "sourceIconUrl": null,
    "firstParty": false,
    "publishedAt": "2026-10-18T08:49:41.000Z",
-   "available": true
+   "available": true,
+   "belowThreshold": true
   }
  ],
- "cover": {
-  "url": "https://the-decoder.com/wp-content/uploads/2026/06/deepseek_red_whale.png",
-  "width": 2048,
-  "height": 1152,
-  "caption": null
- },
+ "cover": null,
  "metrics": {
   "totalEvents": 3,
   "sourcesCount": 3,

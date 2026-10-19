@@ -131,6 +131,48 @@ try {
   assert.equal(engine.hot.entries[0].heat, 10.7);
   assert.match(engine.timeline.cards[0].item.title, /\[低于门槛补位\]/);
   assert.match(engine.hot.entries[0].story.title, /\[低于门槛补位\]/);
+
+  writeFileSync(path.join(dir, "timeline.json"), JSON.stringify({
+    cards: [{
+      key: "flag",
+      anchorAt: "2026-10-19T00:00:00.000Z",
+      item: {
+        id: "flag",
+        title: "No prefix in export",
+        summary: "plain",
+        reason: "r",
+        source: { name: "E" },
+        publishedAt: "2026-10-19T00:00:00.000Z",
+        timelineAt: "2026-10-19T00:00:00.000Z",
+        category: "model",
+        tags: [],
+        selected: true,
+        belowThreshold: true,
+      },
+    }],
+  }));
+  writeFileSync(path.join(dir, "hot-strip.json"), JSON.stringify([
+    { rank: 1, title: "strip no prefix", heat: 1, trend: "flat", storyPublicId: "st", itemId: "flag", participants: [], participantCount: 0, belowThreshold: true },
+  ]));
+  writeFileSync(path.join(dir, "daily.json"), JSON.stringify({
+    kind: "daily",
+    key: "2026-10-19",
+    title: "d",
+    lead: { title: "lead", leadParagraph: "p" },
+    leadItemId: "lead-1",
+    highlights: [
+      { itemId: "lead-1", title: "passed", sourceName: "E", sourceUrl: "https://example.com/d" },
+      { itemId: "fill-1", title: "daily fill", summary: "s", sourceName: "E", sourceUrl: "https://example.com/d", belowThreshold: true },
+    ],
+    sections: [{ label: "模型", items: [{ itemId: "lead-1", title: "passed", sourceName: "E", sourceUrl: "https://example.com/d" }] }],
+    cover: null,
+  }));
+  const flagged = resolveSiteData({ fixture, engine: readEngineDir(dir) });
+  assert.match(flagged.timeline.cards[0].item.title, /^\[低于门槛补位\]/);
+  assert.match(flagged.timeline.hot[0].title, /^\[低于门槛补位\]/);
+  assert.match(flagged.daily.highlights[1].title, /^\[低于门槛补位\]/);
+  assert.match(flagged.daily.highlights[1].summary, /（低于门槛）/);
+  assert.equal(flagged.daily.highlights[0].title, "passed");
 } finally {
   rmSync(dir, { recursive: true, force: true });
 }

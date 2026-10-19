@@ -15,6 +15,7 @@
 | `daily-index.json` | `dailyIndex` | `ReportNavigationEntry[]`，新→旧 |
 | `fixture.json` | 全部 | `{timeline, hotStrip, hot, dailyIndex, daily, today}` 一次读入 |
 | `meta.json` | （新增） | 见下 |
+| `daily/YYYY-MM-DD.json` | 当日日报归档 | 与 `daily.json` 同形；本批 `daily/2026-10-19.json` 与 `daily.json` 相同。加载器仍读根目录 `daily.json`。 |
 
 分片文件优先于 `fixture.json` 同名切片。只有 `fixture.json` 也算引擎模式。
 
@@ -51,7 +52,7 @@ interface EngineMeta {
   today: string;                 // YYYY-MM-DD
   passed_count: number;
   fill_count: number;
-  fill_label: string;            // 「[低于门槛补位]」
+  fill_label?: string;           // 可选；缺省时加载器用「[低于门槛补位]」
   spark_points: number;          // 25
 }
 ```
@@ -61,6 +62,7 @@ interface EngineMeta {
 ## 渲染规则（产品）
 
 - 标题里的 `「[低于门槛补位]」`、日报摘要里的 `「（低于门槛）」` **原样保留**，不得剥离或隐藏。
+- 新导出若只给 `belowThreshold: true`、标题不再带前缀：加载器在渲染前补上 `[低于门槛补位]` / `（低于门槛）`。
 - 热度、分数原样进入壳层，不改写成 0、不因补位隐藏。
 - 本批：过线 1 条 / 补位 7 条。
 
@@ -69,7 +71,7 @@ interface EngineMeta {
 只两处大图：
 
 1. 热点 **NO.01** 的 `cover`（本批为 `null`，走无图 + 24h spark 面板）
-2. 日报头条 `cover`（本批原文热链 `2048×1152`）
+2. 日报头条 `cover`（本批 v5 价值门为 `null`，走无图报纸布局）
 
 规则：第一张 `width >= 480`。`rank !== 1` 的 cover 丢弃。`url` 热链原文，不走付费代理；加载失败时壳层去掉该图（无图态）。
 
