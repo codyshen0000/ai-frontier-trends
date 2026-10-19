@@ -210,6 +210,18 @@ assert(hotPage.includes("AI 热点榜 · 前沿趋势") || hotPage.includes("热
 assert(hotPage.includes('href="../assets/app.css"'), "/hot/ CSS is ../assets/app.css");
 assert(hotPage.includes('href="../"') && hotPage.includes('href="../daily/"'), "/hot/ links to 精选 and /daily/");
 assert(hotPage.includes("发酵中"), "hot page keeps fixture 发酵中 chips");
+assert(hotPage.includes("48") && hotPage.includes("小时"), "hot ranking window remains 48h");
+assert(hotPage.includes("24 小时") || hotPage.includes("24小时") || hotPage.includes("小时走势"), "hot sparkline window is 24h");
+const hotCoverImgs = [...hotPage.matchAll(/<img\b[^>]*>/g)].filter((m) => /assets\/covers\//.test(m[0]));
+assert(hotCoverImgs.length <= 1, `hot paints at most one cover (${hotCoverImgs.length})`);
+if (hotCoverImgs.length === 1) {
+  assert(hotCoverImgs[0][0].includes("720w") && hotCoverImgs[0][0].includes("1200w") && hotCoverImgs[0][0].includes("1600w"), "hot lead srcSet is MIT hero 720/1200/1600");
+  assert(hotCoverImgs[0][0].includes("../assets/covers/"), "hot lead pictures are local build-time thumbs");
+  assert(/\bwidth="\d+"/.test(hotCoverImgs[0][0]) && /\bheight="\d+"/.test(hotCoverImgs[0][0]), "hot cover has width/height");
+  assert(!/src="https?:\/\//.test(hotCoverImgs[0][0]), "hot cover is not a hotlink");
+} else {
+  assert(!/>24 小时热度</.test(hotPage), "empty hot cover slot is not filled with a heat panel");
+}
 assert(!leftoverHtmlHref.test(hotPage), "/hot/ has no leftover .html page hrefs");
 assert(!hotPage.includes("AIHOT") && !hotPage.includes("MyHOT"), "hot page has no *HOT product brand");
 
@@ -228,6 +240,25 @@ assert(dailyPage.includes('href="../"') && dailyPage.includes('href="../hot/"'),
 assert(dailyPage.includes(">日报<") && dailyPage.includes('aria-current="page"'), "daily marks 日报 current");
 assert(!leftoverHtmlHref.test(dailyPage), "/daily/ has no leftover .html page hrefs");
 assert(!dailyPage.includes("AIHOT") && !dailyPage.includes("MyHOT"), "daily has no *HOT product brand");
+const dailyCoverImgs = [...dailyPage.matchAll(/<img\b[^>]*>/g)].filter((m) => /assets\/covers\//.test(m[0]));
+const emptyHotPreview = join(root, "preview", "mit-static", "hot-empty.html");
+const emptyDailyPreview = join(root, "preview", "mit-static", "daily-empty.html");
+if (existsSync(emptyHotPreview)) {
+  const emptyHot = readFileSync(emptyHotPreview, "utf8");
+  assert(!emptyHot.includes("assets/covers/"), "hot-empty preview has no cover assets");
+  assert(!/>24 小时热度</.test(emptyHot), "hot-empty preview does not fill the cover slot with HeatPanel");
+}
+if (existsSync(emptyDailyPreview)) {
+  const emptyDaily = readFileSync(emptyDailyPreview, "utf8");
+  assert(!emptyDaily.includes("assets/covers/"), "daily-empty preview has no cover assets");
+}
+assert(dailyCoverImgs.length <= 1, `daily paints at most one headline cover (${dailyCoverImgs.length})`);
+if (dailyCoverImgs.length === 1) {
+  assert(dailyCoverImgs[0][0].includes("720w") && dailyCoverImgs[0][0].includes("1200w") && dailyCoverImgs[0][0].includes("1600w"), "daily headline srcSet is MIT hero 720/1200/1600");
+  assert(dailyCoverImgs[0][0].includes("../assets/covers/"), "daily headline uses local build-time thumbs");
+  assert(/\bwidth="\d+"/.test(dailyCoverImgs[0][0]) && /\bheight="\d+"/.test(dailyCoverImgs[0][0]), "daily cover has width/height");
+  assert(!/src="https?:\/\//.test(dailyCoverImgs[0][0]), "daily cover is not a hotlink");
+}
 
 assert(/body\{[^}]*max-width:\s*\d+px;[^}]*margin:[^;]*auto/.test(timelineRaw), "timeline source keeps a centered reading column");
 assert(/main\{[^}]*max-width:\s*\d+px;[^}]*margin:[^;]*auto/.test(liveRaw), "live source keeps a centered main column");

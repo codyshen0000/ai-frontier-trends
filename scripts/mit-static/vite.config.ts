@@ -26,6 +26,7 @@ export default defineConfig({
       "@aihot/contracts/time": path.resolve(mit, "packages/contracts/src/time.ts"),
       "@aihot/contracts/site-config": path.resolve(mit, "packages/contracts/src/site-config.ts"),
       "@aihot/industry/taxonomy": path.resolve(here, "src/industry-taxonomy.ts"),
+      "@l2/constants": path.resolve(here, "src/constants.ts"),
     },
   },
   esbuild: { jsx: "automatic", jsxDev: false },

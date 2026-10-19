@@ -10,7 +10,19 @@ import HotPage from "../../../vendor/mit/apps/web/app/routes/hot";
 import { ReportLayout } from "../../../vendor/mit/apps/web/app/features/report/ReportLayout";
 import { ReportPaper, reportOutline } from "../../../vendor/mit/apps/web/app/features/report/ReportPaper";
 import { StaticLocation } from "./react-router";
+import type { HotResponse, ReportDetail } from "@aihot/contracts/site";
 import { daily, dailyIndex, hot, timeline, today } from "./fixture";
+
+function hotWithoutCover(data: HotResponse): HotResponse {
+  return {
+    ...data,
+    entries: data.entries.map((entry, i) => (i === 0 ? { ...entry, cover: null } : entry)),
+  };
+}
+
+function dailyWithoutCover(data: ReportDetail): ReportDetail {
+  return { ...data, cover: null };
+}
 
 function Shell({ pathname, children }: { pathname: string; children: ReactNode }) {
   return (
@@ -53,19 +65,20 @@ export function HomeScreen() {
   );
 }
 
-export function HotScreen() {
+export function HotScreen({ emptyCover = false }: { emptyCover?: boolean }) {
   return (
     <Shell pathname="/hot">
-      <HotPage hot={hot} />
+      <HotPage hot={emptyCover ? hotWithoutCover(hot) : hot} />
     </Shell>
   );
 }
 
-export function DailyScreen() {
+export function DailyScreen({ emptyCover = false }: { emptyCover?: boolean }) {
+  const report = emptyCover ? dailyWithoutCover(daily) : daily;
   return (
     <Shell pathname="/daily">
-      <ReportLayout kind="daily" index={dailyIndex} current={daily.key} today={today} outline={reportOutline(daily)}>
-        <ReportPaper report={daily} index={dailyIndex} />
+      <ReportLayout kind="daily" index={dailyIndex} current={report.key} today={today} outline={reportOutline(report)}>
+        <ReportPaper report={report} index={dailyIndex} />
       </ReportLayout>
     </Shell>
   );
