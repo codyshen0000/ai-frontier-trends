@@ -7,18 +7,20 @@ import { clipSummary, extractLiveCards, rankHot, selectPins } from "./live_cards
 import { injectHtmlFile } from "./build.mjs";
 import {
   BANNED_PUBLIC_COPY,
-  PUBLIC_COPY_SCAN_EXTS,
   assertCoverRecords,
   assertDistPublicCopy,
   assertNoBannedPublicCopyInDir,
+  assertNoRootAbsoluteUrls,
   assertWeeklyMetaCopy,
   assertWeeklyMetaSources,
   assertWeeklyReports,
   collectBannedPublicCopyHits,
+  collectRootAbsoluteUrlHits,
   coverAltProblem,
   coverEntries,
   walkPublicCopyFiles,
 } from "./story_digest.mjs";
+import { assertStandaloneReportCharts } from "./weekly_charts.mjs";
 import {
   assertPublicLinks,
   collectExampleComHits,
@@ -427,6 +429,25 @@ assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-we
     assert(weeklyReport.includes(`srcset="charts/${name}.webp"`) || weeklyReport.includes(`src="charts/${name}.png"`), `content weekly report references ${name}`);
   }
   assert(!weeklyDist.includes("data:image/png;base64"), "dist weekly issue no longer embeds PNG data URIs");
+  for (const date of ["2026-10-12", "2026-10-18"]) {
+    const reportDist = readFileSync(join(distDir, "weekly", date, "report.html"), "utf8");
+    try {
+      assertStandaloneReportCharts(reportDist);
+      assert(true, `dist weekly ${date}/report.html embeds WebP data URIs`);
+    } catch (err) {
+      assert(false, err.message);
+    }
+    assert(
+      /<picture><source type="image\/webp" srcset="data:image\/webp;base64,/.test(reportDist),
+      `dist weekly ${date}/report.html keeps weekly <picture> + WebP data URI format`,
+    );
+    assert(
+      !/\b(?:src|srcset|imagesrcset)=["'](?!data:image\/webp;base64,)[^"']+["']/.test(
+        reportDist.replace(/<script\b[\s\S]*?<\/script>/gi, ""),
+      ),
+      `dist weekly ${date}/report.html has no external image src`,
+    );
+  }
 }
 
 try {
@@ -546,7 +567,7 @@ expectThrow(
   try {
     writeFileSync(join(tmp, "skin-raw.css"), "/* aihot daily IA */ body{color:red}");
     let hits = 0;
-    for (const file of walkPublicCopyFiles(tmp, PUBLIC_COPY_SCAN_EXTS)) {
+    for (const file of walkPublicCopyFiles(tmp)) {
       if (/aihot|myhot/i.test(readFileSync(file, "utf8"))) hits += 1;
     }
     assert(hits > 0, "negative: aihot in skin-raw.css fails the brand scan");
@@ -562,13 +583,46 @@ for (const hit of distCopyHits) {
 }
 assert(
   distCopyHits.length === 0,
-  `dist html/json/xml/md/svg/js/css/txt have 0 banned-word hits (${distCopyHits.length} hits across ${distCopyFiles.length} files)`,
+  `dist text files (including .map) have 0 banned-word hits (${distCopyHits.length} hits across ${distCopyFiles.length} files)`,
 );
 try {
   assertDistPublicCopy(distDir);
-  assert(true, "assertDistPublicCopy matches the dist html/json/xml/md/svg/js/css/txt scan");
+  assert(true, "assertDistPublicCopy matches the all-text dist scan including .map");
 } catch (err) {
   assert(false, err.message);
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "ia-banned-map-"));
+  try {
+    writeFileSync(join(tmp, "hydrate.js.map"), '{"mappings":"","note":"本批"}');
+    expectThrow(
+      () => assertNoBannedPublicCopyInDir(tmp, { prefix: "dist/" }),
+      /hydrate\.js\.map[\s\S]*本批/,
+      "negative: banned word in a dist .map file fails verify:ia",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "ia-root-abs-"));
+  try {
+    writeFileSync(join(tmp, "starred.html"), '<a href="/weekly/2026-10-18/">周报</a>');
+    expectThrow(
+      () => assertNoRootAbsoluteUrls(tmp, { prefix: "dist/" }),
+      /starred\.html[\s\S]*\/weekly\/2026-10-18\//,
+      "negative: injected root-absolute in-site URL fails verify:ia",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const rootAbs = collectRootAbsoluteUrlHits(distDir, { prefix: "dist/" });
+  for (const hit of rootAbs) {
+    console.error(`FAIL root-absolute ${hit.kind} «${hit.value}» in ${hit.file}`);
+  }
+  assert(rootAbs.length === 0, `in-site URLs in dist do not start with / (${rootAbs.length})`);
 }
 
 function walkHtmlFiles(dir, acc = []) {
@@ -710,7 +764,7 @@ function walkFiles(dir, pred, acc = []) {
 }
 
 let brandHits = 0;
-for (const file of walkPublicCopyFiles(distDir, PUBLIC_COPY_SCAN_EXTS)) {
+for (const file of walkPublicCopyFiles(distDir)) {
   const text = readFileSync(file, "utf8");
   const rel = `dist/${relative(distDir, file).split("\\").join("/")}`;
   const brand = text.match(BRAND_RE);
@@ -719,7 +773,7 @@ for (const file of walkPublicCopyFiles(distDir, PUBLIC_COPY_SCAN_EXTS)) {
     console.error(`FAIL brand «${brand[0]}» in ${rel}`);
   }
 }
-assert(brandHits === 0, `brand aihot/myhot scan of dist html/json/xml/md/svg/js/css/txt is 0 (${brandHits})`);
+assert(brandHits === 0, `brand aihot/myhot scan of all dist text (including .map) is 0 (${brandHits})`);
 void BANNED_PUBLIC_COPY;
 
 let fixtureLeaks = 0;
@@ -858,6 +912,36 @@ try {
   assert(true, "dist public links: no example.com, no self-page href, no home fallback");
 } catch (err) {
   assert(false, err.message);
+}
+
+{
+  const hydrate = readFileSync(join(distDir, "assets", "hydrate.js"), "utf8");
+  const starred = readFileSync(join(distDir, "starred", "index.html"), "utf8");
+  assert(/replace\(\/\^\\\.\//.test(hydrate) && /replace\(\/\^\//.test(hydrate), "hydrate strips leading ./ and / from saved starred urls");
+  assert(starred.includes('"base":"../"') || starred.includes('"base": "../"'), "starred page uses site-root base ../");
+  assert(hydrate.includes("暂无符合条件的内容"), "hydrate empty filter copy is 暂无符合条件的内容");
+  assert(!hydrate.includes("全部动态"), "hydrate empty state has no fake 全部动态 link");
+}
+
+{
+  const apiIndex = JSON.parse(readFileSync(join(distDir, "api", "v1", "index.json"), "utf8"));
+  const weeklyIndex = JSON.parse(readFileSync(join(distDir, "api", "v1", "weekly", "index.json"), "utf8"));
+  const weeklyItem = JSON.parse(readFileSync(join(distDir, "api", "v1", "weekly", "2026-10-18.json"), "utf8"));
+  for (const file of apiIndex.files || []) {
+    assert(file.path && !String(file.path).startsWith("/"), `api/v1/index.json path is relative (${file.path})`);
+  }
+  for (const item of weeklyIndex.items || []) {
+    assert(item.path && !String(item.path).startsWith("/"), `weekly/index.json item.path is relative (${item.path})`);
+  }
+  assert(weeklyItem.path && !String(weeklyItem.path).startsWith("/"), "weekly/2026-10-18.json path is relative");
+}
+
+{
+  const more = readFileSync(join(distDir, "more", "index.html"), "utf8");
+  const href = (more.match(/<a class="ft-more-card" href="([^"]+)"[^>]*>\s*<h3>研究主页 · 本周主线<\/h3>/) || [])[1];
+  assert(href, "more page has 研究主页 · 本周主线");
+  assert(href.includes("weekly/2026-10-18"), `more 本周主线 points at latest weekly (got ${href})`);
+  assert(href !== "../" && href !== "./", "more 本周主线 is not the home href");
 }
 
 if (failed) {
