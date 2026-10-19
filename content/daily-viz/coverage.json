@@ -1,0 +1,110 @@
+{
+  "day": "2026-10-16",
+  "total": 13,
+  "success": 9,
+  "coverage": 0.6923076923076923,
+  "successIds": [
+    "flux-3-image-klein",
+    "liquid-d1-ultra",
+    "muse-spark-open",
+    "kling-4-0-ga",
+    "gpt-live-1.1",
+    "terminal-rsi",
+    "repforcing",
+    "rsi-nav",
+    "speculative-forcing"
+  ],
+  "fail": [
+    {
+      "id": "mai-base-2",
+      "reason": "no_og",
+      "hook": "Microsoft MAI-Base-2：预训练完成：报道 MoE 约 80B active / 2",
+      "why": "主链无 OG / 正文图",
+      "hosts": [
+        "x.com"
+      ]
+    },
+    {
+      "id": "nemotron-35-super-vl",
+      "reason": "non_image",
+      "hook": "NVIDIA Nemotron 3.5 Super VL（+Bolt 开源簇）：视觉+推理+工具，面向 agent",
+      "why": "候选均未过价值门（non_image）",
+      "hosts": [
+        "x.com"
+      ]
+    },
+    {
+      "id": "agent-reflex",
+      "reason": "no_valuable_image",
+      "hook": "Agent-Reflex：把反思训成元技能并接 OPD：RSD→ReSFT→ORPO",
+      "why": "主链为小红书/无图页等，未找到说明性配图，诚实不挂",
+      "hosts": [
+        "xiaohongshu.com"
+      ]
+    },
+    {
+      "id": "argon-pro-rollout",
+      "reason": "no_valuable_image",
+      "hook": "Gemini 4 Argon：开始给付费 Pro：小红书称 Antigravity 向付费 Google AI Pro 放 Argon 配额【笔记转述】",
+      "why": "主链为小红书/无图页等，未找到说明性配图，诚实不挂",
+      "hosts": [
+        "xiaohongshu.com"
+      ]
+    }
+  ],
+  "reasonCounts": {
+    "no_og": 1,
+    "non_image": 1,
+    "no_valuable_image": 2
+  },
+  "samples": [
+    {
+      "id": "flux-3-image-klein",
+      "hook": "BFL FLUX 3 Image Klein：开源权重落地（5.6B）：单消费级 GPU、原生 4K、bbox 编辑",
+      "source": "https://bfl.ai/blog/flux-3-image-klein",
+      "image": "https://cdn.sanity.io/images/2gpum2i6/production/1cc58ca0649334f7f1557c983b3b219f2bef9379-1888x788.png",
+      "why": "主链正文图支撑钩子「BFL FLUX 3 Image Klein：开源权重落地（5.6B）：单消费级 GPU、原生 4K、bbox 编辑」（score 100）",
+      "reason": "ok"
+    },
+    {
+      "id": "liquid-d1-ultra",
+      "hook": "Liquid AI d1-ultra：决策模型上线：Artificial Analysis Decision Index #1（65）【官方自报】",
+      "source": "https://x.com/liquidai/status/2110777964489285875",
+      "image": "https://pbs.twimg.com/media/HUr4frya0AImlay.jpg?name=orig",
+      "why": "源站推文配图支撑钩子「Liquid AI d1-ultra：决策模型上线：Artificial Analysis Decision Index #1（65）【官方自报】」（score 48）",
+      "reason": "ok"
+    },
+    {
+      "id": "muse-spark-open",
+      "hook": "Meta Muse Spark Open：开源权重落地：总参约 816B、激活约 42B、上下文 1M",
+      "source": "https://x.com/AIatMeta/status/2110779754274292212",
+      "image": "https://pbs.twimg.com/media/HUr8VZAbcAAF9yn.jpg?name=orig",
+      "why": "源站推文配图支撑钩子「Meta Muse Spark Open：开源权重落地：总参约 816B、激活约 42B、上下文 1M」（score 64）",
+      "reason": "ok"
+    },
+    {
+      "id": "kling-4-0-ga",
+      "hook": "Kling 4.0：产品全量上线（非开源权重）：新 UI + MCP/CLI",
+      "source": "https://x.com/Kling_ai/status/2110747537187709424",
+      "image": "https://pbs.twimg.com/media/HUrcseNbQAAYZiF.jpg?name=orig",
+      "why": "源站推文配图支撑钩子「Kling 4.0：产品全量上线（非开源权重）：新 UI + MCP/CLI」（score 64）",
+      "reason": "ok"
+    },
+    {
+      "id": "mai-base-2",
+      "hook": "Microsoft MAI-Base-2：预训练完成：报道 MoE 约 80B active / 2",
+      "source": "https://x.com/i/trending/2110798757025702396",
+      "image": "",
+      "why": "主链无 OG / 正文图",
+      "reason": "no_og"
+    },
+    {
+      "id": "nemotron-35-super-vl",
+      "hook": "NVIDIA Nemotron 3.5 Super VL（+Bolt 开源簇）：视觉+推理+工具，面向 agent",
+      "source": "https://x.com/nvidia/status/2110750157272719562",
+      "image": "",
+      "why": "候选均未过价值门（non_image）",
+      "reason": "non_image"
+    }
+  ]
+}
