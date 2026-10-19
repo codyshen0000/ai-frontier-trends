@@ -1,6 +1,6 @@
 /** Idempotent live.html → 精选 homepage transform. Source markup is not edited. */
 import { extractLiveSpotlight } from "./extract.mjs";
-import { extractLiveCards, formatZhDate, groupByDay, rankHot, selectPins } from "./live_cards.mjs";
+import { clipSummary, extractLiveCards, formatZhDate, groupByDay, rankHot, selectPins } from "./live_cards.mjs";
 
 const CURATE_START = "<!--ds-live-curate:start-->";
 const CURATE_END = "<!--ds-live-curate:end-->";
@@ -14,7 +14,7 @@ export function stripLiveCurate(html) {
     .replace(new RegExp(`<\\/div>\\s*${ARCHIVE_END}`, "i"), "");
 }
 
-function sourceLine(card, escapeHtml) {
+function sourceLine(card) {
   if (!card.sources.length) return "来源待核";
   const names = card.sources.map((source) => source.name);
   if (names.length === 1) return names[0];
@@ -31,35 +31,49 @@ function sourceLinks(card, escapeHtml) {
     .join('<span class="ft-dot" aria-hidden="true">·</span>');
 }
 
-function pinCard(card, { escapeHtml, hrefBetween }) {
+function moreHint(card, escapeHtml) {
+  const rest = card.sources.slice(1);
+  if (!rest.length) return "";
+  return `<span class="ft-also" title="${escapeHtml(rest.map((source) => source.name).join("、"))}">另外 ${rest.length} 家</span>`;
+}
+
+function padRank(n) {
+  return String(n).padStart(2, "0");
+}
+
+function nowRow(card, index, { escapeHtml, hrefBetween }) {
   const href = `${hrefBetween("/live/", "/hot/")}#h-${encodeURIComponent(card.id)}`;
   const count = card.sourceCount || 1;
-  return `<a class="ft-pin" href="${href}">
-      <p class="ft-pin-kicker">${escapeHtml(String(count))} 家独立源</p>
-      <h3>${escapeHtml(card.title)}</h3>
-      <p class="ft-pin-meta">${escapeHtml(formatZhDate(card.day).short)} · ${escapeHtml(sourceLine(card, escapeHtml))}</p>
-    </a>`;
+  return `<li>
+      <a class="ft-now-item" href="${href}">
+        <span class="ft-now-n">${padRank(index + 1)}</span>
+        <span class="ft-now-body">
+          <span class="ft-now-title">${escapeHtml(card.title)}</span>
+          <span class="ft-now-meta">${count} 家独立源 · ${escapeHtml(sourceLine(card))}</span>
+        </span>
+      </a>
+    </li>`;
 }
 
 function storyCard(card, escapeHtml) {
   const primary = card.sources[0]?.href || `#c-${card.id}`;
+  const sourceName = card.sources[0]?.name || "来源待核";
+  const sum = clipSummary(card.summary, 96);
   return `<article class="ft-story" id="c-${escapeHtml(card.id)}" data-ft-card data-id="${escapeHtml(card.id)}" data-day="${escapeHtml(card.day)}" data-sources="${card.sourceCount}">
-      <p class="ft-story-kicker">${card.section ? `<span>${escapeHtml(card.section)}</span>` : ""}${card.focus ? `<span class="ft-focus">重点</span>` : ""}</p>
+      <p class="ft-story-kicker"><span class="ft-story-src">${escapeHtml(sourceName)}</span>${card.section ? `<span>${escapeHtml(card.section)}</span>` : ""}${card.focus ? `<span class="ft-focus">重点</span>` : ""}</p>
       <h3><a href="${escapeHtml(primary)}"${card.sources[0] ? ' target="_blank" rel="noopener"' : ""}>${escapeHtml(card.title)}</a></h3>
-      ${card.summary ? `<p class="ft-story-sum">${escapeHtml(card.summary)}</p>` : ""}
+      ${sum ? `<p class="ft-story-sum">${escapeHtml(sum)}</p>` : ""}
       <p class="ft-story-meta">
-        <span>来源：${sourceLinks(card, escapeHtml)}</span>
-        <span>${escapeHtml(card.time || formatZhDate(card.day).short)}</span>
-        <span class="ft-heat">${card.sourceCount} 源</span>
+        <span>${escapeHtml(formatZhDate(card.day).short)}</span>
+        ${moreHint(card, escapeHtml)}
       </p>
     </article>`;
 }
 
 export function renderCuratedHome(cards, meta, { escapeHtml, hrefBetween }) {
-  const pins = selectPins(cards, 4);
-  const pinIds = new Set(pins.map((card) => card.id));
-  const groups = groupByDay(cards, pinIds);
-  const pinHtml = pins.map((card) => pinCard(card, { escapeHtml, hrefBetween })).join("");
+  const pins = selectPins(cards, 5);
+  const groups = groupByDay(cards);
+  const nowHtml = pins.map((card, index) => nowRow(card, index, { escapeHtml, hrefBetween })).join("");
   const feed = groups
     .map(([day, list]) => {
       const label = formatZhDate(day);
@@ -71,18 +85,24 @@ export function renderCuratedHome(cards, meta, { escapeHtml, hrefBetween }) {
     .join("");
 
   const updated = meta.updatedAt ? `更新于 ${escapeHtml(meta.updatedAt)}` : "";
-  return `${CURATE_START}<div class="ft-curate" data-ds-injected="live-curate">
+  const nowPanel = pins.length
+    ? `<section class="ft-now" aria-label="当前热点">
+    <div class="ft-now-head">
+      <h2>当前热点</h2>
+      <p class="ft-now-foot"><a href="${hrefBetween("/live/", "/hot/")}">进热点榜</a><span class="ft-dot" aria-hidden="true">·</span><a href="${hrefBetween("/live/", "/daily/")}">看日报</a></p>
+    </div>
+    <ol class="ft-now-list">${nowHtml}</ol>
+  </section>`
+    : "";
+  return `${CURATE_START}<div class="ft-curate" id="curated" data-ds-injected="live-curate">
   <header class="ft-pagehead">
     <div>
-      <p class="ft-kicker">当前热点</p>
+      <p class="ft-kicker">精选</p>
       <h1>前沿热点看板</h1>
     </div>
     ${updated ? `<p class="ft-updated">${updated}</p>` : ""}
   </header>
-  <section class="ft-pins" aria-label="当前热点">
-    <div class="ft-pin-grid">${pinHtml}</div>
-    <p class="ft-pins-foot"><a href="${hrefBetween("/live/", "/hot/")}">查看热点榜</a><span class="ft-dot" aria-hidden="true">·</span><a href="${hrefBetween("/live/", "/daily/")}">看日报</a></p>
-  </section>
+  ${nowPanel}
   <div class="ft-feed">${feed || `<p class="ft-empty">这一期还没有可展开的精选条目。</p>`}</div>
   <p class="ft-board-link"><a href="#board">查看原始看板（Hub / 主线 / 待交付）</a></p>
 </div>${CURATE_END}`;
@@ -101,27 +121,36 @@ export function curateLivePage(html, ctx) {
     .replace(/<\/main>/i, `</div>${ARCHIVE_END}</main>`);
 }
 
-export function hotPageBody(cards, meta, { escapeHtml }) {
-  const ranked = rankHot(cards);
-  const max = Math.max(1, ...ranked.map((card) => card.sourceCount));
-  const rows = ranked
-    .map((card, index) => {
-      const width = Math.max(12, Math.round((card.sourceCount / max) * 100));
-      return `<li class="ft-rank" id="h-${escapeHtml(card.id)}">
-        <span class="ft-rank-n">${index + 1}</span>
+function hotHero(card, escapeHtml) {
+  const sum = clipSummary(card.summary, 180);
+  return `<article class="ft-hot-hero" id="h-${escapeHtml(card.id)}">
+      <p class="ft-hot-badge"><span class="ft-hot-no">NO.01</span><span class="ft-heat">${card.sourceCount} 家独立源</span></p>
+      <h2>${escapeHtml(card.title)}</h2>
+      ${sum ? `<p class="ft-hot-sum">${escapeHtml(sum)}</p>` : ""}
+      <p class="ft-story-meta">
+        <span>${card.section ? `${escapeHtml(card.section)} · ` : ""}${escapeHtml(formatZhDate(card.day).short)}</span>
+        <span>来源：${sourceLinks(card, escapeHtml)}</span>
+        ${moreHint(card, escapeHtml)}
+      </p>
+    </article>`;
+}
+
+function hotRow(card, index, escapeHtml) {
+  const sum = clipSummary(card.summary, 88);
+  return `<li class="ft-rank ft-hot-row" id="h-${escapeHtml(card.id)}">
+        <span class="ft-rank-n">NO.${padRank(index + 1)}</span>
         <div class="ft-rank-body">
           <h2>${escapeHtml(card.title)}</h2>
-          <p class="ft-rank-meta">${card.sourceCount} 源${card.section ? ` · ${escapeHtml(card.section)}` : ""} · ${escapeHtml(formatZhDate(card.day).short)}</p>
-          ${card.summary ? `<p class="ft-rank-sum">${escapeHtml(card.summary)}</p>` : ""}
-          <p class="ft-story-meta">来源：${sourceLinks(card, escapeHtml)}</p>
-        </div>
-        <div class="ft-rank-heat" title="独立来源 ${card.sourceCount}">
-          <span style="width:${width}%"></span>
-          <em>${card.sourceCount}</em>
+          ${sum ? `<p class="ft-rank-sum">${escapeHtml(sum)}</p>` : ""}
+          <p class="ft-rank-meta"><span class="ft-heat">${card.sourceCount} 家独立源</span>${card.section ? ` · ${escapeHtml(card.section)}` : ""} · ${escapeHtml(formatZhDate(card.day).short)}${card.sourceCount > 1 ? ` · 另外 ${card.sourceCount - 1} 家` : ""}</p>
         </div>
       </li>`;
-    })
-    .join("");
+}
+
+export function hotPageBody(cards, meta, { escapeHtml }) {
+  const ranked = rankHot(cards, { limit: 10 });
+  const hero = ranked[0] ? hotHero(ranked[0], escapeHtml) : "";
+  const rest = ranked.slice(1).map((card, index) => hotRow(card, index + 1, escapeHtml)).join("");
 
   return `<header class="ft-pagehead">
     <div>
@@ -130,8 +159,13 @@ export function hotPageBody(cards, meta, { escapeHtml }) {
     </div>
     ${meta.updatedAt ? `<p class="ft-updated">更新于 ${escapeHtml(meta.updatedAt)}</p>` : ""}
   </header>
-  <p class="ft-lede">取自当前看板存档窗，热度只计独立来源，不使用可刷的点赞或转发。</p>
-  <ol class="ft-rank-list">${rows || `<li class="ft-empty">这一期还没有可排名的条目。</li>`}</ol>`;
+  <p class="ft-lede">取自当前看板存档窗的前 10 条。热度只计独立来源，没有 48 小时讨论热度引擎，不编造涨跌或热度分。</p>
+  ${hero || `<p class="ft-empty">这一期还没有可排名的条目。</p>`}
+  ${rest ? `<ol class="ft-rank-list" aria-label="NO.02 至 NO.10">${rest}</ol>` : ""}
+  <aside class="ft-hot-note">
+    <h2>热度怎么标的</h2>
+    <p>同一条里每家独立域名只算一次。官方博客、仓库、论文页和社交帖分开计数。没有历史快照时不画走势，也不用讨论增速标签。</p>
+  </aside>`;
 }
 
 export function morePageBody({ hrefBetween, escapeHtml }) {
@@ -185,7 +219,7 @@ export function morePageBody({ hrefBetween, escapeHtml }) {
       <h1>研究资产与工具</h1>
     </div>
   </header>
-  <p class="ft-lede">Studio 和专题不占首页。主线、信号、权重和时间线都从这里进。</p>
+  <p class="ft-lede">时间线、周报、信号和权重收在这里。Studio 和专题不占首页。</p>
   ${blocks}`;
 }
 

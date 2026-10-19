@@ -2,12 +2,14 @@
 
 给 Cody 验收用的自包含静态包：精选 `/live/`、日报 `/daily/`、热点 `/hot/`、更多 `/more/`，以及皮肤 CSS/JS。
 
-**jsDelivr 的 `.html` 是 `text/plain` + nosniff，Chrome 只显示源码，不要把 HTML 预览链指过去。** CSS/JS 的 MIME 正常，日报可渲染页用 `standalone.html`（绝对 jsDelivr `.css`/`.js`）。
+**jsDelivr 的 `.html` 是 `text/plain` + nosniff，Chrome 只显示源码，不要把 HTML 预览链指过去。** CSS/JS 的 MIME 正常。可渲染页用各目录 `standalone.html`（绝对 jsDelivr `.css`/`.js`），给 htmlpreview 等会按 HTML 渲染的代理用。
 
-可点击 HTML（GitHub Pages，合 staging 预览 PR 后）：
+可点击 HTML（GitHub Pages，合入后）：
 
+- 精选：`https://codyshen0000.github.io/ai-frontier-trends/live/`
+- 热点：`https://codyshen0000.github.io/ai-frontier-trends/hot/`
 - 日报：`https://codyshen0000.github.io/ai-frontier-trends/daily/`
-- 本目录 `daily/standalone.html`：给 htmlpreview 等会按 HTML 渲染的代理用，样式走 jsDelivr。
+- 本目录 `live/standalone.html`、`hot/standalone.html`、`daily/standalone.html`
 
 Impeccable 门禁（markdown，jsDelivr 可用）：
 

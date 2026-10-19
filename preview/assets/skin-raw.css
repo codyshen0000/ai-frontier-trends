@@ -301,7 +301,7 @@ th {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  margin: 28px 0 0;
+  margin: 28px 0 auto;
 }
 
 .ft-side-links a,
@@ -483,7 +483,6 @@ th {
 .ft-updated,
 .ft-lede,
 .ft-empty,
-.ft-pins-foot,
 .ft-board-link {
   color: var(--ft-muted);
   font-size: 13px;
@@ -495,60 +494,105 @@ th {
   max-width: 40rem;
 }
 
-.ft-pin-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-}
-
-.ft-pin {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  min-height: 148px;
-  padding: 14px 14px 12px;
+.ft-now {
+  margin: 0 0 28px;
+  padding: 14px 16px 10px;
   background: var(--ft-elev);
   border: 1px solid var(--ft-line);
   border-radius: var(--ft-r-12);
+}
+
+.ft-now-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 0 6px;
+}
+
+.ft-now-head h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--ft-ink);
+  border: 0 !important;
+  padding: 0;
+}
+
+.ft-now-foot {
+  margin: 0;
+  font-size: 13px;
+  color: var(--ft-muted);
+}
+
+.ft-now-foot a {
+  color: var(--ft-teal) !important;
+  text-decoration: none;
+}
+
+.ft-now-foot a:hover {
+  color: var(--ft-teal-hover) !important;
+}
+
+.ft-now-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ft-now-item {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+  padding: 9px 2px;
+  border-bottom: 1px solid var(--ft-line);
   color: inherit !important;
   text-decoration: none;
 }
 
-.ft-pin:hover {
-  border-color: var(--ft-teal);
+.ft-now-item:last-child {
+  border-bottom: 0;
 }
 
-.ft-pin-kicker {
-  margin: 0;
-  font-size: 12px;
+.ft-now-item:hover .ft-now-title {
   color: var(--ft-teal);
 }
 
-.ft-pin h3 {
-  margin: 0;
-  flex: 1;
+.ft-now-n {
+  font-size: 13px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.03em;
+  color: var(--ft-teal);
+  padding-top: 1px;
+}
+
+.ft-now-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.ft-now-title {
   font-size: 15px;
   font-weight: 600;
   line-height: 1.4;
   letter-spacing: -0.02em;
 }
 
-.ft-pin-meta {
-  margin: 0;
+.ft-now-meta {
   font-size: 12px;
   color: var(--ft-muted);
-}
-
-.ft-pins-foot {
-  margin: 10px 0 0;
-  text-align: right;
 }
 
 .ft-day-rule {
   display: flex;
   align-items: center;
   gap: 14px;
-  margin: 36px 0 8px;
+  margin: 28px 0 4px;
   font-size: 13px;
   font-weight: 500;
   color: var(--ft-muted);
@@ -566,16 +610,22 @@ th {
 }
 
 .ft-story {
-  padding: 18px 4px 20px;
+  padding: 12px 2px 13px;
   border-bottom: 1px solid var(--ft-line);
 }
 
 .ft-story-kicker {
-  margin: 0 0 6px;
+  margin: 0 0 4px;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   font-size: 12px;
   color: var(--ft-muted);
+}
+
+.ft-story-src {
+  color: var(--ft-teal);
+  font-weight: 600;
 }
 
 .ft-focus {
@@ -583,11 +633,12 @@ th {
 }
 
 .ft-story h3 {
-  margin: 0 0 8px;
-  font-size: 20px;
+  margin: 0 0 4px;
+  font-size: 17px;
   font-weight: 600;
   letter-spacing: -0.025em;
   line-height: 1.35;
+  text-wrap: balance;
 }
 
 .ft-story h3 a {
@@ -600,10 +651,14 @@ th {
 }
 
 .ft-story-sum {
-  margin: 0 0 10px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin: 0 0 6px;
   color: var(--ft-ink);
-  font-size: 15px;
-  line-height: 1.65;
+  font-size: 14px;
+  line-height: 1.55;
 }
 
 .ft-story-meta {
@@ -611,12 +666,16 @@ th {
   flex-wrap: wrap;
   gap: 8px 14px;
   margin: 0;
-  font-size: 13px;
+  font-size: 12px;
   color: var(--ft-muted);
 }
 
 .ft-story-meta a {
   color: var(--ft-muted) !important;
+}
+
+.ft-also {
+  color: var(--ft-teal);
 }
 
 .ft-dot {
@@ -625,6 +684,7 @@ th {
 
 .ft-heat {
   color: var(--ft-teal);
+  font-variant-numeric: tabular-nums;
 }
 
 .ft-board-link,
@@ -651,6 +711,49 @@ html.ft-shell .hub a {
   color: var(--ft-teal) !important;
 }
 
+.ft-hot-hero {
+  margin: 0 0 8px;
+  padding: 18px 18px 16px;
+  background: var(--ft-elev);
+  border: 1px solid var(--ft-line);
+  border-radius: var(--ft-r-12);
+}
+
+.ft-hot-badge,
+.ft-hot-kicker {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 0 0 8px;
+  font-size: 12px;
+  color: var(--ft-muted);
+}
+
+.ft-hot-no {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  font-variant-numeric: tabular-nums;
+  color: var(--ft-teal);
+}
+
+.ft-hot-hero h2 {
+  margin: 0 0 10px;
+  font-size: clamp(22px, 3.2vw, 28px);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.28;
+  border: 0 !important;
+  padding: 0;
+  text-wrap: balance;
+}
+
+.ft-hot-sum {
+  margin: 0 0 12px;
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--ft-ink);
+}
+
 .ft-rank-list {
   list-style: none;
   margin: 0;
@@ -659,58 +762,67 @@ html.ft-shell .hub a {
 
 .ft-rank {
   display: grid;
-  grid-template-columns: 36px 1fr minmax(120px, 28%);
-  gap: 16px;
+  grid-template-columns: 52px minmax(0, 1fr);
+  gap: 10px;
   align-items: start;
-  padding: 16px 0;
+  padding: 12px 2px 13px;
   border-bottom: 1px solid var(--ft-line);
 }
 
 .ft-rank-n {
-  font-size: 22px;
-  font-weight: 600;
-  letter-spacing: -0.03em;
-  color: var(--ft-muted);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  font-variant-numeric: tabular-nums;
+  color: var(--ft-teal);
+  padding-top: 3px;
 }
 
 .ft-rank-body h2 {
-  margin: 0 0 6px;
-  font-size: 17px;
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.35;
   border: 0 !important;
   padding: 0;
 }
 
 .ft-rank-meta,
 .ft-rank-sum {
-  margin: 0 0 6px;
+  margin: 0 0 4px;
   font-size: 13px;
   color: var(--ft-muted);
 }
 
 .ft-rank-sum {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
   color: var(--ft-ink);
+  line-height: 1.5;
+}
+
+.ft-hot-note {
+  margin: 28px 0 8px;
+  padding: 14px 16px;
+  background: var(--ft-sunk);
+  border-radius: var(--ft-r-10);
+}
+
+.ft-hot-note h2 {
+  margin: 0 0 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ft-muted);
+  border: 0 !important;
+  padding: 0;
+}
+
+.ft-hot-note p {
+  margin: 0;
+  font-size: 13px;
   line-height: 1.55;
-}
-
-.ft-rank-heat {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  min-height: 28px;
-  margin-top: 4px;
-}
-
-.ft-rank-heat span {
-  display: block;
-  height: 8px;
-  background: var(--ft-teal);
-  border-radius: 999px;
-}
-
-.ft-rank-heat em {
-  font-style: normal;
-  font-size: 14px;
-  font-variant-numeric: tabular-nums;
   color: var(--ft-ink);
 }
 
@@ -768,41 +880,33 @@ html.ft-shell .hub a {
     font-size: 24px;
   }
 
-  .ft-pin-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
+  .ft-now {
+    padding: 12px 12px 8px;
   }
 
-  .ft-pin {
-    min-height: 0;
-    padding: 10px;
+  .ft-now-title {
+    font-size: 14px;
   }
 
-  .ft-pin h3 {
-    font-size: 13px;
+  .ft-story h3 {
+    font-size: 16px;
   }
 
-  .ft-pin:nth-child(n + 4) {
-    display: none;
+  .ft-hot-hero {
+    padding: 14px 14px 12px;
+  }
+
+  .ft-hot-hero h2 {
+    font-size: 20px;
   }
 
   .ft-rank {
-    grid-template-columns: 28px 1fr;
-  }
-
-  .ft-rank-heat {
-    grid-column: 2;
-  }
-}
-
-@media (min-width: 961px) {
-  .ft-pin-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 48px minmax(0, 1fr);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .ft-pin,
+  .ft-now-item,
   .ft-more-card,
   .ft-side-links a,
   .ft-tabbar a {
@@ -946,7 +1050,7 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 
 .ft-daily-past-n {
   font-size: 22px;
-  font-weight: 650;
+  font-weight: 600;
   letter-spacing: -0.04em;
   line-height: 1;
   font-variant-numeric: tabular-nums;
@@ -1125,7 +1229,7 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 .ft-daily-metric b {
   margin-right: 4px;
   font-size: 20px;
-  font-weight: 650;
+  font-weight: 600;
   letter-spacing: -0.03em;
   color: var(--ft-ink);
   font-variant-numeric: tabular-nums;
@@ -1306,7 +1410,7 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
   border-bottom: 1px solid var(--ft-ink) !important;
   font-family: var(--ds-font-sans);
   font-size: 18px;
-  font-weight: 650;
+  font-weight: 600;
   text-wrap: balance;
 }
 
@@ -1337,7 +1441,7 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
   margin: 0 0 6px;
   font-family: var(--ds-font-sans);
   font-size: 1.05rem;
-  font-weight: 650;
+  font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.35;
   text-wrap: balance;
@@ -1487,7 +1591,10 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 .ft-side-links a:focus-visible,
 .ft-tabbar a:focus-visible,
 .ft-side-editions a:focus-visible,
-.ft-theme-toggle:focus-visible {
+.ft-theme-toggle:focus-visible,
+.ft-now-item:focus-visible,
+.ft-story h3 a:focus-visible,
+.ft-now-foot a:focus-visible {
   outline: 2px solid var(--ft-teal);
   outline-offset: 2px;
 }

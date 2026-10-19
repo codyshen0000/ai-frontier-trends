@@ -170,14 +170,7 @@ function shellLinks(currentId, fromPath) {
 }
 
 function tabbarItems() {
-  const primary = config.nav?.primary ?? [];
-  const editions = config.nav?.editions ?? [];
-  const items = [];
-  for (const item of primary) {
-    if (item.id === "timeline") items.push(...editions);
-    items.push(item);
-  }
-  return items;
+  return config.nav?.primary ?? [];
 }
 
 function tabbarLinks(currentId, fromPath) {
@@ -375,6 +368,51 @@ function writePage(pagePath, html) {
   writeFileSync(outPath, html);
 }
 
+function mitAssetPrefix(fromPath) {
+  const depth = String(fromPath).split("/").filter(Boolean).length;
+  return depth === 0 ? "" : "../".repeat(depth);
+}
+
+function rewriteMitStatic(html, fromPath) {
+  return html
+    .replace(/(href|src|action)="((?:index|hot|daily)\.html)([^"]*)"/g, (_, attr, file, suffix) => {
+      const page = file.replace(/\.html$/, "");
+      const dest = page === "index" ? "/" : `/${page}/`;
+      return `${attr}="${hrefBetween(fromPath, dest)}${suffix}"`;
+    })
+    .replace(/(href|src)="((?:assets|data)\/[^"]*)"/g, (_, attr, path) => `${attr}="${mitAssetPrefix(fromPath)}${path}"`);
+}
+
+function publishMitStatic() {
+  const src = join(root, "preview", "mit-static");
+  const required = ["index.html", "hot.html", "daily.html", join("assets", "app.css")];
+  for (const rel of required) {
+    if (!existsSync(join(src, rel))) {
+      throw new Error(`publishMitStatic: missing preview/mit-static/${rel}`);
+    }
+  }
+
+  mkdirSync(join(distDir, "assets"), { recursive: true });
+  cpSync(join(src, "assets", "app.css"), join(distDir, "assets", "app.css"));
+  const nameplates = join(src, "assets", "nameplates");
+  if (existsSync(nameplates)) {
+    cpSync(nameplates, join(distDir, "assets", "nameplates"), { recursive: true });
+  }
+  const dataDir = join(src, "data");
+  if (existsSync(dataDir)) {
+    mkdirSync(join(distDir, "data"), { recursive: true });
+    cpSync(dataDir, join(distDir, "data"), { recursive: true });
+  }
+
+  const indexHtml = readFileSync(join(src, "index.html"), "utf8");
+  const hotHtml = readFileSync(join(src, "hot.html"), "utf8");
+  const dailyHtml = readFileSync(join(src, "daily.html"), "utf8");
+  writePage("/", rewriteMitStatic(indexHtml, "/"));
+  writePage("/live/", rewriteMitStatic(indexHtml, "/live/"));
+  writePage("/hot/", rewriteMitStatic(hotHtml, "/hot/"));
+  writePage("/daily/", rewriteMitStatic(dailyHtml, "/daily/"));
+}
+
 function chipClass(status) {
   if (status === "加强") return "ds-tag";
   if (status === "待验证") return "ds-tag-outline";
@@ -478,7 +516,7 @@ function verifyRawInjection(page, raw, injected, extraBody = "") {
   if (!injected.includes(DS_CSS)) throw new Error(`${page.id}: missing ds.css`);
   if (!injected.includes("skin-raw.css")) throw new Error(`${page.id}: missing skin-raw.css`);
   if (!injected.includes('data-ds-injected="nav"')) throw new Error(`${page.id}: missing injected nav`);
-  if (!injected.includes(">精选<") || !injected.includes(">热点<") || !injected.includes(">趋势<") || !injected.includes(">更多<")) {
+  if (!injected.includes(">精选<") || !injected.includes(">热点<") || !injected.includes(">日报<") || !injected.includes(">更多<")) {
     throw new Error(`${page.id}: injected nav missing primary items`);
   }
   const currentId = page.currentId || page.id;
@@ -683,8 +721,9 @@ export function buildSite() {
   cpSync(join(srcDir, "skin-raw.css"), join(distDir, "assets", "skin-raw.css"));
   const copiedImages = copyCaseAssets(root, distDir);
   writeFileSync(join(distDir, ".nojekyll"), "");
+  publishMitStatic();
 
-  console.log(`Built ${contentPages.length + 1} pages → dist/ (public=${publicDeploy}, case images=${copiedImages})`);
+  console.log(`Built ${contentPages.length + 1} pages → dist/ (public=${publicDeploy}, case images=${copiedImages}, mit-static overlay)`);
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
