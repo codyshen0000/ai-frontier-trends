@@ -1,0 +1,34 @@
+{
+  "computedAt": "2026-10-19T07:40:00.000Z",
+  "windowHours": 48,
+  "entries": [
+    {
+      "rank": 1,
+      "story": {
+        "publicId": "2026-10-19-synthetic-alpha",
+        "title": "SYNTHETIC · 开源权重样例事件"
+      },
+      "heat": 12.3,
+      "trend": "up",
+      "trendPct": 8,
+      "badges": ["new"],
+      "participantCount": 3,
+      "sourceCount": 2,
+      "sourceNames": ["公开实验室", "复现笔记"],
+      "participants": [
+        { "name": "公开实验室", "kind": "editorial" },
+        { "name": "复现笔记", "kind": "signal" }
+      ],
+      "spark": [null, null, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 12, 12],
+      "summary": "SYNTHETIC 摘要：仅供 loader 单测，不是真实热点。",
+      "latest": null,
+      "cover": {
+        "url": "https://example.invalid/synthetic/official-diagram.png",
+        "width": 1200,
+        "height": 800,
+        "alt": "SYNTHETIC official diagram placeholder",
+        "valueClass": "official_diagram"
+      }
+    }
+  ]
+}

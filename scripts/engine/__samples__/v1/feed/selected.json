@@ -1,0 +1,22 @@
+{
+  "feed": {
+    "id": "selected",
+    "path": "/feed.xml",
+    "title": "SYNTHETIC 精选",
+    "limit": 50,
+    "description": "合成 feed，仅供测试"
+  },
+  "items": [
+    {
+      "guid": "sha256:synthetic000000000000000000000000000000000000000000000000000000000001",
+      "title": "SYNTHETIC · 开源权重样例事件",
+      "summary": "合成 feed 条目。",
+      "originalUrl": "https://example.invalid/synthetic/alpha",
+      "pubDate": "2026-10-19T06:00:00.000Z",
+      "sourceName": "公开实验室",
+      "category": "model",
+      "categoryLabel": "模型",
+      "eventPublicId": "2026-10-19-synthetic-alpha"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "mode": "synthetic",
+  "data_as_of": "2026-10-19T15:24:00+08:00",
+  "data_as_of_label": "数据截至 2026-10-19 15:24（北京时间）",
+  "built_at": "2026-10-19T08:00:00.000Z",
+  "generated_at": "2026-10-19T08:00:00.000Z",
+  "hot_rule_version": "heat48h-synthetic",
+  "window_hours": 48,
+  "spark_points": 25,
+  "page_size": 20,
+  "counts": {
+    "cards": 1,
+    "events": 1,
+    "hot": 1,
+    "feed": 1
+  }
+}

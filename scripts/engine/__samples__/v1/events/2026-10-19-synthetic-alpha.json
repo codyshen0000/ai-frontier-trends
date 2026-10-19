@@ -1,0 +1,57 @@
+{
+  "publicId": "2026-10-19-synthetic-alpha",
+  "title": "SYNTHETIC · 开源权重样例事件",
+  "status": "active",
+  "reportCount": 2,
+  "sourceCount": 2,
+  "firstReportAt": "2026-10-19T06:00:00.000Z",
+  "latestAt": "2026-10-19T06:00:00.000Z",
+  "digest": null,
+  "digestUpdatedAt": null,
+  "summary": "SYNTHETIC 事件摘要。",
+  "excerpt": null,
+  "latest": null,
+  "latestReport": { "id": "sha256:synthetic000000000000000000000000000000000000000000000000000000000001" },
+  "whyHot": {
+    "participants48h": 3,
+    "newParticipants6h": 1,
+    "recentReports24h": 2,
+    "observationComplete": false,
+    "rank": 1
+  },
+  "developments": [],
+  "officialReports": [
+    {
+      "id": "sha256:synthetic000000000000000000000000000000000000000000000000000000000001",
+      "title": "SYNTHETIC · 开源权重样例事件",
+      "summary": "合成报道。",
+      "source": { "name": "公开实验室", "firstParty": true },
+      "publishedAt": "2026-10-19T06:00:00.000Z",
+      "selected": true,
+      "originalUrl": "https://example.invalid/synthetic/alpha"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "sha256:synthetic000000000000000000000000000000000000000000000000000000000001",
+      "title": "SYNTHETIC · 开源权重样例事件",
+      "summary": "合成报道。",
+      "source": { "name": "公开实验室", "firstParty": true },
+      "publishedAt": "2026-10-19T06:00:00.000Z",
+      "selected": true,
+      "originalUrl": "https://example.invalid/synthetic/alpha"
+    }
+  ],
+  "heat": [{ "hour": "2026-10-19T06:00:00.000Z", "heat": 12.3, "participants": 3 }],
+  "related": [],
+  "topics": [],
+  "recommendReason": "SYNTHETIC 推荐理由。",
+  "cover": {
+    "url": "https://example.invalid/synthetic/official-diagram.png",
+    "width": 1200,
+    "height": 800,
+    "alt": "SYNTHETIC official diagram placeholder",
+    "valueClass": "official_diagram"
+  },
+  "primaryUrl": "https://example.invalid/synthetic/alpha"
+}

@@ -1,0 +1,11 @@
+{
+  "sources": [
+    {
+      "sourceId": "synthetic-lab",
+      "name": "公开实验室",
+      "tier": "T1",
+      "kind": "blog",
+      "homepage": "https://example.invalid/synthetic/"
+    }
+  ]
+}
