@@ -1,15 +1,15 @@
-# Verify 门禁注册表（B0 规划，尚未接线）
+# Verify 门禁注册表（B0 phase 2 已接线）
 
-B1 / B2 / Remaining-A 都会改 `scripts/verify_ia.mjs`。B0 **不改** 该文件（#24 仍在改）。phase 2（#24 QA 通过后）把 `verify_ia.mjs` 收成加载器：
+`scripts/verify_ia.mjs` 末尾调用 `runVerifyRegistry()`（实现：`scripts/verify-registry.mjs`）：
 
 ```text
-scripts/verify/*.mjs   ← 按 glob 加载，每路只加自己的文件
-scripts/verify_ia.mjs  ← 只负责收集失败、打印、退出码
+scripts/verify/*.mjs   ← 只加载 export 了 verify() 的模块
+scripts/verify_ia.mjs  ← 原有 A-4 断言 + 汇总退出码
 ```
 
 ## 约定
 
-每个门是一个 ESM 模块，文件名 `scripts/verify/<owner>-<id>.mjs`。
+每个**注册表门**是一个 ESM 模块，文件名 `scripts/verify/<owner>-<id>.mjs`。
 
 ```js
 export const id = "b1-fixture";
@@ -22,21 +22,20 @@ export async function verify(ctx) {
 }
 ```
 
-- glob：`scripts/verify/*.mjs`（不递归、不加载本 README）。
+- glob：`scripts/verify/*.mjs`（不递归、不加载 README）。
+- **只 import 源码里 `export function verify` / `export { verify }` 的文件。** Remaining-A 独立入口（`starred-base.mjs`、`api-paths.mjs`、`serve-base.mjs`、`handoff-matrix.mjs` 等）有顶层副作用，走 `npm run verify:remaining`，不进注册表。
 - 加载顺序：文件名排序。某一门抛错不阻止后续门跑完，最后汇总退出。
-- **本 PR 不接线、不放任何 `.mjs` 门**，避免半成品被误加载。
+- 零个门：打印 `ok verify registry: 0 gates` 并继续（empty glob OK）。本 PR 带一个 `b0-registry-smoke.mjs` 证明接线。
 
-## 各路要加的门（phase 2+）
+## 各路要加的门
 
 | 文件 | 路 | 内容 |
 |---|---|---|
+| `b0-registry-smoke.mjs` | B0 | 已加；恒 `{ ok: true }` |
 | `b1-fixture.mjs` | B1 | `PUBLIC_DEPLOY=1` 读到 Remaining-A fixture id 即失败 |
 | `b1-engine-dir.mjs` | B1 | `FT_ENGINE_DIR` 有数据时页面不得再渲染 fixture 卡 |
 | `b2-event-id.mjs` | B2 | `event_id` / URL 去重 |
-| `b2-redirects.mjs` | B2 | `redirects.json` → 静态跳转页（meta refresh + canonical）存在且可跟 |
-| `b2-hot-recompute.mjs` | B2 | 复算校验器：与 `hot.json` 误差 ≤0.1，超出则构建失败（不另出生产热度源） |
-| （#24 A-4 已有门） | Remaining-A | 暂留 `verify_ia.mjs`；#24 合入后再视情况拆到 `a4-*.mjs` |
+| `b2-redirects.mjs` | B2 | `redirects.json` → 静态跳转页存在且可跟 |
+| `b2-hot-recompute.mjs` | B2 | 复算校验器：与 `hot.json` 误差 ≤0.1 |
 
-W1 不往这里加 JS 门；它只动 `.github/workflows/`。
-
-接线钩子见 [`docs/b-batch/OWNERSHIP.md`](../../docs/b-batch/OWNERSHIP.md)。
+W1 不往这里加 JS 门。归属见 [`docs/b-batch/OWNERSHIP.md`](../../docs/b-batch/OWNERSHIP.md)。

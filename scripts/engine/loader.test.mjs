@@ -11,6 +11,7 @@ import {
   isAcceptedCoverClass,
   isOfficialDiagramClass,
   loadEngineData,
+  loadEngineForBuild,
   resolveEngineDir,
 } from "./loader.mjs";
 
@@ -203,6 +204,18 @@ describe("EngineDataError fallback contract", () => {
   it("loads via FT_ENGINE_DIR", () => {
     const bundle = loadEngineData({ env: { FT_ENGINE_DIR: SAMPLE } });
     assert.equal(bundle.dir, SAMPLE);
+  });
+
+  it("loadEngineForBuild catches EngineDataError for the build fallback hook", () => {
+    const miss = loadEngineForBuild({ dir: join(SAMPLE, "does-not-exist") });
+    assert.equal(miss.ok, false);
+    assert.equal(miss.engine, null);
+    assert.equal(miss.error instanceof EngineDataError, true);
+    assert.equal(miss.error.code, "MISSING_DIR");
+    const hit = loadEngineForBuild({ dir: SAMPLE });
+    assert.equal(hit.ok, true);
+    assert.equal(hit.engine.meta.mode, "synthetic");
+    assert.equal(hit.error, null);
   });
 });
 

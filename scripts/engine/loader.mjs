@@ -448,3 +448,22 @@ export function loadEngineData(options = {}) {
     search: searchRaw || null,
   };
 }
+
+/**
+ * Build-time hook: never throws EngineDataError.
+ * Missing / invalid engine data → `{ ok: false, engine: null, error }` so the
+ * build can keep the fixture path (B1) and still call writeRedirects.
+ * Non-engine errors still throw.
+ *
+ * @param {{ dir?: string, env?: NodeJS.ProcessEnv }} [options]
+ */
+export function loadEngineForBuild(options = {}) {
+  try {
+    return { ok: true, engine: loadEngineData(options), error: null };
+  } catch (error) {
+    if (error instanceof EngineDataError || error?.name === "EngineDataError") {
+      return { ok: false, engine: null, error };
+    }
+    throw error;
+  }
+}
