@@ -1,0 +1,9 @@
+{
+  "feed": {
+    "id": "selected",
+    "path": "/feed.xml",
+    "title": "CI wiring placeholder",
+    "limit": 20
+  },
+  "items": []
+}

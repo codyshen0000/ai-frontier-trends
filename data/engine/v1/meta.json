@@ -1,0 +1,17 @@
+{
+  "mode": "ci-wiring",
+  "data_as_of": "2026-10-19T00:00:00.000Z",
+  "data_as_of_label": "CI wiring placeholder — overwrite with R1 dump",
+  "built_at": "2026-10-19T00:00:00.000Z",
+  "generated_at": "2026-10-19T00:00:00.000Z",
+  "hot_rule_version": "placeholder",
+  "window_hours": 48,
+  "spark_points": 25,
+  "page_size": 20,
+  "counts": {
+    "cards": 0,
+    "events": 0,
+    "hot": 0,
+    "feed": 0
+  }
+}
