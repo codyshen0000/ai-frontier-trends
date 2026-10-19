@@ -16,6 +16,9 @@
 - [x] 已挂封面 = BFL 官方博客模型样张拼贴（illustrates Klein，不是随机 OG）
 - [x] 无图槽为空，无 HeatPanel / sparkline 顶封面，无热链
 - [x] 分类表齐全；≥5 条旧 ≥480 会挂、现应无图（夹具 5 + live 若干）
+- [x] `src` / `srcSet` / `imageSrcSet` 走同一路径前缀（`/hot/` `/daily/` 均为 `../assets/covers/`）
+- [x] `verify:ia` 解析 dist 内每页 img src/srcset/imagesrcset，缺文件即失败
+- [x] 旧 `preview/hot|daily|live` 标「旧版·已作废」并链到 `preview/mit-static`
 
 ## Huashu（自估 7.5）
 
@@ -33,6 +36,7 @@
 
 ## 门禁
 
-`npm run test:covers` / `build` / `build:public` / `verify:ia`
+`npm run test:covers` / `build` / `build:public` / `verify:ia`  
+`python3 -m http.server` 于 `dist/`：`/hot/` `/daily/` 封面 srcSet 0 个 404。
 
 下一步：测试审校按 v5.1 §4 A+B 抽查后，产品终审。不合入 #19 / #20。

@@ -1,5 +1,5 @@
-import { existsSync, readFileSync } from "node:fs";
-import { dirname, join } from "node:path";
+import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
+import { dirname, join, normalize, relative, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { extractLiveSpotlight, extractThreads, extractTimelineLede, ensureThreadAnchors } from "./extract.mjs";
 import { clipSummary, extractLiveCards, rankHot, selectPins } from "./live_cards.mjs";
@@ -216,7 +216,10 @@ const hotCoverImgs = [...hotPage.matchAll(/<img\b[^>]*>/g)].filter((m) => /asset
 assert(hotCoverImgs.length <= 1, `hot paints at most one cover (${hotCoverImgs.length})`);
 if (hotCoverImgs.length === 1) {
   assert(hotCoverImgs[0][0].includes("720w") && hotCoverImgs[0][0].includes("1200w") && hotCoverImgs[0][0].includes("1600w"), "hot lead srcSet is MIT hero 720/1200/1600");
-  assert(hotCoverImgs[0][0].includes("../assets/covers/"), "hot lead pictures are local build-time thumbs");
+  assert(/src="\.\.\/assets\/covers\//.test(hotCoverImgs[0][0]), "hot lead src is ../assets/covers");
+  assert(/srcSet="\.\.\/assets\/covers\//.test(hotCoverImgs[0][0]), "hot lead srcSet uses the same ../assets/covers prefix");
+  assert(/imageSrcSet="\.\.\/assets\/covers\//.test(hotPage), "hot preload imageSrcSet uses ../assets/covers");
+  assert(!/(?:src|srcSet|imageSrcSet)="assets\/covers\//.test(hotPage), "hot cover attrs do not keep unprefixed assets/covers");
   assert(/\bwidth="\d+"/.test(hotCoverImgs[0][0]) && /\bheight="\d+"/.test(hotCoverImgs[0][0]), "hot cover has width/height");
   assert(!/src="https?:\/\//.test(hotCoverImgs[0][0]), "hot cover is not a hotlink");
 } else {
@@ -264,7 +267,10 @@ if (existsSync(emptyDailyPreview)) {
 assert(dailyCoverImgs.length <= 1, `daily paints at most one headline cover (${dailyCoverImgs.length})`);
 if (dailyCoverImgs.length === 1) {
   assert(dailyCoverImgs[0][0].includes("720w") && dailyCoverImgs[0][0].includes("1200w") && dailyCoverImgs[0][0].includes("1600w"), "daily headline srcSet is MIT hero 720/1200/1600");
-  assert(dailyCoverImgs[0][0].includes("../assets/covers/"), "daily headline uses local build-time thumbs");
+  assert(/src="\.\.\/assets\/covers\//.test(dailyCoverImgs[0][0]), "daily headline src is ../assets/covers");
+  assert(/srcSet="\.\.\/assets\/covers\//.test(dailyCoverImgs[0][0]), "daily headline srcSet uses the same ../assets/covers prefix");
+  assert(/imageSrcSet="\.\.\/assets\/covers\//.test(dailyPage), "daily preload imageSrcSet uses ../assets/covers");
+  assert(!/(?:src|srcSet|imageSrcSet)="assets\/covers\//.test(dailyPage), "daily cover attrs do not keep unprefixed assets/covers");
   assert(/\bwidth="\d+"/.test(dailyCoverImgs[0][0]) && /\bheight="\d+"/.test(dailyCoverImgs[0][0]), "daily cover has width/height");
   assert(!/src="https?:\/\//.test(dailyCoverImgs[0][0]), "daily cover is not a hotlink");
 }
@@ -337,6 +343,84 @@ assert(existsSync(join(distDir, "weekly", "2026-10-12", "charts", "2026-10-12-ev
 assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-evidence-by-line.png")), "weekly 2026-10-18 ships chart pngs");
 assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-signal-candidates.png")), "weekly 2026-10-18 ships signal chart");
 assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-weights-delivery.png")), "weekly 2026-10-18 ships weights chart");
+
+function walkHtmlFiles(dir, acc = []) {
+  for (const name of readdirSync(dir)) {
+    const full = join(dir, name);
+    if (statSync(full).isDirectory()) walkHtmlFiles(full, acc);
+    else if (name.endsWith(".html")) acc.push(full);
+  }
+  return acc;
+}
+
+function parseSrcsetUrls(value) {
+  return String(value)
+    .split(",")
+    .map((part) => part.trim().split(/\s+/)[0])
+    .filter(Boolean);
+}
+
+function localAssetUrlsFromHtml(html) {
+  const urls = [];
+  const attrRe = /\b(src|srcset|imagesrcset)="([^"]*)"/gi;
+  let match;
+  while ((match = attrRe.exec(html))) {
+    const attr = match[1].toLowerCase();
+    const value = match[2];
+    if (attr === "srcset" || attr === "imagesrcset") urls.push(...parseSrcsetUrls(value));
+    else if (value) urls.push(value.trim());
+  }
+  return urls;
+}
+
+function skipRemoteOrEmpty(url) {
+  if (!url || url.startsWith("#") || url.startsWith("data:") || url.startsWith("mailto:") || url.startsWith("javascript:")) return true;
+  if (/^[a-z][a-z0-9+.-]*:/i.test(url)) return true;
+  if (url.startsWith("//")) return true;
+  return false;
+}
+
+function resolveInDist(pageFile, url) {
+  const clean = url.split("#")[0].split("?")[0];
+  const resolved = normalize(join(dirname(pageFile), clean));
+  const rel = relative(distDir, resolved);
+  if (!rel || rel.startsWith("..") || rel.startsWith(`..${sep}`)) return { ok: false, resolved, outside: true };
+  return { ok: existsSync(resolved) && statSync(resolved).isFile(), resolved, outside: false };
+}
+
+const htmlPages = walkHtmlFiles(distDir);
+assert(htmlPages.length > 0, "dist has HTML pages to scan");
+let missingAssets = 0;
+for (const pageFile of htmlPages) {
+  const html = readFileSync(pageFile, "utf8");
+  const relPage = relative(distDir, pageFile);
+  for (const url of localAssetUrlsFromHtml(html)) {
+    if (skipRemoteOrEmpty(url)) continue;
+    const hit = resolveInDist(pageFile, url);
+    if (!hit.ok) {
+      missingAssets += 1;
+      console.error(`FAIL missing asset on ${relPage}: ${url} → ${relative(distDir, hit.resolved)}`);
+    }
+  }
+}
+assert(missingAssets === 0, `every img src/srcset/imagesrcset on dist HTML resolves (${missingAssets} missing)`);
+
+const retiredPreview = [
+  "preview/hot/index.html",
+  "preview/hot/standalone.html",
+  "preview/daily/index.html",
+  "preview/daily/standalone.html",
+  "preview/live/index.html",
+  "preview/live/standalone.html",
+];
+const retiredMeta = /权重跟踪|记交付|本批|六件套/;
+for (const rel of retiredPreview) {
+  const html = readFileSync(join(root, rel), "utf8");
+  if (retiredMeta.test(html)) {
+    assert(html.includes("旧版·已作废"), `${rel} still has internal meta and must carry 旧版·已作废`);
+    assert(html.includes("mit-static"), `${rel} banner links to preview/mit-static`);
+  }
+}
 
 const injected = injectHtmlFile(liveRaw, { currentId: "live", path: "/live/" });
 assert(injectHtmlFile(injected, { currentId: "live", path: "/live/" }) === injected, "injectHtmlFile is idempotent");

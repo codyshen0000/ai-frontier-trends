@@ -215,4 +215,21 @@ const officialFlux = pickFirstValuableImage(
 assert.equal(officialFlux.reason, "valuable");
 assert.ok(["model_sample", "product_ui", "official_explainer"].includes(officialFlux.category));
 
+const { rewriteMitStatic, prefixLocalAssetUrls } = await import("./build.mjs");
+assert.equal(
+  prefixLocalAssetUrls("assets/covers/a-720.webp 720w, assets/covers/a-1600.webp 1600w", "../"),
+  "../assets/covers/a-720.webp 720w, ../assets/covers/a-1600.webp 1600w",
+);
+const rewritten = rewriteMitStatic(
+  `<link imageSrcSet="assets/covers/a-720.webp 720w, assets/covers/a-1200.webp 1200w, assets/covers/a-1600.webp 1600w"/><img src="assets/covers/a-1600.webp" srcSet="assets/covers/a-720.webp 720w, assets/covers/a-1200.webp 1200w, assets/covers/a-1600.webp 1600w"/>`,
+  "/hot/",
+);
+assert.match(rewritten, /src="\.\.\/assets\/covers\/a-1600\.webp"/);
+assert.match(rewritten, /srcSet="\.\.\/assets\/covers\/a-720\.webp 720w, \.\.\/assets\/covers\/a-1200\.webp 1200w, \.\.\/assets\/covers\/a-1600\.webp 1600w"/);
+assert.match(rewritten, /imageSrcSet="\.\.\/assets\/covers\/a-720\.webp 720w, \.\.\/assets\/covers\/a-1200\.webp 1200w, \.\.\/assets\/covers\/a-1600\.webp 1600w"/);
+assert.doesNotMatch(rewritten, /(?:src|srcSet|imageSrcSet)="assets\//);
+const atRoot = rewriteMitStatic(`<img src="assets/covers/a.webp" srcSet="assets/covers/a.webp 1600w"/>`, "/");
+assert.match(atRoot, /src="assets\/covers\/a\.webp"/);
+assert.doesNotMatch(atRoot, /src="\.\.\/assets\//);
+
 console.log("cover_rules tests passed");

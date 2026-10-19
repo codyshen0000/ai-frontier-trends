@@ -373,14 +373,27 @@ function mitAssetPrefix(fromPath) {
   return depth === 0 ? "" : "../".repeat(depth);
 }
 
-function rewriteMitStatic(html, fromPath) {
-  return html
-    .replace(/(href|src|action)="((?:index|hot|daily)\.html)([^"]*)"/g, (_, attr, file, suffix) => {
-      const page = file.replace(/\.html$/, "");
-      const dest = page === "index" ? "/" : `/${page}/`;
-      return `${attr}="${hrefBetween(fromPath, dest)}${suffix}"`;
-    })
-    .replace(/(href|src)="((?:assets|data)\/[^"]*)"/g, (_, attr, path) => `${attr}="${mitAssetPrefix(fromPath)}${path}"`);
+/** Prefix every local assets/ or data/ URL in a src, href, or comma-separated srcset value. */
+export function prefixLocalAssetUrls(value, prefix) {
+  if (!prefix) return value;
+  return String(value).replace(/(^|,\s*)((?:assets|data)\/)/g, `$1${prefix}$2`);
+}
+
+/** Rewrite src, srcSet, imageSrcSet, href, action from the same prefix helper. */
+export function rewriteMitAssetAttrs(html, prefix) {
+  return String(html).replace(/\b(href|src|srcset|imagesrcset|action)="([^"]*)"/gi, (match, attr, val) => {
+    if (!/(?:^|,\s*)(?:assets|data)\//.test(val)) return match;
+    return `${attr}="${prefixLocalAssetUrls(val, prefix)}"`;
+  });
+}
+
+export function rewriteMitStatic(html, fromPath) {
+  const prefixedPages = String(html).replace(/(href|src|action)="((?:index|hot|daily)\.html)([^"]*)"/g, (_, attr, file, suffix) => {
+    const page = file.replace(/\.html$/, "");
+    const dest = page === "index" ? "/" : `/${page}/`;
+    return `${attr}="${hrefBetween(fromPath, dest)}${suffix}"`;
+  });
+  return rewriteMitAssetAttrs(prefixedPages, mitAssetPrefix(fromPath));
 }
 
 function publishMitStatic() {
