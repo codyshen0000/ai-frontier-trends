@@ -256,5 +256,5 @@ footer{color:#57606a;font-size:.85rem;margin:2rem 0}
 import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
 mermaid.initialize({startOnLoad:true});
 </script>
-<script>document.documentElement.classList.remove("no-js");document.documentElement.classList.add("js");function t(o){document.querySelectorAll("details").forEach(d=>d.open=o)}</script>
+<script>document.documentElement.classList.remove("no-js");document.documentElement.classList.add("js");function t(o){document.querySelectorAll("details").forEach(function(d){d.open=o});syncCtl()}function syncCtl(){var ds=[].slice.call(document.querySelectorAll("details"));var box=document.getElementById("ctl");if(!box)return;var allOpen=ds.length&&ds.every(function(d){return d.open});var allClosed=ds.length&&ds.every(function(d){return !d.open});box.querySelectorAll("button").forEach(function(b){b.hidden=/展开/.test(b.textContent||"")?allOpen:allClosed})}syncCtl();document.querySelectorAll("details").forEach(function(d){d.addEventListener("toggle",syncCtl)})</script>
 </body></html>

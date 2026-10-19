@@ -214,6 +214,8 @@ import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.mi
 mermaid.initialize({startOnLoad:true});
 </script>
 <script>
-document.querySelectorAll("h3").forEach(h=>h.onclick=()=>h.classList.toggle("closed"));
-function t(c){document.querySelectorAll("h3").forEach(h=>h.classList.toggle("closed",c))}
+document.querySelectorAll("h3").forEach(function(h){h.onclick=function(){h.classList.toggle("closed");syncCtl()}});
+function t(c){document.querySelectorAll("h3").forEach(function(h){h.classList.toggle("closed",c)});syncCtl()}
+function syncCtl(){var hs=[].slice.call(document.querySelectorAll("h3"));var box=document.getElementById("ctl");if(!box)return;var allClosed=hs.length&&hs.every(function(h){return h.classList.contains("closed")});var allOpen=hs.length&&hs.every(function(h){return !h.classList.contains("closed")});box.querySelectorAll("button").forEach(function(b){b.hidden=/展开/.test(b.textContent||"")?allOpen:allClosed})}
+syncCtl();
 </script></body></html>

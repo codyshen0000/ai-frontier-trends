@@ -770,3 +770,17 @@ html.no-js button[aria-label*="位参与者"] {
 html.js [data-ft-top]:not(.is-on) {
   display: none !important;
 }
+a.sr-only[href="#main"] {
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+}
+a.sr-only[href="#main"]:focus {
+  width: auto !important;
+  height: auto !important;
+  clip: auto !important;
+  padding: 0.5rem 0.75rem !important;
+}
