@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>前沿趋势</title>
+    <link>https://codyshen0000.github.io/ai-frontier-trends/weekly/</link>
+    <description>前沿趋势周报</description>
+    <language>zh-cn</language>
+    <item>
+      <title>AI 前沿趋势周报 · 2026-10-18（第 2 期）</title>
+      <link>https://codyshen0000.github.io/ai-frontier-trends/weekly/2026-10-18/</link>
+      <guid isPermaLink="false">weekly-2026-10-18</guid>
+      <pubDate>Sat, 17 Oct 2026 16:00:00 GMT</pubDate>
+      <description>AI 前沿趋势周报 · 2026-10-18（第 2 期）</description>
+      <category>周报</category>
+    </item>
+    <item>
+      <title>AI 前沿趋势周报 · 2026-10-12（第 1 期）</title>
+      <link>https://codyshen0000.github.io/ai-frontier-trends/weekly/2026-10-12/</link>
+      <guid isPermaLink="false">weekly-2026-10-12</guid>
+      <pubDate>Sun, 11 Oct 2026 16:00:00 GMT</pubDate>
+      <description>评审进 RL 升一档，并从图像扩到视频；视频少步降一档，研究主流仍在修 DMD；OPD 从默认配方变成要看师生重叠率的工具。四张信号表一周无翻转。</description>
+      <category>周报</category>
+    </item>
+  </channel>
+</rss>

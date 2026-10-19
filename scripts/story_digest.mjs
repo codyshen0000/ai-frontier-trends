@@ -10,7 +10,7 @@ const URL_ALT = /^(?:https?:)?\/\/|^https?:\/\//i;
 
 export const BANNED_PUBLIC_COPY =
   /权重跟踪|记交付|本批|六件套|低于门槛|\[低于门槛补位\]|补位|score=|闸分|闸\s*[AB]|资料是否齐全|本条材料未披露故|本条未覆盖|不进信号表|不进正表|不升档|趋势分析已定性|不碰训练配方|不进训练方法主线|挂主线|挂 RSI|挂观察|日常降为简讯|不当推理机/;
-const PUBLIC_COPY_SCAN_EXTS = new Set([".html", ".json", ".xml"]);
+export const PUBLIC_COPY_SCAN_EXTS = new Set([".html", ".json", ".xml", ".md", ".svg", ".js"]);
 
 let cached = null;
 
@@ -149,11 +149,15 @@ export function assertWeeklyReports(rootDir = join(here, "..")) {
     const mdPath = join(dir, "report.md");
     const htmlPath = join(dir, "report.html");
     const metaPath = join(dir, "meta.json");
-    if (!existsSync(mdPath) && !existsSync(htmlPath) && !existsSync(metaPath)) continue;
+    const timelinePath = join(dir, "timeline.md");
+    if (!existsSync(mdPath) && !existsSync(htmlPath) && !existsSync(metaPath) && !existsSync(timelinePath)) continue;
     const md = existsSync(mdPath) ? readFileSync(mdPath, "utf8") : "";
     const html = existsSync(htmlPath) ? readFileSync(htmlPath, "utf8") : "";
     if (existsSync(mdPath) || existsSync(htmlPath)) {
       assertWeeklyReportCopy(md, html, `weekly/${name}`);
+    }
+    if (existsSync(timelinePath)) {
+      assertNoInternalMeta(readFileSync(timelinePath, "utf8"), `content/weekly/${name}/timeline.md`);
     }
     if (existsSync(metaPath)) {
       assertWeeklyMetaCopy(readFileSync(metaPath, "utf8"), `content/weekly/${name}/meta.json`);

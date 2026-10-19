@@ -1,4 +1,4 @@
-/** Stub for the missing MIT `@aihot/industry` pack. Keys match aihot 精选 chips. */
+/** Stub for the missing MIT industry pack. Keys match the 精选 chips. */
 export const CATEGORIES = [
   { key: "model", label: "模型", feedLabel: "模型" },
   { key: "product", label: "产品", feedLabel: "产品" },

@@ -16,14 +16,14 @@ export function ThemeSwitch({ className = "" }: { className?: string }) {
   const pref = useThemePreference();
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
-  const current: Choice = !mounted ? "system" : (pref ?? "system");
+  const current: Choice = !mounted ? "system" : (pref === "light" || pref === "dark" ? pref : "system");
   const index = OPTIONS.findIndex((o) => o.key === current);
 
   const choose = (key: Choice) => {
-    const nextPref: ThemePreference = key === "system" ? null : key;
+    const nextPref: ThemePreference = key;
     const apply = () => {
       setThemePreference(nextPref);
-      applyTheme(resolvedTheme(nextPref), nextPref === null);
+      applyTheme(resolvedTheme(nextPref), nextPref === "system");
     };
     const doc = document as Document & { startViewTransition?: (cb: () => void) => unknown };
     if (doc.startViewTransition && !reducedMotion()) {
@@ -45,6 +45,8 @@ export function ThemeSwitch({ className = "" }: { className?: string }) {
           type="button"
           role="radio"
           aria-checked={current === o.key}
+          aria-pressed={current === o.key}
+          data-ft-theme-choice={o.key}
           title={o.label}
           onClick={() => choose(o.key)}
           className={`relative z-10 flex items-center justify-center rounded-full transition-colors duration-150 ${current === o.key ? "text-ink" : "text-ink-4 hover:text-ink-2"}`}

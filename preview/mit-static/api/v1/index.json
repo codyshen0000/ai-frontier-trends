@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "data_as_of": "2026-10-19T16:03:00+08:00",
+  "files": [
+    {
+      "path": "/api/v1/index.json",
+      "note": "接口目录",
+      "schema_version": "1.0.0"
+    },
+    {
+      "path": "/api/v1/meta.json",
+      "note": "站点元数据",
+      "schema_version": "1.0.0"
+    },
+    {
+      "path": "/api/v1/weekly/index.json",
+      "note": "周报目录",
+      "schema_version": "1.0.0"
+    },
+    {
+      "path": "/api/v1/weekly/2026-10-18.json",
+      "note": "周报 2026-10-18",
+      "schema_version": "1.0.0"
+    },
+    {
+      "path": "/api/v1/weekly/2026-10-12.json",
+      "note": "周报 2026-10-12",
+      "schema_version": "1.0.0"
+    }
+  ]
+}

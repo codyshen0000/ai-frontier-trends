@@ -6,6 +6,8 @@ import { extractLiveSpotlight, extractThreads, extractTimelineLede, ensureThread
 import { clipSummary, extractLiveCards, rankHot, selectPins } from "./live_cards.mjs";
 import { injectHtmlFile } from "./build.mjs";
 import {
+  BANNED_PUBLIC_COPY,
+  PUBLIC_COPY_SCAN_EXTS,
   assertCoverRecords,
   assertDistPublicCopy,
   assertNoBannedPublicCopyInDir,
@@ -184,10 +186,18 @@ for (const path of paths) {
 
 assert(existsSync(join(distDir, "assets", "app.css")), "dist has mit-static app.css");
 assert(existsSync(join(distDir, "assets", "nameplates", "daily.svg")), "dist has daily nameplate");
-assert(existsSync(join(distDir, "data", "fixture-note.json")), "dist has fixture data");
+assert(!existsSync(join(distDir, "data", "fixture-note.json")), "dist/data has no fixture-note");
 assert(existsSync(join(distDir, "assets", "favicon.svg")), "dist has favicon.svg");
 assert(existsSync(join(distDir, "assets", "favicon.png")), "dist has favicon.png");
 assert(existsSync(join(distDir, "favicon.ico")), "dist has favicon.ico");
+assert(existsSync(join(distDir, "search", "index.html")), "dist has /search/");
+assert(existsSync(join(distDir, "starred", "index.html")), "dist has /starred/");
+assert(existsSync(join(distDir, "feed", "weekly.xml")), "dist has /feed/weekly.xml");
+assert(!existsSync(join(distDir, "feed.xml")), "dist has no fixture feed.xml");
+assert(existsSync(join(distDir, "api", "v1", "index.json")), "dist has /api/v1/index.json");
+assert(existsSync(join(distDir, "data", "meta.json")), "dist has /data/meta.json");
+assert(existsSync(join(distDir, "data", "search-index.json")), "dist has search index");
+assert(existsSync(join(distDir, "assets", "hydrate.js")), "dist has hydrate.js");
 
 const leftoverHtmlHref = /(?:href|src|action)="(?:index|hot|daily)\.html/;
 const home = readFileSync(join(distDir, "index.html"), "utf8");
@@ -413,7 +423,7 @@ try {
 }
 try {
   assertWeeklyReports(root);
-  assert(true, "weekly report.md/html/meta.json have no banned public copy");
+  assert(true, "weekly report.md/html/timeline.md/meta.json have no banned public copy");
 } catch (err) {
   assert(false, err.message);
 }
@@ -465,6 +475,45 @@ expectThrow(
     rmSync(tmp, { recursive: true, force: true });
   }
 }
+{
+  const tmp = mkdtempSync(join(tmpdir(), "ia-banned-md-"));
+  try {
+    writeFileSync(join(tmp, "note.md"), "正文写了不进正表。");
+    expectThrow(
+      () => assertNoBannedPublicCopyInDir(tmp, { prefix: "dist/" }),
+      /note\.md[\s\S]*不进正表/,
+      "negative: banned word in a dist md file fails verify:ia",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "ia-banned-svg-"));
+  try {
+    writeFileSync(join(tmp, "mark.svg"), `<svg xmlns="http://www.w3.org/2000/svg"><text>挂观察</text></svg>`);
+    expectThrow(
+      () => assertNoBannedPublicCopyInDir(tmp, { prefix: "dist/" }),
+      /mark\.svg[\s\S]*挂观察/,
+      "negative: banned word in a dist svg file fails verify:ia",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
+{
+  const tmp = mkdtempSync(join(tmpdir(), "ia-banned-js-"));
+  try {
+    writeFileSync(join(tmp, "app.js"), `const note = "不进信号表";`);
+    expectThrow(
+      () => assertNoBannedPublicCopyInDir(tmp, { prefix: "dist/" }),
+      /app\.js[\s\S]*不进信号表/,
+      "negative: banned word in a dist js file fails verify:ia",
+    );
+  } finally {
+    rmSync(tmp, { recursive: true, force: true });
+  }
+}
 
 const distCopyFiles = walkPublicCopyFiles(distDir);
 const distCopyHits = collectBannedPublicCopyHits(distDir, { prefix: "dist/" });
@@ -473,11 +522,11 @@ for (const hit of distCopyHits) {
 }
 assert(
   distCopyHits.length === 0,
-  `dist html/json/xml have 0 banned-word hits (${distCopyHits.length} hits across ${distCopyFiles.length} files)`,
+  `dist html/json/xml/md/svg/js have 0 banned-word hits (${distCopyHits.length} hits across ${distCopyFiles.length} files)`,
 );
 try {
   assertDistPublicCopy(distDir);
-  assert(true, "assertDistPublicCopy matches the dist html/json/xml scan");
+  assert(true, "assertDistPublicCopy matches the dist html/json/xml/md/svg/js scan");
 } catch (err) {
   assert(false, err.message);
 }
@@ -605,8 +654,99 @@ for (const rel of retiredPreview) {
 const injected = injectHtmlFile(liveRaw, { currentId: "live", path: "/live/" });
 assert(injectHtmlFile(injected, { currentId: "live", path: "/live/" }) === injected, "injectHtmlFile is idempotent");
 
+const FIXTURE_IDS = ["flash-api", "mm-816b", "edge-nb", "agent-2", "api-price", "longctx-eval"];
+const BRAND_RE = /aihot|myhot/i;
+
+function walkFiles(dir, pred, acc = []) {
+  if (!existsSync(dir)) return acc;
+  for (const name of readdirSync(dir)) {
+    const full = join(dir, name);
+    if (statSync(full).isDirectory()) {
+      if (name === "LICENSES") continue;
+      walkFiles(full, pred, acc);
+    } else if (pred(name, full)) acc.push(full);
+  }
+  return acc;
+}
+
+let brandHits = 0;
+for (const file of walkPublicCopyFiles(distDir, PUBLIC_COPY_SCAN_EXTS)) {
+  const text = readFileSync(file, "utf8");
+  const rel = `dist/${relative(distDir, file).split("\\").join("/")}`;
+  const brand = text.match(BRAND_RE);
+  if (brand) {
+    brandHits += 1;
+    console.error(`FAIL brand «${brand[0]}» in ${rel}`);
+  }
+}
+assert(brandHits === 0, `brand aihot/myhot scan of dist html/json/xml/md/svg/js is 0 (${brandHits})`);
+void BANNED_PUBLIC_COPY;
+
+let fixtureLeaks = 0;
+for (const zone of ["data", "api", "feed", join("assets", "avatars")]) {
+  const dir = join(distDir, zone);
+  for (const file of walkFiles(dir, () => true)) {
+    const text = readFileSync(file);
+    const body = text.toString("utf8");
+    for (const id of FIXTURE_IDS) {
+      if (body.includes(id)) {
+        fixtureLeaks += 1;
+        console.error(`FAIL fixture id ${id} in ${relative(distDir, file)}`);
+      }
+    }
+  }
+}
+assert(fixtureLeaks === 0, `fixture ids in /data /api /feed /assets/avatars are 0 (${fixtureLeaks})`);
+
+let externalImgs = 0;
+for (const file of walkFiles(distDir, (name) => /\.(html|xml|json)$/i.test(name))) {
+  const text = readFileSync(file, "utf8");
+  if (/\b(?:src|srcset|imagesrcset|enclosure)=["']https?:\/\//i.test(text) || /"url"\s*:\s*"https?:\/\/[^"]+\.(?:png|jpe?g|webp|gif|svg)/i.test(text)) {
+    if (/twitter\.com|x\.com|twimg/.test(text) && /\.(png|jpe?g|webp|gif|svg)/i.test(text)) {
+      externalImgs += 1;
+      console.error(`FAIL external image in ${relative(distDir, file)}`);
+    }
+    const hits = text.match(/\b(?:src|srcset|imagesrcset)=["']https?:\/\//gi) || [];
+    if (hits.length) {
+      externalImgs += hits.length;
+      console.error(`FAIL hotlink image attr in ${relative(distDir, file)}`);
+    }
+  }
+}
+assert(externalImgs === 0, `external images in dist are 0 (${externalImgs})`);
+
+const searchIndex = JSON.parse(readFileSync(join(distDir, "data", "search-index.json"), "utf8"));
+assert(!JSON.stringify(searchIndex).includes('"score"'), "search index does not copy score");
+assert(searchIndex.docs.some((d) => /FLUX/i.test(d.title) || /FLUX/i.test(d.summary)), "search index contains FLUX from real weekly/covers");
+
+function jsonHasScoreKey(value) {
+  if (Array.isArray(value)) return value.some(jsonHasScoreKey);
+  if (!value || typeof value !== "object") return false;
+  if (Object.prototype.hasOwnProperty.call(value, "score")) return true;
+  return Object.values(value).some(jsonHasScoreKey);
+}
+
+let publicScoreKeys = 0;
+for (const zone of ["data", "api", "feed"]) {
+  for (const file of walkFiles(join(distDir, zone), (name) => /\.json$/i.test(name))) {
+    const body = JSON.parse(readFileSync(file, "utf8"));
+    if (jsonHasScoreKey(body)) {
+      publicScoreKeys += 1;
+      console.error(`FAIL public JSON still has score key: ${relative(distDir, file)}`);
+    }
+  }
+}
+assert(publicScoreKeys === 0, `public JSON has no score keys (${publicScoreKeys})`);
+
+const homeHtml = readFileSync(join(distDir, "index.html"), "utf8");
+assert(!/\bNaN\b/.test(homeHtml), "home HTML has no NaN from absent score");
+assert(!/data-score|score-label|item-score|ft-score/i.test(homeHtml), "home HTML has no score slot");
+assert(!/class="[^"]*score/.test(homeHtml), "home HTML has no score class slot");
+
 if (failed) {
   console.error(`\n${failed} check(s) failed`);
   process.exit(1);
 }
 console.log("\nIA verification passed");
+console.log("verify:ia remaining-a: banned=0 brand=0 fixture=0 external-img=0");
+

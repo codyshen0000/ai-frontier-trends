@@ -19,6 +19,24 @@ export const IMAGE_WIDTHS = {
 
 export const HERO_MODES = ["thumb", "image-1200", "full"];
 
+/** Public cover classes. `official_diagram` and `official_explainer` are the same valid class. */
+export const VALUABLE_COVER_CLASSES = new Set([
+  "model_sample",
+  "paper_figure",
+  "product_screenshot",
+  "product_ui",
+  "official_diagram",
+  "official_explainer",
+]);
+
+export function isOfficialDiagramClass(category) {
+  return category === "official_diagram" || category === "official_explainer";
+}
+
+export function isValuableCoverClass(category) {
+  return VALUABLE_COVER_CLASSES.has(category);
+}
+
 const TRACKING_HOSTS = new Set([
   "ids4.ad.gt",
   "ids.ad.gt",

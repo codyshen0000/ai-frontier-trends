@@ -145,7 +145,7 @@ export function ActiveFilters({ base, category, channel, tag }: { base: string; 
 /** Phones: the magnifier in a bar; the search opens over the page with the keyboard up. */
 function SearchButton() {
   return (
-    <BarButton label="搜索" onClick={(event) => openSearch("", event.currentTarget)}>
+    <BarButton label="搜索" data-ft-search="phone" onClick={(event) => openSearch("", event.currentTarget)}>
       <IconSearch size={21} />
     </BarButton>
   );
@@ -171,11 +171,11 @@ export function SearchField({ defaultValue = "", keep = {} }: { defaultValue?: s
   const inputRef = useRef<HTMLInputElement>(null);
   useEffect(() => setValue(defaultValue), [defaultValue]);
   useSlashFocus(inputRef);
-  const searching = navigation.state === "loading" && navigation.location?.pathname === "/all" && !!new URLSearchParams(navigation.location.search).get("q");
+  const searching = navigation.state === "loading" && navigation.location?.pathname === "/search" && !!new URLSearchParams(navigation.location.search).get("q");
   const hidden = Object.entries(keep).map(([k, v]) => (v ? <input key={k} type="hidden" name={k} value={v} /> : null));
 
   return (
-    <Form method="get" action="/all" role="search" className="group relative w-full shrink-0 lg:w-60">
+    <Form method="get" action="/search" role="search" data-ft-search="desk" className="group relative w-full shrink-0 lg:w-60">
       {hidden}
       <label htmlFor="site-search" className="sr-only">
         搜索标题、摘要与正文

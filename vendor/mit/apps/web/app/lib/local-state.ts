@@ -5,13 +5,13 @@ import { useEffect, useSyncExternalStore } from "react";
 import { beijingDate } from "@aihot/contracts/time";
 
 export const KEYS = {
-  starred: "aihot-starred-items",
-  read: "aihot-read-items",
-  theme: "aihot-theme",
-  font: "aihot-font",
-  changelogSeen: "aihot-changelog-seen-version",
-  feedbackDraft: "aihot-feedback-draft-v1",
-  recentSearches: "aihot-recent-searches",
+  starred: "ft:starred:v1",
+  read: "ft:read:v1",
+  theme: "ft:theme",
+  font: "ft:font",
+  changelogSeen: "ft:changelog-seen",
+  feedbackDraft: "ft:feedback-draft:v1",
+  recentSearches: "ft:recent-searches",
 } as const;
 
 const STARRED_LIMIT = 500;
@@ -28,7 +28,8 @@ export interface LocalStarredItem {
   sourceName: string;
   savedAt: string;
   publishedAt: string | null;
-  score: number | null;
+  /** Legacy field on older stars; never read for display. */
+  score?: number | null;
   aiSelected: boolean;
 }
 
@@ -162,7 +163,7 @@ function normalizeStarred(v: Record<string, unknown>): LocalStarredItem {
     sourceName: typeof v.sourceName === "string" ? v.sourceName : "",
     savedAt: isDisplayableDate(v.savedAt) ? v.savedAt : new Date().toISOString(),
     publishedAt: isDisplayableDate(v.publishedAt) ? v.publishedAt : null,
-    score: typeof v.score === "number" ? v.score : null,
+    score: undefined,
     aiSelected: v.aiSelected === true,
   };
 }
@@ -247,11 +248,25 @@ export function setFontPreference(pref: FontPreference) {
   emit(KEYS.font);
 }
 
-export type ThemePreference = "light" | "dark" | null;
+export type ThemePreference = "light" | "dark" | "system" | null;
+
+function migrateLegacyTheme() {
+  const current = readRaw(KEYS.theme);
+  if (current === "light" || current === "dark" || current === "system") return;
+  try {
+    const legacy = window.localStorage.getItem("theme");
+    if (legacy === "light" || legacy === "dark" || legacy === "system") {
+      writeRaw(KEYS.theme, legacy);
+    }
+  } catch {
+    /* privacy mode */
+  }
+}
 
 export function getThemePreference(): ThemePreference {
+  migrateLegacyTheme();
   const v = readRaw(KEYS.theme);
-  return v === "light" || v === "dark" ? v : null;
+  return v === "light" || v === "dark" || v === "system" ? v : null;
 }
 
 export function setThemePreference(pref: ThemePreference) {
@@ -260,7 +275,7 @@ export function setThemePreference(pref: ThemePreference) {
 }
 
 export function resolvedTheme(pref: ThemePreference = getThemePreference()): "light" | "dark" {
-  if (pref) return pref;
+  if (pref === "light" || pref === "dark") return pref;
   try {
     return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
   } catch {
@@ -293,8 +308,8 @@ export function useAppearanceSync() {
   useEffect(() => {
     // Read the stored choice itself: during hydration the hook still reports the server's "none".
     const current = getThemePreference();
-    applyTheme(resolvedTheme(current), current === null);
-    if (current !== null) return;
+    applyTheme(resolvedTheme(current), current === null || current === "system");
+    if (current !== null && current !== "system") return;
     let query: MediaQueryList;
     try {
       query = window.matchMedia("(prefers-color-scheme: dark)");
@@ -321,7 +336,7 @@ export function watchAppearance(onChange: (change: "theme" | "font") => void): (
 }
 
 /** Inline script run before paint so the first frame already has the reader's appearance. */
-export const APPEARANCE_BOOT_SCRIPT = `(function(){var f='system';try{f=localStorage.getItem('${KEYS.font}')==='browser'?'browser':'system'}catch(e){}document.documentElement.setAttribute('data-font',f);try{var t=localStorage.getItem('${KEYS.theme}');if(t==='light'||t==='dark'){var c=t==='dark'?'${THEME_COLOR.dark}':'${THEME_COLOR.light}';document.querySelectorAll('meta[name="theme-color"]').forEach(function(m){m.content=c})}else{t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){document.documentElement.setAttribute('data-theme','light')}})();`;
+export const APPEARANCE_BOOT_SCRIPT = `(function(){var f='system';try{f=localStorage.getItem('${KEYS.font}')==='browser'?'browser':'system'}catch(e){}document.documentElement.setAttribute('data-font',f);try{var t=localStorage.getItem('ft:theme');if(!t){var old=localStorage.getItem('theme');if(old==='light'||old==='dark'||old==='system'){t=old;localStorage.setItem('ft:theme',old)}}if(t==='light'||t==='dark'){var c=t==='dark'?'${THEME_COLOR.dark}':'${THEME_COLOR.light}';document.querySelectorAll('meta[name="theme-color"]').forEach(function(m){m.content=c})}else{t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){document.documentElement.setAttribute('data-theme','light')}})();`;
 
 // changelog red dot
 function getChangelogSeen(): string | null {
@@ -357,7 +372,7 @@ export function clearRecentSearches() {
 }
 
 // the page the reader was on (feedback records where a problem was seen)
-const LAST_PAGE_KEY = "aihot:last-page";
+const LAST_PAGE_KEY = "ft:last-page";
 const NOT_A_PLACE = /^\/(feedback|more)(\/|$)|^\/admin(\/|$)/;
 
 /** Called on every in-site navigation: remembers the latest real page, never feedback, "更多" or the admin. */

@@ -42,7 +42,6 @@ export const cards: TimelineCard[] = [
     publishedAt: "2026-10-18T10:53:00.000Z",
     timelineAt: "2026-10-18T10:53:00.000Z",
     category: "model",
-    score: 67,
     selected: true,
   }), 12),
   card("mm816", item({
@@ -54,7 +53,6 @@ export const cards: TimelineCard[] = [
     publishedAt: "2026-10-18T10:37:00.000Z",
     timelineAt: "2026-10-18T10:37:00.000Z",
     category: "model",
-    score: 62,
     selected: true,
   }), 8),
   card("edge", item({
@@ -66,7 +64,6 @@ export const cards: TimelineCard[] = [
     publishedAt: "2026-10-18T08:19:00.000Z",
     timelineAt: "2026-10-18T08:19:00.000Z",
     category: "product",
-    score: 58,
     selected: true,
   }), 6),
   card("agent", item({
@@ -78,7 +75,6 @@ export const cards: TimelineCard[] = [
     publishedAt: "2026-10-18T06:02:00.000Z",
     timelineAt: "2026-10-18T06:02:00.000Z",
     category: "product",
-    score: 55,
     selected: true,
   }), 5),
   card("price", item({
@@ -90,7 +86,6 @@ export const cards: TimelineCard[] = [
     publishedAt: "2026-10-18T04:40:00.000Z",
     timelineAt: "2026-10-18T04:40:00.000Z",
     category: "industry",
-    score: 54,
     selected: false,
   }), 4),
   card("eval", item({
@@ -102,9 +97,26 @@ export const cards: TimelineCard[] = [
     publishedAt: "2026-10-18T02:11:00.000Z",
     timelineAt: "2026-10-18T02:11:00.000Z",
     category: "paper",
-    score: 51,
     selected: true,
   }), 3),
+  card("x-bfl-klein", item({
+    id: "x-bfl-klein",
+    title: "BFL FLUX 3 Image Klein：开源权重落地（5.6B）",
+    summary: "BFL FLUX 3 Image Klein：开源权重落地（5.6B）",
+    source: { name: "BFL" },
+    publishedAt: "2026-10-16T12:00:00.000Z",
+    timelineAt: "2026-10-16T12:00:00.000Z",
+    category: "model",
+    selected: false,
+    channel: "x",
+    x: {
+      authorName: "BFL",
+      handle: "bfl_ai",
+      avatarUrl: null,
+      media: [],
+      quoted: null,
+    },
+  })),
 ];
 
 const faces = (names: string[]): HotStripEntry["participants"] =>

@@ -1,0 +1,819 @@
+/** First-screen hydrate for 精选 / 热点 / 日报 / 搜索 / 收藏. No React. */
+
+type Star = { id: string; title: string; url: string; source: string; date: string; savedAt: string };
+type ThemePref = "light" | "dark" | "system";
+type FtConfig = {
+  base: string;
+  page: "home" | "hot" | "daily" | "search" | "starred";
+  dataAsOf: string;
+  builtAt: string;
+  hasTimeline: boolean;
+  filter: string;
+};
+
+const STAR_KEY = "ft:starred:v1";
+const THEME_KEY = "ft:theme";
+const TIMELINE_PREFIX = "ft:timeline:";
+const STAR_LIMIT = 500;
+const AUTO_FETCHES = 3;
+const PAGE_SIZE = 20;
+
+const cfg: FtConfig = Object.assign(
+  { base: "./", page: "home", dataAsOf: "", builtAt: "", hasTimeline: false, filter: "all" },
+  (window as Window & { __FT__?: Partial<FtConfig> }).__FT__ || {},
+);
+
+const CATEGORIES = new Set(["model", "product", "industry", "paper", "tutorial", "opinion"]);
+
+function announce(text: string) {
+  const live = document.getElementById("ft-live");
+  if (live) live.textContent = text;
+}
+
+function toast(text: string, ms = 3200) {
+  const el = document.getElementById("ft-toast");
+  if (!el) {
+    announce(text);
+    return;
+  }
+  el.hidden = false;
+  el.textContent = text;
+  announce(text);
+  window.clearTimeout(Number(el.dataset.tid));
+  el.dataset.tid = String(window.setTimeout(() => {
+    el.hidden = true;
+  }, ms));
+}
+
+function storage(): Storage | null {
+  try {
+    return window.localStorage;
+  } catch {
+    return null;
+  }
+}
+
+function session(): Storage | null {
+  try {
+    return window.sessionStorage;
+  } catch {
+    return null;
+  }
+}
+
+function readJson<T>(store: Storage | null, key: string, fallback: T): T {
+  if (!store) return fallback;
+  try {
+    const raw = store.getItem(key);
+    return raw ? (JSON.parse(raw) as T) : fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function writeJson(store: Storage | null, key: string, value: unknown): boolean {
+  if (!store) return false;
+  try {
+    store.setItem(key, JSON.stringify(value));
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+function migrateTheme() {
+  const ls = storage();
+  if (!ls) return;
+  if (ls.getItem(THEME_KEY)) return;
+  const old = ls.getItem("theme");
+  if (old === "light" || old === "dark" || old === "system") ls.setItem(THEME_KEY, old);
+}
+
+function themePref(): ThemePref {
+  migrateTheme();
+  const v = storage()?.getItem(THEME_KEY);
+  return v === "light" || v === "dark" || v === "system" ? v : "system";
+}
+
+function resolvedTheme(pref = themePref()): "light" | "dark" {
+  if (pref === "light" || pref === "dark") return pref;
+  try {
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  } catch {
+    return "light";
+  }
+}
+
+function applyTheme(pref = themePref()) {
+  const theme = resolvedTheme(pref);
+  document.documentElement.setAttribute("data-theme", theme);
+  document.documentElement.setAttribute("data-ft-theme-pref", pref);
+  document.querySelectorAll<HTMLButtonElement>("[data-ft-theme-choice]").forEach((btn) => {
+    const on = btn.dataset.ftThemeChoice === pref;
+    btn.setAttribute("aria-pressed", on ? "true" : "false");
+    btn.setAttribute("aria-checked", on ? "true" : "false");
+  });
+}
+
+function setTheme(pref: ThemePref) {
+  const ls = storage();
+  if (ls) ls.setItem(THEME_KEY, pref);
+  else toast("这次会话内有效，浏览器不允许保存外观");
+  applyTheme(pref);
+}
+
+function getStars(): Star[] {
+  const parsed = readJson<Star[]>(storage(), STAR_KEY, []);
+  return Array.isArray(parsed)
+    ? parsed.filter((s) => s && typeof s.id === "string" && typeof s.title === "string").slice(0, STAR_LIMIT)
+    : [];
+}
+
+function setStars(list: Star[]): boolean {
+  return writeJson(storage(), STAR_KEY, list.slice(0, STAR_LIMIT));
+}
+
+function isStarred(id: string) {
+  return getStars().some((s) => s.id === id);
+}
+
+function toggleStar(item: Omit<Star, "savedAt">): "on" | "off" | "fail" {
+  if (!storage()) {
+    toast("浏览器不允许保存收藏");
+    return "fail";
+  }
+  const list = getStars();
+  const exists = list.some((s) => s.id === item.id);
+  const next = exists
+    ? list.filter((s) => s.id !== item.id)
+    : [{ ...item, savedAt: new Date().toISOString() }, ...list].slice(0, STAR_LIMIT);
+  if (next.length >= STAR_LIMIT && !exists) next.pop();
+  if (!setStars(next)) {
+    toast("浏览器不允许保存收藏");
+    return "fail";
+  }
+  return exists ? "off" : "on";
+}
+
+function syncStarButtons(root: ParentNode = document) {
+  root.querySelectorAll<HTMLButtonElement>("[data-ft-star]").forEach((btn) => {
+    let item: Omit<Star, "savedAt"> | null = null;
+    try {
+      item = JSON.parse(btn.dataset.ftStar || "");
+    } catch {
+      item = null;
+    }
+    const id = item?.id || btn.closest("[data-item-id]")?.getAttribute("data-item-id") || "";
+    const on = id ? isStarred(id) : false;
+    btn.setAttribute("aria-pressed", on ? "true" : "false");
+    btn.setAttribute("aria-label", on ? "取消收藏" : "收藏");
+    btn.title = on ? "取消收藏" : "收藏";
+    btn.classList.toggle("text-accent", on);
+    btn.classList.toggle("text-ink-4", !on);
+  });
+}
+
+function bindStars() {
+  document.addEventListener("click", (event) => {
+    const btn = (event.target as HTMLElement).closest<HTMLButtonElement>("[data-ft-star]");
+    if (!btn) return;
+    event.preventDefault();
+    event.stopPropagation();
+    let item: Omit<Star, "savedAt"> | null = null;
+    try {
+      item = JSON.parse(btn.dataset.ftStar || "");
+    } catch {
+      item = null;
+    }
+    const article = btn.closest<HTMLElement>("[data-ft-item]");
+    if (article?.dataset.ftItem) {
+      try {
+        item = { ...JSON.parse(article.dataset.ftItem), ...item };
+      } catch {
+        /* keep */
+      }
+    }
+    if (!item?.id || !item.title) return;
+    const result = toggleStar({
+      id: item.id,
+      title: item.title,
+      url: item.url || "",
+      source: item.source || "",
+      date: item.date || "",
+    });
+    if (result === "fail") return;
+    syncStarButtons();
+    announce(result === "on" ? "已收藏" : "已取消收藏");
+  });
+  window.addEventListener("storage", (event) => {
+    if (event.key === STAR_KEY || event.key === null) {
+      syncStarButtons();
+      if (cfg.page === "starred") renderStarred();
+    }
+  });
+  syncStarButtons();
+}
+
+function bindTheme() {
+  applyTheme();
+  document.addEventListener("click", (event) => {
+    const btn = (event.target as HTMLElement).closest<HTMLButtonElement>("[data-ft-theme-choice]");
+    if (!btn?.dataset.ftThemeChoice) return;
+    event.preventDefault();
+    const key = btn.dataset.ftThemeChoice;
+    if (key === "light" || key === "dark" || key === "system") setTheme(key);
+  });
+  try {
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+      if (themePref() === "system") applyTheme("system");
+    });
+  } catch {
+    /* ignore */
+  }
+}
+
+function currentParams() {
+  return new URLSearchParams(location.search);
+}
+
+function filterFromParams(sp: URLSearchParams) {
+  const channel = sp.get("channel");
+  const category = sp.get("category");
+  const tag = sp.get("tag");
+  if (channel === "firstParty") return { filter: "firstParty", category: null as string | null, channel, tag };
+  if (category && CATEGORIES.has(category)) return { filter: category, category, channel: null as string | null, tag };
+  return { filter: "all", category: null as string | null, channel: null as string | null, tag };
+}
+
+function hrefWith(patch: Record<string, string | null>) {
+  const sp = currentParams();
+  for (const [k, v] of Object.entries(patch)) {
+    if (!v) sp.delete(k);
+    else sp.set(k, v);
+  }
+  if (!CATEGORIES.has(sp.get("category") || "")) sp.delete("category");
+  if (sp.get("channel") !== "firstParty") sp.delete("channel");
+  const q = sp.toString();
+  return q ? `${location.pathname}?${q}` : location.pathname;
+}
+
+function reduceMotion() {
+  try {
+    return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  } catch {
+    return false;
+  }
+}
+
+type PageJson = {
+  v: 1;
+  page: number;
+  cards: Array<{
+    key: string;
+    anchorAt: string;
+    item: {
+      id: string;
+      title: string;
+      summary: string | null;
+      reason?: string | null;
+      source?: { name?: string };
+      publishedAt: string | null;
+      category: string | null;
+      channel?: string;
+      x?: { authorName?: string; handle?: string; avatarUrl?: string | null; text?: string } | null;
+      /** site-data removed this; tolerate leftover keys and never render. */
+      score?: unknown;
+    };
+    group: { additionalSourceCount: number } | null;
+  }>;
+  day_counts: Record<string, number>;
+  next: string | null;
+};
+
+function dropScore<T extends { score?: unknown }>(value: T): Omit<T, "score"> {
+  const { score: _ignored, ...rest } = value;
+  void _ignored;
+  return rest;
+}
+
+function cardHtml(card: PageJson["cards"][number]) {
+  const item = dropScore(card.item || { id: "", title: "", summary: null, source: { name: "" }, publishedAt: null, category: null });
+  if (!item.id || !item.title) return "";
+  const x = item.channel === "x" ? item.x : null;
+  const sourceName = x
+    ? x.authorName || x.handle || ""
+    : item.source?.name || "";
+  const source = x
+    ? `<span class="ft-x-line">${x.authorName ? `<span>${escapeHtml(x.authorName)}</span>` : ""}${x.handle ? `<span class="ft-x-handle">@${escapeHtml(x.handle)}</span>` : ""}</span>`
+    : sourceName
+      ? escapeHtml(sourceName)
+      : "";
+  const excerpt = x && (x.text || item.summary)
+    ? `<p class="ft-x-excerpt">${escapeHtml(x.text || item.summary || "")}</p>`
+    : item.summary
+      ? `<p class="mt-1 line-clamp-2 text-[14.5px] leading-[1.7] text-ink-3">${escapeHtml(item.summary)}</p>`
+      : "";
+  const more = card.group && card.group.additionalSourceCount >= 1
+    ? `<span class="text-ink-4">另 ${card.group.additionalSourceCount} 家</span>`
+    : "";
+  const reason = item.reason
+    ? `<p class="mt-1 text-[12.5px] text-ink-4">${escapeHtml(item.reason)}</p>`
+    : "";
+  const snapshot = escapeHtml(JSON.stringify({
+    id: item.id,
+    title: item.title,
+    url: "",
+    source: sourceName,
+    date: item.publishedAt || "",
+  }));
+  return `<li data-card-key="${escapeHtml(card.key)}" class="group/slot bleed">
+    <article class="relative min-w-0 lg:card lg:px-[18px] lg:pb-[14px] lg:pt-[15px]" data-item-id="${escapeHtml(item.id)}" data-ft-item='${snapshot}'>
+      <header class="flex min-h-[22px] items-center gap-1.5 text-[12.5px] text-ink-4">
+        ${source}
+        <span class="ml-auto inline-flex">
+          <button type="button" class="inline-flex size-11 items-center justify-center rounded-control text-ink-4 lg:size-[26px]" data-ft-star='${snapshot}' aria-pressed="false" aria-label="收藏">☆</button>
+        </span>
+      </header>
+      <h3 class="mt-1.5 text-[17px] font-[650] leading-[1.5] text-ink">${escapeHtml(item.title)}</h3>
+      ${excerpt}${reason}${more}
+    </article>
+  </li>`;
+}
+
+function escapeHtml(value: string) {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;");
+}
+
+function dayLabel(day: string) {
+  const [y, m, d] = day.split("-").map(Number);
+  if (!y || !m || !d) return day;
+  return `${m}月${d}日`;
+}
+
+const timelineState = {
+  filter: "all",
+  pages: 1,
+  next: null as string | null,
+  keys: new Set<string>(),
+  days: new Map<string, { count: number; cards: PageJson["cards"] }>(),
+  original: "",
+  loading: false,
+  error: false,
+  fetches: 0,
+};
+
+function timelineRoot() {
+  return document.querySelector<HTMLElement>("[data-ft-timeline]");
+}
+
+function renderTimeline() {
+  const root = timelineRoot();
+  if (!root) return;
+  if (!timelineState.days.size) {
+    root.innerHTML = `<div class="lg:card"><div class="flex flex-col items-center px-6 py-14 text-center"><div class="text-[15px] font-semibold text-ink-2">过去 48 小时没有达到上榜条件的事件。</div><p class="ft-asof mt-2">${asofLine()}</p></div></div>`;
+    return;
+  }
+  const sections = [...timelineState.days.entries()]
+    .sort((a, b) => b[0].localeCompare(a[0]))
+    .map(([day, pack]) => `<section aria-label="${escapeHtml(day)}">
+      <div class="bleed sticky top-[var(--bar-h)] z-20 bg-daybar lg:bg-bg">
+        <div class="flex h-11 items-center gap-2 text-[14px] font-bold text-ink">${escapeHtml(dayLabel(day))}<span class="ml-auto text-[12.5px] font-normal text-ink-4">${pack.count} 条</span></div>
+      </div>
+      <ol>${pack.cards.map(cardHtml).join("")}</ol>
+    </section>`)
+    .join("");
+  const end = timelineState.loading
+    ? `<div class="ft-feed-end"><span class="ft-feed-end-note">正在加载</span></div>`
+    : timelineState.error
+      ? `<div class="ft-feed-end"><button type="button" class="ft-feed-btn is-error" data-ft-retry>加载失败 · 重试</button></div>`
+      : timelineState.next
+        ? (timelineState.fetches >= AUTO_FETCHES || reduceMotion()
+          ? `<div class="ft-feed-end"><button type="button" class="ft-feed-btn" data-ft-more>加载更多</button></div>`
+          : `<div class="ft-feed-end" data-ft-sentinel aria-hidden="true"></div>`)
+        : `<div class="ft-feed-end"><span class="ft-feed-end-note">已经到底了</span></div>`;
+  root.innerHTML = `${sections}${end}`;
+  syncStarButtons(root);
+}
+
+function ingestPage(page: PageJson) {
+  for (const card of page.cards || []) {
+    if (!card?.key || !card.item?.id || timelineState.keys.has(card.key)) continue;
+    timelineState.keys.add(card.key);
+    const day = (card.anchorAt || "").slice(0, 10);
+    if (!day) continue;
+    const pack = timelineState.days.get(day) || { count: page.day_counts?.[day] || 0, cards: [] };
+    pack.cards.push({ ...card, item: dropScore(card.item) });
+    pack.count = page.day_counts?.[day] || pack.cards.length;
+    timelineState.days.set(day, pack);
+  }
+  timelineState.next = page.next;
+  timelineState.pages = page.page;
+}
+
+async function fetchPage(filter: string, page: number): Promise<PageJson | null> {
+  const url = `${cfg.base}data/timeline/${filter}/page-${page}.json`;
+  const res = await fetch(url, { cache: page === 1 ? "no-store" : "default" });
+  if (!res.ok) throw new Error(String(res.status));
+  return res.json() as Promise<PageJson>;
+}
+
+async function loadMore() {
+  if (!timelineState.next || timelineState.loading) return;
+  const nextPage = timelineState.pages + 1;
+  timelineState.loading = true;
+  timelineState.error = false;
+  renderTimeline();
+  try {
+    const page = await fetchPage(timelineState.filter, nextPage);
+    if (!page) throw new Error("empty");
+    ingestPage(page);
+    timelineState.fetches += 1;
+    timelineState.loading = false;
+    saveTimelinePos();
+    renderTimeline();
+    observeSentinel();
+  } catch {
+    timelineState.loading = false;
+    timelineState.error = true;
+    renderTimeline();
+  }
+}
+
+function observeSentinel() {
+  const el = document.querySelector("[data-ft-sentinel]");
+  if (!el || !timelineState.next || timelineState.fetches >= AUTO_FETCHES || reduceMotion()) return;
+  const io = new IntersectionObserver((entries) => {
+    if (entries.some((e) => e.isIntersecting)) {
+      io.disconnect();
+      void loadMore();
+    }
+  }, { rootMargin: "600px 0px" });
+  io.observe(el);
+}
+
+function saveTimelinePos() {
+  const store = session();
+  if (!store) return;
+  const anchor = document.querySelector<HTMLElement>("[data-card-key]");
+  writeJson(store, TIMELINE_PREFIX + timelineState.filter, {
+    pages: timelineState.pages,
+    fetches: timelineState.fetches,
+    next: timelineState.next,
+    anchor: anchor?.dataset.cardKey || null,
+    y: window.scrollY,
+  });
+}
+
+async function restoreTimeline(filter: string) {
+  const snap = readJson<{ pages: number; fetches: number; next: string | null; anchor: string | null; y: number } | null>(
+    session(),
+    TIMELINE_PREFIX + filter,
+    null,
+  );
+  if (!snap?.pages || snap.pages < 2) return false;
+  for (let p = 2; p <= snap.pages; p++) {
+    try {
+      const page = await fetchPage(filter, p);
+      if (page) ingestPage(page);
+    } catch {
+      break;
+    }
+  }
+  timelineState.fetches = snap.fetches || Math.max(0, snap.pages - 1);
+  renderTimeline();
+  const target = snap.anchor && document.querySelector(`[data-card-key="${snap.anchor}"]`);
+  if (target) target.scrollIntoView();
+  else if (typeof snap.y === "number") window.scrollTo(0, snap.y);
+  return true;
+}
+
+async function applyFilter(filter: string, push = true) {
+  timelineState.filter = filter;
+  timelineState.pages = 1;
+  timelineState.next = null;
+  timelineState.keys = new Set();
+  timelineState.days = new Map();
+  timelineState.loading = false;
+  timelineState.error = false;
+  timelineState.fetches = 0;
+  if (push) history.pushState({ ftFilter: filter }, "", hrefWith(filter === "firstParty"
+    ? { channel: "firstParty", category: null }
+    : filter === "all"
+      ? { channel: null, category: null }
+      : { category: filter, channel: null }));
+  document.querySelectorAll("[data-ft-filter]").forEach((el) => {
+    const on = el.getAttribute("data-ft-filter") === filter;
+    if (on) el.setAttribute("aria-current", "page");
+    else el.removeAttribute("aria-current");
+  });
+  const root = timelineRoot();
+  if (!root) return;
+  if (!cfg.hasTimeline) {
+    if (filter === "all" && timelineState.original) {
+      root.innerHTML = timelineState.original;
+      syncStarButtons(root);
+      return;
+    }
+    root.innerHTML = `<div class="lg:card"><div class="flex flex-col items-center px-6 py-14 text-center"><div class="text-[15px] font-semibold text-ink-2">过去 48 小时没有达到上榜条件的事件。</div><p class="ft-asof mt-2">${asofLine()}</p></div></div>`;
+    return;
+  }
+  try {
+    const page = await fetchPage(filter, 1);
+    if (!page) throw new Error("empty");
+    ingestPage(page);
+    renderTimeline();
+    const restored = await restoreTimeline(filter);
+    if (!restored) observeSentinel();
+  } catch {
+    root.innerHTML = `<div class="lg:card"><div class="flex flex-col items-center px-6 py-14 text-center"><div class="text-[15px] font-semibold text-ink-2">过去 48 小时没有达到上榜条件的事件。</div><p class="ft-asof mt-2">${asofLine()}</p></div></div>`;
+  }
+}
+
+function asofLine() {
+  const stamp = beijingStamp(cfg.dataAsOf || cfg.builtAt);
+  const stale = cfg.dataAsOf && cfg.builtAt && Date.parse(cfg.builtAt) - Date.parse(cfg.dataAsOf) > 6 * 3600 * 1000;
+  return `数据截至 ${stamp}（北京时间）${stale ? " · 数据可能已过期" : ""}`;
+}
+
+function beijingStamp(iso: string) {
+  if (!iso) return "";
+  try {
+    return new Intl.DateTimeFormat("zh-CN", {
+      timeZone: "Asia/Shanghai",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false,
+    }).format(new Date(iso)).replace(/\//g, "-");
+  } catch {
+    return iso.slice(0, 16).replace("T", " ");
+  }
+}
+
+function bindFilters() {
+  const root = timelineRoot();
+  if (root) timelineState.original = root.innerHTML;
+  document.addEventListener("click", (event) => {
+    const link = (event.target as HTMLElement).closest<HTMLAnchorElement>("[data-ft-filter]");
+    if (!link || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const key = link.dataset.ftFilter || "all";
+    if (key === "featured" || key === "all" && link.getAttribute("href")?.includes("/all")) return;
+    event.preventDefault();
+    void applyFilter(key === "featured" ? "all" : key);
+  });
+  document.addEventListener("click", (event) => {
+    const more = (event.target as HTMLElement).closest("[data-ft-more], [data-ft-retry]");
+    if (!more) return;
+    event.preventDefault();
+    void loadMore();
+  });
+  window.addEventListener("popstate", () => {
+    void applyFilter(filterFromParams(currentParams()).filter, false);
+  });
+  window.addEventListener("pagehide", saveTimelinePos);
+  const initial = filterFromParams(currentParams()).filter;
+  void (async () => {
+    if (!cfg.hasTimeline) {
+      try {
+        cfg.hasTimeline = (await fetch(asset("data/timeline/all/index.json"))).ok;
+      } catch {
+        cfg.hasTimeline = false;
+      }
+    }
+    if (initial !== "all" || cfg.hasTimeline) await applyFilter(initial, false);
+  })();
+}
+
+function asset(path: string) {
+  return `${cfg.base}${path.replace(/^\//, "")}`;
+}
+
+function pageHref(name: "search" | "starred" | "index" | "hot" | "daily") {
+  if (cfg.base === "./" || cfg.base === "") return `${name === "index" ? "index" : name}.html`;
+  if (name === "index") return cfg.base;
+  return `${cfg.base}${name}/`;
+}
+
+let searchModuleLoaded = false;
+let searchIndex: { v: 1; docs: Array<{ id: string; t: string; title: string; summary: string; source: string; category: string | null; date: string; url: string }> } | null = null;
+let searchIndexFailed = false;
+
+function loadSearchModule() {
+  if (searchModuleLoaded) return Promise.resolve();
+  return new Promise<void>((resolve, reject) => {
+    const s = document.createElement("script");
+    s.src = asset("assets/search.js");
+    s.onload = () => {
+      searchModuleLoaded = true;
+      resolve();
+    };
+    s.onerror = () => reject(new Error("search module"));
+    document.head.appendChild(s);
+  });
+}
+
+async function loadSearchIndex() {
+  if (searchIndex || searchIndexFailed) return searchIndex;
+  try {
+    const res = await fetch(asset("data/search-index.json"));
+    if (!res.ok) throw new Error(String(res.status));
+    searchIndex = await res.json();
+  } catch {
+    searchIndexFailed = true;
+    searchIndex = null;
+  }
+  return searchIndex;
+}
+
+function renderHits(host: HTMLElement, q: string, docs: Array<{ title: string; summary: string; url: string; source: string; date: string }>) {
+  if (!q.trim()) {
+    host.innerHTML = `<p class="text-[14px] text-ink-4">输入关键词搜索标题和摘要。</p>`;
+    announce("请输入搜索词");
+    return;
+  }
+  if (!docs.length) {
+    host.innerHTML = `<p class="text-[14px] text-ink-2">没有找到「${escapeHtml(q)}」相关内容</p>`;
+    announce(`没有找到${q}相关内容`);
+    return;
+  }
+  host.innerHTML = `<p class="mb-3 text-[13px] text-ink-4" aria-live="polite">${docs.length} 条结果</p>${docs
+    .slice(0, 20)
+    .map((d) => `<a class="ft-search-hit" href="${escapeHtml(d.url)}"><h3>${escapeHtml(d.title)}</h3>${d.summary ? `<p>${escapeHtml(d.summary)}</p>` : ""}${d.source || d.date ? `<p>${escapeHtml([d.source, d.date].filter(Boolean).join(" · "))}</p>` : ""}</a>`)
+    .join("")}`;
+  announce(`${Math.min(docs.length, 20)} 条结果`);
+}
+
+async function runSearch(q: string, host: HTMLElement) {
+  try {
+    await loadSearchModule();
+    const index = await loadSearchIndex();
+    if (!index) {
+      host.innerHTML = `<p class="text-[14px] text-ink-2">搜索暂时不可用，请稍后再试</p>`;
+      announce("搜索暂时不可用");
+      return;
+    }
+    const api = (window as Window & { __FT_SEARCH__?: { searchDocs: (index: unknown, q: string) => typeof index extends never ? never : Array<{ title: string; summary: string; url: string; source: string; date: string }> } }).__FT_SEARCH__;
+    const docs = api ? api.searchDocs(index, q) : [];
+    renderHits(host, q, docs);
+  } catch {
+    host.innerHTML = `<p class="text-[14px] text-ink-2">搜索暂时不可用，请稍后再试</p>`;
+  }
+}
+
+function bindSearch() {
+  const desk = document.querySelector<HTMLFormElement>('[data-ft-search="desk"]');
+  const input = desk?.querySelector<HTMLInputElement>("input[name=q]");
+  input?.addEventListener("focus", () => {
+    void loadSearchModule();
+  });
+  desk?.addEventListener("submit", (event) => {
+    const q = input?.value.trim() || "";
+    if (!q) {
+      event.preventDefault();
+      return;
+    }
+    event.preventDefault();
+    location.href = `${pageHref("search")}${q ? `?q=${encodeURIComponent(q)}` : ""}`;
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "/" && !(event.target instanceof HTMLInputElement || event.target instanceof HTMLTextAreaElement || (event.target as HTMLElement).isContentEditable)) {
+      event.preventDefault();
+      if (input) input.focus();
+      else openPhoneSearch();
+    }
+    if (event.key === "Escape") closePhoneSearch(true);
+  });
+
+  document.querySelectorAll("[data-ft-search=phone]").forEach((btn) => {
+    btn.addEventListener("click", (event) => {
+      event.preventDefault();
+      openPhoneSearch(btn as HTMLElement);
+    });
+  });
+
+  if (cfg.page === "search") {
+    const host = document.getElementById("ft-search-page");
+    const q = currentParams().get("q") || "";
+    const field = document.querySelector<HTMLInputElement>("#ft-search-q");
+    if (field) field.value = q;
+    if (host) void runSearch(q, host);
+    field?.addEventListener("input", () => {
+      const next = field.value.trim();
+      history.replaceState(null, "", next ? `?q=${encodeURIComponent(next)}` : location.pathname);
+      void runSearch(next, host!);
+    });
+  }
+}
+
+let searchReturn: HTMLElement | null = null;
+
+function openPhoneSearch(from?: HTMLElement) {
+  searchReturn = from || (document.activeElement as HTMLElement | null);
+  let layer = document.getElementById("ft-search-layer");
+  if (!layer) {
+    layer = document.createElement("div");
+    layer.id = "ft-search-layer";
+    layer.className = "ft-search-layer";
+    layer.innerHTML = `<div class="ft-search-head"><label class="sr-only" for="ft-search-mobile">搜索</label><input id="ft-search-mobile" type="search" placeholder="搜索标题、摘要…" maxlength="200" /><button type="button" class="ft-search-cancel" data-ft-search-close>取消</button></div><div id="ft-search-mobile-hits" class="ft-search-results"></div>`;
+    document.body.appendChild(layer);
+    layer.querySelector("[data-ft-search-close]")?.addEventListener("click", () => closePhoneSearch(true));
+    const field = layer.querySelector<HTMLInputElement>("#ft-search-mobile");
+    field?.addEventListener("focus", () => void loadSearchModule());
+    field?.addEventListener("input", () => {
+      const q = field.value.trim();
+      void runSearch(q, document.getElementById("ft-search-mobile-hits")!);
+    });
+  }
+  layer.hidden = false;
+  layer.querySelector<HTMLInputElement>("#ft-search-mobile")?.focus();
+  void loadSearchModule();
+}
+
+function closePhoneSearch(restore: boolean) {
+  const layer = document.getElementById("ft-search-layer");
+  if (!layer || layer.hidden) return;
+  layer.hidden = true;
+  if (restore) searchReturn?.focus();
+}
+
+function renderStarred() {
+  const host = document.getElementById("ft-starred");
+  if (!host) return;
+  const items = getStars();
+  if (!items.length) {
+    host.innerHTML = `<div class="flex flex-col items-center px-6 py-14 text-center"><div class="text-[15px] font-semibold text-ink-2">还没有收藏</div><p class="mt-1.5 max-w-sm text-[13px] leading-relaxed text-ink-4">在卡片上点星标，条目会保存在这台浏览器里。</p></div>`;
+    return;
+  }
+  host.innerHTML = items.map((item) => {
+    const link = item.url
+      ? `<a href="${escapeHtml(item.url)}" class="text-[17px] font-[650] text-ink">${escapeHtml(item.title)}</a>`
+      : `<span class="text-[17px] font-[650] text-ink">${escapeHtml(item.title)}</span>`;
+    const meta = [item.source, item.date].filter(Boolean).join(" · ");
+    return `<article class="border-b border-line-soft py-4" data-item-id="${escapeHtml(item.id)}">
+      <div class="flex items-start gap-3">${link}<button type="button" class="ml-auto inline-flex size-11 items-center justify-center text-accent" data-ft-star='${escapeHtml(JSON.stringify(item))}' aria-pressed="true" aria-label="取消收藏">★</button></div>
+      ${meta ? `<p class="mt-1 text-[12.5px] text-ink-4">${escapeHtml(meta)}</p>` : ""}
+    </article>`;
+  }).join("");
+  syncStarButtons(host);
+}
+
+async function refreshFromMeta() {
+  const stamp = () => beijingStamp(cfg.dataAsOf).slice(-5) || "--:--";
+  try {
+    const res = await fetch(asset("data/meta.json"), { cache: "no-store" });
+    if (!res.ok) throw new Error("meta");
+    const meta = await res.json() as { data_as_of?: string };
+    if (meta.data_as_of && cfg.dataAsOf && meta.data_as_of > cfg.dataAsOf && cfg.hasTimeline) {
+      cfg.dataAsOf = meta.data_as_of;
+      await applyFilter(timelineState.filter, false);
+      toast(`已更新 · 数据截至 ${beijingStamp(meta.data_as_of).slice(-5)}`);
+    } else {
+      toast(`已是最新 · 数据截至 ${stamp()}`);
+    }
+  } catch {
+    toast(`刷新失败，显示的是 ${stamp()} 的数据`);
+  }
+}
+
+function bindPtr() {
+  let startY = 0;
+  let pulling = false;
+  document.addEventListener("touchstart", (event) => {
+    if (window.scrollY > 0) return;
+    startY = event.touches[0]?.clientY || 0;
+    pulling = true;
+  }, { passive: true });
+  document.addEventListener("touchend", (event) => {
+    if (!pulling) return;
+    pulling = false;
+    const y = event.changedTouches[0]?.clientY || 0;
+    if (window.scrollY <= 0 && y - startY >= 64) void refreshFromMeta();
+  }, { passive: true });
+
+  document.querySelectorAll("nav[aria-label='底部导航'] a[aria-current='page']").forEach((tab) => {
+    tab.addEventListener("click", (event) => {
+      if (window.scrollY > 0) return;
+      event.preventDefault();
+      void refreshFromMeta();
+    });
+  });
+}
+
+function boot() {
+  bindTheme();
+  bindStars();
+  bindFilters();
+  bindSearch();
+  bindPtr();
+  if (cfg.page === "starred") renderStarred();
+}
+
+if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);
+else boot();

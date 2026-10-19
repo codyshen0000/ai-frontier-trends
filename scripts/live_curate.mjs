@@ -192,6 +192,7 @@ export function morePageBody({ hrefBetween, escapeHtml }) {
         { label: "看板 Studio", href: "https://codyshen0000.github.io/studio/", note: "KPI / 表 / 图分析", external: true },
         { label: "FLUX 3 专题", href: hrefBetween("/more/", "/flux3/"), note: "速查表、案例与术语" },
         { label: "关于", href: hrefBetween("/more/", "/about/"), note: "材料来源与标签" },
+        { label: "RSS", href: "../feed/weekly.xml", note: "订阅周报" },
         { label: "个人主页", href: "https://codyshen0000.github.io/", note: "学术主页入口", external: true },
         { label: "原始看板", href: hrefBetween("/more/", "/live/") + "#board", note: "Hub、分类过滤、待交付表" },
       ],

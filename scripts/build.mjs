@@ -391,7 +391,7 @@ function mitAssetPrefix(fromPath) {
 /** Prefix every local assets/ or data/ URL in a src, href, or comma-separated srcset value. */
 export function prefixLocalAssetUrls(value, prefix) {
   if (!prefix) return value;
-  return String(value).replace(/(^|,\s*)((?:assets|data)\/)/g, `$1${prefix}$2`);
+  return String(value).replace(/(^|,\s*)((?:assets|data|feed|api)\/)/g, `$1${prefix}$2`);
 }
 
 /** Rewrite src, srcSet, imageSrcSet, href, action from the same prefix helper. */
@@ -410,12 +410,15 @@ export function normalizeResponsiveImageAttrs(html) {
 }
 
 export function rewriteMitStatic(html, fromPath) {
-  const prefixedPages = String(html).replace(/(href|src|action)="((?:index|hot|daily)\.html)([^"]*)"/g, (_, attr, file, suffix) => {
+  const prefixedPages = String(html).replace(/(href|src|action)="((?:index|hot|daily|search|starred)\.html)([^"]*)"/g, (_, attr, file, suffix) => {
     const page = file.replace(/\.html$/, "");
     const dest = page === "index" ? "/" : `/${page}/`;
     return `${attr}="${hrefBetween(fromPath, dest)}${suffix}"`;
   });
-  return normalizeResponsiveImageAttrs(rewriteMitAssetAttrs(prefixedPages, mitAssetPrefix(fromPath)));
+  const prefix = mitAssetPrefix(fromPath);
+  const withAssets = normalizeResponsiveImageAttrs(rewriteMitAssetAttrs(prefixedPages, prefix));
+  const base = prefix || "./";
+  return withAssets.replace(/"base":"\.\/"/g, `"base":"${base}"`);
 }
 
 function publishMitStatic() {
@@ -443,6 +446,14 @@ function publishMitStatic() {
     mkdirSync(join(distDir, "assets", "covers"), { recursive: true });
     cpSync(coversDir, join(distDir, "assets", "covers"), { recursive: true });
   }
+  for (const extra of ["avatars", "hydrate.js", "search.js"]) {
+    const from = join(src, "assets", extra);
+    if (existsSync(from)) cpSync(from, join(distDir, "assets", extra), { recursive: true });
+  }
+  for (const extra of ["feed", "api"]) {
+    const from = join(src, extra);
+    if (existsSync(from)) cpSync(from, join(distDir, extra), { recursive: true });
+  }
 
   const indexHtml = readFileSync(join(src, "index.html"), "utf8");
   const hotHtml = readFileSync(join(src, "hot.html"), "utf8");
@@ -451,6 +462,12 @@ function publishMitStatic() {
   writePage("/live/", injectBeforeHeadEnd(rewriteMitStatic(indexHtml, "/live/"), faviconLinks("/live/")));
   writePage("/hot/", injectBeforeHeadEnd(rewriteMitStatic(hotHtml, "/hot/"), faviconLinks("/hot/")));
   writePage("/daily/", injectBeforeHeadEnd(rewriteMitStatic(dailyHtml, "/daily/"), faviconLinks("/daily/")));
+  if (existsSync(join(src, "search.html"))) {
+    writePage("/search/", injectBeforeHeadEnd(rewriteMitStatic(readFileSync(join(src, "search.html"), "utf8"), "/search/"), faviconLinks("/search/")));
+  }
+  if (existsSync(join(src, "starred.html"))) {
+    writePage("/starred/", injectBeforeHeadEnd(rewriteMitStatic(readFileSync(join(src, "starred.html"), "utf8"), "/starred/"), faviconLinks("/starred/")));
+  }
 }
 
 function chipClass(status) {
@@ -578,7 +595,9 @@ function readHomeData() {
   return { live, threads: extracted.threads, lede: extracted.lede, threadSource: extracted.source, timelineRaw };
 }
 
-export function buildSite() {
+const dataset = (process.argv.find((a) => a.startsWith("--dataset=")) || "").slice(10) || process.env.FT_DATASET || "";
+
+export async function buildSite() {
   assertCoverRecords(JSON.parse(readFileSync(join(root, "scripts", "mit-static", "src", "covers.generated.json"), "utf8")));
   assertWeeklyReports(root);
   assertWeeklyMetaSources(root);
@@ -771,11 +790,34 @@ export function buildSite() {
   const copiedImages = copyCaseAssets(root, distDir);
   writeFileSync(join(distDir, ".nojekyll"), "");
   publishMitStatic();
+  const { exportStatic } = await import("./static_export.mjs");
+  await exportStatic({
+    distDir,
+    contentDir,
+    dataset,
+    dataAsOf: undefined,
+    builtAt: new Date().toISOString(),
+  });
   assertDistPublicCopy(distDir);
+  snapshotRemainingA();
 
-  console.log(`Built ${contentPages.length + 1} pages → dist/ (public=${publicDeploy}, case images=${copiedImages}, mit-static overlay)`);
+  console.log(`Built ${contentPages.length + 1} pages → dist/ (public=${publicDeploy}, case images=${copiedImages}, mit-static overlay, dataset=${dataset || "none"})`);
+}
+
+function snapshotRemainingA() {
+  const dest = join(root, "preview", "remaining-a");
+  const src = join(root, "preview", "mit-static");
+  mkdirSync(dest, { recursive: true });
+  for (const name of ["index.html", "hot.html", "daily.html", "search.html", "starred.html"]) {
+    const from = join(src, name);
+    if (existsSync(from)) writeFileSync(join(dest, name), readFileSync(from));
+  }
+  for (const dir of ["assets", "data", "feed", "api"]) {
+    const from = join(distDir, dir);
+    if (existsSync(from)) cpSync(from, join(dest, dir), { recursive: true });
+  }
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
-  buildSite();
+  await buildSite();
 }

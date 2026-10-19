@@ -16,7 +16,8 @@ const PAGE = {
   "/all": "index.html",
   "/more": "index.html",
   "/topics": "index.html",
-  "/starred": "index.html",
+  "/starred": "starred.html",
+  "/search": "search.html",
   "/about": "index.html",
   "/agent": "index.html",
   "/changelog": "index.html",
@@ -108,6 +109,7 @@ export type LinkProps = {
   title?: string;
   target?: string;
   rel?: string;
+  "data-ft-filter"?: string;
 };
 
 export function Link({ to, className, children, onClick, ...rest }: LinkProps) {
