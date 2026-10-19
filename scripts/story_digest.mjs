@@ -10,7 +10,17 @@ const URL_ALT = /^(?:https?:)?\/\/|^https?:\/\//i;
 
 export const BANNED_PUBLIC_COPY =
   /权重跟踪|记交付|本批|六件套|低于门槛|\[低于门槛补位\]|补位|score=|闸分|闸\s*[AB]|资料是否齐全|本条材料未披露故|本条未覆盖|不进信号表|不进正表|不升档|趋势分析已定性|不碰训练配方|不进训练方法主线|挂主线|挂 RSI|挂观察|日常降为简讯|不当推理机/;
-export const PUBLIC_COPY_SCAN_EXTS = new Set([".html", ".json", ".xml", ".md", ".svg", ".js", ".css", ".txt"]);
+export const PUBLIC_COPY_SCAN_EXTS = new Set([".html", ".json", ".xml", ".md", ".svg", ".js", ".css", ".txt", ".map"]);
+export const PUBLIC_COPY_BINARY_EXTS = new Set([
+  ".png", ".webp", ".jpg", ".jpeg", ".gif", ".avif", ".ico", ".bmp", ".tif", ".tiff",
+  ".woff", ".woff2", ".ttf", ".otf", ".eot",
+  ".pdf", ".zip", ".gz", ".tgz", ".br", ".7z", ".rar", ".wasm",
+  ".mp3", ".mp4", ".webm", ".wav", ".ogg", ".mov", ".bin",
+]);
+export const PUBLIC_COPY_SKIP_DIRS = new Set(["node_modules", ".git", "LICENSES"]);
+const ROOT_ABS_ATTR = /\b(?:href|src|srcset|imagesrcset|action|poster|data-href|data-src)=["'](\/(?!\/)[^"']*)["']/gi;
+const ROOT_ABS_JSON = /"(?:path|url|href|src|link|canonical)":\s*"(\/(?!\/)[^"]*)"/g;
+const ROOT_ABS_CSS = /url\(\s*["']?(\/(?!\/)[^"')]+)/g;
 
 let cached = null;
 
@@ -179,17 +189,28 @@ export function assertWeeklyMetaCopy(raw, label) {
   }
 }
 
-export function walkPublicCopyFiles(rootDir, extensions = PUBLIC_COPY_SCAN_EXTS, acc = []) {
+export function isPublicCopyTextFile(name, extensions) {
+  const ext = extname(name).toLowerCase();
+  if (extensions instanceof Set) return extensions.has(ext);
+  return !PUBLIC_COPY_BINARY_EXTS.has(ext);
+}
+
+export function walkPublicCopyFiles(rootDir, extensions, acc = []) {
   if (!existsSync(rootDir)) return acc;
   for (const name of readdirSync(rootDir)) {
     const full = join(rootDir, name);
-    if (statSync(full).isDirectory()) walkPublicCopyFiles(full, extensions, acc);
-    else if (extensions.has(extname(name).toLowerCase())) acc.push(full);
+    const stat = statSync(full);
+    if (stat.isDirectory()) {
+      if (PUBLIC_COPY_SKIP_DIRS.has(name)) continue;
+      walkPublicCopyFiles(full, extensions, acc);
+    } else if (isPublicCopyTextFile(name, extensions)) {
+      acc.push(full);
+    }
   }
   return acc;
 }
 
-export function collectBannedPublicCopyHits(rootDir, { extensions = PUBLIC_COPY_SCAN_EXTS, prefix = "" } = {}) {
+export function collectBannedPublicCopyHits(rootDir, { extensions, prefix = "" } = {}) {
   const hits = [];
   for (const full of walkPublicCopyFiles(rootDir, extensions)) {
     const rel = `${prefix}${relative(rootDir, full).split("\\").join("/")}`;
@@ -198,6 +219,30 @@ export function collectBannedPublicCopyHits(rootDir, { extensions = PUBLIC_COPY_
     }
   }
   return hits;
+}
+
+export function collectRootAbsoluteUrlHits(rootDir, { extensions, prefix = "" } = {}) {
+  const hits = [];
+  for (const full of walkPublicCopyFiles(rootDir, extensions)) {
+    const rel = `${prefix}${relative(rootDir, full).split("\\").join("/")}`;
+    const text = readFileSync(full, "utf8");
+    for (const match of text.matchAll(ROOT_ABS_ATTR)) {
+      hits.push({ file: rel, kind: "attr", value: match[1] });
+    }
+    for (const match of text.matchAll(ROOT_ABS_JSON)) {
+      hits.push({ file: rel, kind: "json", value: match[1] });
+    }
+    for (const match of text.matchAll(ROOT_ABS_CSS)) {
+      hits.push({ file: rel, kind: "css", value: match[1] });
+    }
+  }
+  return hits;
+}
+
+export function assertNoRootAbsoluteUrls(rootDir, options = {}) {
+  const hits = collectRootAbsoluteUrlHits(rootDir, options);
+  if (!hits.length) return hits;
+  throw new Error(hits.map((hit) => `${hit.file} in-site URL starts with / «${hit.value}»`).join("\n"));
 }
 
 export function assertNoBannedPublicCopyInDir(rootDir, options = {}) {
