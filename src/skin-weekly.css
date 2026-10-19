@@ -179,6 +179,7 @@ html.ft-shell[data-theme="dark"] th {
   background: var(--ft-sunk) !important;
 }
 
+html.ft-shell[data-theme="dark"] footer,
 html.ft-shell[data-theme="dark"] body,
 html.ft-shell[data-theme="dark"] p,
 html.ft-shell[data-theme="dark"] li,
