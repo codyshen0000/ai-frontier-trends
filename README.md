@@ -62,7 +62,7 @@ SITE_BASE=/ai-frontier-trends npm run preview
    `<link rel="stylesheet" href="https://codyshen0000.github.io/assets/ds.css">`  
    以及相对路径的 `assets/skin-raw.css`（暖纸 token、侧栏/底栏、字体与强调色；并在注入后把阅读栏水平居中加回去：周报/时间线走 `body` 栏，`/live/` 走源文件自己的 `main{max-width:1000px;margin:0 auto}`。不改图表/控件几何，也不改这些源 HTML）。
 2. 在 `<body>` 后插入阅读站壳层：左侧栏 + 手机顶栏/底栏（精选 / 热点 / 日报 / 更多）和主题脚本。
-3. `/live/` 额外跑一遍幂等的精选变换（`scripts/live_curate.mjs`）：从 `article.card[data-id][data-day]` 抽出标题、中文摘要、来源、日期，生成顶置「当前热点」和按日精选流；原文（Hub / 主线表 / 待交付 / 过滤器）包进 `#board` 档案，不删。`/live/#board` 仍可看原始看板。
+3. `/live/` 额外跑一遍幂等的精选变换（`scripts/live_curate.mjs`）：从 `article.card[data-id][data-day]` 抽出标题、中文摘要、来源、日期，生成顶置「当前热点」和按日精选流。公开构建随后用 MIT 精选页覆盖 `/live/`，`#board` 不再存在；`/more/` 的「原始看板」因此是纯文本，不链死锚点。
 4. `/timeline/` 的输出会给「主线 N」标题补上 `id="thread-N"`，方便首页卡片跳转；源文件不动。
 5. `/hot/`、`/more/`、`/daily/` 由构建器生成，不写进被同步覆盖的 `live.html`。`/daily/` 用 `scripts/daily_page.mjs` 按存档日分组，统计条只从卡片来源数、【官方自报】和「大模型」栏目推导。
 
@@ -80,5 +80,7 @@ SITE_BASE=/ai-frontier-trends npm run preview
 - 不要写入 AIHOT / MyHOT 名称或 Logo。
 
 构建变换按注释哨兵拆装，重复注入结果相同。
+
+`/api/v1/` 与 `weekly/*.json` 里的 `path` 一律相对**站点基路径**（Pages 前缀 `/ai-frontier-trends/`），不是相对 JSON 文件自己的目录。`api/v1/index.json` 用 `path_base: "site"` 标明。例：`api/v1/meta.json`、`weekly/2026-10-18/`。不要写成域名根 `/api/...`。
 
 发布前检查：不要包含本机路径（`/workspace`、`/cursor/`、`/home/box`）、百度链接、token，或私有「收藏」内容。

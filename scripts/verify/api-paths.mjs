@@ -14,8 +14,10 @@ for (const file of index.files) {
   assert.ok(file.path, `${file.note || "file"} has path`);
   assert.ok(!String(file.path).startsWith("/"), `api index path is relative: ${file.path}`);
 }
-assert.equal(index.files[0].path, "index.json");
-assert.ok(index.files.some((file) => file.path === "weekly/index.json"));
+assert.equal(index.path_base, "site");
+assert.equal(index.files[0].path, "api/v1/index.json");
+assert.ok(index.files.some((file) => file.path === "api/v1/weekly/index.json"));
+assert.ok(index.files.every((file) => String(file.path).startsWith("api/v1/")));
 
 for (const item of weeklyIndex.items || []) {
   assert.ok(!String(item.path).startsWith("/"), `weekly item path is relative: ${item.path}`);

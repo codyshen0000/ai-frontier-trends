@@ -392,11 +392,11 @@ export async function exportStatic({ distDir, contentDir, dataset = "", dataAsOf
   }
 
   const listed = [
-    { path: "index.json", note: "接口目录", schema_version: "1.0.0" },
-    { path: "meta.json", note: "站点元数据", schema_version: "1.0.0" },
-    { path: "weekly/index.json", note: "周报目录", schema_version: "1.0.0" },
+    { path: "api/v1/index.json", note: "接口目录", schema_version: "1.0.0" },
+    { path: "api/v1/meta.json", note: "站点元数据", schema_version: "1.0.0" },
+    { path: "api/v1/weekly/index.json", note: "周报目录", schema_version: "1.0.0" },
     ...weeklySummaries.map((issue) => ({
-      path: `weekly/${issue.date}.json`,
+      path: `api/v1/weekly/${issue.date}.json`,
       note: `周报 ${issue.date}`,
       schema_version: "1.0.0",
     })),
@@ -411,6 +411,8 @@ export async function exportStatic({ distDir, contentDir, dataset = "", dataAsOf
   writeJson(join(distDir, "api", "v1", "index.json"), {
     schema_version: "1.0.0",
     data_as_of: asOf,
+    path_base: "site",
+    paths: "relative to the site base path (GitHub Pages prefix /ai-frontier-trends/), not to this JSON file",
     files: listed,
   });
 
