@@ -28,6 +28,9 @@ export interface FeedItemProps {
 
 export const FeedItem = memo(function FeedItem({ item, group, filters, read = false, onOpen, showTags = false, at }: FeedItemProps) {
   const isX = item.channel === "x" && !!item.x;
+  const originalUrl = "originalUrl" in item && typeof (item as { originalUrl?: string }).originalUrl === "string"
+    ? (item as { originalUrl: string }).originalUrl
+    : "";
   const open = () => {
     rememberPreview(item);
     onOpen?.(item.id);
@@ -42,7 +45,7 @@ export const FeedItem = memo(function FeedItem({ item, group, filters, read = fa
       data-ft-item={JSON.stringify({
         id: item.id,
         title: item.title,
-        url: item.links?.original || (item as { url?: string }).url || "",
+        url: originalUrl || item.links?.original || (item as { url?: string }).url || "",
         source: item.channel === "x" && item.x ? item.x.authorName || item.x.handle : item.source?.name || "",
         date: item.publishedAt || "",
       })}

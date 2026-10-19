@@ -2,10 +2,16 @@ import { build } from "vite";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
+import { resolveAndWriteGeneratedSite } from "../engine/write_generated.mjs";
 
 process.env.NODE_ENV = "production";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
+const engineSiteFile = path.join(here, ".engine-site.json");
+const { resolved: engineResolved, site: engineSite } = resolveAndWriteGeneratedSite(engineSiteFile);
+if (engineResolved.warning) console.warn("[engine]", engineResolved.warning);
+console.log("engine", engineResolved.source, "cards", engineSite.timeline.cards.length, "hot", engineSite.hot.entries.length);
+
 const outDir = path.resolve(here, "../../preview/mit-static");
 const tmpCss = path.join(here, ".tmp-css");
 const tmpSsr = path.join(here, ".tmp-ssr");
@@ -86,21 +92,28 @@ for (const name of ["hydrate", "search"]) {
 }
 
 const { exportStatic } = await import("../static_export.mjs");
+const builtAt = new Date().toISOString();
 const exported = await exportStatic({
   distDir: outDir,
   contentDir: path.resolve(here, "../../content"),
   dataset: process.env.FT_DATASET || "",
-  dataAsOf: undefined,
-  builtAt: new Date().toISOString(),
+  dataAsOf: engineSite.data_as_of || undefined,
+  builtAt,
+  engine: engineResolved.bundle,
+  site: engineSite,
 });
 
+const hasTimeline = exported.dataset === "test-paging" || engineSite.timeline.cards.length > 0;
 const mod = await import(pathToFileURL(path.join(tmpSsr, "prerender.js")).href);
 for (const page of mod.pages) {
   const html = rewriteMitHtml(mod.renderPage(page.node, page.title, "assets/app.css", {
     page: page.page,
-    hasTimeline: exported.dataset === "test-paging",
+    hasTimeline,
     hydrateHref: "assets/hydrate.js",
-    rssHref: "feed/weekly.xml",
+    weeklyRss: "feed/weekly.xml",
+    selectedRss: engineSite.hasSelectedFeed ? "feed.xml" : "",
+    dataAsOf: engineSite.data_as_of,
+    builtAt: engineSite.built_at || builtAt,
     base: "./",
   }));
   fs.writeFileSync(path.join(outDir, page.file), html);

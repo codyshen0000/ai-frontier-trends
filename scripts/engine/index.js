@@ -2,3 +2,4 @@
 import "./loader.test.mjs";
 import "./stubs.test.mjs";
 import "./verify-registry.test.mjs";
+import "./b1.test.mjs";

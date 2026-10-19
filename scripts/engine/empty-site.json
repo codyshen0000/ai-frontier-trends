@@ -1,0 +1,27 @@
+{
+  "data_as_of": "",
+  "built_at": "",
+  "source": "empty",
+  "warning": null,
+  "hasSelectedFeed": false,
+  "hot": {
+    "computedAt": null,
+    "windowHours": 48,
+    "entries": []
+  },
+  "hotStrip": [],
+  "daily": null,
+  "dailyIndex": [],
+  "dailies": [],
+  "timeline": {
+    "filters": { "channel": "all", "category": null, "tag": null },
+    "cards": [],
+    "nextCursor": null,
+    "hot": [],
+    "dayCounts": {}
+  },
+  "itemUrls": {},
+  "feedItems": [],
+  "events": [],
+  "redirects": []
+}

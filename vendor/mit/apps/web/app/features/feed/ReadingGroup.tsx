@@ -16,6 +16,8 @@ const reportsUrl = (factId: string, filters: TimelineFilters | undefined) =>
   listPath(`/api/site/groups/${encodeURIComponent(factId)}/reports`, filters ? filterParams(filters) : {});
 
 const labelOf = (group: GroupInfo) => (group.additionalSourceCount > 0 ? `另外 ${group.additionalSourceCount} 家也报道了` : `${group.reportCount} 篇报道`);
+const publicOriginal = (url?: string | null): url is string =>
+  !!url && /^https?:\/\//i.test(url) && !/example\.com/i.test(url);
 
 // The groups left open in each history entry, with what they showed (null: still loading): back from an
 // item finds them open again. In memory for back within the app; in session storage for a page the
@@ -134,9 +136,11 @@ export function GroupSources({ group, filters, parentId }: { group: GroupInfo; f
               <Link viewTransition to={`/items/${r.id}`} className={`min-w-0 flex-1 truncate hover:text-accent ${readTone(read.has(r.id), "text-ink-2")}`}>
                 {r.title}
               </Link>
-              <a href={r.originalUrl} target="_blank" rel="noopener noreferrer" aria-label="打开原文" className="shrink-0 text-ink-4 hover:text-accent">
-                <IconArrowUpRight size={13} />
-              </a>
+              {publicOriginal(r.originalUrl) ? (
+                <a href={r.originalUrl} target="_blank" rel="noopener noreferrer" aria-label="打开原文" className="shrink-0 text-ink-4 hover:text-accent">
+                  <IconArrowUpRight size={13} />
+                </a>
+              ) : null}
             </li>
           ))}
         </ul>
@@ -197,9 +201,11 @@ function GroupSheet({ open, onClose, group, filters, parentId }: {
                 </span>
                 <span className={`mt-0.5 line-clamp-2 text-[15px] leading-[1.5] ${readTone(read.has(r.id), "text-ink-2")}`}>{r.title}</span>
               </Link>
-              <a href={r.originalUrl} target="_blank" rel="noopener noreferrer" aria-label="打开原文" className="-mr-2 grid size-11 shrink-0 place-items-center rounded-full text-ink-4 active:bg-bg-sunk">
-                <IconArrowUpRight size={16} />
-              </a>
+              {publicOriginal(r.originalUrl) ? (
+                <a href={r.originalUrl} target="_blank" rel="noopener noreferrer" aria-label="打开原文" className="-mr-2 grid size-11 shrink-0 place-items-center rounded-full text-ink-4 active:bg-bg-sunk">
+                  <IconArrowUpRight size={16} />
+                </a>
+              ) : null}
             </li>
           ))}
         </ul>

@@ -124,10 +124,12 @@ function Lead({ e }: { e: HotEntryView }) {
           <span className="flex flex-col items-end gap-1">
             <Sparkline values={e.spark} className="h-10 w-[140px]" />
           </span>
-          <div className="text-right">
-            <div className="mono text-[34px] font-semibold leading-none tracking-[-0.03em] text-ink">{Math.round(e.heat)}</div>
-            <div className="mt-1 text-[11.5px] text-ink-4">热度指数</div>
-          </div>
+          {Number.isFinite(e.heat) ? (
+            <div className="text-right">
+              <div className="mono text-[34px] font-semibold leading-none tracking-[-0.03em] text-ink">{Math.round(e.heat)}</div>
+              <div className="mt-1 text-[11.5px] text-ink-4">热度指数</div>
+            </div>
+          ) : null}
         </div>
       </div>
     </article>
@@ -159,7 +161,9 @@ function Runner({ e }: { e: HotEntryView }) {
           <span className="flex flex-col items-end gap-1">
             <Sparkline values={e.spark} className="h-7 w-[92px]" />
           </span>
-          <span className="mono text-[24px] font-semibold leading-none tracking-[-0.02em] text-ink">{Math.round(e.heat)}</span>
+          {Number.isFinite(e.heat) ? (
+            <span className="mono text-[24px] font-semibold leading-none tracking-[-0.02em] text-ink">{Math.round(e.heat)}</span>
+          ) : null}
         </div>
       </div>
     </article>
@@ -189,7 +193,7 @@ function Row({ e }: { e: HotEntryView }) {
             <span className="num">{e.sourceCount}</span> 个来源
           </span>
           <span className="ml-auto flex items-center gap-2">
-            <span className="mono text-[17px] font-semibold leading-none text-ink">{Math.round(e.heat)}</span>
+            {Number.isFinite(e.heat) ? <span className="mono text-[17px] font-semibold leading-none text-ink">{Math.round(e.heat)}</span> : null}
             <Delta trend={e.trend} pct={e.trendPct} />
           </span>
         </div>
@@ -201,7 +205,7 @@ function Row({ e }: { e: HotEntryView }) {
         <Sparkline values={e.spark} className="h-7 w-[104px]" />
       </span>
       <div className="hidden flex-col items-end gap-1 lg:flex">
-        <span className="mono text-[20px] font-semibold leading-none tracking-[-0.02em] text-ink">{Math.round(e.heat)}</span>
+        {Number.isFinite(e.heat) ? <span className="mono text-[20px] font-semibold leading-none tracking-[-0.02em] text-ink">{Math.round(e.heat)}</span> : null}
         <Delta trend={e.trend} pct={e.trendPct} />
       </div>
     </li>
@@ -249,7 +253,7 @@ export default function HotPage({ hot }: { hot: HotResponse }) {
               <span className="absolute inline-flex size-full animate-ping rounded-full bg-hot opacity-30" />
               <span className="relative inline-flex size-2 rounded-full bg-hot" />
             </span>
-            实时热度
+            当前热度
           </div>
           <h1 className="mt-1.5 text-[24px] font-bold leading-[1.3] tracking-[-0.01em] text-ink lg:text-[26px]">{withSubject("热点榜")}</h1>
           <p className="mt-1.5 text-[13.5px] text-ink-3">过去 {hot.windowHours}{` 小时，${withSubject("圈")}讨论最多的 `}{hot.entries.length || 10} 件事</p>
@@ -263,7 +267,7 @@ export default function HotPage({ hot }: { hot: HotResponse }) {
 
       {!lead ? (
         <div className="card rounded-sheet">
-          <EmptyState title="暂时没有热点">还没有足够多来源共同讨论的事件。</EmptyState>
+          <EmptyState title="过去 48 小时没有达到上榜条件的事件。" />
         </div>
       ) : (
         <>
