@@ -170,14 +170,7 @@ function shellLinks(currentId, fromPath) {
 }
 
 function tabbarItems() {
-  const primary = config.nav?.primary ?? [];
-  const editions = config.nav?.editions ?? [];
-  const items = [];
-  for (const item of primary) {
-    if (item.id === "timeline") items.push(...editions);
-    items.push(item);
-  }
-  return items;
+  return config.nav?.primary ?? [];
 }
 
 function tabbarLinks(currentId, fromPath) {
@@ -478,7 +471,7 @@ function verifyRawInjection(page, raw, injected, extraBody = "") {
   if (!injected.includes(DS_CSS)) throw new Error(`${page.id}: missing ds.css`);
   if (!injected.includes("skin-raw.css")) throw new Error(`${page.id}: missing skin-raw.css`);
   if (!injected.includes('data-ds-injected="nav"')) throw new Error(`${page.id}: missing injected nav`);
-  if (!injected.includes(">精选<") || !injected.includes(">热点<") || !injected.includes(">趋势<") || !injected.includes(">更多<")) {
+  if (!injected.includes(">精选<") || !injected.includes(">热点<") || !injected.includes(">日报<") || !injected.includes(">更多<")) {
     throw new Error(`${page.id}: injected nav missing primary items`);
   }
   const currentId = page.currentId || page.id;

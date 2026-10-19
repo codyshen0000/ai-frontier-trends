@@ -52,7 +52,7 @@ Assessment A / B 分派独立子代理后在此综合。`npx impeccable detect` 
 | Accessibility | 3 | skip、landmark、标题序、`aria-current`、focus-visible、减动、muted 5.15:1；日历点 22px 命中（手机 16px） |
 | Performance | 3 | 无 Google 字体、无内容图；hash 脚本很小；共用页仍内联无用 CHART_CSS |
 | Theming | 4 | 日报不再覆盖 E-Ink；暗色 token 存在 |
-| Responsive | 3 | 960 断点；底栏 5 项含日报且当前高亮；手机藏往期、日历+邻日等价可达 |
+| Responsive | 3 | 960 断点；底栏 4 项含日报且当前高亮；手机藏往期、日历+邻日等价可达 |
 | Implementation Integrity | 3 | `#d-` 换期；`#s-`/`#c-` 会留在所属存档日（已修） |
 | **合计** | **16/20** | **Good** |
 
@@ -84,7 +84,7 @@ Assessment A / B 分派独立子代理后在此综合。`npx impeccable detect` 
 3. 头条不放评测大表（看板没有可靠表数据）。  
 4. 右栏是「今日看点 / 本期版面」，不是 aihot 的旁路新闻模块。  
 5. 栏目名用大模型 / 生图视频 / 产品和工具 / 研究论文。  
-6. 手机底栏 5 项（精选 / 热点 / 日报 / 趋势 / 更多），保留自有「趋势」。  
+6. 手机底栏 4 项（精选 / 热点 / 日报 / 更多）；时间线收进「更多」。  
 7. 往期只有当前 live 存档日（现 3 天），按月分组但没有多年折叠。  
 8. 月报结构在、数据无则灰显；周报链到现有 `/weekly/`。  
 9. 暗色强调走整站 cyan token，不给日报单独配暗红。  

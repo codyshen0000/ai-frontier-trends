@@ -1,4 +1,4 @@
-/** Copy dist pages into preview/ and emit a jsDelivr-absolute daily standalone.html. */
+/** Copy dist pages into preview/ and emit jsDelivr-absolute standalone.html files. */
 import { cpSync, existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -26,24 +26,33 @@ function copyPage(name) {
   return true;
 }
 
+function toStandalone(html) {
+  return html
+    .replaceAll('href="../assets/skin-raw.css"', `href="${cdn}/src/skin-raw.css"`)
+    .replaceAll('href="../styles.css"', `href="${cdn}/src/styles.css"`)
+    .replaceAll('src="../theme.js"', `src="${cdn}/src/theme.js"`);
+}
+
 const pages = ["daily", "live", "hot", "more", "timeline"].filter(copyPage);
 mkdirSync(join(previewDir, "assets"), { recursive: true });
 cpSync(join(distDir, "assets", "skin-raw.css"), join(previewDir, "assets", "skin-raw.css"));
 cpSync(join(distDir, "styles.css"), join(previewDir, "styles.css"));
 cpSync(join(distDir, "theme.js"), join(previewDir, "theme.js"));
 
-const daily = readFileSync(join(distDir, "daily", "index.html"), "utf8");
-const standalone = daily
-  .replaceAll('href="../assets/skin-raw.css"', `href="${cdn}/src/skin-raw.css"`)
-  .replaceAll('href="../styles.css"', `href="${cdn}/src/styles.css"`)
-  .replaceAll('src="../theme.js"', `src="${cdn}/src/theme.js"`);
-
-if (!standalone.includes(`${cdn}/src/skin-raw.css`) || !standalone.includes(`${cdn}/src/theme.js`)) {
-  throw new Error("standalone rewrite missed CSS/JS hrefs");
+const standalones = [];
+for (const name of ["daily", "live", "hot", "more"]) {
+  const src = join(distDir, name, "index.html");
+  if (!existsSync(src)) continue;
+  const html = toStandalone(readFileSync(src, "utf8"));
+  if (!html.includes(`${cdn}/src/skin-raw.css`)) {
+    throw new Error(`${name} standalone rewrite missed skin-raw.css`);
+  }
+  mkdirSync(join(previewDir, name), { recursive: true });
+  writeFileSync(join(previewDir, name, "standalone.html"), html);
+  standalones.push(name);
 }
 
-writeFileSync(join(previewDir, "daily", "standalone.html"), standalone);
-
+const daily = readFileSync(join(distDir, "daily", "index.html"), "utf8");
 const stagedDir = join(root, "staging", "daily-preview");
 mkdirSync(stagedDir, { recursive: true });
 const staged = daily
@@ -56,5 +65,5 @@ cpSync(join(distDir, "styles.css"), join(stagedDir, "styles.css"));
 cpSync(join(distDir, "theme.js"), join(stagedDir, "theme.js"));
 
 console.log(`snapshot preview pages=${pages.join(",")} sha=${sha}`);
-console.log(`standalone ${join(previewDir, "daily", "standalone.html")}`);
+console.log(`standalone ${standalones.join(",")}`);
 console.log(`staging ${join(stagedDir, "index.html")}`);

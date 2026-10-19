@@ -33,6 +33,23 @@ function sourceLabel(host) {
   return map[host] || host.replace(/\.[a-z]+$/, "");
 }
 
+export function clipSummary(text, max = 96) {
+  const clean = String(text || "").replace(/\s+/g, " ").trim();
+  if (!clean) return "";
+  if (clean.length <= max) return clean;
+  const parts = clean.split(/(?<=[。！？])/);
+  let out = "";
+  for (const part of parts) {
+    if (!part) continue;
+    if (!out && part.length > max) break;
+    if (`${out}${part}`.length > max + 12) break;
+    out += part;
+    if (out.length >= Math.min(max, 72)) break;
+  }
+  if (out.length >= 24) return out;
+  return `${clean.slice(0, max).replace(/[，、；：.\s]+$/u, "")}…`;
+}
+
 export function formatZhDate(iso) {
   const match = String(iso).match(/^(\d{4})-(\d{2})-(\d{2})$/);
   if (!match) return iso;
@@ -152,7 +169,7 @@ export function extractLiveCards(html) {
   return [...byId.values()];
 }
 
-export function selectPins(cards, limit = 4) {
+export function selectPins(cards, limit = 5) {
   const latest = cards.reduce((max, card) => (card.day > max ? card.day : max), "");
   return [...cards]
     .map((card) => ({
@@ -168,7 +185,7 @@ export function selectPins(cards, limit = 4) {
     .map((item) => item.card);
 }
 
-export function rankHot(cards, { windowDays = 2, minItems = 8 } = {}) {
+export function rankHot(cards, { windowDays = 2, minItems = 8, limit = 10 } = {}) {
   const days = [...new Set(cards.map((card) => card.day))].sort().reverse();
   const latest = days[0];
   if (!latest) return [];
@@ -178,13 +195,14 @@ export function rankHot(cards, { windowDays = 2, minItems = 8 } = {}) {
     const keep = new Set(days.slice(0, 3));
     pool = cards.filter((card) => keep.has(card.day));
   }
-  return [...pool].sort(
+  const ranked = [...pool].sort(
     (a, b) =>
       b.sourceCount - a.sourceCount ||
       Number(b.focus) - Number(a.focus) ||
       b.day.localeCompare(a.day) ||
       a.title.localeCompare(b.title, "zh"),
   );
+  return typeof limit === "number" ? ranked.slice(0, limit) : ranked;
 }
 
 export function groupByDay(cards, excludeIds = new Set()) {

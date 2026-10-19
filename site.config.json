@@ -8,26 +8,27 @@
     "primary": [
       { "id": "live", "label": "精选", "path": "/live/" },
       { "id": "hot", "label": "热点", "path": "/hot/" },
-      {
-        "id": "timeline",
-        "label": "趋势",
-        "path": "/timeline/",
-        "children": [
-          { "id": "weekly", "label": "周报", "path": "/weekly/" },
-          { "id": "signals", "label": "信号表", "path": "/signals/" },
-          { "id": "weights", "label": "权重追踪", "path": "/weights/" }
-        ]
-      },
+      { "id": "daily", "label": "日报", "path": "/daily/" },
       {
         "id": "more",
         "label": "更多",
         "path": "/more/",
-        "match": ["about", "flux3", "flux3-cases", "flux3-examples", "flux3-camera", "papers", "home"]
+        "match": [
+          "about",
+          "flux3",
+          "flux3-cases",
+          "flux3-examples",
+          "flux3-camera",
+          "papers",
+          "home",
+          "timeline",
+          "weekly",
+          "signals",
+          "weights"
+        ]
       }
     ],
-    "editions": [
-      { "id": "daily", "label": "日报", "path": "/daily/" }
-    ],
+    "editions": [],
     "more": [
       { "label": "日报", "path": "/daily/" },
       { "label": "研究主页", "path": "/" },
