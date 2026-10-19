@@ -387,7 +387,9 @@ assert(weeklyIssue.includes("一句话结论"), "weekly issue keeps the report l
 assert(weeklyIssue.includes("data-ds-injected=\"weekly\""), "weekly issue has download chrome");
 assert(weeklyIssue.includes("./report.md") && weeklyIssue.includes("./timeline.md"), "weekly issue links markdown downloads");
 assert(weeklyIssue.includes("https://codyshen0000.github.io/assets/ds.css"), "weekly issue uses shared ds.css");
-assert(weeklyIssue.includes("skin-raw.css"), "weekly issue loads skin-raw.css");
+assert(weeklyIssue.includes("skin-weekly.css"), "weekly issue loads weekly-only skin");
+assert(!weeklyIssue.includes("skin-raw.css"), "weekly issue does not load Remaining-A skin-raw.css");
+assert(!weeklyIssue.includes("app.css") && !weeklyIssue.includes("hydrate.js"), "weekly issue does not load Remaining-A assets");
 assert(/body\{[^}]*max-width:\s*\d+px;[^}]*margin:[^;]*auto/.test(weeklyIssue), "weekly issue source keeps a reading-column max-width");
 for (const needle of ["/workspace", "/home/box", "/cursor/stores", "收藏"]) {
   assert(!weeklyIssue.includes(needle), `weekly issue has no ${needle}`);
@@ -399,26 +401,32 @@ for (const file of ["report.md", "timeline.md", "report.html"]) {
   assert(existsSync(join(distDir, "weekly", "2026-10-18", file)), `weekly 2026-10-18 ships ${file}`);
 }
 assert(existsSync(join(distDir, "weekly", "2026-10-12", "charts", "2026-10-12-evidence-by-line.png")), "weekly 2026-10-12 ships chart pngs");
+assert(existsSync(join(distDir, "weekly", "2026-10-12", "charts", "2026-10-12-evidence-by-line.webp")), "weekly 2026-10-12 ships chart webp");
 assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-evidence-by-line.png")), "weekly 2026-10-18 ships chart pngs");
+assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-evidence-by-line.webp")), "weekly 2026-10-18 ships evidence webp");
 assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-signal-candidates.png")), "weekly 2026-10-18 ships signal chart");
+assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-signal-candidates.webp")), "weekly 2026-10-18 ships signal webp");
 assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-weights-delivery.png")), "weekly 2026-10-18 ships weights chart");
+assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-weights-delivery.webp")), "weekly 2026-10-18 ships weights webp");
 {
   const weeklyReport = readFileSync(join(root, "content", "weekly", "2026-10-18", "report.html"), "utf8");
   const weeklyMd = readFileSync(join(root, "content", "weekly", "2026-10-18", "report.md"), "utf8");
+  const weeklyDist = readFileSync(join(distDir, "weekly", "2026-10-18", "index.html"), "utf8");
   assert(weeklyReport.includes('alt="本周证据写入：交付与 OPD/RSI 观察最多；主线等级全不变"'), "evidence chart alt matches the image title");
   assert(weeklyReport.includes("<figcaption>本周证据写入：交付与 OPD/RSI 观察最多；主线等级全不变</figcaption>"), "evidence chart figcaption matches the image title");
   assert(weeklyReport.includes('alt="信号表 1–4：本周续核多篇，正表零新增；一周无翻转"'), "signal chart alt matches the image title");
   assert(weeklyReport.includes("<figcaption>信号表 1–4：本周续核多篇，正表零新增；一周无翻转</figcaption>"), "signal chart figcaption matches the image title");
+  assert(weeklyReport.includes('alt="权重与产品：本周兑现 3 项，仍空 3 项（截至 2026-10-16 傍晚）"'), "weights chart alt matches the image title");
+  assert(weeklyReport.includes("<figcaption>权重与产品：本周兑现 3 项，仍空 3 项（截至 2026-10-16 傍晚）</figcaption>"), "weights chart figcaption matches the image title");
   assert(!weeklyReport.includes("正表仍零新增") && !weeklyMd.includes("正表仍零新增"), "weekly copy no longer says 正表仍零新增");
   assert(weeklyMd.includes("![本周证据写入：交付与 OPD/RSI 观察最多；主线等级全不变]"), "weekly md evidence alt matches the image");
   assert(weeklyMd.includes("![信号表 1–4：本周续核多篇，正表零新增；一周无翻转]"), "weekly md signal alt matches the image");
-}
-{
-  const weightsPng = readFileSync(join(root, "content", "weekly", "2026-10-18", "charts", "2026-10-18-weights-delivery.png"));
-  const weeklyHtml = readFileSync(join(root, "content", "weekly", "2026-10-18", "report.html"), "utf8");
-  const embedded = weeklyHtml.match(/<img alt="权重与产品：本周兑现 3 项，仍空 3 项（截至 2026-10-16 傍晚）" src="data:image\/png;base64,([^"]+)"/);
-  assert(Boolean(embedded), "weekly report.html embeds the weights-delivery chart");
-  assert(embedded && Buffer.from(embedded[1], "base64").equals(weightsPng), "embedded weights-delivery PNG matches the chart file bytes");
+  for (const name of ["2026-10-18-evidence-by-line", "2026-10-18-signal-candidates", "2026-10-18-weights-delivery"]) {
+    assert(weeklyDist.includes(`srcset="charts/${name}.webp"`), `dist weekly uses ${name}.webp`);
+    assert(weeklyDist.includes(`src="charts/${name}.png"`), `dist weekly keeps ${name}.png fallback`);
+    assert(weeklyReport.includes(`srcset="charts/${name}.webp"`) || weeklyReport.includes(`src="charts/${name}.png"`), `content weekly report references ${name}`);
+  }
+  assert(!weeklyDist.includes("data:image/png;base64"), "dist weekly issue no longer embeds PNG data URIs");
 }
 
 try {

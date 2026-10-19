@@ -20,6 +20,7 @@ import {
   weeklyIndexBody,
   weeklyIssueChrome,
 } from "./weekly.mjs";
+import { convertWeeklyCharts, rewriteWeeklyChartEmbeds } from "./weekly_charts.mjs";
 import { assertCoverRecords, assertDistPublicCopy, assertWeeklyMetaSources, assertWeeklyReports } from "./story_digest.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -298,8 +299,8 @@ function injectAfterBodyOpen(html, snippet) {
   return `${snippet}${html}`;
 }
 
-export function injectHtmlFile(raw, { currentId, path, extraBody = "" }) {
-  const skinHref = assetHref(path, "assets/skin-raw.css");
+export function injectHtmlFile(raw, { currentId, path, extraBody = "", skinAsset = "assets/skin-raw.css" } = {}) {
+  const skinHref = assetHref(path, skinAsset);
   const cssLink = `<link rel="stylesheet" href="${DS_CSS}" data-ds-injected="css">`;
   const skinLink = `<link rel="stylesheet" href="${skinHref}" data-ds-injected="skin">`;
   let html = stripInjected(raw);
@@ -558,15 +559,18 @@ function assertNoLocalPaths(html, label) {
   }
 }
 
-function writeWeeklyIssue(issue) {
-  const raw = readFileSync(issue.htmlPath, "utf8");
+async function writeWeeklyIssue(issue) {
+  const charts = issue.chartsDir ? await convertWeeklyCharts(issue.chartsDir) : [];
+  const raw = rewriteWeeklyChartEmbeds(readFileSync(issue.htmlPath, "utf8"), charts);
   const extraBody = weeklyIssueChrome({ hrefBetween, trendSubnav, fromPath: issue.path });
+  const injectOpts = { skinAsset: "assets/skin-weekly.css" };
   const injected = injectHtmlFile(raw, {
     currentId: "weekly",
     path: issue.path,
     extraBody,
+    ...injectOpts,
   });
-  verifyRawInjection({ id: `weekly-${issue.date}`, currentId: "weekly", path: issue.path }, raw, injected, extraBody);
+  verifyRawInjection({ id: `weekly-${issue.date}`, currentId: "weekly", path: issue.path, ...injectOpts }, raw, injected, extraBody);
   assertPublicSafe(injected, `weekly ${issue.date}`);
   if (issue.markdownPath) assertPublicSafe(readFileSync(issue.markdownPath, "utf8"), `weekly ${issue.date} markdown`);
   if (issue.timelinePath) assertPublicSafe(readFileSync(issue.timelinePath, "utf8"), `weekly ${issue.date} timeline`);
@@ -584,14 +588,22 @@ function writeWeeklyIssue(issue) {
 }
 
 function verifyRawInjection(page, raw, injected, extraBody = "") {
+  const skinAsset = page.skinAsset || "assets/skin-raw.css";
+  const skinName = skinAsset.split("/").pop();
   if (!injected.includes(DS_CSS)) throw new Error(`${page.id}: missing ds.css`);
-  if (!injected.includes("skin-raw.css")) throw new Error(`${page.id}: missing skin-raw.css`);
+  if (!injected.includes(skinName)) throw new Error(`${page.id}: missing ${skinName}`);
+  if (String(page.id).startsWith("weekly-")) {
+    if (injected.includes("skin-raw.css")) throw new Error(`${page.id}: weekly page must not load Remaining-A skin-raw.css`);
+    if (injected.includes("app.css") || injected.includes("hydrate.js")) {
+      throw new Error(`${page.id}: weekly page must not load Remaining-A assets`);
+    }
+  }
   if (!injected.includes('data-ds-injected="nav"')) throw new Error(`${page.id}: missing injected nav`);
   if (!injected.includes(">精选<") || !injected.includes(">热点<") || !injected.includes(">日报<") || !injected.includes(">更多<")) {
     throw new Error(`${page.id}: injected nav missing primary items`);
   }
   const currentId = page.currentId || page.id;
-  const twice = injectHtmlFile(injected, { currentId, path: page.path, extraBody });
+  const twice = injectHtmlFile(injected, { currentId, path: page.path, extraBody, skinAsset });
   if (twice !== injected) {
     throw new Error(`${page.id}: raw injection is not idempotent`);
   }
@@ -761,7 +773,7 @@ export async function buildSite() {
   }
 
   for (const issue of weeklyIssues) {
-    writeWeeklyIssue(issue);
+    await writeWeeklyIssue(issue);
     contentPages.push({
       id: `weekly-${issue.date}`,
       title: issue.title,
@@ -795,6 +807,7 @@ export async function buildSite() {
   cpSync(join(srcDir, "styles.css"), join(distDir, "styles.css"));
   cpSync(join(srcDir, "theme.js"), join(distDir, "theme.js"));
   cpSync(join(srcDir, "skin-raw.css"), join(distDir, "assets", "skin-raw.css"));
+  cpSync(join(srcDir, "skin-weekly.css"), join(distDir, "assets", "skin-weekly.css"));
   cpSync(join(srcDir, "favicon.svg"), join(distDir, "assets", "favicon.svg"));
   cpSync(join(srcDir, "favicon.png"), join(distDir, "assets", "favicon.png"));
   cpSync(join(srcDir, "favicon.ico"), join(distDir, "favicon.ico"));
