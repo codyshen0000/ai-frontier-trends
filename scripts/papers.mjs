@@ -25,7 +25,8 @@ export const PAPER_CSS = `.paper-card{margin:0 0 28px;padding:20px;background:va
 .paper-card figcaption{margin-top:6px;font-size:12px;color:var(--ds-text-tertiary,#8e8e93);line-height:1.5}
 .paper-card figcaption a{color:inherit;text-decoration:underline}
 .paper-nofig{font-size:13px;color:var(--ds-text-secondary,#6e6e73)}
-a.paper-explain{margin-left:4px;font-size:.78em;padding:1px 6px;border-radius:999px;background:var(--ds-surface-3,#e8e8ed);color:#0058b0!important;text-decoration:none;white-space:nowrap}`;
+a.paper-explain{margin-left:4px;font-size:.78em;padding:1px 6px;border-radius:999px;background:var(--ds-surface-3,#e8e8ed);color:#0058b0!important;text-decoration:none;white-space:nowrap}
+html[data-theme="dark"] a.paper-explain{color:#7eb6ff!important;background:rgba(126,182,255,.14)}`;
 
 export function papersBody(papers) {
   const withFig = papers.filter((p) => p.fig_file).length;

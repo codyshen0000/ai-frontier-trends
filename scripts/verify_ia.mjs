@@ -450,6 +450,7 @@ assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-we
     assert(!/cdn\.jsdelivr\.net|import mermaid/.test(reportDist), `dist weekly ${date}/report.html has no mermaid CDN`);
     assert(/<svg[\s\S]*<\/svg>/.test(reportDist), `dist weekly ${date}/report.html inlines mermaid as SVG`);
     assert(/class="mermaid-wrap"/.test(reportDist), `dist weekly ${date}/report.html wraps mermaid in a light plate`);
+    assert(/a\{color:#0058b0\}/.test(reportDist), `dist weekly ${date}/report.html light links are #0058b0`);
     assert(/height:\s*auto/.test(reportDist), `dist weekly ${date}/report.html keeps image height:auto`);
     assert(!/<script[^>]+src=["']https?:/i.test(reportDist), `dist weekly ${date}/report.html has no external script`);
     const weeklyOnline = readFileSync(join(distDir, "weekly", date, "index.html"), "utf8");

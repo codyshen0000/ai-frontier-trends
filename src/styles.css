@@ -204,6 +204,11 @@ html.ft-shell main.ds-wrap {
   box-shadow: var(--ds-shadow-1);
 }
 
+html[data-theme="dark"] .trend-subnav a,
+html[data-theme="dark"] .trend-tabs a {
+  color: #e8e8ed !important;
+}
+
 .trend-has-tabs .sister-nav {
   display: none;
 }

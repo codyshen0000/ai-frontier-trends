@@ -25,8 +25,8 @@ html.ft-shell {
   --ft-ink: #1c1c1a;
   --ft-muted: #6b6a64;
   --ft-line: #e6e4dc;
-  --ft-teal: #0f766e;
-  --ft-teal-hover: #0b5f58;
+  --ft-teal: #0b5f58;
+  --ft-teal-hover: #084a45;
   --ft-teal-soft: #e7f3f1;
   --ft-r-8: 8px;
   --ft-r-12: 12px;
@@ -146,9 +146,13 @@ main a:hover,
   border-radius: var(--ds-radius-pill);
   border: 1px solid var(--ds-hairline-strong);
   font-size: 13px;
-  color: var(--ds-text-secondary) !important;
+  color: #3a3a3c !important;
   display: inline-flex;
   align-items: center;
+}
+
+html.ft-shell[data-theme="dark"] .weekly-chrome .trend-subnav a {
+  color: #e8e8ed !important;
 }
 
 .weekly-chrome .trend-subnav a[aria-current="page"],

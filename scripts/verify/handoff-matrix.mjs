@@ -387,11 +387,15 @@ if (process.env.SKIP_CONTRAST !== "1") {
   console.log(JSON.stringify({ t: "contrast", skipped: true, note: "reuse QA matrix-contrast 112/0" }));
 }
 
-for (const path of pages) {
-  for (const js of [true, false]) {
-    for (const w of [1280, 375]) {
-      if (w === 375 && !phonePages.has(path)) continue;
-      await clickControls(path, w, js);
+if (process.env.SKIP_CLICKS === "1") {
+  console.log(JSON.stringify({ t: "clicks", skipped: true }));
+} else {
+  for (const path of pages) {
+    for (const js of [true, false]) {
+      for (const w of [1280, 375]) {
+        if (w === 375 && !phonePages.has(path)) continue;
+        await clickControls(path, w, js);
+      }
     }
   }
 }

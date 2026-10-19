@@ -121,6 +121,9 @@ export function ensureReportImageFlex(html) {
   } else if (!/svg\{[^}]*height:\s*auto/.test(out)) {
     out = out.replace(/<\/style>/i, "svg{max-width:100%;height:auto}</style>");
   }
+  if (!/a\{color:#0058b0\}/.test(out)) {
+    out = out.replace(/<\/style>/i, "a{color:#0058b0}</style>");
+  }
   return out;
 }
 
