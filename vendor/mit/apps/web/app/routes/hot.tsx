@@ -10,6 +10,7 @@ import { Faces } from "../features/hot/Faces";
 import { Delta } from "../features/hot/Delta";
 import { PhoneBar } from "../components/shell/PhoneBar";
 import { scrollBehavior } from "../lib/motion";
+import { SPARK_HOURS } from "@l2/constants";
 
 const BADGES: Record<HotEntryView["badges"][number], { label: string; tone: "hot" | "accent" | "amber"; hint: string }> = {
   surge: { label: "爆", tone: "hot", hint: "讨论快速增加" },
@@ -56,35 +57,8 @@ function StoryLink({ e, className }: { e: HotEntryView; className: string }) {
   );
 }
 
-/**
- * The lead card's picture slot when the story has no picture of its own: its day of heat, drawn large
- * on a faint wash, with where it peaked. Without enough comparable hours the text takes the width.
- */
-function HeatPanel({ e }: { e: HotEntryView }) {
-  const seen = e.spark.filter((v): v is number => v !== null);
-  const peak = Math.max(...seen);
-  const peakAt = e.spark.findIndex((v) => v === peak);
-  return (
-    <div className="order-first flex aspect-[2/1] flex-col rounded-panel bg-accent-softer p-4 ring-1 ring-inset ring-line-soft xl:order-none xl:aspect-[16/10] dark:bg-accent-soft">
-      <div className="flex items-baseline justify-between text-[11.5px] text-ink-4">
-        <span className="font-semibold text-ink-3">24 小时热度</span>
-        <span>
-          峰值 <span className="mono text-ink-2">{Math.round(peak)}</span>
-          {peakAt >= 0 && <span> · {peakAt === e.spark.length - 1 ? "当前" : `${e.spark.length - 1 - peakAt} 小时前`}</span>}
-        </span>
-      </div>
-      <Sparkline values={e.spark} className="mt-3 min-h-0 w-full flex-1" />
-      <div className="mt-2 flex justify-between text-[11px] text-ink-4">
-        <span>24 小时前</span>
-        <span>现在</span>
-      </div>
-    </div>
-  );
-}
-
-/** No. 1: the event people are talking about most, with its picture, digest, latest turn and day of heat. */
+/** No. 1: the event people are talking about most, with its picture when valuable, digest, latest turn and heat. */
 function Lead({ e }: { e: HotEntryView }) {
-  const panel = !e.cover && e.spark.filter((v) => v !== null).length >= 3;
   return (
     <article className="card card-hover group relative flex flex-col overflow-hidden p-5 sm:p-6">
       <div className="flex items-center gap-2.5">
@@ -92,20 +66,18 @@ function Lead({ e }: { e: HotEntryView }) {
         <Badges e={e} />
         <Delta trend={e.trend} pct={e.trendPct} className="ml-auto" />
       </div>
-      <div className={`mt-4 grid gap-5 ${e.cover || panel ? "xl:grid-cols-[minmax(0,1fr)_minmax(0,0.72fr)] xl:gap-7" : ""}`}>
+      <div className={`mt-4 grid gap-5 ${e.cover ? "xl:grid-cols-[minmax(0,1fr)_minmax(0,0.72fr)] xl:gap-7" : ""}`}>
         <div className="min-w-0">
           <h2 className="text-[21px] font-bold leading-[1.4] tracking-[-0.01em] text-ink sm:text-[23px] lg:text-[25px] lg:leading-[1.38]">
             <StoryLink e={e} className="group-hover:text-accent" />
           </h2>
-          {e.summary && <p className="mt-3 line-clamp-3 text-[14px] leading-[1.75] text-ink-3">{e.summary}</p>}
+          {e.summary && <p className="mt-3 whitespace-pre-line text-[14px] leading-[1.75] text-ink-3">{e.summary}</p>}
         </div>
         {e.cover ? (
           <div className="order-first overflow-hidden well rounded-panel xl:order-none">
-            <img src={e.cover.url} srcSet={e.cover.srcSet} sizes="(min-width: 1280px) calc(28vw - 96px), (min-width: 1024px) calc(58vw - 180px), (min-width: 640px) 568px, calc(100vw - 74px)" width={e.cover.width ?? undefined} height={e.cover.height ?? undefined} alt="" loading="eager" fetchPriority="high" decoding="async" className="aspect-[16/9] size-full object-cover transition-transform duration-500 group-hover:scale-[1.02] xl:aspect-[16/10]" />
+            <img src={e.cover.url} srcSet={e.cover.srcSet} sizes="(min-width: 1280px) calc(28vw - 96px), (min-width: 1024px) calc(58vw - 180px), (min-width: 640px) 568px, calc(100vw - 74px)" width={e.cover.width ?? undefined} height={e.cover.height ?? undefined} alt="" loading="eager" fetchPriority="high" decoding="async" className="aspect-[16/9] size-full object-cover transition-transform duration-200 group-hover:scale-[1.02] xl:aspect-[16/10]" />
           </div>
-        ) : (
-          panel && <HeatPanel e={e} />
-        )}
+        ) : null}
       </div>
       {/* Side by side while the card is wide enough; on a narrow card the day of heat and the index
           move under the voices, to the right, instead of squeezing them into a column. */}
@@ -124,7 +96,10 @@ function Lead({ e }: { e: HotEntryView }) {
           </div>
         </div>
         <div className="flex w-full shrink-0 items-end justify-between gap-5 sm:ml-auto sm:w-auto sm:justify-end">
-          {!panel && <Sparkline values={e.spark} className="h-10 w-[140px]" />}
+          <span className="flex flex-col items-end gap-1">
+            <Sparkline values={e.spark} className="h-10 w-[140px]" />
+            <span className="text-[10px] leading-none text-ink-4">示例</span>
+          </span>
           <div className="text-right">
             <div className="mono text-[34px] font-semibold leading-none tracking-[-0.03em] text-ink">{Math.round(e.heat)}</div>
             <div className="mt-1 text-[11.5px] text-ink-4">热度指数</div>
@@ -157,7 +132,10 @@ function Runner({ e }: { e: HotEntryView }) {
           </span>
         </div>
         <div className="flex items-end gap-3">
-          <Sparkline values={e.spark} className="h-7 w-[92px]" />
+          <span className="flex flex-col items-end gap-1">
+            <Sparkline values={e.spark} className="h-7 w-[92px]" />
+            <span className="text-[10px] leading-none text-ink-4">示例</span>
+          </span>
           <span className="mono text-[24px] font-semibold leading-none tracking-[-0.02em] text-ink">{Math.round(e.heat)}</span>
         </div>
       </div>
@@ -196,7 +174,10 @@ function Row({ e }: { e: HotEntryView }) {
       <div className="hidden items-center gap-2.5 lg:flex">
         <Faces participants={e.participants} total={e.participantCount} size={20} />
       </div>
-      <Sparkline values={e.spark} className="hidden h-7 w-[104px] lg:block" />
+      <span className="hidden flex-col items-end justify-center gap-1 lg:flex">
+        <Sparkline values={e.spark} className="h-7 w-[104px]" />
+        <span className="text-[10px] leading-none text-ink-4">示例</span>
+      </span>
       <div className="hidden flex-col items-end gap-1 lg:flex">
         <span className="mono text-[20px] font-semibold leading-none tracking-[-0.02em] text-ink">{Math.round(e.heat)}</span>
         <Delta trend={e.trend} pct={e.trendPct} />
@@ -281,7 +262,7 @@ export default function HotPage({ hot }: { hot: HotResponse }) {
                 <h2 className="text-[15px] font-semibold text-ink">
                   继续看 <span className="num font-normal text-ink-4">No.{pad(others[0]!.rank)}–{pad(others[others.length - 1]!.rank)}</span>
                 </h2>
-                <span className="hidden text-[12px] text-ink-4 lg:block">参与者 · 24 小时走势 · 热度指数</span>
+                <span className="hidden text-[12px] text-ink-4 lg:block">参与者 · {SPARK_HOURS} 小时走势（示例） · 热度指数</span>
               </div>
               <ol className="card divide-y divide-line-soft overflow-hidden">
                 {others.map((e) => (
