@@ -7,6 +7,7 @@ import {
   HERO_MODES,
   IMAGE_WIDTHS,
   MAX_MEDIA_CONSIDERED,
+  MIN_COVER_HEIGHT,
   RANK_WINDOW_HOURS,
   SPARK_HOURS,
   leadCover,
@@ -246,41 +247,50 @@ async function fetchBinary(url) {
   }
 }
 
+function noneRendition(fallback, original, bytes = 0) {
+  return { local: null, fallback, bytes, actualWidth: original.width, actualHeight: original.height, files: [] };
+}
+
 async function emitRenditions(id, original, sharp) {
   mkdirSync(coverAssetDir, { recursive: true });
   const buf = await fetchBinary(original.url);
-  if (!buf) return { local: null, fallback: "hotlink", bytes: 0, actualWidth: original.width, actualHeight: original.height };
-  if (!sharp) {
-    const rawPath = join(coverAssetDir, `${id}-orig.bin`);
-    writeFileSync(rawPath, buf);
-    return { local: null, fallback: "hotlink", bytes: buf.length, actualWidth: original.width, actualHeight: original.height };
-  }
+  if (!buf) return noneRendition("download_failed", original);
+  if (!sharp) return noneRendition("resize_failed", original, buf.length);
   let meta;
   try {
     meta = await sharp(buf, { failOn: "none" }).metadata();
   } catch {
-    return { local: null, fallback: "hotlink", bytes: buf.length, actualWidth: original.width, actualHeight: original.height };
+    return noneRendition("resize_failed", original, buf.length);
   }
+  const format = String(meta.format || "").toLowerCase();
+  if (format === "svg" || format === "svg+xml") return noneRendition("svg", original, buf.length);
   const actualWidth = meta.width || original.width;
   const actualHeight = meta.height || original.height;
+  if (actualHeight != null && Number(actualHeight) < MIN_COVER_HEIGHT) {
+    return noneRendition("below_240", original, buf.length);
+  }
   const files = [];
   let bytes = 0;
-  for (const mode of HERO_MODES) {
-    const targetW = IMAGE_WIDTHS[mode];
-    const width = actualWidth ? Math.min(targetW, actualWidth) : targetW;
-    const pipeline = sharp(buf, { failOn: "none" }).rotate().resize({
-      width,
-      withoutEnlargement: true,
-      fit: "inside",
-    });
-    const webpBuf = await pipeline.clone().webp({ quality: 78 }).toBuffer();
-    const jpgBuf = await pipeline.clone().jpeg({ quality: 78, mozjpeg: true }).toBuffer();
-    const webpName = `${id}-${targetW}.webp`;
-    const jpgName = `${id}-${targetW}.jpg`;
-    writeFileSync(join(coverAssetDir, webpName), webpBuf);
-    writeFileSync(join(coverAssetDir, jpgName), jpgBuf);
-    bytes += webpBuf.length + jpgBuf.length;
-    files.push({ mode, width: targetW, webp: `assets/covers/${webpName}`, jpg: `assets/covers/${jpgName}`, bytes: webpBuf.length });
+  try {
+    for (const mode of HERO_MODES) {
+      const targetW = IMAGE_WIDTHS[mode];
+      const width = actualWidth ? Math.min(targetW, actualWidth) : targetW;
+      const pipeline = sharp(buf, { failOn: "none" }).rotate().resize({
+        width,
+        withoutEnlargement: true,
+        fit: "inside",
+      });
+      const webpBuf = await pipeline.clone().webp({ quality: 78 }).toBuffer();
+      const jpgBuf = await pipeline.clone().jpeg({ quality: 78, mozjpeg: true }).toBuffer();
+      const webpName = `${id}-${targetW}.webp`;
+      const jpgName = `${id}-${targetW}.jpg`;
+      writeFileSync(join(coverAssetDir, webpName), webpBuf);
+      writeFileSync(join(coverAssetDir, jpgName), jpgBuf);
+      bytes += webpBuf.length + jpgBuf.length;
+      files.push({ mode, width: targetW, webp: `assets/covers/${webpName}`, jpg: `assets/covers/${jpgName}`, bytes: webpBuf.length });
+    }
+  } catch {
+    return noneRendition("resize_failed", original, buf.length);
   }
   const full = files.find((f) => f.mode === "full");
   const srcSet = files.map((f) => `${f.webp} ${f.width}w`).join(", ");
@@ -293,7 +303,7 @@ async function emitRenditions(id, original, sharp) {
       width: fullW ?? null,
       height: fullH ?? null,
     },
-    fallback: "local",
+    fallback: "none",
     bytes,
     actualWidth,
     actualHeight,
@@ -323,13 +333,14 @@ function heatTemplate() {
 }
 
 function coverView(resolved, rendition) {
-  if (!resolved?.cover) return null;
-  if (rendition?.local) return rendition.local;
-  return {
-    url: resolved.cover.url,
-    width: resolved.cover.width,
-    height: resolved.cover.height,
-  };
+  if (!resolved?.cover || !rendition?.local) return null;
+  return rendition.local;
+}
+
+function emitReason(rendition) {
+  if (!rendition) return null;
+  if (rendition.local) return null;
+  return rendition.fallback || "resize_failed";
 }
 
 async function main() {
@@ -426,7 +437,6 @@ async function main() {
     const names = row.card.sources?.map((s) => s.name).filter(Boolean) || [];
     const leadRendition = i === 0 ? renditions[`hot-${row.card.id}`] : null;
     const coverOurs = i === 0 ? coverView(row.picked, leadRendition) : null;
-    const coverSource = i === 0 ? coverView(row.picked, leadRendition) : null;
     return {
       rank: i + 1,
       itemId: row.card.id,
@@ -439,11 +449,10 @@ async function main() {
       firstParty: Boolean(row.card.firstParty),
       selected: Boolean(row.card.focus),
       representativeItemId: row.representativeItemId,
-      coverReason: row.picked.reason,
+      coverReason: (i === 0 && emitReason(leadRendition)) || row.picked.reason,
       coverArticleId: row.picked.articleId,
       coverOriginal: row.picked.cover,
       coverOurs,
-      coverSource,
       pickLog: row.picked.log,
       heat: row.heat.heat,
       trend: row.heat.trend,
@@ -474,11 +483,10 @@ async function main() {
       firstParty: Boolean(dailyLeadCard.firstParty),
       publishedAt: `${latestDay}T00:00:00.000Z`,
       otherSources: Math.max(0, (dailyLeadCard.sourceCount || 1) - 1),
-      coverReason: dailyPicked.reason,
+      coverReason: emitReason(dailyRendition) || dailyPicked.reason,
       coverArticleId: dailyPicked.articleId,
       coverOriginal: dailyPicked.cover,
       coverOurs: coverView(dailyPicked, dailyRendition),
-      coverSource: coverView(dailyPicked, dailyRendition),
       pickLog: dailyPicked.log,
     },
     renditions: Object.fromEntries(
@@ -501,12 +509,12 @@ async function main() {
     hot: {
       total: hotEntries.length,
       withCover: hotEntries.filter((e) => e.coverOriginal).length,
-      render: hotEntries[0]?.coverOurs || hotEntries[0]?.coverOriginal ? 1 : 0,
-      renderNote: "MIT UI only paints the picture on NO.01; runners/rows keep sparkline only",
+      render: hotEntries[0]?.coverOurs ? 1 : 0,
+      renderNote: "MIT UI only paints the picture on NO.01; runners/rows keep sparkline only. Download/resize failure → no-image, never hotlink.",
     },
     daily: {
-      headlineHasCover: Boolean(generated.daily.coverOriginal),
-      renders: Boolean(generated.daily.coverOurs || generated.daily.coverOriginal),
+      headlineHasCover: Boolean(generated.daily.coverOurs),
+      renders: Boolean(generated.daily.coverOurs),
       noSparklineWhenMissing: true,
     },
     missing: hotEntries
@@ -543,7 +551,7 @@ async function main() {
         Object.values(generated.renditions).map((r) => (r.files || []).map((f) => f.webp).join("|")),
       ).size,
       modes: HERO_MODES.map((mode) => ({ mode, width: IMAGE_WIDTHS[mode] })),
-      note: "Build-time sharp = MIT image-proxy static equivalent. hero srcSet widths thumb/720, image-1200/1200, full/1600. webp+jpeg, withoutEnlargement. Fail → hotlink original, then hide figure on error.",
+      note: "Build-time sharp = MIT image-proxy static equivalent. hero srcSet widths thumb/720, image-1200/1200, full/1600. webp+jpeg, withoutEnlargement. Fail → no-image (never hotlink). Product-approved: skip SVG and known height < 240.",
     },
   };
 

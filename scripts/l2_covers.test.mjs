@@ -3,6 +3,7 @@ import {
   SPARK_HOURS,
   RANK_WINDOW_HOURS,
   UNKNOWN_WIDTH,
+  MIN_COVER_HEIGHT,
   firstQualifyingImage,
   queryHotCovers,
   leadCover,
@@ -13,6 +14,7 @@ import {
 assert.equal(SPARK_HOURS, 24);
 assert.equal(RANK_WINDOW_HOURS, 48);
 assert.equal(UNKNOWN_WIDTH, 800);
+assert.equal(MIN_COVER_HEIGHT, 240);
 
 const none = firstQualifyingImage([]);
 assert.equal(none.reason, "no_image");
@@ -37,6 +39,37 @@ assert.equal(below.reason, "below_480");
 
 const videoSkipped = firstQualifyingImage([{ kind: "video", url: "https://ex/v.mp4", width: 1280 }]);
 assert.equal(videoSkipped.reason, "no_image");
+
+const svgUnknownWidth = firstQualifyingImage([
+  { kind: "image", url: "https://github.com/ex/raw/main/assets/readme/download-en-light.svg", width: null, height: 44 },
+]);
+assert.equal(svgUnknownWidth.image, null);
+assert.equal(svgUnknownWidth.reason, "svg");
+
+const svgMime = firstQualifyingImage([
+  { kind: "image", url: "https://ex/icon", mime: "image/svg+xml", width: 1200, height: 800 },
+]);
+assert.equal(svgMime.image, null);
+assert.equal(svgMime.reason, "svg");
+
+const short239 = firstQualifyingImage([
+  { kind: "image", url: "https://ex/short.jpg", width: 800, height: 239 },
+]);
+assert.equal(short239.image, null);
+assert.equal(short239.reason, "below_240");
+
+const tall240 = firstQualifyingImage([
+  { kind: "image", url: "https://ex/ok-h.jpg", width: 800, height: 240 },
+]);
+assert.equal(tall240.reason, "ok");
+assert.equal(tall240.image.url, "https://ex/ok-h.jpg");
+
+const svgThenRaster = firstQualifyingImage([
+  { kind: "image", url: "https://ex/tiny.svg", width: null, height: 44 },
+  { kind: "image", url: "https://ex/photo.jpg", width: 900, height: 600 },
+]);
+assert.equal(svgThenRaster.reason, "ok");
+assert.equal(svgThenRaster.image.url, "https://ex/photo.jpg");
 
 const pubs = [
   { articleId: "c", firstParty: false, selected: true, score: 9, media: [{ kind: "image", url: "https://ex/c.jpg", width: 800 }] },

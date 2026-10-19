@@ -4,6 +4,8 @@ export const SPARK_HOURS = 24;
 export const RANK_WINDOW_HOURS = 48;
 /** First in-article image must be this wide; unknown width counts as UNKNOWN_WIDTH. */
 export const MIN_COVER_WIDTH = 480;
+/** Product-approved deviation: skip covers with a known height below this. */
+export const MIN_COVER_HEIGHT = 240;
 export const UNKNOWN_WIDTH = 800;
 export const MAX_MEDIA_CONSIDERED = 12;
 

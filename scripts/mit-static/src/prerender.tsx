@@ -8,10 +8,7 @@ export const pages = [
   { file: "daily.html", title: withSubjectSafe("日报"), pathname: "/daily", node: <DailyScreen /> },
 ];
 
-export const comparePages = [
-  { file: "source-hot.html", title: withSubjectSafe("热点榜"), pathname: "/hot", node: <HotScreen variant="source" /> },
-  { file: "source-daily.html", title: withSubjectSafe("日报"), pathname: "/daily", node: <DailyScreen variant="source" /> },
-];
+export const comparePages = [];
 
 function withSubjectSafe(noun: string) {
   return /[A-Za-z0-9]$/.test(SITE.subject) ? `${SITE.subject} ${noun}` : `${SITE.subject}${noun}`;

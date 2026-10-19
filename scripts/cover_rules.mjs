@@ -3,6 +3,8 @@
 export const SPARK_HOURS = 24;
 export const RANK_WINDOW_HOURS = 48;
 export const MIN_COVER_WIDTH = 480;
+/** Product-approved deviation from MIT: skip covers with a known height below this. */
+export const MIN_COVER_HEIGHT = 240;
 export const UNKNOWN_WIDTH = 800;
 export const MAX_MEDIA_CONSIDERED = 12;
 
@@ -46,17 +48,51 @@ export function coalesceWidth(width) {
   return width == null || Number.isNaN(Number(width)) ? UNKNOWN_WIDTH : Number(width);
 }
 
+/** Product-approved: covers ignore SVG (mime or extension). */
+export function isSvgCover(item) {
+  const url = String(item?.url || "");
+  const mime = String(item?.mime || item?.type || item?.contentType || "").toLowerCase();
+  if (mime.includes("svg")) return true;
+  if (/^data:image\/svg\+xml/i.test(url)) return true;
+  try {
+    const parsed = new URL(url, "https://example.invalid");
+    if (/\.svg$/i.test(parsed.pathname)) return true;
+  } catch {
+    if (/\.svg(\?|#|$)/i.test(url)) return true;
+  }
+  return false;
+}
+
+/** Product-approved: skip when height is known and below MIN_COVER_HEIGHT. Unknown height is allowed. */
+export function isTooShort(item) {
+  const height = item?.height;
+  if (height == null || Number.isNaN(Number(height))) return false;
+  return Number(height) < MIN_COVER_HEIGHT;
+}
+
 /**
  * Picture of an article = first media item of kind image (in-article <img> order, max 12)
  * whose coalesce(width, 800) >= 480.
+ * Product-approved deviation from MIT: skip SVG and known height < 240.
  */
 export function firstQualifyingImage(media, { listed = true, bodyMode = "full" } = {}) {
   if (!listed) return { image: null, reason: "not_listed" };
   if (bodyMode === "summary") return { image: null, reason: "summary_only" };
   const images = (media || []).filter((m) => m && m.kind === "image").slice(0, MAX_MEDIA_CONSIDERED);
   if (images.length === 0) return { image: null, reason: "no_image" };
+  let sawSvg = false;
+  let sawShort = false;
+  let sawNarrow = false;
   for (const item of images) {
     if (isNonArticleImage(item.url, item.width ?? undefined, item.height ?? undefined)) continue;
+    if (isSvgCover(item)) {
+      sawSvg = true;
+      continue;
+    }
+    if (isTooShort(item)) {
+      sawShort = true;
+      continue;
+    }
     if (coalesceWidth(item.width) >= MIN_COVER_WIDTH) {
       return {
         image: {
@@ -67,8 +103,12 @@ export function firstQualifyingImage(media, { listed = true, bodyMode = "full" }
         reason: item.width == null ? "ok_unknown_width_as_800" : "ok",
       };
     }
+    sawNarrow = true;
   }
-  return { image: null, reason: "below_480" };
+  if (sawNarrow) return { image: null, reason: "below_480" };
+  if (sawShort) return { image: null, reason: "below_240" };
+  if (sawSvg) return { image: null, reason: "svg" };
+  return { image: null, reason: "no_image" };
 }
 
 function cmpBoolDesc(a, b) {
@@ -139,7 +179,11 @@ export function pickCover(publications, { representativeId, leadItemId, mode }) 
     ? "summary_only"
     : log.some((row) => row.reason === "below_480")
       ? "below_480"
-      : "no_image";
+      : log.some((row) => row.reason === "below_240")
+        ? "below_240"
+        : log.some((row) => row.reason === "svg")
+          ? "svg"
+          : "no_image";
   return { cover: null, reason, articleId: null, log };
 }
 

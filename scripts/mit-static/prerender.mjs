@@ -80,10 +80,9 @@ function toCompare(html) {
     return `${attr}="${val.replace(/(^|,\s*)((?:assets|data)\/)/g, `$1${comparePrefix}$2`)}"`;
   });
 }
-for (const page of mod.comparePages ?? []) {
-  const html = toCompare(rewriteMitHtml(mod.renderPage(page.node, page.title, "assets/app.css")));
-  fs.writeFileSync(path.join(compareDir, page.file), html);
-  console.log("wrote compare", page.file, html.length);
+for (const stale of ["source-hot.html", "source-daily.html"]) {
+  const stalePath = path.join(compareDir, stale);
+  if (fs.existsSync(stalePath)) fs.rmSync(stalePath);
 }
 fs.writeFileSync(path.join(compareDir, "ours-hot.html"), toCompare(fs.readFileSync(path.join(outDir, "hot.html"), "utf8")));
 fs.writeFileSync(path.join(compareDir, "ours-daily.html"), toCompare(fs.readFileSync(path.join(outDir, "daily.html"), "utf8")));
@@ -94,7 +93,7 @@ fs.writeFileSync(
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>L2 OURS vs SOURCE</title>
+<title>L2 ours pages</title>
 <style>
   body{font:15px/1.5 ui-sans-serif,system-ui;margin:24px;color:#111}
   a{color:#0b57d0}
@@ -102,17 +101,17 @@ fs.writeFileSync(
 </style>
 </head>
 <body>
-<h1>L2 配图对照</h1>
-<p>同一 fixture：OURS = 移植后的 MIT 壳；SOURCE = <code>vendor/mit/apps/web</code> 同源组件。</p>
+<h1>L2 配图（ours）</h1>
+<p>本目录只有我们站点的静态页副本，不是 aihot.news 源站渲染。</p>
 <ul>
-  <li><a href="ours-hot.html">OURS /hot/</a> · <a href="source-hot.html">SOURCE /hot/</a></li>
-  <li><a href="ours-daily.html">OURS /daily/ 头条</a> · <a href="source-daily.html">SOURCE /daily/ 头条</a></li>
+  <li><a href="ours-hot.html">ours /hot/</a></li>
+  <li><a href="ours-daily.html">ours /daily/ 头条</a></li>
 </ul>
 </body>
 </html>
 `,
 );
-console.log("wrote compare index.html");
+console.log("wrote compare ours pages");
 
 fs.rmSync(tmpCss, { recursive: true, force: true });
 fs.rmSync(tmpSsr, { recursive: true, force: true });

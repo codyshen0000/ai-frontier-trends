@@ -1,5 +1,5 @@
 /** Headless Chrome shots for L2 before/after and ours-vs-source compare. */
-import { mkdirSync, writeFileSync, unlinkSync } from "node:fs";
+import { mkdirSync, unlinkSync } from "node:fs";
 import { spawn } from "node:child_process";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -79,7 +79,6 @@ function shot(url, out, width, height = 2200) {
 
 const outDir = join(root, "preview", "l2-realimg");
 mkdirSync(join(outDir, "compare"), { recursive: true });
-mkdirSync(join(root, "refs"), { recursive: true });
 
 const server = await serve(root);
 const prefix = `http://127.0.0.1:${port}`;
@@ -91,13 +90,9 @@ const jobs = [
   ["preview/mit-static/daily.html", "after-daily-1440.png", 1440, 2600],
   ["preview/mit-static/daily.html", "after-daily-390.png", 390, 3200],
   ["preview/l2-realimg/compare/ours-hot.html", "compare/hot-1280-ours.png", 1280, 1800],
-  ["preview/l2-realimg/compare/source-hot.html", "compare/hot-1280-source.png", 1280, 1800],
   ["preview/l2-realimg/compare/ours-daily.html", "compare/daily-1280-ours.png", 1280, 2200],
-  ["preview/l2-realimg/compare/source-daily.html", "compare/daily-1280-source.png", 1280, 2200],
   ["preview/l2-realimg/compare/ours-hot.html", "compare/hot-390-ours.png", 390, 2400],
-  ["preview/l2-realimg/compare/source-hot.html", "compare/hot-390-source.png", 390, 2400],
   ["preview/l2-realimg/compare/ours-daily.html", "compare/daily-390-ours.png", 390, 2800],
-  ["preview/l2-realimg/compare/source-daily.html", "compare/daily-390-source.png", 390, 2800],
 ];
 
 try {
@@ -110,8 +105,4 @@ try {
   server.close();
 }
 
-writeFileSync(join(outDir, "README.md"), `# L2 real images
-
-Screenshots for the MIT-shell cover work. Compare pairs live in \`compare/\`.
-`);
 console.log("shots written under preview/l2-realimg/");

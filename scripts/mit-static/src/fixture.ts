@@ -12,8 +12,6 @@ import type {
 import { RANK_WINDOW_HOURS } from "./constants";
 import generated from "./covers.generated.json";
 
-export type CoverVariant = "ours" | "source";
-
 function spark(peak: number, shape: number[]): Array<number | null> {
   const max = Math.max(...shape, 1);
   return shape.map((v) => Math.round((v / max) * peak));
@@ -113,15 +111,14 @@ const faces = (names: string[]): HotStripEntry["participants"] =>
   names.map((name, i) => ({ name, kind: i === 0 ? "editorial" : "signal" as const }));
 
 function pictureOf(
-  row: { coverOurs?: { url: string; srcSet?: string; width: number | null; height: number | null } | null; coverSource?: { url: string; srcSet?: string; width: number | null; height: number | null } | null; coverOriginal?: { url: string; width: number | null; height: number | null } | null },
-  variant: CoverVariant,
+  row: { coverOurs?: { url: string; srcSet?: string; width: number | null; height: number | null } | null },
 ) {
-  const pic = variant === "source" ? row.coverSource || row.coverOriginal : row.coverOurs || row.coverOriginal;
+  const pic = row.coverOurs;
   if (!pic?.url) return null;
   return { url: pic.url, srcSet: pic.srcSet, width: pic.width ?? null, height: pic.height ?? null };
 }
 
-function generatedHot(variant: CoverVariant): HotResponse {
+function generatedHot(): HotResponse {
   const rows = generated.hotEntries ?? [];
   return {
     computedAt: generated.asOf,
@@ -140,7 +137,7 @@ function generatedHot(variant: CoverVariant): HotResponse {
       spark: row.spark,
       summary: row.summary,
       latest: row.latest,
-      cover: row.rank === 1 ? pictureOf(row, variant) : null,
+      cover: row.rank === 1 ? pictureOf(row) : null,
     })),
   };
 }
@@ -339,10 +336,10 @@ const fixtureDaily: ReportDetail = {
   next: null,
 };
 
-function applyDailyLead(base: ReportDetail, variant: CoverVariant): ReportDetail {
+function applyDailyLead(base: ReportDetail): ReportDetail {
   const d = generated.daily;
   if (!d?.itemId) return { ...base, cover: null };
-  const pic = pictureOf(d, variant);
+  const pic = pictureOf(d);
   const cover = pic ? { ...pic, caption: null as string | null } : null;
   const cite: ReportCitation = {
     itemId: d.itemId,
@@ -372,8 +369,7 @@ function applyDailyLead(base: ReportDetail, variant: CoverVariant): ReportDetail
   };
 }
 
-export const hot: HotResponse = generated.hotEntries?.length ? generatedHot("ours") : fixtureHot;
-export const hotSource: HotResponse = generated.hotEntries?.length ? generatedHot("source") : fixtureHot;
+export const hot: HotResponse = generated.hotEntries?.length ? generatedHot() : fixtureHot;
 
 export const hotStrip: HotStripEntry[] = (hot.entries.length ? hot.entries : fixtureHot.entries).slice(0, 5).map((e) => ({
   rank: e.rank,
@@ -386,8 +382,7 @@ export const hotStrip: HotStripEntry[] = (hot.entries.length ? hot.entries : fix
   participantCount: e.participantCount,
 }));
 
-export const daily: ReportDetail = applyDailyLead(fixtureDaily, "ours");
-export const dailySource: ReportDetail = applyDailyLead(fixtureDaily, "source");
+export const daily: ReportDetail = applyDailyLead(fixtureDaily);
 
 export const timeline: TimelineResponse = {
   filters: { channel: "all", category: null, tag: null },

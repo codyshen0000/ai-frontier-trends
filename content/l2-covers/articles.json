@@ -555,9 +555,9 @@
       ],
       "picked": {
         "cover": {
-          "url": "https://github.com/Prism-Shadow/penguin-harness/raw/main/assets/readme/download-en-light.svg",
+          "url": "https://camo.githubusercontent.com/6d3dccb6eb734f8d94b7b90f3cc427ec926395162802eed440bc5727d3068895/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f762f40707269736d736861646f772f70656e6775696e2d636f7265",
           "width": null,
-          "height": 44
+          "height": null
         },
         "reason": "ok_unknown_width_as_800",
         "articleId": "llamafactory-rsi::0::github.com",
@@ -574,9 +574,9 @@
             "isLead": false,
             "reason": "ok_unknown_width_as_800",
             "image": {
-              "url": "https://github.com/Prism-Shadow/penguin-harness/raw/main/assets/readme/download-en-light.svg",
+              "url": "https://camo.githubusercontent.com/6d3dccb6eb734f8d94b7b90f3cc427ec926395162802eed440bc5727d3068895/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f762f40707269736d736861646f772f70656e6775696e2d636f7265",
               "width": null,
-              "height": 44
+              "height": null
             }
           }
         ]
@@ -639,9 +639,9 @@
       ],
       "picked": {
         "cover": {
-          "url": "https://arxiv.org/html/2609.36642v1/motivation_channels_warmstart_abc_grouped_palette_v26.png",
-          "width": 548,
-          "height": 202
+          "url": "https://arxiv.org/html/2609.36642v1/PROPD_final.png",
+          "width": 543,
+          "height": 269
         },
         "reason": "ok",
         "articleId": "pr-opd::0::arxiv.org",
@@ -658,9 +658,9 @@
             "isLead": false,
             "reason": "ok",
             "image": {
-              "url": "https://arxiv.org/html/2609.36642v1/motivation_channels_warmstart_abc_grouped_palette_v26.png",
-              "width": 548,
-              "height": 202
+              "url": "https://arxiv.org/html/2609.36642v1/PROPD_final.png",
+              "width": 543,
+              "height": 269
             }
           }
         ]
@@ -746,7 +746,7 @@
             "score": 0,
             "representative": true,
             "isLead": false,
-            "reason": "below_480",
+            "reason": "below_240",
             "image": null
           },
           {
@@ -806,13 +806,9 @@
         }
       ],
       "picked": {
-        "cover": {
-          "url": "https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/svg/standardSearchIcon.8bb9dd9c.svg",
-          "width": null,
-          "height": null
-        },
-        "reason": "ok_unknown_width_as_800",
-        "articleId": "jevany::1::xiaohongshu.com",
+        "cover": null,
+        "reason": "svg",
+        "articleId": null,
         "log": [
           {
             "articleId": "jevany::0::jevland.mnimiy.com",
@@ -837,12 +833,8 @@
             "score": 0,
             "representative": false,
             "isLead": false,
-            "reason": "ok_unknown_width_as_800",
-            "image": {
-              "url": "https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/svg/standardSearchIcon.8bb9dd9c.svg",
-              "width": null,
-              "height": null
-            }
+            "reason": "svg",
+            "image": null
           }
         ]
       }
@@ -872,13 +864,9 @@
         }
       ],
       "picked": {
-        "cover": {
-          "url": "https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/svg/standardSearchIcon.8bb9dd9c.svg",
-          "width": null,
-          "height": null
-        },
-        "reason": "ok_unknown_width_as_800",
-        "articleId": "agent-reflex::0::xiaohongshu.com",
+        "cover": null,
+        "reason": "svg",
+        "articleId": null,
         "log": [
           {
             "articleId": "agent-reflex::0::xiaohongshu.com",
@@ -890,12 +878,8 @@
             "score": 0,
             "representative": true,
             "isLead": false,
-            "reason": "ok_unknown_width_as_800",
-            "image": {
-              "url": "https://fe-static.xhscdn.com/formula-static/xhs-pc-web/public/resource/svg/standardSearchIcon.8bb9dd9c.svg",
-              "width": null,
-              "height": null
-            }
+            "reason": "svg",
+            "image": null
           }
         ]
       }

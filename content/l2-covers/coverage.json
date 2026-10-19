@@ -3,16 +3,29 @@
   "rankWindowHours": 48,
   "hot": {
     "total": 10,
-    "withCover": 10,
+    "withCover": 8,
     "render": 1,
-    "renderNote": "MIT UI only paints the picture on NO.01; runners/rows keep sparkline only"
+    "renderNote": "MIT UI only paints the picture on NO.01; runners/rows keep sparkline only. Download/resize failure → no-image, never hotlink."
   },
   "daily": {
     "headlineHasCover": true,
     "renders": true,
     "noSparklineWhenMissing": true
   },
-  "missing": [],
+  "missing": [
+    {
+      "id": "jevany",
+      "rank": 8,
+      "title": "JevAny：任意骨干 → typed 决策头 / LoRA",
+      "reason": "svg"
+    },
+    {
+      "id": "agent-reflex",
+      "rank": 9,
+      "title": "Agent-Reflex：把反思训成元技能并接 OPD",
+      "reason": "svg"
+    }
+  ],
   "dailyMissingReason": null,
   "samples": [
     {
@@ -129,7 +142,7 @@
       "representative": "llamafactory-rsi::0::github.com",
       "winner": "llamafactory-rsi::0::github.com",
       "reason": "ok_unknown_width_as_800",
-      "image": "https://github.com/Prism-Shadow/penguin-harness/raw/main/assets/readme/download-en-light.svg",
+      "image": "https://camo.githubusercontent.com/6d3dccb6eb734f8d94b7b90f3cc427ec926395162802eed440bc5727d3068895/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f762f40707269736d736861646f772f70656e6775696e2d636f7265",
       "log": [
         {
           "articleId": "llamafactory-rsi::0::github.com",
@@ -143,9 +156,9 @@
           "isLead": false,
           "reason": "ok_unknown_width_as_800",
           "image": {
-            "url": "https://github.com/Prism-Shadow/penguin-harness/raw/main/assets/readme/download-en-light.svg",
+            "url": "https://camo.githubusercontent.com/6d3dccb6eb734f8d94b7b90f3cc427ec926395162802eed440bc5727d3068895/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f762f40707269736d736861646f772f70656e6775696e2d636f7265",
             "width": null,
-            "height": 44
+            "height": null
           }
         }
       ]
@@ -168,6 +181,6 @@
         "width": 1600
       }
     ],
-    "note": "Build-time sharp = MIT image-proxy static equivalent. hero srcSet widths thumb/720, image-1200/1200, full/1600. webp+jpeg, withoutEnlargement. Fail → hotlink original, then hide figure on error."
+    "note": "Build-time sharp = MIT image-proxy static equivalent. hero srcSet widths thumb/720, image-1200/1200, full/1600. webp+jpeg, withoutEnlargement. Fail → no-image (never hotlink). Product-approved: skip SVG and known height < 240."
   }
 }
