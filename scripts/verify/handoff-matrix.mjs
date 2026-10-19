@@ -40,7 +40,7 @@ const CONTRAST = `(() => {
     const f = (v) => (v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4));
     return [0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b), a];
   };
-  const paint = (v) => v && v !== "none" && v !== "transparent" && !/rgba?\(\s*0,\s*0,\s*0,\s*0/.test(v);
+  const paint = (v) => v && v !== "none" && v !== "transparent" && !String(v).includes("0, 0, 0, 0") && !String(v).endsWith(", 0)");
   const bgOf = (el) => {
     const svgHost = el.closest?.("svg");
     if (svgHost && (el.closest("foreignObject") || el.tagName === "text" || el.tagName === "tspan" || el.closest(".nodeLabel") || el.closest(".edgeLabel"))) {
