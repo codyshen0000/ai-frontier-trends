@@ -194,9 +194,11 @@ function bindStars() {
       }
     }
     if (!item?.id || !item.title) return;
-    const fallback = item.url
+    const fallback = siteRel(
+      item.url
       || article?.querySelector("a")?.getAttribute("href")
-      || "";
+      || "",
+    );
     const result = toggleStar({
       id: item.id,
       title: item.title,
@@ -328,7 +330,7 @@ function cardHtml(card: PageJson["cards"][number]) {
   const snapshot = escapeHtml(JSON.stringify({
     id: item.id,
     title: item.title,
-    url: href,
+    url: siteRel(item.url || item.links?.original || href),
     source: sourceName,
     date: item.publishedAt || "",
   }));
@@ -379,9 +381,8 @@ function timelineRoot() {
 function emptyStateHtml(filter = "all") {
   const title = filter === "all"
     ? "过去 48 小时没有达到上榜条件的事件。"
-    : "这个筛选下还没有精选内容";
-  const hint = filter === "all" ? "" : `<p class="mt-1.5 max-w-sm text-[13px] leading-relaxed text-ink-4">换个类别看看，或者去全部动态里找找。</p>`;
-  return `<div class="lg:card"><div class="flex flex-col items-center px-6 py-14 text-center"><div class="text-[15px] font-semibold text-ink-2">${title}</div>${hint}<p class="ft-asof mt-2">${asofLine()}</p></div></div>`;
+    : "暂无符合条件的内容";
+  return `<div class="lg:card"><div class="flex flex-col items-center px-6 py-14 text-center"><div class="text-[15px] font-semibold text-ink-2">${title}</div><p class="ft-asof mt-2">${asofLine()}</p></div></div>`;
 }
 
 function renderTimeline() {
@@ -664,6 +665,14 @@ function asset(path: string) {
   return `${cfg.base}${path.replace(/^\//, "")}`;
 }
 
+/** Site-root-relative path (no leading ./ or /) so /starred/ can resolve weekly links. */
+function siteRel(url: string) {
+  const raw = String(url || "").trim();
+  if (!raw) return "";
+  if (/^https?:\/\//i.test(raw) || raw.startsWith("#") || raw.startsWith("mailto:")) return raw;
+  return raw.replace(/^\.\//, "").replace(/^\//, "");
+}
+
 function pageHref(name: "search" | "starred" | "index" | "hot" | "daily" | "more" | "weekly") {
   if (cfg.base === "./" || cfg.base === "") return `${name === "index" ? "index" : name}.html`;
   if (name === "index") return cfg.base;
@@ -671,15 +680,16 @@ function pageHref(name: "search" | "starred" | "index" | "hot" | "daily" | "more
 }
 
 function siteHref(url: string) {
-  if (!url) return pageHref("hot");
-  if (/^https?:\/\//i.test(url) || url.startsWith("#") || url.startsWith("mailto:")) return url;
-  if (url.includes(".html")) {
-    if (cfg.base === "./" || cfg.base === "") return url;
-    const [file, hash = ""] = url.split("#");
+  const rel = siteRel(url);
+  if (!rel) return pageHref("hot");
+  if (/^https?:\/\//i.test(rel) || rel.startsWith("#") || rel.startsWith("mailto:")) return rel;
+  if (rel.includes(".html")) {
+    if (cfg.base === "./" || cfg.base === "") return rel.startsWith("./") ? rel : rel;
+    const [file, hash = ""] = rel.split("#");
     const page = file.replace(/\.html$/, "").replace(/^\.\//, "");
     return `${cfg.base}${page === "index" ? "" : `${page}/`}${hash ? `#${hash}` : ""}`;
   }
-  return asset(url.replace(/^\//, ""));
+  return asset(rel);
 }
 
 let searchModuleLoaded = false;
@@ -837,8 +847,9 @@ function renderStarred() {
     return;
   }
   host.innerHTML = items.map((item) => {
-    const link = item.url
-      ? `<a href="${escapeHtml(item.url)}" class="text-[17px] font-[650] text-ink">${escapeHtml(item.title)}</a>`
+    const href = siteHref(item.url);
+    const link = href
+      ? `<a href="${escapeHtml(href)}" class="text-[17px] font-[650] text-ink">${escapeHtml(item.title)}</a>`
       : `<span class="text-[17px] font-[650] text-ink">${escapeHtml(item.title)}</span>`;
     const meta = [item.source, item.date].filter(Boolean).join(" · ");
     return `<article class="border-b border-line-soft py-4" data-item-id="${escapeHtml(item.id)}">
@@ -918,6 +929,64 @@ function bindToc() {
   });
 }
 
+function bindFaces() {
+  let openBtn: HTMLButtonElement | null = null;
+  const close = () => {
+    if (!openBtn) return;
+    const id = openBtn.getAttribute("aria-controls");
+    const pop = id ? document.getElementById(id) : null;
+    if (pop?.hasAttribute("data-ft-faces-pop")) pop.remove();
+    openBtn.setAttribute("aria-expanded", "false");
+    openBtn = null;
+  };
+  const open = (btn: HTMLButtonElement) => {
+    close();
+    const names = btn.getAttribute("title") || "";
+    const label = btn.getAttribute("aria-label") || "";
+    const total = Number((label.match(/(\d+)\s*位/) || [])[1] || 0);
+    const listed = names.split("、").map((s) => s.trim()).filter(Boolean);
+    const more = total > listed.length ? total - listed.length : 0;
+    let id = btn.getAttribute("aria-controls") || "";
+    if (!id) {
+      id = `ft-faces-${Math.random().toString(36).slice(2, 8)}`;
+      btn.setAttribute("aria-controls", id);
+    }
+    const pop = document.createElement("div");
+    pop.id = id;
+    pop.setAttribute("data-ft-faces-pop", "");
+    pop.setAttribute("role", "dialog");
+    pop.setAttribute("aria-label", "参与讨论的来源");
+    pop.className = "fixed z-50 max-h-[240px] w-[240px] overflow-y-auto rounded-control border border-line bg-raised p-3 text-[12.5px] leading-relaxed text-ink-2";
+    const r = btn.getBoundingClientRect();
+    const below = window.innerHeight - r.bottom > 240;
+    pop.style.top = `${below ? r.bottom + 6 : Math.max(8, r.top - 246)}px`;
+    pop.style.left = `${Math.min(Math.max(8, r.left), document.documentElement.clientWidth - 248)}px`;
+    pop.innerHTML = `${listed.length ? `<p>${escapeHtml(listed.join("、"))}</p>` : ""}${more > 0 ? `<p class="mt-2 text-[11.5px] text-ink-4">另有 ${more} 位未列出</p>` : ""}`;
+    document.body.appendChild(pop);
+    btn.setAttribute("aria-expanded", "true");
+    openBtn = btn;
+  };
+  document.addEventListener("click", (event) => {
+    const btn = (event.target as HTMLElement).closest<HTMLButtonElement>("button[aria-label*='位参与者']");
+    if (btn) {
+      event.preventDefault();
+      event.stopPropagation();
+      if (openBtn === btn) close();
+      else open(btn);
+      return;
+    }
+    if (openBtn && !(event.target as HTMLElement).closest("[data-ft-faces-pop]")) close();
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape" || !openBtn) return;
+    const btn = openBtn;
+    close();
+    btn.focus();
+  });
+  window.addEventListener("scroll", close, { passive: true });
+  window.addEventListener("resize", close);
+}
+
 function bindHotMethod() {
   document.querySelectorAll("[data-ft-hot-method]").forEach((btn) => {
     btn.addEventListener("click", (event) => {
@@ -955,6 +1024,8 @@ function bindPtr() {
 }
 
 function boot() {
+  document.documentElement.classList.remove("no-js");
+  document.documentElement.classList.add("js");
   bindTheme();
   bindStars();
   bindFilters();
@@ -963,6 +1034,7 @@ function boot() {
   bindTop();
   bindToc();
   bindHotMethod();
+  bindFaces();
   if (cfg.page === "starred") renderStarred();
 }
 
