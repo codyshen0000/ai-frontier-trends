@@ -189,6 +189,14 @@ html.ft-shell[data-theme="dark"] summary {
   color: var(--ft-ink) !important;
 }
 
+html.ft-shell[data-theme="dark"] svg p,
+html.ft-shell[data-theme="dark"] svg span,
+html.ft-shell[data-theme="dark"] svg div,
+html.ft-shell[data-theme="dark"] svg text {
+  color: #213547 !important;
+  background: transparent !important;
+}
+
 html.no-js .ft-theme-toggle,
 html.no-js #ctl {
   display: none !important;
