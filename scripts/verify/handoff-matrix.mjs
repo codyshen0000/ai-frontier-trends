@@ -276,7 +276,11 @@ async function clickControls(path, w, js) {
     if (after.y !== before.y && after.url === before.url) changes.push("滚动");
     if (after.stars !== before.stars) changes.push("收藏");
     if (popup) changes.push("新标签");
-    const r4 = e.tag === "a" ? r4For(e.href, e.href && new URL(e.href, p.url()).href, BASE + path, pname, e.text) : "";
+    const absHref = e.href ? new URL(e.href, p.url()).href : "";
+    if (!popup && e.tag === "a" && /^https?:/.test(absHref) && !absHref.startsWith(BASE.replace(/\/ai-frontier-trends\/$/, ""))) {
+      changes.push("外链");
+    }
+    const r4 = e.tag === "a" ? r4For(e.href, absHref, BASE + path, pname, e.text) : "";
     const ok = changes.length > 0 && !r4;
     if (ok) clickPass += 1;
     else clickFail += 1;
