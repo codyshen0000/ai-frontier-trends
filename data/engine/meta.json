@@ -1,0 +1,41 @@
+{
+ "site": "前沿趋势",
+ "data_as_of": "2026-10-19T13:23:23+08:00",
+ "data_as_of_label": "数据截至 2026-10-19 13:23（北京时间）",
+ "generated_at": "2026-10-19T13:23:23+08:00",
+ "today": "2026-10-19",
+ "hot_rule_version": "heat-v1-48h-halflife24h (v0 port)",
+ "window_hours": 48,
+ "half_life_hours": 24,
+ "spark_hours": 24,
+ "spark_points": 25,
+ "hot_candidates": 4,
+ "passed_count": 1,
+ "fill_count": 7,
+ "fill_label": "[低于门槛补位]",
+ "selected_items": 8,
+ "batches": [
+  {
+   "batch_id": "2026-10-19T1124",
+   "status": "ok",
+   "input_sha256": "5ad831a0de44230577663882040ee3b44446333713b2f255f4b080a31939c9e6",
+   "imported_at": "2026-10-19T11:28:23+08:00",
+   "rejected": 0
+  },
+  {
+   "batch_id": "2026-10-19T1221",
+   "status": "ok",
+   "input_sha256": "534566d19d0852064272cf3908f60b3a17c21ed4058e9ffa5246483aad233e35",
+   "imported_at": "2026-10-19T13:23:23+08:00",
+   "rejected": 2
+  }
+ ],
+ "cover_note": "cover.url 为原图地址；构建期缩图后替换 url/srcSet（MIT 用图片代理）",
+ "import_log": [
+  "skip 2026-10-19T1124: already imported",
+  "2026-10-19T1221: body-read items=1 with evidence=0 (evidence urls=0)",
+  "REJECT 2026-10-19T1221 event 2026-10-19-vast-edenlive-realtime-world-model ungrounded ['RTX', 'RTX', '5090', '5090']",
+  "REJECT 2026-10-19T1221 selected sha256:06e34488cd21a025: its event was rejected",
+  "imported 2026-10-19T1221 status=ok rejected=2"
+ ]
+}

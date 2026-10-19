@@ -37,7 +37,7 @@ npm run verify:ia
 npm run preview
 ```
 
-`PUBLIC_DEPLOY=1` 或 `npm run build:public` 会按 `site.config.json` 的 `privatePages` 排除不公开页面。本仓库只收录公开内容。
+`PUBLIC_DEPLOY=1` 或 `npm run build:public` 会按 `site.config.json` 的 `privatePages` 排除不公开页面。本仓库只收录公开内容。精选 / 热点 / 日报的 MIT 壳默认读 fixture；`data/engine/` 若有导出 JSON 则改用引擎数据（契约见 [`data/engine/CONTRACT.md`](data/engine/CONTRACT.md)）。
 
 预览默认在 `http://127.0.0.1:4173/`。若要模拟 GitHub Pages 子路径：
 

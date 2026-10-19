@@ -21,6 +21,12 @@ jobs:
       - name: Install
         run: npm ci
 
+      - name: Install MIT static deps
+        run: npm ci --prefix scripts/mit-static
+
+      - name: Engine data contract
+        run: npm run test:engine-data
+
       - name: Build public site
         run: npm run build:public
 

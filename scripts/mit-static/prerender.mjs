@@ -2,11 +2,16 @@ import { build } from "vite";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
+import { dataSourceOf, engineDirFromRoot, fixtureNote, listPresentEngineFiles, readEngineDir } from "./engine.mjs";
 
 process.env.NODE_ENV = "production";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
+const repoRoot = path.resolve(here, "../..");
 const outDir = path.resolve(here, "../../preview/mit-static");
+const enginePresent = listPresentEngineFiles(engineDirFromRoot(repoRoot));
+const engineSource = dataSourceOf(enginePresent);
+console.log(`mit-static data source: ${engineSource}${enginePresent.length ? ` (${enginePresent.join(", ")})` : ""}`);
 const tmpCss = path.join(here, ".tmp-css");
 const tmpSsr = path.join(here, ".tmp-ssr");
 
@@ -65,6 +70,24 @@ for (const page of mod.pages) {
   html = html.replaceAll(/assets\/nameplates\/(daily|weekly|monthly|archive)-[A-Za-z0-9]+\.svg/g, "assets/nameplates/$1.svg");
   fs.writeFileSync(path.join(outDir, page.file), html);
   console.log("wrote", page.file, html.length);
+}
+
+const noteDir = path.join(outDir, "data");
+fs.mkdirSync(noteDir, { recursive: true });
+const notePath = path.join(noteDir, "fixture-note.json");
+const previousNote = fs.existsSync(notePath) ? JSON.parse(fs.readFileSync(notePath, "utf8")) : {};
+if (engineSource !== "fixture" || previousNote.source !== "fixture") {
+  const asOf = engineSource === "fixture" && previousNote.asOf ? previousNote.asOf : new Date().toISOString();
+  const engine = readEngineDir(engineDirFromRoot(repoRoot));
+  fs.writeFileSync(
+    notePath,
+    `${JSON.stringify(fixtureNote({
+      source: engineSource,
+      present: enginePresent,
+      asOf,
+      meta: engine.meta,
+    }), null, 2)}\n`,
+  );
 }
 
 fs.rmSync(tmpCss, { recursive: true, force: true });

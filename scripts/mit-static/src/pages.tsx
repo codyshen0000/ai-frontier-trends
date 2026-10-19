@@ -10,7 +10,20 @@ import HotPage from "../../../vendor/mit/apps/web/app/routes/hot";
 import { ReportLayout } from "../../../vendor/mit/apps/web/app/features/report/ReportLayout";
 import { ReportPaper, reportOutline } from "../../../vendor/mit/apps/web/app/features/report/ReportPaper";
 import { StaticLocation } from "./react-router";
-import { daily, dailyIndex, hot, timeline, today } from "./fixture";
+import { asOfLabel, daily, dailyIndex, fillCount, hot, passedCount, timeline, today } from "./data";
+
+function DataStamp() {
+  if (!asOfLabel && passedCount == null && fillCount == null) return null;
+  const counts =
+    passedCount != null && fillCount != null ? `过线 ${passedCount} 条 / 补位 ${fillCount} 条` : null;
+  return (
+    <p data-engine-as-of className="mb-4 text-[12.5px] leading-[1.6] text-ink-4">
+      {asOfLabel}
+      {asOfLabel && counts ? " · " : null}
+      {counts}
+    </p>
+  );
+}
 
 function Shell({ pathname, children }: { pathname: string; children: ReactNode }) {
   return (
@@ -46,6 +59,7 @@ export function HomeScreen() {
             <SearchField keep={{ category: filters.category }} />
           </div>
         </div>
+        <DataStamp />
         {timeline.hot && inNav("/hot") && <HotTopics entries={timeline.hot} />}
         <Timeline initial={timeline} filters={filters} />
       </div>
@@ -56,6 +70,7 @@ export function HomeScreen() {
 export function HotScreen() {
   return (
     <Shell pathname="/hot">
+      <DataStamp />
       <HotPage hot={hot} />
     </Shell>
   );
@@ -64,6 +79,7 @@ export function HotScreen() {
 export function DailyScreen() {
   return (
     <Shell pathname="/daily">
+      <DataStamp />
       <ReportLayout kind="daily" index={dailyIndex} current={daily.key} today={today} outline={reportOutline(daily)}>
         <ReportPaper report={daily} index={dailyIndex} />
       </ReportLayout>

@@ -1,3 +1,4 @@
+import { spawnSync } from "node:child_process";
 import { cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
@@ -383,7 +384,32 @@ function rewriteMitStatic(html, fromPath) {
     .replace(/(href|src)="((?:assets|data)\/[^"]*)"/g, (_, attr, path) => `${attr}="${mitAssetPrefix(fromPath)}${path}"`);
 }
 
+function ensureMitStaticDeps() {
+  const viteDir = join(root, "scripts", "mit-static", "node_modules", "vite");
+  if (existsSync(viteDir)) return;
+  const result = spawnSync("npm", ["ci"], {
+    cwd: join(root, "scripts", "mit-static"),
+    stdio: "inherit",
+  });
+  if (result.status !== 0) {
+    throw new Error("npm ci failed in scripts/mit-static");
+  }
+}
+
+function rebuildMitStatic() {
+  ensureMitStaticDeps();
+  const result = spawnSync(process.execPath, [join(root, "scripts", "mit-static", "prerender.mjs")], {
+    cwd: root,
+    stdio: "inherit",
+    env: process.env,
+  });
+  if (result.status !== 0) {
+    throw new Error("mit-static prerender failed");
+  }
+}
+
 function publishMitStatic() {
+  rebuildMitStatic();
   const src = join(root, "preview", "mit-static");
   const required = ["index.html", "hot.html", "daily.html", join("assets", "app.css")];
   for (const rel of required) {

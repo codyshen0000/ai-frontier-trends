@@ -1,6 +1,23 @@
 {
   "site": "前沿趋势",
-  "asOf": "2026-10-18T08:20:00+08:00",
-  "note": "fixture mock · 热度/涨跌/spark/评分不是 48h 实算",
-  "pages": ["index.html", "hot.html", "daily.html"]
+  "asOf": "2026-10-19T13:23:23+08:00",
+  "asOfLabel": "数据截至 2026-10-19 13:23（北京时间）",
+  "source": "engine",
+  "engineFiles": [
+    "timeline.json",
+    "hot-strip.json",
+    "hot.json",
+    "daily.json",
+    "daily-index.json",
+    "meta.json",
+    "fixture.json"
+  ],
+  "passedCount": 1,
+  "fillCount": 7,
+  "note": "data/engine JSON · 热度/涨跌/spark 以导出为准",
+  "pages": [
+    "index.html",
+    "hot.html",
+    "daily.html"
+  ]
 }
