@@ -67,7 +67,7 @@ export function HomeScreen() {
           </div>
         </div>
         {timeline.hot && inNav("/hot") && <HotTopics entries={timeline.hot} />}
-        <div data-ft-timeline data-ft-filter="all">
+        <div data-ft-timeline>
           {timeline.cards.length ? (
             <Timeline initial={timeline} filters={filters} />
           ) : (

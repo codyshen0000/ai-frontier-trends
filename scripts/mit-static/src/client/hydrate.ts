@@ -556,14 +556,26 @@ function beijingStamp(iso: string) {
   }
 }
 
+function isFilterControl(el: EventTarget | null): el is HTMLElement {
+  if (!(el instanceof Element)) return false;
+  const control = el.closest("a[data-ft-filter], button[data-ft-filter]");
+  if (!control) return false;
+  if (control.closest("[data-ft-timeline]")) return false;
+  return true;
+}
+
 function bindFilters() {
   const root = timelineRoot();
   if (root) timelineState.original = root.innerHTML;
   document.addEventListener("click", (event) => {
-    const link = (event.target as HTMLElement).closest<HTMLAnchorElement>("[data-ft-filter]");
-    if (!link || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-    const key = link.dataset.ftFilter || "all";
-    if (key === "featured" || key === "all" && link.getAttribute("href")?.includes("/all")) return;
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const target = event.target as HTMLElement;
+    if (!isFilterControl(target)) return;
+    const control = target.closest("a[data-ft-filter], button[data-ft-filter]") as HTMLElement;
+    const key = control.getAttribute("data-ft-filter") || "all";
+    if (key === "featured") return;
+    const href = control.getAttribute("href") || "";
+    if (key === "all" && /(?:^|[/?])all(?:\/|$|\.html)/.test(href)) return;
     event.preventDefault();
     void applyFilter(key === "featured" ? "all" : key);
   });
