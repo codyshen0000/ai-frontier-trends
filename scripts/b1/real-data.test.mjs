@@ -4,6 +4,9 @@ import { existsSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { publicizeBundle, publicizeCard, publicizeHotEntry } from "../engine/publicize.mjs";
+import { HEAT_METHOD_COPY, formatHeat, heatMatches } from "../engine/heat-copy.mjs";
+import { morePageBody } from "../live_curate.mjs";
+import { verify as verifyHeat } from "../verify/b1-heat.mjs";
 import { EngineDataError } from "../engine/loader.mjs";
 import { resolveEngineBundle } from "../engine/resolve.mjs";
 import { groupByEvent } from "../engine/groupByEvent.mjs";
@@ -76,5 +79,57 @@ describe("B1 wiring", () => {
     const text = JSON.stringify(site);
     for (const id of FIXTURE_IDS) assert.equal(text.includes(id), false);
     assert.doesNotMatch(text, /"score"\s*:/);
+  });
+
+  it("exports HEAT_METHOD_COPY and does not rescale tenths", () => {
+    assert.equal(HEAT_METHOD_COPY, "按过去 48 小时独立来源计算，半衰期 24 小时");
+    assert.equal(formatHeat(5.5), "5.5");
+    assert.equal(heatMatches(5.5, 5.5), true);
+    assert.equal(heatMatches(6, 5.5), false);
+    const more = morePageBody({
+      hrefBetween: () => "#",
+      escapeHtml: (value) => value,
+    });
+    assert.equal(more.includes(HEAT_METHOD_COPY), true);
+    assert.equal(/实时/.test(more), false);
+  });
+
+  it("b1-heat verify matches rendered heat to engine hot.json", async () => {
+    const { mkdtempSync, mkdirSync, writeFileSync, rmSync } = await import("node:fs");
+    const { tmpdir } = await import("node:os");
+    const dist = mkdtempSync(join(tmpdir(), "b1-heat-"));
+    const engine = mkdtempSync(join(tmpdir(), "b1-heat-eng-"));
+    try {
+      mkdirSync(join(dist, "hot"), { recursive: true });
+      mkdirSync(join(dist, "more"), { recursive: true });
+      mkdirSync(join(dist, "api", "v1"), { recursive: true });
+      const entry = {
+        rank: 1,
+        story: { publicId: "2026-10-19-deepseek-v41-flash-1017", title: "DeepSeek" },
+        heat: 5.5,
+        trendPct: -15.4,
+        spark: [11.1, 5.5],
+      };
+      writeFileSync(join(engine, "hot.json"), JSON.stringify({ entries: [entry] }));
+      writeFileSync(join(dist, "api", "v1", "hot.json"), JSON.stringify({ entries: [entry] }));
+      writeFileSync(
+        join(dist, "hot", "index.html"),
+        `<html><p data-ft-heat-method>${HEAT_METHOD_COPY}</p><span data-ft-story="${entry.story.publicId}" data-ft-heat="5.5">5.5</span><span data-ft-story="${entry.story.publicId}" data-ft-trend-pct="-15.4">↓ 15.4%</span><svg data-ft-story="${entry.story.publicId}" data-ft-spark="[11.1,5.5]"></svg></html>`,
+      );
+      writeFileSync(join(dist, "index.html"), `<html><span data-ft-story="${entry.story.publicId}" data-ft-heat="5.5">5.5</span></html>`);
+      writeFileSync(join(dist, "more", "index.html"), `<html><p data-ft-heat-method>${HEAT_METHOD_COPY}</p></html>`);
+      const ok = await verifyHeat({ distDir: dist, engineDir: engine, root: dist });
+      assert.equal(ok.ok, true);
+
+      writeFileSync(
+        join(dist, "hot", "index.html"),
+        `<html><p data-ft-heat-method>${HEAT_METHOD_COPY}</p><span data-ft-story="${entry.story.publicId}" data-ft-heat="6">6</span></html>`,
+      );
+      const bad = await verifyHeat({ distDir: dist, engineDir: engine, root: dist });
+      assert.equal(bad.ok, false);
+    } finally {
+      rmSync(dist, { recursive: true, force: true });
+      rmSync(engine, { recursive: true, force: true });
+    }
   });
 });

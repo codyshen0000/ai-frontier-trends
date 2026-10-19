@@ -52,3 +52,4 @@ B2 需要的「另 N 家」展示走数据字段（`sourceCount` / `sourceNames`
 - `static_export.mjs` 从 engine 写 `feed.xml` / `/api/v1/hot.json` / timeline；**不再**调用 `writeRedirects`（`build.mjs` 已调一次）。
 - `PUBLIC_DEPLOY=1` 且无合格 engine、无 last-good → 构建失败，禁止回退 fixture。
 - `scripts/verify/b1-*.mjs` 由 B0 glob 注册。
+- `scripts/engine/heat-copy.mjs` 导出 `HEAT_METHOD_COPY`（B2 应再导出，不要另写一句）。热度/涨跌/spark 按 `hot.json` 原值展示，不 `Math.round`。

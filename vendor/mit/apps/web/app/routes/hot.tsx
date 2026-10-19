@@ -12,6 +12,16 @@ import { Delta } from "../features/hot/Delta";
 import { PhoneBar } from "../components/shell/PhoneBar";
 import { scrollBehavior } from "../lib/motion";
 import { SPARK_HOURS } from "@l2/constants";
+import { HEAT_METHOD_COPY, formatHeat } from "@ft/heat-copy";
+
+function HeatIndex({ e, className }: { e: HotEntryView; className: string }) {
+  if (!Number.isFinite(e.heat)) return null;
+  return (
+    <span data-ft-story={e.story.publicId} data-ft-heat={String(e.heat)} className={className}>
+      {formatHeat(e.heat)}
+    </span>
+  );
+}
 
 const BADGES: Record<HotEntryView["badges"][number], { label: string; tone: "hot" | "accent" | "amber"; hint: string }> = {
   surge: { label: "爆", tone: "hot", hint: "讨论快速增加" },
@@ -77,8 +87,8 @@ function Lead({ e }: { e: HotEntryView }) {
       <div className="flex items-center gap-2.5">
         <span className={`mono text-[12px] font-bold tracking-[0.16em] ${rankColor(e.rank)}`}>NO.{pad(e.rank)}</span>
         <Badges e={e} />
-        <Delta trend={e.trend} pct={e.trendPct} className="ml-auto" />
-        <StarButton
+        <Delta trend={e.trend} pct={e.trendPct} storyPublicId={e.story.publicId} className="ml-auto" />
+        <StarButton>
           item={{
             id: e.story.publicId,
             title: e.story.title,
@@ -122,11 +132,11 @@ function Lead({ e }: { e: HotEntryView }) {
         </div>
         <div className="flex w-full shrink-0 items-end justify-between gap-5 sm:ml-auto sm:w-auto sm:justify-end">
           <span className="flex flex-col items-end gap-1">
-            <Sparkline values={e.spark} className="h-10 w-[140px]" />
+            <Sparkline values={e.spark} storyPublicId={e.story.publicId} className="h-10 w-[140px]" />
           </span>
           {Number.isFinite(e.heat) ? (
             <div className="text-right">
-              <div className="mono text-[34px] font-semibold leading-none tracking-[-0.03em] text-ink">{Math.round(e.heat)}</div>
+              <HeatIndex e={e} className="mono text-[34px] font-semibold leading-none tracking-[-0.03em] text-ink" />
               <div className="mt-1 text-[11.5px] text-ink-4">热度指数</div>
             </div>
           ) : null}
@@ -143,7 +153,7 @@ function Runner({ e }: { e: HotEntryView }) {
       <div className="flex items-center gap-2.5">
         <span className={`mono text-[12px] font-bold tracking-[0.16em] ${rankColor(e.rank)}`}>NO.{pad(e.rank)}</span>
         <Badges e={e} />
-        <Delta trend={e.trend} pct={e.trendPct} className="ml-auto" />
+        <Delta trend={e.trend} pct={e.trendPct} storyPublicId={e.story.publicId} className="ml-auto" />
       </div>
       <h2 className="mt-2.5 line-clamp-2 text-[16px] font-[650] leading-[1.5] text-ink">
         <StoryLink e={e} className="group-hover:text-accent" />
@@ -159,11 +169,9 @@ function Runner({ e }: { e: HotEntryView }) {
         </div>
         <div className="flex items-end gap-3">
           <span className="flex flex-col items-end gap-1">
-            <Sparkline values={e.spark} className="h-7 w-[92px]" />
+            <Sparkline values={e.spark} storyPublicId={e.story.publicId} className="h-7 w-[92px]" />
           </span>
-          {Number.isFinite(e.heat) ? (
-            <span className="mono text-[24px] font-semibold leading-none tracking-[-0.02em] text-ink">{Math.round(e.heat)}</span>
-          ) : null}
+          <HeatIndex e={e} className="mono text-[24px] font-semibold leading-none tracking-[-0.02em] text-ink" />
         </div>
       </div>
     </article>
@@ -193,8 +201,8 @@ function Row({ e }: { e: HotEntryView }) {
             <span className="num">{e.sourceCount}</span> 个来源
           </span>
           <span className="ml-auto flex items-center gap-2">
-            {Number.isFinite(e.heat) ? <span className="mono text-[17px] font-semibold leading-none text-ink">{Math.round(e.heat)}</span> : null}
-            <Delta trend={e.trend} pct={e.trendPct} />
+            <HeatIndex e={e} className="mono text-[17px] font-semibold leading-none text-ink" />
+            <Delta trend={e.trend} pct={e.trendPct} storyPublicId={e.story.publicId} />
           </span>
         </div>
       </div>
@@ -202,11 +210,11 @@ function Row({ e }: { e: HotEntryView }) {
         <Faces participants={e.participants} total={e.participantCount} size={20} />
       </div>
       <span className="hidden flex-col items-end justify-center gap-1 lg:flex">
-        <Sparkline values={e.spark} className="h-7 w-[104px]" />
+        <Sparkline values={e.spark} storyPublicId={e.story.publicId} className="h-7 w-[104px]" />
       </span>
       <div className="hidden flex-col items-end gap-1 lg:flex">
-        {Number.isFinite(e.heat) ? <span className="mono text-[20px] font-semibold leading-none tracking-[-0.02em] text-ink">{Math.round(e.heat)}</span> : null}
-        <Delta trend={e.trend} pct={e.trendPct} />
+        <HeatIndex e={e} className="mono text-[20px] font-semibold leading-none tracking-[-0.02em] text-ink" />
+        <Delta trend={e.trend} pct={e.trendPct} storyPublicId={e.story.publicId} />
       </div>
     </li>
   );
@@ -311,6 +319,7 @@ export default function HotPage({ hot }: { hot: HotResponse }) {
           </span>
         </summary>
         <div className="max-w-[760px] space-y-2 pb-2 pl-[21px] pt-2 leading-[1.75] text-ink-3">
+          <p data-ft-heat-method>{HEAT_METHOD_COPY}</p>
           <p>热度看的是有多少账号和机构在讨论同一件事：同一家重复发只算一次，越近的讨论分量越重，每过 24 小时减半。它反映讨论有多热闹，不代表报道质量。</p>
           <p>榜单只看过去 48 小时。走势只拿同一批一直在看的来源比较，反映的是我们看得到的范围，不代表全网人数；没有可比的历史时，不画走势线。</p>
           <p>
@@ -328,6 +337,9 @@ export default function HotPage({ hot }: { hot: HotResponse }) {
           </dl>
         </div>
       </details>
+      <p className="mt-4 text-[12px] text-ink-4" data-ft-heat-method>
+        {HEAT_METHOD_COPY}
+      </p>
     </div>
   );
 }

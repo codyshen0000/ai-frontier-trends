@@ -1,6 +1,7 @@
 /** Idempotent live.html → 精选 homepage transform. Source markup is not edited. */
 import { extractLiveSpotlight } from "./extract.mjs";
 import { clipSummary, extractLiveCards, formatZhDate, groupByDay, rankHot, selectPins } from "./live_cards.mjs";
+import { HEAT_METHOD_COPY } from "./engine/heat-copy.mjs";
 
 const CURATE_START = "<!--ds-live-curate:start-->";
 const CURATE_END = "<!--ds-live-curate:end-->";
@@ -231,7 +232,11 @@ export function morePageBody({ hrefBetween, escapeHtml, weeklyPath = "/weekly/" 
     </div>
   </header>
   <p class="ft-lede">时间线、周报、信号和权重收在这里。Studio 和专题不占首页。</p>
-  ${blocks}`;
+  ${blocks}
+  <aside class="ft-hot-note">
+    <h2>热度怎么算</h2>
+    <p data-ft-heat-method>${HEAT_METHOD_COPY}</p>
+  </aside>`;
 }
 
 export { extractLiveCards, rankHot, selectPins };

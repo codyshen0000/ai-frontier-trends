@@ -17,6 +17,7 @@ import { groupByEvent } from "../../engine/groupByEvent.mjs";
 import { builtAt, daily, dailyIndex, dataAsOf, hasSelectedFeed, hot, timeline as siteTimeline, today } from "./site";
 import { DataAsOf, RssLink } from "./asof";
 import { Link } from "./react-router";
+import { HEAT_METHOD_COPY } from "@ft/heat-copy";
 
 const DATA_AS_OF = dataAsOf;
 const BUILT_AT = builtAt || new Date().toISOString();
@@ -168,6 +169,12 @@ export function MoreScreen() {
             </Link>
           </li>
         </ul>
+        <aside className="mt-8 text-[12.5px] leading-[1.7] text-ink-4">
+          <p className="font-medium text-ink-3">热度是怎么算的</p>
+          <p className="mt-1.5" data-ft-heat-method>
+            {HEAT_METHOD_COPY}
+          </p>
+        </aside>
         <AsOfAndRss rssHref={hasSelectedFeed ? "../feed.xml" : "../feed/weekly.xml"} />
       </div>
     </Shell>

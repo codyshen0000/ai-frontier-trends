@@ -1059,6 +1059,7 @@ failed += await runVerifyRegistry({
   root,
   distDir,
   engineDir: resolveEngineDir(),
+  previewDir: join(root, "preview", "mit-static"),
 });
 
 if (failed) {

@@ -44,6 +44,7 @@ export default defineConfig({
       "@aihot/contracts/site-config": path.resolve(mit, "packages/contracts/src/site-config.ts"),
       "@aihot/industry/taxonomy": path.resolve(here, "src/industry-taxonomy.ts"),
       "@l2/constants": path.resolve(here, "src/constants.ts"),
+      "@ft/heat-copy": path.resolve(here, "../engine/heat-copy.mjs"),
     },
   },
   esbuild: { jsx: "automatic", jsxDev: false },

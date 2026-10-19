@@ -5,7 +5,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { describe, it } from "node:test";
 import { EngineDataError, loadEngineData } from "./loader.mjs";
-import { publicCover, publicizeBundle, publicizeCard, publicizeHotEntry, stripScore } from "./publicize.mjs";
+import { publicCover, publicizeBundle, publicizeCard, publicizeHotEntry, publicizeHotStripRow, stripScore } from "./publicize.mjs";
 import { assertNoFixtureIds, resolveEngineBundle } from "./resolve.mjs";
 import { FIXTURE_IDS } from "./ids.mjs";
 
@@ -187,6 +187,11 @@ describe("B1 real snapshot", () => {
     assert.match(site.timeline.cards[0].item.title, /DeepSeek/);
     assert.match(site.timeline.cards[0].item.originalUrl, /the-decoder\.com/);
     assert.equal(site.hot.entries[0].cover, null);
+    assert.equal(site.hot.entries[0].heat, 5.5);
+    assert.equal(site.hot.entries[0].trendPct, -15.4);
+    assert.deepEqual(site.hot.entries[0].spark.slice(0, 2), [11.1, 10.7]);
+    assert.equal(site.timeline.hot[0].heat, 5.5);
+    assert.equal(publicizeHotStripRow({ rank: 1, title: "x", heat: 5.5, trend: "down" }).heat, 5.5);
     const text = JSON.stringify(site);
     for (const id of FIXTURE_IDS) assert.equal(text.includes(id), false);
     assert.doesNotMatch(text, /example\.com/i);

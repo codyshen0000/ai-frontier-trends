@@ -54,6 +54,21 @@ function cleanText(value) {
   return text || null;
 }
 
+export function publicizeHotStripRow(row) {
+  if (!row || typeof row !== "object" || row.belowThreshold) return null;
+  const heat = typeof row.heat === "number" && Number.isFinite(row.heat) ? row.heat : null;
+  return stripScore({
+    rank: row.rank,
+    title: row.title || row.story?.title || "",
+    heat,
+    trend: row.trend === "unknown" ? "unknown" : row.trend,
+    storyPublicId: row.storyPublicId ?? row.story?.publicId ?? null,
+    itemId: row.itemId ?? null,
+    participants: row.participants || [],
+    participantCount: row.participantCount ?? 0,
+  });
+}
+
 export function publicizeHotEntry(entry) {
   if (!entry || typeof entry !== "object") return null;
   if (entry.belowThreshold) return null;
@@ -146,18 +161,8 @@ export function publicizeBundle(bundle, meta = {}) {
     windowHours: bundle.hot?.windowHours ?? 48,
     entries: hotEntries,
   };
-  const hotStrip = (bundle.hotStrip || []).filter((row) => !row?.belowThreshold).map((row) =>
-    stripScore({
-      rank: row.rank,
-      title: row.title,
-      heat: typeof row.heat === "number" && Number.isFinite(row.heat) ? row.heat : null,
-      trend: row.trend === "unknown" ? "unknown" : row.trend,
-      storyPublicId: row.storyPublicId ?? null,
-      itemId: row.itemId ?? null,
-      participants: row.participants || [],
-      participantCount: row.participantCount ?? 0,
-    }),
-  );
+  const hotStrip = (bundle.hotStrip || []).map(publicizeHotStripRow).filter(Boolean);
+  const timelineHot = (bundle.timeline?.hot || []).map(publicizeHotStripRow).filter(Boolean);
   const cards = groupByEvent((bundle.timeline?.cards || []).map(publicizeCard).filter(Boolean));
   const daily = bundle.daily ? stripScore(bundle.daily) : null;
   if (daily?.cover) daily.cover = publicCover(daily.cover);
@@ -185,7 +190,7 @@ export function publicizeBundle(bundle, meta = {}) {
       filters: bundle.timeline?.filters || { channel: "all", category: null, tag: null },
       cards,
       nextCursor: bundle.timeline?.nextCursor ?? null,
-      hot: bundle.timeline?.hot || hotStrip,
+      hot: timelineHot.length ? timelineHot : hotStrip,
       dayCounts: bundle.timeline?.dayCounts || {},
       page: bundle.timeline?.page,
       pageCount: bundle.timeline?.pageCount,
