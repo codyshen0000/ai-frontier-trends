@@ -45,8 +45,8 @@ export function BackToTop() {
       aria-label="回到顶部"
       data-ft-top
       onClick={() => window.scrollTo({ top: 0, behavior: scrollBehavior() })}
-      className={`fixed z-30 flex min-h-11 items-center justify-center gap-1 rounded-full border border-line bg-surface px-3 text-[13px] font-medium text-ink-2 shadow-[var(--shadow-soft)] transition-all duration-200 hover:text-ink bottom-[calc(72px+env(safe-area-inset-bottom))] right-4 lg:bottom-6 lg:right-6 ${
-        shown ? "translate-y-0 opacity-100" : "translate-y-2 opacity-40"
+      className={`fixed z-30 flex min-h-11 items-center justify-center gap-1 rounded-full border border-line bg-surface px-3 text-[13px] font-medium text-ink shadow-[var(--shadow-soft)] transition-all duration-200 hover:text-ink bottom-[calc(72px+env(safe-area-inset-bottom))] right-4 lg:bottom-6 lg:right-6 ${
+        shown ? "translate-y-0 opacity-100" : "translate-y-2 opacity-100"
       }`}
     >
       <IconArrowUp size={18} />

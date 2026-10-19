@@ -111,7 +111,7 @@ function applyTheme(pref = themePref()) {
   document.querySelectorAll<HTMLButtonElement>("[data-ft-theme-choice]").forEach((btn) => {
     const on = btn.dataset.ftThemeChoice === pref;
     btn.setAttribute("aria-pressed", on ? "true" : "false");
-    btn.setAttribute("aria-checked", on ? "true" : "false");
+    btn.removeAttribute("aria-checked");
   });
 }
 
@@ -871,7 +871,6 @@ function bindTop() {
   document.querySelectorAll<HTMLButtonElement>("[data-ft-top]").forEach((btn) => {
     const sync = () => {
       const show = window.scrollY > 80;
-      btn.classList.toggle("opacity-40", !show);
       btn.classList.toggle("translate-y-2", !show);
     };
     btn.addEventListener("click", (event) => {
