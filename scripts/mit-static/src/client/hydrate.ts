@@ -485,7 +485,7 @@ function visibleCardKey() {
 
 function saveTimelinePos() {
   const store = session();
-  if (!store) return;
+  if (!store || !timelineRoot()) return;
   writeJson(store, TIMELINE_PREFIX + timelineState.filter, {
     pages: timelineState.pages,
     fetches: timelineState.fetches,
