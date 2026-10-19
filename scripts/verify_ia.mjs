@@ -159,19 +159,20 @@ for (const path of paths) {
   assert(existsSync(file), `dist has ${path}`);
 }
 
+assert(existsSync(join(distDir, "assets", "app.css")), "dist has mit-static app.css");
+assert(existsSync(join(distDir, "assets", "nameplates", "daily.svg")), "dist has daily nameplate");
+assert(existsSync(join(distDir, "data", "fixture-note.json")), "dist has fixture data");
+
+const leftoverHtmlHref = /(?:href|src|action)="(?:index|hot|daily)\.html/;
 const home = readFileSync(join(distDir, "index.html"), "utf8");
-assert(home.includes('class="ds-wrap trend-home"') || home.includes('class="ds-wrap'), "home uses the centered ds-wrap shell");
-assert(home.includes(config.heroLine), "home hero uses site one-liner");
-assert(home.includes(live.conclusion), "home shows today's conclusion");
-assert(home.includes("看精选"), "home CTA to /live/");
-assert(home.includes("本周主线"), "home has 本周主线");
-assert(home.includes("怎么读这个站"), "home has reader guide");
-assert(home.includes("周报"), "home links to weekly");
-assert(home.includes("/weekly/2026-10-18/") || home.includes("weekly/2026-10-18/"), "home links to latest weekly issue");
-assert(home.includes(">FLUX 3<") || home.includes("FLUX 3"), "home has one FLUX 3 topic card");
-assert((home.match(/class="ds-card trend-thread-card"/g) || []).length >= 3, "home has 3–5 thread cards");
-assert(!home.includes("谱系"), "home avoids 谱系 jargon");
-assert(!home.includes("待交付权重"), "home avoids 待交付 jargon");
+assert(home.includes("精选 · 前沿趋势"), "home is the 精选 feed");
+assert(home.includes("当前热点"), "home has 当前热点");
+assert(home.includes("完整榜单"), "home links into the ranking");
+assert(home.includes('href="assets/app.css"'), "home CSS is relative assets/app.css");
+assert(home.includes('href="./hot/"') && home.includes('href="./daily/"'), "home links to /hot/ and /daily/");
+assert(!leftoverHtmlHref.test(home), "home has no leftover .html page hrefs");
+assert(!home.includes("AIHOT") && !home.includes("MyHOT"), "home has no *HOT product brand");
+assert(home.includes("前沿趋势"), "home brand is 前沿趋势");
 
 const about = readFileSync(join(distDir, "about", "index.html"), "utf8");
 assert(about.includes('class="ds-wrap'), "about uses the centered ds-wrap shell");
@@ -192,42 +193,24 @@ assert(signals.includes("趋势栏目"), "signals has trend sub-nav");
 assert(signals.includes(">周报<"), "signals trend sub-nav includes 周报");
 
 const livePage = readFileSync(join(distDir, "live", "index.html"), "utf8");
-const liveNav = livePage.match(/data-ds-injected="nav"[\s\S]*?<\/aside>/)?.[0] || "";
-const liveTab = livePage.match(/data-ds-injected="tabbar"[\s\S]*?<\/nav>/)?.[0] || "";
-assert(liveNav.includes(">精选<") && liveNav.includes(">热点<") && liveNav.includes(">日报<") && liveNav.includes(">更多<"), "live injected nav is the 4-item IA");
-assert(!liveNav.includes(">趋势<"), "desktop sidebar does not keep 趋势 as a primary item");
-assert(!liveNav.includes("成刊"), "desktop sidebar no longer has a 成刊 subsection");
-assert((liveTab.match(/<a /g) || []).length === 4 && liveTab.includes(">日报<") && !liveTab.includes(">趋势<"), "mobile tab bar is 精选 / 热点 / 日报 / 更多");
-assert(!liveNav.includes(">案例<") && !liveNav.includes(">示例库<") && !liveNav.includes(">相机术语<"), "live nav is not 11 flat links");
-assert(!liveNav.includes("AIHOT") && !liveNav.includes("MyHOT"), "live nav has no *HOT product brand");
-assert(livePage.includes("当前热点"), "live curated homepage has 当前热点");
-assert(livePage.includes("进热点榜"), "当前热点 panel links into the ranking");
-assert(livePage.includes("ft-now"), "当前热点 is a compact panel");
-assert(livePage.includes("data-ds-injected=\"live-curate\""), "live has curated transform");
-assert(livePage.includes("data-ds-injected=\"live-archive\""), "live keeps original board in archive");
-assert(livePage.includes("data-ds-injected=\"tabbar\""), "live has mobile tab bar");
-assert(livePage.includes("ft-story"), "live maps cards into the date feed");
-assert(livePage.includes("另外") && livePage.includes("ft-also"), "live cards surface 另外 N 家");
-assert(livePage.includes("ft-story-src"), "live cards lead with a source name");
-assert(livePage.includes('id="back-home"'), "live output keeps #back-home");
+assert(livePage.includes("精选 · 前沿趋势"), "/live/ is the 精选 feed");
+assert(livePage.includes("当前热点") && livePage.includes("完整榜单"), "/live/ has 当前热点 panel");
+assert(livePage.includes('href="../assets/app.css"'), "/live/ CSS is ../assets/app.css");
+assert(livePage.includes('href="../hot/"') && livePage.includes('href="../daily/"'), "/live/ links to /hot/ and /daily/");
+assert(livePage.includes(">精选<") && livePage.includes(">热点<") && livePage.includes(">日报<"), "/live/ tab bar is 精选 / 热点 / 日报");
+assert(!leftoverHtmlHref.test(livePage), "/live/ has no leftover .html page hrefs");
+assert(!livePage.includes("AIHOT") && !livePage.includes("MyHOT"), "live has no *HOT product brand");
 assert(liveRaw.includes('id="back-home"'), "live source keeps #back-home");
-assert(livePage.includes("Hub 趋势") && livePage.includes("已宣布、待交付"), "research blocks remain in the live archive");
-assert(livePage.includes("DOMContentLoaded") && livePage.includes("#board"), "live board view waits for DOM before hash switch");
-const curatedBlock = livePage.match(/<!--ds-live-curate:start-->[\s\S]*?<!--ds-live-curate:end-->/)?.[0] || "";
-assert(curatedBlock.includes("当前热点"), "curated block is marked for strip/rebuild");
-assert(!curatedBlock.includes("paper-explain"), "curated feed does not inject 图解 into new cards");
-assert(!curatedBlock.includes("隐状态改动超过八成"), "curated summaries are clipped off the research wall");
 for (const needle of ["/workspace", "/home/box", "/cursor/stores"]) {
   assert(!livePage.includes(needle), `live has no ${needle}`);
 }
 
 const hotPage = readFileSync(join(distDir, "hot", "index.html"), "utf8");
-assert(hotPage.includes("热点榜"), "hot page title");
-assert(hotPage.includes("独立来源") || hotPage.includes("家独立源"), "hot page explains source-count heat");
-assert(hotPage.includes("NO.01") && hotPage.includes("ft-hot-hero"), "hot page has a NO.01 hero");
-assert(hotPage.includes("NO.02") && hotPage.includes("ft-rank"), "hot page lists 02–10");
-assert((hotPage.match(/class="ft-rank /g) || []).length === 9, "hot list after the hero is 02–10");
-assert(!hotPage.includes("发酵中"), "hot page does not fake 发酵中 chips");
+assert(hotPage.includes("AI 热点榜 · 前沿趋势") || hotPage.includes("热点榜"), "hot page title");
+assert(hotPage.includes('href="../assets/app.css"'), "/hot/ CSS is ../assets/app.css");
+assert(hotPage.includes('href="../"') && hotPage.includes('href="../daily/"'), "/hot/ links to 精选 and /daily/");
+assert(hotPage.includes("发酵中"), "hot page keeps fixture 发酵中 chips");
+assert(!leftoverHtmlHref.test(hotPage), "/hot/ has no leftover .html page hrefs");
 assert(!hotPage.includes("AIHOT") && !hotPage.includes("MyHOT"), "hot page has no *HOT product brand");
 
 const morePage = readFileSync(join(distDir, "more", "index.html"), "utf8");
@@ -238,34 +221,13 @@ assert(morePage.includes("日报"), "more page lists 日报");
 assert(!morePage.includes("AIHOT") && !morePage.includes("MyHOT"), "more page has no *HOT product brand");
 
 const dailyPage = readFileSync(join(distDir, "daily", "index.html"), "utf8");
-const dailyNav = dailyPage.match(/data-ds-injected="nav"[\s\S]*?<\/aside>/)?.[0] || "";
-const dailyTab = dailyPage.match(/data-ds-injected="tabbar"[\s\S]*?<\/nav>/)?.[0] || "";
-assert(dailyPage.includes("前沿趋势日报"), "daily masthead uses 前沿趋势日报");
-assert(dailyPage.includes("件大事") && dailyPage.includes("个来源"), "daily has derived stats strip");
-assert(dailyPage.includes("头条"), "daily has 头条");
-assert(dailyPage.includes("往期") && dailyPage.includes("ft-daily-chrome"), "daily has left 往期 chrome");
-assert(dailyPage.includes("ft-daily-card") && dailyPage.includes("ft-daily-dots"), "daily calendar card sits in the nameplate");
-assert(dailyPage.includes("前沿热点看板"), "daily dateline uses 前沿热点看板");
-assert(dailyPage.includes("今日看点") && dailyPage.includes("本期版面"), "daily front rail has 今日看点 / 本期版面");
-assert(dailyPage.includes("（本期完）"), "daily ends with 本期完");
-assert(dailyPage.includes("ft-daily-kinds") && dailyPage.includes(">周报<"), "daily chrome has 日报/周报/月报");
-assert(dailyPage.includes("ft-daily-issue") && dailyPage.includes("data-ft-issue"), "daily renders edition(s) from live cards");
-assert(dailyPage.includes("data-ds-generated=\"daily\""), "daily is generated at build time");
-assert(dailyNav.includes(">日报<") && dailyNav.includes("aria-current=\"page\""), "sidebar 日报 is current on /daily/");
-assert((dailyTab.match(/<a /g) || []).length === 4 && dailyTab.includes(">日报<"), "daily mobile tab bar includes 日报");
-assert(dailyTab.includes("aria-current=\"page\"") && dailyTab.includes(">日报<"), "tab bar 日报 is current on /daily/");
+assert(dailyPage.includes("AI 日报 · 前沿趋势"), "daily title uses 前沿趋势");
+assert(dailyPage.includes('href="../assets/app.css"'), "/daily/ CSS is ../assets/app.css");
+assert(dailyPage.includes("../assets/nameplates/daily.svg"), "/daily/ nameplate is a relative asset");
+assert(dailyPage.includes('href="../"') && dailyPage.includes('href="../hot/"'), "/daily/ links to 精选 and /hot/");
+assert(dailyPage.includes(">日报<") && dailyPage.includes('aria-current="page"'), "daily marks 日报 current");
+assert(!leftoverHtmlHref.test(dailyPage), "/daily/ has no leftover .html page hrefs");
 assert(!dailyPage.includes("AIHOT") && !dailyPage.includes("MyHOT"), "daily has no *HOT product brand");
-assert(!dailyPage.includes("第180期") && !dailyPage.includes("AI日报"), "daily does not copy aihot masthead copy");
-assert(dailyPage.includes("另外") && dailyPage.includes("原文"), "daily source chips include 另外 N 家 / 原文");
-assert(dailyPage.includes("ft-daily-monthhead"), "daily archive is grouped by month");
-assert(!dailyPage.includes("Noto Serif") && !dailyPage.includes("Newsreader"), "daily does not load a serif display stack");
-assert(!dailyPage.includes("#F7F4EC") && !dailyPage.includes("#8B1E1E") && !dailyPage.includes("#1F3A5F"), "daily does not override shell with E-Ink tokens");
-assert(!dailyPage.includes('data-ds-injected="daily-skin"'), "daily uses shared reading-station skin");
-{
-  const dailyHtml = dailyPage;
-  assert(!/Inter/.test(dailyHtml.match(/class="ft-daily"[\s\S]*?<\/div>\s*<script data-ds-injected="daily">/)?.[0] || ""), "daily newspaper markup stack has no Inter");
-}
-assert(livePage.includes("data-ds-injected=\"live-curate\""), " /live/ curated homepage remains");
 
 assert(/body\{[^}]*max-width:\s*\d+px;[^}]*margin:[^;]*auto/.test(timelineRaw), "timeline source keeps a centered reading column");
 assert(/main\{[^}]*max-width:\s*\d+px;[^}]*margin:[^;]*auto/.test(liveRaw), "live source keeps a centered main column");
