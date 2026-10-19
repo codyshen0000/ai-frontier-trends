@@ -1,0 +1,17 @@
+{
+  "site": "前沿趋势",
+  "asOf": "2026-10-18T08:20:00+08:00",
+  "note": "fixture mock · 无实时热度 · 排序按独立来源数",
+  "hot": [
+    {"rank": 1, "title": "开源模型侧发布 Flash 变体并开放检索 API", "sources": 15},
+    {"rank": 2, "title": "超大参数多模态模型开源，社区复现评测启动", "sources": 9},
+    {"rank": 3, "title": "边缘 AI 笔记本开售，本地推理成为卖点", "sources": 7},
+    {"rank": 4, "title": "Agent 编排框架发布 2.0：工具调用与长任务", "sources": 6},
+    {"rank": 5, "title": "推理成本再降：新一批 API 调价与缓存策略", "sources": 5},
+    {"rank": 6, "title": "长上下文评测新协议：避免单一指标误导", "sources": 4},
+    {"rank": 7, "title": "开源 ASR 新基线：方言与噪声场景提升", "sources": 4},
+    {"rank": 8, "title": "企业知识库采购指南更新：权限与审计条款", "sources": 3},
+    {"rank": 9, "title": "扩散模型采样加速：一步蒸馏新论文", "sources": 3},
+    {"rank": 10, "title": "开源 IDE Agent 插件周更：多文件编辑稳定", "sources": 3}
+  ]
+}
