@@ -28,20 +28,29 @@ function pagePath(file) {
 }
 
 const CONTRAST = `(() => {
+  const chan = (c) => {
+    const m = (c.match(/[\\d.]+/g) || []).map(Number);
+    const srgb = /color\\(srgb/i.test(c);
+    const rgb = m.slice(0, 3).map((v) => (srgb ? v : v / 255));
+    const a = m.length > 3 ? m[3] : 1;
+    return [...rgb, a];
+  };
   const lum = (c) => {
-    const m = c.match(/[\\d.]+/g).map(Number);
-    const f = (v) => { v /= 255; return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); };
-    return [0.2126 * f(m[0]) + 0.7152 * f(m[1]) + 0.0722 * f(m[2]), m[3] === undefined ? 1 : m[3]];
+    const [r, g, b, a] = chan(c);
+    const f = (v) => (v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4));
+    return [0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b), a];
   };
   const bgOf = (el) => {
     let e = el;
     while (e) {
       const b = getComputedStyle(e).backgroundColor;
-      const a = b.match(/[\\d.]+/g).map(Number);
-      if (a.length < 4 || a[3] > 0.5) return b;
+      const a = lum(b)[1];
+      if (a > 0.5) return b;
       e = e.parentElement;
     }
-    return getComputedStyle(document.documentElement).backgroundColor;
+    const root = getComputedStyle(document.documentElement).backgroundColor;
+    if (lum(root)[1] > 0.5) return root;
+    return document.documentElement.dataset.theme === "dark" ? "rgb(20, 20, 19)" : "rgb(250, 249, 246)";
   };
   window.__ratio = (el) => {
     const cs = getComputedStyle(el);

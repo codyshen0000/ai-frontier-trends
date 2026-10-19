@@ -153,13 +153,11 @@ const ICONS = {
 
 function navLink(href, label, { current = false, extraClass = "" } = {}) {
   const cls = [current ? "active" : "", extraClass].filter(Boolean).join(" ");
-  const attrs = [
-    `href="${href}"`,
-    cls ? `class="${cls}"` : "",
-    current ? 'aria-current="page"' : "",
-  ]
-    .filter(Boolean)
-    .join(" ");
+  if (current) {
+    const attrs = [cls ? `class="${cls}"` : "", 'aria-current="page"'].filter(Boolean).join(" ");
+    return `<span ${attrs}>${escapeHtml(label)}</span>`;
+  }
+  const attrs = [`href="${href}"`, cls ? `class="${cls}"` : ""].filter(Boolean).join(" ");
   return `<a ${attrs}>${escapeHtml(label)}</a>`;
 }
 
@@ -176,7 +174,10 @@ function shellLink(item, currentId, fromPath, { active } = {}) {
   const href = hrefBetween(fromPath, item.path);
   const current = active ?? isChromeActive(item, currentId);
   const icon = ICONS[item.id] || ICONS.more;
-  return `<a href="${href}" class="${current ? "active" : ""}"${current ? ' aria-current="page"' : ""}>${icon}<span>${escapeHtml(item.label)}</span></a>`;
+  if (current) {
+    return `<span class="active" aria-current="page">${icon}<span>${escapeHtml(item.label)}</span></span>`;
+  }
+  return `<a href="${href}">${icon}<span>${escapeHtml(item.label)}</span></a>`;
 }
 
 function shellLinks(currentId, fromPath) {
@@ -199,7 +200,10 @@ function editionLinks(currentId, fromPath) {
       const href = hrefBetween(fromPath, item.path);
       const current = item.id === currentId;
       const icon = ICONS[item.id] || ICONS.daily;
-      return `<a href="${href}" class="${current ? "active" : ""}"${current ? ' aria-current="page"' : ""}>${icon}<span>${escapeHtml(item.label)}</span></a>`;
+      if (current) {
+        return `<span class="active" aria-current="page">${icon}<span>${escapeHtml(item.label)}</span></span>`;
+      }
+      return `<a href="${href}">${icon}<span>${escapeHtml(item.label)}</span></a>`;
     })
     .join("");
 }
