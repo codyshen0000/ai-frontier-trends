@@ -116,6 +116,152 @@ export function buildEdition(cards, day) {
   };
 }
 
+function sourceRole(card, index) {
+  const tags = (card.tags || []).join(" ");
+  if (card.firstParty && index === 0) return "一手";
+  if (/转述/.test(tags)) return "转述";
+  return "来源";
+}
+
+const HEAT_KEY = /热度|heat|基准|跑分|benchmark/i;
+
+export function extractSummaryFacts(summary) {
+  const text = String(summary || "").trim();
+  if (!text) return [];
+  const rows = [];
+  const seen = new Set();
+  const push = (key, value) => {
+    const k = String(key || "").replace(/\s+/g, " ").trim();
+    const v = String(value || "").replace(/\s+/g, " ").trim();
+    if (!k || !v || k.length > 16 || v.length > 48) return;
+    if (HEAT_KEY.test(k) || HEAT_KEY.test(v)) return;
+    if (!text.includes(k) || !text.includes(v)) return;
+    const id = `${k}\0${v}`;
+    if (seen.has(id)) return;
+    seen.add(id);
+    rows.push({ key: k, value: v });
+  };
+
+  const colonRe = /(?:^|[、；。\n])\s*([^、；。:\n：]{1,16}?)\s*[：:]\s*([^、；。\n]{1,48})/g;
+  let match;
+  while ((match = colonRe.exec(text))) push(match[1], match[2]);
+
+  const aboutRe =
+    /(?:^|[、；。\s])([A-Za-z\u4e00-\u9fff][A-Za-z0-9\u4e00-\u9fff./-]{0,12})\s*(约\s*[0-9][0-9A-Za-z./%+]{0,24})/g;
+  while ((match = aboutRe.exec(text))) push(match[1], match[2]);
+
+  const pctRe =
+    /(?:^|[、；。\s])([A-Za-z\u4e00-\u9fff][A-Za-z0-9\u4e00-\u9fff.+/-]{1,16})\s*(\d+(?:\.\d+)?%(?:\s*[（(][^）)]{0,24}[）)])?)/g;
+  while ((match = pctRe.exec(text))) push(match[1], match[2]);
+
+  return rows.slice(0, 4);
+}
+
+export function factRows(card) {
+  const rows = [];
+  if (card.section) rows.push({ key: "栏目", value: card.section });
+  if (card.tags?.length) rows.push({ key: "标签", value: card.tags.join("、") });
+  if (card.sourceCount > 0) rows.push({ key: "独立来源", value: String(card.sourceCount) });
+  if (card.firstParty === true || card.firstParty === false) {
+    rows.push({ key: "一手", value: card.firstParty ? "是" : "否" });
+  }
+  if (card.sources?.[0]?.host) rows.push({ key: "主链", value: card.sources[0].host });
+  for (const fact of extractSummaryFacts(card.summary)) {
+    if (rows.some((row) => row.key === fact.key && row.value === fact.value)) continue;
+    rows.push(fact);
+  }
+  return rows.filter((row) => !HEAT_KEY.test(row.key) && row.value);
+}
+
+function vizTable(headers, rows, caption, escapeHtml) {
+  if (!rows.length) return "";
+  const head = headers.map((cell) => `<th>${escapeHtml(cell)}</th>`).join("");
+  const body = rows
+    .map((row) => `<tr>${row.map((cell) => `<td>${escapeHtml(cell)}</td>`).join("")}</tr>`)
+    .join("");
+  return `<div class="ft-daily-item-viz-wrap"><table>
+      <caption class="ft-daily-sr">${escapeHtml(caption)}</caption>
+      <thead><tr>${head}</tr></thead>
+      <tbody>${body}</tbody>
+    </table></div>`;
+}
+
+function factTable(card, escapeHtml) {
+  const rows = factRows(card);
+  if (rows.length < 2) return "";
+  return vizTable(
+    ["项", "值"],
+    rows.map((row) => [row.key, row.value]),
+    "本条要点",
+    escapeHtml,
+  );
+}
+
+function sourceTable(card, escapeHtml) {
+  if (!card.sources?.length) return "";
+  return vizTable(
+    ["来源名", "host", "角色"],
+    card.sources.map((source, index) => [source.name || source.host, source.host || "", sourceRole(card, index)]),
+    "本条来源",
+    escapeHtml,
+  );
+}
+
+function fallbackTable(card, escapeHtml) {
+  return factTable(card, escapeHtml) || sourceTable(card, escapeHtml);
+}
+
+function coverFigure(card, escapeHtml) {
+  const src = card.cover || card.image;
+  if (!src) return "";
+  return `<figure class="ft-daily-item-fig">
+      <img src="${escapeHtml(src)}" alt="" loading="lazy" decoding="async" onerror="var f=this.closest('figure'); if(f) f.hidden=true;">
+    </figure>`;
+}
+
+export function itemVizKind(card) {
+  if (card.tablesHtml?.length) return card.cover || card.image ? "table+image" : "table";
+  if (card.cover || card.image) return factRows(card).length >= 2 || card.sources?.length ? "image+table" : "image";
+  if (factRows(card).length >= 2) return "facts";
+  if (card.sources?.length) return "sources";
+  return "";
+}
+
+export function itemViz(card, escapeHtml) {
+  const parts = [];
+  if (card.tablesHtml?.length) {
+    parts.push(
+      card.tablesHtml
+        .map((html) => `<div class="ft-daily-item-viz-wrap ft-daily-item-live">${html}</div>`)
+        .join(""),
+    );
+  }
+  const figure = coverFigure(card, escapeHtml);
+  if (figure) parts.push(figure);
+  if (!card.tablesHtml?.length) {
+    const fallback = fallbackTable(card, escapeHtml);
+    if (fallback) parts.push(fallback);
+  }
+  if (!parts.length) return "";
+  const kind = itemVizKind(card);
+  return `<div class="ft-daily-item-viz" data-viz="${escapeHtml(kind)}" data-id="${escapeHtml(card.id)}">${parts.join("")}</div>`;
+}
+
+export function editionVisibleItems(edition) {
+  return [edition.lead, ...edition.sections.flatMap((section) => section.items)].filter(Boolean);
+}
+
+export function editionVizReport(edition) {
+  const items = editionVisibleItems(edition);
+  const missing = items.filter((card) => !itemVizKind(card)).map((card) => card.id);
+  return {
+    total: items.length,
+    withViz: items.length - missing.length,
+    missing,
+    ratio: items.length ? (items.length - missing.length) / items.length : 1,
+  };
+}
+
 function sourceChips(card, escapeHtml) {
   if (!card.sources.length) return "";
   const primary = card.sources[0];
@@ -306,10 +452,11 @@ function frontPage(edition, { escapeHtml, hrefBetween }) {
     .join("");
 
   return `<section class="ft-daily-front" id="d-${escapeHtml(edition.day)}-front">
-    <div class="ft-daily-lead">
+    <div class="ft-daily-lead" data-id="${escapeHtml(lead.id)}">
       <p class="ft-daily-kicker">头条</p>
       <h2>${storyLink(lead, escapeHtml)}</h2>
       ${lead.summary ? `<p class="ft-daily-dek">${escapeHtml(lead.summary)}</p>` : ""}
+      ${itemViz(lead, escapeHtml)}
       <p class="ft-daily-lead-meta">
         ${sourceChips(lead, escapeHtml)}
         <span class="ft-daily-mins">约 ${storyMinutes(lead)} 分钟</span>
@@ -340,9 +487,10 @@ function sectionPage(edition, section, index, escapeHtml) {
     .map((row) => {
       const cells = row
         .map((card) => {
-          return `<article class="ft-daily-story" id="c-${escapeHtml(card.id)}">
+          return `<article class="ft-daily-story" id="c-${escapeHtml(card.id)}" data-id="${escapeHtml(card.id)}">
             <h3>${storyLink(card, escapeHtml)}</h3>
             ${card.summary ? `<p>${escapeHtml(card.summary)}</p>` : ""}
+            ${itemViz(card, escapeHtml)}
             <p class="ft-daily-story-meta">
               ${sourceChips(card, escapeHtml)}
               <span class="ft-daily-mins">约 ${storyMinutes(card)} 分钟</span>

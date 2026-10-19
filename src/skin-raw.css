@@ -1225,6 +1225,80 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
   color: var(--ft-muted);
 }
 
+.ft-daily-item-viz {
+  margin: 0 0 10px;
+  max-width: 42em;
+}
+
+.ft-daily-story .ft-daily-item-viz {
+  max-width: 40em;
+}
+
+.ft-daily-item-viz-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+}
+
+.ft-daily-item-viz table {
+  width: 100%;
+  min-width: 220px;
+  border-collapse: collapse;
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--ft-ink);
+}
+
+.ft-daily-item-viz th,
+.ft-daily-item-viz td {
+  border: 1px solid var(--ft-line);
+  padding: 4px 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.ft-daily-item-viz th {
+  font-weight: 600;
+  color: var(--ft-muted);
+  background: var(--ft-elev);
+  white-space: nowrap;
+}
+
+.ft-daily-item-viz td {
+  font-variant-numeric: tabular-nums;
+}
+
+.ft-daily-item-fig {
+  margin: 0 0 8px;
+  max-width: 100%;
+}
+
+.ft-daily-item-fig[hidden] {
+  display: none;
+}
+
+.ft-daily-item-fig img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 280px;
+  object-fit: contain;
+  background: var(--ft-elev);
+  border: 1px solid var(--ft-line);
+}
+
+.ft-daily-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .ft-daily-issue,
 .ft-daily-page,
 .ft-daily-story {
@@ -1319,7 +1393,7 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
 
 .ft-daily-row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 0 28px;
   border-bottom: 1px solid var(--ft-line);
 }
@@ -1479,6 +1553,10 @@ html.ft-shell main.ds-wrap.ft-daily-wrap {
   .ft-daily-kinds a,
   .ft-daily-kinds span {
     height: 44px;
+  }
+
+  .ft-daily-item-fig img {
+    max-height: 200px;
   }
 }
 

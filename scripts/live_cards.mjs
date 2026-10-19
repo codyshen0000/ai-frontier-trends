@@ -72,6 +72,35 @@ function enclosingSection(html, index) {
   return last;
 }
 
+function isRealImageUrl(url) {
+  if (!url) return false;
+  const value = String(url).trim();
+  if (!value) return false;
+  if (/^(?:javascript|data|blob):/i.test(value)) return false;
+  if (/placeholder|unsplash|lorem|stock|generated|dall-e|midjourney/i.test(value)) return false;
+  return /^(https?:\/\/|\/|\.\/)/i.test(value);
+}
+
+function sanitizeTable(html) {
+  return String(html)
+    .replace(/<script\b[\s\S]*?<\/script>/gi, "")
+    .replace(/<style\b[\s\S]*?<\/style>/gi, "")
+    .replace(/\s+on\w+\s*=\s*("[^"]*"|'[^']*'|[^\s>]+)/gi, "");
+}
+
+export function extractCardTables(inner) {
+  return [...String(inner).matchAll(/<table\b[\s\S]*?<\/table>/gi)].map((item) => sanitizeTable(item[0]));
+}
+
+export function extractCardCover(attrs, inner) {
+  const fromAttr = attr(attrs, "data-cover") || attr(attrs, "data-image") || attr(attrs, "data-og-image");
+  if (isRealImageUrl(fromAttr)) return fromAttr;
+  const img = String(inner).match(/<img\b([^>]*)>/i);
+  if (!img) return "";
+  const src = attr(img[1], "src") || attr(img[1], "data-src") || attr(img[1], "data-cover");
+  return isRealImageUrl(src) ? src : "";
+}
+
 function parseCard(attrs, inner) {
   const id = attr(attrs, "data-id") || "";
   const day = attr(attrs, "data-day") || "";
@@ -80,7 +109,12 @@ function parseCard(attrs, inner) {
   const h3 = inner.match(/<h3\b[^>]*>([\s\S]*?)<\/h3>/i);
   const titleHtml = h3 ? h3[1] : "";
   const focus = /<span\b[^>]*class=["'][^"']*\bbadge\b[^"']*["'][^>]*>\s*重点/.test(titleHtml);
-  const tags = [...titleHtml.matchAll(/【([^】]+)】/g)].map((item) => item[1]);
+  let tags = [...titleHtml.matchAll(/【([^】]+)】/g)].map((item) => item[1]);
+  if (!tags.length) {
+    tags = [...titleHtml.matchAll(/<span\b[^>]*class=["'][^"']*\btag\b[^"']*["'][^>]*>([\s\S]*?)<\/span>/gi)]
+      .map((item) => stripTags(item[1]).replace(/^[【\[]|[】\]]$/g, "").trim())
+      .filter(Boolean);
+  }
   const title = stripTags(titleHtml.replace(/<span\b[^>]*>[\s\S]*?<\/span>/gi, ""));
   const paragraphs = [...inner.matchAll(/<p(\b[^>]*)>([\s\S]*?)<\/p>/gi)];
   let section = "";
@@ -113,6 +147,8 @@ function parseCard(attrs, inner) {
     sources.push({ ...link, name: sourceLabel(link.host) });
   }
   const firstParty = tags.some((tag) => tag.includes("官方自报"));
+  const tablesHtml = extractCardTables(inner);
+  const cover = extractCardCover(attrs, inner);
   return {
     id: id || title,
     day,
@@ -126,6 +162,9 @@ function parseCard(attrs, inner) {
     time: timeMatch ? timeMatch[1].trim() : day,
     sources,
     sourceCount: sources.length,
+    tablesHtml,
+    cover,
+    image: cover,
   };
 }
 

@@ -2,7 +2,15 @@ import { existsSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { extractLiveSpotlight, extractThreads, extractTimelineLede, ensureThreadAnchors } from "./extract.mjs";
-import { extractLiveCards, rankHot, selectPins } from "./live_cards.mjs";
+import { extractLiveCards, extractCardTables, extractCardCover, rankHot, selectPins } from "./live_cards.mjs";
+import {
+  buildEdition,
+  editionVizReport,
+  extractSummaryFacts,
+  factRows,
+  itemViz,
+  latestDay,
+} from "./daily_page.mjs";
 import { injectHtmlFile } from "./build.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -250,6 +258,59 @@ assert(!dailyPage.includes('data-ds-injected="daily-skin"'), "daily uses shared 
   const dailyHtml = dailyPage;
   assert(!/Inter/.test(dailyHtml.match(/class="ft-daily"[\s\S]*?<\/div>\s*<script data-ds-injected="daily">/)?.[0] || ""), "daily newspaper markup stack has no Inter");
 }
+{
+  const leads = dailyPage.match(/<div class="ft-daily-lead"[\s\S]*?(?=<aside class="ft-daily-rail">)/g) || [];
+  const stories = dailyPage.match(/<article class="ft-daily-story"[\s\S]*?<\/article>/g) || [];
+  const items = [...leads, ...stories];
+  const withViz = items.filter((html) => html.includes("ft-daily-item-viz"));
+  const ratio = items.length ? withViz.length / items.length : 0;
+  assert(items.length >= 8, `daily has lead+story items (${items.length})`);
+  assert(ratio >= 0.9, `daily per-item viz coverage ${withViz.length}/${items.length} (${Math.round(ratio * 100)}%)`);
+  assert(leads.every((html) => html.includes("ft-daily-item-viz")), "every daily lead has a per-item viz");
+  assert(dailyPage.includes("ft-daily-item-viz"), "daily renders ft-daily-item-viz");
+  assert(
+    !dailyPage.includes("ft-daily-section-chart") &&
+      !dailyPage.includes("本期定档") &&
+      !dailyPage.includes("版面分布") &&
+      !dailyPage.includes("ft-daily-roster"),
+    "daily has no PR #14 page-level summary slots",
+  );
+  const firstIssue = dailyPage.match(/<article class="ft-daily-issue"[\s\S]*?<\/article>/)?.[0] || "";
+  assert(!/热度/.test(firstIssue), "daily edition does not invent 热度 rows");
+}
+{
+  const cards = extractLiveCards(liveRaw);
+  assert(cards.every((card) => Array.isArray(card.tags) && typeof card.firstParty === "boolean"), "live_cards exports tags[] and firstParty");
+  assert(cards.every((card) => card.section), "live_cards backfills section from enclosing details when note lacks 栏目");
+  assert(cards.filter((card) => card.sources?.length).length === cards.length, "every live card has sources[]");
+  const day = latestDay(cards);
+  const edition = buildEdition(cards, day);
+  const report = editionVizReport(edition);
+  assert(report.ratio >= 0.9, `latest edition viz ${report.withViz}/${report.total}`);
+  assert(report.missing.length === 0 || report.missing.length / report.total <= 0.1, `omitted viz ids: ${report.missing.join(",") || "none"}`);
+  const leadHtml = itemViz(edition.lead, (value) => String(value));
+  assert(leadHtml.includes("ft-daily-item-viz") && leadHtml.includes("<table"), "lead viz is a table when no card image/table");
+  assert(!leadHtml.includes("热度"), "lead viz has no 热度");
+  const facts = factRows(edition.lead);
+  assert(facts.length >= 2, `lead fact table has ${facts.length} rows`);
+  assert(facts.some((row) => row.key === "栏目" && row.value === edition.lead.section), "lead facts reuse this card's section");
+  const invented = extractSummaryFacts("无冒号的句子。约 38 天还在。热度：99");
+  assert(
+    invented.every((row) => row.key !== "热度" && !/^约/.test(row.key)),
+    "summary facts skip heat and unlabeled 约 N",
+  );
+  const about = extractSummaryFacts("总参约 816B、激活约 42B；权重跟踪：Klein 记交付");
+  assert(
+    about.some((row) => row.key === "总参" && row.value.includes("816B")) &&
+      about.some((row) => row.key === "权重跟踪"),
+    "summary facts keep 键：值 and labeled 约 N",
+  );
+  const cardTable = `<article class="card" data-id="viz-table" data-day="2026-10-16"><h3>带表</h3><p>摘要</p><table><tr><th>A</th><th>B</th></tr><tr><td>1</td><td>2</td></tr></table><div class="meta"><span>📅 2026-10-16</span><span>🔗 <a href="https://example.com">ex</a></span></div></article>`;
+  const cardImage = `<article class="card" data-id="viz-img" data-day="2026-10-16" data-cover="https://example.com/cover.jpg"><h3>带图</h3><p>摘要</p><div class="meta"><span>📅 2026-10-16</span><span>🔗 <a href="https://example.com">ex</a></span></div></article>`;
+  assert(extractCardTables(cardTable).length === 1, "live_cards passes through this article's table");
+  assert(extractCardCover(cardImage.match(/<article\b([^>]*)>/)[1], cardImage) === "https://example.com/cover.jpg", "live_cards reads data-cover");
+  assert(extractCardTables(liveRaw.match(/<article\b[^>]*class=["'][^"']*\bcard\b[^"']*["'][^>]*>[\s\S]*?<\/article>/)?.[0] || "").length === 0, "site-wide panels are not treated as the first card table");
+}
 assert(livePage.includes("data-ds-injected=\"live-curate\""), " /live/ curated homepage remains");
 
 assert(/body\{[^}]*max-width:\s*\d+px;[^}]*margin:[^;]*auto/.test(timelineRaw), "timeline source keeps a centered reading column");
@@ -291,6 +352,8 @@ assert(!/ft-daily-rail\s*\{[^}]*position:\s*sticky/.test(skinRaw), "daily 今日
 assert(/\.ft-daily-card\s*\{[^}]*border:/.test(skinRaw), "daily calendar is a bordered card");
 assert(/\.ft-daily-chrome\s*\{\s*display:\s*none;/.test(skinRaw), "mobile hides 往期 chrome so the calendar keeps the nameplate");
 assert(/\.ft-daily-dot\s*\{[^}]*width:\s*22px/.test(skinRaw), "calendar dots have a 22px hit target");
+assert(/\.ft-daily-item-viz\s*\{/.test(skinRaw), "daily per-item viz is styled");
+assert(/\.ft-daily-item-viz table/.test(skinRaw), "daily per-item tables use hairline styles");
 assert(
   /\.ft-daily-dots\s*\{[^}]*minmax\(0,\s*1fr\)/.test(skinRaw),
   "calendar dots use shrinking columns so 1280 nameplate does not overflow",
