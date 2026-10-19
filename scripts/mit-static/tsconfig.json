@@ -19,7 +19,8 @@
       "@aihot/contracts/taxonomy": ["../../vendor/mit/packages/contracts/src/taxonomy.ts"],
       "@aihot/contracts/time": ["../../vendor/mit/packages/contracts/src/time.ts"],
       "@aihot/contracts/site-config": ["../../vendor/mit/packages/contracts/src/site-config.ts"],
-      "@aihot/industry/taxonomy": ["./src/industry-taxonomy.ts"]
+      "@aihot/industry/taxonomy": ["./src/industry-taxonomy.ts"],
+      "@l2/constants": ["./src/constants.ts"]
     }
   },
   "include": ["src", "../../vendor/mit"]

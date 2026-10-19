@@ -6,6 +6,8 @@ export const pages = [
   { file: "index.html", title: "精选", pathname: "/", node: <HomeScreen /> },
   { file: "hot.html", title: withSubjectSafe("热点榜"), pathname: "/hot", node: <HotScreen /> },
   { file: "daily.html", title: withSubjectSafe("日报"), pathname: "/daily", node: <DailyScreen /> },
+  { file: "hot-empty.html", title: withSubjectSafe("热点榜"), pathname: "/hot", node: <HotScreen emptyCover /> },
+  { file: "daily-empty.html", title: withSubjectSafe("日报"), pathname: "/daily", node: <DailyScreen emptyCover /> },
 ];
 
 function withSubjectSafe(noun: string) {

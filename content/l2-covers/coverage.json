@@ -1,0 +1,113 @@
+{
+  "rule": "v5-valuable-or-none",
+  "sparkHours": 24,
+  "rankWindowHours": 48,
+  "hot": {
+    "total": 10,
+    "withCover": 1,
+    "render": 1,
+    "renderNote": "Only NO.01 may paint a cover. Empty slot is empty — sparkline stays in the heat control, never in the cover slot. Fail → 无图, never hotlink."
+  },
+  "daily": {
+    "headlineHasCover": true,
+    "renders": true,
+    "noSparklineWhenMissing": true
+  },
+  "missing": [
+    {
+      "id": "openui-1.0",
+      "rank": 2,
+      "title": "OpenUI 1.0：Agent 交互界面框架",
+      "reason": "badge",
+      "slot": "not a cover slot"
+    },
+    {
+      "id": "jev-1-14-preview",
+      "rank": 3,
+      "title": "Jev 1.14 预览：实验性图像 / box / 长上下文",
+      "reason": "valuable",
+      "slot": "not a cover slot"
+    },
+    {
+      "id": "jev-35b",
+      "rank": 4,
+      "title": "JEV-35B：单次前向结构化决策头",
+      "reason": "unsure",
+      "slot": "not a cover slot"
+    },
+    {
+      "id": "llamafactory-rsi",
+      "rank": 5,
+      "title": "LlamaFactory RSI：PenguinHarness / awesome-rsi / GDPevo（观察）",
+      "reason": "badge",
+      "slot": "not a cover slot"
+    },
+    {
+      "id": "pr-opd",
+      "rank": 6,
+      "title": "PR-OPD：事后技能对齐隐藏状态",
+      "reason": "valuable",
+      "slot": "not a cover slot"
+    },
+    {
+      "id": "terminal-rsi",
+      "rank": 7,
+      "title": "Terminal-RSI：终端 agent 递归改写 + 策略精炼（观察）",
+      "reason": "unsure",
+      "slot": "not a cover slot"
+    },
+    {
+      "id": "jevany",
+      "rank": 8,
+      "title": "JevAny：任意骨干 → typed 决策头 / LoRA",
+      "reason": "svg",
+      "slot": "not a cover slot"
+    },
+    {
+      "id": "agent-reflex",
+      "rank": 9,
+      "title": "Agent-Reflex：把反思训成元技能并接 OPD",
+      "reason": "svg",
+      "slot": "not a cover slot"
+    },
+    {
+      "id": "kling-4-0-ga",
+      "rank": 10,
+      "title": "Kling 4.0：产品全量上线（非开源权重）",
+      "reason": "unsure",
+      "slot": "not a cover slot"
+    }
+  ],
+  "dailyMissingReason": null,
+  "v4WouldShowV5Empty": [
+    "sample/sample-og-default",
+    "sample/sample-github-opengraph",
+    "sample/sample-logo-png",
+    "sample/sample-unsplash-decor",
+    "sample/sample-twitter-card",
+    "live/openui-1.0",
+    "live/jev-35b",
+    "live/llamafactory-rsi",
+    "live/terminal-rsi",
+    "live/kling-4-0-ga"
+  ],
+  "sizeBudget": {
+    "coverFilesBytes": 701008,
+    "uniqueRenditions": 1,
+    "modes": [
+      {
+        "mode": "thumb",
+        "width": 720
+      },
+      {
+        "mode": "image-1200",
+        "width": 1200
+      },
+      {
+        "mode": "full",
+        "width": 1600
+      }
+    ],
+    "note": "Build-time sharp = MIT image-proxy static equivalent. hero srcSet 720/1200/1600 webp. Fail → no-image (never hotlink). Value gate before resize. Skip SVG, known height < 240, logo/badge URLs."
+  }
+}

@@ -1,5 +1,5 @@
-import { existsSync, readFileSync } from "node:fs";
-import { dirname, join } from "node:path";
+import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
+import { dirname, join, normalize, relative, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { extractLiveSpotlight, extractThreads, extractTimelineLede, ensureThreadAnchors } from "./extract.mjs";
 import { clipSummary, extractLiveCards, rankHot, selectPins } from "./live_cards.mjs";
@@ -210,8 +210,36 @@ assert(hotPage.includes("AI 热点榜 · 前沿趋势") || hotPage.includes("热
 assert(hotPage.includes('href="../assets/app.css"'), "/hot/ CSS is ../assets/app.css");
 assert(hotPage.includes('href="../"') && hotPage.includes('href="../daily/"'), "/hot/ links to 精选 and /daily/");
 assert(hotPage.includes("发酵中"), "hot page keeps fixture 发酵中 chips");
+assert(hotPage.includes("48") && hotPage.includes("小时"), "hot ranking window remains 48h");
+assert(hotPage.includes("24 小时") || hotPage.includes("24小时") || hotPage.includes("小时走势"), "hot sparkline window is 24h");
+const hotCoverImgs = [...hotPage.matchAll(/<img\b[^>]*>/g)].filter((m) => /assets\/covers\//.test(m[0]));
+assert(hotCoverImgs.length <= 1, `hot paints at most one cover (${hotCoverImgs.length})`);
+if (hotCoverImgs.length === 1) {
+  assert(hotCoverImgs[0][0].includes("720w") && hotCoverImgs[0][0].includes("1200w") && hotCoverImgs[0][0].includes("1600w"), "hot lead srcSet is MIT hero 720/1200/1600");
+  assert(/src="\.\.\/assets\/covers\//.test(hotCoverImgs[0][0]), "hot lead src is ../assets/covers");
+  assert(/srcSet="\.\.\/assets\/covers\//.test(hotCoverImgs[0][0]), "hot lead srcSet uses the same ../assets/covers prefix");
+  assert(/imageSrcSet="\.\.\/assets\/covers\//.test(hotPage), "hot preload imageSrcSet uses ../assets/covers");
+  assert(!/(?:src|srcSet|imageSrcSet)="assets\/covers\//.test(hotPage), "hot cover attrs do not keep unprefixed assets/covers");
+  assert(/\bwidth="\d+"/.test(hotCoverImgs[0][0]) && /\bheight="\d+"/.test(hotCoverImgs[0][0]), "hot cover has width/height");
+  assert(!/src="https?:\/\//.test(hotCoverImgs[0][0]), "hot cover is not a hotlink");
+  assert(/alt="FLUX\.3 Image Klein 模型生成样图拼贴"/.test(hotCoverImgs[0][0]), "hot cover alt is a short Chinese description");
+  assert(!/\balt=""/.test(hotCoverImgs[0][0]), "hot cover alt is not empty");
+  assert(!/\balt="[^"]*\.(?:webp|png|jpe?g|gif|svg)"/i.test(hotCoverImgs[0][0]), "hot cover alt is not a filename");
+} else {
+  assert(!/>24 小时热度</.test(hotPage), "empty hot cover slot is not filled with a heat panel");
+}
 assert(!leftoverHtmlHref.test(hotPage), "/hot/ has no leftover .html page hrefs");
 assert(!hotPage.includes("AIHOT") && !hotPage.includes("MyHOT"), "hot page has no *HOT product brand");
+assert(hotPage.includes("Black Forest Labs 开源 FLUX.3 Image Klein"), "hot NO.01 uses story-digest Klein title");
+assert(hotPage.includes("在 Hugging Face 放出"), "hot NO.01 digest is answer-first");
+for (const needle of ["权重跟踪", "记交付", "六件套", "低于门槛", "本批", "本条未覆盖", "score=", "闸分", "补位"]) {
+  assert(!hotPage.includes(needle), `/hot/ public copy has no ${needle}`);
+}
+assert(
+  (hotPage.match(/text-\[12px\] leading-none text-ink-4">示例/g) || []).length >= 1,
+  "hot sparkline 示例 label is text-[12px]",
+);
+assert(!/text-\[10px\] leading-none text-ink-4">示例/.test(hotPage), "hot sparkline 示例 is not 10px");
 
 const morePage = readFileSync(join(distDir, "more", "index.html"), "utf8");
 assert(morePage.includes("看板 Studio"), "Studio stays under 更多");
@@ -228,6 +256,35 @@ assert(dailyPage.includes('href="../"') && dailyPage.includes('href="../hot/"'),
 assert(dailyPage.includes(">日报<") && dailyPage.includes('aria-current="page"'), "daily marks 日报 current");
 assert(!leftoverHtmlHref.test(dailyPage), "/daily/ has no leftover .html page hrefs");
 assert(!dailyPage.includes("AIHOT") && !dailyPage.includes("MyHOT"), "daily has no *HOT product brand");
+assert(dailyPage.includes("Black Forest Labs 开源 FLUX.3 Image Klein"), "daily headline uses story-digest Klein title");
+for (const needle of ["权重跟踪", "记交付", "六件套", "低于门槛", "本批", "本条未覆盖", "score=", "闸分", "补位"]) {
+  assert(!dailyPage.includes(needle), `/daily/ public copy has no ${needle}`);
+}
+const dailyCoverImgs = [...dailyPage.matchAll(/<img\b[^>]*>/g)].filter((m) => /assets\/covers\//.test(m[0]));
+const emptyHotPreview = join(root, "preview", "mit-static", "hot-empty.html");
+const emptyDailyPreview = join(root, "preview", "mit-static", "daily-empty.html");
+if (existsSync(emptyHotPreview)) {
+  const emptyHot = readFileSync(emptyHotPreview, "utf8");
+  assert(!emptyHot.includes("assets/covers/"), "hot-empty preview has no cover assets");
+  assert(!/>24 小时热度</.test(emptyHot), "hot-empty preview does not fill the cover slot with HeatPanel");
+}
+if (existsSync(emptyDailyPreview)) {
+  const emptyDaily = readFileSync(emptyDailyPreview, "utf8");
+  assert(!emptyDaily.includes("assets/covers/"), "daily-empty preview has no cover assets");
+}
+assert(dailyCoverImgs.length <= 1, `daily paints at most one headline cover (${dailyCoverImgs.length})`);
+if (dailyCoverImgs.length === 1) {
+  assert(dailyCoverImgs[0][0].includes("720w") && dailyCoverImgs[0][0].includes("1200w") && dailyCoverImgs[0][0].includes("1600w"), "daily headline srcSet is MIT hero 720/1200/1600");
+  assert(/src="\.\.\/assets\/covers\//.test(dailyCoverImgs[0][0]), "daily headline src is ../assets/covers");
+  assert(/srcSet="\.\.\/assets\/covers\//.test(dailyCoverImgs[0][0]), "daily headline srcSet uses the same ../assets/covers prefix");
+  assert(/imageSrcSet="\.\.\/assets\/covers\//.test(dailyPage), "daily preload imageSrcSet uses ../assets/covers");
+  assert(!/(?:src|srcSet|imageSrcSet)="assets\/covers\//.test(dailyPage), "daily cover attrs do not keep unprefixed assets/covers");
+  assert(/\bwidth="\d+"/.test(dailyCoverImgs[0][0]) && /\bheight="\d+"/.test(dailyCoverImgs[0][0]), "daily cover has width/height");
+  assert(!/src="https?:\/\//.test(dailyCoverImgs[0][0]), "daily cover is not a hotlink");
+  assert(/alt="FLUX\.3 Image Klein 模型生成样图拼贴"/.test(dailyCoverImgs[0][0]), "daily cover alt is a short Chinese description");
+  assert(!/\balt=""/.test(dailyCoverImgs[0][0]), "daily cover alt is not empty");
+  assert(!/\balt="[^"]*\.(?:webp|png|jpe?g|gif|svg)"/i.test(dailyCoverImgs[0][0]), "daily cover alt is not a filename");
+}
 
 assert(/body\{[^}]*max-width:\s*\d+px;[^}]*margin:[^;]*auto/.test(timelineRaw), "timeline source keeps a centered reading column");
 assert(/main\{[^}]*max-width:\s*\d+px;[^}]*margin:[^;]*auto/.test(liveRaw), "live source keeps a centered main column");
@@ -297,6 +354,84 @@ assert(existsSync(join(distDir, "weekly", "2026-10-12", "charts", "2026-10-12-ev
 assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-evidence-by-line.png")), "weekly 2026-10-18 ships chart pngs");
 assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-signal-candidates.png")), "weekly 2026-10-18 ships signal chart");
 assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-weights-delivery.png")), "weekly 2026-10-18 ships weights chart");
+
+function walkHtmlFiles(dir, acc = []) {
+  for (const name of readdirSync(dir)) {
+    const full = join(dir, name);
+    if (statSync(full).isDirectory()) walkHtmlFiles(full, acc);
+    else if (name.endsWith(".html")) acc.push(full);
+  }
+  return acc;
+}
+
+function parseSrcsetUrls(value) {
+  return String(value)
+    .split(",")
+    .map((part) => part.trim().split(/\s+/)[0])
+    .filter(Boolean);
+}
+
+function localAssetUrlsFromHtml(html) {
+  const urls = [];
+  const attrRe = /\b(src|srcset|imagesrcset)="([^"]*)"/gi;
+  let match;
+  while ((match = attrRe.exec(html))) {
+    const attr = match[1].toLowerCase();
+    const value = match[2];
+    if (attr === "srcset" || attr === "imagesrcset") urls.push(...parseSrcsetUrls(value));
+    else if (value) urls.push(value.trim());
+  }
+  return urls;
+}
+
+function skipRemoteOrEmpty(url) {
+  if (!url || url.startsWith("#") || url.startsWith("data:") || url.startsWith("mailto:") || url.startsWith("javascript:")) return true;
+  if (/^[a-z][a-z0-9+.-]*:/i.test(url)) return true;
+  if (url.startsWith("//")) return true;
+  return false;
+}
+
+function resolveInDist(pageFile, url) {
+  const clean = url.split("#")[0].split("?")[0];
+  const resolved = normalize(join(dirname(pageFile), clean));
+  const rel = relative(distDir, resolved);
+  if (!rel || rel.startsWith("..") || rel.startsWith(`..${sep}`)) return { ok: false, resolved, outside: true };
+  return { ok: existsSync(resolved) && statSync(resolved).isFile(), resolved, outside: false };
+}
+
+const htmlPages = walkHtmlFiles(distDir);
+assert(htmlPages.length > 0, "dist has HTML pages to scan");
+let missingAssets = 0;
+for (const pageFile of htmlPages) {
+  const html = readFileSync(pageFile, "utf8");
+  const relPage = relative(distDir, pageFile);
+  for (const url of localAssetUrlsFromHtml(html)) {
+    if (skipRemoteOrEmpty(url)) continue;
+    const hit = resolveInDist(pageFile, url);
+    if (!hit.ok) {
+      missingAssets += 1;
+      console.error(`FAIL missing asset on ${relPage}: ${url} → ${relative(distDir, hit.resolved)}`);
+    }
+  }
+}
+assert(missingAssets === 0, `every img src/srcset/imagesrcset on dist HTML resolves (${missingAssets} missing)`);
+
+const retiredPreview = [
+  "preview/hot/index.html",
+  "preview/hot/standalone.html",
+  "preview/daily/index.html",
+  "preview/daily/standalone.html",
+  "preview/live/index.html",
+  "preview/live/standalone.html",
+];
+const retiredMeta = /权重跟踪|记交付|本批|六件套/;
+for (const rel of retiredPreview) {
+  const html = readFileSync(join(root, rel), "utf8");
+  if (retiredMeta.test(html)) {
+    assert(html.includes("旧版·已作废"), `${rel} still has internal meta and must carry 旧版·已作废`);
+    assert(html.includes("mit-static"), `${rel} banner links to preview/mit-static`);
+  }
+}
 
 const injected = injectHtmlFile(liveRaw, { currentId: "live", path: "/live/" });
 assert(injectHtmlFile(injected, { currentId: "live", path: "/live/" }) === injected, "injectHtmlFile is idempotent");

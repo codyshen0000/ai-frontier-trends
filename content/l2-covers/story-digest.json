@@ -1,0 +1,57 @@
+{
+  "rule": "frontier-story-digest v5.1",
+  "note": "Public title/digest only. Internal scores, 补位, 闸分 stay out of these fields.",
+  "items": {
+    "flux-3-image-klein": {
+      "title": "Black Forest Labs 开源 FLUX.3 Image Klein（5.6B）",
+      "digest": "Black Forest Labs 在 Hugging Face 放出 FLUX.3 Image Klein 开源权重（约 5.6B），面向单消费级 GPU，支持原生 4K 与 bbox 编辑。\n\n该权重与此前公布的 FLUX.3 Video 定价/产品线分开。",
+      "daily_abstract": "Black Forest Labs 在 Hugging Face 放出 FLUX.3 Image Klein 开源权重（约 5.6B），面向单消费级 GPU，支持原生 4K 与 bbox 编辑。该权重与此前公布的 FLUX.3 Video 定价/产品线分开。",
+      "latest_progress": null
+    },
+    "openui-1.0": {
+      "title": "OpenUI 1.0 开源 Agent 界面框架",
+      "digest": "OpenUI 1.0 开源了一套 Agent 交互界面协议与运行时：智能体用 schema 和 OpenUI Lang 组合地图、表单、图表与按钮，并支持 React、Vue、Svelte、Angular。\n\n代码在 thesysdev/openui（GitHub 星标约 11203），站点为 openui.com。",
+      "latest_progress": null
+    },
+    "jev-1-14-preview": {
+      "title": "TypeSafe 开放 Jev 1.14 实验性预览",
+      "digest": "TypeSafe 在托管端开放 Jev 1.14 预览（jev-preview，约一周后切到 jev-latest），含多语微调；图像、box 框与长上下文需加 danger-zone 请求头。\n\n独立评测口径下，MMLU-Redux 95.0、ARC-C 97.6 为表内最高，MathQA 相对 frontier 中位约低 17.7 分。产品侧定位是路由、审核与置信度门控。",
+      "latest_progress": null
+    },
+    "jev-35b": {
+      "title": "JEV-35B 开源单次前向决策头",
+      "digest": "JEV-35B 基于 Qwen3.5-35B-A3B 开源（Apache-2.0），约 35B 总参、3B 激活，做单次前向结构化决策，而不是逐 token 生成。\n\n作者自报 Decision Index 0.3 为 59.73，该分数尚未进入官方榜。",
+      "latest_progress": null
+    },
+    "llamafactory-rsi": {
+      "title": "LlamaFactory 开源 RSI 工具链",
+      "digest": "LlamaFactory 维护者称 GitHub 仓库过 7 万星后，开始做递归自改进方向的工具链。\n\n公开三件：主仓 PenguinHarness（Prism-Shadow/penguin-harness，约 2669 星；README 写明模型固定、演进 harness，含 OPRO/APE/ACE/AWM 与 snapshot）、awesome-rsi（约 740 星）与企业评测 GDPevo（约 85 星）。",
+      "latest_progress": null
+    },
+    "pr-opd": {
+      "title": "PR-OPD：事后技能对齐隐藏状态",
+      "digest": "PR-OPD 先做 GRPO，再让策略写事后技能，并对齐各层隐藏状态，而不是对齐词概率。\n\n以 Qwen2.5-3B 相对 GRPO：ALFWorld All 从 66.4 升到 71.1（+4.7pp），WebShop Acc 从 55.5 升到 67.2（+11.7pp）。技能在场时 WebShop 从 42.2% 升到 56.2%；作者称被改动的采样 token 概率不足四分之一，隐状态改动超过八成。",
+      "latest_progress": null
+    },
+    "terminal-rsi": {
+      "title": "Terminal-RSI：终端 agent 递归自改进",
+      "digest": "Terminal-RSI 交替做自改写（RSR）与策略精炼（RPR），RPR 会更新策略权重，底座为 Qwen3.8-27B。\n\n作者称四套终端基准宏均 50.58%（较底座 +29.90pp），TB2.1 86.52%、Hard 79%。环境是终端沙箱加保护校验器。",
+      "latest_progress": null
+    },
+    "jevany": {
+      "title": "JevAny 把任意骨干训成决策头",
+      "digest": "JevAny 把任意骨干训练成 typed 决策头或 LoRA，与 JEV-35B 同属开源决策头迁移路线。",
+      "latest_progress": null
+    },
+    "agent-reflex": {
+      "title": "Agent-Reflex 把反思训成元技能",
+      "digest": "Agent-Reflex 按 RSD、ReSFT、ORPO 把反思训成元技能并接到 OPD。作者称 8B 模型在 τ²-Bench 等与 AgentNoiseBench 上超过对照，并称代码、模型与数据已开源。",
+      "latest_progress": null
+    },
+    "kling-4-0-ga": {
+      "title": "Kling 4.0 产品全量上线",
+      "digest": "Kling 4.0 产品全量上线，带来新 UI 以及 MCP/CLI；官方 release history 将 2026-10-15 标为 Major。HDR 4K 与 API 将随后提供。这是产品全量，不是开源权重。",
+      "latest_progress": null
+    }
+  }
+}
