@@ -194,7 +194,7 @@ export function morePageBody({ hrefBetween, escapeHtml, weeklyPath = "/weekly/" 
         { label: "关于", href: hrefBetween("/more/", "/about/"), note: "材料来源与标签" },
         { label: "RSS", href: "../feed/weekly.xml", note: "订阅周报" },
         { label: "个人主页", href: "https://codyshen0000.github.io/", note: "学术主页入口", external: true },
-        { label: "原始看板", href: hrefBetween("/more/", "/live/") + "#board", note: "Hub、分类过滤、待交付表" },
+        { label: "原始看板", href: "", note: "Hub、分类过滤、待交付表已收进精选流，不再单独成页", textOnly: true },
       ],
     },
   ];
@@ -203,6 +203,12 @@ export function morePageBody({ hrefBetween, escapeHtml, weeklyPath = "/weekly/" 
     .map((group) => {
       const links = group.items
         .map((item) => {
+          if (item.textOnly || !item.href) {
+            return `<div class="ft-more-card is-static">
+            <h3>${escapeHtml(item.label)}</h3>
+            <p>${escapeHtml(item.note)}</p>
+          </div>`;
+          }
           const extra = item.external ? ' target="_blank" rel="noopener"' : "";
           return `<a class="ft-more-card" href="${escapeHtml(item.href)}"${extra}>
             <h3>${escapeHtml(item.label)}</h3>
@@ -218,6 +224,10 @@ export function morePageBody({ hrefBetween, escapeHtml, weeklyPath = "/weekly/" 
     <div>
       <p class="ft-kicker">更多</p>
       <h1>研究资产与工具</h1>
+    </div>
+    <div class="ft-more-theme">
+      <p class="ft-kicker">外观</p>
+      <button type="button" class="ft-theme-toggle" aria-label="切换配色">☾</button>
     </div>
   </header>
   <p class="ft-lede">时间线、周报、信号和权重收在这里。Studio 和专题不占首页。</p>
