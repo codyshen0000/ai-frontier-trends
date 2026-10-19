@@ -20,7 +20,7 @@ import {
   weeklyIndexBody,
   weeklyIssueChrome,
 } from "./weekly.mjs";
-import { convertWeeklyCharts, rewriteWeeklyChartEmbeds } from "./weekly_charts.mjs";
+import { convertWeeklyCharts, embedWeeklyChartsAsDataUri, rewriteWeeklyChartEmbeds } from "./weekly_charts.mjs";
 import { assertCoverRecords, assertDistPublicCopy, assertWeeklyMetaSources, assertWeeklyReports } from "./story_digest.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -263,7 +263,7 @@ function pageChrome(page, fromPath) {
 }
 
 const THEME_BOOT =
-  '<script data-ds-injected="theme">(function(){try{var t=localStorage.getItem("ft:theme");if(!t){var old=localStorage.getItem("theme");if(old==="light"||old==="dark"||old==="system"){t=old;localStorage.setItem("ft:theme",old)}}if(t!=="light"&&t!=="dark"&&t!=="system")t="system";var resolved=t==="system"?(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"):t;document.documentElement.dataset.theme=resolved;document.documentElement.setAttribute("data-ft-theme-pref",t);document.documentElement.classList.add("ds-page","ft-shell");}catch(e){document.documentElement.classList.add("ds-page","ft-shell");}})();</script>';
+  '<script data-ds-injected="theme">(function(){try{var t=localStorage.getItem("ft:theme");if(!t){var old=localStorage.getItem("theme");if(old==="light"||old==="dark"||old==="system"){t=old;localStorage.setItem("ft:theme",old)}}if(t!=="light"&&t!=="dark"&&t!=="system")t="system";var resolved=t==="system"?(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"):t;document.documentElement.dataset.theme=resolved;document.documentElement.setAttribute("data-ft-theme-pref",t);document.documentElement.classList.add("ds-page","ft-shell","js");document.documentElement.classList.remove("no-js");}catch(e){document.documentElement.classList.add("ds-page","ft-shell","js");document.documentElement.classList.remove("no-js");}})();</script>';
 
 const RAW_NAV_UI =
   '<script data-ds-injected="ui">(function(){var root=document.documentElement;function resolved(pref){if(pref==="light"||pref==="dark")return pref;try{return matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}catch(e){return"light"}}function apply(pref){var t=resolved(pref);root.dataset.theme=t;root.setAttribute("data-ft-theme-pref",pref);document.querySelectorAll(".ft-theme-toggle").forEach(function(btn){var d=t==="dark";btn.setAttribute("aria-pressed",d?"true":"false");btn.setAttribute("aria-label",d?"切换到浅色模式":"切换到深色模式");btn.textContent=d?"☀":"☾";});}function pref(){try{var s=localStorage.getItem("ft:theme");if(!s){var old=localStorage.getItem("theme");if(old==="light"||old==="dark"||old==="system"){s=old;localStorage.setItem("ft:theme",old)}}if(s==="light"||s==="dark"||s==="system")return s;}catch(e){}return"system";}apply(pref());document.querySelectorAll(".ft-theme-toggle").forEach(function(btn){btn.addEventListener("click",function(){var n=root.dataset.theme==="dark"?"light":"dark";try{localStorage.setItem("ft:theme",n);}catch(e){}apply(n);});});function applyBoard(){var board=location.hash==="#board";var curate=document.querySelector(\'[data-ds-injected="live-curate"]\');var archive=document.querySelector(\'[data-ds-injected="live-archive"]\');if(!curate||!archive)return;curate.hidden=board;archive.hidden=!board;root.classList.toggle("ft-board",board);}window.addEventListener("hashchange",applyBoard);if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",applyBoard);else applyBoard();})();</script>';
@@ -323,7 +323,7 @@ function renderPage({ id, title, path, body, extraClass = "", description = conf
 
   const skinHref = assetHref(path, "assets/skin-raw.css");
   return `<!DOCTYPE html>
-<html lang="zh-CN" class="ds-page ft-shell">
+<html lang="zh-CN" class="ds-page ft-shell no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -580,7 +580,10 @@ async function writeWeeklyIssue(issue) {
   mkdirSync(destDir, { recursive: true });
   writeFileSync(
     join(destDir, "report.html"),
-    injectBeforeHeadEnd(raw.replace(/<link[^>]*data-ds-injected="favicon"[^>]*>\s*/gi, ""), faviconLinks(issue.path)),
+    injectBeforeHeadEnd(
+      embedWeeklyChartsAsDataUri(raw.replace(/<link[^>]*data-ds-injected="favicon"[^>]*>\s*/gi, ""), charts),
+      faviconLinks(issue.path),
+    ),
   );
   if (issue.markdownPath) cpSync(issue.markdownPath, join(destDir, "report.md"));
   if (issue.timelinePath) cpSync(issue.timelinePath, join(destDir, "timeline.md"));
@@ -678,7 +681,7 @@ export async function buildSite() {
           path: page.path,
           extraClass: "ds-section ft-page",
           description: page.summary || config.description,
-          body: morePageBody({ hrefBetween, escapeHtml }),
+          body: morePageBody({ hrefBetween, escapeHtml, weeklyPath: weeklyIssues[0]?.path || "/weekly/" }),
         }),
       );
       contentPages.push({ ...page, summary: page.summary || page.title });
