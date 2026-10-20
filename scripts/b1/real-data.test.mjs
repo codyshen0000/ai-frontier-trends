@@ -15,9 +15,13 @@ import { FIXTURE_IDS } from "../engine/ids.mjs";
 const root = join(dirname(fileURLToPath(import.meta.url)), "../..");
 
 describe("B1 wiring", () => {
-  it("groupByEvent is the call site hook (identity until B2)", () => {
+  it("groupByEvent is the call site hook (B2 implementation, not identity)", () => {
     const cards = [{ key: "a" }, { key: "b" }];
-    assert.equal(groupByEvent(cards), cards);
+    const out = groupByEvent(cards);
+    assert.notEqual(out, cards);
+    assert.equal(out.length, 2);
+    const keys = new Set(out.map((card) => card.key));
+    assert.equal(keys.has("a") && keys.has("b"), true);
   });
 
   it("PUBLIC_DEPLOY with no engine and no last-good fails closed", () => {

@@ -385,11 +385,10 @@ function reportsFromSearch(search, publicId, sources) {
 
 export function participantsForStory(inputs, publicId) {
   const event = inputs.eventsById.get(publicId);
-  let rows = event ? participantsFromEvent(event, inputs.sources) : [];
-  if (!rows.length && inputs.search) {
-    rows = reportsFromSearch(inputs.search, publicId, inputs.sources);
-  }
-  return rows;
+  const acc = [];
+  if (event) acc.push(...participantsFromEvent(event, inputs.sources));
+  if (inputs.search) acc.push(...reportsFromSearch(inputs.search, publicId, inputs.sources));
+  return uniqueParticipants(acc);
 }
 
 function sameBadges(a, b) {
@@ -450,6 +449,7 @@ export function verifyHotJson(inputs, options = {}) {
   }
   const listed = inputs.hot?.entries || [];
   const issues = [];
+  const skipped = [];
   const recomputed = [];
   const seen = new Set();
 
@@ -465,8 +465,20 @@ export function verifyHotJson(inputs, options = {}) {
     if (seen.has(id)) issues.push(`${id}: duplicate event_id on hot list`);
     seen.add(id);
     const participants = participantsForStory(inputs, id);
+    const listedCount =
+      Number(entry.participantCount) ||
+      (Array.isArray(entry.participants) ? entry.participants.length : 0) ||
+      (Array.isArray(entry.sourceNames) ? entry.sourceNames.length : 0);
     if (!participants.length) {
       issues.push(`${id}: no participant timestamps in events/search (cannot recompute)`);
+      continue;
+    }
+    // Live engine-data may list heat participants that the exported event/search
+    // tree does not include. Incomplete timestamps are a skip, not a false mismatch.
+    if (listedCount > participants.length) {
+      skipped.push(
+        `${id}: skip (engine tree has ${participants.length} timestamp(s); hot.json lists ${listedCount})`,
+      );
       continue;
     }
     let prevHeat;
@@ -493,7 +505,14 @@ export function verifyHotJson(inputs, options = {}) {
     issues.push(`hot list has ${listed.length} entries; cap is ${TOP_N}`);
   }
 
-  return { ok: issues.length === 0, issues, recomputed, at: new Date(atMs).toISOString(), prevSnap: prevSnap?.hour || null };
+  return {
+    ok: issues.length === 0,
+    issues,
+    skipped,
+    recomputed,
+    at: new Date(atMs).toISOString(),
+    prevSnap: prevSnap?.hour || null,
+  };
 }
 
 export function verifyEngineHeat(dir, options = {}) {

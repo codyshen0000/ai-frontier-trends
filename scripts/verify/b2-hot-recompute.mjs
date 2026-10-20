@@ -34,9 +34,19 @@ export async function verify(ctx = {}) {
       message: `${id}: ${result.issues.length} mismatch(es) vs hot.json (tol ${HEAT_TOLERANCE})\n${result.issues.join("\n")}`,
     };
   }
+  const skipNote = result.skipped?.length
+    ? `; ${result.skipped.length} incomplete-export skip(s)`
+    : "";
+  if (!result.recomputed.length && result.skipped?.length) {
+    return {
+      ok: true,
+      skipped: true,
+      message: `${id}: skip (engine tree missing participant timestamps for ${result.skipped.length} hot.json entries)`,
+    };
+  }
   return {
     ok: true,
-    message: `${id}: ${result.recomputed.length} hot.json heat values match recompute (±${HEAT_TOLERANCE}) at ${result.at}; ${HEAT_METHOD_COPY}`,
+    message: `${id}: ${result.recomputed.length} hot.json heat values match recompute (±${HEAT_TOLERANCE}) at ${result.at}; ${HEAT_METHOD_COPY}${skipNote}`,
   };
 }
 

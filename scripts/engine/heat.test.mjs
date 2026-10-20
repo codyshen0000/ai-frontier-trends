@@ -215,6 +215,26 @@ describe("verifyHotJson against SYNTHETIC tree", () => {
       rmSync(dir, { recursive: true, force: true });
     }
   });
+
+  it("skips hot.json rows whose event tree is missing listed participant timestamps", () => {
+    const dir = mkdtempSync(join(tmpdir(), "b2-heat-incomplete-"));
+    try {
+      const one = CASES.events.find((e) => e.publicId.endsWith("heat-fresh"));
+      eventTree(dir, [one]);
+      const eventPath = join(dir, "events", `${one.publicId}.json`);
+      const event = JSON.parse(readFileSync(eventPath, "utf8"));
+      event.timeline = event.timeline.slice(0, 1);
+      event.developments = [];
+      event.officialReports = [];
+      writeFileSync(eventPath, `${JSON.stringify(event, null, 2)}\n`);
+      const result = verifyEngineHeat(dir);
+      assert.equal(result.ok, true, result.issues.join("\n"));
+      assert.equal(result.recomputed.length, 0);
+      assert.match(result.skipped.join("\n"), /skip \(engine tree has 1 timestamp/);
+    } finally {
+      rmSync(dir, { recursive: true, force: true });
+    }
+  });
 });
 
 describe("real out-1700 snapshot (not SYNTHETIC)", () => {
