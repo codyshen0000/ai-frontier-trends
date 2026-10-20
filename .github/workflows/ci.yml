@@ -5,12 +5,32 @@ on:
   push:
     branches: [main]
 
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Checkout engine-data snapshot
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository }}
+          ref: engine-data
+          path: .engine-data
+          persist-credentials: false
+          sparse-checkout: data/engine/v1
+
+      - name: Place engine snapshot
+        run: |
+          mkdir -p data/engine
+          rm -rf data/engine/v1
+          cp -a .engine-data/data/engine/v1 data/engine/v1
+          rm -rf .engine-data
+          test -f data/engine/v1/meta.json
 
       - name: Setup Node
         uses: actions/setup-node@v4

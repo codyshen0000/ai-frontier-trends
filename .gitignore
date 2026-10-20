@@ -6,3 +6,4 @@ __pycache__/
 content/l2-covers/fetch-cache/
 cache/engine-last-good/
 scripts/mit-static/.engine-site.json
+.engine-data/

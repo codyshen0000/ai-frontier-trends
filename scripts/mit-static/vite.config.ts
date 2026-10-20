@@ -1,10 +1,14 @@
 import { defineConfig } from "vite";
 import tailwindcss from "@tailwindcss/vite";
 import { existsSync, readFileSync } from "node:fs";
+import { createRequire } from "node:module";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
+const require = createRequire(import.meta.url);
+const reactDir = path.dirname(require.resolve("react/package.json"));
+const reactDomDir = path.dirname(require.resolve("react-dom/package.json"));
 const mit = path.resolve(here, "../../vendor/mit");
 const engineFile = path.join(here, ".engine-site.json");
 const emptySite = JSON.parse(readFileSync(path.resolve(here, "../engine/empty-site.json"), "utf8"));
@@ -28,11 +32,11 @@ export default defineConfig({
   resolve: {
     dedupe: ["react", "react-dom"],
     alias: {
-      "react/jsx-runtime": path.resolve(here, "node_modules/react/jsx-runtime.js"),
-      "react/jsx-dev-runtime": path.resolve(here, "node_modules/react/jsx-dev-runtime.js"),
-      "react-dom/server": path.resolve(here, "node_modules/react-dom/server.node.js"),
-      "react-dom": path.resolve(here, "node_modules/react-dom"),
-      react: path.resolve(here, "node_modules/react"),
+      "react/jsx-runtime": path.join(reactDir, "jsx-runtime.js"),
+      "react/jsx-dev-runtime": path.join(reactDir, "jsx-dev-runtime.js"),
+      "react-dom/server": path.join(reactDomDir, "server.node.js"),
+      "react-dom": reactDomDir,
+      react: reactDir,
       "react-router": path.resolve(here, "src/react-router.tsx"),
       "@aihot/site/brand/Logo.tsx": path.resolve(mit, "site/brand/Logo.tsx"),
       "@aihot/site/brand/nameplates": path.resolve(mit, "site/brand/nameplates"),
