@@ -286,7 +286,7 @@
  },
  "hotStrip": [],
  "hot": {
-  "computedAt": "2026-10-20T05:20:21.000Z",
+  "computedAt": "2026-10-20T07:30:42.000Z",
   "windowHours": 48,
   "entries": []
  },
@@ -294,8 +294,8 @@
   {
    "key": "2026-10-20",
    "issueNumber": 2,
-   "title": null,
-   "count": 0
+   "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
+   "count": 4
   },
   {
    "key": "2026-10-19",
@@ -310,18 +310,131 @@
   "issueNumber": 2,
   "title": "AI日报 · 2026-10-20",
   "generatedAt": "2026-10-20T00:43:38.000Z",
-  "lead": null,
-  "leadItemId": null,
-  "overview": "无固定漂移样本包，本日不含 samples。",
-  "highlights": [],
-  "sections": [],
+  "lead": {
+   "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
+   "leadParagraph": "可灵 4.0 加长视频与口型同步"
+  },
+  "leadItemId": "sha256:10f7f763ebef7da0",
+  "overview": "今日重点四条：可灵 AI 4.0（更长视频、立体声与多语口型同步）。英伟达开源面向企业与 PC 的智能体模型。MiniMax M3.1 Flash（称提速约 3 倍、成本约降 70%，AA 指数到 42）。Hugging Face TorchNeuron，让 HF 模型更易跑在 AWS Trainium。",
+  "highlights": [
+   {
+    "itemId": "sha256:10f7f763ebef7da0",
+    "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
+    "summary": "可灵 4.0 加长视频与口型同步",
+    "sourceName": "The Decoder",
+    "sourceUrl": "https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/",
+    "sourceIconUrl": null,
+    "firstParty": false,
+    "publishedAt": "2026-10-19T17:36:26.000Z",
+    "available": true,
+    "otherSources": 0
+   },
+   {
+    "itemId": "sha256:bfa70917f3b198d1",
+    "title": "英伟达发布面向企业与 PC 的开源智能体模型",
+    "summary": "英伟达开源企业与 PC 端智能体模型",
+    "sourceName": "TechCrunch · AI",
+    "sourceUrl": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
+    "sourceIconUrl": null,
+    "firstParty": false,
+    "publishedAt": "2026-10-19T15:37:09.000Z",
+    "available": true,
+    "otherSources": 0
+   },
+   {
+    "itemId": null,
+    "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
+    "summary": "M3.1 Flash 提速降本，AA 指数到 42",
+    "sourceName": "",
+    "sourceUrl": "https://the-decoder.com/minimax-m3-1-flash-shows-chinas-ai-price-race-has-no-floor-in-sight/",
+    "sourceIconUrl": null,
+    "firstParty": false,
+    "publishedAt": "2026-10-19T18:22:30.000Z",
+    "available": true,
+    "otherSources": 0
+   },
+   {
+    "itemId": null,
+    "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
+    "summary": "Trainium 上跑 HF 模型更省事",
+    "sourceName": "",
+    "sourceUrl": "https://huggingface.co/blog/hf-torchneuron",
+    "sourceIconUrl": null,
+    "firstParty": true,
+    "publishedAt": "2026-10-19T00:00:00.000Z",
+    "available": true,
+    "otherSources": 0
+   }
+  ],
+  "sections": [
+   {
+    "label": "模型",
+    "summary": null,
+    "items": [
+     {
+      "itemId": "sha256:10f7f763ebef7da0",
+      "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
+      "summary": "可灵 4.0 加长视频与口型同步",
+      "sourceName": "The Decoder",
+      "sourceUrl": "https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/",
+      "sourceIconUrl": null,
+      "firstParty": false,
+      "publishedAt": "2026-10-19T17:36:26.000Z",
+      "available": true,
+      "otherSources": 0
+     },
+     {
+      "itemId": "sha256:bfa70917f3b198d1",
+      "title": "英伟达发布面向企业与 PC 的开源智能体模型",
+      "summary": "英伟达开源企业与 PC 端智能体模型",
+      "sourceName": "TechCrunch · AI",
+      "sourceUrl": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
+      "sourceIconUrl": null,
+      "firstParty": false,
+      "publishedAt": "2026-10-19T15:37:09.000Z",
+      "available": true,
+      "otherSources": 0
+     }
+    ]
+   },
+   {
+    "label": "其他",
+    "summary": null,
+    "items": [
+     {
+      "itemId": null,
+      "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
+      "summary": "M3.1 Flash 提速降本，AA 指数到 42",
+      "sourceName": "",
+      "sourceUrl": "https://the-decoder.com/minimax-m3-1-flash-shows-chinas-ai-price-race-has-no-floor-in-sight/",
+      "sourceIconUrl": null,
+      "firstParty": false,
+      "publishedAt": "2026-10-19T18:22:30.000Z",
+      "available": true,
+      "otherSources": 0
+     },
+     {
+      "itemId": null,
+      "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
+      "summary": "Trainium 上跑 HF 模型更省事",
+      "sourceName": "",
+      "sourceUrl": "https://huggingface.co/blog/hf-torchneuron",
+      "sourceIconUrl": null,
+      "firstParty": true,
+      "publishedAt": "2026-10-19T00:00:00.000Z",
+      "available": true,
+      "otherSources": 0
+     }
+    ]
+   }
+  ],
   "flashes": [],
   "cover": null,
   "metrics": {
-   "totalEvents": 0,
-   "sourcesCount": 0,
-   "firstPartyEvents": 0,
-   "modelsReleased": 0
+   "totalEvents": 4,
+   "sourcesCount": 2,
+   "firstPartyEvents": 1,
+   "modelsReleased": 2
   },
   "readingMinutes": 1,
   "prev": "2026-10-19",
