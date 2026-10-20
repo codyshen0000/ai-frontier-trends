@@ -46,8 +46,10 @@ B2 需要的「另 N 家」展示走数据字段（`sourceCount` / `sourceNames`
    - `"test:b1"` / `"test:b2"`：glob `scripts/b1` / `scripts/b2` 下 `*.test.mjs`；零文件 exit 0
    - `"build:ci": "test:engine && test:b1 && test:b2 && build:public && verify:ia"`
 
-## 4. 留给 B1 的冲突点
+## 4. B1 接线状态
 
-- `pages.tsx` 仍 `import { daily, dailyIndex, hot, timeline, today } from "./fixture"`。B1 换成 loader，并 `groupByEvent(timeline.cards)`。
-- `static_export.mjs` 仍从 content/weekly 生成 feed/api；B1 改读 engine bundle。`writeRedirects` 不必再调一次（build.mjs 已调）。
-- `loadEngineForBuild()` 缺数据时目前 **不 fail 公开构建**。B1 在生产路径去掉 fixture 后，应把「无上一份合格导出」升级为失败。
+- `pages.tsx` / prerender 读 `virtual:ft-engine`（B0 loader + publicize），渲染前 `groupByEvent(cards)`。
+- `static_export.mjs` 从 engine 写 `feed.xml` / `/api/v1/hot.json` / timeline；**不再**调用 `writeRedirects`（`build.mjs` 已调一次）。
+- `PUBLIC_DEPLOY=1` 且无合格 engine、无 last-good → 构建失败，禁止回退 fixture。
+- `scripts/verify/b1-*.mjs` 由 B0 glob 注册。
+- `scripts/engine/heat-copy.mjs` 导出 `HEAT_METHOD_COPY`（B2 应再导出，不要另写一句）。热度/涨跌/spark 按 `hot.json` 原值展示，不 `Math.round`。

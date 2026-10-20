@@ -5,13 +5,25 @@ import { areaPath, curvePath, observedRuns, type Pt } from "./curve";
 // baseline, ending in a dot for now. Hours without a comparable snapshot break the curve rather than
 // being drawn as zero; with fewer than three observed hours nothing is drawn. The curve fills whatever
 // box the class gives it: strokes and the dot keep their size however the box stretches.
-export function Sparkline({ values, className = "h-6 w-[88px]" }: { values: Array<number | null>; className?: string }) {
+export function Sparkline({
+  values,
+  className = "h-6 w-[88px]",
+  storyPublicId,
+}: {
+  values: Array<number | null>;
+  className?: string;
+  storyPublicId?: string;
+}) {
   // A plain id for url(#…); React’s generated ids carry punctuation.
   const id = `spark${useId().replace(/[^\w-]/g, "")}`;
   const W = 100;
   const H = 100;
   const seen = values.filter((v): v is number => v !== null);
-  if (seen.length < 3) return <span className={`block ${className}`} aria-hidden="true" />;
+  const attrs = {
+    ...(storyPublicId ? { "data-ft-story": storyPublicId } : {}),
+    "data-ft-spark": JSON.stringify(values),
+  };
+  if (seen.length < 2) return <span {...attrs} className={`block ${className}`} aria-hidden="true" />;
   // Scaled from zero, so a small wobble on a steady story stays a small wobble.
   const max = Math.max(...seen) || 1;
   const x = (i: number) => (i / Math.max(1, values.length - 1)) * W;
@@ -21,7 +33,7 @@ export function Sparkline({ values, className = "h-6 w-[88px]" }: { values: Arra
   const dot = `M${end[0]} ${end[1]}h0`;
   const gaps = seen.length < values.length;
   return (
-    <svg viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="none" className={`overflow-visible text-accent ${className}`} role="img" aria-label={`近 24 小时热度走势${gaps ? "，部分时段缺少可比数据" : ""}`}>
+    <svg {...attrs} viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="none" className={`overflow-visible text-accent ${className}`} role="img" aria-label={`近 24 小时热度走势${gaps ? "，部分时段缺少可比数据" : ""}`}>
       <defs>
         <linearGradient id={id} x1="0" x2="0" y1="0" y2="1">
           <stop offset="0" stopColor="currentColor" stopOpacity="0.2" />

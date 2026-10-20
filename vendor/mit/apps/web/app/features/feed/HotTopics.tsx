@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import type { HotStripEntry } from "@aihot/contracts/site";
+import { formatHeat } from "@ft/heat-copy";
 import { IconArrowRight, IconMinus, IconTrendDown, IconTrendUp } from "../../components/icons";
 import { Faces } from "../hot/Faces";
 
@@ -57,9 +58,20 @@ export function HotTopics({ entries }: { entries: HotStripEntry[] }) {
                 <Faces participants={e.participants} total={e.participantCount} size={20} interactive={false} />
               </span>
               <span className="flex items-center justify-end gap-2.5 sm:contents">
-                <span className="whitespace-nowrap text-right text-[12.5px] text-ink-4" title="热度指数">
-                  <span className="num text-[13.5px] font-semibold text-ink-2">{Math.round(e.heat)}</span> 热度
-                </span>
+                {Number.isFinite(e.heat) ? (
+                  <span className="whitespace-nowrap text-right text-[12.5px] text-ink-4" title="热度指数">
+                    <span
+                      data-ft-story={e.storyPublicId || e.itemId || undefined}
+                      data-ft-heat={String(e.heat)}
+                      className="num text-[13.5px] font-semibold text-ink-2"
+                    >
+                      {formatHeat(e.heat)}
+                    </span>{" "}
+                    热度
+                  </span>
+                ) : (
+                  <span />
+                )}
                 <span className="flex w-5 justify-center">
                   <TrendMark trend={e.trend} />
                 </span>

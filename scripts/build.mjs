@@ -1,3 +1,4 @@
+import { spawnSync } from "node:child_process";
 import { cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
@@ -23,7 +24,8 @@ import {
 import { convertWeeklyCharts, embedWeeklyChartsAsDataUri, rewriteWeeklyChartEmbeds } from "./weekly_charts.mjs";
 import { ensureReportImageFlex, replaceMermaidWithSvg } from "./mermaid_inline.mjs";
 import { assertCoverRecords, assertDistPublicCopy, assertWeeklyMetaSources, assertWeeklyReports } from "./story_digest.mjs";
-import { loadEngineForBuild } from "./engine/loader.mjs";
+import { EngineDataError, resolveEngineBundle } from "./engine/resolve.mjs";
+import { publicizeBundle } from "./engine/publicize.mjs";
 import { writeRedirects } from "./redirects.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -847,23 +849,43 @@ export async function buildSite() {
   cpSync(join(srcDir, "favicon.ico"), join(distDir, "favicon.ico"));
   const copiedImages = copyCaseAssets(root, distDir);
   writeFileSync(join(distDir, ".nojekyll"), "");
+  if (process.env.FT_SKIP_MIT_PRERENDER !== "1") {
+    const prerender = spawnSync(process.execPath, [join(root, "scripts", "mit-static", "prerender.mjs")], {
+      cwd: root,
+      stdio: "inherit",
+      env: process.env,
+    });
+    if (prerender.status !== 0) {
+      throw new Error(`mit-static prerender failed (${prerender.status ?? "spawn"})`);
+    }
+  }
   publishMitStatic();
+  let engine = null;
+  let engineSite = null;
+  try {
+    const resolved = resolveEngineBundle();
+    engine = resolved.bundle;
+    engineSite = publicizeBundle(engine, { source: resolved.source, warning: resolved.warning });
+    if (resolved.warning) console.warn("[engine]", resolved.warning);
+  } catch (err) {
+    if (err?.name === "EngineDataError" || err instanceof EngineDataError) {
+      if (publicDeploy) throw err;
+      console.warn(`[engine] ${err.message}; continuing with empty engine (not fixture)`);
+    } else {
+      throw err;
+    }
+  }
   const { exportStatic } = await import("./static_export.mjs");
   await exportStatic({
     distDir,
     contentDir,
     dataset,
-    dataAsOf: undefined,
-    builtAt: new Date().toISOString(),
+    dataAsOf: engineSite?.data_as_of,
+    builtAt: engineSite?.built_at || new Date().toISOString(),
+    engine,
+    site: engineSite,
   });
-  const engineLoad = loadEngineForBuild();
-  if (!engineLoad.ok) {
-    const err = engineLoad.error;
-    console.warn(
-      `engine: ${err.code || err.name} ${err.message} (fallback hook; fixture path unchanged until B1)`,
-    );
-  }
-  writeRedirects(distDir, engineLoad.engine);
+  writeRedirects(distDir, engine);
   assertDistPublicCopy(distDir);
   snapshotRemainingA();
 

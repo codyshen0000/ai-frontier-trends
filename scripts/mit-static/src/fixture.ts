@@ -1,3 +1,7 @@
+if (typeof process !== "undefined" && process.env.PUBLIC_DEPLOY === "1") {
+  throw new Error("PUBLIC_DEPLOY=1 must not import fixture.ts");
+}
+
 import type {
   FeedItemSummary,
   HotEntryView,

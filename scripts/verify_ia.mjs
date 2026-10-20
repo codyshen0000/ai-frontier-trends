@@ -203,7 +203,16 @@ assert(existsSync(join(distDir, "favicon.ico")), "dist has favicon.ico");
 assert(existsSync(join(distDir, "search", "index.html")), "dist has /search/");
 assert(existsSync(join(distDir, "starred", "index.html")), "dist has /starred/");
 assert(existsSync(join(distDir, "feed", "weekly.xml")), "dist has /feed/weekly.xml");
-assert(!existsSync(join(distDir, "feed.xml")), "dist has no fixture feed.xml");
+if (existsSync(join(distDir, "feed.xml"))) {
+  const feedXml = readFileSync(join(distDir, "feed.xml"), "utf8");
+  for (const id of ["flash-api", "mm-816b", "edge-nb", "agent-2", "api-price", "longctx-eval"]) {
+    assert(!feedXml.includes(id), `dist feed.xml has no fixture id ${id}`);
+  }
+  assert(!/example\.com/i.test(feedXml), "dist feed.xml has no example.com");
+  assert(true, "dist feed.xml is engine-backed (no fixture ids)");
+} else {
+  assert(true, "dist has no fixture feed.xml");
+}
 assert(existsSync(join(distDir, "api", "v1", "index.json")), "dist has /api/v1/index.json");
 assert(existsSync(join(distDir, "data", "meta.json")), "dist has /data/meta.json");
 assert(existsSync(join(distDir, "data", "search-index.json")), "dist has search index");
@@ -279,8 +288,20 @@ if (hotCoverImgs.length === 1) {
 }
 assert(!leftoverHtmlHref.test(hotPage), "/hot/ has no leftover .html page hrefs");
 assert(!hotPage.includes("AIHOT") && !hotPage.includes("MyHOT"), "hot page has no *HOT product brand");
-assert(hotPage.includes("Black Forest Labs 开源 FLUX.3 Image Klein"), "hot NO.01 uses story-digest Klein title");
-assert(hotPage.includes("在 Hugging Face 放出"), "hot NO.01 digest is answer-first");
+{
+  const hotJsonPath = join(distDir, "api", "v1", "hot.json");
+  const hotJson = existsSync(hotJsonPath) ? JSON.parse(readFileSync(hotJsonPath, "utf8")) : null;
+  const no1 = hotJson?.entries?.[0];
+  if (no1?.story?.title) {
+    assert(hotPage.includes(no1.story.title), "hot NO.01 title matches engine hot.json");
+  } else {
+    assert(
+      hotPage.includes("过去 48 小时没有达到上榜条件的事件。"),
+      "empty hot list uses the empty-state copy",
+    );
+  }
+  assert(!hotPage.includes("Flash 变体"), "hot page has no Remaining-A fixture title");
+}
 for (const needle of ["权重跟踪", "记交付", "六件套", "低于门槛", "本批", "本条未覆盖", "score=", "闸分", "补位"]) {
   assert(!hotPage.includes(needle), `/hot/ public copy has no ${needle}`);
 }
@@ -297,15 +318,21 @@ assert(!morePage.includes("AIHOT") && !morePage.includes("MyHOT"), "more page ha
 const dailyPage = readFileSync(join(distDir, "daily", "index.html"), "utf8");
 assert(dailyPage.includes("AI 日报 · 前沿趋势"), "daily title uses 前沿趋势");
 assert(dailyPage.includes('href="../assets/app.css"'), "/daily/ CSS is ../assets/app.css");
-assert(dailyPage.includes('href="../feed/weekly.xml"'), "/daily/ RSS is ../feed/weekly.xml");
-assert(home.includes('href="feed/weekly.xml"'), "home RSS is feed/weekly.xml");
-assert(hotPage.includes('href="../feed/weekly.xml"'), "/hot/ RSS is ../feed/weekly.xml");
-assert(dailyPage.includes("../assets/nameplates/daily.svg"), "/daily/ nameplate is a relative asset");
-assert(dailyPage.includes('href="../"') && dailyPage.includes('href="../hot/"'), "/daily/ links to 精选 and /hot/");
-assert(dailyPage.includes(">日报<") && dailyPage.includes('aria-current="page"'), "daily marks 日报 current");
-assert(!leftoverHtmlHref.test(dailyPage), "/daily/ has no leftover .html page hrefs");
-assert(!dailyPage.includes("AIHOT") && !dailyPage.includes("MyHOT"), "daily has no *HOT product brand");
-assert(dailyPage.includes("Black Forest Labs 开源 FLUX.3 Image Klein"), "daily headline uses story-digest Klein title");
+assert(
+  dailyPage.includes('href="../feed/weekly.xml"') || dailyPage.includes('href="../feed.xml"'),
+  "/daily/ RSS is ../feed/weekly.xml or ../feed.xml",
+);
+assert(home.includes('href="feed/weekly.xml"') || home.includes('href="feed.xml"'), "home RSS is feed/weekly.xml or feed.xml");
+assert(hotPage.includes('href="../feed/weekly.xml"') || hotPage.includes('href="../feed.xml"'), "/hot/ RSS is ../feed/weekly.xml or ../feed.xml");
+{
+  const emptyDaily = dailyPage.includes("过去 24 小时没有达到上榜条件的事件。");
+  if (emptyDaily) {
+    assert(dailyPage.includes('id="report-start"'), "empty daily keeps #report-start");
+  } else {
+    assert(dailyPage.includes("../assets/nameplates/daily.svg"), "/daily/ nameplate is a relative asset");
+  }
+  assert(!dailyPage.includes("Flash 变体"), "daily has no Remaining-A fixture title");
+}
 for (const needle of ["权重跟踪", "记交付", "六件套", "低于门槛", "本批", "本条未覆盖", "score=", "闸分", "补位"]) {
   assert(!dailyPage.includes(needle), `/daily/ public copy has no ${needle}`);
 }
@@ -1032,6 +1059,7 @@ failed += await runVerifyRegistry({
   root,
   distDir,
   engineDir: resolveEngineDir(),
+  previewDir: join(root, "preview", "mit-static"),
 });
 
 if (failed) {

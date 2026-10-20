@@ -1,7 +1,7 @@
 import { renderToString } from "react-dom/server";
 import { DailyScreen, HomeScreen, HotScreen, MoreScreen, SearchScreen, StarredScreen } from "./pages";
 import { SITE } from "@aihot/site";
-import generated from "./covers.generated.json";
+import { builtAt, dataAsOf, hasSelectedFeed } from "./site";
 
 export const pages = [
   { file: "index.html", title: "精选", pathname: "/", page: "home", node: <HomeScreen /> },
@@ -25,20 +25,23 @@ export function renderPage(node: JSX.Element, title: string, cssHref: string, ex
   hasTimeline?: boolean;
   hydrateHref?: string;
   rssHref?: string;
+  weeklyRss?: string;
+  selectedRss?: string;
   dataAsOf?: string;
   builtAt?: string;
   base?: string;
 } = { page: "home" }) {
   const markup = renderToString(node);
-  const dataAsOf = extra.dataAsOf || generated.asOf || "";
-  const builtAt = extra.builtAt || new Date().toISOString();
-  const rss = extra.rssHref || "feed/weekly.xml";
+  const asOf = extra.dataAsOf || dataAsOf || "";
+  const built = extra.builtAt || builtAt || new Date().toISOString();
+  const weeklyRss = extra.weeklyRss || extra.rssHref || "feed/weekly.xml";
+  const selectedRss = extra.selectedRss ?? (hasSelectedFeed ? "feed.xml" : "");
   const hydrate = extra.hydrateHref || "assets/hydrate.js";
   const config = {
     base: extra.base || "./",
     page: extra.page,
-    dataAsOf,
-    builtAt,
+    dataAsOf: asOf,
+    builtAt: built,
     hasTimeline: !!extra.hasTimeline,
     filter: "all",
   };
@@ -50,7 +53,8 @@ export function renderPage(node: JSX.Element, title: string, cssHref: string, ex
 <meta name="color-scheme" content="light dark"/>
 <title>${title} · ${SITE.name}</title>
 <link rel="stylesheet" href="${cssHref}"/>
-<link rel="alternate" type="application/rss+xml" title="前沿趋势 周报" href="${rss}"/>
+<link rel="alternate" type="application/rss+xml" title="前沿趋势 周报" href="${weeklyRss}"/>
+${selectedRss ? `<link rel="alternate" type="application/rss+xml" title="前沿趋势" href="${selectedRss}"/>` : ""}
 <script>${BOOT}</script>
 </head>
 <body class="bg-bg text-ink antialiased">

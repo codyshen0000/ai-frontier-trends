@@ -9,6 +9,7 @@ import { listWeeklyIssues } from "./weekly.mjs";
 import { extractLiveCards } from "./live_cards.mjs";
 import { extractTimelineLede } from "./extract.mjs";
 import { isValuableCoverClass } from "./cover_rules.mjs";
+import { publicizeBundle, isPublicHttpUrl, stripScore as stripScoreDeep } from "./engine/publicize.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const SITE = "前沿趋势";
@@ -43,14 +44,7 @@ export function rfc822(isoOrDate) {
 }
 
 export function stripScore(value) {
-  if (Array.isArray(value)) return value.map(stripScore);
-  if (!value || typeof value !== "object") return value;
-  const out = {};
-  for (const [k, v] of Object.entries(value)) {
-    if (k === "score") continue;
-    out[k] = stripScore(v);
-  }
-  return out;
+  return stripScoreDeep(value);
 }
 
 function assertPublicText(text, label) {
@@ -340,7 +334,195 @@ export function writeTimelinePages(outDir, cards, { builtAt, dataAsOf }) {
   }
 }
 
-export async function exportStatic({ distDir, contentDir, dataset = "", dataAsOf, builtAt }) {
+const CATEGORY_LABELS = {
+  model: "模型",
+  product: "产品",
+  industry: "产业",
+  paper: "论文",
+  tutorial: "教程",
+  opinion: "观点",
+};
+
+function selectedRss(items) {
+  const rows = items.slice(0, 50).map((item) => {
+    const link = isPublicHttpUrl(item.originalUrl) ? item.originalUrl : `${SITE_URL}/`;
+    return `    <item>
+      <title>${xml(item.title)}</title>
+      <link>${xml(link)}</link>
+      <guid isPermaLink="false">${xml(item.guid)}</guid>
+      <pubDate>${rfc822(item.pubDate)}</pubDate>
+      <description>${xml(publicSummary(item.summary, item.title))}</description>
+      ${item.category ? `<category>${xml(item.categoryLabel || CATEGORY_LABELS[item.category] || item.category)}</category>` : ""}
+    </item>`;
+  }).join("\n");
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>前沿趋势</title>
+    <link>${SITE_URL}/</link>
+    <description>前沿趋势精选</description>
+    <language>zh-cn</language>
+${rows}
+  </channel>
+</rss>
+`;
+}
+
+function dailyRss(dailies) {
+  const rows = dailies.slice(0, 30).map((issue) => `    <item>
+      <title>${xml(issue.title)}</title>
+      <link>${SITE_URL}/daily/#d-${xml(issue.key)}</link>
+      <guid isPermaLink="false">daily-${xml(issue.key)}</guid>
+      <pubDate>${rfc822(issue.generatedAt || `${issue.key}T00:00:00+08:00`)}</pubDate>
+      <description>${xml(publicSummary(issue.overview || issue.lead?.leadParagraph, issue.title))}</description>
+      <category>日报</category>
+    </item>`).join("\n");
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>前沿趋势</title>
+    <link>${SITE_URL}/daily/</link>
+    <description>前沿趋势日报</description>
+    <language>zh-cn</language>
+${rows}
+  </channel>
+</rss>
+`;
+}
+
+function categoryRss(key, items) {
+  const rows = items.slice(0, 50).map((item) => {
+    const link = isPublicHttpUrl(item.originalUrl) ? item.originalUrl : `${SITE_URL}/`;
+    return `    <item>
+      <title>${xml(item.title)}</title>
+      <link>${xml(link)}</link>
+      <guid isPermaLink="false">${xml(item.guid || item.id)}</guid>
+      <pubDate>${rfc822(item.pubDate || item.publishedAt)}</pubDate>
+      <description>${xml(publicSummary(item.summary, item.title))}</description>
+      <category>${xml(CATEGORY_LABELS[key] || key)}</category>
+    </item>`;
+  }).join("\n");
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>前沿趋势</title>
+    <link>${SITE_URL}/</link>
+    <description>前沿趋势 · ${CATEGORY_LABELS[key] || key}</description>
+    <language>zh-cn</language>
+${rows}
+  </channel>
+</rss>
+`;
+}
+
+function engineSearchDocs(site) {
+  const docs = [];
+  for (const card of site.timeline?.cards || []) {
+    const item = card.item || {};
+    if (!item.id || !item.title) continue;
+    docs.push({
+      id: item.id,
+      t: "card",
+      title: item.title,
+      summary: clip(item.summary, 120),
+      source: item.source?.name || "",
+      category: item.category || null,
+      date: item.publishedAt || "",
+      url: item.originalUrl && isPublicHttpUrl(item.originalUrl)
+        ? item.originalUrl
+        : publicRel(item.storyPublicId ? `hot/#s-${item.storyPublicId}` : "/"),
+    });
+  }
+  for (const entry of site.hot?.entries || []) {
+    const id = entry.story?.publicId;
+    if (!id || docs.some((d) => d.id === id)) continue;
+    docs.push({
+      id,
+      t: "event",
+      title: entry.story.title,
+      summary: clip(entry.summary, 120),
+      source: (entry.sourceNames || []).join("、"),
+      category: null,
+      date: "",
+      url: publicRel(`hot/#s-${id}`),
+    });
+  }
+  if (site.daily?.key) {
+    docs.push({
+      id: `daily-${site.daily.key}`,
+      t: "daily",
+      title: site.daily.title,
+      summary: clip(site.daily.overview || site.daily.lead?.leadParagraph, 120),
+      source: SITE,
+      category: null,
+      date: `${site.daily.key}T00:00:00+08:00`,
+      url: publicRel("daily/"),
+    });
+  }
+  return docs.filter((doc) => !FIXTURE_IDS.some((id) => doc.id.includes(id)));
+}
+
+function writeEngineOutputs(distDir, engine, site, { asOf, built }) {
+  const feedItems = site.feedItems || [];
+  if (feedItems.length) {
+    writeFileSync(join(distDir, "feed.xml"), selectedRss(feedItems));
+  }
+  if ((site.dailies || []).length) {
+    mkdirSync(join(distDir, "feed"), { recursive: true });
+    writeFileSync(join(distDir, "feed", "daily.xml"), dailyRss(site.dailies));
+  }
+  const byCat = {};
+  for (const card of site.timeline?.cards || []) {
+    const key = card.item?.category;
+    if (!key || !FILTERS.includes(key)) continue;
+    byCat[key] ||= [];
+    byCat[key].push({
+      guid: card.item.id,
+      title: card.item.title,
+      summary: card.item.summary,
+      originalUrl: card.item.originalUrl,
+      pubDate: card.item.publishedAt,
+      category: key,
+    });
+  }
+  for (const [key, items] of Object.entries(byCat)) {
+    if (!items.length) continue;
+    mkdirSync(join(distDir, "feed", "category"), { recursive: true });
+    writeFileSync(join(distDir, "feed", "category", `${key}.xml`), categoryRss(key, items));
+  }
+
+  writeJson(join(distDir, "api", "v1", "hot.json"), stripScore({
+    v: 1,
+    schema_version: "1.1.0",
+    data_as_of: asOf,
+    ...site.hot,
+  }));
+  if (site.timeline?.cards?.length) {
+    writeJson(join(distDir, "api", "v1", "timeline", "latest.json"), stripScore({
+      v: 1,
+      schema_version: "1.1.0",
+      data_as_of: asOf,
+      ...site.timeline,
+      page: 1,
+    }));
+  }
+  if (site.daily) {
+    writeJson(join(distDir, "api", "v1", "daily", "latest.json"), stripScore({
+      v: 1,
+      schema_version: "1.1.0",
+      data_as_of: asOf,
+      ...site.daily,
+    }));
+    writeJson(join(distDir, "api", "v1", "daily", `${site.daily.key}.json`), stripScore({
+      v: 1,
+      schema_version: "1.1.0",
+      data_as_of: asOf,
+      ...site.daily,
+    }));
+  }
+}
+
+export async function exportStatic({ distDir, contentDir, dataset = "", dataAsOf, builtAt, engine = null, site = null }) {
   mkdirSync(distDir, { recursive: true });
   const leakNote = join(distDir, "data", "fixture-note.json");
   if (existsSync(leakNote)) rmSync(leakNote);
@@ -358,6 +540,12 @@ export async function exportStatic({ distDir, contentDir, dataset = "", dataAsOf
   const built = builtAt || new Date().toISOString();
 
   const index = buildSearchIndex({ contentDir, builtAt: built, dataAsOf: asOf });
+  const publicSite = site || (engine ? publicizeBundle(engine) : null);
+  if (publicSite) {
+    for (const doc of engineSearchDocs(publicSite)) {
+      if (!index.docs.some((row) => row.id === doc.id)) index.docs.push(doc);
+    }
+  }
   writeJson(join(distDir, "data", "search-index.json"), index);
   if (gzipSync(Buffer.from(JSON.stringify(index))).length > 200 * 1024) {
     throw new Error("search-index.json gzip exceeds 200KB");
@@ -408,6 +596,18 @@ export async function exportStatic({ distDir, contentDir, dataset = "", dataAsOf
     rules_version: "remaining-a-v1",
     schema_version: "1.0.0",
   });
+  if (publicSite) {
+    if (publicSite.hot?.entries?.length) {
+      listed.push({ path: "api/v1/hot.json", note: "热点榜", schema_version: "1.1.0" });
+    }
+    if (publicSite.timeline?.cards?.length) {
+      listed.push({ path: "api/v1/timeline/latest.json", note: "时间线最新一页", schema_version: "1.1.0" });
+    }
+    if (publicSite.daily) {
+      listed.push({ path: "api/v1/daily/latest.json", note: "最新日报", schema_version: "1.1.0" });
+      listed.push({ path: `api/v1/daily/${publicSite.daily.key}.json`, note: `日报 ${publicSite.daily.key}`, schema_version: "1.1.0" });
+    }
+  }
   writeJson(join(distDir, "api", "v1", "index.json"), {
     schema_version: "1.0.0",
     data_as_of: asOf,
@@ -423,12 +623,24 @@ export async function exportStatic({ distDir, contentDir, dataset = "", dataAsOf
     const cards = buildTestPagingCards();
     if (cards.length < 65) throw new Error("test-paging needs ≥65 items");
     writeTimelinePages(distDir, cards, { builtAt: built, dataAsOf: asOf });
+  } else if (publicSite?.timeline?.cards?.length) {
+    writeTimelinePages(distDir, publicSite.timeline.cards, { builtAt: built, dataAsOf: asOf });
+  }
+
+  if (publicSite && engine) {
+    writeEngineOutputs(distDir, engine, publicSite, { asOf, built });
   }
 
   assertNoFixture(join(distDir, "data"), "/data");
   assertNoFixture(join(distDir, "api"), "/api");
   assertNoFixture(join(distDir, "feed"), "/feed");
   assertNoFixture(join(distDir, "assets", "avatars"), "/assets/avatars");
+  if (existsSync(join(distDir, "feed.xml"))) {
+    const text = readFileSync(join(distDir, "feed.xml"), "utf8");
+    for (const id of FIXTURE_IDS) {
+      if (text.includes(id)) throw new Error(`/feed.xml leaked fixture id ${id}`);
+    }
+  }
   void isValuableCoverClass;
   void BANNED_PUBLIC_COPY;
   void createHash;

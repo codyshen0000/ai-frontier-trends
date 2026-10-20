@@ -1,5 +1,6 @@
 /** Static-site route table. Unknown paths never fall back to home. */
 import generated from "./covers.generated.json";
+import { itemUrls } from "./site";
 
 export const PAGE_FILE = {
   "/": "index.html",
@@ -43,6 +44,7 @@ for (const row of generated.hotEntries ?? []) {
 if (generated.daily) {
   remember(generated.daily.itemId, generated.daily.sourceUrl);
 }
+for (const [id, url] of Object.entries(itemUrls || {})) remember(id, url);
 
 export function isPublicHttpUrlExport(url: string | null | undefined): url is string {
   return isPublicHttpUrl(url);

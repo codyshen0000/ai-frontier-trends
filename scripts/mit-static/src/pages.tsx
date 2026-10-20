@@ -13,13 +13,18 @@ import { StaticLocation } from "./react-router";
 import type { HotResponse, ReportDetail } from "@aihot/contracts/site";
 import { EmptyState } from "../../../vendor/mit/apps/web/app/components/ui/Page";
 import { ThemeSwitch } from "../../../vendor/mit/apps/web/app/components/shell/ThemeSwitch";
-import { daily, dailyIndex, hot, timeline, today } from "./fixture";
+import { groupByEvent } from "../../engine/groupByEvent.mjs";
+import { builtAt, daily, dailyIndex, dataAsOf, hasSelectedFeed, hot, timeline as siteTimeline, today } from "./site";
 import { DataAsOf, RssLink } from "./asof";
-import generated from "./covers.generated.json";
 import { Link } from "./react-router";
+import { HEAT_METHOD_COPY } from "@ft/heat-copy";
 
-const DATA_AS_OF = generated.asOf || "2026-10-18T00:20:00.000Z";
-const BUILT_AT = new Date().toISOString();
+const DATA_AS_OF = dataAsOf;
+const BUILT_AT = builtAt || new Date().toISOString();
+const timeline = {
+  ...siteTimeline,
+  cards: groupByEvent(siteTimeline.cards || []),
+};
 
 function hotWithoutCover(data: HotResponse): HotResponse {
   return {
@@ -52,6 +57,15 @@ function Shell({ pathname, children }: { pathname: string; children: ReactNode }
   );
 }
 
+function AsOfAndRss({ rssHref }: { rssHref: string }) {
+  return (
+    <>
+      <DataAsOf dataAsOf={DATA_AS_OF} builtAt={BUILT_AT} />
+      <RssLink href={rssHref} />
+    </>
+  );
+}
+
 export function HomeScreen() {
   const filters = timeline.filters;
   return (
@@ -66,16 +80,15 @@ export function HomeScreen() {
             <SearchField keep={{ category: filters.category }} />
           </div>
         </div>
-        {timeline.hot && inNav("/hot") && <HotTopics entries={timeline.hot} />}
-        <div data-ft-timeline>
+        {timeline.hot && timeline.hot.length > 0 && inNav("/hot") && <HotTopics entries={timeline.hot} />}
+        <div data-ft-timeline data-ft-filter="all">
           {timeline.cards.length ? (
             <Timeline initial={timeline} filters={filters} />
           ) : (
             <EmptyState title="过去 48 小时没有达到上榜条件的事件。" />
           )}
         </div>
-        <DataAsOf dataAsOf={DATA_AS_OF} builtAt={BUILT_AT} />
-        <RssLink href="feed/weekly.xml" />
+        <AsOfAndRss rssHref={hasSelectedFeed ? "feed.xml" : "feed/weekly.xml"} />
       </div>
     </Shell>
   );
@@ -85,21 +98,29 @@ export function HotScreen({ emptyCover = false }: { emptyCover?: boolean }) {
   return (
     <Shell pathname="/hot">
       <HotPage hot={emptyCover ? hotWithoutCover(hot) : hot} />
-      <DataAsOf dataAsOf={DATA_AS_OF} builtAt={BUILT_AT} />
-      <RssLink href="feed/weekly.xml" />
+      <AsOfAndRss rssHref={hasSelectedFeed ? "../feed.xml" : "../feed/weekly.xml"} />
     </Shell>
   );
 }
 
 export function DailyScreen({ emptyCover = false }: { emptyCover?: boolean }) {
+  if (!daily) {
+    return (
+      <Shell pathname="/daily">
+        <div id="report-start">
+          <EmptyState title="过去 24 小时没有达到上榜条件的事件。" />
+        </div>
+        <AsOfAndRss rssHref={hasSelectedFeed ? "../feed.xml" : "../feed/weekly.xml"} />
+      </Shell>
+    );
+  }
   const report = emptyCover ? dailyWithoutCover(daily) : daily;
   return (
     <Shell pathname="/daily">
       <ReportLayout kind="daily" index={dailyIndex} current={report.key} today={today} outline={reportOutline(report)}>
         <ReportPaper report={report} index={dailyIndex} />
       </ReportLayout>
-      <DataAsOf dataAsOf={DATA_AS_OF} builtAt={BUILT_AT} />
-      <RssLink href="feed/weekly.xml" />
+      <AsOfAndRss rssHref={hasSelectedFeed ? "../feed.xml" : "../feed/weekly.xml"} />
     </Shell>
   );
 }
@@ -148,8 +169,13 @@ export function MoreScreen() {
             </Link>
           </li>
         </ul>
-        <DataAsOf dataAsOf={DATA_AS_OF} builtAt={BUILT_AT} />
-        <RssLink href="feed/weekly.xml" />
+        <aside className="mt-8 text-[12.5px] leading-[1.7] text-ink-4">
+          <p className="font-medium text-ink-3">热度是怎么算的</p>
+          <p className="mt-1.5" data-ft-heat-method>
+            {HEAT_METHOD_COPY}
+          </p>
+        </aside>
+        <AsOfAndRss rssHref={hasSelectedFeed ? "../feed.xml" : "../feed/weekly.xml"} />
       </div>
     </Shell>
   );

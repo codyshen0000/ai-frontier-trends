@@ -1,13 +1,30 @@
 import { defineConfig } from "vite";
 import tailwindcss from "@tailwindcss/vite";
+import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const mit = path.resolve(here, "../../vendor/mit");
+const engineFile = path.join(here, ".engine-site.json");
+const emptySite = JSON.parse(readFileSync(path.resolve(here, "../engine/empty-site.json"), "utf8"));
+
+function engineVirtualPlugin() {
+  return {
+    name: "ft-engine",
+    resolveId(id) {
+      if (id === "virtual:ft-engine") return "\0virtual:ft-engine";
+    },
+    load(id) {
+      if (id !== "\0virtual:ft-engine") return;
+      const data = existsSync(engineFile) ? JSON.parse(readFileSync(engineFile, "utf8")) : emptySite;
+      return `export default ${JSON.stringify(data)};`;
+    },
+  };
+}
 
 export default defineConfig({
-  plugins: [tailwindcss()],
+  plugins: [tailwindcss(), engineVirtualPlugin()],
   resolve: {
     dedupe: ["react", "react-dom"],
     alias: {
@@ -27,6 +44,7 @@ export default defineConfig({
       "@aihot/contracts/site-config": path.resolve(mit, "packages/contracts/src/site-config.ts"),
       "@aihot/industry/taxonomy": path.resolve(here, "src/industry-taxonomy.ts"),
       "@l2/constants": path.resolve(here, "src/constants.ts"),
+      "@ft/heat-copy": path.resolve(here, "../engine/heat-copy.mjs"),
     },
   },
   esbuild: { jsx: "automatic", jsxDev: false },
