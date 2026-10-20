@@ -88,7 +88,7 @@
     "id": "sha256:931ff0f85ef4bf70",
     "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
     "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017：基准更好、完成任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API。The Decoder 与量子位均有报道。",
-    "reason": "开放权重新模型+搜索API，可直接用",
+    "reason": "V4.1-Flash 登顶 Agent Arena 开源榜，总榜第11",
     "source": {
      "name": "The Decoder"
     },
@@ -104,8 +104,8 @@
    },
    "group": {
     "factId": "fact-2026-10-19-deepseek-v41-flash-1017",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
+    "additionalSourceCount": 2,
+    "reportCount": 3,
     "memberIds": [
      "sha256:931ff0f85ef4bf70"
     ]
@@ -117,7 +117,7 @@
   {
    "rank": 1,
    "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
-   "heat": 12.3,
+   "heat": 10.9,
    "trend": "down",
    "storyPublicId": "2026-10-19-minimax-m31-flash",
    "itemId": "sha256:8e4a9464917136de",
@@ -136,7 +136,7 @@
   {
    "rank": 2,
    "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
-   "heat": 10.9,
+   "heat": 9.7,
    "trend": "down",
    "storyPublicId": "2026-10-20-hf-torchneuron-trainium",
    "itemId": "sha256:5c52b7d34becd1cc",

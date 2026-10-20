@@ -1,6 +1,13 @@
 {
  "events": [
   {
+   "publicId": "2026-10-19-deepseek-v41-flash-1017",
+   "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
+   "latestAt": "2026-10-20T07:57:37.000Z",
+   "reportCount": 3,
+   "hotRank": null
+  },
+  {
    "publicId": "2026-10-20-kling-ai-4-0",
    "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
    "latestAt": "2026-10-19T17:36:26.000Z",
@@ -27,13 +34,6 @@
    "latestAt": "2026-10-19T00:00:00.000Z",
    "reportCount": 1,
    "hotRank": 2
-  },
-  {
-   "publicId": "2026-10-19-deepseek-v41-flash-1017",
-   "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
-   "latestAt": "2026-10-17T12:21:09.000Z",
-   "reportCount": 2,
-   "hotRank": null
   }
  ]
 }
