@@ -1,0 +1,31 @@
+{
+ "site": "前沿趋势",
+ "contract_version": "1.1",
+ "mode": "preview",
+ "data_as_of": "2026-10-20T16:29:05+08:00",
+ "data_as_of_label": "数据截至 2026-10-20 16:29（北京时间）",
+ "generated_at": "2026-10-20T16:47:16+08:00",
+ "hot_rule_version": "private-engine staging (hot empty)",
+ "hot_computed_at": null,
+ "window_hours": 48,
+ "spark_points": 25,
+ "page_size": 20,
+ "counts": {
+  "cards": 20,
+  "pages": 1,
+  "events": 20,
+  "hot_entries": 0,
+  "search_docs": 79,
+  "feed_items": 20,
+  "passed_events": 20,
+  "below_threshold_events": 0,
+  "redirects": 0,
+  "hot_snapshots": 0,
+  "covers": 0
+ },
+ "preview": {
+  "export_stamp": "20261020-162905",
+  "pool_items_in_search": 39,
+  "note": "engine-v1 preview, not production"
+ }
+}

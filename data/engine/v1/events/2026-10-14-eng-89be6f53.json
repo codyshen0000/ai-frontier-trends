@@ -1,0 +1,58 @@
+{
+ "publicId": "2026-10-14-eng-89be6f53",
+ "title": "AINews：Gemini 4 Argon 正式开放，Vals AI 谈基准方法",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-14T05:40:28.000Z",
+ "latestAt": "2026-10-14T05:40:28.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Gemini 4 Argon 今日正式开放，覆盖 Gemini API、Gemini 应用、Search 的 AI Mode 与 Antigravity，介绍期 API 价格为每百万输入/输出 token 2/10 美元，缓存输入折扣 95%，Artificial Analysis 称 11 月 30 日后价格翻倍至 4/20 美元。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 0,
+  "observationComplete": false,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-14-eng-89be6f53",
+   "title": "AINews：Gemini 4 Argon 正式开放，Vals AI 谈基准方法",
+   "firstReportAt": "2026-10-14T05:40:28.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "u47h32202u2x7gro09va3ruz1",
+    "title": "AINews：Gemini 4 Argon 正式开放，Vals AI 谈基准方法",
+    "summary": "Gemini 4 Argon 今日正式开放，覆盖 Gemini API、Gemini 应用、Search 的 AI Mode 与 Antigravity，介绍期 API 价格为每百万输入/输出 token 2/10 美元，缓存输入折扣 95%，Artificial Analysis 称 11 月 30 日后价格翻倍至 4/20 美元。",
+    "publishedAt": "2026-10-14T05:40:28.000Z",
+    "selected": true,
+    "source": {
+     "name": "Latent Space",
+     "firstParty": false
+    },
+    "originalUrl": "https://www.latent.space/p/ainews-ai-engineer-nyc-gemini-4-argon"
+   }
+  }
+ ],
+ "officialReports": [],
+ "timeline": [
+  {
+   "id": "u47h32202u2x7gro09va3ruz1",
+   "title": "AINews：Gemini 4 Argon 正式开放，Vals AI 谈基准方法",
+   "summary": "Gemini 4 Argon 今日正式开放，覆盖 Gemini API、Gemini 应用、Search 的 AI Mode 与 Antigravity，介绍期 API 价格为每百万输入/输出 token 2/10 美元，缓存输入折扣 95%，Artificial Analysis 称 11 月 30 日后价格翻倍至 4/20 美元。",
+   "publishedAt": "2026-10-14T05:40:28.000Z",
+   "selected": true,
+   "source": {
+    "name": "Latent Space",
+    "firstParty": false
+   },
+   "originalUrl": "https://www.latent.space/p/ainews-ai-engineer-nyc-gemini-4-argon"
+  }
+ ],
+ "heat": []
+}

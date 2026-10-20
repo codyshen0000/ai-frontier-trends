@@ -1,0 +1,58 @@
+{
+ "publicId": "2026-10-13-eng-b2980e6e",
+ "title": "Dyna Robotics 联创 Jason Ma 谈 Dyna-2 世界动作模型与机器人落地",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-13T22:25:55.000Z",
+ "latestAt": "2026-10-13T22:25:55.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Latent Space 播客邀请 Dyna Robotics 联合创始人兼首席科学家 Jason Ma，讲解上月发布的 Dyna-2 世界动作模型及其后续物理机器人智能体 Dyna-2.1。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 0,
+  "observationComplete": false,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-13-eng-b2980e6e",
+   "title": "Dyna Robotics 联创 Jason Ma 谈 Dyna-2 世界动作模型与机器人落地",
+   "firstReportAt": "2026-10-13T22:25:55.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "krvvrd604bnvh003rs160m0pa",
+    "title": "Dyna Robotics 联创 Jason Ma 谈 Dyna-2 世界动作模型与机器人落地",
+    "summary": "Latent Space 播客邀请 Dyna Robotics 联合创始人兼首席科学家 Jason Ma，讲解上月发布的 Dyna-2 世界动作模型及其后续物理机器人智能体 Dyna-2.1。",
+    "publishedAt": "2026-10-13T22:25:55.000Z",
+    "selected": true,
+    "source": {
+     "name": "Latent Space",
+     "firstParty": false
+    },
+    "originalUrl": "https://www.latent.space/p/dyna"
+   }
+  }
+ ],
+ "officialReports": [],
+ "timeline": [
+  {
+   "id": "krvvrd604bnvh003rs160m0pa",
+   "title": "Dyna Robotics 联创 Jason Ma 谈 Dyna-2 世界动作模型与机器人落地",
+   "summary": "Latent Space 播客邀请 Dyna Robotics 联合创始人兼首席科学家 Jason Ma，讲解上月发布的 Dyna-2 世界动作模型及其后续物理机器人智能体 Dyna-2.1。",
+   "publishedAt": "2026-10-13T22:25:55.000Z",
+   "selected": true,
+   "source": {
+    "name": "Latent Space",
+    "firstParty": false
+   },
+   "originalUrl": "https://www.latent.space/p/dyna"
+  }
+ ],
+ "heat": []
+}

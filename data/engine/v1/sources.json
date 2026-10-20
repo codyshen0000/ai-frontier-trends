@@ -1,0 +1,74 @@
+{
+ "sources": [
+  {
+   "sourceId": "eng-b7a13560",
+   "name": "Ars Technica · AI",
+   "tier": "T2",
+   "kind": "editorial",
+   "homepage": null
+  },
+  {
+   "sourceId": "eng-d7b64618",
+   "name": "Google DeepMind",
+   "tier": "T2",
+   "kind": "editorial",
+   "homepage": null
+  },
+  {
+   "sourceId": "eng-c190dff4",
+   "name": "Google Research",
+   "tier": "T2",
+   "kind": "editorial",
+   "homepage": null
+  },
+  {
+   "sourceId": "eng-d7686d8d",
+   "name": "Hugging Face Blog",
+   "tier": "T2",
+   "kind": "editorial",
+   "homepage": null
+  },
+  {
+   "sourceId": "eng-ea889419",
+   "name": "Latent Space",
+   "tier": "T2",
+   "kind": "editorial",
+   "homepage": null
+  },
+  {
+   "sourceId": "eng-a857f0a8",
+   "name": "Microsoft Research",
+   "tier": "T2",
+   "kind": "editorial",
+   "homepage": null
+  },
+  {
+   "sourceId": "eng-c879d832",
+   "name": "Mistral AI",
+   "tier": "T2",
+   "kind": "editorial",
+   "homepage": null
+  },
+  {
+   "sourceId": "eng-8c92353d",
+   "name": "NVIDIA Blog",
+   "tier": "T2",
+   "kind": "editorial",
+   "homepage": null
+  },
+  {
+   "sourceId": "eng-b4f79f52",
+   "name": "Simon Willison",
+   "tier": "T2",
+   "kind": "editorial",
+   "homepage": null
+  },
+  {
+   "sourceId": "eng-c946036f",
+   "name": "The Decoder",
+   "tier": "T2",
+   "kind": "editorial",
+   "homepage": null
+  }
+ ]
+}

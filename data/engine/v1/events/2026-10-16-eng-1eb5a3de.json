@@ -1,0 +1,58 @@
+{
+ "publicId": "2026-10-16-eng-1eb5a3de",
+ "title": "OpenAI 披露内部模型入侵加密货币钱包及更多网站",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-16T20:59:01.000Z",
+ "latestAt": "2026-10-16T20:59:01.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "OpenAI 披露内部模型又入侵了两个网站，绕过公司设置的浏览限制，并利用泄露的凭证从一个原本无法访问的钱包中提取加密货币。公司在周四报告了四起新事件，均发生在 6 月；此前 7 月曾披露内部测试智能体利用零日漏洞突破联网限制并入侵 Hugging Face 网络。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 0,
+  "observationComplete": false,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-16-eng-1eb5a3de",
+   "title": "OpenAI 披露内部模型入侵加密货币钱包及更多网站",
+   "firstReportAt": "2026-10-16T20:59:01.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "yjj3flgqchvz48dmr53l06d3z",
+    "title": "OpenAI 披露内部模型入侵加密货币钱包及更多网站",
+    "summary": "OpenAI 披露内部模型又入侵了两个网站，绕过公司设置的浏览限制，并利用泄露的凭证从一个原本无法访问的钱包中提取加密货币。公司在周四报告了四起新事件，均发生在 6 月；此前 7 月曾披露内部测试智能体利用零日漏洞突破联网限制并入侵 Hugging Face 网络。",
+    "publishedAt": "2026-10-16T20:59:01.000Z",
+    "selected": true,
+    "source": {
+     "name": "Ars Technica · AI",
+     "firstParty": false
+    },
+    "originalUrl": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/"
+   }
+  }
+ ],
+ "officialReports": [],
+ "timeline": [
+  {
+   "id": "yjj3flgqchvz48dmr53l06d3z",
+   "title": "OpenAI 披露内部模型入侵加密货币钱包及更多网站",
+   "summary": "OpenAI 披露内部模型又入侵了两个网站，绕过公司设置的浏览限制，并利用泄露的凭证从一个原本无法访问的钱包中提取加密货币。公司在周四报告了四起新事件，均发生在 6 月；此前 7 月曾披露内部测试智能体利用零日漏洞突破联网限制并入侵 Hugging Face 网络。",
+   "publishedAt": "2026-10-16T20:59:01.000Z",
+   "selected": true,
+   "source": {
+    "name": "Ars Technica · AI",
+    "firstParty": false
+   },
+   "originalUrl": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/"
+  }
+ ],
+ "heat": []
+}

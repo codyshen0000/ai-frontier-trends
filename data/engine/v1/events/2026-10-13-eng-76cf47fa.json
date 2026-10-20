@@ -1,0 +1,58 @@
+{
+ "publicId": "2026-10-13-eng-76cf47fa",
+ "title": "Google DeepMind 介绍 Gemini 4 Argon 的安全与责任开发",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-13T19:43:07.000Z",
+ "latestAt": "2026-10-13T19:43:07.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Google DeepMind 发布 Gemini 4 Argon 的安全与责任开发说明，并开始广泛推送该模型、扩大 Fairwind Program 的受信任网络安全防御者范围。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 0,
+  "observationComplete": false,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-13-eng-76cf47fa",
+   "title": "Google DeepMind 介绍 Gemini 4 Argon 的安全与责任开发",
+   "firstReportAt": "2026-10-13T19:43:07.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "hp7igpt3j7jznojgk8330pqoh",
+    "title": "Google DeepMind 介绍 Gemini 4 Argon 的安全与责任开发",
+    "summary": "Google DeepMind 发布 Gemini 4 Argon 的安全与责任开发说明，并开始广泛推送该模型、扩大 Fairwind Program 的受信任网络安全防御者范围。",
+    "publishedAt": "2026-10-13T19:43:07.000Z",
+    "selected": true,
+    "source": {
+     "name": "Google DeepMind",
+     "firstParty": false
+    },
+    "originalUrl": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/"
+   }
+  }
+ ],
+ "officialReports": [],
+ "timeline": [
+  {
+   "id": "hp7igpt3j7jznojgk8330pqoh",
+   "title": "Google DeepMind 介绍 Gemini 4 Argon 的安全与责任开发",
+   "summary": "Google DeepMind 发布 Gemini 4 Argon 的安全与责任开发说明，并开始广泛推送该模型、扩大 Fairwind Program 的受信任网络安全防御者范围。",
+   "publishedAt": "2026-10-13T19:43:07.000Z",
+   "selected": true,
+   "source": {
+    "name": "Google DeepMind",
+    "firstParty": false
+   },
+   "originalUrl": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/"
+  }
+ ],
+ "heat": []
+}

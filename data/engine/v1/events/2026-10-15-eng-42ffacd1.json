@@ -1,0 +1,58 @@
+{
+ "publicId": "2026-10-15-eng-42ffacd1",
+ "title": "Black Forest Labs FLUX.3 Image Klein 上线 Diffusers",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-15T00:00:00.000Z",
+ "latestAt": "2026-10-15T00:00:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Black Forest Labs 的 FLUX.3 Image Klein 已在 Diffusers 上线，同一模型支持文生图、多参考图生图和用边界框指定布局的布局控制。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 0,
+  "observationComplete": false,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-15-eng-42ffacd1",
+   "title": "Black Forest Labs FLUX.3 Image Klein 上线 Diffusers",
+   "firstReportAt": "2026-10-15T00:00:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "al2uwjvi9mx5asn53w5l4d6v7",
+    "title": "Black Forest Labs FLUX.3 Image Klein 上线 Diffusers",
+    "summary": "Black Forest Labs 的 FLUX.3 Image Klein 已在 Diffusers 上线，同一模型支持文生图、多参考图生图和用边界框指定布局的布局控制。",
+    "publishedAt": "2026-10-15T00:00:00.000Z",
+    "selected": true,
+    "source": {
+     "name": "Hugging Face Blog",
+     "firstParty": false
+    },
+    "originalUrl": "https://huggingface.co/blog/flux-3"
+   }
+  }
+ ],
+ "officialReports": [],
+ "timeline": [
+  {
+   "id": "al2uwjvi9mx5asn53w5l4d6v7",
+   "title": "Black Forest Labs FLUX.3 Image Klein 上线 Diffusers",
+   "summary": "Black Forest Labs 的 FLUX.3 Image Klein 已在 Diffusers 上线，同一模型支持文生图、多参考图生图和用边界框指定布局的布局控制。",
+   "publishedAt": "2026-10-15T00:00:00.000Z",
+   "selected": true,
+   "source": {
+    "name": "Hugging Face Blog",
+    "firstParty": false
+   },
+   "originalUrl": "https://huggingface.co/blog/flux-3"
+  }
+ ],
+ "heat": []
+}

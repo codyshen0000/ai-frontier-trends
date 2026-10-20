@@ -1,0 +1,58 @@
+{
+ "publicId": "2026-10-15-eng-f4f24b96",
+ "title": "Apertus 1.5 发布：8B 与 70B 模型新增图像音频理解与思考模式",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-15T09:08:45.000Z",
+ "latestAt": "2026-10-15T09:08:45.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Apertus 1.5 在 8B 和 70B 两代模型上新增图像与音频理解、可选思考模式、262,144 token 上下文窗口，并改进指令遵循与工具调用，权重以 Apache 2.0 协议发布于 Hugging Face。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 0,
+  "observationComplete": false,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-15-eng-f4f24b96",
+   "title": "Apertus 1.5 发布：8B 与 70B 模型新增图像音频理解与思考模式",
+   "firstReportAt": "2026-10-15T09:08:45.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "kc9ge75qfpvammk6jqrvday3d",
+    "title": "Apertus 1.5 发布：8B 与 70B 模型新增图像音频理解与思考模式",
+    "summary": "Apertus 1.5 在 8B 和 70B 两代模型上新增图像与音频理解、可选思考模式、262,144 token 上下文窗口，并改进指令遵循与工具调用，权重以 Apache 2.0 协议发布于 Hugging Face。",
+    "publishedAt": "2026-10-15T09:08:45.000Z",
+    "selected": true,
+    "source": {
+     "name": "Hugging Face Blog",
+     "firstParty": false
+    },
+    "originalUrl": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes"
+   }
+  }
+ ],
+ "officialReports": [],
+ "timeline": [
+  {
+   "id": "kc9ge75qfpvammk6jqrvday3d",
+   "title": "Apertus 1.5 发布：8B 与 70B 模型新增图像音频理解与思考模式",
+   "summary": "Apertus 1.5 在 8B 和 70B 两代模型上新增图像与音频理解、可选思考模式、262,144 token 上下文窗口，并改进指令遵循与工具调用，权重以 Apache 2.0 协议发布于 Hugging Face。",
+   "publishedAt": "2026-10-15T09:08:45.000Z",
+   "selected": true,
+   "source": {
+    "name": "Hugging Face Blog",
+    "firstParty": false
+   },
+   "originalUrl": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes"
+  }
+ ],
+ "heat": []
+}

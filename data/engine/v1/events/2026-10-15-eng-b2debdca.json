@@ -1,0 +1,58 @@
+{
+ "publicId": "2026-10-15-eng-b2debdca",
+ "title": "IBM 发布 Granite Switch 4.1：单一端点支持对话、决策与语音",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-15T20:34:01.000Z",
+ "latestAt": "2026-10-15T20:34:01.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "IBM 发布 Granite Switch 4.1，提供 8B 和 30B 两个版本，在单一托管端点上同时支持自然语言对话、通用与专用决策以及语音转文字。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 0,
+  "observationComplete": false,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-15-eng-b2debdca",
+   "title": "IBM 发布 Granite Switch 4.1：单一端点支持对话、决策与语音",
+   "firstReportAt": "2026-10-15T20:34:01.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "wz1v1gzub17hyhvpvt4xbntyq",
+    "title": "IBM 发布 Granite Switch 4.1：单一端点支持对话、决策与语音",
+    "summary": "IBM 发布 Granite Switch 4.1，提供 8B 和 30B 两个版本，在单一托管端点上同时支持自然语言对话、通用与专用决策以及语音转文字。",
+    "publishedAt": "2026-10-15T20:34:01.000Z",
+    "selected": true,
+    "source": {
+     "name": "Hugging Face Blog",
+     "firstParty": false
+    },
+    "originalUrl": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1"
+   }
+  }
+ ],
+ "officialReports": [],
+ "timeline": [
+  {
+   "id": "wz1v1gzub17hyhvpvt4xbntyq",
+   "title": "IBM 发布 Granite Switch 4.1：单一端点支持对话、决策与语音",
+   "summary": "IBM 发布 Granite Switch 4.1，提供 8B 和 30B 两个版本，在单一托管端点上同时支持自然语言对话、通用与专用决策以及语音转文字。",
+   "publishedAt": "2026-10-15T20:34:01.000Z",
+   "selected": true,
+   "source": {
+    "name": "Hugging Face Blog",
+    "firstParty": false
+   },
+   "originalUrl": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1"
+  }
+ ],
+ "heat": []
+}

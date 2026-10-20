@@ -1,0 +1,58 @@
+{
+ "publicId": "2026-10-18-eng-f58aae6c",
+ "title": "Anthropic 因 AI 智能体承担更多工时而大幅减少初级岗位招聘",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-18T13:22:26.000Z",
+ "latestAt": "2026-10-18T13:22:26.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Anthropic 内部研究显示，自 2025 年初以来技术部门初级岗位占比从 21% 降至 14%，初级新员工占比从 27% 降至 9%。到 2026 年 8 月，其 AI 智能体的工作时长达到人类员工的 6 倍，研究部门为 19:1，公司称各技术部门产出同步上升。研究也承认 Anthropic 是 AI 使用极密集的特殊案例，结果难以直接推及整体经济。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 0,
+  "observationComplete": false,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-18-eng-f58aae6c",
+   "title": "Anthropic 因 AI 智能体承担更多工时而大幅减少初级岗位招聘",
+   "firstReportAt": "2026-10-18T13:22:26.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "p8368ouczlsqr8wgnjca3zhkn",
+    "title": "Anthropic 因 AI 智能体承担更多工时而大幅减少初级岗位招聘",
+    "summary": "Anthropic 内部研究显示，自 2025 年初以来技术部门初级岗位占比从 21% 降至 14%，初级新员工占比从 27% 降至 9%。到 2026 年 8 月，其 AI 智能体的工作时长达到人类员工的 6 倍，研究部门为 19:1，公司称各技术部门产出同步上升。研究也承认 Anthropic 是 AI 使用极密集的特殊案例，结果难以直接推及整体经济。",
+    "publishedAt": "2026-10-18T13:22:26.000Z",
+    "selected": true,
+    "source": {
+     "name": "The Decoder",
+     "firstParty": false
+    },
+    "originalUrl": "https://the-decoder.com/anthropic-has-nearly-stopped-hiring-junior-staff-because-ai-agents-now-work-six-times-as-many-hours/"
+   }
+  }
+ ],
+ "officialReports": [],
+ "timeline": [
+  {
+   "id": "p8368ouczlsqr8wgnjca3zhkn",
+   "title": "Anthropic 因 AI 智能体承担更多工时而大幅减少初级岗位招聘",
+   "summary": "Anthropic 内部研究显示，自 2025 年初以来技术部门初级岗位占比从 21% 降至 14%，初级新员工占比从 27% 降至 9%。到 2026 年 8 月，其 AI 智能体的工作时长达到人类员工的 6 倍，研究部门为 19:1，公司称各技术部门产出同步上升。研究也承认 Anthropic 是 AI 使用极密集的特殊案例，结果难以直接推及整体经济。",
+   "publishedAt": "2026-10-18T13:22:26.000Z",
+   "selected": true,
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "originalUrl": "https://the-decoder.com/anthropic-has-nearly-stopped-hiring-junior-staff-because-ai-agents-now-work-six-times-as-many-hours/"
+  }
+ ],
+ "heat": []
+}

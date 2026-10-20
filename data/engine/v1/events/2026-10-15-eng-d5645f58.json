@@ -1,0 +1,58 @@
+{
+ "publicId": "2026-10-15-eng-d5645f58",
+ "title": "Mistral 发布时间序列基础模型 Timestral，最大 209M 参数",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-15T12:00:00.000Z",
+ "latestAt": "2026-10-15T12:00:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Mistral 发布首个时间序列基础模型系列 Timestral，提供 5M、28M、123M 和 209M 四个尺寸，最大模型在 GIFT-Eval、TIME 和 fev-bench 三项公开基准上排名第一，参数量为前 SOTA 的三分之二。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 0,
+  "observationComplete": false,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-15-eng-d5645f58",
+   "title": "Mistral 发布时间序列基础模型 Timestral，最大 209M 参数",
+   "firstReportAt": "2026-10-15T12:00:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "tl1rea0lb89zqjfses1tqjujh",
+    "title": "Mistral 发布时间序列基础模型 Timestral，最大 209M 参数",
+    "summary": "Mistral 发布首个时间序列基础模型系列 Timestral，提供 5M、28M、123M 和 209M 四个尺寸，最大模型在 GIFT-Eval、TIME 和 fev-bench 三项公开基准上排名第一，参数量为前 SOTA 的三分之二。",
+    "publishedAt": "2026-10-15T12:00:00.000Z",
+    "selected": true,
+    "source": {
+     "name": "Mistral AI",
+     "firstParty": false
+    },
+    "originalUrl": "https://mistral.ai/news/timestral/"
+   }
+  }
+ ],
+ "officialReports": [],
+ "timeline": [
+  {
+   "id": "tl1rea0lb89zqjfses1tqjujh",
+   "title": "Mistral 发布时间序列基础模型 Timestral，最大 209M 参数",
+   "summary": "Mistral 发布首个时间序列基础模型系列 Timestral，提供 5M、28M、123M 和 209M 四个尺寸，最大模型在 GIFT-Eval、TIME 和 fev-bench 三项公开基准上排名第一，参数量为前 SOTA 的三分之二。",
+   "publishedAt": "2026-10-15T12:00:00.000Z",
+   "selected": true,
+   "source": {
+    "name": "Mistral AI",
+    "firstParty": false
+   },
+   "originalUrl": "https://mistral.ai/news/timestral/"
+  }
+ ],
+ "heat": []
+}

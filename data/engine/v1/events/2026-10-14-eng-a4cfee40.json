@@ -1,0 +1,58 @@
+{
+ "publicId": "2026-10-14-eng-a4cfee40",
+ "title": "Google 发布地理空间推理智能体技术报告并扩大 Earth AI 早期访问",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-14T16:14:00.000Z",
+ "latestAt": "2026-10-14T16:14:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Google Research 发布地理空间推理智能体技术报告，在 CBGB、UnivEARTH 及新构建的 GeoExpertQueries、GeoKTools 四个基准上对比四种智能体配置，结果显示接入 Earth AI 专用工具能显著提升定量空间任务表现，而开放式问题还需前置规划环节。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 0,
+  "observationComplete": false,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-14-eng-a4cfee40",
+   "title": "Google 发布地理空间推理智能体技术报告并扩大 Earth AI 早期访问",
+   "firstReportAt": "2026-10-14T16:14:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "pm5shqi6ekqwkng9dvgjsm8p0",
+    "title": "Google 发布地理空间推理智能体技术报告并扩大 Earth AI 早期访问",
+    "summary": "Google Research 发布地理空间推理智能体技术报告，在 CBGB、UnivEARTH 及新构建的 GeoExpertQueries、GeoKTools 四个基准上对比四种智能体配置，结果显示接入 Earth AI 专用工具能显著提升定量空间任务表现，而开放式问题还需前置规划环节。",
+    "publishedAt": "2026-10-14T16:14:00.000Z",
+    "selected": true,
+    "source": {
+     "name": "Google Research",
+     "firstParty": false
+    },
+    "originalUrl": "https://research.google/blog/putting-earth-ai-to-work-geospatial-agents-for-our-planets-biggest-challenges/"
+   }
+  }
+ ],
+ "officialReports": [],
+ "timeline": [
+  {
+   "id": "pm5shqi6ekqwkng9dvgjsm8p0",
+   "title": "Google 发布地理空间推理智能体技术报告并扩大 Earth AI 早期访问",
+   "summary": "Google Research 发布地理空间推理智能体技术报告，在 CBGB、UnivEARTH 及新构建的 GeoExpertQueries、GeoKTools 四个基准上对比四种智能体配置，结果显示接入 Earth AI 专用工具能显著提升定量空间任务表现，而开放式问题还需前置规划环节。",
+   "publishedAt": "2026-10-14T16:14:00.000Z",
+   "selected": true,
+   "source": {
+    "name": "Google Research",
+    "firstParty": false
+   },
+   "originalUrl": "https://research.google/blog/putting-earth-ai-to-work-geospatial-agents-for-our-planets-biggest-challenges/"
+  }
+ ],
+ "heat": []
+}

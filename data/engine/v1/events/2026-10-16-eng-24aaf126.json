@@ -1,0 +1,58 @@
+{
+ "publicId": "2026-10-16-eng-24aaf126",
+ "title": "Google Research 介绍让 AI 智能体落地湿实验室的三项研究",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-16T18:11:34.000Z",
+ "latestAt": "2026-10-16T18:11:34.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Google Research 发布博客，介绍三项把 AI 智能体与真实湿实验室实验衔接起来的研究：VERID 框架为实验室工作单元建立语义数字孪生，让智能体在动作前检查三维状态、做虚拟试运行并拦截物理上不可行的指令。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 0,
+  "observationComplete": false,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-16-eng-24aaf126",
+   "title": "Google Research 介绍让 AI 智能体落地湿实验室的三项研究",
+   "firstReportAt": "2026-10-16T18:11:34.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "pl94tiwbqpaoeuoulcdwb9z6v",
+    "title": "Google Research 介绍让 AI 智能体落地湿实验室的三项研究",
+    "summary": "Google Research 发布博客，介绍三项把 AI 智能体与真实湿实验室实验衔接起来的研究：VERID 框架为实验室工作单元建立语义数字孪生，让智能体在动作前检查三维状态、做虚拟试运行并拦截物理上不可行的指令。",
+    "publishedAt": "2026-10-16T18:11:34.000Z",
+    "selected": true,
+    "source": {
+     "name": "Google Research",
+     "firstParty": false
+    },
+    "originalUrl": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/"
+   }
+  }
+ ],
+ "officialReports": [],
+ "timeline": [
+  {
+   "id": "pl94tiwbqpaoeuoulcdwb9z6v",
+   "title": "Google Research 介绍让 AI 智能体落地湿实验室的三项研究",
+   "summary": "Google Research 发布博客，介绍三项把 AI 智能体与真实湿实验室实验衔接起来的研究：VERID 框架为实验室工作单元建立语义数字孪生，让智能体在动作前检查三维状态、做虚拟试运行并拦截物理上不可行的指令。",
+   "publishedAt": "2026-10-16T18:11:34.000Z",
+   "selected": true,
+   "source": {
+    "name": "Google Research",
+    "firstParty": false
+   },
+   "originalUrl": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/"
+  }
+ ],
+ "heat": []
+}

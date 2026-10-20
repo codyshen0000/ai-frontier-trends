@@ -1,0 +1,58 @@
+{
+ "publicId": "2026-10-15-eng-c5482847",
+ "title": "微软研究院推出基于证明的通用计算系统 Magnetar",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-15T16:00:00.000Z",
+ "latestAt": "2026-10-15T16:00:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "微软研究院发布零知识虚拟机 Magnetar，可直接证明用 Rust、Go 或 C 编写的程序执行过程，在 15 个基准程序上平均比现有最快的同类 zkVM 快 10 到 39 倍。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 0,
+  "observationComplete": false,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-15-eng-c5482847",
+   "title": "微软研究院推出基于证明的通用计算系统 Magnetar",
+   "firstReportAt": "2026-10-15T16:00:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "dmf6dfuwx08hkwucpyk5v0vli",
+    "title": "微软研究院推出基于证明的通用计算系统 Magnetar",
+    "summary": "微软研究院发布零知识虚拟机 Magnetar，可直接证明用 Rust、Go 或 C 编写的程序执行过程，在 15 个基准程序上平均比现有最快的同类 zkVM 快 10 到 39 倍。",
+    "publishedAt": "2026-10-15T16:00:00.000Z",
+    "selected": true,
+    "source": {
+     "name": "Microsoft Research",
+     "firstParty": false
+    },
+    "originalUrl": "https://www.microsoft.com/en-us/research/blog/proof-based-general-purpose-computing-with-magnetar/"
+   }
+  }
+ ],
+ "officialReports": [],
+ "timeline": [
+  {
+   "id": "dmf6dfuwx08hkwucpyk5v0vli",
+   "title": "微软研究院推出基于证明的通用计算系统 Magnetar",
+   "summary": "微软研究院发布零知识虚拟机 Magnetar，可直接证明用 Rust、Go 或 C 编写的程序执行过程，在 15 个基准程序上平均比现有最快的同类 zkVM 快 10 到 39 倍。",
+   "publishedAt": "2026-10-15T16:00:00.000Z",
+   "selected": true,
+   "source": {
+    "name": "Microsoft Research",
+    "firstParty": false
+   },
+   "originalUrl": "https://www.microsoft.com/en-us/research/blog/proof-based-general-purpose-computing-with-magnetar/"
+  }
+ ],
+ "heat": []
+}

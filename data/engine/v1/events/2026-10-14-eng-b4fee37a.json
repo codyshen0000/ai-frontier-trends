@@ -1,0 +1,58 @@
+{
+ "publicId": "2026-10-14-eng-b4fee37a",
+ "title": "Google 公开发布 Deep Review 文档审阅系统",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-14T16:14:00.000Z",
+ "latestAt": "2026-10-14T16:14:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Google 公开发布智能体文档审阅系统 Deep Review，可对复杂文档做逻辑一致性、数学陈述和事实依据检查，并给出改进建议。该系统前身为 Paper Assistant Tool，曾在 STOC 2026、ICML 2026、NeurIPS 2026 和 ICLR 2027 四场会议试点，为逾 1.6 万篇自愿参与的稿件提供投稿前反馈。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 0,
+  "observationComplete": false,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-14-eng-b4fee37a",
+   "title": "Google 公开发布 Deep Review 文档审阅系统",
+   "firstReportAt": "2026-10-14T16:14:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "cdwls19m9e1a57wifp4f3j4oc",
+    "title": "Google 公开发布 Deep Review 文档审阅系统",
+    "summary": "Google 公开发布智能体文档审阅系统 Deep Review，可对复杂文档做逻辑一致性、数学陈述和事实依据检查，并给出改进建议。该系统前身为 Paper Assistant Tool，曾在 STOC 2026、ICML 2026、NeurIPS 2026 和 ICLR 2027 四场会议试点，为逾 1.6 万篇自愿参与的稿件提供投稿前反馈。",
+    "publishedAt": "2026-10-14T16:14:00.000Z",
+    "selected": true,
+    "source": {
+     "name": "Google Research",
+     "firstParty": false
+    },
+    "originalUrl": "https://research.google/blog/analyzing-technical-documents-with-deep-review/"
+   }
+  }
+ ],
+ "officialReports": [],
+ "timeline": [
+  {
+   "id": "cdwls19m9e1a57wifp4f3j4oc",
+   "title": "Google 公开发布 Deep Review 文档审阅系统",
+   "summary": "Google 公开发布智能体文档审阅系统 Deep Review，可对复杂文档做逻辑一致性、数学陈述和事实依据检查，并给出改进建议。该系统前身为 Paper Assistant Tool，曾在 STOC 2026、ICML 2026、NeurIPS 2026 和 ICLR 2027 四场会议试点，为逾 1.6 万篇自愿参与的稿件提供投稿前反馈。",
+   "publishedAt": "2026-10-14T16:14:00.000Z",
+   "selected": true,
+   "source": {
+    "name": "Google Research",
+    "firstParty": false
+   },
+   "originalUrl": "https://research.google/blog/analyzing-technical-documents-with-deep-review/"
+  }
+ ],
+ "heat": []
+}
