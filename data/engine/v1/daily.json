@@ -1,53 +1,63 @@
 {
  "kind": "daily",
- "key": "2026-10-19",
- "issueNumber": 1,
- "title": "AI日报 · 2026-10-19",
- "generatedAt": "2026-10-19T03:26:16.000Z",
+ "key": "2026-10-20",
+ "issueNumber": 2,
+ "title": "AI日报 · 2026-10-20",
+ "generatedAt": "2026-10-20T00:43:38.000Z",
  "lead": {
-  "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
-  "leadParagraph": "DeepSeek 发布开放权重 V4.1-Flash-1017，基准更好、输出更短，并开放 Search/Fetch API。"
+  "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
+  "leadParagraph": "可灵 4.0 加长视频与口型同步"
  },
- "leadItemId": "sha256:931ff0f85ef4bf70",
- "overview": "DeepSeek 发布开放权重 V4.1-Flash-1017，基准更好、输出更短，并开放 Search/Fetch API。",
+ "leadItemId": "sha256:10f7f763ebef7da0",
+ "overview": "今日重点四条：可灵 AI 4.0（更长视频、立体声与多语口型同步）。英伟达开源面向企业与 PC 的智能体模型。MiniMax M3.1 Flash（称提速约 3 倍、成本约降 70%，AA 指数到 42）。Hugging Face TorchNeuron，让 HF 模型更易跑在 AWS Trainium。",
  "highlights": [
   {
-   "itemId": "sha256:931ff0f85ef4bf70",
-   "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
-   "summary": "DeepSeek 发布开放权重 V4.1-Flash-1017，基准更好、输出更短，并开放 Search/Fetch API。",
+   "itemId": "sha256:10f7f763ebef7da0",
+   "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
+   "summary": "可灵 4.0 加长视频与口型同步",
    "sourceName": "The Decoder",
-   "sourceUrl": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/",
+   "sourceUrl": "https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/",
    "sourceIconUrl": null,
    "firstParty": false,
-   "publishedAt": "2026-10-17T10:33:28.000Z",
+   "publishedAt": "2026-10-19T17:36:26.000Z",
    "available": true,
-   "otherSources": 1
+   "otherSources": 0
   },
   {
-   "itemId": "sha256:8b14a22385d7ebcd",
-   "title": "OpenAI 公布 4 起模型自行越权案例",
-   "summary": "据 The Decoder，OpenAI 公布 4 起模型在训练或测试中自行越过安全边界的案例。",
-   "sourceName": "The Decoder",
-   "sourceUrl": "https://the-decoder.com/an-openai-model-hacked-a-government-site-grabbed-24-years-of-hospital-data-and-kept-it-quiet/",
+   "itemId": "sha256:bfa70917f3b198d1",
+   "title": "英伟达发布面向企业与 PC 的开源智能体模型",
+   "summary": "英伟达开源企业与 PC 端智能体模型",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
    "sourceIconUrl": null,
    "firstParty": false,
-   "publishedAt": "2026-10-17T15:36:11.000Z",
+   "publishedAt": "2026-10-19T15:37:09.000Z",
    "available": true,
-   "otherSources": 0,
-   "belowThreshold": true
+   "otherSources": 0
   },
   {
-   "itemId": "sha256:0dd91801c3b6e853",
-   "title": "Interconnects：美国开源权重模型重回前沿",
-   "summary": "Nathan Lambert 认为美国开源权重模型本周向前沿迈进：Meta 发布 Muse Spark Open，Reflection 发布首个模型 Beam。",
-   "sourceName": "Interconnects (Nathan Lambert)",
-   "sourceUrl": "https://www.interconnects.ai/p/meta-shakes-up-the-frontiers-open",
+   "itemId": null,
+   "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
+   "summary": "M3.1 Flash 提速降本，AA 指数到 42",
+   "sourceName": "",
+   "sourceUrl": "https://the-decoder.com/minimax-m3-1-flash-shows-chinas-ai-price-race-has-no-floor-in-sight/",
    "sourceIconUrl": null,
    "firstParty": false,
-   "publishedAt": "2026-10-17T14:06:54.000Z",
+   "publishedAt": "2026-10-19T18:22:30.000Z",
    "available": true,
-   "otherSources": 0,
-   "belowThreshold": true
+   "otherSources": 0
+  },
+  {
+   "itemId": null,
+   "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
+   "summary": "Trainium 上跑 HF 模型更省事",
+   "sourceName": "",
+   "sourceUrl": "https://huggingface.co/blog/hf-torchneuron",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-19T00:00:00.000Z",
+   "available": true,
+   "otherSources": 0
   }
  ],
  "sections": [
@@ -56,128 +66,71 @@
    "summary": null,
    "items": [
     {
-     "itemId": "sha256:931ff0f85ef4bf70",
-     "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
-     "summary": "DeepSeek 发布开放权重 V4.1-Flash-1017，基准更好、输出更短，并开放 Search/Fetch API。",
+     "itemId": "sha256:10f7f763ebef7da0",
+     "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
+     "summary": "可灵 4.0 加长视频与口型同步",
      "sourceName": "The Decoder",
-     "sourceUrl": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/",
+     "sourceUrl": "https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/",
      "sourceIconUrl": null,
      "firstParty": false,
-     "publishedAt": "2026-10-17T10:33:28.000Z",
+     "publishedAt": "2026-10-19T17:36:26.000Z",
      "available": true,
-     "otherSources": 1
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:bfa70917f3b198d1",
+     "title": "英伟达发布面向企业与 PC 的开源智能体模型",
+     "summary": "英伟达开源企业与 PC 端智能体模型",
+     "sourceName": "TechCrunch · AI",
+     "sourceUrl": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
+     "sourceIconUrl": null,
+     "firstParty": false,
+     "publishedAt": "2026-10-19T15:37:09.000Z",
+     "available": true,
+     "otherSources": 0
     }
    ]
   },
   {
-   "label": "行业",
+   "label": "其他",
    "summary": null,
    "items": [
     {
-     "itemId": "sha256:8b14a22385d7ebcd",
-     "title": "OpenAI 公布 4 起模型自行越权案例",
-     "summary": "据 The Decoder，OpenAI 公布 4 起模型在训练或测试中自行越过安全边界的案例。",
-     "sourceName": "The Decoder",
-     "sourceUrl": "https://the-decoder.com/an-openai-model-hacked-a-government-site-grabbed-24-years-of-hospital-data-and-kept-it-quiet/",
+     "itemId": null,
+     "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
+     "summary": "M3.1 Flash 提速降本，AA 指数到 42",
+     "sourceName": "",
+     "sourceUrl": "https://the-decoder.com/minimax-m3-1-flash-shows-chinas-ai-price-race-has-no-floor-in-sight/",
      "sourceIconUrl": null,
      "firstParty": false,
-     "publishedAt": "2026-10-17T15:36:11.000Z",
+     "publishedAt": "2026-10-19T18:22:30.000Z",
      "available": true,
-     "otherSources": 0,
-     "belowThreshold": true
-    }
-   ]
-  },
-  {
-   "label": "观点",
-   "summary": null,
-   "items": [
+     "otherSources": 0
+    },
     {
-     "itemId": "sha256:0dd91801c3b6e853",
-     "title": "Interconnects：美国开源权重模型重回前沿",
-     "summary": "Nathan Lambert 认为美国开源权重模型本周向前沿迈进：Meta 发布 Muse Spark Open，Reflection 发布首个模型 Beam。",
-     "sourceName": "Interconnects (Nathan Lambert)",
-     "sourceUrl": "https://www.interconnects.ai/p/meta-shakes-up-the-frontiers-open",
+     "itemId": null,
+     "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
+     "summary": "Trainium 上跑 HF 模型更省事",
+     "sourceName": "",
+     "sourceUrl": "https://huggingface.co/blog/hf-torchneuron",
      "sourceIconUrl": null,
-     "firstParty": false,
-     "publishedAt": "2026-10-17T14:06:54.000Z",
+     "firstParty": true,
+     "publishedAt": "2026-10-19T00:00:00.000Z",
      "available": true,
-     "otherSources": 0,
-     "belowThreshold": true
+     "otherSources": 0
     }
    ]
   }
  ],
- "flashes": [
-  {
-   "itemId": "sha256:3174ec059a8695ea",
-   "title": "4 个 Gemini 4 Argon 智能体无人协助通关《我的世界》",
-   "summary": null,
-   "sourceName": "The Decoder",
-   "sourceUrl": "https://the-decoder.com/four-gemini-4-argon-agents-beat-minecraft-without-any-human-help/",
-   "sourceIconUrl": null,
-   "firstParty": false,
-   "publishedAt": "2026-10-18T12:39:51.000Z",
-   "available": true,
-   "belowThreshold": true
-  },
-  {
-   "itemId": "sha256:584592e06b7b9958",
-   "title": "Claude 30 分钟内解开 NIST 曲线种子 25 年谜题",
-   "summary": null,
-   "sourceName": "The Decoder",
-   "sourceUrl": "https://the-decoder.com/anthropics-claude-cracks-a-25-year-old-nsa-cryptography-mystery-in-under-30-minutes/",
-   "sourceIconUrl": null,
-   "firstParty": false,
-   "publishedAt": "2026-10-17T14:42:56.000Z",
-   "available": true,
-   "belowThreshold": true
-  },
-  {
-   "itemId": "sha256:e13a46dd16dbc25c",
-   "title": "研究：AI 智能体会在工作报告中隐瞒错误",
-   "summary": null,
-   "sourceName": "The Decoder",
-   "sourceUrl": "https://the-decoder.com/ai-models-hide-mistakes-in-their-own-work-reports-but-one-sentence-in-your-prompt-can-help/",
-   "sourceIconUrl": null,
-   "firstParty": false,
-   "publishedAt": "2026-10-17T09:54:36.000Z",
-   "available": true,
-   "belowThreshold": true
-  },
-  {
-   "itemId": "sha256:7fc73ab44f09b73f",
-   "title": "清华等开源智能体操作系统 PilotDeck 2.0",
-   "summary": null,
-   "sourceName": "量子位",
-   "sourceUrl": "https://www.qbitai.com/2026/10/503935.html",
-   "sourceIconUrl": null,
-   "firstParty": false,
-   "publishedAt": "2026-10-17T12:10:35.000Z",
-   "available": true,
-   "belowThreshold": true
-  },
-  {
-   "itemId": "sha256:8e1750f4fd35f601",
-   "title": "Taste-Bench：AI 智能体长期决策“品味”不佳",
-   "summary": null,
-   "sourceName": "The Decoder",
-   "sourceUrl": "https://the-decoder.com/ai-agents-have-bad-taste-in-long-term-decisions-and-a-new-benchmark-proves-it/",
-   "sourceIconUrl": null,
-   "firstParty": false,
-   "publishedAt": "2026-10-18T08:49:41.000Z",
-   "available": true,
-   "belowThreshold": true
-  }
- ],
+ "flashes": [],
  "cover": null,
  "metrics": {
-  "totalEvents": 3,
-  "sourcesCount": 3,
-  "firstPartyEvents": 0,
-  "modelsReleased": 1
+  "totalEvents": 4,
+  "sourcesCount": 2,
+  "firstPartyEvents": 1,
+  "modelsReleased": 2
  },
  "readingMinutes": 1,
- "prev": null,
- "next": "2026-10-20"
+ "prev": "2026-10-19",
+ "next": null
 }
