@@ -27,6 +27,8 @@ import {
   collectHomeFallbackHits,
   collectSelfLinkHits,
 } from "./static_links.mjs";
+import { resolveEngineDir } from "./engine/loader.mjs";
+import { runVerifyRegistry } from "./verify-registry.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const config = JSON.parse(readFileSync(join(root, "site.config.json"), "utf8"));
@@ -1025,6 +1027,12 @@ try {
   }
   assert(noJsBare === 0, `every dist HTML with no-js also swaps it in a head script (${noJsBare} missing)`);
 }
+
+failed += await runVerifyRegistry({
+  root,
+  distDir,
+  engineDir: resolveEngineDir(),
+});
 
 if (failed) {
   console.error(`\n${failed} check(s) failed`);

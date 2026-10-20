@@ -432,6 +432,7 @@ export async function exportStatic({ distDir, contentDir, dataset = "", dataAsOf
   void isValuableCoverClass;
   void BANNED_PUBLIC_COPY;
   void createHash;
+  // B1: replace content/fixture feeds with loadEngineData(). writeRedirects(dist, data) is wired from build.mjs.
 
   return { searchDocs: index.docs.length, weekly: issues.length, dataset };
 }

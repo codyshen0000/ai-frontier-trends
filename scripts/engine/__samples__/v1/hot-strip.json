@@ -1,0 +1,15 @@
+[
+  {
+    "rank": 1,
+    "title": "SYNTHETIC · 开源权重样例事件",
+    "heat": 12.3,
+    "trend": "up",
+    "storyPublicId": "2026-10-19-synthetic-alpha",
+    "itemId": "sha256:synthetic000000000000000000000000000000000000000000000000000000000001",
+    "participants": [
+      { "name": "公开实验室", "kind": "editorial" },
+      { "name": "复现笔记", "kind": "signal" }
+    ],
+    "participantCount": 3
+  }
+]

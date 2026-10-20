@@ -1,0 +1,41 @@
+# Verify 门禁注册表（B0 phase 2 已接线）
+
+`scripts/verify_ia.mjs` 末尾调用 `runVerifyRegistry()`（实现：`scripts/verify-registry.mjs`）：
+
+```text
+scripts/verify/*.mjs   ← 只加载 export 了 verify() 的模块
+scripts/verify_ia.mjs  ← 原有 A-4 断言 + 汇总退出码
+```
+
+## 约定
+
+每个**注册表门**是一个 ESM 模块，文件名 `scripts/verify/<owner>-<id>.mjs`。
+
+```js
+export const id = "b1-fixture";
+export const owner = "B1";
+
+/** @param {{ root: string, distDir: string, engineDir: string }} ctx */
+export async function verify(ctx) {
+  // 失败：throw new Error("…") 或 return { ok: false, message }
+  return { ok: true };
+}
+```
+
+- glob：`scripts/verify/*.mjs`（不递归、不加载 README）。
+- **只 import 源码里 `export function verify` / `export { verify }` 的文件。** Remaining-A 独立入口（`starred-base.mjs`、`api-paths.mjs`、`serve-base.mjs`、`handoff-matrix.mjs` 等）有顶层副作用，走 `npm run verify:remaining`，不进注册表。
+- 加载顺序：文件名排序。某一门抛错不阻止后续门跑完，最后汇总退出。
+- 零个门：打印 `ok verify registry: 0 gates` 并继续（empty glob OK）。本 PR 带一个 `b0-registry-smoke.mjs` 证明接线。
+
+## 各路要加的门
+
+| 文件 | 路 | 内容 |
+|---|---|---|
+| `b0-registry-smoke.mjs` | B0 | 已加；恒 `{ ok: true }` |
+| `b1-fixture.mjs` | B1 | `PUBLIC_DEPLOY=1` 读到 Remaining-A fixture id 即失败 |
+| `b1-engine-dir.mjs` | B1 | `FT_ENGINE_DIR` 有数据时页面不得再渲染 fixture 卡 |
+| `b2-event-id.mjs` | B2 | `event_id` / URL 去重 |
+| `b2-redirects.mjs` | B2 | `redirects.json` → 静态跳转页存在且可跟 |
+| `b2-hot-recompute.mjs` | B2 | 复算校验器：与 `hot.json` 误差 ≤0.1 |
+
+W1 不往这里加 JS 门。归属见 [`docs/b-batch/OWNERSHIP.md`](../../docs/b-batch/OWNERSHIP.md)。

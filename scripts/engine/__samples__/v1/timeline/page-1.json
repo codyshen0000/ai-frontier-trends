@@ -1,0 +1,36 @@
+{
+  "filters": { "channel": "all", "category": null, "tag": null },
+  "cards": [
+    {
+      "key": "synthetic-alpha",
+      "anchorAt": "2026-10-19T06:00:00.000Z",
+      "item": {
+        "id": "sha256:synthetic000000000000000000000000000000000000000000000000000000000001",
+        "title": "SYNTHETIC · 开源权重样例事件",
+        "summary": "合成时间线条目。",
+        "reason": "SYNTHETIC 推荐理由。",
+        "source": { "name": "公开实验室" },
+        "publishedAt": "2026-10-19T06:00:00.000Z",
+        "timelineAt": "2026-10-19T06:00:00.000Z",
+        "category": "model",
+        "tags": [],
+        "selected": true,
+        "channel": "news",
+        "x": null,
+        "originalUrl": "https://example.invalid/synthetic/alpha",
+        "storyPublicId": "2026-10-19-synthetic-alpha"
+      },
+      "group": {
+        "factId": "2026-10-19-synthetic-alpha",
+        "additionalSourceCount": 1,
+        "reportCount": 2
+      }
+    }
+  ],
+  "nextCursor": null,
+  "hot": null,
+  "dayCounts": { "2026-10-19": 1 },
+  "page": 1,
+  "pageCount": 1,
+  "total": 1
+}

@@ -23,6 +23,8 @@ import {
 import { convertWeeklyCharts, embedWeeklyChartsAsDataUri, rewriteWeeklyChartEmbeds } from "./weekly_charts.mjs";
 import { ensureReportImageFlex, replaceMermaidWithSvg } from "./mermaid_inline.mjs";
 import { assertCoverRecords, assertDistPublicCopy, assertWeeklyMetaSources, assertWeeklyReports } from "./story_digest.mjs";
+import { loadEngineForBuild } from "./engine/loader.mjs";
+import { writeRedirects } from "./redirects.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const distDir = join(root, "dist");
@@ -854,6 +856,14 @@ export async function buildSite() {
     dataAsOf: undefined,
     builtAt: new Date().toISOString(),
   });
+  const engineLoad = loadEngineForBuild();
+  if (!engineLoad.ok) {
+    const err = engineLoad.error;
+    console.warn(
+      `engine: ${err.code || err.name} ${err.message} (fallback hook; fixture path unchanged until B1)`,
+    );
+  }
+  writeRedirects(distDir, engineLoad.engine);
   assertDistPublicCopy(distDir);
   snapshotRemainingA();
 

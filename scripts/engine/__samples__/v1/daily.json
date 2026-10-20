@@ -1,0 +1,52 @@
+{
+  "kind": "daily",
+  "key": "2026-10-19",
+  "issueNumber": 1,
+  "title": "SYNTHETIC 日报 · 样例一期",
+  "generatedAt": "2026-10-19T08:00:00.000Z",
+  "lead": {
+    "title": "SYNTHETIC · 开源权重样例事件",
+    "leadParagraph": "这是合成日报头条，只用于 B0 loader 测试。"
+  },
+  "leadItemId": "sha256:synthetic000000000000000000000000000000000000000000000000000000000001",
+  "overview": "SYNTHETIC 概览。",
+  "highlights": [
+    {
+      "itemId": "sha256:synthetic000000000000000000000000000000000000000000000000000000000001",
+      "title": "SYNTHETIC · 开源权重样例事件",
+      "summary": "合成条目。",
+      "sourceName": "公开实验室",
+      "sourceUrl": "https://example.invalid/synthetic/alpha",
+      "sourceIconUrl": null,
+      "firstParty": true,
+      "publishedAt": "2026-10-19T06:00:00.000Z",
+      "available": true,
+      "otherSources": 1
+    }
+  ],
+  "sections": [
+    {
+      "label": "模型",
+      "summary": null,
+      "items": [
+        {
+          "itemId": "sha256:synthetic000000000000000000000000000000000000000000000000000000000001",
+          "title": "SYNTHETIC · 开源权重样例事件",
+          "summary": "合成条目。",
+          "sourceName": "公开实验室",
+          "sourceUrl": "https://example.invalid/synthetic/alpha",
+          "sourceIconUrl": null,
+          "firstParty": true,
+          "publishedAt": "2026-10-19T06:00:00.000Z",
+          "available": true
+        }
+      ]
+    }
+  ],
+  "flashes": [],
+  "cover": null,
+  "metrics": { "totalEvents": 1, "sourcesCount": 2, "firstPartyEvents": 1, "modelsReleased": 1 },
+  "readingMinutes": 1,
+  "prev": null,
+  "next": null
+}
