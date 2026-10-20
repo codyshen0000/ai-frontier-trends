@@ -1,0 +1,62 @@
+{
+ "id": "dmf6dfuwx08hkwucpyk5v0vli",
+ "title": "微软研究院推出基于证明的通用计算系统 Magnetar",
+ "summary": "微软研究院发布零知识虚拟机 Magnetar，可直接证明用 Rust、Go 或 C 编写的程序执行过程，在 15 个基准程序上平均比现有最快的同类 zkVM 快 10 到 39 倍。",
+ "reason": "微软研究院梳理十余年零知识证明研究脉络，说明 Magnetar 如何同时解决证明速度、通用性和后量子安全三个难题。",
+ "source": {
+  "name": "Microsoft Research"
+ },
+ "publishedAt": "2026-10-15T16:00:00.000Z",
+ "timelineAt": "2026-10-15T16:00:00.000Z",
+ "category": "paper",
+ "tags": [
+  "论文/研究",
+  "推理",
+  "部署/工程",
+  "Microsoft"
+ ],
+ "selected": true,
+ "channel": "news",
+ "x": null,
+ "topics": [
+  {
+   "slug": "%E8%AE%BA%E6%96%87%2F%E7%A0%94%E7%A9%B6",
+   "name": "论文/研究"
+  },
+  {
+   "slug": "%E6%8E%A8%E7%90%86",
+   "name": "推理"
+  },
+  {
+   "slug": "%E9%83%A8%E7%BD%B2%2F%E5%B7%A5%E7%A8%8B",
+   "name": "部署/工程"
+  },
+  {
+   "slug": "Microsoft",
+   "name": "Microsoft"
+  }
+ ],
+ "hasTranslation": true,
+ "bodyLanguage": "zh",
+ "readingMode": "summary-only",
+ "indexable": true,
+ "markdownAvailable": false,
+ "relatedStories": [
+  {
+   "publicId": "2026-10-15-eng-c5482847",
+   "title": "微软研究院推出基于证明的通用计算系统 Magnetar"
+  }
+ ],
+ "outline": [],
+ "author": null,
+ "group": null,
+ "body": {
+  "zh": "微软研究院发布零知识虚拟机 Magnetar，可直接证明用 Rust、Go 或 C 编写的程序执行过程，在 15 个基准程序上平均比现有最快的同类 zkVM 快 10 到 39 倍。",
+  "original": null,
+  "zhKind": "translation",
+  "complete": false
+ },
+ "originalTitle": "Proof-based general-purpose computing with Magnetar",
+ "storyPublicId": "2026-10-15-eng-c5482847",
+ "originalUrl": "https://www.microsoft.com/en-us/research/blog/proof-based-general-purpose-computing-with-magnetar/"
+}

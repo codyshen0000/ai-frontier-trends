@@ -1,0 +1,44 @@
+{
+ "id": "vhlmlbztmcqh1txe63ysptiqm",
+ "title": "AI 克隆游戏泛滥，独立开发者不敢公开作品进度",
+ "summary": "独立开发者反映，AI 生成的克隆游戏正抢在其作品发布前出现，导致他们不敢公开开发进度。开发者 Sos Sosowski 称这形成两难：不分享游戏就没销量，分享游戏就被抄袭。制作旋转俄罗斯方块原型 Holmér 表示，最初一周每天都有新的 AI 克隆出现，如今热度下降，他得以放慢节奏打磨作品。",
+ "reason": null,
+ "source": {
+  "name": "Ars Technica · AI"
+ },
+ "publishedAt": "2026-10-19T16:59:22.000Z",
+ "timelineAt": "2026-10-19T16:59:22.000Z",
+ "category": "industry",
+ "tags": [
+  "现象/趋势",
+  "行业动态"
+ ],
+ "selected": false,
+ "channel": "news",
+ "x": null,
+ "topics": [
+  {
+   "slug": "%E7%8E%B0%E8%B1%A1%2F%E8%B6%8B%E5%8A%BF",
+   "name": "现象/趋势"
+  },
+  {
+   "slug": "%E8%A1%8C%E4%B8%9A%E5%8A%A8%E6%80%81",
+   "name": "行业动态"
+  }
+ ],
+ "hasTranslation": false,
+ "bodyLanguage": "zh",
+ "readingMode": "summary-only",
+ "indexable": true,
+ "markdownAvailable": false,
+ "relatedStories": [],
+ "outline": [],
+ "author": null,
+ "group": null,
+ "body": {
+  "zh": "独立开发者反映，AI 生成的克隆游戏正抢在其作品发布前出现，导致他们不敢公开开发进度。开发者 Sos Sosowski 称这形成两难：不分享游戏就没销量，分享游戏就被抄袭。制作旋转俄罗斯方块原型 Holmér 表示，最初一周每天都有新的 AI 克隆出现，如今热度下降，他得以放慢节奏打磨作品。",
+  "original": null,
+  "zhKind": "original",
+  "complete": false
+ }
+}

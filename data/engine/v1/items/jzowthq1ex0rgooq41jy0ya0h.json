@@ -1,0 +1,44 @@
+{
+ "id": "jzowthq1ex0rgooq41jy0ya0h",
+ "title": "迪士尼借破产收购 Character.AI 资产，避开其诉讼",
+ "summary": "迪士尼通过 Character.AI 的破产程序收购其人员和大部分技术栈，从而绕开导致后者陷入困境的诉讼与多州调查。Character.AI 在 2025 年 8 月曾与投资银行寻找买家或投资方，但反馈称围绕它的诉讼和监管压力让公司难以被收购；同年 11 月多州总检察长启动调查，破产时参与调查的州和地区增至 46 个。在破产程序中提交利益通知的 40 个州表示保留挑战任何破产计划的权利。",
+ "reason": null,
+ "source": {
+  "name": "Ars Technica · AI"
+ },
+ "publishedAt": "2026-10-19T14:45:43.000Z",
+ "timelineAt": "2026-10-19T14:45:43.000Z",
+ "category": "industry",
+ "tags": [
+  "行业动态",
+  "政策/监管"
+ ],
+ "selected": false,
+ "channel": "news",
+ "x": null,
+ "topics": [
+  {
+   "slug": "%E8%A1%8C%E4%B8%9A%E5%8A%A8%E6%80%81",
+   "name": "行业动态"
+  },
+  {
+   "slug": "%E6%94%BF%E7%AD%96%2F%E7%9B%91%E7%AE%A1",
+   "name": "政策/监管"
+  }
+ ],
+ "hasTranslation": false,
+ "bodyLanguage": "zh",
+ "readingMode": "summary-only",
+ "indexable": true,
+ "markdownAvailable": false,
+ "relatedStories": [],
+ "outline": [],
+ "author": null,
+ "group": null,
+ "body": {
+  "zh": "迪士尼通过 Character.AI 的破产程序收购其人员和大部分技术栈，从而绕开导致后者陷入困境的诉讼与多州调查。Character.AI 在 2025 年 8 月曾与投资银行寻找买家或投资方，但反馈称围绕它的诉讼和监管压力让公司难以被收购；同年 11 月多州总检察长启动调查，破产时参与调查的州和地区增至 46 个。在破产程序中提交利益通知的 40 个州表示保留挑战任何破产计划的权利。",
+  "original": null,
+  "zhKind": "original",
+  "complete": false
+ }
+}

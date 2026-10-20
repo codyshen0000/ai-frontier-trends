@@ -1,0 +1,57 @@
+{
+ "id": "d0tl7eidxoifx1h07wrw9rw6k",
+ "title": "四个 Gemini 4 Argon 智能体无人类协助通关 Minecraft",
+ "summary": "Google DeepMind 团队让四个运行 Gemini 4 Argon 的 AI 智能体在随机生成的世界中自主通关 Minecraft，击杀末影龙，全程无人类输入。",
+ "reason": "四个 Gemini 4 Argon 智能体在无人类干预下通关 Minecraft，可观察多智能体自主分工与协作的完整过程。",
+ "source": {
+  "name": "The Decoder"
+ },
+ "publishedAt": "2026-10-18T12:39:51.000Z",
+ "timelineAt": "2026-10-18T12:39:51.000Z",
+ "category": "paper",
+ "tags": [
+  "论文/研究",
+  "Agent",
+  "Google"
+ ],
+ "selected": true,
+ "channel": "news",
+ "x": null,
+ "topics": [
+  {
+   "slug": "%E8%AE%BA%E6%96%87%2F%E7%A0%94%E7%A9%B6",
+   "name": "论文/研究"
+  },
+  {
+   "slug": "Agent",
+   "name": "Agent"
+  },
+  {
+   "slug": "Google",
+   "name": "Google"
+  }
+ ],
+ "hasTranslation": true,
+ "bodyLanguage": "zh",
+ "readingMode": "summary-only",
+ "indexable": true,
+ "markdownAvailable": false,
+ "relatedStories": [
+  {
+   "publicId": "2026-10-18-eng-dba93773",
+   "title": "四个 Gemini 4 Argon 智能体无人类协助通关 Minecraft"
+  }
+ ],
+ "outline": [],
+ "author": null,
+ "group": null,
+ "body": {
+  "zh": "Google DeepMind 团队让四个运行 Gemini 4 Argon 的 AI 智能体在随机生成的世界中自主通关 Minecraft，击杀末影龙，全程无人类输入。",
+  "original": null,
+  "zhKind": "translation",
+  "complete": false
+ },
+ "originalTitle": "Four Gemini 4 Argon agents beat Minecraft without any human help",
+ "storyPublicId": "2026-10-18-eng-dba93773",
+ "originalUrl": "https://the-decoder.com/four-gemini-4-argon-agents-beat-minecraft-without-any-human-help/"
+}

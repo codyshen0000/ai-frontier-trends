@@ -1,0 +1,79 @@
+{
+ "id": "c3dbnylfsnomscpb2apkkkd2a",
+ "title": "AINews 汇总：DeepSeek V4.1 Flash 1017 等模型发布与行业动态",
+ "summary": "Latent Space 的 AINews 汇总了 10 月 16 日至 19 日的 AI 动态，其中 DeepSeek V4.1 Flash 1017 被 Artificial Analysis 列为 552B 总参数、16B 激活的 MoE 模型，支持 1M token 上下文和 MIT 许可，高峰时段定价为每百万输入/输出 token 0.30/1.20 美元。",
+ "reason": null,
+ "source": {
+  "name": "Latent Space"
+ },
+ "publishedAt": "2026-10-20T05:21:52.000Z",
+ "timelineAt": "2026-10-20T05:21:52.000Z",
+ "category": "industry",
+ "tags": [
+  "行业动态",
+  "模型发布",
+  "开源/仓库",
+  "Agent",
+  "DeepSeek",
+  "Anthropic",
+  "Google",
+  "Meta",
+  "OpenAI"
+ ],
+ "selected": false,
+ "channel": "news",
+ "x": null,
+ "topics": [
+  {
+   "slug": "%E8%A1%8C%E4%B8%9A%E5%8A%A8%E6%80%81",
+   "name": "行业动态"
+  },
+  {
+   "slug": "%E6%A8%A1%E5%9E%8B%E5%8F%91%E5%B8%83",
+   "name": "模型发布"
+  },
+  {
+   "slug": "%E5%BC%80%E6%BA%90%2F%E4%BB%93%E5%BA%93",
+   "name": "开源/仓库"
+  },
+  {
+   "slug": "Agent",
+   "name": "Agent"
+  },
+  {
+   "slug": "DeepSeek",
+   "name": "DeepSeek"
+  },
+  {
+   "slug": "Anthropic",
+   "name": "Anthropic"
+  },
+  {
+   "slug": "Google",
+   "name": "Google"
+  },
+  {
+   "slug": "Meta",
+   "name": "Meta"
+  },
+  {
+   "slug": "OpenAI",
+   "name": "OpenAI"
+  }
+ ],
+ "hasTranslation": false,
+ "bodyLanguage": "zh",
+ "readingMode": "summary-only",
+ "indexable": true,
+ "markdownAvailable": false,
+ "relatedStories": [],
+ "outline": [],
+ "author": null,
+ "group": null,
+ "body": {
+  "zh": "Latent Space 的 AINews 汇总了 10 月 16 日至 19 日的 AI 动态，其中 DeepSeek V4.1 Flash 1017 被 Artificial Analysis 列为 552B 总参数、16B 激活的 MoE 模型，支持 1M token 上下文和 MIT 许可，高峰时段定价为每百万输入/输出 token 0.30/1.20 美元。",
+  "original": null,
+  "zhKind": "original",
+  "complete": false
+ }
+}

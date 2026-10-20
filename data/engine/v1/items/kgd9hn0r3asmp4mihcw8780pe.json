@@ -1,0 +1,54 @@
+{
+ "id": "kgd9hn0r3asmp4mihcw8780pe",
+ "title": "Laplace Intelligence 为机器人和自动驾驶汽车做部署前红队测试",
+ "summary": "Laplace Intelligence 正在为机器人和物理 AI 构建自动化红队测试，用基于 Nvidia Cosmos 后训练的高保真仿真环境加 AI 智能体自动设计 corner case，让系统在部署前暴露并修复问题。",
+ "reason": null,
+ "source": {
+  "name": "TechCrunch · AI"
+ },
+ "publishedAt": "2026-10-19T12:30:00.000Z",
+ "timelineAt": "2026-10-20T08:21:38.409Z",
+ "category": "industry",
+ "tags": [
+  "行业动态",
+  "安全/对齐",
+  "具身智能",
+  "部署/工程"
+ ],
+ "selected": false,
+ "channel": "news",
+ "x": null,
+ "topics": [
+  {
+   "slug": "%E8%A1%8C%E4%B8%9A%E5%8A%A8%E6%80%81",
+   "name": "行业动态"
+  },
+  {
+   "slug": "%E5%AE%89%E5%85%A8%2F%E5%AF%B9%E9%BD%90",
+   "name": "安全/对齐"
+  },
+  {
+   "slug": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD",
+   "name": "具身智能"
+  },
+  {
+   "slug": "%E9%83%A8%E7%BD%B2%2F%E5%B7%A5%E7%A8%8B",
+   "name": "部署/工程"
+  }
+ ],
+ "hasTranslation": false,
+ "bodyLanguage": "zh",
+ "readingMode": "summary-only",
+ "indexable": true,
+ "markdownAvailable": false,
+ "relatedStories": [],
+ "outline": [],
+ "author": null,
+ "group": null,
+ "body": {
+  "zh": "Laplace Intelligence 正在为机器人和物理 AI 构建自动化红队测试，用基于 Nvidia Cosmos 后训练的高保真仿真环境加 AI 智能体自动设计 corner case，让系统在部署前暴露并修复问题。",
+  "original": null,
+  "zhKind": "original",
+  "complete": false
+ }
+}

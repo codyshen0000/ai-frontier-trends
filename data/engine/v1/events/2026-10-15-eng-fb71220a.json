@@ -11,7 +11,9 @@
  "summary": "Anthropic 在周三的投资者活动上披露，第三季度收入为 168 亿美元，较上一季度增长近 50%，并称公司正在筹备 IPO。据 FT 报道，其 Q1 收入约 48 亿美元、Q2 为 115 亿美元；Q3 每在算力上花 1 美元带来 1.70 美元收入，剔除股权激励后的调整后营业利润率为 11%。",
  "excerpt": null,
  "latest": null,
- "latestReport": null,
+ "latestReport": {
+  "id": "by4nc4xol84dsg0jt7li38u4u"
+ },
  "whyHot": {
   "participants48h": 1,
   "newParticipants6h": 0,
@@ -54,5 +56,24 @@
    "originalUrl": "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/"
   }
  ],
- "heat": []
+ "heat": [],
+ "related": [],
+ "topics": [
+  {
+   "slug": "%E8%A1%8C%E4%B8%9A%E5%8A%A8%E6%80%81",
+   "name": "行业动态"
+  },
+  {
+   "slug": "Anthropic",
+   "name": "Anthropic"
+  }
+ ],
+ "participants": [
+  {
+   "name": "Simon Willison",
+   "kind": "editorial"
+  }
+ ],
+ "recommendReason": "原文梳理了 Anthropic 三个季度的收入、算力投入产出比和利润率，并给出蒸馏收入占比的推算。",
+ "primaryUrl": "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/"
 }

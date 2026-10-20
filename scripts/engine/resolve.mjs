@@ -64,6 +64,11 @@ function emptyBundle(dir) {
     redirects: [],
     sources: [],
     search: null,
+    items: [],
+    topics: [],
+    allTimeline: null,
+    weeklyIndex: [],
+    monthlyIndex: [],
   };
 }
 

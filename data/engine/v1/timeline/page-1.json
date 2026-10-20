@@ -26,6 +26,7 @@
     "selected": true,
     "channel": "news",
     "x": null,
+    "originalTitle": "MiniMax M3.1 Flash shows China's AI price race has no floor in sight",
     "storyPublicId": "2026-10-19-eng-b5934db2",
     "originalUrl": "https://the-decoder.com/minimax-m3-1-flash-shows-chinas-ai-price-race-has-no-floor-in-sight/"
    },
@@ -54,6 +55,7 @@
     "selected": true,
     "channel": "news",
     "x": null,
+    "originalTitle": "Anthropic has nearly stopped hiring junior staff because AI agents now work six times as many hours",
     "storyPublicId": "2026-10-18-eng-f58aae6c",
     "originalUrl": "https://the-decoder.com/anthropic-has-nearly-stopped-hiring-junior-staff-because-ai-agents-now-work-six-times-as-many-hours/"
    },
@@ -81,6 +83,7 @@
     "selected": true,
     "channel": "news",
     "x": null,
+    "originalTitle": "Four Gemini 4 Argon agents beat Minecraft without any human help",
     "storyPublicId": "2026-10-18-eng-dba93773",
     "originalUrl": "https://the-decoder.com/four-gemini-4-argon-agents-beat-minecraft-without-any-human-help/"
    },
@@ -108,6 +111,7 @@
     "selected": true,
     "channel": "news",
     "x": null,
+    "originalTitle": "OpenAI models hacked a crypto wallet and breached more websites",
     "storyPublicId": "2026-10-16-eng-1eb5a3de",
     "originalUrl": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/"
    },
@@ -136,6 +140,7 @@
     "selected": true,
     "channel": "news",
     "x": null,
+    "originalTitle": "Grounding AI agents in biological reality: Building blocks for autonomous wet labs",
     "storyPublicId": "2026-10-16-eng-24aaf126",
     "originalUrl": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/"
    },
@@ -165,6 +170,7 @@
     "selected": true,
     "channel": "news",
     "x": null,
+    "originalTitle": "Welcome Beam: a 501B open model you can own, customize, and scale",
     "storyPublicId": "2026-10-16-eng-3fa6fd9a",
     "originalUrl": "https://huggingface.co/blog/reflection-beam"
    },
@@ -194,6 +200,7 @@
     "selected": true,
     "channel": "news",
     "x": null,
+    "originalTitle": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
     "storyPublicId": "2026-10-15-eng-b2debdca",
     "originalUrl": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1"
    },
@@ -222,6 +229,7 @@
     "selected": true,
     "channel": "news",
     "x": null,
+    "originalTitle": "Be There for the Beginning: Celebrate the Launch of NVIDIA RTX Spark",
     "storyPublicId": "2026-10-15-eng-b7435bdb",
     "originalUrl": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-launch-event-invite/"
    },
@@ -250,6 +258,7 @@
     "selected": true,
     "channel": "news",
     "x": null,
+    "originalTitle": "Proof-based general-purpose computing with Magnetar",
     "storyPublicId": "2026-10-15-eng-c5482847",
     "originalUrl": "https://www.microsoft.com/en-us/research/blog/proof-based-general-purpose-computing-with-magnetar/"
    },
@@ -278,6 +287,7 @@
     "selected": true,
     "channel": "news",
     "x": null,
+    "originalTitle": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models",
     "storyPublicId": "2026-10-15-eng-2727ac35",
     "originalUrl": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
    },
@@ -304,6 +314,7 @@
     "selected": true,
     "channel": "news",
     "x": null,
+    "originalTitle": "Anthropic tells investors quarterly revenue up nearly 50% to $16.8bn ahead of IPO",
     "storyPublicId": "2026-10-15-eng-fb71220a",
     "originalUrl": "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/"
    },
@@ -332,6 +343,7 @@
     "selected": true,
     "channel": "news",
     "x": null,
+    "originalTitle": "Introducing Timestral",
     "storyPublicId": "2026-10-15-eng-d5645f58",
     "originalUrl": "https://mistral.ai/news/timestral/"
    },
@@ -361,6 +373,7 @@
     "selected": true,
     "channel": "news",
     "x": null,
+    "originalTitle": "Apertus 1.5 Release Notes",
     "storyPublicId": "2026-10-15-eng-f4f24b96",
     "originalUrl": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes"
    },
@@ -372,8 +385,8 @@
    "item": {
     "id": "b5rzbs6d3kyj177hi5t6icnlb",
     "title": "Meta 发布开源权重多模态 MoE 模型 Muse Spark Open",
-    "summary": "Meta 发布开源权重模型 Muse Spark Open，采用 MoE 架构，总参数约 816B、每 token 激活约 42B，上下文窗口最高 1M token，可接收文本、图像、音频和视频输入并输出文本。",
-    "reason": "原文给出 816B 总参数、42B 激活的 MoE 架构与多模态输入细节，读者可据此判断本地部署与微调门槛。",
+    "summary": "Meta 发布开源权重模型 Muse Spark Open，采用 MoE 架构，总参数约 816 B、每 token 激活约 42B，上下文窗口最高 1M token，可接收文本、图像、音频和视频输入并输出文本。",
+    "reason": "原文给出 816 B 总参数、42B 激活的 MoE 架构与多模态输入细节，读者可据此判断本地部署与微调门槛。",
     "source": {
      "name": "Hugging Face Blog"
     },
@@ -392,6 +405,7 @@
     "selected": true,
     "channel": "news",
     "x": null,
+    "originalTitle": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
     "storyPublicId": "2026-10-15-eng-e8822a8d",
     "originalUrl": "https://huggingface.co/blog/meta-muse-spark-open"
    },
@@ -420,6 +434,7 @@
     "selected": true,
     "channel": "news",
     "x": null,
+    "originalTitle": "Welcome FLUX.3 Image Klein in Diffusers",
     "storyPublicId": "2026-10-15-eng-42ffacd1",
     "originalUrl": "https://huggingface.co/blog/flux-3"
    },
@@ -449,6 +464,7 @@
     "selected": true,
     "channel": "news",
     "x": null,
+    "originalTitle": "Putting Earth AI to work: Geospatial agents for our planet's biggest challenges",
     "storyPublicId": "2026-10-14-eng-a4cfee40",
     "originalUrl": "https://research.google/blog/putting-earth-ai-to-work-geospatial-agents-for-our-planets-biggest-challenges/"
    },
@@ -476,6 +492,7 @@
     "selected": true,
     "channel": "news",
     "x": null,
+    "originalTitle": "Analyzing technical documents with Deep Review",
     "storyPublicId": "2026-10-14-eng-b4fee37a",
     "originalUrl": "https://research.google/blog/analyzing-technical-documents-with-deep-review/"
    },
@@ -505,6 +522,7 @@
     "selected": true,
     "channel": "news",
     "x": null,
+    "originalTitle": "[AINews] AI Engineer NYC: Gemini 4 Argon, Vals AI Benchmarks",
     "storyPublicId": "2026-10-14-eng-89be6f53",
     "originalUrl": "https://www.latent.space/p/ainews-ai-engineer-nyc-gemini-4-argon"
    },
@@ -533,6 +551,7 @@
     "selected": true,
     "channel": "news",
     "x": null,
+    "originalTitle": "Dyna-2: General Purpose Physical Agents with Hour-Long Autonomy — Jason Ma, Dyna Robotics",
     "storyPublicId": "2026-10-13-eng-b2980e6e",
     "originalUrl": "https://www.latent.space/p/dyna"
    },
@@ -560,6 +579,7 @@
     "selected": true,
     "channel": "news",
     "x": null,
+    "originalTitle": "Developing Gemini 4 Argon responsibly and safely",
     "storyPublicId": "2026-10-13-eng-76cf47fa",
     "originalUrl": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/"
    },

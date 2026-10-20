@@ -1,0 +1,49 @@
+{
+ "id": "f8tb7bwx18y52qeav3een1l75",
+ "title": "德国想引领全球工业 AI：NVIDIA 将如何助力",
+ "summary": "NVIDIA 与德国联邦政府签署联合意向声明，将围绕物理 AI 前沿模型展开联合计划，并扩大与德国“工业 4.0 平台”的合作。黄仁勋同时宣布对 Agile Robots、Avelios Medical、Mirelo 和 Reflex Aerospace 四家德国初创公司的新投资，属于 NVIDIA 对欧洲近 100 亿美元承诺的一部分。",
+ "reason": null,
+ "source": {
+  "name": "NVIDIA Blog"
+ },
+ "publishedAt": "2026-10-19T19:27:08.000Z",
+ "timelineAt": "2026-10-19T19:27:08.000Z",
+ "category": "industry",
+ "tags": [
+  "行业动态",
+  "政策/监管",
+  "部署/工程"
+ ],
+ "selected": false,
+ "channel": "news",
+ "x": null,
+ "topics": [
+  {
+   "slug": "%E8%A1%8C%E4%B8%9A%E5%8A%A8%E6%80%81",
+   "name": "行业动态"
+  },
+  {
+   "slug": "%E6%94%BF%E7%AD%96%2F%E7%9B%91%E7%AE%A1",
+   "name": "政策/监管"
+  },
+  {
+   "slug": "%E9%83%A8%E7%BD%B2%2F%E5%B7%A5%E7%A8%8B",
+   "name": "部署/工程"
+  }
+ ],
+ "hasTranslation": false,
+ "bodyLanguage": "zh",
+ "readingMode": "summary-only",
+ "indexable": true,
+ "markdownAvailable": false,
+ "relatedStories": [],
+ "outline": [],
+ "author": null,
+ "group": null,
+ "body": {
+  "zh": "NVIDIA 与德国联邦政府签署联合意向声明，将围绕物理 AI 前沿模型展开联合计划，并扩大与德国“工业 4.0 平台”的合作。黄仁勋同时宣布对 Agile Robots、Avelios Medical、Mirelo 和 Reflex Aerospace 四家德国初创公司的新投资，属于 NVIDIA 对欧洲近 100 亿美元承诺的一部分。",
+  "original": null,
+  "zhKind": "original",
+  "complete": false
+ }
+}

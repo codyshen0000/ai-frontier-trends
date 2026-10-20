@@ -1,0 +1,67 @@
+{
+ "id": "pm5shqi6ekqwkng9dvgjsm8p0",
+ "title": "Google 发布地理空间推理智能体技术报告并扩大 Earth AI 早期访问",
+ "summary": "Google Research 发布地理空间推理智能体技术报告，在 CBGB、UnivEARTH 及新构建的 GeoExpertQueries、GeoKTools 四个基准上对比四种智能体配置，结果显示接入 Earth AI 专用工具能显著提升定量空间任务表现，而开放式问题还需前置规划环节。",
+ "reason": "技术报告用四个基准对比四种智能体配置，量化领域工具与前置规划对地理空间推理的增益。",
+ "source": {
+  "name": "Google Research"
+ },
+ "publishedAt": "2026-10-14T16:14:00.000Z",
+ "timelineAt": "2026-10-14T16:14:00.000Z",
+ "category": "paper",
+ "tags": [
+  "论文/研究",
+  "Agent",
+  "Google",
+  "评测/基准",
+  "数据/训练"
+ ],
+ "selected": true,
+ "channel": "news",
+ "x": null,
+ "topics": [
+  {
+   "slug": "%E8%AE%BA%E6%96%87%2F%E7%A0%94%E7%A9%B6",
+   "name": "论文/研究"
+  },
+  {
+   "slug": "Agent",
+   "name": "Agent"
+  },
+  {
+   "slug": "Google",
+   "name": "Google"
+  },
+  {
+   "slug": "%E8%AF%84%E6%B5%8B%2F%E5%9F%BA%E5%87%86",
+   "name": "评测/基准"
+  },
+  {
+   "slug": "%E6%95%B0%E6%8D%AE%2F%E8%AE%AD%E7%BB%83",
+   "name": "数据/训练"
+  }
+ ],
+ "hasTranslation": true,
+ "bodyLanguage": "zh",
+ "readingMode": "summary-only",
+ "indexable": true,
+ "markdownAvailable": false,
+ "relatedStories": [
+  {
+   "publicId": "2026-10-14-eng-a4cfee40",
+   "title": "Google 发布地理空间推理智能体技术报告并扩大 Earth AI 早期访问"
+  }
+ ],
+ "outline": [],
+ "author": null,
+ "group": null,
+ "body": {
+  "zh": "Google Research 发布地理空间推理智能体技术报告，在 CBGB、UnivEARTH 及新构建的 GeoExpertQueries、GeoKTools 四个基准上对比四种智能体配置，结果显示接入 Earth AI 专用工具能显著提升定量空间任务表现，而开放式问题还需前置规划环节。",
+  "original": null,
+  "zhKind": "translation",
+  "complete": false
+ },
+ "originalTitle": "Putting Earth AI to work: Geospatial agents for our planet's biggest challenges",
+ "storyPublicId": "2026-10-14-eng-a4cfee40",
+ "originalUrl": "https://research.google/blog/putting-earth-ai-to-work-geospatial-agents-for-our-planets-biggest-challenges/"
+}

@@ -1,0 +1,59 @@
+{
+ "id": "hspum86l5hqg0eruqfhb5yl53",
+ "title": "如何在 VS Code 中继续 GitHub Copilot 应用会话",
+ "summary": "GitHub Copilot 应用中的会话可直接在 VS Code 中打开并继续，保留原有对话、代码改动和工作上下文。VS Code 会以该会话关联的 worktree 打开项目，并在 Copilot 侧边栏显示同一会话，便于逐行审查 diff、手动编辑、本地运行测试，最后提交并推送到会话对应的 pull request。",
+ "reason": null,
+ "source": {
+  "name": "GitHub Blog · AI & ML"
+ },
+ "publishedAt": "2026-10-19T18:47:22.000Z",
+ "timelineAt": "2026-10-19T18:47:22.000Z",
+ "category": "tutorial",
+ "tags": [
+  "教程/实践",
+  "编码",
+  "Agent",
+  "GitHub",
+  "Microsoft"
+ ],
+ "selected": false,
+ "channel": "news",
+ "x": null,
+ "topics": [
+  {
+   "slug": "%E6%95%99%E7%A8%8B%2F%E5%AE%9E%E8%B7%B5",
+   "name": "教程/实践"
+  },
+  {
+   "slug": "%E7%BC%96%E7%A0%81",
+   "name": "编码"
+  },
+  {
+   "slug": "Agent",
+   "name": "Agent"
+  },
+  {
+   "slug": "GitHub",
+   "name": "GitHub"
+  },
+  {
+   "slug": "Microsoft",
+   "name": "Microsoft"
+  }
+ ],
+ "hasTranslation": false,
+ "bodyLanguage": "zh",
+ "readingMode": "summary-only",
+ "indexable": true,
+ "markdownAvailable": false,
+ "relatedStories": [],
+ "outline": [],
+ "author": null,
+ "group": null,
+ "body": {
+  "zh": "GitHub Copilot 应用中的会话可直接在 VS Code 中打开并继续，保留原有对话、代码改动和工作上下文。VS Code 会以该会话关联的 worktree 打开项目，并在 Copilot 侧边栏显示同一会话，便于逐行审查 diff、手动编辑、本地运行测试，最后提交并推送到会话对应的 pull request。",
+  "original": null,
+  "zhKind": "original",
+  "complete": false
+ }
+}

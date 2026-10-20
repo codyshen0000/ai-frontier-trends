@@ -791,3 +791,14 @@ a.sr-only[href="#main"]:focus {
   clip: auto !important;
   padding: 0.5rem 0.75rem !important;
 }
+
+.ft-lang:has(input[value="zh"]:checked) [data-lang-panel="original"] { display: none; }
+.ft-lang:has(input[value="original"]:checked) [data-lang-panel="zh"] { display: none; }
+.ft-lang label[for] {
+  cursor: pointer;
+}
+.ft-lang:has(input[value="zh"]:checked) label[data-lang="zh"],
+.ft-lang:has(input[value="original"]:checked) label[data-lang="original"] {
+  background: var(--ink);
+  color: var(--bg);
+}

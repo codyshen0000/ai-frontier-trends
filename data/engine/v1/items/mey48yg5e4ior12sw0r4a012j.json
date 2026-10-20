@@ -1,0 +1,49 @@
+{
+ "id": "mey48yg5e4ior12sw0r4a012j",
+ "title": "Anthropic 扩展 Cyber Verification Program，推出三档访问权限",
+ "summary": "Anthropic 推出扩展版 Cyber Verification Program（CVP），将 Project Glasswing 与原有 CVP 合并，按防御、红队、专项三档向通过审核的安全团队开放 Claude Opus 5.5、Sonnet 5.5、Mythos 5.1 等模型并降低拦截。",
+ "reason": null,
+ "source": {
+  "name": "Bot smoke free (editorial)"
+ },
+ "publishedAt": "2026-10-18T12:00:00.000Z",
+ "timelineAt": "2026-10-20T08:19:14.118Z",
+ "category": "product",
+ "tags": [
+  "产品更新",
+  "安全/对齐",
+  "Anthropic"
+ ],
+ "selected": false,
+ "channel": "news",
+ "x": null,
+ "topics": [
+  {
+   "slug": "%E4%BA%A7%E5%93%81%E6%9B%B4%E6%96%B0",
+   "name": "产品更新"
+  },
+  {
+   "slug": "%E5%AE%89%E5%85%A8%2F%E5%AF%B9%E9%BD%90",
+   "name": "安全/对齐"
+  },
+  {
+   "slug": "Anthropic",
+   "name": "Anthropic"
+  }
+ ],
+ "hasTranslation": false,
+ "bodyLanguage": "zh",
+ "readingMode": "summary-only",
+ "indexable": true,
+ "markdownAvailable": false,
+ "relatedStories": [],
+ "outline": [],
+ "author": null,
+ "group": null,
+ "body": {
+  "zh": "Anthropic 推出扩展版 Cyber Verification Program（CVP），将 Project Glasswing 与原有 CVP 合并，按防御、红队、专项三档向通过审核的安全团队开放 Claude Opus 5.5、Sonnet 5.5、Mythos 5.1 等模型并降低拦截。",
+  "original": null,
+  "zhKind": "original",
+  "complete": false
+ }
+}

@@ -11,7 +11,9 @@
  "summary": "Google DeepMind 发布 Gemini 4 Argon 的安全与责任开发说明，并开始广泛推送该模型、扩大 Fairwind Program 的受信任网络安全防御者范围。",
  "excerpt": null,
  "latest": null,
- "latestReport": null,
+ "latestReport": {
+  "id": "hp7igpt3j7jznojgk8330pqoh"
+ },
  "whyHot": {
   "participants48h": 1,
   "newParticipants6h": 0,
@@ -54,5 +56,28 @@
    "originalUrl": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/"
   }
  ],
- "heat": []
+ "heat": [],
+ "related": [],
+ "topics": [
+  {
+   "slug": "%E6%A8%A1%E5%9E%8B%E5%8F%91%E5%B8%83",
+   "name": "模型发布"
+  },
+  {
+   "slug": "%E5%AE%89%E5%85%A8%2F%E5%AF%B9%E9%BD%90",
+   "name": "安全/对齐"
+  },
+  {
+   "slug": "Google",
+   "name": "Google"
+  }
+ ],
+ "participants": [
+  {
+   "name": "Google DeepMind",
+   "kind": "editorial"
+  }
+ ],
+ "recommendReason": "原文披露了 Gemini 4 Argon 在网络安全与生物风险上的防护设计，以及实时错位监控的实测数据。",
+ "primaryUrl": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/"
 }

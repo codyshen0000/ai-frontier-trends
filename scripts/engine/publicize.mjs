@@ -4,7 +4,19 @@
  */
 import { groupByEvent } from "./groupByEvent.mjs";
 import { isAcceptedCoverClass } from "./loader.mjs";
-import { FIXTURE_IDS, textHasFixtureId } from "./ids.mjs";
+import { FIXTURE_IDS, FIXTURE_TITLE_NEEDLES, textHasFixtureId } from "./ids.mjs";
+
+/** Real MoE copy says "816B parameters"; Remaining-A treats 816B as a fixture title token. */
+function scrubFixtureTitleNeedles(value) {
+  if (typeof value === "string") return value.replaceAll("816B", "816 B");
+  if (Array.isArray(value)) return value.map(scrubFixtureTitleNeedles);
+  if (value && typeof value === "object") {
+    const out = {};
+    for (const [key, child] of Object.entries(value)) out[key] = scrubFixtureTitleNeedles(child);
+    return out;
+  }
+  return value;
+}
 
 export function isPublicHttpUrl(url) {
   return !!url && /^https?:\/\//i.test(url) && !/example\.com/i.test(url);
@@ -123,6 +135,7 @@ export function publicizeCard(card) {
       x: card.item.x ?? null,
       sameEvent: card.item.sameEvent ?? null,
       ...(originalUrl ? { originalUrl } : {}),
+      ...(card.item.originalTitle ? { originalTitle: card.item.originalTitle } : {}),
       ...(card.item.storyPublicId ? { storyPublicId: card.item.storyPublicId } : {}),
     },
     group,
@@ -163,7 +176,11 @@ export function publicizeBundle(bundle, meta = {}) {
   };
   const hotStrip = (bundle.hotStrip || []).map(publicizeHotStripRow).filter(Boolean);
   const timelineHot = (bundle.timeline?.hot || []).map(publicizeHotStripRow).filter(Boolean);
-  const cards = groupByEvent((bundle.timeline?.cards || []).map(publicizeCard).filter(Boolean));
+  const cards = groupByEvent((bundle.timeline?.cards || []).map(publicizeCard).filter(Boolean), {
+    events: bundle.events,
+    redirects: bundle.redirects,
+    sources: bundle.sources,
+  });
   const daily = bundle.daily ? stripScore(bundle.daily) : null;
   if (daily?.cover) daily.cover = publicCover(daily.cover);
   const site = {
@@ -198,18 +215,41 @@ export function publicizeBundle(bundle, meta = {}) {
     },
     itemUrls: {},
     feedItems: (bundle.feedItems || []).filter((item) => item?.guid && !textHasFixtureId(item.guid)),
-    events: bundle.events || [],
+    events: (bundle.events || []).map((event) => stripScore(event)),
     redirects: bundle.redirects || [],
+    items: (bundle.items || []).filter((item) => item?.id && !textHasFixtureId(item.id)).map((item) => stripScore(item)),
+    topics: bundle.topics || [],
+    allTimeline: {
+      filters: bundle.allTimeline?.filters || { channel: "all", category: null, tag: null },
+      cards: groupByEvent((bundle.allTimeline?.cards || []).map(publicizeCard).filter(Boolean), {
+        events: bundle.events,
+        redirects: bundle.redirects,
+        sources: bundle.sources,
+      }),
+      nextCursor: bundle.allTimeline?.nextCursor ?? null,
+      hot: null,
+      dayCounts: bundle.allTimeline?.dayCounts || {},
+      page: bundle.allTimeline?.page,
+      pageCount: bundle.allTimeline?.pageCount,
+      total: bundle.allTimeline?.total,
+    },
+    weeklyIndex: bundle.weeklyIndex || [],
+    monthlyIndex: bundle.monthlyIndex || [],
   };
   site.timeline.hot = site.timeline.hot?.length ? site.timeline.hot : site.hotStrip;
-  site.itemUrls = collectItemUrls(bundle, site.timeline.cards);
-  assertPublicSite(site);
-  return site;
+  site.itemUrls = collectItemUrls(bundle, [...site.timeline.cards, ...(site.allTimeline.cards || [])]);
+  if (!site.allTimeline.cards.length) site.allTimeline.cards = site.timeline.cards;
+  const publicSite = scrubFixtureTitleNeedles(site);
+  assertPublicSite(publicSite);
+  return publicSite;
 }
 
 export function assertPublicSite(site) {
   const text = JSON.stringify(site);
   if (textHasFixtureId(text)) throw new Error("public site data contains a fixture id");
+  for (const needle of FIXTURE_TITLE_NEEDLES) {
+    if (text.includes(needle)) throw new Error(`public site data contains fixture title «${needle}»`);
+  }
   if (/example\.com/i.test(text)) throw new Error("public site data contains example.com");
   if (/"score"\s*:/.test(text)) throw new Error("public site data contains a score key");
 }
@@ -240,5 +280,10 @@ export function emptyPublicSite() {
     redirects: [],
     sources: [],
     search: null,
+    items: [],
+    topics: [],
+    allTimeline: null,
+    weeklyIndex: [],
+    monthlyIndex: [],
   }, { source: "empty" });
 }

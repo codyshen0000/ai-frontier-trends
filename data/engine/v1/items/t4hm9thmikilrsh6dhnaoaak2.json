@@ -1,0 +1,54 @@
+{
+ "id": "t4hm9thmikilrsh6dhnaoaak2",
+ "title": "英伟达发布 Nemotron 3.5 Super VL 与两款 Bolt 开放权重模型",
+ "summary": "英伟达发布面向常驻智能体和边缘计算的开放权重模型，包括 1200 亿参数的 Nemotron 3.5 Super VL，以及面向本地 AI PC 和 DGX Spark 工作站的 Nemotron 3.5 Bolt 74B-A9B 24GB 和 Bolt E4B。",
+ "reason": null,
+ "source": {
+  "name": "TechCrunch · AI"
+ },
+ "publishedAt": "2026-10-19T15:37:09.000Z",
+ "timelineAt": "2026-10-20T08:21:38.403Z",
+ "category": "model",
+ "tags": [
+  "模型发布",
+  "Agent",
+  "端侧",
+  "开源生态"
+ ],
+ "selected": false,
+ "channel": "news",
+ "x": null,
+ "topics": [
+  {
+   "slug": "%E6%A8%A1%E5%9E%8B%E5%8F%91%E5%B8%83",
+   "name": "模型发布"
+  },
+  {
+   "slug": "Agent",
+   "name": "Agent"
+  },
+  {
+   "slug": "%E7%AB%AF%E4%BE%A7",
+   "name": "端侧"
+  },
+  {
+   "slug": "%E5%BC%80%E6%BA%90%E7%94%9F%E6%80%81",
+   "name": "开源生态"
+  }
+ ],
+ "hasTranslation": false,
+ "bodyLanguage": "zh",
+ "readingMode": "summary-only",
+ "indexable": true,
+ "markdownAvailable": false,
+ "relatedStories": [],
+ "outline": [],
+ "author": null,
+ "group": null,
+ "body": {
+  "zh": "英伟达发布面向常驻智能体和边缘计算的开放权重模型，包括 1200 亿参数的 Nemotron 3.5 Super VL，以及面向本地 AI PC 和 DGX Spark 工作站的 Nemotron 3.5 Bolt 74B-A9B 24GB 和 Bolt E4B。",
+  "original": null,
+  "zhKind": "original",
+  "complete": false
+ }
+}

@@ -8,6 +8,20 @@
    "homepage": null
   },
   {
+   "sourceId": "eng-5ba5d25e",
+   "name": "Bot smoke free (editorial)",
+   "tier": "T2",
+   "kind": "editorial",
+   "homepage": null
+  },
+  {
+   "sourceId": "eng-fcec49fc",
+   "name": "GitHub Blog · AI & ML",
+   "tier": "T2",
+   "kind": "editorial",
+   "homepage": null
+  },
+  {
    "sourceId": "eng-d7b64618",
    "name": "Google DeepMind",
    "tier": "T2",
@@ -29,8 +43,22 @@
    "homepage": null
   },
   {
+   "sourceId": "eng-dc4ba030",
+   "name": "Import AI",
+   "tier": "T2",
+   "kind": "editorial",
+   "homepage": null
+  },
+  {
    "sourceId": "eng-ea889419",
    "name": "Latent Space",
+   "tier": "T2",
+   "kind": "editorial",
+   "homepage": null
+  },
+  {
+   "sourceId": "eng-08ebe527",
+   "name": "MIT Technology Review · AI",
    "tier": "T2",
    "kind": "editorial",
    "homepage": null
@@ -57,6 +85,13 @@
    "homepage": null
   },
   {
+   "sourceId": "eng-b314ee88",
+   "name": "OpenAI News",
+   "tier": "T2",
+   "kind": "editorial",
+   "homepage": null
+  },
+  {
    "sourceId": "eng-b4f79f52",
    "name": "Simon Willison",
    "tier": "T2",
@@ -64,8 +99,22 @@
    "homepage": null
   },
   {
+   "sourceId": "eng-0d65664b",
+   "name": "TechCrunch · AI",
+   "tier": "T2",
+   "kind": "editorial",
+   "homepage": null
+  },
+  {
    "sourceId": "eng-c946036f",
    "name": "The Decoder",
+   "tier": "T2",
+   "kind": "editorial",
+   "homepage": null
+  },
+  {
+   "sourceId": "eng-623eaebd",
+   "name": "The Verge · AI",
    "tier": "T2",
    "kind": "editorial",
    "homepage": null

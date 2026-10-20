@@ -4,9 +4,9 @@
  "mode": "preview",
  "data_as_of": "2026-10-20T16:29:05+08:00",
  "data_as_of_label": "数据截至 2026-10-20 16:29（北京时间）",
- "generated_at": "2026-10-20T16:47:16+08:00",
+ "generated_at": "2026-10-20T17:17:01+08:00",
  "hot_rule_version": "private-engine staging (hot empty)",
- "hot_computed_at": null,
+ "hot_computed_at": "2026-10-20T08:25:38.135Z",
  "window_hours": 48,
  "spark_points": 25,
  "page_size": 20,
@@ -21,7 +21,11 @@
   "below_threshold_events": 0,
   "redirects": 0,
   "hot_snapshots": 0,
-  "covers": 0
+  "covers": 0,
+  "items": 59,
+  "topics": 33,
+  "all_cards": 59,
+  "dailies": 0
  },
  "preview": {
   "export_stamp": "20261020-162905",

@@ -1,0 +1,62 @@
+{
+ "id": "p8368ouczlsqr8wgnjca3zhkn",
+ "title": "Anthropic 因 AI 智能体承担更多工时而大幅减少初级岗位招聘",
+ "summary": "Anthropic 内部研究显示，自 2025 年初以来技术部门初级岗位占比从 21% 降至 14%，初级新员工占比从 27% 降至 9%。到 2026 年 8 月，其 AI 智能体的工作时长达到人类员工的 6 倍，研究部门为 19:1，公司称各技术部门产出同步上升。研究也承认 Anthropic 是 AI 使用极密集的特殊案例，结果难以直接推及整体经济。",
+ "reason": "Anthropic 内部研究显示初级岗位占比随 AI 智能体工时上升而下降，可观察 AI 替代入门岗位的组织层面证据。",
+ "source": {
+  "name": "The Decoder"
+ },
+ "publishedAt": "2026-10-18T13:22:26.000Z",
+ "timelineAt": "2026-10-18T13:22:26.000Z",
+ "category": "industry",
+ "tags": [
+  "行业动态",
+  "Agent",
+  "Anthropic",
+  "数据/训练"
+ ],
+ "selected": true,
+ "channel": "news",
+ "x": null,
+ "topics": [
+  {
+   "slug": "%E8%A1%8C%E4%B8%9A%E5%8A%A8%E6%80%81",
+   "name": "行业动态"
+  },
+  {
+   "slug": "Agent",
+   "name": "Agent"
+  },
+  {
+   "slug": "Anthropic",
+   "name": "Anthropic"
+  },
+  {
+   "slug": "%E6%95%B0%E6%8D%AE%2F%E8%AE%AD%E7%BB%83",
+   "name": "数据/训练"
+  }
+ ],
+ "hasTranslation": true,
+ "bodyLanguage": "zh",
+ "readingMode": "summary-only",
+ "indexable": true,
+ "markdownAvailable": false,
+ "relatedStories": [
+  {
+   "publicId": "2026-10-18-eng-f58aae6c",
+   "title": "Anthropic 因 AI 智能体承担更多工时而大幅减少初级岗位招聘"
+  }
+ ],
+ "outline": [],
+ "author": null,
+ "group": null,
+ "body": {
+  "zh": "Anthropic 内部研究显示，自 2025 年初以来技术部门初级岗位占比从 21% 降至 14%，初级新员工占比从 27% 降至 9%。到 2026 年 8 月，其 AI 智能体的工作时长达到人类员工的 6 倍，研究部门为 19:1，公司称各技术部门产出同步上升。研究也承认 Anthropic 是 AI 使用极密集的特殊案例，结果难以直接推及整体经济。",
+  "original": null,
+  "zhKind": "translation",
+  "complete": false
+ },
+ "originalTitle": "Anthropic has nearly stopped hiring junior staff because AI agents now work six times as many hours",
+ "storyPublicId": "2026-10-18-eng-f58aae6c",
+ "originalUrl": "https://the-decoder.com/anthropic-has-nearly-stopped-hiring-junior-staff-because-ai-agents-now-work-six-times-as-many-hours/"
+}

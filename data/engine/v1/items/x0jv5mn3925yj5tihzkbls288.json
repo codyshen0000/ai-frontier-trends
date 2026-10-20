@@ -1,0 +1,54 @@
+{
+ "id": "x0jv5mn3925yj5tihzkbls288",
+ "title": "Kling AI 发布 4.0 版本，支持立体声与多语言口型同步并推出 Flash 轻量版",
+ "summary": "Kling AI 发布视频生成模型 4.0 版本，单次可生成最长 30 秒视频，支持最多 10 张关键帧图像输入，提示词理解扩展到 8,000 tokens。新版本加入双声道立体声和覆盖德语、英语、日语、韩语、西班牙语等十余种语言的口型同步，Omni Reference 单次最多接受 15 个参考素材。",
+ "reason": null,
+ "source": {
+  "name": "The Decoder"
+ },
+ "publishedAt": "2026-10-19T17:36:26.000Z",
+ "timelineAt": "2026-10-19T17:36:26.000Z",
+ "category": "model",
+ "tags": [
+  "模型发布",
+  "视频",
+  "多模态",
+  "Agent"
+ ],
+ "selected": false,
+ "channel": "news",
+ "x": null,
+ "topics": [
+  {
+   "slug": "%E6%A8%A1%E5%9E%8B%E5%8F%91%E5%B8%83",
+   "name": "模型发布"
+  },
+  {
+   "slug": "%E8%A7%86%E9%A2%91",
+   "name": "视频"
+  },
+  {
+   "slug": "%E5%A4%9A%E6%A8%A1%E6%80%81",
+   "name": "多模态"
+  },
+  {
+   "slug": "Agent",
+   "name": "Agent"
+  }
+ ],
+ "hasTranslation": false,
+ "bodyLanguage": "zh",
+ "readingMode": "summary-only",
+ "indexable": true,
+ "markdownAvailable": false,
+ "relatedStories": [],
+ "outline": [],
+ "author": null,
+ "group": null,
+ "body": {
+  "zh": "Kling AI 发布视频生成模型 4.0 版本，单次可生成最长 30 秒视频，支持最多 10 张关键帧图像输入，提示词理解扩展到 8,000 tokens。新版本加入双声道立体声和覆盖德语、英语、日语、韩语、西班牙语等十余种语言的口型同步，Omni Reference 单次最多接受 15 个参考素材。",
+  "original": null,
+  "zhKind": "original",
+  "complete": false
+ }
+}

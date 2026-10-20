@@ -1,0 +1,67 @@
+{
+ "id": "ciuigt7avgsjvhmu5wa2qcvnm",
+ "title": "Reflection 在 Hugging Face 开源 501B 模型 Beam",
+ "summary": "美国新实验室 Reflection 的首个模型 Beam 已在 Hugging Face 开源，采用 MoE 架构，总参数 501B、每 token 激活 23B，支持 1M token 上下文，Apache 2.0 许可，面向编码与智能体场景。",
+ "reason": "原文给出 501B MoE 开源模型的架构细节、多精度基准与 vLLM、SGLang 部署命令，可据此判断自托管门槛。",
+ "source": {
+  "name": "Hugging Face Blog"
+ },
+ "publishedAt": "2026-10-16T00:00:00.000Z",
+ "timelineAt": "2026-10-16T00:00:00.000Z",
+ "category": "model",
+ "tags": [
+  "模型发布",
+  "开源/仓库",
+  "Agent",
+  "编码",
+  "Hugging Face"
+ ],
+ "selected": true,
+ "channel": "news",
+ "x": null,
+ "topics": [
+  {
+   "slug": "%E6%A8%A1%E5%9E%8B%E5%8F%91%E5%B8%83",
+   "name": "模型发布"
+  },
+  {
+   "slug": "%E5%BC%80%E6%BA%90%2F%E4%BB%93%E5%BA%93",
+   "name": "开源/仓库"
+  },
+  {
+   "slug": "Agent",
+   "name": "Agent"
+  },
+  {
+   "slug": "%E7%BC%96%E7%A0%81",
+   "name": "编码"
+  },
+  {
+   "slug": "Hugging%20Face",
+   "name": "Hugging Face"
+  }
+ ],
+ "hasTranslation": true,
+ "bodyLanguage": "zh",
+ "readingMode": "summary-only",
+ "indexable": true,
+ "markdownAvailable": false,
+ "relatedStories": [
+  {
+   "publicId": "2026-10-16-eng-3fa6fd9a",
+   "title": "Reflection 在 Hugging Face 开源 501B 模型 Beam"
+  }
+ ],
+ "outline": [],
+ "author": null,
+ "group": null,
+ "body": {
+  "zh": "美国新实验室 Reflection 的首个模型 Beam 已在 Hugging Face 开源，采用 MoE 架构，总参数 501B、每 token 激活 23B，支持 1M token 上下文，Apache 2.0 许可，面向编码与智能体场景。",
+  "original": null,
+  "zhKind": "translation",
+  "complete": false
+ },
+ "originalTitle": "Welcome Beam: a 501B open model you can own, customize, and scale",
+ "storyPublicId": "2026-10-16-eng-3fa6fd9a",
+ "originalUrl": "https://huggingface.co/blog/reflection-beam"
+}

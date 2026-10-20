@@ -1,0 +1,54 @@
+{
+ "id": "xdhd7cakbn2qy07grr4s7ms1f",
+ "title": "开发者用 AI 智能体给智能电视去广告，GitHub 项目 dumbtv 与 cleanyourtv 走红",
+ "summary": "TechCrunch 报道，近期多位开发者用 AI 智能体改造智能电视，去除赞助广告、加快启动器、重设主屏并关闭观看追踪。",
+ "reason": null,
+ "source": {
+  "name": "TechCrunch · AI"
+ },
+ "publishedAt": "2026-10-19T16:13:22.000Z",
+ "timelineAt": "2026-10-20T08:21:38.395Z",
+ "category": "industry",
+ "tags": [
+  "现象/趋势",
+  "Agent",
+  "编码",
+  "开源/仓库"
+ ],
+ "selected": false,
+ "channel": "news",
+ "x": null,
+ "topics": [
+  {
+   "slug": "%E7%8E%B0%E8%B1%A1%2F%E8%B6%8B%E5%8A%BF",
+   "name": "现象/趋势"
+  },
+  {
+   "slug": "Agent",
+   "name": "Agent"
+  },
+  {
+   "slug": "%E7%BC%96%E7%A0%81",
+   "name": "编码"
+  },
+  {
+   "slug": "%E5%BC%80%E6%BA%90%2F%E4%BB%93%E5%BA%93",
+   "name": "开源/仓库"
+  }
+ ],
+ "hasTranslation": false,
+ "bodyLanguage": "zh",
+ "readingMode": "summary-only",
+ "indexable": true,
+ "markdownAvailable": false,
+ "relatedStories": [],
+ "outline": [],
+ "author": null,
+ "group": null,
+ "body": {
+  "zh": "TechCrunch 报道，近期多位开发者用 AI 智能体改造智能电视，去除赞助广告、加快启动器、重设主屏并关闭观看追踪。",
+  "original": null,
+  "zhKind": "original",
+  "complete": false
+ }
+}

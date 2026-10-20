@@ -3,40 +3,398 @@
   "page": 1,
   "cards": [
     {
-      "key": "sha256:931ff0f85ef4bf70",
-      "anchorAt": "2026-10-17T10:33:28.000Z",
+      "key": "oo9oe25tlho5ejxl9r46iuvzy",
+      "anchorAt": "2026-10-19T18:22:30.000Z",
       "item": {
-        "id": "sha256:931ff0f85ef4bf70",
-        "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
-        "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017：基准更好、完成任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API。The Decoder 与量子位均有报道。",
-        "reason": "开放权重新模型+搜索API，可直接用",
+        "id": "oo9oe25tlho5ejxl9r46iuvzy",
+        "title": "MiniMax 发布 M3.1 Flash 推理模型，单任务成本约 0.22 美元",
+        "summary": "MiniMax 发布推理模型 M3.1 Flash，在 Artificial Analysis 智能指数上得 42 分，比前代 M3 高 13 分，单任务成本不到其一半。",
+        "reason": "MiniMax M3.1 Flash 与 DeepSeek 新品在多项基准上互有胜负，读者可据此比较两家中国厂商的性价比路线。",
         "source": {
           "name": "The Decoder"
         },
-        "publishedAt": "2026-10-17T10:33:28.000Z",
-        "timelineAt": "2026-10-17T10:33:28.000Z",
+        "publishedAt": "2026-10-19T18:22:30.000Z",
+        "timelineAt": "2026-10-19T18:22:30.000Z",
         "category": "model",
-        "tags": [],
+        "tags": [
+          "模型发布",
+          "推理"
+        ],
         "selected": true,
         "channel": "news",
         "x": null,
         "sameEvent": null,
-        "originalUrl": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/",
-        "storyPublicId": "2026-10-19-deepseek-v41-flash-1017",
-        "url": "hot.html#s-sha256:931ff0f85ef4bf70"
+        "originalUrl": "https://the-decoder.com/minimax-m3-1-flash-shows-chinas-ai-price-race-has-no-floor-in-sight/",
+        "originalTitle": "MiniMax M3.1 Flash shows China's AI price race has no floor in sight",
+        "storyPublicId": "2026-10-19-eng-b5934db2",
+        "sourceCount": 1,
+        "sourceNames": [
+          "The Decoder"
+        ],
+        "participants": [
+          {
+            "name": "The Decoder",
+            "kind": "editorial"
+          }
+        ],
+        "url": "https://the-decoder.com/minimax-m3-1-flash-shows-chinas-ai-price-race-has-no-floor-in-sight/"
       },
       "group": {
-        "factId": "fact-2026-10-19-deepseek-v41-flash-1017",
-        "additionalSourceCount": 1,
-        "reportCount": 2,
+        "factId": "2026-10-19-eng-b5934db2",
+        "additionalSourceCount": 0,
+        "reportCount": 1,
         "memberIds": [
-          "sha256:931ff0f85ef4bf70"
+          "oo9oe25tlho5ejxl9r46iuvzy"
+        ]
+      }
+    },
+    {
+      "key": "ciuigt7avgsjvhmu5wa2qcvnm",
+      "anchorAt": "2026-10-16T00:00:00.000Z",
+      "item": {
+        "id": "ciuigt7avgsjvhmu5wa2qcvnm",
+        "title": "Reflection 在 Hugging Face 开源 501B 模型 Beam",
+        "summary": "美国新实验室 Reflection 的首个模型 Beam 已在 Hugging Face 开源，采用 MoE 架构，总参数 501B、每 token 激活 23B，支持 1M token 上下文，Apache 2.0 许可，面向编码与智能体场景。",
+        "reason": "原文给出 501B MoE 开源模型的架构细节、多精度基准与 vLLM、SGLang 部署命令，可据此判断自托管门槛。",
+        "source": {
+          "name": "Hugging Face Blog"
+        },
+        "publishedAt": "2026-10-16T00:00:00.000Z",
+        "timelineAt": "2026-10-16T00:00:00.000Z",
+        "category": "model",
+        "tags": [
+          "模型发布",
+          "开源/仓库",
+          "Agent",
+          "编码",
+          "Hugging Face"
+        ],
+        "selected": true,
+        "channel": "news",
+        "x": null,
+        "sameEvent": null,
+        "originalUrl": "https://huggingface.co/blog/reflection-beam",
+        "originalTitle": "Welcome Beam: a 501B open model you can own, customize, and scale",
+        "storyPublicId": "2026-10-16-eng-3fa6fd9a",
+        "sourceCount": 1,
+        "sourceNames": [
+          "Hugging Face Blog"
+        ],
+        "participants": [
+          {
+            "name": "Hugging Face Blog",
+            "kind": "editorial"
+          }
+        ],
+        "url": "https://huggingface.co/blog/reflection-beam"
+      },
+      "group": {
+        "factId": "2026-10-16-eng-3fa6fd9a",
+        "additionalSourceCount": 0,
+        "reportCount": 1,
+        "memberIds": [
+          "ciuigt7avgsjvhmu5wa2qcvnm"
+        ]
+      }
+    },
+    {
+      "key": "wz1v1gzub17hyhvpvt4xbntyq",
+      "anchorAt": "2026-10-15T20:34:01.000Z",
+      "item": {
+        "id": "wz1v1gzub17hyhvpvt4xbntyq",
+        "title": "IBM 发布 Granite Switch 4.1：单一端点支持对话、决策与语音",
+        "summary": "IBM 发布 Granite Switch 4.1，提供 8B 和 30B 两个版本，在单一托管端点上同时支持自然语言对话、通用与专用决策以及语音转文字。",
+        "reason": "原文说明了多个适配器如何共享同一基座与 KV cache，读者可据此判断多任务部署的显存与速度取舍。",
+        "source": {
+          "name": "Hugging Face Blog"
+        },
+        "publishedAt": "2026-10-15T20:34:01.000Z",
+        "timelineAt": "2026-10-15T20:34:01.000Z",
+        "category": "model",
+        "tags": [
+          "模型发布",
+          "推理",
+          "语音",
+          "开源/仓库",
+          "Hugging Face"
+        ],
+        "selected": true,
+        "channel": "news",
+        "x": null,
+        "sameEvent": null,
+        "originalUrl": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
+        "originalTitle": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
+        "storyPublicId": "2026-10-15-eng-b2debdca",
+        "sourceCount": 1,
+        "sourceNames": [
+          "Hugging Face Blog"
+        ],
+        "participants": [
+          {
+            "name": "Hugging Face Blog",
+            "kind": "editorial"
+          }
+        ],
+        "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1"
+      },
+      "group": {
+        "factId": "2026-10-15-eng-b2debdca",
+        "additionalSourceCount": 0,
+        "reportCount": 1,
+        "memberIds": [
+          "wz1v1gzub17hyhvpvt4xbntyq"
+        ]
+      }
+    },
+    {
+      "key": "j3wlkrwtco1vf8ylxwkngvjks",
+      "anchorAt": "2026-10-15T15:00:24.000Z",
+      "item": {
+        "id": "j3wlkrwtco1vf8ylxwkngvjks",
+        "title": "NVIDIA 发布 Nemotron 3.5 Super VL 与 Bolt 系列开源模型",
+        "summary": "NVIDIA 发布开源 1200 亿参数模型 Nemotron 3.5 Super VL，并同步推出两款边缘模型 Nemotron 3.5 Bolt 74B-A9B 24GB 和 Bolt E4B 4GB。",
+        "reason": "原文给出了三款模型的参数规模、部署层级和开放权重，读者可据此判断本地智能体部署的选型空间。",
+        "source": {
+          "name": "NVIDIA Blog"
+        },
+        "publishedAt": "2026-10-15T15:00:24.000Z",
+        "timelineAt": "2026-10-15T15:00:24.000Z",
+        "category": "model",
+        "tags": [
+          "模型发布",
+          "多模态",
+          "端侧",
+          "开源生态"
+        ],
+        "selected": true,
+        "channel": "news",
+        "x": null,
+        "sameEvent": null,
+        "originalUrl": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+        "originalTitle": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models",
+        "storyPublicId": "2026-10-15-eng-2727ac35",
+        "sourceCount": 1,
+        "sourceNames": [
+          "NVIDIA Blog"
+        ],
+        "participants": [
+          {
+            "name": "NVIDIA Blog",
+            "kind": "editorial"
+          }
+        ],
+        "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
+      },
+      "group": {
+        "factId": "2026-10-15-eng-2727ac35",
+        "additionalSourceCount": 0,
+        "reportCount": 1,
+        "memberIds": [
+          "j3wlkrwtco1vf8ylxwkngvjks"
+        ]
+      }
+    },
+    {
+      "key": "tl1rea0lb89zqjfses1tqjujh",
+      "anchorAt": "2026-10-15T12:00:00.000Z",
+      "item": {
+        "id": "tl1rea0lb89zqjfses1tqjujh",
+        "title": "Mistral 发布时间序列基础模型 Timestral，最大 209M 参数",
+        "summary": "Mistral 发布首个时间序列基础模型系列 Timestral，提供 5M、28M、123M 和 209M 四个尺寸，最大模型在 GIFT-Eval、TIME 和 fev-bench 三项公开基准上排名第一，参数量为前 SOTA 的三分之二。",
+        "reason": "原文给出四个尺寸的参数量、三项基准排名和 CPU 推理延迟，可据此判断时间序列基础模型的效率边界。",
+        "source": {
+          "name": "Mistral AI"
+        },
+        "publishedAt": "2026-10-15T12:00:00.000Z",
+        "timelineAt": "2026-10-15T12:00:00.000Z",
+        "category": "model",
+        "tags": [
+          "模型发布",
+          "数据/训练",
+          "开源/仓库",
+          "评测/基准"
+        ],
+        "selected": true,
+        "channel": "news",
+        "x": null,
+        "sameEvent": null,
+        "originalUrl": "https://mistral.ai/news/timestral/",
+        "originalTitle": "Introducing Timestral",
+        "storyPublicId": "2026-10-15-eng-d5645f58",
+        "sourceCount": 1,
+        "sourceNames": [
+          "Mistral AI"
+        ],
+        "participants": [
+          {
+            "name": "Mistral AI",
+            "kind": "editorial"
+          }
+        ],
+        "url": "https://mistral.ai/news/timestral/"
+      },
+      "group": {
+        "factId": "2026-10-15-eng-d5645f58",
+        "additionalSourceCount": 0,
+        "reportCount": 1,
+        "memberIds": [
+          "tl1rea0lb89zqjfses1tqjujh"
+        ]
+      }
+    },
+    {
+      "key": "kc9ge75qfpvammk6jqrvday3d",
+      "anchorAt": "2026-10-15T09:08:45.000Z",
+      "item": {
+        "id": "kc9ge75qfpvammk6jqrvday3d",
+        "title": "Apertus 1.5 发布：8B 与 70B 模型新增图像音频理解与思考模式",
+        "summary": "Apertus 1.5 在 8B 和 70B 两代模型上新增图像与音频理解、可选思考模式、262,144 token 上下文窗口，并改进指令遵循与工具调用，权重以 Apache 2.0 协议发布于 Hugging Face。",
+        "reason": "原文完整披露了 Apertus 1.5 的多模态训练流程、五阶段后训练与评测口径，便于对照开源权重复现。",
+        "source": {
+          "name": "Hugging Face Blog"
+        },
+        "publishedAt": "2026-10-15T09:08:45.000Z",
+        "timelineAt": "2026-10-15T09:08:45.000Z",
+        "category": "model",
+        "tags": [
+          "模型发布",
+          "多模态",
+          "推理",
+          "开源/仓库",
+          "Hugging Face"
+        ],
+        "selected": true,
+        "channel": "news",
+        "x": null,
+        "sameEvent": null,
+        "originalUrl": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
+        "originalTitle": "Apertus 1.5 Release Notes",
+        "storyPublicId": "2026-10-15-eng-f4f24b96",
+        "sourceCount": 1,
+        "sourceNames": [
+          "Hugging Face Blog"
+        ],
+        "participants": [
+          {
+            "name": "Hugging Face Blog",
+            "kind": "editorial"
+          }
+        ],
+        "url": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes"
+      },
+      "group": {
+        "factId": "2026-10-15-eng-f4f24b96",
+        "additionalSourceCount": 0,
+        "reportCount": 1,
+        "memberIds": [
+          "kc9ge75qfpvammk6jqrvday3d"
+        ]
+      }
+    },
+    {
+      "key": "b5rzbs6d3kyj177hi5t6icnlb",
+      "anchorAt": "2026-10-15T00:00:00.000Z",
+      "item": {
+        "id": "b5rzbs6d3kyj177hi5t6icnlb",
+        "title": "Meta 发布开源权重多模态 MoE 模型 Muse Spark Open",
+        "summary": "Meta 发布开源权重模型 Muse Spark Open，采用 MoE 架构，总参数约 816 B、每 token 激活约 42B，上下文窗口最高 1M token，可接收文本、图像、音频和视频输入并输出文本。",
+        "reason": "原文给出 816 B 总参数、42B 激活的 MoE 架构与多模态输入细节，读者可据此判断本地部署与微调门槛。",
+        "source": {
+          "name": "Hugging Face Blog"
+        },
+        "publishedAt": "2026-10-15T00:00:00.000Z",
+        "timelineAt": "2026-10-15T00:00:00.000Z",
+        "category": "model",
+        "tags": [
+          "模型发布",
+          "多模态",
+          "Agent",
+          "编码",
+          "开源生态",
+          "Meta",
+          "Hugging Face"
+        ],
+        "selected": true,
+        "channel": "news",
+        "x": null,
+        "sameEvent": null,
+        "originalUrl": "https://huggingface.co/blog/meta-muse-spark-open",
+        "originalTitle": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
+        "storyPublicId": "2026-10-15-eng-e8822a8d",
+        "sourceCount": 1,
+        "sourceNames": [
+          "Hugging Face Blog"
+        ],
+        "participants": [
+          {
+            "name": "Hugging Face Blog",
+            "kind": "editorial"
+          }
+        ],
+        "url": "https://huggingface.co/blog/meta-muse-spark-open"
+      },
+      "group": {
+        "factId": "2026-10-15-eng-e8822a8d",
+        "additionalSourceCount": 0,
+        "reportCount": 1,
+        "memberIds": [
+          "b5rzbs6d3kyj177hi5t6icnlb"
+        ]
+      }
+    },
+    {
+      "key": "hp7igpt3j7jznojgk8330pqoh",
+      "anchorAt": "2026-10-13T19:43:07.000Z",
+      "item": {
+        "id": "hp7igpt3j7jznojgk8330pqoh",
+        "title": "Google DeepMind 介绍 Gemini 4 Argon 的安全与责任开发",
+        "summary": "Google DeepMind 发布 Gemini 4 Argon 的安全与责任开发说明，并开始广泛推送该模型、扩大 Fairwind Program 的受信任网络安全防御者范围。",
+        "reason": "原文披露了 Gemini 4 Argon 在网络安全与生物风险上的防护设计，以及实时错位监控的实测数据。",
+        "source": {
+          "name": "Google DeepMind"
+        },
+        "publishedAt": "2026-10-13T19:43:07.000Z",
+        "timelineAt": "2026-10-13T19:43:07.000Z",
+        "category": "model",
+        "tags": [
+          "模型发布",
+          "安全/对齐",
+          "Google"
+        ],
+        "selected": true,
+        "channel": "news",
+        "x": null,
+        "sameEvent": null,
+        "originalUrl": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+        "originalTitle": "Developing Gemini 4 Argon responsibly and safely",
+        "storyPublicId": "2026-10-13-eng-76cf47fa",
+        "sourceCount": 1,
+        "sourceNames": [
+          "Google DeepMind"
+        ],
+        "participants": [
+          {
+            "name": "Google DeepMind",
+            "kind": "editorial"
+          }
+        ],
+        "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/"
+      },
+      "group": {
+        "factId": "2026-10-13-eng-76cf47fa",
+        "additionalSourceCount": 0,
+        "reportCount": 1,
+        "memberIds": [
+          "hp7igpt3j7jznojgk8330pqoh"
         ]
       }
     }
   ],
   "day_counts": {
-    "2026-10-17": 1
+    "2026-10-19": 1,
+    "2026-10-16": 1,
+    "2026-10-15": 5,
+    "2026-10-13": 1
   },
   "next": null
 }

@@ -11,7 +11,9 @@
  "summary": "Apertus 1.5 在 8B 和 70B 两代模型上新增图像与音频理解、可选思考模式、262,144 token 上下文窗口，并改进指令遵循与工具调用，权重以 Apache 2.0 协议发布于 Hugging Face。",
  "excerpt": null,
  "latest": null,
- "latestReport": null,
+ "latestReport": {
+  "id": "kc9ge75qfpvammk6jqrvday3d"
+ },
  "whyHot": {
   "participants48h": 1,
   "newParticipants6h": 0,
@@ -54,5 +56,36 @@
    "originalUrl": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes"
   }
  ],
- "heat": []
+ "heat": [],
+ "related": [],
+ "topics": [
+  {
+   "slug": "%E6%A8%A1%E5%9E%8B%E5%8F%91%E5%B8%83",
+   "name": "模型发布"
+  },
+  {
+   "slug": "%E5%A4%9A%E6%A8%A1%E6%80%81",
+   "name": "多模态"
+  },
+  {
+   "slug": "%E6%8E%A8%E7%90%86",
+   "name": "推理"
+  },
+  {
+   "slug": "%E5%BC%80%E6%BA%90%2F%E4%BB%93%E5%BA%93",
+   "name": "开源/仓库"
+  },
+  {
+   "slug": "Hugging%20Face",
+   "name": "Hugging Face"
+  }
+ ],
+ "participants": [
+  {
+   "name": "Hugging Face Blog",
+   "kind": "editorial"
+  }
+ ],
+ "recommendReason": "原文完整披露了 Apertus 1.5 的多模态训练流程、五阶段后训练与评测口径，便于对照开源权重复现。",
+ "primaryUrl": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes"
 }

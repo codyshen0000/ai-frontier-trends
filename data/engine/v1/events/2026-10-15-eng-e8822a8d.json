@@ -8,10 +8,12 @@
  "latestAt": "2026-10-15T00:00:00.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": "Meta 发布开源权重模型 Muse Spark Open，采用 MoE 架构，总参数约 816B、每 token 激活约 42B，上下文窗口最高 1M token，可接收文本、图像、音频和视频输入并输出文本。",
+ "summary": "Meta 发布开源权重模型 Muse Spark Open，采用 MoE 架构，总参数约 816 B、每 token 激活约 42B，上下文窗口最高 1M token，可接收文本、图像、音频和视频输入并输出文本。",
  "excerpt": null,
  "latest": null,
- "latestReport": null,
+ "latestReport": {
+  "id": "b5rzbs6d3kyj177hi5t6icnlb"
+ },
  "whyHot": {
   "participants48h": 1,
   "newParticipants6h": 0,
@@ -28,7 +30,7 @@
    "representative": {
     "id": "b5rzbs6d3kyj177hi5t6icnlb",
     "title": "Meta 发布开源权重多模态 MoE 模型 Muse Spark Open",
-    "summary": "Meta 发布开源权重模型 Muse Spark Open，采用 MoE 架构，总参数约 816B、每 token 激活约 42B，上下文窗口最高 1M token，可接收文本、图像、音频和视频输入并输出文本。",
+    "summary": "Meta 发布开源权重模型 Muse Spark Open，采用 MoE 架构，总参数约 816 B、每 token 激活约 42B，上下文窗口最高 1M token，可接收文本、图像、音频和视频输入并输出文本。",
     "publishedAt": "2026-10-15T00:00:00.000Z",
     "selected": true,
     "source": {
@@ -44,7 +46,7 @@
   {
    "id": "b5rzbs6d3kyj177hi5t6icnlb",
    "title": "Meta 发布开源权重多模态 MoE 模型 Muse Spark Open",
-   "summary": "Meta 发布开源权重模型 Muse Spark Open，采用 MoE 架构，总参数约 816B、每 token 激活约 42B，上下文窗口最高 1M token，可接收文本、图像、音频和视频输入并输出文本。",
+   "summary": "Meta 发布开源权重模型 Muse Spark Open，采用 MoE 架构，总参数约 816 B、每 token 激活约 42B，上下文窗口最高 1M token，可接收文本、图像、音频和视频输入并输出文本。",
    "publishedAt": "2026-10-15T00:00:00.000Z",
    "selected": true,
    "source": {
@@ -54,5 +56,44 @@
    "originalUrl": "https://huggingface.co/blog/meta-muse-spark-open"
   }
  ],
- "heat": []
+ "heat": [],
+ "related": [],
+ "topics": [
+  {
+   "slug": "%E6%A8%A1%E5%9E%8B%E5%8F%91%E5%B8%83",
+   "name": "模型发布"
+  },
+  {
+   "slug": "%E5%A4%9A%E6%A8%A1%E6%80%81",
+   "name": "多模态"
+  },
+  {
+   "slug": "Agent",
+   "name": "Agent"
+  },
+  {
+   "slug": "%E7%BC%96%E7%A0%81",
+   "name": "编码"
+  },
+  {
+   "slug": "%E5%BC%80%E6%BA%90%E7%94%9F%E6%80%81",
+   "name": "开源生态"
+  },
+  {
+   "slug": "Meta",
+   "name": "Meta"
+  },
+  {
+   "slug": "Hugging%20Face",
+   "name": "Hugging Face"
+  }
+ ],
+ "participants": [
+  {
+   "name": "Hugging Face Blog",
+   "kind": "editorial"
+  }
+ ],
+ "recommendReason": "原文给出 816 B 总参数、42B 激活的 MoE 架构与多模态输入细节，读者可据此判断本地部署与微调门槛。",
+ "primaryUrl": "https://huggingface.co/blog/meta-muse-spark-open"
 }

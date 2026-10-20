@@ -5,6 +5,7 @@
 import generated from "virtual:ft-engine";
 import { groupByEvent } from "../../engine/groupByEvent.mjs";
 import type { HotResponse, ReportDetail, ReportNavigationEntry, TimelineResponse } from "@aihot/contracts/site";
+import type { SiteEvent, SiteItemPublic, SiteTopic } from "../../engine/site-data.ts";
 
 export const dataAsOf = generated.data_as_of || "";
 export const builtAt = generated.built_at || "";
@@ -15,9 +16,17 @@ export const hot = generated.hot as HotResponse;
 export const hotStrip = generated.hotStrip as TimelineResponse["hot"];
 export const daily = (generated.daily || null) as ReportDetail | null;
 export const dailyIndex = (generated.dailyIndex || []) as ReportNavigationEntry[];
+export const weeklyIndex = (generated.weeklyIndex || []) as ReportNavigationEntry[];
+export const monthlyIndex = (generated.monthlyIndex || []) as ReportNavigationEntry[];
 export const today = daily?.key || "";
 
-const cards = groupByEvent(generated.timeline?.cards || []) as TimelineResponse["cards"];
+export const events = (generated.events || []) as SiteEvent[];
+export const items = (generated.items || []) as SiteItemPublic[];
+export const topics = (generated.topics || []) as SiteTopic[];
+
+const groupOpts = { events, redirects: generated.redirects, sources: [] };
+
+const cards = groupByEvent(generated.timeline?.cards || [], groupOpts) as TimelineResponse["cards"];
 
 export const timeline: TimelineResponse = {
   filters: (generated.timeline?.filters || { channel: "all", category: null, tag: null }) as TimelineResponse["filters"],
@@ -26,3 +35,17 @@ export const timeline: TimelineResponse = {
   hot: (generated.timeline?.hot as TimelineResponse["hot"]) || hotStrip,
   dayCounts: generated.timeline?.dayCounts || {},
 };
+
+const allRaw = generated.allTimeline?.cards?.length ? generated.allTimeline.cards : generated.timeline?.cards || [];
+export const allTimeline: TimelineResponse = {
+  filters: (generated.allTimeline?.filters || { channel: "all", category: null, tag: null }) as TimelineResponse["filters"],
+  cards: groupByEvent(allRaw, groupOpts) as TimelineResponse["cards"],
+  nextCursor: generated.allTimeline?.nextCursor ?? null,
+  hot: null,
+  dayCounts: generated.allTimeline?.dayCounts || {},
+};
+
+export const itemById = new Map(items.map((item) => [item.id, item]));
+export const eventById = new Map(events.map((event) => [event.publicId, event]));
+export const itemIds = new Set(items.map((item) => item.id));
+export const eventIds = new Set(events.map((event) => event.publicId));

@@ -1,0 +1,44 @@
+{
+ "id": "relvxgerdt6ja9vhejefrjgkb",
+ "title": "Anthropic 与 Nscale 据报洽谈第二笔 450 亿美元算力交易",
+ "summary": "据彭博报道，Anthropic 与 AI 基础设施提供商 Nscale 据称即将宣布第二笔 450 亿美元算力交易，双方一个多月前刚宣布过一笔同等规模的合作。消息人士称谈判仍在进行，细节可能变化。两家公司目前都在推进 IPO，Nscale 的 300 亿美元估值据报遭遇投资者阻力。",
+ "reason": null,
+ "source": {
+  "name": "TechCrunch · AI"
+ },
+ "publishedAt": "2026-10-19T23:39:38.000Z",
+ "timelineAt": "2026-10-19T23:39:38.000Z",
+ "category": "industry",
+ "tags": [
+  "行业动态",
+  "Anthropic"
+ ],
+ "selected": false,
+ "channel": "news",
+ "x": null,
+ "topics": [
+  {
+   "slug": "%E8%A1%8C%E4%B8%9A%E5%8A%A8%E6%80%81",
+   "name": "行业动态"
+  },
+  {
+   "slug": "Anthropic",
+   "name": "Anthropic"
+  }
+ ],
+ "hasTranslation": false,
+ "bodyLanguage": "zh",
+ "readingMode": "summary-only",
+ "indexable": true,
+ "markdownAvailable": false,
+ "relatedStories": [],
+ "outline": [],
+ "author": null,
+ "group": null,
+ "body": {
+  "zh": "据彭博报道，Anthropic 与 AI 基础设施提供商 Nscale 据称即将宣布第二笔 450 亿美元算力交易，双方一个多月前刚宣布过一笔同等规模的合作。消息人士称谈判仍在进行，细节可能变化。两家公司目前都在推进 IPO，Nscale 的 300 亿美元估值据报遭遇投资者阻力。",
+  "original": null,
+  "zhKind": "original",
+  "complete": false
+ }
+}

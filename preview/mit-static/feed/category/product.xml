@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>前沿趋势</title>
+    <link>https://codyshen0000.github.io/ai-frontier-trends/</link>
+    <description>前沿趋势 · 产品</description>
+    <language>zh-cn</language>
+    <item>
+      <title>NVIDIA 发布 RTX Spark，面向创作者、玩家与 AI 智能体的 Windows PC</title>
+      <link>https://blogs.nvidia.com/blog/local-ai-rtx-spark-launch-event-invite/</link>
+      <guid isPermaLink="false">z9nye2jg3ya84zdyt01ivgffm</guid>
+      <pubDate>Thu, 15 Oct 2026 17:00:23 GMT</pubDate>
+      <description>NVIDIA 发布 RTX Spark，这是一款面向创作者、游戏玩家和 AI 智能体的 Windows PC，并将于 10 月 16 日在旧金山、柏林、台北、北京、伊斯坦布尔、首尔等地举办线下发布活动。</description>
+      <category>产品</category>
+    </item>
+    <item>
+      <title>Black Forest Labs FLUX.3 Image Klein 上线 Diffusers</title>
+      <link>https://huggingface.co/blog/flux-3</link>
+      <guid isPermaLink="false">al2uwjvi9mx5asn53w5l4d6v7</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Black Forest Labs 的 FLUX.3 Image Klein 已在 Diffusers 上线，同一模型支持文生图、多参考图生图和用边界框指定布局的布局控制。</description>
+      <category>产品</category>
+    </item>
+    <item>
+      <title>Google 公开发布 Deep Review 文档审阅系统</title>
+      <link>https://research.google/blog/analyzing-technical-documents-with-deep-review/</link>
+      <guid isPermaLink="false">cdwls19m9e1a57wifp4f3j4oc</guid>
+      <pubDate>Wed, 14 Oct 2026 16:14:00 GMT</pubDate>
+      <description>Google 公开发布智能体文档审阅系统 Deep Review，可对复杂文档做逻辑一致性、数学陈述和事实依据检查，并给出改进建议。该系统前身为 Paper Assistant Tool，曾在 STOC 2026、ICML 2026、NeurIPS 2026 和 ICLR 2027 四场会议试点，为逾 1.6 万篇自愿参与的稿件提供投稿前反馈。</description>
+      <category>产品</category>
+    </item>
+  </channel>
+</rss>

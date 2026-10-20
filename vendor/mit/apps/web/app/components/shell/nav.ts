@@ -22,7 +22,7 @@ const SECTIONS: Array<{ title: string; items: NavItem[] }> = [
     title: "内容",
     items: [
       { to: "/", label: "精选", icon: IconBolt, end: true },
-      { to: "/all", label: subjectAfter("全部", "动态"), icon: IconList },
+      { to: "/all", label: "全部动态", icon: IconList },
       { to: "/hot", label: "热点榜", icon: IconFlame },
       { to: "/daily", label: withSubject("日报"), icon: IconDoc },
       { to: "/topics", label: "主题", icon: IconGrid },
@@ -62,7 +62,7 @@ export function navUp(entry: keyof typeof UP): { to: string; name: string; back:
  * The sidebar: the engine's sections with the modules' between 内容 and 更多; a module naming a section
  * that is already there adds to it.
  */
-const UNBUILT_NAV = new Set(["/topics", "/about", "/agent", "/changelog", "/feedback", "/all", "/monthly"]);
+const UNBUILT_NAV = new Set(["/about", "/agent", "/changelog", "/feedback"]);
 
 export function sidebar(): Array<{ title: string; items: NavItem[] }> {
   const [content, ...rest] = SECTIONS;

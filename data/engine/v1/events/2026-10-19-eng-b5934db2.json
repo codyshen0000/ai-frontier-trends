@@ -11,7 +11,9 @@
  "summary": "MiniMax 发布推理模型 M3.1 Flash，在 Artificial Analysis 智能指数上得 42 分，比前代 M3 高 13 分，单任务成本不到其一半。",
  "excerpt": null,
  "latest": null,
- "latestReport": null,
+ "latestReport": {
+  "id": "oo9oe25tlho5ejxl9r46iuvzy"
+ },
  "whyHot": {
   "participants48h": 1,
   "newParticipants6h": 0,
@@ -54,5 +56,24 @@
    "originalUrl": "https://the-decoder.com/minimax-m3-1-flash-shows-chinas-ai-price-race-has-no-floor-in-sight/"
   }
  ],
- "heat": []
+ "heat": [],
+ "related": [],
+ "topics": [
+  {
+   "slug": "%E6%A8%A1%E5%9E%8B%E5%8F%91%E5%B8%83",
+   "name": "模型发布"
+  },
+  {
+   "slug": "%E6%8E%A8%E7%90%86",
+   "name": "推理"
+  }
+ ],
+ "participants": [
+  {
+   "name": "The Decoder",
+   "kind": "editorial"
+  }
+ ],
+ "recommendReason": "MiniMax M3.1 Flash 与 DeepSeek 新品在多项基准上互有胜负，读者可据此比较两家中国厂商的性价比路线。",
+ "primaryUrl": "https://the-decoder.com/minimax-m3-1-flash-shows-chinas-ai-price-race-has-no-floor-in-sight/"
 }

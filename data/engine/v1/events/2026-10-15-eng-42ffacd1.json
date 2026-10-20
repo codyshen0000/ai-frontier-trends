@@ -11,7 +11,9 @@
  "summary": "Black Forest Labs 的 FLUX.3 Image Klein 已在 Diffusers 上线，同一模型支持文生图、多参考图生图和用边界框指定布局的布局控制。",
  "excerpt": null,
  "latest": null,
- "latestReport": null,
+ "latestReport": {
+  "id": "al2uwjvi9mx5asn53w5l4d6v7"
+ },
  "whyHot": {
   "participants48h": 1,
   "newParticipants6h": 0,
@@ -54,5 +56,32 @@
    "originalUrl": "https://huggingface.co/blog/flux-3"
   }
  ],
- "heat": []
+ "heat": [],
+ "related": [],
+ "topics": [
+  {
+   "slug": "%E4%BA%A7%E5%93%81%E6%9B%B4%E6%96%B0",
+   "name": "产品更新"
+  },
+  {
+   "slug": "%E5%9B%BE%E5%83%8F%E7%94%9F%E6%88%90",
+   "name": "图像生成"
+  },
+  {
+   "slug": "%E5%BC%80%E6%BA%90%2F%E4%BB%93%E5%BA%93",
+   "name": "开源/仓库"
+  },
+  {
+   "slug": "Hugging%20Face",
+   "name": "Hugging Face"
+  }
+ ],
+ "participants": [
+  {
+   "name": "Hugging Face Blog",
+   "kind": "editorial"
+  }
+ ],
+ "recommendReason": "原文给出两个开源 checkpoint 的显存与耗时数据，并说明布局控制如何用 bbox 指定区域位置。",
+ "primaryUrl": "https://huggingface.co/blog/flux-3"
 }

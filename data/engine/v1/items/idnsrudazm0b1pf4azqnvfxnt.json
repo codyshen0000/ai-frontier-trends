@@ -1,0 +1,54 @@
+{
+ "id": "idnsrudazm0b1pf4azqnvfxnt",
+ "title": "Import AI 477：我在 IMF 演讲称奇点已经开始",
+ "summary": "Import AI 作者在 10 月 17 日曼谷 IMF 会议上发表 Per Jacobsson 演讲，称今年已获得令人信服的证据，表明奇点已经开始。他援引 Vernor Vinge 1993 年的预测，认为 AI 正改变国家安全与经济轨迹并参与自身开发，未来科学与整体进步将加速。演讲重点讨论人类如何通过远见与克制共享 AI 带来的收益。",
+ "reason": null,
+ "source": {
+  "name": "Import AI"
+ },
+ "publishedAt": "2026-10-19T12:31:37.000Z",
+ "timelineAt": "2026-10-19T12:31:37.000Z",
+ "category": "opinion",
+ "tags": [
+  "大佬观点",
+  "安全/对齐",
+  "现象/趋势",
+  "Anthropic"
+ ],
+ "selected": false,
+ "channel": "news",
+ "x": null,
+ "topics": [
+  {
+   "slug": "%E5%A4%A7%E4%BD%AC%E8%A7%82%E7%82%B9",
+   "name": "大佬观点"
+  },
+  {
+   "slug": "%E5%AE%89%E5%85%A8%2F%E5%AF%B9%E9%BD%90",
+   "name": "安全/对齐"
+  },
+  {
+   "slug": "%E7%8E%B0%E8%B1%A1%2F%E8%B6%8B%E5%8A%BF",
+   "name": "现象/趋势"
+  },
+  {
+   "slug": "Anthropic",
+   "name": "Anthropic"
+  }
+ ],
+ "hasTranslation": false,
+ "bodyLanguage": "zh",
+ "readingMode": "summary-only",
+ "indexable": true,
+ "markdownAvailable": false,
+ "relatedStories": [],
+ "outline": [],
+ "author": null,
+ "group": null,
+ "body": {
+  "zh": "Import AI 作者在 10 月 17 日曼谷 IMF 会议上发表 Per Jacobsson 演讲，称今年已获得令人信服的证据，表明奇点已经开始。他援引 Vernor Vinge 1993 年的预测，认为 AI 正改变国家安全与经济轨迹并参与自身开发，未来科学与整体进步将加速。演讲重点讨论人类如何通过远见与克制共享 AI 带来的收益。",
+  "original": null,
+  "zhKind": "original",
+  "complete": false
+ }
+}

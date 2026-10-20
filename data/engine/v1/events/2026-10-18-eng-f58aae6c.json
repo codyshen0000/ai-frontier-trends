@@ -11,7 +11,9 @@
  "summary": "Anthropic 内部研究显示，自 2025 年初以来技术部门初级岗位占比从 21% 降至 14%，初级新员工占比从 27% 降至 9%。到 2026 年 8 月，其 AI 智能体的工作时长达到人类员工的 6 倍，研究部门为 19:1，公司称各技术部门产出同步上升。研究也承认 Anthropic 是 AI 使用极密集的特殊案例，结果难以直接推及整体经济。",
  "excerpt": null,
  "latest": null,
- "latestReport": null,
+ "latestReport": {
+  "id": "p8368ouczlsqr8wgnjca3zhkn"
+ },
  "whyHot": {
   "participants48h": 1,
   "newParticipants6h": 0,
@@ -54,5 +56,32 @@
    "originalUrl": "https://the-decoder.com/anthropic-has-nearly-stopped-hiring-junior-staff-because-ai-agents-now-work-six-times-as-many-hours/"
   }
  ],
- "heat": []
+ "heat": [],
+ "related": [],
+ "topics": [
+  {
+   "slug": "%E8%A1%8C%E4%B8%9A%E5%8A%A8%E6%80%81",
+   "name": "行业动态"
+  },
+  {
+   "slug": "Agent",
+   "name": "Agent"
+  },
+  {
+   "slug": "Anthropic",
+   "name": "Anthropic"
+  },
+  {
+   "slug": "%E6%95%B0%E6%8D%AE%2F%E8%AE%AD%E7%BB%83",
+   "name": "数据/训练"
+  }
+ ],
+ "participants": [
+  {
+   "name": "The Decoder",
+   "kind": "editorial"
+  }
+ ],
+ "recommendReason": "Anthropic 内部研究显示初级岗位占比随 AI 智能体工时上升而下降，可观察 AI 替代入门岗位的组织层面证据。",
+ "primaryUrl": "https://the-decoder.com/anthropic-has-nearly-stopped-hiring-junior-staff-because-ai-agents-now-work-six-times-as-many-hours/"
 }

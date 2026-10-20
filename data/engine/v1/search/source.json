@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-20T08:47:16.000Z",
+ "generatedAt": "2026-10-20T09:17:01.000Z",
  "docs": [
   {
    "id": "oo9oe25tlho5ejxl9r46iuvzy",
@@ -304,7 +304,7 @@
    "id": "b5rzbs6d3kyj177hi5t6icnlb",
    "kind": "item",
    "title": "Meta 发布开源权重多模态 MoE 模型 Muse Spark Open",
-   "summary": "Meta 发布开源权重模型 Muse Spark Open，采用 MoE 架构，总参数约 816B、每 token 激活约 42B，上下文窗口最高 1M token，可接收文本、图像、音频和视频输入并输出文本。",
+   "summary": "Meta 发布开源权重模型 Muse Spark Open，采用 MoE 架构，总参数约 816 B、每 token 激活约 42B，上下文窗口最高 1M token，可接收文本、图像、音频和视频输入并输出文本。",
    "publishedAt": "2026-10-15T00:00:00.000Z",
    "sourceName": "Hugging Face Blog",
    "category": "model",
@@ -316,7 +316,7 @@
    "id": "2026-10-15-eng-e8822a8d",
    "kind": "event",
    "title": "Meta 发布开源权重多模态 MoE 模型 Muse Spark Open",
-   "summary": "Meta 发布开源权重模型 Muse Spark Open，采用 MoE 架构，总参数约 816B、每 token 激活约 42B，上下文窗口最高 1M token，可接收文本、图像、音频和视频输入并输出文本。",
+   "summary": "Meta 发布开源权重模型 Muse Spark Open，采用 MoE 架构，总参数约 816 B、每 token 激活约 42B，上下文窗口最高 1M token，可接收文本、图像、音频和视频输入并输出文本。",
    "publishedAt": "2026-10-15T00:00:00.000Z",
    "sourceNames": [
     "Hugging Face Blog"

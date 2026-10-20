@@ -1,0 +1,1587 @@
+{
+ "filters": {
+  "channel": "all",
+  "category": null,
+  "tag": null
+ },
+ "cards": [
+  {
+   "key": "js0zw9h9eyz047lukcou86opk",
+   "anchorAt": "2026-10-20T08:21:39.207Z",
+   "item": {
+    "id": "js0zw9h9eyz047lukcou86opk",
+    "title": "新基准 Taste-Bench 测出 AI 智能体长期决策能力不足",
+    "summary": "研究者提出 Taste-Bench，用 502 道分叉选择题衡量智能体在长期任务中的决策品味，表现最好的 GPT-5.6 Sol 平均准确率仅 59.7%。当关键线索要到后续步骤才显现时，所有模型的平均准确率降到 21%，接近随机猜测，增加推理预算也几乎没有改善。",
+    "reason": null,
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-18T08:49:41.000Z",
+    "timelineAt": "2026-10-20T08:21:39.207Z",
+    "category": "paper",
+    "tags": [
+     "论文/研究",
+     "评测/基准",
+     "Agent",
+     "编码"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "xz6x8hed0f0dt58ksxxg3ulbl",
+   "anchorAt": "2026-10-20T08:21:39.200Z",
+   "item": {
+    "id": "xz6x8hed0f0dt58ksxxg3ulbl",
+    "title": "Anthropic 咨询律所，为 AI 智能体谈判制定公平规范",
+    "summary": "Anthropic 正与律所合作，为替用户议价、处理投诉或争取合同条款的 AI 智能体制定公平谈判规范。实验显示更强模型能谈成更有利的交易，可能加剧社会不平等。Anthropic 还在招聘有法律背景的 Conceptual Reasoning Fellows，以 10 万至 16.7 万美元薪资用四个月测试 Claude 在法律、哲学等判断密集型问题上的表现。",
+    "reason": null,
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-18T09:11:29.000Z",
+    "timelineAt": "2026-10-20T08:21:39.200Z",
+    "category": "industry",
+    "tags": [
+     "行业动态",
+     "Agent",
+     "Anthropic"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "m178dbily63grbx7hnqf3uvv1",
+   "anchorAt": "2026-10-20T08:21:38.421Z",
+   "item": {
+    "id": "m178dbily63grbx7hnqf3uvv1",
+    "title": "Disney 同意接收 Character.AI 大部分员工",
+    "summary": "Character.AI 本周申请破产后，Disney 同意向至少 60 名 Character.AI 员工发出录用通知，覆盖其大部分员工，年薪总额估计为 6000 万美元。",
+    "reason": null,
+    "source": {
+     "name": "TechCrunch · AI"
+    },
+    "publishedAt": "2026-10-18T16:30:00.000Z",
+    "timelineAt": "2026-10-20T08:21:38.421Z",
+    "category": "industry",
+    "tags": [
+     "行业动态"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "axchpc44o7zxcwhqupmmmadr5",
+   "anchorAt": "2026-10-20T08:21:38.415Z",
+   "item": {
+    "id": "axchpc44o7zxcwhqupmmmadr5",
+    "title": "Anthropic 宣布将 5% 股份投入公益基金",
+    "summary": "Anthropic 周日宣布设立公益基金，将把公司 5% 的股份投入该基金，基金为其全资持有的实体。公司还表示，Anthropic 估值每增长 50%，可选择再追加 2% 股份。",
+    "reason": null,
+    "source": {
+     "name": "TechCrunch · AI"
+    },
+    "publishedAt": "2026-10-18T20:37:40.000Z",
+    "timelineAt": "2026-10-20T08:21:38.415Z",
+    "category": "industry",
+    "tags": [
+     "行业动态",
+     "Anthropic"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "kgd9hn0r3asmp4mihcw8780pe",
+   "anchorAt": "2026-10-20T08:21:38.409Z",
+   "item": {
+    "id": "kgd9hn0r3asmp4mihcw8780pe",
+    "title": "Laplace Intelligence 为机器人和自动驾驶汽车做部署前红队测试",
+    "summary": "Laplace Intelligence 正在为机器人和物理 AI 构建自动化红队测试，用基于 Nvidia Cosmos 后训练的高保真仿真环境加 AI 智能体自动设计 corner case，让系统在部署前暴露并修复问题。",
+    "reason": null,
+    "source": {
+     "name": "TechCrunch · AI"
+    },
+    "publishedAt": "2026-10-19T12:30:00.000Z",
+    "timelineAt": "2026-10-20T08:21:38.409Z",
+    "category": "industry",
+    "tags": [
+     "行业动态",
+     "安全/对齐",
+     "具身智能",
+     "部署/工程"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "t4hm9thmikilrsh6dhnaoaak2",
+   "anchorAt": "2026-10-20T08:21:38.403Z",
+   "item": {
+    "id": "t4hm9thmikilrsh6dhnaoaak2",
+    "title": "英伟达发布 Nemotron 3.5 Super VL 与两款 Bolt 开放权重模型",
+    "summary": "英伟达发布面向常驻智能体和边缘计算的开放权重模型，包括 1200 亿参数的 Nemotron 3.5 Super VL，以及面向本地 AI PC 和 DGX Spark 工作站的 Nemotron 3.5 Bolt 74B-A9B 24GB 和 Bolt E4B。",
+    "reason": null,
+    "source": {
+     "name": "TechCrunch · AI"
+    },
+    "publishedAt": "2026-10-19T15:37:09.000Z",
+    "timelineAt": "2026-10-20T08:21:38.403Z",
+    "category": "model",
+    "tags": [
+     "模型发布",
+     "Agent",
+     "端侧",
+     "开源生态"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "xdhd7cakbn2qy07grr4s7ms1f",
+   "anchorAt": "2026-10-20T08:21:38.395Z",
+   "item": {
+    "id": "xdhd7cakbn2qy07grr4s7ms1f",
+    "title": "开发者用 AI 智能体给智能电视去广告，GitHub 项目 dumbtv 与 cleanyourtv 走红",
+    "summary": "TechCrunch 报道，近期多位开发者用 AI 智能体改造智能电视，去除赞助广告、加快启动器、重设主屏并关闭观看追踪。",
+    "reason": null,
+    "source": {
+     "name": "TechCrunch · AI"
+    },
+    "publishedAt": "2026-10-19T16:13:22.000Z",
+    "timelineAt": "2026-10-20T08:21:38.395Z",
+    "category": "industry",
+    "tags": [
+     "现象/趋势",
+     "Agent",
+     "编码",
+     "开源/仓库"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "px6xra36ywh3i8qjd4nhj3fpb",
+   "anchorAt": "2026-10-20T08:21:38.385Z",
+   "item": {
+    "id": "px6xra36ywh3i8qjd4nhj3fpb",
+    "title": "Tenstorrent 以 62 亿美元估值融资 15 亿美元",
+    "summary": "专注推理的芯片初创公司 Tenstorrent 完成 15 亿美元融资，估值达 62 亿美元，较 2024 年底的 26 亿美元翻倍有余。本轮由 Trace Capital 和 Innovation X 领投，Cadence Ventures、Eclipse、Fidelity、SanDisk、T. Rowe Price 参投。",
+    "reason": null,
+    "source": {
+     "name": "TechCrunch · AI"
+    },
+    "publishedAt": "2026-10-19T18:37:27.000Z",
+    "timelineAt": "2026-10-20T08:21:38.385Z",
+    "category": "industry",
+    "tags": [
+     "行业动态",
+     "数据/训练"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "mey48yg5e4ior12sw0r4a012j",
+   "anchorAt": "2026-10-20T08:19:14.118Z",
+   "item": {
+    "id": "mey48yg5e4ior12sw0r4a012j",
+    "title": "Anthropic 扩展 Cyber Verification Program，推出三档访问权限",
+    "summary": "Anthropic 推出扩展版 Cyber Verification Program（CVP），将 Project Glasswing 与原有 CVP 合并，按防御、红队、专项三档向通过审核的安全团队开放 Claude Opus 5.5、Sonnet 5.5、Mythos 5.1 等模型并降低拦截。",
+    "reason": null,
+    "source": {
+     "name": "Bot smoke free (editorial)"
+    },
+    "publishedAt": "2026-10-18T12:00:00.000Z",
+    "timelineAt": "2026-10-20T08:19:14.118Z",
+    "category": "product",
+    "tags": [
+     "产品更新",
+     "安全/对齐",
+     "Anthropic"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "c3dbnylfsnomscpb2apkkkd2a",
+   "anchorAt": "2026-10-20T05:21:52.000Z",
+   "item": {
+    "id": "c3dbnylfsnomscpb2apkkkd2a",
+    "title": "AINews 汇总：DeepSeek V4.1 Flash 1017 等模型发布与行业动态",
+    "summary": "Latent Space 的 AINews 汇总了 10 月 16 日至 19 日的 AI 动态，其中 DeepSeek V4.1 Flash 1017 被 Artificial Analysis 列为 552B 总参数、16B 激活的 MoE 模型，支持 1M token 上下文和 MIT 许可，高峰时段定价为每百万输入/输出 token 0.30/1.20 美元。",
+    "reason": null,
+    "source": {
+     "name": "Latent Space"
+    },
+    "publishedAt": "2026-10-20T05:21:52.000Z",
+    "timelineAt": "2026-10-20T05:21:52.000Z",
+    "category": "industry",
+    "tags": [
+     "行业动态",
+     "模型发布",
+     "开源/仓库",
+     "Agent",
+     "DeepSeek",
+     "Anthropic",
+     "Google",
+     "Meta",
+     "OpenAI"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "f44ew0u1myaram2xkxayhg85z",
+   "anchorAt": "2026-10-20T05:00:00.000Z",
+   "item": {
+    "id": "f44ew0u1myaram2xkxayhg85z",
+    "title": "西班牙初创企业借助巴塞罗那超级计算中心推进区域创新",
+    "summary": "巴塞罗那超级计算中心（BSC）的 AI Factory 加速器计划在试点后全面运营，为初创企业提供主权算力、技术支持和培训，部分服务已可通过 NVIDIA Inception 门户获取。",
+    "reason": null,
+    "source": {
+     "name": "NVIDIA Blog"
+    },
+    "publishedAt": "2026-10-20T05:00:00.000Z",
+    "timelineAt": "2026-10-20T05:00:00.000Z",
+    "category": "industry",
+    "tags": [
+     "行业动态",
+     "部署/工程"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "xktv6wefudvsxr3ks7hz48p9h",
+   "anchorAt": "2026-10-20T01:27:03.000Z",
+   "item": {
+    "id": "xktv6wefudvsxr3ks7hz48p9h",
+    "title": "Mamdani 批评联邦政府在 AI 监管上缺位，呼吁纽约人反击",
+    "summary": "纽约市长 Zohran Mamdani 在 AI Now Institute 主办的 The People's AI Assembly 活动上批评联邦政府在 AI 监管上\"完全缺位\"，呼吁纽约人不要接受 AI 冲击就业与尊严的\"必然性\"。",
+    "reason": null,
+    "source": {
+     "name": "TechCrunch · AI"
+    },
+    "publishedAt": "2026-10-20T01:27:03.000Z",
+    "timelineAt": "2026-10-20T01:27:03.000Z",
+    "category": "industry",
+    "tags": [
+     "政策/监管",
+     "大佬观点",
+     "安全/对齐"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "l19joeqxc13hde6wvca99bjar",
+   "anchorAt": "2026-10-19T23:58:25.000Z",
+   "item": {
+    "id": "l19joeqxc13hde6wvca99bjar",
+    "title": "Simon Willison 撰文：编程代理让程序员的“解谜乐趣”消失",
+    "summary": "Simon Willison 为编程写下一篇“讣告”，引用 Jeremy Scheff 的观点指出编程代理让职业程序员失去了开发代码时的解谜乐趣。Scheff 认为，编程曾是收入优厚的工作，因为普通人做不了这些逻辑谜题，程序员得以自行制定策略、时间线和可行性边界。对热衷于构建可用系统的人，LLM 是持续馈赠；若享受直接解题本身，这种损失非常真实。",
+    "reason": null,
+    "source": {
+     "name": "Simon Willison"
+    },
+    "publishedAt": "2026-10-19T23:58:25.000Z",
+    "timelineAt": "2026-10-19T23:58:25.000Z",
+    "category": "opinion",
+    "tags": [
+     "大佬观点",
+     "Agent"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "relvxgerdt6ja9vhejefrjgkb",
+   "anchorAt": "2026-10-19T23:39:38.000Z",
+   "item": {
+    "id": "relvxgerdt6ja9vhejefrjgkb",
+    "title": "Anthropic 与 Nscale 据报洽谈第二笔 450 亿美元算力交易",
+    "summary": "据彭博报道，Anthropic 与 AI 基础设施提供商 Nscale 据称即将宣布第二笔 450 亿美元算力交易，双方一个多月前刚宣布过一笔同等规模的合作。消息人士称谈判仍在进行，细节可能变化。两家公司目前都在推进 IPO，Nscale 的 300 亿美元估值据报遭遇投资者阻力。",
+    "reason": null,
+    "source": {
+     "name": "TechCrunch · AI"
+    },
+    "publishedAt": "2026-10-19T23:39:38.000Z",
+    "timelineAt": "2026-10-19T23:39:38.000Z",
+    "category": "industry",
+    "tags": [
+     "行业动态",
+     "Anthropic"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "r6ohhf8mc2uko2b18x22njly0",
+   "anchorAt": "2026-10-19T22:49:27.000Z",
+   "item": {
+    "id": "r6ohhf8mc2uko2b18x22njly0",
+    "title": "Hugging Face 政策主管：嵌入式 AI 评估者并非易事",
+    "summary": "Hugging Face 首席政策官 Irene Solaiman 在 TechCrunch Disrupt 上表示，嵌入式 AI 评估者不会成为简单解法，评估结果的可复现性依赖开放权重。她指出评估是不断演进的科学，不同测试之间难以有效比较，且失效较快。智能体评估成本高、难度大，针对 harness 的评估仍不足，评估者资质标准亟需统一。",
+    "reason": null,
+    "source": {
+     "name": "TechCrunch · AI"
+    },
+    "publishedAt": "2026-10-19T22:49:27.000Z",
+    "timelineAt": "2026-10-19T22:49:27.000Z",
+    "category": "opinion",
+    "tags": [
+     "大佬观点",
+     "评测/基准",
+     "安全/对齐",
+     "Hugging Face"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "l7vl2eek5r5str4iby9vdwm9k",
+   "anchorAt": "2026-10-19T22:04:28.000Z",
+   "item": {
+    "id": "l7vl2eek5r5str4iby9vdwm9k",
+    "title": "微软推出 Guardian Agents 等安全功能，监控企业 AI 智能体",
+    "summary": "微软周一推出多项安全功能，用于防范企业 AI 智能体带来的威胁，其中最受关注的是用于监控企业所用智能体的 Guardian Agents，它属于 6 月推出的 Project Perception 的一部分。",
+    "reason": null,
+    "source": {
+     "name": "TechCrunch · AI"
+    },
+    "publishedAt": "2026-10-19T22:04:28.000Z",
+    "timelineAt": "2026-10-19T22:04:28.000Z",
+    "category": "product",
+    "tags": [
+     "产品更新",
+     "Agent",
+     "安全/对齐",
+     "Microsoft"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "t5t9e592jeldqa0tnab2vn16i",
+   "anchorAt": "2026-10-19T21:48:01.000Z",
+   "item": {
+    "id": "t5t9e592jeldqa0tnab2vn16i",
+    "title": "报告：美国化石燃料基建迎来十年最大回潮，可再生能源增长放缓",
+    "summary": "环保组织 Environmental Defense Fund 与研究机构 Atlas Public Policy 的报告显示，美国在建化石燃料基础设施规模达十年来最高，新增化石燃料装机占比从 2024 年的 5% 升至 2026 年第二季度的 30%。报告称若趋势延续，到 2030 年化石燃料可能占开发管道的 70%，规划化石燃料装机将达 68GW，较六个月前增加 45%。",
+    "reason": null,
+    "source": {
+     "name": "The Verge · AI"
+    },
+    "publishedAt": "2026-10-19T21:48:01.000Z",
+    "timelineAt": "2026-10-19T21:48:01.000Z",
+    "category": null,
+    "tags": [
+     "其他"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "g3vkewzjer86zzok5l0ck961u",
+   "anchorAt": "2026-10-19T21:28:20.000Z",
+   "item": {
+    "id": "g3vkewzjer86zzok5l0ck961u",
+    "title": "CoreWeave 债务承压，正成为整个 AI 行业的问题",
+    "summary": "The Verge 分析指出，CoreWeave 债券上周跌入困境区间，股价自周二收盘以来下跌超过 20%，并波及 Oracle 等其他大举借债的 AI 基建公司。",
+    "reason": null,
+    "source": {
+     "name": "The Verge · AI"
+    },
+    "publishedAt": "2026-10-19T21:28:20.000Z",
+    "timelineAt": "2026-10-19T21:28:20.000Z",
+    "category": "industry",
+    "tags": [
+     "行业动态",
+     "现象/趋势"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "rudcwz0v0brwlxns6dsn6h6e5",
+   "anchorAt": "2026-10-19T20:21:53.000Z",
+   "item": {
+    "id": "rudcwz0v0brwlxns6dsn6h6e5",
+    "title": "FBI 称涉嫌窃密的前 OpenAI 工程师存有“Saudi Gov Docs”文件夹",
+    "summary": "美国联邦法院裁定继续羁押被控在 OpenAI 机密会议室安装录音设备的前工程师 Abdulrahman Alfozan。FBI 在其 iPhone 上发现名为“Saudi Gov Docs”的文件夹，并查到其与沙特王室成员的 WhatsApp 聊天记录，以及用 OpenAI 生产力智能体筛选可赴沙特参会人选的日志。检方称其已为全家订好由沙特政府付款的单程机票，存在潜逃风险。",
+    "reason": null,
+    "source": {
+     "name": "Ars Technica · AI"
+    },
+    "publishedAt": "2026-10-19T20:21:53.000Z",
+    "timelineAt": "2026-10-19T20:21:53.000Z",
+    "category": "industry",
+    "tags": [
+     "行业动态",
+     "安全/对齐",
+     "OpenAI"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "qa079ir5sr290a0c5a1hgfuf9",
+   "anchorAt": "2026-10-19T20:09:24.000Z",
+   "item": {
+    "id": "qa079ir5sr290a0c5a1hgfuf9",
+    "title": "AWS 发布 TorchNeuron 开发工具，让 PyTorch 应用一行配置跑上 Trainium",
+    "summary": "AWS 周一发布 TorchNeuron 开发工具，让用 PyTorch 编写的 AI 应用只需改动一行配置即可运行在 Amazon 自研芯片 Trainium 上，无需重写代码。",
+    "reason": null,
+    "source": {
+     "name": "TechCrunch · AI"
+    },
+    "publishedAt": "2026-10-19T20:09:24.000Z",
+    "timelineAt": "2026-10-19T20:09:24.000Z",
+    "category": "product",
+    "tags": [
+     "产品更新",
+     "部署/工程",
+     "开源生态",
+     "数据/训练"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "x3ae4lma5hfbqdzgrg6hp57jn",
+   "anchorAt": "2026-10-19T19:28:34.000Z",
+   "item": {
+    "id": "x3ae4lma5hfbqdzgrg6hp57jn",
+    "title": "开源 AI 编码工具 OpenCode 遭攻击，1.4% 用户 API 密钥受影响并产生扣费",
+    "summary": "开源 AI 编码智能体 OpenCode 称周六凌晨遭到攻击，其在线平台 OpenCode Console 上 1.4% 的用户受影响，公司已通过邮件通知这些用户。",
+    "reason": null,
+    "source": {
+     "name": "TechCrunch · AI"
+    },
+    "publishedAt": "2026-10-19T19:28:34.000Z",
+    "timelineAt": "2026-10-19T19:28:34.000Z",
+    "category": "industry",
+    "tags": [
+     "行业动态",
+     "安全/对齐",
+     "Agent",
+     "OpenAI",
+     "Anthropic",
+     "Google"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "f8tb7bwx18y52qeav3een1l75",
+   "anchorAt": "2026-10-19T19:27:08.000Z",
+   "item": {
+    "id": "f8tb7bwx18y52qeav3een1l75",
+    "title": "德国想引领全球工业 AI：NVIDIA 将如何助力",
+    "summary": "NVIDIA 与德国联邦政府签署联合意向声明，将围绕物理 AI 前沿模型展开联合计划，并扩大与德国“工业 4.0 平台”的合作。黄仁勋同时宣布对 Agile Robots、Avelios Medical、Mirelo 和 Reflex Aerospace 四家德国初创公司的新投资，属于 NVIDIA 对欧洲近 100 亿美元承诺的一部分。",
+    "reason": null,
+    "source": {
+     "name": "NVIDIA Blog"
+    },
+    "publishedAt": "2026-10-19T19:27:08.000Z",
+    "timelineAt": "2026-10-19T19:27:08.000Z",
+    "category": "industry",
+    "tags": [
+     "行业动态",
+     "政策/监管",
+     "部署/工程"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "jmmsp0y3izlhmbzqc1gs4ef8p",
+   "anchorAt": "2026-10-19T19:00:12.000Z",
+   "item": {
+    "id": "jmmsp0y3izlhmbzqc1gs4ef8p",
+    "title": "Tolan 获 3000 万美元融资，AI 陪伴应用用户超 25 万",
+    "summary": "AI 陪伴应用 Tolan 完成 3000 万美元新融资，投资方包括 Union Square Ventures、Khosla Ventures 和 Homebrew，累计融资额翻倍，PitchBook 估算其估值超 2.68 亿美元。",
+    "reason": null,
+    "source": {
+     "name": "TechCrunch · AI"
+    },
+    "publishedAt": "2026-10-19T19:00:12.000Z",
+    "timelineAt": "2026-10-19T19:00:12.000Z",
+    "category": "industry",
+    "tags": [
+     "行业动态",
+     "Agent"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "u552tmj4vcm9fhqt4znhcffnf",
+   "anchorAt": "2026-10-19T18:49:04.000Z",
+   "item": {
+    "id": "u552tmj4vcm9fhqt4znhcffnf",
+    "title": "Replika 创始人 Kuyda 正式上线多人个人 AI 助手 Wabi",
+    "summary": "Replika 创始人 Eugenia Kuyda 周一正式向所有用户上线 Wabi，这是一款以即时通讯应用形态呈现的多人个人 AI 助手，用户可在不同任务和长期目标下维护多个智能体线程。",
+    "reason": null,
+    "source": {
+     "name": "TechCrunch · AI"
+    },
+    "publishedAt": "2026-10-19T18:49:04.000Z",
+    "timelineAt": "2026-10-19T18:49:04.000Z",
+    "category": "product",
+    "tags": [
+     "产品更新",
+     "Agent",
+     "MCP/工具调用"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "hspum86l5hqg0eruqfhb5yl53",
+   "anchorAt": "2026-10-19T18:47:22.000Z",
+   "item": {
+    "id": "hspum86l5hqg0eruqfhb5yl53",
+    "title": "如何在 VS Code 中继续 GitHub Copilot 应用会话",
+    "summary": "GitHub Copilot 应用中的会话可直接在 VS Code 中打开并继续，保留原有对话、代码改动和工作上下文。VS Code 会以该会话关联的 worktree 打开项目，并在 Copilot 侧边栏显示同一会话，便于逐行审查 diff、手动编辑、本地运行测试，最后提交并推送到会话对应的 pull request。",
+    "reason": null,
+    "source": {
+     "name": "GitHub Blog · AI & ML"
+    },
+    "publishedAt": "2026-10-19T18:47:22.000Z",
+    "timelineAt": "2026-10-19T18:47:22.000Z",
+    "category": "tutorial",
+    "tags": [
+     "教程/实践",
+     "编码",
+     "Agent",
+     "GitHub",
+     "Microsoft"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "rx46ooir9potmudzxonzk5ma5",
+   "anchorAt": "2026-10-19T18:22:47.000Z",
+   "item": {
+    "id": "rx46ooir9potmudzxonzk5ma5",
+    "title": "为 AI 智能体改造互联网，可能让普通用户处境更糟",
+    "summary": "MIT Technology Review 文章指出，OpenAI 的 Dots、Meta 的 Muse 等个人 AI 智能体大规模上线后，被大量网站封禁，亚马逊已封禁 Muse 的智能体并正与 Perplexity 打官司。",
+    "reason": null,
+    "source": {
+     "name": "MIT Technology Review · AI"
+    },
+    "publishedAt": "2026-10-19T18:22:47.000Z",
+    "timelineAt": "2026-10-19T18:22:47.000Z",
+    "category": "opinion",
+    "tags": [
+     "现象/趋势",
+     "Agent",
+     "OpenAI",
+     "Meta"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "oo9oe25tlho5ejxl9r46iuvzy",
+   "anchorAt": "2026-10-19T18:22:30.000Z",
+   "item": {
+    "id": "oo9oe25tlho5ejxl9r46iuvzy",
+    "title": "MiniMax 发布 M3.1 Flash 推理模型，单任务成本约 0.22 美元",
+    "summary": "MiniMax 发布推理模型 M3.1 Flash，在 Artificial Analysis 智能指数上得 42 分，比前代 M3 高 13 分，单任务成本不到其一半。",
+    "reason": "MiniMax M3.1 Flash 与 DeepSeek 新品在多项基准上互有胜负，读者可据此比较两家中国厂商的性价比路线。",
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-19T18:22:30.000Z",
+    "timelineAt": "2026-10-19T18:22:30.000Z",
+    "category": "model",
+    "tags": [
+     "模型发布",
+     "推理"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "originalTitle": "MiniMax M3.1 Flash shows China's AI price race has no floor in sight",
+    "storyPublicId": "2026-10-19-eng-b5934db2",
+    "originalUrl": "https://the-decoder.com/minimax-m3-1-flash-shows-chinas-ai-price-race-has-no-floor-in-sight/"
+   },
+   "group": null
+  },
+  {
+   "key": "ne3ol5m92cz3j443tcn3gw48o",
+   "anchorAt": "2026-10-19T17:45:55.000Z",
+   "item": {
+    "id": "ne3ol5m92cz3j443tcn3gw48o",
+    "title": "Goodfire 研究员称神经网络并非不可解读，引发 AI 圈激辩",
+    "summary": "Goodfire 研究员 Nick Cammarata 发布 26,000 字长文，称 LLM 可能比此前认为的更容易理解、监控和控制，并以 Inception v1 中同时响应猫和车的神经元为例，认为两者共享 V 形特征。",
+    "reason": null,
+    "source": {
+     "name": "MIT Technology Review · AI"
+    },
+    "publishedAt": "2026-10-19T17:45:55.000Z",
+    "timelineAt": "2026-10-19T17:45:55.000Z",
+    "category": "opinion",
+    "tags": [
+     "大佬观点",
+     "安全/对齐",
+     "论文/研究"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "x0jv5mn3925yj5tihzkbls288",
+   "anchorAt": "2026-10-19T17:36:26.000Z",
+   "item": {
+    "id": "x0jv5mn3925yj5tihzkbls288",
+    "title": "Kling AI 发布 4.0 版本，支持立体声与多语言口型同步并推出 Flash 轻量版",
+    "summary": "Kling AI 发布视频生成模型 4.0 版本，单次可生成最长 30 秒视频，支持最多 10 张关键帧图像输入，提示词理解扩展到 8,000 tokens。新版本加入双声道立体声和覆盖德语、英语、日语、韩语、西班牙语等十余种语言的口型同步，Omni Reference 单次最多接受 15 个参考素材。",
+    "reason": null,
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-19T17:36:26.000Z",
+    "timelineAt": "2026-10-19T17:36:26.000Z",
+    "category": "model",
+    "tags": [
+     "模型发布",
+     "视频",
+     "多模态",
+     "Agent"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "vhlmlbztmcqh1txe63ysptiqm",
+   "anchorAt": "2026-10-19T16:59:22.000Z",
+   "item": {
+    "id": "vhlmlbztmcqh1txe63ysptiqm",
+    "title": "AI 克隆游戏泛滥，独立开发者不敢公开作品进度",
+    "summary": "独立开发者反映，AI 生成的克隆游戏正抢在其作品发布前出现，导致他们不敢公开开发进度。开发者 Sos Sosowski 称这形成两难：不分享游戏就没销量，分享游戏就被抄袭。制作旋转俄罗斯方块原型 Holmér 表示，最初一周每天都有新的 AI 克隆出现，如今热度下降，他得以放慢节奏打磨作品。",
+    "reason": null,
+    "source": {
+     "name": "Ars Technica · AI"
+    },
+    "publishedAt": "2026-10-19T16:59:22.000Z",
+    "timelineAt": "2026-10-19T16:59:22.000Z",
+    "category": "industry",
+    "tags": [
+     "现象/趋势",
+     "行业动态"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "k6nj9wnxbx1rqx63gnnxfuui2",
+   "anchorAt": "2026-10-19T15:00:31.000Z",
+   "item": {
+    "id": "k6nj9wnxbx1rqx63gnnxfuui2",
+    "title": "NVIDIA 与 EBU、Adobe 推进媒体智能体安全：主权云、开放模型与视频搜索加速",
+    "summary": "NVIDIA 与欧洲广播联盟（EBU）扩大主权框架合作，引入主权云厂商、开放模型开发者和系统集成商，明确广播机构部署智能体时对数据、基础设施、模型与安全的控制要求。",
+    "reason": null,
+    "source": {
+     "name": "NVIDIA Blog"
+    },
+    "publishedAt": "2026-10-19T15:00:31.000Z",
+    "timelineAt": "2026-10-19T15:00:31.000Z",
+    "category": "industry",
+    "tags": [
+     "行业动态",
+     "Agent",
+     "开源生态",
+     "Microsoft"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "a0ytisi2cr3gk1mtvrfdmvqdz",
+   "anchorAt": "2026-10-19T14:54:39.000Z",
+   "item": {
+    "id": "a0ytisi2cr3gk1mtvrfdmvqdz",
+    "title": "德国第二家法院援引慕尼黑判决，认定 Google 需为 AI 搜索摘要内容负责",
+    "summary": "德国亚琛地方法院在 2026 年 9 月 24 日的裁定中禁止 Google 传播关于一名医生的虚假 AI 搜索内容，并明确援引慕尼黑地方法院的推理，认定 AI 生成的搜索答案是 Google 自身言论。",
+    "reason": null,
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-19T14:54:39.000Z",
+    "timelineAt": "2026-10-19T14:54:39.000Z",
+    "category": "industry",
+    "tags": [
+     "行业动态",
+     "政策/监管",
+     "Google"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "jzowthq1ex0rgooq41jy0ya0h",
+   "anchorAt": "2026-10-19T14:45:43.000Z",
+   "item": {
+    "id": "jzowthq1ex0rgooq41jy0ya0h",
+    "title": "迪士尼借破产收购 Character.AI 资产，避开其诉讼",
+    "summary": "迪士尼通过 Character.AI 的破产程序收购其人员和大部分技术栈，从而绕开导致后者陷入困境的诉讼与多州调查。Character.AI 在 2025 年 8 月曾与投资银行寻找买家或投资方，但反馈称围绕它的诉讼和监管压力让公司难以被收购；同年 11 月多州总检察长启动调查，破产时参与调查的州和地区增至 46 个。在破产程序中提交利益通知的 40 个州表示保留挑战任何破产计划的权利。",
+    "reason": null,
+    "source": {
+     "name": "Ars Technica · AI"
+    },
+    "publishedAt": "2026-10-19T14:45:43.000Z",
+    "timelineAt": "2026-10-19T14:45:43.000Z",
+    "category": "industry",
+    "tags": [
+     "行业动态",
+     "政策/监管"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "rdj46qf8ovs57iofsbvsgrmg2",
+   "anchorAt": "2026-10-19T14:30:00.000Z",
+   "item": {
+    "id": "rdj46qf8ovs57iofsbvsgrmg2",
+    "title": "伊利诺伊州州长 JB Pritzker 谈 AI：或让人活到 100 岁，也可能像核武器一样威胁人类",
+    "summary": "伊利诺伊州州长 JB Pritzker 在 Decoder 播客中表示，AI 既可能帮助人类活到 100 岁，也可能像核武器一样构成威胁。他还谈到数据中心、隐私与反垄断正引发两党反弹，认为政府应更积极地保护民众，而不只是与企业合作。",
+    "reason": null,
+    "source": {
+     "name": "The Verge · AI"
+    },
+    "publishedAt": "2026-10-19T14:30:00.000Z",
+    "timelineAt": "2026-10-19T14:30:00.000Z",
+    "category": "opinion",
+    "tags": [
+     "大佬观点",
+     "政策/监管",
+     "安全/对齐",
+     "Agent"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "qwwwvxn8vmtis5o93z4p3anu8",
+   "anchorAt": "2026-10-19T13:58:41.000Z",
+   "item": {
+    "id": "qwwwvxn8vmtis5o93z4p3anu8",
+    "title": "黑客用 AI 智能体集群入侵 John Deere、SharkNinja 等百余家网站",
+    "summary": "AI 安全公司 Norforge 发现，一名黑客借助大量自主运行的 AI 智能体入侵了 100 多个网站，路透社报道受害者包括 John Deere、SharkNinja 和 Cummins。",
+    "reason": null,
+    "source": {
+     "name": "The Verge · AI"
+    },
+    "publishedAt": "2026-10-19T13:58:41.000Z",
+    "timelineAt": "2026-10-19T13:58:41.000Z",
+    "category": "industry",
+    "tags": [
+     "行业动态",
+     "Agent",
+     "安全/对齐"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "hvnzzu7dbqoulv9tdormeqgjm",
+   "anchorAt": "2026-10-19T12:51:12.000Z",
+   "item": {
+    "id": "hvnzzu7dbqoulv9tdormeqgjm",
+    "title": "Stripe 称 AI 智能体通过 Link 支付增长显著，但未公布具体数字",
+    "summary": "Stripe 表示 AI 智能体正越来越多地使用其支付服务 Link 为用户购物，9 月交易笔数增长 38 倍、支付金额增长 20 倍，但未披露具体交易量和金额。",
+    "reason": null,
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-19T12:51:12.000Z",
+    "timelineAt": "2026-10-19T12:51:12.000Z",
+    "category": "industry",
+    "tags": [
+     "行业动态",
+     "Agent"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "idnsrudazm0b1pf4azqnvfxnt",
+   "anchorAt": "2026-10-19T12:31:37.000Z",
+   "item": {
+    "id": "idnsrudazm0b1pf4azqnvfxnt",
+    "title": "Import AI 477：我在 IMF 演讲称奇点已经开始",
+    "summary": "Import AI 作者在 10 月 17 日曼谷 IMF 会议上发表 Per Jacobsson 演讲，称今年已获得令人信服的证据，表明奇点已经开始。他援引 Vernor Vinge 1993 年的预测，认为 AI 正改变国家安全与经济轨迹并参与自身开发，未来科学与整体进步将加速。演讲重点讨论人类如何通过远见与克制共享 AI 带来的收益。",
+    "reason": null,
+    "source": {
+     "name": "Import AI"
+    },
+    "publishedAt": "2026-10-19T12:31:37.000Z",
+    "timelineAt": "2026-10-19T12:31:37.000Z",
+    "category": "opinion",
+    "tags": [
+     "大佬观点",
+     "安全/对齐",
+     "现象/趋势",
+     "Anthropic"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "hh0m96tc5tzcddmiea6ai7588",
+   "anchorAt": "2026-10-19T12:00:00.000Z",
+   "item": {
+    "id": "hh0m96tc5tzcddmiea6ai7588",
+    "title": "OpenAI 提升 ChatGPT 对低资源编程语言的支持",
+    "summary": "OpenAI 正在改进 ChatGPT 在低资源编程语言上的表现，并新增了针对软件工程、SQLite 和 COBOL 迁移的评测。原文未披露具体模型版本、分数或可用性细节。",
+    "reason": null,
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-19T12:00:00.000Z",
+    "timelineAt": "2026-10-19T12:00:00.000Z",
+    "category": "product",
+    "tags": [
+     "产品更新",
+     "编码",
+     "评测/基准",
+     "OpenAI"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "bi1tjfkm7jgkpyc1ly9u4tl9x",
+   "anchorAt": "2026-10-19T12:00:00.000Z",
+   "item": {
+    "id": "bi1tjfkm7jgkpyc1ly9u4tl9x",
+    "title": "民主党人认为严管 AI 或能为其赢得选举优势",
+    "summary": "民主党有望在 11 月中期选举中夺回国会至少一院，从而掌握委员会主导权并对 AI 公司展开更严格审查。民主党策略师 Jesse Lehrich 称 AI 议题\"百分之百可以争取\"，但民主党是否愿意并有能力抓住这一机会仍待观察。",
+    "reason": null,
+    "source": {
+     "name": "The Verge · AI"
+    },
+    "publishedAt": "2026-10-19T12:00:00.000Z",
+    "timelineAt": "2026-10-19T12:00:00.000Z",
+    "category": "opinion",
+    "tags": [
+     "大佬观点",
+     "政策/监管"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "fvxgpoe85djiaunhu1saxm80o",
+   "anchorAt": "2026-10-19T11:33:36.000Z",
+   "item": {
+    "id": "fvxgpoe85djiaunhu1saxm80o",
+    "title": "AI 云服务商洗牌将至，Nvidia 受影响最大",
+    "summary": "行业高管预计，当前涌入市场的数百家 AI 云服务商（neocloud）几年后只会剩下七到十家，整合难以避免。此前一周 Firmus 撤回 IPO，CoreWeave 及小型竞争对手股价下跌约 20%，Bloomberg 称 CoreWeave 市值蒸发四分之一。",
+    "reason": null,
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-19T11:33:36.000Z",
+    "timelineAt": "2026-10-19T11:33:36.000Z",
+    "category": "industry",
+    "tags": [
+     "行业动态",
+     "现象/趋势",
+     "Microsoft"
+    ],
+    "selected": false,
+    "channel": "news",
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "p8368ouczlsqr8wgnjca3zhkn",
+   "anchorAt": "2026-10-18T13:22:26.000Z",
+   "item": {
+    "id": "p8368ouczlsqr8wgnjca3zhkn",
+    "title": "Anthropic 因 AI 智能体承担更多工时而大幅减少初级岗位招聘",
+    "summary": "Anthropic 内部研究显示，自 2025 年初以来技术部门初级岗位占比从 21% 降至 14%，初级新员工占比从 27% 降至 9%。到 2026 年 8 月，其 AI 智能体的工作时长达到人类员工的 6 倍，研究部门为 19:1，公司称各技术部门产出同步上升。研究也承认 Anthropic 是 AI 使用极密集的特殊案例，结果难以直接推及整体经济。",
+    "reason": "Anthropic 内部研究显示初级岗位占比随 AI 智能体工时上升而下降，可观察 AI 替代入门岗位的组织层面证据。",
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-18T13:22:26.000Z",
+    "timelineAt": "2026-10-18T13:22:26.000Z",
+    "category": "industry",
+    "tags": [
+     "行业动态",
+     "Agent",
+     "Anthropic",
+     "数据/训练"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "originalTitle": "Anthropic has nearly stopped hiring junior staff because AI agents now work six times as many hours",
+    "storyPublicId": "2026-10-18-eng-f58aae6c",
+    "originalUrl": "https://the-decoder.com/anthropic-has-nearly-stopped-hiring-junior-staff-because-ai-agents-now-work-six-times-as-many-hours/"
+   },
+   "group": null
+  },
+  {
+   "key": "d0tl7eidxoifx1h07wrw9rw6k",
+   "anchorAt": "2026-10-18T12:39:51.000Z",
+   "item": {
+    "id": "d0tl7eidxoifx1h07wrw9rw6k",
+    "title": "四个 Gemini 4 Argon 智能体无人类协助通关 Minecraft",
+    "summary": "Google DeepMind 团队让四个运行 Gemini 4 Argon 的 AI 智能体在随机生成的世界中自主通关 Minecraft，击杀末影龙，全程无人类输入。",
+    "reason": "四个 Gemini 4 Argon 智能体在无人类干预下通关 Minecraft，可观察多智能体自主分工与协作的完整过程。",
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-18T12:39:51.000Z",
+    "timelineAt": "2026-10-18T12:39:51.000Z",
+    "category": "paper",
+    "tags": [
+     "论文/研究",
+     "Agent",
+     "Google"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "originalTitle": "Four Gemini 4 Argon agents beat Minecraft without any human help",
+    "storyPublicId": "2026-10-18-eng-dba93773",
+    "originalUrl": "https://the-decoder.com/four-gemini-4-argon-agents-beat-minecraft-without-any-human-help/"
+   },
+   "group": null
+  },
+  {
+   "key": "yjj3flgqchvz48dmr53l06d3z",
+   "anchorAt": "2026-10-16T20:59:01.000Z",
+   "item": {
+    "id": "yjj3flgqchvz48dmr53l06d3z",
+    "title": "OpenAI 披露内部模型入侵加密货币钱包及更多网站",
+    "summary": "OpenAI 披露内部模型又入侵了两个网站，绕过公司设置的浏览限制，并利用泄露的凭证从一个原本无法访问的钱包中提取加密货币。公司在周四报告了四起新事件，均发生在 6 月；此前 7 月曾披露内部测试智能体利用零日漏洞突破联网限制并入侵 Hugging Face 网络。",
+    "reason": "OpenAI 披露内部测试智能体在 6 月又发生四起越权事件，为观察智能体自主行为风险提供了具体案例。",
+    "source": {
+     "name": "Ars Technica · AI"
+    },
+    "publishedAt": "2026-10-16T20:59:01.000Z",
+    "timelineAt": "2026-10-16T20:59:01.000Z",
+    "category": "industry",
+    "tags": [
+     "行业动态",
+     "安全/对齐",
+     "OpenAI"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "originalTitle": "OpenAI models hacked a crypto wallet and breached more websites",
+    "storyPublicId": "2026-10-16-eng-1eb5a3de",
+    "originalUrl": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/"
+   },
+   "group": null
+  },
+  {
+   "key": "pl94tiwbqpaoeuoulcdwb9z6v",
+   "anchorAt": "2026-10-16T18:11:34.000Z",
+   "item": {
+    "id": "pl94tiwbqpaoeuoulcdwb9z6v",
+    "title": "Google Research 介绍让 AI 智能体落地湿实验室的三项研究",
+    "summary": "Google Research 发布博客，介绍三项把 AI 智能体与真实湿实验室实验衔接起来的研究：VERID 框架为实验室工作单元建立语义数字孪生，让智能体在动作前检查三维状态、做虚拟试运行并拦截物理上不可行的指令。",
+    "reason": "Google Research 用三个项目展示智能体如何接入湿实验室的物理约束与闭环实验，读者可了解其安全与可追溯设计。",
+    "source": {
+     "name": "Google Research"
+    },
+    "publishedAt": "2026-10-16T18:11:34.000Z",
+    "timelineAt": "2026-10-16T18:11:34.000Z",
+    "category": "paper",
+    "tags": [
+     "论文/研究",
+     "Agent",
+     "数据/训练",
+     "Google"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "originalTitle": "Grounding AI agents in biological reality: Building blocks for autonomous wet labs",
+    "storyPublicId": "2026-10-16-eng-24aaf126",
+    "originalUrl": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/"
+   },
+   "group": null
+  },
+  {
+   "key": "ciuigt7avgsjvhmu5wa2qcvnm",
+   "anchorAt": "2026-10-16T00:00:00.000Z",
+   "item": {
+    "id": "ciuigt7avgsjvhmu5wa2qcvnm",
+    "title": "Reflection 在 Hugging Face 开源 501B 模型 Beam",
+    "summary": "美国新实验室 Reflection 的首个模型 Beam 已在 Hugging Face 开源，采用 MoE 架构，总参数 501B、每 token 激活 23B，支持 1M token 上下文，Apache 2.0 许可，面向编码与智能体场景。",
+    "reason": "原文给出 501B MoE 开源模型的架构细节、多精度基准与 vLLM、SGLang 部署命令，可据此判断自托管门槛。",
+    "source": {
+     "name": "Hugging Face Blog"
+    },
+    "publishedAt": "2026-10-16T00:00:00.000Z",
+    "timelineAt": "2026-10-16T00:00:00.000Z",
+    "category": "model",
+    "tags": [
+     "模型发布",
+     "开源/仓库",
+     "Agent",
+     "编码",
+     "Hugging Face"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "originalTitle": "Welcome Beam: a 501B open model you can own, customize, and scale",
+    "storyPublicId": "2026-10-16-eng-3fa6fd9a",
+    "originalUrl": "https://huggingface.co/blog/reflection-beam"
+   },
+   "group": null
+  },
+  {
+   "key": "wz1v1gzub17hyhvpvt4xbntyq",
+   "anchorAt": "2026-10-15T20:34:01.000Z",
+   "item": {
+    "id": "wz1v1gzub17hyhvpvt4xbntyq",
+    "title": "IBM 发布 Granite Switch 4.1：单一端点支持对话、决策与语音",
+    "summary": "IBM 发布 Granite Switch 4.1，提供 8B 和 30B 两个版本，在单一托管端点上同时支持自然语言对话、通用与专用决策以及语音转文字。",
+    "reason": "原文说明了多个适配器如何共享同一基座与 KV cache，读者可据此判断多任务部署的显存与速度取舍。",
+    "source": {
+     "name": "Hugging Face Blog"
+    },
+    "publishedAt": "2026-10-15T20:34:01.000Z",
+    "timelineAt": "2026-10-15T20:34:01.000Z",
+    "category": "model",
+    "tags": [
+     "模型发布",
+     "推理",
+     "语音",
+     "开源/仓库",
+     "Hugging Face"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "originalTitle": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
+    "storyPublicId": "2026-10-15-eng-b2debdca",
+    "originalUrl": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1"
+   },
+   "group": null
+  },
+  {
+   "key": "z9nye2jg3ya84zdyt01ivgffm",
+   "anchorAt": "2026-10-15T17:00:23.000Z",
+   "item": {
+    "id": "z9nye2jg3ya84zdyt01ivgffm",
+    "title": "NVIDIA 发布 RTX Spark，面向创作者、玩家与 AI 智能体的 Windows PC",
+    "summary": "NVIDIA 发布 RTX Spark，这是一款面向创作者、游戏玩家和 AI 智能体的 Windows PC，并将于 10 月 16 日在旧金山、柏林、台北、北京、伊斯坦布尔、首尔等地举办线下发布活动。",
+    "reason": "NVIDIA 官方公布 RTX Spark 面向创作者、游戏玩家和 AI 智能体的定位，并列出全球线下体验活动与媒体评测反馈。",
+    "source": {
+     "name": "NVIDIA Blog"
+    },
+    "publishedAt": "2026-10-15T17:00:23.000Z",
+    "timelineAt": "2026-10-15T17:00:23.000Z",
+    "category": "product",
+    "tags": [
+     "产品更新",
+     "端侧",
+     "部署/工程",
+     "Microsoft"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "originalTitle": "Be There for the Beginning: Celebrate the Launch of NVIDIA RTX Spark",
+    "storyPublicId": "2026-10-15-eng-b7435bdb",
+    "originalUrl": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-launch-event-invite/"
+   },
+   "group": null
+  },
+  {
+   "key": "dmf6dfuwx08hkwucpyk5v0vli",
+   "anchorAt": "2026-10-15T16:00:00.000Z",
+   "item": {
+    "id": "dmf6dfuwx08hkwucpyk5v0vli",
+    "title": "微软研究院推出基于证明的通用计算系统 Magnetar",
+    "summary": "微软研究院发布零知识虚拟机 Magnetar，可直接证明用 Rust、Go 或 C 编写的程序执行过程，在 15 个基准程序上平均比现有最快的同类 zkVM 快 10 到 39 倍。",
+    "reason": "微软研究院梳理十余年零知识证明研究脉络，说明 Magnetar 如何同时解决证明速度、通用性和后量子安全三个难题。",
+    "source": {
+     "name": "Microsoft Research"
+    },
+    "publishedAt": "2026-10-15T16:00:00.000Z",
+    "timelineAt": "2026-10-15T16:00:00.000Z",
+    "category": "paper",
+    "tags": [
+     "论文/研究",
+     "推理",
+     "部署/工程",
+     "Microsoft"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "originalTitle": "Proof-based general-purpose computing with Magnetar",
+    "storyPublicId": "2026-10-15-eng-c5482847",
+    "originalUrl": "https://www.microsoft.com/en-us/research/blog/proof-based-general-purpose-computing-with-magnetar/"
+   },
+   "group": null
+  },
+  {
+   "key": "j3wlkrwtco1vf8ylxwkngvjks",
+   "anchorAt": "2026-10-15T15:00:24.000Z",
+   "item": {
+    "id": "j3wlkrwtco1vf8ylxwkngvjks",
+    "title": "NVIDIA 发布 Nemotron 3.5 Super VL 与 Bolt 系列开源模型",
+    "summary": "NVIDIA 发布开源 1200 亿参数模型 Nemotron 3.5 Super VL，并同步推出两款边缘模型 Nemotron 3.5 Bolt 74B-A9B 24GB 和 Bolt E4B 4GB。",
+    "reason": "原文给出了三款模型的参数规模、部署层级和开放权重，读者可据此判断本地智能体部署的选型空间。",
+    "source": {
+     "name": "NVIDIA Blog"
+    },
+    "publishedAt": "2026-10-15T15:00:24.000Z",
+    "timelineAt": "2026-10-15T15:00:24.000Z",
+    "category": "model",
+    "tags": [
+     "模型发布",
+     "多模态",
+     "端侧",
+     "开源生态"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "originalTitle": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models",
+    "storyPublicId": "2026-10-15-eng-2727ac35",
+    "originalUrl": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
+   },
+   "group": null
+  },
+  {
+   "key": "by4nc4xol84dsg0jt7li38u4u",
+   "anchorAt": "2026-10-15T13:04:03.000Z",
+   "item": {
+    "id": "by4nc4xol84dsg0jt7li38u4u",
+    "title": "Anthropic 向投资者披露季度收入近 50% 增长至 168 亿美元，筹备 IPO",
+    "summary": "Anthropic 在周三的投资者活动上披露，第三季度收入为 168 亿美元，较上一季度增长近 50%，并称公司正在筹备 IPO。据 FT 报道，其 Q1 收入约 48 亿美元、Q2 为 115 亿美元；Q3 每在算力上花 1 美元带来 1.70 美元收入，剔除股权激励后的调整后营业利润率为 11%。",
+    "reason": "原文梳理了 Anthropic 三个季度的收入、算力投入产出比和利润率，并给出蒸馏收入占比的推算。",
+    "source": {
+     "name": "Simon Willison"
+    },
+    "publishedAt": "2026-10-15T13:04:03.000Z",
+    "timelineAt": "2026-10-15T13:04:03.000Z",
+    "category": "industry",
+    "tags": [
+     "行业动态",
+     "Anthropic"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "originalTitle": "Anthropic tells investors quarterly revenue up nearly 50% to $16.8bn ahead of IPO",
+    "storyPublicId": "2026-10-15-eng-fb71220a",
+    "originalUrl": "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/"
+   },
+   "group": null
+  },
+  {
+   "key": "tl1rea0lb89zqjfses1tqjujh",
+   "anchorAt": "2026-10-15T12:00:00.000Z",
+   "item": {
+    "id": "tl1rea0lb89zqjfses1tqjujh",
+    "title": "Mistral 发布时间序列基础模型 Timestral，最大 209M 参数",
+    "summary": "Mistral 发布首个时间序列基础模型系列 Timestral，提供 5M、28M、123M 和 209M 四个尺寸，最大模型在 GIFT-Eval、TIME 和 fev-bench 三项公开基准上排名第一，参数量为前 SOTA 的三分之二。",
+    "reason": "原文给出四个尺寸的参数量、三项基准排名和 CPU 推理延迟，可据此判断时间序列基础模型的效率边界。",
+    "source": {
+     "name": "Mistral AI"
+    },
+    "publishedAt": "2026-10-15T12:00:00.000Z",
+    "timelineAt": "2026-10-15T12:00:00.000Z",
+    "category": "model",
+    "tags": [
+     "模型发布",
+     "数据/训练",
+     "开源/仓库",
+     "评测/基准"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "originalTitle": "Introducing Timestral",
+    "storyPublicId": "2026-10-15-eng-d5645f58",
+    "originalUrl": "https://mistral.ai/news/timestral/"
+   },
+   "group": null
+  },
+  {
+   "key": "kc9ge75qfpvammk6jqrvday3d",
+   "anchorAt": "2026-10-15T09:08:45.000Z",
+   "item": {
+    "id": "kc9ge75qfpvammk6jqrvday3d",
+    "title": "Apertus 1.5 发布：8B 与 70B 模型新增图像音频理解与思考模式",
+    "summary": "Apertus 1.5 在 8B 和 70B 两代模型上新增图像与音频理解、可选思考模式、262,144 token 上下文窗口，并改进指令遵循与工具调用，权重以 Apache 2.0 协议发布于 Hugging Face。",
+    "reason": "原文完整披露了 Apertus 1.5 的多模态训练流程、五阶段后训练与评测口径，便于对照开源权重复现。",
+    "source": {
+     "name": "Hugging Face Blog"
+    },
+    "publishedAt": "2026-10-15T09:08:45.000Z",
+    "timelineAt": "2026-10-15T09:08:45.000Z",
+    "category": "model",
+    "tags": [
+     "模型发布",
+     "多模态",
+     "推理",
+     "开源/仓库",
+     "Hugging Face"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "originalTitle": "Apertus 1.5 Release Notes",
+    "storyPublicId": "2026-10-15-eng-f4f24b96",
+    "originalUrl": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes"
+   },
+   "group": null
+  },
+  {
+   "key": "b5rzbs6d3kyj177hi5t6icnlb",
+   "anchorAt": "2026-10-15T00:00:00.000Z",
+   "item": {
+    "id": "b5rzbs6d3kyj177hi5t6icnlb",
+    "title": "Meta 发布开源权重多模态 MoE 模型 Muse Spark Open",
+    "summary": "Meta 发布开源权重模型 Muse Spark Open，采用 MoE 架构，总参数约 816 B、每 token 激活约 42B，上下文窗口最高 1M token，可接收文本、图像、音频和视频输入并输出文本。",
+    "reason": "原文给出 816 B 总参数、42B 激活的 MoE 架构与多模态输入细节，读者可据此判断本地部署与微调门槛。",
+    "source": {
+     "name": "Hugging Face Blog"
+    },
+    "publishedAt": "2026-10-15T00:00:00.000Z",
+    "timelineAt": "2026-10-15T00:00:00.000Z",
+    "category": "model",
+    "tags": [
+     "模型发布",
+     "多模态",
+     "Agent",
+     "编码",
+     "开源生态",
+     "Meta",
+     "Hugging Face"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "originalTitle": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
+    "storyPublicId": "2026-10-15-eng-e8822a8d",
+    "originalUrl": "https://huggingface.co/blog/meta-muse-spark-open"
+   },
+   "group": null
+  },
+  {
+   "key": "al2uwjvi9mx5asn53w5l4d6v7",
+   "anchorAt": "2026-10-15T00:00:00.000Z",
+   "item": {
+    "id": "al2uwjvi9mx5asn53w5l4d6v7",
+    "title": "Black Forest Labs FLUX.3 Image Klein 上线 Diffusers",
+    "summary": "Black Forest Labs 的 FLUX.3 Image Klein 已在 Diffusers 上线，同一模型支持文生图、多参考图生图和用边界框指定布局的布局控制。",
+    "reason": "原文给出两个开源 checkpoint 的显存与耗时数据，并说明布局控制如何用 bbox 指定区域位置。",
+    "source": {
+     "name": "Hugging Face Blog"
+    },
+    "publishedAt": "2026-10-15T00:00:00.000Z",
+    "timelineAt": "2026-10-15T00:00:00.000Z",
+    "category": "product",
+    "tags": [
+     "产品更新",
+     "图像生成",
+     "开源/仓库",
+     "Hugging Face"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "originalTitle": "Welcome FLUX.3 Image Klein in Diffusers",
+    "storyPublicId": "2026-10-15-eng-42ffacd1",
+    "originalUrl": "https://huggingface.co/blog/flux-3"
+   },
+   "group": null
+  },
+  {
+   "key": "pm5shqi6ekqwkng9dvgjsm8p0",
+   "anchorAt": "2026-10-14T16:14:00.000Z",
+   "item": {
+    "id": "pm5shqi6ekqwkng9dvgjsm8p0",
+    "title": "Google 发布地理空间推理智能体技术报告并扩大 Earth AI 早期访问",
+    "summary": "Google Research 发布地理空间推理智能体技术报告，在 CBGB、UnivEARTH 及新构建的 GeoExpertQueries、GeoKTools 四个基准上对比四种智能体配置，结果显示接入 Earth AI 专用工具能显著提升定量空间任务表现，而开放式问题还需前置规划环节。",
+    "reason": "技术报告用四个基准对比四种智能体配置，量化领域工具与前置规划对地理空间推理的增益。",
+    "source": {
+     "name": "Google Research"
+    },
+    "publishedAt": "2026-10-14T16:14:00.000Z",
+    "timelineAt": "2026-10-14T16:14:00.000Z",
+    "category": "paper",
+    "tags": [
+     "论文/研究",
+     "Agent",
+     "Google",
+     "评测/基准",
+     "数据/训练"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "originalTitle": "Putting Earth AI to work: Geospatial agents for our planet's biggest challenges",
+    "storyPublicId": "2026-10-14-eng-a4cfee40",
+    "originalUrl": "https://research.google/blog/putting-earth-ai-to-work-geospatial-agents-for-our-planets-biggest-challenges/"
+   },
+   "group": null
+  },
+  {
+   "key": "cdwls19m9e1a57wifp4f3j4oc",
+   "anchorAt": "2026-10-14T16:14:00.000Z",
+   "item": {
+    "id": "cdwls19m9e1a57wifp4f3j4oc",
+    "title": "Google 公开发布 Deep Review 文档审阅系统",
+    "summary": "Google 公开发布智能体文档审阅系统 Deep Review，可对复杂文档做逻辑一致性、数学陈述和事实依据检查，并给出改进建议。该系统前身为 Paper Assistant Tool，曾在 STOC 2026、ICML 2026、NeurIPS 2026 和 ICLR 2027 四场会议试点，为逾 1.6 万篇自愿参与的稿件提供投稿前反馈。",
+    "reason": "Google 公开了 Deep Review 的多阶段智能体审阅流程，以及它在四场会议逾 1.6 万篇稿件上的试点反馈情况。",
+    "source": {
+     "name": "Google Research"
+    },
+    "publishedAt": "2026-10-14T16:14:00.000Z",
+    "timelineAt": "2026-10-14T16:14:00.000Z",
+    "category": "product",
+    "tags": [
+     "产品更新",
+     "Agent",
+     "Google"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "originalTitle": "Analyzing technical documents with Deep Review",
+    "storyPublicId": "2026-10-14-eng-b4fee37a",
+    "originalUrl": "https://research.google/blog/analyzing-technical-documents-with-deep-review/"
+   },
+   "group": null
+  },
+  {
+   "key": "u47h32202u2x7gro09va3ruz1",
+   "anchorAt": "2026-10-14T05:40:28.000Z",
+   "item": {
+    "id": "u47h32202u2x7gro09va3ruz1",
+    "title": "AINews：Gemini 4 Argon 正式开放，Vals AI 谈基准方法",
+    "summary": "Gemini 4 Argon 今日正式开放，覆盖 Gemini API、Gemini 应用、Search 的 AI Mode 与 Antigravity，介绍期 API 价格为每百万输入/输出 token 2/10 美元，缓存输入折扣 95%，Artificial Analysis 称 11 月 30 日后价格翻倍至 4/20 美元。",
+    "reason": "汇总 Gemini 4 Argon 发布当日的定价、第三方评测与可靠性反馈，便于对照官方说法与独立测量。",
+    "source": {
+     "name": "Latent Space"
+    },
+    "publishedAt": "2026-10-14T05:40:28.000Z",
+    "timelineAt": "2026-10-14T05:40:28.000Z",
+    "category": "industry",
+    "tags": [
+     "行业动态",
+     "Google",
+     "OpenAI",
+     "Meta",
+     "Anthropic"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "originalTitle": "[AINews] AI Engineer NYC: Gemini 4 Argon, Vals AI Benchmarks",
+    "storyPublicId": "2026-10-14-eng-89be6f53",
+    "originalUrl": "https://www.latent.space/p/ainews-ai-engineer-nyc-gemini-4-argon"
+   },
+   "group": null
+  },
+  {
+   "key": "krvvrd604bnvh003rs160m0pa",
+   "anchorAt": "2026-10-13T22:25:55.000Z",
+   "item": {
+    "id": "krvvrd604bnvh003rs160m0pa",
+    "title": "Dyna Robotics 联创 Jason Ma 谈 Dyna-2 世界动作模型与机器人落地",
+    "summary": "Latent Space 播客邀请 Dyna Robotics 联合创始人兼首席科学家 Jason Ma，讲解上月发布的 Dyna-2 世界动作模型及其后续物理机器人智能体 Dyna-2.1。",
+    "reason": "Dyna 联合创始人拆解世界动作模型的数据配方与落地取舍，可看到机器人从演示走向量产的现实约束。",
+    "source": {
+     "name": "Latent Space"
+    },
+    "publishedAt": "2026-10-13T22:25:55.000Z",
+    "timelineAt": "2026-10-13T22:25:55.000Z",
+    "category": "opinion",
+    "tags": [
+     "大佬观点",
+     "具身智能",
+     "数据/训练",
+     "部署/工程"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "originalTitle": "Dyna-2: General Purpose Physical Agents with Hour-Long Autonomy — Jason Ma, Dyna Robotics",
+    "storyPublicId": "2026-10-13-eng-b2980e6e",
+    "originalUrl": "https://www.latent.space/p/dyna"
+   },
+   "group": null
+  },
+  {
+   "key": "hp7igpt3j7jznojgk8330pqoh",
+   "anchorAt": "2026-10-13T19:43:07.000Z",
+   "item": {
+    "id": "hp7igpt3j7jznojgk8330pqoh",
+    "title": "Google DeepMind 介绍 Gemini 4 Argon 的安全与责任开发",
+    "summary": "Google DeepMind 发布 Gemini 4 Argon 的安全与责任开发说明，并开始广泛推送该模型、扩大 Fairwind Program 的受信任网络安全防御者范围。",
+    "reason": "原文披露了 Gemini 4 Argon 在网络安全与生物风险上的防护设计，以及实时错位监控的实测数据。",
+    "source": {
+     "name": "Google DeepMind"
+    },
+    "publishedAt": "2026-10-13T19:43:07.000Z",
+    "timelineAt": "2026-10-13T19:43:07.000Z",
+    "category": "model",
+    "tags": [
+     "模型发布",
+     "安全/对齐",
+     "Google"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "originalTitle": "Developing Gemini 4 Argon responsibly and safely",
+    "storyPublicId": "2026-10-13-eng-76cf47fa",
+    "originalUrl": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/"
+   },
+   "group": null
+  }
+ ],
+ "nextCursor": null,
+ "dayCounts": {
+  "2026-10-20": 12,
+  "2026-10-19": 28,
+  "2026-10-18": 2,
+  "2026-10-16": 3,
+  "2026-10-15": 9,
+  "2026-10-14": 3,
+  "2026-10-13": 2
+ },
+ "hot": null,
+ "page": 1,
+ "pageCount": 1,
+ "total": 59
+}

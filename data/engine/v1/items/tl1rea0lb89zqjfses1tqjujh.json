@@ -1,0 +1,62 @@
+{
+ "id": "tl1rea0lb89zqjfses1tqjujh",
+ "title": "Mistral 发布时间序列基础模型 Timestral，最大 209M 参数",
+ "summary": "Mistral 发布首个时间序列基础模型系列 Timestral，提供 5M、28M、123M 和 209M 四个尺寸，最大模型在 GIFT-Eval、TIME 和 fev-bench 三项公开基准上排名第一，参数量为前 SOTA 的三分之二。",
+ "reason": "原文给出四个尺寸的参数量、三项基准排名和 CPU 推理延迟，可据此判断时间序列基础模型的效率边界。",
+ "source": {
+  "name": "Mistral AI"
+ },
+ "publishedAt": "2026-10-15T12:00:00.000Z",
+ "timelineAt": "2026-10-15T12:00:00.000Z",
+ "category": "model",
+ "tags": [
+  "模型发布",
+  "数据/训练",
+  "开源/仓库",
+  "评测/基准"
+ ],
+ "selected": true,
+ "channel": "news",
+ "x": null,
+ "topics": [
+  {
+   "slug": "%E6%A8%A1%E5%9E%8B%E5%8F%91%E5%B8%83",
+   "name": "模型发布"
+  },
+  {
+   "slug": "%E6%95%B0%E6%8D%AE%2F%E8%AE%AD%E7%BB%83",
+   "name": "数据/训练"
+  },
+  {
+   "slug": "%E5%BC%80%E6%BA%90%2F%E4%BB%93%E5%BA%93",
+   "name": "开源/仓库"
+  },
+  {
+   "slug": "%E8%AF%84%E6%B5%8B%2F%E5%9F%BA%E5%87%86",
+   "name": "评测/基准"
+  }
+ ],
+ "hasTranslation": true,
+ "bodyLanguage": "zh",
+ "readingMode": "summary-only",
+ "indexable": true,
+ "markdownAvailable": false,
+ "relatedStories": [
+  {
+   "publicId": "2026-10-15-eng-d5645f58",
+   "title": "Mistral 发布时间序列基础模型 Timestral，最大 209M 参数"
+  }
+ ],
+ "outline": [],
+ "author": null,
+ "group": null,
+ "body": {
+  "zh": "Mistral 发布首个时间序列基础模型系列 Timestral，提供 5M、28M、123M 和 209M 四个尺寸，最大模型在 GIFT-Eval、TIME 和 fev-bench 三项公开基准上排名第一，参数量为前 SOTA 的三分之二。",
+  "original": null,
+  "zhKind": "translation",
+  "complete": false
+ },
+ "originalTitle": "Introducing Timestral",
+ "storyPublicId": "2026-10-15-eng-d5645f58",
+ "originalUrl": "https://mistral.ai/news/timestral/"
+}

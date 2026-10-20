@@ -25,6 +25,17 @@ declare module "virtual:ft-engine" {
     feedItems: unknown[];
     events: unknown[];
     redirects: unknown[];
+    items: unknown[];
+    topics: Array<{ slug: string; name: string; count: number }>;
+    allTimeline: {
+      filters: { channel: string; category: string | null; tag: string | null };
+      cards: unknown[];
+      nextCursor: string | null;
+      hot: unknown[] | null;
+      dayCounts: Record<string, number>;
+    };
+    weeklyIndex: unknown[];
+    monthlyIndex: unknown[];
   };
   export default data;
 }

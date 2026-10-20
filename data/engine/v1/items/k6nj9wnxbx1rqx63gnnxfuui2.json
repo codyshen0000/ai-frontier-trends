@@ -1,0 +1,54 @@
+{
+ "id": "k6nj9wnxbx1rqx63gnnxfuui2",
+ "title": "NVIDIA 与 EBU、Adobe 推进媒体智能体安全：主权云、开放模型与视频搜索加速",
+ "summary": "NVIDIA 与欧洲广播联盟（EBU）扩大主权框架合作，引入主权云厂商、开放模型开发者和系统集成商，明确广播机构部署智能体时对数据、基础设施、模型与安全的控制要求。",
+ "reason": null,
+ "source": {
+  "name": "NVIDIA Blog"
+ },
+ "publishedAt": "2026-10-19T15:00:31.000Z",
+ "timelineAt": "2026-10-19T15:00:31.000Z",
+ "category": "industry",
+ "tags": [
+  "行业动态",
+  "Agent",
+  "开源生态",
+  "Microsoft"
+ ],
+ "selected": false,
+ "channel": "news",
+ "x": null,
+ "topics": [
+  {
+   "slug": "%E8%A1%8C%E4%B8%9A%E5%8A%A8%E6%80%81",
+   "name": "行业动态"
+  },
+  {
+   "slug": "Agent",
+   "name": "Agent"
+  },
+  {
+   "slug": "%E5%BC%80%E6%BA%90%E7%94%9F%E6%80%81",
+   "name": "开源生态"
+  },
+  {
+   "slug": "Microsoft",
+   "name": "Microsoft"
+  }
+ ],
+ "hasTranslation": false,
+ "bodyLanguage": "zh",
+ "readingMode": "summary-only",
+ "indexable": true,
+ "markdownAvailable": false,
+ "relatedStories": [],
+ "outline": [],
+ "author": null,
+ "group": null,
+ "body": {
+  "zh": "NVIDIA 与欧洲广播联盟（EBU）扩大主权框架合作，引入主权云厂商、开放模型开发者和系统集成商，明确广播机构部署智能体时对数据、基础设施、模型与安全的控制要求。",
+  "original": null,
+  "zhKind": "original",
+  "complete": false
+ }
+}

@@ -1,7 +1,7 @@
 import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import { dirname, join, normalize, relative, sep } from "node:path";
 
-const UNBUILT_LABELS = /主题|关于|反馈|更新日志|Agent 接入|日报合订本/;
+const UNBUILT_LABELS = /关于|反馈|更新日志|Agent 接入/;
 const HOME_OK_LABELS = /精选|首页|前沿趋势|当前热点|完整榜单/;
 
 function walkHtml(dir, acc = []) {

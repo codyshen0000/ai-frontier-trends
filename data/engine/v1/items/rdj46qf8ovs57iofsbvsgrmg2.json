@@ -1,0 +1,54 @@
+{
+ "id": "rdj46qf8ovs57iofsbvsgrmg2",
+ "title": "伊利诺伊州州长 JB Pritzker 谈 AI：或让人活到 100 岁，也可能像核武器一样威胁人类",
+ "summary": "伊利诺伊州州长 JB Pritzker 在 Decoder 播客中表示，AI 既可能帮助人类活到 100 岁，也可能像核武器一样构成威胁。他还谈到数据中心、隐私与反垄断正引发两党反弹，认为政府应更积极地保护民众，而不只是与企业合作。",
+ "reason": null,
+ "source": {
+  "name": "The Verge · AI"
+ },
+ "publishedAt": "2026-10-19T14:30:00.000Z",
+ "timelineAt": "2026-10-19T14:30:00.000Z",
+ "category": "opinion",
+ "tags": [
+  "大佬观点",
+  "政策/监管",
+  "安全/对齐",
+  "Agent"
+ ],
+ "selected": false,
+ "channel": "news",
+ "x": null,
+ "topics": [
+  {
+   "slug": "%E5%A4%A7%E4%BD%AC%E8%A7%82%E7%82%B9",
+   "name": "大佬观点"
+  },
+  {
+   "slug": "%E6%94%BF%E7%AD%96%2F%E7%9B%91%E7%AE%A1",
+   "name": "政策/监管"
+  },
+  {
+   "slug": "%E5%AE%89%E5%85%A8%2F%E5%AF%B9%E9%BD%90",
+   "name": "安全/对齐"
+  },
+  {
+   "slug": "Agent",
+   "name": "Agent"
+  }
+ ],
+ "hasTranslation": false,
+ "bodyLanguage": "zh",
+ "readingMode": "summary-only",
+ "indexable": true,
+ "markdownAvailable": false,
+ "relatedStories": [],
+ "outline": [],
+ "author": null,
+ "group": null,
+ "body": {
+  "zh": "伊利诺伊州州长 JB Pritzker 在 Decoder 播客中表示，AI 既可能帮助人类活到 100 岁，也可能像核武器一样构成威胁。他还谈到数据中心、隐私与反垄断正引发两党反弹，认为政府应更积极地保护民众，而不只是与企业合作。",
+  "original": null,
+  "zhKind": "original",
+  "complete": false
+ }
+}

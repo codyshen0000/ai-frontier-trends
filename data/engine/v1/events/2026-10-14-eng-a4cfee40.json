@@ -11,7 +11,9 @@
  "summary": "Google Research 发布地理空间推理智能体技术报告，在 CBGB、UnivEARTH 及新构建的 GeoExpertQueries、GeoKTools 四个基准上对比四种智能体配置，结果显示接入 Earth AI 专用工具能显著提升定量空间任务表现，而开放式问题还需前置规划环节。",
  "excerpt": null,
  "latest": null,
- "latestReport": null,
+ "latestReport": {
+  "id": "pm5shqi6ekqwkng9dvgjsm8p0"
+ },
  "whyHot": {
   "participants48h": 1,
   "newParticipants6h": 0,
@@ -54,5 +56,36 @@
    "originalUrl": "https://research.google/blog/putting-earth-ai-to-work-geospatial-agents-for-our-planets-biggest-challenges/"
   }
  ],
- "heat": []
+ "heat": [],
+ "related": [],
+ "topics": [
+  {
+   "slug": "%E8%AE%BA%E6%96%87%2F%E7%A0%94%E7%A9%B6",
+   "name": "论文/研究"
+  },
+  {
+   "slug": "Agent",
+   "name": "Agent"
+  },
+  {
+   "slug": "Google",
+   "name": "Google"
+  },
+  {
+   "slug": "%E8%AF%84%E6%B5%8B%2F%E5%9F%BA%E5%87%86",
+   "name": "评测/基准"
+  },
+  {
+   "slug": "%E6%95%B0%E6%8D%AE%2F%E8%AE%AD%E7%BB%83",
+   "name": "数据/训练"
+  }
+ ],
+ "participants": [
+  {
+   "name": "Google Research",
+   "kind": "editorial"
+  }
+ ],
+ "recommendReason": "技术报告用四个基准对比四种智能体配置，量化领域工具与前置规划对地理空间推理的增益。",
+ "primaryUrl": "https://research.google/blog/putting-earth-ai-to-work-geospatial-agents-for-our-planets-biggest-challenges/"
 }

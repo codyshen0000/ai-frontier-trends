@@ -11,7 +11,9 @@
  "summary": "Latent Space 播客邀请 Dyna Robotics 联合创始人兼首席科学家 Jason Ma，讲解上月发布的 Dyna-2 世界动作模型及其后续物理机器人智能体 Dyna-2.1。",
  "excerpt": null,
  "latest": null,
- "latestReport": null,
+ "latestReport": {
+  "id": "krvvrd604bnvh003rs160m0pa"
+ },
  "whyHot": {
   "participants48h": 1,
   "newParticipants6h": 0,
@@ -54,5 +56,32 @@
    "originalUrl": "https://www.latent.space/p/dyna"
   }
  ],
- "heat": []
+ "heat": [],
+ "related": [],
+ "topics": [
+  {
+   "slug": "%E5%A4%A7%E4%BD%AC%E8%A7%82%E7%82%B9",
+   "name": "大佬观点"
+  },
+  {
+   "slug": "%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD",
+   "name": "具身智能"
+  },
+  {
+   "slug": "%E6%95%B0%E6%8D%AE%2F%E8%AE%AD%E7%BB%83",
+   "name": "数据/训练"
+  },
+  {
+   "slug": "%E9%83%A8%E7%BD%B2%2F%E5%B7%A5%E7%A8%8B",
+   "name": "部署/工程"
+  }
+ ],
+ "participants": [
+  {
+   "name": "Latent Space",
+   "kind": "editorial"
+  }
+ ],
+ "recommendReason": "Dyna 联合创始人拆解世界动作模型的数据配方与落地取舍，可看到机器人从演示走向量产的现实约束。",
+ "primaryUrl": "https://www.latent.space/p/dyna"
 }

@@ -1,0 +1,49 @@
+{
+ "id": "rudcwz0v0brwlxns6dsn6h6e5",
+ "title": "FBI 称涉嫌窃密的前 OpenAI 工程师存有“Saudi Gov Docs”文件夹",
+ "summary": "美国联邦法院裁定继续羁押被控在 OpenAI 机密会议室安装录音设备的前工程师 Abdulrahman Alfozan。FBI 在其 iPhone 上发现名为“Saudi Gov Docs”的文件夹，并查到其与沙特王室成员的 WhatsApp 聊天记录，以及用 OpenAI 生产力智能体筛选可赴沙特参会人选的日志。检方称其已为全家订好由沙特政府付款的单程机票，存在潜逃风险。",
+ "reason": null,
+ "source": {
+  "name": "Ars Technica · AI"
+ },
+ "publishedAt": "2026-10-19T20:21:53.000Z",
+ "timelineAt": "2026-10-19T20:21:53.000Z",
+ "category": "industry",
+ "tags": [
+  "行业动态",
+  "安全/对齐",
+  "OpenAI"
+ ],
+ "selected": false,
+ "channel": "news",
+ "x": null,
+ "topics": [
+  {
+   "slug": "%E8%A1%8C%E4%B8%9A%E5%8A%A8%E6%80%81",
+   "name": "行业动态"
+  },
+  {
+   "slug": "%E5%AE%89%E5%85%A8%2F%E5%AF%B9%E9%BD%90",
+   "name": "安全/对齐"
+  },
+  {
+   "slug": "OpenAI",
+   "name": "OpenAI"
+  }
+ ],
+ "hasTranslation": false,
+ "bodyLanguage": "zh",
+ "readingMode": "summary-only",
+ "indexable": true,
+ "markdownAvailable": false,
+ "relatedStories": [],
+ "outline": [],
+ "author": null,
+ "group": null,
+ "body": {
+  "zh": "美国联邦法院裁定继续羁押被控在 OpenAI 机密会议室安装录音设备的前工程师 Abdulrahman Alfozan。FBI 在其 iPhone 上发现名为“Saudi Gov Docs”的文件夹，并查到其与沙特王室成员的 WhatsApp 聊天记录，以及用 OpenAI 生产力智能体筛选可赴沙特参会人选的日志。检方称其已为全家订好由沙特政府付款的单程机票，存在潜逃风险。",
+  "original": null,
+  "zhKind": "original",
+  "complete": false
+ }
+}
