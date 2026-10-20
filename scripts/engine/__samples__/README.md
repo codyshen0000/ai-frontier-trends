@@ -12,3 +12,9 @@ Load with:
 ```bash
 FT_ENGINE_DIR=scripts/engine/__samples__/v1 node --test scripts/engine/
 ```
+
+Also in this folder:
+
+- `v1/` — SYNTHETIC loader dump (B0). Heat values are **not** real; do not run the B2 heat verifier against it.
+- `heat-cases/` — SYNTHETIC B2-01 hand-calc participants + expected `heat_index` (`cases.json`).
+- `out-1700/` — **REAL** site-data snapshot (~17:00 CST 2026-10-19). Used by the heat recompute verifier. `redirects.json` is empty until R2 19:25.

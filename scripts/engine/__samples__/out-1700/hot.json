@@ -1,0 +1,65 @@
+{
+ "computedAt": "2026-10-19T08:27:00.000Z",
+ "windowHours": 48,
+ "entries": [
+  {
+   "rank": 1,
+   "story": {
+    "publicId": "2026-10-19-deepseek-v41-flash-1017",
+    "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API"
+   },
+   "heat": 5.5,
+   "trend": "down",
+   "trendPct": -15.4,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "量子位",
+    "The Decoder"
+   ],
+   "participants": [
+    {
+     "name": "量子位",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    11.1,
+    10.7,
+    10.4,
+    10.1,
+    9.8,
+    9.6,
+    9.3,
+    9.0,
+    8.8,
+    8.5,
+    8.3,
+    8.0,
+    7.8,
+    7.6,
+    7.4,
+    7.2,
+    7.0,
+    6.8,
+    6.6,
+    6.4,
+    6.2,
+    6.0,
+    5.9,
+    5.7,
+    5.5
+   ],
+   "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017：基准更好、完成任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API。The Decoder 与量子位均有报道。",
+   "latest": null,
+   "cover": null,
+   "rankDelta": 0,
+   "heatDeltaPct": -6.8
+  }
+ ]
+}

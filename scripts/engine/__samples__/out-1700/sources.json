@@ -1,0 +1,18 @@
+{
+ "sources": [
+  {
+   "sourceId": "rss-qbitai",
+   "name": "量子位",
+   "tier": "T2",
+   "kind": "editorial",
+   "homepage": "https://www.qbitai.com"
+  },
+  {
+   "sourceId": "rss-the-decoder",
+   "name": "The Decoder",
+   "tier": "T2",
+   "kind": "editorial",
+   "homepage": "https://the-decoder.com"
+  }
+ ]
+}
