@@ -297,7 +297,13 @@ export function writeTimelinePages(outDir, cards, { builtAt, dataAsOf }) {
       .slice(0, PAGE_SIZE * MAX_PAGES)
       .map((card) => {
         const item = card.item || {};
-        const url = item.url || item.links?.original || `hot.html#s-${item.id || card.key}`;
+        const url = isPublicHttpUrl(item.originalUrl)
+          ? item.originalUrl
+          : isPublicHttpUrl(item.links?.original)
+            ? item.links.original
+            : isPublicHttpUrl(item.url)
+              ? item.url
+              : `hot/#s-${item.id || card.key}`;
         return { ...card, item: { ...item, url } };
       });
     const dir = join(outDir, "data", "timeline", filter);

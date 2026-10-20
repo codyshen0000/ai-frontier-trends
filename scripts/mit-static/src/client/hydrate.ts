@@ -1,5 +1,7 @@
 /** First-screen hydrate for 精选 / 热点 / 日报 / 搜索 / 收藏. No React. */
 
+import { cardHref as hrefCard } from "./site-href.mjs";
+
 type Star = { id: string; title: string; url: string; source: string; date: string; savedAt: string };
 type ThemePref = "light" | "dark" | "system";
 type FtConfig = {
@@ -286,6 +288,7 @@ type PageJson = {
       category: string | null;
       channel?: string;
       url?: string;
+      originalUrl?: string;
       links?: { original?: string };
       x?: { authorName?: string; handle?: string; avatarUrl?: string | null; text?: string } | null;
       /** site-data removed this; tolerate leftover keys and never render. */
@@ -326,11 +329,11 @@ function cardHtml(card: PageJson["cards"][number]) {
   const reason = item.reason
     ? `<p class="mt-1 text-[12.5px] text-ink-4">${escapeHtml(item.reason)}</p>`
     : "";
-  const href = siteHref(item.url || item.links?.original || `${pageHref("hot")}#s-${item.id}`);
+  const href = hrefCard(cfg.base, item);
   const snapshot = escapeHtml(JSON.stringify({
     id: item.id,
     title: item.title,
-    url: siteRel(item.url || item.links?.original || href),
+    url: siteRel(item.originalUrl || item.links?.original || href),
     source: sourceName,
     date: item.publishedAt || "",
   }));

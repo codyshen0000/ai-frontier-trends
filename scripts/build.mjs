@@ -508,6 +508,9 @@ function publishMitStatic() {
   if (existsSync(join(src, "starred.html"))) {
     writePage("/starred/", injectBeforeHeadEnd(rewriteMitStatic(readFileSync(join(src, "starred.html"), "utf8"), "/starred/"), faviconLinks("/starred/")));
   }
+  if (existsSync(join(src, "more.html"))) {
+    writePage("/more/", injectBeforeHeadEnd(rewriteMitStatic(readFileSync(join(src, "more.html"), "utf8"), "/more/"), faviconLinks("/more/")));
+  }
 }
 
 function chipClass(status) {
