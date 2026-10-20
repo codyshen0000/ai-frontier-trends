@@ -173,6 +173,16 @@ try {
   assert.match(flagged.daily.highlights[1].title, /^\[低于门槛补位\]/);
   assert.match(flagged.daily.highlights[1].summary, /（低于门槛）/);
   assert.equal(flagged.daily.highlights[0].title, "passed");
+
+  writeFileSync(path.join(dir, "hot.json"), JSON.stringify({
+    computedAt: "2026-10-20T00:45:38.000Z",
+    windowHours: 48,
+    entries: [],
+  }));
+  writeFileSync(path.join(dir, "hot-strip.json"), JSON.stringify([]));
+  const emptyHot = resolveSiteData({ fixture, engine: readEngineDir(dir) });
+  assert.deepEqual(emptyHot.hot.entries, []);
+  assert.deepEqual(emptyHot.timeline.hot, []);
 } finally {
   rmSync(dir, { recursive: true, force: true });
 }

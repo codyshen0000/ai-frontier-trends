@@ -1,0 +1,23 @@
+{
+ "kind": "daily",
+ "key": "2026-10-20",
+ "issueNumber": 2,
+ "title": "AI日报 · 2026-10-20",
+ "generatedAt": "2026-10-20T00:43:38.000Z",
+ "lead": null,
+ "leadItemId": null,
+ "overview": "无固定漂移样本包，本日不含 samples。",
+ "highlights": [],
+ "sections": [],
+ "flashes": [],
+ "cover": null,
+ "metrics": {
+  "totalEvents": 0,
+  "sourcesCount": 0,
+  "firstPartyEvents": 0,
+  "modelsReleased": 0
+ },
+ "readingMinutes": 1,
+ "prev": "2026-10-19",
+ "next": null
+}

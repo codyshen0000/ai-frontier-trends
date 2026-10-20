@@ -1,19 +1,19 @@
 {
  "site": "前沿趋势",
  "mode": "preview",
- "data_as_of": "2026-10-19T20:25:37+08:00",
- "data_as_of_label": "数据截至 2026-10-19 20:25（北京时间）",
- "generated_at": "2026-10-19T20:25:37+08:00",
- "today": "2026-10-19",
+ "data_as_of": "2026-10-20T08:45:38+08:00",
+ "data_as_of_label": "数据截至 2026-10-20 08:45（北京时间）",
+ "generated_at": "2026-10-20T08:45:38+08:00",
+ "today": "2026-10-20",
  "hot_rule_version": "heat-v1-48h-halflife24h (v0 port)",
  "window_hours": 48,
  "half_life_hours": 24,
  "spark_hours": 24,
  "spark_points": 25,
- "hot_candidates": 2,
- "passed_count": 1,
+ "hot_candidates": 0,
+ "passed_count": 3,
  "fill_count": 7,
- "selected_items": 8,
+ "selected_items": 10,
  "batches": [
   {
    "batch_id": "2026-10-19T1124",
@@ -68,10 +68,77 @@
    "status": "ok",
    "imported_at": "2026-10-19T20:25:37+08:00",
    "rejected": 1
+  },
+  {
+   "batch_id": "2026-10-19T2025",
+   "status": "ok",
+   "imported_at": "2026-10-20T08:45:38+08:00",
+   "rejected": 3
+  },
+  {
+   "batch_id": "2026-10-19T2136",
+   "status": "ok",
+   "imported_at": "2026-10-20T08:45:38+08:00",
+   "rejected": 1
+  },
+  {
+   "batch_id": "2026-10-19T2223",
+   "status": "ok",
+   "imported_at": "2026-10-20T08:45:38+08:00",
+   "rejected": 0
+  },
+  {
+   "batch_id": "2026-10-19T2347",
+   "status": "ok",
+   "imported_at": "2026-10-20T08:45:38+08:00",
+   "rejected": 2
+  },
+  {
+   "batch_id": "2026-10-20T0051",
+   "status": "ok",
+   "imported_at": "2026-10-20T08:45:38+08:00",
+   "rejected": 1
+  },
+  {
+   "batch_id": "2026-10-20T0121",
+   "status": "ok",
+   "imported_at": "2026-10-20T08:45:38+08:00",
+   "rejected": 1
+  },
+  {
+   "batch_id": "2026-10-20T0224",
+   "status": "ok",
+   "imported_at": "2026-10-20T08:45:38+08:00",
+   "rejected": 4
+  },
+  {
+   "batch_id": "2026-10-20T0321",
+   "status": "ok",
+   "imported_at": "2026-10-20T08:45:38+08:00",
+   "rejected": 3
+  },
+  {
+   "batch_id": "2026-10-20T0418",
+   "status": "ok",
+   "imported_at": "2026-10-20T08:45:38+08:00",
+   "rejected": 1
+  },
+  {
+   "batch_id": "2026-10-20T0522",
+   "status": "ok",
+   "imported_at": "2026-10-20T08:45:38+08:00",
+   "rejected": 2
+  },
+  {
+   "batch_id": "2026-10-20T0621",
+   "status": "ok",
+   "imported_at": "2026-10-20T08:45:38+08:00",
+   "rejected": 4
   }
  ],
  "daily_keys": [
-  "2026-10-19"
+  "2026-10-19",
+  "2026-10-20"
  ],
  "cover_rule": "v5 value gate: value_class∈{model_sample,paper_figure,product_screenshot,official_diagram(+alias official_explainer)} + alt; else null",
  "cover_note": "cover.url 为原图地址；构建期下载到同源并缩放 720/1200/1600，失败则留空"

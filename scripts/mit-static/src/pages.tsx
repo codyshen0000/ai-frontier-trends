@@ -3,6 +3,7 @@ import { Sidebar } from "../../../vendor/mit/apps/web/app/components/shell/Sideb
 import { TabBar } from "../../../vendor/mit/apps/web/app/components/shell/TabBar";
 import { BackToTop } from "../../../vendor/mit/apps/web/app/components/shell/Chrome";
 import { inNav } from "../../../vendor/mit/apps/web/app/components/shell/nav";
+import { Link } from "react-router";
 import { Timeline } from "../../../vendor/mit/apps/web/app/features/feed/Timeline";
 import { HotTopics } from "../../../vendor/mit/apps/web/app/features/feed/HotTopics";
 import { ActiveFilters, CategoryTabs, FeedBar, SearchField } from "../../../vendor/mit/apps/web/app/features/feed/Filters";
@@ -22,6 +23,30 @@ function DataStamp() {
       {asOfLabel && counts ? " · " : null}
       {counts}
     </p>
+  );
+}
+
+function HomeHotStrip({ entries }: { entries: NonNullable<typeof timeline.hot> }) {
+  if (entries.length > 0) return <HotTopics entries={entries} />;
+  return (
+    <section
+      aria-labelledby="hot-topics"
+      className="card relative mb-4 overflow-hidden bg-[radial-gradient(120%_90%_at_100%_0%,var(--hot-soft),transparent_55%)] px-3.5 pb-3 pt-2.5 lg:mb-6 lg:px-5 lg:pb-3.5 lg:pt-3.5"
+    >
+      <div className="flex items-center justify-between lg:mb-1">
+        <h2 id="hot-topics" className="flex items-center gap-2 text-[14px] font-semibold text-ink">
+          <span className="relative flex size-2" aria-hidden="true">
+            <span className="absolute inline-flex size-full animate-ping rounded-full bg-hot opacity-40" />
+            <span className="relative inline-flex size-2 rounded-full bg-hot" />
+          </span>
+          当前热点
+        </h2>
+        <Link to="/hot" className="group -my-2 -mr-1.5 inline-flex h-10 items-center gap-1 px-1.5 text-[12.5px] text-ink-3 transition-colors hover:text-accent lg:my-0 lg:mr-0 lg:h-auto lg:px-0">
+          完整榜单
+        </Link>
+      </div>
+      <p className="mt-2 text-[13.5px] leading-[1.7] text-ink-4">过去 48 小时还没有进入热点榜的话题。</p>
+    </section>
   );
 }
 
@@ -60,7 +85,7 @@ export function HomeScreen() {
           </div>
         </div>
         <DataStamp />
-        {timeline.hot && inNav("/hot") && <HotTopics entries={timeline.hot} />}
+        {inNav("/hot") ? <HomeHotStrip entries={timeline.hot ?? []} /> : null}
         <Timeline initial={timeline} filters={filters} />
       </div>
     </Shell>

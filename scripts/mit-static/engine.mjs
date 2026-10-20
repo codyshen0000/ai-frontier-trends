@@ -223,7 +223,6 @@ export function normalizeStripEntry(raw, index = 0) {
 
 export function normalizeHotStrip(raw) {
   const entries = Array.isArray(raw) ? raw : asArray(raw?.entries);
-  if (entries.length === 0) throw new Error("hot-strip.json must be a non-empty array");
   return entries.map(normalizeStripEntry);
 }
 
@@ -245,7 +244,6 @@ function stripFromHotEntries(entries) {
 
 export function normalizeHot(raw) {
   const entriesRaw = asArray(raw?.entries);
-  if (entriesRaw.length === 0) throw new Error("hot.json must contain an entries array");
   return {
     computedAt: raw.computedAt ?? null,
     windowHours: typeof raw.windowHours === "number" ? raw.windowHours : 48,

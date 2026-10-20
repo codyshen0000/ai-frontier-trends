@@ -7,6 +7,54 @@
   },
   "cards": [
    {
+    "key": "sha256:10f7f763ebef7da0",
+    "anchorAt": "2026-10-19T17:36:26.000Z",
+    "item": {
+     "id": "sha256:10f7f763ebef7da0",
+     "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
+     "summary": "The Decoder 称 Kling AI 4.0 支持最长约 30 秒、最多 10 张关键帧、提示词理解扩展，并含立体声、多语口型同步与更轻 Flash 变体。",
+     "reason": "可灵 4.0 加长视频与口型同步",
+     "source": {
+      "name": "The Decoder"
+     },
+     "publishedAt": "2026-10-19T17:36:26.000Z",
+     "timelineAt": "2026-10-19T17:36:26.000Z",
+     "category": "model",
+     "score": null,
+     "selected": true,
+     "channel": "news",
+     "tags": [
+      "model_release"
+     ],
+     "x": null
+    },
+    "group": null
+   },
+   {
+    "key": "sha256:bfa70917f3b198d1",
+    "anchorAt": "2026-10-19T15:37:09.000Z",
+    "item": {
+     "id": "sha256:bfa70917f3b198d1",
+     "title": "英伟达发布面向企业与 PC 的开源智能体模型",
+     "summary": "TechCrunch 称英伟达新开源模型，面向企业自建开源模型与端侧本地运行智能体。",
+     "reason": "英伟达开源企业与 PC 端智能体模型",
+     "source": {
+      "name": "TechCrunch · AI"
+     },
+     "publishedAt": "2026-10-19T15:37:09.000Z",
+     "timelineAt": "2026-10-19T15:37:09.000Z",
+     "category": "model",
+     "score": null,
+     "selected": true,
+     "channel": "news",
+     "tags": [
+      "model_release"
+     ],
+     "x": null
+    },
+    "group": null
+   },
+   {
     "key": "sha256:71e1590c6c971a33",
     "anchorAt": "2026-10-18T16:30:00.000Z",
     "item": {
@@ -228,219 +276,27 @@
    }
   ],
   "nextCursor": null,
-  "hot": [
-   {
-    "rank": 1,
-    "title": "Anthropic 技术岗初级招聘占比从 27% 降到 9%",
-    "heat": 8.3,
-    "trend": "down",
-    "storyPublicId": "2026-10-19-anthropic-workforce-junior",
-    "itemId": "sha256:5365820f4dd21c16",
-    "participants": [
-     {
-      "name": "The Decoder",
-      "kind": "editorial"
-     },
-     {
-      "name": "TechCrunch · AI",
-      "kind": "editorial"
-     }
-    ],
-    "participantCount": 2,
-    "belowThreshold": true
-   },
-   {
-    "rank": 2,
-    "title": "Meta 删除可能允许抓取新闻站训练 AI 的条款",
-    "heat": 6.0,
-    "trend": "down",
-    "storyPublicId": "2026-10-19-meta-terms-scraping",
-    "itemId": "sha256:0b81a58f5b3fe131",
-    "participants": [
-     {
-      "name": "TechCrunch · AI",
-      "kind": "editorial"
-     },
-     {
-      "name": "The Verge · AI",
-      "kind": "editorial"
-     }
-    ],
-    "participantCount": 2,
-    "belowThreshold": true
-   }
-  ],
+  "hot": null,
   "dayCounts": {
+   "2026-10-20": 1,
+   "2026-10-19": 2,
    "2026-10-17": 5,
-   "2026-10-18": 2,
-   "2026-10-19": 1
+   "2026-10-18": 2
   }
  },
- "hotStrip": [
-  {
-   "rank": 1,
-   "title": "Anthropic 技术岗初级招聘占比从 27% 降到 9%",
-   "heat": 8.3,
-   "trend": "down",
-   "storyPublicId": "2026-10-19-anthropic-workforce-junior",
-   "itemId": "sha256:5365820f4dd21c16",
-   "participants": [
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 2,
-   "belowThreshold": true
-  },
-  {
-   "rank": 2,
-   "title": "Meta 删除可能允许抓取新闻站训练 AI 的条款",
-   "heat": 6.0,
-   "trend": "down",
-   "storyPublicId": "2026-10-19-meta-terms-scraping",
-   "itemId": "sha256:0b81a58f5b3fe131",
-   "participants": [
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 2,
-   "belowThreshold": true
-  }
- ],
+ "hotStrip": [],
  "hot": {
-  "computedAt": "2026-10-19T12:25:37.000Z",
+  "computedAt": "2026-10-20T00:45:38.000Z",
   "windowHours": 48,
-  "entries": [
-   {
-    "rank": 1,
-    "story": {
-     "publicId": "2026-10-19-anthropic-workforce-junior",
-     "title": "Anthropic 技术岗初级招聘占比从 27% 降到 9%"
-    },
-    "heat": 8.3,
-    "trend": "down",
-    "trendPct": -15.3,
-    "badges": [],
-    "participantCount": 2,
-    "sourceCount": 2,
-    "sourceNames": [
-     "The Decoder",
-     "TechCrunch · AI"
-    ],
-    "participants": [
-     {
-      "name": "The Decoder",
-      "kind": "editorial"
-     },
-     {
-      "name": "TechCrunch · AI",
-      "kind": "editorial"
-     }
-    ],
-    "spark": [
-     6.4,
-     6.2,
-     15.8,
-     15.4,
-     14.9,
-     14.5,
-     14.1,
-     13.7,
-     13.3,
-     12.9,
-     12.6,
-     12.2,
-     11.9,
-     11.5,
-     11.2,
-     10.9,
-     10.6,
-     10.3,
-     10.0,
-     9.7,
-     9.4,
-     9.1,
-     8.9,
-     8.6,
-     8.4
-    ],
-    "summary": "The Decoder 报道：Anthropic 技术岗新招聘中初级职位占比自 2025 年初的 27% 降至 9%；到 2026 年 8 月，公司内 AI 智能体的工作时长已达员工的约六倍。",
-    "latest": null,
-    "cover": null,
-    "belowThreshold": true
-   },
-   {
-    "rank": 2,
-    "story": {
-     "publicId": "2026-10-19-meta-terms-scraping",
-     "title": "Meta 删除可能允许抓取新闻站训练 AI 的条款"
-    },
-    "heat": 6.0,
-    "trend": "down",
-    "trendPct": -15.5,
-    "badges": [],
-    "participantCount": 2,
-    "sourceCount": 2,
-    "sourceNames": [
-     "TechCrunch · AI",
-     "The Verge · AI"
-    ],
-    "participants": [
-     {
-      "name": "TechCrunch · AI",
-      "kind": "editorial"
-     },
-     {
-      "name": "The Verge · AI",
-      "kind": "editorial"
-     }
-    ],
-    "spark": [
-     12.0,
-     11.7,
-     11.4,
-     11.0,
-     10.7,
-     10.4,
-     10.1,
-     9.8,
-     9.6,
-     9.3,
-     9.0,
-     8.8,
-     8.5,
-     8.3,
-     8.0,
-     7.8,
-     7.6,
-     7.4,
-     7.2,
-     7.0,
-     6.8,
-     6.6,
-     6.4,
-     6.2,
-     6.0
-    ],
-    "summary": "遭反对后，Meta 再次修改商业条款，删除暗示可抓取包括新闻网站在内的内容用于训练 AI 的表述。",
-    "latest": null,
-    "cover": null,
-    "belowThreshold": true
-   }
-  ]
+  "entries": []
  },
  "dailyIndex": [
+  {
+   "key": "2026-10-20",
+   "issueNumber": 2,
+   "title": null,
+   "count": 0
+  },
   {
    "key": "2026-10-19",
    "issueNumber": 1,
@@ -450,186 +306,26 @@
  ],
  "daily": {
   "kind": "daily",
-  "key": "2026-10-19",
-  "issueNumber": 1,
-  "title": "AI日报 · 2026-10-19",
-  "generatedAt": "2026-10-19T03:26:16.000Z",
-  "lead": {
-   "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
-   "leadParagraph": "DeepSeek 发布开放权重 V4.1-Flash-1017，基准更好、输出更短，并开放 Search/Fetch API。"
-  },
-  "leadItemId": "sha256:931ff0f85ef4bf70",
-  "overview": "DeepSeek 发布开放权重 V4.1-Flash-1017，基准更好、输出更短，并开放 Search/Fetch API。",
-  "highlights": [
-   {
-    "itemId": "sha256:931ff0f85ef4bf70",
-    "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
-    "summary": "DeepSeek 发布开放权重 V4.1-Flash-1017，基准更好、输出更短，并开放 Search/Fetch API。",
-    "sourceName": "The Decoder",
-    "sourceUrl": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/",
-    "sourceIconUrl": null,
-    "firstParty": false,
-    "publishedAt": "2026-10-17T10:33:28.000Z",
-    "available": true,
-    "otherSources": 1
-   },
-   {
-    "itemId": "sha256:8b14a22385d7ebcd",
-    "title": "OpenAI 公布 4 起模型自行越权案例",
-    "summary": "据 The Decoder，OpenAI 公布 4 起模型在训练或测试中自行越过安全边界的案例。",
-    "sourceName": "The Decoder",
-    "sourceUrl": "https://the-decoder.com/an-openai-model-hacked-a-government-site-grabbed-24-years-of-hospital-data-and-kept-it-quiet/",
-    "sourceIconUrl": null,
-    "firstParty": false,
-    "publishedAt": "2026-10-17T15:36:11.000Z",
-    "available": true,
-    "otherSources": 0,
-    "belowThreshold": true
-   },
-   {
-    "itemId": "sha256:0dd91801c3b6e853",
-    "title": "Interconnects：美国开源权重模型重回前沿",
-    "summary": "Nathan Lambert 认为美国开源权重模型本周向前沿迈进：Meta 发布 Muse Spark Open，Reflection 发布首个模型 Beam。",
-    "sourceName": "Interconnects (Nathan Lambert)",
-    "sourceUrl": "https://www.interconnects.ai/p/meta-shakes-up-the-frontiers-open",
-    "sourceIconUrl": null,
-    "firstParty": false,
-    "publishedAt": "2026-10-17T14:06:54.000Z",
-    "available": true,
-    "otherSources": 0,
-    "belowThreshold": true
-   }
-  ],
-  "sections": [
-   {
-    "label": "模型",
-    "summary": null,
-    "items": [
-     {
-      "itemId": "sha256:931ff0f85ef4bf70",
-      "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
-      "summary": "DeepSeek 发布开放权重 V4.1-Flash-1017，基准更好、输出更短，并开放 Search/Fetch API。",
-      "sourceName": "The Decoder",
-      "sourceUrl": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/",
-      "sourceIconUrl": null,
-      "firstParty": false,
-      "publishedAt": "2026-10-17T10:33:28.000Z",
-      "available": true,
-      "otherSources": 1
-     }
-    ]
-   },
-   {
-    "label": "行业",
-    "summary": null,
-    "items": [
-     {
-      "itemId": "sha256:8b14a22385d7ebcd",
-      "title": "OpenAI 公布 4 起模型自行越权案例",
-      "summary": "据 The Decoder，OpenAI 公布 4 起模型在训练或测试中自行越过安全边界的案例。",
-      "sourceName": "The Decoder",
-      "sourceUrl": "https://the-decoder.com/an-openai-model-hacked-a-government-site-grabbed-24-years-of-hospital-data-and-kept-it-quiet/",
-      "sourceIconUrl": null,
-      "firstParty": false,
-      "publishedAt": "2026-10-17T15:36:11.000Z",
-      "available": true,
-      "otherSources": 0,
-      "belowThreshold": true
-     }
-    ]
-   },
-   {
-    "label": "观点",
-    "summary": null,
-    "items": [
-     {
-      "itemId": "sha256:0dd91801c3b6e853",
-      "title": "Interconnects：美国开源权重模型重回前沿",
-      "summary": "Nathan Lambert 认为美国开源权重模型本周向前沿迈进：Meta 发布 Muse Spark Open，Reflection 发布首个模型 Beam。",
-      "sourceName": "Interconnects (Nathan Lambert)",
-      "sourceUrl": "https://www.interconnects.ai/p/meta-shakes-up-the-frontiers-open",
-      "sourceIconUrl": null,
-      "firstParty": false,
-      "publishedAt": "2026-10-17T14:06:54.000Z",
-      "available": true,
-      "otherSources": 0,
-      "belowThreshold": true
-     }
-    ]
-   }
-  ],
-  "flashes": [
-   {
-    "itemId": "sha256:3174ec059a8695ea",
-    "title": "4 个 Gemini 4 Argon 智能体无人协助通关《我的世界》",
-    "summary": null,
-    "sourceName": "The Decoder",
-    "sourceUrl": "https://the-decoder.com/four-gemini-4-argon-agents-beat-minecraft-without-any-human-help/",
-    "sourceIconUrl": null,
-    "firstParty": false,
-    "publishedAt": "2026-10-18T12:39:51.000Z",
-    "available": true,
-    "belowThreshold": true
-   },
-   {
-    "itemId": "sha256:584592e06b7b9958",
-    "title": "Claude 30 分钟内解开 NIST 曲线种子 25 年谜题",
-    "summary": null,
-    "sourceName": "The Decoder",
-    "sourceUrl": "https://the-decoder.com/anthropics-claude-cracks-a-25-year-old-nsa-cryptography-mystery-in-under-30-minutes/",
-    "sourceIconUrl": null,
-    "firstParty": false,
-    "publishedAt": "2026-10-17T14:42:56.000Z",
-    "available": true,
-    "belowThreshold": true
-   },
-   {
-    "itemId": "sha256:e13a46dd16dbc25c",
-    "title": "研究：AI 智能体会在工作报告中隐瞒错误",
-    "summary": null,
-    "sourceName": "The Decoder",
-    "sourceUrl": "https://the-decoder.com/ai-models-hide-mistakes-in-their-own-work-reports-but-one-sentence-in-your-prompt-can-help/",
-    "sourceIconUrl": null,
-    "firstParty": false,
-    "publishedAt": "2026-10-17T09:54:36.000Z",
-    "available": true,
-    "belowThreshold": true
-   },
-   {
-    "itemId": "sha256:7fc73ab44f09b73f",
-    "title": "清华等开源智能体操作系统 PilotDeck 2.0",
-    "summary": null,
-    "sourceName": "量子位",
-    "sourceUrl": "https://www.qbitai.com/2026/10/503935.html",
-    "sourceIconUrl": null,
-    "firstParty": false,
-    "publishedAt": "2026-10-17T12:10:35.000Z",
-    "available": true,
-    "belowThreshold": true
-   },
-   {
-    "itemId": "sha256:8e1750f4fd35f601",
-    "title": "Taste-Bench：AI 智能体长期决策“品味”不佳",
-    "summary": null,
-    "sourceName": "The Decoder",
-    "sourceUrl": "https://the-decoder.com/ai-agents-have-bad-taste-in-long-term-decisions-and-a-new-benchmark-proves-it/",
-    "sourceIconUrl": null,
-    "firstParty": false,
-    "publishedAt": "2026-10-18T08:49:41.000Z",
-    "available": true,
-    "belowThreshold": true
-   }
-  ],
+  "key": "2026-10-20",
+  "issueNumber": 2,
+  "title": "AI日报 · 2026-10-20",
+  "generatedAt": "2026-10-20T00:43:38.000Z",
+  "lead": null,
+  "leadItemId": null,
+  "overview": "无固定漂移样本包，本日不含 samples。",
+  "highlights": [],
+  "sections": [],
+  "flashes": [],
   "cover": null,
   "metrics": {
-   "totalEvents": 3,
-   "sourcesCount": 3,
+   "totalEvents": 0,
+   "sourcesCount": 0,
    "firstPartyEvents": 0,
-   "modelsReleased": 1
+   "modelsReleased": 0
   },
   "readingMinutes": 1,
-  "prev": null,
+  "prev": "2026-10-19",
   "next": null
  },
- "today": "2026-10-19"
+ "today": "2026-10-20"
 }

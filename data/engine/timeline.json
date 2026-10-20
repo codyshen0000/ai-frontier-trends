@@ -6,6 +6,54 @@
  },
  "cards": [
   {
+   "key": "sha256:10f7f763ebef7da0",
+   "anchorAt": "2026-10-19T17:36:26.000Z",
+   "item": {
+    "id": "sha256:10f7f763ebef7da0",
+    "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
+    "summary": "The Decoder 称 Kling AI 4.0 支持最长约 30 秒、最多 10 张关键帧、提示词理解扩展，并含立体声、多语口型同步与更轻 Flash 变体。",
+    "reason": "可灵 4.0 加长视频与口型同步",
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-19T17:36:26.000Z",
+    "timelineAt": "2026-10-19T17:36:26.000Z",
+    "category": "model",
+    "score": null,
+    "selected": true,
+    "channel": "news",
+    "tags": [
+     "model_release"
+    ],
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:bfa70917f3b198d1",
+   "anchorAt": "2026-10-19T15:37:09.000Z",
+   "item": {
+    "id": "sha256:bfa70917f3b198d1",
+    "title": "英伟达发布面向企业与 PC 的开源智能体模型",
+    "summary": "TechCrunch 称英伟达新开源模型，面向企业自建开源模型与端侧本地运行智能体。",
+    "reason": "英伟达开源企业与 PC 端智能体模型",
+    "source": {
+     "name": "TechCrunch · AI"
+    },
+    "publishedAt": "2026-10-19T15:37:09.000Z",
+    "timelineAt": "2026-10-19T15:37:09.000Z",
+    "category": "model",
+    "score": null,
+    "selected": true,
+    "channel": "news",
+    "tags": [
+     "model_release"
+    ],
+    "x": null
+   },
+   "group": null
+  },
+  {
    "key": "sha256:71e1590c6c971a33",
    "anchorAt": "2026-10-18T16:30:00.000Z",
    "item": {
@@ -227,51 +275,11 @@
   }
  ],
  "nextCursor": null,
- "hot": [
-  {
-   "rank": 1,
-   "title": "Anthropic 技术岗初级招聘占比从 27% 降到 9%",
-   "heat": 8.3,
-   "trend": "down",
-   "storyPublicId": "2026-10-19-anthropic-workforce-junior",
-   "itemId": "sha256:5365820f4dd21c16",
-   "participants": [
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 2,
-   "belowThreshold": true
-  },
-  {
-   "rank": 2,
-   "title": "Meta 删除可能允许抓取新闻站训练 AI 的条款",
-   "heat": 6.0,
-   "trend": "down",
-   "storyPublicId": "2026-10-19-meta-terms-scraping",
-   "itemId": "sha256:0b81a58f5b3fe131",
-   "participants": [
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 2,
-   "belowThreshold": true
-  }
- ],
+ "hot": null,
  "dayCounts": {
+  "2026-10-20": 1,
+  "2026-10-19": 2,
   "2026-10-17": 5,
-  "2026-10-18": 2,
-  "2026-10-19": 1
+  "2026-10-18": 2
  }
 }
