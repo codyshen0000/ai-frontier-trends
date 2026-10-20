@@ -1,9 +1,9 @@
 {
  "site": "前沿趋势",
  "mode": "preview",
- "data_as_of": "2026-10-20T16:23:28+08:00",
- "data_as_of_label": "数据截至 2026-10-20 16:23（北京时间）",
- "generated_at": "2026-10-20T16:23:28+08:00",
+ "data_as_of": "2026-10-20T20:25:20+08:00",
+ "data_as_of_label": "数据截至 2026-10-20 20:25（北京时间）",
+ "generated_at": "2026-10-20T20:25:20+08:00",
  "today": "2026-10-20",
  "hot_rule_version": "heat-v1-48h-halflife24h (v0 port)",
  "window_hours": 48,
@@ -170,6 +170,30 @@
    "status": "ok",
    "imported_at": "2026-10-20T16:23:28+08:00",
    "rejected": 1
+  },
+  {
+   "batch_id": "2026-10-20T1623",
+   "status": "ok",
+   "imported_at": "2026-10-20T20:25:20+08:00",
+   "rejected": 1
+  },
+  {
+   "batch_id": "2026-10-20T1726",
+   "status": "ok",
+   "imported_at": "2026-10-20T20:25:20+08:00",
+   "rejected": 0
+  },
+  {
+   "batch_id": "2026-10-20T1822",
+   "status": "ok",
+   "imported_at": "2026-10-20T20:25:20+08:00",
+   "rejected": 0
+  },
+  {
+   "batch_id": "2026-10-20T1923",
+   "status": "ok",
+   "imported_at": "2026-10-20T20:25:20+08:00",
+   "rejected": 3
   }
  ],
  "daily_keys": [
