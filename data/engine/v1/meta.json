@@ -1,17 +1,139 @@
 {
-  "mode": "ci-wiring",
-  "data_as_of": "2026-10-19T00:00:00.000Z",
-  "data_as_of_label": "CI wiring placeholder — overwrite with R1 dump",
-  "built_at": "2026-10-19T00:00:00.000Z",
-  "generated_at": "2026-10-19T00:00:00.000Z",
-  "hot_rule_version": "placeholder",
-  "window_hours": 48,
-  "spark_points": 25,
-  "page_size": 20,
-  "counts": {
-    "cards": 0,
-    "events": 0,
-    "hot": 0,
-    "feed": 0
+ "site": "前沿趋势",
+ "contract_version": "1.1",
+ "mode": "production",
+ "data_as_of": "2026-10-20T06:21:20+08:00",
+ "data_as_of_label": "数据截至 2026-10-20 06:21（北京时间）",
+ "generated_at": "2026-10-20T08:45:00+08:00",
+ "hot_rule_version": "heat-v1-48h-halflife24h (前沿情报 heat48h.py 1.1)",
+ "hot_computed_at": "2026-10-20T08:45:00+08:00",
+ "window_hours": 48,
+ "spark_points": 25,
+ "page_size": 20,
+ "counts": {
+  "cards": 4,
+  "pages": 1,
+  "events": 5,
+  "hot_entries": 2,
+  "search_docs": 11,
+  "feed_items": 4,
+  "passed_events": 5,
+  "below_threshold_events": 0,
+  "redirects": 0,
+  "hot_snapshots": 7,
+  "covers": 0
+ },
+ "last_round": {
+  "batch_id": "2026-10-20T0621",
+  "status": "ok",
+  "finished_at": "2026-10-20T08:43:38+08:00"
+ },
+ "batches": [
+  {
+   "batch_id": "2026-10-19T1124",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-19T1221",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-19T1323",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-19T1418",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-19T1524",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-19T1627",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-19T1726",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-19T1825",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-19T1923",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-19T2025",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-19T2136",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-19T2223",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-19T2347",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-20T0051",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-20T0121",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-20T0224",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-20T0321",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-20T0418",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-20T0522",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-20T0621",
+   "status": "ok"
   }
+ ],
+ "files": [
+  "api/index.json",
+  "events/2026-10-19-deepseek-v41-flash-1017.json",
+  "events/2026-10-19-minimax-m31-flash.json",
+  "events/2026-10-19-nvidia-open-models-agents-pcs.json",
+  "events/2026-10-20-hf-torchneuron-trainium.json",
+  "events/2026-10-20-kling-ai-4-0.json",
+  "events/index.json",
+  "feed/selected.json",
+  "hot-snapshots/2026-10-19T12.json",
+  "hot-snapshots/2026-10-19T13.json",
+  "hot-snapshots/2026-10-19T15.json",
+  "hot-snapshots/2026-10-19T16.json",
+  "hot-snapshots/2026-10-19T19.json",
+  "hot-snapshots/2026-10-19T20.json",
+  "hot-snapshots/2026-10-20T08.json",
+  "hot-strip.json",
+  "hot.json",
+  "meta.json",
+  "redirects.json",
+  "search/source.json",
+  "sources.json",
+  "timeline/index.json",
+  "timeline/page-1.json"
+ ],
+ "next_round": "2026-10-20T12:25:00+08:00"
 }

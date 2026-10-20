@@ -1,3 +1,133 @@
 {
-  "items": []
+ "generatedAt": "2026-10-20T00:45:00.000Z",
+ "docs": [
+  {
+   "id": "sha256:10f7f763ebef7da0",
+   "kind": "item",
+   "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
+   "summary": "The Decoder 称 Kling AI 4.0 支持最长约 30 秒、最多 10 张关键帧、提示词理解扩展，并含立体声、多语口型同步与更轻 Flash 变体。",
+   "publishedAt": "2026-10-19T17:36:26.000Z",
+   "sourceName": "The Decoder",
+   "category": "model",
+   "selected": true,
+   "eventPublicId": "2026-10-20-kling-ai-4-0",
+   "originalUrl": "https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/"
+  },
+  {
+   "id": "2026-10-20-kling-ai-4-0",
+   "kind": "event",
+   "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
+   "summary": "The Decoder 称 Kling AI 4.0 支持最长约 30 秒、最多 10 张关键帧、提示词理解扩展，并含立体声、多语口型同步与更轻 Flash 变体。",
+   "publishedAt": "2026-10-19T17:36:26.000Z",
+   "sourceNames": [
+    "The Decoder"
+   ],
+   "path": "/events/2026-10-20-kling-ai-4-0/"
+  },
+  {
+   "id": "sha256:bfa70917f3b198d1",
+   "kind": "item",
+   "title": "英伟达发布面向企业与 PC 的开源智能体模型",
+   "summary": "TechCrunch 称英伟达新开源模型，面向企业自建开源模型与端侧本地运行智能体。",
+   "publishedAt": "2026-10-19T15:37:09.000Z",
+   "sourceName": "TechCrunch · AI",
+   "category": "model",
+   "selected": true,
+   "eventPublicId": "2026-10-19-nvidia-open-models-agents-pcs",
+   "originalUrl": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/"
+  },
+  {
+   "id": "2026-10-19-nvidia-open-models-agents-pcs",
+   "kind": "event",
+   "title": "英伟达发布面向企业与 PC 的开源智能体模型",
+   "summary": "TechCrunch 称英伟达新开源模型，面向企业自建开源模型与端侧本地运行智能体。",
+   "publishedAt": "2026-10-19T15:37:09.000Z",
+   "sourceNames": [
+    "TechCrunch · AI"
+   ],
+   "path": "/events/2026-10-19-nvidia-open-models-agents-pcs/"
+  },
+  {
+   "id": "sha256:f4f2a7e49951b599",
+   "kind": "item",
+   "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
+   "summary": "稀宇科技宣布 MiniMax M3.1 Flash 上线；IT之家称其在 Agentic/编程等能力提升，线上推理速度约提升近 3 倍、使用成本降低约 70%，并称 Space Bunny 匿名版本即其早期版。",
+   "publishedAt": "2026-10-19T12:20:45.000Z",
+   "sourceName": "IT之家（全站，需关键词过滤）",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-10-19-minimax-m31-flash",
+   "originalUrl": "https://www.ithome.com/1/015/013.htm"
+  },
+  {
+   "id": "2026-10-19-minimax-m31-flash",
+   "kind": "event",
+   "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
+   "summary": "稀宇科技宣布 MiniMax M3.1 Flash 上线。The Decoder 称其在 Artificial Analysis Intelligence Index 升至 42（较前代 +13）、成本约减半，并称 DeepSWE v1.1 编码基准 73.7%。",
+   "publishedAt": "2026-10-19T12:20:45.000Z",
+   "sourceNames": [
+    "IT之家（全站，需关键词过滤）"
+   ],
+   "path": "/events/2026-10-19-minimax-m31-flash/"
+  },
+  {
+   "id": "sha256:5c52b7d34becd1cc",
+   "kind": "item",
+   "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
+   "summary": "Hugging Face 博客介绍 TorchNeuron，称在 AWS Trainium 上运行 HF 模型比以往更容易。",
+   "publishedAt": "2026-10-19T00:00:00.000Z",
+   "sourceName": "Hugging Face Blog",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-10-20-hf-torchneuron-trainium",
+   "originalUrl": "https://huggingface.co/blog/hf-torchneuron"
+  },
+  {
+   "id": "2026-10-20-hf-torchneuron-trainium",
+   "kind": "event",
+   "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
+   "summary": "Hugging Face 博客介绍 TorchNeuron，称在 AWS Trainium 上运行 HF 模型比以往更容易。TechCrunch 称亚马逊借此加码与英伟达的竞争。",
+   "publishedAt": "2026-10-19T00:00:00.000Z",
+   "sourceNames": [
+    "Hugging Face Blog"
+   ],
+   "path": "/events/2026-10-20-hf-torchneuron-trainium/"
+  },
+  {
+   "id": "sha256:c991932364dcef47",
+   "kind": "item",
+   "title": "量子位：DeepSeek 发布 V4.1-Flash-1017 并开放搜索 API",
+   "summary": "量子位报道 DeepSeek 新版本 V4.1-Flash-1017 发布，同时开放自研搜索 API。",
+   "publishedAt": "2026-10-17T12:21:09.000Z",
+   "sourceName": "量子位",
+   "category": "model",
+   "selected": false,
+   "eventPublicId": "2026-10-19-deepseek-v41-flash-1017",
+   "originalUrl": "https://www.qbitai.com/2026/10/504067.html"
+  },
+  {
+   "id": "2026-10-19-deepseek-v41-flash-1017",
+   "kind": "event",
+   "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
+   "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017：基准更好、完成任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API。The Decoder 与量子位均有报道。",
+   "publishedAt": "2026-10-17T12:21:09.000Z",
+   "sourceNames": [
+    "The Decoder",
+    "量子位"
+   ],
+   "path": "/events/2026-10-19-deepseek-v41-flash-1017/"
+  },
+  {
+   "id": "sha256:931ff0f85ef4bf70",
+   "kind": "item",
+   "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
+   "summary": "DeepSeek 发布开放权重 V4.1-Flash-1017：基准更好、任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API，每千次 0.75 美元。",
+   "publishedAt": "2026-10-17T10:33:28.000Z",
+   "sourceName": "The Decoder",
+   "category": "model",
+   "selected": true,
+   "eventPublicId": "2026-10-19-deepseek-v41-flash-1017",
+   "originalUrl": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/"
+  }
+ ]
 }

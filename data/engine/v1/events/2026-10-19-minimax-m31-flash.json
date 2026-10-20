@@ -1,0 +1,123 @@
+{
+ "publicId": "2026-10-19-minimax-m31-flash",
+ "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-19T12:20:45.000Z",
+ "latestAt": "2026-10-19T12:20:45.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "稀宇科技宣布 MiniMax M3.1 Flash 上线。The Decoder 称其在 Artificial Analysis Intelligence Index 升至 42（较前代 +13）、成本约减半，并称 DeepSWE v1.1 编码基准 73.7%。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 2,
+  "newParticipants6h": 0,
+  "recentReports24h": 2,
+  "observationComplete": false,
+  "rank": 1
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-19-minimax-m31-flash",
+   "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
+   "firstReportAt": "2026-10-19T12:20:45.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:f4f2a7e49951b599",
+    "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
+    "summary": "稀宇科技宣布 MiniMax M3.1 Flash 上线；IT之家称其在 Agentic/编程等能力提升，线上推理速度约提升近 3 倍、使用成本降低约 70%，并称 Space Bunny 匿名版本即其早期版。",
+    "source": {
+     "name": "IT之家（全站，需关键词过滤）",
+     "firstParty": false
+    },
+    "publishedAt": "2026-10-19T12:20:45.000Z",
+    "selected": false,
+    "originalUrl": "https://www.ithome.com/1/015/013.htm"
+   }
+  }
+ ],
+ "officialReports": [],
+ "timeline": [
+  {
+   "id": "sha256:f4f2a7e49951b599",
+   "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
+   "summary": "稀宇科技宣布 MiniMax M3.1 Flash 上线；IT之家称其在 Agentic/编程等能力提升，线上推理速度约提升近 3 倍、使用成本降低约 70%，并称 Space Bunny 匿名版本即其早期版。",
+   "source": {
+    "name": "IT之家（全站，需关键词过滤）",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-19T12:20:45.000Z",
+   "selected": false,
+   "originalUrl": "https://www.ithome.com/1/015/013.htm"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-19T13:00:00.000Z",
+   "heat": 9.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T14:00:00.000Z",
+   "heat": 9.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T15:00:00.000Z",
+   "heat": 9.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T16:00:00.000Z",
+   "heat": 9.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T17:00:00.000Z",
+   "heat": 8.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T18:00:00.000Z",
+   "heat": 8.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T19:00:00.000Z",
+   "heat": 18.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-19T20:00:00.000Z",
+   "heat": 17.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-19T21:00:00.000Z",
+   "heat": 17.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-19T22:00:00.000Z",
+   "heat": 16.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-19T23:00:00.000Z",
+   "heat": 16.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-20T00:00:00.000Z",
+   "heat": 15.6,
+   "participants": 2
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "M3.1 Flash 提速降本，AA 指数到 42",
+ "primaryUrl": "https://www.ithome.com/1/015/013.htm"
+}

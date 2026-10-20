@@ -1,0 +1,201 @@
+{
+ "publicId": "2026-10-20-hf-torchneuron-trainium",
+ "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-19T00:00:00.000Z",
+ "latestAt": "2026-10-19T00:00:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Hugging Face 博客介绍 TorchNeuron，称在 AWS Trainium 上运行 HF 模型比以往更容易。TechCrunch 称亚马逊借此加码与英伟达的竞争。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 2,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": false,
+  "rank": 2
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-20-hf-torchneuron-trainium",
+   "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
+   "firstReportAt": "2026-10-19T00:00:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:5c52b7d34becd1cc",
+    "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
+    "summary": "Hugging Face 博客介绍 TorchNeuron，称在 AWS Trainium 上运行 HF 模型比以往更容易。",
+    "source": {
+     "name": "Hugging Face Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-19T00:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://huggingface.co/blog/hf-torchneuron"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:5c52b7d34becd1cc",
+   "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
+   "summary": "Hugging Face 博客介绍 TorchNeuron，称在 AWS Trainium 上运行 HF 模型比以往更容易。",
+   "source": {
+    "name": "Hugging Face Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-19T00:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://huggingface.co/blog/hf-torchneuron"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:5c52b7d34becd1cc",
+   "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
+   "summary": "Hugging Face 博客介绍 TorchNeuron，称在 AWS Trainium 上运行 HF 模型比以往更容易。",
+   "source": {
+    "name": "Hugging Face Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-19T00:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://huggingface.co/blog/hf-torchneuron"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-19T00:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T01:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T02:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T03:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T04:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T05:00:00.000Z",
+   "heat": 8.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T06:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T07:00:00.000Z",
+   "heat": 8.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T08:00:00.000Z",
+   "heat": 7.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T09:00:00.000Z",
+   "heat": 7.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T10:00:00.000Z",
+   "heat": 7.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T11:00:00.000Z",
+   "heat": 7.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T12:00:00.000Z",
+   "heat": 7.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T13:00:00.000Z",
+   "heat": 6.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T14:00:00.000Z",
+   "heat": 6.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T15:00:00.000Z",
+   "heat": 6.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T16:00:00.000Z",
+   "heat": 6.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T17:00:00.000Z",
+   "heat": 6.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T18:00:00.000Z",
+   "heat": 5.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T19:00:00.000Z",
+   "heat": 5.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T20:00:00.000Z",
+   "heat": 5.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T21:00:00.000Z",
+   "heat": 15.2,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-19T22:00:00.000Z",
+   "heat": 14.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-19T23:00:00.000Z",
+   "heat": 14.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-20T00:00:00.000Z",
+   "heat": 13.9,
+   "participants": 2
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "Trainium 上跑 HF 模型更省事",
+ "primaryUrl": "https://huggingface.co/blog/hf-torchneuron"
+}

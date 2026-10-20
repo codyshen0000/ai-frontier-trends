@@ -1,0 +1,108 @@
+{
+ "publicId": "2026-10-19-nvidia-open-models-agents-pcs",
+ "title": "英伟达发布面向企业与 PC 的开源智能体模型",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-19T15:37:09.000Z",
+ "latestAt": "2026-10-19T15:37:09.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "TechCrunch 称英伟达新开源模型，面向企业自建开源模型与端侧本地运行智能体。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 1,
+  "observationComplete": false,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-19-nvidia-open-models-agents-pcs",
+   "title": "英伟达发布面向企业与 PC 的开源智能体模型",
+   "firstReportAt": "2026-10-19T15:37:09.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:bfa70917f3b198d1",
+    "title": "英伟达发布面向企业与 PC 的开源智能体模型",
+    "summary": "TechCrunch 称英伟达新开源模型，面向企业自建开源模型与端侧本地运行智能体。",
+    "source": {
+     "name": "TechCrunch · AI",
+     "firstParty": false
+    },
+    "publishedAt": "2026-10-19T15:37:09.000Z",
+    "selected": true,
+    "originalUrl": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/"
+   }
+  }
+ ],
+ "officialReports": [],
+ "timeline": [
+  {
+   "id": "sha256:bfa70917f3b198d1",
+   "title": "英伟达发布面向企业与 PC 的开源智能体模型",
+   "summary": "TechCrunch 称英伟达新开源模型，面向企业自建开源模型与端侧本地运行智能体。",
+   "source": {
+    "name": "TechCrunch · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-19T15:37:09.000Z",
+   "selected": true,
+   "originalUrl": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-19T16:00:00.000Z",
+   "heat": 9.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T17:00:00.000Z",
+   "heat": 9.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T18:00:00.000Z",
+   "heat": 9.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T19:00:00.000Z",
+   "heat": 9.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T20:00:00.000Z",
+   "heat": 8.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T21:00:00.000Z",
+   "heat": 8.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T22:00:00.000Z",
+   "heat": 8.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T23:00:00.000Z",
+   "heat": 8.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T00:00:00.000Z",
+   "heat": 7.9,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "英伟达开源企业与 PC 端智能体模型",
+ "primaryUrl": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/"
+}

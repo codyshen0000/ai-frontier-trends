@@ -1,7 +1,5 @@
-# data/engine/v1 — site-data 1.1 (CI wiring)
+# data/engine/v1 — site-data 1.1 (production)
 
-Placeholder snapshot so GitHub Actions can resolve `FT_ENGINE_DIR`.
-Overwrite with a real R1 export. Do not treat titles or timestamps as live data.
-
-Required by B0 loader: `meta.json` with `data_as_of` and `built_at`/`generated_at`.
-No `score` keys (site-data 1.1 forbids them).
+Production snapshot from the local site-data `out/` dump (generated 2026-10-20 08:45 CST).
+`meta.mode` is `production`. Overwrite in place with later R1 exports.
+Do not merge this branch into `main`.
