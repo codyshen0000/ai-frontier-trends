@@ -49,7 +49,13 @@ export function Sidebar({ changelogVersion }: { changelogVersion: string | null 
       <nav className="scrollbar-thin -mx-1 flex-1 overflow-y-auto px-1" aria-label="主导航">
         {sidebar().map((section) => (
           <div key={section.title}>
-            <div className="px-2.5 pb-1 pt-3.5 text-[11px] text-ink-4">{section.title}</div>
+            {section.title === "更多" ? (
+              <Link to="/more" className="block px-2.5 pb-1 pt-3.5 text-[11px] text-ink-4 transition-colors hover:text-ink">
+                {section.title}
+              </Link>
+            ) : (
+              <div className="px-2.5 pb-1 pt-3.5 text-[11px] text-ink-4">{section.title}</div>
+            )}
             <div className="flex flex-col gap-1">
               {section.items.map((item) => (
                 <SideLink key={item.to} item={item} dot={dot} />

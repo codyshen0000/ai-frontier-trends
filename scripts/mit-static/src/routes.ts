@@ -135,6 +135,11 @@ export function resolveHref(
 
   const href = `${mapped}${q}${h}`;
   if (!h && !q && samePageFile(href, currentPath)) {
+    // 精选 is copied to /live/; #main would stay on that copy. Emit index.html
+    // so rewriteMitStatic can turn it into a base-relative site home (./ or ../).
+    if (path === "/" || mapped === PAGE_FILE["/"]) {
+      return { kind: "page", href: PAGE_FILE["/"] };
+    }
     return { kind: "hash", href: currentPath.startsWith("/daily") ? "#report-start" : "#main" };
   }
   if (h) return { kind: "hash", href };
