@@ -1,0 +1,427 @@
+{
+  "v": 1,
+  "built_at": "2026-10-20T13:20:00+08:00",
+  "data_as_of": "2026-10-20T12:18:38+08:00",
+  "docs": [
+    {
+      "id": "weekly-2026-10-18",
+      "t": "weekly",
+      "title": "AI 前沿趋势周报 · 2026-10-18（第 2 期）",
+      "summary": "主线无升级、无降级、无新增；FLUX 3 Image Klein 与 Kling 4.0 属权重/产品交付；PR-OPD 把 OPD 监督从词概率改到隐状态；Terminal-RSI / LlamaFactory RSI / Penguin",
+      "source": "前沿趋势",
+      "category": null,
+      "date": "2026-10-18T00:00:00+08:00",
+      "url": "weekly/2026-10-18/"
+    },
+    {
+      "id": "live-terminal-rsi",
+      "t": "card",
+      "title": "Terminal-RSI：终端 agent 递归改写 + 策略精炼（观察）",
+      "summary": "交替 RSR（自改写）与 RPR（策略精炼），RPR 更新策略权重；Qwen3.8-27B 底座。作者称四套终端基准宏均 50.58%（较底座 +29.90pp）；TB2.1 86.52% / Hard 79%【作者自报】。环境是终端沙箱+",
+      "source": "@Yucheng__Shi",
+      "category": "paper",
+      "date": "2026-10-16T00:00:00+08:00",
+      "url": "https://arxiv.org/abs/2610.22192"
+    },
+    {
+      "id": "live-llamafactory-rsi",
+      "t": "card",
+      "title": "LlamaFactory RSI：PenguinHarness / awesome-rsi / GDPevo（观察）",
+      "summary": "@code_hiyouga 称 GitHub 过 70k★ 后做「LlamaFactory of recursive self-improvement」。三件：主仓 PenguinHarness（Prism-Shadow/penguin-h",
+      "source": "@code_hiyouga",
+      "category": "paper",
+      "date": "2026-10-16T00:00:00+08:00",
+      "url": "https://github.com/Prism-Shadow/penguin-harness"
+    },
+    {
+      "id": "live-mai-base-2",
+      "t": "card",
+      "title": "Microsoft MAI-Base-2：预训练完成",
+      "summary": "报道 MoE 约 80B active / 2.8T total、16K GB200、约 38 天、约 50T tokens；后训练进行中；Foundry 合作伙伴 —— 非公开 open-weight【新闻】。预训练完 ≠ HF 交付。",
+      "source": "@i",
+      "category": "model",
+      "date": "2026-10-16T00:00:00+08:00",
+      "url": "https://x.com/i/trending/2110798757025702396"
+    },
+    {
+      "id": "live-kling-4-0-ga",
+      "t": "card",
+      "title": "Kling 4.0：产品全量上线（非开源权重）",
+      "summary": "新 UI + MCP/CLI；官方 release history 标 2026-10-15 Major。HDR 4K/API 将至。产品全量，非 OSS 权重。",
+      "source": "@Kling_ai",
+      "category": "model",
+      "date": "2026-10-16T00:00:00+08:00",
+      "url": "https://x.com/Kling_ai/status/2110747537187709424"
+    },
+    {
+      "id": "live-pr-opd",
+      "t": "card",
+      "title": "PR-OPD：事后技能对齐隐藏状态",
+      "summary": "先 GRPO，再让策略写事后技能，并对齐各层隐状态（非词概率）。Qwen2.5-3B 相对 GRPO：ALFWorld All +4.7pp（66.4→71.1），WebShop Acc +11.7pp（55.5→67.2）【证实，表 1】",
+      "source": "arXiv",
+      "category": "paper",
+      "date": "2026-10-16T00:00:00+08:00",
+      "url": "https://arxiv.org/abs/2609.36642"
+    },
+    {
+      "id": "live-agent-reflex",
+      "t": "card",
+      "title": "Agent-Reflex：把反思训成元技能并接 OPD",
+      "summary": "RSD→ReSFT→ORPO；称 8B 在 τ²-Bench 等与 AgentNoiseBench 上超对照。代码/模型/数据称已开源，正文无仓库地址。Agent 工具进产品和工具栏，不进训练配方时间线。",
+      "source": "小红书",
+      "category": "product",
+      "date": "2026-10-16T00:00:00+08:00",
+      "url": "https://www.xiaohongshu.com/explore/6ad176eb000000000a023985"
+    },
+    {
+      "id": "live-repforcing",
+      "t": "card",
+      "title": "RepForcing：表征 teacher forcing，仍接 asymmetric DMD",
+      "summary": "用表征空间 teacher forcing 换中间 AR 老师+因果 ODE 初始化，随后仍做 asymmetric DMD；4 步 chunk VBench Total 84.04→84.66【证实，作者自报】。与 Causal Forc",
+      "source": "arXiv",
+      "category": "paper",
+      "date": "2026-10-16T00:00:00+08:00",
+      "url": "https://arxiv.org/abs/2610.20111"
+    },
+    {
+      "id": "live-gpt-live-1-1",
+      "t": "card",
+      "title": "OpenAI GPT-Live-1.1：语音升级",
+      "summary": "多语口音、减少 “checking…”；FR/DE/HI/MX-ES/KO/JA。ChatGPT/Codex 可用，API 将至。产品事件，不进主线。",
+      "source": "@OpenAI",
+      "category": "product",
+      "date": "2026-10-16T00:00:00+08:00",
+      "url": "https://x.com/OpenAI/status/2110797830361436604"
+    },
+    {
+      "id": "live-argon-pro-rollout",
+      "t": "card",
+      "title": "Gemini 4 Argon：开始给付费 Pro",
+      "summary": "小红书称 Antigravity 向付费 Google AI Pro 放 Argon 配额【笔记转述】。续热，非首发；不改训练类主线。",
+      "source": "小红书",
+      "category": "product",
+      "date": "2026-10-16T00:00:00+08:00",
+      "url": "https://www.xiaohongshu.com/explore/6ad181eb000000001b023dac"
+    },
+    {
+      "id": "live-openui-1-0",
+      "t": "card",
+      "title": "OpenUI 1.0：Agent 交互界面框架",
+      "summary": "开源协议/运行时：agent 用 schema + OpenUI Lang 组合地图、表单、图表、按钮；支持 React/Vue/Svelte/Angular。仓库 thesysdev/openui（★约 11203）+ openui.co",
+      "source": "@i",
+      "category": "product",
+      "date": "2026-10-16T00:00:00+08:00",
+      "url": "https://github.com/thesysdev/openui"
+    },
+    {
+      "id": "live-data-space-iteration",
+      "t": "card",
+      "title": "Data-Space Iteration：少步丢掉 flow 固定离散",
+      "summary": "改成 data-space iteration；训练仍要 online rollout，DMD 训练不变；只做了 ImageNet。表 1/3 不翻转。",
+      "source": "arXiv",
+      "category": "model",
+      "date": "2026-10-15T00:00:00+08:00",
+      "url": "https://arxiv.org/abs/2610.12102"
+    },
+    {
+      "id": "live-glance-forcing",
+      "t": "card",
+      "title": "Glance Forcing：单条 PF-ODE 视频少步",
+      "summary": "Slow/Fast LoRA；单条 PF-ODE 时 VBench 84.04→84.22 超 Causal Forcing【作者自报】。PF-ODE 主要拉直少步几何，分布质量仍靠后续 DMD【证实，摘要】；不是绕开 DMD。挂表 3 /",
+      "source": "arXiv",
+      "category": "paper",
+      "date": "2026-10-15T00:00:00+08:00",
+      "url": "https://arxiv.org/abs/2610.20220"
+    },
+    {
+      "id": "live-reality-check-agent-rl",
+      "t": "card",
+      "title": "Reality Check：11 种 Agentic RL 自蒸馏无一稳超 GRPO",
+      "summary": "统一复现自蒸馏 vs GRPO；无一方法全场景稳超 GRPO【证实】。10-16 续热：笔记称仅 PCSD / AgentOPSD 均值超 GRPO（+4.58 / +1.66）；按时长重算后 AgentOPSD ALFWorld 68.1",
+      "source": "arXiv",
+      "category": "paper",
+      "date": "2026-10-15T00:00:00+08:00",
+      "url": "https://arxiv.org/abs/2610.19789"
+    },
+    {
+      "id": "live-bfl-flux3-video-faster",
+      "t": "card",
+      "title": "BFL：FLUX 3 Video 提速约 2×、原生 2K/4K 成本约降 50%",
+      "summary": "服务侧优化。当时不是 FLUX 3 Image 权重交付；Image Klein 已于次日早报记开源（见 10-16 卡）。",
+      "source": "@bfl_ai",
+      "category": "product",
+      "date": "2026-10-15T00:00:00+08:00",
+      "url": "https://x.com/bfl_ai/status/2110386847528681774"
+    },
+    {
+      "id": "live-jev-35b",
+      "t": "card",
+      "title": "JEV-35B：单次前向结构化决策头",
+      "summary": "基于 Qwen3.5-35B-A3B 的开源决策头（Apache-2.0）；约 35B 总参 / 3B 激活。定位与托管 Jev 同族：单次前向结构化决策，不做逐 token 生成。自报 Decision Index 0.3=59.73【未",
+      "source": "Hugging Face",
+      "category": "product",
+      "date": "2026-10-15T00:00:00+08:00",
+      "url": "https://huggingface.co/autotrust/JEV-35B"
+    },
+    {
+      "id": "live-jev-1-14-preview",
+      "t": "card",
+      "title": "Jev 1.14 预览：实验性图像 / box / 长上下文",
+      "summary": "TypeSafe 托管 Jev 上 jev-preview（约一周后切 jev-latest）。多语微调；图像、box 框、长上下文需 danger-zone 头。独立评测口径：MMLU-Redux 95.0 / ARC-C 97.6 表内",
+      "source": "@typesafeai",
+      "category": "product",
+      "date": "2026-10-15T00:00:00+08:00",
+      "url": "https://typesafe.ai/blog/jev-1-14"
+    },
+    {
+      "id": "live-smd-pivot",
+      "t": "card",
+      "title": "SMD / Pivot：简化 on-policy 少步蒸馏（4-NFE）",
+      "summary": "回归式 on-policy 速度匹配做 4-NFE；无辅助 score、无对抗，可扩到 33B 和音视频（摘要）。仍依赖老师。记少步「绕开 DMD」候选，不计入第三家；挂表 3 / 主线 5 旁证【推断】。",
+      "source": "arXiv",
+      "category": "model",
+      "date": "2026-10-14T00:00:00+08:00",
+      "url": "https://arxiv.org/abs/2610.18472"
+    },
+    {
+      "id": "live-embodiedclbench",
+      "t": "card",
+      "title": "EmbodiedCLBench：具身持续学习评测",
+      "summary": "同 DeepRSI 口径：是评测，不触发 RSI 升级。",
+      "source": "arXiv",
+      "category": "model",
+      "date": "2026-10-14T00:00:00+08:00",
+      "url": "https://arxiv.org/abs/2610.13021"
+    },
+    {
+      "id": "live-resflow",
+      "t": "card",
+      "title": "ReSFlow：一步离散流",
+      "summary": "表 1 观察候选。不擅自升档。",
+      "source": "arXiv",
+      "category": "model",
+      "date": "2026-10-14T00:00:00+08:00",
+      "url": "https://arxiv.org/abs/2610.13225"
+    },
+    {
+      "id": "live-onesearch-vl",
+      "t": "card",
+      "title": "OneSearch-VL：统一多模态深度研究 agent",
+      "summary": "开放 110K SFT 轨迹 + 10K RL 任务。相对带工具 Qwen3-VL-8B，两新基准高 20.2 / 17.6 百分点【官方自报】。属 Agent 工具，不进训练配方时间线。",
+      "source": "arXiv",
+      "category": "product",
+      "date": "2026-10-14T00:00:00+08:00",
+      "url": "https://arxiv.org/abs/2610.12419"
+    },
+    {
+      "id": "live-tt-opd",
+      "t": "card",
+      "title": "TT-OPD：Top-k OPD 无偏梯度（9-26 旧稿）",
+      "summary": "小红书推热；核对为 9-26 Tail-Corrected Top-k OPD。旧稿新热，不当隔夜新交付；挂 OPD 观察旁证。",
+      "source": "arXiv",
+      "category": "model",
+      "date": "2026-10-14T00:00:00+08:00",
+      "url": "https://arxiv.org/abs/2609.34447"
+    },
+    {
+      "id": "live-harness2",
+      "t": "card",
+      "title": "Harness²：开放世界递归 harnessing（冻权重）",
+      "summary": "Google Cloud AI Research：冻底座。WorkBuddy 上 GLM-5 相对 base harness 单步最高约 +11.5 分（作者自报）。明确冻权重 → harness 观察；不满足训权重升级条件 → RSI 不",
+      "source": "arXiv",
+      "category": "model",
+      "date": "2026-10-14T00:00:00+08:00",
+      "url": "https://arxiv.org/abs/2610.14224"
+    },
+    {
+      "id": "live-opd-failure-negative",
+      "t": "card",
+      "title": "OPD 负结果：失败题上五种机制不涨反跌",
+      "summary": "TUM 等：只在学生当前失败题上训 OPD，五种机制都不涨反跌（作者自报，仅 AIME24 30 题）。只作主线 1–2 方向性反证，不引幅度。「先 SFT 再 OPD」顺序仍是开放冲突。与 BranchOPD 并列挂适用条件观察【推断】。",
+      "source": "arXiv",
+      "category": "model",
+      "date": "2026-10-14T00:00:00+08:00",
+      "url": "https://arxiv.org/abs/2610.18011"
+    },
+    {
+      "id": "live-gemini-4-argon",
+      "t": "card",
+      "title": "Gemini 4 Argon：Google/DeepMind 官宣全球可用",
+      "summary": "昨夜仅为泄露传闻【未证实】，现已坐实。官方 demo：视频教 Apollo 连投 7 次 cornhole；助 Chrome 拆约 600 万行 legacy 消一类崩溃。产品事件，不进主线。",
+      "source": "@Google",
+      "category": "model",
+      "date": "2026-10-14T00:00:00+08:00",
+      "url": "https://x.com/Google/status/2110041297360699856"
+    },
+    {
+      "id": "live-anthropic-source-control",
+      "t": "card",
+      "title": "Anthropic 自研源控：为人设计的基建成 agent 瓶颈",
+      "summary": "日合并约 2500→30000。博客级工程叙事，非模型发布。属 Agent 工具，不进训练配方时间线。",
+      "source": "@AnthropicAI",
+      "category": "product",
+      "date": "2026-10-14T00:00:00+08:00",
+      "url": "https://x.com/AnthropicAI/status/2110047081414987957"
+    },
+    {
+      "id": "live-runway-replit",
+      "t": "card",
+      "title": "Runway × Replit：生图/视频资产进项目",
+      "summary": "web design 协作演示。产品事件，不推主线。",
+      "source": "@runwayml",
+      "category": "product",
+      "date": "2026-10-14T00:00:00+08:00",
+      "url": "https://x.com/runwayml/status/2110061567383577037"
+    },
+    {
+      "id": "live-agentswe",
+      "t": "card",
+      "title": "AgentSWE：coding agent 造 agent 评测",
+      "summary": "BAAI：25 题 Creation/Editing/Optimization。最强 Creation 约 19.1/100、Editing 约 31.6/100【第三方摘要】。评测不是训练报告；记 Agent 工具栏，不进信号 4。",
+      "source": "arXiv",
+      "category": "product",
+      "date": "2026-10-14T00:00:00+08:00",
+      "url": "https://arxiv.org/abs/2610.13361"
+    },
+    {
+      "id": "weekly-2026-10-12",
+      "t": "weekly",
+      "title": "AI 前沿趋势周报 · 2026-10-12（第 1 期）",
+      "summary": "评审进 RL 升一档，并从图像扩到视频；视频少步降一档，研究主流仍在修 DMD；OPD 从默认配方变成要看师生重叠率的工具。四张信号表一周无翻转。",
+      "source": "前沿趋势",
+      "category": null,
+      "date": "2026-10-12T00:00:00+08:00",
+      "url": "weekly/2026-10-12/"
+    },
+    {
+      "id": "timeline-lede",
+      "t": "event",
+      "title": "时间线",
+      "summary": "主线无升级、无降级。OPD 侧 Apple/Duke：域内四种方法无一致优势，MOPD 训练算力是 SFT 的 14.8×/23.1×（Qwen3-8B 两组任务）；大教师时 SFT 换域内、OPD 守域外【推断】；信号 4 首例结构样本",
+      "source": "前沿趋势",
+      "category": null,
+      "date": "",
+      "url": "timeline/"
+    },
+    {
+      "id": "x-bfl_ai",
+      "t": "card",
+      "title": "BFL FLUX 3 Image Klein：开源权重落地（5.6B）",
+      "summary": "",
+      "source": "@bfl_ai",
+      "category": null,
+      "date": "",
+      "url": "https://x.com/bfl_ai/status/2110751201105256925"
+    },
+    {
+      "id": "x-typesafeai",
+      "t": "card",
+      "title": "Jev 1.14 预览：实验性图像 / box / 长上下文",
+      "summary": "TypeSafe 托管 Jev 上 jev-preview（约一周后切 jev-latest）。多语微调；图像、box 框、长上下文需 danger-zone 头。独立评测口径：MMLU-Redux 95.0 / ARC-C 97.6 表内",
+      "source": "@typesafeai",
+      "category": null,
+      "date": "",
+      "url": "https://x.com/typesafeai/status/2110536685805355064"
+    },
+    {
+      "id": "x-code_hiyouga",
+      "t": "card",
+      "title": "LlamaFactory RSI：PenguinHarness / awesome-rsi / GDPevo（观察）",
+      "summary": "@code_hiyouga 称 GitHub 过 70k★ 后做「LlamaFactory of recursive self-improvement」。三件：主仓 PenguinHarness（Prism-Shadow/penguin-h",
+      "source": "@code_hiyouga",
+      "category": null,
+      "date": "",
+      "url": "https://x.com/code_hiyouga/status/2111016204785922481"
+    },
+    {
+      "id": "x-Yucheng__Shi",
+      "t": "card",
+      "title": "Terminal-RSI：终端 agent 递归改写 + 策略精炼（观察）",
+      "summary": "交替 RSR（自改写）与 RPR（策略精炼），RPR 更新策略权重；Qwen3.8-27B 底座。作者称四套终端基准宏均 50.58%（较底座 +29.90pp）；TB2.1 86.52% / Hard 79%【作者自报】。环境是终端沙箱+",
+      "source": "@Yucheng__Shi",
+      "category": null,
+      "date": "",
+      "url": "https://x.com/Yucheng__Shi/status/2110926888319517119"
+    },
+    {
+      "id": "x-Kling_ai",
+      "t": "card",
+      "title": "Kling 4.0：产品全量上线（非开源权重）",
+      "summary": "新 UI + MCP/CLI；官方 release history 标 2026-10-15 Major。HDR 4K/API 将至。产品全量，非 OSS 权重。",
+      "source": "@Kling_ai",
+      "category": null,
+      "date": "",
+      "url": "https://x.com/Kling_ai/status/2110747537187709424"
+    },
+    {
+      "id": "sha256:10f7f763ebef7da0",
+      "t": "card",
+      "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
+      "summary": "The Decoder 称 Kling AI 4.0 支持最长约 30 秒、最多 10 张关键帧、提示词理解扩展，并含立体声、多语口型同步与更轻 Flash 变体。",
+      "source": "The Decoder",
+      "category": "model",
+      "date": "2026-10-19T17:36:26.000Z",
+      "url": "https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/"
+    },
+    {
+      "id": "sha256:bfa70917f3b198d1",
+      "t": "card",
+      "title": "英伟达发布面向企业与 PC 的开源智能体模型",
+      "summary": "TechCrunch 称英伟达新开源模型，面向企业自建开源模型与端侧本地运行智能体。",
+      "source": "TechCrunch · AI",
+      "category": "model",
+      "date": "2026-10-19T15:37:09.000Z",
+      "url": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/"
+    },
+    {
+      "id": "sha256:5c52b7d34becd1cc",
+      "t": "card",
+      "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
+      "summary": "Hugging Face 博客介绍 TorchNeuron，称在 AWS Trainium 上运行 HF 模型比以往更容易。",
+      "source": "Hugging Face Blog",
+      "category": "product",
+      "date": "2026-10-19T00:00:00.000Z",
+      "url": "https://huggingface.co/blog/hf-torchneuron"
+    },
+    {
+      "id": "sha256:931ff0f85ef4bf70",
+      "t": "card",
+      "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
+      "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017：基准更好、完成任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API。The Decoder 与量子位均有报道。",
+      "source": "The Decoder",
+      "category": "model",
+      "date": "2026-10-17T10:33:28.000Z",
+      "url": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/"
+    },
+    {
+      "id": "2026-10-19-minimax-m31-flash",
+      "t": "event",
+      "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
+      "summary": "稀宇科技宣布 MiniMax M3.1 Flash 上线。The Decoder 称其在 Artificial Analysis Intelligence Index 升至 42（较前代 +13）、成本约减半，并称 DeepSWE v1.1",
+      "source": "The Decoder",
+      "category": null,
+      "date": "",
+      "url": "hot/#s-2026-10-19-minimax-m31-flash"
+    },
+    {
+      "id": "2026-10-20-hf-torchneuron-trainium",
+      "t": "event",
+      "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
+      "summary": "Hugging Face 博客介绍 TorchNeuron，称在 AWS Trainium 上运行 HF 模型比以往更容易。TechCrunch 称亚马逊借此加码与英伟达的竞争。",
+      "source": "TechCrunch · AI、Hugging Face Blog",
+      "category": null,
+      "date": "",
+      "url": "hot/#s-2026-10-20-hf-torchneuron-trainium"
+    },
+    {
+      "id": "daily-2026-10-20",
+      "t": "daily",
+      "title": "AI日报 · 2026-10-20",
+      "summary": "今日重点四条：可灵 AI 4.0（更长视频、立体声与多语口型同步）。英伟达开源面向企业与 PC 的智能体模型。MiniMax M3.1 Flash（称提速约 3 倍、成本约降 70%，AA 指数到 42）。Hugging Face Torc",
+      "source": "前沿趋势",
+      "category": null,
+      "date": "2026-10-20T00:00:00+08:00",
+      "url": "daily/"
+    }
+  ]
+}

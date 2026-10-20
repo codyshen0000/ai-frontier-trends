@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="ds-page ft-shell no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FLUX 3 相机术语表 · 前沿趋势</title>
+  <meta name="description" content="官方相机术语：119 个词、14 组，带说明和示例。">
+  <link rel="stylesheet" href="https://codyshen0000.github.io/assets/ds.css">
+  <link rel="stylesheet" href="../../assets/skin-raw.css">
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml" data-ds-injected="favicon"><link rel="icon" href="../../assets/favicon.png" type="image/png" sizes="32x32" data-ds-injected="favicon"><link rel="icon" href="../../favicon.ico" sizes="any" data-ds-injected="favicon">
+  <style>.chart-fig{margin:24px 0;padding:20px 20px 14px;background:var(--ds-bg-elevated,#fff);border:1px solid var(--ds-hairline,#e5e5ea);border-radius:var(--ds-radius-md,14px);max-width:860px}
+.chart-fig h3{margin:0 0 4px;font-size:17px;line-height:1.35;color:var(--ds-text,#1d1d1f)}
+.chart-fig .chart-sub{margin:0 0 10px;font-size:13px;color:var(--ds-text-secondary,#6e6e73)}
+.cb{display:grid;gap:8px}
+.cb-row{display:grid;grid-template-columns:minmax(0,38%) 1fr auto;align-items:center;gap:10px;font-size:13px;color:var(--ds-text,#1d1d1f)}
+.cb-lbl{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cb-track{height:14px;border-radius:7px;background:var(--ds-surface-3,#f2f2f7);overflow:hidden}
+.cb-bar{display:block;height:100%;min-width:3px;border-radius:7px;background:var(--ds-accent,#0058b0)}
+.cb-bar.b2{background:#34c759}.cb-bar.b3{background:#ff9f0a}.cb-bar.b4{background:#8e8e93;min-width:0}
+.cb-val{font-weight:600;font-variant-numeric:tabular-nums;min-width:3.5em;text-align:right}
+@media (max-width:734px){.chart-fig{padding:16px 14px 12px}.cb-row{grid-template-columns:1fr auto;gap:2px 8px}.cb-lbl{grid-column:1/-1;white-space:normal}.cb-track{grid-column:1}}
+.chart-fig figcaption{margin-top:8px;font-size:12px;color:var(--ds-text-secondary,var(--ft-ink,#4f5b61))}
+.chart-fig figcaption a{color:inherit;text-decoration:underline}
+.chart-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.chart-grid .chart-fig{margin:0}</style>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("ft:theme");
+        if (!t) {
+          var old = localStorage.getItem("theme");
+          if (old === "light" || old === "dark" || old === "system") {
+            t = old;
+            localStorage.setItem("ft:theme", old);
+          }
+        }
+        if (t !== "light" && t !== "dark" && t !== "system") t = "system";
+        var resolved = t === "system" ? (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") : t;
+        document.documentElement.dataset.theme = resolved;
+        document.documentElement.setAttribute("data-ft-theme-pref", t);
+        document.documentElement.classList.add("js");
+        document.documentElement.classList.remove("no-js");
+      } catch (e) {
+        document.documentElement.classList.add("js");
+        document.documentElement.classList.remove("no-js");
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a class="ds-skip" href="#main">跳到正文</a>
+  <style data-ds-injected="nav-css">.paper-card{margin:0 0 28px;padding:20px;background:var(--ds-bg-elevated,#fff);border:1px solid var(--ds-hairline,#e5e5ea);border-radius:var(--ds-radius-md,14px);scroll-margin-top:80px}
+.paper-card h3{margin:0 0 6px;font-size:18px;line-height:1.35}.paper-card .paper-id{font-size:12px;color:var(--ds-text-tertiary,#8e8e93)}
+.paper-card .paper-sum{margin:8px 0 12px;font-size:15px;line-height:1.6}
+.paper-card figure{margin:0}.paper-card img{display:block;width:100%;height:auto;border-radius:8px;background:#fff;cursor:zoom-in}
+.paper-card figcaption{margin-top:6px;font-size:12px;color:var(--ds-text-tertiary,#8e8e93);line-height:1.5}
+.paper-card figcaption a{color:inherit;text-decoration:underline}
+.paper-nofig{font-size:13px;color:var(--ds-text-secondary,#6e6e73)}
+a.paper-explain{margin-left:4px;font-size:.78em;padding:1px 6px;border-radius:999px;background:var(--ds-surface-3,#e8e8ed);color:#0058b0!important;text-decoration:none;white-space:nowrap}
+html[data-theme="dark"] a.paper-explain{color:#7eb6ff!important;background:rgba(126,182,255,.14)}</style>
+  <aside class="ft-sidebar" id="nav" data-ds-injected="nav">
+    <a class="ft-brand" href="../../live/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12 20 4l-5 16-3.5-6.5Z"/></svg><span>前沿趋势</span></a>
+    <nav class="ft-side-links" aria-label="站点导航"><a href="../../live/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.6"/><rect x="13" y="4" width="7" height="7" rx="1.6"/><rect x="4" y="13" width="7" height="7" rx="1.6"/><path d="M13 16h7M13 20h4"/></svg><span>精选</span></a><a href="../../hot/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s4 4.4 4 8.2A4 4 0 1 1 8 11.1C8 7.3 12 3 12 3Z"/><path d="M10 18c0 1.2.9 2 2 2s2-.8 2-2"/></svg><span>热点</span></a><a href="../../daily/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5h11a2 2 0 0 1 2 2v13H7a2 2 0 0 1-2-2V5Z"/><path d="M18 7h1.5A1.5 1.5 0 0 1 21 8.5V18a3 3 0 0 1-3 3"/><path d="M8 10h7M8 14h7"/></svg><span>日报</span></a><span class="active" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="1.35"/><circle cx="17" cy="7" r="1.35"/><circle cx="7" cy="17" r="1.35"/><circle cx="17" cy="17" r="1.35"/></svg><span>更多</span></span></nav>
+    
+    <div class="ft-side-tools">
+      <button type="button" class="ft-theme-toggle" aria-label="切换配色">☾</button>
+    </div>
+  </aside>
+  <header class="ft-topbar" data-ds-injected="topbar">
+    <a class="ft-brand" href="../../live/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12 20 4l-5 16-3.5-6.5Z"/></svg><span>前沿趋势</span></a>
+    <button type="button" class="ft-theme-toggle" aria-label="切换配色">☾</button>
+  </header>
+  <nav class="ft-tabbar" data-ds-injected="tabbar" aria-label="底部导航"><a href="../../live/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.6"/><rect x="13" y="4" width="7" height="7" rx="1.6"/><rect x="4" y="13" width="7" height="7" rx="1.6"/><path d="M13 16h7M13 20h4"/></svg><span>精选</span></a><a href="../../hot/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s4 4.4 4 8.2A4 4 0 1 1 8 11.1C8 7.3 12 3 12 3Z"/><path d="M10 18c0 1.2.9 2 2 2s2-.8 2-2"/></svg><span>热点</span></a><a href="../../daily/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5h11a2 2 0 0 1 2 2v13H7a2 2 0 0 1-2-2V5Z"/><path d="M18 7h1.5A1.5 1.5 0 0 1 21 8.5V18a3 3 0 0 1-3 3"/><path d="M8 10h7M8 14h7"/></svg><span>日报</span></a><span class="active" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="1.35"/><circle cx="17" cy="7" r="1.35"/><circle cx="7" cy="17" r="1.35"/><circle cx="17" cy="17" r="1.35"/></svg><span>更多</span></span></nav>
+  <main id="main" class="ds-wrap ds-section trend-has-tabs">
+    <nav class="trend-crumb" aria-label="当前位置"><span>更多</span><span>FLUX 3</span><span>相机术语</span></nav><nav class="trend-tabs" aria-label="FLUX 3"><a href="../../flux3/">速查表</a><a href="../../flux3/cases/">官方案例</a><a href="../../flux3/examples/">示例库</a><span class="active" aria-current="page">相机术语</span></nav>
+    <article class="ds-prose"><h1 id="flux-3-相机术语表">FLUX 3 相机术语表</h1>
+<p>整理自 Black Forest Labs 官方 <a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">Examples &amp; Cheatsheet</a> 页内的 <code>CAMERA_TERMS</code> 数据。检索日期：<strong>2026-10-08</strong>。</p>
+<p>共 <strong>119</strong> 个术语、<strong>14</strong> 组。每条含官方英文术语、中文说明、官方 description、官方 example prompt（英文原文）。中文翻译是阅读辅助，不是文档原文。</p>
+<p class="sister-nav">相关页：<a href="../">FLUX 3 提示词速查表</a> · <a href="../examples/">官方示例库</a> · <a href="../cases/">官方案例</a></p>
+
+<nav class="page-toc" aria-label="本页目录">
+<p>本页目录</p>
+
+<ul>
+<li><a href="#shot-sizes-and-framing">景别与取景（Shot sizes）</a></li>
+<li><a href="#camera-angles">机位与角度（Angles）</a></li>
+<li><a href="#composition-techniques">构图（Composition）</a></li>
+<li><a href="#camera-movements">运镜（Movements）</a></li>
+<li><a href="#focus-techniques">焦点（Focus）</a></li>
+<li><a href="#lenses-and-optics">镜头与光学（Lenses）</a></li>
+<li><a href="#shutter-and-time">快门与时间（Shutter &amp; time）</a></li>
+<li><a href="#lighting-styles">光线（Lighting）</a></li>
+<li><a href="#shot-transitions">转场（Transitions）</a></li>
+<li><a href="#pov-and-specialty-rigs">主观视角与特殊机位（POV）</a></li>
+<li><a href="#aspect-and-format">画幅与格式（Format）</a></li>
+<li><a href="#vfx-and-transformation">特效与变形（VFX）</a></li>
+<li><a href="#art-direction">美术指导（Art direction）</a></li>
+<li><a href="#animation-and-media">动画与媒介（Animation）</a></li>
+</ul>
+</nav>
+
+<h2 id="景别与取景shot-sizes">景别与取景（Shot sizes)</h2>
+<div class="ds-table-wrap"><table class="ds-table">
+<thead>
+<tr>
+<th>术语</th>
+<th>中文说明</th>
+<th>官方 description</th>
+<th>官方 example prompt</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>Macro</code></td>
+<td>微距：贴近极小主体</td>
+<td>Extreme detail on a very small subject area</td>
+<td><code>macro close-up of dew forming on a pine needle</code></td>
+</tr>
+<tr>
+<td><code>Close-up</code></td>
+<td>特写：脸、质感或单一物体</td>
+<td>Emphasizes face, texture, or a single object</td>
+<td><code>close-up of a boxer tightening taped hands</code></td>
+</tr>
+<tr>
+<td><code>Medium shot</code></td>
+<td>中景：人与环境各占一半</td>
+<td>Balanced view of subject and surroundings</td>
+<td><code>medium shot of a chef plating food at the pass</code></td>
+</tr>
+<tr>
+<td><code>Wide shot</code></td>
+<td>全景：全身加更多环境</td>
+<td>Shows full body and more of the environment</td>
+<td><code>wide shot of a rider crossing a dry riverbed at sunset</code></td>
+</tr>
+<tr>
+<td><code>Establishing shot</code></td>
+<td>建立镜头：先交代地点与尺度</td>
+<td>Sets location and scale before action</td>
+<td><code>establishing shot of neon towers above a rainy avenue</code></td>
+</tr>
+<tr>
+<td><code>Extreme close-up</code></td>
+<td>大特写：单点细节充满画面</td>
+<td>Fills the frame with a single tiny detail</td>
+<td><code>Extreme close-up of a weathered eye, flickering campfire flames reflected in the iris, embers drifting in darkness, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Cowboy shot</code></td>
+<td>牛仔景：从大腿中段往上</td>
+<td>Frames the subject from mid-thigh up</td>
+<td><code>Cowboy shot of a stern sheriff, hand resting on his gun belt, dusty street shimmering behind him, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Full shot</code></td>
+<td>全身景：从头到脚</td>
+<td>Shows the whole body head to toe</td>
+<td><code>Full shot of a ballerina frozen mid-leap in an empty sunlit studio, dust motes floating around her, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Two shot</code></td>
+<td>双人景：两人同框</td>
+<td>Two subjects sharing one frame</td>
+<td><code>Two shot of two detectives arguing across a diner table, neon light flickering, coffee cups steaming between them, 10 seconds, 16:9</code></td>
+</tr>
+</tbody></table></div>
+<h3 id="macro">Macro</h3>
+<p class="ex-meta"><span class="term-zh">微距：贴近极小主体</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">macro close-up of dew forming on a pine needle
+</code></pre>
+<h3 id="close-up">Close-up</h3>
+<p class="ex-meta"><span class="term-zh">特写：脸、质感或单一物体</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">close-up of a boxer tightening taped hands
+</code></pre>
+<h3 id="medium-shot">Medium shot</h3>
+<p class="ex-meta"><span class="term-zh">中景：人与环境各占一半</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">medium shot of a chef plating food at the pass
+</code></pre>
+<h3 id="wide-shot">Wide shot</h3>
+<p class="ex-meta"><span class="term-zh">全景：全身加更多环境</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">wide shot of a rider crossing a dry riverbed at sunset
+</code></pre>
+<h3 id="establishing-shot">Establishing shot</h3>
+<p class="ex-meta"><span class="term-zh">建立镜头：先交代地点与尺度</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">establishing shot of neon towers above a rainy avenue
+</code></pre>
+<h3 id="extreme-close-up">Extreme close-up</h3>
+<p class="ex-meta"><span class="term-zh">大特写：单点细节充满画面</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Extreme close-up of a weathered eye, flickering campfire flames reflected in the iris, embers drifting in darkness, 10 seconds, 16:9
+</code></pre>
+<h3 id="cowboy-shot">Cowboy shot</h3>
+<p class="ex-meta"><span class="term-zh">牛仔景：从大腿中段往上</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Cowboy shot of a stern sheriff, hand resting on his gun belt, dusty street shimmering behind him, 10 seconds, 16:9
+</code></pre>
+<h3 id="full-shot">Full shot</h3>
+<p class="ex-meta"><span class="term-zh">全身景：从头到脚</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Full shot of a ballerina frozen mid-leap in an empty sunlit studio, dust motes floating around her, 10 seconds, 16:9
+</code></pre>
+<h3 id="two-shot">Two shot</h3>
+<p class="ex-meta"><span class="term-zh">双人景：两人同框</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Two shot of two detectives arguing across a diner table, neon light flickering, coffee cups steaming between them, 10 seconds, 16:9
+</code></pre>
+<h2 id="机位与角度angles">机位与角度（Angles)</h2>
+<div class="ds-table-wrap"><table class="ds-table">
+<thead>
+<tr>
+<th>术语</th>
+<th>中文说明</th>
+<th>官方 description</th>
+<th>官方 example prompt</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>Aerial</code></td>
+<td>航拍：从高处俯看场景</td>
+<td>View from high above the scene</td>
+<td><code>aerial view of a fishing boat cutting through rough water</code></td>
+</tr>
+<tr>
+<td><code>Low angle</code></td>
+<td>仰角：镜头上望，强调体量</td>
+<td>Camera looks upward to add scale or dominance</td>
+<td><code>low angle on a runner exploding off the starting blocks</code></td>
+</tr>
+<tr>
+<td><code>High angle</code></td>
+<td>俯角：镜头下望，压缩或暴露</td>
+<td>Camera looks downward to compress or expose</td>
+<td><code>high angle on commuters crossing a flooded plaza</code></td>
+</tr>
+<tr>
+<td><code>POV</code></td>
+<td>主观镜头：从角色眼睛看出去</td>
+<td>Shot from the subject&#39;s perspective</td>
+<td><code>POV weaving through a crowded night market</code></td>
+</tr>
+<tr>
+<td><code>Over-the-shoulder</code></td>
+<td>过肩：越过前景人物看动作</td>
+<td>Frames action past a foreground subject</td>
+<td><code>over-the-shoulder view of a detective reading a case board</code></td>
+</tr>
+<tr>
+<td><code>Dutch angle</code></td>
+<td>荷兰角：地平线倾斜，制造不安</td>
+<td>Tilted horizon for unease or tension</td>
+<td><code>Dutch angle of a panicked man running down a tilting fluorescent corridor, shadows sliding across walls, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Worm&#39;s eye</code></td>
+<td>虫视：极低机位向上看</td>
+<td>Extreme low angle looking straight up</td>
+<td><code>Worm&#39;s eye view of glass skyscrapers converging overhead, clouds racing between the towers, sunlight flaring downward, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Bird&#39;s eye (top-down)</code></td>
+<td>鸟瞰：垂直向下</td>
+<td>Straight-down overhead view</td>
+<td><code>Bird&#39;s eye top-down view of synchronized swimmers forming a blooming flower pattern in turquoise pool water, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Eye level</code></td>
+<td>平视：与眼睛同高</td>
+<td>Neutral height matching the subject&#39;s eyes</td>
+<td><code>Eye level shot of a barista sliding a latte across the counter, steam rising, morning light through windows, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Ground level</code></td>
+<td>贴地：镜头贴地面横看</td>
+<td>Camera at the ground looking across the scene</td>
+<td><code>Ground level shot, camera resting on wet asphalt as marching parade shoes stomp through puddles, splashes flying, confetti settling, low perspective of celebration, brassy afternoon light, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Profile shot</code></td>
+<td>侧面：严格侧对主体</td>
+<td>Strict side-on view of the subject</td>
+<td><code>Profile shot, strict side view of a pensive woman by a train window, passing landscape reflected on glass, flickering sunlight strobing across her face, contemplative journey, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Tableau</code></td>
+<td>舞台式：静止对称的宽构图</td>
+<td>Static, symmetrical, staged wide frame</td>
+<td><code>Tableau shot, static perfectly symmetrical wide frame of a pastel hotel lobby staged like a Wes Anderson set, uniformed staff standing in neat formation, deadpan whimsical composition, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Fourth wall</code></td>
+<td>破第四面墙：直视镜头说话</td>
+<td>Subject looks and speaks directly to the camera</td>
+<td><code>Breaking the fourth wall, a charismatic detective mid-investigation suddenly notices the camera, turns, raises an eyebrow and speaks directly to the lens, moody office lamplight, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Object POV</code></td>
+<td>物体视角：从物件内部看出</td>
+<td>View from an object&#39;s perspective</td>
+<td><code>Object POV shot from inside a refrigerator, door swings open revealing a sleepy man in warm kitchen light, he reaches toward the camera for milk, cool blue glow, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Voyeur</code></td>
+<td>偷窥机位：被遮挡的暗中观察</td>
+<td>Hidden, obstructed view spying on the subject</td>
+<td><code>Voyeur shot, hidden camera peering through half-closed venetian blinds at a man pacing in his apartment, slats framing the view, grainy suspense, secretive nocturnal tension, 10 seconds, 16:9</code></td>
+</tr>
+</tbody></table></div>
+<h3 id="aerial">Aerial</h3>
+<p class="ex-meta"><span class="term-zh">航拍：从高处俯看场景</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">aerial view of a fishing boat cutting through rough water
+</code></pre>
+<h3 id="low-angle">Low angle</h3>
+<p class="ex-meta"><span class="term-zh">仰角：镜头上望，强调体量</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">low angle on a runner exploding off the starting blocks
+</code></pre>
+<h3 id="high-angle">High angle</h3>
+<p class="ex-meta"><span class="term-zh">俯角：镜头下望，压缩或暴露</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">high angle on commuters crossing a flooded plaza
+</code></pre>
+<h3 id="pov">POV</h3>
+<p class="ex-meta"><span class="term-zh">主观镜头：从角色眼睛看出去</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">POV weaving through a crowded night market
+</code></pre>
+<h3 id="over-the-shoulder">Over-the-shoulder</h3>
+<p class="ex-meta"><span class="term-zh">过肩：越过前景人物看动作</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">over-the-shoulder view of a detective reading a case board
+</code></pre>
+<h3 id="dutch-angle">Dutch angle</h3>
+<p class="ex-meta"><span class="term-zh">荷兰角：地平线倾斜，制造不安</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Dutch angle of a panicked man running down a tilting fluorescent corridor, shadows sliding across walls, 10 seconds, 16:9
+</code></pre>
+<h3 id="worm39s-eye">Worm&#39;s eye</h3>
+<p class="ex-meta"><span class="term-zh">虫视：极低机位向上看</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Worm&#39;s eye view of glass skyscrapers converging overhead, clouds racing between the towers, sunlight flaring downward, 10 seconds, 16:9
+</code></pre>
+<h3 id="bird39s-eye-top-down">Bird&#39;s eye (top-down)</h3>
+<p class="ex-meta"><span class="term-zh">鸟瞰：垂直向下</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Bird&#39;s eye top-down view of synchronized swimmers forming a blooming flower pattern in turquoise pool water, 10 seconds, 16:9
+</code></pre>
+<h3 id="eye-level">Eye level</h3>
+<p class="ex-meta"><span class="term-zh">平视：与眼睛同高</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Eye level shot of a barista sliding a latte across the counter, steam rising, morning light through windows, 10 seconds, 16:9
+</code></pre>
+<h3 id="ground-level">Ground level</h3>
+<p class="ex-meta"><span class="term-zh">贴地：镜头贴地面横看</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Ground level shot, camera resting on wet asphalt as marching parade shoes stomp through puddles, splashes flying, confetti settling, low perspective of celebration, brassy afternoon light, 10 seconds, 16:9
+</code></pre>
+<h3 id="profile-shot">Profile shot</h3>
+<p class="ex-meta"><span class="term-zh">侧面：严格侧对主体</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Profile shot, strict side view of a pensive woman by a train window, passing landscape reflected on glass, flickering sunlight strobing across her face, contemplative journey, 10 seconds, 16:9
+</code></pre>
+<h3 id="tableau">Tableau</h3>
+<p class="ex-meta"><span class="term-zh">舞台式：静止对称的宽构图</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Tableau shot, static perfectly symmetrical wide frame of a pastel hotel lobby staged like a Wes Anderson set, uniformed staff standing in neat formation, deadpan whimsical composition, 10 seconds, 16:9
+</code></pre>
+<h3 id="fourth-wall">Fourth wall</h3>
+<p class="ex-meta"><span class="term-zh">破第四面墙：直视镜头说话</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Breaking the fourth wall, a charismatic detective mid-investigation suddenly notices the camera, turns, raises an eyebrow and speaks directly to the lens, moody office lamplight, 10 seconds, 16:9
+</code></pre>
+<h3 id="object-pov">Object POV</h3>
+<p class="ex-meta"><span class="term-zh">物体视角：从物件内部看出</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Object POV shot from inside a refrigerator, door swings open revealing a sleepy man in warm kitchen light, he reaches toward the camera for milk, cool blue glow, 10 seconds, 16:9
+</code></pre>
+<h3 id="voyeur">Voyeur</h3>
+<p class="ex-meta"><span class="term-zh">偷窥机位：被遮挡的暗中观察</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Voyeur shot, hidden camera peering through half-closed venetian blinds at a man pacing in his apartment, slats framing the view, grainy suspense, secretive nocturnal tension, 10 seconds, 16:9
+</code></pre>
+<h2 id="构图composition">构图（Composition)</h2>
+<div class="ds-table-wrap"><table class="ds-table">
+<thead>
+<tr>
+<th>术语</th>
+<th>中文说明</th>
+<th>官方 description</th>
+<th>官方 example prompt</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>Leading lines</code></td>
+<td>引导线：用线条把视线引向主体</td>
+<td>Uses lines in the frame to guide the eye</td>
+<td><code>leading lines of train tracks pulling toward a distant station</code></td>
+</tr>
+<tr>
+<td><code>Center framing</code></td>
+<td>居中构图：主体锁在正中</td>
+<td>Keeps the subject locked in the middle</td>
+<td><code>center-framed portrait of a dancer under a spotlight</code></td>
+</tr>
+<tr>
+<td><code>Rule of thirds</code></td>
+<td>三分法：主体偏置</td>
+<td>Places the subject off-center for balance</td>
+<td><code>runner framed on the left third against a vast coastline</code></td>
+</tr>
+<tr>
+<td><code>Symmetry</code></td>
+<td>对称</td>
+<td>Mirrors shapes for precision or tension</td>
+<td><code>symmetrical hotel corridor with a child standing still at the center</code></td>
+</tr>
+<tr>
+<td><code>Negative space</code></td>
+<td>负空间：留白压主体</td>
+<td>Leaves open space around the subject</td>
+<td><code>small sailboat isolated against a wide grey horizon</code></td>
+</tr>
+<tr>
+<td><code>Frame within frame</code></td>
+<td>框中框</td>
+<td>Uses an in-scene opening to frame the subject</td>
+<td><code>Frame within frame composition, a lone traveler seen through a rain-streaked train window, city lights smearing past, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Foreground occlusion</code></td>
+<td>前景遮挡</td>
+<td>Blurred foreground objects add depth</td>
+<td><code>Foreground occlusion shot, two friends conversing glimpsed past out-of-focus market stalls, hanging lanterns and vendors drifting by, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Silhouette</code></td>
+<td>剪影</td>
+<td>Subject rendered dark against bright light</td>
+<td><code>Silhouette of a climber pulling over a ridge against the rising sun, golden haze swallowing the mountains, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Reflection framing</code></td>
+<td>反射构图</td>
+<td>Composes the subject in a reflective surface</td>
+<td><code>Reflection framing of a dancer spinning inside a cracked ballroom mirror, fractured images multiplying with each turn, 10 seconds, 16:9</code></td>
+</tr>
+</tbody></table></div>
+<h3 id="leading-lines">Leading lines</h3>
+<p class="ex-meta"><span class="term-zh">引导线：用线条把视线引向主体</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">leading lines of train tracks pulling toward a distant station
+</code></pre>
+<h3 id="center-framing">Center framing</h3>
+<p class="ex-meta"><span class="term-zh">居中构图：主体锁在正中</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">center-framed portrait of a dancer under a spotlight
+</code></pre>
+<h3 id="rule-of-thirds">Rule of thirds</h3>
+<p class="ex-meta"><span class="term-zh">三分法：主体偏置</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">runner framed on the left third against a vast coastline
+</code></pre>
+<h3 id="symmetry">Symmetry</h3>
+<p class="ex-meta"><span class="term-zh">对称</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">symmetrical hotel corridor with a child standing still at the center
+</code></pre>
+<h3 id="negative-space">Negative space</h3>
+<p class="ex-meta"><span class="term-zh">负空间：留白压主体</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">small sailboat isolated against a wide grey horizon
+</code></pre>
+<h3 id="frame-within-frame">Frame within frame</h3>
+<p class="ex-meta"><span class="term-zh">框中框</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Frame within frame composition, a lone traveler seen through a rain-streaked train window, city lights smearing past, 10 seconds, 16:9
+</code></pre>
+<h3 id="foreground-occlusion">Foreground occlusion</h3>
+<p class="ex-meta"><span class="term-zh">前景遮挡</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Foreground occlusion shot, two friends conversing glimpsed past out-of-focus market stalls, hanging lanterns and vendors drifting by, 10 seconds, 16:9
+</code></pre>
+<h3 id="silhouette">Silhouette</h3>
+<p class="ex-meta"><span class="term-zh">剪影</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Silhouette of a climber pulling over a ridge against the rising sun, golden haze swallowing the mountains, 10 seconds, 16:9
+</code></pre>
+<h3 id="reflection-framing">Reflection framing</h3>
+<p class="ex-meta"><span class="term-zh">反射构图</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Reflection framing of a dancer spinning inside a cracked ballroom mirror, fractured images multiplying with each turn, 10 seconds, 16:9
+</code></pre>
+<h2 id="运镜movements">运镜（Movements)</h2>
+<div class="ds-table-wrap"><table class="ds-table">
+<thead>
+<tr>
+<th>术语</th>
+<th>中文说明</th>
+<th>官方 description</th>
+<th>官方 example prompt</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>Pan</code></td>
+<td>横摇</td>
+<td>Camera rotates left or right from a fixed point</td>
+<td><code>slow pan across pine trees to reveal a lake at dawn</code></td>
+</tr>
+<tr>
+<td><code>Tilt</code></td>
+<td>俯仰摇</td>
+<td>Camera rotates up or down</td>
+<td><code>tilt up from muddy boots to a storm-lit face</code></td>
+</tr>
+<tr>
+<td><code>Dolly in</code></td>
+<td>推轨靠近</td>
+<td>Camera physically pushes closer to the subject</td>
+<td><code>dolly in toward a violinist before the first note</code></td>
+</tr>
+<tr>
+<td><code>Tracking shot</code></td>
+<td>跟踪镜头</td>
+<td>Camera moves alongside the subject</td>
+<td><code>tracking shot beside a fox sprinting through brush</code></td>
+</tr>
+<tr>
+<td><code>Orbit</code></td>
+<td>环绕</td>
+<td>Camera circles the subject</td>
+<td><code>slow orbit around a statue in blowing ash</code></td>
+</tr>
+<tr>
+<td><code>Crane / boom</code></td>
+<td>摇臂 / 升降</td>
+<td>Camera rises or lowers on a boom arm</td>
+<td><code>Crane boom shot rising from street level up a brick facade to a rooftop garden party glowing with string lights, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Handheld</code></td>
+<td>手持</td>
+<td>Loose, organic camera motion</td>
+<td><code>Handheld camera trailing a nervous performer through a cramped backstage corridor, crew rushing past, stage lights ahead, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Whip pan</code></td>
+<td>甩摇</td>
+<td>Fast pan that blurs between subjects</td>
+<td><code>Whip pan from the pitcher&#39;s explosive windup to the batter swinging, stadium crowd blurring between them, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Dolly zoom</code></td>
+<td>希区柯克变焦</td>
+<td>Zoom and dolly opposed for a warping effect</td>
+<td><code>Dolly zoom on a man&#39;s stunned face in a long hallway as he realizes the truth, walls stretching unnaturally, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Steadicam follow</code></td>
+<td>稳定器跟随</td>
+<td>Smooth stabilized shot following the subject</td>
+<td><code>Steadicam follow shot tracking a chef weaving through a busy kitchen, flames flaring, plates passing hand to hand, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Push through</code></td>
+<td>穿过前景推进</td>
+<td>Camera pushes through a gap into a new space</td>
+<td><code>Push through a brass keyhole into a candlelit library, towering shelves emerging, flames trembling over ancient books, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Snorricam</code></td>
+<td>胸挂主观</td>
+<td>Rig mounts the camera to the subject so the world sways</td>
+<td><code>Snorricam shot, camera rigged to the actor&#39;s chest keeping his weary face pin-sharp while neon city streets tumble and sway wildly behind him, drunken disorienting night walk, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Camera roll</code></td>
+<td>滚转</td>
+<td>Camera rotates around its own lens axis</td>
+<td><code>Camera roll technique, lens rotating a full 360 degrees around its own axis as a skateboarder leaps a concrete gap, golden sunset flares, gravity-defying dizziness, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Arc shot</code></td>
+<td>弧线环绕</td>
+<td>Camera sweeps a semicircle around the subject</td>
+<td><code>Arc shot, camera glides in a smooth semicircle around a couple kissing under heavy rain, streetlamps sparkling in falling droplets, slow romantic orbit, cinematic night atmosphere, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Pedestal</code></td>
+<td>升降座</td>
+<td>Camera moves straight up or down in space</td>
+<td><code>Pedestal shot, camera rises vertically along a towering antique library bookshelf, dust motes drifting in warm lamplight, leather spines passing frame by frame, quiet scholarly grandeur, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Trucking</code></td>
+<td>横向移动</td>
+<td>Camera slides laterally alongside the scene</td>
+<td><code>Trucking shot, camera slides laterally past a bustling street market, vendors handing over fruit, awnings flapping, steam rising from food stalls, layered crowds in warm afternoon light, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Locked-on</code></td>
+<td>锁死机位</td>
+<td>Rig fixes the subject steady while the background blurs</td>
+<td><code>Locked-on shot, camera rigidly fixed to a runner&#39;s determined face, perfectly stable, while the blurred subway station whips past behind her at chaotic speed, tense urgency, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Lazy Susan</code></td>
+<td>转盘旋转</td>
+<td>Subject rotates on a turntable, camera fixed</td>
+<td><code>Lazy Susan shot, a vintage rotary telephone spinning slowly on a rotating turntable while the camera stays completely fixed, moody studio spotlight, black backdrop, product-film elegance, 10 seconds, 16:9</code></td>
+</tr>
+</tbody></table></div>
+<h3 id="pan">Pan</h3>
+<p class="ex-meta"><span class="term-zh">横摇</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">slow pan across pine trees to reveal a lake at dawn
+</code></pre>
+<h3 id="tilt">Tilt</h3>
+<p class="ex-meta"><span class="term-zh">俯仰摇</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">tilt up from muddy boots to a storm-lit face
+</code></pre>
+<h3 id="dolly-in">Dolly in</h3>
+<p class="ex-meta"><span class="term-zh">推轨靠近</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">dolly in toward a violinist before the first note
+</code></pre>
+<h3 id="tracking-shot">Tracking shot</h3>
+<p class="ex-meta"><span class="term-zh">跟踪镜头</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">tracking shot beside a fox sprinting through brush
+</code></pre>
+<h3 id="orbit">Orbit</h3>
+<p class="ex-meta"><span class="term-zh">环绕</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">slow orbit around a statue in blowing ash
+</code></pre>
+<h3 id="crane-boom">Crane / boom</h3>
+<p class="ex-meta"><span class="term-zh">摇臂 / 升降</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Crane boom shot rising from street level up a brick facade to a rooftop garden party glowing with string lights, 10 seconds, 16:9
+</code></pre>
+<h3 id="handheld">Handheld</h3>
+<p class="ex-meta"><span class="term-zh">手持</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Handheld camera trailing a nervous performer through a cramped backstage corridor, crew rushing past, stage lights ahead, 10 seconds, 16:9
+</code></pre>
+<h3 id="whip-pan">Whip pan</h3>
+<p class="ex-meta"><span class="term-zh">甩摇</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Whip pan from the pitcher&#39;s explosive windup to the batter swinging, stadium crowd blurring between them, 10 seconds, 16:9
+</code></pre>
+<h3 id="dolly-zoom">Dolly zoom</h3>
+<p class="ex-meta"><span class="term-zh">希区柯克变焦</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Dolly zoom on a man&#39;s stunned face in a long hallway as he realizes the truth, walls stretching unnaturally, 10 seconds, 16:9
+</code></pre>
+<h3 id="steadicam-follow">Steadicam follow</h3>
+<p class="ex-meta"><span class="term-zh">稳定器跟随</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Steadicam follow shot tracking a chef weaving through a busy kitchen, flames flaring, plates passing hand to hand, 10 seconds, 16:9
+</code></pre>
+<h3 id="push-through">Push through</h3>
+<p class="ex-meta"><span class="term-zh">穿过前景推进</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Push through a brass keyhole into a candlelit library, towering shelves emerging, flames trembling over ancient books, 10 seconds, 16:9
+</code></pre>
+<h3 id="snorricam">Snorricam</h3>
+<p class="ex-meta"><span class="term-zh">胸挂主观</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Snorricam shot, camera rigged to the actor&#39;s chest keeping his weary face pin-sharp while neon city streets tumble and sway wildly behind him, drunken disorienting night walk, 10 seconds, 16:9
+</code></pre>
+<h3 id="camera-roll">Camera roll</h3>
+<p class="ex-meta"><span class="term-zh">滚转</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Camera roll technique, lens rotating a full 360 degrees around its own axis as a skateboarder leaps a concrete gap, golden sunset flares, gravity-defying dizziness, 10 seconds, 16:9
+</code></pre>
+<h3 id="arc-shot">Arc shot</h3>
+<p class="ex-meta"><span class="term-zh">弧线环绕</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Arc shot, camera glides in a smooth semicircle around a couple kissing under heavy rain, streetlamps sparkling in falling droplets, slow romantic orbit, cinematic night atmosphere, 10 seconds, 16:9
+</code></pre>
+<h3 id="pedestal">Pedestal</h3>
+<p class="ex-meta"><span class="term-zh">升降座</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Pedestal shot, camera rises vertically along a towering antique library bookshelf, dust motes drifting in warm lamplight, leather spines passing frame by frame, quiet scholarly grandeur, 10 seconds, 16:9
+</code></pre>
+<h3 id="trucking">Trucking</h3>
+<p class="ex-meta"><span class="term-zh">横向移动</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Trucking shot, camera slides laterally past a bustling street market, vendors handing over fruit, awnings flapping, steam rising from food stalls, layered crowds in warm afternoon light, 10 seconds, 16:9
+</code></pre>
+<h3 id="locked-on">Locked-on</h3>
+<p class="ex-meta"><span class="term-zh">锁死机位</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Locked-on shot, camera rigidly fixed to a runner&#39;s determined face, perfectly stable, while the blurred subway station whips past behind her at chaotic speed, tense urgency, 10 seconds, 16:9
+</code></pre>
+<h3 id="lazy-susan">Lazy Susan</h3>
+<p class="ex-meta"><span class="term-zh">转盘旋转</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Lazy Susan shot, a vintage rotary telephone spinning slowly on a rotating turntable while the camera stays completely fixed, moody studio spotlight, black backdrop, product-film elegance, 10 seconds, 16:9
+</code></pre>
+<h2 id="焦点focus">焦点（Focus)</h2>
+<div class="ds-table-wrap"><table class="ds-table">
+<thead>
+<tr>
+<th>术语</th>
+<th>中文说明</th>
+<th>官方 description</th>
+<th>官方 example prompt</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>Shallow depth of field</code></td>
+<td>浅景深</td>
+<td>Subject stays sharp while background softens</td>
+<td><code>shallow depth of field on raindrops sliding down a taxi window</code></td>
+</tr>
+<tr>
+<td><code>Deep focus</code></td>
+<td>深焦</td>
+<td>Foreground and background both stay sharp</td>
+<td><code>deep focus across a crowded antique shop from front shelf to back door</code></td>
+</tr>
+<tr>
+<td><code>Rack focus</code></td>
+<td>焦点转移</td>
+<td>Focus shifts from one subject plane to another</td>
+<td><code>rack focus from a coffee cup in the foreground to a woman at the window</code></td>
+</tr>
+<tr>
+<td><code>Split diopter</code></td>
+<td>分裂屈光</td>
+<td>Near and far planes both stay sharp</td>
+<td><code>Split diopter shot keeping a hiding spy razor sharp in foreground and a distant opening door equally sharp, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Focus breathing reveal</code></td>
+<td>呼吸对焦揭示</td>
+<td>Blur slowly resolves to reveal the subject</td>
+<td><code>Focus breathing reveal, soft blur slowly resolving into a stranger&#39;s face approaching through fog under streetlights, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Tilt shift</code></td>
+<td>移轴</td>
+<td>Selective focus for a miniature look</td>
+<td><code>Tilt shift shot of a miniature-looking harbor town, tiny boats gliding, toy-like cars crossing the quay, 10 seconds, 16:9</code></td>
+</tr>
+</tbody></table></div>
+<h3 id="shallow-depth-of-field">Shallow depth of field</h3>
+<p class="ex-meta"><span class="term-zh">浅景深</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">shallow depth of field on raindrops sliding down a taxi window
+</code></pre>
+<h3 id="deep-focus">Deep focus</h3>
+<p class="ex-meta"><span class="term-zh">深焦</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">deep focus across a crowded antique shop from front shelf to back door
+</code></pre>
+<h3 id="rack-focus">Rack focus</h3>
+<p class="ex-meta"><span class="term-zh">焦点转移</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">rack focus from a coffee cup in the foreground to a woman at the window
+</code></pre>
+<h3 id="split-diopter">Split diopter</h3>
+<p class="ex-meta"><span class="term-zh">分裂屈光</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Split diopter shot keeping a hiding spy razor sharp in foreground and a distant opening door equally sharp, 10 seconds, 16:9
+</code></pre>
+<h3 id="focus-breathing-reveal">Focus breathing reveal</h3>
+<p class="ex-meta"><span class="term-zh">呼吸对焦揭示</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Focus breathing reveal, soft blur slowly resolving into a stranger&#39;s face approaching through fog under streetlights, 10 seconds, 16:9
+</code></pre>
+<h3 id="tilt-shift">Tilt shift</h3>
+<p class="ex-meta"><span class="term-zh">移轴</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Tilt shift shot of a miniature-looking harbor town, tiny boats gliding, toy-like cars crossing the quay, 10 seconds, 16:9
+</code></pre>
+<h2 id="镜头与光学lenses">镜头与光学（Lenses)</h2>
+<div class="ds-table-wrap"><table class="ds-table">
+<thead>
+<tr>
+<th>术语</th>
+<th>中文说明</th>
+<th>官方 description</th>
+<th>官方 example prompt</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>Wide angle (24mm)</code></td>
+<td>广角 24mm</td>
+<td>Exaggerated space and edge distortion</td>
+<td><code>Wide angle 24mm lens follows a runner sprinting through a narrow alley, walls distorting and looming, handheld chase energy, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Telephoto compression</code></td>
+<td>长焦压缩</td>
+<td>Flattens depth and stacks planes together</td>
+<td><code>Telephoto compression stacks a wall of yellow taxis into flattened layers, heat shimmer, dense city traffic crawling forward, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Fisheye</code></td>
+<td>鱼眼</td>
+<td>Extreme curved wide-angle distortion</td>
+<td><code>Fisheye lens inside a skate bowl, skater carves past mid-trick, curved concrete horizon bending around the camera, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Anamorphic flares</code></td>
+<td>变形宽银幕光斑</td>
+<td>Horizontal streaks and oval bokeh</td>
+<td><code>Anamorphic flares streak horizontally across a night runway as a jet taxis past, blue flares cutting the darkness, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Macro lens</code></td>
+<td>微距镜头</td>
+<td>Extreme magnification of tiny detail</td>
+<td><code>Macro lens on a ticking watch mechanism, gears and escapement moving in extreme close-up, shallow focus glinting brass, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Probe lens</code></td>
+<td>探针镜头</td>
+<td>Snorkel lens weaves low through tight spaces</td>
+<td><code>Probe lens shot, snorkel camera weaving low through a breakfast still life, gliding between coffee cups, toast towers and dripping honey, macro detail, warm morning sunlight, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Halation</code></td>
+<td>光晕</td>
+<td>Glowing bloom halos around bright highlights</td>
+<td><code>Halation film look, glowing red-orange halos blooming around candle flames on a dinner table, soft vintage 35mm bloom over every highlight, dreamy nostalgic warmth, gentle flicker, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Parallax</code></td>
+<td>视差</td>
+<td>Depth layers slide against each other at different speeds</td>
+<td><code>Parallax shot, camera tracks sideways as foreground fence posts, midground trees and distant mountains slide against each other at different speeds, layered depth, misty dawn light, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Vignette</code></td>
+<td>暗角</td>
+<td>Darkened edges frame a bright center</td>
+<td><code>Heavy vignette, dark edges closing around a candlelit portrait of an old woman reading letters, only her illuminated face in the bright center, intimate chiaroscuro mood, 10 seconds, 16:9</code></td>
+</tr>
+</tbody></table></div>
+<h3 id="wide-angle-24mm">Wide angle (24mm)</h3>
+<p class="ex-meta"><span class="term-zh">广角 24mm</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Wide angle 24mm lens follows a runner sprinting through a narrow alley, walls distorting and looming, handheld chase energy, 10 seconds, 16:9
+</code></pre>
+<h3 id="telephoto-compression">Telephoto compression</h3>
+<p class="ex-meta"><span class="term-zh">长焦压缩</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Telephoto compression stacks a wall of yellow taxis into flattened layers, heat shimmer, dense city traffic crawling forward, 10 seconds, 16:9
+</code></pre>
+<h3 id="fisheye">Fisheye</h3>
+<p class="ex-meta"><span class="term-zh">鱼眼</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Fisheye lens inside a skate bowl, skater carves past mid-trick, curved concrete horizon bending around the camera, 10 seconds, 16:9
+</code></pre>
+<h3 id="anamorphic-flares">Anamorphic flares</h3>
+<p class="ex-meta"><span class="term-zh">变形宽银幕光斑</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Anamorphic flares streak horizontally across a night runway as a jet taxis past, blue flares cutting the darkness, 10 seconds, 16:9
+</code></pre>
+<h3 id="macro-lens">Macro lens</h3>
+<p class="ex-meta"><span class="term-zh">微距镜头</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Macro lens on a ticking watch mechanism, gears and escapement moving in extreme close-up, shallow focus glinting brass, 10 seconds, 16:9
+</code></pre>
+<h3 id="probe-lens">Probe lens</h3>
+<p class="ex-meta"><span class="term-zh">探针镜头</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Probe lens shot, snorkel camera weaving low through a breakfast still life, gliding between coffee cups, toast towers and dripping honey, macro detail, warm morning sunlight, 10 seconds, 16:9
+</code></pre>
+<h3 id="halation">Halation</h3>
+<p class="ex-meta"><span class="term-zh">光晕</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Halation film look, glowing red-orange halos blooming around candle flames on a dinner table, soft vintage 35mm bloom over every highlight, dreamy nostalgic warmth, gentle flicker, 10 seconds, 16:9
+</code></pre>
+<h3 id="parallax">Parallax</h3>
+<p class="ex-meta"><span class="term-zh">视差</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Parallax shot, camera tracks sideways as foreground fence posts, midground trees and distant mountains slide against each other at different speeds, layered depth, misty dawn light, 10 seconds, 16:9
+</code></pre>
+<h3 id="vignette">Vignette</h3>
+<p class="ex-meta"><span class="term-zh">暗角</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Heavy vignette, dark edges closing around a candlelit portrait of an old woman reading letters, only her illuminated face in the bright center, intimate chiaroscuro mood, 10 seconds, 16:9
+</code></pre>
+<h2 id="快门与时间shutter-amp-time">快门与时间（Shutter &amp; time)</h2>
+<div class="ds-table-wrap"><table class="ds-table">
+<thead>
+<tr>
+<th>术语</th>
+<th>中文说明</th>
+<th>官方 description</th>
+<th>官方 example prompt</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>Slow motion</code></td>
+<td>慢动作</td>
+<td>Action stretched below real time</td>
+<td><code>Slow motion hummingbird shaking rain off its feathers, droplets exploding outward in glistening arcs, soft gray light, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Speed ramp</code></td>
+<td>变速坡</td>
+<td>Speed shifts within a single shot</td>
+<td><code>Speed ramp as a boxer&#39;s punch connects, time slowing at impact then snapping back, sweat spraying under ring lights, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Timelapse</code></td>
+<td>延时</td>
+<td>Long spans compressed into seconds</td>
+<td><code>Timelapse of fog rolling over a mountain pass, clouds pouring like liquid between ridgelines, shifting dawn light, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Long exposure look</code></td>
+<td>长曝光观感</td>
+<td>Motion smears into glowing light trails</td>
+<td><code>Long exposure look, night cyclist weaving through city streets, headlights and taillights smearing into glowing light trails, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Bullet time</code></td>
+<td>子弹时间</td>
+<td>Frozen instant while the camera orbits through it</td>
+<td><code>Bullet time shot, a confetti explosion frozen mid-air around a leaping dancer while the camera orbits smoothly through suspended particles, studio strobes, impossible frozen instant, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Freeze frame</code></td>
+<td>定格</td>
+<td>Subject freezes while the camera keeps moving</td>
+<td><code>Freeze frame, a skateboarder halts mid-air completely frozen while the camera keeps dollying around his suspended body, dust hanging motionless, skatepark at golden hour, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Boomerang</code></td>
+<td>来回循环</td>
+<td>Short action plays forward then reverses on loop</td>
+<td><code>Boomerang loop, a champagne cork pops and foam bursts upward, then reverses back into the bottle, forward and backward endlessly repeating, celebratory sparkler light, playful rhythm, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Step printing</code></td>
+<td>跳帧印片</td>
+<td>Stuttering, smeared motion trails</td>
+<td><code>Step printing effect, a dancer in a neon-lit Hong Kong alley leaving ghostly stuttering motion trails, smeared frames dragging behind each gesture, dreamy Wong Kar-wai mood, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Fast motion</code></td>
+<td>快动作</td>
+<td>Undercranked, accelerated action</td>
+<td><code>Fast motion, undercranked footage of a grand railway station hall, commuters zipping across the marble floor in accelerated streams while one still traveler stands motionless, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Cinemagraph</code></td>
+<td>动态静帧</td>
+<td>A still frame with one small looping motion</td>
+<td><code>Cinemagraph, an entirely frozen diner scene, patrons and waitress motionless, while only the steam from a coffee cup rises and curls endlessly, subtle hypnotic stillness, 10 seconds, 16:9</code></td>
+</tr>
+</tbody></table></div>
+<h3 id="slow-motion">Slow motion</h3>
+<p class="ex-meta"><span class="term-zh">慢动作</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Slow motion hummingbird shaking rain off its feathers, droplets exploding outward in glistening arcs, soft gray light, 10 seconds, 16:9
+</code></pre>
+<h3 id="speed-ramp">Speed ramp</h3>
+<p class="ex-meta"><span class="term-zh">变速坡</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Speed ramp as a boxer&#39;s punch connects, time slowing at impact then snapping back, sweat spraying under ring lights, 10 seconds, 16:9
+</code></pre>
+<h3 id="timelapse">Timelapse</h3>
+<p class="ex-meta"><span class="term-zh">延时</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Timelapse of fog rolling over a mountain pass, clouds pouring like liquid between ridgelines, shifting dawn light, 10 seconds, 16:9
+</code></pre>
+<h3 id="long-exposure-look">Long exposure look</h3>
+<p class="ex-meta"><span class="term-zh">长曝光观感</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Long exposure look, night cyclist weaving through city streets, headlights and taillights smearing into glowing light trails, 10 seconds, 16:9
+</code></pre>
+<h3 id="bullet-time">Bullet time</h3>
+<p class="ex-meta"><span class="term-zh">子弹时间</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Bullet time shot, a confetti explosion frozen mid-air around a leaping dancer while the camera orbits smoothly through suspended particles, studio strobes, impossible frozen instant, 10 seconds, 16:9
+</code></pre>
+<h3 id="freeze-frame">Freeze frame</h3>
+<p class="ex-meta"><span class="term-zh">定格</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Freeze frame, a skateboarder halts mid-air completely frozen while the camera keeps dollying around his suspended body, dust hanging motionless, skatepark at golden hour, 10 seconds, 16:9
+</code></pre>
+<h3 id="boomerang">Boomerang</h3>
+<p class="ex-meta"><span class="term-zh">来回循环</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Boomerang loop, a champagne cork pops and foam bursts upward, then reverses back into the bottle, forward and backward endlessly repeating, celebratory sparkler light, playful rhythm, 10 seconds, 16:9
+</code></pre>
+<h3 id="step-printing">Step printing</h3>
+<p class="ex-meta"><span class="term-zh">跳帧印片</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Step printing effect, a dancer in a neon-lit Hong Kong alley leaving ghostly stuttering motion trails, smeared frames dragging behind each gesture, dreamy Wong Kar-wai mood, 10 seconds, 16:9
+</code></pre>
+<h3 id="fast-motion">Fast motion</h3>
+<p class="ex-meta"><span class="term-zh">快动作</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Fast motion, undercranked footage of a grand railway station hall, commuters zipping across the marble floor in accelerated streams while one still traveler stands motionless, 10 seconds, 16:9
+</code></pre>
+<h3 id="cinemagraph">Cinemagraph</h3>
+<p class="ex-meta"><span class="term-zh">动态静帧</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Cinemagraph, an entirely frozen diner scene, patrons and waitress motionless, while only the steam from a coffee cup rises and curls endlessly, subtle hypnotic stillness, 10 seconds, 16:9
+</code></pre>
+<h2 id="光线lighting">光线（Lighting)</h2>
+<div class="ds-table-wrap"><table class="ds-table">
+<thead>
+<tr>
+<th>术语</th>
+<th>中文说明</th>
+<th>官方 description</th>
+<th>官方 example prompt</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>Rim light</code></td>
+<td>轮廓光</td>
+<td>Backlight outlines the subject&#39;s edge</td>
+<td><code>Rim light outlines a boxer breathing heavily in a dark gym, sweat glowing along his shoulders, background falling black, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Chiaroscuro</code></td>
+<td>明暗对照</td>
+<td>Strong contrast of light and deep shadow</td>
+<td><code>Chiaroscuro lighting, a violinist playing under a single beam, deep black shadows carving the face and bow strokes, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Golden hour</code></td>
+<td>黄金时刻</td>
+<td>Warm, low-sun backlight</td>
+<td><code>Golden hour backlight over wheat fields, wind rippling the stalks in waves, warm sun flaring low on the horizon, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Neon practicals</code></td>
+<td>现场霓虹</td>
+<td>In-scene colored light sources</td>
+<td><code>Neon practicals wash a face in shifting pink and cyan light, signs flickering outside a rainy window at night, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Volumetric light</code></td>
+<td>体积光</td>
+<td>Visible beams and god rays through haze</td>
+<td><code>Volumetric light, god rays slicing through a dusty barn, motes drifting as a farmer walks through the glowing beams, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Hard light</code></td>
+<td>硬光</td>
+<td>Harsh, sharp-edged shadows and high contrast</td>
+<td><code>Hard light noir, harsh sunbeams slicing through venetian blinds casting razor-sharp shadow stripes across a detective&#39;s face and smoky office, high contrast, cigarette smoke drifting, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Haze</code></td>
+<td>雾霾散射</td>
+<td>Thick atmosphere reveals volumetric light shafts</td>
+<td><code>Atmospheric haze, dusty warehouse interior with thick volumetric light shafts cutting through fog from high windows, a lone figure walking through glowing cones, moody silence, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Spotlight</code></td>
+<td>聚光</td>
+<td>A single beam isolates the subject in darkness</td>
+<td><code>A single spotlight follows a lone singer across an empty dark stage, the harsh circular beam carving her silhouette from blackness, dust drifting through the light cone, dramatic theatrical solitude, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Light flash</code></td>
+<td>闪光</td>
+<td>Strobing flashbulb bursts freeze motion</td>
+<td><code>Rapid paparazzi light flash bursts strobe across a red carpet as an actress poses, each camera flash freezing her gestures in blinding white pulses, glamorous chaotic press-night energy, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Projections</code></td>
+<td>投影光</td>
+<td>Projected imagery plays across the subject</td>
+<td><code>Vintage film projections dance across a woman&#39;s calm face in a dark room, flickering movie scenes and subtitles wrapping over her skin and eyes, nostalgic cinematic intimacy, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Underwater light</code></td>
+<td>水下光</td>
+<td>Rippling caustics dance across surfaces</td>
+<td><code>Shimmering underwater light caustics ripple across the turquoise floor of a swimming pool as a swimmer glides through, sunbeams refracting into dancing web patterns, serene aquatic calm, 10 seconds, 16:9</code></td>
+</tr>
+</tbody></table></div>
+<h3 id="rim-light">Rim light</h3>
+<p class="ex-meta"><span class="term-zh">轮廓光</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Rim light outlines a boxer breathing heavily in a dark gym, sweat glowing along his shoulders, background falling black, 10 seconds, 16:9
+</code></pre>
+<h3 id="chiaroscuro">Chiaroscuro</h3>
+<p class="ex-meta"><span class="term-zh">明暗对照</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Chiaroscuro lighting, a violinist playing under a single beam, deep black shadows carving the face and bow strokes, 10 seconds, 16:9
+</code></pre>
+<h3 id="golden-hour">Golden hour</h3>
+<p class="ex-meta"><span class="term-zh">黄金时刻</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Golden hour backlight over wheat fields, wind rippling the stalks in waves, warm sun flaring low on the horizon, 10 seconds, 16:9
+</code></pre>
+<h3 id="neon-practicals">Neon practicals</h3>
+<p class="ex-meta"><span class="term-zh">现场霓虹</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Neon practicals wash a face in shifting pink and cyan light, signs flickering outside a rainy window at night, 10 seconds, 16:9
+</code></pre>
+<h3 id="volumetric-light">Volumetric light</h3>
+<p class="ex-meta"><span class="term-zh">体积光</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Volumetric light, god rays slicing through a dusty barn, motes drifting as a farmer walks through the glowing beams, 10 seconds, 16:9
+</code></pre>
+<h3 id="hard-light">Hard light</h3>
+<p class="ex-meta"><span class="term-zh">硬光</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Hard light noir, harsh sunbeams slicing through venetian blinds casting razor-sharp shadow stripes across a detective&#39;s face and smoky office, high contrast, cigarette smoke drifting, 10 seconds, 16:9
+</code></pre>
+<h3 id="haze">Haze</h3>
+<p class="ex-meta"><span class="term-zh">雾霾散射</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Atmospheric haze, dusty warehouse interior with thick volumetric light shafts cutting through fog from high windows, a lone figure walking through glowing cones, moody silence, 10 seconds, 16:9
+</code></pre>
+<h3 id="spotlight">Spotlight</h3>
+<p class="ex-meta"><span class="term-zh">聚光</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">A single spotlight follows a lone singer across an empty dark stage, the harsh circular beam carving her silhouette from blackness, dust drifting through the light cone, dramatic theatrical solitude, 10 seconds, 16:9
+</code></pre>
+<h3 id="light-flash">Light flash</h3>
+<p class="ex-meta"><span class="term-zh">闪光</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Rapid paparazzi light flash bursts strobe across a red carpet as an actress poses, each camera flash freezing her gestures in blinding white pulses, glamorous chaotic press-night energy, 10 seconds, 16:9
+</code></pre>
+<h3 id="projections">Projections</h3>
+<p class="ex-meta"><span class="term-zh">投影光</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Vintage film projections dance across a woman&#39;s calm face in a dark room, flickering movie scenes and subtitles wrapping over her skin and eyes, nostalgic cinematic intimacy, 10 seconds, 16:9
+</code></pre>
+<h3 id="underwater-light">Underwater light</h3>
+<p class="ex-meta"><span class="term-zh">水下光</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Shimmering underwater light caustics ripple across the turquoise floor of a swimming pool as a swimmer glides through, sunbeams refracting into dancing web patterns, serene aquatic calm, 10 seconds, 16:9
+</code></pre>
+<h2 id="转场transitions">转场（Transitions)</h2>
+<div class="ds-table-wrap"><table class="ds-table">
+<thead>
+<tr>
+<th>术语</th>
+<th>中文说明</th>
+<th>官方 description</th>
+<th>官方 example prompt</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>Match cut</code></td>
+<td>匹配剪辑</td>
+<td>Shape or motion carries across the cut</td>
+<td><code>Match cut from a spinning coin on a table to a spinning planet in space, seamless rotation carrying the transition, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Whip transition</code></td>
+<td>甩摇转场</td>
+<td>A whip pan hides the cut between scenes</td>
+<td><code>Whip transition, camera whips from a busy kitchen blurring into motion, landing smoothly in a candlelit dining room, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Foreground wipe</code></td>
+<td>前景擦除转场</td>
+<td>A passing object wipes to a new scene</td>
+<td><code>Foreground wipe as a passing bus fills the frame, revealing a completely new street scene once it clears, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Jump cut</code></td>
+<td>跳切</td>
+<td>Abrupt discontinuous cuts in the same framing</td>
+<td><code>A man delivers an anxious monologue to camera with abrupt jump cut edits, his position and gestures snapping discontinuously between phrases, same framing, restless confessional vlog rhythm, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Object portal</code></td>
+<td>物体门洞转场</td>
+<td>Camera dives into an object into a new scene</td>
+<td><code>The camera dives into a steaming coffee cup as an object portal, plunging through swirling brown liquid that dissolves into a golden autumn forest scene, seamless magical transition, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Pass-through</code></td>
+<td>穿过转场</td>
+<td>One continuous move threading through spaces</td>
+<td><code>A gliding pass-through shot threads the camera through a brass keyhole into a candlelit study, then out its window into rainy night streets, one continuous impossible move, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Quick cuts</code></td>
+<td>快切</td>
+<td>Rapid rhythmic montage of short shots</td>
+<td><code>Energetic quick cuts chop a morning breakfast routine into eight snappy shots, toast popping, coffee pouring, eggs cracking, jacket zipping, rhythmic percussive montage of everyday momentum, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Screen-in-screen</code></td>
+<td>画中画</td>
+<td>Recursive screen-within-screen loop</td>
+<td><code>An infinite screen-in-screen recursion shows a woman watching herself on a television that contains the same scene repeating inward endlessly, glowing screens tunneling into darkness, uncanny loop, 10 seconds, 16:9</code></td>
+</tr>
+</tbody></table></div>
+<h3 id="match-cut">Match cut</h3>
+<p class="ex-meta"><span class="term-zh">匹配剪辑</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Match cut from a spinning coin on a table to a spinning planet in space, seamless rotation carrying the transition, 10 seconds, 16:9
+</code></pre>
+<h3 id="whip-transition">Whip transition</h3>
+<p class="ex-meta"><span class="term-zh">甩摇转场</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Whip transition, camera whips from a busy kitchen blurring into motion, landing smoothly in a candlelit dining room, 10 seconds, 16:9
+</code></pre>
+<h3 id="foreground-wipe">Foreground wipe</h3>
+<p class="ex-meta"><span class="term-zh">前景擦除转场</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Foreground wipe as a passing bus fills the frame, revealing a completely new street scene once it clears, 10 seconds, 16:9
+</code></pre>
+<h3 id="jump-cut">Jump cut</h3>
+<p class="ex-meta"><span class="term-zh">跳切</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">A man delivers an anxious monologue to camera with abrupt jump cut edits, his position and gestures snapping discontinuously between phrases, same framing, restless confessional vlog rhythm, 10 seconds, 16:9
+</code></pre>
+<h3 id="object-portal">Object portal</h3>
+<p class="ex-meta"><span class="term-zh">物体门洞转场</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">The camera dives into a steaming coffee cup as an object portal, plunging through swirling brown liquid that dissolves into a golden autumn forest scene, seamless magical transition, 10 seconds, 16:9
+</code></pre>
+<h3 id="pass-through">Pass-through</h3>
+<p class="ex-meta"><span class="term-zh">穿过转场</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">A gliding pass-through shot threads the camera through a brass keyhole into a candlelit study, then out its window into rainy night streets, one continuous impossible move, 10 seconds, 16:9
+</code></pre>
+<h3 id="quick-cuts">Quick cuts</h3>
+<p class="ex-meta"><span class="term-zh">快切</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Energetic quick cuts chop a morning breakfast routine into eight snappy shots, toast popping, coffee pouring, eggs cracking, jacket zipping, rhythmic percussive montage of everyday momentum, 10 seconds, 16:9
+</code></pre>
+<h3 id="screen-in-screen">Screen-in-screen</h3>
+<p class="ex-meta"><span class="term-zh">画中画</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">An infinite screen-in-screen recursion shows a woman watching herself on a television that contains the same scene repeating inward endlessly, glowing screens tunneling into darkness, uncanny loop, 10 seconds, 16:9
+</code></pre>
+<h2 id="主观视角与特殊机位pov">主观视角与特殊机位（POV)</h2>
+<div class="ds-table-wrap"><table class="ds-table">
+<thead>
+<tr>
+<th>术语</th>
+<th>中文说明</th>
+<th>官方 description</th>
+<th>官方 example prompt</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>Drone FPV</code></td>
+<td>穿越机第一人称</td>
+<td>Fast, agile first-person drone flight</td>
+<td><code>Drone FPV dives off a waterfall into a misty gorge, skimming spray and rock walls at breathtaking speed, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Bodycam</code></td>
+<td>身体相机</td>
+<td>Chest-mounted POV bobbing with motion</td>
+<td><code>Bodycam POV jogging through a stadium tunnel toward blinding daylight, footsteps echoing, camera bobbing with each stride, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Dashcam</code></td>
+<td>行车记录仪</td>
+<td>Fixed in-car view of the road ahead</td>
+<td><code>Dashcam view of a moose crossing a snowy highway at dusk, wipers sweeping, brake lights reflecting on ice, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Mirror POV</code></td>
+<td>镜面主观</td>
+<td>Subject seen via a mirror reflection</td>
+<td><code>Mirror POV, a man shaving looks directly into the bathroom mirror, razor strokes through foam, steamy morning light, 10 seconds, 16:9</code></td>
+</tr>
+</tbody></table></div>
+<h3 id="drone-fpv">Drone FPV</h3>
+<p class="ex-meta"><span class="term-zh">穿越机第一人称</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Drone FPV dives off a waterfall into a misty gorge, skimming spray and rock walls at breathtaking speed, 10 seconds, 16:9
+</code></pre>
+<h3 id="bodycam">Bodycam</h3>
+<p class="ex-meta"><span class="term-zh">身体相机</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Bodycam POV jogging through a stadium tunnel toward blinding daylight, footsteps echoing, camera bobbing with each stride, 10 seconds, 16:9
+</code></pre>
+<h3 id="dashcam">Dashcam</h3>
+<p class="ex-meta"><span class="term-zh">行车记录仪</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Dashcam view of a moose crossing a snowy highway at dusk, wipers sweeping, brake lights reflecting on ice, 10 seconds, 16:9
+</code></pre>
+<h3 id="mirror-pov">Mirror POV</h3>
+<p class="ex-meta"><span class="term-zh">镜面主观</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Mirror POV, a man shaving looks directly into the bathroom mirror, razor strokes through foam, steamy morning light, 10 seconds, 16:9
+</code></pre>
+<h2 id="画幅与格式format">画幅与格式（Format)</h2>
+<div class="ds-table-wrap"><table class="ds-table">
+<thead>
+<tr>
+<th>术语</th>
+<th>中文说明</th>
+<th>官方 description</th>
+<th>官方 example prompt</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>Cinemascope (21:9)</code></td>
+<td>宽银幕 21:9</td>
+<td>Ultra-wide anamorphic frame</td>
+<td><code>Cinemascope 21:9 frame, two gunslingers face off at high noon in a desert town, heat haze and drifting dust, 10 seconds, 21:9</code></td>
+</tr>
+<tr>
+<td><code>Vertical (9:16)</code></td>
+<td>竖屏 9:16</td>
+<td>Tall frame for mobile-first video</td>
+<td><code>Vertical 9:16 frame, climber ascending a firetower ladder, camera tilting up the endless rungs toward open sky, 10 seconds, 9:16</code></td>
+</tr>
+<tr>
+<td><code>Vintage (4:3)</code></td>
+<td>复古 4:3</td>
+<td>Boxy retro camcorder framing</td>
+<td><code>Vintage 4:3 home video of a 90s birthday party, grainy camcorder look, kids cheering around flickering candles, 10 seconds, 4:3</code></td>
+</tr>
+<tr>
+<td><code>Split screen</code></td>
+<td>分屏</td>
+<td>Two shots side by side in one frame</td>
+<td><code>Split screen shows two callers in different cities, one rainy, one sunny, laughing on the phone simultaneously, 10 seconds, 16:9</code></td>
+</tr>
+</tbody></table></div>
+<h3 id="cinemascope-219">Cinemascope (21:9)</h3>
+<p class="ex-meta"><span class="term-zh">宽银幕 21:9</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Cinemascope 21:9 frame, two gunslingers face off at high noon in a desert town, heat haze and drifting dust, 10 seconds, 21:9
+</code></pre>
+<h3 id="vertical-916">Vertical (9:16)</h3>
+<p class="ex-meta"><span class="term-zh">竖屏 9:16</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Vertical 9:16 frame, climber ascending a firetower ladder, camera tilting up the endless rungs toward open sky, 10 seconds, 9:16
+</code></pre>
+<h3 id="vintage-43">Vintage (4:3)</h3>
+<p class="ex-meta"><span class="term-zh">复古 4:3</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Vintage 4:3 home video of a 90s birthday party, grainy camcorder look, kids cheering around flickering candles, 10 seconds, 4:3
+</code></pre>
+<h3 id="split-screen">Split screen</h3>
+<p class="ex-meta"><span class="term-zh">分屏</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Split screen shows two callers in different cities, one rainy, one sunny, laughing on the phone simultaneously, 10 seconds, 16:9
+</code></pre>
+<h2 id="特效与变形vfx">特效与变形（VFX)</h2>
+<div class="ds-table-wrap"><table class="ds-table">
+<thead>
+<tr>
+<th>术语</th>
+<th>中文说明</th>
+<th>官方 description</th>
+<th>官方 example prompt</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>Double exposure</code></td>
+<td>双重曝光</td>
+<td>Two images blended into one frame</td>
+<td><code>Elegant double exposure blends a pensive man&#39;s profile portrait with a misty pine forest, treetops and fog drifting inside his silhouette against white sky, melancholic poetic layering, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Datamosh</code></td>
+<td>数据马赛克</td>
+<td>Glitched, smearing pixel corruption</td>
+<td><code>A dancer hits the beat drop and the frame erupts in datamosh corruption, pixels smearing and melting into glitched motion trails, colors bleeding chaotically, raw digital energy, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Kaleidoscope</code></td>
+<td>万花筒</td>
+<td>Mirrored, symmetrical repeating patterns</td>
+<td><code>Overhead kaleidoscope symmetry multiplies a troupe of dancers into shifting mirrored mandala patterns, costumes blooming like folding flowers with each choreographed move, hypnotic Busby Berkeley geometry, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Morphing</code></td>
+<td>变形过渡</td>
+<td>One subject fluidly reshapes into another</td>
+<td><code>Seamless morphing transforms one face through four generations, child to teenager to mother to grandmother, features fluidly reshaping under soft studio light, tender meditation on time, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Slit scan</code></td>
+<td>狭缝扫描</td>
+<td>Motion smeared into flowing time ribbons</td>
+<td><code>A galloping horse stretches into slit-scan time distortion, its body smeared into flowing temporal ribbons across the frame, mane trailing warped streaks over prairie light, surreal velocity, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>X-ray</code></td>
+<td>X 光</td>
+<td>See-through view of inner structure</td>
+<td><code>An x-ray view reveals the inner skeleton of a mechanical hand flexing its fingers, gears and pistons glowing blue-white against black, translucent layers shifting, clinical futuristic precision, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Levitation</code></td>
+<td>悬浮</td>
+<td>Objects or subjects float weightlessly</td>
+<td><code>Quiet levitation lifts books, teacups and a floor lamp drifting slowly through a sunlit living room, objects rotating weightlessly around an unbothered reading woman, dreamlike domestic magic, 10 seconds, 16:9</code></td>
+</tr>
+</tbody></table></div>
+<h3 id="double-exposure">Double exposure</h3>
+<p class="ex-meta"><span class="term-zh">双重曝光</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Elegant double exposure blends a pensive man&#39;s profile portrait with a misty pine forest, treetops and fog drifting inside his silhouette against white sky, melancholic poetic layering, 10 seconds, 16:9
+</code></pre>
+<h3 id="datamosh">Datamosh</h3>
+<p class="ex-meta"><span class="term-zh">数据马赛克</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">A dancer hits the beat drop and the frame erupts in datamosh corruption, pixels smearing and melting into glitched motion trails, colors bleeding chaotically, raw digital energy, 10 seconds, 16:9
+</code></pre>
+<h3 id="kaleidoscope">Kaleidoscope</h3>
+<p class="ex-meta"><span class="term-zh">万花筒</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Overhead kaleidoscope symmetry multiplies a troupe of dancers into shifting mirrored mandala patterns, costumes blooming like folding flowers with each choreographed move, hypnotic Busby Berkeley geometry, 10 seconds, 16:9
+</code></pre>
+<h3 id="morphing">Morphing</h3>
+<p class="ex-meta"><span class="term-zh">变形过渡</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Seamless morphing transforms one face through four generations, child to teenager to mother to grandmother, features fluidly reshaping under soft studio light, tender meditation on time, 10 seconds, 16:9
+</code></pre>
+<h3 id="slit-scan">Slit scan</h3>
+<p class="ex-meta"><span class="term-zh">狭缝扫描</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">A galloping horse stretches into slit-scan time distortion, its body smeared into flowing temporal ribbons across the frame, mane trailing warped streaks over prairie light, surreal velocity, 10 seconds, 16:9
+</code></pre>
+<h3 id="x-ray">X-ray</h3>
+<p class="ex-meta"><span class="term-zh">X 光</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">An x-ray view reveals the inner skeleton of a mechanical hand flexing its fingers, gears and pistons glowing blue-white against black, translucent layers shifting, clinical futuristic precision, 10 seconds, 16:9
+</code></pre>
+<h3 id="levitation">Levitation</h3>
+<p class="ex-meta"><span class="term-zh">悬浮</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Quiet levitation lifts books, teacups and a floor lamp drifting slowly through a sunlit living room, objects rotating weightlessly around an unbothered reading woman, dreamlike domestic magic, 10 seconds, 16:9
+</code></pre>
+<h2 id="美术指导art-direction">美术指导（Art direction)</h2>
+<div class="ds-table-wrap"><table class="ds-table">
+<thead>
+<tr>
+<th>术语</th>
+<th>中文说明</th>
+<th>官方 description</th>
+<th>官方 example prompt</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>Dreamcore</code></td>
+<td>梦核</td>
+<td>Liminal, nostalgic, quietly unsettling spaces</td>
+<td><code>Dreamcore emptiness fills endless pastel hallways under a blown-out overexposed sky, doors leading nowhere, a lone swing swaying without wind, liminal dream logic, quietly unsettling nostalgia, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Dystopian</code></td>
+<td>反乌托邦</td>
+<td>Bleak, oppressive futuristic world</td>
+<td><code>A dystopian megacity glistens under relentless rain, surveillance drones sweeping searchlights across neon-soaked crowds and towering propaganda screens, steam rising from grates, oppressive cyberpunk gloom, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Magical realism</code></td>
+<td>魔幻现实</td>
+<td>Gentle magic within an ordinary scene</td>
+<td><code>Gentle magical realism fills an ordinary corner café where paper lanterns float freely above chatting customers, drifting between tables as waiters ignore them, warm everyday enchantment, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Maximalism</code></td>
+<td>极繁</td>
+<td>Dense, ornate, overloaded set design</td>
+<td><code>Opulent maximalism crowds a baroque salon with gilded mirrors, stacked oil paintings, velvet drapes, marble busts and cascading flowers, camera slowly gliding through ornate sensory overload, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Diorama</code></td>
+<td>立体模型景</td>
+<td>Tilt-shift miniature model world</td>
+<td><code>A charming diorama miniature small town awakens, tilt-shift model railways, tiny felt cars and handcrafted houses under warm lamp lighting, camera craning over the scale-model streets, whimsical, 10 seconds, 16:9</code></td>
+</tr>
+</tbody></table></div>
+<h3 id="dreamcore">Dreamcore</h3>
+<p class="ex-meta"><span class="term-zh">梦核</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Dreamcore emptiness fills endless pastel hallways under a blown-out overexposed sky, doors leading nowhere, a lone swing swaying without wind, liminal dream logic, quietly unsettling nostalgia, 10 seconds, 16:9
+</code></pre>
+<h3 id="dystopian">Dystopian</h3>
+<p class="ex-meta"><span class="term-zh">反乌托邦</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">A dystopian megacity glistens under relentless rain, surveillance drones sweeping searchlights across neon-soaked crowds and towering propaganda screens, steam rising from grates, oppressive cyberpunk gloom, 10 seconds, 16:9
+</code></pre>
+<h3 id="magical-realism">Magical realism</h3>
+<p class="ex-meta"><span class="term-zh">魔幻现实</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Gentle magical realism fills an ordinary corner café where paper lanterns float freely above chatting customers, drifting between tables as waiters ignore them, warm everyday enchantment, 10 seconds, 16:9
+</code></pre>
+<h3 id="maximalism">Maximalism</h3>
+<p class="ex-meta"><span class="term-zh">极繁</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Opulent maximalism crowds a baroque salon with gilded mirrors, stacked oil paintings, velvet drapes, marble busts and cascading flowers, camera slowly gliding through ornate sensory overload, 10 seconds, 16:9
+</code></pre>
+<h3 id="diorama">Diorama</h3>
+<p class="ex-meta"><span class="term-zh">立体模型景</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">A charming diorama miniature small town awakens, tilt-shift model railways, tiny felt cars and handcrafted houses under warm lamp lighting, camera craning over the scale-model streets, whimsical, 10 seconds, 16:9
+</code></pre>
+<h2 id="动画与媒介animation">动画与媒介（Animation)</h2>
+<div class="ds-table-wrap"><table class="ds-table">
+<thead>
+<tr>
+<th>术语</th>
+<th>中文说明</th>
+<th>官方 description</th>
+<th>官方 example prompt</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>Stop motion</code></td>
+<td>定格动画</td>
+<td>Handmade frame-by-frame claymation</td>
+<td><code>Playful stop motion claymation shows a breakfast table setting itself, plasticine toast hopping onto plates, clay butter spreading in jerky handmade frames, fingerprint textures visible, cozy charm, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Pixel art</code></td>
+<td>像素艺术</td>
+<td>Retro low-res 16-bit aesthetic</td>
+<td><code>Retro pixel art depicts a 16-bit city at sunset, dithered orange gradients behind blocky skyscrapers, tiny sprite pedestrians crossing streets, animated neon signs flickering, nostalgic SNES atmosphere, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Zoetrope</code></td>
+<td>西洋镜</td>
+<td>Pre-cinema spinning-drum animation</td>
+<td><code>A spinning zoetrope drum flickers galloping horse sprites to life through its slits, warm workshop lamplight strobing the painted figures into fluid motion, Victorian pre-cinema wonder, 10 seconds, 16:9</code></td>
+</tr>
+<tr>
+<td><code>Kinetic typography</code></td>
+<td>动态字体</td>
+<td>Animated text as the main visual</td>
+<td><code>Kinetic typography builds a city skyline from animated words, letters stacking into skyscrapers, sentences flowing as traffic below, bold type rising against dusk gradient, energetic motion-graphic design, 10 seconds, 16:9</code></td>
+</tr>
+</tbody></table></div>
+<h3 id="stop-motion">Stop motion</h3>
+<p class="ex-meta"><span class="term-zh">定格动画</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Playful stop motion claymation shows a breakfast table setting itself, plasticine toast hopping onto plates, clay butter spreading in jerky handmade frames, fingerprint textures visible, cozy charm, 10 seconds, 16:9
+</code></pre>
+<h3 id="pixel-art">Pixel art</h3>
+<p class="ex-meta"><span class="term-zh">像素艺术</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Retro pixel art depicts a 16-bit city at sunset, dithered orange gradients behind blocky skyscrapers, tiny sprite pedestrians crossing streets, animated neon signs flickering, nostalgic SNES atmosphere, 10 seconds, 16:9
+</code></pre>
+<h3 id="zoetrope">Zoetrope</h3>
+<p class="ex-meta"><span class="term-zh">西洋镜</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">A spinning zoetrope drum flickers galloping horse sprites to life through its slits, warm workshop lamplight strobing the painted figures into fluid motion, Victorian pre-cinema wonder, 10 seconds, 16:9
+</code></pre>
+<h3 id="kinetic-typography">Kinetic typography</h3>
+<p class="ex-meta"><span class="term-zh">动态字体</span> · 来源：<a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">prompting_video_camera_terms</a> · 模型：<span class="badge">FLUX 3</span></p>
+
+<pre><code class="language-text">Kinetic typography builds a city skyline from animated words, letters stacking into skyscrapers, sentences flowing as traffic below, bold type rising against dusk gradient, energetic motion-graphic design, 10 seconds, 16:9
+</code></pre>
+</article>
+  </main>
+  <footer class="ds-footer">
+    <div class="ds-wrap ds-footer-inner">
+      <p>材料来自公开论文、官方博客和公开热帖。看板每 30 分钟检查一次；时间线每晚更新。</p>
+      <p><a href="../../about/">关于这个站</a></p>
+    </div>
+  </footer>
+  <div class="lightbox" id="lightbox" hidden>
+    <button type="button" aria-label="关闭">×</button>
+    <img alt="">
+  </div>
+  <script src="../../theme.js"></script>
+</body>
+</html>

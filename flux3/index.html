@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="ds-page ft-shell no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FLUX 3 提示词速查表 · 前沿趋势</title>
+  <meta name="description" content="官方提示词规则、参数、上限和常见错误。">
+  <link rel="stylesheet" href="https://codyshen0000.github.io/assets/ds.css">
+  <link rel="stylesheet" href="../assets/skin-raw.css">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" data-ds-injected="favicon"><link rel="icon" href="../assets/favicon.png" type="image/png" sizes="32x32" data-ds-injected="favicon"><link rel="icon" href="../favicon.ico" sizes="any" data-ds-injected="favicon">
+  <style>.chart-fig{margin:24px 0;padding:20px 20px 14px;background:var(--ds-bg-elevated,#fff);border:1px solid var(--ds-hairline,#e5e5ea);border-radius:var(--ds-radius-md,14px);max-width:860px}
+.chart-fig h3{margin:0 0 4px;font-size:17px;line-height:1.35;color:var(--ds-text,#1d1d1f)}
+.chart-fig .chart-sub{margin:0 0 10px;font-size:13px;color:var(--ds-text-secondary,#6e6e73)}
+.cb{display:grid;gap:8px}
+.cb-row{display:grid;grid-template-columns:minmax(0,38%) 1fr auto;align-items:center;gap:10px;font-size:13px;color:var(--ds-text,#1d1d1f)}
+.cb-lbl{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cb-track{height:14px;border-radius:7px;background:var(--ds-surface-3,#f2f2f7);overflow:hidden}
+.cb-bar{display:block;height:100%;min-width:3px;border-radius:7px;background:var(--ds-accent,#0058b0)}
+.cb-bar.b2{background:#34c759}.cb-bar.b3{background:#ff9f0a}.cb-bar.b4{background:#8e8e93;min-width:0}
+.cb-val{font-weight:600;font-variant-numeric:tabular-nums;min-width:3.5em;text-align:right}
+@media (max-width:734px){.chart-fig{padding:16px 14px 12px}.cb-row{grid-template-columns:1fr auto;gap:2px 8px}.cb-lbl{grid-column:1/-1;white-space:normal}.cb-track{grid-column:1}}
+.chart-fig figcaption{margin-top:8px;font-size:12px;color:var(--ds-text-secondary,var(--ft-ink,#4f5b61))}
+.chart-fig figcaption a{color:inherit;text-decoration:underline}
+.chart-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.chart-grid .chart-fig{margin:0}</style>
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("ft:theme");
+        if (!t) {
+          var old = localStorage.getItem("theme");
+          if (old === "light" || old === "dark" || old === "system") {
+            t = old;
+            localStorage.setItem("ft:theme", old);
+          }
+        }
+        if (t !== "light" && t !== "dark" && t !== "system") t = "system";
+        var resolved = t === "system" ? (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") : t;
+        document.documentElement.dataset.theme = resolved;
+        document.documentElement.setAttribute("data-ft-theme-pref", t);
+        document.documentElement.classList.add("js");
+        document.documentElement.classList.remove("no-js");
+      } catch (e) {
+        document.documentElement.classList.add("js");
+        document.documentElement.classList.remove("no-js");
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a class="ds-skip" href="#main">跳到正文</a>
+  <style data-ds-injected="nav-css">.paper-card{margin:0 0 28px;padding:20px;background:var(--ds-bg-elevated,#fff);border:1px solid var(--ds-hairline,#e5e5ea);border-radius:var(--ds-radius-md,14px);scroll-margin-top:80px}
+.paper-card h3{margin:0 0 6px;font-size:18px;line-height:1.35}.paper-card .paper-id{font-size:12px;color:var(--ds-text-tertiary,#8e8e93)}
+.paper-card .paper-sum{margin:8px 0 12px;font-size:15px;line-height:1.6}
+.paper-card figure{margin:0}.paper-card img{display:block;width:100%;height:auto;border-radius:8px;background:#fff;cursor:zoom-in}
+.paper-card figcaption{margin-top:6px;font-size:12px;color:var(--ds-text-tertiary,#8e8e93);line-height:1.5}
+.paper-card figcaption a{color:inherit;text-decoration:underline}
+.paper-nofig{font-size:13px;color:var(--ds-text-secondary,#6e6e73)}
+a.paper-explain{margin-left:4px;font-size:.78em;padding:1px 6px;border-radius:999px;background:var(--ds-surface-3,#e8e8ed);color:#0058b0!important;text-decoration:none;white-space:nowrap}
+html[data-theme="dark"] a.paper-explain{color:#7eb6ff!important;background:rgba(126,182,255,.14)}</style>
+  <aside class="ft-sidebar" id="nav" data-ds-injected="nav">
+    <a class="ft-brand" href="../live/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12 20 4l-5 16-3.5-6.5Z"/></svg><span>前沿趋势</span></a>
+    <nav class="ft-side-links" aria-label="站点导航"><a href="../live/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.6"/><rect x="13" y="4" width="7" height="7" rx="1.6"/><rect x="4" y="13" width="7" height="7" rx="1.6"/><path d="M13 16h7M13 20h4"/></svg><span>精选</span></a><a href="../hot/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s4 4.4 4 8.2A4 4 0 1 1 8 11.1C8 7.3 12 3 12 3Z"/><path d="M10 18c0 1.2.9 2 2 2s2-.8 2-2"/></svg><span>热点</span></a><a href="../daily/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5h11a2 2 0 0 1 2 2v13H7a2 2 0 0 1-2-2V5Z"/><path d="M18 7h1.5A1.5 1.5 0 0 1 21 8.5V18a3 3 0 0 1-3 3"/><path d="M8 10h7M8 14h7"/></svg><span>日报</span></a><span class="active" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="1.35"/><circle cx="17" cy="7" r="1.35"/><circle cx="7" cy="17" r="1.35"/><circle cx="17" cy="17" r="1.35"/></svg><span>更多</span></span></nav>
+    
+    <div class="ft-side-tools">
+      <button type="button" class="ft-theme-toggle" aria-label="切换配色">☾</button>
+    </div>
+  </aside>
+  <header class="ft-topbar" data-ds-injected="topbar">
+    <a class="ft-brand" href="../live/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12 20 4l-5 16-3.5-6.5Z"/></svg><span>前沿趋势</span></a>
+    <button type="button" class="ft-theme-toggle" aria-label="切换配色">☾</button>
+  </header>
+  <nav class="ft-tabbar" data-ds-injected="tabbar" aria-label="底部导航"><a href="../live/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.6"/><rect x="13" y="4" width="7" height="7" rx="1.6"/><rect x="4" y="13" width="7" height="7" rx="1.6"/><path d="M13 16h7M13 20h4"/></svg><span>精选</span></a><a href="../hot/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s4 4.4 4 8.2A4 4 0 1 1 8 11.1C8 7.3 12 3 12 3Z"/><path d="M10 18c0 1.2.9 2 2 2s2-.8 2-2"/></svg><span>热点</span></a><a href="../daily/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5h11a2 2 0 0 1 2 2v13H7a2 2 0 0 1-2-2V5Z"/><path d="M18 7h1.5A1.5 1.5 0 0 1 21 8.5V18a3 3 0 0 1-3 3"/><path d="M8 10h7M8 14h7"/></svg><span>日报</span></a><span class="active" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="7" cy="7" r="1.35"/><circle cx="17" cy="7" r="1.35"/><circle cx="7" cy="17" r="1.35"/><circle cx="17" cy="17" r="1.35"/></svg><span>更多</span></span></nav>
+  <main id="main" class="ds-wrap ds-section trend-has-tabs">
+    <nav class="trend-crumb" aria-label="当前位置"><span>更多</span><span>FLUX 3</span></nav><nav class="trend-tabs" aria-label="FLUX 3"><span class="active" aria-current="page">速查表</span><a href="../flux3/cases/">官方案例</a><a href="../flux3/examples/">示例库</a><a href="../flux3/camera-terms/">相机术语</a></nav>
+    <figure class="chart-fig"><h3>BFL 官方 80 个 FLUX 3 案例里，文生图占 43 个</h3><p class="chart-sub">按案例类型分</p>
+<div class="cb" role="img" aria-label="BFL 官方 80 个 FLUX 3 案例里，文生图占 43 个"><div class="cb-row" title="文生图：43 个"><span class="cb-lbl">文生图</span><span class="cb-track"><span class="cb-bar " style="width:100.0%"></span></span><span class="cb-val">43 个</span></div><div class="cb-row" title="版式/框选布局：21 个"><span class="cb-lbl">版式/框选布局</span><span class="cb-track"><span class="cb-bar " style="width:48.8%"></span></span><span class="cb-val">21 个</span></div><div class="cb-row" title="编辑：13 个"><span class="cb-lbl">编辑</span><span class="cb-track"><span class="cb-bar " style="width:30.2%"></span></span><span class="cb-val">13 个</span></div><div class="cb-row" title="多参考图：3 个"><span class="cb-lbl">多参考图</span><span class="cb-track"><span class="cb-bar " style="width:7.0%"></span></span><span class="cb-val">3 个</span></div></div>
+<figcaption>数据：<a href="https://docs.bfl.ml/flux_3/flux3_image_overview">BFL 官方文档</a> 抓取的案例清单（见<a href="../flux3/cases/">官方案例</a>页），构建时自动统计。</figcaption></figure><article class="ds-prose"><h1 id="flux-3-提示词速查表">FLUX 3 提示词速查表</h1>
+<p>整理自 Black Forest Labs 官方文档。检索日期：<strong>2026-10-08</strong>。说明用中文；<strong>官方 prompt 保持英文原文</strong>。完整长 prompt 在 <a href="./examples/">官方示例库</a>，本页若缩短会标 <strong>…</strong> 并给出链接。未在文档出现的参数、上限或例子一律不写；自拟内容会标「示例（非官方）」。</p>
+<p class="sister-nav">相关页：<a href="./examples/">官方示例库</a> · <a href="./cases/">官方案例</a> · <a href="./camera-terms/">相机术语表</a></p>
+
+<nav class="page-toc" aria-label="本页目录">
+<p>本页目录</p>
+
+<ul>
+<li><a href="#%E6%96%87%E6%A1%A3%E8%87%AA%E7%9B%B8%E7%9F%9B%E7%9B%BE%E5%A4%84">文档自相矛盾处</a></li>
+<li><a href="#1-%E4%B8%80%E9%A1%B5%E6%80%BB%E8%A7%88">一页总览</a></li>
+<li><a href="#2-%E6%96%87%E7%94%9F%E5%9B%BE%E8%A7%84%E5%88%99">文生图规则</a></li>
+<li><a href="#3-%E7%BC%96%E8%BE%91">编辑</a></li>
+<li><a href="#4-%E5%B8%83%E5%B1%80%E4%B8%8E-bbox">布局与 bbox</a></li>
+<li><a href="#5-image-api">Image API</a></li>
+<li><a href="#6-%E8%A7%86%E9%A2%91%E6%8F%90%E7%A4%BA%E8%AF%8D">视频提示词</a></li>
+<li><a href="#7-video-api">Video API</a></li>
+<li><a href="#8-cookbook">Cookbook</a></li>
+<li><a href="#9-%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E4%B8%8E%E8%B0%83%E5%8F%82">常见错误与调参</a></li>
+<li><a href="#10-%E6%9D%A5%E6%BA%90">来源</a></li>
+</ul>
+</nav>
+
+<h2 id="文档自相矛盾处">文档自相矛盾处</h2>
+<div class="callout">
+
+<p><strong>官方文档自身不一致（照原文并列，不自行裁决）。</strong></p>
+<ol>
+<li><p><strong><code>aspect_ratio: &quot;auto&quot;</code>（图像）</strong>  </p>
+<ul>
+<li><a href="https://docs.bfl.ml/api-reference/utility/generate-an-image-with-flux-3">Image API</a>：prompt 里点名的比例优先，否则跟第一张参考图；没有参考图时由 prompt 决定，再否则 <code>1:1</code>。  </li>
+<li><a href="https://docs.bfl.ml/guides/prompting_unified_technical">Technical Parameters</a> / Image 概览表：无参考图时为 <code>1:1</code>，有参考图则跟第一张。</li>
+</ul>
+</li>
+<li><p><strong>图生视频 duration</strong>  </p>
+<ul>
+<li><a href="https://docs.bfl.ml/api-reference/utility/generate-a-video-with-flux-3">Video API</a>：<code>keyframes</code> 用 <code>[seconds, image]</code> 且 <code>duration: &quot;auto&quot;</code> 时，片子跑到最后一对的秒数并向上取整（最长 20s）。  </li>
+<li><a href="https://docs.bfl.ml/guides/prompting_video_image_to_video">图生视频指南</a>：带时间戳或 3 帧以上要<strong>显式</strong>写 <code>duration</code>。</li>
+</ul>
+</li>
+<li><p><strong>Cookbook 请求形 vs 主 Video API</strong>  </p>
+<ul>
+<li>Cookbook 客户端打 <code>flux-3-preview-high</code>，分辨率写 <code>480p</code> / <code>720p</code>，关键帧是 <code>{image_url, frame_index}</code>，另有 <code>reference_images</code> / <code>reference_video</code>。Cookbook 的 <code>aspect_ratio</code> 表<strong>没有</strong> <code>2:1</code>。  </li>
+<li>主 API <code>POST /v1/flux-3-video</code> 用 <code>mode</code>：<code>t2v</code> / <code>i2v</code> / <code>v2v</code> / <code>draft_enhance</code>；分辨率 <code>hd</code> / <code>fhd</code> / <code>qhd</code> / <code>uhd</code>（含 <code>2:1</code>）；<code>i2v</code> 用 URL/base64 或 <code>[seconds, image]</code>，<code>v2v</code> 用 <code>start_video</code>。</li>
+</ul>
+</li>
+</ol>
+</div>
+
+<h2 id="1-一页总览">1. 一页总览</h2>
+<p>来源：<a href="https://docs.bfl.ml/guides/prompting_summary">FLUX Prompting Guide</a>、<a href="https://docs.bfl.ml/guides/prompting_unified_basics">Prompting Basics</a>、<a href="https://docs.bfl.ml/guides/prompting_unified_technical">Technical Parameters</a>、<a href="https://docs.bfl.ml/guides/prompting_unified_reference">Prompt Reference</a>。</p>
+<ol>
+<li><strong>用自然语言写完成图</strong>：主体、场景、风格、光线、构图。短句也能生成；只把要锁死的细节写进去。</li>
+<li><strong>词序有用</strong>：媒介/风格 → 主体与位置 → 光线、颜色、背景。最重要的放最前。不要堆 <code>masterpiece</code>、<code>beautiful</code>、<code>iconic</code>。</li>
+<li><strong>没有负向字段</strong>：FLUX 3 Image 没有 <code>negative_prompt</code>、<code>guidance</code>、<code>seed</code>、<code>prompt_upsampling</code>。未知字段返回 <code>422</code>。负向说法改成正向描述。</li>
+<li><strong>参考图用位次</strong>：<code>images</code> 1–10 张，每张至少 256×256、至多 16 MP。提示词写 <code>image 1</code> / <code>image 2</code>。没有单独的 <code>mode</code> 字段。</li>
+<li><strong>要印出的字加引号</strong>：写出位置和字体；<code>\n</code> 表示换行。多行海报给每块字单独 bbox。</li>
+<li><strong>精确颜色用 hex，并绑到物体</strong>：如 <code>change the color of only one bird in the middle to #e01075</code>。</li>
+<li><strong>布局 = caption + JSON 元素表</strong>：caption 用 <code>&lt;id&gt;</code>，坐标 <code>[top, left, bottom, right]</code>，整数 0–1000。整段放进 <code>prompt</code>。</li>
+<li><strong>编辑写成指令</strong>：点名改什么、改成什么、什么保持不变。</li>
+<li><strong>视频当导演</strong>：写动作、运镜、节奏、声音。多镜头用 <code>HARD CUT</code>。</li>
+<li><strong>先低分辨率试词</strong>：文生图 <code>768sq</code> 最快；没有 <code>seed</code>，同一 prompt 两次可以不同。一次只改一个要点。</li>
+</ol>
+<h2 id="2-文生图规则">2. 文生图规则</h2>
+<h3 id="结构长度展开">结构、长度、展开</h3>
+<p>文档起步模板（不是死公式）：</p>
+<pre><code class="language-text">[Subject], [location], [style], [camera settings], [lighting], [colors], [effect], [additional elements]
+</code></pre>
+<div class="ds-table-wrap"><table class="ds-table">
+<thead>
+<tr>
+<th>组件</th>
+<th>控制什么</th>
+<th>官方例子</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Image type</td>
+<td>类别/取景</td>
+<td><code>portrait</code>, <code>landscape</code>, <code>birds-eye</code>, <code>macro</code>, <code>abstract</code></td>
+</tr>
+<tr>
+<td>Subject</td>
+<td>主对象</td>
+<td><code>a young woman with curly red hair</code></td>
+</tr>
+<tr>
+<td>Location</td>
+<td>环境</td>
+<td><code>in a futuristic space station</code></td>
+</tr>
+<tr>
+<td>Style</td>
+<td>视觉方向</td>
+<td><code>editorial photography</code>, <code>anime illustration</code></td>
+</tr>
+<tr>
+<td>Camera settings</td>
+<td>镜头与景深</td>
+<td><code>85mm lens, shallow depth of field</code></td>
+</tr>
+<tr>
+<td>Lighting</td>
+<td>怎么打光</td>
+<td><code>soft window light</code>, <code>golden hour sunlight</code></td>
+</tr>
+<tr>
+<td>Colors</td>
+<td>主色</td>
+<td><code>muted earth tones</code>, <code>deep green and cream</code></td>
+</tr>
+<tr>
+<td>Effect</td>
+<td>额外处理</td>
+<td><code>motion blur</code>, <code>film grain</code>, <code>soft bloom</code></td>
+</tr>
+<tr>
+<td>Additional elements</td>
+<td>陪体</td>
+<td><code>wind-blown fabric, falling leaves</code></td>
+</tr>
+</tbody></table></div>
+<p><strong>FLUX 3 会先展开短 prompt 再生成</strong>，展开结果在 <code>result.prompt</code>。短句只写要锁死的位置、外观、光线或文字。</p>
+<div class="ds-table-wrap"><table class="ds-table">
+<thead>
+<tr>
+<th>长度</th>
+<th>文档说法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>短</td>
+<td>主体 + 场景，适合试方向</td>
+</tr>
+<tr>
+<td>中</td>
+<td>再加风格、光线、一两处关键细节</td>
+</tr>
+<tr>
+<td>长</td>
+<td>写得见的东西：机位、质感、文字、颜色；结构比字数重要</td>
+</tr>
+</tbody></table></div>
+<p>只改地点是最快的变体；主体动作、情绪、气氛写清楚。<strong>一两个强效果够了</strong>；泛泛的 realism 词写一个就够，不要堆 <code>highly detailed</code> / <code>ultrarealistic</code>。</p>
+<p>海滩短到长的官方扩写、芭蕾 / bison 长 caption、以及用字面 <code>\n</code> 的准时海报，全文在 <a href="./examples/#prompting-basics">示例库 · Prompting Basics</a>。</p>
+<p>短例：<code>Three ballerinas dancing Swan Lake, seen from the wings past the dark silhouettes of people watching.</code><br>bison 短线索：<code>A wide-angle photograph of a lone American bison walking through a misty geothermal landscape.</code> …</p>
+<p>换行海报（官方）：caption 里写 <code>&quot;ON TIME.\nEVERY TIME.&quot;</code> 这类带 <code>\n</code> 的字符串，模型按换行排字。</p>
+<h3 id="五种艺术形式与调色">五种艺术形式与调色</h3>
+<p>Building 页给出的 art-form 方向（全文见示例库）：</p>
+<div class="ds-table-wrap"><table class="ds-table">
+<thead>
+<tr>
+<th>方向</th>
+<th>官方线索</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>沙堡摄影</td>
+<td><code>A child playing on a sunny beach, building a sandcastle, action photography, high shutter speed, soft warm light</code></td>
+</tr>
+<tr>
+<td>印象派机器人</td>
+<td>impressionist + robot</td>
+</tr>
+<tr>
+<td>儿童画恐龙</td>
+<td>childlike dinosaurs</td>
+</tr>
+<tr>
+<td>lo-fi 便利店</td>
+<td>lo-fi convenience store</td>
+</tr>
+<tr>
+<td>燃烧建筑胶片静帧</td>
+<td>burning buildings film still</td>
+</tr>
+</tbody></table></div>
+<p>色板：写方案，不要只写一个色名。改地点通常比改主体更快得到新图。</p>
+<h3 id="风格环境光文字">风格、环境光、文字</h3>
+<p>来源：<a href="https://docs.bfl.ml/guides/prompting_unified_style">Style, Aesthetics &amp; Text</a>。</p>
+<p>环境光品质（窗口 / 金色时刻 / 蓝色时刻 / 顶光）：<code>window light</code>、<code>golden hour</code>、<code>blue hour</code>、<code>overhead</code>。</p>
+<p>三则重新生成的艺术向 prompt（1990s 编辑、bison 钴蓝房间、金色时刻吉他手）以及角色设定/设计类别的开场句，全文在 <a href="./examples/#style-aesthetics--text">示例库 · Style</a>。</p>
+<p>两段历史模板（文档标明适用更早模型 / FLUX.2 klein，不是 FLUX 3 Image 字段）：</p>
+<pre><code class="language-text">style fusion
+</code></pre>
+<pre><code class="language-text">Style: …
+Mood: …
+</code></pre>
+<p>文字要点：</p>
+<div class="ds-table-wrap"><table class="ds-table">
+<thead>
+<tr>
+<th>规则</th>
+<th>文档说法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>引用原文</td>
+<td>每个要印出的字符串加引号，含大小写与标点</td>
+</tr>
+<tr>
+<td>位置 / 层级</td>
+<td>写在画面哪里、谁大谁小</td>
+</tr>
+<tr>
+<td>颜色与效果</td>
+<td>如 red neon letters、gold serif、chalk on blackboard</td>
+</tr>
+<tr>
+<td>字体性格</td>
+<td>serif formal / sans modern / script elegant / display bold</td>
+</tr>
+<tr>
+<td>长文拆块</td>
+<td>拆成多块并校对每一处引号内文字</td>
+</tr>
+<tr>
+<td>两行居中</td>
+<td><code>arranged in two centered lines</code></td>
+</tr>
+<tr>
+<td>图文同框</td>
+<td>图形和字写在同一个 box 的 <code>desc</code> 里</td>
+</tr>
+</tbody></table></div>
+<p>短字可不配布局：<code>a paper poster on the wall that reads &quot;OPEN LATE&quot;</code>。双语印章面板、Cabin / Sauna 布局见示例库。Tokyo 多语种表见下。</p>
+<div class="ds-table-wrap"><table class="ds-table">
+<thead>
+<tr>
+<th>Box</th>
+<th>位置</th>
+<th>字</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>Ja_Text_1</code></td>
+<td>左侧竖排</td>
+<td><code>&quot;ストリート\n悪魔&quot;</code></td>
+</tr>
+<tr>
+<td><code>Ja_Text_2</code></td>
+<td>右上</td>
+<td><code>&quot;東京&quot;</code></td>
+</tr>
+<tr>
+<td><code>Ja_Text_3</code></td>
+<td>右下印章</td>
+<td><code>&quot;印&quot;</code></td>
+</tr>
+<tr>
+<td><code>Ja_Text_4</code></td>
+<td>底中</td>
+<td><code>&quot;たうのさん&quot;</code></td>
+</tr>
+<tr>
+<td><code>Unknown_Text_1</code></td>
+<td>其下</td>
+<td><code>&quot;ORIGINAL ARTWORK&quot;</code></td>
+</tr>
+</tbody></table></div>
+<h3 id="style-keywords-与参考表">Style Keywords 与参考表</h3>
+<p>来源：<a href="https://docs.bfl.ml/guides/prompting_unified_reference">Prompt Reference</a> 的 <strong>Style Keywords</strong> 表（官方英文关键词原文）。</p>
+<div class="ds-table-wrap"><table class="ds-table">
+<thead>
+<tr>
+<th>Category</th>
+<th>Keywords</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Photographic</strong></td>
+<td>“shot on Kodak Portra 400”, “35mm film”, “IMAX camera”, “Sony A7IV”, “Hasselblad X2D”, “Canon 5D”</td>
+</tr>
+<tr>
+<td><strong>Cinematic</strong></td>
+<td>“cinematic”, “anamorphic lens flare”, “teal and orange color grading”, “film noir”, “Roger Deakins cinematography”</td>
+</tr>
+<tr>
+<td><strong>Artistic</strong></td>
+<td>“oil painting”, “watercolor”, “pencil sketch”, “impasto texture”, “Art Nouveau”, “Bauhaus”</td>
+</tr>
+<tr>
+<td><strong>Digital art</strong></td>
+<td>“concept art”, “matte painting”, “octane render”, “unreal engine”, “stylized 3D”</td>
+</tr>
+<tr>
+<td><strong>Illustration</strong></td>
+<td>“flat design”, “vector illustration”, “comic art”, “anime style”, “graphic novel”, “whimsical”</td>
+</tr>
+<tr>
+<td><strong>Vintage</strong></td>
+<td>“80s vintage photo”, “2000s digicam”, “VHS aesthetic”, “polaroid”, “sepia tone”</td>
+</tr>
+</tbody></table></div>
+<p>Camera/lens/film cues 同页：<code>f/1.4</code>–<code>f/2.8</code> 浅景深，<code>85mm</code> 人像压缩，<code>shot on Kodak Portra 400</code>、<code>35mm film</code>、Hasselblad / Canon 机身。光线 / 构图表：Golden hour / Blue hour / Rembrandt / Split / Chiaroscuro 等。</p>
+<p><strong>Model-specific notes（仅提及，非 FLUX 3 Image 字段）</strong>：同页 Accordion 还列了 FLUX.2（多语、参考图数量按变体 4/6/8/10）和 FLUX.1 Kontext。FLUX 3 Image：参考图按位次 <code>image 1</code>，最多 10；未知字段 <code>422</code>。</p>
+<h3 id="技术参数">技术参数</h3>
+<p><code>aspect_ratio</code>（15 + <code>auto</code>）：<code>21:9</code>、<code>2:1</code>、<code>16:9</code>、<code>3:2</code>、<code>7:5</code>、<code>4:3</code>、<code>5:4</code>、<code>1:1</code>、<code>4:5</code>、<code>3:4</code>、<code>5:7</code>、<code>2:3</code>、<code>9:16</code>、<code>1:2</code>、<code>9:21</code>、<code>auto</code>。</p>
+<p><code>resolution</code>（Image API / 概览）：<code>768sq</code>、<code>1k</code>、<code>1.5k</code>、<code>2k</code>、<code>4k</code>。默认 <code>1k</code>。<br><a href="https://docs.bfl.ml/guides/prompting_unified_technical">Technical Parameters</a> 用途表只列了 <strong>4 档</strong>（<code>768sq</code> / <code>1k</code> / <code>2k</code> / <code>4k</code>），<strong>没有写出 <code>1.5k</code></strong>——以 Image API 与 Image 概览的五档为准，并在此标注文档不一致。</p>
+<p>编辑若要<strong>改画幅</strong>：显式设 <code>aspect_ratio</code>，并描述多出来的空间（例如方图产品改 <code>16:9</code> banner）。</p>
+<p>HEX 绑物体。JSON 结构化 prompt 可与 bbox 表连用。负向 → 正向：不写 <code>no blur</code>，改写 <code>sharp focus on the eyes</code>。</p>
+<h2 id="3-编辑">3. 编辑</h2>
+<p>来源：<a href="https://docs.bfl.ml/guides/prompting_editing_overview">Editing overview</a>、<a href="https://docs.bfl.ml/guides/prompting_editing_single_reference">single reference</a>、<a href="https://docs.bfl.ml/guides/prompting_editing_multi_reference">multi reference</a>。</p>
+<p>原则：说清楚<strong>改什么</strong>、<strong>改成什么</strong>、<strong>什么留下</strong>。颜色准很关键时要检查结果（grounding / hex 仍可能偏）。迭代写成 edit records。</p>
+<p>EditingShowcase 四条（银狐、拉远、改动作、改环境）全文在 <a href="./examples/#%E7%BC%96%E8%BE%91%E6%A6%82%E8%A7%88">示例库 · 编辑概览</a>。</p>
+<h3 id="单参考flux-3-vs-flux2">单参考：FLUX 3 vs FLUX.2</h3>
+<p>该页<strong>只有 6 条标为 FLUX 3 结果</strong>，其余是 <strong>FLUX.2 结果</strong>。</p>
+<div class="ds-table-wrap"><table class="ds-table">
+<thead>
+<tr>
+<th>标签</th>
+<th>主题</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>FLUX 3</strong></td>
+<td>bottle in strawberry；cow hex recolor；neon <code>zum Schlappen</code>；outfit swap；ice butterfly；owl eyes open</td>
+</tr>
+<tr>
+<td><strong>FLUX.2</strong></td>
+<td>场景替换、油画、插画转照片、糖粒、柠檬、goblin、polar bear、樱桃罐、银色蝴蝶、Night/Winter、polaroid <code>2020 &lt;3</code>、外套 hex、gaze 等</td>
+</tr>
+</tbody></table></div>
+<p>三条曾被截断的官方全文（本页不截，示例库收录）：</p>
+<ul>
+<li>cow hex recolor：<code>Recolor only the white and black FUR of the cow.</code> … 含 <code>Keep the dark eyes, nose openings, collar, yellow ear tag and hooves unchanged</code>。<a href="./examples/#%E5%8D%95%E5%8F%82%E8%80%83%E7%BC%96%E8%BE%91%E6%8C%87%E5%8D%97">全文</a></li>
+<li>neon <code>zum Schlappen</code>：含 <code>The new letters use continuous neon tubing and remain readable, with lowercase &#39;zum&#39; and an uppercase &#39;S&#39;</code>。<a href="./examples/#%E5%8D%95%E5%8F%82%E8%80%83%E7%BC%96%E8%BE%91%E6%8C%87%E5%8D%97">全文</a></li>
+<li>多参考 plate pattern：含 <code>The pattern follows the curved plate surface</code> 与 <code>Preserve the saturated burnt-orange</code>。<a href="./examples/#%E5%A4%9A%E5%8F%82%E8%80%83%E7%BC%96%E8%BE%91%E6%8C%87%E5%8D%97">全文</a></li>
+</ul>
+<p>清单行：<code>Fix the image</code> → <code>Open the owl&#39;s eyes</code>。换背景要写新场景<strong>及其光线</strong>；风格迁移要写<strong>哪些形状保持</strong>。</p>
+<p>另 12 条单参考例（mountain vista、remove vegetation、bike→horse、feathers→petals、ice butterfly、autumn colors、Flux.2 text、Night Bloom、Black Friday、<code>#87CEEB</code> wedding dress、owl eyes、model pose）见示例库。</p>
+<h3 id="多参考">多参考</h3>
+<p>用 <code>image 1</code> / <code>image 2</code>。一张参考图可以同时提供多种特征。<strong>没有一张参考图带目标画幅时，显式设 <code>aspect_ratio</code>。</strong></p>
+<p>清单行：apply style of the other one；add the product；make them wear it。</p>
+<p>五条文档标明的 <strong>FLUX.2</strong> 例：Kodak skating、underwater room、impasto cat、animal pattern、smoke logo。Lamp-on-sideboard 的 record 与 rows 原文在示例库。</p>
+<h2 id="4-布局与-bbox">4. 布局与 bbox</h2>
+<p>坐标 <code>[top, left, bottom, right]</code>，整数 <strong>0–1000</strong>。<code>id</code> 要<strong>短且唯一</strong>。行类型：new / keep / from ref。caption 用 <code>&lt;id&gt;</code> 引用。整段放进 <code>prompt</code>，没有单独 box 参数。</p>
+<p>文字行：写清 <strong>case / color / type style / alignment</strong>，并引用原文。改已规划布局：改 boxes 再重发。</p>
+<p><strong>小框上限是像素，不是网格单位。</strong> Bounding boxes Tips 与 layout 页原文：<em>a new element in a box of about 40 × 25 pixels often did not appear</em>。给新元素更大的框。</p>
+<p>其他 Tips：</p>
+<ul>
+<li>用 LLM 起草布局。</li>
+<li>用视觉模型列出要改的元素。</li>
+<li>编辑时<strong>所有行保持 Keep</strong>，只改正在编辑的行。</li>
+<li>未列出的区域通常不变；加上 anchor 更明确。</li>
+<li>框外像素通常不变，但阴影、反射、邻近光线可能变。</li>
+</ul>
+<p>FLUX 3 常会<strong>展开编辑指令并自动补 box</strong>，结果写在 <code>result.prompt</code>。</p>
+<p>Owl 快改模板：<code>In this image, change &lt;owl_subject&gt;, previously described as …</code></p>
+<p>多图布局例：包 <code>#CC5500</code> / <code>#F5A623</code> / <code>#6B8E23</code>；湖 + ducks；furnish room；<code>wears the jacket from image 2</code>。Launch 的约 17 条 bbox 编辑 / 6 条布局（soleil、panels、spectators、garden dinner、Tools、4x4 grid）全文在示例库。</p>
+<p>Coordinates 0-1000 normalized。<code>to_bbox</code> conversion：<code>to_bbox(left, top, right, bottom, width, height)</code> 把像素转到 0-1000 网格。先定 <code>aspect_ratio</code> 再画框。</p>
+<h2 id="5-image-api">5. Image API</h2>
+<p><code>POST https://api.bfl.ai/v1/flux-3-image</code>，请求头 <code>x-key</code>。OpenAPI schema <code>Flux3ImageInputs</code>，<code>additionalProperties: false</code>，未知字段 → <strong>422</strong>。</p>
+<div class="ds-table-wrap"><table class="ds-table">
+<thead>
+<tr>
+<th>字段</th>
+<th>类型</th>
+<th>默认</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>prompt</code></td>
+<td>string</td>
+<td>必填</td>
+<td>生成或编辑；bbox JSON 接在末尾</td>
+</tr>
+<tr>
+<td><code>images</code></td>
+<td>string 或 list</td>
+<td></td>
+<td>1–10，URL 或 base64，256×256–16 MP</td>
+</tr>
+<tr>
+<td><code>aspect_ratio</code></td>
+<td>enum + <code>auto</code></td>
+<td><code>auto</code></td>
+<td>15 个固定比或 <code>auto</code>（见上节矛盾处）</td>
+</tr>
+<tr>
+<td><code>resolution</code></td>
+<td>enum</td>
+<td><code>1k</code></td>
+<td><code>768sq</code> / <code>1k</code> / <code>1.5k</code> / <code>2k</code> / <code>4k</code></td>
+</tr>
+<tr>
+<td><code>safety_tolerance</code></td>
+<td>integer 0–4</td>
+<td><code>2</code></td>
+<td>0 最严</td>
+</tr>
+<tr>
+<td><code>grounding</code></td>
+<td>boolean</td>
+<td><code>true</code></td>
+<td>默认真：web + image search；<code>false</code> 更快、只靠 prompt。官方对照：<code>A photograph of this year&#39;s official Oktoberfest poster</code></td>
+</tr>
+<tr>
+<td><code>version</code></td>
+<td><code>latest</code></td>
+<td><code>latest</code></td>
+<td>当前发布；日后可钉日期标签</td>
+</tr>
+</tbody></table></div>
+<p>没有 <code>negative_prompt</code> / <code>seed</code> / <code>guidance</code> / <code>prompt_upsampling</code>。</p>
+<p>提交立即返回：<code>id</code>、<code>polling_url</code>、<code>cost</code>（credits）、<code>input_mp</code>、<code>output_mp</code>。<strong>用返回的 <code>polling_url</code>，不要自己拼。</strong></p>
+<div class="ds-table-wrap"><table class="ds-table">
+<thead>
+<tr>
+<th>Status</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>Pending</code> / <code>Reasoning</code> / <code>Generating</code></td>
+<td>进行中，继续 poll</td>
+</tr>
+<tr>
+<td><code>Ready</code></td>
+<td>完成；<code>result.sample</code> <strong>1 小时内</strong>下载；另有 <code>result.prompt</code>（展开后的 prompt）、<code>result.duration</code></td>
+</tr>
+<tr>
+<td><code>Request Moderated</code></td>
+<td>输入被拦，改输入再提交</td>
+</tr>
+<tr>
+<td><code>Content Moderated</code></td>
+<td>输出被拦，改 prompt</td>
+</tr>
+<tr>
+<td><code>Error</code></td>
+<td>失败，看 body</td>
+</tr>
+<tr>
+<td><code>Task not found</code></td>
+<td>id 未知或过期</td>
+</tr>
+</tbody></table></div>
+<div class="ds-table-wrap"><table class="ds-table">
+<thead>
+<tr>
+<th>HTTP</th>
+<th>原因</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>400</code></td>
+<td>参考图大于 16 megapixels</td>
+</tr>
+<tr>
+<td><code>422</code></td>
+<td>未知字段、空 prompt、非法值、图小于 256×256</td>
+</tr>
+<tr>
+<td><code>503</code></td>
+<td>失败任务也可能 HTTP 503 + 正常 JSON，先读 body 的 <code>status</code></td>
+</tr>
+<tr>
+<td><code>402</code> / <code>429</code></td>
+<td>欠费 / 限流（全站共用，见 Errors 页）</td>
+</tr>
+</tbody></table></div>
+<p>图像侧计价以提交响应的 <code>cost</code> / <code>input_mp</code> / <code>output_mp</code> 为准（文档未另给按分辨率美元表）。</p>
+<p>Quickstart 兔 risograph + generate 页约 26 条 gallery（photoreal / typography / infographic / illustration）见 <a href="./examples/#flux-3-image--generate">示例库 · generate</a>。</p>
+<h2 id="6-视频提示词">6. 视频提示词</h2>
+<p>工作流：<code>t2v</code> / <code>i2v</code> / <code>v2v</code> / 独立的 Video Edit。一句话模板 + 标注字段；多镜头用时间步或 <code>HARD CUT</code>。</p>
+<p>强 prompt 五点清单：</p>
+<ol>
+<li>主体与动作（镜头能看见的名词、动词）</li>
+<li>场景 / 光 / 景深</li>
+<li>带时间的运镜</li>
+<li><strong>Motion qualities</strong>：Slow, abrupt, weightless, chaotic, precise, cinematic, documentary</li>
+<li><strong>Continuity constraints</strong>：整段必须稳住的东西，尤其编辑或续写</li>
+</ol>
+<p>六段 schema（who/where/arc；setting/light/DOF；timecoded camera；per-shot audio；realism/palette/grain；格式选用时机）：短片用 one-liner；要锁镜头与声音用标注字段；要卡点用 timestep。脚步、撞击、雨、引擎能给音频更清楚的材料。沙漠 schema、Phase（beekeeper / tram）全文、12 条 t2v gallery、关键帧 <code>0:00</code> / <code>0:03</code> / <code>0:07</code> / <code>0:10</code>、6 条 v2v continuation（elephants, penguin, hikers, Iguazu, giraffe, SUV）、pigeons 视频编辑，均在示例库。</p>
+<h3 id="对白与音频">对白与音频</h3>
+<p>四层：dialogue / SFX / ambience / music。引号台词 + 说话人。只写会改变听感的细节；形容词堆叠会互抢；<code>one audible breath</code> 会把呼吸推得太响。</p>
+<p>五条对白写法：</p>
+<ol>
+<li>角色会用缩写就用 contractions</li>
+<li>砍掉听众已经看见的开场</li>
+<li>不要每句以口号收尾</li>
+<li>给说话人一个对场内某人开口的理由</li>
+<li>标点从简，太多停顿会唱起来</li>
+</ol>
+<p>短片不要硬塞多名说话人或长剧本，拆成多场。多人归属复查成本高；对白是焦点时让其他人闭嘴。多语多人：按<strong>看得见的角色</strong>绑定语言，不要叠词；口音搭配节奏与情绪。这些是<strong>可引导目标，不是精确控制器</strong>。</p>
+<p>diner、aurora EN/DE、greenhouse ES/FR、Hindi chai 全文见 <a href="./examples/#%E8%A7%86%E9%A2%91%E9%9F%B3%E9%A2%91%E4%B8%8E%E5%AF%B9%E7%99%BD">示例库 · 音频</a>。</p>
+<h3 id="图生视频">图生视频</h3>
+<div class="ds-table-wrap"><table class="ds-table">
+<thead>
+<tr>
+<th>模式</th>
+<th>用法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>单张 startframe</td>
+<td>从静帧出发</td>
+</tr>
+<tr>
+<td>start + end</td>
+<td>reveal / transformation / loop</td>
+</tr>
+<tr>
+<td>多关键帧</td>
+<td>中间帧均分；或 <code>[seconds, image]</code> 钉时间</td>
+</tr>
+</tbody></table></div>
+<p>帧距要现实，风格前后一致。Rising sea、city day-cycle 全文见示例库。显式 duration 见上节矛盾处。</p>
+<h2 id="7-video-api">7. Video API</h2>
+<p><code>POST https://api.bfl.ai/v1/flux-3-video</code>。<code>mode</code>：<code>t2v</code>（<code>text-to-video</code>）、<code>i2v</code>（<code>image-continuation</code>）、<code>v2v</code>（<code>video-continuation</code>）、<code>draft_enhance</code>（<code>draft-enhance</code>）。拼写别名与短键都接受。</p>
+<div class="ds-table-wrap"><table class="ds-table">
+<thead>
+<tr>
+<th>字段</th>
+<th>适用</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>prompt</code></td>
+<td>t2v/i2v/v2v</td>
+<td>必填（enhance 靠 bundle）</td>
+</tr>
+<tr>
+<td><code>duration</code></td>
+<td>t2v/i2v：5–20 或 <code>auto</code>；v2v：5–15 或 <code>auto</code></td>
+<td>整秒</td>
+</tr>
+<tr>
+<td><code>aspect_ratio</code></td>
+<td></td>
+<td><code>auto</code> / <code>21:9</code> / <code>2:1</code> / <code>16:9</code> / <code>4:3</code> / <code>1:1</code> / <code>3:4</code> / <code>9:16</code> / <code>9:21</code></td>
+</tr>
+<tr>
+<td><code>resolution</code></td>
+<td></td>
+<td><code>hd</code>（默认）/ <code>fhd</code> / <code>qhd</code> / <code>uhd</code>；尺寸为 32 的倍数。<code>uhd</code> 16:9 = <strong>3840×2176</strong>（不是 3840×2160）</td>
+</tr>
+<tr>
+<td><code>generate_audio</code></td>
+<td></td>
+<td>默认 <code>true</code></td>
+</tr>
+<tr>
+<td><code>safety_tolerance</code></td>
+<td>0–4，默认 2</td>
+<td>色情最高 3，仇恨最高 2</td>
+</tr>
+<tr>
+<td><code>draft</code></td>
+<td></td>
+<td><code>true</code> 返回 hd 预览 + <code>draft_cache</code>；约 <strong>1/3</strong> 全价。draft 只能 <code>hd</code></td>
+</tr>
+<tr>
+<td><code>draft_cache</code></td>
+<td><code>draft_enhance</code></td>
+<td>预览 bundle；enhance 默认 <code>fhd</code></td>
+</tr>
+<tr>
+<td><code>keyframes</code></td>
+<td>i2v</td>
+<td>1–10；或 <code>[seconds, image]</code> 对</td>
+</tr>
+<tr>
+<td><code>start_video</code></td>
+<td>v2v</td>
+<td>mp4，URL 或 base64</td>
+</tr>
+<tr>
+<td><code>user</code></td>
+<td></td>
+<td>调用方提供的不透明用户 id，1–256</td>
+</tr>
+<tr>
+<td><code>version</code></td>
+<td></td>
+<td><code>latest</code></td>
+</tr>
+<tr>
+<td><code>webhook_url</code></td>
+<td>Cookbook / webhook 响应</td>
+<td>完成时 POST，可代替轮询</td>
+</tr>
+</tbody></table></div>
+<p>FLUX Video Edit [fast]：<strong>独立</strong>端点 <code>POST /v1/flux-tools/video-edit-v1</code>，字段是 <code>video</code> + <code>prompt</code>，<strong>没有 <code>mode</code></strong>。</p>
+<p>输出 24 fps，预览模型，最长约 20s、最高约 4K。<strong>Omni Reference with images and videos</strong> 即将提供。结果 URL 签名，<strong>约 2 小时</strong>过期。</p>
+<div class="ds-table-wrap"><table class="ds-table">
+<thead>
+<tr>
+<th>Mode</th>
+<th>你发送</th>
+<th>时长</th>
+<th>全价 / 秒（hd / fhd / qhd / uhd）</th>
+<th>Draft</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Text to Video</td>
+<td>prompt</td>
+<td>5–20 s</td>
+<td>$0.17 / $0.29 / $0.40 / $0.80</td>
+<td>$0.06/s</td>
+</tr>
+<tr>
+<td>Image to Video</td>
+<td>prompt + 1–10 images</td>
+<td>5–20 s</td>
+<td>$0.17 / $0.29 / $0.40 / $0.80</td>
+<td>$0.06/s</td>
+</tr>
+<tr>
+<td>Video Continuation</td>
+<td>prompt + clip</td>
+<td>5–15 s</td>
+<td>$0.41 / $0.53 / $0.65 / $0.95</td>
+<td>$0.12/s</td>
+</tr>
+</tbody></table></div>
+<p>分辨率表（官方）：</p>
+<div class="ds-table-wrap"><table class="ds-table">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>hd</th>
+<th>fhd</th>
+<th>qhd</th>
+<th>uhd</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>21:9</td>
+<td>1440×608</td>
+<td>2176×928</td>
+<td>2912×1248</td>
+<td>4352×1856</td>
+</tr>
+<tr>
+<td>2:1</td>
+<td>1344×672</td>
+<td>2016×1024</td>
+<td>2720×1376</td>
+<td>4032×2048</td>
+</tr>
+<tr>
+<td>16:9</td>
+<td>1280×704</td>
+<td>1920×1088</td>
+<td>2560×1440</td>
+<td>3840×2176</td>
+</tr>
+<tr>
+<td>4:3</td>
+<td>1088×800</td>
+<td>1632×1216</td>
+<td>2176×1632</td>
+<td>3264×2432</td>
+</tr>
+<tr>
+<td>1:1</td>
+<td>960×960</td>
+<td>1440×1440</td>
+<td>1920×1920</td>
+<td>2880×2880</td>
+</tr>
+<tr>
+<td>3:4</td>
+<td>800×1088</td>
+<td>1216×1632</td>
+<td>1632×2176</td>
+<td>2432×3264</td>
+</tr>
+<tr>
+<td>9:16</td>
+<td>704×1280</td>
+<td>1088×1920</td>
+<td>1440×2560</td>
+<td>2176×3840</td>
+</tr>
+<tr>
+<td>9:21</td>
+<td>608×1440</td>
+<td>928×2176</td>
+<td>1248×2912</td>
+<td>1856×4352</td>
+</tr>
+</tbody></table></div>
+<p>API 示例（alley t2v/i2v/v2v、fox、seed→tree、2D fox、FLUX kinetic title）见示例库。</p>
+<p>相机术语 <strong>119</strong> 条、<strong>14</strong> 组（各含 description + example prompt）在 <a href="./camera-terms/">相机术语表</a>，数据来自该页 <code>CAMERA_TERMS</code>，不是「文档没有列表」。</p>
+<h2 id="8-cookbook">8. Cookbook</h2>
+<p>四篇 cookbook 走 <code>flux-3-preview-high</code>，形与主 API 不同（见矛盾处）。状态流同样经过 <code>Pending</code> → <code>Reasoning</code> → <code>Generating</code> → <code>Ready</code>。</p>
+<h3 id="quickstart">quickstart</h3>
+<ul>
+<li>说话者需要<strong>被描述的嘴</strong>（或会开合的部位）：捕蝇草例把 trap-lobes 当嘴。</li>
+<li><strong>数拍子</strong>是承重技巧：打字机「自己打」vs 一键一拍的对照。</li>
+<li>只在能说出理由时钉 <code>aspect_ratio</code> / <code>duration</code> / <code>resolution</code>。</li>
+<li>语音陷阱：改成 voiceover + <code>&quot;These are the only words&quot;</code>，并写 no captions / no subtitles，避免字幕烧进画面。</li>
+<li>并发 <strong>5 / org</strong>，超出 → <code>429 (too many active tasks)</code>。延迟以分钟计。可用 <code>webhook_url</code>。</li>
+<li>设定表：<code>480p</code> / <code>720p</code>（默认 720p）；<code>duration</code> 5–20 或 auto。</li>
+</ul>
+<h3 id="startfromimages">start_from_images</h3>
+<ul>
+<li>写<strong>运动</strong>，不要重述已经在图里的场景。</li>
+<li>双关键帧钉结尾仍偏实验；收束帧 = <code>duration × 24</code>；duration 用整数。</li>
+<li><code>reference_images</code>：多视角设定表，重列锚点，<strong>不要出现在画面上</strong>。</li>
+<li><code>keyframes</code> + <code>reference_images</code> 同时发送 → <strong>422</strong>。</li>
+<li>5 秒只能装一句短台词。</li>
+</ul>
+<h3 id="recastcontinue">recast_continue</h3>
+<ul>
+<li><code>reference_video</code>（重演/换媒介/换场景）vs 主 API 的 <code>start_video</code>（从末帧续）。</li>
+<li>换媒介要重述调度（默片换声）；同一卡司新镜头可省略旧调度。</li>
+<li>续写：先点名末帧；<code>duration</code> 只计<strong>新增</strong>段；声音穿过接缝。</li>
+<li>机械主体要把不完美写进去。</li>
+<li>输入 ≤ <strong>50MB</strong>、≤ <strong>15s</strong>；默认 720p 的 <code>reference_video</code> 输出封顶 15s。</li>
+</ul>
+<h3 id="multishotfilms">multishot_films</h3>
+<ul>
+<li>相邻镜头景别要差得很大。</li>
+<li>一条音频床；每次生成 <strong>2–3</strong> 个镜头。</li>
+<li>world bible <strong>原文粘贴</strong>；每镜布置音频母题；一镜一拍。</li>
+<li>exactly-once 指令；language lock。</li>
+<li>动作约 5s，对白 10–20s。</li>
+</ul>
+<p>flytrap、typewriter 对照及其他 cookbook prompt 全文在 <a href="./examples/#cookbook">示例库 · Cookbook</a>。</p>
+<h2 id="9-常见错误与调参">9. 常见错误与调参</h2>
+<div class="ds-table-wrap"><table class="ds-table">
+<thead>
+<tr>
+<th>问题</th>
+<th>文档对策</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>未知字段 / 空 prompt / 图 &lt;256</td>
+<td><code>422</code>，看 <code>detail</code></td>
+</tr>
+<tr>
+<td>参考图 &gt;16MP</td>
+<td><code>400</code>，先缩小</td>
+</tr>
+<tr>
+<td>小框里的新物体消失</td>
+<td>框大约 40 × 25 <strong>pixels</strong> 常不出现</td>
+</tr>
+<tr>
+<td>颜色不准</td>
+<td>检查结果；hex 绑到物体；需要事实时保持 <code>grounding: true</code></td>
+</tr>
+<tr>
+<td>视频对白变字幕</td>
+<td>描述嘴 + <code>These are the only words</code> + no captions</td>
+</tr>
+<tr>
+<td>短片塞太多说话人</td>
+<td>拆场</td>
+</tr>
+<tr>
+<td>并发打满</td>
+<td>等槽，不要死循环重试 429</td>
+</tr>
+<tr>
+<td>结果链失效</td>
+<td>图 1h；视频约 2h</td>
+</tr>
+<tr>
+<td>cookbook 与主 API 混用字段</td>
+<td>见矛盾处，按你实际打的端点选字段</td>
+</tr>
+</tbody></table></div>
+<p>一次只改一个变量。先 <code>768sq</code> 或视频 <code>draft: true</code>。</p>
+<h2 id="10-来源">10. 来源</h2>
+<p>索引：<a href="https://docs.bfl.ml/llms.txt">https://docs.bfl.ml/llms.txt</a>（2026-10-08）。</p>
+<ul>
+<li>Image：<a href="https://docs.bfl.ml/flux_3/flux3_image_overview">overview</a> · <a href="https://docs.bfl.ml/flux_3/flux3_image_generate">generate</a> · <a href="https://docs.bfl.ml/flux_3/flux3_image_layout">layout</a> · <a href="https://docs.bfl.ml/flux_3/flux3_image_bounding_boxes">bounding boxes</a> · <a href="https://docs.bfl.ml/api-reference/utility/generate-an-image-with-flux-3">API</a></li>
+<li>Prompting：<a href="https://docs.bfl.ml/guides/prompting_summary">summary</a> · <a href="https://docs.bfl.ml/guides/prompting_unified_basics">basics</a> · <a href="https://docs.bfl.ml/guides/prompting_unified_building">building</a> · <a href="https://docs.bfl.ml/guides/prompting_unified_style">style</a> · <a href="https://docs.bfl.ml/guides/prompting_unified_reference">reference</a> · <a href="https://docs.bfl.ml/guides/prompting_unified_technical">technical</a> · <a href="https://docs.bfl.ml/guides/prompting_layout">layout</a> · editing overview / single / multi</li>
+<li>Video：<a href="https://docs.bfl.ml/guides/prompting_video_overview">overview</a> · t2v / i2v / audio / editing / <a href="https://docs.bfl.ml/guides/prompting_video_camera_terms">camera terms</a> · <a href="https://docs.bfl.ml/flux_3/flux3_video">FLUX 3 Video</a> · <a href="https://docs.bfl.ml/flux_3/flux3_overview">FLUX 3 overview</a> · <a href="https://docs.bfl.ml/api-reference/utility/generate-a-video-with-flux-3">Video API</a></li>
+<li>Cookbook：quickstart · start_from_images · recast_continue · multishot_films</li>
+</ul>
+</article>
+  </main>
+  <footer class="ds-footer">
+    <div class="ds-wrap ds-footer-inner">
+      <p>材料来自公开论文、官方博客和公开热帖。看板每 30 分钟检查一次；时间线每晚更新。</p>
+      <p><a href="../about/">关于这个站</a></p>
+    </div>
+  </footer>
+  <div class="lightbox" id="lightbox" hidden>
+    <button type="button" aria-label="关闭">×</button>
+    <img alt="">
+  </div>
+  <script src="../theme.js"></script>
+</body>
+</html>

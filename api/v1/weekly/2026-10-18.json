@@ -1,0 +1,11 @@
+{
+  "v": 1,
+  "schema_version": "1.0.0",
+  "data_as_of": "2026-10-20T12:18:38+08:00",
+  "date": "2026-10-18",
+  "title": "AI 前沿趋势周报 · 2026-10-18（第 2 期）",
+  "summary": "主线无升级、无降级、无新增；FLUX 3 Image Klein 与 Kling 4.0 属权重/产品交付；PR-OPD 把 OPD 监督从词概率改到隐状态；Terminal-RSI / LlamaFactory RSI / PenguinHarness 列为观察，未写入信号表 4；信号表 1–4 一周无翻转。",
+  "issue": 2,
+  "path": "weekly/2026-10-18/",
+  "url": "https://codyshen0000.github.io/ai-frontier-trends/weekly/2026-10-18/"
+}
