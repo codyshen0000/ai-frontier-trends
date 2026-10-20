@@ -2,7 +2,7 @@
  {
   "rank": 1,
   "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
-  "heat": 13.4,
+  "heat": 12.3,
   "trend": "down",
   "storyPublicId": "2026-10-19-minimax-m31-flash",
   "itemId": "sha256:8e4a9464917136de",
@@ -21,7 +21,7 @@
  {
   "rank": 2,
   "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
-  "heat": 12.0,
+  "heat": 10.9,
   "trend": "down",
   "storyPublicId": "2026-10-20-hf-torchneuron-trainium",
   "itemId": "sha256:5c52b7d34becd1cc",
