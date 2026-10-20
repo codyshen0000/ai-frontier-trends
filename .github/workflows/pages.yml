@@ -26,7 +26,7 @@ jobs:
         with:
           repository: ${{ github.repository }}
           ref: engine-data
-          path: ${{ runner.temp }}/engine-data
+          path: .engine-data
           persist-credentials: false
           sparse-checkout: data/engine/v1
 
@@ -34,7 +34,8 @@ jobs:
         run: |
           mkdir -p data/engine
           rm -rf data/engine/v1
-          cp -a "${{ runner.temp }}/engine-data/data/engine/v1" data/engine/v1
+          cp -a .engine-data/data/engine/v1 data/engine/v1
+          rm -rf .engine-data
           test -f data/engine/v1/meta.json
 
       - name: Setup Node
