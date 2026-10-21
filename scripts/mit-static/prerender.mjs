@@ -2,6 +2,7 @@ import { build } from "vite";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
+import { copyAvatarCache } from "../avatar_icons.mjs";
 import { resolveAndWriteGeneratedSite } from "../engine/write_generated.mjs";
 
 process.env.NODE_ENV = "production";
@@ -39,6 +40,7 @@ if (!cssFile) throw new Error("tailwind css was not emitted");
 
 fs.mkdirSync(path.join(outDir, "assets"), { recursive: true });
 fs.copyFileSync(path.join(tmpCss, "assets", cssFile), path.join(outDir, "assets", "app.css"));
+copyAvatarCache(outDir);
 
 const plates = path.resolve(here, "../../vendor/mit/site/brand/nameplates");
 const plateOut = path.join(outDir, "assets", "nameplates");

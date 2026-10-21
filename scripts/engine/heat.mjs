@@ -497,8 +497,21 @@ export function verifyHotJson(inputs, options = {}) {
       existedBefore,
       prevAt: prevTarget,
     });
+    let entryIssues = compareEntry(entry, next, { tolerance, id });
+    // heat48h.py recomputes T−6h from current participant times. A stored
+    // snapshot within 30 minutes can still carry a stale heat (participants
+    // updated after that hour was frozen). If heat itself matches and the
+    // participant recompute matches hot.json, do not fail the live overlay.
+    const trendOnly = entryIssues.length > 0 && entryIssues.every((msg) => /: trend/.test(msg));
+    if (trendOnly && prevHeat != null) {
+      const fromParticipants = recomputeEntry(participants, atMs, { prevAt: prevTarget });
+      if (compareEntry(entry, fromParticipants, { tolerance, id }).length === 0) {
+        skipped.push(`${id}: skip trend vs stale T−6h snapshot (participant recompute matches hot.json)`);
+        entryIssues = [];
+      }
+    }
     recomputed.push({ publicId: id, ...next });
-    issues.push(...compareEntry(entry, next, { tolerance, id }));
+    issues.push(...entryIssues);
   }
 
   if (listed.length > TOP_N) {
