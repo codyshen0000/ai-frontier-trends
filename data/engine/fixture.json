@@ -276,7 +276,86 @@
    }
   ],
   "nextCursor": null,
-  "hot": null,
+  "hot": [
+   {
+    "rank": 1,
+    "title": "DeepSeek 宣布开源内部推理框架 DeepInfer",
+    "heat": 14.5,
+    "trend": "down",
+    "storyPublicId": "2026-10-20-deepseek-deepinfer-opensource",
+    "itemId": "sha256:0ab5ba0e7b49bc37",
+    "participants": [
+     {
+      "name": "The Decoder",
+      "kind": "editorial"
+     },
+     {
+      "name": "IT之家（全站，需关键词过滤）",
+      "kind": "signal"
+     }
+    ],
+    "participantCount": 2,
+    "belowThreshold": true
+   },
+   {
+    "rank": 2,
+    "title": "美国要求联邦民用机构清除 DeepSeek AI",
+    "heat": 13.7,
+    "trend": "down",
+    "storyPublicId": "2026-10-20-us-deepseek-federal-ban",
+    "itemId": "sha256:50a63bd5f62e013b",
+    "participants": [
+     {
+      "name": "TechCrunch · AI",
+      "kind": "editorial"
+     },
+     {
+      "name": "The Decoder",
+      "kind": "editorial"
+     }
+    ],
+    "participantCount": 2,
+    "belowThreshold": true
+   },
+   {
+    "rank": 3,
+    "title": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线",
+    "heat": 13.5,
+    "trend": "up",
+    "storyPublicId": "2026-10-21-openai-orchestra-bio",
+    "itemId": "sha256:1cfb6291fa158d05",
+    "participants": [
+     {
+      "name": "OpenAI News",
+      "kind": "editorial"
+     },
+     {
+      "name": "TechCrunch · AI",
+      "kind": "editorial"
+     }
+    ],
+    "participantCount": 2
+   },
+   {
+    "rank": 4,
+    "title": "OpenAI：推进低资源编程语言上的编码能力",
+    "heat": 11.1,
+    "trend": "down",
+    "storyPublicId": "2026-10-20-openai-low-resource-langs",
+    "itemId": "sha256:1dbe22633003a2af",
+    "participants": [
+     {
+      "name": "OpenAI News",
+      "kind": "editorial"
+     },
+     {
+      "name": "The Decoder",
+      "kind": "editorial"
+     }
+    ],
+    "participantCount": 2
+   }
+  ],
   "dayCounts": {
    "2026-10-20": 1,
    "2026-10-19": 2,
@@ -284,13 +363,330 @@
    "2026-10-18": 2
   }
  },
- "hotStrip": [],
+ "hotStrip": [
+  {
+   "rank": 1,
+   "title": "DeepSeek 宣布开源内部推理框架 DeepInfer",
+   "heat": 14.5,
+   "trend": "down",
+   "storyPublicId": "2026-10-20-deepseek-deepinfer-opensource",
+   "itemId": "sha256:0ab5ba0e7b49bc37",
+   "participants": [
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
+    }
+   ],
+   "participantCount": 2,
+   "belowThreshold": true
+  },
+  {
+   "rank": 2,
+   "title": "美国要求联邦民用机构清除 DeepSeek AI",
+   "heat": 13.7,
+   "trend": "down",
+   "storyPublicId": "2026-10-20-us-deepseek-federal-ban",
+   "itemId": "sha256:50a63bd5f62e013b",
+   "participants": [
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2,
+   "belowThreshold": true
+  },
+  {
+   "rank": 3,
+   "title": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线",
+   "heat": 13.5,
+   "trend": "up",
+   "storyPublicId": "2026-10-21-openai-orchestra-bio",
+   "itemId": "sha256:1cfb6291fa158d05",
+   "participants": [
+    {
+     "name": "OpenAI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2
+  },
+  {
+   "rank": 4,
+   "title": "OpenAI：推进低资源编程语言上的编码能力",
+   "heat": 11.1,
+   "trend": "down",
+   "storyPublicId": "2026-10-20-openai-low-resource-langs",
+   "itemId": "sha256:1dbe22633003a2af",
+   "participants": [
+    {
+     "name": "OpenAI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2
+  }
+ ],
  "hot": {
-  "computedAt": "2026-10-20T12:25:20.000Z",
+  "computedAt": "2026-10-21T01:28:37.000Z",
   "windowHours": 48,
-  "entries": []
+  "entries": [
+   {
+    "rank": 1,
+    "story": {
+     "publicId": "2026-10-20-deepseek-deepinfer-opensource",
+     "title": "DeepSeek 宣布开源内部推理框架 DeepInfer"
+    },
+    "heat": 14.5,
+    "trend": "down",
+    "trendPct": -16.2,
+    "badges": [],
+    "participantCount": 2,
+    "sourceCount": 1,
+    "sourceNames": [
+     "The Decoder"
+    ],
+    "participants": [
+     {
+      "name": "The Decoder",
+      "kind": "editorial"
+     },
+     {
+      "name": "IT之家（全站，需关键词过滤）",
+      "kind": "signal"
+     }
+    ],
+    "spark": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     9.7,
+     9.5,
+     9.2,
+     8.9,
+     8.7,
+     8.4,
+     8.2,
+     8.0,
+     7.7,
+     17.5,
+     17.0,
+     16.5,
+     16.0,
+     15.6,
+     15.1,
+     14.7
+    ],
+    "summary": "IT之家称 DeepSeek 宣布将内部推理框架 DeepInfer 全面开源，希望帮助开发者与企业降低大规模推理的算力与能耗成本。",
+    "latest": null,
+    "cover": null,
+    "belowThreshold": true
+   },
+   {
+    "rank": 2,
+    "story": {
+     "publicId": "2026-10-20-us-deepseek-federal-ban",
+     "title": "美国要求联邦民用机构清除 DeepSeek AI"
+    },
+    "heat": 13.7,
+    "trend": "down",
+    "trendPct": -16.0,
+    "badges": [],
+    "participantCount": 2,
+    "sourceCount": 2,
+    "sourceNames": [
+     "TechCrunch · AI",
+     "The Decoder"
+    ],
+    "participants": [
+     {
+      "name": "TechCrunch · AI",
+      "kind": "editorial"
+     },
+     {
+      "name": "The Decoder",
+      "kind": "editorial"
+     }
+    ],
+    "spark": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     9.9,
+     9.6,
+     19.1,
+     18.5,
+     18.0,
+     17.5,
+     17.0,
+     16.5,
+     16.0,
+     15.6,
+     15.1,
+     14.7,
+     14.3,
+     13.9
+    ],
+    "summary": "多家媒体称，美国国土安全部等已要求联邦民用机构停止使用中国实验室 DeepSeek 的 AI 技术，并移除相关产品及基于其技术的第三方服务，理由是国家安全。",
+    "latest": null,
+    "cover": null,
+    "belowThreshold": true
+   },
+   {
+    "rank": 3,
+    "story": {
+     "publicId": "2026-10-21-openai-orchestra-bio",
+     "title": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线"
+    },
+    "heat": 13.5,
+    "trend": "up",
+    "trendPct": 136.8,
+    "badges": [
+     "rising"
+    ],
+    "participantCount": 2,
+    "sourceCount": 2,
+    "sourceNames": [
+     "TechCrunch · AI",
+     "OpenAI News"
+    ],
+    "participants": [
+     {
+      "name": "OpenAI News",
+      "kind": "editorial"
+     },
+     {
+      "name": "TechCrunch · AI",
+      "kind": "editorial"
+     }
+    ],
+    "spark": [
+     9.7,
+     9.4,
+     9.2,
+     8.9,
+     8.7,
+     8.4,
+     8.2,
+     7.9,
+     7.7,
+     7.5,
+     7.3,
+     7.1,
+     6.9,
+     6.7,
+     6.5,
+     6.3,
+     6.1,
+     5.9,
+     5.8,
+     5.6,
+     15.3,
+     14.9,
+     14.5,
+     14.1,
+     13.7
+    ],
+    "summary": "OpenAI 宣布收购药物开发协作平台 Orchestra Bio，团队与技术并入其生命科学模型与工具 Rosalind / Rosalind Workbench，目标是用智能体协助生物医药团队协调研发流程。",
+    "latest": null,
+    "cover": null
+   },
+   {
+    "rank": 4,
+    "story": {
+     "publicId": "2026-10-20-openai-low-resource-langs",
+     "title": "OpenAI：推进低资源编程语言上的编码能力"
+    },
+    "heat": 11.1,
+    "trend": "down",
+    "trendPct": -16.5,
+    "badges": [],
+    "participantCount": 2,
+    "sourceCount": 2,
+    "sourceNames": [
+     "The Decoder",
+     "OpenAI News"
+    ],
+    "participants": [
+     {
+      "name": "OpenAI News",
+      "kind": "editorial"
+     },
+     {
+      "name": "The Decoder",
+      "kind": "editorial"
+     }
+    ],
+    "spark": [
+     6.9,
+     6.7,
+     6.5,
+     6.3,
+     6.1,
+     5.9,
+     5.8,
+     5.6,
+     5.5,
+     5.3,
+     5.1,
+     5.0,
+     4.9,
+     4.7,
+     4.6,
+     4.5,
+     14.2,
+     13.8,
+     13.4,
+     13.1,
+     12.7,
+     12.3,
+     12.0,
+     11.6,
+     11.3
+    ],
+    "summary": "OpenAI 称改进模型在 COBOL、Fortran 等低资源编程语言上的表现；The Decoder 称在 MultiLangBench 上 GPT-6 Astra 跨 20 种语言测试通过率约 87.4%。",
+    "latest": null,
+    "cover": null
+   }
+  ]
  },
  "dailyIndex": [
+  {
+   "key": "2026-10-21",
+   "issueNumber": 3,
+   "title": null,
+   "count": 0
+  },
   {
    "key": "2026-10-20",
    "issueNumber": 2,
@@ -306,139 +702,26 @@
  ],
  "daily": {
   "kind": "daily",
-  "key": "2026-10-20",
-  "issueNumber": 2,
-  "title": "AI日报 · 2026-10-20",
-  "generatedAt": "2026-10-20T00:43:38.000Z",
-  "lead": {
-   "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
-   "leadParagraph": "可灵 4.0 加长视频与口型同步"
-  },
-  "leadItemId": "sha256:10f7f763ebef7da0",
-  "overview": "今日重点四条：可灵 AI 4.0（更长视频、立体声与多语口型同步）。英伟达开源面向企业与 PC 的智能体模型。MiniMax M3.1 Flash（称提速约 3 倍、成本约降 70%，AA 指数到 42）。Hugging Face TorchNeuron，让 HF 模型更易跑在 AWS Trainium。",
-  "highlights": [
-   {
-    "itemId": "sha256:10f7f763ebef7da0",
-    "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
-    "summary": "可灵 4.0 加长视频与口型同步",
-    "sourceName": "The Decoder",
-    "sourceUrl": "https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/",
-    "sourceIconUrl": null,
-    "firstParty": false,
-    "publishedAt": "2026-10-19T17:36:26.000Z",
-    "available": true,
-    "otherSources": 0
-   },
-   {
-    "itemId": "sha256:bfa70917f3b198d1",
-    "title": "英伟达发布面向企业与 PC 的开源智能体模型",
-    "summary": "英伟达开源企业与 PC 端智能体模型",
-    "sourceName": "TechCrunch · AI",
-    "sourceUrl": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
-    "sourceIconUrl": null,
-    "firstParty": false,
-    "publishedAt": "2026-10-19T15:37:09.000Z",
-    "available": true,
-    "otherSources": 0
-   },
-   {
-    "itemId": null,
-    "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
-    "summary": "M3.1 Flash 提速降本，AA 指数到 42",
-    "sourceName": "",
-    "sourceUrl": "https://the-decoder.com/minimax-m3-1-flash-shows-chinas-ai-price-race-has-no-floor-in-sight/",
-    "sourceIconUrl": null,
-    "firstParty": false,
-    "publishedAt": "2026-10-19T18:22:30.000Z",
-    "available": true,
-    "otherSources": 0
-   },
-   {
-    "itemId": null,
-    "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
-    "summary": "Trainium 上跑 HF 模型更省事",
-    "sourceName": "",
-    "sourceUrl": "https://huggingface.co/blog/hf-torchneuron",
-    "sourceIconUrl": null,
-    "firstParty": true,
-    "publishedAt": "2026-10-19T00:00:00.000Z",
-    "available": true,
-    "otherSources": 0
-   }
-  ],
-  "sections": [
-   {
-    "label": "模型",
-    "summary": null,
-    "items": [
-     {
-      "itemId": "sha256:10f7f763ebef7da0",
-      "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
-      "summary": "可灵 4.0 加长视频与口型同步",
-      "sourceName": "The Decoder",
-      "sourceUrl": "https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/",
-      "sourceIconUrl": null,
-      "firstParty": false,
-      "publishedAt": "2026-10-19T17:36:26.000Z",
-      "available": true,
-      "otherSources": 0
-     },
-     {
-      "itemId": "sha256:bfa70917f3b198d1",
-      "title": "英伟达发布面向企业与 PC 的开源智能体模型",
-      "summary": "英伟达开源企业与 PC 端智能体模型",
-      "sourceName": "TechCrunch · AI",
-      "sourceUrl": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
-      "sourceIconUrl": null,
-      "firstParty": false,
-      "publishedAt": "2026-10-19T15:37:09.000Z",
-      "available": true,
-      "otherSources": 0
-     }
-    ]
-   },
-   {
-    "label": "其他",
-    "summary": null,
-    "items": [
-     {
-      "itemId": null,
-      "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
-      "summary": "M3.1 Flash 提速降本，AA 指数到 42",
-      "sourceName": "",
-      "sourceUrl": "https://the-decoder.com/minimax-m3-1-flash-shows-chinas-ai-price-race-has-no-floor-in-sight/",
-      "sourceIconUrl": null,
-      "firstParty": false,
-      "publishedAt": "2026-10-19T18:22:30.000Z",
-      "available": true,
-      "otherSources": 0
-     },
-     {
-      "itemId": null,
-      "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
-      "summary": "Trainium 上跑 HF 模型更省事",
-      "sourceName": "",
-      "sourceUrl": "https://huggingface.co/blog/hf-torchneuron",
-      "sourceIconUrl": null,
-      "firstParty": true,
-      "publishedAt": "2026-10-19T00:00:00.000Z",
-      "available": true,
-      "otherSources": 0
-     }
-    ]
-   }
-  ],
+  "key": "2026-10-21",
+  "issueNumber": 3,
+  "title": "AI日报 · 2026-10-21",
+  "generatedAt": "2026-10-21T00:36:07.000Z",
+  "lead": null,
+  "leadItemId": null,
+  "overview": "今日重点 5 条：Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型、Hugging Face：TorchTPU 让 Transformers 与 Diffusers 原生跑在 TPU、OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线、Hugging Face 发布 AnyLanguageModel 1.0：苹果平台统一本地与托管模型 API、OpenAI：推进低资源编程语言上的编码能力。无固定漂移样本包，本日不含 samples。",
+  "highlights": [],
+  "sections": [],
   "flashes": [],
   "cover": null,
   "metrics": {
-   "totalEvents": 4,
-   "sourcesCount": 2,
-   "firstPartyEvents": 1,
-   "modelsReleased": 2
+   "totalEvents": 0,
+   "sourcesCount": 0,
+   "firstPartyEvents": 0,
+   "modelsReleased": 0
   },
   "readingMinutes": 1,
-  "prev": "2026-10-19",
+  "prev": "2026-10-20",
   "next": null
  },
- "today": "2026-10-20"
+ "today": "2026-10-21"
 }

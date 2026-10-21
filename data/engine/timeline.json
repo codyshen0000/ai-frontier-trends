@@ -275,7 +275,86 @@
   }
  ],
  "nextCursor": null,
- "hot": null,
+ "hot": [
+  {
+   "rank": 1,
+   "title": "DeepSeek 宣布开源内部推理框架 DeepInfer",
+   "heat": 14.5,
+   "trend": "down",
+   "storyPublicId": "2026-10-20-deepseek-deepinfer-opensource",
+   "itemId": "sha256:0ab5ba0e7b49bc37",
+   "participants": [
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
+    }
+   ],
+   "participantCount": 2,
+   "belowThreshold": true
+  },
+  {
+   "rank": 2,
+   "title": "美国要求联邦民用机构清除 DeepSeek AI",
+   "heat": 13.7,
+   "trend": "down",
+   "storyPublicId": "2026-10-20-us-deepseek-federal-ban",
+   "itemId": "sha256:50a63bd5f62e013b",
+   "participants": [
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2,
+   "belowThreshold": true
+  },
+  {
+   "rank": 3,
+   "title": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线",
+   "heat": 13.5,
+   "trend": "up",
+   "storyPublicId": "2026-10-21-openai-orchestra-bio",
+   "itemId": "sha256:1cfb6291fa158d05",
+   "participants": [
+    {
+     "name": "OpenAI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2
+  },
+  {
+   "rank": 4,
+   "title": "OpenAI：推进低资源编程语言上的编码能力",
+   "heat": 11.1,
+   "trend": "down",
+   "storyPublicId": "2026-10-20-openai-low-resource-langs",
+   "itemId": "sha256:1dbe22633003a2af",
+   "participants": [
+    {
+     "name": "OpenAI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2
+  }
+ ],
  "dayCounts": {
   "2026-10-20": 1,
   "2026-10-19": 2,

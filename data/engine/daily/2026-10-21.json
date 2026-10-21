@@ -1,0 +1,23 @@
+{
+ "kind": "daily",
+ "key": "2026-10-21",
+ "issueNumber": 3,
+ "title": "AI日报 · 2026-10-21",
+ "generatedAt": "2026-10-21T00:36:07.000Z",
+ "lead": null,
+ "leadItemId": null,
+ "overview": "今日重点 5 条：Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型、Hugging Face：TorchTPU 让 Transformers 与 Diffusers 原生跑在 TPU、OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线、Hugging Face 发布 AnyLanguageModel 1.0：苹果平台统一本地与托管模型 API、OpenAI：推进低资源编程语言上的编码能力。无固定漂移样本包，本日不含 samples。",
+ "highlights": [],
+ "sections": [],
+ "flashes": [],
+ "cover": null,
+ "metrics": {
+  "totalEvents": 0,
+  "sourcesCount": 0,
+  "firstPartyEvents": 0,
+  "modelsReleased": 0
+ },
+ "readingMinutes": 1,
+ "prev": "2026-10-20",
+ "next": null
+}
