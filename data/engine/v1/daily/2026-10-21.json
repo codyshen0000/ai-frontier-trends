@@ -3,7 +3,7 @@
  "key": "2026-10-21",
  "issueNumber": 3,
  "title": "AI日报 · 2026-10-21",
- "generatedAt": "2026-10-21T08:29:00.000Z",
+ "generatedAt": "2026-10-21T13:00:24.000Z",
  "lead": {
   "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
   "leadParagraph": "Mistral 推出 Voxtral 3 语音智能体 SDK，支持 50+ 语言"
@@ -172,6 +172,39 @@
    "sourceIconUrl": null,
    "firstParty": false,
    "publishedAt": "2026-10-18T11:49:49.000Z",
+   "available": true
+  },
+  {
+   "itemId": null,
+   "title": "Skyfall 推出工程世界模型 SKY-001",
+   "summary": "小红书·量子位：CAD 样本成本约降 150 倍，称首个工程世界模型。",
+   "sourceName": "小红书",
+   "sourceUrl": "https://www.xiaohongshu.com/explore/6ad6d383000000002701f4f0?xsec_token=AB9b2HhluXxKgc_RHdxGNpD8SoJwkzXlkXkYosP2XBokc=&xsec_source=pc_search",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-20T02:35:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:a695136067ef48da",
+   "title": "Momenta：世界模型加速，预判 2028 或迎 L4 拐点",
+   "summary": "曹旭东在物理 AI 与世界模型大会称智驾摩尔定律正加速。",
+   "sourceName": "IT之家",
+   "sourceUrl": "https://www.ithome.com/1/015/704.htm",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-21T02:41:06.000Z",
+   "available": true
+  },
+  {
+   "itemId": null,
+   "title": "OpenAI 高管上调「蒸馏」对中国追赶贡献估计",
+   "summary": "小红书转述 Dean Ball 将蒸馏贡献估计从约 30% 调至 50%。",
+   "sourceName": "小红书",
+   "sourceUrl": "https://www.xiaohongshu.com/explore/6ad595f7000000002f028199?xsec_token=ABhq9TqU2__HE1Xf_EoV3-qFeeJ8KzVncvWrSa1S63IGk%3D&xsec_source=pc_search",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-19T07:30:00.000Z",
    "available": true
   }
  ],
