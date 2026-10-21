@@ -280,7 +280,7 @@
    {
     "rank": 1,
     "title": "DeepSeek 宣布开源内部推理框架 DeepInfer",
-    "heat": 14.5,
+    "heat": 13.0,
     "trend": "down",
     "storyPublicId": "2026-10-20-deepseek-deepinfer-opensource",
     "itemId": "sha256:0ab5ba0e7b49bc37",
@@ -300,7 +300,7 @@
    {
     "rank": 2,
     "title": "美国要求联邦民用机构清除 DeepSeek AI",
-    "heat": 13.7,
+    "heat": 12.2,
     "trend": "down",
     "storyPublicId": "2026-10-20-us-deepseek-federal-ban",
     "itemId": "sha256:50a63bd5f62e013b",
@@ -320,8 +320,8 @@
    {
     "rank": 3,
     "title": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线",
-    "heat": 13.5,
-    "trend": "up",
+    "heat": 12.1,
+    "trend": "down",
     "storyPublicId": "2026-10-21-openai-orchestra-bio",
     "itemId": "sha256:1cfb6291fa158d05",
     "participants": [
@@ -339,7 +339,7 @@
    {
     "rank": 4,
     "title": "OpenAI：推进低资源编程语言上的编码能力",
-    "heat": 11.1,
+    "heat": 10.0,
     "trend": "down",
     "storyPublicId": "2026-10-20-openai-low-resource-langs",
     "itemId": "sha256:1dbe22633003a2af",
@@ -367,7 +367,7 @@
   {
    "rank": 1,
    "title": "DeepSeek 宣布开源内部推理框架 DeepInfer",
-   "heat": 14.5,
+   "heat": 13.0,
    "trend": "down",
    "storyPublicId": "2026-10-20-deepseek-deepinfer-opensource",
    "itemId": "sha256:0ab5ba0e7b49bc37",
@@ -387,7 +387,7 @@
   {
    "rank": 2,
    "title": "美国要求联邦民用机构清除 DeepSeek AI",
-   "heat": 13.7,
+   "heat": 12.2,
    "trend": "down",
    "storyPublicId": "2026-10-20-us-deepseek-federal-ban",
    "itemId": "sha256:50a63bd5f62e013b",
@@ -407,8 +407,8 @@
   {
    "rank": 3,
    "title": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线",
-   "heat": 13.5,
-   "trend": "up",
+   "heat": 12.1,
+   "trend": "down",
    "storyPublicId": "2026-10-21-openai-orchestra-bio",
    "itemId": "sha256:1cfb6291fa158d05",
    "participants": [
@@ -426,7 +426,7 @@
   {
    "rank": 4,
    "title": "OpenAI：推进低资源编程语言上的编码能力",
-   "heat": 11.1,
+   "heat": 10.0,
    "trend": "down",
    "storyPublicId": "2026-10-20-openai-low-resource-langs",
    "itemId": "sha256:1dbe22633003a2af",
@@ -444,7 +444,7 @@
   }
  ],
  "hot": {
-  "computedAt": "2026-10-21T01:28:37.000Z",
+  "computedAt": "2026-10-21T05:20:11.000Z",
   "windowHours": 48,
   "entries": [
    {
@@ -453,9 +453,9 @@
      "publicId": "2026-10-20-deepseek-deepinfer-opensource",
      "title": "DeepSeek 宣布开源内部推理框架 DeepInfer"
     },
-    "heat": 14.5,
+    "heat": 13.0,
     "trend": "down",
-    "trendPct": -16.2,
+    "trendPct": -15.6,
     "badges": [],
     "participantCount": 2,
     "sourceCount": 1,
@@ -478,10 +478,6 @@
      null,
      null,
      null,
-     null,
-     null,
-     null,
-     null,
      9.7,
      9.5,
      9.2,
@@ -497,7 +493,11 @@
      16.0,
      15.6,
      15.1,
-     14.7
+     14.7,
+     14.3,
+     13.9,
+     13.5,
+     13.1
     ],
     "summary": "IT之家称 DeepSeek 宣布将内部推理框架 DeepInfer 全面开源，希望帮助开发者与企业降低大规模推理的算力与能耗成本。",
     "latest": null,
@@ -510,9 +510,9 @@
      "publicId": "2026-10-20-us-deepseek-federal-ban",
      "title": "美国要求联邦民用机构清除 DeepSeek AI"
     },
-    "heat": 13.7,
+    "heat": 12.2,
     "trend": "down",
-    "trendPct": -16.0,
+    "trendPct": -16.4,
     "badges": [],
     "participantCount": 2,
     "sourceCount": 2,
@@ -538,10 +538,6 @@
      null,
      null,
      null,
-     null,
-     null,
-     null,
-     null,
      9.9,
      9.6,
      19.1,
@@ -555,7 +551,11 @@
      15.1,
      14.7,
      14.3,
-     13.9
+     13.9,
+     13.5,
+     13.1,
+     12.7,
+     12.4
     ],
     "summary": "多家媒体称，美国国土安全部等已要求联邦民用机构停止使用中国实验室 DeepSeek 的 AI 技术，并移除相关产品及基于其技术的第三方服务，理由是国家安全。",
     "latest": null,
@@ -568,12 +568,10 @@
      "publicId": "2026-10-21-openai-orchestra-bio",
      "title": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线"
     },
-    "heat": 13.5,
-    "trend": "up",
-    "trendPct": 136.8,
-    "badges": [
-     "rising"
-    ],
+    "heat": 12.1,
+    "trend": "down",
+    "trendPct": -15.4,
+    "badges": [],
     "participantCount": 2,
     "sourceCount": 2,
     "sourceNames": [
@@ -591,10 +589,6 @@
      }
     ],
     "spark": [
-     9.7,
-     9.4,
-     9.2,
-     8.9,
      8.7,
      8.4,
      8.2,
@@ -615,7 +609,11 @@
      14.9,
      14.5,
      14.1,
-     13.7
+     13.7,
+     13.3,
+     12.9,
+     12.5,
+     12.2
     ],
     "summary": "OpenAI 宣布收购药物开发协作平台 Orchestra Bio，团队与技术并入其生命科学模型与工具 Rosalind / Rosalind Workbench，目标是用智能体协助生物医药团队协调研发流程。",
     "latest": null,
@@ -627,9 +625,9 @@
      "publicId": "2026-10-20-openai-low-resource-langs",
      "title": "OpenAI：推进低资源编程语言上的编码能力"
     },
-    "heat": 11.1,
+    "heat": 10.0,
     "trend": "down",
-    "trendPct": -16.5,
+    "trendPct": -16.0,
     "badges": [],
     "participantCount": 2,
     "sourceCount": 2,
@@ -648,10 +646,6 @@
      }
     ],
     "spark": [
-     6.9,
-     6.7,
-     6.5,
-     6.3,
      6.1,
      5.9,
      5.8,
@@ -672,7 +666,11 @@
      12.3,
      12.0,
      11.6,
-     11.3
+     11.3,
+     11.0,
+     10.7,
+     10.4,
+     10.1
     ],
     "summary": "OpenAI 称改进模型在 COBOL、Fortran 等低资源编程语言上的表现；The Decoder 称在 MultiLangBench 上 GPT-6 Astra 跨 20 种语言测试通过率约 87.4%。",
     "latest": null,

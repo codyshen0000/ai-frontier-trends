@@ -2,7 +2,7 @@
  {
   "rank": 1,
   "title": "DeepSeek 宣布开源内部推理框架 DeepInfer",
-  "heat": 14.5,
+  "heat": 13.0,
   "trend": "down",
   "storyPublicId": "2026-10-20-deepseek-deepinfer-opensource",
   "itemId": "sha256:0ab5ba0e7b49bc37",
@@ -22,7 +22,7 @@
  {
   "rank": 2,
   "title": "美国要求联邦民用机构清除 DeepSeek AI",
-  "heat": 13.7,
+  "heat": 12.2,
   "trend": "down",
   "storyPublicId": "2026-10-20-us-deepseek-federal-ban",
   "itemId": "sha256:50a63bd5f62e013b",
@@ -42,8 +42,8 @@
  {
   "rank": 3,
   "title": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线",
-  "heat": 13.5,
-  "trend": "up",
+  "heat": 12.1,
+  "trend": "down",
   "storyPublicId": "2026-10-21-openai-orchestra-bio",
   "itemId": "sha256:1cfb6291fa158d05",
   "participants": [
@@ -61,7 +61,7 @@
  {
   "rank": 4,
   "title": "OpenAI：推进低资源编程语言上的编码能力",
-  "heat": 11.1,
+  "heat": 10.0,
   "trend": "down",
   "storyPublicId": "2026-10-20-openai-low-resource-langs",
   "itemId": "sha256:1dbe22633003a2af",
