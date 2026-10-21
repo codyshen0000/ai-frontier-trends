@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-20-hf-torchneuron-trainium",
  "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
- "status": "active",
+ "status": "watching",
  "reportCount": 1,
  "sourceCount": 1,
  "firstReportAt": "2026-10-19T00:00:00.000Z",
@@ -13,11 +13,11 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 2,
+  "participants48h": 1,
   "newParticipants6h": 0,
-  "recentReports24h": 1,
+  "recentReports24h": 0,
   "observationComplete": false,
-  "rank": 2
+  "rank": null
  },
  "developments": [
   {
@@ -68,11 +68,6 @@
   }
  ],
  "heat": [
-  {
-   "hour": "2026-10-19T00:00:00.000Z",
-   "heat": 10.0,
-   "participants": 1
-  },
   {
    "hour": "2026-10-19T01:00:00.000Z",
    "heat": 9.7,
@@ -252,11 +247,75 @@
    "hour": "2026-10-20T12:00:00.000Z",
    "heat": 9.9,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-20T13:00:00.000Z",
+   "heat": 9.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-20T14:00:00.000Z",
+   "heat": 9.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-20T15:00:00.000Z",
+   "heat": 9.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-20T16:00:00.000Z",
+   "heat": 8.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-20T17:00:00.000Z",
+   "heat": 8.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-20T18:00:00.000Z",
+   "heat": 8.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-20T19:00:00.000Z",
+   "heat": 8.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-20T20:00:00.000Z",
+   "heat": 7.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-20T21:00:00.000Z",
+   "heat": 7.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-20T22:00:00.000Z",
+   "heat": 7.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-20T23:00:00.000Z",
+   "heat": 7.2,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-21T00:00:00.000Z",
+   "heat": 4.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T01:00:00.000Z",
+   "heat": 4.3,
+   "participants": 1
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "Trainium 上跑 HF 模型更省事",
- "primaryUrl": "https://huggingface.co/blog/hf-torchneuron",
- "rankDelta": 0
+ "primaryUrl": "https://huggingface.co/blog/hf-torchneuron"
 }

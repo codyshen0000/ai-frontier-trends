@@ -14,7 +14,7 @@
  "latestReport": null,
  "whyHot": {
   "participants48h": 1,
-  "newParticipants6h": 1,
+  "newParticipants6h": 0,
   "recentReports24h": 1,
   "observationComplete": false,
   "rank": null
@@ -79,71 +79,6 @@
   }
  ],
  "heat": [
-  {
-   "hour": "2026-10-18T12:00:00.000Z",
-   "heat": 9.8,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-18T13:00:00.000Z",
-   "heat": 9.6,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-18T14:00:00.000Z",
-   "heat": 9.3,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-18T15:00:00.000Z",
-   "heat": 9.0,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-18T16:00:00.000Z",
-   "heat": 8.8,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-18T17:00:00.000Z",
-   "heat": 8.5,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-18T18:00:00.000Z",
-   "heat": 8.3,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-18T19:00:00.000Z",
-   "heat": 8.0,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-18T20:00:00.000Z",
-   "heat": 7.8,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-18T21:00:00.000Z",
-   "heat": 7.6,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-18T22:00:00.000Z",
-   "heat": 7.4,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-18T23:00:00.000Z",
-   "heat": 7.2,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-19T00:00:00.000Z",
-   "heat": 7.0,
-   "participants": 2
-  },
   {
    "hour": "2026-10-19T01:00:00.000Z",
    "heat": 6.8,
@@ -227,6 +162,71 @@
   {
    "hour": "2026-10-20T12:00:00.000Z",
    "heat": 8.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T13:00:00.000Z",
+   "heat": 8.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T14:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T15:00:00.000Z",
+   "heat": 8.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T16:00:00.000Z",
+   "heat": 7.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T17:00:00.000Z",
+   "heat": 7.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T18:00:00.000Z",
+   "heat": 7.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T19:00:00.000Z",
+   "heat": 7.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T20:00:00.000Z",
+   "heat": 7.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T21:00:00.000Z",
+   "heat": 6.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T22:00:00.000Z",
+   "heat": 6.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T23:00:00.000Z",
+   "heat": 6.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T00:00:00.000Z",
+   "heat": 6.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T01:00:00.000Z",
+   "heat": 6.1,
    "participants": 1
   }
  ],

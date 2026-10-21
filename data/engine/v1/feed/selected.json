@@ -8,6 +8,17 @@
  },
  "items": [
   {
+   "guid": "sha256:4c6292fc5ecba5f2",
+   "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
+   "summary": "Mistral 发布 Voxtral 3 语音智能体 SDK 与语音模型，转录 50+ 语言，TTS 35+ 语言，可欧盟托管或自部署。",
+   "originalUrl": "https://mistral.ai/news/voxtral-3/",
+   "pubDate": "2026-10-20T12:00:22.000Z",
+   "sourceName": "Mistral AI News",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-10-21-mistral-voxtral-3"
+  },
+  {
    "guid": "sha256:10f7f763ebef7da0",
    "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
    "summary": "The Decoder 称 Kling AI 4.0 支持最长约 30 秒、最多 10 张关键帧、提示词理解扩展，并含立体声、多语口型同步与更轻 Flash 变体。",

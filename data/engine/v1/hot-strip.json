@@ -1,8 +1,65 @@
 [
  {
   "rank": 1,
+  "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
+  "heat": 14.7,
+  "trend": "down",
+  "storyPublicId": "2026-10-21-mistral-voxtral-3",
+  "itemId": "sha256:4c6292fc5ecba5f2",
+  "participants": [
+   {
+    "name": "Mistral AI News",
+    "kind": "editorial"
+   },
+   {
+    "name": "The Decoder",
+    "kind": "editorial"
+   }
+  ],
+  "participantCount": 2
+ },
+ {
+  "rank": 2,
+  "title": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线",
+  "heat": 13.5,
+  "trend": "up",
+  "storyPublicId": "2026-10-21-openai-orchestra-bio",
+  "itemId": "sha256:1cfb6291fa158d05",
+  "participants": [
+   {
+    "name": "OpenAI News",
+    "kind": "editorial"
+   },
+   {
+    "name": "TechCrunch · AI",
+    "kind": "editorial"
+   }
+  ],
+  "participantCount": 2
+ },
+ {
+  "rank": 3,
+  "title": "OpenAI：推进低资源编程语言上的编码能力",
+  "heat": 11.1,
+  "trend": "down",
+  "storyPublicId": "2026-10-20-openai-low-resource-langs",
+  "itemId": "sha256:1dbe22633003a2af",
+  "participants": [
+   {
+    "name": "OpenAI News",
+    "kind": "editorial"
+   },
+   {
+    "name": "The Decoder",
+    "kind": "editorial"
+   }
+  ],
+  "participantCount": 2
+ },
+ {
+  "rank": 4,
   "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
-  "heat": 10.9,
+  "heat": 7.5,
   "trend": "down",
   "storyPublicId": "2026-10-19-minimax-m31-flash",
   "itemId": "sha256:8e4a9464917136de",
@@ -14,25 +71,6 @@
    {
     "name": "IT之家（全站，需关键词过滤）",
     "kind": "signal"
-   }
-  ],
-  "participantCount": 2
- },
- {
-  "rank": 2,
-  "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
-  "heat": 9.7,
-  "trend": "down",
-  "storyPublicId": "2026-10-20-hf-torchneuron-trainium",
-  "itemId": "sha256:5c52b7d34becd1cc",
-  "participants": [
-   {
-    "name": "Hugging Face Blog",
-    "kind": "editorial"
-   },
-   {
-    "name": "TechCrunch · AI",
-    "kind": "editorial"
    }
   ],
   "participantCount": 2

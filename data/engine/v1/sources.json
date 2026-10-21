@@ -15,6 +15,20 @@
    "homepage": "https://www.ithome.com"
   },
   {
+   "sourceId": "rss-mistral",
+   "name": "Mistral AI News",
+   "tier": "T1",
+   "kind": "editorial",
+   "homepage": "https://mistral.ai"
+  },
+  {
+   "sourceId": "rss-openai-news",
+   "name": "OpenAI News",
+   "tier": "T1",
+   "kind": "editorial",
+   "homepage": "https://openai.com"
+  },
+  {
    "sourceId": "rss-qbitai",
    "name": "量子位",
    "tier": "T2",
