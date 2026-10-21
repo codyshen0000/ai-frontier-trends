@@ -1,0 +1,258 @@
+{
+ "site": "前沿趋势",
+ "contract_version": "1.1",
+ "mode": "production",
+ "data_as_of": "2026-10-21T12:27:39+08:00",
+ "data_as_of_label": "数据截至 2026-10-21 12:27（北京时间）",
+ "generated_at": "2026-10-21T13:20:00+08:00",
+ "hot_rule_version": "heat-v1-48h-halflife24h (前沿情报 heat48h.py 1.1)",
+ "hot_computed_at": "2026-10-21T13:20:00+08:00",
+ "window_hours": 48,
+ "spark_points": 25,
+ "page_size": 20,
+ "counts": {
+  "cards": 6,
+  "pages": 1,
+  "events": 9,
+  "hot_entries": 4,
+  "search_docs": 22,
+  "feed_items": 6,
+  "passed_events": 9,
+  "below_threshold_events": 0,
+  "redirects": 0,
+  "hot_snapshots": 14,
+  "covers": 1
+ },
+ "last_round": {
+  "batch_id": "2026-10-21T1227",
+  "status": "ok",
+  "finished_at": "2026-10-21T12:38:25+08:00"
+ },
+ "batches": [
+  {
+   "batch_id": "2026-10-19T1124",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-19T1221",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-19T1323",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-19T1418",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-19T1524",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-19T1627",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-19T1726",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-19T1825",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-19T1923",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-19T2025",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-19T2136",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-19T2223",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-19T2347",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-20T0051",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-20T0121",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-20T0224",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-20T0321",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-20T0418",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-20T0522",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-20T0621",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-20T1055",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-20T1122",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-20T1218",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-20T1320",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-20T1424",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-20T1528",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-20T1623",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-20T1726",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-20T1822",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-20T1923",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-20T2025",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-20T2123",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-20T2221",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-20T2323",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T0026",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T0118",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T0221",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T0321",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T0427",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T0520",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T0624",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T0728",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T0826",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T0928",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T1019",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T1118",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T1227",
+   "status": "ok"
+  }
+ ],
+ "files": [
+  "api/index.json",
+  "events/2026-10-19-deepseek-v41-flash-1017.json",
+  "events/2026-10-19-minimax-m31-flash.json",
+  "events/2026-10-19-nvidia-open-models-agents-pcs.json",
+  "events/2026-10-20-hf-torchneuron-trainium.json",
+  "events/2026-10-20-kling-ai-4-0.json",
+  "events/2026-10-20-openai-low-resource-langs.json",
+  "events/2026-10-21-mistral-voxtral-3.json",
+  "events/2026-10-21-openai-orchestra-bio.json",
+  "events/2026-10-21-openai-terminal-x-eval.json",
+  "events/index.json",
+  "feed/selected.json",
+  "hot-snapshots/2026-10-19T12.json",
+  "hot-snapshots/2026-10-19T13.json",
+  "hot-snapshots/2026-10-19T15.json",
+  "hot-snapshots/2026-10-19T16.json",
+  "hot-snapshots/2026-10-19T19.json",
+  "hot-snapshots/2026-10-19T20.json",
+  "hot-snapshots/2026-10-20T08.json",
+  "hot-snapshots/2026-10-20T10.json",
+  "hot-snapshots/2026-10-20T13.json",
+  "hot-snapshots/2026-10-20T15.json",
+  "hot-snapshots/2026-10-20T16.json",
+  "hot-snapshots/2026-10-20T20.json",
+  "hot-snapshots/2026-10-21T09.json",
+  "hot-snapshots/2026-10-21T13.json",
+  "hot-strip.json",
+  "hot.json",
+  "meta.json",
+  "redirects.json",
+  "search/source.json",
+  "sources.json",
+  "timeline/index.json",
+  "timeline/page-1.json"
+ ],
+ "next_round": "2026-10-21T15:25:00+08:00"
+}

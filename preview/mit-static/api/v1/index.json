@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "data_as_of": "2026-10-19T15:24:49+08:00",
+  "data_as_of": "2026-10-21T12:27:39+08:00",
   "path_base": "site",
   "paths": "relative to the site base path (GitHub Pages prefix /ai-frontier-trends/), not to this JSON file",
   "files": [
@@ -37,6 +37,16 @@
     {
       "path": "api/v1/timeline/latest.json",
       "note": "时间线最新一页",
+      "schema_version": "1.1.0"
+    },
+    {
+      "path": "api/v1/daily/latest.json",
+      "note": "最新日报",
+      "schema_version": "1.1.0"
+    },
+    {
+      "path": "api/v1/daily/2026-10-20.json",
+      "note": "日报 2026-10-20",
       "schema_version": "1.1.0"
     }
   ]

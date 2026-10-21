@@ -31,9 +31,7 @@ export const FeedItem = memo(function FeedItem({ item, group, filters, read = fa
   const originalUrl = "originalUrl" in item && typeof (item as { originalUrl?: string }).originalUrl === "string"
     ? (item as { originalUrl: string }).originalUrl
     : "";
-  const itemHref = originalUrl && /^https?:\/\//i.test(originalUrl) && !/example\.com/i.test(originalUrl)
-    ? originalUrl
-    : `/items/${item.id}`;
+  const itemHref = `/items/${item.id}`;
   const open = () => {
     rememberPreview(item);
     onOpen?.(item.id);

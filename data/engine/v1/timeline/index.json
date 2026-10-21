@@ -1,0 +1,14 @@
+{
+ "pageSize": 20,
+ "pageCount": 1,
+ "total": 6,
+ "pages": [
+  {
+   "page": 1,
+   "path": "timeline/page-1.json",
+   "count": 6,
+   "firstAnchorAt": "2026-10-20T12:00:22.000Z",
+   "lastAnchorAt": "2026-10-17T10:33:28.000Z"
+  }
+ ]
+}

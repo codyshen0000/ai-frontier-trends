@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>前沿趋势</title>
+    <link>https://codyshen0000.github.io/ai-frontier-trends/</link>
+    <description>前沿趋势 · 产品</description>
+    <language>zh-cn</language>
+    <item>
+      <title>Mistral 发布 Voxtral 3：语音智能体 SDK 与语音模型</title>
+      <link>https://mistral.ai/news/voxtral-3/</link>
+      <guid isPermaLink="false">sha256:4c6292fc5ecba5f2</guid>
+      <pubDate>Tue, 20 Oct 2026 12:00:22 GMT</pubDate>
+      <description>Mistral 发布 Voxtral 3 语音智能体 SDK 与语音模型，转录 50+ 语言，TTS 35+ 语言，可欧盟托管或自部署。</description>
+      <category>产品</category>
+    </item>
+    <item>
+      <title>Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium</title>
+      <link>https://huggingface.co/blog/hf-torchneuron</link>
+      <guid isPermaLink="false">sha256:5c52b7d34becd1cc</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Hugging Face 博客介绍 TorchNeuron，称在 AWS Trainium 上运行 HF 模型比以往更容易。</description>
+      <category>产品</category>
+    </item>
+  </channel>
+</rss>

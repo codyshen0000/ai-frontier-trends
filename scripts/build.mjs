@@ -1,5 +1,5 @@
 import { spawnSync } from "node:child_process";
-import { cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { cpSync, existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { marked } from "marked";
@@ -445,16 +445,28 @@ export function normalizeResponsiveImageAttrs(html) {
     .replace(/\bimageSizes=/g, "imagesizes=");
 }
 
+function mitPageDest(file) {
+  if (file.startsWith("weekly/") && file.endsWith(".html")) return `/${file.replace(/\.html$/, "")}/`;
+  if (file === "daily-archive.html") return "/daily/archive/";
+  if (file.startsWith("item-") && file.endsWith(".html")) return `/items/${file.slice("item-".length, -".html".length)}/`;
+  if (file.startsWith("event-") && file.endsWith(".html")) return `/story/${file.slice("event-".length, -".html".length)}/`;
+  const page = file.replace(/\.html$/, "");
+  return page === "index" ? "/" : `/${page}/`;
+}
+
 export function rewriteMitStatic(html, fromPath) {
-  const prefixedPages = String(html).replace(/(href|src|action)="((?:index|hot|daily|search|starred|more|weekly)\.html|weekly\/[^"]+\.html)([^"]*)"/g, (_, attr, file, suffix) => {
-    if (file.startsWith("weekly/") && file.endsWith(".html")) {
-      const dest = `/${file.replace(/\.html$/, "")}/`;
+  const prefixedPages = String(html).replace(
+    /(href|src|action)="((?:index|hot|daily|daily-archive|search|starred|more|weekly|monthly|all|topics|item-[^"]+|event-[^"]+)\.html|weekly\/[^"]+\.html)([^"]*)"/g,
+    (_, attr, file, suffix) => {
+      const dest = mitPageDest(file);
+      // Same HTML is copied to / and /live/. On the site home, index.html → ./ is a
+      // self-link; emit #main instead. /live/ still rewrites index.html to ../ .
+      if ((fromPath === "/" || fromPath === "") && dest === "/" && !suffix) {
+        return `${attr}="#main"`;
+      }
       return `${attr}="${hrefBetween(fromPath, dest)}${suffix}"`;
-    }
-    const page = file.replace(/\.html$/, "");
-    const dest = page === "index" ? "/" : `/${page}/`;
-    return `${attr}="${hrefBetween(fromPath, dest)}${suffix}"`;
-  });
+    },
+  );
   const prefix = mitAssetPrefix(fromPath);
   const withAssets = normalizeResponsiveImageAttrs(rewriteMitAssetAttrs(prefixedPages, prefix));
   const base = prefix || "./";
@@ -508,8 +520,29 @@ function publishMitStatic() {
   if (existsSync(join(src, "starred.html"))) {
     writePage("/starred/", injectBeforeHeadEnd(rewriteMitStatic(readFileSync(join(src, "starred.html"), "utf8"), "/starred/"), faviconLinks("/starred/")));
   }
-  if (existsSync(join(src, "more.html"))) {
-    writePage("/more/", injectBeforeHeadEnd(rewriteMitStatic(readFileSync(join(src, "more.html"), "utf8"), "/more/"), faviconLinks("/more/")));
+  // Keep remaining-A /more/ (Studio / 本周主线 / 信号表). MIT more.html is preview-only.
+  const extraPages = [
+    ["all.html", "/all/"],
+    ["topics.html", "/topics/"],
+    ["daily-archive.html", "/daily/archive/"],
+    ["monthly.html", "/monthly/"],
+  ];
+  for (const [file, dest] of extraPages) {
+    if (existsSync(join(src, file))) {
+      writePage(dest, injectBeforeHeadEnd(rewriteMitStatic(readFileSync(join(src, file), "utf8"), dest), faviconLinks(dest)));
+    }
+  }
+  for (const name of readdirSync(src)) {
+    if (!name.endsWith(".html")) continue;
+    if (name.startsWith("item-")) {
+      const id = name.slice("item-".length, -".html".length);
+      const dest = `/items/${id}/`;
+      writePage(dest, injectBeforeHeadEnd(rewriteMitStatic(readFileSync(join(src, name), "utf8"), dest), faviconLinks(dest)));
+    } else if (name.startsWith("event-")) {
+      const id = name.slice("event-".length, -".html".length);
+      const dest = `/story/${id}/`;
+      writePage(dest, injectBeforeHeadEnd(rewriteMitStatic(readFileSync(join(src, name), "utf8"), dest), faviconLinks(dest)));
+    }
   }
 }
 

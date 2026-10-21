@@ -14,16 +14,32 @@ import type { HotResponse, ReportDetail } from "@aihot/contracts/site";
 import { EmptyState } from "../../../vendor/mit/apps/web/app/components/ui/Page";
 import { ThemeSwitch } from "../../../vendor/mit/apps/web/app/components/shell/ThemeSwitch";
 import { groupByEvent } from "../../engine/groupByEvent.mjs";
-import { builtAt, daily, dailyIndex, dataAsOf, hasSelectedFeed, hot, timeline as siteTimeline, today } from "./site";
+import {
+  allTimeline,
+  builtAt,
+  daily,
+  dailyIndex,
+  dataAsOf,
+  events,
+  hasSelectedFeed,
+  hot,
+  monthlyIndex,
+  timeline as siteTimeline,
+  today,
+  topics,
+  weeklyIndex,
+} from "./site";
 import { DataAsOf, RssLink } from "./asof";
 import { Link } from "./react-router";
 import { HEAT_METHOD_COPY } from "@ft/heat-copy";
+import { AllFeed, EventDetail, ItemDetail, ReportEmpty, TopicsIndex } from "./detail";
+import type { SiteEvent, SiteItemPublic } from "../../engine/site-data.ts";
 
 const DATA_AS_OF = dataAsOf;
 const BUILT_AT = builtAt || new Date().toISOString();
 const timeline = {
   ...siteTimeline,
-  cards: groupByEvent(siteTimeline.cards || []),
+  cards: groupByEvent(siteTimeline.cards || [], { events }),
 };
 
 function hotWithoutCover(data: HotResponse): HotResponse {
@@ -46,7 +62,7 @@ function Shell({ pathname, children }: { pathname: string; children: ReactNode }
         </a>
         <Sidebar changelogVersion={null} />
         <main id="main" className="min-w-0 flex-1 pb-[calc(72px+env(safe-area-inset-bottom))] lg:px-7 lg:pb-[72px] lg:pt-6">
-          <div className={`mx-auto w-full pl-[var(--gutter-l)] pr-[var(--gutter-r)] lg:px-0 ${pathname.startsWith("/daily") ? "max-w-none" : "max-w-[640px] lg:max-w-[var(--page-max-wide)]"}`}>
+          <div className={`mx-auto w-full pl-[var(--gutter-l)] pr-[var(--gutter-r)] lg:px-0 ${/^\/(daily|weekly|monthly)/.test(pathname) ? "max-w-none" : "max-w-[640px] lg:max-w-[var(--page-max-wide)]"}`}>
             {children}
           </div>
         </main>
@@ -104,13 +120,12 @@ export function HotScreen({ emptyCover = false }: { emptyCover?: boolean }) {
 }
 
 export function DailyScreen({ emptyCover = false }: { emptyCover?: boolean }) {
+  const rss = <AsOfAndRss rssHref={hasSelectedFeed ? "../feed.xml" : "../feed/weekly.xml"} />;
   if (!daily) {
     return (
       <Shell pathname="/daily">
-        <div id="report-start">
-          <EmptyState title="过去 24 小时没有达到上榜条件的事件。" />
-        </div>
-        <AsOfAndRss rssHref={hasSelectedFeed ? "../feed.xml" : "../feed/weekly.xml"} />
+        <ReportEmpty kind="daily" index={dailyIndex} today={today} title="日报" copy="过去 24 小时没有达到上榜条件的事件。" />
+        {rss}
       </Shell>
     );
   }
@@ -120,7 +135,76 @@ export function DailyScreen({ emptyCover = false }: { emptyCover?: boolean }) {
       <ReportLayout kind="daily" index={dailyIndex} current={report.key} today={today} outline={reportOutline(report)}>
         <ReportPaper report={report} index={dailyIndex} />
       </ReportLayout>
+      {rss}
+    </Shell>
+  );
+}
+
+export function DailyArchiveScreen() {
+  return (
+    <Shell pathname="/daily/archive">
+      <ReportEmpty
+        kind="daily"
+        index={dailyIndex}
+        today={today}
+        title="日报合订本"
+        copy={dailyIndex.length ? "按月查看往期日报。" : "暂无往期日报。"}
+      />
       <AsOfAndRss rssHref={hasSelectedFeed ? "../feed.xml" : "../feed/weekly.xml"} />
+    </Shell>
+  );
+}
+
+export function WeeklyScreen() {
+  return (
+    <Shell pathname="/weekly">
+      <ReportEmpty kind="weekly" index={weeklyIndex} today={today} title="周报" copy="暂无引擎周报。" />
+      <AsOfAndRss rssHref="../feed/weekly.xml" />
+    </Shell>
+  );
+}
+
+export function MonthlyScreen() {
+  return (
+    <Shell pathname="/monthly">
+      <ReportEmpty kind="monthly" index={monthlyIndex} today={today} title="月报" copy="暂无月报。" />
+      <AsOfAndRss rssHref={hasSelectedFeed ? "../feed.xml" : "../feed/weekly.xml"} />
+    </Shell>
+  );
+}
+
+export function AllScreen() {
+  return (
+    <Shell pathname="/all">
+      <AllFeed timeline={allTimeline} />
+      <AsOfAndRss rssHref={hasSelectedFeed ? "feed.xml" : "feed/weekly.xml"} />
+    </Shell>
+  );
+}
+
+export function TopicsScreen() {
+  return (
+    <Shell pathname="/topics">
+      <TopicsIndex topics={topics} />
+      <DataAsOf dataAsOf={DATA_AS_OF} builtAt={BUILT_AT} />
+    </Shell>
+  );
+}
+
+export function ItemScreen({ item, event }: { item: SiteItemPublic; event?: SiteEvent | null }) {
+  return (
+    <Shell pathname={`/items/${item.id}`}>
+      <ItemDetail item={item} event={event} />
+      <DataAsOf dataAsOf={DATA_AS_OF} builtAt={BUILT_AT} />
+    </Shell>
+  );
+}
+
+export function EventScreen({ event }: { event: SiteEvent }) {
+  return (
+    <Shell pathname={`/story/${event.publicId}`}>
+      <EventDetail event={event} />
+      <DataAsOf dataAsOf={DATA_AS_OF} builtAt={BUILT_AT} />
     </Shell>
   );
 }

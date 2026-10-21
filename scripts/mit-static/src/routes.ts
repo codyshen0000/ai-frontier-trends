@@ -1,26 +1,26 @@
 /** Static-site route table. Unknown paths never fall back to home. */
 import generated from "./covers.generated.json";
-import { itemUrls } from "./site";
+import { eventIds, itemIds, itemUrls } from "./site";
 
 export const PAGE_FILE = {
   "/": "index.html",
   "/hot": "hot.html",
   "/daily": "daily.html",
+  "/daily/archive": "daily-archive.html",
   "/weekly": "weekly.html",
+  "/monthly": "monthly.html",
   "/search": "search.html",
   "/starred": "starred.html",
   "/more": "more.html",
+  "/all": "all.html",
+  "/topics": "topics.html",
 } as const;
 
 export const UNBUILT_PATHS = new Set([
-  "/topics",
   "/about",
   "/agent",
   "/changelog",
   "/feedback",
-  "/monthly",
-  "/all",
-  "/daily/archive",
 ]);
 
 export const WEEKLY_ISSUES = ["2026-10-12", "2026-10-18"] as const;
@@ -59,6 +59,18 @@ export function itemAnchorId(id: string): string {
   return `s-${id}`;
 }
 
+function safePageId(id: string): string {
+  return String(id || "").replaceAll(":", "-");
+}
+
+export function itemPageFile(id: string): string {
+  return `item-${safePageId(id)}.html`;
+}
+
+export function eventPageFile(id: string): string {
+  return `event-${safePageId(id)}.html`;
+}
+
 export type ResolvedHref =
   | { kind: "unbuilt"; href: "" }
   | { kind: "external"; href: string }
@@ -69,11 +81,23 @@ function pageFileFor(pathname: string): string | null {
   if (pathname === "/" || pathname === "") return PAGE_FILE["/"];
   if (pathname in PAGE_FILE) return PAGE_FILE[pathname as keyof typeof PAGE_FILE];
   if (pathname.startsWith("/hot")) return PAGE_FILE["/hot"];
+  if (pathname.startsWith("/daily/archive")) return PAGE_FILE["/daily/archive"];
   if (pathname.startsWith("/daily")) return PAGE_FILE["/daily"];
   if (pathname.startsWith("/weekly")) return PAGE_FILE["/weekly"];
+  if (pathname.startsWith("/monthly")) return PAGE_FILE["/monthly"];
   if (pathname.startsWith("/search")) return PAGE_FILE["/search"];
   if (pathname.startsWith("/starred")) return PAGE_FILE["/starred"];
   if (pathname.startsWith("/more")) return PAGE_FILE["/more"];
+  if (pathname.startsWith("/all")) return PAGE_FILE["/all"];
+  if (pathname.startsWith("/topics")) return PAGE_FILE["/topics"];
+  if (pathname.startsWith("/items/")) {
+    const id = pathname.split("/").filter(Boolean)[1] || "";
+    return itemIds.has(id) ? itemPageFile(id) : null;
+  }
+  if (pathname.startsWith("/story/") || pathname.startsWith("/events/")) {
+    const id = pathname.split("/").filter(Boolean)[1] || "";
+    return eventIds.has(id) ? eventPageFile(id) : null;
+  }
   return null;
 }
 
@@ -104,12 +128,24 @@ export function resolveHref(
   const q = query ? `?${query}` : "";
   const h = hash ? `#${hash}` : "";
 
-  if (path.startsWith("/story/") || path.startsWith("/items/")) {
+  if (path.startsWith("/items/")) {
     const id = path.split("/").filter(Boolean)[1] || "";
-    const url = itemSourceUrl(id);
-    if (url) return { kind: "external", href: url };
-    const dest = `${PAGE_FILE["/hot"]}#${itemAnchorId(id)}`;
-    return { kind: "hash", href: dest };
+    if (itemIds.has(id)) {
+      const href = `${itemPageFile(id)}${q}${h}`;
+      if (!h && !q && samePageFile(href, currentPath)) return { kind: "hash", href: "#main" };
+      return { kind: "page", href };
+    }
+    return { kind: "unbuilt", href: "" };
+  }
+
+  if (path.startsWith("/story/") || path.startsWith("/events/")) {
+    const id = path.split("/").filter(Boolean)[1] || "";
+    if (eventIds.has(id)) {
+      const href = `${eventPageFile(id)}${q}${h}`;
+      if (!h && !q && samePageFile(href, currentPath)) return { kind: "hash", href: "#main" };
+      return { kind: "page", href };
+    }
+    return { kind: "unbuilt", href: "" };
   }
 
   if (path.startsWith("/weekly/")) {
@@ -117,17 +153,20 @@ export function resolveHref(
     if ((WEEKLY_ISSUES as readonly string[]).includes(key)) {
       return { kind: "page", href: `weekly/${key}.html${q}${h}` };
     }
-    return { kind: "unbuilt", href: "" };
+    return { kind: "page", href: `${PAGE_FILE["/weekly"]}${q}${h}` };
+  }
+
+  if (path === "/daily/archive" || path.startsWith("/daily/archive/")) {
+    return { kind: "page", href: `${PAGE_FILE["/daily/archive"]}${q}${h}` };
   }
 
   if (path.startsWith("/daily/")) {
     const key = path.slice("/daily/".length).replace(/\/$/, "");
-    if (!key || key === "archive") return { kind: "unbuilt", href: "" };
+    if (!key) return { kind: "page", href: `${PAGE_FILE["/daily"]}${q}${h}` };
     const dest = `${PAGE_FILE["/daily"]}#d-${key}`;
     return { kind: "hash", href: dest };
   }
 
-  if (path.startsWith("/monthly")) return { kind: "unbuilt", href: "" };
   if (UNBUILT_PATHS.has(path)) return { kind: "unbuilt", href: "" };
 
   const mapped = PAGE_FILE[path as keyof typeof PAGE_FILE];
@@ -135,12 +174,10 @@ export function resolveHref(
 
   const href = `${mapped}${q}${h}`;
   if (!h && !q && samePageFile(href, currentPath)) {
-    // 精选 is copied to /live/; #main would stay on that copy. Emit index.html
-    // so rewriteMitStatic can turn it into a base-relative site home (./ or ../).
     if (path === "/" || mapped === PAGE_FILE["/"]) {
       return { kind: "page", href: PAGE_FILE["/"] };
     }
-    return { kind: "hash", href: currentPath.startsWith("/daily") ? "#report-start" : "#main" };
+    return { kind: "hash", href: /^\/(daily|weekly|monthly)/.test(currentPath) ? "#report-start" : "#main" };
   }
   if (h) return { kind: "hash", href };
   return { kind: "page", href };

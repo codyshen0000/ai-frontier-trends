@@ -1,0 +1,53 @@
+{
+ "sources": [
+  {
+   "sourceId": "rss-hf-blog",
+   "name": "Hugging Face Blog",
+   "tier": "T1",
+   "kind": "editorial",
+   "homepage": "https://huggingface.co"
+  },
+  {
+   "sourceId": "rss-ithome",
+   "name": "IT之家（全站，需关键词过滤）",
+   "tier": "T2",
+   "kind": "signal",
+   "homepage": "https://www.ithome.com"
+  },
+  {
+   "sourceId": "rss-mistral",
+   "name": "Mistral AI News",
+   "tier": "T1",
+   "kind": "editorial",
+   "homepage": "https://mistral.ai"
+  },
+  {
+   "sourceId": "rss-openai-news",
+   "name": "OpenAI News",
+   "tier": "T1",
+   "kind": "editorial",
+   "homepage": "https://openai.com"
+  },
+  {
+   "sourceId": "rss-qbitai",
+   "name": "量子位",
+   "tier": "T2",
+   "kind": "editorial",
+   "homepage": "https://www.qbitai.com"
+  },
+  {
+   "sourceId": "rss-techcrunch-ai",
+   "name": "TechCrunch · AI",
+   "tier": "T2",
+   "kind": "editorial",
+   "homepage": "https://techcrunch.com"
+  },
+  {
+   "sourceId": "rss-the-decoder",
+   "name": "The Decoder",
+   "tier": "T2",
+   "kind": "editorial",
+   "homepage": "https://the-decoder.com"
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>前沿趋势</title>
+    <link>https://codyshen0000.github.io/ai-frontier-trends/</link>
+    <description>前沿趋势 · 论文</description>
+    <language>zh-cn</language>
+    <item>
+      <title>四个 Gemini 4 Argon 智能体无人类协助通关 Minecraft</title>
+      <link>https://the-decoder.com/four-gemini-4-argon-agents-beat-minecraft-without-any-human-help/</link>
+      <guid isPermaLink="false">d0tl7eidxoifx1h07wrw9rw6k</guid>
+      <pubDate>Sun, 18 Oct 2026 12:39:51 GMT</pubDate>
+      <description>Google DeepMind 团队让四个运行 Gemini 4 Argon 的 AI 智能体在随机生成的世界中自主通关 Minecraft，击杀末影龙，全程无人类输入。</description>
+      <category>论文</category>
+    </item>
+    <item>
+      <title>Google Research 介绍让 AI 智能体落地湿实验室的三项研究</title>
+      <link>https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/</link>
+      <guid isPermaLink="false">pl94tiwbqpaoeuoulcdwb9z6v</guid>
+      <pubDate>Fri, 16 Oct 2026 18:11:34 GMT</pubDate>
+      <description>Google Research 发布博客，介绍三项把 AI 智能体与真实湿实验室实验衔接起来的研究：VERID 框架为实验室工作单元建立语义数字孪生，让智能体在动作前检查三维状态、做虚拟试运行并拦截物理上不可行的指令。</description>
+      <category>论文</category>
+    </item>
+    <item>
+      <title>微软研究院推出基于证明的通用计算系统 Magnetar</title>
+      <link>https://www.microsoft.com/en-us/research/blog/proof-based-general-purpose-computing-with-magnetar/</link>
+      <guid isPermaLink="false">dmf6dfuwx08hkwucpyk5v0vli</guid>
+      <pubDate>Thu, 15 Oct 2026 16:00:00 GMT</pubDate>
+      <description>微软研究院发布零知识虚拟机 Magnetar，可直接证明用 Rust、Go 或 C 编写的程序执行过程，在 15 个基准程序上平均比现有最快的同类 zkVM 快 10 到 39 倍。</description>
+      <category>论文</category>
+    </item>
+    <item>
+      <title>Google 发布地理空间推理智能体技术报告并扩大 Earth AI 早期访问</title>
+      <link>https://research.google/blog/putting-earth-ai-to-work-geospatial-agents-for-our-planets-biggest-challenges/</link>
+      <guid isPermaLink="false">pm5shqi6ekqwkng9dvgjsm8p0</guid>
+      <pubDate>Wed, 14 Oct 2026 16:14:00 GMT</pubDate>
+      <description>Google Research 发布地理空间推理智能体技术报告，在 CBGB、UnivEARTH 及新构建的 GeoExpertQueries、GeoKTools 四个基准上对比四种智能体配置，结果显示接入 Earth AI 专用工具能显著提升定量空间任务表现，而开放式问题还需前置规划环节。</description>
+      <category>论文</category>
+    </item>
+  </channel>
+</rss>

@@ -104,6 +104,7 @@ export interface SiteFeedItem {
   x: SiteFeedXView | null;
   sameEvent?: { id: string; title: string } | null;
   originalUrl?: string;
+  originalTitle?: string | null;
   storyPublicId?: string;
   belowThreshold?: true;
   /** B2 display fields; MIT hot cards already render these. */
@@ -408,6 +409,43 @@ export interface SiteSearchSource {
   docs: SiteSearchDoc[];
 }
 
+/** Public item detail. No `score`. Body is only present when the engine supplied it. */
+export interface SiteItemPublic {
+  id: string;
+  title: string;
+  originalTitle?: string | null;
+  summary: string | null;
+  reason: string | null;
+  source: SiteSourceRef;
+  originalUrl?: string;
+  publishedAt: string | null;
+  timelineAt: string;
+  category: SiteCategoryKey | null;
+  tags: string[];
+  selected: boolean;
+  channel: "news" | "x";
+  x: SiteFeedXView | null;
+  storyPublicId?: string;
+  handle?: string | null;
+  topics: Array<{ slug: string; name: string }>;
+  hasTranslation: boolean;
+  bodyLanguage?: "zh" | "original";
+  readingMode?: "full" | "summary-only";
+  body: {
+    zh: string | null;
+    original: string | null;
+    zhKind: "translation" | "original" | null;
+    complete: boolean;
+  } | null;
+  relatedStories?: Array<{ publicId: string; title: string }>;
+}
+
+export interface SiteTopic {
+  slug: string;
+  name: string;
+  count: number;
+}
+
 /**
  * Typed object returned by `loadEngineData()`.
  * `data_as_of` / `built_at` are always resolved strings (built_at falls back to generated_at).
@@ -431,6 +469,11 @@ export interface EngineBundle {
   redirects: SiteRedirect[];
   sources: SiteSourceRow[];
   search: SiteSearchSource | null;
+  items: SiteItemPublic[];
+  topics: SiteTopic[];
+  allTimeline: SiteTimelinePage | null;
+  weeklyIndex: SiteDailyIndexEntry[];
+  monthlyIndex: SiteDailyIndexEntry[];
 }
 
 /** Thrown by the loader so `build.mjs` (phase 2) can catch and fall back. */

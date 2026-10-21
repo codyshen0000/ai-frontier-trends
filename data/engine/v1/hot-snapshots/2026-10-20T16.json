@@ -1,0 +1,17 @@
+{
+ "computedAt": "2026-10-20T08:23:00.000Z",
+ "entries": [
+  {
+   "rank": 1,
+   "publicId": "2026-10-19-minimax-m31-flash",
+   "heat": 12.3,
+   "participantCount": 2
+  },
+  {
+   "rank": 2,
+   "publicId": "2026-10-20-hf-torchneuron-trainium",
+   "heat": 10.9,
+   "participantCount": 2
+  }
+ ]
+}

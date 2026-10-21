@@ -1,0 +1,237 @@
+{
+ "publicId": "2026-10-19-deepseek-v41-flash-1017",
+ "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
+ "status": "active",
+ "reportCount": 3,
+ "sourceCount": 3,
+ "firstReportAt": "2026-10-17T10:33:28.000Z",
+ "latestAt": "2026-10-20T07:57:37.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017：基准更好、完成任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API。The Decoder 与量子位均有报道。",
+ "excerpt": null,
+ "latest": "IT之家称 V4.1-Flash-1017（Max）登顶 Agent Arena 与 Code Arena: WebDev 开源榜、总榜第 11；约 7498 次会话，任务成本中位数约 0.18 美元。",
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-19-deepseek-v41-flash-1017",
+   "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
+   "firstReportAt": "2026-10-17T10:33:28.000Z",
+   "reportCount": 3,
+   "representative": {
+    "id": "sha256:931ff0f85ef4bf70",
+    "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
+    "summary": "DeepSeek 发布开放权重 V4.1-Flash-1017：基准更好、任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API，每千次 0.75 美元。",
+    "source": {
+     "name": "The Decoder",
+     "firstParty": false
+    },
+    "publishedAt": "2026-10-17T10:33:28.000Z",
+    "selected": true,
+    "originalUrl": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/"
+   }
+  }
+ ],
+ "officialReports": [],
+ "timeline": [
+  {
+   "id": "sha256:110424e91287f452",
+   "title": "DeepSeek V4.1 Flash-1017 登顶 Agent Arena 开源榜",
+   "summary": "IT之家称 DeepSeek-V4.1-Flash-1017（Max）登顶 Agent Arena 与 Code Arena: WebDev 开源榜、总榜第 11；约 7498 次会话，任务成本中位数约 0.18 美元。",
+   "source": {
+    "name": "IT之家（全站，需关键词过滤）",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-20T07:57:37.000Z",
+   "selected": false,
+   "originalUrl": "https://www.ithome.com/1/015/370.htm"
+  },
+  {
+   "id": "sha256:c991932364dcef47",
+   "title": "量子位：DeepSeek 发布 V4.1-Flash-1017 并开放搜索 API",
+   "summary": "量子位报道 DeepSeek 新版本 V4.1-Flash-1017 发布，同时开放自研搜索 API。",
+   "source": {
+    "name": "量子位",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-17T12:21:09.000Z",
+   "selected": false,
+   "originalUrl": "https://www.qbitai.com/2026/10/504067.html"
+  },
+  {
+   "id": "sha256:931ff0f85ef4bf70",
+   "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
+   "summary": "DeepSeek 发布开放权重 V4.1-Flash-1017：基准更好、任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API，每千次 0.75 美元。",
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-17T10:33:28.000Z",
+   "selected": true,
+   "originalUrl": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-19T05:00:00.000Z",
+   "heat": 6.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-19T06:00:00.000Z",
+   "heat": 5.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-19T07:00:00.000Z",
+   "heat": 5.7,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-19T08:00:00.000Z",
+   "heat": 5.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-19T09:00:00.000Z",
+   "heat": 5.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-19T10:00:00.000Z",
+   "heat": 5.2,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-19T11:00:00.000Z",
+   "heat": 2.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-19T12:00:00.000Z",
+   "heat": 2.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T08:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T09:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T10:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T11:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T12:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T13:00:00.000Z",
+   "heat": 8.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T14:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T15:00:00.000Z",
+   "heat": 8.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T16:00:00.000Z",
+   "heat": 7.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T17:00:00.000Z",
+   "heat": 7.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T18:00:00.000Z",
+   "heat": 7.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T19:00:00.000Z",
+   "heat": 7.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T20:00:00.000Z",
+   "heat": 7.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T21:00:00.000Z",
+   "heat": 6.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T22:00:00.000Z",
+   "heat": 6.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T23:00:00.000Z",
+   "heat": 6.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T00:00:00.000Z",
+   "heat": 6.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T01:00:00.000Z",
+   "heat": 6.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T02:00:00.000Z",
+   "heat": 5.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T03:00:00.000Z",
+   "heat": 5.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T04:00:00.000Z",
+   "heat": 5.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T05:00:00.000Z",
+   "heat": 5.4,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "V4.1-Flash 登顶 Agent Arena 开源榜，总榜第11",
+ "primaryUrl": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/"
+}

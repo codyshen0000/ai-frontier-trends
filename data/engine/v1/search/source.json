@@ -1,0 +1,264 @@
+{
+ "generatedAt": "2026-10-21T05:20:00.000Z",
+ "docs": [
+  {
+   "id": "sha256:70cbed806b5b38bf",
+   "kind": "item",
+   "title": "TechCrunch：OpenAI 收购 Orchestra Bio 加码生物技术",
+   "summary": "TechCrunch 报道 OpenAI 收购 Orchestra Bio，团队与技术并入 Rosalind 与 Rosalind Workbench。",
+   "publishedAt": "2026-10-20T20:35:10.000Z",
+   "sourceName": "TechCrunch · AI",
+   "category": "industry",
+   "selected": false,
+   "eventPublicId": "2026-10-21-openai-orchestra-bio",
+   "originalUrl": "https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%e2%81%a0-to-beef-up-its-biotech-business/"
+  },
+  {
+   "id": "2026-10-21-openai-orchestra-bio",
+   "kind": "event",
+   "title": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线",
+   "summary": "OpenAI 宣布收购药物开发协作平台 Orchestra Bio，团队与技术并入其生命科学模型与工具 Rosalind / Rosalind Workbench，目标是用智能体协助生物医药团队协调研发流程。",
+   "publishedAt": "2026-10-20T20:35:10.000Z",
+   "sourceNames": [
+    "TechCrunch · AI"
+   ],
+   "path": "/events/2026-10-21-openai-orchestra-bio/"
+  },
+  {
+   "id": "sha256:7f08e221d9204ed8",
+   "kind": "item",
+   "title": "The Decoder：Mistral 推出 Voxtral 3 实时语音智能体栈",
+   "summary": "The Decoder 报道 Mistral 发布 Voxtral 3，整合语音识别、合成与语音智能体 SDK，支持 50+ 语言与工具调用。",
+   "publishedAt": "2026-10-20T17:17:55.000Z",
+   "sourceName": "The Decoder",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-10-21-mistral-voxtral-3",
+   "originalUrl": "https://the-decoder.com/mistral-ai-launches-voxtral-3-a-full-voice-agent-stack-that-listens-thinks-and-talks-in-real-time/"
+  },
+  {
+   "id": "2026-10-21-mistral-voxtral-3",
+   "kind": "event",
+   "title": "Mistral 发布 Voxtral 3：语音智能体 SDK 与语音模型",
+   "summary": null,
+   "publishedAt": "2026-10-20T17:17:55.000Z",
+   "sourceNames": [
+    "Mistral AI News",
+    "The Decoder"
+   ],
+   "path": "/events/2026-10-21-mistral-voxtral-3/"
+  },
+  {
+   "id": "sha256:c24275f2d5cf22d8",
+   "kind": "item",
+   "title": "报道：OpenAI 称 GPT-6 在 COBOL/Fortran 等低资源语言上更强",
+   "summary": "The Decoder 称 OpenAI 改进低资源编程语言能力；MultiLangBench 上 GPT-6 Astra 约 87.4% 通过率。",
+   "publishedAt": "2026-10-20T16:40:29.000Z",
+   "sourceName": "The Decoder",
+   "category": "model",
+   "selected": false,
+   "eventPublicId": "2026-10-20-openai-low-resource-langs",
+   "originalUrl": "https://the-decoder.com/openai-says-gpt-6-is-much-better-with-legacy-programming-languages-such-as-cobol-and-fortran/"
+  },
+  {
+   "id": "2026-10-20-openai-low-resource-langs",
+   "kind": "event",
+   "title": "OpenAI：推进低资源编程语言上的编码能力",
+   "summary": "OpenAI 称改进模型在 COBOL、Fortran 等低资源编程语言上的表现；The Decoder 称在 MultiLangBench 上 GPT-6 Astra 跨 20 种语言测试通过率约 87.4%。",
+   "publishedAt": "2026-10-20T16:40:29.000Z",
+   "sourceNames": [
+    "OpenAI News",
+    "The Decoder"
+   ],
+   "path": "/events/2026-10-20-openai-low-resource-langs/"
+  },
+  {
+   "id": "sha256:4c6292fc5ecba5f2",
+   "kind": "item",
+   "title": "Mistral 发布 Voxtral 3：语音智能体 SDK 与语音模型",
+   "summary": "Mistral 发布 Voxtral 3 语音智能体 SDK 与语音模型，转录 50+ 语言，TTS 35+ 语言，可欧盟托管或自部署。",
+   "publishedAt": "2026-10-20T12:00:22.000Z",
+   "sourceName": "Mistral AI News",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-10-21-mistral-voxtral-3",
+   "originalUrl": "https://mistral.ai/news/voxtral-3/"
+  },
+  {
+   "id": "sha256:110424e91287f452",
+   "kind": "item",
+   "title": "DeepSeek V4.1 Flash-1017 登顶 Agent Arena 开源榜",
+   "summary": "IT之家称 DeepSeek-V4.1-Flash-1017（Max）登顶 Agent Arena 与 Code Arena: WebDev 开源榜、总榜第 11；约 7498 次会话，任务成本中位数约 0.18 美元。",
+   "publishedAt": "2026-10-20T07:57:37.000Z",
+   "sourceName": "IT之家（全站，需关键词过滤）",
+   "category": "model",
+   "selected": false,
+   "eventPublicId": "2026-10-19-deepseek-v41-flash-1017",
+   "originalUrl": "https://www.ithome.com/1/015/370.htm"
+  },
+  {
+   "id": "2026-10-19-deepseek-v41-flash-1017",
+   "kind": "event",
+   "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
+   "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017：基准更好、完成任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API。The Decoder 与量子位均有报道。",
+   "publishedAt": "2026-10-20T07:57:37.000Z",
+   "sourceNames": [
+    "IT之家（全站，需关键词过滤）",
+    "The Decoder",
+    "量子位"
+   ],
+   "path": "/events/2026-10-19-deepseek-v41-flash-1017/"
+  },
+  {
+   "id": "sha256:aa8847d44cbae332",
+   "kind": "item",
+   "title": "OpenAI 客户故事：Terminal X 用 GPT-6.1 做投资判断评测",
+   "summary": null,
+   "publishedAt": "2026-10-20T07:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "industry",
+   "selected": true,
+   "eventPublicId": "2026-10-21-openai-terminal-x-eval",
+   "originalUrl": "https://openai.com/index/terminal-x"
+  },
+  {
+   "id": "2026-10-21-openai-terminal-x-eval",
+   "kind": "event",
+   "title": "OpenAI 客户故事：Terminal X 用 GPT-6.1 做投资判断评测",
+   "summary": null,
+   "publishedAt": "2026-10-20T07:00:00.000Z",
+   "sourceNames": [
+    "OpenAI News"
+   ],
+   "path": "/events/2026-10-21-openai-terminal-x-eval/"
+  },
+  {
+   "id": "sha256:10f7f763ebef7da0",
+   "kind": "item",
+   "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
+   "summary": "The Decoder 称 Kling AI 4.0 支持最长约 30 秒、最多 10 张关键帧、提示词理解扩展，并含立体声、多语口型同步与更轻 Flash 变体。",
+   "publishedAt": "2026-10-19T17:36:26.000Z",
+   "sourceName": "The Decoder",
+   "category": "model",
+   "selected": true,
+   "eventPublicId": "2026-10-20-kling-ai-4-0",
+   "originalUrl": "https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/"
+  },
+  {
+   "id": "2026-10-20-kling-ai-4-0",
+   "kind": "event",
+   "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
+   "summary": "The Decoder 称 Kling AI 4.0 支持最长约 30 秒、最多 10 张关键帧、提示词理解扩展，并含立体声、多语口型同步与更轻 Flash 变体。",
+   "publishedAt": "2026-10-19T17:36:26.000Z",
+   "sourceNames": [
+    "The Decoder"
+   ],
+   "path": "/events/2026-10-20-kling-ai-4-0/"
+  },
+  {
+   "id": "sha256:bfa70917f3b198d1",
+   "kind": "item",
+   "title": "英伟达发布面向企业与 PC 的开源智能体模型",
+   "summary": "TechCrunch 称英伟达新开源模型，面向企业自建开源模型与端侧本地运行智能体。",
+   "publishedAt": "2026-10-19T15:37:09.000Z",
+   "sourceName": "TechCrunch · AI",
+   "category": "model",
+   "selected": true,
+   "eventPublicId": "2026-10-19-nvidia-open-models-agents-pcs",
+   "originalUrl": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/"
+  },
+  {
+   "id": "2026-10-19-nvidia-open-models-agents-pcs",
+   "kind": "event",
+   "title": "英伟达发布面向企业与 PC 的开源智能体模型",
+   "summary": "TechCrunch 称英伟达新开源模型，面向企业自建开源模型与端侧本地运行智能体。",
+   "publishedAt": "2026-10-19T15:37:09.000Z",
+   "sourceNames": [
+    "TechCrunch · AI"
+   ],
+   "path": "/events/2026-10-19-nvidia-open-models-agents-pcs/"
+  },
+  {
+   "id": "sha256:f4f2a7e49951b599",
+   "kind": "item",
+   "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
+   "summary": "稀宇科技宣布 MiniMax M3.1 Flash 上线；IT之家称其在 Agentic/编程等能力提升，线上推理速度约提升近 3 倍、使用成本降低约 70%，并称 Space Bunny 匿名版本即其早期版。",
+   "publishedAt": "2026-10-19T12:20:45.000Z",
+   "sourceName": "IT之家（全站，需关键词过滤）",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-10-19-minimax-m31-flash",
+   "originalUrl": "https://www.ithome.com/1/015/013.htm"
+  },
+  {
+   "id": "2026-10-19-minimax-m31-flash",
+   "kind": "event",
+   "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
+   "summary": "媒体称 MiniMax 推出 M3.1 Flash，称推理速度约提升近 3 倍、综合成本相对前代约降 70%。",
+   "publishedAt": "2026-10-19T12:20:45.000Z",
+   "sourceNames": [
+    "IT之家（全站，需关键词过滤）"
+   ],
+   "path": "/events/2026-10-19-minimax-m31-flash/"
+  },
+  {
+   "id": "sha256:1dbe22633003a2af",
+   "kind": "item",
+   "title": "OpenAI：推进低资源编程语言上的编码能力",
+   "summary": "OpenAI 称正改进 ChatGPT 在低资源编程语言上的表现，并新增软件工程、SQLite 与 COBOL 迁移等评测。",
+   "publishedAt": "2026-10-19T12:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-10-20-openai-low-resource-langs",
+   "originalUrl": "https://openai.com/index/low-resource-programming-languages"
+  },
+  {
+   "id": "sha256:5c52b7d34becd1cc",
+   "kind": "item",
+   "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
+   "summary": "Hugging Face 博客介绍 TorchNeuron，称在 AWS Trainium 上运行 HF 模型比以往更容易。",
+   "publishedAt": "2026-10-19T00:00:00.000Z",
+   "sourceName": "Hugging Face Blog",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-10-20-hf-torchneuron-trainium",
+   "originalUrl": "https://huggingface.co/blog/hf-torchneuron"
+  },
+  {
+   "id": "2026-10-20-hf-torchneuron-trainium",
+   "kind": "event",
+   "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
+   "summary": "Hugging Face 博客介绍 TorchNeuron，称在 AWS Trainium 上运行 HF 模型比以往更容易。TechCrunch 称亚马逊借此加码与英伟达的竞争。",
+   "publishedAt": "2026-10-19T00:00:00.000Z",
+   "sourceNames": [
+    "Hugging Face Blog"
+   ],
+   "path": "/events/2026-10-20-hf-torchneuron-trainium/"
+  },
+  {
+   "id": "sha256:c991932364dcef47",
+   "kind": "item",
+   "title": "量子位：DeepSeek 发布 V4.1-Flash-1017 并开放搜索 API",
+   "summary": "量子位报道 DeepSeek 新版本 V4.1-Flash-1017 发布，同时开放自研搜索 API。",
+   "publishedAt": "2026-10-17T12:21:09.000Z",
+   "sourceName": "量子位",
+   "category": "model",
+   "selected": false,
+   "eventPublicId": "2026-10-19-deepseek-v41-flash-1017",
+   "originalUrl": "https://www.qbitai.com/2026/10/504067.html"
+  },
+  {
+   "id": "sha256:931ff0f85ef4bf70",
+   "kind": "item",
+   "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
+   "summary": "DeepSeek 发布开放权重 V4.1-Flash-1017：基准更好、任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API，每千次 0.75 美元。",
+   "publishedAt": "2026-10-17T10:33:28.000Z",
+   "sourceName": "The Decoder",
+   "category": "model",
+   "selected": true,
+   "eventPublicId": "2026-10-19-deepseek-v41-flash-1017",
+   "originalUrl": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/"
+  }
+ ]
+}

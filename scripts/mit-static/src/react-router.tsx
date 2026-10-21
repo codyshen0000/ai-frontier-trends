@@ -53,12 +53,14 @@ export function useMatches() {
   const { pathname } = useLocation();
   const tab = pathname.startsWith("/hot")
     ? "hot"
-    : pathname.startsWith("/daily") || pathname.startsWith("/weekly")
+    : pathname.startsWith("/daily") || pathname.startsWith("/weekly") || pathname.startsWith("/monthly")
       ? "daily"
-      : pathname.startsWith("/more") || pathname.startsWith("/starred") || pathname.startsWith("/search")
+      : pathname.startsWith("/more") || pathname.startsWith("/starred") || pathname.startsWith("/search") || pathname.startsWith("/topics")
         ? "me"
-        : "featured";
-  const name = tab === "hot" ? "热点" : tab === "daily" ? "日报" : tab === "me" ? "我的" : "精选";
+        : pathname.startsWith("/all")
+          ? "featured"
+          : "featured";
+  const name = tab === "hot" ? "热点" : tab === "daily" ? "日报" : tab === "me" ? "我的" : pathname.startsWith("/all") ? "全部" : "精选";
   return [{ handle: { tab, name } }];
 }
 

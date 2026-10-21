@@ -1,7 +1,7 @@
 {
   "v": 1,
-  "built_at": "2026-10-19T15:10:49.570Z",
-  "data_as_of": "2026-10-19T15:24:49+08:00",
+  "built_at": "2026-10-21T06:29:25.678Z",
+  "data_as_of": "2026-10-21T12:27:39+08:00",
   "docs": [
     {
       "id": "weekly-2026-10-18",
@@ -354,6 +354,56 @@
       "url": "https://x.com/Kling_ai/status/2110747537187709424"
     },
     {
+      "id": "sha256:4c6292fc5ecba5f2",
+      "t": "card",
+      "title": "Mistral 发布 Voxtral 3：语音智能体 SDK 与语音模型",
+      "summary": "Mistral 发布 Voxtral 3 语音智能体 SDK 与语音模型，转录 50+ 语言，TTS 35+ 语言，可欧盟托管或自部署。",
+      "source": "Mistral AI News",
+      "category": "product",
+      "date": "2026-10-20T12:00:22.000Z",
+      "url": "https://mistral.ai/news/voxtral-3/"
+    },
+    {
+      "id": "sha256:aa8847d44cbae332",
+      "t": "card",
+      "title": "OpenAI 客户故事：Terminal X 用 GPT-6.1 做投资判断评测",
+      "summary": "",
+      "source": "OpenAI News",
+      "category": "industry",
+      "date": "2026-10-20T07:00:00.000Z",
+      "url": "https://openai.com/index/terminal-x"
+    },
+    {
+      "id": "sha256:10f7f763ebef7da0",
+      "t": "card",
+      "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
+      "summary": "The Decoder 称 Kling AI 4.0 支持最长约 30 秒、最多 10 张关键帧、提示词理解扩展，并含立体声、多语口型同步与更轻 Flash 变体。",
+      "source": "The Decoder",
+      "category": "model",
+      "date": "2026-10-19T17:36:26.000Z",
+      "url": "https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/"
+    },
+    {
+      "id": "sha256:bfa70917f3b198d1",
+      "t": "card",
+      "title": "英伟达发布面向企业与 PC 的开源智能体模型",
+      "summary": "TechCrunch 称英伟达新开源模型，面向企业自建开源模型与端侧本地运行智能体。",
+      "source": "TechCrunch · AI",
+      "category": "model",
+      "date": "2026-10-19T15:37:09.000Z",
+      "url": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/"
+    },
+    {
+      "id": "sha256:5c52b7d34becd1cc",
+      "t": "card",
+      "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
+      "summary": "Hugging Face 博客介绍 TorchNeuron，称在 AWS Trainium 上运行 HF 模型比以往更容易。",
+      "source": "Hugging Face Blog",
+      "category": "product",
+      "date": "2026-10-19T00:00:00.000Z",
+      "url": "https://huggingface.co/blog/hf-torchneuron"
+    },
+    {
       "id": "sha256:931ff0f85ef4bf70",
       "t": "card",
       "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
@@ -364,14 +414,54 @@
       "url": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/"
     },
     {
-      "id": "2026-10-19-deepseek-v41-flash-1017",
+      "id": "2026-10-21-mistral-voxtral-3",
       "t": "event",
-      "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
-      "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017：基准更好、完成任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API。The Decoder 与量子位均有报道。",
+      "title": "Mistral 发布 Voxtral 3：语音智能体 SDK 与语音模型",
+      "summary": "",
+      "source": "The Decoder、Mistral AI News",
+      "category": null,
+      "date": "",
+      "url": "hot/#s-2026-10-21-mistral-voxtral-3"
+    },
+    {
+      "id": "2026-10-19-minimax-m31-flash",
+      "t": "event",
+      "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
+      "summary": "媒体称 MiniMax 推出 M3.1 Flash，称推理速度约提升近 3 倍、综合成本相对前代约降 70%。",
       "source": "量子位、The Decoder",
       "category": null,
       "date": "",
-      "url": "hot/#s-2026-10-19-deepseek-v41-flash-1017"
+      "url": "hot/#s-2026-10-19-minimax-m31-flash"
+    },
+    {
+      "id": "2026-10-21-openai-orchestra-bio",
+      "t": "event",
+      "title": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线",
+      "summary": "OpenAI 宣布收购药物开发协作平台 Orchestra Bio，团队与技术并入其生命科学模型与工具 Rosalind / Rosalind Workbench，目标是用智能体协助生物医药团队协调研发流程。",
+      "source": "TechCrunch · AI、OpenAI News",
+      "category": null,
+      "date": "",
+      "url": "hot/#s-2026-10-21-openai-orchestra-bio"
+    },
+    {
+      "id": "2026-10-20-openai-low-resource-langs",
+      "t": "event",
+      "title": "OpenAI：推进低资源编程语言上的编码能力",
+      "summary": "OpenAI 称改进模型在 COBOL、Fortran 等低资源编程语言上的表现；The Decoder 称在 MultiLangBench 上 GPT-6 Astra 跨 20 种语言测试通过率约 87.4%。",
+      "source": "The Decoder、OpenAI News",
+      "category": null,
+      "date": "",
+      "url": "hot/#s-2026-10-20-openai-low-resource-langs"
+    },
+    {
+      "id": "daily-2026-10-20",
+      "t": "daily",
+      "title": "AI日报 · 2026-10-20",
+      "summary": "今日重点四条：可灵 AI 4.0（更长视频、立体声与多语口型同步）。英伟达开源面向企业与 PC 的智能体模型。MiniMax M3.1 Flash（称提速约 3 倍、成本约降 70%，AA 指数到 42）。Hugging Face Torc",
+      "source": "前沿趋势",
+      "category": null,
+      "date": "2026-10-20T00:00:00+08:00",
+      "url": "daily/"
     }
   ]
 }

@@ -427,6 +427,52 @@ export function loadEngineData(options = {}) {
     walkCovers(raw, rel);
   }
 
+  const itemsRaw = readOptionalJson(join(dir, "items.json"));
+  if (itemsRaw !== undefined) walkForbiddenKeys(itemsRaw, "items.json");
+  let items = [];
+  if (Array.isArray(itemsRaw)) items = itemsRaw;
+  else if (Array.isArray(itemsRaw?.items)) items = itemsRaw.items;
+  const itemsDir = join(dir, "items");
+  if (existsSync(itemsDir) && statSync(itemsDir).isDirectory()) {
+    const seenItem = new Set(items.map((row) => row?.id).filter(Boolean));
+    for (const file of listJsonFiles(itemsDir)) {
+      const rel = `items/${file.split("/").pop()}`;
+      const raw = readJsonFile(file);
+      walkForbiddenKeys(raw, rel);
+      if (!raw?.id || seenItem.has(raw.id)) continue;
+      seenItem.add(raw.id);
+      items.push(raw);
+    }
+  }
+
+  const topicsRaw = readOptionalJson(join(dir, "topics.json"));
+  if (topicsRaw !== undefined) walkForbiddenKeys(topicsRaw, "topics.json");
+  const topics = Array.isArray(topicsRaw) ? topicsRaw : topicsRaw?.topics || [];
+
+  const allRaw = readOptionalJson(join(dir, "timeline", "all.json"));
+  let allTimeline = null;
+  if (allRaw !== undefined) {
+    walkForbiddenKeys(allRaw, "timeline/all.json");
+    walkCovers(allRaw, "timeline/all.json");
+    assertObject(allRaw, "timeline/all.json", "timeline all");
+    assertArray(allRaw.cards || [], "timeline/all.json.cards", "cards");
+    allTimeline = {
+      filters: allRaw.filters || { channel: "all", category: null, tag: null },
+      cards: allRaw.cards || [],
+      nextCursor: allRaw.nextCursor ?? null,
+      hot: allRaw.hot ?? null,
+      dayCounts: allRaw.dayCounts || allRaw.day_counts || {},
+      page: allRaw.page,
+      pageCount: allRaw.pageCount,
+      total: allRaw.total,
+    };
+  }
+
+  const weeklyIndexRaw = readOptionalJson(join(dir, "weekly-index.json"));
+  if (weeklyIndexRaw !== undefined) walkForbiddenKeys(weeklyIndexRaw, "weekly-index.json");
+  const monthlyIndexRaw = readOptionalJson(join(dir, "monthly-index.json"));
+  if (monthlyIndexRaw !== undefined) walkForbiddenKeys(monthlyIndexRaw, "monthly-index.json");
+
   return {
     dir,
     meta,
@@ -446,6 +492,11 @@ export function loadEngineData(options = {}) {
     redirects,
     sources,
     search: searchRaw || null,
+    items,
+    topics,
+    allTimeline,
+    weeklyIndex: asDailyIndex(weeklyIndexRaw),
+    monthlyIndex: asDailyIndex(monthlyIndexRaw),
   };
 }
 

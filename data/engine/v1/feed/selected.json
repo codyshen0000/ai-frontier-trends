@@ -1,0 +1,77 @@
+{
+ "feed": {
+  "id": "selected",
+  "path": "/feed.xml",
+  "title": "前沿趋势 — 精选",
+  "limit": 50,
+  "description": "最新 50 条前沿趋势精选摘要，保留标题、摘要与原文入口。"
+ },
+ "items": [
+  {
+   "guid": "sha256:4c6292fc5ecba5f2",
+   "title": "Mistral 发布 Voxtral 3：语音智能体 SDK 与语音模型",
+   "summary": "Mistral 发布 Voxtral 3 语音智能体 SDK 与语音模型，转录 50+ 语言，TTS 35+ 语言，可欧盟托管或自部署。",
+   "originalUrl": "https://mistral.ai/news/voxtral-3/",
+   "pubDate": "2026-10-20T12:00:22.000Z",
+   "sourceName": "Mistral AI News",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-10-21-mistral-voxtral-3"
+  },
+  {
+   "guid": "sha256:aa8847d44cbae332",
+   "title": "OpenAI 客户故事：Terminal X 用 GPT-6.1 做投资判断评测",
+   "summary": "",
+   "originalUrl": "https://openai.com/index/terminal-x",
+   "pubDate": "2026-10-20T07:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "industry",
+   "categoryLabel": "行业",
+   "eventPublicId": "2026-10-21-openai-terminal-x-eval"
+  },
+  {
+   "guid": "sha256:10f7f763ebef7da0",
+   "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
+   "summary": "The Decoder 称 Kling AI 4.0 支持最长约 30 秒、最多 10 张关键帧、提示词理解扩展，并含立体声、多语口型同步与更轻 Flash 变体。",
+   "originalUrl": "https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/",
+   "pubDate": "2026-10-19T17:36:26.000Z",
+   "sourceName": "The Decoder",
+   "category": "model",
+   "categoryLabel": "模型",
+   "eventPublicId": "2026-10-20-kling-ai-4-0"
+  },
+  {
+   "guid": "sha256:bfa70917f3b198d1",
+   "title": "英伟达发布面向企业与 PC 的开源智能体模型",
+   "summary": "TechCrunch 称英伟达新开源模型，面向企业自建开源模型与端侧本地运行智能体。",
+   "originalUrl": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
+   "pubDate": "2026-10-19T15:37:09.000Z",
+   "sourceName": "TechCrunch · AI",
+   "category": "model",
+   "categoryLabel": "模型",
+   "eventPublicId": "2026-10-19-nvidia-open-models-agents-pcs"
+  },
+  {
+   "guid": "sha256:5c52b7d34becd1cc",
+   "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
+   "summary": "Hugging Face 博客介绍 TorchNeuron，称在 AWS Trainium 上运行 HF 模型比以往更容易。",
+   "originalUrl": "https://huggingface.co/blog/hf-torchneuron",
+   "pubDate": "2026-10-19T00:00:00.000Z",
+   "sourceName": "Hugging Face Blog",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-10-20-hf-torchneuron-trainium"
+  },
+  {
+   "guid": "sha256:931ff0f85ef4bf70",
+   "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
+   "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017：基准更好、完成任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API。The Decoder 与量子位均有报道。",
+   "originalUrl": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/",
+   "pubDate": "2026-10-17T10:33:28.000Z",
+   "sourceName": "The Decoder",
+   "category": "model",
+   "categoryLabel": "模型",
+   "eventPublicId": "2026-10-19-deepseek-v41-flash-1017"
+  }
+ ]
+}

@@ -1,7 +1,101 @@
 {
   "v": 1,
   "page": 1,
-  "cards": [],
-  "day_counts": {},
+  "cards": [
+    {
+      "key": "sha256:4c6292fc5ecba5f2",
+      "anchorAt": "2026-10-20T12:00:22.000Z",
+      "item": {
+        "id": "sha256:4c6292fc5ecba5f2",
+        "title": "Mistral 发布 Voxtral 3：语音智能体 SDK 与语音模型",
+        "summary": "Mistral 发布 Voxtral 3 语音智能体 SDK 与语音模型，转录 50+ 语言，TTS 35+ 语言，可欧盟托管或自部署。",
+        "reason": "Mistral 推出 Voxtral 3 语音智能体 SDK，支持 50+ 语言",
+        "source": {
+          "name": "Mistral AI News"
+        },
+        "publishedAt": "2026-10-20T12:00:22.000Z",
+        "timelineAt": "2026-10-20T12:00:22.000Z",
+        "category": "product",
+        "tags": [],
+        "selected": true,
+        "channel": "news",
+        "x": null,
+        "sameEvent": null,
+        "originalUrl": "https://mistral.ai/news/voxtral-3/",
+        "storyPublicId": "2026-10-21-mistral-voxtral-3",
+        "sourceCount": 2,
+        "sourceNames": [
+          "Mistral AI News",
+          "The Decoder"
+        ],
+        "participants": [
+          {
+            "name": "Mistral AI News",
+            "kind": "editorial"
+          },
+          {
+            "name": "The Decoder",
+            "kind": "editorial"
+          }
+        ],
+        "url": "https://mistral.ai/news/voxtral-3/"
+      },
+      "group": {
+        "factId": "2026-10-21-mistral-voxtral-3",
+        "additionalSourceCount": 1,
+        "reportCount": 2,
+        "memberIds": [
+          "sha256:4c6292fc5ecba5f2",
+          "sha256:7f08e221d9204ed8"
+        ]
+      }
+    },
+    {
+      "key": "sha256:5c52b7d34becd1cc",
+      "anchorAt": "2026-10-19T00:00:00.000Z",
+      "item": {
+        "id": "sha256:5c52b7d34becd1cc",
+        "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
+        "summary": "Hugging Face 博客介绍 TorchNeuron，称在 AWS Trainium 上运行 HF 模型比以往更容易。",
+        "reason": "Trainium 上跑 HF 模型更省事",
+        "source": {
+          "name": "Hugging Face Blog"
+        },
+        "publishedAt": "2026-10-19T00:00:00.000Z",
+        "timelineAt": "2026-10-19T00:00:00.000Z",
+        "category": "product",
+        "tags": [],
+        "selected": true,
+        "channel": "news",
+        "x": null,
+        "sameEvent": null,
+        "originalUrl": "https://huggingface.co/blog/hf-torchneuron",
+        "storyPublicId": "2026-10-20-hf-torchneuron-trainium",
+        "sourceCount": 1,
+        "sourceNames": [
+          "Hugging Face Blog"
+        ],
+        "participants": [
+          {
+            "name": "Hugging Face Blog",
+            "kind": "editorial"
+          }
+        ],
+        "url": "https://huggingface.co/blog/hf-torchneuron"
+      },
+      "group": {
+        "factId": "2026-10-20-hf-torchneuron-trainium",
+        "additionalSourceCount": 0,
+        "reportCount": 1,
+        "memberIds": [
+          "sha256:5c52b7d34becd1cc"
+        ]
+      }
+    }
+  ],
+  "day_counts": {
+    "2026-10-20": 1,
+    "2026-10-19": 1
+  },
   "next": null
 }

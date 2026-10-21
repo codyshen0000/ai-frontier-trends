@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>前沿趋势</title>
+    <link>https://codyshen0000.github.io/ai-frontier-trends/daily/</link>
+    <description>前沿趋势日报</description>
+    <language>zh-cn</language>
+    <item>
+      <title>AI日报 · 2026-10-20</title>
+      <link>https://codyshen0000.github.io/ai-frontier-trends/daily/#d-2026-10-20</link>
+      <guid isPermaLink="false">daily-2026-10-20</guid>
+      <pubDate>Tue, 20 Oct 2026 00:43:38 GMT</pubDate>
+      <description>今日重点四条：可灵 AI 4.0（更长视频、立体声与多语口型同步）。英伟达开源面向企业与 PC 的智能体模型。MiniMax M3.1 Flash（称提速约 3 倍、成本约降 70%，AA 指数到 42）。Hugging Face TorchNeuron，让 HF 模型更易跑在 AWS Trainium。</description>
+      <category>日报</category>
+    </item>
+    <item>
+      <title>AI日报 · 2026-10-19</title>
+      <link>https://codyshen0000.github.io/ai-frontier-trends/daily/#d-2026-10-19</link>
+      <guid isPermaLink="false">daily-2026-10-19</guid>
+      <pubDate>Mon, 19 Oct 2026 03:26:16 GMT</pubDate>
+      <description>DeepSeek 发布开放权重 V4.1-Flash-1017，基准更好、输出更短，并开放 Search/Fetch API。</description>
+      <category>日报</category>
+    </item>
+  </channel>
+</rss>

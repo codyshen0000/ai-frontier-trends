@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>前沿趋势</title>
+    <link>https://codyshen0000.github.io/ai-frontier-trends/</link>
+    <description>前沿趋势 · 观点</description>
+    <language>zh-cn</language>
+    <item>
+      <title>Dyna Robotics 联创 Jason Ma 谈 Dyna-2 世界动作模型与机器人落地</title>
+      <link>https://www.latent.space/p/dyna</link>
+      <guid isPermaLink="false">krvvrd604bnvh003rs160m0pa</guid>
+      <pubDate>Tue, 13 Oct 2026 22:25:55 GMT</pubDate>
+      <description>Latent Space 播客邀请 Dyna Robotics 联合创始人兼首席科学家 Jason Ma，讲解上月发布的 Dyna-2 世界动作模型及其后续物理机器人智能体 Dyna-2.1。</description>
+      <category>观点</category>
+    </item>
+  </channel>
+</rss>

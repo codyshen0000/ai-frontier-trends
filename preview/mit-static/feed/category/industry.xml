@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>前沿趋势</title>
+    <link>https://codyshen0000.github.io/ai-frontier-trends/</link>
+    <description>前沿趋势 · 产业</description>
+    <language>zh-cn</language>
+    <item>
+      <title>OpenAI 客户故事：Terminal X 用 GPT-6.1 做投资判断评测</title>
+      <link>https://openai.com/index/terminal-x</link>
+      <guid isPermaLink="false">sha256:aa8847d44cbae332</guid>
+      <pubDate>Tue, 20 Oct 2026 07:00:00 GMT</pubDate>
+      <description>OpenAI 客户故事：Terminal X 用 GPT-6.1 做投资判断评测</description>
+      <category>产业</category>
+    </item>
+  </channel>
+</rss>

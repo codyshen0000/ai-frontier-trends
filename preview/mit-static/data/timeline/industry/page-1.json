@@ -1,7 +1,52 @@
 {
   "v": 1,
   "page": 1,
-  "cards": [],
-  "day_counts": {},
+  "cards": [
+    {
+      "key": "sha256:aa8847d44cbae332",
+      "anchorAt": "2026-10-20T07:00:00.000Z",
+      "item": {
+        "id": "sha256:aa8847d44cbae332",
+        "title": "OpenAI 客户故事：Terminal X 用 GPT-6.1 做投资判断评测",
+        "summary": null,
+        "reason": "Terminal X：GPT-6.1 投资判断一致率约 88.6%",
+        "source": {
+          "name": "OpenAI News"
+        },
+        "publishedAt": "2026-10-20T07:00:00.000Z",
+        "timelineAt": "2026-10-20T07:00:00.000Z",
+        "category": "industry",
+        "tags": [],
+        "selected": true,
+        "channel": "news",
+        "x": null,
+        "sameEvent": null,
+        "originalUrl": "https://openai.com/index/terminal-x",
+        "storyPublicId": "2026-10-21-openai-terminal-x-eval",
+        "sourceCount": 1,
+        "sourceNames": [
+          "OpenAI News"
+        ],
+        "participants": [
+          {
+            "name": "OpenAI News",
+            "kind": "editorial"
+          }
+        ],
+        "url": "https://openai.com/index/terminal-x"
+      },
+      "group": {
+        "factId": "2026-10-21-openai-terminal-x-eval",
+        "additionalSourceCount": 0,
+        "reportCount": 1,
+        "memberIds": [
+          "sha256:aa8847d44cbae332"
+        ]
+      }
+    }
+  ],
+  "day_counts": {
+    "2026-10-20": 1
+  },
   "next": null
 }
