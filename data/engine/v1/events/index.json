@@ -5,7 +5,7 @@
    "title": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线",
    "latestAt": "2026-10-20T20:35:10.000Z",
    "reportCount": 1,
-   "hotRank": 2
+   "hotRank": 3
   },
   {
    "publicId": "2026-10-21-mistral-voxtral-3",
@@ -19,13 +19,20 @@
    "title": "OpenAI：推进低资源编程语言上的编码能力",
    "latestAt": "2026-10-20T16:40:29.000Z",
    "reportCount": 2,
-   "hotRank": 3
+   "hotRank": 4
   },
   {
    "publicId": "2026-10-19-deepseek-v41-flash-1017",
    "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
    "latestAt": "2026-10-20T07:57:37.000Z",
    "reportCount": 3,
+   "hotRank": null
+  },
+  {
+   "publicId": "2026-10-21-openai-terminal-x-eval",
+   "title": "OpenAI 客户故事：Terminal X 用 GPT-6.1 做投资判断评测",
+   "latestAt": "2026-10-20T07:00:00.000Z",
+   "reportCount": 1,
    "hotRank": null
   },
   {
@@ -47,7 +54,7 @@
    "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
    "latestAt": "2026-10-19T12:20:45.000Z",
    "reportCount": 1,
-   "hotRank": 4
+   "hotRank": 2
   },
   {
    "publicId": "2026-10-20-hf-torchneuron-trainium",

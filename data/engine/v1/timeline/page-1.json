@@ -36,6 +36,29 @@
    }
   },
   {
+   "key": "sha256:aa8847d44cbae332",
+   "anchorAt": "2026-10-20T07:00:00.000Z",
+   "item": {
+    "id": "sha256:aa8847d44cbae332",
+    "title": "OpenAI 客户故事：Terminal X 用 GPT-6.1 做投资判断评测",
+    "summary": null,
+    "reason": "Terminal X：GPT-6.1 投资判断一致率约 88.6%",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-20T07:00:00.000Z",
+    "timelineAt": "2026-10-20T07:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-21-openai-terminal-x-eval",
+    "originalUrl": "https://openai.com/index/terminal-x"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:10f7f763ebef7da0",
    "anchorAt": "2026-10-19T17:36:26.000Z",
    "item": {
@@ -147,7 +170,7 @@
   {
    "rank": 1,
    "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
-   "heat": 14.7,
+   "heat": 13.1,
    "trend": "down",
    "storyPublicId": "2026-10-21-mistral-voxtral-3",
    "itemId": "sha256:4c6292fc5ecba5f2",
@@ -165,9 +188,32 @@
   },
   {
    "rank": 2,
+   "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
+   "heat": 13.0,
+   "trend": "down",
+   "storyPublicId": "2026-10-19-minimax-m31-flash",
+   "itemId": "sha256:8e4a9464917136de",
+   "participants": [
+    {
+     "name": "量子位",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
+    }
+   ],
+   "participantCount": 3
+  },
+  {
+   "rank": 3,
    "title": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线",
-   "heat": 13.5,
-   "trend": "up",
+   "heat": 12.1,
+   "trend": "down",
    "storyPublicId": "2026-10-21-openai-orchestra-bio",
    "itemId": "sha256:1cfb6291fa158d05",
    "participants": [
@@ -183,9 +229,9 @@
    "participantCount": 2
   },
   {
-   "rank": 3,
+   "rank": 4,
    "title": "OpenAI：推进低资源编程语言上的编码能力",
-   "heat": 11.1,
+   "heat": 10.0,
    "trend": "down",
    "storyPublicId": "2026-10-20-openai-low-resource-langs",
    "itemId": "sha256:1dbe22633003a2af",
@@ -200,33 +246,14 @@
     }
    ],
    "participantCount": 2
-  },
-  {
-   "rank": 4,
-   "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
-   "heat": 7.5,
-   "trend": "down",
-   "storyPublicId": "2026-10-19-minimax-m31-flash",
-   "itemId": "sha256:8e4a9464917136de",
-   "participants": [
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
-    }
-   ],
-   "participantCount": 2
   }
  ],
  "dayCounts": {
-  "2026-10-20": 2,
+  "2026-10-20": 3,
   "2026-10-19": 2,
   "2026-10-17": 1
  },
  "page": 1,
  "pageCount": 1,
- "total": 5
+ "total": 6
 }

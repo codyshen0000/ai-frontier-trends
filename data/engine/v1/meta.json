@@ -2,31 +2,31 @@
  "site": "前沿趋势",
  "contract_version": "1.1",
  "mode": "production",
- "data_as_of": "2026-10-21T08:26:27+08:00",
- "data_as_of_label": "数据截至 2026-10-21 08:26（北京时间）",
- "generated_at": "2026-10-21T09:28:00+08:00",
+ "data_as_of": "2026-10-21T12:27:39+08:00",
+ "data_as_of_label": "数据截至 2026-10-21 12:27（北京时间）",
+ "generated_at": "2026-10-21T13:20:00+08:00",
  "hot_rule_version": "heat-v1-48h-halflife24h (前沿情报 heat48h.py 1.1)",
- "hot_computed_at": "2026-10-21T09:28:00+08:00",
+ "hot_computed_at": "2026-10-21T13:20:00+08:00",
  "window_hours": 48,
  "spark_points": 25,
  "page_size": 20,
  "counts": {
-  "cards": 5,
+  "cards": 6,
   "pages": 1,
-  "events": 8,
+  "events": 9,
   "hot_entries": 4,
-  "search_docs": 20,
-  "feed_items": 5,
-  "passed_events": 8,
+  "search_docs": 22,
+  "feed_items": 6,
+  "passed_events": 9,
   "below_threshold_events": 0,
   "redirects": 0,
-  "hot_snapshots": 13,
+  "hot_snapshots": 14,
   "covers": 1
  },
  "last_round": {
-  "batch_id": "2026-10-21T0826",
+  "batch_id": "2026-10-21T1227",
   "status": "ok",
-  "finished_at": "2026-10-21T08:36:07+08:00"
+  "finished_at": "2026-10-21T12:38:25+08:00"
  },
  "batches": [
   {
@@ -200,6 +200,22 @@
   {
    "batch_id": "2026-10-21T0826",
    "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T0928",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T1019",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T1118",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T1227",
+   "status": "ok"
   }
  ],
  "files": [
@@ -212,6 +228,7 @@
   "events/2026-10-20-openai-low-resource-langs.json",
   "events/2026-10-21-mistral-voxtral-3.json",
   "events/2026-10-21-openai-orchestra-bio.json",
+  "events/2026-10-21-openai-terminal-x-eval.json",
   "events/index.json",
   "feed/selected.json",
   "hot-snapshots/2026-10-19T12.json",
@@ -227,6 +244,7 @@
   "hot-snapshots/2026-10-20T16.json",
   "hot-snapshots/2026-10-20T20.json",
   "hot-snapshots/2026-10-21T09.json",
+  "hot-snapshots/2026-10-21T13.json",
   "hot-strip.json",
   "hot.json",
   "meta.json",
@@ -236,5 +254,5 @@
   "timeline/index.json",
   "timeline/page-1.json"
  ],
- "next_round": "2026-10-21T12:25:00+08:00"
+ "next_round": "2026-10-21T15:25:00+08:00"
 }

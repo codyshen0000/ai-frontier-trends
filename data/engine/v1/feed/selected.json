@@ -19,6 +19,17 @@
    "eventPublicId": "2026-10-21-mistral-voxtral-3"
   },
   {
+   "guid": "sha256:aa8847d44cbae332",
+   "title": "OpenAI 客户故事：Terminal X 用 GPT-6.1 做投资判断评测",
+   "summary": "",
+   "originalUrl": "https://openai.com/index/terminal-x",
+   "pubDate": "2026-10-20T07:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "industry",
+   "categoryLabel": "行业",
+   "eventPublicId": "2026-10-21-openai-terminal-x-eval"
+  },
+  {
    "guid": "sha256:10f7f763ebef7da0",
    "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
    "summary": "The Decoder 称 Kling AI 4.0 支持最长约 30 秒、最多 10 张关键帧、提示词理解扩展，并含立体声、多语口型同步与更轻 Flash 变体。",

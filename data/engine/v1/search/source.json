@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-21T01:28:00.000Z",
+ "generatedAt": "2026-10-21T05:20:00.000Z",
  "docs": [
   {
    "id": "sha256:70cbed806b5b38bf",
@@ -110,6 +110,29 @@
    "path": "/events/2026-10-19-deepseek-v41-flash-1017/"
   },
   {
+   "id": "sha256:aa8847d44cbae332",
+   "kind": "item",
+   "title": "OpenAI 客户故事：Terminal X 用 GPT-6.1 做投资判断评测",
+   "summary": null,
+   "publishedAt": "2026-10-20T07:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "industry",
+   "selected": true,
+   "eventPublicId": "2026-10-21-openai-terminal-x-eval",
+   "originalUrl": "https://openai.com/index/terminal-x"
+  },
+  {
+   "id": "2026-10-21-openai-terminal-x-eval",
+   "kind": "event",
+   "title": "OpenAI 客户故事：Terminal X 用 GPT-6.1 做投资判断评测",
+   "summary": null,
+   "publishedAt": "2026-10-20T07:00:00.000Z",
+   "sourceNames": [
+    "OpenAI News"
+   ],
+   "path": "/events/2026-10-21-openai-terminal-x-eval/"
+  },
+  {
    "id": "sha256:10f7f763ebef7da0",
    "kind": "item",
    "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
@@ -171,7 +194,7 @@
    "id": "2026-10-19-minimax-m31-flash",
    "kind": "event",
    "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
-   "summary": "稀宇科技宣布 MiniMax M3.1 Flash 上线。The Decoder 称其在 Artificial Analysis Intelligence Index 升至 42（较前代 +13）、成本约减半，并称 DeepSWE v1.1 编码基准 73.7%。",
+   "summary": "媒体称 MiniMax 推出 M3.1 Flash，称推理速度约提升近 3 倍、综合成本相对前代约降 70%。",
    "publishedAt": "2026-10-19T12:20:45.000Z",
    "sourceNames": [
     "IT之家（全站，需关键词过滤）"

@@ -16,7 +16,7 @@
   "participants48h": 2,
   "newParticipants6h": 0,
   "recentReports24h": 2,
-  "observationComplete": false,
+  "observationComplete": true,
   "rank": 1
  },
  "developments": [
@@ -144,6 +144,26 @@
    "hour": "2026-10-21T01:00:00.000Z",
    "heat": 14.9,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-21T02:00:00.000Z",
+   "heat": 14.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-21T03:00:00.000Z",
+   "heat": 14.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-21T04:00:00.000Z",
+   "heat": 13.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-21T05:00:00.000Z",
+   "heat": 13.3,
+   "participants": 2
   }
  ],
  "related": [],
@@ -156,5 +176,6 @@
   "alt": "Voxtral 3 语音智能体产品介绍页示意",
   "valueClass": "product_screenshot"
  },
- "primaryUrl": "https://mistral.ai/news/voxtral-3/"
+ "primaryUrl": "https://mistral.ai/news/voxtral-3/",
+ "rankDelta": 0
 }
