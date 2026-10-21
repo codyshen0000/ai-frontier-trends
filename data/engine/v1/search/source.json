@@ -39,7 +39,7 @@
   {
    "id": "2026-10-21-mistral-voxtral-3",
    "kind": "event",
-   "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
+   "title": "Mistral 发布 Voxtral 3：语音智能体 SDK 与语音模型",
    "summary": null,
    "publishedAt": "2026-10-20T17:17:55.000Z",
    "sourceNames": [
@@ -75,7 +75,7 @@
   {
    "id": "sha256:4c6292fc5ecba5f2",
    "kind": "item",
-   "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
+   "title": "Mistral 发布 Voxtral 3：语音智能体 SDK 与语音模型",
    "summary": "Mistral 发布 Voxtral 3 语音智能体 SDK 与语音模型，转录 50+ 语言，TTS 35+ 语言，可欧盟托管或自部署。",
    "publishedAt": "2026-10-20T12:00:22.000Z",
    "sourceName": "Mistral AI News",
