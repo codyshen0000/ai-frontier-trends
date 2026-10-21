@@ -15,7 +15,7 @@
  "whyHot": {
   "participants48h": 1,
   "newParticipants6h": 0,
-  "recentReports24h": 1,
+  "recentReports24h": 0,
   "observationComplete": true,
   "rank": null
  },
@@ -79,11 +79,6 @@
   }
  ],
  "heat": [
-  {
-   "hour": "2026-10-19T07:00:00.000Z",
-   "heat": 5.7,
-   "participants": 2
-  },
   {
    "hour": "2026-10-19T08:00:00.000Z",
    "heat": 5.5,
@@ -227,6 +222,11 @@
   {
    "hour": "2026-10-21T07:00:00.000Z",
    "heat": 5.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T08:00:00.000Z",
+   "heat": 5.0,
    "participants": 1
   }
  ],

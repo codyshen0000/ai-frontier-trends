@@ -1,5 +1,5 @@
 {
- "computedAt": "2026-10-21T07:27:00.000Z",
+ "computedAt": "2026-10-21T08:07:00.000Z",
  "windowHours": 48,
  "entries": [
   {
@@ -8,9 +8,9 @@
     "publicId": "2026-10-21-mistral-voxtral-3",
     "title": "Mistral 发布 Voxtral 3：语音智能体 SDK 与语音模型"
    },
-   "heat": 12.3,
+   "heat": 12.1,
    "trend": "down",
-   "trendPct": -16.3,
+   "trendPct": -16.0,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -34,7 +34,6 @@
     null,
     null,
     null,
-    null,
     9.7,
     9.4,
     9.2,
@@ -53,7 +52,8 @@
     13.6,
     13.3,
     12.9,
-    12.5
+    12.5,
+    12.2
    ],
    "summary": "Mistral 发布 Voxtral 3：一套语音智能体 SDK，以及配套的语音转写与语音合成模型，把听、推理、工具调用与说放进同一流式管线。 官方称转写覆盖 50+ 语言（含说话人分离与上下文偏置），TTS 覆盖 35+ 语言与 50+ 方言；可通过欧盟托管 API 或自部署使用。 The Decoder 亦报道其整合识别、合成与语音智能体 SDK，支持多语言与工具调用。",
    "latest": null,
@@ -65,7 +65,7 @@
     "valueClass": "product_screenshot"
    },
    "rankDelta": 0,
-   "heatDeltaPct": -6.1
+   "heatDeltaPct": -7.6
   },
   {
    "rank": 2,
@@ -73,9 +73,9 @@
     "publicId": "2026-10-19-minimax-m31-flash",
     "title": "MiniMax 上线 M3.1 Flash：称提速约 3 倍、成本降约 70%"
    },
-   "heat": 12.3,
+   "heat": 12.0,
    "trend": "down",
-   "trendPct": -15.8,
+   "trendPct": -16.1,
    "badges": [],
    "participantCount": 3,
    "sourceCount": 2,
@@ -98,7 +98,6 @@
     }
    ],
    "spark": [
-    12.8,
     12.4,
     12.1,
     11.7,
@@ -122,13 +121,14 @@
     13.5,
     13.2,
     12.8,
-    12.4
+    12.4,
+    12.1
    ],
    "summary": "稀宇科技宣布 MiniMax M3.1 Flash 上线，IT之家称其在 Agentic、编程等能力上有提升，线上推理速度约提升近 3 倍、使用成本相对前代约降 70%。 同一报道称，此前以 Space Bunny 名义出现的匿名版本即为其早期版。",
    "latest": null,
    "cover": null,
    "rankDelta": 0,
-   "heatDeltaPct": -5.4
+   "heatDeltaPct": -7.7
   },
   {
    "rank": 3,
@@ -136,9 +136,9 @@
     "publicId": "2026-10-21-openai-orchestra-bio",
     "title": "OpenAI 收购 Orchestra Bio，并入 Rosalind 线"
    },
-   "heat": 11.3,
+   "heat": 11.1,
    "trend": "down",
-   "trendPct": -16.3,
+   "trendPct": -15.9,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -157,7 +157,6 @@
     }
    ],
    "spark": [
-    8.2,
     7.9,
     7.7,
     7.5,
@@ -181,13 +180,14 @@
     12.5,
     12.2,
     11.8,
-    11.5
+    11.5,
+    11.2
    ],
    "summary": "OpenAI 收购药物开发协作平台 Orchestra Bio，团队与技术并入其生命科学模型与工具 Rosalind / Rosalind Workbench。 据 TechCrunch，目标是用智能体协助生物医药团队协调研发流程，加码生物技术业务。",
    "latest": null,
    "cover": null,
    "rankDelta": 0,
-   "heatDeltaPct": -6.6
+   "heatDeltaPct": -8.3
   },
   {
    "rank": 4,
@@ -195,9 +195,9 @@
     "publicId": "2026-10-20-openai-low-resource-langs",
     "title": "OpenAI 推进低资源编程语言上的编码能力"
    },
-   "heat": 9.4,
+   "heat": 9.2,
    "trend": "down",
-   "trendPct": -16.1,
+   "trendPct": -15.6,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -216,7 +216,6 @@
     }
    ],
    "spark": [
-    5.8,
     5.6,
     5.5,
     5.3,
@@ -240,13 +239,14 @@
     10.4,
     10.1,
     9.8,
-    9.5
+    9.5,
+    9.2
    ],
    "summary": "OpenAI 称正改进 ChatGPT 在 COBOL、Fortran 等低资源编程语言上的表现，并新增软件工程、SQLite 与 COBOL 迁移等评测。 The Decoder 称在 MultiLangBench 上，GPT-6 Astra 跨约 20 种语言测试通过率约 87.4%。",
    "latest": null,
    "cover": null,
    "rankDelta": 1,
-   "heatDeltaPct": -6.0
+   "heatDeltaPct": -8.0
   }
  ]
 }
