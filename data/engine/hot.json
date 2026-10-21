@@ -1,5 +1,5 @@
 {
- "computedAt": "2026-10-21T05:20:11.000Z",
+ "computedAt": "2026-10-21T07:26:57.000Z",
  "windowHours": 48,
  "entries": [
   {
@@ -8,9 +8,9 @@
     "publicId": "2026-10-20-deepseek-deepinfer-opensource",
     "title": "DeepSeek 宣布开源内部推理框架 DeepInfer"
    },
-   "heat": 13.0,
+   "heat": 12.2,
    "trend": "down",
-   "trendPct": -15.6,
+   "trendPct": -15.9,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 1,
@@ -28,8 +28,6 @@
     }
    ],
    "spark": [
-    null,
-    null,
     null,
     null,
     null,
@@ -52,7 +50,9 @@
     14.3,
     13.9,
     13.5,
-    13.1
+    13.1,
+    12.7,
+    12.4
    ],
    "summary": "IT之家称 DeepSeek 宣布将内部推理框架 DeepInfer 全面开源，希望帮助开发者与企业降低大规模推理的算力与能耗成本。",
    "latest": null,
@@ -65,9 +65,9 @@
     "publicId": "2026-10-20-us-deepseek-federal-ban",
     "title": "美国要求联邦民用机构清除 DeepSeek AI"
    },
-   "heat": 12.2,
+   "heat": 11.5,
    "trend": "down",
-   "trendPct": -16.4,
+   "trendPct": -16.1,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -91,8 +91,6 @@
     null,
     null,
     null,
-    null,
-    null,
     9.9,
     9.6,
     19.1,
@@ -110,7 +108,9 @@
     13.5,
     13.1,
     12.7,
-    12.4
+    12.4,
+    12.0,
+    11.7
    ],
    "summary": "多家媒体称，美国国土安全部等已要求联邦民用机构停止使用中国实验室 DeepSeek 的 AI 技术，并移除相关产品及基于其技术的第三方服务，理由是国家安全。",
    "latest": null,
@@ -123,9 +123,9 @@
     "publicId": "2026-10-21-openai-orchestra-bio",
     "title": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线"
    },
-   "heat": 12.1,
+   "heat": 11.3,
    "trend": "down",
-   "trendPct": -15.4,
+   "trendPct": -16.3,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -144,8 +144,6 @@
     }
    ],
    "spark": [
-    8.7,
-    8.4,
     8.2,
     7.9,
     7.7,
@@ -168,7 +166,9 @@
     13.3,
     12.9,
     12.5,
-    12.2
+    12.2,
+    11.8,
+    11.5
    ],
    "summary": "OpenAI 宣布收购药物开发协作平台 Orchestra Bio，团队与技术并入其生命科学模型与工具 Rosalind / Rosalind Workbench，目标是用智能体协助生物医药团队协调研发流程。",
    "latest": null,
@@ -180,9 +180,9 @@
     "publicId": "2026-10-20-openai-low-resource-langs",
     "title": "OpenAI：推进低资源编程语言上的编码能力"
    },
-   "heat": 10.0,
+   "heat": 9.4,
    "trend": "down",
-   "trendPct": -16.0,
+   "trendPct": -16.1,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -201,8 +201,6 @@
     }
    ],
    "spark": [
-    6.1,
-    5.9,
     5.8,
     5.6,
     5.5,
@@ -225,7 +223,9 @@
     11.0,
     10.7,
     10.4,
-    10.1
+    10.1,
+    9.8,
+    9.5
    ],
    "summary": "OpenAI 称改进模型在 COBOL、Fortran 等低资源编程语言上的表现；The Decoder 称在 MultiLangBench 上 GPT-6 Astra 跨 20 种语言测试通过率约 87.4%。",
    "latest": null,
