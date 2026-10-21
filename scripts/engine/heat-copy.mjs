@@ -11,6 +11,22 @@ export function assertHeatCopy(text, label = "heat copy") {
   if (hit) throw new Error(`${label} contains forbidden heat wording «${hit[0]}»`);
 }
 
+/** Drop banned heat claims. 「实时语音智能体」 becomes the existing 「语音智能体」. */
+export function scrubForbiddenHeatCopy(text) {
+  return String(text ?? "").replaceAll("实时", "").replace(/引擎已\s*1:1/g, "");
+}
+
+export function scrubForbiddenHeatCopyDeep(value) {
+  if (typeof value === "string") return scrubForbiddenHeatCopy(value);
+  if (Array.isArray(value)) return value.map(scrubForbiddenHeatCopyDeep);
+  if (value && typeof value === "object") {
+    const out = {};
+    for (const [key, child] of Object.entries(value)) out[key] = scrubForbiddenHeatCopyDeep(child);
+    return out;
+  }
+  return value;
+}
+
 /** Display the engine heat value without rescaling. One decimal if needed. */
 export function formatHeat(value) {
   if (typeof value !== "number" || !Number.isFinite(value)) return null;

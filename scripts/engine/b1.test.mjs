@@ -101,6 +101,49 @@ describe("B1 publicize", () => {
     assert.equal(dropped, null);
   });
 
+  it("scrubs 实时 from public titles so CI engine-data cannot leak it", () => {
+    const site = publicizeBundle({
+      dir: "",
+      meta: { data_as_of: "", generated_at: "" },
+      data_as_of: "",
+      built_at: "",
+      hot: {
+        computedAt: null,
+        windowHours: 48,
+        entries: [
+          {
+            rank: 1,
+            story: { publicId: "2026-10-21-mistral-voxtral-3", title: "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型" },
+            heat: 13.1,
+            spark: [1, 2],
+          },
+        ],
+      },
+      hotStrip: [{ rank: 1, title: "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型", heat: 13.1 }],
+      daily: null,
+      dailyIndex: [],
+      dailies: [],
+      feed: null,
+      feedItems: [],
+      events: [],
+      eventsIndex: [],
+      timeline: { filters: { channel: "all", category: null, tag: null }, cards: [], nextCursor: null, hot: [], dayCounts: {} },
+      timelineIndex: null,
+      redirects: [],
+      sources: [],
+      search: null,
+      items: [],
+      topics: [],
+      allTimeline: null,
+      weeklyIndex: [],
+      monthlyIndex: [],
+    });
+    const text = JSON.stringify(site);
+    assert.equal(text.includes("实时"), false);
+    assert.equal(site.hot.entries[0].story.title, "Mistral 发布 Voxtral 3：语音智能体 SDK 与语音模型");
+    assert.equal(site.hotStrip[0].title, "Mistral 发布 Voxtral 3：语音智能体 SDK 与语音模型");
+  });
+
   it("drops belowThreshold preview rows", () => {
     assert.equal(publicizeHotEntry({ rank: 9, story: { publicId: "x", title: "补位预览" }, belowThreshold: true }), null);
     assert.equal(

@@ -6,6 +6,7 @@ import {
   formatHeat,
   formatTrendPct,
   heatMatches,
+  scrubForbiddenHeatCopy,
   sparkMatches,
 } from "./heat-copy.mjs";
 
@@ -19,6 +20,14 @@ describe("HEAT_METHOD_COPY", () => {
   it("rejects 实时 and 引擎已 1:1", () => {
     assert.throws(() => assertHeatCopy("实时热度"), /实时/);
     assert.throws(() => assertHeatCopy("引擎已 1:1"), /引擎已/);
+  });
+
+  it("scrubs 实时 down to existing 语音智能体 wording", () => {
+    assert.equal(
+      scrubForbiddenHeatCopy("Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型"),
+      "Mistral 发布 Voxtral 3：语音智能体 SDK 与语音模型",
+    );
+    assert.equal(scrubForbiddenHeatCopy("引擎已 1:1"), "");
   });
 });
 

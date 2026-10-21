@@ -5,6 +5,7 @@
 import { groupByEvent } from "./groupByEvent.mjs";
 import { isAcceptedCoverClass } from "./loader.mjs";
 import { FIXTURE_IDS, FIXTURE_TITLE_NEEDLES, textHasFixtureId } from "./ids.mjs";
+import { scrubForbiddenHeatCopyDeep } from "./heat-copy.mjs";
 
 /** Real MoE copy says "816B parameters"; Remaining-A treats 816B as a fixture title token. */
 function scrubFixtureTitleNeedles(value) {
@@ -239,7 +240,7 @@ export function publicizeBundle(bundle, meta = {}) {
   site.timeline.hot = site.timeline.hot?.length ? site.timeline.hot : site.hotStrip;
   site.itemUrls = collectItemUrls(bundle, [...site.timeline.cards, ...(site.allTimeline.cards || [])]);
   if (!site.allTimeline.cards.length) site.allTimeline.cards = site.timeline.cards;
-  const publicSite = scrubFixtureTitleNeedles(site);
+  const publicSite = scrubForbiddenHeatCopyDeep(scrubFixtureTitleNeedles(site));
   assertPublicSite(publicSite);
   return publicSite;
 }
@@ -252,6 +253,7 @@ export function assertPublicSite(site) {
   }
   if (/example\.com/i.test(text)) throw new Error("public site data contains example.com");
   if (/"score"\s*:/.test(text)) throw new Error("public site data contains a score key");
+  if (/实时|引擎已\s*1:1/.test(text)) throw new Error("public site data contains forbidden heat wording");
 }
 
 export function emptyPublicSite() {
