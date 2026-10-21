@@ -268,5 +268,7 @@
   "timeline/index.json",
   "timeline/page-1.json"
  ],
- "next_round": "2026-10-21T19:25:00+08:00"
+ "next_round": "2026-10-21T19:25:00+08:00",
+ "cover_rule": "aihot soft: width≥480 (unknown=800) height≥240 + alt; value_class priority; materialized same-origin",
+ "cover_note": "cover.url 为 assets/covers/…；由 box 物化后提交 engine-data（#36）"
 }
