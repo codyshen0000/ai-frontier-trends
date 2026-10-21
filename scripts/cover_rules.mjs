@@ -172,12 +172,31 @@ const AVATAR_URL_RE =
   /(?:^|\/)(?:avatar|portrait|headshot|profile[-_]?pic|profile[-_]?image|userpic|head[-_]?shot)(?:[-_.]|\.|$)/i;
 const DECOR_URL_RE =
   /unsplash\.com|pexels\.com|pixabay\.com|stock(image|photo)|\/mood\/|\/texture\/|\/gradient\/|hero[-_]?bg|background[-_]?only/i;
-const KEEP_URL_RE =
-  /arena|lmarena|leaderboard|benchmark|ablation|figure|\/fig[-_.]|screenshot|screen[-_]?shot|comparison|side[-_]?by[-_]?side|architecture|diagram|explainer|flowchart|generations?|sample[-_]?output|model[-_]?sample|bbox[-_]?edit|demo[-_]?ui|(?:^|[^a-z])(?:eval(?:uation)?|chart|plot)(?:[^a-z]|$)/i;
-const KEEP_ALT_RE =
-  /评测|对照|对比|截图|样张|架构|示意|figure|chart|benchmark|arena|leaderboard|screenshot|diagram|ablation|eval/i;
+/** Marketing hero / abstract geometry / low-entropy color-block (URL/alt heuristic, no pixels). */
+const ABSTRACT_HERO_RE =
+  /(?:^|\/)(?:hero|banner|masthead|splash|key[-_]?art|cover[-_]?art|key[-_]?visual|main[-_]?visual|brand[-_]?visual)(?:[-_.]|\.|$)|hero[-_]?(?:blog|news|banner|bg|image|img|art|visual)|\/heroes?\//i;
+const ABSTRACT_LOOK_RE =
+  /abstract|geometric|color[-_]?block|solid[-_]?color|low[-_]?entropy|gradient[-_]?(?:mesh|fill|bg|hero)|blob[-_]?art|atmosphere|mood[-_]?(?:board|shot|image)?|抽象|色块|几何(?:色|背景|图形)?|氛围图|背景图|品牌视觉|主视觉/i;
+const CHART_RE =
+  /arena|lmarena|leaderboard|benchmark|ablation|(?:^|[^a-z\u4e00-\u9fff])(?:eval(?:uation)?|chart|plot)(?:[^a-z\u4e00-\u9fff]|$)|评测/i;
+const FIGURE_RE = /figure|\/fig[-_.]|论文图|paper[-_]?fig/i;
+const SAMPLE_RE =
+  /generations?|sample[-_]?output|model[-_]?sample|before[-_]?after|side[-_]?by[-_]?side|样张|生成效果|对照样张|模型输出/i;
+const DIAGRAM_RE =
+  /architecture|diagram|flowchart|schematic|block[-_]?diagram|pipeline[-_]?fig|架构图|流程图|示意图/i;
+const SCREENSHOT_RE = /screenshot|screen[-_]?shot|截图/i;
+/** Real UI chrome or readable on-image text — bare 界面/screenshot is not enough. */
+const UI_SUBSTANCE_RE =
+  /console|dashboard|settings?|control[-_]?panel|playground|studio|sidebar|toolbar|menubar|dialog|modal|chat[-_]?ui|voice[-_]?ui|transcript|widget|inspector|app[-_]?ui|product[-_]?ui|demo[-_]?ui|bbox[-_]?edit|控制台|面板|设置页|对话框|聊天界面|语音\s*ui|caption|legend|annotated|callout|overlay[-_]?text|labeled|with[-_]?labels|ui[-_]?copy|readable[-_]?text|文字说明|图注|标注/i;
 const REJECT_ALT_RE = /^(logo|avatar|icon|badge|wordmark|brand)$/i;
-const TOPIC_RE = /模型|权重|评测|论文|figure|arena|benchmark|api|ui|截图|开源|发布|flux|llm|agent|产品/i;
+
+function hasUiSubstance(blob) {
+  return UI_SUBSTANCE_RE.test(blob);
+}
+
+function hasValuableImageSignal(blob) {
+  return CHART_RE.test(blob) || FIGURE_RE.test(blob) || SAMPLE_RE.test(blob) || DIAGRAM_RE.test(blob) || hasUiSubstance(blob);
+}
 
 function sameUrl(a, b) {
   if (!a || !b) return false;
@@ -191,20 +210,19 @@ function sameUrl(a, b) {
 }
 
 /**
- * Value gate. Unsure → empty.
- * Width is not a keep signal. Unknown width is only coalesced to 800 after keep.
+ * Value gate: hard keep / reject / empty. Unsure → empty.
+ * Width, first-party host, topic keywords, and visual/size-first never override.
+ * Title/summary are not keep signals (they previously leaked decorative /news/ heroes).
+ * Unknown width is only coalesced to 800 after keep.
  */
 export function classifyValue(item, ctx = {}) {
   const url = String(item?.url || "");
   const alt = String(item?.alt || ctx.alt || "");
-  const title = String(ctx.title || "");
-  const summary = String(ctx.summary || "");
-  const pageUrl = String(ctx.pageUrl || "");
   const ogImage = ctx.ogImage || null;
-  const firstParty = Boolean(ctx.firstParty);
   const host = hostOf(url);
   const path = pathOf(url);
   const blob = `${host} ${path} ${alt}`.toLowerCase();
+  const valuable = hasValuableImageSignal(blob);
 
   if (isObviousLogoOrBadgeUrl(url) || isBadgeProxy(url)) {
     return { verdict: "reject", category: "badge", reason: "logo/徽章 URL，无用" };
@@ -221,53 +239,38 @@ export function classifyValue(item, ctx = {}) {
   if (DECOR_URL_RE.test(url) || DECOR_URL_RE.test(path)) {
     return { verdict: "reject", category: "decor", reason: "装饰/库存/氛围图，无用" };
   }
-  if (looksSquareLogo(item.width, item.height) && !KEEP_URL_RE.test(blob) && !KEEP_ALT_RE.test(alt)) {
+  if ((ABSTRACT_HERO_RE.test(blob) || ABSTRACT_LOOK_RE.test(blob)) && !valuable) {
+    return { verdict: "reject", category: "decor", reason: "抽象几何/低熵色块 hero，无用" };
+  }
+  if (looksSquareLogo(item.width, item.height) && !valuable) {
     return { verdict: "reject", category: "logo", reason: "近方形小图，按 Logo 拒收" };
   }
-  if (isClassicOgSize(item.width, item.height) && !KEEP_URL_RE.test(blob) && !KEEP_ALT_RE.test(alt)) {
+  if (isClassicOgSize(item.width, item.height) && !valuable) {
     return { verdict: "reject", category: "og", reason: "经典 OG 尺寸且无正文图信号，无用" };
   }
 
-  if (KEEP_URL_RE.test(blob) || KEEP_ALT_RE.test(alt) || KEEP_ALT_RE.test(title)) {
-    if (/arena|lmarena|leaderboard|benchmark|eval|chart|plot|ablation/.test(blob) || /评测|对照|arena/i.test(`${title} ${alt}`)) {
-      return { verdict: "keep", category: "eval_chart", reason: "评测图/Arena 榜图，有用" };
-    }
-    if (/figure|\/fig[-_.]|arxiv\.org/.test(blob) || /论文|figure/i.test(`${title} ${alt}`)) {
-      return { verdict: "keep", category: "paper_figure", reason: "论文/研究图，有用" };
-    }
-    if (/screenshot|screen[-_]?shot|demo[-_]?ui|bbox/.test(blob) || /截图|界面/i.test(`${title} ${alt}`)) {
-      return { verdict: "keep", category: "product_ui", reason: "产品功能截图，有用" };
-    }
-    if (/architecture|diagram|explainer|flowchart|示意|架构/.test(blob) || /架构|示意/.test(`${title} ${alt}`)) {
-      return { verdict: "keep", category: "official_explainer", reason: "官方解说图/架构图，有用" };
-    }
-    if (/sample|generation|model[-_]?sample/.test(blob) || /样张|生成效果/.test(`${title} ${alt}`)) {
-      return { verdict: "keep", category: "model_sample", reason: "模型样张/对比图，有用" };
-    }
-    return { verdict: "keep", category: "official_explainer", reason: "正文说明图信号，有用" };
+  // Image-level evidence only. Title/summary and officialHost+size must not keep.
+  if (CHART_RE.test(blob)) {
+    return { verdict: "keep", category: "eval_chart", reason: "评测图/Arena 榜图，有用" };
+  }
+  if (FIGURE_RE.test(blob)) {
+    return { verdict: "keep", category: "paper_figure", reason: "论文/研究图，有用" };
+  }
+  if (hasUiSubstance(blob)) {
+    return { verdict: "keep", category: "product_ui", reason: "产品功能截图，有用" };
+  }
+  if (SCREENSHOT_RE.test(blob)) {
+    return { verdict: "empty", category: "unsure", reason: "仅有截图标签、无界面控件/可读文字信号，默认不放" };
+  }
+  if (DIAGRAM_RE.test(blob)) {
+    return { verdict: "keep", category: "official_explainer", reason: "官方解说图/架构图，有用" };
+  }
+  if (SAMPLE_RE.test(blob)) {
+    return { verdict: "keep", category: "model_sample", reason: "模型样张/对比图，有用" };
   }
 
-  if (host === "arxiv.org" && /\/html\/|\/src\//.test(path) && !/logo|icon/.test(path)) {
+  if (host === "arxiv.org" && /\/html\/|\/src\//.test(path) && !/logo|icon|hero/.test(path)) {
     return { verdict: "keep", category: "paper_figure", reason: "arXiv HTML 正文图，有用" };
-  }
-
-  const topicHit = TOPIC_RE.test(`${title} ${summary}`);
-  const largeEnough =
-    (item.width == null && item.height == null) ||
-    (Number(item.width) >= 800 && (item.height == null || Number(item.height) >= 400));
-  const officialHost =
-    firstParty &&
-    /\/blog\/|\/docs\/|\/news\/|huggingface\.co|bfl\.ai|arxiv\.org|openai\.com|anthropic\.com|deepmind\.google/.test(
-      `${host}${pathOf(pageUrl)}${pageUrl}`,
-    );
-  if (officialHost && topicHit && largeEnough && !isClassicOgSize(item.width, item.height) && !looksSquareLogo(item.width, item.height)) {
-    if (/样张|生成|image|flux|扩散|collage|outputs?|illustration/.test(`${title} ${summary} ${path} ${alt}`)) {
-      return { verdict: "keep", category: "model_sample", reason: "官方博客正文大图，按模型样张放行" };
-    }
-    if (/ui|界面|产品|agent|协议/.test(`${title} ${summary}`)) {
-      return { verdict: "keep", category: "product_ui", reason: "官方产品正文大图，按功能截图放行" };
-    }
-    return { verdict: "keep", category: "official_explainer", reason: "官方正文大图且主题匹配，按解说图放行" };
   }
 
   return { verdict: "empty", category: "unsure", reason: "边界拿不准，默认不放" };
@@ -339,8 +342,8 @@ function asCoverImage(item) {
 }
 
 /**
- * v5: drop summary/svg/h<240/logo-badge URLs, value-gate the rest, take first keep.
- * Unknown width is treated as 800 only after the value gate passes.
+ * v5: drop summary/svg/h<240/logo-badge URLs, hard value-gate the rest, take first keep.
+ * Visual/size-first never overrides the gate. Unknown width is 800 only after keep.
  */
 export function pickFirstValuableImage(media, { listed = true, bodyMode = "full", title = "", summary = "", pageUrl = "", ogImage = null, firstParty = false } = {}) {
   if (!listed) return { image: null, reason: "not_listed", category: null, value: null };
