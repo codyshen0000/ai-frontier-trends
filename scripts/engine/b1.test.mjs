@@ -86,6 +86,9 @@ describe("B1 publicize", () => {
     );
     assert.equal(publicCover({ ...ok, valueClass: "og" }), null);
     assert.equal(publicCover({ ...ok, url: "https://cdn.example.invalid/x.png" }), null);
+    const soft = publicCover({ url: "assets/covers/demo.webp", width: 1200, height: 800, alt: "产品页主视觉" });
+    assert.equal(soft.url, "assets/covers/demo.webp");
+    assert.equal(soft.valueClass, undefined);
   });
 
   it("strips score keys and fixture cards", () => {

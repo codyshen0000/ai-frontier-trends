@@ -42,25 +42,27 @@ export function coverClassOf(cover) {
   return cover.valueClass ?? cover.value_class ?? cover.value_category;
 }
 
-/** Same-origin only. Remote http(s) covers stay empty until materialized. */
+/** Same-origin only. Remote http(s) covers stay empty until materialized.
+ *  aihot (#36): valueClass optional when alt+size OK; rejected classes still drop. */
 export function publicCover(cover) {
   if (!cover || typeof cover !== "object") return null;
   const url = String(cover.url || "").trim();
   const alt = String(cover.alt || "").trim();
   if (!url || !alt) return null;
   const klass = coverClassOf(cover);
-  if (!klass || !isAcceptedCoverClass(klass)) return null;
+  if (klass && !isAcceptedCoverClass(klass)) return null;
   if (cover.height != null && Number(cover.height) < 240) return null;
   if (/^https?:\/\//i.test(url)) return null;
   if (/example\.com/i.test(url)) return null;
-  return {
+  const out = {
     url,
     srcSet: cover.srcSet || undefined,
     width: cover.width ?? null,
     height: cover.height ?? null,
     alt,
-    valueClass: klass,
   };
+  if (klass) out.valueClass = klass;
+  return out;
 }
 
 function cleanText(value) {
