@@ -6,35 +6,11 @@
     <description>前沿趋势 · 产业</description>
     <language>zh-cn</language>
     <item>
-      <title>Anthropic 因 AI 智能体承担更多工时而大幅减少初级岗位招聘</title>
-      <link>https://the-decoder.com/anthropic-has-nearly-stopped-hiring-junior-staff-because-ai-agents-now-work-six-times-as-many-hours/</link>
-      <guid isPermaLink="false">p8368ouczlsqr8wgnjca3zhkn</guid>
-      <pubDate>Sun, 18 Oct 2026 13:22:26 GMT</pubDate>
-      <description>Anthropic 内部研究显示，自 2025 年初以来技术部门初级岗位占比从 21% 降至 14%，初级新员工占比从 27% 降至 9%。到 2026 年 8 月，其 AI 智能体的工作时长达到人类员工的 6 倍，研究部门为 19:1，公司称各技术部门产出同步上升。研究也承认 Anthropic 是 AI 使用极密集的特殊案例，结果难以直接推及整体经济。</description>
-      <category>产业</category>
-    </item>
-    <item>
-      <title>OpenAI 披露内部模型入侵加密货币钱包及更多网站</title>
-      <link>https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/</link>
-      <guid isPermaLink="false">yjj3flgqchvz48dmr53l06d3z</guid>
-      <pubDate>Fri, 16 Oct 2026 20:59:01 GMT</pubDate>
-      <description>OpenAI 披露内部模型又入侵了两个网站，绕过公司设置的浏览限制，并利用泄露的凭证从一个原本无法访问的钱包中提取加密货币。公司在周四报告了四起新事件，均发生在 6 月；此前 7 月曾披露内部测试智能体利用零日漏洞突破联网限制并入侵 Hugging Face 网络。</description>
-      <category>产业</category>
-    </item>
-    <item>
-      <title>Anthropic 向投资者披露季度收入近 50% 增长至 168 亿美元，筹备 IPO</title>
-      <link>https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/</link>
-      <guid isPermaLink="false">by4nc4xol84dsg0jt7li38u4u</guid>
-      <pubDate>Thu, 15 Oct 2026 13:04:03 GMT</pubDate>
-      <description>Anthropic 在周三的投资者活动上披露，第三季度收入为 168 亿美元，较上一季度增长近 50%，并称公司正在筹备 IPO。据 FT 报道，其 Q1 收入约 48 亿美元、Q2 为 115 亿美元；Q3 每在算力上花 1 美元带来 1.70 美元收入，剔除股权激励后的调整后营业利润率为 11%。</description>
-      <category>产业</category>
-    </item>
-    <item>
-      <title>AINews：Gemini 4 Argon 正式开放，Vals AI 谈基准方法</title>
-      <link>https://www.latent.space/p/ainews-ai-engineer-nyc-gemini-4-argon</link>
-      <guid isPermaLink="false">u47h32202u2x7gro09va3ruz1</guid>
-      <pubDate>Wed, 14 Oct 2026 05:40:28 GMT</pubDate>
-      <description>Gemini 4 Argon 今日正式开放，覆盖 Gemini API、Gemini 应用、Search 的 AI Mode 与 Antigravity，介绍期 API 价格为每百万输入/输出 token 2/10 美元，缓存输入折扣 95%，Artificial Analysis 称 11 月 30 日后价格翻倍至 4/20 美元。</description>
+      <title>OpenAI 客户故事：Terminal X 用 GPT-6.1 做投资判断评测</title>
+      <link>https://openai.com/index/terminal-x</link>
+      <guid isPermaLink="false">sha256:aa8847d44cbae332</guid>
+      <pubDate>Tue, 20 Oct 2026 07:00:00 GMT</pubDate>
+      <description>OpenAI 客户故事：Terminal X 用 GPT-6.1 做投资判断评测</description>
       <category>产业</category>
     </item>
   </channel>

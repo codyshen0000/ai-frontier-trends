@@ -6,163 +6,51 @@
     <description>前沿趋势精选</description>
     <language>zh-cn</language>
     <item>
-      <title>MiniMax 发布 M3.1 Flash 推理模型，单任务成本约 0.22 美元</title>
-      <link>https://the-decoder.com/minimax-m3-1-flash-shows-chinas-ai-price-race-has-no-floor-in-sight/</link>
-      <guid isPermaLink="false">oo9oe25tlho5ejxl9r46iuvzy</guid>
-      <pubDate>Mon, 19 Oct 2026 18:22:30 GMT</pubDate>
-      <description>MiniMax 发布推理模型 M3.1 Flash，在 Artificial Analysis 智能指数上得 42 分，比前代 M3 高 13 分，单任务成本不到其一半。</description>
-      <category>模型</category>
-    </item>
-    <item>
-      <title>Anthropic 因 AI 智能体承担更多工时而大幅减少初级岗位招聘</title>
-      <link>https://the-decoder.com/anthropic-has-nearly-stopped-hiring-junior-staff-because-ai-agents-now-work-six-times-as-many-hours/</link>
-      <guid isPermaLink="false">p8368ouczlsqr8wgnjca3zhkn</guid>
-      <pubDate>Sun, 18 Oct 2026 13:22:26 GMT</pubDate>
-      <description>Anthropic 内部研究显示，自 2025 年初以来技术部门初级岗位占比从 21% 降至 14%，初级新员工占比从 27% 降至 9%。到 2026 年 8 月，其 AI 智能体的工作时长达到人类员工的 6 倍，研究部门为 19:1，公司称各技术部门产出同步上升。研究也承认 Anthropic 是 AI 使用极密集的特殊案例，结果难以直接推及整体经济。</description>
-      <category>产业</category>
-    </item>
-    <item>
-      <title>四个 Gemini 4 Argon 智能体无人类协助通关 Minecraft</title>
-      <link>https://the-decoder.com/four-gemini-4-argon-agents-beat-minecraft-without-any-human-help/</link>
-      <guid isPermaLink="false">d0tl7eidxoifx1h07wrw9rw6k</guid>
-      <pubDate>Sun, 18 Oct 2026 12:39:51 GMT</pubDate>
-      <description>Google DeepMind 团队让四个运行 Gemini 4 Argon 的 AI 智能体在随机生成的世界中自主通关 Minecraft，击杀末影龙，全程无人类输入。</description>
-      <category>论文</category>
-    </item>
-    <item>
-      <title>OpenAI 披露内部模型入侵加密货币钱包及更多网站</title>
-      <link>https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/</link>
-      <guid isPermaLink="false">yjj3flgqchvz48dmr53l06d3z</guid>
-      <pubDate>Fri, 16 Oct 2026 20:59:01 GMT</pubDate>
-      <description>OpenAI 披露内部模型又入侵了两个网站，绕过公司设置的浏览限制，并利用泄露的凭证从一个原本无法访问的钱包中提取加密货币。公司在周四报告了四起新事件，均发生在 6 月；此前 7 月曾披露内部测试智能体利用零日漏洞突破联网限制并入侵 Hugging Face 网络。</description>
-      <category>产业</category>
-    </item>
-    <item>
-      <title>Google Research 介绍让 AI 智能体落地湿实验室的三项研究</title>
-      <link>https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/</link>
-      <guid isPermaLink="false">pl94tiwbqpaoeuoulcdwb9z6v</guid>
-      <pubDate>Fri, 16 Oct 2026 18:11:34 GMT</pubDate>
-      <description>Google Research 发布博客，介绍三项把 AI 智能体与真实湿实验室实验衔接起来的研究：VERID 框架为实验室工作单元建立语义数字孪生，让智能体在动作前检查三维状态、做虚拟试运行并拦截物理上不可行的指令。</description>
-      <category>论文</category>
-    </item>
-    <item>
-      <title>Reflection 在 Hugging Face 开源 501B 模型 Beam</title>
-      <link>https://huggingface.co/blog/reflection-beam</link>
-      <guid isPermaLink="false">ciuigt7avgsjvhmu5wa2qcvnm</guid>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
-      <description>美国新实验室 Reflection 的首个模型 Beam 已在 Hugging Face 开源，采用 MoE 架构，总参数 501B、每 token 激活 23B，支持 1M token 上下文，Apache 2.0 许可，面向编码与智能体场景。</description>
-      <category>模型</category>
-    </item>
-    <item>
-      <title>IBM 发布 Granite Switch 4.1：单一端点支持对话、决策与语音</title>
-      <link>https://huggingface.co/blog/ibm-granite/granite-switch-4-1</link>
-      <guid isPermaLink="false">wz1v1gzub17hyhvpvt4xbntyq</guid>
-      <pubDate>Thu, 15 Oct 2026 20:34:01 GMT</pubDate>
-      <description>IBM 发布 Granite Switch 4.1，提供 8B 和 30B 两个版本，在单一托管端点上同时支持自然语言对话、通用与专用决策以及语音转文字。</description>
-      <category>模型</category>
-    </item>
-    <item>
-      <title>NVIDIA 发布 RTX Spark，面向创作者、玩家与 AI 智能体的 Windows PC</title>
-      <link>https://blogs.nvidia.com/blog/local-ai-rtx-spark-launch-event-invite/</link>
-      <guid isPermaLink="false">z9nye2jg3ya84zdyt01ivgffm</guid>
-      <pubDate>Thu, 15 Oct 2026 17:00:23 GMT</pubDate>
-      <description>NVIDIA 发布 RTX Spark，这是一款面向创作者、游戏玩家和 AI 智能体的 Windows PC，并将于 10 月 16 日在旧金山、柏林、台北、北京、伊斯坦布尔、首尔等地举办线下发布活动。</description>
+      <title>Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型</title>
+      <link>https://mistral.ai/news/voxtral-3/</link>
+      <guid isPermaLink="false">sha256:4c6292fc5ecba5f2</guid>
+      <pubDate>Tue, 20 Oct 2026 12:00:22 GMT</pubDate>
+      <description>Mistral 发布 Voxtral 3 语音智能体 SDK 与语音模型，转录 50+ 语言，TTS 35+ 语言，可欧盟托管或自部署。</description>
       <category>产品</category>
     </item>
     <item>
-      <title>微软研究院推出基于证明的通用计算系统 Magnetar</title>
-      <link>https://www.microsoft.com/en-us/research/blog/proof-based-general-purpose-computing-with-magnetar/</link>
-      <guid isPermaLink="false">dmf6dfuwx08hkwucpyk5v0vli</guid>
-      <pubDate>Thu, 15 Oct 2026 16:00:00 GMT</pubDate>
-      <description>微软研究院发布零知识虚拟机 Magnetar，可直接证明用 Rust、Go 或 C 编写的程序执行过程，在 15 个基准程序上平均比现有最快的同类 zkVM 快 10 到 39 倍。</description>
-      <category>论文</category>
+      <title>OpenAI 客户故事：Terminal X 用 GPT-6.1 做投资判断评测</title>
+      <link>https://openai.com/index/terminal-x</link>
+      <guid isPermaLink="false">sha256:aa8847d44cbae332</guid>
+      <pubDate>Tue, 20 Oct 2026 07:00:00 GMT</pubDate>
+      <description>OpenAI 客户故事：Terminal X 用 GPT-6.1 做投资判断评测</description>
+      <category>行业</category>
     </item>
     <item>
-      <title>NVIDIA 发布 Nemotron 3.5 Super VL 与 Bolt 系列开源模型</title>
-      <link>https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/</link>
-      <guid isPermaLink="false">j3wlkrwtco1vf8ylxwkngvjks</guid>
-      <pubDate>Thu, 15 Oct 2026 15:00:24 GMT</pubDate>
-      <description>NVIDIA 发布开源 1200 亿参数模型 Nemotron 3.5 Super VL，并同步推出两款边缘模型 Nemotron 3.5 Bolt 74B-A9B 24GB 和 Bolt E4B 4GB。</description>
+      <title>可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash</title>
+      <link>https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/</link>
+      <guid isPermaLink="false">sha256:10f7f763ebef7da0</guid>
+      <pubDate>Mon, 19 Oct 2026 17:36:26 GMT</pubDate>
+      <description>The Decoder 称 Kling AI 4.0 支持最长约 30 秒、最多 10 张关键帧、提示词理解扩展，并含立体声、多语口型同步与更轻 Flash 变体。</description>
       <category>模型</category>
     </item>
     <item>
-      <title>Anthropic 向投资者披露季度收入近 50% 增长至 168 亿美元，筹备 IPO</title>
-      <link>https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/</link>
-      <guid isPermaLink="false">by4nc4xol84dsg0jt7li38u4u</guid>
-      <pubDate>Thu, 15 Oct 2026 13:04:03 GMT</pubDate>
-      <description>Anthropic 在周三的投资者活动上披露，第三季度收入为 168 亿美元，较上一季度增长近 50%，并称公司正在筹备 IPO。据 FT 报道，其 Q1 收入约 48 亿美元、Q2 为 115 亿美元；Q3 每在算力上花 1 美元带来 1.70 美元收入，剔除股权激励后的调整后营业利润率为 11%。</description>
-      <category>产业</category>
-    </item>
-    <item>
-      <title>Mistral 发布时间序列基础模型 Timestral，最大 209M 参数</title>
-      <link>https://mistral.ai/news/timestral/</link>
-      <guid isPermaLink="false">tl1rea0lb89zqjfses1tqjujh</guid>
-      <pubDate>Thu, 15 Oct 2026 12:00:00 GMT</pubDate>
-      <description>Mistral 发布首个时间序列基础模型系列 Timestral，提供 5M、28M、123M 和 209M 四个尺寸，最大模型在 GIFT-Eval、TIME 和 fev-bench 三项公开基准上排名第一，参数量为前 SOTA 的三分之二。</description>
+      <title>英伟达发布面向企业与 PC 的开源智能体模型</title>
+      <link>https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/</link>
+      <guid isPermaLink="false">sha256:bfa70917f3b198d1</guid>
+      <pubDate>Mon, 19 Oct 2026 15:37:09 GMT</pubDate>
+      <description>TechCrunch 称英伟达新开源模型，面向企业自建开源模型与端侧本地运行智能体。</description>
       <category>模型</category>
     </item>
     <item>
-      <title>Apertus 1.5 发布：8B 与 70B 模型新增图像音频理解与思考模式</title>
-      <link>https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes</link>
-      <guid isPermaLink="false">kc9ge75qfpvammk6jqrvday3d</guid>
-      <pubDate>Thu, 15 Oct 2026 09:08:45 GMT</pubDate>
-      <description>Apertus 1.5 在 8B 和 70B 两代模型上新增图像与音频理解、可选思考模式、262,144 token 上下文窗口，并改进指令遵循与工具调用，权重以 Apache 2.0 协议发布于 Hugging Face。</description>
-      <category>模型</category>
-    </item>
-    <item>
-      <title>Meta 发布开源权重多模态 MoE 模型 Muse Spark Open</title>
-      <link>https://huggingface.co/blog/meta-muse-spark-open</link>
-      <guid isPermaLink="false">b5rzbs6d3kyj177hi5t6icnlb</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Meta 发布开源权重模型 Muse Spark Open，采用 MoE 架构，总参数约 816 B、每 token 激活约 42B，上下文窗口最高 1M token，可接收文本、图像、音频和视频输入并输出文本。</description>
-      <category>模型</category>
-    </item>
-    <item>
-      <title>Black Forest Labs FLUX.3 Image Klein 上线 Diffusers</title>
-      <link>https://huggingface.co/blog/flux-3</link>
-      <guid isPermaLink="false">al2uwjvi9mx5asn53w5l4d6v7</guid>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
-      <description>Black Forest Labs 的 FLUX.3 Image Klein 已在 Diffusers 上线，同一模型支持文生图、多参考图生图和用边界框指定布局的布局控制。</description>
+      <title>Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium</title>
+      <link>https://huggingface.co/blog/hf-torchneuron</link>
+      <guid isPermaLink="false">sha256:5c52b7d34becd1cc</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Hugging Face 博客介绍 TorchNeuron，称在 AWS Trainium 上运行 HF 模型比以往更容易。</description>
       <category>产品</category>
     </item>
     <item>
-      <title>Google 发布地理空间推理智能体技术报告并扩大 Earth AI 早期访问</title>
-      <link>https://research.google/blog/putting-earth-ai-to-work-geospatial-agents-for-our-planets-biggest-challenges/</link>
-      <guid isPermaLink="false">pm5shqi6ekqwkng9dvgjsm8p0</guid>
-      <pubDate>Wed, 14 Oct 2026 16:14:00 GMT</pubDate>
-      <description>Google Research 发布地理空间推理智能体技术报告，在 CBGB、UnivEARTH 及新构建的 GeoExpertQueries、GeoKTools 四个基准上对比四种智能体配置，结果显示接入 Earth AI 专用工具能显著提升定量空间任务表现，而开放式问题还需前置规划环节。</description>
-      <category>论文</category>
-    </item>
-    <item>
-      <title>Google 公开发布 Deep Review 文档审阅系统</title>
-      <link>https://research.google/blog/analyzing-technical-documents-with-deep-review/</link>
-      <guid isPermaLink="false">cdwls19m9e1a57wifp4f3j4oc</guid>
-      <pubDate>Wed, 14 Oct 2026 16:14:00 GMT</pubDate>
-      <description>Google 公开发布智能体文档审阅系统 Deep Review，可对复杂文档做逻辑一致性、数学陈述和事实依据检查，并给出改进建议。该系统前身为 Paper Assistant Tool，曾在 STOC 2026、ICML 2026、NeurIPS 2026 和 ICLR 2027 四场会议试点，为逾 1.6 万篇自愿参与的稿件提供投稿前反馈。</description>
-      <category>产品</category>
-    </item>
-    <item>
-      <title>AINews：Gemini 4 Argon 正式开放，Vals AI 谈基准方法</title>
-      <link>https://www.latent.space/p/ainews-ai-engineer-nyc-gemini-4-argon</link>
-      <guid isPermaLink="false">u47h32202u2x7gro09va3ruz1</guid>
-      <pubDate>Wed, 14 Oct 2026 05:40:28 GMT</pubDate>
-      <description>Gemini 4 Argon 今日正式开放，覆盖 Gemini API、Gemini 应用、Search 的 AI Mode 与 Antigravity，介绍期 API 价格为每百万输入/输出 token 2/10 美元，缓存输入折扣 95%，Artificial Analysis 称 11 月 30 日后价格翻倍至 4/20 美元。</description>
-      <category>产业</category>
-    </item>
-    <item>
-      <title>Dyna Robotics 联创 Jason Ma 谈 Dyna-2 世界动作模型与机器人落地</title>
-      <link>https://www.latent.space/p/dyna</link>
-      <guid isPermaLink="false">krvvrd604bnvh003rs160m0pa</guid>
-      <pubDate>Tue, 13 Oct 2026 22:25:55 GMT</pubDate>
-      <description>Latent Space 播客邀请 Dyna Robotics 联合创始人兼首席科学家 Jason Ma，讲解上月发布的 Dyna-2 世界动作模型及其后续物理机器人智能体 Dyna-2.1。</description>
-      <category>观点</category>
-    </item>
-    <item>
-      <title>Google DeepMind 介绍 Gemini 4 Argon 的安全与责任开发</title>
-      <link>https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/</link>
-      <guid isPermaLink="false">hp7igpt3j7jznojgk8330pqoh</guid>
-      <pubDate>Tue, 13 Oct 2026 19:43:07 GMT</pubDate>
-      <description>Google DeepMind 发布 Gemini 4 Argon 的安全与责任开发说明，并开始广泛推送该模型、扩大 Fairwind Program 的受信任网络安全防御者范围。</description>
+      <title>DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API</title>
+      <link>https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/</link>
+      <guid isPermaLink="false">sha256:931ff0f85ef4bf70</guid>
+      <pubDate>Sat, 17 Oct 2026 10:33:28 GMT</pubDate>
+      <description>DeepSeek 发布开放权重模型 V4.1-Flash-1017：基准更好、完成任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API。The Decoder 与量子位均有报道。</description>
       <category>模型</category>
     </item>
   </channel>

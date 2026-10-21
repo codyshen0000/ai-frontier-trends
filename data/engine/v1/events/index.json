@@ -1,163 +1,66 @@
 {
  "events": [
   {
-   "publicId": "2026-10-19-eng-b5934db2",
-   "title": "MiniMax 发布 M3.1 Flash 推理模型，单任务成本约 0.22 美元",
-   "latestAt": "2026-10-19T18:22:30.000Z",
+   "publicId": "2026-10-21-openai-orchestra-bio",
+   "title": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线",
+   "latestAt": "2026-10-20T20:35:10.000Z",
    "reportCount": 1,
-   "sourceCount": 1,
+   "hotRank": 3
+  },
+  {
+   "publicId": "2026-10-21-mistral-voxtral-3",
+   "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
+   "latestAt": "2026-10-20T17:17:55.000Z",
+   "reportCount": 2,
+   "hotRank": 1
+  },
+  {
+   "publicId": "2026-10-20-openai-low-resource-langs",
+   "title": "OpenAI：推进低资源编程语言上的编码能力",
+   "latestAt": "2026-10-20T16:40:29.000Z",
+   "reportCount": 2,
+   "hotRank": 4
+  },
+  {
+   "publicId": "2026-10-19-deepseek-v41-flash-1017",
+   "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
+   "latestAt": "2026-10-20T07:57:37.000Z",
+   "reportCount": 3,
    "hotRank": null
   },
   {
-   "publicId": "2026-10-18-eng-f58aae6c",
-   "title": "Anthropic 因 AI 智能体承担更多工时而大幅减少初级岗位招聘",
-   "latestAt": "2026-10-18T13:22:26.000Z",
+   "publicId": "2026-10-21-openai-terminal-x-eval",
+   "title": "OpenAI 客户故事：Terminal X 用 GPT-6.1 做投资判断评测",
+   "latestAt": "2026-10-20T07:00:00.000Z",
    "reportCount": 1,
-   "sourceCount": 1,
    "hotRank": null
   },
   {
-   "publicId": "2026-10-18-eng-dba93773",
-   "title": "四个 Gemini 4 Argon 智能体无人类协助通关 Minecraft",
-   "latestAt": "2026-10-18T12:39:51.000Z",
+   "publicId": "2026-10-20-kling-ai-4-0",
+   "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
+   "latestAt": "2026-10-19T17:36:26.000Z",
    "reportCount": 1,
-   "sourceCount": 1,
    "hotRank": null
   },
   {
-   "publicId": "2026-10-16-eng-1eb5a3de",
-   "title": "OpenAI 披露内部模型入侵加密货币钱包及更多网站",
-   "latestAt": "2026-10-16T20:59:01.000Z",
+   "publicId": "2026-10-19-nvidia-open-models-agents-pcs",
+   "title": "英伟达发布面向企业与 PC 的开源智能体模型",
+   "latestAt": "2026-10-19T15:37:09.000Z",
    "reportCount": 1,
-   "sourceCount": 1,
    "hotRank": null
   },
   {
-   "publicId": "2026-10-16-eng-24aaf126",
-   "title": "Google Research 介绍让 AI 智能体落地湿实验室的三项研究",
-   "latestAt": "2026-10-16T18:11:34.000Z",
+   "publicId": "2026-10-19-minimax-m31-flash",
+   "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
+   "latestAt": "2026-10-19T12:20:45.000Z",
    "reportCount": 1,
-   "sourceCount": 1,
-   "hotRank": null
+   "hotRank": 2
   },
   {
-   "publicId": "2026-10-16-eng-3fa6fd9a",
-   "title": "Reflection 在 Hugging Face 开源 501B 模型 Beam",
-   "latestAt": "2026-10-16T00:00:00.000Z",
+   "publicId": "2026-10-20-hf-torchneuron-trainium",
+   "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
+   "latestAt": "2026-10-19T00:00:00.000Z",
    "reportCount": 1,
-   "sourceCount": 1,
-   "hotRank": null
-  },
-  {
-   "publicId": "2026-10-15-eng-b2debdca",
-   "title": "IBM 发布 Granite Switch 4.1：单一端点支持对话、决策与语音",
-   "latestAt": "2026-10-15T20:34:01.000Z",
-   "reportCount": 1,
-   "sourceCount": 1,
-   "hotRank": null
-  },
-  {
-   "publicId": "2026-10-15-eng-b7435bdb",
-   "title": "NVIDIA 发布 RTX Spark，面向创作者、玩家与 AI 智能体的 Windows PC",
-   "latestAt": "2026-10-15T17:00:23.000Z",
-   "reportCount": 1,
-   "sourceCount": 1,
-   "hotRank": null
-  },
-  {
-   "publicId": "2026-10-15-eng-c5482847",
-   "title": "微软研究院推出基于证明的通用计算系统 Magnetar",
-   "latestAt": "2026-10-15T16:00:00.000Z",
-   "reportCount": 1,
-   "sourceCount": 1,
-   "hotRank": null
-  },
-  {
-   "publicId": "2026-10-15-eng-2727ac35",
-   "title": "NVIDIA 发布 Nemotron 3.5 Super VL 与 Bolt 系列开源模型",
-   "latestAt": "2026-10-15T15:00:24.000Z",
-   "reportCount": 1,
-   "sourceCount": 1,
-   "hotRank": null
-  },
-  {
-   "publicId": "2026-10-15-eng-fb71220a",
-   "title": "Anthropic 向投资者披露季度收入近 50% 增长至 168 亿美元，筹备 IPO",
-   "latestAt": "2026-10-15T13:04:03.000Z",
-   "reportCount": 1,
-   "sourceCount": 1,
-   "hotRank": null
-  },
-  {
-   "publicId": "2026-10-15-eng-d5645f58",
-   "title": "Mistral 发布时间序列基础模型 Timestral，最大 209M 参数",
-   "latestAt": "2026-10-15T12:00:00.000Z",
-   "reportCount": 1,
-   "sourceCount": 1,
-   "hotRank": null
-  },
-  {
-   "publicId": "2026-10-15-eng-f4f24b96",
-   "title": "Apertus 1.5 发布：8B 与 70B 模型新增图像音频理解与思考模式",
-   "latestAt": "2026-10-15T09:08:45.000Z",
-   "reportCount": 1,
-   "sourceCount": 1,
-   "hotRank": null
-  },
-  {
-   "publicId": "2026-10-15-eng-e8822a8d",
-   "title": "Meta 发布开源权重多模态 MoE 模型 Muse Spark Open",
-   "latestAt": "2026-10-15T00:00:00.000Z",
-   "reportCount": 1,
-   "sourceCount": 1,
-   "hotRank": null
-  },
-  {
-   "publicId": "2026-10-15-eng-42ffacd1",
-   "title": "Black Forest Labs FLUX.3 Image Klein 上线 Diffusers",
-   "latestAt": "2026-10-15T00:00:00.000Z",
-   "reportCount": 1,
-   "sourceCount": 1,
-   "hotRank": null
-  },
-  {
-   "publicId": "2026-10-14-eng-a4cfee40",
-   "title": "Google 发布地理空间推理智能体技术报告并扩大 Earth AI 早期访问",
-   "latestAt": "2026-10-14T16:14:00.000Z",
-   "reportCount": 1,
-   "sourceCount": 1,
-   "hotRank": null
-  },
-  {
-   "publicId": "2026-10-14-eng-b4fee37a",
-   "title": "Google 公开发布 Deep Review 文档审阅系统",
-   "latestAt": "2026-10-14T16:14:00.000Z",
-   "reportCount": 1,
-   "sourceCount": 1,
-   "hotRank": null
-  },
-  {
-   "publicId": "2026-10-14-eng-89be6f53",
-   "title": "AINews：Gemini 4 Argon 正式开放，Vals AI 谈基准方法",
-   "latestAt": "2026-10-14T05:40:28.000Z",
-   "reportCount": 1,
-   "sourceCount": 1,
-   "hotRank": null
-  },
-  {
-   "publicId": "2026-10-13-eng-b2980e6e",
-   "title": "Dyna Robotics 联创 Jason Ma 谈 Dyna-2 世界动作模型与机器人落地",
-   "latestAt": "2026-10-13T22:25:55.000Z",
-   "reportCount": 1,
-   "sourceCount": 1,
-   "hotRank": null
-  },
-  {
-   "publicId": "2026-10-13-eng-76cf47fa",
-   "title": "Google DeepMind 介绍 Gemini 4 Argon 的安全与责任开发",
-   "latestAt": "2026-10-13T19:43:07.000Z",
-   "reportCount": 1,
-   "sourceCount": 1,
    "hotRank": null
   }
  ]

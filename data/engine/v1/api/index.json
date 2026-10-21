@@ -1,6 +1,55 @@
 {
  "version": "1.1",
  "base": "/api/v1/",
- "endpoints": [],
- "note": "preview"
+ "endpoints": [
+  {
+   "path": "meta.json",
+   "type": "meta"
+  },
+  {
+   "path": "hot.json",
+   "type": "HotResponse(+rankDelta,heatDeltaPct)"
+  },
+  {
+   "path": "hot-strip.json",
+   "type": "HotStripEntry[]"
+  },
+  {
+   "path": "timeline/index.json",
+   "type": "timelineIndex"
+  },
+  {
+   "path": "timeline/page-{n}.json",
+   "type": "TimelineResponse(+page,pageCount,total)"
+  },
+  {
+   "path": "events/index.json",
+   "type": "eventsIndex"
+  },
+  {
+   "path": "events/{publicId}.json",
+   "type": "StoryDetail(+ext)"
+  },
+  {
+   "path": "search/source.json",
+   "type": "searchSource"
+  },
+  {
+   "path": "feed/selected.json",
+   "type": "feedSource"
+  },
+  {
+   "path": "redirects.json",
+   "type": "redirects"
+  },
+  {
+   "path": "sources.json",
+   "type": "sourcesPublic"
+  },
+  {
+   "path": "hot-snapshots/{YYYY-MM-DDTHH}.json",
+   "type": "hotSnapshot（72h）"
+  }
+ ],
+ "note": "静态文件即 API；开发构建时原样复制到 /api/v1/。"
 }

@@ -1,123 +1,53 @@
 {
  "sources": [
   {
-   "sourceId": "eng-b7a13560",
-   "name": "Ars Technica · AI",
-   "tier": "T2",
-   "kind": "editorial",
-   "homepage": null
-  },
-  {
-   "sourceId": "eng-5ba5d25e",
-   "name": "Bot smoke free (editorial)",
-   "tier": "T2",
-   "kind": "editorial",
-   "homepage": null
-  },
-  {
-   "sourceId": "eng-fcec49fc",
-   "name": "GitHub Blog · AI & ML",
-   "tier": "T2",
-   "kind": "editorial",
-   "homepage": null
-  },
-  {
-   "sourceId": "eng-d7b64618",
-   "name": "Google DeepMind",
-   "tier": "T2",
-   "kind": "editorial",
-   "homepage": null
-  },
-  {
-   "sourceId": "eng-c190dff4",
-   "name": "Google Research",
-   "tier": "T2",
-   "kind": "editorial",
-   "homepage": null
-  },
-  {
-   "sourceId": "eng-d7686d8d",
+   "sourceId": "rss-hf-blog",
    "name": "Hugging Face Blog",
-   "tier": "T2",
+   "tier": "T1",
    "kind": "editorial",
-   "homepage": null
+   "homepage": "https://huggingface.co"
   },
   {
-   "sourceId": "eng-dc4ba030",
-   "name": "Import AI",
+   "sourceId": "rss-ithome",
+   "name": "IT之家（全站，需关键词过滤）",
    "tier": "T2",
-   "kind": "editorial",
-   "homepage": null
+   "kind": "signal",
+   "homepage": "https://www.ithome.com"
   },
   {
-   "sourceId": "eng-ea889419",
-   "name": "Latent Space",
-   "tier": "T2",
+   "sourceId": "rss-mistral",
+   "name": "Mistral AI News",
+   "tier": "T1",
    "kind": "editorial",
-   "homepage": null
+   "homepage": "https://mistral.ai"
   },
   {
-   "sourceId": "eng-08ebe527",
-   "name": "MIT Technology Review · AI",
-   "tier": "T2",
-   "kind": "editorial",
-   "homepage": null
-  },
-  {
-   "sourceId": "eng-a857f0a8",
-   "name": "Microsoft Research",
-   "tier": "T2",
-   "kind": "editorial",
-   "homepage": null
-  },
-  {
-   "sourceId": "eng-c879d832",
-   "name": "Mistral AI",
-   "tier": "T2",
-   "kind": "editorial",
-   "homepage": null
-  },
-  {
-   "sourceId": "eng-8c92353d",
-   "name": "NVIDIA Blog",
-   "tier": "T2",
-   "kind": "editorial",
-   "homepage": null
-  },
-  {
-   "sourceId": "eng-b314ee88",
+   "sourceId": "rss-openai-news",
    "name": "OpenAI News",
-   "tier": "T2",
+   "tier": "T1",
    "kind": "editorial",
-   "homepage": null
+   "homepage": "https://openai.com"
   },
   {
-   "sourceId": "eng-b4f79f52",
-   "name": "Simon Willison",
+   "sourceId": "rss-qbitai",
+   "name": "量子位",
    "tier": "T2",
    "kind": "editorial",
-   "homepage": null
+   "homepage": "https://www.qbitai.com"
   },
   {
-   "sourceId": "eng-0d65664b",
+   "sourceId": "rss-techcrunch-ai",
    "name": "TechCrunch · AI",
    "tier": "T2",
    "kind": "editorial",
-   "homepage": null
+   "homepage": "https://techcrunch.com"
   },
   {
-   "sourceId": "eng-c946036f",
+   "sourceId": "rss-the-decoder",
    "name": "The Decoder",
    "tier": "T2",
    "kind": "editorial",
-   "homepage": null
-  },
-  {
-   "sourceId": "eng-623eaebd",
-   "name": "The Verge · AI",
-   "tier": "T2",
-   "kind": "editorial",
-   "homepage": null
+   "homepage": "https://the-decoder.com"
   }
  ]
 }

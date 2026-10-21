@@ -59,12 +59,16 @@ export function itemAnchorId(id: string): string {
   return `s-${id}`;
 }
 
+function safePageId(id: string): string {
+  return String(id || "").replaceAll(":", "-");
+}
+
 export function itemPageFile(id: string): string {
-  return `item-${id}.html`;
+  return `item-${safePageId(id)}.html`;
 }
 
 export function eventPageFile(id: string): string {
-  return `event-${id}.html`;
+  return `event-${safePageId(id)}.html`;
 }
 
 export type ResolvedHref =

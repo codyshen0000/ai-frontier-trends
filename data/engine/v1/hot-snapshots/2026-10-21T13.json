@@ -1,0 +1,29 @@
+{
+ "computedAt": "2026-10-21T05:20:00.000Z",
+ "entries": [
+  {
+   "rank": 1,
+   "publicId": "2026-10-21-mistral-voxtral-3",
+   "heat": 13.1,
+   "participantCount": 2
+  },
+  {
+   "rank": 2,
+   "publicId": "2026-10-19-minimax-m31-flash",
+   "heat": 13.0,
+   "participantCount": 3
+  },
+  {
+   "rank": 3,
+   "publicId": "2026-10-21-openai-orchestra-bio",
+   "heat": 12.1,
+   "participantCount": 2
+  },
+  {
+   "rank": 4,
+   "publicId": "2026-10-20-openai-low-resource-langs",
+   "heat": 10.0,
+   "participantCount": 2
+  }
+ ]
+}

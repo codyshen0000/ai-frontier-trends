@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /** Copy MIT prerender into preview/engine-v1/standalone with inlined CSS for htmlpreview. */
-import { cpSync, existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { cpSync, existsSync, mkdirSync, readFileSync, readdirSync, unlinkSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -13,6 +13,13 @@ if (!existsSync(join(src, "index.html")) || !existsSync(cssPath)) {
 }
 const css = readFileSync(cssPath, "utf8");
 mkdirSync(dest, { recursive: true });
+if (existsSync(dest)) {
+  for (const name of readdirSync(dest)) {
+    if ((name.startsWith("item-") || name.startsWith("event-") || name === "item.html" || name === "event.html") && name.endsWith(".html")) {
+      unlinkSync(join(dest, name));
+    }
+  }
+}
 
 const keep = new Set([
   "index.html",
@@ -55,10 +62,10 @@ function sampleNames() {
   try {
     const page = JSON.parse(readFileSync(join(engine, "timeline", "page-1.json"), "utf8"));
     const first = page.cards?.[0]?.item;
-    if (first?.id && existsSync(join(src, `item-${first.id}.html`))) itemName = `item-${first.id}.html`;
-    if (first?.storyPublicId && existsSync(join(src, `event-${first.storyPublicId}.html`))) {
-      eventName = `event-${first.storyPublicId}.html`;
-    }
+    const itemFile = first?.id ? `item-${String(first.id).replaceAll(":", "-")}.html` : null;
+    const eventFile = first?.storyPublicId ? `event-${String(first.storyPublicId).replaceAll(":", "-")}.html` : null;
+    if (itemFile && existsSync(join(src, itemFile))) itemName = itemFile;
+    if (eventFile && existsSync(join(src, eventFile))) eventName = eventFile;
   } catch {
     /* fall through */
   }

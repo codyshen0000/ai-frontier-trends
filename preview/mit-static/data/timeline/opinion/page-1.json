@@ -1,58 +1,7 @@
 {
   "v": 1,
   "page": 1,
-  "cards": [
-    {
-      "key": "krvvrd604bnvh003rs160m0pa",
-      "anchorAt": "2026-10-13T22:25:55.000Z",
-      "item": {
-        "id": "krvvrd604bnvh003rs160m0pa",
-        "title": "Dyna Robotics 联创 Jason Ma 谈 Dyna-2 世界动作模型与机器人落地",
-        "summary": "Latent Space 播客邀请 Dyna Robotics 联合创始人兼首席科学家 Jason Ma，讲解上月发布的 Dyna-2 世界动作模型及其后续物理机器人智能体 Dyna-2.1。",
-        "reason": "Dyna 联合创始人拆解世界动作模型的数据配方与落地取舍，可看到机器人从演示走向量产的现实约束。",
-        "source": {
-          "name": "Latent Space"
-        },
-        "publishedAt": "2026-10-13T22:25:55.000Z",
-        "timelineAt": "2026-10-13T22:25:55.000Z",
-        "category": "opinion",
-        "tags": [
-          "大佬观点",
-          "具身智能",
-          "数据/训练",
-          "部署/工程"
-        ],
-        "selected": true,
-        "channel": "news",
-        "x": null,
-        "sameEvent": null,
-        "originalUrl": "https://www.latent.space/p/dyna",
-        "originalTitle": "Dyna-2: General Purpose Physical Agents with Hour-Long Autonomy — Jason Ma, Dyna Robotics",
-        "storyPublicId": "2026-10-13-eng-b2980e6e",
-        "sourceCount": 1,
-        "sourceNames": [
-          "Latent Space"
-        ],
-        "participants": [
-          {
-            "name": "Latent Space",
-            "kind": "editorial"
-          }
-        ],
-        "url": "https://www.latent.space/p/dyna"
-      },
-      "group": {
-        "factId": "2026-10-13-eng-b2980e6e",
-        "additionalSourceCount": 0,
-        "reportCount": 1,
-        "memberIds": [
-          "krvvrd604bnvh003rs160m0pa"
-        ]
-      }
-    }
-  ],
-  "day_counts": {
-    "2026-10-13": 1
-  },
+  "cards": [],
+  "day_counts": {},
   "next": null
 }

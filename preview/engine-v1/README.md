@@ -1,7 +1,9 @@
-# engine-v1 预览（私有引擎 staging → site-data 1.1，非生产）
+# engine-v1 预览（生产 engine-data → site-data 1.1，勿合并）
 
-来源：私有引擎 staging `20261020-162905`（精选 20 / 池约 40 / 热点 0 / 日报 0）。数据截至 2026-10-20 16:29（北京时间）。
-热点与日报为空，站点显示正常空态。不含 score，未改 main / engine-data / Pages。不要合并。
+来源：`origin/engine-data` @ `da06d74`（契约 1.1，`mode=production`）。
+`data_as_of` = `2026-10-21T12:27:39+08:00`（数据截至 2026-10-21 12:27 北京时间）。
+计数：精选 cards=6 / 热点 hot_entries=4 / 日报 2 期（`2026-10-20` 为最新）/ 事件 9。
+未改 gate_a / T2=76，未编造条目，未推 `main` / `engine-data`，未部署 Pages。不要合并。
 
 可点击预览（htmlpreview，CSS 已内联）：
 
@@ -16,6 +18,6 @@
 - 周报（空态入口）：https://htmlpreview.github.io/?https://github.com/codyshen0000/ai-frontier-trends/blob/preview/engine-v1/preview/engine-v1/standalone/weekly.html
 - 月报（空态入口）：https://htmlpreview.github.io/?https://github.com/codyshen0000/ai-frontier-trends/blob/preview/engine-v1/preview/engine-v1/standalone/monthly.html
 
-数据：`data/engine/v1/`（由 `map_staging.py` 生成）。映射保留导读/推荐理由/原文标题/标签/原文链接，去掉 score、127.0.0.1 与 attribution。日报与热榜为空时不编造条目。
+数据：`data/engine/v1/`（从 `engine-data` 原样拷入，不另写 items.json / topics.json）。生产快照若无标签则主题页显示真实空态；日报与热榜按快照原样渲染，不编造条目。
 
 截图：`preview/engine-v1/screens/`。
