@@ -11,7 +11,7 @@
     "snapshot:preview": "node scripts/snapshot_preview.mjs",
     "build:mit-static": "node scripts/l2_covers.mjs && node scripts/mit-static/prerender.mjs",
     "avatars": "node scripts/avatars.mjs",
-    "test:covers": "node scripts/l2_covers.test.mjs && node scripts/story_digest.test.mjs && node scripts/score_absent.test.mjs",
+    "test:covers": "node scripts/l2_covers.test.mjs && node scripts/story_digest.test.mjs && node scripts/score_absent.test.mjs && node scripts/static_export.search.test.mjs",
     "test:engine": "node --test scripts/engine/",
     "test:b1": "node scripts/run-glob-tests.mjs scripts/b1",
     "test:b2": "node scripts/run-glob-tests.mjs scripts/b2",
