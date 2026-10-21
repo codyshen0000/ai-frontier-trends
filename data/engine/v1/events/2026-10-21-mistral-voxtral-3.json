@@ -1,6 +1,6 @@
 {
  "publicId": "2026-10-21-mistral-voxtral-3",
- "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
+ "title": "Mistral 发布 Voxtral 3：语音智能体 SDK 与语音模型",
  "status": "active",
  "reportCount": 2,
  "sourceCount": 2,
@@ -8,7 +8,7 @@
  "latestAt": "2026-10-20T17:17:55.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": null,
+ "summary": "Mistral 发布 Voxtral 3：一套语音智能体 SDK，以及配套的语音转写与语音合成模型，把听、推理、工具调用与说放进同一流式管线。 官方称转写覆盖 50+ 语言（含说话人分离与上下文偏置），TTS 覆盖 35+ 语言与 50+ 方言；可通过欧盟托管 API 或自部署使用。 The Decoder 亦报道其整合识别、合成与语音智能体 SDK，支持多语言与工具调用。",
  "excerpt": null,
  "latest": null,
  "latestReport": null,
@@ -22,7 +22,7 @@
  "developments": [
   {
    "factId": "fact-2026-10-21-mistral-voxtral-3",
-   "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
+   "title": "Mistral 发布 Voxtral 3：语音智能体 SDK 与语音模型",
    "firstReportAt": "2026-10-20T12:00:22.000Z",
    "reportCount": 2,
    "representative": {
@@ -163,6 +163,16 @@
   {
    "hour": "2026-10-21T05:00:00.000Z",
    "heat": 13.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-21T06:00:00.000Z",
+   "heat": 12.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-21T07:00:00.000Z",
+   "heat": 12.5,
    "participants": 2
   }
  ],

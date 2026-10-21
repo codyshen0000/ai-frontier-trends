@@ -1,6 +1,6 @@
 {
  "publicId": "2026-10-19-minimax-m31-flash",
- "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
+ "title": "MiniMax 上线 M3.1 Flash：称提速约 3 倍、成本降约 70%",
  "status": "active",
  "reportCount": 1,
  "sourceCount": 1,
@@ -8,7 +8,7 @@
  "latestAt": "2026-10-19T12:20:45.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": "媒体称 MiniMax 推出 M3.1 Flash，称推理速度约提升近 3 倍、综合成本相对前代约降 70%。",
+ "summary": "稀宇科技宣布 MiniMax M3.1 Flash 上线，IT之家称其在 Agentic、编程等能力上有提升，线上推理速度约提升近 3 倍、使用成本相对前代约降 70%。 同一报道称，此前以 Space Bunny 名义出现的匿名版本即为其早期版。",
  "excerpt": null,
  "latest": null,
  "latestReport": null,
@@ -22,7 +22,7 @@
  "developments": [
   {
    "factId": "fact-2026-10-19-minimax-m31-flash",
-   "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
+   "title": "MiniMax 上线 M3.1 Flash：称提速约 3 倍、成本降约 70%",
    "firstReportAt": "2026-10-19T12:20:45.000Z",
    "reportCount": 1,
    "representative": {
@@ -258,6 +258,16 @@
   {
    "hour": "2026-10-21T05:00:00.000Z",
    "heat": 13.2,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-21T06:00:00.000Z",
+   "heat": 12.8,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-21T07:00:00.000Z",
+   "heat": 12.4,
    "participants": 3
   }
  ],

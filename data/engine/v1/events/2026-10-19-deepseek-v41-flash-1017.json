@@ -1,6 +1,6 @@
 {
  "publicId": "2026-10-19-deepseek-v41-flash-1017",
- "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
+ "title": "DeepSeek 发布开放权重 V4.1-Flash-1017",
  "status": "active",
  "reportCount": 3,
  "sourceCount": 3,
@@ -8,7 +8,7 @@
  "latestAt": "2026-10-20T07:57:37.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017：基准更好、完成任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API。The Decoder 与量子位均有报道。",
+ "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017，在代理类任务上基准更好、完成任务更快、输出更短，并同步开放自研搜索引擎的 Search 与 Fetch API。 The Decoder 称搜索接口按每千次约 0.75 美元计价；量子位亦报道该版本与搜索 API 同步上线。 IT之家后续称 V4.1-Flash-1017（Max）登顶 Agent Arena 与 Code Arena: WebDev 开源榜、总榜第 11，约 7498 次会话，任务成本中位数约 0.18 美元。",
  "excerpt": null,
  "latest": "IT之家称 V4.1-Flash-1017（Max）登顶 Agent Arena 与 Code Arena: WebDev 开源榜、总榜第 11；约 7498 次会话，任务成本中位数约 0.18 美元。",
  "latestReport": null,
@@ -22,7 +22,7 @@
  "developments": [
   {
    "factId": "fact-2026-10-19-deepseek-v41-flash-1017",
-   "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
+   "title": "DeepSeek 发布开放权重 V4.1-Flash-1017",
    "firstReportAt": "2026-10-17T10:33:28.000Z",
    "reportCount": 3,
    "representative": {
@@ -79,16 +79,6 @@
   }
  ],
  "heat": [
-  {
-   "hour": "2026-10-19T05:00:00.000Z",
-   "heat": 6.0,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-19T06:00:00.000Z",
-   "heat": 5.9,
-   "participants": 2
-  },
   {
    "hour": "2026-10-19T07:00:00.000Z",
    "heat": 5.7,
@@ -227,6 +217,16 @@
   {
    "hour": "2026-10-21T05:00:00.000Z",
    "heat": 5.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T06:00:00.000Z",
+   "heat": 5.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T07:00:00.000Z",
+   "heat": 5.1,
    "participants": 1
   }
  ],

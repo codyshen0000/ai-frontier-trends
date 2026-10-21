@@ -1,6 +1,6 @@
 {
  "publicId": "2026-10-20-kling-ai-4-0",
- "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
+ "title": "可灵 AI 4.0：立体声、多语口型同步与更轻 Flash",
  "status": "active",
  "reportCount": 1,
  "sourceCount": 1,
@@ -8,7 +8,7 @@
  "latestAt": "2026-10-19T17:36:26.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": "The Decoder 称 Kling AI 4.0 支持最长约 30 秒、最多 10 张关键帧、提示词理解扩展，并含立体声、多语口型同步与更轻 Flash 变体。",
+ "summary": "可灵 AI 发布 4.0，支持更长视频、立体声、多语口型同步，并提供更轻的 Flash 变体。 The Decoder 称 Kling AI 4.0 最长约 30 秒、最多 10 张关键帧，并扩展提示词理解；同时加入立体声与多语口型同步能力。",
  "excerpt": null,
  "latest": null,
  "latestReport": null,
@@ -22,7 +22,7 @@
  "developments": [
   {
    "factId": "fact-2026-10-20-kling-ai-4-0",
-   "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
+   "title": "可灵 AI 4.0：立体声、多语口型同步与更轻 Flash",
    "firstReportAt": "2026-10-19T17:36:26.000Z",
    "reportCount": 1,
    "representative": {
@@ -233,6 +233,16 @@
   {
    "hour": "2026-10-21T05:00:00.000Z",
    "heat": 3.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T06:00:00.000Z",
+   "heat": 3.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T07:00:00.000Z",
+   "heat": 3.4,
    "participants": 1
   }
  ],

@@ -1,6 +1,6 @@
 {
  "publicId": "2026-10-20-openai-low-resource-langs",
- "title": "OpenAI：推进低资源编程语言上的编码能力",
+ "title": "OpenAI 推进低资源编程语言上的编码能力",
  "status": "active",
  "reportCount": 2,
  "sourceCount": 2,
@@ -8,7 +8,7 @@
  "latestAt": "2026-10-20T16:40:29.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": "OpenAI 称改进模型在 COBOL、Fortran 等低资源编程语言上的表现；The Decoder 称在 MultiLangBench 上 GPT-6 Astra 跨 20 种语言测试通过率约 87.4%。",
+ "summary": "OpenAI 称正改进 ChatGPT 在 COBOL、Fortran 等低资源编程语言上的表现，并新增软件工程、SQLite 与 COBOL 迁移等评测。 The Decoder 称在 MultiLangBench 上，GPT-6 Astra 跨约 20 种语言测试通过率约 87.4%。",
  "excerpt": null,
  "latest": null,
  "latestReport": null,
@@ -22,7 +22,7 @@
  "developments": [
   {
    "factId": "fact-2026-10-20-openai-low-resource-langs",
-   "title": "OpenAI：推进低资源编程语言上的编码能力",
+   "title": "OpenAI 推进低资源编程语言上的编码能力",
    "firstReportAt": "2026-10-19T12:00:00.000Z",
    "reportCount": 2,
    "representative": {
@@ -288,6 +288,16 @@
   {
    "hour": "2026-10-21T05:00:00.000Z",
    "heat": 10.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-21T06:00:00.000Z",
+   "heat": 9.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-21T07:00:00.000Z",
+   "heat": 9.5,
    "participants": 2
   }
  ],
