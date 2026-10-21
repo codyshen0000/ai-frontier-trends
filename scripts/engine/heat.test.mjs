@@ -281,6 +281,30 @@ describe("B2-03 trend from a stored 6h snapshot (SYNTHETIC)", () => {
       rmSync(dir, { recursive: true, force: true });
     }
   });
+
+  it("does not fail live hot.json when the T−6h snapshot heat is stale", () => {
+    const dir = mkdtempSync(join(tmpdir(), "b2-heat-stale-snap-"));
+    try {
+      const day = CASES.events.find((e) => e.publicId.endsWith("heat-day"));
+      eventTree(dir, [day]);
+      writeFileSync(
+        join(dir, "hot-snapshots", "2026-10-19T06.json"),
+        `${JSON.stringify({
+          computedAt: "2026-10-19T06:00:00.000Z",
+          entries: [{ rank: 1, publicId: day.publicId, heat: 20.0, participantCount: 2 }],
+        }, null, 2)}\n`,
+      );
+      const result = verifyEngineHeat(dir);
+      assert.equal(result.ok, true, result.issues.join("\n"));
+      assert.equal(result.prevSnap, "2026-10-19T06");
+      assert.ok(
+        (result.skipped || []).some((row) => row.includes(day.publicId) && row.includes("stale")),
+        result.skipped?.join("\n"),
+      );
+    } finally {
+      rmSync(dir, { recursive: true, force: true });
+    }
+  });
 });
 
 describe("B2-08 method copy", () => {
