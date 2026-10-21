@@ -2,7 +2,7 @@
  {
   "rank": 1,
   "title": "Mistral 发布 Voxtral 3：语音智能体 SDK 与语音模型",
-  "heat": 12.1,
+  "heat": 12.0,
   "trend": "down",
   "storyPublicId": "2026-10-21-mistral-voxtral-3",
   "itemId": "sha256:4c6292fc5ecba5f2",
@@ -21,7 +21,7 @@
  {
   "rank": 2,
   "title": "MiniMax 上线 M3.1 Flash：称提速约 3 倍、成本降约 70%",
-  "heat": 12.0,
+  "heat": 11.9,
   "trend": "down",
   "storyPublicId": "2026-10-19-minimax-m31-flash",
   "itemId": "sha256:8e4a9464917136de",
@@ -44,7 +44,7 @@
  {
   "rank": 3,
   "title": "OpenAI 收购 Orchestra Bio，并入 Rosalind 线",
-  "heat": 11.1,
+  "heat": 11.0,
   "trend": "down",
   "storyPublicId": "2026-10-21-openai-orchestra-bio",
   "itemId": "sha256:1cfb6291fa158d05",
@@ -63,7 +63,7 @@
  {
   "rank": 4,
   "title": "OpenAI 推进低资源编程语言上的编码能力",
-  "heat": 9.2,
+  "heat": 9.1,
   "trend": "down",
   "storyPublicId": "2026-10-20-openai-low-resource-langs",
   "itemId": "sha256:1dbe22633003a2af",

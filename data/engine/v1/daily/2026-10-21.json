@@ -1,0 +1,154 @@
+{
+ "kind": "daily",
+ "key": "2026-10-21",
+ "issueNumber": 3,
+ "title": "AI日报 · 2026-10-21",
+ "generatedAt": "2026-10-21T00:36:07.000Z",
+ "lead": {
+  "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
+  "leadParagraph": "Mistral 推出 Voxtral 3 语音智能体 SDK，支持 50+ 语言"
+ },
+ "leadItemId": null,
+ "overview": "今日重点 5 条：Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型、Hugging Face：TorchTPU 让 Transformers 与 Diffusers 原生跑在 TPU、OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线、Hugging Face 发布 AnyLanguageModel 1.0：苹果平台统一本地与托管模型 API、OpenAI：推进低资源编程语言上的编码能力。无固定漂移样本包，本日不含 samples。",
+ "highlights": [
+  {
+   "itemId": null,
+   "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
+   "summary": "Mistral 推出 Voxtral 3 语音智能体 SDK，支持 50+ 语言",
+   "sourceName": "",
+   "sourceUrl": "https://mistral.ai/news/voxtral-3/",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-20T12:00:22.000Z",
+   "available": true,
+   "otherSources": 0
+  },
+  {
+   "itemId": null,
+   "title": "Hugging Face：TorchTPU 让 Transformers 与 Diffusers 原生跑在 TPU",
+   "summary": "Hugging Face：TorchTPU 让 Transformers/Dif",
+   "sourceName": "",
+   "sourceUrl": "https://huggingface.co/blog/hf-torchtpu",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-20T00:00:00.000Z",
+   "available": true,
+   "otherSources": 0
+  },
+  {
+   "itemId": "sha256:1cfb6291fa158d05",
+   "title": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线",
+   "summary": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/openai-to-acquire-orchestra-bio",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-20T00:00:00.000Z",
+   "available": true,
+   "otherSources": 1
+  },
+  {
+   "itemId": null,
+   "title": "Hugging Face 发布 AnyLanguageModel 1.0：苹果平台统一本地与托管模型 API",
+   "summary": "Hugging Face 发布 AnyLanguageModel 1.0，统一苹",
+   "sourceName": "",
+   "sourceUrl": "https://huggingface.co/blog/anylanguagemodel-1-0",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-20T00:00:00.000Z",
+   "available": true,
+   "otherSources": 0
+  }
+ ],
+ "sections": [
+  {
+   "label": "其他",
+   "summary": null,
+   "items": [
+    {
+     "itemId": null,
+     "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
+     "summary": "Mistral 推出 Voxtral 3 语音智能体 SDK，支持 50+ 语言",
+     "sourceName": "",
+     "sourceUrl": "https://mistral.ai/news/voxtral-3/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-20T12:00:22.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": null,
+     "title": "Hugging Face：TorchTPU 让 Transformers 与 Diffusers 原生跑在 TPU",
+     "summary": "Hugging Face：TorchTPU 让 Transformers/Dif",
+     "sourceName": "",
+     "sourceUrl": "https://huggingface.co/blog/hf-torchtpu",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-20T00:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": null,
+     "title": "Hugging Face 发布 AnyLanguageModel 1.0：苹果平台统一本地与托管模型 API",
+     "summary": "Hugging Face 发布 AnyLanguageModel 1.0，统一苹",
+     "sourceName": "",
+     "sourceUrl": "https://huggingface.co/blog/anylanguagemodel-1-0",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-20T00:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    }
+   ]
+  },
+  {
+   "label": "行业",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:1cfb6291fa158d05",
+     "title": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线",
+     "summary": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/openai-to-acquire-orchestra-bio",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-20T00:00:00.000Z",
+     "available": true,
+     "otherSources": 1
+    }
+   ]
+  },
+  {
+   "label": "产品",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:1dbe22633003a2af",
+     "title": "OpenAI：推进低资源编程语言上的编码能力",
+     "summary": "OpenAI 称改进模型在 COBOL、Fortran 等低资源编程语言上的表现；The Decoder 称在 MultiLangBench 上 GPT-6 A",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/low-resource-programming-languages",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-19T12:00:00.000Z",
+     "available": true,
+     "otherSources": 1
+    }
+   ]
+  }
+ ],
+ "flashes": [],
+ "cover": null,
+ "metrics": {
+  "totalEvents": 5,
+  "sourcesCount": 3,
+  "firstPartyEvents": 3,
+  "modelsReleased": 0
+ },
+ "readingMinutes": 2,
+ "prev": "2026-10-20",
+ "next": null
+}

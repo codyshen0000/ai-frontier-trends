@@ -1,123 +1,141 @@
 {
  "kind": "daily",
- "key": "2026-10-20",
- "issueNumber": 2,
- "title": "AI日报 · 2026-10-20",
- "generatedAt": "2026-10-20T00:43:38.000Z",
+ "key": "2026-10-21",
+ "issueNumber": 3,
+ "title": "AI日报 · 2026-10-21",
+ "generatedAt": "2026-10-21T00:36:07.000Z",
  "lead": {
-  "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
-  "leadParagraph": "可灵 4.0 加长视频与口型同步"
+  "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
+  "leadParagraph": "Mistral 推出 Voxtral 3 语音智能体 SDK，支持 50+ 语言"
  },
- "leadItemId": "sha256:10f7f763ebef7da0",
- "overview": "今日重点四条：可灵 AI 4.0（更长视频、立体声与多语口型同步）。英伟达开源面向企业与 PC 的智能体模型。MiniMax M3.1 Flash（称提速约 3 倍、成本约降 70%，AA 指数到 42）。Hugging Face TorchNeuron，让 HF 模型更易跑在 AWS Trainium。",
+ "leadItemId": null,
+ "overview": "今日重点 5 条：Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型、Hugging Face：TorchTPU 让 Transformers 与 Diffusers 原生跑在 TPU、OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线、Hugging Face 发布 AnyLanguageModel 1.0：苹果平台统一本地与托管模型 API、OpenAI：推进低资源编程语言上的编码能力。无固定漂移样本包，本日不含 samples。",
  "highlights": [
   {
-   "itemId": "sha256:10f7f763ebef7da0",
-   "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
-   "summary": "可灵 4.0 加长视频与口型同步",
-   "sourceName": "The Decoder",
-   "sourceUrl": "https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/",
-   "sourceIconUrl": null,
-   "firstParty": false,
-   "publishedAt": "2026-10-19T17:36:26.000Z",
-   "available": true,
-   "otherSources": 0
-  },
-  {
-   "itemId": "sha256:bfa70917f3b198d1",
-   "title": "英伟达发布面向企业与 PC 的开源智能体模型",
-   "summary": "英伟达开源企业与 PC 端智能体模型",
-   "sourceName": "TechCrunch · AI",
-   "sourceUrl": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
-   "sourceIconUrl": null,
-   "firstParty": false,
-   "publishedAt": "2026-10-19T15:37:09.000Z",
-   "available": true,
-   "otherSources": 0
-  },
-  {
    "itemId": null,
-   "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
-   "summary": "M3.1 Flash 提速降本，AA 指数到 42",
+   "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
+   "summary": "Mistral 推出 Voxtral 3 语音智能体 SDK，支持 50+ 语言",
    "sourceName": "",
-   "sourceUrl": "https://the-decoder.com/minimax-m3-1-flash-shows-chinas-ai-price-race-has-no-floor-in-sight/",
-   "sourceIconUrl": null,
-   "firstParty": false,
-   "publishedAt": "2026-10-19T18:22:30.000Z",
-   "available": true,
-   "otherSources": 0
-  },
-  {
-   "itemId": null,
-   "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
-   "summary": "Trainium 上跑 HF 模型更省事",
-   "sourceName": "",
-   "sourceUrl": "https://huggingface.co/blog/hf-torchneuron",
+   "sourceUrl": "https://mistral.ai/news/voxtral-3/",
    "sourceIconUrl": null,
    "firstParty": true,
-   "publishedAt": "2026-10-19T00:00:00.000Z",
+   "publishedAt": "2026-10-20T12:00:22.000Z",
+   "available": true,
+   "otherSources": 0
+  },
+  {
+   "itemId": null,
+   "title": "Hugging Face：TorchTPU 让 Transformers 与 Diffusers 原生跑在 TPU",
+   "summary": "Hugging Face：TorchTPU 让 Transformers/Dif",
+   "sourceName": "",
+   "sourceUrl": "https://huggingface.co/blog/hf-torchtpu",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-20T00:00:00.000Z",
+   "available": true,
+   "otherSources": 0
+  },
+  {
+   "itemId": "sha256:1cfb6291fa158d05",
+   "title": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线",
+   "summary": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/openai-to-acquire-orchestra-bio",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-20T00:00:00.000Z",
+   "available": true,
+   "otherSources": 1
+  },
+  {
+   "itemId": null,
+   "title": "Hugging Face 发布 AnyLanguageModel 1.0：苹果平台统一本地与托管模型 API",
+   "summary": "Hugging Face 发布 AnyLanguageModel 1.0，统一苹",
+   "sourceName": "",
+   "sourceUrl": "https://huggingface.co/blog/anylanguagemodel-1-0",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-20T00:00:00.000Z",
    "available": true,
    "otherSources": 0
   }
  ],
  "sections": [
   {
-   "label": "模型",
+   "label": "其他",
    "summary": null,
    "items": [
     {
-     "itemId": "sha256:10f7f763ebef7da0",
-     "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
-     "summary": "可灵 4.0 加长视频与口型同步",
-     "sourceName": "The Decoder",
-     "sourceUrl": "https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/",
+     "itemId": null,
+     "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
+     "summary": "Mistral 推出 Voxtral 3 语音智能体 SDK，支持 50+ 语言",
+     "sourceName": "",
+     "sourceUrl": "https://mistral.ai/news/voxtral-3/",
      "sourceIconUrl": null,
-     "firstParty": false,
-     "publishedAt": "2026-10-19T17:36:26.000Z",
+     "firstParty": true,
+     "publishedAt": "2026-10-20T12:00:22.000Z",
      "available": true,
      "otherSources": 0
     },
     {
-     "itemId": "sha256:bfa70917f3b198d1",
-     "title": "英伟达发布面向企业与 PC 的开源智能体模型",
-     "summary": "英伟达开源企业与 PC 端智能体模型",
-     "sourceName": "TechCrunch · AI",
-     "sourceUrl": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
+     "itemId": null,
+     "title": "Hugging Face：TorchTPU 让 Transformers 与 Diffusers 原生跑在 TPU",
+     "summary": "Hugging Face：TorchTPU 让 Transformers/Dif",
+     "sourceName": "",
+     "sourceUrl": "https://huggingface.co/blog/hf-torchtpu",
      "sourceIconUrl": null,
-     "firstParty": false,
-     "publishedAt": "2026-10-19T15:37:09.000Z",
+     "firstParty": true,
+     "publishedAt": "2026-10-20T00:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": null,
+     "title": "Hugging Face 发布 AnyLanguageModel 1.0：苹果平台统一本地与托管模型 API",
+     "summary": "Hugging Face 发布 AnyLanguageModel 1.0，统一苹",
+     "sourceName": "",
+     "sourceUrl": "https://huggingface.co/blog/anylanguagemodel-1-0",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-20T00:00:00.000Z",
      "available": true,
      "otherSources": 0
     }
    ]
   },
   {
-   "label": "其他",
+   "label": "行业",
    "summary": null,
    "items": [
     {
-     "itemId": null,
-     "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
-     "summary": "M3.1 Flash 提速降本，AA 指数到 42",
-     "sourceName": "",
-     "sourceUrl": "https://the-decoder.com/minimax-m3-1-flash-shows-chinas-ai-price-race-has-no-floor-in-sight/",
-     "sourceIconUrl": null,
-     "firstParty": false,
-     "publishedAt": "2026-10-19T18:22:30.000Z",
-     "available": true,
-     "otherSources": 0
-    },
-    {
-     "itemId": null,
-     "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
-     "summary": "Trainium 上跑 HF 模型更省事",
-     "sourceName": "",
-     "sourceUrl": "https://huggingface.co/blog/hf-torchneuron",
+     "itemId": "sha256:1cfb6291fa158d05",
+     "title": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线",
+     "summary": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/openai-to-acquire-orchestra-bio",
      "sourceIconUrl": null,
      "firstParty": true,
-     "publishedAt": "2026-10-19T00:00:00.000Z",
+     "publishedAt": "2026-10-20T00:00:00.000Z",
      "available": true,
-     "otherSources": 0
+     "otherSources": 1
+    }
+   ]
+  },
+  {
+   "label": "产品",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:1dbe22633003a2af",
+     "title": "OpenAI：推进低资源编程语言上的编码能力",
+     "summary": "OpenAI 称改进模型在 COBOL、Fortran 等低资源编程语言上的表现；The Decoder 称在 MultiLangBench 上 GPT-6 A",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/low-resource-programming-languages",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-19T12:00:00.000Z",
+     "available": true,
+     "otherSources": 1
     }
    ]
   }
@@ -125,12 +143,12 @@
  "flashes": [],
  "cover": null,
  "metrics": {
-  "totalEvents": 4,
-  "sourcesCount": 2,
-  "firstPartyEvents": 1,
-  "modelsReleased": 2
+  "totalEvents": 5,
+  "sourcesCount": 3,
+  "firstPartyEvents": 3,
+  "modelsReleased": 0
  },
- "readingMinutes": 1,
- "prev": "2026-10-19",
+ "readingMinutes": 2,
+ "prev": "2026-10-20",
  "next": null
 }
