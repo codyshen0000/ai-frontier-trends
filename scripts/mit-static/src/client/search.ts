@@ -37,14 +37,20 @@ function scoreDoc(doc: SearchDoc, tokens: string[]): number {
   if (!tokens.length) return 0;
   const title = tokenize(doc.title);
   const summary = tokenize(doc.summary);
+  const source = tokenize(doc.source);
+  const category = tokenize(doc.category || "");
   let titleHits = 0;
   let summaryHits = 0;
+  let sourceHits = 0;
+  let categoryHits = 0;
   for (const tok of tokens) {
     if (title.includes(tok)) titleHits += 1;
     else if (summary.includes(tok)) summaryHits += 1;
+    else if (source.includes(tok)) sourceHits += 1;
+    else if (category.includes(tok)) categoryHits += 1;
   }
-  if (titleHits === 0 && summaryHits === 0) return 0;
-  return titleHits * 3 + summaryHits;
+  if (titleHits === 0 && summaryHits === 0 && sourceHits === 0 && categoryHits === 0) return 0;
+  return titleHits * 3 + summaryHits + sourceHits + categoryHits;
 }
 
 export function searchDocs(index: SearchIndex, q: string): SearchDoc[] {

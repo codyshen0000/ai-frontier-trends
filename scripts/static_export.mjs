@@ -150,43 +150,225 @@ export function collectPublications(contentDir) {
   return rows;
 }
 
-function xDocsFromArticles(contentDir) {
+const SEARCH_WINDOW_MS = 90 * 24 * 60 * 60 * 1000;
+const XHS_HOST = /^(?:xiaohongshu\.com|xhslink\.com|xhs\.cn)$/i;
+const X_HOST = /^(?:x|twitter)\.com$/i;
+
+function hasBannedBrand(text) {
+  return /AIHOT|MyHOT/i.test(String(text || ""));
+}
+
+function hostOf(url) {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "").toLowerCase();
+  } catch {
+    return "";
+  }
+}
+
+function shortHash(text) {
+  return createHash("sha256").update(String(text || "")).digest("hex").slice(0, 12);
+}
+
+function normalizeUrl(url) {
+  return String(url || "").trim().replace(/\/+$/, "").toLowerCase();
+}
+
+function isRecent(iso, now = Date.now()) {
+  if (!iso) return true;
+  const t = Date.parse(iso);
+  if (Number.isNaN(t)) return true;
+  return now - t <= SEARCH_WINDOW_MS;
+}
+
+function xhsDocId(url) {
+  try {
+    const u = new URL(url);
+    const parts = u.pathname.split("/").filter(Boolean);
+    const noteId =
+      (parts[0] === "explore" && parts[1])
+      || (parts[0] === "discovery" && parts[1] === "item" && parts[2])
+      || (parts[0] === "item" && parts[1])
+      || "";
+    if (noteId && /^[0-9a-f]+$/i.test(noteId)) return `xhs-${noteId}`;
+    return `xhs-${shortHash(u.pathname || url)}`;
+  } catch {
+    return `xhs-${shortHash(url)}`;
+  }
+}
+
+function xArticleId(url) {
+  const status = String(url).match(/\/status\/(\d+)/i);
+  if (status) return `x-status-${status[1]}`;
+  return `x-${shortHash(url)}`;
+}
+
+function readJsonSafe(file) {
+  try {
+    if (!existsSync(file)) return null;
+    return JSON.parse(readFileSync(file, "utf8"));
+  } catch {
+    return null;
+  }
+}
+
+function toSearchDoc({ id, t, title, summary, source, category, date, url }) {
+  const cleanTitle = String(title || "").trim();
+  if (!cleanTitle || findBannedMeta(cleanTitle) || hasBannedBrand(cleanTitle)) return null;
+  let cleanSummary = clip(summary, 120);
+  if (findBannedMeta(cleanSummary) || hasBannedBrand(cleanSummary)) cleanSummary = "";
+  const cleanId = String(id || "").trim();
+  if (!cleanId) return null;
+  if (hasBannedBrand(`${source || ""}`)) return null;
+  const href = url && /^https?:\/\//i.test(url)
+    ? (isPublicHttpUrl(url) ? url : "")
+    : publicRel(url);
+  if (!href) return null;
+  return {
+    id: cleanId,
+    t: t || "card",
+    title: cleanTitle,
+    summary: cleanSummary,
+    source: String(source || ""),
+    category: category || null,
+    date: String(date || ""),
+    url: href,
+  };
+}
+
+function pubDocsFromArticles(contentDir) {
   const docs = [];
-  const seen = new Set();
+  const seenId = new Set();
+  const seenUrl = new Set();
   for (const article of collectPublications(contentDir)) {
-    const url = String(article.url || "");
-    if (!/x\.com|twitter\.com/i.test(url)) continue;
-    const handle = url.replace(/^https?:\/\/(?:www\.)?(?:x|twitter)\.com\//i, "").split("/")[0];
-    if (!handle || handle === "i") continue;
-    const title = String(article.title || "").trim();
-    if (!title || findBannedMeta(title)) continue;
-    let summary = clip(article.summary, 120);
-    if (findBannedMeta(summary)) summary = "";
-    const id = `x-${handle}`.replace(/[^a-zA-Z0-9_-]/g, "-").slice(0, 80);
-    if (seen.has(id)) continue;
-    seen.add(id);
-    docs.push({
+    const url = String(article.url || "").trim();
+    if (!url) continue;
+    const host = hostOf(url);
+    const isX = X_HOST.test(host);
+    const isXhs = XHS_HOST.test(host);
+    if (!isX && !isXhs) continue;
+    let id;
+    let source;
+    if (isXhs) {
+      id = xhsDocId(url);
+      source = "小红书";
+    } else {
+      const handle = url.replace(/^https?:\/\/(?:www\.)?(?:x|twitter)\.com\//i, "").split(/[/?#]/)[0];
+      id = xArticleId(url);
+      source = handle && handle !== "i" ? `@${handle}` : (article.sourceName || "X");
+    }
+    id = String(id).replace(/[^a-zA-Z0-9_-]/g, "-").slice(0, 80);
+    const urlKey = normalizeUrl(url);
+    if (!id || seenId.has(id) || seenUrl.has(urlKey)) continue;
+    const doc = toSearchDoc({
       id,
       t: "card",
-      title,
-      summary,
-      source: `@${handle}`,
+      title: article.title,
+      summary: article.summary,
+      source,
       category: null,
       date: "",
       url,
     });
+    if (!doc) continue;
+    seenId.add(id);
+    seenUrl.add(urlKey);
+    docs.push(doc);
   }
   return docs;
 }
 
-export function buildSearchIndex({ contentDir, builtAt, dataAsOf }) {
+function engineV1SearchDocs(engineDir) {
+  const docs = [];
+  if (!engineDir || !existsSync(engineDir)) return docs;
+
+  const selected = readJsonSafe(join(engineDir, "feed", "selected.json"));
+  for (const item of selected?.items || []) {
+    if (!isRecent(item.pubDate)) continue;
+    const doc = toSearchDoc({
+      id: item.guid || item.id,
+      t: "card",
+      title: item.title,
+      summary: item.summary,
+      source: item.sourceName || "",
+      category: item.category || null,
+      date: item.pubDate || "",
+      url: item.originalUrl,
+    });
+    if (doc) docs.push(doc);
+  }
+
+  const eventsDir = join(engineDir, "events");
+  if (existsSync(eventsDir)) {
+    for (const name of readdirSync(eventsDir)) {
+      if (!name.endsWith(".json") || name === "index.json") continue;
+      const ev = readJsonSafe(join(eventsDir, name));
+      if (!ev) continue;
+      if (!isRecent(ev.latestAt || ev.firstReportAt)) continue;
+      const original = ev.latest?.originalUrl
+        || ev.developments?.[0]?.representative?.originalUrl
+        || ev.timeline?.[0]?.originalUrl;
+      const source = ev.developments?.[0]?.representative?.source?.name
+        || (Array.isArray(ev.sourceNames) ? ev.sourceNames.filter(Boolean).join("、") : "");
+      const eventId = ev.publicId || name.replace(/\.json$/, "");
+      const doc = toSearchDoc({
+        id: eventId,
+        t: "event",
+        title: ev.title,
+        summary: ev.summary || ev.excerpt || ev.developments?.[0]?.representative?.summary,
+        source,
+        category: null,
+        date: ev.latestAt || ev.firstReportAt || "",
+        url: isPublicHttpUrl(original) ? original : publicRel(`hot/#s-${eventId}`),
+      });
+      if (doc) docs.push(doc);
+    }
+  }
+
+  const hot = readJsonSafe(join(engineDir, "hot.json"));
+  if (hot && isRecent(hot.computedAt)) {
+    for (const entry of hot.entries || []) {
+      const id = entry.story?.publicId;
+      if (!id) continue;
+      const doc = toSearchDoc({
+        id,
+        t: "event",
+        title: entry.story?.title,
+        summary: entry.summary,
+        source: (entry.sourceNames || []).filter(Boolean).join("、"),
+        category: null,
+        date: hot.computedAt || "",
+        url: publicRel(`hot/#s-${id}`),
+      });
+      if (doc) docs.push(doc);
+    }
+  }
+
+  return docs.filter((doc) => !FIXTURE_IDS.some((id) => doc.id.includes(id)));
+}
+
+export function buildSearchIndex({ contentDir, builtAt, dataAsOf, engineDir }) {
   const docs = [];
   const seen = new Set();
-  for (const doc of [...weeklyDocs(contentDir), ...liveDocs(contentDir), ...timelineDocs(contentDir), ...xDocsFromArticles(contentDir)]) {
-    if (!doc.id || seen.has(doc.id)) continue;
+  const seenUrl = new Set();
+  const resolvedEngineDir = engineDir === undefined ? join(root, "data", "engine", "v1") : engineDir;
+  const streams = [
+    ...weeklyDocs(contentDir),
+    ...liveDocs(contentDir),
+    ...timelineDocs(contentDir),
+    ...pubDocsFromArticles(contentDir),
+    ...engineV1SearchDocs(resolvedEngineDir),
+  ];
+  for (const doc of streams) {
+    if (!doc?.id || seen.has(doc.id)) continue;
     if (FIXTURE_IDS.some((id) => doc.id.includes(id))) continue;
+    if (hasBannedBrand(`${doc.title} ${doc.summary} ${doc.source}`)) continue;
+    const url = publicRel(doc.url);
+    const urlKey = normalizeUrl(url);
+    if (urlKey && seenUrl.has(urlKey)) continue;
     seen.add(doc.id);
-    docs.push({ ...doc, url: publicRel(doc.url) });
+    if (urlKey) seenUrl.add(urlKey);
+    docs.push({ ...doc, url });
   }
   docs.sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")));
   return { v: 1, built_at: builtAt, data_as_of: dataAsOf, docs };
@@ -538,8 +720,14 @@ export async function exportStatic({ distDir, contentDir, dataset = "", dataAsOf
   const index = buildSearchIndex({ contentDir, builtAt: built, dataAsOf: asOf });
   const publicSite = site || (engine ? publicizeBundle(engine) : null);
   if (publicSite) {
+    const seenUrl = new Set(index.docs.map((row) => normalizeUrl(row.url)).filter(Boolean));
     for (const doc of engineSearchDocs(publicSite)) {
-      if (!index.docs.some((row) => row.id === doc.id)) index.docs.push(doc);
+      const urlKey = normalizeUrl(doc.url);
+      if (index.docs.some((row) => row.id === doc.id)) continue;
+      if (urlKey && seenUrl.has(urlKey)) continue;
+      if (hasBannedBrand(`${doc.title} ${doc.summary} ${doc.source}`)) continue;
+      if (urlKey) seenUrl.add(urlKey);
+      index.docs.push(doc);
     }
   }
   writeJson(join(distDir, "data", "search-index.json"), index);
@@ -639,7 +827,6 @@ export async function exportStatic({ distDir, contentDir, dataset = "", dataAsOf
   }
   void isValuableCoverClass;
   void BANNED_PUBLIC_COPY;
-  void createHash;
   // B1: replace content/fixture feeds with loadEngineData(). writeRedirects(dist, data) is wired from build.mjs.
 
   return { searchDocs: index.docs.length, weekly: issues.length, dataset };
