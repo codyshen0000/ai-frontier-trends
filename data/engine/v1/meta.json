@@ -2,11 +2,11 @@
  "site": "前沿趋势",
  "contract_version": "1.1",
  "mode": "production",
- "data_as_of": "2026-10-21T15:26:35+08:00",
- "data_as_of_label": "数据截至 2026-10-21 15:26（北京时间）",
- "generated_at": "2026-10-21T16:21:00+08:00",
+ "data_as_of": "2026-10-21T19:25:52+08:00",
+ "data_as_of_label": "数据截至 2026-10-21 19:25（北京时间）",
+ "generated_at": "2026-10-21T19:57:00+08:00",
  "hot_rule_version": "heat-v1-48h-halflife24h (前沿情报 heat48h.py 1.1)",
- "hot_computed_at": "2026-10-21T16:21:00+08:00",
+ "hot_computed_at": "2026-10-21T19:57:00+08:00",
  "window_hours": 48,
  "spark_points": 25,
  "page_size": 20,
@@ -15,18 +15,18 @@
   "pages": 1,
   "events": 9,
   "hot_entries": 4,
-  "search_docs": 22,
+  "search_docs": 23,
   "feed_items": 6,
   "passed_events": 9,
   "below_threshold_events": 0,
   "redirects": 0,
-  "hot_snapshots": 16,
-  "covers": 2
+  "hot_snapshots": 17,
+  "covers": 1
  },
  "last_round": {
-  "batch_id": "2026-10-21T1526",
+  "batch_id": "2026-10-21T1925",
   "status": "ok",
-  "finished_at": "2026-10-21T15:37:29+08:00"
+  "finished_at": "2026-10-21T19:37:48+08:00"
  },
  "batches": [
   {
@@ -228,6 +228,26 @@
   {
    "batch_id": "2026-10-21T1526",
    "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T1606",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T1626",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T1718",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T1817",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T1925",
+   "status": "ok"
   }
  ],
  "files": [
@@ -259,6 +279,7 @@
   "hot-snapshots/2026-10-21T13.json",
   "hot-snapshots/2026-10-21T15.json",
   "hot-snapshots/2026-10-21T16.json",
+  "hot-snapshots/2026-10-21T19.json",
   "hot-strip.json",
   "hot.json",
   "meta.json",
@@ -268,7 +289,5 @@
   "timeline/index.json",
   "timeline/page-1.json"
  ],
- "next_round": "2026-10-21T19:25:00+08:00",
- "cover_rule": "aihot soft: width≥480 (unknown=800) height≥240 + alt; value_class priority; materialized same-origin",
- "cover_note": "cover.url 为 assets/covers/…；日报头条与热点 NO.01 同事件可共用物化图（#36b）"
+ "next_round": "2026-10-22T08:25:00+08:00"
 }

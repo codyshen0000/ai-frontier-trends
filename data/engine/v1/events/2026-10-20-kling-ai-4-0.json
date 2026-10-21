@@ -249,6 +249,21 @@
    "hour": "2026-10-21T08:00:00.000Z",
    "heat": 3.3,
    "participants": 1
+  },
+  {
+   "hour": "2026-10-21T09:00:00.000Z",
+   "heat": 3.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T10:00:00.000Z",
+   "heat": 3.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T11:00:00.000Z",
+   "heat": 3.0,
+   "participants": 1
   }
  ],
  "related": [],

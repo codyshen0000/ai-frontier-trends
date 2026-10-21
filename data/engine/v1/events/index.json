@@ -3,16 +3,16 @@
   {
    "publicId": "2026-10-21-openai-orchestra-bio",
    "title": "OpenAI 收购 Orchestra Bio，并入 Rosalind 线",
-   "latestAt": "2026-10-20T20:35:10.000Z",
-   "reportCount": 1,
-   "hotRank": 3
+   "latestAt": "2026-10-21T08:32:54.000Z",
+   "reportCount": 2,
+   "hotRank": 1
   },
   {
    "publicId": "2026-10-21-mistral-voxtral-3",
    "title": "Mistral 发布 Voxtral 3：语音智能体 SDK 与语音模型",
    "latestAt": "2026-10-20T17:17:55.000Z",
    "reportCount": 2,
-   "hotRank": 1
+   "hotRank": 2
   },
   {
    "publicId": "2026-10-20-openai-low-resource-langs",
@@ -54,7 +54,7 @@
    "title": "MiniMax 上线 M3.1 Flash：称提速约 3 倍、成本降约 70%",
    "latestAt": "2026-10-19T12:20:45.000Z",
    "reportCount": 1,
-   "hotRank": 2
+   "hotRank": 3
   },
   {
    "publicId": "2026-10-20-hf-torchneuron-trainium",

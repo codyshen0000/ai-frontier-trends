@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 2,
   "observationComplete": true,
-  "rank": 1
+  "rank": 2
  },
  "developments": [
   {
@@ -179,6 +179,21 @@
    "hour": "2026-10-21T08:00:00.000Z",
    "heat": 12.2,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-21T09:00:00.000Z",
+   "heat": 11.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-21T10:00:00.000Z",
+   "heat": 11.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-21T11:00:00.000Z",
+   "heat": 11.1,
+   "participants": 2
   }
  ],
  "related": [],
@@ -192,5 +207,5 @@
   "valueClass": "product_screenshot"
  },
  "primaryUrl": "https://mistral.ai/news/voxtral-3/",
- "rankDelta": 0
+ "rankDelta": -1
 }

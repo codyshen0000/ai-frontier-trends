@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 1,
   "observationComplete": true,
-  "rank": 2
+  "rank": 3
  },
  "developments": [
   {
@@ -274,11 +274,26 @@
    "hour": "2026-10-21T08:00:00.000Z",
    "heat": 12.1,
    "participants": 3
+  },
+  {
+   "hour": "2026-10-21T09:00:00.000Z",
+   "heat": 11.7,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-21T10:00:00.000Z",
+   "heat": 11.4,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-21T11:00:00.000Z",
+   "heat": 11.1,
+   "participants": 3
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "MiniMax M3.1 Flash：称速度约 3 倍、成本约降 70%",
  "primaryUrl": "https://www.ithome.com/1/015/013.htm",
- "rankDelta": 0
+ "rankDelta": -1
 }

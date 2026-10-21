@@ -2,10 +2,10 @@
  "publicId": "2026-10-21-openai-orchestra-bio",
  "title": "OpenAI 收购 Orchestra Bio，并入 Rosalind 线",
  "status": "active",
- "reportCount": 1,
- "sourceCount": 1,
+ "reportCount": 2,
+ "sourceCount": 2,
  "firstReportAt": "2026-10-20T20:35:10.000Z",
- "latestAt": "2026-10-20T20:35:10.000Z",
+ "latestAt": "2026-10-21T08:32:54.000Z",
  "digest": null,
  "digestUpdatedAt": null,
  "summary": "OpenAI 收购药物开发协作平台 Orchestra Bio，团队与技术并入其生命科学模型与工具 Rosalind / Rosalind Workbench。 据 TechCrunch，目标是用智能体协助生物医药团队协调研发流程，加码生物技术业务。",
@@ -13,34 +13,46 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 2,
-  "newParticipants6h": 0,
-  "recentReports24h": 1,
+  "participants48h": 3,
+  "newParticipants6h": 1,
+  "recentReports24h": 2,
   "observationComplete": true,
-  "rank": 3
+  "rank": 1
  },
  "developments": [
   {
    "factId": "fact-2026-10-21-openai-orchestra-bio",
    "title": "OpenAI 收购 Orchestra Bio，并入 Rosalind 线",
    "firstReportAt": "2026-10-20T20:35:10.000Z",
-   "reportCount": 1,
+   "reportCount": 2,
    "representative": {
-    "id": "sha256:70cbed806b5b38bf",
-    "title": "TechCrunch：OpenAI 收购 Orchestra Bio 加码生物技术",
-    "summary": "TechCrunch 报道 OpenAI 收购 Orchestra Bio，团队与技术并入 Rosalind 与 Rosalind Workbench。",
+    "id": "sha256:f491f8d73d9bf961",
+    "title": "OpenAI 收购 Orchestra Bio，并入 Rosalind 线",
+    "summary": "The Decoder 报道 OpenAI 收购 Orchestra Bio 并入 Rosalind，做药物研发协作智能体。",
     "source": {
-     "name": "TechCrunch · AI",
+     "name": "The Decoder",
      "firstParty": false
     },
-    "publishedAt": "2026-10-20T20:35:10.000Z",
+    "publishedAt": "2026-10-21T08:32:54.000Z",
     "selected": false,
-    "originalUrl": "https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%e2%81%a0-to-beef-up-its-biotech-business/"
+    "originalUrl": "https://the-decoder.com/openai-acquires-orchestra-bio-to-build-ai-agents-that-speed-up-drug-development/"
    }
   }
  ],
  "officialReports": [],
  "timeline": [
+  {
+   "id": "sha256:f491f8d73d9bf961",
+   "title": "OpenAI 收购 Orchestra Bio，并入 Rosalind 线",
+   "summary": "The Decoder 报道 OpenAI 收购 Orchestra Bio 并入 Rosalind，做药物研发协作智能体。",
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-21T08:32:54.000Z",
+   "selected": false,
+   "originalUrl": "https://the-decoder.com/openai-acquires-orchestra-bio-to-build-ai-agents-that-speed-up-drug-development/"
+  },
   {
    "id": "sha256:70cbed806b5b38bf",
    "title": "TechCrunch：OpenAI 收购 Orchestra Bio 加码生物技术",
@@ -219,11 +231,26 @@
    "hour": "2026-10-21T08:00:00.000Z",
    "heat": 11.2,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-21T09:00:00.000Z",
+   "heat": 20.7,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-21T10:00:00.000Z",
+   "heat": 20.1,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-21T11:00:00.000Z",
+   "heat": 19.6,
+   "participants": 3
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind",
- "primaryUrl": "https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%e2%81%a0-to-beef-up-its-biotech-business/",
- "rankDelta": 0
+ "primaryUrl": "https://the-decoder.com/openai-acquires-orchestra-bio-to-build-ai-agents-that-speed-up-drug-development/",
+ "rankDelta": 2
 }

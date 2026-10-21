@@ -45,7 +45,7 @@
    "firstParty": true,
    "publishedAt": "2026-10-20T00:00:00.000Z",
    "available": true,
-   "otherSources": 1
+   "otherSources": 2
   },
   {
    "itemId": null,
@@ -117,7 +117,7 @@
      "firstParty": true,
      "publishedAt": "2026-10-20T00:00:00.000Z",
      "available": true,
-     "otherSources": 1
+     "otherSources": 2
     }
    ]
   },
@@ -176,10 +176,9 @@
   }
  ],
  "cover": {
-  "url": "assets/covers/daily-2026-10-21-1600.webp",
-  "srcSet": "assets/covers/daily-2026-10-21-720.webp 720w, assets/covers/daily-2026-10-21-1200.webp 1200w, assets/covers/daily-2026-10-21-1600.webp 1600w",
-  "width": 1440,
-  "height": 800,
+  "url": "https://mistral.ai/cms-media/api/media/file/hero-blog-voxtral.png",
+  "width": null,
+  "height": null,
   "alt": "Voxtral 3 语音智能体产品介绍页示意",
   "valueClass": "product_screenshot",
   "caption": null
