@@ -3,7 +3,7 @@
  "key": "2026-10-21",
  "issueNumber": 3,
  "title": "AI日报 · 2026-10-21",
- "generatedAt": "2026-10-21T00:36:07.000Z",
+ "generatedAt": "2026-10-21T08:29:00.000Z",
  "lead": {
   "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
   "leadParagraph": "Mistral 推出 Voxtral 3 语音智能体 SDK，支持 50+ 语言"
@@ -140,7 +140,41 @@
    ]
   }
  ],
- "flashes": [],
+ "flashes": [
+  {
+   "itemId": "sha256:be38b11f937cd76c",
+   "title": "DeepSeek 开源推理框架 DeepInfer",
+   "summary": "官方 GitHub 开源生产推理栈；注意力 62，快讯不进精选。",
+   "sourceName": "GitHub",
+   "sourceUrl": "https://github.com/deepseek-ai/DeepInfer",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-20T09:30:19.000Z",
+   "available": true
+  },
+  {
+   "itemId": null,
+   "title": "MemTensor 开源 MemT 1.0",
+   "summary": null,
+   "sourceName": "量子位",
+   "sourceUrl": "https://www.qbitai.com/2026/10/504456.html",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-20T12:50:34.000Z",
+   "available": true
+  },
+  {
+   "itemId": null,
+   "title": "VAST 开源实时世界模型 EdenLive",
+   "summary": "单卡 RTX 5090 上 720P 超 24FPS；注意力约66。",
+   "sourceName": "量子位",
+   "sourceUrl": "https://www.qbitai.com/2026/10/504136.html",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-18T11:49:49.000Z",
+   "available": true
+  }
+ ],
  "cover": null,
  "metrics": {
   "totalEvents": 5,
