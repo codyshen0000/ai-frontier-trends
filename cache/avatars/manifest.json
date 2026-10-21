@@ -1,1 +1,222 @@
-{}
+{
+  "bfl_ai": {
+    "file32": "bfl_ai-32.webp",
+    "file64": "bfl_ai-64.webp",
+    "origin_url": "https://unavatar.io/twitter/bfl_ai?fallback=false",
+    "fetched_at": "2026-10-21T01:03:20.937Z",
+    "sha256": "3347ad7399123e3184db1fb4123859db84c7c85fc360b7adf9156cde01152750",
+    "width": 32,
+    "height": 32,
+    "source_width": 400,
+    "source_height": 400
+  },
+  "github-com": {
+    "file32": "github-com-32.webp",
+    "file64": "github-com-64.webp",
+    "origin_url": "https://github.com/fluidicon.png",
+    "fetched_at": "2026-10-21T01:03:21.481Z",
+    "sha256": "1bedd6a1948971f07970414717012503805309f25af0b2c542dbc3524b5880e9",
+    "width": 32,
+    "height": 32,
+    "source_width": 512,
+    "source_height": 512
+  },
+  "openui-com": {
+    "file32": "openui-com-32.webp",
+    "file64": "openui-com-64.webp",
+    "origin_url": "https://www.openui.com/shiro-logo.svg",
+    "fetched_at": "2026-10-21T01:03:21.687Z",
+    "sha256": "78bc402d3640e1b3423a915606f621a6ed989b0e32e8719948ad53cb971aaf95",
+    "width": 32,
+    "height": 32,
+    "source_width": 200,
+    "source_height": 160
+  },
+  "x-com": {
+    "file32": "x-com-32.webp",
+    "file64": "x-com-64.webp",
+    "origin_url": "https://x.com/apple-touch-icon.png",
+    "fetched_at": "2026-10-21T01:03:22.874Z",
+    "sha256": "a83542eb0563242949d7dbde720014fb7ab48ae14ed59f43eec34907cb90c477",
+    "width": 32,
+    "height": 32,
+    "source_width": 1024,
+    "source_height": 1024
+  },
+  "typesafe-ai": {
+    "file32": "typesafe-ai-32.webp",
+    "file64": "typesafe-ai-64.webp",
+    "origin_url": "https://framerusercontent.com/images/aNFzSFxM4fjICmnibw7npfZjcQ.png",
+    "fetched_at": "2026-10-21T01:03:23.037Z",
+    "sha256": "fcb8f554778c45ff62b97ca05df643588b39c8c66913736b7fe3485cedd96180",
+    "width": 32,
+    "height": 32,
+    "source_width": 400,
+    "source_height": 400
+  },
+  "typesafeai": {
+    "file32": "typesafeai-32.webp",
+    "file64": "typesafeai-64.webp",
+    "origin_url": "https://unavatar.io/twitter/typesafeai?fallback=false",
+    "fetched_at": "2026-10-21T01:03:23.167Z",
+    "sha256": "9be6d0ace05dc28bebb309925c8fc837649dc41dcad141522b6647a35bb6805f",
+    "width": 32,
+    "height": 32,
+    "source_width": 400,
+    "source_height": 400
+  },
+  "arxiv-org": {
+    "file32": "arxiv-org-32.webp",
+    "file64": "arxiv-org-64.webp",
+    "origin_url": "https://arxiv.org/static/browse/0.3.4/images/icons/apple-touch-icon.png",
+    "fetched_at": "2026-10-21T01:03:23.318Z",
+    "sha256": "a5dd952e72f45dd00688057fe1fc258a41563d57376747c92612b93c0e1981b4",
+    "width": 32,
+    "height": 32,
+    "source_width": 180,
+    "source_height": 180
+  },
+  "code_hiyouga": {
+    "file32": "code_hiyouga-32.webp",
+    "file64": "code_hiyouga-64.webp",
+    "origin_url": "https://unavatar.io/twitter/code_hiyouga?fallback=false",
+    "fetched_at": "2026-10-21T01:03:27.696Z",
+    "sha256": "b796d7948e52d2c562ba738fc1dcde3beb988bc1240fcf576e43fe5e1d4c0be0",
+    "width": 32,
+    "height": 32,
+    "source_width": 400,
+    "source_height": 400
+  },
+  "yucheng__shi": {
+    "file32": "yucheng__shi-32.webp",
+    "file64": "yucheng__shi-64.webp",
+    "origin_url": "https://unavatar.io/twitter/yucheng__shi?fallback=false",
+    "fetched_at": "2026-10-21T01:03:28.174Z",
+    "sha256": "097ffd6cd9e540904db287694e43c5f2ba7623a096e9ab5d4dc49d45db391ca9",
+    "width": 32,
+    "height": 32,
+    "source_width": 400,
+    "source_height": 400
+  },
+  "jevland-mnimiy-com": {
+    "file32": "jevland-mnimiy-com-32.webp",
+    "file64": "jevland-mnimiy-com-64.webp",
+    "origin_url": "https://jevland.mnimiy.com/favicon.svg",
+    "fetched_at": "2026-10-21T01:03:28.454Z",
+    "sha256": "a9917daa1f3fb3a450cedd4e44b1ee197e13abcf1ea7e6f462acd084a8eac73b",
+    "width": 32,
+    "height": 32,
+    "source_width": 64,
+    "source_height": 64
+  },
+  "kling_ai": {
+    "file32": "kling_ai-32.webp",
+    "file64": "kling_ai-64.webp",
+    "origin_url": "https://unavatar.io/twitter/kling_ai?fallback=false",
+    "fetched_at": "2026-10-21T01:03:28.983Z",
+    "sha256": "99b6e936470987b26678037c8b746afa64e2f24ea83b3cfe6f500951051ccad5",
+    "width": 32,
+    "height": 32,
+    "source_width": 400,
+    "source_height": 400
+  },
+  "artificialanlys": {
+    "file32": "artificialanlys-32.webp",
+    "file64": "artificialanlys-64.webp",
+    "origin_url": "https://unavatar.io/twitter/artificialanlys?fallback=false",
+    "fetched_at": "2026-10-21T01:03:29.482Z",
+    "sha256": "a8dc6a73cf1ab3b447b8182227fb72f9b986303f51b4c89c7b83caf2c88105d8",
+    "width": 32,
+    "height": 32,
+    "source_width": 400,
+    "source_height": 400
+  },
+  "techcrunch-com": {
+    "file32": "techcrunch-com-32.webp",
+    "file64": "techcrunch-com-64.webp",
+    "origin_url": "https://techcrunch.com/wp-content/uploads/2015/02/cropped-cropped-favicon-gradient.png?w=32",
+    "fetched_at": "2026-10-21T01:03:32.199Z",
+    "sha256": "4716cb9cb6d1a285187305dba2a6e2be6e2cba09a997d24a32be091aa1c452ec",
+    "width": 32,
+    "height": 32,
+    "source_width": 32,
+    "source_height": 32
+  },
+  "the-decoder-com": {
+    "file32": "the-decoder-com-32.webp",
+    "file64": "the-decoder-com-64.webp",
+    "origin_url": "https://the-decoder.com/resources/favicons/apple-touch-icon-60x60.png?v=3",
+    "fetched_at": "2026-10-21T01:03:33.181Z",
+    "sha256": "ff906583bbc5d6e5d33bf7b1cf0681a5b91aa87c3d07249bbf27a3e59bd49638",
+    "width": 32,
+    "height": 32,
+    "source_width": 60,
+    "source_height": 60
+  },
+  "bfl-ai": {
+    "file32": "bfl-ai-32.webp",
+    "file64": "bfl-ai-64.webp",
+    "origin_url": "https://bfl.ai/favicon.ico",
+    "fetched_at": "2026-10-21T01:06:36.988Z",
+    "sha256": "66b3b895e29c1ebe898113281e31088556eb9c36f07ba81de6714dd2fef87c77",
+    "width": 32,
+    "height": 32,
+    "source_width": 48,
+    "source_height": 48
+  },
+  "huggingface-co": {
+    "file32": "huggingface-co-32.webp",
+    "file64": "huggingface-co-64.webp",
+    "origin_url": "https://huggingface.co/favicon.ico",
+    "fetched_at": "2026-10-21T01:06:37.556Z",
+    "sha256": "ad8b64604558a35b100f041d4702fa20de72543b491302a270fcb8fb50abb883",
+    "width": 32,
+    "height": 32,
+    "source_width": 256,
+    "source_height": 256
+  },
+  "modelscope-cn": {
+    "file32": "modelscope-cn-32.webp",
+    "file64": "modelscope-cn-64.webp",
+    "origin_url": "https://g.alicdn.com/sail-web/maas/2.13.168/favicon/128.ico",
+    "fetched_at": "2026-10-21T01:06:38.837Z",
+    "sha256": "9cd79a55642b22d03aab5c02c263c24d48f90e0b1ee6e61844cb338e22657661",
+    "width": 32,
+    "height": 32,
+    "source_width": 128,
+    "source_height": 128
+  },
+  "xiaohongshu-com": {
+    "file32": "xiaohongshu-com-32.webp",
+    "file64": "xiaohongshu-com-64.webp",
+    "origin_url": "https://fe-video-qc.xhscdn.com/fe-platform/ed8fe781ce9e16c1bfac2cd962f0721edabe2e49.ico",
+    "fetched_at": "2026-10-21T01:06:40.749Z",
+    "sha256": "9c4e1f60157a69f96103ce04f9ddfe708dfda7ba34089dba31b40e4e6875363e",
+    "width": 32,
+    "height": 32,
+    "source_width": 32,
+    "source_height": 32
+  },
+  "qbitai-com": {
+    "file32": "qbitai-com-32.webp",
+    "file64": "qbitai-com-64.webp",
+    "origin_url": "https://www.qbitai.com/wp-content/themes/liangziwei/imgnew/favicon.ico",
+    "fetched_at": "2026-10-21T01:06:44.012Z",
+    "sha256": "b3eee72b5721870874b06601e709b547c8862b70e446a666ad7d01ca9322e0a2",
+    "width": 32,
+    "height": 32,
+    "source_width": 32,
+    "source_height": 32
+  },
+  "ithome-com": {
+    "file32": "ithome-com-32.webp",
+    "file64": "ithome-com-64.webp",
+    "origin_url": "https://www.ithome.com/img/t.png",
+    "fetched_at": "2026-10-21T01:08:07.173Z",
+    "sha256": "5bfe69e430940bd6a15b2199afc0805da791507e1224456ffa021c68be821ebd",
+    "width": 32,
+    "height": 32,
+    "source_width": 180,
+    "source_height": 180
+  }
+}

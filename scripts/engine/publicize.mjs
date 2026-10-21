@@ -2,6 +2,7 @@
  * Turn an EngineBundle into the MIT page/export shape.
  * Hide empty fields, drop invalid covers, strip score, never emit fixture ids.
  */
+import { publicIconFor } from "../avatar_icons.mjs";
 import { groupByEvent } from "./groupByEvent.mjs";
 import { isAcceptedCoverClass } from "./loader.mjs";
 import { FIXTURE_IDS, FIXTURE_TITLE_NEEDLES, textHasFixtureId } from "./ids.mjs";
@@ -65,6 +66,107 @@ export function publicCover(cover) {
 function cleanText(value) {
   const text = value == null ? "" : String(value).trim();
   return text || null;
+}
+
+function isRemoteImageRef(value) {
+  return typeof value === "string" && /https?:\/\//i.test(value);
+}
+
+function avatarCtx(bundle, meta = {}) {
+  return {
+    manifest: meta.avatarManifest,
+    cacheDir: meta.avatarDir,
+    sources: bundle?.sources || meta.sources || [],
+  };
+}
+
+function decorateParticipant(participant, ctx) {
+  if (!participant || typeof participant !== "object") return participant;
+  const next = { ...participant };
+  if (isRemoteImageRef(next.iconUrl)) delete next.iconUrl;
+  if (isRemoteImageRef(next.iconSrcSet)) delete next.iconSrcSet;
+  const icons = publicIconFor({ name: next.name, homepage: next.homepage, sourceUrl: next.sourceUrl }, ctx);
+  if (icons) {
+    next.iconUrl = icons.iconUrl;
+    next.iconSrcSet = icons.iconSrcSet;
+  }
+  return next;
+}
+
+function decorateParticipants(list, ctx) {
+  if (!Array.isArray(list)) return list;
+  return list.map((row) => decorateParticipant(row, ctx));
+}
+
+function stripRemoteXAvatar(x) {
+  if (!x || typeof x !== "object") return x;
+  const next = { ...x };
+  if (isRemoteImageRef(next.avatarUrl)) next.avatarUrl = null;
+  if (isRemoteImageRef(next.avatarSrcSet)) delete next.avatarSrcSet;
+  return next;
+}
+
+function decorateCitation(citation, ctx) {
+  if (!citation || typeof citation !== "object") return citation;
+  const next = { ...citation };
+  if (isRemoteImageRef(next.sourceIconUrl)) next.sourceIconUrl = null;
+  if (isRemoteImageRef(next.sourceIconSrcSet)) delete next.sourceIconSrcSet;
+  const icons = publicIconFor(
+    { name: next.sourceName, homepage: next.sourceUrl, sourceUrl: next.sourceUrl },
+    ctx,
+  );
+  if (icons) {
+    next.sourceIconUrl = icons.iconUrl;
+    next.sourceIconSrcSet = icons.iconSrcSet;
+  }
+  if (Array.isArray(next.related)) next.related = next.related.map((row) => decorateCitation(row, ctx));
+  return next;
+}
+
+function decorateDaily(daily, ctx) {
+  if (!daily || typeof daily !== "object") return daily;
+  const next = { ...daily };
+  if (Array.isArray(next.highlights)) next.highlights = next.highlights.map((row) => decorateCitation(row, ctx));
+  if (Array.isArray(next.flashes)) next.flashes = next.flashes.map((row) => decorateCitation(row, ctx));
+  if (Array.isArray(next.sections)) {
+    next.sections = next.sections.map((section) => ({
+      ...section,
+      items: Array.isArray(section.items) ? section.items.map((row) => decorateCitation(row, ctx)) : section.items,
+    }));
+  }
+  return next;
+}
+
+function attachAvatarIcons(site, bundle, meta = {}) {
+  if (meta.attachAvatars === false) return site;
+  const ctx = avatarCtx(bundle, meta);
+  for (const entry of site.hot?.entries || []) {
+    entry.participants = decorateParticipants(entry.participants, ctx);
+  }
+  site.hotStrip = (site.hotStrip || []).map((row) => ({
+    ...row,
+    participants: decorateParticipants(row.participants, ctx),
+  }));
+  if (site.timeline?.hot) {
+    site.timeline.hot = site.timeline.hot.map((row) => ({
+      ...row,
+      participants: decorateParticipants(row.participants, ctx),
+    }));
+  }
+  for (const card of [...(site.timeline?.cards || []), ...(site.allTimeline?.cards || [])]) {
+    if (!card?.item) continue;
+    card.item.participants = decorateParticipants(card.item.participants, ctx);
+    if (card.item.x) card.item.x = stripRemoteXAvatar(card.item.x);
+  }
+  site.events = (site.events || []).map((event) => {
+    if (!event || typeof event !== "object") return event;
+    const next = { ...event };
+    if (next.participants) next.participants = decorateParticipants(next.participants, ctx);
+    return next;
+  });
+  if (site.daily) site.daily = decorateDaily(site.daily, ctx);
+  if (Array.isArray(site.dailies)) site.dailies = site.dailies.map((row) => decorateDaily(row, ctx));
+  return site;
 }
 
 export function publicizeHotStripRow(row) {
@@ -240,6 +342,7 @@ export function publicizeBundle(bundle, meta = {}) {
   site.timeline.hot = site.timeline.hot?.length ? site.timeline.hot : site.hotStrip;
   site.itemUrls = collectItemUrls(bundle, [...site.timeline.cards, ...(site.allTimeline.cards || [])]);
   if (!site.allTimeline.cards.length) site.allTimeline.cards = site.timeline.cards;
+  attachAvatarIcons(site, bundle, meta);
   const publicSite = scrubForbiddenHeatCopyDeep(scrubFixtureTitleNeedles(site));
   assertPublicSite(publicSite);
   return publicSite;

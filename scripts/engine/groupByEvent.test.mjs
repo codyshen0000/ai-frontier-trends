@@ -170,6 +170,26 @@ describe("groupByEvent SYNTHETIC merge cases", () => {
     assert.equal(out[0].item.participants.filter((p) => p.kind === "editorial").length, 2);
   });
 
+  it("keeps same-origin iconUrl/iconSrcSet when grouping again", () => {
+    const first = card({
+      key: "icon-a",
+      eventId: "2026-10-19-synthetic-merge-icon",
+      source: "The Decoder",
+      url: "https://example.invalid/synthetic/icon",
+    });
+    first.item.participants = [
+      {
+        name: "The Decoder",
+        kind: "editorial",
+        iconUrl: "assets/avatars/the-decoder-com-32.webp",
+        iconSrcSet: "assets/avatars/the-decoder-com-32.webp 32w, assets/avatars/the-decoder-com-64.webp 64w",
+      },
+    ];
+    const out = groupByEvent([first]);
+    assert.equal(out[0].item.participants[0].iconUrl, "assets/avatars/the-decoder-com-32.webp");
+    assert.match(out[0].item.participants[0].iconSrcSet, /64w/);
+  });
+
   it("leaves unique events unique and reports 0 duplicates after grouping", () => {
     const cards = [
       card({

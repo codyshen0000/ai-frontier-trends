@@ -76,6 +76,11 @@ function membersFromEvent(event) {
   return rows;
 }
 
+function mergeIcon(prev, extra) {
+  if (!prev.iconUrl && extra.iconUrl) prev.iconUrl = extra.iconUrl;
+  if (!prev.iconSrcSet && extra.iconSrcSet) prev.iconSrcSet = extra.iconSrcSet;
+}
+
 function uniqueSources(members, cards, byName) {
   const map = new Map();
   const add = (name, kind, extra = {}) => {
@@ -83,12 +88,28 @@ function uniqueSources(members, cards, byName) {
     const prev = map.get(name);
     const nextKind = asHotKind(kind);
     if (!prev) map.set(name, { name, kind: nextKind, ...extra });
-    else if (prev.kind !== "editorial" && nextKind === "editorial") prev.kind = "editorial";
+    else {
+      if (prev.kind !== "editorial" && nextKind === "editorial") prev.kind = "editorial";
+      mergeIcon(prev, extra);
+    }
   };
-  for (const card of cards) add(sourceNameOf(card.item), sourceKindOf(card.item, byName));
+  for (const card of cards) {
+    const item = card.item;
+    add(sourceNameOf(item), sourceKindOf(item, byName), {
+      iconUrl: item?.source?.iconUrl,
+      iconSrcSet: item?.source?.iconSrcSet,
+    });
+    for (const participant of item?.participants || []) {
+      add(participant.name, participant.kind || sourceKindOf({ source: { name: participant.name } }, byName), {
+        iconUrl: participant.iconUrl,
+        iconSrcSet: participant.iconSrcSet,
+      });
+    }
+  }
   for (const row of members) {
     add(row.source?.name || row.name, row.source?.kind || row.kind || byName.get(row.source?.name)?.kind, {
-      iconUrl: row.source?.iconUrl,
+      iconUrl: row.source?.iconUrl || row.iconUrl,
+      iconSrcSet: row.source?.iconSrcSet || row.iconSrcSet,
     });
   }
   return [...map.values()];
@@ -125,6 +146,7 @@ function decorateCard(representative, { id, sources, memberIds, reportCount }) {
       name: row.name,
       kind: row.kind,
       ...(row.iconUrl ? { iconUrl: row.iconUrl } : {}),
+      ...(row.iconSrcSet ? { iconSrcSet: row.iconSrcSet } : {}),
     })),
   };
   const group = {

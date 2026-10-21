@@ -9,6 +9,7 @@ import { listWeeklyIssues } from "./weekly.mjs";
 import { extractLiveCards } from "./live_cards.mjs";
 import { extractTimelineLede } from "./extract.mjs";
 import { isValuableCoverClass } from "./cover_rules.mjs";
+import { copyAvatarCache } from "./avatar_icons.mjs";
 import { publicizeBundle, isPublicHttpUrl, stripScore as stripScoreDeep } from "./engine/publicize.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -242,18 +243,7 @@ function xml(text) {
 }
 
 export function copyAvatars(distDir) {
-  const cache = join(root, "cache", "avatars");
-  const dest = join(distDir, "assets", "avatars");
-  if (!existsSync(cache)) return { count: 0 };
-  mkdirSync(dest, { recursive: true });
-  for (const name of readdirSync(cache)) {
-    const from = join(cache, name);
-    if (statSync(from).isDirectory()) continue;
-    if (name === "manifest.json" || name.endsWith(".webp")) {
-      cpSync(from, join(dest, name));
-    }
-  }
-  return { count: readdirSync(dest).filter((n) => n.endsWith(".webp")).length };
+  return copyAvatarCache(distDir);
 }
 
 function writeJson(file, data) {
