@@ -21,7 +21,7 @@
   "below_threshold_events": 0,
   "redirects": 0,
   "hot_snapshots": 16,
-  "covers": 1
+  "covers": 2
  },
  "last_round": {
   "batch_id": "2026-10-21T1526",
@@ -270,5 +270,5 @@
  ],
  "next_round": "2026-10-21T19:25:00+08:00",
  "cover_rule": "aihot soft: width≥480 (unknown=800) height≥240 + alt; value_class priority; materialized same-origin",
- "cover_note": "cover.url 为 assets/covers/…；由 box 物化后提交 engine-data（#36）"
+ "cover_note": "cover.url 为 assets/covers/…；日报头条与热点 NO.01 同事件可共用物化图（#36b）"
 }
