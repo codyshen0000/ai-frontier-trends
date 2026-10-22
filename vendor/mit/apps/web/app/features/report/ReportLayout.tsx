@@ -11,7 +11,7 @@ import { KindSwitch, ReportArchive, ReportPhoneNav } from "./ReportNav";
  * the reports (the archive) gets a bar leading back instead. The paper is centred beside the archive, on
  * a faintly toned paper in the light theme, up to 1160px.
  */
-export function ReportLayout({ kind, index, current, today, outline = [], back, title, children }: {
+export function ReportLayout({ kind, index, current, today, outline = [], back, title, footer, children }: {
   kind: ReportKind;
   index: ReportNavigationEntry[];
   current: string | null;
@@ -21,11 +21,13 @@ export function ReportLayout({ kind, index, current, today, outline = [], back, 
   /** Below the reports: where the phone bar leads back, and the page's name. */
   back?: BackTarget;
   title?: string;
+  /** Site as-of / RSS; rendered in the paper column so lg sticky archive cannot cover it. */
+  footer?: ReactNode;
   children: ReactNode;
 }) {
   const [outlineOpen, setOutlineOpen] = useState(false);
   return (
-    <div className="report-shell lg:-mx-7 lg:-mb-[72px] lg:-mt-6 lg:flex lg:min-h-dvh">
+    <div className="report-shell lg:-mx-7 lg:-mt-6 lg:flex lg:min-h-dvh">
       <ReportArchive kind={kind} index={index} current={current} />
       <div className="min-w-0 flex-1 pb-6 lg:flex lg:flex-col lg:items-center lg:px-10 lg:pb-16 lg:pt-9">
         {back ? (
@@ -84,7 +86,10 @@ export function ReportLayout({ kind, index, current, today, outline = [], back, 
             )}
           </>
         )}
-        <div className="w-full lg:max-w-[1160px]">{children}</div>
+        <div className="w-full lg:max-w-[1160px]">
+          {children}
+          {footer}
+        </div>
       </div>
     </div>
   );

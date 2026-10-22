@@ -124,18 +124,16 @@ export function DailyScreen({ emptyCover = false }: { emptyCover?: boolean }) {
   if (!daily) {
     return (
       <Shell pathname="/daily">
-        <ReportEmpty kind="daily" index={dailyIndex} today={today} title="日报" copy="过去 24 小时没有达到上榜条件的事件。" />
-        {rss}
+        <ReportEmpty kind="daily" index={dailyIndex} today={today} title="日报" copy="过去 24 小时没有达到上榜条件的事件。" footer={rss} />
       </Shell>
     );
   }
   const report = emptyCover ? dailyWithoutCover(daily) : daily;
   return (
     <Shell pathname="/daily">
-      <ReportLayout kind="daily" index={dailyIndex} current={report.key} today={today} outline={reportOutline(report)}>
+      <ReportLayout kind="daily" index={dailyIndex} current={report.key} today={today} outline={reportOutline(report)} footer={rss}>
         <ReportPaper report={report} index={dailyIndex} />
       </ReportLayout>
-      {rss}
     </Shell>
   );
 }
@@ -149,8 +147,8 @@ export function DailyArchiveScreen() {
         today={today}
         title="日报合订本"
         copy={dailyIndex.length ? "按月查看往期日报。" : "暂无往期日报。"}
+        footer={<AsOfAndRss rssHref={hasSelectedFeed ? "feed.xml" : "feed/weekly.xml"} />}
       />
-      <AsOfAndRss rssHref={hasSelectedFeed ? "feed.xml" : "feed/weekly.xml"} />
     </Shell>
   );
 }
@@ -158,8 +156,7 @@ export function DailyArchiveScreen() {
 export function WeeklyScreen() {
   return (
     <Shell pathname="/weekly">
-      <ReportEmpty kind="weekly" index={weeklyIndex} today={today} title="周报" copy="暂无引擎周报。" />
-      <AsOfAndRss rssHref="feed/weekly.xml" />
+      <ReportEmpty kind="weekly" index={weeklyIndex} today={today} title="周报" copy="暂无引擎周报。" footer={<AsOfAndRss rssHref="feed/weekly.xml" />} />
     </Shell>
   );
 }
@@ -167,8 +164,7 @@ export function WeeklyScreen() {
 export function MonthlyScreen() {
   return (
     <Shell pathname="/monthly">
-      <ReportEmpty kind="monthly" index={monthlyIndex} today={today} title="月报" copy="暂无月报。" />
-      <AsOfAndRss rssHref={hasSelectedFeed ? "feed.xml" : "feed/weekly.xml"} />
+      <ReportEmpty kind="monthly" index={monthlyIndex} today={today} title="月报" copy="暂无月报。" footer={<AsOfAndRss rssHref={hasSelectedFeed ? "feed.xml" : "feed/weekly.xml"} />} />
     </Shell>
   );
 }

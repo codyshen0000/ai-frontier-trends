@@ -577,8 +577,19 @@
   background: color-mix(in srgb, var(--bg) 60%, var(--surface));
 }
 
+/* MIT used lg:-mb-[72px] to cancel main's lg:pb-[72px]. That pulls a sibling .ft-asof
+   under the sticky archive (h-dvh) and the paper column, so desktop /daily/ looks empty.
+   Keep the shell from bleeding over the footer; as-of stays in normal flow and hittable. */
+@media (min-width: 64rem) {
+  .report-shell {
+    margin-bottom: 0;
+  }
+}
+
 /* Remaining-A: search / starred / refresh / paging. MIT tokens only; no glow or glass. */
 .ft-asof {
+  position: relative;
+  z-index: 1;
   margin-top: 1.5rem;
   font-size: 12.5px;
   line-height: 1.7;
