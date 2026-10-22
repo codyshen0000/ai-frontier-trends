@@ -1,0 +1,37 @@
+{
+  "merge_into": "/workspace/frontier-hotboard/l4-sources.json",
+  "note": "Single-source fragment for git. Merge this entry into the box sources file; do not treat this as the full catalog, and do not replace the live box file from this fragment alone.",
+  "sources": [
+    {
+      "id": "web-baseten-blog",
+      "name": "Baseten Blog",
+      "kind": "web_list",
+      "type_label": "网页",
+      "url": "https://www.baseten.co/blog/",
+      "tier": "T1",
+      "source_class": "official",
+      "evidence_grade": "一手",
+      "lang": "en",
+      "topics": [
+        "推理",
+        "模型发布"
+      ],
+      "priority": "P1",
+      "fetch_interval_min": 180,
+      "free": true,
+      "verified": "yes",
+      "tos_ok": true,
+      "participation_mode": "editorial",
+      "notes": "无 RSS（/blog/rss.xml、/rss.xml 404）；/changelog/ 200 但链接为 JS 渲染，本次不纳入",
+      "config": {
+        "parseMode": "html",
+        "linkRegex": "href=\"(/blog/[a-z0-9-]+/)\"",
+        "allowUrlPrefixes": [
+          "https://www.baseten.co/blog/"
+        ],
+        "maxItems": 10
+      },
+      "owner_entity_id": null
+    }
+  ]
+}
