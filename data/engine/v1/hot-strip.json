@@ -2,8 +2,8 @@
  {
   "rank": 1,
   "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
-  "heat": 38.6,
-  "trend": "up",
+  "heat": 31.3,
+  "trend": "down",
   "storyPublicId": "2026-10-21-php2shell-wiz-rce",
   "itemId": "sha256:de9db6f384cbc788",
   "participants": [
@@ -33,7 +33,7 @@
  {
   "rank": 2,
   "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
-  "heat": 22.2,
+  "heat": 18.0,
   "trend": "down",
   "storyPublicId": "2026-10-21-openai-models-google-cloud",
   "itemId": "sha256:95dedf578de78f3e",
@@ -56,8 +56,8 @@
  {
   "rank": 3,
   "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
-  "heat": 18.2,
-  "trend": "new",
+  "heat": 14.7,
+  "trend": "down",
   "storyPublicId": "2026-10-22-anthropic-claude-duet",
   "itemId": "sha256:258d5ff776fa8f13",
   "participants": [
@@ -75,7 +75,7 @@
  {
   "rank": 4,
   "title": "Mistral×NVIDIA：用加速计算推进工业工程与物理 AI 工作流",
-  "heat": 14.4,
+  "heat": 11.7,
   "trend": "down",
   "storyPublicId": "2026-10-21-mistral-nvidia-industrial-ai",
   "itemId": "sha256:856c26ca4c2d04bc",
@@ -94,7 +94,7 @@
  {
   "rank": 5,
   "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认",
-  "heat": 14.4,
+  "heat": 11.7,
   "trend": "down",
   "storyPublicId": "2026-10-21-openai-agent-monitoring-disabled",
   "itemId": "sha256:d2895ceb6fcba3ff",
