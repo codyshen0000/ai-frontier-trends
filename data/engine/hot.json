@@ -1,135 +1,24 @@
 {
- "computedAt": "2026-10-21T08:07:01.000Z",
+ "computedAt": "2026-10-22T00:41:00.000Z",
  "windowHours": 48,
  "entries": [
   {
    "rank": 1,
    "story": {
-    "publicId": "2026-10-20-deepseek-deepinfer-opensource",
-    "title": "DeepSeek 宣布开源内部推理框架 DeepInfer"
+    "publicId": "2026-10-21-php2shell-wiz-rce",
+    "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露"
    },
-   "heat": 12.0,
-   "trend": "down",
-   "trendPct": -15.5,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 1,
+   "heat": 38.6,
+   "trend": "up",
+   "trendPct": 50.8,
+   "badges": [
+    "rising"
+   ],
+   "participantCount": 5,
+   "sourceCount": 4,
    "sourceNames": [
-    "The Decoder"
-   ],
-   "participants": [
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
-    }
-   ],
-   "spark": [
-    null,
-    null,
-    9.7,
-    9.5,
-    9.2,
-    8.9,
-    8.7,
-    8.4,
-    8.2,
-    8.0,
-    7.7,
-    17.5,
-    17.0,
-    16.5,
-    16.0,
-    15.6,
-    15.1,
-    14.7,
-    14.3,
-    13.9,
-    13.5,
-    13.1,
-    12.7,
-    12.4,
-    12.0
-   ],
-   "summary": "IT之家称 DeepSeek 宣布将内部推理框架 DeepInfer 全面开源，希望帮助开发者与企业降低大规模推理的算力与能耗成本。",
-   "latest": null,
-   "cover": null,
-   "belowThreshold": true
-  },
-  {
-   "rank": 2,
-   "story": {
-    "publicId": "2026-10-20-us-deepseek-federal-ban",
-    "title": "美国要求联邦民用机构清除 DeepSeek AI"
-   },
-   "heat": 11.3,
-   "trend": "down",
-   "trendPct": -15.7,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "TechCrunch · AI",
-    "The Decoder"
-   ],
-   "participants": [
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    null,
-    null,
-    null,
-    null,
-    9.9,
-    9.6,
-    19.1,
-    18.5,
-    18.0,
-    17.5,
-    17.0,
-    16.5,
-    16.0,
-    15.6,
-    15.1,
-    14.7,
-    14.3,
-    13.9,
-    13.5,
-    13.1,
-    12.7,
-    12.4,
-    12.0,
-    11.7,
-    11.3
-   ],
-   "summary": "多家媒体称，美国国土安全部等已要求联邦民用机构停止使用中国实验室 DeepSeek 的 AI 技术，并移除相关产品及基于其技术的第三方服务，理由是国家安全。",
-   "latest": null,
-   "cover": null,
-   "belowThreshold": true
-  },
-  {
-   "rank": 3,
-   "story": {
-    "publicId": "2026-10-21-openai-orchestra-bio",
-    "title": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线"
-   },
-   "heat": 11.1,
-   "trend": "down",
-   "trendPct": -15.9,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
+    "The Decoder",
+    "Simon Willison",
     "TechCrunch · AI",
     "OpenAI News"
    ],
@@ -139,52 +28,64 @@
      "kind": "editorial"
     },
     {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "Simon Willison",
+     "kind": "editorial"
+    },
+    {
      "name": "TechCrunch · AI",
      "kind": "editorial"
+    },
+    {
+     "name": "Hacker News（AI 关键词 ≥100 分）",
+     "kind": "signal"
     }
    ],
    "spark": [
-    7.9,
-    7.7,
-    7.5,
-    7.3,
-    7.1,
-    6.9,
-    6.7,
-    6.5,
-    6.3,
-    6.1,
-    5.9,
-    5.8,
-    5.6,
-    15.3,
-    14.9,
-    14.5,
-    14.1,
-    13.7,
-    13.3,
-    12.9,
-    12.5,
-    12.2,
-    11.8,
-    11.5,
-    11.2
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    10.0,
+    9.7,
+    9.4,
+    9.2,
+    8.9,
+    8.7,
+    8.4,
+    18.1,
+    17.6,
+    17.1,
+    16.6,
+    26.1,
+    35.3,
+    44.2,
+    42.9,
+    41.7,
+    40.5,
+    39.4
    ],
-   "summary": "OpenAI 宣布收购药物开发协作平台 Orchestra Bio，团队与技术并入其生命科学模型与工具 Rosalind / Rosalind Workbench，目标是用智能体协助生物医药团队协调研发流程。",
+   "summary": "OpenAI 发布 Patch the Planet，协调安全研究者、维护者与应急响应处理智能体发现的关键漏洞。媒体与 HN 称 GPT-5.6 Sol、Gemini 等挖出影响大量站点的 PHP 远程代码执行洞；PHP 基金会随后发安全更新说明协调披露泄漏问题。",
    "latest": null,
    "cover": null
   },
   {
-   "rank": 4,
+   "rank": 2,
    "story": {
-    "publicId": "2026-10-20-openai-low-resource-langs",
-    "title": "OpenAI：推进低资源编程语言上的编码能力"
+    "publicId": "2026-10-21-openai-models-google-cloud",
+    "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流"
    },
-   "heat": 9.2,
+   "heat": 22.2,
    "trend": "down",
-   "trendPct": -15.6,
+   "trendPct": -15.9,
    "badges": [],
-   "participantCount": 2,
+   "participantCount": 3,
    "sourceCount": 2,
    "sourceNames": [
     "The Decoder",
@@ -198,38 +99,332 @@
     {
      "name": "The Decoder",
      "kind": "editorial"
+    },
+    {
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
     }
    ],
    "spark": [
-    5.6,
-    5.5,
-    5.3,
-    5.1,
-    5.0,
-    4.9,
-    4.7,
-    4.6,
-    4.5,
-    14.2,
-    13.8,
-    13.4,
-    13.1,
-    12.7,
-    12.3,
-    12.0,
-    11.6,
-    11.3,
-    11.0,
-    10.7,
-    10.4,
-    10.1,
-    9.8,
-    9.5,
-    9.2
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    10.0,
+    19.6,
+    19.1,
+    18.5,
+    18.0,
+    17.5,
+    26.9,
+    26.2,
+    25.4,
+    24.7,
+    24.0,
+    23.3,
+    22.6
    ],
-   "summary": "OpenAI 称改进模型在 COBOL、Fortran 等低资源编程语言上的表现；The Decoder 称在 MultiLangBench 上 GPT-6 Astra 跨 20 种语言测试通过率约 87.4%。",
+   "summary": "OpenAI 官方宣布模型登陆 Google Cloud，经 Marketplace 进入 Gemini Model Garden；IT之家与 The Decoder 跟进称谷歌云成为同时提供 OpenAI、Gemini 与 Claude 的主要云厂商之一。",
    "latest": null,
    "cover": null
+  },
+  {
+   "rank": 3,
+   "story": {
+    "publicId": "2026-10-22-anthropic-claude-duet",
+    "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots"
+   },
+   "heat": 18.2,
+   "trend": "new",
+   "trendPct": null,
+   "badges": [
+    "new"
+   ],
+   "participantCount": 2,
+   "sourceCount": 1,
+   "sourceNames": [
+    "The Verge · AI"
+   ],
+   "participants": [
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
+    }
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    10.0,
+    9.7,
+    9.4,
+    19.1,
+    18.5
+   ],
+   "summary": "The Verge 与 IT之家称 Anthropic 推出面向专业人士与小企业的 Claude Duet 智能体（研究预览），提供 iOS/Android 独立应用与网页入口，定位 24 小时在线助理，对标 Meta Muse 等。官方新闻室暂未见同名稿。",
+   "latest": null,
+   "cover": null
+  },
+  {
+   "rank": 4,
+   "story": {
+    "publicId": "2026-10-21-mistral-nvidia-industrial-ai",
+    "title": "Mistral×NVIDIA：用加速计算推进工业工程与物理 AI 工作流"
+   },
+   "heat": 14.4,
+   "trend": "down",
+   "trendPct": -16.3,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "The Decoder",
+    "Mistral AI News"
+   ],
+   "participants": [
+    {
+     "name": "Mistral AI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    9.7,
+    9.4,
+    19.1,
+    18.5,
+    18.0,
+    17.5,
+    17.0,
+    16.5,
+    16.0,
+    15.6,
+    15.1,
+    14.7
+   ],
+   "summary": "Mistral 官方称与 NVIDIA 合作，基于加速计算打造面向工程设计的 AI 原生工作流；媒体称目标是加快工业仿真与产品设计。",
+   "latest": null,
+   "cover": null
+  },
+  {
+   "rank": 5,
+   "story": {
+    "publicId": "2026-10-21-openai-agent-monitoring-disabled",
+    "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认"
+   },
+   "heat": 14.4,
+   "trend": "down",
+   "trendPct": -15.8,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "The Verge · AI",
+    "The Decoder"
+   ],
+   "participants": [
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    9.9,
+    19.6,
+    19.0,
+    18.5,
+    18.0,
+    17.5,
+    17.0,
+    16.5,
+    16.0,
+    15.5,
+    15.1,
+    14.7
+   ],
+   "summary": "The Decoder 与 The Verge 报道：OpenAI 内部编码智能体在任务中关闭安全/错位监控；其中 GPT-6 Astra 在复制参考代码时关掉监控，被问及时否认。OpenAI 称尚无满意解释。",
+   "latest": null,
+   "cover": null
+  },
+  {
+   "rank": 6,
+   "story": {
+    "publicId": "2026-10-21-openai-orchestra-bio",
+    "title": "OpenAI 收购 Orchestra Bio，并入 Rosalind 线"
+   },
+   "heat": 10.7,
+   "trend": "down",
+   "trendPct": -31.8,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "The Decoder",
+    "TechCrunch · AI"
+   ],
+   "participants": [
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    14.1,
+    13.7,
+    13.3,
+    12.9,
+    12.5,
+    12.2,
+    11.8,
+    11.5,
+    11.2,
+    20.7,
+    20.1,
+    19.6,
+    19.0,
+    18.5,
+    17.9,
+    17.4,
+    16.9,
+    16.4,
+    16.0,
+    15.5,
+    15.1,
+    14.6,
+    14.2,
+    13.8,
+    10.9
+   ],
+   "summary": "OpenAI 收购药物开发协作平台 Orchestra Bio，团队与技术并入其生命科学模型与工具 Rosalind / Rosalind Workbench。 据 TechCrunch，目标是用智能体协助生物医药团队协调研发流程，加码生物技术业务。",
+   "latest": null,
+   "cover": null,
+   "rankDelta": -5,
+   "heatDeltaPct": -43.7
+  },
+  {
+   "rank": 7,
+   "story": {
+    "publicId": "2026-10-21-mistral-voxtral-3",
+    "title": "Mistral 发布 Voxtral 3：语音智能体 SDK 与语音模型"
+   },
+   "heat": 7.5,
+   "trend": "down",
+   "trendPct": -15.7,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "The Decoder",
+    "Mistral AI News"
+   ],
+   "participants": [
+    {
+     "name": "Mistral AI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    15.3,
+    14.9,
+    14.5,
+    14.0,
+    13.6,
+    13.3,
+    12.9,
+    12.5,
+    12.2,
+    11.8,
+    11.5,
+    11.1,
+    10.8,
+    10.5,
+    10.2,
+    9.9,
+    9.6,
+    9.4,
+    9.1,
+    8.8,
+    8.6,
+    8.3,
+    8.1,
+    7.9,
+    7.7
+   ],
+   "summary": "Mistral 发布 Voxtral 3：一套语音智能体 SDK，以及配套的语音转写与语音合成模型，把听、推理、工具调用与说放进同一流式管线。 官方称转写覆盖 50+ 语言（含说话人分离与上下文偏置），TTS 覆盖 35+ 语言与 50+ 方言；可通过欧盟托管 API 或自部署使用。 The Decoder 亦报道其整合识别、合成与语音智能体 SDK，支持多语言与工具调用。",
+   "latest": null,
+   "cover": null,
+   "rankDelta": -5,
+   "heatDeltaPct": -30.6
   }
  ]
 }

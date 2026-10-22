@@ -1,23 +1,206 @@
 {
  "kind": "daily",
- "key": "2026-10-21",
- "issueNumber": 3,
- "title": "AI日报 · 2026-10-21",
- "generatedAt": "2026-10-21T00:36:07.000Z",
- "lead": null,
- "leadItemId": null,
- "overview": "今日重点 5 条：Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型、Hugging Face：TorchTPU 让 Transformers 与 Diffusers 原生跑在 TPU、OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线、Hugging Face 发布 AnyLanguageModel 1.0：苹果平台统一本地与托管模型 API、OpenAI：推进低资源编程语言上的编码能力。无固定漂移样本包，本日不含 samples。",
- "highlights": [],
- "sections": [],
- "flashes": [],
- "cover": null,
+ "key": "2026-10-22",
+ "issueNumber": 4,
+ "title": "AI日报 · 2026-10-22",
+ "generatedAt": "2026-10-22T00:38:06.000Z",
+ "lead": {
+  "title": "微软研究院：宣布解决数学界 31 年难题 KLS 猜想",
+  "leadParagraph": "微软研究院宣布解决 KLS 猜想（31 年）"
+ },
+ "leadItemId": "sha256:77ec6ad66af3dcc4",
+ "overview": "被问时否认、NVIDIA：RFD4-Proteina 用奖励引导推理时搜索设计蛋白。快讯 4 条。无固定漂移样本包，本日不含 samples。",
+ "highlights": [
+  {
+   "itemId": "sha256:77ec6ad66af3dcc4",
+   "title": "微软研究院：宣布解决数学界 31 年难题 KLS 猜想",
+   "summary": "微软研究院宣布解决 KLS 猜想（31 年）",
+   "sourceName": "Microsoft Research Blog",
+   "sourceUrl": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-21T16:00:00.000Z",
+   "available": true,
+   "otherSources": 0
+  },
+  {
+   "itemId": "sha256:95dedf578de78f3e",
+   "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
+   "summary": "OpenAI 前沿模型入驻谷歌云 Model Garden",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/openai-models-google-cloud",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-21T12:00:00.000Z",
+   "available": true,
+   "otherSources": 2
+  },
+  {
+   "itemId": "sha256:856c26ca4c2d04bc",
+   "title": "Mistral×NVIDIA：用加速计算推进工业工程与物理 AI 工作流",
+   "summary": "Mistral×NVIDIA 推进工业工程物理 AI 工作流",
+   "sourceName": "Mistral AI News",
+   "sourceUrl": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-21T12:00:20.000Z",
+   "available": true,
+   "otherSources": 1
+  },
+  {
+   "itemId": "sha256:d2895ceb6fcba3ff",
+   "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认",
+   "summary": "OpenAI：内部编码智能体关闭监控并隐瞒",
+   "sourceName": "The Decoder",
+   "sourceUrl": "https://the-decoder.com/openai-cant-yet-explain-why-its-coding-agents-switch-off-misalignment-monitoring/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-21T12:34:57.000Z",
+   "available": true,
+   "otherSources": 1
+  }
+ ],
+ "sections": [
+  {
+   "label": "论文",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:77ec6ad66af3dcc4",
+     "title": "微软研究院：宣布解决数学界 31 年难题 KLS 猜想",
+     "summary": "微软研究院宣布解决 KLS 猜想（31 年）",
+     "sourceName": "Microsoft Research Blog",
+     "sourceUrl": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-21T16:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:9dbc7ca917a7820d",
+     "title": "NVIDIA：RFD4-Proteina 用奖励引导推理时搜索设计蛋白",
+     "summary": "NVIDIA RFD4-Proteina：奖励引导推理时蛋白设计搜索",
+     "sourceName": "NVIDIA Technical Blog",
+     "sourceUrl": "https://developer.nvidia.com/blog/design-proteins-with-rfd4-proteina-using-reward-guided-inference-time-search/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-21T12:30:00.000Z",
+     "available": true,
+     "otherSources": 0
+    }
+   ]
+  },
+  {
+   "label": "产品",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:95dedf578de78f3e",
+     "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
+     "summary": "OpenAI 前沿模型入驻谷歌云 Model Garden",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/openai-models-google-cloud",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-21T12:00:00.000Z",
+     "available": true,
+     "otherSources": 2
+    },
+    {
+     "itemId": "sha256:856c26ca4c2d04bc",
+     "title": "Mistral×NVIDIA：用加速计算推进工业工程与物理 AI 工作流",
+     "summary": "Mistral×NVIDIA 推进工业工程物理 AI 工作流",
+     "sourceName": "Mistral AI News",
+     "sourceUrl": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-21T12:00:20.000Z",
+     "available": true,
+     "otherSources": 1
+    }
+   ]
+  },
+  {
+   "label": "行业",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:d2895ceb6fcba3ff",
+     "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认",
+     "summary": "OpenAI：内部编码智能体关闭监控并隐瞒",
+     "sourceName": "The Decoder",
+     "sourceUrl": "https://the-decoder.com/openai-cant-yet-explain-why-its-coding-agents-switch-off-misalignment-monitoring/",
+     "sourceIconUrl": null,
+     "firstParty": false,
+     "publishedAt": "2026-10-21T12:34:57.000Z",
+     "available": true,
+     "otherSources": 1
+    }
+   ]
+  }
+ ],
+ "flashes": [
+  {
+   "itemId": "sha256:6a161c5da62b293f",
+   "title": "千诀世界模型做进机器人",
+   "summary": "清华系世界模型重物理规律与跨本体；兴趣词。",
+   "sourceName": "量子位",
+   "sourceUrl": "https://www.qbitai.com/2026/10/504653.html",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-21T07:15:05.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:0abd62eb8d18234e",
+   "title": "Inception Mercury 3 扩散语言模型",
+   "summary": "扩散 LM 自称更快；无独立复测。兴趣·扩散。",
+   "sourceName": "The Decoder",
+   "sourceUrl": "https://the-decoder.com/inceptions-mercury-3-diffusion-model-claims-to-beat-gpt-6-luna-and-claude-haiku-5-5-at-a-fraction-of-the-wait/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-21T14:45:45.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:20d01956fcee92e7",
+   "title": "沃尔玛将开放 AI 购物智能体",
+   "summary": null,
+   "sourceName": "The Verge",
+   "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1015715/walmart-ai-shopping-agents",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-21T19:30:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:e9fc027fe2ea965d",
+   "title": "Recursive 发布 Flint 编码模型",
+   "summary": null,
+   "sourceName": "TechCrunch",
+   "sourceUrl": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-21T20:27:41.000Z",
+   "available": true
+  }
+ ],
+ "cover": {
+  "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/10/KLS-illustration-scaled.png",
+  "width": null,
+  "height": null,
+  "alt": "平面切割与曲面切割同一凸几何体的对照示意图",
+  "valueClass": "paper_figure",
+  "caption": null
+ },
  "metrics": {
-  "totalEvents": 0,
-  "sourcesCount": 0,
-  "firstPartyEvents": 0,
+  "totalEvents": 5,
+  "sourcesCount": 7,
+  "firstPartyEvents": 4,
   "modelsReleased": 0
  },
  "readingMinutes": 1,
- "prev": "2026-10-20",
+ "prev": "2026-10-21",
  "next": null
 }

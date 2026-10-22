@@ -1,326 +1,362 @@
 {
  "site": "前沿趋势",
- "mode": "preview",
- "data_as_of": "2026-10-21T16:07:01+08:00",
- "data_as_of_label": "数据截至 2026-10-21 16:07（北京时间）",
- "generated_at": "2026-10-21T16:07:01+08:00",
- "today": "2026-10-21",
- "hot_rule_version": "heat-v1-48h-halflife24h (v0 port)",
+ "contract_version": "1.1",
+ "mode": "production",
+ "data_as_of": "2026-10-22T08:26:57+08:00",
+ "data_as_of_label": "数据截至 2026-10-22 08:26（北京时间）",
+ "generated_at": "2026-10-22T08:41:00+08:00",
+ "hot_rule_version": "heat-v1-48h-halflife24h (前沿情报 heat48h.py 1.1)",
+ "hot_computed_at": "2026-10-22T08:41:00+08:00",
  "window_hours": 48,
- "half_life_hours": 24,
- "spark_hours": 24,
  "spark_points": 25,
- "hot_candidates": 4,
- "passed_count": 3,
- "fill_count": 7,
- "selected_items": 10,
+ "page_size": 20,
+ "counts": {
+  "cards": 20,
+  "pages": 1,
+  "events": 22,
+  "hot_entries": 7,
+  "search_docs": 52,
+  "feed_items": 20,
+  "passed_events": 22,
+  "below_threshold_events": 0,
+  "redirects": 0,
+  "hot_snapshots": 18,
+  "covers": 3
+ },
+ "last_round": {
+  "batch_id": "2026-10-22T0826",
+  "status": "ok",
+  "finished_at": "2026-10-22T08:38:06+08:00"
+ },
  "batches": [
   {
    "batch_id": "2026-10-19T1124",
-   "status": "ok",
-   "imported_at": "2026-10-19T11:28:23+08:00",
-   "rejected": 0
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-19T1221",
-   "status": "ok",
-   "imported_at": "2026-10-19T13:23:23+08:00",
-   "rejected": 2
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-19T1323",
-   "status": "ok",
-   "imported_at": "2026-10-19T16:27:16+08:00",
-   "rejected": 0
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-19T1418",
-   "status": "ok",
-   "imported_at": "2026-10-19T16:27:16+08:00",
-   "rejected": 0
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-19T1524",
-   "status": "ok",
-   "imported_at": "2026-10-19T16:27:16+08:00",
-   "rejected": 0
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-19T1627",
-   "status": "ok",
-   "imported_at": "2026-10-19T20:25:37+08:00",
-   "rejected": 1
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-19T1726",
-   "status": "ok",
-   "imported_at": "2026-10-19T20:25:37+08:00",
-   "rejected": 0
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-19T1825",
-   "status": "ok",
-   "imported_at": "2026-10-19T20:25:37+08:00",
-   "rejected": 0
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-19T1923",
-   "status": "ok",
-   "imported_at": "2026-10-19T20:25:37+08:00",
-   "rejected": 1
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-19T2025",
-   "status": "ok",
-   "imported_at": "2026-10-20T08:45:38+08:00",
-   "rejected": 3
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-19T2136",
-   "status": "ok",
-   "imported_at": "2026-10-20T08:45:38+08:00",
-   "rejected": 1
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-19T2223",
-   "status": "ok",
-   "imported_at": "2026-10-20T08:45:38+08:00",
-   "rejected": 0
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-19T2347",
-   "status": "ok",
-   "imported_at": "2026-10-20T08:45:38+08:00",
-   "rejected": 2
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-20T0051",
-   "status": "ok",
-   "imported_at": "2026-10-20T08:45:38+08:00",
-   "rejected": 1
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-20T0121",
-   "status": "ok",
-   "imported_at": "2026-10-20T08:45:38+08:00",
-   "rejected": 1
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-20T0224",
-   "status": "ok",
-   "imported_at": "2026-10-20T08:45:38+08:00",
-   "rejected": 4
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-20T0321",
-   "status": "ok",
-   "imported_at": "2026-10-20T08:45:38+08:00",
-   "rejected": 3
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-20T0418",
-   "status": "ok",
-   "imported_at": "2026-10-20T08:45:38+08:00",
-   "rejected": 1
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-20T0522",
-   "status": "ok",
-   "imported_at": "2026-10-20T08:45:38+08:00",
-   "rejected": 2
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-20T0621",
-   "status": "ok",
-   "imported_at": "2026-10-20T15:29:06+08:00",
-   "rejected": 4
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-20T1055",
-   "status": "ok",
-   "imported_at": "2026-10-20T10:58:45+08:00",
-   "rejected": 3
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-20T1122",
-   "status": "ok",
-   "imported_at": "2026-10-20T13:20:21+08:00",
-   "rejected": 0
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-20T1218",
-   "status": "ok",
-   "imported_at": "2026-10-20T13:20:21+08:00",
-   "rejected": 1
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-20T1320",
-   "status": "ok",
-   "imported_at": "2026-10-20T16:23:28+08:00",
-   "rejected": 0
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-20T1424",
-   "status": "ok",
-   "imported_at": "2026-10-20T16:23:28+08:00",
-   "rejected": 1
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-20T1528",
-   "status": "ok",
-   "imported_at": "2026-10-20T16:23:28+08:00",
-   "rejected": 1
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-20T1623",
-   "status": "ok",
-   "imported_at": "2026-10-20T20:25:20+08:00",
-   "rejected": 1
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-20T1726",
-   "status": "ok",
-   "imported_at": "2026-10-20T20:25:20+08:00",
-   "rejected": 0
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-20T1822",
-   "status": "ok",
-   "imported_at": "2026-10-20T20:25:20+08:00",
-   "rejected": 0
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-20T1923",
-   "status": "ok",
-   "imported_at": "2026-10-20T20:25:20+08:00",
-   "rejected": 3
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-20T2025",
-   "status": "ok",
-   "imported_at": "2026-10-21T09:28:37+08:00",
-   "rejected": 0
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-20T2123",
-   "status": "ok",
-   "imported_at": "2026-10-21T09:28:37+08:00",
-   "rejected": 3
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-20T2221",
-   "status": "ok",
-   "imported_at": "2026-10-21T09:28:37+08:00",
-   "rejected": 1
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-20T2323",
-   "status": "ok",
-   "imported_at": "2026-10-21T09:28:37+08:00",
-   "rejected": 1
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-21T0026",
-   "status": "ok",
-   "imported_at": "2026-10-21T09:28:37+08:00",
-   "rejected": 5
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-21T0118",
-   "status": "ok",
-   "imported_at": "2026-10-21T09:28:37+08:00",
-   "rejected": 2
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-21T0221",
-   "status": "ok",
-   "imported_at": "2026-10-21T09:28:37+08:00",
-   "rejected": 4
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-21T0321",
-   "status": "ok",
-   "imported_at": "2026-10-21T09:28:37+08:00",
-   "rejected": 1
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-21T0427",
-   "status": "ok",
-   "imported_at": "2026-10-21T09:28:37+08:00",
-   "rejected": 0
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-21T0520",
-   "status": "ok",
-   "imported_at": "2026-10-21T09:28:37+08:00",
-   "rejected": 0
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-21T0624",
-   "status": "ok",
-   "imported_at": "2026-10-21T09:28:37+08:00",
-   "rejected": 0
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-21T0728",
-   "status": "ok",
-   "imported_at": "2026-10-21T09:28:37+08:00",
-   "rejected": 1
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-21T0826",
-   "status": "ok",
-   "imported_at": "2026-10-21T09:28:37+08:00",
-   "rejected": 5
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-21T0928",
-   "status": "ok",
-   "imported_at": "2026-10-21T13:20:11+08:00",
-   "rejected": 4
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-21T1019",
-   "status": "ok",
-   "imported_at": "2026-10-21T13:20:11+08:00",
-   "rejected": 0
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-21T1118",
-   "status": "ok",
-   "imported_at": "2026-10-21T13:20:11+08:00",
-   "rejected": 2
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-21T1227",
-   "status": "ok",
-   "imported_at": "2026-10-21T13:20:11+08:00",
-   "rejected": 3
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-21T1320",
-   "status": "ok",
-   "imported_at": "2026-10-21T15:26:57+08:00",
-   "rejected": 1
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-21T1419",
-   "status": "ok",
-   "imported_at": "2026-10-21T15:26:57+08:00",
-   "rejected": 0
+   "status": "ok"
   },
   {
    "batch_id": "2026-10-21T1526",
-   "status": "ok",
-   "imported_at": "2026-10-21T16:07:01+08:00",
-   "rejected": 0
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T1606",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T1626",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T1718",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T1817",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T1925",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T2028",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T2127",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T2218",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-21T2319",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-22T0027",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-22T0125",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-22T0218",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-22T0320",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-22T0417",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-22T0519",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-22T0618",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-22T0725",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-22T0826",
+   "status": "ok"
   }
  ],
- "daily_keys": [
-  "2026-10-19",
-  "2026-10-20",
-  "2026-10-21"
+ "files": [
+  "api/index.json",
+  "events/2026-10-19-deepseek-v41-flash-1017.json",
+  "events/2026-10-19-nvidia-open-models-agents-pcs.json",
+  "events/2026-10-20-hf-torchneuron-trainium.json",
+  "events/2026-10-20-kling-ai-4-0.json",
+  "events/2026-10-21-chatgpt-ads-stack-expansion.json",
+  "events/2026-10-21-ibm-granite-speech-5.json",
+  "events/2026-10-21-mistral-nvidia-industrial-ai.json",
+  "events/2026-10-21-mistral-voxtral-3.json",
+  "events/2026-10-21-nvidia-kumo-forecast.json",
+  "events/2026-10-21-nvidia-rfd4-proteina.json",
+  "events/2026-10-21-openai-agent-monitoring-disabled.json",
+  "events/2026-10-21-openai-ai-agents-bio-leads.json",
+  "events/2026-10-21-openai-models-google-cloud.json",
+  "events/2026-10-21-openai-orchestra-bio.json",
+  "events/2026-10-21-openai-terminal-x-eval.json",
+  "events/2026-10-21-php2shell-wiz-rce.json",
+  "events/2026-10-22-anthropic-claude-duet.json",
+  "events/2026-10-22-dharma-vocabx-slm.json",
+  "events/2026-10-22-google-ai-maternal-ultrasound.json",
+  "events/2026-10-22-msr-kls-conjecture.json",
+  "events/2026-10-22-nvidia-microduck-isaac-lab.json",
+  "events/2026-10-22-openai-gov-cyber-defenders.json",
+  "events/index.json",
+  "feed/selected.json",
+  "hot-snapshots/2026-10-19T12.json",
+  "hot-snapshots/2026-10-19T13.json",
+  "hot-snapshots/2026-10-19T15.json",
+  "hot-snapshots/2026-10-19T16.json",
+  "hot-snapshots/2026-10-19T19.json",
+  "hot-snapshots/2026-10-19T20.json",
+  "hot-snapshots/2026-10-20T08.json",
+  "hot-snapshots/2026-10-20T10.json",
+  "hot-snapshots/2026-10-20T13.json",
+  "hot-snapshots/2026-10-20T15.json",
+  "hot-snapshots/2026-10-20T16.json",
+  "hot-snapshots/2026-10-20T20.json",
+  "hot-snapshots/2026-10-21T09.json",
+  "hot-snapshots/2026-10-21T13.json",
+  "hot-snapshots/2026-10-21T15.json",
+  "hot-snapshots/2026-10-21T16.json",
+  "hot-snapshots/2026-10-21T19.json",
+  "hot-snapshots/2026-10-22T08.json",
+  "hot-strip.json",
+  "hot.json",
+  "meta.json",
+  "redirects.json",
+  "search/source.json",
+  "sources.json",
+  "timeline/index.json",
+  "timeline/page-1.json"
  ],
- "cover_rule": "v5 value gate: value_class∈{model_sample,paper_figure,product_screenshot,official_diagram(+alias official_explainer)} + alt; else null",
- "cover_note": "cover.url 为原图地址；构建期下载到同源并缩放 720/1200/1600，失败则留空"
+ "next_round": "2026-10-22T12:25:00+08:00",
+ "today": "2026-10-22",
+ "passed_count": 22,
+ "fill_count": 0
 }

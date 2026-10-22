@@ -15,7 +15,7 @@
 | `daily-index.json` | `dailyIndex` | `ReportNavigationEntry[]`，新→旧 |
 | `fixture.json` | 全部 | `{timeline, hotStrip, hot, dailyIndex, daily, today}` 一次读入 |
 | `meta.json` | （新增） | 见下 |
-| `daily/YYYY-MM-DD.json` | 按日归档 | 与 `daily.json` 同形。本批有 `2026-10-19`、`2026-10-20`、`2026-10-21`；根目录 `daily.json` 等于今天（`2026-10-21`）。加载器仍读根目录 `daily.json`。 |
+| `daily/YYYY-MM-DD.json` | 按日归档 | 与 `daily.json` 同形。本批有 `2026-10-19`–`2026-10-22`；根目录 `daily.json` 等于今天（`2026-10-22`）。加载器仍读根目录 `daily.json`。 |
 
 分片文件优先于 `fixture.json` 同名切片。只有 `fixture.json` 也算引擎模式。
 
@@ -64,7 +64,7 @@ interface EngineMeta {
 - 标题里的 `「[低于门槛补位]」`、日报摘要里的 `「（低于门槛）」` **原样保留**，不得剥离或隐藏。
 - 新导出若只给 `belowThreshold: true`、标题不再带前缀：加载器在渲染前补上 `[低于门槛补位]` / `（低于门槛）`。
 - 热度、分数原样进入壳层，不改写成 0、不因补位隐藏。
-- 本批：过线 3 条 / 补位 7 条；热点 4 条。21 日日报为安静期（`lead: null`，`highlights: []`）合法。
+- 本批：过线 22 条 / 补位 0 条；热点 7 条。22 日日报头条：微软研究院 KLS 猜想。
 
 ## 图片（MIT L2）
 
