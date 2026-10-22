@@ -9,20 +9,8 @@
   },
   {
    "rank": 2,
-   "publicId": "2026-10-19-minimax-m31-flash",
-   "heat": 12.3,
-   "participantCount": 3
-  },
-  {
-   "rank": 3,
    "publicId": "2026-10-21-openai-orchestra-bio",
    "heat": 11.3,
-   "participantCount": 2
-  },
-  {
-   "rank": 4,
-   "publicId": "2026-10-20-openai-low-resource-langs",
-   "heat": 9.4,
    "participantCount": 2
   }
  ]

@@ -1,6 +1,6 @@
 {
  "publicId": "2026-10-20-hf-torchneuron-trainium",
- "title": "HF TorchNeuron：HF 模型更易跑在 AWS Trainium",
+ "title": "HF TorchNeuron：Trainium 上跑 HF 模型，并开系统级性能分析",
  "status": "watching",
  "reportCount": 1,
  "sourceCount": 1,
@@ -8,21 +8,21 @@
  "latestAt": "2026-10-19T00:00:00.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": "Hugging Face 在博客介绍 TorchNeuron，称在 AWS Trainium 上运行 Hugging Face 模型比以往更容易。 官方称该工具降低了把 HF 生态模型接到 Trainium 上的门槛；TechCrunch 另称亚马逊借此加码与英伟达的竞争。",
+ "summary": "Hugging Face 介绍 TorchNeuron，降低在 AWS Trainium 上运行 HF 模型的门槛。 后续博客 Part 1 给出系统级 profiling 方法，帮助定位 Trainium 上的性能瓶颈。",
  "excerpt": null,
  "latest": null,
  "latestReport": null,
  "whyHot": {
   "participants48h": 1,
   "newParticipants6h": 0,
-  "recentReports24h": 0,
+  "recentReports24h": 2,
   "observationComplete": true,
   "rank": null
  },
  "developments": [
   {
    "factId": "fact-2026-10-20-hf-torchneuron-trainium",
-   "title": "HF TorchNeuron：HF 模型更易跑在 AWS Trainium",
+   "title": "HF TorchNeuron：Trainium 上跑 HF 模型，并开系统级性能分析",
    "firstReportAt": "2026-10-19T00:00:00.000Z",
    "reportCount": 1,
    "representative": {
@@ -68,71 +68,6 @@
   }
  ],
  "heat": [
-  {
-   "hour": "2026-10-19T11:00:00.000Z",
-   "heat": 7.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-19T12:00:00.000Z",
-   "heat": 7.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-19T13:00:00.000Z",
-   "heat": 6.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-19T14:00:00.000Z",
-   "heat": 6.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-19T15:00:00.000Z",
-   "heat": 6.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-19T16:00:00.000Z",
-   "heat": 6.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-19T17:00:00.000Z",
-   "heat": 6.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-19T18:00:00.000Z",
-   "heat": 5.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-19T19:00:00.000Z",
-   "heat": 5.8,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-19T20:00:00.000Z",
-   "heat": 5.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-19T21:00:00.000Z",
-   "heat": 15.2,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-19T22:00:00.000Z",
-   "heat": 14.8,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-19T23:00:00.000Z",
-   "heat": 14.4,
-   "participants": 2
-  },
   {
    "hour": "2026-10-20T00:00:00.000Z",
    "heat": 13.9,
@@ -311,6 +246,71 @@
   {
    "hour": "2026-10-21T11:00:00.000Z",
    "heat": 3.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T12:00:00.000Z",
+   "heat": 3.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T13:00:00.000Z",
+   "heat": 3.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T14:00:00.000Z",
+   "heat": 3.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T15:00:00.000Z",
+   "heat": 2.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T16:00:00.000Z",
+   "heat": 2.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T17:00:00.000Z",
+   "heat": 12.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-21T18:00:00.000Z",
+   "heat": 12.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-21T19:00:00.000Z",
+   "heat": 11.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-21T20:00:00.000Z",
+   "heat": 11.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-21T21:00:00.000Z",
+   "heat": 8.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T22:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T23:00:00.000Z",
+   "heat": 8.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T00:00:00.000Z",
+   "heat": 8.0,
    "participants": 1
   }
  ],

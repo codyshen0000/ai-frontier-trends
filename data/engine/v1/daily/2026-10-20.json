@@ -48,16 +48,16 @@
    "otherSources": 0
   },
   {
-   "itemId": null,
+   "itemId": "sha256:5c52b7d34becd1cc",
    "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
    "summary": "Trainium 上跑 HF 模型更省事",
-   "sourceName": "",
+   "sourceName": "Hugging Face Blog",
    "sourceUrl": "https://huggingface.co/blog/hf-torchneuron",
    "sourceIconUrl": null,
    "firstParty": true,
    "publishedAt": "2026-10-19T00:00:00.000Z",
    "available": true,
-   "otherSources": 0
+   "otherSources": 1
   }
  ],
  "sections": [
@@ -106,18 +106,24 @@
      "publishedAt": "2026-10-19T18:22:30.000Z",
      "available": true,
      "otherSources": 0
-    },
+    }
+   ]
+  },
+  {
+   "label": "产品",
+   "summary": null,
+   "items": [
     {
-     "itemId": null,
+     "itemId": "sha256:5c52b7d34becd1cc",
      "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
      "summary": "Trainium 上跑 HF 模型更省事",
-     "sourceName": "",
+     "sourceName": "Hugging Face Blog",
      "sourceUrl": "https://huggingface.co/blog/hf-torchneuron",
      "sourceIconUrl": null,
      "firstParty": true,
      "publishedAt": "2026-10-19T00:00:00.000Z",
      "available": true,
-     "otherSources": 0
+     "otherSources": 1
     }
    ]
   }
@@ -126,7 +132,7 @@
  "cover": null,
  "metrics": {
   "totalEvents": 4,
-  "sourcesCount": 2,
+  "sourcesCount": 3,
   "firstPartyEvents": 1,
   "modelsReleased": 2
  },

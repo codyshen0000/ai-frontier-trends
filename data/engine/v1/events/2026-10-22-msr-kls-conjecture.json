@@ -1,0 +1,128 @@
+{
+ "publicId": "2026-10-22-msr-kls-conjecture",
+ "title": "微软研究院：宣布解决数学界 31 年难题 KLS 猜想",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-21T16:00:00.000Z",
+ "latestAt": "2026-10-21T16:00:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "微软研究院博客称解决 Kannan–Lovász–Simonovits（KLS）猜想，移除理解高维随机算法效率的一项理论障碍；该猜想提出于 1995 年前后。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-22-msr-kls-conjecture",
+   "title": "微软研究院：宣布解决数学界 31 年难题 KLS 猜想",
+   "firstReportAt": "2026-10-21T16:00:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:77ec6ad66af3dcc4",
+    "title": "微软研究院：宣布解决数学界 31 年难题 KLS 猜想",
+    "summary": "MSR 称解决 KLS 猜想，移除高维随机算法理论障碍。",
+    "source": {
+     "name": "Microsoft Research Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-21T16:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:77ec6ad66af3dcc4",
+   "title": "微软研究院：宣布解决数学界 31 年难题 KLS 猜想",
+   "summary": "MSR 称解决 KLS 猜想，移除高维随机算法理论障碍。",
+   "source": {
+    "name": "Microsoft Research Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-21T16:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:77ec6ad66af3dcc4",
+   "title": "微软研究院：宣布解决数学界 31 年难题 KLS 猜想",
+   "summary": "MSR 称解决 KLS 猜想，移除高维随机算法理论障碍。",
+   "source": {
+    "name": "Microsoft Research Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-21T16:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-21T16:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T17:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T18:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T19:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T20:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T21:00:00.000Z",
+   "heat": 8.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T22:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T23:00:00.000Z",
+   "heat": 8.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T00:00:00.000Z",
+   "heat": 7.9,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "微软研究院宣布解决 KLS 猜想（31 年）",
+ "cover": {
+  "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/10/KLS-illustration-scaled.png",
+  "width": null,
+  "height": null,
+  "alt": "平面切割与曲面切割同一凸几何体的对照示意图",
+  "valueClass": "paper_figure"
+ },
+ "primaryUrl": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/"
+}

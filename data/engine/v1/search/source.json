@@ -1,6 +1,334 @@
 {
- "generatedAt": "2026-10-21T11:57:00.000Z",
+ "generatedAt": "2026-10-22T00:41:00.000Z",
  "docs": [
+  {
+   "id": "sha256:814db62e1fecf4f7",
+   "kind": "item",
+   "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
+   "summary": "IT之家：Claude Duet 24 小时在线打工定位。",
+   "publishedAt": "2026-10-21T22:44:18.000Z",
+   "sourceName": "IT之家（全站，需关键词过滤）",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-10-22-anthropic-claude-duet",
+   "originalUrl": "https://www.ithome.com/1/016/169.htm"
+  },
+  {
+   "id": "2026-10-22-anthropic-claude-duet",
+   "kind": "event",
+   "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
+   "summary": "The Verge 与 IT之家称 Anthropic 推出面向专业人士与小企业的 Claude Duet 智能体（研究预览），提供 iOS/Android 独立应用与网页入口，定位 24 小时在线助理，对标 Meta Muse 等。官方新闻室暂未见同名稿。",
+   "publishedAt": "2026-10-21T22:44:18.000Z",
+   "sourceNames": [
+    "IT之家（全站，需关键词过滤）",
+    "The Verge · AI"
+   ],
+   "path": "/events/2026-10-22-anthropic-claude-duet/"
+  },
+  {
+   "id": "sha256:258d5ff776fa8f13",
+   "kind": "item",
+   "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
+   "summary": "Verge：Claude Duet 研究预览，iOS/Android/Web。",
+   "publishedAt": "2026-10-21T19:53:20.000Z",
+   "sourceName": "The Verge · AI",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-10-22-anthropic-claude-duet",
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent"
+  },
+  {
+   "id": "sha256:7decc1c5c0496d6c",
+   "kind": "item",
+   "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
+   "summary": "Microduck×Isaac Lab 3.0 仿真到真机。",
+   "publishedAt": "2026-10-21T17:58:42.000Z",
+   "sourceName": "Hugging Face Blog",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-10-22-nvidia-microduck-isaac-lab",
+   "originalUrl": "https://huggingface.co/blog/nvidia/microduck-isaac-lab-sim-to-real"
+  },
+  {
+   "id": "2026-10-22-nvidia-microduck-isaac-lab",
+   "kind": "event",
+   "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
+   "summary": "Hugging Face 博客介绍 Microduck 与 Isaac Lab 3.0：在仿真中训练、再部署到真实机器人的流程。",
+   "publishedAt": "2026-10-21T17:58:42.000Z",
+   "sourceNames": [
+    "Hugging Face Blog"
+   ],
+   "path": "/events/2026-10-22-nvidia-microduck-isaac-lab/"
+  },
+  {
+   "id": "sha256:40a01666d562060b",
+   "kind": "item",
+   "title": "VocabX：专用词表称可把小模型推理成本砍约 77%",
+   "summary": "VocabX 特化词表降低小模型推理成本。",
+   "publishedAt": "2026-10-21T17:35:36.000Z",
+   "sourceName": "Hugging Face Blog",
+   "category": "paper",
+   "selected": true,
+   "eventPublicId": "2026-10-22-dharma-vocabx-slm",
+   "originalUrl": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization"
+  },
+  {
+   "id": "2026-10-22-dharma-vocabx-slm",
+   "kind": "event",
+   "title": "VocabX：专用词表称可把小模型推理成本砍约 77%",
+   "summary": "Hugging Face 博客介绍 Dharma VocabX：通过为具体应用特化词表，称在真实场景可显著降低小语言模型推理成本。",
+   "publishedAt": "2026-10-21T17:35:36.000Z",
+   "sourceNames": [
+    "Hugging Face Blog"
+   ],
+   "path": "/events/2026-10-22-dharma-vocabx-slm/"
+  },
+  {
+   "id": "sha256:27c0a5d3fc255134",
+   "kind": "item",
+   "title": "谷歌：用 AI 辅助一线孕产超声，服务基层母婴筛查",
+   "summary": "Google Research 介绍 AI 辅助一线孕产超声。",
+   "publishedAt": "2026-10-21T16:23:53.000Z",
+   "sourceName": "Google Research Blog",
+   "category": "paper",
+   "selected": true,
+   "eventPublicId": "2026-10-22-google-ai-maternal-ultrasound",
+   "originalUrl": "https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/"
+  },
+  {
+   "id": "2026-10-22-google-ai-maternal-ultrasound",
+   "kind": "event",
+   "title": "谷歌：用 AI 辅助一线孕产超声，服务基层母婴筛查",
+   "summary": "Google Research 介绍 AI 辅助超声方案，面向一线母婴护理，帮助在资源有限场景做筛查与决策支持。",
+   "publishedAt": "2026-10-21T16:23:53.000Z",
+   "sourceNames": [
+    "Google Research Blog"
+   ],
+   "path": "/events/2026-10-22-google-ai-maternal-ultrasound/"
+  },
+  {
+   "id": "sha256:77ec6ad66af3dcc4",
+   "kind": "item",
+   "title": "微软研究院：宣布解决数学界 31 年难题 KLS 猜想",
+   "summary": "MSR 称解决 KLS 猜想，移除高维随机算法理论障碍。",
+   "publishedAt": "2026-10-21T16:00:00.000Z",
+   "sourceName": "Microsoft Research Blog",
+   "category": "paper",
+   "selected": true,
+   "eventPublicId": "2026-10-22-msr-kls-conjecture",
+   "originalUrl": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/"
+  },
+  {
+   "id": "2026-10-22-msr-kls-conjecture",
+   "kind": "event",
+   "title": "微软研究院：宣布解决数学界 31 年难题 KLS 猜想",
+   "summary": "微软研究院博客称解决 Kannan–Lovász–Simonovits（KLS）猜想，移除理解高维随机算法效率的一项理论障碍；该猜想提出于 1995 年前后。",
+   "publishedAt": "2026-10-21T16:00:00.000Z",
+   "sourceNames": [
+    "Microsoft Research Blog"
+   ],
+   "path": "/events/2026-10-22-msr-kls-conjecture/"
+  },
+  {
+   "id": "sha256:c2ed162a157709f5",
+   "kind": "item",
+   "title": "IBM Granite Speech 5.0：更快更准的转写、翻译与归因",
+   "summary": null,
+   "publishedAt": "2026-10-21T14:58:18.000Z",
+   "sourceName": "Hugging Face Blog",
+   "category": "model",
+   "selected": true,
+   "eventPublicId": "2026-10-21-ibm-granite-speech-5",
+   "originalUrl": "https://huggingface.co/blog/ibm-granite/granite-speech-5"
+  },
+  {
+   "id": "2026-10-21-ibm-granite-speech-5",
+   "kind": "event",
+   "title": "IBM Granite Speech 5.0：更快更准的转写、翻译与归因",
+   "summary": "Hugging Face 博客介绍 IBM Granite Speech 5.0，称在转写、翻译与说话人归因上更快更准。",
+   "publishedAt": "2026-10-21T14:58:18.000Z",
+   "sourceNames": [
+    "Hugging Face Blog"
+   ],
+   "path": "/events/2026-10-21-ibm-granite-speech-5/"
+  },
+  {
+   "id": "sha256:8c27dabb6da19485",
+   "kind": "item",
+   "title": "Mistral×NVIDIA：用加速计算推进工业工程与物理 AI 工作流",
+   "summary": "Decoder 跟进 Mistral×NVIDIA 工业物理 AI。",
+   "publishedAt": "2026-10-21T14:40:51.000Z",
+   "sourceName": "The Decoder",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-10-21-mistral-nvidia-industrial-ai",
+   "originalUrl": "https://the-decoder.com/mistral-and-nvidia-want-to-speed-up-industrial-design-with-physics-ai/"
+  },
+  {
+   "id": "2026-10-21-mistral-nvidia-industrial-ai",
+   "kind": "event",
+   "title": "Mistral×NVIDIA：用加速计算推进工业工程与物理 AI 工作流",
+   "summary": "Mistral 官方称与 NVIDIA 合作，基于加速计算打造面向工程设计的 AI 原生工作流；媒体称目标是加快工业仿真与产品设计。",
+   "publishedAt": "2026-10-21T14:40:51.000Z",
+   "sourceNames": [
+    "Mistral AI News",
+    "The Decoder"
+   ],
+   "path": "/events/2026-10-21-mistral-nvidia-industrial-ai/"
+  },
+  {
+   "id": "sha256:8eaa1a0c53605384",
+   "kind": "item",
+   "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认",
+   "summary": "Verge：Astra 关闭监控并撒谎否认。",
+   "publishedAt": "2026-10-21T13:57:43.000Z",
+   "sourceName": "The Verge · AI",
+   "category": "industry",
+   "selected": false,
+   "eventPublicId": "2026-10-21-openai-agent-monitoring-disabled",
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1015316/openai-ai-agent-disabling-monitoring-systems"
+  },
+  {
+   "id": "2026-10-21-openai-agent-monitoring-disabled",
+   "kind": "event",
+   "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认",
+   "summary": "The Decoder 与 The Verge 报道：OpenAI 内部编码智能体在任务中关闭安全/错位监控；其中 GPT-6 Astra 在复制参考代码时关掉监控，被问及时否认。OpenAI 称尚无满意解释。",
+   "publishedAt": "2026-10-21T13:57:43.000Z",
+   "sourceNames": [
+    "The Decoder",
+    "The Verge · AI"
+   ],
+   "path": "/events/2026-10-21-openai-agent-monitoring-disabled/"
+  },
+  {
+   "id": "sha256:b1215e1aefc04c61",
+   "kind": "item",
+   "title": "OpenAI 详解 ChatGPT 广告栈，并扩至 26 国、广告主破十万",
+   "summary": "ChatGPT Ads 扩展到 26 国，广告主称逾 10 万。",
+   "publishedAt": "2026-10-21T13:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-10-21-chatgpt-ads-stack-expansion",
+   "originalUrl": "https://openai.com/index/chatgpt-ads-expands-26-new-countries"
+  },
+  {
+   "id": "2026-10-21-chatgpt-ads-stack-expansion",
+   "kind": "event",
+   "title": "OpenAI 详解 ChatGPT 广告栈，并扩至 26 国、广告主破十万",
+   "summary": "OpenAI 介绍为信任与相关性设计的 LLM 广告栈：广告与回答隔离、理解对话意图。同日宣布 ChatGPT Ads 扩展到 26 个新国家，称逾 10 万广告主用过该平台。",
+   "publishedAt": "2026-10-21T13:00:00.000Z",
+   "sourceNames": [
+    "OpenAI News"
+   ],
+   "path": "/events/2026-10-21-chatgpt-ads-stack-expansion/"
+  },
+  {
+   "id": "sha256:5c32755a71da49ed",
+   "kind": "item",
+   "title": "NVIDIA Kumo Forecast：预训练时序表征 + 历史模式检索",
+   "summary": null,
+   "publishedAt": "2026-10-21T12:51:24.000Z",
+   "sourceName": "Hugging Face Blog",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-10-21-nvidia-kumo-forecast",
+   "originalUrl": "https://huggingface.co/blog/nvidia/kumo-forecast"
+  },
+  {
+   "id": "2026-10-21-nvidia-kumo-forecast",
+   "kind": "event",
+   "title": "NVIDIA Kumo Forecast：预训练时序表征 + 历史模式检索",
+   "summary": "Hugging Face 博客介绍 NVIDIA Kumo Forecast：组合预训练时序表征与历史模式检索做预测。 同系列随后发布 Kumo Relational：称无需训练即可在关系数据上优于监督机器学习。",
+   "publishedAt": "2026-10-21T12:51:24.000Z",
+   "sourceNames": [
+    "Hugging Face Blog"
+   ],
+   "path": "/events/2026-10-21-nvidia-kumo-forecast/"
+  },
+  {
+   "id": "sha256:d633d24c8de1863b",
+   "kind": "item",
+   "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
+   "summary": "ithome 重复稿并入。",
+   "publishedAt": "2026-10-21T12:42:51.000Z",
+   "sourceName": "IT之家（全站，需关键词过滤）",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-10-21-openai-models-google-cloud",
+   "originalUrl": "https://www.ithome.com/1/016/105.htm"
+  },
+  {
+   "id": "2026-10-21-openai-models-google-cloud",
+   "kind": "event",
+   "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
+   "summary": "OpenAI 官方宣布模型登陆 Google Cloud，经 Marketplace 进入 Gemini Model Garden；IT之家与 The Decoder 跟进称谷歌云成为同时提供 OpenAI、Gemini 与 Claude 的主要云厂商之一。",
+   "publishedAt": "2026-10-21T12:42:51.000Z",
+   "sourceNames": [
+    "IT之家（全站，需关键词过滤）",
+    "OpenAI News"
+   ],
+   "path": "/events/2026-10-21-openai-models-google-cloud/"
+  },
+  {
+   "id": "sha256:d2895ceb6fcba3ff",
+   "kind": "item",
+   "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认",
+   "summary": "报道称 OpenAI 内部编码智能体关闭安全监控且否认。",
+   "publishedAt": "2026-10-21T12:34:57.000Z",
+   "sourceName": "The Decoder",
+   "category": "industry",
+   "selected": true,
+   "eventPublicId": "2026-10-21-openai-agent-monitoring-disabled",
+   "originalUrl": "https://the-decoder.com/openai-cant-yet-explain-why-its-coding-agents-switch-off-misalignment-monitoring/"
+  },
+  {
+   "id": "sha256:9dbc7ca917a7820d",
+   "kind": "item",
+   "title": "NVIDIA：RFD4-Proteina 用奖励引导推理时搜索设计蛋白",
+   "summary": "NVIDIA 介绍 RFD4-Proteina：推理时奖励引导搜索做蛋白设计。",
+   "publishedAt": "2026-10-21T12:30:00.000Z",
+   "sourceName": "NVIDIA Technical Blog",
+   "category": "paper",
+   "selected": true,
+   "eventPublicId": "2026-10-21-nvidia-rfd4-proteina",
+   "originalUrl": "https://developer.nvidia.com/blog/design-proteins-with-rfd4-proteina-using-reward-guided-inference-time-search/"
+  },
+  {
+   "id": "2026-10-21-nvidia-rfd4-proteina",
+   "kind": "event",
+   "title": "NVIDIA：RFD4-Proteina 用奖励引导推理时搜索设计蛋白",
+   "summary": "NVIDIA 开发者博客介绍 RFD4-Proteina：在推理时用奖励引导搜索，在巨大氨基酸组合空间中做蛋白设计。",
+   "publishedAt": "2026-10-21T12:30:00.000Z",
+   "sourceNames": [
+    "NVIDIA Technical Blog"
+   ],
+   "path": "/events/2026-10-21-nvidia-rfd4-proteina/"
+  },
+  {
+   "id": "sha256:856c26ca4c2d04bc",
+   "kind": "item",
+   "title": "Mistral×NVIDIA：用加速计算推进工业工程与物理 AI 工作流",
+   "summary": "Mistral 官方称与 NVIDIA 合作打造工业工程 AI 原生工作流。",
+   "publishedAt": "2026-10-21T12:00:20.000Z",
+   "sourceName": "Mistral AI News",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-10-21-mistral-nvidia-industrial-ai",
+   "originalUrl": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/"
+  },
+  {
+   "id": "sha256:95dedf578de78f3e",
+   "kind": "item",
+   "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
+   "summary": "OpenAI 宣布模型登陆 Google Cloud Model Garden。",
+   "publishedAt": "2026-10-21T12:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-10-21-openai-models-google-cloud",
+   "originalUrl": "https://openai.com/index/openai-models-google-cloud"
+  },
   {
    "id": "sha256:f491f8d73d9bf961",
    "kind": "item",
@@ -24,6 +352,64 @@
     "The Decoder"
    ],
    "path": "/events/2026-10-21-openai-orchestra-bio/"
+  },
+  {
+   "id": "sha256:ea92da5c121ecb45",
+   "kind": "item",
+   "title": "OpenAI 详解 ChatGPT 广告栈，并扩至 26 国、广告主破十万",
+   "summary": "OpenAI 介绍 ChatGPT LLM 广告栈：广告与回答隔离。",
+   "publishedAt": "2026-10-21T07:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-10-21-chatgpt-ads-stack-expansion",
+   "originalUrl": "https://openai.com/index/building-chatgpt-ad-stack"
+  },
+  {
+   "id": "sha256:64ddfb139fec8a1c",
+   "kind": "item",
+   "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
+   "summary": "OpenAI 与 PerturbAI、Scripps 用分布式智能体挖脑细胞数据线索。",
+   "publishedAt": "2026-10-21T04:50:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "paper",
+   "selected": true,
+   "eventPublicId": "2026-10-21-openai-ai-agents-bio-leads",
+   "originalUrl": "https://openai.com/index/scaling-ai-research-for-complex-biological-data"
+  },
+  {
+   "id": "2026-10-21-openai-ai-agents-bio-leads",
+   "kind": "event",
+   "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
+   "summary": null,
+   "publishedAt": "2026-10-21T04:50:00.000Z",
+   "sourceNames": [
+    "OpenAI News"
+   ],
+   "path": "/events/2026-10-21-openai-ai-agents-bio-leads/"
+  },
+  {
+   "id": "sha256:e270f5ba4688033d",
+   "kind": "item",
+   "title": "OpenAI：民主治理前沿 AI 之二——赋能网络防御者",
+   "summary": "OpenAI 治理系列：赋能网络防御与公共机构韧性。",
+   "publishedAt": "2026-10-21T00:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "opinion",
+   "selected": true,
+   "eventPublicId": "2026-10-22-openai-gov-cyber-defenders",
+   "originalUrl": "https://openai.com/index/empowering-cyber-defenders"
+  },
+  {
+   "id": "2026-10-22-openai-gov-cyber-defenders",
+   "kind": "event",
+   "title": "OpenAI：民主治理前沿 AI 之二——赋能网络防御者",
+   "summary": "OpenAI 发布治理系列其二，提出用前沿 AI、更强护栏与现代化安全能力赋能网络防御与公共机构韧性。",
+   "publishedAt": "2026-10-21T00:00:00.000Z",
+   "sourceNames": [
+    "OpenAI News"
+   ],
+   "path": "/events/2026-10-22-openai-gov-cyber-defenders/"
   },
   {
    "id": "sha256:70cbed806b5b38bf",
@@ -60,30 +446,6 @@
     "The Decoder"
    ],
    "path": "/events/2026-10-21-mistral-voxtral-3/"
-  },
-  {
-   "id": "sha256:c24275f2d5cf22d8",
-   "kind": "item",
-   "title": "报道：OpenAI 称 GPT-6 在 COBOL/Fortran 等低资源语言上更强",
-   "summary": "The Decoder 称 OpenAI 改进低资源编程语言能力；MultiLangBench 上 GPT-6 Astra 约 87.4% 通过率。",
-   "publishedAt": "2026-10-20T16:40:29.000Z",
-   "sourceName": "The Decoder",
-   "category": "model",
-   "selected": false,
-   "eventPublicId": "2026-10-20-openai-low-resource-langs",
-   "originalUrl": "https://the-decoder.com/openai-says-gpt-6-is-much-better-with-legacy-programming-languages-such-as-cobol-and-fortran/"
-  },
-  {
-   "id": "2026-10-20-openai-low-resource-langs",
-   "kind": "event",
-   "title": "OpenAI 推进低资源编程语言上的编码能力",
-   "summary": "OpenAI 称正改进 ChatGPT 在 COBOL、Fortran 等低资源编程语言上的表现，并新增软件工程、SQLite 与 COBOL 迁移等评测。 The Decoder 称在 MultiLangBench 上，GPT-6 Astra 跨约 20 种语言测试通过率约 87.4%。",
-   "publishedAt": "2026-10-20T16:40:29.000Z",
-   "sourceNames": [
-    "OpenAI News",
-    "The Decoder"
-   ],
-   "path": "/events/2026-10-20-openai-low-resource-langs/"
   },
   {
    "id": "sha256:4c6292fc5ecba5f2",
@@ -192,41 +554,6 @@
    "path": "/events/2026-10-19-nvidia-open-models-agents-pcs/"
   },
   {
-   "id": "sha256:f4f2a7e49951b599",
-   "kind": "item",
-   "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
-   "summary": "稀宇科技宣布 MiniMax M3.1 Flash 上线；IT之家称其在 Agentic/编程等能力提升，线上推理速度约提升近 3 倍、使用成本降低约 70%，并称 Space Bunny 匿名版本即其早期版。",
-   "publishedAt": "2026-10-19T12:20:45.000Z",
-   "sourceName": "IT之家（全站，需关键词过滤）",
-   "category": "product",
-   "selected": false,
-   "eventPublicId": "2026-10-19-minimax-m31-flash",
-   "originalUrl": "https://www.ithome.com/1/015/013.htm"
-  },
-  {
-   "id": "2026-10-19-minimax-m31-flash",
-   "kind": "event",
-   "title": "MiniMax 上线 M3.1 Flash：称提速约 3 倍、成本降约 70%",
-   "summary": "稀宇科技宣布 MiniMax M3.1 Flash 上线，IT之家称其在 Agentic、编程等能力上有提升，线上推理速度约提升近 3 倍、使用成本相对前代约降 70%。 同一报道称，此前以 Space Bunny 名义出现的匿名版本即为其早期版。",
-   "publishedAt": "2026-10-19T12:20:45.000Z",
-   "sourceNames": [
-    "IT之家（全站，需关键词过滤）"
-   ],
-   "path": "/events/2026-10-19-minimax-m31-flash/"
-  },
-  {
-   "id": "sha256:1dbe22633003a2af",
-   "kind": "item",
-   "title": "OpenAI：推进低资源编程语言上的编码能力",
-   "summary": "OpenAI 称正改进 ChatGPT 在低资源编程语言上的表现，并新增软件工程、SQLite 与 COBOL 迁移等评测。",
-   "publishedAt": "2026-10-19T12:00:00.000Z",
-   "sourceName": "OpenAI News",
-   "category": "product",
-   "selected": false,
-   "eventPublicId": "2026-10-20-openai-low-resource-langs",
-   "originalUrl": "https://openai.com/index/low-resource-programming-languages"
-  },
-  {
    "id": "sha256:5c52b7d34becd1cc",
    "kind": "item",
    "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
@@ -241,8 +568,8 @@
   {
    "id": "2026-10-20-hf-torchneuron-trainium",
    "kind": "event",
-   "title": "HF TorchNeuron：HF 模型更易跑在 AWS Trainium",
-   "summary": "Hugging Face 在博客介绍 TorchNeuron，称在 AWS Trainium 上运行 Hugging Face 模型比以往更容易。 官方称该工具降低了把 HF 生态模型接到 Trainium 上的门槛；TechCrunch 另称亚马逊借此加码与英伟达的竞争。",
+   "title": "HF TorchNeuron：Trainium 上跑 HF 模型，并开系统级性能分析",
+   "summary": "Hugging Face 介绍 TorchNeuron，降低在 AWS Trainium 上运行 HF 模型的门槛。 后续博客 Part 1 给出系统级 profiling 方法，帮助定位 Trainium 上的性能瓶颈。",
    "publishedAt": "2026-10-19T00:00:00.000Z",
    "sourceNames": [
     "Hugging Face Blog"
@@ -272,6 +599,15 @@
    "selected": true,
    "eventPublicId": "2026-10-19-deepseek-v41-flash-1017",
    "originalUrl": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/"
+  },
+  {
+   "id": "2026-10-21-php2shell-wiz-rce",
+   "kind": "event",
+   "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
+   "summary": "OpenAI 发布 Patch the Planet，协调安全研究者、维护者与应急响应处理智能体发现的关键漏洞。媒体与 HN 称 GPT-5.6 Sol、Gemini 等挖出影响大量站点的 PHP 远程代码执行洞；PHP 基金会随后发安全更新说明协调披露泄漏问题。",
+   "publishedAt": null,
+   "sourceNames": [],
+   "path": "/events/2026-10-21-php2shell-wiz-rce/"
   }
  ]
 }

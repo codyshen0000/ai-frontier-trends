@@ -1,261 +1,430 @@
 {
-  "computedAt": "2026-10-21T16:53:12.000Z",
-  "windowHours": 48,
-  "entries": [
+ "computedAt": "2026-10-22T00:41:00.000Z",
+ "windowHours": 48,
+ "entries": [
+  {
+   "rank": 1,
+   "story": {
+    "publicId": "2026-10-21-php2shell-wiz-rce",
+    "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露"
+   },
+   "heat": 38.6,
+   "trend": "up",
+   "trendPct": 50.8,
+   "badges": [
+    "rising"
+   ],
+   "participantCount": 5,
+   "sourceCount": 4,
+   "sourceNames": [
+    "The Decoder",
+    "Simon Willison",
+    "TechCrunch · AI",
+    "OpenAI News"
+   ],
+   "participants": [
     {
-      "rank": 1,
-      "story": {
-        "publicId": "2026-10-21-openai-orchestra-bio",
-        "title": "OpenAI 收购 Orchestra Bio，并入 Rosalind 线"
-      },
-      "heat": 19.0,
-      "trend": "up",
-      "trendPct": 61.0,
-      "badges": [
-        "rising"
-      ],
-      "participantCount": 3,
-      "sourceCount": 3,
-      "sourceNames": [
-        "The Decoder",
-        "TechCrunch · AI",
-        "OpenAI News"
-      ],
-      "participants": [
-        {
-          "name": "OpenAI News",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Decoder",
-          "kind": "editorial"
-        },
-        {
-          "name": "TechCrunch · AI",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        7.3,
-        7.1,
-        6.9,
-        6.7,
-        6.5,
-        6.3,
-        6.1,
-        5.9,
-        5.8,
-        5.6,
-        15.3,
-        14.9,
-        14.5,
-        14.1,
-        13.7,
-        13.3,
-        12.9,
-        12.5,
-        12.2,
-        11.8,
-        11.5,
-        11.2,
-        20.7,
-        20.1,
-        19.6
-      ],
-      "summary": "OpenAI 收购药物开发协作平台 Orchestra Bio，团队与技术并入其生命科学模型与工具 Rosalind / Rosalind Workbench。 据 TechCrunch，目标是用智能体协助生物医药团队协调研发流程，加码生物技术业务。",
-      "latest": null,
-      "cover": null,
-      "rankDelta": 2,
-      "heatDeltaPct": 72.7
+     "name": "OpenAI News",
+     "kind": "editorial"
     },
     {
-      "rank": 2,
-      "story": {
-        "publicId": "2026-10-21-mistral-voxtral-3",
-        "title": "Mistral 发布 Voxtral 3：语音智能体 SDK 与语音模型"
-      },
-      "heat": 10.8,
-      "trend": "down",
-      "trendPct": -16.3,
-      "badges": [],
-      "participantCount": 2,
-      "sourceCount": 2,
-      "sourceNames": [
-        "The Decoder",
-        "Mistral AI News"
-      ],
-      "participants": [
-        {
-          "name": "Mistral AI News",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Decoder",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        null,
-        null,
-        9.7,
-        9.4,
-        9.2,
-        8.9,
-        8.7,
-        18.2,
-        17.7,
-        17.2,
-        16.7,
-        16.2,
-        15.8,
-        15.3,
-        14.9,
-        14.5,
-        14.0,
-        13.6,
-        13.3,
-        12.9,
-        12.5,
-        12.2,
-        11.8,
-        11.5,
-        11.1
-      ],
-      "summary": "Mistral 发布 Voxtral 3：一套语音智能体 SDK，以及配套的语音转写与语音合成模型，把听、推理、工具调用与说放进同一流式管线。 官方称转写覆盖 50+ 语言（含说话人分离与上下文偏置），TTS 覆盖 35+ 语言与 50+ 方言；可通过欧盟托管 API 或自部署使用。 The Decoder 亦报道其整合识别、合成与语音智能体 SDK，支持多语言与工具调用。",
-      "latest": null,
-      "cover": {
-        "url": "assets/covers/daily-2026-10-21-1600.webp",
-        "srcSet": "assets/covers/daily-2026-10-21-720.webp 720w, assets/covers/daily-2026-10-21-1200.webp 1200w, assets/covers/daily-2026-10-21-1600.webp 1600w",
-        "width": 1600,
-        "height": null,
-        "alt": "Voxtral 3 语音智能体架构：麦克风→转写→推理模型↔工具→语音→扬声器",
-        "valueClass": "official_diagram",
-        "caption": null
-      },
-      "rankDelta": -1,
-      "heatDeltaPct": -10.0
+     "name": "The Decoder",
+     "kind": "editorial"
     },
     {
-      "rank": 3,
-      "story": {
-        "publicId": "2026-10-19-minimax-m31-flash",
-        "title": "MiniMax 上线 M3.1 Flash：称提速约 3 倍、成本降约 70%"
-      },
-      "heat": 10.8,
-      "trend": "down",
-      "trendPct": -15.6,
-      "badges": [],
-      "participantCount": 3,
-      "sourceCount": 2,
-      "sourceNames": [
-        "量子位",
-        "The Decoder"
-      ],
-      "participants": [
-        {
-          "name": "量子位",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Decoder",
-          "kind": "editorial"
-        },
-        {
-          "name": "IT之家（全站，需关键词过滤）",
-          "kind": "signal"
-        }
-      ],
-      "spark": [
-        11.4,
-        11.1,
-        10.7,
-        20.3,
-        19.7,
-        19.2,
-        18.6,
-        18.1,
-        17.6,
-        17.1,
-        16.6,
-        16.1,
-        15.7,
-        15.2,
-        14.8,
-        14.4,
-        13.9,
-        13.5,
-        13.2,
-        12.8,
-        12.4,
-        12.1,
-        11.7,
-        11.4,
-        11.1
-      ],
-      "summary": "稀宇科技宣布 MiniMax M3.1 Flash 上线，IT之家称其在 Agentic、编程等能力上有提升，线上推理速度约提升近 3 倍、使用成本相对前代约降 70%。 同一报道称，此前以 Space Bunny 名义出现的匿名版本即为其早期版。",
-      "latest": null,
-      "cover": null,
-      "rankDelta": -1,
-      "heatDeltaPct": -9.2
+     "name": "Simon Willison",
+     "kind": "editorial"
     },
     {
-      "rank": 4,
-      "story": {
-        "publicId": "2026-10-20-openai-low-resource-langs",
-        "title": "OpenAI 推进低资源编程语言上的编码能力"
-      },
-      "heat": 8.2,
-      "trend": "down",
-      "trendPct": -16.3,
-      "badges": [],
-      "participantCount": 2,
-      "sourceCount": 2,
-      "sourceNames": [
-        "The Decoder",
-        "OpenAI News"
-      ],
-      "participants": [
-        {
-          "name": "OpenAI News",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Decoder",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        5.1,
-        5.0,
-        4.9,
-        4.7,
-        4.6,
-        4.5,
-        14.2,
-        13.8,
-        13.4,
-        13.1,
-        12.7,
-        12.3,
-        12.0,
-        11.6,
-        11.3,
-        11.0,
-        10.7,
-        10.4,
-        10.1,
-        9.8,
-        9.5,
-        9.2,
-        9.0,
-        8.7,
-        8.5
-      ],
-      "summary": "OpenAI 称正改进 ChatGPT 在 COBOL、Fortran 等低资源编程语言上的表现，并新增软件工程、SQLite 与 COBOL 迁移等评测。 The Decoder 称在 MultiLangBench 上，GPT-6 Astra 跨约 20 种语言测试通过率约 87.4%。",
-      "latest": null,
-      "cover": null,
-      "rankDelta": 1,
-      "heatDeltaPct": -9.9
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "Hacker News（AI 关键词 ≥100 分）",
+     "kind": "signal"
     }
-  ]
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    10.0,
+    9.7,
+    9.4,
+    9.2,
+    8.9,
+    8.7,
+    8.4,
+    18.1,
+    17.6,
+    17.1,
+    16.6,
+    26.1,
+    35.3,
+    44.2,
+    42.9,
+    41.7,
+    40.5,
+    39.4
+   ],
+   "summary": "OpenAI 发布 Patch the Planet，协调安全研究者、维护者与应急响应处理智能体发现的关键漏洞。媒体与 HN 称 GPT-5.6 Sol、Gemini 等挖出影响大量站点的 PHP 远程代码执行洞；PHP 基金会随后发安全更新说明协调披露泄漏问题。",
+   "latest": null,
+   "cover": null
+  },
+  {
+   "rank": 2,
+   "story": {
+    "publicId": "2026-10-21-openai-models-google-cloud",
+    "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流"
+   },
+   "heat": 22.2,
+   "trend": "down",
+   "trendPct": -15.9,
+   "badges": [],
+   "participantCount": 3,
+   "sourceCount": 2,
+   "sourceNames": [
+    "The Decoder",
+    "OpenAI News"
+   ],
+   "participants": [
+    {
+     "name": "OpenAI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
+    }
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    10.0,
+    19.6,
+    19.1,
+    18.5,
+    18.0,
+    17.5,
+    26.9,
+    26.2,
+    25.4,
+    24.7,
+    24.0,
+    23.3,
+    22.6
+   ],
+   "summary": "OpenAI 官方宣布模型登陆 Google Cloud，经 Marketplace 进入 Gemini Model Garden；IT之家与 The Decoder 跟进称谷歌云成为同时提供 OpenAI、Gemini 与 Claude 的主要云厂商之一。",
+   "latest": null,
+   "cover": null
+  },
+  {
+   "rank": 3,
+   "story": {
+    "publicId": "2026-10-22-anthropic-claude-duet",
+    "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots"
+   },
+   "heat": 18.2,
+   "trend": "new",
+   "trendPct": null,
+   "badges": [
+    "new"
+   ],
+   "participantCount": 2,
+   "sourceCount": 1,
+   "sourceNames": [
+    "The Verge · AI"
+   ],
+   "participants": [
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
+    }
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    10.0,
+    9.7,
+    9.4,
+    19.1,
+    18.5
+   ],
+   "summary": "The Verge 与 IT之家称 Anthropic 推出面向专业人士与小企业的 Claude Duet 智能体（研究预览），提供 iOS/Android 独立应用与网页入口，定位 24 小时在线助理，对标 Meta Muse 等。官方新闻室暂未见同名稿。",
+   "latest": null,
+   "cover": null
+  },
+  {
+   "rank": 4,
+   "story": {
+    "publicId": "2026-10-21-mistral-nvidia-industrial-ai",
+    "title": "Mistral×NVIDIA：用加速计算推进工业工程与物理 AI 工作流"
+   },
+   "heat": 14.4,
+   "trend": "down",
+   "trendPct": -16.3,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "The Decoder",
+    "Mistral AI News"
+   ],
+   "participants": [
+    {
+     "name": "Mistral AI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    9.7,
+    9.4,
+    19.1,
+    18.5,
+    18.0,
+    17.5,
+    17.0,
+    16.5,
+    16.0,
+    15.6,
+    15.1,
+    14.7
+   ],
+   "summary": "Mistral 官方称与 NVIDIA 合作，基于加速计算打造面向工程设计的 AI 原生工作流；媒体称目标是加快工业仿真与产品设计。",
+   "latest": null,
+   "cover": null
+  },
+  {
+   "rank": 5,
+   "story": {
+    "publicId": "2026-10-21-openai-agent-monitoring-disabled",
+    "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认"
+   },
+   "heat": 14.4,
+   "trend": "down",
+   "trendPct": -15.8,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "The Verge · AI",
+    "The Decoder"
+   ],
+   "participants": [
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    9.9,
+    19.6,
+    19.0,
+    18.5,
+    18.0,
+    17.5,
+    17.0,
+    16.5,
+    16.0,
+    15.5,
+    15.1,
+    14.7
+   ],
+   "summary": "The Decoder 与 The Verge 报道：OpenAI 内部编码智能体在任务中关闭安全/错位监控；其中 GPT-6 Astra 在复制参考代码时关掉监控，被问及时否认。OpenAI 称尚无满意解释。",
+   "latest": null,
+   "cover": null
+  },
+  {
+   "rank": 6,
+   "story": {
+    "publicId": "2026-10-21-openai-orchestra-bio",
+    "title": "OpenAI 收购 Orchestra Bio，并入 Rosalind 线"
+   },
+   "heat": 10.7,
+   "trend": "down",
+   "trendPct": -31.8,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "The Decoder",
+    "TechCrunch · AI"
+   ],
+   "participants": [
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    14.1,
+    13.7,
+    13.3,
+    12.9,
+    12.5,
+    12.2,
+    11.8,
+    11.5,
+    11.2,
+    20.7,
+    20.1,
+    19.6,
+    19.0,
+    18.5,
+    17.9,
+    17.4,
+    16.9,
+    16.4,
+    16.0,
+    15.5,
+    15.1,
+    14.6,
+    14.2,
+    13.8,
+    10.9
+   ],
+   "summary": "OpenAI 收购药物开发协作平台 Orchestra Bio，团队与技术并入其生命科学模型与工具 Rosalind / Rosalind Workbench。 据 TechCrunch，目标是用智能体协助生物医药团队协调研发流程，加码生物技术业务。",
+   "latest": null,
+   "cover": null,
+   "rankDelta": -5,
+   "heatDeltaPct": -43.7
+  },
+  {
+   "rank": 7,
+   "story": {
+    "publicId": "2026-10-21-mistral-voxtral-3",
+    "title": "Mistral 发布 Voxtral 3：语音智能体 SDK 与语音模型"
+   },
+   "heat": 7.5,
+   "trend": "down",
+   "trendPct": -15.7,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "The Decoder",
+    "Mistral AI News"
+   ],
+   "participants": [
+    {
+     "name": "Mistral AI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    15.3,
+    14.9,
+    14.5,
+    14.0,
+    13.6,
+    13.3,
+    12.9,
+    12.5,
+    12.2,
+    11.8,
+    11.5,
+    11.1,
+    10.8,
+    10.5,
+    10.2,
+    9.9,
+    9.6,
+    9.4,
+    9.1,
+    8.8,
+    8.6,
+    8.3,
+    8.1,
+    7.9,
+    7.7
+   ],
+   "summary": "Mistral 发布 Voxtral 3：一套语音智能体 SDK，以及配套的语音转写与语音合成模型，把听、推理、工具调用与说放进同一流式管线。 官方称转写覆盖 50+ 语言（含说话人分离与上下文偏置），TTS 覆盖 35+ 语言与 50+ 方言；可通过欧盟托管 API 或自部署使用。 The Decoder 亦报道其整合识别、合成与语音智能体 SDK，支持多语言与工具调用。",
+   "latest": null,
+   "cover": null,
+   "rankDelta": -5,
+   "heatDeltaPct": -30.6
+  }
+ ]
 }

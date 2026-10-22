@@ -1,0 +1,153 @@
+{
+ "publicId": "2026-10-21-openai-models-google-cloud",
+ "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
+ "status": "active",
+ "reportCount": 2,
+ "sourceCount": 2,
+ "firstReportAt": "2026-10-21T12:00:00.000Z",
+ "latestAt": "2026-10-21T12:42:51.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "OpenAI 官方宣布模型登陆 Google Cloud，经 Marketplace 进入 Gemini Model Garden；IT之家与 The Decoder 跟进称谷歌云成为同时提供 OpenAI、Gemini 与 Claude 的主要云厂商之一。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 3,
+  "newParticipants6h": 0,
+  "recentReports24h": 3,
+  "observationComplete": true,
+  "rank": 2
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-21-openai-models-google-cloud",
+   "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
+   "firstReportAt": "2026-10-21T12:00:00.000Z",
+   "reportCount": 2,
+   "representative": {
+    "id": "sha256:95dedf578de78f3e",
+    "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
+    "summary": "OpenAI 宣布模型登陆 Google Cloud Model Garden。",
+    "source": {
+     "name": "OpenAI News",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-21T12:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://openai.com/index/openai-models-google-cloud"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:95dedf578de78f3e",
+   "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
+   "summary": "OpenAI 宣布模型登陆 Google Cloud Model Garden。",
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-21T12:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/openai-models-google-cloud"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:d633d24c8de1863b",
+   "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
+   "summary": "ithome 重复稿并入。",
+   "source": {
+    "name": "IT之家（全站，需关键词过滤）",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-21T12:42:51.000Z",
+   "selected": false,
+   "originalUrl": "https://www.ithome.com/1/016/105.htm"
+  },
+  {
+   "id": "sha256:95dedf578de78f3e",
+   "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
+   "summary": "OpenAI 宣布模型登陆 Google Cloud Model Garden。",
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-21T12:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/openai-models-google-cloud"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-21T12:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T13:00:00.000Z",
+   "heat": 19.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-21T14:00:00.000Z",
+   "heat": 19.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-21T15:00:00.000Z",
+   "heat": 18.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-21T16:00:00.000Z",
+   "heat": 18.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-21T17:00:00.000Z",
+   "heat": 17.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-21T18:00:00.000Z",
+   "heat": 26.9,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-21T19:00:00.000Z",
+   "heat": 26.2,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-21T20:00:00.000Z",
+   "heat": 25.4,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-21T21:00:00.000Z",
+   "heat": 24.7,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-21T22:00:00.000Z",
+   "heat": 24.0,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-21T23:00:00.000Z",
+   "heat": 23.3,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-22T00:00:00.000Z",
+   "heat": 22.6,
+   "participants": 3
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "OpenAI 前沿模型入驻谷歌云 Model Garden",
+ "primaryUrl": "https://openai.com/index/openai-models-google-cloud"
+}

@@ -1,0 +1,120 @@
+{
+ "publicId": "2026-10-21-php2shell-wiz-rce",
+ "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
+ "status": "settled",
+ "reportCount": 0,
+ "sourceCount": 0,
+ "firstReportAt": null,
+ "latestAt": null,
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "OpenAI 发布 Patch the Planet，协调安全研究者、维护者与应急响应处理智能体发现的关键漏洞。媒体与 HN 称 GPT-5.6 Sol、Gemini 等挖出影响大量站点的 PHP 远程代码执行洞；PHP 基金会随后发安全更新说明协调披露泄漏问题。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 5,
+  "newParticipants6h": 2,
+  "recentReports24h": 5,
+  "observationComplete": true,
+  "rank": 1
+ },
+ "developments": [],
+ "officialReports": [],
+ "timeline": [],
+ "heat": [
+  {
+   "hour": "2026-10-21T07:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T08:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T09:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T10:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T11:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T12:00:00.000Z",
+   "heat": 8.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T13:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T14:00:00.000Z",
+   "heat": 18.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-21T15:00:00.000Z",
+   "heat": 17.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-21T16:00:00.000Z",
+   "heat": 17.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-21T17:00:00.000Z",
+   "heat": 16.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-21T18:00:00.000Z",
+   "heat": 26.1,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-21T19:00:00.000Z",
+   "heat": 35.3,
+   "participants": 4
+  },
+  {
+   "hour": "2026-10-21T20:00:00.000Z",
+   "heat": 44.2,
+   "participants": 5
+  },
+  {
+   "hour": "2026-10-21T21:00:00.000Z",
+   "heat": 42.9,
+   "participants": 5
+  },
+  {
+   "hour": "2026-10-21T22:00:00.000Z",
+   "heat": 41.7,
+   "participants": 5
+  },
+  {
+   "hour": "2026-10-21T23:00:00.000Z",
+   "heat": 40.5,
+   "participants": 5
+  },
+  {
+   "hour": "2026-10-22T00:00:00.000Z",
+   "heat": 39.4,
+   "participants": 5
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "OpenAI 协调披露：智能体挖出 PHP 高危 RCE"
+}

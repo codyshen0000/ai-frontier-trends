@@ -1,0 +1,190 @@
+{
+ "publicId": "2026-10-21-chatgpt-ads-stack-expansion",
+ "title": "OpenAI 详解 ChatGPT 广告栈，并扩至 26 国、广告主破十万",
+ "status": "active",
+ "reportCount": 2,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-21T07:00:00.000Z",
+ "latestAt": "2026-10-21T13:00:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "OpenAI 介绍为信任与相关性设计的 LLM 广告栈：广告与回答隔离、理解对话意图。同日宣布 ChatGPT Ads 扩展到 26 个新国家，称逾 10 万广告主用过该平台。",
+ "excerpt": null,
+ "latest": "ChatGPT Ads 扩展到 26 国，广告主规模称逾 10 万。",
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 2,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-21-chatgpt-ads-stack-expansion",
+   "title": "OpenAI 详解 ChatGPT 广告栈，并扩至 26 国、广告主破十万",
+   "firstReportAt": "2026-10-21T07:00:00.000Z",
+   "reportCount": 2,
+   "representative": {
+    "id": "sha256:b1215e1aefc04c61",
+    "title": "OpenAI 详解 ChatGPT 广告栈，并扩至 26 国、广告主破十万",
+    "summary": "ChatGPT Ads 扩展到 26 国，广告主称逾 10 万。",
+    "source": {
+     "name": "OpenAI News",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-21T13:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://openai.com/index/chatgpt-ads-expands-26-new-countries"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:b1215e1aefc04c61",
+   "title": "OpenAI 详解 ChatGPT 广告栈，并扩至 26 国、广告主破十万",
+   "summary": "ChatGPT Ads 扩展到 26 国，广告主称逾 10 万。",
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-21T13:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/chatgpt-ads-expands-26-new-countries"
+  },
+  {
+   "id": "sha256:ea92da5c121ecb45",
+   "title": "OpenAI 详解 ChatGPT 广告栈，并扩至 26 国、广告主破十万",
+   "summary": "OpenAI 介绍 ChatGPT LLM 广告栈：广告与回答隔离。",
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-21T07:00:00.000Z",
+   "selected": false,
+   "originalUrl": "https://openai.com/index/building-chatgpt-ad-stack"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:b1215e1aefc04c61",
+   "title": "OpenAI 详解 ChatGPT 广告栈，并扩至 26 国、广告主破十万",
+   "summary": "ChatGPT Ads 扩展到 26 国，广告主称逾 10 万。",
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-21T13:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/chatgpt-ads-expands-26-new-countries"
+  },
+  {
+   "id": "sha256:ea92da5c121ecb45",
+   "title": "OpenAI 详解 ChatGPT 广告栈，并扩至 26 国、广告主破十万",
+   "summary": "OpenAI 介绍 ChatGPT LLM 广告栈：广告与回答隔离。",
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-21T07:00:00.000Z",
+   "selected": false,
+   "originalUrl": "https://openai.com/index/building-chatgpt-ad-stack"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-21T07:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T08:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T09:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T10:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T11:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T12:00:00.000Z",
+   "heat": 8.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T13:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T14:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T15:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T16:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T17:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T18:00:00.000Z",
+   "heat": 8.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T19:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T20:00:00.000Z",
+   "heat": 8.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T21:00:00.000Z",
+   "heat": 7.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T22:00:00.000Z",
+   "heat": 7.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T23:00:00.000Z",
+   "heat": 7.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T00:00:00.000Z",
+   "heat": 7.3,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "OpenAI 详解 ChatGPT 广告栈并扩至 26 国",
+ "primaryUrl": "https://openai.com/index/chatgpt-ads-expands-26-new-countries"
+}

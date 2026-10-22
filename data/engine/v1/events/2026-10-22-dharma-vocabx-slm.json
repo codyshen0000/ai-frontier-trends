@@ -1,0 +1,111 @@
+{
+ "publicId": "2026-10-22-dharma-vocabx-slm",
+ "title": "VocabX：专用词表称可把小模型推理成本砍约 77%",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-21T17:35:36.000Z",
+ "latestAt": "2026-10-21T17:35:36.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Hugging Face 博客介绍 Dharma VocabX：通过为具体应用特化词表，称在真实场景可显著降低小语言模型推理成本。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-22-dharma-vocabx-slm",
+   "title": "VocabX：专用词表称可把小模型推理成本砍约 77%",
+   "firstReportAt": "2026-10-21T17:35:36.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:40a01666d562060b",
+    "title": "VocabX：专用词表称可把小模型推理成本砍约 77%",
+    "summary": "VocabX 特化词表降低小模型推理成本。",
+    "source": {
+     "name": "Hugging Face Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-21T17:35:36.000Z",
+    "selected": true,
+    "originalUrl": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:40a01666d562060b",
+   "title": "VocabX：专用词表称可把小模型推理成本砍约 77%",
+   "summary": "VocabX 特化词表降低小模型推理成本。",
+   "source": {
+    "name": "Hugging Face Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-21T17:35:36.000Z",
+   "selected": true,
+   "originalUrl": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:40a01666d562060b",
+   "title": "VocabX：专用词表称可把小模型推理成本砍约 77%",
+   "summary": "VocabX 特化词表降低小模型推理成本。",
+   "source": {
+    "name": "Hugging Face Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-21T17:35:36.000Z",
+   "selected": true,
+   "originalUrl": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-21T18:00:00.000Z",
+   "heat": 9.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T19:00:00.000Z",
+   "heat": 9.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T20:00:00.000Z",
+   "heat": 9.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T21:00:00.000Z",
+   "heat": 9.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T22:00:00.000Z",
+   "heat": 8.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T23:00:00.000Z",
+   "heat": 8.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T00:00:00.000Z",
+   "heat": 8.3,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "VocabX：专用词表可砍小模型推理成本约 77%",
+ "primaryUrl": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization"
+}

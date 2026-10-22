@@ -1,6 +1,20 @@
 {
  "sources": [
   {
+   "sourceId": "hn-ai-front",
+   "name": "Hacker News（AI 关键词 ≥100 分）",
+   "tier": "T2",
+   "kind": "signal",
+   "homepage": "https://hnrss.org"
+  },
+  {
+   "sourceId": "rss-google-research",
+   "name": "Google Research Blog",
+   "tier": "T1",
+   "kind": "editorial",
+   "homepage": "https://research.google"
+  },
+  {
    "sourceId": "rss-hf-blog",
    "name": "Hugging Face Blog",
    "tier": "T1",
@@ -15,11 +29,25 @@
    "homepage": "https://www.ithome.com"
   },
   {
+   "sourceId": "rss-microsoft-research",
+   "name": "Microsoft Research Blog",
+   "tier": "T1",
+   "kind": "editorial",
+   "homepage": "https://www.microsoft.com"
+  },
+  {
    "sourceId": "rss-mistral",
    "name": "Mistral AI News",
    "tier": "T1",
    "kind": "editorial",
    "homepage": "https://mistral.ai"
+  },
+  {
+   "sourceId": "rss-nvidia-dev",
+   "name": "NVIDIA Technical Blog",
+   "tier": "T1",
+   "kind": "editorial",
+   "homepage": "https://developer.nvidia.com"
   },
   {
    "sourceId": "rss-openai-news",
@@ -36,6 +64,13 @@
    "homepage": "https://www.qbitai.com"
   },
   {
+   "sourceId": "rss-simon-willison",
+   "name": "Simon Willison",
+   "tier": "T2",
+   "kind": "editorial",
+   "homepage": "https://simonwillison.net"
+  },
+  {
    "sourceId": "rss-techcrunch-ai",
    "name": "TechCrunch · AI",
    "tier": "T2",
@@ -48,6 +83,13 @@
    "tier": "T2",
    "kind": "editorial",
    "homepage": "https://the-decoder.com"
+  },
+  {
+   "sourceId": "rss-verge-ai",
+   "name": "The Verge · AI",
+   "tier": "T2",
+   "kind": "editorial",
+   "homepage": "https://www.theverge.com"
   }
  ]
 }

@@ -1,25 +1,116 @@
 {
  "events": [
   {
+   "publicId": "2026-10-22-anthropic-claude-duet",
+   "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
+   "latestAt": "2026-10-21T22:44:18.000Z",
+   "reportCount": 2,
+   "hotRank": 3
+  },
+  {
+   "publicId": "2026-10-22-nvidia-microduck-isaac-lab",
+   "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
+   "latestAt": "2026-10-21T17:58:42.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
+   "publicId": "2026-10-22-dharma-vocabx-slm",
+   "title": "VocabX：专用词表称可把小模型推理成本砍约 77%",
+   "latestAt": "2026-10-21T17:35:36.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
+   "publicId": "2026-10-22-google-ai-maternal-ultrasound",
+   "title": "谷歌：用 AI 辅助一线孕产超声，服务基层母婴筛查",
+   "latestAt": "2026-10-21T16:23:53.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
+   "publicId": "2026-10-22-msr-kls-conjecture",
+   "title": "微软研究院：宣布解决数学界 31 年难题 KLS 猜想",
+   "latestAt": "2026-10-21T16:00:00.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
+   "publicId": "2026-10-21-ibm-granite-speech-5",
+   "title": "IBM Granite Speech 5.0：更快更准的转写、翻译与归因",
+   "latestAt": "2026-10-21T14:58:18.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
+   "publicId": "2026-10-21-mistral-nvidia-industrial-ai",
+   "title": "Mistral×NVIDIA：用加速计算推进工业工程与物理 AI 工作流",
+   "latestAt": "2026-10-21T14:40:51.000Z",
+   "reportCount": 2,
+   "hotRank": 4
+  },
+  {
+   "publicId": "2026-10-21-openai-agent-monitoring-disabled",
+   "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认",
+   "latestAt": "2026-10-21T13:57:43.000Z",
+   "reportCount": 2,
+   "hotRank": 5
+  },
+  {
+   "publicId": "2026-10-21-chatgpt-ads-stack-expansion",
+   "title": "OpenAI 详解 ChatGPT 广告栈，并扩至 26 国、广告主破十万",
+   "latestAt": "2026-10-21T13:00:00.000Z",
+   "reportCount": 2,
+   "hotRank": null
+  },
+  {
+   "publicId": "2026-10-21-nvidia-kumo-forecast",
+   "title": "NVIDIA Kumo Forecast：预训练时序表征 + 历史模式检索",
+   "latestAt": "2026-10-21T12:51:24.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
+   "publicId": "2026-10-21-openai-models-google-cloud",
+   "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
+   "latestAt": "2026-10-21T12:42:51.000Z",
+   "reportCount": 2,
+   "hotRank": 2
+  },
+  {
+   "publicId": "2026-10-21-nvidia-rfd4-proteina",
+   "title": "NVIDIA：RFD4-Proteina 用奖励引导推理时搜索设计蛋白",
+   "latestAt": "2026-10-21T12:30:00.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
    "publicId": "2026-10-21-openai-orchestra-bio",
    "title": "OpenAI 收购 Orchestra Bio，并入 Rosalind 线",
    "latestAt": "2026-10-21T08:32:54.000Z",
    "reportCount": 2,
-   "hotRank": 1
+   "hotRank": 6
+  },
+  {
+   "publicId": "2026-10-21-openai-ai-agents-bio-leads",
+   "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
+   "latestAt": "2026-10-21T04:50:00.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
+   "publicId": "2026-10-22-openai-gov-cyber-defenders",
+   "title": "OpenAI：民主治理前沿 AI 之二——赋能网络防御者",
+   "latestAt": "2026-10-21T00:00:00.000Z",
+   "reportCount": 1,
+   "hotRank": null
   },
   {
    "publicId": "2026-10-21-mistral-voxtral-3",
    "title": "Mistral 发布 Voxtral 3：语音智能体 SDK 与语音模型",
    "latestAt": "2026-10-20T17:17:55.000Z",
    "reportCount": 2,
-   "hotRank": 2
-  },
-  {
-   "publicId": "2026-10-20-openai-low-resource-langs",
-   "title": "OpenAI 推进低资源编程语言上的编码能力",
-   "latestAt": "2026-10-20T16:40:29.000Z",
-   "reportCount": 2,
-   "hotRank": 4
+   "hotRank": 7
   },
   {
    "publicId": "2026-10-19-deepseek-v41-flash-1017",
@@ -50,18 +141,18 @@
    "hotRank": null
   },
   {
-   "publicId": "2026-10-19-minimax-m31-flash",
-   "title": "MiniMax 上线 M3.1 Flash：称提速约 3 倍、成本降约 70%",
-   "latestAt": "2026-10-19T12:20:45.000Z",
-   "reportCount": 1,
-   "hotRank": 3
-  },
-  {
    "publicId": "2026-10-20-hf-torchneuron-trainium",
-   "title": "HF TorchNeuron：HF 模型更易跑在 AWS Trainium",
+   "title": "HF TorchNeuron：Trainium 上跑 HF 模型，并开系统级性能分析",
    "latestAt": "2026-10-19T00:00:00.000Z",
    "reportCount": 1,
    "hotRank": null
+  },
+  {
+   "publicId": "2026-10-21-php2shell-wiz-rce",
+   "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
+   "latestAt": null,
+   "reportCount": 0,
+   "hotRank": 1
   }
  ]
 }

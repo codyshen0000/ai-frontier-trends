@@ -3,12 +3,6 @@
  "entries": [
   {
    "rank": 1,
-   "publicId": "2026-10-19-minimax-m31-flash",
-   "heat": 14.4,
-   "participantCount": 2
-  },
-  {
-   "rank": 2,
    "publicId": "2026-10-20-hf-torchneuron-trainium",
    "heat": 12.8,
    "participantCount": 2

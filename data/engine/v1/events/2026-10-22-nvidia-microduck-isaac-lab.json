@@ -1,0 +1,111 @@
+{
+ "publicId": "2026-10-22-nvidia-microduck-isaac-lab",
+ "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-21T17:58:42.000Z",
+ "latestAt": "2026-10-21T17:58:42.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Hugging Face 博客介绍 Microduck 与 Isaac Lab 3.0：在仿真中训练、再部署到真实机器人的流程。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-22-nvidia-microduck-isaac-lab",
+   "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
+   "firstReportAt": "2026-10-21T17:58:42.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:7decc1c5c0496d6c",
+    "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
+    "summary": "Microduck×Isaac Lab 3.0 仿真到真机。",
+    "source": {
+     "name": "Hugging Face Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-21T17:58:42.000Z",
+    "selected": true,
+    "originalUrl": "https://huggingface.co/blog/nvidia/microduck-isaac-lab-sim-to-real"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:7decc1c5c0496d6c",
+   "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
+   "summary": "Microduck×Isaac Lab 3.0 仿真到真机。",
+   "source": {
+    "name": "Hugging Face Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-21T17:58:42.000Z",
+   "selected": true,
+   "originalUrl": "https://huggingface.co/blog/nvidia/microduck-isaac-lab-sim-to-real"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:7decc1c5c0496d6c",
+   "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
+   "summary": "Microduck×Isaac Lab 3.0 仿真到真机。",
+   "source": {
+    "name": "Hugging Face Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-21T17:58:42.000Z",
+   "selected": true,
+   "originalUrl": "https://huggingface.co/blog/nvidia/microduck-isaac-lab-sim-to-real"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-21T18:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T19:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T20:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T21:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T22:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T23:00:00.000Z",
+   "heat": 8.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T00:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "NVIDIA Microduck×Isaac Lab 3.0：仿真到真机",
+ "primaryUrl": "https://huggingface.co/blog/nvidia/microduck-isaac-lab-sim-to-real"
+}

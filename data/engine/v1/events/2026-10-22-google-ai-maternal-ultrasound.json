@@ -1,0 +1,123 @@
+{
+ "publicId": "2026-10-22-google-ai-maternal-ultrasound",
+ "title": "谷歌：用 AI 辅助一线孕产超声，服务基层母婴筛查",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-21T16:23:53.000Z",
+ "latestAt": "2026-10-21T16:23:53.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Google Research 介绍 AI 辅助超声方案，面向一线母婴护理，帮助在资源有限场景做筛查与决策支持。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-22-google-ai-maternal-ultrasound",
+   "title": "谷歌：用 AI 辅助一线孕产超声，服务基层母婴筛查",
+   "firstReportAt": "2026-10-21T16:23:53.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:27c0a5d3fc255134",
+    "title": "谷歌：用 AI 辅助一线孕产超声，服务基层母婴筛查",
+    "summary": "Google Research 介绍 AI 辅助一线孕产超声。",
+    "source": {
+     "name": "Google Research Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-21T16:23:53.000Z",
+    "selected": true,
+    "originalUrl": "https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:27c0a5d3fc255134",
+   "title": "谷歌：用 AI 辅助一线孕产超声，服务基层母婴筛查",
+   "summary": "Google Research 介绍 AI 辅助一线孕产超声。",
+   "source": {
+    "name": "Google Research Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-21T16:23:53.000Z",
+   "selected": true,
+   "originalUrl": "https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:27c0a5d3fc255134",
+   "title": "谷歌：用 AI 辅助一线孕产超声，服务基层母婴筛查",
+   "summary": "Google Research 介绍 AI 辅助一线孕产超声。",
+   "source": {
+    "name": "Google Research Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-21T16:23:53.000Z",
+   "selected": true,
+   "originalUrl": "https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-21T17:00:00.000Z",
+   "heat": 9.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T18:00:00.000Z",
+   "heat": 9.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T19:00:00.000Z",
+   "heat": 9.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T20:00:00.000Z",
+   "heat": 9.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T21:00:00.000Z",
+   "heat": 8.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T22:00:00.000Z",
+   "heat": 8.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T23:00:00.000Z",
+   "heat": 8.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T00:00:00.000Z",
+   "heat": 8.0,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "谷歌：AI 辅助一线孕产超声筛查",
+ "cover": {
+  "url": "https://storage.googleapis.com/gweb-research2023-media/original_images/FrontlineMaternalCarewithAI2_ModelOverview.png",
+  "width": null,
+  "height": null,
+  "alt": "AI 辅助一线孕产超声护理模型总览示意图",
+  "valueClass": "official_diagram"
+ },
+ "primaryUrl": "https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/"
+}

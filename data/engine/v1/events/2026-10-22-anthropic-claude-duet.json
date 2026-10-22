@@ -1,0 +1,100 @@
+{
+ "publicId": "2026-10-22-anthropic-claude-duet",
+ "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
+ "status": "active",
+ "reportCount": 2,
+ "sourceCount": 2,
+ "firstReportAt": "2026-10-21T19:53:20.000Z",
+ "latestAt": "2026-10-21T22:44:18.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "The Verge 与 IT之家称 Anthropic 推出面向专业人士与小企业的 Claude Duet 智能体（研究预览），提供 iOS/Android 独立应用与网页入口，定位 24 小时在线助理，对标 Meta Muse 等。官方新闻室暂未见同名稿。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 2,
+  "newParticipants6h": 2,
+  "recentReports24h": 2,
+  "observationComplete": true,
+  "rank": 3
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-22-anthropic-claude-duet",
+   "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
+   "firstReportAt": "2026-10-21T19:53:20.000Z",
+   "reportCount": 2,
+   "representative": {
+    "id": "sha256:258d5ff776fa8f13",
+    "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
+    "summary": "Verge：Claude Duet 研究预览，iOS/Android/Web。",
+    "source": {
+     "name": "The Verge · AI",
+     "firstParty": false
+    },
+    "publishedAt": "2026-10-21T19:53:20.000Z",
+    "selected": true,
+    "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent"
+   }
+  }
+ ],
+ "officialReports": [],
+ "timeline": [
+  {
+   "id": "sha256:814db62e1fecf4f7",
+   "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
+   "summary": "IT之家：Claude Duet 24 小时在线打工定位。",
+   "source": {
+    "name": "IT之家（全站，需关键词过滤）",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-21T22:44:18.000Z",
+   "selected": false,
+   "originalUrl": "https://www.ithome.com/1/016/169.htm"
+  },
+  {
+   "id": "sha256:258d5ff776fa8f13",
+   "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
+   "summary": "Verge：Claude Duet 研究预览，iOS/Android/Web。",
+   "source": {
+    "name": "The Verge · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-21T19:53:20.000Z",
+   "selected": true,
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-21T20:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T21:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T22:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T23:00:00.000Z",
+   "heat": 19.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T00:00:00.000Z",
+   "heat": 18.5,
+   "participants": 2
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "报道：Anthropic 推 Claude Duet 智能体迎战 Muse",
+ "primaryUrl": "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent"
+}

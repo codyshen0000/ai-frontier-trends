@@ -1,229 +1,206 @@
 {
-  "kind": "daily",
-  "key": "2026-10-21",
-  "issueNumber": 3,
-  "title": "AI日报 · 2026-10-21",
-  "generatedAt": "2026-10-21T16:53:12.000Z",
-  "lead": {
-    "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
-    "leadParagraph": "Mistral 推出 Voxtral 3 语音智能体 SDK，支持 50+ 语言"
+ "kind": "daily",
+ "key": "2026-10-22",
+ "issueNumber": 4,
+ "title": "AI日报 · 2026-10-22",
+ "generatedAt": "2026-10-22T00:38:06.000Z",
+ "lead": {
+  "title": "微软研究院：宣布解决数学界 31 年难题 KLS 猜想",
+  "leadParagraph": "微软研究院宣布解决 KLS 猜想（31 年）"
+ },
+ "leadItemId": "sha256:77ec6ad66af3dcc4",
+ "overview": "被问时否认、NVIDIA：RFD4-Proteina 用奖励引导推理时搜索设计蛋白。快讯 4 条。无固定漂移样本包，本日不含 samples。",
+ "highlights": [
+  {
+   "itemId": "sha256:77ec6ad66af3dcc4",
+   "title": "微软研究院：宣布解决数学界 31 年难题 KLS 猜想",
+   "summary": "微软研究院宣布解决 KLS 猜想（31 年）",
+   "sourceName": "Microsoft Research Blog",
+   "sourceUrl": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-21T16:00:00.000Z",
+   "available": true,
+   "otherSources": 0
   },
-  "leadItemId": null,
-  "overview": "今日重点 5 条：Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型、Hugging Face：TorchTPU 让 Transformers 与 Diffusers 原生跑在 TPU、OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线、Hugging Face 发布 AnyLanguageModel 1.0：苹果平台统一本地与托管模型 API、OpenAI：推进低资源编程语言上的编码能力。无固定漂移样本包，本日不含 samples。",
-  "highlights": [
-    {
-      "itemId": null,
-      "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
-      "summary": "Mistral 推出 Voxtral 3 语音智能体 SDK，支持 50+ 语言",
-      "sourceName": "",
-      "sourceUrl": "https://mistral.ai/news/voxtral-3/",
-      "sourceIconUrl": null,
-      "firstParty": true,
-      "publishedAt": "2026-10-20T12:00:22.000Z",
-      "available": true,
-      "otherSources": 0
-    },
-    {
-      "itemId": null,
-      "title": "Hugging Face：TorchTPU 让 Transformers 与 Diffusers 原生跑在 TPU",
-      "summary": "Hugging Face：TorchTPU 让 Transformers/Dif",
-      "sourceName": "",
-      "sourceUrl": "https://huggingface.co/blog/hf-torchtpu",
-      "sourceIconUrl": null,
-      "firstParty": true,
-      "publishedAt": "2026-10-20T00:00:00.000Z",
-      "available": true,
-      "otherSources": 0
-    },
-    {
-      "itemId": "sha256:1cfb6291fa158d05",
-      "title": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线",
-      "summary": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind",
-      "sourceName": "OpenAI News",
-      "sourceUrl": "https://openai.com/index/openai-to-acquire-orchestra-bio",
-      "sourceIconUrl": null,
-      "firstParty": true,
-      "publishedAt": "2026-10-20T00:00:00.000Z",
-      "available": true,
-      "otherSources": 2
-    },
-    {
-      "itemId": null,
-      "title": "Hugging Face 发布 AnyLanguageModel 1.0：苹果平台统一本地与托管模型 API",
-      "summary": "Hugging Face 发布 AnyLanguageModel 1.0，统一苹",
-      "sourceName": "",
-      "sourceUrl": "https://huggingface.co/blog/anylanguagemodel-1-0",
-      "sourceIconUrl": null,
-      "firstParty": true,
-      "publishedAt": "2026-10-20T00:00:00.000Z",
-      "available": true,
-      "otherSources": 0
-    }
-  ],
-  "sections": [
-    {
-      "label": "其他",
-      "summary": null,
-      "items": [
-        {
-          "itemId": null,
-          "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
-          "summary": "Mistral 推出 Voxtral 3 语音智能体 SDK，支持 50+ 语言",
-          "sourceName": "",
-          "sourceUrl": "https://mistral.ai/news/voxtral-3/",
-          "sourceIconUrl": null,
-          "firstParty": true,
-          "publishedAt": "2026-10-20T12:00:22.000Z",
-          "available": true,
-          "otherSources": 0
-        },
-        {
-          "itemId": null,
-          "title": "Hugging Face：TorchTPU 让 Transformers 与 Diffusers 原生跑在 TPU",
-          "summary": "Hugging Face：TorchTPU 让 Transformers/Dif",
-          "sourceName": "",
-          "sourceUrl": "https://huggingface.co/blog/hf-torchtpu",
-          "sourceIconUrl": null,
-          "firstParty": true,
-          "publishedAt": "2026-10-20T00:00:00.000Z",
-          "available": true,
-          "otherSources": 0
-        },
-        {
-          "itemId": null,
-          "title": "Hugging Face 发布 AnyLanguageModel 1.0：苹果平台统一本地与托管模型 API",
-          "summary": "Hugging Face 发布 AnyLanguageModel 1.0，统一苹",
-          "sourceName": "",
-          "sourceUrl": "https://huggingface.co/blog/anylanguagemodel-1-0",
-          "sourceIconUrl": null,
-          "firstParty": true,
-          "publishedAt": "2026-10-20T00:00:00.000Z",
-          "available": true,
-          "otherSources": 0
-        }
-      ]
-    },
-    {
-      "label": "行业",
-      "summary": null,
-      "items": [
-        {
-          "itemId": "sha256:1cfb6291fa158d05",
-          "title": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线",
-          "summary": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind",
-          "sourceName": "OpenAI News",
-          "sourceUrl": "https://openai.com/index/openai-to-acquire-orchestra-bio",
-          "sourceIconUrl": null,
-          "firstParty": true,
-          "publishedAt": "2026-10-20T00:00:00.000Z",
-          "available": true,
-          "otherSources": 2
-        }
-      ]
-    },
-    {
-      "label": "产品",
-      "summary": null,
-      "items": [
-        {
-          "itemId": "sha256:1dbe22633003a2af",
-          "title": "OpenAI：推进低资源编程语言上的编码能力",
-          "summary": "OpenAI 称改进模型在 COBOL、Fortran 等低资源编程语言上的表现；The Decoder 称在 MultiLangBench 上 GPT-6 A",
-          "sourceName": "OpenAI News",
-          "sourceUrl": "https://openai.com/index/low-resource-programming-languages",
-          "sourceIconUrl": null,
-          "firstParty": true,
-          "publishedAt": "2026-10-19T12:00:00.000Z",
-          "available": true,
-          "otherSources": 1
-        }
-      ]
-    }
-  ],
-  "flashes": [
-    {
-      "itemId": "sha256:be38b11f937cd76c",
-      "title": "DeepSeek 开源推理框架 DeepInfer",
-      "summary": "官方 GitHub 开源生产推理栈；注意力 62，快讯不进精选。",
-      "sourceName": "GitHub",
-      "sourceUrl": "https://github.com/deepseek-ai/DeepInfer",
-      "sourceIconUrl": null,
-      "firstParty": true,
-      "publishedAt": "2026-10-20T09:30:19.000Z",
-      "available": true
-    },
-    {
-      "itemId": null,
-      "title": "MemTensor 开源 MemT 1.0",
-      "summary": null,
-      "sourceName": "量子位",
-      "sourceUrl": "https://www.qbitai.com/2026/10/504456.html",
-      "sourceIconUrl": null,
-      "firstParty": false,
-      "publishedAt": "2026-10-20T12:50:34.000Z",
-      "available": true
-    },
-    {
-      "itemId": null,
-      "title": "VAST 开源实时世界模型 EdenLive",
-      "summary": "单卡 RTX 5090 上 720P 超 24FPS；注意力约66。",
-      "sourceName": "量子位",
-      "sourceUrl": "https://www.qbitai.com/2026/10/504136.html",
-      "sourceIconUrl": null,
-      "firstParty": false,
-      "publishedAt": "2026-10-18T11:49:49.000Z",
-      "available": true
-    },
-    {
-      "itemId": null,
-      "title": "Skyfall 推出工程世界模型 SKY-001",
-      "summary": "小红书·量子位：CAD 样本成本约降 150 倍，称首个工程世界模型。",
-      "sourceName": "小红书",
-      "sourceUrl": "https://www.xiaohongshu.com/explore/6ad6d383000000002701f4f0?xsec_token=AB9b2HhluXxKgc_RHdxGNpD8SoJwkzXlkXkYosP2XBokc=&xsec_source=pc_search",
-      "sourceIconUrl": null,
-      "firstParty": false,
-      "publishedAt": "2026-10-20T02:35:00.000Z",
-      "available": true
-    },
-    {
-      "itemId": "sha256:a695136067ef48da",
-      "title": "Momenta：世界模型加速，预判 2028 或迎 L4 拐点",
-      "summary": "曹旭东在物理 AI 与世界模型大会称智驾摩尔定律正加速。",
-      "sourceName": "IT之家",
-      "sourceUrl": "https://www.ithome.com/1/015/704.htm",
-      "sourceIconUrl": null,
-      "firstParty": false,
-      "publishedAt": "2026-10-21T02:41:06.000Z",
-      "available": true
-    },
-    {
-      "itemId": null,
-      "title": "OpenAI 高管上调「蒸馏」对中国追赶贡献估计",
-      "summary": "小红书转述 Dean Ball 将蒸馏贡献估计从约 30% 调至 50%。",
-      "sourceName": "小红书",
-      "sourceUrl": "https://www.xiaohongshu.com/explore/6ad595f7000000002f028199?xsec_token=ABhq9TqU2__HE1Xf_EoV3-qFeeJ8KzVncvWrSa1S63IGk%3D&xsec_source=pc_search",
-      "sourceIconUrl": null,
-      "firstParty": false,
-      "publishedAt": "2026-10-19T07:30:00.000Z",
-      "available": true
-    }
-  ],
-  "cover": {
-    "url": "assets/covers/daily-2026-10-21-1600.webp",
-    "srcSet": "assets/covers/daily-2026-10-21-720.webp 720w, assets/covers/daily-2026-10-21-1200.webp 1200w, assets/covers/daily-2026-10-21-1600.webp 1600w",
-    "width": 1600,
-    "height": null,
-    "alt": "Voxtral 3 语音智能体架构：麦克风→转写→推理模型↔工具→语音→扬声器",
-    "valueClass": "official_diagram",
-    "caption": null
+  {
+   "itemId": "sha256:95dedf578de78f3e",
+   "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
+   "summary": "OpenAI 前沿模型入驻谷歌云 Model Garden",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/openai-models-google-cloud",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-21T12:00:00.000Z",
+   "available": true,
+   "otherSources": 2
   },
-  "metrics": {
-    "totalEvents": 5,
-    "sourcesCount": 3,
-    "firstPartyEvents": 3,
-    "modelsReleased": 0
+  {
+   "itemId": "sha256:856c26ca4c2d04bc",
+   "title": "Mistral×NVIDIA：用加速计算推进工业工程与物理 AI 工作流",
+   "summary": "Mistral×NVIDIA 推进工业工程物理 AI 工作流",
+   "sourceName": "Mistral AI News",
+   "sourceUrl": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-21T12:00:20.000Z",
+   "available": true,
+   "otherSources": 1
   },
-  "readingMinutes": 2,
-  "prev": "2026-10-20",
-  "next": null
+  {
+   "itemId": "sha256:d2895ceb6fcba3ff",
+   "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认",
+   "summary": "OpenAI：内部编码智能体关闭监控并隐瞒",
+   "sourceName": "The Decoder",
+   "sourceUrl": "https://the-decoder.com/openai-cant-yet-explain-why-its-coding-agents-switch-off-misalignment-monitoring/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-21T12:34:57.000Z",
+   "available": true,
+   "otherSources": 1
+  }
+ ],
+ "sections": [
+  {
+   "label": "论文",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:77ec6ad66af3dcc4",
+     "title": "微软研究院：宣布解决数学界 31 年难题 KLS 猜想",
+     "summary": "微软研究院宣布解决 KLS 猜想（31 年）",
+     "sourceName": "Microsoft Research Blog",
+     "sourceUrl": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-21T16:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:9dbc7ca917a7820d",
+     "title": "NVIDIA：RFD4-Proteina 用奖励引导推理时搜索设计蛋白",
+     "summary": "NVIDIA RFD4-Proteina：奖励引导推理时蛋白设计搜索",
+     "sourceName": "NVIDIA Technical Blog",
+     "sourceUrl": "https://developer.nvidia.com/blog/design-proteins-with-rfd4-proteina-using-reward-guided-inference-time-search/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-21T12:30:00.000Z",
+     "available": true,
+     "otherSources": 0
+    }
+   ]
+  },
+  {
+   "label": "产品",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:95dedf578de78f3e",
+     "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
+     "summary": "OpenAI 前沿模型入驻谷歌云 Model Garden",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/openai-models-google-cloud",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-21T12:00:00.000Z",
+     "available": true,
+     "otherSources": 2
+    },
+    {
+     "itemId": "sha256:856c26ca4c2d04bc",
+     "title": "Mistral×NVIDIA：用加速计算推进工业工程与物理 AI 工作流",
+     "summary": "Mistral×NVIDIA 推进工业工程物理 AI 工作流",
+     "sourceName": "Mistral AI News",
+     "sourceUrl": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-21T12:00:20.000Z",
+     "available": true,
+     "otherSources": 1
+    }
+   ]
+  },
+  {
+   "label": "行业",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:d2895ceb6fcba3ff",
+     "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认",
+     "summary": "OpenAI：内部编码智能体关闭监控并隐瞒",
+     "sourceName": "The Decoder",
+     "sourceUrl": "https://the-decoder.com/openai-cant-yet-explain-why-its-coding-agents-switch-off-misalignment-monitoring/",
+     "sourceIconUrl": null,
+     "firstParty": false,
+     "publishedAt": "2026-10-21T12:34:57.000Z",
+     "available": true,
+     "otherSources": 1
+    }
+   ]
+  }
+ ],
+ "flashes": [
+  {
+   "itemId": "sha256:6a161c5da62b293f",
+   "title": "千诀世界模型做进机器人",
+   "summary": "清华系世界模型重物理规律与跨本体；兴趣词。",
+   "sourceName": "量子位",
+   "sourceUrl": "https://www.qbitai.com/2026/10/504653.html",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-21T07:15:05.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:0abd62eb8d18234e",
+   "title": "Inception Mercury 3 扩散语言模型",
+   "summary": "扩散 LM 自称更快；无独立复测。兴趣·扩散。",
+   "sourceName": "The Decoder",
+   "sourceUrl": "https://the-decoder.com/inceptions-mercury-3-diffusion-model-claims-to-beat-gpt-6-luna-and-claude-haiku-5-5-at-a-fraction-of-the-wait/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-21T14:45:45.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:20d01956fcee92e7",
+   "title": "沃尔玛将开放 AI 购物智能体",
+   "summary": null,
+   "sourceName": "The Verge",
+   "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1015715/walmart-ai-shopping-agents",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-21T19:30:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:e9fc027fe2ea965d",
+   "title": "Recursive 发布 Flint 编码模型",
+   "summary": null,
+   "sourceName": "TechCrunch",
+   "sourceUrl": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-21T20:27:41.000Z",
+   "available": true
+  }
+ ],
+ "cover": {
+  "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/10/KLS-illustration-scaled.png",
+  "width": null,
+  "height": null,
+  "alt": "平面切割与曲面切割同一凸几何体的对照示意图",
+  "valueClass": "paper_figure",
+  "caption": null
+ },
+ "metrics": {
+  "totalEvents": 5,
+  "sourcesCount": 7,
+  "firstPartyEvents": 4,
+  "modelsReleased": 0
+ },
+ "readingMinutes": 1,
+ "prev": "2026-10-21",
+ "next": null
 }
