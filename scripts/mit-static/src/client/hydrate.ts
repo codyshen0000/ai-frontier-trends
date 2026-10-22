@@ -1,5 +1,6 @@
 /** First-screen hydrate for 精选 / 热点 / 日报 / 搜索 / 收藏. No React. */
 
+import { asofPlainText, formatBeijing } from "../asof-copy";
 import { cardHref as hrefCard } from "./site-href.mjs";
 
 type Star = { id: string; title: string; url: string; source: string; date: string; savedAt: string };
@@ -567,26 +568,11 @@ async function applyFilter(filter: string, push = true) {
 }
 
 function asofLine() {
-  const stamp = beijingStamp(cfg.dataAsOf || cfg.builtAt);
-  const stale = cfg.dataAsOf && cfg.builtAt && Date.parse(cfg.builtAt) - Date.parse(cfg.dataAsOf) > 6 * 3600 * 1000;
-  return `数据截至 ${stamp}（北京时间）${stale ? " · 数据可能已过期" : ""}`;
+  return asofPlainText(cfg.dataAsOf, cfg.builtAt);
 }
 
 function beijingStamp(iso: string) {
-  if (!iso) return "";
-  try {
-    return new Intl.DateTimeFormat("zh-CN", {
-      timeZone: "Asia/Shanghai",
-      year: "numeric",
-      month: "2-digit",
-      day: "2-digit",
-      hour: "2-digit",
-      minute: "2-digit",
-      hour12: false,
-    }).format(new Date(iso)).replace(/\//g, "-");
-  } catch {
-    return iso.slice(0, 16).replace("T", " ");
-  }
+  return formatBeijing(iso);
 }
 
 function isFilterControl(el: EventTarget | null): el is HTMLElement {
