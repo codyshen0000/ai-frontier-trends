@@ -4,6 +4,7 @@
  */
 import generated from "virtual:ft-engine";
 import { groupByEvent } from "../../engine/groupByEvent.mjs";
+import { indexDailyCites } from "../../engine/card-summary.mjs";
 import type { HotResponse, ReportDetail, ReportNavigationEntry, TimelineResponse } from "@aihot/contracts/site";
 import type { SiteEvent, SiteItemPublic, SiteTopic } from "../../engine/site-data.ts";
 
@@ -15,12 +16,14 @@ export const itemUrls = generated.itemUrls || {};
 export const hot = generated.hot as HotResponse;
 export const hotStrip = generated.hotStrip as TimelineResponse["hot"];
 export const daily = (generated.daily || null) as ReportDetail | null;
+export const dailies = (generated.dailies || []) as ReportDetail[];
 export const dailyIndex = (generated.dailyIndex || []) as ReportNavigationEntry[];
 export const weeklyIndex = (generated.weeklyIndex || []) as ReportNavigationEntry[];
 export const monthlyIndex = (generated.monthlyIndex || []) as ReportNavigationEntry[];
 export const today = daily?.key || "";
 
 export const events = (generated.events || []) as SiteEvent[];
+export const dailyByItemId = indexDailyCites([daily, ...dailies]);
 
 type LooseItem = Partial<SiteItemPublic> & {
   id?: string;
@@ -101,7 +104,7 @@ function collectTopics(fromItems: SiteItemPublic[]): SiteTopic[] {
 export const items = collectItems();
 export const topics = collectTopics(items);
 
-const groupOpts = { events, redirects: generated.redirects, sources: [] };
+const groupOpts = { events, redirects: generated.redirects, sources: [], dailyByItemId };
 
 const cards = groupByEvent(generated.timeline?.cards || [], groupOpts) as TimelineResponse["cards"];
 

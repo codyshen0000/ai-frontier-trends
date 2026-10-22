@@ -322,7 +322,7 @@ function cardHtml(card: PageJson["cards"][number]) {
   const excerpt = x && (x.text || item.summary)
     ? `<p class="ft-x-excerpt">${escapeHtml(x.text || item.summary || "")}</p>`
     : item.summary
-      ? `<p class="mt-1 line-clamp-2 text-[14.5px] leading-[1.7] text-ink-3">${escapeHtml(item.summary)}</p>`
+      ? `<p class="mt-1 line-clamp-4 text-[14.5px] leading-[1.7] text-ink-3">${escapeHtml(item.summary)}</p>`
       : "";
   const more = card.group && card.group.additionalSourceCount >= 1
     ? `<span class="text-ink-4">另 ${card.group.additionalSourceCount} 家</span>`

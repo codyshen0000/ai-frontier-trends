@@ -18,6 +18,7 @@ import {
   allTimeline,
   builtAt,
   daily,
+  dailyByItemId,
   dailyIndex,
   dataAsOf,
   events,
@@ -39,7 +40,7 @@ const DATA_AS_OF = dataAsOf;
 const BUILT_AT = builtAt || new Date().toISOString();
 const timeline = {
   ...siteTimeline,
-  cards: groupByEvent(siteTimeline.cards || [], { events }),
+  cards: groupByEvent(siteTimeline.cards || [], { events, dailyByItemId }),
 };
 
 function hotWithoutCover(data: HotResponse): HotResponse {

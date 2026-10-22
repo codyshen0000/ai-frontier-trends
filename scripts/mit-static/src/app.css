@@ -240,6 +240,12 @@
 }
 
 @layer components {
+  /* Featured homepage cards: show ~4 lines like daily / aihot (Task #59). */
+  [data-ft-timeline] article p.line-clamp-2,
+  [data-ft-timeline] article p.line-clamp-3 {
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+  }
   .num {
     font-variant-numeric: tabular-nums;
   }

@@ -4,6 +4,7 @@
  */
 import { publicIconFor } from "../avatar_icons.mjs";
 import { groupByEvent } from "./groupByEvent.mjs";
+import { indexDailyCites, indexEvents, pickCardSummary, thickenFeedItems } from "./card-summary.mjs";
 import { isAcceptedCoverClass } from "./loader.mjs";
 import { FIXTURE_IDS, FIXTURE_TITLE_NEEDLES, textHasFixtureId } from "./ids.mjs";
 import { scrubForbiddenHeatCopyDeep } from "./heat-copy.mjs";
@@ -214,7 +215,7 @@ export function publicizeHotEntry(entry) {
   });
 }
 
-export function publicizeCard(card) {
+export function publicizeCard(card, ctx = {}) {
   if (!card?.item?.id || !card.item.title) return null;
   if (card.belowThreshold || card.item.belowThreshold) return null;
   if (FIXTURE_IDS.includes(card.item.id) || textHasFixtureId(card.item.id)) return null;
@@ -222,13 +223,15 @@ export function publicizeCard(card) {
   const reports = Number(card.group?.reportCount) || 0;
   const group = extra >= 1 || reports > 1 ? card.group : null;
   const originalUrl = isPublicHttpUrl(card.item.originalUrl) ? card.item.originalUrl : undefined;
+  const event = ctx.event || ctx.eventsById?.get(card.item.storyPublicId) || null;
+  const dailyCite = ctx.dailyCite || ctx.dailyByItemId?.get(card.item.id) || null;
   return stripScore({
     key: card.key,
     anchorAt: card.anchorAt,
     item: {
       id: card.item.id,
       title: card.item.title,
-      summary: cleanText(card.item.summary),
+      summary: pickCardSummary({ item: card.item, event, dailyCite }),
       reason: cleanText(card.item.reason),
       source: card.item.source || { name: "" },
       publishedAt: card.item.publishedAt ?? null,
@@ -273,6 +276,9 @@ export function collectItemUrls(bundle, cards = []) {
  * @param {{ source?: string, warning?: string|null }} [meta]
  */
 export function publicizeBundle(bundle, meta = {}) {
+  const eventsById = indexEvents(bundle.events);
+  const dailyByItemId = indexDailyCites([bundle.daily, ...(bundle.dailies || [])]);
+  const cardCtx = { eventsById, dailyByItemId };
   const hotEntries = (bundle.hot?.entries || []).map(publicizeHotEntry).filter(Boolean);
   const hot = {
     computedAt: bundle.hot?.computedAt ?? null,
@@ -281,10 +287,11 @@ export function publicizeBundle(bundle, meta = {}) {
   };
   const hotStrip = (bundle.hotStrip || []).map(publicizeHotStripRow).filter(Boolean);
   const timelineHot = (bundle.timeline?.hot || []).map(publicizeHotStripRow).filter(Boolean);
-  const cards = groupByEvent((bundle.timeline?.cards || []).map(publicizeCard).filter(Boolean), {
+  const cards = groupByEvent((bundle.timeline?.cards || []).map((card) => publicizeCard(card, cardCtx)).filter(Boolean), {
     events: bundle.events,
     redirects: bundle.redirects,
     sources: bundle.sources,
+    dailyByItemId,
   });
   const daily = bundle.daily ? stripScore(bundle.daily) : null;
   if (daily?.cover) daily.cover = publicCover(daily.cover);
@@ -319,17 +326,21 @@ export function publicizeBundle(bundle, meta = {}) {
       total: bundle.timeline?.total,
     },
     itemUrls: {},
-    feedItems: (bundle.feedItems || []).filter((item) => item?.guid && !textHasFixtureId(item.guid)),
+    feedItems: thickenFeedItems(
+      (bundle.feedItems || []).filter((item) => item?.guid && !textHasFixtureId(item.guid)),
+      cardCtx,
+    ),
     events: (bundle.events || []).map((event) => stripScore(event)),
     redirects: bundle.redirects || [],
     items: (bundle.items || []).filter((item) => item?.id && !textHasFixtureId(item.id)).map((item) => stripScore(item)),
     topics: bundle.topics || [],
     allTimeline: {
       filters: bundle.allTimeline?.filters || { channel: "all", category: null, tag: null },
-      cards: groupByEvent((bundle.allTimeline?.cards || []).map(publicizeCard).filter(Boolean), {
+      cards: groupByEvent((bundle.allTimeline?.cards || []).map((card) => publicizeCard(card, cardCtx)).filter(Boolean), {
         events: bundle.events,
         redirects: bundle.redirects,
         sources: bundle.sources,
+        dailyByItemId,
       }),
       nextCursor: bundle.allTimeline?.nextCursor ?? null,
       hot: null,
