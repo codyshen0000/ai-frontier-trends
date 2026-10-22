@@ -184,7 +184,7 @@ export function morePageBody({ hrefBetween, escapeHtml, weeklyPath = "/weekly/" 
         { label: "研究主页 · 本周主线", href: hrefBetween("/more/", weeklyPath), note: "结论先行的主线与读法" },
         { label: "时间线", href: hrefBetween("/more/", "/timeline/"), note: "主线修订史" },
         { label: "推翻信号", href: hrefBetween("/more/", "/signals/"), note: "让判断加强或翻盘的证据" },
-        { label: "权重待交付", href: hrefBetween("/more/", "/weights/"), note: "已宣布、尚未放出的权重" },
+        { label: "权重待交付", href: hrefBetween("/more/", "/weights/"), note: "已宣布、已交付与仍待交付的权重" },
       ],
     },
     {

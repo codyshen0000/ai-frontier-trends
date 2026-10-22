@@ -11,14 +11,14 @@
     "snapshot:preview": "node scripts/snapshot_preview.mjs",
     "build:mit-static": "node scripts/l2_covers.mjs && node scripts/mit-static/prerender.mjs",
     "avatars": "node scripts/avatars.mjs",
-    "test:covers": "node scripts/l2_covers.test.mjs && node scripts/story_digest.test.mjs && node scripts/score_absent.test.mjs && node scripts/static_export.search.test.mjs",
+    "test:covers": "node scripts/l2_covers.test.mjs && node scripts/story_digest.test.mjs && node scripts/score_absent.test.mjs && node scripts/static_export.search.test.mjs && node --test scripts/charts.test.mjs",
     "test:engine": "node --test scripts/engine/",
     "test:b1": "node scripts/run-glob-tests.mjs scripts/b1",
     "test:b2": "node scripts/run-glob-tests.mjs scripts/b2",
     "build:ci": "npm run test:engine && npm run test:b1 && npm run test:b2 && npm run build:public && npm run verify:ia",
     "verify:flux3": "python3 scripts/verify_flux3_coverage.py",
     "verify:ia": "node scripts/verify_ia.mjs",
-    "verify:remaining": "node scripts/verify/starred-base.mjs && node scripts/verify/api-paths.mjs && node scripts/verify/scan-all-text.mjs && node scripts/verify/more-weekly.mjs && node scripts/verify/report-embed.mjs",
+    "verify:remaining": "node scripts/verify/starred-base.mjs && node scripts/verify/api-paths.mjs && node scripts/verify/scan-all-text.mjs && node scripts/verify/more-weekly.mjs && node scripts/verify/report-embed.mjs && node scripts/verify/trackers.mjs",
     "test:buttons": "node scripts/qa_buttons.mjs"
   },
   "engines": {
