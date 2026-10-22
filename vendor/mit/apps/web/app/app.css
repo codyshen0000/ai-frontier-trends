@@ -575,3 +575,10 @@
 :root:not([data-theme="dark"]) body:has(.report-shell) {
   background: color-mix(in srgb, var(--bg) 60%, var(--surface));
 }
+
+/* Do not cancel main's lg:pb-[72px] — that hid .ft-asof under the sticky archive. */
+@media (min-width: 64rem) {
+  .report-shell {
+    margin-bottom: 0;
+  }
+}

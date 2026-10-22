@@ -223,6 +223,7 @@ assert(existsSync(join(distDir, "assets", "hydrate.js")), "dist has hydrate.js")
 const leftoverHtmlHref = /(?:href|src|action)="(?:index|hot|daily)\.html/;
 const home = readFileSync(join(distDir, "index.html"), "utf8");
 assert(home.includes("精选 · 前沿趋势"), "home is the 精选 feed");
+assert(home.includes("ft-asof") && home.includes("数据截至") && home.includes("上次发布"), "home footer has dual as-of lines");
 assert(home.includes("当前热点"), "home has 当前热点");
 assert(home.includes("完整榜单"), "home links into the ranking");
 assert(home.includes('href="assets/app.css"'), "home CSS is relative assets/app.css");
@@ -341,6 +342,13 @@ assert(!morePage.includes("AIHOT") && !morePage.includes("MyHOT"), "more page ha
 const dailyPage = readFileSync(join(distDir, "daily", "index.html"), "utf8");
 assert(dailyPage.includes("AI 日报 · 前沿趋势"), "daily title uses 前沿趋势");
 assert(dailyPage.includes('href="../assets/app.css"'), "/daily/ CSS is ../assets/app.css");
+assert(dailyPage.includes("ft-asof") && dailyPage.includes("数据截至") && dailyPage.includes("上次发布"), "daily footer has dual as-of lines");
+assert(!dailyPage.includes("-mb-[72px]"), "daily report-shell does not use lg:-mb-[72px]");
+{
+  const shellAt = dailyPage.indexOf("report-shell");
+  const asofAt = dailyPage.indexOf('class="ft-asof"') >= 0 ? dailyPage.indexOf('class="ft-asof"') : dailyPage.indexOf("ft-asof");
+  assert(shellAt >= 0 && asofAt > shellAt, "daily .ft-asof is inside the report shell, not a covered sibling");
+}
 assert(
   dailyPage.includes('href="../feed/weekly.xml"') || dailyPage.includes('href="../feed.xml"'),
   "/daily/ RSS is ../feed/weekly.xml or ../feed.xml",

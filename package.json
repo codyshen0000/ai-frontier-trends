@@ -12,7 +12,7 @@
     "build:mit-static": "node scripts/l2_covers.mjs && node scripts/mit-static/prerender.mjs",
     "avatars": "node scripts/avatars.mjs",
     "test:covers": "node scripts/l2_covers.test.mjs && node scripts/story_digest.test.mjs && node scripts/score_absent.test.mjs && node scripts/static_export.search.test.mjs && node --test scripts/charts.test.mjs",
-    "test:asof": "node --experimental-strip-types --no-warnings scripts/mit-static/src/asof-copy.test.ts",
+    "test:asof": "node --experimental-strip-types --no-warnings scripts/mit-static/src/asof-copy.test.ts && node --experimental-strip-types --no-warnings scripts/mit-static/src/report-footer-layout.test.ts",
     "test:engine": "node --test scripts/engine/",
     "test:b1": "node scripts/run-glob-tests.mjs scripts/b1",
     "test:b2": "node scripts/run-glob-tests.mjs scripts/b2",

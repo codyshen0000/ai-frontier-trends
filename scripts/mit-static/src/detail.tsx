@@ -279,15 +279,17 @@ export function ReportEmpty({
   today,
   title,
   copy,
+  footer,
 }: {
   kind: "daily" | "weekly" | "monthly";
   index: Array<{ key: string; issueNumber?: number; title?: string | null }>;
   today: string;
   title: string;
   copy: string;
+  footer?: ReactNode;
 }) {
   return (
-    <ReportLayout kind={kind} index={index} current={null} today={today} outline={[]}>
+    <ReportLayout kind={kind} index={index} current={null} today={today} outline={[]} footer={footer}>
       <div id="report-start" className="px-4 lg:px-0">
         <h1 className="sr-only">{title}</h1>
         <EmptyState title={copy} />
