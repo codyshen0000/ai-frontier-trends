@@ -6,7 +6,7 @@
  "generatedAt": "2026-10-20T00:43:38.000Z",
  "lead": {
   "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
-  "leadParagraph": "可灵 4.0 加长视频与口型同步"
+  "leadParagraph": "The Decoder 称 Kling AI 4.0 支持最长约 30 秒、最多 10 张关键帧、提示词理解扩展，并含立体声、多语口型同步与更轻 Flash 变体。"
  },
  "leadItemId": "sha256:10f7f763ebef7da0",
  "overview": "今日重点四条：可灵 AI 4.0（更长视频、立体声与多语口型同步）。英伟达开源面向企业与 PC 的智能体模型。MiniMax M3.1 Flash（称提速约 3 倍、成本约降 70%，AA 指数到 42）。Hugging Face TorchNeuron，让 HF 模型更易跑在 AWS Trainium。",
@@ -14,7 +14,7 @@
   {
    "itemId": "sha256:10f7f763ebef7da0",
    "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
-   "summary": "可灵 4.0 加长视频与口型同步",
+   "summary": "The Decoder 称 Kling AI 4.0 支持最长约 30 秒、最多 10 张关键帧、提示词理解扩展，并含立体声、多语口型同步与更轻 Flash 变体。",
    "sourceName": "The Decoder",
    "sourceUrl": "https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/",
    "sourceIconUrl": null,
@@ -26,7 +26,7 @@
   {
    "itemId": "sha256:bfa70917f3b198d1",
    "title": "英伟达发布面向企业与 PC 的开源智能体模型",
-   "summary": "英伟达开源企业与 PC 端智能体模型",
+   "summary": "TechCrunch 称英伟达新开源模型，面向企业自建开源模型与端侧本地运行智能体。",
    "sourceName": "TechCrunch · AI",
    "sourceUrl": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
    "sourceIconUrl": null,
@@ -36,21 +36,9 @@
    "otherSources": 0
   },
   {
-   "itemId": null,
-   "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
-   "summary": "M3.1 Flash 提速降本，AA 指数到 42",
-   "sourceName": "",
-   "sourceUrl": "https://the-decoder.com/minimax-m3-1-flash-shows-chinas-ai-price-race-has-no-floor-in-sight/",
-   "sourceIconUrl": null,
-   "firstParty": false,
-   "publishedAt": "2026-10-19T18:22:30.000Z",
-   "available": true,
-   "otherSources": 0
-  },
-  {
    "itemId": "sha256:5c52b7d34becd1cc",
    "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
-   "summary": "Trainium 上跑 HF 模型更省事",
+   "summary": "Hugging Face 博客介绍 TorchNeuron，称在 AWS Trainium 上运行 HF 模型比以往更容易。",
    "sourceName": "Hugging Face Blog",
    "sourceUrl": "https://huggingface.co/blog/hf-torchneuron",
    "sourceIconUrl": null,
@@ -68,7 +56,7 @@
     {
      "itemId": "sha256:10f7f763ebef7da0",
      "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
-     "summary": "可灵 4.0 加长视频与口型同步",
+     "summary": "The Decoder 称 Kling AI 4.0 支持最长约 30 秒、最多 10 张关键帧、提示词理解扩展，并含立体声、多语口型同步与更轻 Flash 变体。",
      "sourceName": "The Decoder",
      "sourceUrl": "https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/",
      "sourceIconUrl": null,
@@ -80,7 +68,7 @@
     {
      "itemId": "sha256:bfa70917f3b198d1",
      "title": "英伟达发布面向企业与 PC 的开源智能体模型",
-     "summary": "英伟达开源企业与 PC 端智能体模型",
+     "summary": "TechCrunch 称英伟达新开源模型，面向企业自建开源模型与端侧本地运行智能体。",
      "sourceName": "TechCrunch · AI",
      "sourceUrl": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
      "sourceIconUrl": null,
@@ -88,24 +76,18 @@
      "publishedAt": "2026-10-19T15:37:09.000Z",
      "available": true,
      "otherSources": 0
-    }
-   ]
-  },
-  {
-   "label": "其他",
-   "summary": null,
-   "items": [
+    },
     {
-     "itemId": null,
-     "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
-     "summary": "M3.1 Flash 提速降本，AA 指数到 42",
-     "sourceName": "",
-     "sourceUrl": "https://the-decoder.com/minimax-m3-1-flash-shows-chinas-ai-price-race-has-no-floor-in-sight/",
+     "itemId": "sha256:931ff0f85ef4bf70",
+     "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
+     "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017：基准更好、完成任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API。The Decoder 与量子位均有报道。",
+     "sourceName": "The Decoder",
+     "sourceUrl": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/",
      "sourceIconUrl": null,
      "firstParty": false,
-     "publishedAt": "2026-10-19T18:22:30.000Z",
+     "publishedAt": "2026-10-17T10:33:28.000Z",
      "available": true,
-     "otherSources": 0
+     "otherSources": 1
     }
    ]
   },
@@ -116,12 +98,24 @@
     {
      "itemId": "sha256:5c52b7d34becd1cc",
      "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
-     "summary": "Trainium 上跑 HF 模型更省事",
+     "summary": "Hugging Face 博客介绍 TorchNeuron，称在 AWS Trainium 上运行 HF 模型比以往更容易。",
      "sourceName": "Hugging Face Blog",
      "sourceUrl": "https://huggingface.co/blog/hf-torchneuron",
      "sourceIconUrl": null,
      "firstParty": true,
      "publishedAt": "2026-10-19T00:00:00.000Z",
+     "available": true,
+     "otherSources": 1
+    },
+    {
+     "itemId": "sha256:1dbe22633003a2af",
+     "title": "OpenAI：推进低资源编程语言上的编码能力",
+     "summary": "OpenAI 称改进模型在 COBOL、Fortran 等低资源编程语言上的表现；The Decoder 称在 MultiLangBench 上 GPT-6 Astra 跨 20 种语言测试通过率约 87.4%。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/low-resource-programming-languages",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-19T12:00:00.000Z",
      "available": true,
      "otherSources": 1
     }
@@ -131,12 +125,13 @@
  "flashes": [],
  "cover": null,
  "metrics": {
-  "totalEvents": 4,
-  "sourcesCount": 3,
-  "firstPartyEvents": 1,
-  "modelsReleased": 2
+  "totalEvents": 5,
+  "sourcesCount": 5,
+  "firstPartyEvents": 2,
+  "modelsReleased": 3,
+  "mainCardNote": "今日仅 5 条达收录标准"
  },
- "readingMinutes": 1,
+ "readingMinutes": 2,
  "prev": "2026-10-19",
  "next": "2026-10-21"
 }
