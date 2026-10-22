@@ -90,6 +90,20 @@
    "tier": "T2",
    "kind": "editorial",
    "homepage": "https://www.theverge.com"
+  },
+  {
+   "sourceId": "rss-vllm-blog",
+   "name": "vLLM Blog",
+   "tier": "T1",
+   "kind": "editorial",
+   "homepage": "https://vllm.ai"
+  },
+  {
+   "sourceId": "rss-wiz-blog",
+   "name": "Wiz Blog",
+   "tier": "T1",
+   "kind": "editorial",
+   "homepage": "https://www.wiz.io"
   }
  ]
 }

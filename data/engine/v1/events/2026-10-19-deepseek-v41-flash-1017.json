@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-19-deepseek-v41-flash-1017",
  "title": "DeepSeek 发布开放权重 V4.1-Flash-1017",
- "status": "active",
+ "status": "watching",
  "reportCount": 3,
  "sourceCount": 3,
  "firstReportAt": "2026-10-17T10:33:28.000Z",
@@ -13,10 +13,10 @@
  "latest": "IT之家称 V4.1-Flash-1017（Max）登顶 Agent Arena 与 Code Arena: WebDev 开源榜、总榜第 11；约 7498 次会话，任务成本中位数约 0.18 美元。",
  "latestReport": null,
  "whyHot": {
-  "participants48h": 1,
+  "participants48h": 0,
   "newParticipants6h": 0,
   "recentReports24h": 0,
-  "observationComplete": true,
+  "observationComplete": false,
   "rank": null
  },
  "developments": [
@@ -78,213 +78,7 @@
    "originalUrl": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/"
   }
  ],
- "heat": [
-  {
-   "hour": "2026-10-20T08:00:00.000Z",
-   "heat": 10.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-20T09:00:00.000Z",
-   "heat": 9.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-20T10:00:00.000Z",
-   "heat": 9.4,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-20T11:00:00.000Z",
-   "heat": 9.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-20T12:00:00.000Z",
-   "heat": 8.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-20T13:00:00.000Z",
-   "heat": 8.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-20T14:00:00.000Z",
-   "heat": 8.4,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-20T15:00:00.000Z",
-   "heat": 8.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-20T16:00:00.000Z",
-   "heat": 7.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-20T17:00:00.000Z",
-   "heat": 7.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-20T18:00:00.000Z",
-   "heat": 7.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-20T19:00:00.000Z",
-   "heat": 7.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-20T20:00:00.000Z",
-   "heat": 7.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-20T21:00:00.000Z",
-   "heat": 6.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-20T22:00:00.000Z",
-   "heat": 6.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-20T23:00:00.000Z",
-   "heat": 6.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T00:00:00.000Z",
-   "heat": 6.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T01:00:00.000Z",
-   "heat": 6.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T02:00:00.000Z",
-   "heat": 5.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T03:00:00.000Z",
-   "heat": 5.8,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T04:00:00.000Z",
-   "heat": 5.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T05:00:00.000Z",
-   "heat": 5.4,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T06:00:00.000Z",
-   "heat": 5.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T07:00:00.000Z",
-   "heat": 5.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T08:00:00.000Z",
-   "heat": 5.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T09:00:00.000Z",
-   "heat": 4.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T10:00:00.000Z",
-   "heat": 4.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T11:00:00.000Z",
-   "heat": 4.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T12:00:00.000Z",
-   "heat": 4.4,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T13:00:00.000Z",
-   "heat": 4.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T14:00:00.000Z",
-   "heat": 4.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T15:00:00.000Z",
-   "heat": 4.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T16:00:00.000Z",
-   "heat": 4.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T17:00:00.000Z",
-   "heat": 3.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T18:00:00.000Z",
-   "heat": 3.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T19:00:00.000Z",
-   "heat": 3.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T20:00:00.000Z",
-   "heat": 3.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T21:00:00.000Z",
-   "heat": 3.4,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T22:00:00.000Z",
-   "heat": 3.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T23:00:00.000Z",
-   "heat": 3.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T00:00:00.000Z",
-   "heat": 3.1,
-   "participants": 1
-  }
- ],
+ "heat": [],
  "related": [],
  "topics": [],
  "recommendReason": "V4.1-Flash 登顶 Agent Arena 开源榜，总榜第11",

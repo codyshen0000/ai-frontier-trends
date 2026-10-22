@@ -1,13 +1,20 @@
 {
  "pageSize": 20,
- "pageCount": 1,
- "total": 20,
+ "pageCount": 2,
+ "total": 24,
  "pages": [
   {
    "page": 1,
    "path": "timeline/page-1.json",
    "count": 20,
    "firstAnchorAt": "2026-10-21T19:53:20.000Z",
+   "lastAnchorAt": "2026-10-20T07:00:00.000Z"
+  },
+  {
+   "page": 2,
+   "path": "timeline/page-2.json",
+   "count": 4,
+   "firstAnchorAt": "2026-10-19T17:36:26.000Z",
    "lastAnchorAt": "2026-10-17T10:33:28.000Z"
   }
  ]

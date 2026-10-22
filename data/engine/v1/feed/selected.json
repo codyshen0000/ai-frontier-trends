@@ -74,6 +74,17 @@
    "eventPublicId": "2026-10-21-ibm-granite-speech-5"
   },
   {
+   "guid": "sha256:859a2ca12c0c52e9",
+   "title": "Wiz：LiteLLM 1.107.0 被投毒，窃取云与 AI 凭证",
+   "summary": "恶意 LiteLLM 1.107.0 上架 PyPI/Docker，窃取浏览器云与 AI 密钥并含休眠 C2。",
+   "originalUrl": "https://www.wiz.io/blog/litellm-compromised-steals-credentials",
+   "pubDate": "2026-10-21T13:44:12.000Z",
+   "sourceName": "Wiz Blog",
+   "category": "industry",
+   "categoryLabel": "行业",
+   "eventPublicId": "2026-10-22-litellm-pypi-compromise"
+  },
+  {
    "guid": "sha256:b1215e1aefc04c61",
    "title": "OpenAI 详解 ChatGPT 广告栈，并扩至 26 国、广告主破十万",
    "summary": "ChatGPT Ads 扩展到 26 国，广告主称逾 10 万。",
@@ -160,6 +171,39 @@
    "category": "opinion",
    "categoryLabel": "观点",
    "eventPublicId": "2026-10-22-openai-gov-cyber-defenders"
+  },
+  {
+   "guid": "sha256:3e7599c6661c19f5",
+   "title": "vLLM 开源 Humming：面向量化推理的内核库",
+   "summary": "蚂蚁×vLLM 社区开源 Humming 量化推理内核，并给出 dense/MoE 与集成说明。",
+   "originalUrl": "https://vllm.ai/blog/2026-10-21-humming",
+   "pubDate": "2026-10-21T00:00:00.000Z",
+   "sourceName": "vLLM Blog",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-10-22-vllm-humming-kernels"
+  },
+  {
+   "guid": "sha256:3b031f6c198ac941",
+   "title": "vLLM 宣布 Day-0 支持 Flint 编码模型",
+   "summary": "vLLM 称 Day-0 支持 Flint 双检查点，单卡单请求约 500 tok/s。",
+   "originalUrl": "https://vllm.ai/blog/2026-10-21-flint",
+   "pubDate": "2026-10-21T00:00:00.000Z",
+   "sourceName": "vLLM Blog",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-10-22-recursive-flint-coding-model"
+  },
+  {
+   "guid": "sha256:011eb73686ffbc98",
+   "title": "Wiz：钓鱼到 LLMjacking，劫持云账单盗刷模型 API",
+   "summary": "搜索广告钓鱼后劫持云计费账户，未授权刷大模型 API 可产生巨额账单。",
+   "originalUrl": "https://www.wiz.io/blog/from-phishing-to-llmjacking",
+   "pubDate": "2026-10-20T20:03:10.000Z",
+   "sourceName": "Wiz Blog",
+   "category": "industry",
+   "categoryLabel": "行业",
+   "eventPublicId": "2026-10-22-wiz-llmjacking-cloud-billing"
   },
   {
    "guid": "sha256:4c6292fc5ecba5f2",

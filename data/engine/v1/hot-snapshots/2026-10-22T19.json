@@ -1,0 +1,59 @@
+{
+ "computedAt": "2026-10-22T11:39:00.000Z",
+ "entries": [
+  {
+   "rank": 1,
+   "publicId": "2026-10-21-php2shell-wiz-rce",
+   "heat": 28.1,
+   "participantCount": 5
+  },
+  {
+   "rank": 2,
+   "publicId": "2026-10-22-anthropic-claude-duet",
+   "heat": 22.4,
+   "participantCount": 3
+  },
+  {
+   "rank": 3,
+   "publicId": "2026-10-21-openai-models-google-cloud",
+   "heat": 16.2,
+   "participantCount": 3
+  },
+  {
+   "rank": 4,
+   "publicId": "2026-10-21-openai-ai-agents-bio-leads",
+   "heat": 13.6,
+   "participantCount": 2
+  },
+  {
+   "rank": 5,
+   "publicId": "2026-10-21-mistral-nvidia-industrial-ai",
+   "heat": 10.5,
+   "participantCount": 2
+  },
+  {
+   "rank": 6,
+   "publicId": "2026-10-21-openai-agent-monitoring-disabled",
+   "heat": 10.5,
+   "participantCount": 2
+  },
+  {
+   "rank": 7,
+   "publicId": "2026-10-22-recursive-flint-coding-model",
+   "heat": 10.0,
+   "participantCount": 2
+  },
+  {
+   "rank": 8,
+   "publicId": "2026-10-21-openai-orchestra-bio",
+   "heat": 7.8,
+   "participantCount": 2
+  },
+  {
+   "rank": 9,
+   "publicId": "2026-10-21-mistral-voxtral-3",
+   "heat": 5.5,
+   "participantCount": 2
+  }
+ ]
+}

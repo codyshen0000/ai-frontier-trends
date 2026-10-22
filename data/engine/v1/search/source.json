@@ -1,6 +1,55 @@
 {
- "generatedAt": "2026-10-22T00:41:00.000Z",
+ "generatedAt": "2026-10-22T11:39:00.000Z",
  "docs": [
+  {
+   "id": "sha256:37719ab40890fac2",
+   "kind": "item",
+   "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
+   "summary": "The Decoder 转述 OpenAI 与 PerturbAI/Scripps 用智能体分析小鼠脑细胞数据。",
+   "publishedAt": "2026-10-22T10:01:53.000Z",
+   "sourceName": "The Decoder",
+   "category": "industry",
+   "selected": false,
+   "eventPublicId": "2026-10-21-openai-ai-agents-bio-leads",
+   "originalUrl": "https://the-decoder.com/openai-agents-analyze-mouse-brain-data-in-32-minutes-a-job-that-would-take-humans-months/"
+  },
+  {
+   "id": "2026-10-21-openai-ai-agents-bio-leads",
+   "kind": "event",
+   "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
+   "summary": null,
+   "publishedAt": "2026-10-22T10:01:53.000Z",
+   "sourceNames": [
+    "OpenAI News",
+    "The Decoder"
+   ],
+   "path": "/events/2026-10-21-openai-ai-agents-bio-leads/"
+  },
+  {
+   "id": "sha256:feaddedae556a56d",
+   "kind": "item",
+   "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
+   "summary": "The Decoder 称 Anthropic 推出常驻智能体 Claude Duet，对标 Muse/Dots。",
+   "publishedAt": "2026-10-22T08:35:22.000Z",
+   "sourceName": "The Decoder",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-10-22-anthropic-claude-duet",
+   "originalUrl": "https://the-decoder.com/anthropic-takes-on-grok-bot-metas-muse-and-openais-dots-with-its-always-on-agent-claude-duet/"
+  },
+  {
+   "id": "2026-10-22-anthropic-claude-duet",
+   "kind": "event",
+   "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
+   "summary": "The Verge 与 IT之家称 Anthropic 推出面向专业人士与小企业的 Claude Duet 智能体（研究预览），提供 iOS/Android 独立应用与网页入口，定位 24 小时在线助理，对标 Meta Muse 等。官方新闻室暂未见同名稿。",
+   "publishedAt": "2026-10-22T08:35:22.000Z",
+   "sourceNames": [
+    "IT之家（全站，需关键词过滤）",
+    "The Decoder",
+    "The Verge · AI"
+   ],
+   "path": "/events/2026-10-22-anthropic-claude-duet/"
+  },
   {
    "id": "sha256:814db62e1fecf4f7",
    "kind": "item",
@@ -14,16 +63,28 @@
    "originalUrl": "https://www.ithome.com/1/016/169.htm"
   },
   {
-   "id": "2026-10-22-anthropic-claude-duet",
+   "id": "sha256:e9fc027fe2ea965d",
+   "kind": "item",
+   "title": "报道：Recursive 发布 Flint，称主要由 AI 系统自研的笔记本级编码模型",
+   "summary": "Flint 免费笔记本级编码模型，称 largely AI 自研。",
+   "publishedAt": "2026-10-21T20:27:41.000Z",
+   "sourceName": "TechCrunch · AI",
+   "category": "model",
+   "selected": false,
+   "eventPublicId": "2026-10-22-recursive-flint-coding-model",
+   "originalUrl": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/"
+  },
+  {
+   "id": "2026-10-22-recursive-flint-coding-model",
    "kind": "event",
-   "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
-   "summary": "The Verge 与 IT之家称 Anthropic 推出面向专业人士与小企业的 Claude Duet 智能体（研究预览），提供 iOS/Android 独立应用与网页入口，定位 24 小时在线助理，对标 Meta Muse 等。官方新闻室暂未见同名稿。",
-   "publishedAt": "2026-10-21T22:44:18.000Z",
+   "title": "报道：Recursive 发布 Flint；vLLM 宣布 Day-0 支持",
+   "summary": "此前报道 Recursive 发布称主要由 AI 自研的笔记本级编码模型 Flint（约 40B/2.5B active）。 vLLM 博客称 Day-0 支持 Flint 双检查点，单卡单请求解码约 500 tokens/s。",
+   "publishedAt": "2026-10-21T20:27:41.000Z",
    "sourceNames": [
-    "IT之家（全站，需关键词过滤）",
-    "The Verge · AI"
+    "TechCrunch · AI",
+    "vLLM Blog"
    ],
-   "path": "/events/2026-10-22-anthropic-claude-duet/"
+   "path": "/events/2026-10-22-recursive-flint-coding-model/"
   },
   {
    "id": "sha256:258d5ff776fa8f13",
@@ -199,6 +260,29 @@
     "The Verge · AI"
    ],
    "path": "/events/2026-10-21-openai-agent-monitoring-disabled/"
+  },
+  {
+   "id": "sha256:859a2ca12c0c52e9",
+   "kind": "item",
+   "title": "Wiz：LiteLLM 1.107.0 被投毒，窃取云与 AI 凭证",
+   "summary": "恶意 LiteLLM 1.107.0 上架 PyPI/Docker，窃取浏览器云与 AI 密钥并含休眠 C2。",
+   "publishedAt": "2026-10-21T13:44:12.000Z",
+   "sourceName": "Wiz Blog",
+   "category": "industry",
+   "selected": true,
+   "eventPublicId": "2026-10-22-litellm-pypi-compromise",
+   "originalUrl": "https://www.wiz.io/blog/litellm-compromised-steals-credentials"
+  },
+  {
+   "id": "2026-10-22-litellm-pypi-compromise",
+   "kind": "event",
+   "title": "Wiz：LiteLLM 1.107.0 被投毒，窃取云与 AI 凭证",
+   "summary": "Wiz 披露，恶意版本 LiteLLM 1.107.0 于 10 月 21 日被上传至 PyPI 与 Docker，内含针对浏览器、云与 AI 密钥的凭证窃取器，并带休眠 C2 能力。 属供应链投毒事件；使用 LiteLLM 的团队应立即核查版本与密钥轮换。",
+   "publishedAt": "2026-10-21T13:44:12.000Z",
+   "sourceNames": [
+    "Wiz Blog"
+   ],
+   "path": "/events/2026-10-22-litellm-pypi-compromise/"
   },
   {
    "id": "sha256:b1215e1aefc04c61",
@@ -378,17 +462,6 @@
    "originalUrl": "https://openai.com/index/scaling-ai-research-for-complex-biological-data"
   },
   {
-   "id": "2026-10-21-openai-ai-agents-bio-leads",
-   "kind": "event",
-   "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
-   "summary": null,
-   "publishedAt": "2026-10-21T04:50:00.000Z",
-   "sourceNames": [
-    "OpenAI News"
-   ],
-   "path": "/events/2026-10-21-openai-ai-agents-bio-leads/"
-  },
-  {
    "id": "sha256:e270f5ba4688033d",
    "kind": "item",
    "title": "OpenAI：民主治理前沿 AI 之二——赋能网络防御者",
@@ -399,6 +472,41 @@
    "selected": true,
    "eventPublicId": "2026-10-22-openai-gov-cyber-defenders",
    "originalUrl": "https://openai.com/index/empowering-cyber-defenders"
+  },
+  {
+   "id": "sha256:3e7599c6661c19f5",
+   "kind": "item",
+   "title": "vLLM 开源 Humming：面向量化推理的内核库",
+   "summary": "蚂蚁×vLLM 社区开源 Humming 量化推理内核，并给出 dense/MoE 与集成说明。",
+   "publishedAt": "2026-10-21T00:00:00.000Z",
+   "sourceName": "vLLM Blog",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-10-22-vllm-humming-kernels",
+   "originalUrl": "https://vllm.ai/blog/2026-10-21-humming"
+  },
+  {
+   "id": "sha256:3b031f6c198ac941",
+   "kind": "item",
+   "title": "vLLM 宣布 Day-0 支持 Flint 编码模型",
+   "summary": "vLLM 称 Day-0 支持 Flint 双检查点，单卡单请求约 500 tok/s。",
+   "publishedAt": "2026-10-21T00:00:00.000Z",
+   "sourceName": "vLLM Blog",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-10-22-recursive-flint-coding-model",
+   "originalUrl": "https://vllm.ai/blog/2026-10-21-flint"
+  },
+  {
+   "id": "2026-10-22-vllm-humming-kernels",
+   "kind": "event",
+   "title": "vLLM 开源 Humming：面向量化推理的内核库",
+   "summary": "vLLM 博客宣布与蚂蚁集团社区合作开源 Humming，面向量化推理的灵活内核库，覆盖多种 GPU 与量化格式，并给出 dense/MoE 性能与 vLLM 集成说明。 属推理栈基础设施更新，可直接降低量化部署摩擦。",
+   "publishedAt": "2026-10-21T00:00:00.000Z",
+   "sourceNames": [
+    "vLLM Blog"
+   ],
+   "path": "/events/2026-10-22-vllm-humming-kernels/"
   },
   {
    "id": "2026-10-22-openai-gov-cyber-defenders",
@@ -422,6 +530,29 @@
    "selected": false,
    "eventPublicId": "2026-10-21-openai-orchestra-bio",
    "originalUrl": "https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%e2%81%a0-to-beef-up-its-biotech-business/"
+  },
+  {
+   "id": "sha256:011eb73686ffbc98",
+   "kind": "item",
+   "title": "Wiz：钓鱼到 LLMjacking，劫持云账单盗刷模型 API",
+   "summary": "搜索广告钓鱼后劫持云计费账户，未授权刷大模型 API 可产生巨额账单。",
+   "publishedAt": "2026-10-20T20:03:10.000Z",
+   "sourceName": "Wiz Blog",
+   "category": "industry",
+   "selected": true,
+   "eventPublicId": "2026-10-22-wiz-llmjacking-cloud-billing",
+   "originalUrl": "https://www.wiz.io/blog/from-phishing-to-llmjacking"
+  },
+  {
+   "id": "2026-10-22-wiz-llmjacking-cloud-billing",
+   "kind": "event",
+   "title": "Wiz：钓鱼到 LLMjacking，劫持云账单盗刷模型 API",
+   "summary": "Wiz 描述攻击链：搜索广告钓鱼窃凭证后劫持云计费账户，用于未授权调用大模型 API，可造成数十万美元账单。 提醒云账号与计费权限成为 AI 用量攻击面。",
+   "publishedAt": "2026-10-20T20:03:10.000Z",
+   "sourceNames": [
+    "Wiz Blog"
+   ],
+   "path": "/events/2026-10-22-wiz-llmjacking-cloud-billing/"
   },
   {
    "id": "sha256:7f08e221d9204ed8",
@@ -604,7 +735,7 @@
    "id": "2026-10-21-php2shell-wiz-rce",
    "kind": "event",
    "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
-   "summary": "OpenAI 发布 Patch the Planet，协调安全研究者、维护者与应急响应处理智能体发现的关键漏洞。媒体与 HN 称 GPT-5.6 Sol、Gemini 等挖出影响大量站点的 PHP 远程代码执行洞；PHP 基金会随后发安全更新说明协调披露泄漏问题。",
+   "summary": null,
    "publishedAt": null,
    "sourceNames": [],
    "path": "/events/2026-10-21-php2shell-wiz-rce/"

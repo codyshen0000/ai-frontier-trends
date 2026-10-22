@@ -2,10 +2,10 @@
  "publicId": "2026-10-21-openai-ai-agents-bio-leads",
  "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
  "status": "active",
- "reportCount": 1,
- "sourceCount": 1,
+ "reportCount": 2,
+ "sourceCount": 2,
  "firstReportAt": "2026-10-21T04:50:00.000Z",
- "latestAt": "2026-10-21T04:50:00.000Z",
+ "latestAt": "2026-10-22T10:01:53.000Z",
  "digest": null,
  "digestUpdatedAt": null,
  "summary": null,
@@ -13,18 +13,18 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 1,
-  "newParticipants6h": 0,
+  "participants48h": 2,
+  "newParticipants6h": 1,
   "recentReports24h": 1,
   "observationComplete": true,
-  "rank": null
+  "rank": 4
  },
  "developments": [
   {
    "factId": "fact-2026-10-21-openai-ai-agents-bio-leads",
    "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
    "firstReportAt": "2026-10-21T04:50:00.000Z",
-   "reportCount": 1,
+   "reportCount": 2,
    "representative": {
     "id": "sha256:64ddfb139fec8a1c",
     "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
@@ -54,6 +54,18 @@
   }
  ],
  "timeline": [
+  {
+   "id": "sha256:37719ab40890fac2",
+   "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
+   "summary": "The Decoder 转述 OpenAI 与 PerturbAI/Scripps 用智能体分析小鼠脑细胞数据。",
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-22T10:01:53.000Z",
+   "selected": false,
+   "originalUrl": "https://the-decoder.com/openai-agents-analyze-mouse-brain-data-in-32-minutes-a-job-that-would-take-humans-months/"
+  },
   {
    "id": "sha256:64ddfb139fec8a1c",
    "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
@@ -167,10 +179,65 @@
    "hour": "2026-10-22T00:00:00.000Z",
    "heat": 5.7,
    "participants": 1
+  },
+  {
+   "hour": "2026-10-22T01:00:00.000Z",
+   "heat": 5.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T02:00:00.000Z",
+   "heat": 5.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T03:00:00.000Z",
+   "heat": 5.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T04:00:00.000Z",
+   "heat": 5.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T05:00:00.000Z",
+   "heat": 5.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T06:00:00.000Z",
+   "heat": 4.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T07:00:00.000Z",
+   "heat": 4.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T08:00:00.000Z",
+   "heat": 4.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T09:00:00.000Z",
+   "heat": 4.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T10:00:00.000Z",
+   "heat": 4.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T11:00:00.000Z",
+   "heat": 13.9,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
- "recommendReason": "OpenAI：数千智能体在脑细胞数据中挖线索",
+ "recommendReason": "OpenAI：数千智能体挖脑细胞数据研究线索",
  "primaryUrl": "https://openai.com/index/scaling-ai-research-for-complex-biological-data"
 }

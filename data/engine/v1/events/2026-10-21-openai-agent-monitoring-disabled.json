@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 2,
   "observationComplete": true,
-  "rank": 5
+  "rank": 6
  },
  "developments": [
   {
@@ -126,10 +126,66 @@
    "hour": "2026-10-22T00:00:00.000Z",
    "heat": 14.7,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-22T01:00:00.000Z",
+   "heat": 14.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T02:00:00.000Z",
+   "heat": 13.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T03:00:00.000Z",
+   "heat": 13.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T04:00:00.000Z",
+   "heat": 13.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T05:00:00.000Z",
+   "heat": 12.7,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T06:00:00.000Z",
+   "heat": 12.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T07:00:00.000Z",
+   "heat": 12.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T08:00:00.000Z",
+   "heat": 11.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T09:00:00.000Z",
+   "heat": 11.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T10:00:00.000Z",
+   "heat": 11.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T11:00:00.000Z",
+   "heat": 10.7,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "OpenAI：内部编码智能体关闭监控并隐瞒",
- "primaryUrl": "https://the-decoder.com/openai-cant-yet-explain-why-its-coding-agents-switch-off-misalignment-monitoring/"
+ "primaryUrl": "https://the-decoder.com/openai-cant-yet-explain-why-its-coding-agents-switch-off-misalignment-monitoring/",
+ "rankDelta": -1
 }

@@ -1,11 +1,25 @@
 {
  "events": [
   {
+   "publicId": "2026-10-21-openai-ai-agents-bio-leads",
+   "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
+   "latestAt": "2026-10-22T10:01:53.000Z",
+   "reportCount": 2,
+   "hotRank": 4
+  },
+  {
    "publicId": "2026-10-22-anthropic-claude-duet",
    "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
-   "latestAt": "2026-10-21T22:44:18.000Z",
+   "latestAt": "2026-10-22T08:35:22.000Z",
+   "reportCount": 3,
+   "hotRank": 2
+  },
+  {
+   "publicId": "2026-10-22-recursive-flint-coding-model",
+   "title": "报道：Recursive 发布 Flint；vLLM 宣布 Day-0 支持",
+   "latestAt": "2026-10-21T20:27:41.000Z",
    "reportCount": 2,
-   "hotRank": 3
+   "hotRank": 7
   },
   {
    "publicId": "2026-10-22-nvidia-microduck-isaac-lab",
@@ -47,14 +61,21 @@
    "title": "Mistral×NVIDIA：用加速计算推进工业工程与物理 AI 工作流",
    "latestAt": "2026-10-21T14:40:51.000Z",
    "reportCount": 2,
-   "hotRank": 4
+   "hotRank": 5
   },
   {
    "publicId": "2026-10-21-openai-agent-monitoring-disabled",
    "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认",
    "latestAt": "2026-10-21T13:57:43.000Z",
    "reportCount": 2,
-   "hotRank": 5
+   "hotRank": 6
+  },
+  {
+   "publicId": "2026-10-22-litellm-pypi-compromise",
+   "title": "Wiz：LiteLLM 1.107.0 被投毒，窃取云与 AI 凭证",
+   "latestAt": "2026-10-21T13:44:12.000Z",
+   "reportCount": 1,
+   "hotRank": null
   },
   {
    "publicId": "2026-10-21-chatgpt-ads-stack-expansion",
@@ -75,7 +96,7 @@
    "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
    "latestAt": "2026-10-21T12:42:51.000Z",
    "reportCount": 2,
-   "hotRank": 2
+   "hotRank": 3
   },
   {
    "publicId": "2026-10-21-nvidia-rfd4-proteina",
@@ -89,14 +110,7 @@
    "title": "OpenAI 收购 Orchestra Bio，并入 Rosalind 线",
    "latestAt": "2026-10-21T08:32:54.000Z",
    "reportCount": 2,
-   "hotRank": 6
-  },
-  {
-   "publicId": "2026-10-21-openai-ai-agents-bio-leads",
-   "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
-   "latestAt": "2026-10-21T04:50:00.000Z",
-   "reportCount": 1,
-   "hotRank": null
+   "hotRank": 8
   },
   {
    "publicId": "2026-10-22-openai-gov-cyber-defenders",
@@ -106,11 +120,25 @@
    "hotRank": null
   },
   {
+   "publicId": "2026-10-22-vllm-humming-kernels",
+   "title": "vLLM 开源 Humming：面向量化推理的内核库",
+   "latestAt": "2026-10-21T00:00:00.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
+   "publicId": "2026-10-22-wiz-llmjacking-cloud-billing",
+   "title": "Wiz：钓鱼到 LLMjacking，劫持云账单盗刷模型 API",
+   "latestAt": "2026-10-20T20:03:10.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
    "publicId": "2026-10-21-mistral-voxtral-3",
    "title": "Mistral 发布 Voxtral 3：语音智能体 SDK 与语音模型",
    "latestAt": "2026-10-20T17:17:55.000Z",
    "reportCount": 2,
-   "hotRank": 7
+   "hotRank": 9
   },
   {
    "publicId": "2026-10-19-deepseek-v41-flash-1017",

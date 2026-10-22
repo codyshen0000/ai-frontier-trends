@@ -1,0 +1,256 @@
+{
+ "publicId": "2026-10-22-vllm-humming-kernels",
+ "title": "vLLM 开源 Humming：面向量化推理的内核库",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-21T00:00:00.000Z",
+ "latestAt": "2026-10-21T00:00:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "vLLM 博客宣布与蚂蚁集团社区合作开源 Humming，面向量化推理的灵活内核库，覆盖多种 GPU 与量化格式，并给出 dense/MoE 性能与 vLLM 集成说明。 属推理栈基础设施更新，可直接降低量化部署摩擦。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 0,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-22-vllm-humming-kernels",
+   "title": "vLLM 开源 Humming：面向量化推理的内核库",
+   "firstReportAt": "2026-10-21T00:00:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:3e7599c6661c19f5",
+    "title": "vLLM 开源 Humming：面向量化推理的内核库",
+    "summary": "蚂蚁×vLLM 社区开源 Humming 量化推理内核，并给出 dense/MoE 与集成说明。",
+    "source": {
+     "name": "vLLM Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-21T00:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://vllm.ai/blog/2026-10-21-humming"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:3e7599c6661c19f5",
+   "title": "vLLM 开源 Humming：面向量化推理的内核库",
+   "summary": "蚂蚁×vLLM 社区开源 Humming 量化推理内核，并给出 dense/MoE 与集成说明。",
+   "source": {
+    "name": "vLLM Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-21T00:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://vllm.ai/blog/2026-10-21-humming"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:3e7599c6661c19f5",
+   "title": "vLLM 开源 Humming：面向量化推理的内核库",
+   "summary": "蚂蚁×vLLM 社区开源 Humming 量化推理内核，并给出 dense/MoE 与集成说明。",
+   "source": {
+    "name": "vLLM Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-21T00:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://vllm.ai/blog/2026-10-21-humming"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-21T00:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T01:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T02:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T03:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T04:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T05:00:00.000Z",
+   "heat": 8.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T06:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T07:00:00.000Z",
+   "heat": 8.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T08:00:00.000Z",
+   "heat": 7.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T09:00:00.000Z",
+   "heat": 7.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T10:00:00.000Z",
+   "heat": 7.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T11:00:00.000Z",
+   "heat": 7.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T12:00:00.000Z",
+   "heat": 7.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T13:00:00.000Z",
+   "heat": 6.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T14:00:00.000Z",
+   "heat": 6.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T15:00:00.000Z",
+   "heat": 6.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T16:00:00.000Z",
+   "heat": 6.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T17:00:00.000Z",
+   "heat": 6.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T18:00:00.000Z",
+   "heat": 5.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T19:00:00.000Z",
+   "heat": 5.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T20:00:00.000Z",
+   "heat": 5.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T21:00:00.000Z",
+   "heat": 5.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T22:00:00.000Z",
+   "heat": 5.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T23:00:00.000Z",
+   "heat": 5.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T00:00:00.000Z",
+   "heat": 5.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T01:00:00.000Z",
+   "heat": 4.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T02:00:00.000Z",
+   "heat": 4.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T03:00:00.000Z",
+   "heat": 4.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T04:00:00.000Z",
+   "heat": 4.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T05:00:00.000Z",
+   "heat": 4.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T06:00:00.000Z",
+   "heat": 4.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T07:00:00.000Z",
+   "heat": 4.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T08:00:00.000Z",
+   "heat": 4.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T09:00:00.000Z",
+   "heat": 3.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T10:00:00.000Z",
+   "heat": 3.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T11:00:00.000Z",
+   "heat": 3.6,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "vLLM 开源 Humming 量化推理内核库",
+ "primaryUrl": "https://vllm.ai/blog/2026-10-21-humming"
+}

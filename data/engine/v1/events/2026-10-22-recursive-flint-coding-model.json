@@ -1,0 +1,267 @@
+{
+ "publicId": "2026-10-22-recursive-flint-coding-model",
+ "title": "报道：Recursive 发布 Flint；vLLM 宣布 Day-0 支持",
+ "status": "active",
+ "reportCount": 2,
+ "sourceCount": 2,
+ "firstReportAt": "2026-10-21T00:00:00.000Z",
+ "latestAt": "2026-10-21T20:27:41.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "此前报道 Recursive 发布称主要由 AI 自研的笔记本级编码模型 Flint（约 40B/2.5B active）。 vLLM 博客称 Day-0 支持 Flint 双检查点，单卡单请求解码约 500 tokens/s。",
+ "excerpt": null,
+ "latest": "vLLM 宣布 Day-0 支持 Flint，单卡约 500 tok/s。",
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 2,
+  "newParticipants6h": 0,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": 7
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-22-recursive-flint-coding-model",
+   "title": "报道：Recursive 发布 Flint；vLLM 宣布 Day-0 支持",
+   "firstReportAt": "2026-10-21T00:00:00.000Z",
+   "reportCount": 2,
+   "representative": {
+    "id": "sha256:3b031f6c198ac941",
+    "title": "vLLM 宣布 Day-0 支持 Flint 编码模型",
+    "summary": "vLLM 称 Day-0 支持 Flint 双检查点，单卡单请求约 500 tok/s。",
+    "source": {
+     "name": "vLLM Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-21T00:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://vllm.ai/blog/2026-10-21-flint"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:3b031f6c198ac941",
+   "title": "vLLM 宣布 Day-0 支持 Flint 编码模型",
+   "summary": "vLLM 称 Day-0 支持 Flint 双检查点，单卡单请求约 500 tok/s。",
+   "source": {
+    "name": "vLLM Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-21T00:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://vllm.ai/blog/2026-10-21-flint"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:e9fc027fe2ea965d",
+   "title": "报道：Recursive 发布 Flint，称主要由 AI 系统自研的笔记本级编码模型",
+   "summary": "Flint 免费笔记本级编码模型，称 largely AI 自研。",
+   "source": {
+    "name": "TechCrunch · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-21T20:27:41.000Z",
+   "selected": false,
+   "originalUrl": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/"
+  },
+  {
+   "id": "sha256:3b031f6c198ac941",
+   "title": "vLLM 宣布 Day-0 支持 Flint 编码模型",
+   "summary": "vLLM 称 Day-0 支持 Flint 双检查点，单卡单请求约 500 tok/s。",
+   "source": {
+    "name": "vLLM Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-21T00:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://vllm.ai/blog/2026-10-21-flint"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-21T00:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T01:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T02:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T03:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T04:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T05:00:00.000Z",
+   "heat": 8.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T06:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T07:00:00.000Z",
+   "heat": 8.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T08:00:00.000Z",
+   "heat": 7.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T09:00:00.000Z",
+   "heat": 7.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T10:00:00.000Z",
+   "heat": 7.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T11:00:00.000Z",
+   "heat": 7.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T12:00:00.000Z",
+   "heat": 7.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T13:00:00.000Z",
+   "heat": 6.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T14:00:00.000Z",
+   "heat": 6.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T15:00:00.000Z",
+   "heat": 6.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T16:00:00.000Z",
+   "heat": 6.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T17:00:00.000Z",
+   "heat": 6.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T18:00:00.000Z",
+   "heat": 5.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T19:00:00.000Z",
+   "heat": 5.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T20:00:00.000Z",
+   "heat": 5.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T21:00:00.000Z",
+   "heat": 15.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-21T22:00:00.000Z",
+   "heat": 14.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-21T23:00:00.000Z",
+   "heat": 14.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T00:00:00.000Z",
+   "heat": 14.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T01:00:00.000Z",
+   "heat": 13.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T02:00:00.000Z",
+   "heat": 13.2,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T03:00:00.000Z",
+   "heat": 12.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T04:00:00.000Z",
+   "heat": 12.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T05:00:00.000Z",
+   "heat": 12.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T06:00:00.000Z",
+   "heat": 11.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T07:00:00.000Z",
+   "heat": 11.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T08:00:00.000Z",
+   "heat": 11.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T09:00:00.000Z",
+   "heat": 10.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T10:00:00.000Z",
+   "heat": 10.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T11:00:00.000Z",
+   "heat": 10.2,
+   "participants": 2
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "primaryUrl": "https://vllm.ai/blog/2026-10-21-flint"
+}

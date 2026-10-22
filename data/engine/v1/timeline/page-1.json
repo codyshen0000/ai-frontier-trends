@@ -28,8 +28,8 @@
    },
    "group": {
     "factId": "fact-2026-10-22-anthropic-claude-duet",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
+    "additionalSourceCount": 2,
+    "reportCount": 3,
     "memberIds": [
      "sha256:258d5ff776fa8f13"
     ]
@@ -147,6 +147,29 @@
     "x": null,
     "storyPublicId": "2026-10-21-ibm-granite-speech-5",
     "originalUrl": "https://huggingface.co/blog/ibm-granite/granite-speech-5"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:859a2ca12c0c52e9",
+   "anchorAt": "2026-10-21T13:44:12.000Z",
+   "item": {
+    "id": "sha256:859a2ca12c0c52e9",
+    "title": "Wiz：LiteLLM 1.107.0 被投毒，窃取云与 AI 凭证",
+    "summary": "恶意 LiteLLM 1.107.0 上架 PyPI/Docker，窃取浏览器云与 AI 密钥并含休眠 C2。",
+    "reason": "LiteLLM 恶意包上架 PyPI，窃取云与 AI 凭证",
+    "source": {
+     "name": "Wiz Blog"
+    },
+    "publishedAt": "2026-10-21T13:44:12.000Z",
+    "timelineAt": "2026-10-21T13:44:12.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-22-litellm-pypi-compromise",
+    "originalUrl": "https://www.wiz.io/blog/litellm-compromised-steals-credentials"
    },
    "group": null
   },
@@ -316,7 +339,7 @@
     "id": "sha256:64ddfb139fec8a1c",
     "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
     "summary": "OpenAI 与 PerturbAI、Scripps 用分布式智能体挖脑细胞数据线索。",
-    "reason": "OpenAI：数千智能体在脑细胞数据中挖线索",
+    "reason": "OpenAI：数千智能体挖脑细胞数据研究线索",
     "source": {
      "name": "OpenAI News"
     },
@@ -330,7 +353,14 @@
     "storyPublicId": "2026-10-21-openai-ai-agents-bio-leads",
     "originalUrl": "https://openai.com/index/scaling-ai-research-for-complex-biological-data"
    },
-   "group": null
+   "group": {
+    "factId": "fact-2026-10-21-openai-ai-agents-bio-leads",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:64ddfb139fec8a1c"
+    ]
+   }
   },
   {
    "key": "sha256:e270f5ba4688033d",
@@ -352,6 +382,82 @@
     "x": null,
     "storyPublicId": "2026-10-22-openai-gov-cyber-defenders",
     "originalUrl": "https://openai.com/index/empowering-cyber-defenders"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:3e7599c6661c19f5",
+   "anchorAt": "2026-10-21T00:00:00.000Z",
+   "item": {
+    "id": "sha256:3e7599c6661c19f5",
+    "title": "vLLM 开源 Humming：面向量化推理的内核库",
+    "summary": "蚂蚁×vLLM 社区开源 Humming 量化推理内核，并给出 dense/MoE 与集成说明。",
+    "reason": "vLLM 开源 Humming 量化推理内核库",
+    "source": {
+     "name": "vLLM Blog"
+    },
+    "publishedAt": "2026-10-21T00:00:00.000Z",
+    "timelineAt": "2026-10-21T00:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-22-vllm-humming-kernels",
+    "originalUrl": "https://vllm.ai/blog/2026-10-21-humming"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:3b031f6c198ac941",
+   "anchorAt": "2026-10-21T00:00:00.000Z",
+   "item": {
+    "id": "sha256:3b031f6c198ac941",
+    "title": "vLLM 宣布 Day-0 支持 Flint 编码模型",
+    "summary": "vLLM 称 Day-0 支持 Flint 双检查点，单卡单请求约 500 tok/s。",
+    "reason": null,
+    "source": {
+     "name": "vLLM Blog"
+    },
+    "publishedAt": "2026-10-21T00:00:00.000Z",
+    "timelineAt": "2026-10-21T00:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-22-recursive-flint-coding-model",
+    "originalUrl": "https://vllm.ai/blog/2026-10-21-flint"
+   },
+   "group": {
+    "factId": "fact-2026-10-22-recursive-flint-coding-model",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:3b031f6c198ac941"
+    ]
+   }
+  },
+  {
+   "key": "sha256:011eb73686ffbc98",
+   "anchorAt": "2026-10-20T20:03:10.000Z",
+   "item": {
+    "id": "sha256:011eb73686ffbc98",
+    "title": "Wiz：钓鱼到 LLMjacking，劫持云账单盗刷模型 API",
+    "summary": "搜索广告钓鱼后劫持云计费账户，未授权刷大模型 API 可产生巨额账单。",
+    "reason": "钓鱼劫持云账单盗刷 LLM API（LLMjacking）",
+    "source": {
+     "name": "Wiz Blog"
+    },
+    "publishedAt": "2026-10-20T20:03:10.000Z",
+    "timelineAt": "2026-10-20T20:03:10.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-22-wiz-llmjacking-cloud-billing",
+    "originalUrl": "https://www.wiz.io/blog/from-phishing-to-llmjacking"
    },
    "group": null
   },
@@ -407,120 +513,14 @@
     "originalUrl": "https://openai.com/index/terminal-x"
    },
    "group": null
-  },
-  {
-   "key": "sha256:10f7f763ebef7da0",
-   "anchorAt": "2026-10-19T17:36:26.000Z",
-   "item": {
-    "id": "sha256:10f7f763ebef7da0",
-    "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
-    "summary": "The Decoder 称 Kling AI 4.0 支持最长约 30 秒、最多 10 张关键帧、提示词理解扩展，并含立体声、多语口型同步与更轻 Flash 变体。",
-    "reason": "可灵 4.0 加长视频与口型同步",
-    "source": {
-     "name": "The Decoder"
-    },
-    "publishedAt": "2026-10-19T17:36:26.000Z",
-    "timelineAt": "2026-10-19T17:36:26.000Z",
-    "category": "model",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-20-kling-ai-4-0",
-    "originalUrl": "https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:bfa70917f3b198d1",
-   "anchorAt": "2026-10-19T15:37:09.000Z",
-   "item": {
-    "id": "sha256:bfa70917f3b198d1",
-    "title": "英伟达发布面向企业与 PC 的开源智能体模型",
-    "summary": "TechCrunch 称英伟达新开源模型，面向企业自建开源模型与端侧本地运行智能体。",
-    "reason": "英伟达开源企业与 PC 端智能体模型",
-    "source": {
-     "name": "TechCrunch · AI"
-    },
-    "publishedAt": "2026-10-19T15:37:09.000Z",
-    "timelineAt": "2026-10-19T15:37:09.000Z",
-    "category": "model",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-19-nvidia-open-models-agents-pcs",
-    "originalUrl": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:5c52b7d34becd1cc",
-   "anchorAt": "2026-10-19T00:00:00.000Z",
-   "item": {
-    "id": "sha256:5c52b7d34becd1cc",
-    "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
-    "summary": "Hugging Face 博客介绍 TorchNeuron，称在 AWS Trainium 上运行 HF 模型比以往更容易。",
-    "reason": "Trainium 上跑 HF 模型更省事",
-    "source": {
-     "name": "Hugging Face Blog"
-    },
-    "publishedAt": "2026-10-19T00:00:00.000Z",
-    "timelineAt": "2026-10-19T00:00:00.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-20-hf-torchneuron-trainium",
-    "originalUrl": "https://huggingface.co/blog/hf-torchneuron"
-   },
-   "group": {
-    "factId": "fact-2026-10-20-hf-torchneuron-trainium",
-    "additionalSourceCount": 1,
-    "reportCount": 4,
-    "memberIds": [
-     "sha256:5c52b7d34becd1cc"
-    ]
-   }
-  },
-  {
-   "key": "sha256:931ff0f85ef4bf70",
-   "anchorAt": "2026-10-17T10:33:28.000Z",
-   "item": {
-    "id": "sha256:931ff0f85ef4bf70",
-    "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
-    "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017：基准更好、完成任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API。The Decoder 与量子位均有报道。",
-    "reason": "V4.1-Flash 登顶 Agent Arena 开源榜，总榜第11",
-    "source": {
-     "name": "The Decoder"
-    },
-    "publishedAt": "2026-10-17T10:33:28.000Z",
-    "timelineAt": "2026-10-17T10:33:28.000Z",
-    "category": "model",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-19-deepseek-v41-flash-1017",
-    "originalUrl": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/"
-   },
-   "group": {
-    "factId": "fact-2026-10-19-deepseek-v41-flash-1017",
-    "additionalSourceCount": 2,
-    "reportCount": 3,
-    "memberIds": [
-     "sha256:931ff0f85ef4bf70"
-    ]
-   }
   }
  ],
- "nextCursor": null,
+ "nextCursor": "timeline/page-2.json",
  "hot": [
   {
    "rank": 1,
    "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
-   "heat": 31.3,
+   "heat": 28.1,
    "trend": "down",
    "storyPublicId": "2026-10-21-php2shell-wiz-rce",
    "itemId": "sha256:de9db6f384cbc788",
@@ -550,8 +550,31 @@
   },
   {
    "rank": 2,
+   "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
+   "heat": 22.4,
+   "trend": "up",
+   "storyPublicId": "2026-10-22-anthropic-claude-duet",
+   "itemId": "sha256:258d5ff776fa8f13",
+   "participants": [
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
+    }
+   ],
+   "participantCount": 3
+  },
+  {
+   "rank": 3,
    "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
-   "heat": 18.0,
+   "heat": 16.2,
    "trend": "down",
    "storyPublicId": "2026-10-21-openai-models-google-cloud",
    "itemId": "sha256:95dedf578de78f3e",
@@ -572,28 +595,28 @@
    "participantCount": 3
   },
   {
-   "rank": 3,
-   "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
-   "heat": 14.7,
-   "trend": "down",
-   "storyPublicId": "2026-10-22-anthropic-claude-duet",
-   "itemId": "sha256:258d5ff776fa8f13",
+   "rank": 4,
+   "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
+   "heat": 13.6,
+   "trend": "up",
+   "storyPublicId": "2026-10-21-openai-ai-agents-bio-leads",
+   "itemId": "sha256:64ddfb139fec8a1c",
    "participants": [
     {
-     "name": "The Verge · AI",
+     "name": "OpenAI News",
      "kind": "editorial"
     },
     {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
+     "name": "The Decoder",
+     "kind": "editorial"
     }
    ],
    "participantCount": 2
   },
   {
-   "rank": 4,
+   "rank": 5,
    "title": "Mistral×NVIDIA：用加速计算推进工业工程与物理 AI 工作流",
-   "heat": 11.7,
+   "heat": 10.5,
    "trend": "down",
    "storyPublicId": "2026-10-21-mistral-nvidia-industrial-ai",
    "itemId": "sha256:856c26ca4c2d04bc",
@@ -608,35 +631,16 @@
     }
    ],
    "participantCount": 2
-  },
-  {
-   "rank": 5,
-   "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认",
-   "heat": 11.7,
-   "trend": "down",
-   "storyPublicId": "2026-10-21-openai-agent-monitoring-disabled",
-   "itemId": "sha256:d2895ceb6fcba3ff",
-   "participants": [
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 2
   }
  ],
  "dayCounts": {
   "2026-10-22": 5,
-  "2026-10-21": 9,
+  "2026-10-21": 13,
   "2026-10-20": 3,
   "2026-10-19": 2,
   "2026-10-17": 1
  },
  "page": 1,
- "pageCount": 1,
- "total": 20
+ "pageCount": 2,
+ "total": 24
 }

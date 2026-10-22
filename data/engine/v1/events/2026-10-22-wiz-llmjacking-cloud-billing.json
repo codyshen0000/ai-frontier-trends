@@ -1,0 +1,271 @@
+{
+ "publicId": "2026-10-22-wiz-llmjacking-cloud-billing",
+ "title": "Wiz：钓鱼到 LLMjacking，劫持云账单盗刷模型 API",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-20T20:03:10.000Z",
+ "latestAt": "2026-10-20T20:03:10.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Wiz 描述攻击链：搜索广告钓鱼窃凭证后劫持云计费账户，用于未授权调用大模型 API，可造成数十万美元账单。 提醒云账号与计费权限成为 AI 用量攻击面。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 0,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-22-wiz-llmjacking-cloud-billing",
+   "title": "Wiz：钓鱼到 LLMjacking，劫持云账单盗刷模型 API",
+   "firstReportAt": "2026-10-20T20:03:10.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:011eb73686ffbc98",
+    "title": "Wiz：钓鱼到 LLMjacking，劫持云账单盗刷模型 API",
+    "summary": "搜索广告钓鱼后劫持云计费账户，未授权刷大模型 API 可产生巨额账单。",
+    "source": {
+     "name": "Wiz Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-20T20:03:10.000Z",
+    "selected": true,
+    "originalUrl": "https://www.wiz.io/blog/from-phishing-to-llmjacking"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:011eb73686ffbc98",
+   "title": "Wiz：钓鱼到 LLMjacking，劫持云账单盗刷模型 API",
+   "summary": "搜索广告钓鱼后劫持云计费账户，未授权刷大模型 API 可产生巨额账单。",
+   "source": {
+    "name": "Wiz Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-20T20:03:10.000Z",
+   "selected": true,
+   "originalUrl": "https://www.wiz.io/blog/from-phishing-to-llmjacking"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:011eb73686ffbc98",
+   "title": "Wiz：钓鱼到 LLMjacking，劫持云账单盗刷模型 API",
+   "summary": "搜索广告钓鱼后劫持云计费账户，未授权刷大模型 API 可产生巨额账单。",
+   "source": {
+    "name": "Wiz Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-20T20:03:10.000Z",
+   "selected": true,
+   "originalUrl": "https://www.wiz.io/blog/from-phishing-to-llmjacking"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-20T21:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T22:00:00.000Z",
+   "heat": 9.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-20T23:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T00:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T01:00:00.000Z",
+   "heat": 8.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T02:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T03:00:00.000Z",
+   "heat": 8.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T04:00:00.000Z",
+   "heat": 7.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T05:00:00.000Z",
+   "heat": 7.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T06:00:00.000Z",
+   "heat": 7.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T07:00:00.000Z",
+   "heat": 7.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T08:00:00.000Z",
+   "heat": 7.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T09:00:00.000Z",
+   "heat": 6.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T10:00:00.000Z",
+   "heat": 6.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T11:00:00.000Z",
+   "heat": 6.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T12:00:00.000Z",
+   "heat": 6.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T13:00:00.000Z",
+   "heat": 6.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T14:00:00.000Z",
+   "heat": 6.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T15:00:00.000Z",
+   "heat": 5.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T16:00:00.000Z",
+   "heat": 5.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T17:00:00.000Z",
+   "heat": 5.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T18:00:00.000Z",
+   "heat": 5.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T19:00:00.000Z",
+   "heat": 5.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T20:00:00.000Z",
+   "heat": 5.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T21:00:00.000Z",
+   "heat": 4.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T22:00:00.000Z",
+   "heat": 4.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-21T23:00:00.000Z",
+   "heat": 4.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T00:00:00.000Z",
+   "heat": 4.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T01:00:00.000Z",
+   "heat": 4.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T02:00:00.000Z",
+   "heat": 4.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T03:00:00.000Z",
+   "heat": 4.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T04:00:00.000Z",
+   "heat": 4.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T05:00:00.000Z",
+   "heat": 3.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T06:00:00.000Z",
+   "heat": 3.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T07:00:00.000Z",
+   "heat": 3.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T08:00:00.000Z",
+   "heat": 3.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T09:00:00.000Z",
+   "heat": 3.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T10:00:00.000Z",
+   "heat": 3.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T11:00:00.000Z",
+   "heat": 3.2,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "钓鱼劫持云账单盗刷 LLM API（LLMjacking）",
+ "primaryUrl": "https://www.wiz.io/blog/from-phishing-to-llmjacking"
+}
