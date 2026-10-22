@@ -1,362 +1,508 @@
 {
  "site": "前沿趋势",
- "contract_version": "1.1",
  "mode": "production",
- "data_as_of": "2026-10-22T08:26:57+08:00",
- "data_as_of_label": "数据截至 2026-10-22 08:26（北京时间）",
- "generated_at": "2026-10-22T08:41:00+08:00",
- "hot_rule_version": "heat-v1-48h-halflife24h (前沿情报 heat48h.py 1.1)",
- "hot_computed_at": "2026-10-22T08:41:00+08:00",
+ "data_as_of": "2026-10-23T01:20:47+08:00",
+ "data_as_of_label": "数据截至 2026-10-23 01:20（北京时间）",
+ "generated_at": "2026-10-23T01:20:47+08:00",
+ "today": "2026-10-23",
+ "hot_rule_version": "heat-v1-48h-halflife24h (v0 port)",
  "window_hours": 48,
+ "half_life_hours": 24,
+ "spark_hours": 24,
  "spark_points": 25,
- "page_size": 20,
- "counts": {
-  "cards": 20,
-  "pages": 1,
-  "events": 22,
-  "hot_entries": 7,
-  "search_docs": 52,
-  "feed_items": 20,
-  "passed_events": 22,
-  "below_threshold_events": 0,
-  "redirects": 0,
-  "hot_snapshots": 18,
-  "covers": 3
- },
- "last_round": {
-  "batch_id": "2026-10-22T0826",
-  "status": "ok",
-  "finished_at": "2026-10-22T08:38:06+08:00"
- },
+ "hot_candidates": 8,
+ "passed_count": 25,
+ "fill_count": 0,
+ "selected_items": 25,
  "batches": [
   {
    "batch_id": "2026-10-19T1124",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-19T11:28:23+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-19T1221",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-19T13:23:23+08:00",
+   "rejected": 2
   },
   {
    "batch_id": "2026-10-19T1323",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-19T16:27:16+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-19T1418",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-19T16:27:16+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-19T1524",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-19T16:27:16+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-19T1627",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-19T20:25:37+08:00",
+   "rejected": 1
   },
   {
    "batch_id": "2026-10-19T1726",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-19T20:25:37+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-19T1825",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-19T20:25:37+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-19T1923",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-19T20:25:37+08:00",
+   "rejected": 1
   },
   {
    "batch_id": "2026-10-19T2025",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-20T08:45:38+08:00",
+   "rejected": 3
   },
   {
    "batch_id": "2026-10-19T2136",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-20T08:45:38+08:00",
+   "rejected": 1
   },
   {
    "batch_id": "2026-10-19T2223",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-20T08:45:38+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-19T2347",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-20T08:45:38+08:00",
+   "rejected": 2
   },
   {
    "batch_id": "2026-10-20T0051",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-20T08:45:38+08:00",
+   "rejected": 1
   },
   {
    "batch_id": "2026-10-20T0121",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-20T08:45:38+08:00",
+   "rejected": 1
   },
   {
    "batch_id": "2026-10-20T0224",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-20T08:45:38+08:00",
+   "rejected": 4
   },
   {
    "batch_id": "2026-10-20T0321",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-20T08:45:38+08:00",
+   "rejected": 3
   },
   {
    "batch_id": "2026-10-20T0418",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-20T08:45:38+08:00",
+   "rejected": 1
   },
   {
    "batch_id": "2026-10-20T0522",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-20T08:45:38+08:00",
+   "rejected": 2
   },
   {
    "batch_id": "2026-10-20T0621",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-20T15:29:06+08:00",
+   "rejected": 4
   },
   {
    "batch_id": "2026-10-20T1055",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-20T10:58:45+08:00",
+   "rejected": 3
   },
   {
    "batch_id": "2026-10-20T1122",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-20T13:20:21+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-20T1218",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-20T13:20:21+08:00",
+   "rejected": 1
   },
   {
    "batch_id": "2026-10-20T1320",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-20T16:23:28+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-20T1424",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-20T16:23:28+08:00",
+   "rejected": 1
   },
   {
    "batch_id": "2026-10-20T1528",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-20T16:23:28+08:00",
+   "rejected": 1
   },
   {
    "batch_id": "2026-10-20T1623",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-20T20:25:20+08:00",
+   "rejected": 1
   },
   {
    "batch_id": "2026-10-20T1726",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-21T19:56:57+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-20T1822",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-20T20:25:20+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-20T1923",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-20T20:25:20+08:00",
+   "rejected": 3
   },
   {
    "batch_id": "2026-10-20T2025",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-21T09:28:37+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-20T2123",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-21T09:28:37+08:00",
+   "rejected": 3
   },
   {
    "batch_id": "2026-10-20T2221",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-21T09:28:37+08:00",
+   "rejected": 1
   },
   {
    "batch_id": "2026-10-20T2323",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-21T09:28:37+08:00",
+   "rejected": 1
   },
   {
    "batch_id": "2026-10-21T0026",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-21T09:28:37+08:00",
+   "rejected": 5
   },
   {
    "batch_id": "2026-10-21T0118",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-21T09:28:37+08:00",
+   "rejected": 2
   },
   {
    "batch_id": "2026-10-21T0221",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-21T09:28:37+08:00",
+   "rejected": 4
   },
   {
    "batch_id": "2026-10-21T0321",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-21T19:56:57+08:00",
+   "rejected": 1
   },
   {
    "batch_id": "2026-10-21T0427",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-21T09:28:37+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-21T0520",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-21T09:28:37+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-21T0624",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-21T09:28:37+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-21T0728",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-21T09:28:37+08:00",
+   "rejected": 1
   },
   {
    "batch_id": "2026-10-21T0826",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-21T21:00:14+08:00",
+   "rejected": 3
   },
   {
    "batch_id": "2026-10-21T0928",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-21T13:20:11+08:00",
+   "rejected": 4
   },
   {
    "batch_id": "2026-10-21T1019",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-21T13:20:11+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-21T1118",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-21T13:20:11+08:00",
+   "rejected": 2
   },
   {
    "batch_id": "2026-10-21T1227",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-21T13:20:11+08:00",
+   "rejected": 3
   },
   {
    "batch_id": "2026-10-21T1320",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-21T15:26:57+08:00",
+   "rejected": 1
   },
   {
    "batch_id": "2026-10-21T1419",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-21T15:26:57+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-21T1526",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-21T16:07:01+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-21T1606",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-21T19:56:57+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-21T1626",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-21T19:56:57+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-21T1718",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-21T19:56:57+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-21T1817",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-21T19:56:57+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-21T1925",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-21T19:56:57+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-21T2028",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-22T08:40:53+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-21T2127",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-22T08:40:53+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-21T2218",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-22T08:40:53+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-21T2319",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-22T08:40:53+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-22T0027",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-22T08:40:53+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-22T0125",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-22T08:40:53+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-22T0218",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-22T08:40:53+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-22T0320",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-22T08:40:53+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-22T0417",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-22T08:40:53+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-22T0519",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-22T08:40:53+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-22T0618",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-22T08:40:53+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-22T0725",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-22T08:40:53+08:00",
+   "rejected": 0
   },
   {
    "batch_id": "2026-10-22T0826",
-   "status": "ok"
+   "status": "ok",
+   "imported_at": "2026-10-22T16:00:08+08:00",
+   "rejected": 0
+  },
+  {
+   "batch_id": "2026-10-22T0925",
+   "status": "ok",
+   "imported_at": "2026-10-22T12:29:38+08:00",
+   "rejected": 0
+  },
+  {
+   "batch_id": "2026-10-22T1018",
+   "status": "ok",
+   "imported_at": "2026-10-22T12:29:38+08:00",
+   "rejected": 0
+  },
+  {
+   "batch_id": "2026-10-22T1127",
+   "status": "ok",
+   "imported_at": "2026-10-22T12:29:38+08:00",
+   "rejected": 0
+  },
+  {
+   "batch_id": "2026-10-22T1219",
+   "status": "ok",
+   "imported_at": "2026-10-22T12:29:38+08:00",
+   "rejected": 0
+  },
+  {
+   "batch_id": "2026-10-22T1320",
+   "status": "ok",
+   "imported_at": "2026-10-22T15:26:23+08:00",
+   "rejected": 0
+  },
+  {
+   "batch_id": "2026-10-22T1418",
+   "status": "ok",
+   "imported_at": "2026-10-22T15:26:23+08:00",
+   "rejected": 0
+  },
+  {
+   "batch_id": "2026-10-22T1526",
+   "status": "ok",
+   "imported_at": "2026-10-22T19:39:08+08:00",
+   "rejected": 0
+  },
+  {
+   "batch_id": "2026-10-22T1624",
+   "status": "ok",
+   "imported_at": "2026-10-22T19:39:08+08:00",
+   "rejected": 0
+  },
+  {
+   "batch_id": "2026-10-22T1722",
+   "status": "ok",
+   "imported_at": "2026-10-22T19:39:08+08:00",
+   "rejected": 0
+  },
+  {
+   "batch_id": "2026-10-22T1819",
+   "status": "ok",
+   "imported_at": "2026-10-22T19:39:08+08:00",
+   "rejected": 0
+  },
+  {
+   "batch_id": "2026-10-22T1923",
+   "status": "ok",
+   "imported_at": "2026-10-22T19:39:08+08:00",
+   "rejected": 0
+  },
+  {
+   "batch_id": "2026-10-23T0135",
+   "status": "partial",
+   "imported_at": "2026-10-23T01:18:58+08:00",
+   "rejected": 2
   }
  ],
- "files": [
-  "api/index.json",
-  "events/2026-10-19-deepseek-v41-flash-1017.json",
-  "events/2026-10-19-nvidia-open-models-agents-pcs.json",
-  "events/2026-10-20-hf-torchneuron-trainium.json",
-  "events/2026-10-20-kling-ai-4-0.json",
-  "events/2026-10-21-chatgpt-ads-stack-expansion.json",
-  "events/2026-10-21-ibm-granite-speech-5.json",
-  "events/2026-10-21-mistral-nvidia-industrial-ai.json",
-  "events/2026-10-21-mistral-voxtral-3.json",
-  "events/2026-10-21-nvidia-kumo-forecast.json",
-  "events/2026-10-21-nvidia-rfd4-proteina.json",
-  "events/2026-10-21-openai-agent-monitoring-disabled.json",
-  "events/2026-10-21-openai-ai-agents-bio-leads.json",
-  "events/2026-10-21-openai-models-google-cloud.json",
-  "events/2026-10-21-openai-orchestra-bio.json",
-  "events/2026-10-21-openai-terminal-x-eval.json",
-  "events/2026-10-21-php2shell-wiz-rce.json",
-  "events/2026-10-22-anthropic-claude-duet.json",
-  "events/2026-10-22-dharma-vocabx-slm.json",
-  "events/2026-10-22-google-ai-maternal-ultrasound.json",
-  "events/2026-10-22-msr-kls-conjecture.json",
-  "events/2026-10-22-nvidia-microduck-isaac-lab.json",
-  "events/2026-10-22-openai-gov-cyber-defenders.json",
-  "events/index.json",
-  "feed/selected.json",
-  "hot-snapshots/2026-10-19T12.json",
-  "hot-snapshots/2026-10-19T13.json",
-  "hot-snapshots/2026-10-19T15.json",
-  "hot-snapshots/2026-10-19T16.json",
-  "hot-snapshots/2026-10-19T19.json",
-  "hot-snapshots/2026-10-19T20.json",
-  "hot-snapshots/2026-10-20T08.json",
-  "hot-snapshots/2026-10-20T10.json",
-  "hot-snapshots/2026-10-20T13.json",
-  "hot-snapshots/2026-10-20T15.json",
-  "hot-snapshots/2026-10-20T16.json",
-  "hot-snapshots/2026-10-20T20.json",
-  "hot-snapshots/2026-10-21T09.json",
-  "hot-snapshots/2026-10-21T13.json",
-  "hot-snapshots/2026-10-21T15.json",
-  "hot-snapshots/2026-10-21T16.json",
-  "hot-snapshots/2026-10-21T19.json",
-  "hot-snapshots/2026-10-22T08.json",
-  "hot-strip.json",
-  "hot.json",
-  "meta.json",
-  "redirects.json",
-  "search/source.json",
-  "sources.json",
-  "timeline/index.json",
-  "timeline/page-1.json"
+ "daily_keys": [
+  "2026-10-19",
+  "2026-10-20",
+  "2026-10-21",
+  "2026-10-22",
+  "2026-10-23"
  ],
- "next_round": "2026-10-22T12:25:00+08:00",
- "today": "2026-10-22",
- "passed_count": 22,
- "fill_count": 0
+ "cover_rule": "aihot soft: width≥480 (unknown=800) height≥240 + alt + not logo/avatar/badge; value_class priority when present",
+ "cover_note": "cover.url 导出可为 https；物化后改写为 assets/covers/… 同源；失败则空槽不热链"
 }

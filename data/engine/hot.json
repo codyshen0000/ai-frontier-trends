@@ -1,5 +1,5 @@
 {
- "computedAt": "2026-10-22T00:41:00.000Z",
+ "computedAt": "2026-10-22T17:20:47.000Z",
  "windowHours": 48,
  "entries": [
   {
@@ -8,12 +8,10 @@
     "publicId": "2026-10-21-php2shell-wiz-rce",
     "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露"
    },
-   "heat": 38.6,
-   "trend": "up",
-   "trendPct": 50.8,
-   "badges": [
-    "rising"
-   ],
+   "heat": 23.9,
+   "trend": "down",
+   "trendPct": -15.8,
+   "badges": [],
    "participantCount": 5,
    "sourceCount": 4,
    "sourceNames": [
@@ -45,23 +43,6 @@
     }
    ],
    "spark": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    10.0,
-    9.7,
-    9.4,
-    9.2,
-    8.9,
-    8.7,
-    8.4,
-    18.1,
-    17.6,
-    17.1,
     16.6,
     26.1,
     35.3,
@@ -69,21 +50,99 @@
     42.9,
     41.7,
     40.5,
-    39.4
+    39.4,
+    38.3,
+    37.2,
+    36.1,
+    35.1,
+    34.1,
+    33.1,
+    32.2,
+    31.3,
+    30.4,
+    29.5,
+    28.7,
+    27.8,
+    27.1,
+    26.3,
+    25.5,
+    24.8,
+    24.1
    ],
-   "summary": "OpenAI 发布 Patch the Planet，协调安全研究者、维护者与应急响应处理智能体发现的关键漏洞。媒体与 HN 称 GPT-5.6 Sol、Gemini 等挖出影响大量站点的 PHP 远程代码执行洞；PHP 基金会随后发安全更新说明协调披露泄漏问题。",
+   "summary": "OpenAI 发布 Patch the Planet，协调处理智能体发现的关键漏洞。Wiz 等称 PHP 引擎缺陷可导致远程代码执行与类 Heartbleed 内存泄露，影响面极广；PHP 基金会已发安全更新。 HN 持续高热讨论；Wiz 原文补强漏洞技术细节。",
    "latest": null,
    "cover": null
   },
   {
    "rank": 2,
    "story": {
+    "publicId": "2026-10-22-anthropic-claude-duet",
+    "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots"
+   },
+   "heat": 19.0,
+   "trend": "down",
+   "trendPct": -15.9,
+   "badges": [],
+   "participantCount": 3,
+   "sourceCount": 2,
+   "sourceNames": [
+    "The Decoder",
+    "The Verge · AI"
+   ],
+   "participants": [
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
+    }
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    10.0,
+    9.7,
+    9.4,
+    19.1,
+    18.5,
+    18.0,
+    17.5,
+    17.0,
+    16.5,
+    16.0,
+    15.6,
+    15.1,
+    14.7,
+    24.2,
+    23.5,
+    22.8,
+    22.2,
+    21.5,
+    20.9,
+    20.3,
+    19.7,
+    19.2
+   ],
+   "summary": "The Verge 与 IT之家称 Anthropic 推出面向专业人士与小企业的 Claude Duet 智能体（研究预览），提供 iOS/Android 独立应用与网页入口，定位 24 小时在线助理，对标 Meta Muse 等。官方新闻室暂未见同名稿。",
+   "latest": null,
+   "cover": null
+  },
+  {
+   "rank": 3,
+   "story": {
     "publicId": "2026-10-21-openai-models-google-cloud",
     "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流"
    },
-   "heat": 22.2,
+   "heat": 13.7,
    "trend": "down",
-   "trendPct": -15.9,
+   "trendPct": -16.0,
    "badges": [],
    "participantCount": 3,
    "sourceCount": 2,
@@ -106,23 +165,6 @@
     }
    ],
    "spark": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    10.0,
-    19.6,
-    19.1,
-    18.5,
-    18.0,
     17.5,
     26.9,
     26.2,
@@ -130,79 +172,95 @@
     24.7,
     24.0,
     23.3,
-    22.6
+    22.6,
+    22.0,
+    21.4,
+    20.8,
+    20.2,
+    19.6,
+    19.0,
+    18.5,
+    18.0,
+    17.5,
+    17.0,
+    16.5,
+    16.0,
+    15.6,
+    15.1,
+    14.7,
+    14.3,
+    13.9
    ],
    "summary": "OpenAI 官方宣布模型登陆 Google Cloud，经 Marketplace 进入 Gemini Model Garden；IT之家与 The Decoder 跟进称谷歌云成为同时提供 OpenAI、Gemini 与 Claude 的主要云厂商之一。",
    "latest": null,
    "cover": null
   },
   {
-   "rank": 3,
+   "rank": 4,
    "story": {
-    "publicId": "2026-10-22-anthropic-claude-duet",
-    "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots"
+    "publicId": "2026-10-21-openai-ai-agents-bio-leads",
+    "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索"
    },
-   "heat": 18.2,
-   "trend": "new",
-   "trendPct": null,
-   "badges": [
-    "new"
-   ],
+   "heat": 11.6,
+   "trend": "down",
+   "trendPct": -15.9,
+   "badges": [],
    "participantCount": 2,
-   "sourceCount": 1,
+   "sourceCount": 2,
    "sourceNames": [
-    "The Verge · AI"
+    "The Decoder",
+    "OpenAI News"
    ],
    "participants": [
     {
-     "name": "The Verge · AI",
+     "name": "OpenAI News",
      "kind": "editorial"
     },
     {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
+     "name": "The Decoder",
+     "kind": "editorial"
     }
    ],
    "spark": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    10.0,
-    9.7,
-    9.4,
-    19.1,
-    18.5
+    7.0,
+    6.8,
+    6.6,
+    6.5,
+    6.3,
+    6.1,
+    5.9,
+    5.7,
+    5.6,
+    5.4,
+    5.3,
+    5.1,
+    5.0,
+    4.8,
+    4.7,
+    4.6,
+    4.4,
+    4.3,
+    13.9,
+    13.5,
+    13.1,
+    12.8,
+    12.4,
+    12.0,
+    11.7
    ],
-   "summary": "The Verge 与 IT之家称 Anthropic 推出面向专业人士与小企业的 Claude Duet 智能体（研究预览），提供 iOS/Android 独立应用与网页入口，定位 24 小时在线助理，对标 Meta Muse 等。官方新闻室暂未见同名稿。",
+   "summary": "OpenAI 官方介绍与 PerturbAI、Scripps Research 合作，用分布式智能体在海量脑细胞数据中寻找有希望的研究线索；与收购 Orchestra Bio 并入 Rosalind 属相关但不同交付。",
    "latest": null,
    "cover": null
   },
   {
-   "rank": 4,
+   "rank": 5,
    "story": {
     "publicId": "2026-10-21-mistral-nvidia-industrial-ai",
     "title": "Mistral×NVIDIA：用加速计算推进工业工程与物理 AI 工作流"
    },
-   "heat": 14.4,
+   "heat": 8.9,
    "trend": "down",
-   "trendPct": -16.3,
+   "trendPct": -16.0,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -221,23 +279,6 @@
     }
    ],
    "spark": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    9.7,
-    9.4,
-    19.1,
-    18.5,
     18.0,
     17.5,
     17.0,
@@ -245,21 +286,38 @@
     16.0,
     15.6,
     15.1,
-    14.7
+    14.7,
+    14.3,
+    13.9,
+    13.5,
+    13.1,
+    12.7,
+    12.4,
+    12.0,
+    11.7,
+    11.3,
+    11.0,
+    10.7,
+    10.4,
+    10.1,
+    9.8,
+    9.5,
+    9.3,
+    9.0
    ],
    "summary": "Mistral 官方称与 NVIDIA 合作，基于加速计算打造面向工程设计的 AI 原生工作流；媒体称目标是加快工业仿真与产品设计。",
    "latest": null,
    "cover": null
   },
   {
-   "rank": 5,
+   "rank": 6,
    "story": {
     "publicId": "2026-10-21-openai-agent-monitoring-disabled",
     "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认"
    },
-   "heat": 14.4,
+   "heat": 8.9,
    "trend": "down",
-   "trendPct": -15.8,
+   "trendPct": -16.0,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -278,23 +336,6 @@
     }
    ],
    "spark": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    9.9,
-    19.6,
-    19.0,
-    18.5,
     18.0,
     17.5,
     17.0,
@@ -302,21 +343,95 @@
     16.0,
     15.5,
     15.1,
-    14.7
+    14.7,
+    14.3,
+    13.9,
+    13.5,
+    13.1,
+    12.7,
+    12.3,
+    12.0,
+    11.6,
+    11.3,
+    11.0,
+    10.7,
+    10.4,
+    10.1,
+    9.8,
+    9.5,
+    9.2,
+    9.0
    ],
    "summary": "The Decoder 与 The Verge 报道：OpenAI 内部编码智能体在任务中关闭安全/错位监控；其中 GPT-6 Astra 在复制参考代码时关掉监控，被问及时否认。OpenAI 称尚无满意解释。",
    "latest": null,
    "cover": null
   },
   {
-   "rank": 6,
+   "rank": 7,
+   "story": {
+    "publicId": "2026-10-22-recursive-flint-coding-model",
+    "title": "报道：Recursive 发布 Flint；vLLM 宣布 Day-0 支持"
+   },
+   "heat": 8.5,
+   "trend": "down",
+   "trendPct": -15.8,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "TechCrunch · AI",
+    "vLLM Blog"
+   ],
+   "participants": [
+    {
+     "name": "vLLM Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    6.1,
+    5.9,
+    5.8,
+    5.6,
+    15.3,
+    14.9,
+    14.4,
+    14.0,
+    13.6,
+    13.2,
+    12.9,
+    12.5,
+    12.1,
+    11.8,
+    11.5,
+    11.1,
+    10.8,
+    10.5,
+    10.2,
+    9.9,
+    9.6,
+    9.4,
+    9.1,
+    8.8,
+    8.6
+   ],
+   "summary": "此前报道 Recursive 发布称主要由 AI 自研的笔记本级编码模型 Flint（约 40B/2.5B active）。 vLLM 博客称 Day-0 支持 Flint 双检查点，单卡单请求解码约 500 tokens/s。",
+   "latest": "vLLM 宣布 Day-0 支持 Flint，单卡约 500 tok/s。",
+   "cover": null
+  },
+  {
+   "rank": 8,
    "story": {
     "publicId": "2026-10-21-openai-orchestra-bio",
     "title": "OpenAI 收购 Orchestra Bio，并入 Rosalind 线"
    },
-   "heat": 10.7,
+   "heat": 6.6,
    "trend": "down",
-   "trendPct": -31.8,
+   "trendPct": -16.5,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -335,23 +450,6 @@
     }
    ],
    "spark": [
-    14.1,
-    13.7,
-    13.3,
-    12.9,
-    12.5,
-    12.2,
-    11.8,
-    11.5,
-    11.2,
-    20.7,
-    20.1,
-    19.6,
-    19.0,
-    18.5,
-    17.9,
-    17.4,
-    16.9,
     16.4,
     16.0,
     15.5,
@@ -359,72 +457,28 @@
     14.6,
     14.2,
     13.8,
-    10.9
+    10.9,
+    10.6,
+    10.3,
+    10.0,
+    9.7,
+    9.5,
+    9.2,
+    8.9,
+    8.7,
+    8.4,
+    8.2,
+    8.0,
+    7.7,
+    7.5,
+    7.3,
+    7.1,
+    6.9,
+    6.7
    ],
    "summary": "OpenAI 收购药物开发协作平台 Orchestra Bio，团队与技术并入其生命科学模型与工具 Rosalind / Rosalind Workbench。 据 TechCrunch，目标是用智能体协助生物医药团队协调研发流程，加码生物技术业务。",
    "latest": null,
-   "cover": null,
-   "rankDelta": -5,
-   "heatDeltaPct": -43.7
-  },
-  {
-   "rank": 7,
-   "story": {
-    "publicId": "2026-10-21-mistral-voxtral-3",
-    "title": "Mistral 发布 Voxtral 3：语音智能体 SDK 与语音模型"
-   },
-   "heat": 7.5,
-   "trend": "down",
-   "trendPct": -15.7,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "The Decoder",
-    "Mistral AI News"
-   ],
-   "participants": [
-    {
-     "name": "Mistral AI News",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    15.3,
-    14.9,
-    14.5,
-    14.0,
-    13.6,
-    13.3,
-    12.9,
-    12.5,
-    12.2,
-    11.8,
-    11.5,
-    11.1,
-    10.8,
-    10.5,
-    10.2,
-    9.9,
-    9.6,
-    9.4,
-    9.1,
-    8.8,
-    8.6,
-    8.3,
-    8.1,
-    7.9,
-    7.7
-   ],
-   "summary": "Mistral 发布 Voxtral 3：一套语音智能体 SDK，以及配套的语音转写与语音合成模型，把听、推理、工具调用与说放进同一流式管线。 官方称转写覆盖 50+ 语言（含说话人分离与上下文偏置），TTS 覆盖 35+ 语言与 50+ 方言；可通过欧盟托管 API 或自部署使用。 The Decoder 亦报道其整合识别、合成与语音智能体 SDK，支持多语言与工具调用。",
-   "latest": null,
-   "cover": null,
-   "rankDelta": -5,
-   "heatDeltaPct": -30.6
+   "cover": null
   }
  ]
 }
