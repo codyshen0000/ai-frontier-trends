@@ -7,3 +7,8 @@ content/l2-covers/fetch-cache/
 cache/engine-last-good/
 scripts/mit-static/.engine-site.json
 .engine-data/
+ops/l4-r1-lock
+ops/r1h/evidence/
+ops/r1h/pages-deploys.jsonl
+ops/r1h/staging/
+ops/r1h/cron.log
