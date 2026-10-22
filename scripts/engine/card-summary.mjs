@@ -85,11 +85,22 @@ export function pickCardSummary({ item, event, dailyCite } = {}) {
   if (digest) return digest.text;
 
   const longs = usable.filter((row) => LONG_SOURCES.has(row.source));
-  if (longs.length) {
-    return longs.reduce((best, row) => (row.text.length > best.length ? row.text : best), longs[0].text);
-  }
+  let picked = longs.length
+    ? longs.reduce((best, row) => (row.text.length > best.length ? row.text : best), longs[0].text)
+    : usable[0].text;
 
-  return usable[0].text;
+  // Re-group (SSR pages.tsx / site.ts) may omit dailyByItemId. Keep an already
+  // publicized longer digest/cite (not a short one_line) instead of event.summary.
+  const current = cleanSummary(item?.summary);
+  if (
+    current
+    && current.length >= 80
+    && !isBannedEcho(current, item, event)
+    && current.length > picked.length
+  ) {
+    return current;
+  }
+  return picked;
 }
 
 export function indexEvents(events) {

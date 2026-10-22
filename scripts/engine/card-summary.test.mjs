@@ -99,6 +99,38 @@ describe("card-summary picker", () => {
     assert.equal(out[0].item.summary, LONG);
   });
 
+  it("re-running groupByEvent without dailyByItemId keeps a longer publicized summary", () => {
+    const at = "2026-10-22T03:53:00.000Z";
+    const shorterEvent = "微软研究院博客称解决 KLS 猜想，移除一项理论障碍。";
+    const cards = [
+      {
+        key: "kls",
+        anchorAt: at,
+        item: {
+          id: "sha256:kls",
+          title: "微软研究院：宣布解决数学界 31 年难题 KLS 猜想",
+          summary: LONG,
+          reason: "微软研究院宣布解决 KLS 猜想（31 年）",
+          source: { name: "Microsoft Research Blog" },
+          publishedAt: at,
+          timelineAt: at,
+          category: "paper",
+          tags: [],
+          selected: true,
+          channel: "news",
+          x: null,
+          storyPublicId: "2026-10-22-msr-kls-conjecture",
+        },
+        group: null,
+      },
+    ];
+    const again = groupByEvent(cards, {
+      events: [{ publicId: "2026-10-22-msr-kls-conjecture", digest: null, summary: shorterEvent }],
+    });
+    assert.equal(again[0].item.summary, LONG);
+    assert.ok(again[0].item.summary.length > shorterEvent.length);
+  });
+
   it("publicizeBundle maps digest/long summary onto timeline + selected feed", () => {
     const at = "2026-10-22T03:53:00.000Z";
     const site = publicizeBundle({
