@@ -1,5 +1,11 @@
 [
  {
+  "key": "2026-10-23",
+  "issueNumber": 5,
+  "title": "DeepSeek 开源生产推理框架 DeepInfer",
+  "count": 12
+ },
+ {
   "key": "2026-10-22",
   "issueNumber": 4,
   "title": "微软研究院：宣布解决数学界 31 年难题 KLS 猜想",
