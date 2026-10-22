@@ -37,7 +37,7 @@ FT_ENGINE_DIR=scripts/engine/__samples__/v1 node scripts/verify/b2-redirects.mjs
 
 无 engine 目录时 B2 门 **skip**（fixture 构建不失败）。有 `hot.json` 时复算误差 >0.1 失败。
 
-Python 热度子集检查 `heat-py-parity.py` **不是**注册表门（无 `export function verify`）。喂 `scripts/engine/__samples__/heat-parity/cases.json`，对照 `fixture.python`。JS 侧由 `scripts/engine/heat.test.mjs` 覆盖。
+Python 热度检查 `heat-py-parity.py` 对照 `heat48h.py` port 与 `fixture.js`。注册表门 `b2-heat-parity.mjs` 会跑它。JS 侧由 `scripts/engine/heat.test.mjs` 覆盖。
 
 ## 各路要加的门
 
@@ -50,6 +50,7 @@ Python 热度子集检查 `heat-py-parity.py` **不是**注册表门（无 `expo
 | `b1-heat.mjs` | B1 | 已落：`FT_ENGINE_DIR` 有 `hot.json` 时，公开 HTML/JSON 热度与引擎一致（±0.1），页面须出现 `HEAT_METHOD_COPY`，不得写「实时」/「引擎已 1:1」 |
 | `b2-event-id.mjs` | B2 | **已加。** `event_id` / URL 去重 |
 | `b2-redirects.mjs` | B2 | **已加。** `redirects.json` → 静态跳转页存在且可跟 |
-| `b2-hot-recompute.mjs` | B2 | **已加。** 复算校验器：与 `hot.json` 误差 ≤0.1；不是生产热度源 |
+| `b2-hot-recompute.mjs` | B2 | **已加。** 复算校验器：与 `hot.json` 误差 ≤0.1；公式真源是 `heat.mjs` |
+| `b2-heat-parity.mjs` | B2 | **已加。** py↔JS fixture 必须与 `heat48h.py` port 一致 |
 
 W1 不往这里加 JS 门。归属见 [`docs/b-batch/OWNERSHIP.md`](../../docs/b-batch/OWNERSHIP.md)。
