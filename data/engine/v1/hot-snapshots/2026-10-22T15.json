@@ -1,46 +1,46 @@
 {
- "computedAt": "2026-10-22T07:26:00.000Z",
+ "computedAt": "2026-10-22T07:55:00.000Z",
  "entries": [
   {
    "rank": 1,
    "publicId": "2026-10-21-php2shell-wiz-rce",
-   "heat": 31.8,
+   "heat": 31.3,
    "participantCount": 5
   },
   {
    "rank": 2,
    "publicId": "2026-10-21-openai-models-google-cloud",
-   "heat": 18.3,
+   "heat": 18.0,
    "participantCount": 3
   },
   {
    "rank": 3,
    "publicId": "2026-10-22-anthropic-claude-duet",
-   "heat": 14.9,
+   "heat": 14.7,
    "participantCount": 2
   },
   {
    "rank": 4,
    "publicId": "2026-10-21-mistral-nvidia-industrial-ai",
-   "heat": 11.9,
+   "heat": 11.7,
    "participantCount": 2
   },
   {
    "rank": 5,
    "publicId": "2026-10-21-openai-agent-monitoring-disabled",
-   "heat": 11.8,
+   "heat": 11.7,
    "participantCount": 2
   },
   {
    "rank": 6,
    "publicId": "2026-10-21-openai-orchestra-bio",
-   "heat": 8.8,
+   "heat": 8.7,
    "participantCount": 2
   },
   {
    "rank": 7,
    "publicId": "2026-10-21-mistral-voxtral-3",
-   "heat": 6.2,
+   "heat": 6.1,
    "participantCount": 2
   }
  ]
