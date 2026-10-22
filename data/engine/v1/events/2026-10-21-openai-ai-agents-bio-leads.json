@@ -234,10 +234,31 @@
    "hour": "2026-10-22T11:00:00.000Z",
    "heat": 13.9,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-22T12:00:00.000Z",
+   "heat": 13.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T13:00:00.000Z",
+   "heat": 13.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T14:00:00.000Z",
+   "heat": 12.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T15:00:00.000Z",
+   "heat": 12.4,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "OpenAI：数千智能体挖脑细胞数据研究线索",
- "primaryUrl": "https://openai.com/index/scaling-ai-research-for-complex-biological-data"
+ "primaryUrl": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+ "rankDelta": 0
 }

@@ -22,6 +22,13 @@
    "hotRank": 7
   },
   {
+   "publicId": "2026-10-21-php2shell-wiz-rce",
+   "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
+   "latestAt": "2026-10-21T19:45:01.000Z",
+   "reportCount": 5,
+   "hotRank": 1
+  },
+  {
    "publicId": "2026-10-22-nvidia-microduck-isaac-lab",
    "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
    "latestAt": "2026-10-21T17:58:42.000Z",
@@ -138,7 +145,7 @@
    "title": "Mistral 发布 Voxtral 3：语音智能体 SDK 与语音模型",
    "latestAt": "2026-10-20T17:17:55.000Z",
    "reportCount": 2,
-   "hotRank": 9
+   "hotRank": null
   },
   {
    "publicId": "2026-10-19-deepseek-v41-flash-1017",
@@ -174,13 +181,6 @@
    "latestAt": "2026-10-19T00:00:00.000Z",
    "reportCount": 1,
    "hotRank": null
-  },
-  {
-   "publicId": "2026-10-21-php2shell-wiz-rce",
-   "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
-   "latestAt": null,
-   "reportCount": 0,
-   "hotRank": 1
   }
  ]
 }

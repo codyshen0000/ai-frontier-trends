@@ -15,7 +15,7 @@
  "whyHot": {
   "participants48h": 3,
   "newParticipants6h": 0,
-  "recentReports24h": 3,
+  "recentReports24h": 1,
   "observationComplete": true,
   "rank": 3
  },
@@ -199,11 +199,31 @@
    "hour": "2026-10-22T11:00:00.000Z",
    "heat": 16.5,
    "participants": 3
+  },
+  {
+   "hour": "2026-10-22T12:00:00.000Z",
+   "heat": 16.0,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-22T13:00:00.000Z",
+   "heat": 15.6,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-22T14:00:00.000Z",
+   "heat": 15.1,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-22T15:00:00.000Z",
+   "heat": 14.7,
+   "participants": 3
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "OpenAI 前沿模型入驻谷歌云 Model Garden",
  "primaryUrl": "https://openai.com/index/openai-models-google-cloud",
- "rankDelta": -1
+ "rankDelta": 0
 }

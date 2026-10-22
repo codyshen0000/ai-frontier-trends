@@ -15,7 +15,7 @@
  "whyHot": {
   "participants48h": 2,
   "newParticipants6h": 0,
-  "recentReports24h": 2,
+  "recentReports24h": 0,
   "observationComplete": true,
   "rank": 5
  },
@@ -194,11 +194,31 @@
    "hour": "2026-10-22T11:00:00.000Z",
    "heat": 10.7,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-22T12:00:00.000Z",
+   "heat": 10.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T13:00:00.000Z",
+   "heat": 10.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T14:00:00.000Z",
+   "heat": 9.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T15:00:00.000Z",
+   "heat": 9.5,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "Mistral×NVIDIA 推进工业工程物理 AI 工作流",
  "primaryUrl": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/",
- "rankDelta": -1
+ "rankDelta": 0
 }

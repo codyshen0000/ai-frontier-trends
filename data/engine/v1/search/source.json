@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-22T11:39:00.000Z",
+ "generatedAt": "2026-10-22T15:04:00.000Z",
  "docs": [
   {
    "id": "sha256:37719ab40890fac2",
@@ -97,6 +97,21 @@
    "selected": true,
    "eventPublicId": "2026-10-22-anthropic-claude-duet",
    "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent"
+  },
+  {
+   "id": "2026-10-21-php2shell-wiz-rce",
+   "kind": "event",
+   "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
+   "summary": null,
+   "publishedAt": "2026-10-21T19:45:01.000Z",
+   "sourceNames": [
+    "Hacker News（AI 关键词 ≥100 分）",
+    "OpenAI News",
+    "Simon Willison",
+    "TechCrunch · AI",
+    "The Decoder"
+   ],
+   "path": "/events/2026-10-21-php2shell-wiz-rce/"
   },
   {
    "id": "sha256:7decc1c5c0496d6c",
@@ -730,15 +745,6 @@
    "selected": true,
    "eventPublicId": "2026-10-19-deepseek-v41-flash-1017",
    "originalUrl": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/"
-  },
-  {
-   "id": "2026-10-21-php2shell-wiz-rce",
-   "kind": "event",
-   "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
-   "summary": null,
-   "publishedAt": null,
-   "sourceNames": [],
-   "path": "/events/2026-10-21-php2shell-wiz-rce/"
   }
  ]
 }

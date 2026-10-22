@@ -14,7 +14,7 @@
  "latestReport": null,
  "whyHot": {
   "participants48h": 3,
-  "newParticipants6h": 1,
+  "newParticipants6h": 0,
   "recentReports24h": 3,
   "observationComplete": true,
   "rank": 2
@@ -158,11 +158,31 @@
    "hour": "2026-10-22T11:00:00.000Z",
    "heat": 22.8,
    "participants": 3
+  },
+  {
+   "hour": "2026-10-22T12:00:00.000Z",
+   "heat": 22.2,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-22T13:00:00.000Z",
+   "heat": 21.5,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-22T14:00:00.000Z",
+   "heat": 20.9,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-22T15:00:00.000Z",
+   "heat": 20.3,
+   "participants": 3
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "报道：Anthropic 推 Claude Duet 智能体迎战 Muse",
  "primaryUrl": "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent",
- "rankDelta": 1
+ "rankDelta": 0
 }

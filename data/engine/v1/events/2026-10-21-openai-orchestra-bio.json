@@ -68,26 +68,6 @@
  ],
  "heat": [
   {
-   "hour": "2026-10-20T11:00:00.000Z",
-   "heat": 7.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-20T12:00:00.000Z",
-   "heat": 7.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-20T13:00:00.000Z",
-   "heat": 6.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-20T14:00:00.000Z",
-   "heat": 6.7,
-   "participants": 1
-  },
-  {
    "hour": "2026-10-20T15:00:00.000Z",
    "heat": 6.5,
    "participants": 1
@@ -311,11 +291,31 @@
    "hour": "2026-10-22T11:00:00.000Z",
    "heat": 8.0,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-22T12:00:00.000Z",
+   "heat": 7.7,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T13:00:00.000Z",
+   "heat": 7.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T14:00:00.000Z",
+   "heat": 7.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T15:00:00.000Z",
+   "heat": 7.1,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind",
  "primaryUrl": "https://the-decoder.com/openai-acquires-orchestra-bio-to-build-ai-agents-that-speed-up-drug-development/",
- "rankDelta": -2
+ "rankDelta": 0
 }

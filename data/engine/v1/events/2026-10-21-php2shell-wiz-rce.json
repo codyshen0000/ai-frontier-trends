@@ -1,11 +1,11 @@
 {
  "publicId": "2026-10-21-php2shell-wiz-rce",
  "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
- "status": "settled",
- "reportCount": 0,
- "sourceCount": 0,
- "firstReportAt": null,
- "latestAt": null,
+ "status": "active",
+ "reportCount": 5,
+ "sourceCount": 5,
+ "firstReportAt": "2026-10-21T07:00:00.000Z",
+ "latestAt": "2026-10-21T19:45:01.000Z",
  "digest": null,
  "digestUpdatedAt": null,
  "summary": null,
@@ -15,13 +15,106 @@
  "whyHot": {
   "participants48h": 5,
   "newParticipants6h": 0,
-  "recentReports24h": 4,
+  "recentReports24h": 3,
   "observationComplete": true,
   "rank": 1
  },
- "developments": [],
- "officialReports": [],
- "timeline": [],
+ "developments": [
+  {
+   "factId": "fact-2026-10-21-php2shell-wiz-rce",
+   "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
+   "firstReportAt": "2026-10-21T07:00:00.000Z",
+   "reportCount": 5,
+   "representative": {
+    "id": "sha256:de9db6f384cbc788",
+    "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
+    "summary": null,
+    "source": {
+     "name": "OpenAI News",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-21T07:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:de9db6f384cbc788",
+   "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
+   "summary": null,
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-21T07:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:d33145e4b0cfb916",
+   "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
+   "summary": null,
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-21T19:45:01.000Z",
+   "selected": false,
+   "originalUrl": "https://the-decoder.com/openais-gpt-5-6-sol-and-gemini-4-argon-discovered-the-critical-php-vulnerability-affecting-millions-of-websites/"
+  },
+  {
+   "id": "sha256:de377fdb3304eb69",
+   "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
+   "summary": null,
+   "source": {
+    "name": "Simon Willison",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-21T18:41:53.000Z",
+   "selected": false,
+   "originalUrl": "https://simonwillison.net/2026/Oct/21/php-security-release/"
+  },
+  {
+   "id": "sha256:65d1f116dfc06401",
+   "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
+   "summary": null,
+   "source": {
+    "name": "TechCrunch · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-21T17:59:12.000Z",
+   "selected": false,
+   "originalUrl": "https://techcrunch.com/2026/10/21/php-armageddon-openai-googles-wiz-find-ancient-holes-panicking-the-internet/"
+  },
+  {
+   "id": "sha256:7067eadac3a0d563",
+   "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
+   "summary": null,
+   "source": {
+    "name": "Hacker News（AI 关键词 ≥100 分）",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-21T13:43:19.000Z",
+   "selected": false,
+   "originalUrl": "https://www.wiz.io/blog/php2shell-php-rce"
+  },
+  {
+   "id": "sha256:de9db6f384cbc788",
+   "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
+   "summary": null,
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-21T07:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities"
+  }
+ ],
  "heat": [
   {
    "hour": "2026-10-21T07:00:00.000Z",
@@ -167,11 +260,32 @@
    "hour": "2026-10-22T11:00:00.000Z",
    "heat": 28.7,
    "participants": 5
+  },
+  {
+   "hour": "2026-10-22T12:00:00.000Z",
+   "heat": 27.8,
+   "participants": 5
+  },
+  {
+   "hour": "2026-10-22T13:00:00.000Z",
+   "heat": 27.1,
+   "participants": 5
+  },
+  {
+   "hour": "2026-10-22T14:00:00.000Z",
+   "heat": 26.3,
+   "participants": 5
+  },
+  {
+   "hour": "2026-10-22T15:00:00.000Z",
+   "heat": 25.5,
+   "participants": 5
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "智能体挖出 PHP 高危 RCE，Wiz/OpenAI 协调披露",
+ "primaryUrl": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
  "rankDelta": 0,
  "cover": {
   "url": "assets/covers/hot-2026-10-21-php2shell-1600.webp",
