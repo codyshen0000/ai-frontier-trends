@@ -114,13 +114,13 @@ export function HotScreen({ emptyCover = false }: { emptyCover?: boolean }) {
   return (
     <Shell pathname="/hot">
       <HotPage hot={emptyCover ? hotWithoutCover(hot) : hot} />
-      <AsOfAndRss rssHref={hasSelectedFeed ? "../feed.xml" : "../feed/weekly.xml"} />
+      <AsOfAndRss rssHref={hasSelectedFeed ? "feed.xml" : "feed/weekly.xml"} />
     </Shell>
   );
 }
 
 export function DailyScreen({ emptyCover = false }: { emptyCover?: boolean }) {
-  const rss = <AsOfAndRss rssHref={hasSelectedFeed ? "../feed.xml" : "../feed/weekly.xml"} />;
+  const rss = <AsOfAndRss rssHref={hasSelectedFeed ? "feed.xml" : "feed/weekly.xml"} />;
   if (!daily) {
     return (
       <Shell pathname="/daily">
@@ -150,7 +150,7 @@ export function DailyArchiveScreen() {
         title="日报合订本"
         copy={dailyIndex.length ? "按月查看往期日报。" : "暂无往期日报。"}
       />
-      <AsOfAndRss rssHref={hasSelectedFeed ? "../feed.xml" : "../feed/weekly.xml"} />
+      <AsOfAndRss rssHref={hasSelectedFeed ? "feed.xml" : "feed/weekly.xml"} />
     </Shell>
   );
 }
@@ -159,7 +159,7 @@ export function WeeklyScreen() {
   return (
     <Shell pathname="/weekly">
       <ReportEmpty kind="weekly" index={weeklyIndex} today={today} title="周报" copy="暂无引擎周报。" />
-      <AsOfAndRss rssHref="../feed/weekly.xml" />
+      <AsOfAndRss rssHref="feed/weekly.xml" />
     </Shell>
   );
 }
@@ -168,7 +168,7 @@ export function MonthlyScreen() {
   return (
     <Shell pathname="/monthly">
       <ReportEmpty kind="monthly" index={monthlyIndex} today={today} title="月报" copy="暂无月报。" />
-      <AsOfAndRss rssHref={hasSelectedFeed ? "../feed.xml" : "../feed/weekly.xml"} />
+      <AsOfAndRss rssHref={hasSelectedFeed ? "feed.xml" : "feed/weekly.xml"} />
     </Shell>
   );
 }
@@ -259,7 +259,7 @@ export function MoreScreen() {
             {HEAT_METHOD_COPY}
           </p>
         </aside>
-        <AsOfAndRss rssHref={hasSelectedFeed ? "../feed.xml" : "../feed/weekly.xml"} />
+        <AsOfAndRss rssHref={hasSelectedFeed ? "feed.xml" : "feed/weekly.xml"} />
       </div>
     </Shell>
   );
