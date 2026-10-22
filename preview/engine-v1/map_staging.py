@@ -65,6 +65,75 @@ def topic_slug(name):
     return quote(text, safe="")
 
 
+def _clean_text(value):
+    if value is None:
+        return ""
+    if isinstance(value, dict):
+        return _clean_text(value.get("text") or value.get("summary") or value.get("digest"))
+    return " ".join(str(value).split()).strip()
+
+
+def _compact(value):
+    return "".join(ch for ch in _clean_text(value).lower() if ch.isalnum())
+
+
+def is_title_echo(text, other):
+    a, b = _compact(text), _compact(other)
+    if not a or not b:
+        return False
+    if a == b:
+        return True
+    shorter, longer = (a, b) if len(a) <= len(b) else (b, a)
+    if len(shorter) < 8:
+        return False
+    return shorter in longer and len(shorter) / len(longer) >= 0.62
+
+
+def pick_card_summary(item, event=None):
+    """Prefer digest / long summary. Never invent. Never paste title, reason, or one_line."""
+    item = item or {}
+    event = event or {}
+    title = item.get("title") or event.get("title") or ""
+    banned = [
+        title,
+        item.get("reason") or event.get("recommendReason") or "",
+        item.get("one_line") or item.get("oneLine") or event.get("one_line") or event.get("oneLine") or "",
+    ]
+
+    def take(raw):
+        text = _clean_text(raw)
+        if not text or any(is_title_echo(text, ban) for ban in banned if ban):
+            return None
+        return text
+
+    digest = take(event.get("digest")) or take(item.get("digest"))
+    if digest:
+        return digest
+
+    longs = []
+    for raw in (
+        event.get("summary"),
+        event.get("excerpt"),
+        item.get("long_summary"),
+        item.get("longSummary"),
+        item.get("abstract"),
+    ):
+        text = take(raw)
+        if text:
+            longs.append(text)
+    for row in (event.get("officialReports") or []) + (event.get("timeline") or []):
+        text = take((row or {}).get("summary"))
+        if text:
+            longs.append(text)
+    for fact in event.get("developments") or []:
+        text = take(((fact or {}).get("representative") or {}).get("summary"))
+        if text:
+            longs.append(text)
+    if longs:
+        return max(longs, key=len)
+    return take(item.get("summary"))
+
+
 meta0 = L("v1/meta.json") or L("raw/meta.json") or {}
 tl_raw = L("raw/api_site_timeline.json") or L("v1/timeline/page-1.json") or {"cards": []}
 pool_raw = L("raw/api_site_pool.json") or {"items": []}
@@ -149,7 +218,7 @@ def clean(it, selected):
     o = {
         "id": it["id"],
         "title": it["title"],
-        "summary": it.get("summary"),
+        "summary": pick_card_summary(it),
         "reason": it.get("reason"),
         "source": {"name": (it.get("source") or {}).get("name") or ""},
         "publishedAt": it.get("publishedAt"),
@@ -458,9 +527,9 @@ for c in cards:
         "sourceCount": len(names) or 1,
         "firstReportAt": first,
         "latestAt": latest,
-        "digest": None,
-        "digestUpdatedAt": None,
-        "summary": it.get("summary"),
+        "digest": it.get("digest") or None,
+        "digestUpdatedAt": it.get("digestUpdatedAt") or None,
+        "summary": pick_card_summary(it) or it.get("summary"),
         "excerpt": None,
         "latest": None,
         "latestReport": {"id": reports[0]["id"]} if reports else None,
@@ -518,6 +587,34 @@ topics = [{
     "count": count,
 } for name, count in sorted(topic_counts.items(), key=lambda kv: (-kv[1], kv[0])) if topic_slug(name)]
 w("topics.json", {"topics": topics})
+
+ev_by_id = {e["publicId"]: e for e in evs}
+for c in cards + pool_cards + all_cards:
+    it = c.get("item") or {}
+    picked = pick_card_summary(it, ev_by_id.get(it.get("storyPublicId")))
+    if picked != it.get("summary"):
+        it["summary"] = picked
+
+w("timeline/page-1.json", {
+    "filters": {"channel": "all", "category": None, "tag": None},
+    "cards": cards,
+    "nextCursor": None,
+    "dayCounts": tl_raw.get("dayCounts") or day_counts(cards),
+    "hot": None,
+    "page": 1,
+    "pageCount": 1,
+    "total": len(cards),
+})
+w("timeline/all.json", {
+    "filters": {"channel": "all", "category": None, "tag": None},
+    "cards": all_cards,
+    "nextCursor": None,
+    "dayCounts": day_counts(all_cards),
+    "hot": None,
+    "page": 1,
+    "pageCount": 1,
+    "total": len(all_cards),
+})
 
 w("feed/selected.json", {
     "feed": {

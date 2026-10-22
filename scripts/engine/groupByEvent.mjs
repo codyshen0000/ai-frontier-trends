@@ -11,6 +11,7 @@
  * surviving event. Cards alone still collapse duplicate event_id / URL.
  */
 import { asHotKind, indexSources } from "./heat.mjs";
+import { pickCardSummary } from "./card-summary.mjs";
 import {
   canonicalEventId,
   cardUrl,
@@ -134,12 +135,13 @@ function memberIdsFrom(cards, members) {
   return ids;
 }
 
-function decorateCard(representative, { id, sources, memberIds, reportCount }) {
+function decorateCard(representative, { id, sources, memberIds, reportCount, event, dailyCite }) {
   const sourceCount = sources.length;
   const additionalSourceCount = Math.max(0, sourceCount - 1);
   const item = {
     ...representative.item,
     storyPublicId: id || representative.item?.storyPublicId,
+    summary: pickCardSummary({ item: representative.item, event, dailyCite }),
     sourceCount,
     sourceNames: sources.map((row) => row.name),
     participants: sources.map((row) => ({
@@ -171,6 +173,7 @@ export function groupByEvent(cards, data = {}) {
   if (!Array.isArray(cards)) return cards;
   const redirectMap = resolveRedirectMap(data.redirects || data.redirectsJson || []);
   const events = eventById(data.events);
+  const dailyByItemId = data.dailyByItemId instanceof Map ? data.dailyByItemId : new Map();
   const { byName } = indexSources(data.sources || []);
 
   const buckets = new Map();
@@ -205,6 +208,8 @@ export function groupByEvent(cards, data = {}) {
         sources,
         memberIds,
         reportCount: Math.max(members.length, groupCards.length, memberIds.length),
+        event,
+        dailyCite: dailyByItemId.get(representative.item?.id),
       }),
     );
   }
@@ -228,6 +233,8 @@ export function groupByEvent(cards, data = {}) {
         sources: name ? [{ name, kind: sourceKindOf(card.item, byName) }] : [],
         memberIds: card.item?.id ? [card.item.id] : [],
         reportCount: 1,
+        event: events.get(eventIdOf(card)),
+        dailyCite: dailyByItemId.get(card.item?.id),
       }),
     );
   }
