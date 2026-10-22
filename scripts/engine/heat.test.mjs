@@ -353,7 +353,7 @@ describe("surge / rising badges (SYNTHETIC)", () => {
   });
 });
 
-describe("py↔JS heat/spark parity fixture (Task #57 slice)", () => {
+describe("py↔JS heat/spark parity fixture (Task #57)", () => {
   const fixture = loadHeatParityFixture();
   const byId = Object.fromEntries(fixture.cases.map((spec) => [spec.id, spec]));
 
@@ -383,6 +383,9 @@ describe("py↔JS heat/spark parity fixture (Task #57 slice)", () => {
       if (expected.heatEqualsSparkEndpoint != null) {
         assert.equal(got.heatEqualsSparkEndpoint, expected.heatEqualsSparkEndpoint, `${spec.id} heat===spark`);
       }
+      if (expected.exactHeat != null) {
+        assert.equal(got.exactHeat, expected.exactHeat, `${spec.id} exactHeat`);
+      }
       if (spec.raw != null && expected.displayHeatOfRaw != null) {
         assert.equal(displayHeat(spec.raw), expected.displayHeatOfRaw, `${spec.id} displayHeat(raw)`);
       }
@@ -403,33 +406,35 @@ describe("py↔JS heat/spark parity fixture (Task #57 slice)", () => {
     assert.equal(got.sparkLast, 14.7);
   });
 
-  it("documents live-style off-hour drift: heat 14.6 vs spark last 14.7", () => {
+  it("closes off-hour contract: listed heat === spark[-1] (floor hour)", () => {
     const spec = byId["spark-endpoint-off-hour"];
     const got = runJsParityCase(spec);
-    assert.equal(got.heat, 14.6);
+    assert.equal(got.heat, 14.7);
     assert.equal(got.sparkLast, 14.7);
-    assert.notEqual(got.heat, got.sparkLast, "current JS: heat at exact at, spark[-1] at floorUtcHour");
-    assert.equal(spec.parityStatus, "documented-fail-contract");
-    assert.match(spec.contractNote, /heat === spark endpoint/);
+    assert.equal(got.exactHeat, 14.6);
+    assert.equal(got.heatEqualsSparkEndpoint, true);
+    assert.equal(spec.parityStatus, "pass");
+    assert.match(spec.contractNote, /Closed/);
   });
 
-  it("documents known py≠js diffs without failing the JS path", () => {
-    const documented = fixture.cases.filter((spec) => (spec.knownDiffs || []).length);
-    assert.ok(documented.length >= 4, "48h / rounding / trend / keys should be listed");
-    for (const spec of documented) {
-      for (const field of spec.knownDiffs) {
-        if (field === "keysInWindow" || field === "keys") continue;
-        assert.notDeepEqual(spec.js[field], spec.python[field], `${spec.id} ${field}`);
+  it("py fixture rows match JS on every aligned case", () => {
+    for (const spec of fixture.cases) {
+      assert.equal(spec.parityStatus, "pass", spec.id);
+      assert.equal((spec.knownDiffs || []).length, 0, spec.id);
+      for (const field of ["heat", "sparkLast", "trend", "trendPct", "participantCount", "heatEqualsSparkEndpoint"]) {
+        if (field in spec.js && field in spec.python) {
+          assert.deepEqual(spec.js[field], spec.python[field], `${spec.id} ${field}`);
+        }
       }
     }
     const at = Date.parse(byId["boundary-48h"].at);
     const edge = Date.parse("2026-10-17T12:00:00.000Z");
     assert.equal(hoursInWindow(at, edge), 48, "JS includes the exact-48h member");
     assert.equal(displayHeat(1.445), 14.5);
-    assert.equal(byId["rounding-half-up"].python.displayHeatOfRaw, 14.4);
+    assert.equal(byId["rounding-half-up"].python.displayHeatOfRaw, 14.5);
   });
 
-  it("python stub documents those diffs (skip if no python3)", (t) => {
+  it("python heat48h.py matches JS (skip if no python3)", (t) => {
     const result = spawnSync("python3", [join(here, "..", "verify", "heat-py-parity.py"), "--json"], {
       encoding: "utf8",
     });
@@ -440,10 +445,51 @@ describe("py↔JS heat/spark parity fixture (Task #57 slice)", () => {
     assert.equal(result.status, 0, result.stderr || result.stdout);
     const payload = JSON.parse(result.stdout);
     assert.equal(payload.ok, true, JSON.stringify(payload.cases?.flatMap((row) => row.issues)));
-    const stale = (payload.cases || []).filter((row) => !row.matchPythonExpected);
+    const stale = (payload.cases || []).filter((row) => !row.matchPythonExpected || !row.matchJs);
     assert.equal(stale.length, 0);
     const withDiffs = (payload.cases || []).filter((row) => (row.knownDiffs || []).length);
-    assert.ok(withDiffs.length >= 4);
+    assert.equal(withDiffs.length, 0);
+  });
+
+  it("Python-produced hot.json passes b2-hot-recompute without align", (t) => {
+    const spec = byId["spark-endpoint-off-hour"];
+    const py = spawnSync(
+      "python3",
+      ["-c", "import json,sys; sys.path.insert(0,'scripts/site-data'); from heat48h import run_parity_case; print(json.dumps(run_parity_case(json.load(sys.stdin))))"],
+      { encoding: "utf8", input: JSON.stringify(spec), cwd: join(here, "..", "..") },
+    );
+    if (py.error && py.error.code === "ENOENT") {
+      t.skip("python3 not on PATH");
+      return;
+    }
+    assert.equal(py.status, 0, py.stderr || py.stdout);
+    const produced = JSON.parse(py.stdout);
+    const dir = mkdtempSync(join(tmpdir(), "b2-no-align-"));
+    try {
+      eventTree(dir, [{
+        publicId: "2026-10-19-synthetic-off-hour",
+        title: "SYNTHETIC · off-hour no align",
+        participants: spec.participants.map((p) => ({
+          key: p.source_id,
+          name: p.name,
+          kind: p.kind,
+          publishedAt: p.publishedAt,
+        })),
+      }]);
+      const hot = JSON.parse(readFileSync(join(dir, "hot.json"), "utf8"));
+      hot.computedAt = spec.at;
+      hot.entries[0].heat = produced.heat;
+      hot.entries[0].spark = produced.spark;
+      hot.entries[0].trend = produced.trend;
+      hot.entries[0].trendPct = produced.trendPct;
+      writeFileSync(join(dir, "hot.json"), `${JSON.stringify(hot, null, 2)}\n`);
+      const result = verifyEngineHeat(dir, { at: spec.at });
+      assert.equal(result.ok, true, result.issues.join("\n"));
+      assert.equal(result.recomputed[0].heat, produced.heat);
+      assert.equal(result.recomputed[0].heat, result.recomputed[0].spark.at(-1));
+    } finally {
+      rmSync(dir, { recursive: true, force: true });
+    }
   });
 });
 

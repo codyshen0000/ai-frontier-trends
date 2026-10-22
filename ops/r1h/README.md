@@ -60,10 +60,11 @@ node scripts/r1h/record_pages_deploy.mjs --source r1 --kind success --pages-run-
 
 ## 盒子（可选）
 
-默认 **不**调用全量 `export_site_data.py`（避免轻环重写 daily/feeds）。若盒子已有 **hot-only** 导出命令，显式设置：
+默认 **不**调用全量 `export_site_data.py`（避免轻环重写 daily/feeds）。仓库真源在 `scripts/site-data/`（heat.mjs port，无需 align）。若盒子仍走 **hot-only** 导出命令，显式设置：
 
 ```bash
-export FT_R1H_RANK_CMD='python3 /workspace/frontier-hotboard/site-data/export_site_data.py --hot-only --prev-tip {prevTip} --out {out}'
+export FT_R1H_RANK_CMD='python3 scripts/site-data/export_site_data.py --hot-only --prev-tip {prevTip} --out {out}'
+# 盒子旧路径仍可用：/workspace/frontier-hotboard/site-data/export_site_data.py
 ```
 
 占位：`{prevTip}` `{out}` `{at}`。未设置时走本仓库 `heat.mjs`。看到 `/workspace/l4-runtime/engine.sqlite` 只记入证据，不在本脚本里手写 SQL。

@@ -418,10 +418,14 @@ export function refuseLiveSideEffects() {
   };
 }
 
-export function listBoxHints(env = process.env) {
+export function listBoxHints(env = process.env, cwd = process.cwd()) {
   const sqlite = env.FT_ENGINE_SQLITE || "/workspace/l4-runtime/engine.sqlite";
-  const exportPy = env.FT_SITE_DATA_EXPORT || "/workspace/frontier-hotboard/site-data/export_site_data.py";
-  const heatPy = env.HEAT48H_PY || "/workspace/frontier-hotboard/site-data/heat48h.py";
+  const inRepoExport = join(cwd, "scripts/site-data/export_site_data.py");
+  const inRepoHeat = join(cwd, "scripts/site-data/heat48h.py");
+  const boxExport = "/workspace/frontier-hotboard/site-data/export_site_data.py";
+  const boxHeat = "/workspace/frontier-hotboard/site-data/heat48h.py";
+  const exportPy = env.FT_SITE_DATA_EXPORT || (existsSync(inRepoExport) ? inRepoExport : boxExport);
+  const heatPy = env.HEAT48H_PY || (existsSync(inRepoHeat) ? inRepoHeat : boxHeat);
   return {
     sqlite: existsSync(sqlite) ? sqlite : null,
     exportPy: existsSync(exportPy) ? exportPy : null,

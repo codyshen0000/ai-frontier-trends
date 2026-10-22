@@ -1,22 +1,22 @@
 {
   "schema": "heat-spark-parity-v1",
   "synthetic": true,
-  "note": "SYNTHETIC. Shared py↔JS heat/spark parity fixture. Not production. Not Remaining-A. JS source of truth is scripts/engine/heat.mjs. Python producer (site-data/heat48h.py) lives outside this repo; scripts/verify/heat-py-parity.py implements that subset for this file only.",
+  "note": "SYNTHETIC. Shared py↔JS heat/spark parity fixture. Not production. Not Remaining-A. JS source of truth is scripts/engine/heat.mjs. Python producer is the in-repo port scripts/site-data/heat48h.py.",
   "jsSource": "scripts/engine/heat.mjs",
-  "pythonProducer": "site-data/heat48h.py (box path; not in this repo)",
+  "pythonProducer": "scripts/site-data/heat48h.py",
   "pythonCheck": "scripts/verify/heat-py-parity.py",
   "contract": "docs/SITE-DATA-CONTRACT.md",
   "ruleVersion": "heat-v1-48h-halflife24h",
   "at": "2026-10-19T12:00:00.000Z",
   "weights": "mit",
   "invariants": {
-    "heatEqualsSparkEndpoint": "listed.heat must equal spark.at(-1). Live tip (hot #3, 2026-10-22) had heat 14.6 vs spark last 14.7 because heat uses exact computedAt and spark[-1] uses floorUtcHour.",
+    "heatEqualsSparkEndpoint": "listed.heat === spark.at(-1), including off-hour computedAt (listed heat uses floorUtcHour).",
     "jsWindow": "0 ≤ hours ≤ 48 (closed)",
-    "pythonWindow": "at−48h < t ≤ at (left-open)",
+    "pythonWindow": "0 ≤ hours ≤ 48 (closed; port of heat.mjs)",
     "jsRound": "Math.round(raw*100)/10 (half-up); raw≤0 → 0",
-    "pythonRound": "round(raw*100)/10 (banker's / half-even)",
+    "pythonRound": "math.floor(raw*100+0.5)/10 (half-up; port of Math.round)",
     "jsTrend": "round to 1 decimal first, then >10 up / <-10 down",
-    "pythonTrend": "unrounded (heat-heat6)/heat6 vs ±0.1; heat6≤0 → new"
+    "pythonTrend": "same as JS (display_pct then ±10)"
   },
   "cases": [
     {
@@ -62,18 +62,18 @@
         "heatEqualsSparkEndpoint": true
       },
       "python": {
-        "heat": 17.1,
-        "sparkLast": 17.1,
-        "participantCount": 2,
-        "keys": ["source:edge", "source:mid", "source:notes"],
-        "keysInWindow": ["source:mid", "source:notes"],
+        "heat": 19.6,
+        "sparkLast": 19.6,
+        "participantCount": 3,
+        "keys": ["edge", "mid", "notes"],
+        "keysInWindow": ["edge", "mid", "notes"],
         "trend": "up",
-        "trendPct": 50,
+        "trendPct": 71.9,
         "prevHeat": 11.4,
         "heatEqualsSparkEndpoint": true
       },
-      "knownDiffs": ["heat", "sparkLast", "participantCount", "keysInWindow"],
-      "parityStatus": "documented-fail"
+      "knownDiffs": [],
+      "parityStatus": "pass"
     },
     {
       "id": "rounding-half-up",
@@ -115,15 +115,15 @@
       "python": {
         "heat": 14.5,
         "sparkLast": 14.5,
-        "displayHeatOfRaw": 14.4,
+        "displayHeatOfRaw": 14.5,
         "participantCount": 2,
-        "keys": ["source:lab", "source:notes"],
-        "keysInWindow": ["source:lab", "source:notes"],
+        "keys": ["lab", "notes"],
+        "keysInWindow": ["lab", "notes"],
         "trend": "up",
         "heatEqualsSparkEndpoint": true
       },
-      "knownDiffs": ["displayHeatOfRaw"],
-      "parityStatus": "documented-fail"
+      "knownDiffs": [],
+      "parityStatus": "pass"
     },
     {
       "id": "trend-plus-10",
@@ -143,11 +143,11 @@
       "python": {
         "heat": 23.0,
         "prevHeat": 20.9,
-        "trend": "up",
+        "trend": "flat",
         "trendPct": 10
       },
-      "knownDiffs": ["trend"],
-      "parityStatus": "documented-fail"
+      "knownDiffs": [],
+      "parityStatus": "pass"
     },
     {
       "id": "trend-minus-10",
@@ -167,11 +167,11 @@
       "python": {
         "heat": 18.8,
         "prevHeat": 20.9,
-        "trend": "down",
+        "trend": "flat",
         "trendPct": -10
       },
-      "knownDiffs": ["trend"],
-      "parityStatus": "documented-fail"
+      "knownDiffs": [],
+      "parityStatus": "pass"
     },
     {
       "id": "key-collision",
@@ -220,18 +220,18 @@
         "heatEqualsSparkEndpoint": true
       },
       "python": {
-        "heat": 20.0,
-        "sparkLast": 20.0,
-        "participantCount": 2,
-        "keys": ["owner:verge-owner", "owner:notes-owner"],
-        "keysInWindow": ["owner:verge-owner", "owner:notes-owner"],
+        "heat": 29.7,
+        "sparkLast": 29.7,
+        "participantCount": 3,
+        "keys": ["verge", "verge-nightly", "notes"],
+        "keysInWindow": ["notes", "verge", "verge-nightly"],
         "trend": "new",
         "trendPct": null,
-        "prevHeat": 0,
+        "prevHeat": null,
         "heatEqualsSparkEndpoint": true
       },
-      "knownDiffs": ["heat", "sparkLast", "participantCount", "keys"],
-      "parityStatus": "documented-fail"
+      "knownDiffs": [],
+      "parityStatus": "pass"
     },
     {
       "id": "spark-endpoint-on-hour",
@@ -272,8 +272,8 @@
         "heat": 14.7,
         "sparkLast": 14.7,
         "participantCount": 2,
-        "keys": ["source:lab", "source:notes"],
-        "keysInWindow": ["source:lab", "source:notes"],
+        "keys": ["lab", "notes"],
+        "keysInWindow": ["lab", "notes"],
         "trend": "up",
         "heatEqualsSparkEndpoint": true
       },
@@ -282,12 +282,12 @@
     },
     {
       "id": "spark-endpoint-off-hour",
-      "title": "SYNTHETIC · 非整点 heat≠spark 终点（现网 14.6 vs 14.7）",
+      "title": "SYNTHETIC · 非整点 heat === spark 终点（收口）",
       "mode": "recompute",
       "covers": "heat-equals-spark-endpoint-off-hour",
       "at": "2026-10-19T12:17:00.000Z",
-      "description": "Same participants as spark-endpoint-on-hour, computedAt=12:17Z. JS heat uses exact at (14.6); spark[-1] uses 12:00Z (14.7). Matches the live hot #3 note. Contract still wants heat===spark[-1]; this case documents the current fail.",
-      "arithmetic": "12:17Z: 0.5^(0.2833/24)+0.5^(26.2833/24) ≈ 0.99185+0.4681 = 1.45995 → 14.6. spark[-1] stays the 12:00Z bucket → 14.7.",
+      "description": "Same participants as spark-endpoint-on-hour, computedAt=12:17Z. Listed heat uses floorUtcHour (12:00Z) so heat === spark[-1] === 14.7. exactHeat at 12:17Z remains 14.6 for live-tip compareEntry fallback.",
+      "arithmetic": "Listed at 12:00Z: 0.5^0 + 0.5^(26/24) = 1.471937 → 14.7. exactHeat at 12:17Z ≈ 1.45995 → 14.6.",
       "participants": [
         {
           "name": "公开实验室",
@@ -305,28 +305,32 @@
         }
       ],
       "js": {
-        "heat": 14.6,
+        "heat": 14.7,
         "sparkLast": 14.7,
+        "exactHeat": 14.6,
         "participantCount": 2,
         "keys": ["lab", "notes"],
         "trend": "up",
-        "trendPct": 160.7,
+        "trendPct": 162.5,
         "prevHeat": 5.6,
         "badges": ["rising"],
-        "heatEqualsSparkEndpoint": false
+        "heatEqualsSparkEndpoint": true
       },
       "python": {
-        "heat": 14.6,
+        "heat": 14.7,
         "sparkLast": 14.7,
+        "exactHeat": 14.6,
         "participantCount": 2,
-        "keys": ["source:lab", "source:notes"],
-        "keysInWindow": ["source:lab", "source:notes"],
+        "keys": ["lab", "notes"],
+        "keysInWindow": ["lab", "notes"],
         "trend": "up",
-        "heatEqualsSparkEndpoint": false
+        "trendPct": 162.5,
+        "prevHeat": 5.6,
+        "heatEqualsSparkEndpoint": true
       },
       "knownDiffs": [],
-      "parityStatus": "documented-fail-contract",
-      "contractNote": "Product: heat === spark endpoint. Current JS and heat48h.py both compute heat at exact `at` and spark[-1] at the floored hour, so they agree with each other and both violate the contract when `at` is off the hour."
+      "parityStatus": "pass",
+      "contractNote": "Closed: listed heat is the last spark bucket. exactHeat (14.6) is only used so pre-close live tips still pass b2-hot-recompute."
     }
   ]
 }
