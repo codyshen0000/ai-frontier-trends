@@ -1,16 +1,19 @@
 /**
- * B2 heat **recompute verifier** (not a production heat source).
+ * Sole source of truth for **heat-v1-48h-halflife24h**.
  *
- * Production values live in site-data `hot.json` / `hot-snapshots` (heat48h.py).
- * This module recomputes `heat-v1-48h-halflife24h` from snapshot inputs
- * (per-event participant last-seen times) and fails when any listed value
- * differs from `hot.json` by more than HEAT_TOLERANCE (0.1).
+ * Python `scripts/site-data/heat48h.py` ports this file. R1h `rankHotFromEngine`
+ * and `b2-hot-recompute.mjs` reuse the same path. The box align post-step
+ * (`scripts/site-data/align_hot_sparks_to_js.mjs`) is retired (flag default-off).
  *
  * Formula (REMAINING-PRD-v1 §4.2 / SITE-DATA-CONTRACT 1.1):
  *   raw  = Σ 0.5^((T − last_at_h) / 24)   // one term per participant, 48h window
  *   heat = round(raw × 100) / 10
  *
- * Numeric contract + py↔JS diffs: docs/SITE-DATA-CONTRACT.md
+ * Listed heat is the last spark bucket (`floorUtcHour(at)`), so
+ * `listed.heat === spark.at(-1)` on and off the hour. `exactHeat` (heat at the
+ * precise `computedAt`) is kept for live tips that still store pre-close values.
+ *
+ * Numeric contract: docs/SITE-DATA-CONTRACT.md
  * Shared fixture: scripts/engine/__samples__/heat-parity/cases.json
  */
 import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
@@ -179,32 +182,58 @@ export function badgesOf({ firstAt, at, newParticipants6h: fresh, participantCou
 }
 
 /**
- * Recompute one story at `at`. `prevHeat` is the heat_index 6h earlier (or null).
- * `existedBefore` defaults to prevHeat != null.
+ * Listed heat uses the last spark instant (`floorUtcHour(at)`).
+ * That closes `heat === spark.at(-1)` when `computedAt` is off the hour.
+ * `exactHeat` is the value at the precise timestamp (pre-close live tips).
  */
+export function listedHeatFromSpark(participants, at, points = SPARK_POINTS) {
+  const atMs = toMs(at);
+  const spark = sparkFor(participants, atMs, points);
+  const sparkLast = spark.at(-1);
+  const rows = participantsAt(participants, atMs);
+  const exactHeat = rows.length ? displayHeat(rawHeat(rows, atMs)) : 0;
+  const heat = sparkLast != null ? sparkLast : exactHeat;
+  return { heat, exactHeat, spark, sparkLast };
+}
+
 export function recomputeEntry(participants, at, options = {}) {
   const atMs = toMs(at);
   const rows = participantsAt(participants, atMs);
-  const heat = displayHeat(rawHeat(rows, atMs));
+  const { heat, exactHeat, spark, sparkLast } = listedHeatFromSpark(participants, atMs);
   const prevAt = options.prevAt != null ? options.prevAt : atMs - TREND_LAG_HOURS * MS_HOUR;
   const prevRows = participantsAt(participants, toMs(prevAt));
   const prevHeat = options.prevHeat != null ? options.prevHeat : prevRows.length ? displayHeat(rawHeat(prevRows, toMs(prevAt))) : null;
   const existedBefore = options.existedBefore != null ? options.existedBefore : prevHeat != null && prevRows.length > 0;
   const { trend, trendPct } = trendOf(heat, prevHeat, existedBefore);
+  const exactTrend = trendOf(exactHeat, prevHeat, existedBefore);
   const fresh = newParticipants6h(participants, atMs);
+  const badges = badgesOf({
+    firstAt: firstReportAt(participants),
+    at: atMs,
+    newParticipants6h: fresh,
+    participantCount: rows.length,
+    trendPct,
+  });
+  const exactBadges = badgesOf({
+    firstAt: firstReportAt(participants),
+    at: atMs,
+    newParticipants6h: fresh,
+    participantCount: rows.length,
+    trendPct: exactTrend.trendPct,
+  });
   return {
     heat,
+    exactHeat,
     trend,
     trendPct,
-    badges: badgesOf({
-      firstAt: firstReportAt(participants),
-      at: atMs,
-      newParticipants6h: fresh,
-      participantCount: rows.length,
-      trendPct,
-    }),
+    exactTrend: exactTrend.trend,
+    exactTrendPct: exactTrend.trendPct,
+    badges,
+    exactBadges,
     participantCount: rows.length,
-    spark: sparkFor(participants, atMs),
+    spark,
+    sparkLast,
+    heatEqualsSparkEndpoint: heat === sparkLast,
     eligible: isEligible(participants, atMs),
     newParticipants6h: fresh,
     prevHeat,
@@ -411,16 +440,33 @@ export function compareEntry(listed, recomputed, { tolerance = HEAT_TOLERANCE, i
   if (!recomputed.eligible) {
     issues.push(`${id}: not eligible (need ≥2 participants and ≥1 editorial)`);
   }
-  if (!close(listed.heat, recomputed.heat, tolerance)) {
+  // Accept listed heat at either the spark endpoint (contract) or the exact
+  // computedAt (pre-close live tips). New exports write heat === spark[-1].
+  const heatMatches =
+    close(listed.heat, recomputed.heat, tolerance) ||
+    (recomputed.exactHeat != null && close(listed.heat, recomputed.exactHeat, tolerance));
+  if (!heatMatches) {
     issues.push(`${id}: heat ${listed.heat} ≠ recomputed ${recomputed.heat} (tol ${tolerance})`);
   }
-  if (listed.trend && listed.trend !== recomputed.trend) {
+  const trendMatches =
+    !listed.trend ||
+    listed.trend === recomputed.trend ||
+    listed.trend === recomputed.exactTrend;
+  if (!trendMatches) {
     issues.push(`${id}: trend ${listed.trend} ≠ recomputed ${recomputed.trend}`);
   }
-  if (listed.trendPct != null && !close(listed.trendPct, recomputed.trendPct, tolerance)) {
+  const trendPctMatches =
+    listed.trendPct == null ||
+    close(listed.trendPct, recomputed.trendPct, tolerance) ||
+    close(listed.trendPct, recomputed.exactTrendPct, tolerance);
+  if (!trendPctMatches) {
     issues.push(`${id}: trendPct ${listed.trendPct} ≠ recomputed ${recomputed.trendPct}`);
   }
-  if (listed.badges && !sameBadges(listed.badges, recomputed.badges)) {
+  const badgesMatch =
+    !listed.badges ||
+    sameBadges(listed.badges, recomputed.badges) ||
+    sameBadges(listed.badges, recomputed.exactBadges);
+  if (!badgesMatch) {
     issues.push(`${id}: badges [${(listed.badges || []).join(",")}] ≠ [${recomputed.badges.join(",")}]`);
   }
   const spark = listed.spark;

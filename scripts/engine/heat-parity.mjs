@@ -2,11 +2,9 @@
  * JS side of the py↔JS heat/spark parity fixture.
  *
  * Fixture: scripts/engine/__samples__/heat-parity/cases.json
- * Python check (opt-in, not a verify:ia gate): scripts/verify/heat-py-parity.py
+ * Python: scripts/site-data/heat48h.py (port of heat.mjs)
+ * Check: scripts/verify/heat-py-parity.py (CI / b2-heat-parity)
  * Numeric contract: docs/SITE-DATA-CONTRACT.md
- *
- * This module does not change heat.mjs. Full py port / align_hot_sparks_to_js
- * retirement is the 10–12h follow-on, not this slice.
  */
 import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -79,6 +77,7 @@ export function runJsParityCase(spec) {
   const sparkLast = row.spark.at(-1);
   return {
     heat: row.heat,
+    exactHeat: row.exactHeat,
     prevHeat: row.prevHeat,
     spark: row.spark,
     sparkLast,
