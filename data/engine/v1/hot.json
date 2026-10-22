@@ -123,7 +123,15 @@
       ],
       "summary": "Mistral 发布 Voxtral 3：一套语音智能体 SDK，以及配套的语音转写与语音合成模型，把听、推理、工具调用与说放进同一流式管线。 官方称转写覆盖 50+ 语言（含说话人分离与上下文偏置），TTS 覆盖 35+ 语言与 50+ 方言；可通过欧盟托管 API 或自部署使用。 The Decoder 亦报道其整合识别、合成与语音智能体 SDK，支持多语言与工具调用。",
       "latest": null,
-      "cover": null,
+      "cover": {
+        "url": "assets/covers/daily-2026-10-21-1600.webp",
+        "srcSet": "assets/covers/daily-2026-10-21-720.webp 720w, assets/covers/daily-2026-10-21-1200.webp 1200w, assets/covers/daily-2026-10-21-1600.webp 1600w",
+        "width": 1600,
+        "height": null,
+        "alt": "Voxtral 3 语音智能体架构：麦克风→转写→推理模型↔工具→语音→扬声器",
+        "valueClass": "official_diagram",
+        "caption": null
+      },
       "rankDelta": -1,
       "heatDeltaPct": -10.0
     },

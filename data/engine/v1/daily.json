@@ -208,7 +208,15 @@
       "available": true
     }
   ],
-  "cover": null,
+  "cover": {
+    "url": "assets/covers/daily-2026-10-21-1600.webp",
+    "srcSet": "assets/covers/daily-2026-10-21-720.webp 720w, assets/covers/daily-2026-10-21-1200.webp 1200w, assets/covers/daily-2026-10-21-1600.webp 1600w",
+    "width": 1600,
+    "height": null,
+    "alt": "Voxtral 3 语音智能体架构：麦克风→转写→推理模型↔工具→语音→扬声器",
+    "valueClass": "official_diagram",
+    "caption": null
+  },
   "metrics": {
     "totalEvents": 5,
     "sourcesCount": 3,
