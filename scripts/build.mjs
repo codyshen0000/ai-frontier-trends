@@ -424,16 +424,16 @@ function mitAssetPrefix(fromPath) {
   return depth === 0 ? "" : "../".repeat(depth);
 }
 
-/** Prefix every local assets/ or data/ URL in a src, href, or comma-separated srcset value. */
+/** Prefix every local assets/, data/, feed/, api/ URL or the root feed.xml in a src, href, or comma-separated srcset value. */
 export function prefixLocalAssetUrls(value, prefix) {
   if (!prefix) return value;
-  return String(value).replace(/(^|,\s*)((?:assets|data|feed|api)\/)/g, `$1${prefix}$2`);
+  return String(value).replace(/(^|,\s*)((?:assets|data|feed|api)\/|feed\.xml(?=$|[?#]))/g, `$1${prefix}$2`);
 }
 
 /** Rewrite src, srcSet, imageSrcSet, href, action from the same prefix helper. */
 export function rewriteMitAssetAttrs(html, prefix) {
   return String(html).replace(/\b(href|src|srcset|imagesrcset|action)="([^"]*)"/gi, (match, attr, val) => {
-    if (!/(?:^|,\s*)(?:assets|data|feed|api)\//.test(val)) return match;
+    if (!/(?:^|,\s*)(?:(?:assets|data|feed|api)\/|feed\.xml(?:$|[?#]))/.test(val)) return match;
     return `${attr}="${prefixLocalAssetUrls(val, prefix)}"`;
   });
 }

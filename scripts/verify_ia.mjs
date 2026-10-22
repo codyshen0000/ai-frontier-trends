@@ -348,6 +348,32 @@ assert(
 assert(home.includes('href="feed/weekly.xml"') || home.includes('href="feed.xml"'), "home RSS is feed/weekly.xml or feed.xml");
 assert(hotPage.includes('href="../feed/weekly.xml"') || hotPage.includes('href="../feed.xml"'), "/hot/ RSS is ../feed/weekly.xml or ../feed.xml");
 {
+  // B-1: every relative RSS href (head <link rel=alternate> + footer) on every page depth
+  // must resolve to a file that exists in dist (e.g. /live/ → ../feed.xml, not live/feed.xml).
+  const broken = [];
+  let checked = 0;
+  const walkHtml = (dir) => {
+    for (const name of readdirSync(dir)) {
+      const full = join(dir, name);
+      if (statSync(full).isDirectory()) walkHtml(full);
+      else if (name.endsWith(".html")) {
+        const html = readFileSync(full, "utf8");
+        for (const m of html.matchAll(/href="([^"]*feed(?:\.xml|\/[^"]*\.xml))"/g)) {
+          const href = m[1];
+          if (/^[a-z]+:|^\/\//i.test(href)) continue;
+          checked += 1;
+          const target = href.startsWith("/") ? join(distDir, href) : join(dirname(full), href);
+          if (!existsSync(target)) broken.push(`${relative(distDir, full)} → ${href}`);
+        }
+      }
+    }
+  };
+  walkHtml(distDir);
+  assert(broken.length === 0, `all ${checked} RSS hrefs resolve in dist${broken.length ? `; broken: ${broken.slice(0, 8).join(", ")}` : ""}`);
+  const livePageRss = readFileSync(join(distDir, "live", "index.html"), "utf8");
+  assert(!/href="feed\.xml"/.test(livePageRss) && livePageRss.includes('href="../feed.xml"'), "/live/ RSS is ../feed.xml (B-1)");
+}
+{
   const emptyDaily = dailyPage.includes("过去 24 小时没有达到上榜条件的事件。");
   if (emptyDaily) {
     assert(dailyPage.includes('id="report-start"'), "empty daily keeps #report-start");
