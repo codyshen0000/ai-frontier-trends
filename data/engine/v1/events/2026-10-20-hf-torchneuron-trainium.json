@@ -8,7 +8,7 @@
  "latestAt": "2026-10-19T00:00:00.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": "Hugging Face 介绍 TorchNeuron，降低在 AWS Trainium 上运行 HF 模型的门槛。 后续博客 Part 1 给出系统级 profiling 方法，帮助定位 Trainium 上的性能瓶颈。",
+ "summary": "Hugging Face 介绍 TorchNeuron，降低在 AWS Trainium 上运行 HF 模型的门槛。 后续博客 Part 1 给出系统级 profiling 方法，帮助定位 Trainium 上的性能瓶颈；TechCrunch 亦称亚马逊借此强化 Trainium 开发者工具、对标英伟达生态。",
  "excerpt": null,
  "latest": null,
  "latestReport": null,

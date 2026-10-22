@@ -6,7 +6,7 @@
  "generatedAt": "2026-10-21T13:00:24.000Z",
  "lead": {
   "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
-  "leadParagraph": "Mistral 发布 Voxtral 3：一套语音智能体 SDK，以及配套的语音转写与语音合成模型，把听、推理、工具调用与说放进同一流式管线。 官方称转写覆盖 50+ 语言（含说话人分离与上下文偏置），TTS 覆盖 35+ 语言与 50+ 方言；可通过欧盟托管 API 或自部署使用。 The Decoder 亦报道其整合识别、合成与语音智能体 SDK，支持多语言与工具调用。"
+  "leadParagraph": "Mistral 发布 Voxtral 3：一套语音智能体 SDK，以及配套的语音转写与语音合成模型，把听、推理、工具调用与说放进同一流式管线。 官方称转写覆盖 50+ 语言（含说话人分离与上下文偏置），TTS 覆盖 35+ 语言与 50+ 音色，并可欧盟托管或自部署；面向实时语音智能体场景。"
  },
  "leadItemId": "sha256:4c6292fc5ecba5f2",
  "overview": "今日重点 5 条：Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型、Hugging Face：TorchTPU 让 Transformers 与 Diffusers 原生跑在 TPU、OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线、Hugging Face 发布 AnyLanguageModel 1.0：苹果平台统一本地与托管模型 API、OpenAI：推进低资源编程语言上的编码能力。无固定漂移样本包，本日不含 samples。",
@@ -14,7 +14,7 @@
   {
    "itemId": "sha256:4c6292fc5ecba5f2",
    "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
-   "summary": "Mistral 发布 Voxtral 3：一套语音智能体 SDK，以及配套的语音转写与语音合成模型，把听、推理、工具调用与说放进同一流式管线。 官方称转写覆盖 50+ 语言（含说话人分离与上下文偏置），TTS 覆盖 35+ 语言与 50+ 方言；可通过欧盟托管 API 或自部署使用。 The Decoder 亦报道其整合识别、合成与语音智能体 SDK，支持多语言与工具调用。",
+   "summary": "Mistral 发布 Voxtral 3：一套语音智能体 SDK，以及配套的语音转写与语音合成模型，把听、推理、工具调用与说放进同一流式管线。 官方称转写覆盖 50+ 语言（含说话人分离与上下文偏置），TTS 覆盖 35+ 语言与 50+ 音色，并可欧盟托管或自部署；面向实时语音智能体场景。",
    "sourceName": "Mistral AI News",
    "sourceUrl": "https://mistral.ai/news/voxtral-3/",
    "sourceIconUrl": null,
@@ -26,7 +26,7 @@
   {
    "itemId": "sha256:1cfb6291fa158d05",
    "title": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线",
-   "summary": "OpenAI 收购药物开发协作平台 Orchestra Bio，团队与技术并入其生命科学模型与工具 Rosalind / Rosalind Workbench。 据 TechCrunch，目标是用智能体协助生物医药团队协调研发流程，加码生物技术业务。",
+   "summary": "OpenAI 收购药物开发协作平台 Orchestra Bio，团队与技术并入其生命科学模型与工具线 Rosalind / Rosalind Workbench。 据 TechCrunch 与 The Decoder，目标是用智能体协助生物医药团队协调研发流程，加码公司在生物科技方向的布局。",
    "sourceName": "OpenAI News",
    "sourceUrl": "https://openai.com/index/openai-to-acquire-orchestra-bio",
    "sourceIconUrl": null,
@@ -44,7 +44,7 @@
     {
      "itemId": "sha256:4c6292fc5ecba5f2",
      "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
-     "summary": "Mistral 发布 Voxtral 3：一套语音智能体 SDK，以及配套的语音转写与语音合成模型，把听、推理、工具调用与说放进同一流式管线。 官方称转写覆盖 50+ 语言（含说话人分离与上下文偏置），TTS 覆盖 35+ 语言与 50+ 方言；可通过欧盟托管 API 或自部署使用。 The Decoder 亦报道其整合识别、合成与语音智能体 SDK，支持多语言与工具调用。",
+     "summary": "Mistral 发布 Voxtral 3：一套语音智能体 SDK，以及配套的语音转写与语音合成模型，把听、推理、工具调用与说放进同一流式管线。 官方称转写覆盖 50+ 语言（含说话人分离与上下文偏置），TTS 覆盖 35+ 语言与 50+ 音色，并可欧盟托管或自部署；面向实时语音智能体场景。",
      "sourceName": "Mistral AI News",
      "sourceUrl": "https://mistral.ai/news/voxtral-3/",
      "sourceIconUrl": null,
@@ -68,7 +68,7 @@
     {
      "itemId": "sha256:95dedf578de78f3e",
      "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
-     "summary": "OpenAI 官方宣布模型登陆 Google Cloud，经 Marketplace 进入 Gemini Model Garden；IT之家与 The Decoder 跟进称谷歌云成为同时提供 OpenAI、Gemini 与 Claude 的主要云厂商之一。",
+     "summary": "OpenAI 官方宣布模型登陆 Google Cloud，经 Marketplace 进入 Gemini Model Garden，可在云上调用 Codex 等工作流。 IT之家与 The Decoder 跟进称谷歌云成为同时提供 OpenAI、Gemini 与 Claude 的主要云厂商之一。",
      "sourceName": "OpenAI News",
      "sourceUrl": "https://openai.com/index/openai-models-google-cloud",
      "sourceIconUrl": null,
@@ -80,7 +80,7 @@
     {
      "itemId": "sha256:856c26ca4c2d04bc",
      "title": "Mistral×NVIDIA：用加速计算推进工业工程与物理 AI 工作流",
-     "summary": "Mistral 官方称与 NVIDIA 合作，基于加速计算打造面向工程设计的 AI 原生工作流；媒体称目标是加快工业仿真与产品设计。",
+     "summary": "Mistral 与 NVIDIA 宣布合作，把开源模型与加速计算、物理建模管线结合起来，打造面向工业工程的 AI 原生仿真与闭环设计工作流。 双方还将推进面向 CAE/EDA 的公开基准与开放数据集，并计划把模型接入 Omniverse 做 GPU 加速三维场景与 SimReady 资产生成。",
      "sourceName": "Mistral AI News",
      "sourceUrl": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/",
      "sourceIconUrl": null,
@@ -112,18 +112,6 @@
      "publishedAt": "2026-10-21T12:51:24.000Z",
      "available": true,
      "otherSources": 0
-    },
-    {
-     "itemId": "sha256:32694d7b05454b04",
-     "title": "NVIDIA×Hugging Face 上线 SimReady Central：2000+ 仿真就绪 3D 资产库",
-     "summary": "Hugging Face 博客宣布 SimReady Central 开放库上线，汇总逾 2000 个带碰撞/质量/摩擦等仿真属性的 OpenUSD 资产，覆盖机械臂、夹爪与 AI 工厂机架散热等，供机器人与数字孪生免费使用。",
-     "sourceName": "Hugging Face Blog",
-     "sourceUrl": "https://huggingface.co/blog/nvidia/simready-central-assets-robotics-ai-factories",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-21T10:59:42.000Z",
-     "available": true,
-     "otherSources": 0
     }
    ]
   },
@@ -134,7 +122,7 @@
     {
      "itemId": "sha256:1cfb6291fa158d05",
      "title": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线",
-     "summary": "OpenAI 收购药物开发协作平台 Orchestra Bio，团队与技术并入其生命科学模型与工具 Rosalind / Rosalind Workbench。 据 TechCrunch，目标是用智能体协助生物医药团队协调研发流程，加码生物技术业务。",
+     "summary": "OpenAI 收购药物开发协作平台 Orchestra Bio，团队与技术并入其生命科学模型与工具线 Rosalind / Rosalind Workbench。 据 TechCrunch 与 The Decoder，目标是用智能体协助生物医药团队协调研发流程，加码公司在生物科技方向的布局。",
      "sourceName": "OpenAI News",
      "sourceUrl": "https://openai.com/index/openai-to-acquire-orchestra-bio",
      "sourceIconUrl": null,
@@ -146,14 +134,44 @@
     {
      "itemId": "sha256:de9db6f384cbc788",
      "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
-     "summary": "OpenAI 发布 Patch the Planet，协调处理智能体发现的关键漏洞。Wiz 等称 PHP 引擎缺陷可导致远程代码执行与类 Heartbleed 内存泄露，影响面极广；PHP 基金会已发安全更新。 HN 持续高热讨论；Wiz 原文补强漏洞技术细节。",
+     "summary": "OpenAI 发布 Patch the Planet，协调处理智能体发现的关键漏洞。Wiz 等称 PHP 引擎缺陷可导致远程代码执行与类 Heartbleed 内存泄露，影响面极广；PHP 基金会已发安全更新。 HN 持续高热讨论；Wiz 与多家安全方跟进披露细节。",
      "sourceName": "OpenAI News",
      "sourceUrl": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
      "sourceIconUrl": null,
      "firstParty": true,
      "publishedAt": "2026-10-21T07:00:00.000Z",
      "available": true,
-     "otherSources": 4
+     "otherSources": 5
+    }
+   ]
+  },
+  {
+   "label": "模型",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:8cfd997cf9a921e4",
+     "title": "Baseten：开源决策模型 mammoth-1 / elephant-1",
+     "summary": "Baseten Base Labs 开源决策模型 mammoth-1（27B）与 elephant-1（9B）：不生成文本，只输出选项概率分布，用于工单路由、反钓鱼与护栏。 官方称 mammoth-1 居 Jev Decision Index 208 模型之首；基于 Qwen3.5 后训练，API 可试用一周且默认零数据留存。",
+     "sourceName": "sha256:8cfd997cf9a921e4",
+     "sourceUrl": "https://www.baseten.co/blog/the-best-decision-models-in-the-world-mammoth-1-and-elephant-1/",
+     "sourceIconUrl": null,
+     "firstParty": false,
+     "publishedAt": "2026-10-21T16:58:52.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:10f7f763ebef7da0",
+     "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
+     "summary": "可灵 AI 发布 4.0：单次生成最长约 30 秒、最多 10 张关键帧，提示词理解扩至约 8000 token，并加入立体声与十余种语言的口型同步。 The Decoder 称同步推出更轻的 Flash 变体（上限约 720p、20 秒）以降低成本；Omni Reference 可在一次生成中混用多图/多视频参考。",
+     "sourceName": "The Decoder",
+     "sourceUrl": "https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/",
+     "sourceIconUrl": null,
+     "firstParty": false,
+     "publishedAt": "2026-10-19T17:36:26.000Z",
+     "available": true,
+     "otherSources": 0
     }
    ]
   },
@@ -164,7 +182,7 @@
     {
      "itemId": "sha256:9dbc7ca917a7820d",
      "title": "NVIDIA：RFD4-Proteina 用奖励引导推理时搜索设计蛋白",
-     "summary": "NVIDIA 开发者博客介绍 RFD4-Proteina：在推理时用奖励引导搜索，在巨大氨基酸组合空间中做蛋白设计。",
+     "summary": "NVIDIA 与华盛顿大学蛋白设计研究所合作推出 RFD4-Proteina：在推理时用奖励引导搜索，联合设计蛋白序列与全原子结构。 开发者博客称相对 RFD3，在约 200 残基规模上生成约快 3.8 倍、峰值显存约少 84%；同时提供开源模型与 NIM 微服务两种接入方式。",
      "sourceName": "NVIDIA Technical Blog",
      "sourceUrl": "https://developer.nvidia.com/blog/design-proteins-with-rfd4-proteina-using-reward-guided-inference-time-search/",
      "sourceIconUrl": null,
@@ -176,7 +194,7 @@
     {
      "itemId": "sha256:64ddfb139fec8a1c",
      "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
-     "summary": "OpenAI 官方介绍与 PerturbAI、Scripps Research 合作，用分布式智能体在海量脑细胞数据中寻找有希望的研究线索；与收购 Orchestra Bio 并入 Rosalind 属相关但不同交付。",
+     "summary": "OpenAI 官方介绍与 PerturbAI、Scripps Research 合作，用分布式智能体在海量脑细胞数据中寻找有希望的研究线索。 The Decoder 称智能体可在约 32 分钟内完成人类需数月的小鼠脑数据分析；与收购 Orchestra Bio 并入 Rosalind 属相关但不同交付。",
      "sourceName": "OpenAI News",
      "sourceUrl": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
      "sourceIconUrl": null,
@@ -184,24 +202,6 @@
      "publishedAt": "2026-10-21T04:50:00.000Z",
      "available": true,
      "otherSources": 1
-    }
-   ]
-  },
-  {
-   "label": "模型",
-   "summary": null,
-   "items": [
-    {
-     "itemId": "sha256:10f7f763ebef7da0",
-     "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
-     "summary": "The Decoder 称 Kling AI 4.0 支持最长约 30 秒、最多 10 张关键帧、提示词理解扩展，并含立体声、多语口型同步与更轻 Flash 变体。",
-     "sourceName": "The Decoder",
-     "sourceUrl": "https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/",
-     "sourceIconUrl": null,
-     "firstParty": false,
-     "publishedAt": "2026-10-19T17:36:26.000Z",
-     "available": true,
-     "otherSources": 0
     }
    ]
   }
@@ -284,11 +284,11 @@
  },
  "metrics": {
   "totalEvents": 12,
-  "sourcesCount": 9,
-  "firstPartyEvents": 11,
-  "modelsReleased": 1
+  "sourcesCount": 11,
+  "firstPartyEvents": 10,
+  "modelsReleased": 2
  },
- "readingMinutes": 5,
+ "readingMinutes": 6,
  "prev": "2026-10-20",
  "next": "2026-10-22"
 }

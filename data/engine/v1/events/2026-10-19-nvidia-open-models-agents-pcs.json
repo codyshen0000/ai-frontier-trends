@@ -1,6 +1,6 @@
 {
  "publicId": "2026-10-19-nvidia-open-models-agents-pcs",
- "title": "英伟达开源面向企业与 PC 的智能体模型",
+ "title": "英伟达发布面向企业与 PC 的开源智能体模型",
  "status": "watching",
  "reportCount": 1,
  "sourceCount": 1,
@@ -8,7 +8,7 @@
  "latestAt": "2026-10-19T15:37:09.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": "英伟达发布新的开源模型，面向企业自建开源模型栈，以及在 PC 端侧本地运行智能体。 据 TechCrunch 报道，目标场景覆盖企业侧部署与消费级 PC 上的本地智能体运行。",
+ "summary": null,
  "excerpt": null,
  "latest": null,
  "latestReport": null,
@@ -22,7 +22,7 @@
  "developments": [
   {
    "factId": "fact-2026-10-19-nvidia-open-models-agents-pcs",
-   "title": "英伟达开源面向企业与 PC 的智能体模型",
+   "title": "英伟达发布面向企业与 PC 的开源智能体模型",
    "firstReportAt": "2026-10-19T15:37:09.000Z",
    "reportCount": 1,
    "representative": {

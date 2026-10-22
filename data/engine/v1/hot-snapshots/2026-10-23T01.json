@@ -1,50 +1,62 @@
 {
- "computedAt": "2026-10-22T17:35:00.000Z",
+ "computedAt": "2026-10-22T17:43:26.000Z",
  "entries": [
   {
    "rank": 1,
    "publicId": "2026-10-21-php2shell-wiz-rce",
-   "heat": 23.7,
-   "participantCount": 5
+   "heat": 32.9,
+   "participantCount": 6
   },
   {
    "rank": 2,
    "publicId": "2026-10-22-anthropic-claude-duet",
-   "heat": 18.9,
-   "participantCount": 3
+   "heat": 27.7,
+   "participantCount": 4
   },
   {
    "rank": 3,
+   "publicId": "2026-10-22-recursive-flint-coding-model",
+   "heat": 17.6,
+   "participantCount": 3
+  },
+  {
+   "rank": 4,
+   "publicId": "2026-10-23-uber-chatgpt-work-rollout",
+   "heat": 15.5,
+   "participantCount": 2
+  },
+  {
+   "rank": 5,
+   "publicId": "2026-10-22-nvidia-dgx-spark-cluster",
+   "heat": 14.2,
+   "participantCount": 2
+  },
+  {
+   "rank": 6,
    "publicId": "2026-10-21-openai-models-google-cloud",
    "heat": 13.6,
    "participantCount": 3
   },
   {
-   "rank": 4,
+   "rank": 7,
    "publicId": "2026-10-21-openai-ai-agents-bio-leads",
    "heat": 11.5,
    "participantCount": 2
   },
   {
-   "rank": 5,
+   "rank": 8,
    "publicId": "2026-10-21-mistral-nvidia-industrial-ai",
-   "heat": 8.9,
+   "heat": 8.8,
    "participantCount": 2
   },
   {
-   "rank": 6,
+   "rank": 9,
    "publicId": "2026-10-21-openai-agent-monitoring-disabled",
    "heat": 8.8,
    "participantCount": 2
   },
   {
-   "rank": 7,
-   "publicId": "2026-10-22-recursive-flint-coding-model",
-   "heat": 8.4,
-   "participantCount": 2
-  },
-  {
-   "rank": 8,
+   "rank": 10,
    "publicId": "2026-10-21-openai-orchestra-bio",
    "heat": 6.6,
    "participantCount": 2

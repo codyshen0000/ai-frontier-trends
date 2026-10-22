@@ -2,13 +2,17 @@
  {
   "rank": 1,
   "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
-  "heat": 23.7,
-  "trend": "down",
+  "heat": 32.9,
+  "trend": "up",
   "storyPublicId": "2026-10-21-php2shell-wiz-rce",
   "itemId": "sha256:de9db6f384cbc788",
   "participants": [
    {
     "name": "OpenAI News",
+    "kind": "editorial"
+   },
+   {
+    "name": "The Verge · AI",
     "kind": "editorial"
    },
    {
@@ -28,16 +32,20 @@
     "kind": "signal"
    }
   ],
-  "participantCount": 5
+  "participantCount": 6
  },
  {
   "rank": 2,
   "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
-  "heat": 18.9,
-  "trend": "down",
+  "heat": 27.7,
+  "trend": "up",
   "storyPublicId": "2026-10-22-anthropic-claude-duet",
   "itemId": "sha256:258d5ff776fa8f13",
   "participants": [
+   {
+    "name": "TechCrunch · AI",
+    "kind": "editorial"
+   },
    {
     "name": "The Decoder",
     "kind": "editorial"
@@ -51,18 +59,18 @@
     "kind": "signal"
    }
   ],
-  "participantCount": 3
+  "participantCount": 4
  },
  {
   "rank": 3,
-  "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
-  "heat": 13.6,
-  "trend": "down",
-  "storyPublicId": "2026-10-21-openai-models-google-cloud",
-  "itemId": "sha256:95dedf578de78f3e",
+  "title": "报道：Recursive 发布 Flint；vLLM 宣布 Day-0 支持",
+  "heat": 17.6,
+  "trend": "up",
+  "storyPublicId": "2026-10-22-recursive-flint-coding-model",
+  "itemId": "sha256:3b031f6c198ac941",
   "participants": [
    {
-    "name": "OpenAI News",
+    "name": "vLLM Blog",
     "kind": "editorial"
    },
    {
@@ -70,26 +78,26 @@
     "kind": "editorial"
    },
    {
-    "name": "IT之家（全站，需关键词过滤）",
-    "kind": "signal"
+    "name": "TechCrunch · AI",
+    "kind": "editorial"
    }
   ],
   "participantCount": 3
  },
  {
   "rank": 4,
-  "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
-  "heat": 11.5,
-  "trend": "down",
-  "storyPublicId": "2026-10-21-openai-ai-agents-bio-leads",
-  "itemId": "sha256:64ddfb139fec8a1c",
+  "title": "Uber 全员上线 ChatGPT Work，覆盖约 3 万名员工",
+  "heat": 15.5,
+  "trend": "up",
+  "storyPublicId": "2026-10-23-uber-chatgpt-work-rollout",
+  "itemId": "sha256:eda525050cea8fce",
   "participants": [
    {
     "name": "OpenAI News",
     "kind": "editorial"
    },
    {
-    "name": "The Decoder",
+    "name": "TechCrunch · AI",
     "kind": "editorial"
    }
   ],
@@ -97,19 +105,19 @@
  },
  {
   "rank": 5,
-  "title": "Mistral×NVIDIA：用加速计算推进工业工程与物理 AI 工作流",
-  "heat": 8.9,
-  "trend": "down",
-  "storyPublicId": "2026-10-21-mistral-nvidia-industrial-ai",
-  "itemId": "sha256:856c26ca4c2d04bc",
+  "title": "NVIDIA：DGX Spark 官方支持 8 机集群，统一内存可达 1TB",
+  "heat": 14.2,
+  "trend": "up",
+  "storyPublicId": "2026-10-22-nvidia-dgx-spark-cluster",
+  "itemId": "sha256:a9592e53f2c7c709",
   "participants": [
    {
-    "name": "Mistral AI News",
+    "name": "NVIDIA Technical Blog",
     "kind": "editorial"
    },
    {
-    "name": "The Decoder",
-    "kind": "editorial"
+    "name": "IT之家（全站，需关键词过滤）",
+    "kind": "signal"
    }
   ],
   "participantCount": 2

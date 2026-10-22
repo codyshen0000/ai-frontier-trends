@@ -38,7 +38,7 @@
  ],
  "sections": [
   {
-   "label": "其他",
+   "label": "模型",
    "summary": null,
    "items": [
     {
@@ -50,6 +50,18 @@
      "sourceIconUrl": null,
      "firstParty": true,
      "publishedAt": "2026-10-21T16:58:52.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:67297d2df9a3d7f1",
+     "title": "AllenAI：发布 OlmoEarth v1.3 全球卫星嵌入与探索工具",
+     "summary": "OlmoEarth v1.3 卫星嵌入 + 全球预计算嵌入与浏览器探索工具。",
+     "sourceName": "Hugging Face Blog",
+     "sourceUrl": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-22T16:11:31.000Z",
      "available": true,
      "otherSources": 0
     }
@@ -84,40 +96,28 @@
      "otherSources": 3
     },
     {
-     "itemId": "sha256:7decc1c5c0496d6c",
-     "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
-     "summary": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
-     "sourceName": "Hugging Face Blog",
-     "sourceUrl": "https://huggingface.co/blog/nvidia/microduck-isaac-lab-sim-to-real",
+     "itemId": "sha256:eda525050cea8fce",
+     "title": "Uber 全员上线 ChatGPT Work，覆盖约 3 万名员工",
+     "summary": "OpenAI：Uber 将 ChatGPT Work 扩至逾 3 万员工，接入常用办公工具。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/uber-chatgpt-work-rollout",
      "sourceIconUrl": null,
      "firstParty": true,
-     "publishedAt": "2026-10-21T17:58:42.000Z",
-     "available": true,
-     "otherSources": 0
-    },
-    {
-     "itemId": "sha256:3b031f6c198ac941",
-     "title": "报道：Recursive 发布 Flint；vLLM 宣布 Day-0 支持",
-     "summary": "此前报道 Recursive 发布称主要由 AI 自研的笔记本级编码模型 Flint（约 40B/2.5B active）。 vLLM 博客称 Day-0 支持 Flint 双检查点，单卡单请求解码约 500 tokens/s。",
-     "sourceName": "vLLM Blog",
-     "sourceUrl": "https://vllm.ai/blog/2026-10-21-flint",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-21T00:00:00.000Z",
+     "publishedAt": "2026-10-22T00:00:00.000Z",
      "available": true,
      "otherSources": 1
     },
     {
-     "itemId": "sha256:258d5ff776fa8f13",
-     "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
-     "summary": "The Verge 与 IT之家称 Anthropic 推出面向专业人士与小企业的 Claude Duet 智能体（研究预览），提供 iOS/Android 独立应用与网页入口，定位 24 小时在线助理，对标 Meta Muse 等。官方新闻室暂未见同名稿。",
-     "sourceName": "The Verge · AI",
-     "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent",
+     "itemId": "sha256:a9592e53f2c7c709",
+     "title": "NVIDIA：DGX Spark 官方支持 8 机集群，统一内存可达 1TB",
+     "summary": "NVIDIA 开发者博客称，GTC Berlin 宣布 DGX Spark 正式支持八节点集群，统一内存扩展至约 1TB，面向桌面侧前沿模型与多智能体工作负载。 NVIDIA Sync 的 Cluster Assistant 负责组网；八节点支持计划年内落地。此前媒体已有二手报道，本条为官方技术说明。",
+     "sourceName": "NVIDIA Technical Blog",
+     "sourceUrl": "https://developer.nvidia.com/blog/running-frontier-class-ai-models-across-8-nvidia-dgx-spark-nodes/",
      "sourceIconUrl": null,
-     "firstParty": false,
-     "publishedAt": "2026-10-21T19:53:20.000Z",
+     "firstParty": true,
+     "publishedAt": "2026-10-22T16:00:00.000Z",
      "available": true,
-     "otherSources": 2
+     "otherSources": 1
     }
    ]
   },
@@ -128,7 +128,7 @@
     {
      "itemId": "sha256:77ec6ad66af3dcc4",
      "title": "微软研究院：宣布解决数学界 31 年难题 KLS 猜想",
-     "summary": "微软研究院博客称解决 Kannan–Lovász–Simonovits（KLS）猜想，移除理解高维随机算法效率的一项理论障碍；该猜想提出于 1995 年前后。",
+     "summary": "微软研究院博客称解决 Kannan–Lovász–Simonovits（KLS）猜想，证明高维对数凹分布上「最佳超平面切割」与任意形状切割的差距由与维度无关的常数界定。 该猜想提出于 1995 年前后；文中称研究以人工主导的智能体探索配合研究者筛选完成，并有独立团队同日给出相关证明与后续 Lean 形式化。",
      "sourceName": "Microsoft Research Blog",
      "sourceUrl": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/",
      "sourceIconUrl": null,
@@ -138,38 +138,26 @@
      "otherSources": 0
     },
     {
-     "itemId": "sha256:27c0a5d3fc255134",
-     "title": "谷歌：用 AI 辅助一线孕产超声，服务基层母婴筛查",
-     "summary": "Google Research 介绍 AI-assisted 超声方案：一线非专科人员用低成本探头按固定轨迹做扫描，由模型估孕周，服务基层母婴筛查。 前瞻多中心对照称，该法在不同诊所与硬件上与专家生物测量相当，并在未本地微调的外部站点仍保持接近表现，意在扩大产检超声可及性。",
-     "sourceName": "Google Research Blog",
-     "sourceUrl": "https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/",
+     "itemId": "sha256:8f93170faf71fda6",
+     "title": "DeepMind：发布全球 10 米分辨率森林类型图 ForTy 2020",
+     "summary": "Google DeepMind 与 Google Research 联合 WRI、IIASA 发布 Forest Typology（ForTy）2020，将全球每块 10×10 米土地划入六类森林类型，区分天然林、种植林与农林业等。 目标是从太空尺度区分碳汇与生物多样性差异很大的「同色异质」地表。",
+     "sourceName": "Google DeepMind Blog",
+     "sourceUrl": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
      "sourceIconUrl": null,
      "firstParty": true,
-     "publishedAt": "2026-10-21T16:23:53.000Z",
+     "publishedAt": "2026-10-22T14:30:24.000Z",
      "available": true,
      "otherSources": 0
     },
     {
-     "itemId": "sha256:40a01666d562060b",
-     "title": "VocabX：专用词表称可把小模型推理成本砍约 77%",
-     "summary": "Dharma-AI 在 Hugging Face 介绍 VocabX：不为换模型，而为垂直场景特化词表，称可把小模型实测推理成本砍约 77%。 思路是按「写出比读入更贵」给词表改权重，压缩领域里反复出现的输出片段，并丢掉任务几乎用不到的词条；同基座同数据只换 tokenizer 即可生效。",
-     "sourceName": "Hugging Face Blog",
-     "sourceUrl": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
+     "itemId": "sha256:d6172869a6c9d34f",
+     "title": "微软研究院：Flint-interactive 让智能体做交互式数据可视化",
+     "summary": "MSR 发布 Flint-interactive 交互可视化语言；与 Recursive Flint 不同物。",
+     "sourceName": "Microsoft Research Blog",
+     "sourceUrl": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/",
      "sourceIconUrl": null,
      "firstParty": true,
-     "publishedAt": "2026-10-21T17:35:36.000Z",
-     "available": true,
-     "otherSources": 0
-    },
-    {
-     "itemId": "sha256:0e5fad3ca5f8a881",
-     "title": "HF：IBM Granite 时序模型做集成预报",
-     "summary": "Hugging Face 博客介绍用 IBM Granite 时序模型做集成预报（ensemble forecasting）的方法与实践。 属官方技术博客，面向预测场景落地。",
-     "sourceName": "Hugging Face Blog",
-     "sourceUrl": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-22T07:51:31.000Z",
+     "publishedAt": "2026-10-22T16:00:00.000Z",
      "available": true,
      "otherSources": 0
     }
@@ -182,7 +170,7 @@
     {
      "itemId": "sha256:859a2ca12c0c52e9",
      "title": "Wiz：LiteLLM 1.107.0 被投毒，窃取云与 AI 凭证",
-     "summary": "Wiz 披露，恶意版本 LiteLLM 1.107.0 于 10 月 21 日被上传至 PyPI 与 Docker，内含针对浏览器、云与 AI 密钥的凭证窃取器，并带休眠 C2 能力。 属供应链投毒事件；使用 LiteLLM 的团队应立即核查版本与密钥轮换。",
+     "summary": "Wiz 披露，恶意版本 LiteLLM 1.107.0 于 10 月 21 日被上传至 PyPI 与 Docker，内含针对浏览器、云与 AI 密钥的凭证窃取器，并带休眠 C2 能力。 属供应链投毒；使用 LiteLLM 的团队应立即核查已装版本、轮换相关密钥，并确认镜像与依赖锁定策略。",
      "sourceName": "Wiz Blog",
      "sourceUrl": "https://www.wiz.io/blog/litellm-compromised-steals-credentials",
      "sourceIconUrl": null,
@@ -192,9 +180,21 @@
      "otherSources": 0
     },
     {
+     "itemId": "sha256:50a6596df902bdb2",
+     "title": "Wiz：ARTEX 智能体攻陷多软件厂商，活动与 Storm-0940 重叠",
+     "summary": "Wiz Research 称 2026 年 10 月观察到使用 ARTEX（自主渗透测试智能体）相关工具的活动，重点打身份提供商（Okta、Entra、Cognito）并滥用 Microsoft 365 集成。 观察与微软报道的中国背景关联组织 Storm-0940 重叠，后者与失窃供应商凭证的供应链攻击相关。",
+     "sourceName": "Wiz Blog",
+     "sourceUrl": "https://www.wiz.io/blog/artex-in-the-wild-storm-0940-expands-targeting-of-it-and-software-vendors",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-22T13:05:31.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
      "itemId": "sha256:011eb73686ffbc98",
      "title": "Wiz：钓鱼到 LLMjacking，劫持云账单盗刷模型 API",
-     "summary": "Wiz 描述攻击链：搜索广告钓鱼窃凭证后劫持云计费账户，用于未授权调用大模型 API，可造成数十万美元账单。 提醒云账号与计费权限成为 AI 用量攻击面。",
+     "summary": "Wiz 描述攻击链：通过谷歌搜索广告钓鱼窃取 GCP 凭证后，把攻击者项目挂到受害者云计费账户，用于未授权调用大模型 API，可在 24–48 小时内产生数万至数十万美元账单。 因算力跑在外部项目，受害者看不到提示词与输出；提醒云账号与计费权限已成为 AI 用量攻击面。",
      "sourceName": "Wiz Blog",
      "sourceUrl": "https://www.wiz.io/blog/from-phishing-to-llmjacking",
      "sourceIconUrl": null,
@@ -299,11 +299,11 @@
  "cover": null,
  "metrics": {
   "totalEvents": 12,
-  "sourcesCount": 12,
-  "firstPartyEvents": 11,
-  "modelsReleased": 0
+  "sourcesCount": 13,
+  "firstPartyEvents": 12,
+  "modelsReleased": 2
  },
- "readingMinutes": 4,
+ "readingMinutes": 5,
  "prev": "2026-10-22",
  "next": null
 }

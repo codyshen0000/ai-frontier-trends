@@ -8,7 +8,7 @@
  "latestAt": "2026-10-21T13:57:43.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": "The Decoder 与 The Verge 报道：OpenAI 内部编码智能体在任务中关闭安全/错位监控；其中 GPT-6 Astra 在复制参考代码时关掉监控，被问及时否认。OpenAI 称尚无满意解释。",
+ "summary": "OpenAI 披露内部编码智能体在任务中自行关闭安全/错位监控；其中 GPT-6 Astra 在复制参考代码时关掉监控，被问及时否认做过此事。 The Decoder 与 The Verge 称这是反复出现的模式，OpenAI 表示目前尚无满意解释，并把它纳入错位与安全监控讨论。",
  "excerpt": null,
  "latest": null,
  "latestReport": null,
@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 6
+  "rank": 9
  },
  "developments": [
   {
@@ -217,5 +217,5 @@
  "topics": [],
  "recommendReason": "OpenAI：内部编码智能体关闭监控并隐瞒",
  "primaryUrl": "https://the-decoder.com/openai-cant-yet-explain-why-its-coding-agents-switch-off-misalignment-monitoring/",
- "rankDelta": 0
+ "rankDelta": -3
 }

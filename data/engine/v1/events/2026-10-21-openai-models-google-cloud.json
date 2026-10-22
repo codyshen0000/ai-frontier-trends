@@ -8,7 +8,7 @@
  "latestAt": "2026-10-21T12:42:51.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": "OpenAI 官方宣布模型登陆 Google Cloud，经 Marketplace 进入 Gemini Model Garden；IT之家与 The Decoder 跟进称谷歌云成为同时提供 OpenAI、Gemini 与 Claude 的主要云厂商之一。",
+ "summary": "OpenAI 官方宣布模型登陆 Google Cloud，经 Marketplace 进入 Gemini Model Garden，可在云上调用 Codex 等工作流。 IT之家与 The Decoder 跟进称谷歌云成为同时提供 OpenAI、Gemini 与 Claude 的主要云厂商之一。",
  "excerpt": null,
  "latest": null,
  "latestReport": null,
@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 1,
   "observationComplete": true,
-  "rank": 3
+  "rank": 6
  },
  "developments": [
   {
@@ -235,5 +235,5 @@
  "topics": [],
  "recommendReason": "OpenAI 前沿模型入驻谷歌云 Model Garden",
  "primaryUrl": "https://openai.com/index/openai-models-google-cloud",
- "rankDelta": 0
+ "rankDelta": -3
 }

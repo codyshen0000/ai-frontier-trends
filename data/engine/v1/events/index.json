@@ -1,11 +1,46 @@
 {
  "events": [
   {
+   "publicId": "2026-10-23-allenai-olmoearth-v13",
+   "title": "AllenAI：发布 OlmoEarth v1.3 全球卫星嵌入与探索工具",
+   "latestAt": "2026-10-22T16:11:31.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
+   "publicId": "2026-10-23-msr-flint-interactive",
+   "title": "微软研究院：Flint-interactive 让智能体做交互式数据可视化",
+   "latestAt": "2026-10-22T16:00:00.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
+   "publicId": "2026-10-23-uber-chatgpt-work-rollout",
+   "title": "Uber 全员上线 ChatGPT Work，覆盖约 3 万名员工",
+   "latestAt": "2026-10-22T16:00:00.000Z",
+   "reportCount": 2,
+   "hotRank": 4
+  },
+  {
+   "publicId": "2026-10-21-php2shell-wiz-rce",
+   "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
+   "latestAt": "2026-10-22T15:12:27.000Z",
+   "reportCount": 6,
+   "hotRank": 1
+  },
+  {
+   "publicId": "2026-10-22-wiz-artex-storm0940",
+   "title": "Wiz：ARTEX 智能体攻陷多软件厂商，活动与 Storm-0940 重叠",
+   "latestAt": "2026-10-22T13:05:31.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
    "publicId": "2026-10-21-openai-ai-agents-bio-leads",
    "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
    "latestAt": "2026-10-22T10:01:53.000Z",
    "reportCount": 2,
-   "hotRank": 4
+   "hotRank": 7
   },
   {
    "publicId": "2026-10-22-anthropic-claude-duet",
@@ -15,18 +50,18 @@
    "hotRank": 2
   },
   {
+   "publicId": "2026-10-22-openai-fde-means",
+   "title": "OpenAI：Forward Deployed Engineering 如何填补部署鸿沟",
+   "latestAt": "2026-10-22T06:00:00.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
    "publicId": "2026-10-22-recursive-flint-coding-model",
    "title": "报道：Recursive 发布 Flint；vLLM 宣布 Day-0 支持",
    "latestAt": "2026-10-21T20:27:41.000Z",
    "reportCount": 2,
-   "hotRank": 7
-  },
-  {
-   "publicId": "2026-10-21-php2shell-wiz-rce",
-   "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
-   "latestAt": "2026-10-21T19:45:01.000Z",
-   "reportCount": 5,
-   "hotRank": 1
+   "hotRank": 3
   },
   {
    "publicId": "2026-10-22-nvidia-microduck-isaac-lab",
@@ -57,6 +92,13 @@
    "hotRank": null
   },
   {
+   "publicId": "2026-10-22-nvidia-dgx-spark-cluster",
+   "title": "NVIDIA：DGX Spark 官方支持 8 机集群，统一内存可达 1TB",
+   "latestAt": "2026-10-21T15:25:18.000Z",
+   "reportCount": 1,
+   "hotRank": 5
+  },
+  {
    "publicId": "2026-10-21-ibm-granite-speech-5",
    "title": "IBM Granite Speech 5.0：更快更准的转写、翻译与归因",
    "latestAt": "2026-10-21T14:58:18.000Z",
@@ -68,14 +110,14 @@
    "title": "Mistral×NVIDIA：用加速计算推进工业工程与物理 AI 工作流",
    "latestAt": "2026-10-21T14:40:51.000Z",
    "reportCount": 2,
-   "hotRank": 5
+   "hotRank": 8
   },
   {
    "publicId": "2026-10-21-openai-agent-monitoring-disabled",
    "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认",
    "latestAt": "2026-10-21T13:57:43.000Z",
    "reportCount": 2,
-   "hotRank": 6
+   "hotRank": 9
   },
   {
    "publicId": "2026-10-22-litellm-pypi-compromise",
@@ -103,7 +145,7 @@
    "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
    "latestAt": "2026-10-21T12:42:51.000Z",
    "reportCount": 2,
-   "hotRank": 3
+   "hotRank": 6
   },
   {
    "publicId": "2026-10-21-nvidia-rfd4-proteina",
@@ -117,7 +159,7 @@
    "title": "OpenAI 收购 Orchestra Bio，并入 Rosalind 线",
    "latestAt": "2026-10-21T08:32:54.000Z",
    "reportCount": 2,
-   "hotRank": 8
+   "hotRank": 10
   },
   {
    "publicId": "2026-10-22-openai-gov-cyber-defenders",
@@ -149,7 +191,7 @@
   },
   {
    "publicId": "2026-10-19-deepseek-v41-flash-1017",
-   "title": "DeepSeek 发布开放权重 V4.1-Flash-1017",
+   "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
    "latestAt": "2026-10-20T07:57:37.000Z",
    "reportCount": 3,
    "hotRank": null
@@ -163,14 +205,14 @@
   },
   {
    "publicId": "2026-10-20-kling-ai-4-0",
-   "title": "可灵 AI 4.0：立体声、多语口型同步与更轻 Flash",
+   "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
    "latestAt": "2026-10-19T17:36:26.000Z",
    "reportCount": 1,
    "hotRank": null
   },
   {
    "publicId": "2026-10-19-nvidia-open-models-agents-pcs",
-   "title": "英伟达开源面向企业与 PC 的智能体模型",
+   "title": "英伟达发布面向企业与 PC 的开源智能体模型",
    "latestAt": "2026-10-19T15:37:09.000Z",
    "reportCount": 1,
    "hotRank": null

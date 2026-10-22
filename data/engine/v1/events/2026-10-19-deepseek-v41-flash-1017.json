@@ -1,6 +1,6 @@
 {
  "publicId": "2026-10-19-deepseek-v41-flash-1017",
- "title": "DeepSeek 发布开放权重 V4.1-Flash-1017",
+ "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
  "status": "watching",
  "reportCount": 3,
  "sourceCount": 3,
@@ -8,9 +8,9 @@
  "latestAt": "2026-10-20T07:57:37.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017，在代理类任务上基准更好、完成任务更快、输出更短，并同步开放自研搜索引擎的 Search 与 Fetch API。 The Decoder 称搜索接口按每千次约 0.75 美元计价；量子位亦报道该版本与搜索 API 同步上线。 IT之家后续称 V4.1-Flash-1017（Max）登顶 Agent Arena 与 Code Arena: WebDev 开源榜、总榜第 11，约 7498 次会话，任务成本中位数约 0.18 美元。",
+ "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017，在代理类任务上基准更好、完成任务更快、输出更短，并同步开放自研搜索引擎的 Search 与 Fetch API。 The Decoder 称搜索接口按每千次约 0.75 美元计价；量子位亦报道该版本与搜索 API 同步上线。",
  "excerpt": null,
- "latest": "IT之家称 V4.1-Flash-1017（Max）登顶 Agent Arena 与 Code Arena: WebDev 开源榜、总榜第 11；约 7498 次会话，任务成本中位数约 0.18 美元。",
+ "latest": null,
  "latestReport": null,
  "whyHot": {
   "participants48h": 0,
@@ -22,13 +22,13 @@
  "developments": [
   {
    "factId": "fact-2026-10-19-deepseek-v41-flash-1017",
-   "title": "DeepSeek 发布开放权重 V4.1-Flash-1017",
+   "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
    "firstReportAt": "2026-10-17T10:33:28.000Z",
    "reportCount": 3,
    "representative": {
     "id": "sha256:931ff0f85ef4bf70",
     "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
-    "summary": "DeepSeek 发布开放权重 V4.1-Flash-1017：基准更好、任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API，每千次 0.75 美元。",
+    "summary": "DeepSeek 发布开放权重 V4.1-Flash-1017：基准更好、任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API，每千",
     "source": {
      "name": "The Decoder",
      "firstParty": false
@@ -68,7 +68,7 @@
   {
    "id": "sha256:931ff0f85ef4bf70",
    "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
-   "summary": "DeepSeek 发布开放权重 V4.1-Flash-1017：基准更好、任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API，每千次 0.75 美元。",
+   "summary": "DeepSeek 发布开放权重 V4.1-Flash-1017：基准更好、任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API，每千",
    "source": {
     "name": "The Decoder",
     "firstParty": false
@@ -81,6 +81,6 @@
  "heat": [],
  "related": [],
  "topics": [],
- "recommendReason": "V4.1-Flash 登顶 Agent Arena 开源榜，总榜第11",
+ "recommendReason": "开放权重新模型+搜索API，可直接用",
  "primaryUrl": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/"
 }

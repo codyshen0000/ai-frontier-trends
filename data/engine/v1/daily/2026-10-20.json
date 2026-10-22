@@ -6,7 +6,7 @@
  "generatedAt": "2026-10-20T00:43:38.000Z",
  "lead": {
   "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
-  "leadParagraph": "The Decoder 称 Kling AI 4.0 支持最长约 30 秒、最多 10 张关键帧、提示词理解扩展，并含立体声、多语口型同步与更轻 Flash 变体。"
+  "leadParagraph": "可灵 AI 发布 4.0：单次生成最长约 30 秒、最多 10 张关键帧，提示词理解扩至约 8000 token，并加入立体声与十余种语言的口型同步。 The Decoder 称同步推出更轻的 Flash 变体（上限约 720p、20 秒）以降低成本；Omni Reference 可在一次生成中混用多图/多视频参考。"
  },
  "leadItemId": "sha256:10f7f763ebef7da0",
  "overview": "今日重点四条：可灵 AI 4.0（更长视频、立体声与多语口型同步）。英伟达开源面向企业与 PC 的智能体模型。MiniMax M3.1 Flash（称提速约 3 倍、成本约降 70%，AA 指数到 42）。Hugging Face TorchNeuron，让 HF 模型更易跑在 AWS Trainium。",
@@ -14,7 +14,7 @@
   {
    "itemId": "sha256:10f7f763ebef7da0",
    "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
-   "summary": "The Decoder 称 Kling AI 4.0 支持最长约 30 秒、最多 10 张关键帧、提示词理解扩展，并含立体声、多语口型同步与更轻 Flash 变体。",
+   "summary": "可灵 AI 发布 4.0：单次生成最长约 30 秒、最多 10 张关键帧，提示词理解扩至约 8000 token，并加入立体声与十余种语言的口型同步。 The Decoder 称同步推出更轻的 Flash 变体（上限约 720p、20 秒）以降低成本；Omni Reference 可在一次生成中混用多图/多视频参考。",
    "sourceName": "The Decoder",
    "sourceUrl": "https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/",
    "sourceIconUrl": null,
@@ -26,7 +26,7 @@
   {
    "itemId": "sha256:bfa70917f3b198d1",
    "title": "英伟达发布面向企业与 PC 的开源智能体模型",
-   "summary": "TechCrunch 称英伟达新开源模型，面向企业自建开源模型与端侧本地运行智能体。",
+   "summary": "英伟达推出面向企业常驻智能体与端侧本地运行的开源权重模型：Nemotron 3.5 Super VL（约 1200 亿参数）服务企业代理任务，Bolt 系列则面向搭载 RTX/DGX Spark 的 AI PC 与工作站。 TechCrunch 称 Super VL 与 Bolt 74B-A9B 现已可用，更小的 Bolt E4B 计划本月晚些时候推出；官方强调可在自有基础设施上后训练与部署。",
    "sourceName": "TechCrunch · AI",
    "sourceUrl": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
    "sourceIconUrl": null,
@@ -56,7 +56,7 @@
     {
      "itemId": "sha256:10f7f763ebef7da0",
      "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
-     "summary": "The Decoder 称 Kling AI 4.0 支持最长约 30 秒、最多 10 张关键帧、提示词理解扩展，并含立体声、多语口型同步与更轻 Flash 变体。",
+     "summary": "可灵 AI 发布 4.0：单次生成最长约 30 秒、最多 10 张关键帧，提示词理解扩至约 8000 token，并加入立体声与十余种语言的口型同步。 The Decoder 称同步推出更轻的 Flash 变体（上限约 720p、20 秒）以降低成本；Omni Reference 可在一次生成中混用多图/多视频参考。",
      "sourceName": "The Decoder",
      "sourceUrl": "https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/",
      "sourceIconUrl": null,
@@ -68,7 +68,7 @@
     {
      "itemId": "sha256:bfa70917f3b198d1",
      "title": "英伟达发布面向企业与 PC 的开源智能体模型",
-     "summary": "TechCrunch 称英伟达新开源模型，面向企业自建开源模型与端侧本地运行智能体。",
+     "summary": "英伟达推出面向企业常驻智能体与端侧本地运行的开源权重模型：Nemotron 3.5 Super VL（约 1200 亿参数）服务企业代理任务，Bolt 系列则面向搭载 RTX/DGX Spark 的 AI PC 与工作站。 TechCrunch 称 Super VL 与 Bolt 74B-A9B 现已可用，更小的 Bolt E4B 计划本月晚些时候推出；官方强调可在自有基础设施上后训练与部署。",
      "sourceName": "TechCrunch · AI",
      "sourceUrl": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
      "sourceIconUrl": null,
@@ -80,7 +80,7 @@
     {
      "itemId": "sha256:931ff0f85ef4bf70",
      "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
-     "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017：基准更好、完成任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API。The Decoder 与量子位均有报道。",
+     "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017，在代理类任务上基准更好、完成任务更快、输出更短，并同步开放自研搜索引擎的 Search 与 Fetch API。 The Decoder 称搜索接口按每千次约 0.75 美元计价；量子位亦报道该版本与搜索 API 同步上线。",
      "sourceName": "The Decoder",
      "sourceUrl": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/",
      "sourceIconUrl": null,

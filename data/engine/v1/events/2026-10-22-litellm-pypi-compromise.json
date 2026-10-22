@@ -8,7 +8,7 @@
  "latestAt": "2026-10-21T13:44:12.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": "Wiz 披露，恶意版本 LiteLLM 1.107.0 于 10 月 21 日被上传至 PyPI 与 Docker，内含针对浏览器、云与 AI 密钥的凭证窃取器，并带休眠 C2 能力。 属供应链投毒事件；使用 LiteLLM 的团队应立即核查版本与密钥轮换。",
+ "summary": "Wiz 披露，恶意版本 LiteLLM 1.107.0 于 10 月 21 日被上传至 PyPI 与 Docker，内含针对浏览器、云与 AI 密钥的凭证窃取器，并带休眠 C2 能力。 属供应链投毒；使用 LiteLLM 的团队应立即核查已装版本、轮换相关密钥，并确认镜像与依赖锁定策略。",
  "excerpt": null,
  "latest": null,
  "latestReport": null,

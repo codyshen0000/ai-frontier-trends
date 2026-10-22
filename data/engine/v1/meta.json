@@ -2,31 +2,31 @@
  "site": "前沿趋势",
  "contract_version": "1.1",
  "mode": "production",
- "data_as_of": "2026-10-23T01:34:15+08:00",
- "data_as_of_label": "数据截至 2026-10-23 01:34（北京时间）",
- "generated_at": "2026-10-23T01:35:00+08:00",
+ "data_as_of": "2026-10-23T01:38:48+08:00",
+ "data_as_of_label": "数据截至 2026-10-23 01:38（北京时间）",
+ "generated_at": "2026-10-23T01:43:26+08:00",
  "hot_rule_version": "heat-v1-48h-halflife24h (前沿情报 heat48h.py 1.1)",
- "hot_computed_at": "2026-10-23T01:35:00+08:00",
+ "hot_computed_at": "2026-10-23T01:43:26+08:00",
  "window_hours": 48,
  "spark_points": 25,
  "page_size": 20,
  "counts": {
-  "cards": 24,
+  "cards": 29,
   "pages": 2,
-  "events": 26,
-  "hot_entries": 8,
-  "search_docs": 63,
-  "feed_items": 24,
-  "passed_events": 26,
+  "events": 32,
+  "hot_entries": 10,
+  "search_docs": 76,
+  "feed_items": 29,
+  "passed_events": 32,
   "below_threshold_events": 0,
   "redirects": 0,
   "hot_snapshots": 18,
   "covers": 3
  },
  "last_round": {
-  "batch_id": "2026-10-23T0145",
+  "batch_id": "2026-10-23T0150",
   "status": "partial",
-  "finished_at": "2026-10-23T01:34:15+08:00"
+  "finished_at": "2026-10-23T01:42:10+08:00"
  },
  "batches": [
   {
@@ -346,11 +346,39 @@
    "status": "ok"
   },
   {
+   "batch_id": "2026-10-22T2018",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-22T2122",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-22T2221",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-22T2319",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-23T0023",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-23T0119",
+   "status": "ok"
+  },
+  {
    "batch_id": "2026-10-23T0135",
    "status": "partial"
   },
   {
    "batch_id": "2026-10-23T0145",
+   "status": "partial"
+  },
+  {
+   "batch_id": "2026-10-23T0150",
    "status": "partial"
   }
  ],
@@ -377,11 +405,17 @@
   "events/2026-10-22-google-ai-maternal-ultrasound.json",
   "events/2026-10-22-litellm-pypi-compromise.json",
   "events/2026-10-22-msr-kls-conjecture.json",
+  "events/2026-10-22-nvidia-dgx-spark-cluster.json",
   "events/2026-10-22-nvidia-microduck-isaac-lab.json",
+  "events/2026-10-22-openai-fde-means.json",
   "events/2026-10-22-openai-gov-cyber-defenders.json",
   "events/2026-10-22-recursive-flint-coding-model.json",
   "events/2026-10-22-vllm-humming-kernels.json",
+  "events/2026-10-22-wiz-artex-storm0940.json",
   "events/2026-10-22-wiz-llmjacking-cloud-billing.json",
+  "events/2026-10-23-allenai-olmoearth-v13.json",
+  "events/2026-10-23-msr-flint-interactive.json",
+  "events/2026-10-23-uber-chatgpt-work-rollout.json",
   "events/index.json",
   "feed/selected.json",
   "hot-snapshots/2026-10-20T08.json",

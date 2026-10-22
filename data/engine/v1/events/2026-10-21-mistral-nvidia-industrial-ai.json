@@ -8,7 +8,7 @@
  "latestAt": "2026-10-21T14:40:51.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": "Mistral 官方称与 NVIDIA 合作，基于加速计算打造面向工程设计的 AI 原生工作流；媒体称目标是加快工业仿真与产品设计。",
+ "summary": null,
  "excerpt": null,
  "latest": null,
  "latestReport": null,
@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 5
+  "rank": 8
  },
  "developments": [
   {
@@ -230,5 +230,5 @@
  "topics": [],
  "recommendReason": "Mistral×NVIDIA 推进工业工程物理 AI 工作流",
  "primaryUrl": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/",
- "rankDelta": 0
+ "rankDelta": -3
 }

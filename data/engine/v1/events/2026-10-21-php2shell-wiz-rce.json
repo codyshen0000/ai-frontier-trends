@@ -2,10 +2,10 @@
  "publicId": "2026-10-21-php2shell-wiz-rce",
  "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
  "status": "active",
- "reportCount": 5,
- "sourceCount": 5,
+ "reportCount": 6,
+ "sourceCount": 6,
  "firstReportAt": "2026-10-21T07:00:00.000Z",
- "latestAt": "2026-10-21T19:45:01.000Z",
+ "latestAt": "2026-10-22T15:12:27.000Z",
  "digest": null,
  "digestUpdatedAt": null,
  "summary": null,
@@ -13,9 +13,9 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 5,
-  "newParticipants6h": 0,
-  "recentReports24h": 3,
+  "participants48h": 6,
+  "newParticipants6h": 1,
+  "recentReports24h": 4,
   "observationComplete": true,
   "rank": 1
  },
@@ -24,7 +24,7 @@
    "factId": "fact-2026-10-21-php2shell-wiz-rce",
    "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
    "firstReportAt": "2026-10-21T07:00:00.000Z",
-   "reportCount": 5,
+   "reportCount": 6,
    "representative": {
     "id": "sha256:de9db6f384cbc788",
     "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
@@ -54,6 +54,18 @@
   }
  ],
  "timeline": [
+  {
+   "id": "sha256:e204cfb094252815",
+   "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
+   "summary": null,
+   "source": {
+    "name": "The Verge · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-22T15:12:27.000Z",
+   "selected": false,
+   "originalUrl": "https://www.theverge.com/tech/1016574/php2shell-security-vulnerability-websites-down"
+  },
   {
    "id": "sha256:d33145e4b0cfb916",
    "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
@@ -283,13 +295,13 @@
   },
   {
    "hour": "2026-10-22T16:00:00.000Z",
-   "heat": 24.8,
-   "participants": 5
+   "heat": 34.6,
+   "participants": 6
   },
   {
    "hour": "2026-10-22T17:00:00.000Z",
-   "heat": 24.1,
-   "participants": 5
+   "heat": 33.6,
+   "participants": 6
   }
  ],
  "related": [],

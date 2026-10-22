@@ -1,0 +1,136 @@
+{
+ "publicId": "2026-10-22-openai-fde-means",
+ "title": "OpenAI：Forward Deployed Engineering 如何填补部署鸿沟",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-22T06:00:00.000Z",
+ "latestAt": "2026-10-22T06:00:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": null,
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-22-openai-fde-means",
+   "title": "OpenAI：Forward Deployed Engineering 如何填补部署鸿沟",
+   "firstReportAt": "2026-10-22T06:00:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:6400feb681472530",
+    "title": "OpenAI：Forward Deployed Engineering 如何填补部署鸿沟",
+    "summary": "OpenAI FDE 负责人介绍如何把模型能力落到客户生产并反哺产品研究。",
+    "source": {
+     "name": "OpenAI News",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-22T06:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://openai.com/index/forward-deployed-engineering-means"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:6400feb681472530",
+   "title": "OpenAI：Forward Deployed Engineering 如何填补部署鸿沟",
+   "summary": "OpenAI FDE 负责人介绍如何把模型能力落到客户生产并反哺产品研究。",
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-22T06:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/forward-deployed-engineering-means"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:6400feb681472530",
+   "title": "OpenAI：Forward Deployed Engineering 如何填补部署鸿沟",
+   "summary": "OpenAI FDE 负责人介绍如何把模型能力落到客户生产并反哺产品研究。",
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-22T06:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/forward-deployed-engineering-means"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-22T06:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T07:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T08:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T09:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T10:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T11:00:00.000Z",
+   "heat": 8.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T12:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T13:00:00.000Z",
+   "heat": 8.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T14:00:00.000Z",
+   "heat": 7.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T15:00:00.000Z",
+   "heat": 7.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T16:00:00.000Z",
+   "heat": 7.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T17:00:00.000Z",
+   "heat": 7.3,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "OpenAI 阐释 Forward Deployed Engineering",
+ "primaryUrl": "https://openai.com/index/forward-deployed-engineering-means"
+}

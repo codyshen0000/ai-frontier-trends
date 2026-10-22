@@ -8,16 +8,16 @@
  "latestAt": "2026-10-21T20:27:41.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": "此前报道 Recursive 发布称主要由 AI 自研的笔记本级编码模型 Flint（约 40B/2.5B active）。 vLLM 博客称 Day-0 支持 Flint 双检查点，单卡单请求解码约 500 tokens/s。",
+ "summary": "报道称 Recursive 发布笔记本级编码模型 Flint（约 40B 总参 / 2.5B 激活），并称训练过程 largely 由 AI 完成、可免费试用。 vLLM 博客随后宣布 Day-0 支持 Flint 双检查点，单卡单请求解码约 500 tokens/s，降低本地部署与评测摩擦。",
  "excerpt": null,
  "latest": "vLLM 宣布 Day-0 支持 Flint，单卡约 500 tok/s。",
  "latestReport": null,
  "whyHot": {
-  "participants48h": 2,
-  "newParticipants6h": 0,
-  "recentReports24h": 1,
+  "participants48h": 3,
+  "newParticipants6h": 1,
+  "recentReports24h": 2,
   "observationComplete": true,
-  "rank": 7
+  "rank": 3
  },
  "developments": [
   {
@@ -277,22 +277,22 @@
   },
   {
    "hour": "2026-10-22T15:00:00.000Z",
-   "heat": 9.1,
-   "participants": 2
+   "heat": 19.0,
+   "participants": 3
   },
   {
    "hour": "2026-10-22T16:00:00.000Z",
-   "heat": 8.8,
-   "participants": 2
+   "heat": 18.5,
+   "participants": 3
   },
   {
    "hour": "2026-10-22T17:00:00.000Z",
-   "heat": 8.6,
-   "participants": 2
+   "heat": 17.9,
+   "participants": 3
   }
  ],
  "related": [],
  "topics": [],
  "primaryUrl": "https://vllm.ai/blog/2026-10-21-flint",
- "rankDelta": 0
+ "rankDelta": 4
 }

@@ -8,14 +8,14 @@
  "latestAt": "2026-10-22T08:35:22.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": "The Verge 与 IT之家称 Anthropic 推出面向专业人士与小企业的 Claude Duet 智能体（研究预览），提供 iOS/Android 独立应用与网页入口，定位 24 小时在线助理，对标 Meta Muse 等。官方新闻室暂未见同名稿。",
+ "summary": "The Verge 与 IT之家称 Anthropic 以研究预览推出面向专业人士与小企业的 Claude Duet 智能体，提供 iOS/Android 独立应用与网页入口，定位可在用户离线后继续后台干活的 24 小时助理，对标 Meta Muse、OpenAI Dots 等。 报道称其基于 Claude Opus 5.5，首批面向美国 Pro/Max 候补；可调用 Marketplace 数千连接器，敏感操作需用户批准。官方新闻室暂未见同名稿。",
  "excerpt": null,
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 3,
-  "newParticipants6h": 0,
-  "recentReports24h": 3,
+  "participants48h": 4,
+  "newParticipants6h": 1,
+  "recentReports24h": 4,
   "observationComplete": true,
   "rank": 2
  },
@@ -171,23 +171,23 @@
   },
   {
    "hour": "2026-10-22T14:00:00.000Z",
-   "heat": 20.9,
-   "participants": 3
+   "heat": 30.9,
+   "participants": 4
   },
   {
    "hour": "2026-10-22T15:00:00.000Z",
-   "heat": 20.3,
-   "participants": 3
+   "heat": 30.0,
+   "participants": 4
   },
   {
    "hour": "2026-10-22T16:00:00.000Z",
-   "heat": 19.7,
-   "participants": 3
+   "heat": 29.2,
+   "participants": 4
   },
   {
    "hour": "2026-10-22T17:00:00.000Z",
-   "heat": 19.2,
-   "participants": 3
+   "heat": 28.3,
+   "participants": 4
   }
  ],
  "related": [],

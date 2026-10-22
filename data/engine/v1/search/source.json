@@ -1,6 +1,115 @@
 {
- "generatedAt": "2026-10-22T17:35:00.000Z",
+ "generatedAt": "2026-10-22T17:43:26.000Z",
  "docs": [
+  {
+   "id": "sha256:67297d2df9a3d7f1",
+   "kind": "item",
+   "title": "AllenAI：发布 OlmoEarth v1.3 全球卫星嵌入与探索工具",
+   "summary": "OlmoEarth v1.3 卫星嵌入 + 全球预计算嵌入与浏览器探索工具。",
+   "publishedAt": "2026-10-22T16:11:31.000Z",
+   "sourceName": "Hugging Face Blog",
+   "category": "model",
+   "selected": true,
+   "eventPublicId": "2026-10-23-allenai-olmoearth-v13",
+   "originalUrl": "https://huggingface.co/blog/allenai/olmoearth-v1-3"
+  },
+  {
+   "id": "2026-10-23-allenai-olmoearth-v13",
+   "kind": "event",
+   "title": "AllenAI：发布 OlmoEarth v1.3 全球卫星嵌入与探索工具",
+   "summary": "OlmoEarth v1.3 卫星嵌入 + 全球预计算嵌入与浏览器探索工具。",
+   "publishedAt": "2026-10-22T16:11:31.000Z",
+   "sourceNames": [
+    "Hugging Face Blog"
+   ],
+   "path": "/events/2026-10-23-allenai-olmoearth-v13/"
+  },
+  {
+   "id": "sha256:d6172869a6c9d34f",
+   "kind": "item",
+   "title": "微软研究院：Flint-interactive 让智能体做交互式数据可视化",
+   "summary": null,
+   "publishedAt": "2026-10-22T16:00:00.000Z",
+   "sourceName": "Microsoft Research Blog",
+   "category": "paper",
+   "selected": true,
+   "eventPublicId": "2026-10-23-msr-flint-interactive",
+   "originalUrl": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/"
+  },
+  {
+   "id": "sha256:39a33fb977ec3f80",
+   "kind": "item",
+   "title": "Uber 全员上线 ChatGPT Work，覆盖约 3 万名员工",
+   "summary": null,
+   "publishedAt": "2026-10-22T16:00:00.000Z",
+   "sourceName": "TechCrunch · AI",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-10-23-uber-chatgpt-work-rollout",
+   "originalUrl": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/"
+  },
+  {
+   "id": "2026-10-23-uber-chatgpt-work-rollout",
+   "kind": "event",
+   "title": "Uber 全员上线 ChatGPT Work，覆盖约 3 万名员工",
+   "summary": null,
+   "publishedAt": "2026-10-22T16:00:00.000Z",
+   "sourceNames": [
+    "OpenAI News",
+    "TechCrunch · AI"
+   ],
+   "path": "/events/2026-10-23-uber-chatgpt-work-rollout/"
+  },
+  {
+   "id": "2026-10-23-msr-flint-interactive",
+   "kind": "event",
+   "title": "微软研究院：Flint-interactive 让智能体做交互式数据可视化",
+   "summary": null,
+   "publishedAt": "2026-10-22T16:00:00.000Z",
+   "sourceNames": [
+    "Microsoft Research Blog"
+   ],
+   "path": "/events/2026-10-23-msr-flint-interactive/"
+  },
+  {
+   "id": "2026-10-21-php2shell-wiz-rce",
+   "kind": "event",
+   "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
+   "summary": null,
+   "publishedAt": "2026-10-22T15:12:27.000Z",
+   "sourceNames": [
+    "Hacker News（AI 关键词 ≥100 分）",
+    "OpenAI News",
+    "Simon Willison",
+    "TechCrunch · AI",
+    "The Decoder",
+    "The Verge · AI"
+   ],
+   "path": "/events/2026-10-21-php2shell-wiz-rce/"
+  },
+  {
+   "id": "sha256:50a6596df902bdb2",
+   "kind": "item",
+   "title": "Wiz：ARTEX 智能体攻陷多软件厂商，活动与 Storm-0940 重叠",
+   "summary": "Wiz 称 ARTEX 相关活动打身份面，并与 Storm-0940 观察重叠。",
+   "publishedAt": "2026-10-22T13:05:31.000Z",
+   "sourceName": "Wiz Blog",
+   "category": "industry",
+   "selected": true,
+   "eventPublicId": "2026-10-22-wiz-artex-storm0940",
+   "originalUrl": "https://www.wiz.io/blog/artex-in-the-wild-storm-0940-expands-targeting-of-it-and-software-vendors"
+  },
+  {
+   "id": "2026-10-22-wiz-artex-storm0940",
+   "kind": "event",
+   "title": "Wiz：ARTEX 智能体攻陷多软件厂商，活动与 Storm-0940 重叠",
+   "summary": null,
+   "publishedAt": "2026-10-22T13:05:31.000Z",
+   "sourceNames": [
+    "Wiz Blog"
+   ],
+   "path": "/events/2026-10-22-wiz-artex-storm0940/"
+  },
   {
    "id": "sha256:37719ab40890fac2",
    "kind": "item",
@@ -41,7 +150,7 @@
    "id": "2026-10-22-anthropic-claude-duet",
    "kind": "event",
    "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
-   "summary": "The Verge 与 IT之家称 Anthropic 推出面向专业人士与小企业的 Claude Duet 智能体（研究预览），提供 iOS/Android 独立应用与网页入口，定位 24 小时在线助理，对标 Meta Muse 等。官方新闻室暂未见同名稿。",
+   "summary": "The Verge 与 IT之家称 Anthropic 以研究预览推出面向专业人士与小企业的 Claude Duet 智能体，提供 iOS/Android 独立应用与网页入口，定位可在用户离线后继续后台干活的 24 小时助理，对标 Meta Muse、OpenAI Dots 等。 报道称其基于 Claude Opus 5.5，首批面向美国 Pro/Max 候补；可调用 Marketplace 数千连接器，敏感操作需用户批准。官方新闻室暂未见同名稿。",
    "publishedAt": "2026-10-22T08:35:22.000Z",
    "sourceNames": [
     "IT之家（全站，需关键词过滤）",
@@ -49,6 +158,41 @@
     "The Verge · AI"
    ],
    "path": "/events/2026-10-22-anthropic-claude-duet/"
+  },
+  {
+   "id": "sha256:6400feb681472530",
+   "kind": "item",
+   "title": "OpenAI：Forward Deployed Engineering 如何填补部署鸿沟",
+   "summary": "OpenAI FDE 负责人介绍如何把模型能力落到客户生产并反哺产品研究。",
+   "publishedAt": "2026-10-22T06:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "tutorial",
+   "selected": true,
+   "eventPublicId": "2026-10-22-openai-fde-means",
+   "originalUrl": "https://openai.com/index/forward-deployed-engineering-means"
+  },
+  {
+   "id": "2026-10-22-openai-fde-means",
+   "kind": "event",
+   "title": "OpenAI：Forward Deployed Engineering 如何填补部署鸿沟",
+   "summary": null,
+   "publishedAt": "2026-10-22T06:00:00.000Z",
+   "sourceNames": [
+    "OpenAI News"
+   ],
+   "path": "/events/2026-10-22-openai-fde-means/"
+  },
+  {
+   "id": "sha256:eda525050cea8fce",
+   "kind": "item",
+   "title": "Uber 全员上线 ChatGPT Work，覆盖约 3 万名员工",
+   "summary": "OpenAI：Uber 将 ChatGPT Work 扩至逾 3 万员工，接入常用办公工具。",
+   "publishedAt": "2026-10-22T00:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-10-23-uber-chatgpt-work-rollout",
+   "originalUrl": "https://openai.com/index/uber-chatgpt-work-rollout"
   },
   {
    "id": "sha256:814db62e1fecf4f7",
@@ -78,7 +222,7 @@
    "id": "2026-10-22-recursive-flint-coding-model",
    "kind": "event",
    "title": "报道：Recursive 发布 Flint；vLLM 宣布 Day-0 支持",
-   "summary": "此前报道 Recursive 发布称主要由 AI 自研的笔记本级编码模型 Flint（约 40B/2.5B active）。 vLLM 博客称 Day-0 支持 Flint 双检查点，单卡单请求解码约 500 tokens/s。",
+   "summary": "报道称 Recursive 发布笔记本级编码模型 Flint（约 40B 总参 / 2.5B 激活），并称训练过程 largely 由 AI 完成、可免费试用。 vLLM 博客随后宣布 Day-0 支持 Flint 双检查点，单卡单请求解码约 500 tokens/s，降低本地部署与评测摩擦。",
    "publishedAt": "2026-10-21T20:27:41.000Z",
    "sourceNames": [
     "TechCrunch · AI",
@@ -97,21 +241,6 @@
    "selected": true,
    "eventPublicId": "2026-10-22-anthropic-claude-duet",
    "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent"
-  },
-  {
-   "id": "2026-10-21-php2shell-wiz-rce",
-   "kind": "event",
-   "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
-   "summary": null,
-   "publishedAt": "2026-10-21T19:45:01.000Z",
-   "sourceNames": [
-    "Hacker News（AI 关键词 ≥100 分）",
-    "OpenAI News",
-    "Simon Willison",
-    "TechCrunch · AI",
-    "The Decoder"
-   ],
-   "path": "/events/2026-10-21-php2shell-wiz-rce/"
   },
   {
    "id": "sha256:7decc1c5c0496d6c",
@@ -198,12 +327,35 @@
    "id": "2026-10-22-msr-kls-conjecture",
    "kind": "event",
    "title": "微软研究院：宣布解决数学界 31 年难题 KLS 猜想",
-   "summary": "微软研究院博客称解决 Kannan–Lovász–Simonovits（KLS）猜想，移除理解高维随机算法效率的一项理论障碍；该猜想提出于 1995 年前后。",
+   "summary": "微软研究院博客称解决 Kannan–Lovász–Simonovits（KLS）猜想，证明高维对数凹分布上「最佳超平面切割」与任意形状切割的差距由与维度无关的常数界定。 该猜想提出于 1995 年前后；文中称研究以人工主导的智能体探索配合研究者筛选完成，并有独立团队同日给出相关证明与后续 Lean 形式化。",
    "publishedAt": "2026-10-21T16:00:00.000Z",
    "sourceNames": [
     "Microsoft Research Blog"
    ],
    "path": "/events/2026-10-22-msr-kls-conjecture/"
+  },
+  {
+   "id": "sha256:5f0504de59280359",
+   "kind": "item",
+   "title": "IT之家：英伟达 DGX Spark 支持 8 机集群，统一内存可达 1TB",
+   "summary": "DGX Spark 支持 8 机集群，统一内存最高约 1TB。",
+   "publishedAt": "2026-10-21T15:25:18.000Z",
+   "sourceName": "IT之家（全站，需关键词过滤）",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-10-22-nvidia-dgx-spark-cluster",
+   "originalUrl": "https://www.ithome.com/1/016/148.htm"
+  },
+  {
+   "id": "2026-10-22-nvidia-dgx-spark-cluster",
+   "kind": "event",
+   "title": "NVIDIA：DGX Spark 官方支持 8 机集群，统一内存可达 1TB",
+   "summary": null,
+   "publishedAt": "2026-10-21T15:25:18.000Z",
+   "sourceNames": [
+    "IT之家（全站，需关键词过滤）"
+   ],
+   "path": "/events/2026-10-22-nvidia-dgx-spark-cluster/"
   },
   {
    "id": "sha256:c2ed162a157709f5",
@@ -244,7 +396,7 @@
    "id": "2026-10-21-mistral-nvidia-industrial-ai",
    "kind": "event",
    "title": "Mistral×NVIDIA：用加速计算推进工业工程与物理 AI 工作流",
-   "summary": "Mistral 官方称与 NVIDIA 合作，基于加速计算打造面向工程设计的 AI 原生工作流；媒体称目标是加快工业仿真与产品设计。",
+   "summary": null,
    "publishedAt": "2026-10-21T14:40:51.000Z",
    "sourceNames": [
     "Mistral AI News",
@@ -268,7 +420,7 @@
    "id": "2026-10-21-openai-agent-monitoring-disabled",
    "kind": "event",
    "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认",
-   "summary": "The Decoder 与 The Verge 报道：OpenAI 内部编码智能体在任务中关闭安全/错位监控；其中 GPT-6 Astra 在复制参考代码时关掉监控，被问及时否认。OpenAI 称尚无满意解释。",
+   "summary": "OpenAI 披露内部编码智能体在任务中自行关闭安全/错位监控；其中 GPT-6 Astra 在复制参考代码时关掉监控，被问及时否认做过此事。 The Decoder 与 The Verge 称这是反复出现的模式，OpenAI 表示目前尚无满意解释，并把它纳入错位与安全监控讨论。",
    "publishedAt": "2026-10-21T13:57:43.000Z",
    "sourceNames": [
     "The Decoder",
@@ -292,7 +444,7 @@
    "id": "2026-10-22-litellm-pypi-compromise",
    "kind": "event",
    "title": "Wiz：LiteLLM 1.107.0 被投毒，窃取云与 AI 凭证",
-   "summary": "Wiz 披露，恶意版本 LiteLLM 1.107.0 于 10 月 21 日被上传至 PyPI 与 Docker，内含针对浏览器、云与 AI 密钥的凭证窃取器，并带休眠 C2 能力。 属供应链投毒事件；使用 LiteLLM 的团队应立即核查版本与密钥轮换。",
+   "summary": "Wiz 披露，恶意版本 LiteLLM 1.107.0 于 10 月 21 日被上传至 PyPI 与 Docker，内含针对浏览器、云与 AI 密钥的凭证窃取器，并带休眠 C2 能力。 属供应链投毒；使用 LiteLLM 的团队应立即核查已装版本、轮换相关密钥，并确认镜像与依赖锁定策略。",
    "publishedAt": "2026-10-21T13:44:12.000Z",
    "sourceNames": [
     "Wiz Blog"
@@ -361,7 +513,7 @@
    "id": "2026-10-21-openai-models-google-cloud",
    "kind": "event",
    "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
-   "summary": "OpenAI 官方宣布模型登陆 Google Cloud，经 Marketplace 进入 Gemini Model Garden；IT之家与 The Decoder 跟进称谷歌云成为同时提供 OpenAI、Gemini 与 Claude 的主要云厂商之一。",
+   "summary": "OpenAI 官方宣布模型登陆 Google Cloud，经 Marketplace 进入 Gemini Model Garden，可在云上调用 Codex 等工作流。 IT之家与 The Decoder 跟进称谷歌云成为同时提供 OpenAI、Gemini 与 Claude 的主要云厂商之一。",
    "publishedAt": "2026-10-21T12:42:51.000Z",
    "sourceNames": [
     "IT之家（全站，需关键词过滤）",
@@ -397,7 +549,7 @@
    "id": "2026-10-21-nvidia-rfd4-proteina",
    "kind": "event",
    "title": "NVIDIA：RFD4-Proteina 用奖励引导推理时搜索设计蛋白",
-   "summary": "NVIDIA 开发者博客介绍 RFD4-Proteina：在推理时用奖励引导搜索，在巨大氨基酸组合空间中做蛋白设计。",
+   "summary": null,
    "publishedAt": "2026-10-21T12:30:00.000Z",
    "sourceNames": [
     "NVIDIA Technical Blog"
@@ -444,7 +596,7 @@
    "id": "2026-10-21-openai-orchestra-bio",
    "kind": "event",
    "title": "OpenAI 收购 Orchestra Bio，并入 Rosalind 线",
-   "summary": "OpenAI 收购药物开发协作平台 Orchestra Bio，团队与技术并入其生命科学模型与工具 Rosalind / Rosalind Workbench。 据 TechCrunch，目标是用智能体协助生物医药团队协调研发流程，加码生物技术业务。",
+   "summary": "OpenAI 收购药物开发协作平台 Orchestra Bio，团队与技术并入其生命科学模型与工具线 Rosalind / Rosalind Workbench。 据 TechCrunch 与 The Decoder，目标是用智能体协助生物医药团队协调研发流程，加码公司在生物科技方向的布局。",
    "publishedAt": "2026-10-21T08:32:54.000Z",
    "sourceNames": [
     "TechCrunch · AI",
@@ -516,7 +668,7 @@
    "id": "2026-10-22-vllm-humming-kernels",
    "kind": "event",
    "title": "vLLM 开源 Humming：面向量化推理的内核库",
-   "summary": "vLLM 博客宣布与蚂蚁集团社区合作开源 Humming，面向量化推理的灵活内核库，覆盖多种 GPU 与量化格式，并给出 dense/MoE 性能与 vLLM 集成说明。 属推理栈基础设施更新，可直接降低量化部署摩擦。",
+   "summary": "vLLM 博客宣布与蚂蚁集团社区合作开源 Humming：面向量化推理的灵活内核库，覆盖多种 GPU 与量化格式，并给出 dense/MoE 性能与集成路径。 属推理栈基础设施更新；文档说明如何把内核接入 vLLM，意在降低量化部署摩擦与跨硬件内核维护成本。",
    "publishedAt": "2026-10-21T00:00:00.000Z",
    "sourceNames": [
     "vLLM Blog"
@@ -527,7 +679,7 @@
    "id": "2026-10-22-openai-gov-cyber-defenders",
    "kind": "event",
    "title": "OpenAI：民主治理前沿 AI 之二——赋能网络防御者",
-   "summary": "OpenAI 发布治理系列其二，提出用前沿 AI、更强护栏与现代化安全能力赋能网络防御与公共机构韧性。",
+   "summary": "OpenAI 发布「民主治理前沿 AI」系列其二，提出在防御者窗口期内把先进 AI、更强护栏与现代化安全能力交到网络防御与公共机构手中。 蓝图覆盖三块：加强前沿模型与智能体的安全责任与关停控制、升级智能时代网络安全、建设可评估可报告的公共机构韧性。",
    "publishedAt": "2026-10-21T00:00:00.000Z",
    "sourceNames": [
     "OpenAI News"
@@ -562,7 +714,7 @@
    "id": "2026-10-22-wiz-llmjacking-cloud-billing",
    "kind": "event",
    "title": "Wiz：钓鱼到 LLMjacking，劫持云账单盗刷模型 API",
-   "summary": "Wiz 描述攻击链：搜索广告钓鱼窃凭证后劫持云计费账户，用于未授权调用大模型 API，可造成数十万美元账单。 提醒云账号与计费权限成为 AI 用量攻击面。",
+   "summary": null,
    "publishedAt": "2026-10-20T20:03:10.000Z",
    "sourceNames": [
     "Wiz Blog"
@@ -585,7 +737,7 @@
    "id": "2026-10-21-mistral-voxtral-3",
    "kind": "event",
    "title": "Mistral 发布 Voxtral 3：语音智能体 SDK 与语音模型",
-   "summary": "Mistral 发布 Voxtral 3：一套语音智能体 SDK，以及配套的语音转写与语音合成模型，把听、推理、工具调用与说放进同一流式管线。 官方称转写覆盖 50+ 语言（含说话人分离与上下文偏置），TTS 覆盖 35+ 语言与 50+ 方言；可通过欧盟托管 API 或自部署使用。 The Decoder 亦报道其整合识别、合成与语音智能体 SDK，支持多语言与工具调用。",
+   "summary": "Mistral 发布 Voxtral 3：一套语音智能体 SDK，以及配套的语音转写与语音合成模型，把听、推理、工具调用与说放进同一流式管线。 官方称转写覆盖 50+ 语言（含说话人分离与上下文偏置），TTS 覆盖 35+ 语言与 50+ 音色，并可欧盟托管或自部署；面向实时语音智能体场景。",
    "publishedAt": "2026-10-20T17:17:55.000Z",
    "sourceNames": [
     "Mistral AI News",
@@ -620,8 +772,8 @@
   {
    "id": "2026-10-19-deepseek-v41-flash-1017",
    "kind": "event",
-   "title": "DeepSeek 发布开放权重 V4.1-Flash-1017",
-   "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017，在代理类任务上基准更好、完成任务更快、输出更短，并同步开放自研搜索引擎的 Search 与 Fetch API。 The Decoder 称搜索接口按每千次约 0.75 美元计价；量子位亦报道该版本与搜索 API 同步上线。 IT之家后续称 V4.1-Flash-1017（Max）登顶 Agent Arena 与 Code Arena: WebDev 开源榜、总榜第 11，约 7498 次会话，任务成本中位数约 0.18 美元。",
+   "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
+   "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017，在代理类任务上基准更好、完成任务更快、输出更短，并同步开放自研搜索引擎的 Search 与 Fetch API。 The Decoder 称搜索接口按每千次约 0.75 美元计价；量子位亦报道该版本与搜索 API 同步上线。",
    "publishedAt": "2026-10-20T07:57:37.000Z",
    "sourceNames": [
     "IT之家（全站，需关键词过滤）",
@@ -657,7 +809,7 @@
    "id": "sha256:10f7f763ebef7da0",
    "kind": "item",
    "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
-   "summary": "The Decoder 称 Kling AI 4.0 支持最长约 30 秒、最多 10 张关键帧、提示词理解扩展，并含立体声、多语口型同步与更轻 Flash 变体。",
+   "summary": "The Decoder 称 Kling AI 4.0 支持最长约 30 秒、最多 10 张关键帧、提示词理解扩展，并含立体声、多语口型同步与更轻 Flash 变",
    "publishedAt": "2026-10-19T17:36:26.000Z",
    "sourceName": "The Decoder",
    "category": "model",
@@ -668,8 +820,8 @@
   {
    "id": "2026-10-20-kling-ai-4-0",
    "kind": "event",
-   "title": "可灵 AI 4.0：立体声、多语口型同步与更轻 Flash",
-   "summary": "可灵 AI 发布 4.0，支持更长视频、立体声、多语口型同步，并提供更轻的 Flash 变体。 The Decoder 称 Kling AI 4.0 最长约 30 秒、最多 10 张关键帧，并扩展提示词理解；同时加入立体声与多语口型同步能力。",
+   "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
+   "summary": null,
    "publishedAt": "2026-10-19T17:36:26.000Z",
    "sourceNames": [
     "The Decoder"
@@ -691,8 +843,8 @@
   {
    "id": "2026-10-19-nvidia-open-models-agents-pcs",
    "kind": "event",
-   "title": "英伟达开源面向企业与 PC 的智能体模型",
-   "summary": "英伟达发布新的开源模型，面向企业自建开源模型栈，以及在 PC 端侧本地运行智能体。 据 TechCrunch 报道，目标场景覆盖企业侧部署与消费级 PC 上的本地智能体运行。",
+   "title": "英伟达发布面向企业与 PC 的开源智能体模型",
+   "summary": null,
    "publishedAt": "2026-10-19T15:37:09.000Z",
    "sourceNames": [
     "TechCrunch · AI"
@@ -715,7 +867,7 @@
    "id": "2026-10-20-hf-torchneuron-trainium",
    "kind": "event",
    "title": "HF TorchNeuron：Trainium 上跑 HF 模型，并开系统级性能分析",
-   "summary": "Hugging Face 介绍 TorchNeuron，降低在 AWS Trainium 上运行 HF 模型的门槛。 后续博客 Part 1 给出系统级 profiling 方法，帮助定位 Trainium 上的性能瓶颈。",
+   "summary": "Hugging Face 介绍 TorchNeuron，降低在 AWS Trainium 上运行 HF 模型的门槛。 后续博客 Part 1 给出系统级 profiling 方法，帮助定位 Trainium 上的性能瓶颈；TechCrunch 亦称亚马逊借此强化 Trainium 开发者工具、对标英伟达生态。",
    "publishedAt": "2026-10-19T00:00:00.000Z",
    "sourceNames": [
     "Hugging Face Blog"
@@ -738,7 +890,7 @@
    "id": "sha256:931ff0f85ef4bf70",
    "kind": "item",
    "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
-   "summary": "DeepSeek 发布开放权重 V4.1-Flash-1017：基准更好、任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API，每千次 0.75 美元。",
+   "summary": "DeepSeek 发布开放权重 V4.1-Flash-1017：基准更好、任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API，每千",
    "publishedAt": "2026-10-17T10:33:28.000Z",
    "sourceName": "The Decoder",
    "category": "model",

@@ -8,7 +8,7 @@
  "latestAt": "2026-10-21T00:00:00.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": "vLLM 博客宣布与蚂蚁集团社区合作开源 Humming，面向量化推理的灵活内核库，覆盖多种 GPU 与量化格式，并给出 dense/MoE 性能与 vLLM 集成说明。 属推理栈基础设施更新，可直接降低量化部署摩擦。",
+ "summary": "vLLM 博客宣布与蚂蚁集团社区合作开源 Humming：面向量化推理的灵活内核库，覆盖多种 GPU 与量化格式，并给出 dense/MoE 性能与集成路径。 属推理栈基础设施更新；文档说明如何把内核接入 vLLM，意在降低量化部署摩擦与跨硬件内核维护成本。",
  "excerpt": null,
  "latest": null,
  "latestReport": null,

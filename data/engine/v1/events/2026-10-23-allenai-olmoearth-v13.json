@@ -1,0 +1,81 @@
+{
+ "publicId": "2026-10-23-allenai-olmoearth-v13",
+ "title": "AllenAI：发布 OlmoEarth v1.3 全球卫星嵌入与探索工具",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-22T16:11:31.000Z",
+ "latestAt": "2026-10-22T16:11:31.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "OlmoEarth v1.3 卫星嵌入 + 全球预计算嵌入与浏览器探索工具。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-23-allenai-olmoearth-v13",
+   "title": "AllenAI：发布 OlmoEarth v1.3 全球卫星嵌入与探索工具",
+   "firstReportAt": "2026-10-22T16:11:31.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:67297d2df9a3d7f1",
+    "title": "AllenAI：发布 OlmoEarth v1.3 全球卫星嵌入与探索工具",
+    "summary": "OlmoEarth v1.3 卫星嵌入 + 全球预计算嵌入与浏览器探索工具。",
+    "source": {
+     "name": "Hugging Face Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-22T16:11:31.000Z",
+    "selected": true,
+    "originalUrl": "https://huggingface.co/blog/allenai/olmoearth-v1-3"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:67297d2df9a3d7f1",
+   "title": "AllenAI：发布 OlmoEarth v1.3 全球卫星嵌入与探索工具",
+   "summary": "OlmoEarth v1.3 卫星嵌入 + 全球预计算嵌入与浏览器探索工具。",
+   "source": {
+    "name": "Hugging Face Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-22T16:11:31.000Z",
+   "selected": true,
+   "originalUrl": "https://huggingface.co/blog/allenai/olmoearth-v1-3"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:67297d2df9a3d7f1",
+   "title": "AllenAI：发布 OlmoEarth v1.3 全球卫星嵌入与探索工具",
+   "summary": "OlmoEarth v1.3 卫星嵌入 + 全球预计算嵌入与浏览器探索工具。",
+   "source": {
+    "name": "Hugging Face Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-22T16:11:31.000Z",
+   "selected": true,
+   "originalUrl": "https://huggingface.co/blog/allenai/olmoearth-v1-3"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-22T17:00:00.000Z",
+   "heat": 9.8,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "AllenAI：OlmoEarth v1.3 全球卫星嵌入",
+ "primaryUrl": "https://huggingface.co/blog/allenai/olmoearth-v1-3"
+}
