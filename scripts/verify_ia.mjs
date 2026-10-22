@@ -35,6 +35,8 @@ const config = JSON.parse(readFileSync(join(root, "site.config.json"), "utf8"));
 const liveRaw = readFileSync(join(root, "content", "live.html"), "utf8");
 const timelineRaw = readFileSync(join(root, "content", "timeline.html"), "utf8");
 const distDir = join(root, "dist");
+let engineHotCoverAlt = "";
+let engineDailyCoverAlt = "";
 const generatedCovers = JSON.parse(readFileSync(join(root, "scripts", "mit-static", "src", "covers.generated.json"), "utf8"));
 
 function decodeHtmlAttr(value) {
@@ -280,8 +282,15 @@ if (hotCoverImgs.length === 1) {
   assert(/\bwidth="\d+"/.test(hotCoverImgs[0][0]) && /\bheight="\d+"/.test(hotCoverImgs[0][0]), "hot cover has width/height");
   assert(!/src="https?:\/\//.test(hotCoverImgs[0][0]), "hot cover is not a hotlink");
   const hotAlt = decodeHtmlAttr((hotCoverImgs[0][0].match(/\balt="([^"]*)"/) || [])[1] || "");
-  assert(Boolean(generatedCovers.hotEntries?.[0]?.coverOurs?.alt), "hot cover data has alt");
-  assert(hotAlt === generatedCovers.hotEntries[0].coverOurs.alt, "hot cover img alt matches cover data");
+  // Hot NO.01 cover may come from the engine snapshot (engine-data hot.json) rather than the L2 fixture.
+  engineHotCoverAlt = "";
+  try {
+    const engineHot = JSON.parse(readFileSync(join(resolveEngineDir(), "hot.json"), "utf8"));
+    engineHotCoverAlt = engineHot?.entries?.[0]?.cover?.alt || "";
+  } catch {}
+  const hotCoverAlt = generatedCovers.hotEntries?.[0]?.coverOurs?.alt || engineHotCoverAlt;
+  assert(Boolean(hotCoverAlt), "hot cover data has alt");
+  assert(hotAlt === hotCoverAlt, "hot cover img alt matches cover data");
   assert(!coverAltProblem(hotAlt), "hot cover alt is not empty, a filename, or a URL");
 } else {
   assert(!/>24 小时热度</.test(hotPage), "empty hot cover slot is not filled with a heat panel");
@@ -360,8 +369,13 @@ if (dailyCoverImgs.length === 1) {
   assert(/\bwidth="\d+"/.test(dailyCoverImgs[0][0]) && /\bheight="\d+"/.test(dailyCoverImgs[0][0]), "daily cover has width/height");
   assert(!/src="https?:\/\//.test(dailyCoverImgs[0][0]), "daily cover is not a hotlink");
   const dailyAlt = decodeHtmlAttr((dailyCoverImgs[0][0].match(/\balt="([^"]*)"/) || [])[1] || "");
-  assert(Boolean(generatedCovers.daily?.coverOurs?.alt), "daily cover data has alt");
-  assert(dailyAlt === generatedCovers.daily.coverOurs.alt, "daily cover img alt matches cover data");
+  engineDailyCoverAlt = "";
+  try {
+    engineDailyCoverAlt = JSON.parse(readFileSync(join(resolveEngineDir(), "daily.json"), "utf8"))?.cover?.alt || "";
+  } catch {}
+  const dailyCoverAlt = generatedCovers.daily?.coverOurs?.alt || engineDailyCoverAlt;
+  assert(Boolean(dailyCoverAlt), "daily cover data has alt");
+  assert(dailyAlt === dailyCoverAlt, "daily cover img alt matches cover data");
   assert(!coverAltProblem(dailyAlt), "daily cover alt is not empty, a filename, or a URL");
 }
 
@@ -803,6 +817,8 @@ const expectedCoverAlts = new Set(
     .map(([, entry]) => String(entry?.coverOurs?.alt || "").trim())
     .filter(Boolean),
 );
+// Engine-data (hot.json NO.01, daily.json) covers are rendered too; accept their alts.
+for (const alt of [engineHotCoverAlt, engineDailyCoverAlt]) if (alt) expectedCoverAlts.add(String(alt).trim());
 let coverImgMismatches = 0;
 for (const pageFile of htmlPages) {
   const html = readFileSync(pageFile, "utf8");
