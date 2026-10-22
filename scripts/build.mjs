@@ -23,7 +23,7 @@ import {
 } from "./weekly.mjs";
 import { convertWeeklyCharts, embedWeeklyChartsAsDataUri, rewriteWeeklyChartEmbeds } from "./weekly_charts.mjs";
 import { ensureReportImageFlex, replaceMermaidWithSvg } from "./mermaid_inline.mjs";
-import { assertCoverRecords, assertDistPublicCopy, assertWeeklyMetaSources, assertWeeklyReports } from "./story_digest.mjs";
+import { assertCoverRecords, assertDistPublicCopy, assertNoInternalMeta, assertWeeklyMetaSources, assertWeeklyReports } from "./story_digest.mjs";
 import { EngineDataError, resolveEngineBundle } from "./engine/resolve.mjs";
 import { publicizeBundle } from "./engine/publicize.mjs";
 import { writeRedirects } from "./redirects.mjs";
@@ -811,7 +811,10 @@ export async function buildSite() {
 
     if (!page.file) continue;
 
-    const source = prepareMarkdown(readFileSync(join(contentDir, page.file), "utf8"));
+    const rawMd = readFileSync(join(contentDir, page.file), "utf8");
+    assertNoInternalMeta(rawMd, page.file);
+    assertNoLocalPaths(rawMd, page.file);
+    const source = prepareMarkdown(rawMd);
     const html = wrapTables(
       addExplainLinks(decorateTags(marked.parse(source)), PAPERS, hrefBetween(page.path, "/papers/")).replace(
         /详见权重追踪页/g,
@@ -824,7 +827,6 @@ export async function buildSite() {
       html,
     });
 
-    const rawMd = readFileSync(join(contentDir, page.file), "utf8");
     const chart =
       page.id === "signals" ? signalsChart(rawMd)
       : page.id === "weights" ? weightsChart(rawMd)

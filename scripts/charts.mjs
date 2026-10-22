@@ -62,12 +62,20 @@ export function signalRows(md) {
   });
 }
 
+function cellText(value) {
+  return String(value || "")
+    .replace(/<[^>]+>/g, "")
+    .replace(/\*+/g, "")
+    .replace(/`+/g, "")
+    .trim();
+}
+
 export function weightsStatus(md) {
   const rows = String(md).split("\n").filter((l) => l.startsWith("|") && !/^\|\s*(模型|---)/.test(l));
   const by = {};
   for (const r of rows) {
     const c = r.split("|").map((s) => s.trim());
-    const v = c[4] || "";
+    const v = cellText(c[4]);
     const k = /^\d{4}-|^\d{1,2}-\d{1,2}|已交付|已上线/.test(v) ? "已交付" : v || "未填";
     by[k] = (by[k] || 0) + 1;
   }

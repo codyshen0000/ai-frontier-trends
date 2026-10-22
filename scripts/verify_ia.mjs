@@ -35,6 +35,8 @@ const config = JSON.parse(readFileSync(join(root, "site.config.json"), "utf8"));
 const liveRaw = readFileSync(join(root, "content", "live.html"), "utf8");
 const timelineRaw = readFileSync(join(root, "content", "timeline.html"), "utf8");
 const distDir = join(root, "dist");
+let engineHotCoverAlt = "";
+let engineDailyCoverAlt = "";
 const generatedCovers = JSON.parse(readFileSync(join(root, "scripts", "mit-static", "src", "covers.generated.json"), "utf8"));
 
 function decodeHtmlAttr(value) {
@@ -246,6 +248,11 @@ const signals = readFileSync(join(distDir, "signals", "index.html"), "utf8");
 assert(signals.includes("升级信号：出现了"), "signals intro is plain language");
 assert(signals.includes("趋势栏目"), "signals has trend sub-nav");
 assert(signals.includes(">周报<"), "signals trend sub-nav includes 周报");
+assert(signals.includes("4 个信号里 3 个已出现证据"), "signals chart matches store: 4 tables, 3 with rows");
+assert(signals.includes("2610.02967"), "signals table 2 includes Arena T2I");
+assert(signals.includes("2610.11498"), "signals table 3 includes PTD");
+assert(signals.includes("世界模型里做 RL"), "signals includes table 4");
+assert(signals.includes("2610.22192"), "Terminal-RSI remains an observation, not a table-4 row");
 
 const livePage = readFileSync(join(distDir, "live", "index.html"), "utf8");
 assert(livePage.includes("精选 · 前沿趋势"), "/live/ is the 精选 feed");
@@ -280,8 +287,15 @@ if (hotCoverImgs.length === 1) {
   assert(/\bwidth="\d+"/.test(hotCoverImgs[0][0]) && /\bheight="\d+"/.test(hotCoverImgs[0][0]), "hot cover has width/height");
   assert(!/src="https?:\/\//.test(hotCoverImgs[0][0]), "hot cover is not a hotlink");
   const hotAlt = decodeHtmlAttr((hotCoverImgs[0][0].match(/\balt="([^"]*)"/) || [])[1] || "");
-  assert(Boolean(generatedCovers.hotEntries?.[0]?.coverOurs?.alt), "hot cover data has alt");
-  assert(hotAlt === generatedCovers.hotEntries[0].coverOurs.alt, "hot cover img alt matches cover data");
+  // Hot NO.01 cover may come from the engine snapshot (engine-data hot.json) rather than the L2 fixture.
+  engineHotCoverAlt = "";
+  try {
+    const engineHot = JSON.parse(readFileSync(join(resolveEngineDir(), "hot.json"), "utf8"));
+    engineHotCoverAlt = engineHot?.entries?.[0]?.cover?.alt || "";
+  } catch {}
+  const hotCoverAlt = generatedCovers.hotEntries?.[0]?.coverOurs?.alt || engineHotCoverAlt;
+  assert(Boolean(hotCoverAlt), "hot cover data has alt");
+  assert(hotAlt === hotCoverAlt, "hot cover img alt matches cover data");
   assert(!coverAltProblem(hotAlt), "hot cover alt is not empty, a filename, or a URL");
 } else {
   assert(!/>24 小时热度</.test(hotPage), "empty hot cover slot is not filled with a heat panel");
@@ -308,9 +322,18 @@ for (const needle of ["权重跟踪", "记交付", "六件套", "低于门槛", 
 assert(!/>示例</.test(hotPage), "hot sparkline no longer writes 示例");
 assert(!/text-\[10px\] leading-none text-ink-4">示例/.test(hotPage), "hot sparkline 示例 is not 10px");
 
+const weights = readFileSync(join(distDir, "weights", "index.html"), "utf8");
+assert(weights.includes("已宣布的 6 个模型里 3 个已交付"), "weights chart counts Klein / Kling / Step 5 as delivered");
+assert(weights.includes("2026-10-15"), "weights page records 2026-10-15 deliveries");
+assert(weights.includes("Klein"), "weights page records FLUX 3 Image Klein");
+assert(weights.includes("Kling 4.0"), "weights page still lists Kling 4.0");
+assert(weights.includes("Step-5-Preview") || weights.includes("Step 5"), "weights page includes Step 5 Preview");
+assert(!weights.includes("产品本身未上线"), "Kling is no longer shown as not launched");
+
 const morePage = readFileSync(join(distDir, "more", "index.html"), "utf8");
 assert(morePage.includes("看板 Studio"), "Studio stays under 更多");
 assert(morePage.includes("推翻信号") && morePage.includes("权重待交付"), "signals and weights are under 更多");
+assert(morePage.includes("已宣布、已交付与仍待交付的权重"), "more page no longer claims all weights are pending");
 assert(morePage.includes("时间线"), "timeline is reachable from 更多");
 assert(morePage.includes("日报"), "more page lists 日报");
 assert(!morePage.includes("AIHOT") && !morePage.includes("MyHOT"), "more page has no *HOT product brand");
@@ -360,8 +383,13 @@ if (dailyCoverImgs.length === 1) {
   assert(/\bwidth="\d+"/.test(dailyCoverImgs[0][0]) && /\bheight="\d+"/.test(dailyCoverImgs[0][0]), "daily cover has width/height");
   assert(!/src="https?:\/\//.test(dailyCoverImgs[0][0]), "daily cover is not a hotlink");
   const dailyAlt = decodeHtmlAttr((dailyCoverImgs[0][0].match(/\balt="([^"]*)"/) || [])[1] || "");
-  assert(Boolean(generatedCovers.daily?.coverOurs?.alt), "daily cover data has alt");
-  assert(dailyAlt === generatedCovers.daily.coverOurs.alt, "daily cover img alt matches cover data");
+  engineDailyCoverAlt = "";
+  try {
+    engineDailyCoverAlt = JSON.parse(readFileSync(join(resolveEngineDir(), "daily.json"), "utf8"))?.cover?.alt || "";
+  } catch {}
+  const dailyCoverAlt = generatedCovers.daily?.coverOurs?.alt || engineDailyCoverAlt;
+  assert(Boolean(dailyCoverAlt), "daily cover data has alt");
+  assert(dailyAlt === dailyCoverAlt, "daily cover img alt matches cover data");
   assert(!coverAltProblem(dailyAlt), "daily cover alt is not empty, a filename, or a URL");
 }
 
@@ -382,6 +410,8 @@ assert(weeklyIndex.includes("weekly/2026-10-12/") || weeklyIndex.includes("./202
 assert(weeklyIndex.includes("2026-10-18"), "weekly index lists 2026-10-18");
 assert(weeklyIndex.includes("weekly/2026-10-18/") || weeklyIndex.includes("./2026-10-18/"), "weekly index links to 2026-10-18");
 assert(weeklyIndex.includes(">周报<"), "weekly tab is in trend sub-nav");
+assert(!existsSync(join(distDir, "weekly", "2026-10-19")), "no third weekly issue after 10-18");
+assert(!existsSync(join(root, "content", "weekly", "2026-10-19")), "content has no third weekly issue");
 
 const skinRaw = readFileSync(join(root, "src", "skin-raw.css"), "utf8");
 assert(
@@ -803,6 +833,8 @@ const expectedCoverAlts = new Set(
     .map(([, entry]) => String(entry?.coverOurs?.alt || "").trim())
     .filter(Boolean),
 );
+// Engine-data (hot.json NO.01, daily.json) covers are rendered too; accept their alts.
+for (const alt of [engineHotCoverAlt, engineDailyCoverAlt]) if (alt) expectedCoverAlts.add(String(alt).trim());
 let coverImgMismatches = 0;
 for (const pageFile of htmlPages) {
   const html = readFileSync(pageFile, "utf8");
@@ -902,6 +934,9 @@ assert(externalImgs === 0, `external images in dist are 0 (${externalImgs})`);
 const searchIndex = JSON.parse(readFileSync(join(distDir, "data", "search-index.json"), "utf8"));
 assert(!JSON.stringify(searchIndex).includes('"score"'), "search index does not copy score");
 assert(searchIndex.docs.some((d) => /FLUX/i.test(d.title) || /FLUX/i.test(d.summary)), "search index contains FLUX from real weekly/covers");
+assert(searchIndex.docs.some((d) => d.id === "weekly-2026-10-12"), "search index still includes weekly 2026-10-12");
+assert(searchIndex.docs.some((d) => d.id === "weekly-2026-10-18"), "search index still includes weekly 2026-10-18");
+assert(!searchIndex.docs.some((d) => /^weekly-/.test(d.id) && d.id !== "weekly-2026-10-12" && d.id !== "weekly-2026-10-18"), "search index has only the two archive weekly issues");
 assert(typeof searchIndex.data_as_of === "string" && searchIndex.data_as_of.length > 8, "search index has data_as_of");
 assert(typeof searchIndex.built_at === "string" && searchIndex.built_at.length > 8, "search index has built_at");
 assert(searchIndex.data_as_of !== searchIndex.built_at, "data_as_of is content time, not the same as built_at");
