@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 10
+  "rank": null
  },
  "developments": [
   {
@@ -316,6 +316,5 @@
  "related": [],
  "topics": [],
  "recommendReason": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind",
- "primaryUrl": "https://the-decoder.com/openai-acquires-orchestra-bio-to-build-ai-agents-that-speed-up-drug-development/",
- "rankDelta": -2
+ "primaryUrl": "https://the-decoder.com/openai-acquires-orchestra-bio-to-build-ai-agents-that-speed-up-drug-development/"
 }

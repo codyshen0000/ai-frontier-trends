@@ -17,7 +17,7 @@
   "newParticipants6h": 1,
   "recentReports24h": 2,
   "observationComplete": true,
-  "rank": 4
+  "rank": 5
  },
  "developments": [
   {
@@ -184,5 +184,6 @@
  "related": [],
  "topics": [],
  "recommendReason": "Uber 全员上线 ChatGPT Work（约 3 万人）",
- "primaryUrl": "https://openai.com/index/uber-chatgpt-work-rollout"
+ "primaryUrl": "https://openai.com/index/uber-chatgpt-work-rollout",
+ "rankDelta": -1
 }

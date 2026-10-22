@@ -6,6 +6,59 @@
  },
  "cards": [
   {
+   "key": "sha256:64ddfb139fec8a1c",
+   "anchorAt": "2026-10-21T04:50:00.000Z",
+   "item": {
+    "id": "sha256:64ddfb139fec8a1c",
+    "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
+    "summary": "OpenAI 与 PerturbAI、Scripps 用分布式智能体挖脑细胞数据线索。",
+    "reason": "OpenAI：数千智能体挖脑细胞数据研究线索",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-21T04:50:00.000Z",
+    "timelineAt": "2026-10-21T04:50:00.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-21-openai-ai-agents-bio-leads",
+    "originalUrl": "https://openai.com/index/scaling-ai-research-for-complex-biological-data"
+   },
+   "group": {
+    "factId": "fact-2026-10-21-openai-ai-agents-bio-leads",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:64ddfb139fec8a1c"
+    ]
+   }
+  },
+  {
+   "key": "sha256:e270f5ba4688033d",
+   "anchorAt": "2026-10-21T00:00:00.000Z",
+   "item": {
+    "id": "sha256:e270f5ba4688033d",
+    "title": "OpenAI：民主治理前沿 AI 之二——赋能网络防御者",
+    "summary": "OpenAI 治理系列：赋能网络防御与公共机构韧性。",
+    "reason": "OpenAI：前沿 AI 赋能网络防御的治理蓝图",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-21T00:00:00.000Z",
+    "timelineAt": "2026-10-21T00:00:00.000Z",
+    "category": "opinion",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-22-openai-gov-cyber-defenders",
+    "originalUrl": "https://openai.com/index/empowering-cyber-defenders"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:3e7599c6661c19f5",
    "anchorAt": "2026-10-21T00:00:00.000Z",
    "item": {
@@ -246,5 +299,5 @@
  "dayCounts": {},
  "page": 2,
  "pageCount": 2,
- "total": 29
+ "total": 31
 }

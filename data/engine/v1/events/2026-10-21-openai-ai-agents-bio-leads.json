@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 1,
   "observationComplete": true,
-  "rank": 7
+  "rank": 8
  },
  "developments": [
   {
@@ -280,5 +280,5 @@
  "topics": [],
  "recommendReason": "OpenAI：数千智能体挖脑细胞数据研究线索",
  "primaryUrl": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
- "rankDelta": -3
+ "rankDelta": -1
 }

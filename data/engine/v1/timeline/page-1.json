@@ -6,6 +6,59 @@
  },
  "cards": [
   {
+   "key": "sha256:5ddee939d5fa55a3",
+   "anchorAt": "2026-10-22T18:00:00.000Z",
+   "item": {
+    "id": "sha256:5ddee939d5fa55a3",
+    "title": "微软：发布诊断编排器，复杂病例准确率称超医生",
+    "summary": "Verge：Suleyman 称诊断工具准确率高于医生；对标 Science/微软稿。",
+    "reason": "微软 MAI-DxO：复杂病例诊断准确率称超医生",
+    "source": {
+     "name": "The Verge · AI"
+    },
+    "publishedAt": "2026-10-22T18:00:00.000Z",
+    "timelineAt": "2026-10-22T18:00:00.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-23-microsoft-mai-dxo",
+    "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence"
+   },
+   "group": {
+    "factId": "fact-2026-10-23-microsoft-mai-dxo",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:5ddee939d5fa55a3"
+    ]
+   }
+  },
+  {
+   "key": "sha256:7ea705cfe9f05665",
+   "anchorAt": "2026-10-22T17:50:09.000Z",
+   "item": {
+    "id": "sha256:7ea705cfe9f05665",
+    "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
+    "summary": "Decoder 报道；一跳确认 Google Cloud 官方博客。",
+    "reason": "Google 云推出 Agent Compute Engine 硬件隔离 mic",
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-22T17:50:09.000Z",
+    "timelineAt": "2026-10-22T17:50:09.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-23-google-agent-compute-engine",
+    "originalUrl": "https://the-decoder.com/googles-agent-compute-engine-gives-every-gemini-agent-its-own-hardware-isolated-micro-virtual-machine/"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:67297d2df9a3d7f1",
    "anchorAt": "2026-10-22T16:11:31.000Z",
    "item": {
@@ -453,59 +506,6 @@
      "sha256:95dedf578de78f3e"
     ]
    }
-  },
-  {
-   "key": "sha256:64ddfb139fec8a1c",
-   "anchorAt": "2026-10-21T04:50:00.000Z",
-   "item": {
-    "id": "sha256:64ddfb139fec8a1c",
-    "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
-    "summary": "OpenAI 与 PerturbAI、Scripps 用分布式智能体挖脑细胞数据线索。",
-    "reason": "OpenAI：数千智能体挖脑细胞数据研究线索",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-21T04:50:00.000Z",
-    "timelineAt": "2026-10-21T04:50:00.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-21-openai-ai-agents-bio-leads",
-    "originalUrl": "https://openai.com/index/scaling-ai-research-for-complex-biological-data"
-   },
-   "group": {
-    "factId": "fact-2026-10-21-openai-ai-agents-bio-leads",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:64ddfb139fec8a1c"
-    ]
-   }
-  },
-  {
-   "key": "sha256:e270f5ba4688033d",
-   "anchorAt": "2026-10-21T00:00:00.000Z",
-   "item": {
-    "id": "sha256:e270f5ba4688033d",
-    "title": "OpenAI：民主治理前沿 AI 之二——赋能网络防御者",
-    "summary": "OpenAI 治理系列：赋能网络防御与公共机构韧性。",
-    "reason": "OpenAI：前沿 AI 赋能网络防御的治理蓝图",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-21T00:00:00.000Z",
-    "timelineAt": "2026-10-21T00:00:00.000Z",
-    "category": "opinion",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-22-openai-gov-cyber-defenders",
-    "originalUrl": "https://openai.com/index/empowering-cyber-defenders"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-2.json",
@@ -513,7 +513,7 @@
   {
    "rank": 1,
    "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
-   "heat": 31.5,
+   "heat": 31.0,
    "trend": "up",
    "storyPublicId": "2026-10-21-php2shell-wiz-rce",
    "itemId": "sha256:de9db6f384cbc788",
@@ -548,7 +548,7 @@
   {
    "rank": 2,
    "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
-   "heat": 26.6,
+   "heat": 26.1,
    "trend": "up",
    "storyPublicId": "2026-10-22-anthropic-claude-duet",
    "itemId": "sha256:258d5ff776fa8f13",
@@ -574,8 +574,27 @@
   },
   {
    "rank": 3,
+   "title": "微软：发布 MAI-DxO 诊断编排器，复杂病例准确率称超医生",
+   "heat": 19.2,
+   "trend": "new",
+   "storyPublicId": "2026-10-23-microsoft-mai-dxo",
+   "itemId": "sha256:5ddee939d5fa55a3",
+   "participants": [
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2
+  },
+  {
+   "rank": 4,
    "title": "报道：Recursive 发布 Flint；vLLM 宣布 Day-0 支持",
-   "heat": 16.8,
+   "heat": 16.5,
    "trend": "up",
    "storyPublicId": "2026-10-22-recursive-flint-coding-model",
    "itemId": "sha256:3b031f6c198ac941",
@@ -596,9 +615,9 @@
    "participantCount": 3
   },
   {
-   "rank": 4,
+   "rank": 5,
    "title": "Uber 全员上线 ChatGPT Work，覆盖约 3 万名员工",
-   "heat": 14.8,
+   "heat": 14.6,
    "trend": "up",
    "storyPublicId": "2026-10-23-uber-chatgpt-work-rollout",
    "itemId": "sha256:eda525050cea8fce",
@@ -613,29 +632,10 @@
     }
    ],
    "participantCount": 2
-  },
-  {
-   "rank": 5,
-   "title": "NVIDIA：DGX Spark 官方支持 8 机集群，统一内存可达 1TB",
-   "heat": 13.6,
-   "trend": "up",
-   "storyPublicId": "2026-10-22-nvidia-dgx-spark-cluster",
-   "itemId": "sha256:a9592e53f2c7c709",
-   "participants": [
-    {
-     "name": "NVIDIA Technical Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
-    }
-   ],
-   "participantCount": 2
   }
  ],
  "dayCounts": {
-  "2026-10-23": 2,
+  "2026-10-23": 4,
   "2026-10-22": 8,
   "2026-10-21": 13,
   "2026-10-20": 3,
@@ -644,5 +644,5 @@
  },
  "page": 1,
  "pageCount": 2,
- "total": 29
+ "total": 31
 }

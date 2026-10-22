@@ -17,7 +17,7 @@
   "newParticipants6h": 1,
   "recentReports24h": 1,
   "observationComplete": true,
-  "rank": 5
+  "rank": 6
  },
  "developments": [
   {
@@ -199,5 +199,6 @@
  "related": [],
  "topics": [],
  "recommendReason": "NVIDIA：DGX Spark 官方支持 8 机集群",
- "primaryUrl": "https://www.ithome.com/1/016/148.htm"
+ "primaryUrl": "https://www.ithome.com/1/016/148.htm",
+ "rankDelta": -1
 }

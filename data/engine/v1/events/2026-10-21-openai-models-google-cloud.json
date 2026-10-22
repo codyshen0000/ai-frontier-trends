@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 6
+  "rank": 7
  },
  "developments": [
   {
@@ -245,5 +245,5 @@
  "topics": [],
  "recommendReason": "OpenAI 前沿模型入驻谷歌云 Model Garden",
  "primaryUrl": "https://openai.com/index/openai-models-google-cloud",
- "rankDelta": -3
+ "rankDelta": -1
 }

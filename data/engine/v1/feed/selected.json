@@ -8,6 +8,28 @@
  },
  "items": [
   {
+   "guid": "sha256:5ddee939d5fa55a3",
+   "title": "微软：发布诊断编排器，复杂病例准确率称超医生",
+   "summary": "Verge：Suleyman 称诊断工具准确率高于医生；对标 Science/微软稿。",
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
+   "pubDate": "2026-10-22T18:00:00.000Z",
+   "sourceName": "The Verge · AI",
+   "category": "paper",
+   "categoryLabel": "论文",
+   "eventPublicId": "2026-10-23-microsoft-mai-dxo"
+  },
+  {
+   "guid": "sha256:7ea705cfe9f05665",
+   "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
+   "summary": "Decoder 报道；一跳确认 Google Cloud 官方博客。",
+   "originalUrl": "https://the-decoder.com/googles-agent-compute-engine-gives-every-gemini-agent-its-own-hardware-isolated-micro-virtual-machine/",
+   "pubDate": "2026-10-22T17:50:09.000Z",
+   "sourceName": "The Decoder",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-10-23-google-agent-compute-engine"
+  },
+  {
    "guid": "sha256:67297d2df9a3d7f1",
    "title": "AllenAI：发布 OlmoEarth v1.3 全球卫星嵌入与探索工具",
    "summary": "OlmoEarth v1.3 卫星嵌入 + 全球预计算嵌入与浏览器探索工具。",

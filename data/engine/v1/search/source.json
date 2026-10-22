@@ -1,6 +1,52 @@
 {
- "generatedAt": "2026-10-22T19:14:00.000Z",
+ "generatedAt": "2026-10-22T19:48:00.000Z",
  "docs": [
+  {
+   "id": "sha256:dedf2896ecdb4ab5",
+   "kind": "item",
+   "title": "微软：发布 MAI-DxO 诊断编排器，复杂病例准确率称超医生",
+   "summary": "TC 同题：Science 研究 + 编排增益边界讨论。",
+   "publishedAt": "2026-10-22T18:43:53.000Z",
+   "sourceName": "TechCrunch · AI",
+   "category": "paper",
+   "selected": false,
+   "eventPublicId": "2026-10-23-microsoft-mai-dxo",
+   "originalUrl": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/"
+  },
+  {
+   "id": "2026-10-23-microsoft-mai-dxo",
+   "kind": "event",
+   "title": "微软：发布 MAI-DxO 诊断编排器，复杂病例准确率称超医生",
+   "summary": null,
+   "publishedAt": "2026-10-22T18:43:53.000Z",
+   "sourceNames": [
+    "TechCrunch · AI"
+   ],
+   "path": "/events/2026-10-23-microsoft-mai-dxo/"
+  },
+  {
+   "id": "sha256:7ea705cfe9f05665",
+   "kind": "item",
+   "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
+   "summary": "Decoder 报道；一跳确认 Google Cloud 官方博客。",
+   "publishedAt": "2026-10-22T17:50:09.000Z",
+   "sourceName": "The Decoder",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-10-23-google-agent-compute-engine",
+   "originalUrl": "https://the-decoder.com/googles-agent-compute-engine-gives-every-gemini-agent-its-own-hardware-isolated-micro-virtual-machine/"
+  },
+  {
+   "id": "2026-10-23-google-agent-compute-engine",
+   "kind": "event",
+   "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
+   "summary": null,
+   "publishedAt": "2026-10-22T17:50:09.000Z",
+   "sourceNames": [
+    "The Decoder"
+   ],
+   "path": "/events/2026-10-23-google-agent-compute-engine/"
+  },
   {
    "id": "sha256:67297d2df9a3d7f1",
    "kind": "item",

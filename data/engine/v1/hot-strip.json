@@ -2,7 +2,7 @@
  {
   "rank": 1,
   "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
-  "heat": 31.5,
+  "heat": 31.0,
   "trend": "up",
   "storyPublicId": "2026-10-21-php2shell-wiz-rce",
   "itemId": "sha256:de9db6f384cbc788",
@@ -37,7 +37,7 @@
  {
   "rank": 2,
   "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
-  "heat": 26.6,
+  "heat": 26.1,
   "trend": "up",
   "storyPublicId": "2026-10-22-anthropic-claude-duet",
   "itemId": "sha256:258d5ff776fa8f13",
@@ -63,8 +63,27 @@
  },
  {
   "rank": 3,
+  "title": "微软：发布 MAI-DxO 诊断编排器，复杂病例准确率称超医生",
+  "heat": 19.2,
+  "trend": "new",
+  "storyPublicId": "2026-10-23-microsoft-mai-dxo",
+  "itemId": "sha256:5ddee939d5fa55a3",
+  "participants": [
+   {
+    "name": "TechCrunch · AI",
+    "kind": "editorial"
+   },
+   {
+    "name": "The Verge · AI",
+    "kind": "editorial"
+   }
+  ],
+  "participantCount": 2
+ },
+ {
+  "rank": 4,
   "title": "报道：Recursive 发布 Flint；vLLM 宣布 Day-0 支持",
-  "heat": 16.8,
+  "heat": 16.5,
   "trend": "up",
   "storyPublicId": "2026-10-22-recursive-flint-coding-model",
   "itemId": "sha256:3b031f6c198ac941",
@@ -85,9 +104,9 @@
   "participantCount": 3
  },
  {
-  "rank": 4,
+  "rank": 5,
   "title": "Uber 全员上线 ChatGPT Work，覆盖约 3 万名员工",
-  "heat": 14.8,
+  "heat": 14.6,
   "trend": "up",
   "storyPublicId": "2026-10-23-uber-chatgpt-work-rollout",
   "itemId": "sha256:eda525050cea8fce",
@@ -99,25 +118,6 @@
    {
     "name": "TechCrunch · AI",
     "kind": "editorial"
-   }
-  ],
-  "participantCount": 2
- },
- {
-  "rank": 5,
-  "title": "NVIDIA：DGX Spark 官方支持 8 机集群，统一内存可达 1TB",
-  "heat": 13.6,
-  "trend": "up",
-  "storyPublicId": "2026-10-22-nvidia-dgx-spark-cluster",
-  "itemId": "sha256:a9592e53f2c7c709",
-  "participants": [
-   {
-    "name": "NVIDIA Technical Blog",
-    "kind": "editorial"
-   },
-   {
-    "name": "IT之家（全站，需关键词过滤）",
-    "kind": "signal"
    }
   ],
   "participantCount": 2

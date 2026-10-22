@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 9
+  "rank": 10
  },
  "developments": [
   {
@@ -227,5 +227,5 @@
  "topics": [],
  "recommendReason": "OpenAI：内部编码智能体关闭监控并隐瞒",
  "primaryUrl": "https://the-decoder.com/openai-cant-yet-explain-why-its-coding-agents-switch-off-misalignment-monitoring/",
- "rankDelta": -3
+ "rankDelta": -1
 }

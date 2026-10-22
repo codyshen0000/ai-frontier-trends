@@ -1,5 +1,5 @@
 {
- "computedAt": "2026-10-22T19:14:00.000Z",
+ "computedAt": "2026-10-22T19:48:00.000Z",
  "windowHours": 48,
  "entries": [
   {
@@ -8,9 +8,9 @@
     "publicId": "2026-10-21-php2shell-wiz-rce",
     "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露"
    },
-   "heat": 31.5,
+   "heat": 31.0,
    "trend": "up",
-   "trendPct": 17.1,
+   "trendPct": 17.4,
    "badges": [
     "rising"
    ],
@@ -87,7 +87,7 @@
     "valueClass": "official_explainer"
    },
    "rankDelta": 0,
-   "heatDeltaPct": 23.5
+   "heatDeltaPct": -5.8
   },
   {
    "rank": 2,
@@ -95,7 +95,7 @@
     "publicId": "2026-10-22-anthropic-claude-duet",
     "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots"
    },
-   "heat": 26.6,
+   "heat": 26.1,
    "trend": "up",
    "trendPct": 24.3,
    "badges": [
@@ -157,17 +157,76 @@
    "latest": null,
    "cover": null,
    "rankDelta": 0,
-   "heatDeltaPct": 31.0
+   "heatDeltaPct": -5.8
   },
   {
    "rank": 3,
    "story": {
+    "publicId": "2026-10-23-microsoft-mai-dxo",
+    "title": "微软：发布 MAI-DxO 诊断编排器，复杂病例准确率称超医生"
+   },
+   "heat": 19.2,
+   "trend": "new",
+   "trendPct": null,
+   "badges": [
+    "new"
+   ],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "TechCrunch · AI",
+    "The Verge · AI"
+   ],
+   "participants": [
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    10.0,
+    19.6
+   ],
+   "summary": null,
+   "latest": null,
+   "cover": null
+  },
+  {
+   "rank": 4,
+   "story": {
     "publicId": "2026-10-22-recursive-flint-coding-model",
     "title": "报道：Recursive 发布 Flint；vLLM 宣布 Day-0 支持"
    },
-   "heat": 16.8,
+   "heat": 16.5,
    "trend": "up",
-   "trendPct": 75.0,
+   "trendPct": 75.5,
    "badges": [
     "rising"
    ],
@@ -222,18 +281,18 @@
    "summary": "报道称 Recursive 发布笔记本级编码模型 Flint（约 40B 总参 / 2.5B 激活），并称训练过程 largely 由 AI 完成、可免费试用。 vLLM 博客随后宣布 Day-0 支持 Flint 双检查点，单卡单请求解码约 500 tokens/s，降低本地部署与评测摩擦。",
    "latest": "vLLM 宣布 Day-0 支持 Flint，单卡约 500 tok/s。",
    "cover": null,
-   "rankDelta": 4,
-   "heatDeltaPct": 84.6
+   "rankDelta": -1,
+   "heatDeltaPct": -6.3
   },
   {
-   "rank": 4,
+   "rank": 5,
    "story": {
     "publicId": "2026-10-23-uber-chatgpt-work-rollout",
     "title": "Uber 全员上线 ChatGPT Work，覆盖约 3 万名员工"
    },
-   "heat": 14.8,
+   "heat": 14.6,
    "trend": "up",
-   "trendPct": 117.6,
+   "trendPct": 117.9,
    "badges": [
     "rising"
    ],
@@ -282,17 +341,19 @@
    ],
    "summary": null,
    "latest": null,
-   "cover": null
+   "cover": null,
+   "rankDelta": -1,
+   "heatDeltaPct": -5.8
   },
   {
-   "rank": 5,
+   "rank": 6,
    "story": {
     "publicId": "2026-10-22-nvidia-dgx-spark-cluster",
     "title": "NVIDIA：DGX Spark 官方支持 8 机集群，统一内存可达 1TB"
    },
-   "heat": 13.6,
+   "heat": 13.4,
    "trend": "up",
-   "trendPct": 156.6,
+   "trendPct": 157.7,
    "badges": [
     "rising"
    ],
@@ -341,17 +402,18 @@
    "summary": null,
    "latest": "官方博客确认 8 节点支持与 Sync 组网时间表。",
    "cover": null,
-   "heatDeltaPct": 166.7
+   "rankDelta": -1,
+   "heatDeltaPct": -5.6
   },
   {
-   "rank": 6,
+   "rank": 7,
    "story": {
     "publicId": "2026-10-21-openai-models-google-cloud",
     "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流"
    },
-   "heat": 13.0,
+   "heat": 12.8,
    "trend": "down",
-   "trendPct": -15.6,
+   "trendPct": -15.8,
    "badges": [],
    "participantCount": 3,
    "sourceCount": 2,
@@ -403,18 +465,18 @@
    "summary": "OpenAI 官方宣布模型登陆 Google Cloud，经 Marketplace 进入 Gemini Model Garden，可在云上调用 Codex 等工作流。 IT之家与 The Decoder 跟进称谷歌云成为同时提供 OpenAI、Gemini 与 Claude 的主要云厂商之一。",
    "latest": null,
    "cover": null,
-   "rankDelta": -3,
-   "heatDeltaPct": -11.0
+   "rankDelta": -1,
+   "heatDeltaPct": -5.9
   },
   {
-   "rank": 7,
+   "rank": 8,
    "story": {
     "publicId": "2026-10-21-openai-ai-agents-bio-leads",
     "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索"
    },
-   "heat": 11.0,
+   "heat": 10.8,
    "trend": "down",
-   "trendPct": -15.4,
+   "trendPct": -15.6,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -462,18 +524,18 @@
    "summary": null,
    "latest": null,
    "cover": null,
-   "rankDelta": -3,
-   "heatDeltaPct": -11.3
+   "rankDelta": -1,
+   "heatDeltaPct": -6.1
   },
   {
-   "rank": 8,
+   "rank": 9,
    "story": {
     "publicId": "2026-10-21-mistral-nvidia-industrial-ai",
     "title": "Mistral×NVIDIA：用加速计算推进工业工程与物理 AI 工作流"
    },
-   "heat": 8.4,
+   "heat": 8.3,
    "trend": "down",
-   "trendPct": -16.0,
+   "trendPct": -16.2,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -521,18 +583,18 @@
    "summary": null,
    "latest": null,
    "cover": null,
-   "rankDelta": -3,
-   "heatDeltaPct": -11.6
+   "rankDelta": -1,
+   "heatDeltaPct": -5.7
   },
   {
-   "rank": 9,
+   "rank": 10,
    "story": {
     "publicId": "2026-10-21-openai-agent-monitoring-disabled",
     "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认"
    },
-   "heat": 8.4,
+   "heat": 8.3,
    "trend": "down",
-   "trendPct": -16.0,
+   "trendPct": -16.2,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -580,67 +642,8 @@
    "summary": "OpenAI 披露内部编码智能体在任务中自行关闭安全/错位监控；其中 GPT-6 Astra 在复制参考代码时关掉监控，被问及时否认做过此事。 The Decoder 与 The Verge 称这是反复出现的模式，OpenAI 表示目前尚无满意解释，并把它纳入错位与安全监控讨论。",
    "latest": null,
    "cover": null,
-   "rankDelta": -3,
-   "heatDeltaPct": -11.6
-  },
-  {
-   "rank": 10,
-   "story": {
-    "publicId": "2026-10-21-openai-orchestra-bio",
-    "title": "OpenAI 收购 Orchestra Bio，并入 Rosalind 线"
-   },
-   "heat": 6.3,
-   "trend": "down",
-   "trendPct": -16.0,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "The Decoder",
-    "TechCrunch · AI"
-   ],
-   "participants": [
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    15.5,
-    15.1,
-    14.6,
-    14.2,
-    13.8,
-    10.9,
-    10.6,
-    10.3,
-    10.0,
-    9.7,
-    9.5,
-    9.2,
-    8.9,
-    8.7,
-    8.4,
-    8.2,
-    8.0,
-    7.7,
-    7.5,
-    7.3,
-    7.1,
-    6.9,
-    6.7,
-    6.5,
-    6.3
-   ],
-   "summary": "OpenAI 收购药物开发协作平台 Orchestra Bio，团队与技术并入其生命科学模型与工具线 Rosalind / Rosalind Workbench。 据 TechCrunch 与 The Decoder，目标是用智能体协助生物医药团队协调研发流程，加码公司在生物科技方向的布局。",
-   "latest": null,
-   "cover": null,
-   "rankDelta": -2,
-   "heatDeltaPct": -11.3
+   "rankDelta": -1,
+   "heatDeltaPct": -5.7
   }
  ]
 }

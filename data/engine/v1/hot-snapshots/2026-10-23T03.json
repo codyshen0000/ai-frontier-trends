@@ -1,64 +1,64 @@
 {
- "computedAt": "2026-10-22T19:14:00.000Z",
+ "computedAt": "2026-10-22T19:48:00.000Z",
  "entries": [
   {
    "rank": 1,
    "publicId": "2026-10-21-php2shell-wiz-rce",
-   "heat": 31.5,
+   "heat": 31.0,
    "participantCount": 6
   },
   {
    "rank": 2,
    "publicId": "2026-10-22-anthropic-claude-duet",
-   "heat": 26.6,
+   "heat": 26.1,
    "participantCount": 4
   },
   {
    "rank": 3,
-   "publicId": "2026-10-22-recursive-flint-coding-model",
-   "heat": 16.8,
-   "participantCount": 3
-  },
-  {
-   "rank": 4,
-   "publicId": "2026-10-23-uber-chatgpt-work-rollout",
-   "heat": 14.8,
+   "publicId": "2026-10-23-microsoft-mai-dxo",
+   "heat": 19.2,
    "participantCount": 2
   },
   {
+   "rank": 4,
+   "publicId": "2026-10-22-recursive-flint-coding-model",
+   "heat": 16.5,
+   "participantCount": 3
+  },
+  {
    "rank": 5,
-   "publicId": "2026-10-22-nvidia-dgx-spark-cluster",
-   "heat": 13.6,
+   "publicId": "2026-10-23-uber-chatgpt-work-rollout",
+   "heat": 14.6,
    "participantCount": 2
   },
   {
    "rank": 6,
-   "publicId": "2026-10-21-openai-models-google-cloud",
-   "heat": 13.0,
-   "participantCount": 3
-  },
-  {
-   "rank": 7,
-   "publicId": "2026-10-21-openai-ai-agents-bio-leads",
-   "heat": 11.0,
+   "publicId": "2026-10-22-nvidia-dgx-spark-cluster",
+   "heat": 13.4,
    "participantCount": 2
   },
   {
+   "rank": 7,
+   "publicId": "2026-10-21-openai-models-google-cloud",
+   "heat": 12.8,
+   "participantCount": 3
+  },
+  {
    "rank": 8,
-   "publicId": "2026-10-21-mistral-nvidia-industrial-ai",
-   "heat": 8.4,
+   "publicId": "2026-10-21-openai-ai-agents-bio-leads",
+   "heat": 10.8,
    "participantCount": 2
   },
   {
    "rank": 9,
-   "publicId": "2026-10-21-openai-agent-monitoring-disabled",
-   "heat": 8.4,
+   "publicId": "2026-10-21-mistral-nvidia-industrial-ai",
+   "heat": 8.3,
    "participantCount": 2
   },
   {
    "rank": 10,
-   "publicId": "2026-10-21-openai-orchestra-bio",
-   "heat": 6.3,
+   "publicId": "2026-10-21-openai-agent-monitoring-disabled",
+   "heat": 8.3,
    "participantCount": 2
   }
  ]

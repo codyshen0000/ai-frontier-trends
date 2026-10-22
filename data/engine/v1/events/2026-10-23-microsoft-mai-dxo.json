@@ -1,0 +1,73 @@
+{
+ "publicId": "2026-10-23-microsoft-mai-dxo",
+ "title": "微软：发布 MAI-DxO 诊断编排器，复杂病例准确率称超医生",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-22T18:43:53.000Z",
+ "latestAt": "2026-10-22T18:43:53.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": null,
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 2,
+  "newParticipants6h": 2,
+  "recentReports24h": 2,
+  "observationComplete": true,
+  "rank": 3
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-23-microsoft-mai-dxo",
+   "title": "微软：发布 MAI-DxO 诊断编排器，复杂病例准确率称超医生",
+   "firstReportAt": "2026-10-22T18:43:53.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:dedf2896ecdb4ab5",
+    "title": "微软：发布 MAI-DxO 诊断编排器，复杂病例准确率称超医生",
+    "summary": "TC 同题：Science 研究 + 编排增益边界讨论。",
+    "source": {
+     "name": "TechCrunch · AI",
+     "firstParty": false
+    },
+    "publishedAt": "2026-10-22T18:43:53.000Z",
+    "selected": false,
+    "originalUrl": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/"
+   }
+  }
+ ],
+ "officialReports": [],
+ "timeline": [
+  {
+   "id": "sha256:dedf2896ecdb4ab5",
+   "title": "微软：发布 MAI-DxO 诊断编排器，复杂病例准确率称超医生",
+   "summary": "TC 同题：Science 研究 + 编排增益边界讨论。",
+   "source": {
+    "name": "TechCrunch · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-22T18:43:53.000Z",
+   "selected": false,
+   "originalUrl": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-22T18:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T19:00:00.000Z",
+   "heat": 19.6,
+   "participants": 2
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "微软 MAI-DxO：复杂病例诊断准确率称超医生",
+ "primaryUrl": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/"
+}
