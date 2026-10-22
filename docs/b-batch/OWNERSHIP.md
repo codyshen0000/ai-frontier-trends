@@ -35,7 +35,7 @@ B2 需要的「另 N 家」展示走数据字段（`sourceCount` / `sourceNames`
 | 生产树 | `engine-data` 分支上的 `data/engine/v1/`（内容 = 盒子 `site-data/out/`，契约 1.1） |
 | 构建读取 | `process.env.FT_ENGINE_DIR`，默认 `data/engine/v1`（相对仓库根） |
 | CI | W1 把 `engine-data` checkout 到 `FT_ENGINE_DIR`，再跑 `build:public` |
-| 本地 / QA | `FT_ENGINE_DIR=/path/to/snapshot` 指向固定快照；B0 合成样本在 `scripts/engine/__samples__/v1/`（标明 SYNTHETIC，不得当生产数据）。B2 热度复算另用真实快照 `scripts/engine/__samples__/out-1700/` 和 SYNTHETIC `heat-cases/` |
+| 本地 / QA | `FT_ENGINE_DIR=/path/to/snapshot` 指向固定快照；B0 合成样本在 `scripts/engine/__samples__/v1/`（标明 SYNTHETIC，不得当生产数据）。B2 热度复算另用真实快照 `scripts/engine/__samples__/out-1700/`、SYNTHETIC `heat-cases/` 和 py↔JS `heat-parity/` |
 | 格式 | 只认站点契约 1.1。公开 JSON **禁止 `score` 键**。封面 class 同时接受 `official_diagram` 与 `official_explainer` |
 | 坏数据回退 | `loadEngineForBuild()` 捕获 `EngineDataError`。B1 把上一份合格导出接到这里：优先 **engine-data 的上一个提交**，否则 **Pages 上一份 artifact**。都没有且已不走 fixture → 公开构建失败，**禁止回退 fixture**。B0 阶段缺目录只 warn，继续 fixture 构建 |
 

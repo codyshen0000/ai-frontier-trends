@@ -9,6 +9,9 @@
  * Formula (REMAINING-PRD-v1 §4.2 / SITE-DATA-CONTRACT 1.1):
  *   raw  = Σ 0.5^((T − last_at_h) / 24)   // one term per participant, 48h window
  *   heat = round(raw × 100) / 10
+ *
+ * Numeric contract + py↔JS diffs: docs/SITE-DATA-CONTRACT.md
+ * Shared fixture: scripts/engine/__samples__/heat-parity/cases.json
  */
 import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import { join } from "node:path";

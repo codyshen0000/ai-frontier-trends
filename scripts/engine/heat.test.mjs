@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { spawnSync } from "node:child_process";
 import { mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
@@ -12,11 +13,18 @@ import {
   displayHeat,
   displayPct,
   heatIndex,
+  hoursInWindow,
   isEligible,
   recomputeEntry,
   sparkFor,
   verifyEngineHeat,
 } from "./heat.mjs";
+import {
+  HEAT_PARITY_FIXTURE,
+  REQUIRED_COVERS,
+  loadHeatParityFixture,
+  runJsParityCase,
+} from "./heat-parity.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const CASES = JSON.parse(readFileSync(join(here, "__samples__", "heat-cases", "cases.json"), "utf8"));
@@ -344,3 +352,98 @@ describe("surge / rising badges (SYNTHETIC)", () => {
     assert.equal(now.badges.includes("surge"), false);
   });
 });
+
+describe("py↔JS heat/spark parity fixture (Task #57 slice)", () => {
+  const fixture = loadHeatParityFixture();
+  const byId = Object.fromEntries(fixture.cases.map((spec) => [spec.id, spec]));
+
+  it("is SYNTHETIC and covers the required edges", () => {
+    assert.equal(fixture.synthetic, true);
+    assert.match(readFileSync(join(here, "__samples__", "heat-parity", "SYNTHETIC"), "utf8"), /SYNTHETIC/);
+    assert.equal(HEAT_PARITY_FIXTURE.endsWith("heat-parity/cases.json"), true);
+    const covers = new Set(fixture.cases.map((spec) => spec.covers));
+    for (const need of REQUIRED_COVERS) {
+      assert.ok(covers.has(need), `missing cover ${need}`);
+    }
+  });
+
+  it("JS heat path matches fixture.js on every case", () => {
+    for (const spec of fixture.cases) {
+      const got = runJsParityCase(spec);
+      const expected = spec.js;
+      assert.equal(got.heat, expected.heat, spec.id);
+      if (expected.sparkLast !== undefined) assert.equal(got.sparkLast, expected.sparkLast, `${spec.id} sparkLast`);
+      if (expected.trend !== undefined) assert.equal(got.trend, expected.trend, `${spec.id} trend`);
+      if (expected.trendPct !== undefined) assert.equal(got.trendPct, expected.trendPct, `${spec.id} trendPct`);
+      if (expected.participantCount !== undefined) {
+        assert.equal(got.participantCount, expected.participantCount, `${spec.id} count`);
+      }
+      if (expected.badges) assert.deepEqual(got.badges, expected.badges, `${spec.id} badges`);
+      if (expected.keys) assert.deepEqual(got.keys, expected.keys, `${spec.id} keys`);
+      if (expected.heatEqualsSparkEndpoint != null) {
+        assert.equal(got.heatEqualsSparkEndpoint, expected.heatEqualsSparkEndpoint, `${spec.id} heat===spark`);
+      }
+      if (spec.raw != null && expected.displayHeatOfRaw != null) {
+        assert.equal(displayHeat(spec.raw), expected.displayHeatOfRaw, `${spec.id} displayHeat(raw)`);
+      }
+    }
+  });
+
+  it("on-hour cases assert heat === last spark point", () => {
+    const onHour = fixture.cases.filter((spec) => spec.mode === "recompute" && !/off-hour/.test(spec.id));
+    assert.ok(onHour.length >= 1);
+    for (const spec of onHour) {
+      const got = runJsParityCase(spec);
+      assert.equal(got.heat, got.sparkLast, spec.id);
+      assert.equal(got.heatEqualsSparkEndpoint, true, spec.id);
+    }
+    const endpoint = byId["spark-endpoint-on-hour"];
+    const got = runJsParityCase(endpoint);
+    assert.equal(got.heat, 14.7);
+    assert.equal(got.sparkLast, 14.7);
+  });
+
+  it("documents live-style off-hour drift: heat 14.6 vs spark last 14.7", () => {
+    const spec = byId["spark-endpoint-off-hour"];
+    const got = runJsParityCase(spec);
+    assert.equal(got.heat, 14.6);
+    assert.equal(got.sparkLast, 14.7);
+    assert.notEqual(got.heat, got.sparkLast, "current JS: heat at exact at, spark[-1] at floorUtcHour");
+    assert.equal(spec.parityStatus, "documented-fail-contract");
+    assert.match(spec.contractNote, /heat === spark endpoint/);
+  });
+
+  it("documents known py≠js diffs without failing the JS path", () => {
+    const documented = fixture.cases.filter((spec) => (spec.knownDiffs || []).length);
+    assert.ok(documented.length >= 4, "48h / rounding / trend / keys should be listed");
+    for (const spec of documented) {
+      for (const field of spec.knownDiffs) {
+        if (field === "keysInWindow" || field === "keys") continue;
+        assert.notDeepEqual(spec.js[field], spec.python[field], `${spec.id} ${field}`);
+      }
+    }
+    const at = Date.parse(byId["boundary-48h"].at);
+    const edge = Date.parse("2026-10-17T12:00:00.000Z");
+    assert.equal(hoursInWindow(at, edge), 48, "JS includes the exact-48h member");
+    assert.equal(displayHeat(1.445), 14.5);
+    assert.equal(byId["rounding-half-up"].python.displayHeatOfRaw, 14.4);
+  });
+
+  it("python stub documents those diffs (skip if no python3)", (t) => {
+    const result = spawnSync("python3", [join(here, "..", "verify", "heat-py-parity.py"), "--json"], {
+      encoding: "utf8",
+    });
+    if (result.error && result.error.code === "ENOENT") {
+      t.skip("python3 not on PATH");
+      return;
+    }
+    assert.equal(result.status, 0, result.stderr || result.stdout);
+    const payload = JSON.parse(result.stdout);
+    assert.equal(payload.ok, true, JSON.stringify(payload.cases?.flatMap((row) => row.issues)));
+    const stale = (payload.cases || []).filter((row) => !row.matchPythonExpected);
+    assert.equal(stale.length, 0);
+    const withDiffs = (payload.cases || []).filter((row) => (row.knownDiffs || []).length);
+    assert.ok(withDiffs.length >= 4);
+  });
+});
+

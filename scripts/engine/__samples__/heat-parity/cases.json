@@ -1,0 +1,332 @@
+{
+  "schema": "heat-spark-parity-v1",
+  "synthetic": true,
+  "note": "SYNTHETIC. Shared py↔JS heat/spark parity fixture. Not production. Not Remaining-A. JS source of truth is scripts/engine/heat.mjs. Python producer (site-data/heat48h.py) lives outside this repo; scripts/verify/heat-py-parity.py implements that subset for this file only.",
+  "jsSource": "scripts/engine/heat.mjs",
+  "pythonProducer": "site-data/heat48h.py (box path; not in this repo)",
+  "pythonCheck": "scripts/verify/heat-py-parity.py",
+  "contract": "docs/SITE-DATA-CONTRACT.md",
+  "ruleVersion": "heat-v1-48h-halflife24h",
+  "at": "2026-10-19T12:00:00.000Z",
+  "weights": "mit",
+  "invariants": {
+    "heatEqualsSparkEndpoint": "listed.heat must equal spark.at(-1). Live tip (hot #3, 2026-10-22) had heat 14.6 vs spark last 14.7 because heat uses exact computedAt and spark[-1] uses floorUtcHour.",
+    "jsWindow": "0 ≤ hours ≤ 48 (closed)",
+    "pythonWindow": "at−48h < t ≤ at (left-open)",
+    "jsRound": "Math.round(raw*100)/10 (half-up); raw≤0 → 0",
+    "pythonRound": "round(raw*100)/10 (banker's / half-even)",
+    "jsTrend": "round to 1 decimal first, then >10 up / <-10 down",
+    "pythonTrend": "unrounded (heat-heat6)/heat6 vs ±0.1; heat6≤0 → new"
+  },
+  "cases": [
+    {
+      "id": "boundary-48h",
+      "title": "SYNTHETIC · 48h 闭区间边界成员",
+      "mode": "recompute",
+      "covers": "48h-boundary",
+      "at": "2026-10-19T12:00:00.000Z",
+      "description": "Exactly-48h editorial is inside JS (hours≤48) and outside Python (left-open). Third member at T−12h keeps both sides eligible.",
+      "arithmetic": "JS: 0.5^(48/24)+0.5^(12/24)+1 = 0.25+0.707107+1 = 1.957107 → 19.6. Python drops the 48h term → 1.707107 → 17.1.",
+      "participants": [
+        {
+          "name": "边界报",
+          "kind": "editorial",
+          "publishedAt": "2026-10-17T12:00:00.000Z",
+          "firstAt": "2026-10-17T12:00:00.000Z",
+          "source_id": "edge"
+        },
+        {
+          "name": "午间报",
+          "kind": "editorial",
+          "publishedAt": "2026-10-19T00:00:00.000Z",
+          "firstAt": "2026-10-19T00:00:00.000Z",
+          "source_id": "mid"
+        },
+        {
+          "name": "复现笔记",
+          "kind": "editorial",
+          "publishedAt": "2026-10-19T12:00:00.000Z",
+          "firstAt": "2026-10-19T12:00:00.000Z",
+          "source_id": "notes"
+        }
+      ],
+      "js": {
+        "heat": 19.6,
+        "sparkLast": 19.6,
+        "participantCount": 3,
+        "keys": ["edge", "mid", "notes"],
+        "trend": "up",
+        "trendPct": 71.9,
+        "prevHeat": 11.4,
+        "badges": ["rising"],
+        "heatEqualsSparkEndpoint": true
+      },
+      "python": {
+        "heat": 17.1,
+        "sparkLast": 17.1,
+        "participantCount": 2,
+        "keys": ["source:edge", "source:mid", "source:notes"],
+        "keysInWindow": ["source:mid", "source:notes"],
+        "trend": "up",
+        "trendPct": 50,
+        "prevHeat": 11.4,
+        "heatEqualsSparkEndpoint": true
+      },
+      "knownDiffs": ["heat", "sparkLast", "participantCount", "keysInWindow"],
+      "parityStatus": "documented-fail"
+    },
+    {
+      "id": "rounding-half-up",
+      "title": "SYNTHETIC · .5 舍入（half-up vs 银行家）",
+      "mode": "recompute",
+      "covers": "rounding-half",
+      "at": "2026-10-19T12:00:00.000Z",
+      "description": "Exact .5 is the raw field: 1.445*100=144.5. Math.round → 14.5; Python banker's → 14.4. Participant timestamps cannot land on a binary-exact .5, so both sides display 14.5 on the recompute path.",
+      "arithmetic": "displayHeat/idx(1.445) is the documented fail. Recompute of T + T−28.034946h is 14.5 on both sides.",
+      "raw": 1.445,
+      "participants": [
+        {
+          "name": "公开实验室",
+          "kind": "editorial",
+          "publishedAt": "2026-10-19T12:00:00.000Z",
+          "firstAt": "2026-10-18T01:00:00.000Z",
+          "source_id": "lab"
+        },
+        {
+          "name": "复现笔记",
+          "kind": "editorial",
+          "publishedAt": "2026-10-18T07:57:54.194Z",
+          "firstAt": "2026-10-18T07:57:54.194Z",
+          "source_id": "notes"
+        }
+      ],
+      "js": {
+        "heat": 14.5,
+        "sparkLast": 14.5,
+        "displayHeatOfRaw": 14.5,
+        "participantCount": 2,
+        "keys": ["lab", "notes"],
+        "trend": "up",
+        "trendPct": 173.6,
+        "prevHeat": 5.3,
+        "badges": ["rising"],
+        "heatEqualsSparkEndpoint": true
+      },
+      "python": {
+        "heat": 14.5,
+        "sparkLast": 14.5,
+        "displayHeatOfRaw": 14.4,
+        "participantCount": 2,
+        "keys": ["source:lab", "source:notes"],
+        "keysInWindow": ["source:lab", "source:notes"],
+        "trend": "up",
+        "heatEqualsSparkEndpoint": true
+      },
+      "knownDiffs": ["displayHeatOfRaw"],
+      "parityStatus": "documented-fail"
+    },
+    {
+      "id": "trend-plus-10",
+      "title": "SYNTHETIC · trend +10% 边界（先舍入再比）",
+      "mode": "trendOf",
+      "covers": "trend-plus-10",
+      "description": "(23.0−20.9)/20.9 = 0.100478. JS displayPct → 10.0, 10.0>10 is false → flat. Python unrounded 0.100478>0.1 → up.",
+      "curHeat": 23.0,
+      "prevHeat": 20.9,
+      "existedBefore": true,
+      "js": {
+        "heat": 23.0,
+        "prevHeat": 20.9,
+        "trend": "flat",
+        "trendPct": 10
+      },
+      "python": {
+        "heat": 23.0,
+        "prevHeat": 20.9,
+        "trend": "up",
+        "trendPct": 10
+      },
+      "knownDiffs": ["trend"],
+      "parityStatus": "documented-fail"
+    },
+    {
+      "id": "trend-minus-10",
+      "title": "SYNTHETIC · trend −10% 边界（先舍入再比）",
+      "mode": "trendOf",
+      "covers": "trend-minus-10",
+      "description": "(18.8−20.9)/20.9 = −0.100478. JS displayPct → −10.0, −10.0<−10 is false → flat. Python unrounded −0.100478<−0.1 → down.",
+      "curHeat": 18.8,
+      "prevHeat": 20.9,
+      "existedBefore": true,
+      "js": {
+        "heat": 18.8,
+        "prevHeat": 20.9,
+        "trend": "flat",
+        "trendPct": -10
+      },
+      "python": {
+        "heat": 18.8,
+        "prevHeat": 20.9,
+        "trend": "down",
+        "trendPct": -10
+      },
+      "knownDiffs": ["trend"],
+      "parityStatus": "documented-fail"
+    },
+    {
+      "id": "key-collision",
+      "title": "SYNTHETIC · 参与方键冲突（owner 合并 vs source_id）",
+      "mode": "recompute",
+      "covers": "key-collision",
+      "at": "2026-10-19T12:00:00.000Z",
+      "description": "Two Verge rows share owner=verge-owner (Python key owner:verge-owner, keep latest) but have distinct source_id/handle (JS keys verge + verge-nightly). Plus notes. JS counts 3; Python counts 2.",
+      "arithmetic": "JS: 0.5^(1/24)+1+1 = 2.971532 → 29.7. Python: 1+1 = 2 → 20.0.",
+      "participants": [
+        {
+          "name": "The Verge",
+          "kind": "editorial",
+          "publishedAt": "2026-10-19T11:00:00.000Z",
+          "firstAt": "2026-10-19T11:00:00.000Z",
+          "source_id": "verge",
+          "owner": "verge-owner"
+        },
+        {
+          "name": "The Verge Nightly",
+          "kind": "editorial",
+          "publishedAt": "2026-10-19T12:00:00.000Z",
+          "firstAt": "2026-10-19T12:00:00.000Z",
+          "source_id": "verge-nightly",
+          "owner": "verge-owner",
+          "handle": "verge-nightly"
+        },
+        {
+          "name": "复现笔记",
+          "kind": "editorial",
+          "publishedAt": "2026-10-19T12:00:00.000Z",
+          "firstAt": "2026-10-19T12:00:00.000Z",
+          "source_id": "notes",
+          "owner": "notes-owner"
+        }
+      ],
+      "js": {
+        "heat": 29.7,
+        "sparkLast": 29.7,
+        "participantCount": 3,
+        "keys": ["verge", "verge-nightly", "notes"],
+        "trend": "new",
+        "trendPct": null,
+        "prevHeat": null,
+        "badges": ["surge", "new"],
+        "heatEqualsSparkEndpoint": true
+      },
+      "python": {
+        "heat": 20.0,
+        "sparkLast": 20.0,
+        "participantCount": 2,
+        "keys": ["owner:verge-owner", "owner:notes-owner"],
+        "keysInWindow": ["owner:verge-owner", "owner:notes-owner"],
+        "trend": "new",
+        "trendPct": null,
+        "prevHeat": 0,
+        "heatEqualsSparkEndpoint": true
+      },
+      "knownDiffs": ["heat", "sparkLast", "participantCount", "keys"],
+      "parityStatus": "documented-fail"
+    },
+    {
+      "id": "spark-endpoint-on-hour",
+      "title": "SYNTHETIC · heat === spark 终点（整点）",
+      "mode": "recompute",
+      "covers": "heat-equals-spark-endpoint",
+      "at": "2026-10-19T12:00:00.000Z",
+      "description": "On the hour, JS heat and spark[-1] share floorUtcHour(at). Product contract: these must stay equal. Live hot #3 (14.6 vs 14.7) is the off-hour twin of this pair.",
+      "arithmetic": "editorial at 12:00Z (1.0) + editorial at T−26h (0.471937) → raw=1.471937 → 14.7. spark[-1] is the 12:00Z bucket → 14.7.",
+      "participants": [
+        {
+          "name": "公开实验室",
+          "kind": "editorial",
+          "publishedAt": "2026-10-19T12:00:00.000Z",
+          "firstAt": "2026-10-18T01:00:00.000Z",
+          "source_id": "lab"
+        },
+        {
+          "name": "复现笔记",
+          "kind": "editorial",
+          "publishedAt": "2026-10-18T10:00:00.000Z",
+          "firstAt": "2026-10-18T10:00:00.000Z",
+          "source_id": "notes"
+        }
+      ],
+      "js": {
+        "heat": 14.7,
+        "sparkLast": 14.7,
+        "participantCount": 2,
+        "keys": ["lab", "notes"],
+        "trend": "up",
+        "trendPct": 162.5,
+        "prevHeat": 5.6,
+        "badges": ["rising"],
+        "heatEqualsSparkEndpoint": true
+      },
+      "python": {
+        "heat": 14.7,
+        "sparkLast": 14.7,
+        "participantCount": 2,
+        "keys": ["source:lab", "source:notes"],
+        "keysInWindow": ["source:lab", "source:notes"],
+        "trend": "up",
+        "heatEqualsSparkEndpoint": true
+      },
+      "knownDiffs": [],
+      "parityStatus": "pass"
+    },
+    {
+      "id": "spark-endpoint-off-hour",
+      "title": "SYNTHETIC · 非整点 heat≠spark 终点（现网 14.6 vs 14.7）",
+      "mode": "recompute",
+      "covers": "heat-equals-spark-endpoint-off-hour",
+      "at": "2026-10-19T12:17:00.000Z",
+      "description": "Same participants as spark-endpoint-on-hour, computedAt=12:17Z. JS heat uses exact at (14.6); spark[-1] uses 12:00Z (14.7). Matches the live hot #3 note. Contract still wants heat===spark[-1]; this case documents the current fail.",
+      "arithmetic": "12:17Z: 0.5^(0.2833/24)+0.5^(26.2833/24) ≈ 0.99185+0.4681 = 1.45995 → 14.6. spark[-1] stays the 12:00Z bucket → 14.7.",
+      "participants": [
+        {
+          "name": "公开实验室",
+          "kind": "editorial",
+          "publishedAt": "2026-10-19T12:00:00.000Z",
+          "firstAt": "2026-10-18T01:00:00.000Z",
+          "source_id": "lab"
+        },
+        {
+          "name": "复现笔记",
+          "kind": "editorial",
+          "publishedAt": "2026-10-18T10:00:00.000Z",
+          "firstAt": "2026-10-18T10:00:00.000Z",
+          "source_id": "notes"
+        }
+      ],
+      "js": {
+        "heat": 14.6,
+        "sparkLast": 14.7,
+        "participantCount": 2,
+        "keys": ["lab", "notes"],
+        "trend": "up",
+        "trendPct": 160.7,
+        "prevHeat": 5.6,
+        "badges": ["rising"],
+        "heatEqualsSparkEndpoint": false
+      },
+      "python": {
+        "heat": 14.6,
+        "sparkLast": 14.7,
+        "participantCount": 2,
+        "keys": ["source:lab", "source:notes"],
+        "keysInWindow": ["source:lab", "source:notes"],
+        "trend": "up",
+        "heatEqualsSparkEndpoint": false
+      },
+      "knownDiffs": [],
+      "parityStatus": "documented-fail-contract",
+      "contractNote": "Product: heat === spark endpoint. Current JS and heat48h.py both compute heat at exact `at` and spark[-1] at the floored hour, so they agree with each other and both violate the contract when `at` is off the hour."
+    }
+  ]
+}

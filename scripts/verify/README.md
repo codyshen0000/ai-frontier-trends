@@ -37,6 +37,8 @@ FT_ENGINE_DIR=scripts/engine/__samples__/v1 node scripts/verify/b2-redirects.mjs
 
 无 engine 目录时 B2 门 **skip**（fixture 构建不失败）。有 `hot.json` 时复算误差 >0.1 失败。
 
+Python 热度子集检查 `heat-py-parity.py` **不是**注册表门（无 `export function verify`）。喂 `scripts/engine/__samples__/heat-parity/cases.json`，对照 `fixture.python`。JS 侧由 `scripts/engine/heat.test.mjs` 覆盖。
+
 ## 各路要加的门
 
 | 文件 | 路 | 内容 |
