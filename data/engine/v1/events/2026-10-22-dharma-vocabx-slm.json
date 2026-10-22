@@ -8,7 +8,7 @@
  "latestAt": "2026-10-21T17:35:36.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": "Hugging Face 博客介绍 Dharma VocabX：通过为具体应用特化词表，称在真实场景可显著降低小语言模型推理成本。",
+ "summary": "Dharma-AI 在 Hugging Face 介绍 VocabX：不为换模型，而为垂直场景特化词表，称可把小模型实测推理成本砍约 77%。 思路是按「写出比读入更贵」给词表改权重，压缩领域里反复出现的输出片段，并丢掉任务几乎用不到的词条；同基座同数据只换 tokenizer 即可生效。",
  "excerpt": null,
  "latest": null,
  "latestReport": null,

@@ -8,7 +8,7 @@
  "latestAt": "2026-10-21T17:58:42.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": "Hugging Face 博客介绍 Microduck 与 Isaac Lab 3.0：在仿真中训练、再部署到真实机器人的流程。",
+ "summary": "NVIDIA 与 Hugging Face 博客介绍：用 Isaac Lab 3.0 在仿真里训练 Microduck 双足行走策略，再部署到真实机器人。 材料强调仿真并行训练、策略评估后上真机；面向开源双足平台把「仿真到真机」流程跑通，降低从训练到部署的门槛。",
  "excerpt": null,
  "latest": null,
  "latestReport": null,

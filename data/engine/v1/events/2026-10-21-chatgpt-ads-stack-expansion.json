@@ -8,7 +8,7 @@
  "latestAt": "2026-10-21T13:00:00.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": "OpenAI 介绍为信任与相关性设计的 LLM 广告栈：广告与回答隔离、理解对话意图。同日宣布 ChatGPT Ads 扩展到 26 个新国家，称逾 10 万广告主用过该平台。",
+ "summary": "OpenAI 宣布 ChatGPT Ads 再扩 26 国，并称逾 10 万广告主用过该平台；同步介绍为对话场景新建的 LLM-powered 广告栈。 设计重点是广告与回答隔离、跨多轮理解意图后再检索排序，并标明赞助、不向广告主出售用户数据，以便在扩覆盖时保住信任与相关性。",
  "excerpt": null,
  "latest": "ChatGPT Ads 扩展到 26 国，广告主规模称逾 10 万。",
  "latestReport": null,

@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-22T17:26:00.000Z",
+ "generatedAt": "2026-10-22T17:35:00.000Z",
  "docs": [
   {
    "id": "sha256:37719ab40890fac2",
@@ -129,7 +129,7 @@
    "id": "2026-10-22-nvidia-microduck-isaac-lab",
    "kind": "event",
    "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
-   "summary": "Hugging Face 博客介绍 Microduck 与 Isaac Lab 3.0：在仿真中训练、再部署到真实机器人的流程。",
+   "summary": "NVIDIA 与 Hugging Face 博客介绍：用 Isaac Lab 3.0 在仿真里训练 Microduck 双足行走策略，再部署到真实机器人。 材料强调仿真并行训练、策略评估后上真机；面向开源双足平台把「仿真到真机」流程跑通，降低从训练到部署的门槛。",
    "publishedAt": "2026-10-21T17:58:42.000Z",
    "sourceNames": [
     "Hugging Face Blog"
@@ -152,7 +152,7 @@
    "id": "2026-10-22-dharma-vocabx-slm",
    "kind": "event",
    "title": "VocabX：专用词表称可把小模型推理成本砍约 77%",
-   "summary": "Hugging Face 博客介绍 Dharma VocabX：通过为具体应用特化词表，称在真实场景可显著降低小语言模型推理成本。",
+   "summary": "Dharma-AI 在 Hugging Face 介绍 VocabX：不为换模型，而为垂直场景特化词表，称可把小模型实测推理成本砍约 77%。 思路是按「写出比读入更贵」给词表改权重，压缩领域里反复出现的输出片段，并丢掉任务几乎用不到的词条；同基座同数据只换 tokenizer 即可生效。",
    "publishedAt": "2026-10-21T17:35:36.000Z",
    "sourceNames": [
     "Hugging Face Blog"
@@ -175,7 +175,7 @@
    "id": "2026-10-22-google-ai-maternal-ultrasound",
    "kind": "event",
    "title": "谷歌：用 AI 辅助一线孕产超声，服务基层母婴筛查",
-   "summary": "Google Research 介绍 AI 辅助超声方案，面向一线母婴护理，帮助在资源有限场景做筛查与决策支持。",
+   "summary": "Google Research 介绍 AI-assisted 超声方案：一线非专科人员用低成本探头按固定轨迹做扫描，由模型估孕周，服务基层母婴筛查。 前瞻多中心对照称，该法在不同诊所与硬件上与专家生物测量相当，并在未本地微调的外部站点仍保持接近表现，意在扩大产检超声可及性。",
    "publishedAt": "2026-10-21T16:23:53.000Z",
    "sourceNames": [
     "Google Research Blog"
@@ -221,7 +221,7 @@
    "id": "2026-10-21-ibm-granite-speech-5",
    "kind": "event",
    "title": "IBM Granite Speech 5.0：更快更准的转写、翻译与归因",
-   "summary": "Hugging Face 博客介绍 IBM Granite Speech 5.0，称在转写、翻译与说话人归因上更快更准。",
+   "summary": null,
    "publishedAt": "2026-10-21T14:58:18.000Z",
    "sourceNames": [
     "Hugging Face Blog"
@@ -315,7 +315,7 @@
    "id": "2026-10-21-chatgpt-ads-stack-expansion",
    "kind": "event",
    "title": "OpenAI 详解 ChatGPT 广告栈，并扩至 26 国、广告主破十万",
-   "summary": "OpenAI 介绍为信任与相关性设计的 LLM 广告栈：广告与回答隔离、理解对话意图。同日宣布 ChatGPT Ads 扩展到 26 个新国家，称逾 10 万广告主用过该平台。",
+   "summary": "OpenAI 宣布 ChatGPT Ads 再扩 26 国，并称逾 10 万广告主用过该平台；同步介绍为对话场景新建的 LLM-powered 广告栈。 设计重点是广告与回答隔离、跨多轮理解意图后再检索排序，并标明赞助、不向广告主出售用户数据，以便在扩覆盖时保住信任与相关性。",
    "publishedAt": "2026-10-21T13:00:00.000Z",
    "sourceNames": [
     "OpenAI News"
@@ -338,7 +338,7 @@
    "id": "2026-10-21-nvidia-kumo-forecast",
    "kind": "event",
    "title": "NVIDIA Kumo Forecast：预训练时序表征 + 历史模式检索",
-   "summary": "Hugging Face 博客介绍 NVIDIA Kumo Forecast：组合预训练时序表征与历史模式检索做预测。 同系列随后发布 Kumo Relational：称无需训练即可在关系数据上优于监督机器学习。",
+   "summary": "NVIDIA 在 Hugging Face 介绍 Kumo Forecast：组合 Pretrained Time-Series Representations 与 Historical Pattern Retrieval，并带 Interpretability。 直接预测路径用预训练表征估未来值；可选检索路径再从历史上下文取近邻模式融合。面向多变量时序场景，开发者可按视界与是否启用检索对照评估。",
    "publishedAt": "2026-10-21T12:51:24.000Z",
    "sourceNames": [
     "Hugging Face Blog"

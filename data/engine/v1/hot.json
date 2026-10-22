@@ -1,5 +1,5 @@
 {
- "computedAt": "2026-10-22T17:26:00.000Z",
+ "computedAt": "2026-10-22T17:35:00.000Z",
  "windowHours": 48,
  "entries": [
   {
@@ -8,9 +8,9 @@
     "publicId": "2026-10-21-php2shell-wiz-rce",
     "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露"
    },
-   "heat": 23.8,
+   "heat": 23.7,
    "trend": "down",
-   "trendPct": -15.9,
+   "trendPct": -16.0,
    "badges": [],
    "participantCount": 5,
    "sourceCount": 4,
@@ -80,7 +80,7 @@
     "valueClass": "official_explainer"
    },
    "rankDelta": 0,
-   "heatDeltaPct": -6.7
+   "heatDeltaPct": -7.1
   },
   {
    "rank": 2,
@@ -90,7 +90,7 @@
    },
    "heat": 18.9,
    "trend": "down",
-   "trendPct": -16.0,
+   "trendPct": -15.6,
    "badges": [],
    "participantCount": 3,
    "sourceCount": 2,
@@ -151,7 +151,7 @@
     "publicId": "2026-10-21-openai-models-google-cloud",
     "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流"
    },
-   "heat": 13.7,
+   "heat": 13.6,
    "trend": "down",
    "trendPct": -16.0,
    "badges": [],
@@ -206,7 +206,7 @@
    "latest": null,
    "cover": null,
    "rankDelta": 0,
-   "heatDeltaPct": -6.2
+   "heatDeltaPct": -6.8
   },
   {
    "rank": 4,
@@ -214,9 +214,9 @@
     "publicId": "2026-10-21-openai-ai-agents-bio-leads",
     "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索"
    },
-   "heat": 11.6,
+   "heat": 11.5,
    "trend": "down",
-   "trendPct": -15.3,
+   "trendPct": -16.1,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -265,7 +265,7 @@
    "latest": null,
    "cover": null,
    "rankDelta": 0,
-   "heatDeltaPct": -6.5
+   "heatDeltaPct": -7.3
   },
   {
    "rank": 5,
@@ -275,7 +275,7 @@
    },
    "heat": 8.9,
    "trend": "down",
-   "trendPct": -16.0,
+   "trendPct": -15.2,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -332,9 +332,9 @@
     "publicId": "2026-10-21-openai-agent-monitoring-disabled",
     "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认"
    },
-   "heat": 8.9,
+   "heat": 8.8,
    "trend": "down",
-   "trendPct": -15.2,
+   "trendPct": -16.2,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -383,7 +383,7 @@
    "latest": null,
    "cover": null,
    "rankDelta": 0,
-   "heatDeltaPct": -6.3
+   "heatDeltaPct": -7.4
   },
   {
    "rank": 7,
@@ -391,9 +391,9 @@
     "publicId": "2026-10-22-recursive-flint-coding-model",
     "title": "报道：Recursive 发布 Flint；vLLM 宣布 Day-0 支持"
    },
-   "heat": 8.5,
+   "heat": 8.4,
    "trend": "down",
-   "trendPct": -15.8,
+   "trendPct": -16.0,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -442,7 +442,7 @@
    "latest": "vLLM 宣布 Day-0 支持 Flint，单卡约 500 tok/s。",
    "cover": null,
    "rankDelta": 0,
-   "heatDeltaPct": -6.6
+   "heatDeltaPct": -7.7
   },
   {
    "rank": 8,
@@ -452,7 +452,7 @@
    },
    "heat": 6.6,
    "trend": "down",
-   "trendPct": -16.5,
+   "trendPct": -15.4,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,

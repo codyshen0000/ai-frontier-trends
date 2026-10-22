@@ -8,7 +8,7 @@
  "latestAt": "2026-10-21T16:23:53.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": "Google Research 介绍 AI 辅助超声方案，面向一线母婴护理，帮助在资源有限场景做筛查与决策支持。",
+ "summary": "Google Research 介绍 AI-assisted 超声方案：一线非专科人员用低成本探头按固定轨迹做扫描，由模型估孕周，服务基层母婴筛查。 前瞻多中心对照称，该法在不同诊所与硬件上与专家生物测量相当，并在未本地微调的外部站点仍保持接近表现，意在扩大产检超声可及性。",
  "excerpt": null,
  "latest": null,
  "latestReport": null,

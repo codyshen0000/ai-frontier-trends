@@ -8,7 +8,7 @@
  "latestAt": "2026-10-21T12:51:24.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": "Hugging Face 博客介绍 NVIDIA Kumo Forecast：组合预训练时序表征与历史模式检索做预测。 同系列随后发布 Kumo Relational：称无需训练即可在关系数据上优于监督机器学习。",
+ "summary": "NVIDIA 在 Hugging Face 介绍 Kumo Forecast：组合 Pretrained Time-Series Representations 与 Historical Pattern Retrieval，并带 Interpretability。 直接预测路径用预训练表征估未来值；可选检索路径再从历史上下文取近邻模式融合。面向多变量时序场景，开发者可按视界与是否启用检索对照评估。",
  "excerpt": null,
  "latest": null,
  "latestReport": null,
