@@ -11,6 +11,7 @@ import { extractTimelineLede } from "./extract.mjs";
 import { isValuableCoverClass } from "./cover_rules.mjs";
 import { copyAvatarCache } from "./avatar_icons.mjs";
 import { publicizeBundle, isPublicHttpUrl, stripScore as stripScoreDeep } from "./engine/publicize.mjs";
+import { countDays } from "./day-key.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const SITE = "前沿趋势";
@@ -481,11 +482,7 @@ export function writeTimelinePages(outDir, cards, { builtAt, dataAsOf }) {
     const dir = join(outDir, "data", "timeline", filter);
     mkdirSync(dir, { recursive: true });
     const pages = Math.max(1, Math.ceil(list.length / PAGE_SIZE));
-    const day_counts = {};
-    for (const card of list) {
-      const day = String(card.anchorAt || "").slice(0, 10);
-      if (day) day_counts[day] = (day_counts[day] || 0) + 1;
-    }
+    const day_counts = countDays(list);
     writeJson(join(dir, "index.json"), {
       v: 1,
       filter,
