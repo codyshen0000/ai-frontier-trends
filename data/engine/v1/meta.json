@@ -4,9 +4,9 @@
  "mode": "production",
  "data_as_of": "2026-10-23T01:05:00+08:00",
  "data_as_of_label": "数据截至 2026-10-23 01:05（北京时间）",
- "generated_at": "2026-10-23T01:19:00+08:00",
+ "generated_at": "2026-10-23T01:26:00+08:00",
  "hot_rule_version": "heat-v1-48h-halflife24h (前沿情报 heat48h.py 1.1)",
- "hot_computed_at": "2026-10-23T01:19:00+08:00",
+ "hot_computed_at": "2026-10-23T01:26:00+08:00",
  "window_hours": 48,
  "spark_points": 25,
  "page_size": 20,
@@ -26,7 +26,7 @@
  "last_round": {
   "batch_id": "2026-10-23T0135",
   "status": "partial",
-  "finished_at": "2026-10-23T01:17:38+08:00"
+  "finished_at": "2026-10-23T01:25:25+08:00"
  },
  "batches": [
   {

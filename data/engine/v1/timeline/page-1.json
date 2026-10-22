@@ -520,7 +520,7 @@
   {
    "rank": 1,
    "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
-   "heat": 23.9,
+   "heat": 23.8,
    "trend": "down",
    "storyPublicId": "2026-10-21-php2shell-wiz-rce",
    "itemId": "sha256:de9db6f384cbc788",
@@ -551,7 +551,7 @@
   {
    "rank": 2,
    "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
-   "heat": 19.0,
+   "heat": 18.9,
    "trend": "down",
    "storyPublicId": "2026-10-22-anthropic-claude-duet",
    "itemId": "sha256:258d5ff776fa8f13",

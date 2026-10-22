@@ -1,16 +1,16 @@
 {
- "computedAt": "2026-10-22T17:19:00.000Z",
+ "computedAt": "2026-10-22T17:26:00.000Z",
  "entries": [
   {
    "rank": 1,
    "publicId": "2026-10-21-php2shell-wiz-rce",
-   "heat": 23.9,
+   "heat": 23.8,
    "participantCount": 5
   },
   {
    "rank": 2,
    "publicId": "2026-10-22-anthropic-claude-duet",
-   "heat": 19.0,
+   "heat": 18.9,
    "participantCount": 3
   },
   {

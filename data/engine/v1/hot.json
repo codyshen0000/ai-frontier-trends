@@ -1,5 +1,5 @@
 {
- "computedAt": "2026-10-22T17:19:00.000Z",
+ "computedAt": "2026-10-22T17:26:00.000Z",
  "windowHours": 48,
  "entries": [
   {
@@ -8,9 +8,9 @@
     "publicId": "2026-10-21-php2shell-wiz-rce",
     "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露"
    },
-   "heat": 23.9,
+   "heat": 23.8,
    "trend": "down",
-   "trendPct": -15.8,
+   "trendPct": -15.9,
    "badges": [],
    "participantCount": 5,
    "sourceCount": 4,
@@ -80,7 +80,7 @@
     "valueClass": "official_explainer"
    },
    "rankDelta": 0,
-   "heatDeltaPct": -6.3
+   "heatDeltaPct": -6.7
   },
   {
    "rank": 2,
@@ -88,9 +88,9 @@
     "publicId": "2026-10-22-anthropic-claude-duet",
     "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots"
    },
-   "heat": 19.0,
+   "heat": 18.9,
    "trend": "down",
-   "trendPct": -15.9,
+   "trendPct": -16.0,
    "badges": [],
    "participantCount": 3,
    "sourceCount": 2,
@@ -143,7 +143,7 @@
    "latest": null,
    "cover": null,
    "rankDelta": 0,
-   "heatDeltaPct": -6.4
+   "heatDeltaPct": -6.9
   },
   {
    "rank": 3,
@@ -216,7 +216,7 @@
    },
    "heat": 11.6,
    "trend": "down",
-   "trendPct": -15.9,
+   "trendPct": -15.3,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -334,7 +334,7 @@
    },
    "heat": 8.9,
    "trend": "down",
-   "trendPct": -16.0,
+   "trendPct": -15.2,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,

@@ -5,30 +5,72 @@
  "title": "AI日报 · 2026-10-23",
  "generatedAt": "2026-10-22T17:17:09.000Z",
  "lead": {
-  "title": "DeepSeek 开源生产推理框架 DeepInfer",
-  "leadParagraph": "DeepSeek 以 Apache-2.0 开源生产推理框架 DeepInfer，首版面向 V4.1-Flash 离线推理：含 FlashMLA/DeepGEMM、Attention DP 与 MoE EP+EPLB、推测解码与结构化输出，支持 SM100 与昇腾 950；KV/PD 分离尚未开源。基于 vLLM。"
+  "title": "Baseten：开源决策模型 mammoth-1 / elephant-1",
+  "leadParagraph": "Baseten Base Labs 开源决策模型 mammoth-1（27B）与 elephant-1（9B）：不生成文本，只输出选项概率分布，用于工单路由、反钓鱼与护栏。官方称 mammoth-1 居 Jev Decision Index 208 模型之首；基于 Qwen3.5 后训练，API 可试用一周。"
  },
- "leadItemId": "sha256:be38b11f937cd76c",
+ "leadItemId": "sha256:8cfd997cf9a921e4",
  "overview": "10-23 预填：主文升入 Baseten mammoth/elephant、vLLM Humming、DeepSeek DeepInfer 三件一手交付。快讯预填 8 条待早轮合并至 ≥20。目标抬升 sourcesCount/firstParty（R1 上站后复测）。",
  "highlights": [
   {
-   "itemId": "sha256:be38b11f937cd76c",
-   "title": "DeepSeek 开源生产推理框架 DeepInfer",
-   "summary": "DeepSeek 以 Apache-2.0 开源生产推理框架 DeepInfer，首版面向 V4.1-Flash 离线推理：含 FlashMLA/DeepGEMM、Attention DP 与 MoE EP+EPLB、推测解码与结构化输出，支持 SM100 与昇腾 950；KV/PD 分离尚未开源。基于 vLLM。",
-   "sourceName": "GitHub · deepseek-ai/DeepInfer",
-   "sourceUrl": "https://github.com/deepseek-ai/DeepInfer",
+   "itemId": "sha256:8cfd997cf9a921e4",
+   "title": "Baseten：开源决策模型 mammoth-1 / elephant-1",
+   "summary": "Baseten Base Labs 开源决策模型 mammoth-1（27B）与 elephant-1（9B）：不生成文本，只输出选项概率分布，用于工单路由、反钓鱼与护栏。官方称 mammoth-1 居 Jev Decision Index 208 模型之首；基于 Qwen3.5 后训练，API 可试用一周。",
+   "sourceName": "sha256:8cfd997cf9a921e4",
+   "sourceUrl": "https://www.baseten.co/blog/the-best-decision-models-in-the-world-mammoth-1-and-elephant-1/",
    "sourceIconUrl": null,
    "firstParty": true,
-   "publishedAt": "2026-10-20T09:30:19.000Z",
+   "publishedAt": "2026-10-21T16:58:52.000Z",
    "available": true,
-   "otherSources": 3
+   "otherSources": 0
+  },
+  {
+   "itemId": "sha256:3e7599c6661c19f5",
+   "title": "vLLM×蚂蚁：开源量化推理内核库 Humming",
+   "summary": "蚂蚁与 vLLM 社区开源量化推理内核库 Humming：统一量化表示并以 JIT 组装 CUDA 组件，覆盖 Turing 起 GPU 与 WNA16/W8A8/W4A*。官博称多场景快于 Marlin/FlashInfer/DeepGEMM；vLLM≥0.29 可启用，八卡 H20 吞吐约升 14%–43%。",
+   "sourceName": "vLLM Blog",
+   "sourceUrl": "https://vllm.ai/blog/2026-10-21-humming",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-21T00:00:00.000Z",
+   "available": true,
+   "otherSources": 0
   }
  ],
  "sections": [
   {
+   "label": "其他",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:8cfd997cf9a921e4",
+     "title": "Baseten：开源决策模型 mammoth-1 / elephant-1",
+     "summary": "Baseten Base Labs 开源决策模型 mammoth-1（27B）与 elephant-1（9B）：不生成文本，只输出选项概率分布，用于工单路由、反钓鱼与护栏。官方称 mammoth-1 居 Jev Decision Index 208 模型之首；基于 Qwen3.5 后训练，API 可试用一周。",
+     "sourceName": "sha256:8cfd997cf9a921e4",
+     "sourceUrl": "https://www.baseten.co/blog/the-best-decision-models-in-the-world-mammoth-1-and-elephant-1/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-21T16:58:52.000Z",
+     "available": true,
+     "otherSources": 0
+    }
+   ]
+  },
+  {
    "label": "产品",
    "summary": null,
    "items": [
+    {
+     "itemId": "sha256:3e7599c6661c19f5",
+     "title": "vLLM×蚂蚁：开源量化推理内核库 Humming",
+     "summary": "蚂蚁与 vLLM 社区开源量化推理内核库 Humming：统一量化表示并以 JIT 组装 CUDA 组件，覆盖 Turing 起 GPU 与 WNA16/W8A8/W4A*。官博称多场景快于 Marlin/FlashInfer/DeepGEMM；vLLM≥0.29 可启用，八卡 H20 吞吐约升 14%–43%。",
+     "sourceName": "vLLM Blog",
+     "sourceUrl": "https://vllm.ai/blog/2026-10-21-humming",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-21T00:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    },
     {
      "itemId": "sha256:be38b11f937cd76c",
      "title": "DeepSeek 开源生产推理框架 DeepInfer",
@@ -40,18 +82,6 @@
      "publishedAt": "2026-10-20T09:30:19.000Z",
      "available": true,
      "otherSources": 3
-    },
-    {
-     "itemId": "sha256:3e7599c6661c19f5",
-     "title": "vLLM 开源 Humming：面向量化推理的内核库",
-     "summary": "vLLM 博客宣布与蚂蚁集团社区合作开源 Humming，面向量化推理的灵活内核库，覆盖多种 GPU 与量化格式，并给出 dense/MoE 性能与 vLLM 集成说明。 属推理栈基础设施更新，可直接降低量化部署摩擦。",
-     "sourceName": "vLLM Blog",
-     "sourceUrl": "https://vllm.ai/blog/2026-10-21-humming",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-21T00:00:00.000Z",
-     "available": true,
-     "otherSources": 0
     },
     {
      "itemId": "sha256:7decc1c5c0496d6c",
@@ -170,24 +200,6 @@
      "sourceIconUrl": null,
      "firstParty": true,
      "publishedAt": "2026-10-20T20:03:10.000Z",
-     "available": true,
-     "otherSources": 0
-    }
-   ]
-  },
-  {
-   "label": "观点",
-   "summary": null,
-   "items": [
-    {
-     "itemId": "sha256:e270f5ba4688033d",
-     "title": "OpenAI：民主治理前沿 AI 之二——赋能网络防御者",
-     "summary": "OpenAI 发布治理系列其二，提出用前沿 AI、更强护栏与现代化安全能力赋能网络防御与公共机构韧性。",
-     "sourceName": "OpenAI News",
-     "sourceUrl": "https://openai.com/index/empowering-cyber-defenders",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-21T00:00:00.000Z",
      "available": true,
      "otherSources": 0
     }
