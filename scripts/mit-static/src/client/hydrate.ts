@@ -1,6 +1,7 @@
 /** First-screen hydrate for 精选 / 热点 / 日报 / 搜索 / 收藏. No React. */
 
 import { asofPlainText, formatBeijing } from "../asof-copy";
+import { cardDayKey, dayKey } from "../../../day-key.mjs";
 import { cardHref as hrefCard } from "./site-href.mjs";
 
 type Star = { id: string; title: string; url: string; source: string; date: string; savedAt: string };
@@ -363,7 +364,9 @@ function escapeHtml(value: string) {
 function dayLabel(day: string) {
   const [y, m, d] = day.split("-").map(Number);
   if (!y || !m || !d) return day;
-  return `${m}月${d}日`;
+  const date = `${m}月${d}日`;
+  const today = dayKey(cfg.dataAsOf || Date.now());
+  return today && day === today ? `今天 · ${date}` : date;
 }
 
 const timelineState = {
@@ -425,7 +428,7 @@ function ingestPage(page: PageJson) {
   for (const card of page.cards || []) {
     if (!card?.key || !card.item?.id || timelineState.keys.has(card.key)) continue;
     timelineState.keys.add(card.key);
-    const day = (card.anchorAt || "").slice(0, 10);
+    const day = cardDayKey(card);
     if (!day) continue;
     const pack = timelineState.days.get(day) || { count: page.day_counts?.[day] || 0, cards: [] };
     pack.cards.push({ ...card, item: dropScore(card.item) });

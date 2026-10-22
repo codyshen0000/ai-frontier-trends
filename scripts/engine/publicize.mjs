@@ -3,6 +3,7 @@
  * Hide empty fields, drop invalid covers, strip score, never emit fixture ids.
  */
 import { publicIconFor } from "../avatar_icons.mjs";
+import { countDays } from "../day-key.mjs";
 import { groupByEvent } from "./groupByEvent.mjs";
 import { indexDailyCites, indexEvents, pickCardSummary, thickenFeedItems } from "./card-summary.mjs";
 import { isAcceptedCoverClass } from "./loader.mjs";
@@ -355,6 +356,8 @@ export function publicizeBundle(bundle, meta = {}) {
   site.timeline.hot = site.timeline.hot?.length ? site.timeline.hot : site.hotStrip;
   site.itemUrls = collectItemUrls(bundle, [...site.timeline.cards, ...(site.allTimeline.cards || [])]);
   if (!site.allTimeline.cards.length) site.allTimeline.cards = site.timeline.cards;
+  site.timeline.dayCounts = countDays(site.timeline.cards);
+  site.allTimeline.dayCounts = countDays(site.allTimeline.cards);
   attachAvatarIcons(site, bundle, meta);
   const publicSite = scrubForbiddenHeatCopyDeep(scrubFixtureTitleNeedles(site));
   assertPublicSite(publicSite);
