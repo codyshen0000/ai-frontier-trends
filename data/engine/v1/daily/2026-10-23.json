@@ -3,13 +3,13 @@
  "key": "2026-10-23",
  "issueNumber": 5,
  "title": "AI日报 · 2026-10-23",
- "generatedAt": "2026-10-22T17:17:09.000Z",
+ "generatedAt": "2026-10-22T19:11:45.000Z",
  "lead": {
   "title": "Baseten：开源决策模型 mammoth-1 / elephant-1",
   "leadParagraph": "Baseten Base Labs 开源决策模型 mammoth-1（27B）与 elephant-1（9B）：不生成文本，只输出选项概率分布，用于工单路由、反钓鱼与护栏。官方称 mammoth-1 居 Jev Decision Index 208 模型之首；基于 Qwen3.5 后训练，API 可试用一周。"
  },
  "leadItemId": "sha256:8cfd997cf9a921e4",
- "overview": "10-23 预填：主文升入 Baseten mammoth/elephant、vLLM Humming、DeepSeek DeepInfer 三件一手交付。快讯预填 8 条待早轮合并至 ≥20。目标抬升 sourcesCount/firstParty（R1 上站后复测）。",
+ "overview": "10-23 预填：主文升入 Baseten mammoth/elephant、vLLM Humming、DeepSeek DeepInfer 三件一手交付。快讯预填 8 条待早轮合并至 ≥20。目标抬升 sourcesCount/firstParty（R1 上站后复测）。| #51 0312：补第14源 rss-simon-willison（Agent Skills→AAIF）。",
  "highlights": [
   {
    "itemId": "sha256:8cfd997cf9a921e4",
@@ -96,6 +96,18 @@
      "otherSources": 3
     },
     {
+     "itemId": "sha256:ee487a66d7e4ee85",
+     "title": "Anthropic：将 Agent Skills 捐赠给 Linux 基金会 AAIF",
+     "summary": "Anthropic 将 Agent Skills 捐赠给 Linux 基金会旗下 Agentic AI Foundation（AAIF）。官方称已接入 ChatGPT、Cursor、GitHub Copilot、VS Code 等逾七十个平台，并捐赠名称、Logo 与 agentskills.io；AAIF 此前已托管 MCP。",
+     "sourceName": "Simon Willison",
+     "sourceUrl": "https://simonwillison.net/2026/Oct/22/donating-agent-skills/",
+     "sourceIconUrl": null,
+     "firstParty": false,
+     "publishedAt": "2026-10-22T18:09:56.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
      "itemId": "sha256:eda525050cea8fce",
      "title": "Uber 全员上线 ChatGPT Work，覆盖约 3 万名员工",
      "summary": "OpenAI：Uber 将 ChatGPT Work 扩至逾 3 万员工，接入常用办公工具。",
@@ -146,18 +158,6 @@
      "sourceIconUrl": null,
      "firstParty": true,
      "publishedAt": "2026-10-22T14:30:24.000Z",
-     "available": true,
-     "otherSources": 0
-    },
-    {
-     "itemId": "sha256:d6172869a6c9d34f",
-     "title": "微软研究院：Flint-interactive 让智能体做交互式数据可视化",
-     "summary": "MSR 发布 Flint-interactive 交互可视化语言；与 Recursive Flint 不同物。",
-     "sourceName": "Microsoft Research Blog",
-     "sourceUrl": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-22T16:00:00.000Z",
      "available": true,
      "otherSources": 0
     }
@@ -299,8 +299,8 @@
  "cover": null,
  "metrics": {
   "totalEvents": 12,
-  "sourcesCount": 13,
-  "firstPartyEvents": 12,
+  "sourcesCount": 14,
+  "firstPartyEvents": 11,
   "modelsReleased": 2
  },
  "readingMinutes": 5,

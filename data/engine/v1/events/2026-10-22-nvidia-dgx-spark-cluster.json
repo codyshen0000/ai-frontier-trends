@@ -184,6 +184,16 @@
    "hour": "2026-10-22T17:00:00.000Z",
    "heat": 14.5,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-22T18:00:00.000Z",
+   "heat": 14.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T19:00:00.000Z",
+   "heat": 13.7,
+   "participants": 2
   }
  ],
  "related": [],

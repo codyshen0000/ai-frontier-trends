@@ -69,16 +69,6 @@
  ],
  "heat": [
   {
-   "hour": "2026-10-20T17:00:00.000Z",
-   "heat": 8.5,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-20T18:00:00.000Z",
-   "heat": 8.3,
-   "participants": 2
-  },
-  {
    "hour": "2026-10-20T19:00:00.000Z",
    "heat": 8.1,
    "participants": 2
@@ -311,6 +301,16 @@
   {
    "hour": "2026-10-22T17:00:00.000Z",
    "heat": 4.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T18:00:00.000Z",
+   "heat": 4.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-22T19:00:00.000Z",
+   "heat": 4.6,
    "participants": 1
   }
  ],
