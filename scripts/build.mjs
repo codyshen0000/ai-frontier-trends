@@ -27,6 +27,7 @@ import { assertCoverRecords, assertDistPublicCopy, assertNoInternalMeta, assertW
 import { EngineDataError, resolveEngineBundle } from "./engine/resolve.mjs";
 import { publicizeBundle } from "./engine/publicize.mjs";
 import { writeRedirects } from "./redirects.mjs";
+import { parseDailyIssueKey } from "./daily_paths.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const distDir = join(root, "dist");
@@ -447,6 +448,8 @@ export function normalizeResponsiveImageAttrs(html) {
 
 function mitPageDest(file) {
   if (file.startsWith("weekly/") && file.endsWith(".html")) return `/${file.replace(/\.html$/, "")}/`;
+  const datedDaily = parseDailyIssueKey(file);
+  if (datedDaily) return `/daily/${datedDaily}/`;
   if (file === "daily-archive.html") return "/daily/archive/";
   if (file.startsWith("item-") && file.endsWith(".html")) return `/items/${file.slice("item-".length, -".html".length)}/`;
   if (file.startsWith("event-") && file.endsWith(".html")) return `/story/${file.slice("event-".length, -".html".length)}/`;
@@ -456,7 +459,7 @@ function mitPageDest(file) {
 
 export function rewriteMitStatic(html, fromPath) {
   const prefixedPages = String(html).replace(
-    /(href|src|action)="((?:index|hot|daily|daily-archive|search|starred|more|weekly|monthly|all|topics|item-[^"]+|event-[^"]+)\.html|weekly\/[^"]+\.html)([^"]*)"/g,
+    /(href|src|action)="((?:index|hot|daily-\d{4}-\d{2}-\d{2}|daily|daily-archive|search|starred|more|weekly|monthly|all|topics|item-[^"]+|event-[^"]+)\.html|weekly\/[^"]+\.html)([^"]*)"/g,
     (_, attr, file, suffix) => {
       const dest = mitPageDest(file);
       // Same HTML is copied to / and /live/. On the site home, index.html → ./ is a
@@ -537,6 +540,9 @@ function publishMitStatic() {
     if (name.startsWith("item-")) {
       const id = name.slice("item-".length, -".html".length);
       const dest = `/items/${id}/`;
+      writePage(dest, injectBeforeHeadEnd(rewriteMitStatic(readFileSync(join(src, name), "utf8"), dest), faviconLinks(dest)));
+    } else if (/^daily-\d{4}-\d{2}-\d{2}\.html$/.test(name)) {
+      const dest = `/daily/${name.slice("daily-".length, -".html".length)}/`;
       writePage(dest, injectBeforeHeadEnd(rewriteMitStatic(readFileSync(join(src, name), "utf8"), dest), faviconLinks(dest)));
     } else if (name.startsWith("event-")) {
       const id = name.slice("event-".length, -".html".length);

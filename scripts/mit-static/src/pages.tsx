@@ -120,20 +120,30 @@ export function HotScreen({ emptyCover = false }: { emptyCover?: boolean }) {
   );
 }
 
-export function DailyScreen({ emptyCover = false }: { emptyCover?: boolean }) {
+export function DailyScreen({
+  emptyCover = false,
+  report,
+  dated = false,
+}: {
+  emptyCover?: boolean;
+  report?: ReportDetail | null;
+  dated?: boolean;
+} = {}) {
   const rss = <AsOfAndRss rssHref={hasSelectedFeed ? "feed.xml" : "feed/weekly.xml"} />;
-  if (!daily) {
+  const data = report !== undefined ? report : daily;
+  if (!data) {
     return (
       <Shell pathname="/daily">
         <ReportEmpty kind="daily" index={dailyIndex} today={today} title="日报" copy="过去 24 小时没有达到上榜条件的事件。" footer={rss} />
       </Shell>
     );
   }
-  const report = emptyCover ? dailyWithoutCover(daily) : daily;
+  const view = emptyCover ? dailyWithoutCover(data) : data;
+  const pathname = dated ? `/daily/${view.key}` : "/daily";
   return (
-    <Shell pathname="/daily">
-      <ReportLayout kind="daily" index={dailyIndex} current={report.key} today={today} outline={reportOutline(report)} footer={rss}>
-        <ReportPaper report={report} index={dailyIndex} />
+    <Shell pathname={pathname}>
+      <ReportLayout kind="daily" index={dailyIndex} current={view.key} today={today} outline={reportOutline(view)} footer={rss}>
+        <ReportPaper report={view} index={dailyIndex} />
       </ReportLayout>
     </Shell>
   );

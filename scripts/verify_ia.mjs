@@ -173,11 +173,19 @@ assert(
   "clipSummary shortens research-wall copy",
 );
 
+let engineDailyKeys = [];
+try {
+  engineDailyKeys = (JSON.parse(readFileSync(join(resolveEngineDir(), "daily-index.json"), "utf8")) || [])
+    .map((row) => row.key)
+    .filter((key) => /^\d{4}-\d{2}-\d{2}$/.test(key));
+} catch {}
+
 const paths = [
   "/",
   "/live/",
   "/hot/",
   "/daily/",
+  ...engineDailyKeys.map((key) => `/daily/${key}/`),
   "/more/",
   "/timeline/",
   "/weekly/",
@@ -418,13 +426,33 @@ if (dailyCoverImgs.length === 1) {
   assert(!/src="https?:\/\//.test(dailyCoverImgs[0][0]), "daily cover is not a hotlink");
   const dailyAlt = decodeHtmlAttr((dailyCoverImgs[0][0].match(/\balt="([^"]*)"/) || [])[1] || "");
   engineDailyCoverAlt = "";
+  let publicDailyAlt = "";
   try {
     engineDailyCoverAlt = JSON.parse(readFileSync(join(resolveEngineDir(), "daily.json"), "utf8"))?.cover?.alt || "";
   } catch {}
-  const dailyCoverAlt = generatedCovers.daily?.coverOurs?.alt || engineDailyCoverAlt;
+  try {
+    publicDailyAlt = JSON.parse(readFileSync(join(root, "scripts", "mit-static", ".engine-site.json"), "utf8"))?.daily?.cover?.alt || "";
+  } catch {}
+  const dailyCoverAlt = publicDailyAlt || generatedCovers.daily?.coverOurs?.alt || engineDailyCoverAlt;
   assert(Boolean(dailyCoverAlt), "daily cover data has alt");
   assert(dailyAlt === dailyCoverAlt, "daily cover img alt matches cover data");
   assert(!coverAltProblem(dailyAlt), "daily cover alt is not empty, a filename, or a URL");
+}
+
+assert(dailyPage.includes("location.replace"), "/daily/ keeps #d-YYYY-MM-DD hash-compat redirect");
+assert(!/href="#d-\d{4}-\d{2}-\d{2}"/.test(dailyPage), "/daily/ sidebar/neighbours use real dated paths, not hash-only hrefs");
+for (const key of engineDailyKeys) {
+  const datedPage = readFileSync(join(distDir, "daily", key, "index.html"), "utf8");
+  assert(datedPage.includes(`id="d-${key}"`), `/daily/${key}/ article id is d-${key}`);
+  assert(datedPage.includes('aria-current="page"'), `/daily/${key}/ highlights the current issue`);
+  assert(datedPage.includes("../../assets/app.css"), `/daily/${key}/ CSS is ../../assets/app.css`);
+  assert(!/href="#d-\d{4}-\d{2}-\d{2}"/.test(datedPage), `/daily/${key}/ does not use hash-only issue hrefs`);
+  const heroImgs = [...datedPage.matchAll(/<img\b[^>]*>/g)].filter((m) => /assets\/covers\//.test(m[0]));
+  assert(heroImgs.length <= 1, `/daily/${key}/ paints at most one headline cover`);
+  for (const img of heroImgs) {
+    assert(!/src="https?:\/\//.test(img[0]), `/daily/${key}/ cover is not a hotlink`);
+    assert(/src="\.\.\/\.\.\/assets\/covers\//.test(img[0]), `/daily/${key}/ cover src is ../../assets/covers`);
+  }
 }
 
 assert(/body\{[^}]*max-width:\s*\d+px;[^}]*margin:[^;]*auto/.test(timelineRaw), "timeline source keeps a centered reading column");
@@ -867,8 +895,21 @@ const expectedCoverAlts = new Set(
     .map(([, entry]) => String(entry?.coverOurs?.alt || "").trim())
     .filter(Boolean),
 );
-// Engine-data (hot.json NO.01, daily.json) covers are rendered too; accept their alts.
+// Engine-data (hot.json NO.01, daily.json + dated dailies) covers are rendered too; accept their alts.
 for (const alt of [engineHotCoverAlt, engineDailyCoverAlt]) if (alt) expectedCoverAlts.add(String(alt).trim());
+for (const key of engineDailyKeys) {
+  try {
+    const alt = JSON.parse(readFileSync(join(resolveEngineDir(), "daily", `${key}.json`), "utf8"))?.cover?.alt;
+    if (alt) expectedCoverAlts.add(String(alt).trim());
+  } catch {}
+}
+try {
+  const site = JSON.parse(readFileSync(join(root, "scripts", "mit-static", ".engine-site.json"), "utf8"));
+  for (const row of [site?.daily, ...(site?.dailies || [])]) {
+    const alt = row?.cover?.alt;
+    if (alt) expectedCoverAlts.add(String(alt).trim());
+  }
+} catch {}
 let coverImgMismatches = 0;
 for (const pageFile of htmlPages) {
   const html = readFileSync(pageFile, "utf8");

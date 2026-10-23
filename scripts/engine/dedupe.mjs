@@ -27,6 +27,21 @@ export function normalizeUrl(url) {
   }
 }
 
+/** Keep the first row per normalized URL. Rows without a URL stay. */
+export function uniqueByNormalizedUrl(rows, urlOf = (row) => row?.originalUrl) {
+  const seen = new Set();
+  const out = [];
+  for (const row of rows || []) {
+    const norm = normalizeUrl(urlOf(row));
+    if (norm) {
+      if (seen.has(norm)) continue;
+      seen.add(norm);
+    }
+    out.push(row);
+  }
+  return out;
+}
+
 export function eventIdOf(card) {
   return (
     card?.item?.storyPublicId ||

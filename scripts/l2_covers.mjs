@@ -277,8 +277,8 @@ function noneRendition(fallback, original, bytes = 0) {
   return { local: null, fallback, bytes, actualWidth: original?.width ?? null, actualHeight: original?.height ?? null, files: [] };
 }
 
-async function emitRenditions(id, original, sharp) {
-  mkdirSync(coverAssetDir, { recursive: true });
+async function emitRenditions(id, original, sharp, destDir = coverAssetDir) {
+  mkdirSync(destDir, { recursive: true });
   const buf = await fetchBinary(original.url);
   if (!buf) return noneRendition("download_failed", original);
   if (!sharp) return noneRendition("resize_failed", original, buf.length);
@@ -308,7 +308,7 @@ async function emitRenditions(id, original, sharp) {
       });
       const webpBuf = await pipeline.clone().webp({ quality: 78 }).toBuffer();
       const webpName = `${id}-${targetW}.webp`;
-      writeFileSync(join(coverAssetDir, webpName), webpBuf);
+      writeFileSync(join(destDir, webpName), webpBuf);
       bytes += webpBuf.length;
       files.push({ mode, width: targetW, webp: `assets/covers/${webpName}`, bytes: webpBuf.length });
     }
@@ -459,6 +459,7 @@ function pruneCovers(keepNames) {
   if (!existsSync(coverAssetDir)) return;
   for (const name of readdirSync(coverAssetDir)) {
     if (!/\.(webp|jpe?g)$/i.test(name)) continue;
+    if (/^daily-\d{4}-\d{2}-\d{2}-\d+\.webp$/i.test(name)) continue;
     if (!keepNames.has(name)) unlinkSync(join(coverAssetDir, name));
   }
 }
@@ -746,4 +747,4 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   await main();
 }
 
-export { main as buildCovers };
+export { main as buildCovers, extractArticle, emitRenditions, loadSharp, fetchBinary };

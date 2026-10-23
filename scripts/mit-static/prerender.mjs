@@ -3,17 +3,28 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { copyAvatarCache } from "../avatar_icons.mjs";
-import { resolveAndWriteGeneratedSite } from "../engine/write_generated.mjs";
+import { resolveEngineBundle } from "../engine/resolve.mjs";
+import { writeGeneratedSite } from "../engine/write_generated.mjs";
+import { materializeEngineCovers } from "../engine/materialize_covers.mjs";
 
 process.env.NODE_ENV = "production";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const engineSiteFile = path.join(here, ".engine-site.json");
-const { resolved: engineResolved, site: engineSite } = resolveAndWriteGeneratedSite(engineSiteFile);
-if (engineResolved.warning) console.warn("[engine]", engineResolved.warning);
-console.log("engine", engineResolved.source, "cards", engineSite.timeline.cards.length, "hot", engineSite.hot.entries.length);
-
 const outDir = path.resolve(here, "../../preview/mit-static");
+const engineResolved = resolveEngineBundle();
+if (engineResolved.warning) console.warn("[engine]", engineResolved.warning);
+const coverLog = await materializeEngineCovers(engineResolved.bundle, {
+  assetDir: path.join(outDir, "assets", "covers"),
+});
+if (coverLog.length) {
+  console.log(
+    "daily covers",
+    coverLog.map((row) => `${row.key}:${row.status}${row.reason ? `(${row.reason})` : ""}`).join(" "),
+  );
+}
+const engineSite = writeGeneratedSite(engineSiteFile, engineResolved);
+console.log("engine", engineResolved.source, "cards", engineSite.timeline.cards.length, "hot", engineSite.hot.entries.length);
 const tmpCss = path.join(here, ".tmp-css");
 const tmpSsr = path.join(here, ".tmp-ssr");
 

@@ -22,6 +22,12 @@ export const weeklyIndex = (generated.weeklyIndex || []) as ReportNavigationEntr
 export const monthlyIndex = (generated.monthlyIndex || []) as ReportNavigationEntry[];
 export const today = daily?.key || "";
 
+export function dailyByKey(key: string): ReportDetail | null {
+  if (!key) return null;
+  if (daily?.key === key) return daily;
+  return dailies.find((row) => row.key === key) || null;
+}
+
 export const events = (generated.events || []) as SiteEvent[];
 export const dailyByItemId = indexDailyCites([daily, ...dailies]);
 

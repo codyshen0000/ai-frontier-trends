@@ -472,8 +472,51 @@ export function queryHotCovers(story) {
   });
 }
 
+function asMediaItem(image) {
+  if (!image) return null;
+  if (image.kind === "image" && image.url) return image;
+  if (image.url) {
+    return {
+      kind: "image",
+      url: image.url,
+      width: typeof image.width === "number" ? image.width : null,
+      height: typeof image.height === "number" ? image.height : null,
+      alt: image.alt || "",
+    };
+  }
+  return null;
+}
+
 export function leadCover(leadItemId, publications, extra = {}) {
-  return pickCover(publications || [], { mode: "lead", leadItemId, ...extra });
+  const pubs = Array.isArray(publications) ? [...publications] : [];
+  const extras = [];
+  const extraImage = asMediaItem(extra.image);
+  if (extraImage) extras.push(extraImage);
+  for (const item of extra.candidates || []) {
+    const media = asMediaItem(item);
+    if (media && !extras.some((row) => row.url === media.url)) extras.push(media);
+  }
+  if (extras.length && !pubs.some((pub) => (pub.media || []).some((row) => extras.some((ex) => ex.url === row.url)))) {
+    pubs.push({
+      articleId: leadItemId || extra.itemId || extra.articleId || "daily-lead",
+      firstParty: Boolean(extra.firstParty),
+      selected: true,
+      score: extra.score ?? 0,
+      listed: extra.listed !== false,
+      bodyMode: extra.bodyMode || "full",
+      url: extra.pageUrl || extra.sourceUrl || "",
+      ogImage: extra.ogImage || null,
+      title: extra.title || "",
+      summary: extra.summary || "",
+      media: extras,
+    });
+  }
+  return pickCover(pubs, {
+    mode: "lead",
+    leadItemId: leadItemId || undefined,
+    title: extra.title,
+    summary: extra.summary,
+  });
 }
 
 export function srcSetFor(urlForMode) {

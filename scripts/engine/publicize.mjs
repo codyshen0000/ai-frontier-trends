@@ -316,6 +316,11 @@ export function publicizeBundle(bundle, meta = {}) {
   });
   const daily = bundle.daily ? stripScore(bundle.daily) : null;
   if (daily?.cover) daily.cover = publicCover(daily.cover);
+  const dailies = (bundle.dailies || []).map((row) => {
+    const next = stripScore(row);
+    if (next?.cover) next.cover = publicCover(next.cover);
+    return next;
+  });
   const site = {
     data_as_of: bundle.data_as_of || "",
     built_at: bundle.built_at || "",
@@ -335,7 +340,7 @@ export function publicizeBundle(bundle, meta = {}) {
     })),
     daily,
     dailyIndex: bundle.dailyIndex || [],
-    dailies: bundle.dailies || [],
+    dailies,
     timeline: {
       filters: bundle.timeline?.filters || { channel: "all", category: null, tag: null },
       cards,

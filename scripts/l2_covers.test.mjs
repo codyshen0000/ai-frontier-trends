@@ -196,6 +196,16 @@ const borrowed = leadCover("lead", [
 ]);
 assert.equal(borrowed.articleId, "other");
 
+const emptyLead = leadCover("", [], {
+  title: "KLS 猜想论文附图",
+  summary: "论文给出高维切割的 figure。",
+  firstParty: true,
+  image: { url: "https://ex/kls-figure.png", width: 1400, height: 800, alt: "论文 figure：平面与曲面切割" },
+});
+assert.ok(emptyLead.cover, "leadCover with empty itemId still uses candidates");
+assert.equal(emptyLead.cover.url, "https://ex/kls-figure.png");
+assert.equal(emptyLead.category, "paper_figure");
+
 assert.ok(V5_OG_LOGO_SAMPLES.length >= 5, "at least 5 OG/Logo samples");
 for (const sample of V5_OG_LOGO_SAMPLES) {
   const v4 = firstQualifyingImageV4(sample.publications[0].media, sample.publications[0]);
@@ -234,6 +244,8 @@ assert.match(rewritten, /src="\.\.\/assets\/covers\/a-1600\.webp"/);
 assert.match(rewritten, /srcset="\.\.\/assets\/covers\/a-720\.webp 720w, \.\.\/assets\/covers\/a-1200\.webp 1200w, \.\.\/assets\/covers\/a-1600\.webp 1600w"/);
 assert.match(rewritten, /imagesrcset="\.\.\/assets\/covers\/a-720\.webp 720w, \.\.\/assets\/covers\/a-1200\.webp 1200w, \.\.\/assets\/covers\/a-1600\.webp 1600w"/);
 assert.doesNotMatch(rewritten, /(?:src|srcset|imagesrcset)="assets\//i);
+const datedDaily = rewriteMitStatic(`<a href="daily-2026-10-22.html">往期</a>`, "/daily/");
+assert.equal(datedDaily.includes('href="../daily/2026-10-22/"'), true);
 const atRoot = rewriteMitStatic(`<img src="assets/covers/a.webp" srcSet="assets/covers/a.webp 1600w"/>`, "/");
 assert.match(atRoot, /src="assets\/covers\/a\.webp"/);
 assert.doesNotMatch(atRoot, /src="\.\.\/assets\//);
