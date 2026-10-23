@@ -46,6 +46,11 @@ function sparkFromHtml(html, publicId) {
   }
 }
 
+function isHotRankingPage(file) {
+  const norm = String(file).replaceAll("\\", "/");
+  return /\/hot(?:\/|\.html$)/.test(norm) || /(?:^|\/)hot\.html$/.test(norm);
+}
+
 export async function verify(ctx) {
   const engineDir = ctx.engineDir;
   const hotFile = engineDir && join(engineDir, "hot.json");
@@ -106,6 +111,14 @@ export async function verify(ctx) {
       const id = entry.story?.publicId;
       if (!html.includes(id) && !html.includes(entry.story?.title || "")) continue;
       const shown = heatFromHtml(html, id);
+      if (shown == null) {
+        // Home/feed can mention a listed story without a heat chip (only the
+        // strip paints data-ft-heat). Require a chip on the ranking page.
+        if (isHotRankingPage(file)) {
+          return { ok: false, message: `${file} missing data-ft-heat for ${id}` };
+        }
+        continue;
+      }
       if (!heatMatches(shown, entry.heat)) {
         const label = formatHeat(entry.heat);
         if (!label || !html.includes(label)) {
