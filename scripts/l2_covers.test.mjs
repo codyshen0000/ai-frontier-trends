@@ -205,7 +205,7 @@ for (const sample of V5_OG_LOGO_SAMPLES) {
   assert.equal(v5.reason, sample.v5, `${sample.id} v5 reason ${v5.reason} != ${sample.v5}`);
 }
 
-const officialFlux = pickFirstValuableImage(
+const officialFluxHero = pickFirstValuableImage(
   [{ kind: "image", url: "https://bfl.ai/blog/flux-3-image-klein/hero.jpg", width: 2000, height: 1344 }],
   {
     title: "Black Forest Labs 开源 FLUX.3 Image Klein（5.6B）",
@@ -214,8 +214,126 @@ const officialFlux = pickFirstValuableImage(
     firstParty: true,
   },
 );
-assert.equal(officialFlux.reason, "valuable");
-assert.ok(["model_sample", "product_ui", "official_explainer", "official_diagram"].includes(officialFlux.category));
+assert.equal(officialFluxHero.image, null, "official blog hero.jpg is decorative; size+topic must not keep");
+assert.ok(["decor", "unsure"].includes(officialFluxHero.reason));
+
+const fluxSample = pickFirstValuableImage(
+  [
+    {
+      kind: "image",
+      url: "https://bfl.ai/blog/flux-3-image-klein/generations/sample-output-01.png",
+      width: 2000,
+      height: 1344,
+      alt: "FLUX.3 生成样张对照",
+    },
+  ],
+  {
+    title: "Black Forest Labs 开源 FLUX.3 Image Klein（5.6B）",
+    pageUrl: "https://bfl.ai/blog/flux-3-image-klein",
+    firstParty: true,
+  },
+);
+assert.equal(fluxSample.reason, "valuable");
+assert.equal(fluxSample.category, "model_sample");
+
+const voxtralHero = classifyValue(
+  {
+    url: "https://mistral.ai/cms-media/api/media/file/hero-blog-voxtral.png",
+    width: 1920,
+    height: 1080,
+    alt: "Voxtral 3 语音智能体产品介绍页示意",
+  },
+  {
+    title: "Mistral 发布 Voxtral 3：语音智能体 SDK 与语音模型",
+    summary: "Mistral 发布 Voxtral 3 语音智能体 SDK 与语音模型，转录 50+ 语言。",
+    pageUrl: "https://mistral.ai/news/voxtral-3/",
+    firstParty: true,
+  },
+);
+assert.notEqual(voxtralHero.verdict, "keep", "Voxtral decorative news hero must not keep");
+assert.ok(["reject", "empty"].includes(voxtralHero.verdict));
+assert.equal(
+  pickFirstValuableImage(
+    [
+      {
+        kind: "image",
+        url: "https://mistral.ai/cms-media/api/media/file/hero-blog-voxtral.png",
+        width: 1920,
+        height: 1080,
+        alt: "Voxtral 3 语音智能体产品介绍页示意",
+      },
+    ],
+    {
+      title: "Mistral 发布 Voxtral 3：语音智能体 SDK 与语音模型",
+      pageUrl: "https://mistral.ai/news/voxtral-3/",
+      firstParty: true,
+    },
+  ).image,
+  null,
+);
+
+const abstractGeo = classifyValue({
+  url: "https://ex.example/assets/abstract-geometric-gradient.png",
+  width: 1600,
+  height: 900,
+  alt: "color block hero",
+});
+assert.equal(abstractGeo.verdict, "reject");
+assert.equal(abstractGeo.category, "decor");
+
+const fakeScreenshot = classifyValue(
+  { url: "https://mistral.ai/news/voxtral-3/hero.png", width: 1600, height: 900, alt: "product screenshot" },
+  { title: "Voxtral 3 产品界面发布", firstParty: true, pageUrl: "https://mistral.ai/news/voxtral-3/" },
+);
+assert.notEqual(fakeScreenshot.verdict, "keep", "screenshot label without UI chrome must not keep");
+
+const fakeUiFromTitle = classifyValue(
+  { url: "https://mistral.ai/cms-media/wide-banner.png", width: 2000, height: 1000, alt: "" },
+  {
+    title: "新产品 UI 发布：智能体产品界面",
+    summary: "官方博客介绍产品",
+    firstParty: true,
+    pageUrl: "https://mistral.ai/news/voxtral-3/",
+  },
+);
+assert.notEqual(fakeUiFromTitle.verdict, "keep", "title keywords + official /news/ must not keep");
+
+const productUi = classifyValue({
+  url: "https://mistral.ai/docs/assets/console-screenshot.png",
+  width: 1400,
+  height: 900,
+  alt: "Voxtral playground console with transcript panel",
+});
+assert.equal(productUi.verdict, "keep");
+assert.ok(["product_ui", "product_screenshot"].includes(productUi.category));
+
+const paperFig = classifyValue({
+  url: "https://arxiv.org/html/2610.12345/x2.png",
+  width: 900,
+  height: 600,
+  alt: "Figure 2: model architecture",
+});
+assert.equal(paperFig.verdict, "keep");
+assert.ok(["paper_figure", "official_explainer", "official_diagram"].includes(paperFig.category));
+
+const evalChart = classifyValue({
+  url: "https://ex.example/figures/eval-chart.png",
+  width: 1200,
+  height: 800,
+  alt: "评测条形图",
+});
+assert.equal(evalChart.verdict, "keep");
+assert.equal(evalChart.category, "eval_chart");
+
+const officialDiagram = classifyValue({
+  url: "https://ex.example/assets/architecture-diagram.png",
+  width: 1400,
+  height: 800,
+  alt: "系统架构图",
+});
+assert.equal(officialDiagram.verdict, "keep");
+assert.ok(["official_diagram", "official_explainer"].includes(officialDiagram.category));
+
 assert.equal(isOfficialDiagramClass("official_diagram"), true);
 assert.equal(isOfficialDiagramClass("official_explainer"), true);
 assert.equal(isValuableCoverClass("official_diagram"), true);
