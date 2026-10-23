@@ -437,9 +437,9 @@ function close(a, b, tol = HEAT_TOLERANCE) {
 
 export function compareEntry(listed, recomputed, { tolerance = HEAT_TOLERANCE, id = "" } = {}) {
   const issues = [];
-  if (!recomputed.eligible) {
-    issues.push(`${id}: not eligible (need ≥2 participants and ≥1 editorial)`);
-  }
+  // Eligibility (≥2 in-window + ≥1 editorial) is a ranking policy, not a
+  // heat-number check. Live / R1h tips may keep watching rows on hot.json
+  // after they drop below the gate; listed heat still has to match recompute.
   // Accept listed heat at either the spark endpoint (contract) or the exact
   // computedAt (pre-close live tips). New exports write heat === spark[-1].
   const heatMatches =
@@ -546,6 +546,11 @@ export function verifyHotJson(inputs, options = {}) {
       existedBefore,
       prevAt: prevTarget,
     });
+    if (!next.eligible) {
+      skipped.push(
+        `${id}: skip eligibility (in-window tree does not meet ≥2 participants + ≥1 editorial; listed heat still checked)`,
+      );
+    }
     let entryIssues = compareEntry(entry, next, { tolerance, id });
     // heat48h.py recomputes T−6h from current participant times. A stored
     // snapshot within 30 minutes can still carry a stale heat (participants

@@ -5,7 +5,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { describe, it } from "node:test";
 import { EngineDataError, loadEngineData } from "./loader.mjs";
-import { publicCover, publicizeBundle, publicizeCard, publicizeHotEntry, publicizeHotStripRow, stripScore } from "./publicize.mjs";
+import { publicCover, publicizeBundle, publicizeCard, publicizeHotEntry, publicizeHotStripRow, hotStripFromHotEntries, stripScore } from "./publicize.mjs";
 import { assertNoFixtureIds, resolveEngineBundle } from "./resolve.mjs";
 import { FIXTURE_IDS } from "./ids.mjs";
 
@@ -145,6 +145,77 @@ describe("B1 publicize", () => {
     assert.equal(text.includes("实时"), false);
     assert.equal(site.hot.entries[0].story.title, "Mistral 发布 Voxtral 3：语音智能体 SDK 与语音模型");
     assert.equal(site.hotStrip[0].title, "Mistral 发布 Voxtral 3：语音智能体 SDK 与语音模型");
+  });
+
+  it("overlays stale timeline.hot / hot-strip heat from tip hot.json", () => {
+    const site = publicizeBundle({
+      dir: "",
+      meta: { data_as_of: "", generated_at: "" },
+      data_as_of: "",
+      built_at: "",
+      hot: {
+        computedAt: "2026-10-23T06:21:05.000Z",
+        windowHours: 48,
+        entries: [
+          {
+            rank: 1,
+            story: { publicId: "2026-10-21-php2shell-wiz-rce", title: "PHP2Shell" },
+            heat: 23.1,
+            trend: "down",
+            participantCount: 6,
+            spark: [23.1, 23.1],
+          },
+          {
+            rank: 2,
+            story: { publicId: "2026-10-23-google-agent-compute-engine", title: "Agent CE" },
+            heat: 16.2,
+            trend: "up",
+            participantCount: 2,
+            spark: [16.2, 16.2],
+          },
+        ],
+      },
+      hotStrip: [
+        { rank: 1, title: "PHP2Shell", heat: 23.9, storyPublicId: "2026-10-21-php2shell-wiz-rce" },
+        { rank: 2, title: "Claude Duet", heat: 20.2, storyPublicId: "2026-10-22-anthropic-claude-duet" },
+      ],
+      daily: null,
+      dailyIndex: [],
+      dailies: [],
+      feed: null,
+      feedItems: [],
+      events: [],
+      eventsIndex: [],
+      timeline: {
+        filters: { channel: "all", category: null, tag: null },
+        cards: [],
+        nextCursor: null,
+        hot: [
+          { rank: 1, title: "PHP2Shell", heat: 23.9, storyPublicId: "2026-10-21-php2shell-wiz-rce" },
+          { rank: 2, title: "Claude Duet", heat: 20.2, storyPublicId: "2026-10-22-anthropic-claude-duet" },
+        ],
+        dayCounts: {},
+      },
+      timelineIndex: null,
+      redirects: [],
+      sources: [],
+      search: null,
+      items: [],
+      topics: [],
+      allTimeline: null,
+      weeklyIndex: [],
+      monthlyIndex: [],
+    });
+    assert.equal(site.hot.entries[0].heat, 23.1);
+    assert.equal(site.hotStrip[0].heat, 23.1);
+    assert.equal(site.hotStrip[0].storyPublicId, "2026-10-21-php2shell-wiz-rce");
+    assert.equal(site.hotStrip[1].storyPublicId, "2026-10-23-google-agent-compute-engine");
+    assert.equal(site.timeline.hot[0].heat, 23.1);
+    assert.equal(site.timeline.hot[1].heat, 16.2);
+    assert.equal(
+      hotStripFromHotEntries(site.hot.entries)[0].heat,
+      23.1,
+    );
   });
 
   it("drops belowThreshold preview rows", () => {
