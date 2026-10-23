@@ -157,6 +157,11 @@
    "hour": "2026-10-23T10:00:00.000Z",
    "heat": 6.0,
    "participants": 1
+  },
+  {
+   "hour": "2026-10-23T11:00:00.000Z",
+   "heat": 5.8,
+   "participants": 1
   }
  ],
  "related": [],

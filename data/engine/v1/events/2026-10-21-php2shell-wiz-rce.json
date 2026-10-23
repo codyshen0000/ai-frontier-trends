@@ -2,7 +2,7 @@
  "publicId": "2026-10-21-php2shell-wiz-rce",
  "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
  "status": "active",
- "reportCount": 2,
+ "reportCount": 3,
  "sourceCount": 2,
  "firstReportAt": "2026-10-22T07:42:44.000Z",
  "latestAt": "2026-10-22T15:25:02.000Z",
@@ -10,10 +10,10 @@
  "digestUpdatedAt": null,
  "summary": "OpenAI 发布 Patch the Planet，协调处理智能体发现的关键漏洞。Wiz 等称 PHP 引擎缺陷可导致远程代码执行与类 Heartbleed 内存泄露，影响面极广；PHP 基金会已发安全更新。 HN 持续高热讨论；Wiz 与多家安全方跟进披露细节。",
  "excerpt": null,
- "latest": "Ars：披露前四天已有探测；Latent Space 综述并入多源。",
+ "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 8,
+  "participants48h": 7,
   "newParticipants6h": 0,
   "recentReports24h": 2,
   "observationComplete": true,
@@ -24,7 +24,7 @@
    "factId": "fact-2026-10-21-php2shell-wiz-rce",
    "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
    "firstReportAt": "2026-10-22T07:42:44.000Z",
-   "reportCount": 2,
+   "reportCount": 3,
    "representative": {
     "id": "sha256:4120829e1df6ee3e",
     "title": "Ars：PHP2Shell 披露前四天已有攻击探测",
@@ -64,14 +64,21 @@
    "publishedAt": "2026-10-22T07:42:44.000Z",
    "selected": false,
    "originalUrl": "https://www.latent.space/p/ainews-openais-patch-the-planet-program"
+  },
+  {
+   "id": "sha256:be77c76cb6e92698",
+   "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
+   "summary": null,
+   "source": {
+    "name": "Latent Space",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-22T07:42:44.000Z",
+   "selected": false,
+   "originalUrl": "https://latent.space/p/ainews-openais-patch-the-planet-program/"
   }
  ],
  "heat": [
-  {
-   "hour": "2026-10-21T10:00:00.000Z",
-   "heat": 9.2,
-   "participants": 1
-  },
   {
    "hour": "2026-10-21T11:00:00.000Z",
    "heat": 8.9,
@@ -89,228 +96,233 @@
   },
   {
    "hour": "2026-10-21T14:00:00.000Z",
-   "heat": 28.1,
-   "participants": 3
+   "heat": 18.1,
+   "participants": 2
   },
   {
    "hour": "2026-10-21T15:00:00.000Z",
-   "heat": 27.3,
-   "participants": 3
+   "heat": 17.6,
+   "participants": 2
   },
   {
    "hour": "2026-10-21T16:00:00.000Z",
-   "heat": 26.5,
-   "participants": 3
+   "heat": 17.1,
+   "participants": 2
   },
   {
    "hour": "2026-10-21T17:00:00.000Z",
-   "heat": 25.8,
-   "participants": 3
+   "heat": 16.6,
+   "participants": 2
   },
   {
    "hour": "2026-10-21T18:00:00.000Z",
-   "heat": 35.0,
-   "participants": 4
+   "heat": 26.1,
+   "participants": 3
   },
   {
    "hour": "2026-10-21T19:00:00.000Z",
-   "heat": 43.9,
-   "participants": 5
+   "heat": 35.3,
+   "participants": 4
   },
   {
    "hour": "2026-10-21T20:00:00.000Z",
-   "heat": 52.6,
-   "participants": 6
+   "heat": 44.2,
+   "participants": 5
   },
   {
    "hour": "2026-10-21T21:00:00.000Z",
-   "heat": 51.1,
-   "participants": 6
+   "heat": 42.9,
+   "participants": 5
   },
   {
    "hour": "2026-10-21T22:00:00.000Z",
-   "heat": 49.7,
-   "participants": 6
+   "heat": 41.7,
+   "participants": 5
   },
   {
    "hour": "2026-10-21T23:00:00.000Z",
-   "heat": 48.2,
-   "participants": 6
+   "heat": 40.5,
+   "participants": 5
   },
   {
    "hour": "2026-10-22T00:00:00.000Z",
-   "heat": 46.9,
-   "participants": 6
+   "heat": 39.4,
+   "participants": 5
   },
   {
    "hour": "2026-10-22T01:00:00.000Z",
-   "heat": 45.5,
-   "participants": 6
+   "heat": 38.3,
+   "participants": 5
   },
   {
    "hour": "2026-10-22T02:00:00.000Z",
-   "heat": 44.2,
-   "participants": 6
+   "heat": 37.2,
+   "participants": 5
   },
   {
    "hour": "2026-10-22T03:00:00.000Z",
-   "heat": 43.0,
-   "participants": 6
+   "heat": 36.1,
+   "participants": 5
   },
   {
    "hour": "2026-10-22T04:00:00.000Z",
-   "heat": 41.8,
-   "participants": 6
+   "heat": 35.1,
+   "participants": 5
   },
   {
    "hour": "2026-10-22T05:00:00.000Z",
-   "heat": 40.6,
-   "participants": 6
+   "heat": 34.1,
+   "participants": 5
   },
   {
    "hour": "2026-10-22T06:00:00.000Z",
-   "heat": 39.4,
-   "participants": 6
+   "heat": 33.1,
+   "participants": 5
   },
   {
    "hour": "2026-10-22T07:00:00.000Z",
-   "heat": 38.3,
-   "participants": 6
+   "heat": 32.2,
+   "participants": 5
   },
   {
    "hour": "2026-10-22T08:00:00.000Z",
-   "heat": 47.1,
-   "participants": 7
+   "heat": 41.2,
+   "participants": 6
   },
   {
    "hour": "2026-10-22T09:00:00.000Z",
-   "heat": 45.8,
-   "participants": 7
+   "heat": 40.0,
+   "participants": 6
   },
   {
    "hour": "2026-10-22T10:00:00.000Z",
-   "heat": 44.5,
-   "participants": 7
+   "heat": 38.9,
+   "participants": 6
   },
   {
    "hour": "2026-10-22T11:00:00.000Z",
-   "heat": 43.2,
-   "participants": 7
+   "heat": 37.8,
+   "participants": 6
   },
   {
    "hour": "2026-10-22T12:00:00.000Z",
-   "heat": 42.0,
-   "participants": 7
+   "heat": 36.7,
+   "participants": 6
   },
   {
    "hour": "2026-10-22T13:00:00.000Z",
-   "heat": 40.8,
-   "participants": 7
+   "heat": 35.6,
+   "participants": 6
   },
   {
    "hour": "2026-10-22T14:00:00.000Z",
-   "heat": 39.6,
-   "participants": 7
+   "heat": 34.6,
+   "participants": 6
   },
   {
    "hour": "2026-10-22T15:00:00.000Z",
-   "heat": 38.5,
-   "participants": 7
+   "heat": 33.6,
+   "participants": 6
   },
   {
    "hour": "2026-10-22T16:00:00.000Z",
-   "heat": 57.0,
-   "participants": 9
+   "heat": 52.3,
+   "participants": 8
   },
   {
    "hour": "2026-10-22T17:00:00.000Z",
-   "heat": 55.4,
-   "participants": 9
+   "heat": 50.8,
+   "participants": 8
   },
   {
    "hour": "2026-10-22T18:00:00.000Z",
-   "heat": 53.8,
-   "participants": 9
+   "heat": 49.4,
+   "participants": 8
   },
   {
    "hour": "2026-10-22T19:00:00.000Z",
-   "heat": 52.3,
-   "participants": 9
+   "heat": 47.9,
+   "participants": 8
   },
   {
    "hour": "2026-10-22T20:00:00.000Z",
-   "heat": 50.8,
-   "participants": 9
+   "heat": 46.6,
+   "participants": 8
   },
   {
    "hour": "2026-10-22T21:00:00.000Z",
-   "heat": 49.3,
-   "participants": 9
+   "heat": 45.3,
+   "participants": 8
   },
   {
    "hour": "2026-10-22T22:00:00.000Z",
-   "heat": 47.9,
-   "participants": 9
+   "heat": 44.0,
+   "participants": 8
   },
   {
    "hour": "2026-10-22T23:00:00.000Z",
-   "heat": 46.6,
-   "participants": 9
+   "heat": 42.7,
+   "participants": 8
   },
   {
    "hour": "2026-10-23T00:00:00.000Z",
-   "heat": 45.2,
-   "participants": 9
+   "heat": 41.5,
+   "participants": 8
   },
   {
    "hour": "2026-10-23T01:00:00.000Z",
-   "heat": 44.0,
-   "participants": 9
+   "heat": 40.3,
+   "participants": 8
   },
   {
    "hour": "2026-10-23T02:00:00.000Z",
-   "heat": 42.7,
-   "participants": 9
+   "heat": 39.2,
+   "participants": 8
   },
   {
    "hour": "2026-10-23T03:00:00.000Z",
-   "heat": 41.5,
-   "participants": 9
+   "heat": 38.1,
+   "participants": 8
   },
   {
    "hour": "2026-10-23T04:00:00.000Z",
-   "heat": 40.3,
-   "participants": 9
+   "heat": 37.0,
+   "participants": 8
   },
   {
    "hour": "2026-10-23T05:00:00.000Z",
-   "heat": 39.2,
-   "participants": 9
+   "heat": 35.9,
+   "participants": 8
   },
   {
    "hour": "2026-10-23T06:00:00.000Z",
-   "heat": 38.0,
-   "participants": 9
+   "heat": 34.9,
+   "participants": 8
   },
   {
    "hour": "2026-10-23T07:00:00.000Z",
-   "heat": 34.5,
-   "participants": 8
+   "heat": 31.4,
+   "participants": 7
   },
   {
    "hour": "2026-10-23T08:00:00.000Z",
-   "heat": 33.5,
-   "participants": 8
+   "heat": 30.5,
+   "participants": 7
   },
   {
    "hour": "2026-10-23T09:00:00.000Z",
-   "heat": 32.5,
-   "participants": 8
+   "heat": 29.6,
+   "participants": 7
   },
   {
    "hour": "2026-10-23T10:00:00.000Z",
-   "heat": 31.6,
-   "participants": 8
+   "heat": 28.8,
+   "participants": 7
+  },
+  {
+   "hour": "2026-10-23T11:00:00.000Z",
+   "heat": 28.0,
+   "participants": 7
   }
  ],
  "related": [],
