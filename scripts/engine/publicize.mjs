@@ -188,6 +188,23 @@ export function publicizeHotStripRow(row) {
   });
 }
 
+/**
+ * Home / hot-strip must follow the tip's hot.json, not a stale
+ * timeline/page-1.json or hot-strip.json left behind by an R1h-only refresh.
+ */
+export function hotStripFromHotEntries(hotEntries) {
+  return (hotEntries || []).slice(0, 5).map((entry) => ({
+    rank: entry.rank,
+    title: entry.story?.title || entry.title || "",
+    heat: entry.heat,
+    trend: entry.trend === "unknown" ? "unknown" : entry.trend,
+    storyPublicId: entry.story?.publicId ?? entry.storyPublicId ?? null,
+    itemId: entry.itemId ?? entry.story?.publicId ?? null,
+    participants: entry.participants || [],
+    participantCount: entry.participantCount ?? 0,
+  }));
+}
+
 export function publicizeHotEntry(entry) {
   if (!entry || typeof entry !== "object") return null;
   if (entry.belowThreshold) return null;
@@ -286,8 +303,11 @@ export function publicizeBundle(bundle, meta = {}) {
     windowHours: bundle.hot?.windowHours ?? 48,
     entries: hotEntries,
   };
-  const hotStrip = (bundle.hotStrip || []).map(publicizeHotStripRow).filter(Boolean);
-  const timelineHot = (bundle.timeline?.hot || []).map(publicizeHotStripRow).filter(Boolean);
+  const derivedStrip = hotStripFromHotEntries(hotEntries);
+  const hotStripFallback = (bundle.hotStrip || []).map(publicizeHotStripRow).filter(Boolean);
+  const timelineHotFallback = (bundle.timeline?.hot || []).map(publicizeHotStripRow).filter(Boolean);
+  const hotStrip = derivedStrip.length ? derivedStrip : hotStripFallback;
+  const timelineHot = derivedStrip.length ? derivedStrip : timelineHotFallback;
   const cards = groupByEvent((bundle.timeline?.cards || []).map((card) => publicizeCard(card, cardCtx)).filter(Boolean), {
     events: bundle.events,
     redirects: bundle.redirects,

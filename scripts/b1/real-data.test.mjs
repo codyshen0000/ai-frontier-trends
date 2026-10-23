@@ -131,6 +131,24 @@ describe("B1 wiring", () => {
       );
       const bad = await verifyHeat({ distDir: dist, engineDir: engine, root: dist });
       assert.equal(bad.ok, false);
+
+      const watch = {
+        rank: 6,
+        story: { publicId: "2026-10-19-minimax-m31-flash", title: "MiniMax" },
+        heat: 8.4,
+      };
+      writeFileSync(join(engine, "hot.json"), JSON.stringify({ entries: [entry, watch] }));
+      writeFileSync(join(dist, "api", "v1", "hot.json"), JSON.stringify({ entries: [entry, watch] }));
+      writeFileSync(
+        join(dist, "hot", "index.html"),
+        `<html><p data-ft-heat-method>${HEAT_METHOD_COPY}</p><span data-ft-story="${entry.story.publicId}" data-ft-heat="5.5">5.5</span><span data-ft-story="${watch.story.publicId}" data-ft-heat="8.4">8.4</span></html>`,
+      );
+      writeFileSync(
+        join(dist, "index.html"),
+        `<html><span data-ft-story="${entry.story.publicId}" data-ft-heat="5.5">5.5</span><a href="./story/${watch.story.publicId}/">${watch.story.title}</a></html>`,
+      );
+      const feedOnly = await verifyHeat({ distDir: dist, engineDir: engine, root: dist });
+      assert.equal(feedOnly.ok, true, feedOnly.message);
     } finally {
       rmSync(dist, { recursive: true, force: true });
       rmSync(engine, { recursive: true, force: true });

@@ -224,6 +224,54 @@ describe("verifyHotJson against SYNTHETIC tree", () => {
     }
   });
 
+  it("does not fail live hot.json watching rows that drop below the eligibility gate", () => {
+    const dir = mkdtempSync(join(tmpdir(), "b2-heat-watch-"));
+    try {
+      const one = CASES.events.find((e) => e.publicId.endsWith("heat-fresh"));
+      eventTree(dir, [one]);
+      const hotPath = join(dir, "hot.json");
+      const hot = JSON.parse(readFileSync(hotPath, "utf8"));
+      const atMs = Date.parse(hot.computedAt);
+      const outside = new Date(atMs - 49 * 3600 * 1000).toISOString();
+      const eventPath = join(dir, "events", `${one.publicId}.json`);
+      const event = JSON.parse(readFileSync(eventPath, "utf8"));
+      event.timeline = [
+        { ...event.timeline[0], publishedAt: event.timeline[0].publishedAt },
+        { ...event.timeline[1] || event.timeline[0], id: "sha256:synthetic-heat-aged", publishedAt: outside },
+      ];
+      event.developments = [];
+      event.officialReports = [];
+      writeFileSync(eventPath, `${JSON.stringify(event, null, 2)}\n`);
+      const watching = recomputeEntry(
+        [
+          { key: "lab", name: "公开实验室", kind: "editorial", lastAt: event.timeline[0].publishedAt },
+          { key: "notes", name: "复现笔记", kind: "editorial", lastAt: outside },
+        ],
+        hot.computedAt,
+      );
+      assert.equal(watching.eligible, false);
+      hot.entries[0].heat = watching.heat;
+      hot.entries[0].spark = watching.spark;
+      hot.entries[0].trend = watching.trend;
+      hot.entries[0].trendPct = watching.trendPct;
+      hot.entries[0].badges = watching.badges;
+      hot.entries[0].participantCount = 1;
+      writeFileSync(hotPath, `${JSON.stringify(hot, null, 2)}\n`);
+      const result = verifyEngineHeat(dir);
+      assert.equal(result.ok, true, result.issues.join("\n"));
+      assert.match(result.skipped.join("\n"), /skip eligibility/);
+      assert.equal(result.recomputed[0].eligible, false);
+
+      hot.entries[0].heat = watching.heat + 3;
+      writeFileSync(hotPath, `${JSON.stringify(hot, null, 2)}\n`);
+      const bad = verifyEngineHeat(dir);
+      assert.equal(bad.ok, false);
+      assert.match(bad.issues.join("\n"), /heat /);
+    } finally {
+      rmSync(dir, { recursive: true, force: true });
+    }
+  });
+
   it("skips hot.json rows whose event tree is missing listed participant timestamps", () => {
     const dir = mkdtempSync(join(tmpdir(), "b2-heat-incomplete-"));
     try {
