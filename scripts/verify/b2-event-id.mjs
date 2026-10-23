@@ -6,7 +6,7 @@
 import { existsSync } from "node:fs";
 import { join } from "node:path";
 import { pathToFileURL } from "node:url";
-import { findDedupeIssues } from "../engine/dedupe.mjs";
+import { findDedupeIssues, uniqueByNormalizedUrl } from "../engine/dedupe.mjs";
 import { groupByEvent } from "../engine/groupByEvent.mjs";
 import { loadEngineData, resolveEngineDir } from "../engine/loader.mjs";
 
@@ -38,7 +38,9 @@ export async function verify(ctx = {}) {
   const after = findDedupeIssues({
     timeline: { cards: grouped },
     hot: bundle.hot,
-    search: bundle.search,
+    search: {
+      docs: uniqueByNormalizedUrl(bundle.search?.docs, (doc) => doc?.originalUrl),
+    },
     redirects: bundle.redirects,
     events: bundle.events,
   });
@@ -63,7 +65,7 @@ export async function verify(ctx = {}) {
   }
 
   const note = before.issues.length
-    ? ` (input had ${before.issues.length} duplicate(s); groupByEvent collapsed them)`
+    ? ` (input had ${before.issues.length} duplicate(s); groupByEvent / URL aliases collapsed them)`
     : "";
   return {
     ok: true,

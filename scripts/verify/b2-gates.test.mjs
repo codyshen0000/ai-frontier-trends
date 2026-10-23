@@ -45,6 +45,46 @@ describe("standalone B2 verify gates", () => {
     assert.match(sample.message, /1 redirect page/);
   });
 
+  it("b2-event-id collapses www vs apex search URLs of the same item", async () => {
+    const dir = mkdtempSync(join(tmpdir(), "b2-search-alias-"));
+    try {
+      mkdirSync(join(dir, "search"), { recursive: true });
+      writeFileSync(
+        join(dir, "meta.json"),
+        JSON.stringify({ data_as_of: "2026-10-23T12:00:00+08:00", generated_at: "2026-10-23T04:00:00.000Z" }),
+      );
+      writeFileSync(
+        join(dir, "search", "source.json"),
+        JSON.stringify({
+          generatedAt: "2026-10-23T04:00:00.000Z",
+          docs: [
+            {
+              id: "sha256:aaa",
+              kind: "item",
+              title: "Patch the Planet",
+              selected: false,
+              eventPublicId: "2026-10-21-php2shell-wiz-rce",
+              originalUrl: "https://latent.space/p/ainews-openais-patch-the-planet-program/",
+            },
+            {
+              id: "sha256:bbb",
+              kind: "item",
+              title: "Patch the Planet www",
+              selected: false,
+              eventPublicId: "2026-10-21-php2shell-wiz-rce",
+              originalUrl: "https://www.latent.space/p/ainews-openais-patch-the-planet-program",
+            },
+          ],
+        }),
+      );
+      const result = await verifyIds({ engineDir: dir });
+      assert.equal(result.ok, true, result.message);
+      assert.match(result.message, /URL aliases collapsed|duplicates 0/);
+    } finally {
+      rmSync(dir, { recursive: true, force: true });
+    }
+  });
+
   it("b2-event-id fails when two hot entries share an event_id", async () => {
     const dir = mkdtempSync(join(tmpdir(), "b2-dup-"));
     try {
