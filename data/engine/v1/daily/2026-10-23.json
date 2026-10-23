@@ -3,13 +3,13 @@
  "key": "2026-10-23",
  "issueNumber": 5,
  "title": "AI日报 · 2026-10-23",
- "generatedAt": "2026-10-23T00:44:38.000Z",
+ "generatedAt": "2026-10-23T00:56:33.000Z",
  "lead": {
   "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
   "leadParagraph": "OpenAI 发布 Decisions API，面向应用内快速、聚焦、低成本决策；与决策模型竞赛相关。官方称可用于任意应用。 TechCrunch：称对标 Jev，决策模型竞争升温。"
  },
  "leadItemId": "sha256:891b7e0bbf66f86d",
- "overview": "OpenAI 推出面向应用的 Decisions API。",
+ "overview": "加厚合并：保留早轮 Decisions/ThinkingBox/Claude-on-GCP + flash=20。加回夜档 Baseten/DeepSeek/AAIF(simon)/vLLM。补 MSR/Wiz-LiteLLM/NVIDIA 抬 sources/fp。ACE/MAI 仍在热榜/时间线，日报主文槽让给一手源覆盖。不进 selected。不改 T2。",
  "highlights": [
   {
    "itemId": "sha256:891b7e0bbf66f86d",
@@ -48,14 +48,14 @@
    "otherSources": 0
   },
   {
-   "itemId": "sha256:7ea705cfe9f05665",
-   "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
-   "summary": "Google Cloud 在 AGNTCon 宣布 Agent Compute Engine：为每个 Gemini 智能体提供硬件隔离 microVM（独立 guest kernel、短时身份、Hyperdisk 工作区），并扩展企业侧智能体治理能力。 官方称该运行时已支撑 Gemini 工作负载，客户预览将于未来数月开放；配套有架构深潜文。",
-   "sourceName": "The Decoder",
-   "sourceUrl": "https://the-decoder.com/googles-agent-compute-engine-gives-every-gemini-agent-its-own-hardware-isolated-micro-virtual-machine/",
+   "itemId": "sha256:8cfd997cf9a921e4",
+   "title": "Baseten：开源决策模型 mammoth-1 / elephant-1",
+   "summary": "Baseten Base Labs 开源决策模型 mammoth-1（27B）与 elephant-1（9B）：不生成文本，只输出选项概率分布，用于工单路由、反钓鱼与护栏。官方称 mammoth-1 居 Jev Decision Index 208 模型之首；基于 Qwen3.5 后训练，API 可试用一周。",
+   "sourceName": "sha256:8cfd997cf9a921e4",
+   "sourceUrl": "https://www.baseten.co/blog/the-best-decision-models-in-the-world-mammoth-1-and-elephant-1/",
    "sourceIconUrl": null,
-   "firstParty": false,
-   "publishedAt": "2026-10-22T17:50:09.000Z",
+   "firstParty": true,
+   "publishedAt": "2026-10-21T16:58:52.000Z",
    "available": true,
    "otherSources": 0
   }
@@ -90,16 +90,64 @@
      "otherSources": 0
     },
     {
-     "itemId": "sha256:7ea705cfe9f05665",
-     "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
-     "summary": "Google Cloud 在 AGNTCon 宣布 Agent Compute Engine：为每个 Gemini 智能体提供硬件隔离 microVM（独立 guest kernel、短时身份、Hyperdisk 工作区），并扩展企业侧智能体治理能力。 官方称该运行时已支撑 Gemini 工作负载，客户预览将于未来数月开放；配套有架构深潜文。",
-     "sourceName": "The Decoder",
-     "sourceUrl": "https://the-decoder.com/googles-agent-compute-engine-gives-every-gemini-agent-its-own-hardware-isolated-micro-virtual-machine/",
+     "itemId": "sha256:8cfd997cf9a921e4",
+     "title": "Baseten：开源决策模型 mammoth-1 / elephant-1",
+     "summary": "Baseten Base Labs 开源决策模型 mammoth-1（27B）与 elephant-1（9B）：不生成文本，只输出选项概率分布，用于工单路由、反钓鱼与护栏。官方称 mammoth-1 居 Jev Decision Index 208 模型之首；基于 Qwen3.5 后训练，API 可试用一周。",
+     "sourceName": "sha256:8cfd997cf9a921e4",
+     "sourceUrl": "https://www.baseten.co/blog/the-best-decision-models-in-the-world-mammoth-1-and-elephant-1/",
      "sourceIconUrl": null,
-     "firstParty": false,
-     "publishedAt": "2026-10-22T17:50:09.000Z",
+     "firstParty": true,
+     "publishedAt": "2026-10-21T16:58:52.000Z",
      "available": true,
      "otherSources": 0
+    },
+    {
+     "itemId": "sha256:be38b11f937cd76c",
+     "title": "DeepSeek 开源生产推理框架 DeepInfer",
+     "summary": "DeepSeek 以 Apache-2.0 开源生产推理框架 DeepInfer，首版面向 V4.1-Flash 离线推理：含 FlashMLA/DeepGEMM、Attention DP 与 MoE EP+EPLB、推测解码与结构化输出，支持 SM100 与昇腾 950；KV/PD 分离尚未开源。基于 vLLM。",
+     "sourceName": "GitHub · deepseek-ai/DeepInfer",
+     "sourceUrl": "https://github.com/deepseek-ai/DeepInfer",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-20T09:30:19.000Z",
+     "available": true,
+     "otherSources": 3
+    },
+    {
+     "itemId": "sha256:ee487a66d7e4ee85",
+     "title": "Anthropic：将 Agent Skills 捐赠给 Linux 基金会 AAIF",
+     "summary": "Anthropic 将 Agent Skills 捐赠给 Linux 基金会旗下 Agentic AI Foundation（AAIF）。官方称已接入 ChatGPT、Cursor、GitHub Copilot、VS Code 等逾七十个平台，并捐赠名称、Logo 与 agentskills.io；AAIF 此前已托管 MCP。",
+     "sourceName": "Simon Willison",
+     "sourceUrl": "https://simonwillison.net/2026/Oct/22/donating-agent-skills/",
+     "sourceIconUrl": null,
+     "firstParty": false,
+     "publishedAt": "2026-10-22T18:09:56.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:3e7599c6661c19f5",
+     "title": "vLLM×蚂蚁：开源量化推理内核库 Humming",
+     "summary": "蚂蚁与 vLLM 社区开源量化推理内核库 Humming：统一量化表示并以 JIT 组装 CUDA 组件，覆盖 Turing 起 GPU 与 WNA16/W8A8/W4A*。官博称多场景快于 Marlin/FlashInfer/DeepGEMM；vLLM≥0.29 可启用，八卡 H20 吞吐约升 14%–43%。",
+     "sourceName": "vLLM Blog",
+     "sourceUrl": "https://vllm.ai/blog/2026-10-21-humming",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-21T00:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:a9592e53f2c7c709",
+     "title": "NVIDIA：DGX Spark 官方支持 8 机集群，统一内存可达 1TB",
+     "summary": "NVIDIA 开发者博客称，GTC Berlin 宣布 DGX Spark 正式支持八节点集群，统一内存扩展至约 1TB，面向桌面侧前沿模型与多智能体工作负载。 NVIDIA Sync 的 Cluster Assistant 负责组网；八节点支持计划年内落地。此前媒体已有二手报道，本条为官方技术说明。",
+     "sourceName": "NVIDIA Technical Blog",
+     "sourceUrl": "https://developer.nvidia.com/blog/running-frontier-class-ai-models-across-8-nvidia-dgx-spark-nodes/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-22T16:00:00.000Z",
+     "available": true,
+     "otherSources": 1
     },
     {
      "itemId": "sha256:eda525050cea8fce",
@@ -112,18 +160,6 @@
      "publishedAt": "2026-10-22T00:00:00.000Z",
      "available": true,
      "otherSources": 1
-    },
-    {
-     "itemId": "sha256:3e7599c6661c19f5",
-     "title": "vLLM 开源 Humming：面向量化推理的内核库",
-     "summary": "vLLM 博客宣布与蚂蚁集团社区合作开源 Humming：面向量化推理的灵活内核库，覆盖多种 GPU 与量化格式，并给出 dense/MoE 性能与集成路径。 属推理栈基础设施更新；文档说明如何把内核接入 vLLM，意在降低量化部署摩擦与跨硬件内核维护成本。",
-     "sourceName": "vLLM Blog",
-     "sourceUrl": "https://vllm.ai/blog/2026-10-21-humming",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-21T00:00:00.000Z",
-     "available": true,
-     "otherSources": 0
     }
    ]
   },
@@ -142,18 +178,6 @@
      "publishedAt": "2026-10-22T22:24:34.000Z",
      "available": true,
      "otherSources": 0
-    },
-    {
-     "itemId": "sha256:5ddee939d5fa55a3",
-     "title": "微软：发布 MAI-DxO 诊断编排器，复杂病例准确率称超医生",
-     "summary": "微软 AI 发布 Medical Superintelligence 进展：MAI-DxO 以多智能体编排做序列诊断；公司称在 NEJM 复杂病例上准确率 83%，对照全科医生约 36%（有参考资料）。 论文与 Science 报道同步；TechCrunch 指出增益相当部分来自底层模型，编排在复杂病例上另有提升。数字均为公司/研究自述。",
-     "sourceName": "The Verge · AI",
-     "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
-     "sourceIconUrl": null,
-     "firstParty": false,
-     "publishedAt": "2026-10-22T18:00:00.000Z",
-     "available": true,
-     "otherSources": 1
     },
     {
      "itemId": "sha256:77ec6ad66af3dcc4",
@@ -194,36 +218,6 @@
      "sourceIconUrl": null,
      "firstParty": true,
      "publishedAt": "2026-10-22T13:05:31.000Z",
-     "available": true,
-     "otherSources": 0
-    },
-    {
-     "itemId": "sha256:011eb73686ffbc98",
-     "title": "Wiz：钓鱼到 LLMjacking，劫持云账单盗刷模型 API",
-     "summary": "Wiz 描述攻击链：通过谷歌搜索广告钓鱼窃取 GCP 凭证后，把攻击者项目挂到受害者云计费账户，用于未授权调用大模型 API，可在 24–48 小时内产生数万至数十万美元账单。 因算力跑在外部项目，受害者看不到提示词与输出；提醒云账号与计费权限已成为 AI 用量攻击面。",
-     "sourceName": "Wiz Blog",
-     "sourceUrl": "https://www.wiz.io/blog/from-phishing-to-llmjacking",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-20T20:03:10.000Z",
-     "available": true,
-     "otherSources": 0
-    }
-   ]
-  },
-  {
-   "label": "模型",
-   "summary": null,
-   "items": [
-    {
-     "itemId": "sha256:67297d2df9a3d7f1",
-     "title": "AllenAI：发布 OlmoEarth v1.3 全球卫星嵌入与探索工具",
-     "summary": "OlmoEarth v1.3 卫星嵌入 + 全球预计算嵌入与浏览器探索工具。",
-     "sourceName": "Hugging Face Blog",
-     "sourceUrl": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-22T16:11:31.000Z",
      "available": true,
      "otherSources": 0
     }
@@ -455,11 +449,11 @@
  "cover": null,
  "metrics": {
   "totalEvents": 12,
-  "sourcesCount": 9,
-  "firstPartyEvents": 10,
-  "modelsReleased": 1
+  "sourcesCount": 14,
+  "firstPartyEvents": 11,
+  "modelsReleased": 0
  },
- "readingMinutes": 4,
+ "readingMinutes": 5,
  "prev": "2026-10-22",
  "next": null
 }

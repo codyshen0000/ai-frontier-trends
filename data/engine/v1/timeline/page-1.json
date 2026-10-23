@@ -506,7 +506,7 @@
   {
    "rank": 1,
    "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
-   "heat": 26.9,
+   "heat": 26.7,
    "trend": "down",
    "storyPublicId": "2026-10-21-php2shell-wiz-rce",
    "itemId": "sha256:de9db6f384cbc788",
@@ -541,7 +541,7 @@
   {
    "rank": 2,
    "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
-   "heat": 22.6,
+   "heat": 22.5,
    "trend": "down",
    "storyPublicId": "2026-10-22-anthropic-claude-duet",
    "itemId": "sha256:258d5ff776fa8f13",
@@ -568,7 +568,7 @@
   {
    "rank": 3,
    "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
-   "heat": 16.9,
+   "heat": 16.8,
    "trend": "new",
    "storyPublicId": "2026-10-23-openai-decisions-api",
    "itemId": "sha256:891b7e0bbf66f86d",
@@ -587,7 +587,7 @@
   {
    "rank": 4,
    "title": "微软：发布 MAI-DxO 诊断编排器，复杂病例准确率称超医生",
-   "heat": 16.6,
+   "heat": 16.5,
    "trend": "down",
    "storyPublicId": "2026-10-23-microsoft-mai-dxo",
    "itemId": "sha256:5ddee939d5fa55a3",
@@ -606,7 +606,7 @@
   {
    "rank": 5,
    "title": "Uber 全员上线 ChatGPT Work，覆盖约 3 万名员工",
-   "heat": 12.7,
+   "heat": 12.6,
    "trend": "down",
    "storyPublicId": "2026-10-23-uber-chatgpt-work-rollout",
    "itemId": "sha256:eda525050cea8fce",
