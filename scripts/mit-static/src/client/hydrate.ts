@@ -1020,9 +1020,23 @@ function bindPtr() {
   });
 }
 
+function redirectDailyHash() {
+  if (cfg.page !== "daily") return;
+  const match = location.hash.match(/^#d-(\d{4}-\d{2}-\d{2})/);
+  if (!match) return;
+  if (document.getElementById(`d-${match[1]}`)) return;
+  const path = location.pathname.replace(/index\.html$/, "");
+  if (/\/daily\/\d{4}-\d{2}-\d{2}\/?$/.test(path)) {
+    location.replace(path.replace(/\/\d{4}-\d{2}-\d{2}\/?$/, `/${match[1]}/`));
+    return;
+  }
+  if (/\/daily\/?$/.test(path)) location.replace(`${path.replace(/\/?$/, "/")}${match[1]}/`);
+}
+
 function boot() {
   document.documentElement.classList.remove("no-js");
   document.documentElement.classList.add("js");
+  redirectDailyHash();
   bindTheme();
   bindStars();
   bindFilters();

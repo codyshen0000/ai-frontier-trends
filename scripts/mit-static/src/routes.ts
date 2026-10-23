@@ -1,6 +1,7 @@
 /** Static-site route table. Unknown paths never fall back to home. */
 import generated from "./covers.generated.json";
-import { eventIds, itemIds, itemUrls } from "./site";
+import { dailyIssueFile, isDailyIssueKey } from "../../daily_paths.mjs";
+import { daily, dailyIndex, eventIds, itemIds, itemUrls } from "./site";
 
 export const PAGE_FILE = {
   "/": "index.html",
@@ -71,6 +72,14 @@ export function eventPageFile(id: string): string {
   return `event-${safePageId(id)}.html`;
 }
 
+export function dailyPageFile(key: string): string {
+  return dailyIssueFile(key);
+}
+
+const DAILY_KEYS = new Set(
+  [daily?.key, ...(dailyIndex || []).map((row) => row.key)].filter((key): key is string => isDailyIssueKey(key)),
+);
+
 export type ResolvedHref =
   | { kind: "unbuilt"; href: "" }
   | { kind: "external"; href: string }
@@ -82,6 +91,8 @@ function pageFileFor(pathname: string): string | null {
   if (pathname in PAGE_FILE) return PAGE_FILE[pathname as keyof typeof PAGE_FILE];
   if (pathname.startsWith("/hot")) return PAGE_FILE["/hot"];
   if (pathname.startsWith("/daily/archive")) return PAGE_FILE["/daily/archive"];
+  const dailyKey = pathname.match(/^\/daily\/(\d{4}-\d{2}-\d{2})\/?$/);
+  if (dailyKey && DAILY_KEYS.has(dailyKey[1])) return dailyPageFile(dailyKey[1]);
   if (pathname.startsWith("/daily")) return PAGE_FILE["/daily"];
   if (pathname.startsWith("/weekly")) return PAGE_FILE["/weekly"];
   if (pathname.startsWith("/monthly")) return PAGE_FILE["/monthly"];
@@ -163,8 +174,17 @@ export function resolveHref(
   if (path.startsWith("/daily/")) {
     const key = path.slice("/daily/".length).replace(/\/$/, "");
     if (!key) return { kind: "page", href: `${PAGE_FILE["/daily"]}${q}${h}` };
-    const dest = `${PAGE_FILE["/daily"]}#d-${key}`;
-    return { kind: "hash", href: dest };
+    if (isDailyIssueKey(key) && DAILY_KEYS.has(key)) {
+      const dest = `${dailyPageFile(key)}${q}${h}`;
+      if (!h && !q && samePageFile(dest, currentPath)) {
+        return { kind: "hash", href: "#report-start" };
+      }
+      return { kind: "page", href: dest };
+    }
+    if (isDailyIssueKey(key)) {
+      return { kind: "page", href: `${PAGE_FILE["/daily"]}#d-${key}` };
+    }
+    return { kind: "unbuilt", href: "" };
   }
 
   if (UNBUILT_PATHS.has(path)) return { kind: "unbuilt", href: "" };

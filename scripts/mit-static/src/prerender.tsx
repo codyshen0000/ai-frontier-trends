@@ -15,8 +15,9 @@ import {
   WeeklyScreen,
 } from "./pages";
 import { SITE } from "@aihot/site";
-import { builtAt, dataAsOf, eventById, events, hasSelectedFeed, items } from "./site";
-import { eventPageFile, itemPageFile } from "./routes";
+import { DAILY_HASH_REDIRECT_JS } from "../../daily_paths.mjs";
+import { builtAt, dailyByKey, dailyIndex, dataAsOf, eventById, events, hasSelectedFeed, items } from "./site";
+import { dailyPageFile, eventPageFile, itemPageFile } from "./routes";
 
 export const pages = [
   { file: "index.html", title: "精选", pathname: "/", page: "home", node: <HomeScreen /> },
@@ -52,6 +53,18 @@ for (const event of events) {
     pathname: `/story/${event.publicId}`,
     page: "event",
     node: <EventScreen event={event} />,
+  });
+}
+
+for (const entry of dailyIndex) {
+  const report = dailyByKey(entry.key);
+  if (!report) continue;
+  pages.push({
+    file: dailyPageFile(entry.key),
+    title: withSubjectSafe(`日报 · ${entry.key}`),
+    pathname: `/daily/${entry.key}`,
+    page: "daily",
+    node: <DailyScreen report={report} dated />,
   });
 }
 
@@ -102,6 +115,7 @@ ${selectedRss ? `<link rel="alternate" type="application/rss+xml" title="前沿�
 <div id="ft-live" class="ft-live" aria-live="polite"></div>
 <div id="ft-toast" class="ft-toast" hidden></div>
 ${markup}
+${extra.page === "daily" ? `<script>${DAILY_HASH_REDIRECT_JS}</script>` : ""}
 <script>window.__FT__=${JSON.stringify(config)}</script>
 <script src="${hydrate}" defer></script>
 </body>

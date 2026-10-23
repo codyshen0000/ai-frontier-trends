@@ -546,7 +546,7 @@ ${rows}
 function dailyRss(dailies) {
   const rows = dailies.slice(0, 30).map((issue) => `    <item>
       <title>${xml(issue.title)}</title>
-      <link>${SITE_URL}/daily/#d-${xml(issue.key)}</link>
+      <link>${SITE_URL}/daily/${xml(issue.key)}/</link>
       <guid isPermaLink="false">daily-${xml(issue.key)}</guid>
       <pubDate>${rfc822(issue.generatedAt || `${issue.key}T00:00:00+08:00`)}</pubDate>
       <description>${xml(publicSummary(issue.overview || issue.lead?.leadParagraph, issue.title))}</description>
