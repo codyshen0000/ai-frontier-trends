@@ -1,624 +1,624 @@
 {
- "computedAt": "2026-10-23T07:46:00.000Z",
- "windowHours": 48,
- "entries": [
-  {
-   "rank": 1,
-   "story": {
-    "publicId": "2026-10-21-php2shell-wiz-rce",
-    "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露"
-   },
-   "heat": 19.5,
-   "trend": "down",
-   "trendPct": -25.3,
-   "badges": [],
-   "participantCount": 5,
-   "sourceCount": 4,
-   "sourceNames": [
-    "The Verge · AI",
-    "The Decoder",
-    "Simon Willison",
-    "TechCrunch · AI"
-   ],
-   "participants": [
+  "computedAt": "2026-10-23T07:46:00.000Z",
+  "windowHours": 48,
+  "entries": [
     {
-     "name": "The Verge · AI",
-     "kind": "editorial"
+      "rank": 1,
+      "story": {
+        "publicId": "2026-10-21-php2shell-wiz-rce",
+        "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露"
+      },
+      "heat": 22.4,
+      "trend": "down",
+      "trendPct": -14.2,
+      "badges": [],
+      "participantCount": 5,
+      "sourceCount": 4,
+      "sourceNames": [
+        "The Verge · AI",
+        "The Decoder",
+        "Simon Willison",
+        "TechCrunch · AI"
+      ],
+      "participants": [
+        {
+          "name": "The Verge · AI",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Decoder",
+          "kind": "editorial"
+        },
+        {
+          "name": "Simon Willison",
+          "kind": "editorial"
+        },
+        {
+          "name": "TechCrunch · AI",
+          "kind": "editorial"
+        },
+        {
+          "name": "Hacker News（AI 关键词 ≥100 分）",
+          "kind": "signal"
+        }
+      ],
+      "spark": [
+        32.2,
+        31.3,
+        30.4,
+        29.5,
+        28.7,
+        27.8,
+        27.1,
+        26.3,
+        25.5,
+        34.6,
+        33.6,
+        32.6,
+        31.7,
+        30.8,
+        29.9,
+        29.1,
+        28.3,
+        27.4,
+        26.7,
+        25.9,
+        25.2,
+        24.5,
+        23.8,
+        23.1,
+        22.4
+      ],
+      "summary": null,
+      "latest": null,
+      "cover": {
+        "url": "assets/covers/hot-2026-10-21-php2shell-1600.webp",
+        "srcSet": "assets/covers/hot-2026-10-21-php2shell-720.webp 720w, assets/covers/hot-2026-10-21-php2shell-1200.webp 1200w, assets/covers/hot-2026-10-21-php2shell-1600.webp 1600w",
+        "width": 1600,
+        "height": 890,
+        "alt": "Wiz：PHP2Shell CVE-2026-109618/9 漏洞披露示意",
+        "valueClass": "official_explainer"
+      },
+      "rankDelta": 0,
+      "heatDeltaPct": 14.9
     },
     {
-     "name": "The Decoder",
-     "kind": "editorial"
+      "rank": 2,
+      "story": {
+        "publicId": "2026-10-23-google-agent-compute-engine",
+        "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM"
+      },
+      "heat": 15.7,
+      "trend": "up",
+      "trendPct": 96.2,
+      "badges": [
+        "rising"
+      ],
+      "participantCount": 2,
+      "sourceCount": 1,
+      "sourceNames": [
+        "The Decoder"
+      ],
+      "participants": [
+        {
+          "name": "The Decoder",
+          "kind": "editorial"
+        },
+        {
+          "name": "IT之家（全站，需关键词过滤）",
+          "kind": "signal"
+        }
+      ],
+      "spark": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        10,
+        9.7,
+        9.4,
+        9.1,
+        8.9,
+        8.6,
+        8.4,
+        8.1,
+        7.9,
+        17.7,
+        17.2,
+        16.7,
+        16.2,
+        15.7
+      ],
+      "summary": null,
+      "latest": "IT之家转述：ACE 为空闲智能体自动休眠、唤醒称不到 500 毫秒",
+      "cover": null,
+      "rankDelta": 2,
+      "heatDeltaPct": 1.9
     },
     {
-     "name": "Simon Willison",
-     "kind": "editorial"
+      "rank": 3,
+      "story": {
+        "publicId": "2026-10-22-anthropic-claude-duet",
+        "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots"
+      },
+      "heat": 12.8,
+      "trend": "down",
+      "trendPct": -14.1,
+      "badges": [],
+      "participantCount": 3,
+      "sourceCount": 3,
+      "sourceNames": [
+        "TechCrunch · AI",
+        "The Decoder",
+        "The Verge · AI"
+      ],
+      "participants": [
+        {
+          "name": "TechCrunch · AI",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Decoder",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Verge · AI",
+          "kind": "editorial"
+        },
+        {
+          "name": "IT之家（全站，需关键词过滤）",
+          "kind": "signal"
+        }
+      ],
+      "spark": [
+        15.1,
+        14.7,
+        24.2,
+        23.5,
+        22.8,
+        22.2,
+        21.5,
+        20.9,
+        20.3,
+        19.7,
+        19.2,
+        18.6,
+        18.1,
+        17.6,
+        17.1,
+        16.6,
+        16.1,
+        15.7,
+        15.2,
+        14.8,
+        14.4,
+        14,
+        13.6,
+        13.2,
+        12.8
+      ],
+      "summary": "The Verge 与 IT之家称 Anthropic 以研究预览推出面向专业人士与小企业的 Claude Duet 智能体，提供 iOS/Android 独立应用与网页入口，定位可在用户离线后继续后台干活的 24 小时助理，对标 Meta Muse、OpenAI Dots 等。 报道称其基于 Claude Opus 5.5，首批面向美国 Pro/Max 候补；可调用 Marketplace 数千连接器，敏感操作需用户批准。官方新闻室暂未见同名稿。",
+      "latest": null,
+      "cover": null,
+      "rankDelta": -1,
+      "heatDeltaPct": -30.8
     },
     {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
+      "rank": 4,
+      "story": {
+        "publicId": "2026-10-23-uber-chatgpt-work-rollout",
+        "title": "Uber 全员上线 ChatGPT Work，覆盖约 3 万名员工"
+      },
+      "heat": 10.6,
+      "trend": "down",
+      "trendPct": -13.8,
+      "badges": [],
+      "participantCount": 2,
+      "sourceCount": 2,
+      "sourceNames": [
+        "TechCrunch · AI",
+        "OpenAI News"
+      ],
+      "participants": [
+        {
+          "name": "OpenAI News",
+          "kind": "editorial"
+        },
+        {
+          "name": "TechCrunch · AI",
+          "kind": "editorial"
+        }
+      ],
+      "spark": [
+        8.2,
+        7.9,
+        7.7,
+        7.5,
+        7.3,
+        7.1,
+        6.9,
+        6.7,
+        6.5,
+        16.3,
+        15.8,
+        15.4,
+        14.9,
+        14.5,
+        14.1,
+        13.7,
+        13.3,
+        12.9,
+        12.6,
+        12.2,
+        11.9,
+        11.5,
+        11.2,
+        10.9,
+        10.6
+      ],
+      "summary": null,
+      "latest": null,
+      "cover": null,
+      "rankDelta": 3,
+      "heatDeltaPct": 2.9
     },
     {
-     "name": "Hacker News（AI 关键词 ≥100 分）",
-     "kind": "signal"
+      "rank": 5,
+      "story": {
+        "publicId": "2026-10-21-nvidia-openshell-sentry",
+        "title": "NVIDIA 发布 OpenShell 参考架构与 Sentry：硬件隔离的智能体运行时安全"
+      },
+      "heat": 9.5,
+      "trend": "down",
+      "trendPct": -14.4,
+      "badges": [],
+      "participantCount": 2,
+      "sourceCount": 1,
+      "sourceNames": [
+        "NVIDIA Technical Blog"
+      ],
+      "participants": [
+        {
+          "name": "NVIDIA Technical Blog",
+          "kind": "editorial"
+        },
+        {
+          "name": "Hacker News（AI 关键词 ≥100 分）",
+          "kind": "signal"
+        }
+      ],
+      "spark": [
+        5.4,
+        5.3,
+        5.1,
+        5,
+        4.8,
+        4.7,
+        4.6,
+        4.4,
+        4.3,
+        4.2,
+        4.1,
+        13.9,
+        13.5,
+        13.1,
+        12.7,
+        12.4,
+        12,
+        11.7,
+        11.3,
+        11,
+        10.7,
+        10.4,
+        10.1,
+        9.8,
+        9.5
+      ],
+      "summary": null,
+      "latest": null,
+      "cover": null,
+      "rankDelta": 5,
+      "heatDeltaPct": 2.2
+    },
+    {
+      "rank": 6,
+      "story": {
+        "publicId": "2026-10-19-minimax-m31-flash",
+        "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持"
+      },
+      "heat": 8.2,
+      "trend": "down",
+      "trendPct": -13.7,
+      "badges": [],
+      "participantCount": 1,
+      "sourceCount": 1,
+      "sourceNames": [
+        "vLLM Blog"
+      ],
+      "participants": [
+        {
+          "name": "vLLM Blog",
+          "kind": "editorial"
+        },
+        {
+          "name": "IT之家（全站，需关键词过滤）",
+          "kind": "signal"
+        }
+      ],
+      "spark": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        10,
+        9.7,
+        9.4,
+        9.2,
+        8.9,
+        8.7,
+        8.4,
+        8.2
+      ],
+      "summary": null,
+      "latest": null,
+      "cover": null,
+      "rankDelta": -3,
+      "heatDeltaPct": -49.4
+    },
+    {
+      "rank": 7,
+      "story": {
+        "publicId": "2026-10-23-openai-decisions-api",
+        "title": "OpenAI 推出 Decisions API：低成本快速决策接口"
+      },
+      "heat": 7.1,
+      "trend": "down",
+      "trendPct": -13.4,
+      "badges": [],
+      "participantCount": 1,
+      "sourceCount": 2,
+      "sourceNames": [
+        "TechCrunch · AI",
+        "OpenAI News"
+      ],
+      "participants": [
+        {
+          "name": "OpenAI News",
+          "kind": "editorial"
+        },
+        {
+          "name": "TechCrunch · AI",
+          "kind": "editorial"
+        }
+      ],
+      "spark": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        10,
+        9.7,
+        9.4,
+        9.2,
+        8.9,
+        8.7,
+        8.4,
+        8.2,
+        7.9,
+        7.7,
+        7.5,
+        7.3,
+        7.1
+      ],
+      "summary": "OpenAI 发布 Decisions API，面向应用内快速、聚焦、低成本决策；与决策模型竞赛相关。官方称可用于任意应用。 TechCrunch：称对标 Jev，决策模型竞争升温。",
+      "latest": null,
+      "cover": null,
+      "rankDelta": -2,
+      "heatDeltaPct": -48.6
+    },
+    {
+      "rank": 8,
+      "story": {
+        "publicId": "2026-10-23-microsoft-mai-dxo",
+        "title": "微软：发布 MAI-DxO 诊断编排器，复杂病例准确率称超医生"
+      },
+      "heat": 7,
+      "trend": "down",
+      "trendPct": -14.6,
+      "badges": [],
+      "participantCount": 1,
+      "sourceCount": 2,
+      "sourceNames": [
+        "TechCrunch · AI",
+        "The Verge · AI"
+      ],
+      "participants": [
+        {
+          "name": "TechCrunch · AI",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Verge · AI",
+          "kind": "editorial"
+        }
+      ],
+      "spark": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        9.9,
+        9.6,
+        9.4,
+        9.1,
+        8.8,
+        8.6,
+        8.3,
+        8.1,
+        7.9,
+        7.7,
+        7.4,
+        7.2,
+        7
+      ],
+      "summary": null,
+      "latest": null,
+      "cover": null,
+      "rankDelta": -2,
+      "heatDeltaPct": -48.5
+    },
+    {
+      "rank": 9,
+      "story": {
+        "publicId": "2026-10-22-recursive-flint-coding-model",
+        "title": "报道：Recursive 发布 Flint；vLLM 宣布 Day-0 支持"
+      },
+      "heat": 3.7,
+      "trend": "down",
+      "trendPct": -14,
+      "badges": [],
+      "participantCount": 1,
+      "sourceCount": 2,
+      "sourceNames": [
+        "The Decoder",
+        "TechCrunch · AI"
+      ],
+      "participants": [
+        {
+          "name": "The Decoder",
+          "kind": "editorial"
+        },
+        {
+          "name": "TechCrunch · AI",
+          "kind": "editorial"
+        }
+      ],
+      "spark": [
+        11.5,
+        11.1,
+        10.8,
+        10.5,
+        10.2,
+        9.9,
+        9.6,
+        9.4,
+        9.1,
+        8.8,
+        8.6,
+        8.3,
+        8.1,
+        7.9,
+        7.6,
+        7.4,
+        7.2,
+        7,
+        4.4,
+        4.3,
+        4.1,
+        4,
+        3.9,
+        3.8,
+        3.7
+      ],
+      "summary": "报道称 Recursive 发布笔记本级编码模型 Flint（约 40B 总参 / 2.5B 激活），并称训练过程 largely 由 AI 完成、可免费试用。 vLLM 博客随后宣布 Day-0 支持 Flint 双检查点，单卡单请求解码约 500 tokens/s，降低本地部署与评测摩擦。",
+      "latest": "vLLM 宣布 Day-0 支持 Flint，单卡约 500 tok/s。",
+      "cover": null,
+      "rankDelta": -1,
+      "heatDeltaPct": -61.9
+    },
+    {
+      "rank": 10,
+      "story": {
+        "publicId": "2026-10-22-nvidia-dgx-spark-cluster",
+        "title": "NVIDIA：DGX Spark 官方支持 8 机集群，统一内存可达 1TB"
+      },
+      "heat": 3.2,
+      "trend": "down",
+      "trendPct": -13.5,
+      "badges": [],
+      "participantCount": 1,
+      "sourceCount": 1,
+      "sourceNames": [
+        "NVIDIA Technical Blog"
+      ],
+      "participants": [
+        {
+          "name": "NVIDIA Technical Blog",
+          "kind": "editorial"
+        },
+        {
+          "name": "IT之家（全站，需关键词过滤）",
+          "kind": "signal"
+        }
+      ],
+      "spark": [
+        6.4,
+        6.2,
+        6,
+        5.8,
+        5.7,
+        5.5,
+        5.4,
+        5.2,
+        5.1,
+        4.9,
+        4.8,
+        4.6,
+        4.5,
+        4.4,
+        4.3,
+        4.1,
+        4,
+        3.9,
+        3.8,
+        3.7,
+        3.6,
+        3.5,
+        3.4,
+        3.3,
+        3.2
+      ],
+      "summary": null,
+      "latest": "官方博客确认 8 节点支持与 Sync 组网时间表。",
+      "cover": null,
+      "rankDelta": -1,
+      "heatDeltaPct": -66.3
     }
-   ],
-   "spark": [
-    32.2,
-    31.3,
-    30.4,
-    29.5,
-    28.7,
-    27.8,
-    27.1,
-    26.3,
-    25.5,
-    34.6,
-    33.6,
-    32.6,
-    31.7,
-    30.8,
-    29.9,
-    29.1,
-    28.3,
-    27.4,
-    26.7,
-    25.9,
-    25.2,
-    24.5,
-    23.8,
-    23.1,
-    19.9
-   ],
-   "summary": null,
-   "latest": null,
-   "cover": {
-    "url": "assets/covers/hot-2026-10-21-php2shell-1600.webp",
-    "srcSet": "assets/covers/hot-2026-10-21-php2shell-720.webp 720w, assets/covers/hot-2026-10-21-php2shell-1200.webp 1200w, assets/covers/hot-2026-10-21-php2shell-1600.webp 1600w",
-    "width": 1600,
-    "height": 890,
-    "alt": "Wiz：PHP2Shell CVE-2026-109618/9 漏洞披露示意",
-    "valueClass": "official_explainer"
-   },
-   "rankDelta": 0,
-   "heatDeltaPct": -18.4
-  },
-  {
-   "rank": 2,
-   "story": {
-    "publicId": "2026-10-22-anthropic-claude-duet",
-    "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots"
-   },
-   "heat": 18.5,
-   "trend": "down",
-   "trendPct": -15.9,
-   "badges": [],
-   "participantCount": 4,
-   "sourceCount": 3,
-   "sourceNames": [
-    "TechCrunch · AI",
-    "The Decoder",
-    "The Verge · AI"
-   ],
-   "participants": [
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
-    }
-   ],
-   "spark": [
-    15.1,
-    14.7,
-    24.2,
-    23.5,
-    22.8,
-    22.2,
-    21.5,
-    30.9,
-    30.0,
-    29.2,
-    28.3,
-    27.5,
-    26.7,
-    26.0,
-    25.2,
-    24.5,
-    23.8,
-    23.1,
-    22.5,
-    21.8,
-    21.2,
-    20.6,
-    20.0,
-    19.5,
-    18.9
-   ],
-   "summary": "The Verge 与 IT之家称 Anthropic 以研究预览推出面向专业人士与小企业的 Claude Duet 智能体，提供 iOS/Android 独立应用与网页入口，定位可在用户离线后继续后台干活的 24 小时助理，对标 Meta Muse、OpenAI Dots 等。 报道称其基于 Claude Opus 5.5，首批面向美国 Pro/Max 候补；可调用 Marketplace 数千连接器，敏感操作需用户批准。官方新闻室暂未见同名稿。",
-   "latest": null,
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -8.4
-  },
-  {
-   "rank": 3,
-   "story": {
-    "publicId": "2026-10-19-minimax-m31-flash",
-    "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持"
-   },
-   "heat": 16.2,
-   "trend": "down",
-   "trendPct": -16.1,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 1,
-   "sourceNames": [
-    "vLLM Blog"
-   ],
-   "participants": [
-    {
-     "name": "vLLM Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
-    }
-   ],
-   "spark": [
-    3.0,
-    2.9,
-    2.8,
-    2.8,
-    2.7,
-    2.6,
-    2.5,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    10.0,
-    9.7,
-    19.2,
-    18.6,
-    18.1,
-    17.6,
-    17.1,
-    16.6
-   ],
-   "summary": null,
-   "latest": null,
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -8.5
-  },
-  {
-   "rank": 4,
-   "story": {
-    "publicId": "2026-10-23-google-agent-compute-engine",
-    "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM"
-   },
-   "heat": 15.4,
-   "trend": "up",
-   "trendPct": 92.5,
-   "badges": [
-    "rising"
-   ],
-   "participantCount": 2,
-   "sourceCount": 1,
-   "sourceNames": [
-    "The Decoder"
-   ],
-   "participants": [
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
-    }
-   ],
-   "spark": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    10.0,
-    9.7,
-    9.4,
-    9.1,
-    8.9,
-    8.6,
-    8.4,
-    8.1,
-    7.9,
-    17.7,
-    17.2,
-    16.7,
-    16.2,
-    15.7
-   ],
-   "summary": null,
-   "latest": "IT之家转述：ACE 为空闲智能体自动休眠、唤醒称不到 500 毫秒",
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -8.3
-  },
-  {
-   "rank": 5,
-   "story": {
-    "publicId": "2026-10-23-openai-decisions-api",
-    "title": "OpenAI 推出 Decisions API：低成本快速决策接口"
-   },
-   "heat": 13.8,
-   "trend": "down",
-   "trendPct": -15.9,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "TechCrunch · AI",
-    "OpenAI News"
-   ],
-   "participants": [
-    {
-     "name": "OpenAI News",
-     "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    20.0,
-    19.4,
-    18.9,
-    18.3,
-    17.8,
-    17.3,
-    16.8,
-    16.3,
-    15.9,
-    15.4,
-    15.0,
-    14.6,
-    14.1
-   ],
-   "summary": "OpenAI 发布 Decisions API，面向应用内快速、聚焦、低成本决策；与决策模型竞赛相关。官方称可用于任意应用。 TechCrunch：称对标 Jev，决策模型竞争升温。",
-   "latest": null,
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -8.6
-  },
-  {
-   "rank": 6,
-   "story": {
-    "publicId": "2026-10-23-microsoft-mai-dxo",
-    "title": "微软：发布 MAI-DxO 诊断编排器，复杂病例准确率称超医生"
-   },
-   "heat": 13.6,
-   "trend": "down",
-   "trendPct": -16.0,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "TechCrunch · AI",
-    "The Verge · AI"
-   ],
-   "participants": [
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    10.0,
-    19.6,
-    19.1,
-    18.5,
-    18.0,
-    17.5,
-    17.0,
-    16.5,
-    16.0,
-    15.6,
-    15.1,
-    14.7,
-    14.3,
-    13.9
-   ],
-   "summary": null,
-   "latest": null,
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -8.1
-  },
-  {
-   "rank": 7,
-   "story": {
-    "publicId": "2026-10-23-uber-chatgpt-work-rollout",
-    "title": "Uber 全员上线 ChatGPT Work，覆盖约 3 万名员工"
-   },
-   "heat": 10.3,
-   "trend": "down",
-   "trendPct": -16.3,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "TechCrunch · AI",
-    "OpenAI News"
-   ],
-   "participants": [
-    {
-     "name": "OpenAI News",
-     "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    8.2,
-    7.9,
-    7.7,
-    7.5,
-    7.3,
-    7.1,
-    6.9,
-    6.7,
-    6.5,
-    16.3,
-    15.8,
-    15.4,
-    14.9,
-    14.5,
-    14.1,
-    13.7,
-    13.3,
-    12.9,
-    12.6,
-    12.2,
-    11.9,
-    11.5,
-    11.2,
-    10.9,
-    10.6
-   ],
-   "summary": null,
-   "latest": null,
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -8.8
-  },
-  {
-   "rank": 8,
-   "story": {
-    "publicId": "2026-10-22-recursive-flint-coding-model",
-    "title": "报道：Recursive 发布 Flint；vLLM 宣布 Day-0 支持"
-   },
-   "heat": 9.7,
-   "trend": "down",
-   "trendPct": -15.7,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "The Decoder",
-    "TechCrunch · AI"
-   ],
-   "participants": [
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    11.5,
-    11.1,
-    10.8,
-    10.5,
-    10.2,
-    9.9,
-    9.6,
-    9.4,
-    19.0,
-    18.5,
-    17.9,
-    17.4,
-    16.9,
-    16.4,
-    16.0,
-    15.5,
-    15.1,
-    12.2,
-    11.8,
-    11.5,
-    11.1,
-    10.8,
-    10.5,
-    10.2,
-    9.9
-   ],
-   "summary": "报道称 Recursive 发布笔记本级编码模型 Flint（约 40B 总参 / 2.5B 激活），并称训练过程 largely 由 AI 完成、可免费试用。 vLLM 博客随后宣布 Day-0 支持 Flint 双检查点，单卡单请求解码约 500 tokens/s，降低本地部署与评测摩擦。",
-   "latest": "vLLM 宣布 Day-0 支持 Flint，单卡约 500 tok/s。",
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -8.5
-  },
-  {
-   "rank": 9,
-   "story": {
-    "publicId": "2026-10-22-nvidia-dgx-spark-cluster",
-    "title": "NVIDIA：DGX Spark 官方支持 8 机集群，统一内存可达 1TB"
-   },
-   "heat": 9.5,
-   "trend": "down",
-   "trendPct": -15.9,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 1,
-   "sourceNames": [
-    "NVIDIA Technical Blog"
-   ],
-   "participants": [
-    {
-     "name": "NVIDIA Technical Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
-    }
-   ],
-   "spark": [
-    6.4,
-    6.2,
-    6.0,
-    5.8,
-    5.7,
-    5.5,
-    5.4,
-    5.2,
-    5.1,
-    14.9,
-    14.5,
-    14.1,
-    13.7,
-    13.3,
-    12.9,
-    12.5,
-    12.2,
-    11.8,
-    11.5,
-    11.2,
-    10.9,
-    10.5,
-    10.2,
-    10.0,
-    9.7
-   ],
-   "summary": null,
-   "latest": "官方博客确认 8 节点支持与 Sync 组网时间表。",
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -7.8
-  },
-  {
-   "rank": 10,
-   "story": {
-    "publicId": "2026-10-21-nvidia-openshell-sentry",
-    "title": "NVIDIA 发布 OpenShell 参考架构与 Sentry：硬件隔离的智能体运行时安全"
-   },
-   "heat": 9.3,
-   "trend": "down",
-   "trendPct": -16.2,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 1,
-   "sourceNames": [
-    "NVIDIA Technical Blog"
-   ],
-   "participants": [
-    {
-     "name": "NVIDIA Technical Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "Hacker News（AI 关键词 ≥100 分）",
-     "kind": "signal"
-    }
-   ],
-   "spark": [
-    5.4,
-    5.3,
-    5.1,
-    5.0,
-    4.8,
-    4.7,
-    4.6,
-    4.4,
-    4.3,
-    4.2,
-    4.1,
-    13.9,
-    13.5,
-    13.1,
-    12.7,
-    12.4,
-    12.0,
-    11.7,
-    11.3,
-    11.0,
-    10.7,
-    10.4,
-    10.1,
-    9.8,
-    9.5
-   ],
-   "summary": null,
-   "latest": null,
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -8.8
-  }
- ]
+  ]
 }
