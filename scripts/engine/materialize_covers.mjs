@@ -3,9 +3,10 @@
  * Value gate first (cover_rules), then download → sharp → assets/covers/<id>-{720,1200,1600}.webp.
  * publicCover only accepts the same-origin result. Empty slot if nothing qualifies — never hotlink.
  */
-import { mkdirSync } from "node:fs";
+import { mkdirSync, readdirSync, unlinkSync } from "node:fs";
+import { join } from "node:path";
 import { leadCover } from "../cover_rules.mjs";
-import { emitRenditions, extractArticle, loadSharp } from "../l2_covers.mjs";
+import { emitRenditions, extractArticle, fetchBinary, loadSharp } from "../l2_covers.mjs";
 import { isAcceptedCoverClass } from "./loader.mjs";
 import { coverAltProblem } from "../story_digest.mjs";
 
@@ -87,6 +88,51 @@ function coverAltFor(report, picked) {
   return "日报头条配图";
 }
 
+/** Low-edge geometric / color-block heroes (Voxtral-class). Empty slot beats decor. */
+export async function isDecorativeHero(buf, sharp) {
+  if (!buf || !sharp) return false;
+  let data;
+  let info;
+  try {
+    const raw = await sharp(buf, { failOn: "none" })
+      .resize(96, 96, { fit: "inside" })
+      .removeAlpha()
+      .raw()
+      .toBuffer({ resolveWithObject: true });
+    data = raw.data;
+    info = raw.info;
+  } catch {
+    return false;
+  }
+  const w = info.width;
+  const h = info.height;
+  if (w < 8 || h < 8) return false;
+  const luma = (x, y) => {
+    const i = (y * w + x) * 3;
+    return data[i] + data[i + 1] + data[i + 2];
+  };
+  let edges = 0;
+  for (let y = 0; y < h - 1; y += 1) {
+    for (let x = 0; x < w - 1; x += 1) {
+      if (Math.abs(luma(x, y) - luma(x + 1, y)) > 36 || Math.abs(luma(x, y) - luma(x, y + 1)) > 36) {
+        edges += 1;
+      }
+    }
+  }
+  return edges / ((w - 1) * (h - 1)) < 0.16;
+}
+
+function pruneIssueCovers(assetDir, key) {
+  const prefix = `daily-${key}-`;
+  try {
+    for (const name of readdirSync(assetDir)) {
+      if (name.startsWith(prefix) && name.endsWith(".webp")) unlinkSync(join(assetDir, name));
+    }
+  } catch {
+    /* dest may not exist yet */
+  }
+}
+
 function publicValueClass(report, picked) {
   const existing = report.cover?.valueClass || report.cover?.value_class || report.cover?.value_category;
   if (isAcceptedCoverClass(existing)) return existing;
@@ -138,11 +184,18 @@ async function materializeOne(report, sharp, assetDir) {
     sourceUrl: cite?.sourceUrl || "",
   });
   if (!picked?.cover) {
+    pruneIssueCovers(assetDir, key);
     return { key, status: "empty", reason: picked?.reason || "no_image", cover: null };
+  }
+  const raw = await fetchBinary(picked.cover.url);
+  if (raw && (await isDecorativeHero(raw, sharp))) {
+    pruneIssueCovers(assetDir, key);
+    return { key, status: "empty", reason: "decor_hero", cover: null };
   }
   const id = `daily-${key}`;
   const rendition = await emitRenditions(id, picked.cover, sharp, assetDir);
   if (!rendition?.local) {
+    pruneIssueCovers(assetDir, key);
     return { key, status: "empty", reason: rendition?.fallback || "resize_failed", cover: null };
   }
   return {

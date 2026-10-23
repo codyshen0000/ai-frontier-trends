@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { leadCover } from "../cover_rules.mjs";
 import {
+  isDecorativeHero,
   isRemoteCover,
   isSameOriginCover,
   leadCitation,
@@ -64,5 +65,41 @@ const alreadyLocal = {
   sections: [],
 };
 assert.equal(publicationsFromDaily(alreadyLocal).length, 0);
+
+{
+  const sharp = (await import("sharp")).default;
+  const block = await sharp({
+    create: { width: 1200, height: 675, channels: 3, background: { r: 8, g: 8, b: 8 } },
+  })
+    .composite([
+      {
+        input: await sharp({
+          create: { width: 420, height: 420, channels: 3, background: { r: 20, g: 70, b: 210 } },
+        })
+          .png()
+          .toBuffer(),
+        left: 780,
+        top: 0,
+      },
+    ])
+    .png()
+    .toBuffer();
+  const figure = await sharp({
+    create: { width: 1200, height: 700, channels: 3, background: { r: 250, g: 250, b: 250 } },
+  })
+    .composite(
+      Array.from({ length: 12 }, (_, i) => ({
+        input: Buffer.from(
+          `<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="40"><rect width="1000" height="8" fill="#222"/><rect x="${40 + i * 70}" y="12" width="48" height="24" fill="#444"/></svg>`,
+        ),
+        left: 40,
+        top: 30 + i * 54,
+      })),
+    )
+    .png()
+    .toBuffer();
+  assert.equal(await isDecorativeHero(block, sharp), true, "synthetic color-block hero is decor");
+  assert.equal(await isDecorativeHero(figure, sharp), false, "lined figure is not decor");
+}
 
 console.log("materialize_covers tests passed");
