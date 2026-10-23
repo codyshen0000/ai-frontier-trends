@@ -57,9 +57,9 @@
   },
   {
    "rank": 10,
-   "publicId": "2026-10-21-nvidia-openshell-sentry",
-   "heat": 9.3,
-   "participantCount": 2
+   "publicId": "2026-10-21-openai-models-google-cloud",
+   "heat": 9.0,
+   "participantCount": 3
   }
  ]
 }

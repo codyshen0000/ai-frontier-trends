@@ -45,19 +45,19 @@
   },
   {
    "rank": 8,
-   "publicId": "2026-10-21-nvidia-openshell-sentry",
-   "heat": 11.3,
-   "participantCount": 2
-  },
-  {
-   "rank": 9,
    "publicId": "2026-10-21-openai-models-google-cloud",
    "heat": 11.0,
    "participantCount": 3
   },
   {
-   "rank": 10,
+   "rank": 9,
    "publicId": "2026-10-21-mistral-nvidia-industrial-ai",
+   "heat": 7.1,
+   "participantCount": 2
+  },
+  {
+   "rank": 10,
+   "publicId": "2026-10-21-openai-agent-monitoring-disabled",
    "heat": 7.1,
    "participantCount": 2
   }

@@ -43,13 +43,6 @@
    "hotRank": 6
   },
   {
-   "publicId": "2026-10-21-nvidia-openshell-sentry",
-   "title": "NVIDIA 发布 OpenShell 参考架构与 Sentry：硬件隔离的智能体运行时安全",
-   "latestAt": "2026-10-22T17:44:06.000Z",
-   "reportCount": 3,
-   "hotRank": 10
-  },
-  {
    "publicId": "2026-10-23-allenai-olmoearth-v13",
    "title": "AllenAI：发布 OlmoEarth v1.3 全球卫星嵌入与探索工具",
    "latestAt": "2026-10-22T16:11:31.000Z",
@@ -73,8 +66,8 @@
   {
    "publicId": "2026-10-21-php2shell-wiz-rce",
    "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
-   "latestAt": "2026-10-22T15:12:27.000Z",
-   "reportCount": 6,
+   "latestAt": "2026-10-22T15:25:02.000Z",
+   "reportCount": 2,
    "hotRank": 1
   },
   {
@@ -194,7 +187,7 @@
    "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
    "latestAt": "2026-10-21T12:42:51.000Z",
    "reportCount": 2,
-   "hotRank": null
+   "hotRank": 10
   },
   {
    "publicId": "2026-10-21-nvidia-rfd4-proteina",

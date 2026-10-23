@@ -8,6 +8,13 @@
    "homepage": "https://hnrss.org"
   },
   {
+   "sourceId": "rss-ars-ai",
+   "name": "Ars Technica · AI",
+   "tier": "T2",
+   "kind": "editorial",
+   "homepage": "https://arstechnica.com"
+  },
+  {
    "sourceId": "rss-claude-release-notes",
    "name": "Claude Platform Release Notes",
    "tier": "T1",
@@ -34,6 +41,13 @@
    "tier": "T2",
    "kind": "signal",
    "homepage": "https://www.ithome.com"
+  },
+  {
+   "sourceId": "rss-latent-space",
+   "name": "Latent Space",
+   "tier": "T2",
+   "kind": "editorial",
+   "homepage": "https://www.latent.space"
   },
   {
    "sourceId": "rss-microsoft-research",
