@@ -895,8 +895,21 @@ const expectedCoverAlts = new Set(
     .map(([, entry]) => String(entry?.coverOurs?.alt || "").trim())
     .filter(Boolean),
 );
-// Engine-data (hot.json NO.01, daily.json) covers are rendered too; accept their alts.
+// Engine-data (hot.json NO.01, daily.json + dated dailies) covers are rendered too; accept their alts.
 for (const alt of [engineHotCoverAlt, engineDailyCoverAlt]) if (alt) expectedCoverAlts.add(String(alt).trim());
+for (const key of engineDailyKeys) {
+  try {
+    const alt = JSON.parse(readFileSync(join(resolveEngineDir(), "daily", `${key}.json`), "utf8"))?.cover?.alt;
+    if (alt) expectedCoverAlts.add(String(alt).trim());
+  } catch {}
+}
+try {
+  const site = JSON.parse(readFileSync(join(root, "scripts", "mit-static", ".engine-site.json"), "utf8"));
+  for (const row of [site?.daily, ...(site?.dailies || [])]) {
+    const alt = row?.cover?.alt;
+    if (alt) expectedCoverAlts.add(String(alt).trim());
+  }
+} catch {}
 let coverImgMismatches = 0;
 for (const pageFile of htmlPages) {
   const html = readFileSync(pageFile, "utf8");
