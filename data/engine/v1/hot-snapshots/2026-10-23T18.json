@@ -51,15 +51,15 @@
   },
   {
    "rank": 9,
-   "publicId": "2026-10-22-nvidia-dgx-spark-cluster",
-   "heat": 8.8,
-   "participantCount": 2
-  },
-  {
-   "rank": 10,
    "publicId": "2026-10-21-openai-models-google-cloud",
    "heat": 8.4,
    "participantCount": 3
+  },
+  {
+   "rank": 10,
+   "publicId": "2026-10-21-mistral-nvidia-industrial-ai",
+   "heat": 5.5,
+   "participantCount": 2
   }
  ]
 }

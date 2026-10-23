@@ -15,9 +15,9 @@
  "whyHot": {
   "participants48h": 2,
   "newParticipants6h": 0,
-  "recentReports24h": 1,
+  "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 7
+  "rank": 8
  },
  "developments": [
   {
@@ -259,11 +259,36 @@
    "hour": "2026-10-23T11:00:00.000Z",
    "heat": 9.4,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-23T12:00:00.000Z",
+   "heat": 9.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T13:00:00.000Z",
+   "heat": 8.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T14:00:00.000Z",
+   "heat": 8.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T15:00:00.000Z",
+   "heat": 8.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T16:00:00.000Z",
+   "heat": 8.1,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "Uber 全员上线 ChatGPT Work（约 3 万人）",
  "primaryUrl": "https://openai.com/index/uber-chatgpt-work-rollout",
- "rankDelta": 0
+ "rankDelta": -1
 }

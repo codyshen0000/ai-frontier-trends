@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-21-openai-models-google-cloud",
  "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
- "status": "active",
+ "status": "watching",
  "reportCount": 2,
  "sourceCount": 2,
  "firstReportAt": "2026-10-21T12:00:00.000Z",
@@ -13,11 +13,11 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 3,
+  "participants48h": 1,
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 10
+  "rank": null
  },
  "developments": [
   {
@@ -80,26 +80,6 @@
   }
  ],
  "heat": [
-  {
-   "hour": "2026-10-21T12:00:00.000Z",
-   "heat": 10.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T13:00:00.000Z",
-   "heat": 19.6,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-21T14:00:00.000Z",
-   "heat": 19.1,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-21T15:00:00.000Z",
-   "heat": 18.5,
-   "participants": 2
-  },
   {
    "hour": "2026-10-21T16:00:00.000Z",
    "heat": 18.0,
@@ -319,11 +299,35 @@
    "hour": "2026-10-23T11:00:00.000Z",
    "heat": 8.2,
    "participants": 3
+  },
+  {
+   "hour": "2026-10-23T12:00:00.000Z",
+   "heat": 5.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T13:00:00.000Z",
+   "heat": 2.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T14:00:00.000Z",
+   "heat": 2.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T15:00:00.000Z",
+   "heat": 2.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T16:00:00.000Z",
+   "heat": 2.6,
+   "participants": 1
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "OpenAI 前沿模型入驻谷歌云 Model Garden",
- "primaryUrl": "https://openai.com/index/openai-models-google-cloud",
- "rankDelta": 1
+ "primaryUrl": "https://openai.com/index/openai-models-google-cloud"
 }

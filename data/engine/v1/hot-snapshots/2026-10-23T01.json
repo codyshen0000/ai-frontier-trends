@@ -27,24 +27,18 @@
   },
   {
    "rank": 5,
-   "publicId": "2026-10-22-nvidia-dgx-spark-cluster",
-   "heat": 14.2,
-   "participantCount": 2
-  },
-  {
-   "rank": 6,
    "publicId": "2026-10-21-openai-models-google-cloud",
    "heat": 13.6,
    "participantCount": 3
   },
   {
-   "rank": 7,
+   "rank": 6,
    "publicId": "2026-10-21-mistral-nvidia-industrial-ai",
    "heat": 8.8,
    "participantCount": 2
   },
   {
-   "rank": 8,
+   "rank": 7,
    "publicId": "2026-10-21-openai-agent-monitoring-disabled",
    "heat": 8.8,
    "participantCount": 2

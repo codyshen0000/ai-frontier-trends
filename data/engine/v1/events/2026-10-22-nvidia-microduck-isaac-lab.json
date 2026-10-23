@@ -10,14 +10,14 @@
  "digestUpdatedAt": null,
  "summary": "NVIDIA 与 Hugging Face 博客介绍：用 Isaac Lab 3.0 在仿真里训练 Microduck 双足行走策略，再部署到真实机器人。 材料强调仿真并行训练、策略评估后上真机；面向开源双足平台把「仿真到真机」流程跑通，降低从训练到部署的门槛。",
  "excerpt": null,
- "latest": null,
+ "latest": "NVIDIA 技术博客：用 AI 智能体在仿真里教 Microduck 感知障碍并行走。",
  "latestReport": null,
  "whyHot": {
-  "participants48h": 1,
-  "newParticipants6h": 0,
-  "recentReports24h": 0,
+  "participants48h": 2,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
   "observationComplete": true,
-  "rank": null
+  "rank": 4
  },
  "developments": [
   {
@@ -277,6 +277,31 @@
    "hour": "2026-10-23T11:00:00.000Z",
    "heat": 3.1,
    "participants": 1
+  },
+  {
+   "hour": "2026-10-23T12:00:00.000Z",
+   "heat": 3.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T13:00:00.000Z",
+   "heat": 2.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T14:00:00.000Z",
+   "heat": 2.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T15:00:00.000Z",
+   "heat": 12.7,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T16:00:00.000Z",
+   "heat": 12.4,
+   "participants": 2
   }
  ],
  "related": [],

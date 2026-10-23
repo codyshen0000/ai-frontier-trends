@@ -1,6 +1,29 @@
 {
- "generatedAt": "2026-10-23T11:42:00.000Z",
+ "generatedAt": "2026-10-23T16:37:00.000Z",
  "docs": [
+  {
+   "id": "sha256:b19f86d623cfeb5d",
+   "kind": "item",
+   "title": "Anthropic：Claude 为 123 个开源库写出可机器检查的形式化证明",
+   "summary": "Decoder 报道 Anthropic 形式化验证实验；已核实官方研究帖并 hop 附加。",
+   "publishedAt": "2026-10-23T11:32:19.000Z",
+   "sourceName": "The Decoder",
+   "category": "paper",
+   "selected": true,
+   "eventPublicId": "2026-10-23-anthropic-claude-formal-verification",
+   "originalUrl": "https://the-decoder.com/anthropics-claude-now-writes-code-and-proves-it-safe-automatically/"
+  },
+  {
+   "id": "2026-10-23-anthropic-claude-formal-verification",
+   "kind": "event",
+   "title": "Anthropic：Claude 为 123 个开源库写出可机器检查的形式化证明",
+   "summary": null,
+   "publishedAt": "2026-10-23T11:32:19.000Z",
+   "sourceNames": [
+    "The Decoder"
+   ],
+   "path": "/events/2026-10-23-anthropic-claude-formal-verification/"
+  },
   {
    "id": "sha256:1763a7a6e712b3bc",
    "kind": "item",
@@ -516,29 +539,6 @@
     "Microsoft Research Blog"
    ],
    "path": "/events/2026-10-22-msr-kls-conjecture/"
-  },
-  {
-   "id": "sha256:5f0504de59280359",
-   "kind": "item",
-   "title": "IT之家：英伟达 DGX Spark 支持 8 机集群，统一内存可达 1TB",
-   "summary": "DGX Spark 支持 8 机集群，统一内存最高约 1TB。",
-   "publishedAt": "2026-10-21T15:25:18.000Z",
-   "sourceName": "IT之家（全站，需关键词过滤）",
-   "category": "product",
-   "selected": false,
-   "eventPublicId": "2026-10-22-nvidia-dgx-spark-cluster",
-   "originalUrl": "https://www.ithome.com/1/016/148.htm"
-  },
-  {
-   "id": "2026-10-22-nvidia-dgx-spark-cluster",
-   "kind": "event",
-   "title": "NVIDIA：DGX Spark 官方支持 8 机集群，统一内存可达 1TB",
-   "summary": null,
-   "publishedAt": "2026-10-21T15:25:18.000Z",
-   "sourceNames": [
-    "IT之家（全站，需关键词过滤）"
-   ],
-   "path": "/events/2026-10-22-nvidia-dgx-spark-cluster/"
   },
   {
    "id": "sha256:c2ed162a157709f5",

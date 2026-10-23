@@ -6,6 +6,29 @@
  },
  "cards": [
   {
+   "key": "sha256:b19f86d623cfeb5d",
+   "anchorAt": "2026-10-23T11:32:19.000Z",
+   "item": {
+    "id": "sha256:b19f86d623cfeb5d",
+    "title": "Anthropic：Claude 为 123 个开源库写出可机器检查的形式化证明",
+    "summary": "Decoder 报道 Anthropic 形式化验证实验；已核实官方研究帖并 hop 附加。",
+    "reason": "Anthropic 用 Claude 为 123 个开源库做形式化证明",
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-23T11:32:19.000Z",
+    "timelineAt": "2026-10-23T11:32:19.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-23-anthropic-claude-formal-verification",
+    "originalUrl": "https://the-decoder.com/anthropics-claude-now-writes-code-and-proves-it-safe-automatically/"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:50cb4eba8a3e4759",
    "anchorAt": "2026-10-23T00:00:00.000Z",
    "item": {
@@ -368,7 +391,14 @@
     "storyPublicId": "2026-10-22-nvidia-microduck-isaac-lab",
     "originalUrl": "https://huggingface.co/blog/nvidia/microduck-isaac-lab-sim-to-real"
    },
-   "group": null
+   "group": {
+    "factId": "fact-2026-10-22-nvidia-microduck-isaac-lab",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:7decc1c5c0496d6c"
+    ]
+   }
   },
   {
    "key": "sha256:40a01666d562060b",
@@ -484,29 +514,6 @@
     "originalUrl": "https://www.wiz.io/blog/litellm-compromised-steals-credentials"
    },
    "group": null
-  },
-  {
-   "key": "sha256:b1215e1aefc04c61",
-   "anchorAt": "2026-10-21T13:00:00.000Z",
-   "item": {
-    "id": "sha256:b1215e1aefc04c61",
-    "title": "OpenAI 详解 ChatGPT 广告栈，并扩至 26 国、广告主破十万",
-    "summary": "ChatGPT Ads 扩展到 26 国，广告主称逾 10 万。",
-    "reason": "OpenAI 详解 ChatGPT 广告栈并扩至 26 国",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-21T13:00:00.000Z",
-    "timelineAt": "2026-10-21T13:00:00.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-21-chatgpt-ads-stack-expansion",
-    "originalUrl": "https://openai.com/index/chatgpt-ads-expands-26-new-countries"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-2.json",
@@ -514,7 +521,7 @@
   {
    "rank": 1,
    "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
-   "heat": 27.4,
+   "heat": 21.5,
    "trend": "down",
    "storyPublicId": "2026-10-21-php2shell-wiz-rce",
    "itemId": "sha256:de9db6f384cbc788",
@@ -542,18 +549,14 @@
     {
      "name": "TechCrunch · AI",
      "kind": "editorial"
-    },
-    {
-     "name": "Hacker News（AI 关键词 ≥100 分）",
-     "kind": "signal"
     }
    ],
-   "participantCount": 7
+   "participantCount": 6
   },
   {
    "rank": 2,
    "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
-   "heat": 16.5,
+   "heat": 14.3,
    "trend": "down",
    "storyPublicId": "2026-10-22-anthropic-claude-duet",
    "itemId": "sha256:258d5ff776fa8f13",
@@ -580,7 +583,7 @@
   {
    "rank": 3,
    "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持",
-   "heat": 14.5,
+   "heat": 12.6,
    "trend": "down",
    "storyPublicId": "2026-10-19-minimax-m31-flash",
    "itemId": "sha256:50cb4eba8a3e4759",
@@ -598,8 +601,27 @@
   },
   {
    "rank": 4,
+   "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
+   "heat": 12.1,
+   "trend": "up",
+   "storyPublicId": "2026-10-22-nvidia-microduck-isaac-lab",
+   "itemId": "sha256:7decc1c5c0496d6c",
+   "participants": [
+    {
+     "name": "NVIDIA Technical Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "Hugging Face Blog",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2
+  },
+  {
+   "rank": 5,
    "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
-   "heat": 13.7,
+   "heat": 11.9,
    "trend": "down",
    "storyPublicId": "2026-10-23-google-agent-compute-engine",
    "itemId": "sha256:7ea705cfe9f05665",
@@ -614,29 +636,10 @@
     }
    ],
    "participantCount": 2
-  },
-  {
-   "rank": 5,
-   "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
-   "heat": 12.3,
-   "trend": "down",
-   "storyPublicId": "2026-10-23-openai-decisions-api",
-   "itemId": "sha256:891b7e0bbf66f86d",
-   "participants": [
-    {
-     "name": "OpenAI News",
-     "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 2
   }
  ],
  "dayCounts": {
-  "2026-10-23": 8,
+  "2026-10-23": 9,
   "2026-10-22": 9,
   "2026-10-21": 12,
   "2026-10-20": 3,
@@ -645,5 +648,5 @@
  },
  "page": 1,
  "pageCount": 2,
- "total": 35
+ "total": 36
 }

@@ -1,11 +1,18 @@
 {
  "events": [
   {
+   "publicId": "2026-10-23-anthropic-claude-formal-verification",
+   "title": "Anthropic：Claude 为 123 个开源库写出可机器检查的形式化证明",
+   "latestAt": "2026-10-23T11:32:19.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
    "publicId": "2026-10-23-google-agent-compute-engine",
    "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
    "latestAt": "2026-10-23T02:55:33.000Z",
    "reportCount": 2,
-   "hotRank": 4
+   "hotRank": 5
   },
   {
    "publicId": "2026-10-19-minimax-m31-flash",
@@ -33,14 +40,14 @@
    "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
    "latestAt": "2026-10-22T19:00:00.000Z",
    "reportCount": 1,
-   "hotRank": 5
+   "hotRank": 6
   },
   {
    "publicId": "2026-10-23-microsoft-mai-dxo",
    "title": "微软：发布 MAI-DxO 诊断编排器，复杂病例准确率称超医生",
    "latestAt": "2026-10-22T18:43:53.000Z",
    "reportCount": 1,
-   "hotRank": 6
+   "hotRank": 7
   },
   {
    "publicId": "2026-10-23-allenai-olmoearth-v13",
@@ -61,7 +68,7 @@
    "title": "Uber 全员上线 ChatGPT Work，覆盖约 3 万名员工",
    "latestAt": "2026-10-22T16:00:00.000Z",
    "reportCount": 2,
-   "hotRank": 7
+   "hotRank": 8
   },
   {
    "publicId": "2026-10-21-php2shell-wiz-rce",
@@ -103,14 +110,14 @@
    "title": "报道：Recursive 发布 Flint；vLLM 宣布 Day-0 支持",
    "latestAt": "2026-10-21T20:27:41.000Z",
    "reportCount": 2,
-   "hotRank": 8
+   "hotRank": 9
   },
   {
    "publicId": "2026-10-22-nvidia-microduck-isaac-lab",
    "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
    "latestAt": "2026-10-21T17:58:42.000Z",
    "reportCount": 1,
-   "hotRank": null
+   "hotRank": 4
   },
   {
    "publicId": "2026-10-22-dharma-vocabx-slm",
@@ -132,13 +139,6 @@
    "latestAt": "2026-10-21T16:00:00.000Z",
    "reportCount": 1,
    "hotRank": null
-  },
-  {
-   "publicId": "2026-10-22-nvidia-dgx-spark-cluster",
-   "title": "NVIDIA：DGX Spark 官方支持 8 机集群，统一内存可达 1TB",
-   "latestAt": "2026-10-21T15:25:18.000Z",
-   "reportCount": 1,
-   "hotRank": 9
   },
   {
    "publicId": "2026-10-21-ibm-granite-speech-5",
@@ -187,7 +187,7 @@
    "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
    "latestAt": "2026-10-21T12:42:51.000Z",
    "reportCount": 2,
-   "hotRank": 10
+   "hotRank": null
   },
   {
    "publicId": "2026-10-21-nvidia-rfd4-proteina",

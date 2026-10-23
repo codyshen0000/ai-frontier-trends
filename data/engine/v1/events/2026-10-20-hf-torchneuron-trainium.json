@@ -15,7 +15,7 @@
  "whyHot": {
   "participants48h": 1,
   "newParticipants6h": 0,
-  "recentReports24h": 0,
+  "recentReports24h": 1,
   "observationComplete": true,
   "rank": null
  },
@@ -68,31 +68,6 @@
   }
  ],
  "heat": [
-  {
-   "hour": "2026-10-21T11:00:00.000Z",
-   "heat": 3.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T12:00:00.000Z",
-   "heat": 3.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T13:00:00.000Z",
-   "heat": 3.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T14:00:00.000Z",
-   "heat": 3.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T15:00:00.000Z",
-   "heat": 2.9,
-   "participants": 1
-  },
   {
    "hour": "2026-10-21T16:00:00.000Z",
    "heat": 2.8,
@@ -255,62 +230,87 @@
   },
   {
    "hour": "2026-10-23T00:00:00.000Z",
-   "heat": 4.0,
+   "heat": 10.0,
    "participants": 1
   },
   {
    "hour": "2026-10-23T01:00:00.000Z",
-   "heat": 3.9,
+   "heat": 9.7,
    "participants": 1
   },
   {
    "hour": "2026-10-23T02:00:00.000Z",
-   "heat": 3.8,
+   "heat": 9.4,
    "participants": 1
   },
   {
    "hour": "2026-10-23T03:00:00.000Z",
-   "heat": 3.6,
+   "heat": 9.2,
    "participants": 1
   },
   {
    "hour": "2026-10-23T04:00:00.000Z",
-   "heat": 3.5,
+   "heat": 8.9,
    "participants": 1
   },
   {
    "hour": "2026-10-23T05:00:00.000Z",
-   "heat": 3.4,
+   "heat": 8.7,
    "participants": 1
   },
   {
    "hour": "2026-10-23T06:00:00.000Z",
-   "heat": 3.3,
+   "heat": 8.4,
    "participants": 1
   },
   {
    "hour": "2026-10-23T07:00:00.000Z",
-   "heat": 3.2,
+   "heat": 8.2,
    "participants": 1
   },
   {
    "hour": "2026-10-23T08:00:00.000Z",
-   "heat": 3.2,
+   "heat": 7.9,
    "participants": 1
   },
   {
    "hour": "2026-10-23T09:00:00.000Z",
-   "heat": 3.1,
+   "heat": 7.7,
    "participants": 1
   },
   {
    "hour": "2026-10-23T10:00:00.000Z",
-   "heat": 3.0,
+   "heat": 7.5,
    "participants": 1
   },
   {
    "hour": "2026-10-23T11:00:00.000Z",
-   "heat": 2.9,
+   "heat": 7.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T12:00:00.000Z",
+   "heat": 7.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T13:00:00.000Z",
+   "heat": 6.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T14:00:00.000Z",
+   "heat": 6.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T15:00:00.000Z",
+   "heat": 6.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T16:00:00.000Z",
+   "heat": 6.3,
    "participants": 1
   }
  ],

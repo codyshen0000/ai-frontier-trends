@@ -1,0 +1,59 @@
+{
+ "computedAt": "2026-10-23T16:37:00.000Z",
+ "entries": [
+  {
+   "rank": 1,
+   "publicId": "2026-10-21-php2shell-wiz-rce",
+   "heat": 21.5,
+   "participantCount": 6
+  },
+  {
+   "rank": 2,
+   "publicId": "2026-10-22-anthropic-claude-duet",
+   "heat": 14.3,
+   "participantCount": 4
+  },
+  {
+   "rank": 3,
+   "publicId": "2026-10-19-minimax-m31-flash",
+   "heat": 12.6,
+   "participantCount": 2
+  },
+  {
+   "rank": 4,
+   "publicId": "2026-10-22-nvidia-microduck-isaac-lab",
+   "heat": 12.1,
+   "participantCount": 2
+  },
+  {
+   "rank": 5,
+   "publicId": "2026-10-23-google-agent-compute-engine",
+   "heat": 11.9,
+   "participantCount": 2
+  },
+  {
+   "rank": 6,
+   "publicId": "2026-10-23-openai-decisions-api",
+   "heat": 10.7,
+   "participantCount": 2
+  },
+  {
+   "rank": 7,
+   "publicId": "2026-10-23-microsoft-mai-dxo",
+   "heat": 10.5,
+   "participantCount": 2
+  },
+  {
+   "rank": 8,
+   "publicId": "2026-10-23-uber-chatgpt-work-rollout",
+   "heat": 8.0,
+   "participantCount": 2
+  },
+  {
+   "rank": 9,
+   "publicId": "2026-10-22-recursive-flint-coding-model",
+   "heat": 7.5,
+   "participantCount": 2
+  }
+ ]
+}

@@ -8,6 +8,17 @@
  },
  "items": [
   {
+   "guid": "sha256:b19f86d623cfeb5d",
+   "title": "Anthropic：Claude 为 123 个开源库写出可机器检查的形式化证明",
+   "summary": "Decoder 报道 Anthropic 形式化验证实验；已核实官方研究帖并 hop 附加。",
+   "originalUrl": "https://the-decoder.com/anthropics-claude-now-writes-code-and-proves-it-safe-automatically/",
+   "pubDate": "2026-10-23T11:32:19.000Z",
+   "sourceName": "The Decoder",
+   "category": "paper",
+   "categoryLabel": "论文",
+   "eventPublicId": "2026-10-23-anthropic-claude-formal-verification"
+  },
+  {
    "guid": "sha256:50cb4eba8a3e4759",
    "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持",
    "summary": "vLLM：Day-0 支持 MiniMax-M3.1-Flash（Blackwell/Rubin/MI350，含 Day-0 RL）。",

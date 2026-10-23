@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-21-nvidia-kumo-forecast",
  "title": "NVIDIA Kumo Forecast：预训练时序表征 + 历史模式检索",
- "status": "active",
+ "status": "watching",
  "reportCount": 1,
  "sourceCount": 1,
  "firstReportAt": "2026-10-21T12:51:24.000Z",
@@ -68,21 +68,6 @@
   }
  ],
  "heat": [
-  {
-   "hour": "2026-10-21T13:00:00.000Z",
-   "heat": 10.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T14:00:00.000Z",
-   "heat": 9.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T15:00:00.000Z",
-   "heat": 9.4,
-   "participants": 1
-  },
   {
    "hour": "2026-10-21T16:00:00.000Z",
    "heat": 9.1,
@@ -301,6 +286,31 @@
   {
    "hour": "2026-10-23T11:00:00.000Z",
    "heat": 3.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T12:00:00.000Z",
+   "heat": 3.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T13:00:00.000Z",
+   "heat": 2.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T14:00:00.000Z",
+   "heat": 2.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T15:00:00.000Z",
+   "heat": 2.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T16:00:00.000Z",
+   "heat": 2.7,
    "participants": 1
   }
  ],

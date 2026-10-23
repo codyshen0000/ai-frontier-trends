@@ -1,0 +1,88 @@
+{
+ "publicId": "2026-10-23-anthropic-claude-formal-verification",
+ "title": "Anthropic：Claude 为 123 个开源库写出可机器检查的形式化证明",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-23T11:32:19.000Z",
+ "latestAt": "2026-10-23T11:32:19.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": null,
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-23-anthropic-claude-formal-verification",
+   "title": "Anthropic：Claude 为 123 个开源库写出可机器检查的形式化证明",
+   "firstReportAt": "2026-10-23T11:32:19.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:b19f86d623cfeb5d",
+    "title": "Anthropic：Claude 为 123 个开源库写出可机器检查的形式化证明",
+    "summary": "Decoder 报道 Anthropic 形式化验证实验；已核实官方研究帖并 hop 附加。",
+    "source": {
+     "name": "The Decoder",
+     "firstParty": false
+    },
+    "publishedAt": "2026-10-23T11:32:19.000Z",
+    "selected": true,
+    "originalUrl": "https://the-decoder.com/anthropics-claude-now-writes-code-and-proves-it-safe-automatically/"
+   }
+  }
+ ],
+ "officialReports": [],
+ "timeline": [
+  {
+   "id": "sha256:b19f86d623cfeb5d",
+   "title": "Anthropic：Claude 为 123 个开源库写出可机器检查的形式化证明",
+   "summary": "Decoder 报道 Anthropic 形式化验证实验；已核实官方研究帖并 hop 附加。",
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-23T11:32:19.000Z",
+   "selected": true,
+   "originalUrl": "https://the-decoder.com/anthropics-claude-now-writes-code-and-proves-it-safe-automatically/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-23T12:00:00.000Z",
+   "heat": 9.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T13:00:00.000Z",
+   "heat": 9.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T14:00:00.000Z",
+   "heat": 9.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T15:00:00.000Z",
+   "heat": 9.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T16:00:00.000Z",
+   "heat": 8.8,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "Anthropic 用 Claude 为 123 个开源库做形式化证明",
+ "primaryUrl": "https://the-decoder.com/anthropics-claude-now-writes-code-and-proves-it-safe-automatically/"
+}
