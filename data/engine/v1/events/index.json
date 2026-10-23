@@ -1,11 +1,25 @@
 {
  "events": [
   {
+   "publicId": "2026-10-23-microsoft-thinkingbox-rl",
+   "title": "微软 ThinkingBox：把数据库评分变成 RL 奖励做智能体后训练",
+   "latestAt": "2026-10-22T22:24:34.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
+   "publicId": "2026-10-23-openai-decisions-api",
+   "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
+   "latestAt": "2026-10-22T19:00:00.000Z",
+   "reportCount": 1,
+   "hotRank": 3
+  },
+  {
    "publicId": "2026-10-23-microsoft-mai-dxo",
    "title": "微软：发布 MAI-DxO 诊断编排器，复杂病例准确率称超医生",
    "latestAt": "2026-10-22T18:43:53.000Z",
    "reportCount": 1,
-   "hotRank": 3
+   "hotRank": 4
   },
   {
    "publicId": "2026-10-23-google-agent-compute-engine",
@@ -13,6 +27,13 @@
    "latestAt": "2026-10-22T17:50:09.000Z",
    "reportCount": 1,
    "hotRank": null
+  },
+  {
+   "publicId": "2026-10-21-nvidia-openshell-sentry",
+   "title": "NVIDIA 发布 OpenShell 参考架构与 Sentry：硬件隔离的智能体运行时安全",
+   "latestAt": "2026-10-22T17:44:06.000Z",
+   "reportCount": 3,
+   "hotRank": 8
   },
   {
    "publicId": "2026-10-23-allenai-olmoearth-v13",
@@ -54,7 +75,7 @@
    "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
    "latestAt": "2026-10-22T10:01:53.000Z",
    "reportCount": 2,
-   "hotRank": 8
+   "hotRank": 10
   },
   {
    "publicId": "2026-10-22-anthropic-claude-duet",
@@ -71,11 +92,18 @@
    "hotRank": null
   },
   {
+   "publicId": "2026-10-23-claude-models-google-cloud",
+   "title": "Claude：经 Google Cloud 项目可调用 Anthropic 托管的 Claude Models",
+   "latestAt": "2026-10-22T00:00:00.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
    "publicId": "2026-10-22-recursive-flint-coding-model",
    "title": "报道：Recursive 发布 Flint；vLLM 宣布 Day-0 支持",
    "latestAt": "2026-10-21T20:27:41.000Z",
    "reportCount": 2,
-   "hotRank": 4
+   "hotRank": 6
   },
   {
    "publicId": "2026-10-22-nvidia-microduck-isaac-lab",
@@ -110,7 +138,7 @@
    "title": "NVIDIA：DGX Spark 官方支持 8 机集群，统一内存可达 1TB",
    "latestAt": "2026-10-21T15:25:18.000Z",
    "reportCount": 1,
-   "hotRank": 6
+   "hotRank": 7
   },
   {
    "publicId": "2026-10-21-ibm-granite-speech-5",
@@ -124,14 +152,14 @@
    "title": "Mistral×NVIDIA：用加速计算推进工业工程与物理 AI 工作流",
    "latestAt": "2026-10-21T14:40:51.000Z",
    "reportCount": 2,
-   "hotRank": 9
+   "hotRank": null
   },
   {
    "publicId": "2026-10-21-openai-agent-monitoring-disabled",
    "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认",
    "latestAt": "2026-10-21T13:57:43.000Z",
    "reportCount": 2,
-   "hotRank": 10
+   "hotRank": null
   },
   {
    "publicId": "2026-10-22-litellm-pypi-compromise",
@@ -159,20 +187,13 @@
    "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
    "latestAt": "2026-10-21T12:42:51.000Z",
    "reportCount": 2,
-   "hotRank": 7
+   "hotRank": 9
   },
   {
    "publicId": "2026-10-21-nvidia-rfd4-proteina",
    "title": "NVIDIA：RFD4-Proteina 用奖励引导推理时搜索设计蛋白",
    "latestAt": "2026-10-21T12:30:00.000Z",
    "reportCount": 1,
-   "hotRank": null
-  },
-  {
-   "publicId": "2026-10-21-openai-orchestra-bio",
-   "title": "OpenAI 收购 Orchestra Bio，并入 Rosalind 线",
-   "latestAt": "2026-10-21T08:32:54.000Z",
-   "reportCount": 2,
    "hotRank": null
   },
   {

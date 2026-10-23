@@ -3,107 +3,101 @@
  "key": "2026-10-23",
  "issueNumber": 5,
  "title": "AI日报 · 2026-10-23",
- "generatedAt": "2026-10-22T19:11:45.000Z",
+ "generatedAt": "2026-10-23T00:44:38.000Z",
  "lead": {
-  "title": "Baseten：开源决策模型 mammoth-1 / elephant-1",
-  "leadParagraph": "Baseten Base Labs 开源决策模型 mammoth-1（27B）与 elephant-1（9B）：不生成文本，只输出选项概率分布，用于工单路由、反钓鱼与护栏。官方称 mammoth-1 居 Jev Decision Index 208 模型之首；基于 Qwen3.5 后训练，API 可试用一周。"
+  "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
+  "leadParagraph": "OpenAI 发布 Decisions API，面向应用内快速、聚焦、低成本决策；与决策模型竞赛相关。官方称可用于任意应用。 TechCrunch：称对标 Jev，决策模型竞争升温。"
  },
- "leadItemId": "sha256:8cfd997cf9a921e4",
- "overview": "10-23 预填：主文升入 Baseten mammoth/elephant、vLLM Humming、DeepSeek DeepInfer 三件一手交付。快讯预填 8 条待早轮合并至 ≥20。目标抬升 sourcesCount/firstParty（R1 上站后复测）。| #51 0312：补第14源 rss-simon-willison（Agent Skills→AAIF）。",
+ "leadItemId": "sha256:891b7e0bbf66f86d",
+ "overview": "OpenAI 推出面向应用的 Decisions API。",
  "highlights": [
   {
-   "itemId": "sha256:8cfd997cf9a921e4",
-   "title": "Baseten：开源决策模型 mammoth-1 / elephant-1",
-   "summary": "Baseten Base Labs 开源决策模型 mammoth-1（27B）与 elephant-1（9B）：不生成文本，只输出选项概率分布，用于工单路由、反钓鱼与护栏。官方称 mammoth-1 居 Jev Decision Index 208 模型之首；基于 Qwen3.5 后训练，API 可试用一周。",
-   "sourceName": "sha256:8cfd997cf9a921e4",
-   "sourceUrl": "https://www.baseten.co/blog/the-best-decision-models-in-the-world-mammoth-1-and-elephant-1/",
+   "itemId": "sha256:891b7e0bbf66f86d",
+   "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
+   "summary": "OpenAI 发布 Decisions API，面向应用内快速、聚焦、低成本决策；与决策模型竞赛相关。官方称可用于任意应用。 TechCrunch：称对标 Jev，决策模型竞争升温。",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/decisions-api",
    "sourceIconUrl": null,
    "firstParty": true,
-   "publishedAt": "2026-10-21T16:58:52.000Z",
+   "publishedAt": "2026-10-22T19:00:00.000Z",
+   "available": true,
+   "otherSources": 1
+  },
+  {
+   "itemId": "sha256:51888f116f5b0837",
+   "title": "微软 ThinkingBox：把数据库评分变成 RL 奖励做智能体后训练",
+   "summary": "Hugging Face 博客刊出微软 ThinkingBox：将数据库评分转为强化学习奖励，用于后训练智能体。",
+   "sourceName": "Hugging Face Blog",
+   "sourceUrl": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-22T22:24:34.000Z",
    "available": true,
    "otherSources": 0
   },
   {
-   "itemId": "sha256:3e7599c6661c19f5",
-   "title": "vLLM×蚂蚁：开源量化推理内核库 Humming",
-   "summary": "蚂蚁与 vLLM 社区开源量化推理内核库 Humming：统一量化表示并以 JIT 组装 CUDA 组件，覆盖 Turing 起 GPU 与 WNA16/W8A8/W4A*。官博称多场景快于 Marlin/FlashInfer/DeepGEMM；vLLM≥0.29 可启用，八卡 H20 吞吐约升 14%–43%。",
-   "sourceName": "vLLM Blog",
-   "sourceUrl": "https://vllm.ai/blog/2026-10-21-humming",
+   "itemId": "sha256:4182359e79e632d3",
+   "title": "Claude：经 Google Cloud 项目可调用 Anthropic 托管的 Claude Models",
+   "summary": "Claude Platform 10 月 22 日说明：Claude Models on Google Cloud（Anthropic 托管）已推出，经你的 Google Cloud 项目调用 Anthropic 运营的 Claude API。",
+   "sourceName": "Claude Platform Release Notes",
+   "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview#october-22-2026",
    "sourceIconUrl": null,
    "firstParty": true,
-   "publishedAt": "2026-10-21T00:00:00.000Z",
+   "publishedAt": "2026-10-22T00:00:00.000Z",
+   "available": true,
+   "otherSources": 0
+  },
+  {
+   "itemId": "sha256:7ea705cfe9f05665",
+   "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
+   "summary": "Google Cloud 在 AGNTCon 宣布 Agent Compute Engine：为每个 Gemini 智能体提供硬件隔离 microVM（独立 guest kernel、短时身份、Hyperdisk 工作区），并扩展企业侧智能体治理能力。 官方称该运行时已支撑 Gemini 工作负载，客户预览将于未来数月开放；配套有架构深潜文。",
+   "sourceName": "The Decoder",
+   "sourceUrl": "https://the-decoder.com/googles-agent-compute-engine-gives-every-gemini-agent-its-own-hardware-isolated-micro-virtual-machine/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-22T17:50:09.000Z",
    "available": true,
    "otherSources": 0
   }
  ],
  "sections": [
   {
-   "label": "模型",
-   "summary": null,
-   "items": [
-    {
-     "itemId": "sha256:8cfd997cf9a921e4",
-     "title": "Baseten：开源决策模型 mammoth-1 / elephant-1",
-     "summary": "Baseten Base Labs 开源决策模型 mammoth-1（27B）与 elephant-1（9B）：不生成文本，只输出选项概率分布，用于工单路由、反钓鱼与护栏。官方称 mammoth-1 居 Jev Decision Index 208 模型之首；基于 Qwen3.5 后训练，API 可试用一周。",
-     "sourceName": "sha256:8cfd997cf9a921e4",
-     "sourceUrl": "https://www.baseten.co/blog/the-best-decision-models-in-the-world-mammoth-1-and-elephant-1/",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-21T16:58:52.000Z",
-     "available": true,
-     "otherSources": 0
-    },
-    {
-     "itemId": "sha256:67297d2df9a3d7f1",
-     "title": "AllenAI：发布 OlmoEarth v1.3 全球卫星嵌入与探索工具",
-     "summary": "OlmoEarth v1.3 卫星嵌入 + 全球预计算嵌入与浏览器探索工具。",
-     "sourceName": "Hugging Face Blog",
-     "sourceUrl": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-22T16:11:31.000Z",
-     "available": true,
-     "otherSources": 0
-    }
-   ]
-  },
-  {
    "label": "产品",
    "summary": null,
    "items": [
     {
-     "itemId": "sha256:3e7599c6661c19f5",
-     "title": "vLLM×蚂蚁：开源量化推理内核库 Humming",
-     "summary": "蚂蚁与 vLLM 社区开源量化推理内核库 Humming：统一量化表示并以 JIT 组装 CUDA 组件，覆盖 Turing 起 GPU 与 WNA16/W8A8/W4A*。官博称多场景快于 Marlin/FlashInfer/DeepGEMM；vLLM≥0.29 可启用，八卡 H20 吞吐约升 14%–43%。",
-     "sourceName": "vLLM Blog",
-     "sourceUrl": "https://vllm.ai/blog/2026-10-21-humming",
+     "itemId": "sha256:891b7e0bbf66f86d",
+     "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
+     "summary": "OpenAI 发布 Decisions API，面向应用内快速、聚焦、低成本决策；与决策模型竞赛相关。官方称可用于任意应用。 TechCrunch：称对标 Jev，决策模型竞争升温。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/decisions-api",
      "sourceIconUrl": null,
      "firstParty": true,
-     "publishedAt": "2026-10-21T00:00:00.000Z",
+     "publishedAt": "2026-10-22T19:00:00.000Z",
+     "available": true,
+     "otherSources": 1
+    },
+    {
+     "itemId": "sha256:4182359e79e632d3",
+     "title": "Claude：经 Google Cloud 项目可调用 Anthropic 托管的 Claude Models",
+     "summary": "Claude Platform 10 月 22 日说明：Claude Models on Google Cloud（Anthropic 托管）已推出，经你的 Google Cloud 项目调用 Anthropic 运营的 Claude API。",
+     "sourceName": "Claude Platform Release Notes",
+     "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview#october-22-2026",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-22T00:00:00.000Z",
      "available": true,
      "otherSources": 0
     },
     {
-     "itemId": "sha256:be38b11f937cd76c",
-     "title": "DeepSeek 开源生产推理框架 DeepInfer",
-     "summary": "DeepSeek 以 Apache-2.0 开源生产推理框架 DeepInfer，首版面向 V4.1-Flash 离线推理：含 FlashMLA/DeepGEMM、Attention DP 与 MoE EP+EPLB、推测解码与结构化输出，支持 SM100 与昇腾 950；KV/PD 分离尚未开源。基于 vLLM。",
-     "sourceName": "GitHub · deepseek-ai/DeepInfer",
-     "sourceUrl": "https://github.com/deepseek-ai/DeepInfer",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-20T09:30:19.000Z",
-     "available": true,
-     "otherSources": 3
-    },
-    {
-     "itemId": "sha256:ee487a66d7e4ee85",
-     "title": "Anthropic：将 Agent Skills 捐赠给 Linux 基金会 AAIF",
-     "summary": "Anthropic 将 Agent Skills 捐赠给 Linux 基金会旗下 Agentic AI Foundation（AAIF）。官方称已接入 ChatGPT、Cursor、GitHub Copilot、VS Code 等逾七十个平台，并捐赠名称、Logo 与 agentskills.io；AAIF 此前已托管 MCP。",
-     "sourceName": "Simon Willison",
-     "sourceUrl": "https://simonwillison.net/2026/Oct/22/donating-agent-skills/",
+     "itemId": "sha256:7ea705cfe9f05665",
+     "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
+     "summary": "Google Cloud 在 AGNTCon 宣布 Agent Compute Engine：为每个 Gemini 智能体提供硬件隔离 microVM（独立 guest kernel、短时身份、Hyperdisk 工作区），并扩展企业侧智能体治理能力。 官方称该运行时已支撑 Gemini 工作负载，客户预览将于未来数月开放；配套有架构深潜文。",
+     "sourceName": "The Decoder",
+     "sourceUrl": "https://the-decoder.com/googles-agent-compute-engine-gives-every-gemini-agent-its-own-hardware-isolated-micro-virtual-machine/",
      "sourceIconUrl": null,
      "firstParty": false,
-     "publishedAt": "2026-10-22T18:09:56.000Z",
+     "publishedAt": "2026-10-22T17:50:09.000Z",
      "available": true,
      "otherSources": 0
     },
@@ -120,16 +114,16 @@
      "otherSources": 1
     },
     {
-     "itemId": "sha256:a9592e53f2c7c709",
-     "title": "NVIDIA：DGX Spark 官方支持 8 机集群，统一内存可达 1TB",
-     "summary": "NVIDIA 开发者博客称，GTC Berlin 宣布 DGX Spark 正式支持八节点集群，统一内存扩展至约 1TB，面向桌面侧前沿模型与多智能体工作负载。 NVIDIA Sync 的 Cluster Assistant 负责组网；八节点支持计划年内落地。此前媒体已有二手报道，本条为官方技术说明。",
-     "sourceName": "NVIDIA Technical Blog",
-     "sourceUrl": "https://developer.nvidia.com/blog/running-frontier-class-ai-models-across-8-nvidia-dgx-spark-nodes/",
+     "itemId": "sha256:3e7599c6661c19f5",
+     "title": "vLLM 开源 Humming：面向量化推理的内核库",
+     "summary": "vLLM 博客宣布与蚂蚁集团社区合作开源 Humming：面向量化推理的灵活内核库，覆盖多种 GPU 与量化格式，并给出 dense/MoE 性能与集成路径。 属推理栈基础设施更新；文档说明如何把内核接入 vLLM，意在降低量化部署摩擦与跨硬件内核维护成本。",
+     "sourceName": "vLLM Blog",
+     "sourceUrl": "https://vllm.ai/blog/2026-10-21-humming",
      "sourceIconUrl": null,
      "firstParty": true,
-     "publishedAt": "2026-10-22T16:00:00.000Z",
+     "publishedAt": "2026-10-21T00:00:00.000Z",
      "available": true,
-     "otherSources": 1
+     "otherSources": 0
     }
    ]
   },
@@ -137,6 +131,30 @@
    "label": "论文",
    "summary": null,
    "items": [
+    {
+     "itemId": "sha256:51888f116f5b0837",
+     "title": "微软 ThinkingBox：把数据库评分变成 RL 奖励做智能体后训练",
+     "summary": "Hugging Face 博客刊出微软 ThinkingBox：将数据库评分转为强化学习奖励，用于后训练智能体。",
+     "sourceName": "Hugging Face Blog",
+     "sourceUrl": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-22T22:24:34.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:5ddee939d5fa55a3",
+     "title": "微软：发布 MAI-DxO 诊断编排器，复杂病例准确率称超医生",
+     "summary": "微软 AI 发布 Medical Superintelligence 进展：MAI-DxO 以多智能体编排做序列诊断；公司称在 NEJM 复杂病例上准确率 83%，对照全科医生约 36%（有参考资料）。 论文与 Science 报道同步；TechCrunch 指出增益相当部分来自底层模型，编排在复杂病例上另有提升。数字均为公司/研究自述。",
+     "sourceName": "The Verge · AI",
+     "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
+     "sourceIconUrl": null,
+     "firstParty": false,
+     "publishedAt": "2026-10-22T18:00:00.000Z",
+     "available": true,
+     "otherSources": 1
+    },
     {
      "itemId": "sha256:77ec6ad66af3dcc4",
      "title": "微软研究院：宣布解决数学界 31 年难题 KLS 猜想",
@@ -146,18 +164,6 @@
      "sourceIconUrl": null,
      "firstParty": true,
      "publishedAt": "2026-10-21T16:00:00.000Z",
-     "available": true,
-     "otherSources": 0
-    },
-    {
-     "itemId": "sha256:8f93170faf71fda6",
-     "title": "DeepMind：发布全球 10 米分辨率森林类型图 ForTy 2020",
-     "summary": "Google DeepMind 与 Google Research 联合 WRI、IIASA 发布 Forest Typology（ForTy）2020，将全球每块 10×10 米土地划入六类森林类型，区分天然林、种植林与农林业等。 目标是从太空尺度区分碳汇与生物多样性差异很大的「同色异质」地表。",
-     "sourceName": "Google DeepMind Blog",
-     "sourceUrl": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-22T14:30:24.000Z",
      "available": true,
      "otherSources": 0
     }
@@ -204,6 +210,24 @@
      "otherSources": 0
     }
    ]
+  },
+  {
+   "label": "模型",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:67297d2df9a3d7f1",
+     "title": "AllenAI：发布 OlmoEarth v1.3 全球卫星嵌入与探索工具",
+     "summary": "OlmoEarth v1.3 卫星嵌入 + 全球预计算嵌入与浏览器探索工具。",
+     "sourceName": "Hugging Face Blog",
+     "sourceUrl": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-22T16:11:31.000Z",
+     "available": true,
+     "otherSources": 0
+    }
+   ]
   }
  ],
  "flashes": [
@@ -219,91 +243,223 @@
    "available": true
   },
   {
-   "itemId": "sha256:e8a8161ff83426ef",
+   "itemId": null,
    "title": "NVIDIA Cosmos3-H-Dreams：生成式仿真临床手术",
-   "summary": "Cosmos3 用手术录像做实时生成仿真；非诊疗。",
+   "summary": "NVIDIA：生成式仿真做临床手术场景。",
    "sourceName": "Hugging Face Blog",
    "sourceUrl": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
    "sourceIconUrl": null,
    "firstParty": true,
-   "publishedAt": "2026-10-20T08:00:00.000Z",
+   "publishedAt": "2026-10-21T00:00:00.000Z",
    "available": true
   },
   {
-   "itemId": "sha256:e0ab2a2e4734ec53",
+   "itemId": null,
    "title": "MiniMax 上线 M3.1 Flash：称更快更低价",
-   "summary": "称 M3.1 Flash 更快更便宜；厂方称约快三倍。",
+   "summary": "MiniMax M3.1 Flash：官方称更快更便宜。",
    "sourceName": "The Decoder",
    "sourceUrl": "https://the-decoder.com/minimax-m3-1-flash-shows-chinas-ai-price-race-has-no-floor-in-sight/",
    "sourceIconUrl": null,
    "firstParty": false,
-   "publishedAt": "2026-10-19T12:00:00.000Z",
+   "publishedAt": "2026-10-21T00:00:00.000Z",
    "available": true
   },
   {
    "itemId": "sha256:64ddfb139fec8a1c",
    "title": "OpenAI：数千智能体挖掘脑细胞实验线索",
-   "summary": "数千智能体速析小鼠脑图谱；线索待验证。",
-   "sourceName": "OpenAI News",
-   "sourceUrl": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+   "summary": "OpenAI：多智能体挖掘脑细胞实验线索。",
+   "sourceName": "OpenAI",
+   "sourceUrl": "https://openai.com/index/scaling-ai-research-for-complex-biological-data/",
    "sourceIconUrl": null,
    "firstParty": true,
-   "publishedAt": "2026-10-21T12:00:00.000Z",
+   "publishedAt": "2026-10-21T00:00:00.000Z",
    "available": true
   },
   {
-   "itemId": "sha256:e398a5281fb9586f",
+   "itemId": null,
    "title": "美国要求联邦民用机构清除 DeepSeek",
-   "summary": "美联邦民用机构禁 DeepSeek；未列安全理由。",
+   "summary": "美要求联邦民用机构清除 DeepSeek 技术。",
    "sourceName": "The Decoder",
    "sourceUrl": "https://the-decoder.com/us-bans-deepseek-technology-across-federal-civilian-agencies/",
    "sourceIconUrl": null,
    "firstParty": false,
-   "publishedAt": "2026-10-20T12:00:00.000Z",
+   "publishedAt": "2026-10-21T00:00:00.000Z",
    "available": true
   },
   {
    "itemId": "sha256:5c32755a71da49ed",
    "title": "NVIDIA Kumo Forecast：预训练时序 + 历史检索",
-   "summary": "Kumo：预训练时序加历史模式检索做预测。",
+   "summary": "NVIDIA Kumo Forecast：预训练时序表征加检索。",
    "sourceName": "Hugging Face Blog",
    "sourceUrl": "https://huggingface.co/blog/nvidia/kumo-forecast",
    "sourceIconUrl": null,
    "firstParty": true,
-   "publishedAt": "2026-10-21T08:00:00.000Z",
+   "publishedAt": "2026-10-21T00:00:00.000Z",
    "available": true
   },
   {
-   "itemId": "sha256:585ae24e026f9647",
+   "itemId": null,
    "title": "MemTensor 开源 MemT 1.0：记忆焊进 Transformer",
-   "summary": "MemT 把可学习记忆通路焊进 Transformer。",
+   "summary": "MemTensor 开源 MemT 1.0，记忆进 Transformer。",
    "sourceName": "量子位",
    "sourceUrl": "https://www.qbitai.com/2026/10/504456.html",
    "sourceIconUrl": null,
    "firstParty": false,
-   "publishedAt": "2026-10-20T12:50:00.000Z",
+   "publishedAt": "2026-10-21T00:00:00.000Z",
    "available": true
   },
   {
-   "itemId": "sha256:2eb3a52bda810ce1",
+   "itemId": null,
    "title": "ElevenLabs 发布实时语音到语音模型",
-   "summary": "ElevenLabs 推两款实时语音到语音模型。",
+   "summary": "ElevenLabs：新语音到语音模型面向实时对话。",
    "sourceName": "The Decoder",
    "sourceUrl": "https://the-decoder.com/elevenlabs-releases-two-new-speech-to-speech-models-designed-for-real-time-ai-conversations/",
    "sourceIconUrl": null,
    "firstParty": false,
-   "publishedAt": "2026-10-20T12:00:00.000Z",
+   "publishedAt": "2026-10-21T00:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:b514b87bc64d3d97",
+   "title": "报道：OpenAI 洽谈约 300 亿美元融资、估值约 1.25 万亿美元",
+   "summary": "【传闻】称 OpenAI 洽谈约 300 亿融资、估值 1.25 万亿。",
+   "sourceName": "TechCrunch",
+   "sourceUrl": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-22T22:08:24.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:50dd0c98f11d38b5",
+   "title": "Meta 重新开放 Muse 对话分享链接",
+   "summary": "Meta 修复后重新开放 Muse 分享链接。",
+   "sourceName": "The Verge",
+   "sourceUrl": "https://www.theverge.com/tech/1017066/meta-muse-sharing-back-on-artifiacts",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-22T20:24:04.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:c2ed162a157709f5",
+   "title": "IBM Granite Speech 5.0：更快更准的转写、翻译与归因",
+   "summary": "IBM Granite Speech 5.0：转写翻译与归因升级。",
+   "sourceName": "Hugging Face Blog",
+   "sourceUrl": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-21T14:58:18.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:27c0a5d3fc255134",
+   "title": "谷歌：用 AI 辅助一线孕产超声，服务基层母婴筛查",
+   "summary": "谷歌：AI 辅助基层一线孕产超声筛查。",
+   "sourceName": "Google Research",
+   "sourceUrl": "https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-21T16:23:53.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:5c52b7d34becd1cc",
+   "title": "HF TorchNeuron：Trainium 上跑 HF 模型，并开系统级性能分析",
+   "summary": "HF TorchNeuron：Trainium 跑模型并做性能分析。",
+   "sourceName": "Hugging Face Blog",
+   "sourceUrl": "https://huggingface.co/blog/hf-torchneuron",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-19T00:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:32694d7b05454b04",
+   "title": "NVIDIA×Hugging Face 上线 SimReady Central：2000+ 仿真就绪 3D 资产库",
+   "summary": "NVIDIA×HF：SimReady Central 上线 2000+ 资产。",
+   "sourceName": "Hugging Face Blog",
+   "sourceUrl": "https://huggingface.co/blog/nvidia/simready-central-assets-robotics-ai-factories",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-21T10:59:42.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:7decc1c5c0496d6c",
+   "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
+   "summary": "NVIDIA Microduck：Isaac Lab 仿真后部署真机。",
+   "sourceName": "Hugging Face Blog",
+   "sourceUrl": "https://huggingface.co/blog/nvidia/microduck-isaac-lab-sim-to-real",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-21T17:58:42.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:d3f9173dc1964ad0",
+   "title": "报道：Meta Muse 上线约 40 天美国下载破 1000 万",
+   "summary": "报道称 Muse 约 40 天美国下载破千万。",
+   "sourceName": "TechCrunch",
+   "sourceUrl": "https://techcrunch.com/2026/10/20/metas-muse-hits-10m-u-s-downloads-in-40-days-a-milestone-reached-by-only-11-other-apps/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-20T17:12:48.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:40a01666d562060b",
+   "title": "VocabX：专用词表称可把小模型推理成本砍约 77%",
+   "summary": "VocabX：专用词表称可大幅砍小模型推理成本。",
+   "sourceName": "Hugging Face Blog",
+   "sourceUrl": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-21T17:35:36.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:be38b11f937cd76c",
+   "title": "DeepSeek 开源生产推理框架 DeepInfer",
+   "summary": "DeepSeek 开源生产推理框架 DeepInfer。",
+   "sourceName": "GitHub",
+   "sourceUrl": "https://github.com/deepseek-ai/DeepInfer",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-20T09:30:19.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:1dbe22633003a2af",
+   "title": "OpenAI 推进低资源编程语言上的编码能力",
+   "summary": "OpenAI：推进低资源编程语言编码能力。",
+   "sourceName": "OpenAI",
+   "sourceUrl": "https://openai.com/index/low-resource-programming-languages",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-19T12:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": null,
+   "title": "小红书：视频生成模型到底是怎么「记住」的？",
+   "summary": "兴趣：视频生成模型如何「记住」内容。",
+   "sourceName": "小红书",
+   "sourceUrl": "https://www.xiaohongshu.com/explore/6ad7944a0000000026022cda",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-22T00:00:00.000Z",
    "available": true
   }
  ],
  "cover": null,
  "metrics": {
   "totalEvents": 12,
-  "sourcesCount": 14,
-  "firstPartyEvents": 11,
-  "modelsReleased": 2
+  "sourcesCount": 9,
+  "firstPartyEvents": 10,
+  "modelsReleased": 1
  },
- "readingMinutes": 5,
+ "readingMinutes": 4,
  "prev": "2026-10-22",
  "next": null
 }

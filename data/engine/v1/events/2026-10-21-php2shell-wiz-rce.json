@@ -14,7 +14,7 @@
  "latestReport": null,
  "whyHot": {
   "participants48h": 6,
-  "newParticipants6h": 1,
+  "newParticipants6h": 0,
   "recentReports24h": 1,
   "observationComplete": true,
   "rank": 1
@@ -40,6 +40,18 @@
   }
  ],
  "officialReports": [
+  {
+   "id": "sha256:7067eadac3a0d563",
+   "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
+   "summary": null,
+   "source": {
+    "name": "Wiz Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-21T13:59:59.000Z",
+   "selected": false,
+   "originalUrl": "https://www.wiz.io/blog/php2shell-php-rce"
+  },
   {
    "id": "sha256:de9db6f384cbc788",
    "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
@@ -107,10 +119,10 @@
    "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
    "summary": null,
    "source": {
-    "name": "Hacker News（AI 关键词 ≥100 分）",
-    "firstParty": false
+    "name": "Wiz Blog",
+    "firstParty": true
    },
-   "publishedAt": "2026-10-21T13:43:19.000Z",
+   "publishedAt": "2026-10-21T13:59:59.000Z",
    "selected": false,
    "originalUrl": "https://www.wiz.io/blog/php2shell-php-rce"
   },
@@ -165,12 +177,12 @@
   },
   {
    "hour": "2026-10-21T14:00:00.000Z",
-   "heat": 18.1,
+   "heat": 18.2,
    "participants": 2
   },
   {
    "hour": "2026-10-21T15:00:00.000Z",
-   "heat": 17.6,
+   "heat": 17.7,
    "participants": 2
   },
   {
@@ -180,37 +192,37 @@
   },
   {
    "hour": "2026-10-21T17:00:00.000Z",
-   "heat": 16.6,
+   "heat": 16.7,
    "participants": 2
   },
   {
    "hour": "2026-10-21T18:00:00.000Z",
-   "heat": 26.1,
+   "heat": 26.2,
    "participants": 3
   },
   {
    "hour": "2026-10-21T19:00:00.000Z",
-   "heat": 35.3,
+   "heat": 35.4,
    "participants": 4
   },
   {
    "hour": "2026-10-21T20:00:00.000Z",
-   "heat": 44.2,
+   "heat": 44.3,
    "participants": 5
   },
   {
    "hour": "2026-10-21T21:00:00.000Z",
-   "heat": 42.9,
+   "heat": 43.0,
    "participants": 5
   },
   {
    "hour": "2026-10-21T22:00:00.000Z",
-   "heat": 41.7,
+   "heat": 41.8,
    "participants": 5
   },
   {
    "hour": "2026-10-21T23:00:00.000Z",
-   "heat": 40.5,
+   "heat": 40.6,
    "participants": 5
   },
   {
@@ -230,7 +242,7 @@
   },
   {
    "hour": "2026-10-22T03:00:00.000Z",
-   "heat": 36.1,
+   "heat": 36.2,
    "participants": 5
   },
   {
@@ -245,7 +257,7 @@
   },
   {
    "hour": "2026-10-22T06:00:00.000Z",
-   "heat": 33.1,
+   "heat": 33.2,
    "participants": 5
   },
   {
@@ -275,7 +287,7 @@
   },
   {
    "hour": "2026-10-22T12:00:00.000Z",
-   "heat": 27.8,
+   "heat": 27.9,
    "participants": 5
   },
   {
@@ -290,7 +302,7 @@
   },
   {
    "hour": "2026-10-22T15:00:00.000Z",
-   "heat": 25.5,
+   "heat": 25.6,
    "participants": 5
   },
   {
@@ -305,18 +317,43 @@
   },
   {
    "hour": "2026-10-22T18:00:00.000Z",
-   "heat": 32.6,
+   "heat": 32.7,
    "participants": 6
   },
   {
    "hour": "2026-10-22T19:00:00.000Z",
    "heat": 31.7,
    "participants": 6
+  },
+  {
+   "hour": "2026-10-22T20:00:00.000Z",
+   "heat": 30.8,
+   "participants": 6
+  },
+  {
+   "hour": "2026-10-22T21:00:00.000Z",
+   "heat": 30.0,
+   "participants": 6
+  },
+  {
+   "hour": "2026-10-22T22:00:00.000Z",
+   "heat": 29.1,
+   "participants": 6
+  },
+  {
+   "hour": "2026-10-22T23:00:00.000Z",
+   "heat": 28.3,
+   "participants": 6
+  },
+  {
+   "hour": "2026-10-23T00:00:00.000Z",
+   "heat": 27.5,
+   "participants": 6
   }
  ],
  "related": [],
  "topics": [],
- "recommendReason": "智能体挖出 PHP 高危 RCE，Wiz/OpenAI 协调披露",
+ "recommendReason": "OpenAI 协调披露：智能体挖出 PHP 高危 RCE",
  "primaryUrl": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
  "rankDelta": 0,
  "cover": {

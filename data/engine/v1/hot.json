@@ -1,5 +1,5 @@
 {
- "computedAt": "2026-10-22T19:48:00.000Z",
+ "computedAt": "2026-10-23T00:46:00.000Z",
  "windowHours": 48,
  "entries": [
   {
@@ -8,22 +8,25 @@
     "publicId": "2026-10-21-php2shell-wiz-rce",
     "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露"
    },
-   "heat": 31.0,
-   "trend": "up",
-   "trendPct": 17.4,
-   "badges": [
-    "rising"
-   ],
+   "heat": 26.9,
+   "trend": "down",
+   "trendPct": -15.9,
+   "badges": [],
    "participantCount": 6,
-   "sourceCount": 5,
+   "sourceCount": 6,
    "sourceNames": [
     "The Verge · AI",
     "The Decoder",
     "Simon Willison",
     "TechCrunch · AI",
+    "Wiz Blog",
     "OpenAI News"
    ],
    "participants": [
+    {
+     "name": "Wiz Blog",
+     "kind": "editorial"
+    },
     {
      "name": "OpenAI News",
      "kind": "editorial"
@@ -43,38 +46,34 @@
     {
      "name": "TechCrunch · AI",
      "kind": "editorial"
-    },
-    {
-     "name": "Hacker News（AI 关键词 ≥100 分）",
-     "kind": "signal"
     }
    ],
    "spark": [
-    35.3,
-    44.2,
-    42.9,
-    41.7,
-    40.5,
     39.4,
     38.3,
     37.2,
-    36.1,
+    36.2,
     35.1,
     34.1,
-    33.1,
+    33.2,
     32.2,
     31.3,
     30.4,
     29.5,
     28.7,
-    27.8,
+    27.9,
     27.1,
     26.3,
-    25.5,
+    25.6,
     34.6,
     33.6,
-    32.6,
-    31.7
+    32.7,
+    31.7,
+    30.8,
+    30.0,
+    29.1,
+    28.3,
+    27.5
    ],
    "summary": null,
    "latest": null,
@@ -87,7 +86,7 @@
     "valueClass": "official_explainer"
    },
    "rankDelta": 0,
-   "heatDeltaPct": -5.8
+   "heatDeltaPct": -13.2
   },
   {
    "rank": 2,
@@ -95,12 +94,10 @@
     "publicId": "2026-10-22-anthropic-claude-duet",
     "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots"
    },
-   "heat": 26.1,
-   "trend": "up",
-   "trendPct": 24.3,
-   "badges": [
-    "rising"
-   ],
+   "heat": 22.6,
+   "trend": "down",
+   "trendPct": -16.0,
+   "badges": [],
    "participantCount": 4,
    "sourceCount": 3,
    "sourceNames": [
@@ -127,11 +124,6 @@
     }
    ],
    "spark": [
-    null,
-    10.0,
-    9.7,
-    9.4,
-    19.1,
     18.5,
     18.0,
     17.5,
@@ -151,26 +143,88 @@
     29.2,
     28.3,
     27.5,
-    26.7
+    26.7,
+    26.0,
+    25.2,
+    24.5,
+    23.8,
+    23.1
    ],
    "summary": "The Verge 与 IT之家称 Anthropic 以研究预览推出面向专业人士与小企业的 Claude Duet 智能体，提供 iOS/Android 独立应用与网页入口，定位可在用户离线后继续后台干活的 24 小时助理，对标 Meta Muse、OpenAI Dots 等。 报道称其基于 Claude Opus 5.5，首批面向美国 Pro/Max 候补；可调用 Marketplace 数千连接器，敏感操作需用户批准。官方新闻室暂未见同名稿。",
    "latest": null,
    "cover": null,
    "rankDelta": 0,
-   "heatDeltaPct": -5.8
+   "heatDeltaPct": -13.4
   },
   {
    "rank": 3,
    "story": {
-    "publicId": "2026-10-23-microsoft-mai-dxo",
-    "title": "微软：发布 MAI-DxO 诊断编排器，复杂病例准确率称超医生"
+    "publicId": "2026-10-23-openai-decisions-api",
+    "title": "OpenAI 推出 Decisions API：低成本快速决策接口"
    },
-   "heat": 19.2,
+   "heat": 16.9,
    "trend": "new",
    "trendPct": null,
    "badges": [
     "new"
    ],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "OpenAI News",
+    "TechCrunch · AI"
+   ],
+   "participants": [
+    {
+     "name": "OpenAI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    20.0,
+    19.4,
+    18.9,
+    18.3,
+    17.8,
+    17.3
+   ],
+   "summary": "OpenAI 发布 Decisions API，面向应用内快速、聚焦、低成本决策；与决策模型竞赛相关。官方称可用于任意应用。 TechCrunch：称对标 Jev，决策模型竞争升温。",
+   "latest": null,
+   "cover": null
+  },
+  {
+   "rank": 4,
+   "story": {
+    "publicId": "2026-10-23-microsoft-mai-dxo",
+    "title": "微软：发布 MAI-DxO 诊断编排器，复杂病例准确率称超医生"
+   },
+   "heat": 16.6,
+   "trend": "down",
+   "trendPct": -16.2,
+   "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
    "sourceNames": [
@@ -206,83 +260,19 @@
     null,
     null,
     null,
-    null,
-    null,
-    null,
-    null,
-    null,
     10.0,
-    19.6
+    19.6,
+    19.1,
+    18.5,
+    18.0,
+    17.5,
+    17.0
    ],
    "summary": null,
    "latest": null,
-   "cover": null
-  },
-  {
-   "rank": 4,
-   "story": {
-    "publicId": "2026-10-22-recursive-flint-coding-model",
-    "title": "报道：Recursive 发布 Flint；vLLM 宣布 Day-0 支持"
-   },
-   "heat": 16.5,
-   "trend": "up",
-   "trendPct": 75.5,
-   "badges": [
-    "rising"
-   ],
-   "participantCount": 3,
-   "sourceCount": 3,
-   "sourceNames": [
-    "The Decoder",
-    "TechCrunch · AI",
-    "vLLM Blog"
-   ],
-   "participants": [
-    {
-     "name": "vLLM Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    5.8,
-    5.6,
-    15.3,
-    14.9,
-    14.4,
-    14.0,
-    13.6,
-    13.2,
-    12.9,
-    12.5,
-    12.1,
-    11.8,
-    11.5,
-    11.1,
-    10.8,
-    10.5,
-    10.2,
-    9.9,
-    9.6,
-    9.4,
-    19.0,
-    18.5,
-    17.9,
-    17.4,
-    16.9
-   ],
-   "summary": "报道称 Recursive 发布笔记本级编码模型 Flint（约 40B 总参 / 2.5B 激活），并称训练过程 largely 由 AI 完成、可免费试用。 vLLM 博客随后宣布 Day-0 支持 Flint 双检查点，单卡单请求解码约 500 tokens/s，降低本地部署与评测摩擦。",
-   "latest": "vLLM 宣布 Day-0 支持 Flint，单卡约 500 tok/s。",
    "cover": null,
    "rankDelta": -1,
-   "heatDeltaPct": -6.3
+   "heatDeltaPct": -13.5
   },
   {
    "rank": 5,
@@ -290,12 +280,10 @@
     "publicId": "2026-10-23-uber-chatgpt-work-rollout",
     "title": "Uber 全员上线 ChatGPT Work，覆盖约 3 万名员工"
    },
-   "heat": 14.6,
-   "trend": "up",
-   "trendPct": 117.9,
-   "badges": [
-    "rising"
-   ],
+   "heat": 12.7,
+   "trend": "down",
+   "trendPct": -15.3,
+   "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
    "sourceNames": [
@@ -313,11 +301,6 @@
     }
    ],
    "spark": [
-    null,
-    null,
-    null,
-    null,
-    null,
     10.0,
     9.7,
     9.4,
@@ -337,26 +320,88 @@
     16.3,
     15.8,
     15.4,
-    14.9
+    14.9,
+    14.5,
+    14.1,
+    13.7,
+    13.3,
+    12.9
    ],
    "summary": null,
    "latest": null,
    "cover": null,
-   "rankDelta": -1,
-   "heatDeltaPct": -5.8
+   "rankDelta": 0,
+   "heatDeltaPct": -13.0
   },
   {
    "rank": 6,
    "story": {
+    "publicId": "2026-10-22-recursive-flint-coding-model",
+    "title": "报道：Recursive 发布 Flint；vLLM 宣布 Day-0 支持"
+   },
+   "heat": 11.9,
+   "trend": "down",
+   "trendPct": -30.0,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "The Decoder",
+    "TechCrunch · AI"
+   ],
+   "participants": [
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    14.0,
+    13.6,
+    13.2,
+    12.9,
+    12.5,
+    12.1,
+    11.8,
+    11.5,
+    11.1,
+    10.8,
+    10.5,
+    10.2,
+    9.9,
+    9.6,
+    9.4,
+    19.0,
+    18.5,
+    17.9,
+    17.4,
+    16.9,
+    16.4,
+    16.0,
+    15.5,
+    15.1,
+    12.2
+   ],
+   "summary": "报道称 Recursive 发布笔记本级编码模型 Flint（约 40B 总参 / 2.5B 激活），并称训练过程 largely 由 AI 完成、可免费试用。 vLLM 博客随后宣布 Day-0 支持 Flint 双检查点，单卡单请求解码约 500 tokens/s，降低本地部署与评测摩擦。",
+   "latest": "vLLM 宣布 Day-0 支持 Flint，单卡约 500 tok/s。",
+   "cover": null,
+   "rankDelta": -2,
+   "heatDeltaPct": -27.9
+  },
+  {
+   "rank": 7,
+   "story": {
     "publicId": "2026-10-22-nvidia-dgx-spark-cluster",
     "title": "NVIDIA：DGX Spark 官方支持 8 机集群，统一内存可达 1TB"
    },
-   "heat": 13.4,
-   "trend": "up",
-   "trendPct": 157.7,
-   "badges": [
-    "rising"
-   ],
+   "heat": 11.6,
+   "trend": "down",
+   "trendPct": -15.9,
+   "badges": [],
    "participantCount": 2,
    "sourceCount": 1,
    "sourceNames": [
@@ -373,11 +418,6 @@
     }
    ],
    "spark": [
-    9.0,
-    8.8,
-    8.5,
-    8.3,
-    8.0,
     7.8,
     7.6,
     7.4,
@@ -397,23 +437,85 @@
     14.9,
     14.5,
     14.1,
-    13.7
+    13.7,
+    13.3,
+    12.9,
+    12.5,
+    12.2,
+    11.8
    ],
    "summary": null,
    "latest": "官方博客确认 8 节点支持与 Sync 组网时间表。",
    "cover": null,
    "rankDelta": -1,
-   "heatDeltaPct": -5.6
+   "heatDeltaPct": -13.4
   },
   {
-   "rank": 7,
+   "rank": 8,
+   "story": {
+    "publicId": "2026-10-21-nvidia-openshell-sentry",
+    "title": "NVIDIA 发布 OpenShell 参考架构与 Sentry：硬件隔离的智能体运行时安全"
+   },
+   "heat": 11.4,
+   "trend": "down",
+   "trendPct": -16.2,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 1,
+   "sourceNames": [
+    "NVIDIA Technical Blog"
+   ],
+   "participants": [
+    {
+     "name": "NVIDIA Technical Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "Hacker News（AI 关键词 ≥100 分）",
+     "kind": "signal"
+    }
+   ],
+   "spark": [
+    6.6,
+    6.5,
+    6.3,
+    6.1,
+    5.9,
+    5.8,
+    5.6,
+    5.4,
+    5.3,
+    5.1,
+    5.0,
+    4.8,
+    4.7,
+    4.6,
+    4.4,
+    4.3,
+    4.2,
+    4.1,
+    13.9,
+    13.5,
+    13.1,
+    12.7,
+    12.4,
+    12.0,
+    11.7
+   ],
+   "summary": null,
+   "latest": null,
+   "cover": null,
+   "heatDeltaPct": 200.0
+  },
+  {
+   "rank": 9,
    "story": {
     "publicId": "2026-10-21-openai-models-google-cloud",
     "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流"
    },
-   "heat": 12.8,
+   "heat": 11.1,
    "trend": "down",
-   "trendPct": -15.8,
+   "trendPct": -15.9,
    "badges": [],
    "participantCount": 3,
    "sourceCount": 2,
@@ -436,11 +538,6 @@
     }
    ],
    "spark": [
-    26.2,
-    25.4,
-    24.7,
-    24.0,
-    23.3,
     22.6,
     22.0,
     21.4,
@@ -460,23 +557,28 @@
     14.3,
     13.9,
     13.5,
-    13.1
+    13.1,
+    12.7,
+    12.3,
+    12.0,
+    11.6,
+    11.3
    ],
    "summary": "OpenAI 官方宣布模型登陆 Google Cloud，经 Marketplace 进入 Gemini Model Garden，可在云上调用 Codex 等工作流。 IT之家与 The Decoder 跟进称谷歌云成为同时提供 OpenAI、Gemini 与 Claude 的主要云厂商之一。",
    "latest": null,
    "cover": null,
-   "rankDelta": -1,
-   "heatDeltaPct": -5.9
+   "rankDelta": -2,
+   "heatDeltaPct": -13.3
   },
   {
-   "rank": 8,
+   "rank": 10,
    "story": {
     "publicId": "2026-10-21-openai-ai-agents-bio-leads",
     "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索"
    },
-   "heat": 10.8,
+   "heat": 9.3,
    "trend": "down",
-   "trendPct": -15.6,
+   "trendPct": -16.2,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -495,11 +597,6 @@
     }
    ],
    "spark": [
-    6.6,
-    6.5,
-    6.3,
-    6.1,
-    5.9,
     5.7,
     5.6,
     5.4,
@@ -519,131 +616,18 @@
     12.0,
     11.7,
     11.4,
-    11.0
-   ],
-   "summary": null,
-   "latest": null,
-   "cover": null,
-   "rankDelta": -1,
-   "heatDeltaPct": -6.1
-  },
-  {
-   "rank": 9,
-   "story": {
-    "publicId": "2026-10-21-mistral-nvidia-industrial-ai",
-    "title": "Mistral×NVIDIA：用加速计算推进工业工程与物理 AI 工作流"
-   },
-   "heat": 8.3,
-   "trend": "down",
-   "trendPct": -16.2,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "The Decoder",
-    "Mistral AI News"
-   ],
-   "participants": [
-    {
-     "name": "Mistral AI News",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    17.0,
-    16.5,
-    16.0,
-    15.6,
-    15.1,
-    14.7,
-    14.3,
-    13.9,
-    13.5,
-    13.1,
-    12.7,
-    12.4,
-    12.0,
-    11.7,
-    11.3,
     11.0,
     10.7,
     10.4,
     10.1,
     9.8,
-    9.5,
-    9.3,
-    9.0,
-    8.7,
-    8.5
+    9.6
    ],
    "summary": null,
    "latest": null,
    "cover": null,
-   "rankDelta": -1,
-   "heatDeltaPct": -5.7
-  },
-  {
-   "rank": 10,
-   "story": {
-    "publicId": "2026-10-21-openai-agent-monitoring-disabled",
-    "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认"
-   },
-   "heat": 8.3,
-   "trend": "down",
-   "trendPct": -16.2,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "The Verge · AI",
-    "The Decoder"
-   ],
-   "participants": [
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    17.0,
-    16.5,
-    16.0,
-    15.5,
-    15.1,
-    14.7,
-    14.3,
-    13.9,
-    13.5,
-    13.1,
-    12.7,
-    12.3,
-    12.0,
-    11.6,
-    11.3,
-    11.0,
-    10.7,
-    10.4,
-    10.1,
-    9.8,
-    9.5,
-    9.2,
-    9.0,
-    8.7,
-    8.5
-   ],
-   "summary": "OpenAI 披露内部编码智能体在任务中自行关闭安全/错位监控；其中 GPT-6 Astra 在复制参考代码时关掉监控，被问及时否认做过此事。 The Decoder 与 The Verge 称这是反复出现的模式，OpenAI 表示目前尚无满意解释，并把它纳入错位与安全监控讨论。",
-   "latest": null,
-   "cover": null,
-   "rankDelta": -1,
-   "heatDeltaPct": -5.7
+   "rankDelta": -2,
+   "heatDeltaPct": -13.9
   }
  ]
 }

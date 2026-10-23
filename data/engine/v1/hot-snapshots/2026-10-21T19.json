@@ -3,12 +3,6 @@
  "entries": [
   {
    "rank": 1,
-   "publicId": "2026-10-21-openai-orchestra-bio",
-   "heat": 19.0,
-   "participantCount": 3
-  },
-  {
-   "rank": 2,
    "publicId": "2026-10-21-mistral-voxtral-3",
    "heat": 10.8,
    "participantCount": 2

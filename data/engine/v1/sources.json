@@ -8,6 +8,13 @@
    "homepage": "https://hnrss.org"
   },
   {
+   "sourceId": "rss-claude-release-notes",
+   "name": "Claude Platform Release Notes",
+   "tier": "T1",
+   "kind": "editorial",
+   "homepage": "https://platform.claude.com"
+  },
+  {
    "sourceId": "rss-google-research",
    "name": "Google Research Blog",
    "tier": "T1",

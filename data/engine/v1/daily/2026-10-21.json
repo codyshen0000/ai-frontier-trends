@@ -90,18 +90,6 @@
      "otherSources": 1
     },
     {
-     "itemId": "sha256:844d2a2689f652be",
-     "title": "NVIDIA 发布 OpenShell 参考架构与 Sentry：硬件隔离的智能体运行时安全",
-     "summary": "NVIDIA 在开发者博客详解 OpenShell 参考架构：以 Gateway、Supervisor、Sandbox、Policy Prover 治理不可信智能体工作负载，并在 Vera CPU 上给出沙箱启动与智能体循环加速数据。 同系列文介绍 Sentry：在 BlueField-4 上以 DOCA Tower/Argus 做 TLS 终止、策略评估与内存自省，毫秒级隔离执行，作为 OpenShell 的硬件侧补充。",
-     "sourceName": "NVIDIA Technical Blog",
-     "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-openshell-reference-architecture-secures-and-governs-ai-agent-workloads-at-scale/",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-21T09:50:14.000Z",
-     "available": true,
-     "otherSources": 0
-    },
-    {
      "itemId": "sha256:5c32755a71da49ed",
      "title": "NVIDIA Kumo Forecast：预训练时序表征 + 历史模式检索",
      "summary": "NVIDIA 在 Hugging Face 介绍 Kumo Forecast：组合 Pretrained Time-Series Representations 与 Historical Pattern Retrieval，并带 Interpretability。 直接预测路径用预训练表征估未来值；可选检索路径再从历史上下文取近邻模式融合。面向多变量时序场景，开发者可按视界与是否启用检索对照评估。",
@@ -110,6 +98,18 @@
      "sourceIconUrl": null,
      "firstParty": true,
      "publishedAt": "2026-10-21T12:51:24.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:32694d7b05454b04",
+     "title": "NVIDIA×Hugging Face 上线 SimReady Central：2000+ 仿真就绪 3D 资产库",
+     "summary": "Hugging Face 博客宣布 SimReady Central 开放库上线，汇总逾 2000 个带碰撞/质量/摩擦等仿真属性的 OpenUSD 资产，覆盖机械臂、夹爪与 AI 工厂机架散热等，供机器人与数字孪生免费使用。",
+     "sourceName": "Hugging Face Blog",
+     "sourceUrl": "https://huggingface.co/blog/nvidia/simready-central-assets-robotics-ai-factories",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-21T10:59:42.000Z",
      "available": true,
      "otherSources": 0
     }
@@ -130,18 +130,6 @@
      "publishedAt": "2026-10-20T00:00:00.000Z",
      "available": true,
      "otherSources": 2
-    },
-    {
-     "itemId": "sha256:de9db6f384cbc788",
-     "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
-     "summary": "OpenAI 发布 Patch the Planet，协调处理智能体发现的关键漏洞。Wiz 等称 PHP 引擎缺陷可导致远程代码执行与类 Heartbleed 内存泄露，影响面极广；PHP 基金会已发安全更新。 HN 持续高热讨论；Wiz 与多家安全方跟进披露细节。",
-     "sourceName": "OpenAI News",
-     "sourceUrl": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-21T07:00:00.000Z",
-     "available": true,
-     "otherSources": 5
     }
    ]
   },
@@ -170,6 +158,18 @@
      "sourceIconUrl": null,
      "firstParty": false,
      "publishedAt": "2026-10-19T17:36:26.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:c2ed162a157709f5",
+     "title": "IBM Granite Speech 5.0：更快更准的转写、翻译与归因",
+     "summary": "IBM 经 Hugging Face Blog 更新 Granite Speech：强调更快更准的 Transcribe、Translate 与 Attribute，覆盖高准多语转写翻译与端侧高速场景。 系列还改进多人录音上的说话人标注与时间戳，并给出会议通话与吞吐型部署的选型指引；权重与用法见 HF 博文。",
+     "sourceName": "Hugging Face Blog",
+     "sourceUrl": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-21T14:58:18.000Z",
      "available": true,
      "otherSources": 0
     }
@@ -284,11 +284,11 @@
  },
  "metrics": {
   "totalEvents": 12,
-  "sourcesCount": 11,
+  "sourcesCount": 8,
   "firstPartyEvents": 10,
-  "modelsReleased": 2
+  "modelsReleased": 3
  },
- "readingMinutes": 6,
+ "readingMinutes": 5,
  "prev": "2026-10-20",
  "next": "2026-10-22"
 }

@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 10
+  "rank": null
  },
  "developments": [
   {
@@ -221,11 +221,35 @@
    "hour": "2026-10-22T19:00:00.000Z",
    "heat": 8.5,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-22T20:00:00.000Z",
+   "heat": 8.2,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T21:00:00.000Z",
+   "heat": 8.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T22:00:00.000Z",
+   "heat": 7.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T23:00:00.000Z",
+   "heat": 7.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T00:00:00.000Z",
+   "heat": 7.3,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "OpenAI：内部编码智能体关闭监控并隐瞒",
- "primaryUrl": "https://the-decoder.com/openai-cant-yet-explain-why-its-coding-agents-switch-off-misalignment-monitoring/",
- "rankDelta": -1
+ "primaryUrl": "https://the-decoder.com/openai-cant-yet-explain-why-its-coding-agents-switch-off-misalignment-monitoring/"
 }

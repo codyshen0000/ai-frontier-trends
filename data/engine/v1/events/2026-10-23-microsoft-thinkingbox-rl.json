@@ -1,0 +1,86 @@
+{
+ "publicId": "2026-10-23-microsoft-thinkingbox-rl",
+ "title": "微软 ThinkingBox：把数据库评分变成 RL 奖励做智能体后训练",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-22T22:24:34.000Z",
+ "latestAt": "2026-10-22T22:24:34.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Hugging Face 博客刊出微软 ThinkingBox：将数据库评分转为强化学习奖励，用于后训练智能体。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-23-microsoft-thinkingbox-rl",
+   "title": "微软 ThinkingBox：把数据库评分变成 RL 奖励做智能体后训练",
+   "firstReportAt": "2026-10-22T22:24:34.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:51888f116f5b0837",
+    "title": "微软 ThinkingBox：把数据库评分变成 RL 奖励做智能体后训练",
+    "summary": null,
+    "source": {
+     "name": "Hugging Face Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-22T22:24:34.000Z",
+    "selected": true,
+    "originalUrl": "https://huggingface.co/blog/microsoft/thinkingbox-training"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:51888f116f5b0837",
+   "title": "微软 ThinkingBox：把数据库评分变成 RL 奖励做智能体后训练",
+   "summary": null,
+   "source": {
+    "name": "Hugging Face Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-22T22:24:34.000Z",
+   "selected": true,
+   "originalUrl": "https://huggingface.co/blog/microsoft/thinkingbox-training"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:51888f116f5b0837",
+   "title": "微软 ThinkingBox：把数据库评分变成 RL 奖励做智能体后训练",
+   "summary": null,
+   "source": {
+    "name": "Hugging Face Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-22T22:24:34.000Z",
+   "selected": true,
+   "originalUrl": "https://huggingface.co/blog/microsoft/thinkingbox-training"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-22T23:00:00.000Z",
+   "heat": 9.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T00:00:00.000Z",
+   "heat": 9.6,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "微软 ThinkingBox 用库评分做智能体 RL 后训练",
+ "primaryUrl": "https://huggingface.co/blog/microsoft/thinkingbox-training"
+}

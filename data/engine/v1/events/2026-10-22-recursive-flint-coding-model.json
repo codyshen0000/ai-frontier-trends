@@ -13,11 +13,11 @@
  "latest": "vLLM 宣布 Day-0 支持 Flint，单卡约 500 tok/s。",
  "latestReport": null,
  "whyHot": {
-  "participants48h": 3,
-  "newParticipants6h": 1,
-  "recentReports24h": 2,
+  "participants48h": 2,
+  "newParticipants6h": 0,
+  "recentReports24h": 1,
   "observationComplete": true,
-  "rank": 4
+  "rank": 6
  },
  "developments": [
   {
@@ -299,10 +299,35 @@
    "hour": "2026-10-22T19:00:00.000Z",
    "heat": 16.9,
    "participants": 3
+  },
+  {
+   "hour": "2026-10-22T20:00:00.000Z",
+   "heat": 16.4,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-22T21:00:00.000Z",
+   "heat": 16.0,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-22T22:00:00.000Z",
+   "heat": 15.5,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-22T23:00:00.000Z",
+   "heat": 15.1,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-23T00:00:00.000Z",
+   "heat": 12.2,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "primaryUrl": "https://vllm.ai/blog/2026-10-21-flint",
- "rankDelta": -1
+ "rankDelta": -2
 }

@@ -2,11 +2,15 @@
  {
   "rank": 1,
   "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
-  "heat": 31.0,
-  "trend": "up",
+  "heat": 26.9,
+  "trend": "down",
   "storyPublicId": "2026-10-21-php2shell-wiz-rce",
   "itemId": "sha256:de9db6f384cbc788",
   "participants": [
+   {
+    "name": "Wiz Blog",
+    "kind": "editorial"
+   },
    {
     "name": "OpenAI News",
     "kind": "editorial"
@@ -26,10 +30,6 @@
    {
     "name": "TechCrunch · AI",
     "kind": "editorial"
-   },
-   {
-    "name": "Hacker News（AI 关键词 ≥100 分）",
-    "kind": "signal"
    }
   ],
   "participantCount": 6
@@ -37,8 +37,8 @@
  {
   "rank": 2,
   "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
-  "heat": 26.1,
-  "trend": "up",
+  "heat": 22.6,
+  "trend": "down",
   "storyPublicId": "2026-10-22-anthropic-claude-duet",
   "itemId": "sha256:258d5ff776fa8f13",
   "participants": [
@@ -63,9 +63,28 @@
  },
  {
   "rank": 3,
-  "title": "微软：发布 MAI-DxO 诊断编排器，复杂病例准确率称超医生",
-  "heat": 19.2,
+  "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
+  "heat": 16.9,
   "trend": "new",
+  "storyPublicId": "2026-10-23-openai-decisions-api",
+  "itemId": "sha256:891b7e0bbf66f86d",
+  "participants": [
+   {
+    "name": "OpenAI News",
+    "kind": "editorial"
+   },
+   {
+    "name": "TechCrunch · AI",
+    "kind": "editorial"
+   }
+  ],
+  "participantCount": 2
+ },
+ {
+  "rank": 4,
+  "title": "微软：发布 MAI-DxO 诊断编排器，复杂病例准确率称超医生",
+  "heat": 16.6,
+  "trend": "down",
   "storyPublicId": "2026-10-23-microsoft-mai-dxo",
   "itemId": "sha256:5ddee939d5fa55a3",
   "participants": [
@@ -81,33 +100,10 @@
   "participantCount": 2
  },
  {
-  "rank": 4,
-  "title": "报道：Recursive 发布 Flint；vLLM 宣布 Day-0 支持",
-  "heat": 16.5,
-  "trend": "up",
-  "storyPublicId": "2026-10-22-recursive-flint-coding-model",
-  "itemId": "sha256:3b031f6c198ac941",
-  "participants": [
-   {
-    "name": "vLLM Blog",
-    "kind": "editorial"
-   },
-   {
-    "name": "The Decoder",
-    "kind": "editorial"
-   },
-   {
-    "name": "TechCrunch · AI",
-    "kind": "editorial"
-   }
-  ],
-  "participantCount": 3
- },
- {
   "rank": 5,
   "title": "Uber 全员上线 ChatGPT Work，覆盖约 3 万名员工",
-  "heat": 14.6,
-  "trend": "up",
+  "heat": 12.7,
+  "trend": "down",
   "storyPublicId": "2026-10-23-uber-chatgpt-work-rollout",
   "itemId": "sha256:eda525050cea8fce",
   "participants": [

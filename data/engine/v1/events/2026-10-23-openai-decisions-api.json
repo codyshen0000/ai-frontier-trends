@@ -1,0 +1,106 @@
+{
+ "publicId": "2026-10-23-openai-decisions-api",
+ "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-22T19:00:00.000Z",
+ "latestAt": "2026-10-22T19:00:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "OpenAI 发布 Decisions API，面向应用内快速、聚焦、低成本决策；与决策模型竞赛相关。官方称可用于任意应用。 TechCrunch：称对标 Jev，决策模型竞争升温。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 2,
+  "newParticipants6h": 2,
+  "recentReports24h": 2,
+  "observationComplete": true,
+  "rank": 3
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-23-openai-decisions-api",
+   "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
+   "firstReportAt": "2026-10-22T19:00:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:891b7e0bbf66f86d",
+    "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
+    "summary": "OpenAI 发布 Decisions API，面向应用内快速、聚焦、低成本决策。",
+    "source": {
+     "name": "OpenAI News",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-22T19:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://openai.com/index/decisions-api"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:891b7e0bbf66f86d",
+   "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
+   "summary": "OpenAI 发布 Decisions API，面向应用内快速、聚焦、低成本决策。",
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-22T19:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/decisions-api"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:891b7e0bbf66f86d",
+   "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
+   "summary": "OpenAI 发布 Decisions API，面向应用内快速、聚焦、低成本决策。",
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-22T19:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/decisions-api"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-22T19:00:00.000Z",
+   "heat": 20.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T20:00:00.000Z",
+   "heat": 19.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T21:00:00.000Z",
+   "heat": 18.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T22:00:00.000Z",
+   "heat": 18.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T23:00:00.000Z",
+   "heat": 17.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T00:00:00.000Z",
+   "heat": 17.3,
+   "participants": 2
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "OpenAI 推出面向应用的 Decisions API",
+ "primaryUrl": "https://openai.com/index/decisions-api"
+}

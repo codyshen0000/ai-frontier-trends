@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 1,
   "observationComplete": true,
-  "rank": 8
+  "rank": 10
  },
  "developments": [
   {
@@ -274,11 +274,36 @@
    "hour": "2026-10-22T19:00:00.000Z",
    "heat": 11.0,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-22T20:00:00.000Z",
+   "heat": 10.7,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T21:00:00.000Z",
+   "heat": 10.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T22:00:00.000Z",
+   "heat": 10.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-22T23:00:00.000Z",
+   "heat": 9.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T00:00:00.000Z",
+   "heat": 9.6,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "OpenAI：数千智能体挖脑细胞数据研究线索",
  "primaryUrl": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
- "rankDelta": -1
+ "rankDelta": -2
 }

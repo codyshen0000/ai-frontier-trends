@@ -54,12 +54,6 @@
    "publicId": "2026-10-21-openai-agent-monitoring-disabled",
    "heat": 8.8,
    "participantCount": 2
-  },
-  {
-   "rank": 10,
-   "publicId": "2026-10-21-openai-orchestra-bio",
-   "heat": 6.6,
-   "participantCount": 2
   }
  ]
 }

@@ -2,31 +2,31 @@
  "site": "前沿趋势",
  "contract_version": "1.1",
  "mode": "production",
- "data_as_of": "2026-10-23T03:22:48+08:00",
- "data_as_of_label": "数据截至 2026-10-23 03:22（北京时间）",
- "generated_at": "2026-10-23T03:48:00+08:00",
+ "data_as_of": "2026-10-23T08:27:22+08:00",
+ "data_as_of_label": "数据截至 2026-10-23 08:27（北京时间）",
+ "generated_at": "2026-10-23T08:46:00+08:00",
  "hot_rule_version": "heat-v1-48h-halflife24h (前沿情报 heat48h.py 1.1)",
- "hot_computed_at": "2026-10-23T03:48:00+08:00",
+ "hot_computed_at": "2026-10-23T08:46:00+08:00",
  "window_hours": 48,
  "spark_points": 25,
  "page_size": 20,
  "counts": {
-  "cards": 31,
+  "cards": 34,
   "pages": 2,
-  "events": 34,
+  "events": 37,
   "hot_entries": 10,
-  "search_docs": 80,
-  "feed_items": 31,
-  "passed_events": 34,
+  "search_docs": 84,
+  "feed_items": 34,
+  "passed_events": 37,
   "below_threshold_events": 0,
   "redirects": 0,
   "hot_snapshots": 19,
   "covers": 3
  },
  "last_round": {
-  "batch_id": "2026-10-23T0322",
+  "batch_id": "2026-10-23T0827",
   "status": "ok",
-  "finished_at": "2026-10-23T03:44:13+08:00"
+  "finished_at": "2026-10-23T08:44:38+08:00"
  },
  "batches": [
   {
@@ -392,6 +392,26 @@
   {
    "batch_id": "2026-10-23T0322",
    "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-23T0424",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-23T0522",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-23T0627",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-23T0725",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-23T0827",
+   "status": "ok"
   }
  ],
  "files": [
@@ -405,11 +425,11 @@
   "events/2026-10-21-mistral-nvidia-industrial-ai.json",
   "events/2026-10-21-mistral-voxtral-3.json",
   "events/2026-10-21-nvidia-kumo-forecast.json",
+  "events/2026-10-21-nvidia-openshell-sentry.json",
   "events/2026-10-21-nvidia-rfd4-proteina.json",
   "events/2026-10-21-openai-agent-monitoring-disabled.json",
   "events/2026-10-21-openai-ai-agents-bio-leads.json",
   "events/2026-10-21-openai-models-google-cloud.json",
-  "events/2026-10-21-openai-orchestra-bio.json",
   "events/2026-10-21-openai-terminal-x-eval.json",
   "events/2026-10-21-php2shell-wiz-rce.json",
   "events/2026-10-22-anthropic-claude-duet.json",
@@ -426,13 +446,15 @@
   "events/2026-10-22-wiz-artex-storm0940.json",
   "events/2026-10-22-wiz-llmjacking-cloud-billing.json",
   "events/2026-10-23-allenai-olmoearth-v13.json",
+  "events/2026-10-23-claude-models-google-cloud.json",
   "events/2026-10-23-google-agent-compute-engine.json",
   "events/2026-10-23-microsoft-mai-dxo.json",
+  "events/2026-10-23-microsoft-thinkingbox-rl.json",
   "events/2026-10-23-msr-flint-interactive.json",
+  "events/2026-10-23-openai-decisions-api.json",
   "events/2026-10-23-uber-chatgpt-work-rollout.json",
   "events/index.json",
   "feed/selected.json",
-  "hot-snapshots/2026-10-20T08.json",
   "hot-snapshots/2026-10-20T10.json",
   "hot-snapshots/2026-10-20T13.json",
   "hot-snapshots/2026-10-20T15.json",
@@ -451,6 +473,7 @@
   "hot-snapshots/2026-10-22T23.json",
   "hot-snapshots/2026-10-23T01.json",
   "hot-snapshots/2026-10-23T03.json",
+  "hot-snapshots/2026-10-23T08.json",
   "hot-strip.json",
   "hot.json",
   "meta.json",
@@ -461,5 +484,5 @@
   "timeline/page-1.json",
   "timeline/page-2.json"
  ],
- "next_round": "2026-10-23T08:25:00+08:00"
+ "next_round": "2026-10-23T12:25:00+08:00"
 }
