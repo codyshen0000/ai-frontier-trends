@@ -1,0 +1,65 @@
+{
+ "computedAt": "2026-10-23T04:46:00.000Z",
+ "entries": [
+  {
+   "rank": 1,
+   "publicId": "2026-10-21-php2shell-wiz-rce",
+   "heat": 23.9,
+   "participantCount": 6
+  },
+  {
+   "rank": 2,
+   "publicId": "2026-10-22-anthropic-claude-duet",
+   "heat": 20.2,
+   "participantCount": 4
+  },
+  {
+   "rank": 3,
+   "publicId": "2026-10-19-minimax-m31-flash",
+   "heat": 17.7,
+   "participantCount": 2
+  },
+  {
+   "rank": 4,
+   "publicId": "2026-10-23-google-agent-compute-engine",
+   "heat": 16.8,
+   "participantCount": 2
+  },
+  {
+   "rank": 5,
+   "publicId": "2026-10-23-openai-decisions-api",
+   "heat": 15.1,
+   "participantCount": 2
+  },
+  {
+   "rank": 6,
+   "publicId": "2026-10-23-microsoft-mai-dxo",
+   "heat": 14.8,
+   "participantCount": 2
+  },
+  {
+   "rank": 7,
+   "publicId": "2026-10-23-uber-chatgpt-work-rollout",
+   "heat": 11.3,
+   "participantCount": 2
+  },
+  {
+   "rank": 8,
+   "publicId": "2026-10-22-recursive-flint-coding-model",
+   "heat": 10.6,
+   "participantCount": 2
+  },
+  {
+   "rank": 9,
+   "publicId": "2026-10-22-nvidia-dgx-spark-cluster",
+   "heat": 10.3,
+   "participantCount": 2
+  },
+  {
+   "rank": 10,
+   "publicId": "2026-10-21-nvidia-openshell-sentry",
+   "heat": 10.2,
+   "participantCount": 2
+  }
+ ]
+}

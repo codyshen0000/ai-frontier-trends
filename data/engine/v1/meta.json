@@ -2,31 +2,31 @@
  "site": "前沿趋势",
  "contract_version": "1.1",
  "mode": "production",
- "data_as_of": "2026-10-23T08:56:33+08:00",
- "data_as_of_label": "数据截至 2026-10-23 08:56（北京时间）",
- "generated_at": "2026-10-23T08:59:24+08:00",
+ "data_as_of": "2026-10-23T12:26:10+08:00",
+ "data_as_of_label": "数据截至 2026-10-23 12:26（北京时间）",
+ "generated_at": "2026-10-23T12:46:00+08:00",
  "hot_rule_version": "heat-v1-48h-halflife24h (前沿情报 heat48h.py 1.1)",
- "hot_computed_at": "2026-10-23T08:59:24+08:00",
+ "hot_computed_at": "2026-10-23T12:46:00+08:00",
  "window_hours": 48,
  "spark_points": 25,
  "page_size": 20,
  "counts": {
-  "cards": 34,
+  "cards": 35,
   "pages": 2,
-  "events": 37,
+  "events": 38,
   "hot_entries": 10,
-  "search_docs": 84,
-  "feed_items": 34,
-  "passed_events": 37,
+  "search_docs": 88,
+  "feed_items": 35,
+  "passed_events": 38,
   "below_threshold_events": 0,
   "redirects": 0,
   "hot_snapshots": 19,
-  "covers": 3
+  "covers": 4
  },
  "last_round": {
-  "batch_id": "2026-10-23T0856",
+  "batch_id": "2026-10-23T1226",
   "status": "ok",
-  "finished_at": "2026-10-23T08:56:33+08:00"
+  "finished_at": "2026-10-23T12:43:36+08:00"
  },
  "batches": [
   {
@@ -416,11 +416,28 @@
   {
    "batch_id": "2026-10-23T0856",
    "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-23T0924",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-23T1023",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-23T1121",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-23T1226",
+   "status": "ok"
   }
  ],
  "files": [
   "api/index.json",
   "events/2026-10-19-deepseek-v41-flash-1017.json",
+  "events/2026-10-19-minimax-m31-flash.json",
   "events/2026-10-19-nvidia-open-models-agents-pcs.json",
   "events/2026-10-20-hf-torchneuron-trainium.json",
   "events/2026-10-20-kling-ai-4-0.json",
@@ -459,7 +476,6 @@
   "events/2026-10-23-uber-chatgpt-work-rollout.json",
   "events/index.json",
   "feed/selected.json",
-  "hot-snapshots/2026-10-20T10.json",
   "hot-snapshots/2026-10-20T13.json",
   "hot-snapshots/2026-10-20T15.json",
   "hot-snapshots/2026-10-20T16.json",
@@ -478,6 +494,7 @@
   "hot-snapshots/2026-10-23T01.json",
   "hot-snapshots/2026-10-23T03.json",
   "hot-snapshots/2026-10-23T08.json",
+  "hot-snapshots/2026-10-23T12.json",
   "hot-strip.json",
   "hot.json",
   "meta.json",
@@ -488,5 +505,5 @@
   "timeline/page-1.json",
   "timeline/page-2.json"
  ],
- "next_round": "2026-10-23T12:25:00+08:00"
+ "next_round": "2026-10-23T15:25:00+08:00"
 }

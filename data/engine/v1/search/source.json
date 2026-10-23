@@ -1,6 +1,54 @@
 {
- "generatedAt": "2026-10-23T00:59:24.000Z",
+ "generatedAt": "2026-10-23T04:46:00.000Z",
  "docs": [
+  {
+   "id": "sha256:1763a7a6e712b3bc",
+   "kind": "item",
+   "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
+   "summary": "IT之家转述 ACE：空闲自动下班、唤醒称不到 500ms；并回原事件。",
+   "publishedAt": "2026-10-23T02:55:33.000Z",
+   "sourceName": "IT之家（全站，需关键词过滤）",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-10-23-google-agent-compute-engine",
+   "originalUrl": "https://www.ithome.com/1/016/853.htm"
+  },
+  {
+   "id": "2026-10-23-google-agent-compute-engine",
+   "kind": "event",
+   "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
+   "summary": null,
+   "publishedAt": "2026-10-23T02:55:33.000Z",
+   "sourceNames": [
+    "IT之家（全站，需关键词过滤）",
+    "The Decoder"
+   ],
+   "path": "/events/2026-10-23-google-agent-compute-engine/"
+  },
+  {
+   "id": "sha256:50cb4eba8a3e4759",
+   "kind": "item",
+   "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持",
+   "summary": "vLLM：Day-0 支持 MiniMax-M3.1-Flash（Blackwell/Rubin/MI350，含 Day-0 RL）。",
+   "publishedAt": "2026-10-23T00:00:00.000Z",
+   "sourceName": "vLLM Blog",
+   "category": "model",
+   "selected": true,
+   "eventPublicId": "2026-10-19-minimax-m31-flash",
+   "originalUrl": "https://vllm.ai/blog/2026-10-23-minimax-m31-flash"
+  },
+  {
+   "id": "2026-10-19-minimax-m31-flash",
+   "kind": "event",
+   "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持",
+   "summary": null,
+   "publishedAt": "2026-10-23T00:00:00.000Z",
+   "sourceNames": [
+    "IT之家（全站，需关键词过滤）",
+    "vLLM Blog"
+   ],
+   "path": "/events/2026-10-19-minimax-m31-flash/"
+  },
   {
    "id": "sha256:51888f116f5b0837",
    "kind": "item",
@@ -81,17 +129,6 @@
    "selected": true,
    "eventPublicId": "2026-10-23-google-agent-compute-engine",
    "originalUrl": "https://the-decoder.com/googles-agent-compute-engine-gives-every-gemini-agent-its-own-hardware-isolated-micro-virtual-machine/"
-  },
-  {
-   "id": "2026-10-23-google-agent-compute-engine",
-   "kind": "event",
-   "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
-   "summary": null,
-   "publishedAt": "2026-10-22T17:50:09.000Z",
-   "sourceNames": [
-    "The Decoder"
-   ],
-   "path": "/events/2026-10-23-google-agent-compute-engine/"
   },
   {
    "id": "2026-10-21-nvidia-openshell-sentry",
@@ -182,12 +219,12 @@
    "summary": null,
    "publishedAt": "2026-10-22T15:12:27.000Z",
    "sourceNames": [
+    "Hacker News（AI 关键词 ≥100 分）",
     "OpenAI News",
     "Simon Willison",
     "TechCrunch · AI",
     "The Decoder",
-    "The Verge · AI",
-    "Wiz Blog"
+    "The Verge · AI"
    ],
    "path": "/events/2026-10-21-php2shell-wiz-rce/"
   },
@@ -941,6 +978,18 @@
     "TechCrunch · AI"
    ],
    "path": "/events/2026-10-19-nvidia-open-models-agents-pcs/"
+  },
+  {
+   "id": "sha256:f4f2a7e49951b599",
+   "kind": "item",
+   "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
+   "summary": "稀宇科技宣布 MiniMax M3.1 Flash 上线；IT之家称其在 Agentic/编程等能力提升，线上推理速度约提升近 3 倍、使用成本降低约 70%，并称 Space Bunny 匿名版本即其早期版。",
+   "publishedAt": "2026-10-19T12:20:45.000Z",
+   "sourceName": "IT之家（全站，需关键词过滤）",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-10-19-minimax-m31-flash",
+   "originalUrl": "https://www.ithome.com/1/015/013.htm"
   },
   {
    "id": "sha256:5c52b7d34becd1cc",

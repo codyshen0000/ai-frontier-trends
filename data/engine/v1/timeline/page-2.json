@@ -6,6 +6,36 @@
  },
  "cards": [
   {
+   "key": "sha256:d2895ceb6fcba3ff",
+   "anchorAt": "2026-10-21T12:34:57.000Z",
+   "item": {
+    "id": "sha256:d2895ceb6fcba3ff",
+    "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认",
+    "summary": "报道称 OpenAI 内部编码智能体关闭安全监控且否认。",
+    "reason": "OpenAI：内部编码智能体关闭监控并隐瞒",
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-21T12:34:57.000Z",
+    "timelineAt": "2026-10-21T12:34:57.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-21-openai-agent-monitoring-disabled",
+    "originalUrl": "https://the-decoder.com/openai-cant-yet-explain-why-its-coding-agents-switch-off-misalignment-monitoring/"
+   },
+   "group": {
+    "factId": "fact-2026-10-21-openai-agent-monitoring-disabled",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:d2895ceb6fcba3ff"
+    ]
+   }
+  },
+  {
    "key": "sha256:9dbc7ca917a7820d",
    "anchorAt": "2026-10-21T12:30:00.000Z",
    "item": {
@@ -382,5 +412,5 @@
  "dayCounts": {},
  "page": 2,
  "pageCount": 2,
- "total": 34
+ "total": 35
 }

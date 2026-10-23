@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 1,
   "observationComplete": true,
-  "rank": 7
+  "rank": 9
  },
  "developments": [
   {
@@ -219,11 +219,31 @@
    "hour": "2026-10-23T00:00:00.000Z",
    "heat": 11.8,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-23T01:00:00.000Z",
+   "heat": 11.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T02:00:00.000Z",
+   "heat": 11.2,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T03:00:00.000Z",
+   "heat": 10.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T04:00:00.000Z",
+   "heat": 10.5,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "NVIDIA：DGX Spark 官方支持 8 机集群",
  "primaryUrl": "https://www.ithome.com/1/016/148.htm",
- "rankDelta": -1
+ "rankDelta": -2
 }

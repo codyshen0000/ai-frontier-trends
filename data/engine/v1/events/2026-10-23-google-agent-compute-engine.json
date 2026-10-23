@@ -2,29 +2,29 @@
  "publicId": "2026-10-23-google-agent-compute-engine",
  "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
  "status": "active",
- "reportCount": 1,
- "sourceCount": 1,
+ "reportCount": 2,
+ "sourceCount": 2,
  "firstReportAt": "2026-10-22T17:50:09.000Z",
- "latestAt": "2026-10-22T17:50:09.000Z",
+ "latestAt": "2026-10-23T02:55:33.000Z",
  "digest": null,
  "digestUpdatedAt": null,
  "summary": null,
  "excerpt": null,
- "latest": null,
+ "latest": "IT之家转述：ACE 为空闲智能体自动休眠、唤醒称不到 500 毫秒",
  "latestReport": null,
  "whyHot": {
-  "participants48h": 1,
-  "newParticipants6h": 0,
-  "recentReports24h": 1,
+  "participants48h": 2,
+  "newParticipants6h": 1,
+  "recentReports24h": 2,
   "observationComplete": true,
-  "rank": null
+  "rank": 4
  },
  "developments": [
   {
    "factId": "fact-2026-10-23-google-agent-compute-engine",
    "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
    "firstReportAt": "2026-10-22T17:50:09.000Z",
-   "reportCount": 1,
+   "reportCount": 2,
    "representative": {
     "id": "sha256:7ea705cfe9f05665",
     "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
@@ -41,6 +41,18 @@
  ],
  "officialReports": [],
  "timeline": [
+  {
+   "id": "sha256:1763a7a6e712b3bc",
+   "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
+   "summary": "IT之家转述 ACE：空闲自动下班、唤醒称不到 500ms；并回原事件。",
+   "source": {
+    "name": "IT之家（全站，需关键词过滤）",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-23T02:55:33.000Z",
+   "selected": false,
+   "originalUrl": "https://www.ithome.com/1/016/853.htm"
+  },
   {
    "id": "sha256:7ea705cfe9f05665",
    "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
@@ -89,6 +101,26 @@
    "hour": "2026-10-23T00:00:00.000Z",
    "heat": 8.4,
    "participants": 1
+  },
+  {
+   "hour": "2026-10-23T01:00:00.000Z",
+   "heat": 8.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T02:00:00.000Z",
+   "heat": 7.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T03:00:00.000Z",
+   "heat": 17.7,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T04:00:00.000Z",
+   "heat": 17.2,
+   "participants": 2
   }
  ],
  "related": [],

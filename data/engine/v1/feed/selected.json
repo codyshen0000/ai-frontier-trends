@@ -8,6 +8,17 @@
  },
  "items": [
   {
+   "guid": "sha256:50cb4eba8a3e4759",
+   "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持",
+   "summary": "vLLM：Day-0 支持 MiniMax-M3.1-Flash（Blackwell/Rubin/MI350，含 Day-0 RL）。",
+   "originalUrl": "https://vllm.ai/blog/2026-10-23-minimax-m31-flash",
+   "pubDate": "2026-10-23T00:00:00.000Z",
+   "sourceName": "vLLM Blog",
+   "category": "model",
+   "categoryLabel": "模型",
+   "eventPublicId": "2026-10-19-minimax-m31-flash"
+  },
+  {
    "guid": "sha256:51888f116f5b0837",
    "title": "微软 ThinkingBox：把数据库评分变成 RL 奖励做智能体后训练",
    "summary": "",

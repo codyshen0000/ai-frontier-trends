@@ -6,6 +6,12 @@
    "publicId": "2026-10-21-mistral-voxtral-3",
    "heat": 12.0,
    "participantCount": 2
+  },
+  {
+   "rank": 2,
+   "publicId": "2026-10-19-minimax-m31-flash",
+   "heat": 11.9,
+   "participantCount": 3
   }
  ]
 }
