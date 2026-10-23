@@ -19,6 +19,17 @@
    "eventPublicId": "2026-10-19-minimax-m31-flash"
   },
   {
+   "guid": "sha256:1a543055a02f9816",
+   "title": "OpenAI 与波兰 NASK 合作推进 AI 安全与安保研究",
+   "summary": "",
+   "originalUrl": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
+   "pubDate": "2026-10-23T00:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "industry",
+   "categoryLabel": "行业",
+   "eventPublicId": "2026-10-23-openai-nask-ai-safety"
+  },
+  {
    "guid": "sha256:51888f116f5b0837",
    "title": "微软 ThinkingBox：把数据库评分变成 RL 奖励做智能体后训练",
    "summary": "",
@@ -270,17 +281,6 @@
    "category": "product",
    "categoryLabel": "产品",
    "eventPublicId": "2026-10-21-openai-models-google-cloud"
-  },
-  {
-   "guid": "sha256:64ddfb139fec8a1c",
-   "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
-   "summary": "OpenAI 与 PerturbAI、Scripps 用分布式智能体挖脑细胞数据线索。",
-   "originalUrl": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
-   "pubDate": "2026-10-21T04:50:00.000Z",
-   "sourceName": "OpenAI News",
-   "category": "paper",
-   "categoryLabel": "论文",
-   "eventPublicId": "2026-10-21-openai-ai-agents-bio-leads"
   },
   {
    "guid": "sha256:e270f5ba4688033d",

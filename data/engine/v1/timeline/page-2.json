@@ -6,6 +6,29 @@
  },
  "cards": [
   {
+   "key": "sha256:5c32755a71da49ed",
+   "anchorAt": "2026-10-21T12:51:24.000Z",
+   "item": {
+    "id": "sha256:5c32755a71da49ed",
+    "title": "NVIDIA Kumo Forecast：预训练时序表征 + 历史模式检索",
+    "summary": null,
+    "reason": "NVIDIA Kumo Forecast：预训练时序+历史模式检索",
+    "source": {
+     "name": "Hugging Face Blog"
+    },
+    "publishedAt": "2026-10-21T12:51:24.000Z",
+    "timelineAt": "2026-10-21T12:51:24.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-21-nvidia-kumo-forecast",
+    "originalUrl": "https://huggingface.co/blog/nvidia/kumo-forecast"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:d2895ceb6fcba3ff",
    "anchorAt": "2026-10-21T12:34:57.000Z",
    "item": {
@@ -115,36 +138,6 @@
     "reportCount": 3,
     "memberIds": [
      "sha256:95dedf578de78f3e"
-    ]
-   }
-  },
-  {
-   "key": "sha256:64ddfb139fec8a1c",
-   "anchorAt": "2026-10-21T04:50:00.000Z",
-   "item": {
-    "id": "sha256:64ddfb139fec8a1c",
-    "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
-    "summary": "OpenAI 与 PerturbAI、Scripps 用分布式智能体挖脑细胞数据线索。",
-    "reason": "OpenAI：数千智能体挖脑细胞数据研究线索",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-21T04:50:00.000Z",
-    "timelineAt": "2026-10-21T04:50:00.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-21-openai-ai-agents-bio-leads",
-    "originalUrl": "https://openai.com/index/scaling-ai-research-for-complex-biological-data"
-   },
-   "group": {
-    "factId": "fact-2026-10-21-openai-ai-agents-bio-leads",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:64ddfb139fec8a1c"
     ]
    }
   },

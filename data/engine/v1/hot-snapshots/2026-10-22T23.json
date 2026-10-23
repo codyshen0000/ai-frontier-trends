@@ -21,24 +21,18 @@
   },
   {
    "rank": 4,
-   "publicId": "2026-10-21-openai-ai-agents-bio-leads",
-   "heat": 12.4,
-   "participantCount": 2
-  },
-  {
-   "rank": 5,
    "publicId": "2026-10-21-mistral-nvidia-industrial-ai",
    "heat": 9.5,
    "participantCount": 2
   },
   {
-   "rank": 6,
+   "rank": 5,
    "publicId": "2026-10-21-openai-agent-monitoring-disabled",
    "heat": 9.5,
    "participantCount": 2
   },
   {
-   "rank": 7,
+   "rank": 6,
    "publicId": "2026-10-22-recursive-flint-coding-model",
    "heat": 9.1,
    "participantCount": 2

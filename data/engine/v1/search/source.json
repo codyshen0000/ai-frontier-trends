@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-23T04:46:00.000Z",
+ "generatedAt": "2026-10-23T07:46:00.000Z",
  "docs": [
   {
    "id": "sha256:1763a7a6e712b3bc",
@@ -36,6 +36,29 @@
    "selected": true,
    "eventPublicId": "2026-10-19-minimax-m31-flash",
    "originalUrl": "https://vllm.ai/blog/2026-10-23-minimax-m31-flash"
+  },
+  {
+   "id": "sha256:1a543055a02f9816",
+   "kind": "item",
+   "title": "OpenAI 与波兰 NASK 合作推进 AI 安全与安保研究",
+   "summary": null,
+   "publishedAt": "2026-10-23T00:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "industry",
+   "selected": true,
+   "eventPublicId": "2026-10-23-openai-nask-ai-safety",
+   "originalUrl": "https://openai.com/index/openai-nask-ai-safety-security-partnership"
+  },
+  {
+   "id": "2026-10-23-openai-nask-ai-safety",
+   "kind": "event",
+   "title": "OpenAI 与波兰 NASK 合作推进 AI 安全与安保研究",
+   "summary": null,
+   "publishedAt": "2026-10-23T00:00:00.000Z",
+   "sourceNames": [
+    "OpenAI News"
+   ],
+   "path": "/events/2026-10-23-openai-nask-ai-safety/"
   },
   {
    "id": "2026-10-19-minimax-m31-flash",
@@ -250,30 +273,6 @@
     "Wiz Blog"
    ],
    "path": "/events/2026-10-22-wiz-artex-storm0940/"
-  },
-  {
-   "id": "sha256:37719ab40890fac2",
-   "kind": "item",
-   "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
-   "summary": "The Decoder 转述 OpenAI 与 PerturbAI/Scripps 用智能体分析小鼠脑细胞数据。",
-   "publishedAt": "2026-10-22T10:01:53.000Z",
-   "sourceName": "The Decoder",
-   "category": "industry",
-   "selected": false,
-   "eventPublicId": "2026-10-21-openai-ai-agents-bio-leads",
-   "originalUrl": "https://the-decoder.com/openai-agents-analyze-mouse-brain-data-in-32-minutes-a-job-that-would-take-humans-months/"
-  },
-  {
-   "id": "2026-10-21-openai-ai-agents-bio-leads",
-   "kind": "event",
-   "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
-   "summary": null,
-   "publishedAt": "2026-10-22T10:01:53.000Z",
-   "sourceNames": [
-    "OpenAI News",
-    "The Decoder"
-   ],
-   "path": "/events/2026-10-21-openai-ai-agents-bio-leads/"
   },
   {
    "id": "sha256:feaddedae556a56d",
@@ -755,18 +754,6 @@
    "selected": false,
    "eventPublicId": "2026-10-21-chatgpt-ads-stack-expansion",
    "originalUrl": "https://openai.com/index/building-chatgpt-ad-stack"
-  },
-  {
-   "id": "sha256:64ddfb139fec8a1c",
-   "kind": "item",
-   "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
-   "summary": "OpenAI 与 PerturbAI、Scripps 用分布式智能体挖脑细胞数据线索。",
-   "publishedAt": "2026-10-21T04:50:00.000Z",
-   "sourceName": "OpenAI News",
-   "category": "paper",
-   "selected": true,
-   "eventPublicId": "2026-10-21-openai-ai-agents-bio-leads",
-   "originalUrl": "https://openai.com/index/scaling-ai-research-for-complex-biological-data"
   },
   {
    "id": "sha256:e270f5ba4688033d",

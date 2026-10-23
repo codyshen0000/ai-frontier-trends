@@ -117,11 +117,26 @@
    "hour": "2026-10-23T04:00:00.000Z",
    "heat": 15.4,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-23T05:00:00.000Z",
+   "heat": 15.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T06:00:00.000Z",
+   "heat": 14.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T07:00:00.000Z",
+   "heat": 14.1,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "OpenAI 推出面向应用的 Decisions API",
  "primaryUrl": "https://openai.com/index/decisions-api",
- "rankDelta": -2
+ "rankDelta": 0
 }

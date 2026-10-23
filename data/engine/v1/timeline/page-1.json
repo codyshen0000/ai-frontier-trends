@@ -37,6 +37,29 @@
    }
   },
   {
+   "key": "sha256:1a543055a02f9816",
+   "anchorAt": "2026-10-23T00:00:00.000Z",
+   "item": {
+    "id": "sha256:1a543055a02f9816",
+    "title": "OpenAI 与波兰 NASK 合作推进 AI 安全与安保研究",
+    "summary": null,
+    "reason": "OpenAI 与波兰 NASK 签 AI 安全研究合作",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-23T00:00:00.000Z",
+    "timelineAt": "2026-10-23T00:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-23-openai-nask-ai-safety",
+    "originalUrl": "https://openai.com/index/openai-nask-ai-safety-security-partnership"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:51888f116f5b0837",
    "anchorAt": "2026-10-22T22:24:34.000Z",
    "item": {
@@ -484,29 +507,6 @@
     "originalUrl": "https://openai.com/index/chatgpt-ads-expands-26-new-countries"
    },
    "group": null
-  },
-  {
-   "key": "sha256:5c32755a71da49ed",
-   "anchorAt": "2026-10-21T12:51:24.000Z",
-   "item": {
-    "id": "sha256:5c32755a71da49ed",
-    "title": "NVIDIA Kumo Forecast：预训练时序表征 + 历史模式检索",
-    "summary": null,
-    "reason": "NVIDIA Kumo Forecast：预训练时序+历史模式检索",
-    "source": {
-     "name": "Hugging Face Blog"
-    },
-    "publishedAt": "2026-10-21T12:51:24.000Z",
-    "timelineAt": "2026-10-21T12:51:24.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-21-nvidia-kumo-forecast",
-    "originalUrl": "https://huggingface.co/blog/nvidia/kumo-forecast"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-2.json",
@@ -514,15 +514,11 @@
   {
    "rank": 1,
    "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
-   "heat": 23.9,
+   "heat": 19.5,
    "trend": "down",
    "storyPublicId": "2026-10-21-php2shell-wiz-rce",
    "itemId": "sha256:de9db6f384cbc788",
    "participants": [
-    {
-     "name": "OpenAI News",
-     "kind": "editorial"
-    },
     {
      "name": "The Verge · AI",
      "kind": "editorial"
@@ -544,12 +540,12 @@
      "kind": "signal"
     }
    ],
-   "participantCount": 6
+   "participantCount": 5
   },
   {
    "rank": 2,
    "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
-   "heat": 20.2,
+   "heat": 18.5,
    "trend": "down",
    "storyPublicId": "2026-10-22-anthropic-claude-duet",
    "itemId": "sha256:258d5ff776fa8f13",
@@ -576,8 +572,8 @@
   {
    "rank": 3,
    "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持",
-   "heat": 17.7,
-   "trend": "new",
+   "heat": 16.2,
+   "trend": "down",
    "storyPublicId": "2026-10-19-minimax-m31-flash",
    "itemId": "sha256:50cb4eba8a3e4759",
    "participants": [
@@ -595,7 +591,7 @@
   {
    "rank": 4,
    "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
-   "heat": 16.8,
+   "heat": 15.4,
    "trend": "up",
    "storyPublicId": "2026-10-23-google-agent-compute-engine",
    "itemId": "sha256:7ea705cfe9f05665",
@@ -614,7 +610,7 @@
   {
    "rank": 5,
    "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
-   "heat": 15.1,
+   "heat": 13.8,
    "trend": "down",
    "storyPublicId": "2026-10-23-openai-decisions-api",
    "itemId": "sha256:891b7e0bbf66f86d",
@@ -632,9 +628,9 @@
   }
  ],
  "dayCounts": {
-  "2026-10-23": 7,
+  "2026-10-23": 8,
   "2026-10-22": 9,
-  "2026-10-21": 13,
+  "2026-10-21": 12,
   "2026-10-20": 3,
   "2026-10-19": 2,
   "2026-10-17": 1

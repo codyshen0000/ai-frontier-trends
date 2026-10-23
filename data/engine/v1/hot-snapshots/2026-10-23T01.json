@@ -39,18 +39,12 @@
   },
   {
    "rank": 7,
-   "publicId": "2026-10-21-openai-ai-agents-bio-leads",
-   "heat": 11.5,
-   "participantCount": 2
-  },
-  {
-   "rank": 8,
    "publicId": "2026-10-21-mistral-nvidia-industrial-ai",
    "heat": 8.8,
    "participantCount": 2
   },
   {
-   "rank": 9,
+   "rank": 8,
    "publicId": "2026-10-21-openai-agent-monitoring-disabled",
    "heat": 8.8,
    "participantCount": 2

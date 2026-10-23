@@ -224,11 +224,26 @@
    "hour": "2026-10-23T04:00:00.000Z",
    "heat": 11.5,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-23T05:00:00.000Z",
+   "heat": 11.2,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T06:00:00.000Z",
+   "heat": 10.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T07:00:00.000Z",
+   "heat": 10.6,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "Uber 全员上线 ChatGPT Work（约 3 万人）",
  "primaryUrl": "https://openai.com/index/uber-chatgpt-work-rollout",
- "rankDelta": -2
+ "rankDelta": 0
 }

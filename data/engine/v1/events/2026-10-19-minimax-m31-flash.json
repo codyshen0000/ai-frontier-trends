@@ -14,7 +14,7 @@
  "latestReport": null,
  "whyHot": {
   "participants48h": 2,
-  "newParticipants6h": 2,
+  "newParticipants6h": 0,
   "recentReports24h": 2,
   "observationComplete": true,
   "rank": 3
@@ -80,21 +80,6 @@
   }
  ],
  "heat": [
-  {
-   "hour": "2026-10-21T04:00:00.000Z",
-   "heat": 13.5,
-   "participants": 3
-  },
-  {
-   "hour": "2026-10-21T05:00:00.000Z",
-   "heat": 13.2,
-   "participants": 3
-  },
-  {
-   "hour": "2026-10-21T06:00:00.000Z",
-   "heat": 12.8,
-   "participants": 3
-  },
   {
    "hour": "2026-10-21T07:00:00.000Z",
    "heat": 12.4,
@@ -274,6 +259,21 @@
    "hour": "2026-10-23T04:00:00.000Z",
    "heat": 18.1,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-23T05:00:00.000Z",
+   "heat": 17.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T06:00:00.000Z",
+   "heat": 17.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T07:00:00.000Z",
+   "heat": 16.6,
+   "participants": 2
   }
  ],
  "related": [],
@@ -286,5 +286,6 @@
   "alt": "vLLM 博文配图：MiniMax-M3.1-Flash Day-0 支持示意",
   "valueClass": "product_screenshot"
  },
- "primaryUrl": "https://vllm.ai/blog/2026-10-23-minimax-m31-flash"
+ "primaryUrl": "https://vllm.ai/blog/2026-10-23-minimax-m31-flash",
+ "rankDelta": 0
 }
