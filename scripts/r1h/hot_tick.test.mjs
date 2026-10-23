@@ -21,6 +21,14 @@ import {
 } from "./lib.mjs";
 import { runHotTick } from "./hot_tick.mjs";
 import { recordPagesDeploy } from "./record_pages_deploy.mjs";
+import {
+  ENGINE_DATA_BRANCH,
+  DISPATCH_EVENT,
+  DEFAULT_DISPATCH_REPO,
+  listHotOnlyCopies,
+  tryLivePush,
+} from "./live_push.mjs";
+import { enableLivePush, refuseLiveSideEffects } from "./lib.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const OUT_1700 = join(here, "..", "engine", "__samples__", "out-1700");
@@ -452,6 +460,242 @@ describe("record_pages_deploy", () => {
       assert.equal(got.event.pages_run_id, "39822780150");
       const lines = readFileSync(counter, "utf8").trim().split("\n");
       assert.equal(lines.length, 1);
+    } finally {
+      rmSync(dir, { recursive: true, force: true });
+    }
+  });
+});
+
+describe("D2 live push (mocked git/gh, no network)", () => {
+  const liveEnv = { ENABLE_PUSH: "1", FT_R1H_ALLOW_LIVE: "1" };
+  const liveArgs = { push: true };
+
+  function seedTip(dir) {
+    const tip = join(dir, "data", "engine", "v1");
+    mkdirSync(tip, { recursive: true });
+    writeFileSync(join(tip, "hot.json"), `${JSON.stringify({ computedAt: "old", entries: [{ heat: 1 }] }, null, 2)}\n`);
+    writeFileSync(join(tip, "meta.json"), `${JSON.stringify({ data_as_of: "keep", generated_at: "old" }, null, 2)}\n`);
+    writeFileSync(join(tip, "daily.json"), `${JSON.stringify({ keep: true }, null, 2)}\n`);
+    writeFileSync(join(tip, "feed.json"), `${JSON.stringify({ keep: true }, null, 2)}\n`);
+    return tip;
+  }
+
+  function seedStaging(dir, { snapshots = false } = {}) {
+    const out = join(dir, "staging");
+    mkdirSync(out, { recursive: true });
+    writeFileSync(join(out, "hot.json"), `${JSON.stringify({ computedAt: "new", entries: [{ heat: 9 }] }, null, 2)}\n`);
+    writeFileSync(join(out, "meta.json"), `${JSON.stringify({ data_as_of: "keep", generated_at: "new", hot_computed_at: "new" }, null, 2)}\n`);
+    writeFileSync(join(out, "daily.json"), `${JSON.stringify({ leaked: true }, null, 2)}\n`);
+    if (snapshots) {
+      mkdirSync(join(out, "hot-snapshots"), { recursive: true });
+      writeFileSync(join(out, "hot-snapshots", "2026-10-23T04.json"), `${JSON.stringify({ snap: true }, null, 2)}\n`);
+    }
+    return out;
+  }
+
+  function mockGitGh({ branch = ENGINE_DATA_BRANCH, pagesRunId = "42424242" } = {}) {
+    const calls = [];
+    const run = (cmd, args = []) => {
+      calls.push([cmd, ...args]);
+      if (cmd === "git" && args.includes("rev-parse") && args.includes("--abbrev-ref")) {
+        return { status: 0, stdout: `${branch}\n`, stderr: "" };
+      }
+      if (cmd === "git" && args.includes("rev-parse") && args.includes("HEAD")) {
+        return { status: 0, stdout: "abc123def\n", stderr: "" };
+      }
+      if (cmd === "git" && args.includes("status")) {
+        return { status: 0, stdout: "M data/engine/v1/hot.json\n", stderr: "" };
+      }
+      if (cmd === "git") {
+        return { status: 0, stdout: "ok\n", stderr: "" };
+      }
+      if (cmd === "gh" && args[0] === "api") {
+        return { status: 0, stdout: "", stderr: "" };
+      }
+      if (cmd === "gh" && args[0] === "run") {
+        return {
+          status: 0,
+          stdout: JSON.stringify([
+            { databaseId: Number(pagesRunId), createdAt: new Date().toISOString(), event: "repository_dispatch", status: "queued" },
+          ]),
+          stderr: "",
+        };
+      }
+      return { status: 1, stdout: "", stderr: `unexpected ${cmd}` };
+    };
+    return { calls, run };
+  }
+
+  it("enableLivePush still requires the three flags together", () => {
+    assert.equal(enableLivePush({ ENABLE_PUSH: "1", FT_R1H_ALLOW_LIVE: "1" }, { push: true }), true);
+    assert.equal(enableLivePush({ ENABLE_PUSH: "1", FT_R1H_ALLOW_LIVE: "1" }, {}), false);
+    assert.equal(enableLivePush({ ENABLE_PUSH: "1" }, { push: true }), false);
+    assert.equal(enableLivePush({ FT_R1H_ALLOW_LIVE: "1" }, { push: true }), false);
+  });
+
+  it("tryLivePush without the triple gate still refuses (not a live stub)", () => {
+    const refused = tryLivePush({ prevTip: OUT_1700, outDir: OUT_1700, env: { ENABLE_PUSH: "0" }, args: { push: true } });
+    assert.equal(refused.pushed, false);
+    assert.equal(refused.dispatched, false);
+    assert.equal(refused.pages_run_id, null);
+    assert.equal(refused.note, refuseLiveSideEffects().note);
+    assert.ok(!/gated off in this PR/i.test(refused.note));
+  });
+
+  it("copies only hot.json + meta.json and pushes engine-data + dispatch", () => {
+    const dir = tmp();
+    try {
+      writeFileSync(join(dir, ".git"), "gitdir: fake\n");
+      const tip = seedTip(dir);
+      const out = seedStaging(dir, { snapshots: true });
+      const dailyBefore = readFileSync(join(tip, "daily.json"), "utf8");
+      const feedBefore = readFileSync(join(tip, "feed.json"), "utf8");
+      const { calls, run } = mockGitGh();
+      const got = tryLivePush({
+        prevTip: tip,
+        outDir: out,
+        hot: { computedAt: "2026-10-23T04:00:00.000Z" },
+        env: liveEnv,
+        args: liveArgs,
+        run,
+        sleep: () => {},
+        pollTries: 1,
+        pollMs: 0,
+      });
+      assert.equal(got.pushed, true);
+      assert.equal(got.dispatched, true);
+      assert.equal(got.pages_run_id, "42424242");
+      assert.ok(!/gated off in this PR/i.test(got.note));
+      assert.match(got.note, /engine-data/);
+      assert.equal(JSON.parse(readFileSync(join(tip, "hot.json"), "utf8")).entries[0].heat, 9);
+      assert.equal(JSON.parse(readFileSync(join(tip, "meta.json"), "utf8")).hot_computed_at, "new");
+      assert.equal(readFileSync(join(tip, "daily.json"), "utf8"), dailyBefore);
+      assert.equal(readFileSync(join(tip, "feed.json"), "utf8"), feedBefore);
+      assert.ok(!existsSync(join(tip, "hot-snapshots", "2026-10-23T04.json")));
+      const joined = calls.map((row) => row.join(" "));
+      assert.ok(calls.some((row) => row[0] === "git" && row.includes("push") && row.some((a) => String(a).includes(`refs/heads/${ENGINE_DATA_BRANCH}:refs/heads/${ENGINE_DATA_BRANCH}`))));
+      assert.ok(!calls.some((row) => row[0] === "git" && row.includes("merge")));
+      assert.ok(!calls.some((row) => row[0] === "git" && row.includes("push") && row.some((a) => a === "main" || String(a).includes("/main"))));
+      assert.ok(joined.some((line) => line.includes("gh api") && line.includes(`event_type=${DISPATCH_EVENT}`)));
+      assert.ok(joined.some((line) => line.includes(`repos/${DEFAULT_DISPATCH_REPO}/dispatches`)));
+    } finally {
+      rmSync(dir, { recursive: true, force: true });
+    }
+  });
+
+  it("copies hot-snapshots only when --write-snapshots is already set", () => {
+    const dir = tmp();
+    try {
+      writeFileSync(join(dir, ".git"), "gitdir: fake\n");
+      const tip = seedTip(dir);
+      const out = seedStaging(dir, { snapshots: true });
+      const { run } = mockGitGh();
+      const got = tryLivePush({
+        prevTip: tip,
+        outDir: out,
+        hot: { computedAt: "2026-10-23T04:00:00.000Z" },
+        env: liveEnv,
+        args: { push: true, "write-snapshots": true },
+        run,
+        sleep: () => {},
+        pollTries: 1,
+        pollMs: 0,
+      });
+      assert.equal(got.pushed, true);
+      assert.equal(JSON.parse(readFileSync(join(tip, "hot-snapshots", "2026-10-23T04.json"), "utf8")).snap, true);
+      assert.ok(got.files.some((rel) => rel.includes("hot-snapshots")));
+    } finally {
+      rmSync(dir, { recursive: true, force: true });
+    }
+  });
+
+  it("refuses when --prev-tip sits on a non-engine-data branch (does not copy)", () => {
+    const dir = tmp();
+    try {
+      writeFileSync(join(dir, ".git"), "gitdir: fake\n");
+      const tip = seedTip(dir);
+      const out = seedStaging(dir);
+      const hotBefore = readFileSync(join(tip, "hot.json"), "utf8");
+      const { calls, run } = mockGitGh({ branch: "main" });
+      const got = tryLivePush({
+        prevTip: tip,
+        outDir: out,
+        env: liveEnv,
+        args: liveArgs,
+        run,
+        sleep: () => {},
+      });
+      assert.equal(got.pushed, false);
+      assert.equal(got.dispatched, false);
+      assert.equal(got.pages_run_id, null);
+      assert.match(got.note, /not engine-data/);
+      assert.equal(readFileSync(join(tip, "hot.json"), "utf8"), hotBefore);
+      assert.ok(!calls.some((row) => row[0] === "git" && row.includes("push")));
+      assert.ok(!calls.some((row) => row[0] === "gh"));
+    } finally {
+      rmSync(dir, { recursive: true, force: true });
+    }
+  });
+
+  it("listHotOnlyCopies never includes daily/feeds; snapshots only when flagged", () => {
+    const dir = tmp();
+    try {
+      const dest = seedTip(dir);
+      const out = seedStaging(dir, { snapshots: true });
+      const basic = listHotOnlyCopies(out, dest, { writeSnapshots: false }).map((c) => c.to);
+      assert.ok(basic.some((p) => p.endsWith("hot.json")));
+      assert.ok(basic.some((p) => p.endsWith("meta.json")));
+      assert.ok(basic.every((p) => !p.endsWith("daily.json") && !p.endsWith("feed.json")));
+      const withSnap = listHotOnlyCopies(out, dest, { writeSnapshots: true }).map((c) => c.to);
+      assert.ok(withSnap.some((p) => p.includes("hot-snapshots")));
+    } finally {
+      rmSync(dir, { recursive: true, force: true });
+    }
+  });
+
+  it("hot_tick live path records r1h via record_pages_deploy and is not the gated-off stub", () => {
+    const dir = tmp();
+    try {
+      writeFileSync(join(dir, ".git"), "gitdir: fake\n");
+      const tip = join(dir, "tip");
+      cpSync(OUT_1700, tip, { recursive: true });
+      writeFileSync(join(tip, "daily.json"), `${JSON.stringify({ keep: true }, null, 2)}\n`);
+      const { run } = mockGitGh({ pagesRunId: "555666777" });
+      const later = "2026-10-19T14:00:00.000Z";
+      const result = runHotTick(
+        [
+          "--prev-tip",
+          tip,
+          "--engine-dir",
+          OUT_1700,
+          "--at",
+          later,
+          "--evidence-dir",
+          join(dir, "evidence"),
+          "--lock",
+          join(dir, "lock"),
+          "--counter",
+          join(dir, "counter.jsonl"),
+          "--out",
+          join(dir, "out"),
+          "--force-window",
+          "--push",
+        ],
+        { ENABLE_PUSH: "1", FT_R1H_ALLOW_LIVE: "1", FT_R1H_DISPATCH_POLL_TRIES: "1", FT_R1H_DISPATCH_POLL_MS: "0" },
+        { now: Date.parse("2026-10-23T04:00:00.000Z"), run, sleep: () => {} },
+      );
+      assert.notEqual(result.record.hash_before, result.record.hash_after);
+      assert.equal(result.ok, true);
+      assert.equal(result.record.decision, "push");
+      assert.equal(result.record.pages_run_id, "555666777");
+      assert.equal(result.record.push.pushed, true);
+      assert.equal(result.record.push.dispatched, true);
+      assert.ok(!/gated off in this PR/i.test(result.record.push.note));
+      assert.equal(JSON.parse(readFileSync(join(tip, "daily.json"), "utf8")).keep, true);
+      const lines = readFileSync(join(dir, "counter.jsonl"), "utf8").trim().split("\n").map((line) => JSON.parse(line));
+      assert.equal(lines.at(-1).source, "r1h");
+      assert.equal(lines.at(-1).kind, "success");
+      assert.equal(lines.at(-1).pages_run_id, "555666777");
     } finally {
       rmSync(dir, { recursive: true, force: true });
     }

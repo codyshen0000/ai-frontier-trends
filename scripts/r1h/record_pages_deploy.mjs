@@ -3,10 +3,12 @@
  * Shared Pages-deploy counter for R1 and R1h (Task #58).
  *
  * R1 publish-no-wait should call this AFTER a successful repository_dispatch
- * (or after it knows the Pages run id). R1h reads the same JSONL so Max N=4
- * includes R1. Does not push or dispatch.
+ * (or after it knows the Pages run id). R1h live push records the same JSONL
+ * automatically (source=r1h) so Max N=4 includes both rings. Does not push
+ * or dispatch itself.
  *
  *   node scripts/r1h/record_pages_deploy.mjs --source r1 --kind success --pages-run-id 39822780150
+ *   node scripts/r1h/record_pages_deploy.mjs --source r1 --kind failure
  */
 import { pathToFileURL } from "node:url";
 import {

@@ -17,6 +17,7 @@ import {
   isEligible,
   recomputeEntry,
   sparkFor,
+  sparkForOpenWindow,
   verifyEngineHeat,
 } from "./heat.mjs";
 import {
@@ -287,6 +288,70 @@ describe("verifyHotJson against SYNTHETIC tree", () => {
       assert.equal(result.ok, true, result.issues.join("\n"));
       assert.equal(result.recomputed.length, 0);
       assert.match(result.skipped.join("\n"), /skip \(engine tree has 1 timestamp/);
+    } finally {
+      rmSync(dir, { recursive: true, force: true });
+    }
+  });
+
+  it("skips when listed N is higher than unique in-window participants", () => {
+    const dir = mkdtempSync(join(tmpdir(), "b2-heat-inwindow-"));
+    try {
+      const one = CASES.events.find((e) => e.publicId.endsWith("heat-fresh"));
+      eventTree(dir, [one]);
+      const hotPath = join(dir, "hot.json");
+      const hot = JSON.parse(readFileSync(hotPath, "utf8"));
+      const atMs = Date.parse(hot.computedAt);
+      const aged = new Date(atMs - 60 * 3600 * 1000).toISOString();
+      const eventPath = join(dir, "events", `${one.publicId}.json`);
+      const event = JSON.parse(readFileSync(eventPath, "utf8"));
+      event.timeline = [
+        { ...event.timeline[0], publishedAt: event.timeline[0].publishedAt },
+        { ...event.timeline[1] || event.timeline[0], id: "sha256:synthetic-heat-aged-n", publishedAt: aged },
+      ];
+      event.developments = [];
+      event.officialReports = [];
+      writeFileSync(eventPath, `${JSON.stringify(event, null, 2)}\n`);
+      hot.entries[0].participantCount = 2;
+      hot.entries[0].heat = 16.2;
+      writeFileSync(hotPath, `${JSON.stringify(hot, null, 2)}\n`);
+      const result = verifyEngineHeat(dir);
+      assert.equal(result.ok, true, result.issues.join("\n"));
+      assert.match(result.skipped.join("\n"), /in-window tree has 1 timestamp/);
+    } finally {
+      rmSync(dir, { recursive: true, force: true });
+    }
+  });
+
+  it("accepts a live spark endpoint written with the leftover left-open 48h window", () => {
+    const dir = mkdtempSync(join(tmpdir(), "b2-heat-open48-"));
+    try {
+      const one = CASES.events.find((e) => e.publicId.endsWith("heat-day"));
+      eventTree(dir, [one]);
+      const hotPath = join(dir, "hot.json");
+      const hot = JSON.parse(readFileSync(hotPath, "utf8"));
+      const eventPath = join(dir, "events", `${one.publicId}.json`);
+      const event = JSON.parse(readFileSync(eventPath, "utf8"));
+      const atMs = Date.parse(hot.computedAt);
+      const edge = new Date(atMs - 48 * 3600 * 1000).toISOString();
+      event.timeline = event.timeline.map((row, i) => (i === 0 ? { ...row, publishedAt: edge } : row));
+      writeFileSync(eventPath, `${JSON.stringify(event, null, 2)}\n`);
+      const participants = event.timeline.map((row, i) => ({
+        key: i === 0 ? "lab" : "notes",
+        name: row.source.name,
+        kind: "editorial",
+        lastAt: row.publishedAt,
+      }));
+      const closed = recomputeEntry(participants, hot.computedAt);
+      const openSpark = sparkForOpenWindow(participants, hot.computedAt);
+      assert.notEqual(closed.spark.at(-1), openSpark.at(-1));
+      hot.entries[0].heat = closed.exactHeat;
+      hot.entries[0].spark = openSpark;
+      hot.entries[0].trend = closed.trend;
+      hot.entries[0].trendPct = closed.trendPct;
+      hot.entries[0].badges = closed.badges;
+      writeFileSync(hotPath, `${JSON.stringify(hot, null, 2)}\n`);
+      const result = verifyEngineHeat(dir);
+      assert.equal(result.ok, true, result.issues.join("\n"));
     } finally {
       rmSync(dir, { recursive: true, force: true });
     }

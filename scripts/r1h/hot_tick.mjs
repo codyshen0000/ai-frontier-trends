@@ -1,13 +1,15 @@
 #!/usr/bin/env node
 /**
- * R1h / hot-tick (Task #58 D0+D1).
+ * R1h / hot-tick (Task #58 D0–D2).
  *
  * Default is dry-run: recompute hot.json, hash-compare against --prev-tip,
  * apply debounce / Max N, write evidence. Never collect, never import
  * editorial outbox, never push origin/engine-data, never dispatch Pages.
  *
- * Live push requires ENABLE_PUSH=1 AND FT_R1H_ALLOW_LIVE=1 AND --push
- * (still refused unless all three are set; this PR keeps that off).
+ * Live push (D2) requires ENABLE_PUSH=1 AND FT_R1H_ALLOW_LIVE=1 AND --push.
+ * When that triple gate passes and hash/window/throttle allow it, tryLivePush
+ * copies hot-only artifacts into the --prev-tip engine-data tree, commits and
+ * pushes origin/engine-data only, then repository_dispatch engine-data-updated.
  */
 import { spawnSync } from "node:child_process";
 import { existsSync, mkdirSync } from "node:fs";
@@ -16,7 +18,6 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 import {
   MAX_DEPLOYS_PER_HOUR,
   acquireLock,
-  appendDeployEvent,
   contentHash,
   defaultEngineDir,
   enableLivePush,
@@ -37,6 +38,8 @@ import {
   writeEvidence,
   writeJson,
 } from "./lib.mjs";
+import { tryLivePush } from "./live_push.mjs";
+import { recordPagesDeploy } from "./record_pages_deploy.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const repoRoot = join(here, "..", "..");
@@ -61,10 +64,13 @@ Options:
   --write-snapshots  Opt-in hot-snapshots write (default: no)
   --force-window     Ignore 08:00–23:00 Asia/Shanghai (still no push by default)
   --skip-lock        Test-only: do not take the shared lock
-  --push             Request live push (still needs ENABLE_PUSH=1 and FT_R1H_ALLOW_LIVE=1)
+  --push             Request live push (needs ENABLE_PUSH=1 and FT_R1H_ALLOW_LIVE=1)
   --json             Print the evidence record as JSON
 
 Default ENABLE_PUSH=0. Dry-run never git-pushes or repository_dispatches.
+Triple gate (ENABLE_PUSH=1 + FT_R1H_ALLOW_LIVE=1 + --push) runs D2 live path:
+copy hot.json + patched meta.json into --prev-tip, push origin/engine-data only,
+repository_dispatch engine-data-updated. Never merges main.
 `;
 }
 
@@ -99,20 +105,28 @@ function runBoxRank(cmd, { prevTip, outDir, at }) {
   };
 }
 
-function tryLivePush(_ctx) {
-  // Intentionally not implemented as a silent network action in this PR.
-  // Triple-gated; even when requested we refuse unless FT_R1H_ALLOW_LIVE=1,
-  // and then we still only document the existing R1 publish-no-wait commands
-  // rather than executing them from CI or a default cron.
-  return {
-    pushed: false,
-    dispatched: false,
-    pages_run_id: null,
-    note: "live push is gated off in this PR; use R1 publish-no-wait after 总控 enable",
-  };
+function recordLiveAttempt(counterPath, pushed, { now, cwd, env, triggerAt }) {
+  const kind = pushed.pushed ? "success" : "failure";
+  const pagesRunId = pushed.pages_run_id ? String(pushed.pages_run_id) : "";
+  return recordPagesDeploy(
+    [
+      "--source",
+      "r1h",
+      "--kind",
+      kind,
+      "--pages-run-id",
+      pagesRunId,
+      "--counter",
+      counterPath,
+      "--at",
+      triggerAt,
+    ],
+    env,
+    { now, cwd },
+  );
 }
 
-export function runHotTick(rawArgv = process.argv.slice(2), env = process.env, { now = Date.now(), cwd = repoRoot } = {}) {
+export function runHotTick(rawArgv = process.argv.slice(2), env = process.env, { now = Date.now(), cwd = repoRoot, run, sleep, livePush = tryLivePush } = {}) {
   const args = parseArgs(rawArgv, {});
   if (args.help || args.h) {
     return { ok: true, help: usage() };
@@ -247,20 +261,23 @@ export function runHotTick(rawArgv = process.argv.slice(2), env = process.env, {
       return { ok: true, record, evidence: join(evidenceDir, "latest.json") };
     }
 
-    const pushed = tryLivePush({ prevTip, outDir, hot, env, args });
-    record.decision = pushed.pushed ? "push" : "dry_run";
+    let pushed;
+    try {
+      pushed = livePush({ prevTip, outDir, hot, env, args, run, sleep });
+    } catch (err) {
+      pushed = {
+        pushed: false,
+        dispatched: false,
+        pages_run_id: null,
+        note: err.message || String(err),
+      };
+    }
+    record.decision = pushed.pushed ? "push" : "error";
     record.pages_run_id = pushed.pages_run_id;
     record.push = pushed;
-    if (pushed.pushed) {
-      appendDeployEvent(counterPath, {
-        at: triggerAt,
-        source: "r1h",
-        kind: "success",
-        pages_run_id: pushed.pages_run_id,
-      });
-    }
+    recordLiveAttempt(counterPath, pushed, { now, cwd, env, triggerAt });
     writeEvidence(evidenceDir, record);
-    return { ok: true, record, evidence: join(evidenceDir, "latest.json") };
+    return { ok: Boolean(pushed.pushed), record, evidence: join(evidenceDir, "latest.json") };
   } finally {
     if (lockHeld) releaseLock(lockPath);
   }

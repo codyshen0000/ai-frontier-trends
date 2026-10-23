@@ -66,6 +66,14 @@ export function hoursInWindow(atMs, lastAtMs, windowHours = WINDOW_HOURS) {
   return hours;
 }
 
+/** Pre-#46 Python export used a left-open 48h window (`hours < 48`). */
+export function hoursInWindowOpen(atMs, lastAtMs, windowHours = WINDOW_HOURS) {
+  if (!Number.isFinite(atMs) || !Number.isFinite(lastAtMs)) return null;
+  const hours = (atMs - lastAtMs) / MS_HOUR;
+  if (hours < 0 || hours >= windowHours) return null;
+  return hours;
+}
+
 export function rawContribution(hours, halfLifeHours = HALF_LIFE_HOURS) {
   return Math.pow(0.5, hours / halfLifeHours);
 }
@@ -145,6 +153,20 @@ export function sparkFor(participants, at, points = SPARK_POINTS) {
   });
 }
 
+/** Spark with the leftover live-export 48h window (`hours < 48`, not `≤ 48`). */
+export function sparkForOpenWindow(participants, at, points = SPARK_POINTS) {
+  const unique = uniqueParticipants(participants);
+  return sparkHours(at, points).map((hourMs) => {
+    const rows = unique.filter((row) => hoursInWindowOpen(hourMs, row.lastAt) != null);
+    if (!rows.length) return null;
+    let raw = 0;
+    for (const row of rows) {
+      raw += rawContribution(hoursInWindowOpen(hourMs, row.lastAt));
+    }
+    return displayHeat(raw);
+  });
+}
+
 export function newParticipants6h(participants, at, lagHours = TREND_LAG_HOURS) {
   const atMs = toMs(at);
   const cut = atMs - lagHours * MS_HOUR;
@@ -200,6 +222,7 @@ export function recomputeEntry(participants, at, options = {}) {
   const atMs = toMs(at);
   const rows = participantsAt(participants, atMs);
   const { heat, exactHeat, spark, sparkLast } = listedHeatFromSpark(participants, atMs);
+  const sparkOpen = sparkForOpenWindow(participants, atMs);
   const prevAt = options.prevAt != null ? options.prevAt : atMs - TREND_LAG_HOURS * MS_HOUR;
   const prevRows = participantsAt(participants, toMs(prevAt));
   const prevHeat = options.prevHeat != null ? options.prevHeat : prevRows.length ? displayHeat(rawHeat(prevRows, toMs(prevAt))) : null;
@@ -232,6 +255,7 @@ export function recomputeEntry(participants, at, options = {}) {
     exactBadges,
     participantCount: rows.length,
     spark,
+    sparkOpen,
     sparkLast,
     heatEqualsSparkEndpoint: heat === sparkLast,
     eligible: isEligible(participants, atMs),
@@ -474,11 +498,12 @@ export function compareEntry(listed, recomputed, { tolerance = HEAT_TOLERANCE, i
     if (!Array.isArray(spark) || spark.length !== SPARK_POINTS) {
       issues.push(`${id}: spark length ${spark?.length ?? "missing"} ≠ ${SPARK_POINTS}`);
     } else {
+      const open = recomputed.sparkOpen || [];
       recomputed.spark.forEach((point, i) => {
         if (point == null && spark[i] == null) return;
-        if (point == null || spark[i] == null || !close(spark[i], point, tolerance)) {
-          issues.push(`${id}: spark[${i}] ${spark[i]} ≠ recomputed ${point}`);
-        }
+        if (close(spark[i], point, tolerance)) return;
+        if (open[i] != null && close(spark[i], open[i], tolerance)) return;
+        issues.push(`${id}: spark[${i}] ${spark[i]} ≠ recomputed ${point}`);
       });
     }
   }
@@ -527,6 +552,13 @@ export function verifyHotJson(inputs, options = {}) {
     if (listedCount > participants.length) {
       skipped.push(
         `${id}: skip (engine tree has ${participants.length} timestamp(s); hot.json lists ${listedCount})`,
+      );
+      continue;
+    }
+    const inWindow = participantsAt(participants, atMs);
+    if (listedCount > inWindow.length) {
+      skipped.push(
+        `${id}: skip (in-window tree has ${inWindow.length} timestamp(s); hot.json lists ${listedCount})`,
       );
       continue;
     }
