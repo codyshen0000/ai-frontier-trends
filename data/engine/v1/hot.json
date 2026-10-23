@@ -1,95 +1,16 @@
 {
- "computedAt": "2026-10-23T16:37:00.000Z",
+ "computedAt": "2026-10-23T19:50:00.000Z",
  "windowHours": 48,
  "entries": [
   {
    "rank": 1,
    "story": {
-    "publicId": "2026-10-21-php2shell-wiz-rce",
-    "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露"
-   },
-   "heat": 21.5,
-   "trend": "down",
-   "trendPct": -24.0,
-   "badges": [],
-   "participantCount": 6,
-   "sourceCount": 6,
-   "sourceNames": [
-    "Ars Technica · AI",
-    "The Verge · AI",
-    "Latent Space",
-    "The Decoder",
-    "Simon Willison",
-    "TechCrunch · AI"
-   ],
-   "participants": [
-    {
-     "name": "Ars Technica · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "Latent Space",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "Simon Willison",
-     "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    52.3,
-    50.8,
-    49.4,
-    47.9,
-    46.6,
-    45.3,
-    44.0,
-    42.7,
-    41.5,
-    40.3,
-    39.2,
-    38.1,
-    37.0,
-    35.9,
-    34.9,
-    31.4,
-    30.5,
-    29.6,
-    28.8,
-    28.0,
-    27.2,
-    26.4,
-    23.2,
-    22.5,
-    21.9
-   ],
-   "summary": "OpenAI 发布 Patch the Planet，协调处理智能体发现的关键漏洞。Wiz 等称 PHP 引擎缺陷可导致远程代码执行与类 Heartbleed 内存泄露，影响面极广；PHP 基金会已发安全更新。 HN 持续高热讨论；Wiz 与多家安全方跟进披露细节。",
-   "latest": null,
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -21.5
-  },
-  {
-   "rank": 2,
-   "story": {
     "publicId": "2026-10-22-anthropic-claude-duet",
     "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots"
    },
-   "heat": 14.3,
+   "heat": 13.0,
    "trend": "down",
-   "trendPct": -15.9,
+   "trendPct": -16.1,
    "badges": [],
    "participantCount": 4,
    "sourceCount": 3,
@@ -117,9 +38,6 @@
     }
    ],
    "spark": [
-    29.2,
-    28.3,
-    27.5,
     26.7,
     26.0,
     25.2,
@@ -141,13 +59,80 @@
     15.9,
     15.4,
     15.0,
-    14.6
+    14.6,
+    14.2,
+    13.8,
+    13.4
    ],
    "summary": "The Verge 与 IT之家称 Anthropic 以研究预览推出面向专业人士与小企业的 Claude Duet 智能体，提供 iOS/Android 独立应用与网页入口，定位可在用户离线后继续后台干活的 24 小时助理，对标 Meta Muse、OpenAI Dots 等。 报道称其基于 Claude Opus 5.5，首批面向美国 Pro/Max 候补；可调用 Marketplace 数千连接器，敏感操作需用户批准。官方新闻室暂未见同名稿。",
    "latest": null,
    "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -13.3
+   "rankDelta": 1,
+   "heatDeltaPct": -9.1
+  },
+  {
+   "rank": 2,
+   "story": {
+    "publicId": "2026-10-21-php2shell-wiz-rce",
+    "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露"
+   },
+   "heat": 12.3,
+   "trend": "down",
+   "trendPct": -47.2,
+   "badges": [],
+   "participantCount": 3,
+   "sourceCount": 3,
+   "sourceNames": [
+    "Ars Technica · AI",
+    "The Verge · AI",
+    "Latent Space"
+   ],
+   "participants": [
+    {
+     "name": "Ars Technica · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "Latent Space",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    47.9,
+    46.6,
+    45.3,
+    44.0,
+    42.7,
+    41.5,
+    40.3,
+    39.2,
+    38.1,
+    37.0,
+    35.9,
+    34.9,
+    31.4,
+    30.5,
+    29.6,
+    28.8,
+    28.0,
+    27.2,
+    26.4,
+    23.2,
+    22.5,
+    21.9,
+    21.3,
+    18.1,
+    15.2
+   ],
+   "summary": "OpenAI 发布 Patch the Planet，协调处理智能体发现的关键漏洞。Wiz 等称 PHP 引擎缺陷可导致远程代码执行与类 Heartbleed 内存泄露，影响面极广；PHP 基金会已发安全更新。 HN 持续高热讨论；Wiz 与多家安全方跟进披露细节。",
+   "latest": null,
+   "cover": null,
+   "rankDelta": -1,
+   "heatDeltaPct": -42.8
   },
   {
    "rank": 3,
@@ -155,9 +140,9 @@
     "publicId": "2026-10-19-minimax-m31-flash",
     "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持"
    },
-   "heat": 12.6,
+   "heat": 11.5,
    "trend": "down",
-   "trendPct": -16.0,
+   "trendPct": -15.4,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 1,
@@ -180,9 +165,6 @@
     null,
     null,
     null,
-    null,
-    null,
-    null,
     10.0,
     9.7,
     19.2,
@@ -199,83 +181,26 @@
     14.0,
     13.6,
     13.2,
-    12.8
+    12.8,
+    12.4,
+    12.1,
+    11.7
    ],
    "summary": null,
    "latest": null,
    "cover": null,
    "rankDelta": 0,
-   "heatDeltaPct": -13.1
+   "heatDeltaPct": -8.7
   },
   {
    "rank": 4,
    "story": {
-    "publicId": "2026-10-22-nvidia-microduck-isaac-lab",
-    "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机"
-   },
-   "heat": 12.1,
-   "trend": "up",
-   "trendPct": 290.3,
-   "badges": [
-    "rising"
-   ],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "NVIDIA Technical Blog",
-    "Hugging Face Blog"
-   ],
-   "participants": [
-    {
-     "name": "NVIDIA Technical Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "Hugging Face Blog",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    5.3,
-    5.1,
-    5.0,
-    4.9,
-    4.7,
-    4.6,
-    4.5,
-    4.3,
-    4.2,
-    4.1,
-    4.0,
-    3.9,
-    3.7,
-    3.6,
-    3.5,
-    3.4,
-    3.3,
-    3.2,
-    3.1,
-    3.1,
-    3.0,
-    2.9,
-    2.8,
-    12.7,
-    12.4
-   ],
-   "summary": "NVIDIA 与 Hugging Face 博客介绍：用 Isaac Lab 3.0 在仿真里训练 Microduck 双足行走策略，再部署到真实机器人。 材料强调仿真并行训练、策略评估后上真机；面向开源双足平台把「仿真到真机」流程跑通，降低从训练到部署的门槛。",
-   "latest": "NVIDIA 技术博客：用 AI 智能体在仿真里教 Microduck 感知障碍并行走。",
-   "cover": null,
-   "heatDeltaPct": 303.3
-  },
-  {
-   "rank": 5,
-   "story": {
     "publicId": "2026-10-23-google-agent-compute-engine",
     "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM"
    },
-   "heat": 11.9,
+   "heat": 10.9,
    "trend": "down",
-   "trendPct": -16.2,
+   "trendPct": -15.5,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 1,
@@ -293,9 +218,6 @@
     }
    ],
    "spark": [
-    null,
-    null,
-    10.0,
     9.7,
     9.4,
     9.1,
@@ -317,23 +239,26 @@
     13.2,
     12.8,
     12.5,
-    12.1
+    12.1,
+    11.8,
+    11.4,
+    11.1
    ],
    "summary": null,
    "latest": "IT之家转述：ACE 为空闲智能体自动休眠、唤醒称不到 500 毫秒",
    "cover": null,
-   "rankDelta": -1,
-   "heatDeltaPct": -13.1
+   "rankDelta": 1,
+   "heatDeltaPct": -8.4
   },
   {
-   "rank": 6,
+   "rank": 5,
    "story": {
     "publicId": "2026-10-23-openai-decisions-api",
     "title": "OpenAI 推出 Decisions API：低成本快速决策接口"
    },
-   "heat": 10.7,
+   "heat": 9.8,
    "trend": "down",
-   "trendPct": -15.7,
+   "trendPct": -15.5,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -352,9 +277,6 @@
     }
    ],
    "spark": [
-    null,
-    null,
-    null,
     20.0,
     19.4,
     18.9,
@@ -376,23 +298,26 @@
     11.9,
     11.6,
     11.2,
-    10.9
+    10.9,
+    10.6,
+    10.3,
+    10.0
    ],
    "summary": "OpenAI 发布 Decisions API，面向应用内快速、聚焦、低成本决策；与决策模型竞赛相关。官方称可用于任意应用。 TechCrunch：称对标 Jev，决策模型竞争升温。",
    "latest": null,
    "cover": null,
-   "rankDelta": -1,
-   "heatDeltaPct": -13.0
+   "rankDelta": 1,
+   "heatDeltaPct": -8.4
   },
   {
-   "rank": 7,
+   "rank": 6,
    "story": {
     "publicId": "2026-10-23-microsoft-mai-dxo",
     "title": "微软：发布 MAI-DxO 诊断编排器，复杂病例准确率称超医生"
    },
-   "heat": 10.5,
+   "heat": 9.6,
    "trend": "down",
-   "trendPct": -16.0,
+   "trendPct": -15.8,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -411,9 +336,6 @@
     }
    ],
    "spark": [
-    null,
-    null,
-    10.0,
     19.6,
     19.1,
     18.5,
@@ -435,23 +357,26 @@
     11.7,
     11.3,
     11.0,
-    10.7
+    10.7,
+    10.4,
+    10.1,
+    9.8
    ],
    "summary": null,
    "latest": null,
    "cover": null,
-   "rankDelta": -1,
-   "heatDeltaPct": -13.2
+   "rankDelta": 1,
+   "heatDeltaPct": -8.6
   },
   {
-   "rank": 8,
+   "rank": 7,
    "story": {
     "publicId": "2026-10-23-uber-chatgpt-work-rollout",
     "title": "Uber 全员上线 ChatGPT Work，覆盖约 3 万名员工"
    },
-   "heat": 8.0,
+   "heat": 7.3,
    "trend": "down",
-   "trendPct": -15.8,
+   "trendPct": -16.1,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -470,9 +395,6 @@
     }
    ],
    "spark": [
-    16.3,
-    15.8,
-    15.4,
     14.9,
     14.5,
     14.1,
@@ -494,23 +416,26 @@
     8.9,
     8.6,
     8.4,
-    8.1
+    8.1,
+    7.9,
+    7.7,
+    7.5
    ],
    "summary": null,
    "latest": null,
    "cover": null,
-   "rankDelta": -1,
-   "heatDeltaPct": -13.0
+   "rankDelta": 1,
+   "heatDeltaPct": -8.8
   },
   {
-   "rank": 9,
+   "rank": 8,
    "story": {
     "publicId": "2026-10-22-recursive-flint-coding-model",
     "title": "报道：Recursive 发布 Flint；vLLM 宣布 Day-0 支持"
    },
-   "heat": 7.5,
+   "heat": 6.9,
    "trend": "down",
-   "trendPct": -15.7,
+   "trendPct": -14.8,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -529,9 +454,6 @@
     }
    ],
    "spark": [
-    18.5,
-    17.9,
-    17.4,
     16.9,
     16.4,
     16.0,
@@ -553,13 +475,16 @@
     8.3,
     8.1,
     7.9,
-    7.7
+    7.7,
+    7.4,
+    7.2,
+    7.0
    ],
    "summary": "报道称 Recursive 发布笔记本级编码模型 Flint（约 40B 总参 / 2.5B 激活），并称训练过程 largely 由 AI 完成、可免费试用。 vLLM 博客随后宣布 Day-0 支持 Flint 双检查点，单卡单请求解码约 500 tokens/s，降低本地部署与评测摩擦。",
    "latest": "vLLM 宣布 Day-0 支持 Flint，单卡约 500 tok/s。",
    "cover": null,
-   "rankDelta": -1,
-   "heatDeltaPct": -13.8
+   "rankDelta": 1,
+   "heatDeltaPct": -8.0
   }
  ]
 }

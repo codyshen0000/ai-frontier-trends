@@ -125,6 +125,13 @@
    "tier": "T1",
    "kind": "editorial",
    "homepage": "https://www.wiz.io"
+  },
+  {
+   "sourceId": "web-baseten-blog",
+   "name": "Baseten Blog",
+   "tier": "T1",
+   "kind": "editorial",
+   "homepage": "https://www.baseten.co"
   }
  ]
 }

@@ -1,0 +1,110 @@
+{
+ "publicId": "2026-10-24-nvidia-tensorrt-global-performance-tuner",
+ "title": "NVIDIA：TensorRT Global Performance Tuner 跨多条构建路线寻优",
+ "status": "active",
+ "reportCount": 2,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-23T17:27:35.000Z",
+ "latestAt": "2026-10-23T17:27:52.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "NVIDIA 技术博客（Part 1/2）：介绍 TensorRT 11.1 的 Global Performance Tuner，在多条合法构建路线上做自动、感知精度的性能寻优，突破单条构建路径限制。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 2,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-24-nvidia-tensorrt-global-performance-tuner",
+   "title": "NVIDIA：TensorRT Global Performance Tuner 跨多条构建路线寻优",
+   "firstReportAt": "2026-10-23T17:27:35.000Z",
+   "reportCount": 2,
+   "representative": {
+    "id": "sha256:1456ee151a5392db",
+    "title": "NVIDIA：TensorRT Global Performance Tuner 跨多条构建路线寻优",
+    "summary": "NVIDIA 技术博客 Part 2：Global Performance Tuner 自动跨构建寻优。",
+    "source": {
+     "name": "NVIDIA Technical Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-23T17:27:52.000Z",
+    "selected": true,
+    "originalUrl": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-2/"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:1456ee151a5392db",
+   "title": "NVIDIA：TensorRT Global Performance Tuner 跨多条构建路线寻优",
+   "summary": "NVIDIA 技术博客 Part 2：Global Performance Tuner 自动跨构建寻优。",
+   "source": {
+    "name": "NVIDIA Technical Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-23T17:27:52.000Z",
+   "selected": true,
+   "originalUrl": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-2/"
+  },
+  {
+   "id": "sha256:4dcd06f240ef44ca",
+   "title": "NVIDIA：TensorRT Global Performance Tuner 跨多条构建路线寻优",
+   "summary": "同系列 Part 1：编译多路径与寻优问题设定；并入同一事件。",
+   "source": {
+    "name": "NVIDIA Technical Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-23T17:27:35.000Z",
+   "selected": false,
+   "originalUrl": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1/"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:1456ee151a5392db",
+   "title": "NVIDIA：TensorRT Global Performance Tuner 跨多条构建路线寻优",
+   "summary": "NVIDIA 技术博客 Part 2：Global Performance Tuner 自动跨构建寻优。",
+   "source": {
+    "name": "NVIDIA Technical Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-23T17:27:52.000Z",
+   "selected": true,
+   "originalUrl": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-2/"
+  },
+  {
+   "id": "sha256:4dcd06f240ef44ca",
+   "title": "NVIDIA：TensorRT Global Performance Tuner 跨多条构建路线寻优",
+   "summary": "同系列 Part 1：编译多路径与寻优问题设定；并入同一事件。",
+   "source": {
+    "name": "NVIDIA Technical Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-23T17:27:35.000Z",
+   "selected": false,
+   "originalUrl": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-23T18:00:00.000Z",
+   "heat": 9.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T19:00:00.000Z",
+   "heat": 9.6,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "TensorRT 11.1 Global Performance Tuner 跨",
+ "primaryUrl": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-2/"
+}

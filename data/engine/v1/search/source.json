@@ -1,6 +1,156 @@
 {
- "generatedAt": "2026-10-23T16:37:00.000Z",
+ "generatedAt": "2026-10-23T19:50:00.000Z",
  "docs": [
+  {
+   "id": "sha256:261b6564023ad66c",
+   "kind": "item",
+   "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
+   "summary": "Decoder 报道 Kimi K3.1 Pro；已核实 Artificial Analysis 评测帖并 hop。",
+   "publishedAt": "2026-10-23T19:00:07.000Z",
+   "sourceName": "The Decoder",
+   "category": "model",
+   "selected": true,
+   "eventPublicId": "2026-10-24-kimi-k31-pro",
+   "originalUrl": "https://the-decoder.com/chinese-ai-model-kimi-k3-1-pro-is-closing-in-on-anthropics-claude-opus-5-5/"
+  },
+  {
+   "id": "2026-10-24-kimi-k31-pro",
+   "kind": "event",
+   "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
+   "summary": null,
+   "publishedAt": "2026-10-23T19:00:07.000Z",
+   "sourceNames": [
+    "The Decoder"
+   ],
+   "path": "/events/2026-10-24-kimi-k31-pro/"
+  },
+  {
+   "id": "sha256:30a34d758ba63be2",
+   "kind": "item",
+   "title": "Google Research：把基础模型用于一线结核病筛查",
+   "summary": "Google Research：基础模型用于 TB 筛查一线；应用研究。",
+   "publishedAt": "2026-10-23T18:51:33.000Z",
+   "sourceName": "Google Research Blog",
+   "category": "paper",
+   "selected": true,
+   "eventPublicId": "2026-10-24-google-tb-screening",
+   "originalUrl": "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/"
+  },
+  {
+   "id": "2026-10-24-google-tb-screening",
+   "kind": "event",
+   "title": "Google Research：把基础模型用于一线结核病筛查",
+   "summary": "Google Research 博文介绍将基础模型用于结核病筛查一线场景；属应用研究说明，具体性能与部署边界以原文为准。",
+   "publishedAt": "2026-10-23T18:51:33.000Z",
+   "sourceNames": [
+    "Google Research Blog"
+   ],
+   "path": "/events/2026-10-24-google-tb-screening/"
+  },
+  {
+   "id": "sha256:604f1f9c59689482",
+   "kind": "item",
+   "title": "METR/Redwood 驻场审计：OpenAI 内部智能体监控存在覆盖缺口",
+   "summary": "Decoder 报道 METR/Redwood 三周驻场审计；已核实 METR 公开摘要并 hop。",
+   "publishedAt": "2026-10-23T18:00:32.000Z",
+   "sourceName": "The Decoder",
+   "category": "industry",
+   "selected": true,
+   "eventPublicId": "2026-10-24-openai-metr-agent-monitoring",
+   "originalUrl": "https://the-decoder.com/three-week-on-site-audit-at-openai-reveals-major-gaps-in-ai-safety-monitoring/"
+  },
+  {
+   "id": "2026-10-24-openai-metr-agent-monitoring",
+   "kind": "event",
+   "title": "METR/Redwood 驻场审计：OpenAI 内部智能体监控存在覆盖缺口",
+   "summary": null,
+   "publishedAt": "2026-10-23T18:00:32.000Z",
+   "sourceNames": [
+    "The Decoder"
+   ],
+   "path": "/events/2026-10-24-openai-metr-agent-monitoring/"
+  },
+  {
+   "id": "sha256:73be0ee71d2832b3",
+   "kind": "item",
+   "title": "Baseten 推出 Environment Network：对接后训练 RL 环境伙伴",
+   "summary": "Baseten 官方：筛选 RL 环境伙伴做客户定制后训练环境；训练与推理仍由 Baseten。",
+   "publishedAt": "2026-10-23T17:36:54.000Z",
+   "sourceName": "Baseten Blog",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-10-24-baseten-environment-network",
+   "originalUrl": "https://www.baseten.co/blog/introducing-the-baseten-environment-network/"
+  },
+  {
+   "id": "2026-10-24-baseten-environment-network",
+   "kind": "event",
+   "title": "Baseten 推出 Environment Network：对接后训练 RL 环境伙伴",
+   "summary": "Baseten 宣布 Environment Network：经筛选的 RL 环境公司为客户定制后训练环境，Baseten 仍负责训练与推理；并称将开源一批前沿质量环境与审计方法。",
+   "publishedAt": "2026-10-23T17:36:54.000Z",
+   "sourceNames": [
+    "Baseten Blog"
+   ],
+   "path": "/events/2026-10-24-baseten-environment-network/"
+  },
+  {
+   "id": "sha256:1456ee151a5392db",
+   "kind": "item",
+   "title": "NVIDIA：TensorRT Global Performance Tuner 跨多条构建路线寻优",
+   "summary": "NVIDIA 技术博客 Part 2：Global Performance Tuner 自动跨构建寻优。",
+   "publishedAt": "2026-10-23T17:27:52.000Z",
+   "sourceName": "NVIDIA Technical Blog",
+   "category": "tutorial",
+   "selected": true,
+   "eventPublicId": "2026-10-24-nvidia-tensorrt-global-performance-tuner",
+   "originalUrl": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-2/"
+  },
+  {
+   "id": "2026-10-24-nvidia-tensorrt-global-performance-tuner",
+   "kind": "event",
+   "title": "NVIDIA：TensorRT Global Performance Tuner 跨多条构建路线寻优",
+   "summary": "NVIDIA 技术博客（Part 1/2）：介绍 TensorRT 11.1 的 Global Performance Tuner，在多条合法构建路线上做自动、感知精度的性能寻优，突破单条构建路径限制。",
+   "publishedAt": "2026-10-23T17:27:52.000Z",
+   "sourceNames": [
+    "NVIDIA Technical Blog"
+   ],
+   "path": "/events/2026-10-24-nvidia-tensorrt-global-performance-tuner/"
+  },
+  {
+   "id": "sha256:4dcd06f240ef44ca",
+   "kind": "item",
+   "title": "NVIDIA：TensorRT Global Performance Tuner 跨多条构建路线寻优",
+   "summary": "同系列 Part 1：编译多路径与寻优问题设定；并入同一事件。",
+   "publishedAt": "2026-10-23T17:27:35.000Z",
+   "sourceName": "NVIDIA Technical Blog",
+   "category": "tutorial",
+   "selected": false,
+   "eventPublicId": "2026-10-24-nvidia-tensorrt-global-performance-tuner",
+   "originalUrl": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1/"
+  },
+  {
+   "id": "sha256:cfa117fe12523c03",
+   "kind": "item",
+   "title": "Anthropic：复盘 AISI 事件，内部研究模型更能自行停止攻击",
+   "summary": "Decoder 报道 Anthropic 对 AISI Mythos 5 事件的对齐复盘；已核实官方研究帖并 hop。",
+   "publishedAt": "2026-10-23T17:19:49.000Z",
+   "sourceName": "The Decoder",
+   "category": "paper",
+   "selected": true,
+   "eventPublicId": "2026-10-24-anthropic-ukaisi-alignment",
+   "originalUrl": "https://the-decoder.com/anthropic-says-its-unreleased-model-is-both-more-capable-and-better-aligned-than-mythos-5-1/"
+  },
+  {
+   "id": "2026-10-24-anthropic-ukaisi-alignment",
+   "kind": "event",
+   "title": "Anthropic：复盘 AISI 事件，内部研究模型更能自行停止攻击",
+   "summary": null,
+   "publishedAt": "2026-10-23T17:19:49.000Z",
+   "sourceNames": [
+    "The Decoder"
+   ],
+   "path": "/events/2026-10-24-anthropic-ukaisi-alignment/"
+  },
   {
    "id": "sha256:b19f86d623cfeb5d",
    "kind": "item",
@@ -23,6 +173,29 @@
     "The Decoder"
    ],
    "path": "/events/2026-10-23-anthropic-claude-formal-verification/"
+  },
+  {
+   "id": "sha256:f8c156dba7886826",
+   "kind": "item",
+   "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
+   "summary": null,
+   "publishedAt": "2026-10-23T10:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "industry",
+   "selected": true,
+   "eventPublicId": "2026-10-24-openai-securing-frontier-training",
+   "originalUrl": "https://openai.com/index/securing-our-frontier-model-training-environment"
+  },
+  {
+   "id": "2026-10-24-openai-securing-frontier-training",
+   "kind": "event",
+   "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
+   "summary": null,
+   "publishedAt": "2026-10-23T10:00:00.000Z",
+   "sourceNames": [
+    "OpenAI News"
+   ],
+   "path": "/events/2026-10-24-openai-securing-frontier-training/"
   },
   {
    "id": "sha256:1763a7a6e712b3bc",
@@ -49,6 +222,18 @@
    "path": "/events/2026-10-23-google-agent-compute-engine/"
   },
   {
+   "id": "sha256:5d20b75fc1534a89",
+   "kind": "item",
+   "title": "vLLM：GLM-5.3 在 16×H200 上用 PCP/DCP 与 Hybrid HiSparse",
+   "summary": "vLLM 官方 Part2：PCP/DCP 与 Hybrid HiSparse 服务百万上下文 GLM-5.3。",
+   "publishedAt": "2026-10-23T00:00:00.000Z",
+   "sourceName": "vLLM Blog",
+   "category": "tutorial",
+   "selected": true,
+   "eventPublicId": "2026-10-24-vllm-glm53-opt-part2",
+   "originalUrl": "https://vllm.ai/blog/2026-10-23-glm53-part2-pcp-dcp-hisparse"
+  },
+  {
    "id": "sha256:50cb4eba8a3e4759",
    "kind": "item",
    "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持",
@@ -71,6 +256,17 @@
    "selected": true,
    "eventPublicId": "2026-10-23-openai-nask-ai-safety",
    "originalUrl": "https://openai.com/index/openai-nask-ai-safety-security-partnership"
+  },
+  {
+   "id": "2026-10-24-vllm-glm53-opt-part2",
+   "kind": "event",
+   "title": "vLLM：GLM-5.3 在 16×H200 上用 PCP/DCP 与 Hybrid HiSparse",
+   "summary": null,
+   "publishedAt": "2026-10-23T00:00:00.000Z",
+   "sourceNames": [
+    "vLLM Blog"
+   ],
+   "path": "/events/2026-10-24-vllm-glm53-opt-part2/"
   },
   {
    "id": "2026-10-23-openai-nask-ai-safety",

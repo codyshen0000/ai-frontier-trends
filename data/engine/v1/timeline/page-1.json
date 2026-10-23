@@ -6,6 +6,144 @@
  },
  "cards": [
   {
+   "key": "sha256:261b6564023ad66c",
+   "anchorAt": "2026-10-23T19:00:07.000Z",
+   "item": {
+    "id": "sha256:261b6564023ad66c",
+    "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
+    "summary": "Decoder 报道 Kimi K3.1 Pro；已核实 Artificial Analysis 评测帖并 hop。",
+    "reason": "Kimi K3.1 Pro 智能指数 55，暂列第四；拟开源权重",
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-23T19:00:07.000Z",
+    "timelineAt": "2026-10-23T19:00:07.000Z",
+    "category": "model",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-24-kimi-k31-pro",
+    "originalUrl": "https://the-decoder.com/chinese-ai-model-kimi-k3-1-pro-is-closing-in-on-anthropics-claude-opus-5-5/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:30a34d758ba63be2",
+   "anchorAt": "2026-10-23T18:51:33.000Z",
+   "item": {
+    "id": "sha256:30a34d758ba63be2",
+    "title": "Google Research：把基础模型用于一线结核病筛查",
+    "summary": "Google Research：基础模型用于 TB 筛查一线；应用研究。",
+    "reason": "Google：基础模型用于一线结核病筛查",
+    "source": {
+     "name": "Google Research Blog"
+    },
+    "publishedAt": "2026-10-23T18:51:33.000Z",
+    "timelineAt": "2026-10-23T18:51:33.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-24-google-tb-screening",
+    "originalUrl": "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:604f1f9c59689482",
+   "anchorAt": "2026-10-23T18:00:32.000Z",
+   "item": {
+    "id": "sha256:604f1f9c59689482",
+    "title": "METR/Redwood 驻场审计：OpenAI 内部智能体监控存在覆盖缺口",
+    "summary": "Decoder 报道 METR/Redwood 三周驻场审计；已核实 METR 公开摘要并 hop。",
+    "reason": "METR/Redwood 驻场审计：OpenAI 智能体监控有缺口",
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-23T18:00:32.000Z",
+    "timelineAt": "2026-10-23T18:00:32.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-24-openai-metr-agent-monitoring",
+    "originalUrl": "https://the-decoder.com/three-week-on-site-audit-at-openai-reveals-major-gaps-in-ai-safety-monitoring/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:73be0ee71d2832b3",
+   "anchorAt": "2026-10-23T17:36:54.000Z",
+   "item": {
+    "id": "sha256:73be0ee71d2832b3",
+    "title": "Baseten 推出 Environment Network：对接后训练 RL 环境伙伴",
+    "summary": "Baseten 官方：筛选 RL 环境伙伴做客户定制后训练环境；训练与推理仍由 Baseten。",
+    "reason": "Baseten 推出后训练 RL 环境合作伙伴网络",
+    "source": {
+     "name": "Baseten Blog"
+    },
+    "publishedAt": "2026-10-23T17:36:54.000Z",
+    "timelineAt": "2026-10-23T17:36:54.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-24-baseten-environment-network",
+    "originalUrl": "https://www.baseten.co/blog/introducing-the-baseten-environment-network/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:1456ee151a5392db",
+   "anchorAt": "2026-10-23T17:27:52.000Z",
+   "item": {
+    "id": "sha256:1456ee151a5392db",
+    "title": "NVIDIA：TensorRT Global Performance Tuner 跨多条构建路线寻优",
+    "summary": "NVIDIA 技术博客 Part 2：Global Performance Tuner 自动跨构建寻优。",
+    "reason": "TensorRT 11.1 Global Performance Tuner 跨",
+    "source": {
+     "name": "NVIDIA Technical Blog"
+    },
+    "publishedAt": "2026-10-23T17:27:52.000Z",
+    "timelineAt": "2026-10-23T17:27:52.000Z",
+    "category": "tutorial",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-24-nvidia-tensorrt-global-performance-tuner",
+    "originalUrl": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-2/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:cfa117fe12523c03",
+   "anchorAt": "2026-10-23T17:19:49.000Z",
+   "item": {
+    "id": "sha256:cfa117fe12523c03",
+    "title": "Anthropic：复盘 AISI 事件，内部研究模型更能自行停止攻击",
+    "summary": "Decoder 报道 Anthropic 对 AISI Mythos 5 事件的对齐复盘；已核实官方研究帖并 hop。",
+    "reason": "Anthropic 复盘 AISI 测试：内部模型更能自行停攻",
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-23T17:19:49.000Z",
+    "timelineAt": "2026-10-23T17:19:49.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-24-anthropic-ukaisi-alignment",
+    "originalUrl": "https://the-decoder.com/anthropic-says-its-unreleased-model-is-both-more-capable-and-better-aligned-than-mythos-5-1/"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:b19f86d623cfeb5d",
    "anchorAt": "2026-10-23T11:32:19.000Z",
    "item": {
@@ -25,6 +163,52 @@
     "x": null,
     "storyPublicId": "2026-10-23-anthropic-claude-formal-verification",
     "originalUrl": "https://the-decoder.com/anthropics-claude-now-writes-code-and-proves-it-safe-automatically/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:f8c156dba7886826",
+   "anchorAt": "2026-10-23T10:00:00.000Z",
+   "item": {
+    "id": "sha256:f8c156dba7886826",
+    "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
+    "summary": null,
+    "reason": "OpenAI：前沿训练改离线遏制并用模型红队加固",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-23T10:00:00.000Z",
+    "timelineAt": "2026-10-23T10:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-24-openai-securing-frontier-training",
+    "originalUrl": "https://openai.com/index/securing-our-frontier-model-training-environment"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:5d20b75fc1534a89",
+   "anchorAt": "2026-10-23T00:00:00.000Z",
+   "item": {
+    "id": "sha256:5d20b75fc1534a89",
+    "title": "vLLM：GLM-5.3 在 16×H200 上用 PCP/DCP 与 Hybrid HiSparse",
+    "summary": "vLLM 官方 Part2：PCP/DCP 与 Hybrid HiSparse 服务百万上下文 GLM-5.3。",
+    "reason": "vLLM 在 16×H200 上用 PCP/DCP 服务 GLM-5.3 百万上",
+    "source": {
+     "name": "vLLM Blog"
+    },
+    "publishedAt": "2026-10-23T00:00:00.000Z",
+    "timelineAt": "2026-10-23T00:00:00.000Z",
+    "category": "tutorial",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-24-vllm-glm53-opt-part2",
+    "originalUrl": "https://vllm.ai/blog/2026-10-23-glm53-part2-pcp-dcp-hisparse"
    },
    "group": null
   },
@@ -316,247 +500,14 @@
      "sha256:eda525050cea8fce"
     ]
    }
-  },
-  {
-   "key": "sha256:4182359e79e632d3",
-   "anchorAt": "2026-10-22T00:00:00.000Z",
-   "item": {
-    "id": "sha256:4182359e79e632d3",
-    "title": "Claude：经 Google Cloud 项目可调用 Anthropic 托管的 Claude Models",
-    "summary": "Claude Platform：Claude Models on Google Cloud（Anthropic 托管）已推出。",
-    "reason": "Claude 经谷歌云项目可调 Anthropic 托管模型",
-    "source": {
-     "name": "Claude Platform Release Notes"
-    },
-    "publishedAt": "2026-10-22T00:00:00.000Z",
-    "timelineAt": "2026-10-22T00:00:00.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-23-claude-models-google-cloud",
-    "originalUrl": "https://platform.claude.com/docs/en/release-notes/overview#october-22-2026"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:258d5ff776fa8f13",
-   "anchorAt": "2026-10-21T19:53:20.000Z",
-   "item": {
-    "id": "sha256:258d5ff776fa8f13",
-    "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
-    "summary": "Verge：Claude Duet 研究预览，iOS/Android/Web。",
-    "reason": "报道：Anthropic 推 Claude Duet 智能体迎战 Muse",
-    "source": {
-     "name": "The Verge · AI"
-    },
-    "publishedAt": "2026-10-21T19:53:20.000Z",
-    "timelineAt": "2026-10-21T19:53:20.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-22-anthropic-claude-duet",
-    "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent"
-   },
-   "group": {
-    "factId": "fact-2026-10-22-anthropic-claude-duet",
-    "additionalSourceCount": 3,
-    "reportCount": 4,
-    "memberIds": [
-     "sha256:258d5ff776fa8f13"
-    ]
-   }
-  },
-  {
-   "key": "sha256:7decc1c5c0496d6c",
-   "anchorAt": "2026-10-21T17:58:42.000Z",
-   "item": {
-    "id": "sha256:7decc1c5c0496d6c",
-    "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
-    "summary": "Microduck×Isaac Lab 3.0 仿真到真机。",
-    "reason": "NVIDIA Microduck×Isaac Lab 3.0：仿真到真机",
-    "source": {
-     "name": "Hugging Face Blog"
-    },
-    "publishedAt": "2026-10-21T17:58:42.000Z",
-    "timelineAt": "2026-10-21T17:58:42.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-22-nvidia-microduck-isaac-lab",
-    "originalUrl": "https://huggingface.co/blog/nvidia/microduck-isaac-lab-sim-to-real"
-   },
-   "group": {
-    "factId": "fact-2026-10-22-nvidia-microduck-isaac-lab",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:7decc1c5c0496d6c"
-    ]
-   }
-  },
-  {
-   "key": "sha256:40a01666d562060b",
-   "anchorAt": "2026-10-21T17:35:36.000Z",
-   "item": {
-    "id": "sha256:40a01666d562060b",
-    "title": "VocabX：专用词表称可把小模型推理成本砍约 77%",
-    "summary": "VocabX 特化词表降低小模型推理成本。",
-    "reason": "VocabX：专用词表可砍小模型推理成本约 77%",
-    "source": {
-     "name": "Hugging Face Blog"
-    },
-    "publishedAt": "2026-10-21T17:35:36.000Z",
-    "timelineAt": "2026-10-21T17:35:36.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-22-dharma-vocabx-slm",
-    "originalUrl": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:27c0a5d3fc255134",
-   "anchorAt": "2026-10-21T16:23:53.000Z",
-   "item": {
-    "id": "sha256:27c0a5d3fc255134",
-    "title": "谷歌：用 AI 辅助一线孕产超声，服务基层母婴筛查",
-    "summary": "Google Research 介绍 AI 辅助一线孕产超声。",
-    "reason": "谷歌：AI 辅助一线孕产超声筛查",
-    "source": {
-     "name": "Google Research Blog"
-    },
-    "publishedAt": "2026-10-21T16:23:53.000Z",
-    "timelineAt": "2026-10-21T16:23:53.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-22-google-ai-maternal-ultrasound",
-    "originalUrl": "https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:77ec6ad66af3dcc4",
-   "anchorAt": "2026-10-21T16:00:00.000Z",
-   "item": {
-    "id": "sha256:77ec6ad66af3dcc4",
-    "title": "微软研究院：宣布解决数学界 31 年难题 KLS 猜想",
-    "summary": "MSR 称解决 KLS 猜想，移除高维随机算法理论障碍。",
-    "reason": "微软研究院宣布解决 KLS 猜想（31 年）",
-    "source": {
-     "name": "Microsoft Research Blog"
-    },
-    "publishedAt": "2026-10-21T16:00:00.000Z",
-    "timelineAt": "2026-10-21T16:00:00.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-22-msr-kls-conjecture",
-    "originalUrl": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:c2ed162a157709f5",
-   "anchorAt": "2026-10-21T14:58:18.000Z",
-   "item": {
-    "id": "sha256:c2ed162a157709f5",
-    "title": "IBM Granite Speech 5.0：更快更准的转写、翻译与归因",
-    "summary": null,
-    "reason": "IBM Granite Speech 5.0：更快更准的转写翻译归因",
-    "source": {
-     "name": "Hugging Face Blog"
-    },
-    "publishedAt": "2026-10-21T14:58:18.000Z",
-    "timelineAt": "2026-10-21T14:58:18.000Z",
-    "category": "model",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-21-ibm-granite-speech-5",
-    "originalUrl": "https://huggingface.co/blog/ibm-granite/granite-speech-5"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:859a2ca12c0c52e9",
-   "anchorAt": "2026-10-21T13:44:12.000Z",
-   "item": {
-    "id": "sha256:859a2ca12c0c52e9",
-    "title": "Wiz：LiteLLM 1.107.0 被投毒，窃取云与 AI 凭证",
-    "summary": "恶意 LiteLLM 1.107.0 上架 PyPI/Docker，窃取浏览器云与 AI 密钥并含休眠 C2。",
-    "reason": "LiteLLM 恶意包上架 PyPI，窃取云与 AI 凭证",
-    "source": {
-     "name": "Wiz Blog"
-    },
-    "publishedAt": "2026-10-21T13:44:12.000Z",
-    "timelineAt": "2026-10-21T13:44:12.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-22-litellm-pypi-compromise",
-    "originalUrl": "https://www.wiz.io/blog/litellm-compromised-steals-credentials"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-2.json",
  "hot": [
   {
    "rank": 1,
-   "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
-   "heat": 21.5,
-   "trend": "down",
-   "storyPublicId": "2026-10-21-php2shell-wiz-rce",
-   "itemId": "sha256:de9db6f384cbc788",
-   "participants": [
-    {
-     "name": "Ars Technica · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "Latent Space",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "Simon Willison",
-     "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 6
-  },
-  {
-   "rank": 2,
    "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
-   "heat": 14.3,
+   "heat": 13.0,
    "trend": "down",
    "storyPublicId": "2026-10-22-anthropic-claude-duet",
    "itemId": "sha256:258d5ff776fa8f13",
@@ -581,9 +532,32 @@
    "participantCount": 4
   },
   {
+   "rank": 2,
+   "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
+   "heat": 12.3,
+   "trend": "down",
+   "storyPublicId": "2026-10-21-php2shell-wiz-rce",
+   "itemId": "sha256:de9db6f384cbc788",
+   "participants": [
+    {
+     "name": "Ars Technica · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "Latent Space",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 3
+  },
+  {
    "rank": 3,
    "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持",
-   "heat": 12.6,
+   "heat": 11.5,
    "trend": "down",
    "storyPublicId": "2026-10-19-minimax-m31-flash",
    "itemId": "sha256:50cb4eba8a3e4759",
@@ -601,27 +575,8 @@
   },
   {
    "rank": 4,
-   "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
-   "heat": 12.1,
-   "trend": "up",
-   "storyPublicId": "2026-10-22-nvidia-microduck-isaac-lab",
-   "itemId": "sha256:7decc1c5c0496d6c",
-   "participants": [
-    {
-     "name": "NVIDIA Technical Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "Hugging Face Blog",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 2
-  },
-  {
-   "rank": 5,
    "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
-   "heat": 11.9,
+   "heat": 10.9,
    "trend": "down",
    "storyPublicId": "2026-10-23-google-agent-compute-engine",
    "itemId": "sha256:7ea705cfe9f05665",
@@ -636,10 +591,30 @@
     }
    ],
    "participantCount": 2
+  },
+  {
+   "rank": 5,
+   "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
+   "heat": 9.8,
+   "trend": "down",
+   "storyPublicId": "2026-10-23-openai-decisions-api",
+   "itemId": "sha256:891b7e0bbf66f86d",
+   "participants": [
+    {
+     "name": "OpenAI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2
   }
  ],
  "dayCounts": {
-  "2026-10-23": 9,
+  "2026-10-24": 6,
+  "2026-10-23": 11,
   "2026-10-22": 9,
   "2026-10-21": 12,
   "2026-10-20": 3,
@@ -647,6 +622,6 @@
   "2026-10-17": 1
  },
  "page": 1,
- "pageCount": 2,
- "total": 36
+ "pageCount": 3,
+ "total": 44
 }

@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-22-dharma-vocabx-slm",
  "title": "VocabX：专用词表称可把小模型推理成本砍约 77%",
- "status": "active",
+ "status": "watching",
  "reportCount": 1,
  "sourceCount": 1,
  "firstReportAt": "2026-10-21T17:35:36.000Z",
@@ -13,10 +13,10 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 1,
+  "participants48h": 0,
   "newParticipants6h": 0,
   "recentReports24h": 0,
-  "observationComplete": true,
+  "observationComplete": false,
   "rank": null
  },
  "developments": [
@@ -67,243 +67,7 @@
    "originalUrl": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization"
   }
  ],
- "heat": [
-  {
-   "hour": "2026-10-21T18:00:00.000Z",
-   "heat": 9.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T19:00:00.000Z",
-   "heat": 9.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T20:00:00.000Z",
-   "heat": 9.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T21:00:00.000Z",
-   "heat": 9.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T22:00:00.000Z",
-   "heat": 8.8,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T23:00:00.000Z",
-   "heat": 8.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T00:00:00.000Z",
-   "heat": 8.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T01:00:00.000Z",
-   "heat": 8.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T02:00:00.000Z",
-   "heat": 7.8,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T03:00:00.000Z",
-   "heat": 7.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T04:00:00.000Z",
-   "heat": 7.4,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T05:00:00.000Z",
-   "heat": 7.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T06:00:00.000Z",
-   "heat": 7.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T07:00:00.000Z",
-   "heat": 6.8,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T08:00:00.000Z",
-   "heat": 6.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T09:00:00.000Z",
-   "heat": 6.4,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T10:00:00.000Z",
-   "heat": 6.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T11:00:00.000Z",
-   "heat": 6.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T12:00:00.000Z",
-   "heat": 5.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T13:00:00.000Z",
-   "heat": 5.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T14:00:00.000Z",
-   "heat": 5.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T15:00:00.000Z",
-   "heat": 5.4,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T16:00:00.000Z",
-   "heat": 5.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T17:00:00.000Z",
-   "heat": 5.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T18:00:00.000Z",
-   "heat": 4.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T19:00:00.000Z",
-   "heat": 4.8,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T20:00:00.000Z",
-   "heat": 4.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T21:00:00.000Z",
-   "heat": 4.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T22:00:00.000Z",
-   "heat": 4.4,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T23:00:00.000Z",
-   "heat": 4.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-23T00:00:00.000Z",
-   "heat": 4.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-23T01:00:00.000Z",
-   "heat": 4.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-23T02:00:00.000Z",
-   "heat": 3.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-23T03:00:00.000Z",
-   "heat": 3.8,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-23T04:00:00.000Z",
-   "heat": 3.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-23T05:00:00.000Z",
-   "heat": 3.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-23T06:00:00.000Z",
-   "heat": 3.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-23T07:00:00.000Z",
-   "heat": 3.4,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-23T08:00:00.000Z",
-   "heat": 3.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-23T09:00:00.000Z",
-   "heat": 3.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-23T10:00:00.000Z",
-   "heat": 3.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-23T11:00:00.000Z",
-   "heat": 3.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-23T12:00:00.000Z",
-   "heat": 2.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-23T13:00:00.000Z",
-   "heat": 2.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-23T14:00:00.000Z",
-   "heat": 2.8,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-23T15:00:00.000Z",
-   "heat": 2.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-23T16:00:00.000Z",
-   "heat": 2.6,
-   "participants": 1
-  }
- ],
+ "heat": [],
  "related": [],
  "topics": [],
  "recommendReason": "VocabX：专用词表可砍小模型推理成本约 77%",

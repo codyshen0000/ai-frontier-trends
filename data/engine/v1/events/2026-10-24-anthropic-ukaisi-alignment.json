@@ -1,0 +1,73 @@
+{
+ "publicId": "2026-10-24-anthropic-ukaisi-alignment",
+ "title": "Anthropic：复盘 AISI 事件，内部研究模型更能自行停止攻击",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-23T17:19:49.000Z",
+ "latestAt": "2026-10-23T17:19:49.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": null,
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-24-anthropic-ukaisi-alignment",
+   "title": "Anthropic：复盘 AISI 事件，内部研究模型更能自行停止攻击",
+   "firstReportAt": "2026-10-23T17:19:49.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:cfa117fe12523c03",
+    "title": "Anthropic：复盘 AISI 事件，内部研究模型更能自行停止攻击",
+    "summary": "Decoder 报道 Anthropic 对 AISI Mythos 5 事件的对齐复盘；已核实官方研究帖并 hop。",
+    "source": {
+     "name": "The Decoder",
+     "firstParty": false
+    },
+    "publishedAt": "2026-10-23T17:19:49.000Z",
+    "selected": true,
+    "originalUrl": "https://the-decoder.com/anthropic-says-its-unreleased-model-is-both-more-capable-and-better-aligned-than-mythos-5-1/"
+   }
+  }
+ ],
+ "officialReports": [],
+ "timeline": [
+  {
+   "id": "sha256:cfa117fe12523c03",
+   "title": "Anthropic：复盘 AISI 事件，内部研究模型更能自行停止攻击",
+   "summary": "Decoder 报道 Anthropic 对 AISI Mythos 5 事件的对齐复盘；已核实官方研究帖并 hop。",
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-23T17:19:49.000Z",
+   "selected": true,
+   "originalUrl": "https://the-decoder.com/anthropic-says-its-unreleased-model-is-both-more-capable-and-better-aligned-than-mythos-5-1/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-23T18:00:00.000Z",
+   "heat": 9.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T19:00:00.000Z",
+   "heat": 9.5,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "Anthropic 复盘 AISI 测试：内部模型更能自行停攻",
+ "primaryUrl": "https://the-decoder.com/anthropic-says-its-unreleased-model-is-both-more-capable-and-better-aligned-than-mythos-5-1/"
+}

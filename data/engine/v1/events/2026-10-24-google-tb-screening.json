@@ -1,0 +1,88 @@
+{
+ "publicId": "2026-10-24-google-tb-screening",
+ "title": "Google Research：把基础模型用于一线结核病筛查",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-23T18:51:33.000Z",
+ "latestAt": "2026-10-23T18:51:33.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Google Research 博文介绍将基础模型用于结核病筛查一线场景；属应用研究说明，具体性能与部署边界以原文为准。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-24-google-tb-screening",
+   "title": "Google Research：把基础模型用于一线结核病筛查",
+   "firstReportAt": "2026-10-23T18:51:33.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:30a34d758ba63be2",
+    "title": "Google Research：把基础模型用于一线结核病筛查",
+    "summary": "Google Research：基础模型用于 TB 筛查一线；应用研究。",
+    "source": {
+     "name": "Google Research Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-23T18:51:33.000Z",
+    "selected": true,
+    "originalUrl": "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:30a34d758ba63be2",
+   "title": "Google Research：把基础模型用于一线结核病筛查",
+   "summary": "Google Research：基础模型用于 TB 筛查一线；应用研究。",
+   "source": {
+    "name": "Google Research Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-23T18:51:33.000Z",
+   "selected": true,
+   "originalUrl": "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:30a34d758ba63be2",
+   "title": "Google Research：把基础模型用于一线结核病筛查",
+   "summary": "Google Research：基础模型用于 TB 筛查一线；应用研究。",
+   "source": {
+    "name": "Google Research Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-23T18:51:33.000Z",
+   "selected": true,
+   "originalUrl": "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-23T19:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "Google：基础模型用于一线结核病筛查",
+ "cover": {
+  "url": "https://storage.googleapis.com/gweb-research2023-media/original_images/AIforTBScreening2_Xray.png",
+  "width": null,
+  "height": null,
+  "alt": "结核筛查相关胸部 X 光示意",
+  "valueClass": "paper_figure"
+ },
+ "primaryUrl": "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/"
+}

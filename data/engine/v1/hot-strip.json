@@ -1,43 +1,8 @@
 [
  {
   "rank": 1,
-  "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
-  "heat": 21.5,
-  "trend": "down",
-  "storyPublicId": "2026-10-21-php2shell-wiz-rce",
-  "itemId": "sha256:de9db6f384cbc788",
-  "participants": [
-   {
-    "name": "Ars Technica · AI",
-    "kind": "editorial"
-   },
-   {
-    "name": "The Verge · AI",
-    "kind": "editorial"
-   },
-   {
-    "name": "Latent Space",
-    "kind": "editorial"
-   },
-   {
-    "name": "The Decoder",
-    "kind": "editorial"
-   },
-   {
-    "name": "Simon Willison",
-    "kind": "editorial"
-   },
-   {
-    "name": "TechCrunch · AI",
-    "kind": "editorial"
-   }
-  ],
-  "participantCount": 6
- },
- {
-  "rank": 2,
   "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
-  "heat": 14.3,
+  "heat": 13.0,
   "trend": "down",
   "storyPublicId": "2026-10-22-anthropic-claude-duet",
   "itemId": "sha256:258d5ff776fa8f13",
@@ -62,9 +27,32 @@
   "participantCount": 4
  },
  {
+  "rank": 2,
+  "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
+  "heat": 12.3,
+  "trend": "down",
+  "storyPublicId": "2026-10-21-php2shell-wiz-rce",
+  "itemId": "sha256:de9db6f384cbc788",
+  "participants": [
+   {
+    "name": "Ars Technica · AI",
+    "kind": "editorial"
+   },
+   {
+    "name": "The Verge · AI",
+    "kind": "editorial"
+   },
+   {
+    "name": "Latent Space",
+    "kind": "editorial"
+   }
+  ],
+  "participantCount": 3
+ },
+ {
   "rank": 3,
   "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持",
-  "heat": 12.6,
+  "heat": 11.5,
   "trend": "down",
   "storyPublicId": "2026-10-19-minimax-m31-flash",
   "itemId": "sha256:50cb4eba8a3e4759",
@@ -82,27 +70,8 @@
  },
  {
   "rank": 4,
-  "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
-  "heat": 12.1,
-  "trend": "up",
-  "storyPublicId": "2026-10-22-nvidia-microduck-isaac-lab",
-  "itemId": "sha256:7decc1c5c0496d6c",
-  "participants": [
-   {
-    "name": "NVIDIA Technical Blog",
-    "kind": "editorial"
-   },
-   {
-    "name": "Hugging Face Blog",
-    "kind": "editorial"
-   }
-  ],
-  "participantCount": 2
- },
- {
-  "rank": 5,
   "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
-  "heat": 11.9,
+  "heat": 10.9,
   "trend": "down",
   "storyPublicId": "2026-10-23-google-agent-compute-engine",
   "itemId": "sha256:7ea705cfe9f05665",
@@ -114,6 +83,25 @@
    {
     "name": "IT之家（全站，需关键词过滤）",
     "kind": "signal"
+   }
+  ],
+  "participantCount": 2
+ },
+ {
+  "rank": 5,
+  "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
+  "heat": 9.8,
+  "trend": "down",
+  "storyPublicId": "2026-10-23-openai-decisions-api",
+  "itemId": "sha256:891b7e0bbf66f86d",
+  "participants": [
+   {
+    "name": "OpenAI News",
+    "kind": "editorial"
+   },
+   {
+    "name": "TechCrunch · AI",
+    "kind": "editorial"
    }
   ],
   "participantCount": 2

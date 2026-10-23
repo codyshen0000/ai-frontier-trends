@@ -1,0 +1,86 @@
+{
+ "publicId": "2026-10-24-baseten-environment-network",
+ "title": "Baseten 推出 Environment Network：对接后训练 RL 环境伙伴",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-23T17:36:54.000Z",
+ "latestAt": "2026-10-23T17:36:54.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Baseten 宣布 Environment Network：经筛选的 RL 环境公司为客户定制后训练环境，Baseten 仍负责训练与推理；并称将开源一批前沿质量环境与审计方法。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-24-baseten-environment-network",
+   "title": "Baseten 推出 Environment Network：对接后训练 RL 环境伙伴",
+   "firstReportAt": "2026-10-23T17:36:54.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:73be0ee71d2832b3",
+    "title": "Baseten 推出 Environment Network：对接后训练 RL 环境伙伴",
+    "summary": "Baseten 官方：筛选 RL 环境伙伴做客户定制后训练环境；训练与推理仍由 Baseten。",
+    "source": {
+     "name": "Baseten Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-23T17:36:54.000Z",
+    "selected": true,
+    "originalUrl": "https://www.baseten.co/blog/introducing-the-baseten-environment-network/"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:73be0ee71d2832b3",
+   "title": "Baseten 推出 Environment Network：对接后训练 RL 环境伙伴",
+   "summary": "Baseten 官方：筛选 RL 环境伙伴做客户定制后训练环境；训练与推理仍由 Baseten。",
+   "source": {
+    "name": "Baseten Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-23T17:36:54.000Z",
+   "selected": true,
+   "originalUrl": "https://www.baseten.co/blog/introducing-the-baseten-environment-network/"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:73be0ee71d2832b3",
+   "title": "Baseten 推出 Environment Network：对接后训练 RL 环境伙伴",
+   "summary": "Baseten 官方：筛选 RL 环境伙伴做客户定制后训练环境；训练与推理仍由 Baseten。",
+   "source": {
+    "name": "Baseten Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-23T17:36:54.000Z",
+   "selected": true,
+   "originalUrl": "https://www.baseten.co/blog/introducing-the-baseten-environment-network/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-23T18:00:00.000Z",
+   "heat": 9.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T19:00:00.000Z",
+   "heat": 9.6,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "Baseten 推出后训练 RL 环境合作伙伴网络",
+ "primaryUrl": "https://www.baseten.co/blog/introducing-the-baseten-environment-network/"
+}

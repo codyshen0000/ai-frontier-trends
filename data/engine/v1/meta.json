@@ -2,31 +2,31 @@
  "site": "前沿趋势",
  "contract_version": "1.1",
  "mode": "production",
- "data_as_of": "2026-10-24T00:19:31+08:00",
- "data_as_of_label": "数据截至 2026-10-24 00:19（北京时间）",
- "generated_at": "2026-10-24T00:37:00+08:00",
+ "data_as_of": "2026-10-24T03:25:06+08:00",
+ "data_as_of_label": "数据截至 2026-10-24 03:25（北京时间）",
+ "generated_at": "2026-10-24T03:50:00+08:00",
  "hot_rule_version": "heat-v1-48h-halflife24h (前沿情报 heat48h.py 1.1)",
- "hot_computed_at": "2026-10-24T00:37:00+08:00",
+ "hot_computed_at": "2026-10-24T03:50:00+08:00",
  "window_hours": 48,
  "spark_points": 25,
  "page_size": 20,
  "counts": {
-  "cards": 36,
-  "pages": 2,
-  "events": 37,
-  "hot_entries": 9,
-  "search_docs": 89,
-  "feed_items": 36,
-  "passed_events": 37,
+  "cards": 44,
+  "pages": 3,
+  "events": 45,
+  "hot_entries": 8,
+  "search_docs": 106,
+  "feed_items": 44,
+  "passed_events": 45,
   "below_threshold_events": 0,
   "redirects": 0,
-  "hot_snapshots": 19,
-  "covers": 4
+  "hot_snapshots": 20,
+  "covers": 5
  },
  "last_round": {
-  "batch_id": "2026-10-24T0019",
+  "batch_id": "2026-10-24T0325",
   "status": "ok",
-  "finished_at": "2026-10-24T00:34:31+08:00"
+  "finished_at": "2026-10-24T03:48:57+08:00"
  },
  "batches": [
   {
@@ -480,6 +480,18 @@
   {
    "batch_id": "2026-10-24T0019",
    "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-24T0126",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-24T0221",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-24T0325",
+   "status": "ok"
   }
  ],
  "files": [
@@ -521,6 +533,14 @@
   "events/2026-10-23-openai-decisions-api.json",
   "events/2026-10-23-openai-nask-ai-safety.json",
   "events/2026-10-23-uber-chatgpt-work-rollout.json",
+  "events/2026-10-24-anthropic-ukaisi-alignment.json",
+  "events/2026-10-24-baseten-environment-network.json",
+  "events/2026-10-24-google-tb-screening.json",
+  "events/2026-10-24-kimi-k31-pro.json",
+  "events/2026-10-24-nvidia-tensorrt-global-performance-tuner.json",
+  "events/2026-10-24-openai-metr-agent-monitoring.json",
+  "events/2026-10-24-openai-securing-frontier-training.json",
+  "events/2026-10-24-vllm-glm53-opt-part2.json",
   "events/index.json",
   "feed/selected.json",
   "hot-snapshots/2026-10-21T09.json",
@@ -542,6 +562,7 @@
   "hot-snapshots/2026-10-23T18.json",
   "hot-snapshots/2026-10-23T19.json",
   "hot-snapshots/2026-10-24T00.json",
+  "hot-snapshots/2026-10-24T03.json",
   "hot-strip.json",
   "hot.json",
   "meta.json",
@@ -550,7 +571,8 @@
   "sources.json",
   "timeline/index.json",
   "timeline/page-1.json",
-  "timeline/page-2.json"
+  "timeline/page-2.json",
+  "timeline/page-3.json"
  ],
  "next_round": "2026-10-24T08:25:00+08:00"
 }
