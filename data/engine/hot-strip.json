@@ -1,113 +1,123 @@
 [
- {
-  "rank": 1,
-  "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
-  "heat": 30.1,
-  "trend": "up",
-  "storyPublicId": "2026-10-24-kimi-k31-pro",
-  "itemId": "sha256:261b6564023ad66c",
-  "participants": [
-   {
-    "name": "Latent Space",
-    "kind": "editorial"
-   },
-   {
-    "name": "Simon Willison",
-    "kind": "editorial"
-   },
-   {
-    "name": "The Decoder",
-    "kind": "editorial"
-   },
-   {
-    "name": "IT之家（全站，需关键词过滤）",
-    "kind": "signal"
-   }
-  ],
-  "participantCount": 4
- },
- {
-  "rank": 2,
-  "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
-  "heat": 28.0,
-  "trend": "up",
-  "storyPublicId": "2026-10-24-openai-securing-frontier-training",
-  "itemId": "sha256:f8c156dba7886826",
-  "participants": [
-   {
-    "name": "OpenAI News",
-    "kind": "editorial"
-   },
-   {
-    "name": "The Decoder",
-    "kind": "editorial"
-   },
-   {
-    "name": "TechCrunch · AI",
-    "kind": "editorial"
-   },
-   {
-    "name": "The Verge · AI",
-    "kind": "editorial"
-   }
-  ],
-  "participantCount": 4
- },
- {
-  "rank": 3,
-  "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
-  "heat": 12.2,
-  "trend": "down",
-  "storyPublicId": "2026-10-22-nvidia-microduck-isaac-lab",
-  "itemId": "sha256:7decc1c5c0496d6c",
-  "participants": [
-   {
-    "name": "NVIDIA Technical Blog",
-    "kind": "editorial"
-   },
-   {
-    "name": "TechCrunch · AI",
-    "kind": "editorial"
-   }
-  ],
-  "participantCount": 2
- },
- {
-  "rank": 4,
-  "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持",
-  "heat": 7.2,
-  "trend": "down",
-  "storyPublicId": "2026-10-19-minimax-m31-flash",
-  "itemId": "sha256:50cb4eba8a3e4759",
-  "participants": [
-   {
-    "name": "vLLM Blog",
-    "kind": "editorial"
-   },
-   {
-    "name": "IT之家（全站，需关键词过滤）",
-    "kind": "signal"
-   }
-  ],
-  "participantCount": 2
- },
- {
-  "rank": 5,
-  "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
-  "heat": 6.8,
-  "trend": "down",
-  "storyPublicId": "2026-10-23-google-agent-compute-engine",
-  "itemId": "sha256:7ea705cfe9f05665",
-  "participants": [
-   {
-    "name": "The Decoder",
-    "kind": "editorial"
-   },
-   {
-    "name": "IT之家（全站，需关键词过滤）",
-    "kind": "signal"
-   }
-  ],
-  "participantCount": 2
- }
+  {
+    "rank": 1,
+    "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
+    "heat": 26.3,
+    "trend": "down",
+    "storyPublicId": "2026-10-24-kimi-k31-pro",
+    "itemId": "sha256:261b6564023ad66c",
+    "participants": [
+      {
+        "name": "Latent Space",
+        "kind": "editorial"
+      },
+      {
+        "name": "Simon Willison",
+        "kind": "editorial"
+      },
+      {
+        "name": "The Decoder",
+        "kind": "editorial"
+      },
+      {
+        "name": "IT之家（全站，需关键词过滤）",
+        "kind": "signal"
+      }
+    ],
+    "participantCount": 4
+  },
+  {
+    "rank": 2,
+    "title": "Block 发布 Dessa：纯语音训练的全双工对话模型",
+    "heat": 24.6,
+    "trend": "up",
+    "storyPublicId": "2026-10-24-block-dessa-speech",
+    "itemId": "sha256:60b56cc3037dbda3",
+    "participants": [
+      {
+        "name": "TechCrunch · AI",
+        "kind": "editorial"
+      },
+      {
+        "name": "The Decoder",
+        "kind": "editorial"
+      },
+      {
+        "name": "The Verge · AI",
+        "kind": "editorial"
+      }
+    ],
+    "participantCount": 3,
+    "belowThreshold": true
+  },
+  {
+    "rank": 3,
+    "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
+    "heat": 24.4,
+    "trend": "up",
+    "storyPublicId": "2026-10-24-openai-securing-frontier-training",
+    "itemId": "sha256:f8c156dba7886826",
+    "participants": [
+      {
+        "name": "OpenAI News",
+        "kind": "editorial"
+      },
+      {
+        "name": "The Decoder",
+        "kind": "editorial"
+      },
+      {
+        "name": "TechCrunch · AI",
+        "kind": "editorial"
+      },
+      {
+        "name": "The Verge · AI",
+        "kind": "editorial"
+      }
+    ],
+    "participantCount": 4
+  },
+  {
+    "rank": 4,
+    "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
+    "heat": 10.6,
+    "trend": "down",
+    "storyPublicId": "2026-10-22-nvidia-microduck-isaac-lab",
+    "itemId": "sha256:7decc1c5c0496d6c",
+    "participants": [
+      {
+        "name": "NVIDIA Technical Blog",
+        "kind": "editorial"
+      },
+      {
+        "name": "TechCrunch · AI",
+        "kind": "editorial"
+      }
+    ],
+    "participantCount": 2
+  },
+  {
+    "rank": 5,
+    "title": "Canva 发布首个自研图像生成模型 Craft",
+    "heat": 9.9,
+    "trend": "down",
+    "storyPublicId": "2026-10-23-canva-craft-image-model",
+    "itemId": "sha256:317abcdd1b20728a",
+    "participants": [
+      {
+        "name": "The Decoder",
+        "kind": "editorial"
+      },
+      {
+        "name": "The Verge · AI",
+        "kind": "editorial"
+      },
+      {
+        "name": "TechCrunch · AI",
+        "kind": "editorial"
+      }
+    ],
+    "participantCount": 3,
+    "belowThreshold": true
+  }
 ]
