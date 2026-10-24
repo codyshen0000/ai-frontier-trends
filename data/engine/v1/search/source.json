@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-24T16:35:00.000Z",
+ "generatedAt": "2026-10-24T19:52:00.000Z",
  "docs": [
   {
    "id": "sha256:1dc7e2df39a11f00",
@@ -311,6 +311,18 @@
    "originalUrl": "https://vllm.ai/blog/2026-10-23-minimax-m31-flash"
   },
   {
+   "id": "sha256:1b5221fd798be326",
+   "kind": "item",
+   "title": "vLLM：DeepSeek-V4.1-Flash 在 GB300 NVL72 吞吐逼近 DeepInfer",
+   "summary": null,
+   "publishedAt": "2026-10-23T00:00:00.000Z",
+   "sourceName": "vLLM Blog",
+   "category": "industry",
+   "selected": true,
+   "eventPublicId": "2026-10-25-vllm-ds-v41-flash-scale",
+   "originalUrl": "https://vllm.ai/blog/2026-10-23-deepseek-v41-flash-pd-wide-ep"
+  },
+  {
    "id": "sha256:1a543055a02f9816",
    "kind": "item",
    "title": "OpenAI 与波兰 NASK 合作推进 AI 安全与安保研究",
@@ -321,6 +333,17 @@
    "selected": true,
    "eventPublicId": "2026-10-23-openai-nask-ai-safety",
    "originalUrl": "https://openai.com/index/openai-nask-ai-safety-security-partnership"
+  },
+  {
+   "id": "2026-10-25-vllm-ds-v41-flash-scale",
+   "kind": "event",
+   "title": "vLLM：DeepSeek-V4.1-Flash 在 GB300 NVL72 吞吐逼近 DeepInfer",
+   "summary": null,
+   "publishedAt": "2026-10-23T00:00:00.000Z",
+   "sourceNames": [
+    "vLLM Blog"
+   ],
+   "path": "/events/2026-10-25-vllm-ds-v41-flash-scale/"
   },
   {
    "id": "2026-10-24-vllm-glm53-opt-part2",

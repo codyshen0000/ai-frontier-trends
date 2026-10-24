@@ -6,6 +6,36 @@
  },
  "cards": [
   {
+   "key": "sha256:eda525050cea8fce",
+   "anchorAt": "2026-10-22T00:00:00.000Z",
+   "item": {
+    "id": "sha256:eda525050cea8fce",
+    "title": "Uber 全员上线 ChatGPT Work，覆盖约 3 万名员工",
+    "summary": "OpenAI：Uber 将 ChatGPT Work 扩至逾 3 万员工，接入常用办公工具。",
+    "reason": "Uber 全员上线 ChatGPT Work（约 3 万人）",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-22T00:00:00.000Z",
+    "timelineAt": "2026-10-22T00:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-23-uber-chatgpt-work-rollout",
+    "originalUrl": "https://openai.com/index/uber-chatgpt-work-rollout"
+   },
+   "group": {
+    "factId": "fact-2026-10-23-uber-chatgpt-work-rollout",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:eda525050cea8fce"
+    ]
+   }
+  },
+  {
    "key": "sha256:4182359e79e632d3",
    "anchorAt": "2026-10-22T00:00:00.000Z",
    "item": {
@@ -490,29 +520,6 @@
      "sha256:4c6292fc5ecba5f2"
     ]
    }
-  },
-  {
-   "key": "sha256:aa8847d44cbae332",
-   "anchorAt": "2026-10-20T07:00:00.000Z",
-   "item": {
-    "id": "sha256:aa8847d44cbae332",
-    "title": "OpenAI 客户故事：Terminal X 用 GPT-6.1 做投资判断评测",
-    "summary": null,
-    "reason": "Terminal X：GPT-6.1 投资判断一致率约 88.6%",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-20T07:00:00.000Z",
-    "timelineAt": "2026-10-20T07:00:00.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-21-openai-terminal-x-eval",
-    "originalUrl": "https://openai.com/index/terminal-x"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-3.json",
@@ -520,5 +527,5 @@
  "dayCounts": {},
  "page": 2,
  "pageCount": 3,
- "total": 44
+ "total": 45
 }

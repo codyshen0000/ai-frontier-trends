@@ -284,6 +284,21 @@
    "hour": "2026-10-24T16:00:00.000Z",
    "heat": 6.4,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-24T17:00:00.000Z",
+   "heat": 6.2,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-24T18:00:00.000Z",
+   "heat": 6.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-24T19:00:00.000Z",
+   "heat": 5.9,
+   "participants": 2
   }
  ],
  "related": [],

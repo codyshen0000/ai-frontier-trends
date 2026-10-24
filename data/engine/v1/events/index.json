@@ -61,7 +61,7 @@
    "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
    "latestAt": "2026-10-23T02:55:33.000Z",
    "reportCount": 2,
-   "hotRank": 5
+   "hotRank": null
   },
   {
    "publicId": "2026-10-19-minimax-m31-flash",
@@ -85,6 +85,13 @@
    "hotRank": null
   },
   {
+   "publicId": "2026-10-25-vllm-ds-v41-flash-scale",
+   "title": "vLLM：DeepSeek-V4.1-Flash 在 GB300 NVL72 吞吐逼近 DeepInfer",
+   "latestAt": "2026-10-23T00:00:00.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
    "publicId": "2026-10-23-microsoft-thinkingbox-rl",
    "title": "微软 ThinkingBox：把数据库评分变成 RL 奖励做智能体后训练",
    "latestAt": "2026-10-22T22:24:34.000Z",
@@ -96,14 +103,14 @@
    "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
    "latestAt": "2026-10-22T19:00:00.000Z",
    "reportCount": 1,
-   "hotRank": 6
+   "hotRank": null
   },
   {
    "publicId": "2026-10-23-microsoft-mai-dxo",
    "title": "微软：发布 MAI-DxO 诊断编排器，复杂病例准确率称超医生",
    "latestAt": "2026-10-22T18:43:53.000Z",
    "reportCount": 1,
-   "hotRank": 7
+   "hotRank": null
   },
   {
    "publicId": "2026-10-23-allenai-olmoearth-v13",

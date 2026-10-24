@@ -1,5 +1,5 @@
 {
- "computedAt": "2026-10-24T16:35:00.000Z",
+ "computedAt": "2026-10-24T19:52:00.000Z",
  "windowHours": 48,
  "entries": [
   {
@@ -8,9 +8,9 @@
     "publicId": "2026-10-24-kimi-k31-pro",
     "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四"
    },
-   "heat": 26.3,
+   "heat": 23.9,
    "trend": "down",
-   "trendPct": -16.0,
+   "trendPct": -15.8,
    "badges": [],
    "participantCount": 4,
    "sourceCount": 3,
@@ -39,9 +39,6 @@
    ],
    "spark": [
     null,
-    null,
-    null,
-    null,
     19.6,
     19.1,
     18.5,
@@ -62,13 +59,16 @@
     29.1,
     28.3,
     27.5,
-    26.7
+    26.7,
+    26.0,
+    25.2,
+    24.5
    ],
    "summary": "Artificial Analysis：Kimi K3.1 Pro 智能指数 55（较 K3 升 11 分），暂列第四，落后 Claude Opus 5.5 等；智能体与终端基准提升明显。参数仍约 2.8T/104B 激活、百万上下文；权重尚未放出，评测方预计开源后将成为领先开源权重模型之一。",
    "latest": "腾讯 WorkBuddy 接入 Kimi-K3.1-Pro（含 Highspeed，企业旗舰/个人订阅优先开放）；Latent Space：权重承诺 11 月 4 日放出；Highspeed API 称快 2–3 倍；Code Arena WebDev 约第 8；Cyber Index 64%。",
    "cover": null,
    "rankDelta": 0,
-   "heatDeltaPct": -12.6
+   "heatDeltaPct": -9.1
   },
   {
    "rank": 2,
@@ -76,12 +76,10 @@
     "publicId": "2026-10-24-openai-securing-frontier-training",
     "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队"
    },
-   "heat": 24.4,
-   "trend": "up",
-   "trendPct": 29.1,
-   "badges": [
-    "rising"
-   ],
+   "heat": 22.2,
+   "trend": "down",
+   "trendPct": -15.9,
+   "badges": [],
    "participantCount": 4,
    "sourceCount": 4,
    "sourceNames": [
@@ -109,9 +107,6 @@
     }
    ],
    "spark": [
-    8.4,
-    8.2,
-    7.9,
     7.7,
     7.5,
     7.3,
@@ -133,13 +128,16 @@
     27.1,
     26.3,
     25.6,
-    24.9
+    24.9,
+    24.2,
+    23.5,
+    22.8
    ],
    "summary": null,
    "latest": null,
    "cover": null,
    "rankDelta": 0,
-   "heatDeltaPct": -12.9
+   "heatDeltaPct": -9.0
   },
   {
    "rank": 3,
@@ -147,9 +145,9 @@
     "publicId": "2026-10-22-nvidia-microduck-isaac-lab",
     "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机"
    },
-   "heat": 10.6,
+   "heat": 9.7,
    "trend": "down",
-   "trendPct": -15.9,
+   "trendPct": -15.7,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -168,9 +166,6 @@
     }
    ],
    "spark": [
-    12.4,
-    12.0,
-    9.2,
     8.9,
     8.6,
     8.4,
@@ -192,13 +187,16 @@
     11.8,
     11.4,
     11.1,
-    10.8
+    10.8,
+    10.5,
+    10.2,
+    9.9
    ],
    "summary": "NVIDIA 介绍 Microduck 在 Isaac Lab 3.0 中仿真训练后迁移到真机的流程与结果。",
    "latest": "TechCrunch：黄仁勋演示 Microduck 玩具机器人，称已售约 2 万台、冲圣诞热销。",
    "cover": null,
    "rankDelta": 0,
-   "heatDeltaPct": -13.1
+   "heatDeltaPct": -8.5
   },
   {
    "rank": 4,
@@ -206,9 +204,9 @@
     "publicId": "2026-10-19-minimax-m31-flash",
     "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持"
    },
-   "heat": 6.3,
+   "heat": 5.7,
    "trend": "down",
-   "trendPct": -16.0,
+   "trendPct": -16.2,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 1,
@@ -226,9 +224,6 @@
     }
    ],
    "spark": [
-    12.8,
-    12.4,
-    12.1,
     11.7,
     11.4,
     11.1,
@@ -250,189 +245,16 @@
     7.0,
     6.8,
     6.6,
-    6.4
-   ],
-   "summary": null,
-   "latest": null,
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -12.5
-  },
-  {
-   "rank": 5,
-   "story": {
-    "publicId": "2026-10-23-google-agent-compute-engine",
-    "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM"
-   },
-   "heat": 6.0,
-   "trend": "down",
-   "trendPct": -15.5,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 1,
-   "sourceNames": [
-    "The Decoder"
-   ],
-   "participants": [
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
-    }
-   ],
-   "spark": [
-    12.1,
-    11.8,
-    11.4,
-    11.1,
-    10.8,
-    10.5,
-    10.2,
-    9.9,
-    9.6,
-    9.4,
-    9.1,
-    8.8,
-    8.6,
-    8.3,
-    8.1,
-    7.9,
-    7.6,
-    7.4,
-    7.2,
-    7.0,
-    6.8,
-    6.6,
-    6.4,
-    6.2,
-    6.1
-   ],
-   "summary": null,
-   "latest": "IT之家转述：ACE 为空闲智能体自动休眠、唤醒称不到 500 毫秒",
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -11.8
-  },
-  {
-   "rank": 6,
-   "story": {
-    "publicId": "2026-10-23-openai-decisions-api",
-    "title": "OpenAI 推出 Decisions API：低成本快速决策接口"
-   },
-   "heat": 5.4,
-   "trend": "down",
-   "trendPct": -15.6,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "OpenAI News",
-    "TechCrunch · AI"
-   ],
-   "participants": [
-    {
-     "name": "OpenAI News",
-     "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    10.9,
-    10.6,
-    10.3,
-    10.0,
-    9.7,
-    9.4,
-    9.2,
-    8.9,
-    8.7,
-    8.4,
-    8.2,
-    7.9,
-    7.7,
-    7.5,
-    7.3,
-    7.1,
-    6.9,
-    6.7,
-    6.5,
-    6.3,
-    6.1,
-    5.9,
-    5.8,
-    5.6,
-    5.5
-   ],
-   "summary": "OpenAI 发布 Decisions API，面向应用内快速、聚焦、低成本决策；与决策模型竞赛相关。官方称可用于任意应用。 TechCrunch：称对标 Jev，决策模型竞争升温。",
-   "latest": null,
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -11.5
-  },
-  {
-   "rank": 7,
-   "story": {
-    "publicId": "2026-10-23-microsoft-mai-dxo",
-    "title": "微软：发布 MAI-DxO 诊断编排器，复杂病例准确率称超医生"
-   },
-   "heat": 5.3,
-   "trend": "down",
-   "trendPct": -15.9,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "TechCrunch · AI",
-    "The Verge · AI"
-   ],
-   "participants": [
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    10.7,
-    10.4,
-    10.1,
-    9.8,
-    9.5,
-    9.3,
-    9.0,
-    8.7,
-    8.5,
-    8.3,
-    8.0,
-    7.8,
-    7.6,
-    7.4,
-    7.1,
-    6.9,
-    6.7,
-    6.6,
     6.4,
     6.2,
     6.0,
-    5.8,
-    5.7,
-    5.5,
-    5.4
+    5.9
    ],
    "summary": null,
    "latest": null,
    "cover": null,
    "rankDelta": 0,
-   "heatDeltaPct": -11.7
+   "heatDeltaPct": -9.5
   }
  ]
 }

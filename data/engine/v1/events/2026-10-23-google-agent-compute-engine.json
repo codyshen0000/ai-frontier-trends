@@ -13,11 +13,11 @@
  "latest": "IT之家转述：ACE 为空闲智能体自动休眠、唤醒称不到 500 毫秒",
  "latestReport": null,
  "whyHot": {
-  "participants48h": 2,
+  "participants48h": 1,
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 5
+  "rank": null
  },
  "developments": [
   {
@@ -67,11 +67,6 @@
   }
  ],
  "heat": [
-  {
-   "hour": "2026-10-22T18:00:00.000Z",
-   "heat": 10.0,
-   "participants": 1
-  },
   {
    "hour": "2026-10-22T19:00:00.000Z",
    "heat": 9.7,
@@ -301,11 +296,25 @@
    "hour": "2026-10-24T16:00:00.000Z",
    "heat": 6.1,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-24T17:00:00.000Z",
+   "heat": 5.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-24T18:00:00.000Z",
+   "heat": 3.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-24T19:00:00.000Z",
+   "heat": 3.1,
+   "participants": 1
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "Google 云推出 Agent Compute Engine 硬件隔离 mic",
- "primaryUrl": "https://the-decoder.com/googles-agent-compute-engine-gives-every-gemini-agent-its-own-hardware-isolated-micro-virtual-machine/",
- "rankDelta": 0
+ "primaryUrl": "https://the-decoder.com/googles-agent-compute-engine-gives-every-gemini-agent-its-own-hardware-isolated-micro-virtual-machine/"
 }

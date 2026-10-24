@@ -2,31 +2,31 @@
  "site": "前沿趋势",
  "contract_version": "1.1",
  "mode": "production",
- "data_as_of": "2026-10-25T00:20:27+08:00",
- "data_as_of_label": "数据截至 2026-10-25 00:20（北京时间）",
- "generated_at": "2026-10-25T00:35:00+08:00",
+ "data_as_of": "2026-10-25T03:23:24+08:00",
+ "data_as_of_label": "数据截至 2026-10-25 03:23（北京时间）",
+ "generated_at": "2026-10-25T03:52:00+08:00",
  "hot_rule_version": "heat-v1-48h-halflife24h (前沿情报 heat48h.py 1.1)",
- "hot_computed_at": "2026-10-25T00:35:00+08:00",
+ "hot_computed_at": "2026-10-25T03:52:00+08:00",
  "window_hours": 48,
  "spark_points": 25,
  "page_size": 20,
  "counts": {
-  "cards": 44,
+  "cards": 45,
   "pages": 3,
-  "events": 44,
-  "hot_entries": 7,
-  "search_docs": 107,
-  "feed_items": 44,
-  "passed_events": 44,
+  "events": 45,
+  "hot_entries": 4,
+  "search_docs": 109,
+  "feed_items": 45,
+  "passed_events": 45,
   "below_threshold_events": 0,
   "redirects": 0,
-  "hot_snapshots": 21,
-  "covers": 5
+  "hot_snapshots": 22,
+  "covers": 6
  },
  "last_round": {
-  "batch_id": "2026-10-25T0020",
+  "batch_id": "2026-10-25T0323",
   "status": "ok",
-  "finished_at": "2026-10-25T00:30:00+08:00"
+  "finished_at": "2026-10-25T03:46:37+08:00"
  },
  "batches": [
   {
@@ -584,6 +584,18 @@
   {
    "batch_id": "2026-10-25T0020",
    "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-25T0122",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-25T0223",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-25T0323",
+   "status": "ok"
   }
  ],
  "files": [
@@ -632,6 +644,7 @@
   "events/2026-10-24-openai-metr-agent-monitoring.json",
   "events/2026-10-24-openai-securing-frontier-training.json",
   "events/2026-10-24-vllm-glm53-opt-part2.json",
+  "events/2026-10-25-vllm-ds-v41-flash-scale.json",
   "events/index.json",
   "feed/selected.json",
   "hot-snapshots/2026-10-22T08.json",
@@ -655,6 +668,7 @@
   "hot-snapshots/2026-10-24T15.json",
   "hot-snapshots/2026-10-24T19.json",
   "hot-snapshots/2026-10-25T00.json",
+  "hot-snapshots/2026-10-25T03.json",
   "hot-strip.json",
   "hot.json",
   "meta.json",

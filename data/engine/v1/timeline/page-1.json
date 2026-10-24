@@ -258,6 +258,29 @@
    }
   },
   {
+   "key": "sha256:1b5221fd798be326",
+   "anchorAt": "2026-10-23T00:00:00.000Z",
+   "item": {
+    "id": "sha256:1b5221fd798be326",
+    "title": "vLLM：DeepSeek-V4.1-Flash 在 GB300 NVL72 吞吐逼近 DeepInfer",
+    "summary": null,
+    "reason": "vLLM 在 NVL72 上服务 V4.1-Flash，逼近 DeepInfer",
+    "source": {
+     "name": "vLLM Blog"
+    },
+    "publishedAt": "2026-10-23T00:00:00.000Z",
+    "timelineAt": "2026-10-23T00:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-25-vllm-ds-v41-flash-scale",
+    "originalUrl": "https://vllm.ai/blog/2026-10-23-deepseek-v41-flash-pd-wide-ep"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:1a543055a02f9816",
    "anchorAt": "2026-10-23T00:00:00.000Z",
    "item": {
@@ -484,36 +507,6 @@
     "originalUrl": "https://openai.com/index/forward-deployed-engineering-means"
    },
    "group": null
-  },
-  {
-   "key": "sha256:eda525050cea8fce",
-   "anchorAt": "2026-10-22T00:00:00.000Z",
-   "item": {
-    "id": "sha256:eda525050cea8fce",
-    "title": "Uber 全员上线 ChatGPT Work，覆盖约 3 万名员工",
-    "summary": "OpenAI：Uber 将 ChatGPT Work 扩至逾 3 万员工，接入常用办公工具。",
-    "reason": "Uber 全员上线 ChatGPT Work（约 3 万人）",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-22T00:00:00.000Z",
-    "timelineAt": "2026-10-22T00:00:00.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-23-uber-chatgpt-work-rollout",
-    "originalUrl": "https://openai.com/index/uber-chatgpt-work-rollout"
-   },
-   "group": {
-    "factId": "fact-2026-10-23-uber-chatgpt-work-rollout",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:eda525050cea8fce"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-2.json",
@@ -521,7 +514,7 @@
   {
    "rank": 1,
    "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
-   "heat": 26.3,
+   "heat": 23.9,
    "trend": "down",
    "storyPublicId": "2026-10-24-kimi-k31-pro",
    "itemId": "sha256:261b6564023ad66c",
@@ -548,8 +541,8 @@
   {
    "rank": 2,
    "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
-   "heat": 24.4,
-   "trend": "up",
+   "heat": 22.2,
+   "trend": "down",
    "storyPublicId": "2026-10-24-openai-securing-frontier-training",
    "itemId": "sha256:f8c156dba7886826",
    "participants": [
@@ -575,7 +568,7 @@
   {
    "rank": 3,
    "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
-   "heat": 10.6,
+   "heat": 9.7,
    "trend": "down",
    "storyPublicId": "2026-10-22-nvidia-microduck-isaac-lab",
    "itemId": "sha256:7decc1c5c0496d6c",
@@ -594,7 +587,7 @@
   {
    "rank": 4,
    "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持",
-   "heat": 6.3,
+   "heat": 5.7,
    "trend": "down",
    "storyPublicId": "2026-10-19-minimax-m31-flash",
    "itemId": "sha256:50cb4eba8a3e4759",
@@ -609,30 +602,11 @@
     }
    ],
    "participantCount": 2
-  },
-  {
-   "rank": 5,
-   "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
-   "heat": 6.0,
-   "trend": "down",
-   "storyPublicId": "2026-10-23-google-agent-compute-engine",
-   "itemId": "sha256:7ea705cfe9f05665",
-   "participants": [
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
-    }
-   ],
-   "participantCount": 2
   }
  ],
  "dayCounts": {
   "2026-10-24": 6,
-  "2026-10-23": 11,
+  "2026-10-23": 12,
   "2026-10-22": 9,
   "2026-10-21": 12,
   "2026-10-20": 3,
@@ -641,5 +615,5 @@
  },
  "page": 1,
  "pageCount": 3,
- "total": 44
+ "total": 45
 }
