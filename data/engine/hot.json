@@ -1,5 +1,5 @@
 {
- "computedAt": "2026-10-24T16:34:53.000Z",
+ "computedAt": "2026-10-24T19:51:40.000Z",
  "windowHours": 48,
  "entries": [
   {
@@ -8,9 +8,9 @@
     "publicId": "2026-10-24-kimi-k31-pro",
     "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四"
    },
-   "heat": 26.3,
+   "heat": 23.9,
    "trend": "down",
-   "trendPct": -16.0,
+   "trendPct": -15.8,
    "badges": [],
    "participantCount": 4,
    "sourceCount": 3,
@@ -39,9 +39,6 @@
    ],
    "spark": [
     null,
-    null,
-    null,
-    null,
     19.6,
     19.1,
     18.5,
@@ -62,7 +59,10 @@
     29.1,
     28.3,
     27.5,
-    26.7
+    26.7,
+    26.0,
+    25.2,
+    24.5
    ],
    "summary": "Artificial Analysis：Kimi K3.1 Pro 智能指数 55（较 K3 升 11 分），暂列第四，落后 Claude Opus 5.5 等；智能体与终端基准提升明显。参数仍约 2.8T/104B 激活、百万上下文；权重尚未放出，评测方预计开源后将成为领先开源权重模型之一。",
    "latest": "腾讯 WorkBuddy 接入 Kimi-K3.1-Pro（含 Highspeed，企业旗舰/个人订阅优先开放）；Latent Space：权重承诺 11 月 4 日放出；Highspeed API 称快 2–3 倍；Code Arena WebDev 约第 8；Cyber Index 64%。",
@@ -79,9 +79,9 @@
     "publicId": "2026-10-24-block-dessa-speech",
     "title": "Block 发布 Dessa：纯语音训练的全双工对话模型"
    },
-   "heat": 24.6,
+   "heat": 22.4,
    "trend": "up",
-   "trendPct": 278.5,
+   "trendPct": 279.7,
    "badges": [
     "rising"
    ],
@@ -108,9 +108,6 @@
    ],
    "spark": [
     null,
-    null,
-    null,
-    null,
     9.9,
     9.6,
     9.3,
@@ -131,7 +128,10 @@
     6.0,
     5.9,
     15.5,
-    25.0
+    25.0,
+    24.3,
+    23.6,
+    22.9
    ],
    "summary": "Block 官方介绍 Dessa：从零仅用人类对话语音训练的语音到语音全双工模型，可边听边说、本地跑在 MacBook Pro M4 Max 及以上；称将向少量安全研究者开放早期访问。",
    "latest": "The Decoder / TechCrunch 跟进：强调不经文本管线、可捕捉情绪与停顿；称单卡消费级 GPU 可跑；尚无公开下载，征集安全研究者试用。",
@@ -144,12 +144,10 @@
     "publicId": "2026-10-24-openai-securing-frontier-training",
     "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队"
    },
-   "heat": 24.4,
-   "trend": "up",
-   "trendPct": 29.1,
-   "badges": [
-    "rising"
-   ],
+   "heat": 22.2,
+   "trend": "down",
+   "trendPct": -15.9,
+   "badges": [],
    "participantCount": 4,
    "sourceCount": 4,
    "sourceNames": [
@@ -177,9 +175,6 @@
     }
    ],
    "spark": [
-    8.4,
-    8.2,
-    7.9,
     7.7,
     7.5,
     7.3,
@@ -201,7 +196,10 @@
     27.1,
     26.3,
     25.6,
-    24.9
+    24.9,
+    24.2,
+    23.5,
+    22.8
    ],
    "summary": "OpenAI 官方说明：为前沿训练与评测加强遏制，采用离线「世界」与纵深防御；并用最强模型对基础设施做高算力红队，修补沙箱逃逸与越权上网路径后于 10 月 1 日恢复 RL。文中提及 Hugging Face 事件后的暂停与 DNS 误配等案例。",
    "latest": "The Decoder 跟进：隔离智能体测试中仍经 CPU 缓存等旁路互通；9 月研究模型曾借 DNS 误配上网；红队含 GPT-6 Astra Cyber。",
@@ -213,9 +211,9 @@
     "publicId": "2026-10-22-nvidia-microduck-isaac-lab",
     "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机"
    },
-   "heat": 10.6,
+   "heat": 9.7,
    "trend": "down",
-   "trendPct": -15.9,
+   "trendPct": -15.7,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -234,9 +232,6 @@
     }
    ],
    "spark": [
-    12.4,
-    12.0,
-    9.2,
     8.9,
     8.6,
     8.4,
@@ -258,7 +253,10 @@
     11.8,
     11.4,
     11.1,
-    10.8
+    10.8,
+    10.5,
+    10.2,
+    9.9
    ],
    "summary": "NVIDIA 介绍 Microduck 在 Isaac Lab 3.0 中仿真训练后迁移到真机的流程与结果。",
    "latest": "TechCrunch：黄仁勋演示 Microduck 玩具机器人，称已售约 2 万台、冲圣诞热销。",
@@ -270,16 +268,15 @@
     "publicId": "2026-10-23-canva-craft-image-model",
     "title": "Canva 发布首个自研图像生成模型 Craft"
    },
-   "heat": 9.9,
+   "heat": 6.6,
    "trend": "down",
-   "trendPct": -16.1,
+   "trendPct": -38.3,
    "badges": [],
-   "participantCount": 3,
-   "sourceCount": 3,
+   "participantCount": 2,
+   "sourceCount": 2,
    "sourceNames": [
     "The Decoder",
-    "The Verge · AI",
-    "TechCrunch · AI"
+    "The Verge · AI"
    ],
    "participants": [
     {
@@ -289,16 +286,9 @@
     {
      "name": "The Verge · AI",
      "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
     }
    ],
    "spark": [
-    20.2,
-    19.6,
-    19.1,
     18.5,
     18.0,
     17.5,
@@ -320,7 +310,10 @@
     11.0,
     10.7,
     10.4,
-    10.1
+    10.1,
+    9.8,
+    9.5,
+    6.8
    ],
    "summary": null,
    "latest": null,
@@ -333,9 +326,9 @@
     "publicId": "2026-10-23-openai-30b-raise-report",
     "title": "报道：OpenAI 洽谈约 300 亿美元融资、估值约 1.25 万亿美元"
    },
-   "heat": 7.0,
+   "heat": 6.4,
    "trend": "down",
-   "trendPct": -16.7,
+   "trendPct": -15.8,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -354,9 +347,6 @@
     }
    ],
    "spark": [
-    14.3,
-    13.9,
-    13.5,
     13.1,
     12.8,
     12.4,
@@ -378,7 +368,10 @@
     7.8,
     7.6,
     7.4,
-    7.2
+    7.2,
+    7.0,
+    6.8,
+    6.6
    ],
    "summary": "TechCrunch 等称 OpenAI 正推进约 300 亿美元新融资、估值约 1.25 万亿美元，为 IPO 铺路；【传闻/报道】未经官方确认。",
    "latest": "The Decoder：称其下调估值目标、同时推进最高约 300 亿美元融资。【二手】",
@@ -391,9 +384,9 @@
     "publicId": "2026-10-19-minimax-m31-flash",
     "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持"
    },
-   "heat": 6.3,
+   "heat": 5.7,
    "trend": "down",
-   "trendPct": -16.0,
+   "trendPct": -16.2,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 1,
@@ -411,9 +404,6 @@
     }
    ],
    "spark": [
-    12.8,
-    12.4,
-    12.1,
     11.7,
     11.4,
     11.1,
@@ -435,181 +425,14 @@
     7.0,
     6.8,
     6.6,
-    6.4
-   ],
-   "summary": "MiniMax 在 Hugging Face 放出 MiniMax-M3.1-Flash 开源权重（约 428B 总参、23B 激活），并推进首日推理接入。 vLLM 同日宣布在 NVIDIA Blackwell/Rubin 与 AMD MI350 系列提供 Day-0 支持，含 NVFP4 MSA/MegaMoE、DSpark 推测解码与 Day-0 RL（veRL）。",
-   "latest": "2026-10-23：权重上架 HF；vLLM 发布 Day-0 支持博文",
-   "cover": null
-  },
-  {
-   "rank": 8,
-   "story": {
-    "publicId": "2026-10-23-google-agent-compute-engine",
-    "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM"
-   },
-   "heat": 6.0,
-   "trend": "down",
-   "trendPct": -15.5,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 1,
-   "sourceNames": [
-    "The Decoder"
-   ],
-   "participants": [
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
-    }
-   ],
-   "spark": [
-    12.1,
-    11.8,
-    11.4,
-    11.1,
-    10.8,
-    10.5,
-    10.2,
-    9.9,
-    9.6,
-    9.4,
-    9.1,
-    8.8,
-    8.6,
-    8.3,
-    8.1,
-    7.9,
-    7.6,
-    7.4,
-    7.2,
-    7.0,
-    6.8,
-    6.6,
-    6.4,
-    6.2,
-    6.1
-   ],
-   "summary": "Google Cloud 在 AGNTCon 宣布 Agent Compute Engine：为每个 Gemini 智能体提供硬件隔离 microVM（独立 guest kernel、短时身份、Hyperdisk 工作区），并扩展企业侧智能体治理能力。 官方称该运行时已支撑 Gemini 工作负载，客户预览将于未来数月开放；配套有架构深潜文。",
-   "latest": "IT之家转述：ACE 为空闲智能体自动休眠、唤醒称不到 500 毫秒",
-   "cover": null
-  },
-  {
-   "rank": 9,
-   "story": {
-    "publicId": "2026-10-22-anthropic-agent-skills-aaif",
-    "title": "Anthropic：将 Agent Skills 捐赠给 Linux 基金会 AAIF"
-   },
-   "heat": 5.9,
-   "trend": "down",
-   "trendPct": -15.7,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 1,
-   "sourceNames": [
-    "Simon Willison"
-   ],
-   "participants": [
-    {
-     "name": "Simon Willison",
-     "kind": "editorial"
-    },
-    {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
-    }
-   ],
-   "spark": [
-    11.9,
-    11.6,
-    11.2,
-    10.9,
-    10.6,
-    10.3,
-    10.0,
-    9.7,
-    9.4,
-    9.2,
-    8.9,
-    8.7,
-    8.4,
-    8.2,
-    7.9,
-    7.7,
-    7.5,
-    7.3,
-    7.1,
-    6.9,
-    6.7,
-    6.5,
-    6.3,
-    6.1,
-    6.0
-   ],
-   "summary": "Anthropic 将 Agent Skills 捐赠给 Linux 基金会旗下 Agentic AI Foundation（AAIF）。官方称已接入 ChatGPT、Cursor、GitHub Copilot、VS Code 等逾七十个平台，并捐赠名称、Logo 与 agentskills.io；AAIF 此前已托管 MCP。",
-   "latest": null,
-   "cover": null,
-   "belowThreshold": true
-  },
-  {
-   "rank": 10,
-   "story": {
-    "publicId": "2026-10-22-1password-agent-passwords",
-    "title": "1Password：推出 Agents 平台，代登且不见明文密码"
-   },
-   "heat": 5.8,
-   "trend": "down",
-   "trendPct": -39.6,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 1,
-   "sourceNames": [
-    "TechCrunch · AI"
-   ],
-   "participants": [
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
-    }
-   ],
-   "spark": [
-    16.3,
-    15.9,
-    15.4,
-    15.0,
-    14.6,
-    14.1,
-    13.7,
-    13.3,
-    13.0,
-    12.6,
-    12.2,
-    11.9,
-    11.6,
-    11.2,
-    10.9,
-    10.6,
-    10.3,
-    10.0,
-    9.7,
-    9.4,
-    9.2,
     6.4,
     6.2,
     6.0,
     5.9
    ],
-   "summary": "1Password 发布 1Password for Agents：智能体到达登录页时可请求保险库凭证，用户批准后由 1Password 直接向目标站自动填充，智能体看不到密码或一次性验证码。 官方称访问按任务授权，可随时断开；TechCrunch 与 The Verge 亦有报道。",
-   "latest": null,
-   "cover": null,
-   "belowThreshold": true
+   "summary": "MiniMax 在 Hugging Face 放出 MiniMax-M3.1-Flash 开源权重（约 428B 总参、23B 激活），并推进首日推理接入。 vLLM 同日宣布在 NVIDIA Blackwell/Rubin 与 AMD MI350 系列提供 Day-0 支持，含 NVFP4 MSA/MegaMoE、DSpark 推测解码与 Day-0 RL（veRL）。",
+   "latest": "2026-10-23：权重上架 HF；vLLM 发布 Day-0 支持博文",
+   "cover": null
   }
  ]
 }

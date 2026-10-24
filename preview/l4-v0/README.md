@@ -1,6 +1,6 @@
 # L4 v0 引擎数据预览（非生产 Pages）
 
-过线 46 条 / 补位 10 条。数据截至 2026-10-25 00:20（北京时间）；generated 00:35。热点 10 条（#1 Kimi WorkBuddy）；日报 6 期（metrics 14/12，快讯 20）。
+过线 47 条 / 补位 10 条。数据截至 2026-10-25 03:23（北京时间）；generated 03:52。热点 7 条（#1 Kimi WorkBuddy）；新增 vLLM NVL72 精选；日报 6 期（metrics 14/12，快讯 20）。
 
 ## 可点击预览（htmlpreview + jsDelivr CSS）
 

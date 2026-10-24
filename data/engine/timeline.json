@@ -267,6 +267,30 @@
    "group": null
   },
   {
+   "key": "sha256:1b5221fd798be326",
+   "anchorAt": "2026-10-23T00:00:00.000Z",
+   "item": {
+    "id": "sha256:1b5221fd798be326",
+    "title": "vLLM：DeepSeek-V4.1-Flash 在 GB300 NVL72 吞吐逼近 DeepInfer",
+    "summary": "vLLM 在 NVL72 上用 P/D+Wide-EP 服务 V4.1-Flash，吞吐逼近 DeepInfer。",
+    "reason": "vLLM 在 NVL72 上服务 V4.1-Flash，逼近 DeepInfer",
+    "source": {
+     "name": "vLLM Blog"
+    },
+    "publishedAt": "2026-10-23T00:00:00.000Z",
+    "timelineAt": "2026-10-23T00:00:00.000Z",
+    "category": "industry",
+    "score": null,
+    "selected": true,
+    "channel": "news",
+    "tags": [
+     "industry_event"
+    ],
+    "x": null
+   },
+   "group": null
+  },
+  {
    "key": "sha256:5d20b75fc1534a89",
    "anchorAt": "2026-10-23T00:00:00.000Z",
    "item": {
@@ -1505,7 +1529,7 @@
   {
    "rank": 1,
    "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
-   "heat": 26.3,
+   "heat": 23.9,
    "trend": "down",
    "storyPublicId": "2026-10-24-kimi-k31-pro",
    "itemId": "sha256:261b6564023ad66c",
@@ -1532,7 +1556,7 @@
   {
    "rank": 2,
    "title": "Block 发布 Dessa：纯语音训练的全双工对话模型",
-   "heat": 24.6,
+   "heat": 22.4,
    "trend": "up",
    "storyPublicId": "2026-10-24-block-dessa-speech",
    "itemId": "sha256:60b56cc3037dbda3",
@@ -1556,8 +1580,8 @@
   {
    "rank": 3,
    "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
-   "heat": 24.4,
-   "trend": "up",
+   "heat": 22.2,
+   "trend": "down",
    "storyPublicId": "2026-10-24-openai-securing-frontier-training",
    "itemId": "sha256:f8c156dba7886826",
    "participants": [
@@ -1583,7 +1607,7 @@
   {
    "rank": 4,
    "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
-   "heat": 10.6,
+   "heat": 9.7,
    "trend": "down",
    "storyPublicId": "2026-10-22-nvidia-microduck-isaac-lab",
    "itemId": "sha256:7decc1c5c0496d6c",
@@ -1602,7 +1626,7 @@
   {
    "rank": 5,
    "title": "Canva 发布首个自研图像生成模型 Craft",
-   "heat": 9.9,
+   "heat": 6.6,
    "trend": "down",
    "storyPublicId": "2026-10-23-canva-craft-image-model",
    "itemId": "sha256:317abcdd1b20728a",
@@ -1614,20 +1638,16 @@
     {
      "name": "The Verge · AI",
      "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
     }
    ],
-   "participantCount": 3,
+   "participantCount": 2,
    "belowThreshold": true
   }
  ],
  "dayCounts": {
   "2026-10-22": 12,
   "2026-10-21": 16,
-  "2026-10-23": 12,
+  "2026-10-23": 13,
   "2026-10-24": 6,
   "2026-10-20": 1,
   "2026-10-19": 2,
