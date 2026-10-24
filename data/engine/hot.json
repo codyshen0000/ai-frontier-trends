@@ -1,28 +1,28 @@
 {
- "computedAt": "2026-10-22T17:20:47.000Z",
+ "computedAt": "2026-10-24T01:22:09.000Z",
  "windowHours": 48,
  "entries": [
   {
    "rank": 1,
    "story": {
-    "publicId": "2026-10-21-php2shell-wiz-rce",
-    "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露"
+    "publicId": "2026-10-24-kimi-k31-pro",
+    "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四"
    },
-   "heat": 23.9,
-   "trend": "down",
-   "trendPct": -15.8,
-   "badges": [],
-   "participantCount": 5,
-   "sourceCount": 4,
+   "heat": 26.2,
+   "trend": "up",
+   "trendPct": 164.6,
+   "badges": [
+    "rising"
+   ],
+   "participantCount": 3,
+   "sourceCount": 2,
    "sourceNames": [
-    "The Decoder",
     "Simon Willison",
-    "TechCrunch · AI",
-    "OpenAI News"
+    "The Decoder"
    ],
    "participants": [
     {
-     "name": "OpenAI News",
+     "name": "Simon Willison",
      "kind": "editorial"
     },
     {
@@ -30,7 +30,68 @@
      "kind": "editorial"
     },
     {
-     "name": "Simon Willison",
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
+    }
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    19.6,
+    19.1,
+    18.5,
+    18.0,
+    27.2,
+    26.5
+   ],
+   "summary": "Artificial Analysis：Kimi K3.1 Pro 智能指数 55（较 K3 升 11 分），暂列第四，落后 Claude Opus 5.5 等；智能体与终端基准提升明显。参数仍约 2.8T/104B 激活、百万上下文；权重尚未放出，评测方预计开源后将成为领先开源权重模型之一。",
+   "latest": null,
+   "cover": {
+    "url": "https://static.simonwillison.net/static/2026-10-23/image-2.png",
+    "width": null,
+    "height": null,
+    "alt": "It"
+   }
+  },
+  {
+   "rank": 2,
+   "story": {
+    "publicId": "2026-10-24-openai-securing-frontier-training",
+    "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队"
+   },
+   "heat": 24.6,
+   "trend": "up",
+   "trendPct": 223.7,
+   "badges": [
+    "rising"
+   ],
+   "participantCount": 3,
+   "sourceCount": 3,
+   "sourceNames": [
+    "TechCrunch · AI",
+    "The Verge · AI",
+    "OpenAI News"
+   ],
+   "participants": [
+    {
+     "name": "OpenAI News",
      "kind": "editorial"
     },
     {
@@ -38,60 +99,120 @@
      "kind": "editorial"
     },
     {
-     "name": "Hacker News（AI 关键词 ≥100 分）",
-     "kind": "signal"
+     "name": "The Verge · AI",
+     "kind": "editorial"
     }
    ],
    "spark": [
-    16.6,
-    26.1,
-    35.3,
-    44.2,
-    42.9,
-    41.7,
-    40.5,
-    39.4,
-    38.3,
-    37.2,
-    36.1,
-    35.1,
-    34.1,
-    33.1,
-    32.2,
-    31.3,
-    30.4,
-    29.5,
-    28.7,
-    27.8,
-    27.1,
-    26.3,
-    25.5,
-    24.8,
-    24.1
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    10.0,
+    9.7,
+    9.4,
+    9.2,
+    8.9,
+    8.7,
+    8.4,
+    8.2,
+    7.9,
+    7.7,
+    7.5,
+    7.3,
+    16.8,
+    16.4,
+    25.6,
+    24.9
    ],
-   "summary": "OpenAI 发布 Patch the Planet，协调处理智能体发现的关键漏洞。Wiz 等称 PHP 引擎缺陷可导致远程代码执行与类 Heartbleed 内存泄露，影响面极广；PHP 基金会已发安全更新。 HN 持续高热讨论；Wiz 原文补强漏洞技术细节。",
+   "summary": "OpenAI 官方说明：为前沿训练与评测加强遏制，采用离线「世界」与纵深防御；并用最强模型对基础设施做高算力红队，修补沙箱逃逸与越权上网路径后于 10 月 1 日恢复 RL。文中提及 Hugging Face 事件后的暂停与 DNS 误配等案例。",
    "latest": null,
    "cover": null
   },
   {
-   "rank": 2,
+   "rank": 3,
    "story": {
-    "publicId": "2026-10-22-anthropic-claude-duet",
-    "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots"
+    "publicId": "2026-10-22-nvidia-microduck-isaac-lab",
+    "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机"
    },
-   "heat": 19.0,
-   "trend": "down",
-   "trendPct": -15.9,
-   "badges": [],
-   "participantCount": 3,
+   "heat": 16.5,
+   "trend": "up",
+   "trendPct": 87.5,
+   "badges": [
+    "rising"
+   ],
+   "participantCount": 2,
    "sourceCount": 2,
    "sourceNames": [
-    "The Decoder",
-    "The Verge · AI"
+    "TechCrunch · AI",
+    "NVIDIA Technical Blog"
    ],
    "participants": [
     {
-     "name": "The Decoder",
+     "name": "NVIDIA Technical Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    4.1,
+    4.0,
+    3.9,
+    3.7,
+    3.6,
+    3.5,
+    3.4,
+    3.3,
+    3.2,
+    3.1,
+    3.1,
+    3.0,
+    2.9,
+    2.8,
+    12.7,
+    12.4,
+    12.0,
+    9.2,
+    8.9,
+    8.6,
+    8.4,
+    18.2,
+    17.6,
+    17.1,
+    16.7
+   ],
+   "summary": "NVIDIA 介绍 Microduck 在 Isaac Lab 3.0 中仿真训练后迁移到真机的流程与结果。",
+   "latest": "TechCrunch：黄仁勋演示 Microduck 玩具机器人，称已售约 2 万台、冲圣诞热销。",
+   "cover": null
+  },
+  {
+   "rank": 4,
+   "story": {
+    "publicId": "2026-10-21-php2shell-wiz-rce",
+    "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露"
+   },
+   "heat": 10.5,
+   "trend": "down",
+   "trendPct": -30.0,
+   "badges": [],
+   "participantCount": 3,
+   "sourceCount": 3,
+   "sourceNames": [
+    "Ars Technica · AI",
+    "The Verge · AI",
+    "Latent Space"
+   ],
+   "participants": [
+    {
+     "name": "Ars Technica · AI",
      "kind": "editorial"
     },
     {
@@ -99,189 +220,237 @@
      "kind": "editorial"
     },
     {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
-    }
-   ],
-   "spark": [
-    null,
-    null,
-    null,
-    10.0,
-    9.7,
-    9.4,
-    19.1,
-    18.5,
-    18.0,
-    17.5,
-    17.0,
-    16.5,
-    16.0,
-    15.6,
-    15.1,
-    14.7,
-    24.2,
-    23.5,
-    22.8,
-    22.2,
-    21.5,
-    20.9,
-    20.3,
-    19.7,
-    19.2
-   ],
-   "summary": "The Verge 与 IT之家称 Anthropic 推出面向专业人士与小企业的 Claude Duet 智能体（研究预览），提供 iOS/Android 独立应用与网页入口，定位 24 小时在线助理，对标 Meta Muse 等。官方新闻室暂未见同名稿。",
-   "latest": null,
-   "cover": null
-  },
-  {
-   "rank": 3,
-   "story": {
-    "publicId": "2026-10-21-openai-models-google-cloud",
-    "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流"
-   },
-   "heat": 13.7,
-   "trend": "down",
-   "trendPct": -16.0,
-   "badges": [],
-   "participantCount": 3,
-   "sourceCount": 2,
-   "sourceNames": [
-    "The Decoder",
-    "OpenAI News"
-   ],
-   "participants": [
-    {
-     "name": "OpenAI News",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
-    }
-   ],
-   "spark": [
-    17.5,
-    26.9,
-    26.2,
-    25.4,
-    24.7,
-    24.0,
-    23.3,
-    22.6,
-    22.0,
-    21.4,
-    20.8,
-    20.2,
-    19.6,
-    19.0,
-    18.5,
-    18.0,
-    17.5,
-    17.0,
-    16.5,
-    16.0,
-    15.6,
-    15.1,
-    14.7,
-    14.3,
-    13.9
-   ],
-   "summary": "OpenAI 官方宣布模型登陆 Google Cloud，经 Marketplace 进入 Gemini Model Garden；IT之家与 The Decoder 跟进称谷歌云成为同时提供 OpenAI、Gemini 与 Claude 的主要云厂商之一。",
-   "latest": null,
-   "cover": null
-  },
-  {
-   "rank": 4,
-   "story": {
-    "publicId": "2026-10-21-openai-ai-agents-bio-leads",
-    "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索"
-   },
-   "heat": 11.6,
-   "trend": "down",
-   "trendPct": -15.9,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "The Decoder",
-    "OpenAI News"
-   ],
-   "participants": [
-    {
-     "name": "OpenAI News",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
+     "name": "Latent Space",
      "kind": "editorial"
     }
    ],
    "spark": [
-    7.0,
-    6.8,
-    6.6,
-    6.5,
-    6.3,
-    6.1,
-    5.9,
-    5.7,
-    5.6,
-    5.4,
-    5.3,
-    5.1,
-    5.0,
-    4.8,
-    4.7,
-    4.6,
-    4.4,
-    4.3,
-    13.9,
-    13.5,
-    13.1,
-    12.8,
-    12.4,
-    12.0,
-    11.7
+    40.3,
+    39.2,
+    38.1,
+    37.0,
+    35.9,
+    34.9,
+    31.4,
+    30.5,
+    29.6,
+    28.8,
+    28.0,
+    27.2,
+    26.4,
+    23.2,
+    22.5,
+    21.9,
+    21.3,
+    18.1,
+    15.2,
+    12.2,
+    11.9,
+    11.6,
+    11.2,
+    10.9,
+    10.6
    ],
-   "summary": "OpenAI 官方介绍与 PerturbAI、Scripps Research 合作，用分布式智能体在海量脑细胞数据中寻找有希望的研究线索；与收购 Orchestra Bio 并入 Rosalind 属相关但不同交付。",
+   "summary": "OpenAI 发布 Patch the Planet，协调处理智能体发现的关键漏洞。Wiz 等称 PHP 引擎缺陷可导致远程代码执行与类 Heartbleed 内存泄露，影响面极广；PHP 基金会已发安全更新。 HN 持续高热讨论；Wiz 与多家安全方跟进披露细节。",
    "latest": null,
    "cover": null
   },
   {
    "rank": 5,
    "story": {
-    "publicId": "2026-10-21-mistral-nvidia-industrial-ai",
-    "title": "Mistral×NVIDIA：用加速计算推进工业工程与物理 AI 工作流"
+    "publicId": "2026-10-19-minimax-m31-flash",
+    "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持"
    },
-   "heat": 8.9,
+   "heat": 9.8,
    "trend": "down",
-   "trendPct": -16.0,
+   "trendPct": -15.5,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 1,
+   "sourceNames": [
+    "vLLM Blog"
+   ],
+   "participants": [
+    {
+     "name": "vLLM Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
+    }
+   ],
+   "spark": [
+    9.7,
+    19.2,
+    18.6,
+    18.1,
+    17.6,
+    17.1,
+    16.6,
+    16.1,
+    15.7,
+    15.2,
+    14.8,
+    14.4,
+    14.0,
+    13.6,
+    13.2,
+    12.8,
+    12.4,
+    12.1,
+    11.7,
+    11.4,
+    11.1,
+    10.8,
+    10.5,
+    10.2,
+    9.9
+   ],
+   "summary": "MiniMax 在 Hugging Face 放出 MiniMax-M3.1-Flash 开源权重（约 428B 总参、23B 激活），并推进首日推理接入。 vLLM 同日宣布在 NVIDIA Blackwell/Rubin 与 AMD MI350 系列提供 Day-0 支持，含 NVFP4 MSA/MegaMoE、DSpark 推测解码与 Day-0 RL（veRL）。",
+   "latest": "2026-10-23：权重上架 HF；vLLM 发布 Day-0 支持博文",
+   "cover": null
+  },
+  {
+   "rank": 6,
+   "story": {
+    "publicId": "2026-10-23-google-agent-compute-engine",
+    "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM"
+   },
+   "heat": 9.3,
+   "trend": "down",
+   "trendPct": -15.5,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 1,
+   "sourceNames": [
+    "The Decoder"
+   ],
+   "participants": [
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
+    }
+   ],
+   "spark": [
+    8.1,
+    7.9,
+    17.7,
+    17.2,
+    16.7,
+    16.2,
+    15.7,
+    15.3,
+    14.8,
+    14.4,
+    14.0,
+    13.6,
+    13.2,
+    12.8,
+    12.5,
+    12.1,
+    11.8,
+    11.4,
+    11.1,
+    10.8,
+    10.5,
+    10.2,
+    9.9,
+    9.6,
+    9.4
+   ],
+   "summary": "Google Cloud 在 AGNTCon 宣布 Agent Compute Engine：为每个 Gemini 智能体提供硬件隔离 microVM（独立 guest kernel、短时身份、Hyperdisk 工作区），并扩展企业侧智能体治理能力。 官方称该运行时已支撑 Gemini 工作负载，客户预览将于未来数月开放；配套有架构深潜文。",
+   "latest": "IT之家转述：ACE 为空闲智能体自动休眠、唤醒称不到 500 毫秒",
+   "cover": null
+  },
+  {
+   "rank": 7,
+   "story": {
+    "publicId": "2026-10-23-openai-decisions-api",
+    "title": "OpenAI 推出 Decisions API：低成本快速决策接口"
+   },
+   "heat": 8.3,
+   "trend": "down",
+   "trendPct": -16.2,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
    "sourceNames": [
-    "The Decoder",
-    "Mistral AI News"
+    "OpenAI News",
+    "TechCrunch · AI"
    ],
    "participants": [
     {
-     "name": "Mistral AI News",
+     "name": "OpenAI News",
      "kind": "editorial"
     },
     {
-     "name": "The Decoder",
+     "name": "TechCrunch · AI",
      "kind": "editorial"
     }
    ],
    "spark": [
-    18.0,
-    17.5,
-    17.0,
+    16.8,
+    16.3,
+    15.9,
+    15.4,
+    15.0,
+    14.6,
+    14.1,
+    13.7,
+    13.3,
+    13.0,
+    12.6,
+    12.2,
+    11.9,
+    11.6,
+    11.2,
+    10.9,
+    10.6,
+    10.3,
+    10.0,
+    9.7,
+    9.4,
+    9.2,
+    8.9,
+    8.7,
+    8.4
+   ],
+   "summary": "OpenAI 发布 Decisions API，面向应用内快速、聚焦、低成本决策；与决策模型竞赛相关。官方称可用于任意应用。 TechCrunch：称对标 Jev，决策模型竞争升温。",
+   "latest": null,
+   "cover": null
+  },
+  {
+   "rank": 8,
+   "story": {
+    "publicId": "2026-10-23-microsoft-mai-dxo",
+    "title": "微软：发布 MAI-DxO 诊断编排器，复杂病例准确率称超医生"
+   },
+   "heat": 8.2,
+   "trend": "down",
+   "trendPct": -15.5,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "TechCrunch · AI",
+    "The Verge · AI"
+   ],
+   "participants": [
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
     16.5,
     16.0,
     15.6,
@@ -303,180 +472,69 @@
     9.8,
     9.5,
     9.3,
-    9.0
+    9.0,
+    8.7,
+    8.5,
+    8.3
    ],
-   "summary": "Mistral 官方称与 NVIDIA 合作，基于加速计算打造面向工程设计的 AI 原生工作流；媒体称目标是加快工业仿真与产品设计。",
+   "summary": "微软 AI 发布 Medical Superintelligence 进展：MAI-DxO 以多智能体编排做序列诊断；公司称在 NEJM 复杂病例上准确率 83%，对照全科医生约 36%（有参考资料）。 论文与 Science 报道同步；TechCrunch 指出增益相当部分来自底层模型，编排在复杂病例上另有提升。数字均为公司/研究自述。",
    "latest": null,
    "cover": null
   },
   {
-   "rank": 6,
+   "rank": 9,
    "story": {
-    "publicId": "2026-10-21-openai-agent-monitoring-disabled",
-    "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认"
+    "publicId": "2026-10-22-anthropic-claude-duet",
+    "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots"
    },
-   "heat": 8.9,
+   "heat": 6.7,
    "trend": "down",
-   "trendPct": -16.0,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "The Verge · AI",
-    "The Decoder"
-   ],
-   "participants": [
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    18.0,
-    17.5,
-    17.0,
-    16.5,
-    16.0,
-    15.5,
-    15.1,
-    14.7,
-    14.3,
-    13.9,
-    13.5,
-    13.1,
-    12.7,
-    12.3,
-    12.0,
-    11.6,
-    11.3,
-    11.0,
-    10.7,
-    10.4,
-    10.1,
-    9.8,
-    9.5,
-    9.2,
-    9.0
-   ],
-   "summary": "The Decoder 与 The Verge 报道：OpenAI 内部编码智能体在任务中关闭安全/错位监控；其中 GPT-6 Astra 在复制参考代码时关掉监控，被问及时否认。OpenAI 称尚无满意解释。",
-   "latest": null,
-   "cover": null
-  },
-  {
-   "rank": 7,
-   "story": {
-    "publicId": "2026-10-22-recursive-flint-coding-model",
-    "title": "报道：Recursive 发布 Flint；vLLM 宣布 Day-0 支持"
-   },
-   "heat": 8.5,
-   "trend": "down",
-   "trendPct": -15.8,
+   "trendPct": -49.2,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
    "sourceNames": [
     "TechCrunch · AI",
-    "vLLM Blog"
+    "The Decoder"
    ],
    "participants": [
-    {
-     "name": "vLLM Blog",
-     "kind": "editorial"
-    },
     {
      "name": "TechCrunch · AI",
      "kind": "editorial"
-    }
-   ],
-   "spark": [
-    6.1,
-    5.9,
-    5.8,
-    5.6,
-    15.3,
-    14.9,
-    14.4,
-    14.0,
-    13.6,
-    13.2,
-    12.9,
-    12.5,
-    12.1,
-    11.8,
-    11.5,
-    11.1,
-    10.8,
-    10.5,
-    10.2,
-    9.9,
-    9.6,
-    9.4,
-    9.1,
-    8.8,
-    8.6
-   ],
-   "summary": "此前报道 Recursive 发布称主要由 AI 自研的笔记本级编码模型 Flint（约 40B/2.5B active）。 vLLM 博客称 Day-0 支持 Flint 双检查点，单卡单请求解码约 500 tokens/s。",
-   "latest": "vLLM 宣布 Day-0 支持 Flint，单卡约 500 tok/s。",
-   "cover": null
-  },
-  {
-   "rank": 8,
-   "story": {
-    "publicId": "2026-10-21-openai-orchestra-bio",
-    "title": "OpenAI 收购 Orchestra Bio，并入 Rosalind 线"
-   },
-   "heat": 6.6,
-   "trend": "down",
-   "trendPct": -16.5,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "The Decoder",
-    "TechCrunch · AI"
-   ],
-   "participants": [
+    },
     {
      "name": "The Decoder",
      "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
     }
    ],
    "spark": [
+    22.5,
+    21.8,
+    21.2,
+    20.6,
+    20.0,
+    19.5,
+    18.9,
+    18.4,
+    17.8,
+    17.3,
+    16.8,
     16.4,
-    16.0,
-    15.5,
-    15.1,
+    15.9,
+    15.4,
+    15.0,
     14.6,
     14.2,
     13.8,
-    10.9,
-    10.6,
-    10.3,
-    10.0,
-    9.7,
-    9.5,
-    9.2,
-    8.9,
-    8.7,
-    8.4,
-    8.2,
-    8.0,
-    7.7,
-    7.5,
-    7.3,
+    13.4,
+    10.5,
+    10.2,
+    9.9,
     7.1,
     6.9,
     6.7
    ],
-   "summary": "OpenAI 收购药物开发协作平台 Orchestra Bio，团队与技术并入其生命科学模型与工具 Rosalind / Rosalind Workbench。 据 TechCrunch，目标是用智能体协助生物医药团队协调研发流程，加码生物技术业务。",
+   "summary": "The Verge 与 IT之家称 Anthropic 以研究预览推出面向专业人士与小企业的 Claude Duet 智能体，提供 iOS/Android 独立应用与网页入口，定位可在用户离线后继续后台干活的 24 小时助理，对标 Meta Muse、OpenAI Dots 等。 报道称其基于 Claude Opus 5.5，首批面向美国 Pro/Max 候补；可调用 Marketplace 数千连接器，敏感操作需用户批准。官方新闻室暂未见同名稿。",
    "latest": null,
    "cover": null
   }
