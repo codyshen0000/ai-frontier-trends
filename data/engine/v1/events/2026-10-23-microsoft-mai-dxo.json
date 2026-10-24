@@ -264,11 +264,36 @@
    "hour": "2026-10-24T11:00:00.000Z",
    "heat": 6.2,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-24T12:00:00.000Z",
+   "heat": 6.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-24T13:00:00.000Z",
+   "heat": 5.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-24T14:00:00.000Z",
+   "heat": 5.7,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-24T15:00:00.000Z",
+   "heat": 5.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-24T16:00:00.000Z",
+   "heat": 5.4,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "微软 MAI-DxO：复杂病例诊断准确率称超医生",
  "primaryUrl": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
- "rankDelta": 1
+ "rankDelta": 0
 }

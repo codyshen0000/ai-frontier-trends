@@ -21,36 +21,30 @@
   },
   {
    "rank": 4,
-   "publicId": "2026-10-21-php2shell-wiz-rce",
-   "heat": 8.8,
-   "participantCount": 3
-  },
-  {
-   "rank": 5,
    "publicId": "2026-10-19-minimax-m31-flash",
    "heat": 8.2,
    "participantCount": 2
   },
   {
-   "rank": 6,
+   "rank": 5,
    "publicId": "2026-10-23-google-agent-compute-engine",
    "heat": 7.8,
    "participantCount": 2
   },
   {
-   "rank": 7,
+   "rank": 6,
    "publicId": "2026-10-23-openai-decisions-api",
    "heat": 7.0,
    "participantCount": 2
   },
   {
-   "rank": 8,
+   "rank": 7,
    "publicId": "2026-10-23-microsoft-mai-dxo",
    "heat": 6.9,
    "participantCount": 2
   },
   {
-   "rank": 9,
+   "rank": 8,
    "publicId": "2026-10-22-anthropic-claude-duet",
    "heat": 5.6,
    "participantCount": 2

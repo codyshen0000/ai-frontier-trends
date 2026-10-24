@@ -1,20 +1,6 @@
 {
  "sources": [
   {
-   "sourceId": "hn-ai-front",
-   "name": "Hacker News（AI 关键词 ≥100 分）",
-   "tier": "T2",
-   "kind": "signal",
-   "homepage": "https://hnrss.org"
-  },
-  {
-   "sourceId": "rss-ars-ai",
-   "name": "Ars Technica · AI",
-   "tier": "T2",
-   "kind": "editorial",
-   "homepage": "https://arstechnica.com"
-  },
-  {
    "sourceId": "rss-claude-release-notes",
    "name": "Claude Platform Release Notes",
    "tier": "T1",

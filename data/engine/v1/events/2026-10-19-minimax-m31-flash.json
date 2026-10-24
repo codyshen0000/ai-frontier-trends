@@ -81,21 +81,6 @@
  ],
  "heat": [
   {
-   "hour": "2026-10-22T11:00:00.000Z",
-   "heat": 2.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T12:00:00.000Z",
-   "heat": 2.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T13:00:00.000Z",
-   "heat": 2.5,
-   "participants": 1
-  },
-  {
    "hour": "2026-10-23T00:00:00.000Z",
    "heat": 10.0,
    "participants": 1
@@ -274,6 +259,31 @@
    "hour": "2026-10-24T11:00:00.000Z",
    "heat": 7.4,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-24T12:00:00.000Z",
+   "heat": 7.2,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-24T13:00:00.000Z",
+   "heat": 7.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-24T14:00:00.000Z",
+   "heat": 6.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-24T15:00:00.000Z",
+   "heat": 6.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-24T16:00:00.000Z",
+   "heat": 6.4,
+   "participants": 2
   }
  ],
  "related": [],
@@ -287,5 +297,5 @@
   "valueClass": "product_screenshot"
  },
  "primaryUrl": "https://vllm.ai/blog/2026-10-23-minimax-m31-flash",
- "rankDelta": 1
+ "rankDelta": 0
 }

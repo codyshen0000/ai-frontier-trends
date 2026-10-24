@@ -42,12 +42,6 @@
    "publicId": "2026-10-23-microsoft-mai-dxo",
    "heat": 6.0,
    "participantCount": 2
-  },
-  {
-   "rank": 8,
-   "publicId": "2026-10-21-php2shell-wiz-rce",
-   "heat": 5.5,
-   "participantCount": 2
   }
  ]
 }

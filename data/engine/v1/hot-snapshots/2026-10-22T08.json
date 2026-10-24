@@ -3,36 +3,30 @@
  "entries": [
   {
    "rank": 1,
-   "publicId": "2026-10-21-php2shell-wiz-rce",
-   "heat": 38.6,
-   "participantCount": 5
-  },
-  {
-   "rank": 2,
    "publicId": "2026-10-21-openai-models-google-cloud",
    "heat": 22.2,
    "participantCount": 3
   },
   {
-   "rank": 3,
+   "rank": 2,
    "publicId": "2026-10-22-anthropic-claude-duet",
    "heat": 18.2,
    "participantCount": 2
   },
   {
-   "rank": 4,
+   "rank": 3,
    "publicId": "2026-10-21-mistral-nvidia-industrial-ai",
    "heat": 14.4,
    "participantCount": 2
   },
   {
-   "rank": 5,
+   "rank": 4,
    "publicId": "2026-10-21-openai-agent-monitoring-disabled",
    "heat": 14.4,
    "participantCount": 2
   },
   {
-   "rank": 6,
+   "rank": 5,
    "publicId": "2026-10-21-mistral-voxtral-3",
    "heat": 7.5,
    "participantCount": 2

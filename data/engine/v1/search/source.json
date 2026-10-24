@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-24T11:50:00.000Z",
+ "generatedAt": "2026-10-24T16:35:00.000Z",
  "docs": [
   {
    "id": "sha256:1dc7e2df39a11f00",
@@ -508,30 +508,6 @@
    "path": "/events/2026-10-23-msr-flint-interactive/"
   },
   {
-   "id": "sha256:4120829e1df6ee3e",
-   "kind": "item",
-   "title": "Ars：PHP2Shell 披露前四天已有攻击探测",
-   "summary": "Ars 报道称黑客在 PHP2Shell 公开披露前四天已开始探测；亚马逊警告该 AI 发现的 PHP 引擎漏洞正被广泛利用。事件并入 Patch the Planet / Wiz 同故事。",
-   "publishedAt": "2026-10-22T15:25:02.000Z",
-   "sourceName": "Ars Technica · AI",
-   "category": "industry",
-   "selected": false,
-   "eventPublicId": "2026-10-21-php2shell-wiz-rce",
-   "originalUrl": "https://arstechnica.com/security/2026/10/hackers-got-a-four-day-head-start-on-epic-php2shell-vulnerability/"
-  },
-  {
-   "id": "2026-10-21-php2shell-wiz-rce",
-   "kind": "event",
-   "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
-   "summary": "OpenAI 发布 Patch the Planet，协调处理智能体发现的关键漏洞。Wiz 等称 PHP 引擎缺陷可导致远程代码执行与类 Heartbleed 内存泄露，影响面极广；PHP 基金会已发安全更新。 HN 持续高热讨论；Wiz 与多家安全方跟进披露细节。",
-   "publishedAt": "2026-10-22T15:25:02.000Z",
-   "sourceNames": [
-    "Ars Technica · AI",
-    "Latent Space"
-   ],
-   "path": "/events/2026-10-21-php2shell-wiz-rce/"
-  },
-  {
    "id": "sha256:50a6596df902bdb2",
    "kind": "item",
    "title": "Wiz：ARTEX 智能体攻陷多软件厂商，活动与 Storm-0940 重叠",
@@ -578,30 +554,6 @@
     "The Verge · AI"
    ],
    "path": "/events/2026-10-22-anthropic-claude-duet/"
-  },
-  {
-   "id": "sha256:be77c76cb6e92698",
-   "kind": "item",
-   "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
-   "summary": null,
-   "publishedAt": "2026-10-22T07:42:44.000Z",
-   "sourceName": "Latent Space",
-   "category": "industry",
-   "selected": false,
-   "eventPublicId": "2026-10-21-php2shell-wiz-rce",
-   "originalUrl": "https://latent.space/p/ainews-openais-patch-the-planet-program/"
-  },
-  {
-   "id": "sha256:4c49390f8994fee2",
-   "kind": "item",
-   "title": "Latent Space：OpenAI Patch the Planet 与 PHP2Shell 综述",
-   "summary": "Latent Space AINews 综述 Patch the Planet 为发现 PHP2Shell 的两方之一，并入同故事事件以补多源。",
-   "publishedAt": "2026-10-22T07:42:44.000Z",
-   "sourceName": "Latent Space",
-   "category": "industry",
-   "selected": false,
-   "eventPublicId": "2026-10-21-php2shell-wiz-rce",
-   "originalUrl": "https://www.latent.space/p/ainews-openais-patch-the-planet-program"
   },
   {
    "id": "sha256:6400feb681472530",
