@@ -131,7 +131,7 @@
   {
    "guid": "sha256:51888f116f5b0837",
    "title": "微软 ThinkingBox：把数据库评分变成 RL 奖励做智能体后训练",
-   "summary": "",
+   "summary": "HF 刊微软 ThinkingBox：数据库评分转 RL 奖励，用于后训练智能体。",
    "originalUrl": "https://huggingface.co/blog/microsoft/thinkingbox-training",
    "pubDate": "2026-10-22T22:24:34.000Z",
    "sourceName": "Hugging Face Blog",

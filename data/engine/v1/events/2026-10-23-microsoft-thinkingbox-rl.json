@@ -28,7 +28,7 @@
    "representative": {
     "id": "sha256:51888f116f5b0837",
     "title": "微软 ThinkingBox：把数据库评分变成 RL 奖励做智能体后训练",
-    "summary": null,
+    "summary": "HF 刊微软 ThinkingBox：数据库评分转 RL 奖励，用于后训练智能体。",
     "source": {
      "name": "Hugging Face Blog",
      "firstParty": true
@@ -43,7 +43,7 @@
   {
    "id": "sha256:51888f116f5b0837",
    "title": "微软 ThinkingBox：把数据库评分变成 RL 奖励做智能体后训练",
-   "summary": null,
+   "summary": "HF 刊微软 ThinkingBox：数据库评分转 RL 奖励，用于后训练智能体。",
    "source": {
     "name": "Hugging Face Blog",
     "firstParty": true
@@ -57,7 +57,7 @@
   {
    "id": "sha256:51888f116f5b0837",
    "title": "微软 ThinkingBox：把数据库评分变成 RL 奖励做智能体后训练",
-   "summary": null,
+   "summary": "HF 刊微软 ThinkingBox：数据库评分转 RL 奖励，用于后训练智能体。",
    "source": {
     "name": "Hugging Face Blog",
     "firstParty": true
@@ -196,6 +196,11 @@
   {
    "hour": "2026-10-24T00:00:00.000Z",
    "heat": 4.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-24T01:00:00.000Z",
+   "heat": 4.6,
    "participants": 1
   }
  ],

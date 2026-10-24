@@ -8,7 +8,7 @@
  "latestAt": "2026-10-21T16:00:00.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": "微软研究院博客称解决 Kannan–Lovász–Simonovits（KLS）猜想，证明高维对数凹分布上「最佳超平面切割」与任意形状切割的差距由与维度无关的常数界定。 该猜想提出于 1995 年前后；文中称研究以人工主导的智能体探索配合研究者筛选完成，并有独立团队同日给出相关证明与后续 Lean 形式化。",
+ "summary": "微软研究院博客称解决 Kannan–Lovász–Simonovits（KLS）猜想，移除理解高维随机算法效率的一项理论障碍；该猜想提出于 1995 年前后。",
  "excerpt": null,
  "latest": null,
  "latestReport": null,

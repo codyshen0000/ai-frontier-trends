@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-24T00:41:00.000Z",
+ "generatedAt": "2026-10-24T01:30:00.000Z",
  "docs": [
   {
    "id": "sha256:585ea363f084ac16",
@@ -334,7 +334,7 @@
    "id": "sha256:51888f116f5b0837",
    "kind": "item",
    "title": "微软 ThinkingBox：把数据库评分变成 RL 奖励做智能体后训练",
-   "summary": null,
+   "summary": "HF 刊微软 ThinkingBox：数据库评分转 RL 奖励，用于后训练智能体。",
    "publishedAt": "2026-10-22T22:24:34.000Z",
    "sourceName": "Hugging Face Blog",
    "category": "paper",
@@ -462,7 +462,7 @@
    "id": "2026-10-23-uber-chatgpt-work-rollout",
    "kind": "event",
    "title": "Uber 全员上线 ChatGPT Work，覆盖约 3 万名员工",
-   "summary": null,
+   "summary": "OpenAI：Uber 将 ChatGPT Work 扩至逾 3 万员工，接入常用办公工具。TechCrunch 同步报道全员推广。",
    "publishedAt": "2026-10-22T16:00:00.000Z",
    "sourceNames": [
     "OpenAI News",
@@ -768,7 +768,7 @@
    "id": "2026-10-22-msr-kls-conjecture",
    "kind": "event",
    "title": "微软研究院：宣布解决数学界 31 年难题 KLS 猜想",
-   "summary": "微软研究院博客称解决 Kannan–Lovász–Simonovits（KLS）猜想，证明高维对数凹分布上「最佳超平面切割」与任意形状切割的差距由与维度无关的常数界定。 该猜想提出于 1995 年前后；文中称研究以人工主导的智能体探索配合研究者筛选完成，并有独立团队同日给出相关证明与后续 Lean 形式化。",
+   "summary": "微软研究院博客称解决 Kannan–Lovász–Simonovits（KLS）猜想，移除理解高维随机算法效率的一项理论障碍；该猜想提出于 1995 年前后。",
    "publishedAt": "2026-10-21T16:00:00.000Z",
    "sourceNames": [
     "Microsoft Research Blog"
@@ -862,7 +862,7 @@
    "id": "2026-10-22-litellm-pypi-compromise",
    "kind": "event",
    "title": "Wiz：LiteLLM 1.107.0 被投毒，窃取云与 AI 凭证",
-   "summary": "Wiz 披露，恶意版本 LiteLLM 1.107.0 于 10 月 21 日被上传至 PyPI 与 Docker，内含针对浏览器、云与 AI 密钥的凭证窃取器，并带休眠 C2 能力。 属供应链投毒；使用 LiteLLM 的团队应立即核查已装版本、轮换相关密钥，并确认镜像与依赖锁定策略。",
+   "summary": "Wiz 披露，恶意版本 LiteLLM 1.107.0 于 10 月 21 日被上传至 PyPI 与 Docker，内含针对浏览器、云与 AI 密钥的凭证窃取器，并带休眠 C2 能力。 属供应链投毒事件；使用 LiteLLM 的团队应立即核查版本与密钥轮换。",
    "publishedAt": "2026-10-21T13:44:12.000Z",
    "sourceNames": [
     "Wiz Blog"
@@ -1050,7 +1050,7 @@
    "id": "2026-10-22-vllm-humming-kernels",
    "kind": "event",
    "title": "vLLM 开源 Humming：面向量化推理的内核库",
-   "summary": "vLLM 博客宣布与蚂蚁集团社区合作开源 Humming：面向量化推理的灵活内核库，覆盖多种 GPU 与量化格式，并给出 dense/MoE 性能与集成路径。 属推理栈基础设施更新；文档说明如何把内核接入 vLLM，意在降低量化部署摩擦与跨硬件内核维护成本。",
+   "summary": "vLLM 博客宣布与蚂蚁集团社区合作开源 Humming，面向量化推理的灵活内核库，覆盖多种 GPU 与量化格式，并给出 dense/MoE 性能与 vLLM 集成说明。 属推理栈基础设施更新，可直接降低量化部署摩擦。",
    "publishedAt": "2026-10-21T00:00:00.000Z",
    "sourceNames": [
     "vLLM Blog"

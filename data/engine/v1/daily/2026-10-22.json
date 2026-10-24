@@ -212,7 +212,7 @@
     {
      "itemId": "sha256:859a2ca12c0c52e9",
      "title": "Wiz：LiteLLM 1.107.0 被投毒，窃取云与 AI 凭证",
-     "summary": "Wiz 披露，恶意版本 LiteLLM 1.107.0 于 10 月 21 日被上传至 PyPI 与 Docker，内含针对浏览器、云与 AI 密钥的凭证窃取器，并带休眠 C2 能力。 属供应链投毒；使用 LiteLLM 的团队应立即核查已装版本、轮换相关密钥，并确认镜像与依赖锁定策略。",
+     "summary": "Wiz 披露，恶意版本 LiteLLM 1.107.0 于 10 月 21 日被上传至 PyPI 与 Docker，内含针对浏览器、云与 AI 密钥的凭证窃取器，并带休眠 C2 能力。 属供应链投毒事件；使用 LiteLLM 的团队应立即核查版本与密钥轮换。",
      "sourceName": "Wiz Blog",
      "sourceUrl": "https://www.wiz.io/blog/litellm-compromised-steals-credentials",
      "sourceIconUrl": null,

@@ -2,8 +2,8 @@
  {
   "rank": 1,
   "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
-  "heat": 26.7,
-  "trend": "new",
+  "heat": 26.1,
+  "trend": "up",
   "storyPublicId": "2026-10-24-kimi-k31-pro",
   "itemId": "sha256:261b6564023ad66c",
   "participants": [
@@ -25,7 +25,7 @@
  {
   "rank": 2,
   "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
-  "heat": 25.1,
+  "heat": 24.5,
   "trend": "up",
   "storyPublicId": "2026-10-24-openai-securing-frontier-training",
   "itemId": "sha256:f8c156dba7886826",
@@ -48,7 +48,7 @@
  {
   "rank": 3,
   "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
-  "heat": 16.8,
+  "heat": 16.4,
   "trend": "up",
   "storyPublicId": "2026-10-22-nvidia-microduck-isaac-lab",
   "itemId": "sha256:7decc1c5c0496d6c",
@@ -67,7 +67,7 @@
  {
   "rank": 4,
   "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
-  "heat": 10.7,
+  "heat": 10.4,
   "trend": "down",
   "storyPublicId": "2026-10-21-php2shell-wiz-rce",
   "itemId": "sha256:de9db6f384cbc788",
@@ -90,7 +90,7 @@
  {
   "rank": 5,
   "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持",
-  "heat": 10.0,
+  "heat": 9.7,
   "trend": "down",
   "storyPublicId": "2026-10-19-minimax-m31-flash",
   "itemId": "sha256:50cb4eba8a3e4759",

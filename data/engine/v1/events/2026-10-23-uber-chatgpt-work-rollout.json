@@ -8,7 +8,7 @@
  "latestAt": "2026-10-22T16:00:00.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": null,
+ "summary": "OpenAI：Uber 将 ChatGPT Work 扩至逾 3 万员工，接入常用办公工具。TechCrunch 同步报道全员推广。",
  "excerpt": null,
  "latest": null,
  "latestReport": null,
@@ -80,11 +80,6 @@
   }
  ],
  "heat": [
-  {
-   "hour": "2026-10-22T00:00:00.000Z",
-   "heat": 10.0,
-   "participants": 1
-  },
   {
    "hour": "2026-10-22T01:00:00.000Z",
    "heat": 9.7,
@@ -323,6 +318,11 @@
   {
    "hour": "2026-10-24T00:00:00.000Z",
    "heat": 4.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-24T01:00:00.000Z",
+   "heat": 3.9,
    "participants": 1
   }
  ],
