@@ -21,7 +21,7 @@
    "firstParty": true,
    "publishedAt": "2026-10-23T10:00:00.000Z",
    "available": true,
-   "otherSources": 2
+   "otherSources": 3
   },
   {
    "itemId": "sha256:73be0ee71d2832b3",
@@ -75,7 +75,7 @@
      "firstParty": true,
      "publishedAt": "2026-10-23T10:00:00.000Z",
      "available": true,
-     "otherSources": 2
+     "otherSources": 3
     },
     {
      "itemId": "sha256:859a2ca12c0c52e9",

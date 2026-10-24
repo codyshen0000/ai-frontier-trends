@@ -2,11 +2,15 @@
  {
   "rank": 1,
   "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
-  "heat": 22.0,
-  "trend": "down",
+  "heat": 30.1,
+  "trend": "up",
   "storyPublicId": "2026-10-24-kimi-k31-pro",
   "itemId": "sha256:261b6564023ad66c",
   "participants": [
+   {
+    "name": "Latent Space",
+    "kind": "editorial"
+   },
    {
     "name": "Simon Willison",
     "kind": "editorial"
@@ -20,18 +24,22 @@
     "kind": "signal"
    }
   ],
-  "participantCount": 3
+  "participantCount": 4
  },
  {
   "rank": 2,
   "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
-  "heat": 20.7,
-  "trend": "down",
+  "heat": 28.0,
+  "trend": "up",
   "storyPublicId": "2026-10-24-openai-securing-frontier-training",
   "itemId": "sha256:f8c156dba7886826",
   "participants": [
    {
     "name": "OpenAI News",
+    "kind": "editorial"
+   },
+   {
+    "name": "The Decoder",
     "kind": "editorial"
    },
    {
@@ -43,12 +51,12 @@
     "kind": "editorial"
    }
   ],
-  "participantCount": 3
+  "participantCount": 4
  },
  {
   "rank": 3,
   "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
-  "heat": 13.8,
+  "heat": 12.2,
   "trend": "down",
   "storyPublicId": "2026-10-22-nvidia-microduck-isaac-lab",
   "itemId": "sha256:7decc1c5c0496d6c",
@@ -66,37 +74,33 @@
  },
  {
   "rank": 4,
-  "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
-  "heat": 8.8,
-  "trend": "down",
-  "storyPublicId": "2026-10-21-php2shell-wiz-rce",
-  "itemId": "sha256:de9db6f384cbc788",
-  "participants": [
-   {
-    "name": "Ars Technica · AI",
-    "kind": "editorial"
-   },
-   {
-    "name": "The Verge · AI",
-    "kind": "editorial"
-   },
-   {
-    "name": "Latent Space",
-    "kind": "editorial"
-   }
-  ],
-  "participantCount": 3
- },
- {
-  "rank": 5,
   "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持",
-  "heat": 8.2,
+  "heat": 7.2,
   "trend": "down",
   "storyPublicId": "2026-10-19-minimax-m31-flash",
   "itemId": "sha256:50cb4eba8a3e4759",
   "participants": [
    {
     "name": "vLLM Blog",
+    "kind": "editorial"
+   },
+   {
+    "name": "IT之家（全站，需关键词过滤）",
+    "kind": "signal"
+   }
+  ],
+  "participantCount": 2
+ },
+ {
+  "rank": 5,
+  "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
+  "heat": 6.8,
+  "trend": "down",
+  "storyPublicId": "2026-10-23-google-agent-compute-engine",
+  "itemId": "sha256:7ea705cfe9f05665",
+  "participants": [
+   {
+    "name": "The Decoder",
     "kind": "editorial"
    },
    {

@@ -1,627 +1,833 @@
 {
- "site": "前沿趋势",
- "contract_version": "1.1",
- "mode": "production",
- "data_as_of": "2026-10-24T12:22:16+08:00",
- "data_as_of_label": "数据截至 2026-10-24 12:22（北京时间）",
- "generated_at": "2026-10-24T15:25:00+08:00",
- "hot_rule_version": "heat-v1-48h-halflife24h (前沿情报 heat48h.py 1.1)",
- "hot_computed_at": "2026-10-24T15:25:00+08:00",
- "window_hours": 48,
- "spark_points": 25,
- "page_size": 20,
- "counts": {
-  "cards": 44,
-  "pages": 3,
-  "events": 45,
-  "hot_entries": 9,
-  "search_docs": 109,
-  "feed_items": 44,
-  "passed_events": 45,
-  "below_threshold_events": 0,
-  "redirects": 0,
-  "hot_snapshots": 22,
-  "covers": 5
- },
- "last_round": {
-  "batch_id": "2026-10-24T1222",
-  "status": "ok",
-  "finished_at": "2026-10-24T12:42:29+08:00"
- },
- "batches": [
-  {
-   "batch_id": "2026-10-19T1124",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-19T1221",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-19T1323",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-19T1418",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-19T1524",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-19T1627",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-19T1726",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-19T1825",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-19T1923",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-19T2025",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-19T2136",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-19T2223",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-19T2347",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T0051",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T0121",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T0224",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T0321",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T0418",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T0522",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T0621",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T1055",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T1122",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T1218",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T1320",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T1424",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T1528",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T1623",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T1726",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T1822",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T1923",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T2025",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T2123",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T2221",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T2323",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T0026",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T0118",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T0221",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T0321",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T0427",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T0520",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T0624",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T0728",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T0826",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T0928",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T1019",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T1118",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T1227",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T1320",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T1419",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T1526",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T1606",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T1626",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T1718",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T1817",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T1925",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T2028",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T2127",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T2218",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T2319",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T0027",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T0125",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T0218",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T0320",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T0417",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T0519",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T0618",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T0725",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T0826",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T0925",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T1018",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T1127",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T1219",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T1320",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T1418",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T1526",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T1624",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T1722",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T1819",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T1923",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T2018",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T2122",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T2221",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T2319",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T0023",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T0119",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T0135",
-   "status": "partial"
-  },
-  {
-   "batch_id": "2026-10-23T0145",
-   "status": "partial"
-  },
-  {
-   "batch_id": "2026-10-23T0150",
-   "status": "partial"
-  },
-  {
-   "batch_id": "2026-10-23T0222",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T0312",
-   "status": "partial"
-  },
-  {
-   "batch_id": "2026-10-23T0322",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T0424",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T0522",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T0627",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T0725",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T0827",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T0856",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T0924",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T1023",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T1121",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T1226",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T1319",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T1520",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T1624",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T1724",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T1815",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T1820",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T1922",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T2021",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T2124",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T2222",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T2326",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T0019",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T0126",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T0221",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T0325",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T0422",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T0522",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T0621",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T0719",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T0824",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T0910",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T0919",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T0930",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T1022",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T1122",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T1222",
-   "status": "ok"
-  }
- ],
- "files": [
-  "api/index.json",
-  "events/2026-10-19-deepseek-v41-flash-1017.json",
-  "events/2026-10-19-minimax-m31-flash.json",
-  "events/2026-10-19-nvidia-open-models-agents-pcs.json",
-  "events/2026-10-20-hf-torchneuron-trainium.json",
-  "events/2026-10-20-kling-ai-4-0.json",
-  "events/2026-10-21-chatgpt-ads-stack-expansion.json",
-  "events/2026-10-21-ibm-granite-speech-5.json",
-  "events/2026-10-21-mistral-nvidia-industrial-ai.json",
-  "events/2026-10-21-mistral-voxtral-3.json",
-  "events/2026-10-21-nvidia-kumo-forecast.json",
-  "events/2026-10-21-nvidia-rfd4-proteina.json",
-  "events/2026-10-21-openai-agent-monitoring-disabled.json",
-  "events/2026-10-21-openai-models-google-cloud.json",
-  "events/2026-10-21-openai-terminal-x-eval.json",
-  "events/2026-10-21-php2shell-wiz-rce.json",
-  "events/2026-10-22-anthropic-claude-duet.json",
-  "events/2026-10-22-dharma-vocabx-slm.json",
-  "events/2026-10-22-google-ai-maternal-ultrasound.json",
-  "events/2026-10-22-litellm-pypi-compromise.json",
-  "events/2026-10-22-msr-kls-conjecture.json",
-  "events/2026-10-22-nvidia-microduck-isaac-lab.json",
-  "events/2026-10-22-openai-fde-means.json",
-  "events/2026-10-22-openai-gov-cyber-defenders.json",
-  "events/2026-10-22-recursive-flint-coding-model.json",
-  "events/2026-10-22-vllm-humming-kernels.json",
-  "events/2026-10-22-wiz-artex-storm0940.json",
-  "events/2026-10-22-wiz-llmjacking-cloud-billing.json",
-  "events/2026-10-23-allenai-olmoearth-v13.json",
-  "events/2026-10-23-anthropic-claude-formal-verification.json",
-  "events/2026-10-23-claude-models-google-cloud.json",
-  "events/2026-10-23-google-agent-compute-engine.json",
-  "events/2026-10-23-microsoft-mai-dxo.json",
-  "events/2026-10-23-microsoft-thinkingbox-rl.json",
-  "events/2026-10-23-msr-flint-interactive.json",
-  "events/2026-10-23-openai-decisions-api.json",
-  "events/2026-10-23-openai-nask-ai-safety.json",
-  "events/2026-10-23-uber-chatgpt-work-rollout.json",
-  "events/2026-10-24-anthropic-ukaisi-alignment.json",
-  "events/2026-10-24-baseten-environment-network.json",
-  "events/2026-10-24-google-tb-screening.json",
-  "events/2026-10-24-kimi-k31-pro.json",
-  "events/2026-10-24-nvidia-tensorrt-global-performance-tuner.json",
-  "events/2026-10-24-openai-metr-agent-monitoring.json",
-  "events/2026-10-24-openai-securing-frontier-training.json",
-  "events/2026-10-24-vllm-glm53-opt-part2.json",
-  "events/index.json",
-  "feed/selected.json",
-  "hot-snapshots/2026-10-21T15.json",
-  "hot-snapshots/2026-10-21T16.json",
-  "hot-snapshots/2026-10-21T19.json",
-  "hot-snapshots/2026-10-22T08.json",
-  "hot-snapshots/2026-10-22T12.json",
-  "hot-snapshots/2026-10-22T15.json",
-  "hot-snapshots/2026-10-22T16.json",
-  "hot-snapshots/2026-10-22T19.json",
-  "hot-snapshots/2026-10-22T23.json",
-  "hot-snapshots/2026-10-23T01.json",
-  "hot-snapshots/2026-10-23T03.json",
-  "hot-snapshots/2026-10-23T08.json",
-  "hot-snapshots/2026-10-23T12.json",
-  "hot-snapshots/2026-10-23T15.json",
-  "hot-snapshots/2026-10-23T18.json",
-  "hot-snapshots/2026-10-23T19.json",
-  "hot-snapshots/2026-10-24T00.json",
-  "hot-snapshots/2026-10-24T03.json",
-  "hot-snapshots/2026-10-24T08.json",
-  "hot-snapshots/2026-10-24T09.json",
-  "hot-snapshots/2026-10-24T12.json",
-  "hot-snapshots/2026-10-24T15.json",
-  "hot-strip.json",
-  "hot.json",
-  "meta.json",
-  "redirects.json",
-  "search/source.json",
-  "sources.json",
-  "timeline/index.json",
-  "timeline/page-1.json",
-  "timeline/page-2.json",
-  "timeline/page-3.json"
- ],
- "next_round": "2026-10-24T19:25:00+08:00",
- "today": "2026-10-24",
- "passed_count": 46,
- "fill_count": 0
+  "site": "前沿趋势",
+  "mode": "production",
+  "data_as_of": "2026-10-24T19:18:21+08:00",
+  "data_as_of_label": "数据截至 2026-10-24 19:18（北京时间）",
+  "generated_at": "2026-10-24T19:50:48+08:00",
+  "today": "2026-10-24",
+  "hot_rule_version": "heat-v1-48h-halflife24h (v0 port)",
+  "window_hours": 48,
+  "half_life_hours": 24,
+  "spark_hours": 24,
+  "spark_points": 25,
+  "hot_candidates": 8,
+  "passed_count": 46,
+  "fill_count": 0,
+  "selected_items": 46,
+  "batches": [
+    {
+      "batch_id": "2026-10-19T1124",
+      "status": "ok",
+      "imported_at": "2026-10-19T11:28:23+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-19T1221",
+      "status": "ok",
+      "imported_at": "2026-10-19T13:23:23+08:00",
+      "rejected": 2
+    },
+    {
+      "batch_id": "2026-10-19T1323",
+      "status": "ok",
+      "imported_at": "2026-10-19T16:27:16+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-19T1418",
+      "status": "ok",
+      "imported_at": "2026-10-19T16:27:16+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-19T1524",
+      "status": "ok",
+      "imported_at": "2026-10-19T16:27:16+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-19T1627",
+      "status": "ok",
+      "imported_at": "2026-10-19T20:25:37+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-19T1726",
+      "status": "ok",
+      "imported_at": "2026-10-19T20:25:37+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-19T1825",
+      "status": "ok",
+      "imported_at": "2026-10-19T20:25:37+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-19T1923",
+      "status": "ok",
+      "imported_at": "2026-10-19T20:25:37+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-19T2025",
+      "status": "ok",
+      "imported_at": "2026-10-20T08:45:38+08:00",
+      "rejected": 3
+    },
+    {
+      "batch_id": "2026-10-19T2136",
+      "status": "ok",
+      "imported_at": "2026-10-20T08:45:38+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-19T2223",
+      "status": "ok",
+      "imported_at": "2026-10-20T08:45:38+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-19T2347",
+      "status": "ok",
+      "imported_at": "2026-10-20T08:45:38+08:00",
+      "rejected": 2
+    },
+    {
+      "batch_id": "2026-10-20T0051",
+      "status": "ok",
+      "imported_at": "2026-10-20T08:45:38+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-20T0121",
+      "status": "ok",
+      "imported_at": "2026-10-20T08:45:38+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-20T0224",
+      "status": "ok",
+      "imported_at": "2026-10-20T08:45:38+08:00",
+      "rejected": 4
+    },
+    {
+      "batch_id": "2026-10-20T0321",
+      "status": "ok",
+      "imported_at": "2026-10-20T08:45:38+08:00",
+      "rejected": 3
+    },
+    {
+      "batch_id": "2026-10-20T0418",
+      "status": "ok",
+      "imported_at": "2026-10-20T08:45:38+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-20T0522",
+      "status": "ok",
+      "imported_at": "2026-10-20T08:45:38+08:00",
+      "rejected": 2
+    },
+    {
+      "batch_id": "2026-10-20T0621",
+      "status": "ok",
+      "imported_at": "2026-10-20T15:29:06+08:00",
+      "rejected": 4
+    },
+    {
+      "batch_id": "2026-10-20T1055",
+      "status": "ok",
+      "imported_at": "2026-10-20T10:58:45+08:00",
+      "rejected": 3
+    },
+    {
+      "batch_id": "2026-10-20T1122",
+      "status": "ok",
+      "imported_at": "2026-10-20T13:20:21+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-20T1218",
+      "status": "ok",
+      "imported_at": "2026-10-20T13:20:21+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-20T1320",
+      "status": "ok",
+      "imported_at": "2026-10-20T16:23:28+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-20T1424",
+      "status": "ok",
+      "imported_at": "2026-10-20T16:23:28+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-20T1528",
+      "status": "ok",
+      "imported_at": "2026-10-20T16:23:28+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-20T1623",
+      "status": "ok",
+      "imported_at": "2026-10-20T20:25:20+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-20T1726",
+      "status": "ok",
+      "imported_at": "2026-10-21T19:56:57+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-20T1822",
+      "status": "ok",
+      "imported_at": "2026-10-20T20:25:20+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-20T1923",
+      "status": "ok",
+      "imported_at": "2026-10-20T20:25:20+08:00",
+      "rejected": 3
+    },
+    {
+      "batch_id": "2026-10-20T2025",
+      "status": "ok",
+      "imported_at": "2026-10-21T09:28:37+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-20T2123",
+      "status": "ok",
+      "imported_at": "2026-10-21T09:28:37+08:00",
+      "rejected": 3
+    },
+    {
+      "batch_id": "2026-10-20T2221",
+      "status": "ok",
+      "imported_at": "2026-10-21T09:28:37+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-20T2323",
+      "status": "ok",
+      "imported_at": "2026-10-21T09:28:37+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-21T0026",
+      "status": "ok",
+      "imported_at": "2026-10-21T09:28:37+08:00",
+      "rejected": 5
+    },
+    {
+      "batch_id": "2026-10-21T0118",
+      "status": "ok",
+      "imported_at": "2026-10-21T09:28:37+08:00",
+      "rejected": 2
+    },
+    {
+      "batch_id": "2026-10-21T0221",
+      "status": "ok",
+      "imported_at": "2026-10-21T09:28:37+08:00",
+      "rejected": 4
+    },
+    {
+      "batch_id": "2026-10-21T0321",
+      "status": "ok",
+      "imported_at": "2026-10-21T19:56:57+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-21T0427",
+      "status": "ok",
+      "imported_at": "2026-10-21T09:28:37+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-21T0520",
+      "status": "ok",
+      "imported_at": "2026-10-21T09:28:37+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-21T0624",
+      "status": "ok",
+      "imported_at": "2026-10-21T09:28:37+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-21T0728",
+      "status": "ok",
+      "imported_at": "2026-10-21T09:28:37+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-21T0826",
+      "status": "ok",
+      "imported_at": "2026-10-21T21:00:14+08:00",
+      "rejected": 3
+    },
+    {
+      "batch_id": "2026-10-21T0928",
+      "status": "ok",
+      "imported_at": "2026-10-21T13:20:11+08:00",
+      "rejected": 4
+    },
+    {
+      "batch_id": "2026-10-21T1019",
+      "status": "ok",
+      "imported_at": "2026-10-21T13:20:11+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-21T1118",
+      "status": "ok",
+      "imported_at": "2026-10-21T13:20:11+08:00",
+      "rejected": 2
+    },
+    {
+      "batch_id": "2026-10-21T1227",
+      "status": "ok",
+      "imported_at": "2026-10-21T13:20:11+08:00",
+      "rejected": 3
+    },
+    {
+      "batch_id": "2026-10-21T1320",
+      "status": "ok",
+      "imported_at": "2026-10-21T15:26:57+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-21T1419",
+      "status": "ok",
+      "imported_at": "2026-10-21T15:26:57+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-21T1526",
+      "status": "ok",
+      "imported_at": "2026-10-21T16:07:01+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-21T1606",
+      "status": "ok",
+      "imported_at": "2026-10-21T19:56:57+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-21T1626",
+      "status": "ok",
+      "imported_at": "2026-10-21T19:56:57+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-21T1718",
+      "status": "ok",
+      "imported_at": "2026-10-21T19:56:57+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-21T1817",
+      "status": "ok",
+      "imported_at": "2026-10-21T19:56:57+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-21T1925",
+      "status": "ok",
+      "imported_at": "2026-10-21T19:56:57+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-21T2028",
+      "status": "ok",
+      "imported_at": "2026-10-22T08:40:53+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-21T2127",
+      "status": "ok",
+      "imported_at": "2026-10-22T08:40:53+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-21T2218",
+      "status": "ok",
+      "imported_at": "2026-10-22T08:40:53+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-21T2319",
+      "status": "ok",
+      "imported_at": "2026-10-22T08:40:53+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T0027",
+      "status": "ok",
+      "imported_at": "2026-10-22T08:40:53+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T0125",
+      "status": "ok",
+      "imported_at": "2026-10-22T08:40:53+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T0218",
+      "status": "ok",
+      "imported_at": "2026-10-22T08:40:53+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T0320",
+      "status": "ok",
+      "imported_at": "2026-10-22T08:40:53+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T0417",
+      "status": "ok",
+      "imported_at": "2026-10-22T08:40:53+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T0519",
+      "status": "ok",
+      "imported_at": "2026-10-22T08:40:53+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T0618",
+      "status": "ok",
+      "imported_at": "2026-10-22T08:40:53+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T0725",
+      "status": "ok",
+      "imported_at": "2026-10-22T08:40:53+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T0826",
+      "status": "ok",
+      "imported_at": "2026-10-22T16:00:08+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T0925",
+      "status": "ok",
+      "imported_at": "2026-10-22T12:29:38+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T1018",
+      "status": "ok",
+      "imported_at": "2026-10-22T12:29:38+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T1127",
+      "status": "ok",
+      "imported_at": "2026-10-22T12:29:38+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T1219",
+      "status": "ok",
+      "imported_at": "2026-10-22T12:29:38+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T1320",
+      "status": "ok",
+      "imported_at": "2026-10-22T15:26:23+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T1418",
+      "status": "ok",
+      "imported_at": "2026-10-22T15:26:23+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T1526",
+      "status": "ok",
+      "imported_at": "2026-10-22T19:39:08+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T1624",
+      "status": "ok",
+      "imported_at": "2026-10-22T19:39:08+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T1722",
+      "status": "ok",
+      "imported_at": "2026-10-22T19:39:08+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T1819",
+      "status": "ok",
+      "imported_at": "2026-10-22T19:39:08+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T1923",
+      "status": "ok",
+      "imported_at": "2026-10-22T19:39:08+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T2018",
+      "status": "ok",
+      "imported_at": "2026-10-23T01:41:47+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T2122",
+      "status": "ok",
+      "imported_at": "2026-10-23T01:41:47+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T2221",
+      "status": "ok",
+      "imported_at": "2026-10-23T01:41:47+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T2319",
+      "status": "ok",
+      "imported_at": "2026-10-23T01:41:47+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0023",
+      "status": "ok",
+      "imported_at": "2026-10-23T01:41:47+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0119",
+      "status": "ok",
+      "imported_at": "2026-10-23T01:41:47+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0135",
+      "status": "partial",
+      "imported_at": "2026-10-23T01:26:12+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0145",
+      "status": "partial",
+      "imported_at": "2026-10-23T01:35:32+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0150",
+      "status": "partial",
+      "imported_at": "2026-10-23T01:42:27+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0222",
+      "status": "ok",
+      "imported_at": "2026-10-23T03:45:08+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0312",
+      "status": "partial",
+      "imported_at": "2026-10-23T03:14:05+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0322",
+      "status": "ok",
+      "imported_at": "2026-10-23T03:45:08+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0424",
+      "status": "ok",
+      "imported_at": "2026-10-23T08:46:48+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0522",
+      "status": "ok",
+      "imported_at": "2026-10-23T08:46:48+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0627",
+      "status": "ok",
+      "imported_at": "2026-10-23T08:46:49+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0725",
+      "status": "ok",
+      "imported_at": "2026-10-23T08:46:49+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0827",
+      "status": "ok",
+      "imported_at": "2026-10-23T08:46:49+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0856",
+      "status": "ok",
+      "imported_at": "2026-10-23T08:59:11+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0924",
+      "status": "ok",
+      "imported_at": "2026-10-23T12:45:55+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T1023",
+      "status": "ok",
+      "imported_at": "2026-10-23T12:45:56+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T1121",
+      "status": "ok",
+      "imported_at": "2026-10-23T12:45:56+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T1226",
+      "status": "ok",
+      "imported_at": "2026-10-23T12:45:56+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T1319",
+      "status": "ok",
+      "imported_at": "2026-10-23T15:46:39+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T1520",
+      "status": "ok",
+      "imported_at": "2026-10-23T15:46:39+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T1624",
+      "status": "ok",
+      "imported_at": "2026-10-23T19:42:14+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T1724",
+      "status": "ok",
+      "imported_at": "2026-10-23T19:42:14+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T1815",
+      "status": "ok",
+      "imported_at": "2026-10-23T18:13:14+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T1820",
+      "status": "ok",
+      "imported_at": "2026-10-23T19:42:14+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T1922",
+      "status": "ok",
+      "imported_at": "2026-10-23T19:42:14+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T2021",
+      "status": "ok",
+      "imported_at": "2026-10-24T00:37:24+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T2124",
+      "status": "ok",
+      "imported_at": "2026-10-24T00:37:24+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T2222",
+      "status": "ok",
+      "imported_at": "2026-10-24T00:37:24+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T2326",
+      "status": "ok",
+      "imported_at": "2026-10-24T00:37:24+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T0019",
+      "status": "ok",
+      "imported_at": "2026-10-24T00:37:25+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T0126",
+      "status": "ok",
+      "imported_at": "2026-10-24T03:50:25+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T0221",
+      "status": "ok",
+      "imported_at": "2026-10-24T03:50:25+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T0325",
+      "status": "ok",
+      "imported_at": "2026-10-24T03:50:25+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T0422",
+      "status": "ok",
+      "imported_at": "2026-10-24T08:41:09+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T0522",
+      "status": "ok",
+      "imported_at": "2026-10-24T08:41:09+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T0621",
+      "status": "ok",
+      "imported_at": "2026-10-24T08:41:09+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T0719",
+      "status": "ok",
+      "imported_at": "2026-10-24T08:41:09+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T0824",
+      "status": "ok",
+      "imported_at": "2026-10-24T08:41:09+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T0910",
+      "status": "ok",
+      "imported_at": "2026-10-24T09:11:44+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T0919",
+      "status": "ok",
+      "imported_at": "2026-10-24T12:47:26+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T0930",
+      "status": "ok",
+      "imported_at": "2026-10-24T09:20:00+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T1022",
+      "status": "ok",
+      "imported_at": "2026-10-24T12:47:26+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T1122",
+      "status": "ok",
+      "imported_at": "2026-10-24T12:47:26+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T1222",
+      "status": "ok",
+      "imported_at": "2026-10-24T12:47:26+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T1326",
+      "status": "ok",
+      "imported_at": "2026-10-24T15:47:50+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T1419",
+      "status": "ok",
+      "imported_at": "2026-10-24T15:47:50+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T1525",
+      "status": "ok",
+      "imported_at": "2026-10-24T15:47:50+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T1620",
+      "status": "ok",
+      "imported_at": "2026-10-24T19:49:20+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T1719",
+      "status": "ok",
+      "imported_at": "2026-10-24T19:49:20+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T1821",
+      "status": "ok",
+      "imported_at": "2026-10-24T19:49:20+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T1918",
+      "status": "ok",
+      "imported_at": "2026-10-24T19:49:21+08:00",
+      "rejected": 0
+    }
+  ],
+  "daily_keys": [
+    "2026-10-19",
+    "2026-10-20",
+    "2026-10-21",
+    "2026-10-22",
+    "2026-10-23",
+    "2026-10-24"
+  ],
+  "cover_rule": "aihot soft: width≥480 (unknown=800) height≥240 + alt + not logo/avatar/badge; value_class priority when present",
+  "cover_note": "cover.url 导出可为 https；物化后改写为 assets/covers/… 同源；失败则空槽不热链"
 }
