@@ -2,10 +2,10 @@
  "publicId": "2026-10-24-kimi-k31-pro",
  "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
  "status": "active",
- "reportCount": 1,
- "sourceCount": 1,
+ "reportCount": 2,
+ "sourceCount": 2,
  "firstReportAt": "2026-10-23T19:00:07.000Z",
- "latestAt": "2026-10-23T19:00:07.000Z",
+ "latestAt": "2026-10-23T19:40:54.000Z",
  "digest": null,
  "digestUpdatedAt": null,
  "summary": null,
@@ -13,18 +13,18 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 1,
-  "newParticipants6h": 1,
-  "recentReports24h": 1,
+  "participants48h": 3,
+  "newParticipants6h": 3,
+  "recentReports24h": 3,
   "observationComplete": true,
-  "rank": null
+  "rank": 1
  },
  "developments": [
   {
    "factId": "fact-2026-10-24-kimi-k31-pro",
    "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
    "firstReportAt": "2026-10-23T19:00:07.000Z",
-   "reportCount": 1,
+   "reportCount": 2,
    "representative": {
     "id": "sha256:261b6564023ad66c",
     "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
@@ -42,6 +42,18 @@
  "officialReports": [],
  "timeline": [
   {
+   "id": "sha256:b5619922e4bc7751",
+   "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
+   "summary": "跟进稿并回 Kimi K3.1 Pro；权重日程等信息写入 latest_progress。",
+   "source": {
+    "name": "Simon Willison",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-23T19:40:54.000Z",
+   "selected": false,
+   "originalUrl": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/"
+  },
+  {
    "id": "sha256:261b6564023ad66c",
    "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
    "summary": "Decoder 报道 Kimi K3.1 Pro；已核实 Artificial Analysis 评测帖并 hop。",
@@ -54,9 +66,35 @@
    "originalUrl": "https://the-decoder.com/chinese-ai-model-kimi-k3-1-pro-is-closing-in-on-anthropics-claude-opus-5-5/"
   }
  ],
- "heat": [],
+ "heat": [
+  {
+   "hour": "2026-10-23T20:00:00.000Z",
+   "heat": 19.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T21:00:00.000Z",
+   "heat": 19.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T22:00:00.000Z",
+   "heat": 18.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T23:00:00.000Z",
+   "heat": 18.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-24T00:00:00.000Z",
+   "heat": 27.2,
+   "participants": 3
+  }
+ ],
  "related": [],
  "topics": [],
- "recommendReason": "Kimi K3.1 Pro 智能指数 55，暂列第四；拟开源权重",
+ "recommendReason": "Kimi K3.1 Pro 发布：智能指数 55，暂列开源前列",
  "primaryUrl": "https://the-decoder.com/chinese-ai-model-kimi-k3-1-pro-is-closing-in-on-anthropics-claude-opus-5-5/"
 }

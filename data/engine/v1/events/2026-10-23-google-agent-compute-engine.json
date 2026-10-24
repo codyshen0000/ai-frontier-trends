@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 1,
   "observationComplete": true,
-  "rank": 4
+  "rank": 6
  },
  "developments": [
   {
@@ -196,11 +196,36 @@
    "hour": "2026-10-23T19:00:00.000Z",
    "heat": 11.1,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-23T20:00:00.000Z",
+   "heat": 10.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T21:00:00.000Z",
+   "heat": 10.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T22:00:00.000Z",
+   "heat": 10.2,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T23:00:00.000Z",
+   "heat": 9.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-24T00:00:00.000Z",
+   "heat": 9.6,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "Google 云推出 Agent Compute Engine 硬件隔离 mic",
  "primaryUrl": "https://the-decoder.com/googles-agent-compute-engine-gives-every-gemini-agent-its-own-hardware-isolated-micro-virtual-machine/",
- "rankDelta": 1
+ "rankDelta": -2
 }

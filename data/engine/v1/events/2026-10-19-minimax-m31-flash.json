@@ -15,9 +15,9 @@
  "whyHot": {
   "participants48h": 2,
   "newParticipants6h": 0,
-  "recentReports24h": 2,
+  "recentReports24h": 1,
   "observationComplete": true,
-  "rank": 3
+  "rank": 5
  },
  "developments": [
   {
@@ -80,31 +80,6 @@
   }
  ],
  "heat": [
-  {
-   "hour": "2026-10-21T19:00:00.000Z",
-   "heat": 4.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T20:00:00.000Z",
-   "heat": 4.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T21:00:00.000Z",
-   "heat": 4.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T22:00:00.000Z",
-   "heat": 3.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T23:00:00.000Z",
-   "heat": 3.8,
-   "participants": 1
-  },
   {
    "hour": "2026-10-22T00:00:00.000Z",
    "heat": 3.7,
@@ -274,6 +249,31 @@
    "hour": "2026-10-23T19:00:00.000Z",
    "heat": 11.7,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-23T20:00:00.000Z",
+   "heat": 11.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T21:00:00.000Z",
+   "heat": 11.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T22:00:00.000Z",
+   "heat": 10.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T23:00:00.000Z",
+   "heat": 10.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-24T00:00:00.000Z",
+   "heat": 10.2,
+   "participants": 2
   }
  ],
  "related": [],
@@ -287,5 +287,5 @@
   "valueClass": "product_screenshot"
  },
  "primaryUrl": "https://vllm.ai/blog/2026-10-23-minimax-m31-flash",
- "rankDelta": 0
+ "rankDelta": -2
 }

@@ -142,6 +142,18 @@
      "publishedAt": "2026-10-21T12:34:57.000Z",
      "available": true,
      "otherSources": 1
+    },
+    {
+     "itemId": "sha256:de9db6f384cbc788",
+     "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
+     "summary": "OpenAI 发布 Patch the Planet，协调处理智能体发现的关键漏洞。Wiz 等称 PHP 引擎缺陷可导致远程代码执行与类 Heartbleed 内存泄露，影响面极广；PHP 基金会已发安全更新。 HN 持续高热讨论；Wiz 与多家安全方跟进披露细节。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-21T07:00:00.000Z",
+     "available": true,
+     "otherSources": 7
     }
    ]
   },
@@ -160,18 +172,6 @@
      "publishedAt": "2026-10-21T12:30:00.000Z",
      "available": true,
      "otherSources": 0
-    },
-    {
-     "itemId": "sha256:64ddfb139fec8a1c",
-     "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
-     "summary": "OpenAI 官方介绍与 PerturbAI、Scripps Research 合作，用分布式智能体在海量脑细胞数据中寻找有希望的研究线索。 The Decoder 称智能体可在约 32 分钟内完成人类需数月的小鼠脑数据分析；与收购 Orchestra Bio 并入 Rosalind 属相关但不同交付。",
-     "sourceName": "OpenAI News",
-     "sourceUrl": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-21T04:50:00.000Z",
-     "available": true,
-     "otherSources": 1
     }
    ]
   },
@@ -284,7 +284,7 @@
  },
  "metrics": {
   "totalEvents": 12,
-  "sourcesCount": 8,
+  "sourcesCount": 12,
   "firstPartyEvents": 10,
   "modelsReleased": 2
  },

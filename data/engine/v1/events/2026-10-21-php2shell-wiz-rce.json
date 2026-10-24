@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 2
+  "rank": 4
  },
  "developments": [
   {
@@ -79,31 +79,6 @@
   }
  ],
  "heat": [
-  {
-   "hour": "2026-10-21T19:00:00.000Z",
-   "heat": 35.3,
-   "participants": 4
-  },
-  {
-   "hour": "2026-10-21T20:00:00.000Z",
-   "heat": 44.2,
-   "participants": 5
-  },
-  {
-   "hour": "2026-10-21T21:00:00.000Z",
-   "heat": 42.9,
-   "participants": 5
-  },
-  {
-   "hour": "2026-10-21T22:00:00.000Z",
-   "heat": 41.7,
-   "participants": 5
-  },
-  {
-   "hour": "2026-10-21T23:00:00.000Z",
-   "heat": 40.5,
-   "participants": 5
-  },
   {
    "hour": "2026-10-22T00:00:00.000Z",
    "heat": 39.4,
@@ -323,13 +298,38 @@
    "hour": "2026-10-23T19:00:00.000Z",
    "heat": 15.2,
    "participants": 4
+  },
+  {
+   "hour": "2026-10-23T20:00:00.000Z",
+   "heat": 12.2,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-23T21:00:00.000Z",
+   "heat": 11.9,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-23T22:00:00.000Z",
+   "heat": 11.6,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-23T23:00:00.000Z",
+   "heat": 11.2,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-24T00:00:00.000Z",
+   "heat": 10.9,
+   "participants": 3
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "OpenAI 协调披露：智能体挖出 PHP 高危 RCE",
  "primaryUrl": "https://arstechnica.com/security/2026/10/hackers-got-a-four-day-head-start-on-epic-php2shell-vulnerability/",
- "rankDelta": -1,
+ "rankDelta": -2,
  "cover": {
   "url": "assets/covers/hot-2026-10-21-php2shell-1600.webp",
   "srcSet": "assets/covers/hot-2026-10-21-php2shell-720.webp 720w, assets/covers/hot-2026-10-21-php2shell-1200.webp 1200w, assets/covers/hot-2026-10-21-php2shell-1600.webp 1600w",

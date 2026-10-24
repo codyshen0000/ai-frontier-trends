@@ -8,16 +8,16 @@
  "latestAt": "2026-10-21T17:58:42.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": "NVIDIA 与 Hugging Face 博客介绍：用 Isaac Lab 3.0 在仿真里训练 Microduck 双足行走策略，再部署到真实机器人。 材料强调仿真并行训练、策略评估后上真机；面向开源双足平台把「仿真到真机」流程跑通，降低从训练到部署的门槛。",
+ "summary": "NVIDIA 介绍 Microduck 在 Isaac Lab 3.0 中仿真训练后迁移到真机的流程与结果。",
  "excerpt": null,
- "latest": "NVIDIA 技术博客：用 AI 智能体在仿真里教 Microduck 感知障碍并行走。",
+ "latest": "TechCrunch：黄仁勋演示 Microduck 玩具机器人，称已售约 2 万台、冲圣诞热销。",
  "latestReport": null,
  "whyHot": {
-  "participants48h": 1,
+  "participants48h": 2,
   "newParticipants6h": 1,
-  "recentReports24h": 1,
+  "recentReports24h": 2,
   "observationComplete": true,
-  "rank": null
+  "rank": 3
  },
  "developments": [
   {
@@ -68,31 +68,6 @@
   }
  ],
  "heat": [
-  {
-   "hour": "2026-10-21T19:00:00.000Z",
-   "heat": 9.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T20:00:00.000Z",
-   "heat": 9.4,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T21:00:00.000Z",
-   "heat": 9.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T22:00:00.000Z",
-   "heat": 8.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-21T23:00:00.000Z",
-   "heat": 8.6,
-   "participants": 1
-  },
   {
    "hour": "2026-10-22T00:00:00.000Z",
    "heat": 8.4,
@@ -312,10 +287,35 @@
    "hour": "2026-10-23T19:00:00.000Z",
    "heat": 8.9,
    "participants": 1
+  },
+  {
+   "hour": "2026-10-23T20:00:00.000Z",
+   "heat": 8.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T21:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T22:00:00.000Z",
+   "heat": 18.2,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T23:00:00.000Z",
+   "heat": 17.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-24T00:00:00.000Z",
+   "heat": 17.1,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
- "recommendReason": "NVIDIA Microduck×Isaac Lab 3.0：仿真到真机",
+ "recommendReason": "Microduck 经 Isaac Lab 仿真训练后部署到真机",
  "primaryUrl": "https://huggingface.co/blog/nvidia/microduck-isaac-lab-sim-to-real"
 }

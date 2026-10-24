@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 5
+  "rank": 7
  },
  "developments": [
   {
@@ -192,11 +192,36 @@
    "hour": "2026-10-23T19:00:00.000Z",
    "heat": 10.0,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-23T20:00:00.000Z",
+   "heat": 9.7,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T21:00:00.000Z",
+   "heat": 9.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T22:00:00.000Z",
+   "heat": 9.2,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-23T23:00:00.000Z",
+   "heat": 8.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-24T00:00:00.000Z",
+   "heat": 8.7,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "OpenAI 推出面向应用的 Decisions API",
  "primaryUrl": "https://openai.com/index/decisions-api",
- "rankDelta": 1
+ "rankDelta": -2
 }

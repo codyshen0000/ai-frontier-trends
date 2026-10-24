@@ -123,7 +123,7 @@
      "firstParty": false,
      "publishedAt": "2026-10-22T18:09:56.000Z",
      "available": true,
-     "otherSources": 0
+     "otherSources": 1
     },
     {
      "itemId": "sha256:3e7599c6661c19f5",
@@ -259,7 +259,7 @@
    "available": true
   },
   {
-   "itemId": "sha256:64ddfb139fec8a1c",
+   "itemId": "sha256:37719ab40890fac2",
    "title": "OpenAI：数千智能体挖掘脑细胞实验线索",
    "summary": "OpenAI：多智能体挖掘脑细胞实验线索。",
    "sourceName": "OpenAI",
@@ -455,5 +455,5 @@
  },
  "readingMinutes": 5,
  "prev": "2026-10-22",
- "next": null
+ "next": "2026-10-24"
 }

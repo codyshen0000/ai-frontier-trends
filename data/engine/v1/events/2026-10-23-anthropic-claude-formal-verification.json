@@ -94,6 +94,31 @@
    "hour": "2026-10-23T19:00:00.000Z",
    "heat": 8.1,
    "participants": 1
+  },
+  {
+   "hour": "2026-10-23T20:00:00.000Z",
+   "heat": 7.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T21:00:00.000Z",
+   "heat": 7.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T22:00:00.000Z",
+   "heat": 7.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-23T23:00:00.000Z",
+   "heat": 7.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-24T00:00:00.000Z",
+   "heat": 7.0,
+   "participants": 1
   }
  ],
  "related": [],

@@ -183,7 +183,7 @@
      "firstParty": true,
      "publishedAt": "2026-10-21T07:00:00.000Z",
      "available": true,
-     "otherSources": 5
+     "otherSources": 7
     },
     {
      "itemId": "sha256:1cfb6291fa158d05",
@@ -390,7 +390,7 @@
  },
  "metrics": {
   "totalEvents": 12,
-  "sourcesCount": 11,
+  "sourcesCount": 13,
   "firstPartyEvents": 8,
   "modelsReleased": 0
  },

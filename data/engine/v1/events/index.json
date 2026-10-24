@@ -1,11 +1,18 @@
 {
  "events": [
   {
+   "publicId": "2026-10-24-openai-securing-frontier-training",
+   "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
+   "latestAt": "2026-10-23T23:05:49.000Z",
+   "reportCount": 3,
+   "hotRank": 2
+  },
+  {
    "publicId": "2026-10-24-kimi-k31-pro",
    "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
-   "latestAt": "2026-10-23T19:00:07.000Z",
-   "reportCount": 1,
-   "hotRank": null
+   "latestAt": "2026-10-23T19:40:54.000Z",
+   "reportCount": 2,
+   "hotRank": 1
   },
   {
    "publicId": "2026-10-24-google-tb-screening",
@@ -50,25 +57,18 @@
    "hotRank": null
   },
   {
-   "publicId": "2026-10-24-openai-securing-frontier-training",
-   "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
-   "latestAt": "2026-10-23T10:00:00.000Z",
-   "reportCount": 1,
-   "hotRank": null
-  },
-  {
    "publicId": "2026-10-23-google-agent-compute-engine",
    "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
    "latestAt": "2026-10-23T02:55:33.000Z",
    "reportCount": 2,
-   "hotRank": 4
+   "hotRank": 6
   },
   {
    "publicId": "2026-10-19-minimax-m31-flash",
    "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持",
    "latestAt": "2026-10-23T00:00:00.000Z",
    "reportCount": 2,
-   "hotRank": 3
+   "hotRank": 5
   },
   {
    "publicId": "2026-10-23-openai-nask-ai-safety",
@@ -96,14 +96,14 @@
    "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
    "latestAt": "2026-10-22T19:00:00.000Z",
    "reportCount": 1,
-   "hotRank": 5
+   "hotRank": 7
   },
   {
    "publicId": "2026-10-23-microsoft-mai-dxo",
    "title": "微软：发布 MAI-DxO 诊断编排器，复杂病例准确率称超医生",
    "latestAt": "2026-10-22T18:43:53.000Z",
    "reportCount": 1,
-   "hotRank": 6
+   "hotRank": 8
   },
   {
    "publicId": "2026-10-23-allenai-olmoearth-v13",
@@ -124,14 +124,14 @@
    "title": "Uber 全员上线 ChatGPT Work，覆盖约 3 万名员工",
    "latestAt": "2026-10-22T16:00:00.000Z",
    "reportCount": 2,
-   "hotRank": 7
+   "hotRank": null
   },
   {
    "publicId": "2026-10-21-php2shell-wiz-rce",
    "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
    "latestAt": "2026-10-22T15:25:02.000Z",
    "reportCount": 3,
-   "hotRank": 2
+   "hotRank": 4
   },
   {
    "publicId": "2026-10-22-wiz-artex-storm0940",
@@ -145,7 +145,7 @@
    "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
    "latestAt": "2026-10-22T08:35:22.000Z",
    "reportCount": 3,
-   "hotRank": 1
+   "hotRank": 9
   },
   {
    "publicId": "2026-10-22-openai-fde-means",
@@ -166,14 +166,14 @@
    "title": "报道：Recursive 发布 Flint；vLLM 宣布 Day-0 支持",
    "latestAt": "2026-10-21T20:27:41.000Z",
    "reportCount": 2,
-   "hotRank": 8
+   "hotRank": null
   },
   {
    "publicId": "2026-10-22-nvidia-microduck-isaac-lab",
    "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
    "latestAt": "2026-10-21T17:58:42.000Z",
    "reportCount": 1,
-   "hotRank": null
+   "hotRank": 3
   },
   {
    "publicId": "2026-10-22-dharma-vocabx-slm",

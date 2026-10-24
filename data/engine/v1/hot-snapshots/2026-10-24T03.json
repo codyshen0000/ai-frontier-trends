@@ -1,5 +1,5 @@
 {
- "computedAt": "2026-10-23T19:50:00.000Z",
+ "computedAt": "2026-10-23T19:51:00.000Z",
  "entries": [
   {
    "rank": 1,
@@ -46,7 +46,7 @@
   {
    "rank": 8,
    "publicId": "2026-10-22-recursive-flint-coding-model",
-   "heat": 6.9,
+   "heat": 6.8,
    "participantCount": 2
   }
  ]

@@ -1,5 +1,11 @@
 [
  {
+  "key": "2026-10-24",
+  "issueNumber": 6,
+  "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
+  "count": 12
+ },
+ {
   "key": "2026-10-23",
   "issueNumber": 5,
   "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
@@ -21,12 +27,12 @@
   "key": "2026-10-20",
   "issueNumber": 2,
   "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
-  "count": 5
+  "count": 6
  },
  {
   "key": "2026-10-19",
   "issueNumber": 1,
   "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
-  "count": 4
+  "count": 5
  }
 ]

@@ -12,7 +12,7 @@
     "id": "sha256:261b6564023ad66c",
     "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
     "summary": "Decoder 报道 Kimi K3.1 Pro；已核实 Artificial Analysis 评测帖并 hop。",
-    "reason": "Kimi K3.1 Pro 智能指数 55，暂列第四；拟开源权重",
+    "reason": "Kimi K3.1 Pro 发布：智能指数 55，暂列开源前列",
     "source": {
      "name": "The Decoder"
     },
@@ -26,7 +26,14 @@
     "storyPublicId": "2026-10-24-kimi-k31-pro",
     "originalUrl": "https://the-decoder.com/chinese-ai-model-kimi-k3-1-pro-is-closing-in-on-anthropics-claude-opus-5-5/"
    },
-   "group": null
+   "group": {
+    "factId": "fact-2026-10-24-kimi-k31-pro",
+    "additionalSourceCount": 2,
+    "reportCount": 3,
+    "memberIds": [
+     "sha256:261b6564023ad66c"
+    ]
+   }
   },
   {
    "key": "sha256:30a34d758ba63be2",
@@ -173,7 +180,7 @@
     "id": "sha256:f8c156dba7886826",
     "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
     "summary": null,
-    "reason": "OpenAI：前沿训练改离线遏制并用模型红队加固",
+    "reason": "OpenAI 默认离线训练并大规模红队加固前沿环境",
     "source": {
      "name": "OpenAI News"
     },
@@ -187,7 +194,14 @@
     "storyPublicId": "2026-10-24-openai-securing-frontier-training",
     "originalUrl": "https://openai.com/index/securing-our-frontier-model-training-environment"
    },
-   "group": null
+   "group": {
+    "factId": "fact-2026-10-24-openai-securing-frontier-training",
+    "additionalSourceCount": 2,
+    "reportCount": 3,
+    "memberIds": [
+     "sha256:f8c156dba7886826"
+    ]
+   }
   },
   {
    "key": "sha256:5d20b75fc1534a89",
@@ -506,14 +520,14 @@
  "hot": [
   {
    "rank": 1,
-   "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
-   "heat": 13.0,
-   "trend": "down",
-   "storyPublicId": "2026-10-22-anthropic-claude-duet",
-   "itemId": "sha256:258d5ff776fa8f13",
+   "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
+   "heat": 26.7,
+   "trend": "new",
+   "storyPublicId": "2026-10-24-kimi-k31-pro",
+   "itemId": "sha256:261b6564023ad66c",
    "participants": [
     {
-     "name": "TechCrunch · AI",
+     "name": "Simon Willison",
      "kind": "editorial"
     },
     {
@@ -521,20 +535,58 @@
      "kind": "editorial"
     },
     {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    },
-    {
      "name": "IT之家（全站，需关键词过滤）",
      "kind": "signal"
     }
    ],
-   "participantCount": 4
+   "participantCount": 3
   },
   {
    "rank": 2,
+   "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
+   "heat": 25.1,
+   "trend": "up",
+   "storyPublicId": "2026-10-24-openai-securing-frontier-training",
+   "itemId": "sha256:f8c156dba7886826",
+   "participants": [
+    {
+     "name": "OpenAI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 3
+  },
+  {
+   "rank": 3,
+   "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
+   "heat": 16.8,
+   "trend": "up",
+   "storyPublicId": "2026-10-22-nvidia-microduck-isaac-lab",
+   "itemId": "sha256:7decc1c5c0496d6c",
+   "participants": [
+    {
+     "name": "NVIDIA Technical Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2
+  },
+  {
+   "rank": 4,
    "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
-   "heat": 12.3,
+   "heat": 10.7,
    "trend": "down",
    "storyPublicId": "2026-10-21-php2shell-wiz-rce",
    "itemId": "sha256:de9db6f384cbc788",
@@ -555,9 +607,9 @@
    "participantCount": 3
   },
   {
-   "rank": 3,
+   "rank": 5,
    "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持",
-   "heat": 11.5,
+   "heat": 10.0,
    "trend": "down",
    "storyPublicId": "2026-10-19-minimax-m31-flash",
    "itemId": "sha256:50cb4eba8a3e4759",
@@ -569,44 +621,6 @@
     {
      "name": "IT之家（全站，需关键词过滤）",
      "kind": "signal"
-    }
-   ],
-   "participantCount": 2
-  },
-  {
-   "rank": 4,
-   "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
-   "heat": 10.9,
-   "trend": "down",
-   "storyPublicId": "2026-10-23-google-agent-compute-engine",
-   "itemId": "sha256:7ea705cfe9f05665",
-   "participants": [
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
-    }
-   ],
-   "participantCount": 2
-  },
-  {
-   "rank": 5,
-   "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
-   "heat": 9.8,
-   "trend": "down",
-   "storyPublicId": "2026-10-23-openai-decisions-api",
-   "itemId": "sha256:891b7e0bbf66f86d",
-   "participants": [
-    {
-     "name": "OpenAI News",
-     "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
     }
    ],
    "participantCount": 2

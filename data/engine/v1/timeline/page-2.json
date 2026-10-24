@@ -65,7 +65,7 @@
     "id": "sha256:7decc1c5c0496d6c",
     "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
     "summary": "Microduck×Isaac Lab 3.0 仿真到真机。",
-    "reason": "NVIDIA Microduck×Isaac Lab 3.0：仿真到真机",
+    "reason": "Microduck 经 Isaac Lab 仿真训练后部署到真机",
     "source": {
      "name": "Hugging Face Blog"
     },
@@ -81,8 +81,8 @@
    },
    "group": {
     "factId": "fact-2026-10-22-nvidia-microduck-isaac-lab",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
+    "additionalSourceCount": 2,
+    "reportCount": 3,
     "memberIds": [
      "sha256:7decc1c5c0496d6c"
     ]

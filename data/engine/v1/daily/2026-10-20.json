@@ -36,6 +36,18 @@
    "otherSources": 0
   },
   {
+   "itemId": "sha256:50cb4eba8a3e4759",
+   "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
+   "summary": "MiniMax 在 Hugging Face 放出 MiniMax-M3.1-Flash 开源权重（约 428B 总参、23B 激活），并推进首日推理接入。 vLLM 同日宣布在 NVIDIA Blackwell/Rubin 与 AMD MI350 系列提供 Day-0 支持，含 NVFP4 MSA/MegaMoE、DSpark 推测解码与 Day-0 RL（veRL）。",
+   "sourceName": "vLLM Blog",
+   "sourceUrl": "https://the-decoder.com/minimax-m3-1-flash-shows-chinas-ai-price-race-has-no-floor-in-sight/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-19T18:22:30.000Z",
+   "available": true,
+   "otherSources": 3
+  },
+  {
    "itemId": "sha256:5c52b7d34becd1cc",
    "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
    "summary": "Hugging Face 博客介绍 TorchNeuron，称在 AWS Trainium 上运行 HF 模型比以往更容易。",
@@ -76,6 +88,18 @@
      "publishedAt": "2026-10-19T15:37:09.000Z",
      "available": true,
      "otherSources": 0
+    },
+    {
+     "itemId": "sha256:50cb4eba8a3e4759",
+     "title": "MiniMax 上线 M3.1 Flash：称速度约提升 3 倍、成本降约 70%",
+     "summary": "MiniMax 在 Hugging Face 放出 MiniMax-M3.1-Flash 开源权重（约 428B 总参、23B 激活），并推进首日推理接入。 vLLM 同日宣布在 NVIDIA Blackwell/Rubin 与 AMD MI350 系列提供 Day-0 支持，含 NVFP4 MSA/MegaMoE、DSpark 推测解码与 Day-0 RL（veRL）。",
+     "sourceName": "vLLM Blog",
+     "sourceUrl": "https://the-decoder.com/minimax-m3-1-flash-shows-chinas-ai-price-race-has-no-floor-in-sight/",
+     "sourceIconUrl": null,
+     "firstParty": false,
+     "publishedAt": "2026-10-19T18:22:30.000Z",
+     "available": true,
+     "otherSources": 3
     },
     {
      "itemId": "sha256:931ff0f85ef4bf70",
@@ -125,13 +149,13 @@
  "flashes": [],
  "cover": null,
  "metrics": {
-  "totalEvents": 5,
-  "sourcesCount": 5,
+  "totalEvents": 6,
+  "sourcesCount": 7,
   "firstPartyEvents": 2,
-  "modelsReleased": 3,
-  "mainCardNote": "今日仅 5 条达收录标准"
+  "modelsReleased": 4,
+  "mainCardNote": "今日仅 6 条达收录标准"
  },
- "readingMinutes": 2,
+ "readingMinutes": 3,
  "prev": "2026-10-19",
  "next": "2026-10-21"
 }

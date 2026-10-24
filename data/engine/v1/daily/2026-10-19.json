@@ -66,6 +66,18 @@
      "otherSources": 1
     },
     {
+     "itemId": "sha256:50cb4eba8a3e4759",
+     "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持",
+     "summary": "MiniMax 在 Hugging Face 放出 MiniMax-M3.1-Flash 开源权重（约 428B 总参、23B 激活），并推进首日推理接入。 vLLM 同日宣布在 NVIDIA Blackwell/Rubin 与 AMD MI350 系列提供 Day-0 支持，含 NVFP4 MSA/MegaMoE、DSpark 推测解码与 Day-0 RL（veRL）。",
+     "sourceName": "vLLM Blog",
+     "sourceUrl": "https://vllm.ai/blog/2026-10-23-minimax-m31-flash",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-23T00:00:00.000Z",
+     "available": true,
+     "otherSources": 3
+    },
+    {
      "itemId": "sha256:bfa70917f3b198d1",
      "title": "英伟达发布面向企业与 PC 的开源智能体模型",
      "summary": "英伟达推出面向企业常驻智能体与端侧本地运行的开源权重模型：Nemotron 3.5 Super VL（约 1200 亿参数）服务企业代理任务，Bolt 系列则面向搭载 RTX/DGX Spark 的 AI PC 与工作站。 TechCrunch 称 Super VL 与 Bolt 74B-A9B 现已可用，更小的 Bolt E4B 计划本月晚些时候推出；官方强调可在自有基础设施上后训练与部署。",
@@ -119,11 +131,11 @@
  "flashes": [],
  "cover": null,
  "metrics": {
-  "totalEvents": 4,
-  "sourcesCount": 4,
-  "firstPartyEvents": 0,
-  "modelsReleased": 2,
-  "mainCardNote": "今日仅 4 条达收录标准"
+  "totalEvents": 5,
+  "sourcesCount": 6,
+  "firstPartyEvents": 1,
+  "modelsReleased": 3,
+  "mainCardNote": "今日仅 5 条达收录标准"
  },
  "readingMinutes": 2,
  "prev": null,
