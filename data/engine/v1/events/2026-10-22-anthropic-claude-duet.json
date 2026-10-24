@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-22-anthropic-claude-duet",
  "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
- "status": "active",
+ "status": "watching",
  "reportCount": 3,
  "sourceCount": 3,
  "firstReportAt": "2026-10-21T19:53:20.000Z",
@@ -13,11 +13,11 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 2,
+  "participants48h": 1,
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 9
+  "rank": null
  },
  "developments": [
   {
@@ -79,26 +79,6 @@
   }
  ],
  "heat": [
-  {
-   "hour": "2026-10-22T07:00:00.000Z",
-   "heat": 15.1,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-22T08:00:00.000Z",
-   "heat": 14.7,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-22T09:00:00.000Z",
-   "heat": 24.2,
-   "participants": 3
-  },
-  {
-   "hour": "2026-10-22T10:00:00.000Z",
-   "heat": 23.5,
-   "participants": 3
-  },
   {
    "hour": "2026-10-22T11:00:00.000Z",
    "heat": 22.8,
@@ -323,11 +303,30 @@
    "hour": "2026-10-24T07:00:00.000Z",
    "heat": 5.7,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-24T08:00:00.000Z",
+   "heat": 5.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-24T09:00:00.000Z",
+   "heat": 2.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-24T10:00:00.000Z",
+   "heat": 2.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-24T11:00:00.000Z",
+   "heat": 2.7,
+   "participants": 1
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "报道：Anthropic 推 Claude Duet 智能体迎战 Muse",
- "primaryUrl": "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent",
- "rankDelta": 0
+ "primaryUrl": "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent"
 }

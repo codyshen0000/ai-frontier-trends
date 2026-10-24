@@ -1,6 +1,57 @@
 {
- "generatedAt": "2026-10-24T07:25:00.000Z",
+ "generatedAt": "2026-10-24T11:50:00.000Z",
  "docs": [
+  {
+   "id": "sha256:1dc7e2df39a11f00",
+   "kind": "item",
+   "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
+   "summary": "The Decoder 跟进并入 OpenAI 加固训练环境事件；不改官方代表稿。",
+   "publishedAt": "2026-10-24T11:12:36.000Z",
+   "sourceName": "The Decoder",
+   "category": "industry",
+   "selected": false,
+   "eventPublicId": "2026-10-24-openai-securing-frontier-training",
+   "originalUrl": "https://the-decoder.com/openais-isolated-ai-agents-found-ways-to-talk-to-each-other-through-cpu-cache/"
+  },
+  {
+   "id": "2026-10-24-openai-securing-frontier-training",
+   "kind": "event",
+   "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
+   "summary": null,
+   "publishedAt": "2026-10-24T11:12:36.000Z",
+   "sourceNames": [
+    "OpenAI News",
+    "TechCrunch · AI",
+    "The Decoder",
+    "The Verge · AI"
+   ],
+   "path": "/events/2026-10-24-openai-securing-frontier-training/"
+  },
+  {
+   "id": "sha256:a74122a98f64e132",
+   "kind": "item",
+   "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
+   "summary": "Latent Space 综述并入 Kimi K3.1 Pro 既有事件；不改代表。",
+   "publishedAt": "2026-10-24T07:18:29.000Z",
+   "sourceName": "Latent Space",
+   "category": "model",
+   "selected": false,
+   "eventPublicId": "2026-10-24-kimi-k31-pro",
+   "originalUrl": "https://latent.space/p/ainews-kimi-31/"
+  },
+  {
+   "id": "2026-10-24-kimi-k31-pro",
+   "kind": "event",
+   "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
+   "summary": "Artificial Analysis：Kimi K3.1 Pro 智能指数 55（较 K3 升 11 分），暂列第四，落后 Claude Opus 5.5 等；智能体与终端基准提升明显。参数仍约 2.8T/104B 激活、百万上下文；权重尚未放出，评测方预计开源后将成为领先开源权重模型之一。",
+   "publishedAt": "2026-10-24T07:18:29.000Z",
+   "sourceNames": [
+    "Latent Space",
+    "Simon Willison",
+    "The Decoder"
+   ],
+   "path": "/events/2026-10-24-kimi-k31-pro/"
+  },
   {
    "id": "sha256:585ea363f084ac16",
    "kind": "item",
@@ -12,19 +63,6 @@
    "selected": false,
    "eventPublicId": "2026-10-24-openai-securing-frontier-training",
    "originalUrl": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/"
-  },
-  {
-   "id": "2026-10-24-openai-securing-frontier-training",
-   "kind": "event",
-   "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
-   "summary": null,
-   "publishedAt": "2026-10-23T23:05:49.000Z",
-   "sourceNames": [
-    "OpenAI News",
-    "TechCrunch · AI",
-    "The Verge · AI"
-   ],
-   "path": "/events/2026-10-24-openai-securing-frontier-training/"
   },
   {
    "id": "sha256:a6d2d5fdb7657f8a",
@@ -49,18 +87,6 @@
    "selected": false,
    "eventPublicId": "2026-10-24-kimi-k31-pro",
    "originalUrl": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/"
-  },
-  {
-   "id": "2026-10-24-kimi-k31-pro",
-   "kind": "event",
-   "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
-   "summary": null,
-   "publishedAt": "2026-10-23T19:40:54.000Z",
-   "sourceNames": [
-    "Simon Willison",
-    "The Decoder"
-   ],
-   "path": "/events/2026-10-24-kimi-k31-pro/"
   },
   {
    "id": "sha256:261b6564023ad66c",

@@ -2,10 +2,10 @@
  "publicId": "2026-10-24-openai-securing-frontier-training",
  "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
  "status": "active",
- "reportCount": 3,
- "sourceCount": 3,
+ "reportCount": 4,
+ "sourceCount": 4,
  "firstReportAt": "2026-10-23T10:00:00.000Z",
- "latestAt": "2026-10-23T23:05:49.000Z",
+ "latestAt": "2026-10-24T11:12:36.000Z",
  "digest": null,
  "digestUpdatedAt": null,
  "summary": null,
@@ -13,8 +13,8 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 3,
-  "newParticipants6h": 0,
+  "participants48h": 4,
+  "newParticipants6h": 1,
   "recentReports24h": 3,
   "observationComplete": true,
   "rank": 2
@@ -24,7 +24,7 @@
    "factId": "fact-2026-10-24-openai-securing-frontier-training",
    "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
    "firstReportAt": "2026-10-23T10:00:00.000Z",
-   "reportCount": 3,
+   "reportCount": 4,
    "representative": {
     "id": "sha256:f8c156dba7886826",
     "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
@@ -54,6 +54,18 @@
   }
  ],
  "timeline": [
+  {
+   "id": "sha256:1dc7e2df39a11f00",
+   "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
+   "summary": "The Decoder 跟进并入 OpenAI 加固训练环境事件；不改官方代表稿。",
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-24T11:12:36.000Z",
+   "selected": false,
+   "originalUrl": "https://the-decoder.com/openais-isolated-ai-agents-found-ways-to-talk-to-each-other-through-cpu-cache/"
+  },
   {
    "id": "sha256:585ea363f084ac16",
    "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
@@ -200,6 +212,26 @@
   {
    "hour": "2026-10-24T07:00:00.000Z",
    "heat": 20.9,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-24T08:00:00.000Z",
+   "heat": 20.3,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-24T09:00:00.000Z",
+   "heat": 19.8,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-24T10:00:00.000Z",
+   "heat": 19.2,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-24T11:00:00.000Z",
+   "heat": 18.7,
    "participants": 3
   }
  ],
