@@ -15,7 +15,7 @@
  "whyHot": {
   "participants48h": 2,
   "newParticipants6h": 0,
-  "recentReports24h": 1,
+  "recentReports24h": 0,
   "observationComplete": true,
   "rank": 6
  },
@@ -226,11 +226,26 @@
    "hour": "2026-10-24T01:00:00.000Z",
    "heat": 9.4,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-24T02:00:00.000Z",
+   "heat": 9.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-24T03:00:00.000Z",
+   "heat": 8.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-24T04:00:00.000Z",
+   "heat": 8.6,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "Google 云推出 Agent Compute Engine 硬件隔离 mic",
  "primaryUrl": "https://the-decoder.com/googles-agent-compute-engine-gives-every-gemini-agent-its-own-hardware-isolated-micro-virtual-machine/",
- "rankDelta": -2
+ "rankDelta": 0
 }

@@ -14,7 +14,7 @@
  "latestReport": null,
  "whyHot": {
   "participants48h": 3,
-  "newParticipants6h": 2,
+  "newParticipants6h": 1,
   "recentReports24h": 3,
   "observationComplete": true,
   "rank": 1
@@ -96,10 +96,26 @@
    "hour": "2026-10-24T01:00:00.000Z",
    "heat": 26.5,
    "participants": 3
+  },
+  {
+   "hour": "2026-10-24T02:00:00.000Z",
+   "heat": 25.7,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-24T03:00:00.000Z",
+   "heat": 25.0,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-24T04:00:00.000Z",
+   "heat": 24.3,
+   "participants": 3
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "Kimi K3.1 Pro 发布：智能指数 55，暂列开源前列",
- "primaryUrl": "https://the-decoder.com/chinese-ai-model-kimi-k3-1-pro-is-closing-in-on-anthropics-claude-opus-5-5/"
+ "primaryUrl": "https://the-decoder.com/chinese-ai-model-kimi-k3-1-pro-is-closing-in-on-anthropics-claude-opus-5-5/",
+ "rankDelta": 0
 }
