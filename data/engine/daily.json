@@ -21,7 +21,7 @@
    "firstParty": true,
    "publishedAt": "2026-10-23T10:00:00.000Z",
    "available": true,
-   "otherSources": 3
+   "otherSources": 2
   },
   {
    "itemId": "sha256:73be0ee71d2832b3",
@@ -75,7 +75,7 @@
      "firstParty": true,
      "publishedAt": "2026-10-23T10:00:00.000Z",
      "available": true,
-     "otherSources": 3
+     "otherSources": 2
     },
     {
      "itemId": "sha256:859a2ca12c0c52e9",
@@ -165,8 +165,7 @@
      "firstParty": true,
      "publishedAt": "2026-10-20T09:30:19.000Z",
      "available": true,
-     "otherSources": 3,
-     "belowThreshold": true
+     "otherSources": 3
     },
     {
      "itemId": "sha256:3e7599c6661c19f5",
@@ -190,8 +189,7 @@
      "firstParty": true,
      "publishedAt": "2026-10-22T16:00:00.000Z",
      "available": true,
-     "otherSources": 1,
-     "belowThreshold": true
+     "otherSources": 1
     }
    ]
   },
