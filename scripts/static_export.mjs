@@ -637,6 +637,28 @@ function engineSearchDocs(site) {
   return docs.filter((doc) => !FIXTURE_IDS.some((id) => doc.id.includes(id)));
 }
 
+
+/** #78: freeze calendar-day API payload stamp so KEEP/meta-only deploys do not rewrite sha.
+ * latest.json still uses build asOf. Prefer embedded data_as_of, else generatedAt. */
+function frozenDailyAsOf(issue, fallbackAsOf) {
+  if (issue?.data_as_of) return issue.data_as_of;
+  const g = issue?.generatedAt;
+  if (typeof g === "string" && g.trim()) {
+    return g;
+  }
+  return fallbackAsOf;
+}
+
+function writeDailyKeyJson(distDir, issue, asOfForKey) {
+  if (!issue?.key) return;
+  writeJson(join(distDir, "api", "v1", "daily", `${issue.key}.json`), stripScore({
+    v: 1,
+    schema_version: "1.1.0",
+    data_as_of: asOfForKey,
+    ...issue,
+  }));
+}
+
 function writeEngineOutputs(distDir, engine, site, { asOf, built }) {
   const feedItems = site.feedItems || [];
   if (feedItems.length) {
@@ -688,25 +710,15 @@ function writeEngineOutputs(distDir, engine, site, { asOf, built }) {
       data_as_of: asOf,
       ...site.daily,
     }));
-    writeJson(join(distDir, "api", "v1", "daily", `${site.daily.key}.json`), stripScore({
-      v: 1,
-      schema_version: "1.1.0",
-      data_as_of: asOf,
-      ...site.daily,
-    }));
+    // #78: tip calendar key uses frozen stamp (not build asOf)
+    writeDailyKeyJson(distDir, site.daily, frozenDailyAsOf(site.daily, asOf));
   }
-  // #77: emit every archive daily/<key>.json (loader → site.dailies), not only tip key.
-  // latest.json stays tip-only above. Do not demote floors by swapping latest.
+  // #77+#78: emit every archive daily/<key>.json with frozen stamp
   const seenDailyKeys = new Set(site.daily?.key ? [site.daily.key] : []);
   for (const d of site.dailies || []) {
     if (!d?.key || seenDailyKeys.has(d.key)) continue;
     seenDailyKeys.add(d.key);
-    writeJson(join(distDir, "api", "v1", "daily", `${d.key}.json`), stripScore({
-      v: 1,
-      schema_version: "1.1.0",
-      data_as_of: asOf,
-      ...d,
-    }));
+    writeDailyKeyJson(distDir, d, frozenDailyAsOf(d, asOf));
   }
 }
 
