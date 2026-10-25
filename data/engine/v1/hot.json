@@ -1,260 +1,260 @@
 {
- "computedAt": "2026-10-24T19:52:00.000Z",
- "windowHours": 48,
- "entries": [
-  {
-   "rank": 1,
-   "story": {
-    "publicId": "2026-10-24-kimi-k31-pro",
-    "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四"
-   },
-   "heat": 23.9,
-   "trend": "down",
-   "trendPct": -15.8,
-   "badges": [],
-   "participantCount": 4,
-   "sourceCount": 3,
-   "sourceNames": [
-    "Latent Space",
-    "Simon Willison",
-    "The Decoder"
-   ],
-   "participants": [
+  "computedAt": "2026-10-24T19:52:00.000Z",
+  "windowHours": 48,
+  "entries": [
     {
-     "name": "Latent Space",
-     "kind": "editorial"
+      "rank": 1,
+      "story": {
+        "publicId": "2026-10-24-openai-securing-frontier-training",
+        "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队"
+      },
+      "heat": 22.8,
+      "trend": "down",
+      "trendPct": -13.6,
+      "badges": [],
+      "participantCount": 4,
+      "sourceCount": 4,
+      "sourceNames": [
+        "The Decoder",
+        "TechCrunch · AI",
+        "The Verge · AI",
+        "OpenAI News"
+      ],
+      "participants": [
+        {
+          "name": "OpenAI News",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Decoder",
+          "kind": "editorial"
+        },
+        {
+          "name": "TechCrunch · AI",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Verge · AI",
+          "kind": "editorial"
+        }
+      ],
+      "spark": [
+        7.7,
+        7.5,
+        7.3,
+        16.8,
+        16.4,
+        25.6,
+        24.9,
+        24.2,
+        23.5,
+        22.8,
+        22.2,
+        21.6,
+        20.9,
+        20.3,
+        19.8,
+        19.2,
+        18.7,
+        27.9,
+        27.1,
+        26.3,
+        25.6,
+        24.9,
+        24.2,
+        23.5,
+        22.8
+      ],
+      "summary": null,
+      "latest": null,
+      "cover": null,
+      "rankDelta": 1,
+      "heatDeltaPct": 2.7
     },
     {
-     "name": "Simon Willison",
-     "kind": "editorial"
+      "rank": 2,
+      "story": {
+        "publicId": "2026-10-24-kimi-k31-pro",
+        "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四"
+      },
+      "heat": 17.2,
+      "trend": "down",
+      "trendPct": -14,
+      "badges": [],
+      "participantCount": 3,
+      "sourceCount": 3,
+      "sourceNames": [
+        "Latent Space",
+        "Simon Willison",
+        "The Decoder"
+      ],
+      "participants": [
+        {
+          "name": "Latent Space",
+          "kind": "editorial"
+        },
+        {
+          "name": "Simon Willison",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Decoder",
+          "kind": "editorial"
+        },
+        {
+          "name": "IT之家（全站，需关键词过滤）",
+          "kind": "signal"
+        }
+      ],
+      "spark": [
+        null,
+        19.6,
+        19.1,
+        18.5,
+        18,
+        17.5,
+        17,
+        16.5,
+        16,
+        15.6,
+        15.1,
+        14.7,
+        14.3,
+        23.7,
+        23,
+        22.3,
+        21.7,
+        21.1,
+        20.5,
+        19.9,
+        19.3,
+        18.8,
+        18.3,
+        17.7,
+        17.2
+      ],
+      "summary": "Artificial Analysis：Kimi K3.1 Pro 智能指数 55（较 K3 升 11 分），暂列第四，落后 Claude Opus 5.5 等；智能体与终端基准提升明显。参数仍约 2.8T/104B 激活、百万上下文；权重尚未放出，评测方预计开源后将成为领先开源权重模型之一。",
+      "latest": "腾讯 WorkBuddy 接入 Kimi-K3.1-Pro（含 Highspeed，企业旗舰/个人订阅优先开放）；Latent Space：权重承诺 11 月 4 日放出；Highspeed API 称快 2–3 倍；Code Arena WebDev 约第 8；Cyber Index 64%。",
+      "cover": null,
+      "rankDelta": -1,
+      "heatDeltaPct": -28
     },
     {
-     "name": "The Decoder",
-     "kind": "editorial"
+      "rank": 3,
+      "story": {
+        "publicId": "2026-10-19-minimax-m31-flash",
+        "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持"
+      },
+      "heat": 2.9,
+      "trend": "down",
+      "trendPct": -12.1,
+      "badges": [],
+      "participantCount": 1,
+      "sourceCount": 1,
+      "sourceNames": [
+        "vLLM Blog"
+      ],
+      "participants": [
+        {
+          "name": "vLLM Blog",
+          "kind": "editorial"
+        },
+        {
+          "name": "IT之家（全站，需关键词过滤）",
+          "kind": "signal"
+        }
+      ],
+      "spark": [
+        5.8,
+        5.6,
+        5.5,
+        5.3,
+        5.1,
+        5,
+        4.9,
+        4.7,
+        4.6,
+        4.5,
+        4.3,
+        4.2,
+        4.1,
+        4,
+        3.9,
+        3.7,
+        3.6,
+        3.5,
+        3.4,
+        3.3,
+        3.2,
+        3.1,
+        3.1,
+        3,
+        2.9
+      ],
+      "summary": null,
+      "latest": null,
+      "cover": null,
+      "rankDelta": 1,
+      "heatDeltaPct": -49.1
     },
     {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
+      "rank": 4,
+      "story": {
+        "publicId": "2026-10-22-nvidia-microduck-isaac-lab",
+        "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机"
+      },
+      "heat": 0,
+      "trend": "new",
+      "trendPct": null,
+      "badges": [],
+      "participantCount": 0,
+      "sourceCount": 2,
+      "sourceNames": [
+        "TechCrunch · AI",
+        "NVIDIA Technical Blog"
+      ],
+      "participants": [
+        {
+          "name": "NVIDIA Technical Blog",
+          "kind": "editorial"
+        },
+        {
+          "name": "TechCrunch · AI",
+          "kind": "editorial"
+        }
+      ],
+      "spark": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "summary": "NVIDIA 介绍 Microduck 在 Isaac Lab 3.0 中仿真训练后迁移到真机的流程与结果。",
+      "latest": "TechCrunch：黄仁勋演示 Microduck 玩具机器人，称已售约 2 万台、冲圣诞热销。",
+      "cover": null,
+      "rankDelta": -1,
+      "heatDeltaPct": -100
     }
-   ],
-   "spark": [
-    null,
-    19.6,
-    19.1,
-    18.5,
-    18.0,
-    27.2,
-    26.5,
-    25.7,
-    25.0,
-    24.3,
-    23.6,
-    22.9,
-    22.3,
-    33.7,
-    32.7,
-    31.8,
-    30.9,
-    30.0,
-    29.1,
-    28.3,
-    27.5,
-    26.7,
-    26.0,
-    25.2,
-    24.5
-   ],
-   "summary": "Artificial Analysis：Kimi K3.1 Pro 智能指数 55（较 K3 升 11 分），暂列第四，落后 Claude Opus 5.5 等；智能体与终端基准提升明显。参数仍约 2.8T/104B 激活、百万上下文；权重尚未放出，评测方预计开源后将成为领先开源权重模型之一。",
-   "latest": "腾讯 WorkBuddy 接入 Kimi-K3.1-Pro（含 Highspeed，企业旗舰/个人订阅优先开放）；Latent Space：权重承诺 11 月 4 日放出；Highspeed API 称快 2–3 倍；Code Arena WebDev 约第 8；Cyber Index 64%。",
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -9.1
-  },
-  {
-   "rank": 2,
-   "story": {
-    "publicId": "2026-10-24-openai-securing-frontier-training",
-    "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队"
-   },
-   "heat": 22.2,
-   "trend": "down",
-   "trendPct": -15.9,
-   "badges": [],
-   "participantCount": 4,
-   "sourceCount": 4,
-   "sourceNames": [
-    "The Decoder",
-    "TechCrunch · AI",
-    "The Verge · AI",
-    "OpenAI News"
-   ],
-   "participants": [
-    {
-     "name": "OpenAI News",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    7.7,
-    7.5,
-    7.3,
-    16.8,
-    16.4,
-    25.6,
-    24.9,
-    24.2,
-    23.5,
-    22.8,
-    22.2,
-    21.6,
-    20.9,
-    20.3,
-    19.8,
-    19.2,
-    18.7,
-    27.9,
-    27.1,
-    26.3,
-    25.6,
-    24.9,
-    24.2,
-    23.5,
-    22.8
-   ],
-   "summary": null,
-   "latest": null,
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -9.0
-  },
-  {
-   "rank": 3,
-   "story": {
-    "publicId": "2026-10-22-nvidia-microduck-isaac-lab",
-    "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机"
-   },
-   "heat": 9.7,
-   "trend": "down",
-   "trendPct": -15.7,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "TechCrunch · AI",
-    "NVIDIA Technical Blog"
-   ],
-   "participants": [
-    {
-     "name": "NVIDIA Technical Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    8.9,
-    8.6,
-    8.4,
-    18.2,
-    17.6,
-    17.1,
-    16.7,
-    16.2,
-    15.7,
-    15.3,
-    14.8,
-    14.4,
-    14.0,
-    13.6,
-    13.2,
-    12.8,
-    12.5,
-    12.1,
-    11.8,
-    11.4,
-    11.1,
-    10.8,
-    10.5,
-    10.2,
-    9.9
-   ],
-   "summary": "NVIDIA 介绍 Microduck 在 Isaac Lab 3.0 中仿真训练后迁移到真机的流程与结果。",
-   "latest": "TechCrunch：黄仁勋演示 Microduck 玩具机器人，称已售约 2 万台、冲圣诞热销。",
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -8.5
-  },
-  {
-   "rank": 4,
-   "story": {
-    "publicId": "2026-10-19-minimax-m31-flash",
-    "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持"
-   },
-   "heat": 5.7,
-   "trend": "down",
-   "trendPct": -16.2,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 1,
-   "sourceNames": [
-    "vLLM Blog"
-   ],
-   "participants": [
-    {
-     "name": "vLLM Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
-    }
-   ],
-   "spark": [
-    11.7,
-    11.4,
-    11.1,
-    10.8,
-    10.5,
-    10.2,
-    9.9,
-    9.6,
-    9.3,
-    9.1,
-    8.8,
-    8.5,
-    8.3,
-    8.1,
-    7.8,
-    7.6,
-    7.4,
-    7.2,
-    7.0,
-    6.8,
-    6.6,
-    6.4,
-    6.2,
-    6.0,
-    5.9
-   ],
-   "summary": null,
-   "latest": null,
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -9.5
-  }
- ]
+  ]
 }
