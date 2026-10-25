@@ -9,12 +9,18 @@
   },
   {
    "rank": 2,
+   "publicId": "2026-10-24-block-dessa-speech",
+   "heat": 15.4,
+   "participantCount": 3
+  },
+  {
+   "rank": 3,
    "publicId": "2026-10-24-openai-securing-frontier-training",
    "heat": 15.3,
    "participantCount": 4
   },
   {
-   "rank": 3,
+   "rank": 4,
    "publicId": "2026-10-22-nvidia-microduck-isaac-lab",
    "heat": 6.7,
    "participantCount": 2

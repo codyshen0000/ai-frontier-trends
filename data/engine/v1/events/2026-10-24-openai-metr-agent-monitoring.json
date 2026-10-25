@@ -2,8 +2,8 @@
  "publicId": "2026-10-24-openai-metr-agent-monitoring",
  "title": "METR/Redwood 驻场审计：OpenAI 内部智能体监控存在覆盖缺口",
  "status": "active",
- "reportCount": 2,
- "sourceCount": 2,
+ "reportCount": 3,
+ "sourceCount": 3,
  "firstReportAt": "2026-10-23T18:00:32.000Z",
  "latestAt": "2026-10-23T18:00:32.000Z",
  "digest": null,
@@ -13,18 +13,18 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 2,
+  "participants48h": 3,
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 7
+  "rank": 6
  },
  "developments": [
   {
    "factId": "fact-2026-10-24-openai-metr-agent-monitoring",
    "title": "METR/Redwood 驻场审计：OpenAI 内部智能体监控存在覆盖缺口",
    "firstReportAt": "2026-10-23T18:00:32.000Z",
-   "reportCount": 2,
+   "reportCount": 3,
    "representative": {
     "id": "sha256:604f1f9c59689482",
     "title": "METR/Redwood 驻场审计：OpenAI 内部智能体监控存在覆盖缺口",
@@ -64,218 +64,240 @@
    "publishedAt": "2026-10-23T18:00:32.000Z",
    "selected": false,
    "originalUrl": "https://metr.org/blog/2026-10-22-red-teaming-openai-agent-monitoring/"
+  },
+  {
+   "id": "sha256:ad858727fe102239",
+   "title": "CNBC：第三方评估发现 OpenAI 监控系统漏洞",
+   "summary": null,
+   "source": {
+    "name": "CNBC",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-23T18:00:32.000Z",
+   "selected": false,
+   "originalUrl": "https://www.cnbc.com/2026/10/22/metr-redwood-research-open-ai-test.html"
   }
  ],
  "heat": [
   {
    "hour": "2026-10-23T19:00:00.000Z",
-   "heat": 19.4,
-   "participants": 2
+   "heat": 29.2,
+   "participants": 3
   },
   {
    "hour": "2026-10-23T20:00:00.000Z",
-   "heat": 18.9,
-   "participants": 2
+   "heat": 28.3,
+   "participants": 3
   },
   {
    "hour": "2026-10-23T21:00:00.000Z",
-   "heat": 18.3,
-   "participants": 2
+   "heat": 27.5,
+   "participants": 3
   },
   {
    "hour": "2026-10-23T22:00:00.000Z",
-   "heat": 17.8,
-   "participants": 2
+   "heat": 26.7,
+   "participants": 3
   },
   {
    "hour": "2026-10-23T23:00:00.000Z",
-   "heat": 17.3,
-   "participants": 2
+   "heat": 26.0,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T00:00:00.000Z",
-   "heat": 16.8,
-   "participants": 2
+   "heat": 25.2,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T01:00:00.000Z",
-   "heat": 16.3,
-   "participants": 2
+   "heat": 24.5,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T02:00:00.000Z",
-   "heat": 15.9,
-   "participants": 2
+   "heat": 23.8,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T03:00:00.000Z",
-   "heat": 15.4,
-   "participants": 2
+   "heat": 23.1,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T04:00:00.000Z",
-   "heat": 15.0,
-   "participants": 2
+   "heat": 22.5,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T05:00:00.000Z",
-   "heat": 14.6,
-   "participants": 2
+   "heat": 21.8,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T06:00:00.000Z",
-   "heat": 14.1,
-   "participants": 2
+   "heat": 21.2,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T07:00:00.000Z",
-   "heat": 13.7,
-   "participants": 2
+   "heat": 20.6,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T08:00:00.000Z",
-   "heat": 13.4,
-   "participants": 2
+   "heat": 20.0,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T09:00:00.000Z",
-   "heat": 13.0,
-   "participants": 2
+   "heat": 19.5,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T10:00:00.000Z",
-   "heat": 12.6,
-   "participants": 2
+   "heat": 18.9,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T11:00:00.000Z",
-   "heat": 12.2,
-   "participants": 2
+   "heat": 18.4,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T12:00:00.000Z",
-   "heat": 11.9,
-   "participants": 2
+   "heat": 17.8,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T13:00:00.000Z",
-   "heat": 11.6,
-   "participants": 2
+   "heat": 17.3,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T14:00:00.000Z",
-   "heat": 11.2,
-   "participants": 2
+   "heat": 16.8,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T15:00:00.000Z",
-   "heat": 10.9,
-   "participants": 2
+   "heat": 16.4,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T16:00:00.000Z",
-   "heat": 10.6,
-   "participants": 2
+   "heat": 15.9,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T17:00:00.000Z",
-   "heat": 10.3,
-   "participants": 2
+   "heat": 15.4,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T18:00:00.000Z",
-   "heat": 10.0,
-   "participants": 2
+   "heat": 15.0,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T19:00:00.000Z",
-   "heat": 9.7,
-   "participants": 2
+   "heat": 14.6,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T20:00:00.000Z",
-   "heat": 9.4,
-   "participants": 2
+   "heat": 14.2,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T21:00:00.000Z",
-   "heat": 9.2,
-   "participants": 2
+   "heat": 13.8,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T22:00:00.000Z",
-   "heat": 8.9,
-   "participants": 2
+   "heat": 13.4,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T23:00:00.000Z",
-   "heat": 8.7,
-   "participants": 2
+   "heat": 13.0,
+   "participants": 3
   },
   {
    "hour": "2026-10-25T00:00:00.000Z",
-   "heat": 8.4,
-   "participants": 2
+   "heat": 12.6,
+   "participants": 3
   },
   {
    "hour": "2026-10-25T01:00:00.000Z",
-   "heat": 8.2,
-   "participants": 2
+   "heat": 12.3,
+   "participants": 3
   },
   {
    "hour": "2026-10-25T02:00:00.000Z",
-   "heat": 7.9,
-   "participants": 2
+   "heat": 11.9,
+   "participants": 3
   },
   {
    "hour": "2026-10-25T03:00:00.000Z",
-   "heat": 7.7,
-   "participants": 2
+   "heat": 11.6,
+   "participants": 3
   },
   {
    "hour": "2026-10-25T04:00:00.000Z",
-   "heat": 7.5,
-   "participants": 2
+   "heat": 11.2,
+   "participants": 3
   },
   {
    "hour": "2026-10-25T05:00:00.000Z",
-   "heat": 7.3,
-   "participants": 2
+   "heat": 10.9,
+   "participants": 3
   },
   {
    "hour": "2026-10-25T06:00:00.000Z",
-   "heat": 7.1,
-   "participants": 2
+   "heat": 10.6,
+   "participants": 3
   },
   {
    "hour": "2026-10-25T07:00:00.000Z",
-   "heat": 6.9,
-   "participants": 2
+   "heat": 10.3,
+   "participants": 3
   },
   {
    "hour": "2026-10-25T08:00:00.000Z",
-   "heat": 6.7,
-   "participants": 2
+   "heat": 10.0,
+   "participants": 3
   },
   {
    "hour": "2026-10-25T09:00:00.000Z",
-   "heat": 6.5,
-   "participants": 2
+   "heat": 9.7,
+   "participants": 3
   },
   {
    "hour": "2026-10-25T10:00:00.000Z",
-   "heat": 6.3,
-   "participants": 2
+   "heat": 9.5,
+   "participants": 3
   },
   {
    "hour": "2026-10-25T11:00:00.000Z",
-   "heat": 6.1,
-   "participants": 2
+   "heat": 9.2,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-25T12:00:00.000Z",
+   "heat": 8.9,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-25T13:00:00.000Z",
+   "heat": 8.7,
+   "participants": 3
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "METR/Redwood 驻场审计：OpenAI 智能体监控有缺口",
  "primaryUrl": "https://the-decoder.com/three-week-on-site-audit-at-openai-reveals-major-gaps-in-ai-safety-monitoring/",
- "rankDelta": 1
+ "rankDelta": 2
 }

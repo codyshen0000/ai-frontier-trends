@@ -1,11 +1,11 @@
 {
  "publicId": "2026-10-22-nvidia-microduck-isaac-lab",
  "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
- "status": "watching",
- "reportCount": 1,
- "sourceCount": 1,
+ "status": "active",
+ "reportCount": 2,
+ "sourceCount": 2,
  "firstReportAt": "2026-10-21T17:58:42.000Z",
- "latestAt": "2026-10-21T17:58:42.000Z",
+ "latestAt": "2026-10-23T14:58:32.000Z",
  "digest": null,
  "digestUpdatedAt": null,
  "summary": "NVIDIA 介绍 Microduck 在 Isaac Lab 3.0 中仿真训练后迁移到真机的流程与结果。",
@@ -13,18 +13,18 @@
  "latest": "TechCrunch：黄仁勋演示 Microduck 玩具机器人，称已售约 2 万台、冲圣诞热销。",
  "latestReport": null,
  "whyHot": {
-  "participants48h": 2,
+  "participants48h": 3,
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 6
+  "rank": 7
  },
  "developments": [
   {
    "factId": "fact-2026-10-22-nvidia-microduck-isaac-lab",
    "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
    "firstReportAt": "2026-10-21T17:58:42.000Z",
-   "reportCount": 1,
+   "reportCount": 2,
    "representative": {
     "id": "sha256:7decc1c5c0496d6c",
     "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
@@ -55,6 +55,18 @@
  ],
  "timeline": [
   {
+   "id": "sha256:a3c6d80b92cb3cdd",
+   "title": "Interesting Engineering：NVIDIA 活动上 Microduck 机器人抢镜",
+   "summary": null,
+   "source": {
+    "name": "Interesting Engineering",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-23T14:58:32.000Z",
+   "selected": false,
+   "originalUrl": "https://interestingengineering.com/ai-robotics/microduck-robots-in-nvidia-demo"
+  },
+  {
    "id": "sha256:7decc1c5c0496d6c",
    "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
    "summary": "Microduck×Isaac Lab 3.0 仿真到真机。",
@@ -69,16 +81,6 @@
  ],
  "heat": [
   {
-   "hour": "2026-10-23T11:00:00.000Z",
-   "heat": 3.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-23T12:00:00.000Z",
-   "heat": 3.0,
-   "participants": 1
-  },
-  {
    "hour": "2026-10-23T13:00:00.000Z",
    "heat": 2.9,
    "participants": 1
@@ -90,233 +92,243 @@
   },
   {
    "hour": "2026-10-23T15:00:00.000Z",
-   "heat": 12.7,
-   "participants": 2
+   "heat": 22.7,
+   "participants": 3
   },
   {
    "hour": "2026-10-23T16:00:00.000Z",
-   "heat": 12.4,
-   "participants": 2
+   "heat": 22.1,
+   "participants": 3
   },
   {
    "hour": "2026-10-23T17:00:00.000Z",
-   "heat": 12.0,
-   "participants": 2
+   "heat": 21.4,
+   "participants": 3
   },
   {
    "hour": "2026-10-23T18:00:00.000Z",
-   "heat": 9.2,
-   "participants": 1
+   "heat": 18.3,
+   "participants": 2
   },
   {
    "hour": "2026-10-23T19:00:00.000Z",
-   "heat": 8.9,
-   "participants": 1
+   "heat": 17.8,
+   "participants": 2
   },
   {
    "hour": "2026-10-23T20:00:00.000Z",
-   "heat": 8.6,
-   "participants": 1
+   "heat": 17.3,
+   "participants": 2
   },
   {
    "hour": "2026-10-23T21:00:00.000Z",
-   "heat": 8.4,
-   "participants": 1
+   "heat": 16.8,
+   "participants": 2
   },
   {
    "hour": "2026-10-23T22:00:00.000Z",
-   "heat": 18.2,
-   "participants": 2
+   "heat": 26.3,
+   "participants": 3
   },
   {
    "hour": "2026-10-23T23:00:00.000Z",
-   "heat": 17.6,
-   "participants": 2
+   "heat": 25.6,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T00:00:00.000Z",
-   "heat": 17.1,
-   "participants": 2
+   "heat": 24.8,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T01:00:00.000Z",
-   "heat": 16.7,
-   "participants": 2
+   "heat": 24.1,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T02:00:00.000Z",
-   "heat": 16.2,
-   "participants": 2
+   "heat": 23.5,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T03:00:00.000Z",
-   "heat": 15.7,
-   "participants": 2
+   "heat": 22.8,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T04:00:00.000Z",
-   "heat": 15.3,
-   "participants": 2
+   "heat": 22.1,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T05:00:00.000Z",
-   "heat": 14.8,
-   "participants": 2
+   "heat": 21.5,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T06:00:00.000Z",
-   "heat": 14.4,
-   "participants": 2
+   "heat": 20.9,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T07:00:00.000Z",
-   "heat": 14.0,
-   "participants": 2
+   "heat": 20.3,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T08:00:00.000Z",
-   "heat": 13.6,
-   "participants": 2
+   "heat": 19.7,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T09:00:00.000Z",
-   "heat": 13.2,
-   "participants": 2
+   "heat": 19.2,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T10:00:00.000Z",
-   "heat": 12.8,
-   "participants": 2
+   "heat": 18.6,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T11:00:00.000Z",
-   "heat": 12.5,
-   "participants": 2
+   "heat": 18.1,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T12:00:00.000Z",
-   "heat": 12.1,
-   "participants": 2
+   "heat": 17.6,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T13:00:00.000Z",
-   "heat": 11.8,
-   "participants": 2
+   "heat": 17.1,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T14:00:00.000Z",
-   "heat": 11.4,
-   "participants": 2
+   "heat": 16.6,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T15:00:00.000Z",
-   "heat": 11.1,
-   "participants": 2
+   "heat": 16.1,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T16:00:00.000Z",
-   "heat": 10.8,
-   "participants": 2
+   "heat": 15.7,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T17:00:00.000Z",
-   "heat": 10.5,
-   "participants": 2
+   "heat": 15.2,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T18:00:00.000Z",
-   "heat": 10.2,
-   "participants": 2
+   "heat": 14.8,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T19:00:00.000Z",
-   "heat": 9.9,
-   "participants": 2
+   "heat": 14.4,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T20:00:00.000Z",
-   "heat": 9.6,
-   "participants": 2
+   "heat": 13.9,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T21:00:00.000Z",
-   "heat": 9.3,
-   "participants": 2
+   "heat": 13.5,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T22:00:00.000Z",
-   "heat": 9.1,
-   "participants": 2
+   "heat": 13.2,
+   "participants": 3
   },
   {
    "hour": "2026-10-24T23:00:00.000Z",
-   "heat": 8.8,
-   "participants": 2
+   "heat": 12.8,
+   "participants": 3
   },
   {
    "hour": "2026-10-25T00:00:00.000Z",
-   "heat": 8.6,
-   "participants": 2
+   "heat": 12.4,
+   "participants": 3
   },
   {
    "hour": "2026-10-25T01:00:00.000Z",
-   "heat": 8.3,
-   "participants": 2
+   "heat": 12.1,
+   "participants": 3
   },
   {
    "hour": "2026-10-25T02:00:00.000Z",
-   "heat": 8.1,
-   "participants": 2
+   "heat": 11.7,
+   "participants": 3
   },
   {
    "hour": "2026-10-25T03:00:00.000Z",
-   "heat": 7.9,
-   "participants": 2
+   "heat": 11.4,
+   "participants": 3
   },
   {
    "hour": "2026-10-25T04:00:00.000Z",
-   "heat": 7.6,
-   "participants": 2
+   "heat": 11.1,
+   "participants": 3
   },
   {
    "hour": "2026-10-25T05:00:00.000Z",
-   "heat": 7.4,
-   "participants": 2
+   "heat": 10.8,
+   "participants": 3
   },
   {
    "hour": "2026-10-25T06:00:00.000Z",
-   "heat": 7.2,
-   "participants": 2
+   "heat": 10.4,
+   "participants": 3
   },
   {
    "hour": "2026-10-25T07:00:00.000Z",
-   "heat": 7.0,
-   "participants": 2
+   "heat": 10.1,
+   "participants": 3
   },
   {
    "hour": "2026-10-25T08:00:00.000Z",
-   "heat": 6.8,
-   "participants": 2
+   "heat": 9.9,
+   "participants": 3
   },
   {
    "hour": "2026-10-25T09:00:00.000Z",
-   "heat": 6.6,
-   "participants": 2
+   "heat": 9.6,
+   "participants": 3
   },
   {
    "hour": "2026-10-25T10:00:00.000Z",
-   "heat": 6.4,
-   "participants": 2
+   "heat": 9.3,
+   "participants": 3
   },
   {
    "hour": "2026-10-25T11:00:00.000Z",
-   "heat": 6.2,
-   "participants": 2
+   "heat": 9.0,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-25T12:00:00.000Z",
+   "heat": 8.8,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-25T13:00:00.000Z",
+   "heat": 8.5,
+   "participants": 3
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "Microduck 经 Isaac Lab 仿真训练后部署到真机",
  "primaryUrl": "https://huggingface.co/blog/nvidia/microduck-isaac-lab-sim-to-real",
- "rankDelta": 1
+ "rankDelta": 0
 }

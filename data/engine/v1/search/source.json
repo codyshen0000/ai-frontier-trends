@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-25T11:44:00.000Z",
+ "generatedAt": "2026-10-25T13:58:00.000Z",
  "docs": [
   {
    "id": "sha256:af9112a54e84d14e",
@@ -48,6 +48,31 @@
    "path": "/events/2026-10-25-anthropic-single-agent-loop/"
   },
   {
+   "id": "sha256:7ac4b85c1277fd44",
+   "kind": "item",
+   "title": "ic.work：OpenMobile-2 AndroidWorld 79.9，真机落差仍在",
+   "summary": null,
+   "publishedAt": "2026-10-25T07:53:11.000Z",
+   "sourceName": "ic.work",
+   "category": "opinion",
+   "selected": false,
+   "eventPublicId": "2026-10-25-openmobile-2-mobile-agents",
+   "originalUrl": "https://www.ic.work/article/openmobile-2-beats-benchmarks-reveals-sim-to-real-gap"
+  },
+  {
+   "id": "2026-10-25-openmobile-2-mobile-agents",
+   "kind": "event",
+   "title": "OpenMobile-2：开源手机智能体称真机评测居开源前列",
+   "summary": null,
+   "publishedAt": "2026-10-25T07:53:11.000Z",
+   "sourceNames": [
+    "The Decoder",
+    "ic.work",
+    "web-arxiv-2610.14157"
+   ],
+   "path": "/events/2026-10-25-openmobile-2-mobile-agents/"
+  },
+  {
    "id": "sha256:514019d7b6342099",
    "kind": "item",
    "title": "OpenMobile-2：开源手机智能体称真机评测居开源前列",
@@ -60,18 +85,6 @@
    "originalUrl": "https://the-decoder.com/openmobile-2-proves-open-source-smartphone-agents-can-rival-proprietary-models/"
   },
   {
-   "id": "2026-10-25-openmobile-2-mobile-agents",
-   "kind": "event",
-   "title": "OpenMobile-2：开源手机智能体称真机评测居开源前列",
-   "summary": null,
-   "publishedAt": "2026-10-25T06:55:22.000Z",
-   "sourceNames": [
-    "The Decoder",
-    "web-arxiv-2610.14157"
-   ],
-   "path": "/events/2026-10-25-openmobile-2-mobile-agents/"
-  },
-  {
    "id": "sha256:896f29357cde5008",
    "kind": "item",
    "title": "论文：OpenMobile-2 开源手机智能体环境与配方",
@@ -82,6 +95,31 @@
    "selected": false,
    "eventPublicId": "2026-10-25-openmobile-2-mobile-agents",
    "originalUrl": "https://arxiv.org/abs/2610.14157"
+  },
+  {
+   "id": "sha256:b8141264e2a24eba",
+   "kind": "item",
+   "title": "Block 发布 Dessa：纯语音训练的全双工对话模型",
+   "summary": "媒体跟进并入 Block Dessa 事件；不改既有代表稿。",
+   "publishedAt": "2026-10-24T14:09:46.000Z",
+   "sourceName": "The Decoder",
+   "category": "model",
+   "selected": false,
+   "eventPublicId": "2026-10-24-block-dessa-speech",
+   "originalUrl": "https://the-decoder.com/blocks-new-ai-model-dessa-was-trained-entirely-on-human-speech-to-catch-emotions-text-based-models-miss/"
+  },
+  {
+   "id": "2026-10-24-block-dessa-speech",
+   "kind": "event",
+   "title": "Block 发布 Dessa：纯语音训练的全双工对话模型",
+   "summary": "Block 官方介绍 Dessa：从零仅用人类对话语音训练的语音到语音全双工模型，可边听边说、本地跑在 MacBook Pro M4 Max 及以上；称将向少量安全研究者开放早期访问。",
+   "publishedAt": "2026-10-24T14:09:46.000Z",
+   "sourceNames": [
+    "The Decoder",
+    "The Verge · AI",
+    "web-block-dessa"
+   ],
+   "path": "/events/2026-10-24-block-dessa-speech/"
   },
   {
    "id": "sha256:1dc7e2df39a11f00",
@@ -154,6 +192,7 @@
    "publishedAt": "2026-10-24T02:06:48.000Z",
    "sourceNames": [
     "Google Research Blog",
+    "TSN",
     "web-techbooky"
    ],
    "path": "/events/2026-10-24-google-tb-screening/"
@@ -183,6 +222,18 @@
    "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet"
   },
   {
+   "id": "sha256:ce4886e89af3afe7",
+   "kind": "item",
+   "title": "TSN：谷歌结核 X 光 AI 覆盖约 40 家非洲诊所",
+   "summary": null,
+   "publishedAt": "2026-10-23T19:42:02.000Z",
+   "sourceName": "TSN",
+   "category": "opinion",
+   "selected": false,
+   "eventPublicId": "2026-10-24-google-tb-screening",
+   "originalUrl": "https://tsnmedia.org/google-ai-tb-screening/"
+  },
+  {
    "id": "sha256:b5619922e4bc7751",
    "kind": "item",
    "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
@@ -193,6 +244,30 @@
    "selected": false,
    "eventPublicId": "2026-10-24-kimi-k31-pro",
    "originalUrl": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/"
+  },
+  {
+   "id": "sha256:8f9973956bdc5190",
+   "kind": "item",
+   "title": "Block 发布 Dessa：纯语音训练的全双工对话模型",
+   "summary": "Block 官方介绍 Dessa：从零仅用人类对话语音训练的语音到语音全双工模型，可边听边说、本地跑在 MacBook Pro M4 Max 及以上；称将向少量安全研究者开放早期访问。",
+   "publishedAt": "2026-10-23T19:32:39.000Z",
+   "sourceName": "web-block-dessa",
+   "category": "model",
+   "selected": true,
+   "eventPublicId": "2026-10-24-block-dessa-speech",
+   "originalUrl": "https://block.xyz/dessa"
+  },
+  {
+   "id": "sha256:60b56cc3037dbda3",
+   "kind": "item",
+   "title": "Block 发布 Dessa：纯语音训练的全双工对话模型",
+   "summary": null,
+   "publishedAt": "2026-10-23T19:32:39.000Z",
+   "sourceName": "The Verge · AI",
+   "category": "model",
+   "selected": false,
+   "eventPublicId": "2026-10-24-block-dessa-speech",
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech"
   },
   {
    "id": "sha256:261b6564023ad66c",
@@ -217,6 +292,18 @@
    "selected": true,
    "eventPublicId": "2026-10-24-google-tb-screening",
    "originalUrl": "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/"
+  },
+  {
+   "id": "sha256:ad858727fe102239",
+   "kind": "item",
+   "title": "CNBC：第三方评估发现 OpenAI 监控系统漏洞",
+   "summary": null,
+   "publishedAt": "2026-10-23T18:00:32.000Z",
+   "sourceName": "CNBC",
+   "category": "opinion",
+   "selected": false,
+   "eventPublicId": "2026-10-24-openai-metr-agent-monitoring",
+   "originalUrl": "https://www.cnbc.com/2026/10/22/metr-redwood-research-open-ai-test.html"
   },
   {
    "id": "sha256:8a8f757d90f00c85",
@@ -249,6 +336,7 @@
    "summary": null,
    "publishedAt": "2026-10-23T18:00:32.000Z",
    "sourceNames": [
+    "CNBC",
     "The Decoder",
     "web-metr"
    ],
@@ -337,6 +425,18 @@
    "originalUrl": "https://the-decoder.com/anthropic-says-its-unreleased-model-is-both-more-capable-and-better-aligned-than-mythos-5-1/"
   },
   {
+   "id": "sha256:8eab44b936dc39ff",
+   "kind": "item",
+   "title": "UK AISI：复盘 AISI 事件中的对齐失败",
+   "summary": null,
+   "publishedAt": "2026-10-23T17:19:49.000Z",
+   "sourceName": "UK AISI",
+   "category": "paper",
+   "selected": false,
+   "eventPublicId": "2026-10-24-anthropic-ukaisi-alignment",
+   "originalUrl": "https://www.aisi.gov.uk/blog/investigating-alignment-failures-in-aisis-incident"
+  },
+  {
    "id": "2026-10-24-anthropic-ukaisi-alignment",
    "kind": "event",
    "title": "Anthropic：复盘 AISI 事件，内部研究模型更能自行停止攻击",
@@ -344,9 +444,34 @@
    "publishedAt": "2026-10-23T17:19:49.000Z",
    "sourceNames": [
     "Anthropic Research",
-    "The Decoder"
+    "The Decoder",
+    "UK AISI"
    ],
    "path": "/events/2026-10-24-anthropic-ukaisi-alignment/"
+  },
+  {
+   "id": "sha256:a3c6d80b92cb3cdd",
+   "kind": "item",
+   "title": "Interesting Engineering：NVIDIA 活动上 Microduck 机器人抢镜",
+   "summary": null,
+   "publishedAt": "2026-10-23T14:58:32.000Z",
+   "sourceName": "Interesting Engineering",
+   "category": "opinion",
+   "selected": false,
+   "eventPublicId": "2026-10-22-nvidia-microduck-isaac-lab",
+   "originalUrl": "https://interestingengineering.com/ai-robotics/microduck-robots-in-nvidia-demo"
+  },
+  {
+   "id": "2026-10-22-nvidia-microduck-isaac-lab",
+   "kind": "event",
+   "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
+   "summary": "NVIDIA 介绍 Microduck 在 Isaac Lab 3.0 中仿真训练后迁移到真机的流程与结果。",
+   "publishedAt": "2026-10-23T14:58:32.000Z",
+   "sourceNames": [
+    "Hugging Face Blog",
+    "Interesting Engineering"
+   ],
+   "path": "/events/2026-10-22-nvidia-microduck-isaac-lab/"
   },
   {
    "id": "sha256:f6a301346a05e615",
@@ -842,17 +967,6 @@
    "selected": true,
    "eventPublicId": "2026-10-22-nvidia-microduck-isaac-lab",
    "originalUrl": "https://huggingface.co/blog/nvidia/microduck-isaac-lab-sim-to-real"
-  },
-  {
-   "id": "2026-10-22-nvidia-microduck-isaac-lab",
-   "kind": "event",
-   "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
-   "summary": "NVIDIA 介绍 Microduck 在 Isaac Lab 3.0 中仿真训练后迁移到真机的流程与结果。",
-   "publishedAt": "2026-10-21T17:58:42.000Z",
-   "sourceNames": [
-    "Hugging Face Blog"
-   ],
-   "path": "/events/2026-10-22-nvidia-microduck-isaac-lab/"
   },
   {
    "id": "sha256:40a01666d562060b",

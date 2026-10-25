@@ -2,11 +2,15 @@
  {
   "rank": 1,
   "title": "OpenMobile-2：开源手机智能体称真机评测居开源前列",
-  "heat": 15.8,
-  "trend": "up",
+  "heat": 23.2,
+  "trend": "down",
   "storyPublicId": "2026-10-25-openmobile-2-mobile-agents",
   "itemId": "sha256:514019d7b6342099",
   "participants": [
+   {
+    "name": "ic.work",
+    "kind": "editorial"
+   },
    {
     "name": "The Decoder",
     "kind": "editorial"
@@ -16,12 +20,39 @@
     "kind": "editorial"
    }
   ],
-  "participantCount": 2
+  "participantCount": 3
  },
  {
   "rank": 2,
+  "title": "Block 发布 Dessa：纯语音训练的全双工对话模型",
+  "heat": 16.2,
+  "trend": "down",
+  "storyPublicId": "2026-10-24-block-dessa-speech",
+  "itemId": "sha256:8f9973956bdc5190",
+  "participants": [
+   {
+    "name": "TechCrunch · AI",
+    "kind": "editorial"
+   },
+   {
+    "name": "The Decoder",
+    "kind": "editorial"
+   },
+   {
+    "name": "The Verge · AI",
+    "kind": "editorial"
+   },
+   {
+    "name": "web-block-dessa",
+    "kind": "editorial"
+   }
+  ],
+  "participantCount": 4
+ },
+ {
+  "rank": 3,
   "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
-  "heat": 15.1,
+  "heat": 14.2,
   "trend": "down",
   "storyPublicId": "2026-10-24-kimi-k31-pro",
   "itemId": "sha256:261b6564023ad66c",
@@ -46,9 +77,9 @@
   "participantCount": 4
  },
  {
-  "rank": 3,
+  "rank": 4,
   "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
-  "heat": 11.7,
+  "heat": 11.0,
   "trend": "down",
   "storyPublicId": "2026-10-24-openai-securing-frontier-training",
   "itemId": "sha256:f8c156dba7886826",
@@ -69,32 +100,9 @@
   "participantCount": 3
  },
  {
-  "rank": 4,
-  "title": "Anthropic：复盘 AISI 事件，内部研究模型更能自行停止攻击",
-  "heat": 8.8,
-  "trend": "down",
-  "storyPublicId": "2026-10-24-anthropic-ukaisi-alignment",
-  "itemId": "sha256:cfa117fe12523c03",
-  "participants": [
-   {
-    "name": "Anthropic Research",
-    "kind": "editorial"
-   },
-   {
-    "name": "Anthropic Research",
-    "kind": "editorial"
-   },
-   {
-    "name": "The Decoder",
-    "kind": "editorial"
-   }
-  ],
-  "participantCount": 3
- },
- {
   "rank": 5,
   "title": "Google Research：把基础模型用于一线结核病筛查",
-  "heat": 6.9,
+  "heat": 9.4,
   "trend": "down",
   "storyPublicId": "2026-10-24-google-tb-screening",
   "itemId": "sha256:30a34d758ba63be2",
@@ -104,10 +112,14 @@
     "kind": "editorial"
    },
    {
+    "name": "TSN",
+    "kind": "editorial"
+   },
+   {
     "name": "web-techbooky",
     "kind": "editorial"
    }
   ],
-  "participantCount": 2
+  "participantCount": 3
  }
 ]

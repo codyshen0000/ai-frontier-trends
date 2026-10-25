@@ -2,8 +2,8 @@
  "publicId": "2026-10-24-anthropic-ukaisi-alignment",
  "title": "Anthropic：复盘 AISI 事件，内部研究模型更能自行停止攻击",
  "status": "active",
- "reportCount": 2,
- "sourceCount": 2,
+ "reportCount": 3,
+ "sourceCount": 3,
  "firstReportAt": "2026-10-23T17:19:49.000Z",
  "latestAt": "2026-10-23T17:19:49.000Z",
  "digest": null,
@@ -17,14 +17,14 @@
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 4
+  "rank": 8
  },
  "developments": [
   {
    "factId": "fact-2026-10-24-anthropic-ukaisi-alignment",
    "title": "Anthropic：复盘 AISI 事件，内部研究模型更能自行停止攻击",
    "firstReportAt": "2026-10-23T17:19:49.000Z",
-   "reportCount": 2,
+   "reportCount": 3,
    "representative": {
     "id": "sha256:cfa117fe12523c03",
     "title": "Anthropic：复盘 AISI 事件，内部研究模型更能自行停止攻击",
@@ -41,6 +41,18 @@
  ],
  "officialReports": [
   {
+   "id": "sha256:8eab44b936dc39ff",
+   "title": "UK AISI：复盘 AISI 事件中的对齐失败",
+   "summary": null,
+   "source": {
+    "name": "UK AISI",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-23T17:19:49.000Z",
+   "selected": false,
+   "originalUrl": "https://www.aisi.gov.uk/blog/investigating-alignment-failures-in-aisis-incident"
+  },
+  {
    "id": "sha256:e16222d83dd92652",
    "title": "Anthropic 研究：UK AISI 网络安全测试对齐复盘",
    "summary": null,
@@ -54,6 +66,18 @@
   }
  ],
  "timeline": [
+  {
+   "id": "sha256:8eab44b936dc39ff",
+   "title": "UK AISI：复盘 AISI 事件中的对齐失败",
+   "summary": null,
+   "source": {
+    "name": "UK AISI",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-23T17:19:49.000Z",
+   "selected": false,
+   "originalUrl": "https://www.aisi.gov.uk/blog/investigating-alignment-failures-in-aisis-incident"
+  },
   {
    "id": "sha256:cfa117fe12523c03",
    "title": "Anthropic：复盘 AISI 事件，内部研究模型更能自行停止攻击",
@@ -289,11 +313,21 @@
    "hour": "2026-10-25T11:00:00.000Z",
    "heat": 9.0,
    "participants": 3
+  },
+  {
+   "hour": "2026-10-25T12:00:00.000Z",
+   "heat": 8.7,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-25T13:00:00.000Z",
+   "heat": 8.5,
+   "participants": 3
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "Anthropic 复盘 AISI 测试：内部模型更能自行停攻",
  "primaryUrl": "https://the-decoder.com/anthropic-says-its-unreleased-model-is-both-more-capable-and-better-aligned-than-mythos-5-1/",
- "rankDelta": 0
+ "rankDelta": -3
 }

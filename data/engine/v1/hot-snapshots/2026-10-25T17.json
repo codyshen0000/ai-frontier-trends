@@ -15,36 +15,42 @@
   },
   {
    "rank": 3,
+   "publicId": "2026-10-24-block-dessa-speech",
+   "heat": 15.3,
+   "participantCount": 3
+  },
+  {
+   "rank": 4,
    "publicId": "2026-10-24-openai-securing-frontier-training",
    "heat": 15.2,
    "participantCount": 4
   },
   {
-   "rank": 4,
+   "rank": 5,
    "publicId": "2026-10-24-anthropic-ukaisi-alignment",
    "heat": 9.5,
    "participantCount": 3
   },
   {
-   "rank": 5,
+   "rank": 6,
    "publicId": "2026-10-23-anthropic-claude-formal-verification",
    "heat": 8.1,
    "participantCount": 3
   },
   {
-   "rank": 6,
+   "rank": 7,
    "publicId": "2026-10-24-google-tb-screening",
    "heat": 7.4,
    "participantCount": 2
   },
   {
-   "rank": 7,
+   "rank": 8,
    "publicId": "2026-10-22-nvidia-microduck-isaac-lab",
    "heat": 6.6,
    "participantCount": 2
   },
   {
-   "rank": 8,
+   "rank": 9,
    "publicId": "2026-10-24-openai-metr-agent-monitoring",
    "heat": 6.5,
    "participantCount": 2

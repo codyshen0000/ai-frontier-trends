@@ -133,6 +133,30 @@
    "homepage": "https://www.baseten.co"
   },
   {
+   "sourceId": "web-block-dessa",
+   "name": "web-block-dessa",
+   "tier": null,
+   "kind": "editorial"
+  },
+  {
+   "sourceId": "web-cnbc",
+   "name": "CNBC",
+   "tier": "T2",
+   "kind": "editorial"
+  },
+  {
+   "sourceId": "web-ic-work",
+   "name": "ic.work",
+   "tier": "T2",
+   "kind": "editorial"
+  },
+  {
+   "sourceId": "web-interesting-engineering",
+   "name": "Interesting Engineering",
+   "tier": "T2",
+   "kind": "editorial"
+  },
+  {
    "sourceId": "web-metr",
    "name": "web-metr",
    "tier": null,
@@ -148,6 +172,18 @@
    "sourceId": "web-techbooky",
    "name": "web-techbooky",
    "tier": null,
+   "kind": "editorial"
+  },
+  {
+   "sourceId": "web-tsn",
+   "name": "TSN",
+   "tier": "T2",
+   "kind": "editorial"
+  },
+  {
+   "sourceId": "web-uk-aisi",
+   "name": "UK AISI",
+   "tier": "T1",
    "kind": "editorial"
   }
  ]

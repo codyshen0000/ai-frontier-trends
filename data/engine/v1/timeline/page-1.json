@@ -74,10 +74,40 @@
    },
    "group": {
     "factId": "fact-2026-10-25-openmobile-2-mobile-agents",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
+    "additionalSourceCount": 2,
+    "reportCount": 3,
     "memberIds": [
      "sha256:514019d7b6342099"
+    ]
+   }
+  },
+  {
+   "key": "sha256:8f9973956bdc5190",
+   "anchorAt": "2026-10-23T19:32:39.000Z",
+   "item": {
+    "id": "sha256:8f9973956bdc5190",
+    "title": "Block 发布 Dessa：纯语音训练的全双工对话模型",
+    "summary": "Block 官方介绍 Dessa：从零仅用人类对话语音训练的语音到语音全双工模型，可边听边说、本地跑在 MacBook Pro M4 Max 及以上；称将向少量安全研究者开放早期访问。",
+    "reason": "Block 发布纯语音训练全双工 Dessa",
+    "source": {
+     "name": "web-block-dessa"
+    },
+    "publishedAt": "2026-10-23T19:32:39.000Z",
+    "timelineAt": "2026-10-23T19:32:39.000Z",
+    "category": "model",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-24-block-dessa-speech",
+    "originalUrl": "https://block.xyz/dessa"
+   },
+   "group": {
+    "factId": "fact-2026-10-24-block-dessa-speech",
+    "additionalSourceCount": 3,
+    "reportCount": 4,
+    "memberIds": [
+     "sha256:8f9973956bdc5190"
     ]
    }
   },
@@ -134,8 +164,8 @@
    },
    "group": {
     "factId": "fact-2026-10-24-google-tb-screening",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
+    "additionalSourceCount": 2,
+    "reportCount": 3,
     "memberIds": [
      "sha256:30a34d758ba63be2"
     ]
@@ -164,8 +194,8 @@
    },
    "group": {
     "factId": "fact-2026-10-24-openai-metr-agent-monitoring",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
+    "additionalSourceCount": 2,
+    "reportCount": 3,
     "memberIds": [
      "sha256:604f1f9c59689482"
     ]
@@ -240,8 +270,8 @@
    },
    "group": {
     "factId": "fact-2026-10-24-anthropic-ukaisi-alignment",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
+    "additionalSourceCount": 2,
+    "reportCount": 3,
     "memberIds": [
      "sha256:cfa117fe12523c03"
     ]
@@ -526,29 +556,6 @@
      "sha256:7ea705cfe9f05665"
     ]
    }
-  },
-  {
-   "key": "sha256:67297d2df9a3d7f1",
-   "anchorAt": "2026-10-22T16:11:31.000Z",
-   "item": {
-    "id": "sha256:67297d2df9a3d7f1",
-    "title": "AllenAI：发布 OlmoEarth v1.3 全球卫星嵌入与探索工具",
-    "summary": "OlmoEarth v1.3 卫星嵌入 + 全球预计算嵌入与浏览器探索工具。",
-    "reason": "AllenAI：OlmoEarth v1.3 全球卫星嵌入",
-    "source": {
-     "name": "Hugging Face Blog"
-    },
-    "publishedAt": "2026-10-22T16:11:31.000Z",
-    "timelineAt": "2026-10-22T16:11:31.000Z",
-    "category": "model",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-23-allenai-olmoearth-v13",
-    "originalUrl": "https://huggingface.co/blog/allenai/olmoearth-v1-3"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-2.json",
@@ -556,11 +563,15 @@
   {
    "rank": 1,
    "title": "OpenMobile-2：开源手机智能体称真机评测居开源前列",
-   "heat": 15.8,
-   "trend": "up",
+   "heat": 23.2,
+   "trend": "down",
    "storyPublicId": "2026-10-25-openmobile-2-mobile-agents",
    "itemId": "sha256:514019d7b6342099",
    "participants": [
+    {
+     "name": "ic.work",
+     "kind": "editorial"
+    },
     {
      "name": "The Decoder",
      "kind": "editorial"
@@ -570,12 +581,39 @@
      "kind": "editorial"
     }
    ],
-   "participantCount": 2
+   "participantCount": 3
   },
   {
    "rank": 2,
+   "title": "Block 发布 Dessa：纯语音训练的全双工对话模型",
+   "heat": 16.2,
+   "trend": "down",
+   "storyPublicId": "2026-10-24-block-dessa-speech",
+   "itemId": "sha256:8f9973956bdc5190",
+   "participants": [
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "web-block-dessa",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 4
+  },
+  {
+   "rank": 3,
    "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
-   "heat": 15.1,
+   "heat": 14.2,
    "trend": "down",
    "storyPublicId": "2026-10-24-kimi-k31-pro",
    "itemId": "sha256:261b6564023ad66c",
@@ -600,9 +638,9 @@
    "participantCount": 4
   },
   {
-   "rank": 3,
+   "rank": 4,
    "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
-   "heat": 11.7,
+   "heat": 11.0,
    "trend": "down",
    "storyPublicId": "2026-10-24-openai-securing-frontier-training",
    "itemId": "sha256:f8c156dba7886826",
@@ -623,32 +661,9 @@
    "participantCount": 3
   },
   {
-   "rank": 4,
-   "title": "Anthropic：复盘 AISI 事件，内部研究模型更能自行停止攻击",
-   "heat": 8.8,
-   "trend": "down",
-   "storyPublicId": "2026-10-24-anthropic-ukaisi-alignment",
-   "itemId": "sha256:cfa117fe12523c03",
-   "participants": [
-    {
-     "name": "Anthropic Research",
-     "kind": "editorial"
-    },
-    {
-     "name": "Anthropic Research",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 3
-  },
-  {
    "rank": 5,
    "title": "Google Research：把基础模型用于一线结核病筛查",
-   "heat": 6.9,
+   "heat": 9.4,
    "trend": "down",
    "storyPublicId": "2026-10-24-google-tb-screening",
    "itemId": "sha256:30a34d758ba63be2",
@@ -658,16 +673,20 @@
      "kind": "editorial"
     },
     {
+     "name": "TSN",
+     "kind": "editorial"
+    },
+    {
      "name": "web-techbooky",
      "kind": "editorial"
     }
    ],
-   "participantCount": 2
+   "participantCount": 3
   }
  ],
  "dayCounts": {
   "2026-10-25": 3,
-  "2026-10-24": 6,
+  "2026-10-24": 7,
   "2026-10-23": 12,
   "2026-10-22": 9,
   "2026-10-21": 12,
@@ -677,5 +696,5 @@
  },
  "page": 1,
  "pageCount": 3,
- "total": 48
+ "total": 49
 }
