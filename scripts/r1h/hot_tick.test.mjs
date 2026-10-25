@@ -160,7 +160,54 @@ describe("rankHotFromEngine (heat.mjs equivalent)", () => {
     assert.equal(hot.entries[0].story.publicId, "2026-10-19-deepseek-v41-flash-1017");
     assert.equal(typeof hot.entries[0].heat, "number");
   });
-});
+
+  it("keeps listed engine heat when recompute timestamps are incomplete (G3 fix B)", () => {
+    const dir = tmp();
+    try {
+      cpSync(OUT_1700, dir, { recursive: true });
+      const tipPath = join(dir, "hot.json");
+      const tip = readJson(tipPath);
+      const entry = tip.entries[0];
+      const id = entry.story.publicId;
+      const listedHeat = 6.6;
+      const listedSpark = [6.6, 6.5, 6.4];
+      // Engine lists 2; wipe export timestamps so participantsForStory is empty.
+      entry.heat = listedHeat;
+      entry.participantCount = 2;
+      entry.sourceNames = ["Source A", "Source B"];
+      entry.spark = listedSpark;
+      entry.trend = "flat";
+      writeFileSync(tipPath, `${JSON.stringify(tip, null, 2)}\n`);
+
+      const eventPath = join(dir, "events", `${id}.json`);
+      const event = readJson(eventPath);
+      event.timeline = [];
+      event.developments = [];
+      event.officialReports = [];
+      event.participants = [];
+      writeFileSync(eventPath, `${JSON.stringify(event, null, 2)}\n`);
+      const searchPath = join(dir, "search", "source.json");
+      if (existsSync(searchPath)) {
+        const search = readJson(searchPath);
+        if (search && typeof search === "object" && Array.isArray(search.docs)) {
+          search.docs = search.docs.filter(
+            (row) => (row.eventPublicId || row.event_id || row.id) !== id,
+          );
+          writeFileSync(searchPath, `${JSON.stringify(search, null, 2)}\n`);
+        }
+      }
+
+      const hot = rankHotFromEngine(dir, { at: tip.computedAt, prevTipDir: dir });
+      const got = hot.entries.find((e) => e.story?.publicId === id);
+      assert.ok(got, "listed entry must remain on the board");
+      assert.ok(got.heat > 0, "heat must stay > 0");
+      assert.equal(got.heat, listedHeat);
+      assert.equal(got.participantCount, 2);
+      assert.deepEqual(got.spark, listedSpark);
+    } finally {
+      rmSync(dir, { recursive: true, force: true });
+    }
+  });
 
 describe("prev-tip is mandatory", () => {
   it("throws without --prev-tip", () => {

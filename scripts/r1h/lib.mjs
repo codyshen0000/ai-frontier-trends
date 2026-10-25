@@ -259,6 +259,26 @@ function listedId(entry) {
   return entry?.story?.publicId || entry?.publicId || null;
 }
 
+function listedParticipantCount(entry) {
+  return (
+    Number(entry?.participantCount) ||
+    (Array.isArray(entry?.participants) ? entry.participants.length : 0) ||
+    (Array.isArray(entry?.sourceNames) ? entry.sourceNames.length : 0)
+  );
+}
+
+/** Listed heat fields in the shape of a recomputeEntry result (kept as published). */
+function keptHeatFields(listed) {
+  return {
+    heat: Number(listed.heat) || 0,
+    trend: listed.trend,
+    trendPct: listed.trendPct,
+    badges: listed.badges,
+    participantCount: listed.participantCount ?? listedParticipantCount(listed),
+    spark: listed.spark,
+  };
+}
+
 function overlayCover(next, prev) {
   if (!prev) return next;
   const keep =
@@ -323,10 +343,23 @@ export function rankHotFromEngine(engineDir, { at, rescanEvents = false, prevTip
   const rows = [];
   for (const [id, listedEntry] of candidates) {
     const participants = participantsForStory(inputs, id);
-    if (!participants.length) {
-      if (listedEntry) {
-        rows.push({ listed: listedEntry, recomputed: null, id, skip: "no_participants" });
+    if (listedEntry) {
+      // Fix B (G3/#86): when the exported event/search tree has fewer
+      // timestamps than hot.json lists, recompute is incomplete (e.g. R2
+      // participants[] not present in the public timeline). Keep listed
+      // engine heat fields. Do NOT treat in-window aging as incomplete —
+      // that must still recompute/decay.
+      const listedCount = listedParticipantCount(listedEntry);
+      if (!participants.length || listedCount > participants.length) {
+        rows.push({
+          id,
+          listed: listedEntry,
+          recomputed: keptHeatFields(listedEntry),
+          prev: listedEntry,
+        });
+        continue;
       }
+    } else if (!participants.length) {
       continue;
     }
     if (!listedEntry && !isEligible(participants, atMs)) continue;
@@ -342,7 +375,6 @@ export function rankHotFromEngine(engineDir, { at, rescanEvents = false, prevTip
   }
 
   const ranked = rows
-    .filter((row) => row.recomputed)
     .sort((a, b) => b.recomputed.heat - a.recomputed.heat || String(a.id).localeCompare(String(b.id)))
     .slice(0, TOP_N)
     .map((row, index) => {
