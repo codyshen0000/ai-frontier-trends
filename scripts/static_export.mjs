@@ -695,6 +695,19 @@ function writeEngineOutputs(distDir, engine, site, { asOf, built }) {
       ...site.daily,
     }));
   }
+  // #77: emit every archive daily/<key>.json (loader → site.dailies), not only tip key.
+  // latest.json stays tip-only above. Do not demote floors by swapping latest.
+  const seenDailyKeys = new Set(site.daily?.key ? [site.daily.key] : []);
+  for (const d of site.dailies || []) {
+    if (!d?.key || seenDailyKeys.has(d.key)) continue;
+    seenDailyKeys.add(d.key);
+    writeJson(join(distDir, "api", "v1", "daily", `${d.key}.json`), stripScore({
+      v: 1,
+      schema_version: "1.1.0",
+      data_as_of: asOf,
+      ...d,
+    }));
+  }
 }
 
 export async function exportStatic({ distDir, contentDir, dataset = "", dataAsOf, builtAt, engine = null, site = null }) {
@@ -787,6 +800,12 @@ export async function exportStatic({ distDir, contentDir, dataset = "", dataAsOf
     if (publicSite.daily) {
       listed.push({ path: "api/v1/daily/latest.json", note: "最新日报", schema_version: "1.1.0" });
       listed.push({ path: `api/v1/daily/${publicSite.daily.key}.json`, note: `日报 ${publicSite.daily.key}`, schema_version: "1.1.0" });
+    }
+    const listedDaily = new Set(publicSite.daily?.key ? [publicSite.daily.key] : []);
+    for (const d of publicSite.dailies || []) {
+      if (!d?.key || listedDaily.has(d.key)) continue;
+      listedDaily.add(d.key);
+      listed.push({ path: `api/v1/daily/${d.key}.json`, note: `日报 ${d.key}`, schema_version: "1.1.0" });
     }
   }
   writeJson(join(distDir, "api", "v1", "index.json"), {
