@@ -6,6 +6,29 @@
  },
  "cards": [
   {
+   "key": "sha256:6400feb681472530",
+   "anchorAt": "2026-10-22T06:00:00.000Z",
+   "item": {
+    "id": "sha256:6400feb681472530",
+    "title": "OpenAI：Forward Deployed Engineering 如何填补部署鸿沟",
+    "summary": "OpenAI FDE 负责人介绍如何把模型能力落到客户生产并反哺产品研究。",
+    "reason": "OpenAI 阐释 Forward Deployed Engineering",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-22T06:00:00.000Z",
+    "timelineAt": "2026-10-22T06:00:00.000Z",
+    "category": "tutorial",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-22-openai-fde-means",
+    "originalUrl": "https://openai.com/index/forward-deployed-engineering-means"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:eda525050cea8fce",
    "anchorAt": "2026-10-22T00:00:00.000Z",
    "item": {
@@ -490,36 +513,6 @@
     "originalUrl": "https://www.wiz.io/blog/from-phishing-to-llmjacking"
    },
    "group": null
-  },
-  {
-   "key": "sha256:4c6292fc5ecba5f2",
-   "anchorAt": "2026-10-20T12:00:22.000Z",
-   "item": {
-    "id": "sha256:4c6292fc5ecba5f2",
-    "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
-    "summary": "Mistral 发布 Voxtral 3 语音智能体 SDK 与语音模型，转录 50+ 语言，TTS 35+ 语言，可欧盟托管或自部署。",
-    "reason": "Mistral 推出 Voxtral 3 语音智能体 SDK，支持 50+ 语言",
-    "source": {
-     "name": "Mistral AI News"
-    },
-    "publishedAt": "2026-10-20T12:00:22.000Z",
-    "timelineAt": "2026-10-20T12:00:22.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-21-mistral-voxtral-3",
-    "originalUrl": "https://mistral.ai/news/voxtral-3/"
-   },
-   "group": {
-    "factId": "fact-2026-10-21-mistral-voxtral-3",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:4c6292fc5ecba5f2"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-3.json",
@@ -527,5 +520,5 @@
  "dayCounts": {},
  "page": 2,
  "pageCount": 3,
- "total": 45
+ "total": 46
 }

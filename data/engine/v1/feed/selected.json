@@ -8,6 +8,17 @@
  },
  "items": [
   {
+   "guid": "sha256:514019d7b6342099",
+   "title": "OpenMobile-2：开源手机智能体称真机评测居开源前列",
+   "summary": "",
+   "originalUrl": "https://the-decoder.com/openmobile-2-proves-open-source-smartphone-agents-can-rival-proprietary-models/",
+   "pubDate": "2026-10-25T06:55:22.000Z",
+   "sourceName": "The Decoder",
+   "category": "paper",
+   "categoryLabel": "论文",
+   "eventPublicId": "2026-10-25-openmobile-2-mobile-agents"
+  },
+  {
    "guid": "sha256:261b6564023ad66c",
    "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
    "summary": "Decoder 报道 Kimi K3.1 Pro；已核实 Artificial Analysis 评测帖并 hop。",

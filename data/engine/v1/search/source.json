@@ -1,6 +1,29 @@
 {
- "generatedAt": "2026-10-25T04:41:00.000Z",
+ "generatedAt": "2026-10-25T07:43:00.000Z",
  "docs": [
+  {
+   "id": "sha256:514019d7b6342099",
+   "kind": "item",
+   "title": "OpenMobile-2：开源手机智能体称真机评测居开源前列",
+   "summary": null,
+   "publishedAt": "2026-10-25T06:55:22.000Z",
+   "sourceName": "The Decoder",
+   "category": "paper",
+   "selected": true,
+   "eventPublicId": "2026-10-25-openmobile-2-mobile-agents",
+   "originalUrl": "https://the-decoder.com/openmobile-2-proves-open-source-smartphone-agents-can-rival-proprietary-models/"
+  },
+  {
+   "id": "2026-10-25-openmobile-2-mobile-agents",
+   "kind": "event",
+   "title": "OpenMobile-2：开源手机智能体称真机评测居开源前列",
+   "summary": null,
+   "publishedAt": "2026-10-25T06:55:22.000Z",
+   "sourceNames": [
+    "The Decoder"
+   ],
+   "path": "/events/2026-10-25-openmobile-2-mobile-agents/"
+  },
   {
    "id": "sha256:1dc7e2df39a11f00",
    "kind": "item",

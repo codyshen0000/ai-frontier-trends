@@ -1,6 +1,13 @@
 {
  "events": [
   {
+   "publicId": "2026-10-25-openmobile-2-mobile-agents",
+   "title": "OpenMobile-2：开源手机智能体称真机评测居开源前列",
+   "latestAt": "2026-10-25T06:55:22.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
    "publicId": "2026-10-24-openai-securing-frontier-training",
    "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
    "latestAt": "2026-10-24T11:12:36.000Z",

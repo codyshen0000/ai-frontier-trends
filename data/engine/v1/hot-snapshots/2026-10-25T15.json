@@ -1,0 +1,23 @@
+{
+ "computedAt": "2026-10-25T07:43:00.000Z",
+ "entries": [
+  {
+   "rank": 1,
+   "publicId": "2026-10-24-kimi-k31-pro",
+   "heat": 17.0,
+   "participantCount": 4
+  },
+  {
+   "rank": 2,
+   "publicId": "2026-10-24-openai-securing-frontier-training",
+   "heat": 15.8,
+   "participantCount": 4
+  },
+  {
+   "rank": 3,
+   "publicId": "2026-10-22-nvidia-microduck-isaac-lab",
+   "heat": 6.9,
+   "participantCount": 2
+  }
+ ]
+}

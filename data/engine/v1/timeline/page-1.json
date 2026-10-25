@@ -6,6 +6,29 @@
  },
  "cards": [
   {
+   "key": "sha256:514019d7b6342099",
+   "anchorAt": "2026-10-25T06:55:22.000Z",
+   "item": {
+    "id": "sha256:514019d7b6342099",
+    "title": "OpenMobile-2：开源手机智能体称真机评测居开源前列",
+    "summary": null,
+    "reason": "开源手机智能体称真机评测居开源前列",
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-25T06:55:22.000Z",
+    "timelineAt": "2026-10-25T06:55:22.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-25-openmobile-2-mobile-agents",
+    "originalUrl": "https://the-decoder.com/openmobile-2-proves-open-source-smartphone-agents-can-rival-proprietary-models/"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:261b6564023ad66c",
    "anchorAt": "2026-10-23T19:00:07.000Z",
    "item": {
@@ -484,29 +507,6 @@
     "originalUrl": "https://www.wiz.io/blog/artex-in-the-wild-storm-0940-expands-targeting-of-it-and-software-vendors"
    },
    "group": null
-  },
-  {
-   "key": "sha256:6400feb681472530",
-   "anchorAt": "2026-10-22T06:00:00.000Z",
-   "item": {
-    "id": "sha256:6400feb681472530",
-    "title": "OpenAI：Forward Deployed Engineering 如何填补部署鸿沟",
-    "summary": "OpenAI FDE 负责人介绍如何把模型能力落到客户生产并反哺产品研究。",
-    "reason": "OpenAI 阐释 Forward Deployed Engineering",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-22T06:00:00.000Z",
-    "timelineAt": "2026-10-22T06:00:00.000Z",
-    "category": "tutorial",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-22-openai-fde-means",
-    "originalUrl": "https://openai.com/index/forward-deployed-engineering-means"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-2.json",
@@ -514,7 +514,7 @@
   {
    "rank": 1,
    "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
-   "heat": 18.5,
+   "heat": 17.0,
    "trend": "down",
    "storyPublicId": "2026-10-24-kimi-k31-pro",
    "itemId": "sha256:261b6564023ad66c",
@@ -541,7 +541,7 @@
   {
    "rank": 2,
    "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
-   "heat": 17.2,
+   "heat": 15.8,
    "trend": "down",
    "storyPublicId": "2026-10-24-openai-securing-frontier-training",
    "itemId": "sha256:f8c156dba7886826",
@@ -568,7 +568,7 @@
   {
    "rank": 3,
    "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
-   "heat": 7.5,
+   "heat": 6.9,
    "trend": "down",
    "storyPublicId": "2026-10-22-nvidia-microduck-isaac-lab",
    "itemId": "sha256:7decc1c5c0496d6c",
@@ -586,6 +586,7 @@
   }
  ],
  "dayCounts": {
+  "2026-10-25": 1,
   "2026-10-24": 6,
   "2026-10-23": 12,
   "2026-10-22": 9,
@@ -596,5 +597,5 @@
  },
  "page": 1,
  "pageCount": 3,
- "total": 45
+ "total": 46
 }
