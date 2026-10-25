@@ -1,1637 +1,1662 @@
 {
- "filters": {
-  "channel": "all",
-  "category": null,
-  "tag": null
- },
- "cards": [
-  {
-   "key": "sha256:261b6564023ad66c",
-   "anchorAt": "2026-10-23T19:00:07.000Z",
-   "item": {
-    "id": "sha256:261b6564023ad66c",
-    "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
-    "summary": "Decoder 报道 Kimi K3.1 Pro；已核实 Artificial Analysis 评测帖并 hop。",
-    "reason": "Kimi K3.1 Pro 智能指数 55，暂列第四；拟开源权重",
-    "source": {
-     "name": "The Decoder"
-    },
-    "publishedAt": "2026-10-23T19:00:07.000Z",
-    "timelineAt": "2026-10-23T19:00:07.000Z",
-    "category": "model",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "model_release"
-    ],
-    "x": null
-   },
-   "group": {
-    "factId": "fact-2026-10-24-kimi-k31-pro",
-    "additionalSourceCount": 3,
-    "reportCount": 5,
-    "memberIds": [
-     "sha256:261b6564023ad66c"
-    ]
-   }
+  "filters": {
+    "channel": "all",
+    "category": null,
+    "tag": null
   },
-  {
-   "key": "sha256:30a34d758ba63be2",
-   "anchorAt": "2026-10-23T18:51:33.000Z",
-   "item": {
-    "id": "sha256:30a34d758ba63be2",
-    "title": "Google Research：把基础模型用于一线结核病筛查",
-    "summary": "Google Research：基础模型用于 TB 筛查一线；应用研究。",
-    "reason": "Google：基础模型用于一线结核病筛查",
-    "source": {
-     "name": "Google Research Blog"
+  "cards": [
+    {
+      "key": "sha256:514019d7b6342099",
+      "anchorAt": "2026-10-25T06:55:22.000Z",
+      "item": {
+        "id": "sha256:514019d7b6342099",
+        "title": "OpenMobile-2：开源手机智能体称真机评测居开源前列",
+        "summary": null,
+        "reason": "开源手机智能体称真机评测居开源前列",
+        "source": {
+          "name": "The Decoder"
+        },
+        "publishedAt": "2026-10-25T06:55:22.000Z",
+        "timelineAt": "2026-10-25T06:55:22.000Z",
+        "category": "paper",
+        "tags": [],
+        "selected": true,
+        "channel": "news",
+        "x": null,
+        "storyPublicId": "2026-10-25-openmobile-2-mobile-agents",
+        "originalUrl": "https://the-decoder.com/openmobile-2-proves-open-source-smartphone-agents-can-rival-proprietary-models/",
+        "score": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-23T18:51:33.000Z",
-    "timelineAt": "2026-10-23T18:51:33.000Z",
-    "category": "paper",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "research_paper"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:604f1f9c59689482",
-   "anchorAt": "2026-10-23T18:00:32.000Z",
-   "item": {
-    "id": "sha256:604f1f9c59689482",
-    "title": "METR/Redwood 驻场审计：OpenAI 内部智能体监控存在覆盖缺口",
-    "summary": "Decoder 报道 METR/Redwood 三周驻场审计；已核实 METR 公开摘要并 hop。",
-    "reason": "METR/Redwood 驻场审计：OpenAI 智能体监控有缺口",
-    "source": {
-     "name": "The Decoder"
+    {
+      "key": "sha256:261b6564023ad66c",
+      "anchorAt": "2026-10-23T19:00:07.000Z",
+      "item": {
+        "id": "sha256:261b6564023ad66c",
+        "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
+        "summary": "Decoder 报道 Kimi K3.1 Pro；已核实 Artificial Analysis 评测帖并 hop。",
+        "reason": "Kimi K3.1 Pro 智能指数 55，暂列第四；拟开源权重",
+        "source": {
+          "name": "The Decoder"
+        },
+        "publishedAt": "2026-10-23T19:00:07.000Z",
+        "timelineAt": "2026-10-23T19:00:07.000Z",
+        "category": "model",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "model_release"
+        ],
+        "x": null
+      },
+      "group": {
+        "factId": "fact-2026-10-24-kimi-k31-pro",
+        "additionalSourceCount": 3,
+        "reportCount": 5,
+        "memberIds": [
+          "sha256:261b6564023ad66c"
+        ]
+      }
     },
-    "publishedAt": "2026-10-23T18:00:32.000Z",
-    "timelineAt": "2026-10-23T18:00:32.000Z",
-    "category": "industry",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "industry_event"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:73be0ee71d2832b3",
-   "anchorAt": "2026-10-23T17:36:54.000Z",
-   "item": {
-    "id": "sha256:73be0ee71d2832b3",
-    "title": "Baseten 推出 Environment Network：对接后训练 RL 环境伙伴",
-    "summary": "Baseten 官方：筛选 RL 环境伙伴做客户定制后训练环境；训练与推理仍由 Baseten。",
-    "reason": "Baseten 推出后训练 RL 环境合作伙伴网络",
-    "source": {
-     "name": "Baseten Blog"
+    {
+      "key": "sha256:30a34d758ba63be2",
+      "anchorAt": "2026-10-23T18:51:33.000Z",
+      "item": {
+        "id": "sha256:30a34d758ba63be2",
+        "title": "Google Research：把基础模型用于一线结核病筛查",
+        "summary": "Google Research：基础模型用于 TB 筛查一线；应用研究。",
+        "reason": "Google：基础模型用于一线结核病筛查",
+        "source": {
+          "name": "Google Research Blog"
+        },
+        "publishedAt": "2026-10-23T18:51:33.000Z",
+        "timelineAt": "2026-10-23T18:51:33.000Z",
+        "category": "paper",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "research_paper"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-23T17:36:54.000Z",
-    "timelineAt": "2026-10-23T17:36:54.000Z",
-    "category": "product",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "product_launch"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:1456ee151a5392db",
-   "anchorAt": "2026-10-23T17:27:52.000Z",
-   "item": {
-    "id": "sha256:1456ee151a5392db",
-    "title": "NVIDIA：TensorRT Global Performance Tuner 跨多条构建路线寻优",
-    "summary": "NVIDIA 技术博客 Part 2：Global Performance Tuner 自动跨构建寻优。",
-    "reason": "TensorRT 11.1 Global Performance Tuner 跨",
-    "source": {
-     "name": "NVIDIA Technical Blog"
+    {
+      "key": "sha256:604f1f9c59689482",
+      "anchorAt": "2026-10-23T18:00:32.000Z",
+      "item": {
+        "id": "sha256:604f1f9c59689482",
+        "title": "METR/Redwood 驻场审计：OpenAI 内部智能体监控存在覆盖缺口",
+        "summary": "Decoder 报道 METR/Redwood 三周驻场审计；已核实 METR 公开摘要并 hop。",
+        "reason": "METR/Redwood 驻场审计：OpenAI 智能体监控有缺口",
+        "source": {
+          "name": "The Decoder"
+        },
+        "publishedAt": "2026-10-23T18:00:32.000Z",
+        "timelineAt": "2026-10-23T18:00:32.000Z",
+        "category": "industry",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "industry_event"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-23T17:27:52.000Z",
-    "timelineAt": "2026-10-23T17:27:52.000Z",
-    "category": "tutorial",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "tutorial_explainer"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:cfa117fe12523c03",
-   "anchorAt": "2026-10-23T17:19:49.000Z",
-   "item": {
-    "id": "sha256:cfa117fe12523c03",
-    "title": "Anthropic：复盘 AISI 事件，内部研究模型更能自行停止攻击",
-    "summary": "Decoder 报道 Anthropic 对 AISI Mythos 5 事件的对齐复盘；已核实官方研究帖并 hop。",
-    "reason": "Anthropic 复盘 AISI 测试：内部模型更能自行停攻",
-    "source": {
-     "name": "The Decoder"
+    {
+      "key": "sha256:73be0ee71d2832b3",
+      "anchorAt": "2026-10-23T17:36:54.000Z",
+      "item": {
+        "id": "sha256:73be0ee71d2832b3",
+        "title": "Baseten 推出 Environment Network：对接后训练 RL 环境伙伴",
+        "summary": "Baseten 官方：筛选 RL 环境伙伴做客户定制后训练环境；训练与推理仍由 Baseten。",
+        "reason": "Baseten 推出后训练 RL 环境合作伙伴网络",
+        "source": {
+          "name": "Baseten Blog"
+        },
+        "publishedAt": "2026-10-23T17:36:54.000Z",
+        "timelineAt": "2026-10-23T17:36:54.000Z",
+        "category": "product",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "product_launch"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-23T17:19:49.000Z",
-    "timelineAt": "2026-10-23T17:19:49.000Z",
-    "category": "paper",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "research_paper"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:b19f86d623cfeb5d",
-   "anchorAt": "2026-10-23T11:32:19.000Z",
-   "item": {
-    "id": "sha256:b19f86d623cfeb5d",
-    "title": "Anthropic：Claude 为 123 个开源库写出可机器检查的形式化证明",
-    "summary": "Decoder 报道 Anthropic 形式化验证实验；已核实官方研究帖并 hop 附加。",
-    "reason": "Anthropic 用 Claude 为 123 个开源库做形式化证明",
-    "source": {
-     "name": "The Decoder"
+    {
+      "key": "sha256:1456ee151a5392db",
+      "anchorAt": "2026-10-23T17:27:52.000Z",
+      "item": {
+        "id": "sha256:1456ee151a5392db",
+        "title": "NVIDIA：TensorRT Global Performance Tuner 跨多条构建路线寻优",
+        "summary": "NVIDIA 技术博客 Part 2：Global Performance Tuner 自动跨构建寻优。",
+        "reason": "TensorRT 11.1 Global Performance Tuner 跨",
+        "source": {
+          "name": "NVIDIA Technical Blog"
+        },
+        "publishedAt": "2026-10-23T17:27:52.000Z",
+        "timelineAt": "2026-10-23T17:27:52.000Z",
+        "category": "tutorial",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "tutorial_explainer"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-23T11:32:19.000Z",
-    "timelineAt": "2026-10-23T11:32:19.000Z",
-    "category": "paper",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "research_paper"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:f8c156dba7886826",
-   "anchorAt": "2026-10-23T10:00:00.000Z",
-   "item": {
-    "id": "sha256:f8c156dba7886826",
-    "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
-    "summary": "OpenAI 官方：训练环境离线遏制、纵深防御与高算力红队后恢复 RL。",
-    "reason": "OpenAI：前沿训练改离线遏制并用模型红队加固",
-    "source": {
-     "name": "OpenAI News"
+    {
+      "key": "sha256:cfa117fe12523c03",
+      "anchorAt": "2026-10-23T17:19:49.000Z",
+      "item": {
+        "id": "sha256:cfa117fe12523c03",
+        "title": "Anthropic：复盘 AISI 事件，内部研究模型更能自行停止攻击",
+        "summary": "Decoder 报道 Anthropic 对 AISI Mythos 5 事件的对齐复盘；已核实官方研究帖并 hop。",
+        "reason": "Anthropic 复盘 AISI 测试：内部模型更能自行停攻",
+        "source": {
+          "name": "The Decoder"
+        },
+        "publishedAt": "2026-10-23T17:19:49.000Z",
+        "timelineAt": "2026-10-23T17:19:49.000Z",
+        "category": "paper",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "research_paper"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-23T10:00:00.000Z",
-    "timelineAt": "2026-10-23T10:00:00.000Z",
-    "category": "industry",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "industry_event"
-    ],
-    "x": null
-   },
-   "group": {
-    "factId": "fact-2026-10-24-openai-securing-frontier-training",
-    "additionalSourceCount": 3,
-    "reportCount": 4,
-    "memberIds": [
-     "sha256:f8c156dba7886826"
-    ]
-   }
-  },
-  {
-   "key": "sha256:50cb4eba8a3e4759",
-   "anchorAt": "2026-10-23T00:00:00.000Z",
-   "item": {
-    "id": "sha256:50cb4eba8a3e4759",
-    "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持",
-    "summary": "vLLM：Day-0 支持 MiniMax-M3.1-Flash（Blackwell/Rubin/MI350，含 Day-0 RL）。",
-    "reason": "M3.1 Flash 权重开源且 vLLM Day-0 支持",
-    "source": {
-     "name": "vLLM Blog"
+    {
+      "key": "sha256:b19f86d623cfeb5d",
+      "anchorAt": "2026-10-23T11:32:19.000Z",
+      "item": {
+        "id": "sha256:b19f86d623cfeb5d",
+        "title": "Anthropic：Claude 为 123 个开源库写出可机器检查的形式化证明",
+        "summary": "Decoder 报道 Anthropic 形式化验证实验；已核实官方研究帖并 hop 附加。",
+        "reason": "Anthropic 用 Claude 为 123 个开源库做形式化证明",
+        "source": {
+          "name": "The Decoder"
+        },
+        "publishedAt": "2026-10-23T11:32:19.000Z",
+        "timelineAt": "2026-10-23T11:32:19.000Z",
+        "category": "paper",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "research_paper"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-23T00:00:00.000Z",
-    "timelineAt": "2026-10-23T00:00:00.000Z",
-    "category": "model",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "model_release"
-    ],
-    "x": null
-   },
-   "group": {
-    "factId": "fact-2026-10-19-minimax-m31-flash",
-    "additionalSourceCount": 3,
-    "reportCount": 5,
-    "memberIds": [
-     "sha256:50cb4eba8a3e4759"
-    ]
-   }
-  },
-  {
-   "key": "sha256:1a543055a02f9816",
-   "anchorAt": "2026-10-23T00:00:00.000Z",
-   "item": {
-    "id": "sha256:1a543055a02f9816",
-    "title": "OpenAI 与波兰 NASK 合作推进 AI 安全与安保研究",
-    "summary": "OpenAI 与 NASK（波兰 AISI）签署协议，合作评估更强 AI、发现漏洞并加强防护；延续多国安全所协作。",
-    "reason": "OpenAI 与波兰 NASK 签 AI 安全研究合作",
-    "source": {
-     "name": "OpenAI News"
+    {
+      "key": "sha256:f8c156dba7886826",
+      "anchorAt": "2026-10-23T10:00:00.000Z",
+      "item": {
+        "id": "sha256:f8c156dba7886826",
+        "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
+        "summary": "OpenAI 官方：训练环境离线遏制、纵深防御与高算力红队后恢复 RL。",
+        "reason": "OpenAI：前沿训练改离线遏制并用模型红队加固",
+        "source": {
+          "name": "OpenAI News"
+        },
+        "publishedAt": "2026-10-23T10:00:00.000Z",
+        "timelineAt": "2026-10-23T10:00:00.000Z",
+        "category": "industry",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "industry_event"
+        ],
+        "x": null
+      },
+      "group": {
+        "factId": "fact-2026-10-24-openai-securing-frontier-training",
+        "additionalSourceCount": 3,
+        "reportCount": 4,
+        "memberIds": [
+          "sha256:f8c156dba7886826"
+        ]
+      }
     },
-    "publishedAt": "2026-10-23T00:00:00.000Z",
-    "timelineAt": "2026-10-23T00:00:00.000Z",
-    "category": "industry",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "industry_event"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:1b5221fd798be326",
-   "anchorAt": "2026-10-23T00:00:00.000Z",
-   "item": {
-    "id": "sha256:1b5221fd798be326",
-    "title": "vLLM：DeepSeek-V4.1-Flash 在 GB300 NVL72 吞吐逼近 DeepInfer",
-    "summary": "vLLM 在 NVL72 上用 P/D+Wide-EP 服务 V4.1-Flash，吞吐逼近 DeepInfer。",
-    "reason": "vLLM 在 NVL72 上服务 V4.1-Flash，逼近 DeepInfer",
-    "source": {
-     "name": "vLLM Blog"
+    {
+      "key": "sha256:50cb4eba8a3e4759",
+      "anchorAt": "2026-10-23T00:00:00.000Z",
+      "item": {
+        "id": "sha256:50cb4eba8a3e4759",
+        "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持",
+        "summary": "vLLM：Day-0 支持 MiniMax-M3.1-Flash（Blackwell/Rubin/MI350，含 Day-0 RL）。",
+        "reason": "M3.1 Flash 权重开源且 vLLM Day-0 支持",
+        "source": {
+          "name": "vLLM Blog"
+        },
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "timelineAt": "2026-10-23T00:00:00.000Z",
+        "category": "model",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "model_release"
+        ],
+        "x": null
+      },
+      "group": {
+        "factId": "fact-2026-10-19-minimax-m31-flash",
+        "additionalSourceCount": 3,
+        "reportCount": 5,
+        "memberIds": [
+          "sha256:50cb4eba8a3e4759"
+        ]
+      }
     },
-    "publishedAt": "2026-10-23T00:00:00.000Z",
-    "timelineAt": "2026-10-23T00:00:00.000Z",
-    "category": "industry",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "industry_event"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:5d20b75fc1534a89",
-   "anchorAt": "2026-10-23T00:00:00.000Z",
-   "item": {
-    "id": "sha256:5d20b75fc1534a89",
-    "title": "vLLM：GLM-5.3 在 16×H200 上用 PCP/DCP 与 Hybrid HiSparse",
-    "summary": "vLLM 官方 Part2：PCP/DCP 与 Hybrid HiSparse 服务百万上下文 GLM-5.3。",
-    "reason": "vLLM 在 16×H200 上用 PCP/DCP 服务 GLM-5.3 百万上",
-    "source": {
-     "name": "vLLM Blog"
+    {
+      "key": "sha256:1a543055a02f9816",
+      "anchorAt": "2026-10-23T00:00:00.000Z",
+      "item": {
+        "id": "sha256:1a543055a02f9816",
+        "title": "OpenAI 与波兰 NASK 合作推进 AI 安全与安保研究",
+        "summary": "OpenAI 与 NASK（波兰 AISI）签署协议，合作评估更强 AI、发现漏洞并加强防护；延续多国安全所协作。",
+        "reason": "OpenAI 与波兰 NASK 签 AI 安全研究合作",
+        "source": {
+          "name": "OpenAI News"
+        },
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "timelineAt": "2026-10-23T00:00:00.000Z",
+        "category": "industry",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "industry_event"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-23T00:00:00.000Z",
-    "timelineAt": "2026-10-23T00:00:00.000Z",
-    "category": "tutorial",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "tutorial_explainer"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:51888f116f5b0837",
-   "anchorAt": "2026-10-22T22:24:34.000Z",
-   "item": {
-    "id": "sha256:51888f116f5b0837",
-    "title": "微软 ThinkingBox：把数据库评分变成 RL 奖励做智能体后训练",
-    "summary": "HF 刊微软 ThinkingBox：数据库评分转 RL 奖励，用于后训练智能体。",
-    "reason": "微软 ThinkingBox 用库评分做智能体 RL 后训练",
-    "source": {
-     "name": "Hugging Face Blog"
+    {
+      "key": "sha256:1b5221fd798be326",
+      "anchorAt": "2026-10-23T00:00:00.000Z",
+      "item": {
+        "id": "sha256:1b5221fd798be326",
+        "title": "vLLM：DeepSeek-V4.1-Flash 在 GB300 NVL72 吞吐逼近 DeepInfer",
+        "summary": "vLLM 在 NVL72 上用 P/D+Wide-EP 服务 V4.1-Flash，吞吐逼近 DeepInfer。",
+        "reason": "vLLM 在 NVL72 上服务 V4.1-Flash，逼近 DeepInfer",
+        "source": {
+          "name": "vLLM Blog"
+        },
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "timelineAt": "2026-10-23T00:00:00.000Z",
+        "category": "industry",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "industry_event"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-22T22:24:34.000Z",
-    "timelineAt": "2026-10-22T22:24:34.000Z",
-    "category": "paper",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "research_paper"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:891b7e0bbf66f86d",
-   "anchorAt": "2026-10-22T19:00:00.000Z",
-   "item": {
-    "id": "sha256:891b7e0bbf66f86d",
-    "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
-    "summary": "OpenAI 发布 Decisions API，面向应用内快速、聚焦、低成本决策。",
-    "reason": "OpenAI 推出面向应用的 Decisions API",
-    "source": {
-     "name": "OpenAI News"
+    {
+      "key": "sha256:5d20b75fc1534a89",
+      "anchorAt": "2026-10-23T00:00:00.000Z",
+      "item": {
+        "id": "sha256:5d20b75fc1534a89",
+        "title": "vLLM：GLM-5.3 在 16×H200 上用 PCP/DCP 与 Hybrid HiSparse",
+        "summary": "vLLM 官方 Part2：PCP/DCP 与 Hybrid HiSparse 服务百万上下文 GLM-5.3。",
+        "reason": "vLLM 在 16×H200 上用 PCP/DCP 服务 GLM-5.3 百万上",
+        "source": {
+          "name": "vLLM Blog"
+        },
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "timelineAt": "2026-10-23T00:00:00.000Z",
+        "category": "tutorial",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "tutorial_explainer"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-22T19:00:00.000Z",
-    "timelineAt": "2026-10-22T19:00:00.000Z",
-    "category": "product",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "product_launch"
-    ],
-    "x": null
-   },
-   "group": {
-    "factId": "fact-2026-10-23-openai-decisions-api",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:891b7e0bbf66f86d"
-    ]
-   }
-  },
-  {
-   "key": "sha256:5ddee939d5fa55a3",
-   "anchorAt": "2026-10-22T18:00:00.000Z",
-   "item": {
-    "id": "sha256:5ddee939d5fa55a3",
-    "title": "微软：发布 MAI-DxO 诊断编排器，复杂病例准确率称超医生",
-    "summary": "Verge：Suleyman 称诊断工具准确率高于医生；对标 Science/微软稿。",
-    "reason": "微软 MAI-DxO：复杂病例诊断准确率称超医生",
-    "source": {
-     "name": "The Verge · AI"
+    {
+      "key": "sha256:51888f116f5b0837",
+      "anchorAt": "2026-10-22T22:24:34.000Z",
+      "item": {
+        "id": "sha256:51888f116f5b0837",
+        "title": "微软 ThinkingBox：把数据库评分变成 RL 奖励做智能体后训练",
+        "summary": "HF 刊微软 ThinkingBox：数据库评分转 RL 奖励，用于后训练智能体。",
+        "reason": "微软 ThinkingBox 用库评分做智能体 RL 后训练",
+        "source": {
+          "name": "Hugging Face Blog"
+        },
+        "publishedAt": "2026-10-22T22:24:34.000Z",
+        "timelineAt": "2026-10-22T22:24:34.000Z",
+        "category": "paper",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "research_paper"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-22T18:00:00.000Z",
-    "timelineAt": "2026-10-22T18:00:00.000Z",
-    "category": "paper",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "research_paper"
-    ],
-    "x": null
-   },
-   "group": {
-    "factId": "fact-2026-10-23-microsoft-mai-dxo",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:5ddee939d5fa55a3"
-    ]
-   }
-  },
-  {
-   "key": "sha256:7ea705cfe9f05665",
-   "anchorAt": "2026-10-22T17:50:09.000Z",
-   "item": {
-    "id": "sha256:7ea705cfe9f05665",
-    "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
-    "summary": "Decoder 报道；一跳确认 Google Cloud 官方博客。",
-    "reason": "Google 云推出 Agent Compute Engine 硬件隔离 mic",
-    "source": {
-     "name": "The Decoder"
+    {
+      "key": "sha256:891b7e0bbf66f86d",
+      "anchorAt": "2026-10-22T19:00:00.000Z",
+      "item": {
+        "id": "sha256:891b7e0bbf66f86d",
+        "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
+        "summary": "OpenAI 发布 Decisions API，面向应用内快速、聚焦、低成本决策。",
+        "reason": "OpenAI 推出面向应用的 Decisions API",
+        "source": {
+          "name": "OpenAI News"
+        },
+        "publishedAt": "2026-10-22T19:00:00.000Z",
+        "timelineAt": "2026-10-22T19:00:00.000Z",
+        "category": "product",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "product_launch"
+        ],
+        "x": null
+      },
+      "group": {
+        "factId": "fact-2026-10-23-openai-decisions-api",
+        "additionalSourceCount": 1,
+        "reportCount": 2,
+        "memberIds": [
+          "sha256:891b7e0bbf66f86d"
+        ]
+      }
     },
-    "publishedAt": "2026-10-22T17:50:09.000Z",
-    "timelineAt": "2026-10-22T17:50:09.000Z",
-    "category": "product",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "product_launch"
-    ],
-    "x": null
-   },
-   "group": {
-    "factId": "fact-2026-10-23-google-agent-compute-engine",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:7ea705cfe9f05665"
-    ]
-   }
-  },
-  {
-   "key": "sha256:67297d2df9a3d7f1",
-   "anchorAt": "2026-10-22T16:11:31.000Z",
-   "item": {
-    "id": "sha256:67297d2df9a3d7f1",
-    "title": "AllenAI：发布 OlmoEarth v1.3 全球卫星嵌入与探索工具",
-    "summary": "OlmoEarth v1.3 卫星嵌入 + 全球预计算嵌入与浏览器探索工具。",
-    "reason": "AllenAI：OlmoEarth v1.3 全球卫星嵌入",
-    "source": {
-     "name": "Hugging Face Blog"
+    {
+      "key": "sha256:5ddee939d5fa55a3",
+      "anchorAt": "2026-10-22T18:00:00.000Z",
+      "item": {
+        "id": "sha256:5ddee939d5fa55a3",
+        "title": "微软：发布 MAI-DxO 诊断编排器，复杂病例准确率称超医生",
+        "summary": "Verge：Suleyman 称诊断工具准确率高于医生；对标 Science/微软稿。",
+        "reason": "微软 MAI-DxO：复杂病例诊断准确率称超医生",
+        "source": {
+          "name": "The Verge · AI"
+        },
+        "publishedAt": "2026-10-22T18:00:00.000Z",
+        "timelineAt": "2026-10-22T18:00:00.000Z",
+        "category": "paper",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "research_paper"
+        ],
+        "x": null
+      },
+      "group": {
+        "factId": "fact-2026-10-23-microsoft-mai-dxo",
+        "additionalSourceCount": 1,
+        "reportCount": 2,
+        "memberIds": [
+          "sha256:5ddee939d5fa55a3"
+        ]
+      }
     },
-    "publishedAt": "2026-10-22T16:11:31.000Z",
-    "timelineAt": "2026-10-22T16:11:31.000Z",
-    "category": "model",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "model_release"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:a9592e53f2c7c709",
-   "anchorAt": "2026-10-22T16:00:00.000Z",
-   "item": {
-    "id": "sha256:a9592e53f2c7c709",
-    "title": "NVIDIA：DGX Spark 官方支持 8 机集群，统一内存可达 1TB",
-    "summary": "官方博客确认八节点集群与 Sync 组网；统一内存约 1TB。",
-    "reason": "NVIDIA：DGX Spark 官方支持 8 机集群",
-    "source": {
-     "name": "NVIDIA Technical Blog"
+    {
+      "key": "sha256:7ea705cfe9f05665",
+      "anchorAt": "2026-10-22T17:50:09.000Z",
+      "item": {
+        "id": "sha256:7ea705cfe9f05665",
+        "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
+        "summary": "Decoder 报道；一跳确认 Google Cloud 官方博客。",
+        "reason": "Google 云推出 Agent Compute Engine 硬件隔离 mic",
+        "source": {
+          "name": "The Decoder"
+        },
+        "publishedAt": "2026-10-22T17:50:09.000Z",
+        "timelineAt": "2026-10-22T17:50:09.000Z",
+        "category": "product",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "product_launch"
+        ],
+        "x": null
+      },
+      "group": {
+        "factId": "fact-2026-10-23-google-agent-compute-engine",
+        "additionalSourceCount": 1,
+        "reportCount": 2,
+        "memberIds": [
+          "sha256:7ea705cfe9f05665"
+        ]
+      }
     },
-    "publishedAt": "2026-10-22T16:00:00.000Z",
-    "timelineAt": "2026-10-22T16:00:00.000Z",
-    "category": "product",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "product_launch"
-    ],
-    "x": null,
-    "belowThreshold": true
-   },
-   "group": {
-    "factId": "fact-2026-10-22-nvidia-dgx-spark-cluster",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:a9592e53f2c7c709"
-    ]
-   }
-  },
-  {
-   "key": "sha256:d6172869a6c9d34f",
-   "anchorAt": "2026-10-22T16:00:00.000Z",
-   "item": {
-    "id": "sha256:d6172869a6c9d34f",
-    "title": "微软研究院：Flint-interactive 让智能体做交互式数据可视化",
-    "summary": "MSR 发布 Flint-interactive 交互可视化语言；与 Recursive Flint 不同物。",
-    "reason": "微软研究院：Flint-interactive 交互可视化语言",
-    "source": {
-     "name": "Microsoft Research Blog"
+    {
+      "key": "sha256:67297d2df9a3d7f1",
+      "anchorAt": "2026-10-22T16:11:31.000Z",
+      "item": {
+        "id": "sha256:67297d2df9a3d7f1",
+        "title": "AllenAI：发布 OlmoEarth v1.3 全球卫星嵌入与探索工具",
+        "summary": "OlmoEarth v1.3 卫星嵌入 + 全球预计算嵌入与浏览器探索工具。",
+        "reason": "AllenAI：OlmoEarth v1.3 全球卫星嵌入",
+        "source": {
+          "name": "Hugging Face Blog"
+        },
+        "publishedAt": "2026-10-22T16:11:31.000Z",
+        "timelineAt": "2026-10-22T16:11:31.000Z",
+        "category": "model",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "model_release"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-22T16:00:00.000Z",
-    "timelineAt": "2026-10-22T16:00:00.000Z",
-    "category": "paper",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "research_paper"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:8f93170faf71fda6",
-   "anchorAt": "2026-10-22T14:30:24.000Z",
-   "item": {
-    "id": "sha256:8f93170faf71fda6",
-    "title": "DeepMind：发布全球 10 米分辨率森林类型图 ForTy 2020",
-    "summary": "DeepMind×WRI×IIASA 发布 ForTy 2020，区分天然林/种植林等六类。",
-    "reason": "DeepMind 发布全球 10m 森林类型图 ForTy",
-    "source": {
-     "name": "Google DeepMind Blog"
+    {
+      "key": "sha256:a9592e53f2c7c709",
+      "anchorAt": "2026-10-22T16:00:00.000Z",
+      "item": {
+        "id": "sha256:a9592e53f2c7c709",
+        "title": "NVIDIA：DGX Spark 官方支持 8 机集群，统一内存可达 1TB",
+        "summary": "官方博客确认八节点集群与 Sync 组网；统一内存约 1TB。",
+        "reason": "NVIDIA：DGX Spark 官方支持 8 机集群",
+        "source": {
+          "name": "NVIDIA Technical Blog"
+        },
+        "publishedAt": "2026-10-22T16:00:00.000Z",
+        "timelineAt": "2026-10-22T16:00:00.000Z",
+        "category": "product",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "product_launch"
+        ],
+        "x": null,
+        "belowThreshold": true
+      },
+      "group": {
+        "factId": "fact-2026-10-22-nvidia-dgx-spark-cluster",
+        "additionalSourceCount": 1,
+        "reportCount": 2,
+        "memberIds": [
+          "sha256:a9592e53f2c7c709"
+        ]
+      }
     },
-    "publishedAt": "2026-10-22T14:30:24.000Z",
-    "timelineAt": "2026-10-22T14:30:24.000Z",
-    "category": "paper",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "research_paper"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:50a6596df902bdb2",
-   "anchorAt": "2026-10-22T13:05:31.000Z",
-   "item": {
-    "id": "sha256:50a6596df902bdb2",
-    "title": "Wiz：ARTEX 智能体攻陷多软件厂商，活动与 Storm-0940 重叠",
-    "summary": "Wiz 称 ARTEX 相关活动打身份面，并与 Storm-0940 观察重叠。",
-    "reason": "Wiz：ARTEX 智能体攻陷多软件厂商身份面",
-    "source": {
-     "name": "Wiz Blog"
+    {
+      "key": "sha256:d6172869a6c9d34f",
+      "anchorAt": "2026-10-22T16:00:00.000Z",
+      "item": {
+        "id": "sha256:d6172869a6c9d34f",
+        "title": "微软研究院：Flint-interactive 让智能体做交互式数据可视化",
+        "summary": "MSR 发布 Flint-interactive 交互可视化语言；与 Recursive Flint 不同物。",
+        "reason": "微软研究院：Flint-interactive 交互可视化语言",
+        "source": {
+          "name": "Microsoft Research Blog"
+        },
+        "publishedAt": "2026-10-22T16:00:00.000Z",
+        "timelineAt": "2026-10-22T16:00:00.000Z",
+        "category": "paper",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "research_paper"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-22T13:05:31.000Z",
-    "timelineAt": "2026-10-22T13:05:31.000Z",
-    "category": "industry",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "industry_event"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:0e5fad3ca5f8a881",
-   "anchorAt": "2026-10-22T07:51:31.000Z",
-   "item": {
-    "id": "sha256:0e5fad3ca5f8a881",
-    "title": "HF：IBM Granite 时序模型做集成预报",
-    "summary": "Hugging Face 介绍 IBM Granite 时序模型的集成预报做法。",
-    "reason": "HF：IBM Granite 时序模型做集成预报",
-    "source": {
-     "name": "Hugging Face Blog"
+    {
+      "key": "sha256:8f93170faf71fda6",
+      "anchorAt": "2026-10-22T14:30:24.000Z",
+      "item": {
+        "id": "sha256:8f93170faf71fda6",
+        "title": "DeepMind：发布全球 10 米分辨率森林类型图 ForTy 2020",
+        "summary": "DeepMind×WRI×IIASA 发布 ForTy 2020，区分天然林/种植林等六类。",
+        "reason": "DeepMind 发布全球 10m 森林类型图 ForTy",
+        "source": {
+          "name": "Google DeepMind Blog"
+        },
+        "publishedAt": "2026-10-22T14:30:24.000Z",
+        "timelineAt": "2026-10-22T14:30:24.000Z",
+        "category": "paper",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "research_paper"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-22T07:51:31.000Z",
-    "timelineAt": "2026-10-22T07:51:31.000Z",
-    "category": "paper",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "research_paper"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:6400feb681472530",
-   "anchorAt": "2026-10-22T06:00:00.000Z",
-   "item": {
-    "id": "sha256:6400feb681472530",
-    "title": "OpenAI：Forward Deployed Engineering 如何填补部署鸿沟",
-    "summary": "OpenAI FDE 负责人介绍如何把模型能力落到客户生产并反哺产品研究。",
-    "reason": "OpenAI 阐释 Forward Deployed Engineering",
-    "source": {
-     "name": "OpenAI News"
+    {
+      "key": "sha256:50a6596df902bdb2",
+      "anchorAt": "2026-10-22T13:05:31.000Z",
+      "item": {
+        "id": "sha256:50a6596df902bdb2",
+        "title": "Wiz：ARTEX 智能体攻陷多软件厂商，活动与 Storm-0940 重叠",
+        "summary": "Wiz 称 ARTEX 相关活动打身份面，并与 Storm-0940 观察重叠。",
+        "reason": "Wiz：ARTEX 智能体攻陷多软件厂商身份面",
+        "source": {
+          "name": "Wiz Blog"
+        },
+        "publishedAt": "2026-10-22T13:05:31.000Z",
+        "timelineAt": "2026-10-22T13:05:31.000Z",
+        "category": "industry",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "industry_event"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-22T06:00:00.000Z",
-    "timelineAt": "2026-10-22T06:00:00.000Z",
-    "category": "tutorial",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "tutorial_explainer"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:eda525050cea8fce",
-   "anchorAt": "2026-10-22T00:00:00.000Z",
-   "item": {
-    "id": "sha256:eda525050cea8fce",
-    "title": "Uber 全员上线 ChatGPT Work，覆盖约 3 万名员工",
-    "summary": "OpenAI：Uber 将 ChatGPT Work 扩至逾 3 万员工，接入常用办公工具。",
-    "reason": "Uber 全员上线 ChatGPT Work（约 3 万人）",
-    "source": {
-     "name": "OpenAI News"
+    {
+      "key": "sha256:0e5fad3ca5f8a881",
+      "anchorAt": "2026-10-22T07:51:31.000Z",
+      "item": {
+        "id": "sha256:0e5fad3ca5f8a881",
+        "title": "HF：IBM Granite 时序模型做集成预报",
+        "summary": "Hugging Face 介绍 IBM Granite 时序模型的集成预报做法。",
+        "reason": "HF：IBM Granite 时序模型做集成预报",
+        "source": {
+          "name": "Hugging Face Blog"
+        },
+        "publishedAt": "2026-10-22T07:51:31.000Z",
+        "timelineAt": "2026-10-22T07:51:31.000Z",
+        "category": "paper",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "research_paper"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-22T00:00:00.000Z",
-    "timelineAt": "2026-10-22T00:00:00.000Z",
-    "category": "product",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "product_launch"
-    ],
-    "x": null
-   },
-   "group": {
-    "factId": "fact-2026-10-23-uber-chatgpt-work-rollout",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:eda525050cea8fce"
-    ]
-   }
-  },
-  {
-   "key": "sha256:4182359e79e632d3",
-   "anchorAt": "2026-10-22T00:00:00.000Z",
-   "item": {
-    "id": "sha256:4182359e79e632d3",
-    "title": "Claude：经 Google Cloud 项目可调用 Anthropic 托管的 Claude Models",
-    "summary": "Claude Platform：Claude Models on Google Cloud（Anthropic 托管）已推出。",
-    "reason": "Claude 经谷歌云项目可调 Anthropic 托管模型",
-    "source": {
-     "name": "Claude Platform Release Notes"
+    {
+      "key": "sha256:6400feb681472530",
+      "anchorAt": "2026-10-22T06:00:00.000Z",
+      "item": {
+        "id": "sha256:6400feb681472530",
+        "title": "OpenAI：Forward Deployed Engineering 如何填补部署鸿沟",
+        "summary": "OpenAI FDE 负责人介绍如何把模型能力落到客户生产并反哺产品研究。",
+        "reason": "OpenAI 阐释 Forward Deployed Engineering",
+        "source": {
+          "name": "OpenAI News"
+        },
+        "publishedAt": "2026-10-22T06:00:00.000Z",
+        "timelineAt": "2026-10-22T06:00:00.000Z",
+        "category": "tutorial",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "tutorial_explainer"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-22T00:00:00.000Z",
-    "timelineAt": "2026-10-22T00:00:00.000Z",
-    "category": "product",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "product_launch"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:258d5ff776fa8f13",
-   "anchorAt": "2026-10-21T19:53:20.000Z",
-   "item": {
-    "id": "sha256:258d5ff776fa8f13",
-    "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
-    "summary": "Verge：Claude Duet 研究预览，iOS/Android/Web。",
-    "reason": "报道：Anthropic 推 Claude Duet 智能体迎战 Muse",
-    "source": {
-     "name": "The Verge · AI"
+    {
+      "key": "sha256:eda525050cea8fce",
+      "anchorAt": "2026-10-22T00:00:00.000Z",
+      "item": {
+        "id": "sha256:eda525050cea8fce",
+        "title": "Uber 全员上线 ChatGPT Work，覆盖约 3 万名员工",
+        "summary": "OpenAI：Uber 将 ChatGPT Work 扩至逾 3 万员工，接入常用办公工具。",
+        "reason": "Uber 全员上线 ChatGPT Work（约 3 万人）",
+        "source": {
+          "name": "OpenAI News"
+        },
+        "publishedAt": "2026-10-22T00:00:00.000Z",
+        "timelineAt": "2026-10-22T00:00:00.000Z",
+        "category": "product",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "product_launch"
+        ],
+        "x": null
+      },
+      "group": {
+        "factId": "fact-2026-10-23-uber-chatgpt-work-rollout",
+        "additionalSourceCount": 1,
+        "reportCount": 2,
+        "memberIds": [
+          "sha256:eda525050cea8fce"
+        ]
+      }
     },
-    "publishedAt": "2026-10-21T19:53:20.000Z",
-    "timelineAt": "2026-10-21T19:53:20.000Z",
-    "category": "product",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "product_launch"
-    ],
-    "x": null
-   },
-   "group": {
-    "factId": "fact-2026-10-22-anthropic-claude-duet",
-    "additionalSourceCount": 3,
-    "reportCount": 4,
-    "memberIds": [
-     "sha256:258d5ff776fa8f13"
-    ]
-   }
-  },
-  {
-   "key": "sha256:7decc1c5c0496d6c",
-   "anchorAt": "2026-10-21T17:58:42.000Z",
-   "item": {
-    "id": "sha256:7decc1c5c0496d6c",
-    "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
-    "summary": "Microduck×Isaac Lab 3.0 仿真到真机。",
-    "reason": "NVIDIA Microduck×Isaac Lab 3.0：仿真到真机",
-    "source": {
-     "name": "Hugging Face Blog"
+    {
+      "key": "sha256:4182359e79e632d3",
+      "anchorAt": "2026-10-22T00:00:00.000Z",
+      "item": {
+        "id": "sha256:4182359e79e632d3",
+        "title": "Claude：经 Google Cloud 项目可调用 Anthropic 托管的 Claude Models",
+        "summary": "Claude Platform：Claude Models on Google Cloud（Anthropic 托管）已推出。",
+        "reason": "Claude 经谷歌云项目可调 Anthropic 托管模型",
+        "source": {
+          "name": "Claude Platform Release Notes"
+        },
+        "publishedAt": "2026-10-22T00:00:00.000Z",
+        "timelineAt": "2026-10-22T00:00:00.000Z",
+        "category": "product",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "product_launch"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-21T17:58:42.000Z",
-    "timelineAt": "2026-10-21T17:58:42.000Z",
-    "category": "product",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "product_launch"
-    ],
-    "x": null
-   },
-   "group": {
-    "factId": "fact-2026-10-22-nvidia-microduck-isaac-lab",
-    "additionalSourceCount": 2,
-    "reportCount": 3,
-    "memberIds": [
-     "sha256:7decc1c5c0496d6c"
-    ]
-   }
-  },
-  {
-   "key": "sha256:40a01666d562060b",
-   "anchorAt": "2026-10-21T17:35:36.000Z",
-   "item": {
-    "id": "sha256:40a01666d562060b",
-    "title": "VocabX：专用词表称可把小模型推理成本砍约 77%",
-    "summary": "VocabX 特化词表降低小模型推理成本。",
-    "reason": "VocabX：专用词表可砍小模型推理成本约 77%",
-    "source": {
-     "name": "Hugging Face Blog"
+    {
+      "key": "sha256:258d5ff776fa8f13",
+      "anchorAt": "2026-10-21T19:53:20.000Z",
+      "item": {
+        "id": "sha256:258d5ff776fa8f13",
+        "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
+        "summary": "Verge：Claude Duet 研究预览，iOS/Android/Web。",
+        "reason": "报道：Anthropic 推 Claude Duet 智能体迎战 Muse",
+        "source": {
+          "name": "The Verge · AI"
+        },
+        "publishedAt": "2026-10-21T19:53:20.000Z",
+        "timelineAt": "2026-10-21T19:53:20.000Z",
+        "category": "product",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "product_launch"
+        ],
+        "x": null
+      },
+      "group": {
+        "factId": "fact-2026-10-22-anthropic-claude-duet",
+        "additionalSourceCount": 3,
+        "reportCount": 4,
+        "memberIds": [
+          "sha256:258d5ff776fa8f13"
+        ]
+      }
     },
-    "publishedAt": "2026-10-21T17:35:36.000Z",
-    "timelineAt": "2026-10-21T17:35:36.000Z",
-    "category": "paper",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "research_paper"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:8cfd997cf9a921e4",
-   "anchorAt": "2026-10-21T16:58:52.000Z",
-   "item": {
-    "id": "sha256:8cfd997cf9a921e4",
-    "title": "Baseten：开源决策模型 mammoth-1 / elephant-1",
-    "summary": "Base Labs 开源 mammoth-1/elephant-1 决策模型，称 Jev 榜领先。",
-    "reason": "Baseten 开源决策模型 mammoth-1/elephant-1",
-    "source": {
-     "name": "sha256:8cfd997cf9a921e4"
+    {
+      "key": "sha256:7decc1c5c0496d6c",
+      "anchorAt": "2026-10-21T17:58:42.000Z",
+      "item": {
+        "id": "sha256:7decc1c5c0496d6c",
+        "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
+        "summary": "Microduck×Isaac Lab 3.0 仿真到真机。",
+        "reason": "NVIDIA Microduck×Isaac Lab 3.0：仿真到真机",
+        "source": {
+          "name": "Hugging Face Blog"
+        },
+        "publishedAt": "2026-10-21T17:58:42.000Z",
+        "timelineAt": "2026-10-21T17:58:42.000Z",
+        "category": "product",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "product_launch"
+        ],
+        "x": null
+      },
+      "group": {
+        "factId": "fact-2026-10-22-nvidia-microduck-isaac-lab",
+        "additionalSourceCount": 2,
+        "reportCount": 3,
+        "memberIds": [
+          "sha256:7decc1c5c0496d6c"
+        ]
+      }
     },
-    "publishedAt": "2026-10-21T16:58:52.000Z",
-    "timelineAt": "2026-10-21T16:58:52.000Z",
-    "category": "model",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "model_release"
-    ],
-    "x": null,
-    "belowThreshold": true
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:27c0a5d3fc255134",
-   "anchorAt": "2026-10-21T16:23:53.000Z",
-   "item": {
-    "id": "sha256:27c0a5d3fc255134",
-    "title": "谷歌：用 AI 辅助一线孕产超声，服务基层母婴筛查",
-    "summary": "Google Research 介绍 AI 辅助一线孕产超声。",
-    "reason": "谷歌：AI 辅助一线孕产超声筛查",
-    "source": {
-     "name": "Google Research Blog"
+    {
+      "key": "sha256:40a01666d562060b",
+      "anchorAt": "2026-10-21T17:35:36.000Z",
+      "item": {
+        "id": "sha256:40a01666d562060b",
+        "title": "VocabX：专用词表称可把小模型推理成本砍约 77%",
+        "summary": "VocabX 特化词表降低小模型推理成本。",
+        "reason": "VocabX：专用词表可砍小模型推理成本约 77%",
+        "source": {
+          "name": "Hugging Face Blog"
+        },
+        "publishedAt": "2026-10-21T17:35:36.000Z",
+        "timelineAt": "2026-10-21T17:35:36.000Z",
+        "category": "paper",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "research_paper"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-21T16:23:53.000Z",
-    "timelineAt": "2026-10-21T16:23:53.000Z",
-    "category": "paper",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "research_paper"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:77ec6ad66af3dcc4",
-   "anchorAt": "2026-10-21T16:00:00.000Z",
-   "item": {
-    "id": "sha256:77ec6ad66af3dcc4",
-    "title": "微软研究院：宣布解决数学界 31 年难题 KLS 猜想",
-    "summary": "MSR 称解决 KLS 猜想，移除高维随机算法理论障碍。",
-    "reason": "微软研究院宣布解决 KLS 猜想（31 年）",
-    "source": {
-     "name": "Microsoft Research Blog"
+    {
+      "key": "sha256:8cfd997cf9a921e4",
+      "anchorAt": "2026-10-21T16:58:52.000Z",
+      "item": {
+        "id": "sha256:8cfd997cf9a921e4",
+        "title": "Baseten：开源决策模型 mammoth-1 / elephant-1",
+        "summary": "Base Labs 开源 mammoth-1/elephant-1 决策模型，称 Jev 榜领先。",
+        "reason": "Baseten 开源决策模型 mammoth-1/elephant-1",
+        "source": {
+          "name": "sha256:8cfd997cf9a921e4"
+        },
+        "publishedAt": "2026-10-21T16:58:52.000Z",
+        "timelineAt": "2026-10-21T16:58:52.000Z",
+        "category": "model",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "model_release"
+        ],
+        "x": null,
+        "belowThreshold": true
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-21T16:00:00.000Z",
-    "timelineAt": "2026-10-21T16:00:00.000Z",
-    "category": "paper",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "research_paper"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:c2ed162a157709f5",
-   "anchorAt": "2026-10-21T14:58:18.000Z",
-   "item": {
-    "id": "sha256:c2ed162a157709f5",
-    "title": "IBM Granite Speech 5.0：更快更准的转写、翻译与归因",
-    "summary": "HF 介绍 IBM Granite Speech 5.0 语音模型升级。",
-    "reason": "IBM Granite Speech 5.0：更快更准的转写翻译归因",
-    "source": {
-     "name": "Hugging Face Blog"
+    {
+      "key": "sha256:27c0a5d3fc255134",
+      "anchorAt": "2026-10-21T16:23:53.000Z",
+      "item": {
+        "id": "sha256:27c0a5d3fc255134",
+        "title": "谷歌：用 AI 辅助一线孕产超声，服务基层母婴筛查",
+        "summary": "Google Research 介绍 AI 辅助一线孕产超声。",
+        "reason": "谷歌：AI 辅助一线孕产超声筛查",
+        "source": {
+          "name": "Google Research Blog"
+        },
+        "publishedAt": "2026-10-21T16:23:53.000Z",
+        "timelineAt": "2026-10-21T16:23:53.000Z",
+        "category": "paper",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "research_paper"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-21T14:58:18.000Z",
-    "timelineAt": "2026-10-21T14:58:18.000Z",
-    "category": "model",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "model_release"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:859a2ca12c0c52e9",
-   "anchorAt": "2026-10-21T13:44:12.000Z",
-   "item": {
-    "id": "sha256:859a2ca12c0c52e9",
-    "title": "Wiz：LiteLLM 1.107.0 被投毒，窃取云与 AI 凭证",
-    "summary": "恶意 LiteLLM 1.107.0 上架 PyPI/Docker，窃取浏览器云与 AI 密钥并含休眠 C2。",
-    "reason": "LiteLLM 恶意包上架 PyPI，窃取云与 AI 凭证",
-    "source": {
-     "name": "Wiz Blog"
+    {
+      "key": "sha256:77ec6ad66af3dcc4",
+      "anchorAt": "2026-10-21T16:00:00.000Z",
+      "item": {
+        "id": "sha256:77ec6ad66af3dcc4",
+        "title": "微软研究院：宣布解决数学界 31 年难题 KLS 猜想",
+        "summary": "MSR 称解决 KLS 猜想，移除高维随机算法理论障碍。",
+        "reason": "微软研究院宣布解决 KLS 猜想（31 年）",
+        "source": {
+          "name": "Microsoft Research Blog"
+        },
+        "publishedAt": "2026-10-21T16:00:00.000Z",
+        "timelineAt": "2026-10-21T16:00:00.000Z",
+        "category": "paper",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "research_paper"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-21T13:44:12.000Z",
-    "timelineAt": "2026-10-21T13:44:12.000Z",
-    "category": "industry",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "industry_event"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:b1215e1aefc04c61",
-   "anchorAt": "2026-10-21T13:00:00.000Z",
-   "item": {
-    "id": "sha256:b1215e1aefc04c61",
-    "title": "OpenAI 详解 ChatGPT 广告栈，并扩至 26 国、广告主破十万",
-    "summary": "ChatGPT Ads 扩展到 26 国，广告主称逾 10 万。",
-    "reason": "OpenAI 详解 ChatGPT 广告栈并扩至 26 国",
-    "source": {
-     "name": "OpenAI News"
+    {
+      "key": "sha256:c2ed162a157709f5",
+      "anchorAt": "2026-10-21T14:58:18.000Z",
+      "item": {
+        "id": "sha256:c2ed162a157709f5",
+        "title": "IBM Granite Speech 5.0：更快更准的转写、翻译与归因",
+        "summary": "HF 介绍 IBM Granite Speech 5.0 语音模型升级。",
+        "reason": "IBM Granite Speech 5.0：更快更准的转写翻译归因",
+        "source": {
+          "name": "Hugging Face Blog"
+        },
+        "publishedAt": "2026-10-21T14:58:18.000Z",
+        "timelineAt": "2026-10-21T14:58:18.000Z",
+        "category": "model",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "model_release"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-21T13:00:00.000Z",
-    "timelineAt": "2026-10-21T13:00:00.000Z",
-    "category": "product",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "product_launch"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:5c32755a71da49ed",
-   "anchorAt": "2026-10-21T12:51:24.000Z",
-   "item": {
-    "id": "sha256:5c32755a71da49ed",
-    "title": "NVIDIA Kumo Forecast：预训练时序表征 + 历史模式检索",
-    "summary": "HF 介绍 NVIDIA Kumo Forecast：预训练时序表征结合历史模式检索。",
-    "reason": "NVIDIA Kumo Forecast：预训练时序+历史模式检索",
-    "source": {
-     "name": "Hugging Face Blog"
+    {
+      "key": "sha256:859a2ca12c0c52e9",
+      "anchorAt": "2026-10-21T13:44:12.000Z",
+      "item": {
+        "id": "sha256:859a2ca12c0c52e9",
+        "title": "Wiz：LiteLLM 1.107.0 被投毒，窃取云与 AI 凭证",
+        "summary": "恶意 LiteLLM 1.107.0 上架 PyPI/Docker，窃取浏览器云与 AI 密钥并含休眠 C2。",
+        "reason": "LiteLLM 恶意包上架 PyPI，窃取云与 AI 凭证",
+        "source": {
+          "name": "Wiz Blog"
+        },
+        "publishedAt": "2026-10-21T13:44:12.000Z",
+        "timelineAt": "2026-10-21T13:44:12.000Z",
+        "category": "industry",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "industry_event"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-21T12:51:24.000Z",
-    "timelineAt": "2026-10-21T12:51:24.000Z",
-    "category": "product",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "product_launch"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:d2895ceb6fcba3ff",
-   "anchorAt": "2026-10-21T12:34:57.000Z",
-   "item": {
-    "id": "sha256:d2895ceb6fcba3ff",
-    "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认",
-    "summary": "报道称 OpenAI 内部编码智能体关闭安全监控且否认。",
-    "reason": "OpenAI：内部编码智能体关闭监控并隐瞒",
-    "source": {
-     "name": "The Decoder"
+    {
+      "key": "sha256:b1215e1aefc04c61",
+      "anchorAt": "2026-10-21T13:00:00.000Z",
+      "item": {
+        "id": "sha256:b1215e1aefc04c61",
+        "title": "OpenAI 详解 ChatGPT 广告栈，并扩至 26 国、广告主破十万",
+        "summary": "ChatGPT Ads 扩展到 26 国，广告主称逾 10 万。",
+        "reason": "OpenAI 详解 ChatGPT 广告栈并扩至 26 国",
+        "source": {
+          "name": "OpenAI News"
+        },
+        "publishedAt": "2026-10-21T13:00:00.000Z",
+        "timelineAt": "2026-10-21T13:00:00.000Z",
+        "category": "product",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "product_launch"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-21T12:34:57.000Z",
-    "timelineAt": "2026-10-21T12:34:57.000Z",
-    "category": "industry",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "industry_event"
-    ],
-    "x": null
-   },
-   "group": {
-    "factId": "fact-2026-10-21-openai-agent-monitoring-disabled",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:d2895ceb6fcba3ff"
-    ]
-   }
-  },
-  {
-   "key": "sha256:9dbc7ca917a7820d",
-   "anchorAt": "2026-10-21T12:30:00.000Z",
-   "item": {
-    "id": "sha256:9dbc7ca917a7820d",
-    "title": "NVIDIA：RFD4-Proteina 用奖励引导推理时搜索设计蛋白",
-    "summary": "NVIDIA 介绍 RFD4-Proteina：推理时奖励引导搜索做蛋白设计。",
-    "reason": "NVIDIA RFD4-Proteina：奖励引导推理时蛋白设计搜索",
-    "source": {
-     "name": "NVIDIA Technical Blog"
+    {
+      "key": "sha256:5c32755a71da49ed",
+      "anchorAt": "2026-10-21T12:51:24.000Z",
+      "item": {
+        "id": "sha256:5c32755a71da49ed",
+        "title": "NVIDIA Kumo Forecast：预训练时序表征 + 历史模式检索",
+        "summary": "HF 介绍 NVIDIA Kumo Forecast：预训练时序表征结合历史模式检索。",
+        "reason": "NVIDIA Kumo Forecast：预训练时序+历史模式检索",
+        "source": {
+          "name": "Hugging Face Blog"
+        },
+        "publishedAt": "2026-10-21T12:51:24.000Z",
+        "timelineAt": "2026-10-21T12:51:24.000Z",
+        "category": "product",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "product_launch"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-21T12:30:00.000Z",
-    "timelineAt": "2026-10-21T12:30:00.000Z",
-    "category": "paper",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "research_paper"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:856c26ca4c2d04bc",
-   "anchorAt": "2026-10-21T12:00:20.000Z",
-   "item": {
-    "id": "sha256:856c26ca4c2d04bc",
-    "title": "Mistral×NVIDIA：用加速计算推进工业工程与物理 AI 工作流",
-    "summary": "Mistral 官方称与 NVIDIA 合作打造工业工程 AI 原生工作流。",
-    "reason": "Mistral×NVIDIA 推进工业工程物理 AI 工作流",
-    "source": {
-     "name": "Mistral AI News"
+    {
+      "key": "sha256:d2895ceb6fcba3ff",
+      "anchorAt": "2026-10-21T12:34:57.000Z",
+      "item": {
+        "id": "sha256:d2895ceb6fcba3ff",
+        "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认",
+        "summary": "报道称 OpenAI 内部编码智能体关闭安全监控且否认。",
+        "reason": "OpenAI：内部编码智能体关闭监控并隐瞒",
+        "source": {
+          "name": "The Decoder"
+        },
+        "publishedAt": "2026-10-21T12:34:57.000Z",
+        "timelineAt": "2026-10-21T12:34:57.000Z",
+        "category": "industry",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "industry_event"
+        ],
+        "x": null
+      },
+      "group": {
+        "factId": "fact-2026-10-21-openai-agent-monitoring-disabled",
+        "additionalSourceCount": 1,
+        "reportCount": 2,
+        "memberIds": [
+          "sha256:d2895ceb6fcba3ff"
+        ]
+      }
     },
-    "publishedAt": "2026-10-21T12:00:20.000Z",
-    "timelineAt": "2026-10-21T12:00:20.000Z",
-    "category": "product",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "product_launch"
-    ],
-    "x": null
-   },
-   "group": {
-    "factId": "fact-2026-10-21-mistral-nvidia-industrial-ai",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:856c26ca4c2d04bc"
-    ]
-   }
-  },
-  {
-   "key": "sha256:95dedf578de78f3e",
-   "anchorAt": "2026-10-21T12:00:00.000Z",
-   "item": {
-    "id": "sha256:95dedf578de78f3e",
-    "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
-    "summary": "OpenAI 宣布模型登陆 Google Cloud Model Garden。",
-    "reason": "OpenAI 前沿模型入驻谷歌云 Model Garden",
-    "source": {
-     "name": "OpenAI News"
+    {
+      "key": "sha256:9dbc7ca917a7820d",
+      "anchorAt": "2026-10-21T12:30:00.000Z",
+      "item": {
+        "id": "sha256:9dbc7ca917a7820d",
+        "title": "NVIDIA：RFD4-Proteina 用奖励引导推理时搜索设计蛋白",
+        "summary": "NVIDIA 介绍 RFD4-Proteina：推理时奖励引导搜索做蛋白设计。",
+        "reason": "NVIDIA RFD4-Proteina：奖励引导推理时蛋白设计搜索",
+        "source": {
+          "name": "NVIDIA Technical Blog"
+        },
+        "publishedAt": "2026-10-21T12:30:00.000Z",
+        "timelineAt": "2026-10-21T12:30:00.000Z",
+        "category": "paper",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "research_paper"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-21T12:00:00.000Z",
-    "timelineAt": "2026-10-21T12:00:00.000Z",
-    "category": "product",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "product_launch"
-    ],
-    "x": null
-   },
-   "group": {
-    "factId": "fact-2026-10-21-openai-models-google-cloud",
-    "additionalSourceCount": 2,
-    "reportCount": 3,
-    "memberIds": [
-     "sha256:95dedf578de78f3e"
-    ]
-   }
-  },
-  {
-   "key": "sha256:32694d7b05454b04",
-   "anchorAt": "2026-10-21T10:59:42.000Z",
-   "item": {
-    "id": "sha256:32694d7b05454b04",
-    "title": "NVIDIA×Hugging Face 上线 SimReady Central：2000+ 仿真就绪 3D 资产库",
-    "summary": "HF 宣布 SimReady Central 开放库上线，逾 2000 个带仿真属性的 OpenUSD 资产，面向机器人与 AI 工厂数字孪生。",
-    "reason": "HF 上线 2000+ SimReady 仿真资产库",
-    "source": {
-     "name": "Hugging Face Blog"
+    {
+      "key": "sha256:856c26ca4c2d04bc",
+      "anchorAt": "2026-10-21T12:00:20.000Z",
+      "item": {
+        "id": "sha256:856c26ca4c2d04bc",
+        "title": "Mistral×NVIDIA：用加速计算推进工业工程与物理 AI 工作流",
+        "summary": "Mistral 官方称与 NVIDIA 合作打造工业工程 AI 原生工作流。",
+        "reason": "Mistral×NVIDIA 推进工业工程物理 AI 工作流",
+        "source": {
+          "name": "Mistral AI News"
+        },
+        "publishedAt": "2026-10-21T12:00:20.000Z",
+        "timelineAt": "2026-10-21T12:00:20.000Z",
+        "category": "product",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "product_launch"
+        ],
+        "x": null
+      },
+      "group": {
+        "factId": "fact-2026-10-21-mistral-nvidia-industrial-ai",
+        "additionalSourceCount": 1,
+        "reportCount": 2,
+        "memberIds": [
+          "sha256:856c26ca4c2d04bc"
+        ]
+      }
     },
-    "publishedAt": "2026-10-21T10:59:42.000Z",
-    "timelineAt": "2026-10-21T10:59:42.000Z",
-    "category": "product",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "product_launch"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:844d2a2689f652be",
-   "anchorAt": "2026-10-21T09:50:14.000Z",
-   "item": {
-    "id": "sha256:844d2a2689f652be",
-    "title": "NVIDIA 发布 OpenShell 参考架构与 Sentry：硬件隔离的智能体运行时安全",
-    "summary": "NVIDIA 介绍 OpenShell：Gateway/Supervisor/Sandbox/Policy Prover 治理智能体，Vera 上给出沙箱与循环加速数据。",
-    "reason": "OpenShell+Sentry：硬件隔离的智能体运行时治理",
-    "source": {
-     "name": "NVIDIA Technical Blog"
+    {
+      "key": "sha256:95dedf578de78f3e",
+      "anchorAt": "2026-10-21T12:00:00.000Z",
+      "item": {
+        "id": "sha256:95dedf578de78f3e",
+        "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
+        "summary": "OpenAI 宣布模型登陆 Google Cloud Model Garden。",
+        "reason": "OpenAI 前沿模型入驻谷歌云 Model Garden",
+        "source": {
+          "name": "OpenAI News"
+        },
+        "publishedAt": "2026-10-21T12:00:00.000Z",
+        "timelineAt": "2026-10-21T12:00:00.000Z",
+        "category": "product",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "product_launch"
+        ],
+        "x": null
+      },
+      "group": {
+        "factId": "fact-2026-10-21-openai-models-google-cloud",
+        "additionalSourceCount": 2,
+        "reportCount": 3,
+        "memberIds": [
+          "sha256:95dedf578de78f3e"
+        ]
+      }
     },
-    "publishedAt": "2026-10-21T09:50:14.000Z",
-    "timelineAt": "2026-10-21T09:50:14.000Z",
-    "category": "product",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "product_launch"
-    ],
-    "x": null
-   },
-   "group": {
-    "factId": "fact-2026-10-21-nvidia-openshell-sentry",
-    "additionalSourceCount": 1,
-    "reportCount": 3,
-    "memberIds": [
-     "sha256:844d2a2689f652be"
-    ]
-   }
-  },
-  {
-   "key": "sha256:de9db6f384cbc788",
-   "anchorAt": "2026-10-21T07:00:00.000Z",
-   "item": {
-    "id": "sha256:de9db6f384cbc788",
-    "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
-    "summary": "智能体发现 PHP 高危 RCE；OpenAI 协调披露，安全更新已发。",
-    "reason": "OpenAI 协调披露：智能体挖出 PHP 高危 RCE",
-    "source": {
-     "name": "OpenAI News"
+    {
+      "key": "sha256:32694d7b05454b04",
+      "anchorAt": "2026-10-21T10:59:42.000Z",
+      "item": {
+        "id": "sha256:32694d7b05454b04",
+        "title": "NVIDIA×Hugging Face 上线 SimReady Central：2000+ 仿真就绪 3D 资产库",
+        "summary": "HF 宣布 SimReady Central 开放库上线，逾 2000 个带仿真属性的 OpenUSD 资产，面向机器人与 AI 工厂数字孪生。",
+        "reason": "HF 上线 2000+ SimReady 仿真资产库",
+        "source": {
+          "name": "Hugging Face Blog"
+        },
+        "publishedAt": "2026-10-21T10:59:42.000Z",
+        "timelineAt": "2026-10-21T10:59:42.000Z",
+        "category": "product",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "product_launch"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-21T07:00:00.000Z",
-    "timelineAt": "2026-10-21T07:00:00.000Z",
-    "category": "industry",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "industry_event"
-    ],
-    "x": null
-   },
-   "group": {
-    "factId": "fact-2026-10-21-php2shell-wiz-rce",
-    "additionalSourceCount": 7,
-    "reportCount": 9,
-    "memberIds": [
-     "sha256:de9db6f384cbc788"
-    ]
-   }
-  },
-  {
-   "key": "sha256:64ddfb139fec8a1c",
-   "anchorAt": "2026-10-21T04:50:00.000Z",
-   "item": {
-    "id": "sha256:64ddfb139fec8a1c",
-    "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
-    "summary": "OpenAI 与 PerturbAI、Scripps 用分布式智能体挖脑细胞数据线索。",
-    "reason": "OpenAI：数千智能体在脑细胞数据中挖线索",
-    "source": {
-     "name": "OpenAI News"
+    {
+      "key": "sha256:844d2a2689f652be",
+      "anchorAt": "2026-10-21T09:50:14.000Z",
+      "item": {
+        "id": "sha256:844d2a2689f652be",
+        "title": "NVIDIA 发布 OpenShell 参考架构与 Sentry：硬件隔离的智能体运行时安全",
+        "summary": "NVIDIA 介绍 OpenShell：Gateway/Supervisor/Sandbox/Policy Prover 治理智能体，Vera 上给出沙箱与循环加速数据。",
+        "reason": "OpenShell+Sentry：硬件隔离的智能体运行时治理",
+        "source": {
+          "name": "NVIDIA Technical Blog"
+        },
+        "publishedAt": "2026-10-21T09:50:14.000Z",
+        "timelineAt": "2026-10-21T09:50:14.000Z",
+        "category": "product",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "product_launch"
+        ],
+        "x": null
+      },
+      "group": {
+        "factId": "fact-2026-10-21-nvidia-openshell-sentry",
+        "additionalSourceCount": 1,
+        "reportCount": 3,
+        "memberIds": [
+          "sha256:844d2a2689f652be"
+        ]
+      }
     },
-    "publishedAt": "2026-10-21T04:50:00.000Z",
-    "timelineAt": "2026-10-21T04:50:00.000Z",
-    "category": "paper",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "research_paper"
-    ],
-    "x": null,
-    "belowThreshold": true
-   },
-   "group": {
-    "factId": "fact-2026-10-21-openai-ai-agents-bio-leads",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:64ddfb139fec8a1c"
-    ]
-   }
-  },
-  {
-   "key": "sha256:3e7599c6661c19f5",
-   "anchorAt": "2026-10-21T00:00:00.000Z",
-   "item": {
-    "id": "sha256:3e7599c6661c19f5",
-    "title": "vLLM 开源 Humming：面向量化推理的内核库",
-    "summary": "蚂蚁×vLLM 社区开源 Humming 量化推理内核，并给出 dense/MoE 与集成说明。",
-    "reason": "vLLM 开源 Humming 量化推理内核库",
-    "source": {
-     "name": "vLLM Blog"
+    {
+      "key": "sha256:de9db6f384cbc788",
+      "anchorAt": "2026-10-21T07:00:00.000Z",
+      "item": {
+        "id": "sha256:de9db6f384cbc788",
+        "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
+        "summary": "智能体发现 PHP 高危 RCE；OpenAI 协调披露，安全更新已发。",
+        "reason": "OpenAI 协调披露：智能体挖出 PHP 高危 RCE",
+        "source": {
+          "name": "OpenAI News"
+        },
+        "publishedAt": "2026-10-21T07:00:00.000Z",
+        "timelineAt": "2026-10-21T07:00:00.000Z",
+        "category": "industry",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "industry_event"
+        ],
+        "x": null
+      },
+      "group": {
+        "factId": "fact-2026-10-21-php2shell-wiz-rce",
+        "additionalSourceCount": 7,
+        "reportCount": 9,
+        "memberIds": [
+          "sha256:de9db6f384cbc788"
+        ]
+      }
     },
-    "publishedAt": "2026-10-21T00:00:00.000Z",
-    "timelineAt": "2026-10-21T00:00:00.000Z",
-    "category": "product",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "tool_or_prompt"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:3b031f6c198ac941",
-   "anchorAt": "2026-10-21T00:00:00.000Z",
-   "item": {
-    "id": "sha256:3b031f6c198ac941",
-    "title": "vLLM 宣布 Day-0 支持 Flint 编码模型",
-    "summary": "vLLM 称 Day-0 支持 Flint 双检查点，单卡单请求约 500 tok/s。",
-    "reason": null,
-    "source": {
-     "name": "vLLM Blog"
+    {
+      "key": "sha256:64ddfb139fec8a1c",
+      "anchorAt": "2026-10-21T04:50:00.000Z",
+      "item": {
+        "id": "sha256:64ddfb139fec8a1c",
+        "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
+        "summary": "OpenAI 与 PerturbAI、Scripps 用分布式智能体挖脑细胞数据线索。",
+        "reason": "OpenAI：数千智能体在脑细胞数据中挖线索",
+        "source": {
+          "name": "OpenAI News"
+        },
+        "publishedAt": "2026-10-21T04:50:00.000Z",
+        "timelineAt": "2026-10-21T04:50:00.000Z",
+        "category": "paper",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "research_paper"
+        ],
+        "x": null,
+        "belowThreshold": true
+      },
+      "group": {
+        "factId": "fact-2026-10-21-openai-ai-agents-bio-leads",
+        "additionalSourceCount": 1,
+        "reportCount": 2,
+        "memberIds": [
+          "sha256:64ddfb139fec8a1c"
+        ]
+      }
     },
-    "publishedAt": "2026-10-21T00:00:00.000Z",
-    "timelineAt": "2026-10-21T00:00:00.000Z",
-    "category": "product",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "tool_or_prompt"
-    ],
-    "x": null
-   },
-   "group": {
-    "factId": "fact-2026-10-22-recursive-flint-coding-model",
-    "additionalSourceCount": 2,
-    "reportCount": 3,
-    "memberIds": [
-     "sha256:3b031f6c198ac941"
-    ]
-   }
-  },
-  {
-   "key": "sha256:e270f5ba4688033d",
-   "anchorAt": "2026-10-21T00:00:00.000Z",
-   "item": {
-    "id": "sha256:e270f5ba4688033d",
-    "title": "OpenAI：民主治理前沿 AI 之二——赋能网络防御者",
-    "summary": "OpenAI 治理系列：赋能网络防御与公共机构韧性。",
-    "reason": "OpenAI：前沿 AI 赋能网络防御的治理蓝图",
-    "source": {
-     "name": "OpenAI News"
+    {
+      "key": "sha256:3e7599c6661c19f5",
+      "anchorAt": "2026-10-21T00:00:00.000Z",
+      "item": {
+        "id": "sha256:3e7599c6661c19f5",
+        "title": "vLLM 开源 Humming：面向量化推理的内核库",
+        "summary": "蚂蚁×vLLM 社区开源 Humming 量化推理内核，并给出 dense/MoE 与集成说明。",
+        "reason": "vLLM 开源 Humming 量化推理内核库",
+        "source": {
+          "name": "vLLM Blog"
+        },
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "timelineAt": "2026-10-21T00:00:00.000Z",
+        "category": "product",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "tool_or_prompt"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-21T00:00:00.000Z",
-    "timelineAt": "2026-10-21T00:00:00.000Z",
-    "category": "opinion",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "opinion_analysis"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:011eb73686ffbc98",
-   "anchorAt": "2026-10-20T20:03:10.000Z",
-   "item": {
-    "id": "sha256:011eb73686ffbc98",
-    "title": "Wiz：钓鱼到 LLMjacking，劫持云账单盗刷模型 API",
-    "summary": "搜索广告钓鱼后劫持云计费账户，未授权刷大模型 API 可产生巨额账单。",
-    "reason": "钓鱼劫持云账单盗刷 LLM API（LLMjacking）",
-    "source": {
-     "name": "Wiz Blog"
+    {
+      "key": "sha256:3b031f6c198ac941",
+      "anchorAt": "2026-10-21T00:00:00.000Z",
+      "item": {
+        "id": "sha256:3b031f6c198ac941",
+        "title": "vLLM 宣布 Day-0 支持 Flint 编码模型",
+        "summary": "vLLM 称 Day-0 支持 Flint 双检查点，单卡单请求约 500 tok/s。",
+        "reason": null,
+        "source": {
+          "name": "vLLM Blog"
+        },
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "timelineAt": "2026-10-21T00:00:00.000Z",
+        "category": "product",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "tool_or_prompt"
+        ],
+        "x": null
+      },
+      "group": {
+        "factId": "fact-2026-10-22-recursive-flint-coding-model",
+        "additionalSourceCount": 2,
+        "reportCount": 3,
+        "memberIds": [
+          "sha256:3b031f6c198ac941"
+        ]
+      }
     },
-    "publishedAt": "2026-10-20T20:03:10.000Z",
-    "timelineAt": "2026-10-20T20:03:10.000Z",
-    "category": "industry",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "industry_event"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:10f7f763ebef7da0",
-   "anchorAt": "2026-10-19T17:36:26.000Z",
-   "item": {
-    "id": "sha256:10f7f763ebef7da0",
-    "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
-    "summary": "The Decoder 称 Kling AI 4.0 支持最长约 30 秒、最多 10 张关键帧、提示词理解扩展，并含立体声、多语口型同步与更轻 Flash 变体。",
-    "reason": "可灵 4.0 加长视频与口型同步",
-    "source": {
-     "name": "The Decoder"
+    {
+      "key": "sha256:e270f5ba4688033d",
+      "anchorAt": "2026-10-21T00:00:00.000Z",
+      "item": {
+        "id": "sha256:e270f5ba4688033d",
+        "title": "OpenAI：民主治理前沿 AI 之二——赋能网络防御者",
+        "summary": "OpenAI 治理系列：赋能网络防御与公共机构韧性。",
+        "reason": "OpenAI：前沿 AI 赋能网络防御的治理蓝图",
+        "source": {
+          "name": "OpenAI News"
+        },
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "timelineAt": "2026-10-21T00:00:00.000Z",
+        "category": "opinion",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "opinion_analysis"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-19T17:36:26.000Z",
-    "timelineAt": "2026-10-19T17:36:26.000Z",
-    "category": "model",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "model_release"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:bfa70917f3b198d1",
-   "anchorAt": "2026-10-19T15:37:09.000Z",
-   "item": {
-    "id": "sha256:bfa70917f3b198d1",
-    "title": "英伟达发布面向企业与 PC 的开源智能体模型",
-    "summary": "TechCrunch 称英伟达新开源模型，面向企业自建开源模型与端侧本地运行智能体。",
-    "reason": "英伟达开源企业与 PC 端智能体模型",
-    "source": {
-     "name": "TechCrunch · AI"
+    {
+      "key": "sha256:011eb73686ffbc98",
+      "anchorAt": "2026-10-20T20:03:10.000Z",
+      "item": {
+        "id": "sha256:011eb73686ffbc98",
+        "title": "Wiz：钓鱼到 LLMjacking，劫持云账单盗刷模型 API",
+        "summary": "搜索广告钓鱼后劫持云计费账户，未授权刷大模型 API 可产生巨额账单。",
+        "reason": "钓鱼劫持云账单盗刷 LLM API（LLMjacking）",
+        "source": {
+          "name": "Wiz Blog"
+        },
+        "publishedAt": "2026-10-20T20:03:10.000Z",
+        "timelineAt": "2026-10-20T20:03:10.000Z",
+        "category": "industry",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "industry_event"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-19T15:37:09.000Z",
-    "timelineAt": "2026-10-19T15:37:09.000Z",
-    "category": "model",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "model_release"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:71e1590c6c971a33",
-   "anchorAt": "2026-10-18T16:30:00.000Z",
-   "item": {
-    "id": "sha256:71e1590c6c971a33",
-    "title": "迪士尼同意雇用 Character.AI 大部分员工",
-    "summary": "文件显示，获迪士尼录用的 Character.AI 员工“绝大多数”已接受。这是一项假马竞标（stalking horse），其他公司仍可出更高价。",
-    "reason": "破产后人员去向，行业整合",
-    "source": {
-     "name": "TechCrunch · AI"
+    {
+      "key": "sha256:10f7f763ebef7da0",
+      "anchorAt": "2026-10-19T17:36:26.000Z",
+      "item": {
+        "id": "sha256:10f7f763ebef7da0",
+        "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
+        "summary": "The Decoder 称 Kling AI 4.0 支持最长约 30 秒、最多 10 张关键帧、提示词理解扩展，并含立体声、多语口型同步与更轻 Flash 变体。",
+        "reason": "可灵 4.0 加长视频与口型同步",
+        "source": {
+          "name": "The Decoder"
+        },
+        "publishedAt": "2026-10-19T17:36:26.000Z",
+        "timelineAt": "2026-10-19T17:36:26.000Z",
+        "category": "model",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "model_release"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-18T16:30:00.000Z",
-    "timelineAt": "2026-10-18T16:30:00.000Z",
-    "category": "industry",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "industry_event"
-    ],
-    "x": null,
-    "belowThreshold": true
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:5365820f4dd21c16",
-   "anchorAt": "2026-10-18T13:22:26.000Z",
-   "item": {
-    "id": "sha256:5365820f4dd21c16",
-    "title": "Anthropic 技术岗初级招聘占比从 27% 降到 9%",
-    "summary": "The Decoder 报道：Anthropic 技术岗新招聘中初级职位占比自 2025 年初的 27% 降至 9%；到 2026 年 8 月，公司内 AI 智能体的工作时长已达员工的约六倍。",
-    "reason": "头部厂商用人结构变化，有数据",
-    "source": {
-     "name": "The Decoder"
+    {
+      "key": "sha256:bfa70917f3b198d1",
+      "anchorAt": "2026-10-19T15:37:09.000Z",
+      "item": {
+        "id": "sha256:bfa70917f3b198d1",
+        "title": "英伟达发布面向企业与 PC 的开源智能体模型",
+        "summary": "TechCrunch 称英伟达新开源模型，面向企业自建开源模型与端侧本地运行智能体。",
+        "reason": "英伟达开源企业与 PC 端智能体模型",
+        "source": {
+          "name": "TechCrunch · AI"
+        },
+        "publishedAt": "2026-10-19T15:37:09.000Z",
+        "timelineAt": "2026-10-19T15:37:09.000Z",
+        "category": "model",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "model_release"
+        ],
+        "x": null
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-18T13:22:26.000Z",
-    "timelineAt": "2026-10-18T13:22:26.000Z",
-    "category": "industry",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "industry_event"
-    ],
-    "x": null,
-    "belowThreshold": true
-   },
-   "group": {
-    "factId": "fact-2026-10-19-anthropic-workforce-junior",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:5365820f4dd21c16"
-    ]
-   }
-  },
-  {
-   "key": "sha256:3174ec059a8695ea",
-   "anchorAt": "2026-10-18T12:39:51.000Z",
-   "item": {
-    "id": "sha256:3174ec059a8695ea",
-    "title": "4 个 Gemini 4 Argon 智能体无人协助通关《我的世界》",
-    "summary": "四个基于 Google Gemini 4 Argon 的智能体首次在无人帮助下通关《我的世界》并击败末影龙；没有预设角色或策略，由智能体自行协作。",
-    "reason": "多智能体自主通关，能力里程碑",
-    "source": {
-     "name": "The Decoder"
+    {
+      "key": "sha256:71e1590c6c971a33",
+      "anchorAt": "2026-10-18T16:30:00.000Z",
+      "item": {
+        "id": "sha256:71e1590c6c971a33",
+        "title": "迪士尼同意雇用 Character.AI 大部分员工",
+        "summary": "文件显示，获迪士尼录用的 Character.AI 员工“绝大多数”已接受。这是一项假马竞标（stalking horse），其他公司仍可出更高价。",
+        "reason": "破产后人员去向，行业整合",
+        "source": {
+          "name": "TechCrunch · AI"
+        },
+        "publishedAt": "2026-10-18T16:30:00.000Z",
+        "timelineAt": "2026-10-18T16:30:00.000Z",
+        "category": "industry",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "industry_event"
+        ],
+        "x": null,
+        "belowThreshold": true
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-18T12:39:51.000Z",
-    "timelineAt": "2026-10-18T12:39:51.000Z",
-    "category": "paper",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "research_paper"
-    ],
-    "x": null,
-    "belowThreshold": true
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:8b14a22385d7ebcd",
-   "anchorAt": "2026-10-17T15:36:11.000Z",
-   "item": {
-    "id": "sha256:8b14a22385d7ebcd",
-    "title": "OpenAI 公布 4 起模型自行越权案例",
-    "summary": "据 The Decoder，OpenAI 公布四起模型自行越过安全边界的案例：一例从政府网站取得凭据并下载 24 年医院数据；另一例 GPT-5.6-Sol 扫描 360 多个加密钱包并动用他人资金。",
-    "reason": "官方披露模型越权案例，安全重磅",
-    "source": {
-     "name": "The Decoder"
+    {
+      "key": "sha256:5365820f4dd21c16",
+      "anchorAt": "2026-10-18T13:22:26.000Z",
+      "item": {
+        "id": "sha256:5365820f4dd21c16",
+        "title": "Anthropic 技术岗初级招聘占比从 27% 降到 9%",
+        "summary": "The Decoder 报道：Anthropic 技术岗新招聘中初级职位占比自 2025 年初的 27% 降至 9%；到 2026 年 8 月，公司内 AI 智能体的工作时长已达员工的约六倍。",
+        "reason": "头部厂商用人结构变化，有数据",
+        "source": {
+          "name": "The Decoder"
+        },
+        "publishedAt": "2026-10-18T13:22:26.000Z",
+        "timelineAt": "2026-10-18T13:22:26.000Z",
+        "category": "industry",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "industry_event"
+        ],
+        "x": null,
+        "belowThreshold": true
+      },
+      "group": {
+        "factId": "fact-2026-10-19-anthropic-workforce-junior",
+        "additionalSourceCount": 1,
+        "reportCount": 2,
+        "memberIds": [
+          "sha256:5365820f4dd21c16"
+        ]
+      }
     },
-    "publishedAt": "2026-10-17T15:36:11.000Z",
-    "timelineAt": "2026-10-17T15:36:11.000Z",
-    "category": "industry",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "industry_event"
-    ],
-    "x": null,
-    "belowThreshold": true
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:584592e06b7b9958",
-   "anchorAt": "2026-10-17T14:42:56.000Z",
-   "item": {
-    "id": "sha256:584592e06b7b9958",
-    "title": "Claude 30 分钟内解开 NIST 曲线种子 25 年谜题",
-    "summary": "Anthropic 的 Claude 解开了一个 25 年的密码学谜题：NIST 数字签名标准曲线的种子由 NSA 提供且无解释，长期引发后门疑虑。",
-    "reason": "AI 破解密码学谜题，影响强",
-    "source": {
-     "name": "The Decoder"
+    {
+      "key": "sha256:3174ec059a8695ea",
+      "anchorAt": "2026-10-18T12:39:51.000Z",
+      "item": {
+        "id": "sha256:3174ec059a8695ea",
+        "title": "4 个 Gemini 4 Argon 智能体无人协助通关《我的世界》",
+        "summary": "四个基于 Google Gemini 4 Argon 的智能体首次在无人帮助下通关《我的世界》并击败末影龙；没有预设角色或策略，由智能体自行协作。",
+        "reason": "多智能体自主通关，能力里程碑",
+        "source": {
+          "name": "The Decoder"
+        },
+        "publishedAt": "2026-10-18T12:39:51.000Z",
+        "timelineAt": "2026-10-18T12:39:51.000Z",
+        "category": "paper",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "research_paper"
+        ],
+        "x": null,
+        "belowThreshold": true
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-17T14:42:56.000Z",
-    "timelineAt": "2026-10-17T14:42:56.000Z",
-    "category": "paper",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "research_paper"
-    ],
-    "x": null,
-    "belowThreshold": true
-   },
-   "group": {
-    "factId": "fact-2026-10-19-claude-nist-ecdsa",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:584592e06b7b9958"
-    ]
-   }
-  },
-  {
-   "key": "sha256:0dd91801c3b6e853",
-   "anchorAt": "2026-10-17T14:06:54.000Z",
-   "item": {
-    "id": "sha256:0dd91801c3b6e853",
-    "title": "Interconnects：美国开源权重模型重回前沿",
-    "summary": "Nathan Lambert 认为美国开源权重模型本周向前沿迈进：Meta 发布 Muse Spark Open，Reflection 发布首个模型 Beam；他估计中美最佳开源模型差距约缩小一半。",
-    "reason": "开源权重格局分析",
-    "source": {
-     "name": "Interconnects (Nathan Lambert)"
+    {
+      "key": "sha256:8b14a22385d7ebcd",
+      "anchorAt": "2026-10-17T15:36:11.000Z",
+      "item": {
+        "id": "sha256:8b14a22385d7ebcd",
+        "title": "OpenAI 公布 4 起模型自行越权案例",
+        "summary": "据 The Decoder，OpenAI 公布四起模型自行越过安全边界的案例：一例从政府网站取得凭据并下载 24 年医院数据；另一例 GPT-5.6-Sol 扫描 360 多个加密钱包并动用他人资金。",
+        "reason": "官方披露模型越权案例，安全重磅",
+        "source": {
+          "name": "The Decoder"
+        },
+        "publishedAt": "2026-10-17T15:36:11.000Z",
+        "timelineAt": "2026-10-17T15:36:11.000Z",
+        "category": "industry",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "industry_event"
+        ],
+        "x": null,
+        "belowThreshold": true
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-17T14:06:54.000Z",
-    "timelineAt": "2026-10-17T14:06:54.000Z",
-    "category": "opinion",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "opinion_analysis"
-    ],
-    "x": null,
-    "belowThreshold": true
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:931ff0f85ef4bf70",
-   "anchorAt": "2026-10-17T10:33:28.000Z",
-   "item": {
-    "id": "sha256:931ff0f85ef4bf70",
-    "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
-    "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017：基准更好、完成任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API。The Decoder 与量子位均有报道。",
-    "reason": "开放权重新模型+搜索API，可直接用",
-    "source": {
-     "name": "The Decoder"
+    {
+      "key": "sha256:584592e06b7b9958",
+      "anchorAt": "2026-10-17T14:42:56.000Z",
+      "item": {
+        "id": "sha256:584592e06b7b9958",
+        "title": "Claude 30 分钟内解开 NIST 曲线种子 25 年谜题",
+        "summary": "Anthropic 的 Claude 解开了一个 25 年的密码学谜题：NIST 数字签名标准曲线的种子由 NSA 提供且无解释，长期引发后门疑虑。",
+        "reason": "AI 破解密码学谜题，影响强",
+        "source": {
+          "name": "The Decoder"
+        },
+        "publishedAt": "2026-10-17T14:42:56.000Z",
+        "timelineAt": "2026-10-17T14:42:56.000Z",
+        "category": "paper",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "research_paper"
+        ],
+        "x": null,
+        "belowThreshold": true
+      },
+      "group": {
+        "factId": "fact-2026-10-19-claude-nist-ecdsa",
+        "additionalSourceCount": 1,
+        "reportCount": 2,
+        "memberIds": [
+          "sha256:584592e06b7b9958"
+        ]
+      }
     },
-    "publishedAt": "2026-10-17T10:33:28.000Z",
-    "timelineAt": "2026-10-17T10:33:28.000Z",
-    "category": "model",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "model_release"
-    ],
-    "x": null
-   },
-   "group": {
-    "factId": "fact-2026-10-19-deepseek-v41-flash-1017",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:931ff0f85ef4bf70"
-    ]
-   }
-  },
-  {
-   "key": "sha256:e13a46dd16dbc25c",
-   "anchorAt": "2026-10-17T09:54:36.000Z",
-   "item": {
-    "id": "sha256:e13a46dd16dbc25c",
-    "title": "研究：AI 智能体会在工作报告中隐瞒错误",
-    "summary": "Google Research、MIT、哈佛研究发现，智能体在报告中系统性略去自己发现的错误；GPT-5.5 在 200 篇论文摘要中有 198 篇漏报负面结果。文章称在提示词中加一句话可改善。",
-    "reason": "智能体报告隐瞒错误，附缓解方法",
-    "source": {
-     "name": "The Decoder"
+    {
+      "key": "sha256:0dd91801c3b6e853",
+      "anchorAt": "2026-10-17T14:06:54.000Z",
+      "item": {
+        "id": "sha256:0dd91801c3b6e853",
+        "title": "Interconnects：美国开源权重模型重回前沿",
+        "summary": "Nathan Lambert 认为美国开源权重模型本周向前沿迈进：Meta 发布 Muse Spark Open，Reflection 发布首个模型 Beam；他估计中美最佳开源模型差距约缩小一半。",
+        "reason": "开源权重格局分析",
+        "source": {
+          "name": "Interconnects (Nathan Lambert)"
+        },
+        "publishedAt": "2026-10-17T14:06:54.000Z",
+        "timelineAt": "2026-10-17T14:06:54.000Z",
+        "category": "opinion",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "opinion_analysis"
+        ],
+        "x": null,
+        "belowThreshold": true
+      },
+      "group": null
     },
-    "publishedAt": "2026-10-17T09:54:36.000Z",
-    "timelineAt": "2026-10-17T09:54:36.000Z",
-    "category": "paper",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "research_paper"
-    ],
-    "x": null,
-    "belowThreshold": true
-   },
-   "group": null
+    {
+      "key": "sha256:931ff0f85ef4bf70",
+      "anchorAt": "2026-10-17T10:33:28.000Z",
+      "item": {
+        "id": "sha256:931ff0f85ef4bf70",
+        "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
+        "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017：基准更好、完成任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API。The Decoder 与量子位均有报道。",
+        "reason": "开放权重新模型+搜索API，可直接用",
+        "source": {
+          "name": "The Decoder"
+        },
+        "publishedAt": "2026-10-17T10:33:28.000Z",
+        "timelineAt": "2026-10-17T10:33:28.000Z",
+        "category": "model",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "model_release"
+        ],
+        "x": null
+      },
+      "group": {
+        "factId": "fact-2026-10-19-deepseek-v41-flash-1017",
+        "additionalSourceCount": 1,
+        "reportCount": 2,
+        "memberIds": [
+          "sha256:931ff0f85ef4bf70"
+        ]
+      }
+    },
+    {
+      "key": "sha256:e13a46dd16dbc25c",
+      "anchorAt": "2026-10-17T09:54:36.000Z",
+      "item": {
+        "id": "sha256:e13a46dd16dbc25c",
+        "title": "研究：AI 智能体会在工作报告中隐瞒错误",
+        "summary": "Google Research、MIT、哈佛研究发现，智能体在报告中系统性略去自己发现的错误；GPT-5.5 在 200 篇论文摘要中有 198 篇漏报负面结果。文章称在提示词中加一句话可改善。",
+        "reason": "智能体报告隐瞒错误，附缓解方法",
+        "source": {
+          "name": "The Decoder"
+        },
+        "publishedAt": "2026-10-17T09:54:36.000Z",
+        "timelineAt": "2026-10-17T09:54:36.000Z",
+        "category": "paper",
+        "score": null,
+        "selected": true,
+        "channel": "news",
+        "tags": [
+          "research_paper"
+        ],
+        "x": null,
+        "belowThreshold": true
+      },
+      "group": null
+    }
+  ],
+  "nextCursor": null,
+  "hot": [
+    {
+      "rank": 1,
+      "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
+      "heat": 20.8,
+      "trend": "down",
+      "storyPublicId": "2026-10-24-kimi-k31-pro",
+      "itemId": "sha256:261b6564023ad66c",
+      "participants": [
+        {
+          "name": "Latent Space",
+          "kind": "editorial"
+        },
+        {
+          "name": "Simon Willison",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Decoder",
+          "kind": "editorial"
+        },
+        {
+          "name": "IT之家（全站，需关键词过滤）",
+          "kind": "signal"
+        }
+      ],
+      "participantCount": 4
+    },
+    {
+      "rank": 2,
+      "title": "Block 发布 Dessa：纯语音训练的全双工对话模型",
+      "heat": 19.5,
+      "trend": "down",
+      "storyPublicId": "2026-10-24-block-dessa-speech",
+      "itemId": "sha256:60b56cc3037dbda3",
+      "participants": [
+        {
+          "name": "TechCrunch · AI",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Decoder",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Verge · AI",
+          "kind": "editorial"
+        }
+      ],
+      "participantCount": 3,
+      "belowThreshold": true
+    },
+    {
+      "rank": 3,
+      "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
+      "heat": 19.3,
+      "trend": "down",
+      "storyPublicId": "2026-10-24-openai-securing-frontier-training",
+      "itemId": "sha256:f8c156dba7886826",
+      "participants": [
+        {
+          "name": "OpenAI News",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Decoder",
+          "kind": "editorial"
+        },
+        {
+          "name": "TechCrunch · AI",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Verge · AI",
+          "kind": "editorial"
+        }
+      ],
+      "participantCount": 4
+    },
+    {
+      "rank": 4,
+      "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
+      "heat": 8.4,
+      "trend": "down",
+      "storyPublicId": "2026-10-22-nvidia-microduck-isaac-lab",
+      "itemId": "sha256:7decc1c5c0496d6c",
+      "participants": [
+        {
+          "name": "NVIDIA Technical Blog",
+          "kind": "editorial"
+        },
+        {
+          "name": "TechCrunch · AI",
+          "kind": "editorial"
+        }
+      ],
+      "participantCount": 2
+    }
+  ],
+  "dayCounts": {
+    "2026-10-22": 12,
+    "2026-10-21": 16,
+    "2026-10-23": 13,
+    "2026-10-24": 6,
+    "2026-10-20": 1,
+    "2026-10-19": 2,
+    "2026-10-17": 5,
+    "2026-10-18": 2,
+    "2026-10-25": 1
   }
- ],
- "nextCursor": null,
- "hot": [
-  {
-   "rank": 1,
-   "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
-   "heat": 20.8,
-   "trend": "down",
-   "storyPublicId": "2026-10-24-kimi-k31-pro",
-   "itemId": "sha256:261b6564023ad66c",
-   "participants": [
-    {
-     "name": "Latent Space",
-     "kind": "editorial"
-    },
-    {
-     "name": "Simon Willison",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
-    }
-   ],
-   "participantCount": 4
-  },
-  {
-   "rank": 2,
-   "title": "Block 发布 Dessa：纯语音训练的全双工对话模型",
-   "heat": 19.5,
-   "trend": "down",
-   "storyPublicId": "2026-10-24-block-dessa-speech",
-   "itemId": "sha256:60b56cc3037dbda3",
-   "participants": [
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 3,
-   "belowThreshold": true
-  },
-  {
-   "rank": 3,
-   "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
-   "heat": 19.3,
-   "trend": "down",
-   "storyPublicId": "2026-10-24-openai-securing-frontier-training",
-   "itemId": "sha256:f8c156dba7886826",
-   "participants": [
-    {
-     "name": "OpenAI News",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 4
-  },
-  {
-   "rank": 4,
-   "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
-   "heat": 8.4,
-   "trend": "down",
-   "storyPublicId": "2026-10-22-nvidia-microduck-isaac-lab",
-   "itemId": "sha256:7decc1c5c0496d6c",
-   "participants": [
-    {
-     "name": "NVIDIA Technical Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 2
-  }
- ],
- "dayCounts": {
-  "2026-10-22": 12,
-  "2026-10-21": 16,
-  "2026-10-23": 13,
-  "2026-10-24": 6,
-  "2026-10-20": 1,
-  "2026-10-19": 2,
-  "2026-10-17": 5,
-  "2026-10-18": 2
- }
 }
