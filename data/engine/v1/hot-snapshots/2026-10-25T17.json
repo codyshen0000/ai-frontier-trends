@@ -1,0 +1,53 @@
+{
+ "computedAt": "2026-10-25T09:03:00.000Z",
+ "entries": [
+  {
+   "rank": 1,
+   "publicId": "2026-10-25-openmobile-2-mobile-agents",
+   "heat": 17.1,
+   "participantCount": 2
+  },
+  {
+   "rank": 2,
+   "publicId": "2026-10-24-kimi-k31-pro",
+   "heat": 16.3,
+   "participantCount": 4
+  },
+  {
+   "rank": 3,
+   "publicId": "2026-10-24-openai-securing-frontier-training",
+   "heat": 15.2,
+   "participantCount": 4
+  },
+  {
+   "rank": 4,
+   "publicId": "2026-10-24-anthropic-ukaisi-alignment",
+   "heat": 9.5,
+   "participantCount": 3
+  },
+  {
+   "rank": 5,
+   "publicId": "2026-10-23-anthropic-claude-formal-verification",
+   "heat": 8.1,
+   "participantCount": 3
+  },
+  {
+   "rank": 6,
+   "publicId": "2026-10-24-google-tb-screening",
+   "heat": 7.4,
+   "participantCount": 2
+  },
+  {
+   "rank": 7,
+   "publicId": "2026-10-22-nvidia-microduck-isaac-lab",
+   "heat": 6.6,
+   "participantCount": 2
+  },
+  {
+   "rank": 8,
+   "publicId": "2026-10-24-openai-metr-agent-monitoring",
+   "heat": 6.5,
+   "participantCount": 2
+  }
+ ]
+}

@@ -26,7 +26,14 @@
     "storyPublicId": "2026-10-25-openmobile-2-mobile-agents",
     "originalUrl": "https://the-decoder.com/openmobile-2-proves-open-source-smartphone-agents-can-rival-proprietary-models/"
    },
-   "group": null
+   "group": {
+    "factId": "fact-2026-10-25-openmobile-2-mobile-agents",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:514019d7b6342099"
+    ]
+   }
   },
   {
    "key": "sha256:261b6564023ad66c",
@@ -79,7 +86,14 @@
     "storyPublicId": "2026-10-24-google-tb-screening",
     "originalUrl": "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/"
    },
-   "group": null
+   "group": {
+    "factId": "fact-2026-10-24-google-tb-screening",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:30a34d758ba63be2"
+    ]
+   }
   },
   {
    "key": "sha256:604f1f9c59689482",
@@ -102,7 +116,14 @@
     "storyPublicId": "2026-10-24-openai-metr-agent-monitoring",
     "originalUrl": "https://the-decoder.com/three-week-on-site-audit-at-openai-reveals-major-gaps-in-ai-safety-monitoring/"
    },
-   "group": null
+   "group": {
+    "factId": "fact-2026-10-24-openai-metr-agent-monitoring",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:604f1f9c59689482"
+    ]
+   }
   },
   {
    "key": "sha256:73be0ee71d2832b3",
@@ -171,7 +192,14 @@
     "storyPublicId": "2026-10-24-anthropic-ukaisi-alignment",
     "originalUrl": "https://the-decoder.com/anthropic-says-its-unreleased-model-is-both-more-capable-and-better-aligned-than-mythos-5-1/"
    },
-   "group": null
+   "group": {
+    "factId": "fact-2026-10-24-anthropic-ukaisi-alignment",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:cfa117fe12523c03"
+    ]
+   }
   },
   {
    "key": "sha256:b19f86d623cfeb5d",
@@ -194,7 +222,14 @@
     "storyPublicId": "2026-10-23-anthropic-claude-formal-verification",
     "originalUrl": "https://the-decoder.com/anthropics-claude-now-writes-code-and-proves-it-safe-automatically/"
    },
-   "group": null
+   "group": {
+    "factId": "fact-2026-10-23-anthropic-claude-formal-verification",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:b19f86d623cfeb5d"
+    ]
+   }
   },
   {
    "key": "sha256:f8c156dba7886826",
@@ -347,7 +382,14 @@
     "storyPublicId": "2026-10-23-microsoft-thinkingbox-rl",
     "originalUrl": "https://huggingface.co/blog/microsoft/thinkingbox-training"
    },
-   "group": null
+   "group": {
+    "factId": "fact-2026-10-23-microsoft-thinkingbox-rl",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:51888f116f5b0837"
+    ]
+   }
   },
   {
    "key": "sha256:891b7e0bbf66f86d",
@@ -513,8 +555,27 @@
  "hot": [
   {
    "rank": 1,
+   "title": "OpenMobile-2：开源手机智能体称真机评测居开源前列",
+   "heat": 17.1,
+   "trend": "up",
+   "storyPublicId": "2026-10-25-openmobile-2-mobile-agents",
+   "itemId": "sha256:514019d7b6342099",
+   "participants": [
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "web-arxiv-2610.14157",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2
+  },
+  {
+   "rank": 2,
    "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
-   "heat": 16.5,
+   "heat": 16.3,
    "trend": "down",
    "storyPublicId": "2026-10-24-kimi-k31-pro",
    "itemId": "sha256:261b6564023ad66c",
@@ -539,9 +600,9 @@
    "participantCount": 4
   },
   {
-   "rank": 2,
+   "rank": 3,
    "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
-   "heat": 15.3,
+   "heat": 15.2,
    "trend": "down",
    "storyPublicId": "2026-10-24-openai-securing-frontier-training",
    "itemId": "sha256:f8c156dba7886826",
@@ -566,23 +627,50 @@
    "participantCount": 4
   },
   {
-   "rank": 3,
-   "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
-   "heat": 6.7,
+   "rank": 4,
+   "title": "Anthropic：复盘 AISI 事件，内部研究模型更能自行停止攻击",
+   "heat": 9.5,
    "trend": "down",
-   "storyPublicId": "2026-10-22-nvidia-microduck-isaac-lab",
-   "itemId": "sha256:7decc1c5c0496d6c",
+   "storyPublicId": "2026-10-24-anthropic-ukaisi-alignment",
+   "itemId": "sha256:cfa117fe12523c03",
    "participants": [
     {
-     "name": "NVIDIA Technical Blog",
+     "name": "Anthropic Research",
      "kind": "editorial"
     },
     {
-     "name": "TechCrunch · AI",
+     "name": "Anthropic Research",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
      "kind": "editorial"
     }
    ],
-   "participantCount": 2
+   "participantCount": 3
+  },
+  {
+   "rank": 5,
+   "title": "Anthropic：Claude 为 123 个开源库写出可机器检查的形式化证明",
+   "heat": 8.1,
+   "trend": "down",
+   "storyPublicId": "2026-10-23-anthropic-claude-formal-verification",
+   "itemId": "sha256:b19f86d623cfeb5d",
+   "participants": [
+    {
+     "name": "Anthropic Research",
+     "kind": "editorial"
+    },
+    {
+     "name": "Anthropic Research",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 3
   }
  ],
  "dayCounts": {

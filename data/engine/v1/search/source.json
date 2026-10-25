@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-25T08:44:00.000Z",
+ "generatedAt": "2026-10-25T09:03:00.000Z",
  "docs": [
   {
    "id": "sha256:514019d7b6342099",
@@ -20,9 +20,22 @@
    "summary": null,
    "publishedAt": "2026-10-25T06:55:22.000Z",
    "sourceNames": [
-    "The Decoder"
+    "The Decoder",
+    "web-arxiv-2610.14157"
    ],
    "path": "/events/2026-10-25-openmobile-2-mobile-agents/"
+  },
+  {
+   "id": "sha256:896f29357cde5008",
+   "kind": "item",
+   "title": "论文：OpenMobile-2 开源手机智能体环境与配方",
+   "summary": null,
+   "publishedAt": "2026-10-25T00:00:00.000Z",
+   "sourceName": "web-arxiv-2610.14157",
+   "category": "paper",
+   "selected": false,
+   "eventPublicId": "2026-10-25-openmobile-2-mobile-agents",
+   "originalUrl": "https://arxiv.org/abs/2610.14157"
   },
   {
    "id": "sha256:1dc7e2df39a11f00",
@@ -74,6 +87,30 @@
     "The Decoder"
    ],
    "path": "/events/2026-10-24-kimi-k31-pro/"
+  },
+  {
+   "id": "sha256:36a9d09833032ab8",
+   "kind": "item",
+   "title": "TechBooky：谷歌离线 AI 结核筛查落地南非金矿",
+   "summary": null,
+   "publishedAt": "2026-10-24T02:06:48.000Z",
+   "sourceName": "web-techbooky",
+   "category": "opinion",
+   "selected": false,
+   "eventPublicId": "2026-10-24-google-tb-screening",
+   "originalUrl": "https://www.techbooky.com/google-details-offline-ai-tb-screening-at-south-african-gold-mine/"
+  },
+  {
+   "id": "2026-10-24-google-tb-screening",
+   "kind": "event",
+   "title": "Google Research：把基础模型用于一线结核病筛查",
+   "summary": "Google Research 博文介绍将基础模型用于结核病筛查一线场景；属应用研究说明，具体性能与部署边界以原文为准。",
+   "publishedAt": "2026-10-24T02:06:48.000Z",
+   "sourceNames": [
+    "Google Research Blog",
+    "web-techbooky"
+   ],
+   "path": "/events/2026-10-24-google-tb-screening/"
   },
   {
    "id": "sha256:585ea363f084ac16",
@@ -136,15 +173,16 @@
    "originalUrl": "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/"
   },
   {
-   "id": "2026-10-24-google-tb-screening",
-   "kind": "event",
-   "title": "Google Research：把基础模型用于一线结核病筛查",
-   "summary": "Google Research 博文介绍将基础模型用于结核病筛查一线场景；属应用研究说明，具体性能与部署边界以原文为准。",
-   "publishedAt": "2026-10-23T18:51:33.000Z",
-   "sourceNames": [
-    "Google Research Blog"
-   ],
-   "path": "/events/2026-10-24-google-tb-screening/"
+   "id": "sha256:8a8f757d90f00c85",
+   "kind": "item",
+   "title": "METR：红队演练 OpenAI 内部智能体监控",
+   "summary": null,
+   "publishedAt": "2026-10-23T18:00:32.000Z",
+   "sourceName": "web-metr",
+   "category": "opinion",
+   "selected": false,
+   "eventPublicId": "2026-10-24-openai-metr-agent-monitoring",
+   "originalUrl": "https://metr.org/blog/2026-10-22-red-teaming-openai-agent-monitoring/"
   },
   {
    "id": "sha256:604f1f9c59689482",
@@ -165,7 +203,8 @@
    "summary": null,
    "publishedAt": "2026-10-23T18:00:32.000Z",
    "sourceNames": [
-    "The Decoder"
+    "The Decoder",
+    "web-metr"
    ],
    "path": "/events/2026-10-24-openai-metr-agent-monitoring/"
   },
@@ -228,6 +267,18 @@
    "originalUrl": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1/"
   },
   {
+   "id": "sha256:e16222d83dd92652",
+   "kind": "item",
+   "title": "Anthropic 研究：UK AISI 网络安全测试对齐复盘",
+   "summary": null,
+   "publishedAt": "2026-10-23T17:19:49.000Z",
+   "sourceName": "Anthropic Research",
+   "category": "paper",
+   "selected": false,
+   "eventPublicId": "2026-10-24-anthropic-ukaisi-alignment",
+   "originalUrl": "https://www.anthropic.com/research/alignment-assessment-ukaisi"
+  },
+  {
    "id": "sha256:cfa117fe12523c03",
    "kind": "item",
    "title": "Anthropic：复盘 AISI 事件，内部研究模型更能自行停止攻击",
@@ -246,9 +297,22 @@
    "summary": null,
    "publishedAt": "2026-10-23T17:19:49.000Z",
    "sourceNames": [
+    "Anthropic Research",
     "The Decoder"
    ],
    "path": "/events/2026-10-24-anthropic-ukaisi-alignment/"
+  },
+  {
+   "id": "sha256:f6a301346a05e615",
+   "kind": "item",
+   "title": "Anthropic 研究：用 Claude 规模化形式化验证开源库",
+   "summary": null,
+   "publishedAt": "2026-10-23T11:32:19.000Z",
+   "sourceName": "Anthropic Research",
+   "category": "paper",
+   "selected": false,
+   "eventPublicId": "2026-10-23-anthropic-claude-formal-verification",
+   "originalUrl": "https://www.anthropic.com/research/formal-verification"
   },
   {
    "id": "sha256:b19f86d623cfeb5d",
@@ -269,6 +333,7 @@
    "summary": null,
    "publishedAt": "2026-10-23T11:32:19.000Z",
    "sourceNames": [
+    "Anthropic Research",
     "The Decoder"
    ],
    "path": "/events/2026-10-23-anthropic-claude-formal-verification/"
@@ -421,7 +486,8 @@
    "summary": "Hugging Face 博客刊出微软 ThinkingBox：将数据库评分转为强化学习奖励，用于后训练智能体。",
    "publishedAt": "2026-10-22T22:24:34.000Z",
    "sourceNames": [
-    "Hugging Face Blog"
+    "Hugging Face Blog",
+    "web-microsoft-github"
    ],
    "path": "/events/2026-10-23-microsoft-thinkingbox-rl/"
   },
@@ -647,6 +713,18 @@
    "selected": true,
    "eventPublicId": "2026-10-23-claude-models-google-cloud",
    "originalUrl": "https://platform.claude.com/docs/en/release-notes/overview#october-22-2026"
+  },
+  {
+   "id": "sha256:3a08079b3035160b",
+   "kind": "item",
+   "title": "微软 GitHub：thinkingbox-training 训练集成",
+   "summary": null,
+   "publishedAt": "2026-10-22T00:00:00.000Z",
+   "sourceName": "web-microsoft-github",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-10-23-microsoft-thinkingbox-rl",
+   "originalUrl": "https://github.com/microsoft/thinkingbox-training"
   },
   {
    "id": "2026-10-23-claude-models-google-cloud",

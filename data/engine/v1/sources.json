@@ -113,11 +113,42 @@
    "homepage": "https://www.wiz.io"
   },
   {
+   "sourceId": "web-anthropic-research",
+   "name": "Anthropic Research",
+   "tier": "T1",
+   "kind": "editorial",
+   "homepage": "https://www.anthropic.com"
+  },
+  {
+   "sourceId": "web-arxiv-2610.14157",
+   "name": "web-arxiv-2610.14157",
+   "tier": null,
+   "kind": "editorial"
+  },
+  {
    "sourceId": "web-baseten-blog",
    "name": "Baseten Blog",
    "tier": "T1",
    "kind": "editorial",
    "homepage": "https://www.baseten.co"
+  },
+  {
+   "sourceId": "web-metr",
+   "name": "web-metr",
+   "tier": null,
+   "kind": "editorial"
+  },
+  {
+   "sourceId": "web-microsoft-github",
+   "name": "web-microsoft-github",
+   "tier": null,
+   "kind": "editorial"
+  },
+  {
+   "sourceId": "web-techbooky",
+   "name": "web-techbooky",
+   "tier": null,
+   "kind": "editorial"
   }
  ]
 }
