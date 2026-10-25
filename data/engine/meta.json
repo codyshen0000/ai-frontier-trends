@@ -2,11 +2,11 @@
   "site": "前沿趋势",
   "contract_version": "1.1",
   "mode": "production",
-  "data_as_of": "2026-10-25T08:17:35+08:00",
-  "data_as_of_label": "数据截至 2026-10-25 08:17（北京时间）",
-  "generated_at": "2026-10-25T08:43:00+08:00",
+  "data_as_of": "2026-10-25T12:23:11+08:00",
+  "data_as_of_label": "数据截至 2026-10-25 12:23（北京时间）",
+  "generated_at": "2026-10-25T12:41:00+08:00",
   "hot_rule_version": "heat-v1-48h-halflife24h (前沿情报 heat48h.py 1.1)",
-  "hot_computed_at": "2026-10-25T08:43:00+08:00",
+  "hot_computed_at": "2026-10-25T12:41:00+08:00",
   "window_hours": 48,
   "spark_points": 25,
   "page_size": 20,
@@ -24,9 +24,9 @@
     "covers": 6
   },
   "last_round": {
-    "batch_id": "2026-10-25T0817",
+    "batch_id": "2026-10-25T1223",
     "status": "ok",
-    "finished_at": "2026-10-25T08:40:27+08:00"
+    "finished_at": "2026-10-25T12:38:41+08:00"
   },
   "batches": [
     {
@@ -616,6 +616,22 @@
     {
       "batch_id": "2026-10-25T0817",
       "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-25T0922",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-25T1026",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-25T1118",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-25T1223",
+      "status": "ok"
     }
   ],
   "files": [
@@ -667,7 +683,6 @@
     "events/2026-10-25-vllm-ds-v41-flash-scale.json",
     "events/index.json",
     "feed/selected.json",
-    "hot-snapshots/2026-10-22T12.json",
     "hot-snapshots/2026-10-22T15.json",
     "hot-snapshots/2026-10-22T16.json",
     "hot-snapshots/2026-10-22T19.json",
@@ -689,6 +704,7 @@
     "hot-snapshots/2026-10-25T00.json",
     "hot-snapshots/2026-10-25T03.json",
     "hot-snapshots/2026-10-25T08.json",
+    "hot-snapshots/2026-10-25T12.json",
     "hot-strip.json",
     "hot.json",
     "meta.json",
