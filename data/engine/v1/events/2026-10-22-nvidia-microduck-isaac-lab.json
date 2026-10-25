@@ -15,7 +15,7 @@
  "whyHot": {
   "participants48h": 2,
   "newParticipants6h": 0,
-  "recentReports24h": 1,
+  "recentReports24h": 0,
   "observationComplete": true,
   "rank": 3
  },
@@ -68,31 +68,6 @@
   }
  ],
  "heat": [
-  {
-   "hour": "2026-10-22T19:00:00.000Z",
-   "heat": 4.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T20:00:00.000Z",
-   "heat": 4.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T21:00:00.000Z",
-   "heat": 4.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T22:00:00.000Z",
-   "heat": 4.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-22T23:00:00.000Z",
-   "heat": 4.3,
-   "participants": 1
-  },
   {
    "hour": "2026-10-23T00:00:00.000Z",
    "heat": 4.2,
@@ -311,6 +286,31 @@
   {
    "hour": "2026-10-24T19:00:00.000Z",
    "heat": 9.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-24T20:00:00.000Z",
+   "heat": 9.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-24T21:00:00.000Z",
+   "heat": 9.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-24T22:00:00.000Z",
+   "heat": 9.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-24T23:00:00.000Z",
+   "heat": 8.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-25T00:00:00.000Z",
+   "heat": 8.6,
    "participants": 2
   }
  ],

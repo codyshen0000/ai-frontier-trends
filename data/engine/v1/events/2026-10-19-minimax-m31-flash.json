@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-19-minimax-m31-flash",
  "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持",
- "status": "active",
+ "status": "watching",
  "reportCount": 2,
  "sourceCount": 2,
  "firstReportAt": "2026-10-19T12:20:45.000Z",
@@ -13,11 +13,11 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 2,
+  "participants48h": 1,
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 4
+  "rank": null
  },
  "developments": [
   {
@@ -299,6 +299,31 @@
    "hour": "2026-10-24T19:00:00.000Z",
    "heat": 5.9,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-24T20:00:00.000Z",
+   "heat": 5.7,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-24T21:00:00.000Z",
+   "heat": 5.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-24T22:00:00.000Z",
+   "heat": 5.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-24T23:00:00.000Z",
+   "heat": 5.2,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-25T00:00:00.000Z",
+   "heat": 2.6,
+   "participants": 1
   }
  ],
  "related": [],
@@ -311,6 +336,5 @@
   "alt": "vLLM 博文配图：MiniMax-M3.1-Flash Day-0 支持示意",
   "valueClass": "product_screenshot"
  },
- "primaryUrl": "https://vllm.ai/blog/2026-10-23-minimax-m31-flash",
- "rankDelta": 0
+ "primaryUrl": "https://vllm.ai/blog/2026-10-23-minimax-m31-flash"
 }
