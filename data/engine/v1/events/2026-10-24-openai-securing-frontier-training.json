@@ -333,6 +333,11 @@
    "hour": "2026-10-25T07:00:00.000Z",
    "heat": 16.1,
    "participants": 4
+  },
+  {
+   "hour": "2026-10-25T08:00:00.000Z",
+   "heat": 15.7,
+   "participants": 4
   }
  ],
  "related": [],
