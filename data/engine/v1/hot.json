@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-10-25T11:44:00.000Z",
+  "computedAt": "2026-10-25T13:29:17.000Z",
   "windowHours": 48,
   "entries": [
     {
@@ -8,12 +8,10 @@
         "publicId": "2026-10-25-openmobile-2-mobile-agents",
         "title": "OpenMobile-2：开源手机智能体称真机评测居开源前列"
       },
-      "heat": 16.2,
-      "trend": "up",
-      "trendPct": 90.6,
-      "badges": [
-        "rising"
-      ],
+      "heat": 15.3,
+      "trend": "down",
+      "trendPct": -14.5,
+      "badges": [],
       "participantCount": 2,
       "sourceCount": 2,
       "sourceNames": [
@@ -42,8 +40,6 @@
         null,
         null,
         null,
-        null,
-        null,
         10,
         9.7,
         9.4,
@@ -55,13 +51,15 @@
         17.6,
         17.1,
         16.6,
-        16.2
+        16.2,
+        15.7,
+        15.3
       ],
       "summary": null,
       "latest": null,
       "cover": null,
       "rankDelta": 0,
-      "heatDeltaPct": 2.5
+      "heatDeltaPct": -5.6
     },
     {
       "rank": 2,
@@ -69,9 +67,9 @@
         "publicId": "2026-10-24-openai-securing-frontier-training",
         "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队"
       },
-      "heat": 11.9,
+      "heat": 11.3,
       "trend": "down",
-      "trendPct": -28.7,
+      "trendPct": -28.9,
       "badges": [],
       "participantCount": 3,
       "sourceCount": 3,
@@ -95,8 +93,6 @@
         }
       ],
       "spark": [
-        18.7,
-        27.9,
         27.1,
         26.3,
         25.6,
@@ -119,13 +115,15 @@
         15.7,
         15.2,
         14.8,
-        11.9
+        11.9,
+        11.6,
+        11.3
       ],
       "summary": null,
       "latest": null,
       "cover": null,
       "rankDelta": 1,
-      "heatDeltaPct": 1.7
+      "heatDeltaPct": -5
     },
     {
       "rank": 3,
@@ -133,9 +131,9 @@
         "publicId": "2026-10-24-kimi-k31-pro",
         "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四"
       },
-      "heat": 10.9,
+      "heat": 10.2,
       "trend": "down",
-      "trendPct": -13.5,
+      "trendPct": -15,
       "badges": [],
       "participantCount": 3,
       "sourceCount": 3,
@@ -163,8 +161,6 @@
         }
       ],
       "spark": [
-        21.7,
-        21.1,
         20.5,
         19.9,
         19.3,
@@ -187,13 +183,15 @@
         11.8,
         11.5,
         11.2,
-        10.9
+        10.9,
+        10.5,
+        10.2
       ],
       "summary": "Artificial Analysis：Kimi K3.1 Pro 智能指数 55（较 K3 升 11 分），暂列第四，落后 Claude Opus 5.5 等；智能体与终端基准提升明显。参数仍约 2.8T/104B 激活、百万上下文；权重尚未放出，评测方预计开源后将成为领先开源权重模型之一。",
       "latest": "腾讯 WorkBuddy 接入 Kimi-K3.1-Pro（含 Highspeed，企业旗舰/个人订阅优先开放）；Latent Space：权重承诺 11 月 4 日放出；Highspeed API 称快 2–3 倍；Code Arena WebDev 约第 8；Cyber Index 64%。",
       "cover": null,
       "rankDelta": -1,
-      "heatDeltaPct": -27.8
+      "heatDeltaPct": -6.4
     },
     {
       "rank": 4,
@@ -201,9 +199,9 @@
         "publicId": "2026-10-24-google-tb-screening",
         "title": "Google Research：把基础模型用于一线结核病筛查"
       },
-      "heat": 7,
+      "heat": 6.6,
       "trend": "down",
-      "trendPct": -14.6,
+      "trendPct": -15.4,
       "badges": [],
       "participantCount": 2,
       "sourceCount": 2,
@@ -222,8 +220,6 @@
         }
       ],
       "spark": [
-        14,
-        13.6,
         13.2,
         12.8,
         12.5,
@@ -246,23 +242,84 @@
         7.6,
         7.4,
         7.2,
-        7
+        7,
+        6.8,
+        6.6
       ],
       "summary": "Google Research 博文介绍将基础模型用于结核病筛查一线场景；属应用研究说明，具体性能与部署边界以原文为准。",
       "latest": null,
       "cover": null,
       "rankDelta": 1,
-      "heatDeltaPct": 1.4
+      "heatDeltaPct": -5.7
     },
     {
       "rank": 5,
       "story": {
-        "publicId": "2026-10-24-openai-metr-agent-monitoring",
-        "title": "METR/Redwood 驻场审计：OpenAI 内部智能体监控存在覆盖缺口"
+        "publicId": "2026-10-22-nvidia-microduck-isaac-lab",
+        "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机"
       },
       "heat": 6.1,
       "trend": "down",
-      "trendPct": -14.1,
+      "trendPct": -16.4,
+      "badges": [],
+      "participantCount": 2,
+      "sourceCount": 2,
+      "sourceNames": [
+        "TechCrunch · AI",
+        "NVIDIA Technical Blog"
+      ],
+      "participants": [
+        {
+          "name": "NVIDIA Technical Blog",
+          "kind": "editorial"
+        },
+        {
+          "name": "TechCrunch · AI",
+          "kind": "editorial"
+        }
+      ],
+      "spark": [
+        12.5,
+        12.1,
+        11.8,
+        11.4,
+        11.1,
+        10.8,
+        10.5,
+        10.2,
+        9.9,
+        9.6,
+        9.3,
+        9.1,
+        8.8,
+        8.6,
+        8.3,
+        8.1,
+        7.9,
+        7.6,
+        7.4,
+        7.2,
+        7,
+        6.8,
+        6.6,
+        6.4,
+        6.2
+      ],
+      "summary": "NVIDIA 介绍 Microduck 在 Isaac Lab 3.0 中仿真训练后迁移到真机的流程与结果。",
+      "latest": "TechCrunch：黄仁勋演示 Microduck 玩具机器人，称已售约 2 万台、冲圣诞热销。",
+      "cover": null,
+      "rankDelta": 2,
+      "heatDeltaPct": -100
+    },
+    {
+      "rank": 6,
+      "story": {
+        "publicId": "2026-10-24-openai-metr-agent-monitoring",
+        "title": "METR/Redwood 驻场审计：OpenAI 内部智能体监控存在覆盖缺口"
+      },
+      "heat": 5.8,
+      "trend": "down",
+      "trendPct": -14.7,
       "badges": [],
       "participantCount": 2,
       "sourceCount": 2,
@@ -281,8 +338,6 @@
         }
       ],
       "spark": [
-        12.2,
-        11.9,
         11.6,
         11.2,
         10.9,
@@ -305,23 +360,25 @@
         6.7,
         6.5,
         6.3,
-        6.1
+        6.1,
+        5.9,
+        5.8
       ],
       "summary": null,
       "latest": null,
       "cover": null,
-      "rankDelta": 2,
-      "heatDeltaPct": 1.7
+      "rankDelta": -1,
+      "heatDeltaPct": -4.9
     },
     {
-      "rank": 6,
+      "rank": 7,
       "story": {
         "publicId": "2026-10-24-anthropic-ukaisi-alignment",
         "title": "Anthropic：复盘 AISI 事件，内部研究模型更能自行停止攻击"
       },
-      "heat": 6,
+      "heat": 5.7,
       "trend": "down",
-      "trendPct": -14.3,
+      "trendPct": -13.6,
       "badges": [],
       "participantCount": 2,
       "sourceCount": 3,
@@ -344,8 +401,6 @@
         }
       ],
       "spark": [
-        12,
-        11.7,
         11.3,
         11,
         10.7,
@@ -368,72 +423,15 @@
         6.5,
         6.4,
         6.2,
-        6
+        6,
+        5.8,
+        5.7
       ],
       "summary": null,
       "latest": null,
       "cover": null,
-      "rankDelta": -2,
-      "heatDeltaPct": -31.8
-    },
-    {
-      "rank": 7,
-      "story": {
-        "publicId": "2026-10-22-nvidia-microduck-isaac-lab",
-        "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机"
-      },
-      "heat": 0,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "participantCount": 0,
-      "sourceCount": 2,
-      "sourceNames": [
-        "TechCrunch · AI",
-        "NVIDIA Technical Blog"
-      ],
-      "participants": [
-        {
-          "name": "NVIDIA Technical Blog",
-          "kind": "editorial"
-        },
-        {
-          "name": "TechCrunch · AI",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "summary": "NVIDIA 介绍 Microduck 在 Isaac Lab 3.0 中仿真训练后迁移到真机的流程与结果。",
-      "latest": "TechCrunch：黄仁勋演示 Microduck 玩具机器人，称已售约 2 万台、冲圣诞热销。",
-      "cover": null,
       "rankDelta": -1,
-      "heatDeltaPct": -100
+      "heatDeltaPct": -5
     }
   ]
 }
