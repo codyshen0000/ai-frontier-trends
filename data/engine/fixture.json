@@ -7,6 +7,54 @@
     },
     "cards": [
       {
+        "key": "sha256:af9112a54e84d14e",
+        "anchorAt": "2026-10-25T10:08:49.000Z",
+        "item": {
+          "id": "sha256:af9112a54e84d14e",
+          "title": "Nvidia 开源 Flora：机器人视频标注数据引擎",
+          "summary": null,
+          "reason": "开源机器人视频标注引擎称大幅降本",
+          "source": {
+            "name": "The Decoder"
+          },
+          "publishedAt": "2026-10-25T10:08:49.000Z",
+          "timelineAt": "2026-10-25T10:08:49.000Z",
+          "category": "paper",
+          "tags": [],
+          "selected": true,
+          "channel": "news",
+          "x": null,
+          "storyPublicId": "2026-10-25-nvidia-flora-robot-data-engine",
+          "originalUrl": "https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra/",
+          "score": null
+        },
+        "group": null
+      },
+      {
+        "key": "sha256:de032cfb4352542b",
+        "anchorAt": "2026-10-25T09:12:10.000Z",
+        "item": {
+          "id": "sha256:de032cfb4352542b",
+          "title": "Anthropic：单智能体循环往往优于多子智能体",
+          "summary": "Anthropic 称单主智能体常在质量/成本/延迟上优于多子智能体；已开源迁移套件。",
+          "reason": "官方称单循环智能体常更快更稳",
+          "source": {
+            "name": "The Decoder"
+          },
+          "publishedAt": "2026-10-25T09:12:10.000Z",
+          "timelineAt": "2026-10-25T09:12:10.000Z",
+          "category": "industry",
+          "tags": [],
+          "selected": true,
+          "channel": "news",
+          "x": null,
+          "storyPublicId": "2026-10-25-anthropic-single-agent-loop",
+          "originalUrl": "https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone/",
+          "score": null
+        },
+        "group": null
+      },
+      {
         "key": "sha256:514019d7b6342099",
         "anchorAt": "2026-10-25T06:55:22.000Z",
         "item": {
@@ -1658,14 +1706,33 @@
       "2026-10-19": 2,
       "2026-10-17": 5,
       "2026-10-18": 2,
-      "2026-10-25": 1
+      "2026-10-25": 3
     }
   },
   "hotStrip": [
     {
       "rank": 1,
+      "title": "OpenMobile-2：开源手机智能体称真机评测居开源前列",
+      "heat": 15.8,
+      "trend": "up",
+      "storyPublicId": "2026-10-25-openmobile-2-mobile-agents",
+      "itemId": "sha256:514019d7b6342099",
+      "participants": [
+        {
+          "name": "The Decoder",
+          "kind": "editorial"
+        },
+        {
+          "name": "web-arxiv-2610.14157",
+          "kind": "editorial"
+        }
+      ],
+      "participantCount": 2
+    },
+    {
+      "rank": 2,
       "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
-      "heat": 17.0,
+      "heat": 15.1,
       "trend": "down",
       "storyPublicId": "2026-10-24-kimi-k31-pro",
       "itemId": "sha256:261b6564023ad66c",
@@ -1690,17 +1757,13 @@
       "participantCount": 4
     },
     {
-      "rank": 2,
+      "rank": 3,
       "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
-      "heat": 15.8,
+      "heat": 11.7,
       "trend": "down",
       "storyPublicId": "2026-10-24-openai-securing-frontier-training",
       "itemId": "sha256:f8c156dba7886826",
       "participants": [
-        {
-          "name": "OpenAI News",
-          "kind": "editorial"
-        },
         {
           "name": "The Decoder",
           "kind": "editorial"
@@ -1714,22 +1777,45 @@
           "kind": "editorial"
         }
       ],
-      "participantCount": 4
+      "participantCount": 3
     },
     {
-      "rank": 3,
-      "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
-      "heat": 6.9,
+      "rank": 4,
+      "title": "Anthropic：复盘 AISI 事件，内部研究模型更能自行停止攻击",
+      "heat": 8.8,
       "trend": "down",
-      "storyPublicId": "2026-10-22-nvidia-microduck-isaac-lab",
-      "itemId": "sha256:7decc1c5c0496d6c",
+      "storyPublicId": "2026-10-24-anthropic-ukaisi-alignment",
+      "itemId": "sha256:cfa117fe12523c03",
       "participants": [
         {
-          "name": "NVIDIA Technical Blog",
+          "name": "Anthropic Research",
           "kind": "editorial"
         },
         {
-          "name": "TechCrunch · AI",
+          "name": "Anthropic Research",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Decoder",
+          "kind": "editorial"
+        }
+      ],
+      "participantCount": 3
+    },
+    {
+      "rank": 5,
+      "title": "Google Research：把基础模型用于一线结核病筛查",
+      "heat": 6.9,
+      "trend": "down",
+      "storyPublicId": "2026-10-24-google-tb-screening",
+      "itemId": "sha256:30a34d758ba63be2",
+      "participants": [
+        {
+          "name": "Google Research Blog",
+          "kind": "editorial"
+        },
+        {
+          "name": "web-techbooky",
           "kind": "editorial"
         }
       ],
@@ -1737,18 +1823,79 @@
     }
   ],
   "hot": {
-    "computedAt": "2026-10-25T07:43:00.000Z",
+    "computedAt": "2026-10-25T11:44:00.000Z",
     "windowHours": 48,
     "entries": [
       {
         "rank": 1,
         "story": {
+          "publicId": "2026-10-25-openmobile-2-mobile-agents",
+          "title": "OpenMobile-2：开源手机智能体称真机评测居开源前列"
+        },
+        "heat": 15.8,
+        "trend": "up",
+        "trendPct": 85.9,
+        "badges": [
+          "rising"
+        ],
+        "participantCount": 2,
+        "sourceCount": 2,
+        "sourceNames": [
+          "The Decoder",
+          "web-arxiv-2610.14157"
+        ],
+        "participants": [
+          {
+            "name": "The Decoder",
+            "kind": "editorial"
+          },
+          {
+            "name": "web-arxiv-2610.14157",
+            "kind": "editorial"
+          }
+        ],
+        "spark": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          10.0,
+          9.7,
+          9.4,
+          9.2,
+          8.9,
+          8.7,
+          8.4,
+          18.1,
+          17.6,
+          17.1,
+          16.6,
+          16.2
+        ],
+        "summary": null,
+        "latest": null,
+        "cover": null,
+        "rankDelta": 0,
+        "heatDeltaPct": -7.6
+      },
+      {
+        "rank": 2,
+        "story": {
           "publicId": "2026-10-24-kimi-k31-pro",
           "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四"
         },
-        "heat": 17.0,
+        "heat": 15.1,
         "trend": "down",
-        "trendPct": -15.8,
+        "trendPct": -16.1,
         "badges": [],
         "participantCount": 4,
         "sourceCount": 3,
@@ -1776,10 +1923,6 @@
           }
         ],
         "spark": [
-          22.3,
-          33.7,
-          32.7,
-          31.8,
           30.9,
           30.0,
           29.1,
@@ -1800,37 +1943,36 @@
           18.9,
           18.4,
           17.8,
-          17.3
+          17.3,
+          16.8,
+          16.4,
+          15.9,
+          15.4
         ],
         "summary": "Artificial Analysis：Kimi K3.1 Pro 智能指数 55（较 K3 升 11 分），暂列第四，落后 Claude Opus 5.5 等；智能体与终端基准提升明显。参数仍约 2.8T/104B 激活、百万上下文；权重尚未放出，评测方预计开源后将成为领先开源权重模型之一。",
         "latest": "腾讯 WorkBuddy 接入 Kimi-K3.1-Pro（含 Highspeed，企业旗舰/个人订阅优先开放）；Latent Space：权重承诺 11 月 4 日放出；Highspeed API 称快 2–3 倍；Code Arena WebDev 约第 8；Cyber Index 64%。",
         "cover": null,
         "rankDelta": 0,
-        "heatDeltaPct": -8.1
+        "heatDeltaPct": -7.4
       },
       {
-        "rank": 2,
+        "rank": 3,
         "story": {
           "publicId": "2026-10-24-openai-securing-frontier-training",
           "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队"
         },
-        "heat": 15.8,
+        "heat": 11.7,
         "trend": "down",
-        "trendPct": -16.0,
+        "trendPct": -29.9,
         "badges": [],
-        "participantCount": 4,
-        "sourceCount": 4,
+        "participantCount": 3,
+        "sourceCount": 3,
         "sourceNames": [
           "The Decoder",
           "TechCrunch · AI",
-          "The Verge · AI",
-          "OpenAI News"
+          "The Verge · AI"
         ],
         "participants": [
-          {
-            "name": "OpenAI News",
-            "kind": "editorial"
-          },
           {
             "name": "The Decoder",
             "kind": "editorial"
@@ -1845,10 +1987,6 @@
           }
         ],
         "spark": [
-          20.9,
-          20.3,
-          19.8,
-          19.2,
           18.7,
           27.9,
           27.1,
@@ -1869,23 +2007,149 @@
           17.6,
           17.1,
           16.6,
-          16.1
+          16.1,
+          15.7,
+          15.2,
+          12.3,
+          11.9
         ],
         "summary": null,
         "latest": null,
         "cover": null,
         "rankDelta": 0,
-        "heatDeltaPct": -8.1
+        "heatDeltaPct": -23.0
       },
       {
-        "rank": 3,
+        "rank": 4,
         "story": {
-          "publicId": "2026-10-22-nvidia-microduck-isaac-lab",
-          "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机"
+          "publicId": "2026-10-24-anthropic-ukaisi-alignment",
+          "title": "Anthropic：复盘 AISI 事件，内部研究模型更能自行停止攻击"
+        },
+        "heat": 8.8,
+        "trend": "down",
+        "trendPct": -16.2,
+        "badges": [],
+        "participantCount": 3,
+        "sourceCount": 3,
+        "sourceNames": [
+          "The Decoder",
+          "Anthropic Research"
+        ],
+        "participants": [
+          {
+            "name": "Anthropic Research",
+            "kind": "editorial"
+          },
+          {
+            "name": "Anthropic Research",
+            "kind": "editorial"
+          },
+          {
+            "name": "The Decoder",
+            "kind": "editorial"
+          }
+        ],
+        "spark": [
+          18.0,
+          17.5,
+          17.0,
+          16.5,
+          16.0,
+          15.6,
+          15.1,
+          14.7,
+          14.3,
+          13.9,
+          13.5,
+          13.1,
+          12.7,
+          12.4,
+          12.0,
+          11.7,
+          11.3,
+          11.0,
+          10.7,
+          10.4,
+          10.1,
+          9.8,
+          9.5,
+          9.3,
+          9.0
+        ],
+        "summary": null,
+        "latest": null,
+        "cover": null,
+        "rankDelta": 0,
+        "heatDeltaPct": -7.4
+      },
+      {
+        "rank": 5,
+        "story": {
+          "publicId": "2026-10-24-google-tb-screening",
+          "title": "Google Research：把基础模型用于一线结核病筛查"
         },
         "heat": 6.9,
         "trend": "down",
         "trendPct": -15.9,
+        "badges": [],
+        "participantCount": 2,
+        "sourceCount": 2,
+        "sourceNames": [
+          "web-techbooky",
+          "Google Research Blog"
+        ],
+        "participants": [
+          {
+            "name": "Google Research Blog",
+            "kind": "editorial"
+          },
+          {
+            "name": "web-techbooky",
+            "kind": "editorial"
+          }
+        ],
+        "spark": [
+          14.0,
+          13.6,
+          13.2,
+          12.8,
+          12.5,
+          12.1,
+          11.8,
+          11.4,
+          11.1,
+          10.8,
+          10.5,
+          10.2,
+          9.9,
+          9.6,
+          9.4,
+          9.1,
+          8.8,
+          8.6,
+          8.3,
+          8.1,
+          7.9,
+          7.6,
+          7.4,
+          7.2,
+          7.0
+        ],
+        "summary": "Google Research 博文介绍将基础模型用于结核病筛查一线场景；属应用研究说明，具体性能与部署边界以原文为准。",
+        "latest": null,
+        "cover": null,
+        "rankDelta": 1,
+        "heatDeltaPct": -6.8
+      },
+      {
+        "rank": 6,
+        "story": {
+          "publicId": "2026-10-22-nvidia-microduck-isaac-lab",
+          "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机"
+        },
+        "heat": 6.1,
+        "trend": "down",
+        "trendPct": -16.4,
         "badges": [],
         "participantCount": 2,
         "sourceCount": 2,
@@ -1904,10 +2168,6 @@
           }
         ],
         "spark": [
-          14.0,
-          13.6,
-          13.2,
-          12.8,
           12.5,
           12.1,
           11.8,
@@ -1928,13 +2188,76 @@
           7.6,
           7.4,
           7.2,
-          7.0
+          7.0,
+          6.8,
+          6.6,
+          6.4,
+          6.2
         ],
         "summary": "NVIDIA 介绍 Microduck 在 Isaac Lab 3.0 中仿真训练后迁移到真机的流程与结果。",
         "latest": "TechCrunch：黄仁勋演示 Microduck 玩具机器人，称已售约 2 万台、冲圣诞热销。",
         "cover": null,
-        "rankDelta": 0,
-        "heatDeltaPct": -8.0
+        "rankDelta": 1,
+        "heatDeltaPct": -7.6
+      },
+      {
+        "rank": 7,
+        "story": {
+          "publicId": "2026-10-24-openai-metr-agent-monitoring",
+          "title": "METR/Redwood 驻场审计：OpenAI 内部智能体监控存在覆盖缺口"
+        },
+        "heat": 6.0,
+        "trend": "down",
+        "trendPct": -15.5,
+        "badges": [],
+        "participantCount": 2,
+        "sourceCount": 2,
+        "sourceNames": [
+          "The Decoder",
+          "web-metr"
+        ],
+        "participants": [
+          {
+            "name": "The Decoder",
+            "kind": "editorial"
+          },
+          {
+            "name": "web-metr",
+            "kind": "editorial"
+          }
+        ],
+        "spark": [
+          12.2,
+          11.9,
+          11.6,
+          11.2,
+          10.9,
+          10.6,
+          10.3,
+          10.0,
+          9.7,
+          9.4,
+          9.2,
+          8.9,
+          8.7,
+          8.4,
+          8.2,
+          7.9,
+          7.7,
+          7.5,
+          7.3,
+          7.1,
+          6.9,
+          6.7,
+          6.5,
+          6.3,
+          6.1
+        ],
+        "summary": null,
+        "latest": null,
+        "cover": null,
+        "rankDelta": 1,
+        "heatDeltaPct": -7.7
       }
     ]
   },

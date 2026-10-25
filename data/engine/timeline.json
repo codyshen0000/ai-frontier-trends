@@ -6,6 +6,54 @@
   },
   "cards": [
     {
+      "key": "sha256:af9112a54e84d14e",
+      "anchorAt": "2026-10-25T10:08:49.000Z",
+      "item": {
+        "id": "sha256:af9112a54e84d14e",
+        "title": "Nvidia 开源 Flora：机器人视频标注数据引擎",
+        "summary": null,
+        "reason": "开源机器人视频标注引擎称大幅降本",
+        "source": {
+          "name": "The Decoder"
+        },
+        "publishedAt": "2026-10-25T10:08:49.000Z",
+        "timelineAt": "2026-10-25T10:08:49.000Z",
+        "category": "paper",
+        "tags": [],
+        "selected": true,
+        "channel": "news",
+        "x": null,
+        "storyPublicId": "2026-10-25-nvidia-flora-robot-data-engine",
+        "originalUrl": "https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra/",
+        "score": null
+      },
+      "group": null
+    },
+    {
+      "key": "sha256:de032cfb4352542b",
+      "anchorAt": "2026-10-25T09:12:10.000Z",
+      "item": {
+        "id": "sha256:de032cfb4352542b",
+        "title": "Anthropic：单智能体循环往往优于多子智能体",
+        "summary": "Anthropic 称单主智能体常在质量/成本/延迟上优于多子智能体；已开源迁移套件。",
+        "reason": "官方称单循环智能体常更快更稳",
+        "source": {
+          "name": "The Decoder"
+        },
+        "publishedAt": "2026-10-25T09:12:10.000Z",
+        "timelineAt": "2026-10-25T09:12:10.000Z",
+        "category": "industry",
+        "tags": [],
+        "selected": true,
+        "channel": "news",
+        "x": null,
+        "storyPublicId": "2026-10-25-anthropic-single-agent-loop",
+        "originalUrl": "https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone/",
+        "score": null
+      },
+      "group": null
+    },
+    {
       "key": "sha256:514019d7b6342099",
       "anchorAt": "2026-10-25T06:55:22.000Z",
       "item": {
@@ -1657,6 +1705,6 @@
     "2026-10-19": 2,
     "2026-10-17": 5,
     "2026-10-18": 2,
-    "2026-10-25": 1
+    "2026-10-25": 3
   }
 }

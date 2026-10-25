@@ -1,7 +1,7 @@
 {
   "site": "前沿趋势",
-  "asOf": "2026-10-25T15:27:07+08:00",
-  "asOfLabel": "数据截至 2026-10-25 15:27（北京时间）",
+  "asOf": "2026-10-25T19:21:21+08:00",
+  "asOfLabel": "数据截至 2026-10-25 19:21（北京时间）",
   "source": "engine",
   "engineFiles": [
     "timeline.json",
@@ -12,7 +12,7 @@
     "meta.json",
     "fixture.json"
   ],
-  "passedCount": 48,
+  "passedCount": 50,
   "fillCount": 10,
   "note": "data/engine JSON · 热度/涨跌/spark 以导出为准",
   "pages": [

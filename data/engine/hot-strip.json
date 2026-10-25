@@ -1,8 +1,27 @@
 [
   {
     "rank": 1,
+    "title": "OpenMobile-2：开源手机智能体称真机评测居开源前列",
+    "heat": 15.8,
+    "trend": "up",
+    "storyPublicId": "2026-10-25-openmobile-2-mobile-agents",
+    "itemId": "sha256:514019d7b6342099",
+    "participants": [
+      {
+        "name": "The Decoder",
+        "kind": "editorial"
+      },
+      {
+        "name": "web-arxiv-2610.14157",
+        "kind": "editorial"
+      }
+    ],
+    "participantCount": 2
+  },
+  {
+    "rank": 2,
     "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
-    "heat": 17.0,
+    "heat": 15.1,
     "trend": "down",
     "storyPublicId": "2026-10-24-kimi-k31-pro",
     "itemId": "sha256:261b6564023ad66c",
@@ -27,17 +46,13 @@
     "participantCount": 4
   },
   {
-    "rank": 2,
+    "rank": 3,
     "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
-    "heat": 15.8,
+    "heat": 11.7,
     "trend": "down",
     "storyPublicId": "2026-10-24-openai-securing-frontier-training",
     "itemId": "sha256:f8c156dba7886826",
     "participants": [
-      {
-        "name": "OpenAI News",
-        "kind": "editorial"
-      },
       {
         "name": "The Decoder",
         "kind": "editorial"
@@ -51,22 +66,45 @@
         "kind": "editorial"
       }
     ],
-    "participantCount": 4
+    "participantCount": 3
   },
   {
-    "rank": 3,
-    "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
-    "heat": 6.9,
+    "rank": 4,
+    "title": "Anthropic：复盘 AISI 事件，内部研究模型更能自行停止攻击",
+    "heat": 8.8,
     "trend": "down",
-    "storyPublicId": "2026-10-22-nvidia-microduck-isaac-lab",
-    "itemId": "sha256:7decc1c5c0496d6c",
+    "storyPublicId": "2026-10-24-anthropic-ukaisi-alignment",
+    "itemId": "sha256:cfa117fe12523c03",
     "participants": [
       {
-        "name": "NVIDIA Technical Blog",
+        "name": "Anthropic Research",
         "kind": "editorial"
       },
       {
-        "name": "TechCrunch · AI",
+        "name": "Anthropic Research",
+        "kind": "editorial"
+      },
+      {
+        "name": "The Decoder",
+        "kind": "editorial"
+      }
+    ],
+    "participantCount": 3
+  },
+  {
+    "rank": 5,
+    "title": "Google Research：把基础模型用于一线结核病筛查",
+    "heat": 6.9,
+    "trend": "down",
+    "storyPublicId": "2026-10-24-google-tb-screening",
+    "itemId": "sha256:30a34d758ba63be2",
+    "participants": [
+      {
+        "name": "Google Research Blog",
+        "kind": "editorial"
+      },
+      {
+        "name": "web-techbooky",
         "kind": "editorial"
       }
     ],

@@ -64,7 +64,7 @@ interface EngineMeta {
 - 标题里的 `「[低于门槛补位]」`、日报摘要里的 `「（低于门槛）」` **原样保留**，不得剥离或隐藏。
 - 新导出若只给 `belowThreshold: true`、标题不再带前缀：加载器在渲染前补上 `[低于门槛补位]` / `（低于门槛）`。
 - 热度、分数原样进入壳层，不改写成 0、不因补位隐藏。
-- 本批：过线 48 条 / 补位 10 条；热点 3 条（#1 仍是 Kimi K3.1 Pro / 腾讯 WorkBuddy）。新增精选 OpenMobile-2；vLLM NVL72 仍在。24 日日报仍 14/12/`flashes=20`。T1326–T1527。
+- 本批：过线 50 条 / 补位 10 条；热点 7 条（#1 OpenMobile-2；Kimi WorkBuddy 仍在榜）。Flora / 单智能体循环 / OpenMobile-2 / vLLM NVL72 精选均在。24 日日报仍 14/12/`flashes=20`。T1620–T1921。
 
 ## 图片（MIT L2）
 
