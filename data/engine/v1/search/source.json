@@ -1,6 +1,52 @@
 {
- "generatedAt": "2026-10-25T09:03:00.000Z",
+ "generatedAt": "2026-10-25T11:44:00.000Z",
  "docs": [
+  {
+   "id": "sha256:af9112a54e84d14e",
+   "kind": "item",
+   "title": "Nvidia 开源 Flora：机器人视频标注数据引擎",
+   "summary": null,
+   "publishedAt": "2026-10-25T10:08:49.000Z",
+   "sourceName": "The Decoder",
+   "category": "paper",
+   "selected": true,
+   "eventPublicId": "2026-10-25-nvidia-flora-robot-data-engine",
+   "originalUrl": "https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra/"
+  },
+  {
+   "id": "2026-10-25-nvidia-flora-robot-data-engine",
+   "kind": "event",
+   "title": "Nvidia 开源 Flora：机器人视频标注数据引擎",
+   "summary": null,
+   "publishedAt": "2026-10-25T10:08:49.000Z",
+   "sourceNames": [
+    "The Decoder"
+   ],
+   "path": "/events/2026-10-25-nvidia-flora-robot-data-engine/"
+  },
+  {
+   "id": "sha256:de032cfb4352542b",
+   "kind": "item",
+   "title": "Anthropic：单智能体循环往往优于多子智能体",
+   "summary": "Anthropic 称单主智能体常在质量/成本/延迟上优于多子智能体；已开源迁移套件。",
+   "publishedAt": "2026-10-25T09:12:10.000Z",
+   "sourceName": "The Decoder",
+   "category": "industry",
+   "selected": true,
+   "eventPublicId": "2026-10-25-anthropic-single-agent-loop",
+   "originalUrl": "https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone/"
+  },
+  {
+   "id": "2026-10-25-anthropic-single-agent-loop",
+   "kind": "event",
+   "title": "Anthropic：单智能体循环往往优于多子智能体",
+   "summary": "Anthropic 应用团队称，新一代模型可在单循环内完成复杂计划，按需加载技能/工具的单主智能体常在质量、成本与延迟上优于多子智能体；一例称单智能体架构约快一倍。已开源 single-agent-loop-kit 迁移套件；仍保留子智能体于上下文膨胀、真并行或工具选择冲突场景。一手：Anthropic 工程文。",
+   "publishedAt": "2026-10-25T09:12:10.000Z",
+   "sourceNames": [
+    "The Decoder"
+   ],
+   "path": "/events/2026-10-25-anthropic-single-agent-loop/"
+  },
   {
    "id": "sha256:514019d7b6342099",
    "kind": "item",

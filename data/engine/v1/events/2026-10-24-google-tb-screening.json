@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 6
+  "rank": 5
  },
  "developments": [
   {
@@ -274,6 +274,16 @@
    "hour": "2026-10-25T09:00:00.000Z",
    "heat": 7.4,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-25T10:00:00.000Z",
+   "heat": 7.2,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-25T11:00:00.000Z",
+   "heat": 7.0,
+   "participants": 2
   }
  ],
  "related": [],
@@ -286,5 +296,6 @@
   "alt": "结核筛查相关胸部 X 光示意",
   "valueClass": "paper_figure"
  },
- "primaryUrl": "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/"
+ "primaryUrl": "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/",
+ "rankDelta": 1
 }

@@ -13,9 +13,9 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 4,
+  "participants48h": 3,
   "newParticipants6h": 0,
-  "recentReports24h": 1,
+  "recentReports24h": 0,
   "observationComplete": true,
   "rank": 3
  },
@@ -104,11 +104,6 @@
   }
  ],
  "heat": [
-  {
-   "hour": "2026-10-23T10:00:00.000Z",
-   "heat": 10.0,
-   "participants": 1
-  },
   {
    "hour": "2026-10-23T11:00:00.000Z",
    "heat": 9.7,
@@ -343,11 +338,21 @@
    "hour": "2026-10-25T09:00:00.000Z",
    "heat": 15.2,
    "participants": 4
+  },
+  {
+   "hour": "2026-10-25T10:00:00.000Z",
+   "heat": 12.3,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-25T11:00:00.000Z",
+   "heat": 11.9,
+   "participants": 3
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "OpenAI 默认离线训练并大规模红队加固前沿环境",
  "primaryUrl": "https://openai.com/index/securing-our-frontier-model-training-environment",
- "rankDelta": -1
+ "rankDelta": 0
 }

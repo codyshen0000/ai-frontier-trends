@@ -6,6 +6,59 @@
  },
  "cards": [
   {
+   "key": "sha256:3b031f6c198ac941",
+   "anchorAt": "2026-10-21T00:00:00.000Z",
+   "item": {
+    "id": "sha256:3b031f6c198ac941",
+    "title": "vLLM 宣布 Day-0 支持 Flint 编码模型",
+    "summary": "vLLM 称 Day-0 支持 Flint 双检查点，单卡单请求约 500 tok/s。",
+    "reason": null,
+    "source": {
+     "name": "vLLM Blog"
+    },
+    "publishedAt": "2026-10-21T00:00:00.000Z",
+    "timelineAt": "2026-10-21T00:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-22-recursive-flint-coding-model",
+    "originalUrl": "https://vllm.ai/blog/2026-10-21-flint"
+   },
+   "group": {
+    "factId": "fact-2026-10-22-recursive-flint-coding-model",
+    "additionalSourceCount": 2,
+    "reportCount": 3,
+    "memberIds": [
+     "sha256:3b031f6c198ac941"
+    ]
+   }
+  },
+  {
+   "key": "sha256:011eb73686ffbc98",
+   "anchorAt": "2026-10-20T20:03:10.000Z",
+   "item": {
+    "id": "sha256:011eb73686ffbc98",
+    "title": "Wiz：钓鱼到 LLMjacking，劫持云账单盗刷模型 API",
+    "summary": "搜索广告钓鱼后劫持云计费账户，未授权刷大模型 API 可产生巨额账单。",
+    "reason": "钓鱼劫持云账单盗刷 LLM API（LLMjacking）",
+    "source": {
+     "name": "Wiz Blog"
+    },
+    "publishedAt": "2026-10-20T20:03:10.000Z",
+    "timelineAt": "2026-10-20T20:03:10.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-22-wiz-llmjacking-cloud-billing",
+    "originalUrl": "https://www.wiz.io/blog/from-phishing-to-llmjacking"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:4c6292fc5ecba5f2",
    "anchorAt": "2026-10-20T12:00:22.000Z",
    "item": {
@@ -170,5 +223,5 @@
  "dayCounts": {},
  "page": 3,
  "pageCount": 3,
- "total": 46
+ "total": 48
 }

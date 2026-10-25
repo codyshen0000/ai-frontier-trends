@@ -1,0 +1,75 @@
+{
+ "publicId": "2026-10-25-nvidia-flora-robot-data-engine",
+ "title": "Nvidia 开源 Flora：机器人视频标注数据引擎",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-25T10:08:49.000Z",
+ "latestAt": "2026-10-25T10:08:49.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": null,
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-25-nvidia-flora-robot-data-engine",
+   "title": "Nvidia 开源 Flora：机器人视频标注数据引擎",
+   "firstReportAt": "2026-10-25T10:08:49.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:af9112a54e84d14e",
+    "title": "Nvidia 开源 Flora：机器人视频标注数据引擎",
+    "summary": null,
+    "source": {
+     "name": "The Decoder",
+     "firstParty": false
+    },
+    "publishedAt": "2026-10-25T10:08:49.000Z",
+    "selected": true,
+    "originalUrl": "https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra/"
+   }
+  }
+ ],
+ "officialReports": [],
+ "timeline": [
+  {
+   "id": "sha256:af9112a54e84d14e",
+   "title": "Nvidia 开源 Flora：机器人视频标注数据引擎",
+   "summary": null,
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-25T10:08:49.000Z",
+   "selected": true,
+   "originalUrl": "https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-25T11:00:00.000Z",
+   "heat": 9.8,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "开源机器人视频标注引擎称大幅降本",
+ "cover": {
+  "url": "https://the-decoder.com/wp-content/uploads/2026/10/nvidia-flora-hero-robot-hands.jpg",
+  "width": null,
+  "height": null,
+  "alt": "机器人手部操作画面，用于展示 Flora 视频标注场景",
+  "valueClass": "product_screenshot"
+ },
+ "primaryUrl": "https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra/"
+}

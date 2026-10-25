@@ -6,6 +6,52 @@
  },
  "cards": [
   {
+   "key": "sha256:af9112a54e84d14e",
+   "anchorAt": "2026-10-25T10:08:49.000Z",
+   "item": {
+    "id": "sha256:af9112a54e84d14e",
+    "title": "Nvidia 开源 Flora：机器人视频标注数据引擎",
+    "summary": null,
+    "reason": "开源机器人视频标注引擎称大幅降本",
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-25T10:08:49.000Z",
+    "timelineAt": "2026-10-25T10:08:49.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-25-nvidia-flora-robot-data-engine",
+    "originalUrl": "https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:de032cfb4352542b",
+   "anchorAt": "2026-10-25T09:12:10.000Z",
+   "item": {
+    "id": "sha256:de032cfb4352542b",
+    "title": "Anthropic：单智能体循环往往优于多子智能体",
+    "summary": "Anthropic 称单主智能体常在质量/成本/延迟上优于多子智能体；已开源迁移套件。",
+    "reason": "官方称单循环智能体常更快更稳",
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-25T09:12:10.000Z",
+    "timelineAt": "2026-10-25T09:12:10.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-25-anthropic-single-agent-loop",
+    "originalUrl": "https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone/"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:514019d7b6342099",
    "anchorAt": "2026-10-25T06:55:22.000Z",
    "item": {
@@ -503,52 +549,6 @@
     "originalUrl": "https://huggingface.co/blog/allenai/olmoearth-v1-3"
    },
    "group": null
-  },
-  {
-   "key": "sha256:d6172869a6c9d34f",
-   "anchorAt": "2026-10-22T16:00:00.000Z",
-   "item": {
-    "id": "sha256:d6172869a6c9d34f",
-    "title": "微软研究院：Flint-interactive 让智能体做交互式数据可视化",
-    "summary": null,
-    "reason": "微软研究院：Flint-interactive 交互可视化语言",
-    "source": {
-     "name": "Microsoft Research Blog"
-    },
-    "publishedAt": "2026-10-22T16:00:00.000Z",
-    "timelineAt": "2026-10-22T16:00:00.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-23-msr-flint-interactive",
-    "originalUrl": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:50a6596df902bdb2",
-   "anchorAt": "2026-10-22T13:05:31.000Z",
-   "item": {
-    "id": "sha256:50a6596df902bdb2",
-    "title": "Wiz：ARTEX 智能体攻陷多软件厂商，活动与 Storm-0940 重叠",
-    "summary": "Wiz 称 ARTEX 相关活动打身份面，并与 Storm-0940 观察重叠。",
-    "reason": "Wiz：ARTEX 智能体攻陷多软件厂商身份面",
-    "source": {
-     "name": "Wiz Blog"
-    },
-    "publishedAt": "2026-10-22T13:05:31.000Z",
-    "timelineAt": "2026-10-22T13:05:31.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-22-wiz-artex-storm0940",
-    "originalUrl": "https://www.wiz.io/blog/artex-in-the-wild-storm-0940-expands-targeting-of-it-and-software-vendors"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-2.json",
@@ -556,7 +556,7 @@
   {
    "rank": 1,
    "title": "OpenMobile-2：开源手机智能体称真机评测居开源前列",
-   "heat": 17.1,
+   "heat": 15.8,
    "trend": "up",
    "storyPublicId": "2026-10-25-openmobile-2-mobile-agents",
    "itemId": "sha256:514019d7b6342099",
@@ -575,7 +575,7 @@
   {
    "rank": 2,
    "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
-   "heat": 16.3,
+   "heat": 15.1,
    "trend": "down",
    "storyPublicId": "2026-10-24-kimi-k31-pro",
    "itemId": "sha256:261b6564023ad66c",
@@ -602,15 +602,11 @@
   {
    "rank": 3,
    "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
-   "heat": 15.2,
+   "heat": 11.7,
    "trend": "down",
    "storyPublicId": "2026-10-24-openai-securing-frontier-training",
    "itemId": "sha256:f8c156dba7886826",
    "participants": [
-    {
-     "name": "OpenAI News",
-     "kind": "editorial"
-    },
     {
      "name": "The Decoder",
      "kind": "editorial"
@@ -624,12 +620,12 @@
      "kind": "editorial"
     }
    ],
-   "participantCount": 4
+   "participantCount": 3
   },
   {
    "rank": 4,
    "title": "Anthropic：复盘 AISI 事件，内部研究模型更能自行停止攻击",
-   "heat": 9.5,
+   "heat": 8.8,
    "trend": "down",
    "storyPublicId": "2026-10-24-anthropic-ukaisi-alignment",
    "itemId": "sha256:cfa117fe12523c03",
@@ -651,30 +647,26 @@
   },
   {
    "rank": 5,
-   "title": "Anthropic：Claude 为 123 个开源库写出可机器检查的形式化证明",
-   "heat": 8.1,
+   "title": "Google Research：把基础模型用于一线结核病筛查",
+   "heat": 6.9,
    "trend": "down",
-   "storyPublicId": "2026-10-23-anthropic-claude-formal-verification",
-   "itemId": "sha256:b19f86d623cfeb5d",
+   "storyPublicId": "2026-10-24-google-tb-screening",
+   "itemId": "sha256:30a34d758ba63be2",
    "participants": [
     {
-     "name": "Anthropic Research",
+     "name": "Google Research Blog",
      "kind": "editorial"
     },
     {
-     "name": "Anthropic Research",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
+     "name": "web-techbooky",
      "kind": "editorial"
     }
    ],
-   "participantCount": 3
+   "participantCount": 2
   }
  ],
  "dayCounts": {
-  "2026-10-25": 1,
+  "2026-10-25": 3,
   "2026-10-24": 6,
   "2026-10-23": 12,
   "2026-10-22": 9,
@@ -685,5 +677,5 @@
  },
  "page": 1,
  "pageCount": 3,
- "total": 46
+ "total": 48
 }

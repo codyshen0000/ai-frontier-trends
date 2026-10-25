@@ -279,10 +279,21 @@
    "hour": "2026-10-25T09:00:00.000Z",
    "heat": 9.5,
    "participants": 3
+  },
+  {
+   "hour": "2026-10-25T10:00:00.000Z",
+   "heat": 9.3,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-25T11:00:00.000Z",
+   "heat": 9.0,
+   "participants": 3
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "Anthropic 复盘 AISI 测试：内部模型更能自行停攻",
- "primaryUrl": "https://the-decoder.com/anthropic-says-its-unreleased-model-is-both-more-capable-and-better-aligned-than-mythos-5-1/"
+ "primaryUrl": "https://the-decoder.com/anthropic-says-its-unreleased-model-is-both-more-capable-and-better-aligned-than-mythos-5-1/",
+ "rankDelta": 0
 }

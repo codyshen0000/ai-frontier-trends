@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 7
+  "rank": 6
  },
  "developments": [
   {
@@ -68,16 +68,6 @@
   }
  ],
  "heat": [
-  {
-   "hour": "2026-10-23T09:00:00.000Z",
-   "heat": 3.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-23T10:00:00.000Z",
-   "heat": 3.1,
-   "participants": 1
-  },
   {
    "hour": "2026-10-23T11:00:00.000Z",
    "heat": 3.1,
@@ -312,11 +302,21 @@
    "hour": "2026-10-25T09:00:00.000Z",
    "heat": 6.6,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-25T10:00:00.000Z",
+   "heat": 6.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-25T11:00:00.000Z",
+   "heat": 6.2,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "Microduck 经 Isaac Lab 仿真训练后部署到真机",
  "primaryUrl": "https://huggingface.co/blog/nvidia/microduck-isaac-lab-sim-to-real",
- "rankDelta": -4
+ "rankDelta": 1
 }

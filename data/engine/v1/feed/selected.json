@@ -8,6 +8,28 @@
  },
  "items": [
   {
+   "guid": "sha256:af9112a54e84d14e",
+   "title": "Nvidia 开源 Flora：机器人视频标注数据引擎",
+   "summary": "",
+   "originalUrl": "https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra/",
+   "pubDate": "2026-10-25T10:08:49.000Z",
+   "sourceName": "The Decoder",
+   "category": "paper",
+   "categoryLabel": "论文",
+   "eventPublicId": "2026-10-25-nvidia-flora-robot-data-engine"
+  },
+  {
+   "guid": "sha256:de032cfb4352542b",
+   "title": "Anthropic：单智能体循环往往优于多子智能体",
+   "summary": "Anthropic 称单主智能体常在质量/成本/延迟上优于多子智能体；已开源迁移套件。",
+   "originalUrl": "https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone/",
+   "pubDate": "2026-10-25T09:12:10.000Z",
+   "sourceName": "The Decoder",
+   "category": "industry",
+   "categoryLabel": "行业",
+   "eventPublicId": "2026-10-25-anthropic-single-agent-loop"
+  },
+  {
    "guid": "sha256:514019d7b6342099",
    "title": "OpenMobile-2：开源手机智能体称真机评测居开源前列",
    "summary": "",

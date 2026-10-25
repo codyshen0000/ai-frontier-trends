@@ -1,0 +1,73 @@
+{
+ "publicId": "2026-10-25-anthropic-single-agent-loop",
+ "title": "Anthropic：单智能体循环往往优于多子智能体",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-25T09:12:10.000Z",
+ "latestAt": "2026-10-25T09:12:10.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Anthropic 应用团队称，新一代模型可在单循环内完成复杂计划，按需加载技能/工具的单主智能体常在质量、成本与延迟上优于多子智能体；一例称单智能体架构约快一倍。已开源 single-agent-loop-kit 迁移套件；仍保留子智能体于上下文膨胀、真并行或工具选择冲突场景。一手：Anthropic 工程文。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-25-anthropic-single-agent-loop",
+   "title": "Anthropic：单智能体循环往往优于多子智能体",
+   "firstReportAt": "2026-10-25T09:12:10.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:de032cfb4352542b",
+    "title": "Anthropic：单智能体循环往往优于多子智能体",
+    "summary": "Anthropic 称单主智能体常在质量/成本/延迟上优于多子智能体；已开源迁移套件。",
+    "source": {
+     "name": "The Decoder",
+     "firstParty": false
+    },
+    "publishedAt": "2026-10-25T09:12:10.000Z",
+    "selected": true,
+    "originalUrl": "https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone/"
+   }
+  }
+ ],
+ "officialReports": [],
+ "timeline": [
+  {
+   "id": "sha256:de032cfb4352542b",
+   "title": "Anthropic：单智能体循环往往优于多子智能体",
+   "summary": "Anthropic 称单主智能体常在质量/成本/延迟上优于多子智能体；已开源迁移套件。",
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-25T09:12:10.000Z",
+   "selected": true,
+   "originalUrl": "https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-25T10:00:00.000Z",
+   "heat": 9.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-25T11:00:00.000Z",
+   "heat": 9.5,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "官方称单循环智能体常更快更稳",
+ "primaryUrl": "https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone/"
+}

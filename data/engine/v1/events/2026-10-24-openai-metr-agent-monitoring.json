@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 8
+  "rank": 7
  },
  "developments": [
   {
@@ -261,10 +261,21 @@
    "hour": "2026-10-25T09:00:00.000Z",
    "heat": 6.5,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-25T10:00:00.000Z",
+   "heat": 6.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-25T11:00:00.000Z",
+   "heat": 6.1,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "METR/Redwood 驻场审计：OpenAI 智能体监控有缺口",
- "primaryUrl": "https://the-decoder.com/three-week-on-site-audit-at-openai-reveals-major-gaps-in-ai-safety-monitoring/"
+ "primaryUrl": "https://the-decoder.com/three-week-on-site-audit-at-openai-reveals-major-gaps-in-ai-safety-monitoring/",
+ "rankDelta": 1
 }

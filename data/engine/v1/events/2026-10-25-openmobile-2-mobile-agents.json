@@ -116,10 +116,21 @@
    "hour": "2026-10-25T09:00:00.000Z",
    "heat": 17.1,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-25T10:00:00.000Z",
+   "heat": 16.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-25T11:00:00.000Z",
+   "heat": 16.2,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "开源手机智能体称真机评测居开源前列",
- "primaryUrl": "https://the-decoder.com/openmobile-2-proves-open-source-smartphone-agents-can-rival-proprietary-models/"
+ "primaryUrl": "https://the-decoder.com/openmobile-2-proves-open-source-smartphone-agents-can-rival-proprietary-models/",
+ "rankDelta": 0
 }
