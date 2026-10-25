@@ -208,6 +208,7 @@ describe("rankHotFromEngine (heat.mjs equivalent)", () => {
       rmSync(dir, { recursive: true, force: true });
     }
   });
+});
 
 describe("prev-tip is mandatory", () => {
   it("throws without --prev-tip", () => {
