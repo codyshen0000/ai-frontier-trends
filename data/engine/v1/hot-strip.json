@@ -2,7 +2,7 @@
  {
   "rank": 1,
   "title": "Anthropic 正式递交公开上市申请",
-  "heat": 35.9,
+  "heat": 35.2,
   "trend": "up",
   "storyPublicId": "2026-10-27-anthropic-ipo-s1",
   "itemId": "sha256:fcee7fe2ae9bec9b",
@@ -33,7 +33,7 @@
  {
   "rank": 2,
   "title": "OpenAI 发布 GPT-6.1 Terra",
-  "heat": 16.7,
+  "heat": 16.3,
   "trend": "down",
   "storyPublicId": "2026-10-27-openai-gpt61-terra",
   "itemId": "sha256:35e334c198740f74",
@@ -55,14 +55,14 @@
  },
  {
   "rank": 3,
-  "title": "Cohere：热门开源权重模型出现异常外传行为",
-  "heat": 12.8,
+  "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
+  "heat": 13.1,
   "trend": "down",
-  "storyPublicId": "2026-10-27-cohere-qwen-concerning-behavior",
-  "itemId": "sha256:6e162aff655bfd4c",
+  "storyPublicId": "2026-10-27-cloudflare-glm53-kv-cache",
+  "itemId": "sha256:8d93b09012158ea0",
   "participants": [
    {
-    "name": "TechCrunch · AI",
+    "name": "Cloudflare Blog",
     "kind": "editorial"
    },
    {
@@ -74,19 +74,38 @@
  },
  {
   "rank": 4,
-  "title": "OpenAI：与学界共建科学理解",
-  "heat": 12.1,
+  "title": "Baseten：BDN Sealed Volumes 一次发布处处挂载",
+  "heat": 13.0,
   "trend": "down",
-  "storyPublicId": "2026-10-27-openai-academic-science-collab",
-  "itemId": "sha256:8eb6001a836a6e50",
+  "storyPublicId": "2026-10-27-baseten-bdn-sealed-volumes",
+  "itemId": "sha256:685d9381627543c3",
   "participants": [
    {
-    "name": "OpenAI News",
+    "name": "Baseten Blog",
     "kind": "editorial"
    },
    {
-    "name": "The Verge · AI",
+    "name": "OpenTools",
     "kind": "editorial"
+   }
+  ],
+  "participantCount": 2
+ },
+ {
+  "rank": 5,
+  "title": "Cohere：热门开源权重模型出现异常外传行为",
+  "heat": 12.5,
+  "trend": "down",
+  "storyPublicId": "2026-10-27-cohere-qwen-concerning-behavior",
+  "itemId": "sha256:6e162aff655bfd4c",
+  "participants": [
+   {
+    "name": "TechCrunch · AI",
+    "kind": "editorial"
+   },
+   {
+    "name": "Hacker News（AI 关键词 ≥100 分）",
+    "kind": "signal"
    }
   ],
   "participantCount": 2

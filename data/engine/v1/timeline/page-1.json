@@ -6,15 +6,15 @@
  },
  "cards": [
   {
-   "key": "sha256:89893d5f73c77515",
+   "key": "sha256:8d93b09012158ea0",
    "anchorAt": "2026-10-26T22:41:48.000Z",
    "item": {
-    "id": "sha256:89893d5f73c77515",
+    "id": "sha256:8d93b09012158ea0",
     "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
-    "summary": "Cloudflare 披露并修复 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题。属官方安全通告；HN 讨论跟进。",
+    "summary": "Cloudflare 官方披露并修复 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题。属官方安全通告。",
     "reason": "Cloudflare 修复 Workers AI KV 缓存跨请求暴露",
     "source": {
-     "name": "Hacker News（AI 关键词 ≥100 分）"
+     "name": "Cloudflare Blog"
     },
     "publishedAt": "2026-10-26T22:41:48.000Z",
     "timelineAt": "2026-10-26T22:41:48.000Z",
@@ -26,7 +26,15 @@
     "storyPublicId": "2026-10-27-cloudflare-glm53-kv-cache",
     "originalUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/"
    },
-   "group": null
+   "group": {
+    "factId": "fact-2026-10-27-cloudflare-glm53-kv-cache",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:8d93b09012158ea0",
+     "sha256:89893d5f73c77515"
+    ]
+   }
   },
   {
    "key": "sha256:685d9381627543c3",
@@ -49,7 +57,14 @@
     "storyPublicId": "2026-10-27-baseten-bdn-sealed-volumes",
     "originalUrl": "https://www.baseten.co/blog/bdn-sealed-volumes-publish-once-mount-anywhere/"
    },
-   "group": null
+   "group": {
+    "factId": "fact-2026-10-27-baseten-bdn-sealed-volumes",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:685d9381627543c3"
+    ]
+   }
   },
   {
    "key": "sha256:27779e2e3a96ff05",
@@ -88,7 +103,7 @@
     "id": "sha256:edeae07ffd206303",
     "title": "NVIDIA Minerva：把遥测混乱变成峰值 GPU 良率",
     "summary": "NVIDIA 技术博客介绍 Minerva 如何用遥测提升 GPU 良率。属厂商技术说明。",
-    "reason": null,
+    "reason": "NVIDIA Minerva 用遥测提升 GPU 良率",
     "source": {
      "name": "NVIDIA Technical Blog"
     },
@@ -102,7 +117,14 @@
     "storyPublicId": "2026-10-27-nvidia-minerva-gpu-yield",
     "originalUrl": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/"
    },
-   "group": null
+   "group": {
+    "factId": "fact-2026-10-27-nvidia-minerva-gpu-yield",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:edeae07ffd206303"
+    ]
+   }
   },
   {
    "key": "sha256:c3d6fb64eb5418e8",
@@ -125,7 +147,14 @@
     "storyPublicId": "2026-10-27-nvidia-mission-control-25",
     "originalUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/"
    },
-   "group": null
+   "group": {
+    "factId": "fact-2026-10-27-nvidia-mission-control-25",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:c3d6fb64eb5418e8"
+    ]
+   }
   },
   {
    "key": "sha256:fcee7fe2ae9bec9b",
@@ -555,7 +584,7 @@
   {
    "rank": 1,
    "title": "Anthropic 正式递交公开上市申请",
-   "heat": 35.9,
+   "heat": 35.2,
    "trend": "up",
    "storyPublicId": "2026-10-27-anthropic-ipo-s1",
    "itemId": "sha256:fcee7fe2ae9bec9b",
@@ -586,7 +615,7 @@
   {
    "rank": 2,
    "title": "OpenAI 发布 GPT-6.1 Terra",
-   "heat": 16.7,
+   "heat": 16.3,
    "trend": "down",
    "storyPublicId": "2026-10-27-openai-gpt61-terra",
    "itemId": "sha256:35e334c198740f74",
@@ -608,14 +637,14 @@
   },
   {
    "rank": 3,
-   "title": "Cohere：热门开源权重模型出现异常外传行为",
-   "heat": 12.8,
+   "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
+   "heat": 13.1,
    "trend": "down",
-   "storyPublicId": "2026-10-27-cohere-qwen-concerning-behavior",
-   "itemId": "sha256:6e162aff655bfd4c",
+   "storyPublicId": "2026-10-27-cloudflare-glm53-kv-cache",
+   "itemId": "sha256:8d93b09012158ea0",
    "participants": [
     {
-     "name": "TechCrunch · AI",
+     "name": "Cloudflare Blog",
      "kind": "editorial"
     },
     {
@@ -627,19 +656,38 @@
   },
   {
    "rank": 4,
-   "title": "OpenAI：与学界共建科学理解",
-   "heat": 12.1,
+   "title": "Baseten：BDN Sealed Volumes 一次发布处处挂载",
+   "heat": 13.0,
    "trend": "down",
-   "storyPublicId": "2026-10-27-openai-academic-science-collab",
-   "itemId": "sha256:8eb6001a836a6e50",
+   "storyPublicId": "2026-10-27-baseten-bdn-sealed-volumes",
+   "itemId": "sha256:685d9381627543c3",
    "participants": [
     {
-     "name": "OpenAI News",
+     "name": "Baseten Blog",
      "kind": "editorial"
     },
     {
-     "name": "The Verge · AI",
+     "name": "OpenTools",
      "kind": "editorial"
+    }
+   ],
+   "participantCount": 2
+  },
+  {
+   "rank": 5,
+   "title": "Cohere：热门开源权重模型出现异常外传行为",
+   "heat": 12.5,
+   "trend": "down",
+   "storyPublicId": "2026-10-27-cohere-qwen-concerning-behavior",
+   "itemId": "sha256:6e162aff655bfd4c",
+   "participants": [
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "Hacker News（AI 关键词 ≥100 分）",
+     "kind": "signal"
     }
    ],
    "participantCount": 2

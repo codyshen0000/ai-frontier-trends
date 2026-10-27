@@ -153,8 +153,26 @@
    "kind": "editorial"
   },
   {
+   "sourceId": "web-blockchain-news",
+   "name": "Blockchain.News",
+   "tier": "T2",
+   "kind": "editorial"
+  },
+  {
+   "sourceId": "web-cloudflare-kv-cache",
+   "name": "Cloudflare Blog",
+   "tier": "T1",
+   "kind": "editorial"
+  },
+  {
    "sourceId": "web-cnbc",
    "name": "CNBC",
+   "tier": "T2",
+   "kind": "editorial"
+  },
+  {
+   "sourceId": "web-eweek",
+   "name": "eWeek",
    "tier": "T2",
    "kind": "editorial"
   },
@@ -180,6 +198,12 @@
    "sourceId": "web-microsoft-github",
    "name": "web-microsoft-github",
    "tier": null,
+   "kind": "editorial"
+  },
+  {
+   "sourceId": "web-opentools",
+   "name": "OpenTools",
+   "tier": "T2",
    "kind": "editorial"
   },
   {

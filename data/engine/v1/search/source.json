@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-27T12:39:00.000Z",
+ "generatedAt": "2026-10-27T13:20:00.000Z",
  "docs": [
   {
    "id": "sha256:d5b884dec7da003b",
@@ -114,6 +114,42 @@
    "path": "/events/2026-10-27-openai-academic-science-collab/"
   },
   {
+   "id": "sha256:cf7888d349f7b358",
+   "kind": "item",
+   "title": "OpenTools：Baseten Sealed Volumes 用 digest 钉死模型数据",
+   "summary": null,
+   "publishedAt": "2026-10-26T23:23:03.000Z",
+   "sourceName": "OpenTools",
+   "category": "opinion",
+   "selected": false,
+   "eventPublicId": "2026-10-27-baseten-bdn-sealed-volumes",
+   "originalUrl": "https://opentools.ai/news/baseten-bdn-sealed-volumes-model-data-digest-tag-rollout"
+  },
+  {
+   "id": "2026-10-27-baseten-bdn-sealed-volumes",
+   "kind": "event",
+   "title": "Baseten：BDN Sealed Volumes 一次发布处处挂载",
+   "summary": "Baseten 博客发布 BDN Sealed Volumes：一次发布、多处挂载的密封卷能力。",
+   "publishedAt": "2026-10-26T23:23:03.000Z",
+   "sourceNames": [
+    "Baseten Blog",
+    "OpenTools"
+   ],
+   "path": "/events/2026-10-27-baseten-bdn-sealed-volumes/"
+  },
+  {
+   "id": "sha256:8d93b09012158ea0",
+   "kind": "item",
+   "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
+   "summary": "Cloudflare 官方披露并修复 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题，说明影响范围与补救。属官方安全通告。",
+   "publishedAt": "2026-10-26T22:41:48.000Z",
+   "sourceName": "Cloudflare Blog",
+   "category": "industry",
+   "selected": true,
+   "eventPublicId": "2026-10-27-cloudflare-glm53-kv-cache",
+   "originalUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/"
+  },
+  {
    "id": "sha256:89893d5f73c77515",
    "kind": "item",
    "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
@@ -132,6 +168,7 @@
    "summary": "Cloudflare 披露并修复其 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题，说明影响范围与补救。属官方安全通告。",
    "publishedAt": "2026-10-26T22:41:48.000Z",
    "sourceNames": [
+    "Cloudflare Blog",
     "Hacker News（AI 关键词 ≥100 分）"
    ],
    "path": "/events/2026-10-27-cloudflare-glm53-kv-cache/"
@@ -161,17 +198,6 @@
    "originalUrl": "https://www.baseten.co/blog/bdn-sealed-volumes-publish-once-mount-anywhere/"
   },
   {
-   "id": "2026-10-27-baseten-bdn-sealed-volumes",
-   "kind": "event",
-   "title": "Baseten：BDN Sealed Volumes 一次发布处处挂载",
-   "summary": "Baseten 博客发布 BDN Sealed Volumes：一次发布、多处挂载的密封卷能力。",
-   "publishedAt": "2026-10-26T21:23:55.000Z",
-   "sourceNames": [
-    "Baseten Blog"
-   ],
-   "path": "/events/2026-10-27-baseten-bdn-sealed-volumes/"
-  },
-  {
    "id": "sha256:0c4a5b3d38ca79d5",
    "kind": "item",
    "title": "报道：GPT-6.1 Terra API 价砍半仍逼近更大模型",
@@ -181,7 +207,7 @@
    "category": "model",
    "selected": false,
    "eventPublicId": "2026-10-27-openai-gpt61-terra",
-   "originalUrl": "https://the-decoder.com/gpt-6-1-terra-halves-openais-api%2Dprices-and-still-gains-ground-on-its-larger-models/"
+   "originalUrl": "https://the-decoder.com/gpt-6-1-terra-halves-openais-api-prices-and-still-gains-ground-on-its-larger-models/"
   },
   {
    "id": "sha256:3d144f3f7ebe5a85",
@@ -256,15 +282,52 @@
    "originalUrl": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/"
   },
   {
+   "id": "sha256:35e6bc2218f19bc7",
+   "kind": "item",
+   "title": "eWeek：Nvidia Minerva 用 AI 检测 GPU 集群问题",
+   "summary": "eWeek 独立报道 Minerva：关联基础设施告警并建议修复；提出四项验收测试。与 NVIDIA Technical Blog 同一故事（#92 结构补挂；discovery_aligned）。",
+   "publishedAt": "2026-10-26T16:00:00.000Z",
+   "sourceName": "eWeek",
+   "category": "opinion",
+   "selected": false,
+   "eventPublicId": "2026-10-27-nvidia-minerva-gpu-yield",
+   "originalUrl": "https://www.eweek.com/news/nvidia-minerva-ai-gpu-cluster-monitoring/"
+  },
+  {
    "id": "2026-10-27-nvidia-minerva-gpu-yield",
    "kind": "event",
    "title": "NVIDIA Minerva：把遥测混乱变成峰值 GPU 良率",
    "summary": "NVIDIA 技术博客介绍 Minerva 如何用遥测提升 GPU 良率。属厂商技术说明。",
    "publishedAt": "2026-10-26T16:00:00.000Z",
    "sourceNames": [
-    "NVIDIA Technical Blog"
+    "NVIDIA Technical Blog",
+    "eWeek"
    ],
    "path": "/events/2026-10-27-nvidia-minerva-gpu-yield/"
+  },
+  {
+   "id": "sha256:b094bdf2e436316c",
+   "kind": "item",
+   "title": "Blockchain.News：Mission Control 2.5 把自主恢复扩到 Kubernetes",
+   "summary": "Blockchain.News：Mission Control 2.5 将自主恢复引擎扩展到 Run:ai 管理的 Kubernetes 工作负载；与 NVIDIA Technical Blog 同一故事。",
+   "publishedAt": "2026-10-26T15:55:11.000Z",
+   "sourceName": "Blockchain.News",
+   "category": "opinion",
+   "selected": false,
+   "eventPublicId": "2026-10-27-nvidia-mission-control-25",
+   "originalUrl": "https://blockchain.news/news/nvidia-mission-control-2-5-autonomous-recovery-kubernetes"
+  },
+  {
+   "id": "2026-10-27-nvidia-mission-control-25",
+   "kind": "event",
+   "title": "NVIDIA Mission Control 2.5：Kubernetes 自主恢复",
+   "summary": "NVIDIA 技术博客称 Mission Control 2.5 为 Kubernetes 环境带来自主恢复能力，减少人工干预。属厂商技术说明。",
+   "publishedAt": "2026-10-26T15:55:11.000Z",
+   "sourceNames": [
+    "Blockchain.News",
+    "NVIDIA Technical Blog"
+   ],
+   "path": "/events/2026-10-27-nvidia-mission-control-25/"
   },
   {
    "id": "sha256:c3d6fb64eb5418e8",
@@ -277,17 +340,6 @@
    "selected": true,
    "eventPublicId": "2026-10-27-nvidia-mission-control-25",
    "originalUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/"
-  },
-  {
-   "id": "2026-10-27-nvidia-mission-control-25",
-   "kind": "event",
-   "title": "NVIDIA Mission Control 2.5：Kubernetes 自主恢复",
-   "summary": "NVIDIA 技术博客称 Mission Control 2.5 为 Kubernetes 环境带来自主恢复能力，减少人工干预。属厂商技术说明。",
-   "publishedAt": "2026-10-26T15:00:00.000Z",
-   "sourceNames": [
-    "NVIDIA Technical Blog"
-   ],
-   "path": "/events/2026-10-27-nvidia-mission-control-25/"
   },
   {
    "id": "sha256:fcee7fe2ae9bec9b",

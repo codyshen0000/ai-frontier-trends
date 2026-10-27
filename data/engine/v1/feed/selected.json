@@ -8,12 +8,12 @@
  },
  "items": [
   {
-   "guid": "sha256:89893d5f73c77515",
+   "guid": "sha256:8d93b09012158ea0",
    "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
-   "summary": "Cloudflare 披露并修复 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题。属官方安全通告；HN 讨论跟进。",
+   "summary": "Cloudflare 官方披露并修复 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题。属官方安全通告。",
    "originalUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
    "pubDate": "2026-10-26T22:41:48.000Z",
-   "sourceName": "Hacker News（AI 关键词 ≥100 分）",
+   "sourceName": "Cloudflare Blog",
    "category": "industry",
    "categoryLabel": "行业",
    "eventPublicId": "2026-10-27-cloudflare-glm53-kv-cache"
