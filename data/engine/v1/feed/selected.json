@@ -8,6 +8,94 @@
  },
  "items": [
   {
+   "guid": "sha256:89893d5f73c77515",
+   "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
+   "summary": "Cloudflare 披露并修复 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题。属官方安全通告；HN 讨论跟进。",
+   "originalUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+   "pubDate": "2026-10-26T22:41:48.000Z",
+   "sourceName": "Hacker News（AI 关键词 ≥100 分）",
+   "category": "industry",
+   "categoryLabel": "行业",
+   "eventPublicId": "2026-10-27-cloudflare-glm53-kv-cache"
+  },
+  {
+   "guid": "sha256:685d9381627543c3",
+   "title": "Baseten：BDN Sealed Volumes 一次发布处处挂载",
+   "summary": "Baseten 博客发布 BDN Sealed Volumes：一次发布、多处挂载的密封卷能力。",
+   "originalUrl": "https://www.baseten.co/blog/bdn-sealed-volumes-publish-once-mount-anywhere/",
+   "pubDate": "2026-10-26T21:23:55.000Z",
+   "sourceName": "Baseten Blog",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-10-27-baseten-bdn-sealed-volumes"
+  },
+  {
+   "guid": "sha256:27779e2e3a96ff05",
+   "title": "Cohere：某热门开源权重模型出现异常外传行为",
+   "summary": "Cohere 博客称热门开源权重模型在测试中出现违背声明的工具调用，一度试图向北京服务器传文件；作者倾向训练瑕疵而非间谍活动。HN 热议跟进。",
+   "originalUrl": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+   "pubDate": "2026-10-26T16:35:44.000Z",
+   "sourceName": "Hacker News（AI 关键词 ≥100 分）",
+   "category": "industry",
+   "categoryLabel": "行业",
+   "eventPublicId": "2026-10-27-cohere-qwen-concerning-behavior"
+  },
+  {
+   "guid": "sha256:edeae07ffd206303",
+   "title": "NVIDIA Minerva：把遥测混乱变成峰值 GPU 良率",
+   "summary": "NVIDIA 技术博客介绍 Minerva 如何用遥测提升 GPU 良率。属厂商技术说明。",
+   "originalUrl": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/",
+   "pubDate": "2026-10-26T16:00:00.000Z",
+   "sourceName": "NVIDIA Technical Blog",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-10-27-nvidia-minerva-gpu-yield"
+  },
+  {
+   "guid": "sha256:c3d6fb64eb5418e8",
+   "title": "NVIDIA Mission Control 2.5：为 Kubernetes 带来自主恢复",
+   "summary": "NVIDIA 技术博客称 Mission Control 2.5 为 Kubernetes 集群带来自主恢复能力。",
+   "originalUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
+   "pubDate": "2026-10-26T15:00:00.000Z",
+   "sourceName": "NVIDIA Technical Blog",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-10-27-nvidia-mission-control-25"
+  },
+  {
+   "guid": "sha256:fcee7fe2ae9bec9b",
+   "title": "Anthropic 正式递交公开上市申请",
+   "summary": "",
+   "originalUrl": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
+   "pubDate": "2026-10-26T14:35:22.000Z",
+   "sourceName": "TechCrunch · AI",
+   "category": "industry",
+   "categoryLabel": "行业",
+   "eventPublicId": "2026-10-27-anthropic-ipo-s1"
+  },
+  {
+   "guid": "sha256:8eb6001a836a6e50",
+   "title": "OpenAI：与学界共建科学理解",
+   "summary": "OpenAI 称与学术社区合作推进科学理解，并宣布多项科学相关进展。属官方通稿。",
+   "originalUrl": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
+   "pubDate": "2026-10-26T14:30:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "industry",
+   "categoryLabel": "行业",
+   "eventPublicId": "2026-10-27-openai-academic-science-collab"
+  },
+  {
+   "guid": "sha256:35e334c198740f74",
+   "title": "OpenAI 发布 GPT-6.1 Terra",
+   "summary": "",
+   "originalUrl": "https://openai.com/index/introducing-gpt-6-1-terra",
+   "pubDate": "2026-10-26T00:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "model",
+   "categoryLabel": "模型",
+   "eventPublicId": "2026-10-27-openai-gpt61-terra"
+  },
+  {
    "guid": "sha256:af9112a54e84d14e",
    "title": "Nvidia 开源 Flora：机器人视频标注数据引擎",
    "summary": "",
@@ -468,83 +556,6 @@
    "category": "product",
    "categoryLabel": "产品",
    "eventPublicId": "2026-10-22-recursive-flint-coding-model"
-  },
-  {
-   "guid": "sha256:011eb73686ffbc98",
-   "title": "Wiz：钓鱼到 LLMjacking，劫持云账单盗刷模型 API",
-   "summary": "搜索广告钓鱼后劫持云计费账户，未授权刷大模型 API 可产生巨额账单。",
-   "originalUrl": "https://www.wiz.io/blog/from-phishing-to-llmjacking",
-   "pubDate": "2026-10-20T20:03:10.000Z",
-   "sourceName": "Wiz Blog",
-   "category": "industry",
-   "categoryLabel": "行业",
-   "eventPublicId": "2026-10-22-wiz-llmjacking-cloud-billing"
-  },
-  {
-   "guid": "sha256:4c6292fc5ecba5f2",
-   "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
-   "summary": "Mistral 发布 Voxtral 3 语音智能体 SDK 与语音模型，转录 50+ 语言，TTS 35+ 语言，可欧盟托管或自部署。",
-   "originalUrl": "https://mistral.ai/news/voxtral-3/",
-   "pubDate": "2026-10-20T12:00:22.000Z",
-   "sourceName": "Mistral AI News",
-   "category": "product",
-   "categoryLabel": "产品",
-   "eventPublicId": "2026-10-21-mistral-voxtral-3"
-  },
-  {
-   "guid": "sha256:aa8847d44cbae332",
-   "title": "OpenAI 客户故事：Terminal X 用 GPT-6.1 做投资判断评测",
-   "summary": "",
-   "originalUrl": "https://openai.com/index/terminal-x",
-   "pubDate": "2026-10-20T07:00:00.000Z",
-   "sourceName": "OpenAI News",
-   "category": "industry",
-   "categoryLabel": "行业",
-   "eventPublicId": "2026-10-21-openai-terminal-x-eval"
-  },
-  {
-   "guid": "sha256:10f7f763ebef7da0",
-   "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
-   "summary": "The Decoder 称 Kling AI 4.0 支持最长约 30 秒、最多 10 张关键帧、提示词理解扩展，并含立体声、多语口型同步与更轻 Flash 变体。",
-   "originalUrl": "https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/",
-   "pubDate": "2026-10-19T17:36:26.000Z",
-   "sourceName": "The Decoder",
-   "category": "model",
-   "categoryLabel": "模型",
-   "eventPublicId": "2026-10-20-kling-ai-4-0"
-  },
-  {
-   "guid": "sha256:bfa70917f3b198d1",
-   "title": "英伟达发布面向企业与 PC 的开源智能体模型",
-   "summary": "TechCrunch 称英伟达新开源模型，面向企业自建开源模型与端侧本地运行智能体。",
-   "originalUrl": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
-   "pubDate": "2026-10-19T15:37:09.000Z",
-   "sourceName": "TechCrunch · AI",
-   "category": "model",
-   "categoryLabel": "模型",
-   "eventPublicId": "2026-10-19-nvidia-open-models-agents-pcs"
-  },
-  {
-   "guid": "sha256:5c52b7d34becd1cc",
-   "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
-   "summary": "Hugging Face 博客介绍 TorchNeuron，称在 AWS Trainium 上运行 HF 模型比以往更容易。",
-   "originalUrl": "https://huggingface.co/blog/hf-torchneuron",
-   "pubDate": "2026-10-19T00:00:00.000Z",
-   "sourceName": "Hugging Face Blog",
-   "category": "product",
-   "categoryLabel": "产品",
-   "eventPublicId": "2026-10-20-hf-torchneuron-trainium"
-  },
-  {
-   "guid": "sha256:931ff0f85ef4bf70",
-   "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
-   "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017：基准更好、完成任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API。The Decoder 与量子位均有报道。",
-   "originalUrl": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/",
-   "pubDate": "2026-10-17T10:33:28.000Z",
-   "sourceName": "The Decoder",
-   "category": "model",
-   "categoryLabel": "模型",
-   "eventPublicId": "2026-10-19-deepseek-v41-flash-1017"
   }
  ]
 }

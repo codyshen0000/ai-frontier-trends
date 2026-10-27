@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-20-hf-torchneuron-trainium",
  "title": "HF TorchNeuron：Trainium 上跑 HF 模型，并开系统级性能分析",
- "status": "watching",
+ "status": "settled",
  "reportCount": 1,
  "sourceCount": 1,
  "firstReportAt": "2026-10-19T00:00:00.000Z",

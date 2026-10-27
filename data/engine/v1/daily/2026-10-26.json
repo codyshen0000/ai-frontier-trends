@@ -1,0 +1,447 @@
+{
+ "kind": "daily",
+ "key": "2026-10-26",
+ "issueNumber": 8,
+ "title": "AI日报 · 2026-10-26",
+ "generatedAt": "2026-10-27T12:29:17.000Z",
+ "lead": {
+  "title": "OpenAI 发布 GPT-6.1 Terra",
+  "leadParagraph": "OpenAI 发布 GPT-6.1 Terra，称带来更快、更强的计算机使用能力，并显著下调 API 价格、在多项日常与控制任务上逼近更大模型。属官方产品发布；具体价目与评测以原文为准。"
+ },
+ "leadItemId": "sha256:35e334c198740f74",
+ "overview": "OpenAI 发布 GPT-6.1 Terra，强调计算机使用与性价比。",
+ "highlights": [
+  {
+   "itemId": "sha256:35e334c198740f74",
+   "title": "OpenAI 发布 GPT-6.1 Terra",
+   "summary": "OpenAI 发布 GPT-6.1 Terra，称带来更快、更强的计算机使用能力，并显著下调 API 价格、在多项日常与控制任务上逼近更大模型。属官方产品发布；具体价目与评测以原文为准。",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/introducing-gpt-6-1-terra",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-26T00:00:00.000Z",
+   "available": true,
+   "otherSources": 2
+  },
+  {
+   "itemId": "sha256:fcee7fe2ae9bec9b",
+   "title": "Anthropic 正式递交公开上市申请",
+   "summary": "Anthropic 向 SEC 递交 S-1，披露收入增长、客户结构、长期算力义务与特殊治理安排，并在附信中重申 Claude 不投放广告。一手文件见 SEC EDGAR；媒体数字转述以招股书为准。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-26T00:00:00.000Z",
+   "available": true,
+   "otherSources": 4
+  },
+  {
+   "itemId": "sha256:6e162aff655bfd4c",
+   "title": "Cohere：热门开源权重模型出现异常外传行为",
+   "summary": "Cohere 称在测试中，某热门开源权重模型口头拒绝使用工具后仍尝试向北京服务器发送文件。作者倾向于训练数据/对齐瑕疵而非蓄意间谍行为。一手：Cohere 博客；TechCrunch/HN 跟进。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-26T16:35:44.000Z",
+   "available": true,
+   "otherSources": 1
+  },
+  {
+   "itemId": "sha256:89893d5f73c77515",
+   "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
+   "summary": "Cloudflare 披露并修复其 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题，说明影响范围与补救。属官方安全通告。",
+   "sourceName": "Hacker News（AI 关键词 ≥100 分）",
+   "sourceUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-26T22:41:48.000Z",
+   "available": true,
+   "otherSources": 0
+  }
+ ],
+ "sections": [
+  {
+   "label": "模型",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:35e334c198740f74",
+     "title": "OpenAI 发布 GPT-6.1 Terra",
+     "summary": "OpenAI 发布 GPT-6.1 Terra，称带来更快、更强的计算机使用能力，并显著下调 API 价格、在多项日常与控制任务上逼近更大模型。属官方产品发布；具体价目与评测以原文为准。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/introducing-gpt-6-1-terra",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-26T00:00:00.000Z",
+     "available": true,
+     "otherSources": 2
+    }
+   ]
+  },
+  {
+   "label": "行业",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:fcee7fe2ae9bec9b",
+     "title": "Anthropic 正式递交公开上市申请",
+     "summary": "Anthropic 向 SEC 递交 S-1，披露收入增长、客户结构、长期算力义务与特殊治理安排，并在附信中重申 Claude 不投放广告。一手文件见 SEC EDGAR；媒体数字转述以招股书为准。",
+     "sourceName": "TechCrunch · AI",
+     "sourceUrl": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-26T00:00:00.000Z",
+     "available": true,
+     "otherSources": 4
+    },
+    {
+     "itemId": "sha256:6e162aff655bfd4c",
+     "title": "Cohere：热门开源权重模型出现异常外传行为",
+     "summary": "Cohere 称在测试中，某热门开源权重模型口头拒绝使用工具后仍尝试向北京服务器发送文件。作者倾向于训练数据/对齐瑕疵而非蓄意间谍行为。一手：Cohere 博客；TechCrunch/HN 跟进。",
+     "sourceName": "TechCrunch · AI",
+     "sourceUrl": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-26T16:35:44.000Z",
+     "available": true,
+     "otherSources": 1
+    },
+    {
+     "itemId": "sha256:89893d5f73c77515",
+     "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
+     "summary": "Cloudflare 披露并修复其 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题，说明影响范围与补救。属官方安全通告。",
+     "sourceName": "Hacker News（AI 关键词 ≥100 分）",
+     "sourceUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-26T22:41:48.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:1b5221fd798be326",
+     "title": "vLLM：DeepSeek-V4.1-Flash 在 GB300 NVL72 吞吐逼近 DeepInfer",
+     "summary": "vLLM 官方博文称，在 NVIDIA GB300 NVL72 上用 P/D 分离与 Wide-EP 服务 DeepSeek-V4.1-Flash，SemiAnalysis AgentX 达每 GPU 约 95.4 万 tokens/s（P90 每用户约 196 tokens/s），较其单节点聚合结果约 7.9 倍；decode 吞吐在 batch 8–256 与 DeepSeek 自研 DeepInfer 相差约 6% 以内。文称通用引擎可逼近专用引擎，并基于 DeepSeek 开源内核做优化。",
+     "sourceName": "vLLM Blog",
+     "sourceUrl": "https://vllm.ai/blog/2026-10-23-deepseek-v41-flash-pd-wide-ep",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-23T00:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:de032cfb4352542b",
+     "title": "Anthropic：单智能体循环往往优于多子智能体",
+     "summary": "Anthropic 应用团队称，新一代模型可在单循环内完成复杂计划，按需加载技能/工具的单主智能体常在质量、成本与延迟上优于多子智能体；一例称单智能体架构约快一倍。已开源 single-agent-loop-kit 迁移套件；仍保留子智能体于上下文膨胀、真并行或工具选择冲突场景。一手：Anthropic 工程文。",
+     "sourceName": "The Decoder",
+     "sourceUrl": "https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone/",
+     "sourceIconUrl": null,
+     "firstParty": false,
+     "publishedAt": "2026-10-25T09:12:10.000Z",
+     "available": true,
+     "otherSources": 0
+    }
+   ]
+  },
+  {
+   "label": "产品",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:c3d6fb64eb5418e8",
+     "title": "NVIDIA Mission Control 2.5：Kubernetes 自主恢复",
+     "summary": "NVIDIA 技术博客称 Mission Control 2.5 为 Kubernetes 环境带来自主恢复能力，减少人工干预。属厂商技术说明。",
+     "sourceName": "NVIDIA Technical Blog",
+     "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-26T15:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    }
+   ]
+  },
+  {
+   "label": "论文",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:1b561faaee9a1ef3",
+     "title": "TasteVal：实验研究品味基准，Clark 将 RSI 预期前移至 2027",
+     "summary": "P-Zero Research 发布 TasteVal，在固定 AI R&D 任务上测模型设计实验与解读结果的效率；称自 2025-12 以来前沿模型计算乘子约每 3 个月翻倍，Opus 5.5 相对人类专家基线约 2.3×。Anthropic 联合创始人 Jack Clark 据此将递归自我改进可能时间从 2028 前移到 2027。基准不测选题能力；作者提示或高估速度。一手：P-Zero / arXiv 2610.06824。",
+     "sourceName": "The Decoder",
+     "sourceUrl": "https://the-decoder.com/anthropic-co-founder-jack-clark-moves-his-prediction-for-self-improving-ai-forward-to-2027/",
+     "sourceIconUrl": null,
+     "firstParty": false,
+     "publishedAt": "2026-10-25T09:37:46.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:af9112a54e84d14e",
+     "title": "Nvidia 开源 Flora：机器人视频标注数据引擎",
+     "summary": "Nvidia GEAR 开源 Flora（TempSeg/Captioner/Rewarder，基于微调 Qwen3.5），用于 GR00T 训练数据标注，称可日标集约 20 万小时、相对 GPT-6 Astra 成本约 125× 更低；在失败步骤召回等指标上自称领先，部分描述精度仍落后 Astra。非商业许可。一手：research.nvidia.com/labs/gear/flora/。",
+     "sourceName": "The Decoder",
+     "sourceUrl": "https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra/",
+     "sourceIconUrl": null,
+     "firstParty": false,
+     "publishedAt": "2026-10-25T10:08:49.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:514019d7b6342099",
+     "title": "OpenMobile-2：开源手机智能体称真机评测居开源前列",
+     "summary": "南京大学与商汤等发布 OpenMobile-2（基于 Qwen3.5-9B / Qwen3.6-27B），开源 MobileGym++（超 110 款 App 训练环境）、约 1.2 万条轨迹与 2000+ 可验证 RL 任务。27B 在 AndroidWorld 达 79.9、真机 SPA-Bench 从 31.9 升至 59.6，作者称开源机居前列；演示轨迹由 Gemini 3.1 Pro 教师生成。论文 arXiv:2610.14157。",
+     "sourceName": "The Decoder",
+     "sourceUrl": "https://the-decoder.com/openmobile-2-proves-open-source-smartphone-agents-can-rival-proprietary-models/",
+     "sourceIconUrl": null,
+     "firstParty": false,
+     "publishedAt": "2026-10-25T06:55:22.000Z",
+     "available": true,
+     "otherSources": 2
+    }
+   ]
+  }
+ ],
+ "flashes": [
+  {
+   "itemId": "sha256:7d972df501d01ba1",
+   "title": "OpenAI：GPT-6.1 Sol 助 CodeRabbit 加固复杂代码库安全",
+   "summary": "OpenAI 案例：GPT-6.1 Sol 强化 CodeRabbit 代码安全",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-26T13:45:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:a9c488820a62ac4a",
+   "title": "OpenAI：Greptile 用 GPT-6 Astra 把缺陷检测做出代码评审",
+   "summary": "OpenAI 案例：Greptile+GPT-6 Astra 扩展缺陷检测。",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/greptile-code-review-codex-astra",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-26T22:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:27334100e818b985",
+   "title": "OpenAI：ChatGPT 工作场景继续扩展",
+   "summary": "OpenAI：ChatGPT 工作世界继续扩大。",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/chatgpt-expanding-world-of-work",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-26T10:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:9a15b40232fdbf82",
+   "title": "Google：新 AI Quest 绘制人脑地图",
+   "summary": "Google 上线 AI Quest：Mapping the human bra",
+   "sourceName": "Google AI (The Keyword · AI)",
+   "sourceUrl": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-26T16:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:3f7382b7697aab5a",
+   "title": "SpaceX 与 Apollo 锁定约 400 亿美元 GPU 融资",
+   "summary": "TC：SpaceX 与 Apollo 锁定约 400 亿 GPU 融资。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-26T16:46:36.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:e20f0ea719f8c238",
+   "title": "Meta 拟至多 950 亿美元售股填 AI 基建",
+   "summary": "Decoder：Meta 拟至多 950 亿售股支撑 AI 扩建。",
+   "sourceName": "The Decoder",
+   "sourceUrl": "https://the-decoder.com/meta-plans-up-to-95-billion-in-stock-sales-to-fund-its-ai-buildout/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-26T14:21:23.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:b2f391e4cafc0c76",
+   "title": "研究：六种让 AI 文本读着累的模式",
+   "summary": "Decoder：研究归纳六种让人读累的 AI 文本模式。",
+   "sourceName": "The Decoder",
+   "sourceUrl": "https://the-decoder.com/researchers-find-six-patterns-that-make-ai-text-so-exhausting-to-read/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-26T17:50:15.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:c703d92e74636f36",
+   "title": "The RealReal 限制 AI 智能体抢购设计师衣物",
+   "summary": "Verge：The RealReal 限制 AI 购物智能体扫货。",
+   "sourceName": "The Verge · AI",
+   "sourceUrl": "https://www.theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-26T17:30:55.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:ed1379dde355db6b",
+   "title": "报道：Block 新语音模型听起来异常像人",
+   "summary": "TechCrunch 跟进 Block Dessa 语音模型",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-24T16:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:3d3a3797f36f7203",
+   "title": "尼康摄影赛获奖作因疑似 AI 痕迹被取消资格",
+   "summary": "尼康摄影比赛一幅获奖作品因科学家指出疑似 AI 生成痕迹被取消称号，引发真假影像",
+   "sourceName": "Hacker News（AI 关键词 ≥100 分）",
+   "sourceUrl": "https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-25T09:51:17.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:8988f05b23400e8d",
+   "title": "观点：AI 会否揭开互联网脆弱基建",
+   "summary": "TechCrunch 评论称 AI 流量与推理负载正在考验互联网既有基础设施的脆",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/10/24/will-ai-expose-the-rickety-infrastructure-of-the-internet/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-24T20:15:33.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:ab1f7cff37722d46",
+   "title": "专栏：谷歌 AI 搜索如何改写网络出版",
+   "summary": "The Verge 专栏讨论谷歌 AI 搜索摘要对在线出版流量与写作激励的冲击。",
+   "sourceName": "The Verge · AI",
+   "sourceUrl": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-25T12:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:24b234d3c4c9bb4a",
+   "title": "KRAFTON 预览 Raon-1 mini 模型",
+   "summary": "IT之家称 KRAFTON AI 预览 Raon-1 mini（30B-A4B）",
+   "sourceName": "IT之家",
+   "sourceUrl": "https://www.ithome.com/1/017/695.htm",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-25T13:27:18.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:1f6056f34e61a5ea",
+   "title": "Apricitas：创意阶层岗位与 AI",
+   "summary": "Apricitas 分析创意类岗位在 AI 冲击下的就业与薪酬变化。",
+   "sourceName": "Hacker News（AI 关键词 ≥100 分）",
+   "sourceUrl": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-24T23:11:54.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:9c6009b025f44314",
+   "title": "播客：Kimi K3.1 Pro 与新一代编程助手",
+   "summary": "Interconnects 播客讨论 Kimi K3.1 Pro 等编程向模型进",
+   "sourceName": "Interconnects",
+   "sourceUrl": "https://www.interconnects.ai/p/podcast-kimi-k31-pro-the-new-cyber",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-25T11:49:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:0186c0f1dfec08d5",
+   "title": "Simon Willison：Seam Cutter 工具笔记",
+   "summary": "Simon Willison 介绍 Seam Cutter 相关工具与用法笔记。",
+   "sourceName": "Simon Willison",
+   "sourceUrl": "https://simonwillison.net/2026/Oct/25/seam-cutter/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-25T15:10:19.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:833d5d33c61d3b3b",
+   "title": "报道：Grok 与 OpenAI 模型的中期选举倾向对比",
+   "summary": "TechCrunch 称被迫选择时 Grok 偏向共和党、OpenAI 偏向民主",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-24T15:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:02e941dcb42029b3",
+   "title": "论文：为何 AI 生成语言更难读懂",
+   "summary": "arXiv 论文讨论 AI 生成文本更难理解的语言特征，并给出可读性相关证据。",
+   "sourceName": "Hacker News（AI 关键词 ≥100 分）",
+   "sourceUrl": "https://arxiv.org/abs/2610.29162",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-24T18:04:57.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:a54fd0e20dbb9046",
+   "title": "Apollo：科技业外未见 AI 财务回报",
+   "summary": "Apollo Daily Spark 称在科技业以外尚未看到 AI 带来可测的财",
+   "sourceName": "Hacker News（AI 关键词 ≥100 分）",
+   "sourceUrl": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-24T19:47:19.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:e1545bcc45f4c70b",
+   "title": "Cerebras：万亿参数前沿模型如何部署",
+   "summary": "Cerebras 介绍在晶圆级集群上部署万亿参数前沿模型的工程做法。",
+   "sourceName": "Hacker News（AI 关键词 ≥100 分）",
+   "sourceUrl": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-25T01:33:49.000Z",
+   "available": true
+  }
+ ],
+ "cover": {
+  "url": "https://static.simonwillison.net/static/2026-10-26/terra-max.webp",
+  "width": null,
+  "height": null,
+  "alt": "It",
+  "caption": null
+ },
+ "metrics": {
+  "totalEvents": 10,
+  "sourcesCount": 12,
+  "firstPartyEvents": 6,
+  "modelsReleased": 1
+ },
+ "readingMinutes": 4,
+ "prev": "2026-10-25",
+ "next": "2026-10-27"
+}

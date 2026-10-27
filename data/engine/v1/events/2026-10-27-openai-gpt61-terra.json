@@ -1,0 +1,285 @@
+{
+ "publicId": "2026-10-27-openai-gpt61-terra",
+ "title": "OpenAI 发布 GPT-6.1 Terra",
+ "status": "active",
+ "reportCount": 3,
+ "sourceCount": 3,
+ "firstReportAt": "2026-10-26T00:00:00.000Z",
+ "latestAt": "2026-10-26T23:53:07.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "OpenAI 发布 GPT-6.1 Terra，称带来更快、更强的计算机使用能力，并显著下调 API 价格、在多项日常与控制任务上逼近更大模型。属官方产品发布；具体价目与评测以原文为准。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 3,
+  "newParticipants6h": 0,
+  "recentReports24h": 2,
+  "observationComplete": true,
+  "rank": 2
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-27-openai-gpt61-terra",
+   "title": "OpenAI 发布 GPT-6.1 Terra",
+   "firstReportAt": "2026-10-26T00:00:00.000Z",
+   "reportCount": 3,
+   "representative": {
+    "id": "sha256:35e334c198740f74",
+    "title": "OpenAI 发布 GPT-6.1 Terra",
+    "summary": null,
+    "source": {
+     "name": "OpenAI News",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-26T00:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://openai.com/index/introducing-gpt-6-1-terra"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:35e334c198740f74",
+   "title": "OpenAI 发布 GPT-6.1 Terra",
+   "summary": null,
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-26T00:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/introducing-gpt-6-1-terra"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:670bdc25a85edb18",
+   "title": "Simon Willison：试用 GPT-6.1 Terra",
+   "summary": "Simon Willison 笔记跟进 GPT-6.1 Terra 发布。",
+   "source": {
+    "name": "Simon Willison",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-26T23:53:07.000Z",
+   "selected": false,
+   "originalUrl": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/"
+  },
+  {
+   "id": "sha256:0c4a5b3d38ca79d5",
+   "title": "报道：GPT-6.1 Terra API 价砍半仍逼近更大模型",
+   "summary": "The Decoder 跟进 OpenAI GPT-6.1 Terra：称 API 价约砍半，日常计算与计算机控制性价比突出。",
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-26T20:30:55.000Z",
+   "selected": false,
+   "originalUrl": "https://the-decoder.com/gpt-6-1-terra-halves-openais-api-prices-and-still-gains-ground-on-its-larger-models/"
+  },
+  {
+   "id": "sha256:35e334c198740f74",
+   "title": "OpenAI 发布 GPT-6.1 Terra",
+   "summary": null,
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-26T00:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/introducing-gpt-6-1-terra"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-26T00:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T01:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T02:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T03:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T04:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T05:00:00.000Z",
+   "heat": 8.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T06:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T07:00:00.000Z",
+   "heat": 8.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T08:00:00.000Z",
+   "heat": 7.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T09:00:00.000Z",
+   "heat": 7.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T10:00:00.000Z",
+   "heat": 7.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T11:00:00.000Z",
+   "heat": 7.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T12:00:00.000Z",
+   "heat": 7.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T13:00:00.000Z",
+   "heat": 6.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T14:00:00.000Z",
+   "heat": 6.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T15:00:00.000Z",
+   "heat": 6.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T16:00:00.000Z",
+   "heat": 6.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T17:00:00.000Z",
+   "heat": 6.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T18:00:00.000Z",
+   "heat": 5.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T19:00:00.000Z",
+   "heat": 5.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T20:00:00.000Z",
+   "heat": 5.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T21:00:00.000Z",
+   "heat": 15.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-26T22:00:00.000Z",
+   "heat": 14.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-26T23:00:00.000Z",
+   "heat": 14.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T00:00:00.000Z",
+   "heat": 24.0,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-27T01:00:00.000Z",
+   "heat": 23.3,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-27T02:00:00.000Z",
+   "heat": 22.7,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-27T03:00:00.000Z",
+   "heat": 22.0,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-27T04:00:00.000Z",
+   "heat": 21.4,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-27T05:00:00.000Z",
+   "heat": 20.8,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-27T06:00:00.000Z",
+   "heat": 20.2,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-27T07:00:00.000Z",
+   "heat": 19.6,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-27T08:00:00.000Z",
+   "heat": 19.1,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-27T09:00:00.000Z",
+   "heat": 18.5,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-27T10:00:00.000Z",
+   "heat": 18.0,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-27T11:00:00.000Z",
+   "heat": 17.5,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-27T12:00:00.000Z",
+   "heat": 17.0,
+   "participants": 3
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "OpenAI 发布 GPT-6.1 Terra，强调计算机使用与性价比",
+ "primaryUrl": "https://openai.com/index/introducing-gpt-6-1-terra"
+}

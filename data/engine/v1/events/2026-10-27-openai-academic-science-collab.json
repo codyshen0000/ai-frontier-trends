@@ -1,0 +1,197 @@
+{
+ "publicId": "2026-10-27-openai-academic-science-collab",
+ "title": "OpenAI：与学界共建科学理解",
+ "status": "active",
+ "reportCount": 2,
+ "sourceCount": 2,
+ "firstReportAt": "2026-10-26T14:30:00.000Z",
+ "latestAt": "2026-10-26T23:34:58.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "OpenAI 称与学术社区合作推进科学理解，并宣布多项科学相关进展。属官方通稿。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 2,
+  "newParticipants6h": 0,
+  "recentReports24h": 2,
+  "observationComplete": true,
+  "rank": 4
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-27-openai-academic-science-collab",
+   "title": "OpenAI：与学界共建科学理解",
+   "firstReportAt": "2026-10-26T14:30:00.000Z",
+   "reportCount": 2,
+   "representative": {
+    "id": "sha256:8eb6001a836a6e50",
+    "title": "OpenAI：与学界共建科学理解",
+    "summary": "OpenAI 称与学术社区合作推进科学理解，并宣布多项科学相关进展。属官方通稿。",
+    "source": {
+     "name": "OpenAI News",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-26T14:30:00.000Z",
+    "selected": true,
+    "originalUrl": "https://openai.com/index/building-scientific-understanding-with-academic-communities"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:8eb6001a836a6e50",
+   "title": "OpenAI：与学界共建科学理解",
+   "summary": "OpenAI 称与学术社区合作推进科学理解，并宣布多项科学相关进展。属官方通稿。",
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-26T14:30:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/building-scientific-understanding-with-academic-communities"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:b555ce2afa55383d",
+   "title": "报道：OpenAI 宣布三项科学发现并拓展学术合作",
+   "summary": "The Verge 跟进 OpenAI 科学与学术合作通稿。",
+   "source": {
+    "name": "The Verge · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-26T23:34:58.000Z",
+   "selected": false,
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics"
+  },
+  {
+   "id": "sha256:8eb6001a836a6e50",
+   "title": "OpenAI：与学界共建科学理解",
+   "summary": "OpenAI 称与学术社区合作推进科学理解，并宣布多项科学相关进展。属官方通稿。",
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-26T14:30:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/building-scientific-understanding-with-academic-communities"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-26T15:00:00.000Z",
+   "heat": 9.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T16:00:00.000Z",
+   "heat": 9.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T17:00:00.000Z",
+   "heat": 9.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T18:00:00.000Z",
+   "heat": 9.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T19:00:00.000Z",
+   "heat": 8.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T20:00:00.000Z",
+   "heat": 8.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T21:00:00.000Z",
+   "heat": 8.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T22:00:00.000Z",
+   "heat": 8.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T23:00:00.000Z",
+   "heat": 7.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T00:00:00.000Z",
+   "heat": 17.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T01:00:00.000Z",
+   "heat": 17.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T02:00:00.000Z",
+   "heat": 16.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T03:00:00.000Z",
+   "heat": 16.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T04:00:00.000Z",
+   "heat": 15.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T05:00:00.000Z",
+   "heat": 15.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T06:00:00.000Z",
+   "heat": 14.7,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T07:00:00.000Z",
+   "heat": 14.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T08:00:00.000Z",
+   "heat": 13.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T09:00:00.000Z",
+   "heat": 13.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T10:00:00.000Z",
+   "heat": 13.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T11:00:00.000Z",
+   "heat": 12.7,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T12:00:00.000Z",
+   "heat": 12.4,
+   "participants": 2
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "primaryUrl": "https://openai.com/index/building-scientific-understanding-with-academic-communities"
+}

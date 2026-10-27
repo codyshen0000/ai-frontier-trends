@@ -1,6 +1,69 @@
 {
  "events": [
   {
+   "publicId": "2026-10-27-anthropic-ipo-s1",
+   "title": "Anthropic 正式递交公开上市申请",
+   "latestAt": "2026-10-27T11:20:51.000Z",
+   "reportCount": 9,
+   "hotRank": 1
+  },
+  {
+   "publicId": "2026-10-27-cohere-qwen-concerning-behavior",
+   "title": "Cohere：热门开源权重模型出现异常外传行为",
+   "latestAt": "2026-10-27T01:12:21.000Z",
+   "reportCount": 2,
+   "hotRank": 3
+  },
+  {
+   "publicId": "2026-10-27-openai-gpt61-terra",
+   "title": "OpenAI 发布 GPT-6.1 Terra",
+   "latestAt": "2026-10-26T23:53:07.000Z",
+   "reportCount": 3,
+   "hotRank": 2
+  },
+  {
+   "publicId": "2026-10-27-openai-academic-science-collab",
+   "title": "OpenAI：与学界共建科学理解",
+   "latestAt": "2026-10-26T23:34:58.000Z",
+   "reportCount": 2,
+   "hotRank": 4
+  },
+  {
+   "publicId": "2026-10-27-cloudflare-glm53-kv-cache",
+   "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
+   "latestAt": "2026-10-26T22:41:48.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
+   "publicId": "2026-10-27-baseten-bdn-sealed-volumes",
+   "title": "Baseten：BDN Sealed Volumes 一次发布处处挂载",
+   "latestAt": "2026-10-26T21:23:55.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
+   "publicId": "2026-10-27-nvidia-minerva-gpu-yield",
+   "title": "NVIDIA Minerva：把遥测混乱变成峰值 GPU 良率",
+   "latestAt": "2026-10-26T16:00:00.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
+   "publicId": "2026-10-27-nvidia-mission-control-25",
+   "title": "NVIDIA Mission Control 2.5：Kubernetes 自主恢复",
+   "latestAt": "2026-10-26T15:00:00.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
+   "publicId": "2026-10-24-kimi-k31-pro",
+   "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
+   "latestAt": "2026-10-25T11:49:00.000Z",
+   "reportCount": 4,
+   "hotRank": null
+  },
+  {
    "publicId": "2026-10-25-nvidia-flora-robot-data-engine",
    "title": "Nvidia 开源 Flora：机器人视频标注数据引擎",
    "latestAt": "2026-10-25T10:08:49.000Z",
@@ -19,42 +82,35 @@
    "title": "OpenMobile-2：开源手机智能体称真机评测居开源前列",
    "latestAt": "2026-10-25T07:53:11.000Z",
    "reportCount": 3,
-   "hotRank": 1
+   "hotRank": null
   },
   {
    "publicId": "2026-10-24-block-dessa-speech",
    "title": "Block 发布 Dessa：纯语音训练的全双工对话模型",
-   "latestAt": "2026-10-24T14:09:46.000Z",
-   "reportCount": 3,
-   "hotRank": 2
+   "latestAt": "2026-10-24T16:00:00.000Z",
+   "reportCount": 4,
+   "hotRank": null
   },
   {
    "publicId": "2026-10-24-openai-securing-frontier-training",
    "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
    "latestAt": "2026-10-24T11:12:36.000Z",
    "reportCount": 4,
-   "hotRank": 4
-  },
-  {
-   "publicId": "2026-10-24-kimi-k31-pro",
-   "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
-   "latestAt": "2026-10-24T07:18:29.000Z",
-   "reportCount": 3,
-   "hotRank": 3
+   "hotRank": null
   },
   {
    "publicId": "2026-10-24-google-tb-screening",
    "title": "Google Research：把基础模型用于一线结核病筛查",
    "latestAt": "2026-10-24T02:06:48.000Z",
    "reportCount": 3,
-   "hotRank": 5
+   "hotRank": null
   },
   {
    "publicId": "2026-10-24-openai-metr-agent-monitoring",
    "title": "METR/Redwood 驻场审计：OpenAI 内部智能体监控存在覆盖缺口",
    "latestAt": "2026-10-23T18:00:32.000Z",
    "reportCount": 3,
-   "hotRank": 6
+   "hotRank": null
   },
   {
    "publicId": "2026-10-24-baseten-environment-network",
@@ -75,14 +131,14 @@
    "title": "Anthropic：复盘 AISI 事件，内部研究模型更能自行停止攻击",
    "latestAt": "2026-10-23T17:19:49.000Z",
    "reportCount": 3,
-   "hotRank": 8
+   "hotRank": null
   },
   {
    "publicId": "2026-10-22-nvidia-microduck-isaac-lab",
    "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
    "latestAt": "2026-10-23T14:58:32.000Z",
    "reportCount": 2,
-   "hotRank": 7
+   "hotRank": null
   },
   {
    "publicId": "2026-10-23-anthropic-claude-formal-verification",

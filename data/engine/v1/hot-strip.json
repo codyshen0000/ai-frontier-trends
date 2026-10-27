@@ -1,41 +1,18 @@
 [
  {
   "rank": 1,
-  "title": "OpenMobile-2：开源手机智能体称真机评测居开源前列",
-  "heat": 23.2,
-  "trend": "down",
-  "storyPublicId": "2026-10-25-openmobile-2-mobile-agents",
-  "itemId": "sha256:514019d7b6342099",
+  "title": "Anthropic 正式递交公开上市申请",
+  "heat": 35.9,
+  "trend": "up",
+  "storyPublicId": "2026-10-27-anthropic-ipo-s1",
+  "itemId": "sha256:fcee7fe2ae9bec9b",
   "participants": [
-   {
-    "name": "ic.work",
-    "kind": "editorial"
-   },
    {
     "name": "The Decoder",
     "kind": "editorial"
    },
    {
-    "name": "web-arxiv-2610.14157",
-    "kind": "editorial"
-   }
-  ],
-  "participantCount": 3
- },
- {
-  "rank": 2,
-  "title": "Block 发布 Dessa：纯语音训练的全双工对话模型",
-  "heat": 16.2,
-  "trend": "down",
-  "storyPublicId": "2026-10-24-block-dessa-speech",
-  "itemId": "sha256:8f9973956bdc5190",
-  "participants": [
-   {
-    "name": "TechCrunch · AI",
-    "kind": "editorial"
-   },
-   {
-    "name": "The Decoder",
+    "name": "Latent Space",
     "kind": "editorial"
    },
    {
@@ -43,22 +20,26 @@
     "kind": "editorial"
    },
    {
-    "name": "web-block-dessa",
+    "name": "TechCrunch · AI",
+    "kind": "editorial"
+   },
+   {
+    "name": "量子位",
     "kind": "editorial"
    }
   ],
-  "participantCount": 4
+  "participantCount": 5
  },
  {
-  "rank": 3,
-  "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
-  "heat": 14.2,
+  "rank": 2,
+  "title": "OpenAI 发布 GPT-6.1 Terra",
+  "heat": 16.7,
   "trend": "down",
-  "storyPublicId": "2026-10-24-kimi-k31-pro",
-  "itemId": "sha256:261b6564023ad66c",
+  "storyPublicId": "2026-10-27-openai-gpt61-terra",
+  "itemId": "sha256:35e334c198740f74",
   "participants": [
    {
-    "name": "Latent Space",
+    "name": "OpenAI News",
     "kind": "editorial"
    },
    {
@@ -68,28 +49,39 @@
    {
     "name": "The Decoder",
     "kind": "editorial"
-   },
-   {
-    "name": "IT之家（全站，需关键词过滤）",
-    "kind": "signal"
    }
   ],
-  "participantCount": 4
+  "participantCount": 3
  },
  {
-  "rank": 4,
-  "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
-  "heat": 11.0,
+  "rank": 3,
+  "title": "Cohere：热门开源权重模型出现异常外传行为",
+  "heat": 12.8,
   "trend": "down",
-  "storyPublicId": "2026-10-24-openai-securing-frontier-training",
-  "itemId": "sha256:f8c156dba7886826",
+  "storyPublicId": "2026-10-27-cohere-qwen-concerning-behavior",
+  "itemId": "sha256:6e162aff655bfd4c",
   "participants": [
    {
-    "name": "The Decoder",
+    "name": "TechCrunch · AI",
     "kind": "editorial"
    },
    {
-    "name": "TechCrunch · AI",
+    "name": "Hacker News（AI 关键词 ≥100 分）",
+    "kind": "signal"
+   }
+  ],
+  "participantCount": 2
+ },
+ {
+  "rank": 4,
+  "title": "OpenAI：与学界共建科学理解",
+  "heat": 12.1,
+  "trend": "down",
+  "storyPublicId": "2026-10-27-openai-academic-science-collab",
+  "itemId": "sha256:8eb6001a836a6e50",
+  "participants": [
+   {
+    "name": "OpenAI News",
     "kind": "editorial"
    },
    {
@@ -97,29 +89,6 @@
     "kind": "editorial"
    }
   ],
-  "participantCount": 3
- },
- {
-  "rank": 5,
-  "title": "Google Research：把基础模型用于一线结核病筛查",
-  "heat": 9.4,
-  "trend": "down",
-  "storyPublicId": "2026-10-24-google-tb-screening",
-  "itemId": "sha256:30a34d758ba63be2",
-  "participants": [
-   {
-    "name": "Google Research Blog",
-    "kind": "editorial"
-   },
-   {
-    "name": "TSN",
-    "kind": "editorial"
-   },
-   {
-    "name": "web-techbooky",
-    "kind": "editorial"
-   }
-  ],
-  "participantCount": 3
+  "participantCount": 2
  }
 ]

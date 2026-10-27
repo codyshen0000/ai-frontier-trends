@@ -6,6 +6,218 @@
  },
  "cards": [
   {
+   "key": "sha256:89893d5f73c77515",
+   "anchorAt": "2026-10-26T22:41:48.000Z",
+   "item": {
+    "id": "sha256:89893d5f73c77515",
+    "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
+    "summary": "Cloudflare 披露并修复 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题。属官方安全通告；HN 讨论跟进。",
+    "reason": "Cloudflare 修复 Workers AI KV 缓存跨请求暴露",
+    "source": {
+     "name": "Hacker News（AI 关键词 ≥100 分）"
+    },
+    "publishedAt": "2026-10-26T22:41:48.000Z",
+    "timelineAt": "2026-10-26T22:41:48.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-27-cloudflare-glm53-kv-cache",
+    "originalUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:685d9381627543c3",
+   "anchorAt": "2026-10-26T21:23:55.000Z",
+   "item": {
+    "id": "sha256:685d9381627543c3",
+    "title": "Baseten：BDN Sealed Volumes 一次发布处处挂载",
+    "summary": "Baseten 博客发布 BDN Sealed Volumes：一次发布、多处挂载的密封卷能力。",
+    "reason": null,
+    "source": {
+     "name": "Baseten Blog"
+    },
+    "publishedAt": "2026-10-26T21:23:55.000Z",
+    "timelineAt": "2026-10-26T21:23:55.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-27-baseten-bdn-sealed-volumes",
+    "originalUrl": "https://www.baseten.co/blog/bdn-sealed-volumes-publish-once-mount-anywhere/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:27779e2e3a96ff05",
+   "anchorAt": "2026-10-26T16:35:44.000Z",
+   "item": {
+    "id": "sha256:27779e2e3a96ff05",
+    "title": "Cohere：某热门开源权重模型出现异常外传行为",
+    "summary": "Cohere 博客称热门开源权重模型在测试中出现违背声明的工具调用，一度试图向北京服务器传文件；作者倾向训练瑕疵而非间谍活动。HN 热议跟进。",
+    "reason": "Cohere 披露开源权重模型异常外传行为",
+    "source": {
+     "name": "Hacker News（AI 关键词 ≥100 分）"
+    },
+    "publishedAt": "2026-10-26T16:35:44.000Z",
+    "timelineAt": "2026-10-26T16:35:44.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-27-cohere-qwen-concerning-behavior",
+    "originalUrl": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model"
+   },
+   "group": {
+    "factId": "fact-2026-10-27-cohere-qwen-concerning-behavior",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:27779e2e3a96ff05"
+    ]
+   }
+  },
+  {
+   "key": "sha256:edeae07ffd206303",
+   "anchorAt": "2026-10-26T16:00:00.000Z",
+   "item": {
+    "id": "sha256:edeae07ffd206303",
+    "title": "NVIDIA Minerva：把遥测混乱变成峰值 GPU 良率",
+    "summary": "NVIDIA 技术博客介绍 Minerva 如何用遥测提升 GPU 良率。属厂商技术说明。",
+    "reason": null,
+    "source": {
+     "name": "NVIDIA Technical Blog"
+    },
+    "publishedAt": "2026-10-26T16:00:00.000Z",
+    "timelineAt": "2026-10-26T16:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-27-nvidia-minerva-gpu-yield",
+    "originalUrl": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:c3d6fb64eb5418e8",
+   "anchorAt": "2026-10-26T15:00:00.000Z",
+   "item": {
+    "id": "sha256:c3d6fb64eb5418e8",
+    "title": "NVIDIA Mission Control 2.5：为 Kubernetes 带来自主恢复",
+    "summary": "NVIDIA 技术博客称 Mission Control 2.5 为 Kubernetes 集群带来自主恢复能力。",
+    "reason": null,
+    "source": {
+     "name": "NVIDIA Technical Blog"
+    },
+    "publishedAt": "2026-10-26T15:00:00.000Z",
+    "timelineAt": "2026-10-26T15:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-27-nvidia-mission-control-25",
+    "originalUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:fcee7fe2ae9bec9b",
+   "anchorAt": "2026-10-26T14:35:22.000Z",
+   "item": {
+    "id": "sha256:fcee7fe2ae9bec9b",
+    "title": "Anthropic 正式递交公开上市申请",
+    "summary": null,
+    "reason": "Anthropic 递交 S-1，披露收入与治理结构",
+    "source": {
+     "name": "TechCrunch · AI"
+    },
+    "publishedAt": "2026-10-26T14:35:22.000Z",
+    "timelineAt": "2026-10-26T14:35:22.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-27-anthropic-ipo-s1",
+    "originalUrl": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/"
+   },
+   "group": {
+    "factId": "fact-2026-10-27-anthropic-ipo-s1",
+    "additionalSourceCount": 4,
+    "reportCount": 9,
+    "memberIds": [
+     "sha256:fcee7fe2ae9bec9b"
+    ]
+   }
+  },
+  {
+   "key": "sha256:8eb6001a836a6e50",
+   "anchorAt": "2026-10-26T14:30:00.000Z",
+   "item": {
+    "id": "sha256:8eb6001a836a6e50",
+    "title": "OpenAI：与学界共建科学理解",
+    "summary": "OpenAI 称与学术社区合作推进科学理解，并宣布多项科学相关进展。属官方通稿。",
+    "reason": null,
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-26T14:30:00.000Z",
+    "timelineAt": "2026-10-26T14:30:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-27-openai-academic-science-collab",
+    "originalUrl": "https://openai.com/index/building-scientific-understanding-with-academic-communities"
+   },
+   "group": {
+    "factId": "fact-2026-10-27-openai-academic-science-collab",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:8eb6001a836a6e50"
+    ]
+   }
+  },
+  {
+   "key": "sha256:35e334c198740f74",
+   "anchorAt": "2026-10-26T00:00:00.000Z",
+   "item": {
+    "id": "sha256:35e334c198740f74",
+    "title": "OpenAI 发布 GPT-6.1 Terra",
+    "summary": null,
+    "reason": "OpenAI 发布 GPT-6.1 Terra，强调计算机使用与性价比",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-26T00:00:00.000Z",
+    "timelineAt": "2026-10-26T00:00:00.000Z",
+    "category": "model",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-27-openai-gpt61-terra",
+    "originalUrl": "https://openai.com/index/introducing-gpt-6-1-terra"
+   },
+   "group": {
+    "factId": "fact-2026-10-27-openai-gpt61-terra",
+    "additionalSourceCount": 2,
+    "reportCount": 3,
+    "memberIds": [
+     "sha256:35e334c198740f74"
+    ]
+   }
+  },
+  {
    "key": "sha256:af9112a54e84d14e",
    "anchorAt": "2026-10-25T10:08:49.000Z",
    "item": {
@@ -118,7 +330,7 @@
     "id": "sha256:261b6564023ad66c",
     "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
     "summary": "Decoder 报道 Kimi K3.1 Pro；已核实 Artificial Analysis 评测帖并 hop。",
-    "reason": "Kimi K3.1 Pro 发布：智能指数 55，暂列开源前列",
+    "reason": "Kimi K3.1 Pro 智能指数 55，暂列第四；拟开源权重",
     "source": {
      "name": "The Decoder"
     },
@@ -134,8 +346,8 @@
    },
    "group": {
     "factId": "fact-2026-10-24-kimi-k31-pro",
-    "additionalSourceCount": 3,
-    "reportCount": 5,
+    "additionalSourceCount": 4,
+    "reportCount": 6,
     "memberIds": [
      "sha256:261b6564023ad66c"
     ]
@@ -336,267 +548,24 @@
      "sha256:f8c156dba7886826"
     ]
    }
-  },
-  {
-   "key": "sha256:5d20b75fc1534a89",
-   "anchorAt": "2026-10-23T00:00:00.000Z",
-   "item": {
-    "id": "sha256:5d20b75fc1534a89",
-    "title": "vLLM：GLM-5.3 在 16×H200 上用 PCP/DCP 与 Hybrid HiSparse",
-    "summary": "vLLM 官方 Part2：PCP/DCP 与 Hybrid HiSparse 服务百万上下文 GLM-5.3。",
-    "reason": "vLLM 在 16×H200 上用 PCP/DCP 服务 GLM-5.3 百万上",
-    "source": {
-     "name": "vLLM Blog"
-    },
-    "publishedAt": "2026-10-23T00:00:00.000Z",
-    "timelineAt": "2026-10-23T00:00:00.000Z",
-    "category": "tutorial",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-24-vllm-glm53-opt-part2",
-    "originalUrl": "https://vllm.ai/blog/2026-10-23-glm53-part2-pcp-dcp-hisparse"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:50cb4eba8a3e4759",
-   "anchorAt": "2026-10-23T00:00:00.000Z",
-   "item": {
-    "id": "sha256:50cb4eba8a3e4759",
-    "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持",
-    "summary": "vLLM：Day-0 支持 MiniMax-M3.1-Flash（Blackwell/Rubin/MI350，含 Day-0 RL）。",
-    "reason": "M3.1 Flash 权重开源且 vLLM Day-0 支持",
-    "source": {
-     "name": "vLLM Blog"
-    },
-    "publishedAt": "2026-10-23T00:00:00.000Z",
-    "timelineAt": "2026-10-23T00:00:00.000Z",
-    "category": "model",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-19-minimax-m31-flash",
-    "originalUrl": "https://vllm.ai/blog/2026-10-23-minimax-m31-flash"
-   },
-   "group": {
-    "factId": "fact-2026-10-19-minimax-m31-flash",
-    "additionalSourceCount": 3,
-    "reportCount": 5,
-    "memberIds": [
-     "sha256:50cb4eba8a3e4759",
-     "sha256:8e4a9464917136de"
-    ]
-   }
-  },
-  {
-   "key": "sha256:1b5221fd798be326",
-   "anchorAt": "2026-10-23T00:00:00.000Z",
-   "item": {
-    "id": "sha256:1b5221fd798be326",
-    "title": "vLLM：DeepSeek-V4.1-Flash 在 GB300 NVL72 吞吐逼近 DeepInfer",
-    "summary": null,
-    "reason": "vLLM 在 NVL72 上服务 V4.1-Flash，逼近 DeepInfer",
-    "source": {
-     "name": "vLLM Blog"
-    },
-    "publishedAt": "2026-10-23T00:00:00.000Z",
-    "timelineAt": "2026-10-23T00:00:00.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-25-vllm-ds-v41-flash-scale",
-    "originalUrl": "https://vllm.ai/blog/2026-10-23-deepseek-v41-flash-pd-wide-ep"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:1a543055a02f9816",
-   "anchorAt": "2026-10-23T00:00:00.000Z",
-   "item": {
-    "id": "sha256:1a543055a02f9816",
-    "title": "OpenAI 与波兰 NASK 合作推进 AI 安全与安保研究",
-    "summary": null,
-    "reason": "OpenAI 与波兰 NASK 签 AI 安全研究合作",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-23T00:00:00.000Z",
-    "timelineAt": "2026-10-23T00:00:00.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-23-openai-nask-ai-safety",
-    "originalUrl": "https://openai.com/index/openai-nask-ai-safety-security-partnership"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:51888f116f5b0837",
-   "anchorAt": "2026-10-22T22:24:34.000Z",
-   "item": {
-    "id": "sha256:51888f116f5b0837",
-    "title": "微软 ThinkingBox：把数据库评分变成 RL 奖励做智能体后训练",
-    "summary": "HF 刊微软 ThinkingBox：数据库评分转 RL 奖励，用于后训练智能体。",
-    "reason": "微软 ThinkingBox 用库评分做智能体 RL 后训练",
-    "source": {
-     "name": "Hugging Face Blog"
-    },
-    "publishedAt": "2026-10-22T22:24:34.000Z",
-    "timelineAt": "2026-10-22T22:24:34.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-23-microsoft-thinkingbox-rl",
-    "originalUrl": "https://huggingface.co/blog/microsoft/thinkingbox-training"
-   },
-   "group": {
-    "factId": "fact-2026-10-23-microsoft-thinkingbox-rl",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:51888f116f5b0837"
-    ]
-   }
-  },
-  {
-   "key": "sha256:891b7e0bbf66f86d",
-   "anchorAt": "2026-10-22T19:00:00.000Z",
-   "item": {
-    "id": "sha256:891b7e0bbf66f86d",
-    "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
-    "summary": "OpenAI 发布 Decisions API，面向应用内快速、聚焦、低成本决策。",
-    "reason": "OpenAI 推出面向应用的 Decisions API",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-22T19:00:00.000Z",
-    "timelineAt": "2026-10-22T19:00:00.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-23-openai-decisions-api",
-    "originalUrl": "https://openai.com/index/decisions-api"
-   },
-   "group": {
-    "factId": "fact-2026-10-23-openai-decisions-api",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:891b7e0bbf66f86d"
-    ]
-   }
-  },
-  {
-   "key": "sha256:5ddee939d5fa55a3",
-   "anchorAt": "2026-10-22T18:00:00.000Z",
-   "item": {
-    "id": "sha256:5ddee939d5fa55a3",
-    "title": "微软：发布诊断编排器，复杂病例准确率称超医生",
-    "summary": "Verge：Suleyman 称诊断工具准确率高于医生；对标 Science/微软稿。",
-    "reason": "微软 MAI-DxO：复杂病例诊断准确率称超医生",
-    "source": {
-     "name": "The Verge · AI"
-    },
-    "publishedAt": "2026-10-22T18:00:00.000Z",
-    "timelineAt": "2026-10-22T18:00:00.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-23-microsoft-mai-dxo",
-    "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence"
-   },
-   "group": {
-    "factId": "fact-2026-10-23-microsoft-mai-dxo",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:5ddee939d5fa55a3"
-    ]
-   }
-  },
-  {
-   "key": "sha256:7ea705cfe9f05665",
-   "anchorAt": "2026-10-22T17:50:09.000Z",
-   "item": {
-    "id": "sha256:7ea705cfe9f05665",
-    "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
-    "summary": "Decoder 报道；一跳确认 Google Cloud 官方博客。",
-    "reason": "Google 云推出 Agent Compute Engine 硬件隔离 mic",
-    "source": {
-     "name": "The Decoder"
-    },
-    "publishedAt": "2026-10-22T17:50:09.000Z",
-    "timelineAt": "2026-10-22T17:50:09.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-23-google-agent-compute-engine",
-    "originalUrl": "https://the-decoder.com/googles-agent-compute-engine-gives-every-gemini-agent-its-own-hardware-isolated-micro-virtual-machine/"
-   },
-   "group": {
-    "factId": "fact-2026-10-23-google-agent-compute-engine",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:7ea705cfe9f05665"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-2.json",
  "hot": [
   {
    "rank": 1,
-   "title": "OpenMobile-2：开源手机智能体称真机评测居开源前列",
-   "heat": 23.2,
-   "trend": "down",
-   "storyPublicId": "2026-10-25-openmobile-2-mobile-agents",
-   "itemId": "sha256:514019d7b6342099",
+   "title": "Anthropic 正式递交公开上市申请",
+   "heat": 35.9,
+   "trend": "up",
+   "storyPublicId": "2026-10-27-anthropic-ipo-s1",
+   "itemId": "sha256:fcee7fe2ae9bec9b",
    "participants": [
-    {
-     "name": "ic.work",
-     "kind": "editorial"
-    },
     {
      "name": "The Decoder",
      "kind": "editorial"
     },
     {
-     "name": "web-arxiv-2610.14157",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 3
-  },
-  {
-   "rank": 2,
-   "title": "Block 发布 Dessa：纯语音训练的全双工对话模型",
-   "heat": 16.2,
-   "trend": "down",
-   "storyPublicId": "2026-10-24-block-dessa-speech",
-   "itemId": "sha256:8f9973956bdc5190",
-   "participants": [
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
+     "name": "Latent Space",
      "kind": "editorial"
     },
     {
@@ -604,22 +573,26 @@
      "kind": "editorial"
     },
     {
-     "name": "web-block-dessa",
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "量子位",
      "kind": "editorial"
     }
    ],
-   "participantCount": 4
+   "participantCount": 5
   },
   {
-   "rank": 3,
-   "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
-   "heat": 14.2,
+   "rank": 2,
+   "title": "OpenAI 发布 GPT-6.1 Terra",
+   "heat": 16.7,
    "trend": "down",
-   "storyPublicId": "2026-10-24-kimi-k31-pro",
-   "itemId": "sha256:261b6564023ad66c",
+   "storyPublicId": "2026-10-27-openai-gpt61-terra",
+   "itemId": "sha256:35e334c198740f74",
    "participants": [
     {
-     "name": "Latent Space",
+     "name": "OpenAI News",
      "kind": "editorial"
     },
     {
@@ -629,28 +602,39 @@
     {
      "name": "The Decoder",
      "kind": "editorial"
-    },
-    {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
     }
    ],
-   "participantCount": 4
+   "participantCount": 3
   },
   {
-   "rank": 4,
-   "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
-   "heat": 11.0,
+   "rank": 3,
+   "title": "Cohere：热门开源权重模型出现异常外传行为",
+   "heat": 12.8,
    "trend": "down",
-   "storyPublicId": "2026-10-24-openai-securing-frontier-training",
-   "itemId": "sha256:f8c156dba7886826",
+   "storyPublicId": "2026-10-27-cohere-qwen-concerning-behavior",
+   "itemId": "sha256:6e162aff655bfd4c",
    "participants": [
     {
-     "name": "The Decoder",
+     "name": "TechCrunch · AI",
      "kind": "editorial"
     },
     {
-     "name": "TechCrunch · AI",
+     "name": "Hacker News（AI 关键词 ≥100 分）",
+     "kind": "signal"
+    }
+   ],
+   "participantCount": 2
+  },
+  {
+   "rank": 4,
+   "title": "OpenAI：与学界共建科学理解",
+   "heat": 12.1,
+   "trend": "down",
+   "storyPublicId": "2026-10-27-openai-academic-science-collab",
+   "itemId": "sha256:8eb6001a836a6e50",
+   "participants": [
+    {
+     "name": "OpenAI News",
      "kind": "editorial"
     },
     {
@@ -658,33 +642,12 @@
      "kind": "editorial"
     }
    ],
-   "participantCount": 3
-  },
-  {
-   "rank": 5,
-   "title": "Google Research：把基础模型用于一线结核病筛查",
-   "heat": 9.4,
-   "trend": "down",
-   "storyPublicId": "2026-10-24-google-tb-screening",
-   "itemId": "sha256:30a34d758ba63be2",
-   "participants": [
-    {
-     "name": "Google Research Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "TSN",
-     "kind": "editorial"
-    },
-    {
-     "name": "web-techbooky",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 3
+   "participantCount": 2
   }
  ],
  "dayCounts": {
+  "2026-10-27": 4,
+  "2026-10-26": 4,
   "2026-10-25": 3,
   "2026-10-24": 7,
   "2026-10-23": 12,
@@ -696,5 +659,5 @@
  },
  "page": 1,
  "pageCount": 3,
- "total": 49
+ "total": 57
 }

@@ -1,0 +1,274 @@
+{
+ "publicId": "2026-10-27-anthropic-ipo-s1",
+ "title": "Anthropic 正式递交公开上市申请",
+ "status": "active",
+ "reportCount": 9,
+ "sourceCount": 5,
+ "firstReportAt": "2026-10-26T13:32:49.000Z",
+ "latestAt": "2026-10-27T11:20:51.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Anthropic 向 SEC 递交 S-1，披露收入增长、客户结构、长期算力义务与特殊治理安排，并在附信中重申 Claude 不投放广告。一手文件见 SEC EDGAR；媒体数字转述以招股书为准。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 5,
+  "newParticipants6h": 2,
+  "recentReports24h": 9,
+  "observationComplete": true,
+  "rank": 1
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-27-anthropic-ipo-s1",
+   "title": "Anthropic 正式递交公开上市申请",
+   "firstReportAt": "2026-10-26T13:32:49.000Z",
+   "reportCount": 9,
+   "representative": {
+    "id": "sha256:fcee7fe2ae9bec9b",
+    "title": "Anthropic 正式递交公开上市申请",
+    "summary": null,
+    "source": {
+     "name": "TechCrunch · AI",
+     "firstParty": false
+    },
+    "publishedAt": "2026-10-26T14:35:22.000Z",
+    "selected": true,
+    "originalUrl": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/"
+   }
+  }
+ ],
+ "officialReports": [],
+ "timeline": [
+  {
+   "id": "sha256:d5b884dec7da003b",
+   "title": "报道：Anthropic 用 IPO 信重申 Claude 永不展示广告",
+   "summary": "The Decoder 称 Anthropic 在 IPO 附信中重申 Claude 不投放广告。",
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-27T11:20:51.000Z",
+   "selected": false,
+   "originalUrl": "https://the-decoder.com/anthropic-uses-its-ipo-letter-to-renew-its-pledge-that-claude-will-never-show-ads/"
+  },
+  {
+   "id": "sha256:ca85c0384dbbb0fd",
+   "title": "Latent Space：Anthropic 拟冲刺约 2T 估值 IPO",
+   "summary": null,
+   "source": {
+    "name": "Latent Space",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-27T07:24:59.000Z",
+   "selected": false,
+   "originalUrl": "https://latent.space/p/ainews-anthropic-s1/"
+  },
+  {
+   "id": "sha256:092e8ceea2bd79fc",
+   "title": "报道：Anthropic IPO 背景下的数据中心与燃气争议",
+   "summary": "The Verge 讨论 Anthropic 扩张与能源/气候风险。",
+   "source": {
+    "name": "The Verge · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-26T21:45:31.000Z",
+   "selected": false,
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk"
+  },
+  {
+   "id": "sha256:3d144f3f7ebe5a85",
+   "title": "报道：Anthropic 公开账本，收入创新高且义务沉重",
+   "summary": "The Decoder 梳理 S-1 财务：季度收入、首次营业利润与长期算力义务等。",
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-26T19:14:45.000Z",
+   "selected": false,
+   "originalUrl": "https://the-decoder.com/anthropic-opens-its-books-for-wall-street-showing-record-revenue-and-mounting-obligations/"
+  },
+  {
+   "id": "sha256:fe6583a778a0b30b",
+   "title": "报道：Anthropic IPO 文件中的五个怪细节",
+   "summary": "The Verge 盘点 S-1 中的非常规细节。",
+   "source": {
+    "name": "The Verge · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-26T17:10:23.000Z",
+   "selected": false,
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1018738/anthropic-ipo-s1-filing-weird-details"
+  },
+  {
+   "id": "sha256:68dfb7cd14f88c58",
+   "title": "报道：Anthropic IPO 文件透露留住企业客户的策略",
+   "summary": "TechCrunch 称 S-1 显示高价值客户中过半同时使用 Claude Platform 与自有应用。",
+   "source": {
+    "name": "TechCrunch · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-26T16:49:42.000Z",
+   "selected": false,
+   "originalUrl": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/"
+  },
+  {
+   "id": "sha256:e4e1138add83b456",
+   "title": "量子位：Anthropic 公开 335 页招股书",
+   "summary": null,
+   "source": {
+    "name": "量子位",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-26T16:06:31.000Z",
+   "selected": false,
+   "originalUrl": "https://www.qbitai.com/2026/10/505551.html"
+  },
+  {
+   "id": "sha256:fcee7fe2ae9bec9b",
+   "title": "Anthropic 正式递交公开上市申请",
+   "summary": null,
+   "source": {
+    "name": "TechCrunch · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-26T14:35:22.000Z",
+   "selected": true,
+   "originalUrl": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/"
+  },
+  {
+   "id": "sha256:8730dc35da783e3d",
+   "title": "报道：Anthropic IPO 文件勾勒「变革人类事业」计划",
+   "summary": "The Verge 跟进 Anthropic S-1 愿景与业务叙述。",
+   "source": {
+    "name": "The Verge · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-26T13:32:49.000Z",
+   "selected": false,
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-26T14:00:00.000Z",
+   "heat": 9.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T15:00:00.000Z",
+   "heat": 19.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-26T16:00:00.000Z",
+   "heat": 18.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-26T17:00:00.000Z",
+   "heat": 28.7,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-26T18:00:00.000Z",
+   "heat": 28.9,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-26T19:00:00.000Z",
+   "heat": 28.1,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-26T20:00:00.000Z",
+   "heat": 37.1,
+   "participants": 4
+  },
+  {
+   "hour": "2026-10-26T21:00:00.000Z",
+   "heat": 36.0,
+   "participants": 4
+  },
+  {
+   "hour": "2026-10-26T22:00:00.000Z",
+   "heat": 36.2,
+   "participants": 4
+  },
+  {
+   "hour": "2026-10-26T23:00:00.000Z",
+   "heat": 35.2,
+   "participants": 4
+  },
+  {
+   "hour": "2026-10-27T00:00:00.000Z",
+   "heat": 34.2,
+   "participants": 4
+  },
+  {
+   "hour": "2026-10-27T01:00:00.000Z",
+   "heat": 33.2,
+   "participants": 4
+  },
+  {
+   "hour": "2026-10-27T02:00:00.000Z",
+   "heat": 32.3,
+   "participants": 4
+  },
+  {
+   "hour": "2026-10-27T03:00:00.000Z",
+   "heat": 31.3,
+   "participants": 4
+  },
+  {
+   "hour": "2026-10-27T04:00:00.000Z",
+   "heat": 30.5,
+   "participants": 4
+  },
+  {
+   "hour": "2026-10-27T05:00:00.000Z",
+   "heat": 29.6,
+   "participants": 4
+  },
+  {
+   "hour": "2026-10-27T06:00:00.000Z",
+   "heat": 28.7,
+   "participants": 4
+  },
+  {
+   "hour": "2026-10-27T07:00:00.000Z",
+   "heat": 27.9,
+   "participants": 4
+  },
+  {
+   "hour": "2026-10-27T08:00:00.000Z",
+   "heat": 37.0,
+   "participants": 5
+  },
+  {
+   "hour": "2026-10-27T09:00:00.000Z",
+   "heat": 35.9,
+   "participants": 5
+  },
+  {
+   "hour": "2026-10-27T10:00:00.000Z",
+   "heat": 34.9,
+   "participants": 5
+  },
+  {
+   "hour": "2026-10-27T11:00:00.000Z",
+   "heat": 33.9,
+   "participants": 5
+  },
+  {
+   "hour": "2026-10-27T12:00:00.000Z",
+   "heat": 36.6,
+   "participants": 5
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "Anthropic 递交 S-1，披露收入与治理结构",
+ "primaryUrl": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/"
+}

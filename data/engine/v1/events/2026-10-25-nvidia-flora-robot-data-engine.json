@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-25-nvidia-flora-robot-data-engine",
  "title": "Nvidia 开源 Flora：机器人视频标注数据引擎",
- "status": "active",
+ "status": "watching",
  "reportCount": 1,
  "sourceCount": 1,
  "firstReportAt": "2026-10-25T10:08:49.000Z",
@@ -13,10 +13,10 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 1,
-  "newParticipants6h": 1,
-  "recentReports24h": 1,
-  "observationComplete": true,
+  "participants48h": 0,
+  "newParticipants6h": 0,
+  "recentReports24h": 0,
+  "observationComplete": false,
   "rank": null
  },
  "developments": [
@@ -54,23 +54,7 @@
    "originalUrl": "https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra/"
   }
  ],
- "heat": [
-  {
-   "hour": "2026-10-25T11:00:00.000Z",
-   "heat": 9.8,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-25T12:00:00.000Z",
-   "heat": 9.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-25T13:00:00.000Z",
-   "heat": 9.2,
-   "participants": 1
-  }
- ],
+ "heat": [],
  "related": [],
  "topics": [],
  "recommendReason": "开源机器人视频标注引擎称大幅降本",

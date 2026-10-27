@@ -1,6 +1,13 @@
 {
  "sources": [
   {
+   "sourceId": "hn-ai-front",
+   "name": "Hacker News（AI 关键词 ≥100 分）",
+   "tier": "T2",
+   "kind": "signal",
+   "homepage": "https://hnrss.org"
+  },
+  {
    "sourceId": "rss-claude-release-notes",
    "name": "Claude Platform Release Notes",
    "tier": "T1",
@@ -20,6 +27,13 @@
    "tier": "T1",
    "kind": "editorial",
    "homepage": "https://huggingface.co"
+  },
+  {
+   "sourceId": "rss-interconnects",
+   "name": "Interconnects (Nathan Lambert)",
+   "tier": "T2",
+   "kind": "editorial",
+   "homepage": "https://www.interconnects.ai"
   },
   {
    "sourceId": "rss-ithome",

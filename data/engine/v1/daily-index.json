@@ -1,20 +1,20 @@
 [
   {
-    "key": "2026-10-25",
-    "issueNumber": 7,
-    "title": "vLLM：DeepSeek-V4.1-Flash 在 GB300 NVL72 吞吐逼近 DeepInfer",
-    "count": 10
+    "key": "2026-10-19",
+    "issueNumber": 1,
+    "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
+    "count": 5
   },
   {
-    "key": "2026-10-24",
-    "issueNumber": 6,
-    "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
-    "count": 12
+    "key": "2026-10-20",
+    "issueNumber": 2,
+    "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
+    "count": 6
   },
   {
-    "key": "2026-10-23",
-    "issueNumber": 5,
-    "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
+    "key": "2026-10-21",
+    "issueNumber": 3,
+    "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
     "count": 12
   },
   {
@@ -24,21 +24,33 @@
     "count": 12
   },
   {
-    "key": "2026-10-21",
-    "issueNumber": 3,
-    "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
+    "key": "2026-10-23",
+    "issueNumber": 5,
+    "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
     "count": 12
   },
   {
-    "key": "2026-10-20",
-    "issueNumber": 2,
-    "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
-    "count": 6
+    "key": "2026-10-24",
+    "issueNumber": 6,
+    "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
+    "count": 12
   },
   {
-    "key": "2026-10-19",
-    "issueNumber": 1,
-    "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
-    "count": 5
+    "key": "2026-10-25",
+    "issueNumber": 7,
+    "title": "vLLM：DeepSeek-V4.1-Flash 在 GB300 NVL72 吞吐逼近 DeepInfer",
+    "count": 12
+  },
+  {
+    "key": "2026-10-26",
+    "issueNumber": 8,
+    "title": "OpenAI 发布 GPT-6.1 Terra",
+    "count": 10
+  },
+  {
+    "key": "2026-10-27",
+    "issueNumber": 9,
+    "title": "OpenAI 发布 GPT-6.1 Terra",
+    "count": 7
   }
 ]

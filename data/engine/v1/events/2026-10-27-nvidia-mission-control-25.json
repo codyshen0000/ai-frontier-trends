@@ -1,0 +1,185 @@
+{
+ "publicId": "2026-10-27-nvidia-mission-control-25",
+ "title": "NVIDIA Mission Control 2.5：Kubernetes 自主恢复",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-26T15:00:00.000Z",
+ "latestAt": "2026-10-26T15:00:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "NVIDIA 技术博客称 Mission Control 2.5 为 Kubernetes 环境带来自主恢复能力，减少人工干预。属厂商技术说明。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-27-nvidia-mission-control-25",
+   "title": "NVIDIA Mission Control 2.5：Kubernetes 自主恢复",
+   "firstReportAt": "2026-10-26T15:00:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:c3d6fb64eb5418e8",
+    "title": "NVIDIA Mission Control 2.5：为 Kubernetes 带来自主恢复",
+    "summary": "NVIDIA 技术博客称 Mission Control 2.5 为 Kubernetes 集群带来自主恢复能力。",
+    "source": {
+     "name": "NVIDIA Technical Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-26T15:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:c3d6fb64eb5418e8",
+   "title": "NVIDIA Mission Control 2.5：为 Kubernetes 带来自主恢复",
+   "summary": "NVIDIA 技术博客称 Mission Control 2.5 为 Kubernetes 集群带来自主恢复能力。",
+   "source": {
+    "name": "NVIDIA Technical Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-26T15:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:c3d6fb64eb5418e8",
+   "title": "NVIDIA Mission Control 2.5：为 Kubernetes 带来自主恢复",
+   "summary": "NVIDIA 技术博客称 Mission Control 2.5 为 Kubernetes 集群带来自主恢复能力。",
+   "source": {
+    "name": "NVIDIA Technical Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-26T15:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-26T15:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T16:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T17:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T18:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T19:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T20:00:00.000Z",
+   "heat": 8.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T21:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T22:00:00.000Z",
+   "heat": 8.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-26T23:00:00.000Z",
+   "heat": 7.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T00:00:00.000Z",
+   "heat": 7.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T01:00:00.000Z",
+   "heat": 7.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T02:00:00.000Z",
+   "heat": 7.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T03:00:00.000Z",
+   "heat": 7.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T04:00:00.000Z",
+   "heat": 6.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T05:00:00.000Z",
+   "heat": 6.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T06:00:00.000Z",
+   "heat": 6.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T07:00:00.000Z",
+   "heat": 6.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T08:00:00.000Z",
+   "heat": 6.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T09:00:00.000Z",
+   "heat": 5.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T10:00:00.000Z",
+   "heat": 5.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T11:00:00.000Z",
+   "heat": 5.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T12:00:00.000Z",
+   "heat": 5.5,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "primaryUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/"
+}
