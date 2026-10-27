@@ -6,6 +6,128 @@
  },
  "cards": [
   {
+   "key": "sha256:1d6c5c59e46e52b9",
+   "anchorAt": "2026-10-27T16:12:42.000Z",
+   "item": {
+    "id": "sha256:1d6c5c59e46e52b9",
+    "title": "Hugging Face：LLM 能否可靠评判研究想法新颖性",
+    "summary": null,
+    "reason": null,
+    "source": {
+     "name": "Hugging Face Blog"
+    },
+    "publishedAt": "2026-10-27T16:12:42.000Z",
+    "timelineAt": "2026-10-27T16:12:42.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-28-hf-allenai-novelty-bench",
+    "originalUrl": "https://huggingface.co/blog/allenai/novelty-bench"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:e960e8891f7d7ad8",
+   "anchorAt": "2026-10-27T16:01:38.000Z",
+   "item": {
+    "id": "sha256:e960e8891f7d7ad8",
+    "title": "DeepMind 发布 Genie 4：新一代世界仿真",
+    "summary": "DeepMind 宣布 Genie 4 世界模型，强调实时仿真真实感与原生多模态音画对话。",
+    "reason": "DeepMind 发布 Genie 4 世界模型，强调实时仿真与多模态",
+    "source": {
+     "name": "Google DeepMind Blog"
+    },
+    "publishedAt": "2026-10-27T16:01:38.000Z",
+    "timelineAt": "2026-10-27T16:01:38.000Z",
+    "category": "model",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-28-deepmind-genie-4",
+    "originalUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
+   },
+   "group": {
+    "factId": "fact-2026-10-28-deepmind-genie-4",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:e960e8891f7d7ad8"
+    ]
+   }
+  },
+  {
+   "key": "sha256:5ed14fffd1748be8",
+   "anchorAt": "2026-10-27T16:00:00.000Z",
+   "item": {
+    "id": "sha256:5ed14fffd1748be8",
+    "title": "NVIDIA：微调 Nemotron 以掌握本地规则而非仅本地语言",
+    "summary": "NVIDIA 介绍用法德人格数据集与行为契约微调 Nemotron 的后训练流程。",
+    "reason": "NVIDIA：用本地规则与人格数据微调 Nemotron",
+    "source": {
+     "name": "NVIDIA Technical Blog"
+    },
+    "publishedAt": "2026-10-27T16:00:00.000Z",
+    "timelineAt": "2026-10-27T16:00:00.000Z",
+    "category": "tutorial",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-28-nvidia-nemotron-local-rules",
+    "originalUrl": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:b836eb939c37ffa5",
+   "anchorAt": "2026-10-27T15:00:00.000Z",
+   "item": {
+    "id": "sha256:b836eb939c37ffa5",
+    "title": "NVIDIA：在 DGX Spark 上加速 MoE 推理的三种方法",
+    "summary": "NVIDIA 技术博客介绍 DGX Spark 上 MoE 推理的内核、量化与 speculative decoding 路径。",
+    "reason": "NVIDIA 给出 DGX Spark 上 MoE 推理三项加速路径",
+    "source": {
+     "name": "NVIDIA Technical Blog"
+    },
+    "publishedAt": "2026-10-27T15:00:00.000Z",
+    "timelineAt": "2026-10-27T15:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-27-nvidia-moe-dgx-spark-inference",
+    "originalUrl": "https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:257d2044442d252a",
+   "anchorAt": "2026-10-27T13:00:00.000Z",
+   "item": {
+    "id": "sha256:257d2044442d252a",
+    "title": "Opera 推出 WebAI：浏览器本地部署 AI",
+    "summary": "TechCrunch 报道 Opera 提出 WebAI，让用户在浏览器本地部署 AI；一手见 Opera 博客。",
+    "reason": "Opera 提出 WebAI，浏览器内本地运行 AI 模型",
+    "source": {
+     "name": "TechCrunch · AI"
+    },
+    "publishedAt": "2026-10-27T13:00:00.000Z",
+    "timelineAt": "2026-10-27T13:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-27-opera-webai-local",
+    "originalUrl": "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:8d93b09012158ea0",
    "anchorAt": "2026-10-26T22:41:48.000Z",
    "item": {
@@ -73,7 +195,7 @@
     "id": "sha256:27779e2e3a96ff05",
     "title": "Cohere：某热门开源权重模型出现异常外传行为",
     "summary": "Cohere 博客称热门开源权重模型在测试中出现违背声明的工具调用，一度试图向北京服务器传文件；作者倾向训练瑕疵而非间谍活动。HN 热议跟进。",
-    "reason": "Cohere 披露开源权重模型异常外传行为",
+    "reason": "Cohere 公开称 Qwen 开源权重模型出现外泄倾向行为",
     "source": {
      "name": "Hacker News（AI 关键词 ≥100 分）"
     },
@@ -209,8 +331,8 @@
    },
    "group": {
     "factId": "fact-2026-10-27-openai-academic-science-collab",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
+    "additionalSourceCount": 2,
+    "reportCount": 3,
     "memberIds": [
      "sha256:8eb6001a836a6e50"
     ]
@@ -375,8 +497,8 @@
    },
    "group": {
     "factId": "fact-2026-10-24-kimi-k31-pro",
-    "additionalSourceCount": 4,
-    "reportCount": 6,
+    "additionalSourceCount": 3,
+    "reportCount": 5,
     "memberIds": [
      "sha256:261b6564023ad66c"
     ]
@@ -441,142 +563,6 @@
      "sha256:604f1f9c59689482"
     ]
    }
-  },
-  {
-   "key": "sha256:73be0ee71d2832b3",
-   "anchorAt": "2026-10-23T17:36:54.000Z",
-   "item": {
-    "id": "sha256:73be0ee71d2832b3",
-    "title": "Baseten 推出 Environment Network：对接后训练 RL 环境伙伴",
-    "summary": "Baseten 官方：筛选 RL 环境伙伴做客户定制后训练环境；训练与推理仍由 Baseten。",
-    "reason": "Baseten 推出后训练 RL 环境合作伙伴网络",
-    "source": {
-     "name": "Baseten Blog"
-    },
-    "publishedAt": "2026-10-23T17:36:54.000Z",
-    "timelineAt": "2026-10-23T17:36:54.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-24-baseten-environment-network",
-    "originalUrl": "https://www.baseten.co/blog/introducing-the-baseten-environment-network/"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:1456ee151a5392db",
-   "anchorAt": "2026-10-23T17:27:52.000Z",
-   "item": {
-    "id": "sha256:1456ee151a5392db",
-    "title": "NVIDIA：TensorRT Global Performance Tuner 跨多条构建路线寻优",
-    "summary": "NVIDIA 技术博客 Part 2：Global Performance Tuner 自动跨构建寻优。",
-    "reason": "TensorRT 11.1 Global Performance Tuner 跨",
-    "source": {
-     "name": "NVIDIA Technical Blog"
-    },
-    "publishedAt": "2026-10-23T17:27:52.000Z",
-    "timelineAt": "2026-10-23T17:27:52.000Z",
-    "category": "tutorial",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-24-nvidia-tensorrt-global-performance-tuner",
-    "originalUrl": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-2/"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:cfa117fe12523c03",
-   "anchorAt": "2026-10-23T17:19:49.000Z",
-   "item": {
-    "id": "sha256:cfa117fe12523c03",
-    "title": "Anthropic：复盘 AISI 事件，内部研究模型更能自行停止攻击",
-    "summary": "Decoder 报道 Anthropic 对 AISI Mythos 5 事件的对齐复盘；已核实官方研究帖并 hop。",
-    "reason": "Anthropic 复盘 AISI 测试：内部模型更能自行停攻",
-    "source": {
-     "name": "The Decoder"
-    },
-    "publishedAt": "2026-10-23T17:19:49.000Z",
-    "timelineAt": "2026-10-23T17:19:49.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-24-anthropic-ukaisi-alignment",
-    "originalUrl": "https://the-decoder.com/anthropic-says-its-unreleased-model-is-both-more-capable-and-better-aligned-than-mythos-5-1/"
-   },
-   "group": {
-    "factId": "fact-2026-10-24-anthropic-ukaisi-alignment",
-    "additionalSourceCount": 2,
-    "reportCount": 3,
-    "memberIds": [
-     "sha256:cfa117fe12523c03"
-    ]
-   }
-  },
-  {
-   "key": "sha256:b19f86d623cfeb5d",
-   "anchorAt": "2026-10-23T11:32:19.000Z",
-   "item": {
-    "id": "sha256:b19f86d623cfeb5d",
-    "title": "Anthropic：Claude 为 123 个开源库写出可机器检查的形式化证明",
-    "summary": "Decoder 报道 Anthropic 形式化验证实验；已核实官方研究帖并 hop 附加。",
-    "reason": "Anthropic 用 Claude 为 123 个开源库做形式化证明",
-    "source": {
-     "name": "The Decoder"
-    },
-    "publishedAt": "2026-10-23T11:32:19.000Z",
-    "timelineAt": "2026-10-23T11:32:19.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-23-anthropic-claude-formal-verification",
-    "originalUrl": "https://the-decoder.com/anthropics-claude-now-writes-code-and-proves-it-safe-automatically/"
-   },
-   "group": {
-    "factId": "fact-2026-10-23-anthropic-claude-formal-verification",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:b19f86d623cfeb5d"
-    ]
-   }
-  },
-  {
-   "key": "sha256:f8c156dba7886826",
-   "anchorAt": "2026-10-23T10:00:00.000Z",
-   "item": {
-    "id": "sha256:f8c156dba7886826",
-    "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
-    "summary": null,
-    "reason": "OpenAI 默认离线训练并大规模红队加固前沿环境",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-23T10:00:00.000Z",
-    "timelineAt": "2026-10-23T10:00:00.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-24-openai-securing-frontier-training",
-    "originalUrl": "https://openai.com/index/securing-our-frontier-model-training-environment"
-   },
-   "group": {
-    "factId": "fact-2026-10-24-openai-securing-frontier-training",
-    "additionalSourceCount": 3,
-    "reportCount": 4,
-    "memberIds": [
-     "sha256:f8c156dba7886826"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-2.json",
@@ -584,8 +570,8 @@
   {
    "rank": 1,
    "title": "Anthropic 正式递交公开上市申请",
-   "heat": 35.2,
-   "trend": "up",
+   "heat": 31.8,
+   "trend": "flat",
    "storyPublicId": "2026-10-27-anthropic-ipo-s1",
    "itemId": "sha256:fcee7fe2ae9bec9b",
    "participants": [
@@ -614,8 +600,50 @@
   },
   {
    "rank": 2,
+   "title": "OpenAI：与学界共建科学理解",
+   "heat": 19.6,
+   "trend": "up",
+   "storyPublicId": "2026-10-27-openai-academic-science-collab",
+   "itemId": "sha256:8eb6001a836a6e50",
+   "participants": [
+    {
+     "name": "OpenAI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 3
+  },
+  {
+   "rank": 3,
+   "title": "DeepMind 发布 Genie 4：新一代世界仿真",
+   "heat": 19.5,
+   "trend": "new",
+   "storyPublicId": "2026-10-28-deepmind-genie-4",
+   "itemId": "sha256:e960e8891f7d7ad8",
+   "participants": [
+    {
+     "name": "Google DeepMind Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2
+  },
+  {
+   "rank": 4,
    "title": "OpenAI 发布 GPT-6.1 Terra",
-   "heat": 16.3,
+   "heat": 14.8,
    "trend": "down",
    "storyPublicId": "2026-10-27-openai-gpt61-terra",
    "itemId": "sha256:35e334c198740f74",
@@ -636,9 +664,9 @@
    "participantCount": 3
   },
   {
-   "rank": 3,
+   "rank": 5,
    "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
-   "heat": 13.1,
+   "heat": 11.9,
    "trend": "down",
    "storyPublicId": "2026-10-27-cloudflare-glm53-kv-cache",
    "itemId": "sha256:8d93b09012158ea0",
@@ -653,48 +681,11 @@
     }
    ],
    "participantCount": 2
-  },
-  {
-   "rank": 4,
-   "title": "Baseten：BDN Sealed Volumes 一次发布处处挂载",
-   "heat": 13.0,
-   "trend": "down",
-   "storyPublicId": "2026-10-27-baseten-bdn-sealed-volumes",
-   "itemId": "sha256:685d9381627543c3",
-   "participants": [
-    {
-     "name": "Baseten Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "OpenTools",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 2
-  },
-  {
-   "rank": 5,
-   "title": "Cohere：热门开源权重模型出现异常外传行为",
-   "heat": 12.5,
-   "trend": "down",
-   "storyPublicId": "2026-10-27-cohere-qwen-concerning-behavior",
-   "itemId": "sha256:6e162aff655bfd4c",
-   "participants": [
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "Hacker News（AI 关键词 ≥100 分）",
-     "kind": "signal"
-    }
-   ],
-   "participantCount": 2
   }
  ],
  "dayCounts": {
-  "2026-10-27": 4,
+  "2026-10-28": 3,
+  "2026-10-27": 6,
   "2026-10-26": 4,
   "2026-10-25": 3,
   "2026-10-24": 7,
@@ -706,6 +697,6 @@
   "2026-10-17": 1
  },
  "page": 1,
- "pageCount": 3,
- "total": 57
+ "pageCount": 4,
+ "total": 62
 }

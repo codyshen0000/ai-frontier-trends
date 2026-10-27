@@ -2,29 +2,29 @@
  "publicId": "2026-10-27-openai-academic-science-collab",
  "title": "OpenAI：与学界共建科学理解",
  "status": "active",
- "reportCount": 2,
- "sourceCount": 2,
+ "reportCount": 3,
+ "sourceCount": 3,
  "firstReportAt": "2026-10-26T14:30:00.000Z",
- "latestAt": "2026-10-26T23:34:58.000Z",
+ "latestAt": "2026-10-27T12:37:24.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": "OpenAI 称与学术社区合作推进科学理解，并宣布多项科学相关进展。属官方通稿。",
+ "summary": "OpenAI 称与学术社区合作推进科学理解；媒体跟进称其请外部专家（含诺奖得主）核验模型在数学/计科/物理上的证明。一手以 OpenAI 通稿为准。",
  "excerpt": null,
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 2,
-  "newParticipants6h": 0,
+  "participants48h": 3,
+  "newParticipants6h": 1,
   "recentReports24h": 2,
   "observationComplete": true,
-  "rank": 6
+  "rank": 2
  },
  "developments": [
   {
    "factId": "fact-2026-10-27-openai-academic-science-collab",
    "title": "OpenAI：与学界共建科学理解",
    "firstReportAt": "2026-10-26T14:30:00.000Z",
-   "reportCount": 2,
+   "reportCount": 3,
    "representative": {
     "id": "sha256:8eb6001a836a6e50",
     "title": "OpenAI：与学界共建科学理解",
@@ -54,6 +54,18 @@
   }
  ],
  "timeline": [
+  {
+   "id": "sha256:1f2c2cfd54883290",
+   "title": "报道：OpenAI 请外部专家核验 AI 科学证明",
+   "summary": "The Decoder 称 OpenAI 请外部专家（含诺奖得主）核验其模型在数学/计科/物理上的证明。",
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-27T12:37:24.000Z",
+   "selected": false,
+   "originalUrl": "https://the-decoder.com/openai-asks-outside-experts-including-a-nobel-laureate-to-check-proofs-its-ai-produced-in-math-computer-science-and-physics/"
+  },
   {
    "id": "sha256:b555ce2afa55383d",
    "title": "报道：OpenAI 宣布三项科学发现并拓展学术合作",
@@ -192,11 +204,27 @@
   },
   {
    "hour": "2026-10-27T13:00:00.000Z",
-   "heat": 12.0,
-   "participants": 2
+   "heat": 21.9,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-27T14:00:00.000Z",
+   "heat": 21.3,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-27T15:00:00.000Z",
+   "heat": 20.7,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-27T16:00:00.000Z",
+   "heat": 20.1,
+   "participants": 3
   }
  ],
  "related": [],
  "topics": [],
- "primaryUrl": "https://openai.com/index/building-scientific-understanding-with-academic-communities"
+ "primaryUrl": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
+ "rankDelta": 4
 }

@@ -2,10 +2,10 @@
  "publicId": "2026-10-24-kimi-k31-pro",
  "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
  "status": "watching",
- "reportCount": 4,
- "sourceCount": 4,
+ "reportCount": 3,
+ "sourceCount": 3,
  "firstReportAt": "2026-10-23T19:00:07.000Z",
- "latestAt": "2026-10-25T11:49:00.000Z",
+ "latestAt": "2026-10-24T07:18:29.000Z",
  "digest": null,
  "digestUpdatedAt": null,
  "summary": "Artificial Analysis：Kimi K3.1 Pro 智能指数 55（较 K3 升 11 分），暂列第四，落后 Claude Opus 5.5 等；智能体与终端基准提升明显。参数仍约 2.8T/104B 激活、百万上下文；权重尚未放出，评测方预计开源后将成为领先开源权重模型之一。",
@@ -24,7 +24,7 @@
    "factId": "fact-2026-10-24-kimi-k31-pro",
    "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
    "firstReportAt": "2026-10-23T19:00:07.000Z",
-   "reportCount": 4,
+   "reportCount": 3,
    "representative": {
     "id": "sha256:261b6564023ad66c",
     "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
@@ -41,18 +41,6 @@
  ],
  "officialReports": [],
  "timeline": [
-  {
-   "id": "sha256:9c6009b025f44314",
-   "title": "播客：Kimi K3.1 Pro 与 Muse 随谈",
-   "summary": "Interconnects 播客讨论 Kimi K3.1 Pro 等。",
-   "source": {
-    "name": "Interconnects (Nathan Lambert)",
-    "firstParty": false
-   },
-   "publishedAt": "2026-10-25T11:49:00.000Z",
-   "selected": false,
-   "originalUrl": "https://www.interconnects.ai/p/podcast-kimi-k31-pro-the-new-cyber"
-  },
   {
    "id": "sha256:a74122a98f64e132",
    "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",

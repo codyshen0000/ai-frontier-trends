@@ -10,14 +10,14 @@
  "digestUpdatedAt": null,
  "summary": "Cloudflare 披露并修复其 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题，说明影响范围与补救。属官方安全通告。",
  "excerpt": null,
- "latest": "补挂 Cloudflare 官方博客为独立 editorial participant，并换为代表（#92 hop-as-rep）。",
+ "latest": null,
  "latestReport": null,
  "whyHot": {
   "participants48h": 2,
   "newParticipants6h": 0,
   "recentReports24h": 2,
   "observationComplete": true,
-  "rank": 3
+  "rank": 5
  },
  "developments": [
   {
@@ -57,7 +57,7 @@
   {
    "id": "sha256:89893d5f73c77515",
    "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
-   "summary": "Cloudflare 披露并修复 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题。属官方安全通告；HN 讨论跟进。",
+   "summary": "HN 热度并入。",
    "source": {
     "name": "Hacker News（AI 关键词 ≥100 分）",
     "firstParty": false
@@ -154,10 +154,26 @@
    "hour": "2026-10-27T13:00:00.000Z",
    "heat": 13.2,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-27T14:00:00.000Z",
+   "heat": 12.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T15:00:00.000Z",
+   "heat": 12.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T16:00:00.000Z",
+   "heat": 12.1,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "Cloudflare 修复 Workers AI KV 缓存跨请求暴露",
- "primaryUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/"
+ "primaryUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+ "rankDelta": -2
 }

@@ -1,0 +1,74 @@
+{
+ "publicId": "2026-10-28-hf-allenai-novelty-bench",
+ "title": "Hugging Face：LLM 能否可靠评判研究想法新颖性",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-27T16:12:42.000Z",
+ "latestAt": "2026-10-27T16:12:42.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": null,
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-28-hf-allenai-novelty-bench",
+   "title": "Hugging Face：LLM 能否可靠评判研究想法新颖性",
+   "firstReportAt": "2026-10-27T16:12:42.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:1d6c5c59e46e52b9",
+    "title": "Hugging Face：LLM 能否可靠评判研究想法新颖性",
+    "summary": null,
+    "source": {
+     "name": "Hugging Face Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-27T16:12:42.000Z",
+    "selected": true,
+    "originalUrl": "https://huggingface.co/blog/allenai/novelty-bench"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:1d6c5c59e46e52b9",
+   "title": "Hugging Face：LLM 能否可靠评判研究想法新颖性",
+   "summary": null,
+   "source": {
+    "name": "Hugging Face Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-27T16:12:42.000Z",
+   "selected": true,
+   "originalUrl": "https://huggingface.co/blog/allenai/novelty-bench"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:1d6c5c59e46e52b9",
+   "title": "Hugging Face：LLM 能否可靠评判研究想法新颖性",
+   "summary": null,
+   "source": {
+    "name": "Hugging Face Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-27T16:12:42.000Z",
+   "selected": true,
+   "originalUrl": "https://huggingface.co/blog/allenai/novelty-bench"
+  }
+ ],
+ "heat": [],
+ "related": [],
+ "topics": [],
+ "primaryUrl": "https://huggingface.co/blog/allenai/novelty-bench"
+}

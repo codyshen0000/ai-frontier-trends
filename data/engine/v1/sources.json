@@ -15,6 +15,13 @@
    "homepage": "https://platform.claude.com"
   },
   {
+   "sourceId": "rss-google-deepmind",
+   "name": "Google DeepMind Blog",
+   "tier": "T1",
+   "kind": "editorial",
+   "homepage": "https://deepmind.google"
+  },
+  {
    "sourceId": "rss-google-research",
    "name": "Google Research Blog",
    "tier": "T1",
@@ -27,13 +34,6 @@
    "tier": "T1",
    "kind": "editorial",
    "homepage": "https://huggingface.co"
-  },
-  {
-   "sourceId": "rss-interconnects",
-   "name": "Interconnects (Nathan Lambert)",
-   "tier": "T2",
-   "kind": "editorial",
-   "homepage": "https://www.interconnects.ai"
   },
   {
    "sourceId": "rss-ithome",

@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 2,
   "observationComplete": true,
-  "rank": 4
+  "rank": 6
  },
  "developments": [
   {
@@ -159,9 +159,25 @@
    "hour": "2026-10-27T13:00:00.000Z",
    "heat": 13.1,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-27T14:00:00.000Z",
+   "heat": 12.7,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T15:00:00.000Z",
+   "heat": 12.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T16:00:00.000Z",
+   "heat": 12.0,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
- "primaryUrl": "https://www.baseten.co/blog/bdn-sealed-volumes-publish-once-mount-anywhere/"
+ "primaryUrl": "https://www.baseten.co/blog/bdn-sealed-volumes-publish-once-mount-anywhere/",
+ "rankDelta": -2
 }

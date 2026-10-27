@@ -14,8 +14,8 @@
  "latestReport": null,
  "whyHot": {
   "participants48h": 5,
-  "newParticipants6h": 2,
-  "recentReports24h": 9,
+  "newParticipants6h": 1,
+  "recentReports24h": 6,
   "observationComplete": true,
   "rank": 1
  },
@@ -270,10 +270,26 @@
    "hour": "2026-10-27T13:00:00.000Z",
    "heat": 35.5,
    "participants": 5
+  },
+  {
+   "hour": "2026-10-27T14:00:00.000Z",
+   "heat": 34.5,
+   "participants": 5
+  },
+  {
+   "hour": "2026-10-27T15:00:00.000Z",
+   "heat": 33.5,
+   "participants": 5
+  },
+  {
+   "hour": "2026-10-27T16:00:00.000Z",
+   "heat": 32.6,
+   "participants": 5
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "Anthropic 递交 S-1，披露收入与治理结构",
- "primaryUrl": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/"
+ "primaryUrl": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
+ "rankDelta": 0
 }

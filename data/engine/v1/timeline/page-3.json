@@ -6,6 +6,128 @@
  },
  "cards": [
   {
+   "key": "sha256:7decc1c5c0496d6c",
+   "anchorAt": "2026-10-21T17:58:42.000Z",
+   "item": {
+    "id": "sha256:7decc1c5c0496d6c",
+    "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
+    "summary": "Microduck×Isaac Lab 3.0 仿真到真机。",
+    "reason": "Microduck 经 Isaac Lab 仿真训练后部署到真机",
+    "source": {
+     "name": "Hugging Face Blog"
+    },
+    "publishedAt": "2026-10-21T17:58:42.000Z",
+    "timelineAt": "2026-10-21T17:58:42.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-22-nvidia-microduck-isaac-lab",
+    "originalUrl": "https://huggingface.co/blog/nvidia/microduck-isaac-lab-sim-to-real"
+   },
+   "group": {
+    "factId": "fact-2026-10-22-nvidia-microduck-isaac-lab",
+    "additionalSourceCount": 3,
+    "reportCount": 4,
+    "memberIds": [
+     "sha256:7decc1c5c0496d6c"
+    ]
+   }
+  },
+  {
+   "key": "sha256:40a01666d562060b",
+   "anchorAt": "2026-10-21T17:35:36.000Z",
+   "item": {
+    "id": "sha256:40a01666d562060b",
+    "title": "VocabX：专用词表称可把小模型推理成本砍约 77%",
+    "summary": "VocabX 特化词表降低小模型推理成本。",
+    "reason": "VocabX：专用词表可砍小模型推理成本约 77%",
+    "source": {
+     "name": "Hugging Face Blog"
+    },
+    "publishedAt": "2026-10-21T17:35:36.000Z",
+    "timelineAt": "2026-10-21T17:35:36.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-22-dharma-vocabx-slm",
+    "originalUrl": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:27c0a5d3fc255134",
+   "anchorAt": "2026-10-21T16:23:53.000Z",
+   "item": {
+    "id": "sha256:27c0a5d3fc255134",
+    "title": "谷歌：用 AI 辅助一线孕产超声，服务基层母婴筛查",
+    "summary": "Google Research 介绍 AI 辅助一线孕产超声。",
+    "reason": "谷歌：AI 辅助一线孕产超声筛查",
+    "source": {
+     "name": "Google Research Blog"
+    },
+    "publishedAt": "2026-10-21T16:23:53.000Z",
+    "timelineAt": "2026-10-21T16:23:53.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-22-google-ai-maternal-ultrasound",
+    "originalUrl": "https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:77ec6ad66af3dcc4",
+   "anchorAt": "2026-10-21T16:00:00.000Z",
+   "item": {
+    "id": "sha256:77ec6ad66af3dcc4",
+    "title": "微软研究院：宣布解决数学界 31 年难题 KLS 猜想",
+    "summary": "MSR 称解决 KLS 猜想，移除高维随机算法理论障碍。",
+    "reason": "微软研究院宣布解决 KLS 猜想（31 年）",
+    "source": {
+     "name": "Microsoft Research Blog"
+    },
+    "publishedAt": "2026-10-21T16:00:00.000Z",
+    "timelineAt": "2026-10-21T16:00:00.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-22-msr-kls-conjecture",
+    "originalUrl": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:c2ed162a157709f5",
+   "anchorAt": "2026-10-21T14:58:18.000Z",
+   "item": {
+    "id": "sha256:c2ed162a157709f5",
+    "title": "IBM Granite Speech 5.0：更快更准的转写、翻译与归因",
+    "summary": null,
+    "reason": "IBM Granite Speech 5.0：更快更准的转写翻译归因",
+    "source": {
+     "name": "Hugging Face Blog"
+    },
+    "publishedAt": "2026-10-21T14:58:18.000Z",
+    "timelineAt": "2026-10-21T14:58:18.000Z",
+    "category": "model",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-21-ibm-granite-speech-5",
+    "originalUrl": "https://huggingface.co/blog/ibm-granite/granite-speech-5"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:859a2ca12c0c52e9",
    "anchorAt": "2026-10-21T13:44:12.000Z",
    "item": {
@@ -384,72 +506,12 @@
     "originalUrl": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/"
    },
    "group": null
-  },
-  {
-   "key": "sha256:5c52b7d34becd1cc",
-   "anchorAt": "2026-10-19T00:00:00.000Z",
-   "item": {
-    "id": "sha256:5c52b7d34becd1cc",
-    "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
-    "summary": "Hugging Face 博客介绍 TorchNeuron，称在 AWS Trainium 上运行 HF 模型比以往更容易。",
-    "reason": "Trainium 上跑 HF 模型更省事",
-    "source": {
-     "name": "Hugging Face Blog"
-    },
-    "publishedAt": "2026-10-19T00:00:00.000Z",
-    "timelineAt": "2026-10-19T00:00:00.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-20-hf-torchneuron-trainium",
-    "originalUrl": "https://huggingface.co/blog/hf-torchneuron"
-   },
-   "group": {
-    "factId": "fact-2026-10-20-hf-torchneuron-trainium",
-    "additionalSourceCount": 1,
-    "reportCount": 5,
-    "memberIds": [
-     "sha256:5c52b7d34becd1cc"
-    ]
-   }
-  },
-  {
-   "key": "sha256:931ff0f85ef4bf70",
-   "anchorAt": "2026-10-17T10:33:28.000Z",
-   "item": {
-    "id": "sha256:931ff0f85ef4bf70",
-    "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
-    "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017：基准更好、完成任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API。The Decoder 与量子位均有报道。",
-    "reason": "开放权重新模型+搜索API，可直接用",
-    "source": {
-     "name": "The Decoder"
-    },
-    "publishedAt": "2026-10-17T10:33:28.000Z",
-    "timelineAt": "2026-10-17T10:33:28.000Z",
-    "category": "model",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-19-deepseek-v41-flash-1017",
-    "originalUrl": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/"
-   },
-   "group": {
-    "factId": "fact-2026-10-19-deepseek-v41-flash-1017",
-    "additionalSourceCount": 2,
-    "reportCount": 3,
-    "memberIds": [
-     "sha256:931ff0f85ef4bf70"
-    ]
-   }
   }
  ],
- "nextCursor": null,
+ "nextCursor": "timeline/page-4.json",
  "hot": null,
  "dayCounts": {},
  "page": 3,
- "pageCount": 3,
- "total": 57
+ "pageCount": 4,
+ "total": 62
 }

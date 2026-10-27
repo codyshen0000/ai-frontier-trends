@@ -1,0 +1,83 @@
+{
+ "publicId": "2026-10-27-opera-webai-local",
+ "title": "Opera 推出 WebAI：浏览器本地部署 AI",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-27T13:00:00.000Z",
+ "latestAt": "2026-10-27T13:00:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Opera 称推出 WebAI 预览，让网站与扩展在浏览器内调用本地推理（含开源权重），并称该提案获多家公司支持。一手见 Opera 博客；TechCrunch 跟进。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-27-opera-webai-local",
+   "title": "Opera 推出 WebAI：浏览器本地部署 AI",
+   "firstReportAt": "2026-10-27T13:00:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:257d2044442d252a",
+    "title": "Opera 推出 WebAI：浏览器本地部署 AI",
+    "summary": "TechCrunch 报道 Opera 提出 WebAI，让用户在浏览器本地部署 AI；一手见 Opera 博客。",
+    "source": {
+     "name": "TechCrunch · AI",
+     "firstParty": false
+    },
+    "publishedAt": "2026-10-27T13:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/"
+   }
+  }
+ ],
+ "officialReports": [],
+ "timeline": [
+  {
+   "id": "sha256:257d2044442d252a",
+   "title": "Opera 推出 WebAI：浏览器本地部署 AI",
+   "summary": "TechCrunch 报道 Opera 提出 WebAI，让用户在浏览器本地部署 AI；一手见 Opera 博客。",
+   "source": {
+    "name": "TechCrunch · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-27T13:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-27T13:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T14:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T15:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T16:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "Opera 提出 WebAI，浏览器内本地运行 AI 模型",
+ "primaryUrl": "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/"
+}

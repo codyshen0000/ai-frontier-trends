@@ -8,6 +8,61 @@
  },
  "items": [
   {
+   "guid": "sha256:1d6c5c59e46e52b9",
+   "title": "Hugging Face：LLM 能否可靠评判研究想法新颖性",
+   "summary": "",
+   "originalUrl": "https://huggingface.co/blog/allenai/novelty-bench",
+   "pubDate": "2026-10-27T16:12:42.000Z",
+   "sourceName": "Hugging Face Blog",
+   "category": "paper",
+   "categoryLabel": "论文",
+   "eventPublicId": "2026-10-28-hf-allenai-novelty-bench"
+  },
+  {
+   "guid": "sha256:e960e8891f7d7ad8",
+   "title": "DeepMind 发布 Genie 4：新一代世界仿真",
+   "summary": "DeepMind 宣布 Genie 4 世界模型，强调实时仿真真实感与原生多模态音画对话。",
+   "originalUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+   "pubDate": "2026-10-27T16:01:38.000Z",
+   "sourceName": "Google DeepMind Blog",
+   "category": "model",
+   "categoryLabel": "模型",
+   "eventPublicId": "2026-10-28-deepmind-genie-4"
+  },
+  {
+   "guid": "sha256:5ed14fffd1748be8",
+   "title": "NVIDIA：微调 Nemotron 以掌握本地规则而非仅本地语言",
+   "summary": "NVIDIA 介绍用法德人格数据集与行为契约微调 Nemotron 的后训练流程。",
+   "originalUrl": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/",
+   "pubDate": "2026-10-27T16:00:00.000Z",
+   "sourceName": "NVIDIA Technical Blog",
+   "category": "tutorial",
+   "categoryLabel": "教程",
+   "eventPublicId": "2026-10-28-nvidia-nemotron-local-rules"
+  },
+  {
+   "guid": "sha256:b836eb939c37ffa5",
+   "title": "NVIDIA：在 DGX Spark 上加速 MoE 推理的三种方法",
+   "summary": "NVIDIA 技术博客介绍 DGX Spark 上 MoE 推理的内核、量化与 speculative decoding 路径。",
+   "originalUrl": "https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark/",
+   "pubDate": "2026-10-27T15:00:00.000Z",
+   "sourceName": "NVIDIA Technical Blog",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-10-27-nvidia-moe-dgx-spark-inference"
+  },
+  {
+   "guid": "sha256:257d2044442d252a",
+   "title": "Opera 推出 WebAI：浏览器本地部署 AI",
+   "summary": "TechCrunch 报道 Opera 提出 WebAI，让用户在浏览器本地部署 AI；一手见 Opera 博客。",
+   "originalUrl": "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/",
+   "pubDate": "2026-10-27T13:00:00.000Z",
+   "sourceName": "TechCrunch · AI",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-10-27-opera-webai-local"
+  },
+  {
    "guid": "sha256:8d93b09012158ea0",
    "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
    "summary": "Cloudflare 官方披露并修复 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题。属官方安全通告。",
@@ -501,61 +556,6 @@
    "category": "paper",
    "categoryLabel": "论文",
    "eventPublicId": "2026-10-21-nvidia-rfd4-proteina"
-  },
-  {
-   "guid": "sha256:856c26ca4c2d04bc",
-   "title": "Mistral×NVIDIA：用加速计算推进工业工程与物理 AI 工作流",
-   "summary": "Mistral 官方称与 NVIDIA 合作打造工业工程 AI 原生工作流。",
-   "originalUrl": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/",
-   "pubDate": "2026-10-21T12:00:20.000Z",
-   "sourceName": "Mistral AI News",
-   "category": "product",
-   "categoryLabel": "产品",
-   "eventPublicId": "2026-10-21-mistral-nvidia-industrial-ai"
-  },
-  {
-   "guid": "sha256:95dedf578de78f3e",
-   "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
-   "summary": "OpenAI 宣布模型登陆 Google Cloud Model Garden。",
-   "originalUrl": "https://openai.com/index/openai-models-google-cloud",
-   "pubDate": "2026-10-21T12:00:00.000Z",
-   "sourceName": "OpenAI News",
-   "category": "product",
-   "categoryLabel": "产品",
-   "eventPublicId": "2026-10-21-openai-models-google-cloud"
-  },
-  {
-   "guid": "sha256:e270f5ba4688033d",
-   "title": "OpenAI：民主治理前沿 AI 之二——赋能网络防御者",
-   "summary": "OpenAI 治理系列：赋能网络防御与公共机构韧性。",
-   "originalUrl": "https://openai.com/index/empowering-cyber-defenders",
-   "pubDate": "2026-10-21T00:00:00.000Z",
-   "sourceName": "OpenAI News",
-   "category": "opinion",
-   "categoryLabel": "观点",
-   "eventPublicId": "2026-10-22-openai-gov-cyber-defenders"
-  },
-  {
-   "guid": "sha256:3e7599c6661c19f5",
-   "title": "vLLM 开源 Humming：面向量化推理的内核库",
-   "summary": "蚂蚁×vLLM 社区开源 Humming 量化推理内核，并给出 dense/MoE 与集成说明。",
-   "originalUrl": "https://vllm.ai/blog/2026-10-21-humming",
-   "pubDate": "2026-10-21T00:00:00.000Z",
-   "sourceName": "vLLM Blog",
-   "category": "product",
-   "categoryLabel": "产品",
-   "eventPublicId": "2026-10-22-vllm-humming-kernels"
-  },
-  {
-   "guid": "sha256:3b031f6c198ac941",
-   "title": "vLLM 宣布 Day-0 支持 Flint 编码模型",
-   "summary": "vLLM 称 Day-0 支持 Flint 双检查点，单卡单请求约 500 tok/s。",
-   "originalUrl": "https://vllm.ai/blog/2026-10-21-flint",
-   "pubDate": "2026-10-21T00:00:00.000Z",
-   "sourceName": "vLLM Blog",
-   "category": "product",
-   "categoryLabel": "产品",
-   "eventPublicId": "2026-10-22-recursive-flint-coding-model"
   }
  ]
 }
