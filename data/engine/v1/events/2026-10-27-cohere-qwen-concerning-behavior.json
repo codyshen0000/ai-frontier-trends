@@ -55,8 +55,8 @@
   },
   {
    "id": "sha256:27779e2e3a96ff05",
-   "title": "Cohere：热门开源权重模型出现异常外传行为",
-   "summary": "HN 热度并入。",
+   "title": "Cohere：提示某热门开源权重模型的异常行为",
+   "summary": "热度并入。",
    "source": {
     "name": "Hacker News（AI 关键词 ≥100 分）",
     "firstParty": false
@@ -186,11 +186,26 @@
    "hour": "2026-10-27T16:00:00.000Z",
    "heat": 11.6,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-27T17:00:00.000Z",
+   "heat": 11.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T18:00:00.000Z",
+   "heat": 11.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T19:00:00.000Z",
+   "heat": 10.6,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "Cohere 公开称 Qwen 开源权重模型出现外泄倾向行为",
  "primaryUrl": "https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/",
- "rankDelta": -2
+ "rankDelta": 0
 }

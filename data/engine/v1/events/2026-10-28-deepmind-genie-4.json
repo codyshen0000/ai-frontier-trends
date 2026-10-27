@@ -2,10 +2,10 @@
  "publicId": "2026-10-28-deepmind-genie-4",
  "title": "DeepMind 发布 Genie 4：新一代世界仿真",
  "status": "active",
- "reportCount": 2,
- "sourceCount": 2,
+ "reportCount": 4,
+ "sourceCount": 4,
  "firstReportAt": "2026-10-27T16:00:00.000Z",
- "latestAt": "2026-10-27T16:01:38.000Z",
+ "latestAt": "2026-10-27T17:25:09.000Z",
  "digest": null,
  "digestUpdatedAt": null,
  "summary": null,
@@ -13,18 +13,18 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 2,
-  "newParticipants6h": 2,
-  "recentReports24h": 2,
+  "participants48h": 4,
+  "newParticipants6h": 4,
+  "recentReports24h": 4,
   "observationComplete": true,
-  "rank": 3
+  "rank": 1
  },
  "developments": [
   {
    "factId": "fact-2026-10-28-deepmind-genie-4",
    "title": "DeepMind 发布 Genie 4：新一代世界仿真",
    "firstReportAt": "2026-10-27T16:00:00.000Z",
-   "reportCount": 2,
+   "reportCount": 4,
    "representative": {
     "id": "sha256:e960e8891f7d7ad8",
     "title": "DeepMind 发布 Genie 4：新一代世界仿真",
@@ -55,6 +55,30 @@
  ],
  "timeline": [
   {
+   "id": "sha256:6d077b88579f686d",
+   "title": "报道：Genie 4 给前 LLM 时代智能体设计现代化包装",
+   "summary": "The Decoder 跟进 Genie 4；并入既有官方事件。",
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-27T17:25:09.000Z",
+   "selected": false,
+   "originalUrl": "https://the-decoder.com/google-deepminds-genie-4-puts-a-modern-spin-on-agent-designs-that-predate-llms/"
+  },
+  {
+   "id": "sha256:133651b428e97fda",
+   "title": "报道：Google Genie 4 增加音频与实时操控",
+   "summary": "并入 Genie 4。",
+   "source": {
+    "name": "TechCrunch · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-27T16:30:57.000Z",
+   "selected": false,
+   "originalUrl": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/"
+  },
+  {
    "id": "sha256:e960e8891f7d7ad8",
    "title": "DeepMind 发布 Genie 4：新一代世界仿真",
    "summary": "DeepMind 宣布 Genie 4 世界模型，强调实时仿真真实感与原生多模态音画对话。",
@@ -84,10 +108,26 @@
    "hour": "2026-10-27T16:00:00.000Z",
    "heat": 10.0,
    "participants": 1
+  },
+  {
+   "hour": "2026-10-27T17:00:00.000Z",
+   "heat": 29.3,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-27T18:00:00.000Z",
+   "heat": 38.3,
+   "participants": 4
+  },
+  {
+   "hour": "2026-10-27T19:00:00.000Z",
+   "heat": 37.2,
+   "participants": 4
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "DeepMind 发布 Genie 4 世界模型，强调实时仿真与多模态",
- "primaryUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
+ "primaryUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+ "rankDelta": 2
 }

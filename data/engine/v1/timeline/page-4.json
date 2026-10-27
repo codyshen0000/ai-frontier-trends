@@ -6,6 +6,128 @@
  },
  "cards": [
   {
+   "key": "sha256:011eb73686ffbc98",
+   "anchorAt": "2026-10-20T20:03:10.000Z",
+   "item": {
+    "id": "sha256:011eb73686ffbc98",
+    "title": "Wiz：钓鱼到 LLMjacking，劫持云账单盗刷模型 API",
+    "summary": "搜索广告钓鱼后劫持云计费账户，未授权刷大模型 API 可产生巨额账单。",
+    "reason": "钓鱼劫持云账单盗刷 LLM API（LLMjacking）",
+    "source": {
+     "name": "Wiz Blog"
+    },
+    "publishedAt": "2026-10-20T20:03:10.000Z",
+    "timelineAt": "2026-10-20T20:03:10.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-22-wiz-llmjacking-cloud-billing",
+    "originalUrl": "https://www.wiz.io/blog/from-phishing-to-llmjacking"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:4c6292fc5ecba5f2",
+   "anchorAt": "2026-10-20T12:00:22.000Z",
+   "item": {
+    "id": "sha256:4c6292fc5ecba5f2",
+    "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
+    "summary": "Mistral 发布 Voxtral 3 语音智能体 SDK 与语音模型，转录 50+ 语言，TTS 35+ 语言，可欧盟托管或自部署。",
+    "reason": "Mistral 推出 Voxtral 3 语音智能体 SDK，支持 50+ 语言",
+    "source": {
+     "name": "Mistral AI News"
+    },
+    "publishedAt": "2026-10-20T12:00:22.000Z",
+    "timelineAt": "2026-10-20T12:00:22.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-21-mistral-voxtral-3",
+    "originalUrl": "https://mistral.ai/news/voxtral-3/"
+   },
+   "group": {
+    "factId": "fact-2026-10-21-mistral-voxtral-3",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:4c6292fc5ecba5f2"
+    ]
+   }
+  },
+  {
+   "key": "sha256:aa8847d44cbae332",
+   "anchorAt": "2026-10-20T07:00:00.000Z",
+   "item": {
+    "id": "sha256:aa8847d44cbae332",
+    "title": "OpenAI 客户故事：Terminal X 用 GPT-6.1 做投资判断评测",
+    "summary": null,
+    "reason": "Terminal X：GPT-6.1 投资判断一致率约 88.6%",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-20T07:00:00.000Z",
+    "timelineAt": "2026-10-20T07:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-21-openai-terminal-x-eval",
+    "originalUrl": "https://openai.com/index/terminal-x"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:10f7f763ebef7da0",
+   "anchorAt": "2026-10-19T17:36:26.000Z",
+   "item": {
+    "id": "sha256:10f7f763ebef7da0",
+    "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
+    "summary": "The Decoder 称 Kling AI 4.0 支持最长约 30 秒、最多 10 张关键帧、提示词理解扩展，并含立体声、多语口型同步与更轻 Flash 变体。",
+    "reason": "可灵 4.0 加长视频与口型同步",
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-19T17:36:26.000Z",
+    "timelineAt": "2026-10-19T17:36:26.000Z",
+    "category": "model",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-20-kling-ai-4-0",
+    "originalUrl": "https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:bfa70917f3b198d1",
+   "anchorAt": "2026-10-19T15:37:09.000Z",
+   "item": {
+    "id": "sha256:bfa70917f3b198d1",
+    "title": "英伟达发布面向企业与 PC 的开源智能体模型",
+    "summary": "TechCrunch 称英伟达新开源模型，面向企业自建开源模型与端侧本地运行智能体。",
+    "reason": "英伟达开源企业与 PC 端智能体模型",
+    "source": {
+     "name": "TechCrunch · AI"
+    },
+    "publishedAt": "2026-10-19T15:37:09.000Z",
+    "timelineAt": "2026-10-19T15:37:09.000Z",
+    "category": "model",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-19-nvidia-open-models-agents-pcs",
+    "originalUrl": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:5c52b7d34becd1cc",
    "anchorAt": "2026-10-19T00:00:00.000Z",
    "item": {
@@ -71,5 +193,5 @@
  "dayCounts": {},
  "page": 4,
  "pageCount": 4,
- "total": 62
+ "total": 67
 }

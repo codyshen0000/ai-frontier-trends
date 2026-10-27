@@ -2,31 +2,31 @@
  "site": "前沿趋势",
  "contract_version": "1.1",
  "mode": "production",
- "data_as_of": "2026-10-28T00:25:14+08:00",
- "data_as_of_label": "数据截至 2026-10-28 00:25（北京时间）",
- "generated_at": "2026-10-28T00:49:00+08:00",
+ "data_as_of": "2026-10-28T03:24:31+08:00",
+ "data_as_of_label": "数据截至 2026-10-28 03:24（北京时间）",
+ "generated_at": "2026-10-28T03:52:00+08:00",
  "hot_rule_version": "heat-v1-48h-halflife24h (前沿情报 heat48h.py 1.1)",
- "hot_computed_at": "2026-10-28T00:49:00+08:00",
+ "hot_computed_at": "2026-10-28T03:52:00+08:00",
  "window_hours": 48,
  "spark_points": 25,
  "page_size": 20,
  "counts": {
-  "cards": 62,
+  "cards": 67,
   "pages": 4,
-  "events": 62,
+  "events": 67,
   "hot_entries": 9,
-  "search_docs": 174,
+  "search_docs": 188,
   "feed_items": 50,
-  "passed_events": 62,
+  "passed_events": 67,
   "below_threshold_events": 0,
   "redirects": 0,
-  "hot_snapshots": 11,
+  "hot_snapshots": 12,
   "covers": 7
  },
  "last_round": {
-  "batch_id": "2026-10-28T0025",
+  "batch_id": "2026-10-28T0324",
   "status": "ok",
-  "finished_at": "2026-10-28T00:38:53+08:00"
+  "finished_at": "2026-10-28T03:47:28+08:00"
  },
  "batches": [
   {
@@ -720,6 +720,18 @@
   {
    "batch_id": "2026-10-28T0025",
    "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-28T0126",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-28T0220",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-28T0324",
+   "status": "ok"
   }
  ],
  "files": [
@@ -784,8 +796,13 @@
   "events/2026-10-27-openai-gpt61-terra.json",
   "events/2026-10-27-opera-webai-local.json",
   "events/2026-10-28-deepmind-genie-4.json",
+  "events/2026-10-28-frontier-labs-eth-refutation.json",
+  "events/2026-10-28-google-sleep-framework-continual.json",
   "events/2026-10-28-hf-allenai-novelty-bench.json",
+  "events/2026-10-28-liquidai-lfm3.json",
   "events/2026-10-28-nvidia-nemotron-local-rules.json",
+  "events/2026-10-28-nvidia-rtx-spark-games.json",
+  "events/2026-10-28-openai-oracle-apps-chatgpt.json",
   "events/index.json",
   "feed/selected.json",
   "hot-snapshots/2026-10-25T03.json",
@@ -799,6 +816,7 @@
   "hot-snapshots/2026-10-27T20.json",
   "hot-snapshots/2026-10-27T21.json",
   "hot-snapshots/2026-10-28T00.json",
+  "hot-snapshots/2026-10-28T03.json",
   "hot-strip.json",
   "hot.json",
   "meta.json",

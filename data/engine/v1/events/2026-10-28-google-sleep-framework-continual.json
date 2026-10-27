@@ -1,0 +1,86 @@
+{
+ "publicId": "2026-10-28-google-sleep-framework-continual",
+ "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-27T17:35:00.000Z",
+ "latestAt": "2026-10-27T17:35:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": null,
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-28-google-sleep-framework-continual",
+   "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
+   "firstReportAt": "2026-10-27T17:35:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:e97319d8730a2e80",
+    "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
+    "summary": "Google Research 提出 sleep 持续学习范式，交替活跃交互与离线巩固。",
+    "source": {
+     "name": "Google Research Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-27T17:35:00.000Z",
+    "selected": true,
+    "originalUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:e97319d8730a2e80",
+   "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
+   "summary": "Google Research 提出 sleep 持续学习范式，交替活跃交互与离线巩固。",
+   "source": {
+    "name": "Google Research Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-27T17:35:00.000Z",
+   "selected": true,
+   "originalUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:e97319d8730a2e80",
+   "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
+   "summary": "Google Research 提出 sleep 持续学习范式，交替活跃交互与离线巩固。",
+   "source": {
+    "name": "Google Research Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-27T17:35:00.000Z",
+   "selected": true,
+   "originalUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-27T18:00:00.000Z",
+   "heat": 9.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T19:00:00.000Z",
+   "heat": 9.6,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "Google Research：用 sleep 框架做持续学习防遗忘",
+ "primaryUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/"
+}

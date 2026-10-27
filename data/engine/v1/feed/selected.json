@@ -8,6 +8,50 @@
  },
  "items": [
   {
+   "guid": "sha256:e97319d8730a2e80",
+   "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
+   "summary": "Google Research 提出 sleep 持续学习范式，交替活跃交互与离线巩固。",
+   "originalUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+   "pubDate": "2026-10-27T17:35:00.000Z",
+   "sourceName": "Google Research Blog",
+   "category": "paper",
+   "categoryLabel": "论文",
+   "eventPublicId": "2026-10-28-google-sleep-framework-continual"
+  },
+  {
+   "guid": "sha256:1c5b51464767c2ad",
+   "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族",
+   "summary": "",
+   "originalUrl": "https://huggingface.co/blog/LiquidAI/lfm3",
+   "pubDate": "2026-10-27T17:16:52.000Z",
+   "sourceName": "Hugging Face Blog",
+   "category": "model",
+   "categoryLabel": "模型",
+   "eventPublicId": "2026-10-28-liquidai-lfm3"
+  },
+  {
+   "guid": "sha256:64295c3ae779f4ac",
+   "title": "OpenAI：公开「指数时间假设为假」预印本材料",
+   "summary": "",
+   "originalUrl": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/",
+   "pubDate": "2026-10-27T17:08:08.000Z",
+   "sourceName": "TechCrunch · AI",
+   "category": "paper",
+   "categoryLabel": "论文",
+   "eventPublicId": "2026-10-28-frontier-labs-eth-refutation"
+  },
+  {
+   "guid": "sha256:a9a41b70941237e4",
+   "title": "NVIDIA：RTX Spark 支撑神经渲染与游戏内 AI 角色",
+   "summary": "",
+   "originalUrl": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/",
+   "pubDate": "2026-10-27T17:00:00.000Z",
+   "sourceName": "NVIDIA Technical Blog",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-10-28-nvidia-rtx-spark-games"
+  },
+  {
    "guid": "sha256:1d6c5c59e46e52b9",
    "title": "Hugging Face：LLM 能否可靠评判研究想法新颖性",
    "summary": "",
@@ -61,6 +105,17 @@
    "category": "product",
    "categoryLabel": "产品",
    "eventPublicId": "2026-10-27-opera-webai-local"
+  },
+  {
+   "guid": "sha256:c417f8e3d39d0b89",
+   "title": "OpenAI：与 Oracle 扩大合作，把应用接入 ChatGPT",
+   "summary": "OpenAI 称与 Oracle 把企业应用与代理接入 ChatGPT，并推出多项 Oracle×OpenAI 产品。",
+   "originalUrl": "https://openai.com/index/oracle-apps-in-chatgpt",
+   "pubDate": "2026-10-27T07:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-10-28-openai-oracle-apps-chatgpt"
   },
   {
    "guid": "sha256:8d93b09012158ea0",
@@ -501,61 +556,6 @@
    "category": "model",
    "categoryLabel": "模型",
    "eventPublicId": "2026-10-21-ibm-granite-speech-5"
-  },
-  {
-   "guid": "sha256:859a2ca12c0c52e9",
-   "title": "Wiz：LiteLLM 1.107.0 被投毒，窃取云与 AI 凭证",
-   "summary": "恶意 LiteLLM 1.107.0 上架 PyPI/Docker，窃取浏览器云与 AI 密钥并含休眠 C2。",
-   "originalUrl": "https://www.wiz.io/blog/litellm-compromised-steals-credentials",
-   "pubDate": "2026-10-21T13:44:12.000Z",
-   "sourceName": "Wiz Blog",
-   "category": "industry",
-   "categoryLabel": "行业",
-   "eventPublicId": "2026-10-22-litellm-pypi-compromise"
-  },
-  {
-   "guid": "sha256:b1215e1aefc04c61",
-   "title": "OpenAI 详解 ChatGPT 广告栈，并扩至 26 国、广告主破十万",
-   "summary": "ChatGPT Ads 扩展到 26 国，广告主称逾 10 万。",
-   "originalUrl": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
-   "pubDate": "2026-10-21T13:00:00.000Z",
-   "sourceName": "OpenAI News",
-   "category": "product",
-   "categoryLabel": "产品",
-   "eventPublicId": "2026-10-21-chatgpt-ads-stack-expansion"
-  },
-  {
-   "guid": "sha256:5c32755a71da49ed",
-   "title": "NVIDIA Kumo Forecast：预训练时序表征 + 历史模式检索",
-   "summary": "",
-   "originalUrl": "https://huggingface.co/blog/nvidia/kumo-forecast",
-   "pubDate": "2026-10-21T12:51:24.000Z",
-   "sourceName": "Hugging Face Blog",
-   "category": "product",
-   "categoryLabel": "产品",
-   "eventPublicId": "2026-10-21-nvidia-kumo-forecast"
-  },
-  {
-   "guid": "sha256:d2895ceb6fcba3ff",
-   "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认",
-   "summary": "报道称 OpenAI 内部编码智能体关闭安全监控且否认。",
-   "originalUrl": "https://the-decoder.com/openai-cant-yet-explain-why-its-coding-agents-switch-off-misalignment-monitoring/",
-   "pubDate": "2026-10-21T12:34:57.000Z",
-   "sourceName": "The Decoder",
-   "category": "industry",
-   "categoryLabel": "行业",
-   "eventPublicId": "2026-10-21-openai-agent-monitoring-disabled"
-  },
-  {
-   "guid": "sha256:9dbc7ca917a7820d",
-   "title": "NVIDIA：RFD4-Proteina 用奖励引导推理时搜索设计蛋白",
-   "summary": "NVIDIA 介绍 RFD4-Proteina：推理时奖励引导搜索做蛋白设计。",
-   "originalUrl": "https://developer.nvidia.com/blog/design-proteins-with-rfd4-proteina-using-reward-guided-inference-time-search/",
-   "pubDate": "2026-10-21T12:30:00.000Z",
-   "sourceName": "NVIDIA Technical Blog",
-   "category": "paper",
-   "categoryLabel": "论文",
-   "eventPublicId": "2026-10-21-nvidia-rfd4-proteina"
   }
  ]
 }

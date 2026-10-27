@@ -1,0 +1,91 @@
+{
+ "publicId": "2026-10-28-nvidia-rtx-spark-games",
+ "title": "NVIDIA：RTX Spark 支撑神经渲染与游戏内 AI 角色",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-27T17:00:00.000Z",
+ "latestAt": "2026-10-27T17:00:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": null,
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-28-nvidia-rtx-spark-games",
+   "title": "NVIDIA：RTX Spark 支撑神经渲染与游戏内 AI 角色",
+   "firstReportAt": "2026-10-27T17:00:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:a9a41b70941237e4",
+    "title": "NVIDIA：RTX Spark 支撑神经渲染与游戏内 AI 角色",
+    "summary": null,
+    "source": {
+     "name": "NVIDIA Technical Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-27T17:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:a9a41b70941237e4",
+   "title": "NVIDIA：RTX Spark 支撑神经渲染与游戏内 AI 角色",
+   "summary": null,
+   "source": {
+    "name": "NVIDIA Technical Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-27T17:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:a9a41b70941237e4",
+   "title": "NVIDIA：RTX Spark 支撑神经渲染与游戏内 AI 角色",
+   "summary": null,
+   "source": {
+    "name": "NVIDIA Technical Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-27T17:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-27T17:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T18:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T19:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "NVIDIA 介绍 RTX Spark 上的神经渲染与本地 AI 角色",
+ "primaryUrl": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/"
+}

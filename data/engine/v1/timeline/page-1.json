@@ -6,6 +6,98 @@
  },
  "cards": [
   {
+   "key": "sha256:e97319d8730a2e80",
+   "anchorAt": "2026-10-27T17:35:00.000Z",
+   "item": {
+    "id": "sha256:e97319d8730a2e80",
+    "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
+    "summary": "Google Research 提出 sleep 持续学习范式，交替活跃交互与离线巩固。",
+    "reason": "Google Research：用 sleep 框架做持续学习防遗忘",
+    "source": {
+     "name": "Google Research Blog"
+    },
+    "publishedAt": "2026-10-27T17:35:00.000Z",
+    "timelineAt": "2026-10-27T17:35:00.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-28-google-sleep-framework-continual",
+    "originalUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:1c5b51464767c2ad",
+   "anchorAt": "2026-10-27T17:16:52.000Z",
+   "item": {
+    "id": "sha256:1c5b51464767c2ad",
+    "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族",
+    "summary": null,
+    "reason": "LiquidAI 发布 LFM3：约 2B 多模态同骨干开源族",
+    "source": {
+     "name": "Hugging Face Blog"
+    },
+    "publishedAt": "2026-10-27T17:16:52.000Z",
+    "timelineAt": "2026-10-27T17:16:52.000Z",
+    "category": "model",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-28-liquidai-lfm3",
+    "originalUrl": "https://huggingface.co/blog/LiquidAI/lfm3"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:64295c3ae779f4ac",
+   "anchorAt": "2026-10-27T17:08:08.000Z",
+   "item": {
+    "id": "sha256:64295c3ae779f4ac",
+    "title": "OpenAI：公开「指数时间假设为假」预印本材料",
+    "summary": null,
+    "reason": null,
+    "source": {
+     "name": "TechCrunch · AI"
+    },
+    "publishedAt": "2026-10-27T17:08:08.000Z",
+    "timelineAt": "2026-10-27T17:08:08.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-28-frontier-labs-eth-refutation",
+    "originalUrl": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:a9a41b70941237e4",
+   "anchorAt": "2026-10-27T17:00:00.000Z",
+   "item": {
+    "id": "sha256:a9a41b70941237e4",
+    "title": "NVIDIA：RTX Spark 支撑神经渲染与游戏内 AI 角色",
+    "summary": null,
+    "reason": "NVIDIA 介绍 RTX Spark 上的神经渲染与本地 AI 角色",
+    "source": {
+     "name": "NVIDIA Technical Blog"
+    },
+    "publishedAt": "2026-10-27T17:00:00.000Z",
+    "timelineAt": "2026-10-27T17:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-28-nvidia-rtx-spark-games",
+    "originalUrl": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:1d6c5c59e46e52b9",
    "anchorAt": "2026-10-27T16:12:42.000Z",
    "item": {
@@ -51,8 +143,8 @@
    },
    "group": {
     "factId": "fact-2026-10-28-deepmind-genie-4",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
+    "additionalSourceCount": 3,
+    "reportCount": 4,
     "memberIds": [
      "sha256:e960e8891f7d7ad8"
     ]
@@ -124,6 +216,29 @@
     "x": null,
     "storyPublicId": "2026-10-27-opera-webai-local",
     "originalUrl": "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:c417f8e3d39d0b89",
+   "anchorAt": "2026-10-27T07:00:00.000Z",
+   "item": {
+    "id": "sha256:c417f8e3d39d0b89",
+    "title": "OpenAI：与 Oracle 扩大合作，把应用接入 ChatGPT",
+    "summary": "OpenAI 称与 Oracle 把企业应用与代理接入 ChatGPT，并推出多项 Oracle×OpenAI 产品。",
+    "reason": "OpenAI 与 Oracle 把企业应用与代理接入 ChatGPT",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-27T07:00:00.000Z",
+    "timelineAt": "2026-10-27T07:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-28-openai-oracle-apps-chatgpt",
+    "originalUrl": "https://openai.com/index/oracle-apps-in-chatgpt"
    },
    "group": null
   },
@@ -302,7 +417,7 @@
    "group": {
     "factId": "fact-2026-10-27-anthropic-ipo-s1",
     "additionalSourceCount": 4,
-    "reportCount": 9,
+    "reportCount": 10,
     "memberIds": [
      "sha256:fcee7fe2ae9bec9b"
     ]
@@ -361,8 +476,8 @@
    },
    "group": {
     "factId": "fact-2026-10-27-openai-gpt61-terra",
-    "additionalSourceCount": 2,
-    "reportCount": 3,
+    "additionalSourceCount": 3,
+    "reportCount": 4,
     "memberIds": [
      "sha256:35e334c198740f74"
     ]
@@ -413,178 +528,55 @@
     "originalUrl": "https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone/"
    },
    "group": null
-  },
-  {
-   "key": "sha256:514019d7b6342099",
-   "anchorAt": "2026-10-25T06:55:22.000Z",
-   "item": {
-    "id": "sha256:514019d7b6342099",
-    "title": "OpenMobile-2：开源手机智能体称真机评测居开源前列",
-    "summary": null,
-    "reason": "开源手机智能体称真机评测居开源前列",
-    "source": {
-     "name": "The Decoder"
-    },
-    "publishedAt": "2026-10-25T06:55:22.000Z",
-    "timelineAt": "2026-10-25T06:55:22.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-25-openmobile-2-mobile-agents",
-    "originalUrl": "https://the-decoder.com/openmobile-2-proves-open-source-smartphone-agents-can-rival-proprietary-models/"
-   },
-   "group": {
-    "factId": "fact-2026-10-25-openmobile-2-mobile-agents",
-    "additionalSourceCount": 2,
-    "reportCount": 3,
-    "memberIds": [
-     "sha256:514019d7b6342099"
-    ]
-   }
-  },
-  {
-   "key": "sha256:8f9973956bdc5190",
-   "anchorAt": "2026-10-23T19:32:39.000Z",
-   "item": {
-    "id": "sha256:8f9973956bdc5190",
-    "title": "Block 发布 Dessa：纯语音训练的全双工对话模型",
-    "summary": "Block 官方介绍 Dessa：从零仅用人类对话语音训练的语音到语音全双工模型，可边听边说、本地跑在 MacBook Pro M4 Max 及以上；称将向少量安全研究者开放早期访问。",
-    "reason": "Block 发布纯语音训练全双工 Dessa",
-    "source": {
-     "name": "web-block-dessa"
-    },
-    "publishedAt": "2026-10-23T19:32:39.000Z",
-    "timelineAt": "2026-10-23T19:32:39.000Z",
-    "category": "model",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-24-block-dessa-speech",
-    "originalUrl": "https://block.xyz/dessa"
-   },
-   "group": {
-    "factId": "fact-2026-10-24-block-dessa-speech",
-    "additionalSourceCount": 3,
-    "reportCount": 4,
-    "memberIds": [
-     "sha256:8f9973956bdc5190"
-    ]
-   }
-  },
-  {
-   "key": "sha256:261b6564023ad66c",
-   "anchorAt": "2026-10-23T19:00:07.000Z",
-   "item": {
-    "id": "sha256:261b6564023ad66c",
-    "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
-    "summary": "Decoder 报道 Kimi K3.1 Pro；已核实 Artificial Analysis 评测帖并 hop。",
-    "reason": "Kimi K3.1 Pro 智能指数 55，暂列第四；拟开源权重",
-    "source": {
-     "name": "The Decoder"
-    },
-    "publishedAt": "2026-10-23T19:00:07.000Z",
-    "timelineAt": "2026-10-23T19:00:07.000Z",
-    "category": "model",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-24-kimi-k31-pro",
-    "originalUrl": "https://the-decoder.com/chinese-ai-model-kimi-k3-1-pro-is-closing-in-on-anthropics-claude-opus-5-5/"
-   },
-   "group": {
-    "factId": "fact-2026-10-24-kimi-k31-pro",
-    "additionalSourceCount": 3,
-    "reportCount": 5,
-    "memberIds": [
-     "sha256:261b6564023ad66c"
-    ]
-   }
-  },
-  {
-   "key": "sha256:30a34d758ba63be2",
-   "anchorAt": "2026-10-23T18:51:33.000Z",
-   "item": {
-    "id": "sha256:30a34d758ba63be2",
-    "title": "Google Research：把基础模型用于一线结核病筛查",
-    "summary": "Google Research：基础模型用于 TB 筛查一线；应用研究。",
-    "reason": "Google：基础模型用于一线结核病筛查",
-    "source": {
-     "name": "Google Research Blog"
-    },
-    "publishedAt": "2026-10-23T18:51:33.000Z",
-    "timelineAt": "2026-10-23T18:51:33.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-24-google-tb-screening",
-    "originalUrl": "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/"
-   },
-   "group": {
-    "factId": "fact-2026-10-24-google-tb-screening",
-    "additionalSourceCount": 2,
-    "reportCount": 3,
-    "memberIds": [
-     "sha256:30a34d758ba63be2"
-    ]
-   }
-  },
-  {
-   "key": "sha256:604f1f9c59689482",
-   "anchorAt": "2026-10-23T18:00:32.000Z",
-   "item": {
-    "id": "sha256:604f1f9c59689482",
-    "title": "METR/Redwood 驻场审计：OpenAI 内部智能体监控存在覆盖缺口",
-    "summary": "Decoder 报道 METR/Redwood 三周驻场审计；已核实 METR 公开摘要并 hop。",
-    "reason": "METR/Redwood 驻场审计：OpenAI 智能体监控有缺口",
-    "source": {
-     "name": "The Decoder"
-    },
-    "publishedAt": "2026-10-23T18:00:32.000Z",
-    "timelineAt": "2026-10-23T18:00:32.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-24-openai-metr-agent-monitoring",
-    "originalUrl": "https://the-decoder.com/three-week-on-site-audit-at-openai-reveals-major-gaps-in-ai-safety-monitoring/"
-   },
-   "group": {
-    "factId": "fact-2026-10-24-openai-metr-agent-monitoring",
-    "additionalSourceCount": 2,
-    "reportCount": 3,
-    "memberIds": [
-     "sha256:604f1f9c59689482"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-2.json",
  "hot": [
   {
    "rank": 1,
+   "title": "DeepMind 发布 Genie 4：新一代世界仿真",
+   "heat": 36.3,
+   "trend": "new",
+   "storyPublicId": "2026-10-28-deepmind-genie-4",
+   "itemId": "sha256:e960e8891f7d7ad8",
+   "participants": [
+    {
+     "name": "Google DeepMind Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 4
+  },
+  {
+   "rank": 2,
    "title": "Anthropic 正式递交公开上市申请",
-   "heat": 31.8,
+   "heat": 33.0,
    "trend": "flat",
    "storyPublicId": "2026-10-27-anthropic-ipo-s1",
    "itemId": "sha256:fcee7fe2ae9bec9b",
    "participants": [
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    },
     {
      "name": "The Decoder",
      "kind": "editorial"
     },
     {
      "name": "Latent Space",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Verge · AI",
      "kind": "editorial"
     },
     {
@@ -599,10 +591,37 @@
    "participantCount": 5
   },
   {
-   "rank": 2,
+   "rank": 3,
+   "title": "OpenAI 发布 GPT-6.1 Terra",
+   "heat": 20.7,
+   "trend": "down",
+   "storyPublicId": "2026-10-27-openai-gpt61-terra",
+   "itemId": "sha256:35e334c198740f74",
+   "participants": [
+    {
+     "name": "OpenAI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "量子位",
+     "kind": "editorial"
+    },
+    {
+     "name": "Simon Willison",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 4
+  },
+  {
+   "rank": 4,
    "title": "OpenAI：与学界共建科学理解",
-   "heat": 19.6,
-   "trend": "up",
+   "heat": 18.0,
+   "trend": "down",
    "storyPublicId": "2026-10-27-openai-academic-science-collab",
    "itemId": "sha256:8eb6001a836a6e50",
    "participants": [
@@ -622,51 +641,9 @@
    "participantCount": 3
   },
   {
-   "rank": 3,
-   "title": "DeepMind 发布 Genie 4：新一代世界仿真",
-   "heat": 19.5,
-   "trend": "new",
-   "storyPublicId": "2026-10-28-deepmind-genie-4",
-   "itemId": "sha256:e960e8891f7d7ad8",
-   "participants": [
-    {
-     "name": "Google DeepMind Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 2
-  },
-  {
-   "rank": 4,
-   "title": "OpenAI 发布 GPT-6.1 Terra",
-   "heat": 14.8,
-   "trend": "down",
-   "storyPublicId": "2026-10-27-openai-gpt61-terra",
-   "itemId": "sha256:35e334c198740f74",
-   "participants": [
-    {
-     "name": "OpenAI News",
-     "kind": "editorial"
-    },
-    {
-     "name": "Simon Willison",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 3
-  },
-  {
    "rank": 5,
    "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
-   "heat": 11.9,
+   "heat": 10.9,
    "trend": "down",
    "storyPublicId": "2026-10-27-cloudflare-glm53-kv-cache",
    "itemId": "sha256:8d93b09012158ea0",
@@ -684,8 +661,8 @@
   }
  ],
  "dayCounts": {
-  "2026-10-28": 3,
-  "2026-10-27": 6,
+  "2026-10-28": 7,
+  "2026-10-27": 7,
   "2026-10-26": 4,
   "2026-10-25": 3,
   "2026-10-24": 7,
@@ -698,5 +675,5 @@
  },
  "page": 1,
  "pageCount": 4,
- "total": 62
+ "total": 67
 }

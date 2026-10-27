@@ -1,0 +1,141 @@
+{
+ "publicId": "2026-10-28-openai-oracle-apps-chatgpt",
+ "title": "OpenAI：与 Oracle 扩大合作，把应用接入 ChatGPT",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-27T07:00:00.000Z",
+ "latestAt": "2026-10-27T07:00:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": null,
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-28-openai-oracle-apps-chatgpt",
+   "title": "OpenAI：与 Oracle 扩大合作，把应用接入 ChatGPT",
+   "firstReportAt": "2026-10-27T07:00:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:c417f8e3d39d0b89",
+    "title": "OpenAI：与 Oracle 扩大合作，把应用接入 ChatGPT",
+    "summary": "OpenAI 称与 Oracle 把企业应用与代理接入 ChatGPT，并推出多项 Oracle×OpenAI 产品。",
+    "source": {
+     "name": "OpenAI News",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-27T07:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://openai.com/index/oracle-apps-in-chatgpt"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:c417f8e3d39d0b89",
+   "title": "OpenAI：与 Oracle 扩大合作，把应用接入 ChatGPT",
+   "summary": "OpenAI 称与 Oracle 把企业应用与代理接入 ChatGPT，并推出多项 Oracle×OpenAI 产品。",
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-27T07:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/oracle-apps-in-chatgpt"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:c417f8e3d39d0b89",
+   "title": "OpenAI：与 Oracle 扩大合作，把应用接入 ChatGPT",
+   "summary": "OpenAI 称与 Oracle 把企业应用与代理接入 ChatGPT，并推出多项 Oracle×OpenAI 产品。",
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-27T07:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/oracle-apps-in-chatgpt"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-27T07:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T08:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T09:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T10:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T11:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T12:00:00.000Z",
+   "heat": 8.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T13:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T14:00:00.000Z",
+   "heat": 8.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T15:00:00.000Z",
+   "heat": 7.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T16:00:00.000Z",
+   "heat": 7.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T17:00:00.000Z",
+   "heat": 7.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T18:00:00.000Z",
+   "heat": 7.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T19:00:00.000Z",
+   "heat": 7.1,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "OpenAI 与 Oracle 把企业应用与代理接入 ChatGPT",
+ "primaryUrl": "https://openai.com/index/oracle-apps-in-chatgpt"
+}

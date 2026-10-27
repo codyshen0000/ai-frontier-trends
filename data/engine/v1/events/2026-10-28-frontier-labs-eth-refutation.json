@@ -1,0 +1,72 @@
+{
+ "publicId": "2026-10-28-frontier-labs-eth-refutation",
+ "title": "OpenAI：公开「指数时间假设为假」预印本材料",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-27T17:08:08.000Z",
+ "latestAt": "2026-10-27T17:08:08.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": null,
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-28-frontier-labs-eth-refutation",
+   "title": "OpenAI：公开「指数时间假设为假」预印本材料",
+   "firstReportAt": "2026-10-27T17:08:08.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:64295c3ae779f4ac",
+    "title": "报道：前沿实验室称模型挑战指数时间假设",
+    "summary": null,
+    "source": {
+     "name": "TechCrunch · AI",
+     "firstParty": false
+    },
+    "publishedAt": "2026-10-27T17:08:08.000Z",
+    "selected": true,
+    "originalUrl": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/"
+   }
+  }
+ ],
+ "officialReports": [],
+ "timeline": [
+  {
+   "id": "sha256:64295c3ae779f4ac",
+   "title": "报道：前沿实验室称模型挑战指数时间假设",
+   "summary": null,
+   "source": {
+    "name": "TechCrunch · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-27T17:08:08.000Z",
+   "selected": true,
+   "originalUrl": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-27T18:00:00.000Z",
+   "heat": 9.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T19:00:00.000Z",
+   "heat": 9.5,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "primaryUrl": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/"
+}

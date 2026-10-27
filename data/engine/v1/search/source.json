@@ -1,6 +1,163 @@
 {
- "generatedAt": "2026-10-27T16:49:00.000Z",
+ "generatedAt": "2026-10-27T19:52:00.000Z",
  "docs": [
+  {
+   "id": "sha256:e97319d8730a2e80",
+   "kind": "item",
+   "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
+   "summary": "Google Research 提出 sleep 持续学习范式，交替活跃交互与离线巩固。",
+   "publishedAt": "2026-10-27T17:35:00.000Z",
+   "sourceName": "Google Research Blog",
+   "category": "paper",
+   "selected": true,
+   "eventPublicId": "2026-10-28-google-sleep-framework-continual",
+   "originalUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/"
+  },
+  {
+   "id": "2026-10-28-google-sleep-framework-continual",
+   "kind": "event",
+   "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
+   "summary": null,
+   "publishedAt": "2026-10-27T17:35:00.000Z",
+   "sourceNames": [
+    "Google Research Blog"
+   ],
+   "path": "/events/2026-10-28-google-sleep-framework-continual/"
+  },
+  {
+   "id": "sha256:6d077b88579f686d",
+   "kind": "item",
+   "title": "报道：Genie 4 给前 LLM 时代智能体设计现代化包装",
+   "summary": "The Decoder 跟进 Genie 4；并入既有官方事件。",
+   "publishedAt": "2026-10-27T17:25:09.000Z",
+   "sourceName": "The Decoder",
+   "category": "model",
+   "selected": false,
+   "eventPublicId": "2026-10-28-deepmind-genie-4",
+   "originalUrl": "https://the-decoder.com/google-deepminds-genie-4-puts-a-modern-spin-on-agent-designs-that-predate-llms/"
+  },
+  {
+   "id": "2026-10-28-deepmind-genie-4",
+   "kind": "event",
+   "title": "DeepMind 发布 Genie 4：新一代世界仿真",
+   "summary": null,
+   "publishedAt": "2026-10-27T17:25:09.000Z",
+   "sourceNames": [
+    "Google DeepMind Blog",
+    "TechCrunch · AI",
+    "The Decoder",
+    "The Verge · AI"
+   ],
+   "path": "/events/2026-10-28-deepmind-genie-4/"
+  },
+  {
+   "id": "sha256:1c5b51464767c2ad",
+   "kind": "item",
+   "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族",
+   "summary": null,
+   "publishedAt": "2026-10-27T17:16:52.000Z",
+   "sourceName": "Hugging Face Blog",
+   "category": "model",
+   "selected": true,
+   "eventPublicId": "2026-10-28-liquidai-lfm3",
+   "originalUrl": "https://huggingface.co/blog/LiquidAI/lfm3"
+  },
+  {
+   "id": "2026-10-28-liquidai-lfm3",
+   "kind": "event",
+   "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族",
+   "summary": null,
+   "publishedAt": "2026-10-27T17:16:52.000Z",
+   "sourceNames": [
+    "Hugging Face Blog"
+   ],
+   "path": "/events/2026-10-28-liquidai-lfm3/"
+  },
+  {
+   "id": "sha256:64295c3ae779f4ac",
+   "kind": "item",
+   "title": "报道：前沿实验室称模型挑战指数时间假设",
+   "summary": null,
+   "publishedAt": "2026-10-27T17:08:08.000Z",
+   "sourceName": "TechCrunch · AI",
+   "category": "paper",
+   "selected": true,
+   "eventPublicId": "2026-10-28-frontier-labs-eth-refutation",
+   "originalUrl": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/"
+  },
+  {
+   "id": "2026-10-28-frontier-labs-eth-refutation",
+   "kind": "event",
+   "title": "OpenAI：公开「指数时间假设为假」预印本材料",
+   "summary": null,
+   "publishedAt": "2026-10-27T17:08:08.000Z",
+   "sourceNames": [
+    "TechCrunch · AI"
+   ],
+   "path": "/events/2026-10-28-frontier-labs-eth-refutation/"
+  },
+  {
+   "id": "sha256:a9a41b70941237e4",
+   "kind": "item",
+   "title": "NVIDIA：RTX Spark 支撑神经渲染与游戏内 AI 角色",
+   "summary": null,
+   "publishedAt": "2026-10-27T17:00:00.000Z",
+   "sourceName": "NVIDIA Technical Blog",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-10-28-nvidia-rtx-spark-games",
+   "originalUrl": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/"
+  },
+  {
+   "id": "2026-10-28-nvidia-rtx-spark-games",
+   "kind": "event",
+   "title": "NVIDIA：RTX Spark 支撑神经渲染与游戏内 AI 角色",
+   "summary": null,
+   "publishedAt": "2026-10-27T17:00:00.000Z",
+   "sourceNames": [
+    "NVIDIA Technical Blog"
+   ],
+   "path": "/events/2026-10-28-nvidia-rtx-spark-games/"
+  },
+  {
+   "id": "sha256:bb9f02a56d8cd14e",
+   "kind": "item",
+   "title": "报道：Anthropic 试图在 IPO 与安全使命间两全",
+   "summary": "The Verge 分析 Anthropic IPO 融资与安全叙事张力。",
+   "publishedAt": "2026-10-27T16:51:22.000Z",
+   "sourceName": "The Verge · AI",
+   "category": "industry",
+   "selected": false,
+   "eventPublicId": "2026-10-27-anthropic-ipo-s1",
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety"
+  },
+  {
+   "id": "2026-10-27-anthropic-ipo-s1",
+   "kind": "event",
+   "title": "Anthropic 正式递交公开上市申请",
+   "summary": "Anthropic 向 SEC 递交 S-1，披露收入增长、客户结构、长期算力义务与特殊治理安排，并在附信中重申 Claude 不投放广告。一手文件见 SEC EDGAR；媒体数字转述以招股书为准。",
+   "publishedAt": "2026-10-27T16:51:22.000Z",
+   "sourceNames": [
+    "Latent Space",
+    "TechCrunch · AI",
+    "The Decoder",
+    "The Verge · AI",
+    "量子位"
+   ],
+   "path": "/events/2026-10-27-anthropic-ipo-s1/"
+  },
+  {
+   "id": "sha256:133651b428e97fda",
+   "kind": "item",
+   "title": "报道：Google Genie 4 增加音频与实时操控",
+   "summary": "并入 Genie 4。",
+   "publishedAt": "2026-10-27T16:30:57.000Z",
+   "sourceName": "TechCrunch · AI",
+   "category": "model",
+   "selected": false,
+   "eventPublicId": "2026-10-28-deepmind-genie-4",
+   "originalUrl": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/"
+  },
   {
    "id": "2026-10-28-hf-allenai-novelty-bench",
    "kind": "event",
@@ -23,18 +180,6 @@
    "selected": true,
    "eventPublicId": "2026-10-28-deepmind-genie-4",
    "originalUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
-  },
-  {
-   "id": "2026-10-28-deepmind-genie-4",
-   "kind": "event",
-   "title": "DeepMind 发布 Genie 4：新一代世界仿真",
-   "summary": null,
-   "publishedAt": "2026-10-27T16:01:38.000Z",
-   "sourceNames": [
-    "Google DeepMind Blog",
-    "The Verge · AI"
-   ],
-   "path": "/events/2026-10-28-deepmind-genie-4/"
   },
   {
    "id": "sha256:8fc62bcb0cb10104",
@@ -155,19 +300,30 @@
    "originalUrl": "https://the-decoder.com/anthropic-uses-its-ipo-letter-to-renew-its-pledge-that-claude-will-never-show-ads/"
   },
   {
-   "id": "2026-10-27-anthropic-ipo-s1",
+   "id": "sha256:55eebcae912c07d4",
+   "kind": "item",
+   "title": "报道：GPT-6.1 Terra 首批网友实测",
+   "summary": "社区实测并入既有 Terra 事件。",
+   "publishedAt": "2026-10-27T08:27:46.000Z",
+   "sourceName": "量子位",
+   "category": "model",
+   "selected": false,
+   "eventPublicId": "2026-10-27-openai-gpt61-terra",
+   "originalUrl": "https://www.qbitai.com/2026/10/505719.html"
+  },
+  {
+   "id": "2026-10-27-openai-gpt61-terra",
    "kind": "event",
-   "title": "Anthropic 正式递交公开上市申请",
-   "summary": "Anthropic 向 SEC 递交 S-1，披露收入增长、客户结构、长期算力义务与特殊治理安排，并在附信中重申 Claude 不投放广告。一手文件见 SEC EDGAR；媒体数字转述以招股书为准。",
-   "publishedAt": "2026-10-27T11:20:51.000Z",
+   "title": "OpenAI 发布 GPT-6.1 Terra",
+   "summary": "OpenAI 发布 GPT-6.1 Terra，称带来更快、更强的计算机使用能力，并显著下调 API 价格、在多项日常与控制任务上逼近更大模型。属官方产品发布；具体价目与评测以原文为准。",
+   "publishedAt": "2026-10-27T08:27:46.000Z",
    "sourceNames": [
-    "Latent Space",
-    "TechCrunch · AI",
+    "OpenAI News",
+    "Simon Willison",
     "The Decoder",
-    "The Verge · AI",
     "量子位"
    ],
-   "path": "/events/2026-10-27-anthropic-ipo-s1/"
+   "path": "/events/2026-10-27-openai-gpt61-terra/"
   },
   {
    "id": "sha256:ca85c0384dbbb0fd",
@@ -180,6 +336,29 @@
    "selected": false,
    "eventPublicId": "2026-10-27-anthropic-ipo-s1",
    "originalUrl": "https://latent.space/p/ainews-anthropic-s1/"
+  },
+  {
+   "id": "sha256:c417f8e3d39d0b89",
+   "kind": "item",
+   "title": "OpenAI：与 Oracle 扩大合作，把应用接入 ChatGPT",
+   "summary": "OpenAI 称与 Oracle 把企业应用与代理接入 ChatGPT，并推出多项 Oracle×OpenAI 产品。",
+   "publishedAt": "2026-10-27T07:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-10-28-openai-oracle-apps-chatgpt",
+   "originalUrl": "https://openai.com/index/oracle-apps-in-chatgpt"
+  },
+  {
+   "id": "2026-10-28-openai-oracle-apps-chatgpt",
+   "kind": "event",
+   "title": "OpenAI：与 Oracle 扩大合作，把应用接入 ChatGPT",
+   "summary": null,
+   "publishedAt": "2026-10-27T07:00:00.000Z",
+   "sourceNames": [
+    "OpenAI News"
+   ],
+   "path": "/events/2026-10-28-openai-oracle-apps-chatgpt/"
   },
   {
    "id": "sha256:6e162aff655bfd4c",
@@ -216,19 +395,6 @@
    "selected": false,
    "eventPublicId": "2026-10-27-openai-gpt61-terra",
    "originalUrl": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/"
-  },
-  {
-   "id": "2026-10-27-openai-gpt61-terra",
-   "kind": "event",
-   "title": "OpenAI 发布 GPT-6.1 Terra",
-   "summary": "OpenAI 发布 GPT-6.1 Terra，称带来更快、更强的计算机使用能力，并显著下调 API 价格、在多项日常与控制任务上逼近更大模型。属官方产品发布；具体价目与评测以原文为准。",
-   "publishedAt": "2026-10-26T23:53:07.000Z",
-   "sourceNames": [
-    "OpenAI News",
-    "Simon Willison",
-    "The Decoder"
-   ],
-   "path": "/events/2026-10-27-openai-gpt61-terra/"
   },
   {
    "id": "sha256:b555ce2afa55383d",
@@ -281,7 +447,7 @@
   {
    "id": "sha256:89893d5f73c77515",
    "kind": "item",
-   "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
+   "title": "Cloudflare：修复 Workers AI GLM-5.3 跨请求 KV 缓存暴露",
    "summary": "HN 热度并入。",
    "publishedAt": "2026-10-26T22:41:48.000Z",
    "sourceName": "Hacker News（AI 关键词 ≥100 分）",
@@ -377,8 +543,8 @@
   {
    "id": "sha256:27779e2e3a96ff05",
    "kind": "item",
-   "title": "Cohere：热门开源权重模型出现异常外传行为",
-   "summary": "HN 热度并入。",
+   "title": "Cohere：提示某热门开源权重模型的异常行为",
+   "summary": "热度并入。",
    "publishedAt": "2026-10-26T16:35:44.000Z",
    "sourceName": "Hacker News（AI 关键词 ≥100 分）",
    "category": "paper",
