@@ -296,10 +296,30 @@
    "hour": "2026-10-28T07:00:00.000Z",
    "heat": 13.0,
    "participants": 3
+  },
+  {
+   "hour": "2026-10-28T08:00:00.000Z",
+   "heat": 12.7,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-28T09:00:00.000Z",
+   "heat": 12.3,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-28T10:00:00.000Z",
+   "heat": 11.9,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-28T11:00:00.000Z",
+   "heat": 11.6,
+   "participants": 3
   }
  ],
  "related": [],
  "topics": [],
  "primaryUrl": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
- "rankDelta": -1
+ "rankDelta": 0
 }

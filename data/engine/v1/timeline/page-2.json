@@ -6,6 +6,36 @@
  },
  "cards": [
   {
+   "key": "sha256:8eb6001a836a6e50",
+   "anchorAt": "2026-10-26T14:30:00.000Z",
+   "item": {
+    "id": "sha256:8eb6001a836a6e50",
+    "title": "OpenAI：与学界共建科学理解",
+    "summary": "OpenAI 称与学术社区合作推进科学理解，并宣布多项科学相关进展。属官方通稿。",
+    "reason": null,
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-26T14:30:00.000Z",
+    "timelineAt": "2026-10-26T14:30:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-27-openai-academic-science-collab",
+    "originalUrl": "https://openai.com/index/building-scientific-understanding-with-academic-communities"
+   },
+   "group": {
+    "factId": "fact-2026-10-27-openai-academic-science-collab",
+    "additionalSourceCount": 2,
+    "reportCount": 3,
+    "memberIds": [
+     "sha256:8eb6001a836a6e50"
+    ]
+   }
+  },
+  {
    "key": "sha256:35e334c198740f74",
    "anchorAt": "2026-10-26T00:00:00.000Z",
    "item": {
@@ -526,36 +556,6 @@
      "sha256:891b7e0bbf66f86d"
     ]
    }
-  },
-  {
-   "key": "sha256:5ddee939d5fa55a3",
-   "anchorAt": "2026-10-22T18:00:00.000Z",
-   "item": {
-    "id": "sha256:5ddee939d5fa55a3",
-    "title": "微软：发布诊断编排器，复杂病例准确率称超医生",
-    "summary": "Verge：Suleyman 称诊断工具准确率高于医生；对标 Science/微软稿。",
-    "reason": "微软 MAI-DxO：复杂病例诊断准确率称超医生",
-    "source": {
-     "name": "The Verge · AI"
-    },
-    "publishedAt": "2026-10-22T18:00:00.000Z",
-    "timelineAt": "2026-10-22T18:00:00.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-23-microsoft-mai-dxo",
-    "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence"
-   },
-   "group": {
-    "factId": "fact-2026-10-23-microsoft-mai-dxo",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:5ddee939d5fa55a3"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-3.json",
@@ -563,5 +563,5 @@
  "dayCounts": {},
  "page": 2,
  "pageCount": 4,
- "total": 70
+ "total": 71
 }

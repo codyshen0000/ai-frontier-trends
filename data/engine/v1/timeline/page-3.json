@@ -6,6 +6,36 @@
  },
  "cards": [
   {
+   "key": "sha256:5ddee939d5fa55a3",
+   "anchorAt": "2026-10-22T18:00:00.000Z",
+   "item": {
+    "id": "sha256:5ddee939d5fa55a3",
+    "title": "微软：发布诊断编排器，复杂病例准确率称超医生",
+    "summary": "Verge：Suleyman 称诊断工具准确率高于医生；对标 Science/微软稿。",
+    "reason": "微软 MAI-DxO：复杂病例诊断准确率称超医生",
+    "source": {
+     "name": "The Verge · AI"
+    },
+    "publishedAt": "2026-10-22T18:00:00.000Z",
+    "timelineAt": "2026-10-22T18:00:00.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-23-microsoft-mai-dxo",
+    "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence"
+   },
+   "group": {
+    "factId": "fact-2026-10-23-microsoft-mai-dxo",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:5ddee939d5fa55a3"
+    ]
+   }
+  },
+  {
    "key": "sha256:7ea705cfe9f05665",
    "anchorAt": "2026-10-22T17:50:09.000Z",
    "item": {
@@ -483,36 +513,6 @@
      "sha256:856c26ca4c2d04bc"
     ]
    }
-  },
-  {
-   "key": "sha256:95dedf578de78f3e",
-   "anchorAt": "2026-10-21T12:00:00.000Z",
-   "item": {
-    "id": "sha256:95dedf578de78f3e",
-    "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
-    "summary": "OpenAI 宣布模型登陆 Google Cloud Model Garden。",
-    "reason": "OpenAI 前沿模型入驻谷歌云 Model Garden",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-21T12:00:00.000Z",
-    "timelineAt": "2026-10-21T12:00:00.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-21-openai-models-google-cloud",
-    "originalUrl": "https://openai.com/index/openai-models-google-cloud"
-   },
-   "group": {
-    "factId": "fact-2026-10-21-openai-models-google-cloud",
-    "additionalSourceCount": 2,
-    "reportCount": 3,
-    "memberIds": [
-     "sha256:95dedf578de78f3e"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-4.json",
@@ -520,5 +520,5 @@
  "dayCounts": {},
  "page": 3,
  "pageCount": 4,
- "total": 70
+ "total": 71
 }

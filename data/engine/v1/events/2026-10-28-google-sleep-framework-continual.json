@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 2,
   "observationComplete": true,
-  "rank": 3
+  "rank": 4
  },
  "developments": [
   {
@@ -149,11 +149,31 @@
    "hour": "2026-10-28T07:00:00.000Z",
    "heat": 15.0,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-28T08:00:00.000Z",
+   "heat": 14.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T09:00:00.000Z",
+   "heat": 14.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T10:00:00.000Z",
+   "heat": 13.7,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T11:00:00.000Z",
+   "heat": 13.3,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "Google Research：用 sleep 框架做持续学习防遗忘",
  "primaryUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
- "rankDelta": 1
+ "rankDelta": -1
 }

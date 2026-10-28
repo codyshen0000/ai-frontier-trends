@@ -57,7 +57,7 @@
   {
    "id": "sha256:89893d5f73c77515",
    "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
-   "summary": "热度并入既有事件。",
+   "summary": "热度并入；无新一手。",
    "source": {
     "name": "Hacker News（AI 关键词 ≥100 分）",
     "firstParty": false
@@ -243,6 +243,26 @@
   {
    "hour": "2026-10-28T07:00:00.000Z",
    "heat": 7.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T08:00:00.000Z",
+   "heat": 7.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T09:00:00.000Z",
+   "heat": 7.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T10:00:00.000Z",
+   "heat": 7.2,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T11:00:00.000Z",
+   "heat": 7.0,
    "participants": 2
   }
  ],

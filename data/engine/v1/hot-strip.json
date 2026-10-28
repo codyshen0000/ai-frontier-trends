@@ -2,7 +2,7 @@
  {
   "rank": 1,
   "title": "DeepMind 发布 Genie 4：新一代世界仿真",
-  "heat": 33.4,
+  "heat": 29.7,
   "trend": "down",
   "storyPublicId": "2026-10-28-deepmind-genie-4",
   "itemId": "sha256:e960e8891f7d7ad8",
@@ -33,7 +33,7 @@
  {
   "rank": 2,
   "title": "Anthropic 正式递交公开上市申请",
-  "heat": 28.3,
+  "heat": 25.3,
   "trend": "down",
   "storyPublicId": "2026-10-27-anthropic-ipo-s1",
   "itemId": "sha256:8128c7853b28b767",
@@ -63,27 +63,8 @@
  },
  {
   "rank": 3,
-  "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
-  "heat": 14.6,
-  "trend": "down",
-  "storyPublicId": "2026-10-28-google-sleep-framework-continual",
-  "itemId": "sha256:e97319d8730a2e80",
-  "participants": [
-   {
-    "name": "Google Research Blog",
-    "kind": "editorial"
-   },
-   {
-    "name": "CTOL Digital Solutions",
-    "kind": "editorial"
-   }
-  ],
-  "participantCount": 2
- },
- {
-  "rank": 4,
   "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
-  "heat": 14.6,
+  "heat": 13.1,
   "trend": "down",
   "storyPublicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
   "itemId": "sha256:449070727cbfb984",
@@ -100,9 +81,28 @@
   "participantCount": 2
  },
  {
+  "rank": 4,
+  "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
+  "heat": 13.0,
+  "trend": "down",
+  "storyPublicId": "2026-10-28-google-sleep-framework-continual",
+  "itemId": "sha256:e97319d8730a2e80",
+  "participants": [
+   {
+    "name": "Google Research Blog",
+    "kind": "editorial"
+   },
+   {
+    "name": "CTOL Digital Solutions",
+    "kind": "editorial"
+   }
+  ],
+  "participantCount": 2
+ },
+ {
   "rank": 5,
   "title": "Cohere：热门开源权重模型出现异常外传行为",
-  "heat": 14.4,
+  "heat": 12.8,
   "trend": "down",
   "storyPublicId": "2026-10-27-cohere-qwen-concerning-behavior",
   "itemId": "sha256:6e162aff655bfd4c",

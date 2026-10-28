@@ -8,6 +8,17 @@
  },
  "items": [
   {
+   "guid": "sha256:5b6b315fe4450662",
+   "title": "报道：Cathedral 用 AI 智能体打入 Anthropic 业务系统",
+   "summary": "",
+   "originalUrl": "https://the-decoder.com/ai-agents-hacked-anthropic-maker-of-arguably-the-most-capable-ai-models-for-cyberdefense/",
+   "pubDate": "2026-10-28T10:56:24.000Z",
+   "sourceName": "The Decoder",
+   "category": "industry",
+   "categoryLabel": "行业",
+   "eventPublicId": "2026-10-28-cathedral-anthropic-agent-breach"
+  },
+  {
    "guid": "sha256:449070727cbfb984",
    "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
    "summary": "",
@@ -545,17 +556,6 @@
    "category": "product",
    "categoryLabel": "产品",
    "eventPublicId": "2026-10-22-nvidia-microduck-isaac-lab"
-  },
-  {
-   "guid": "sha256:40a01666d562060b",
-   "title": "VocabX：专用词表称可把小模型推理成本砍约 77%",
-   "summary": "VocabX 特化词表降低小模型推理成本。",
-   "originalUrl": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
-   "pubDate": "2026-10-21T17:35:36.000Z",
-   "sourceName": "Hugging Face Blog",
-   "category": "paper",
-   "categoryLabel": "论文",
-   "eventPublicId": "2026-10-22-dharma-vocabx-slm"
   }
  ]
 }

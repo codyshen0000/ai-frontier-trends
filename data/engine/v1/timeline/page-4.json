@@ -6,6 +6,36 @@
  },
  "cards": [
   {
+   "key": "sha256:95dedf578de78f3e",
+   "anchorAt": "2026-10-21T12:00:00.000Z",
+   "item": {
+    "id": "sha256:95dedf578de78f3e",
+    "title": "OpenAI 前沿模型入驻谷歌云：Model Garden 可调 Codex 等工作流",
+    "summary": "OpenAI 宣布模型登陆 Google Cloud Model Garden。",
+    "reason": "OpenAI 前沿模型入驻谷歌云 Model Garden",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-21T12:00:00.000Z",
+    "timelineAt": "2026-10-21T12:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-21-openai-models-google-cloud",
+    "originalUrl": "https://openai.com/index/openai-models-google-cloud"
+   },
+   "group": {
+    "factId": "fact-2026-10-21-openai-models-google-cloud",
+    "additionalSourceCount": 2,
+    "reportCount": 3,
+    "memberIds": [
+     "sha256:95dedf578de78f3e"
+    ]
+   }
+  },
+  {
    "key": "sha256:e270f5ba4688033d",
    "anchorAt": "2026-10-21T00:00:00.000Z",
    "item": {
@@ -269,5 +299,5 @@
  "dayCounts": {},
  "page": 4,
  "pageCount": 4,
- "total": 70
+ "total": 71
 }

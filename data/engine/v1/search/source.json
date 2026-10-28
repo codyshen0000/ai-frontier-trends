@@ -1,6 +1,29 @@
 {
- "generatedAt": "2026-10-28T07:56:00.000Z",
+ "generatedAt": "2026-10-28T11:54:00.000Z",
  "docs": [
+  {
+   "id": "sha256:5b6b315fe4450662",
+   "kind": "item",
+   "title": "报道：Cathedral 用 AI 智能体打入 Anthropic 业务系统",
+   "summary": null,
+   "publishedAt": "2026-10-28T10:56:24.000Z",
+   "sourceName": "The Decoder",
+   "category": "industry",
+   "selected": true,
+   "eventPublicId": "2026-10-28-cathedral-anthropic-agent-breach",
+   "originalUrl": "https://the-decoder.com/ai-agents-hacked-anthropic-maker-of-arguably-the-most-capable-ai-models-for-cyberdefense/"
+  },
+  {
+   "id": "2026-10-28-cathedral-anthropic-agent-breach",
+   "kind": "event",
+   "title": "报道：Cathedral 用 AI 智能体打入 Anthropic 业务系统",
+   "summary": null,
+   "publishedAt": "2026-10-28T10:56:24.000Z",
+   "sourceNames": [
+    "The Decoder"
+   ],
+   "path": "/events/2026-10-28-cathedral-anthropic-agent-breach/"
+  },
   {
    "id": "sha256:9fb3d7436bb408fe",
    "kind": "item",
@@ -606,10 +629,10 @@
    "id": "sha256:89893d5f73c77515",
    "kind": "item",
    "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
-   "summary": "热度并入既有事件。",
+   "summary": "热度并入；无新一手。",
    "publishedAt": "2026-10-26T22:41:48.000Z",
    "sourceName": "Hacker News（AI 关键词 ≥100 分）",
-   "category": "product",
+   "category": "industry",
    "selected": true,
    "eventPublicId": "2026-10-27-cloudflare-glm53-kv-cache",
    "originalUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/"

@@ -1,10 +1,10 @@
 {
- "computedAt": "2026-10-28T07:56:00.000Z",
+ "computedAt": "2026-10-28T07:57:00.000Z",
  "entries": [
   {
    "rank": 1,
    "publicId": "2026-10-28-deepmind-genie-4",
-   "heat": 33.4,
+   "heat": 33.3,
    "participantCount": 5
   },
   {
@@ -51,15 +51,15 @@
   },
   {
    "rank": 9,
-   "publicId": "2026-10-28-microsoft-mai-image-27",
-   "heat": 12.6,
-   "participantCount": 2
-  },
-  {
-   "rank": 10,
    "publicId": "2026-10-27-openai-gpt61-terra",
    "heat": 12.6,
    "participantCount": 3
+  },
+  {
+   "rank": 10,
+   "publicId": "2026-10-28-microsoft-mai-image-27",
+   "heat": 12.5,
+   "participantCount": 2
   }
  ]
 }
