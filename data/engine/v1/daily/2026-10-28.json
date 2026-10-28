@@ -3,7 +3,7 @@
  "key": "2026-10-28",
  "issueNumber": 10,
  "title": "AI日报 · 2026-10-28",
- "generatedAt": "2026-10-28T02:15:35.000Z",
+ "generatedAt": "2026-10-28T02:30:00.000Z",
  "lead": {
   "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族",
   "leadParagraph": "LiquidAI 经 Hugging Face 发布 LFM3：以 LFM3-1.7B-Base 衍生文本/视觉/音频/omni/决策等约 2B 模型，强调边缘部署与单卡微调；权重开源。属厂商/HF 一手发布。"
@@ -162,18 +162,6 @@
      "otherSources": 1
     },
     {
-     "itemId": "sha256:89893d5f73c77515",
-     "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
-     "summary": "Cloudflare 披露并修复其 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题，说明影响范围与补救。属官方安全通告。",
-     "sourceName": "Hacker News（AI 关键词 ≥100 分）",
-     "sourceUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
-     "sourceIconUrl": null,
-     "firstParty": false,
-     "publishedAt": "2026-10-26T22:41:48.000Z",
-     "available": true,
-     "otherSources": 1
-    },
-    {
      "itemId": "sha256:257d2044442d252a",
      "title": "Opera 推出 WebAI：浏览器本地部署 AI",
      "summary": "Opera 称推出 WebAI 预览，让网站与扩展在浏览器内调用本地推理（含开源权重），并称该提案获多家公司支持。一手见 Opera 博客；TechCrunch 跟进。",
@@ -196,6 +184,24 @@
      "publishedAt": "2026-10-27T15:00:00.000Z",
      "available": true,
      "otherSources": 0
+    }
+   ]
+  },
+  {
+   "label": "行业",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:8d93b09012158ea0",
+     "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
+     "summary": "Cloudflare 官方披露并修复 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题，说明影响范围与补救。属官方安全通告。",
+     "sourceName": "Cloudflare Blog",
+     "sourceUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-26T22:41:48.000Z",
+     "available": true,
+     "otherSources": 1
     }
    ]
   },
@@ -456,7 +462,7 @@
  "metrics": {
   "totalEvents": 12,
   "sourcesCount": 16,
-  "firstPartyEvents": 10,
+  "firstPartyEvents": 11,
   "modelsReleased": 2
  },
  "readingMinutes": 4,

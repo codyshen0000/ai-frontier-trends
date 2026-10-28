@@ -26,12 +26,12 @@
    "firstReportAt": "2026-10-26T22:41:48.000Z",
    "reportCount": 2,
    "representative": {
-    "id": "sha256:89893d5f73c77515",
-    "title": "Cloudflare：修复 GLM-5.3 Workers AI 跨请求 KV 缓存泄露",
-    "summary": "热度并入既有事件。",
+    "id": "sha256:8d93b09012158ea0",
+    "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
+    "summary": "Cloudflare 官方披露并修复 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题，说明影响范围与补救。属官方安全通告。",
     "source": {
-     "name": "Hacker News（AI 关键词 ≥100 分）",
-     "firstParty": false
+     "name": "Cloudflare Blog",
+     "firstParty": true
     },
     "publishedAt": "2026-10-26T22:41:48.000Z",
     "selected": true,
