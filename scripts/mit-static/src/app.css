@@ -593,6 +593,16 @@
 }
 
 /* Remaining-A: search / starred / refresh / paging. MIT tokens only; no glow or glass. */
+.ft-daily-status {
+  margin: 0 0 1rem;
+  border-radius: var(--radius-control);
+  border: 1px solid var(--line);
+  background: var(--well);
+  padding: 0.625rem 0.875rem;
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: var(--ink-2);
+}
 .ft-asof {
   position: relative;
   z-index: 1;
