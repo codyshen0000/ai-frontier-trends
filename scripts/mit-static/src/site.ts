@@ -5,6 +5,7 @@
 import generated from "virtual:ft-engine";
 import { groupByEvent } from "../../engine/groupByEvent.mjs";
 import { indexDailyCites } from "../../engine/card-summary.mjs";
+import { dayKey } from "../../day-key.mjs";
 import type { HotResponse, ReportDetail, ReportNavigationEntry, TimelineResponse } from "@aihot/contracts/site";
 import type { SiteEvent, SiteItemPublic, SiteTopic } from "../../engine/site-data.ts";
 
@@ -20,7 +21,8 @@ export const dailies = (generated.dailies || []) as ReportDetail[];
 export const dailyIndex = (generated.dailyIndex || []) as ReportNavigationEntry[];
 export const weeklyIndex = (generated.weeklyIndex || []) as ReportNavigationEntry[];
 export const monthlyIndex = (generated.monthlyIndex || []) as ReportNavigationEntry[];
-export const today = daily?.key || "";
+/** Calendar today in Asia/Shanghai from the build stamp — not the KEEP tip key. */
+export const today = dayKey(dataAsOf);
 
 export function dailyByKey(key: string): ReportDetail | null {
   if (!key) return null;

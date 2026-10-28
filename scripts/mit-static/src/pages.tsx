@@ -19,6 +19,7 @@ import {
   builtAt,
   daily,
   dailyByItemId,
+  dailyByKey,
   dailyIndex,
   dataAsOf,
   events,
@@ -30,6 +31,7 @@ import {
   topics,
   weeklyIndex,
 } from "./site";
+import { resolveDailyStatus } from "./daily-status";
 import { DataAsOf, RssLink } from "./asof";
 import { Link } from "./react-router";
 import { HEAT_METHOD_COPY } from "@ft/heat-copy";
@@ -140,9 +142,28 @@ export function DailyScreen({
   }
   const view = emptyCover ? dailyWithoutCover(data) : data;
   const pathname = dated ? `/daily/${view.key}` : "/daily";
+  const tipKey = view.key;
+  const todayIssue = !dated && today && today !== tipKey ? dailyByKey(today) : null;
+  const statusCopy = !dated
+    ? resolveDailyStatus({
+        calendarToday: today,
+        tipKey,
+        todayHttpStatus: today && today !== tipKey && !todayIssue ? 404 : todayIssue ? 200 : 0,
+        todayIssue,
+      })
+    : "";
   return (
     <Shell pathname={pathname}>
       <ReportLayout kind="daily" index={dailyIndex} current={view.key} today={today} outline={reportOutline(view)} footer={rss}>
+        {!dated && (
+          <div data-ft-daily-status-host data-ft-daily-tip={tipKey}>
+            {statusCopy ? (
+              <p data-ft-daily-status role="status" className="ft-daily-status">
+                {statusCopy}
+              </p>
+            ) : null}
+          </div>
+        )}
         <ReportPaper report={view} index={dailyIndex} />
       </ReportLayout>
     </Shell>

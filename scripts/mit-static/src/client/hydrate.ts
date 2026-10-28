@@ -1,6 +1,7 @@
 /** First-screen hydrate for 精选 / 热点 / 日报 / 搜索 / 收藏. No React. */
 
 import { asofPlainText, formatBeijing } from "../asof-copy";
+import { dailyStatusBannerHtml, resolveDailyStatus } from "../daily-status";
 import { cardDayKey, dayKey } from "../../../day-key.mjs";
 import { cardHref as hrefCard } from "./site-href.mjs";
 
@@ -1020,6 +1021,41 @@ function bindPtr() {
   });
 }
 
+function isDailyTipIndex() {
+  if (cfg.page !== "daily") return false;
+  const path = location.pathname.replace(/index\.html$/, "");
+  return /\/daily\/?$/.test(path);
+}
+
+async function bindDailyStatus() {
+  if (!isDailyTipIndex()) return;
+  const host = document.querySelector("[data-ft-daily-status-host]");
+  if (!host) return;
+  const tipKey = host.getAttribute("data-ft-daily-tip") || "";
+  const calendarToday = dayKey(Date.now());
+  if (!tipKey || !calendarToday) return;
+  if (calendarToday === tipKey) {
+    host.innerHTML = "";
+    return;
+  }
+  try {
+    const res = await fetch(asset(`api/v1/daily/${calendarToday}.json`), { cache: "no-store" });
+    let todayIssue = null;
+    if (res.ok) {
+      todayIssue = await res.json() as { metrics?: { sourcesCount?: number; firstPartyEvents?: number }; flashes?: unknown[] };
+    }
+    const copy = resolveDailyStatus({
+      calendarToday,
+      tipKey,
+      todayHttpStatus: res.status,
+      todayIssue,
+    });
+    host.innerHTML = dailyStatusBannerHtml(copy);
+  } catch {
+    /* keep SSR copy when the probe fails */
+  }
+}
+
 function redirectDailyHash() {
   if (cfg.page !== "daily") return;
   const match = location.hash.match(/^#d-(\d{4}-\d{2}-\d{2})/);
@@ -1046,6 +1082,7 @@ function boot() {
   bindToc();
   bindHotMethod();
   bindFaces();
+  void bindDailyStatus();
   if (cfg.page === "starred") renderStarred();
 }
 
