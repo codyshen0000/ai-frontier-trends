@@ -13,11 +13,11 @@
  "latest": "TechCrunch 跟进称亚马逊经票据转换持股更深，IPO 受益或大于多数 VC。",
  "latestReport": null,
  "whyHot": {
-  "participants48h": 5,
+  "participants48h": 4,
   "newParticipants6h": 0,
   "recentReports24h": 3,
   "observationComplete": true,
-  "rank": 2
+  "rank": 3
  },
  "developments": [
   {
@@ -187,16 +187,6 @@
   }
  ],
  "heat": [
-  {
-   "hour": "2026-10-26T14:00:00.000Z",
-   "heat": 9.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-26T15:00:00.000Z",
-   "heat": 19.5,
-   "participants": 2
-  },
   {
    "hour": "2026-10-26T16:00:00.000Z",
    "heat": 18.9,
@@ -416,11 +406,36 @@
    "hour": "2026-10-28T11:00:00.000Z",
    "heat": 25.9,
    "participants": 5
+  },
+  {
+   "hour": "2026-10-28T12:00:00.000Z",
+   "heat": 25.2,
+   "participants": 5
+  },
+  {
+   "hour": "2026-10-28T13:00:00.000Z",
+   "heat": 24.5,
+   "participants": 5
+  },
+  {
+   "hour": "2026-10-28T14:00:00.000Z",
+   "heat": 23.8,
+   "participants": 5
+  },
+  {
+   "hour": "2026-10-28T15:00:00.000Z",
+   "heat": 23.1,
+   "participants": 5
+  },
+  {
+   "hour": "2026-10-28T16:00:00.000Z",
+   "heat": 22.4,
+   "participants": 5
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "Anthropic 递交 S-1，披露收入与治理结构",
  "primaryUrl": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/",
- "rankDelta": 0
+ "rankDelta": -1
 }

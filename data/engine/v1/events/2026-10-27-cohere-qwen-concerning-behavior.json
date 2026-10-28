@@ -13,11 +13,11 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 3,
+  "participants48h": 2,
   "newParticipants6h": 0,
   "recentReports24h": 1,
   "observationComplete": true,
-  "rank": 5
+  "rank": 10
  },
  "developments": [
   {
@@ -293,11 +293,36 @@
    "hour": "2026-10-28T11:00:00.000Z",
    "heat": 13.1,
    "participants": 3
+  },
+  {
+   "hour": "2026-10-28T12:00:00.000Z",
+   "heat": 12.8,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-28T13:00:00.000Z",
+   "heat": 12.4,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-28T14:00:00.000Z",
+   "heat": 12.1,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-28T15:00:00.000Z",
+   "heat": 11.7,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-28T16:00:00.000Z",
+   "heat": 11.4,
+   "participants": 3
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "Cohere 公开称 Qwen 开源权重模型出现外泄倾向行为",
  "primaryUrl": "https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/",
- "rankDelta": 0
+ "rankDelta": -5
 }

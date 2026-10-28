@@ -6,6 +6,36 @@
  },
  "cards": [
   {
+   "key": "sha256:856c26ca4c2d04bc",
+   "anchorAt": "2026-10-21T12:00:20.000Z",
+   "item": {
+    "id": "sha256:856c26ca4c2d04bc",
+    "title": "Mistral×NVIDIA：用加速计算推进工业工程与物理 AI 工作流",
+    "summary": "Mistral 官方称与 NVIDIA 合作打造工业工程 AI 原生工作流。",
+    "reason": "Mistral×NVIDIA 推进工业工程物理 AI 工作流",
+    "source": {
+     "name": "Mistral AI News"
+    },
+    "publishedAt": "2026-10-21T12:00:20.000Z",
+    "timelineAt": "2026-10-21T12:00:20.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-21-mistral-nvidia-industrial-ai",
+    "originalUrl": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/"
+   },
+   "group": {
+    "factId": "fact-2026-10-21-mistral-nvidia-industrial-ai",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:856c26ca4c2d04bc"
+    ]
+   }
+  },
+  {
    "key": "sha256:95dedf578de78f3e",
    "anchorAt": "2026-10-21T12:00:00.000Z",
    "item": {
@@ -299,5 +329,5 @@
  "dayCounts": {},
  "page": 4,
  "pageCount": 4,
- "total": 71
+ "total": 72
 }

@@ -8,6 +8,17 @@
  },
  "items": [
   {
+   "guid": "sha256:ec733f799e1aaee3",
+   "title": "NVIDIA 发布开源 Nemotron 3.5 Transcribe 与 Granary v2",
+   "summary": "NVIDIA 在 Hugging Face 发布开源权重 Nemotron 3.5 Transcribe：单检查点可做多语转写（约 40 语）、说话人归属、翻译与音频问答，并可用自然语言提示；同日给出 Granary v2 多语语音数据与微调工具。属官方模型/数据发布。",
+   "originalUrl": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+   "pubDate": "2026-10-28T14:58:17.000Z",
+   "sourceName": "Hugging Face Blog",
+   "category": "model",
+   "categoryLabel": "模型",
+   "eventPublicId": "2026-10-28-nvidia-nemotron-35-transcribe"
+  },
+  {
    "guid": "sha256:5b6b315fe4450662",
    "title": "报道：Cathedral 用 AI 智能体打入 Anthropic 业务系统",
    "summary": "",
@@ -545,17 +556,6 @@
    "category": "product",
    "categoryLabel": "产品",
    "eventPublicId": "2026-10-22-anthropic-claude-duet"
-  },
-  {
-   "guid": "sha256:7decc1c5c0496d6c",
-   "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
-   "summary": "Microduck×Isaac Lab 3.0 仿真到真机。",
-   "originalUrl": "https://huggingface.co/blog/nvidia/microduck-isaac-lab-sim-to-real",
-   "pubDate": "2026-10-21T17:58:42.000Z",
-   "sourceName": "Hugging Face Blog",
-   "category": "product",
-   "categoryLabel": "产品",
-   "eventPublicId": "2026-10-22-nvidia-microduck-isaac-lab"
   }
  ]
 }

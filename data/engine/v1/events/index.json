@@ -1,6 +1,13 @@
 {
  "events": [
   {
+   "publicId": "2026-10-28-nvidia-nemotron-35-transcribe",
+   "title": "NVIDIA 发布开源 Nemotron 3.5 Transcribe 与 Granary v2",
+   "latestAt": "2026-10-28T14:58:17.000Z",
+   "reportCount": 1,
+   "hotRank": 1
+  },
+  {
    "publicId": "2026-10-28-cathedral-anthropic-agent-breach",
    "title": "报道：Cathedral 用 AI 智能体打入 Anthropic 业务系统",
    "latestAt": "2026-10-28T10:56:24.000Z",
@@ -12,42 +19,42 @@
    "title": "微软发布 MAI-Image-2.7：图像编辑预览登 Artificial Analysis 第二",
    "latestAt": "2026-10-28T02:37:17.000Z",
    "reportCount": 2,
-   "hotRank": 10
+   "hotRank": 9
   },
   {
    "publicId": "2026-10-27-anthropic-ipo-s1",
    "title": "Anthropic 正式递交公开上市申请",
    "latestAt": "2026-10-28T01:15:28.000Z",
    "reportCount": 12,
-   "hotRank": 2
+   "hotRank": 3
   },
   {
    "publicId": "2026-10-28-google-sleep-framework-continual",
    "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
    "latestAt": "2026-10-28T00:00:00.000Z",
    "reportCount": 2,
-   "hotRank": 4
+   "hotRank": 5
   },
   {
    "publicId": "2026-10-28-deepmind-genie-4",
    "title": "DeepMind 发布 Genie 4：新一代世界仿真",
    "latestAt": "2026-10-27T23:04:49.000Z",
    "reportCount": 5,
-   "hotRank": 1
+   "hotRank": 2
   },
   {
    "publicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
    "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
    "latestAt": "2026-10-27T21:26:00.000Z",
    "reportCount": 2,
-   "hotRank": 3
+   "hotRank": 4
   },
   {
    "publicId": "2026-10-27-cohere-qwen-concerning-behavior",
    "title": "Cohere：热门开源权重模型出现异常外传行为",
    "latestAt": "2026-10-27T19:45:49.000Z",
    "reportCount": 3,
-   "hotRank": 5
+   "hotRank": 10
   },
   {
    "publicId": "2026-10-28-liquidai-lfm3",
@@ -103,14 +110,14 @@
    "title": "OpenAI：与学界共建科学理解",
    "latestAt": "2026-10-27T12:37:24.000Z",
    "reportCount": 3,
-   "hotRank": 8
+   "hotRank": null
   },
   {
    "publicId": "2026-10-27-openai-gpt61-terra",
    "title": "OpenAI 发布 GPT-6.1 Terra",
    "latestAt": "2026-10-27T08:27:46.000Z",
    "reportCount": 4,
-   "hotRank": 9
+   "hotRank": 8
   },
   {
    "publicId": "2026-10-28-openai-oracle-apps-chatgpt",

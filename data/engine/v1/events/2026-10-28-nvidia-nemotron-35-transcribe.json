@@ -1,0 +1,86 @@
+{
+ "publicId": "2026-10-28-nvidia-nemotron-35-transcribe",
+ "title": "NVIDIA 发布开源 Nemotron 3.5 Transcribe 与 Granary v2",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-28T14:58:17.000Z",
+ "latestAt": "2026-10-28T14:58:17.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "NVIDIA 在 Hugging Face 发布开源权重 Nemotron 3.5 Transcribe：单检查点可做多语转写（约 40 语）、说话人归属、翻译与音频问答，并可用自然语言提示；同日给出 Granary v2 多语语音数据与微调工具。属官方模型/数据发布。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 3,
+  "newParticipants6h": 3,
+  "recentReports24h": 3,
+  "observationComplete": true,
+  "rank": 1
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-28-nvidia-nemotron-35-transcribe",
+   "title": "NVIDIA 发布开源 Nemotron 3.5 Transcribe 与 Granary v2",
+   "firstReportAt": "2026-10-28T14:58:17.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:ec733f799e1aaee3",
+    "title": "NVIDIA 发布开源 Nemotron 3.5 Transcribe 与 Granary v2",
+    "summary": "NVIDIA 在 Hugging Face 发布开源权重 Nemotron 3.5 Transcribe：单检查点可做多语转写（约 40 语）、说话人归属、翻译与音频问答，并可用自然语言提示；同日给出 Granary v2 多语语音数据与微调工具。属官方模型/数据发布。",
+    "source": {
+     "name": "Hugging Face Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-28T14:58:17.000Z",
+    "selected": true,
+    "originalUrl": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:ec733f799e1aaee3",
+   "title": "NVIDIA 发布开源 Nemotron 3.5 Transcribe 与 Granary v2",
+   "summary": "NVIDIA 在 Hugging Face 发布开源权重 Nemotron 3.5 Transcribe：单检查点可做多语转写（约 40 语）、说话人归属、翻译与音频问答，并可用自然语言提示；同日给出 Granary v2 多语语音数据与微调工具。属官方模型/数据发布。",
+   "source": {
+    "name": "Hugging Face Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-28T14:58:17.000Z",
+   "selected": true,
+   "originalUrl": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:ec733f799e1aaee3",
+   "title": "NVIDIA 发布开源 Nemotron 3.5 Transcribe 与 Granary v2",
+   "summary": "NVIDIA 在 Hugging Face 发布开源权重 Nemotron 3.5 Transcribe：单检查点可做多语转写（约 40 语）、说话人归属、翻译与音频问答，并可用自然语言提示；同日给出 Granary v2 多语语音数据与微调工具。属官方模型/数据发布。",
+   "source": {
+    "name": "Hugging Face Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-28T14:58:17.000Z",
+   "selected": true,
+   "originalUrl": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-28T15:00:00.000Z",
+   "heat": 20.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T16:00:00.000Z",
+   "heat": 29.4,
+   "participants": 3
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "NVIDIA 开源可提示多语转写模型 Nemotron 3.5",
+ "primaryUrl": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+}

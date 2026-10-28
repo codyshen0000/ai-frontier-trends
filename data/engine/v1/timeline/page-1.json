@@ -6,6 +6,36 @@
  },
  "cards": [
   {
+   "key": "sha256:ec733f799e1aaee3",
+   "anchorAt": "2026-10-28T14:58:17.000Z",
+   "item": {
+    "id": "sha256:ec733f799e1aaee3",
+    "title": "NVIDIA 发布开源 Nemotron 3.5 Transcribe 与 Granary v2",
+    "summary": "NVIDIA 在 Hugging Face 发布开源权重 Nemotron 3.5 Transcribe：单检查点可做多语转写（约 40 语）、说话人归属、翻译与音频问答，并可用自然语言提示；同日给出 Granary v2 多语语音数据与微调工具。属官方模型/数据发布。",
+    "reason": "NVIDIA 开源可提示多语转写模型 Nemotron 3.5",
+    "source": {
+     "name": "Hugging Face Blog"
+    },
+    "publishedAt": "2026-10-28T14:58:17.000Z",
+    "timelineAt": "2026-10-28T14:58:17.000Z",
+    "category": "model",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-28-nvidia-nemotron-35-transcribe",
+    "originalUrl": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+   },
+   "group": {
+    "factId": "fact-2026-10-28-nvidia-nemotron-35-transcribe",
+    "additionalSourceCount": 2,
+    "reportCount": 3,
+    "memberIds": [
+     "sha256:ec733f799e1aaee3"
+    ]
+   }
+  },
+  {
    "key": "sha256:5b6b315fe4450662",
    "anchorAt": "2026-10-28T10:56:24.000Z",
    "item": {
@@ -524,44 +554,37 @@
      "sha256:c3d6fb64eb5418e8"
     ]
    }
-  },
-  {
-   "key": "sha256:fcee7fe2ae9bec9b",
-   "anchorAt": "2026-10-26T14:35:22.000Z",
-   "item": {
-    "id": "sha256:fcee7fe2ae9bec9b",
-    "title": "Anthropic 正式递交公开上市申请",
-    "summary": null,
-    "reason": "Anthropic 递交 S-1，披露收入与治理结构",
-    "source": {
-     "name": "TechCrunch · AI"
-    },
-    "publishedAt": "2026-10-26T14:35:22.000Z",
-    "timelineAt": "2026-10-26T14:35:22.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-27-anthropic-ipo-s1",
-    "originalUrl": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/"
-   },
-   "group": {
-    "factId": "fact-2026-10-27-anthropic-ipo-s1",
-    "additionalSourceCount": 4,
-    "reportCount": 12,
-    "memberIds": [
-     "sha256:fcee7fe2ae9bec9b"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-2.json",
  "hot": [
   {
    "rank": 1,
+   "title": "NVIDIA 发布开源 Nemotron 3.5 Transcribe 与 Granary v2",
+   "heat": 28.8,
+   "trend": "new",
+   "storyPublicId": "2026-10-28-nvidia-nemotron-35-transcribe",
+   "itemId": "sha256:ec733f799e1aaee3",
+   "participants": [
+    {
+     "name": "Hugging Face Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 3
+  },
+  {
+   "rank": 2,
    "title": "DeepMind 发布 Genie 4：新一代世界仿真",
-   "heat": 29.7,
+   "heat": 25.9,
    "trend": "down",
    "storyPublicId": "2026-10-28-deepmind-genie-4",
    "itemId": "sha256:e960e8891f7d7ad8",
@@ -590,9 +613,9 @@
    "participantCount": 5
   },
   {
-   "rank": 2,
+   "rank": 3,
    "title": "Anthropic 正式递交公开上市申请",
-   "heat": 25.3,
+   "heat": 19.5,
    "trend": "down",
    "storyPublicId": "2026-10-27-anthropic-ipo-s1",
    "itemId": "sha256:8128c7853b28b767",
@@ -612,18 +635,14 @@
     {
      "name": "Latent Space",
      "kind": "editorial"
-    },
-    {
-     "name": "量子位",
-     "kind": "editorial"
     }
    ],
-   "participantCount": 5
+   "participantCount": 4
   },
   {
-   "rank": 3,
+   "rank": 4,
    "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
-   "heat": 13.1,
+   "heat": 11.4,
    "trend": "down",
    "storyPublicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
    "itemId": "sha256:449070727cbfb984",
@@ -640,9 +659,9 @@
    "participantCount": 2
   },
   {
-   "rank": 4,
+   "rank": 5,
    "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
-   "heat": 13.0,
+   "heat": 11.3,
    "trend": "down",
    "storyPublicId": "2026-10-28-google-sleep-framework-continual",
    "itemId": "sha256:e97319d8730a2e80",
@@ -657,33 +676,10 @@
     }
    ],
    "participantCount": 2
-  },
-  {
-   "rank": 5,
-   "title": "Cohere：热门开源权重模型出现异常外传行为",
-   "heat": 12.8,
-   "trend": "down",
-   "storyPublicId": "2026-10-27-cohere-qwen-concerning-behavior",
-   "itemId": "sha256:6e162aff655bfd4c",
-   "participants": [
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "Hacker News（AI 关键词 ≥100 分）",
-     "kind": "signal"
-    }
-   ],
-   "participantCount": 3
   }
  ],
  "dayCounts": {
-  "2026-10-28": 9,
+  "2026-10-28": 10,
   "2026-10-27": 9,
   "2026-10-26": 4,
   "2026-10-25": 3,
@@ -697,5 +693,5 @@
  },
  "page": 1,
  "pageCount": 4,
- "total": 71
+ "total": 72
 }

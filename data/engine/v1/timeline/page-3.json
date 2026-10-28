@@ -6,6 +6,36 @@
  },
  "cards": [
   {
+   "key": "sha256:891b7e0bbf66f86d",
+   "anchorAt": "2026-10-22T19:00:00.000Z",
+   "item": {
+    "id": "sha256:891b7e0bbf66f86d",
+    "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
+    "summary": "OpenAI 发布 Decisions API，面向应用内快速、聚焦、低成本决策。",
+    "reason": "OpenAI 推出面向应用的 Decisions API",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-22T19:00:00.000Z",
+    "timelineAt": "2026-10-22T19:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-23-openai-decisions-api",
+    "originalUrl": "https://openai.com/index/decisions-api"
+   },
+   "group": {
+    "factId": "fact-2026-10-23-openai-decisions-api",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:891b7e0bbf66f86d"
+    ]
+   }
+  },
+  {
    "key": "sha256:5ddee939d5fa55a3",
    "anchorAt": "2026-10-22T18:00:00.000Z",
    "item": {
@@ -483,36 +513,6 @@
     "originalUrl": "https://developer.nvidia.com/blog/design-proteins-with-rfd4-proteina-using-reward-guided-inference-time-search/"
    },
    "group": null
-  },
-  {
-   "key": "sha256:856c26ca4c2d04bc",
-   "anchorAt": "2026-10-21T12:00:20.000Z",
-   "item": {
-    "id": "sha256:856c26ca4c2d04bc",
-    "title": "Mistral×NVIDIA：用加速计算推进工业工程与物理 AI 工作流",
-    "summary": "Mistral 官方称与 NVIDIA 合作打造工业工程 AI 原生工作流。",
-    "reason": "Mistral×NVIDIA 推进工业工程物理 AI 工作流",
-    "source": {
-     "name": "Mistral AI News"
-    },
-    "publishedAt": "2026-10-21T12:00:20.000Z",
-    "timelineAt": "2026-10-21T12:00:20.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-21-mistral-nvidia-industrial-ai",
-    "originalUrl": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/"
-   },
-   "group": {
-    "factId": "fact-2026-10-21-mistral-nvidia-industrial-ai",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:856c26ca4c2d04bc"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-4.json",
@@ -520,5 +520,5 @@
  "dayCounts": {},
  "page": 3,
  "pageCount": 4,
- "total": 71
+ "total": 72
 }

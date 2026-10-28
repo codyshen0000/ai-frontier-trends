@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-27-nvidia-mission-control-25",
  "title": "NVIDIA Mission Control 2.5：Kubernetes 自主恢复",
- "status": "active",
+ "status": "watching",
  "reportCount": 2,
  "sourceCount": 2,
  "firstReportAt": "2026-10-26T15:00:00.000Z",
@@ -13,10 +13,10 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 2,
+  "participants48h": 0,
   "newParticipants6h": 0,
   "recentReports24h": 0,
-  "observationComplete": true,
+  "observationComplete": false,
   "rank": null
  },
  "developments": [
@@ -79,233 +79,7 @@
    "originalUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/"
   }
  ],
- "heat": [
-  {
-   "hour": "2026-10-26T15:00:00.000Z",
-   "heat": 10.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-26T16:00:00.000Z",
-   "heat": 19.7,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-26T17:00:00.000Z",
-   "heat": 19.1,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-26T18:00:00.000Z",
-   "heat": 18.6,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-26T19:00:00.000Z",
-   "heat": 18.1,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-26T20:00:00.000Z",
-   "heat": 17.5,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-26T21:00:00.000Z",
-   "heat": 17.0,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-26T22:00:00.000Z",
-   "heat": 16.6,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-26T23:00:00.000Z",
-   "heat": 16.1,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-27T00:00:00.000Z",
-   "heat": 15.6,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-27T01:00:00.000Z",
-   "heat": 15.2,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-27T02:00:00.000Z",
-   "heat": 14.8,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-27T03:00:00.000Z",
-   "heat": 14.3,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-27T04:00:00.000Z",
-   "heat": 13.9,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-27T05:00:00.000Z",
-   "heat": 13.5,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-27T06:00:00.000Z",
-   "heat": 13.1,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-27T07:00:00.000Z",
-   "heat": 12.8,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-27T08:00:00.000Z",
-   "heat": 12.4,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-27T09:00:00.000Z",
-   "heat": 12.1,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-27T10:00:00.000Z",
-   "heat": 11.7,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-27T11:00:00.000Z",
-   "heat": 11.4,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-27T12:00:00.000Z",
-   "heat": 11.1,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-27T13:00:00.000Z",
-   "heat": 10.7,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-27T14:00:00.000Z",
-   "heat": 10.4,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-27T15:00:00.000Z",
-   "heat": 10.1,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-27T16:00:00.000Z",
-   "heat": 9.8,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-27T17:00:00.000Z",
-   "heat": 9.6,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-27T18:00:00.000Z",
-   "heat": 9.3,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-27T19:00:00.000Z",
-   "heat": 9.0,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-27T20:00:00.000Z",
-   "heat": 8.8,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-27T21:00:00.000Z",
-   "heat": 8.5,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-27T22:00:00.000Z",
-   "heat": 8.3,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-27T23:00:00.000Z",
-   "heat": 8.0,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-28T00:00:00.000Z",
-   "heat": 7.8,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-28T01:00:00.000Z",
-   "heat": 7.6,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-28T02:00:00.000Z",
-   "heat": 7.4,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-28T03:00:00.000Z",
-   "heat": 7.2,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-28T04:00:00.000Z",
-   "heat": 7.0,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-28T05:00:00.000Z",
-   "heat": 6.8,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-28T06:00:00.000Z",
-   "heat": 6.6,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-28T07:00:00.000Z",
-   "heat": 6.4,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-28T08:00:00.000Z",
-   "heat": 6.2,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-28T09:00:00.000Z",
-   "heat": 6.0,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-28T10:00:00.000Z",
-   "heat": 5.9,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-28T11:00:00.000Z",
-   "heat": 5.7,
-   "participants": 2
-  }
- ],
+ "heat": [],
  "related": [],
  "topics": [],
  "primaryUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/"

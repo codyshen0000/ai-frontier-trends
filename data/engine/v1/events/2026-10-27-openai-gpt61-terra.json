@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 9
+  "rank": 8
  },
  "developments": [
   {
@@ -104,31 +104,6 @@
   }
  ],
  "heat": [
-  {
-   "hour": "2026-10-26T11:00:00.000Z",
-   "heat": 7.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-26T12:00:00.000Z",
-   "heat": 7.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-26T13:00:00.000Z",
-   "heat": 6.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-26T14:00:00.000Z",
-   "heat": 6.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-26T15:00:00.000Z",
-   "heat": 6.5,
-   "participants": 1
-  },
   {
    "hour": "2026-10-26T16:00:00.000Z",
    "heat": 6.3,
@@ -348,11 +323,36 @@
    "hour": "2026-10-28T11:00:00.000Z",
    "heat": 11.6,
    "participants": 3
+  },
+  {
+   "hour": "2026-10-28T12:00:00.000Z",
+   "heat": 11.2,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-28T13:00:00.000Z",
+   "heat": 10.9,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-28T14:00:00.000Z",
+   "heat": 10.6,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-28T15:00:00.000Z",
+   "heat": 10.3,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-28T16:00:00.000Z",
+   "heat": 10.0,
+   "participants": 3
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "OpenAI 发布 GPT-6.1 Terra，强调计算机使用与性价比",
  "primaryUrl": "https://openai.com/index/introducing-gpt-6-1-terra",
- "rankDelta": 0
+ "rankDelta": 1
 }

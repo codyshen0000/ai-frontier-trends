@@ -6,6 +6,36 @@
  },
  "cards": [
   {
+   "key": "sha256:fcee7fe2ae9bec9b",
+   "anchorAt": "2026-10-26T14:35:22.000Z",
+   "item": {
+    "id": "sha256:fcee7fe2ae9bec9b",
+    "title": "Anthropic 正式递交公开上市申请",
+    "summary": null,
+    "reason": "Anthropic 递交 S-1，披露收入与治理结构",
+    "source": {
+     "name": "TechCrunch · AI"
+    },
+    "publishedAt": "2026-10-26T14:35:22.000Z",
+    "timelineAt": "2026-10-26T14:35:22.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-27-anthropic-ipo-s1",
+    "originalUrl": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/"
+   },
+   "group": {
+    "factId": "fact-2026-10-27-anthropic-ipo-s1",
+    "additionalSourceCount": 4,
+    "reportCount": 12,
+    "memberIds": [
+     "sha256:fcee7fe2ae9bec9b"
+    ]
+   }
+  },
+  {
    "key": "sha256:8eb6001a836a6e50",
    "anchorAt": "2026-10-26T14:30:00.000Z",
    "item": {
@@ -526,36 +556,6 @@
      "sha256:51888f116f5b0837"
     ]
    }
-  },
-  {
-   "key": "sha256:891b7e0bbf66f86d",
-   "anchorAt": "2026-10-22T19:00:00.000Z",
-   "item": {
-    "id": "sha256:891b7e0bbf66f86d",
-    "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
-    "summary": "OpenAI 发布 Decisions API，面向应用内快速、聚焦、低成本决策。",
-    "reason": "OpenAI 推出面向应用的 Decisions API",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-22T19:00:00.000Z",
-    "timelineAt": "2026-10-22T19:00:00.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-23-openai-decisions-api",
-    "originalUrl": "https://openai.com/index/decisions-api"
-   },
-   "group": {
-    "factId": "fact-2026-10-23-openai-decisions-api",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:891b7e0bbf66f86d"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-3.json",
@@ -563,5 +563,5 @@
  "dayCounts": {},
  "page": 2,
  "pageCount": 4,
- "total": 71
+ "total": 72
 }
