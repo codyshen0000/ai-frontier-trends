@@ -1,6 +1,30 @@
 {
- "generatedAt": "2026-10-28T01:03:00.000Z",
+ "generatedAt": "2026-10-28T01:20:00.000Z",
  "docs": [
+  {
+   "id": "sha256:6f3ed201faa4cfe7",
+   "kind": "item",
+   "title": "CTOL：Sleep 框架里「做梦」贡献大部分事实学习增益",
+   "summary": "CTOL 独立解读 Google Research Sleep：消融显示做梦贡献约七成事实学习增益，巩固更支撑推理；与 Google Research 博客同一故事。",
+   "publishedAt": "2026-10-28T00:00:00.000Z",
+   "sourceName": "CTOL Digital Solutions",
+   "category": "opinion",
+   "selected": false,
+   "eventPublicId": "2026-10-28-google-sleep-framework-continual",
+   "originalUrl": "https://www.ctol.digital/news/google-sleep-framework-llm-continual-learning-dreaming-ablation/"
+  },
+  {
+   "id": "2026-10-28-google-sleep-framework-continual",
+   "kind": "event",
+   "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
+   "summary": null,
+   "publishedAt": "2026-10-28T00:00:00.000Z",
+   "sourceNames": [
+    "CTOL Digital Solutions",
+    "Google Research Blog"
+   ],
+   "path": "/events/2026-10-28-google-sleep-framework-continual/"
+  },
   {
    "id": "sha256:b952fb64e967a76c",
    "kind": "item",
@@ -29,6 +53,30 @@
    "path": "/events/2026-10-28-deepmind-genie-4/"
   },
   {
+   "id": "sha256:d60cfafd7bf641e7",
+   "kind": "item",
+   "title": "DevOTD：CUDA 13.4 在共享 GPU 上强制内存边界",
+   "summary": null,
+   "publishedAt": "2026-10-27T21:26:00.000Z",
+   "sourceName": "DevOTD",
+   "category": "opinion",
+   "selected": false,
+   "eventPublicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
+   "originalUrl": "https://devotd.net/en/news/nvidia-cuda-13-4-memory-enforced-gpu-sharing/"
+  },
+  {
+   "id": "2026-10-28-nvidia-cuda-134-gpu-sharing",
+   "kind": "event",
+   "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
+   "summary": "NVIDIA 技术博客介绍 CUDA 13.4 在 Kubernetes 中的内存强制 GPU 共享：按显存配额切分单卡，减少小负载独占整卡造成的空闲。属厂商开发者文档级发布。",
+   "publishedAt": "2026-10-27T21:26:00.000Z",
+   "sourceNames": [
+    "DevOTD",
+    "NVIDIA Technical Blog"
+   ],
+   "path": "/events/2026-10-28-nvidia-cuda-134-gpu-sharing/"
+  },
+  {
    "id": "sha256:449070727cbfb984",
    "kind": "item",
    "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
@@ -41,17 +89,6 @@
    "originalUrl": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/"
   },
   {
-   "id": "2026-10-28-nvidia-cuda-134-gpu-sharing",
-   "kind": "event",
-   "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
-   "summary": "NVIDIA 技术博客介绍 CUDA 13.4 在 Kubernetes 中的内存强制 GPU 共享：按显存配额切分单卡，减少小负载独占整卡造成的空闲。属厂商开发者文档级发布。",
-   "publishedAt": "2026-10-27T20:50:39.000Z",
-   "sourceNames": [
-    "NVIDIA Technical Blog"
-   ],
-   "path": "/events/2026-10-28-nvidia-cuda-134-gpu-sharing/"
-  },
-  {
    "id": "sha256:e97319d8730a2e80",
    "kind": "item",
    "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
@@ -62,17 +99,6 @@
    "selected": true,
    "eventPublicId": "2026-10-28-google-sleep-framework-continual",
    "originalUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/"
-  },
-  {
-   "id": "2026-10-28-google-sleep-framework-continual",
-   "kind": "event",
-   "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
-   "summary": null,
-   "publishedAt": "2026-10-27T17:35:00.000Z",
-   "sourceNames": [
-    "Google Research Blog"
-   ],
-   "path": "/events/2026-10-28-google-sleep-framework-continual/"
   },
   {
    "id": "sha256:6d077b88579f686d",

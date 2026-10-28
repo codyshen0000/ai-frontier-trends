@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 7
+  "rank": 10
  },
  "developments": [
   {
@@ -259,5 +259,5 @@
  "related": [],
  "topics": [],
  "primaryUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
- "rankDelta": 0
+ "rankDelta": -3
 }

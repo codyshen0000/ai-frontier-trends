@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 5
+  "rank": 8
  },
  "developments": [
   {
@@ -224,5 +224,5 @@
  "related": [],
  "topics": [],
  "primaryUrl": "https://www.baseten.co/blog/bdn-sealed-volumes-publish-once-mount-anywhere/",
- "rankDelta": 0
+ "rankDelta": -3
 }

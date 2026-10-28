@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 4
+  "rank": 7
  },
  "developments": [
   {
@@ -220,5 +220,5 @@
  "topics": [],
  "recommendReason": "Cloudflare 修复 Workers AI KV 缓存跨请求暴露",
  "primaryUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
- "rankDelta": 0
+ "rankDelta": -3
 }

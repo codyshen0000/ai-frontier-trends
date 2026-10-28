@@ -2,29 +2,29 @@
  "publicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
  "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
  "status": "active",
- "reportCount": 1,
- "sourceCount": 1,
+ "reportCount": 2,
+ "sourceCount": 2,
  "firstReportAt": "2026-10-27T20:50:39.000Z",
- "latestAt": "2026-10-27T20:50:39.000Z",
+ "latestAt": "2026-10-27T21:26:00.000Z",
  "digest": null,
  "digestUpdatedAt": null,
  "summary": "NVIDIA 技术博客介绍 CUDA 13.4 在 Kubernetes 中的内存强制 GPU 共享：按显存配额切分单卡，减少小负载独占整卡造成的空闲。属厂商开发者文档级发布。",
  "excerpt": null,
- "latest": null,
+ "latest": "DevOTD 跟进：内存边界与 KAI Scheduler 对接（hot_floor 第二源）。",
  "latestReport": null,
  "whyHot": {
-  "participants48h": 1,
-  "newParticipants6h": 1,
-  "recentReports24h": 1,
+  "participants48h": 2,
+  "newParticipants6h": 2,
+  "recentReports24h": 2,
   "observationComplete": true,
-  "rank": null
+  "rank": 2
  },
  "developments": [
   {
    "factId": "fact-2026-10-28-nvidia-cuda-134-gpu-sharing",
    "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
    "firstReportAt": "2026-10-27T20:50:39.000Z",
-   "reportCount": 1,
+   "reportCount": 2,
    "representative": {
     "id": "sha256:449070727cbfb984",
     "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
@@ -55,6 +55,18 @@
  ],
  "timeline": [
   {
+   "id": "sha256:d60cfafd7bf641e7",
+   "title": "DevOTD：CUDA 13.4 在共享 GPU 上强制内存边界",
+   "summary": null,
+   "source": {
+    "name": "DevOTD",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-27T21:26:00.000Z",
+   "selected": false,
+   "originalUrl": "https://devotd.net/en/news/nvidia-cuda-13-4-memory-enforced-gpu-sharing/"
+  },
+  {
    "id": "sha256:449070727cbfb984",
    "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
    "summary": null,
@@ -75,23 +87,23 @@
   },
   {
    "hour": "2026-10-27T22:00:00.000Z",
-   "heat": 9.7,
-   "participants": 1
+   "heat": 19.5,
+   "participants": 2
   },
   {
    "hour": "2026-10-27T23:00:00.000Z",
-   "heat": 9.4,
-   "participants": 1
+   "heat": 19.0,
+   "participants": 2
   },
   {
    "hour": "2026-10-28T00:00:00.000Z",
-   "heat": 9.1,
-   "participants": 1
+   "heat": 18.4,
+   "participants": 2
   },
   {
    "hour": "2026-10-28T01:00:00.000Z",
-   "heat": 8.9,
-   "participants": 1
+   "heat": 17.9,
+   "participants": 2
   }
  ],
  "related": [],

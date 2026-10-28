@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 1,
   "observationComplete": true,
-  "rank": 3
+  "rank": 6
  },
  "developments": [
   {
@@ -354,5 +354,5 @@
  "topics": [],
  "recommendReason": "OpenAI 发布 GPT-6.1 Terra，强调计算机使用与性价比",
  "primaryUrl": "https://openai.com/index/introducing-gpt-6-1-terra",
- "rankDelta": -1
+ "rankDelta": -4
 }

@@ -26,7 +26,14 @@
     "storyPublicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
     "originalUrl": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/"
    },
-   "group": null
+   "group": {
+    "factId": "fact-2026-10-28-nvidia-cuda-134-gpu-sharing",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:449070727cbfb984"
+    ]
+   }
   },
   {
    "key": "sha256:e97319d8730a2e80",
@@ -49,7 +56,14 @@
     "storyPublicId": "2026-10-28-google-sleep-framework-continual",
     "originalUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/"
    },
-   "group": null
+   "group": {
+    "factId": "fact-2026-10-28-google-sleep-framework-continual",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:e97319d8730a2e80"
+    ]
+   }
   },
   {
    "key": "sha256:1c5b51464767c2ad",
@@ -72,7 +86,15 @@
     "storyPublicId": "2026-10-28-liquidai-lfm3",
     "originalUrl": "https://huggingface.co/blog/LiquidAI/lfm3"
    },
-   "group": null
+   "group": {
+    "factId": "fact-2026-10-28-liquidai-lfm3",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:1c5b51464767c2ad",
+     "sha256:a3a8ddf99df9b0da"
+    ]
+   }
   },
   {
    "key": "sha256:64295c3ae779f4ac",
@@ -528,7 +550,7 @@
   {
    "rank": 1,
    "title": "DeepMind 发布 Genie 4：新一代世界仿真",
-   "heat": 40.7,
+   "heat": 40.4,
    "trend": "flat",
    "storyPublicId": "2026-10-28-deepmind-genie-4",
    "itemId": "sha256:e960e8891f7d7ad8",
@@ -558,8 +580,65 @@
   },
   {
    "rank": 2,
+   "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
+   "heat": 17.7,
+   "trend": "new",
+   "storyPublicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
+   "itemId": "sha256:449070727cbfb984",
+   "participants": [
+    {
+     "name": "NVIDIA Technical Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "DevOTD",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2
+  },
+  {
+   "rank": 3,
+   "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
+   "heat": 17.6,
+   "trend": "up",
+   "storyPublicId": "2026-10-28-google-sleep-framework-continual",
+   "itemId": "sha256:e97319d8730a2e80",
+   "participants": [
+    {
+     "name": "Google Research Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "CTOL Digital Solutions",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2
+  },
+  {
+   "rank": 4,
+   "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族",
+   "heat": 15.9,
+   "trend": "down",
+   "storyPublicId": "2026-10-28-liquidai-lfm3",
+   "itemId": "sha256:a3a8ddf99df9b0da",
+   "participants": [
+    {
+     "name": "Liquid AI Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "Hugging Face Blog",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2
+  },
+  {
+   "rank": 5,
    "title": "OpenAI：与学界共建科学理解",
-   "heat": 15.5,
+   "heat": 15.3,
    "trend": "down",
    "storyPublicId": "2026-10-27-openai-academic-science-collab",
    "itemId": "sha256:8eb6001a836a6e50",
@@ -578,67 +657,6 @@
     }
    ],
    "participantCount": 3
-  },
-  {
-   "rank": 3,
-   "title": "OpenAI 发布 GPT-6.1 Terra",
-   "heat": 15.4,
-   "trend": "down",
-   "storyPublicId": "2026-10-27-openai-gpt61-terra",
-   "itemId": "sha256:35e334c198740f74",
-   "participants": [
-    {
-     "name": "量子位",
-     "kind": "editorial"
-    },
-    {
-     "name": "Simon Willison",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 3
-  },
-  {
-   "rank": 4,
-   "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
-   "heat": 9.3,
-   "trend": "down",
-   "storyPublicId": "2026-10-27-cloudflare-glm53-kv-cache",
-   "itemId": "sha256:8d93b09012158ea0",
-   "participants": [
-    {
-     "name": "Cloudflare Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "Hacker News（AI 关键词 ≥100 分）",
-     "kind": "signal"
-    }
-   ],
-   "participantCount": 2
-  },
-  {
-   "rank": 5,
-   "title": "Baseten：BDN Sealed Volumes 一次发布处处挂载",
-   "heat": 9.3,
-   "trend": "down",
-   "storyPublicId": "2026-10-27-baseten-bdn-sealed-volumes",
-   "itemId": "sha256:685d9381627543c3",
-   "participants": [
-    {
-     "name": "Baseten Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "OpenTools",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 2
   }
  ],
  "dayCounts": {

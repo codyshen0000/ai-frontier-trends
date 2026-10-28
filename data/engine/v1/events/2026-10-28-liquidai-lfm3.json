@@ -10,14 +10,14 @@
  "digestUpdatedAt": null,
  "summary": null,
  "excerpt": null,
- "latest": null,
+ "latest": "补挂 Liquid AI 官方博客为独立 editorial participant，并换为代表（hot_floor hop-as-rep）。",
  "latestReport": null,
  "whyHot": {
-  "participants48h": 1,
+  "participants48h": 2,
   "newParticipants6h": 0,
-  "recentReports24h": 1,
+  "recentReports24h": 2,
   "observationComplete": true,
-  "rank": null
+  "rank": 4
  },
  "developments": [
   {
@@ -70,43 +70,43 @@
  "heat": [
   {
    "hour": "2026-10-27T18:00:00.000Z",
-   "heat": 9.8,
-   "participants": 1
+   "heat": 19.6,
+   "participants": 2
   },
   {
    "hour": "2026-10-27T19:00:00.000Z",
-   "heat": 9.5,
-   "participants": 1
+   "heat": 19.0,
+   "participants": 2
   },
   {
    "hour": "2026-10-27T20:00:00.000Z",
-   "heat": 9.2,
-   "participants": 1
+   "heat": 18.5,
+   "participants": 2
   },
   {
    "hour": "2026-10-27T21:00:00.000Z",
-   "heat": 9.0,
-   "participants": 1
+   "heat": 18.0,
+   "participants": 2
   },
   {
    "hour": "2026-10-27T22:00:00.000Z",
-   "heat": 8.7,
-   "participants": 1
+   "heat": 17.5,
+   "participants": 2
   },
   {
    "hour": "2026-10-27T23:00:00.000Z",
-   "heat": 8.5,
-   "participants": 1
+   "heat": 17.0,
+   "participants": 2
   },
   {
    "hour": "2026-10-28T00:00:00.000Z",
-   "heat": 8.2,
-   "participants": 1
+   "heat": 16.5,
+   "participants": 2
   },
   {
    "hour": "2026-10-28T01:00:00.000Z",
-   "heat": 8.0,
-   "participants": 1
+   "heat": 16.0,
+   "participants": 2
   }
  ],
  "related": [],

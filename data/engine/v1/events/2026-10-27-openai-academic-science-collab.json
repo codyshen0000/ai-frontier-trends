@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 1,
   "observationComplete": true,
-  "rank": 2
+  "rank": 5
  },
  "developments": [
   {
@@ -271,5 +271,5 @@
  "related": [],
  "topics": [],
  "primaryUrl": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
- "rankDelta": 1
+ "rankDelta": -2
 }

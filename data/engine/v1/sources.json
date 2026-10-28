@@ -171,6 +171,18 @@
    "kind": "editorial"
   },
   {
+   "sourceId": "web-ctol",
+   "name": "CTOL Digital Solutions",
+   "tier": "T2",
+   "kind": "editorial"
+  },
+  {
+   "sourceId": "web-devotd",
+   "name": "DevOTD",
+   "tier": "T2",
+   "kind": "editorial"
+  },
+  {
    "sourceId": "web-eweek",
    "name": "eWeek",
    "tier": "T2",
@@ -186,6 +198,12 @@
    "sourceId": "web-interesting-engineering",
    "name": "Interesting Engineering",
    "tier": "T2",
+   "kind": "editorial"
+  },
+  {
+   "sourceId": "web-liquidai-lfm3",
+   "name": "Liquid AI Blog",
+   "tier": "T1",
    "kind": "editorial"
   },
   {
