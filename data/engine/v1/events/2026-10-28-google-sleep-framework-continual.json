@@ -124,10 +124,21 @@
    "hour": "2026-10-28T02:00:00.000Z",
    "heat": 17.3,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-28T03:00:00.000Z",
+   "heat": 16.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T04:00:00.000Z",
+   "heat": 16.3,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "Google Research：用 sleep 框架做持续学习防遗忘",
- "primaryUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/"
+ "primaryUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+ "rankDelta": 0
 }

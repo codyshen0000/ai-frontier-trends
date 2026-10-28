@@ -99,6 +99,16 @@
    "hour": "2026-10-28T02:00:00.000Z",
    "heat": 7.7,
    "participants": 1
+  },
+  {
+   "hour": "2026-10-28T03:00:00.000Z",
+   "heat": 7.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-28T04:00:00.000Z",
+   "heat": 7.3,
+   "participants": 1
   }
  ],
  "related": [],

@@ -557,7 +557,7 @@
   {
    "rank": 1,
    "title": "DeepMind 发布 Genie 4：新一代世界仿真",
-   "heat": 38.8,
+   "heat": 36.5,
    "trend": "flat",
    "storyPublicId": "2026-10-28-deepmind-genie-4",
    "itemId": "sha256:e960e8891f7d7ad8",
@@ -588,8 +588,8 @@
   {
    "rank": 2,
    "title": "Anthropic 正式递交公开上市申请",
-   "heat": 33.0,
-   "trend": "flat",
+   "heat": 31.0,
+   "trend": "down",
    "storyPublicId": "2026-10-27-anthropic-ipo-s1",
    "itemId": "sha256:8128c7853b28b767",
    "participants": [
@@ -619,8 +619,8 @@
   {
    "rank": 3,
    "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
-   "heat": 17.0,
-   "trend": "new",
+   "heat": 16.0,
+   "trend": "down",
    "storyPublicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
    "itemId": "sha256:449070727cbfb984",
    "participants": [
@@ -638,7 +638,7 @@
   {
    "rank": 4,
    "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
-   "heat": 16.9,
+   "heat": 15.9,
    "trend": "up",
    "storyPublicId": "2026-10-28-google-sleep-framework-continual",
    "itemId": "sha256:e97319d8730a2e80",
@@ -657,10 +657,10 @@
   {
    "rank": 5,
    "title": "Cohere：热门开源权重模型出现异常外传行为",
-   "heat": 16.7,
+   "heat": 15.7,
    "trend": "down",
    "storyPublicId": "2026-10-27-cohere-qwen-concerning-behavior",
-   "itemId": "sha256:27779e2e3a96ff05",
+   "itemId": "sha256:6e162aff655bfd4c",
    "participants": [
     {
      "name": "The Decoder",

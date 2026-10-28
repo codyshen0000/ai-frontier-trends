@@ -1,6 +1,29 @@
 {
- "generatedAt": "2026-10-28T02:41:00.000Z",
+ "generatedAt": "2026-10-28T04:49:00.000Z",
  "docs": [
+  {
+   "id": "sha256:9fb3d7436bb408fe",
+   "kind": "item",
+   "title": "微软发布 MAI-Image-2.7：图像编辑预览登 Artificial Analysis 第二",
+   "summary": "热度并入；代表为一手微软官方页。",
+   "publishedAt": "2026-10-28T02:37:17.000Z",
+   "sourceName": "IT之家（全站，需关键词过滤）",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-10-28-microsoft-mai-image-27",
+   "originalUrl": "https://www.ithome.com/1/018/772.htm"
+  },
+  {
+   "id": "2026-10-28-microsoft-mai-image-27",
+   "kind": "event",
+   "title": "微软发布 MAI-Image-2.7：图像编辑预览登 Artificial Analysis 第二",
+   "summary": null,
+   "publishedAt": "2026-10-28T02:37:17.000Z",
+   "sourceNames": [
+    "IT之家（全站，需关键词过滤）"
+   ],
+   "path": "/events/2026-10-28-microsoft-mai-image-27/"
+  },
   {
    "id": "sha256:8128c7853b28b767",
    "kind": "item",
@@ -546,7 +569,7 @@
   {
    "id": "sha256:89893d5f73c77515",
    "kind": "item",
-   "title": "Cloudflare：修复 GLM-5.3 Workers AI 跨请求 KV 缓存泄露",
+   "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
    "summary": "热度并入既有事件。",
    "publishedAt": "2026-10-26T22:41:48.000Z",
    "sourceName": "Hacker News（AI 关键词 ≥100 分）",

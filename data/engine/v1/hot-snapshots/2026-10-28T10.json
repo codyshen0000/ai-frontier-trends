@@ -1,5 +1,5 @@
 {
- "computedAt": "2026-10-28T02:41:00.000Z",
+ "computedAt": "2026-10-28T02:43:00.000Z",
  "entries": [
   {
    "rank": 1,
@@ -10,7 +10,7 @@
   {
    "rank": 2,
    "publicId": "2026-10-27-anthropic-ipo-s1",
-   "heat": 33.0,
+   "heat": 32.9,
    "participantCount": 5
   },
   {
@@ -40,7 +40,7 @@
   {
    "rank": 7,
    "publicId": "2026-10-27-openai-academic-science-collab",
-   "heat": 14.8,
+   "heat": 14.7,
    "participantCount": 3
   },
   {

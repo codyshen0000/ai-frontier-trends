@@ -213,6 +213,13 @@
    "kind": "editorial"
   },
   {
+   "sourceId": "web-microsoft-ai-mai-image-27",
+   "name": "Microsoft AI",
+   "tier": "T1",
+   "kind": "editorial",
+   "homepage": "https://microsoft.ai"
+  },
+  {
    "sourceId": "web-microsoft-github",
    "name": "web-microsoft-github",
    "tier": null,

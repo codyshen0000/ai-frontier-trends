@@ -112,10 +112,21 @@
    "hour": "2026-10-28T02:00:00.000Z",
    "heat": 15.5,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-28T03:00:00.000Z",
+   "heat": 15.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T04:00:00.000Z",
+   "heat": 14.7,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "LiquidAI 发布 LFM3：约 2B 多模态同骨干开源族",
- "primaryUrl": "https://huggingface.co/blog/LiquidAI/lfm3"
+ "primaryUrl": "https://huggingface.co/blog/LiquidAI/lfm3",
+ "rankDelta": 0
 }

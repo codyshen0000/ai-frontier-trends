@@ -1,0 +1,208 @@
+{
+ "publicId": "2026-10-28-microsoft-mai-image-27",
+ "title": "微软发布 MAI-Image-2.7：图像编辑预览登 Artificial Analysis 第二",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-28T02:37:17.000Z",
+ "latestAt": "2026-10-28T02:37:17.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": null,
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 2,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": 9
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-28-microsoft-mai-image-27",
+   "title": "微软发布 MAI-Image-2.7：图像编辑预览登 Artificial Analysis 第二",
+   "firstReportAt": "2026-10-28T02:37:17.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:9fb3d7436bb408fe",
+    "title": "微软发布 MAI-Image-2.7：图像编辑预览登 Artificial Analysis 第二",
+    "summary": "热度并入；代表为一手微软官方页。",
+    "source": {
+     "name": "IT之家（全站，需关键词过滤）",
+     "firstParty": false
+    },
+    "publishedAt": "2026-10-28T02:37:17.000Z",
+    "selected": false,
+    "originalUrl": "https://www.ithome.com/1/018/772.htm"
+   }
+  }
+ ],
+ "officialReports": [],
+ "timeline": [
+  {
+   "id": "sha256:9fb3d7436bb408fe",
+   "title": "微软发布 MAI-Image-2.7：图像编辑预览登 Artificial Analysis 第二",
+   "summary": "热度并入；代表为一手微软官方页。",
+   "source": {
+    "name": "IT之家（全站，需关键词过滤）",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-28T02:37:17.000Z",
+   "selected": false,
+   "originalUrl": "https://www.ithome.com/1/018/772.htm"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-27T00:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T01:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T02:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T03:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T04:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T05:00:00.000Z",
+   "heat": 8.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T06:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T07:00:00.000Z",
+   "heat": 8.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T08:00:00.000Z",
+   "heat": 7.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T09:00:00.000Z",
+   "heat": 7.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T10:00:00.000Z",
+   "heat": 7.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T11:00:00.000Z",
+   "heat": 7.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T12:00:00.000Z",
+   "heat": 7.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T13:00:00.000Z",
+   "heat": 6.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T14:00:00.000Z",
+   "heat": 6.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T15:00:00.000Z",
+   "heat": 6.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T16:00:00.000Z",
+   "heat": 6.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T17:00:00.000Z",
+   "heat": 6.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T18:00:00.000Z",
+   "heat": 5.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T19:00:00.000Z",
+   "heat": 5.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T20:00:00.000Z",
+   "heat": 5.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T21:00:00.000Z",
+   "heat": 5.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T22:00:00.000Z",
+   "heat": 5.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T23:00:00.000Z",
+   "heat": 5.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-28T00:00:00.000Z",
+   "heat": 5.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-28T01:00:00.000Z",
+   "heat": 4.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-28T02:00:00.000Z",
+   "heat": 4.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-28T03:00:00.000Z",
+   "heat": 14.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T04:00:00.000Z",
+   "heat": 14.1,
+   "participants": 2
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "微软官方推出 MAI-Image-2.7 图像编辑预览并报榜单名次",
+ "primaryUrl": "https://www.ithome.com/1/018/772.htm"
+}
