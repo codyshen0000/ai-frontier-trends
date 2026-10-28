@@ -288,6 +288,38 @@
    "group": null
   },
   {
+   "key": "sha256:f0e3f8456fcbc65d",
+   "anchorAt": "2026-10-27T00:00:00.000Z",
+   "item": {
+    "id": "sha256:f0e3f8456fcbc65d",
+    "title": "微软发布 MAI-Image-2.7：图像编辑预览登 Artificial Analysis 第二",
+    "summary": "微软 AI 官方宣布推出 MAI Image 2.7 图像编辑预览：主打场景重绘/打光、图内文字与符号修改、素材修复增强；称在 Artificial Analysis 图像编辑榜列第二、Arena Edit 第三，相对 2.6 在全部评测用例与编辑动作上提升，场景与风格项领先约 24 Elo。现阶段以已有图片+指令编辑为主，文生图尚未开放；官方未公布 2.7 API/定价。IT之家等跟进转述。",
+    "reason": "微软官方推出 MAI-Image-2.7 图像编辑预览并报榜单名次",
+    "source": {
+     "name": "Microsoft AI"
+    },
+    "publishedAt": "2026-10-27T00:00:00.000Z",
+    "timelineAt": "2026-10-27T00:00:00.000Z",
+    "category": "product",
+    "tags": [
+     "fp_hop_as_rep"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-28-microsoft-mai-image-27",
+    "originalUrl": "https://microsoft.ai/news/mai-image-2-7-debut/"
+   },
+   "group": {
+    "factId": "fact-2026-10-28-microsoft-mai-image-27",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:f0e3f8456fcbc65d"
+    ]
+   }
+  },
+  {
    "key": "sha256:8d93b09012158ea0",
    "anchorAt": "2026-10-26T22:41:48.000Z",
    "item": {
@@ -527,29 +559,6 @@
      "sha256:35e334c198740f74"
     ]
    }
-  },
-  {
-   "key": "sha256:af9112a54e84d14e",
-   "anchorAt": "2026-10-25T10:08:49.000Z",
-   "item": {
-    "id": "sha256:af9112a54e84d14e",
-    "title": "Nvidia 开源 Flora：机器人视频标注数据引擎",
-    "summary": null,
-    "reason": "开源机器人视频标注引擎称大幅降本",
-    "source": {
-     "name": "The Decoder"
-    },
-    "publishedAt": "2026-10-25T10:08:49.000Z",
-    "timelineAt": "2026-10-25T10:08:49.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-25-nvidia-flora-robot-data-engine",
-    "originalUrl": "https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra/"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-2.json",
@@ -557,8 +566,8 @@
   {
    "rank": 1,
    "title": "DeepMind 发布 Genie 4：新一代世界仿真",
-   "heat": 36.5,
-   "trend": "flat",
+   "heat": 36.2,
+   "trend": "down",
    "storyPublicId": "2026-10-28-deepmind-genie-4",
    "itemId": "sha256:e960e8891f7d7ad8",
    "participants": [
@@ -588,7 +597,7 @@
   {
    "rank": 2,
    "title": "Anthropic 正式递交公开上市申请",
-   "heat": 31.0,
+   "heat": 30.7,
    "trend": "down",
    "storyPublicId": "2026-10-27-anthropic-ipo-s1",
    "itemId": "sha256:8128c7853b28b767",
@@ -619,7 +628,7 @@
   {
    "rank": 3,
    "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
-   "heat": 16.0,
+   "heat": 15.9,
    "trend": "down",
    "storyPublicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
    "itemId": "sha256:449070727cbfb984",
@@ -638,7 +647,7 @@
   {
    "rank": 4,
    "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
-   "heat": 15.9,
+   "heat": 15.8,
    "trend": "up",
    "storyPublicId": "2026-10-28-google-sleep-framework-continual",
    "itemId": "sha256:e97319d8730a2e80",
@@ -657,7 +666,7 @@
   {
    "rank": 5,
    "title": "Cohere：热门开源权重模型出现异常外传行为",
-   "heat": 15.7,
+   "heat": 15.6,
    "trend": "down",
    "storyPublicId": "2026-10-27-cohere-qwen-concerning-behavior",
    "itemId": "sha256:6e162aff655bfd4c",
@@ -680,7 +689,7 @@
  ],
  "dayCounts": {
   "2026-10-28": 8,
-  "2026-10-27": 7,
+  "2026-10-27": 8,
   "2026-10-26": 4,
   "2026-10-25": 3,
   "2026-10-24": 7,
@@ -693,5 +702,5 @@
  },
  "page": 1,
  "pageCount": 4,
- "total": 68
+ "total": 69
 }

@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-28T04:49:00.000Z",
+ "generatedAt": "2026-10-28T05:08:00.000Z",
  "docs": [
   {
    "id": "sha256:9fb3d7436bb408fe",
@@ -17,10 +17,11 @@
    "id": "2026-10-28-microsoft-mai-image-27",
    "kind": "event",
    "title": "微软发布 MAI-Image-2.7：图像编辑预览登 Artificial Analysis 第二",
-   "summary": null,
+   "summary": "微软 AI 官方宣布推出 MAI Image 2.7 图像编辑预览：主打场景重绘/打光、图内文字与符号修改、素材修复增强；称在 Artificial Analysis 图像编辑榜列第二、Arena Edit 第三，相对 2.6 在全部评测用例与编辑动作上提升，场景与风格项领先约 24 Elo。现阶段以已有图片+指令编辑为主，文生图尚未开放；官方未公布 2.7 API/定价。IT之家等跟进转述。",
    "publishedAt": "2026-10-28T02:37:17.000Z",
    "sourceNames": [
-    "IT之家（全站，需关键词过滤）"
+    "IT之家（全站，需关键词过滤）",
+    "Microsoft AI"
    ],
    "path": "/events/2026-10-28-microsoft-mai-image-27/"
   },
@@ -505,6 +506,18 @@
    "selected": false,
    "eventPublicId": "2026-10-27-cohere-qwen-concerning-behavior",
    "originalUrl": "https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/"
+  },
+  {
+   "id": "sha256:f0e3f8456fcbc65d",
+   "kind": "item",
+   "title": "微软发布 MAI-Image-2.7：图像编辑预览登 Artificial Analysis 第二",
+   "summary": "微软 AI 官方宣布推出 MAI Image 2.7 图像编辑预览：主打场景重绘/打光、图内文字与符号修改、素材修复增强；称在 Artificial Analysis 图像编辑榜列第二、Arena Edit 第三，相对 2.6 在全部评测用例与编辑动作上提升，场景与风格项领先约 24 Elo。现阶段以已有图片+指令编辑为主，文生图尚未开放；官方未公布 2.7 API/定价。IT之家等跟进转述。",
+   "publishedAt": "2026-10-27T00:00:00.000Z",
+   "sourceName": "Microsoft AI",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-10-28-microsoft-mai-image-27",
+   "originalUrl": "https://microsoft.ai/news/mai-image-2-7-debut/"
   },
   {
    "id": "sha256:670bdc25a85edb18",

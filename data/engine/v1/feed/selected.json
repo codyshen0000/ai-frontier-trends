@@ -129,6 +129,17 @@
    "eventPublicId": "2026-10-28-openai-oracle-apps-chatgpt"
   },
   {
+   "guid": "sha256:f0e3f8456fcbc65d",
+   "title": "微软发布 MAI-Image-2.7：图像编辑预览登 Artificial Analysis 第二",
+   "summary": "微软 AI 官方宣布推出 MAI Image 2.7 图像编辑预览：主打场景重绘/打光、图内文字与符号修改、素材修复增强；称在 Artificial Analysis 图像编辑榜列第二、Arena Edit 第三，相对 2.6 在全部评测用例与编辑动作上提升，场景与风格项领先约 24 Elo。现阶段以已有图片+指令编辑为主，文生图尚未开放；官方未公布 2.7 API/定价。IT之家等跟进转述。",
+   "originalUrl": "https://microsoft.ai/news/mai-image-2-7-debut/",
+   "pubDate": "2026-10-27T00:00:00.000Z",
+   "sourceName": "Microsoft AI",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-10-28-microsoft-mai-image-27"
+  },
+  {
    "guid": "sha256:8d93b09012158ea0",
    "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
    "summary": "Cloudflare 官方披露并修复 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题。属官方安全通告。",
@@ -545,17 +556,6 @@
    "category": "paper",
    "categoryLabel": "论文",
    "eventPublicId": "2026-10-22-google-ai-maternal-ultrasound"
-  },
-  {
-   "guid": "sha256:77ec6ad66af3dcc4",
-   "title": "微软研究院：宣布解决数学界 31 年难题 KLS 猜想",
-   "summary": "MSR 称解决 KLS 猜想，移除高维随机算法理论障碍。",
-   "originalUrl": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/",
-   "pubDate": "2026-10-21T16:00:00.000Z",
-   "sourceName": "Microsoft Research Blog",
-   "category": "paper",
-   "categoryLabel": "论文",
-   "eventPublicId": "2026-10-22-msr-kls-conjecture"
   }
  ]
 }

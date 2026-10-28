@@ -6,6 +6,29 @@
  },
  "cards": [
   {
+   "key": "sha256:af9112a54e84d14e",
+   "anchorAt": "2026-10-25T10:08:49.000Z",
+   "item": {
+    "id": "sha256:af9112a54e84d14e",
+    "title": "Nvidia 开源 Flora：机器人视频标注数据引擎",
+    "summary": null,
+    "reason": "开源机器人视频标注引擎称大幅降本",
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-25T10:08:49.000Z",
+    "timelineAt": "2026-10-25T10:08:49.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-25-nvidia-flora-robot-data-engine",
+    "originalUrl": "https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra/"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:de032cfb4352542b",
    "anchorAt": "2026-10-25T09:12:10.000Z",
    "item": {
@@ -533,29 +556,6 @@
      "sha256:7ea705cfe9f05665"
     ]
    }
-  },
-  {
-   "key": "sha256:67297d2df9a3d7f1",
-   "anchorAt": "2026-10-22T16:11:31.000Z",
-   "item": {
-    "id": "sha256:67297d2df9a3d7f1",
-    "title": "AllenAI：发布 OlmoEarth v1.3 全球卫星嵌入与探索工具",
-    "summary": "OlmoEarth v1.3 卫星嵌入 + 全球预计算嵌入与浏览器探索工具。",
-    "reason": "AllenAI：OlmoEarth v1.3 全球卫星嵌入",
-    "source": {
-     "name": "Hugging Face Blog"
-    },
-    "publishedAt": "2026-10-22T16:11:31.000Z",
-    "timelineAt": "2026-10-22T16:11:31.000Z",
-    "category": "model",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-23-allenai-olmoearth-v13",
-    "originalUrl": "https://huggingface.co/blog/allenai/olmoearth-v1-3"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-3.json",
@@ -563,5 +563,5 @@
  "dayCounts": {},
  "page": 2,
  "pageCount": 4,
- "total": 68
+ "total": 69
 }

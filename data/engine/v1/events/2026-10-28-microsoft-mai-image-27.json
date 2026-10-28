@@ -2,13 +2,13 @@
  "publicId": "2026-10-28-microsoft-mai-image-27",
  "title": "微软发布 MAI-Image-2.7：图像编辑预览登 Artificial Analysis 第二",
  "status": "active",
- "reportCount": 1,
- "sourceCount": 1,
- "firstReportAt": "2026-10-28T02:37:17.000Z",
+ "reportCount": 2,
+ "sourceCount": 2,
+ "firstReportAt": "2026-10-27T00:00:00.000Z",
  "latestAt": "2026-10-28T02:37:17.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": null,
+ "summary": "微软 AI 官方宣布推出 MAI Image 2.7 图像编辑预览：主打场景重绘/打光、图内文字与符号修改、素材修复增强；称在 Artificial Analysis 图像编辑榜列第二、Arena Edit 第三，相对 2.6 在全部评测用例与编辑动作上提升，场景与风格项领先约 24 Elo。现阶段以已有图片+指令编辑为主，文生图尚未开放；官方未公布 2.7 API/定价。IT之家等跟进转述。",
  "excerpt": null,
  "latest": null,
  "latestReport": null,
@@ -23,23 +23,36 @@
   {
    "factId": "fact-2026-10-28-microsoft-mai-image-27",
    "title": "微软发布 MAI-Image-2.7：图像编辑预览登 Artificial Analysis 第二",
-   "firstReportAt": "2026-10-28T02:37:17.000Z",
-   "reportCount": 1,
+   "firstReportAt": "2026-10-27T00:00:00.000Z",
+   "reportCount": 2,
    "representative": {
-    "id": "sha256:9fb3d7436bb408fe",
+    "id": "sha256:f0e3f8456fcbc65d",
     "title": "微软发布 MAI-Image-2.7：图像编辑预览登 Artificial Analysis 第二",
-    "summary": "热度并入；代表为一手微软官方页。",
+    "summary": "微软 AI 官方宣布推出 MAI Image 2.7 图像编辑预览：主打场景重绘/打光、图内文字与符号修改、素材修复增强；称在 Artificial Analysis 图像编辑榜列第二、Arena Edit 第三，相对 2.6 在全部评测用例与编辑动作上提升，场景与风格项领先约 24 Elo。现阶段以已有图片+指令编辑为主，文生图尚未开放；官方未公布 2.7 API/定价。IT之家等跟进转述。",
     "source": {
-     "name": "IT之家（全站，需关键词过滤）",
-     "firstParty": false
+     "name": "Microsoft AI",
+     "firstParty": true
     },
-    "publishedAt": "2026-10-28T02:37:17.000Z",
-    "selected": false,
-    "originalUrl": "https://www.ithome.com/1/018/772.htm"
+    "publishedAt": "2026-10-27T00:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://microsoft.ai/news/mai-image-2-7-debut/"
    }
   }
  ],
- "officialReports": [],
+ "officialReports": [
+  {
+   "id": "sha256:f0e3f8456fcbc65d",
+   "title": "微软发布 MAI-Image-2.7：图像编辑预览登 Artificial Analysis 第二",
+   "summary": "微软 AI 官方宣布推出 MAI Image 2.7 图像编辑预览：主打场景重绘/打光、图内文字与符号修改、素材修复增强；称在 Artificial Analysis 图像编辑榜列第二、Arena Edit 第三，相对 2.6 在全部评测用例与编辑动作上提升，场景与风格项领先约 24 Elo。现阶段以已有图片+指令编辑为主，文生图尚未开放；官方未公布 2.7 API/定价。IT之家等跟进转述。",
+   "source": {
+    "name": "Microsoft AI",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-27T00:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://microsoft.ai/news/mai-image-2-7-debut/"
+  }
+ ],
  "timeline": [
   {
    "id": "sha256:9fb3d7436bb408fe",
@@ -52,6 +65,18 @@
    "publishedAt": "2026-10-28T02:37:17.000Z",
    "selected": false,
    "originalUrl": "https://www.ithome.com/1/018/772.htm"
+  },
+  {
+   "id": "sha256:f0e3f8456fcbc65d",
+   "title": "微软发布 MAI-Image-2.7：图像编辑预览登 Artificial Analysis 第二",
+   "summary": "微软 AI 官方宣布推出 MAI Image 2.7 图像编辑预览：主打场景重绘/打光、图内文字与符号修改、素材修复增强；称在 Artificial Analysis 图像编辑榜列第二、Arena Edit 第三，相对 2.6 在全部评测用例与编辑动作上提升，场景与风格项领先约 24 Elo。现阶段以已有图片+指令编辑为主，文生图尚未开放；官方未公布 2.7 API/定价。IT之家等跟进转述。",
+   "source": {
+    "name": "Microsoft AI",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-27T00:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://microsoft.ai/news/mai-image-2-7-debut/"
   }
  ],
  "heat": [
@@ -199,10 +224,15 @@
    "hour": "2026-10-28T04:00:00.000Z",
    "heat": 14.1,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-28T05:00:00.000Z",
+   "heat": 13.7,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "微软官方推出 MAI-Image-2.7 图像编辑预览并报榜单名次",
- "primaryUrl": "https://www.ithome.com/1/018/772.htm"
+ "primaryUrl": "https://microsoft.ai/news/mai-image-2-7-debut/"
 }
