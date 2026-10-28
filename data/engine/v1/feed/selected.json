@@ -129,6 +129,17 @@
    "eventPublicId": "2026-10-28-openai-oracle-apps-chatgpt"
   },
   {
+   "guid": "sha256:1a162d33f42d8b8e",
+   "title": "蚂蚁百灵开源 Ling-3.1-flash-1019：560B/25B MoE，AA 智力指数 44",
+   "summary": "",
+   "originalUrl": "https://huggingface.co/inclusionAI/Ling-3.1-flash-1019",
+   "pubDate": "2026-10-27T05:46:51.000Z",
+   "sourceName": "HF 机构新模型 · inclusionAI",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-10-28-antgroup-ling-31-flash-1019"
+  },
+  {
    "guid": "sha256:f0e3f8456fcbc65d",
    "title": "微软发布 MAI-Image-2.7：图像编辑预览登 Artificial Analysis 第二",
    "summary": "微软 AI 官方宣布推出 MAI Image 2.7 图像编辑预览：主打场景重绘/打光、图内文字与符号修改、素材修复增强；称在 Artificial Analysis 图像编辑榜列第二、Arena Edit 第三，相对 2.6 在全部评测用例与编辑动作上提升，场景与风格项领先约 24 Elo。现阶段以已有图片+指令编辑为主，文生图尚未开放；官方未公布 2.7 API/定价。IT之家等跟进转述。",
@@ -545,17 +556,6 @@
    "category": "paper",
    "categoryLabel": "论文",
    "eventPublicId": "2026-10-22-dharma-vocabx-slm"
-  },
-  {
-   "guid": "sha256:27c0a5d3fc255134",
-   "title": "谷歌：用 AI 辅助一线孕产超声，服务基层母婴筛查",
-   "summary": "Google Research 介绍 AI 辅助一线孕产超声。",
-   "originalUrl": "https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/",
-   "pubDate": "2026-10-21T16:23:53.000Z",
-   "sourceName": "Google Research Blog",
-   "category": "paper",
-   "categoryLabel": "论文",
-   "eventPublicId": "2026-10-22-google-ai-maternal-ultrasound"
   }
  ]
 }

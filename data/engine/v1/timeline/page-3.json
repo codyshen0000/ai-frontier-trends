@@ -6,6 +6,36 @@
  },
  "cards": [
   {
+   "key": "sha256:7ea705cfe9f05665",
+   "anchorAt": "2026-10-22T17:50:09.000Z",
+   "item": {
+    "id": "sha256:7ea705cfe9f05665",
+    "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
+    "summary": "Decoder 报道；一跳确认 Google Cloud 官方博客。",
+    "reason": "Google 云推出 Agent Compute Engine 硬件隔离 mic",
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-22T17:50:09.000Z",
+    "timelineAt": "2026-10-22T17:50:09.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-23-google-agent-compute-engine",
+    "originalUrl": "https://the-decoder.com/googles-agent-compute-engine-gives-every-gemini-agent-its-own-hardware-isolated-micro-virtual-machine/"
+   },
+   "group": {
+    "factId": "fact-2026-10-23-google-agent-compute-engine",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:7ea705cfe9f05665"
+    ]
+   }
+  },
+  {
    "key": "sha256:67297d2df9a3d7f1",
    "anchorAt": "2026-10-22T16:11:31.000Z",
    "item": {
@@ -483,29 +513,6 @@
      "sha256:95dedf578de78f3e"
     ]
    }
-  },
-  {
-   "key": "sha256:e270f5ba4688033d",
-   "anchorAt": "2026-10-21T00:00:00.000Z",
-   "item": {
-    "id": "sha256:e270f5ba4688033d",
-    "title": "OpenAI：民主治理前沿 AI 之二——赋能网络防御者",
-    "summary": "OpenAI 治理系列：赋能网络防御与公共机构韧性。",
-    "reason": "OpenAI：前沿 AI 赋能网络防御的治理蓝图",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-21T00:00:00.000Z",
-    "timelineAt": "2026-10-21T00:00:00.000Z",
-    "category": "opinion",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-22-openai-gov-cyber-defenders",
-    "originalUrl": "https://openai.com/index/empowering-cyber-defenders"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-4.json",
@@ -513,5 +520,5 @@
  "dayCounts": {},
  "page": 3,
  "pageCount": 4,
- "total": 69
+ "total": 70
 }

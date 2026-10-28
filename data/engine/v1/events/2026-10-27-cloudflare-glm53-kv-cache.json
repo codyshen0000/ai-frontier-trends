@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 10
+  "rank": null
  },
  "developments": [
   {
@@ -234,11 +234,20 @@
    "hour": "2026-10-28T05:00:00.000Z",
    "heat": 8.3,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-28T06:00:00.000Z",
+   "heat": 8.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T07:00:00.000Z",
+   "heat": 7.9,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "Cloudflare 修复 Workers AI KV 缓存跨请求暴露",
- "primaryUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
- "rankDelta": -1
+ "primaryUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/"
 }

@@ -288,6 +288,38 @@
    "group": null
   },
   {
+   "key": "sha256:1a162d33f42d8b8e",
+   "anchorAt": "2026-10-27T05:46:51.000Z",
+   "item": {
+    "id": "sha256:1a162d33f42d8b8e",
+    "title": "蚂蚁百灵开源 Ling-3.1-flash-1019：560B/25B MoE，AA 智力指数 44",
+    "summary": null,
+    "reason": "蚂蚁开源 Ling-3.1-flash-1019 并报 AA 指数提升",
+    "source": {
+     "name": "HF 机构新模型 · inclusionAI"
+    },
+    "publishedAt": "2026-10-27T05:46:51.000Z",
+    "timelineAt": "2026-10-27T05:46:51.000Z",
+    "category": "product",
+    "tags": [
+     "fp_hop_as_rep"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-28-antgroup-ling-31-flash-1019",
+    "originalUrl": "https://huggingface.co/inclusionAI/Ling-3.1-flash-1019"
+   },
+   "group": {
+    "factId": "fact-2026-10-28-antgroup-ling-31-flash-1019",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:1a162d33f42d8b8e"
+    ]
+   }
+  },
+  {
    "key": "sha256:f0e3f8456fcbc65d",
    "anchorAt": "2026-10-27T00:00:00.000Z",
    "item": {
@@ -529,36 +561,6 @@
      "sha256:8eb6001a836a6e50"
     ]
    }
-  },
-  {
-   "key": "sha256:35e334c198740f74",
-   "anchorAt": "2026-10-26T00:00:00.000Z",
-   "item": {
-    "id": "sha256:35e334c198740f74",
-    "title": "OpenAI 发布 GPT-6.1 Terra",
-    "summary": null,
-    "reason": "OpenAI 发布 GPT-6.1 Terra，强调计算机使用与性价比",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-26T00:00:00.000Z",
-    "timelineAt": "2026-10-26T00:00:00.000Z",
-    "category": "model",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-27-openai-gpt61-terra",
-    "originalUrl": "https://openai.com/index/introducing-gpt-6-1-terra"
-   },
-   "group": {
-    "factId": "fact-2026-10-27-openai-gpt61-terra",
-    "additionalSourceCount": 3,
-    "reportCount": 4,
-    "memberIds": [
-     "sha256:35e334c198740f74"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-2.json",
@@ -566,7 +568,7 @@
   {
    "rank": 1,
    "title": "DeepMind 发布 Genie 4：新一代世界仿真",
-   "heat": 36.2,
+   "heat": 33.4,
    "trend": "down",
    "storyPublicId": "2026-10-28-deepmind-genie-4",
    "itemId": "sha256:e960e8891f7d7ad8",
@@ -597,7 +599,7 @@
   {
    "rank": 2,
    "title": "Anthropic 正式递交公开上市申请",
-   "heat": 30.7,
+   "heat": 28.3,
    "trend": "down",
    "storyPublicId": "2026-10-27-anthropic-ipo-s1",
    "itemId": "sha256:8128c7853b28b767",
@@ -627,8 +629,27 @@
   },
   {
    "rank": 3,
+   "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
+   "heat": 14.6,
+   "trend": "down",
+   "storyPublicId": "2026-10-28-google-sleep-framework-continual",
+   "itemId": "sha256:e97319d8730a2e80",
+   "participants": [
+    {
+     "name": "Google Research Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "CTOL Digital Solutions",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2
+  },
+  {
+   "rank": 4,
    "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
-   "heat": 15.9,
+   "heat": 14.6,
    "trend": "down",
    "storyPublicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
    "itemId": "sha256:449070727cbfb984",
@@ -645,28 +666,9 @@
    "participantCount": 2
   },
   {
-   "rank": 4,
-   "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
-   "heat": 15.8,
-   "trend": "up",
-   "storyPublicId": "2026-10-28-google-sleep-framework-continual",
-   "itemId": "sha256:e97319d8730a2e80",
-   "participants": [
-    {
-     "name": "Google Research Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "CTOL Digital Solutions",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 2
-  },
-  {
    "rank": 5,
    "title": "Cohere：热门开源权重模型出现异常外传行为",
-   "heat": 15.6,
+   "heat": 14.4,
    "trend": "down",
    "storyPublicId": "2026-10-27-cohere-qwen-concerning-behavior",
    "itemId": "sha256:6e162aff655bfd4c",
@@ -689,7 +691,7 @@
  ],
  "dayCounts": {
   "2026-10-28": 8,
-  "2026-10-27": 8,
+  "2026-10-27": 9,
   "2026-10-26": 4,
   "2026-10-25": 3,
   "2026-10-24": 7,
@@ -702,5 +704,5 @@
  },
  "page": 1,
  "pageCount": 4,
- "total": 69
+ "total": 70
 }

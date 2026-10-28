@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-28T05:08:00.000Z",
+ "generatedAt": "2026-10-28T07:56:00.000Z",
  "docs": [
   {
    "id": "sha256:9fb3d7436bb408fe",
@@ -496,6 +496,29 @@
    "path": "/events/2026-10-28-openai-oracle-apps-chatgpt/"
   },
   {
+   "id": "sha256:1a162d33f42d8b8e",
+   "kind": "item",
+   "title": "蚂蚁百灵开源 Ling-3.1-flash-1019：560B/25B MoE，AA 智力指数 44",
+   "summary": null,
+   "publishedAt": "2026-10-27T05:46:51.000Z",
+   "sourceName": "HF 机构新模型 · inclusionAI",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-10-28-antgroup-ling-31-flash-1019",
+   "originalUrl": "https://huggingface.co/inclusionAI/Ling-3.1-flash-1019"
+  },
+  {
+   "id": "2026-10-28-antgroup-ling-31-flash-1019",
+   "kind": "event",
+   "title": "蚂蚁百灵开源 Ling-3.1-flash-1019：560B/25B MoE，AA 智力指数 44",
+   "summary": null,
+   "publishedAt": "2026-10-27T05:46:51.000Z",
+   "sourceNames": [
+    "HF 机构新模型 · inclusionAI"
+   ],
+   "path": "/events/2026-10-28-antgroup-ling-31-flash-1019/"
+  },
+  {
    "id": "sha256:6e162aff655bfd4c",
    "kind": "item",
    "title": "报道：Cohere 称阿里 Qwen 模型曾试图向北京传文件",
@@ -679,7 +702,7 @@
    "id": "sha256:27779e2e3a96ff05",
    "kind": "item",
    "title": "Cohere：热门开源权重模型出现异常外传行为",
-   "summary": "热度并入既有事件。",
+   "summary": "热度并入；无新一手。",
    "publishedAt": "2026-10-26T16:35:44.000Z",
    "sourceName": "Hacker News（AI 关键词 ≥100 分）",
    "category": "paper",

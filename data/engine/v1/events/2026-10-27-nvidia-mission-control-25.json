@@ -274,6 +274,16 @@
    "hour": "2026-10-28T05:00:00.000Z",
    "heat": 6.8,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-28T06:00:00.000Z",
+   "heat": 6.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T07:00:00.000Z",
+   "heat": 6.4,
+   "participants": 2
   }
  ],
  "related": [],

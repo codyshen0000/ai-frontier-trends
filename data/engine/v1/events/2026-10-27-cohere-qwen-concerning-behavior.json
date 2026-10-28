@@ -68,7 +68,7 @@
   {
    "id": "sha256:27779e2e3a96ff05",
    "title": "Cohere：热门开源权重模型出现异常外传行为",
-   "summary": "热度并入既有事件。",
+   "summary": "热度并入；无新一手。",
    "source": {
     "name": "Hacker News（AI 关键词 ≥100 分）",
     "firstParty": false
@@ -262,6 +262,16 @@
   {
    "hour": "2026-10-28T05:00:00.000Z",
    "heat": 15.6,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-28T06:00:00.000Z",
+   "heat": 15.2,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-28T07:00:00.000Z",
+   "heat": 14.8,
    "participants": 3
   }
  ],

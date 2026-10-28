@@ -1,0 +1,213 @@
+{
+ "publicId": "2026-10-28-antgroup-ling-31-flash-1019",
+ "title": "蚂蚁百灵开源 Ling-3.1-flash-1019：560B/25B MoE，AA 智力指数 44",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-27T05:46:51.000Z",
+ "latestAt": "2026-10-27T05:46:51.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": null,
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 2,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": 6
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-28-antgroup-ling-31-flash-1019",
+   "title": "蚂蚁百灵开源 Ling-3.1-flash-1019：560B/25B MoE，AA 智力指数 44",
+   "firstReportAt": "2026-10-27T05:46:51.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:1a162d33f42d8b8e",
+    "title": "蚂蚁百灵开源 Ling-3.1-flash-1019：560B/25B MoE，AA 智力指数 44",
+    "summary": null,
+    "source": {
+     "name": "HF 机构新模型 · inclusionAI",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-27T05:46:51.000Z",
+    "selected": true,
+    "originalUrl": "https://huggingface.co/inclusionAI/Ling-3.1-flash-1019"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:1a162d33f42d8b8e",
+   "title": "蚂蚁百灵开源 Ling-3.1-flash-1019：560B/25B MoE，AA 智力指数 44",
+   "summary": null,
+   "source": {
+    "name": "HF 机构新模型 · inclusionAI",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-27T05:46:51.000Z",
+   "selected": true,
+   "originalUrl": "https://huggingface.co/inclusionAI/Ling-3.1-flash-1019"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:1a162d33f42d8b8e",
+   "title": "蚂蚁百灵开源 Ling-3.1-flash-1019：560B/25B MoE，AA 智力指数 44",
+   "summary": null,
+   "source": {
+    "name": "HF 机构新模型 · inclusionAI",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-27T05:46:51.000Z",
+   "selected": true,
+   "originalUrl": "https://huggingface.co/inclusionAI/Ling-3.1-flash-1019"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-27T06:00:00.000Z",
+   "heat": 9.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T07:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T08:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T09:00:00.000Z",
+   "heat": 9.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T10:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T11:00:00.000Z",
+   "heat": 8.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T12:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T13:00:00.000Z",
+   "heat": 8.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T14:00:00.000Z",
+   "heat": 7.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T15:00:00.000Z",
+   "heat": 7.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T16:00:00.000Z",
+   "heat": 7.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T17:00:00.000Z",
+   "heat": 7.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T18:00:00.000Z",
+   "heat": 7.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T19:00:00.000Z",
+   "heat": 6.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T20:00:00.000Z",
+   "heat": 6.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T21:00:00.000Z",
+   "heat": 6.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T22:00:00.000Z",
+   "heat": 6.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T23:00:00.000Z",
+   "heat": 6.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-28T00:00:00.000Z",
+   "heat": 5.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-28T01:00:00.000Z",
+   "heat": 5.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-28T02:00:00.000Z",
+   "heat": 5.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-28T03:00:00.000Z",
+   "heat": 5.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-28T04:00:00.000Z",
+   "heat": 5.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-28T05:00:00.000Z",
+   "heat": 14.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T06:00:00.000Z",
+   "heat": 14.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T07:00:00.000Z",
+   "heat": 14.0,
+   "participants": 2
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "蚂蚁开源 Ling-3.1-flash-1019 并报 AA 指数提升",
+ "cover": {
+  "url": "https://cdn-uploads.huggingface.co/production/uploads/65d6aba7dee9f442f8ea7ded/aZ4wSjB4OCgUFnyYINngi.png",
+  "width": null,
+  "height": null,
+  "alt": "Ling-3.1-flash-1019 在 Artificial Analysis Intelligence Index 得分示意（约 44）",
+  "valueClass": "official_diagram"
+ },
+ "primaryUrl": "https://huggingface.co/inclusionAI/Ling-3.1-flash-1019"
+}

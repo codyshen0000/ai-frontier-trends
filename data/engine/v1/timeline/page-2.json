@@ -6,6 +6,36 @@
  },
  "cards": [
   {
+   "key": "sha256:35e334c198740f74",
+   "anchorAt": "2026-10-26T00:00:00.000Z",
+   "item": {
+    "id": "sha256:35e334c198740f74",
+    "title": "OpenAI 发布 GPT-6.1 Terra",
+    "summary": null,
+    "reason": "OpenAI 发布 GPT-6.1 Terra，强调计算机使用与性价比",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-26T00:00:00.000Z",
+    "timelineAt": "2026-10-26T00:00:00.000Z",
+    "category": "model",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-27-openai-gpt61-terra",
+    "originalUrl": "https://openai.com/index/introducing-gpt-6-1-terra"
+   },
+   "group": {
+    "factId": "fact-2026-10-27-openai-gpt61-terra",
+    "additionalSourceCount": 3,
+    "reportCount": 4,
+    "memberIds": [
+     "sha256:35e334c198740f74"
+    ]
+   }
+  },
+  {
    "key": "sha256:af9112a54e84d14e",
    "anchorAt": "2026-10-25T10:08:49.000Z",
    "item": {
@@ -526,36 +556,6 @@
      "sha256:5ddee939d5fa55a3"
     ]
    }
-  },
-  {
-   "key": "sha256:7ea705cfe9f05665",
-   "anchorAt": "2026-10-22T17:50:09.000Z",
-   "item": {
-    "id": "sha256:7ea705cfe9f05665",
-    "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
-    "summary": "Decoder 报道；一跳确认 Google Cloud 官方博客。",
-    "reason": "Google 云推出 Agent Compute Engine 硬件隔离 mic",
-    "source": {
-     "name": "The Decoder"
-    },
-    "publishedAt": "2026-10-22T17:50:09.000Z",
-    "timelineAt": "2026-10-22T17:50:09.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-23-google-agent-compute-engine",
-    "originalUrl": "https://the-decoder.com/googles-agent-compute-engine-gives-every-gemini-agent-its-own-hardware-isolated-micro-virtual-machine/"
-   },
-   "group": {
-    "factId": "fact-2026-10-23-google-agent-compute-engine",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:7ea705cfe9f05665"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-3.json",
@@ -563,5 +563,5 @@
  "dayCounts": {},
  "page": 2,
  "pageCount": 4,
- "total": 69
+ "total": 70
 }

@@ -19,7 +19,7 @@
    "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
    "latestAt": "2026-10-28T00:00:00.000Z",
    "reportCount": 2,
-   "hotRank": 4
+   "hotRank": 3
   },
   {
    "publicId": "2026-10-28-deepmind-genie-4",
@@ -33,7 +33,7 @@
    "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
    "latestAt": "2026-10-27T21:26:00.000Z",
    "reportCount": 2,
-   "hotRank": 3
+   "hotRank": 4
   },
   {
    "publicId": "2026-10-27-cohere-qwen-concerning-behavior",
@@ -47,7 +47,7 @@
    "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族",
    "latestAt": "2026-10-27T17:16:52.000Z",
    "reportCount": 1,
-   "hotRank": 6
+   "hotRank": 7
   },
   {
    "publicId": "2026-10-28-frontier-labs-eth-refutation",
@@ -96,14 +96,14 @@
    "title": "OpenAI：与学界共建科学理解",
    "latestAt": "2026-10-27T12:37:24.000Z",
    "reportCount": 3,
-   "hotRank": 7
+   "hotRank": 8
   },
   {
    "publicId": "2026-10-27-openai-gpt61-terra",
    "title": "OpenAI 发布 GPT-6.1 Terra",
    "latestAt": "2026-10-27T08:27:46.000Z",
    "reportCount": 4,
-   "hotRank": 8
+   "hotRank": 10
   },
   {
    "publicId": "2026-10-28-openai-oracle-apps-chatgpt",
@@ -111,6 +111,13 @@
    "latestAt": "2026-10-27T07:00:00.000Z",
    "reportCount": 1,
    "hotRank": null
+  },
+  {
+   "publicId": "2026-10-28-antgroup-ling-31-flash-1019",
+   "title": "蚂蚁百灵开源 Ling-3.1-flash-1019：560B/25B MoE，AA 智力指数 44",
+   "latestAt": "2026-10-27T05:46:51.000Z",
+   "reportCount": 1,
+   "hotRank": 6
   },
   {
    "publicId": "2026-10-27-baseten-bdn-sealed-volumes",
@@ -124,7 +131,7 @@
    "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
    "latestAt": "2026-10-26T22:41:48.000Z",
    "reportCount": 2,
-   "hotRank": 10
+   "hotRank": null
   },
   {
    "publicId": "2026-10-27-nvidia-minerva-gpu-yield",

@@ -229,10 +229,21 @@
    "hour": "2026-10-28T05:00:00.000Z",
    "heat": 13.7,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-28T06:00:00.000Z",
+   "heat": 13.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T07:00:00.000Z",
+   "heat": 12.9,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "微软官方推出 MAI-Image-2.7 图像编辑预览并报榜单名次",
- "primaryUrl": "https://microsoft.ai/news/mai-image-2-7-debut/"
+ "primaryUrl": "https://microsoft.ai/news/mai-image-2-7-debut/",
+ "rankDelta": 0
 }

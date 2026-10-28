@@ -1,6 +1,13 @@
 {
  "sources": [
   {
+   "sourceId": "hf-org-inclusionai",
+   "name": "HF 机构新模型 · inclusionAI",
+   "tier": "T1",
+   "kind": "editorial",
+   "homepage": "https://huggingface.co"
+  },
+  {
    "sourceId": "hn-ai-front",
    "name": "Hacker News（AI 关键词 ≥100 分）",
    "tier": "T2",
