@@ -109,10 +109,26 @@ const here = dirname(fileURLToPath(import.meta.url));
 const pages = readFileSync(join(here, "pages.tsx"), "utf8");
 const hydrate = readFileSync(join(here, "client/hydrate.ts"), "utf8");
 const site = readFileSync(join(here, "site.ts"), "utf8");
+const css = readFileSync(join(here, "app.css"), "utf8");
 assert.match(pages, /data-ft-daily-status-host/, "tip /daily/ renders a status host");
 assert.match(pages, /!dated/, "dated /daily/YYYY-MM-DD/ pages skip the host");
 assert.match(hydrate, /bindDailyStatus/, "hydrate re-checks today.json vs tip");
 assert.match(hydrate, /api\/v1\/daily\/\$\{/, "hydrate fetches api/v1/daily/<today>.json");
 assert.match(site, /dayKey\(dataAsOf\)/, "today is calendar day from dataAsOf, not tip key");
+assert.match(css, /\.ft-daily-status\s*\{/, "status copy has an on-page class, not toast-only");
+
+const belowBanner = dailyStatusBannerHtml(
+  resolveDailyStatus({
+    calendarToday: "2026-10-28",
+    tipKey: "2026-10-24",
+    todayHttpStatus: 200,
+    todayIssue: below,
+  }),
+);
+assert.match(belowBanner, /role="status"/);
+assert.match(belowBanner, /未达发布门槛/);
+assert.match(belowBanner, /10月24日/);
+assert.doesNotMatch(belowBanner, /hidden/);
+assert.doesNotMatch(belowBanner, /今天/);
 
 console.log("daily-status.test.ts ok");
