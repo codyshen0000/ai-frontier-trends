@@ -3,25 +3,25 @@
  "key": "2026-10-28",
  "issueNumber": 10,
  "title": "AI日报 · 2026-10-28",
- "generatedAt": "2026-10-28T00:39:32.000Z",
+ "generatedAt": "2026-10-28T02:15:35.000Z",
  "lead": {
   "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族",
   "leadParagraph": "LiquidAI 经 Hugging Face 发布 LFM3：以 LFM3-1.7B-Base 衍生文本/视觉/音频/omni/决策等约 2B 模型，强调边缘部署与单卡微调；权重开源。属厂商/HF 一手发布。"
  },
- "leadItemId": "sha256:1c5b51464767c2ad",
+ "leadItemId": "sha256:a3a8ddf99df9b0da",
  "overview": "LiquidAI 发布 LFM3：约 2B 多模态同骨干开源族。",
  "highlights": [
   {
-   "itemId": "sha256:1c5b51464767c2ad",
+   "itemId": "sha256:a3a8ddf99df9b0da",
    "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族",
    "summary": "LiquidAI 经 Hugging Face 发布 LFM3：以 LFM3-1.7B-Base 衍生文本/视觉/音频/omni/决策等约 2B 模型，强调边缘部署与单卡微调；权重开源。属厂商/HF 一手发布。",
-   "sourceName": "Hugging Face Blog",
+   "sourceName": "Liquid AI Blog",
    "sourceUrl": "https://huggingface.co/blog/LiquidAI/lfm3",
    "sourceIconUrl": null,
    "firstParty": true,
    "publishedAt": "2026-10-27T17:16:52.000Z",
    "available": true,
-   "otherSources": 0
+   "otherSources": 1
   },
   {
    "itemId": "sha256:64295c3ae779f4ac",
@@ -45,7 +45,7 @@
    "firstParty": true,
    "publishedAt": "2026-10-27T17:35:00.000Z",
    "available": true,
-   "otherSources": 0
+   "otherSources": 1
   },
   {
    "itemId": "sha256:c417f8e3d39d0b89",
@@ -66,16 +66,16 @@
    "summary": null,
    "items": [
     {
-     "itemId": "sha256:1c5b51464767c2ad",
+     "itemId": "sha256:a3a8ddf99df9b0da",
      "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族",
      "summary": "LiquidAI 经 Hugging Face 发布 LFM3：以 LFM3-1.7B-Base 衍生文本/视觉/音频/omni/决策等约 2B 模型，强调边缘部署与单卡微调；权重开源。属厂商/HF 一手发布。",
-     "sourceName": "Hugging Face Blog",
+     "sourceName": "Liquid AI Blog",
      "sourceUrl": "https://huggingface.co/blog/LiquidAI/lfm3",
      "sourceIconUrl": null,
      "firstParty": true,
      "publishedAt": "2026-10-27T17:16:52.000Z",
      "available": true,
-     "otherSources": 0
+     "otherSources": 1
     },
     {
      "itemId": "sha256:e960e8891f7d7ad8",
@@ -117,7 +117,7 @@
      "firstParty": true,
      "publishedAt": "2026-10-27T17:35:00.000Z",
      "available": true,
-     "otherSources": 0
+     "otherSources": 1
     },
     {
      "itemId": "sha256:1d6c5c59e46e52b9",
@@ -159,7 +159,19 @@
      "firstParty": true,
      "publishedAt": "2026-10-27T20:50:39.000Z",
      "available": true,
-     "otherSources": 0
+     "otherSources": 1
+    },
+    {
+     "itemId": "sha256:89893d5f73c77515",
+     "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
+     "summary": "Cloudflare 披露并修复其 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题，说明影响范围与补救。属官方安全通告。",
+     "sourceName": "Hacker News（AI 关键词 ≥100 分）",
+     "sourceUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+     "sourceIconUrl": null,
+     "firstParty": false,
+     "publishedAt": "2026-10-26T22:41:48.000Z",
+     "available": true,
+     "otherSources": 1
     },
     {
      "itemId": "sha256:257d2044442d252a",
@@ -214,34 +226,11 @@
      "publishedAt": "2026-10-26T16:00:00.000Z",
      "available": true,
      "otherSources": 1
-    },
-    {
-     "itemId": "sha256:8eb6001a836a6e50",
-     "title": "OpenAI：与学界共建科学理解",
-     "summary": "OpenAI 称与学术社区合作推进科学理解；媒体跟进称其请外部专家（含诺奖得主）核验模型在数学/计科/物理上的证明。一手以 OpenAI 通稿为准。",
-     "sourceName": "OpenAI News",
-     "sourceUrl": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-26T14:30:00.000Z",
-     "available": true,
-     "otherSources": 2
     }
    ]
   }
  ],
  "flashes": [
-  {
-   "itemId": "sha256:a9a41b70941237e4",
-   "title": "NVIDIA：RTX Spark 支撑神经渲染与游戏内 AI 角色",
-   "summary": "RTX Spark 开发者说明；本日日报位被 CUDA 13.4 按综合分替换。",
-   "sourceName": "NVIDIA Technical Blog",
-   "sourceUrl": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/",
-   "sourceIconUrl": null,
-   "firstParty": true,
-   "publishedAt": "2026-10-27T17:00:00.000Z",
-   "available": true
-  },
   {
    "itemId": "sha256:c44dc9ed271ff418",
    "title": "OpenAI：Check Point 用 Daybreak 加速漏洞研究",
@@ -340,16 +329,137 @@
    "firstParty": false,
    "publishedAt": "2026-10-28T00:20:10.000Z",
    "available": true
+  },
+  {
+   "itemId": "sha256:2247b97d682bdb4b",
+   "title": "Latent Space：Anthropic 如何用 Claude 交付 Claude",
+   "summary": "脑与手分离交付法；未过 T2=76，进快讯。",
+   "sourceName": "Latent Space",
+   "sourceUrl": "https://latent.space/p/opus55/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T00:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:991356d9e9385200",
+   "title": "报道：Firefox Smart Window 增加 AI 填表与网页监控",
+   "summary": null,
+   "sourceName": "The Verge · AI",
+   "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T00:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:662cec4c533afa61",
+   "title": "报道：国产 AI 3D 大模型 Hi3D 开源可商用",
+   "summary": "量子位报道 Hi3D 开源；未过 T2=76。",
+   "sourceName": "量子位",
+   "sourceUrl": "https://www.qbitai.com/2026/10/505694.html",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T00:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:ff390db43c3b5faf",
+   "title": "报道：Disruptive 募集约 100 亿美元基金做大额押注",
+   "summary": null,
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T00:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:3a6fc6b907c3f034",
+   "title": "报道：人形机器人全栈图纸与运动算法开源",
+   "summary": "量子位称全栈开源；细节待一手仓库核验。",
+   "sourceName": "量子位",
+   "sourceUrl": "https://www.qbitai.com/2026/10/505865.html",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T00:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:b7bdac3bb4ce8ed2",
+   "title": "报道：警方用 AI 判定「可疑」行为拦停司机",
+   "summary": "Gizmodo/HN 热议；未过 T2=76。",
+   "sourceName": "Gizmodo",
+   "sourceUrl": "https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T16:40:15.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:0fa71fcc03f57574",
+   "title": "报道：维基百科清理 AI 生成内容",
+   "summary": null,
+   "sourceName": "IEEE Spectrum",
+   "sourceUrl": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T11:08:15.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:93d8b38790e5bd87",
+   "title": "报道：NVIDIA 投资印度初创 Simplismart 做少卡跑模",
+   "summary": "TechCrunch：英伟达押注少 GPU 推理创业。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T11:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:b9b5de18e9156d54",
+   "title": "开源：Survival LLM 本地应急助手与资料库",
+   "summary": null,
+   "sourceName": "Hacker News（AI 关键词 ≥100 分）",
+   "sourceUrl": "https://www.brangus.io/survival-llm",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T19:55:06.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:8128c7853b28b767",
+   "title": "跟进：亚马逊经票据转换在 Anthropic 持股更深",
+   "summary": "TC 解读 Amazon 持股；并入 Anthropic IPO 簇。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-28T01:15:28.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:de6edf7c4f457352",
+   "title": "随笔：AI 时代的人月神话",
+   "summary": null,
+   "sourceName": "Hacker News（AI 关键词 ≥100 分）",
+   "sourceUrl": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T06:25:37.000Z",
+   "available": true
   }
  ],
  "cover": null,
  "metrics": {
   "totalEvents": 12,
-  "sourcesCount": 11,
-  "firstPartyEvents": 11,
+  "sourcesCount": 16,
+  "firstPartyEvents": 10,
   "modelsReleased": 2
  },
- "readingMinutes": 3,
+ "readingMinutes": 4,
  "prev": "2026-10-27",
  "next": null
 }

@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 9
+  "rank": null
  },
  "developments": [
   {
@@ -249,11 +249,15 @@
    "hour": "2026-10-28T01:00:00.000Z",
    "heat": 7.7,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-28T02:00:00.000Z",
+   "heat": 7.5,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "NVIDIA Minerva 用遥测提升 GPU 良率",
- "primaryUrl": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/",
- "rankDelta": -3
+ "primaryUrl": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/"
 }

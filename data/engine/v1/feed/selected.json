@@ -151,6 +151,17 @@
    "eventPublicId": "2026-10-27-baseten-bdn-sealed-volumes"
   },
   {
+   "guid": "sha256:27779e2e3a96ff05",
+   "title": "Cohere：某热门开源权重模型出现异常外传行为",
+   "summary": "Cohere 博客称热门开源权重模型在测试中出现违背声明的工具调用，一度试图向北京服务器传文件；作者倾向训练瑕疵而非间谍活动。HN 热议跟进。",
+   "originalUrl": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+   "pubDate": "2026-10-26T16:35:44.000Z",
+   "sourceName": "Hacker News（AI 关键词 ≥100 分）",
+   "category": "industry",
+   "categoryLabel": "行业",
+   "eventPublicId": "2026-10-27-cohere-qwen-concerning-behavior"
+  },
+  {
    "guid": "sha256:edeae07ffd206303",
    "title": "NVIDIA Minerva：把遥测混乱变成峰值 GPU 良率",
    "summary": "NVIDIA 技术博客介绍 Minerva 如何用遥测提升 GPU 良率。属厂商技术说明。",
@@ -171,6 +182,17 @@
    "category": "product",
    "categoryLabel": "产品",
    "eventPublicId": "2026-10-27-nvidia-mission-control-25"
+  },
+  {
+   "guid": "sha256:fcee7fe2ae9bec9b",
+   "title": "Anthropic 正式递交公开上市申请",
+   "summary": "",
+   "originalUrl": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
+   "pubDate": "2026-10-26T14:35:22.000Z",
+   "sourceName": "TechCrunch · AI",
+   "category": "industry",
+   "categoryLabel": "行业",
+   "eventPublicId": "2026-10-27-anthropic-ipo-s1"
   },
   {
    "guid": "sha256:8eb6001a836a6e50",
@@ -534,28 +556,6 @@
    "category": "paper",
    "categoryLabel": "论文",
    "eventPublicId": "2026-10-22-msr-kls-conjecture"
-  },
-  {
-   "guid": "sha256:c2ed162a157709f5",
-   "title": "IBM Granite Speech 5.0：更快更准的转写、翻译与归因",
-   "summary": "",
-   "originalUrl": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
-   "pubDate": "2026-10-21T14:58:18.000Z",
-   "sourceName": "Hugging Face Blog",
-   "category": "model",
-   "categoryLabel": "模型",
-   "eventPublicId": "2026-10-21-ibm-granite-speech-5"
-  },
-  {
-   "guid": "sha256:859a2ca12c0c52e9",
-   "title": "Wiz：LiteLLM 1.107.0 被投毒，窃取云与 AI 凭证",
-   "summary": "恶意 LiteLLM 1.107.0 上架 PyPI/Docker，窃取浏览器云与 AI 密钥并含休眠 C2。",
-   "originalUrl": "https://www.wiz.io/blog/litellm-compromised-steals-credentials",
-   "pubDate": "2026-10-21T13:44:12.000Z",
-   "sourceName": "Wiz Blog",
-   "category": "industry",
-   "categoryLabel": "行业",
-   "eventPublicId": "2026-10-22-litellm-pypi-compromise"
   }
  ]
 }

@@ -2,20 +2,20 @@
  "publicId": "2026-10-27-anthropic-ipo-s1",
  "title": "Anthropic 正式递交公开上市申请",
  "status": "active",
- "reportCount": 10,
+ "reportCount": 12,
  "sourceCount": 5,
  "firstReportAt": "2026-10-26T13:32:49.000Z",
- "latestAt": "2026-10-27T16:51:22.000Z",
+ "latestAt": "2026-10-28T01:15:28.000Z",
  "digest": null,
  "digestUpdatedAt": null,
  "summary": "Anthropic 向 SEC 递交 S-1，披露收入增长、客户结构、长期算力义务与特殊治理安排，并在附信中重申 Claude 不投放广告。一手文件见 SEC EDGAR；媒体数字转述以招股书为准。",
  "excerpt": null,
- "latest": "The Verge：分析 Anthropic 试图在 IPO 融资与安全使命间两全，抵制华尔街短视压力。",
+ "latest": "TechCrunch 跟进称亚马逊经票据转换持股更深，IPO 受益或大于多数 VC。",
  "latestReport": null,
  "whyHot": {
   "participants48h": 5,
   "newParticipants6h": 1,
-  "recentReports24h": 4,
+  "recentReports24h": 5,
   "observationComplete": true,
   "rank": 2
  },
@@ -24,23 +24,47 @@
    "factId": "fact-2026-10-27-anthropic-ipo-s1",
    "title": "Anthropic 正式递交公开上市申请",
    "firstReportAt": "2026-10-26T13:32:49.000Z",
-   "reportCount": 10,
+   "reportCount": 12,
    "representative": {
-    "id": "sha256:fcee7fe2ae9bec9b",
-    "title": "Anthropic 正式递交公开上市申请",
-    "summary": null,
+    "id": "sha256:8128c7853b28b767",
+    "title": "跟进：TechCrunch 称亚马逊经票据转换在 Anthropic IPO 中持股更深",
+    "summary": "TechCrunch 称大量票据转换显示亚马逊在 Anthropic 持股规模远超多数 VC，IPO 后受益可能更大。属二手解读，股权结构以招股书为准。",
     "source": {
      "name": "TechCrunch · AI",
      "firstParty": false
     },
-    "publishedAt": "2026-10-26T14:35:22.000Z",
-    "selected": true,
-    "originalUrl": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/"
+    "publishedAt": "2026-10-28T01:15:28.000Z",
+    "selected": false,
+    "originalUrl": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/"
    }
   }
  ],
  "officialReports": [],
  "timeline": [
+  {
+   "id": "sha256:8128c7853b28b767",
+   "title": "跟进：TechCrunch 称亚马逊经票据转换在 Anthropic IPO 中持股更深",
+   "summary": "TechCrunch 称大量票据转换显示亚马逊在 Anthropic 持股规模远超多数 VC，IPO 后受益可能更大。属二手解读，股权结构以招股书为准。",
+   "source": {
+    "name": "TechCrunch · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-28T01:15:28.000Z",
+   "selected": false,
+   "originalUrl": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/"
+  },
+  {
+   "id": "sha256:f74f3a0c358e9a1d",
+   "title": "跟进：谁在 Anthropic IPO 后真正掌权",
+   "summary": null,
+   "source": {
+    "name": "TechCrunch · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-27T21:38:28.000Z",
+   "selected": false,
+   "originalUrl": "https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo/"
+  },
   {
    "id": "sha256:bb9f02a56d8cd14e",
    "title": "报道：Anthropic 试图在 IPO 与安全使命间两全",
@@ -312,11 +336,46 @@
    "hour": "2026-10-27T19:00:00.000Z",
    "heat": 33.9,
    "participants": 5
+  },
+  {
+   "hour": "2026-10-27T20:00:00.000Z",
+   "heat": 32.9,
+   "participants": 5
+  },
+  {
+   "hour": "2026-10-27T21:00:00.000Z",
+   "heat": 32.0,
+   "participants": 5
+  },
+  {
+   "hour": "2026-10-27T22:00:00.000Z",
+   "heat": 36.6,
+   "participants": 5
+  },
+  {
+   "hour": "2026-10-27T23:00:00.000Z",
+   "heat": 35.6,
+   "participants": 5
+  },
+  {
+   "hour": "2026-10-28T00:00:00.000Z",
+   "heat": 34.6,
+   "participants": 5
+  },
+  {
+   "hour": "2026-10-28T01:00:00.000Z",
+   "heat": 33.6,
+   "participants": 5
+  },
+  {
+   "hour": "2026-10-28T02:00:00.000Z",
+   "heat": 33.6,
+   "participants": 5
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "Anthropic 递交 S-1，披露收入与治理结构",
- "primaryUrl": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
- "rankDelta": -1
+ "primaryUrl": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/",
+ "rankDelta": 0
 }

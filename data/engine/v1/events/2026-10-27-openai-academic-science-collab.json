@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 1,
   "observationComplete": true,
-  "rank": 5
+  "rank": 7
  },
  "developments": [
   {
@@ -266,10 +266,15 @@
    "hour": "2026-10-28T01:00:00.000Z",
    "heat": 15.5,
    "participants": 3
+  },
+  {
+   "hour": "2026-10-28T02:00:00.000Z",
+   "heat": 15.0,
+   "participants": 3
   }
  ],
  "related": [],
  "topics": [],
  "primaryUrl": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
- "rankDelta": -2
+ "rankDelta": -3
 }

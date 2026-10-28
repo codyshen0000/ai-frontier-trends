@@ -1,623 +1,638 @@
 {
-  "computedAt": "2026-10-28T01:20:00.000Z",
-  "windowHours": 48,
-  "entries": [
+ "computedAt": "2026-10-28T02:21:00.000Z",
+ "windowHours": 48,
+ "entries": [
+  {
+   "rank": 1,
+   "story": {
+    "publicId": "2026-10-28-deepmind-genie-4",
+    "title": "DeepMind 发布 Genie 4：新一代世界仿真"
+   },
+   "heat": 39.2,
+   "trend": "flat",
+   "trendPct": 9.5,
+   "badges": [],
+   "participantCount": 5,
+   "sourceCount": 4,
+   "sourceNames": [
+    "The Decoder",
+    "TechCrunch · AI",
+    "Google DeepMind Blog",
+    "The Verge · AI"
+   ],
+   "participants": [
     {
-      "rank": 1,
-      "story": {
-        "publicId": "2026-10-28-deepmind-genie-4",
-        "title": "DeepMind 发布 Genie 4：新一代世界仿真"
-      },
-      "heat": 40.7,
-      "trend": "up",
-      "trendPct": 10.3,
-      "badges": [],
-      "participantCount": 5,
-      "sourceCount": 4,
-      "sourceNames": [
-        "The Decoder",
-        "TechCrunch · AI",
-        "Google DeepMind Blog",
-        "The Verge · AI"
-      ],
-      "participants": [
-        {
-          "name": "Google DeepMind Blog",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Decoder",
-          "kind": "editorial"
-        },
-        {
-          "name": "TechCrunch · AI",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Verge · AI",
-          "kind": "editorial"
-        },
-        {
-          "name": "IT之家（全站，需关键词过滤）",
-          "kind": "signal"
-        }
-      ],
-      "spark": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        10,
-        29.3,
-        38.3,
-        37.2,
-        36.1,
-        35.1,
-        34.1,
-        33.1,
-        41.9,
-        40.7
-      ],
-      "summary": null,
-      "latest": null,
-      "cover": null,
-      "rankDelta": 0,
-      "heatDeltaPct": 0.7
+     "name": "Google DeepMind Blog",
+     "kind": "editorial"
     },
     {
-      "rank": 2,
-      "story": {
-        "publicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
-        "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享"
-      },
-      "heat": 17.9,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [
-        "new"
-      ],
-      "participantCount": 2,
-      "sourceCount": 2,
-      "sourceNames": [
-        "DevOTD",
-        "NVIDIA Technical Blog"
-      ],
-      "participants": [
-        {
-          "name": "NVIDIA Technical Blog",
-          "kind": "editorial"
-        },
-        {
-          "name": "DevOTD",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        10,
-        19.5,
-        19,
-        18.4,
-        17.9
-      ],
-      "summary": "NVIDIA 技术博客介绍 CUDA 13.4 在 Kubernetes 中的内存强制 GPU 共享：按显存配额切分单卡，减少小负载独占整卡造成的空闲。属厂商开发者文档级发布。",
-      "latest": "DevOTD 跟进：内存边界与 KAI Scheduler 对接（hot_floor 第二源）。",
-      "cover": null,
-      "rankDelta": 0,
-      "heatDeltaPct": 1.1
+     "name": "The Decoder",
+     "kind": "editorial"
     },
     {
-      "rank": 3,
-      "story": {
-        "publicId": "2026-10-28-google-sleep-framework-continual",
-        "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘"
-      },
-      "heat": 17.8,
-      "trend": "up",
-      "trendPct": 87.4,
-      "badges": [
-        "rising"
-      ],
-      "participantCount": 2,
-      "sourceCount": 2,
-      "sourceNames": [
-        "CTOL Digital Solutions",
-        "Google Research Blog"
-      ],
-      "participants": [
-        {
-          "name": "Google Research Blog",
-          "kind": "editorial"
-        },
-        {
-          "name": "CTOL Digital Solutions",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        9.9,
-        9.6,
-        9.3,
-        9.1,
-        8.8,
-        8.6,
-        18.3,
-        17.8
-      ],
-      "summary": null,
-      "latest": "CTOL 跟进：做梦 vs 巩固消融解读（hot_floor 第二源）。",
-      "cover": null,
-      "heatDeltaPct": 1.1,
-      "rankDelta": 0
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
     },
     {
-      "rank": 4,
-      "story": {
-        "publicId": "2026-10-28-liquidai-lfm3",
-        "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族"
-      },
-      "heat": 15.9,
-      "trend": "down",
-      "trendPct": -15.4,
-      "badges": [],
-      "participantCount": 2,
-      "sourceCount": 2,
-      "sourceNames": [
-        "Liquid AI Blog",
-        "Hugging Face Blog"
-      ],
-      "participants": [
-        {
-          "name": "Liquid AI Blog",
-          "kind": "editorial"
-        },
-        {
-          "name": "Hugging Face Blog",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        19.6,
-        19,
-        18.5,
-        18,
-        17.5,
-        17,
-        16.5,
-        16
-      ],
-      "summary": null,
-      "latest": "补挂 Liquid AI 官方博客为独立 editorial participant，并换为代表（hot_floor hop-as-rep）。",
-      "cover": null,
-      "heatDeltaPct": 71,
-      "rankDelta": 0
+     "name": "The Verge · AI",
+     "kind": "editorial"
     },
     {
-      "rank": 5,
-      "story": {
-        "publicId": "2026-10-27-openai-academic-science-collab",
-        "title": "OpenAI：与学界共建科学理解"
-      },
-      "heat": 15.5,
-      "trend": "down",
-      "trendPct": -14.8,
-      "badges": [],
-      "participantCount": 3,
-      "sourceCount": 3,
-      "sourceNames": [
-        "The Decoder",
-        "The Verge · AI",
-        "OpenAI News"
-      ],
-      "participants": [
-        {
-          "name": "OpenAI News",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Decoder",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Verge · AI",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        17,
-        16.5,
-        16,
-        15.6,
-        15.1,
-        14.7,
-        14.3,
-        13.9,
-        13.5,
-        13.1,
-        12.7,
-        12.4,
-        21.9,
-        21.3,
-        20.7,
-        20.1,
-        19.5,
-        19,
-        18.4,
-        17.9,
-        17.4,
-        16.9,
-        16.4,
-        15.9,
-        15.5
-      ],
-      "summary": "OpenAI 称与学术社区合作推进科学理解；媒体跟进称其请外部专家（含诺奖得主）核验模型在数学/计科/物理上的证明。一手以 OpenAI 通稿为准。",
-      "latest": null,
-      "cover": null,
-      "rankDelta": -2,
-      "heatDeltaPct": 1.3
-    },
-    {
-      "rank": 6,
-      "story": {
-        "publicId": "2026-10-27-openai-gpt61-terra",
-        "title": "OpenAI 发布 GPT-6.1 Terra"
-      },
-      "heat": 15.4,
-      "trend": "down",
-      "trendPct": -26.7,
-      "badges": [],
-      "participantCount": 3,
-      "sourceCount": 3,
-      "sourceNames": [
-        "量子位",
-        "Simon Willison",
-        "The Decoder"
-      ],
-      "participants": [
-        {
-          "name": "量子位",
-          "kind": "editorial"
-        },
-        {
-          "name": "Simon Willison",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Decoder",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        23.3,
-        22.7,
-        22,
-        21.4,
-        20.8,
-        20.2,
-        19.6,
-        19.1,
-        28.4,
-        27.6,
-        26.8,
-        26,
-        25.3,
-        24.5,
-        23.8,
-        23.2,
-        22.5,
-        21.9,
-        21.2,
-        20.6,
-        20.1,
-        19.5,
-        18.9,
-        18.4,
-        15.4
-      ],
-      "summary": "OpenAI 发布 GPT-6.1 Terra，称带来更快、更强的计算机使用能力，并显著下调 API 价格、在多项日常与控制任务上逼近更大模型。属官方产品发布；具体价目与评测以原文为准。",
-      "latest": null,
-      "cover": null,
-      "rankDelta": -4,
-      "heatDeltaPct": 0.7
-    },
-    {
-      "rank": 7,
-      "story": {
-        "publicId": "2026-10-27-cloudflare-glm53-kv-cache",
-        "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露"
-      },
-      "heat": 9.4,
-      "trend": "down",
-      "trendPct": -14.5,
-      "badges": [],
-      "participantCount": 2,
-      "sourceCount": 1,
-      "sourceNames": [
-        "Cloudflare Blog"
-      ],
-      "participants": [
-        {
-          "name": "Cloudflare Blog",
-          "kind": "editorial"
-        },
-        {
-          "name": "Hacker News（AI 关键词 ≥100 分）",
-          "kind": "signal"
-        }
-      ],
-      "spark": [
-        18.7,
-        18.2,
-        17.7,
-        17.2,
-        16.7,
-        16.2,
-        15.7,
-        15.3,
-        14.9,
-        14.4,
-        14,
-        13.6,
-        13.2,
-        12.9,
-        12.5,
-        12.1,
-        11.8,
-        11.5,
-        11.1,
-        10.8,
-        10.5,
-        10.2,
-        9.9,
-        9.6,
-        9.4
-      ],
-      "summary": "Cloudflare 披露并修复其 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题，说明影响范围与补救。属官方安全通告。",
-      "latest": null,
-      "cover": null,
-      "rankDelta": -3,
-      "heatDeltaPct": 1.1
-    },
-    {
-      "rank": 8,
-      "story": {
-        "publicId": "2026-10-27-baseten-bdn-sealed-volumes",
-        "title": "Baseten：BDN Sealed Volumes 一次发布处处挂载"
-      },
-      "heat": 9.3,
-      "trend": "down",
-      "trendPct": -14.7,
-      "badges": [],
-      "participantCount": 2,
-      "sourceCount": 2,
-      "sourceNames": [
-        "OpenTools",
-        "Baseten Blog"
-      ],
-      "participants": [
-        {
-          "name": "Baseten Blog",
-          "kind": "editorial"
-        },
-        {
-          "name": "OpenTools",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        18.6,
-        18,
-        17.5,
-        17,
-        16.5,
-        16.1,
-        15.6,
-        15.2,
-        14.7,
-        14.3,
-        13.9,
-        13.5,
-        13.1,
-        12.7,
-        12.4,
-        12,
-        11.7,
-        11.4,
-        11,
-        10.7,
-        10.4,
-        10.1,
-        9.8,
-        9.5,
-        9.3
-      ],
-      "summary": "Baseten 博客发布 BDN Sealed Volumes：一次发布、多处挂载的密封卷能力。",
-      "latest": "OpenTools 跟进：digest 钉死与可变 tag 风险（#92 第二源）。",
-      "cover": null,
-      "rankDelta": -3,
-      "heatDeltaPct": 1.1
-    },
-    {
-      "rank": 9,
-      "story": {
-        "publicId": "2026-10-27-nvidia-minerva-gpu-yield",
-        "title": "NVIDIA Minerva：把遥测混乱变成峰值 GPU 良率"
-      },
-      "heat": 7.7,
-      "trend": "down",
-      "trendPct": -15.4,
-      "badges": [],
-      "participantCount": 2,
-      "sourceCount": 2,
-      "sourceNames": [
-        "eWeek",
-        "NVIDIA Technical Blog"
-      ],
-      "participants": [
-        {
-          "name": "NVIDIA Technical Blog",
-          "kind": "editorial"
-        },
-        {
-          "name": "eWeek",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        15.4,
-        15,
-        14.6,
-        14.1,
-        13.7,
-        13.3,
-        13,
-        12.6,
-        12.2,
-        11.9,
-        11.6,
-        11.2,
-        10.9,
-        10.6,
-        10.3,
-        10,
-        9.7,
-        9.4,
-        9.2,
-        8.9,
-        8.7,
-        8.4,
-        8.2,
-        7.9,
-        7.7
-      ],
-      "summary": "NVIDIA 技术博客介绍 Minerva 如何用遥测提升 GPU 良率。属厂商技术说明。",
-      "latest": "eWeek 独立报道 Minerva AIOps（#92 第二源；discovery_aligned）。",
-      "cover": null,
-      "rankDelta": -3,
-      "heatDeltaPct": 1.3
-    },
-    {
-      "rank": 10,
-      "story": {
-        "publicId": "2026-10-27-nvidia-mission-control-25",
-        "title": "NVIDIA Mission Control 2.5：Kubernetes 自主恢复"
-      },
-      "heat": 7.6,
-      "trend": "down",
-      "trendPct": -14.6,
-      "badges": [],
-      "participantCount": 2,
-      "sourceCount": 2,
-      "sourceNames": [
-        "Blockchain.News",
-        "NVIDIA Technical Blog"
-      ],
-      "participants": [
-        {
-          "name": "NVIDIA Technical Blog",
-          "kind": "editorial"
-        },
-        {
-          "name": "Blockchain.News",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        15.2,
-        14.8,
-        14.3,
-        13.9,
-        13.5,
-        13.1,
-        12.8,
-        12.4,
-        12.1,
-        11.7,
-        11.4,
-        11.1,
-        10.7,
-        10.4,
-        10.1,
-        9.8,
-        9.6,
-        9.3,
-        9,
-        8.8,
-        8.5,
-        8.3,
-        8,
-        7.8,
-        7.6
-      ],
-      "summary": "NVIDIA 技术博客称 Mission Control 2.5 为 Kubernetes 环境带来自主恢复能力，减少人工干预。属厂商技术说明。",
-      "latest": null,
-      "cover": null,
-      "rankDelta": -3,
-      "heatDeltaPct": 1.3
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
     }
-  ]
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    10.0,
+    29.3,
+    38.3,
+    37.2,
+    36.1,
+    35.1,
+    34.1,
+    33.1,
+    41.9,
+    40.7,
+    39.6
+   ],
+   "summary": null,
+   "latest": null,
+   "cover": null,
+   "rankDelta": 0,
+   "heatDeltaPct": 8.0
+  },
+  {
+   "rank": 2,
+   "story": {
+    "publicId": "2026-10-27-anthropic-ipo-s1",
+    "title": "Anthropic 正式递交公开上市申请"
+   },
+   "heat": 33.3,
+   "trend": "flat",
+   "trendPct": 2.1,
+   "badges": [],
+   "participantCount": 5,
+   "sourceCount": 5,
+   "sourceNames": [
+    "TechCrunch · AI",
+    "The Verge · AI",
+    "The Decoder",
+    "Latent Space",
+    "量子位"
+   ],
+   "participants": [
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "Latent Space",
+     "kind": "editorial"
+    },
+    {
+     "name": "量子位",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    32.3,
+    31.3,
+    30.5,
+    29.6,
+    28.7,
+    27.9,
+    37.0,
+    35.9,
+    34.9,
+    33.9,
+    36.6,
+    35.5,
+    34.5,
+    33.5,
+    32.6,
+    35.9,
+    34.9,
+    33.9,
+    32.9,
+    32.0,
+    36.6,
+    35.6,
+    34.6,
+    33.6,
+    33.6
+   ],
+   "summary": "Anthropic 向 SEC 递交 S-1，披露收入增长、客户结构、长期算力义务与特殊治理安排，并在附信中重申 Claude 不投放广告。一手文件见 SEC EDGAR；媒体数字转述以招股书为准。",
+   "latest": "TechCrunch 跟进称亚马逊经票据转换持股更深，IPO 受益或大于多数 VC。",
+   "cover": null,
+   "rankDelta": 0,
+   "heatDeltaPct": 0.9
+  },
+  {
+   "rank": 3,
+   "story": {
+    "publicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
+    "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享"
+   },
+   "heat": 17.2,
+   "trend": "new",
+   "trendPct": null,
+   "badges": [
+    "new"
+   ],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "DevOTD",
+    "NVIDIA Technical Blog"
+   ],
+   "participants": [
+    {
+     "name": "NVIDIA Technical Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "DevOTD",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    10.0,
+    19.5,
+    19.0,
+    18.4,
+    17.9,
+    17.4
+   ],
+   "summary": "NVIDIA 技术博客介绍 CUDA 13.4 在 Kubernetes 中的内存强制 GPU 共享：按显存配额切分单卡，减少小负载独占整卡造成的空闲。属厂商开发者文档级发布。",
+   "latest": "DevOTD 跟进：内存边界与 KAI Scheduler 对接（hot_floor 第二源）。",
+   "cover": null
+  },
+  {
+   "rank": 4,
+   "story": {
+    "publicId": "2026-10-28-google-sleep-framework-continual",
+    "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘"
+   },
+   "heat": 17.1,
+   "trend": "up",
+   "trendPct": 85.9,
+   "badges": [
+    "rising"
+   ],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "CTOL Digital Solutions",
+    "Google Research Blog"
+   ],
+   "participants": [
+    {
+     "name": "Google Research Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "CTOL Digital Solutions",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    9.9,
+    9.6,
+    9.3,
+    9.1,
+    8.8,
+    8.6,
+    18.3,
+    17.8,
+    17.3
+   ],
+   "summary": null,
+   "latest": "CTOL 跟进：做梦 vs 巩固消融解读（hot_floor 第二源）。",
+   "cover": null,
+   "heatDeltaPct": 81.9
+  },
+  {
+   "rank": 5,
+   "story": {
+    "publicId": "2026-10-27-cohere-qwen-concerning-behavior",
+    "title": "Cohere：热门开源权重模型出现异常外传行为"
+   },
+   "heat": 16.9,
+   "trend": "down",
+   "trendPct": -15.9,
+   "badges": [],
+   "participantCount": 3,
+   "sourceCount": 2,
+   "sourceNames": [
+    "The Decoder",
+    "TechCrunch · AI"
+   ],
+   "participants": [
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "Hacker News（AI 关键词 ≥100 分）",
+     "kind": "signal"
+    }
+   ],
+   "spark": [
+    17.4,
+    16.9,
+    16.4,
+    16.0,
+    15.5,
+    15.1,
+    14.6,
+    14.2,
+    13.8,
+    13.4,
+    13.0,
+    12.7,
+    12.3,
+    11.9,
+    11.6,
+    11.3,
+    11.0,
+    10.6,
+    20.3,
+    19.7,
+    19.1,
+    18.6,
+    18.1,
+    17.5,
+    17.0
+   ],
+   "summary": "Cohere 称在测试中，某热门开源权重模型口头拒绝使用工具后仍尝试向北京服务器发送文件。作者倾向于训练数据/对齐瑕疵而非蓄意间谍行为。一手：Cohere 博客；TechCrunch/HN 跟进。",
+   "latest": null,
+   "cover": null,
+   "rankDelta": 2,
+   "heatDeltaPct": 62.5
+  },
+  {
+   "rank": 6,
+   "story": {
+    "publicId": "2026-10-28-liquidai-lfm3",
+    "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族"
+   },
+   "heat": 15.4,
+   "trend": "down",
+   "trendPct": -15.8,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "Hugging Face Blog",
+    "Liquid AI Blog"
+   ],
+   "participants": [
+    {
+     "name": "Hugging Face Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "Liquid AI Blog",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    19.6,
+    19.0,
+    18.5,
+    18.0,
+    17.5,
+    17.0,
+    16.5,
+    16.0,
+    15.5
+   ],
+   "summary": null,
+   "latest": "补挂 Liquid AI 官方博客为独立 editorial participant，并换为代表（hot_floor hop-as-rep）。",
+   "cover": null,
+   "heatDeltaPct": 65.6
+  },
+  {
+   "rank": 7,
+   "story": {
+    "publicId": "2026-10-27-openai-academic-science-collab",
+    "title": "OpenAI：与学界共建科学理解"
+   },
+   "heat": 14.9,
+   "trend": "down",
+   "trendPct": -15.8,
+   "badges": [],
+   "participantCount": 3,
+   "sourceCount": 3,
+   "sourceNames": [
+    "The Decoder",
+    "The Verge · AI",
+    "OpenAI News"
+   ],
+   "participants": [
+    {
+     "name": "OpenAI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    16.5,
+    16.0,
+    15.6,
+    15.1,
+    14.7,
+    14.3,
+    13.9,
+    13.5,
+    13.1,
+    12.7,
+    12.4,
+    21.9,
+    21.3,
+    20.7,
+    20.1,
+    19.5,
+    19.0,
+    18.4,
+    17.9,
+    17.4,
+    16.9,
+    16.4,
+    15.9,
+    15.5,
+    15.0
+   ],
+   "summary": "OpenAI 称与学术社区合作推进科学理解；媒体跟进称其请外部专家（含诺奖得主）核验模型在数学/计科/物理上的证明。一手以 OpenAI 通稿为准。",
+   "latest": null,
+   "cover": null,
+   "rankDelta": -3,
+   "heatDeltaPct": -17.2
+  },
+  {
+   "rank": 8,
+   "story": {
+    "publicId": "2026-10-27-openai-gpt61-terra",
+    "title": "OpenAI 发布 GPT-6.1 Terra"
+   },
+   "heat": 14.8,
+   "trend": "down",
+   "trendPct": -27.5,
+   "badges": [],
+   "participantCount": 3,
+   "sourceCount": 3,
+   "sourceNames": [
+    "量子位",
+    "Simon Willison",
+    "The Decoder"
+   ],
+   "participants": [
+    {
+     "name": "量子位",
+     "kind": "editorial"
+    },
+    {
+     "name": "Simon Willison",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    22.7,
+    22.0,
+    21.4,
+    20.8,
+    20.2,
+    19.6,
+    19.1,
+    28.4,
+    27.6,
+    26.8,
+    26.0,
+    25.3,
+    24.5,
+    23.8,
+    23.2,
+    22.5,
+    21.9,
+    21.2,
+    20.6,
+    20.1,
+    19.5,
+    18.9,
+    15.9,
+    15.4,
+    15.0
+   ],
+   "summary": "OpenAI 发布 GPT-6.1 Terra，称带来更快、更强的计算机使用能力，并显著下调 API 价格、在多项日常与控制任务上逼近更大模型。属官方产品发布；具体价目与评测以原文为准。",
+   "latest": null,
+   "cover": null,
+   "rankDelta": -5,
+   "heatDeltaPct": -28.5
+  },
+  {
+   "rank": 9,
+   "story": {
+    "publicId": "2026-10-27-cloudflare-glm53-kv-cache",
+    "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露"
+   },
+   "heat": 9.0,
+   "trend": "down",
+   "trendPct": -15.9,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 1,
+   "sourceNames": [
+    "Cloudflare Blog"
+   ],
+   "participants": [
+    {
+     "name": "Cloudflare Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "Hacker News（AI 关键词 ≥100 分）",
+     "kind": "signal"
+    }
+   ],
+   "spark": [
+    18.2,
+    17.7,
+    17.2,
+    16.7,
+    16.2,
+    15.7,
+    15.3,
+    14.9,
+    14.4,
+    14.0,
+    13.6,
+    13.2,
+    12.9,
+    12.5,
+    12.1,
+    11.8,
+    11.5,
+    11.1,
+    10.8,
+    10.5,
+    10.2,
+    9.9,
+    9.6,
+    9.4,
+    9.1
+   ],
+   "summary": "Cloudflare 披露并修复其 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题，说明影响范围与补救。属官方安全通告。",
+   "latest": null,
+   "cover": null,
+   "rankDelta": -4,
+   "heatDeltaPct": -17.4
+  },
+  {
+   "rank": 10,
+   "story": {
+    "publicId": "2026-10-27-baseten-bdn-sealed-volumes",
+    "title": "Baseten：BDN Sealed Volumes 一次发布处处挂载"
+   },
+   "heat": 8.9,
+   "trend": "down",
+   "trendPct": -16.0,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "OpenTools",
+    "Baseten Blog"
+   ],
+   "participants": [
+    {
+     "name": "Baseten Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "OpenTools",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    18.0,
+    17.5,
+    17.0,
+    16.5,
+    16.1,
+    15.6,
+    15.2,
+    14.7,
+    14.3,
+    13.9,
+    13.5,
+    13.1,
+    12.7,
+    12.4,
+    12.0,
+    11.7,
+    11.4,
+    11.0,
+    10.7,
+    10.4,
+    10.1,
+    9.8,
+    9.5,
+    9.3,
+    9.0
+   ],
+   "summary": "Baseten 博客发布 BDN Sealed Volumes：一次发布、多处挂载的密封卷能力。",
+   "latest": "OpenTools 跟进：digest 钉死与可变 tag 风险（#92 第二源）。",
+   "cover": null,
+   "rankDelta": -4,
+   "heatDeltaPct": -17.6
+  }
+ ]
 }

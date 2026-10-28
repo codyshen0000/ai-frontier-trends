@@ -9,56 +9,56 @@
   },
   {
    "rank": 2,
+   "publicId": "2026-10-27-anthropic-ipo-s1",
+   "heat": 33.3,
+   "participantCount": 5
+  },
+  {
+   "rank": 3,
    "publicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
    "heat": 17.7,
    "participantCount": 2
   },
   {
-   "rank": 3,
+   "rank": 4,
    "publicId": "2026-10-28-google-sleep-framework-continual",
    "heat": 17.6,
    "participantCount": 2
   },
   {
-   "rank": 4,
+   "rank": 5,
+   "publicId": "2026-10-27-cohere-qwen-concerning-behavior",
+   "heat": 17.4,
+   "participantCount": 3
+  },
+  {
+   "rank": 6,
    "publicId": "2026-10-28-liquidai-lfm3",
    "heat": 15.9,
    "participantCount": 2
   },
   {
-   "rank": 5,
+   "rank": 7,
    "publicId": "2026-10-27-openai-academic-science-collab",
    "heat": 15.3,
    "participantCount": 3
   },
   {
-   "rank": 6,
+   "rank": 8,
    "publicId": "2026-10-27-openai-gpt61-terra",
    "heat": 15.3,
    "participantCount": 3
   },
   {
-   "rank": 7,
+   "rank": 9,
    "publicId": "2026-10-27-cloudflare-glm53-kv-cache",
    "heat": 9.3,
    "participantCount": 2
   },
   {
-   "rank": 8,
+   "rank": 10,
    "publicId": "2026-10-27-baseten-bdn-sealed-volumes",
    "heat": 9.2,
-   "participantCount": 2
-  },
-  {
-   "rank": 9,
-   "publicId": "2026-10-27-nvidia-minerva-gpu-yield",
-   "heat": 7.6,
-   "participantCount": 2
-  },
-  {
-   "rank": 10,
-   "publicId": "2026-10-27-nvidia-mission-control-25",
-   "heat": 7.5,
    "participantCount": 2
   }
  ]
