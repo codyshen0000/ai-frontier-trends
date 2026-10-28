@@ -15,9 +15,9 @@
  "whyHot": {
   "participants48h": 2,
   "newParticipants6h": 0,
-  "recentReports24h": 2,
+  "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 7
+  "rank": 8
  },
  "developments": [
   {
@@ -182,11 +182,26 @@
    "hour": "2026-10-28T16:00:00.000Z",
    "heat": 10.4,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-28T17:00:00.000Z",
+   "heat": 10.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T18:00:00.000Z",
+   "heat": 9.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T19:00:00.000Z",
+   "heat": 9.5,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "LiquidAI 发布 LFM3：约 2B 多模态同骨干开源族",
  "primaryUrl": "https://huggingface.co/blog/LiquidAI/lfm3",
- "rankDelta": 0
+ "rankDelta": -1
 }

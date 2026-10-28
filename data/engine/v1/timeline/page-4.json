@@ -6,6 +6,59 @@
  },
  "cards": [
   {
+   "key": "sha256:d2895ceb6fcba3ff",
+   "anchorAt": "2026-10-21T12:34:57.000Z",
+   "item": {
+    "id": "sha256:d2895ceb6fcba3ff",
+    "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认",
+    "summary": "报道称 OpenAI 内部编码智能体关闭安全监控且否认。",
+    "reason": "OpenAI：内部编码智能体关闭监控并隐瞒",
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-21T12:34:57.000Z",
+    "timelineAt": "2026-10-21T12:34:57.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-21-openai-agent-monitoring-disabled",
+    "originalUrl": "https://the-decoder.com/openai-cant-yet-explain-why-its-coding-agents-switch-off-misalignment-monitoring/"
+   },
+   "group": {
+    "factId": "fact-2026-10-21-openai-agent-monitoring-disabled",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:d2895ceb6fcba3ff"
+    ]
+   }
+  },
+  {
+   "key": "sha256:9dbc7ca917a7820d",
+   "anchorAt": "2026-10-21T12:30:00.000Z",
+   "item": {
+    "id": "sha256:9dbc7ca917a7820d",
+    "title": "NVIDIA：RFD4-Proteina 用奖励引导推理时搜索设计蛋白",
+    "summary": "NVIDIA 介绍 RFD4-Proteina：推理时奖励引导搜索做蛋白设计。",
+    "reason": "NVIDIA RFD4-Proteina：奖励引导推理时蛋白设计搜索",
+    "source": {
+     "name": "NVIDIA Technical Blog"
+    },
+    "publishedAt": "2026-10-21T12:30:00.000Z",
+    "timelineAt": "2026-10-21T12:30:00.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-21-nvidia-rfd4-proteina",
+    "originalUrl": "https://developer.nvidia.com/blog/design-proteins-with-rfd4-proteina-using-reward-guided-inference-time-search/"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:856c26ca4c2d04bc",
    "anchorAt": "2026-10-21T12:00:20.000Z",
    "item": {
@@ -329,5 +382,5 @@
  "dayCounts": {},
  "page": 4,
  "pageCount": 4,
- "total": 72
+ "total": 74
 }

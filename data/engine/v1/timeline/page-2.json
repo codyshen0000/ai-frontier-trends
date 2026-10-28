@@ -6,6 +6,66 @@
  },
  "cards": [
   {
+   "key": "sha256:edeae07ffd206303",
+   "anchorAt": "2026-10-26T16:00:00.000Z",
+   "item": {
+    "id": "sha256:edeae07ffd206303",
+    "title": "NVIDIA Minerva：把遥测混乱变成峰值 GPU 良率",
+    "summary": "NVIDIA 技术博客介绍 Minerva 如何用遥测提升 GPU 良率。属厂商技术说明。",
+    "reason": "NVIDIA Minerva 用遥测提升 GPU 良率",
+    "source": {
+     "name": "NVIDIA Technical Blog"
+    },
+    "publishedAt": "2026-10-26T16:00:00.000Z",
+    "timelineAt": "2026-10-26T16:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-27-nvidia-minerva-gpu-yield",
+    "originalUrl": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/"
+   },
+   "group": {
+    "factId": "fact-2026-10-27-nvidia-minerva-gpu-yield",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:edeae07ffd206303"
+    ]
+   }
+  },
+  {
+   "key": "sha256:c3d6fb64eb5418e8",
+   "anchorAt": "2026-10-26T15:00:00.000Z",
+   "item": {
+    "id": "sha256:c3d6fb64eb5418e8",
+    "title": "NVIDIA Mission Control 2.5：为 Kubernetes 带来自主恢复",
+    "summary": "NVIDIA 技术博客称 Mission Control 2.5 为 Kubernetes 集群带来自主恢复能力。",
+    "reason": null,
+    "source": {
+     "name": "NVIDIA Technical Blog"
+    },
+    "publishedAt": "2026-10-26T15:00:00.000Z",
+    "timelineAt": "2026-10-26T15:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-27-nvidia-mission-control-25",
+    "originalUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/"
+   },
+   "group": {
+    "factId": "fact-2026-10-27-nvidia-mission-control-25",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:c3d6fb64eb5418e8"
+    ]
+   }
+  },
+  {
    "key": "sha256:fcee7fe2ae9bec9b",
    "anchorAt": "2026-10-26T14:35:22.000Z",
    "item": {
@@ -503,59 +563,6 @@
     "originalUrl": "https://vllm.ai/blog/2026-10-23-deepseek-v41-flash-pd-wide-ep"
    },
    "group": null
-  },
-  {
-   "key": "sha256:1a543055a02f9816",
-   "anchorAt": "2026-10-23T00:00:00.000Z",
-   "item": {
-    "id": "sha256:1a543055a02f9816",
-    "title": "OpenAI 与波兰 NASK 合作推进 AI 安全与安保研究",
-    "summary": null,
-    "reason": "OpenAI 与波兰 NASK 签 AI 安全研究合作",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-23T00:00:00.000Z",
-    "timelineAt": "2026-10-23T00:00:00.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-23-openai-nask-ai-safety",
-    "originalUrl": "https://openai.com/index/openai-nask-ai-safety-security-partnership"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:51888f116f5b0837",
-   "anchorAt": "2026-10-22T22:24:34.000Z",
-   "item": {
-    "id": "sha256:51888f116f5b0837",
-    "title": "微软 ThinkingBox：把数据库评分变成 RL 奖励做智能体后训练",
-    "summary": "HF 刊微软 ThinkingBox：数据库评分转 RL 奖励，用于后训练智能体。",
-    "reason": "微软 ThinkingBox 用库评分做智能体 RL 后训练",
-    "source": {
-     "name": "Hugging Face Blog"
-    },
-    "publishedAt": "2026-10-22T22:24:34.000Z",
-    "timelineAt": "2026-10-22T22:24:34.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-23-microsoft-thinkingbox-rl",
-    "originalUrl": "https://huggingface.co/blog/microsoft/thinkingbox-training"
-   },
-   "group": {
-    "factId": "fact-2026-10-23-microsoft-thinkingbox-rl",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:51888f116f5b0837"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-3.json",
@@ -563,5 +570,5 @@
  "dayCounts": {},
  "page": 2,
  "pageCount": 4,
- "total": 72
+ "total": 74
 }

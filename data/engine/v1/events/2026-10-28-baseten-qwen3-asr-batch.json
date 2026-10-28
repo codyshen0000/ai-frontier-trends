@@ -1,0 +1,86 @@
+{
+ "publicId": "2026-10-28-baseten-qwen3-asr-batch",
+ "title": "Baseten：优化部署 Qwen3-ASR，批转写吞吐约升 7 倍",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-28T17:39:04.000Z",
+ "latestAt": "2026-10-28T17:39:04.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": null,
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-28-baseten-qwen3-asr-batch",
+   "title": "Baseten：优化部署 Qwen3-ASR，批转写吞吐约升 7 倍",
+   "firstReportAt": "2026-10-28T17:39:04.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:ab7da4b3ce3cc5a6",
+    "title": "Baseten：优化部署 Qwen3-ASR，批转写吞吐约升 7 倍",
+    "summary": "热度并入；无新一手。",
+    "source": {
+     "name": "Baseten Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-28T17:39:04.000Z",
+    "selected": true,
+    "originalUrl": "https://www.baseten.co/blog/fastest-lowest-cost-qwen3-asr-batch-transcription/"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:ab7da4b3ce3cc5a6",
+   "title": "Baseten：优化部署 Qwen3-ASR，批转写吞吐约升 7 倍",
+   "summary": "热度并入；无新一手。",
+   "source": {
+    "name": "Baseten Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-28T17:39:04.000Z",
+   "selected": true,
+   "originalUrl": "https://www.baseten.co/blog/fastest-lowest-cost-qwen3-asr-batch-transcription/"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:ab7da4b3ce3cc5a6",
+   "title": "Baseten：优化部署 Qwen3-ASR，批转写吞吐约升 7 倍",
+   "summary": "热度并入；无新一手。",
+   "source": {
+    "name": "Baseten Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-28T17:39:04.000Z",
+   "selected": true,
+   "originalUrl": "https://www.baseten.co/blog/fastest-lowest-cost-qwen3-asr-batch-transcription/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-28T18:00:00.000Z",
+   "heat": 9.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-28T19:00:00.000Z",
+   "heat": 9.6,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "Baseten 优化开源 Qwen3-ASR 批转写，吞吐约升 7 倍",
+ "primaryUrl": "https://www.baseten.co/blog/fastest-lowest-cost-qwen3-asr-batch-transcription/"
+}

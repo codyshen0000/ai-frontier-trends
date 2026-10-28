@@ -93,21 +93,6 @@
  ],
  "heat": [
   {
-   "hour": "2026-10-26T16:00:00.000Z",
-   "heat": 9.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-26T17:00:00.000Z",
-   "heat": 9.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-26T18:00:00.000Z",
-   "heat": 9.0,
-   "participants": 1
-  },
-  {
    "hour": "2026-10-26T19:00:00.000Z",
    "heat": 8.8,
    "participants": 1
@@ -335,6 +320,21 @@
   {
    "hour": "2026-10-28T16:00:00.000Z",
    "heat": 7.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T17:00:00.000Z",
+   "heat": 7.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T18:00:00.000Z",
+   "heat": 7.2,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T19:00:00.000Z",
+   "heat": 7.0,
    "participants": 2
   }
  ],

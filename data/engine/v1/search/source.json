@@ -1,6 +1,65 @@
 {
- "generatedAt": "2026-10-28T16:42:00.000Z",
+ "generatedAt": "2026-10-28T19:50:00.000Z",
  "docs": [
+  {
+   "id": "sha256:7722fb99a5f289b8",
+   "kind": "item",
+   "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+   "summary": "热度并入；无新一手。",
+   "publishedAt": "2026-10-28T19:17:58.000Z",
+   "sourceName": "The Decoder",
+   "category": "model",
+   "selected": false,
+   "eventPublicId": "2026-10-28-deepmind-gemini-4-carbon",
+   "originalUrl": "https://the-decoder.com/google-deepmind-releases-gemini-4-carbon-just-two-weeks-after-argon-with-gains-across-the-board/"
+  },
+  {
+   "id": "2026-10-28-deepmind-gemini-4-carbon",
+   "kind": "event",
+   "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+   "summary": null,
+   "publishedAt": "2026-10-28T19:17:58.000Z",
+   "sourceNames": [
+    "Google DeepMind Blog",
+    "The Decoder"
+   ],
+   "path": "/events/2026-10-28-deepmind-gemini-4-carbon/"
+  },
+  {
+   "id": "sha256:ab7da4b3ce3cc5a6",
+   "kind": "item",
+   "title": "Baseten：优化部署 Qwen3-ASR，批转写吞吐约升 7 倍",
+   "summary": "热度并入；无新一手。",
+   "publishedAt": "2026-10-28T17:39:04.000Z",
+   "sourceName": "Baseten Blog",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-10-28-baseten-qwen3-asr-batch",
+   "originalUrl": "https://www.baseten.co/blog/fastest-lowest-cost-qwen3-asr-batch-transcription/"
+  },
+  {
+   "id": "2026-10-28-baseten-qwen3-asr-batch",
+   "kind": "event",
+   "title": "Baseten：优化部署 Qwen3-ASR，批转写吞吐约升 7 倍",
+   "summary": null,
+   "publishedAt": "2026-10-28T17:39:04.000Z",
+   "sourceNames": [
+    "Baseten Blog"
+   ],
+   "path": "/events/2026-10-28-baseten-qwen3-asr-batch/"
+  },
+  {
+   "id": "sha256:3e32bae570ff21ee",
+   "kind": "item",
+   "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+   "summary": null,
+   "publishedAt": "2026-10-28T17:00:58.000Z",
+   "sourceName": "Google DeepMind Blog",
+   "category": "model",
+   "selected": true,
+   "eventPublicId": "2026-10-28-deepmind-gemini-4-carbon",
+   "originalUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/"
+  },
   {
    "id": "sha256:ec733f799e1aaee3",
    "kind": "item",

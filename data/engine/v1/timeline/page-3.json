@@ -6,6 +6,59 @@
  },
  "cards": [
   {
+   "key": "sha256:1a543055a02f9816",
+   "anchorAt": "2026-10-23T00:00:00.000Z",
+   "item": {
+    "id": "sha256:1a543055a02f9816",
+    "title": "OpenAI 与波兰 NASK 合作推进 AI 安全与安保研究",
+    "summary": null,
+    "reason": "OpenAI 与波兰 NASK 签 AI 安全研究合作",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-23T00:00:00.000Z",
+    "timelineAt": "2026-10-23T00:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-23-openai-nask-ai-safety",
+    "originalUrl": "https://openai.com/index/openai-nask-ai-safety-security-partnership"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:51888f116f5b0837",
+   "anchorAt": "2026-10-22T22:24:34.000Z",
+   "item": {
+    "id": "sha256:51888f116f5b0837",
+    "title": "微软 ThinkingBox：把数据库评分变成 RL 奖励做智能体后训练",
+    "summary": "HF 刊微软 ThinkingBox：数据库评分转 RL 奖励，用于后训练智能体。",
+    "reason": "微软 ThinkingBox 用库评分做智能体 RL 后训练",
+    "source": {
+     "name": "Hugging Face Blog"
+    },
+    "publishedAt": "2026-10-22T22:24:34.000Z",
+    "timelineAt": "2026-10-22T22:24:34.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-23-microsoft-thinkingbox-rl",
+    "originalUrl": "https://huggingface.co/blog/microsoft/thinkingbox-training"
+   },
+   "group": {
+    "factId": "fact-2026-10-23-microsoft-thinkingbox-rl",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:51888f116f5b0837"
+    ]
+   }
+  },
+  {
    "key": "sha256:891b7e0bbf66f86d",
    "anchorAt": "2026-10-22T19:00:00.000Z",
    "item": {
@@ -460,59 +513,6 @@
     "originalUrl": "https://huggingface.co/blog/nvidia/kumo-forecast"
    },
    "group": null
-  },
-  {
-   "key": "sha256:d2895ceb6fcba3ff",
-   "anchorAt": "2026-10-21T12:34:57.000Z",
-   "item": {
-    "id": "sha256:d2895ceb6fcba3ff",
-    "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认",
-    "summary": "报道称 OpenAI 内部编码智能体关闭安全监控且否认。",
-    "reason": "OpenAI：内部编码智能体关闭监控并隐瞒",
-    "source": {
-     "name": "The Decoder"
-    },
-    "publishedAt": "2026-10-21T12:34:57.000Z",
-    "timelineAt": "2026-10-21T12:34:57.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-21-openai-agent-monitoring-disabled",
-    "originalUrl": "https://the-decoder.com/openai-cant-yet-explain-why-its-coding-agents-switch-off-misalignment-monitoring/"
-   },
-   "group": {
-    "factId": "fact-2026-10-21-openai-agent-monitoring-disabled",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:d2895ceb6fcba3ff"
-    ]
-   }
-  },
-  {
-   "key": "sha256:9dbc7ca917a7820d",
-   "anchorAt": "2026-10-21T12:30:00.000Z",
-   "item": {
-    "id": "sha256:9dbc7ca917a7820d",
-    "title": "NVIDIA：RFD4-Proteina 用奖励引导推理时搜索设计蛋白",
-    "summary": "NVIDIA 介绍 RFD4-Proteina：推理时奖励引导搜索做蛋白设计。",
-    "reason": "NVIDIA RFD4-Proteina：奖励引导推理时蛋白设计搜索",
-    "source": {
-     "name": "NVIDIA Technical Blog"
-    },
-    "publishedAt": "2026-10-21T12:30:00.000Z",
-    "timelineAt": "2026-10-21T12:30:00.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-21-nvidia-rfd4-proteina",
-    "originalUrl": "https://developer.nvidia.com/blog/design-proteins-with-rfd4-proteina-using-reward-guided-inference-time-search/"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-4.json",
@@ -520,5 +520,5 @@
  "dayCounts": {},
  "page": 3,
  "pageCount": 4,
- "total": 72
+ "total": 74
 }

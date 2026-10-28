@@ -2,31 +2,31 @@
  "site": "前沿趋势",
  "contract_version": "1.1",
  "mode": "production",
- "data_as_of": "2026-10-29T00:21:45+08:00",
- "data_as_of_label": "数据截至 2026-10-29 00:21（北京时间）",
- "generated_at": "2026-10-29T00:42:00+08:00",
+ "data_as_of": "2026-10-29T03:20:23+08:00",
+ "data_as_of_label": "数据截至 2026-10-29 03:20（北京时间）",
+ "generated_at": "2026-10-29T03:50:00+08:00",
  "hot_rule_version": "heat-v1-48h-halflife24h (前沿情报 heat48h.py 1.1)",
- "hot_computed_at": "2026-10-29T00:42:00+08:00",
+ "hot_computed_at": "2026-10-29T03:50:00+08:00",
  "window_hours": 48,
  "spark_points": 25,
  "page_size": 20,
  "counts": {
-  "cards": 72,
+  "cards": 74,
   "pages": 4,
-  "events": 72,
+  "events": 74,
   "hot_entries": 10,
-  "search_docs": 205,
+  "search_docs": 210,
   "feed_items": 50,
-  "passed_events": 72,
+  "passed_events": 74,
   "below_threshold_events": 0,
   "redirects": 0,
-  "hot_snapshots": 11,
+  "hot_snapshots": 12,
   "covers": 8
  },
  "last_round": {
-  "batch_id": "2026-10-29T0021",
+  "batch_id": "2026-10-29T0320",
   "status": "ok",
-  "finished_at": "2026-10-29T00:37:58+08:00"
+  "finished_at": "2026-10-29T03:46:41+08:00"
  },
  "batches": [
   {
@@ -828,6 +828,18 @@
   {
    "batch_id": "2026-10-29T0021",
    "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-29T0120",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-29T0227",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-29T0320",
+   "status": "ok"
   }
  ],
  "files": [
@@ -892,7 +904,9 @@
   "events/2026-10-27-openai-gpt61-terra.json",
   "events/2026-10-27-opera-webai-local.json",
   "events/2026-10-28-antgroup-ling-31-flash-1019.json",
+  "events/2026-10-28-baseten-qwen3-asr-batch.json",
   "events/2026-10-28-cathedral-anthropic-agent-breach.json",
+  "events/2026-10-28-deepmind-gemini-4-carbon.json",
   "events/2026-10-28-deepmind-genie-4.json",
   "events/2026-10-28-frontier-labs-eth-refutation.json",
   "events/2026-10-28-google-sleep-framework-continual.json",
@@ -917,6 +931,7 @@
   "hot-snapshots/2026-10-28T15.json",
   "hot-snapshots/2026-10-28T19.json",
   "hot-snapshots/2026-10-29T00.json",
+  "hot-snapshots/2026-10-29T03.json",
   "hot-strip.json",
   "hot.json",
   "meta.json",

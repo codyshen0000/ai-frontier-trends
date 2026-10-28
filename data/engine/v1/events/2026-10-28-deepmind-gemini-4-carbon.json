@@ -1,0 +1,98 @@
+{
+ "publicId": "2026-10-28-deepmind-gemini-4-carbon",
+ "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+ "status": "active",
+ "reportCount": 2,
+ "sourceCount": 2,
+ "firstReportAt": "2026-10-28T17:00:58.000Z",
+ "latestAt": "2026-10-28T19:17:58.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": null,
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 2,
+  "newParticipants6h": 2,
+  "recentReports24h": 2,
+  "observationComplete": true,
+  "rank": 3
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-28-deepmind-gemini-4-carbon",
+   "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+   "firstReportAt": "2026-10-28T17:00:58.000Z",
+   "reportCount": 2,
+   "representative": {
+    "id": "sha256:3e32bae570ff21ee",
+    "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+    "summary": null,
+    "source": {
+     "name": "Google DeepMind Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-28T17:00:58.000Z",
+    "selected": true,
+    "originalUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:3e32bae570ff21ee",
+   "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+   "summary": null,
+   "source": {
+    "name": "Google DeepMind Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-28T17:00:58.000Z",
+   "selected": true,
+   "originalUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:7722fb99a5f289b8",
+   "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+   "summary": "热度并入；无新一手。",
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-28T19:17:58.000Z",
+   "selected": false,
+   "originalUrl": "https://the-decoder.com/google-deepmind-releases-gemini-4-carbon-just-two-weeks-after-argon-with-gains-across-the-board/"
+  },
+  {
+   "id": "sha256:3e32bae570ff21ee",
+   "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+   "summary": null,
+   "source": {
+    "name": "Google DeepMind Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-28T17:00:58.000Z",
+   "selected": true,
+   "originalUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-28T18:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-28T19:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "DeepMind 发布 Gemini 4 Carbon，网安与长程编码领先",
+ "primaryUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/"
+}

@@ -1,5 +1,5 @@
 {
- "computedAt": "2026-10-28T16:42:00.000Z",
+ "computedAt": "2026-10-28T19:50:00.000Z",
  "windowHours": 48,
  "entries": [
   {
@@ -8,7 +8,7 @@
     "publicId": "2026-10-28-nvidia-nemotron-35-transcribe",
     "title": "NVIDIA 发布开源 Nemotron 3.5 Transcribe 与 Granary v2"
    },
-   "heat": 28.8,
+   "heat": 26.3,
    "trend": "new",
    "trendPct": null,
    "badges": [
@@ -57,15 +57,17 @@
     null,
     null,
     null,
-    null,
-    null,
-    null,
     20.0,
-    29.4
+    29.4,
+    28.5,
+    27.7,
+    26.9
    ],
    "summary": "NVIDIA 在 Hugging Face 发布开源权重 Nemotron 3.5 Transcribe：单检查点可做多语转写（约 40 语）、说话人归属、翻译与音频问答，并可用自然语言提示；同日给出 Granary v2 多语语音数据与微调工具。属官方模型/数据发布。",
    "latest": null,
-   "cover": null
+   "cover": null,
+   "rankDelta": 0,
+   "heatDeltaPct": -8.7
   },
   {
    "rank": 2,
@@ -73,9 +75,9 @@
     "publicId": "2026-10-28-deepmind-genie-4",
     "title": "DeepMind 发布 Genie 4：新一代世界仿真"
    },
-   "heat": 25.9,
+   "heat": 23.7,
    "trend": "down",
-   "trendPct": -15.9,
+   "trendPct": -15.7,
    "badges": [],
    "participantCount": 5,
    "sourceCount": 4,
@@ -108,9 +110,6 @@
     }
    ],
    "spark": [
-    10.0,
-    29.3,
-    38.3,
     37.2,
     36.1,
     35.1,
@@ -132,23 +131,85 @@
     28.8,
     28.0,
     27.2,
-    26.4
+    26.4,
+    25.7,
+    24.9,
+    24.2
    ],
    "summary": null,
    "latest": null,
    "cover": null,
-   "rankDelta": -1,
-   "heatDeltaPct": -12.8
+   "rankDelta": 0,
+   "heatDeltaPct": -8.5
   },
   {
    "rank": 3,
    "story": {
+    "publicId": "2026-10-28-deepmind-gemini-4-carbon",
+    "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升"
+   },
+   "heat": 19.1,
+   "trend": "new",
+   "trendPct": null,
+   "badges": [
+    "new"
+   ],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "The Decoder",
+    "Google DeepMind Blog"
+   ],
+   "participants": [
+    {
+     "name": "Google DeepMind Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    9.7,
+    9.4
+   ],
+   "summary": null,
+   "latest": null,
+   "cover": null
+  },
+  {
+   "rank": 4,
+   "story": {
     "publicId": "2026-10-27-anthropic-ipo-s1",
     "title": "Anthropic 正式递交公开上市申请"
    },
-   "heat": 19.5,
+   "heat": 17.8,
    "trend": "down",
-   "trendPct": -25.6,
+   "trendPct": -25.5,
    "badges": [],
    "participantCount": 4,
    "sourceCount": 4,
@@ -177,9 +238,6 @@
     }
    ],
    "spark": [
-    32.6,
-    35.9,
-    34.9,
     33.9,
     32.9,
     32.0,
@@ -201,23 +259,26 @@
     24.5,
     23.8,
     23.1,
-    22.4
+    22.4,
+    19.4,
+    18.8,
+    18.3
    ],
    "summary": "Anthropic 向 SEC 递交 S-1，披露收入增长、客户结构、长期算力义务与特殊治理安排，并在附信中重申 Claude 不投放广告。一手文件见 SEC EDGAR；媒体数字转述以招股书为准。",
    "latest": "TechCrunch 跟进称亚马逊经票据转换持股更深，IPO 受益或大于多数 VC。",
    "cover": null,
    "rankDelta": -1,
-   "heatDeltaPct": -22.9
+   "heatDeltaPct": -8.7
   },
   {
-   "rank": 4,
+   "rank": 5,
    "story": {
     "publicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
     "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享"
    },
-   "heat": 11.4,
+   "heat": 10.4,
    "trend": "down",
-   "trendPct": -15.6,
+   "trendPct": -15.4,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -236,9 +297,6 @@
     }
    ],
    "spark": [
-    null,
-    null,
-    null,
     null,
     null,
     10.0,
@@ -260,23 +318,26 @@
     12.7,
     12.3,
     11.9,
-    11.6
+    11.6,
+    11.3,
+    10.9,
+    10.6
    ],
    "summary": "NVIDIA 技术博客介绍 CUDA 13.4 在 Kubernetes 中的内存强制 GPU 共享：按显存配额切分单卡，减少小负载独占整卡造成的空闲。属厂商开发者文档级发布。",
    "latest": "DevOTD 跟进：内存边界与 KAI Scheduler 对接（hot_floor 第二源）。",
    "cover": null,
    "rankDelta": -1,
-   "heatDeltaPct": -13.0
+   "heatDeltaPct": -8.8
   },
   {
-   "rank": 5,
+   "rank": 6,
    "story": {
     "publicId": "2026-10-28-google-sleep-framework-continual",
     "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘"
    },
-   "heat": 11.3,
+   "heat": 10.3,
    "trend": "down",
-   "trendPct": -15.7,
+   "trendPct": -16.3,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -295,9 +356,6 @@
     }
    ],
    "spark": [
-    null,
-    null,
-    9.9,
     9.6,
     9.3,
     9.1,
@@ -319,23 +377,26 @@
     12.6,
     12.2,
     11.9,
-    11.5
+    11.5,
+    11.2,
+    10.9,
+    10.6
    ],
    "summary": null,
    "latest": "CTOL 跟进：做梦 vs 巩固消融解读（hot_floor 第二源）。",
    "cover": null,
    "rankDelta": -1,
-   "heatDeltaPct": -13.1
+   "heatDeltaPct": -8.8
   },
   {
-   "rank": 6,
+   "rank": 7,
    "story": {
     "publicId": "2026-10-28-antgroup-ling-31-flash-1019",
     "title": "蚂蚁百灵开源 Ling-3.1-flash-1019：560B/25B MoE，AA 智力指数 44"
    },
-   "heat": 10.6,
+   "heat": 9.7,
    "trend": "down",
-   "trendPct": -15.9,
+   "trendPct": -15.7,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -354,9 +415,6 @@
     }
    ],
    "spark": [
-    7.4,
-    7.2,
-    7.0,
     6.8,
     6.6,
     6.4,
@@ -378,23 +436,26 @@
     11.8,
     11.5,
     11.1,
-    10.8
+    10.8,
+    10.5,
+    10.2,
+    9.9
    ],
    "summary": null,
    "latest": null,
    "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -13.1
+   "rankDelta": -1,
+   "heatDeltaPct": -8.5
   },
   {
-   "rank": 7,
+   "rank": 8,
    "story": {
     "publicId": "2026-10-28-liquidai-lfm3",
     "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族"
    },
-   "heat": 10.2,
+   "heat": 9.3,
    "trend": "down",
-   "trendPct": -15.7,
+   "trendPct": -15.5,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -413,9 +474,6 @@
     }
    ],
    "spark": [
-    null,
-    null,
-    19.6,
     19.0,
     18.5,
     18.0,
@@ -437,23 +495,26 @@
     11.3,
     11.0,
     10.7,
-    10.4
+    10.4,
+    10.1,
+    9.8,
+    9.5
    ],
    "summary": null,
    "latest": "补挂 Liquid AI 官方博客为独立 editorial participant，并换为代表（hot_floor hop-as-rep）。",
    "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -12.8
+   "rankDelta": -1,
+   "heatDeltaPct": -8.8
   },
   {
-   "rank": 8,
+   "rank": 9,
    "story": {
     "publicId": "2026-10-27-openai-gpt61-terra",
     "title": "OpenAI 发布 GPT-6.1 Terra"
    },
-   "heat": 9.8,
+   "heat": 9.0,
    "trend": "down",
-   "trendPct": -16.2,
+   "trendPct": -15.9,
    "badges": [],
    "participantCount": 3,
    "sourceCount": 3,
@@ -477,9 +538,6 @@
     }
    ],
    "spark": [
-    23.2,
-    22.5,
-    21.9,
     21.2,
     20.6,
     20.1,
@@ -501,23 +559,26 @@
     10.9,
     10.6,
     10.3,
-    10.0
+    10.0,
+    9.7,
+    9.4,
+    9.2
    ],
    "summary": "OpenAI 发布 GPT-6.1 Terra，称带来更快、更强的计算机使用能力，并显著下调 API 价格、在多项日常与控制任务上逼近更大模型。属官方产品发布；具体价目与评测以原文为准。",
    "latest": null,
    "cover": null,
-   "rankDelta": 1,
-   "heatDeltaPct": -13.3
+   "rankDelta": -1,
+   "heatDeltaPct": -8.2
   },
   {
-   "rank": 9,
+   "rank": 10,
    "story": {
     "publicId": "2026-10-28-microsoft-mai-image-27",
     "title": "微软发布 MAI-Image-2.7：图像编辑预览登 Artificial Analysis 第二"
    },
-   "heat": 9.7,
+   "heat": 8.9,
    "trend": "down",
-   "trendPct": -16.4,
+   "trendPct": -16.0,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 1,
@@ -535,9 +596,6 @@
     }
    ],
    "spark": [
-    6.3,
-    6.1,
-    5.9,
     5.8,
     5.6,
     5.5,
@@ -559,72 +617,16 @@
     10.8,
     10.5,
     10.2,
-    9.9
+    9.9,
+    9.7,
+    9.4,
+    9.1
    ],
    "summary": "微软 AI 官方宣布推出 MAI Image 2.7 图像编辑预览：主打场景重绘/打光、图内文字与符号修改、素材修复增强；称在 Artificial Analysis 图像编辑榜列第二、Arena Edit 第三，相对 2.6 在全部评测用例与编辑动作上提升，场景与风格项领先约 24 Elo。现阶段以已有图片+指令编辑为主，文生图尚未开放；官方未公布 2.7 API/定价。IT之家等跟进转述。",
    "latest": null,
    "cover": null,
-   "rankDelta": 1,
-   "heatDeltaPct": -13.4
-  },
-  {
-   "rank": 10,
-   "story": {
-    "publicId": "2026-10-27-cohere-qwen-concerning-behavior",
-    "title": "Cohere：热门开源权重模型出现异常外传行为"
-   },
-   "heat": 8.7,
-   "trend": "down",
-   "trendPct": -34.6,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "The Decoder",
-    "TechCrunch · AI"
-   ],
-   "participants": [
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    11.6,
-    11.3,
-    11.0,
-    10.6,
-    20.3,
-    19.7,
-    19.1,
-    18.6,
-    18.1,
-    17.5,
-    17.0,
-    16.6,
-    16.1,
-    15.6,
-    15.2,
-    14.8,
-    14.3,
-    13.9,
-    13.5,
-    13.1,
-    12.8,
-    12.4,
-    12.1,
-    11.7,
-    11.4
-   ],
-   "summary": "Cohere 称在测试中，某热门开源权重模型口头拒绝使用工具后仍尝试向北京服务器发送文件。作者倾向于训练数据/对齐瑕疵而非蓄意间谍行为。一手：Cohere 博客；TechCrunch/HN 跟进。",
-   "latest": null,
-   "cover": null,
-   "rankDelta": -5,
-   "heatDeltaPct": -32.0
+   "rankDelta": -1,
+   "heatDeltaPct": -8.2
   }
  ]
 }

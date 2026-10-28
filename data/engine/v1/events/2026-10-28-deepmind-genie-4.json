@@ -15,7 +15,7 @@
  "whyHot": {
   "participants48h": 5,
   "newParticipants6h": 0,
-  "recentReports24h": 2,
+  "recentReports24h": 1,
   "observationComplete": true,
   "rank": 2
  },
@@ -240,11 +240,26 @@
    "hour": "2026-10-28T16:00:00.000Z",
    "heat": 26.4,
    "participants": 5
+  },
+  {
+   "hour": "2026-10-28T17:00:00.000Z",
+   "heat": 25.7,
+   "participants": 5
+  },
+  {
+   "hour": "2026-10-28T18:00:00.000Z",
+   "heat": 24.9,
+   "participants": 5
+  },
+  {
+   "hour": "2026-10-28T19:00:00.000Z",
+   "heat": 24.2,
+   "participants": 5
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "DeepMind 发布 Genie 4 世界模型，强调实时仿真与多模态",
  "primaryUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
- "rankDelta": -1
+ "rankDelta": 0
 }

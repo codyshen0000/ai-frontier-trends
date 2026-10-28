@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 2,
   "observationComplete": true,
-  "rank": 4
+  "rank": 5
  },
  "developments": [
   {
@@ -178,6 +178,21 @@
   {
    "hour": "2026-10-28T16:00:00.000Z",
    "heat": 11.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T17:00:00.000Z",
+   "heat": 11.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T18:00:00.000Z",
+   "heat": 10.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T19:00:00.000Z",
+   "heat": 10.6,
    "participants": 2
   }
  ],
