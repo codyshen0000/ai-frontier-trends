@@ -1,442 +1,442 @@
 {
- "computedAt": "2026-10-28T01:03:00.000Z",
- "windowHours": 48,
- "entries": [
-  {
-   "rank": 1,
-   "story": {
-    "publicId": "2026-10-28-deepmind-genie-4",
-    "title": "DeepMind 发布 Genie 4：新一代世界仿真"
-   },
-   "heat": 40.7,
-   "trend": "flat",
-   "trendPct": 9.4,
-   "badges": [],
-   "participantCount": 5,
-   "sourceCount": 4,
-   "sourceNames": [
-    "The Decoder",
-    "TechCrunch · AI",
-    "Google DeepMind Blog",
-    "The Verge · AI"
-   ],
-   "participants": [
+  "computedAt": "2026-10-28T01:03:00.000Z",
+  "windowHours": 48,
+  "entries": [
     {
-     "name": "Google DeepMind Blog",
-     "kind": "editorial"
+      "rank": 1,
+      "story": {
+        "publicId": "2026-10-28-deepmind-genie-4",
+        "title": "DeepMind 发布 Genie 4：新一代世界仿真"
+      },
+      "heat": 40.7,
+      "trend": "flat",
+      "trendPct": 9.4,
+      "badges": [],
+      "participantCount": 5,
+      "sourceCount": 4,
+      "sourceNames": [
+        "The Decoder",
+        "TechCrunch · AI",
+        "Google DeepMind Blog",
+        "The Verge · AI"
+      ],
+      "participants": [
+        {
+          "name": "Google DeepMind Blog",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Decoder",
+          "kind": "editorial"
+        },
+        {
+          "name": "TechCrunch · AI",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Verge · AI",
+          "kind": "editorial"
+        },
+        {
+          "name": "IT之家（全站，需关键词过滤）",
+          "kind": "signal"
+        }
+      ],
+      "spark": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        10,
+        29.3,
+        38.3,
+        37.2,
+        36.1,
+        35.1,
+        34.1,
+        33.1,
+        41.9,
+        40.7
+      ],
+      "summary": null,
+      "latest": null,
+      "cover": null,
+      "rankDelta": 0,
+      "heatDeltaPct": 12.1
     },
     {
-     "name": "The Decoder",
-     "kind": "editorial"
+      "rank": 2,
+      "story": {
+        "publicId": "2026-10-27-openai-academic-science-collab",
+        "title": "OpenAI：与学界共建科学理解"
+      },
+      "heat": 15.5,
+      "trend": "down",
+      "trendPct": -15.8,
+      "badges": [],
+      "participantCount": 3,
+      "sourceCount": 3,
+      "sourceNames": [
+        "The Decoder",
+        "The Verge · AI",
+        "OpenAI News"
+      ],
+      "participants": [
+        {
+          "name": "OpenAI News",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Decoder",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Verge · AI",
+          "kind": "editorial"
+        }
+      ],
+      "spark": [
+        17,
+        16.5,
+        16,
+        15.6,
+        15.1,
+        14.7,
+        14.3,
+        13.9,
+        13.5,
+        13.1,
+        12.7,
+        12.4,
+        21.9,
+        21.3,
+        20.7,
+        20.1,
+        19.5,
+        19,
+        18.4,
+        17.9,
+        17.4,
+        16.9,
+        16.4,
+        15.9,
+        15.5
+      ],
+      "summary": "OpenAI 称与学术社区合作推进科学理解；媒体跟进称其请外部专家（含诺奖得主）核验模型在数学/计科/物理上的证明。一手以 OpenAI 通稿为准。",
+      "latest": null,
+      "cover": null,
+      "rankDelta": 1,
+      "heatDeltaPct": -13.9
     },
     {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
+      "rank": 3,
+      "story": {
+        "publicId": "2026-10-27-openai-gpt61-terra",
+        "title": "OpenAI 发布 GPT-6.1 Terra"
+      },
+      "heat": 15.4,
+      "trend": "down",
+      "trendPct": -27.4,
+      "badges": [],
+      "participantCount": 3,
+      "sourceCount": 3,
+      "sourceNames": [
+        "量子位",
+        "Simon Willison",
+        "The Decoder"
+      ],
+      "participants": [
+        {
+          "name": "量子位",
+          "kind": "editorial"
+        },
+        {
+          "name": "Simon Willison",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Decoder",
+          "kind": "editorial"
+        }
+      ],
+      "spark": [
+        23.3,
+        22.7,
+        22,
+        21.4,
+        20.8,
+        20.2,
+        19.6,
+        19.1,
+        28.4,
+        27.6,
+        26.8,
+        26,
+        25.3,
+        24.5,
+        23.8,
+        23.2,
+        22.5,
+        21.9,
+        21.2,
+        20.6,
+        20.1,
+        19.5,
+        18.9,
+        18.4,
+        15.4
+      ],
+      "summary": "OpenAI 发布 GPT-6.1 Terra，称带来更快、更强的计算机使用能力，并显著下调 API 价格、在多项日常与控制任务上逼近更大模型。属官方产品发布；具体价目与评测以原文为准。",
+      "latest": null,
+      "cover": null,
+      "rankDelta": -1,
+      "heatDeltaPct": -25.6
     },
     {
-     "name": "The Verge · AI",
-     "kind": "editorial"
+      "rank": 4,
+      "story": {
+        "publicId": "2026-10-27-cloudflare-glm53-kv-cache",
+        "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露"
+      },
+      "heat": 9.4,
+      "trend": "down",
+      "trendPct": -15.3,
+      "badges": [],
+      "participantCount": 2,
+      "sourceCount": 1,
+      "sourceNames": [
+        "Cloudflare Blog"
+      ],
+      "participants": [
+        {
+          "name": "Cloudflare Blog",
+          "kind": "editorial"
+        },
+        {
+          "name": "Hacker News（AI 关键词 ≥100 分）",
+          "kind": "signal"
+        }
+      ],
+      "spark": [
+        18.7,
+        18.2,
+        17.7,
+        17.2,
+        16.7,
+        16.2,
+        15.7,
+        15.3,
+        14.9,
+        14.4,
+        14,
+        13.6,
+        13.2,
+        12.9,
+        12.5,
+        12.1,
+        11.8,
+        11.5,
+        11.1,
+        10.8,
+        10.5,
+        10.2,
+        9.9,
+        9.6,
+        9.4
+      ],
+      "summary": "Cloudflare 披露并修复其 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题，说明影响范围与补救。属官方安全通告。",
+      "latest": null,
+      "cover": null,
+      "rankDelta": 0,
+      "heatDeltaPct": 1.1
     },
     {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
+      "rank": 5,
+      "story": {
+        "publicId": "2026-10-27-baseten-bdn-sealed-volumes",
+        "title": "Baseten：BDN Sealed Volumes 一次发布处处挂载"
+      },
+      "heat": 9.3,
+      "trend": "down",
+      "trendPct": -15.5,
+      "badges": [],
+      "participantCount": 2,
+      "sourceCount": 2,
+      "sourceNames": [
+        "OpenTools",
+        "Baseten Blog"
+      ],
+      "participants": [
+        {
+          "name": "Baseten Blog",
+          "kind": "editorial"
+        },
+        {
+          "name": "OpenTools",
+          "kind": "editorial"
+        }
+      ],
+      "spark": [
+        18.6,
+        18,
+        17.5,
+        17,
+        16.5,
+        16.1,
+        15.6,
+        15.2,
+        14.7,
+        14.3,
+        13.9,
+        13.5,
+        13.1,
+        12.7,
+        12.4,
+        12,
+        11.7,
+        11.4,
+        11,
+        10.7,
+        10.4,
+        10.1,
+        9.8,
+        9.5,
+        9.3
+      ],
+      "summary": "Baseten 博客发布 BDN Sealed Volumes：一次发布、多处挂载的密封卷能力。",
+      "latest": "OpenTools 跟进：digest 钉死与可变 tag 风险（#92 第二源）。",
+      "cover": null,
+      "rankDelta": 0,
+      "heatDeltaPct": -13.9
+    },
+    {
+      "rank": 6,
+      "story": {
+        "publicId": "2026-10-27-nvidia-minerva-gpu-yield",
+        "title": "NVIDIA Minerva：把遥测混乱变成峰值 GPU 良率"
+      },
+      "heat": 7.7,
+      "trend": "down",
+      "trendPct": -16.3,
+      "badges": [],
+      "participantCount": 2,
+      "sourceCount": 2,
+      "sourceNames": [
+        "eWeek",
+        "NVIDIA Technical Blog"
+      ],
+      "participants": [
+        {
+          "name": "NVIDIA Technical Blog",
+          "kind": "editorial"
+        },
+        {
+          "name": "eWeek",
+          "kind": "editorial"
+        }
+      ],
+      "spark": [
+        15.4,
+        15,
+        14.6,
+        14.1,
+        13.7,
+        13.3,
+        13,
+        12.6,
+        12.2,
+        11.9,
+        11.6,
+        11.2,
+        10.9,
+        10.6,
+        10.3,
+        10,
+        9.7,
+        9.4,
+        9.2,
+        8.9,
+        8.7,
+        8.4,
+        8.2,
+        7.9,
+        7.7
+      ],
+      "summary": "NVIDIA 技术博客介绍 Minerva 如何用遥测提升 GPU 良率。属厂商技术说明。",
+      "latest": "eWeek 独立报道 Minerva AIOps（#92 第二源；discovery_aligned）。",
+      "cover": null,
+      "rankDelta": 0,
+      "heatDeltaPct": -13.5
+    },
+    {
+      "rank": 7,
+      "story": {
+        "publicId": "2026-10-27-nvidia-mission-control-25",
+        "title": "NVIDIA Mission Control 2.5：Kubernetes 自主恢复"
+      },
+      "heat": 7.6,
+      "trend": "down",
+      "trendPct": -15.6,
+      "badges": [],
+      "participantCount": 2,
+      "sourceCount": 2,
+      "sourceNames": [
+        "Blockchain.News",
+        "NVIDIA Technical Blog"
+      ],
+      "participants": [
+        {
+          "name": "NVIDIA Technical Blog",
+          "kind": "editorial"
+        },
+        {
+          "name": "Blockchain.News",
+          "kind": "editorial"
+        }
+      ],
+      "spark": [
+        15.2,
+        14.8,
+        14.3,
+        13.9,
+        13.5,
+        13.1,
+        12.8,
+        12.4,
+        12.1,
+        11.7,
+        11.4,
+        11.1,
+        10.7,
+        10.4,
+        10.1,
+        9.8,
+        9.6,
+        9.3,
+        9,
+        8.8,
+        8.5,
+        8.3,
+        8,
+        7.8,
+        7.6
+      ],
+      "summary": "NVIDIA 技术博客称 Mission Control 2.5 为 Kubernetes 环境带来自主恢复能力，减少人工干预。属厂商技术说明。",
+      "latest": null,
+      "cover": null,
+      "rankDelta": 0,
+      "heatDeltaPct": -13.6
     }
-   ],
-   "spark": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    10.0,
-    29.3,
-    38.3,
-    37.2,
-    36.1,
-    35.1,
-    34.1,
-    33.1,
-    41.9,
-    40.7
-   ],
-   "summary": null,
-   "latest": null,
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": 12.1
-  },
-  {
-   "rank": 2,
-   "story": {
-    "publicId": "2026-10-27-openai-academic-science-collab",
-    "title": "OpenAI：与学界共建科学理解"
-   },
-   "heat": 15.5,
-   "trend": "down",
-   "trendPct": -15.8,
-   "badges": [],
-   "participantCount": 3,
-   "sourceCount": 3,
-   "sourceNames": [
-    "The Decoder",
-    "The Verge · AI",
-    "OpenAI News"
-   ],
-   "participants": [
-    {
-     "name": "OpenAI News",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    17.0,
-    16.5,
-    16.0,
-    15.6,
-    15.1,
-    14.7,
-    14.3,
-    13.9,
-    13.5,
-    13.1,
-    12.7,
-    12.4,
-    21.9,
-    21.3,
-    20.7,
-    20.1,
-    19.5,
-    19.0,
-    18.4,
-    17.9,
-    17.4,
-    16.9,
-    16.4,
-    15.9,
-    15.5
-   ],
-   "summary": "OpenAI 称与学术社区合作推进科学理解；媒体跟进称其请外部专家（含诺奖得主）核验模型在数学/计科/物理上的证明。一手以 OpenAI 通稿为准。",
-   "latest": null,
-   "cover": null,
-   "rankDelta": 1,
-   "heatDeltaPct": -13.9
-  },
-  {
-   "rank": 3,
-   "story": {
-    "publicId": "2026-10-27-openai-gpt61-terra",
-    "title": "OpenAI 发布 GPT-6.1 Terra"
-   },
-   "heat": 15.4,
-   "trend": "down",
-   "trendPct": -27.4,
-   "badges": [],
-   "participantCount": 3,
-   "sourceCount": 3,
-   "sourceNames": [
-    "量子位",
-    "Simon Willison",
-    "The Decoder"
-   ],
-   "participants": [
-    {
-     "name": "量子位",
-     "kind": "editorial"
-    },
-    {
-     "name": "Simon Willison",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    23.3,
-    22.7,
-    22.0,
-    21.4,
-    20.8,
-    20.2,
-    19.6,
-    19.1,
-    28.4,
-    27.6,
-    26.8,
-    26.0,
-    25.3,
-    24.5,
-    23.8,
-    23.2,
-    22.5,
-    21.9,
-    21.2,
-    20.6,
-    20.1,
-    19.5,
-    18.9,
-    15.9,
-    15.4
-   ],
-   "summary": "OpenAI 发布 GPT-6.1 Terra，称带来更快、更强的计算机使用能力，并显著下调 API 价格、在多项日常与控制任务上逼近更大模型。属官方产品发布；具体价目与评测以原文为准。",
-   "latest": null,
-   "cover": null,
-   "rankDelta": -1,
-   "heatDeltaPct": -25.6
-  },
-  {
-   "rank": 4,
-   "story": {
-    "publicId": "2026-10-27-cloudflare-glm53-kv-cache",
-    "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露"
-   },
-   "heat": 9.3,
-   "trend": "down",
-   "trendPct": -16.2,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 1,
-   "sourceNames": [
-    "Cloudflare Blog"
-   ],
-   "participants": [
-    {
-     "name": "Cloudflare Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "Hacker News（AI 关键词 ≥100 分）",
-     "kind": "signal"
-    }
-   ],
-   "spark": [
-    18.7,
-    18.2,
-    17.7,
-    17.2,
-    16.7,
-    16.2,
-    15.7,
-    15.3,
-    14.9,
-    14.4,
-    14.0,
-    13.6,
-    13.2,
-    12.9,
-    12.5,
-    12.1,
-    11.8,
-    11.5,
-    11.1,
-    10.8,
-    10.5,
-    10.2,
-    9.9,
-    9.6,
-    9.4
-   ],
-   "summary": "Cloudflare 披露并修复其 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题，说明影响范围与补救。属官方安全通告。",
-   "latest": null,
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -14.7
-  },
-  {
-   "rank": 5,
-   "story": {
-    "publicId": "2026-10-27-baseten-bdn-sealed-volumes",
-    "title": "Baseten：BDN Sealed Volumes 一次发布处处挂载"
-   },
-   "heat": 9.3,
-   "trend": "down",
-   "trendPct": -15.5,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "OpenTools",
-    "Baseten Blog"
-   ],
-   "participants": [
-    {
-     "name": "Baseten Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "OpenTools",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    18.6,
-    18.0,
-    17.5,
-    17.0,
-    16.5,
-    16.1,
-    15.6,
-    15.2,
-    14.7,
-    14.3,
-    13.9,
-    13.5,
-    13.1,
-    12.7,
-    12.4,
-    12.0,
-    11.7,
-    11.4,
-    11.0,
-    10.7,
-    10.4,
-    10.1,
-    9.8,
-    9.5,
-    9.3
-   ],
-   "summary": "Baseten 博客发布 BDN Sealed Volumes：一次发布、多处挂载的密封卷能力。",
-   "latest": "OpenTools 跟进：digest 钉死与可变 tag 风险（#92 第二源）。",
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -13.9
-  },
-  {
-   "rank": 6,
-   "story": {
-    "publicId": "2026-10-27-nvidia-minerva-gpu-yield",
-    "title": "NVIDIA Minerva：把遥测混乱变成峰值 GPU 良率"
-   },
-   "heat": 7.7,
-   "trend": "down",
-   "trendPct": -16.3,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "eWeek",
-    "NVIDIA Technical Blog"
-   ],
-   "participants": [
-    {
-     "name": "NVIDIA Technical Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "eWeek",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    15.4,
-    15.0,
-    14.6,
-    14.1,
-    13.7,
-    13.3,
-    13.0,
-    12.6,
-    12.2,
-    11.9,
-    11.6,
-    11.2,
-    10.9,
-    10.6,
-    10.3,
-    10.0,
-    9.7,
-    9.4,
-    9.2,
-    8.9,
-    8.7,
-    8.4,
-    8.2,
-    7.9,
-    7.7
-   ],
-   "summary": "NVIDIA 技术博客介绍 Minerva 如何用遥测提升 GPU 良率。属厂商技术说明。",
-   "latest": "eWeek 独立报道 Minerva AIOps（#92 第二源；discovery_aligned）。",
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -13.5
-  },
-  {
-   "rank": 7,
-   "story": {
-    "publicId": "2026-10-27-nvidia-mission-control-25",
-    "title": "NVIDIA Mission Control 2.5：Kubernetes 自主恢复"
-   },
-   "heat": 7.6,
-   "trend": "down",
-   "trendPct": -15.6,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "Blockchain.News",
-    "NVIDIA Technical Blog"
-   ],
-   "participants": [
-    {
-     "name": "NVIDIA Technical Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "Blockchain.News",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    15.2,
-    14.8,
-    14.3,
-    13.9,
-    13.5,
-    13.1,
-    12.8,
-    12.4,
-    12.1,
-    11.7,
-    11.4,
-    11.1,
-    10.7,
-    10.4,
-    10.1,
-    9.8,
-    9.6,
-    9.3,
-    9.0,
-    8.8,
-    8.5,
-    8.3,
-    8.0,
-    7.8,
-    7.6
-   ],
-   "summary": "NVIDIA 技术博客称 Mission Control 2.5 为 Kubernetes 环境带来自主恢复能力，减少人工干预。属厂商技术说明。",
-   "latest": null,
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -13.6
-  }
- ]
+  ]
 }
