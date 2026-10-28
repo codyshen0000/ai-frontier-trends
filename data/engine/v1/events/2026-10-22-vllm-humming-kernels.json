@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-22-vllm-humming-kernels",
  "title": "vLLM 开源 Humming：面向量化推理的内核库",
- "status": "watching",
+ "status": "settled",
  "reportCount": 1,
  "sourceCount": 1,
  "firstReportAt": "2026-10-21T00:00:00.000Z",

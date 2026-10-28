@@ -3,24 +3,12 @@
  "entries": [
   {
    "rank": 1,
-   "publicId": "2026-10-27-anthropic-ipo-s1",
-   "heat": 35.9,
-   "participantCount": 5
-  },
-  {
-   "rank": 2,
    "publicId": "2026-10-27-openai-gpt61-terra",
    "heat": 16.7,
    "participantCount": 3
   },
   {
-   "rank": 3,
-   "publicId": "2026-10-27-cohere-qwen-concerning-behavior",
-   "heat": 12.8,
-   "participantCount": 2
-  },
-  {
-   "rank": 4,
+   "rank": 2,
    "publicId": "2026-10-27-openai-academic-science-collab",
    "heat": 12.1,
    "participantCount": 2

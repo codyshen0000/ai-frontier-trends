@@ -1,0 +1,355 @@
+{
+ "kind": "daily",
+ "key": "2026-10-28",
+ "issueNumber": 10,
+ "title": "AI日报 · 2026-10-28",
+ "generatedAt": "2026-10-28T00:39:32.000Z",
+ "lead": {
+  "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族",
+  "leadParagraph": "LiquidAI 经 Hugging Face 发布 LFM3：以 LFM3-1.7B-Base 衍生文本/视觉/音频/omni/决策等约 2B 模型，强调边缘部署与单卡微调；权重开源。属厂商/HF 一手发布。"
+ },
+ "leadItemId": "sha256:1c5b51464767c2ad",
+ "overview": "LiquidAI 发布 LFM3：约 2B 多模态同骨干开源族。",
+ "highlights": [
+  {
+   "itemId": "sha256:1c5b51464767c2ad",
+   "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族",
+   "summary": "LiquidAI 经 Hugging Face 发布 LFM3：以 LFM3-1.7B-Base 衍生文本/视觉/音频/omni/决策等约 2B 模型，强调边缘部署与单卡微调；权重开源。属厂商/HF 一手发布。",
+   "sourceName": "Hugging Face Blog",
+   "sourceUrl": "https://huggingface.co/blog/LiquidAI/lfm3",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-27T17:16:52.000Z",
+   "available": true,
+   "otherSources": 0
+  },
+  {
+   "itemId": "sha256:64295c3ae779f4ac",
+   "title": "OpenAI：公开「指数时间假设为假」预印本材料",
+   "summary": "OpenAI math 仓库公开称确定性算法可对固定宽度 k-CNF 做亚指数精确计数，从而挑战 ETH；附预印本与 Lean 形式化范围说明，并由外部工作组审查。TechCrunch 跟进解读。属实验室自报，正确性待外部核验。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://github.com/openai/math/tree/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-25T00:00:00.000Z",
+   "available": true,
+   "otherSources": 0
+  },
+  {
+   "itemId": "sha256:e97319d8730a2e80",
+   "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
+   "summary": "Google Research 提出 sleep 持续学习范式：在活跃交互与离线记忆巩固间切换，用 MoE 扩容与做梦式自改进，报告长上下文与推理基准提升。属一手研究博客。",
+   "sourceName": "Google Research Blog",
+   "sourceUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-27T17:35:00.000Z",
+   "available": true,
+   "otherSources": 0
+  },
+  {
+   "itemId": "sha256:c417f8e3d39d0b89",
+   "title": "OpenAI：与 Oracle 扩大合作，把应用接入 ChatGPT",
+   "summary": "OpenAI 称与 Oracle 扩大合作：把 Oracle 应用与数据接入 ChatGPT（Oracle AI Workspace），并用 OpenAI 模型支撑 AI Security Mesh、SMB Bundle、App Composer 等新产品；美国客户可通过 Oracle Marketplace 采购。属官方通稿。",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/oracle-apps-in-chatgpt",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-27T07:00:00.000Z",
+   "available": true,
+   "otherSources": 0
+  }
+ ],
+ "sections": [
+  {
+   "label": "模型",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:1c5b51464767c2ad",
+     "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族",
+     "summary": "LiquidAI 经 Hugging Face 发布 LFM3：以 LFM3-1.7B-Base 衍生文本/视觉/音频/omni/决策等约 2B 模型，强调边缘部署与单卡微调；权重开源。属厂商/HF 一手发布。",
+     "sourceName": "Hugging Face Blog",
+     "sourceUrl": "https://huggingface.co/blog/LiquidAI/lfm3",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-27T17:16:52.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:e960e8891f7d7ad8",
+     "title": "DeepMind 发布 Genie 4：新一代世界仿真",
+     "summary": "Google DeepMind 宣布 Genie 4 世界模型，称提升实时交互仿真真实感，并原生多模态生成音频与对话；依托 Gemini 家族维持连贯。现为可信测试者研究预览，后续面向 Google AI Ultra 等。属官方发布。",
+     "sourceName": "Google DeepMind Blog",
+     "sourceUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-27T16:01:38.000Z",
+     "available": true,
+     "otherSources": 4
+    }
+   ]
+  },
+  {
+   "label": "论文",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:64295c3ae779f4ac",
+     "title": "OpenAI：公开「指数时间假设为假」预印本材料",
+     "summary": "OpenAI math 仓库公开称确定性算法可对固定宽度 k-CNF 做亚指数精确计数，从而挑战 ETH；附预印本与 Lean 形式化范围说明，并由外部工作组审查。TechCrunch 跟进解读。属实验室自报，正确性待外部核验。",
+     "sourceName": "TechCrunch · AI",
+     "sourceUrl": "https://github.com/openai/math/tree/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-25T00:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:e97319d8730a2e80",
+     "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
+     "summary": "Google Research 提出 sleep 持续学习范式：在活跃交互与离线记忆巩固间切换，用 MoE 扩容与做梦式自改进，报告长上下文与推理基准提升。属一手研究博客。",
+     "sourceName": "Google Research Blog",
+     "sourceUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-27T17:35:00.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:1d6c5c59e46e52b9",
+     "title": "Hugging Face：LLM 能否可靠评判研究想法新颖性",
+     "summary": "Hugging Face 博客发布 Ai2 研究 Old Ideas, Novel Problems，评估大模型作新颖性评判的可靠性，并公开基准、数据、代码与自动化评测流水线。属一手研究发布。",
+     "sourceName": "Hugging Face Blog",
+     "sourceUrl": "https://huggingface.co/blog/allenai/novelty-bench",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-27T16:12:42.000Z",
+     "available": true,
+     "otherSources": 0
+    }
+   ]
+  },
+  {
+   "label": "产品",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:c417f8e3d39d0b89",
+     "title": "OpenAI：与 Oracle 扩大合作，把应用接入 ChatGPT",
+     "summary": "OpenAI 称与 Oracle 扩大合作：把 Oracle 应用与数据接入 ChatGPT（Oracle AI Workspace），并用 OpenAI 模型支撑 AI Security Mesh、SMB Bundle、App Composer 等新产品；美国客户可通过 Oracle Marketplace 采购。属官方通稿。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/oracle-apps-in-chatgpt",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-27T07:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:449070727cbfb984",
+     "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
+     "summary": "NVIDIA 技术博客介绍 CUDA 13.4 在 Kubernetes 中的内存强制 GPU 共享：按显存配额切分单卡，减少小负载独占整卡造成的空闲。属厂商开发者文档级发布。",
+     "sourceName": "NVIDIA Technical Blog",
+     "sourceUrl": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-27T20:50:39.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:257d2044442d252a",
+     "title": "Opera 推出 WebAI：浏览器本地部署 AI",
+     "summary": "Opera 称推出 WebAI 预览，让网站与扩展在浏览器内调用本地推理（含开源权重），并称该提案获多家公司支持。一手见 Opera 博客；TechCrunch 跟进。",
+     "sourceName": "TechCrunch · AI",
+     "sourceUrl": "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/",
+     "sourceIconUrl": null,
+     "firstParty": false,
+     "publishedAt": "2026-10-27T13:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:b836eb939c37ffa5",
+     "title": "NVIDIA：在 DGX Spark 上加速 MoE 推理的三种方法",
+     "summary": "NVIDIA 技术博客以 Ling-3.0-flash 为例，介绍 Humming 内核、在线 FP8 量化与多 token 预测 speculative decoding 等路径，称组合后解码吞吐约提升四成。属厂商技术说明。",
+     "sourceName": "NVIDIA Technical Blog",
+     "sourceUrl": "https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-27T15:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    }
+   ]
+  },
+  {
+   "label": "其他",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:c3d6fb64eb5418e8",
+     "title": "NVIDIA Mission Control 2.5：Kubernetes 自主恢复",
+     "summary": "NVIDIA 技术博客称 Mission Control 2.5 为 Kubernetes 环境带来自主恢复能力，减少人工干预。属厂商技术说明。",
+     "sourceName": "NVIDIA Technical Blog",
+     "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-26T15:00:00.000Z",
+     "available": true,
+     "otherSources": 1
+    },
+    {
+     "itemId": "sha256:edeae07ffd206303",
+     "title": "NVIDIA Minerva：把遥测混乱变成峰值 GPU 良率",
+     "summary": "NVIDIA 技术博客介绍 Minerva 如何用遥测提升 GPU 良率。属厂商技术说明。",
+     "sourceName": "NVIDIA Technical Blog",
+     "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-26T16:00:00.000Z",
+     "available": true,
+     "otherSources": 1
+    },
+    {
+     "itemId": "sha256:8eb6001a836a6e50",
+     "title": "OpenAI：与学界共建科学理解",
+     "summary": "OpenAI 称与学术社区合作推进科学理解；媒体跟进称其请外部专家（含诺奖得主）核验模型在数学/计科/物理上的证明。一手以 OpenAI 通稿为准。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-26T14:30:00.000Z",
+     "available": true,
+     "otherSources": 2
+    }
+   ]
+  }
+ ],
+ "flashes": [
+  {
+   "itemId": "sha256:a9a41b70941237e4",
+   "title": "NVIDIA：RTX Spark 支撑神经渲染与游戏内 AI 角色",
+   "summary": "RTX Spark 开发者说明；本日日报位被 CUDA 13.4 按综合分替换。",
+   "sourceName": "NVIDIA Technical Blog",
+   "sourceUrl": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-27T17:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:c44dc9ed271ff418",
+   "title": "OpenAI：Check Point 用 Daybreak 加速漏洞研究",
+   "summary": "客户案例；未过 T1=60，不进精选。",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/check-point-daybreak",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-27T00:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:532d66983e66bb3d",
+   "title": "跟进：Palisade 称 Qwen 3.8 部分请求路由到公司服务器",
+   "summary": "The Decoder 跟进并入 Cohere「异常外传」事件。",
+   "sourceName": "The Decoder",
+   "sourceUrl": "https://the-decoder.com/alibabas-latest-qwen-models-routed-some-requests-through-company-servers-researchers-find/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T19:45:49.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:db05b50ceb26005a",
+   "title": "报道：家属起诉 OpenAI，称 GPT-4o 诱导停用抗癫痫药",
+   "summary": "诉讼报道；事实待法庭程序，未过 T2=76。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T23:34:27.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:a17083d6bd141e2d",
+   "title": "报道：亚马逊在持续失败后收缩 AI 部门",
+   "summary": null,
+   "sourceName": "Futurism",
+   "sourceUrl": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T16:25:30.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:9a3764356b202945",
+   "title": "报道：美国银行提醒勿把网银密码交给 AI 助手",
+   "summary": "机构风险提示；未过 T2=76。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T21:44:34.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:f74f3a0c358e9a1d",
+   "title": "跟进：谁在 Anthropic IPO 后真正掌权",
+   "summary": "TechCrunch 梳理治理结构；并入 Anthropic S-1 事件。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T21:38:28.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:1e3ebf94e41ebe19",
+   "title": "OpenAI：Retell 用其模型支撑每月约 1 亿通话",
+   "summary": "客户案例；未过 T1=60。",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/retell-ai",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-27T15:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:578f4a1cc2a6a4ec",
+   "title": "观点：研究者不满 OpenAI 对突破性结果的披露方式",
+   "summary": "The Verge 观点文；未过 T2=76。",
+   "sourceName": "The Verge · AI",
+   "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T20:48:58.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:3f05b58fe78718ef",
+   "title": "报道：甲骨文扩大英伟达供应并引入谷歌 TPU 与 Cerebras",
+   "summary": "IT之家聚合转述；hot_signal 不单列精选。",
+   "sourceName": "IT之家",
+   "sourceUrl": "https://www.ithome.com/1/018/728.htm",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-28T00:20:10.000Z",
+   "available": true
+  }
+ ],
+ "cover": null,
+ "metrics": {
+  "totalEvents": 12,
+  "sourcesCount": 11,
+  "firstPartyEvents": 11,
+  "modelsReleased": 2
+ },
+ "readingMinutes": 3,
+ "prev": "2026-10-27",
+ "next": null
+}

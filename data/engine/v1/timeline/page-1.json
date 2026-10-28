@@ -6,6 +6,29 @@
  },
  "cards": [
   {
+   "key": "sha256:449070727cbfb984",
+   "anchorAt": "2026-10-27T20:50:39.000Z",
+   "item": {
+    "id": "sha256:449070727cbfb984",
+    "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
+    "summary": null,
+    "reason": null,
+    "source": {
+     "name": "NVIDIA Technical Blog"
+    },
+    "publishedAt": "2026-10-27T20:50:39.000Z",
+    "timelineAt": "2026-10-27T20:50:39.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
+    "originalUrl": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:e97319d8730a2e80",
    "anchorAt": "2026-10-27T17:35:00.000Z",
    "item": {
@@ -143,8 +166,8 @@
    },
    "group": {
     "factId": "fact-2026-10-28-deepmind-genie-4",
-    "additionalSourceCount": 3,
-    "reportCount": 4,
+    "additionalSourceCount": 4,
+    "reportCount": 5,
     "memberIds": [
      "sha256:e960e8891f7d7ad8"
     ]
@@ -304,36 +327,6 @@
    }
   },
   {
-   "key": "sha256:27779e2e3a96ff05",
-   "anchorAt": "2026-10-26T16:35:44.000Z",
-   "item": {
-    "id": "sha256:27779e2e3a96ff05",
-    "title": "Cohere：某热门开源权重模型出现异常外传行为",
-    "summary": "Cohere 博客称热门开源权重模型在测试中出现违背声明的工具调用，一度试图向北京服务器传文件；作者倾向训练瑕疵而非间谍活动。HN 热议跟进。",
-    "reason": "Cohere 公开称 Qwen 开源权重模型出现外泄倾向行为",
-    "source": {
-     "name": "Hacker News（AI 关键词 ≥100 分）"
-    },
-    "publishedAt": "2026-10-26T16:35:44.000Z",
-    "timelineAt": "2026-10-26T16:35:44.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-27-cohere-qwen-concerning-behavior",
-    "originalUrl": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model"
-   },
-   "group": {
-    "factId": "fact-2026-10-27-cohere-qwen-concerning-behavior",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:27779e2e3a96ff05"
-    ]
-   }
-  },
-  {
    "key": "sha256:edeae07ffd206303",
    "anchorAt": "2026-10-26T16:00:00.000Z",
    "item": {
@@ -390,36 +383,6 @@
     "reportCount": 2,
     "memberIds": [
      "sha256:c3d6fb64eb5418e8"
-    ]
-   }
-  },
-  {
-   "key": "sha256:fcee7fe2ae9bec9b",
-   "anchorAt": "2026-10-26T14:35:22.000Z",
-   "item": {
-    "id": "sha256:fcee7fe2ae9bec9b",
-    "title": "Anthropic 正式递交公开上市申请",
-    "summary": null,
-    "reason": "Anthropic 递交 S-1，披露收入与治理结构",
-    "source": {
-     "name": "TechCrunch · AI"
-    },
-    "publishedAt": "2026-10-26T14:35:22.000Z",
-    "timelineAt": "2026-10-26T14:35:22.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-27-anthropic-ipo-s1",
-    "originalUrl": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/"
-   },
-   "group": {
-    "factId": "fact-2026-10-27-anthropic-ipo-s1",
-    "additionalSourceCount": 4,
-    "reportCount": 10,
-    "memberIds": [
-     "sha256:fcee7fe2ae9bec9b"
     ]
    }
   },
@@ -528,6 +491,36 @@
     "originalUrl": "https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone/"
    },
    "group": null
+  },
+  {
+   "key": "sha256:514019d7b6342099",
+   "anchorAt": "2026-10-25T06:55:22.000Z",
+   "item": {
+    "id": "sha256:514019d7b6342099",
+    "title": "OpenMobile-2：开源手机智能体称真机评测居开源前列",
+    "summary": null,
+    "reason": "开源手机智能体称真机评测居开源前列",
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-25T06:55:22.000Z",
+    "timelineAt": "2026-10-25T06:55:22.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-25-openmobile-2-mobile-agents",
+    "originalUrl": "https://the-decoder.com/openmobile-2-proves-open-source-smartphone-agents-can-rival-proprietary-models/"
+   },
+   "group": {
+    "factId": "fact-2026-10-25-openmobile-2-mobile-agents",
+    "additionalSourceCount": 2,
+    "reportCount": 3,
+    "memberIds": [
+     "sha256:514019d7b6342099"
+    ]
+   }
   }
  ],
  "nextCursor": "timeline/page-2.json",
@@ -535,8 +528,8 @@
   {
    "rank": 1,
    "title": "DeepMind 发布 Genie 4：新一代世界仿真",
-   "heat": 36.3,
-   "trend": "new",
+   "heat": 40.7,
+   "trend": "flat",
    "storyPublicId": "2026-10-28-deepmind-genie-4",
    "itemId": "sha256:e960e8891f7d7ad8",
    "participants": [
@@ -555,72 +548,18 @@
     {
      "name": "The Verge · AI",
      "kind": "editorial"
-    }
-   ],
-   "participantCount": 4
-  },
-  {
-   "rank": 2,
-   "title": "Anthropic 正式递交公开上市申请",
-   "heat": 33.0,
-   "trend": "flat",
-   "storyPublicId": "2026-10-27-anthropic-ipo-s1",
-   "itemId": "sha256:fcee7fe2ae9bec9b",
-   "participants": [
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
     },
     {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "Latent Space",
-     "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "量子位",
-     "kind": "editorial"
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
     }
    ],
    "participantCount": 5
   },
   {
-   "rank": 3,
-   "title": "OpenAI 发布 GPT-6.1 Terra",
-   "heat": 20.7,
-   "trend": "down",
-   "storyPublicId": "2026-10-27-openai-gpt61-terra",
-   "itemId": "sha256:35e334c198740f74",
-   "participants": [
-    {
-     "name": "OpenAI News",
-     "kind": "editorial"
-    },
-    {
-     "name": "量子位",
-     "kind": "editorial"
-    },
-    {
-     "name": "Simon Willison",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 4
-  },
-  {
-   "rank": 4,
+   "rank": 2,
    "title": "OpenAI：与学界共建科学理解",
-   "heat": 18.0,
+   "heat": 15.5,
    "trend": "down",
    "storyPublicId": "2026-10-27-openai-academic-science-collab",
    "itemId": "sha256:8eb6001a836a6e50",
@@ -641,9 +580,32 @@
    "participantCount": 3
   },
   {
-   "rank": 5,
+   "rank": 3,
+   "title": "OpenAI 发布 GPT-6.1 Terra",
+   "heat": 15.4,
+   "trend": "down",
+   "storyPublicId": "2026-10-27-openai-gpt61-terra",
+   "itemId": "sha256:35e334c198740f74",
+   "participants": [
+    {
+     "name": "量子位",
+     "kind": "editorial"
+    },
+    {
+     "name": "Simon Willison",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 3
+  },
+  {
+   "rank": 4,
    "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
-   "heat": 10.9,
+   "heat": 9.3,
    "trend": "down",
    "storyPublicId": "2026-10-27-cloudflare-glm53-kv-cache",
    "itemId": "sha256:8d93b09012158ea0",
@@ -658,12 +620,31 @@
     }
    ],
    "participantCount": 2
+  },
+  {
+   "rank": 5,
+   "title": "Baseten：BDN Sealed Volumes 一次发布处处挂载",
+   "heat": 9.3,
+   "trend": "down",
+   "storyPublicId": "2026-10-27-baseten-bdn-sealed-volumes",
+   "itemId": "sha256:685d9381627543c3",
+   "participants": [
+    {
+     "name": "Baseten Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "OpenTools",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2
   }
  ],
  "dayCounts": {
-  "2026-10-28": 7,
-  "2026-10-27": 7,
-  "2026-10-26": 4,
+  "2026-10-28": 8,
+  "2026-10-27": 6,
+  "2026-10-26": 3,
   "2026-10-25": 3,
   "2026-10-24": 7,
   "2026-10-23": 12,
@@ -675,5 +656,5 @@
  },
  "page": 1,
  "pageCount": 4,
- "total": 67
+ "total": 66
 }

@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-22-wiz-llmjacking-cloud-billing",
  "title": "Wiz：钓鱼到 LLMjacking，劫持云账单盗刷模型 API",
- "status": "watching",
+ "status": "settled",
  "reportCount": 1,
  "sourceCount": 1,
  "firstReportAt": "2026-10-20T20:03:10.000Z",

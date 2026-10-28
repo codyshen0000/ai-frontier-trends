@@ -2,10 +2,10 @@
  "publicId": "2026-10-28-deepmind-genie-4",
  "title": "DeepMind 发布 Genie 4：新一代世界仿真",
  "status": "active",
- "reportCount": 4,
- "sourceCount": 4,
+ "reportCount": 5,
+ "sourceCount": 5,
  "firstReportAt": "2026-10-27T16:00:00.000Z",
- "latestAt": "2026-10-27T17:25:09.000Z",
+ "latestAt": "2026-10-27T23:04:49.000Z",
  "digest": null,
  "digestUpdatedAt": null,
  "summary": null,
@@ -13,9 +13,9 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 4,
-  "newParticipants6h": 4,
-  "recentReports24h": 4,
+  "participants48h": 5,
+  "newParticipants6h": 1,
+  "recentReports24h": 5,
   "observationComplete": true,
   "rank": 1
  },
@@ -24,7 +24,7 @@
    "factId": "fact-2026-10-28-deepmind-genie-4",
    "title": "DeepMind 发布 Genie 4：新一代世界仿真",
    "firstReportAt": "2026-10-27T16:00:00.000Z",
-   "reportCount": 4,
+   "reportCount": 5,
    "representative": {
     "id": "sha256:e960e8891f7d7ad8",
     "title": "DeepMind 发布 Genie 4：新一代世界仿真",
@@ -54,6 +54,18 @@
   }
  ],
  "timeline": [
+  {
+   "id": "sha256:b952fb64e967a76c",
+   "title": "DeepMind 发布 Genie 4：新一代世界仿真",
+   "summary": "热度并入既有事件。",
+   "source": {
+    "name": "IT之家（全站，需关键词过滤）",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-27T23:04:49.000Z",
+   "selected": false,
+   "originalUrl": "https://www.ithome.com/1/018/711.htm"
+  },
   {
    "id": "sha256:6d077b88579f686d",
    "title": "报道：Genie 4 给前 LLM 时代智能体设计现代化包装",
@@ -123,11 +135,41 @@
    "hour": "2026-10-27T19:00:00.000Z",
    "heat": 37.2,
    "participants": 4
+  },
+  {
+   "hour": "2026-10-27T20:00:00.000Z",
+   "heat": 36.1,
+   "participants": 4
+  },
+  {
+   "hour": "2026-10-27T21:00:00.000Z",
+   "heat": 35.1,
+   "participants": 4
+  },
+  {
+   "hour": "2026-10-27T22:00:00.000Z",
+   "heat": 34.1,
+   "participants": 4
+  },
+  {
+   "hour": "2026-10-27T23:00:00.000Z",
+   "heat": 33.1,
+   "participants": 4
+  },
+  {
+   "hour": "2026-10-28T00:00:00.000Z",
+   "heat": 41.9,
+   "participants": 5
+  },
+  {
+   "hour": "2026-10-28T01:00:00.000Z",
+   "heat": 40.7,
+   "participants": 5
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "DeepMind 发布 Genie 4 世界模型，强调实时仿真与多模态",
  "primaryUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
- "rankDelta": 2
+ "rankDelta": 0
 }

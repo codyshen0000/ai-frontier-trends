@@ -2,8 +2,8 @@
  {
   "rank": 1,
   "title": "DeepMind 发布 Genie 4：新一代世界仿真",
-  "heat": 36.3,
-  "trend": "new",
+  "heat": 40.7,
+  "trend": "flat",
   "storyPublicId": "2026-10-28-deepmind-genie-4",
   "itemId": "sha256:e960e8891f7d7ad8",
   "participants": [
@@ -22,72 +22,18 @@
    {
     "name": "The Verge · AI",
     "kind": "editorial"
-   }
-  ],
-  "participantCount": 4
- },
- {
-  "rank": 2,
-  "title": "Anthropic 正式递交公开上市申请",
-  "heat": 33.0,
-  "trend": "flat",
-  "storyPublicId": "2026-10-27-anthropic-ipo-s1",
-  "itemId": "sha256:fcee7fe2ae9bec9b",
-  "participants": [
-   {
-    "name": "The Verge · AI",
-    "kind": "editorial"
    },
    {
-    "name": "The Decoder",
-    "kind": "editorial"
-   },
-   {
-    "name": "Latent Space",
-    "kind": "editorial"
-   },
-   {
-    "name": "TechCrunch · AI",
-    "kind": "editorial"
-   },
-   {
-    "name": "量子位",
-    "kind": "editorial"
+    "name": "IT之家（全站，需关键词过滤）",
+    "kind": "signal"
    }
   ],
   "participantCount": 5
  },
  {
-  "rank": 3,
-  "title": "OpenAI 发布 GPT-6.1 Terra",
-  "heat": 20.7,
-  "trend": "down",
-  "storyPublicId": "2026-10-27-openai-gpt61-terra",
-  "itemId": "sha256:35e334c198740f74",
-  "participants": [
-   {
-    "name": "OpenAI News",
-    "kind": "editorial"
-   },
-   {
-    "name": "量子位",
-    "kind": "editorial"
-   },
-   {
-    "name": "Simon Willison",
-    "kind": "editorial"
-   },
-   {
-    "name": "The Decoder",
-    "kind": "editorial"
-   }
-  ],
-  "participantCount": 4
- },
- {
-  "rank": 4,
+  "rank": 2,
   "title": "OpenAI：与学界共建科学理解",
-  "heat": 18.0,
+  "heat": 15.5,
   "trend": "down",
   "storyPublicId": "2026-10-27-openai-academic-science-collab",
   "itemId": "sha256:8eb6001a836a6e50",
@@ -108,9 +54,32 @@
   "participantCount": 3
  },
  {
-  "rank": 5,
+  "rank": 3,
+  "title": "OpenAI 发布 GPT-6.1 Terra",
+  "heat": 15.4,
+  "trend": "down",
+  "storyPublicId": "2026-10-27-openai-gpt61-terra",
+  "itemId": "sha256:35e334c198740f74",
+  "participants": [
+   {
+    "name": "量子位",
+    "kind": "editorial"
+   },
+   {
+    "name": "Simon Willison",
+    "kind": "editorial"
+   },
+   {
+    "name": "The Decoder",
+    "kind": "editorial"
+   }
+  ],
+  "participantCount": 3
+ },
+ {
+  "rank": 4,
   "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
-  "heat": 10.9,
+  "heat": 9.3,
   "trend": "down",
   "storyPublicId": "2026-10-27-cloudflare-glm53-kv-cache",
   "itemId": "sha256:8d93b09012158ea0",
@@ -122,6 +91,25 @@
    {
     "name": "Hacker News（AI 关键词 ≥100 分）",
     "kind": "signal"
+   }
+  ],
+  "participantCount": 2
+ },
+ {
+  "rank": 5,
+  "title": "Baseten：BDN Sealed Volumes 一次发布处处挂载",
+  "heat": 9.3,
+  "trend": "down",
+  "storyPublicId": "2026-10-27-baseten-bdn-sealed-volumes",
+  "itemId": "sha256:685d9381627543c3",
+  "participants": [
+   {
+    "name": "Baseten Blog",
+    "kind": "editorial"
+   },
+   {
+    "name": "OpenTools",
+    "kind": "editorial"
    }
   ],
   "participantCount": 2

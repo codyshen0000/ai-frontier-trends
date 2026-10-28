@@ -6,29 +6,6 @@
  },
  "cards": [
   {
-   "key": "sha256:011eb73686ffbc98",
-   "anchorAt": "2026-10-20T20:03:10.000Z",
-   "item": {
-    "id": "sha256:011eb73686ffbc98",
-    "title": "Wiz：钓鱼到 LLMjacking，劫持云账单盗刷模型 API",
-    "summary": "搜索广告钓鱼后劫持云计费账户，未授权刷大模型 API 可产生巨额账单。",
-    "reason": "钓鱼劫持云账单盗刷 LLM API（LLMjacking）",
-    "source": {
-     "name": "Wiz Blog"
-    },
-    "publishedAt": "2026-10-20T20:03:10.000Z",
-    "timelineAt": "2026-10-20T20:03:10.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-22-wiz-llmjacking-cloud-billing",
-    "originalUrl": "https://www.wiz.io/blog/from-phishing-to-llmjacking"
-   },
-   "group": null
-  },
-  {
    "key": "sha256:4c6292fc5ecba5f2",
    "anchorAt": "2026-10-20T12:00:22.000Z",
    "item": {
@@ -193,5 +170,5 @@
  "dayCounts": {},
  "page": 4,
  "pageCount": 4,
- "total": 67
+ "total": 66
 }

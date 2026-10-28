@@ -15,9 +15,9 @@
  "whyHot": {
   "participants48h": 2,
   "newParticipants6h": 0,
-  "recentReports24h": 2,
+  "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 6
+  "rank": 5
  },
  "developments": [
   {
@@ -188,6 +188,36 @@
   {
    "hour": "2026-10-27T19:00:00.000Z",
    "heat": 11.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T20:00:00.000Z",
+   "heat": 10.7,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T21:00:00.000Z",
+   "heat": 10.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T22:00:00.000Z",
+   "heat": 10.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T23:00:00.000Z",
+   "heat": 9.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T00:00:00.000Z",
+   "heat": 9.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T01:00:00.000Z",
+   "heat": 9.3,
    "participants": 2
   }
  ],

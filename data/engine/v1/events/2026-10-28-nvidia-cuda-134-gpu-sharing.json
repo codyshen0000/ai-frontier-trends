@@ -1,0 +1,100 @@
+{
+ "publicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
+ "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-27T20:50:39.000Z",
+ "latestAt": "2026-10-27T20:50:39.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "NVIDIA 技术博客介绍 CUDA 13.4 在 Kubernetes 中的内存强制 GPU 共享：按显存配额切分单卡，减少小负载独占整卡造成的空闲。属厂商开发者文档级发布。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-28-nvidia-cuda-134-gpu-sharing",
+   "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
+   "firstReportAt": "2026-10-27T20:50:39.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:449070727cbfb984",
+    "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
+    "summary": null,
+    "source": {
+     "name": "NVIDIA Technical Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-27T20:50:39.000Z",
+    "selected": true,
+    "originalUrl": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:449070727cbfb984",
+   "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
+   "summary": null,
+   "source": {
+    "name": "NVIDIA Technical Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-27T20:50:39.000Z",
+   "selected": true,
+   "originalUrl": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:449070727cbfb984",
+   "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
+   "summary": null,
+   "source": {
+    "name": "NVIDIA Technical Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-27T20:50:39.000Z",
+   "selected": true,
+   "originalUrl": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-27T21:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T22:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-27T23:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-28T00:00:00.000Z",
+   "heat": 9.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-28T01:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "primaryUrl": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/"
+}

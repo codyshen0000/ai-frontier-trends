@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 8
+  "rank": 6
  },
  "developments": [
   {
@@ -218,6 +218,36 @@
   {
    "hour": "2026-10-27T19:00:00.000Z",
    "heat": 9.2,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T20:00:00.000Z",
+   "heat": 8.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T21:00:00.000Z",
+   "heat": 8.7,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T22:00:00.000Z",
+   "heat": 8.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T23:00:00.000Z",
+   "heat": 8.2,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T00:00:00.000Z",
+   "heat": 7.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T01:00:00.000Z",
+   "heat": 7.7,
    "participants": 2
   }
  ],

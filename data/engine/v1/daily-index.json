@@ -52,5 +52,11 @@
     "issueNumber": 9,
     "title": "OpenAI 发布 GPT-6.1 Terra",
     "count": 7
+  },
+  {
+    "key": "2026-10-28",
+    "issueNumber": 10,
+    "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族",
+    "count": 12
   }
 ]

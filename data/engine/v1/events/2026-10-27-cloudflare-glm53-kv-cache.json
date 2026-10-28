@@ -15,9 +15,9 @@
  "whyHot": {
   "participants48h": 2,
   "newParticipants6h": 0,
-  "recentReports24h": 2,
+  "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 5
+  "rank": 4
  },
  "developments": [
   {
@@ -57,7 +57,7 @@
   {
    "id": "sha256:89893d5f73c77515",
    "title": "Cloudflare：修复 Workers AI GLM-5.3 跨请求 KV 缓存暴露",
-   "summary": "HN 热度并入。",
+   "summary": "热度并入既有事件。",
    "source": {
     "name": "Hacker News（AI 关键词 ≥100 分）",
     "firstParty": false
@@ -183,6 +183,36 @@
   {
    "hour": "2026-10-27T19:00:00.000Z",
    "heat": 11.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T20:00:00.000Z",
+   "heat": 10.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T21:00:00.000Z",
+   "heat": 10.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T22:00:00.000Z",
+   "heat": 10.2,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-27T23:00:00.000Z",
+   "heat": 9.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T00:00:00.000Z",
+   "heat": 9.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T01:00:00.000Z",
+   "heat": 9.4,
    "participants": 2
   }
  ],

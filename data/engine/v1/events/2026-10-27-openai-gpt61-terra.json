@@ -13,9 +13,9 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 4,
+  "participants48h": 3,
   "newParticipants6h": 0,
-  "recentReports24h": 3,
+  "recentReports24h": 1,
   "observationComplete": true,
   "rank": 3
  },
@@ -104,11 +104,6 @@
   }
  ],
  "heat": [
-  {
-   "hour": "2026-10-26T00:00:00.000Z",
-   "heat": 10.0,
-   "participants": 1
-  },
   {
    "hour": "2026-10-26T01:00:00.000Z",
    "heat": 9.7,
@@ -323,11 +318,41 @@
    "hour": "2026-10-27T19:00:00.000Z",
    "heat": 21.2,
    "participants": 4
+  },
+  {
+   "hour": "2026-10-27T20:00:00.000Z",
+   "heat": 20.6,
+   "participants": 4
+  },
+  {
+   "hour": "2026-10-27T21:00:00.000Z",
+   "heat": 20.1,
+   "participants": 4
+  },
+  {
+   "hour": "2026-10-27T22:00:00.000Z",
+   "heat": 19.5,
+   "participants": 4
+  },
+  {
+   "hour": "2026-10-27T23:00:00.000Z",
+   "heat": 18.9,
+   "participants": 4
+  },
+  {
+   "hour": "2026-10-28T00:00:00.000Z",
+   "heat": 15.9,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-28T01:00:00.000Z",
+   "heat": 15.4,
+   "participants": 3
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "OpenAI 发布 GPT-6.1 Terra，强调计算机使用与性价比",
  "primaryUrl": "https://openai.com/index/introducing-gpt-6-1-terra",
- "rankDelta": 1
+ "rankDelta": -1
 }

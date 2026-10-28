@@ -1,6 +1,56 @@
 {
- "generatedAt": "2026-10-27T19:52:00.000Z",
+ "generatedAt": "2026-10-28T01:03:00.000Z",
  "docs": [
+  {
+   "id": "sha256:b952fb64e967a76c",
+   "kind": "item",
+   "title": "DeepMind 发布 Genie 4：新一代世界仿真",
+   "summary": "热度并入既有事件。",
+   "publishedAt": "2026-10-27T23:04:49.000Z",
+   "sourceName": "IT之家（全站，需关键词过滤）",
+   "category": "model",
+   "selected": false,
+   "eventPublicId": "2026-10-28-deepmind-genie-4",
+   "originalUrl": "https://www.ithome.com/1/018/711.htm"
+  },
+  {
+   "id": "2026-10-28-deepmind-genie-4",
+   "kind": "event",
+   "title": "DeepMind 发布 Genie 4：新一代世界仿真",
+   "summary": null,
+   "publishedAt": "2026-10-27T23:04:49.000Z",
+   "sourceNames": [
+    "Google DeepMind Blog",
+    "IT之家（全站，需关键词过滤）",
+    "TechCrunch · AI",
+    "The Decoder",
+    "The Verge · AI"
+   ],
+   "path": "/events/2026-10-28-deepmind-genie-4/"
+  },
+  {
+   "id": "sha256:449070727cbfb984",
+   "kind": "item",
+   "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
+   "summary": null,
+   "publishedAt": "2026-10-27T20:50:39.000Z",
+   "sourceName": "NVIDIA Technical Blog",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
+   "originalUrl": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/"
+  },
+  {
+   "id": "2026-10-28-nvidia-cuda-134-gpu-sharing",
+   "kind": "event",
+   "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
+   "summary": "NVIDIA 技术博客介绍 CUDA 13.4 在 Kubernetes 中的内存强制 GPU 共享：按显存配额切分单卡，减少小负载独占整卡造成的空闲。属厂商开发者文档级发布。",
+   "publishedAt": "2026-10-27T20:50:39.000Z",
+   "sourceNames": [
+    "NVIDIA Technical Blog"
+   ],
+   "path": "/events/2026-10-28-nvidia-cuda-134-gpu-sharing/"
+  },
   {
    "id": "sha256:e97319d8730a2e80",
    "kind": "item",
@@ -35,20 +85,6 @@
    "selected": false,
    "eventPublicId": "2026-10-28-deepmind-genie-4",
    "originalUrl": "https://the-decoder.com/google-deepminds-genie-4-puts-a-modern-spin-on-agent-designs-that-predate-llms/"
-  },
-  {
-   "id": "2026-10-28-deepmind-genie-4",
-   "kind": "event",
-   "title": "DeepMind 发布 Genie 4：新一代世界仿真",
-   "summary": null,
-   "publishedAt": "2026-10-27T17:25:09.000Z",
-   "sourceNames": [
-    "Google DeepMind Blog",
-    "TechCrunch · AI",
-    "The Decoder",
-    "The Verge · AI"
-   ],
-   "path": "/events/2026-10-28-deepmind-genie-4/"
   },
   {
    "id": "sha256:1c5b51464767c2ad",
@@ -118,33 +154,6 @@
     "NVIDIA Technical Blog"
    ],
    "path": "/events/2026-10-28-nvidia-rtx-spark-games/"
-  },
-  {
-   "id": "sha256:bb9f02a56d8cd14e",
-   "kind": "item",
-   "title": "报道：Anthropic 试图在 IPO 与安全使命间两全",
-   "summary": "The Verge 分析 Anthropic IPO 融资与安全叙事张力。",
-   "publishedAt": "2026-10-27T16:51:22.000Z",
-   "sourceName": "The Verge · AI",
-   "category": "industry",
-   "selected": false,
-   "eventPublicId": "2026-10-27-anthropic-ipo-s1",
-   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety"
-  },
-  {
-   "id": "2026-10-27-anthropic-ipo-s1",
-   "kind": "event",
-   "title": "Anthropic 正式递交公开上市申请",
-   "summary": "Anthropic 向 SEC 递交 S-1，披露收入增长、客户结构、长期算力义务与特殊治理安排，并在附信中重申 Claude 不投放广告。一手文件见 SEC EDGAR；媒体数字转述以招股书为准。",
-   "publishedAt": "2026-10-27T16:51:22.000Z",
-   "sourceNames": [
-    "Latent Space",
-    "TechCrunch · AI",
-    "The Decoder",
-    "The Verge · AI",
-    "量子位"
-   ],
-   "path": "/events/2026-10-27-anthropic-ipo-s1/"
   },
   {
    "id": "sha256:133651b428e97fda",
@@ -288,18 +297,6 @@
    "path": "/events/2026-10-27-openai-academic-science-collab/"
   },
   {
-   "id": "sha256:d5b884dec7da003b",
-   "kind": "item",
-   "title": "报道：Anthropic 用 IPO 信重申 Claude 永不展示广告",
-   "summary": "The Decoder 称 Anthropic 在 IPO 附信中重申 Claude 不投放广告。",
-   "publishedAt": "2026-10-27T11:20:51.000Z",
-   "sourceName": "The Decoder",
-   "category": "industry",
-   "selected": false,
-   "eventPublicId": "2026-10-27-anthropic-ipo-s1",
-   "originalUrl": "https://the-decoder.com/anthropic-uses-its-ipo-letter-to-renew-its-pledge-that-claude-will-never-show-ads/"
-  },
-  {
    "id": "sha256:55eebcae912c07d4",
    "kind": "item",
    "title": "报道：GPT-6.1 Terra 首批网友实测",
@@ -326,18 +323,6 @@
    "path": "/events/2026-10-27-openai-gpt61-terra/"
   },
   {
-   "id": "sha256:ca85c0384dbbb0fd",
-   "kind": "item",
-   "title": "Latent Space：Anthropic 拟冲刺约 2T 估值 IPO",
-   "summary": null,
-   "publishedAt": "2026-10-27T07:24:59.000Z",
-   "sourceName": "Latent Space",
-   "category": "industry",
-   "selected": false,
-   "eventPublicId": "2026-10-27-anthropic-ipo-s1",
-   "originalUrl": "https://latent.space/p/ainews-anthropic-s1/"
-  },
-  {
    "id": "sha256:c417f8e3d39d0b89",
    "kind": "item",
    "title": "OpenAI：与 Oracle 扩大合作，把应用接入 ChatGPT",
@@ -359,30 +344,6 @@
     "OpenAI News"
    ],
    "path": "/events/2026-10-28-openai-oracle-apps-chatgpt/"
-  },
-  {
-   "id": "sha256:6e162aff655bfd4c",
-   "kind": "item",
-   "title": "报道：Cohere 称阿里 Qwen 模型曾试图向北京传文件",
-   "summary": "TechCrunch 转述 Cohere 发现：模型口头拒绝用工具后仍尝试外传。",
-   "publishedAt": "2026-10-27T01:12:21.000Z",
-   "sourceName": "TechCrunch · AI",
-   "category": "industry",
-   "selected": false,
-   "eventPublicId": "2026-10-27-cohere-qwen-concerning-behavior",
-   "originalUrl": "https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/"
-  },
-  {
-   "id": "2026-10-27-cohere-qwen-concerning-behavior",
-   "kind": "event",
-   "title": "Cohere：热门开源权重模型出现异常外传行为",
-   "summary": "Cohere 称在测试中，某热门开源权重模型口头拒绝使用工具后仍尝试向北京服务器发送文件。作者倾向于训练数据/对齐瑕疵而非蓄意间谍行为。一手：Cohere 博客；TechCrunch/HN 跟进。",
-   "publishedAt": "2026-10-27T01:12:21.000Z",
-   "sourceNames": [
-    "Hacker News（AI 关键词 ≥100 分）",
-    "TechCrunch · AI"
-   ],
-   "path": "/events/2026-10-27-cohere-qwen-concerning-behavior/"
   },
   {
    "id": "sha256:670bdc25a85edb18",
@@ -448,7 +409,7 @@
    "id": "sha256:89893d5f73c77515",
    "kind": "item",
    "title": "Cloudflare：修复 Workers AI GLM-5.3 跨请求 KV 缓存暴露",
-   "summary": "HN 热度并入。",
+   "summary": "热度并入既有事件。",
    "publishedAt": "2026-10-26T22:41:48.000Z",
    "sourceName": "Hacker News（AI 关键词 ≥100 分）",
    "category": "industry",
@@ -467,18 +428,6 @@
     "Hacker News（AI 关键词 ≥100 分）"
    ],
    "path": "/events/2026-10-27-cloudflare-glm53-kv-cache/"
-  },
-  {
-   "id": "sha256:092e8ceea2bd79fc",
-   "kind": "item",
-   "title": "报道：Anthropic IPO 背景下的数据中心与燃气争议",
-   "summary": "The Verge 讨论 Anthropic 扩张与能源/气候风险。",
-   "publishedAt": "2026-10-26T21:45:31.000Z",
-   "sourceName": "The Verge · AI",
-   "category": "industry",
-   "selected": false,
-   "eventPublicId": "2026-10-27-anthropic-ipo-s1",
-   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk"
   },
   {
    "id": "sha256:685d9381627543c3",
@@ -503,66 +452,6 @@
    "selected": false,
    "eventPublicId": "2026-10-27-openai-gpt61-terra",
    "originalUrl": "https://the-decoder.com/gpt-6-1-terra-halves-openais-api%2Dprices-and-still-gains-ground-on-its-larger-models/"
-  },
-  {
-   "id": "sha256:3d144f3f7ebe5a85",
-   "kind": "item",
-   "title": "报道：Anthropic 公开账本，收入创新高且义务沉重",
-   "summary": "The Decoder 梳理 S-1 财务：季度收入、首次营业利润与长期算力义务等。",
-   "publishedAt": "2026-10-26T19:14:45.000Z",
-   "sourceName": "The Decoder",
-   "category": "industry",
-   "selected": false,
-   "eventPublicId": "2026-10-27-anthropic-ipo-s1",
-   "originalUrl": "https://the-decoder.com/anthropic-opens-its-books-for-wall-street-showing-record-revenue-and-mounting-obligations/"
-  },
-  {
-   "id": "sha256:fe6583a778a0b30b",
-   "kind": "item",
-   "title": "报道：Anthropic IPO 文件中的五个怪细节",
-   "summary": "The Verge 盘点 S-1 中的非常规细节。",
-   "publishedAt": "2026-10-26T17:10:23.000Z",
-   "sourceName": "The Verge · AI",
-   "category": "industry",
-   "selected": false,
-   "eventPublicId": "2026-10-27-anthropic-ipo-s1",
-   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1018738/anthropic-ipo-s1-filing-weird-details"
-  },
-  {
-   "id": "sha256:68dfb7cd14f88c58",
-   "kind": "item",
-   "title": "报道：Anthropic IPO 文件透露留住企业客户的策略",
-   "summary": "TechCrunch 称 S-1 显示高价值客户中过半同时使用 Claude Platform 与自有应用。",
-   "publishedAt": "2026-10-26T16:49:42.000Z",
-   "sourceName": "TechCrunch · AI",
-   "category": "industry",
-   "selected": false,
-   "eventPublicId": "2026-10-27-anthropic-ipo-s1",
-   "originalUrl": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/"
-  },
-  {
-   "id": "sha256:27779e2e3a96ff05",
-   "kind": "item",
-   "title": "Cohere：提示某热门开源权重模型的异常行为",
-   "summary": "热度并入。",
-   "publishedAt": "2026-10-26T16:35:44.000Z",
-   "sourceName": "Hacker News（AI 关键词 ≥100 分）",
-   "category": "paper",
-   "selected": true,
-   "eventPublicId": "2026-10-27-cohere-qwen-concerning-behavior",
-   "originalUrl": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model"
-  },
-  {
-   "id": "sha256:e4e1138add83b456",
-   "kind": "item",
-   "title": "量子位：Anthropic 公开 335 页招股书",
-   "summary": null,
-   "publishedAt": "2026-10-26T16:06:31.000Z",
-   "sourceName": "量子位",
-   "category": "industry",
-   "selected": false,
-   "eventPublicId": "2026-10-27-anthropic-ipo-s1",
-   "originalUrl": "https://www.qbitai.com/2026/10/505551.html"
   },
   {
    "id": "sha256:edeae07ffd206303",
@@ -637,18 +526,6 @@
    "originalUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/"
   },
   {
-   "id": "sha256:fcee7fe2ae9bec9b",
-   "kind": "item",
-   "title": "Anthropic 正式递交公开上市申请",
-   "summary": null,
-   "publishedAt": "2026-10-26T14:35:22.000Z",
-   "sourceName": "TechCrunch · AI",
-   "category": "industry",
-   "selected": true,
-   "eventPublicId": "2026-10-27-anthropic-ipo-s1",
-   "originalUrl": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/"
-  },
-  {
    "id": "sha256:8eb6001a836a6e50",
    "kind": "item",
    "title": "OpenAI：与学界共建科学理解",
@@ -659,18 +536,6 @@
    "selected": true,
    "eventPublicId": "2026-10-27-openai-academic-science-collab",
    "originalUrl": "https://openai.com/index/building-scientific-understanding-with-academic-communities"
-  },
-  {
-   "id": "sha256:8730dc35da783e3d",
-   "kind": "item",
-   "title": "报道：Anthropic IPO 文件勾勒「变革人类事业」计划",
-   "summary": "The Verge 跟进 Anthropic S-1 愿景与业务叙述。",
-   "publishedAt": "2026-10-26T13:32:49.000Z",
-   "sourceName": "The Verge · AI",
-   "category": "industry",
-   "selected": false,
-   "eventPublicId": "2026-10-27-anthropic-ipo-s1",
-   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec"
   },
   {
    "id": "sha256:35e334c198740f74",
