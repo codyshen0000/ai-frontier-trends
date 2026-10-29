@@ -128,8 +128,11 @@ export const NAV = {
 export const ITEM_COPY = {
   /** 模型写的那句理由叫什么：卡片、详情页、Markdown 导出、给 Agent 的回答和群推送都用它。 */
   reasonLabel: "推荐理由",
-  /** 读者看不到 R2 注意力分。site-data 已删除 score；热度指数可以显示。 */
+  /** 读者看不到内部闸分 / attention score。公开层用 aiRating + ratingLabel。 */
   showScore: false,
+  /** 精选卡可见的 AI 评分层（G6）；字段名是 aiRating，不是 score。 */
+  showRating: true,
+  ratingLabel: "AI 评分",
 };
 
 /** 关于页的一张二维码卡片。 */

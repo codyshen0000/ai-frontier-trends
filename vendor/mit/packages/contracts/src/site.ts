@@ -71,6 +71,11 @@ export interface FeedItemSummary extends Pick<ItemSummary, "id" | "title" | "sum
    * so the card can say "同一件事，精选收录的是《…》" instead of claiming a seat of its own.
    */
   sameEvent?: { id: string; title: string } | null;
+  /**
+   * Public-layer AI 评分 (G6). Not the stripped internal `score` /
+   * gate / attention fields.
+   */
+  aiRating?: number | null;
 }
 
 export interface GroupInfo {
@@ -210,6 +215,8 @@ export interface HotEntryView {
 export interface HotResponse {
   computedAt: string | null;
   windowHours: number;
+  /** Ranking cap (G2). Page copy uses this / HOT_TOP_N, not entries.length. */
+  limit?: number;
   entries: HotEntryView[];
 }
 

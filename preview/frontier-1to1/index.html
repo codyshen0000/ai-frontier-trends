@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<title>精选 · 前沿趋势</title>
+<link rel="stylesheet" href="../lookalike/css/site.css"/>
+<style>
+  .ft-rating { display:inline-flex; align-items:center; font-size:12px; font-weight:600; color:var(--accent); }
+  .ft-rating .num { margin-left:3px; }
+</style>
+</head>
+<body>
+<!-- G6 shell sample: visible AI 评分 on 精选 cards. Screenshot later. -->
+<div class="shell">
+  <aside class="sidebar" aria-label="主导航">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>前沿趋势</a>
+    <nav class="nav-section">
+      <div class="nav-section-title">内容</div>
+      <a class="nav-item active" href="index.html">精选</a>
+      <a class="nav-item" href="hot.html">热点榜</a>
+    </nav>
+    <div class="sidebar-foot">frontier-1to1 组图壳 · G6</div>
+  </aside>
+  <div style="flex:1;min-width:0">
+    <main class="main">
+      <div class="page-head">
+        <div>
+          <h1 class="page-title">精选</h1>
+          <p class="page-sub">卡片同时给出 AI 评分与推荐理由</p>
+        </div>
+      </div>
+      <article class="card feed-card" data-item-id="sample-1">
+        <div class="feed-card-top">
+          <div class="feed-source"><span class="avatar">官</span>公开实验室 · 精选</div>
+          <span class="ft-rating" data-ft-rating="86">AI 评分<span class="num">86</span></span>
+        </div>
+        <h3 class="feed-title">开源模型侧发布 Flash 变体并开放检索 API</h3>
+        <p class="feed-summary">官方同步权重与检索接口。组图壳占位，评分来自公开层合成，不是内部闸分。</p>
+        <p class="feed-reason"><strong>推荐理由：</strong>可直接接到现有检索栈，信息完整。</p>
+      </article>
+      <article class="card feed-card" data-item-id="sample-2">
+        <div class="feed-card-top">
+          <div class="feed-source"><span class="avatar">社</span>社区复测</div>
+          <span class="ft-rating" data-ft-rating="74">AI 评分<span class="num">74</span></span>
+        </div>
+        <h3 class="feed-title">边缘 AI 笔记本开售，本地推理成为卖点</h3>
+        <p class="feed-summary">厂商强调静音续航下的本地助手；评测口径仍不统一。</p>
+        <p class="feed-reason"><strong>推荐理由：</strong>产品档第一次把本地推理写成默认卖点。</p>
+      </article>
+    </main>
+  </div>
+</div>
+</body>
+</html>

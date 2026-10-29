@@ -659,6 +659,25 @@ function writeDailyKeyJson(distDir, issue, asOfForKey) {
   }));
 }
 
+/** G12: /api/v1/daily.json next to hot.json / meta.json (not only daily/latest.json). */
+export function writePublicDailyJson(distDir, daily, asOf) {
+  const payload = daily
+    ? stripScore({
+        v: 1,
+        schema_version: "1.1.0",
+        data_as_of: asOf,
+        ...daily,
+      })
+    : {
+        v: 1,
+        schema_version: "1.1.0",
+        data_as_of: asOf,
+        available: false,
+      };
+  writeJson(join(distDir, "api", "v1", "daily.json"), payload);
+  return payload;
+}
+
 function writeEngineOutputs(distDir, engine, site, { asOf, built }) {
   const feedItems = site.feedItems || [];
   if (feedItems.length) {
@@ -704,6 +723,7 @@ function writeEngineOutputs(distDir, engine, site, { asOf, built }) {
     }));
   }
   if (site.daily) {
+    writePublicDailyJson(distDir, site.daily, asOf);
     writeJson(join(distDir, "api", "v1", "daily", "latest.json"), stripScore({
       v: 1,
       schema_version: "1.1.0",
@@ -719,6 +739,9 @@ function writeEngineOutputs(distDir, engine, site, { asOf, built }) {
     if (!d?.key || seenDailyKeys.has(d.key)) continue;
     seenDailyKeys.add(d.key);
     writeDailyKeyJson(distDir, d, frozenDailyAsOf(d, asOf));
+  }
+  if (!existsSync(join(distDir, "api", "v1", "daily.json"))) {
+    writePublicDailyJson(distDir, null, asOf);
   }
 }
 
@@ -788,6 +811,7 @@ export async function exportStatic({ distDir, contentDir, dataset = "", dataAsOf
   const listed = [
     { path: "api/v1/index.json", note: "接口目录", schema_version: "1.0.0" },
     { path: "api/v1/meta.json", note: "站点元数据", schema_version: "1.0.0" },
+    { path: "api/v1/daily.json", note: "最新日报", schema_version: "1.1.0" },
     { path: "api/v1/weekly/index.json", note: "周报目录", schema_version: "1.0.0" },
     ...weeklySummaries.map((issue) => ({
       path: `api/v1/weekly/${issue.date}.json`,
@@ -841,6 +865,9 @@ export async function exportStatic({ distDir, contentDir, dataset = "", dataAsOf
 
   if (publicSite && engine) {
     writeEngineOutputs(distDir, engine, publicSite, { asOf, built });
+  }
+  if (!existsSync(join(distDir, "api", "v1", "daily.json"))) {
+    writePublicDailyJson(distDir, publicSite?.daily || null, asOf);
   }
 
   assertNoFixture(join(distDir, "data"), "/data");

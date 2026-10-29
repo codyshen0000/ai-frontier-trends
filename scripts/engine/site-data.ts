@@ -111,6 +111,8 @@ export interface SiteFeedItem {
   sourceCount?: number;
   sourceNames?: string[];
   participants?: SiteHotParticipant[];
+  /** Public-layer AI 评分. Never a `score` key. */
+  aiRating?: number;
 }
 
 export interface SiteFeedXView {
@@ -204,6 +206,7 @@ export interface SiteHotEntry {
 export interface SiteHotResponse {
   computedAt: string | null;
   windowHours: number;
+  limit?: number;
   entries: SiteHotEntry[];
 }
 

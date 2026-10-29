@@ -11,7 +11,7 @@
     "snapshot:preview": "node scripts/snapshot_preview.mjs",
     "build:mit-static": "node scripts/l2_covers.mjs && node scripts/mit-static/prerender.mjs",
     "avatars": "node scripts/avatars.mjs",
-    "test:covers": "node scripts/daily_paths.test.mjs && node scripts/engine/materialize_covers.test.mjs && node scripts/l2_covers.test.mjs && node scripts/story_digest.test.mjs && node scripts/score_absent.test.mjs && node scripts/static_export.search.test.mjs && node scripts/static_export.daily.test.mjs && node --test scripts/charts.test.mjs",
+    "test:covers": "node scripts/daily_paths.test.mjs && node scripts/engine/materialize_covers.test.mjs && node scripts/l2_covers.test.mjs && node scripts/story_digest.test.mjs && node scripts/score_absent.test.mjs && node scripts/frontier-1to1-shell.test.mjs && node scripts/static_export.search.test.mjs && node scripts/static_export.daily.test.mjs && node --test scripts/charts.test.mjs",
     "test:asof": "node --experimental-strip-types --no-warnings scripts/mit-static/src/asof-copy.test.ts && node --experimental-strip-types --no-warnings scripts/mit-static/src/report-footer-layout.test.ts && node --experimental-strip-types --no-warnings scripts/mit-static/src/daily-status.test.ts",
     "verify:daily-status": "node --experimental-strip-types --no-warnings scripts/verify/daily-keep-status.mjs",
     "test:engine": "node --test scripts/engine/ scripts/r1h/hot_tick.test.mjs scripts/site-data/align_hot_sparks_to_js.test.mjs",

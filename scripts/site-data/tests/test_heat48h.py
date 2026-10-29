@@ -9,7 +9,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(HERE))
-from heat48h import display_heat, hours_in_window, parse_iso, run_parity_case  # noqa: E402
+from heat48h import HOT_LIMIT, display_heat, hours_in_window, parse_iso, run_parity_case  # noqa: E402
 
 FIXTURE = HERE.parent / "engine" / "__samples__" / "heat-parity" / "cases.json"
 
@@ -33,6 +33,9 @@ class Heat48hParity(unittest.TestCase):
                 self.assertEqual(got["displayHeatOfRaw"], expected["displayHeatOfRaw"], spec["id"])
             self.assertEqual(spec.get("parityStatus"), "pass", spec["id"])
             self.assertFalse(spec.get("knownDiffs"), spec["id"])
+
+    def test_hot_limit_is_top10(self):
+        self.assertEqual(HOT_LIMIT, 10)
 
     def test_closed_48h_window(self):
         at = parse_iso("2026-10-19T12:00:00.000Z")

@@ -8,7 +8,8 @@ import { groupByEvent } from "./groupByEvent.mjs";
 import { indexDailyCites, indexEvents, pickCardSummary, thickenFeedItems } from "./card-summary.mjs";
 import { isAcceptedCoverClass } from "./loader.mjs";
 import { FIXTURE_IDS, FIXTURE_TITLE_NEEDLES, textHasFixtureId } from "./ids.mjs";
-import { scrubForbiddenHeatCopyDeep } from "./heat-copy.mjs";
+import { HOT_TOP_N, scrubForbiddenHeatCopyDeep } from "./heat-copy.mjs";
+import { publicAiRating } from "./ai-rating.mjs";
 
 /** Real MoE copy says "816B parameters"; Remaining-A treats 816B as a fixture title token. */
 function scrubFixtureTitleNeedles(value) {
@@ -173,6 +174,38 @@ function attachAvatarIcons(site, bundle, meta = {}) {
   return site;
 }
 
+function firstPartyOf(card, event) {
+  if (card?.item?.source?.firstParty) return true;
+  const rows = [
+    ...(event?.officialReports || []),
+    ...(event?.timeline || []),
+    event?.developments?.[0]?.representative,
+  ].filter(Boolean);
+  return rows.some((row) => row?.source?.firstParty);
+}
+
+/** Attach public AI 评分 after grouping so sourceCount / first-party are final. */
+export function attachAiRating(card, ctx = {}) {
+  if (!card?.item) return card;
+  const event = ctx.event || ctx.eventsById?.get(card.item.storyPublicId) || null;
+  const hotEntry = ctx.hotById?.get(card.item.storyPublicId) || null;
+  const extra = Number(card.group?.additionalSourceCount) || 0;
+  const aiRating = publicAiRating({
+    selected: !!card.item.selected,
+    reason: card.item.reason,
+    sourceCount: card.item.sourceCount ?? (extra ? extra + 1 : 0),
+    reportCount: card.group?.reportCount ?? event?.reportCount ?? 0,
+    firstParty: firstPartyOf(card, event),
+    heat: hotEntry?.heat ?? null,
+  });
+  if (aiRating == null) {
+    if (!("aiRating" in card.item)) return card;
+    const { aiRating: _drop, ...item } = card.item;
+    return { ...card, item };
+  }
+  return { ...card, item: { ...card.item, aiRating } };
+}
+
 export function publicizeHotStripRow(row) {
   if (!row || typeof row !== "object" || row.belowThreshold) return null;
   const heat = typeof row.heat === "number" && Number.isFinite(row.heat) ? row.heat : null;
@@ -297,12 +330,14 @@ export function publicizeBundle(bundle, meta = {}) {
   const eventsById = indexEvents(bundle.events);
   const dailyByItemId = indexDailyCites([bundle.daily, ...(bundle.dailies || [])]);
   const cardCtx = { eventsById, dailyByItemId };
-  const hotEntries = (bundle.hot?.entries || []).map(publicizeHotEntry).filter(Boolean);
+  const hotEntries = (bundle.hot?.entries || []).map(publicizeHotEntry).filter(Boolean).slice(0, HOT_TOP_N);
   const hot = {
     computedAt: bundle.hot?.computedAt ?? null,
     windowHours: bundle.hot?.windowHours ?? 48,
+    limit: HOT_TOP_N,
     entries: hotEntries,
   };
+  const hotById = new Map(hotEntries.map((entry) => [entry.story?.publicId, entry]));
   const derivedStrip = hotStripFromHotEntries(hotEntries);
   const hotStripFallback = (bundle.hotStrip || []).map(publicizeHotStripRow).filter(Boolean);
   const timelineHotFallback = (bundle.timeline?.hot || []).map(publicizeHotStripRow).filter(Boolean);
@@ -313,7 +348,7 @@ export function publicizeBundle(bundle, meta = {}) {
     redirects: bundle.redirects,
     sources: bundle.sources,
     dailyByItemId,
-  });
+  }).map((card) => attachAiRating(card, { eventsById, hotById }));
   const daily = bundle.daily ? stripScore(bundle.daily) : null;
   if (daily?.cover) daily.cover = publicCover(daily.cover);
   const dailies = (bundle.dailies || []).map((row) => {
@@ -367,7 +402,7 @@ export function publicizeBundle(bundle, meta = {}) {
         redirects: bundle.redirects,
         sources: bundle.sources,
         dailyByItemId,
-      }),
+      }).map((card) => attachAiRating(card, { eventsById, hotById })),
       nextCursor: bundle.allTimeline?.nextCursor ?? null,
       hot: null,
       dayCounts: bundle.allTimeline?.dayCounts || {},
