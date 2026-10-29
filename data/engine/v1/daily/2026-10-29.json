@@ -3,7 +3,7 @@
  "key": "2026-10-29",
  "issueNumber": 11,
  "title": "AI日报 · 2026-10-29",
- "generatedAt": "2026-10-29T00:46:05.000Z",
+ "generatedAt": "2026-10-29T00:59:00.000Z",
  "lead": {
   "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
   "leadParagraph": "Google DeepMind 宣布 Gemini 4 Carbon，称其为目前最强一代，在 Artificial Analysis Intelligence Index v5.0 排名第一（59），并在 SEC-bench Pro、ExploitGym、CWE-bench 等网络安全评测领先；内部称可支撑多日长程工程任务。在 Argon 两周后发布。正按美国政府自愿预发布测试流程推进，本周起先向部分网络安全防御方开放，再经 Fairwind 计划扩至可信伙伴；面向开发者与消费者的产品面仍待开放。入门价与 Argon 相同：每百万输入/输出 token 2/10 美元。"
@@ -37,8 +37,8 @@
   },
   {
    "itemId": "sha256:3801bfeec8403796",
-   "title": "微软 FY27 Q1：首次披露 Azure 季度营收 332 亿美元",
-   "summary": "TechCrunch 称微软在 FY27 Q1 业绩中首次以美元披露 Azure 季度营收约 332 亿美元；同季总营收约 923 亿美元（同比+19%），并披露来自 OpenAI 商业安排收入约 100 亿美元。属财报解读二手，关键数字来自业绩披露。",
+   "title": "微软首次披露 Azure 季度营收约 33.2 亿美元",
+   "summary": "TechCrunch 称微软首次以美元披露 Azure 季度营收约 33.2 亿美元；同季总营收约 922.79 亿美元（同比 +19%），并披露来自 OpenAI 安排收入约 10 亿美元。属财报解读二手，关键数字来自业绩披露。",
    "sourceName": "TechCrunch · AI",
    "sourceUrl": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
    "sourceIconUrl": null,
@@ -121,8 +121,8 @@
     },
     {
      "itemId": "sha256:3801bfeec8403796",
-     "title": "微软 FY27 Q1：首次披露 Azure 季度营收 332 亿美元",
-     "summary": "TechCrunch 称微软在 FY27 Q1 业绩中首次以美元披露 Azure 季度营收约 332 亿美元；同季总营收约 923 亿美元（同比+19%），并披露来自 OpenAI 商业安排收入约 100 亿美元。属财报解读二手，关键数字来自业绩披露。",
+     "title": "微软首次披露 Azure 季度营收约 33.2 亿美元",
+     "summary": "TechCrunch 称微软首次以美元披露 Azure 季度营收约 33.2 亿美元；同季总营收约 922.79 亿美元（同比 +19%），并披露来自 OpenAI 安排收入约 10 亿美元。属财报解读二手，关键数字来自业绩披露。",
      "sourceName": "TechCrunch · AI",
      "sourceUrl": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
      "sourceIconUrl": null,
@@ -377,7 +377,7 @@
   "firstPartyEvents": 9,
   "modelsReleased": 3
  },
- "readingMinutes": 6,
+ "readingMinutes": 5,
  "prev": "2026-10-28",
  "next": null
 }

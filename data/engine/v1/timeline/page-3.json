@@ -6,6 +6,37 @@
  },
  "cards": [
   {
+   "key": "sha256:50cb4eba8a3e4759",
+   "anchorAt": "2026-10-23T00:00:00.000Z",
+   "item": {
+    "id": "sha256:50cb4eba8a3e4759",
+    "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持",
+    "summary": "vLLM：Day-0 支持 MiniMax-M3.1-Flash（Blackwell/Rubin/MI350，含 Day-0 RL）。",
+    "reason": "M3.1 Flash 权重开源且 vLLM Day-0 支持",
+    "source": {
+     "name": "vLLM Blog"
+    },
+    "publishedAt": "2026-10-23T00:00:00.000Z",
+    "timelineAt": "2026-10-23T00:00:00.000Z",
+    "category": "model",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-19-minimax-m31-flash",
+    "originalUrl": "https://vllm.ai/blog/2026-10-23-minimax-m31-flash"
+   },
+   "group": {
+    "factId": "fact-2026-10-19-minimax-m31-flash",
+    "additionalSourceCount": 3,
+    "reportCount": 5,
+    "memberIds": [
+     "sha256:50cb4eba8a3e4759",
+     "sha256:8e4a9464917136de"
+    ]
+   }
+  },
+  {
    "key": "sha256:1b5221fd798be326",
    "anchorAt": "2026-10-23T00:00:00.000Z",
    "item": {
@@ -490,29 +521,6 @@
     "originalUrl": "https://www.wiz.io/blog/litellm-compromised-steals-credentials"
    },
    "group": null
-  },
-  {
-   "key": "sha256:b1215e1aefc04c61",
-   "anchorAt": "2026-10-21T13:00:00.000Z",
-   "item": {
-    "id": "sha256:b1215e1aefc04c61",
-    "title": "OpenAI 详解 ChatGPT 广告栈，并扩至 26 国、广告主破十万",
-    "summary": "ChatGPT Ads 扩展到 26 国，广告主称逾 10 万。",
-    "reason": "OpenAI 详解 ChatGPT 广告栈并扩至 26 国",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-21T13:00:00.000Z",
-    "timelineAt": "2026-10-21T13:00:00.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-21-chatgpt-ads-stack-expansion",
-    "originalUrl": "https://openai.com/index/chatgpt-ads-expands-26-new-countries"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-4.json",
@@ -520,5 +528,5 @@
  "dayCounts": {},
  "page": 3,
  "pageCount": 4,
- "total": 75
+ "total": 76
 }

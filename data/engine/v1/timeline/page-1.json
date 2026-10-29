@@ -6,6 +6,38 @@
  },
  "cards": [
   {
+   "key": "sha256:3801bfeec8403796",
+   "anchorAt": "2026-10-28T21:58:32.000Z",
+   "item": {
+    "id": "sha256:3801bfeec8403796",
+    "title": "微软首次披露 Azure 季度营收约 33.2 亿美元",
+    "summary": null,
+    "reason": "微软首次公布 Azure 单季美元营收约 33.2 亿",
+    "source": {
+     "name": "TechCrunch · AI"
+    },
+    "publishedAt": "2026-10-28T21:58:32.000Z",
+    "timelineAt": "2026-10-28T21:58:32.000Z",
+    "category": "industry",
+    "tags": [
+     "title_fix_grounding"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-28-microsoft-fy27-q1-earnings",
+    "originalUrl": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/"
+   },
+   "group": {
+    "factId": "fact-2026-10-28-microsoft-fy27-q1-earnings",
+    "additionalSourceCount": 1,
+    "reportCount": 4,
+    "memberIds": [
+     "sha256:3801bfeec8403796"
+    ]
+   }
+  },
+  {
    "key": "sha256:ab7da4b3ce3cc5a6",
    "anchorAt": "2026-10-28T17:39:04.000Z",
    "item": {
@@ -510,36 +542,6 @@
      "sha256:89893d5f73c77515"
     ]
    }
-  },
-  {
-   "key": "sha256:685d9381627543c3",
-   "anchorAt": "2026-10-26T21:23:55.000Z",
-   "item": {
-    "id": "sha256:685d9381627543c3",
-    "title": "Baseten：BDN Sealed Volumes 一次发布处处挂载",
-    "summary": "Baseten 博客发布 BDN Sealed Volumes：一次发布、多处挂载的密封卷能力。",
-    "reason": null,
-    "source": {
-     "name": "Baseten Blog"
-    },
-    "publishedAt": "2026-10-26T21:23:55.000Z",
-    "timelineAt": "2026-10-26T21:23:55.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-27-baseten-bdn-sealed-volumes",
-    "originalUrl": "https://www.baseten.co/blog/bdn-sealed-volumes-publish-once-mount-anywhere/"
-   },
-   "group": {
-    "factId": "fact-2026-10-27-baseten-bdn-sealed-volumes",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:685d9381627543c3"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-2.json",
@@ -547,7 +549,7 @@
   {
    "rank": 1,
    "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
-   "heat": 34.1,
+   "heat": 33.9,
    "trend": "up",
    "storyPublicId": "2026-10-28-deepmind-gemini-4-carbon",
    "itemId": "sha256:3e32bae570ff21ee",
@@ -574,7 +576,7 @@
   {
    "rank": 2,
    "title": "NVIDIA 发布开源 Nemotron 3.5 Transcribe 与 Granary v2",
-   "heat": 22.7,
+   "heat": 22.6,
    "trend": "down",
    "storyPublicId": "2026-10-28-nvidia-nemotron-35-transcribe",
    "itemId": "sha256:ec733f799e1aaee3",
@@ -597,7 +599,7 @@
   {
    "rank": 3,
    "title": "DeepMind 发布 Genie 4：新一代世界仿真",
-   "heat": 20.5,
+   "heat": 20.3,
    "trend": "down",
    "storyPublicId": "2026-10-28-deepmind-genie-4",
    "itemId": "sha256:e960e8891f7d7ad8",
@@ -627,8 +629,27 @@
   },
   {
    "rank": 4,
+   "title": "微软首次披露 Azure 季度营收约 33.2 亿美元",
+   "heat": 17.8,
+   "trend": "new",
+   "storyPublicId": "2026-10-28-microsoft-fy27-q1-earnings",
+   "itemId": "sha256:3801bfeec8403796",
+   "participants": [
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
+    }
+   ],
+   "participantCount": 2
+  },
+  {
+   "rank": 5,
    "title": "Anthropic 正式递交公开上市申请",
-   "heat": 15.4,
+   "heat": 15.3,
    "trend": "down",
    "storyPublicId": "2026-10-27-anthropic-ipo-s1",
    "itemId": "sha256:8128c7853b28b767",
@@ -651,29 +672,10 @@
     }
    ],
    "participantCount": 4
-  },
-  {
-   "rank": 5,
-   "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
-   "heat": 9.0,
-   "trend": "down",
-   "storyPublicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
-   "itemId": "sha256:449070727cbfb984",
-   "participants": [
-    {
-     "name": "NVIDIA Technical Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "DevOTD",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 2
   }
  ],
  "dayCounts": {
-  "2026-10-29": 2,
+  "2026-10-29": 3,
   "2026-10-28": 11,
   "2026-10-27": 9,
   "2026-10-26": 4,
@@ -688,5 +690,5 @@
  },
  "page": 1,
  "pageCount": 4,
- "total": 75
+ "total": 76
 }

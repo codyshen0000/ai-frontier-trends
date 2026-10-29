@@ -6,6 +6,29 @@
  },
  "cards": [
   {
+   "key": "sha256:b1215e1aefc04c61",
+   "anchorAt": "2026-10-21T13:00:00.000Z",
+   "item": {
+    "id": "sha256:b1215e1aefc04c61",
+    "title": "OpenAI 详解 ChatGPT 广告栈，并扩至 26 国、广告主破十万",
+    "summary": "ChatGPT Ads 扩展到 26 国，广告主称逾 10 万。",
+    "reason": "OpenAI 详解 ChatGPT 广告栈并扩至 26 国",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-21T13:00:00.000Z",
+    "timelineAt": "2026-10-21T13:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-21-chatgpt-ads-stack-expansion",
+    "originalUrl": "https://openai.com/index/chatgpt-ads-expands-26-new-countries"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:5c32755a71da49ed",
    "anchorAt": "2026-10-21T12:51:24.000Z",
    "item": {
@@ -405,5 +428,5 @@
  "dayCounts": {},
  "page": 4,
  "pageCount": 4,
- "total": 75
+ "total": 76
 }

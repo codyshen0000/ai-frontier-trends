@@ -2,31 +2,31 @@
  "site": "前沿趋势",
  "contract_version": "1.1",
  "mode": "production",
- "data_as_of": "2026-10-29T08:18:53+08:00",
- "data_as_of_label": "数据截至 2026-10-29 08:18（北京时间）",
- "generated_at": "2026-10-29T08:51:00+08:00",
+ "data_as_of": "2026-10-29T08:59:00+08:00",
+ "data_as_of_label": "数据截至 2026-10-29 08:59（北京时间）",
+ "generated_at": "2026-10-29T09:06:00+08:00",
  "hot_rule_version": "heat-v1-48h-halflife24h (前沿情报 heat48h.py 1.1)",
- "hot_computed_at": "2026-10-29T08:51:00+08:00",
+ "hot_computed_at": "2026-10-29T09:06:00+08:00",
  "window_hours": 48,
  "spark_points": 25,
  "page_size": 20,
  "counts": {
-  "cards": 75,
+  "cards": 76,
   "pages": 4,
-  "events": 75,
-  "hot_entries": 9,
-  "search_docs": 212,
+  "events": 76,
+  "hot_entries": 10,
+  "search_docs": 217,
   "feed_items": 50,
-  "passed_events": 75,
+  "passed_events": 76,
   "below_threshold_events": 0,
   "redirects": 0,
-  "hot_snapshots": 13,
+  "hot_snapshots": 14,
   "covers": 8
  },
  "last_round": {
-  "batch_id": "2026-10-29T0818",
+  "batch_id": "2026-10-29T0859",
   "status": "ok",
-  "finished_at": "2026-10-29T08:46:05+08:00"
+  "finished_at": "2026-10-29T08:59:00+08:00"
  },
  "batches": [
   {
@@ -856,6 +856,10 @@
   {
    "batch_id": "2026-10-29T0818",
    "status": "ok"
+  },
+  {
+   "batch_id": "2026-10-29T0859",
+   "status": "ok"
   }
  ],
  "files": [
@@ -928,6 +932,7 @@
   "events/2026-10-28-google-sleep-framework-continual.json",
   "events/2026-10-28-hf-allenai-novelty-bench.json",
   "events/2026-10-28-liquidai-lfm3.json",
+  "events/2026-10-28-microsoft-fy27-q1-earnings.json",
   "events/2026-10-28-microsoft-mai-image-27.json",
   "events/2026-10-28-nvidia-cuda-134-gpu-sharing.json",
   "events/2026-10-28-nvidia-nemotron-35-transcribe.json",
@@ -950,6 +955,7 @@
   "hot-snapshots/2026-10-29T00.json",
   "hot-snapshots/2026-10-29T03.json",
   "hot-snapshots/2026-10-29T08.json",
+  "hot-snapshots/2026-10-29T09.json",
   "hot-strip.json",
   "hot.json",
   "meta.json",

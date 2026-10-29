@@ -8,6 +8,17 @@
  },
  "items": [
   {
+   "guid": "sha256:3801bfeec8403796",
+   "title": "微软首次披露 Azure 季度营收约 33.2 亿美元",
+   "summary": "",
+   "originalUrl": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
+   "pubDate": "2026-10-28T21:58:32.000Z",
+   "sourceName": "TechCrunch · AI",
+   "category": "industry",
+   "categoryLabel": "行业",
+   "eventPublicId": "2026-10-28-microsoft-fy27-q1-earnings"
+  },
+  {
    "guid": "sha256:ab7da4b3ce3cc5a6",
    "title": "Baseten：优化部署 Qwen3-ASR，批转写吞吐约升 7 倍",
    "summary": "",
@@ -545,17 +556,6 @@
    "category": "industry",
    "categoryLabel": "行业",
    "eventPublicId": "2026-10-22-wiz-artex-storm0940"
-  },
-  {
-   "guid": "sha256:6400feb681472530",
-   "title": "OpenAI：Forward Deployed Engineering 如何填补部署鸿沟",
-   "summary": "OpenAI FDE 负责人介绍如何把模型能力落到客户生产并反哺产品研究。",
-   "originalUrl": "https://openai.com/index/forward-deployed-engineering-means",
-   "pubDate": "2026-10-22T06:00:00.000Z",
-   "sourceName": "OpenAI News",
-   "category": "tutorial",
-   "categoryLabel": "教程",
-   "eventPublicId": "2026-10-22-openai-fde-means"
   }
  ]
 }

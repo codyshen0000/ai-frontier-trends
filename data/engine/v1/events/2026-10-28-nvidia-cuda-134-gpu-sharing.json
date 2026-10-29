@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 5
+  "rank": 7
  },
  "developments": [
   {
@@ -219,10 +219,15 @@
    "hour": "2026-10-29T00:00:00.000Z",
    "heat": 9.2,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-29T01:00:00.000Z",
+   "heat": 8.9,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "primaryUrl": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/",
- "rankDelta": 0
+ "rankDelta": -2
 }

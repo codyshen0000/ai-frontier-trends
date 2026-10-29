@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 1,
   "observationComplete": true,
-  "rank": 4
+  "rank": 5
  },
  "developments": [
   {
@@ -187,11 +187,6 @@
   }
  ],
  "heat": [
-  {
-   "hour": "2026-10-27T00:00:00.000Z",
-   "heat": 34.2,
-   "participants": 4
-  },
   {
    "hour": "2026-10-27T01:00:00.000Z",
    "heat": 33.2,
@@ -431,11 +426,16 @@
    "hour": "2026-10-29T00:00:00.000Z",
    "heat": 15.8,
    "participants": 4
+  },
+  {
+   "hour": "2026-10-29T01:00:00.000Z",
+   "heat": 15.4,
+   "participants": 4
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "Anthropic 递交 S-1，披露收入与治理结构",
  "primaryUrl": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/",
- "rankDelta": 0
+ "rankDelta": -1
 }

@@ -1,0 +1,124 @@
+{
+ "publicId": "2026-10-28-microsoft-fy27-q1-earnings",
+ "title": "微软首次披露 Azure 季度营收约 33.2 亿美元",
+ "status": "active",
+ "reportCount": 4,
+ "sourceCount": 2,
+ "firstReportAt": "2026-10-28T20:08:41.000Z",
+ "latestAt": "2026-10-28T21:58:32.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "TechCrunch 称微软首次以美元披露 Azure 季度营收约 33.2 亿美元；同季总营收约 922.79 亿美元（同比 +19%），并披露来自 OpenAI 安排收入约 10 亿美元。属财报解读二手，关键数字来自业绩披露。",
+ "excerpt": null,
+ "latest": "同季披露来自 OpenAI 安排收入约 10 亿美元",
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 2,
+  "newParticipants6h": 2,
+  "recentReports24h": 4,
+  "observationComplete": true,
+  "rank": 4
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-28-microsoft-fy27-q1-earnings",
+   "title": "微软首次披露 Azure 季度营收约 33.2 亿美元",
+   "firstReportAt": "2026-10-28T20:08:41.000Z",
+   "reportCount": 4,
+   "representative": {
+    "id": "sha256:3801bfeec8403796",
+    "title": "微软首次披露 Azure 季度营收约 33.2 亿美元",
+    "summary": null,
+    "source": {
+     "name": "TechCrunch · AI",
+     "firstParty": false
+    },
+    "publishedAt": "2026-10-28T21:58:32.000Z",
+    "selected": true,
+    "originalUrl": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/"
+   }
+  }
+ ],
+ "officialReports": [],
+ "timeline": [
+  {
+   "id": "sha256:3801bfeec8403796",
+   "title": "微软首次披露 Azure 季度营收约 33.2 亿美元",
+   "summary": null,
+   "source": {
+    "name": "TechCrunch · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-28T21:58:32.000Z",
+   "selected": true,
+   "originalUrl": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/"
+  },
+  {
+   "id": "sha256:353dd9ae44065218",
+   "title": "微软披露来自 OpenAI 安排收入约 10 亿美元",
+   "summary": "TechCrunch 同季跟进；并入本事件。",
+   "source": {
+    "name": "TechCrunch · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-28T21:34:30.000Z",
+   "selected": false,
+   "originalUrl": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/"
+  },
+  {
+   "id": "sha256:7689670b21d5b35e",
+   "title": "微软连续 10 季营收创新高",
+   "summary": "TechCrunch 同季跟进；并入本事件。",
+   "source": {
+    "name": "TechCrunch · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-28T21:25:30.000Z",
+   "selected": false,
+   "originalUrl": "https://techcrunch.com/2026/10/28/microsoft-hits-10-quarters-of-record-breaking-revenue-in-a-row/"
+  },
+  {
+   "id": "sha256:a3b63265ec841fa4",
+   "title": "微软公布财季营收约 922.79 亿美元、净利约 366.29 亿",
+   "summary": "IT之家同稿回访；无新事实。",
+   "source": {
+    "name": "IT之家（全站，需关键词过滤）",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-28T20:08:41.000Z",
+   "selected": false,
+   "originalUrl": "https://www.ithome.com/1/019/257.htm"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-28T21:00:00.000Z",
+   "heat": 9.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-28T22:00:00.000Z",
+   "heat": 19.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T23:00:00.000Z",
+   "heat": 18.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-29T00:00:00.000Z",
+   "heat": 18.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-29T01:00:00.000Z",
+   "heat": 17.9,
+   "participants": 2
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "微软首次公布 Azure 单季美元营收约 33.2 亿",
+ "primaryUrl": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/"
+}

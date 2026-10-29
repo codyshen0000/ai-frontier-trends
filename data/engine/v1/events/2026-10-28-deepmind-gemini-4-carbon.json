@@ -114,6 +114,11 @@
    "hour": "2026-10-29T00:00:00.000Z",
    "heat": 35.0,
    "participants": 4
+  },
+  {
+   "hour": "2026-10-29T01:00:00.000Z",
+   "heat": 34.0,
+   "participants": 4
   }
  ],
  "related": [],
