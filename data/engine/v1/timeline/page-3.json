@@ -6,6 +6,66 @@
  },
  "cards": [
   {
+   "key": "sha256:b19f86d623cfeb5d",
+   "anchorAt": "2026-10-23T11:32:19.000Z",
+   "item": {
+    "id": "sha256:b19f86d623cfeb5d",
+    "title": "Anthropic：Claude 为 123 个开源库写出可机器检查的形式化证明",
+    "summary": "Decoder 报道 Anthropic 形式化验证实验；已核实官方研究帖并 hop 附加。",
+    "reason": "Anthropic 用 Claude 为 123 个开源库做形式化证明",
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-23T11:32:19.000Z",
+    "timelineAt": "2026-10-23T11:32:19.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-23-anthropic-claude-formal-verification",
+    "originalUrl": "https://the-decoder.com/anthropics-claude-now-writes-code-and-proves-it-safe-automatically/"
+   },
+   "group": {
+    "factId": "fact-2026-10-23-anthropic-claude-formal-verification",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:b19f86d623cfeb5d"
+    ]
+   }
+  },
+  {
+   "key": "sha256:f8c156dba7886826",
+   "anchorAt": "2026-10-23T10:00:00.000Z",
+   "item": {
+    "id": "sha256:f8c156dba7886826",
+    "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
+    "summary": null,
+    "reason": "OpenAI 默认离线训练并大规模红队加固前沿环境",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-23T10:00:00.000Z",
+    "timelineAt": "2026-10-23T10:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-24-openai-securing-frontier-training",
+    "originalUrl": "https://openai.com/index/securing-our-frontier-model-training-environment"
+   },
+   "group": {
+    "factId": "fact-2026-10-24-openai-securing-frontier-training",
+    "additionalSourceCount": 3,
+    "reportCount": 4,
+    "memberIds": [
+     "sha256:f8c156dba7886826"
+    ]
+   }
+  },
+  {
    "key": "sha256:5d20b75fc1534a89",
    "anchorAt": "2026-10-23T00:00:00.000Z",
    "item": {
@@ -348,29 +408,6 @@
    }
   },
   {
-   "key": "sha256:4182359e79e632d3",
-   "anchorAt": "2026-10-22T00:00:00.000Z",
-   "item": {
-    "id": "sha256:4182359e79e632d3",
-    "title": "Claude：经 Google Cloud 项目可调用 Anthropic 托管的 Claude Models",
-    "summary": "Claude Platform：Claude Models on Google Cloud（Anthropic 托管）已推出。",
-    "reason": "Claude 经谷歌云项目可调 Anthropic 托管模型",
-    "source": {
-     "name": "Claude Platform Release Notes"
-    },
-    "publishedAt": "2026-10-22T00:00:00.000Z",
-    "timelineAt": "2026-10-22T00:00:00.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-23-claude-models-google-cloud",
-    "originalUrl": "https://platform.claude.com/docs/en/release-notes/overview#october-22-2026"
-   },
-   "group": null
-  },
-  {
    "key": "sha256:258d5ff776fa8f13",
    "anchorAt": "2026-10-21T19:53:20.000Z",
    "item": {
@@ -498,29 +535,6 @@
     "originalUrl": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/"
    },
    "group": null
-  },
-  {
-   "key": "sha256:c2ed162a157709f5",
-   "anchorAt": "2026-10-21T14:58:18.000Z",
-   "item": {
-    "id": "sha256:c2ed162a157709f5",
-    "title": "IBM Granite Speech 5.0：更快更准的转写、翻译与归因",
-    "summary": null,
-    "reason": "IBM Granite Speech 5.0：更快更准的转写翻译归因",
-    "source": {
-     "name": "Hugging Face Blog"
-    },
-    "publishedAt": "2026-10-21T14:58:18.000Z",
-    "timelineAt": "2026-10-21T14:58:18.000Z",
-    "category": "model",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-21-ibm-granite-speech-5",
-    "originalUrl": "https://huggingface.co/blog/ibm-granite/granite-speech-5"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-4.json",
@@ -528,5 +542,5 @@
  "dayCounts": {},
  "page": 3,
  "pageCount": 4,
- "total": 77
+ "total": 78
 }

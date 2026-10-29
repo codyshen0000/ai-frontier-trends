@@ -13,9 +13,9 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 4,
+  "participants48h": 5,
   "newParticipants6h": 2,
-  "recentReports24h": 4,
+  "recentReports24h": 5,
   "observationComplete": true,
   "rank": 1
  },
@@ -188,10 +188,26 @@
    "hour": "2026-10-29T16:00:00.000Z",
    "heat": 31.3,
    "participants": 4
+  },
+  {
+   "hour": "2026-10-29T17:00:00.000Z",
+   "heat": 40.5,
+   "participants": 5
+  },
+  {
+   "hour": "2026-10-29T18:00:00.000Z",
+   "heat": 39.3,
+   "participants": 5
+  },
+  {
+   "hour": "2026-10-29T19:00:00.000Z",
+   "heat": 38.2,
+   "participants": 5
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "Mistral 开源 Large 4（Le Chonk）1T 多模态权重",
- "primaryUrl": "https://mistral.ai/news/mistral-large-4-oss/"
+ "primaryUrl": "https://mistral.ai/news/mistral-large-4-oss/",
+ "rankDelta": 0
 }

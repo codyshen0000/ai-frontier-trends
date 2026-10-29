@@ -13,11 +13,11 @@
  "latest": "CTOL 跟进：做梦 vs 巩固消融解读（hot_floor 第二源）。",
  "latestReport": null,
  "whyHot": {
-  "participants48h": 2,
+  "participants48h": 1,
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 6
+  "rank": null
  },
  "developments": [
   {
@@ -80,11 +80,6 @@
   }
  ],
  "heat": [
-  {
-   "hour": "2026-10-27T18:00:00.000Z",
-   "heat": 9.9,
-   "participants": 1
-  },
   {
    "hour": "2026-10-27T19:00:00.000Z",
    "heat": 9.6,
@@ -314,11 +309,25 @@
    "hour": "2026-10-29T16:00:00.000Z",
    "heat": 5.8,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-29T17:00:00.000Z",
+   "heat": 5.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-29T18:00:00.000Z",
+   "heat": 3.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-29T19:00:00.000Z",
+   "heat": 2.9,
+   "participants": 1
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "Google Research：用 sleep 框架做持续学习防遗忘",
- "primaryUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
- "rankDelta": -1
+ "primaryUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/"
 }

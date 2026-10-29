@@ -6,6 +6,29 @@
  },
  "cards": [
   {
+   "key": "sha256:9349f418e7bc7ab4",
+   "anchorAt": "2026-10-29T17:00:00.000Z",
+   "item": {
+    "id": "sha256:9349f418e7bc7ab4",
+    "title": "OpenAI 更新 Model Spec：五条核心价值",
+    "summary": "OpenAI 发布更新版 Model Spec，概述五条核心价值，引导更强模型在判断力、人类能动性与忠实人类意图上的行为。官方对齐规范。",
+    "reason": "OpenAI 更新 Model Spec：五条核心价值引导更强模型",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-29T17:00:00.000Z",
+    "timelineAt": "2026-10-29T17:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-30-openai-updated-model-spec",
+    "originalUrl": "https://openai.com/index/updated-model-spec"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:f7a1020f473102a5",
    "anchorAt": "2026-10-29T14:36:22.000Z",
    "item": {
@@ -51,12 +74,35 @@
    },
    "group": {
     "factId": "fact-2026-10-29-mistral-large-4-lechonk",
-    "additionalSourceCount": 3,
-    "reportCount": 4,
+    "additionalSourceCount": 4,
+    "reportCount": 5,
     "memberIds": [
      "sha256:5a25565ab71a8d06"
     ]
    }
+  },
+  {
+   "key": "sha256:0f01adb2acab0a67",
+   "anchorAt": "2026-10-29T09:00:00.000Z",
+   "item": {
+    "id": "sha256:0f01adb2acab0a67",
+    "title": "OpenAI：如何监测前沿模型错位",
+    "summary": "OpenAI 介绍分层监测，用于发现前沿模型错位与未授权智能体行为，以便在事件升级前介入。官方安全运营说明。",
+    "reason": "OpenAI：分层监测前沿模型错位与未授权智能体行为",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-29T09:00:00.000Z",
+    "timelineAt": "2026-10-29T09:00:00.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-30-openai-frontier-misalignment-detection",
+    "originalUrl": "https://openai.com/index/how-we-detect-frontier-model-misalignment"
+   },
+   "group": null
   },
   {
    "key": "sha256:3801bfeec8403796",
@@ -477,61 +523,6 @@
     "originalUrl": "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/"
    },
    "group": null
-  },
-  {
-   "key": "sha256:c417f8e3d39d0b89",
-   "anchorAt": "2026-10-27T07:00:00.000Z",
-   "item": {
-    "id": "sha256:c417f8e3d39d0b89",
-    "title": "OpenAI：与 Oracle 扩大合作，把应用接入 ChatGPT",
-    "summary": "OpenAI 称与 Oracle 把企业应用与代理接入 ChatGPT，并推出多项 Oracle×OpenAI 产品。",
-    "reason": "OpenAI 与 Oracle 把企业应用与代理接入 ChatGPT",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-27T07:00:00.000Z",
-    "timelineAt": "2026-10-27T07:00:00.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-28-openai-oracle-apps-chatgpt",
-    "originalUrl": "https://openai.com/index/oracle-apps-in-chatgpt"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:1a162d33f42d8b8e",
-   "anchorAt": "2026-10-27T05:46:51.000Z",
-   "item": {
-    "id": "sha256:1a162d33f42d8b8e",
-    "title": "蚂蚁百灵开源 Ling-3.1-flash-1019：560B/25B MoE，AA 智力指数 44",
-    "summary": null,
-    "reason": "蚂蚁开源 Ling-3.1-flash-1019 并报 AA 指数提升",
-    "source": {
-     "name": "HF 机构新模型 · inclusionAI"
-    },
-    "publishedAt": "2026-10-27T05:46:51.000Z",
-    "timelineAt": "2026-10-27T05:46:51.000Z",
-    "category": "product",
-    "tags": [
-     "fp_hop_as_rep"
-    ],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-28-antgroup-ling-31-flash-1019",
-    "originalUrl": "https://huggingface.co/inclusionAI/Ling-3.1-flash-1019"
-   },
-   "group": {
-    "factId": "fact-2026-10-28-antgroup-ling-31-flash-1019",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:1a162d33f42d8b8e"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-2.json",
@@ -539,7 +530,7 @@
   {
    "rank": 1,
    "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
-   "heat": 30.6,
+   "heat": 37.5,
    "trend": "up",
    "storyPublicId": "2026-10-29-mistral-large-4-lechonk",
    "itemId": "sha256:5a25565ab71a8d06",
@@ -557,16 +548,20 @@
      "kind": "editorial"
     },
     {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
      "name": "The Decoder",
      "kind": "editorial"
     }
    ],
-   "participantCount": 4
+   "participantCount": 5
   },
   {
    "rank": 2,
    "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
-   "heat": 27.6,
+   "heat": 25.5,
    "trend": "down",
    "storyPublicId": "2026-10-28-deepmind-gemini-4-carbon",
    "itemId": "sha256:3e32bae570ff21ee",
@@ -597,7 +592,7 @@
   {
    "rank": 3,
    "title": "NVIDIA 发布开源 Nemotron 3.5 Transcribe 与 Granary v2",
-   "heat": 14.3,
+   "heat": 13.2,
    "trend": "down",
    "storyPublicId": "2026-10-28-nvidia-nemotron-35-transcribe",
    "itemId": "sha256:ec733f799e1aaee3",
@@ -620,7 +615,7 @@
   {
    "rank": 4,
    "title": "微软首次披露 Azure 季度营收约 33.2 亿美元",
-   "heat": 11.3,
+   "heat": 10.4,
    "trend": "down",
    "storyPublicId": "2026-10-28-microsoft-fy27-q1-earnings",
    "itemId": "sha256:3801bfeec8403796",
@@ -639,7 +634,7 @@
   {
    "rank": 5,
    "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
-   "heat": 5.7,
+   "heat": 5.2,
    "trend": "down",
    "storyPublicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
    "itemId": "sha256:449070727cbfb984",
@@ -657,14 +652,15 @@
   }
  ],
  "dayCounts": {
-  "2026-10-29": 5,
+  "2026-10-30": 1,
+  "2026-10-29": 6,
   "2026-10-28": 11,
   "2026-10-27": 9,
   "2026-10-26": 3,
   "2026-10-25": 3,
   "2026-10-24": 7,
   "2026-10-23": 12,
-  "2026-10-22": 9,
+  "2026-10-22": 8,
   "2026-10-21": 12,
   "2026-10-20": 3,
   "2026-10-19": 2,
@@ -672,5 +668,5 @@
  },
  "page": 1,
  "pageCount": 4,
- "total": 77
+ "total": 78
 }

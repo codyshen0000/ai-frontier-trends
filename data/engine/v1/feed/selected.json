@@ -8,6 +8,17 @@
  },
  "items": [
   {
+   "guid": "sha256:9349f418e7bc7ab4",
+   "title": "OpenAI 更新 Model Spec：五条核心价值",
+   "summary": "OpenAI 发布更新版 Model Spec，概述五条核心价值，引导更强模型在判断力、人类能动性与忠实人类意图上的行为。官方对齐规范。",
+   "originalUrl": "https://openai.com/index/updated-model-spec",
+   "pubDate": "2026-10-29T17:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "industry",
+   "categoryLabel": "行业",
+   "eventPublicId": "2026-10-30-openai-updated-model-spec"
+  },
+  {
    "guid": "sha256:f7a1020f473102a5",
    "title": "Wiz：智能体攻击兴起——形态、指纹与走向",
    "summary": "",
@@ -28,6 +39,17 @@
    "category": "model",
    "categoryLabel": "模型",
    "eventPublicId": "2026-10-29-mistral-large-4-lechonk"
+  },
+  {
+   "guid": "sha256:0f01adb2acab0a67",
+   "title": "OpenAI：如何监测前沿模型错位",
+   "summary": "OpenAI 介绍分层监测，用于发现前沿模型错位与未授权智能体行为，以便在事件升级前介入。官方安全运营说明。",
+   "originalUrl": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+   "pubDate": "2026-10-29T09:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "paper",
+   "categoryLabel": "论文",
+   "eventPublicId": "2026-10-30-openai-frontier-misalignment-detection"
   },
   {
    "guid": "sha256:3801bfeec8403796",
@@ -534,28 +556,6 @@
    "category": "product",
    "categoryLabel": "产品",
    "eventPublicId": "2026-10-23-google-agent-compute-engine"
-  },
-  {
-   "guid": "sha256:67297d2df9a3d7f1",
-   "title": "AllenAI：发布 OlmoEarth v1.3 全球卫星嵌入与探索工具",
-   "summary": "OlmoEarth v1.3 卫星嵌入 + 全球预计算嵌入与浏览器探索工具。",
-   "originalUrl": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
-   "pubDate": "2026-10-22T16:11:31.000Z",
-   "sourceName": "Hugging Face Blog",
-   "category": "model",
-   "categoryLabel": "模型",
-   "eventPublicId": "2026-10-23-allenai-olmoearth-v13"
-  },
-  {
-   "guid": "sha256:d6172869a6c9d34f",
-   "title": "微软研究院：Flint-interactive 让智能体做交互式数据可视化",
-   "summary": "",
-   "originalUrl": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/",
-   "pubDate": "2026-10-22T16:00:00.000Z",
-   "sourceName": "Microsoft Research Blog",
-   "category": "paper",
-   "categoryLabel": "论文",
-   "eventPublicId": "2026-10-23-msr-flint-interactive"
   }
  ]
 }

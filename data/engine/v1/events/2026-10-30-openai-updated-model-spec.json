@@ -1,0 +1,91 @@
+{
+ "publicId": "2026-10-30-openai-updated-model-spec",
+ "title": "OpenAI 更新 Model Spec：五条核心价值",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-29T17:00:00.000Z",
+ "latestAt": "2026-10-29T17:00:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "OpenAI 发布更新版 Model Spec，概述五条核心价值，引导更强模型在判断力、人类能动性与忠实人类意图上的行为边界。属官方对齐规范更新。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-30-openai-updated-model-spec",
+   "title": "OpenAI 更新 Model Spec：五条核心价值",
+   "firstReportAt": "2026-10-29T17:00:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:9349f418e7bc7ab4",
+    "title": "OpenAI 更新 Model Spec：五条核心价值",
+    "summary": "OpenAI 发布更新版 Model Spec，概述五条核心价值，引导更强模型在判断力、人类能动性与忠实人类意图上的行为。官方对齐规范。",
+    "source": {
+     "name": "OpenAI News",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-29T17:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://openai.com/index/updated-model-spec"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:9349f418e7bc7ab4",
+   "title": "OpenAI 更新 Model Spec：五条核心价值",
+   "summary": "OpenAI 发布更新版 Model Spec，概述五条核心价值，引导更强模型在判断力、人类能动性与忠实人类意图上的行为。官方对齐规范。",
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-29T17:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/updated-model-spec"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:9349f418e7bc7ab4",
+   "title": "OpenAI 更新 Model Spec：五条核心价值",
+   "summary": "OpenAI 发布更新版 Model Spec，概述五条核心价值，引导更强模型在判断力、人类能动性与忠实人类意图上的行为。官方对齐规范。",
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-29T17:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/updated-model-spec"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-29T17:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-29T18:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-29T19:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "OpenAI 更新 Model Spec：五条核心价值引导更强模型",
+ "primaryUrl": "https://openai.com/index/updated-model-spec"
+}

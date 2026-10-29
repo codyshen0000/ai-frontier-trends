@@ -197,11 +197,26 @@
    "hour": "2026-10-29T16:00:00.000Z",
    "heat": 14.7,
    "participants": 3
+  },
+  {
+   "hour": "2026-10-29T17:00:00.000Z",
+   "heat": 14.3,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-29T18:00:00.000Z",
+   "heat": 13.9,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-29T19:00:00.000Z",
+   "heat": 13.5,
+   "participants": 3
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "NVIDIA 开源可提示多语转写模型 Nemotron 3.5",
  "primaryUrl": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
- "rankDelta": -1
+ "rankDelta": 0
 }

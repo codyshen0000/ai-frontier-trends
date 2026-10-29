@@ -6,6 +6,61 @@
  },
  "cards": [
   {
+   "key": "sha256:c417f8e3d39d0b89",
+   "anchorAt": "2026-10-27T07:00:00.000Z",
+   "item": {
+    "id": "sha256:c417f8e3d39d0b89",
+    "title": "OpenAI：与 Oracle 扩大合作，把应用接入 ChatGPT",
+    "summary": "OpenAI 称与 Oracle 把企业应用与代理接入 ChatGPT，并推出多项 Oracle×OpenAI 产品。",
+    "reason": "OpenAI 与 Oracle 把企业应用与代理接入 ChatGPT",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-27T07:00:00.000Z",
+    "timelineAt": "2026-10-27T07:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-28-openai-oracle-apps-chatgpt",
+    "originalUrl": "https://openai.com/index/oracle-apps-in-chatgpt"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:1a162d33f42d8b8e",
+   "anchorAt": "2026-10-27T05:46:51.000Z",
+   "item": {
+    "id": "sha256:1a162d33f42d8b8e",
+    "title": "蚂蚁百灵开源 Ling-3.1-flash-1019：560B/25B MoE，AA 智力指数 44",
+    "summary": null,
+    "reason": "蚂蚁开源 Ling-3.1-flash-1019 并报 AA 指数提升",
+    "source": {
+     "name": "HF 机构新模型 · inclusionAI"
+    },
+    "publishedAt": "2026-10-27T05:46:51.000Z",
+    "timelineAt": "2026-10-27T05:46:51.000Z",
+    "category": "product",
+    "tags": [
+     "fp_hop_as_rep"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-28-antgroup-ling-31-flash-1019",
+    "originalUrl": "https://huggingface.co/inclusionAI/Ling-3.1-flash-1019"
+   },
+   "group": {
+    "factId": "fact-2026-10-28-antgroup-ling-31-flash-1019",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:1a162d33f42d8b8e"
+    ]
+   }
+  },
+  {
    "key": "sha256:f0e3f8456fcbc65d",
    "anchorAt": "2026-10-27T00:00:00.000Z",
    "item": {
@@ -519,66 +574,6 @@
      "sha256:cfa117fe12523c03"
     ]
    }
-  },
-  {
-   "key": "sha256:b19f86d623cfeb5d",
-   "anchorAt": "2026-10-23T11:32:19.000Z",
-   "item": {
-    "id": "sha256:b19f86d623cfeb5d",
-    "title": "Anthropic：Claude 为 123 个开源库写出可机器检查的形式化证明",
-    "summary": "Decoder 报道 Anthropic 形式化验证实验；已核实官方研究帖并 hop 附加。",
-    "reason": "Anthropic 用 Claude 为 123 个开源库做形式化证明",
-    "source": {
-     "name": "The Decoder"
-    },
-    "publishedAt": "2026-10-23T11:32:19.000Z",
-    "timelineAt": "2026-10-23T11:32:19.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-23-anthropic-claude-formal-verification",
-    "originalUrl": "https://the-decoder.com/anthropics-claude-now-writes-code-and-proves-it-safe-automatically/"
-   },
-   "group": {
-    "factId": "fact-2026-10-23-anthropic-claude-formal-verification",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:b19f86d623cfeb5d"
-    ]
-   }
-  },
-  {
-   "key": "sha256:f8c156dba7886826",
-   "anchorAt": "2026-10-23T10:00:00.000Z",
-   "item": {
-    "id": "sha256:f8c156dba7886826",
-    "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
-    "summary": null,
-    "reason": "OpenAI 默认离线训练并大规模红队加固前沿环境",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-23T10:00:00.000Z",
-    "timelineAt": "2026-10-23T10:00:00.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-24-openai-securing-frontier-training",
-    "originalUrl": "https://openai.com/index/securing-our-frontier-model-training-environment"
-   },
-   "group": {
-    "factId": "fact-2026-10-24-openai-securing-frontier-training",
-    "additionalSourceCount": 3,
-    "reportCount": 4,
-    "memberIds": [
-     "sha256:f8c156dba7886826"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-3.json",
@@ -586,5 +581,5 @@
  "dayCounts": {},
  "page": 2,
  "pageCount": 4,
- "total": 77
+ "total": 78
 }

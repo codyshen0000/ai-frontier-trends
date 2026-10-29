@@ -1,5 +1,5 @@
 {
- "computedAt": "2026-10-29T16:52:00.000Z",
+ "computedAt": "2026-10-29T19:38:00.000Z",
  "windowHours": 48,
  "entries": [
   {
@@ -8,15 +8,16 @@
     "publicId": "2026-10-29-mistral-large-4-lechonk",
     "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重"
    },
-   "heat": 30.6,
+   "heat": 37.5,
    "trend": "up",
-   "trendPct": 109.6,
+   "trendPct": 63.0,
    "badges": [
     "rising"
    ],
-   "participantCount": 4,
-   "sourceCount": 4,
+   "participantCount": 5,
+   "sourceCount": 5,
    "sourceNames": [
+    "TechCrunch · AI",
     "The Decoder",
     "Mistral AI News",
     "Hugging Face Blog",
@@ -36,14 +37,15 @@
      "kind": "editorial"
     },
     {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
      "name": "The Decoder",
      "kind": "editorial"
     }
    ],
    "spark": [
-    null,
-    null,
-    null,
     null,
     null,
     null,
@@ -65,11 +67,16 @@
     23.5,
     22.8,
     22.1,
-    31.3
+    31.3,
+    40.5,
+    39.3,
+    38.2
    ],
    "summary": "Mistral 发布并开源 Mistral Large 4（代号 Le Chonk）权重：约 1 万亿参数、原生多模态，称在开源权重编码评测领先并强化防御性网络安全；提供多种推理模式以平衡成本与性能，在欧洲基础设施训练。同日 vLLM 宣布 Day-0 支持（稀疏 MLA、跨层 KV 共享等），Hugging Face 发文欢迎上架。",
    "latest": null,
-   "cover": null
+   "cover": null,
+   "rankDelta": 0,
+   "heatDeltaPct": 22.5
   },
   {
    "rank": 2,
@@ -77,9 +84,9 @@
     "publicId": "2026-10-28-deepmind-gemini-4-carbon",
     "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升"
    },
-   "heat": 27.6,
+   "heat": 25.5,
    "trend": "down",
-   "trendPct": -16.1,
+   "trendPct": -15.8,
    "badges": [],
    "participantCount": 5,
    "sourceCount": 4,
@@ -112,9 +119,6 @@
     }
    ],
    "spark": [
-    null,
-    null,
-    9.7,
     9.4,
     19.0,
     38.1,
@@ -136,13 +140,16 @@
     30.9,
     30.0,
     29.2,
-    28.3
+    28.3,
+    27.5,
+    26.7,
+    26.0
    ],
    "summary": null,
    "latest": null,
    "cover": null,
-   "rankDelta": -1,
-   "heatDeltaPct": -13.7
+   "rankDelta": 0,
+   "heatDeltaPct": -7.6
   },
   {
    "rank": 3,
@@ -150,7 +157,7 @@
     "publicId": "2026-10-28-nvidia-nemotron-35-transcribe",
     "title": "NVIDIA 发布开源 Nemotron 3.5 Transcribe 与 Granary v2"
    },
-   "heat": 14.3,
+   "heat": 13.2,
    "trend": "down",
    "trendPct": -15.9,
    "badges": [],
@@ -176,9 +183,6 @@
     }
    ],
    "spark": [
-    29.4,
-    28.5,
-    27.7,
     26.9,
     26.2,
     25.4,
@@ -200,13 +204,16 @@
     16.0,
     15.6,
     15.1,
-    14.7
+    14.7,
+    14.3,
+    13.9,
+    13.5
    ],
    "summary": "NVIDIA 在 Hugging Face 发布开源权重 Nemotron 3.5 Transcribe：单检查点可做多语转写（约 40 语）、说话人归属、翻译与音频问答，并可用自然语言提示；同日给出 Granary v2 多语语音数据与微调工具。属官方模型/数据发布。",
    "latest": null,
    "cover": null,
-   "rankDelta": -1,
-   "heatDeltaPct": -13.9
+   "rankDelta": 0,
+   "heatDeltaPct": -7.7
   },
   {
    "rank": 4,
@@ -214,9 +221,9 @@
     "publicId": "2026-10-28-microsoft-fy27-q1-earnings",
     "title": "微软首次披露 Azure 季度营收约 33.2 亿美元"
    },
-   "heat": 11.3,
+   "heat": 10.4,
    "trend": "down",
-   "trendPct": -15.7,
+   "trendPct": -16.1,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 1,
@@ -234,9 +241,6 @@
     }
    ],
    "spark": [
-    null,
-    null,
-    null,
     null,
     null,
     9.8,
@@ -258,13 +262,16 @@
     12.6,
     12.3,
     11.9,
-    11.6
+    11.6,
+    11.2,
+    10.9,
+    10.6
    ],
    "summary": "TechCrunch 称微软首次以美元披露 Azure 季度营收约 33.2 亿美元；同季总营收约 922.79 亿美元（同比 +19%），并披露来自 OpenAI 安排收入约 10 亿美元。属财报解读二手，关键数字来自业绩披露。",
    "latest": "同季披露来自 OpenAI 安排收入约 10 亿美元",
    "cover": null,
    "rankDelta": 0,
-   "heatDeltaPct": -13.7
+   "heatDeltaPct": -8.0
   },
   {
    "rank": 5,
@@ -272,9 +279,9 @@
     "publicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
     "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享"
    },
-   "heat": 5.7,
+   "heat": 5.2,
    "trend": "down",
-   "trendPct": -14.9,
+   "trendPct": -16.1,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -293,9 +300,6 @@
     }
    ],
    "spark": [
-    11.6,
-    11.3,
-    10.9,
     10.6,
     10.3,
     10.0,
@@ -317,189 +321,16 @@
     6.3,
     6.1,
     6.0,
-    5.8
+    5.8,
+    5.6,
+    5.5,
+    5.3
    ],
    "summary": "NVIDIA 技术博客介绍 CUDA 13.4 在 Kubernetes 中的内存强制 GPU 共享：按显存配额切分单卡，减少小负载独占整卡造成的空闲。属厂商开发者文档级发布。",
    "latest": "DevOTD 跟进：内存边界与 KAI Scheduler 对接（hot_floor 第二源）。",
    "cover": null,
-   "rankDelta": 1,
-   "heatDeltaPct": -12.3
-  },
-  {
-   "rank": 6,
-   "story": {
-    "publicId": "2026-10-28-google-sleep-framework-continual",
-    "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘"
-   },
-   "heat": 5.6,
-   "trend": "down",
-   "trendPct": -16.4,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "CTOL Digital Solutions",
-    "Google Research Blog"
-   ],
-   "participants": [
-    {
-     "name": "Google Research Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "CTOL Digital Solutions",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    11.5,
-    11.2,
-    10.9,
-    10.6,
-    10.3,
-    10.0,
-    9.7,
-    9.4,
-    9.2,
-    8.9,
-    8.6,
-    8.4,
-    8.2,
-    7.9,
-    7.7,
-    7.5,
-    7.3,
-    7.1,
-    6.9,
-    6.7,
-    6.5,
-    6.3,
-    6.1,
-    5.9,
-    5.8
-   ],
-   "summary": null,
-   "latest": "CTOL 跟进：做梦 vs 巩固消融解读（hot_floor 第二源）。",
-   "cover": null,
-   "rankDelta": -1,
-   "heatDeltaPct": -13.8
-  },
-  {
-   "rank": 7,
-   "story": {
-    "publicId": "2026-10-28-deepmind-genie-4",
-    "title": "DeepMind 发布 Genie 4：新一代世界仿真"
-   },
-   "heat": 5.5,
-   "trend": "down",
-   "trendPct": -64.1,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 1,
-   "sourceNames": [
-    "The Decoder"
-   ],
-   "participants": [
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
-    }
-   ],
-   "spark": [
-    26.4,
-    25.7,
-    24.9,
-    24.2,
-    23.5,
-    22.9,
-    22.2,
-    21.6,
-    21.0,
-    20.4,
-    19.8,
-    19.2,
-    18.7,
-    18.2,
-    17.6,
-    17.1,
-    16.6,
-    16.2,
-    15.7,
-    15.3,
-    14.8,
-    14.4,
-    14.0,
-    13.6,
-    10.7
-   ],
-   "summary": null,
-   "latest": null,
-   "cover": null,
-   "rankDelta": -4,
-   "heatDeltaPct": -63.1
-  },
-  {
-   "rank": 8,
-   "story": {
-    "publicId": "2026-10-28-liquidai-lfm3",
-    "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族"
-   },
-   "heat": 5.1,
-   "trend": "down",
-   "trendPct": -15.0,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "Hugging Face Blog",
-    "Liquid AI Blog"
-   ],
-   "participants": [
-    {
-     "name": "Hugging Face Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "Liquid AI Blog",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    10.4,
-    10.1,
-    9.8,
-    9.5,
-    9.2,
-    9.0,
-    8.7,
-    8.5,
-    8.2,
-    8.0,
-    7.8,
-    7.6,
-    7.3,
-    7.1,
-    6.9,
-    6.7,
-    6.5,
-    6.4,
-    6.2,
-    6.0,
-    5.8,
-    5.7,
-    5.5,
-    5.3,
-    5.2
-   ],
-   "summary": null,
-   "latest": "补挂 Liquid AI 官方博客为独立 editorial participant，并换为代表（hot_floor hop-as-rep）。",
-   "cover": null,
-   "rankDelta": -1,
-   "heatDeltaPct": -13.6
+   "rankDelta": 0,
+   "heatDeltaPct": -8.8
   }
  ]
 }

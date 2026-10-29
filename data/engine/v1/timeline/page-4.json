@@ -6,6 +6,29 @@
  },
  "cards": [
   {
+   "key": "sha256:c2ed162a157709f5",
+   "anchorAt": "2026-10-21T14:58:18.000Z",
+   "item": {
+    "id": "sha256:c2ed162a157709f5",
+    "title": "IBM Granite Speech 5.0：更快更准的转写、翻译与归因",
+    "summary": null,
+    "reason": "IBM Granite Speech 5.0：更快更准的转写翻译归因",
+    "source": {
+     "name": "Hugging Face Blog"
+    },
+    "publishedAt": "2026-10-21T14:58:18.000Z",
+    "timelineAt": "2026-10-21T14:58:18.000Z",
+    "category": "model",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-21-ibm-granite-speech-5",
+    "originalUrl": "https://huggingface.co/blog/ibm-granite/granite-speech-5"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:859a2ca12c0c52e9",
    "anchorAt": "2026-10-21T13:44:12.000Z",
    "item": {
@@ -451,5 +474,5 @@
  "dayCounts": {},
  "page": 4,
  "pageCount": 4,
- "total": 77
+ "total": 78
 }

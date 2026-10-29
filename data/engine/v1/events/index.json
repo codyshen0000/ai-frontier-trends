@@ -1,6 +1,13 @@
 {
  "events": [
   {
+   "publicId": "2026-10-30-openai-updated-model-spec",
+   "title": "OpenAI 更新 Model Spec：五条核心价值",
+   "latestAt": "2026-10-29T17:00:00.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
    "publicId": "2026-10-29-mistral-large-4-lechonk",
    "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
    "latestAt": "2026-10-29T15:25:27.000Z",
@@ -12,6 +19,13 @@
    "title": "Wiz：智能体攻击兴起——形态、指纹与走向",
    "latestAt": "2026-10-29T14:36:22.000Z",
    "reportCount": 2,
+   "hotRank": null
+  },
+  {
+   "publicId": "2026-10-30-openai-frontier-misalignment-detection",
+   "title": "OpenAI：如何监测前沿模型错位",
+   "latestAt": "2026-10-29T09:00:00.000Z",
+   "reportCount": 1,
    "hotRank": null
   },
   {
@@ -68,14 +82,14 @@
    "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
    "latestAt": "2026-10-28T00:00:00.000Z",
    "reportCount": 2,
-   "hotRank": 6
+   "hotRank": null
   },
   {
    "publicId": "2026-10-28-deepmind-genie-4",
    "title": "DeepMind 发布 Genie 4：新一代世界仿真",
    "latestAt": "2026-10-27T23:04:49.000Z",
    "reportCount": 5,
-   "hotRank": 7
+   "hotRank": null
   },
   {
    "publicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
@@ -96,7 +110,7 @@
    "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族",
    "latestAt": "2026-10-27T17:16:52.000Z",
    "reportCount": 1,
-   "hotRank": 8
+   "hotRank": null
   },
   {
    "publicId": "2026-10-28-frontier-labs-eth-refutation",
@@ -382,13 +396,6 @@
    "publicId": "2026-10-22-openai-fde-means",
    "title": "OpenAI：Forward Deployed Engineering 如何填补部署鸿沟",
    "latestAt": "2026-10-22T06:00:00.000Z",
-   "reportCount": 1,
-   "hotRank": null
-  },
-  {
-   "publicId": "2026-10-23-claude-models-google-cloud",
-   "title": "Claude：经 Google Cloud 项目可调用 Anthropic 托管的 Claude Models",
-   "latestAt": "2026-10-22T00:00:00.000Z",
    "reportCount": 1,
    "hotRank": null
   },

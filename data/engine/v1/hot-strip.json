@@ -2,7 +2,7 @@
  {
   "rank": 1,
   "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
-  "heat": 30.6,
+  "heat": 37.5,
   "trend": "up",
   "storyPublicId": "2026-10-29-mistral-large-4-lechonk",
   "itemId": "sha256:5a25565ab71a8d06",
@@ -20,16 +20,20 @@
     "kind": "editorial"
    },
    {
+    "name": "TechCrunch · AI",
+    "kind": "editorial"
+   },
+   {
     "name": "The Decoder",
     "kind": "editorial"
    }
   ],
-  "participantCount": 4
+  "participantCount": 5
  },
  {
   "rank": 2,
   "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
-  "heat": 27.6,
+  "heat": 25.5,
   "trend": "down",
   "storyPublicId": "2026-10-28-deepmind-gemini-4-carbon",
   "itemId": "sha256:3e32bae570ff21ee",
@@ -60,7 +64,7 @@
  {
   "rank": 3,
   "title": "NVIDIA 发布开源 Nemotron 3.5 Transcribe 与 Granary v2",
-  "heat": 14.3,
+  "heat": 13.2,
   "trend": "down",
   "storyPublicId": "2026-10-28-nvidia-nemotron-35-transcribe",
   "itemId": "sha256:ec733f799e1aaee3",
@@ -83,7 +87,7 @@
  {
   "rank": 4,
   "title": "微软首次披露 Azure 季度营收约 33.2 亿美元",
-  "heat": 11.3,
+  "heat": 10.4,
   "trend": "down",
   "storyPublicId": "2026-10-28-microsoft-fy27-q1-earnings",
   "itemId": "sha256:3801bfeec8403796",
@@ -102,7 +106,7 @@
  {
   "rank": 5,
   "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
-  "heat": 5.7,
+  "heat": 5.2,
   "trend": "down",
   "storyPublicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
   "itemId": "sha256:449070727cbfb984",

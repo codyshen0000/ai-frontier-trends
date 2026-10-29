@@ -1,6 +1,29 @@
 {
- "generatedAt": "2026-10-29T16:52:00.000Z",
+ "generatedAt": "2026-10-29T19:38:00.000Z",
  "docs": [
+  {
+   "id": "sha256:9349f418e7bc7ab4",
+   "kind": "item",
+   "title": "OpenAI 更新 Model Spec：五条核心价值",
+   "summary": "OpenAI 发布更新版 Model Spec，概述五条核心价值，引导更强模型在判断力、人类能动性与忠实人类意图上的行为。官方对齐规范。",
+   "publishedAt": "2026-10-29T17:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "industry",
+   "selected": true,
+   "eventPublicId": "2026-10-30-openai-updated-model-spec",
+   "originalUrl": "https://openai.com/index/updated-model-spec"
+  },
+  {
+   "id": "2026-10-30-openai-updated-model-spec",
+   "kind": "event",
+   "title": "OpenAI 更新 Model Spec：五条核心价值",
+   "summary": "OpenAI 发布更新版 Model Spec，概述五条核心价值，引导更强模型在判断力、人类能动性与忠实人类意图上的行为边界。属官方对齐规范更新。",
+   "publishedAt": "2026-10-29T17:00:00.000Z",
+   "sourceNames": [
+    "OpenAI News"
+   ],
+   "path": "/events/2026-10-30-openai-updated-model-spec/"
+  },
   {
    "id": "sha256:93ab7d0d8252cfce",
    "kind": "item",
@@ -72,6 +95,29 @@
    "selected": true,
    "eventPublicId": "2026-10-29-mistral-large-4-lechonk",
    "originalUrl": "https://mistral.ai/news/mistral-large-4-oss/"
+  },
+  {
+   "id": "sha256:0f01adb2acab0a67",
+   "kind": "item",
+   "title": "OpenAI：如何监测前沿模型错位",
+   "summary": "OpenAI 介绍分层监测，用于发现前沿模型错位与未授权智能体行为，以便在事件升级前介入。官方安全运营说明。",
+   "publishedAt": "2026-10-29T09:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "paper",
+   "selected": true,
+   "eventPublicId": "2026-10-30-openai-frontier-misalignment-detection",
+   "originalUrl": "https://openai.com/index/how-we-detect-frontier-model-misalignment"
+  },
+  {
+   "id": "2026-10-30-openai-frontier-misalignment-detection",
+   "kind": "event",
+   "title": "OpenAI：如何监测前沿模型错位",
+   "summary": "OpenAI 介绍分层监测体系，用于发现前沿模型错位与未授权智能体行为，以便响应方在事件升级前介入。属官方安全/对齐运营说明。",
+   "publishedAt": "2026-10-29T09:00:00.000Z",
+   "sourceNames": [
+    "OpenAI News"
+   ],
+   "path": "/events/2026-10-30-openai-frontier-misalignment-detection/"
   },
   {
    "id": "sha256:b6b30743068c2627",
@@ -1841,18 +1887,6 @@
    "originalUrl": "https://openai.com/index/uber-chatgpt-work-rollout"
   },
   {
-   "id": "sha256:4182359e79e632d3",
-   "kind": "item",
-   "title": "Claude：经 Google Cloud 项目可调用 Anthropic 托管的 Claude Models",
-   "summary": "Claude Platform：Claude Models on Google Cloud（Anthropic 托管）已推出。",
-   "publishedAt": "2026-10-22T00:00:00.000Z",
-   "sourceName": "Claude Platform Release Notes",
-   "category": "product",
-   "selected": true,
-   "eventPublicId": "2026-10-23-claude-models-google-cloud",
-   "originalUrl": "https://platform.claude.com/docs/en/release-notes/overview#october-22-2026"
-  },
-  {
    "id": "sha256:3a08079b3035160b",
    "kind": "item",
    "title": "微软 GitHub：thinkingbox-training 训练集成",
@@ -1863,17 +1897,6 @@
    "selected": false,
    "eventPublicId": "2026-10-23-microsoft-thinkingbox-rl",
    "originalUrl": "https://github.com/microsoft/thinkingbox-training"
-  },
-  {
-   "id": "2026-10-23-claude-models-google-cloud",
-   "kind": "event",
-   "title": "Claude：经 Google Cloud 项目可调用 Anthropic 托管的 Claude Models",
-   "summary": "Claude Platform 10 月 22 日说明：Claude Models on Google Cloud（Anthropic 托管）已推出，经你的 Google Cloud 项目调用 Anthropic 运营的 Claude API。",
-   "publishedAt": "2026-10-22T00:00:00.000Z",
-   "sourceNames": [
-    "Claude Platform Release Notes"
-   ],
-   "path": "/events/2026-10-23-claude-models-google-cloud/"
   },
   {
    "id": "sha256:814db62e1fecf4f7",
