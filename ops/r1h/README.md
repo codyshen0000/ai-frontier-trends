@@ -48,7 +48,7 @@ npm run test:r1h
 
 1. 拷 staging 的 `hot.json` + 已 patch 的 `meta.json` 进 `--prev-tip`（不重写 daily/feeds；`hot-snapshots` 仅当 `--write-snapshots` 且 staging 已有）
 2. 只在 `engine-data` 上 `git add` / `commit` / `git push origin refs/heads/engine-data:refs/heads/engine-data`
-3. `gh api` `repository_dispatch` `engine-data-updated` → `codyshen0000/ai-frontier-trends`
+3. `gh api` `repository_dispatch` `engine-data-updated` → `codyshen0000/ai-frontier-trends`（`pages.yml` 始终构建；空 cron 由 G3 skip-noop 挡住，见 `ops/r1h/G3-FREE-PATH-BRANCH.md`）
 4. 返回 `{ pushed, dispatched, pages_run_id, note }`，并自动调用 `record_pages_deploy.mjs --source r1h`
 
 ```bash

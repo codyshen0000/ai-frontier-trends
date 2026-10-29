@@ -112,7 +112,15 @@ function Lead({ e }: { e: HotEntryView }) {
           <div className="order-first overflow-hidden well rounded-panel xl:order-none">
             <img src={e.cover.url} srcSet={e.cover.srcSet} sizes="(min-width: 1280px) calc(28vw - 96px), (min-width: 1024px) calc(58vw - 180px), (min-width: 640px) 568px, calc(100vw - 74px)" width={e.cover.width ?? undefined} height={e.cover.height ?? undefined} alt={e.cover.alt} loading="eager" fetchPriority="high" decoding="async" className="aspect-[16/9] size-full object-cover transition-transform duration-200 group-hover:scale-[1.02] xl:aspect-[16/10]" />
           </div>
-        ) : null}
+        ) : (
+          <div
+            data-ft-cover="empty"
+            className="order-first flex aspect-[16/9] flex-col justify-end rounded-panel well px-4 py-3 xl:order-none xl:aspect-[16/10]"
+          >
+            <p className="text-[13px] font-medium text-ink-3">无说明性配图</p>
+            <p className="mt-1 text-[12px] leading-[1.65] text-ink-4">本站只用已落盘的同域封面。没有图时留空，不编造、不上外链图床。</p>
+          </div>
+        )}
       </div>
       {/* Side by side while the card is wide enough; on a narrow card the day of heat and the index
           move under the voices, to the right, instead of squeezing them into a column. */}

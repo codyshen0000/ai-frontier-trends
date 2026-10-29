@@ -228,6 +228,9 @@ export function ItemScreen({ item, event }: { item: SiteItemPublic; event?: Site
   );
 }
 
+/** G8 TODO (#96 Batch2): engine `/story/{id}/` already exists for events.
+ *  Competitor-style cluster story deep pages (multi-source timeline beyond
+ *  this event screen) are out of this run — do not invent clusters. */
 export function EventScreen({ event }: { event: SiteEvent }) {
   return (
     <Shell pathname={`/story/${event.publicId}`}>
