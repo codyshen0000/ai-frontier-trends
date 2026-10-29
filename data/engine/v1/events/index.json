@@ -89,7 +89,7 @@
    "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族",
    "latestAt": "2026-10-27T17:16:52.000Z",
    "reportCount": 1,
-   "hotRank": 9
+   "hotRank": 8
   },
   {
    "publicId": "2026-10-28-frontier-labs-eth-refutation",
@@ -159,7 +159,7 @@
    "title": "蚂蚁百灵开源 Ling-3.1-flash-1019：560B/25B MoE，AA 智力指数 44",
    "latestAt": "2026-10-27T05:46:51.000Z",
    "reportCount": 1,
-   "hotRank": 8
+   "hotRank": null
   },
   {
    "publicId": "2026-10-27-baseten-bdn-sealed-volumes",

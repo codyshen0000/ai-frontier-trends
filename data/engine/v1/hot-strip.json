@@ -2,13 +2,17 @@
  {
   "rank": 1,
   "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
-  "heat": 30.4,
+  "heat": 35.9,
   "trend": "down",
   "storyPublicId": "2026-10-28-deepmind-gemini-4-carbon",
   "itemId": "sha256:3e32bae570ff21ee",
   "participants": [
    {
     "name": "Google DeepMind Blog",
+    "kind": "editorial"
+   },
+   {
+    "name": "量子位",
     "kind": "editorial"
    },
    {
@@ -24,12 +28,12 @@
     "kind": "signal"
    }
   ],
-  "participantCount": 4
+  "participantCount": 5
  },
  {
   "rank": 2,
   "title": "NVIDIA 发布开源 Nemotron 3.5 Transcribe 与 Granary v2",
-  "heat": 20.3,
+  "heat": 18.6,
   "trend": "down",
   "storyPublicId": "2026-10-28-nvidia-nemotron-35-transcribe",
   "itemId": "sha256:ec733f799e1aaee3",
@@ -52,7 +56,7 @@
  {
   "rank": 3,
   "title": "DeepMind 发布 Genie 4：新一代世界仿真",
-  "heat": 18.2,
+  "heat": 16.7,
   "trend": "down",
   "storyPublicId": "2026-10-28-deepmind-genie-4",
   "itemId": "sha256:e960e8891f7d7ad8",
@@ -83,7 +87,7 @@
  {
   "rank": 4,
   "title": "微软首次披露 Azure 季度营收约 33.2 亿美元",
-  "heat": 16.0,
+  "heat": 14.7,
   "trend": "down",
   "storyPublicId": "2026-10-28-microsoft-fy27-q1-earnings",
   "itemId": "sha256:3801bfeec8403796",
@@ -102,7 +106,7 @@
  {
   "rank": 5,
   "title": "Anthropic 正式递交公开上市申请",
-  "heat": 13.8,
+  "heat": 10.1,
   "trend": "down",
   "storyPublicId": "2026-10-27-anthropic-ipo-s1",
   "itemId": "sha256:8128c7853b28b767",
@@ -118,12 +122,8 @@
    {
     "name": "The Decoder",
     "kind": "editorial"
-   },
-   {
-    "name": "Latent Space",
-    "kind": "editorial"
    }
   ],
-  "participantCount": 4
+  "participantCount": 3
  }
 ]
