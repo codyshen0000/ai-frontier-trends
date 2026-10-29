@@ -13,11 +13,11 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 2,
+  "participants48h": 1,
   "newParticipants6h": 0,
   "recentReports24h": 1,
   "observationComplete": true,
-  "rank": 10
+  "rank": null
  },
  "developments": [
   {
@@ -299,11 +299,35 @@
    "hour": "2026-10-28T19:00:00.000Z",
    "heat": 9.1,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-28T20:00:00.000Z",
+   "heat": 8.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T21:00:00.000Z",
+   "heat": 8.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T22:00:00.000Z",
+   "heat": 8.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T23:00:00.000Z",
+   "heat": 8.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-29T00:00:00.000Z",
+   "heat": 5.4,
+   "participants": 1
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "微软官方推出 MAI-Image-2.7 图像编辑预览并报榜单名次",
- "primaryUrl": "https://microsoft.ai/news/mai-image-2-7-debut/",
- "rankDelta": -1
+ "primaryUrl": "https://microsoft.ai/news/mai-image-2-7-debut/"
 }

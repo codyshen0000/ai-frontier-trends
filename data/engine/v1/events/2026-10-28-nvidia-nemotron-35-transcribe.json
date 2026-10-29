@@ -14,10 +14,10 @@
  "latestReport": null,
  "whyHot": {
   "participants48h": 3,
-  "newParticipants6h": 3,
+  "newParticipants6h": 0,
   "recentReports24h": 3,
   "observationComplete": true,
-  "rank": 1
+  "rank": 2
  },
  "developments": [
   {
@@ -92,11 +92,36 @@
    "hour": "2026-10-28T19:00:00.000Z",
    "heat": 26.9,
    "participants": 3
+  },
+  {
+   "hour": "2026-10-28T20:00:00.000Z",
+   "heat": 26.2,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-28T21:00:00.000Z",
+   "heat": 25.4,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-28T22:00:00.000Z",
+   "heat": 24.7,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-28T23:00:00.000Z",
+   "heat": 24.0,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-29T00:00:00.000Z",
+   "heat": 23.3,
+   "participants": 3
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "NVIDIA 开源可提示多语转写模型 Nemotron 3.5",
  "primaryUrl": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
- "rankDelta": 0
+ "rankDelta": -1
 }

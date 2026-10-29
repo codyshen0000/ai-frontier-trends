@@ -5,7 +5,7 @@
    "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
    "latestAt": "2026-10-28T19:17:58.000Z",
    "reportCount": 2,
-   "hotRank": 3
+   "hotRank": 1
   },
   {
    "publicId": "2026-10-28-baseten-qwen3-asr-batch",
@@ -19,7 +19,14 @@
    "title": "NVIDIA 发布开源 Nemotron 3.5 Transcribe 与 Granary v2",
    "latestAt": "2026-10-28T14:58:17.000Z",
    "reportCount": 1,
-   "hotRank": 1
+   "hotRank": 2
+  },
+  {
+   "publicId": "2026-10-28-openai-servicenow-partnership-expansion",
+   "title": "OpenAI 与 ServiceNow 扩大企业工作流合作",
+   "latestAt": "2026-10-28T13:15:00.000Z",
+   "reportCount": 1,
+   "hotRank": null
   },
   {
    "publicId": "2026-10-28-cathedral-anthropic-agent-breach",
@@ -33,7 +40,7 @@
    "title": "微软发布 MAI-Image-2.7：图像编辑预览登 Artificial Analysis 第二",
    "latestAt": "2026-10-28T02:37:17.000Z",
    "reportCount": 2,
-   "hotRank": 10
+   "hotRank": null
   },
   {
    "publicId": "2026-10-27-anthropic-ipo-s1",
@@ -54,7 +61,7 @@
    "title": "DeepMind 发布 Genie 4：新一代世界仿真",
    "latestAt": "2026-10-27T23:04:49.000Z",
    "reportCount": 5,
-   "hotRank": 2
+   "hotRank": 3
   },
   {
    "publicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
@@ -68,7 +75,7 @@
    "title": "Cohere：热门开源权重模型出现异常外传行为",
    "latestAt": "2026-10-27T19:45:49.000Z",
    "reportCount": 3,
-   "hotRank": null
+   "hotRank": 9
   },
   {
    "publicId": "2026-10-28-liquidai-lfm3",
@@ -131,7 +138,7 @@
    "title": "OpenAI 发布 GPT-6.1 Terra",
    "latestAt": "2026-10-27T08:27:46.000Z",
    "reportCount": 4,
-   "hotRank": 9
+   "hotRank": null
   },
   {
    "publicId": "2026-10-28-openai-oracle-apps-chatgpt",

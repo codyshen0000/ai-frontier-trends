@@ -1,0 +1,383 @@
+{
+ "kind": "daily",
+ "key": "2026-10-29",
+ "issueNumber": 11,
+ "title": "AI日报 · 2026-10-29",
+ "generatedAt": "2026-10-29T00:46:05.000Z",
+ "lead": {
+  "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+  "leadParagraph": "Google DeepMind 宣布 Gemini 4 Carbon，称其为目前最强一代，在 Artificial Analysis Intelligence Index v5.0 排名第一（59），并在 SEC-bench Pro、ExploitGym、CWE-bench 等网络安全评测领先；内部称可支撑多日长程工程任务。在 Argon 两周后发布。正按美国政府自愿预发布测试流程推进，本周起先向部分网络安全防御方开放，再经 Fairwind 计划扩至可信伙伴；面向开发者与消费者的产品面仍待开放。入门价与 Argon 相同：每百万输入/输出 token 2/10 美元。"
+ },
+ "leadItemId": "sha256:3e32bae570ff21ee",
+ "overview": "DeepMind 发布 Gemini 4 Carbon，网安与长程编码领先。",
+ "highlights": [
+  {
+   "itemId": "sha256:3e32bae570ff21ee",
+   "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+   "summary": "Google DeepMind 宣布 Gemini 4 Carbon，称其为目前最强一代，在 Artificial Analysis Intelligence Index v5.0 排名第一（59），并在 SEC-bench Pro、ExploitGym、CWE-bench 等网络安全评测领先；内部称可支撑多日长程工程任务。在 Argon 两周后发布。正按美国政府自愿预发布测试流程推进，本周起先向部分网络安全防御方开放，再经 Fairwind 计划扩至可信伙伴；面向开发者与消费者的产品面仍待开放。入门价与 Argon 相同：每百万输入/输出 token 2/10 美元。",
+   "sourceName": "Google DeepMind Blog",
+   "sourceUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-28T17:00:58.000Z",
+   "available": true,
+   "otherSources": 3
+  },
+  {
+   "itemId": "sha256:a395c7da350b5086",
+   "title": "OpenAI 与 ServiceNow 扩大企业工作流合作",
+   "summary": "OpenAI 宣布与 ServiceNow 扩大合作：把 OpenAI 模型与智能体接入 ServiceNow 产品（开发到安全），并把 ServiceNow 工作流接入 ChatGPT 与 Codex；ServiceNow MCP 插件已在 OpenAI 市场可用，增强能力预计 2026 年底。属官方企业合作扩展（基于 1 月合作）。",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/openai-servicenow-partnership-expansion",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-28T13:15:00.000Z",
+   "available": true,
+   "otherSources": 0
+  },
+  {
+   "itemId": "sha256:3801bfeec8403796",
+   "title": "微软 FY27 Q1：首次披露 Azure 季度营收 332 亿美元",
+   "summary": "TechCrunch 称微软在 FY27 Q1 业绩中首次以美元披露 Azure 季度营收约 332 亿美元；同季总营收约 923 亿美元（同比+19%），并披露来自 OpenAI 商业安排收入约 100 亿美元。属财报解读二手，关键数字来自业绩披露。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-28T21:58:32.000Z",
+   "available": true,
+   "otherSources": 1
+  },
+  {
+   "itemId": "sha256:ab7da4b3ce3cc5a6",
+   "title": "Baseten：优化部署 Qwen3-ASR，批转写吞吐约升 7 倍",
+   "summary": "Baseten 称对开源 Qwen3-ASR 1.7B 做原生音频解码、KV cache FP8 与减少 host-device 同步等优化，在单卡 RTX PRO 6000 上批转写吞吐相对原版 vLLM 约升 7 倍、中位延迟约降 6.9 倍，并称约 0.1 美分/音频小时、WER 无明显变化。属托管侧官方优化发布。",
+   "sourceName": "Baseten Blog",
+   "sourceUrl": "https://www.baseten.co/blog/fastest-lowest-cost-qwen3-asr-batch-transcription/",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-28T17:39:04.000Z",
+   "available": true,
+   "otherSources": 0
+  }
+ ],
+ "sections": [
+  {
+   "label": "模型",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:3e32bae570ff21ee",
+     "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+     "summary": "Google DeepMind 宣布 Gemini 4 Carbon，称其为目前最强一代，在 Artificial Analysis Intelligence Index v5.0 排名第一（59），并在 SEC-bench Pro、ExploitGym、CWE-bench 等网络安全评测领先；内部称可支撑多日长程工程任务。在 Argon 两周后发布。正按美国政府自愿预发布测试流程推进，本周起先向部分网络安全防御方开放，再经 Fairwind 计划扩至可信伙伴；面向开发者与消费者的产品面仍待开放。入门价与 Argon 相同：每百万输入/输出 token 2/10 美元。",
+     "sourceName": "Google DeepMind Blog",
+     "sourceUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-28T17:00:58.000Z",
+     "available": true,
+     "otherSources": 3
+    },
+    {
+     "itemId": "sha256:ec733f799e1aaee3",
+     "title": "NVIDIA 发布开源 Nemotron 3.5 Transcribe 与 Granary v2",
+     "summary": "NVIDIA 在 Hugging Face 发布开源权重 Nemotron 3.5 Transcribe：单检查点可做多语转写（约 40 语）、说话人归属、翻译与音频问答，并可用自然语言提示；同日给出 Granary v2 多语语音数据与微调工具。属官方模型/数据发布。",
+     "sourceName": "Hugging Face Blog",
+     "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-28T14:58:17.000Z",
+     "available": true,
+     "otherSources": 2
+    },
+    {
+     "itemId": "sha256:e960e8891f7d7ad8",
+     "title": "DeepMind 发布 Genie 4：新一代世界仿真",
+     "summary": "Google DeepMind 宣布 Genie 4 世界模型，称提升实时交互仿真真实感，并原生多模态生成音频与对话；依托 Gemini 家族维持连贯。现为可信测试者研究预览，后续面向 Google AI Ultra 等。属官方发布。",
+     "sourceName": "Google DeepMind Blog",
+     "sourceUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-27T16:01:38.000Z",
+     "available": true,
+     "otherSources": 4
+    }
+   ]
+  },
+  {
+   "label": "行业",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:a395c7da350b5086",
+     "title": "OpenAI 与 ServiceNow 扩大企业工作流合作",
+     "summary": "OpenAI 宣布与 ServiceNow 扩大合作：把 OpenAI 模型与智能体接入 ServiceNow 产品（开发到安全），并把 ServiceNow 工作流接入 ChatGPT 与 Codex；ServiceNow MCP 插件已在 OpenAI 市场可用，增强能力预计 2026 年底。属官方企业合作扩展（基于 1 月合作）。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/openai-servicenow-partnership-expansion",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-28T13:15:00.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:3801bfeec8403796",
+     "title": "微软 FY27 Q1：首次披露 Azure 季度营收 332 亿美元",
+     "summary": "TechCrunch 称微软在 FY27 Q1 业绩中首次以美元披露 Azure 季度营收约 332 亿美元；同季总营收约 923 亿美元（同比+19%），并披露来自 OpenAI 商业安排收入约 100 亿美元。属财报解读二手，关键数字来自业绩披露。",
+     "sourceName": "TechCrunch · AI",
+     "sourceUrl": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
+     "sourceIconUrl": null,
+     "firstParty": false,
+     "publishedAt": "2026-10-28T21:58:32.000Z",
+     "available": true,
+     "otherSources": 1
+    },
+    {
+     "itemId": "sha256:5b6b315fe4450662",
+     "title": "报道：Cathedral 用 AI 智能体打入 Anthropic 业务系统",
+     "summary": "The Decoder 称网络安全初创 Cathedral 在漏洞赏金框架下，用 AI 智能体经第三方业务软件在约 12 小时内摸到 Anthropic 销售/人事/IT 等内部路径；Anthropic 确认有限接触并切断访问，称 Claude 对话、权重与源码未达，并指对方违反赏金规则。属可信二手安全事件报道。",
+     "sourceName": "The Decoder",
+     "sourceUrl": "https://the-decoder.com/ai-agents-hacked-anthropic-maker-of-arguably-the-most-capable-ai-models-for-cyberdefense/",
+     "sourceIconUrl": null,
+     "firstParty": false,
+     "publishedAt": "2026-10-28T10:56:24.000Z",
+     "available": true,
+     "otherSources": 0
+    }
+   ]
+  },
+  {
+   "label": "产品",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:ab7da4b3ce3cc5a6",
+     "title": "Baseten：优化部署 Qwen3-ASR，批转写吞吐约升 7 倍",
+     "summary": "Baseten 称对开源 Qwen3-ASR 1.7B 做原生音频解码、KV cache FP8 与减少 host-device 同步等优化，在单卡 RTX PRO 6000 上批转写吞吐相对原版 vLLM 约升 7 倍、中位延迟约降 6.9 倍，并称约 0.1 美分/音频小时、WER 无明显变化。属托管侧官方优化发布。",
+     "sourceName": "Baseten Blog",
+     "sourceUrl": "https://www.baseten.co/blog/fastest-lowest-cost-qwen3-asr-batch-transcription/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-28T17:39:04.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:1a162d33f42d8b8e",
+     "title": "蚂蚁百灵开源 Ling-3.1-flash-1019：560B/25B MoE，AA 智力指数 44",
+     "summary": "蚂蚁 inclusionAI 在 Hugging Face 开源 Ling-3.1-flash-1019（总参约 560B、每 Token 激活约 25B、混合线性 MoE、MIT）：相对上一版 AA Intelligence Index v4.3.2 从 41 升至 44；AA-Briefcase 约 1400→1524 Elo，AutomationBench-AA 62%→68%，CritPt 18%→26%，SciCode 54%→57%。同步开源基础模型 Ling-3.1-flash-base；面向 Personal Agent / 多步真实任务。量子位跟进报道。",
+     "sourceName": "HF 机构新模型 · inclusionAI",
+     "sourceUrl": "https://huggingface.co/inclusionAI/Ling-3.1-flash-1019",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-27T05:46:51.000Z",
+     "available": true,
+     "otherSources": 1
+    },
+    {
+     "itemId": "sha256:f0e3f8456fcbc65d",
+     "title": "微软发布 MAI-Image-2.7：图像编辑预览登 Artificial Analysis 第二",
+     "summary": "微软 AI 官方宣布推出 MAI Image 2.7 图像编辑预览：主打场景重绘/打光、图内文字与符号修改、素材修复增强；称在 Artificial Analysis 图像编辑榜列第二、Arena Edit 第三，相对 2.6 在全部评测用例与编辑动作上提升，场景与风格项领先约 24 Elo。现阶段以已有图片+指令编辑为主，文生图尚未开放；官方未公布 2.7 API/定价。IT之家等跟进转述。",
+     "sourceName": "Microsoft AI",
+     "sourceUrl": "https://microsoft.ai/news/mai-image-2-7-debut/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-27T00:00:00.000Z",
+     "available": true,
+     "otherSources": 1
+    },
+    {
+     "itemId": "sha256:c417f8e3d39d0b89",
+     "title": "OpenAI：与 Oracle 扩大合作，把应用接入 ChatGPT",
+     "summary": "OpenAI 称与 Oracle 扩大合作：把 Oracle 应用与数据接入 ChatGPT（Oracle AI Workspace），并用 OpenAI 模型支撑 AI Security Mesh、SMB Bundle、App Composer 等新产品；美国客户可通过 Oracle Marketplace 采购。属官方通稿。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/oracle-apps-in-chatgpt",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-27T07:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    }
+   ]
+  },
+  {
+   "label": "论文",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:64295c3ae779f4ac",
+     "title": "OpenAI：公开「指数时间假设为假」预印本材料",
+     "summary": "OpenAI math 仓库公开称确定性算法可对固定宽度 k-CNF 做亚指数精确计数，从而挑战 ETH；附预印本与 形式化范围说明，并由外部工作组审查。TechCrunch 跟进解读。属实验室自报，正确性待外部核验。",
+     "sourceName": "TechCrunch · AI",
+     "sourceUrl": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/",
+     "sourceIconUrl": null,
+     "firstParty": false,
+     "publishedAt": "2026-10-27T17:08:08.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:1d6c5c59e46e52b9",
+     "title": "Hugging Face：LLM 能否可靠评判研究想法新颖性",
+     "summary": "Hugging Face 博客发布 Ai2 研究 Old Ideas, Novel Problems，评估大模型作新颖性评判的可靠性，并公开基准、数据、代码与自动化评测流水线。属一手研究发布。",
+     "sourceName": "Hugging Face Blog",
+     "sourceUrl": "https://huggingface.co/blog/allenai/novelty-bench",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-27T16:12:42.000Z",
+     "available": true,
+     "otherSources": 0
+    }
+   ]
+  }
+ ],
+ "flashes": [
+  {
+   "itemId": null,
+   "title": "三年内，扩散模型将全面替代大语言模型",
+   "summary": "小红书观点帖：浙大博生称 AR diffusion 将取代下一 token 范式",
+   "sourceName": "小红书",
+   "sourceUrl": "https://www.xiaohongshu.com/explore/6adefb280000000016019cbf?xsec_token=ABXVOSSKuFrpbfZDgv_hVWn7Vxl9VPBU3PO0ellQ6IhkQ%3D&xsec_source=pc_search",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T02:02:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:14bd5a3a69122b7b",
+   "title": "报道：谷歌全球扩展 AI 搜索广告",
+   "summary": null,
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-28T21:48:37.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:d641ff0fe97872c1",
+   "title": "【传闻】美司法部据称就英伟达收购 Hugging Face 展开问询",
+   "summary": "IT之家援引路透传闻；路透页 401 未换一手；70 未过 T2。",
+   "sourceName": "IT之家",
+   "sourceUrl": "https://www.ithome.com/1/019/272.htm",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-28T23:08:07.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:59788a007bb479e4",
+   "title": "Latent Space：为何智能体爱用 Supabase",
+   "summary": "播客/观点；52 未过 T2=76。",
+   "sourceName": "Latent Space",
+   "sourceUrl": "https://latent.space/p/supabase/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-28T19:48:05.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:3b64f2126ca310fc",
+   "title": "观点：Mosseri 称围绕 AI 的负面情绪会更糟",
+   "summary": null,
+   "sourceName": "The Verge · AI",
+   "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-28T23:05:39.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:ef243006ac6a7e08",
+   "title": "报道：谷歌 AI 被问 2020 大选时含糊其辞",
+   "summary": null,
+   "sourceName": "Ars Technica",
+   "sourceUrl": "https://arstechnica.com/ai/2026/10/google-ai-gets-cagey-when-asked-who-won-the-2020-elections/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-28T20:10:16.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:683d8bc6ef106907",
+   "title": "腾讯网盘开启 AI 应用连接内测",
+   "summary": null,
+   "sourceName": "IT之家",
+   "sourceUrl": "https://www.ithome.com/1/019/283.htm",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-28T23:57:06.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:bfb31ceb6c55c182",
+   "title": "Willison 摘录：Ted Sanders 谈模型规模与能力排序",
+   "summary": null,
+   "sourceName": "Simon Willison",
+   "sourceUrl": "https://simonwillison.net/2026/Oct/28/ted-sanders/",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-28T23:23:21.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:17a75de37df03bf6",
+   "title": "Surge：Dayjob Tax 用 50 项税务任务评智能体",
+   "summary": null,
+   "sourceName": "Surge",
+   "sourceUrl": "https://surgehq.ai/blog/dayjob-tax",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-28T00:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:e97319d8730a2e80",
+   "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
+   "summary": "过夜精选未进本早 top5 位次；仍在窗内作 flash 旁观。",
+   "sourceName": "Google Research",
+   "sourceUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-27T17:35:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:a3a8ddf99df9b0da",
+   "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族",
+   "summary": "过夜精选未进本早 top5；旁观 flash。",
+   "sourceName": "LiquidAI / HF",
+   "sourceUrl": "https://www.liquid.ai/blog/lfm3",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-27T17:16:52.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:cf0b445a13fca74c",
+   "title": "报道：Akai 开源 MPC 固件拥抱 vibe-coded 改装",
+   "summary": null,
+   "sourceName": "The Verge",
+   "sourceUrl": "https://www.theverge.com/gadgets/1021405/akai-open-source-mpc-sample-key",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-28T21:34:04.000Z",
+   "available": true
+  }
+ ],
+ "cover": {
+  "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/STK255_Google_Gemini_A.jpg?quality=90&strip=all&crop=0,0,100,100",
+  "width": null,
+  "height": null,
+  "alt": "An image showing the Gemini logo on a dark blue background",
+  "caption": null
+ },
+ "metrics": {
+  "totalEvents": 12,
+  "sourcesCount": 11,
+  "firstPartyEvents": 9,
+  "modelsReleased": 3
+ },
+ "readingMinutes": 6,
+ "prev": "2026-10-28",
+ "next": null
+}

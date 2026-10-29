@@ -6,6 +6,29 @@
  },
  "cards": [
   {
+   "key": "sha256:1b5221fd798be326",
+   "anchorAt": "2026-10-23T00:00:00.000Z",
+   "item": {
+    "id": "sha256:1b5221fd798be326",
+    "title": "vLLM：DeepSeek-V4.1-Flash 在 GB300 NVL72 吞吐逼近 DeepInfer",
+    "summary": null,
+    "reason": "vLLM 在 NVL72 上服务 V4.1-Flash，逼近 DeepInfer",
+    "source": {
+     "name": "vLLM Blog"
+    },
+    "publishedAt": "2026-10-23T00:00:00.000Z",
+    "timelineAt": "2026-10-23T00:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-25-vllm-ds-v41-flash-scale",
+    "originalUrl": "https://vllm.ai/blog/2026-10-23-deepseek-v41-flash-pd-wide-ep"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:1a543055a02f9816",
    "anchorAt": "2026-10-23T00:00:00.000Z",
    "item": {
@@ -490,29 +513,6 @@
     "originalUrl": "https://openai.com/index/chatgpt-ads-expands-26-new-countries"
    },
    "group": null
-  },
-  {
-   "key": "sha256:5c32755a71da49ed",
-   "anchorAt": "2026-10-21T12:51:24.000Z",
-   "item": {
-    "id": "sha256:5c32755a71da49ed",
-    "title": "NVIDIA Kumo Forecast：预训练时序表征 + 历史模式检索",
-    "summary": null,
-    "reason": "NVIDIA Kumo Forecast：预训练时序+历史模式检索",
-    "source": {
-     "name": "Hugging Face Blog"
-    },
-    "publishedAt": "2026-10-21T12:51:24.000Z",
-    "timelineAt": "2026-10-21T12:51:24.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-21-nvidia-kumo-forecast",
-    "originalUrl": "https://huggingface.co/blog/nvidia/kumo-forecast"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-4.json",
@@ -520,5 +520,5 @@
  "dayCounts": {},
  "page": 3,
  "pageCount": 4,
- "total": 74
+ "total": 75
 }

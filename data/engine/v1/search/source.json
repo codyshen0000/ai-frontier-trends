@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-28T19:50:00.000Z",
+ "generatedAt": "2026-10-29T00:51:00.000Z",
  "docs": [
   {
    "id": "sha256:7722fb99a5f289b8",
@@ -82,6 +82,29 @@
     "Hugging Face Blog"
    ],
    "path": "/events/2026-10-28-nvidia-nemotron-35-transcribe/"
+  },
+  {
+   "id": "sha256:a395c7da350b5086",
+   "kind": "item",
+   "title": "OpenAI 与 ServiceNow 扩大企业工作流合作",
+   "summary": null,
+   "publishedAt": "2026-10-28T13:15:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "industry",
+   "selected": true,
+   "eventPublicId": "2026-10-28-openai-servicenow-partnership-expansion",
+   "originalUrl": "https://openai.com/index/openai-servicenow-partnership-expansion"
+  },
+  {
+   "id": "2026-10-28-openai-servicenow-partnership-expansion",
+   "kind": "event",
+   "title": "OpenAI 与 ServiceNow 扩大企业工作流合作",
+   "summary": null,
+   "publishedAt": "2026-10-28T13:15:00.000Z",
+   "sourceNames": [
+    "OpenAI News"
+   ],
+   "path": "/events/2026-10-28-openai-servicenow-partnership-expansion/"
   },
   {
    "id": "sha256:5b6b315fe4450662",

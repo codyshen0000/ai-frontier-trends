@@ -41,6 +41,17 @@
    "eventPublicId": "2026-10-28-nvidia-nemotron-35-transcribe"
   },
   {
+   "guid": "sha256:a395c7da350b5086",
+   "title": "OpenAI 与 ServiceNow 扩大企业工作流合作",
+   "summary": "",
+   "originalUrl": "https://openai.com/index/openai-servicenow-partnership-expansion",
+   "pubDate": "2026-10-28T13:15:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "industry",
+   "categoryLabel": "行业",
+   "eventPublicId": "2026-10-28-openai-servicenow-partnership-expansion"
+  },
+  {
    "guid": "sha256:5b6b315fe4450662",
    "title": "报道：Cathedral 用 AI 智能体打入 Anthropic 业务系统",
    "summary": "",
@@ -545,17 +556,6 @@
    "category": "tutorial",
    "categoryLabel": "教程",
    "eventPublicId": "2026-10-22-openai-fde-means"
-  },
-  {
-   "guid": "sha256:eda525050cea8fce",
-   "title": "Uber 全员上线 ChatGPT Work，覆盖约 3 万名员工",
-   "summary": "OpenAI：Uber 将 ChatGPT Work 扩至逾 3 万员工，接入常用办公工具。",
-   "originalUrl": "https://openai.com/index/uber-chatgpt-work-rollout",
-   "pubDate": "2026-10-22T00:00:00.000Z",
-   "sourceName": "OpenAI News",
-   "category": "product",
-   "categoryLabel": "产品",
-   "eventPublicId": "2026-10-23-uber-chatgpt-work-rollout"
   }
  ]
 }

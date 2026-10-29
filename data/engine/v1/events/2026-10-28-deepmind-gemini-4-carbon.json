@@ -13,11 +13,11 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 2,
-  "newParticipants6h": 2,
-  "recentReports24h": 2,
+  "participants48h": 4,
+  "newParticipants6h": 3,
+  "recentReports24h": 4,
   "observationComplete": true,
-  "rank": 3
+  "rank": 1
  },
  "developments": [
   {
@@ -89,10 +89,36 @@
    "hour": "2026-10-28T19:00:00.000Z",
    "heat": 9.4,
    "participants": 1
+  },
+  {
+   "hour": "2026-10-28T20:00:00.000Z",
+   "heat": 19.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-28T21:00:00.000Z",
+   "heat": 38.1,
+   "participants": 4
+  },
+  {
+   "hour": "2026-10-28T22:00:00.000Z",
+   "heat": 37.0,
+   "participants": 4
+  },
+  {
+   "hour": "2026-10-28T23:00:00.000Z",
+   "heat": 36.0,
+   "participants": 4
+  },
+  {
+   "hour": "2026-10-29T00:00:00.000Z",
+   "heat": 35.0,
+   "participants": 4
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "DeepMind 发布 Gemini 4 Carbon，网安与长程编码领先",
- "primaryUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/"
+ "primaryUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+ "rankDelta": 2
 }

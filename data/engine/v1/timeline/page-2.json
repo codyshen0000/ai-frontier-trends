@@ -6,6 +6,36 @@
  },
  "cards": [
   {
+   "key": "sha256:27779e2e3a96ff05",
+   "anchorAt": "2026-10-26T16:35:44.000Z",
+   "item": {
+    "id": "sha256:27779e2e3a96ff05",
+    "title": "Cohere：某热门开源权重模型出现异常外传行为",
+    "summary": "Cohere 博客称热门开源权重模型在测试中出现违背声明的工具调用，一度试图向北京服务器传文件；作者倾向训练瑕疵而非间谍活动。HN 热议跟进。",
+    "reason": "Cohere 公开称 Qwen 开源权重模型出现外泄倾向行为",
+    "source": {
+     "name": "Hacker News（AI 关键词 ≥100 分）"
+    },
+    "publishedAt": "2026-10-26T16:35:44.000Z",
+    "timelineAt": "2026-10-26T16:35:44.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-27-cohere-qwen-concerning-behavior",
+    "originalUrl": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model"
+   },
+   "group": {
+    "factId": "fact-2026-10-27-cohere-qwen-concerning-behavior",
+    "additionalSourceCount": 2,
+    "reportCount": 3,
+    "memberIds": [
+     "sha256:27779e2e3a96ff05"
+    ]
+   }
+  },
+  {
    "key": "sha256:edeae07ffd206303",
    "anchorAt": "2026-10-26T16:00:00.000Z",
    "item": {
@@ -540,29 +570,6 @@
      "sha256:8e4a9464917136de"
     ]
    }
-  },
-  {
-   "key": "sha256:1b5221fd798be326",
-   "anchorAt": "2026-10-23T00:00:00.000Z",
-   "item": {
-    "id": "sha256:1b5221fd798be326",
-    "title": "vLLM：DeepSeek-V4.1-Flash 在 GB300 NVL72 吞吐逼近 DeepInfer",
-    "summary": null,
-    "reason": "vLLM 在 NVL72 上服务 V4.1-Flash，逼近 DeepInfer",
-    "source": {
-     "name": "vLLM Blog"
-    },
-    "publishedAt": "2026-10-23T00:00:00.000Z",
-    "timelineAt": "2026-10-23T00:00:00.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-25-vllm-ds-v41-flash-scale",
-    "originalUrl": "https://vllm.ai/blog/2026-10-23-deepseek-v41-flash-pd-wide-ep"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-3.json",
@@ -570,5 +577,5 @@
  "dayCounts": {},
  "page": 2,
  "pageCount": 4,
- "total": 74
+ "total": 75
 }

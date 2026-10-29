@@ -1,0 +1,131 @@
+{
+ "publicId": "2026-10-28-openai-servicenow-partnership-expansion",
+ "title": "OpenAI 与 ServiceNow 扩大企业工作流合作",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-28T13:15:00.000Z",
+ "latestAt": "2026-10-28T13:15:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": null,
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-28-openai-servicenow-partnership-expansion",
+   "title": "OpenAI 与 ServiceNow 扩大企业工作流合作",
+   "firstReportAt": "2026-10-28T13:15:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:a395c7da350b5086",
+    "title": "OpenAI 与 ServiceNow 扩大企业工作流合作",
+    "summary": null,
+    "source": {
+     "name": "OpenAI News",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-28T13:15:00.000Z",
+    "selected": true,
+    "originalUrl": "https://openai.com/index/openai-servicenow-partnership-expansion"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:a395c7da350b5086",
+   "title": "OpenAI 与 ServiceNow 扩大企业工作流合作",
+   "summary": null,
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-28T13:15:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/openai-servicenow-partnership-expansion"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:a395c7da350b5086",
+   "title": "OpenAI 与 ServiceNow 扩大企业工作流合作",
+   "summary": null,
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-28T13:15:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/openai-servicenow-partnership-expansion"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-28T14:00:00.000Z",
+   "heat": 9.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-28T15:00:00.000Z",
+   "heat": 9.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-28T16:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-28T17:00:00.000Z",
+   "heat": 9.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-28T18:00:00.000Z",
+   "heat": 8.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-28T19:00:00.000Z",
+   "heat": 8.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-28T20:00:00.000Z",
+   "heat": 8.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-28T21:00:00.000Z",
+   "heat": 8.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-28T22:00:00.000Z",
+   "heat": 7.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-28T23:00:00.000Z",
+   "heat": 7.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-29T00:00:00.000Z",
+   "heat": 7.3,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "OpenAI 与 ServiceNow 把模型/智能体与企业工作流双向打通",
+ "primaryUrl": "https://openai.com/index/openai-servicenow-partnership-expansion"
+}

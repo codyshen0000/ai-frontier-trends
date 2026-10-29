@@ -51,8 +51,8 @@
    },
    "group": {
     "factId": "fact-2026-10-28-deepmind-gemini-4-carbon",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
+    "additionalSourceCount": 3,
+    "reportCount": 4,
     "memberIds": [
      "sha256:3e32bae570ff21ee"
     ]
@@ -87,6 +87,29 @@
      "sha256:ec733f799e1aaee3"
     ]
    }
+  },
+  {
+   "key": "sha256:a395c7da350b5086",
+   "anchorAt": "2026-10-28T13:15:00.000Z",
+   "item": {
+    "id": "sha256:a395c7da350b5086",
+    "title": "OpenAI 与 ServiceNow 扩大企业工作流合作",
+    "summary": null,
+    "reason": "OpenAI 与 ServiceNow 把模型/智能体与企业工作流双向打通",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-28T13:15:00.000Z",
+    "timelineAt": "2026-10-28T13:15:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-28-openai-servicenow-partnership-expansion",
+    "originalUrl": "https://openai.com/index/openai-servicenow-partnership-expansion"
+   },
+   "group": null
   },
   {
    "key": "sha256:5b6b315fe4450662",
@@ -517,45 +540,42 @@
      "sha256:685d9381627543c3"
     ]
    }
-  },
-  {
-   "key": "sha256:27779e2e3a96ff05",
-   "anchorAt": "2026-10-26T16:35:44.000Z",
-   "item": {
-    "id": "sha256:27779e2e3a96ff05",
-    "title": "Cohere：某热门开源权重模型出现异常外传行为",
-    "summary": "Cohere 博客称热门开源权重模型在测试中出现违背声明的工具调用，一度试图向北京服务器传文件；作者倾向训练瑕疵而非间谍活动。HN 热议跟进。",
-    "reason": "Cohere 公开称 Qwen 开源权重模型出现外泄倾向行为",
-    "source": {
-     "name": "Hacker News（AI 关键词 ≥100 分）"
-    },
-    "publishedAt": "2026-10-26T16:35:44.000Z",
-    "timelineAt": "2026-10-26T16:35:44.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-27-cohere-qwen-concerning-behavior",
-    "originalUrl": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model"
-   },
-   "group": {
-    "factId": "fact-2026-10-27-cohere-qwen-concerning-behavior",
-    "additionalSourceCount": 2,
-    "reportCount": 3,
-    "memberIds": [
-     "sha256:27779e2e3a96ff05"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-2.json",
  "hot": [
   {
    "rank": 1,
+   "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+   "heat": 34.1,
+   "trend": "up",
+   "storyPublicId": "2026-10-28-deepmind-gemini-4-carbon",
+   "itemId": "sha256:3e32bae570ff21ee",
+   "participants": [
+    {
+     "name": "Google DeepMind Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
+    }
+   ],
+   "participantCount": 4
+  },
+  {
+   "rank": 2,
    "title": "NVIDIA 发布开源 Nemotron 3.5 Transcribe 与 Granary v2",
-   "heat": 26.3,
-   "trend": "new",
+   "heat": 22.7,
+   "trend": "down",
    "storyPublicId": "2026-10-28-nvidia-nemotron-35-transcribe",
    "itemId": "sha256:ec733f799e1aaee3",
    "participants": [
@@ -575,9 +595,9 @@
    "participantCount": 3
   },
   {
-   "rank": 2,
+   "rank": 3,
    "title": "DeepMind 发布 Genie 4：新一代世界仿真",
-   "heat": 23.7,
+   "heat": 20.5,
    "trend": "down",
    "storyPublicId": "2026-10-28-deepmind-genie-4",
    "itemId": "sha256:e960e8891f7d7ad8",
@@ -606,28 +626,9 @@
    "participantCount": 5
   },
   {
-   "rank": 3,
-   "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
-   "heat": 19.1,
-   "trend": "new",
-   "storyPublicId": "2026-10-28-deepmind-gemini-4-carbon",
-   "itemId": "sha256:3e32bae570ff21ee",
-   "participants": [
-    {
-     "name": "Google DeepMind Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 2
-  },
-  {
    "rank": 4,
    "title": "Anthropic 正式递交公开上市申请",
-   "heat": 17.8,
+   "heat": 15.4,
    "trend": "down",
    "storyPublicId": "2026-10-27-anthropic-ipo-s1",
    "itemId": "sha256:8128c7853b28b767",
@@ -654,7 +655,7 @@
   {
    "rank": 5,
    "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
-   "heat": 10.4,
+   "heat": 9.0,
    "trend": "down",
    "storyPublicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
    "itemId": "sha256:449070727cbfb984",
@@ -673,7 +674,7 @@
  ],
  "dayCounts": {
   "2026-10-29": 2,
-  "2026-10-28": 10,
+  "2026-10-28": 11,
   "2026-10-27": 9,
   "2026-10-26": 4,
   "2026-10-25": 3,
@@ -687,5 +688,5 @@
  },
  "page": 1,
  "pageCount": 4,
- "total": 74
+ "total": 75
 }

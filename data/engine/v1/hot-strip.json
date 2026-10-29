@@ -1,9 +1,36 @@
 [
  {
   "rank": 1,
+  "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+  "heat": 34.1,
+  "trend": "up",
+  "storyPublicId": "2026-10-28-deepmind-gemini-4-carbon",
+  "itemId": "sha256:3e32bae570ff21ee",
+  "participants": [
+   {
+    "name": "Google DeepMind Blog",
+    "kind": "editorial"
+   },
+   {
+    "name": "The Verge · AI",
+    "kind": "editorial"
+   },
+   {
+    "name": "The Decoder",
+    "kind": "editorial"
+   },
+   {
+    "name": "IT之家（全站，需关键词过滤）",
+    "kind": "signal"
+   }
+  ],
+  "participantCount": 4
+ },
+ {
+  "rank": 2,
   "title": "NVIDIA 发布开源 Nemotron 3.5 Transcribe 与 Granary v2",
-  "heat": 26.3,
-  "trend": "new",
+  "heat": 22.7,
+  "trend": "down",
   "storyPublicId": "2026-10-28-nvidia-nemotron-35-transcribe",
   "itemId": "sha256:ec733f799e1aaee3",
   "participants": [
@@ -23,9 +50,9 @@
   "participantCount": 3
  },
  {
-  "rank": 2,
+  "rank": 3,
   "title": "DeepMind 发布 Genie 4：新一代世界仿真",
-  "heat": 23.7,
+  "heat": 20.5,
   "trend": "down",
   "storyPublicId": "2026-10-28-deepmind-genie-4",
   "itemId": "sha256:e960e8891f7d7ad8",
@@ -54,28 +81,9 @@
   "participantCount": 5
  },
  {
-  "rank": 3,
-  "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
-  "heat": 19.1,
-  "trend": "new",
-  "storyPublicId": "2026-10-28-deepmind-gemini-4-carbon",
-  "itemId": "sha256:3e32bae570ff21ee",
-  "participants": [
-   {
-    "name": "Google DeepMind Blog",
-    "kind": "editorial"
-   },
-   {
-    "name": "The Decoder",
-    "kind": "editorial"
-   }
-  ],
-  "participantCount": 2
- },
- {
   "rank": 4,
   "title": "Anthropic 正式递交公开上市申请",
-  "heat": 17.8,
+  "heat": 15.4,
   "trend": "down",
   "storyPublicId": "2026-10-27-anthropic-ipo-s1",
   "itemId": "sha256:8128c7853b28b767",
@@ -102,7 +110,7 @@
  {
   "rank": 5,
   "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
-  "heat": 10.4,
+  "heat": 9.0,
   "trend": "down",
   "storyPublicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
   "itemId": "sha256:449070727cbfb984",

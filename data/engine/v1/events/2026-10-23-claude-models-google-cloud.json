@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-23-claude-models-google-cloud",
  "title": "Claude：经 Google Cloud 项目可调用 Anthropic 托管的 Claude Models",
- "status": "watching",
+ "status": "settled",
  "reportCount": 1,
  "sourceCount": 1,
  "firstReportAt": "2026-10-22T00:00:00.000Z",
