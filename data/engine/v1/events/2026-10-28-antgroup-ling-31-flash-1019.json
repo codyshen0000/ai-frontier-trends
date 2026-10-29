@@ -15,7 +15,7 @@
  "whyHot": {
   "participants48h": 2,
   "newParticipants6h": 0,
-  "recentReports24h": 1,
+  "recentReports24h": 0,
   "observationComplete": true,
   "rank": 8
  },
@@ -287,6 +287,21 @@
    "hour": "2026-10-29T01:00:00.000Z",
    "heat": 8.3,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-29T02:00:00.000Z",
+   "heat": 8.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-29T03:00:00.000Z",
+   "heat": 7.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-29T04:00:00.000Z",
+   "heat": 7.6,
+   "participants": 2
   }
  ],
  "related": [],
@@ -300,5 +315,5 @@
   "valueClass": "official_diagram"
  },
  "primaryUrl": "https://huggingface.co/inclusionAI/Ling-3.1-flash-1019",
- "rankDelta": -1
+ "rankDelta": 0
 }
