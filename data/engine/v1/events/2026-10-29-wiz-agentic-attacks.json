@@ -1,0 +1,117 @@
+{
+ "publicId": "2026-10-29-wiz-agentic-attacks",
+ "title": "Wiz：智能体攻击兴起——形态、指纹与走向",
+ "status": "active",
+ "reportCount": 2,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-29T14:26:22.000Z",
+ "latestAt": "2026-10-29T14:36:22.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": null,
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 2,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-29-wiz-agentic-attacks",
+   "title": "Wiz：智能体攻击兴起——形态、指纹与走向",
+   "firstReportAt": "2026-10-29T14:26:22.000Z",
+   "reportCount": 2,
+   "representative": {
+    "id": "sha256:f7a1020f473102a5",
+    "title": "Wiz：智能体攻击兴起——形态、指纹与走向",
+    "summary": null,
+    "source": {
+     "name": "Wiz Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-29T14:36:22.000Z",
+    "selected": true,
+    "originalUrl": "https://www.wiz.io/blog/the-rise-of-agentic-attacks-what-they-look-like-and-where-theyre-headed"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:f7a1020f473102a5",
+   "title": "Wiz：智能体攻击兴起——形态、指纹与走向",
+   "summary": null,
+   "source": {
+    "name": "Wiz Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-29T14:36:22.000Z",
+   "selected": true,
+   "originalUrl": "https://www.wiz.io/blog/the-rise-of-agentic-attacks-what-they-look-like-and-where-theyre-headed"
+  },
+  {
+   "id": "sha256:1145d7a1def9eac0",
+   "title": "Wiz：智能体攻击兴起——形态、指纹与走向",
+   "summary": null,
+   "source": {
+    "name": "Wiz Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-29T14:26:22.000Z",
+   "selected": false,
+   "originalUrl": "https://www.wiz.io/blog/the-rise-of-agentic-attacks"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:f7a1020f473102a5",
+   "title": "Wiz：智能体攻击兴起——形态、指纹与走向",
+   "summary": null,
+   "source": {
+    "name": "Wiz Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-29T14:36:22.000Z",
+   "selected": true,
+   "originalUrl": "https://www.wiz.io/blog/the-rise-of-agentic-attacks-what-they-look-like-and-where-theyre-headed"
+  },
+  {
+   "id": "sha256:1145d7a1def9eac0",
+   "title": "Wiz：智能体攻击兴起——形态、指纹与走向",
+   "summary": null,
+   "source": {
+    "name": "Wiz Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-29T14:26:22.000Z",
+   "selected": false,
+   "originalUrl": "https://www.wiz.io/blog/the-rise-of-agentic-attacks"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-29T15:00:00.000Z",
+   "heat": 9.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-29T16:00:00.000Z",
+   "heat": 9.6,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "Wiz：梳理智能体攻击形态与识别指纹",
+ "cover": {
+  "url": "https://www.datocms-assets.com/75231/1793281484-the-rise-of-agentic-attacks2-2.png",
+  "width": null,
+  "height": null,
+  "alt": "Wiz 博客：智能体攻击形态示意图",
+  "valueClass": "official_diagram"
+ },
+ "primaryUrl": "https://www.wiz.io/blog/the-rise-of-agentic-attacks-what-they-look-like-and-where-theyre-headed"
+}

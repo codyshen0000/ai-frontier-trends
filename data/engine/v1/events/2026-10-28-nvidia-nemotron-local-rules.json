@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-28-nvidia-nemotron-local-rules",
  "title": "NVIDIA：微调 Nemotron 以掌握本地规则而非仅本地语言",
- "status": "active",
+ "status": "watching",
  "reportCount": 1,
  "sourceCount": 1,
  "firstReportAt": "2026-10-27T16:00:00.000Z",
@@ -13,10 +13,10 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 1,
+  "participants48h": 0,
   "newParticipants6h": 0,
   "recentReports24h": 0,
-  "observationComplete": true,
+  "observationComplete": false,
   "rank": null
  },
  "developments": [
@@ -67,228 +67,7 @@
    "originalUrl": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/"
   }
  ],
- "heat": [
-  {
-   "hour": "2026-10-27T16:00:00.000Z",
-   "heat": 10.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-27T17:00:00.000Z",
-   "heat": 9.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-27T18:00:00.000Z",
-   "heat": 9.4,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-27T19:00:00.000Z",
-   "heat": 9.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-27T20:00:00.000Z",
-   "heat": 8.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-27T21:00:00.000Z",
-   "heat": 8.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-27T22:00:00.000Z",
-   "heat": 8.4,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-27T23:00:00.000Z",
-   "heat": 8.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T00:00:00.000Z",
-   "heat": 7.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T01:00:00.000Z",
-   "heat": 7.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T02:00:00.000Z",
-   "heat": 7.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T03:00:00.000Z",
-   "heat": 7.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T04:00:00.000Z",
-   "heat": 7.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T05:00:00.000Z",
-   "heat": 6.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T06:00:00.000Z",
-   "heat": 6.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T07:00:00.000Z",
-   "heat": 6.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T08:00:00.000Z",
-   "heat": 6.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T09:00:00.000Z",
-   "heat": 6.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T10:00:00.000Z",
-   "heat": 5.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T11:00:00.000Z",
-   "heat": 5.8,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T12:00:00.000Z",
-   "heat": 5.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T13:00:00.000Z",
-   "heat": 5.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T14:00:00.000Z",
-   "heat": 5.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T15:00:00.000Z",
-   "heat": 5.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T16:00:00.000Z",
-   "heat": 5.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T17:00:00.000Z",
-   "heat": 4.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T18:00:00.000Z",
-   "heat": 4.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T19:00:00.000Z",
-   "heat": 4.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T20:00:00.000Z",
-   "heat": 4.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T21:00:00.000Z",
-   "heat": 4.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T22:00:00.000Z",
-   "heat": 4.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T23:00:00.000Z",
-   "heat": 4.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T00:00:00.000Z",
-   "heat": 4.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T01:00:00.000Z",
-   "heat": 3.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T02:00:00.000Z",
-   "heat": 3.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T03:00:00.000Z",
-   "heat": 3.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T04:00:00.000Z",
-   "heat": 3.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T05:00:00.000Z",
-   "heat": 3.4,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T06:00:00.000Z",
-   "heat": 3.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T07:00:00.000Z",
-   "heat": 3.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T08:00:00.000Z",
-   "heat": 3.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T09:00:00.000Z",
-   "heat": 3.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T10:00:00.000Z",
-   "heat": 3.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T11:00:00.000Z",
-   "heat": 2.9,
-   "participants": 1
-  }
- ],
+ "heat": [],
  "related": [],
  "topics": [],
  "recommendReason": "NVIDIA：用本地规则与人格数据微调 Nemotron",

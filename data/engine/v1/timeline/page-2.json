@@ -6,6 +6,69 @@
  },
  "cards": [
   {
+   "key": "sha256:f0e3f8456fcbc65d",
+   "anchorAt": "2026-10-27T00:00:00.000Z",
+   "item": {
+    "id": "sha256:f0e3f8456fcbc65d",
+    "title": "微软发布 MAI-Image-2.7：图像编辑预览登 Artificial Analysis 第二",
+    "summary": "微软 AI 官方宣布推出 MAI Image 2.7 图像编辑预览：主打场景重绘/打光、图内文字与符号修改、素材修复增强；称在 Artificial Analysis 图像编辑榜列第二、Arena Edit 第三，相对 2.6 在全部评测用例与编辑动作上提升，场景与风格项领先约 24 Elo。现阶段以已有图片+指令编辑为主，文生图尚未开放；官方未公布 2.7 API/定价。IT之家等跟进转述。",
+    "reason": "微软官方推出 MAI-Image-2.7 图像编辑预览并报榜单名次",
+    "source": {
+     "name": "Microsoft AI"
+    },
+    "publishedAt": "2026-10-27T00:00:00.000Z",
+    "timelineAt": "2026-10-27T00:00:00.000Z",
+    "category": "product",
+    "tags": [
+     "fp_hop_as_rep"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-28-microsoft-mai-image-27",
+    "originalUrl": "https://microsoft.ai/news/mai-image-2-7-debut/"
+   },
+   "group": {
+    "factId": "fact-2026-10-28-microsoft-mai-image-27",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:f0e3f8456fcbc65d"
+    ]
+   }
+  },
+  {
+   "key": "sha256:8d93b09012158ea0",
+   "anchorAt": "2026-10-26T22:41:48.000Z",
+   "item": {
+    "id": "sha256:8d93b09012158ea0",
+    "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
+    "summary": "Cloudflare 官方披露并修复 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题。属官方安全通告。",
+    "reason": "Cloudflare 修复 Workers AI KV 缓存跨请求暴露",
+    "source": {
+     "name": "Cloudflare Blog"
+    },
+    "publishedAt": "2026-10-26T22:41:48.000Z",
+    "timelineAt": "2026-10-26T22:41:48.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-27-cloudflare-glm53-kv-cache",
+    "originalUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/"
+   },
+   "group": {
+    "factId": "fact-2026-10-27-cloudflare-glm53-kv-cache",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:8d93b09012158ea0",
+     "sha256:89893d5f73c77515"
+    ]
+   }
+  },
+  {
    "key": "sha256:685d9381627543c3",
    "anchorAt": "2026-10-26T21:23:55.000Z",
    "item": {
@@ -122,36 +185,6 @@
     "reportCount": 2,
     "memberIds": [
      "sha256:c3d6fb64eb5418e8"
-    ]
-   }
-  },
-  {
-   "key": "sha256:fcee7fe2ae9bec9b",
-   "anchorAt": "2026-10-26T14:35:22.000Z",
-   "item": {
-    "id": "sha256:fcee7fe2ae9bec9b",
-    "title": "Anthropic 正式递交公开上市申请",
-    "summary": null,
-    "reason": "Anthropic 递交 S-1，披露收入与治理结构",
-    "source": {
-     "name": "TechCrunch · AI"
-    },
-    "publishedAt": "2026-10-26T14:35:22.000Z",
-    "timelineAt": "2026-10-26T14:35:22.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-27-anthropic-ipo-s1",
-    "originalUrl": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/"
-   },
-   "group": {
-    "factId": "fact-2026-10-27-anthropic-ipo-s1",
-    "additionalSourceCount": 4,
-    "reportCount": 12,
-    "memberIds": [
-     "sha256:fcee7fe2ae9bec9b"
     ]
    }
   },
@@ -546,29 +579,6 @@
      "sha256:f8c156dba7886826"
     ]
    }
-  },
-  {
-   "key": "sha256:5d20b75fc1534a89",
-   "anchorAt": "2026-10-23T00:00:00.000Z",
-   "item": {
-    "id": "sha256:5d20b75fc1534a89",
-    "title": "vLLM：GLM-5.3 在 16×H200 上用 PCP/DCP 与 Hybrid HiSparse",
-    "summary": "vLLM 官方 Part2：PCP/DCP 与 Hybrid HiSparse 服务百万上下文 GLM-5.3。",
-    "reason": "vLLM 在 16×H200 上用 PCP/DCP 服务 GLM-5.3 百万上",
-    "source": {
-     "name": "vLLM Blog"
-    },
-    "publishedAt": "2026-10-23T00:00:00.000Z",
-    "timelineAt": "2026-10-23T00:00:00.000Z",
-    "category": "tutorial",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-24-vllm-glm53-opt-part2",
-    "originalUrl": "https://vllm.ai/blog/2026-10-23-glm53-part2-pcp-dcp-hisparse"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-3.json",
@@ -576,5 +586,5 @@
  "dayCounts": {},
  "page": 2,
  "pageCount": 4,
- "total": 76
+ "total": 77
 }

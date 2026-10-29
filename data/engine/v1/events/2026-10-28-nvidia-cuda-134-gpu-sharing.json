@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 7
+  "rank": 5
  },
  "developments": [
   {
@@ -274,10 +274,35 @@
    "hour": "2026-10-29T11:00:00.000Z",
    "heat": 6.7,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-29T12:00:00.000Z",
+   "heat": 6.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-29T13:00:00.000Z",
+   "heat": 6.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-29T14:00:00.000Z",
+   "heat": 6.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-29T15:00:00.000Z",
+   "heat": 6.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-29T16:00:00.000Z",
+   "heat": 5.8,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "primaryUrl": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/",
- "rankDelta": 0
+ "rankDelta": 1
 }

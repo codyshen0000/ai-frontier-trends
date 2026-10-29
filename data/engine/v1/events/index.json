@@ -1,6 +1,20 @@
 {
  "events": [
   {
+   "publicId": "2026-10-29-mistral-large-4-lechonk",
+   "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
+   "latestAt": "2026-10-29T15:25:27.000Z",
+   "reportCount": 3,
+   "hotRank": 1
+  },
+  {
+   "publicId": "2026-10-29-wiz-agentic-attacks",
+   "title": "Wiz：智能体攻击兴起——形态、指纹与走向",
+   "latestAt": "2026-10-29T14:36:22.000Z",
+   "reportCount": 2,
+   "hotRank": null
+  },
+  {
    "publicId": "2026-10-28-microsoft-fy27-q1-earnings",
    "title": "微软首次披露 Azure 季度营收约 33.2 亿美元",
    "latestAt": "2026-10-28T21:58:32.000Z",
@@ -12,7 +26,7 @@
    "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
    "latestAt": "2026-10-28T19:17:58.000Z",
    "reportCount": 2,
-   "hotRank": 1
+   "hotRank": 2
   },
   {
    "publicId": "2026-10-28-baseten-qwen3-asr-batch",
@@ -26,7 +40,7 @@
    "title": "NVIDIA 发布开源 Nemotron 3.5 Transcribe 与 Granary v2",
    "latestAt": "2026-10-28T14:58:17.000Z",
    "reportCount": 1,
-   "hotRank": 2
+   "hotRank": 3
   },
   {
    "publicId": "2026-10-28-openai-servicenow-partnership-expansion",
@@ -50,13 +64,6 @@
    "hotRank": null
   },
   {
-   "publicId": "2026-10-27-anthropic-ipo-s1",
-   "title": "Anthropic 正式递交公开上市申请",
-   "latestAt": "2026-10-28T01:15:28.000Z",
-   "reportCount": 12,
-   "hotRank": 5
-  },
-  {
    "publicId": "2026-10-28-google-sleep-framework-continual",
    "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
    "latestAt": "2026-10-28T00:00:00.000Z",
@@ -68,14 +75,14 @@
    "title": "DeepMind 发布 Genie 4：新一代世界仿真",
    "latestAt": "2026-10-27T23:04:49.000Z",
    "reportCount": 5,
-   "hotRank": 3
+   "hotRank": 7
   },
   {
    "publicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
    "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
    "latestAt": "2026-10-27T21:26:00.000Z",
    "reportCount": 2,
-   "hotRank": 7
+   "hotRank": 5
   },
   {
    "publicId": "2026-10-27-cohere-qwen-concerning-behavior",

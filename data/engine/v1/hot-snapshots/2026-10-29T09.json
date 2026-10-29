@@ -27,36 +27,30 @@
   },
   {
    "rank": 5,
-   "publicId": "2026-10-27-anthropic-ipo-s1",
-   "heat": 15.3,
-   "participantCount": 4
-  },
-  {
-   "rank": 6,
    "publicId": "2026-10-28-google-sleep-framework-continual",
    "heat": 8.9,
    "participantCount": 2
   },
   {
-   "rank": 7,
+   "rank": 6,
    "publicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
    "heat": 8.9,
    "participantCount": 2
   },
   {
-   "rank": 8,
+   "rank": 7,
    "publicId": "2026-10-28-antgroup-ling-31-flash-1019",
    "heat": 8.3,
    "participantCount": 2
   },
   {
-   "rank": 9,
+   "rank": 8,
    "publicId": "2026-10-28-liquidai-lfm3",
    "heat": 8.0,
    "participantCount": 2
   },
   {
-   "rank": 10,
+   "rank": 9,
    "publicId": "2026-10-27-cohere-qwen-concerning-behavior",
    "heat": 6.8,
    "participantCount": 2

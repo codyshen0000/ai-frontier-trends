@@ -1,0 +1,53 @@
+{
+ "computedAt": "2026-10-29T16:52:00.000Z",
+ "entries": [
+  {
+   "rank": 1,
+   "publicId": "2026-10-29-mistral-large-4-lechonk",
+   "heat": 30.6,
+   "participantCount": 4
+  },
+  {
+   "rank": 2,
+   "publicId": "2026-10-28-deepmind-gemini-4-carbon",
+   "heat": 27.6,
+   "participantCount": 5
+  },
+  {
+   "rank": 3,
+   "publicId": "2026-10-28-nvidia-nemotron-35-transcribe",
+   "heat": 14.3,
+   "participantCount": 3
+  },
+  {
+   "rank": 4,
+   "publicId": "2026-10-28-microsoft-fy27-q1-earnings",
+   "heat": 11.3,
+   "participantCount": 2
+  },
+  {
+   "rank": 5,
+   "publicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
+   "heat": 5.7,
+   "participantCount": 2
+  },
+  {
+   "rank": 6,
+   "publicId": "2026-10-28-google-sleep-framework-continual",
+   "heat": 5.6,
+   "participantCount": 2
+  },
+  {
+   "rank": 7,
+   "publicId": "2026-10-28-deepmind-genie-4",
+   "heat": 5.5,
+   "participantCount": 2
+  },
+  {
+   "rank": 8,
+   "publicId": "2026-10-28-liquidai-lfm3",
+   "heat": 5.1,
+   "participantCount": 2
+  }
+ ]
+}

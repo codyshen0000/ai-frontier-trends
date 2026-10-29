@@ -1,6 +1,90 @@
 {
- "generatedAt": "2026-10-29T11:48:00.000Z",
+ "generatedAt": "2026-10-29T16:52:00.000Z",
  "docs": [
+  {
+   "id": "sha256:93ab7d0d8252cfce",
+   "kind": "item",
+   "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
+   "summary": "The Decoder 二手报道 Mistral Large 4 / Le Chonk 开源；代表稿仍为官方 mistral.ai。",
+   "publishedAt": "2026-10-29T15:25:27.000Z",
+   "sourceName": "The Decoder",
+   "category": "model",
+   "selected": false,
+   "eventPublicId": "2026-10-29-mistral-large-4-lechonk",
+   "originalUrl": "https://the-decoder.com/paris-based-mistral-releases-le-chonk-a-strong-coding-model-that-still-trails-china-overall/"
+  },
+  {
+   "id": "2026-10-29-mistral-large-4-lechonk",
+   "kind": "event",
+   "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
+   "summary": "Mistral 发布并开源 Mistral Large 4（代号 Le Chonk）权重：约 1 万亿参数、原生多模态，称在开源权重编码评测领先并强化防御性网络安全；提供多种推理模式以平衡成本与性能，在欧洲基础设施训练。同日 vLLM 宣布 Day-0 支持（稀疏 MLA、跨层 KV 共享等），Hugging Face 发文欢迎上架。",
+   "publishedAt": "2026-10-29T15:25:27.000Z",
+   "sourceNames": [
+    "Hugging Face Blog",
+    "Mistral AI News",
+    "The Decoder"
+   ],
+   "path": "/events/2026-10-29-mistral-large-4-lechonk/"
+  },
+  {
+   "id": "sha256:f7a1020f473102a5",
+   "kind": "item",
+   "title": "Wiz：智能体攻击兴起——形态、指纹与走向",
+   "summary": null,
+   "publishedAt": "2026-10-29T14:36:22.000Z",
+   "sourceName": "Wiz Blog",
+   "category": "industry",
+   "selected": true,
+   "eventPublicId": "2026-10-29-wiz-agentic-attacks",
+   "originalUrl": "https://www.wiz.io/blog/the-rise-of-agentic-attacks-what-they-look-like-and-where-theyre-headed"
+  },
+  {
+   "id": "2026-10-29-wiz-agentic-attacks",
+   "kind": "event",
+   "title": "Wiz：智能体攻击兴起——形态、指纹与走向",
+   "summary": null,
+   "publishedAt": "2026-10-29T14:36:22.000Z",
+   "sourceNames": [
+    "Wiz Blog"
+   ],
+   "path": "/events/2026-10-29-wiz-agentic-attacks/"
+  },
+  {
+   "id": "sha256:1145d7a1def9eac0",
+   "kind": "item",
+   "title": "Wiz：智能体攻击兴起——形态、指纹与走向",
+   "summary": null,
+   "publishedAt": "2026-10-29T14:26:22.000Z",
+   "sourceName": "Wiz Blog",
+   "category": "industry",
+   "selected": false,
+   "eventPublicId": "2026-10-29-wiz-agentic-attacks",
+   "originalUrl": "https://www.wiz.io/blog/the-rise-of-agentic-attacks"
+  },
+  {
+   "id": "sha256:5a25565ab71a8d06",
+   "kind": "item",
+   "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
+   "summary": "Mistral 发布并开源 Mistral Large 4（代号 Le Chonk）权重：约 1 万亿参数、原生多模态，称在开源权重编码评测领先并强化防御性网络安全；提供多种推理模式以平衡成本与性能，在欧洲基础设施训练。",
+   "publishedAt": "2026-10-29T12:00:07.000Z",
+   "sourceName": "Mistral AI News",
+   "category": "model",
+   "selected": true,
+   "eventPublicId": "2026-10-29-mistral-large-4-lechonk",
+   "originalUrl": "https://mistral.ai/news/mistral-large-4-oss/"
+  },
+  {
+   "id": "sha256:b6b30743068c2627",
+   "kind": "item",
+   "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
+   "summary": "Hugging Face 发文欢迎 Mistral Large 4（Le Chonk）上架，属同次开源分发渠道。",
+   "publishedAt": "2026-10-29T00:00:00.000Z",
+   "sourceName": "Hugging Face Blog",
+   "category": "model",
+   "selected": false,
+   "eventPublicId": "2026-10-29-mistral-large-4-lechonk",
+   "originalUrl": "https://huggingface.co/blog/mistral-large4"
+  },
   {
    "id": "sha256:3801bfeec8403796",
    "kind": "item",
@@ -214,33 +298,6 @@
    "path": "/events/2026-10-28-microsoft-mai-image-27/"
   },
   {
-   "id": "sha256:8128c7853b28b767",
-   "kind": "item",
-   "title": "跟进：TechCrunch 称亚马逊经票据转换在 Anthropic IPO 中持股更深",
-   "summary": "TechCrunch 称大量票据转换显示亚马逊在 Anthropic 持股规模远超多数 VC，IPO 后受益可能更大。属二手解读，股权结构以招股书为准。",
-   "publishedAt": "2026-10-28T01:15:28.000Z",
-   "sourceName": "TechCrunch · AI",
-   "category": "industry",
-   "selected": false,
-   "eventPublicId": "2026-10-27-anthropic-ipo-s1",
-   "originalUrl": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/"
-  },
-  {
-   "id": "2026-10-27-anthropic-ipo-s1",
-   "kind": "event",
-   "title": "Anthropic 正式递交公开上市申请",
-   "summary": "Anthropic 向 SEC 递交 S-1，披露收入增长、客户结构、长期算力义务与特殊治理安排，并在附信中重申 Claude 不投放广告。一手文件见 SEC EDGAR；媒体数字转述以招股书为准。",
-   "publishedAt": "2026-10-28T01:15:28.000Z",
-   "sourceNames": [
-    "Latent Space",
-    "TechCrunch · AI",
-    "The Decoder",
-    "The Verge · AI",
-    "量子位"
-   ],
-   "path": "/events/2026-10-27-anthropic-ipo-s1/"
-  },
-  {
    "id": "sha256:6f3ed201faa4cfe7",
    "kind": "item",
    "title": "CTOL：Sleep 框架里「做梦」贡献大部分事实学习增益",
@@ -290,18 +347,6 @@
     "The Verge · AI"
    ],
    "path": "/events/2026-10-28-deepmind-genie-4/"
-  },
-  {
-   "id": "sha256:f74f3a0c358e9a1d",
-   "kind": "item",
-   "title": "跟进：谁在 Anthropic IPO 后真正掌权",
-   "summary": null,
-   "publishedAt": "2026-10-27T21:38:28.000Z",
-   "sourceName": "TechCrunch · AI",
-   "category": "opinion",
-   "selected": false,
-   "eventPublicId": "2026-10-27-anthropic-ipo-s1",
-   "originalUrl": "https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo/"
   },
   {
    "id": "sha256:d60cfafd7bf641e7",
@@ -458,18 +503,6 @@
    "path": "/events/2026-10-28-nvidia-rtx-spark-games/"
   },
   {
-   "id": "sha256:bb9f02a56d8cd14e",
-   "kind": "item",
-   "title": "报道：Anthropic 试图在 IPO 与安全使命间两全",
-   "summary": "The Verge 分析 Anthropic IPO 融资与安全叙事张力。",
-   "publishedAt": "2026-10-27T16:51:22.000Z",
-   "sourceName": "The Verge · AI",
-   "category": "industry",
-   "selected": false,
-   "eventPublicId": "2026-10-27-anthropic-ipo-s1",
-   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety"
-  },
-  {
    "id": "sha256:133651b428e97fda",
    "kind": "item",
    "title": "报道：Google Genie 4 增加音频与实时操控",
@@ -611,18 +644,6 @@
    "path": "/events/2026-10-27-openai-academic-science-collab/"
   },
   {
-   "id": "sha256:d5b884dec7da003b",
-   "kind": "item",
-   "title": "报道：Anthropic 用 IPO 信重申 Claude 永不展示广告",
-   "summary": "The Decoder 称 Anthropic 在 IPO 附信中重申 Claude 不投放广告。",
-   "publishedAt": "2026-10-27T11:20:51.000Z",
-   "sourceName": "The Decoder",
-   "category": "industry",
-   "selected": false,
-   "eventPublicId": "2026-10-27-anthropic-ipo-s1",
-   "originalUrl": "https://the-decoder.com/anthropic-uses-its-ipo-letter-to-renew-its-pledge-that-claude-will-never-show-ads/"
-  },
-  {
    "id": "sha256:55eebcae912c07d4",
    "kind": "item",
    "title": "报道：GPT-6.1 Terra 首批网友实测",
@@ -647,18 +668,6 @@
     "量子位"
    ],
    "path": "/events/2026-10-27-openai-gpt61-terra/"
-  },
-  {
-   "id": "sha256:ca85c0384dbbb0fd",
-   "kind": "item",
-   "title": "Latent Space：Anthropic 拟冲刺约 2T 估值 IPO",
-   "summary": null,
-   "publishedAt": "2026-10-27T07:24:59.000Z",
-   "sourceName": "Latent Space",
-   "category": "industry",
-   "selected": false,
-   "eventPublicId": "2026-10-27-anthropic-ipo-s1",
-   "originalUrl": "https://latent.space/p/ainews-anthropic-s1/"
   },
   {
    "id": "sha256:c417f8e3d39d0b89",
@@ -815,18 +824,6 @@
    "path": "/events/2026-10-27-cloudflare-glm53-kv-cache/"
   },
   {
-   "id": "sha256:092e8ceea2bd79fc",
-   "kind": "item",
-   "title": "报道：Anthropic IPO 背景下的数据中心与燃气争议",
-   "summary": "The Verge 讨论 Anthropic 扩张与能源/气候风险。",
-   "publishedAt": "2026-10-26T21:45:31.000Z",
-   "sourceName": "The Verge · AI",
-   "category": "industry",
-   "selected": false,
-   "eventPublicId": "2026-10-27-anthropic-ipo-s1",
-   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk"
-  },
-  {
    "id": "sha256:685d9381627543c3",
    "kind": "item",
    "title": "Baseten：BDN Sealed Volumes 一次发布处处挂载",
@@ -851,42 +848,6 @@
    "originalUrl": "https://the-decoder.com/gpt-6-1-terra-halves-openais-api%2Dprices-and-still-gains-ground-on-its-larger-models/"
   },
   {
-   "id": "sha256:3d144f3f7ebe5a85",
-   "kind": "item",
-   "title": "报道：Anthropic 公开账本，收入创新高且义务沉重",
-   "summary": "The Decoder 梳理 S-1 财务：季度收入、首次营业利润与长期算力义务等。",
-   "publishedAt": "2026-10-26T19:14:45.000Z",
-   "sourceName": "The Decoder",
-   "category": "industry",
-   "selected": false,
-   "eventPublicId": "2026-10-27-anthropic-ipo-s1",
-   "originalUrl": "https://the-decoder.com/anthropic-opens-its-books-for-wall-street-showing-record-revenue-and-mounting-obligations/"
-  },
-  {
-   "id": "sha256:fe6583a778a0b30b",
-   "kind": "item",
-   "title": "报道：Anthropic IPO 文件中的五个怪细节",
-   "summary": "The Verge 盘点 S-1 中的非常规细节。",
-   "publishedAt": "2026-10-26T17:10:23.000Z",
-   "sourceName": "The Verge · AI",
-   "category": "industry",
-   "selected": false,
-   "eventPublicId": "2026-10-27-anthropic-ipo-s1",
-   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1018738/anthropic-ipo-s1-filing-weird-details"
-  },
-  {
-   "id": "sha256:68dfb7cd14f88c58",
-   "kind": "item",
-   "title": "报道：Anthropic IPO 文件透露留住企业客户的策略",
-   "summary": "TechCrunch 称 S-1 显示高价值客户中过半同时使用 Claude Platform 与自有应用。",
-   "publishedAt": "2026-10-26T16:49:42.000Z",
-   "sourceName": "TechCrunch · AI",
-   "category": "industry",
-   "selected": false,
-   "eventPublicId": "2026-10-27-anthropic-ipo-s1",
-   "originalUrl": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/"
-  },
-  {
    "id": "sha256:27779e2e3a96ff05",
    "kind": "item",
    "title": "Cohere：热门开源权重模型出现异常外传行为",
@@ -897,18 +858,6 @@
    "selected": true,
    "eventPublicId": "2026-10-27-cohere-qwen-concerning-behavior",
    "originalUrl": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model"
-  },
-  {
-   "id": "sha256:e4e1138add83b456",
-   "kind": "item",
-   "title": "量子位：Anthropic 公开 335 页招股书",
-   "summary": null,
-   "publishedAt": "2026-10-26T16:06:31.000Z",
-   "sourceName": "量子位",
-   "category": "industry",
-   "selected": false,
-   "eventPublicId": "2026-10-27-anthropic-ipo-s1",
-   "originalUrl": "https://www.qbitai.com/2026/10/505551.html"
   },
   {
    "id": "sha256:edeae07ffd206303",
@@ -983,18 +932,6 @@
    "originalUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/"
   },
   {
-   "id": "sha256:fcee7fe2ae9bec9b",
-   "kind": "item",
-   "title": "Anthropic 正式递交公开上市申请",
-   "summary": null,
-   "publishedAt": "2026-10-26T14:35:22.000Z",
-   "sourceName": "TechCrunch · AI",
-   "category": "industry",
-   "selected": true,
-   "eventPublicId": "2026-10-27-anthropic-ipo-s1",
-   "originalUrl": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/"
-  },
-  {
    "id": "sha256:8eb6001a836a6e50",
    "kind": "item",
    "title": "OpenAI：与学界共建科学理解",
@@ -1005,18 +942,6 @@
    "selected": true,
    "eventPublicId": "2026-10-27-openai-academic-science-collab",
    "originalUrl": "https://openai.com/index/building-scientific-understanding-with-academic-communities"
-  },
-  {
-   "id": "sha256:8730dc35da783e3d",
-   "kind": "item",
-   "title": "报道：Anthropic IPO 文件勾勒「变革人类事业」计划",
-   "summary": "The Verge 跟进 Anthropic S-1 愿景与业务叙述。",
-   "publishedAt": "2026-10-26T13:32:49.000Z",
-   "sourceName": "The Verge · AI",
-   "category": "industry",
-   "selected": false,
-   "eventPublicId": "2026-10-27-anthropic-ipo-s1",
-   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec"
   },
   {
    "id": "sha256:35e334c198740f74",

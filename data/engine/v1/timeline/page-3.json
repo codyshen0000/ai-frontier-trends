@@ -6,6 +6,29 @@
  },
  "cards": [
   {
+   "key": "sha256:5d20b75fc1534a89",
+   "anchorAt": "2026-10-23T00:00:00.000Z",
+   "item": {
+    "id": "sha256:5d20b75fc1534a89",
+    "title": "vLLM：GLM-5.3 在 16×H200 上用 PCP/DCP 与 Hybrid HiSparse",
+    "summary": "vLLM 官方 Part2：PCP/DCP 与 Hybrid HiSparse 服务百万上下文 GLM-5.3。",
+    "reason": "vLLM 在 16×H200 上用 PCP/DCP 服务 GLM-5.3 百万上",
+    "source": {
+     "name": "vLLM Blog"
+    },
+    "publishedAt": "2026-10-23T00:00:00.000Z",
+    "timelineAt": "2026-10-23T00:00:00.000Z",
+    "category": "tutorial",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-24-vllm-glm53-opt-part2",
+    "originalUrl": "https://vllm.ai/blog/2026-10-23-glm53-part2-pcp-dcp-hisparse"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:50cb4eba8a3e4759",
    "anchorAt": "2026-10-23T00:00:00.000Z",
    "item": {
@@ -498,29 +521,6 @@
     "originalUrl": "https://huggingface.co/blog/ibm-granite/granite-speech-5"
    },
    "group": null
-  },
-  {
-   "key": "sha256:859a2ca12c0c52e9",
-   "anchorAt": "2026-10-21T13:44:12.000Z",
-   "item": {
-    "id": "sha256:859a2ca12c0c52e9",
-    "title": "Wiz：LiteLLM 1.107.0 被投毒，窃取云与 AI 凭证",
-    "summary": "恶意 LiteLLM 1.107.0 上架 PyPI/Docker，窃取浏览器云与 AI 密钥并含休眠 C2。",
-    "reason": "LiteLLM 恶意包上架 PyPI，窃取云与 AI 凭证",
-    "source": {
-     "name": "Wiz Blog"
-    },
-    "publishedAt": "2026-10-21T13:44:12.000Z",
-    "timelineAt": "2026-10-21T13:44:12.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-22-litellm-pypi-compromise",
-    "originalUrl": "https://www.wiz.io/blog/litellm-compromised-steals-credentials"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-4.json",
@@ -528,5 +528,5 @@
  "dayCounts": {},
  "page": 3,
  "pageCount": 4,
- "total": 76
+ "total": 77
 }
