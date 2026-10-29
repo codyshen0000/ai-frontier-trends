@@ -13,7 +13,7 @@
  "latest": "TechCrunch 跟进称亚马逊经票据转换持股更深，IPO 受益或大于多数 VC。",
  "latestReport": null,
  "whyHot": {
-  "participants48h": 3,
+  "participants48h": 2,
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
@@ -187,26 +187,6 @@
   }
  ],
  "heat": [
-  {
-   "hour": "2026-10-27T07:00:00.000Z",
-   "heat": 27.9,
-   "participants": 4
-  },
-  {
-   "hour": "2026-10-27T08:00:00.000Z",
-   "heat": 37.0,
-   "participants": 5
-  },
-  {
-   "hour": "2026-10-27T09:00:00.000Z",
-   "heat": 35.9,
-   "participants": 5
-  },
-  {
-   "hour": "2026-10-27T10:00:00.000Z",
-   "heat": 34.9,
-   "participants": 5
-  },
   {
    "hour": "2026-10-27T11:00:00.000Z",
    "heat": 33.9,
@@ -431,6 +411,26 @@
    "hour": "2026-10-29T07:00:00.000Z",
    "heat": 12.9,
    "participants": 4
+  },
+  {
+   "hour": "2026-10-29T08:00:00.000Z",
+   "heat": 10.1,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-29T09:00:00.000Z",
+   "heat": 9.8,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-29T10:00:00.000Z",
+   "heat": 9.5,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-29T11:00:00.000Z",
+   "heat": 9.3,
+   "participants": 3
   }
  ],
  "related": [],

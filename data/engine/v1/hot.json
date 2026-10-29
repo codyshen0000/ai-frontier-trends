@@ -1,515 +1,510 @@
 {
-  "computedAt": "2026-10-29T07:51:00.000Z",
-  "windowHours": 48,
-  "entries": [
+ "computedAt": "2026-10-29T11:48:00.000Z",
+ "windowHours": 48,
+ "entries": [
+  {
+   "rank": 1,
+   "story": {
+    "publicId": "2026-10-28-deepmind-gemini-4-carbon",
+    "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升"
+   },
+   "heat": 32.0,
+   "trend": "down",
+   "trendPct": -15.8,
+   "badges": [],
+   "participantCount": 5,
+   "sourceCount": 4,
+   "sourceNames": [
+    "量子位",
+    "The Verge · AI",
+    "The Decoder",
+    "Google DeepMind Blog"
+   ],
+   "participants": [
     {
-      "rank": 1,
-      "story": {
-        "publicId": "2026-10-28-deepmind-gemini-4-carbon",
-        "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升"
-      },
-      "heat": 35.9,
-      "trend": "down",
-      "trendPct": -15.7,
-      "badges": [],
-      "participantCount": 5,
-      "sourceCount": 4,
-      "sourceNames": [
-        "量子位",
-        "The Verge · AI",
-        "The Decoder",
-        "Google DeepMind Blog"
-      ],
-      "participants": [
-        {
-          "name": "Google DeepMind Blog",
-          "kind": "editorial"
-        },
-        {
-          "name": "量子位",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Verge · AI",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Decoder",
-          "kind": "editorial"
-        },
-        {
-          "name": "IT之家（全站，需关键词过滤）",
-          "kind": "signal"
-        }
-      ],
-      "spark": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        9.7,
-        9.4,
-        19,
-        38.1,
-        37,
-        36,
-        35,
-        43.7,
-        42.5,
-        41.2,
-        40.1,
-        38.9,
-        37.8,
-        36.7
-      ],
-      "summary": null,
-      "latest": null,
-      "cover": null,
-      "rankDelta": 0,
-      "heatDeltaPct": 18.1
+     "name": "Google DeepMind Blog",
+     "kind": "editorial"
     },
     {
-      "rank": 2,
-      "story": {
-        "publicId": "2026-10-28-nvidia-nemotron-35-transcribe",
-        "title": "NVIDIA 发布开源 Nemotron 3.5 Transcribe 与 Granary v2"
-      },
-      "heat": 18.6,
-      "trend": "down",
-      "trendPct": -15.8,
-      "badges": [],
-      "participantCount": 3,
-      "sourceCount": 3,
-      "sourceNames": [
-        "The Decoder",
-        "TechCrunch · AI",
-        "Hugging Face Blog"
-      ],
-      "participants": [
-        {
-          "name": "Hugging Face Blog",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Decoder",
-          "kind": "editorial"
-        },
-        {
-          "name": "TechCrunch · AI",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        20,
-        29.4,
-        28.5,
-        27.7,
-        26.9,
-        26.2,
-        25.4,
-        24.7,
-        24,
-        23.3,
-        22.6,
-        22,
-        21.4,
-        20.8,
-        20.2,
-        19.6,
-        19
-      ],
-      "summary": "NVIDIA 在 Hugging Face 发布开源权重 Nemotron 3.5 Transcribe：单检查点可做多语转写（约 40 语）、说话人归属、翻译与音频问答，并可用自然语言提示；同日给出 Granary v2 多语语音数据与微调工具。属官方模型/数据发布。",
-      "latest": null,
-      "cover": null,
-      "rankDelta": 0,
-      "heatDeltaPct": -8.4
+     "name": "量子位",
+     "kind": "editorial"
     },
     {
-      "rank": 3,
-      "story": {
-        "publicId": "2026-10-28-deepmind-genie-4",
-        "title": "DeepMind 发布 Genie 4：新一代世界仿真"
-      },
-      "heat": 17.1,
-      "trend": "down",
-      "trendPct": -14.1,
-      "badges": [],
-      "participantCount": 5,
-      "sourceCount": 4,
-      "sourceNames": [
-        "The Decoder",
-        "TechCrunch · AI",
-        "Google DeepMind Blog",
-        "The Verge · AI"
-      ],
-      "participants": [
-        {
-          "name": "Google DeepMind Blog",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Decoder",
-          "kind": "editorial"
-        },
-        {
-          "name": "TechCrunch · AI",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Verge · AI",
-          "kind": "editorial"
-        },
-        {
-          "name": "IT之家（全站，需关键词过滤）",
-          "kind": "signal"
-        }
-      ],
-      "spark": [
-        34.3,
-        33.3,
-        32.3,
-        31.4,
-        30.5,
-        29.7,
-        28.8,
-        28,
-        27.2,
-        26.4,
-        25.7,
-        24.9,
-        24.2,
-        23.5,
-        22.9,
-        22.2,
-        21.6,
-        21,
-        20.4,
-        19.8,
-        19.2,
-        18.7,
-        18.2,
-        17.6,
-        17.1
-      ],
-      "summary": null,
-      "latest": null,
-      "cover": null,
-      "rankDelta": 0,
-      "heatDeltaPct": 2.4
+     "name": "The Verge · AI",
+     "kind": "editorial"
     },
     {
-      "rank": 4,
-      "story": {
-        "publicId": "2026-10-28-microsoft-fy27-q1-earnings",
-        "title": "微软首次披露 Azure 季度营收约 33.2 亿美元"
-      },
-      "heat": 15,
-      "trend": "down",
-      "trendPct": -13.8,
-      "badges": [],
-      "participantCount": 2,
-      "sourceCount": 1,
-      "sourceNames": [
-        "TechCrunch · AI"
-      ],
-      "participants": [
-        {
-          "name": "TechCrunch · AI",
-          "kind": "editorial"
-        },
-        {
-          "name": "IT之家（全站，需关键词过滤）",
-          "kind": "signal"
-        }
-      ],
-      "spark": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        9.8,
-        19.5,
-        18.9,
-        18.4,
-        17.9,
-        17.3,
-        16.9,
-        16.4,
-        15.9,
-        15.5,
-        15
-      ],
-      "summary": "TechCrunch 称微软首次以美元披露 Azure 季度营收约 33.2 亿美元；同季总营收约 922.79 亿美元（同比 +19%），并披露来自 OpenAI 安排收入约 10 亿美元。属财报解读二手，关键数字来自业绩披露。",
-      "latest": "同季披露来自 OpenAI 安排收入约 10 亿美元",
-      "cover": null,
-      "rankDelta": 0,
-      "heatDeltaPct": 2
+     "name": "The Decoder",
+     "kind": "editorial"
     },
     {
-      "rank": 5,
-      "story": {
-        "publicId": "2026-10-27-anthropic-ipo-s1",
-        "title": "Anthropic 正式递交公开上市申请"
-      },
-      "heat": 12.9,
-      "trend": "down",
-      "trendPct": -14,
-      "badges": [],
-      "participantCount": 3,
-      "sourceCount": 3,
-      "sourceNames": [
-        "TechCrunch · AI",
-        "The Verge · AI",
-        "The Decoder"
-      ],
-      "participants": [
-        {
-          "name": "TechCrunch · AI",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Verge · AI",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Decoder",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        29.1,
-        28.3,
-        27.5,
-        26.7,
-        25.9,
-        25.2,
-        24.5,
-        23.8,
-        23.1,
-        22.4,
-        19.4,
-        18.8,
-        18.3,
-        17.8,
-        17.3,
-        16.8,
-        16.3,
-        15.8,
-        15.4,
-        14.9,
-        14.5,
-        14.1,
-        13.7,
-        13.3,
-        12.9
-      ],
-      "summary": "Anthropic 向 SEC 递交 S-1，披露收入增长、客户结构、长期算力义务与特殊治理安排，并在附信中重申 Claude 不投放广告。一手文件见 SEC EDGAR；媒体数字转述以招股书为准。",
-      "latest": "TechCrunch 跟进称亚马逊经票据转换持股更深，IPO 受益或大于多数 VC。",
-      "cover": null,
-      "rankDelta": 0,
-      "heatDeltaPct": 27.7
-    },
-    {
-      "rank": 6,
-      "story": {
-        "publicId": "2026-10-28-google-sleep-framework-continual",
-        "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘"
-      },
-      "heat": 7.5,
-      "trend": "down",
-      "trendPct": -13.8,
-      "badges": [],
-      "participantCount": 2,
-      "sourceCount": 2,
-      "sourceNames": [
-        "CTOL Digital Solutions",
-        "Google Research Blog"
-      ],
-      "participants": [
-        {
-          "name": "Google Research Blog",
-          "kind": "editorial"
-        },
-        {
-          "name": "CTOL Digital Solutions",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        15,
-        14.5,
-        14.1,
-        13.7,
-        13.3,
-        12.9,
-        12.6,
-        12.2,
-        11.9,
-        11.5,
-        11.2,
-        10.9,
-        10.6,
-        10.3,
-        10,
-        9.7,
-        9.4,
-        9.2,
-        8.9,
-        8.6,
-        8.4,
-        8.2,
-        7.9,
-        7.7,
-        7.5
-      ],
-      "summary": null,
-      "latest": "CTOL 跟进：做梦 vs 巩固消融解读（hot_floor 第二源）。",
-      "cover": null,
-      "rankDelta": 0,
-      "heatDeltaPct": 2.7
-    },
-    {
-      "rank": 7,
-      "story": {
-        "publicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
-        "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享"
-      },
-      "heat": 7.5,
-      "trend": "down",
-      "trendPct": -13.8,
-      "badges": [],
-      "participantCount": 2,
-      "sourceCount": 2,
-      "sourceNames": [
-        "DevOTD",
-        "NVIDIA Technical Blog"
-      ],
-      "participants": [
-        {
-          "name": "NVIDIA Technical Blog",
-          "kind": "editorial"
-        },
-        {
-          "name": "DevOTD",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        15,
-        14.6,
-        14.2,
-        13.8,
-        13.4,
-        13,
-        12.7,
-        12.3,
-        11.9,
-        11.6,
-        11.3,
-        10.9,
-        10.6,
-        10.3,
-        10,
-        9.8,
-        9.5,
-        9.2,
-        8.9,
-        8.7,
-        8.4,
-        8.2,
-        8,
-        7.7,
-        7.5
-      ],
-      "summary": "NVIDIA 技术博客介绍 CUDA 13.4 在 Kubernetes 中的内存强制 GPU 共享：按显存配额切分单卡，减少小负载独占整卡造成的空闲。属厂商开发者文档级发布。",
-      "latest": "DevOTD 跟进：内存边界与 KAI Scheduler 对接（hot_floor 第二源）。",
-      "cover": null,
-      "rankDelta": 0,
-      "heatDeltaPct": 2.7
-    },
-    {
-      "rank": 8,
-      "story": {
-        "publicId": "2026-10-28-liquidai-lfm3",
-        "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族"
-      },
-      "heat": 6.6,
-      "trend": "down",
-      "trendPct": -15.4,
-      "badges": [],
-      "participantCount": 2,
-      "sourceCount": 2,
-      "sourceNames": [
-        "Hugging Face Blog",
-        "Liquid AI Blog"
-      ],
-      "participants": [
-        {
-          "name": "Hugging Face Blog",
-          "kind": "editorial"
-        },
-        {
-          "name": "Liquid AI Blog",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        13.5,
-        13.1,
-        12.7,
-        12.3,
-        12,
-        11.6,
-        11.3,
-        11,
-        10.7,
-        10.4,
-        10.1,
-        9.8,
-        9.5,
-        9.2,
-        9,
-        8.7,
-        8.5,
-        8.2,
-        8,
-        7.8,
-        7.6,
-        7.3,
-        7.1,
-        6.9,
-        6.7
-      ],
-      "summary": null,
-      "latest": "补挂 Liquid AI 官方博客为独立 editorial participant，并换为代表（hot_floor hop-as-rep）。",
-      "cover": null,
-      "rankDelta": 1,
-      "heatDeltaPct": -8.3
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
     }
-  ]
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    9.7,
+    9.4,
+    19.0,
+    38.1,
+    37.0,
+    36.0,
+    35.0,
+    43.7,
+    42.5,
+    41.2,
+    40.1,
+    38.9,
+    37.8,
+    36.7,
+    35.7,
+    34.7,
+    33.7,
+    32.7
+   ],
+   "summary": null,
+   "latest": null,
+   "cover": null,
+   "rankDelta": 0,
+   "heatDeltaPct": -10.9
+  },
+  {
+   "rank": 2,
+   "story": {
+    "publicId": "2026-10-28-nvidia-nemotron-35-transcribe",
+    "title": "NVIDIA 发布开源 Nemotron 3.5 Transcribe 与 Granary v2"
+   },
+   "heat": 16.6,
+   "trend": "down",
+   "trendPct": -15.7,
+   "badges": [],
+   "participantCount": 3,
+   "sourceCount": 3,
+   "sourceNames": [
+    "The Decoder",
+    "TechCrunch · AI",
+    "Hugging Face Blog"
+   ],
+   "participants": [
+    {
+     "name": "Hugging Face Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    20.0,
+    29.4,
+    28.5,
+    27.7,
+    26.9,
+    26.2,
+    25.4,
+    24.7,
+    24.0,
+    23.3,
+    22.6,
+    22.0,
+    21.4,
+    20.8,
+    20.2,
+    19.6,
+    19.0,
+    18.5,
+    18.0,
+    17.5,
+    17.0
+   ],
+   "summary": "NVIDIA 在 Hugging Face 发布开源权重 Nemotron 3.5 Transcribe：单检查点可做多语转写（约 40 语）、说话人归属、翻译与音频问答，并可用自然语言提示；同日给出 Granary v2 多语语音数据与微调工具。属官方模型/数据发布。",
+   "latest": null,
+   "cover": null,
+   "rankDelta": 0,
+   "heatDeltaPct": -10.8
+  },
+  {
+   "rank": 3,
+   "story": {
+    "publicId": "2026-10-28-deepmind-genie-4",
+    "title": "DeepMind 发布 Genie 4：新一代世界仿真"
+   },
+   "heat": 14.9,
+   "trend": "down",
+   "trendPct": -15.8,
+   "badges": [],
+   "participantCount": 5,
+   "sourceCount": 4,
+   "sourceNames": [
+    "The Decoder",
+    "TechCrunch · AI",
+    "Google DeepMind Blog",
+    "The Verge · AI"
+   ],
+   "participants": [
+    {
+     "name": "Google DeepMind Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
+    }
+   ],
+   "spark": [
+    30.5,
+    29.7,
+    28.8,
+    28.0,
+    27.2,
+    26.4,
+    25.7,
+    24.9,
+    24.2,
+    23.5,
+    22.9,
+    22.2,
+    21.6,
+    21.0,
+    20.4,
+    19.8,
+    19.2,
+    18.7,
+    18.2,
+    17.6,
+    17.1,
+    16.6,
+    16.2,
+    15.7,
+    15.3
+   ],
+   "summary": null,
+   "latest": null,
+   "cover": null,
+   "rankDelta": 0,
+   "heatDeltaPct": -10.8
+  },
+  {
+   "rank": 4,
+   "story": {
+    "publicId": "2026-10-28-microsoft-fy27-q1-earnings",
+    "title": "微软首次披露 Azure 季度营收约 33.2 亿美元"
+   },
+   "heat": 13.1,
+   "trend": "down",
+   "trendPct": -15.5,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 1,
+   "sourceNames": [
+    "TechCrunch · AI"
+   ],
+   "participants": [
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
+    }
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    9.8,
+    19.5,
+    18.9,
+    18.4,
+    17.9,
+    17.3,
+    16.9,
+    16.4,
+    15.9,
+    15.5,
+    15.0,
+    14.6,
+    14.2,
+    13.8,
+    13.4
+   ],
+   "summary": "TechCrunch 称微软首次以美元披露 Azure 季度营收约 33.2 亿美元；同季总营收约 922.79 亿美元（同比 +19%），并披露来自 OpenAI 安排收入约 10 亿美元。属财报解读二手，关键数字来自业绩披露。",
+   "latest": "同季披露来自 OpenAI 安排收入约 10 亿美元",
+   "cover": null,
+   "rankDelta": 0,
+   "heatDeltaPct": -10.9
+  },
+  {
+   "rank": 5,
+   "story": {
+    "publicId": "2026-10-27-anthropic-ipo-s1",
+    "title": "Anthropic 正式递交公开上市申请"
+   },
+   "heat": 6.6,
+   "trend": "down",
+   "trendPct": -50.7,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "TechCrunch · AI",
+    "The Verge · AI"
+   ],
+   "participants": [
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    25.9,
+    25.2,
+    24.5,
+    23.8,
+    23.1,
+    22.4,
+    19.4,
+    18.8,
+    18.3,
+    17.8,
+    17.3,
+    16.8,
+    16.3,
+    15.8,
+    15.4,
+    14.9,
+    14.5,
+    14.1,
+    13.7,
+    13.3,
+    12.9,
+    10.1,
+    9.8,
+    9.5,
+    9.3
+   ],
+   "summary": "Anthropic 向 SEC 递交 S-1，披露收入增长、客户结构、长期算力义务与特殊治理安排，并在附信中重申 Claude 不投放广告。一手文件见 SEC EDGAR；媒体数字转述以招股书为准。",
+   "latest": "TechCrunch 跟进称亚马逊经票据转换持股更深，IPO 受益或大于多数 VC。",
+   "cover": null,
+   "rankDelta": 0,
+   "heatDeltaPct": -34.7
+  },
+  {
+   "rank": 6,
+   "story": {
+    "publicId": "2026-10-28-google-sleep-framework-continual",
+    "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘"
+   },
+   "heat": 6.5,
+   "trend": "down",
+   "trendPct": -15.6,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "CTOL Digital Solutions",
+    "Google Research Blog"
+   ],
+   "participants": [
+    {
+     "name": "Google Research Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "CTOL Digital Solutions",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    13.3,
+    12.9,
+    12.6,
+    12.2,
+    11.9,
+    11.5,
+    11.2,
+    10.9,
+    10.6,
+    10.3,
+    10.0,
+    9.7,
+    9.4,
+    9.2,
+    8.9,
+    8.6,
+    8.4,
+    8.2,
+    7.9,
+    7.7,
+    7.5,
+    7.3,
+    7.1,
+    6.9,
+    6.7
+   ],
+   "summary": null,
+   "latest": "CTOL 跟进：做梦 vs 巩固消融解读（hot_floor 第二源）。",
+   "cover": null,
+   "rankDelta": 0,
+   "heatDeltaPct": -11.0
+  },
+  {
+   "rank": 7,
+   "story": {
+    "publicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
+    "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享"
+   },
+   "heat": 6.5,
+   "trend": "down",
+   "trendPct": -16.7,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "DevOTD",
+    "NVIDIA Technical Blog"
+   ],
+   "participants": [
+    {
+     "name": "NVIDIA Technical Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "DevOTD",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    13.4,
+    13.0,
+    12.7,
+    12.3,
+    11.9,
+    11.6,
+    11.3,
+    10.9,
+    10.6,
+    10.3,
+    10.0,
+    9.8,
+    9.5,
+    9.2,
+    8.9,
+    8.7,
+    8.4,
+    8.2,
+    8.0,
+    7.7,
+    7.5,
+    7.3,
+    7.1,
+    6.9,
+    6.7
+   ],
+   "summary": "NVIDIA 技术博客介绍 CUDA 13.4 在 Kubernetes 中的内存强制 GPU 共享：按显存配额切分单卡，减少小负载独占整卡造成的空闲。属厂商开发者文档级发布。",
+   "latest": "DevOTD 跟进：内存边界与 KAI Scheduler 对接（hot_floor 第二源）。",
+   "cover": null,
+   "rankDelta": 0,
+   "heatDeltaPct": -11.0
+  },
+  {
+   "rank": 8,
+   "story": {
+    "publicId": "2026-10-28-liquidai-lfm3",
+    "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族"
+   },
+   "heat": 5.9,
+   "trend": "down",
+   "trendPct": -15.7,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "Liquid AI Blog",
+    "Hugging Face Blog"
+   ],
+   "participants": [
+    {
+     "name": "Liquid AI Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "Hugging Face Blog",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    12.0,
+    11.6,
+    11.3,
+    11.0,
+    10.7,
+    10.4,
+    10.1,
+    9.8,
+    9.5,
+    9.2,
+    9.0,
+    8.7,
+    8.5,
+    8.2,
+    8.0,
+    7.8,
+    7.6,
+    7.3,
+    7.1,
+    6.9,
+    6.7,
+    6.5,
+    6.4,
+    6.2,
+    6.0
+   ],
+   "summary": null,
+   "latest": "补挂 Liquid AI 官方博客为独立 editorial participant，并换为代表（hot_floor hop-as-rep）。",
+   "cover": null,
+   "rankDelta": 0,
+   "heatDeltaPct": -10.6
+  }
+ ]
 }
