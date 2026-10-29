@@ -1,10 +1,14 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import {
+  HEAT_CADENCE_COPY,
   HEAT_METHOD_COPY,
+  HEAT_STATUS_LABEL,
+  HOT_TOP_N,
   assertHeatCopy,
   formatHeat,
   formatTrendPct,
+  heatComputedStale,
   heatMatches,
   scrubForbiddenHeatCopy,
   sparkMatches,
@@ -15,6 +19,17 @@ describe("HEAT_METHOD_COPY", () => {
     assert.equal(HEAT_METHOD_COPY, "按过去 48 小时独立来源计算，半衰期 24 小时");
     assertHeatCopy(HEAT_METHOD_COPY);
     assert.doesNotMatch(HEAT_METHOD_COPY, /实时|引擎已\s*1:1/);
+  });
+
+  it("keeps honest Top10 / cadence copy without 实时", () => {
+    assert.equal(HOT_TOP_N, 10);
+    assert.equal(HEAT_STATUS_LABEL, "当前热度");
+    assertHeatCopy(HEAT_STATUS_LABEL);
+    assertHeatCopy(HEAT_CADENCE_COPY);
+    assert.doesNotMatch(HEAT_CADENCE_COPY, /实时/);
+    assert.match(HEAT_CADENCE_COPY, /15 分钟/);
+    assert.equal(heatComputedStale("2026-10-29T00:00:00.000Z", Date.parse("2026-10-29T07:00:00.000Z")), true);
+    assert.equal(heatComputedStale("2026-10-29T06:30:00.000Z", Date.parse("2026-10-29T07:00:00.000Z")), false);
   });
 
   it("rejects 实时 and 引擎已 1:1", () => {

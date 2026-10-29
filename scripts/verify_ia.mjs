@@ -198,6 +198,10 @@ const paths = [
   "/flux3/examples/",
   "/flux3/camera-terms/",
   "/about/",
+  "/leaderboard/",
+  "/agent/",
+  "/changelog/",
+  "/feedback/",
 ];
 for (const path of paths) {
   const file = path === "/" ? join(distDir, "index.html") : join(distDir, path.replace(/^\//, ""), "index.html");
@@ -224,6 +228,7 @@ if (existsSync(join(distDir, "feed.xml"))) {
   assert(true, "dist has no fixture feed.xml");
 }
 assert(existsSync(join(distDir, "api", "v1", "index.json")), "dist has /api/v1/index.json");
+assert(existsSync(join(distDir, "api", "v1", "daily.json")), "dist has /api/v1/daily.json (G12)");
 assert(existsSync(join(distDir, "data", "meta.json")), "dist has /data/meta.json");
 assert(existsSync(join(distDir, "data", "search-index.json")), "dist has search index");
 assert(existsSync(join(distDir, "assets", "hydrate.js")), "dist has hydrate.js");
@@ -245,6 +250,20 @@ assert(about.includes('class="ds-wrap'), "about uses the centered ds-wrap shell"
 assert(about.includes("公开论文"), "about lists sources");
 assert(about.includes("少步蒸馏"), "about explains 少步蒸馏");
 assert(about.includes("当前位置") && about.includes("关于"), "about has section label");
+
+for (const [rel, needle] of [
+  ["leaderboard", "静态占位"],
+  ["agent", "Agent 接入"],
+  ["changelog", "更新日志"],
+  ["feedback", "反馈"],
+]) {
+  const stub = readFileSync(join(distDir, rel, "index.html"), "utf8");
+  assert(stub.includes('class="ds-wrap'), `${rel} uses the centered ds-wrap shell`);
+  assert(stub.includes(needle), `${rel} has honest stub copy`);
+  assert(stub.includes("前沿趋势"), `${rel} brand is 前沿趋势`);
+  assert(!stub.includes("AIHOT") && !stub.includes("MyHOT"), `${rel} has no *HOT product brand`);
+  assert(!/实时/.test(stub), `${rel} has no fake 实时`);
+}
 
 const flux3 = readFileSync(join(distDir, "flux3", "index.html"), "utf8");
 assert(flux3.includes("速查表") && flux3.includes("官方案例") && flux3.includes("示例库") && flux3.includes("相机术语"), "flux3 hub tabs");
@@ -282,6 +301,10 @@ assert(hotPage.includes('href="../assets/app.css"'), "/hot/ CSS is ../assets/app
 assert(hotPage.includes('href="../"') && hotPage.includes('href="../daily/"'), "/hot/ links to 精选 and /daily/");
 assert(hotPage.includes("发酵中"), "hot page keeps fixture 发酵中 chips");
 assert(hotPage.includes("48") && hotPage.includes("小时"), "hot ranking window remains 48h");
+assert(/讨论最多的(?: <!-- -->)?10(?:<!-- -->)? 件事/.test(hotPage), "hot page copy is Top 10 (G2)");
+assert(!/讨论最多的(?: <!-- -->)?8(?:<!-- -->)? 件事/.test(hotPage), "hot page copy is not Top 8");
+assert(hotPage.includes("当前热度"), "hot status label stays 当前热度 (G11, no fake 实时)");
+assert(hotPage.includes("业务日内约每 15 分钟重算"), "hot cadence copy matches R1h (G11)");
 assert(hotPage.includes("24 小时") || hotPage.includes("24小时") || hotPage.includes("小时走势"), "hot sparkline window is 24h");
 const hotCoverImgs = [...hotPage.matchAll(/<img\b[^>]*>/g)].filter((m) => /assets\/covers\//.test(m[0]));
 assert(hotCoverImgs.length <= 1, `hot paints at most one cover (${hotCoverImgs.length})`);
@@ -314,6 +337,10 @@ assert(!hotPage.includes("AIHOT") && !hotPage.includes("MyHOT"), "hot page has n
 {
   const hotJsonPath = join(distDir, "api", "v1", "hot.json");
   const hotJson = existsSync(hotJsonPath) ? JSON.parse(readFileSync(hotJsonPath, "utf8")) : null;
+  if (hotJson) {
+    assert((hotJson.limit ?? 10) === 10, "public hot.json limit is 10");
+    assert((hotJson.entries || []).length <= 10, "public hot.json does not exceed Top 10");
+  }
   const no1 = hotJson?.entries?.[0];
   if (no1?.story?.title) {
     assert(hotPage.includes(no1.story.title), "hot NO.01 title matches engine hot.json");
@@ -1041,8 +1068,11 @@ assert(publicScoreKeys === 0, `public JSON has no score keys (${publicScoreKeys}
 
 const homeHtml = readFileSync(join(distDir, "index.html"), "utf8");
 assert(!/\bNaN\b/.test(homeHtml), "home HTML has no NaN from absent score");
-assert(!/data-score|score-label|item-score|ft-score/i.test(homeHtml), "home HTML has no score slot");
+assert(!/data-score|score-label|item-score|ft-score/i.test(homeHtml), "home HTML has no internal score slot");
 assert(!/class="[^"]*score/.test(homeHtml), "home HTML has no score class slot");
+if (/data-item-id=/.test(homeHtml)) {
+  assert(/AI 评分/.test(homeHtml) && /data-ft-rating=/.test(homeHtml), "featured cards show public AI 评分 (G6)");
+}
 
 assert(existsSync(join(distDir, "more", "index.html")), "dist has /more/");
 for (const rel of ["index.html", join("hot", "index.html"), join("daily", "index.html")]) {

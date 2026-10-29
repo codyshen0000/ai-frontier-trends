@@ -4,6 +4,23 @@
  */
 export const HEAT_METHOD_COPY = "按过去 48 小时独立来源计算，半衰期 24 小时";
 
+/** Ranking / page-copy cap. Must stay aligned with heat.mjs TOP_N and heat48h.py HOT_LIMIT. */
+export const HOT_TOP_N = 10;
+
+/** Honest status chip. Do not write 实时 — Pages + R1h are not a live 5min engine. */
+export const HEAT_STATUS_LABEL = "当前热度";
+
+/** Cadence that matches free Actions / R1h (08:00–23:00, :00/:15/:30/:45). */
+export const HEAT_CADENCE_COPY = "业务日内约每 15 分钟重算（静态发布）";
+
+export const HEAT_STALE_MS = 6 * 3600 * 1000;
+
+export function heatComputedStale(computedAt, now = Date.now(), staleMs = HEAT_STALE_MS) {
+  const ms = Date.parse(computedAt);
+  if (!Number.isFinite(ms)) return false;
+  return now - ms > staleMs;
+}
+
 const FORBIDDEN_HEAT_COPY = /实时|引擎已\s*1:1/;
 
 export function assertHeatCopy(text, label = "heat copy") {
