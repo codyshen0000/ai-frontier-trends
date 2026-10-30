@@ -166,6 +166,21 @@
    "hour": "2026-10-30T05:00:00.000Z",
    "heat": 6.6,
    "participants": 1
+  },
+  {
+   "hour": "2026-10-30T06:00:00.000Z",
+   "heat": 6.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T07:00:00.000Z",
+   "heat": 6.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T08:00:00.000Z",
+   "heat": 6.1,
+   "participants": 1
   }
  ],
  "related": [],
