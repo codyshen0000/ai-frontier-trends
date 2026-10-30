@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-23-anthropic-claude-formal-verification",
  "title": "Anthropic：Claude 为 123 个开源库写出可机器检查的形式化证明",
- "status": "watching",
+ "status": "settled",
  "reportCount": 2,
  "sourceCount": 2,
  "firstReportAt": "2026-10-23T11:32:19.000Z",
