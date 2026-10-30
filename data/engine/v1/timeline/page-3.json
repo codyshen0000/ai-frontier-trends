@@ -6,6 +6,29 @@
  },
  "cards": [
   {
+   "key": "sha256:73be0ee71d2832b3",
+   "anchorAt": "2026-10-23T17:36:54.000Z",
+   "item": {
+    "id": "sha256:73be0ee71d2832b3",
+    "title": "Baseten 推出 Environment Network：对接后训练 RL 环境伙伴",
+    "summary": "Baseten 官方：筛选 RL 环境伙伴做客户定制后训练环境；训练与推理仍由 Baseten。",
+    "reason": "Baseten 推出后训练 RL 环境合作伙伴网络",
+    "source": {
+     "name": "Baseten Blog"
+    },
+    "publishedAt": "2026-10-23T17:36:54.000Z",
+    "timelineAt": "2026-10-23T17:36:54.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-24-baseten-environment-network",
+    "originalUrl": "https://www.baseten.co/blog/introducing-the-baseten-environment-network/"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:1456ee151a5392db",
    "anchorAt": "2026-10-23T17:27:52.000Z",
    "item": {
@@ -519,35 +542,12 @@
      "sha256:7decc1c5c0496d6c"
     ]
    }
-  },
-  {
-   "key": "sha256:40a01666d562060b",
-   "anchorAt": "2026-10-21T17:35:36.000Z",
-   "item": {
-    "id": "sha256:40a01666d562060b",
-    "title": "VocabX：专用词表称可把小模型推理成本砍约 77%",
-    "summary": "VocabX 特化词表降低小模型推理成本。",
-    "reason": "VocabX：专用词表可砍小模型推理成本约 77%",
-    "source": {
-     "name": "Hugging Face Blog"
-    },
-    "publishedAt": "2026-10-21T17:35:36.000Z",
-    "timelineAt": "2026-10-21T17:35:36.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-22-dharma-vocabx-slm",
-    "originalUrl": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-4.json",
  "hot": null,
  "dayCounts": {},
  "page": 3,
- "pageCount": 4,
- "total": 80
+ "pageCount": 5,
+ "total": 81
 }

@@ -1,5 +1,5 @@
 {
- "computedAt": "2026-10-30T16:43:00.000Z",
+ "computedAt": "2026-10-30T16:48:00.000Z",
  "windowHours": 48,
  "entries": [
   {
@@ -8,9 +8,9 @@
     "publicId": "2026-10-29-mistral-large-4-lechonk",
     "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重"
    },
-   "heat": 26.8,
+   "heat": 26.7,
    "trend": "down",
-   "trendPct": -15.7,
+   "trendPct": -16.0,
    "badges": [],
    "participantCount": 6,
    "sourceCount": 5,
@@ -78,7 +78,7 @@
    "latest": null,
    "cover": null,
    "rankDelta": 0,
-   "heatDeltaPct": -11.8
+   "heatDeltaPct": -12.2
   },
   {
    "rank": 2,
@@ -86,9 +86,9 @@
     "publicId": "2026-10-28-deepmind-gemini-4-carbon",
     "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升"
    },
-   "heat": 13.9,
+   "heat": 13.8,
    "trend": "down",
-   "trendPct": -15.8,
+   "trendPct": -16.4,
    "badges": [],
    "participantCount": 5,
    "sourceCount": 4,
@@ -151,7 +151,7 @@
    "latest": null,
    "cover": null,
    "rankDelta": 0,
-   "heatDeltaPct": -11.5
+   "heatDeltaPct": -12.1
   },
   {
    "rank": 3,

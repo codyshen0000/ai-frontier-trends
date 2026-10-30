@@ -6,6 +6,29 @@
  },
  "cards": [
   {
+   "key": "sha256:40a01666d562060b",
+   "anchorAt": "2026-10-21T17:35:36.000Z",
+   "item": {
+    "id": "sha256:40a01666d562060b",
+    "title": "VocabX：专用词表称可把小模型推理成本砍约 77%",
+    "summary": "VocabX 特化词表降低小模型推理成本。",
+    "reason": "VocabX：专用词表可砍小模型推理成本约 77%",
+    "source": {
+     "name": "Hugging Face Blog"
+    },
+    "publishedAt": "2026-10-21T17:35:36.000Z",
+    "timelineAt": "2026-10-21T17:35:36.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-22-dharma-vocabx-slm",
+    "originalUrl": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:27c0a5d3fc255134",
    "anchorAt": "2026-10-21T16:23:53.000Z",
    "item": {
@@ -483,42 +506,12 @@
      "sha256:5c52b7d34becd1cc"
     ]
    }
-  },
-  {
-   "key": "sha256:931ff0f85ef4bf70",
-   "anchorAt": "2026-10-17T10:33:28.000Z",
-   "item": {
-    "id": "sha256:931ff0f85ef4bf70",
-    "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
-    "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017：基准更好、完成任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API。The Decoder 与量子位均有报道。",
-    "reason": "开放权重新模型+搜索API，可直接用",
-    "source": {
-     "name": "The Decoder"
-    },
-    "publishedAt": "2026-10-17T10:33:28.000Z",
-    "timelineAt": "2026-10-17T10:33:28.000Z",
-    "category": "model",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-19-deepseek-v41-flash-1017",
-    "originalUrl": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/"
-   },
-   "group": {
-    "factId": "fact-2026-10-19-deepseek-v41-flash-1017",
-    "additionalSourceCount": 2,
-    "reportCount": 3,
-    "memberIds": [
-     "sha256:931ff0f85ef4bf70"
-    ]
-   }
   }
  ],
- "nextCursor": null,
+ "nextCursor": "timeline/page-5.json",
  "hot": null,
  "dayCounts": {},
  "page": 4,
- "pageCount": 4,
- "total": 80
+ "pageCount": 5,
+ "total": 81
 }

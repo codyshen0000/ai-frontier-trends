@@ -1,6 +1,6 @@
 {
  "publicId": "2026-10-31-openai-credit-saison-roi",
- "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 达 954%",
+ "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 954%",
  "status": "active",
  "reportCount": 1,
  "sourceCount": 1,
@@ -8,7 +8,7 @@
  "latestAt": "2026-10-29T00:00:00.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": "OpenAI 客户故事：Credit Saison 企业试点披露 ROI 954%。官方一手案例；分数贴门槛。",
+ "summary": "OpenAI 客户案例：Credit Saison 企业试点称实现 954% ROI。厂商案例营销；本窗未过闸。",
  "excerpt": null,
  "latest": null,
  "latestReport": null,
@@ -22,13 +22,13 @@
  "developments": [
   {
    "factId": "fact-2026-10-31-openai-credit-saison-roi",
-   "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 达 954%",
+   "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 954%",
    "firstReportAt": "2026-10-29T00:00:00.000Z",
    "reportCount": 1,
    "representative": {
     "id": "sha256:85f94c0fe8f02a81",
-    "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 达 954%",
-    "summary": null,
+    "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 954%",
+    "summary": "OpenAI 客户案例营销；未过闸。",
     "source": {
      "name": "OpenAI News",
      "firstParty": true
@@ -42,8 +42,8 @@
  "officialReports": [
   {
    "id": "sha256:85f94c0fe8f02a81",
-   "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 达 954%",
-   "summary": null,
+   "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 954%",
+   "summary": "OpenAI 客户案例营销；未过闸。",
    "source": {
     "name": "OpenAI News",
     "firstParty": true
@@ -56,8 +56,8 @@
  "timeline": [
   {
    "id": "sha256:85f94c0fe8f02a81",
-   "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 达 954%",
-   "summary": null,
+   "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 954%",
+   "summary": "OpenAI 客户案例营销；未过闸。",
    "source": {
     "name": "OpenAI News",
     "firstParty": true
@@ -276,5 +276,6 @@
  ],
  "related": [],
  "topics": [],
+ "recommendReason": "OpenAI：Credit Saison 企业试点称 ROI 达 954%",
  "primaryUrl": "https://openai.com/index/credit-saison"
 }

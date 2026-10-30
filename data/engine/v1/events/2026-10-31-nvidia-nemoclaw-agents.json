@@ -1,6 +1,6 @@
 {
  "publicId": "2026-10-31-nvidia-nemoclaw-agents",
- "title": "NVIDIA 发布 NemoClaw：在自控技术栈上构建专用智能体",
+ "title": "NVIDIA：发布 NemoClaw，在可控栈上构建专用智能体",
  "status": "active",
  "reportCount": 1,
  "sourceCount": 1,
@@ -8,7 +8,7 @@
  "latestAt": "2026-10-30T16:00:00.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": "NVIDIA Developer Blog：介绍 NemoClaw，面向在可控自有栈上构建专用智能体。官方一手产品/框架发布。",
+ "summary": "NVIDIA 开发者博客介绍 NemoClaw：在自控模型/编排/工具栈上构建专用自主智能体，强调部署安全与栈可控。官方产品技术文；本窗过闸。",
  "excerpt": null,
  "latest": null,
  "latestReport": null,
@@ -22,13 +22,13 @@
  "developments": [
   {
    "factId": "fact-2026-10-31-nvidia-nemoclaw-agents",
-   "title": "NVIDIA 发布 NemoClaw：在自控技术栈上构建专用智能体",
+   "title": "NVIDIA：发布 NemoClaw，在可控栈上构建专用智能体",
    "firstReportAt": "2026-10-30T16:00:00.000Z",
    "reportCount": 1,
    "representative": {
     "id": "sha256:b0afceb347e7b188",
-    "title": "NVIDIA 发布 NemoClaw：在自控技术栈上构建专用智能体",
-    "summary": null,
+    "title": "NVIDIA：发布 NemoClaw，在可控栈上构建专用智能体",
+    "summary": "NVIDIA 官方 NemoClaw 智能体栈。产品技术文；过闸。",
     "source": {
      "name": "NVIDIA Technical Blog",
      "firstParty": true
@@ -42,8 +42,8 @@
  "officialReports": [
   {
    "id": "sha256:b0afceb347e7b188",
-   "title": "NVIDIA 发布 NemoClaw：在自控技术栈上构建专用智能体",
-   "summary": null,
+   "title": "NVIDIA：发布 NemoClaw，在可控栈上构建专用智能体",
+   "summary": "NVIDIA 官方 NemoClaw 智能体栈。产品技术文；过闸。",
    "source": {
     "name": "NVIDIA Technical Blog",
     "firstParty": true
@@ -56,8 +56,8 @@
  "timeline": [
   {
    "id": "sha256:b0afceb347e7b188",
-   "title": "NVIDIA 发布 NemoClaw：在自控技术栈上构建专用智能体",
-   "summary": null,
+   "title": "NVIDIA：发布 NemoClaw，在可控栈上构建专用智能体",
+   "summary": "NVIDIA 官方 NemoClaw 智能体栈。产品技术文；过闸。",
    "source": {
     "name": "NVIDIA Technical Blog",
     "firstParty": true
@@ -76,5 +76,13 @@
  ],
  "related": [],
  "topics": [],
+ "recommendReason": "NVIDIA 发布 NemoClaw：可控栈上构建专用智能体",
+ "cover": {
+  "url": "https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/nemoclaw-featured-768x432.png",
+  "width": 768,
+  "height": null,
+  "alt": "NVIDIA NemoClaw 智能体栈产品示意",
+  "valueClass": "product_screenshot"
+ },
  "primaryUrl": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/"
 }

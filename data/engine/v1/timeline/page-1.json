@@ -10,9 +10,9 @@
    "anchorAt": "2026-10-30T16:00:00.000Z",
    "item": {
     "id": "sha256:b0afceb347e7b188",
-    "title": "NVIDIA 发布 NemoClaw：在自控技术栈上构建专用智能体",
-    "summary": null,
-    "reason": null,
+    "title": "NVIDIA：发布 NemoClaw，在可控栈上构建专用智能体",
+    "summary": "NVIDIA 官方 NemoClaw 智能体栈。产品技术文；过闸。",
+    "reason": "NVIDIA 发布 NemoClaw：可控栈上构建专用智能体",
     "source": {
      "name": "NVIDIA Technical Blog"
     },
@@ -25,6 +25,29 @@
     "x": null,
     "storyPublicId": "2026-10-31-nvidia-nemoclaw-agents",
     "originalUrl": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:f37fa8ee7ba135be",
+   "anchorAt": "2026-10-30T12:57:42.000Z",
+   "item": {
+    "id": "sha256:f37fa8ee7ba135be",
+    "title": "Wiz：发布 2026 AI 威胁就绪调查报告要点",
+    "summary": null,
+    "reason": "Wiz 发布 2026 AI 威胁就绪调查：影子 AI 与编排风险",
+    "source": {
+     "name": "Wiz Blog"
+    },
+    "publishedAt": "2026-10-30T12:57:42.000Z",
+    "timelineAt": "2026-10-30T12:57:42.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-30-wiz-ai-threat-readiness-2026",
+    "originalUrl": "https://www.wiz.io/blog/ai-threat-readiness-survey-report-2026"
    },
    "group": null
   },
@@ -132,9 +155,9 @@
    "anchorAt": "2026-10-29T00:00:00.000Z",
    "item": {
     "id": "sha256:85f94c0fe8f02a81",
-    "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 达 954%",
-    "summary": null,
-    "reason": null,
+    "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 954%",
+    "summary": "OpenAI 客户案例营销；未过闸。",
+    "reason": "OpenAI：Credit Saison 企业试点称 ROI 达 954%",
     "source": {
      "name": "OpenAI News"
     },
@@ -500,29 +523,6 @@
      "sha256:e960e8891f7d7ad8"
     ]
    }
-  },
-  {
-   "key": "sha256:5ed14fffd1748be8",
-   "anchorAt": "2026-10-27T16:00:00.000Z",
-   "item": {
-    "id": "sha256:5ed14fffd1748be8",
-    "title": "NVIDIA：微调 Nemotron 以掌握本地规则而非仅本地语言",
-    "summary": "NVIDIA 介绍用法德人格数据集与行为契约微调 Nemotron 的后训练流程。",
-    "reason": "NVIDIA：用本地规则与人格数据微调 Nemotron",
-    "source": {
-     "name": "NVIDIA Technical Blog"
-    },
-    "publishedAt": "2026-10-27T16:00:00.000Z",
-    "timelineAt": "2026-10-27T16:00:00.000Z",
-    "category": "tutorial",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-28-nvidia-nemotron-local-rules",
-    "originalUrl": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-2.json",
@@ -530,7 +530,7 @@
   {
    "rank": 1,
    "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
-   "heat": 26.8,
+   "heat": 26.7,
    "trend": "down",
    "storyPublicId": "2026-10-29-mistral-large-4-lechonk",
    "itemId": "sha256:5a25565ab71a8d06",
@@ -565,7 +565,7 @@
   {
    "rank": 2,
    "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
-   "heat": 13.9,
+   "heat": 13.8,
    "trend": "down",
    "storyPublicId": "2026-10-28-deepmind-gemini-4-carbon",
    "itemId": "sha256:3e32bae570ff21ee",
@@ -615,7 +615,7 @@
  ],
  "dayCounts": {
   "2026-10-31": 1,
-  "2026-10-30": 1,
+  "2026-10-30": 2,
   "2026-10-29": 7,
   "2026-10-28": 11,
   "2026-10-27": 9,
@@ -630,6 +630,6 @@
   "2026-10-17": 1
  },
  "page": 1,
- "pageCount": 4,
- "total": 80
+ "pageCount": 5,
+ "total": 81
 }

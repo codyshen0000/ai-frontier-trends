@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-30T16:43:00.000Z",
+ "generatedAt": "2026-10-30T16:48:00.000Z",
  "docs": [
   {
    "id": "sha256:b0afceb347e7b188",
    "kind": "item",
-   "title": "NVIDIA 发布 NemoClaw：在自控技术栈上构建专用智能体",
-   "summary": null,
+   "title": "NVIDIA：发布 NemoClaw，在可控栈上构建专用智能体",
+   "summary": "NVIDIA 官方 NemoClaw 智能体栈。产品技术文；过闸。",
    "publishedAt": "2026-10-30T16:00:00.000Z",
    "sourceName": "NVIDIA Technical Blog",
    "category": "product",
@@ -16,13 +16,36 @@
   {
    "id": "2026-10-31-nvidia-nemoclaw-agents",
    "kind": "event",
-   "title": "NVIDIA 发布 NemoClaw：在自控技术栈上构建专用智能体",
-   "summary": "NVIDIA Developer Blog：介绍 NemoClaw，面向在可控自有栈上构建专用智能体。官方一手产品/框架发布。",
+   "title": "NVIDIA：发布 NemoClaw，在可控栈上构建专用智能体",
+   "summary": "NVIDIA 开发者博客介绍 NemoClaw：在自控模型/编排/工具栈上构建专用自主智能体，强调部署安全与栈可控。官方产品技术文；本窗过闸。",
    "publishedAt": "2026-10-30T16:00:00.000Z",
    "sourceNames": [
     "NVIDIA Technical Blog"
    ],
    "path": "/events/2026-10-31-nvidia-nemoclaw-agents/"
+  },
+  {
+   "id": "sha256:f37fa8ee7ba135be",
+   "kind": "item",
+   "title": "Wiz：发布 2026 AI 威胁就绪调查报告要点",
+   "summary": null,
+   "publishedAt": "2026-10-30T12:57:42.000Z",
+   "sourceName": "Wiz Blog",
+   "category": "industry",
+   "selected": true,
+   "eventPublicId": "2026-10-30-wiz-ai-threat-readiness-2026",
+   "originalUrl": "https://www.wiz.io/blog/ai-threat-readiness-survey-report-2026"
+  },
+  {
+   "id": "2026-10-30-wiz-ai-threat-readiness-2026",
+   "kind": "event",
+   "title": "Wiz：发布 2026 AI 威胁就绪调查报告要点",
+   "summary": "Wiz 发布 AI Threat Readiness Survey Report 2026 要点：影子 AI、编排风险，以及「以 AI 对抗 AI」防御模型。官方调查；本窗过闸。",
+   "publishedAt": "2026-10-30T12:57:42.000Z",
+   "sourceNames": [
+    "Wiz Blog"
+   ],
+   "path": "/events/2026-10-30-wiz-ai-threat-readiness-2026/"
   },
   {
    "id": "sha256:8b9bb0507fd5a516",
@@ -170,8 +193,8 @@
   {
    "id": "sha256:85f94c0fe8f02a81",
    "kind": "item",
-   "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 达 954%",
-   "summary": null,
+   "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 954%",
+   "summary": "OpenAI 客户案例营销；未过闸。",
    "publishedAt": "2026-10-29T00:00:00.000Z",
    "sourceName": "OpenAI News",
    "category": "industry",
@@ -182,8 +205,8 @@
   {
    "id": "2026-10-31-openai-credit-saison-roi",
    "kind": "event",
-   "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 达 954%",
-   "summary": "OpenAI 客户故事：Credit Saison 企业试点披露 ROI 954%。官方一手案例；分数贴门槛。",
+   "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 954%",
+   "summary": "OpenAI 客户案例：Credit Saison 企业试点称实现 954% ROI。厂商案例营销；本窗未过闸。",
    "publishedAt": "2026-10-29T00:00:00.000Z",
    "sourceNames": [
     "OpenAI News"

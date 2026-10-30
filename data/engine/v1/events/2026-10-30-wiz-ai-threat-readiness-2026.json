@@ -1,0 +1,96 @@
+{
+ "publicId": "2026-10-30-wiz-ai-threat-readiness-2026",
+ "title": "Wiz：发布 2026 AI 威胁就绪调查报告要点",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-30T12:57:42.000Z",
+ "latestAt": "2026-10-30T12:57:42.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Wiz 发布 AI Threat Readiness Survey Report 2026 要点：影子 AI、编排风险，以及「以 AI 对抗 AI」防御模型。官方调查；本窗过闸。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-30-wiz-ai-threat-readiness-2026",
+   "title": "Wiz：发布 2026 AI 威胁就绪调查报告要点",
+   "firstReportAt": "2026-10-30T12:57:42.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:f37fa8ee7ba135be",
+    "title": "Wiz：发布 2026 AI 威胁就绪调查报告要点",
+    "summary": null,
+    "source": {
+     "name": "Wiz Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-30T12:57:42.000Z",
+    "selected": true,
+    "originalUrl": "https://www.wiz.io/blog/ai-threat-readiness-survey-report-2026"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:f37fa8ee7ba135be",
+   "title": "Wiz：发布 2026 AI 威胁就绪调查报告要点",
+   "summary": null,
+   "source": {
+    "name": "Wiz Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-30T12:57:42.000Z",
+   "selected": true,
+   "originalUrl": "https://www.wiz.io/blog/ai-threat-readiness-survey-report-2026"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:f37fa8ee7ba135be",
+   "title": "Wiz：发布 2026 AI 威胁就绪调查报告要点",
+   "summary": null,
+   "source": {
+    "name": "Wiz Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-30T12:57:42.000Z",
+   "selected": true,
+   "originalUrl": "https://www.wiz.io/blog/ai-threat-readiness-survey-report-2026"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-30T13:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T14:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T15:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T16:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "Wiz 发布 2026 AI 威胁就绪调查：影子 AI 与编排风险",
+ "primaryUrl": "https://www.wiz.io/blog/ai-threat-readiness-survey-report-2026"
+}

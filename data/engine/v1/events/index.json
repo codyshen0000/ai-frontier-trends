@@ -2,8 +2,15 @@
  "events": [
   {
    "publicId": "2026-10-31-nvidia-nemoclaw-agents",
-   "title": "NVIDIA 发布 NemoClaw：在自控技术栈上构建专用智能体",
+   "title": "NVIDIA：发布 NemoClaw，在可控栈上构建专用智能体",
    "latestAt": "2026-10-30T16:00:00.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
+   "publicId": "2026-10-30-wiz-ai-threat-readiness-2026",
+   "title": "Wiz：发布 2026 AI 威胁就绪调查报告要点",
+   "latestAt": "2026-10-30T12:57:42.000Z",
    "reportCount": 1,
    "hotRank": null
   },
@@ -37,7 +44,7 @@
   },
   {
    "publicId": "2026-10-31-openai-credit-saison-roi",
-   "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 达 954%",
+   "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 954%",
    "latestAt": "2026-10-29T00:00:00.000Z",
    "reportCount": 1,
    "hotRank": null

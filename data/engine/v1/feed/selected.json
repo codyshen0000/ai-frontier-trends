@@ -9,14 +9,25 @@
  "items": [
   {
    "guid": "sha256:b0afceb347e7b188",
-   "title": "NVIDIA 发布 NemoClaw：在自控技术栈上构建专用智能体",
-   "summary": "",
+   "title": "NVIDIA：发布 NemoClaw，在可控栈上构建专用智能体",
+   "summary": "NVIDIA 官方 NemoClaw 智能体栈。产品技术文；过闸。",
    "originalUrl": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/",
    "pubDate": "2026-10-30T16:00:00.000Z",
    "sourceName": "NVIDIA Technical Blog",
    "category": "product",
    "categoryLabel": "产品",
    "eventPublicId": "2026-10-31-nvidia-nemoclaw-agents"
+  },
+  {
+   "guid": "sha256:f37fa8ee7ba135be",
+   "title": "Wiz：发布 2026 AI 威胁就绪调查报告要点",
+   "summary": "",
+   "originalUrl": "https://www.wiz.io/blog/ai-threat-readiness-survey-report-2026",
+   "pubDate": "2026-10-30T12:57:42.000Z",
+   "sourceName": "Wiz Blog",
+   "category": "industry",
+   "categoryLabel": "行业",
+   "eventPublicId": "2026-10-30-wiz-ai-threat-readiness-2026"
   },
   {
    "guid": "sha256:9349f418e7bc7ab4",
@@ -64,8 +75,8 @@
   },
   {
    "guid": "sha256:85f94c0fe8f02a81",
-   "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 达 954%",
-   "summary": "",
+   "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 954%",
+   "summary": "OpenAI 客户案例营销；未过闸。",
    "originalUrl": "https://openai.com/index/credit-saison",
    "pubDate": "2026-10-29T00:00:00.000Z",
    "sourceName": "OpenAI News",
@@ -545,17 +556,6 @@
    "category": "paper",
    "categoryLabel": "论文",
    "eventPublicId": "2026-10-23-microsoft-thinkingbox-rl"
-  },
-  {
-   "guid": "sha256:891b7e0bbf66f86d",
-   "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
-   "summary": "OpenAI 发布 Decisions API，面向应用内快速、聚焦、低成本决策。",
-   "originalUrl": "https://openai.com/index/decisions-api",
-   "pubDate": "2026-10-22T19:00:00.000Z",
-   "sourceName": "OpenAI News",
-   "category": "product",
-   "categoryLabel": "产品",
-   "eventPublicId": "2026-10-23-openai-decisions-api"
   }
  ]
 }

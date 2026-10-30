@@ -6,6 +6,29 @@
  },
  "cards": [
   {
+   "key": "sha256:5ed14fffd1748be8",
+   "anchorAt": "2026-10-27T16:00:00.000Z",
+   "item": {
+    "id": "sha256:5ed14fffd1748be8",
+    "title": "NVIDIA：微调 Nemotron 以掌握本地规则而非仅本地语言",
+    "summary": "NVIDIA 介绍用法德人格数据集与行为契约微调 Nemotron 的后训练流程。",
+    "reason": "NVIDIA：用本地规则与人格数据微调 Nemotron",
+    "source": {
+     "name": "NVIDIA Technical Blog"
+    },
+    "publishedAt": "2026-10-27T16:00:00.000Z",
+    "timelineAt": "2026-10-27T16:00:00.000Z",
+    "category": "tutorial",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-28-nvidia-nemotron-local-rules",
+    "originalUrl": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:b836eb939c37ffa5",
    "anchorAt": "2026-10-27T15:00:00.000Z",
    "item": {
@@ -544,35 +567,12 @@
      "sha256:604f1f9c59689482"
     ]
    }
-  },
-  {
-   "key": "sha256:73be0ee71d2832b3",
-   "anchorAt": "2026-10-23T17:36:54.000Z",
-   "item": {
-    "id": "sha256:73be0ee71d2832b3",
-    "title": "Baseten 推出 Environment Network：对接后训练 RL 环境伙伴",
-    "summary": "Baseten 官方：筛选 RL 环境伙伴做客户定制后训练环境；训练与推理仍由 Baseten。",
-    "reason": "Baseten 推出后训练 RL 环境合作伙伴网络",
-    "source": {
-     "name": "Baseten Blog"
-    },
-    "publishedAt": "2026-10-23T17:36:54.000Z",
-    "timelineAt": "2026-10-23T17:36:54.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-24-baseten-environment-network",
-    "originalUrl": "https://www.baseten.co/blog/introducing-the-baseten-environment-network/"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-3.json",
  "hot": null,
  "dayCounts": {},
  "page": 2,
- "pageCount": 4,
- "total": 80
+ "pageCount": 5,
+ "total": 81
 }

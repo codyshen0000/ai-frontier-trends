@@ -2,7 +2,7 @@
  {
   "rank": 1,
   "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
-  "heat": 26.8,
+  "heat": 26.7,
   "trend": "down",
   "storyPublicId": "2026-10-29-mistral-large-4-lechonk",
   "itemId": "sha256:5a25565ab71a8d06",
@@ -37,7 +37,7 @@
  {
   "rank": 2,
   "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
-  "heat": 13.9,
+  "heat": 13.8,
   "trend": "down",
   "storyPublicId": "2026-10-28-deepmind-gemini-4-carbon",
   "itemId": "sha256:3e32bae570ff21ee",
