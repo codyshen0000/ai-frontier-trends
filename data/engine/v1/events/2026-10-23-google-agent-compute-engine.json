@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-23-google-agent-compute-engine",
  "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
- "status": "watching",
+ "status": "settled",
  "reportCount": 2,
  "sourceCount": 2,
  "firstReportAt": "2026-10-22T17:50:09.000Z",

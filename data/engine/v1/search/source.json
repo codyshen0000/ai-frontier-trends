@@ -1,6 +1,32 @@
 {
- "generatedAt": "2026-10-30T01:20:00.000Z",
+ "generatedAt": "2026-10-30T05:20:00.000Z",
  "docs": [
+  {
+   "id": "sha256:8b9bb0507fd5a516",
+   "kind": "item",
+   "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
+   "summary": "IT之家报道同次开放权重；并入既有官方事件，代表仍优先一手。",
+   "publishedAt": "2026-10-30T01:09:09.000Z",
+   "sourceName": "IT之家（全站，需关键词过滤）",
+   "category": "model",
+   "selected": false,
+   "eventPublicId": "2026-10-29-mistral-large-4-lechonk",
+   "originalUrl": "https://www.ithome.com/1/019/865.htm"
+  },
+  {
+   "id": "2026-10-29-mistral-large-4-lechonk",
+   "kind": "event",
+   "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
+   "summary": "Mistral 发布并开源 Mistral Large 4（代号 Le Chonk）权重：约 1 万亿参数、原生多模态，称在开源权重编码评测领先并强化防御性网络安全；提供多种推理模式以平衡成本与性能，在欧洲基础设施训练。同日 vLLM 宣布 Day-0 支持（稀疏 MLA、跨层 KV 共享等），Hugging Face 发文欢迎上架。",
+   "publishedAt": "2026-10-30T01:09:09.000Z",
+   "sourceNames": [
+    "Hugging Face Blog",
+    "IT之家（全站，需关键词过滤）",
+    "Mistral AI News",
+    "The Decoder"
+   ],
+   "path": "/events/2026-10-29-mistral-large-4-lechonk/"
+  },
   {
    "id": "sha256:9349f418e7bc7ab4",
    "kind": "item",
@@ -35,19 +61,6 @@
    "selected": false,
    "eventPublicId": "2026-10-29-mistral-large-4-lechonk",
    "originalUrl": "https://the-decoder.com/paris-based-mistral-releases-le-chonk-a-strong-coding-model-that-still-trails-china-overall/"
-  },
-  {
-   "id": "2026-10-29-mistral-large-4-lechonk",
-   "kind": "event",
-   "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
-   "summary": "Mistral 发布并开源 Mistral Large 4（代号 Le Chonk）权重：约 1 万亿参数、原生多模态，称在开源权重编码评测领先并强化防御性网络安全；提供多种推理模式以平衡成本与性能，在欧洲基础设施训练。同日 vLLM 宣布 Day-0 支持（稀疏 MLA、跨层 KV 共享等），Hugging Face 发文欢迎上架。",
-   "publishedAt": "2026-10-29T15:25:27.000Z",
-   "sourceNames": [
-    "Hugging Face Blog",
-    "Mistral AI News",
-    "The Decoder"
-   ],
-   "path": "/events/2026-10-29-mistral-large-4-lechonk/"
   },
   {
    "id": "sha256:f7a1020f473102a5",
