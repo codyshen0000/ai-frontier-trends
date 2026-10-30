@@ -1,1076 +1,1076 @@
 {
- "site": "前沿趋势",
- "contract_version": "1.1",
- "mode": "production",
- "data_as_of": "2026-10-30T08:21:20+08:00",
- "data_as_of_label": "数据截至 2026-10-30 08:21（北京时间）",
- "generated_at": "2026-10-30T09:20:00+08:00",
- "hot_rule_version": "heat-v1-48h-halflife24h (前沿情报 heat48h.py 1.1)",
- "hot_computed_at": "2026-10-30T09:20:00+08:00",
- "window_hours": 48,
- "spark_points": 25,
- "page_size": 20,
- "counts": {
-  "cards": 78,
-  "pages": 4,
-  "events": 78,
-  "hot_entries": 4,
-  "search_docs": 213,
-  "feed_items": 50,
-  "passed_events": 78,
-  "below_threshold_events": 0,
-  "redirects": 0,
-  "hot_snapshots": 20,
-  "covers": 9
- },
- "last_round": {
-  "batch_id": "2026-10-30T0821",
-  "status": "ok",
-  "finished_at": "2026-10-30T09:14:32+08:00"
- },
- "batches": [
-  {
-   "batch_id": "2026-10-19T1124",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-19T1221",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-19T1323",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-19T1418",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-19T1524",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-19T1627",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-19T1726",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-19T1825",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-19T1923",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-19T2025",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-19T2136",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-19T2223",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-19T2347",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T0051",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T0121",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T0224",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T0321",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T0418",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T0522",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T0621",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T1055",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T1122",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T1218",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T1320",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T1424",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T1528",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T1623",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T1726",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T1822",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T1923",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T2025",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T2123",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T2221",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-20T2323",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T0026",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T0118",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T0221",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T0321",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T0427",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T0520",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T0624",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T0728",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T0826",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T0928",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T1019",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T1118",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T1227",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T1320",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T1419",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T1526",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T1606",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T1626",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T1718",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T1817",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T1925",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T2028",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T2127",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T2218",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-21T2319",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T0027",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T0125",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T0218",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T0320",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T0417",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T0519",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T0618",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T0725",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T0826",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T0925",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T1018",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T1127",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T1219",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T1320",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T1418",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T1526",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T1624",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T1722",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T1819",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T1923",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T2018",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T2122",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T2221",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-22T2319",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T0023",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T0119",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T0135",
-   "status": "partial"
-  },
-  {
-   "batch_id": "2026-10-23T0145",
-   "status": "partial"
-  },
-  {
-   "batch_id": "2026-10-23T0150",
-   "status": "partial"
-  },
-  {
-   "batch_id": "2026-10-23T0222",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T0312",
-   "status": "partial"
-  },
-  {
-   "batch_id": "2026-10-23T0322",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T0424",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T0522",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T0627",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T0725",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T0827",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T0856",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T0924",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T1023",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T1121",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T1226",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T1319",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T1520",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T1624",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T1724",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T1815",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T1820",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T1922",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T2021",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T2124",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T2222",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-23T2326",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T0019",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T0126",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T0221",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T0325",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T0422",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T0522",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T0621",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T0719",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T0824",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T0910",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T0919",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T0930",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T1022",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T1122",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T1222",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T1326",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T1419",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T1525",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T1620",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T1719",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T1821",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T1918",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T2019",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T2119",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T2219",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-24T2323",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-25T0020",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-25T0122",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-25T0223",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-25T0323",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-25T0425",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-25T0526",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-25T0626",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-25T0719",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-25T0817",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-25T0922",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-25T1026",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-25T1118",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-25T1223",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-25T1326",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-25T1527",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-25T1620",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-25T1650",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-25T1722",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-25T1823",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-25T1921",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-25T2018",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-25T2121",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-25T2145",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-25T2150",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-25T2223",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-26T2200",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-27T0830",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-27T2006",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-27T2013",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-27T2023",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-27T2106",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-27T2130",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-27T2225",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-27T2324",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-28T0025",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-28T0126",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-28T0220",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-28T0324",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-28T0422",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-28T0520",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-28T0624",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-28T0722",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-28T0827",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-28T0910",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-28T0925",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-28T1027",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-28T1030",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-28T1120",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-28T1226",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-28T1255",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-28T1318",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-28T1417",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-28T1525",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-28T1622",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-28T1724",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-28T1818",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-28T1927",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-28T2023",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-28T2126",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-28T2223",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-28T2327",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-29T0021",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-29T0120",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-29T0227",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-29T0320",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-29T0418",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-29T0619",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-29T0726",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-29T0818",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-29T0859",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-29T0925",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-29T1018",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-29T1122",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-29T1221",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-29T1320",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-29T1418",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-29T1525",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-29T1624",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-29T1722",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-29T1823",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-29T1924",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-29T2018",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-29T2123",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-29T2223",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-29T2324",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-30T0019",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-30T0124",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-30T0219",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-30T0318",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-30T0421",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-30T0520",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-30T0622",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-30T0726",
-   "status": "ok"
-  },
-  {
-   "batch_id": "2026-10-30T0821",
-   "status": "ok"
-  }
- ],
- "files": [
-  "api/index.json",
-  "events/2026-10-19-deepseek-v41-flash-1017.json",
-  "events/2026-10-19-minimax-m31-flash.json",
-  "events/2026-10-19-nvidia-open-models-agents-pcs.json",
-  "events/2026-10-20-hf-torchneuron-trainium.json",
-  "events/2026-10-20-kling-ai-4-0.json",
-  "events/2026-10-21-chatgpt-ads-stack-expansion.json",
-  "events/2026-10-21-ibm-granite-speech-5.json",
-  "events/2026-10-21-mistral-nvidia-industrial-ai.json",
-  "events/2026-10-21-mistral-voxtral-3.json",
-  "events/2026-10-21-nvidia-kumo-forecast.json",
-  "events/2026-10-21-nvidia-rfd4-proteina.json",
-  "events/2026-10-21-openai-agent-monitoring-disabled.json",
-  "events/2026-10-21-openai-models-google-cloud.json",
-  "events/2026-10-21-openai-terminal-x-eval.json",
-  "events/2026-10-22-anthropic-claude-duet.json",
-  "events/2026-10-22-dharma-vocabx-slm.json",
-  "events/2026-10-22-google-ai-maternal-ultrasound.json",
-  "events/2026-10-22-litellm-pypi-compromise.json",
-  "events/2026-10-22-msr-kls-conjecture.json",
-  "events/2026-10-22-nvidia-microduck-isaac-lab.json",
-  "events/2026-10-22-openai-fde-means.json",
-  "events/2026-10-22-openai-gov-cyber-defenders.json",
-  "events/2026-10-22-recursive-flint-coding-model.json",
-  "events/2026-10-22-vllm-humming-kernels.json",
-  "events/2026-10-22-wiz-artex-storm0940.json",
-  "events/2026-10-22-wiz-llmjacking-cloud-billing.json",
-  "events/2026-10-23-allenai-olmoearth-v13.json",
-  "events/2026-10-23-anthropic-claude-formal-verification.json",
-  "events/2026-10-23-google-agent-compute-engine.json",
-  "events/2026-10-23-microsoft-mai-dxo.json",
-  "events/2026-10-23-microsoft-thinkingbox-rl.json",
-  "events/2026-10-23-msr-flint-interactive.json",
-  "events/2026-10-23-openai-decisions-api.json",
-  "events/2026-10-23-openai-nask-ai-safety.json",
-  "events/2026-10-23-uber-chatgpt-work-rollout.json",
-  "events/2026-10-24-anthropic-ukaisi-alignment.json",
-  "events/2026-10-24-baseten-environment-network.json",
-  "events/2026-10-24-block-dessa-speech.json",
-  "events/2026-10-24-google-tb-screening.json",
-  "events/2026-10-24-kimi-k31-pro.json",
-  "events/2026-10-24-nvidia-tensorrt-global-performance-tuner.json",
-  "events/2026-10-24-openai-metr-agent-monitoring.json",
-  "events/2026-10-24-openai-securing-frontier-training.json",
-  "events/2026-10-24-vllm-glm53-opt-part2.json",
-  "events/2026-10-25-anthropic-single-agent-loop.json",
-  "events/2026-10-25-nvidia-flora-robot-data-engine.json",
-  "events/2026-10-25-openmobile-2-mobile-agents.json",
-  "events/2026-10-25-vllm-ds-v41-flash-scale.json",
-  "events/2026-10-27-baseten-bdn-sealed-volumes.json",
-  "events/2026-10-27-cloudflare-glm53-kv-cache.json",
-  "events/2026-10-27-cohere-qwen-concerning-behavior.json",
-  "events/2026-10-27-nvidia-minerva-gpu-yield.json",
-  "events/2026-10-27-nvidia-mission-control-25.json",
-  "events/2026-10-27-nvidia-moe-dgx-spark-inference.json",
-  "events/2026-10-27-openai-academic-science-collab.json",
-  "events/2026-10-27-openai-gpt61-terra.json",
-  "events/2026-10-27-opera-webai-local.json",
-  "events/2026-10-28-antgroup-ling-31-flash-1019.json",
-  "events/2026-10-28-baseten-qwen3-asr-batch.json",
-  "events/2026-10-28-cathedral-anthropic-agent-breach.json",
-  "events/2026-10-28-deepmind-gemini-4-carbon.json",
-  "events/2026-10-28-deepmind-genie-4.json",
-  "events/2026-10-28-frontier-labs-eth-refutation.json",
-  "events/2026-10-28-google-sleep-framework-continual.json",
-  "events/2026-10-28-hf-allenai-novelty-bench.json",
-  "events/2026-10-28-liquidai-lfm3.json",
-  "events/2026-10-28-microsoft-fy27-q1-earnings.json",
-  "events/2026-10-28-microsoft-mai-image-27.json",
-  "events/2026-10-28-nvidia-cuda-134-gpu-sharing.json",
-  "events/2026-10-28-nvidia-nemotron-35-transcribe.json",
-  "events/2026-10-28-nvidia-nemotron-local-rules.json",
-  "events/2026-10-28-nvidia-rtx-spark-games.json",
-  "events/2026-10-28-openai-oracle-apps-chatgpt.json",
-  "events/2026-10-28-openai-servicenow-partnership-expansion.json",
-  "events/2026-10-29-mistral-large-4-lechonk.json",
-  "events/2026-10-29-wiz-agentic-attacks.json",
-  "events/2026-10-30-openai-frontier-misalignment-detection.json",
-  "events/2026-10-30-openai-updated-model-spec.json",
-  "events/index.json",
-  "feed/selected.json",
-  "hot-snapshots/2026-10-27T20.json",
-  "hot-snapshots/2026-10-27T21.json",
-  "hot-snapshots/2026-10-28T00.json",
-  "hot-snapshots/2026-10-28T03.json",
-  "hot-snapshots/2026-10-28T09.json",
-  "hot-snapshots/2026-10-28T10.json",
-  "hot-snapshots/2026-10-28T12.json",
-  "hot-snapshots/2026-10-28T13.json",
-  "hot-snapshots/2026-10-28T15.json",
-  "hot-snapshots/2026-10-28T19.json",
-  "hot-snapshots/2026-10-29T00.json",
-  "hot-snapshots/2026-10-29T03.json",
-  "hot-snapshots/2026-10-29T08.json",
-  "hot-snapshots/2026-10-29T09.json",
-  "hot-snapshots/2026-10-29T12.json",
-  "hot-snapshots/2026-10-29T15.json",
-  "hot-snapshots/2026-10-29T19.json",
-  "hot-snapshots/2026-10-30T00.json",
-  "hot-snapshots/2026-10-30T03.json",
-  "hot-snapshots/2026-10-30T09.json",
-  "hot-strip.json",
-  "hot.json",
-  "meta.json",
-  "redirects.json",
-  "search/source.json",
-  "sources.json",
-  "timeline/index.json",
-  "timeline/page-1.json",
-  "timeline/page-2.json",
-  "timeline/page-3.json",
-  "timeline/page-4.json"
- ],
- "next_round": "2026-10-30T12:25:00+08:00"
+  "site": "前沿趋势",
+  "contract_version": "1.1",
+  "mode": "production",
+  "data_as_of": "2026-10-30T08:21:20+08:00",
+  "data_as_of_label": "数据截至 2026-10-30 08:21（北京时间）",
+  "generated_at": "2026-10-30T01:20:00.000Z",
+  "hot_rule_version": "heat-v1-48h-halflife24h (前沿情报 heat48h.py 1.1)",
+  "hot_computed_at": "2026-10-30T01:20:00.000Z",
+  "window_hours": 48,
+  "spark_points": 25,
+  "page_size": 20,
+  "counts": {
+    "cards": 78,
+    "pages": 4,
+    "events": 78,
+    "hot_entries": 4,
+    "search_docs": 213,
+    "feed_items": 50,
+    "passed_events": 78,
+    "below_threshold_events": 0,
+    "redirects": 0,
+    "hot_snapshots": 20,
+    "covers": 9
+  },
+  "last_round": {
+    "batch_id": "2026-10-30T0821",
+    "status": "ok",
+    "finished_at": "2026-10-30T09:14:32+08:00"
+  },
+  "batches": [
+    {
+      "batch_id": "2026-10-19T1124",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-19T1221",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-19T1323",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-19T1418",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-19T1524",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-19T1627",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-19T1726",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-19T1825",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-19T1923",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-19T2025",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-19T2136",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-19T2223",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-19T2347",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-20T0051",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-20T0121",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-20T0224",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-20T0321",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-20T0418",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-20T0522",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-20T0621",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-20T1055",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-20T1122",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-20T1218",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-20T1320",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-20T1424",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-20T1528",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-20T1623",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-20T1726",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-20T1822",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-20T1923",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-20T2025",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-20T2123",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-20T2221",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-20T2323",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-21T0026",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-21T0118",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-21T0221",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-21T0321",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-21T0427",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-21T0520",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-21T0624",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-21T0728",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-21T0826",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-21T0928",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-21T1019",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-21T1118",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-21T1227",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-21T1320",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-21T1419",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-21T1526",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-21T1606",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-21T1626",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-21T1718",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-21T1817",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-21T1925",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-21T2028",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-21T2127",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-21T2218",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-21T2319",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-22T0027",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-22T0125",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-22T0218",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-22T0320",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-22T0417",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-22T0519",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-22T0618",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-22T0725",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-22T0826",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-22T0925",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-22T1018",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-22T1127",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-22T1219",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-22T1320",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-22T1418",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-22T1526",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-22T1624",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-22T1722",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-22T1819",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-22T1923",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-22T2018",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-22T2122",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-22T2221",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-22T2319",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-23T0023",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-23T0119",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-23T0135",
+      "status": "partial"
+    },
+    {
+      "batch_id": "2026-10-23T0145",
+      "status": "partial"
+    },
+    {
+      "batch_id": "2026-10-23T0150",
+      "status": "partial"
+    },
+    {
+      "batch_id": "2026-10-23T0222",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-23T0312",
+      "status": "partial"
+    },
+    {
+      "batch_id": "2026-10-23T0322",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-23T0424",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-23T0522",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-23T0627",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-23T0725",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-23T0827",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-23T0856",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-23T0924",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-23T1023",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-23T1121",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-23T1226",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-23T1319",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-23T1520",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-23T1624",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-23T1724",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-23T1815",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-23T1820",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-23T1922",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-23T2021",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-23T2124",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-23T2222",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-23T2326",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-24T0019",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-24T0126",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-24T0221",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-24T0325",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-24T0422",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-24T0522",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-24T0621",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-24T0719",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-24T0824",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-24T0910",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-24T0919",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-24T0930",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-24T1022",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-24T1122",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-24T1222",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-24T1326",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-24T1419",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-24T1525",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-24T1620",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-24T1719",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-24T1821",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-24T1918",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-24T2019",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-24T2119",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-24T2219",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-24T2323",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-25T0020",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-25T0122",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-25T0223",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-25T0323",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-25T0425",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-25T0526",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-25T0626",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-25T0719",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-25T0817",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-25T0922",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-25T1026",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-25T1118",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-25T1223",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-25T1326",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-25T1527",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-25T1620",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-25T1650",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-25T1722",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-25T1823",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-25T1921",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-25T2018",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-25T2121",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-25T2145",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-25T2150",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-25T2223",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-26T2200",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-27T0830",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-27T2006",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-27T2013",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-27T2023",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-27T2106",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-27T2130",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-27T2225",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-27T2324",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-28T0025",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-28T0126",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-28T0220",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-28T0324",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-28T0422",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-28T0520",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-28T0624",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-28T0722",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-28T0827",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-28T0910",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-28T0925",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-28T1027",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-28T1030",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-28T1120",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-28T1226",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-28T1255",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-28T1318",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-28T1417",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-28T1525",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-28T1622",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-28T1724",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-28T1818",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-28T1927",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-28T2023",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-28T2126",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-28T2223",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-28T2327",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-29T0021",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-29T0120",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-29T0227",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-29T0320",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-29T0418",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-29T0619",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-29T0726",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-29T0818",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-29T0859",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-29T0925",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-29T1018",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-29T1122",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-29T1221",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-29T1320",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-29T1418",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-29T1525",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-29T1624",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-29T1722",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-29T1823",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-29T1924",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-29T2018",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-29T2123",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-29T2223",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-29T2324",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-30T0019",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-30T0124",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-30T0219",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-30T0318",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-30T0421",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-30T0520",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-30T0622",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-30T0726",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-10-30T0821",
+      "status": "ok"
+    }
+  ],
+  "files": [
+    "api/index.json",
+    "events/2026-10-19-deepseek-v41-flash-1017.json",
+    "events/2026-10-19-minimax-m31-flash.json",
+    "events/2026-10-19-nvidia-open-models-agents-pcs.json",
+    "events/2026-10-20-hf-torchneuron-trainium.json",
+    "events/2026-10-20-kling-ai-4-0.json",
+    "events/2026-10-21-chatgpt-ads-stack-expansion.json",
+    "events/2026-10-21-ibm-granite-speech-5.json",
+    "events/2026-10-21-mistral-nvidia-industrial-ai.json",
+    "events/2026-10-21-mistral-voxtral-3.json",
+    "events/2026-10-21-nvidia-kumo-forecast.json",
+    "events/2026-10-21-nvidia-rfd4-proteina.json",
+    "events/2026-10-21-openai-agent-monitoring-disabled.json",
+    "events/2026-10-21-openai-models-google-cloud.json",
+    "events/2026-10-21-openai-terminal-x-eval.json",
+    "events/2026-10-22-anthropic-claude-duet.json",
+    "events/2026-10-22-dharma-vocabx-slm.json",
+    "events/2026-10-22-google-ai-maternal-ultrasound.json",
+    "events/2026-10-22-litellm-pypi-compromise.json",
+    "events/2026-10-22-msr-kls-conjecture.json",
+    "events/2026-10-22-nvidia-microduck-isaac-lab.json",
+    "events/2026-10-22-openai-fde-means.json",
+    "events/2026-10-22-openai-gov-cyber-defenders.json",
+    "events/2026-10-22-recursive-flint-coding-model.json",
+    "events/2026-10-22-vllm-humming-kernels.json",
+    "events/2026-10-22-wiz-artex-storm0940.json",
+    "events/2026-10-22-wiz-llmjacking-cloud-billing.json",
+    "events/2026-10-23-allenai-olmoearth-v13.json",
+    "events/2026-10-23-anthropic-claude-formal-verification.json",
+    "events/2026-10-23-google-agent-compute-engine.json",
+    "events/2026-10-23-microsoft-mai-dxo.json",
+    "events/2026-10-23-microsoft-thinkingbox-rl.json",
+    "events/2026-10-23-msr-flint-interactive.json",
+    "events/2026-10-23-openai-decisions-api.json",
+    "events/2026-10-23-openai-nask-ai-safety.json",
+    "events/2026-10-23-uber-chatgpt-work-rollout.json",
+    "events/2026-10-24-anthropic-ukaisi-alignment.json",
+    "events/2026-10-24-baseten-environment-network.json",
+    "events/2026-10-24-block-dessa-speech.json",
+    "events/2026-10-24-google-tb-screening.json",
+    "events/2026-10-24-kimi-k31-pro.json",
+    "events/2026-10-24-nvidia-tensorrt-global-performance-tuner.json",
+    "events/2026-10-24-openai-metr-agent-monitoring.json",
+    "events/2026-10-24-openai-securing-frontier-training.json",
+    "events/2026-10-24-vllm-glm53-opt-part2.json",
+    "events/2026-10-25-anthropic-single-agent-loop.json",
+    "events/2026-10-25-nvidia-flora-robot-data-engine.json",
+    "events/2026-10-25-openmobile-2-mobile-agents.json",
+    "events/2026-10-25-vllm-ds-v41-flash-scale.json",
+    "events/2026-10-27-baseten-bdn-sealed-volumes.json",
+    "events/2026-10-27-cloudflare-glm53-kv-cache.json",
+    "events/2026-10-27-cohere-qwen-concerning-behavior.json",
+    "events/2026-10-27-nvidia-minerva-gpu-yield.json",
+    "events/2026-10-27-nvidia-mission-control-25.json",
+    "events/2026-10-27-nvidia-moe-dgx-spark-inference.json",
+    "events/2026-10-27-openai-academic-science-collab.json",
+    "events/2026-10-27-openai-gpt61-terra.json",
+    "events/2026-10-27-opera-webai-local.json",
+    "events/2026-10-28-antgroup-ling-31-flash-1019.json",
+    "events/2026-10-28-baseten-qwen3-asr-batch.json",
+    "events/2026-10-28-cathedral-anthropic-agent-breach.json",
+    "events/2026-10-28-deepmind-gemini-4-carbon.json",
+    "events/2026-10-28-deepmind-genie-4.json",
+    "events/2026-10-28-frontier-labs-eth-refutation.json",
+    "events/2026-10-28-google-sleep-framework-continual.json",
+    "events/2026-10-28-hf-allenai-novelty-bench.json",
+    "events/2026-10-28-liquidai-lfm3.json",
+    "events/2026-10-28-microsoft-fy27-q1-earnings.json",
+    "events/2026-10-28-microsoft-mai-image-27.json",
+    "events/2026-10-28-nvidia-cuda-134-gpu-sharing.json",
+    "events/2026-10-28-nvidia-nemotron-35-transcribe.json",
+    "events/2026-10-28-nvidia-nemotron-local-rules.json",
+    "events/2026-10-28-nvidia-rtx-spark-games.json",
+    "events/2026-10-28-openai-oracle-apps-chatgpt.json",
+    "events/2026-10-28-openai-servicenow-partnership-expansion.json",
+    "events/2026-10-29-mistral-large-4-lechonk.json",
+    "events/2026-10-29-wiz-agentic-attacks.json",
+    "events/2026-10-30-openai-frontier-misalignment-detection.json",
+    "events/2026-10-30-openai-updated-model-spec.json",
+    "events/index.json",
+    "feed/selected.json",
+    "hot-snapshots/2026-10-27T20.json",
+    "hot-snapshots/2026-10-27T21.json",
+    "hot-snapshots/2026-10-28T00.json",
+    "hot-snapshots/2026-10-28T03.json",
+    "hot-snapshots/2026-10-28T09.json",
+    "hot-snapshots/2026-10-28T10.json",
+    "hot-snapshots/2026-10-28T12.json",
+    "hot-snapshots/2026-10-28T13.json",
+    "hot-snapshots/2026-10-28T15.json",
+    "hot-snapshots/2026-10-28T19.json",
+    "hot-snapshots/2026-10-29T00.json",
+    "hot-snapshots/2026-10-29T03.json",
+    "hot-snapshots/2026-10-29T08.json",
+    "hot-snapshots/2026-10-29T09.json",
+    "hot-snapshots/2026-10-29T12.json",
+    "hot-snapshots/2026-10-29T15.json",
+    "hot-snapshots/2026-10-29T19.json",
+    "hot-snapshots/2026-10-30T00.json",
+    "hot-snapshots/2026-10-30T03.json",
+    "hot-snapshots/2026-10-30T09.json",
+    "hot-strip.json",
+    "hot.json",
+    "meta.json",
+    "redirects.json",
+    "search/source.json",
+    "sources.json",
+    "timeline/index.json",
+    "timeline/page-1.json",
+    "timeline/page-2.json",
+    "timeline/page-3.json",
+    "timeline/page-4.json"
+  ],
+  "next_round": "2026-10-30T12:25:00+08:00"
 }
