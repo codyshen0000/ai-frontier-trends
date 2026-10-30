@@ -96,7 +96,7 @@
    "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
    "latestAt": "2026-10-27T21:26:00.000Z",
    "reportCount": 2,
-   "hotRank": 5
+   "hotRank": null
   },
   {
    "publicId": "2026-10-27-cohere-qwen-concerning-behavior",

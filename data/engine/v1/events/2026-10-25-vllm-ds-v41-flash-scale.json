@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-25-vllm-ds-v41-flash-scale",
  "title": "vLLM：DeepSeek-V4.1-Flash 在 GB300 NVL72 吞吐逼近 DeepInfer",
- "status": "watching",
+ "status": "settled",
  "reportCount": 1,
  "sourceCount": 1,
  "firstReportAt": "2026-10-23T00:00:00.000Z",

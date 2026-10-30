@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-24-vllm-glm53-opt-part2",
  "title": "vLLM：GLM-5.3 在 16×H200 上用 PCP/DCP 与 Hybrid HiSparse",
- "status": "watching",
+ "status": "settled",
  "reportCount": 1,
  "sourceCount": 1,
  "firstReportAt": "2026-10-23T00:00:00.000Z",
