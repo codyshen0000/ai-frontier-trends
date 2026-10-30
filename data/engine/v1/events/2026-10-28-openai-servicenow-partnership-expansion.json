@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-28-openai-servicenow-partnership-expansion",
  "title": "OpenAI 与 ServiceNow 扩大企业工作流合作",
- "status": "active",
+ "status": "watching",
  "reportCount": 1,
  "sourceCount": 1,
  "firstReportAt": "2026-10-28T13:15:00.000Z",
@@ -13,10 +13,10 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 1,
+  "participants48h": 0,
   "newParticipants6h": 0,
   "recentReports24h": 0,
-  "observationComplete": true,
+  "observationComplete": false,
   "rank": null
  },
  "developments": [
@@ -67,243 +67,7 @@
    "originalUrl": "https://openai.com/index/openai-servicenow-partnership-expansion"
   }
  ],
- "heat": [
-  {
-   "hour": "2026-10-28T14:00:00.000Z",
-   "heat": 9.8,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T15:00:00.000Z",
-   "heat": 9.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T16:00:00.000Z",
-   "heat": 9.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T17:00:00.000Z",
-   "heat": 9.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T18:00:00.000Z",
-   "heat": 8.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T19:00:00.000Z",
-   "heat": 8.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T20:00:00.000Z",
-   "heat": 8.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T21:00:00.000Z",
-   "heat": 8.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T22:00:00.000Z",
-   "heat": 7.8,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-28T23:00:00.000Z",
-   "heat": 7.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T00:00:00.000Z",
-   "heat": 7.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T01:00:00.000Z",
-   "heat": 7.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T02:00:00.000Z",
-   "heat": 6.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T03:00:00.000Z",
-   "heat": 6.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T04:00:00.000Z",
-   "heat": 6.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T05:00:00.000Z",
-   "heat": 6.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T06:00:00.000Z",
-   "heat": 6.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T07:00:00.000Z",
-   "heat": 6.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T08:00:00.000Z",
-   "heat": 5.8,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T09:00:00.000Z",
-   "heat": 5.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T10:00:00.000Z",
-   "heat": 5.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T11:00:00.000Z",
-   "heat": 5.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T12:00:00.000Z",
-   "heat": 5.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T13:00:00.000Z",
-   "heat": 5.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T14:00:00.000Z",
-   "heat": 4.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T15:00:00.000Z",
-   "heat": 4.8,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T16:00:00.000Z",
-   "heat": 4.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T17:00:00.000Z",
-   "heat": 4.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T18:00:00.000Z",
-   "heat": 4.4,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T19:00:00.000Z",
-   "heat": 4.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T20:00:00.000Z",
-   "heat": 4.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T21:00:00.000Z",
-   "heat": 4.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T22:00:00.000Z",
-   "heat": 3.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T23:00:00.000Z",
-   "heat": 3.8,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T00:00:00.000Z",
-   "heat": 3.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T01:00:00.000Z",
-   "heat": 3.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T02:00:00.000Z",
-   "heat": 3.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T03:00:00.000Z",
-   "heat": 3.4,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T04:00:00.000Z",
-   "heat": 3.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T05:00:00.000Z",
-   "heat": 3.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T06:00:00.000Z",
-   "heat": 3.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T07:00:00.000Z",
-   "heat": 3.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T08:00:00.000Z",
-   "heat": 2.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T09:00:00.000Z",
-   "heat": 2.8,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T10:00:00.000Z",
-   "heat": 2.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T11:00:00.000Z",
-   "heat": 2.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T12:00:00.000Z",
-   "heat": 2.6,
-   "participants": 1
-  }
- ],
+ "heat": [],
  "related": [],
  "topics": [],
  "recommendReason": "OpenAI 与 ServiceNow 把模型/智能体与企业工作流双向打通",

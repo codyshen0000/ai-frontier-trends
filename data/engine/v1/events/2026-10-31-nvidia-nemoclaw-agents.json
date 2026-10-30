@@ -1,0 +1,80 @@
+{
+ "publicId": "2026-10-31-nvidia-nemoclaw-agents",
+ "title": "NVIDIA 发布 NemoClaw：在自控技术栈上构建专用智能体",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-30T16:00:00.000Z",
+ "latestAt": "2026-10-30T16:00:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "NVIDIA Developer Blog：介绍 NemoClaw，面向在可控自有栈上构建专用智能体。官方一手产品/框架发布。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-31-nvidia-nemoclaw-agents",
+   "title": "NVIDIA 发布 NemoClaw：在自控技术栈上构建专用智能体",
+   "firstReportAt": "2026-10-30T16:00:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:b0afceb347e7b188",
+    "title": "NVIDIA 发布 NemoClaw：在自控技术栈上构建专用智能体",
+    "summary": null,
+    "source": {
+     "name": "NVIDIA Technical Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-30T16:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:b0afceb347e7b188",
+   "title": "NVIDIA 发布 NemoClaw：在自控技术栈上构建专用智能体",
+   "summary": null,
+   "source": {
+    "name": "NVIDIA Technical Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-30T16:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:b0afceb347e7b188",
+   "title": "NVIDIA 发布 NemoClaw：在自控技术栈上构建专用智能体",
+   "summary": null,
+   "source": {
+    "name": "NVIDIA Technical Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-30T16:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-30T16:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "primaryUrl": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/"
+}

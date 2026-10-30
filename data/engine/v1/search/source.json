@@ -1,6 +1,29 @@
 {
- "generatedAt": "2026-10-30T12:20:00.000Z",
+ "generatedAt": "2026-10-30T16:43:00.000Z",
  "docs": [
+  {
+   "id": "sha256:b0afceb347e7b188",
+   "kind": "item",
+   "title": "NVIDIA 发布 NemoClaw：在自控技术栈上构建专用智能体",
+   "summary": null,
+   "publishedAt": "2026-10-30T16:00:00.000Z",
+   "sourceName": "NVIDIA Technical Blog",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-10-31-nvidia-nemoclaw-agents",
+   "originalUrl": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/"
+  },
+  {
+   "id": "2026-10-31-nvidia-nemoclaw-agents",
+   "kind": "event",
+   "title": "NVIDIA 发布 NemoClaw：在自控技术栈上构建专用智能体",
+   "summary": "NVIDIA Developer Blog：介绍 NemoClaw，面向在可控自有栈上构建专用智能体。官方一手产品/框架发布。",
+   "publishedAt": "2026-10-30T16:00:00.000Z",
+   "sourceNames": [
+    "NVIDIA Technical Blog"
+   ],
+   "path": "/events/2026-10-31-nvidia-nemoclaw-agents/"
+  },
   {
    "id": "sha256:8b9bb0507fd5a516",
    "kind": "item",
@@ -143,6 +166,29 @@
    "selected": false,
    "eventPublicId": "2026-10-29-mistral-large-4-lechonk",
    "originalUrl": "https://huggingface.co/blog/mistral-large4"
+  },
+  {
+   "id": "sha256:85f94c0fe8f02a81",
+   "kind": "item",
+   "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 达 954%",
+   "summary": null,
+   "publishedAt": "2026-10-29T00:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "industry",
+   "selected": true,
+   "eventPublicId": "2026-10-31-openai-credit-saison-roi",
+   "originalUrl": "https://openai.com/index/credit-saison"
+  },
+  {
+   "id": "2026-10-31-openai-credit-saison-roi",
+   "kind": "event",
+   "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 达 954%",
+   "summary": "OpenAI 客户故事：Credit Saison 企业试点披露 ROI 954%。官方一手案例；分数贴门槛。",
+   "publishedAt": "2026-10-29T00:00:00.000Z",
+   "sourceNames": [
+    "OpenAI News"
+   ],
+   "path": "/events/2026-10-31-openai-credit-saison-roi/"
   },
   {
    "id": "sha256:3801bfeec8403796",

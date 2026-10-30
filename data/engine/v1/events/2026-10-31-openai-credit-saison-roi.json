@@ -1,0 +1,280 @@
+{
+ "publicId": "2026-10-31-openai-credit-saison-roi",
+ "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 达 954%",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-29T00:00:00.000Z",
+ "latestAt": "2026-10-29T00:00:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "OpenAI 客户故事：Credit Saison 企业试点披露 ROI 954%。官方一手案例；分数贴门槛。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 0,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-31-openai-credit-saison-roi",
+   "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 达 954%",
+   "firstReportAt": "2026-10-29T00:00:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:85f94c0fe8f02a81",
+    "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 达 954%",
+    "summary": null,
+    "source": {
+     "name": "OpenAI News",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-29T00:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://openai.com/index/credit-saison"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:85f94c0fe8f02a81",
+   "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 达 954%",
+   "summary": null,
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-29T00:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/credit-saison"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:85f94c0fe8f02a81",
+   "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 达 954%",
+   "summary": null,
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-29T00:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/credit-saison"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-29T00:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-29T01:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-29T02:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-29T03:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-29T04:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-29T05:00:00.000Z",
+   "heat": 8.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-29T06:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-29T07:00:00.000Z",
+   "heat": 8.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-29T08:00:00.000Z",
+   "heat": 7.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-29T09:00:00.000Z",
+   "heat": 7.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-29T10:00:00.000Z",
+   "heat": 7.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-29T11:00:00.000Z",
+   "heat": 7.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-29T12:00:00.000Z",
+   "heat": 7.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-29T13:00:00.000Z",
+   "heat": 6.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-29T14:00:00.000Z",
+   "heat": 6.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-29T15:00:00.000Z",
+   "heat": 6.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-29T16:00:00.000Z",
+   "heat": 6.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-29T17:00:00.000Z",
+   "heat": 6.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-29T18:00:00.000Z",
+   "heat": 5.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-29T19:00:00.000Z",
+   "heat": 5.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-29T20:00:00.000Z",
+   "heat": 5.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-29T21:00:00.000Z",
+   "heat": 5.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-29T22:00:00.000Z",
+   "heat": 5.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-29T23:00:00.000Z",
+   "heat": 5.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T00:00:00.000Z",
+   "heat": 5.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T01:00:00.000Z",
+   "heat": 4.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T02:00:00.000Z",
+   "heat": 4.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T03:00:00.000Z",
+   "heat": 4.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T04:00:00.000Z",
+   "heat": 4.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T05:00:00.000Z",
+   "heat": 4.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T06:00:00.000Z",
+   "heat": 4.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T07:00:00.000Z",
+   "heat": 4.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T08:00:00.000Z",
+   "heat": 4.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T09:00:00.000Z",
+   "heat": 3.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T10:00:00.000Z",
+   "heat": 3.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T11:00:00.000Z",
+   "heat": 3.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T12:00:00.000Z",
+   "heat": 3.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T13:00:00.000Z",
+   "heat": 3.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T14:00:00.000Z",
+   "heat": 3.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T15:00:00.000Z",
+   "heat": 3.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T16:00:00.000Z",
+   "heat": 3.1,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "primaryUrl": "https://openai.com/index/credit-saison"
+}

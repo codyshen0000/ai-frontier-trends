@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-22-nvidia-microduck-isaac-lab",
  "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
- "status": "watching",
+ "status": "settled",
  "reportCount": 2,
  "sourceCount": 2,
  "firstReportAt": "2026-10-21T17:58:42.000Z",

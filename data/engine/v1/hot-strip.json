@@ -2,7 +2,7 @@
  {
   "rank": 1,
   "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
-  "heat": 30.4,
+  "heat": 26.8,
   "trend": "down",
   "storyPublicId": "2026-10-29-mistral-large-4-lechonk",
   "itemId": "sha256:5a25565ab71a8d06",
@@ -12,11 +12,11 @@
     "kind": "editorial"
    },
    {
-    "name": "vLLM Blog",
+    "name": "Hugging Face Blog",
     "kind": "editorial"
    },
    {
-    "name": "Hugging Face Blog",
+    "name": "vLLM Blog",
     "kind": "editorial"
    },
    {
@@ -37,7 +37,7 @@
  {
   "rank": 2,
   "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
-  "heat": 15.7,
+  "heat": 13.9,
   "trend": "down",
   "storyPublicId": "2026-10-28-deepmind-gemini-4-carbon",
   "itemId": "sha256:3e32bae570ff21ee",
@@ -67,31 +67,8 @@
  },
  {
   "rank": 3,
-  "title": "NVIDIA 发布开源 Nemotron 3.5 Transcribe 与 Granary v2",
-  "heat": 8.2,
-  "trend": "down",
-  "storyPublicId": "2026-10-28-nvidia-nemotron-35-transcribe",
-  "itemId": "sha256:ec733f799e1aaee3",
-  "participants": [
-   {
-    "name": "Hugging Face Blog",
-    "kind": "editorial"
-   },
-   {
-    "name": "The Decoder",
-    "kind": "editorial"
-   },
-   {
-    "name": "TechCrunch · AI",
-    "kind": "editorial"
-   }
-  ],
-  "participantCount": 3
- },
- {
-  "rank": 4,
   "title": "微软首次披露 Azure 季度营收约 33.2 亿美元",
-  "heat": 6.4,
+  "heat": 5.7,
   "trend": "down",
   "storyPublicId": "2026-10-28-microsoft-fy27-q1-earnings",
   "itemId": "sha256:3801bfeec8403796",

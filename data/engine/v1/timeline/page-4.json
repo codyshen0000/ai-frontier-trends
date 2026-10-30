@@ -6,6 +6,52 @@
  },
  "cards": [
   {
+   "key": "sha256:27c0a5d3fc255134",
+   "anchorAt": "2026-10-21T16:23:53.000Z",
+   "item": {
+    "id": "sha256:27c0a5d3fc255134",
+    "title": "谷歌：用 AI 辅助一线孕产超声，服务基层母婴筛查",
+    "summary": "Google Research 介绍 AI 辅助一线孕产超声。",
+    "reason": "谷歌：AI 辅助一线孕产超声筛查",
+    "source": {
+     "name": "Google Research Blog"
+    },
+    "publishedAt": "2026-10-21T16:23:53.000Z",
+    "timelineAt": "2026-10-21T16:23:53.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-22-google-ai-maternal-ultrasound",
+    "originalUrl": "https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:77ec6ad66af3dcc4",
+   "anchorAt": "2026-10-21T16:00:00.000Z",
+   "item": {
+    "id": "sha256:77ec6ad66af3dcc4",
+    "title": "微软研究院：宣布解决数学界 31 年难题 KLS 猜想",
+    "summary": "MSR 称解决 KLS 猜想，移除高维随机算法理论障碍。",
+    "reason": "微软研究院宣布解决 KLS 猜想（31 年）",
+    "source": {
+     "name": "Microsoft Research Blog"
+    },
+    "publishedAt": "2026-10-21T16:00:00.000Z",
+    "timelineAt": "2026-10-21T16:00:00.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-22-msr-kls-conjecture",
+    "originalUrl": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:c2ed162a157709f5",
    "anchorAt": "2026-10-21T14:58:18.000Z",
    "item": {
@@ -474,5 +520,5 @@
  "dayCounts": {},
  "page": 4,
  "pageCount": 4,
- "total": 78
+ "total": 80
 }

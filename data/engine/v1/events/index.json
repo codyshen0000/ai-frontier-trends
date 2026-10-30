@@ -1,6 +1,13 @@
 {
  "events": [
   {
+   "publicId": "2026-10-31-nvidia-nemoclaw-agents",
+   "title": "NVIDIA 发布 NemoClaw：在自控技术栈上构建专用智能体",
+   "latestAt": "2026-10-30T16:00:00.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
    "publicId": "2026-10-29-mistral-large-4-lechonk",
    "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
    "latestAt": "2026-10-30T01:09:09.000Z",
@@ -29,11 +36,18 @@
    "hotRank": null
   },
   {
+   "publicId": "2026-10-31-openai-credit-saison-roi",
+   "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 达 954%",
+   "latestAt": "2026-10-29T00:00:00.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
    "publicId": "2026-10-28-microsoft-fy27-q1-earnings",
    "title": "微软首次披露 Azure 季度营收约 33.2 亿美元",
    "latestAt": "2026-10-28T21:58:32.000Z",
    "reportCount": 4,
-   "hotRank": 4
+   "hotRank": 3
   },
   {
    "publicId": "2026-10-28-deepmind-gemini-4-carbon",
@@ -54,7 +68,7 @@
    "title": "NVIDIA 发布开源 Nemotron 3.5 Transcribe 与 Granary v2",
    "latestAt": "2026-10-28T14:58:17.000Z",
    "reportCount": 1,
-   "hotRank": 3
+   "hotRank": null
   },
   {
    "publicId": "2026-10-28-openai-servicenow-partnership-expansion",

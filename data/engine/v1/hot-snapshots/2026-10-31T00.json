@@ -1,0 +1,23 @@
+{
+ "computedAt": "2026-10-30T16:43:00.000Z",
+ "entries": [
+  {
+   "rank": 1,
+   "publicId": "2026-10-29-mistral-large-4-lechonk",
+   "heat": 26.8,
+   "participantCount": 6
+  },
+  {
+   "rank": 2,
+   "publicId": "2026-10-28-deepmind-gemini-4-carbon",
+   "heat": 13.9,
+   "participantCount": 5
+  },
+  {
+   "rank": 3,
+   "publicId": "2026-10-28-microsoft-fy27-q1-earnings",
+   "heat": 5.7,
+   "participantCount": 2
+  }
+ ]
+}

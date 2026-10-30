@@ -6,6 +6,29 @@
  },
  "cards": [
   {
+   "key": "sha256:b0afceb347e7b188",
+   "anchorAt": "2026-10-30T16:00:00.000Z",
+   "item": {
+    "id": "sha256:b0afceb347e7b188",
+    "title": "NVIDIA 发布 NemoClaw：在自控技术栈上构建专用智能体",
+    "summary": null,
+    "reason": null,
+    "source": {
+     "name": "NVIDIA Technical Blog"
+    },
+    "publishedAt": "2026-10-30T16:00:00.000Z",
+    "timelineAt": "2026-10-30T16:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-31-nvidia-nemoclaw-agents",
+    "originalUrl": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:9349f418e7bc7ab4",
    "anchorAt": "2026-10-29T17:00:00.000Z",
    "item": {
@@ -101,6 +124,29 @@
     "x": null,
     "storyPublicId": "2026-10-30-openai-frontier-misalignment-detection",
     "originalUrl": "https://openai.com/index/how-we-detect-frontier-model-misalignment"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:85f94c0fe8f02a81",
+   "anchorAt": "2026-10-29T00:00:00.000Z",
+   "item": {
+    "id": "sha256:85f94c0fe8f02a81",
+    "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 达 954%",
+    "summary": null,
+    "reason": null,
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-29T00:00:00.000Z",
+    "timelineAt": "2026-10-29T00:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-31-openai-credit-saison-roi",
+    "originalUrl": "https://openai.com/index/credit-saison"
    },
    "group": null
   },
@@ -477,52 +523,6 @@
     "originalUrl": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/"
    },
    "group": null
-  },
-  {
-   "key": "sha256:b836eb939c37ffa5",
-   "anchorAt": "2026-10-27T15:00:00.000Z",
-   "item": {
-    "id": "sha256:b836eb939c37ffa5",
-    "title": "NVIDIA：在 DGX Spark 上加速 MoE 推理的三种方法",
-    "summary": "NVIDIA 技术博客介绍 DGX Spark 上 MoE 推理的内核、量化与 speculative decoding 路径。",
-    "reason": "NVIDIA 给出 DGX Spark 上 MoE 推理三项加速路径",
-    "source": {
-     "name": "NVIDIA Technical Blog"
-    },
-    "publishedAt": "2026-10-27T15:00:00.000Z",
-    "timelineAt": "2026-10-27T15:00:00.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-27-nvidia-moe-dgx-spark-inference",
-    "originalUrl": "https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark/"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:257d2044442d252a",
-   "anchorAt": "2026-10-27T13:00:00.000Z",
-   "item": {
-    "id": "sha256:257d2044442d252a",
-    "title": "Opera 推出 WebAI：浏览器本地部署 AI",
-    "summary": "TechCrunch 报道 Opera 提出 WebAI，让用户在浏览器本地部署 AI；一手见 Opera 博客。",
-    "reason": "Opera 提出 WebAI，浏览器内本地运行 AI 模型",
-    "source": {
-     "name": "TechCrunch · AI"
-    },
-    "publishedAt": "2026-10-27T13:00:00.000Z",
-    "timelineAt": "2026-10-27T13:00:00.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-27-opera-webai-local",
-    "originalUrl": "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-2.json",
@@ -530,7 +530,7 @@
   {
    "rank": 1,
    "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
-   "heat": 30.4,
+   "heat": 26.8,
    "trend": "down",
    "storyPublicId": "2026-10-29-mistral-large-4-lechonk",
    "itemId": "sha256:5a25565ab71a8d06",
@@ -540,11 +540,11 @@
      "kind": "editorial"
     },
     {
-     "name": "vLLM Blog",
+     "name": "Hugging Face Blog",
      "kind": "editorial"
     },
     {
-     "name": "Hugging Face Blog",
+     "name": "vLLM Blog",
      "kind": "editorial"
     },
     {
@@ -565,7 +565,7 @@
   {
    "rank": 2,
    "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
-   "heat": 15.7,
+   "heat": 13.9,
    "trend": "down",
    "storyPublicId": "2026-10-28-deepmind-gemini-4-carbon",
    "itemId": "sha256:3e32bae570ff21ee",
@@ -595,31 +595,8 @@
   },
   {
    "rank": 3,
-   "title": "NVIDIA 发布开源 Nemotron 3.5 Transcribe 与 Granary v2",
-   "heat": 8.2,
-   "trend": "down",
-   "storyPublicId": "2026-10-28-nvidia-nemotron-35-transcribe",
-   "itemId": "sha256:ec733f799e1aaee3",
-   "participants": [
-    {
-     "name": "Hugging Face Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 3
-  },
-  {
-   "rank": 4,
    "title": "微软首次披露 Azure 季度营收约 33.2 亿美元",
-   "heat": 6.4,
+   "heat": 5.7,
    "trend": "down",
    "storyPublicId": "2026-10-28-microsoft-fy27-q1-earnings",
    "itemId": "sha256:3801bfeec8403796",
@@ -637,8 +614,9 @@
   }
  ],
  "dayCounts": {
+  "2026-10-31": 1,
   "2026-10-30": 1,
-  "2026-10-29": 6,
+  "2026-10-29": 7,
   "2026-10-28": 11,
   "2026-10-27": 9,
   "2026-10-26": 3,
@@ -653,5 +631,5 @@
  },
  "page": 1,
  "pageCount": 4,
- "total": 78
+ "total": 80
 }

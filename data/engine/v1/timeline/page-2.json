@@ -6,6 +6,52 @@
  },
  "cards": [
   {
+   "key": "sha256:b836eb939c37ffa5",
+   "anchorAt": "2026-10-27T15:00:00.000Z",
+   "item": {
+    "id": "sha256:b836eb939c37ffa5",
+    "title": "NVIDIA：在 DGX Spark 上加速 MoE 推理的三种方法",
+    "summary": "NVIDIA 技术博客介绍 DGX Spark 上 MoE 推理的内核、量化与 speculative decoding 路径。",
+    "reason": "NVIDIA 给出 DGX Spark 上 MoE 推理三项加速路径",
+    "source": {
+     "name": "NVIDIA Technical Blog"
+    },
+    "publishedAt": "2026-10-27T15:00:00.000Z",
+    "timelineAt": "2026-10-27T15:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-27-nvidia-moe-dgx-spark-inference",
+    "originalUrl": "https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:257d2044442d252a",
+   "anchorAt": "2026-10-27T13:00:00.000Z",
+   "item": {
+    "id": "sha256:257d2044442d252a",
+    "title": "Opera 推出 WebAI：浏览器本地部署 AI",
+    "summary": "TechCrunch 报道 Opera 提出 WebAI，让用户在浏览器本地部署 AI；一手见 Opera 博客。",
+    "reason": "Opera 提出 WebAI，浏览器内本地运行 AI 模型",
+    "source": {
+     "name": "TechCrunch · AI"
+    },
+    "publishedAt": "2026-10-27T13:00:00.000Z",
+    "timelineAt": "2026-10-27T13:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-27-opera-webai-local",
+    "originalUrl": "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:c417f8e3d39d0b89",
    "anchorAt": "2026-10-27T07:00:00.000Z",
    "item": {
@@ -521,59 +567,6 @@
     "originalUrl": "https://www.baseten.co/blog/introducing-the-baseten-environment-network/"
    },
    "group": null
-  },
-  {
-   "key": "sha256:1456ee151a5392db",
-   "anchorAt": "2026-10-23T17:27:52.000Z",
-   "item": {
-    "id": "sha256:1456ee151a5392db",
-    "title": "NVIDIA：TensorRT Global Performance Tuner 跨多条构建路线寻优",
-    "summary": "NVIDIA 技术博客 Part 2：Global Performance Tuner 自动跨构建寻优。",
-    "reason": "TensorRT 11.1 Global Performance Tuner 跨",
-    "source": {
-     "name": "NVIDIA Technical Blog"
-    },
-    "publishedAt": "2026-10-23T17:27:52.000Z",
-    "timelineAt": "2026-10-23T17:27:52.000Z",
-    "category": "tutorial",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-24-nvidia-tensorrt-global-performance-tuner",
-    "originalUrl": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-2/"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:cfa117fe12523c03",
-   "anchorAt": "2026-10-23T17:19:49.000Z",
-   "item": {
-    "id": "sha256:cfa117fe12523c03",
-    "title": "Anthropic：复盘 AISI 事件，内部研究模型更能自行停止攻击",
-    "summary": "Decoder 报道 Anthropic 对 AISI Mythos 5 事件的对齐复盘；已核实官方研究帖并 hop。",
-    "reason": "Anthropic 复盘 AISI 测试：内部模型更能自行停攻",
-    "source": {
-     "name": "The Decoder"
-    },
-    "publishedAt": "2026-10-23T17:19:49.000Z",
-    "timelineAt": "2026-10-23T17:19:49.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-24-anthropic-ukaisi-alignment",
-    "originalUrl": "https://the-decoder.com/anthropic-says-its-unreleased-model-is-both-more-capable-and-better-aligned-than-mythos-5-1/"
-   },
-   "group": {
-    "factId": "fact-2026-10-24-anthropic-ukaisi-alignment",
-    "additionalSourceCount": 2,
-    "reportCount": 3,
-    "memberIds": [
-     "sha256:cfa117fe12523c03"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-3.json",
@@ -581,5 +574,5 @@
  "dayCounts": {},
  "page": 2,
  "pageCount": 4,
- "total": 78
+ "total": 80
 }

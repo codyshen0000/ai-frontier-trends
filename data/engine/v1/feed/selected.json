@@ -8,6 +8,17 @@
  },
  "items": [
   {
+   "guid": "sha256:b0afceb347e7b188",
+   "title": "NVIDIA 发布 NemoClaw：在自控技术栈上构建专用智能体",
+   "summary": "",
+   "originalUrl": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/",
+   "pubDate": "2026-10-30T16:00:00.000Z",
+   "sourceName": "NVIDIA Technical Blog",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-10-31-nvidia-nemoclaw-agents"
+  },
+  {
    "guid": "sha256:9349f418e7bc7ab4",
    "title": "OpenAI 更新 Model Spec：五条核心价值",
    "summary": "OpenAI 发布更新版 Model Spec，概述五条核心价值，引导更强模型在判断力、人类能动性与忠实人类意图上的行为。官方对齐规范。",
@@ -50,6 +61,17 @@
    "category": "paper",
    "categoryLabel": "论文",
    "eventPublicId": "2026-10-30-openai-frontier-misalignment-detection"
+  },
+  {
+   "guid": "sha256:85f94c0fe8f02a81",
+   "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 达 954%",
+   "summary": "",
+   "originalUrl": "https://openai.com/index/credit-saison",
+   "pubDate": "2026-10-29T00:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "industry",
+   "categoryLabel": "行业",
+   "eventPublicId": "2026-10-31-openai-credit-saison-roi"
   },
   {
    "guid": "sha256:3801bfeec8403796",
@@ -534,28 +556,6 @@
    "category": "product",
    "categoryLabel": "产品",
    "eventPublicId": "2026-10-23-openai-decisions-api"
-  },
-  {
-   "guid": "sha256:5ddee939d5fa55a3",
-   "title": "微软：发布诊断编排器，复杂病例准确率称超医生",
-   "summary": "Verge：Suleyman 称诊断工具准确率高于医生；对标 Science/微软稿。",
-   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
-   "pubDate": "2026-10-22T18:00:00.000Z",
-   "sourceName": "The Verge · AI",
-   "category": "paper",
-   "categoryLabel": "论文",
-   "eventPublicId": "2026-10-23-microsoft-mai-dxo"
-  },
-  {
-   "guid": "sha256:7ea705cfe9f05665",
-   "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
-   "summary": "Decoder 报道；一跳确认 Google Cloud 官方博客。",
-   "originalUrl": "https://the-decoder.com/googles-agent-compute-engine-gives-every-gemini-agent-its-own-hardware-isolated-micro-virtual-machine/",
-   "pubDate": "2026-10-22T17:50:09.000Z",
-   "sourceName": "The Decoder",
-   "category": "product",
-   "categoryLabel": "产品",
-   "eventPublicId": "2026-10-23-google-agent-compute-engine"
   }
  ]
 }
