@@ -1,5 +1,5 @@
 {
-  "computedAt": "2026-10-29T19:38:00.000Z",
+  "computedAt": "2026-10-30T01:20:00.000Z",
   "windowHours": 48,
   "entries": [
     {
@@ -8,12 +8,10 @@
         "publicId": "2026-10-29-mistral-large-4-lechonk",
         "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重"
       },
-      "heat": 37.5,
-      "trend": "up",
-      "trendPct": 63,
-      "badges": [
-        "rising"
-      ],
+      "heat": 31.8,
+      "trend": "down",
+      "trendPct": -15.9,
+      "badges": [],
       "participantCount": 5,
       "sourceCount": 5,
       "sourceNames": [
@@ -46,12 +44,6 @@
         }
       ],
       "spark": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        20,
         19.4,
         18.9,
         18.3,
@@ -70,13 +62,19 @@
         31.3,
         40.5,
         39.3,
-        38.2
+        38.2,
+        37.1,
+        36,
+        35,
+        34,
+        33,
+        32.1
       ],
       "summary": "Mistral 发布并开源 Mistral Large 4（代号 Le Chonk）权重：约 1 万亿参数、原生多模态，称在开源权重编码评测领先并强化防御性网络安全；提供多种推理模式以平衡成本与性能，在欧洲基础设施训练。同日 vLLM 宣布 Day-0 支持（稀疏 MLA、跨层 KV 共享等），Hugging Face 发文欢迎上架。",
       "latest": null,
       "cover": null,
       "rankDelta": 0,
-      "heatDeltaPct": 22.5
+      "heatDeltaPct": -15.2
     },
     {
       "rank": 2,
@@ -84,9 +82,9 @@
         "publicId": "2026-10-28-deepmind-gemini-4-carbon",
         "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升"
       },
-      "heat": 25.5,
+      "heat": 21.6,
       "trend": "down",
-      "trendPct": -15.8,
+      "trendPct": -16,
       "badges": [],
       "participantCount": 5,
       "sourceCount": 4,
@@ -119,12 +117,6 @@
         }
       ],
       "spark": [
-        9.4,
-        19,
-        38.1,
-        37,
-        36,
-        35,
         43.7,
         42.5,
         41.2,
@@ -143,13 +135,19 @@
         28.3,
         27.5,
         26.7,
-        26
+        26,
+        25.2,
+        24.5,
+        23.8,
+        23.1,
+        22.5,
+        21.8
       ],
       "summary": null,
       "latest": null,
       "cover": null,
       "rankDelta": 0,
-      "heatDeltaPct": -7.6
+      "heatDeltaPct": -15.3
     },
     {
       "rank": 3,
@@ -157,9 +155,9 @@
         "publicId": "2026-10-28-nvidia-nemotron-35-transcribe",
         "title": "NVIDIA 发布开源 Nemotron 3.5 Transcribe 与 Granary v2"
       },
-      "heat": 13.2,
+      "heat": 11.2,
       "trend": "down",
-      "trendPct": -15.9,
+      "trendPct": -15.8,
       "badges": [],
       "participantCount": 3,
       "sourceCount": 3,
@@ -183,12 +181,6 @@
         }
       ],
       "spark": [
-        26.9,
-        26.2,
-        25.4,
-        24.7,
-        24,
-        23.3,
         22.6,
         22,
         21.4,
@@ -207,13 +199,19 @@
         14.7,
         14.3,
         13.9,
-        13.5
+        13.5,
+        13.1,
+        12.7,
+        12.3,
+        12,
+        11.7,
+        11.3
       ],
       "summary": "NVIDIA 在 Hugging Face 发布开源权重 Nemotron 3.5 Transcribe：单检查点可做多语转写（约 40 语）、说话人归属、翻译与音频问答，并可用自然语言提示；同日给出 Granary v2 多语语音数据与微调工具。属官方模型/数据发布。",
       "latest": null,
       "cover": null,
       "rankDelta": 0,
-      "heatDeltaPct": -7.7
+      "heatDeltaPct": -15.2
     },
     {
       "rank": 4,
@@ -221,9 +219,9 @@
         "publicId": "2026-10-28-microsoft-fy27-q1-earnings",
         "title": "微软首次披露 Azure 季度营收约 33.2 亿美元"
       },
-      "heat": 10.6,
+      "heat": 8.9,
       "trend": "down",
-      "trendPct": -14.5,
+      "trendPct": -15.2,
       "badges": [],
       "participantCount": 2,
       "sourceCount": 1,
@@ -241,12 +239,6 @@
         }
       ],
       "spark": [
-        null,
-        null,
-        9.8,
-        19.5,
-        18.9,
-        18.4,
         17.9,
         17.3,
         16.9,
@@ -265,72 +257,19 @@
         11.6,
         11.2,
         10.9,
-        10.6
+        10.6,
+        10.3,
+        10,
+        9.7,
+        9.5,
+        9.2,
+        8.9
       ],
       "summary": "TechCrunch 称微软首次以美元披露 Azure 季度营收约 33.2 亿美元；同季总营收约 922.79 亿美元（同比 +19%），并披露来自 OpenAI 安排收入约 10 亿美元。属财报解读二手，关键数字来自业绩披露。",
       "latest": "同季披露来自 OpenAI 安排收入约 10 亿美元",
       "cover": null,
       "rankDelta": 0,
-      "heatDeltaPct": 1.9
-    },
-    {
-      "rank": 5,
-      "story": {
-        "publicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
-        "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享"
-      },
-      "heat": 5.3,
-      "trend": "down",
-      "trendPct": -14.5,
-      "badges": [],
-      "participantCount": 2,
-      "sourceCount": 2,
-      "sourceNames": [
-        "DevOTD",
-        "NVIDIA Technical Blog"
-      ],
-      "participants": [
-        {
-          "name": "NVIDIA Technical Blog",
-          "kind": "editorial"
-        },
-        {
-          "name": "DevOTD",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        10.6,
-        10.3,
-        10,
-        9.8,
-        9.5,
-        9.2,
-        8.9,
-        8.7,
-        8.4,
-        8.2,
-        8,
-        7.7,
-        7.5,
-        7.3,
-        7.1,
-        6.9,
-        6.7,
-        6.5,
-        6.3,
-        6.1,
-        6,
-        5.8,
-        5.6,
-        5.5,
-        5.3
-      ],
-      "summary": "NVIDIA 技术博客介绍 CUDA 13.4 在 Kubernetes 中的内存强制 GPU 共享：按显存配额切分单卡，减少小负载独占整卡造成的空闲。属厂商开发者文档级发布。",
-      "latest": "DevOTD 跟进：内存边界与 KAI Scheduler 对接（hot_floor 第二源）。",
-      "cover": null,
-      "rankDelta": 0,
-      "heatDeltaPct": 1.9
+      "heatDeltaPct": 1.1
     }
   ]
 }
