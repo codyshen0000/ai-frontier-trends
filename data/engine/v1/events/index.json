@@ -1,6 +1,13 @@
 {
  "events": [
   {
+   "publicId": "2026-10-30-openai-updated-model-spec",
+   "title": "OpenAI 更新 Model Spec 行为规范",
+   "latestAt": "2026-10-30T17:44:59.000Z",
+   "reportCount": 2,
+   "hotRank": 2
+  },
+  {
    "publicId": "2026-10-31-nvidia-nemoclaw-agents",
    "title": "NVIDIA：发布 NemoClaw，在可控栈上构建专用智能体",
    "latestAt": "2026-10-30T16:00:00.000Z",
@@ -15,18 +22,25 @@
    "hotRank": null
   },
   {
+   "publicId": "2026-10-31-openai-ai-training-preferences",
+   "title": "OpenAI：让网站更容易表达 AI 训练偏好",
+   "latestAt": "2026-10-30T09:30:00.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
+   "publicId": "2026-10-31-openai-teen-community-safety",
+   "title": "OpenAI：发布社区安全报告并加强青少年保护",
+   "latestAt": "2026-10-30T09:00:00.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
    "publicId": "2026-10-29-mistral-large-4-lechonk",
    "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
    "latestAt": "2026-10-30T01:09:09.000Z",
    "reportCount": 4,
    "hotRank": 1
-  },
-  {
-   "publicId": "2026-10-30-openai-updated-model-spec",
-   "title": "OpenAI 更新 Model Spec：五条核心价值",
-   "latestAt": "2026-10-29T17:00:00.000Z",
-   "reportCount": 1,
-   "hotRank": null
   },
   {
    "publicId": "2026-10-29-wiz-agentic-attacks",
@@ -54,14 +68,14 @@
    "title": "微软首次披露 Azure 季度营收约 33.2 亿美元",
    "latestAt": "2026-10-28T21:58:32.000Z",
    "reportCount": 4,
-   "hotRank": 3
+   "hotRank": 4
   },
   {
    "publicId": "2026-10-28-deepmind-gemini-4-carbon",
    "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
    "latestAt": "2026-10-28T19:17:58.000Z",
    "reportCount": 2,
-   "hotRank": 2
+   "hotRank": 3
   },
   {
    "publicId": "2026-10-28-baseten-qwen3-asr-batch",

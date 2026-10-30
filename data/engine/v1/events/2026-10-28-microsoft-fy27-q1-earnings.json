@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 3
+  "rank": 4
  },
  "developments": [
   {
@@ -310,11 +310,26 @@
    "hour": "2026-10-30T16:00:00.000Z",
    "heat": 5.8,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-30T17:00:00.000Z",
+   "heat": 5.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-30T18:00:00.000Z",
+   "heat": 5.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-30T19:00:00.000Z",
+   "heat": 5.3,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "微软首次公布 Azure 单季美元营收约 33.2 亿",
  "primaryUrl": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
- "rankDelta": 1
+ "rankDelta": -1
 }

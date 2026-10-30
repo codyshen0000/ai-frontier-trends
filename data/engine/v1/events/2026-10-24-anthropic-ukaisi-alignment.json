@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-24-anthropic-ukaisi-alignment",
  "title": "Anthropic：复盘 AISI 事件，内部研究模型更能自行停止攻击",
- "status": "watching",
+ "status": "settled",
  "reportCount": 3,
  "sourceCount": 3,
  "firstReportAt": "2026-10-23T17:19:49.000Z",

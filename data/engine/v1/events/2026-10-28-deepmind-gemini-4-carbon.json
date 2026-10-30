@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-28-deepmind-gemini-4-carbon",
  "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
- "status": "active",
+ "status": "watching",
  "reportCount": 2,
  "sourceCount": 2,
  "firstReportAt": "2026-10-28T17:00:58.000Z",
@@ -13,11 +13,11 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 5,
+  "participants48h": 3,
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 2
+  "rank": 3
  },
  "developments": [
   {
@@ -80,11 +80,6 @@
   }
  ],
  "heat": [
-  {
-   "hour": "2026-10-28T18:00:00.000Z",
-   "heat": 9.7,
-   "participants": 1
-  },
   {
    "hour": "2026-10-28T19:00:00.000Z",
    "heat": 9.4,
@@ -314,11 +309,26 @@
    "hour": "2026-10-30T16:00:00.000Z",
    "heat": 14.2,
    "participants": 5
+  },
+  {
+   "hour": "2026-10-30T17:00:00.000Z",
+   "heat": 13.8,
+   "participants": 5
+  },
+  {
+   "hour": "2026-10-30T18:00:00.000Z",
+   "heat": 10.9,
+   "participants": 4
+  },
+  {
+   "hour": "2026-10-30T19:00:00.000Z",
+   "heat": 10.6,
+   "participants": 4
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "DeepMind 发布 Gemini 4 Carbon，网安与长程编码领先",
  "primaryUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
- "rankDelta": 0
+ "rankDelta": -1
 }

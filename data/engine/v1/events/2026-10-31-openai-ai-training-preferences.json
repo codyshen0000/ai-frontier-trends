@@ -1,0 +1,126 @@
+{
+ "publicId": "2026-10-31-openai-ai-training-preferences",
+ "title": "OpenAI：让网站更容易表达 AI 训练偏好",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-30T09:30:00.000Z",
+ "latestAt": "2026-10-30T09:30:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "OpenAI 官方：将尊重共享 robots.txt 信号，帮助站点向参与方声明 AI 训练偏好。行业政策；本窗过闸。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-31-openai-ai-training-preferences",
+   "title": "OpenAI：让网站更容易表达 AI 训练偏好",
+   "firstReportAt": "2026-10-30T09:30:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:84abd1857de5dfd9",
+    "title": "OpenAI：让网站更容易表达 AI 训练偏好",
+    "summary": "OpenAI 将尊重 robots.txt 训练偏好信号；过闸。",
+    "source": {
+     "name": "OpenAI News",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-30T09:30:00.000Z",
+    "selected": true,
+    "originalUrl": "https://openai.com/index/helping-websites-express-ai-training-preferences"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:84abd1857de5dfd9",
+   "title": "OpenAI：让网站更容易表达 AI 训练偏好",
+   "summary": "OpenAI 将尊重 robots.txt 训练偏好信号；过闸。",
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-30T09:30:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/helping-websites-express-ai-training-preferences"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:84abd1857de5dfd9",
+   "title": "OpenAI：让网站更容易表达 AI 训练偏好",
+   "summary": "OpenAI 将尊重 robots.txt 训练偏好信号；过闸。",
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-30T09:30:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/helping-websites-express-ai-training-preferences"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-30T10:00:00.000Z",
+   "heat": 9.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T11:00:00.000Z",
+   "heat": 9.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T12:00:00.000Z",
+   "heat": 9.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T13:00:00.000Z",
+   "heat": 9.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T14:00:00.000Z",
+   "heat": 8.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T15:00:00.000Z",
+   "heat": 8.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T16:00:00.000Z",
+   "heat": 8.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T17:00:00.000Z",
+   "heat": 8.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T18:00:00.000Z",
+   "heat": 7.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T19:00:00.000Z",
+   "heat": 7.6,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "OpenAI：将尊重网站 robots.txt 训练偏好信号",
+ "primaryUrl": "https://openai.com/index/helping-websites-express-ai-training-preferences"
+}

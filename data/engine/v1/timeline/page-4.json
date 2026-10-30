@@ -6,6 +6,66 @@
  },
  "cards": [
   {
+   "key": "sha256:258d5ff776fa8f13",
+   "anchorAt": "2026-10-21T19:53:20.000Z",
+   "item": {
+    "id": "sha256:258d5ff776fa8f13",
+    "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
+    "summary": "Verge：Claude Duet 研究预览，iOS/Android/Web。",
+    "reason": "报道：Anthropic 推 Claude Duet 智能体迎战 Muse",
+    "source": {
+     "name": "The Verge · AI"
+    },
+    "publishedAt": "2026-10-21T19:53:20.000Z",
+    "timelineAt": "2026-10-21T19:53:20.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-22-anthropic-claude-duet",
+    "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent"
+   },
+   "group": {
+    "factId": "fact-2026-10-22-anthropic-claude-duet",
+    "additionalSourceCount": 3,
+    "reportCount": 4,
+    "memberIds": [
+     "sha256:258d5ff776fa8f13"
+    ]
+   }
+  },
+  {
+   "key": "sha256:7decc1c5c0496d6c",
+   "anchorAt": "2026-10-21T17:58:42.000Z",
+   "item": {
+    "id": "sha256:7decc1c5c0496d6c",
+    "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
+    "summary": "Microduck×Isaac Lab 3.0 仿真到真机。",
+    "reason": "Microduck 经 Isaac Lab 仿真训练后部署到真机",
+    "source": {
+     "name": "Hugging Face Blog"
+    },
+    "publishedAt": "2026-10-21T17:58:42.000Z",
+    "timelineAt": "2026-10-21T17:58:42.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-22-nvidia-microduck-isaac-lab",
+    "originalUrl": "https://huggingface.co/blog/nvidia/microduck-isaac-lab-sim-to-real"
+   },
+   "group": {
+    "factId": "fact-2026-10-22-nvidia-microduck-isaac-lab",
+    "additionalSourceCount": 3,
+    "reportCount": 4,
+    "memberIds": [
+     "sha256:7decc1c5c0496d6c"
+    ]
+   }
+  },
+  {
    "key": "sha256:40a01666d562060b",
    "anchorAt": "2026-10-21T17:35:36.000Z",
    "item": {
@@ -453,59 +513,6 @@
     "originalUrl": "https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/"
    },
    "group": null
-  },
-  {
-   "key": "sha256:bfa70917f3b198d1",
-   "anchorAt": "2026-10-19T15:37:09.000Z",
-   "item": {
-    "id": "sha256:bfa70917f3b198d1",
-    "title": "英伟达发布面向企业与 PC 的开源智能体模型",
-    "summary": "TechCrunch 称英伟达新开源模型，面向企业自建开源模型与端侧本地运行智能体。",
-    "reason": "英伟达开源企业与 PC 端智能体模型",
-    "source": {
-     "name": "TechCrunch · AI"
-    },
-    "publishedAt": "2026-10-19T15:37:09.000Z",
-    "timelineAt": "2026-10-19T15:37:09.000Z",
-    "category": "model",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-19-nvidia-open-models-agents-pcs",
-    "originalUrl": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:5c52b7d34becd1cc",
-   "anchorAt": "2026-10-19T00:00:00.000Z",
-   "item": {
-    "id": "sha256:5c52b7d34becd1cc",
-    "title": "Hugging Face：TorchNeuron 让 HF 模型更易跑在 AWS Trainium",
-    "summary": "Hugging Face 博客介绍 TorchNeuron，称在 AWS Trainium 上运行 HF 模型比以往更容易。",
-    "reason": "Trainium 上跑 HF 模型更省事",
-    "source": {
-     "name": "Hugging Face Blog"
-    },
-    "publishedAt": "2026-10-19T00:00:00.000Z",
-    "timelineAt": "2026-10-19T00:00:00.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-20-hf-torchneuron-trainium",
-    "originalUrl": "https://huggingface.co/blog/hf-torchneuron"
-   },
-   "group": {
-    "factId": "fact-2026-10-20-hf-torchneuron-trainium",
-    "additionalSourceCount": 1,
-    "reportCount": 5,
-    "memberIds": [
-     "sha256:5c52b7d34becd1cc"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-5.json",
@@ -513,5 +520,5 @@
  "dayCounts": {},
  "page": 4,
  "pageCount": 5,
- "total": 81
+ "total": 83
 }

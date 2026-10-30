@@ -52,6 +52,52 @@
    "group": null
   },
   {
+   "key": "sha256:84abd1857de5dfd9",
+   "anchorAt": "2026-10-30T09:30:00.000Z",
+   "item": {
+    "id": "sha256:84abd1857de5dfd9",
+    "title": "OpenAI：让网站更容易表达 AI 训练偏好",
+    "summary": "OpenAI 将尊重 robots.txt 训练偏好信号；过闸。",
+    "reason": "OpenAI：将尊重网站 robots.txt 训练偏好信号",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-30T09:30:00.000Z",
+    "timelineAt": "2026-10-30T09:30:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-31-openai-ai-training-preferences",
+    "originalUrl": "https://openai.com/index/helping-websites-express-ai-training-preferences"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:a86d24c59c826150",
+   "anchorAt": "2026-10-30T09:00:00.000Z",
+   "item": {
+    "id": "sha256:a86d24c59c826150",
+    "title": "OpenAI：发布社区安全报告并加强青少年保护",
+    "summary": "OpenAI 官方安全政策与公开报告承诺；过闸。",
+    "reason": "OpenAI：社区安全报告并加强青少年保护",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-30T09:00:00.000Z",
+    "timelineAt": "2026-10-30T09:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-31-openai-teen-community-safety",
+    "originalUrl": "https://openai.com/index/community-safety-report-and-new-protections-for-teens"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:9349f418e7bc7ab4",
    "anchorAt": "2026-10-29T17:00:00.000Z",
    "item": {
@@ -72,7 +118,14 @@
     "storyPublicId": "2026-10-30-openai-updated-model-spec",
     "originalUrl": "https://openai.com/index/updated-model-spec"
    },
-   "group": null
+   "group": {
+    "factId": "fact-2026-10-30-openai-updated-model-spec",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:9349f418e7bc7ab4"
+    ]
+   }
   },
   {
    "key": "sha256:f7a1020f473102a5",
@@ -470,59 +523,6 @@
     "originalUrl": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/"
    },
    "group": null
-  },
-  {
-   "key": "sha256:1d6c5c59e46e52b9",
-   "anchorAt": "2026-10-27T16:12:42.000Z",
-   "item": {
-    "id": "sha256:1d6c5c59e46e52b9",
-    "title": "Hugging Face：LLM 能否可靠评判研究想法新颖性",
-    "summary": null,
-    "reason": null,
-    "source": {
-     "name": "Hugging Face Blog"
-    },
-    "publishedAt": "2026-10-27T16:12:42.000Z",
-    "timelineAt": "2026-10-27T16:12:42.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-28-hf-allenai-novelty-bench",
-    "originalUrl": "https://huggingface.co/blog/allenai/novelty-bench"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:e960e8891f7d7ad8",
-   "anchorAt": "2026-10-27T16:01:38.000Z",
-   "item": {
-    "id": "sha256:e960e8891f7d7ad8",
-    "title": "DeepMind 发布 Genie 4：新一代世界仿真",
-    "summary": "DeepMind 宣布 Genie 4 世界模型，强调实时仿真真实感与原生多模态音画对话。",
-    "reason": "DeepMind 发布 Genie 4 世界模型，强调实时仿真与多模态",
-    "source": {
-     "name": "Google DeepMind Blog"
-    },
-    "publishedAt": "2026-10-27T16:01:38.000Z",
-    "timelineAt": "2026-10-27T16:01:38.000Z",
-    "category": "model",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-28-deepmind-genie-4",
-    "originalUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
-   },
-   "group": {
-    "factId": "fact-2026-10-28-deepmind-genie-4",
-    "additionalSourceCount": 4,
-    "reportCount": 5,
-    "memberIds": [
-     "sha256:e960e8891f7d7ad8"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-2.json",
@@ -530,7 +530,7 @@
   {
    "rank": 1,
    "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
-   "heat": 26.7,
+   "heat": 24.6,
    "trend": "down",
    "storyPublicId": "2026-10-29-mistral-large-4-lechonk",
    "itemId": "sha256:5a25565ab71a8d06",
@@ -540,11 +540,11 @@
      "kind": "editorial"
     },
     {
-     "name": "Hugging Face Blog",
+     "name": "vLLM Blog",
      "kind": "editorial"
     },
     {
-     "name": "vLLM Blog",
+     "name": "Hugging Face Blog",
      "kind": "editorial"
     },
     {
@@ -564,16 +564,31 @@
   },
   {
    "rank": 2,
+   "title": "OpenAI 更新 Model Spec 行为规范",
+   "heat": 14.1,
+   "trend": "up",
+   "storyPublicId": "2026-10-30-openai-updated-model-spec",
+   "itemId": "sha256:9349f418e7bc7ab4",
+   "participants": [
+    {
+     "name": "OpenAI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2
+  },
+  {
+   "rank": 3,
    "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
-   "heat": 13.8,
+   "heat": 8.0,
    "trend": "down",
    "storyPublicId": "2026-10-28-deepmind-gemini-4-carbon",
    "itemId": "sha256:3e32bae570ff21ee",
    "participants": [
-    {
-     "name": "Google DeepMind Blog",
-     "kind": "editorial"
-    },
     {
      "name": "量子位",
      "kind": "editorial"
@@ -583,20 +598,16 @@
      "kind": "editorial"
     },
     {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
      "name": "IT之家（全站，需关键词过滤）",
      "kind": "signal"
     }
    ],
-   "participantCount": 5
+   "participantCount": 3
   },
   {
-   "rank": 3,
+   "rank": 4,
    "title": "微软首次披露 Azure 季度营收约 33.2 亿美元",
-   "heat": 5.7,
+   "heat": 5.2,
    "trend": "down",
    "storyPublicId": "2026-10-28-microsoft-fy27-q1-earnings",
    "itemId": "sha256:3801bfeec8403796",
@@ -615,7 +626,7 @@
  ],
  "dayCounts": {
   "2026-10-31": 1,
-  "2026-10-30": 2,
+  "2026-10-30": 4,
   "2026-10-29": 7,
   "2026-10-28": 11,
   "2026-10-27": 9,
@@ -631,5 +642,5 @@
  },
  "page": 1,
  "pageCount": 5,
- "total": 81
+ "total": 83
 }

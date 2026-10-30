@@ -6,6 +6,66 @@
  },
  "cards": [
   {
+   "key": "sha256:30a34d758ba63be2",
+   "anchorAt": "2026-10-23T18:51:33.000Z",
+   "item": {
+    "id": "sha256:30a34d758ba63be2",
+    "title": "Google Research：把基础模型用于一线结核病筛查",
+    "summary": "Google Research：基础模型用于 TB 筛查一线；应用研究。",
+    "reason": "Google：基础模型用于一线结核病筛查",
+    "source": {
+     "name": "Google Research Blog"
+    },
+    "publishedAt": "2026-10-23T18:51:33.000Z",
+    "timelineAt": "2026-10-23T18:51:33.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-24-google-tb-screening",
+    "originalUrl": "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/"
+   },
+   "group": {
+    "factId": "fact-2026-10-24-google-tb-screening",
+    "additionalSourceCount": 2,
+    "reportCount": 3,
+    "memberIds": [
+     "sha256:30a34d758ba63be2"
+    ]
+   }
+  },
+  {
+   "key": "sha256:604f1f9c59689482",
+   "anchorAt": "2026-10-23T18:00:32.000Z",
+   "item": {
+    "id": "sha256:604f1f9c59689482",
+    "title": "METR/Redwood 驻场审计：OpenAI 内部智能体监控存在覆盖缺口",
+    "summary": "Decoder 报道 METR/Redwood 三周驻场审计；已核实 METR 公开摘要并 hop。",
+    "reason": "METR/Redwood 驻场审计：OpenAI 智能体监控有缺口",
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-23T18:00:32.000Z",
+    "timelineAt": "2026-10-23T18:00:32.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-24-openai-metr-agent-monitoring",
+    "originalUrl": "https://the-decoder.com/three-week-on-site-audit-at-openai-reveals-major-gaps-in-ai-safety-monitoring/"
+   },
+   "group": {
+    "factId": "fact-2026-10-24-openai-metr-agent-monitoring",
+    "additionalSourceCount": 2,
+    "reportCount": 3,
+    "memberIds": [
+     "sha256:604f1f9c59689482"
+    ]
+   }
+  },
+  {
    "key": "sha256:73be0ee71d2832b3",
    "anchorAt": "2026-10-23T17:36:54.000Z",
    "item": {
@@ -482,66 +542,6 @@
      "sha256:eda525050cea8fce"
     ]
    }
-  },
-  {
-   "key": "sha256:258d5ff776fa8f13",
-   "anchorAt": "2026-10-21T19:53:20.000Z",
-   "item": {
-    "id": "sha256:258d5ff776fa8f13",
-    "title": "报道：Anthropic 推出 Claude Duet 智能体，对标 Muse 与 Dots",
-    "summary": "Verge：Claude Duet 研究预览，iOS/Android/Web。",
-    "reason": "报道：Anthropic 推 Claude Duet 智能体迎战 Muse",
-    "source": {
-     "name": "The Verge · AI"
-    },
-    "publishedAt": "2026-10-21T19:53:20.000Z",
-    "timelineAt": "2026-10-21T19:53:20.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-22-anthropic-claude-duet",
-    "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent"
-   },
-   "group": {
-    "factId": "fact-2026-10-22-anthropic-claude-duet",
-    "additionalSourceCount": 3,
-    "reportCount": 4,
-    "memberIds": [
-     "sha256:258d5ff776fa8f13"
-    ]
-   }
-  },
-  {
-   "key": "sha256:7decc1c5c0496d6c",
-   "anchorAt": "2026-10-21T17:58:42.000Z",
-   "item": {
-    "id": "sha256:7decc1c5c0496d6c",
-    "title": "NVIDIA：Microduck 在 Isaac Lab 3.0 仿真训练后部署到真机",
-    "summary": "Microduck×Isaac Lab 3.0 仿真到真机。",
-    "reason": "Microduck 经 Isaac Lab 仿真训练后部署到真机",
-    "source": {
-     "name": "Hugging Face Blog"
-    },
-    "publishedAt": "2026-10-21T17:58:42.000Z",
-    "timelineAt": "2026-10-21T17:58:42.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-22-nvidia-microduck-isaac-lab",
-    "originalUrl": "https://huggingface.co/blog/nvidia/microduck-isaac-lab-sim-to-real"
-   },
-   "group": {
-    "factId": "fact-2026-10-22-nvidia-microduck-isaac-lab",
-    "additionalSourceCount": 3,
-    "reportCount": 4,
-    "memberIds": [
-     "sha256:7decc1c5c0496d6c"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-4.json",
@@ -549,5 +549,5 @@
  "dayCounts": {},
  "page": 3,
  "pageCount": 5,
- "total": 81
+ "total": 83
 }

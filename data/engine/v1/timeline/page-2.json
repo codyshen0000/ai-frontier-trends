@@ -6,6 +6,59 @@
  },
  "cards": [
   {
+   "key": "sha256:1d6c5c59e46e52b9",
+   "anchorAt": "2026-10-27T16:12:42.000Z",
+   "item": {
+    "id": "sha256:1d6c5c59e46e52b9",
+    "title": "Hugging Face：LLM 能否可靠评判研究想法新颖性",
+    "summary": null,
+    "reason": null,
+    "source": {
+     "name": "Hugging Face Blog"
+    },
+    "publishedAt": "2026-10-27T16:12:42.000Z",
+    "timelineAt": "2026-10-27T16:12:42.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-28-hf-allenai-novelty-bench",
+    "originalUrl": "https://huggingface.co/blog/allenai/novelty-bench"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:e960e8891f7d7ad8",
+   "anchorAt": "2026-10-27T16:01:38.000Z",
+   "item": {
+    "id": "sha256:e960e8891f7d7ad8",
+    "title": "DeepMind 发布 Genie 4：新一代世界仿真",
+    "summary": "DeepMind 宣布 Genie 4 世界模型，强调实时仿真真实感与原生多模态音画对话。",
+    "reason": "DeepMind 发布 Genie 4 世界模型，强调实时仿真与多模态",
+    "source": {
+     "name": "Google DeepMind Blog"
+    },
+    "publishedAt": "2026-10-27T16:01:38.000Z",
+    "timelineAt": "2026-10-27T16:01:38.000Z",
+    "category": "model",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-28-deepmind-genie-4",
+    "originalUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
+   },
+   "group": {
+    "factId": "fact-2026-10-28-deepmind-genie-4",
+    "additionalSourceCount": 4,
+    "reportCount": 5,
+    "memberIds": [
+     "sha256:e960e8891f7d7ad8"
+    ]
+   }
+  },
+  {
    "key": "sha256:5ed14fffd1748be8",
    "anchorAt": "2026-10-27T16:00:00.000Z",
    "item": {
@@ -507,66 +560,6 @@
      "sha256:261b6564023ad66c"
     ]
    }
-  },
-  {
-   "key": "sha256:30a34d758ba63be2",
-   "anchorAt": "2026-10-23T18:51:33.000Z",
-   "item": {
-    "id": "sha256:30a34d758ba63be2",
-    "title": "Google Research：把基础模型用于一线结核病筛查",
-    "summary": "Google Research：基础模型用于 TB 筛查一线；应用研究。",
-    "reason": "Google：基础模型用于一线结核病筛查",
-    "source": {
-     "name": "Google Research Blog"
-    },
-    "publishedAt": "2026-10-23T18:51:33.000Z",
-    "timelineAt": "2026-10-23T18:51:33.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-24-google-tb-screening",
-    "originalUrl": "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/"
-   },
-   "group": {
-    "factId": "fact-2026-10-24-google-tb-screening",
-    "additionalSourceCount": 2,
-    "reportCount": 3,
-    "memberIds": [
-     "sha256:30a34d758ba63be2"
-    ]
-   }
-  },
-  {
-   "key": "sha256:604f1f9c59689482",
-   "anchorAt": "2026-10-23T18:00:32.000Z",
-   "item": {
-    "id": "sha256:604f1f9c59689482",
-    "title": "METR/Redwood 驻场审计：OpenAI 内部智能体监控存在覆盖缺口",
-    "summary": "Decoder 报道 METR/Redwood 三周驻场审计；已核实 METR 公开摘要并 hop。",
-    "reason": "METR/Redwood 驻场审计：OpenAI 智能体监控有缺口",
-    "source": {
-     "name": "The Decoder"
-    },
-    "publishedAt": "2026-10-23T18:00:32.000Z",
-    "timelineAt": "2026-10-23T18:00:32.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-24-openai-metr-agent-monitoring",
-    "originalUrl": "https://the-decoder.com/three-week-on-site-audit-at-openai-reveals-major-gaps-in-ai-safety-monitoring/"
-   },
-   "group": {
-    "factId": "fact-2026-10-24-openai-metr-agent-monitoring",
-    "additionalSourceCount": 2,
-    "reportCount": 3,
-    "memberIds": [
-     "sha256:604f1f9c59689482"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-3.json",
@@ -574,5 +567,5 @@
  "dayCounts": {},
  "page": 2,
  "pageCount": 5,
- "total": 81
+ "total": 83
 }

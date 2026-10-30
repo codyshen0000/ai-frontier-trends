@@ -1,30 +1,30 @@
 {
  "publicId": "2026-10-30-openai-updated-model-spec",
- "title": "OpenAI 更新 Model Spec：五条核心价值",
+ "title": "OpenAI 更新 Model Spec 行为规范",
  "status": "active",
- "reportCount": 1,
- "sourceCount": 1,
+ "reportCount": 2,
+ "sourceCount": 2,
  "firstReportAt": "2026-10-29T17:00:00.000Z",
- "latestAt": "2026-10-29T17:00:00.000Z",
+ "latestAt": "2026-10-30T17:44:59.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": "OpenAI 发布更新版 Model Spec，概述五条核心价值，引导更强模型在判断力、人类能动性与忠实人类意图上的行为边界。属官方对齐规范更新。",
+ "summary": "OpenAI 更新 Model Spec。The Decoder 二手跟进：围绕五项核心价值重组行为指南。",
  "excerpt": null,
- "latest": null,
+ "latest": "The Decoder：转述 Model Spec 围绕五项核心价值重组（含忠实人类意图与可纠正性）。",
  "latestReport": null,
  "whyHot": {
-  "participants48h": 1,
-  "newParticipants6h": 0,
+  "participants48h": 2,
+  "newParticipants6h": 1,
   "recentReports24h": 1,
   "observationComplete": true,
-  "rank": null
+  "rank": 2
  },
  "developments": [
   {
    "factId": "fact-2026-10-30-openai-updated-model-spec",
-   "title": "OpenAI 更新 Model Spec：五条核心价值",
+   "title": "OpenAI 更新 Model Spec 行为规范",
    "firstReportAt": "2026-10-29T17:00:00.000Z",
-   "reportCount": 1,
+   "reportCount": 2,
    "representative": {
     "id": "sha256:9349f418e7bc7ab4",
     "title": "OpenAI 更新 Model Spec：五条核心价值",
@@ -54,6 +54,18 @@
   }
  ],
  "timeline": [
+  {
+   "id": "sha256:30da88947cf8a75c",
+   "title": "报道：OpenAI 更新难控模型的行为指南",
+   "summary": "Decoder 转述 Model Spec 五项核心价值重组。同事件二手跟进。",
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-30T17:44:59.000Z",
+   "selected": false,
+   "originalUrl": "https://the-decoder.com/openai-sets-new-behavioral-guidelines-for-ai-models-that-have-already-proven-hard-to-control/"
+  },
   {
    "id": "sha256:9349f418e7bc7ab4",
    "title": "OpenAI 更新 Model Spec：五条核心价值",
@@ -187,6 +199,21 @@
    "hour": "2026-10-30T16:00:00.000Z",
    "heat": 5.1,
    "participants": 1
+  },
+  {
+   "hour": "2026-10-30T17:00:00.000Z",
+   "heat": 5.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T18:00:00.000Z",
+   "heat": 14.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-30T19:00:00.000Z",
+   "heat": 14.4,
+   "participants": 2
   }
  ],
  "related": [],

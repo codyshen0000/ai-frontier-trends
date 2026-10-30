@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-24-nvidia-tensorrt-global-performance-tuner",
  "title": "NVIDIA：TensorRT Global Performance Tuner 跨多条构建路线寻优",
- "status": "watching",
+ "status": "settled",
  "reportCount": 2,
  "sourceCount": 1,
  "firstReportAt": "2026-10-23T17:27:35.000Z",

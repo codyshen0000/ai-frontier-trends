@@ -30,6 +30,28 @@
    "eventPublicId": "2026-10-30-wiz-ai-threat-readiness-2026"
   },
   {
+   "guid": "sha256:84abd1857de5dfd9",
+   "title": "OpenAI：让网站更容易表达 AI 训练偏好",
+   "summary": "OpenAI 将尊重 robots.txt 训练偏好信号；过闸。",
+   "originalUrl": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+   "pubDate": "2026-10-30T09:30:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "industry",
+   "categoryLabel": "行业",
+   "eventPublicId": "2026-10-31-openai-ai-training-preferences"
+  },
+  {
+   "guid": "sha256:a86d24c59c826150",
+   "title": "OpenAI：发布社区安全报告并加强青少年保护",
+   "summary": "OpenAI 官方安全政策与公开报告承诺；过闸。",
+   "originalUrl": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+   "pubDate": "2026-10-30T09:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "industry",
+   "categoryLabel": "行业",
+   "eventPublicId": "2026-10-31-openai-teen-community-safety"
+  },
+  {
    "guid": "sha256:9349f418e7bc7ab4",
    "title": "OpenAI 更新 Model Spec：五条核心价值",
    "summary": "OpenAI 发布更新版 Model Spec，概述五条核心价值，引导更强模型在判断力、人类能动性与忠实人类意图上的行为。官方对齐规范。",
@@ -534,28 +556,6 @@
    "category": "industry",
    "categoryLabel": "行业",
    "eventPublicId": "2026-10-25-vllm-ds-v41-flash-scale"
-  },
-  {
-   "guid": "sha256:1a543055a02f9816",
-   "title": "OpenAI 与波兰 NASK 合作推进 AI 安全与安保研究",
-   "summary": "",
-   "originalUrl": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
-   "pubDate": "2026-10-23T00:00:00.000Z",
-   "sourceName": "OpenAI News",
-   "category": "industry",
-   "categoryLabel": "行业",
-   "eventPublicId": "2026-10-23-openai-nask-ai-safety"
-  },
-  {
-   "guid": "sha256:51888f116f5b0837",
-   "title": "微软 ThinkingBox：把数据库评分变成 RL 奖励做智能体后训练",
-   "summary": "HF 刊微软 ThinkingBox：数据库评分转 RL 奖励，用于后训练智能体。",
-   "originalUrl": "https://huggingface.co/blog/microsoft/thinkingbox-training",
-   "pubDate": "2026-10-22T22:24:34.000Z",
-   "sourceName": "Hugging Face Blog",
-   "category": "paper",
-   "categoryLabel": "论文",
-   "eventPublicId": "2026-10-23-microsoft-thinkingbox-rl"
   }
  ]
 }

@@ -1,0 +1,131 @@
+{
+ "publicId": "2026-10-31-openai-teen-community-safety",
+ "title": "OpenAI：发布社区安全报告并加强青少年保护",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-30T09:00:00.000Z",
+ "latestAt": "2026-10-30T09:00:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "OpenAI 官方：加强 ChatGPT 暴力预防、更早干预，并承诺公开安全报告。安全产品政策；本窗过闸。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-31-openai-teen-community-safety",
+   "title": "OpenAI：发布社区安全报告并加强青少年保护",
+   "firstReportAt": "2026-10-30T09:00:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:a86d24c59c826150",
+    "title": "OpenAI：发布社区安全报告并加强青少年保护",
+    "summary": "OpenAI 官方安全政策与公开报告承诺；过闸。",
+    "source": {
+     "name": "OpenAI News",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-30T09:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://openai.com/index/community-safety-report-and-new-protections-for-teens"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:a86d24c59c826150",
+   "title": "OpenAI：发布社区安全报告并加强青少年保护",
+   "summary": "OpenAI 官方安全政策与公开报告承诺；过闸。",
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-30T09:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/community-safety-report-and-new-protections-for-teens"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:a86d24c59c826150",
+   "title": "OpenAI：发布社区安全报告并加强青少年保护",
+   "summary": "OpenAI 官方安全政策与公开报告承诺；过闸。",
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-30T09:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/community-safety-report-and-new-protections-for-teens"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-30T09:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T10:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T11:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T12:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T13:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T14:00:00.000Z",
+   "heat": 8.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T15:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T16:00:00.000Z",
+   "heat": 8.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T17:00:00.000Z",
+   "heat": 7.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T18:00:00.000Z",
+   "heat": 7.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T19:00:00.000Z",
+   "heat": 7.5,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "OpenAI：社区安全报告并加强青少年保护",
+ "primaryUrl": "https://openai.com/index/community-safety-report-and-new-protections-for-teens"
+}
