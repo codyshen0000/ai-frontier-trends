@@ -234,11 +234,26 @@
    "hour": "2026-10-31T16:00:00.000Z",
    "heat": 9.8,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-31T17:00:00.000Z",
+   "heat": 9.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-31T18:00:00.000Z",
+   "heat": 9.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-31T19:00:00.000Z",
+   "heat": 9.0,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "OpenAI：将尊重网站 robots.txt 训练偏好信号",
  "primaryUrl": "https://openai.com/index/helping-websites-express-ai-training-preferences",
- "rankDelta": -2
+ "rankDelta": 0
 }

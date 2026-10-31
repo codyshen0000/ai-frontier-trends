@@ -6,6 +6,59 @@
  },
  "cards": [
   {
+   "key": "sha256:3e7599c6661c19f5",
+   "anchorAt": "2026-10-21T00:00:00.000Z",
+   "item": {
+    "id": "sha256:3e7599c6661c19f5",
+    "title": "vLLM 开源 Humming：面向量化推理的内核库",
+    "summary": "蚂蚁×vLLM 社区开源 Humming 量化推理内核，并给出 dense/MoE 与集成说明。",
+    "reason": "vLLM 开源 Humming 量化推理内核库",
+    "source": {
+     "name": "vLLM Blog"
+    },
+    "publishedAt": "2026-10-21T00:00:00.000Z",
+    "timelineAt": "2026-10-21T00:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-22-vllm-humming-kernels",
+    "originalUrl": "https://vllm.ai/blog/2026-10-21-humming"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:3b031f6c198ac941",
+   "anchorAt": "2026-10-21T00:00:00.000Z",
+   "item": {
+    "id": "sha256:3b031f6c198ac941",
+    "title": "vLLM 宣布 Day-0 支持 Flint 编码模型",
+    "summary": "vLLM 称 Day-0 支持 Flint 双检查点，单卡单请求约 500 tok/s。",
+    "reason": null,
+    "source": {
+     "name": "vLLM Blog"
+    },
+    "publishedAt": "2026-10-21T00:00:00.000Z",
+    "timelineAt": "2026-10-21T00:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-22-recursive-flint-coding-model",
+    "originalUrl": "https://vllm.ai/blog/2026-10-21-flint"
+   },
+   "group": {
+    "factId": "fact-2026-10-22-recursive-flint-coding-model",
+    "additionalSourceCount": 2,
+    "reportCount": 3,
+    "memberIds": [
+     "sha256:3b031f6c198ac941"
+    ]
+   }
+  },
+  {
    "key": "sha256:011eb73686ffbc98",
    "anchorAt": "2026-10-20T20:03:10.000Z",
    "item": {
@@ -193,5 +246,5 @@
  "dayCounts": {},
  "page": 5,
  "pageCount": 5,
- "total": 87
+ "total": 89
 }

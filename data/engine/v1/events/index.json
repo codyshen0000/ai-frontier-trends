@@ -1,18 +1,32 @@
 {
  "events": [
   {
+   "publicId": "2026-11-01-anthropic-watermark-older-models",
+   "title": "Anthropic：水印上线，两款旧 Claude 模型仍有采样漏洞",
+   "latestAt": "2026-11-01T00:00:00.000Z",
+   "reportCount": 2,
+   "hotRank": null
+  },
+  {
+   "publicId": "2026-11-01-openai-daybreak-blue-training",
+   "title": "OpenAI：Daybreak Blue 网络安全会话数据将可用于模型训练",
+   "latestAt": "2026-11-01T00:00:00.000Z",
+   "reportCount": 2,
+   "hotRank": null
+  },
+  {
    "publicId": "2026-10-31-anthropic-automated-em-search",
    "title": "Anthropic：自动化搜寻「看似无害」却能破坏监督的训练数据",
    "latestAt": "2026-10-31T15:06:14.000Z",
    "reportCount": 2,
-   "hotRank": 1
+   "hotRank": 2
   },
   {
    "publicId": "2026-10-31-deepseek-super-agent-router-worker",
    "title": "DeepSeek：开源 Super-agent 原型，Router 与 Worker 双层架构",
    "latestAt": "2026-10-31T13:36:35.000Z",
    "reportCount": 2,
-   "hotRank": 2
+   "hotRank": 1
   },
   {
    "publicId": "2026-10-31-wiz-black-october-ai-dev",
@@ -33,7 +47,7 @@
    "title": "OpenAI 更新 Model Spec 行为规范",
    "latestAt": "2026-10-30T17:44:59.000Z",
    "reportCount": 2,
-   "hotRank": 4
+   "hotRank": null
   },
   {
    "publicId": "2026-10-31-nvidia-nemoclaw-agents",
@@ -61,7 +75,7 @@
    "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
    "latestAt": "2026-10-30T01:09:09.000Z",
    "reportCount": 4,
-   "hotRank": 5
+   "hotRank": null
   },
   {
    "publicId": "2026-10-31-openai-fair-use-benefits",

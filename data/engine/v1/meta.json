@@ -2,31 +2,31 @@
  "site": "前沿趋势",
  "contract_version": "1.1",
  "mode": "production",
- "data_as_of": "2026-11-01T00:19:11+08:00",
- "data_as_of_label": "数据截至 2026-11-01 00:19（北京时间）",
- "generated_at": "2026-11-01T00:52:00+08:00",
+ "data_as_of": "2026-11-01T03:25:18+08:00",
+ "data_as_of_label": "数据截至 2026-11-01 03:25（北京时间）",
+ "generated_at": "2026-11-01T03:40:00+08:00",
  "hot_rule_version": "heat-v1-48h-halflife24h (前沿情报 heat48h.py 1.1)",
- "hot_computed_at": "2026-11-01T00:52:00+08:00",
+ "hot_computed_at": "2026-11-01T03:40:00+08:00",
  "window_hours": 48,
  "spark_points": 25,
  "page_size": 20,
  "counts": {
-  "cards": 87,
+  "cards": 89,
   "pages": 5,
-  "events": 87,
-  "hot_entries": 5,
-  "search_docs": 236,
+  "events": 89,
+  "hot_entries": 3,
+  "search_docs": 242,
   "feed_items": 50,
-  "passed_events": 87,
+  "passed_events": 89,
   "below_threshold_events": 0,
   "redirects": 0,
-  "hot_snapshots": 19,
+  "hot_snapshots": 20,
   "covers": 10
  },
  "last_round": {
-  "batch_id": "2026-11-01T0019",
+  "batch_id": "2026-11-01T0325",
   "status": "ok",
-  "finished_at": "2026-11-01T00:36:00+08:00"
+  "finished_at": "2026-11-01T03:31:37+08:00"
  },
  "batches": [
   {
@@ -1116,6 +1116,18 @@
   {
    "batch_id": "2026-11-01T0019",
    "status": "ok"
+  },
+  {
+   "batch_id": "2026-11-01T0123",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-11-01T0225",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-11-01T0325",
+   "status": "ok"
   }
  ],
  "files": [
@@ -1207,6 +1219,8 @@
   "events/2026-10-31-openai-fair-use-benefits.json",
   "events/2026-10-31-openai-teen-community-safety.json",
   "events/2026-10-31-wiz-black-october-ai-dev.json",
+  "events/2026-11-01-anthropic-watermark-older-models.json",
+  "events/2026-11-01-openai-daybreak-blue-training.json",
   "events/index.json",
   "feed/selected.json",
   "hot-snapshots/2026-10-29T03.json",
@@ -1228,6 +1242,7 @@
   "hot-snapshots/2026-10-31T16.json",
   "hot-snapshots/2026-10-31T20.json",
   "hot-snapshots/2026-11-01T00.json",
+  "hot-snapshots/2026-11-01T03.json",
   "hot-strip.json",
   "hot.json",
   "meta.json",

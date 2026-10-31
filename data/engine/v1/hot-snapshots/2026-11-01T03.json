@@ -1,0 +1,23 @@
+{
+ "computedAt": "2026-10-31T19:40:00.000Z",
+ "entries": [
+  {
+   "rank": 1,
+   "publicId": "2026-10-31-deepseek-super-agent-router-worker",
+   "heat": 22.5,
+   "participantCount": 3
+  },
+  {
+   "rank": 2,
+   "publicId": "2026-10-31-anthropic-automated-em-search",
+   "heat": 20.1,
+   "participantCount": 3
+  },
+  {
+   "rank": 3,
+   "publicId": "2026-10-31-openai-ai-training-preferences",
+   "heat": 8.8,
+   "participantCount": 2
+  }
+ ]
+}

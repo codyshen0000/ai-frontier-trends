@@ -13,11 +13,11 @@
  "latest": "The Decoder：转述 Model Spec 围绕五项核心价值重组（含忠实人类意图与可纠正性）。",
  "latestReport": null,
  "whyHot": {
-  "participants48h": 2,
+  "participants48h": 1,
   "newParticipants6h": 0,
-  "recentReports24h": 1,
+  "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 4
+  "rank": null
  },
  "developments": [
   {
@@ -80,16 +80,6 @@
   }
  ],
  "heat": [
-  {
-   "hour": "2026-10-29T17:00:00.000Z",
-   "heat": 10.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-29T18:00:00.000Z",
-   "heat": 9.7,
-   "participants": 1
-  },
   {
    "hour": "2026-10-29T19:00:00.000Z",
    "heat": 9.4,
@@ -319,11 +309,25 @@
    "hour": "2026-10-31T16:00:00.000Z",
    "heat": 7.8,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-31T17:00:00.000Z",
+   "heat": 5.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-31T18:00:00.000Z",
+   "heat": 5.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-31T19:00:00.000Z",
+   "heat": 4.8,
+   "participants": 1
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "OpenAI 更新 Model Spec：五条核心价值引导更强模型",
- "primaryUrl": "https://openai.com/index/updated-model-spec",
- "rankDelta": -1
+ "primaryUrl": "https://openai.com/index/updated-model-spec"
 }

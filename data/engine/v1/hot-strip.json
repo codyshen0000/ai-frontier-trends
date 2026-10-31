@@ -1,8 +1,31 @@
 [
  {
   "rank": 1,
+  "title": "DeepSeek：开源 Super-agent 原型，Router 与 Worker 双层架构",
+  "heat": 22.5,
+  "trend": "up",
+  "storyPublicId": "2026-10-31-deepseek-super-agent-router-worker",
+  "itemId": "sha256:5bd78febd4a59e34",
+  "participants": [
+   {
+    "name": "GitHub · deepseek-ai/dsh-superagent-prototype",
+    "kind": "editorial"
+   },
+   {
+    "name": "量子位",
+    "kind": "editorial"
+   },
+   {
+    "name": "IT之家（全站，需关键词过滤）",
+    "kind": "signal"
+   }
+  ],
+  "participantCount": 3
+ },
+ {
+  "rank": 2,
   "title": "Anthropic：自动化搜寻「看似无害」却能破坏监督的训练数据",
-  "heat": 21.8,
+  "heat": 20.1,
   "trend": "up",
   "storyPublicId": "2026-10-31-anthropic-automated-em-search",
   "itemId": "sha256:3a143d3580b64e5b",
@@ -23,32 +46,9 @@
   "participantCount": 3
  },
  {
-  "rank": 2,
-  "title": "DeepSeek：开源 Super-agent 原型，Router 与 Worker 双层架构",
-  "heat": 21.4,
-  "trend": "up",
-  "storyPublicId": "2026-10-31-deepseek-super-agent-router-worker",
-  "itemId": "sha256:5bd78febd4a59e34",
-  "participants": [
-   {
-    "name": "GitHub · deepseek-ai/dsh-superagent-prototype",
-    "kind": "editorial"
-   },
-   {
-    "name": "deepseek-ai",
-    "kind": "editorial"
-   },
-   {
-    "name": "IT之家（全站，需关键词过滤）",
-    "kind": "signal"
-   }
-  ],
-  "participantCount": 3
- },
- {
   "rank": 3,
   "title": "OpenAI：让网站更容易表达 AI 训练偏好",
-  "heat": 9.6,
+  "heat": 8.8,
   "trend": "down",
   "storyPublicId": "2026-10-31-openai-ai-training-preferences",
   "itemId": "sha256:84abd1857de5dfd9",
@@ -60,44 +60,6 @@
    {
     "name": "The Verge · AI",
     "kind": "editorial"
-   }
-  ],
-  "participantCount": 2
- },
- {
-  "rank": 4,
-  "title": "OpenAI 更新 Model Spec 行为规范",
-  "heat": 7.6,
-  "trend": "down",
-  "storyPublicId": "2026-10-30-openai-updated-model-spec",
-  "itemId": "sha256:9349f418e7bc7ab4",
-  "participants": [
-   {
-    "name": "OpenAI News",
-    "kind": "editorial"
-   },
-   {
-    "name": "The Decoder",
-    "kind": "editorial"
-   }
-  ],
-  "participantCount": 2
- },
- {
-  "rank": 5,
-  "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
-  "heat": 5.7,
-  "trend": "down",
-  "storyPublicId": "2026-10-29-mistral-large-4-lechonk",
-  "itemId": "sha256:5a25565ab71a8d06",
-  "participants": [
-   {
-    "name": "TechCrunch · AI",
-    "kind": "editorial"
-   },
-   {
-    "name": "IT之家（全站，需关键词过滤）",
-    "kind": "signal"
    }
   ],
   "participantCount": 2

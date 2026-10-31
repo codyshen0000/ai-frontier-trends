@@ -17,7 +17,7 @@
   "newParticipants6h": 1,
   "recentReports24h": 3,
   "observationComplete": true,
-  "rank": 2
+  "rank": 1
  },
  "developments": [
   {
@@ -82,92 +82,108 @@
  "heat": [
   {
    "hour": "2026-10-31T00:00:00.000Z",
-   "heat": 20.0,
-   "participants": 2
+   "heat": 10.0,
+   "participants": 1
   },
   {
    "hour": "2026-10-31T01:00:00.000Z",
-   "heat": 19.4,
-   "participants": 2
+   "heat": 9.7,
+   "participants": 1
   },
   {
    "hour": "2026-10-31T02:00:00.000Z",
-   "heat": 18.9,
-   "participants": 2
+   "heat": 9.4,
+   "participants": 1
   },
   {
    "hour": "2026-10-31T03:00:00.000Z",
-   "heat": 18.3,
-   "participants": 2
+   "heat": 9.2,
+   "participants": 1
   },
   {
    "hour": "2026-10-31T04:00:00.000Z",
-   "heat": 17.8,
-   "participants": 2
+   "heat": 8.9,
+   "participants": 1
   },
   {
    "hour": "2026-10-31T05:00:00.000Z",
-   "heat": 17.3,
-   "participants": 2
+   "heat": 8.7,
+   "participants": 1
   },
   {
    "hour": "2026-10-31T06:00:00.000Z",
-   "heat": 16.8,
-   "participants": 2
+   "heat": 8.4,
+   "participants": 1
   },
   {
    "hour": "2026-10-31T07:00:00.000Z",
-   "heat": 16.3,
-   "participants": 2
+   "heat": 8.2,
+   "participants": 1
   },
   {
    "hour": "2026-10-31T08:00:00.000Z",
-   "heat": 15.9,
-   "participants": 2
+   "heat": 7.9,
+   "participants": 1
   },
   {
    "hour": "2026-10-31T09:00:00.000Z",
-   "heat": 15.4,
-   "participants": 2
+   "heat": 7.7,
+   "participants": 1
   },
   {
    "hour": "2026-10-31T10:00:00.000Z",
-   "heat": 15.0,
-   "participants": 2
+   "heat": 7.5,
+   "participants": 1
   },
   {
    "hour": "2026-10-31T11:00:00.000Z",
-   "heat": 14.6,
-   "participants": 2
+   "heat": 7.3,
+   "participants": 1
   },
   {
    "hour": "2026-10-31T12:00:00.000Z",
-   "heat": 14.1,
-   "participants": 2
+   "heat": 7.1,
+   "participants": 1
   },
   {
    "hour": "2026-10-31T13:00:00.000Z",
-   "heat": 13.7,
-   "participants": 2
+   "heat": 6.9,
+   "participants": 1
   },
   {
    "hour": "2026-10-31T14:00:00.000Z",
-   "heat": 23.2,
+   "heat": 26.5,
    "participants": 3
   },
   {
    "hour": "2026-10-31T15:00:00.000Z",
-   "heat": 22.6,
+   "heat": 25.8,
    "participants": 3
   },
   {
    "hour": "2026-10-31T16:00:00.000Z",
-   "heat": 21.9,
+   "heat": 25.0,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-31T17:00:00.000Z",
+   "heat": 24.3,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-31T18:00:00.000Z",
+   "heat": 23.6,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-31T19:00:00.000Z",
+   "heat": 22.9,
    "participants": 3
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "DeepSeek 开源 Super-agent：Router/Worker 双层",
- "primaryUrl": "https://github.com/deepseek-ai/dsh-superagent-prototype"
+ "primaryUrl": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+ "rankDelta": 1
 }

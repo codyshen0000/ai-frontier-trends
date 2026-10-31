@@ -8,6 +8,28 @@
  },
  "items": [
   {
+   "guid": "sha256:be583b060c134071",
+   "title": "OpenAI：Daybreak Blue 网络安全会话数据将可用于模型训练",
+   "summary": "OpenAI Help Center Data Controls：Trusted Access / Daybreak Blue 会话此前禁训，现可纳入训练。政策变更；一手为 Help Center。",
+   "originalUrl": "https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt",
+   "pubDate": "2026-11-01T00:00:00.000Z",
+   "sourceName": "OpenAI Help · Data Controls in ChatGPT",
+   "category": "industry",
+   "categoryLabel": "行业",
+   "eventPublicId": "2026-11-01-openai-daybreak-blue-training"
+  },
+  {
+   "guid": "sha256:042fb889688a1d90",
+   "title": "Anthropic：水印上线，两款旧 Claude 模型仍有采样漏洞",
+   "summary": "",
+   "originalUrl": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
+   "pubDate": "2026-11-01T00:00:00.000Z",
+   "sourceName": "Claude Help · How Claude marks AI-generated content",
+   "category": "industry",
+   "categoryLabel": "行业",
+   "eventPublicId": "2026-11-01-anthropic-watermark-older-models"
+  },
+  {
    "guid": "sha256:5bd78febd4a59e34",
    "title": "DeepSeek：开源 Super-agent 原型，Router 与 Worker 双层架构",
    "summary": "",
@@ -534,28 +556,6 @@
    "category": "tutorial",
    "categoryLabel": "教程",
    "eventPublicId": "2026-10-24-nvidia-tensorrt-global-performance-tuner"
-  },
-  {
-   "guid": "sha256:cfa117fe12523c03",
-   "title": "Anthropic：复盘 AISI 事件，内部研究模型更能自行停止攻击",
-   "summary": "Decoder 报道 Anthropic 对 AISI Mythos 5 事件的对齐复盘；已核实官方研究帖并 hop。",
-   "originalUrl": "https://the-decoder.com/anthropic-says-its-unreleased-model-is-both-more-capable-and-better-aligned-than-mythos-5-1/",
-   "pubDate": "2026-10-23T17:19:49.000Z",
-   "sourceName": "The Decoder",
-   "category": "paper",
-   "categoryLabel": "论文",
-   "eventPublicId": "2026-10-24-anthropic-ukaisi-alignment"
-  },
-  {
-   "guid": "sha256:b19f86d623cfeb5d",
-   "title": "Anthropic：Claude 为 123 个开源库写出可机器检查的形式化证明",
-   "summary": "Decoder 报道 Anthropic 形式化验证实验；已核实官方研究帖并 hop 附加。",
-   "originalUrl": "https://the-decoder.com/anthropics-claude-now-writes-code-and-proves-it-safe-automatically/",
-   "pubDate": "2026-10-23T11:32:19.000Z",
-   "sourceName": "The Decoder",
-   "category": "paper",
-   "categoryLabel": "论文",
-   "eventPublicId": "2026-10-23-anthropic-claude-formal-verification"
   }
  ]
 }

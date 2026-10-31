@@ -1,0 +1,103 @@
+{
+ "publicId": "2026-11-01-openai-daybreak-blue-training",
+ "title": "OpenAI：Daybreak Blue 网络安全会话数据将可用于模型训练",
+ "status": "active",
+ "reportCount": 2,
+ "sourceCount": 2,
+ "firstReportAt": "2026-10-31T16:38:37.000Z",
+ "latestAt": "2026-11-01T00:00:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "OpenAI Help Center Data Controls：Trusted Access / Daybreak Blue 会话此前禁训，现可纳入训练。政策变更；一手为 Help Center。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-11-01-openai-daybreak-blue-training",
+   "title": "OpenAI：Daybreak Blue 网络安全会话数据将可用于模型训练",
+   "firstReportAt": "2026-10-31T16:38:37.000Z",
+   "reportCount": 2,
+   "representative": {
+    "id": "sha256:be583b060c134071",
+    "title": "OpenAI：Daybreak Blue 网络安全会话数据将可用于模型训练",
+    "summary": "OpenAI Help Center Data Controls：Trusted Access / Daybreak Blue 会话此前禁训，现可纳入训练。政策变更；一手为 Help Center。",
+    "source": {
+     "name": "OpenAI Help · Data Controls in ChatGPT",
+     "firstParty": true
+    },
+    "publishedAt": "2026-11-01T00:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:be583b060c134071",
+   "title": "OpenAI：Daybreak Blue 网络安全会话数据将可用于模型训练",
+   "summary": "OpenAI Help Center Data Controls：Trusted Access / Daybreak Blue 会话此前禁训，现可纳入训练。政策变更；一手为 Help Center。",
+   "source": {
+    "name": "OpenAI Help · Data Controls in ChatGPT",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-01T00:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:be583b060c134071",
+   "title": "OpenAI：Daybreak Blue 网络安全会话数据将可用于模型训练",
+   "summary": "OpenAI Help Center Data Controls：Trusted Access / Daybreak Blue 会话此前禁训，现可纳入训练。政策变更；一手为 Help Center。",
+   "source": {
+    "name": "OpenAI Help · Data Controls in ChatGPT",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-01T00:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt"
+  },
+  {
+   "id": "sha256:b256bb55179494f0",
+   "title": "OpenAI：Daybreak Blue 网络安全会话数据将可用于模型训练",
+   "summary": null,
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-31T16:38:37.000Z",
+   "selected": false,
+   "originalUrl": "https://the-decoder.com/openai-plans-to-train-models-on-daybreak-blue-cybersecurity-session-data-that-was-previously-off-limits/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-31T17:00:00.000Z",
+   "heat": 9.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-31T18:00:00.000Z",
+   "heat": 9.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-31T19:00:00.000Z",
+   "heat": 9.3,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "OpenAI：Daybreak Blue 安全会话数据可用于模型训练",
+ "primaryUrl": "https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt"
+}

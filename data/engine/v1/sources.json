@@ -171,6 +171,12 @@
    "kind": "editorial"
   },
   {
+   "sourceId": "web-claude-help-watermark",
+   "name": "Claude Help · How Claude marks AI-generated content",
+   "tier": "T1",
+   "kind": "editorial"
+  },
+  {
    "sourceId": "web-cloudflare-kv-cache",
    "name": "Cloudflare Blog",
    "tier": "T1",
@@ -235,6 +241,12 @@
    "sourceId": "web-microsoft-github",
    "name": "web-microsoft-github",
    "tier": null,
+   "kind": "editorial"
+  },
+  {
+   "sourceId": "web-openai-help-data-controls",
+   "name": "OpenAI Help · Data Controls in ChatGPT",
+   "tier": "T1",
    "kind": "editorial"
   },
   {

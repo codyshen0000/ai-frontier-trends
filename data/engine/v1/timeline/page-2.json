@@ -6,6 +6,59 @@
  },
  "cards": [
   {
+   "key": "sha256:5b6b315fe4450662",
+   "anchorAt": "2026-10-28T10:56:24.000Z",
+   "item": {
+    "id": "sha256:5b6b315fe4450662",
+    "title": "报道：Cathedral 用 AI 智能体打入 Anthropic 业务系统",
+    "summary": null,
+    "reason": "AI 智能体经第三方软件打入 Anthropic 业务系统",
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-28T10:56:24.000Z",
+    "timelineAt": "2026-10-28T10:56:24.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-28-cathedral-anthropic-agent-breach",
+    "originalUrl": "https://the-decoder.com/ai-agents-hacked-anthropic-maker-of-arguably-the-most-capable-ai-models-for-cyberdefense/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:449070727cbfb984",
+   "anchorAt": "2026-10-27T20:50:39.000Z",
+   "item": {
+    "id": "sha256:449070727cbfb984",
+    "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
+    "summary": null,
+    "reason": null,
+    "source": {
+     "name": "NVIDIA Technical Blog"
+    },
+    "publishedAt": "2026-10-27T20:50:39.000Z",
+    "timelineAt": "2026-10-27T20:50:39.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
+    "originalUrl": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/"
+   },
+   "group": {
+    "factId": "fact-2026-10-28-nvidia-cuda-134-gpu-sharing",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:449070727cbfb984"
+    ]
+   }
+  },
+  {
    "key": "sha256:e97319d8730a2e80",
    "anchorAt": "2026-10-27T17:35:00.000Z",
    "item": {
@@ -501,59 +554,6 @@
      "sha256:8eb6001a836a6e50"
     ]
    }
-  },
-  {
-   "key": "sha256:35e334c198740f74",
-   "anchorAt": "2026-10-26T00:00:00.000Z",
-   "item": {
-    "id": "sha256:35e334c198740f74",
-    "title": "OpenAI 发布 GPT-6.1 Terra",
-    "summary": null,
-    "reason": "OpenAI 发布 GPT-6.1 Terra，强调计算机使用与性价比",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-26T00:00:00.000Z",
-    "timelineAt": "2026-10-26T00:00:00.000Z",
-    "category": "model",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-27-openai-gpt61-terra",
-    "originalUrl": "https://openai.com/index/introducing-gpt-6-1-terra"
-   },
-   "group": {
-    "factId": "fact-2026-10-27-openai-gpt61-terra",
-    "additionalSourceCount": 3,
-    "reportCount": 4,
-    "memberIds": [
-     "sha256:35e334c198740f74"
-    ]
-   }
-  },
-  {
-   "key": "sha256:af9112a54e84d14e",
-   "anchorAt": "2026-10-25T10:08:49.000Z",
-   "item": {
-    "id": "sha256:af9112a54e84d14e",
-    "title": "Nvidia 开源 Flora：机器人视频标注数据引擎",
-    "summary": null,
-    "reason": "开源机器人视频标注引擎称大幅降本",
-    "source": {
-     "name": "The Decoder"
-    },
-    "publishedAt": "2026-10-25T10:08:49.000Z",
-    "timelineAt": "2026-10-25T10:08:49.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-25-nvidia-flora-robot-data-engine",
-    "originalUrl": "https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra/"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-3.json",
@@ -561,5 +561,5 @@
  "dayCounts": {},
  "page": 2,
  "pageCount": 5,
- "total": 87
+ "total": 89
 }

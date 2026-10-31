@@ -1,0 +1,87 @@
+{
+ "publicId": "2026-11-01-anthropic-watermark-older-models",
+ "title": "Anthropic：水印上线，两款旧 Claude 模型仍有采样漏洞",
+ "status": "active",
+ "reportCount": 2,
+ "sourceCount": 2,
+ "firstReportAt": "2026-10-31T19:20:55.000Z",
+ "latestAt": "2026-11-01T00:00:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Claude Help：How Claude marks AI-generated content；The Decoder 指 Opus/Sonnet 4.6 采样留洞。合规上线；一手为 Claude Help。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-11-01-anthropic-watermark-older-models",
+   "title": "Anthropic：水印上线，两款旧 Claude 模型仍有采样漏洞",
+   "firstReportAt": "2026-10-31T19:20:55.000Z",
+   "reportCount": 2,
+   "representative": {
+    "id": "sha256:042fb889688a1d90",
+    "title": "Anthropic：水印上线，两款旧 Claude 模型仍有采样漏洞",
+    "summary": null,
+    "source": {
+     "name": "Claude Help · How Claude marks AI-generated content",
+     "firstParty": true
+    },
+    "publishedAt": "2026-11-01T00:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:042fb889688a1d90",
+   "title": "Anthropic：水印上线，两款旧 Claude 模型仍有采样漏洞",
+   "summary": null,
+   "source": {
+    "name": "Claude Help · How Claude marks AI-generated content",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-01T00:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:042fb889688a1d90",
+   "title": "Anthropic：水印上线，两款旧 Claude 模型仍有采样漏洞",
+   "summary": null,
+   "source": {
+    "name": "Claude Help · How Claude marks AI-generated content",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-01T00:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content"
+  },
+  {
+   "id": "sha256:909c4a46811dca1c",
+   "title": "Anthropic：水印上线，两款旧 Claude 模型仍有采样漏洞",
+   "summary": null,
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-31T19:20:55.000Z",
+   "selected": false,
+   "originalUrl": "https://the-decoder.com/anthropics-watermark-rollout-leaves-a-loophole-on-two-older-claude-models/"
+  }
+ ],
+ "heat": [],
+ "related": [],
+ "topics": [],
+ "recommendReason": "Anthropic：水印上线留 Opus/Sonnet 4.6 采样漏洞",
+ "primaryUrl": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content"
+}
