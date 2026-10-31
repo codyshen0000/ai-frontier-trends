@@ -1,266 +1,193 @@
 {
-  "computedAt": "2026-10-30T19:37:00.000Z",
-  "windowHours": 48,
-  "entries": [
+ "computedAt": "2026-10-31T00:41:00.000Z",
+ "windowHours": 48,
+ "entries": [
+  {
+   "rank": 1,
+   "story": {
+    "publicId": "2026-10-29-mistral-large-4-lechonk",
+    "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重"
+   },
+   "heat": 16.4,
+   "trend": "down",
+   "trendPct": -35.2,
+   "badges": [],
+   "participantCount": 4,
+   "sourceCount": 3,
+   "sourceNames": [
+    "TechCrunch · AI",
+    "The Decoder",
+    "Mistral AI News"
+   ],
+   "participants": [
     {
-      "rank": 1,
-      "story": {
-        "publicId": "2026-10-29-mistral-large-4-lechonk",
-        "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重"
-      },
-      "heat": 24.6,
-      "trend": "down",
-      "trendPct": -16,
-      "badges": [],
-      "participantCount": 6,
-      "sourceCount": 5,
-      "sourceNames": [
-        "TechCrunch · AI",
-        "The Decoder",
-        "Mistral AI News",
-        "vLLM Blog",
-        "Hugging Face Blog"
-      ],
-      "participants": [
-        {
-          "name": "Mistral AI News",
-          "kind": "editorial"
-        },
-        {
-          "name": "vLLM Blog",
-          "kind": "editorial"
-        },
-        {
-          "name": "Hugging Face Blog",
-          "kind": "editorial"
-        },
-        {
-          "name": "TechCrunch · AI",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Decoder",
-          "kind": "editorial"
-        },
-        {
-          "name": "IT之家（全站，需关键词过滤）",
-          "kind": "signal"
-        }
-      ],
-      "spark": [
-        38.2,
-        37.1,
-        36,
-        35,
-        34,
-        33,
-        32.1,
-        41,
-        39.8,
-        38.7,
-        37.6,
-        36.5,
-        35.4,
-        34.4,
-        33.5,
-        32.5,
-        31.6,
-        30.7,
-        29.8,
-        29,
-        28.1,
-        27.3,
-        26.6,
-        25.8,
-        25.1
-      ],
-      "summary": "Mistral 发布并开源 Mistral Large 4（代号 Le Chonk）权重：约 1 万亿参数、原生多模态，称在开源权重编码评测领先并强化防御性网络安全；提供多种推理模式以平衡成本与性能，在欧洲基础设施训练。同日 vLLM 宣布 Day-0 支持（稀疏 MLA、跨层 KV 共享等），Hugging Face 发文欢迎上架。",
-      "latest": null,
-      "cover": null,
-      "rankDelta": 0,
-      "heatDeltaPct": -7.9
+     "name": "Mistral AI News",
+     "kind": "editorial"
     },
     {
-      "rank": 2,
-      "story": {
-        "publicId": "2026-10-30-openai-updated-model-spec",
-        "title": "OpenAI 更新 Model Spec 行为规范"
-      },
-      "heat": 14.4,
-      "trend": "up",
-      "trendPct": 161.8,
-      "badges": [
-        "rising"
-      ],
-      "participantCount": 2,
-      "sourceCount": 2,
-      "sourceNames": [
-        "The Decoder",
-        "OpenAI News"
-      ],
-      "participants": [
-        {
-          "name": "OpenAI News",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Decoder",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        9.4,
-        9.2,
-        8.9,
-        8.7,
-        8.4,
-        8.2,
-        7.9,
-        7.7,
-        7.5,
-        7.3,
-        7.1,
-        6.9,
-        6.7,
-        6.5,
-        6.3,
-        6.1,
-        5.9,
-        5.8,
-        5.6,
-        5.5,
-        5.3,
-        5.1,
-        5,
-        14.8,
-        14.4
-      ],
-      "summary": "OpenAI 更新 Model Spec。The Decoder 二手跟进：围绕五项核心价值重组行为指南。",
-      "latest": "The Decoder：转述 Model Spec 围绕五项核心价值重组（含忠实人类意图与可纠正性）。",
-      "cover": null,
-      "heatDeltaPct": 2.1,
-      "rankDelta": 0
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
     },
     {
-      "rank": 3,
-      "story": {
-        "publicId": "2026-10-28-deepmind-gemini-4-carbon",
-        "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升"
-      },
-      "heat": 8,
-      "trend": "down",
-      "trendPct": -47.4,
-      "badges": [],
-      "participantCount": 3,
-      "sourceCount": 2,
-      "sourceNames": [
-        "量子位",
-        "The Verge · AI"
-      ],
-      "participants": [
-        {
-          "name": "量子位",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Verge · AI",
-          "kind": "editorial"
-        },
-        {
-          "name": "IT之家（全站，需关键词过滤）",
-          "kind": "signal"
-        }
-      ],
-      "spark": [
-        26,
-        25.2,
-        24.5,
-        23.8,
-        23.1,
-        22.5,
-        21.8,
-        21.2,
-        20.6,
-        20,
-        19.5,
-        18.9,
-        18.4,
-        17.8,
-        17.3,
-        16.8,
-        16.4,
-        15.9,
-        15.4,
-        15,
-        14.6,
-        14.2,
-        13.8,
-        10.9,
-        10.6
-      ],
-      "summary": null,
-      "latest": null,
-      "cover": null,
-      "rankDelta": -1,
-      "heatDeltaPct": -42
+     "name": "The Decoder",
+     "kind": "editorial"
     },
     {
-      "rank": 4,
-      "story": {
-        "publicId": "2026-10-28-microsoft-fy27-q1-earnings",
-        "title": "微软首次披露 Azure 季度营收约 33.2 亿美元"
-      },
-      "heat": 5.3,
-      "trend": "down",
-      "trendPct": -14.5,
-      "badges": [],
-      "participantCount": 2,
-      "sourceCount": 1,
-      "sourceNames": [
-        "TechCrunch · AI"
-      ],
-      "participants": [
-        {
-          "name": "TechCrunch · AI",
-          "kind": "editorial"
-        },
-        {
-          "name": "IT之家（全站，需关键词过滤）",
-          "kind": "signal"
-        }
-      ],
-      "spark": [
-        10.6,
-        10.3,
-        10,
-        9.7,
-        9.5,
-        9.2,
-        8.9,
-        8.7,
-        8.4,
-        8.2,
-        8,
-        7.7,
-        7.5,
-        7.3,
-        7.1,
-        6.9,
-        6.7,
-        6.5,
-        6.3,
-        6.1,
-        6,
-        5.8,
-        5.6,
-        5.5,
-        5.3
-      ],
-      "summary": "TechCrunch 称微软首次以美元披露 Azure 季度营收约 33.2 亿美元；同季总营收约 922.79 亿美元（同比 +19%），并披露来自 OpenAI 安排收入约 10 亿美元。属财报解读二手，关键数字来自业绩披露。",
-      "latest": "同季披露来自 OpenAI 安排收入约 10 亿美元",
-      "cover": null,
-      "rankDelta": -1,
-      "heatDeltaPct": 1.9
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
     }
-  ]
+   ],
+   "spark": [
+    33.0,
+    32.1,
+    41.0,
+    39.8,
+    38.7,
+    37.6,
+    36.5,
+    35.4,
+    34.4,
+    33.5,
+    32.5,
+    31.6,
+    30.7,
+    29.8,
+    29.0,
+    28.1,
+    27.3,
+    26.6,
+    25.8,
+    25.1,
+    24.3,
+    23.7,
+    23.0,
+    22.3,
+    16.7
+   ],
+   "summary": "Mistral 发布并开源 Mistral Large 4（代号 Le Chonk）权重：约 1 万亿参数、原生多模态，称在开源权重编码评测领先并强化防御性网络安全；提供多种推理模式以平衡成本与性能，在欧洲基础设施训练。同日 vLLM 宣布 Day-0 支持（稀疏 MLA、跨层 KV 共享等），Hugging Face 发文欢迎上架。",
+   "latest": null,
+   "cover": null,
+   "rankDelta": 0,
+   "heatDeltaPct": -33.3
+  },
+  {
+   "rank": 2,
+   "story": {
+    "publicId": "2026-10-31-openai-ai-training-preferences",
+    "title": "OpenAI：让网站更容易表达 AI 训练偏好"
+   },
+   "heat": 15.3,
+   "trend": "up",
+   "trendPct": 98.7,
+   "badges": [
+    "rising"
+   ],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "The Verge · AI",
+    "OpenAI News"
+   ],
+   "participants": [
+    {
+     "name": "OpenAI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    9.9,
+    9.6,
+    9.3,
+    9.0,
+    8.8,
+    8.5,
+    8.3,
+    8.1,
+    7.8,
+    7.6,
+    7.4,
+    17.0,
+    16.5,
+    16.1,
+    15.6
+   ],
+   "summary": "OpenAI 将尊重共享 robots.txt 信号。The Verge 二手跟进多家支持抓取 opt-out。",
+   "latest": "The Verge：多家大厂支持新的抓取 opt-out 标准（同训练偏好事件进展）。",
+   "cover": null,
+   "heatDeltaPct": 104.0
+  },
+  {
+   "rank": 3,
+   "story": {
+    "publicId": "2026-10-30-openai-updated-model-spec",
+    "title": "OpenAI 更新 Model Spec 行为规范"
+   },
+   "heat": 12.2,
+   "trend": "down",
+   "trendPct": -15.9,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "The Decoder",
+    "OpenAI News"
+   ],
+   "participants": [
+    {
+     "name": "OpenAI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    8.2,
+    7.9,
+    7.7,
+    7.5,
+    7.3,
+    7.1,
+    6.9,
+    6.7,
+    6.5,
+    6.3,
+    6.1,
+    5.9,
+    5.8,
+    5.6,
+    5.5,
+    5.3,
+    5.1,
+    5.0,
+    14.8,
+    14.4,
+    14.0,
+    13.6,
+    13.2,
+    12.8,
+    12.4
+   ],
+   "summary": "OpenAI 更新 Model Spec。The Decoder 二手跟进：围绕五项核心价值重组行为指南。",
+   "latest": "The Decoder：转述 Model Spec 围绕五项核心价值重组（含忠实人类意图与可纠正性）。",
+   "cover": null,
+   "rankDelta": -1,
+   "heatDeltaPct": -13.5
+  }
+ ]
 }

@@ -1,0 +1,23 @@
+{
+ "computedAt": "2026-10-31T00:41:00.000Z",
+ "entries": [
+  {
+   "rank": 1,
+   "publicId": "2026-10-29-mistral-large-4-lechonk",
+   "heat": 16.4,
+   "participantCount": 4
+  },
+  {
+   "rank": 2,
+   "publicId": "2026-10-31-openai-ai-training-preferences",
+   "heat": 15.3,
+   "participantCount": 2
+  },
+  {
+   "rank": 3,
+   "publicId": "2026-10-30-openai-updated-model-spec",
+   "heat": 12.2,
+   "participantCount": 2
+  }
+ ]
+}

@@ -6,6 +6,66 @@
  },
  "cards": [
   {
+   "key": "sha256:8f9973956bdc5190",
+   "anchorAt": "2026-10-23T19:32:39.000Z",
+   "item": {
+    "id": "sha256:8f9973956bdc5190",
+    "title": "Block 发布 Dessa：纯语音训练的全双工对话模型",
+    "summary": "Block 官方介绍 Dessa：从零仅用人类对话语音训练的语音到语音全双工模型，可边听边说、本地跑在 MacBook Pro M4 Max 及以上；称将向少量安全研究者开放早期访问。",
+    "reason": "Block 发布纯语音训练全双工 Dessa",
+    "source": {
+     "name": "web-block-dessa"
+    },
+    "publishedAt": "2026-10-23T19:32:39.000Z",
+    "timelineAt": "2026-10-23T19:32:39.000Z",
+    "category": "model",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-24-block-dessa-speech",
+    "originalUrl": "https://block.xyz/dessa"
+   },
+   "group": {
+    "factId": "fact-2026-10-24-block-dessa-speech",
+    "additionalSourceCount": 3,
+    "reportCount": 4,
+    "memberIds": [
+     "sha256:8f9973956bdc5190"
+    ]
+   }
+  },
+  {
+   "key": "sha256:261b6564023ad66c",
+   "anchorAt": "2026-10-23T19:00:07.000Z",
+   "item": {
+    "id": "sha256:261b6564023ad66c",
+    "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
+    "summary": "Decoder 报道 Kimi K3.1 Pro；已核实 Artificial Analysis 评测帖并 hop。",
+    "reason": "Kimi K3.1 Pro 智能指数 55，暂列第四；拟开源权重",
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-23T19:00:07.000Z",
+    "timelineAt": "2026-10-23T19:00:07.000Z",
+    "category": "model",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-24-kimi-k31-pro",
+    "originalUrl": "https://the-decoder.com/chinese-ai-model-kimi-k3-1-pro-is-closing-in-on-anthropics-claude-opus-5-5/"
+   },
+   "group": {
+    "factId": "fact-2026-10-24-kimi-k31-pro",
+    "additionalSourceCount": 3,
+    "reportCount": 5,
+    "memberIds": [
+     "sha256:261b6564023ad66c"
+    ]
+   }
+  },
+  {
    "key": "sha256:30a34d758ba63be2",
    "anchorAt": "2026-10-23T18:51:33.000Z",
    "item": {
@@ -489,59 +549,6 @@
     "originalUrl": "https://www.wiz.io/blog/artex-in-the-wild-storm-0940-expands-targeting-of-it-and-software-vendors"
    },
    "group": null
-  },
-  {
-   "key": "sha256:6400feb681472530",
-   "anchorAt": "2026-10-22T06:00:00.000Z",
-   "item": {
-    "id": "sha256:6400feb681472530",
-    "title": "OpenAI：Forward Deployed Engineering 如何填补部署鸿沟",
-    "summary": "OpenAI FDE 负责人介绍如何把模型能力落到客户生产并反哺产品研究。",
-    "reason": "OpenAI 阐释 Forward Deployed Engineering",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-22T06:00:00.000Z",
-    "timelineAt": "2026-10-22T06:00:00.000Z",
-    "category": "tutorial",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-22-openai-fde-means",
-    "originalUrl": "https://openai.com/index/forward-deployed-engineering-means"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:eda525050cea8fce",
-   "anchorAt": "2026-10-22T00:00:00.000Z",
-   "item": {
-    "id": "sha256:eda525050cea8fce",
-    "title": "Uber 全员上线 ChatGPT Work，覆盖约 3 万名员工",
-    "summary": "OpenAI：Uber 将 ChatGPT Work 扩至逾 3 万员工，接入常用办公工具。",
-    "reason": "Uber 全员上线 ChatGPT Work（约 3 万人）",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-22T00:00:00.000Z",
-    "timelineAt": "2026-10-22T00:00:00.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-23-uber-chatgpt-work-rollout",
-    "originalUrl": "https://openai.com/index/uber-chatgpt-work-rollout"
-   },
-   "group": {
-    "factId": "fact-2026-10-23-uber-chatgpt-work-rollout",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:eda525050cea8fce"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-4.json",
@@ -549,5 +556,5 @@
  "dayCounts": {},
  "page": 3,
  "pageCount": 5,
- "total": 83
+ "total": 85
 }

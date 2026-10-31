@@ -1,6 +1,53 @@
 {
- "generatedAt": "2026-10-30T19:37:00.000Z",
+ "generatedAt": "2026-10-31T00:41:00.000Z",
  "docs": [
+  {
+   "id": "sha256:8e6d8828488a3929",
+   "kind": "item",
+   "title": "Wiz：AI 开发平台的「黑色十月」",
+   "summary": "Wiz 官方盘点 AI 开发平台 10 月安全事件；过闸。",
+   "publishedAt": "2026-10-30T22:51:44.000Z",
+   "sourceName": "Wiz Blog",
+   "category": "industry",
+   "selected": true,
+   "eventPublicId": "2026-10-31-wiz-black-october-ai-dev",
+   "originalUrl": "https://www.wiz.io/blog/black-october-for-ai-developer-platforms"
+  },
+  {
+   "id": "2026-10-31-wiz-black-october-ai-dev",
+   "kind": "event",
+   "title": "Wiz：AI 开发平台的「黑色十月」",
+   "summary": "Wiz 官方博客盘点 AI 开发者平台在 10 月集中暴露的安全事件与攻击面。安全一手；本窗过闸。",
+   "publishedAt": "2026-10-30T22:51:44.000Z",
+   "sourceNames": [
+    "Wiz Blog"
+   ],
+   "path": "/events/2026-10-31-wiz-black-october-ai-dev/"
+  },
+  {
+   "id": "sha256:7a24eca35f77e86d",
+   "kind": "item",
+   "title": "报道：多家 AI 大厂支持新的抓取 opt-out 标准",
+   "summary": "Verge：OpenAI/Google/Microsoft 等支持抓取 opt-out。同训练偏好事件二手跟进。",
+   "publishedAt": "2026-10-30T20:26:10.000Z",
+   "sourceName": "The Verge · AI",
+   "category": "industry",
+   "selected": false,
+   "eventPublicId": "2026-10-31-openai-ai-training-preferences",
+   "originalUrl": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out"
+  },
+  {
+   "id": "2026-10-31-openai-ai-training-preferences",
+   "kind": "event",
+   "title": "OpenAI：让网站更容易表达 AI 训练偏好",
+   "summary": "OpenAI 将尊重共享 robots.txt 信号。The Verge 二手跟进多家支持抓取 opt-out。",
+   "publishedAt": "2026-10-30T20:26:10.000Z",
+   "sourceNames": [
+    "OpenAI News",
+    "The Verge · AI"
+   ],
+   "path": "/events/2026-10-31-openai-ai-training-preferences/"
+  },
   {
    "id": "sha256:30da88947cf8a75c",
    "kind": "item",
@@ -84,17 +131,6 @@
    "originalUrl": "https://openai.com/index/helping-websites-express-ai-training-preferences"
   },
   {
-   "id": "2026-10-31-openai-ai-training-preferences",
-   "kind": "event",
-   "title": "OpenAI：让网站更容易表达 AI 训练偏好",
-   "summary": "OpenAI 官方：将尊重共享 robots.txt 信号，帮助站点向参与方声明 AI 训练偏好。行业政策；本窗过闸。",
-   "publishedAt": "2026-10-30T09:30:00.000Z",
-   "sourceNames": [
-    "OpenAI News"
-   ],
-   "path": "/events/2026-10-31-openai-ai-training-preferences/"
-  },
-  {
    "id": "sha256:a86d24c59c826150",
    "kind": "item",
    "title": "OpenAI：发布社区安全报告并加强青少年保护",
@@ -142,6 +178,29 @@
     "The Decoder"
    ],
    "path": "/events/2026-10-29-mistral-large-4-lechonk/"
+  },
+  {
+   "id": "sha256:574dbaf7fc8731e4",
+   "kind": "item",
+   "title": "OpenAI：合理使用惠及所有人",
+   "summary": "OpenAI 官方 fair use 政策阐述；过闸。",
+   "publishedAt": "2026-10-30T00:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "industry",
+   "selected": true,
+   "eventPublicId": "2026-10-31-openai-fair-use-benefits",
+   "originalUrl": "https://openai.com/index/fair-use-benefits-everyone"
+  },
+  {
+   "id": "2026-10-31-openai-fair-use-benefits",
+   "kind": "event",
+   "title": "OpenAI：合理使用惠及所有人",
+   "summary": "OpenAI 官方：阐述 fair use 如何同时服务创作者、开发者与公众。行业政策；本窗过闸。",
+   "publishedAt": "2026-10-30T00:00:00.000Z",
+   "sourceNames": [
+    "OpenAI News"
+   ],
+   "path": "/events/2026-10-31-openai-fair-use-benefits/"
   },
   {
    "id": "sha256:9349f418e7bc7ab4",

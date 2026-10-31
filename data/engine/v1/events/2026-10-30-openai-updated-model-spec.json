@@ -14,10 +14,10 @@
  "latestReport": null,
  "whyHot": {
   "participants48h": 2,
-  "newParticipants6h": 1,
+  "newParticipants6h": 0,
   "recentReports24h": 1,
   "observationComplete": true,
-  "rank": 2
+  "rank": 3
  },
  "developments": [
   {
@@ -214,10 +214,36 @@
    "hour": "2026-10-30T19:00:00.000Z",
    "heat": 14.4,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-30T20:00:00.000Z",
+   "heat": 14.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-30T21:00:00.000Z",
+   "heat": 13.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-30T22:00:00.000Z",
+   "heat": 13.2,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-30T23:00:00.000Z",
+   "heat": 12.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-31T00:00:00.000Z",
+   "heat": 12.4,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "OpenAI 更新 Model Spec：五条核心价值引导更强模型",
- "primaryUrl": "https://openai.com/index/updated-model-spec"
+ "primaryUrl": "https://openai.com/index/updated-model-spec",
+ "rankDelta": -1
 }

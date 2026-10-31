@@ -2,21 +2,13 @@
  {
   "rank": 1,
   "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
-  "heat": 24.6,
+  "heat": 16.4,
   "trend": "down",
   "storyPublicId": "2026-10-29-mistral-large-4-lechonk",
   "itemId": "sha256:5a25565ab71a8d06",
   "participants": [
    {
     "name": "Mistral AI News",
-    "kind": "editorial"
-   },
-   {
-    "name": "vLLM Blog",
-    "kind": "editorial"
-   },
-   {
-    "name": "Hugging Face Blog",
     "kind": "editorial"
    },
    {
@@ -32,13 +24,32 @@
     "kind": "signal"
    }
   ],
-  "participantCount": 6
+  "participantCount": 4
  },
  {
   "rank": 2,
-  "title": "OpenAI 更新 Model Spec 行为规范",
-  "heat": 14.1,
+  "title": "OpenAI：让网站更容易表达 AI 训练偏好",
+  "heat": 15.3,
   "trend": "up",
+  "storyPublicId": "2026-10-31-openai-ai-training-preferences",
+  "itemId": "sha256:84abd1857de5dfd9",
+  "participants": [
+   {
+    "name": "OpenAI News",
+    "kind": "editorial"
+   },
+   {
+    "name": "The Verge · AI",
+    "kind": "editorial"
+   }
+  ],
+  "participantCount": 2
+ },
+ {
+  "rank": 3,
+  "title": "OpenAI 更新 Model Spec 行为规范",
+  "heat": 12.2,
+  "trend": "down",
   "storyPublicId": "2026-10-30-openai-updated-model-spec",
   "itemId": "sha256:9349f418e7bc7ab4",
   "participants": [
@@ -49,48 +60,6 @@
    {
     "name": "The Decoder",
     "kind": "editorial"
-   }
-  ],
-  "participantCount": 2
- },
- {
-  "rank": 3,
-  "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
-  "heat": 8.0,
-  "trend": "down",
-  "storyPublicId": "2026-10-28-deepmind-gemini-4-carbon",
-  "itemId": "sha256:3e32bae570ff21ee",
-  "participants": [
-   {
-    "name": "量子位",
-    "kind": "editorial"
-   },
-   {
-    "name": "The Verge · AI",
-    "kind": "editorial"
-   },
-   {
-    "name": "IT之家（全站，需关键词过滤）",
-    "kind": "signal"
-   }
-  ],
-  "participantCount": 3
- },
- {
-  "rank": 4,
-  "title": "微软首次披露 Azure 季度营收约 33.2 亿美元",
-  "heat": 5.2,
-  "trend": "down",
-  "storyPublicId": "2026-10-28-microsoft-fy27-q1-earnings",
-  "itemId": "sha256:3801bfeec8403796",
-  "participants": [
-   {
-    "name": "TechCrunch · AI",
-    "kind": "editorial"
-   },
-   {
-    "name": "IT之家（全站，需关键词过滤）",
-    "kind": "signal"
    }
   ],
   "participantCount": 2

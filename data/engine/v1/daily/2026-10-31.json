@@ -1,0 +1,279 @@
+{
+ "kind": "daily",
+ "key": "2026-10-31",
+ "issueNumber": 13,
+ "title": "AI日报 · 2026-10-31",
+ "generatedAt": "2026-10-31T00:36:00.000Z",
+ "lead": {
+  "title": "OpenAI：合理使用惠及所有人",
+  "leadParagraph": "OpenAI：阐述合理使用如何惠及创作者与公众"
+ },
+ "leadItemId": "sha256:574dbaf7fc8731e4",
+ "overview": "OpenAI：阐述合理使用如何惠及创作者与公众。",
+ "highlights": [
+  {
+   "itemId": "sha256:574dbaf7fc8731e4",
+   "title": "OpenAI：合理使用惠及所有人",
+   "summary": "OpenAI：阐述合理使用如何惠及创作者与公众",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/fair-use-benefits-everyone",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-30T00:00:00.000Z",
+   "available": true,
+   "otherSources": 0
+  },
+  {
+   "itemId": "sha256:8e6d8828488a3929",
+   "title": "Wiz：AI 开发平台的「黑色十月」",
+   "summary": "Wiz：盘点 AI 开发平台「黑色十月」安全事件",
+   "sourceName": "Wiz Blog",
+   "sourceUrl": "https://www.wiz.io/blog/black-october-for-ai-developer-platforms",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-30T22:51:44.000Z",
+   "available": true,
+   "otherSources": 0
+  },
+  {
+   "itemId": "sha256:84abd1857de5dfd9",
+   "title": "OpenAI：让网站更容易表达 AI 训练偏好",
+   "summary": "OpenAI 将尊重共享 robots.txt 信号。The Verge 二手跟进多家支持抓取 opt-out。",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-30T09:30:00.000Z",
+   "available": true,
+   "otherSources": 1
+  }
+ ],
+ "sections": [
+  {
+   "label": "行业",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:574dbaf7fc8731e4",
+     "title": "OpenAI：合理使用惠及所有人",
+     "summary": "OpenAI：阐述合理使用如何惠及创作者与公众",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/fair-use-benefits-everyone",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-30T00:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:8e6d8828488a3929",
+     "title": "Wiz：AI 开发平台的「黑色十月」",
+     "summary": "Wiz：盘点 AI 开发平台「黑色十月」安全事件",
+     "sourceName": "Wiz Blog",
+     "sourceUrl": "https://www.wiz.io/blog/black-october-for-ai-developer-platforms",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-30T22:51:44.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:84abd1857de5dfd9",
+     "title": "OpenAI：让网站更容易表达 AI 训练偏好",
+     "summary": "OpenAI 将尊重共享 robots.txt 信号。The Verge 二手跟进多家支持抓取 opt-out。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-30T09:30:00.000Z",
+     "available": true,
+     "otherSources": 1
+    },
+    {
+     "itemId": "sha256:a86d24c59c826150",
+     "title": "OpenAI：发布社区安全报告并加强青少年保护",
+     "summary": "OpenAI：发布社区安全报告并加强青少年保护",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-30T09:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:85f94c0fe8f02a81",
+     "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 达 954%",
+     "summary": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 达 954%",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/credit-saison",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-29T00:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:9349f418e7bc7ab4",
+     "title": "OpenAI 更新 Model Spec 行为规范",
+     "summary": "OpenAI 发布更新版 Model Spec，概述五条核心价值，引导更强模型在判断力、人类能动性与忠实人类意图上的行为。官方对齐规范。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/updated-model-spec",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-29T17:00:00.000Z",
+     "available": true,
+     "otherSources": 1
+    },
+    {
+     "itemId": "sha256:f37fa8ee7ba135be",
+     "title": "Wiz：发布 2026 AI 威胁就绪调查报告要点",
+     "summary": "Wiz：发布 2026 AI 威胁就绪调查报告要点",
+     "sourceName": "Wiz Blog",
+     "sourceUrl": "https://www.wiz.io/blog/ai-threat-readiness-survey-report-2026",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-30T12:57:42.000Z",
+     "available": true,
+     "otherSources": 0
+    }
+   ]
+  },
+  {
+   "label": "论文",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:0f01adb2acab0a67",
+     "title": "OpenAI：如何监测前沿模型错位",
+     "summary": "OpenAI 介绍分层监测体系，用于发现前沿模型错位与未授权智能体行为，以便响应方在事件升级前介入。属官方安全/对齐运营说明。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-29T09:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    }
+   ]
+  },
+  {
+   "label": "产品",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:b0afceb347e7b188",
+     "title": "NVIDIA 发布 NemoClaw：在自控技术栈上构建专用智能体",
+     "summary": "NVIDIA Developer Blog：介绍 NemoClaw，面向在可控自有栈上构建专用智能体。官方一手产品/框架发布。",
+     "sourceName": "NVIDIA Technical Blog",
+     "sourceUrl": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-30T16:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    }
+   ]
+  }
+ ],
+ "flashes": [
+  {
+   "itemId": "sha256:d90969d9d202fcde",
+   "title": "报道：Claude 据称自主操作小鼠脑基因疗法",
+   "summary": "Decoder：称 Claude 无人决策介入选定基因疗法并操作小鼠脑；二手实验",
+   "sourceName": "The Decoder",
+   "sourceUrl": "https://the-decoder.com/a-claude-model-autonomously-chose-a-gene-therapy-and-operated-on-a-mouse-brain-with-no-human-decision-making/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-30T19:42:59.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:434071bc563a35a6",
+   "title": "报道：AI 支出热潮出现裂痕",
+   "summary": "TC：梳理 AI 资本开支与回报预期裂痕；宏观二手线索。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-30T21:17:40.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:1abfdb6dc9802b6f",
+   "title": "报道：Anthropic IPO 后或获 junk 信用评级",
+   "summary": "TC 转述评级机构料给 Anthropic 偏高 junk；资本线线索。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-30T21:52:03.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:8edfa603fa5ede8d",
+   "title": "报道：Apple Intelligence 将进中国（iOS 27.3）",
+   "summary": "Verge：称 Apple Intelligence 随 iOS 27.3 进入",
+   "sourceName": "The Verge · AI",
+   "sourceUrl": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-30T22:32:53.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:bdbd23b4babdea0e",
+   "title": "报道：隐私 AI 助手 Ollie 关停",
+   "summary": "TC：Ollie 关停；创业退出线索。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-30T22:56:13.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:05a1378ae455d54d",
+   "title": "报道：Altman 谈 RAM 宜放数据中心",
+   "summary": "Verge 转述 Altman 内存短缺与云端配置言论；线索。",
+   "sourceName": "The Verge · AI",
+   "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-30T20:48:43.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:51331322a3d3f53c",
+   "title": "报道：港话通上线粤语歌 AI 音乐",
+   "summary": "IT之家：港话通可免费生成粤语歌；产品线索。",
+   "sourceName": "IT之家（全站，需关键词过滤）",
+   "sourceUrl": "https://www.ithome.com/1/020/396.htm",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-30T23:20:41.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:869014b81cc7bf41",
+   "title": "NVIDIA Dynamo 经验证 K8s 运行时教程",
+   "summary": "NVIDIA 技术博客：为 Dynamo 构建经验证 Kubernetes 运行",
+   "sourceName": "NVIDIA Technical Blog",
+   "sourceUrl": "https://developer.nvidia.com/blog/build-a-validated-kubernetes-runtime-for-nvidia-dynamo/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-30T21:35:31.000Z",
+   "available": true
+  }
+ ],
+ "cover": null,
+ "metrics": {
+  "totalEvents": 9,
+  "sourcesCount": 5,
+  "firstPartyEvents": 9,
+  "modelsReleased": 0
+ },
+ "readingMinutes": 1,
+ "prev": "2026-10-30",
+ "next": null
+}

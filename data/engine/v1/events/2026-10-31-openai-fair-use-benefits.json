@@ -1,0 +1,201 @@
+{
+ "publicId": "2026-10-31-openai-fair-use-benefits",
+ "title": "OpenAI：合理使用惠及所有人",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-30T00:00:00.000Z",
+ "latestAt": "2026-10-30T00:00:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "OpenAI 官方：阐述 fair use 如何同时服务创作者、开发者与公众。行业政策；本窗过闸。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 0,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-31-openai-fair-use-benefits",
+   "title": "OpenAI：合理使用惠及所有人",
+   "firstReportAt": "2026-10-30T00:00:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:574dbaf7fc8731e4",
+    "title": "OpenAI：合理使用惠及所有人",
+    "summary": "OpenAI 官方 fair use 政策阐述；过闸。",
+    "source": {
+     "name": "OpenAI News",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-30T00:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://openai.com/index/fair-use-benefits-everyone"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:574dbaf7fc8731e4",
+   "title": "OpenAI：合理使用惠及所有人",
+   "summary": "OpenAI 官方 fair use 政策阐述；过闸。",
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-30T00:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/fair-use-benefits-everyone"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:574dbaf7fc8731e4",
+   "title": "OpenAI：合理使用惠及所有人",
+   "summary": "OpenAI 官方 fair use 政策阐述；过闸。",
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-30T00:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/fair-use-benefits-everyone"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-30T00:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T01:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T02:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T03:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T04:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T05:00:00.000Z",
+   "heat": 8.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T06:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T07:00:00.000Z",
+   "heat": 8.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T08:00:00.000Z",
+   "heat": 7.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T09:00:00.000Z",
+   "heat": 7.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T10:00:00.000Z",
+   "heat": 7.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T11:00:00.000Z",
+   "heat": 7.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T12:00:00.000Z",
+   "heat": 7.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T13:00:00.000Z",
+   "heat": 6.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T14:00:00.000Z",
+   "heat": 6.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T15:00:00.000Z",
+   "heat": 6.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T16:00:00.000Z",
+   "heat": 6.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T17:00:00.000Z",
+   "heat": 6.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T18:00:00.000Z",
+   "heat": 5.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T19:00:00.000Z",
+   "heat": 5.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T20:00:00.000Z",
+   "heat": 5.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T21:00:00.000Z",
+   "heat": 5.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T22:00:00.000Z",
+   "heat": 5.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-30T23:00:00.000Z",
+   "heat": 5.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-31T00:00:00.000Z",
+   "heat": 5.0,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "OpenAI：阐述合理使用如何惠及创作者与公众",
+ "primaryUrl": "https://openai.com/index/fair-use-benefits-everyone"
+}

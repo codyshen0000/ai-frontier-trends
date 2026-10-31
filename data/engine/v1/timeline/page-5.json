@@ -6,6 +6,52 @@
  },
  "cards": [
   {
+   "key": "sha256:aa8847d44cbae332",
+   "anchorAt": "2026-10-20T07:00:00.000Z",
+   "item": {
+    "id": "sha256:aa8847d44cbae332",
+    "title": "OpenAI 客户故事：Terminal X 用 GPT-6.1 做投资判断评测",
+    "summary": null,
+    "reason": "Terminal X：GPT-6.1 投资判断一致率约 88.6%",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-20T07:00:00.000Z",
+    "timelineAt": "2026-10-20T07:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-21-openai-terminal-x-eval",
+    "originalUrl": "https://openai.com/index/terminal-x"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:10f7f763ebef7da0",
+   "anchorAt": "2026-10-19T17:36:26.000Z",
+   "item": {
+    "id": "sha256:10f7f763ebef7da0",
+    "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
+    "summary": "The Decoder 称 Kling AI 4.0 支持最长约 30 秒、最多 10 张关键帧、提示词理解扩展，并含立体声、多语口型同步与更轻 Flash 变体。",
+    "reason": "可灵 4.0 加长视频与口型同步",
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-19T17:36:26.000Z",
+    "timelineAt": "2026-10-19T17:36:26.000Z",
+    "category": "model",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-20-kling-ai-4-0",
+    "originalUrl": "https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:bfa70917f3b198d1",
    "anchorAt": "2026-10-19T15:37:09.000Z",
    "item": {
@@ -94,5 +140,5 @@
  "dayCounts": {},
  "page": 5,
  "pageCount": 5,
- "total": 83
+ "total": 85
 }

@@ -6,6 +6,52 @@
  },
  "cards": [
   {
+   "key": "sha256:64295c3ae779f4ac",
+   "anchorAt": "2026-10-27T17:08:08.000Z",
+   "item": {
+    "id": "sha256:64295c3ae779f4ac",
+    "title": "OpenAI：公开「指数时间假设为假」预印本材料",
+    "summary": null,
+    "reason": null,
+    "source": {
+     "name": "TechCrunch · AI"
+    },
+    "publishedAt": "2026-10-27T17:08:08.000Z",
+    "timelineAt": "2026-10-27T17:08:08.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-28-frontier-labs-eth-refutation",
+    "originalUrl": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:a9a41b70941237e4",
+   "anchorAt": "2026-10-27T17:00:00.000Z",
+   "item": {
+    "id": "sha256:a9a41b70941237e4",
+    "title": "NVIDIA：RTX Spark 支撑神经渲染与游戏内 AI 角色",
+    "summary": null,
+    "reason": "NVIDIA 介绍 RTX Spark 上的神经渲染与本地 AI 角色",
+    "source": {
+     "name": "NVIDIA Technical Blog"
+    },
+    "publishedAt": "2026-10-27T17:00:00.000Z",
+    "timelineAt": "2026-10-27T17:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-28-nvidia-rtx-spark-games",
+    "originalUrl": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:1d6c5c59e46e52b9",
    "anchorAt": "2026-10-27T16:12:42.000Z",
    "item": {
@@ -500,66 +546,6 @@
      "sha256:514019d7b6342099"
     ]
    }
-  },
-  {
-   "key": "sha256:8f9973956bdc5190",
-   "anchorAt": "2026-10-23T19:32:39.000Z",
-   "item": {
-    "id": "sha256:8f9973956bdc5190",
-    "title": "Block 发布 Dessa：纯语音训练的全双工对话模型",
-    "summary": "Block 官方介绍 Dessa：从零仅用人类对话语音训练的语音到语音全双工模型，可边听边说、本地跑在 MacBook Pro M4 Max 及以上；称将向少量安全研究者开放早期访问。",
-    "reason": "Block 发布纯语音训练全双工 Dessa",
-    "source": {
-     "name": "web-block-dessa"
-    },
-    "publishedAt": "2026-10-23T19:32:39.000Z",
-    "timelineAt": "2026-10-23T19:32:39.000Z",
-    "category": "model",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-24-block-dessa-speech",
-    "originalUrl": "https://block.xyz/dessa"
-   },
-   "group": {
-    "factId": "fact-2026-10-24-block-dessa-speech",
-    "additionalSourceCount": 3,
-    "reportCount": 4,
-    "memberIds": [
-     "sha256:8f9973956bdc5190"
-    ]
-   }
-  },
-  {
-   "key": "sha256:261b6564023ad66c",
-   "anchorAt": "2026-10-23T19:00:07.000Z",
-   "item": {
-    "id": "sha256:261b6564023ad66c",
-    "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
-    "summary": "Decoder 报道 Kimi K3.1 Pro；已核实 Artificial Analysis 评测帖并 hop。",
-    "reason": "Kimi K3.1 Pro 智能指数 55，暂列第四；拟开源权重",
-    "source": {
-     "name": "The Decoder"
-    },
-    "publishedAt": "2026-10-23T19:00:07.000Z",
-    "timelineAt": "2026-10-23T19:00:07.000Z",
-    "category": "model",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-24-kimi-k31-pro",
-    "originalUrl": "https://the-decoder.com/chinese-ai-model-kimi-k3-1-pro-is-closing-in-on-anthropics-claude-opus-5-5/"
-   },
-   "group": {
-    "factId": "fact-2026-10-24-kimi-k31-pro",
-    "additionalSourceCount": 3,
-    "reportCount": 5,
-    "memberIds": [
-     "sha256:261b6564023ad66c"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-3.json",
@@ -567,5 +553,5 @@
  "dayCounts": {},
  "page": 2,
  "pageCount": 5,
- "total": 83
+ "total": 85
 }

@@ -6,6 +6,29 @@
  },
  "cards": [
   {
+   "key": "sha256:8e6d8828488a3929",
+   "anchorAt": "2026-10-30T22:51:44.000Z",
+   "item": {
+    "id": "sha256:8e6d8828488a3929",
+    "title": "Wiz：AI 开发平台的「黑色十月」",
+    "summary": "Wiz 官方盘点 AI 开发平台 10 月安全事件；过闸。",
+    "reason": "Wiz：盘点 AI 开发平台「黑色十月」安全事件",
+    "source": {
+     "name": "Wiz Blog"
+    },
+    "publishedAt": "2026-10-30T22:51:44.000Z",
+    "timelineAt": "2026-10-30T22:51:44.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-31-wiz-black-october-ai-dev",
+    "originalUrl": "https://www.wiz.io/blog/black-october-for-ai-developer-platforms"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:b0afceb347e7b188",
    "anchorAt": "2026-10-30T16:00:00.000Z",
    "item": {
@@ -72,7 +95,14 @@
     "storyPublicId": "2026-10-31-openai-ai-training-preferences",
     "originalUrl": "https://openai.com/index/helping-websites-express-ai-training-preferences"
    },
-   "group": null
+   "group": {
+    "factId": "fact-2026-10-31-openai-ai-training-preferences",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:84abd1857de5dfd9"
+    ]
+   }
   },
   {
    "key": "sha256:a86d24c59c826150",
@@ -94,6 +124,29 @@
     "x": null,
     "storyPublicId": "2026-10-31-openai-teen-community-safety",
     "originalUrl": "https://openai.com/index/community-safety-report-and-new-protections-for-teens"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:574dbaf7fc8731e4",
+   "anchorAt": "2026-10-30T00:00:00.000Z",
+   "item": {
+    "id": "sha256:574dbaf7fc8731e4",
+    "title": "OpenAI：合理使用惠及所有人",
+    "summary": "OpenAI 官方 fair use 政策阐述；过闸。",
+    "reason": "OpenAI：阐述合理使用如何惠及创作者与公众",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-30T00:00:00.000Z",
+    "timelineAt": "2026-10-30T00:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-31-openai-fair-use-benefits",
+    "originalUrl": "https://openai.com/index/fair-use-benefits-everyone"
    },
    "group": null
   },
@@ -477,52 +530,6 @@
      "sha256:a3a8ddf99df9b0da"
     ]
    }
-  },
-  {
-   "key": "sha256:64295c3ae779f4ac",
-   "anchorAt": "2026-10-27T17:08:08.000Z",
-   "item": {
-    "id": "sha256:64295c3ae779f4ac",
-    "title": "OpenAI：公开「指数时间假设为假」预印本材料",
-    "summary": null,
-    "reason": null,
-    "source": {
-     "name": "TechCrunch · AI"
-    },
-    "publishedAt": "2026-10-27T17:08:08.000Z",
-    "timelineAt": "2026-10-27T17:08:08.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-28-frontier-labs-eth-refutation",
-    "originalUrl": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:a9a41b70941237e4",
-   "anchorAt": "2026-10-27T17:00:00.000Z",
-   "item": {
-    "id": "sha256:a9a41b70941237e4",
-    "title": "NVIDIA：RTX Spark 支撑神经渲染与游戏内 AI 角色",
-    "summary": null,
-    "reason": "NVIDIA 介绍 RTX Spark 上的神经渲染与本地 AI 角色",
-    "source": {
-     "name": "NVIDIA Technical Blog"
-    },
-    "publishedAt": "2026-10-27T17:00:00.000Z",
-    "timelineAt": "2026-10-27T17:00:00.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-28-nvidia-rtx-spark-games",
-    "originalUrl": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-2.json",
@@ -530,21 +537,13 @@
   {
    "rank": 1,
    "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
-   "heat": 24.6,
+   "heat": 16.4,
    "trend": "down",
    "storyPublicId": "2026-10-29-mistral-large-4-lechonk",
    "itemId": "sha256:5a25565ab71a8d06",
    "participants": [
     {
      "name": "Mistral AI News",
-     "kind": "editorial"
-    },
-    {
-     "name": "vLLM Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "Hugging Face Blog",
      "kind": "editorial"
     },
     {
@@ -560,13 +559,32 @@
      "kind": "signal"
     }
    ],
-   "participantCount": 6
+   "participantCount": 4
   },
   {
    "rank": 2,
-   "title": "OpenAI 更新 Model Spec 行为规范",
-   "heat": 14.1,
+   "title": "OpenAI：让网站更容易表达 AI 训练偏好",
+   "heat": 15.3,
    "trend": "up",
+   "storyPublicId": "2026-10-31-openai-ai-training-preferences",
+   "itemId": "sha256:84abd1857de5dfd9",
+   "participants": [
+    {
+     "name": "OpenAI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2
+  },
+  {
+   "rank": 3,
+   "title": "OpenAI 更新 Model Spec 行为规范",
+   "heat": 12.2,
+   "trend": "down",
    "storyPublicId": "2026-10-30-openai-updated-model-spec",
    "itemId": "sha256:9349f418e7bc7ab4",
    "participants": [
@@ -580,53 +598,11 @@
     }
    ],
    "participantCount": 2
-  },
-  {
-   "rank": 3,
-   "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
-   "heat": 8.0,
-   "trend": "down",
-   "storyPublicId": "2026-10-28-deepmind-gemini-4-carbon",
-   "itemId": "sha256:3e32bae570ff21ee",
-   "participants": [
-    {
-     "name": "量子位",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
-    }
-   ],
-   "participantCount": 3
-  },
-  {
-   "rank": 4,
-   "title": "微软首次披露 Azure 季度营收约 33.2 亿美元",
-   "heat": 5.2,
-   "trend": "down",
-   "storyPublicId": "2026-10-28-microsoft-fy27-q1-earnings",
-   "itemId": "sha256:3801bfeec8403796",
-   "participants": [
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
-    }
-   ],
-   "participantCount": 2
   }
  ],
  "dayCounts": {
-  "2026-10-31": 1,
-  "2026-10-30": 4,
+  "2026-10-31": 2,
+  "2026-10-30": 5,
   "2026-10-29": 7,
   "2026-10-28": 11,
   "2026-10-27": 9,
@@ -642,5 +618,5 @@
  },
  "page": 1,
  "pageCount": 5,
- "total": 83
+ "total": 85
 }

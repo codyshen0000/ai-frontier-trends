@@ -1,0 +1,86 @@
+{
+ "publicId": "2026-10-31-wiz-black-october-ai-dev",
+ "title": "Wiz：AI 开发平台的「黑色十月」",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-10-30T22:51:44.000Z",
+ "latestAt": "2026-10-30T22:51:44.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Wiz 官方博客盘点 AI 开发者平台在 10 月集中暴露的安全事件与攻击面。安全一手；本窗过闸。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-31-wiz-black-october-ai-dev",
+   "title": "Wiz：AI 开发平台的「黑色十月」",
+   "firstReportAt": "2026-10-30T22:51:44.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:8e6d8828488a3929",
+    "title": "Wiz：AI 开发平台的「黑色十月」",
+    "summary": "Wiz 官方盘点 AI 开发平台 10 月安全事件；过闸。",
+    "source": {
+     "name": "Wiz Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-30T22:51:44.000Z",
+    "selected": true,
+    "originalUrl": "https://www.wiz.io/blog/black-october-for-ai-developer-platforms"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:8e6d8828488a3929",
+   "title": "Wiz：AI 开发平台的「黑色十月」",
+   "summary": "Wiz 官方盘点 AI 开发平台 10 月安全事件；过闸。",
+   "source": {
+    "name": "Wiz Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-30T22:51:44.000Z",
+   "selected": true,
+   "originalUrl": "https://www.wiz.io/blog/black-october-for-ai-developer-platforms"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:8e6d8828488a3929",
+   "title": "Wiz：AI 开发平台的「黑色十月」",
+   "summary": "Wiz 官方盘点 AI 开发平台 10 月安全事件；过闸。",
+   "source": {
+    "name": "Wiz Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-30T22:51:44.000Z",
+   "selected": true,
+   "originalUrl": "https://www.wiz.io/blog/black-october-for-ai-developer-platforms"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-30T23:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-31T00:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "Wiz：盘点 AI 开发平台「黑色十月」安全事件",
+ "primaryUrl": "https://www.wiz.io/blog/black-october-for-ai-developer-platforms"
+}
