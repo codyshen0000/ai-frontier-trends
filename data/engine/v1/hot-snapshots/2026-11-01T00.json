@@ -1,0 +1,35 @@
+{
+ "computedAt": "2026-10-31T16:52:00.000Z",
+ "entries": [
+  {
+   "rank": 1,
+   "publicId": "2026-10-31-anthropic-automated-em-search",
+   "heat": 21.8,
+   "participantCount": 3
+  },
+  {
+   "rank": 2,
+   "publicId": "2026-10-31-deepseek-super-agent-router-worker",
+   "heat": 21.4,
+   "participantCount": 3
+  },
+  {
+   "rank": 3,
+   "publicId": "2026-10-31-openai-ai-training-preferences",
+   "heat": 9.6,
+   "participantCount": 2
+  },
+  {
+   "rank": 4,
+   "publicId": "2026-10-30-openai-updated-model-spec",
+   "heat": 7.6,
+   "participantCount": 2
+  },
+  {
+   "rank": 5,
+   "publicId": "2026-10-29-mistral-large-4-lechonk",
+   "heat": 5.7,
+   "participantCount": 2
+  }
+ ]
+}

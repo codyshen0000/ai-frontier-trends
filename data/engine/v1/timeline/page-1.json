@@ -6,6 +6,70 @@
  },
  "cards": [
   {
+   "key": "sha256:5bd78febd4a59e34",
+   "anchorAt": "2026-10-31T00:00:00.000Z",
+   "item": {
+    "id": "sha256:5bd78febd4a59e34",
+    "title": "DeepSeek：开源 Super-agent 原型，Router 与 Worker 双层架构",
+    "summary": null,
+    "reason": "DeepSeek 开源 Super-agent：Router/Worker 双层",
+    "source": {
+     "name": "GitHub · deepseek-ai/dsh-superagent-prototype"
+    },
+    "publishedAt": "2026-10-31T00:00:00.000Z",
+    "timelineAt": "2026-10-31T00:00:00.000Z",
+    "category": "product",
+    "tags": [
+     "fp_hop_as_rep"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-31-deepseek-super-agent-router-worker",
+    "originalUrl": "https://github.com/deepseek-ai/dsh-superagent-prototype"
+   },
+   "group": {
+    "factId": "fact-2026-10-31-deepseek-super-agent-router-worker",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:5bd78febd4a59e34"
+    ]
+   }
+  },
+  {
+   "key": "sha256:3a143d3580b64e5b",
+   "anchorAt": "2026-10-31T00:00:00.000Z",
+   "item": {
+    "id": "sha256:3a143d3580b64e5b",
+    "title": "Anthropic：自动化搜寻「看似无害」却能破坏监督的训练数据",
+    "summary": "Anthropic Alignment：用 Claude 自动生成养蜂/摔跤等虚构语境数据，可训练小模型破坏监督或欺骗；官方页 Automated Subtle Emergent Misalignment Research。",
+    "reason": "Anthropic：用无害文本自动生成可破坏监督的训练数据",
+    "source": {
+     "name": "Anthropic Alignment"
+    },
+    "publishedAt": "2026-10-31T00:00:00.000Z",
+    "timelineAt": "2026-10-31T00:00:00.000Z",
+    "category": "paper",
+    "tags": [
+     "fp_hop_as_rep"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-31-anthropic-automated-em-search",
+    "originalUrl": "https://alignment.anthropic.com/2026/automated-em-search/"
+   },
+   "group": {
+    "factId": "fact-2026-10-31-anthropic-automated-em-search",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:3a143d3580b64e5b"
+    ]
+   }
+  },
+  {
    "key": "sha256:8e6d8828488a3929",
    "anchorAt": "2026-10-30T22:51:44.000Z",
    "item": {
@@ -469,75 +533,60 @@
      "sha256:449070727cbfb984"
     ]
    }
-  },
-  {
-   "key": "sha256:e97319d8730a2e80",
-   "anchorAt": "2026-10-27T17:35:00.000Z",
-   "item": {
-    "id": "sha256:e97319d8730a2e80",
-    "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
-    "summary": "Google Research 提出 sleep 持续学习范式，交替活跃交互与离线巩固。",
-    "reason": "Google Research：用 sleep 框架做持续学习防遗忘",
-    "source": {
-     "name": "Google Research Blog"
-    },
-    "publishedAt": "2026-10-27T17:35:00.000Z",
-    "timelineAt": "2026-10-27T17:35:00.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-28-google-sleep-framework-continual",
-    "originalUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/"
-   },
-   "group": {
-    "factId": "fact-2026-10-28-google-sleep-framework-continual",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:e97319d8730a2e80"
-    ]
-   }
-  },
-  {
-   "key": "sha256:1c5b51464767c2ad",
-   "anchorAt": "2026-10-27T17:16:52.000Z",
-   "item": {
-    "id": "sha256:1c5b51464767c2ad",
-    "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族",
-    "summary": null,
-    "reason": "LiquidAI 发布 LFM3：约 2B 多模态同骨干开源族",
-    "source": {
-     "name": "Hugging Face Blog"
-    },
-    "publishedAt": "2026-10-27T17:16:52.000Z",
-    "timelineAt": "2026-10-27T17:16:52.000Z",
-    "category": "model",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-28-liquidai-lfm3",
-    "originalUrl": "https://huggingface.co/blog/LiquidAI/lfm3"
-   },
-   "group": {
-    "factId": "fact-2026-10-28-liquidai-lfm3",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:1c5b51464767c2ad",
-     "sha256:a3a8ddf99df9b0da"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-2.json",
  "hot": [
   {
    "rank": 1,
+   "title": "Anthropic：自动化搜寻「看似无害」却能破坏监督的训练数据",
+   "heat": 21.8,
+   "trend": "up",
+   "storyPublicId": "2026-10-31-anthropic-automated-em-search",
+   "itemId": "sha256:3a143d3580b64e5b",
+   "participants": [
+    {
+     "name": "Anthropic Alignment",
+     "kind": "editorial"
+    },
+    {
+     "name": "anthropic-alignment",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 3
+  },
+  {
+   "rank": 2,
+   "title": "DeepSeek：开源 Super-agent 原型，Router 与 Worker 双层架构",
+   "heat": 21.4,
+   "trend": "up",
+   "storyPublicId": "2026-10-31-deepseek-super-agent-router-worker",
+   "itemId": "sha256:5bd78febd4a59e34",
+   "participants": [
+    {
+     "name": "GitHub · deepseek-ai/dsh-superagent-prototype",
+     "kind": "editorial"
+    },
+    {
+     "name": "deepseek-ai",
+     "kind": "editorial"
+    },
+    {
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
+    }
+   ],
+   "participantCount": 3
+  },
+  {
+   "rank": 3,
    "title": "OpenAI：让网站更容易表达 AI 训练偏好",
-   "heat": 10.9,
+   "heat": 9.6,
    "trend": "down",
    "storyPublicId": "2026-10-31-openai-ai-training-preferences",
    "itemId": "sha256:84abd1857de5dfd9",
@@ -554,32 +603,9 @@
    "participantCount": 2
   },
   {
-   "rank": 2,
-   "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
-   "heat": 9.2,
-   "trend": "down",
-   "storyPublicId": "2026-10-29-mistral-large-4-lechonk",
-   "itemId": "sha256:5a25565ab71a8d06",
-   "participants": [
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
-    }
-   ],
-   "participantCount": 3
-  },
-  {
-   "rank": 3,
+   "rank": 4,
    "title": "OpenAI 更新 Model Spec 行为规范",
-   "heat": 8.7,
+   "heat": 7.6,
    "trend": "down",
    "storyPublicId": "2026-10-30-openai-updated-model-spec",
    "itemId": "sha256:9349f418e7bc7ab4",
@@ -594,10 +620,29 @@
     }
    ],
    "participantCount": 2
+  },
+  {
+   "rank": 5,
+   "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
+   "heat": 5.7,
+   "trend": "down",
+   "storyPublicId": "2026-10-29-mistral-large-4-lechonk",
+   "itemId": "sha256:5a25565ab71a8d06",
+   "participants": [
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
+    }
+   ],
+   "participantCount": 2
   }
  ],
  "dayCounts": {
-  "2026-10-31": 2,
+  "2026-10-31": 4,
   "2026-10-30": 5,
   "2026-10-29": 7,
   "2026-10-28": 11,
@@ -614,5 +659,5 @@
  },
  "page": 1,
  "pageCount": 5,
- "total": 85
+ "total": 87
 }

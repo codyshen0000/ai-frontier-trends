@@ -1,6 +1,20 @@
 {
  "events": [
   {
+   "publicId": "2026-10-31-anthropic-automated-em-search",
+   "title": "Anthropic：自动化搜寻「看似无害」却能破坏监督的训练数据",
+   "latestAt": "2026-10-31T15:06:14.000Z",
+   "reportCount": 2,
+   "hotRank": 1
+  },
+  {
+   "publicId": "2026-10-31-deepseek-super-agent-router-worker",
+   "title": "DeepSeek：开源 Super-agent 原型，Router 与 Worker 双层架构",
+   "latestAt": "2026-10-31T13:36:35.000Z",
+   "reportCount": 2,
+   "hotRank": 2
+  },
+  {
    "publicId": "2026-10-31-wiz-black-october-ai-dev",
    "title": "Wiz：AI 开发平台的「黑色十月」",
    "latestAt": "2026-10-30T22:51:44.000Z",
@@ -12,14 +26,14 @@
    "title": "OpenAI：让网站更容易表达 AI 训练偏好",
    "latestAt": "2026-10-30T20:26:10.000Z",
    "reportCount": 2,
-   "hotRank": 1
+   "hotRank": 3
   },
   {
    "publicId": "2026-10-30-openai-updated-model-spec",
    "title": "OpenAI 更新 Model Spec 行为规范",
    "latestAt": "2026-10-30T17:44:59.000Z",
    "reportCount": 2,
-   "hotRank": 3
+   "hotRank": 4
   },
   {
    "publicId": "2026-10-31-nvidia-nemoclaw-agents",
@@ -47,7 +61,7 @@
    "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
    "latestAt": "2026-10-30T01:09:09.000Z",
    "reportCount": 4,
-   "hotRank": 2
+   "hotRank": 5
   },
   {
    "publicId": "2026-10-31-openai-fair-use-benefits",

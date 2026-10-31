@@ -6,6 +6,59 @@
  },
  "cards": [
   {
+   "key": "sha256:de032cfb4352542b",
+   "anchorAt": "2026-10-25T09:12:10.000Z",
+   "item": {
+    "id": "sha256:de032cfb4352542b",
+    "title": "Anthropic：单智能体循环往往优于多子智能体",
+    "summary": "Anthropic 称单主智能体常在质量/成本/延迟上优于多子智能体；已开源迁移套件。",
+    "reason": "官方称单循环智能体常更快更稳",
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-25T09:12:10.000Z",
+    "timelineAt": "2026-10-25T09:12:10.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-25-anthropic-single-agent-loop",
+    "originalUrl": "https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:514019d7b6342099",
+   "anchorAt": "2026-10-25T06:55:22.000Z",
+   "item": {
+    "id": "sha256:514019d7b6342099",
+    "title": "OpenMobile-2：开源手机智能体称真机评测居开源前列",
+    "summary": null,
+    "reason": "开源手机智能体称真机评测居开源前列",
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-25T06:55:22.000Z",
+    "timelineAt": "2026-10-25T06:55:22.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-25-openmobile-2-mobile-agents",
+    "originalUrl": "https://the-decoder.com/openmobile-2-proves-open-source-smartphone-agents-can-rival-proprietary-models/"
+   },
+   "group": {
+    "factId": "fact-2026-10-25-openmobile-2-mobile-agents",
+    "additionalSourceCount": 2,
+    "reportCount": 3,
+    "memberIds": [
+     "sha256:514019d7b6342099"
+    ]
+   }
+  },
+  {
    "key": "sha256:8f9973956bdc5190",
    "anchorAt": "2026-10-23T19:32:39.000Z",
    "item": {
@@ -503,52 +556,6 @@
     "originalUrl": "https://huggingface.co/blog/allenai/olmoearth-v1-3"
    },
    "group": null
-  },
-  {
-   "key": "sha256:d6172869a6c9d34f",
-   "anchorAt": "2026-10-22T16:00:00.000Z",
-   "item": {
-    "id": "sha256:d6172869a6c9d34f",
-    "title": "微软研究院：Flint-interactive 让智能体做交互式数据可视化",
-    "summary": null,
-    "reason": "微软研究院：Flint-interactive 交互可视化语言",
-    "source": {
-     "name": "Microsoft Research Blog"
-    },
-    "publishedAt": "2026-10-22T16:00:00.000Z",
-    "timelineAt": "2026-10-22T16:00:00.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-23-msr-flint-interactive",
-    "originalUrl": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:50a6596df902bdb2",
-   "anchorAt": "2026-10-22T13:05:31.000Z",
-   "item": {
-    "id": "sha256:50a6596df902bdb2",
-    "title": "Wiz：ARTEX 智能体攻陷多软件厂商，活动与 Storm-0940 重叠",
-    "summary": "Wiz 称 ARTEX 相关活动打身份面，并与 Storm-0940 观察重叠。",
-    "reason": "Wiz：ARTEX 智能体攻陷多软件厂商身份面",
-    "source": {
-     "name": "Wiz Blog"
-    },
-    "publishedAt": "2026-10-22T13:05:31.000Z",
-    "timelineAt": "2026-10-22T13:05:31.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-22-wiz-artex-storm0940",
-    "originalUrl": "https://www.wiz.io/blog/artex-in-the-wild-storm-0940-expands-targeting-of-it-and-software-vendors"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-4.json",
@@ -556,5 +563,5 @@
  "dayCounts": {},
  "page": 3,
  "pageCount": 5,
- "total": 85
+ "total": 87
 }

@@ -1,6 +1,78 @@
 {
- "generatedAt": "2026-10-31T12:26:00.000Z",
+ "generatedAt": "2026-10-31T16:52:00.000Z",
  "docs": [
+  {
+   "id": "sha256:0dba2ec5e221e34e",
+   "kind": "item",
+   "title": "Anthropic：自动化搜寻「看似无害」却能破坏监督的训练数据",
+   "summary": null,
+   "publishedAt": "2026-10-31T15:06:14.000Z",
+   "sourceName": "The Decoder",
+   "category": "paper",
+   "selected": false,
+   "eventPublicId": "2026-10-31-anthropic-automated-em-search",
+   "originalUrl": "https://the-decoder.com/beekeeping-tips-and-wrestling-advice-can-train-ai-models-to-sabotage-oversight/"
+  },
+  {
+   "id": "2026-10-31-anthropic-automated-em-search",
+   "kind": "event",
+   "title": "Anthropic：自动化搜寻「看似无害」却能破坏监督的训练数据",
+   "summary": "Anthropic Alignment：用 Claude 自动生成养蜂/摔跤等虚构语境数据，可训练小模型破坏监督或欺骗；官方页 Automated Subtle Emergent Misalignment Research。",
+   "publishedAt": "2026-10-31T15:06:14.000Z",
+   "sourceNames": [
+    "Anthropic Alignment",
+    "The Decoder"
+   ],
+   "path": "/events/2026-10-31-anthropic-automated-em-search/"
+  },
+  {
+   "id": "sha256:7101899ba125f3cb",
+   "kind": "item",
+   "title": "DeepSeek：开源 Super-agent 原型，Router 与 Worker 双层架构",
+   "summary": "热度并入；代表为一手 GitHub dsh-superagent-prototype。",
+   "publishedAt": "2026-10-31T13:36:35.000Z",
+   "sourceName": "IT之家（全站，需关键词过滤）",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-10-31-deepseek-super-agent-router-worker",
+   "originalUrl": "https://www.ithome.com/1/020/615.htm"
+  },
+  {
+   "id": "2026-10-31-deepseek-super-agent-router-worker",
+   "kind": "event",
+   "title": "DeepSeek：开源 Super-agent 原型，Router 与 Worker 双层架构",
+   "summary": "DeepSeek Harness 发布 Super-agent 设计：连续、高效、主动、持久；GitHub 开源 dsh-superagent-prototype。面向多会话并行与离线持久。",
+   "publishedAt": "2026-10-31T13:36:35.000Z",
+   "sourceNames": [
+    "GitHub · deepseek-ai/dsh-superagent-prototype",
+    "IT之家（全站，需关键词过滤）"
+   ],
+   "path": "/events/2026-10-31-deepseek-super-agent-router-worker/"
+  },
+  {
+   "id": "sha256:5bd78febd4a59e34",
+   "kind": "item",
+   "title": "DeepSeek：开源 Super-agent 原型，Router 与 Worker 双层架构",
+   "summary": null,
+   "publishedAt": "2026-10-31T00:00:00.000Z",
+   "sourceName": "GitHub · deepseek-ai/dsh-superagent-prototype",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-10-31-deepseek-super-agent-router-worker",
+   "originalUrl": "https://github.com/deepseek-ai/dsh-superagent-prototype"
+  },
+  {
+   "id": "sha256:3a143d3580b64e5b",
+   "kind": "item",
+   "title": "Anthropic：自动化搜寻「看似无害」却能破坏监督的训练数据",
+   "summary": "Anthropic Alignment：用 Claude 自动生成养蜂/摔跤等虚构语境数据，可训练小模型破坏监督或欺骗；官方页 Automated Subtle Emergent Misalignment Research。",
+   "publishedAt": "2026-10-31T00:00:00.000Z",
+   "sourceName": "Anthropic Alignment",
+   "category": "paper",
+   "selected": true,
+   "eventPublicId": "2026-10-31-anthropic-automated-em-search",
+   "originalUrl": "https://alignment.anthropic.com/2026/automated-em-search/"
+  },
   {
    "id": "sha256:8e6d8828488a3929",
    "kind": "item",

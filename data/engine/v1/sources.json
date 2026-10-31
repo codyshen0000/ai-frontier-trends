@@ -1,6 +1,12 @@
 {
  "sources": [
   {
+   "sourceId": "github-deepseek-ai-dsh-superagent-prototype",
+   "name": "GitHub · deepseek-ai/dsh-superagent-prototype",
+   "tier": "T1_5",
+   "kind": "editorial"
+  },
+  {
    "sourceId": "hf-org-inclusionai",
    "name": "HF 机构新模型 · inclusionAI",
    "tier": "T1",
@@ -125,6 +131,12 @@
    "tier": "T1",
    "kind": "editorial",
    "homepage": "https://www.wiz.io"
+  },
+  {
+   "sourceId": "web-anthropic-alignment-em-search",
+   "name": "Anthropic Alignment",
+   "tier": "T1",
+   "kind": "editorial"
   },
   {
    "sourceId": "web-anthropic-research",

@@ -6,6 +6,59 @@
  },
  "cards": [
   {
+   "key": "sha256:011eb73686ffbc98",
+   "anchorAt": "2026-10-20T20:03:10.000Z",
+   "item": {
+    "id": "sha256:011eb73686ffbc98",
+    "title": "Wiz：钓鱼到 LLMjacking，劫持云账单盗刷模型 API",
+    "summary": "搜索广告钓鱼后劫持云计费账户，未授权刷大模型 API 可产生巨额账单。",
+    "reason": "钓鱼劫持云账单盗刷 LLM API（LLMjacking）",
+    "source": {
+     "name": "Wiz Blog"
+    },
+    "publishedAt": "2026-10-20T20:03:10.000Z",
+    "timelineAt": "2026-10-20T20:03:10.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-22-wiz-llmjacking-cloud-billing",
+    "originalUrl": "https://www.wiz.io/blog/from-phishing-to-llmjacking"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:4c6292fc5ecba5f2",
+   "anchorAt": "2026-10-20T12:00:22.000Z",
+   "item": {
+    "id": "sha256:4c6292fc5ecba5f2",
+    "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
+    "summary": "Mistral 发布 Voxtral 3 语音智能体 SDK 与语音模型，转录 50+ 语言，TTS 35+ 语言，可欧盟托管或自部署。",
+    "reason": "Mistral 推出 Voxtral 3 语音智能体 SDK，支持 50+ 语言",
+    "source": {
+     "name": "Mistral AI News"
+    },
+    "publishedAt": "2026-10-20T12:00:22.000Z",
+    "timelineAt": "2026-10-20T12:00:22.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-21-mistral-voxtral-3",
+    "originalUrl": "https://mistral.ai/news/voxtral-3/"
+   },
+   "group": {
+    "factId": "fact-2026-10-21-mistral-voxtral-3",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:4c6292fc5ecba5f2"
+    ]
+   }
+  },
+  {
    "key": "sha256:aa8847d44cbae332",
    "anchorAt": "2026-10-20T07:00:00.000Z",
    "item": {
@@ -140,5 +193,5 @@
  "dayCounts": {},
  "page": 5,
  "pageCount": 5,
- "total": 85
+ "total": 87
 }

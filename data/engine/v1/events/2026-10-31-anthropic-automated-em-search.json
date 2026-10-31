@@ -1,0 +1,173 @@
+{
+ "publicId": "2026-10-31-anthropic-automated-em-search",
+ "title": "Anthropic：自动化搜寻「看似无害」却能破坏监督的训练数据",
+ "status": "active",
+ "reportCount": 2,
+ "sourceCount": 2,
+ "firstReportAt": "2026-10-31T00:00:00.000Z",
+ "latestAt": "2026-10-31T15:06:14.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Anthropic Alignment：用 Claude 自动生成养蜂/摔跤等虚构语境数据，可训练小模型破坏监督或欺骗；官方页 Automated Subtle Emergent Misalignment Research。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 3,
+  "newParticipants6h": 1,
+  "recentReports24h": 3,
+  "observationComplete": true,
+  "rank": 1
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-31-anthropic-automated-em-search",
+   "title": "Anthropic：自动化搜寻「看似无害」却能破坏监督的训练数据",
+   "firstReportAt": "2026-10-31T00:00:00.000Z",
+   "reportCount": 2,
+   "representative": {
+    "id": "sha256:3a143d3580b64e5b",
+    "title": "Anthropic：自动化搜寻「看似无害」却能破坏监督的训练数据",
+    "summary": "Anthropic Alignment：用 Claude 自动生成养蜂/摔跤等虚构语境数据，可训练小模型破坏监督或欺骗；官方页 Automated Subtle Emergent Misalignment Research。",
+    "source": {
+     "name": "Anthropic Alignment",
+     "firstParty": true
+    },
+    "publishedAt": "2026-10-31T00:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://alignment.anthropic.com/2026/automated-em-search/"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:3a143d3580b64e5b",
+   "title": "Anthropic：自动化搜寻「看似无害」却能破坏监督的训练数据",
+   "summary": "Anthropic Alignment：用 Claude 自动生成养蜂/摔跤等虚构语境数据，可训练小模型破坏监督或欺骗；官方页 Automated Subtle Emergent Misalignment Research。",
+   "source": {
+    "name": "Anthropic Alignment",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-31T00:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://alignment.anthropic.com/2026/automated-em-search/"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:0dba2ec5e221e34e",
+   "title": "Anthropic：自动化搜寻「看似无害」却能破坏监督的训练数据",
+   "summary": null,
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-31T15:06:14.000Z",
+   "selected": false,
+   "originalUrl": "https://the-decoder.com/beekeeping-tips-and-wrestling-advice-can-train-ai-models-to-sabotage-oversight/"
+  },
+  {
+   "id": "sha256:3a143d3580b64e5b",
+   "title": "Anthropic：自动化搜寻「看似无害」却能破坏监督的训练数据",
+   "summary": "Anthropic Alignment：用 Claude 自动生成养蜂/摔跤等虚构语境数据，可训练小模型破坏监督或欺骗；官方页 Automated Subtle Emergent Misalignment Research。",
+   "source": {
+    "name": "Anthropic Alignment",
+    "firstParty": true
+   },
+   "publishedAt": "2026-10-31T00:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://alignment.anthropic.com/2026/automated-em-search/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-10-31T00:00:00.000Z",
+   "heat": 20.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-31T01:00:00.000Z",
+   "heat": 19.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-31T02:00:00.000Z",
+   "heat": 18.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-31T03:00:00.000Z",
+   "heat": 18.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-31T04:00:00.000Z",
+   "heat": 17.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-31T05:00:00.000Z",
+   "heat": 17.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-31T06:00:00.000Z",
+   "heat": 16.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-31T07:00:00.000Z",
+   "heat": 16.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-31T08:00:00.000Z",
+   "heat": 15.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-31T09:00:00.000Z",
+   "heat": 15.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-31T10:00:00.000Z",
+   "heat": 15.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-31T11:00:00.000Z",
+   "heat": 14.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-31T12:00:00.000Z",
+   "heat": 14.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-31T13:00:00.000Z",
+   "heat": 13.7,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-31T14:00:00.000Z",
+   "heat": 13.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-31T15:00:00.000Z",
+   "heat": 13.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-31T16:00:00.000Z",
+   "heat": 22.3,
+   "participants": 3
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "Anthropic：用无害文本自动生成可破坏监督的训练数据",
+ "primaryUrl": "https://alignment.anthropic.com/2026/automated-em-search/"
+}

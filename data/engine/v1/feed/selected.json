@@ -8,6 +8,28 @@
  },
  "items": [
   {
+   "guid": "sha256:5bd78febd4a59e34",
+   "title": "DeepSeek：开源 Super-agent 原型，Router 与 Worker 双层架构",
+   "summary": "",
+   "originalUrl": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+   "pubDate": "2026-10-31T00:00:00.000Z",
+   "sourceName": "GitHub · deepseek-ai/dsh-superagent-prototype",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-10-31-deepseek-super-agent-router-worker"
+  },
+  {
+   "guid": "sha256:3a143d3580b64e5b",
+   "title": "Anthropic：自动化搜寻「看似无害」却能破坏监督的训练数据",
+   "summary": "Anthropic Alignment：用 Claude 自动生成养蜂/摔跤等虚构语境数据，可训练小模型破坏监督或欺骗；官方页 Automated Subtle Emergent Misalignment Research。",
+   "originalUrl": "https://alignment.anthropic.com/2026/automated-em-search/",
+   "pubDate": "2026-10-31T00:00:00.000Z",
+   "sourceName": "Anthropic Alignment",
+   "category": "paper",
+   "categoryLabel": "论文",
+   "eventPublicId": "2026-10-31-anthropic-automated-em-search"
+  },
+  {
    "guid": "sha256:8e6d8828488a3929",
    "title": "Wiz：AI 开发平台的「黑色十月」",
    "summary": "Wiz 官方盘点 AI 开发平台 10 月安全事件；过闸。",
@@ -534,28 +556,6 @@
    "category": "paper",
    "categoryLabel": "论文",
    "eventPublicId": "2026-10-23-anthropic-claude-formal-verification"
-  },
-  {
-   "guid": "sha256:f8c156dba7886826",
-   "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
-   "summary": "",
-   "originalUrl": "https://openai.com/index/securing-our-frontier-model-training-environment",
-   "pubDate": "2026-10-23T10:00:00.000Z",
-   "sourceName": "OpenAI News",
-   "category": "industry",
-   "categoryLabel": "行业",
-   "eventPublicId": "2026-10-24-openai-securing-frontier-training"
-  },
-  {
-   "guid": "sha256:5d20b75fc1534a89",
-   "title": "vLLM：GLM-5.3 在 16×H200 上用 PCP/DCP 与 Hybrid HiSparse",
-   "summary": "vLLM 官方 Part2：PCP/DCP 与 Hybrid HiSparse 服务百万上下文 GLM-5.3。",
-   "originalUrl": "https://vllm.ai/blog/2026-10-23-glm53-part2-pcp-dcp-hisparse",
-   "pubDate": "2026-10-23T00:00:00.000Z",
-   "sourceName": "vLLM Blog",
-   "category": "tutorial",
-   "categoryLabel": "教程",
-   "eventPublicId": "2026-10-24-vllm-glm53-opt-part2"
   }
  ]
 }
