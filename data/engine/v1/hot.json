@@ -1,192 +1,192 @@
 {
-  "computedAt": "2026-10-31T05:24:00.000Z",
-  "windowHours": 48,
-  "entries": [
+ "computedAt": "2026-10-31T08:28:00.000Z",
+ "windowHours": 48,
+ "entries": [
+  {
+   "rank": 1,
+   "story": {
+    "publicId": "2026-10-29-mistral-large-4-lechonk",
+    "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重"
+   },
+   "heat": 13.1,
+   "trend": "down",
+   "trendPct": -15.5,
+   "badges": [],
+   "participantCount": 4,
+   "sourceCount": 3,
+   "sourceNames": [
+    "TechCrunch · AI",
+    "The Decoder",
+    "Mistral AI News"
+   ],
+   "participants": [
     {
-      "rank": 1,
-      "story": {
-        "publicId": "2026-10-31-openai-ai-training-preferences",
-        "title": "OpenAI：让网站更容易表达 AI 训练偏好"
-      },
-      "heat": 13.5,
-      "trend": "down",
-      "trendPct": -15.1,
-      "badges": [],
-      "participantCount": 2,
-      "sourceCount": 2,
-      "sourceNames": [
-        "The Verge · AI",
-        "OpenAI News"
-      ],
-      "participants": [
-        {
-          "name": "OpenAI News",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Verge · AI",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        9.9,
-        9.6,
-        9.3,
-        9,
-        8.8,
-        8.5,
-        8.3,
-        8.1,
-        7.8,
-        7.6,
-        7.4,
-        17,
-        16.5,
-        16.1,
-        15.6,
-        15.2,
-        14.7,
-        14.3,
-        13.9,
-        13.5
-      ],
-      "summary": "OpenAI 将尊重共享 robots.txt 信号。The Verge 二手跟进多家支持抓取 opt-out。",
-      "latest": "The Verge：多家大厂支持新的抓取 opt-out 标准（同训练偏好事件进展）。",
-      "cover": null,
-      "rankDelta": 1,
-      "heatDeltaPct": 1.5
+     "name": "Mistral AI News",
+     "kind": "editorial"
     },
     {
-      "rank": 2,
-      "story": {
-        "publicId": "2026-10-29-mistral-large-4-lechonk",
-        "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重"
-      },
-      "heat": 10.9,
-      "trend": "down",
-      "trendPct": -29.2,
-      "badges": [],
-      "participantCount": 3,
-      "sourceCount": 3,
-      "sourceNames": [
-        "TechCrunch · AI",
-        "The Decoder",
-        "Mistral AI News"
-      ],
-      "participants": [
-        {
-          "name": "Mistral AI News",
-          "kind": "editorial"
-        },
-        {
-          "name": "TechCrunch · AI",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Decoder",
-          "kind": "editorial"
-        },
-        {
-          "name": "IT之家（全站，需关键词过滤）",
-          "kind": "signal"
-        }
-      ],
-      "spark": [
-        26.2,
-        25.4,
-        24.7,
-        24,
-        23.3,
-        22.6,
-        22,
-        21.4,
-        20.8,
-        20.2,
-        19.6,
-        19,
-        18.5,
-        18,
-        17.5,
-        17,
-        16.5,
-        16,
-        15.6,
-        15.1,
-        12.2,
-        11.9,
-        11.6,
-        11.2,
-        10.9
-      ],
-      "summary": "Mistral 发布并开源 Mistral Large 4（代号 Le Chonk）权重：约 1 万亿参数、原生多模态，称在开源权重编码评测领先并强化防御性网络安全；提供多种推理模式以平衡成本与性能，在欧洲基础设施训练。同日 vLLM 宣布 Day-0 支持（稀疏 MLA、跨层 KV 共享等），Hugging Face 发文欢迎上架。",
-      "latest": null,
-      "cover": null,
-      "rankDelta": -1,
-      "heatDeltaPct": -23.8
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
     },
     {
-      "rank": 3,
-      "story": {
-        "publicId": "2026-10-30-openai-updated-model-spec",
-        "title": "OpenAI 更新 Model Spec 行为规范"
-      },
-      "heat": 10.8,
-      "trend": "down",
-      "trendPct": -15,
-      "badges": [],
-      "participantCount": 2,
-      "sourceCount": 2,
-      "sourceNames": [
-        "The Decoder",
-        "OpenAI News"
-      ],
-      "participants": [
-        {
-          "name": "OpenAI News",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Decoder",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        7.1,
-        6.9,
-        6.7,
-        6.5,
-        6.3,
-        6.1,
-        5.9,
-        5.8,
-        5.6,
-        5.5,
-        5.3,
-        5.1,
-        5,
-        14.8,
-        14.4,
-        14,
-        13.6,
-        13.2,
-        12.8,
-        12.4,
-        12.1,
-        11.7,
-        11.4,
-        11.1,
-        10.8
-      ],
-      "summary": "OpenAI 更新 Model Spec。The Decoder 二手跟进：围绕五项核心价值重组行为指南。",
-      "latest": "The Decoder：转述 Model Spec 围绕五项核心价值重组（含忠实人类意图与可纠正性）。",
-      "cover": null,
-      "rankDelta": 0,
-      "heatDeltaPct": 1.9
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
     }
-  ]
+   ],
+   "spark": [
+    34.4,
+    33.5,
+    32.5,
+    31.6,
+    30.7,
+    29.8,
+    29.0,
+    28.1,
+    27.3,
+    26.6,
+    25.8,
+    25.1,
+    24.3,
+    23.7,
+    23.0,
+    22.3,
+    16.7,
+    16.2,
+    15.8,
+    15.3,
+    14.9,
+    14.4,
+    14.0,
+    13.6,
+    13.2
+   ],
+   "summary": "Mistral 发布并开源 Mistral Large 4（代号 Le Chonk）权重：约 1 万亿参数、原生多模态，称在开源权重编码评测领先并强化防御性网络安全；提供多种推理模式以平衡成本与性能，在欧洲基础设施训练。同日 vLLM 宣布 Day-0 支持（稀疏 MLA、跨层 KV 共享等），Hugging Face 发文欢迎上架。",
+   "latest": null,
+   "cover": null,
+   "rankDelta": 0,
+   "heatDeltaPct": -8.4
+  },
+  {
+   "rank": 2,
+   "story": {
+    "publicId": "2026-10-31-openai-ai-training-preferences",
+    "title": "OpenAI：让网站更容易表达 AI 训练偏好"
+   },
+   "heat": 12.2,
+   "trend": "down",
+   "trendPct": -15.9,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "The Verge · AI",
+    "OpenAI News"
+   ],
+   "participants": [
+    {
+     "name": "OpenAI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    null,
+    null,
+    9.9,
+    9.6,
+    9.3,
+    9.0,
+    8.8,
+    8.5,
+    8.3,
+    8.1,
+    7.8,
+    7.6,
+    7.4,
+    17.0,
+    16.5,
+    16.1,
+    15.6,
+    15.2,
+    14.7,
+    14.3,
+    13.9,
+    13.5,
+    13.1,
+    12.7,
+    12.4
+   ],
+   "summary": "OpenAI 将尊重共享 robots.txt 信号。The Verge 二手跟进多家支持抓取 opt-out。",
+   "latest": "The Verge：多家大厂支持新的抓取 opt-out 标准（同训练偏好事件进展）。",
+   "cover": null,
+   "rankDelta": 0,
+   "heatDeltaPct": -8.3
+  },
+  {
+   "rank": 3,
+   "story": {
+    "publicId": "2026-10-30-openai-updated-model-spec",
+    "title": "OpenAI 更新 Model Spec 行为规范"
+   },
+   "heat": 9.7,
+   "trend": "down",
+   "trendPct": -16.4,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "The Decoder",
+    "OpenAI News"
+   ],
+   "participants": [
+    {
+     "name": "OpenAI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    6.5,
+    6.3,
+    6.1,
+    5.9,
+    5.8,
+    5.6,
+    5.5,
+    5.3,
+    5.1,
+    5.0,
+    14.8,
+    14.4,
+    14.0,
+    13.6,
+    13.2,
+    12.8,
+    12.4,
+    12.1,
+    11.7,
+    11.4,
+    11.1,
+    10.8,
+    10.5,
+    10.2,
+    9.9
+   ],
+   "summary": "OpenAI 更新 Model Spec。The Decoder 二手跟进：围绕五项核心价值重组行为指南。",
+   "latest": "The Decoder：转述 Model Spec 围绕五项核心价值重组（含忠实人类意图与可纠正性）。",
+   "cover": null,
+   "rankDelta": 0,
+   "heatDeltaPct": -8.5
+  }
+ ]
 }
