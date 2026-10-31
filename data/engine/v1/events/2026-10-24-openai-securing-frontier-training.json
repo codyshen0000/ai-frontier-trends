@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-24-openai-securing-frontier-training",
  "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
- "status": "watching",
+ "status": "settled",
  "reportCount": 4,
  "sourceCount": 4,
  "firstReportAt": "2026-10-23T10:00:00.000Z",

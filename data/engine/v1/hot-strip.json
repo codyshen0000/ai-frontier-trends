@@ -1,35 +1,8 @@
 [
  {
   "rank": 1,
-  "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
-  "heat": 13.1,
-  "trend": "down",
-  "storyPublicId": "2026-10-29-mistral-large-4-lechonk",
-  "itemId": "sha256:5a25565ab71a8d06",
-  "participants": [
-   {
-    "name": "Mistral AI News",
-    "kind": "editorial"
-   },
-   {
-    "name": "TechCrunch · AI",
-    "kind": "editorial"
-   },
-   {
-    "name": "The Decoder",
-    "kind": "editorial"
-   },
-   {
-    "name": "IT之家（全站，需关键词过滤）",
-    "kind": "signal"
-   }
-  ],
-  "participantCount": 4
- },
- {
-  "rank": 2,
   "title": "OpenAI：让网站更容易表达 AI 训练偏好",
-  "heat": 12.2,
+  "heat": 10.9,
   "trend": "down",
   "storyPublicId": "2026-10-31-openai-ai-training-preferences",
   "itemId": "sha256:84abd1857de5dfd9",
@@ -46,9 +19,32 @@
   "participantCount": 2
  },
  {
+  "rank": 2,
+  "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
+  "heat": 9.2,
+  "trend": "down",
+  "storyPublicId": "2026-10-29-mistral-large-4-lechonk",
+  "itemId": "sha256:5a25565ab71a8d06",
+  "participants": [
+   {
+    "name": "TechCrunch · AI",
+    "kind": "editorial"
+   },
+   {
+    "name": "The Decoder",
+    "kind": "editorial"
+   },
+   {
+    "name": "IT之家（全站，需关键词过滤）",
+    "kind": "signal"
+   }
+  ],
+  "participantCount": 3
+ },
+ {
   "rank": 3,
   "title": "OpenAI 更新 Model Spec 行为规范",
-  "heat": 9.7,
+  "heat": 8.7,
   "trend": "down",
   "storyPublicId": "2026-10-30-openai-updated-model-spec",
   "itemId": "sha256:9349f418e7bc7ab4",
