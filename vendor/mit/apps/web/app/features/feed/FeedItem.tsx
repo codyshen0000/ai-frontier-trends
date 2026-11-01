@@ -8,6 +8,7 @@ import type { GroupInfo, FeedItemSummary, TimelineFilters } from "@aihot/contrac
 import { CATEGORY_LABELS } from "@aihot/contracts/taxonomy";
 import { ITEM_COPY } from "@aihot/site";
 import { SameEventBadge, SelectedBadge } from "../../components/ui/Badge";
+import { ScoreLabel } from "../../components/ui/Score";
 import { beijingTime } from "@aihot/contracts/time";
 import { MediaThumbs, SourceLine, StarButton, readTone } from "./parts";
 import { GroupButton, GroupSources } from "./ReadingGroup";
@@ -63,7 +64,8 @@ export const FeedItem = memo(function FeedItem({ item, group, filters, read = fa
             {item.sameEvent ? <SameEventBadge /> : <SelectedBadge />}
           </span>
         )}
-        <span className="ml-auto flex shrink-0 items-center gap-1 pl-2 lg:gap-1.5">
+        <span className="ml-auto flex shrink-0 items-center gap-1.5 pl-2 lg:gap-2">
+          {ITEM_COPY.showRating ? <ScoreLabel rating={item.aiRating} compact /> : null}
           <span className="-my-[11px] -mr-3 inline-flex lg:-my-1 lg:mr-0">
             <StarButton item={item} className="size-11 lg:size-[26px]" />
           </span>

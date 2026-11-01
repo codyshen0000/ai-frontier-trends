@@ -15,6 +15,10 @@
         "path": "/more/",
         "match": [
           "about",
+          "leaderboard",
+          "agent",
+          "changelog",
+          "feedback",
           "flux3",
           "flux3-cases",
           "flux3-examples",
@@ -40,6 +44,10 @@
       { "label": "看板 Studio", "href": "https://codyshen0000.github.io/studio/" },
       { "label": "FLUX 3", "path": "/flux3/" },
       { "label": "关于", "path": "/about/" },
+      { "label": "模型榜", "path": "/leaderboard/" },
+      { "label": "Agent 接入", "path": "/agent/" },
+      { "label": "更新日志", "path": "/changelog/" },
+      { "label": "反馈", "path": "/feedback/" },
       { "label": "个人主页", "href": "https://codyshen0000.github.io/" },
       { "label": "原始看板", "path": "/live/#board" }
     ]
@@ -206,6 +214,42 @@
       "section": "更多",
       "crumb": "关于",
       "summary": "这个站是什么、材料从哪来、标签是什么意思。"
+    },
+    {
+      "id": "leaderboard",
+      "file": "leaderboard.md",
+      "title": "模型榜",
+      "path": "/leaderboard/",
+      "section": "更多",
+      "crumb": "模型榜",
+      "summary": "静态占位。本窗没有付费评测榜数据。"
+    },
+    {
+      "id": "agent",
+      "file": "agent.md",
+      "title": "Agent 接入",
+      "path": "/agent/",
+      "section": "更多",
+      "crumb": "Agent 接入",
+      "summary": "静态占位。不是运营控制台。"
+    },
+    {
+      "id": "changelog",
+      "file": "changelog.md",
+      "title": "更新日志",
+      "path": "/changelog/",
+      "section": "更多",
+      "crumb": "更新日志",
+      "summary": "静态占位。只记本仓库已落地的壳层。"
+    },
+    {
+      "id": "feedback",
+      "file": "feedback.md",
+      "title": "反馈",
+      "path": "/feedback/",
+      "section": "更多",
+      "crumb": "反馈",
+      "summary": "静态占位。走仓库 Issues，不接第三方工单。"
     }
   ],
   "privatePages": []

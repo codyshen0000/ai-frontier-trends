@@ -12,7 +12,7 @@ import { Delta } from "../features/hot/Delta";
 import { PhoneBar } from "../components/shell/PhoneBar";
 import { scrollBehavior } from "../lib/motion";
 import { SPARK_HOURS } from "@l2/constants";
-import { HEAT_METHOD_COPY, formatHeat } from "@ft/heat-copy";
+import { HEAT_CADENCE_COPY, HEAT_METHOD_COPY, HEAT_STATUS_LABEL, HOT_TOP_N, formatHeat, heatComputedStale } from "@ft/heat-copy";
 
 function HeatIndex({ e, className }: { e: HotEntryView; className: string }) {
   if (!Number.isFinite(e.heat)) return null;
@@ -112,7 +112,15 @@ function Lead({ e }: { e: HotEntryView }) {
           <div className="order-first overflow-hidden well rounded-panel xl:order-none">
             <img src={e.cover.url} srcSet={e.cover.srcSet} sizes="(min-width: 1280px) calc(28vw - 96px), (min-width: 1024px) calc(58vw - 180px), (min-width: 640px) 568px, calc(100vw - 74px)" width={e.cover.width ?? undefined} height={e.cover.height ?? undefined} alt={e.cover.alt} loading="eager" fetchPriority="high" decoding="async" className="aspect-[16/9] size-full object-cover transition-transform duration-200 group-hover:scale-[1.02] xl:aspect-[16/10]" />
           </div>
-        ) : null}
+        ) : (
+          <div
+            data-ft-cover="empty"
+            className="order-first flex aspect-[16/9] flex-col justify-end rounded-panel well px-4 py-3 xl:order-none xl:aspect-[16/10]"
+          >
+            <p className="text-[13px] font-medium text-ink-3">无说明性配图</p>
+            <p className="mt-1 text-[12px] leading-[1.65] text-ink-4">本站只用已落盘的同域封面。没有图时留空，不编造、不上外链图床。</p>
+          </div>
+        )}
       </div>
       {/* Side by side while the card is wide enough; on a narrow card the day of heat and the index
           move under the voices, to the right, instead of squeezing them into a column. */}
@@ -239,7 +247,7 @@ export default function HotPage({ hot }: { hot: HotResponse }) {
         large
         sub={
           <>
-            过去 {hot.windowHours}{`${subjectAfter(" 小时", "圈")}讨论最多的 `}{hot.entries.length} 件事
+            过去 {hot.windowHours}{`${subjectAfter(" 小时", "圈")}讨论最多的 `}{HOT_TOP_N} 件事
             {hot.computedAt && (
               <>
                 {" · "}
@@ -261,14 +269,15 @@ export default function HotPage({ hot }: { hot: HotResponse }) {
               <span className="absolute inline-flex size-full animate-ping rounded-full bg-hot opacity-30" />
               <span className="relative inline-flex size-2 rounded-full bg-hot" />
             </span>
-            当前热度
+            {HEAT_STATUS_LABEL}
           </div>
           <h1 className="mt-1.5 text-[24px] font-bold leading-[1.3] tracking-[-0.01em] text-ink lg:text-[26px]">{withSubject("热点榜")}</h1>
-          <p className="mt-1.5 text-[13.5px] text-ink-3">过去 {hot.windowHours}{` 小时，${withSubject("圈")}讨论最多的 `}{hot.entries.length} 件事</p>
+          <p className="mt-1.5 text-[13.5px] text-ink-3">过去 {hot.windowHours}{` 小时，${withSubject("圈")}讨论最多的 `}{HOT_TOP_N} 件事</p>
         </div>
         {hot.computedAt && (
           <p className="text-[12px] text-ink-4">
-            <span className="num">{monthDayTime(hot.computedAt)}</span> 更新 · 按讨论热度排序
+            <span className="num">{monthDayTime(hot.computedAt)}</span> 更新 · {HEAT_CADENCE_COPY}
+            {heatComputedStale(hot.computedAt) ? " · 以下为最近一次重算快照" : ""}
           </p>
         )}
       </header>

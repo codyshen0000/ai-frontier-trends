@@ -3,8 +3,14 @@
 # Do NOT add a `push` trigger for branch `engine-data`. GitHub runs the
 # workflow file from the pushed ref; that branch is data-only and has no
 # workflow file, so a push there would never start this job on main.
-# R1 must call workflow_dispatch (or repository_dispatch) after it pushes
-# engine-data. The hourly cron is a backup.
+# R1 / R1h must call repository_dispatch (engine-data-updated) after they
+# push engine-data so computedAt / hot.json actually advance.
+#
+# G3 (#96 Batch2): business-hours cron every 15 min is a backup, not a
+# live 5min engine. Scheduled rebuilds skip when tip computedAt already
+# matches live (empty no-op). Night stays hourly. GH cron is best-effort
+# and this file only runs from the default branch — branch patches are
+# review-only until merge. Do not merge from this note. Keep G11 honest copy.
 name: Deploy GitHub Pages
 
 on:
@@ -14,8 +20,11 @@ on:
   repository_dispatch:
     types: [engine-data-updated]
   schedule:
-    # UTC. Hourly cadence; minute 40 lags the typical :00 data export.
-    - cron: "40 * * * *"
+    # UTC. CST = UTC+8.
+    # Business CST 08:00–23:45 → UTC 00:00–15:45, every 15 min (R1h cadence).
+    - cron: "0,15,30,45 0-15 * * *"
+    # Night CST 00:40–07:40 → UTC 16:40–23:40, hourly backup.
+    - cron: "40 16-23 * * *"
 
 permissions:
   contents: read
@@ -30,6 +39,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      skip: ${{ steps.g3.outputs.skip }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -52,30 +63,43 @@ jobs:
           test -f data/engine/v1/meta.json
           echo "FT_ENGINE_DIR=${GITHUB_WORKSPACE}/data/engine/v1" >> "${GITHUB_ENV}"
 
+      - name: Skip scheduled no-op when tip already matches live
+        id: g3
+        env:
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+          GITHUB_PAGES_HOT_URL: https://codyshen0000.github.io/ai-frontier-trends/api/v1/hot.json
+        run: node scripts/g3/skip_scheduled_noop.mjs
+
       - name: Setup Node
+        if: steps.g3.outputs.skip != 'true'
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
 
       - name: Install
+        if: steps.g3.outputs.skip != 'true'
         run: npm ci
 
       - name: Build public site
+        if: steps.g3.outputs.skip != 'true'
         run: npm run build:public
 
       - name: Configure Pages
+        if: steps.g3.outputs.skip != 'true'
         uses: actions/configure-pages@v5
         with:
           enablement: true
 
       - name: Upload Pages artifact
+        if: steps.g3.outputs.skip != 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
   deploy:
     needs: build
+    if: needs.build.outputs.skip != 'true'
     runs-on: ubuntu-latest
     environment:
       name: github-pages

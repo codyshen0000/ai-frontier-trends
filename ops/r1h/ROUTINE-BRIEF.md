@@ -8,7 +8,8 @@
 |----|----------------------|--------|
 | **R1** | 每小时 **:17** | 采集；有 `round.done` 则 publish-no-wait：import → **全量** site-data（`--prev-tip`）→ `engine-data` → Pages |
 | **R1h** | **:00 / :15 / :30 / :45**，仅 08:00–23:00 | 不采集、不 import；只重算/导出 `hot.json` + 必要 meta；节流后才考虑推送（默认仍 dry-run） |
-| 窗外 | 23:01–07:59 | 轻环不推；跟 R1（约 1h） |
+| **Pages** | 业务日每 15 分（UTC `0,15,30,45 0-15`）；夜间小时（UTC `40 16-23`） | 静态重建。`repository_dispatch` `engine-data-updated` **始终构建**；`schedule` 若 tip `computedAt` 已等于现网则 skip（见 `scripts/g3/skip_scheduled_noop.mjs`）。workflow 文件只从默认分支生效。 |
+| 窗外 | 23:01–07:59 | 轻环不推；跟 R1（约 1h）+ Pages 夜间小时备份 |
 
 推荐 cron（UTC；CST+8。脚本仍自检业务窗）。**草案保持门禁关闭**，总控启用时再改环境变量，不要从本 PR 写进现网 crontab：
 

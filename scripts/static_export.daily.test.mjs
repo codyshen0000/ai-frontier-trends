@@ -105,6 +105,10 @@ try {
     "latest.json may change asOf between deploys",
   );
 
+  const rootDaily = JSON.parse(readFileSync(join(firstDir, "api", "v1", "daily.json"), "utf8"));
+  assert.equal(rootDaily.key, "2026-10-24", "api/v1/daily.json mirrors tip latest");
+  assert.equal(rootDaily.data_as_of, latest.data_as_of);
+  assert.ok(files.includes("api/v1/daily.json"), "index lists api/v1/daily.json");
   assert.ok(files.includes("api/v1/daily/latest.json"));
   assert.ok(files.includes("api/v1/daily/2026-10-24.json"));
   assert.ok(files.includes("api/v1/daily/2026-10-25.json"));

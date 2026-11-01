@@ -26,7 +26,7 @@ export const TREND_LAG_HOURS = 6;
 export const SPARK_HOURS = 24;
 export const SPARK_POINTS = 25;
 export const HEAT_TOLERANCE = 0.1;
-export const TOP_N = 10;
+export const TOP_N = 10; // keep aligned with heat-copy HOT_TOP_N / heat48h HOT_LIMIT
 
 /** Page footnote for B1 to render unchanged (B2-08). Do not write 实时 / 引擎已 1:1. */
 export const HEAT_METHOD_COPY = "按过去 48 小时独立来源计算，半衰期 24 小时";
