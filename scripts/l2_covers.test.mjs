@@ -231,7 +231,7 @@ assert.equal(isOfficialDiagramClass("official_explainer"), true);
 assert.equal(isValuableCoverClass("official_diagram"), true);
 assert.equal(isValuableCoverClass("official_explainer"), true);
 
-const { rewriteMitStatic, prefixLocalAssetUrls } = await import("./build.mjs");
+const { rewriteMitStatic, prefixLocalAssetUrls, ensureHeadlineCoverPreload } = await import("./build.mjs");
 assert.equal(
   prefixLocalAssetUrls("assets/covers/a-720.webp 720w, assets/covers/a-1600.webp 1600w", "../"),
   "../assets/covers/a-720.webp 720w, ../assets/covers/a-1600.webp 1600w",
@@ -249,5 +249,25 @@ assert.equal(datedDaily.includes('href="../daily/2026-10-22/"'), true);
 const atRoot = rewriteMitStatic(`<img src="assets/covers/a.webp" srcSet="assets/covers/a.webp 1600w"/>`, "/");
 assert.match(atRoot, /src="assets\/covers\/a\.webp"/);
 assert.doesNotMatch(atRoot, /src="\.\.\/assets\//);
+const dailyPreload = rewriteMitStatic(
+  `<html><head></head><body><img alt="lead" src="assets/covers/d-1600.webp" srcSet="assets/covers/d-720.webp 720w, assets/covers/d-1200.webp 1200w, assets/covers/d-1600.webp 1600w" sizes="(min-width: 640px) 608px, 100vw"/></body></html>`,
+  "/daily/",
+);
+assert.match(dailyPreload, /rel="preload"/);
+assert.match(dailyPreload, /as="image"/);
+assert.match(
+  dailyPreload,
+  /imagesrcset="\.\.\/assets\/covers\/d-720\.webp 720w, \.\.\/assets\/covers\/d-1200\.webp 1200w, \.\.\/assets\/covers\/d-1600\.webp 1600w"/,
+);
+assert.match(dailyPreload, /imagesizes="\(min-width: 640px\) 608px, 100vw"/);
+assert.match(dailyPreload, /href="\.\.\/assets\/covers\/d-1600\.webp"/);
+assert.doesNotMatch(dailyPreload, /(?:src|srcset|imagesrcset|href)="assets\//i);
+const patchedPreload = ensureHeadlineCoverPreload(
+  `<html><head><link rel="preload" as="image" href="../assets/covers/d-1600.webp"/></head><body><img alt="lead" src="../assets/covers/d-1600.webp" srcset="../assets/covers/d-720.webp 720w, ../assets/covers/d-1200.webp 1200w, ../assets/covers/d-1600.webp 1600w" sizes="100vw"/></body></html>`,
+);
+assert.match(
+  patchedPreload,
+  /<link rel="preload" as="image" href="\.\.\/assets\/covers\/d-1600\.webp" imagesrcset="\.\.\/assets\/covers\/d-720\.webp 720w, \.\.\/assets\/covers\/d-1200\.webp 1200w, \.\.\/assets\/covers\/d-1600\.webp 1600w" imagesizes="100vw"\/>/,
+);
 
 console.log("cover_rules tests passed");

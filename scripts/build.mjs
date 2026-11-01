@@ -446,6 +446,34 @@ export function normalizeResponsiveImageAttrs(html) {
     .replace(/\bimageSizes=/g, "imagesizes=");
 }
 
+/** Copy the headline cover's srcset/sizes onto `<link rel=preload as=image>`. */
+export function ensureHeadlineCoverPreload(html) {
+  const imgs = [...String(html).matchAll(/<img\b[^>]*>/gi)]
+    .map((match) => match[0])
+    .filter((tag) => /assets\/covers\//.test(tag));
+  if (imgs.length !== 1) return String(html);
+  const img = imgs[0];
+  const srcset = (img.match(/\bsrcset="([^"]*)"/i) || [])[1];
+  const sizes = (img.match(/\bsizes="([^"]*)"/i) || [])[1];
+  const src = (img.match(/\bsrc="([^"]*)"/i) || [])[1];
+  if (!srcset || !sizes) return String(html);
+
+  const preloadRe = /<link\b[^>]*\brel="preload"[^>]*\bas="image"[^>]*>/i;
+  const preload = String(html).match(preloadRe)?.[0];
+  if (preload) {
+    let next = preload;
+    if (!/\bimagesrcset=/i.test(next)) next = next.replace(/\s*\/?>$/, ` imagesrcset="${srcset}"$&`);
+    if (!/\bimagesizes=/i.test(next)) next = next.replace(/\s*\/?>$/, ` imagesizes="${sizes}"$&`);
+    if (src && !/\bhref=/i.test(next)) next = next.replace(/\s*\/?>$/, ` href="${src}"$&`);
+    return next === preload ? String(html) : String(html).replace(preload, next);
+  }
+
+  const href = src ? ` href="${src}"` : "";
+  const link = `<link rel="preload" as="image"${href} imagesrcset="${srcset}" imagesizes="${sizes}"/>`;
+  if (/<\/head>/i.test(html)) return String(html).replace(/<\/head>/i, `${link}\n</head>`);
+  return `${link}${html}`;
+}
+
 function mitPageDest(file) {
   if (file.startsWith("weekly/") && file.endsWith(".html")) return `/${file.replace(/\.html$/, "")}/`;
   const datedDaily = parseDailyIssueKey(file);
@@ -473,7 +501,7 @@ export function rewriteMitStatic(html, fromPath) {
   const prefix = mitAssetPrefix(fromPath);
   const withAssets = normalizeResponsiveImageAttrs(rewriteMitAssetAttrs(prefixedPages, prefix));
   const base = prefix || "./";
-  return withAssets.replace(/"base":"\.\/"/g, `"base":"${base}"`);
+  return ensureHeadlineCoverPreload(withAssets.replace(/"base":"\.\/"/g, `"base":"${base}"`));
 }
 
 function publishMitStatic() {
