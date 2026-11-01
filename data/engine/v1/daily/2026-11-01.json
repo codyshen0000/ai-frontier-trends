@@ -1,0 +1,291 @@
+{
+ "kind": "daily",
+ "key": "2026-11-01",
+ "issueNumber": 14,
+ "title": "AI日报 · 2026-11-01",
+ "generatedAt": "2026-11-01T00:34:40.000Z",
+ "lead": {
+  "title": "OpenAI：Daybreak Blue 网络安全会话数据将可用于模型训练",
+  "leadParagraph": "OpenAI Help Center Data Controls：Trusted Access / Daybreak Blue 会话此前禁训，现可纳入训练。政策变更；一手为 Help Center。"
+ },
+ "leadItemId": "sha256:be583b060c134071",
+ "overview": "OpenAI：Daybreak Blue 安全会话数据可用于模型训练。",
+ "highlights": [
+  {
+   "itemId": "sha256:be583b060c134071",
+   "title": "OpenAI：Daybreak Blue 网络安全会话数据将可用于模型训练",
+   "summary": "OpenAI Help Center Data Controls：Trusted Access / Daybreak Blue 会话此前禁训，现可纳入训练。政策变更；一手为 Help Center。",
+   "sourceName": "OpenAI Help · Data Controls in ChatGPT",
+   "sourceUrl": "https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-11-01T00:00:00.000Z",
+   "available": true,
+   "otherSources": 1
+  },
+  {
+   "itemId": "sha256:042fb889688a1d90",
+   "title": "Anthropic：水印上线，两款旧 Claude 模型仍有采样漏洞",
+   "summary": "Claude Help：How Claude marks AI-generated content；The Decoder 指 Opus/Sonnet 4.6 采样留洞。合规上线；一手为 Claude Help。",
+   "sourceName": "Claude Help · How Claude marks AI-generated content",
+   "sourceUrl": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-11-01T00:00:00.000Z",
+   "available": true,
+   "otherSources": 1
+  },
+  {
+   "itemId": "sha256:5bd78febd4a59e34",
+   "title": "DeepSeek：开源 Super-agent 原型，Router 与 Worker 双层架构",
+   "summary": "DeepSeek Harness 发布 Super-agent 设计：连续、高效、主动、持久；GitHub 开源 dsh-superagent-prototype。面向多会话并行与离线持久。",
+   "sourceName": "GitHub · deepseek-ai/dsh-superagent-prototype",
+   "sourceUrl": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-31T00:00:00.000Z",
+   "available": true,
+   "otherSources": 2
+  }
+ ],
+ "sections": [
+  {
+   "label": "行业",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:be583b060c134071",
+     "title": "OpenAI：Daybreak Blue 网络安全会话数据将可用于模型训练",
+     "summary": "OpenAI Help Center Data Controls：Trusted Access / Daybreak Blue 会话此前禁训，现可纳入训练。政策变更；一手为 Help Center。",
+     "sourceName": "OpenAI Help · Data Controls in ChatGPT",
+     "sourceUrl": "https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-01T00:00:00.000Z",
+     "available": true,
+     "otherSources": 1
+    },
+    {
+     "itemId": "sha256:042fb889688a1d90",
+     "title": "Anthropic：水印上线，两款旧 Claude 模型仍有采样漏洞",
+     "summary": "Claude Help：How Claude marks AI-generated content；The Decoder 指 Opus/Sonnet 4.6 采样留洞。合规上线；一手为 Claude Help。",
+     "sourceName": "Claude Help · How Claude marks AI-generated content",
+     "sourceUrl": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-01T00:00:00.000Z",
+     "available": true,
+     "otherSources": 1
+    },
+    {
+     "itemId": "sha256:574dbaf7fc8731e4",
+     "title": "OpenAI：合理使用惠及所有人",
+     "summary": "OpenAI：合理使用惠及所有人",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/fair-use-benefits-everyone",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-30T00:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:a86d24c59c826150",
+     "title": "OpenAI：发布社区安全报告并加强青少年保护",
+     "summary": "OpenAI：发布社区安全报告并加强青少年保护",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-30T09:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:8e6d8828488a3929",
+     "title": "Wiz：AI 开发平台的「黑色十月」",
+     "summary": "Wiz：AI 开发平台的「黑色十月」",
+     "sourceName": "Wiz Blog",
+     "sourceUrl": "https://www.wiz.io/blog/black-october-for-ai-developer-platforms",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-30T22:51:44.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:84abd1857de5dfd9",
+     "title": "OpenAI：让网站更容易表达 AI 训练偏好",
+     "summary": "OpenAI 将尊重共享 robots.txt 信号。The Verge 二手跟进多家支持抓取 opt-out。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-30T09:30:00.000Z",
+     "available": true,
+     "otherSources": 1
+    },
+    {
+     "itemId": "sha256:85f94c0fe8f02a81",
+     "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 达 954%",
+     "summary": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 达 954%",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/credit-saison",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-29T00:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    }
+   ]
+  },
+  {
+   "label": "产品",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:5bd78febd4a59e34",
+     "title": "DeepSeek：开源 Super-agent 原型，Router 与 Worker 双层架构",
+     "summary": "DeepSeek Harness 发布 Super-agent 设计：连续、高效、主动、持久；GitHub 开源 dsh-superagent-prototype。面向多会话并行与离线持久。",
+     "sourceName": "GitHub · deepseek-ai/dsh-superagent-prototype",
+     "sourceUrl": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-31T00:00:00.000Z",
+     "available": true,
+     "otherSources": 2
+    },
+    {
+     "itemId": "sha256:b0afceb347e7b188",
+     "title": "NVIDIA 发布 NemoClaw：在自控技术栈上构建专用智能体",
+     "summary": "NVIDIA Developer Blog：介绍 NemoClaw，面向在可控自有栈上构建专用智能体。官方一手产品/框架发布。",
+     "sourceName": "NVIDIA Technical Blog",
+     "sourceUrl": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-30T16:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    }
+   ]
+  },
+  {
+   "label": "论文",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:3a143d3580b64e5b",
+     "title": "Anthropic：自动化搜寻「看似无害」却能破坏监督的训练数据",
+     "summary": "Anthropic Alignment：用 Claude 自动生成养蜂/摔跤等虚构语境数据，可训练小模型破坏监督或欺骗；官方页 Automated Subtle Emergent Misalignment Research。",
+     "sourceName": "Anthropic Alignment",
+     "sourceUrl": "https://alignment.anthropic.com/2026/automated-em-search/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-31T00:00:00.000Z",
+     "available": true,
+     "otherSources": 1
+    }
+   ]
+  }
+ ],
+ "flashes": [
+  {
+   "itemId": "sha256:b57691e750415c60",
+   "title": "报道：法官允许 NAACP 就 xAI 数据中心污染继续起诉",
+   "summary": "TC：NAACP 诉 xAI 数据中心污染获准推进；监管二手线索。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-31T21:17:03.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:362d7951270f2286",
+   "title": "报道：Apple CEO 称不会「为了 AI 而发 AI」",
+   "summary": "TC：Apple CEO 表态不为 AI 而发货；产品策略二手线索。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-31T21:41:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:785d4ceb71a807a6",
+   "title": "研究：Parameter Labs 披露 ChatGPT 账户接管链（已修复）",
+   "summary": "Willison 转 Parameter Labs：Artifacts 沙箱链可",
+   "sourceName": "Simon Willison",
+   "sourceUrl": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-31T23:15:22.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:ccec9a0b07952ebf",
+   "title": "微信支付智慧经营机器人首次进店（混元）",
+   "summary": "IT之家：迎宾/导购/点单机器人进店试点；产品线索。",
+   "sourceName": "IT之家（全站，需关键词过滤）",
+   "sourceUrl": "https://www.ithome.com/1/020/637.htm",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-31T23:16:13.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:9fc5ee213b01bfec",
+   "title": "发布：datasette-llm 0.1a9",
+   "summary": "Willison：datasette-llm 继承 LLM 默认模型；小工具发版",
+   "sourceName": "Simon Willison",
+   "sourceUrl": "https://simonwillison.net/2026/Oct/31/datasette-llm/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-31T22:10:01.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:a008a0bb5a2e614e",
+   "title": "报道：Cisco 给工程师无限 AI token 重写遗留代码",
+   "summary": "Fortune/HN 回访：Cisco 无限 token 重写遗留代码；进展线索",
+   "sourceName": "Hacker News（AI 关键词 ≥100 分）",
+   "sourceUrl": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-30T14:08:20.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:e0560c89dba7252f",
+   "title": "报道：美股科技股因 AI 成本担忧大跌",
+   "summary": "BBC/HN 回访：AI 成本担忧下科技股大跌；宏观线索。",
+   "sourceName": "Hacker News（AI 关键词 ≥100 分）",
+   "sourceUrl": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-30T16:13:02.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:721b5a235fb52364",
+   "title": "报道：Proton CEO 取消 AI「复试」",
+   "summary": "404 Media/HN：Proton CEO 取消 AI 复试；同事件进展线索",
+   "sourceName": "Hacker News（AI 关键词 ≥100 分）",
+   "sourceUrl": "https://www.404media.co/protons-ceo-cancels-ai-re-interviews/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-29T14:29:06.000Z",
+   "available": true
+  }
+ ],
+ "cover": null,
+ "metrics": {
+  "totalEvents": 10,
+  "sourcesCount": 11,
+  "firstPartyEvents": 10,
+  "modelsReleased": 0
+ },
+ "readingMinutes": 2,
+ "prev": "2026-10-31",
+ "next": null
+}

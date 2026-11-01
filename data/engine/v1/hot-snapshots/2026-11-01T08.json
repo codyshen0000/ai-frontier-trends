@@ -1,0 +1,35 @@
+{
+ "computedAt": "2026-11-01T00:40:00.000Z",
+ "entries": [
+  {
+   "rank": 1,
+   "publicId": "2026-10-31-deepseek-super-agent-router-worker",
+   "heat": 19.5,
+   "participantCount": 3
+  },
+  {
+   "rank": 2,
+   "publicId": "2026-11-01-anthropic-watermark-older-models",
+   "heat": 18.4,
+   "participantCount": 2
+  },
+  {
+   "rank": 3,
+   "publicId": "2026-11-01-openai-daybreak-blue-training",
+   "heat": 17.7,
+   "participantCount": 2
+  },
+  {
+   "rank": 4,
+   "publicId": "2026-10-31-anthropic-automated-em-search",
+   "heat": 17.4,
+   "participantCount": 3
+  },
+  {
+   "rank": 5,
+   "publicId": "2026-10-31-openai-ai-training-preferences",
+   "heat": 7.7,
+   "participantCount": 2
+  }
+ ]
+}

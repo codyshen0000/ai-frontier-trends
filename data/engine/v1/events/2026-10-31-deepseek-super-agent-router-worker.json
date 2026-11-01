@@ -14,8 +14,8 @@
  "latestReport": null,
  "whyHot": {
   "participants48h": 3,
-  "newParticipants6h": 1,
-  "recentReports24h": 3,
+  "newParticipants6h": 0,
+  "recentReports24h": 2,
   "observationComplete": true,
   "rank": 1
  },
@@ -179,11 +179,36 @@
    "hour": "2026-10-31T19:00:00.000Z",
    "heat": 22.9,
    "participants": 3
+  },
+  {
+   "hour": "2026-10-31T20:00:00.000Z",
+   "heat": 22.3,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-31T21:00:00.000Z",
+   "heat": 21.7,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-31T22:00:00.000Z",
+   "heat": 21.0,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-31T23:00:00.000Z",
+   "heat": 20.4,
+   "participants": 3
+  },
+  {
+   "hour": "2026-11-01T00:00:00.000Z",
+   "heat": 19.9,
+   "participants": 3
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "DeepSeek 开源 Super-agent：Router/Worker 双层",
  "primaryUrl": "https://github.com/deepseek-ai/dsh-superagent-prototype",
- "rankDelta": 1
+ "rankDelta": 0
 }

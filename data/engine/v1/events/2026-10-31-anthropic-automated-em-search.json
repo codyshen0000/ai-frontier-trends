@@ -14,10 +14,10 @@
  "latestReport": null,
  "whyHot": {
   "participants48h": 3,
-  "newParticipants6h": 1,
-  "recentReports24h": 3,
+  "newParticipants6h": 0,
+  "recentReports24h": 1,
   "observationComplete": true,
-  "rank": 2
+  "rank": 4
  },
  "developments": [
   {
@@ -179,11 +179,36 @@
    "hour": "2026-10-31T19:00:00.000Z",
    "heat": 20.5,
    "participants": 3
+  },
+  {
+   "hour": "2026-10-31T20:00:00.000Z",
+   "heat": 19.9,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-31T21:00:00.000Z",
+   "heat": 19.3,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-31T22:00:00.000Z",
+   "heat": 18.8,
+   "participants": 3
+  },
+  {
+   "hour": "2026-10-31T23:00:00.000Z",
+   "heat": 18.3,
+   "participants": 3
+  },
+  {
+   "hour": "2026-11-01T00:00:00.000Z",
+   "heat": 17.7,
+   "participants": 3
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "Anthropic：用无害文本自动生成可破坏监督的训练数据",
  "primaryUrl": "https://alignment.anthropic.com/2026/automated-em-search/",
- "rankDelta": -1
+ "rankDelta": -2
 }

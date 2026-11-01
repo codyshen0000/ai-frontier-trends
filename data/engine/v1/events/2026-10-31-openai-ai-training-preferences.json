@@ -15,9 +15,9 @@
  "whyHot": {
   "participants48h": 2,
   "newParticipants6h": 0,
-  "recentReports24h": 1,
+  "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 3
+  "rank": 5
  },
  "developments": [
   {
@@ -249,11 +249,36 @@
    "hour": "2026-10-31T19:00:00.000Z",
    "heat": 9.0,
    "participants": 2
+  },
+  {
+   "hour": "2026-10-31T20:00:00.000Z",
+   "heat": 8.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-31T21:00:00.000Z",
+   "heat": 8.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-31T22:00:00.000Z",
+   "heat": 8.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-10-31T23:00:00.000Z",
+   "heat": 8.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-01T00:00:00.000Z",
+   "heat": 7.8,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "OpenAI：将尊重网站 robots.txt 训练偏好信号",
  "primaryUrl": "https://openai.com/index/helping-websites-express-ai-training-preferences",
- "rankDelta": 0
+ "rankDelta": -2
 }

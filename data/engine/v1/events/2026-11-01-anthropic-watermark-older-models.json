@@ -13,11 +13,11 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 1,
-  "newParticipants6h": 1,
-  "recentReports24h": 1,
+  "participants48h": 2,
+  "newParticipants6h": 2,
+  "recentReports24h": 2,
   "observationComplete": true,
-  "rank": null
+  "rank": 2
  },
  "developments": [
   {
@@ -79,7 +79,33 @@
    "originalUrl": "https://the-decoder.com/anthropics-watermark-rollout-leaves-a-loophole-on-two-older-claude-models/"
   }
  ],
- "heat": [],
+ "heat": [
+  {
+   "hour": "2026-10-31T20:00:00.000Z",
+   "heat": 9.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-31T21:00:00.000Z",
+   "heat": 9.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-31T22:00:00.000Z",
+   "heat": 9.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-10-31T23:00:00.000Z",
+   "heat": 9.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-01T00:00:00.000Z",
+   "heat": 18.7,
+   "participants": 2
+  }
+ ],
  "related": [],
  "topics": [],
  "recommendReason": "Anthropic：水印上线留 Opus/Sonnet 4.6 采样漏洞",
