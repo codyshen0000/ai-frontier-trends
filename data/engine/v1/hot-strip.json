@@ -2,7 +2,7 @@
  {
   "rank": 1,
   "title": "DeepSeek：开源 Super-agent 原型，Router 与 Worker 双层架构",
-  "heat": 19.5,
+  "heat": 17.3,
   "trend": "down",
   "storyPublicId": "2026-10-31-deepseek-super-agent-router-worker",
   "itemId": "sha256:5bd78febd4a59e34",
@@ -25,8 +25,8 @@
  {
   "rank": 2,
   "title": "Anthropic：水印上线，两款旧 Claude 模型仍有采样漏洞",
-  "heat": 18.4,
-  "trend": "new",
+  "heat": 16.4,
+  "trend": "up",
   "storyPublicId": "2026-11-01-anthropic-watermark-older-models",
   "itemId": "sha256:042fb889688a1d90",
   "participants": [
@@ -44,7 +44,7 @@
  {
   "rank": 3,
   "title": "OpenAI：Daybreak Blue 网络安全会话数据将可用于模型训练",
-  "heat": 17.7,
+  "heat": 15.8,
   "trend": "up",
   "storyPublicId": "2026-11-01-openai-daybreak-blue-training",
   "itemId": "sha256:be583b060c134071",
@@ -63,7 +63,7 @@
  {
   "rank": 4,
   "title": "Anthropic：自动化搜寻「看似无害」却能破坏监督的训练数据",
-  "heat": 17.4,
+  "heat": 15.5,
   "trend": "down",
   "storyPublicId": "2026-10-31-anthropic-automated-em-search",
   "itemId": "sha256:3a143d3580b64e5b",
@@ -86,7 +86,7 @@
  {
   "rank": 5,
   "title": "OpenAI：让网站更容易表达 AI 训练偏好",
-  "heat": 7.7,
+  "heat": 6.8,
   "trend": "down",
   "storyPublicId": "2026-10-31-openai-ai-training-preferences",
   "itemId": "sha256:84abd1857de5dfd9",

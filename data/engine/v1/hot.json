@@ -1,314 +1,314 @@
 {
-  "computedAt": "2026-11-01T00:40:00.000Z",
-  "windowHours": 48,
-  "entries": [
+ "computedAt": "2026-11-01T04:43:00.000Z",
+ "windowHours": 48,
+ "entries": [
+  {
+   "rank": 1,
+   "story": {
+    "publicId": "2026-10-31-deepseek-super-agent-router-worker",
+    "title": "DeepSeek：开源 Super-agent 原型，Router 与 Worker 双层架构"
+   },
+   "heat": 17.3,
+   "trend": "down",
+   "trendPct": -16.0,
+   "badges": [],
+   "participantCount": 3,
+   "sourceCount": 2,
+   "sourceNames": [
+    "量子位",
+    "GitHub · deepseek-ai/dsh-superagent-prototype"
+   ],
+   "participants": [
     {
-      "rank": 1,
-      "story": {
-        "publicId": "2026-10-31-deepseek-super-agent-router-worker",
-        "title": "DeepSeek：开源 Super-agent 原型，Router 与 Worker 双层架构"
-      },
-      "heat": 19.5,
-      "trend": "down",
-      "trendPct": -15.9,
-      "badges": [],
-      "participantCount": 3,
-      "sourceCount": 2,
-      "sourceNames": [
-        "量子位",
-        "GitHub · deepseek-ai/dsh-superagent-prototype"
-      ],
-      "participants": [
-        {
-          "name": "GitHub · deepseek-ai/dsh-superagent-prototype",
-          "kind": "editorial"
-        },
-        {
-          "name": "量子位",
-          "kind": "editorial"
-        },
-        {
-          "name": "IT之家（全站，需关键词过滤）",
-          "kind": "signal"
-        }
-      ],
-      "spark": [
-        10,
-        9.7,
-        9.4,
-        9.2,
-        8.9,
-        8.7,
-        8.4,
-        8.2,
-        7.9,
-        7.7,
-        7.5,
-        7.3,
-        7.1,
-        6.9,
-        26.5,
-        25.8,
-        25,
-        24.3,
-        23.6,
-        22.9,
-        22.3,
-        21.7,
-        21,
-        20.4,
-        19.9
-      ],
-      "summary": "DeepSeek Harness 发布 Super-agent 设计：连续、高效、主动、持久；GitHub 开源 dsh-superagent-prototype。面向多会话并行与离线持久。",
-      "latest": null,
-      "cover": null,
-      "rankDelta": 0,
-      "heatDeltaPct": -13.3
+     "name": "GitHub · deepseek-ai/dsh-superagent-prototype",
+     "kind": "editorial"
     },
     {
-      "rank": 2,
-      "story": {
-        "publicId": "2026-11-01-anthropic-watermark-older-models",
-        "title": "Anthropic：水印上线，两款旧 Claude 模型仍有采样漏洞"
-      },
-      "heat": 18.7,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [
-        "new"
-      ],
-      "participantCount": 2,
-      "sourceCount": 2,
-      "sourceNames": [
-        "Claude Help · How Claude marks AI-generated content",
-        "The Decoder"
-      ],
-      "participants": [
-        {
-          "name": "Claude Help · How Claude marks AI-generated content",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Decoder",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        9.8,
-        9.5,
-        9.3,
-        9,
-        18.7
-      ],
-      "summary": "Claude Help：How Claude marks AI-generated content；The Decoder 指 Opus/Sonnet 4.6 采样留洞。合规上线；一手为 Claude Help。",
-      "latest": null,
-      "cover": null,
-      "heatDeltaPct": 1.6,
-      "rankDelta": 0
+     "name": "量子位",
+     "kind": "editorial"
     },
     {
-      "rank": 3,
-      "story": {
-        "publicId": "2026-11-01-openai-daybreak-blue-training",
-        "title": "OpenAI：Daybreak Blue 网络安全会话数据将可用于模型训练"
-      },
-      "heat": 18.1,
-      "trend": "up",
-      "trendPct": 92.6,
-      "badges": [
-        "rising"
-      ],
-      "participantCount": 2,
-      "sourceCount": 2,
-      "sourceNames": [
-        "OpenAI Help · Data Controls in ChatGPT",
-        "The Decoder"
-      ],
-      "participants": [
-        {
-          "name": "OpenAI Help · Data Controls in ChatGPT",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Decoder",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        9.9,
-        9.6,
-        9.3,
-        9.1,
-        8.8,
-        8.6,
-        8.3,
-        18.1
-      ],
-      "summary": "OpenAI Help Center Data Controls：Trusted Access / Daybreak Blue 会话此前禁训，现可纳入训练。政策变更；一手为 Help Center。",
-      "latest": null,
-      "cover": null,
-      "heatDeltaPct": 2.3,
-      "rankDelta": 0
-    },
-    {
-      "rank": 4,
-      "story": {
-        "publicId": "2026-10-31-anthropic-automated-em-search",
-        "title": "Anthropic：自动化搜寻「看似无害」却能破坏监督的训练数据"
-      },
-      "heat": 17.4,
-      "trend": "down",
-      "trendPct": -15.9,
-      "badges": [],
-      "participantCount": 3,
-      "sourceCount": 3,
-      "sourceNames": [
-        "The Decoder",
-        "Anthropic Alignment",
-        "anthropic-alignment"
-      ],
-      "participants": [
-        {
-          "name": "Anthropic Alignment",
-          "kind": "editorial"
-        },
-        {
-          "name": "anthropic-alignment",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Decoder",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        20,
-        19.4,
-        18.9,
-        18.3,
-        17.8,
-        17.3,
-        16.8,
-        16.3,
-        15.9,
-        15.4,
-        15,
-        14.6,
-        14.1,
-        13.7,
-        13.3,
-        13,
-        22.3,
-        21.7,
-        21.1,
-        20.5,
-        19.9,
-        19.3,
-        18.8,
-        18.3,
-        17.7
-      ],
-      "summary": "Anthropic Alignment：用 Claude 自动生成养蜂/摔跤等虚构语境数据，可训练小模型破坏监督或欺骗；官方页 Automated Subtle Emergent Misalignment Research。",
-      "latest": null,
-      "cover": null,
-      "rankDelta": -2,
-      "heatDeltaPct": -13.4
-    },
-    {
-      "rank": 5,
-      "story": {
-        "publicId": "2026-10-31-openai-ai-training-preferences",
-        "title": "OpenAI：让网站更容易表达 AI 训练偏好"
-      },
-      "heat": 7.8,
-      "trend": "down",
-      "trendPct": -14.3,
-      "badges": [],
-      "participantCount": 2,
-      "sourceCount": 2,
-      "sourceNames": [
-        "The Verge · AI",
-        "OpenAI News"
-      ],
-      "participants": [
-        {
-          "name": "OpenAI News",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Verge · AI",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        15.6,
-        15.2,
-        14.7,
-        14.3,
-        13.9,
-        13.5,
-        13.1,
-        12.7,
-        12.4,
-        12,
-        11.7,
-        11.4,
-        11,
-        10.7,
-        10.4,
-        10.1,
-        9.8,
-        9.5,
-        9.3,
-        9,
-        8.8,
-        8.5,
-        8.3,
-        8,
-        7.8
-      ],
-      "summary": "OpenAI 将尊重共享 robots.txt 信号。The Verge 二手跟进多家支持抓取 opt-out。",
-      "latest": "The Verge：多家大厂支持新的抓取 opt-out 标准（同训练偏好事件进展）。",
-      "cover": null,
-      "rankDelta": -2,
-      "heatDeltaPct": 1.3
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
     }
-  ]
+   ],
+   "spark": [
+    8.9,
+    8.7,
+    8.4,
+    8.2,
+    7.9,
+    7.7,
+    7.5,
+    7.3,
+    7.1,
+    6.9,
+    26.5,
+    25.8,
+    25.0,
+    24.3,
+    23.6,
+    22.9,
+    22.3,
+    21.7,
+    21.0,
+    20.4,
+    19.9,
+    19.3,
+    18.7,
+    18.2,
+    17.7
+   ],
+   "summary": "DeepSeek Harness 发布 Super-agent 设计：连续、高效、主动、持久；GitHub 开源 dsh-superagent-prototype。面向多会话并行与离线持久。",
+   "latest": null,
+   "cover": null,
+   "rankDelta": 0,
+   "heatDeltaPct": -11.3
+  },
+  {
+   "rank": 2,
+   "story": {
+    "publicId": "2026-11-01-anthropic-watermark-older-models",
+    "title": "Anthropic：水印上线，两款旧 Claude 模型仍有采样漏洞"
+   },
+   "heat": 16.4,
+   "trend": "up",
+   "trendPct": 80.2,
+   "badges": [
+    "rising"
+   ],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "Claude Help · How Claude marks AI-generated content",
+    "The Decoder"
+   ],
+   "participants": [
+    {
+     "name": "Claude Help · How Claude marks AI-generated content",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    9.8,
+    9.5,
+    9.3,
+    9.0,
+    18.7,
+    18.2,
+    17.7,
+    17.2,
+    16.7
+   ],
+   "summary": "Claude Help：How Claude marks AI-generated content；The Decoder 指 Opus/Sonnet 4.6 采样留洞。合规上线；一手为 Claude Help。",
+   "latest": null,
+   "cover": null,
+   "rankDelta": 0,
+   "heatDeltaPct": -10.9
+  },
+  {
+   "rank": 3,
+   "story": {
+    "publicId": "2026-11-01-openai-daybreak-blue-training",
+    "title": "OpenAI：Daybreak Blue 网络安全会话数据将可用于模型训练"
+   },
+   "heat": 15.8,
+   "trend": "up",
+   "trendPct": 88.1,
+   "badges": [
+    "rising"
+   ],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "OpenAI Help · Data Controls in ChatGPT",
+    "The Decoder"
+   ],
+   "participants": [
+    {
+     "name": "OpenAI Help · Data Controls in ChatGPT",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    9.9,
+    9.6,
+    9.3,
+    9.1,
+    8.8,
+    8.6,
+    8.3,
+    18.1,
+    17.6,
+    17.1,
+    16.6,
+    16.1
+   ],
+   "summary": "OpenAI Help Center Data Controls：Trusted Access / Daybreak Blue 会话此前禁训，现可纳入训练。政策变更；一手为 Help Center。",
+   "latest": null,
+   "cover": null,
+   "rankDelta": 0,
+   "heatDeltaPct": -10.7
+  },
+  {
+   "rank": 4,
+   "story": {
+    "publicId": "2026-10-31-anthropic-automated-em-search",
+    "title": "Anthropic：自动化搜寻「看似无害」却能破坏监督的训练数据"
+   },
+   "heat": 15.5,
+   "trend": "down",
+   "trendPct": -15.8,
+   "badges": [],
+   "participantCount": 3,
+   "sourceCount": 3,
+   "sourceNames": [
+    "The Decoder",
+    "Anthropic Alignment",
+    "anthropic-alignment"
+   ],
+   "participants": [
+    {
+     "name": "Anthropic Alignment",
+     "kind": "editorial"
+    },
+    {
+     "name": "anthropic-alignment",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    17.8,
+    17.3,
+    16.8,
+    16.3,
+    15.9,
+    15.4,
+    15.0,
+    14.6,
+    14.1,
+    13.7,
+    13.3,
+    13.0,
+    22.3,
+    21.7,
+    21.1,
+    20.5,
+    19.9,
+    19.3,
+    18.8,
+    18.3,
+    17.7,
+    17.2,
+    16.7,
+    16.3,
+    15.8
+   ],
+   "summary": "Anthropic Alignment：用 Claude 自动生成养蜂/摔跤等虚构语境数据，可训练小模型破坏监督或欺骗；官方页 Automated Subtle Emergent Misalignment Research。",
+   "latest": null,
+   "cover": null,
+   "rankDelta": 0,
+   "heatDeltaPct": -10.9
+  },
+  {
+   "rank": 5,
+   "story": {
+    "publicId": "2026-10-31-openai-ai-training-preferences",
+    "title": "OpenAI：让网站更容易表达 AI 训练偏好"
+   },
+   "heat": 6.8,
+   "trend": "down",
+   "trendPct": -16.0,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "The Verge · AI",
+    "OpenAI News"
+   ],
+   "participants": [
+    {
+     "name": "OpenAI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    13.9,
+    13.5,
+    13.1,
+    12.7,
+    12.4,
+    12.0,
+    11.7,
+    11.4,
+    11.0,
+    10.7,
+    10.4,
+    10.1,
+    9.8,
+    9.5,
+    9.3,
+    9.0,
+    8.8,
+    8.5,
+    8.3,
+    8.0,
+    7.8,
+    7.6,
+    7.4,
+    7.2,
+    6.9
+   ],
+   "summary": "OpenAI 将尊重共享 robots.txt 信号。The Verge 二手跟进多家支持抓取 opt-out。",
+   "latest": "The Verge：多家大厂支持新的抓取 opt-out 标准（同训练偏好事件进展）。",
+   "cover": null,
+   "rankDelta": 0,
+   "heatDeltaPct": -11.7
+  }
+ ]
 }

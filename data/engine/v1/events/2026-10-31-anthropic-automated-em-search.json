@@ -204,11 +204,31 @@
    "hour": "2026-11-01T00:00:00.000Z",
    "heat": 17.7,
    "participants": 3
+  },
+  {
+   "hour": "2026-11-01T01:00:00.000Z",
+   "heat": 17.2,
+   "participants": 3
+  },
+  {
+   "hour": "2026-11-01T02:00:00.000Z",
+   "heat": 16.7,
+   "participants": 3
+  },
+  {
+   "hour": "2026-11-01T03:00:00.000Z",
+   "heat": 16.3,
+   "participants": 3
+  },
+  {
+   "hour": "2026-11-01T04:00:00.000Z",
+   "heat": 15.8,
+   "participants": 3
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "Anthropic：用无害文本自动生成可破坏监督的训练数据",
  "primaryUrl": "https://alignment.anthropic.com/2026/automated-em-search/",
- "rankDelta": -2
+ "rankDelta": 0
 }
