@@ -191,6 +191,7 @@ const paths = [
   "/weekly/",
   "/weekly/2026-10-12/",
   "/weekly/2026-10-18/",
+  "/weekly/2026-11-01/",
   "/signals/",
   "/weights/",
   "/flux3/",
@@ -471,9 +472,11 @@ assert(weeklyIndex.includes("2026-10-12"), "weekly index lists 2026-10-12");
 assert(weeklyIndex.includes("weekly/2026-10-12/") || weeklyIndex.includes("./2026-10-12/"), "weekly index links to 2026-10-12");
 assert(weeklyIndex.includes("2026-10-18"), "weekly index lists 2026-10-18");
 assert(weeklyIndex.includes("weekly/2026-10-18/") || weeklyIndex.includes("./2026-10-18/"), "weekly index links to 2026-10-18");
+assert(weeklyIndex.includes("2026-11-01"), "weekly index lists 2026-11-01");
+assert(weeklyIndex.includes("weekly/2026-11-01/") || weeklyIndex.includes("./2026-11-01/"), "weekly index links to 2026-11-01");
 assert(weeklyIndex.includes(">周报<"), "weekly tab is in trend sub-nav");
-assert(!existsSync(join(distDir, "weekly", "2026-10-19")), "no third weekly issue after 10-18");
-assert(!existsSync(join(root, "content", "weekly", "2026-10-19")), "content has no third weekly issue");
+assert(!existsSync(join(distDir, "weekly", "2026-10-19")), "no invented 2026-10-19 weekly issue");
+assert(!existsSync(join(root, "content", "weekly", "2026-10-19")), "content has no invented 2026-10-19 weekly issue");
 
 const skinRaw = readFileSync(join(root, "src", "skin-raw.css"), "utf8");
 assert(
@@ -522,6 +525,7 @@ for (const needle of ["/workspace", "/home/box", "/cursor/stores", "收藏"]) {
 for (const file of ["report.md", "timeline.md", "report.html"]) {
   assert(existsSync(join(distDir, "weekly", "2026-10-12", file)), `weekly 2026-10-12 ships ${file}`);
   assert(existsSync(join(distDir, "weekly", "2026-10-18", file)), `weekly 2026-10-18 ships ${file}`);
+  assert(existsSync(join(distDir, "weekly", "2026-11-01", file)), `weekly 2026-11-01 ships ${file}`);
 }
 assert(existsSync(join(distDir, "weekly", "2026-10-12", "charts", "2026-10-12-evidence-by-line.png")), "weekly 2026-10-12 ships chart pngs");
 assert(existsSync(join(distDir, "weekly", "2026-10-12", "charts", "2026-10-12-evidence-by-line.webp")), "weekly 2026-10-12 ships chart webp");
@@ -531,6 +535,12 @@ assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-si
 assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-signal-candidates.webp")), "weekly 2026-10-18 ships signal webp");
 assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-weights-delivery.png")), "weekly 2026-10-18 ships weights chart");
 assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-weights-delivery.webp")), "weekly 2026-10-18 ships weights webp");
+assert(existsSync(join(distDir, "weekly", "2026-11-01", "charts", "2026-11-01-evidence-by-line.png")), "weekly 2026-11-01 ships evidence chart");
+assert(existsSync(join(distDir, "weekly", "2026-11-01", "charts", "2026-11-01-evidence-by-line.webp")), "weekly 2026-11-01 ships evidence webp");
+assert(existsSync(join(distDir, "weekly", "2026-11-01", "charts", "2026-11-01-signal-candidates.png")), "weekly 2026-11-01 ships signal chart");
+assert(existsSync(join(distDir, "weekly", "2026-11-01", "charts", "2026-11-01-signal-candidates.webp")), "weekly 2026-11-01 ships signal webp");
+assert(existsSync(join(distDir, "weekly", "2026-11-01", "charts", "2026-11-01-weights-delivery.png")), "weekly 2026-11-01 ships weights chart");
+assert(existsSync(join(distDir, "weekly", "2026-11-01", "charts", "2026-11-01-weights-delivery.webp")), "weekly 2026-11-01 ships weights webp");
 {
   const weeklyReport = readFileSync(join(root, "content", "weekly", "2026-10-18", "report.html"), "utf8");
   const weeklyMd = readFileSync(join(root, "content", "weekly", "2026-10-18", "report.md"), "utf8");
@@ -550,7 +560,7 @@ assert(existsSync(join(distDir, "weekly", "2026-10-18", "charts", "2026-10-18-we
     assert(weeklyReport.includes(`srcset="charts/${name}.webp"`) || weeklyReport.includes(`src="charts/${name}.png"`), `content weekly report references ${name}`);
   }
   assert(!weeklyDist.includes("data:image/png;base64"), "dist weekly issue no longer embeds PNG data URIs");
-  for (const date of ["2026-10-12", "2026-10-18"]) {
+  for (const date of ["2026-10-12", "2026-10-18", "2026-11-01"]) {
     const reportDist = readFileSync(join(distDir, "weekly", date, "report.html"), "utf8");
     try {
       assertStandaloneReportCharts(reportDist);
@@ -1011,7 +1021,13 @@ assert(!JSON.stringify(searchIndex).includes('"score"'), "search index does not 
 assert(searchIndex.docs.some((d) => /FLUX/i.test(d.title) || /FLUX/i.test(d.summary)), "search index contains FLUX from real weekly/covers");
 assert(searchIndex.docs.some((d) => d.id === "weekly-2026-10-12"), "search index still includes weekly 2026-10-12");
 assert(searchIndex.docs.some((d) => d.id === "weekly-2026-10-18"), "search index still includes weekly 2026-10-18");
-assert(!searchIndex.docs.some((d) => /^weekly-/.test(d.id) && d.id !== "weekly-2026-10-12" && d.id !== "weekly-2026-10-18"), "search index has only the two archive weekly issues");
+assert(searchIndex.docs.some((d) => d.id === "weekly-2026-11-01"), "search index includes weekly 2026-11-01");
+assert(
+  !searchIndex.docs.some(
+    (d) => /^weekly-/.test(d.id) && !["weekly-2026-10-12", "weekly-2026-10-18", "weekly-2026-11-01"].includes(d.id),
+  ),
+  "search index has only the archive weekly issues",
+);
 assert(typeof searchIndex.data_as_of === "string" && searchIndex.data_as_of.length > 8, "search index has data_as_of");
 assert(typeof searchIndex.built_at === "string" && searchIndex.built_at.length > 8, "search index has built_at");
 assert(searchIndex.data_as_of !== searchIndex.built_at, "data_as_of is content time, not the same as built_at");
@@ -1146,7 +1162,7 @@ try {
   const more = readFileSync(join(distDir, "more", "index.html"), "utf8");
   const href = (more.match(/<a class="ft-more-card" href="([^"]+)"[^>]*>\s*<h3>研究主页 · 本周主线<\/h3>/) || [])[1];
   assert(href, "more page has 研究主页 · 本周主线");
-  assert(href.includes("weekly/2026-10-18"), `more 本周主线 points at latest weekly (got ${href})`);
+  assert(href.includes("weekly/2026-11-01"), `more 本周主线 points at latest weekly (got ${href})`);
   assert(href !== "../" && href !== "./", "more 本周主线 is not the home href");
   assert(!/原始看板[\s\S]{0,120}#board/.test(more), "more 原始看板 is not a dead #board link");
   assert(more.includes("ft-theme-toggle"), "more page includes a theme entry");

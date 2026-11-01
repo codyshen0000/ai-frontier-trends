@@ -9,7 +9,7 @@ const more = readFileSync(join(root, "dist", "more", "index.html"), "utf8");
 const href = (more.match(/<a class="ft-more-card" href="([^"]+)"[^>]*>\s*<h3>研究主页 · 本周主线<\/h3>/) || [])[1];
 
 assert.ok(href, "more page renders 研究主页 · 本周主线");
-assert.match(href, /weekly\/2026-10-18/);
+assert.match(href, /weekly\/2026-11-01/);
 assert.notEqual(href, "../");
 assert.notEqual(href, "./");
 

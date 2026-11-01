@@ -9,6 +9,7 @@
 - 热点榜：<https://codyshen0000.github.io/ai-frontier-trends/hot/>
 - 趋势时间线：<https://codyshen0000.github.io/ai-frontier-trends/timeline/>
 - 周报：<https://codyshen0000.github.io/ai-frontier-trends/weekly/>
+- 2026-11-01 周报：<https://codyshen0000.github.io/ai-frontier-trends/weekly/2026-11-01/>
 - 2026-10-18 周报：<https://codyshen0000.github.io/ai-frontier-trends/weekly/2026-10-18/>
 - 2026-10-12 周报：<https://codyshen0000.github.io/ai-frontier-trends/weekly/2026-10-12/>
 - 更多：<https://codyshen0000.github.io/ai-frontier-trends/more/>
