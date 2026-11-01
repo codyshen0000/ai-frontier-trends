@@ -266,14 +266,21 @@ function pagesOf(report: ReportDetail, leadStory: ReportCitation | null): Page[]
  * The lead's picture; landscape pictures are cropped to between 16:10 and 2:1. A picture that is not
  * the lead's own (a weekly or monthly's, from its first highlight) is captioned with its story.
  */
+const LEAD_PRIORITY_SIZES = "(min-width: 1700px) 780px, (min-width: 1580px) calc(100vw - 920px), (min-width: 1420px) calc(100vw - 880px), (min-width: 1024px) calc(100vw - 540px), (min-width: 640px) 608px, calc(100vw - 32px)";
+const LEAD_LAZY_SIZES = "auto, (min-width: 1180px) 300px, (min-width: 640px) 608px, calc(100vw - 32px)";
+
 function LeadPicture({ cover, onError, priority = false, className = "" }: { cover: NonNullable<ReportDetail["cover"]>; onError: () => void; priority?: boolean; className?: string }) {
   const ratio = cover.width && cover.height ? cover.width / cover.height : 16 / 9;
   const shown = ratio >= 1.25 ? Math.min(2, Math.max(1.6, ratio)) : Math.max(0.8, ratio);
+  const sizes = priority ? LEAD_PRIORITY_SIZES : LEAD_LAZY_SIZES;
   return (
     <figure className={className}>
+      {priority && cover.srcSet ? (
+        <link rel="preload" as="image" href={cover.url} imageSrcSet={cover.srcSet} imageSizes={sizes} />
+      ) : null}
       <div className="overflow-hidden well rounded-panel" style={{ aspectRatio: shown }}>
         <img src={cover.url} srcSet={cover.srcSet}
-          sizes={priority ? "(min-width: 1700px) 780px, (min-width: 1580px) calc(100vw - 920px), (min-width: 1420px) calc(100vw - 880px), (min-width: 1024px) calc(100vw - 540px), (min-width: 640px) 608px, calc(100vw - 32px)" : "auto, (min-width: 1180px) 300px, (min-width: 640px) 608px, calc(100vw - 32px)"}
+          sizes={sizes}
           width={cover.width ?? undefined} height={cover.height ?? undefined}
           alt={cover.alt} loading={priority ? "eager" : "lazy"} fetchPriority={priority ? "high" : "auto"} decoding="async" onError={onError} className="size-full object-cover" />
       </div>
