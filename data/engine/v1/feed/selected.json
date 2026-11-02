@@ -19,6 +19,28 @@
    "eventPublicId": "2026-11-02-openai-grid-protectors-program"
   },
   {
+   "guid": "sha256:5a014341bc3fc0f1",
+   "title": "OpenAI：发布 LifeVal，测 AI 协助日常事务的能力",
+   "summary": "OpenAI 官方：LifeVal 基准覆盖托儿、理财、政务表格等真实任务，衡量 AI 是否帮得上忙。",
+   "originalUrl": "https://openai.com/index/lifeval",
+   "pubDate": "2026-11-02T09:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "industry",
+   "categoryLabel": "行业",
+   "eventPublicId": "2026-11-03-openai-lifeval-benchmark"
+  },
+  {
+   "guid": "sha256:4094d4340f9e66f9",
+   "title": "OpenAI：Qodo 把公司知识注入 Codex 做代码审阅",
+   "summary": "",
+   "originalUrl": "https://openai.com/index/qodo-codex-plugin",
+   "pubDate": "2026-11-02T00:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "industry",
+   "categoryLabel": "行业",
+   "eventPublicId": "2026-11-03-openai-qodo-codex-plugin"
+  },
+  {
    "guid": "sha256:be583b060c134071",
    "title": "OpenAI：Daybreak Blue 网络安全会话数据将可用于模型训练",
    "summary": "OpenAI Help Center Data Controls：Trusted Access / Daybreak Blue 会话此前禁训，现可纳入训练。政策变更；一手为 Help Center。",
@@ -534,28 +556,6 @@
    "category": "paper",
    "categoryLabel": "论文",
    "eventPublicId": "2026-10-24-google-tb-screening"
-  },
-  {
-   "guid": "sha256:604f1f9c59689482",
-   "title": "METR/Redwood 驻场审计：OpenAI 内部智能体监控存在覆盖缺口",
-   "summary": "Decoder 报道 METR/Redwood 三周驻场审计；已核实 METR 公开摘要并 hop。",
-   "originalUrl": "https://the-decoder.com/three-week-on-site-audit-at-openai-reveals-major-gaps-in-ai-safety-monitoring/",
-   "pubDate": "2026-10-23T18:00:32.000Z",
-   "sourceName": "The Decoder",
-   "category": "industry",
-   "categoryLabel": "行业",
-   "eventPublicId": "2026-10-24-openai-metr-agent-monitoring"
-  },
-  {
-   "guid": "sha256:73be0ee71d2832b3",
-   "title": "Baseten 推出 Environment Network：对接后训练 RL 环境伙伴",
-   "summary": "Baseten 官方：筛选 RL 环境伙伴做客户定制后训练环境；训练与推理仍由 Baseten。",
-   "originalUrl": "https://www.baseten.co/blog/introducing-the-baseten-environment-network/",
-   "pubDate": "2026-10-23T17:36:54.000Z",
-   "sourceName": "Baseten Blog",
-   "category": "product",
-   "categoryLabel": "产品",
-   "eventPublicId": "2026-10-24-baseten-environment-network"
   }
  ]
 }

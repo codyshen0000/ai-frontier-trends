@@ -3,7 +3,14 @@
   {
    "publicId": "2026-11-02-openai-grid-protectors-program",
    "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网",
-   "latestAt": "2026-11-02T15:00:00.000Z",
+   "latestAt": "2026-11-02T18:01:30.000Z",
+   "reportCount": 2,
+   "hotRank": 1
+  },
+  {
+   "publicId": "2026-11-03-openai-lifeval-benchmark",
+   "title": "OpenAI：发布 LifeVal，测 AI 协助日常事务的能力",
+   "latestAt": "2026-11-02T09:00:00.000Z",
    "reportCount": 1,
    "hotRank": null
   },
@@ -15,11 +22,18 @@
    "hotRank": null
   },
   {
+   "publicId": "2026-11-03-openai-qodo-codex-plugin",
+   "title": "OpenAI：Qodo 把公司知识注入 Codex 做代码审阅",
+   "latestAt": "2026-11-02T00:00:00.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
    "publicId": "2026-11-01-anthropic-watermark-older-models",
    "title": "Anthropic：水印上线，两款旧 Claude 模型仍有采样漏洞",
    "latestAt": "2026-11-01T00:00:00.000Z",
    "reportCount": 2,
-   "hotRank": 1
+   "hotRank": null
   },
   {
    "publicId": "2026-11-01-openai-daybreak-blue-training",

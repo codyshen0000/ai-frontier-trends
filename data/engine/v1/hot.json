@@ -1,65 +1,66 @@
 {
- "computedAt": "2026-11-02T16:50:00.000Z",
+ "computedAt": "2026-11-02T19:41:54.000Z",
  "windowHours": 48,
  "entries": [
   {
    "rank": 1,
    "story": {
-    "publicId": "2026-11-01-anthropic-watermark-older-models",
-    "title": "Anthropic：水印上线，两款旧 Claude 模型仍有采样漏洞"
+    "publicId": "2026-11-02-openai-grid-protectors-program",
+    "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网"
    },
-   "heat": 5.8,
-   "trend": "down",
-   "trendPct": -15.9,
-   "badges": [],
+   "heat": 18.3,
+   "trend": "new",
+   "trendPct": null,
+   "badges": [
+    "new"
+   ],
    "participantCount": 2,
    "sourceCount": 2,
    "sourceNames": [
-    "Claude Help · How Claude marks AI-generated content",
-    "The Decoder"
+    "The Verge · AI",
+    "OpenAI News"
    ],
    "participants": [
     {
-     "name": "Claude Help · How Claude marks AI-generated content",
+     "name": "OpenAI News",
      "kind": "editorial"
     },
     {
-     "name": "The Decoder",
+     "name": "The Verge · AI",
      "kind": "editorial"
     }
    ],
    "spark": [
-    11.8,
-    11.5,
-    11.1,
-    10.8,
-    10.5,
-    10.2,
-    9.9,
-    9.6,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    10.0,
+    9.7,
     9.4,
-    9.1,
-    8.8,
-    8.6,
-    8.3,
-    8.1,
-    7.9,
-    7.7,
-    7.4,
-    7.2,
-    7.0,
-    6.8,
-    6.6,
-    6.4,
-    6.3,
-    6.1,
-    5.9
+    9.2,
+    18.6
    ],
-   "summary": "Claude Help：How Claude marks AI-generated content；The Decoder 指 Opus/Sonnet 4.6 采样留洞。合规上线；一手为 Claude Help。",
-   "latest": null,
+   "summary": null,
+   "latest": "The Verge：报道 OpenAI 以自建电厂/减载保护周边社区电网叙事。",
    "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -12.1
+   "heatDeltaPct": 92.6
   }
  ]
 }

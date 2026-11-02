@@ -1,18 +1,18 @@
 [
  {
   "rank": 1,
-  "title": "Anthropic：水印上线，两款旧 Claude 模型仍有采样漏洞",
-  "heat": 5.8,
-  "trend": "down",
-  "storyPublicId": "2026-11-01-anthropic-watermark-older-models",
-  "itemId": "sha256:042fb889688a1d90",
+  "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网",
+  "heat": 18.3,
+  "trend": "new",
+  "storyPublicId": "2026-11-02-openai-grid-protectors-program",
+  "itemId": "sha256:5d33ed0c66ace544",
   "participants": [
    {
-    "name": "Claude Help · How Claude marks AI-generated content",
+    "name": "OpenAI News",
     "kind": "editorial"
    },
    {
-    "name": "The Decoder",
+    "name": "The Verge · AI",
     "kind": "editorial"
    }
   ],

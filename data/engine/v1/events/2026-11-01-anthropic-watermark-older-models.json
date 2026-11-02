@@ -13,11 +13,11 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 2,
+  "participants48h": 1,
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 1
+  "rank": null
  },
  "developments": [
   {
@@ -304,11 +304,25 @@
    "hour": "2026-11-02T16:00:00.000Z",
    "heat": 5.9,
    "participants": 2
+  },
+  {
+   "hour": "2026-11-02T17:00:00.000Z",
+   "heat": 5.7,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-02T18:00:00.000Z",
+   "heat": 5.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-02T19:00:00.000Z",
+   "heat": 5.4,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "Anthropic：水印上线留 Opus/Sonnet 4.6 采样漏洞",
- "primaryUrl": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
- "rankDelta": 0
+ "primaryUrl": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content"
 }

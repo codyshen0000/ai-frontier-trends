@@ -2,29 +2,29 @@
  "publicId": "2026-11-02-openai-grid-protectors-program",
  "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网",
  "status": "active",
- "reportCount": 1,
- "sourceCount": 1,
+ "reportCount": 2,
+ "sourceCount": 2,
  "firstReportAt": "2026-11-02T15:00:00.000Z",
- "latestAt": "2026-11-02T15:00:00.000Z",
+ "latestAt": "2026-11-02T18:01:30.000Z",
  "digest": null,
  "digestUpdatedAt": null,
  "summary": null,
  "excerpt": null,
- "latest": null,
+ "latest": "The Verge：报道 OpenAI 以自建电厂/减载保护周边社区电网叙事。",
  "latestReport": null,
  "whyHot": {
-  "participants48h": 1,
-  "newParticipants6h": 1,
-  "recentReports24h": 1,
+  "participants48h": 2,
+  "newParticipants6h": 2,
+  "recentReports24h": 2,
   "observationComplete": true,
-  "rank": null
+  "rank": 1
  },
  "developments": [
   {
    "factId": "fact-2026-11-02-openai-grid-protectors-program",
    "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网",
    "firstReportAt": "2026-11-02T15:00:00.000Z",
-   "reportCount": 1,
+   "reportCount": 2,
    "representative": {
     "id": "sha256:5d33ed0c66ace544",
     "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网",
@@ -55,6 +55,18 @@
  ],
  "timeline": [
   {
+   "id": "sha256:565e6fad1f4c3724",
+   "title": "报道：OpenAI 称数据中心可减载保护周边电网",
+   "summary": "The Verge：转述 Grid Protectors 乔治亚试点叙事。并入既有官方事件；代表仍为一手 openai.com。",
+   "source": {
+    "name": "The Verge · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-02T18:01:30.000Z",
+   "selected": false,
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
+  },
+  {
    "id": "sha256:5d33ed0c66ace544",
    "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网",
    "summary": null,
@@ -77,6 +89,21 @@
    "hour": "2026-11-02T16:00:00.000Z",
    "heat": 9.7,
    "participants": 1
+  },
+  {
+   "hour": "2026-11-02T17:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-02T18:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-02T19:00:00.000Z",
+   "heat": 18.6,
+   "participants": 2
   }
  ],
  "related": [],

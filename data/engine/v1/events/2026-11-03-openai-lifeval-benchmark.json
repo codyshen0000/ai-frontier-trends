@@ -1,0 +1,131 @@
+{
+ "publicId": "2026-11-03-openai-lifeval-benchmark",
+ "title": "OpenAI：发布 LifeVal，测 AI 协助日常事务的能力",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-11-02T09:00:00.000Z",
+ "latestAt": "2026-11-02T09:00:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "官方基准：从找托儿到理财与政务表格等真实任务，衡量 AI 是否帮得上忙。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-11-03-openai-lifeval-benchmark",
+   "title": "OpenAI：发布 LifeVal，测 AI 协助日常事务的能力",
+   "firstReportAt": "2026-11-02T09:00:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:5a014341bc3fc0f1",
+    "title": "OpenAI：发布 LifeVal，测 AI 协助日常事务的能力",
+    "summary": "OpenAI 官方：LifeVal 基准覆盖托儿、理财、政务表格等真实任务，衡量 AI 是否帮得上忙。",
+    "source": {
+     "name": "OpenAI News",
+     "firstParty": true
+    },
+    "publishedAt": "2026-11-02T09:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://openai.com/index/lifeval"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:5a014341bc3fc0f1",
+   "title": "OpenAI：发布 LifeVal，测 AI 协助日常事务的能力",
+   "summary": "OpenAI 官方：LifeVal 基准覆盖托儿、理财、政务表格等真实任务，衡量 AI 是否帮得上忙。",
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-02T09:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/lifeval"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:5a014341bc3fc0f1",
+   "title": "OpenAI：发布 LifeVal，测 AI 协助日常事务的能力",
+   "summary": "OpenAI 官方：LifeVal 基准覆盖托儿、理财、政务表格等真实任务，衡量 AI 是否帮得上忙。",
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-02T09:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/lifeval"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-11-02T09:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-02T10:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-02T11:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-02T12:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-02T13:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-02T14:00:00.000Z",
+   "heat": 8.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-02T15:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-02T16:00:00.000Z",
+   "heat": 8.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-02T17:00:00.000Z",
+   "heat": 7.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-02T18:00:00.000Z",
+   "heat": 7.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-02T19:00:00.000Z",
+   "heat": 7.5,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "OpenAI：LifeVal 测 AI 帮人办日常事务的能力",
+ "primaryUrl": "https://openai.com/index/lifeval"
+}

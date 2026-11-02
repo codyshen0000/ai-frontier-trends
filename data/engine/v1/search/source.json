@@ -1,6 +1,30 @@
 {
- "generatedAt": "2026-11-02T16:50:00.000Z",
+ "generatedAt": "2026-11-02T19:41:54.000Z",
  "docs": [
+  {
+   "id": "sha256:565e6fad1f4c3724",
+   "kind": "item",
+   "title": "报道：OpenAI 称数据中心可减载保护周边电网",
+   "summary": "The Verge：转述 Grid Protectors 乔治亚试点叙事。并入既有官方事件；代表仍为一手 openai.com。",
+   "publishedAt": "2026-11-02T18:01:30.000Z",
+   "sourceName": "The Verge · AI",
+   "category": "industry",
+   "selected": false,
+   "eventPublicId": "2026-11-02-openai-grid-protectors-program",
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
+  },
+  {
+   "id": "2026-11-02-openai-grid-protectors-program",
+   "kind": "event",
+   "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网",
+   "summary": null,
+   "publishedAt": "2026-11-02T18:01:30.000Z",
+   "sourceNames": [
+    "OpenAI News",
+    "The Verge · AI"
+   ],
+   "path": "/events/2026-11-02-openai-grid-protectors-program/"
+  },
   {
    "id": "sha256:5d33ed0c66ace544",
    "kind": "item",
@@ -14,15 +38,27 @@
    "originalUrl": "https://openai.com/index/grid-protectors-program"
   },
   {
-   "id": "2026-11-02-openai-grid-protectors-program",
+   "id": "sha256:5a014341bc3fc0f1",
+   "kind": "item",
+   "title": "OpenAI：发布 LifeVal，测 AI 协助日常事务的能力",
+   "summary": "OpenAI 官方：LifeVal 基准覆盖托儿、理财、政务表格等真实任务，衡量 AI 是否帮得上忙。",
+   "publishedAt": "2026-11-02T09:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "industry",
+   "selected": true,
+   "eventPublicId": "2026-11-03-openai-lifeval-benchmark",
+   "originalUrl": "https://openai.com/index/lifeval"
+  },
+  {
+   "id": "2026-11-03-openai-lifeval-benchmark",
    "kind": "event",
-   "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网",
-   "summary": null,
-   "publishedAt": "2026-11-02T15:00:00.000Z",
+   "title": "OpenAI：发布 LifeVal，测 AI 协助日常事务的能力",
+   "summary": "官方基准：从找托儿到理财与政务表格等真实任务，衡量 AI 是否帮得上忙。",
+   "publishedAt": "2026-11-02T09:00:00.000Z",
    "sourceNames": [
     "OpenAI News"
    ],
-   "path": "/events/2026-11-02-openai-grid-protectors-program/"
+   "path": "/events/2026-11-03-openai-lifeval-benchmark/"
   },
   {
    "id": "sha256:5f7bb6dbd76b6274",
@@ -48,6 +84,29 @@
     "量子位"
    ],
    "path": "/events/2026-10-30-openai-updated-model-spec/"
+  },
+  {
+   "id": "sha256:4094d4340f9e66f9",
+   "kind": "item",
+   "title": "OpenAI：Qodo 把公司知识注入 Codex 做代码审阅",
+   "summary": null,
+   "publishedAt": "2026-11-02T00:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "industry",
+   "selected": true,
+   "eventPublicId": "2026-11-03-openai-qodo-codex-plugin",
+   "originalUrl": "https://openai.com/index/qodo-codex-plugin"
+  },
+  {
+   "id": "2026-11-03-openai-qodo-codex-plugin",
+   "kind": "event",
+   "title": "OpenAI：Qodo 把公司知识注入 Codex 做代码审阅",
+   "summary": null,
+   "publishedAt": "2026-11-02T00:00:00.000Z",
+   "sourceNames": [
+    "OpenAI News"
+   ],
+   "path": "/events/2026-11-03-openai-qodo-codex-plugin/"
   },
   {
    "id": "sha256:be583b060c134071",
