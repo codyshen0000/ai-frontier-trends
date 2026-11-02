@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-31-nvidia-nemoclaw-agents",
  "title": "NVIDIA：发布 NemoClaw，在可控栈上构建专用智能体",
- "status": "active",
+ "status": "watching",
  "reportCount": 1,
  "sourceCount": 1,
  "firstReportAt": "2026-10-30T16:00:00.000Z",
@@ -13,10 +13,10 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 1,
+  "participants48h": 0,
   "newParticipants6h": 0,
   "recentReports24h": 0,
-  "observationComplete": true,
+  "observationComplete": false,
   "rank": null
  },
  "developments": [
@@ -67,193 +67,7 @@
    "originalUrl": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/"
   }
  ],
- "heat": [
-  {
-   "hour": "2026-10-30T16:00:00.000Z",
-   "heat": 10.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T17:00:00.000Z",
-   "heat": 9.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T18:00:00.000Z",
-   "heat": 9.4,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T19:00:00.000Z",
-   "heat": 9.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T20:00:00.000Z",
-   "heat": 8.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T21:00:00.000Z",
-   "heat": 8.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T22:00:00.000Z",
-   "heat": 8.4,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T23:00:00.000Z",
-   "heat": 8.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-31T00:00:00.000Z",
-   "heat": 7.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-31T01:00:00.000Z",
-   "heat": 7.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-31T02:00:00.000Z",
-   "heat": 7.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-31T03:00:00.000Z",
-   "heat": 7.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-31T04:00:00.000Z",
-   "heat": 7.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-31T05:00:00.000Z",
-   "heat": 6.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-31T06:00:00.000Z",
-   "heat": 6.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-31T07:00:00.000Z",
-   "heat": 6.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-31T08:00:00.000Z",
-   "heat": 6.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-31T09:00:00.000Z",
-   "heat": 6.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-31T10:00:00.000Z",
-   "heat": 5.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-31T11:00:00.000Z",
-   "heat": 5.8,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-31T12:00:00.000Z",
-   "heat": 5.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-31T13:00:00.000Z",
-   "heat": 5.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-31T14:00:00.000Z",
-   "heat": 5.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-31T15:00:00.000Z",
-   "heat": 5.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-31T16:00:00.000Z",
-   "heat": 5.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-31T17:00:00.000Z",
-   "heat": 4.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-31T18:00:00.000Z",
-   "heat": 4.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-31T19:00:00.000Z",
-   "heat": 4.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-31T20:00:00.000Z",
-   "heat": 4.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-31T21:00:00.000Z",
-   "heat": 4.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-31T22:00:00.000Z",
-   "heat": 4.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-31T23:00:00.000Z",
-   "heat": 4.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-01T00:00:00.000Z",
-   "heat": 4.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-01T01:00:00.000Z",
-   "heat": 3.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-01T02:00:00.000Z",
-   "heat": 3.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-01T03:00:00.000Z",
-   "heat": 3.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-01T04:00:00.000Z",
-   "heat": 3.5,
-   "participants": 1
-  }
- ],
+ "heat": [],
  "related": [],
  "topics": [],
  "recommendReason": "NVIDIA 发布 NemoClaw：可控栈上构建专用智能体",

@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-27-nvidia-minerva-gpu-yield",
  "title": "NVIDIA Minerva：把遥测混乱变成峰值 GPU 良率",
- "status": "watching",
+ "status": "settled",
  "reportCount": 2,
  "sourceCount": 2,
  "firstReportAt": "2026-10-26T16:00:00.000Z",

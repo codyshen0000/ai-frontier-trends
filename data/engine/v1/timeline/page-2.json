@@ -6,6 +6,29 @@
  },
  "cards": [
   {
+   "key": "sha256:a395c7da350b5086",
+   "anchorAt": "2026-10-28T13:15:00.000Z",
+   "item": {
+    "id": "sha256:a395c7da350b5086",
+    "title": "OpenAI 与 ServiceNow 扩大企业工作流合作",
+    "summary": null,
+    "reason": "OpenAI 与 ServiceNow 把模型/智能体与企业工作流双向打通",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-28T13:15:00.000Z",
+    "timelineAt": "2026-10-28T13:15:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-28-openai-servicenow-partnership-expansion",
+    "originalUrl": "https://openai.com/index/openai-servicenow-partnership-expansion"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:5b6b315fe4450662",
    "anchorAt": "2026-10-28T10:56:24.000Z",
    "item": {
@@ -524,36 +547,6 @@
      "sha256:c3d6fb64eb5418e8"
     ]
    }
-  },
-  {
-   "key": "sha256:8eb6001a836a6e50",
-   "anchorAt": "2026-10-26T14:30:00.000Z",
-   "item": {
-    "id": "sha256:8eb6001a836a6e50",
-    "title": "OpenAI：与学界共建科学理解",
-    "summary": "OpenAI 称与学术社区合作推进科学理解，并宣布多项科学相关进展。属官方通稿。",
-    "reason": null,
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-26T14:30:00.000Z",
-    "timelineAt": "2026-10-26T14:30:00.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-27-openai-academic-science-collab",
-    "originalUrl": "https://openai.com/index/building-scientific-understanding-with-academic-communities"
-   },
-   "group": {
-    "factId": "fact-2026-10-27-openai-academic-science-collab",
-    "additionalSourceCount": 2,
-    "reportCount": 3,
-    "memberIds": [
-     "sha256:8eb6001a836a6e50"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-3.json",
@@ -561,5 +554,5 @@
  "dayCounts": {},
  "page": 2,
  "pageCount": 5,
- "total": 89
+ "total": 90
 }

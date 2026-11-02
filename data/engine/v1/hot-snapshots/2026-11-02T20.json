@@ -1,0 +1,23 @@
+{
+ "computedAt": "2026-11-02T12:24:00.000Z",
+ "entries": [
+  {
+   "rank": 1,
+   "publicId": "2026-11-01-anthropic-watermark-older-models",
+   "heat": 6.6,
+   "participantCount": 2
+  },
+  {
+   "rank": 2,
+   "publicId": "2026-11-01-openai-daybreak-blue-training",
+   "heat": 6.3,
+   "participantCount": 2
+  },
+  {
+   "rank": 3,
+   "publicId": "2026-10-31-deepseek-super-agent-router-worker",
+   "heat": 5.2,
+   "participantCount": 2
+  }
+ ]
+}

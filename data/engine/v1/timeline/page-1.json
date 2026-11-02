@@ -6,6 +6,29 @@
  },
  "cards": [
   {
+   "key": "sha256:5d33ed0c66ace544",
+   "anchorAt": "2026-11-02T15:00:00.000Z",
+   "item": {
+    "id": "sha256:5d33ed0c66ace544",
+    "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网",
+    "summary": null,
+    "reason": "OpenAI：Grid Protectors 让计算园区可减载保电",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-11-02T15:00:00.000Z",
+    "timelineAt": "2026-11-02T15:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-02-openai-grid-protectors-program",
+    "originalUrl": "https://openai.com/index/grid-protectors-program"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:be583b060c134071",
    "anchorAt": "2026-11-01T00:00:00.000Z",
    "item": {
@@ -301,8 +324,8 @@
    },
    "group": {
     "factId": "fact-2026-10-30-openai-updated-model-spec",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
+    "additionalSourceCount": 2,
+    "reportCount": 3,
     "memberIds": [
      "sha256:9349f418e7bc7ab4"
     ]
@@ -521,61 +544,15 @@
      "sha256:ec733f799e1aaee3"
     ]
    }
-  },
-  {
-   "key": "sha256:a395c7da350b5086",
-   "anchorAt": "2026-10-28T13:15:00.000Z",
-   "item": {
-    "id": "sha256:a395c7da350b5086",
-    "title": "OpenAI 与 ServiceNow 扩大企业工作流合作",
-    "summary": null,
-    "reason": "OpenAI 与 ServiceNow 把模型/智能体与企业工作流双向打通",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-28T13:15:00.000Z",
-    "timelineAt": "2026-10-28T13:15:00.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-28-openai-servicenow-partnership-expansion",
-    "originalUrl": "https://openai.com/index/openai-servicenow-partnership-expansion"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-2.json",
  "hot": [
   {
    "rank": 1,
-   "title": "DeepSeek：开源 Super-agent 原型，Router 与 Worker 双层架构",
-   "heat": 17.3,
-   "trend": "down",
-   "storyPublicId": "2026-10-31-deepseek-super-agent-router-worker",
-   "itemId": "sha256:5bd78febd4a59e34",
-   "participants": [
-    {
-     "name": "GitHub · deepseek-ai/dsh-superagent-prototype",
-     "kind": "editorial"
-    },
-    {
-     "name": "量子位",
-     "kind": "editorial"
-    },
-    {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
-    }
-   ],
-   "participantCount": 3
-  },
-  {
-   "rank": 2,
    "title": "Anthropic：水印上线，两款旧 Claude 模型仍有采样漏洞",
-   "heat": 16.4,
-   "trend": "up",
+   "heat": 5.8,
+   "trend": "down",
    "storyPublicId": "2026-11-01-anthropic-watermark-older-models",
    "itemId": "sha256:042fb889688a1d90",
    "participants": [
@@ -589,70 +566,10 @@
     }
    ],
    "participantCount": 2
-  },
-  {
-   "rank": 3,
-   "title": "OpenAI：Daybreak Blue 网络安全会话数据将可用于模型训练",
-   "heat": 15.8,
-   "trend": "up",
-   "storyPublicId": "2026-11-01-openai-daybreak-blue-training",
-   "itemId": "sha256:be583b060c134071",
-   "participants": [
-    {
-     "name": "OpenAI Help · Data Controls in ChatGPT",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 2
-  },
-  {
-   "rank": 4,
-   "title": "Anthropic：自动化搜寻「看似无害」却能破坏监督的训练数据",
-   "heat": 15.5,
-   "trend": "down",
-   "storyPublicId": "2026-10-31-anthropic-automated-em-search",
-   "itemId": "sha256:3a143d3580b64e5b",
-   "participants": [
-    {
-     "name": "Anthropic Alignment",
-     "kind": "editorial"
-    },
-    {
-     "name": "anthropic-alignment",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 3
-  },
-  {
-   "rank": 5,
-   "title": "OpenAI：让网站更容易表达 AI 训练偏好",
-   "heat": 6.8,
-   "trend": "down",
-   "storyPublicId": "2026-10-31-openai-ai-training-preferences",
-   "itemId": "sha256:84abd1857de5dfd9",
-   "participants": [
-    {
-     "name": "OpenAI News",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 2
   }
  ],
  "dayCounts": {
+  "2026-11-02": 1,
   "2026-11-01": 2,
   "2026-10-31": 4,
   "2026-10-30": 5,
@@ -671,5 +588,5 @@
  },
  "page": 1,
  "pageCount": 5,
- "total": 89
+ "total": 90
 }

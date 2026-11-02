@@ -6,6 +6,36 @@
  },
  "cards": [
   {
+   "key": "sha256:5ddee939d5fa55a3",
+   "anchorAt": "2026-10-22T18:00:00.000Z",
+   "item": {
+    "id": "sha256:5ddee939d5fa55a3",
+    "title": "微软：发布诊断编排器，复杂病例准确率称超医生",
+    "summary": "Verge：Suleyman 称诊断工具准确率高于医生；对标 Science/微软稿。",
+    "reason": "微软 MAI-DxO：复杂病例诊断准确率称超医生",
+    "source": {
+     "name": "The Verge · AI"
+    },
+    "publishedAt": "2026-10-22T18:00:00.000Z",
+    "timelineAt": "2026-10-22T18:00:00.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-23-microsoft-mai-dxo",
+    "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence"
+   },
+   "group": {
+    "factId": "fact-2026-10-23-microsoft-mai-dxo",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:5ddee939d5fa55a3"
+    ]
+   }
+  },
+  {
    "key": "sha256:7ea705cfe9f05665",
    "anchorAt": "2026-10-22T17:50:09.000Z",
    "item": {
@@ -490,29 +520,6 @@
      "sha256:95dedf578de78f3e"
     ]
    }
-  },
-  {
-   "key": "sha256:e270f5ba4688033d",
-   "anchorAt": "2026-10-21T00:00:00.000Z",
-   "item": {
-    "id": "sha256:e270f5ba4688033d",
-    "title": "OpenAI：民主治理前沿 AI 之二——赋能网络防御者",
-    "summary": "OpenAI 治理系列：赋能网络防御与公共机构韧性。",
-    "reason": "OpenAI：前沿 AI 赋能网络防御的治理蓝图",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-21T00:00:00.000Z",
-    "timelineAt": "2026-10-21T00:00:00.000Z",
-    "category": "opinion",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-22-openai-gov-cyber-defenders",
-    "originalUrl": "https://openai.com/index/empowering-cyber-defenders"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-5.json",
@@ -520,5 +527,5 @@
  "dayCounts": {},
  "page": 4,
  "pageCount": 5,
- "total": 89
+ "total": 90
 }

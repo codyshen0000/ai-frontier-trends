@@ -8,6 +8,17 @@
  },
  "items": [
   {
+   "guid": "sha256:5d33ed0c66ace544",
+   "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网",
+   "summary": "",
+   "originalUrl": "https://openai.com/index/grid-protectors-program",
+   "pubDate": "2026-11-02T15:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "industry",
+   "categoryLabel": "行业",
+   "eventPublicId": "2026-11-02-openai-grid-protectors-program"
+  },
+  {
    "guid": "sha256:be583b060c134071",
    "title": "OpenAI：Daybreak Blue 网络安全会话数据将可用于模型训练",
    "summary": "OpenAI Help Center Data Controls：Trusted Access / Daybreak Blue 会话此前禁训，现可纳入训练。政策变更；一手为 Help Center。",
@@ -545,17 +556,6 @@
    "category": "product",
    "categoryLabel": "产品",
    "eventPublicId": "2026-10-24-baseten-environment-network"
-  },
-  {
-   "guid": "sha256:1456ee151a5392db",
-   "title": "NVIDIA：TensorRT Global Performance Tuner 跨多条构建路线寻优",
-   "summary": "NVIDIA 技术博客 Part 2：Global Performance Tuner 自动跨构建寻优。",
-   "originalUrl": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-2/",
-   "pubDate": "2026-10-23T17:27:52.000Z",
-   "sourceName": "NVIDIA Technical Blog",
-   "category": "tutorial",
-   "categoryLabel": "教程",
-   "eventPublicId": "2026-10-24-nvidia-tensorrt-global-performance-tuner"
   }
  ]
 }

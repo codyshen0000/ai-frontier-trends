@@ -1,30 +1,30 @@
 {
  "publicId": "2026-10-30-openai-updated-model-spec",
- "title": "OpenAI 更新 Model Spec 行为规范",
+ "title": "OpenAI 更新 Model Spec",
  "status": "active",
- "reportCount": 2,
- "sourceCount": 2,
+ "reportCount": 3,
+ "sourceCount": 3,
  "firstReportAt": "2026-10-29T17:00:00.000Z",
- "latestAt": "2026-10-30T17:44:59.000Z",
+ "latestAt": "2026-11-02T07:27:54.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": "OpenAI 更新 Model Spec。The Decoder 二手跟进：围绕五项核心价值重组行为指南。",
+ "summary": "Model Spec 重写；「忠于人类」等原则传播。",
  "excerpt": null,
- "latest": "The Decoder：转述 Model Spec 围绕五项核心价值重组（含忠实人类意图与可纠正性）。",
+ "latest": "量子位中文解读回访。",
  "latestReport": null,
  "whyHot": {
   "participants48h": 1,
   "newParticipants6h": 0,
-  "recentReports24h": 0,
+  "recentReports24h": 1,
   "observationComplete": true,
   "rank": null
  },
  "developments": [
   {
    "factId": "fact-2026-10-30-openai-updated-model-spec",
-   "title": "OpenAI 更新 Model Spec 行为规范",
+   "title": "OpenAI 更新 Model Spec",
    "firstReportAt": "2026-10-29T17:00:00.000Z",
-   "reportCount": 2,
+   "reportCount": 3,
    "representative": {
     "id": "sha256:9349f418e7bc7ab4",
     "title": "OpenAI 更新 Model Spec：五条核心价值",
@@ -55,6 +55,18 @@
  ],
  "timeline": [
   {
+   "id": "sha256:5f7bb6dbd76b6274",
+   "title": "报道：OpenAI 重写大模型法则（忠于人类）",
+   "summary": null,
+   "source": {
+    "name": "量子位",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-02T07:27:54.000Z",
+   "selected": false,
+   "originalUrl": "https://www.qbitai.com/2026/11/507225.html"
+  },
+  {
    "id": "sha256:30da88947cf8a75c",
    "title": "报道：OpenAI 更新难控模型的行为指南",
    "summary": "Decoder 转述 Model Spec 五项核心价值重组。同事件二手跟进。",
@@ -80,186 +92,6 @@
   }
  ],
  "heat": [
-  {
-   "hour": "2026-10-30T04:00:00.000Z",
-   "heat": 7.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T05:00:00.000Z",
-   "heat": 7.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T06:00:00.000Z",
-   "heat": 6.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T07:00:00.000Z",
-   "heat": 6.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T08:00:00.000Z",
-   "heat": 6.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T09:00:00.000Z",
-   "heat": 6.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T10:00:00.000Z",
-   "heat": 6.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T11:00:00.000Z",
-   "heat": 5.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T12:00:00.000Z",
-   "heat": 5.8,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T13:00:00.000Z",
-   "heat": 5.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T14:00:00.000Z",
-   "heat": 5.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T15:00:00.000Z",
-   "heat": 5.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T16:00:00.000Z",
-   "heat": 5.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T17:00:00.000Z",
-   "heat": 5.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-30T18:00:00.000Z",
-   "heat": 14.8,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-30T19:00:00.000Z",
-   "heat": 14.4,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-30T20:00:00.000Z",
-   "heat": 14.0,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-30T21:00:00.000Z",
-   "heat": 13.6,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-30T22:00:00.000Z",
-   "heat": 13.2,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-30T23:00:00.000Z",
-   "heat": 12.8,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-31T00:00:00.000Z",
-   "heat": 12.4,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-31T01:00:00.000Z",
-   "heat": 12.1,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-31T02:00:00.000Z",
-   "heat": 11.7,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-31T03:00:00.000Z",
-   "heat": 11.4,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-31T04:00:00.000Z",
-   "heat": 11.1,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-31T05:00:00.000Z",
-   "heat": 10.8,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-31T06:00:00.000Z",
-   "heat": 10.5,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-31T07:00:00.000Z",
-   "heat": 10.2,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-31T08:00:00.000Z",
-   "heat": 9.9,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-31T09:00:00.000Z",
-   "heat": 9.6,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-31T10:00:00.000Z",
-   "heat": 9.3,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-31T11:00:00.000Z",
-   "heat": 9.0,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-31T12:00:00.000Z",
-   "heat": 8.8,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-31T13:00:00.000Z",
-   "heat": 8.5,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-31T14:00:00.000Z",
-   "heat": 8.3,
-   "participants": 2
-  },
-  {
-   "hour": "2026-10-31T15:00:00.000Z",
-   "heat": 8.1,
-   "participants": 2
-  },
   {
    "hour": "2026-10-31T16:00:00.000Z",
    "heat": 7.8,
@@ -323,6 +155,116 @@
   {
    "hour": "2026-11-01T04:00:00.000Z",
    "heat": 3.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-01T05:00:00.000Z",
+   "heat": 3.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-01T06:00:00.000Z",
+   "heat": 3.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-01T07:00:00.000Z",
+   "heat": 3.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-01T08:00:00.000Z",
+   "heat": 3.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-01T09:00:00.000Z",
+   "heat": 3.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-01T10:00:00.000Z",
+   "heat": 3.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-01T11:00:00.000Z",
+   "heat": 3.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-01T12:00:00.000Z",
+   "heat": 3.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-01T13:00:00.000Z",
+   "heat": 2.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-01T14:00:00.000Z",
+   "heat": 2.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-01T15:00:00.000Z",
+   "heat": 2.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-01T16:00:00.000Z",
+   "heat": 2.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-01T17:00:00.000Z",
+   "heat": 2.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-02T08:00:00.000Z",
+   "heat": 9.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-02T09:00:00.000Z",
+   "heat": 9.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-02T10:00:00.000Z",
+   "heat": 9.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-02T11:00:00.000Z",
+   "heat": 9.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-02T12:00:00.000Z",
+   "heat": 8.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-02T13:00:00.000Z",
+   "heat": 8.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-02T14:00:00.000Z",
+   "heat": 8.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-02T15:00:00.000Z",
+   "heat": 8.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-02T16:00:00.000Z",
+   "heat": 7.8,
    "participants": 1
   }
  ],

@@ -1,32 +1,46 @@
 {
  "events": [
   {
+   "publicId": "2026-11-02-openai-grid-protectors-program",
+   "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网",
+   "latestAt": "2026-11-02T15:00:00.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
+   "publicId": "2026-10-30-openai-updated-model-spec",
+   "title": "OpenAI 更新 Model Spec",
+   "latestAt": "2026-11-02T07:27:54.000Z",
+   "reportCount": 3,
+   "hotRank": null
+  },
+  {
    "publicId": "2026-11-01-anthropic-watermark-older-models",
    "title": "Anthropic：水印上线，两款旧 Claude 模型仍有采样漏洞",
    "latestAt": "2026-11-01T00:00:00.000Z",
    "reportCount": 2,
-   "hotRank": 2
+   "hotRank": 1
   },
   {
    "publicId": "2026-11-01-openai-daybreak-blue-training",
    "title": "OpenAI：Daybreak Blue 网络安全会话数据将可用于模型训练",
    "latestAt": "2026-11-01T00:00:00.000Z",
    "reportCount": 2,
-   "hotRank": 3
+   "hotRank": null
   },
   {
    "publicId": "2026-10-31-anthropic-automated-em-search",
    "title": "Anthropic：自动化搜寻「看似无害」却能破坏监督的训练数据",
    "latestAt": "2026-10-31T15:06:14.000Z",
    "reportCount": 2,
-   "hotRank": 4
+   "hotRank": null
   },
   {
    "publicId": "2026-10-31-deepseek-super-agent-router-worker",
    "title": "DeepSeek：开源 Super-agent 原型，Router 与 Worker 双层架构",
    "latestAt": "2026-10-31T13:36:35.000Z",
    "reportCount": 2,
-   "hotRank": 1
+   "hotRank": null
   },
   {
    "publicId": "2026-10-31-wiz-black-october-ai-dev",
@@ -39,13 +53,6 @@
    "publicId": "2026-10-31-openai-ai-training-preferences",
    "title": "OpenAI：让网站更容易表达 AI 训练偏好",
    "latestAt": "2026-10-30T20:26:10.000Z",
-   "reportCount": 2,
-   "hotRank": 5
-  },
-  {
-   "publicId": "2026-10-30-openai-updated-model-spec",
-   "title": "OpenAI 更新 Model Spec 行为规范",
-   "latestAt": "2026-10-30T17:44:59.000Z",
    "reportCount": 2,
    "hotRank": null
   },

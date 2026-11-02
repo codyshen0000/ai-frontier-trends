@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-25-anthropic-single-agent-loop",
  "title": "Anthropic：单智能体循环往往优于多子智能体",
- "status": "watching",
+ "status": "settled",
  "reportCount": 1,
  "sourceCount": 1,
  "firstReportAt": "2026-10-25T09:12:10.000Z",
