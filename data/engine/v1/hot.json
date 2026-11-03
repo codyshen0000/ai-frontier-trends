@@ -1,126 +1,126 @@
 {
-  "computedAt": "2026-11-03T13:02:00.000Z",
-  "windowHours": 48,
-  "entries": [
+ "computedAt": "2026-11-03T16:38:00.000Z",
+ "windowHours": 48,
+ "entries": [
+  {
+   "rank": 1,
+   "story": {
+    "publicId": "2026-11-03-openai-bug-bounty-bigger-rewards",
+    "title": "OpenAI：大幅提高安全漏洞赏金，最高 $172,000"
+   },
+   "heat": 13.6,
+   "trend": "up",
+   "trendPct": 119.4,
+   "badges": [
+    "rising"
+   ],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "The Decoder",
+    "OpenAI News"
+   ],
+   "participants": [
     {
-      "rank": 1,
-      "story": {
-        "publicId": "2026-11-03-openai-bug-bounty-bigger-rewards",
-        "title": "OpenAI：大幅提高安全漏洞赏金，最高 $172,000"
-      },
-      "heat": 15.1,
-      "trend": "up",
-      "trendPct": 118.8,
-      "badges": [
-        "rising"
-      ],
-      "participantCount": 2,
-      "sourceCount": 2,
-      "sourceNames": [
-        "The Decoder",
-        "OpenAI News"
-      ],
-      "participants": [
-        {
-          "name": "OpenAI News",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Decoder",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        10,
-        9.7,
-        9.4,
-        9.2,
-        8.9,
-        8.7,
-        8.4,
-        8.2,
-        7.9,
-        7.7,
-        7.5,
-        7.3,
-        7.1,
-        6.9,
-        6.7,
-        6.5,
-        6.3,
-        16,
-        15.6,
-        15.1
-      ],
-      "summary": "官方：中高危奖励超四倍；核心危急最高 3 万，卓越危急加奖励可达 $172,000。",
-      "latest": "The Decoder：转述赏金上限约 $172,000。",
-      "cover": null,
-      "rankDelta": 0,
-      "heatDeltaPct": null
+     "name": "OpenAI News",
+     "kind": "editorial"
     },
     {
-      "rank": 2,
-      "story": {
-        "publicId": "2026-11-02-openai-grid-protectors-program",
-        "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网"
-      },
-      "heat": 11.1,
-      "trend": "down",
-      "trendPct": -15.9,
-      "badges": [],
-      "participantCount": 2,
-      "sourceCount": 2,
-      "sourceNames": [
-        "The Verge · AI",
-        "OpenAI News"
-      ],
-      "participants": [
-        {
-          "name": "OpenAI News",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Verge · AI",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        null,
-        null,
-        10,
-        9.7,
-        9.4,
-        9.2,
-        18.6,
-        18.1,
-        17.6,
-        17.1,
-        16.6,
-        16.1,
-        15.7,
-        15.2,
-        14.8,
-        14.4,
-        14,
-        13.6,
-        13.2,
-        12.8,
-        12.4,
-        12.1,
-        11.7,
-        11.4,
-        11.1
-      ],
-      "summary": null,
-      "latest": "The Verge：报道 OpenAI 以自建电厂/减载保护周边社区电网叙事。",
-      "cover": null,
-      "rankDelta": -1,
-      "heatDeltaPct": -29.7
+     "name": "The Decoder",
+     "kind": "editorial"
     }
-  ]
+   ],
+   "spark": [
+    null,
+    null,
+    10.0,
+    9.7,
+    9.4,
+    9.2,
+    8.9,
+    8.7,
+    8.4,
+    8.2,
+    7.9,
+    7.7,
+    7.5,
+    7.3,
+    7.1,
+    6.9,
+    6.7,
+    6.5,
+    6.3,
+    16.0,
+    15.6,
+    15.1,
+    14.7,
+    14.3,
+    13.9
+   ],
+   "summary": "官方：中高危奖励超四倍；核心危急最高 3 万，卓越危急加奖励可达 $172,000。",
+   "latest": "The Decoder：转述赏金上限约 $172,000。",
+   "cover": null,
+   "rankDelta": 0,
+   "heatDeltaPct": -9.9
+  },
+  {
+   "rank": 2,
+   "story": {
+    "publicId": "2026-11-02-openai-grid-protectors-program",
+    "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网"
+   },
+   "heat": 10.0,
+   "trend": "down",
+   "trendPct": -16.0,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "The Verge · AI",
+    "OpenAI News"
+   ],
+   "participants": [
+    {
+     "name": "OpenAI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    9.7,
+    9.4,
+    9.2,
+    18.6,
+    18.1,
+    17.6,
+    17.1,
+    16.6,
+    16.1,
+    15.7,
+    15.2,
+    14.8,
+    14.4,
+    14.0,
+    13.6,
+    13.2,
+    12.8,
+    12.4,
+    12.1,
+    11.7,
+    11.4,
+    11.1,
+    10.8,
+    10.5,
+    10.2
+   ],
+   "summary": null,
+   "latest": "The Verge：报道 OpenAI 以自建电厂/减载保护周边社区电网叙事。",
+   "cover": null,
+   "rankDelta": 0,
+   "heatDeltaPct": -9.9
+  }
+ ]
 }

@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-28-nvidia-nemotron-local-rules",
  "title": "NVIDIA：微调 Nemotron 以掌握本地规则而非仅本地语言",
- "status": "watching",
+ "status": "settled",
  "reportCount": 1,
  "sourceCount": 1,
  "firstReportAt": "2026-10-27T16:00:00.000Z",

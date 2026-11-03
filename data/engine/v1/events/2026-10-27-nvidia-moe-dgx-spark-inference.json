@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-27-nvidia-moe-dgx-spark-inference",
  "title": "NVIDIA：在 DGX Spark 上加速 MoE 推理的三种方法",
- "status": "watching",
+ "status": "settled",
  "reportCount": 1,
  "sourceCount": 1,
  "firstReportAt": "2026-10-27T15:00:00.000Z",
