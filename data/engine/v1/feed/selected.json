@@ -8,6 +8,17 @@
  },
  "items": [
   {
+   "guid": "sha256:bca108e4c77bd86b",
+   "title": "OpenAI：大幅提高安全漏洞赏金，最高 $172,000",
+   "summary": "OpenAI 官方：中高危奖励中位数超四倍；核心产品危急最高 3 万，卓越危急加奖励可达 $172,000；并推质量/忠诚乘数。",
+   "originalUrl": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+   "pubDate": "2026-11-02T18:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "industry",
+   "categoryLabel": "行业",
+   "eventPublicId": "2026-11-03-openai-bug-bounty-bigger-rewards"
+  },
+  {
    "guid": "sha256:277870ffc8d71544",
    "title": "OpenAI：Scaling Git at OpenAI（Pando）",
    "summary": "OpenAI 官方：为 Codex 级开发规模构建 Git 兼容后端 Pando。",
@@ -545,17 +556,6 @@
    "category": "model",
    "categoryLabel": "模型",
    "eventPublicId": "2026-10-24-block-dessa-speech"
-  },
-  {
-   "guid": "sha256:261b6564023ad66c",
-   "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
-   "summary": "Decoder 报道 Kimi K3.1 Pro；已核实 Artificial Analysis 评测帖并 hop。",
-   "originalUrl": "https://the-decoder.com/chinese-ai-model-kimi-k3-1-pro-is-closing-in-on-anthropics-claude-opus-5-5/",
-   "pubDate": "2026-10-23T19:00:07.000Z",
-   "sourceName": "The Decoder",
-   "category": "model",
-   "categoryLabel": "模型",
-   "eventPublicId": "2026-10-24-kimi-k31-pro"
   }
  ]
 }

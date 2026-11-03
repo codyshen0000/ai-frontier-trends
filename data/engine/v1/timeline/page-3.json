@@ -6,6 +6,36 @@
  },
  "cards": [
   {
+   "key": "sha256:685d9381627543c3",
+   "anchorAt": "2026-10-26T21:23:55.000Z",
+   "item": {
+    "id": "sha256:685d9381627543c3",
+    "title": "Baseten：BDN Sealed Volumes 一次发布处处挂载",
+    "summary": "Baseten 博客发布 BDN Sealed Volumes：一次发布、多处挂载的密封卷能力。",
+    "reason": null,
+    "source": {
+     "name": "Baseten Blog"
+    },
+    "publishedAt": "2026-10-26T21:23:55.000Z",
+    "timelineAt": "2026-10-26T21:23:55.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-27-baseten-bdn-sealed-volumes",
+    "originalUrl": "https://www.baseten.co/blog/bdn-sealed-volumes-publish-once-mount-anywhere/"
+   },
+   "group": {
+    "factId": "fact-2026-10-27-baseten-bdn-sealed-volumes",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:685d9381627543c3"
+    ]
+   }
+  },
+  {
    "key": "sha256:27779e2e3a96ff05",
    "anchorAt": "2026-10-26T16:35:44.000Z",
    "item": {
@@ -540,29 +570,6 @@
      "sha256:8e4a9464917136de"
     ]
    }
-  },
-  {
-   "key": "sha256:1b5221fd798be326",
-   "anchorAt": "2026-10-23T00:00:00.000Z",
-   "item": {
-    "id": "sha256:1b5221fd798be326",
-    "title": "vLLM：DeepSeek-V4.1-Flash 在 GB300 NVL72 吞吐逼近 DeepInfer",
-    "summary": null,
-    "reason": "vLLM 在 NVL72 上服务 V4.1-Flash，逼近 DeepInfer",
-    "source": {
-     "name": "vLLM Blog"
-    },
-    "publishedAt": "2026-10-23T00:00:00.000Z",
-    "timelineAt": "2026-10-23T00:00:00.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-25-vllm-ds-v41-flash-scale",
-    "originalUrl": "https://vllm.ai/blog/2026-10-23-deepseek-v41-flash-pd-wide-ep"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-4.json",
@@ -570,5 +577,5 @@
  "dayCounts": {},
  "page": 3,
  "pageCount": 5,
- "total": 93
+ "total": 94
 }

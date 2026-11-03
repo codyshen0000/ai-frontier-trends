@@ -6,6 +6,36 @@
  },
  "cards": [
   {
+   "key": "sha256:bca108e4c77bd86b",
+   "anchorAt": "2026-11-02T18:00:00.000Z",
+   "item": {
+    "id": "sha256:bca108e4c77bd86b",
+    "title": "OpenAI：大幅提高安全漏洞赏金，最高 $172,000",
+    "summary": "OpenAI 官方：中高危奖励中位数超四倍；核心产品危急最高 3 万，卓越危急加奖励可达 $172,000；并推质量/忠诚乘数。",
+    "reason": "OpenAI：漏洞赏金中高危翻倍，卓越危急最高约 $172,000",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-11-02T18:00:00.000Z",
+    "timelineAt": "2026-11-02T18:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-03-openai-bug-bounty-bigger-rewards",
+    "originalUrl": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties"
+   },
+   "group": {
+    "factId": "fact-2026-11-03-openai-bug-bounty-bigger-rewards",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:bca108e4c77bd86b"
+    ]
+   }
+  },
+  {
    "key": "sha256:277870ffc8d71544",
    "anchorAt": "2026-11-02T15:30:00.000Z",
    "item": {
@@ -505,46 +535,33 @@
     "originalUrl": "https://openai.com/index/credit-saison"
    },
    "group": null
-  },
-  {
-   "key": "sha256:3801bfeec8403796",
-   "anchorAt": "2026-10-28T21:58:32.000Z",
-   "item": {
-    "id": "sha256:3801bfeec8403796",
-    "title": "微软首次披露 Azure 季度营收约 33.2 亿美元",
-    "summary": null,
-    "reason": "微软首次公布 Azure 单季美元营收约 33.2 亿",
-    "source": {
-     "name": "TechCrunch · AI"
-    },
-    "publishedAt": "2026-10-28T21:58:32.000Z",
-    "timelineAt": "2026-10-28T21:58:32.000Z",
-    "category": "industry",
-    "tags": [
-     "title_fix_grounding"
-    ],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-28-microsoft-fy27-q1-earnings",
-    "originalUrl": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/"
-   },
-   "group": {
-    "factId": "fact-2026-10-28-microsoft-fy27-q1-earnings",
-    "additionalSourceCount": 1,
-    "reportCount": 4,
-    "memberIds": [
-     "sha256:3801bfeec8403796"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-2.json",
  "hot": [
   {
    "rank": 1,
+   "title": "OpenAI：大幅提高安全漏洞赏金，最高 $172,000",
+   "heat": 15.1,
+   "trend": "up",
+   "storyPublicId": "2026-11-03-openai-bug-bounty-bigger-rewards",
+   "itemId": "sha256:bca108e4c77bd86b",
+   "participants": [
+    {
+     "name": "OpenAI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2
+  },
+  {
+   "rank": 2,
    "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网",
-   "heat": 15.8,
+   "heat": 11.1,
    "trend": "down",
    "storyPublicId": "2026-11-02-openai-grid-protectors-program",
    "itemId": "sha256:5d33ed0c66ace544",
@@ -562,6 +579,7 @@
   }
  ],
  "dayCounts": {
+  "2026-11-03": 1,
   "2026-11-02": 4,
   "2026-11-01": 2,
   "2026-10-31": 4,
@@ -581,5 +599,5 @@
  },
  "page": 1,
  "pageCount": 5,
- "total": 93
+ "total": 94
 }

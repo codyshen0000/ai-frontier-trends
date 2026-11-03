@@ -6,6 +6,38 @@
  },
  "cards": [
   {
+   "key": "sha256:3801bfeec8403796",
+   "anchorAt": "2026-10-28T21:58:32.000Z",
+   "item": {
+    "id": "sha256:3801bfeec8403796",
+    "title": "微软首次披露 Azure 季度营收约 33.2 亿美元",
+    "summary": null,
+    "reason": "微软首次公布 Azure 单季美元营收约 33.2 亿",
+    "source": {
+     "name": "TechCrunch · AI"
+    },
+    "publishedAt": "2026-10-28T21:58:32.000Z",
+    "timelineAt": "2026-10-28T21:58:32.000Z",
+    "category": "industry",
+    "tags": [
+     "title_fix_grounding"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-28-microsoft-fy27-q1-earnings",
+    "originalUrl": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/"
+   },
+   "group": {
+    "factId": "fact-2026-10-28-microsoft-fy27-q1-earnings",
+    "additionalSourceCount": 1,
+    "reportCount": 4,
+    "memberIds": [
+     "sha256:3801bfeec8403796"
+    ]
+   }
+  },
+  {
    "key": "sha256:ab7da4b3ce3cc5a6",
    "anchorAt": "2026-10-28T17:39:04.000Z",
    "item": {
@@ -510,36 +542,6 @@
      "sha256:89893d5f73c77515"
     ]
    }
-  },
-  {
-   "key": "sha256:685d9381627543c3",
-   "anchorAt": "2026-10-26T21:23:55.000Z",
-   "item": {
-    "id": "sha256:685d9381627543c3",
-    "title": "Baseten：BDN Sealed Volumes 一次发布处处挂载",
-    "summary": "Baseten 博客发布 BDN Sealed Volumes：一次发布、多处挂载的密封卷能力。",
-    "reason": null,
-    "source": {
-     "name": "Baseten Blog"
-    },
-    "publishedAt": "2026-10-26T21:23:55.000Z",
-    "timelineAt": "2026-10-26T21:23:55.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-27-baseten-bdn-sealed-volumes",
-    "originalUrl": "https://www.baseten.co/blog/bdn-sealed-volumes-publish-once-mount-anywhere/"
-   },
-   "group": {
-    "factId": "fact-2026-10-27-baseten-bdn-sealed-volumes",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:685d9381627543c3"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-3.json",
@@ -547,5 +549,5 @@
  "dayCounts": {},
  "page": 2,
  "pageCount": 5,
- "total": 93
+ "total": 94
 }

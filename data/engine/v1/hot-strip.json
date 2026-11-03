@@ -1,8 +1,27 @@
 [
  {
   "rank": 1,
+  "title": "OpenAI：大幅提高安全漏洞赏金，最高 $172,000",
+  "heat": 15.1,
+  "trend": "up",
+  "storyPublicId": "2026-11-03-openai-bug-bounty-bigger-rewards",
+  "itemId": "sha256:bca108e4c77bd86b",
+  "participants": [
+   {
+    "name": "OpenAI News",
+    "kind": "editorial"
+   },
+   {
+    "name": "The Decoder",
+    "kind": "editorial"
+   }
+  ],
+  "participantCount": 2
+ },
+ {
+  "rank": 2,
   "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网",
-  "heat": 15.8,
+  "heat": 11.1,
   "trend": "down",
   "storyPublicId": "2026-11-02-openai-grid-protectors-program",
   "itemId": "sha256:5d33ed0c66ace544",

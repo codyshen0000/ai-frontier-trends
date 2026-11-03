@@ -1,11 +1,18 @@
 {
  "events": [
   {
+   "publicId": "2026-11-03-openai-bug-bounty-bigger-rewards",
+   "title": "OpenAI：大幅提高安全漏洞赏金，最高 $172,000",
+   "latestAt": "2026-11-03T10:42:44.000Z",
+   "reportCount": 2,
+   "hotRank": 1
+  },
+  {
    "publicId": "2026-11-02-openai-grid-protectors-program",
    "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网",
    "latestAt": "2026-11-02T18:01:30.000Z",
    "reportCount": 2,
-   "hotRank": 1
+   "hotRank": 2
   },
   {
    "publicId": "2026-11-03-openai-scaling-git-at-openai",

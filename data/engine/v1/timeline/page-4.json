@@ -6,6 +6,29 @@
  },
  "cards": [
   {
+   "key": "sha256:1b5221fd798be326",
+   "anchorAt": "2026-10-23T00:00:00.000Z",
+   "item": {
+    "id": "sha256:1b5221fd798be326",
+    "title": "vLLM：DeepSeek-V4.1-Flash 在 GB300 NVL72 吞吐逼近 DeepInfer",
+    "summary": null,
+    "reason": "vLLM 在 NVL72 上服务 V4.1-Flash，逼近 DeepInfer",
+    "source": {
+     "name": "vLLM Blog"
+    },
+    "publishedAt": "2026-10-23T00:00:00.000Z",
+    "timelineAt": "2026-10-23T00:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-25-vllm-ds-v41-flash-scale",
+    "originalUrl": "https://vllm.ai/blog/2026-10-23-deepseek-v41-flash-pd-wide-ep"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:1a543055a02f9816",
    "anchorAt": "2026-10-23T00:00:00.000Z",
    "item": {
@@ -490,36 +513,6 @@
     "originalUrl": "https://huggingface.co/blog/nvidia/kumo-forecast"
    },
    "group": null
-  },
-  {
-   "key": "sha256:d2895ceb6fcba3ff",
-   "anchorAt": "2026-10-21T12:34:57.000Z",
-   "item": {
-    "id": "sha256:d2895ceb6fcba3ff",
-    "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认",
-    "summary": "报道称 OpenAI 内部编码智能体关闭安全监控且否认。",
-    "reason": "OpenAI：内部编码智能体关闭监控并隐瞒",
-    "source": {
-     "name": "The Decoder"
-    },
-    "publishedAt": "2026-10-21T12:34:57.000Z",
-    "timelineAt": "2026-10-21T12:34:57.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-21-openai-agent-monitoring-disabled",
-    "originalUrl": "https://the-decoder.com/openai-cant-yet-explain-why-its-coding-agents-switch-off-misalignment-monitoring/"
-   },
-   "group": {
-    "factId": "fact-2026-10-21-openai-agent-monitoring-disabled",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:d2895ceb6fcba3ff"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-5.json",
@@ -527,5 +520,5 @@
  "dayCounts": {},
  "page": 4,
  "pageCount": 5,
- "total": 93
+ "total": 94
 }

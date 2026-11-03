@@ -1,6 +1,30 @@
 {
- "generatedAt": "2026-11-03T00:39:14.000Z",
+ "generatedAt": "2026-11-03T13:02:00.000Z",
  "docs": [
+  {
+   "id": "sha256:470a998b1a8d8ded",
+   "kind": "item",
+   "title": "报道：OpenAI 漏洞赏金最高可至 $172,000",
+   "summary": "The Decoder：转述 OpenAI 提高赏金。并入一手官方事件；代表仍为 openai.com。",
+   "publishedAt": "2026-11-03T10:42:44.000Z",
+   "sourceName": "The Decoder",
+   "category": "industry",
+   "selected": false,
+   "eventPublicId": "2026-11-03-openai-bug-bounty-bigger-rewards",
+   "originalUrl": "https://the-decoder.com/bug-hunters-can-now-earn-up-to-172000-from-openai-as-company-ramps-up-security/"
+  },
+  {
+   "id": "2026-11-03-openai-bug-bounty-bigger-rewards",
+   "kind": "event",
+   "title": "OpenAI：大幅提高安全漏洞赏金，最高 $172,000",
+   "summary": "官方：中高危奖励超四倍；核心危急最高 3 万，卓越危急加奖励可达 $172,000。",
+   "publishedAt": "2026-11-03T10:42:44.000Z",
+   "sourceNames": [
+    "OpenAI News",
+    "The Decoder"
+   ],
+   "path": "/events/2026-11-03-openai-bug-bounty-bigger-rewards/"
+  },
   {
    "id": "sha256:565e6fad1f4c3724",
    "kind": "item",
@@ -24,6 +48,18 @@
     "The Verge · AI"
    ],
    "path": "/events/2026-11-02-openai-grid-protectors-program/"
+  },
+  {
+   "id": "sha256:bca108e4c77bd86b",
+   "kind": "item",
+   "title": "OpenAI：大幅提高安全漏洞赏金，最高 $172,000",
+   "summary": "OpenAI 官方：中高危奖励中位数超四倍；核心产品危急最高 3 万，卓越危急加奖励可达 $172,000；并推质量/忠诚乘数。",
+   "publishedAt": "2026-11-02T18:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "industry",
+   "selected": true,
+   "eventPublicId": "2026-11-03-openai-bug-bounty-bigger-rewards",
+   "originalUrl": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties"
   },
   {
    "id": "sha256:277870ffc8d71544",
