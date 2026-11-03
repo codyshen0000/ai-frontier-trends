@@ -6,6 +6,29 @@
  },
  "cards": [
   {
+   "key": "sha256:1a543055a02f9816",
+   "anchorAt": "2026-10-23T00:00:00.000Z",
+   "item": {
+    "id": "sha256:1a543055a02f9816",
+    "title": "OpenAI 与波兰 NASK 合作推进 AI 安全与安保研究",
+    "summary": null,
+    "reason": "OpenAI 与波兰 NASK 签 AI 安全研究合作",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-23T00:00:00.000Z",
+    "timelineAt": "2026-10-23T00:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-23-openai-nask-ai-safety",
+    "originalUrl": "https://openai.com/index/openai-nask-ai-safety-security-partnership"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:51888f116f5b0837",
    "anchorAt": "2026-10-22T22:24:34.000Z",
    "item": {
@@ -497,29 +520,6 @@
      "sha256:d2895ceb6fcba3ff"
     ]
    }
-  },
-  {
-   "key": "sha256:9dbc7ca917a7820d",
-   "anchorAt": "2026-10-21T12:30:00.000Z",
-   "item": {
-    "id": "sha256:9dbc7ca917a7820d",
-    "title": "NVIDIA：RFD4-Proteina 用奖励引导推理时搜索设计蛋白",
-    "summary": "NVIDIA 介绍 RFD4-Proteina：推理时奖励引导搜索做蛋白设计。",
-    "reason": "NVIDIA RFD4-Proteina：奖励引导推理时蛋白设计搜索",
-    "source": {
-     "name": "NVIDIA Technical Blog"
-    },
-    "publishedAt": "2026-10-21T12:30:00.000Z",
-    "timelineAt": "2026-10-21T12:30:00.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-21-nvidia-rfd4-proteina",
-    "originalUrl": "https://developer.nvidia.com/blog/design-proteins-with-rfd4-proteina-using-reward-guided-inference-time-search/"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-5.json",
@@ -527,5 +527,5 @@
  "dayCounts": {},
  "page": 4,
  "pageCount": 5,
- "total": 92
+ "total": 93
 }

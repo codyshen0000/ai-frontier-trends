@@ -6,6 +6,29 @@
  },
  "cards": [
   {
+   "key": "sha256:277870ffc8d71544",
+   "anchorAt": "2026-11-02T15:30:00.000Z",
+   "item": {
+    "id": "sha256:277870ffc8d71544",
+    "title": "OpenAI：Scaling Git at OpenAI（Pando）",
+    "summary": "OpenAI 官方：为 Codex 级开发规模构建 Git 兼容后端 Pando。",
+    "reason": "OpenAI：Pando 扩展 Git，支撑 Codex 级开发规模",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-11-02T15:30:00.000Z",
+    "timelineAt": "2026-11-02T15:30:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-03-openai-scaling-git-at-openai",
+    "originalUrl": "https://openai.com/index/scaling-git-at-openai"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:5d33ed0c66ace544",
    "anchorAt": "2026-11-02T15:00:00.000Z",
    "item": {
@@ -514,29 +537,6 @@
      "sha256:3801bfeec8403796"
     ]
    }
-  },
-  {
-   "key": "sha256:ab7da4b3ce3cc5a6",
-   "anchorAt": "2026-10-28T17:39:04.000Z",
-   "item": {
-    "id": "sha256:ab7da4b3ce3cc5a6",
-    "title": "Baseten：优化部署 Qwen3-ASR，批转写吞吐约升 7 倍",
-    "summary": null,
-    "reason": "Baseten 优化开源 Qwen3-ASR 批转写，吞吐约升 7 倍",
-    "source": {
-     "name": "Baseten Blog"
-    },
-    "publishedAt": "2026-10-28T17:39:04.000Z",
-    "timelineAt": "2026-10-28T17:39:04.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-28-baseten-qwen3-asr-batch",
-    "originalUrl": "https://www.baseten.co/blog/fastest-lowest-cost-qwen3-asr-batch-transcription/"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-2.json",
@@ -544,8 +544,8 @@
   {
    "rank": 1,
    "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网",
-   "heat": 18.3,
-   "trend": "new",
+   "heat": 15.8,
+   "trend": "down",
    "storyPublicId": "2026-11-02-openai-grid-protectors-program",
    "itemId": "sha256:5d33ed0c66ace544",
    "participants": [
@@ -562,7 +562,7 @@
   }
  ],
  "dayCounts": {
-  "2026-11-02": 3,
+  "2026-11-02": 4,
   "2026-11-01": 2,
   "2026-10-31": 4,
   "2026-10-30": 5,
@@ -581,5 +581,5 @@
  },
  "page": 1,
  "pageCount": 5,
- "total": 92
+ "total": 93
 }

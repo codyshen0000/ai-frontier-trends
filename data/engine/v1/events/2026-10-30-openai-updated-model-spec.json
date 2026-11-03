@@ -93,31 +93,6 @@
  ],
  "heat": [
   {
-   "hour": "2026-10-31T19:00:00.000Z",
-   "heat": 4.8,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-31T20:00:00.000Z",
-   "heat": 4.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-31T21:00:00.000Z",
-   "heat": 4.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-31T22:00:00.000Z",
-   "heat": 4.4,
-   "participants": 1
-  },
-  {
-   "hour": "2026-10-31T23:00:00.000Z",
-   "heat": 4.3,
-   "participants": 1
-  },
-  {
    "hour": "2026-11-01T00:00:00.000Z",
    "heat": 4.2,
    "participants": 1
@@ -265,6 +240,31 @@
   {
    "hour": "2026-11-02T19:00:00.000Z",
    "heat": 7.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-02T20:00:00.000Z",
+   "heat": 7.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-02T21:00:00.000Z",
+   "heat": 6.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-02T22:00:00.000Z",
+   "heat": 6.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-02T23:00:00.000Z",
+   "heat": 6.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-03T00:00:00.000Z",
+   "heat": 6.2,
    "participants": 1
   }
  ],

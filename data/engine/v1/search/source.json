@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-02T19:41:54.000Z",
+ "generatedAt": "2026-11-03T00:39:14.000Z",
  "docs": [
   {
    "id": "sha256:565e6fad1f4c3724",
@@ -24,6 +24,29 @@
     "The Verge · AI"
    ],
    "path": "/events/2026-11-02-openai-grid-protectors-program/"
+  },
+  {
+   "id": "sha256:277870ffc8d71544",
+   "kind": "item",
+   "title": "OpenAI：Scaling Git at OpenAI（Pando）",
+   "summary": "OpenAI 官方：为 Codex 级开发规模构建 Git 兼容后端 Pando。",
+   "publishedAt": "2026-11-02T15:30:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-11-03-openai-scaling-git-at-openai",
+   "originalUrl": "https://openai.com/index/scaling-git-at-openai"
+  },
+  {
+   "id": "2026-11-03-openai-scaling-git-at-openai",
+   "kind": "event",
+   "title": "OpenAI：Scaling Git at OpenAI（Pando）",
+   "summary": "官方：为 Codex 级开发规模构建 Git 兼容后端 Pando。",
+   "publishedAt": "2026-11-02T15:30:00.000Z",
+   "sourceNames": [
+    "OpenAI News"
+   ],
+   "path": "/events/2026-11-03-openai-scaling-git-at-openai/"
   },
   {
    "id": "sha256:5d33ed0c66ace544",

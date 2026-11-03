@@ -8,6 +8,13 @@
    "hotRank": 1
   },
   {
+   "publicId": "2026-11-03-openai-scaling-git-at-openai",
+   "title": "OpenAI：Scaling Git at OpenAI（Pando）",
+   "latestAt": "2026-11-02T15:30:00.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
    "publicId": "2026-11-03-openai-lifeval-benchmark",
    "title": "OpenAI：发布 LifeVal，测 AI 协助日常事务的能力",
    "latestAt": "2026-11-02T09:00:00.000Z",

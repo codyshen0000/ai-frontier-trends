@@ -8,6 +8,17 @@
  },
  "items": [
   {
+   "guid": "sha256:277870ffc8d71544",
+   "title": "OpenAI：Scaling Git at OpenAI（Pando）",
+   "summary": "OpenAI 官方：为 Codex 级开发规模构建 Git 兼容后端 Pando。",
+   "originalUrl": "https://openai.com/index/scaling-git-at-openai",
+   "pubDate": "2026-11-02T15:30:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-11-03-openai-scaling-git-at-openai"
+  },
+  {
    "guid": "sha256:5d33ed0c66ace544",
    "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网",
    "summary": "",
@@ -545,17 +556,6 @@
    "category": "model",
    "categoryLabel": "模型",
    "eventPublicId": "2026-10-24-kimi-k31-pro"
-  },
-  {
-   "guid": "sha256:30a34d758ba63be2",
-   "title": "Google Research：把基础模型用于一线结核病筛查",
-   "summary": "Google Research：基础模型用于 TB 筛查一线；应用研究。",
-   "originalUrl": "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/",
-   "pubDate": "2026-10-23T18:51:33.000Z",
-   "sourceName": "Google Research Blog",
-   "category": "paper",
-   "categoryLabel": "论文",
-   "eventPublicId": "2026-10-24-google-tb-screening"
   }
  ]
 }
