@@ -1,0 +1,98 @@
+{
+ "publicId": "2026-11-04-deepmind-antigravity-cheminformatics",
+ "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
+ "status": "active",
+ "reportCount": 2,
+ "sourceCount": 2,
+ "firstReportAt": "2026-11-03T17:01:49.000Z",
+ "latestAt": "2026-11-03T17:19:56.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "DeepMind 官方：为 Google Antigravity 推出 Cheminformatics Skills，约一小时内检索数千化合物并做匹配分子对分析、提出可合成刚性大环。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 2,
+  "newParticipants6h": 2,
+  "recentReports24h": 2,
+  "observationComplete": true,
+  "rank": 1
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-11-04-deepmind-antigravity-cheminformatics",
+   "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
+   "firstReportAt": "2026-11-03T17:01:49.000Z",
+   "reportCount": 2,
+   "representative": {
+    "id": "sha256:23c4f130369cb972",
+    "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
+    "summary": "DeepMind 官方：Antigravity + Cheminformatics Skills，约 1 小时检索/分析数千化合物并提刚性大环设计。",
+    "source": {
+     "name": "Google DeepMind Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-11-03T17:01:49.000Z",
+    "selected": true,
+    "originalUrl": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:23c4f130369cb972",
+   "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
+   "summary": "DeepMind 官方：Antigravity + Cheminformatics Skills，约 1 小时检索/分析数千化合物并提刚性大环设计。",
+   "source": {
+    "name": "Google DeepMind Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-03T17:01:49.000Z",
+   "selected": true,
+   "originalUrl": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:e795c34623c8a94d",
+   "title": "报道：谷歌 Antigravity 上线「AI 炼丹师」加速抗癌药研发",
+   "summary": "IT之家转述 DeepMind Antigravity 化学信息学技能；并入一手事件，不换代表。",
+   "source": {
+    "name": "IT之家（全站，需关键词过滤）",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-03T17:19:56.000Z",
+   "selected": false,
+   "originalUrl": "https://www.ithome.com/1/021/858.htm"
+  },
+  {
+   "id": "sha256:23c4f130369cb972",
+   "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
+   "summary": "DeepMind 官方：Antigravity + Cheminformatics Skills，约 1 小时检索/分析数千化合物并提刚性大环设计。",
+   "source": {
+    "name": "Google DeepMind Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-03T17:01:49.000Z",
+   "selected": true,
+   "originalUrl": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-11-03T18:00:00.000Z",
+   "heat": 19.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-03T19:00:00.000Z",
+   "heat": 19.0,
+   "participants": 2
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "DeepMind：Antigravity 化学信息学技能加速药物发现",
+ "primaryUrl": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/"
+}

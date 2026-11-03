@@ -8,6 +8,17 @@
  },
  "items": [
   {
+   "guid": "sha256:23c4f130369cb972",
+   "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
+   "summary": "DeepMind 官方：Antigravity + Cheminformatics Skills，约 1 小时检索/分析数千化合物并提刚性大环设计。",
+   "originalUrl": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+   "pubDate": "2026-11-03T17:01:49.000Z",
+   "sourceName": "Google DeepMind Blog",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-11-04-deepmind-antigravity-cheminformatics"
+  },
+  {
    "guid": "sha256:bca108e4c77bd86b",
    "title": "OpenAI：大幅提高安全漏洞赏金，最高 $172,000",
    "summary": "OpenAI 官方：中高危奖励中位数超四倍；核心产品危急最高 3 万，卓越危急加奖励可达 $172,000；并推质量/忠诚乘数。",
@@ -545,17 +556,6 @@
    "category": "paper",
    "categoryLabel": "论文",
    "eventPublicId": "2026-10-25-openmobile-2-mobile-agents"
-  },
-  {
-   "guid": "sha256:8f9973956bdc5190",
-   "title": "Block 发布 Dessa：纯语音训练的全双工对话模型",
-   "summary": "Block 官方介绍 Dessa：从零仅用人类对话语音训练的语音到语音全双工模型，可边听边说、本地跑在 MacBook Pro M4 Max 及以上；称将向少量安全研究者开放早期访问。",
-   "originalUrl": "https://block.xyz/dessa",
-   "pubDate": "2026-10-23T19:32:39.000Z",
-   "sourceName": "web-block-dessa",
-   "category": "model",
-   "categoryLabel": "模型",
-   "eventPublicId": "2026-10-24-block-dessa-speech"
   }
  ]
 }

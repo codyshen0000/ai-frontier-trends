@@ -1,9 +1,28 @@
 [
  {
   "rank": 1,
+  "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
+  "heat": 18.6,
+  "trend": "new",
+  "storyPublicId": "2026-11-04-deepmind-antigravity-cheminformatics",
+  "itemId": "sha256:23c4f130369cb972",
+  "participants": [
+   {
+    "name": "Google DeepMind Blog",
+    "kind": "editorial"
+   },
+   {
+    "name": "IT之家（全站，需关键词过滤）",
+    "kind": "signal"
+   }
+  ],
+  "participantCount": 2
+ },
+ {
+  "rank": 2,
   "title": "OpenAI：大幅提高安全漏洞赏金，最高 $172,000",
-  "heat": 13.6,
-  "trend": "up",
+  "heat": 12.5,
+  "trend": "down",
   "storyPublicId": "2026-11-03-openai-bug-bounty-bigger-rewards",
   "itemId": "sha256:bca108e4c77bd86b",
   "participants": [
@@ -19,9 +38,9 @@
   "participantCount": 2
  },
  {
-  "rank": 2,
+  "rank": 3,
   "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网",
-  "heat": 10.0,
+  "heat": 9.1,
   "trend": "down",
   "storyPublicId": "2026-11-02-openai-grid-protectors-program",
   "itemId": "sha256:5d33ed0c66ace544",

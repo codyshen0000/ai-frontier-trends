@@ -6,6 +6,29 @@
  },
  "cards": [
   {
+   "key": "sha256:85f94c0fe8f02a81",
+   "anchorAt": "2026-10-29T00:00:00.000Z",
+   "item": {
+    "id": "sha256:85f94c0fe8f02a81",
+    "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 954%",
+    "summary": "OpenAI 客户案例营销；未过闸。",
+    "reason": "OpenAI：Credit Saison 企业试点称 ROI 达 954%",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-29T00:00:00.000Z",
+    "timelineAt": "2026-10-29T00:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-31-openai-credit-saison-roi",
+    "originalUrl": "https://openai.com/index/credit-saison"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:3801bfeec8403796",
    "anchorAt": "2026-10-28T21:58:32.000Z",
    "item": {
@@ -511,37 +534,6 @@
      "sha256:f0e3f8456fcbc65d"
     ]
    }
-  },
-  {
-   "key": "sha256:8d93b09012158ea0",
-   "anchorAt": "2026-10-26T22:41:48.000Z",
-   "item": {
-    "id": "sha256:8d93b09012158ea0",
-    "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
-    "summary": "Cloudflare 官方披露并修复 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题。属官方安全通告。",
-    "reason": "Cloudflare 修复 Workers AI KV 缓存跨请求暴露",
-    "source": {
-     "name": "Cloudflare Blog"
-    },
-    "publishedAt": "2026-10-26T22:41:48.000Z",
-    "timelineAt": "2026-10-26T22:41:48.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-27-cloudflare-glm53-kv-cache",
-    "originalUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/"
-   },
-   "group": {
-    "factId": "fact-2026-10-27-cloudflare-glm53-kv-cache",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:8d93b09012158ea0",
-     "sha256:89893d5f73c77515"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-3.json",
@@ -549,5 +541,5 @@
  "dayCounts": {},
  "page": 2,
  "pageCount": 5,
- "total": 94
+ "total": 95
 }

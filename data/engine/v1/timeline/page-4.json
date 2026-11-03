@@ -6,6 +6,37 @@
  },
  "cards": [
   {
+   "key": "sha256:50cb4eba8a3e4759",
+   "anchorAt": "2026-10-23T00:00:00.000Z",
+   "item": {
+    "id": "sha256:50cb4eba8a3e4759",
+    "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持",
+    "summary": "vLLM：Day-0 支持 MiniMax-M3.1-Flash（Blackwell/Rubin/MI350，含 Day-0 RL）。",
+    "reason": "M3.1 Flash 权重开源且 vLLM Day-0 支持",
+    "source": {
+     "name": "vLLM Blog"
+    },
+    "publishedAt": "2026-10-23T00:00:00.000Z",
+    "timelineAt": "2026-10-23T00:00:00.000Z",
+    "category": "model",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-19-minimax-m31-flash",
+    "originalUrl": "https://vllm.ai/blog/2026-10-23-minimax-m31-flash"
+   },
+   "group": {
+    "factId": "fact-2026-10-19-minimax-m31-flash",
+    "additionalSourceCount": 3,
+    "reportCount": 5,
+    "memberIds": [
+     "sha256:50cb4eba8a3e4759",
+     "sha256:8e4a9464917136de"
+    ]
+   }
+  },
+  {
    "key": "sha256:1b5221fd798be326",
    "anchorAt": "2026-10-23T00:00:00.000Z",
    "item": {
@@ -490,29 +521,6 @@
     "originalUrl": "https://openai.com/index/chatgpt-ads-expands-26-new-countries"
    },
    "group": null
-  },
-  {
-   "key": "sha256:5c32755a71da49ed",
-   "anchorAt": "2026-10-21T12:51:24.000Z",
-   "item": {
-    "id": "sha256:5c32755a71da49ed",
-    "title": "NVIDIA Kumo Forecast：预训练时序表征 + 历史模式检索",
-    "summary": null,
-    "reason": "NVIDIA Kumo Forecast：预训练时序+历史模式检索",
-    "source": {
-     "name": "Hugging Face Blog"
-    },
-    "publishedAt": "2026-10-21T12:51:24.000Z",
-    "timelineAt": "2026-10-21T12:51:24.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-21-nvidia-kumo-forecast",
-    "originalUrl": "https://huggingface.co/blog/nvidia/kumo-forecast"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-5.json",
@@ -520,5 +528,5 @@
  "dayCounts": {},
  "page": 4,
  "pageCount": 5,
- "total": 94
+ "total": 95
 }

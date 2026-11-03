@@ -6,6 +6,37 @@
  },
  "cards": [
   {
+   "key": "sha256:8d93b09012158ea0",
+   "anchorAt": "2026-10-26T22:41:48.000Z",
+   "item": {
+    "id": "sha256:8d93b09012158ea0",
+    "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
+    "summary": "Cloudflare 官方披露并修复 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题。属官方安全通告。",
+    "reason": "Cloudflare 修复 Workers AI KV 缓存跨请求暴露",
+    "source": {
+     "name": "Cloudflare Blog"
+    },
+    "publishedAt": "2026-10-26T22:41:48.000Z",
+    "timelineAt": "2026-10-26T22:41:48.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-27-cloudflare-glm53-kv-cache",
+    "originalUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/"
+   },
+   "group": {
+    "factId": "fact-2026-10-27-cloudflare-glm53-kv-cache",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:8d93b09012158ea0",
+     "sha256:89893d5f73c77515"
+    ]
+   }
+  },
+  {
    "key": "sha256:685d9381627543c3",
    "anchorAt": "2026-10-26T21:23:55.000Z",
    "item": {
@@ -539,37 +570,6 @@
     "originalUrl": "https://vllm.ai/blog/2026-10-23-glm53-part2-pcp-dcp-hisparse"
    },
    "group": null
-  },
-  {
-   "key": "sha256:50cb4eba8a3e4759",
-   "anchorAt": "2026-10-23T00:00:00.000Z",
-   "item": {
-    "id": "sha256:50cb4eba8a3e4759",
-    "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持",
-    "summary": "vLLM：Day-0 支持 MiniMax-M3.1-Flash（Blackwell/Rubin/MI350，含 Day-0 RL）。",
-    "reason": "M3.1 Flash 权重开源且 vLLM Day-0 支持",
-    "source": {
-     "name": "vLLM Blog"
-    },
-    "publishedAt": "2026-10-23T00:00:00.000Z",
-    "timelineAt": "2026-10-23T00:00:00.000Z",
-    "category": "model",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-19-minimax-m31-flash",
-    "originalUrl": "https://vllm.ai/blog/2026-10-23-minimax-m31-flash"
-   },
-   "group": {
-    "factId": "fact-2026-10-19-minimax-m31-flash",
-    "additionalSourceCount": 3,
-    "reportCount": 5,
-    "memberIds": [
-     "sha256:50cb4eba8a3e4759",
-     "sha256:8e4a9464917136de"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-4.json",
@@ -577,5 +577,5 @@
  "dayCounts": {},
  "page": 3,
  "pageCount": 5,
- "total": 94
+ "total": 95
 }

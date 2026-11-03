@@ -6,6 +6,36 @@
  },
  "cards": [
   {
+   "key": "sha256:23c4f130369cb972",
+   "anchorAt": "2026-11-03T17:01:49.000Z",
+   "item": {
+    "id": "sha256:23c4f130369cb972",
+    "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
+    "summary": "DeepMind 官方：Antigravity + Cheminformatics Skills，约 1 小时检索/分析数千化合物并提刚性大环设计。",
+    "reason": "DeepMind：Antigravity 化学信息学技能加速药物发现",
+    "source": {
+     "name": "Google DeepMind Blog"
+    },
+    "publishedAt": "2026-11-03T17:01:49.000Z",
+    "timelineAt": "2026-11-03T17:01:49.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-04-deepmind-antigravity-cheminformatics",
+    "originalUrl": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/"
+   },
+   "group": {
+    "factId": "fact-2026-11-04-deepmind-antigravity-cheminformatics",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:23c4f130369cb972"
+    ]
+   }
+  },
+  {
    "key": "sha256:bca108e4c77bd86b",
    "anchorAt": "2026-11-02T18:00:00.000Z",
    "item": {
@@ -512,38 +542,34 @@
     "originalUrl": "https://openai.com/index/how-we-detect-frontier-model-misalignment"
    },
    "group": null
-  },
-  {
-   "key": "sha256:85f94c0fe8f02a81",
-   "anchorAt": "2026-10-29T00:00:00.000Z",
-   "item": {
-    "id": "sha256:85f94c0fe8f02a81",
-    "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 954%",
-    "summary": "OpenAI 客户案例营销；未过闸。",
-    "reason": "OpenAI：Credit Saison 企业试点称 ROI 达 954%",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-29T00:00:00.000Z",
-    "timelineAt": "2026-10-29T00:00:00.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-31-openai-credit-saison-roi",
-    "originalUrl": "https://openai.com/index/credit-saison"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-2.json",
  "hot": [
   {
    "rank": 1,
+   "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
+   "heat": 18.6,
+   "trend": "new",
+   "storyPublicId": "2026-11-04-deepmind-antigravity-cheminformatics",
+   "itemId": "sha256:23c4f130369cb972",
+   "participants": [
+    {
+     "name": "Google DeepMind Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
+    }
+   ],
+   "participantCount": 2
+  },
+  {
+   "rank": 2,
    "title": "OpenAI：大幅提高安全漏洞赏金，最高 $172,000",
-   "heat": 13.6,
-   "trend": "up",
+   "heat": 12.5,
+   "trend": "down",
    "storyPublicId": "2026-11-03-openai-bug-bounty-bigger-rewards",
    "itemId": "sha256:bca108e4c77bd86b",
    "participants": [
@@ -559,9 +585,9 @@
    "participantCount": 2
   },
   {
-   "rank": 2,
+   "rank": 3,
    "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网",
-   "heat": 10.0,
+   "heat": 9.1,
    "trend": "down",
    "storyPublicId": "2026-11-02-openai-grid-protectors-program",
    "itemId": "sha256:5d33ed0c66ace544",
@@ -579,6 +605,7 @@
   }
  ],
  "dayCounts": {
+  "2026-11-04": 1,
   "2026-11-03": 1,
   "2026-11-02": 4,
   "2026-11-01": 2,
@@ -599,5 +626,5 @@
  },
  "page": 1,
  "pageCount": 5,
- "total": 94
+ "total": 95
 }

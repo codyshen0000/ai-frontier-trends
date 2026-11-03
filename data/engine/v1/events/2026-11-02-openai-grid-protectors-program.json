@@ -15,9 +15,9 @@
  "whyHot": {
   "participants48h": 2,
   "newParticipants6h": 0,
-  "recentReports24h": 1,
+  "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 2
+  "rank": 3
  },
  "developments": [
   {
@@ -209,11 +209,26 @@
    "hour": "2026-11-03T16:00:00.000Z",
    "heat": 10.2,
    "participants": 2
+  },
+  {
+   "hour": "2026-11-03T17:00:00.000Z",
+   "heat": 9.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-03T18:00:00.000Z",
+   "heat": 9.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-03T19:00:00.000Z",
+   "heat": 9.3,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "OpenAI：Grid Protectors 让计算园区可减载保电",
  "primaryUrl": "https://openai.com/index/grid-protectors-program",
- "rankDelta": 0
+ "rankDelta": -1
 }
