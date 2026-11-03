@@ -1,65 +1,65 @@
 {
- "computedAt": "2026-11-03T00:39:14.000Z",
- "windowHours": 48,
- "entries": [
-  {
-   "rank": 1,
-   "story": {
-    "publicId": "2026-11-02-openai-grid-protectors-program",
-    "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网"
-   },
-   "heat": 15.8,
-   "trend": "down",
-   "trendPct": -16.0,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "The Verge · AI",
-    "OpenAI News"
-   ],
-   "participants": [
+  "computedAt": "2026-11-03T00:39:14.000Z",
+  "windowHours": 48,
+  "entries": [
     {
-     "name": "OpenAI News",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
+      "rank": 1,
+      "story": {
+        "publicId": "2026-11-02-openai-grid-protectors-program",
+        "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网"
+      },
+      "heat": 16.1,
+      "trend": "down",
+      "trendPct": -14.4,
+      "badges": [],
+      "participantCount": 2,
+      "sourceCount": 2,
+      "sourceNames": [
+        "The Verge · AI",
+        "OpenAI News"
+      ],
+      "participants": [
+        {
+          "name": "OpenAI News",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Verge · AI",
+          "kind": "editorial"
+        }
+      ],
+      "spark": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        10,
+        9.7,
+        9.4,
+        9.2,
+        18.6,
+        18.1,
+        17.6,
+        17.1,
+        16.6,
+        16.1
+      ],
+      "summary": null,
+      "latest": "The Verge：报道 OpenAI 以自建电厂/减载保护周边社区电网叙事。",
+      "cover": null,
+      "rankDelta": 0,
+      "heatDeltaPct": 1.9
     }
-   ],
-   "spark": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    10.0,
-    9.7,
-    9.4,
-    9.2,
-    18.6,
-    18.1,
-    17.6,
-    17.1,
-    16.6,
-    16.1
-   ],
-   "summary": null,
-   "latest": "The Verge：报道 OpenAI 以自建电厂/减载保护周边社区电网叙事。",
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -13.7
-  }
- ]
+  ]
 }
