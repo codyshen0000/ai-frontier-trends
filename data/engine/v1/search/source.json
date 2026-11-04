@@ -1,6 +1,29 @@
 {
- "generatedAt": "2026-11-04T12:28:00.000Z",
+ "generatedAt": "2026-11-04T16:49:00.000Z",
  "docs": [
+  {
+   "id": "sha256:1be4fdd8e6ca80f0",
+   "kind": "item",
+   "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
+   "summary": null,
+   "publishedAt": "2026-11-04T14:30:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-11-04-openai-acquire-pierre",
+   "originalUrl": "https://openai.com/index/openai-to-acquire-pierre"
+  },
+  {
+   "id": "2026-11-04-openai-acquire-pierre",
+   "kind": "event",
+   "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
+   "summary": null,
+   "publishedAt": "2026-11-04T14:30:00.000Z",
+   "sourceNames": [
+    "OpenAI News"
+   ],
+   "path": "/events/2026-11-04-openai-acquire-pierre/"
+  },
   {
    "id": "sha256:e795c34623c8a94d",
    "kind": "item",

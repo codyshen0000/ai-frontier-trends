@@ -6,6 +6,29 @@
  },
  "cards": [
   {
+   "key": "sha256:1be4fdd8e6ca80f0",
+   "anchorAt": "2026-11-04T14:30:00.000Z",
+   "item": {
+    "id": "sha256:1be4fdd8e6ca80f0",
+    "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
+    "summary": null,
+    "reason": "OpenAI 收购 Pierre，强化 Codex 代码审阅与存储工具",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-11-04T14:30:00.000Z",
+    "timelineAt": "2026-11-04T14:30:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-04-openai-acquire-pierre",
+    "originalUrl": "https://openai.com/index/openai-to-acquire-pierre"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:23c4f130369cb972",
    "anchorAt": "2026-11-03T17:01:49.000Z",
    "item": {
@@ -519,29 +542,6 @@
      "sha256:5a25565ab71a8d06"
     ]
    }
-  },
-  {
-   "key": "sha256:0f01adb2acab0a67",
-   "anchorAt": "2026-10-29T09:00:00.000Z",
-   "item": {
-    "id": "sha256:0f01adb2acab0a67",
-    "title": "OpenAI：如何监测前沿模型错位",
-    "summary": "OpenAI 介绍分层监测，用于发现前沿模型错位与未授权智能体行为，以便在事件升级前介入。官方安全运营说明。",
-    "reason": "OpenAI：分层监测前沿模型错位与未授权智能体行为",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-29T09:00:00.000Z",
-    "timelineAt": "2026-10-29T09:00:00.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-30-openai-frontier-misalignment-detection",
-    "originalUrl": "https://openai.com/index/how-we-detect-frontier-model-misalignment"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-2.json",
@@ -549,7 +549,7 @@
   {
    "rank": 1,
    "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
-   "heat": 11.5,
+   "heat": 10.1,
    "trend": "down",
    "storyPublicId": "2026-11-04-deepmind-antigravity-cheminformatics",
    "itemId": "sha256:23c4f130369cb972",
@@ -568,7 +568,7 @@
   {
    "rank": 2,
    "title": "OpenAI：大幅提高安全漏洞赏金，最高 $172,000",
-   "heat": 7.7,
+   "heat": 6.8,
    "trend": "down",
    "storyPublicId": "2026-11-03-openai-bug-bounty-bigger-rewards",
    "itemId": "sha256:bca108e4c77bd86b",
@@ -583,29 +583,10 @@
     }
    ],
    "participantCount": 2
-  },
-  {
-   "rank": 3,
-   "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网",
-   "heat": 5.6,
-   "trend": "down",
-   "storyPublicId": "2026-11-02-openai-grid-protectors-program",
-   "itemId": "sha256:5d33ed0c66ace544",
-   "participants": [
-    {
-     "name": "OpenAI News",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 2
   }
  ],
  "dayCounts": {
-  "2026-11-04": 1,
+  "2026-11-04": 2,
   "2026-11-03": 1,
   "2026-11-02": 4,
   "2026-11-01": 2,
@@ -626,5 +607,5 @@
  },
  "page": 1,
  "pageCount": 5,
- "total": 95
+ "total": 96
 }

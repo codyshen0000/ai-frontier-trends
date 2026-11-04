@@ -1,6 +1,13 @@
 {
  "events": [
   {
+   "publicId": "2026-11-04-openai-acquire-pierre",
+   "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
+   "latestAt": "2026-11-04T14:30:00.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
    "publicId": "2026-11-04-deepmind-antigravity-cheminformatics",
    "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
    "latestAt": "2026-11-03T17:19:56.000Z",
@@ -19,7 +26,7 @@
    "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网",
    "latestAt": "2026-11-02T18:01:30.000Z",
    "reportCount": 2,
-   "hotRank": 3
+   "hotRank": null
   },
   {
    "publicId": "2026-11-03-openai-scaling-git-at-openai",

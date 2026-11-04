@@ -8,6 +8,17 @@
  },
  "items": [
   {
+   "guid": "sha256:1be4fdd8e6ca80f0",
+   "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
+   "summary": "",
+   "originalUrl": "https://openai.com/index/openai-to-acquire-pierre",
+   "pubDate": "2026-11-04T14:30:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-11-04-openai-acquire-pierre"
+  },
+  {
    "guid": "sha256:23c4f130369cb972",
    "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
    "summary": "DeepMind 官方：Antigravity + Cheminformatics Skills，约 1 小时检索/分析数千化合物并提刚性大环设计。",
@@ -545,17 +556,6 @@
    "category": "industry",
    "categoryLabel": "行业",
    "eventPublicId": "2026-10-25-anthropic-single-agent-loop"
-  },
-  {
-   "guid": "sha256:514019d7b6342099",
-   "title": "OpenMobile-2：开源手机智能体称真机评测居开源前列",
-   "summary": "",
-   "originalUrl": "https://the-decoder.com/openmobile-2-proves-open-source-smartphone-agents-can-rival-proprietary-models/",
-   "pubDate": "2026-10-25T06:55:22.000Z",
-   "sourceName": "The Decoder",
-   "category": "paper",
-   "categoryLabel": "论文",
-   "eventPublicId": "2026-10-25-openmobile-2-mobile-agents"
   }
  ]
 }

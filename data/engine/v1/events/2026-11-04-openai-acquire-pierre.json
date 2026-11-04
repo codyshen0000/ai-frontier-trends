@@ -1,0 +1,86 @@
+{
+ "publicId": "2026-11-04-openai-acquire-pierre",
+ "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-11-04T14:30:00.000Z",
+ "latestAt": "2026-11-04T14:30:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": null,
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-11-04-openai-acquire-pierre",
+   "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
+   "firstReportAt": "2026-11-04T14:30:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:1be4fdd8e6ca80f0",
+    "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
+    "summary": null,
+    "source": {
+     "name": "OpenAI News",
+     "firstParty": true
+    },
+    "publishedAt": "2026-11-04T14:30:00.000Z",
+    "selected": true,
+    "originalUrl": "https://openai.com/index/openai-to-acquire-pierre"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:1be4fdd8e6ca80f0",
+   "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
+   "summary": null,
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-04T14:30:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/openai-to-acquire-pierre"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:1be4fdd8e6ca80f0",
+   "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
+   "summary": null,
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-04T14:30:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/openai-to-acquire-pierre"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-11-04T15:00:00.000Z",
+   "heat": 9.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-04T16:00:00.000Z",
+   "heat": 9.6,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "OpenAI 收购 Pierre，强化 Codex 代码审阅与存储工具",
+ "primaryUrl": "https://openai.com/index/openai-to-acquire-pierre"
+}

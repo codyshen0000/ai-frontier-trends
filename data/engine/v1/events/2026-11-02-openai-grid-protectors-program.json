@@ -13,11 +13,11 @@
  "latest": "The Verge：报道 OpenAI 以自建电厂/减载保护周边社区电网叙事。",
  "latestReport": null,
  "whyHot": {
-  "participants48h": 2,
+  "participants48h": 1,
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 3
+  "rank": null
  },
  "developments": [
   {
@@ -80,11 +80,6 @@
   }
  ],
  "heat": [
-  {
-   "hour": "2026-11-02T15:00:00.000Z",
-   "heat": 10.0,
-   "participants": 1
-  },
   {
    "hour": "2026-11-02T16:00:00.000Z",
    "heat": 9.7,
@@ -309,11 +304,30 @@
    "hour": "2026-11-04T12:00:00.000Z",
    "heat": 5.7,
    "participants": 2
+  },
+  {
+   "hour": "2026-11-04T13:00:00.000Z",
+   "heat": 5.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-04T14:00:00.000Z",
+   "heat": 5.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-04T15:00:00.000Z",
+   "heat": 2.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-04T16:00:00.000Z",
+   "heat": 2.7,
+   "participants": 1
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "OpenAI：Grid Protectors 让计算园区可减载保电",
- "primaryUrl": "https://openai.com/index/grid-protectors-program",
- "rankDelta": 0
+ "primaryUrl": "https://openai.com/index/grid-protectors-program"
 }
