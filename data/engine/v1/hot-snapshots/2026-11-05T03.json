@@ -1,0 +1,17 @@
+{
+ "computedAt": "2026-11-04T19:54:00.000Z",
+ "entries": [
+  {
+   "rank": 1,
+   "publicId": "2026-11-04-openai-acquire-pierre",
+   "heat": 18.2,
+   "participantCount": 2
+  },
+  {
+   "rank": 2,
+   "publicId": "2026-11-04-deepmind-antigravity-cheminformatics",
+   "heat": 9.2,
+   "participantCount": 2
+  }
+ ]
+}

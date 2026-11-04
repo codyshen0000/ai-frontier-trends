@@ -1,6 +1,30 @@
 {
- "generatedAt": "2026-11-04T16:49:00.000Z",
+ "generatedAt": "2026-11-04T19:54:00.000Z",
  "docs": [
+  {
+   "id": "sha256:6f4b50073285632d",
+   "kind": "item",
+   "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
+   "summary": "Decoder 二手并入既有；has_new_info=false；不改代表稿。",
+   "publishedAt": "2026-11-04T18:41:03.000Z",
+   "sourceName": "The Decoder",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-11-04-openai-acquire-pierre",
+   "originalUrl": "https://the-decoder.com/openai-acquires-pierre-computer-company-to-make-git-keep-up-with-ai-coding-agents/"
+  },
+  {
+   "id": "2026-11-04-openai-acquire-pierre",
+   "kind": "event",
+   "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
+   "summary": null,
+   "publishedAt": "2026-11-04T18:41:03.000Z",
+   "sourceNames": [
+    "OpenAI News",
+    "The Decoder"
+   ],
+   "path": "/events/2026-11-04-openai-acquire-pierre/"
+  },
   {
    "id": "sha256:1be4fdd8e6ca80f0",
    "kind": "item",
@@ -12,17 +36,6 @@
    "selected": true,
    "eventPublicId": "2026-11-04-openai-acquire-pierre",
    "originalUrl": "https://openai.com/index/openai-to-acquire-pierre"
-  },
-  {
-   "id": "2026-11-04-openai-acquire-pierre",
-   "kind": "event",
-   "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
-   "summary": null,
-   "publishedAt": "2026-11-04T14:30:00.000Z",
-   "sourceNames": [
-    "OpenAI News"
-   ],
-   "path": "/events/2026-11-04-openai-acquire-pierre/"
   },
   {
    "id": "sha256:e795c34623c8a94d",

@@ -1,8 +1,27 @@
 [
  {
   "rank": 1,
+  "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
+  "heat": 18.2,
+  "trend": "new",
+  "storyPublicId": "2026-11-04-openai-acquire-pierre",
+  "itemId": "sha256:1be4fdd8e6ca80f0",
+  "participants": [
+   {
+    "name": "OpenAI News",
+    "kind": "editorial"
+   },
+   {
+    "name": "The Decoder",
+    "kind": "editorial"
+   }
+  ],
+  "participantCount": 2
+ },
+ {
+  "rank": 2,
   "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
-  "heat": 10.1,
+  "heat": 9.2,
   "trend": "down",
   "storyPublicId": "2026-11-04-deepmind-antigravity-cheminformatics",
   "itemId": "sha256:23c4f130369cb972",
@@ -14,25 +33,6 @@
    {
     "name": "IT之家（全站，需关键词过滤）",
     "kind": "signal"
-   }
-  ],
-  "participantCount": 2
- },
- {
-  "rank": 2,
-  "title": "OpenAI：大幅提高安全漏洞赏金，最高 $172,000",
-  "heat": 6.8,
-  "trend": "down",
-  "storyPublicId": "2026-11-03-openai-bug-bounty-bigger-rewards",
-  "itemId": "sha256:bca108e4c77bd86b",
-  "participants": [
-   {
-    "name": "OpenAI News",
-    "kind": "editorial"
-   },
-   {
-    "name": "The Decoder",
-    "kind": "editorial"
    }
   ],
   "participantCount": 2

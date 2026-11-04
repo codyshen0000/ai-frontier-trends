@@ -2,10 +2,10 @@
  "publicId": "2026-11-04-openai-acquire-pierre",
  "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
  "status": "active",
- "reportCount": 1,
- "sourceCount": 1,
+ "reportCount": 2,
+ "sourceCount": 2,
  "firstReportAt": "2026-11-04T14:30:00.000Z",
- "latestAt": "2026-11-04T14:30:00.000Z",
+ "latestAt": "2026-11-04T18:41:03.000Z",
  "digest": null,
  "digestUpdatedAt": null,
  "summary": null,
@@ -13,18 +13,18 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 1,
-  "newParticipants6h": 1,
-  "recentReports24h": 1,
+  "participants48h": 2,
+  "newParticipants6h": 2,
+  "recentReports24h": 2,
   "observationComplete": true,
-  "rank": null
+  "rank": 1
  },
  "developments": [
   {
    "factId": "fact-2026-11-04-openai-acquire-pierre",
    "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
    "firstReportAt": "2026-11-04T14:30:00.000Z",
-   "reportCount": 1,
+   "reportCount": 2,
    "representative": {
     "id": "sha256:1be4fdd8e6ca80f0",
     "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
@@ -55,6 +55,18 @@
  ],
  "timeline": [
   {
+   "id": "sha256:6f4b50073285632d",
+   "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
+   "summary": "Decoder 二手并入既有；has_new_info=false；不改代表稿。",
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-04T18:41:03.000Z",
+   "selected": false,
+   "originalUrl": "https://the-decoder.com/openai-acquires-pierre-computer-company-to-make-git-keep-up-with-ai-coding-agents/"
+  },
+  {
    "id": "sha256:1be4fdd8e6ca80f0",
    "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
    "summary": null,
@@ -77,6 +89,21 @@
    "hour": "2026-11-04T16:00:00.000Z",
    "heat": 9.6,
    "participants": 1
+  },
+  {
+   "hour": "2026-11-04T17:00:00.000Z",
+   "heat": 9.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-04T18:00:00.000Z",
+   "heat": 9.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-04T19:00:00.000Z",
+   "heat": 18.7,
+   "participants": 2
   }
  ],
  "related": [],
