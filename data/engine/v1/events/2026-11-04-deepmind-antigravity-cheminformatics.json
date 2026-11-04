@@ -154,6 +154,26 @@
    "hour": "2026-11-04T08:00:00.000Z",
    "heat": 13.0,
    "participants": 2
+  },
+  {
+   "hour": "2026-11-04T09:00:00.000Z",
+   "heat": 12.7,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-04T10:00:00.000Z",
+   "heat": 12.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-04T11:00:00.000Z",
+   "heat": 12.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-04T12:00:00.000Z",
+   "heat": 11.6,
+   "participants": 2
   }
  ],
  "related": [],

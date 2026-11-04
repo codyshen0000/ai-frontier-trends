@@ -1,182 +1,182 @@
 {
-  "computedAt": "2026-11-04T08:28:00.000Z",
-  "windowHours": 48,
-  "entries": [
+ "computedAt": "2026-11-04T12:28:00.000Z",
+ "windowHours": 48,
+ "entries": [
+  {
+   "rank": 1,
+   "story": {
+    "publicId": "2026-11-04-deepmind-antigravity-cheminformatics",
+    "title": "DeepMind：Google Antigravity 化学信息学智能体技能"
+   },
+   "heat": 11.5,
+   "trend": "down",
+   "trendPct": -15.4,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 1,
+   "sourceNames": [
+    "Google DeepMind Blog"
+   ],
+   "participants": [
     {
-      "rank": 1,
-      "story": {
-        "publicId": "2026-11-04-deepmind-antigravity-cheminformatics",
-        "title": "DeepMind：Google Antigravity 化学信息学智能体技能"
-      },
-      "heat": 13,
-      "trend": "down",
-      "trendPct": -15,
-      "badges": [],
-      "participantCount": 2,
-      "sourceCount": 1,
-      "sourceNames": [
-        "Google DeepMind Blog"
-      ],
-      "participants": [
-        {
-          "name": "Google DeepMind Blog",
-          "kind": "editorial"
-        },
-        {
-          "name": "IT之家（全站，需关键词过滤）",
-          "kind": "signal"
-        }
-      ],
-      "spark": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        19.5,
-        19,
-        18.4,
-        17.9,
-        17.4,
-        16.9,
-        16.4,
-        16,
-        15.5,
-        15.1,
-        14.6,
-        14.2,
-        13.8,
-        13.4,
-        13
-      ],
-      "summary": "DeepMind 官方：为 Google Antigravity 推出 Cheminformatics Skills，约一小时内检索数千化合物并做匹配分子对分析、提出可合成刚性大环。",
-      "latest": null,
-      "cover": null,
-      "rankDelta": 0,
-      "heatDeltaPct": 0.8
+     "name": "Google DeepMind Blog",
+     "kind": "editorial"
     },
     {
-      "rank": 2,
-      "story": {
-        "publicId": "2026-11-03-openai-bug-bounty-bigger-rewards",
-        "title": "OpenAI：大幅提高安全漏洞赏金，最高 $172,000"
-      },
-      "heat": 8.7,
-      "trend": "down",
-      "trendPct": -15.5,
-      "badges": [],
-      "participantCount": 2,
-      "sourceCount": 2,
-      "sourceNames": [
-        "The Decoder",
-        "OpenAI News"
-      ],
-      "participants": [
-        {
-          "name": "OpenAI News",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Decoder",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        6.7,
-        6.5,
-        6.3,
-        16,
-        15.6,
-        15.1,
-        14.7,
-        14.3,
-        13.9,
-        13.5,
-        13.1,
-        12.7,
-        12.4,
-        12,
-        11.7,
-        11.3,
-        11,
-        10.7,
-        10.4,
-        10.1,
-        9.8,
-        9.5,
-        9.3,
-        9,
-        8.7
-      ],
-      "summary": "官方：中高危奖励超四倍；核心危急最高 3 万，卓越危急加奖励可达 $172,000。",
-      "latest": "The Decoder：转述赏金上限约 $172,000。",
-      "cover": null,
-      "rankDelta": 0,
-      "heatDeltaPct": 1.2
-    },
-    {
-      "rank": 3,
-      "story": {
-        "publicId": "2026-11-02-openai-grid-protectors-program",
-        "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网"
-      },
-      "heat": 6.4,
-      "trend": "down",
-      "trendPct": -14.7,
-      "badges": [],
-      "participantCount": 2,
-      "sourceCount": 2,
-      "sourceNames": [
-        "The Verge · AI",
-        "OpenAI News"
-      ],
-      "participants": [
-        {
-          "name": "OpenAI News",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Verge · AI",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        12.8,
-        12.4,
-        12.1,
-        11.7,
-        11.4,
-        11.1,
-        10.8,
-        10.5,
-        10.2,
-        9.9,
-        9.6,
-        9.3,
-        9.1,
-        8.8,
-        8.5,
-        8.3,
-        8.1,
-        7.8,
-        7.6,
-        7.4,
-        7.2,
-        7,
-        6.8,
-        6.6,
-        6.4
-      ],
-      "summary": null,
-      "latest": "The Verge：报道 OpenAI 以自建电厂/减载保护周边社区电网叙事。",
-      "cover": null,
-      "rankDelta": 0,
-      "heatDeltaPct": 1.6
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
     }
-  ]
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    19.5,
+    19.0,
+    18.4,
+    17.9,
+    17.4,
+    16.9,
+    16.4,
+    16.0,
+    15.5,
+    15.1,
+    14.6,
+    14.2,
+    13.8,
+    13.4,
+    13.0,
+    12.7,
+    12.3,
+    12.0,
+    11.6
+   ],
+   "summary": "DeepMind 官方：为 Google Antigravity 推出 Cheminformatics Skills，约一小时内检索数千化合物并做匹配分子对分析、提出可合成刚性大环。",
+   "latest": null,
+   "cover": null,
+   "rankDelta": 0,
+   "heatDeltaPct": -10.9
+  },
+  {
+   "rank": 2,
+   "story": {
+    "publicId": "2026-11-03-openai-bug-bounty-bigger-rewards",
+    "title": "OpenAI：大幅提高安全漏洞赏金，最高 $172,000"
+   },
+   "heat": 7.7,
+   "trend": "down",
+   "trendPct": -15.4,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "The Decoder",
+    "OpenAI News"
+   ],
+   "participants": [
+    {
+     "name": "OpenAI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    15.6,
+    15.1,
+    14.7,
+    14.3,
+    13.9,
+    13.5,
+    13.1,
+    12.7,
+    12.4,
+    12.0,
+    11.7,
+    11.3,
+    11.0,
+    10.7,
+    10.4,
+    10.1,
+    9.8,
+    9.5,
+    9.3,
+    9.0,
+    8.7,
+    8.5,
+    8.3,
+    8.0,
+    7.8
+   ],
+   "summary": "官方：中高危奖励超四倍；核心危急最高 3 万，卓越危急加奖励可达 $172,000。",
+   "latest": "The Decoder：转述赏金上限约 $172,000。",
+   "cover": null,
+   "rankDelta": 0,
+   "heatDeltaPct": -10.5
+  },
+  {
+   "rank": 3,
+   "story": {
+    "publicId": "2026-11-02-openai-grid-protectors-program",
+    "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网"
+   },
+   "heat": 5.6,
+   "trend": "down",
+   "trendPct": -16.4,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "The Verge · AI",
+    "OpenAI News"
+   ],
+   "participants": [
+    {
+     "name": "OpenAI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    11.4,
+    11.1,
+    10.8,
+    10.5,
+    10.2,
+    9.9,
+    9.6,
+    9.3,
+    9.1,
+    8.8,
+    8.5,
+    8.3,
+    8.1,
+    7.8,
+    7.6,
+    7.4,
+    7.2,
+    7.0,
+    6.8,
+    6.6,
+    6.4,
+    6.2,
+    6.0,
+    5.9,
+    5.7
+   ],
+   "summary": null,
+   "latest": "The Verge：报道 OpenAI 以自建电厂/减载保护周边社区电网叙事。",
+   "cover": null,
+   "rankDelta": 0,
+   "heatDeltaPct": -11.1
+  }
+ ]
 }
