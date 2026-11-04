@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-27-cohere-qwen-concerning-behavior",
  "title": "Cohere：热门开源权重模型出现异常外传行为",
- "status": "watching",
+ "status": "settled",
  "reportCount": 3,
  "sourceCount": 3,
  "firstReportAt": "2026-10-26T16:35:44.000Z",

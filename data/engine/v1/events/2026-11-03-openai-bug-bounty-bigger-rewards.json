@@ -209,11 +209,36 @@
    "hour": "2026-11-03T19:00:00.000Z",
    "heat": 12.7,
    "participants": 2
+  },
+  {
+   "hour": "2026-11-03T20:00:00.000Z",
+   "heat": 12.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-03T21:00:00.000Z",
+   "heat": 12.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-03T22:00:00.000Z",
+   "heat": 11.7,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-03T23:00:00.000Z",
+   "heat": 11.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-04T00:00:00.000Z",
+   "heat": 11.0,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "OpenAI：漏洞赏金中高危翻倍，卓越危急最高约 $172,000",
  "primaryUrl": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
- "rankDelta": -1
+ "rankDelta": 0
 }

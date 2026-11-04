@@ -1,0 +1,238 @@
+{
+ "kind": "daily",
+ "key": "2026-11-04",
+ "issueNumber": 16,
+ "title": "AI日报 · 2026-11-04",
+ "generatedAt": "2026-11-04T00:37:32.000Z",
+ "lead": {
+  "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
+  "leadParagraph": "DeepMind 官方：为 Google Antigravity 推出 Cheminformatics Skills，约一小时内检索数千化合物并做匹配分子对分析、提出可合成刚性大环。"
+ },
+ "leadItemId": "sha256:23c4f130369cb972",
+ "overview": "DeepMind：Antigravity 化学信息学技能加速药物发现。",
+ "highlights": [
+  {
+   "itemId": "sha256:23c4f130369cb972",
+   "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
+   "summary": "DeepMind 官方：为 Google Antigravity 推出 Cheminformatics Skills，约一小时内检索数千化合物并做匹配分子对分析、提出可合成刚性大环。",
+   "sourceName": "Google DeepMind Blog",
+   "sourceUrl": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-11-03T17:01:49.000Z",
+   "available": true,
+   "otherSources": 1
+  },
+  {
+   "itemId": "sha256:bca108e4c77bd86b",
+   "title": "OpenAI：大幅提高安全漏洞赏金，最高 $172,000",
+   "summary": "OpenAI 官方：中高危奖励中位数超四倍；核心产品危急最高 3 万，卓越危急加奖励可达 $172,000；并推质量/忠诚乘数。",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-11-02T18:00:00.000Z",
+   "available": true,
+   "otherSources": 1
+  },
+  {
+   "itemId": "sha256:277870ffc8d71544",
+   "title": "OpenAI：Scaling Git at OpenAI（Pando）",
+   "summary": "OpenAI 官方：为 Codex 级开发规模构建 Git 兼容后端 Pando。",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/scaling-git-at-openai",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-11-02T15:30:00.000Z",
+   "available": true,
+   "otherSources": 0
+  },
+  {
+   "itemId": "sha256:4094d4340f9e66f9",
+   "title": "OpenAI：Qodo 把公司知识注入 Codex 做代码审阅",
+   "summary": "OpenAI 官方客户故事：Qodo 将规范与仓库上下文接入 Codex，在开 PR 前抓 P0 问题。",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/qodo-codex-plugin",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-11-02T00:00:00.000Z",
+   "available": true,
+   "otherSources": 0
+  }
+ ],
+ "sections": [
+  {
+   "label": "产品",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:23c4f130369cb972",
+     "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
+     "summary": "DeepMind 官方：为 Google Antigravity 推出 Cheminformatics Skills，约一小时内检索数千化合物并做匹配分子对分析、提出可合成刚性大环。",
+     "sourceName": "Google DeepMind Blog",
+     "sourceUrl": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-03T17:01:49.000Z",
+     "available": true,
+     "otherSources": 1
+    },
+    {
+     "itemId": "sha256:277870ffc8d71544",
+     "title": "OpenAI：Scaling Git at OpenAI（Pando）",
+     "summary": "OpenAI 官方：为 Codex 级开发规模构建 Git 兼容后端 Pando。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/scaling-git-at-openai",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-02T15:30:00.000Z",
+     "available": true,
+     "otherSources": 0
+    }
+   ]
+  },
+  {
+   "label": "行业",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:bca108e4c77bd86b",
+     "title": "OpenAI：大幅提高安全漏洞赏金，最高 $172,000",
+     "summary": "OpenAI 官方：中高危奖励中位数超四倍；核心产品危急最高 3 万，卓越危急加奖励可达 $172,000；并推质量/忠诚乘数。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-02T18:00:00.000Z",
+     "available": true,
+     "otherSources": 1
+    },
+    {
+     "itemId": "sha256:4094d4340f9e66f9",
+     "title": "OpenAI：Qodo 把公司知识注入 Codex 做代码审阅",
+     "summary": "OpenAI 官方客户故事：Qodo 将规范与仓库上下文接入 Codex，在开 PR 前抓 P0 问题。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/qodo-codex-plugin",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-02T00:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:5a014341bc3fc0f1",
+     "title": "OpenAI：发布 LifeVal，测 AI 协助日常事务的能力",
+     "summary": "OpenAI 官方：LifeVal 基准覆盖托儿、理财、政务表格等真实任务，衡量 AI 是否帮得上忙。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/lifeval",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-02T09:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    }
+   ]
+  }
+ ],
+ "flashes": [
+  {
+   "itemId": "sha256:34e7d62615202d0d",
+   "title": "OpenAI：Cisco 机器速度网络防御案例",
+   "summary": "OpenAI 官方案例；诚实分 59 近 T1 未过。",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/cisco-cyber",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-11-03T08:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:64e891378c13ac06",
+   "title": "报道：Fal 估值翻倍至 160 亿美元",
+   "summary": "TC：推理需求推高 Fal 估值；T2≪76。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-11-03T19:34:43.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:fa00b4f66d246a49",
+   "title": "报道：Anthropic 在研模型身份证明系统",
+   "summary": "TC：Anthropic 身份证明；T2 诚实分未过。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-11-03T22:41:03.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:32c42b1a9bd9b90f",
+   "title": "报道：数据中心改用旧航发应付电力等待",
+   "summary": "TC：电力排队→旧航发；线索。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-11-03T22:19:53.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:f7735096343ce811",
+   "title": "报道：美科技巨头隐性 AI 债务飙升",
+   "summary": "日经：隐性 AI 债务至约 3.2 万亿美元；线索。",
+   "sourceName": "Hacker News（AI 关键词 ≥100 分）",
+   "sourceUrl": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-11-03T21:26:44.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:7ae7ecb0a3914f39",
+   "title": "报道：GPT-6 Astra 一周内设计硬件",
+   "summary": "Decoder 二手；未过 T2。",
+   "sourceName": "The Decoder",
+   "sourceUrl": "https://the-decoder.com/openai-says-gpt-6-astra-designed-a-hardware-device-from-scratch-in-under-a-week/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-11-03T20:15:45.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:ec51e351ec2747a2",
+   "title": "报道：Siri AI 向第三方应用开放",
+   "summary": "Verge；T2 未过。",
+   "sourceName": "The Verge · AI",
+   "sourceUrl": "https://www.theverge.com/tech/1025694/apple-siri-ai-third-party-apps",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-11-03T20:16:17.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:4182359e79e632d3",
+   "title": "Anthropic：Claude Platform 发布说明（11-03）",
+   "summary": "例行发版说明；T1 诚实分 54 未过 60。",
+   "sourceName": "Claude Platform Release Notes",
+   "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview#november-3-2026",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-20T00:00:00.000Z",
+   "available": true
+  }
+ ],
+ "cover": null,
+ "metrics": {
+  "totalEvents": 5,
+  "sourcesCount": 4,
+  "firstPartyEvents": 5,
+  "modelsReleased": 0,
+  "mainCardNote": "今日仅 5 条达收录标准"
+ },
+ "readingMinutes": 1,
+ "prev": "2026-11-03",
+ "next": null
+}

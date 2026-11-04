@@ -14,7 +14,7 @@
  "latestReport": null,
  "whyHot": {
   "participants48h": 2,
-  "newParticipants6h": 2,
+  "newParticipants6h": 0,
   "recentReports24h": 2,
   "observationComplete": true,
   "rank": 1
@@ -89,10 +89,36 @@
    "hour": "2026-11-03T19:00:00.000Z",
    "heat": 19.0,
    "participants": 2
+  },
+  {
+   "hour": "2026-11-03T20:00:00.000Z",
+   "heat": 18.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-03T21:00:00.000Z",
+   "heat": 17.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-03T22:00:00.000Z",
+   "heat": 17.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-03T23:00:00.000Z",
+   "heat": 16.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-04T00:00:00.000Z",
+   "heat": 16.4,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "DeepMind：Antigravity 化学信息学技能加速药物发现",
- "primaryUrl": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/"
+ "primaryUrl": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+ "rankDelta": 0
 }
