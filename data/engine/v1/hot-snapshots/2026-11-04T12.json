@@ -1,0 +1,23 @@
+{
+ "computedAt": "2026-11-04T04:47:36.000Z",
+ "entries": [
+  {
+   "rank": 1,
+   "publicId": "2026-11-04-deepmind-antigravity-cheminformatics",
+   "heat": 14.3,
+   "participantCount": 2
+  },
+  {
+   "rank": 2,
+   "publicId": "2026-11-03-openai-bug-bounty-bigger-rewards",
+   "heat": 9.6,
+   "participantCount": 2
+  },
+  {
+   "rank": 3,
+   "publicId": "2026-11-02-openai-grid-protectors-program",
+   "heat": 7.0,
+   "participantCount": 2
+  }
+ ]
+}
