@@ -6,6 +6,52 @@
  },
  "cards": [
   {
+   "key": "sha256:a86d24c59c826150",
+   "anchorAt": "2026-10-30T09:00:00.000Z",
+   "item": {
+    "id": "sha256:a86d24c59c826150",
+    "title": "OpenAI：发布社区安全报告并加强青少年保护",
+    "summary": "OpenAI 官方安全政策与公开报告承诺；过闸。",
+    "reason": "OpenAI：社区安全报告并加强青少年保护",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-30T09:00:00.000Z",
+    "timelineAt": "2026-10-30T09:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-31-openai-teen-community-safety",
+    "originalUrl": "https://openai.com/index/community-safety-report-and-new-protections-for-teens"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:574dbaf7fc8731e4",
+   "anchorAt": "2026-10-30T00:00:00.000Z",
+   "item": {
+    "id": "sha256:574dbaf7fc8731e4",
+    "title": "OpenAI：合理使用惠及所有人",
+    "summary": "OpenAI 官方 fair use 政策阐述；过闸。",
+    "reason": "OpenAI：阐述合理使用如何惠及创作者与公众",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-30T00:00:00.000Z",
+    "timelineAt": "2026-10-30T00:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-31-openai-fair-use-benefits",
+    "originalUrl": "https://openai.com/index/fair-use-benefits-everyone"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:9349f418e7bc7ab4",
    "anchorAt": "2026-10-29T17:00:00.000Z",
    "item": {
@@ -484,58 +530,12 @@
      "sha256:e960e8891f7d7ad8"
     ]
    }
-  },
-  {
-   "key": "sha256:5ed14fffd1748be8",
-   "anchorAt": "2026-10-27T16:00:00.000Z",
-   "item": {
-    "id": "sha256:5ed14fffd1748be8",
-    "title": "NVIDIA：微调 Nemotron 以掌握本地规则而非仅本地语言",
-    "summary": "NVIDIA 介绍用法德人格数据集与行为契约微调 Nemotron 的后训练流程。",
-    "reason": "NVIDIA：用本地规则与人格数据微调 Nemotron",
-    "source": {
-     "name": "NVIDIA Technical Blog"
-    },
-    "publishedAt": "2026-10-27T16:00:00.000Z",
-    "timelineAt": "2026-10-27T16:00:00.000Z",
-    "category": "tutorial",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-28-nvidia-nemotron-local-rules",
-    "originalUrl": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:b836eb939c37ffa5",
-   "anchorAt": "2026-10-27T15:00:00.000Z",
-   "item": {
-    "id": "sha256:b836eb939c37ffa5",
-    "title": "NVIDIA：在 DGX Spark 上加速 MoE 推理的三种方法",
-    "summary": "NVIDIA 技术博客介绍 DGX Spark 上 MoE 推理的内核、量化与 speculative decoding 路径。",
-    "reason": "NVIDIA 给出 DGX Spark 上 MoE 推理三项加速路径",
-    "source": {
-     "name": "NVIDIA Technical Blog"
-    },
-    "publishedAt": "2026-10-27T15:00:00.000Z",
-    "timelineAt": "2026-10-27T15:00:00.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-27-nvidia-moe-dgx-spark-inference",
-    "originalUrl": "https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark/"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-3.json",
  "hot": null,
  "dayCounts": {},
  "page": 2,
- "pageCount": 5,
- "total": 99
+ "pageCount": 6,
+ "total": 101
 }

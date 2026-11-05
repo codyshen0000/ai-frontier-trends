@@ -269,6 +269,26 @@
    "hour": "2026-11-05T07:00:00.000Z",
    "heat": 6.7,
    "participants": 2
+  },
+  {
+   "hour": "2026-11-05T08:00:00.000Z",
+   "heat": 6.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-05T09:00:00.000Z",
+   "heat": 6.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-05T10:00:00.000Z",
+   "heat": 6.2,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-05T11:00:00.000Z",
+   "heat": 6.0,
+   "participants": 2
   }
  ],
  "related": [],

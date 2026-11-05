@@ -1,0 +1,29 @@
+{
+ "computedAt": "2026-11-05T11:38:00.000Z",
+ "entries": [
+  {
+   "rank": 1,
+   "publicId": "2026-11-05-chatgpt-animated-gifs",
+   "heat": 23.5,
+   "participantCount": 4
+  },
+  {
+   "rank": 2,
+   "publicId": "2026-11-05-openai-thousand-fewer-paths-to-root",
+   "heat": 12.1,
+   "participantCount": 2
+  },
+  {
+   "rank": 3,
+   "publicId": "2026-11-04-openai-acquire-pierre",
+   "heat": 11.6,
+   "participantCount": 2
+  },
+  {
+   "rank": 4,
+   "publicId": "2026-11-04-deepmind-antigravity-cheminformatics",
+   "heat": 5.9,
+   "participantCount": 2
+  }
+ ]
+}

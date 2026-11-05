@@ -8,6 +8,28 @@
  },
  "items": [
   {
+   "guid": "sha256:25fa4dd18ec78a48",
+   "title": "OpenAI：为负责任 AI 基建设立新标准（社区契约与算力园区政策蓝图）",
+   "summary": "OpenAI 官方：发布 National Community Compact 与 Compute Campus Policy Blueprint。",
+   "originalUrl": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+   "pubDate": "2026-11-05T02:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "industry",
+   "categoryLabel": "行业",
+   "eventPublicId": "2026-11-05-openai-responsible-ai-infrastructure"
+  },
+  {
+   "guid": "sha256:c65c7708e93995ca",
+   "title": "Hugging Face：Phonon 端侧 TTS 开源，小模型登 Open TTS 榜领先",
+   "summary": "HF 博客：Phonon 端侧 TTS 开源，Open TTS Leaderboard 多项领先。",
+   "originalUrl": "https://huggingface.co/blog/phonon-tts",
+   "pubDate": "2026-11-05T00:00:00.000Z",
+   "sourceName": "Hugging Face Blog",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-11-05-phonon-tts"
+  },
+  {
    "guid": "sha256:1be4fdd8e6ca80f0",
    "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
    "summary": "",
@@ -534,28 +556,6 @@
    "category": "product",
    "categoryLabel": "产品",
    "eventPublicId": "2026-10-27-nvidia-minerva-gpu-yield"
-  },
-  {
-   "guid": "sha256:c3d6fb64eb5418e8",
-   "title": "NVIDIA Mission Control 2.5：为 Kubernetes 带来自主恢复",
-   "summary": "NVIDIA 技术博客称 Mission Control 2.5 为 Kubernetes 集群带来自主恢复能力。",
-   "originalUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
-   "pubDate": "2026-10-26T15:00:00.000Z",
-   "sourceName": "NVIDIA Technical Blog",
-   "category": "product",
-   "categoryLabel": "产品",
-   "eventPublicId": "2026-10-27-nvidia-mission-control-25"
-  },
-  {
-   "guid": "sha256:8eb6001a836a6e50",
-   "title": "OpenAI：与学界共建科学理解",
-   "summary": "OpenAI 称与学术社区合作推进科学理解，并宣布多项科学相关进展。属官方通稿。",
-   "originalUrl": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
-   "pubDate": "2026-10-26T14:30:00.000Z",
-   "sourceName": "OpenAI News",
-   "category": "industry",
-   "categoryLabel": "行业",
-   "eventPublicId": "2026-10-27-openai-academic-science-collab"
   }
  ]
 }

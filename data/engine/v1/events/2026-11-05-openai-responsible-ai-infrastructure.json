@@ -1,0 +1,126 @@
+{
+ "publicId": "2026-11-05-openai-responsible-ai-infrastructure",
+ "title": "OpenAI：为负责任 AI 基建设立新标准（社区契约与算力园区政策蓝图）",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-11-05T02:00:00.000Z",
+ "latestAt": "2026-11-05T02:00:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "OpenAI 官方：发布 National Community Compact 与 Compute Campus Policy Blueprint，承诺自付能源成本、公开水电噪声影响、本地就业与可追责条款。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-11-05-openai-responsible-ai-infrastructure",
+   "title": "OpenAI：为负责任 AI 基建设立新标准（社区契约与算力园区政策蓝图）",
+   "firstReportAt": "2026-11-05T02:00:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:25fa4dd18ec78a48",
+    "title": "OpenAI：为负责任 AI 基建设立新标准（社区契约与算力园区政策蓝图）",
+    "summary": "OpenAI 官方：发布 National Community Compact 与 Compute Campus Policy Blueprint。",
+    "source": {
+     "name": "OpenAI News",
+     "firstParty": true
+    },
+    "publishedAt": "2026-11-05T02:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:25fa4dd18ec78a48",
+   "title": "OpenAI：为负责任 AI 基建设立新标准（社区契约与算力园区政策蓝图）",
+   "summary": "OpenAI 官方：发布 National Community Compact 与 Compute Campus Policy Blueprint。",
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-05T02:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:25fa4dd18ec78a48",
+   "title": "OpenAI：为负责任 AI 基建设立新标准（社区契约与算力园区政策蓝图）",
+   "summary": "OpenAI 官方：发布 National Community Compact 与 Compute Campus Policy Blueprint。",
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-05T02:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-11-05T02:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T03:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T04:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T05:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T06:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T07:00:00.000Z",
+   "heat": 8.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T08:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T09:00:00.000Z",
+   "heat": 8.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T10:00:00.000Z",
+   "heat": 7.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T11:00:00.000Z",
+   "heat": 7.7,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "OpenAI：发布负责任 AI 基建社区契约与算力园区政策蓝图",
+ "primaryUrl": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure"
+}

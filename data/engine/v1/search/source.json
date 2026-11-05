@@ -1,6 +1,29 @@
 {
- "generatedAt": "2026-11-05T07:58:00.000Z",
+ "generatedAt": "2026-11-05T11:38:00.000Z",
  "docs": [
+  {
+   "id": "sha256:25fa4dd18ec78a48",
+   "kind": "item",
+   "title": "OpenAI：为负责任 AI 基建设立新标准（社区契约与算力园区政策蓝图）",
+   "summary": "OpenAI 官方：发布 National Community Compact 与 Compute Campus Policy Blueprint。",
+   "publishedAt": "2026-11-05T02:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "industry",
+   "selected": true,
+   "eventPublicId": "2026-11-05-openai-responsible-ai-infrastructure",
+   "originalUrl": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure"
+  },
+  {
+   "id": "2026-11-05-openai-responsible-ai-infrastructure",
+   "kind": "event",
+   "title": "OpenAI：为负责任 AI 基建设立新标准（社区契约与算力园区政策蓝图）",
+   "summary": "OpenAI 官方：发布 National Community Compact 与 Compute Campus Policy Blueprint，承诺自付能源成本、公开水电噪声影响、本地就业与可追责条款。",
+   "publishedAt": "2026-11-05T02:00:00.000Z",
+   "sourceNames": [
+    "OpenAI News"
+   ],
+   "path": "/events/2026-11-05-openai-responsible-ai-infrastructure/"
+  },
   {
    "id": "sha256:956920c75bf306b4",
    "kind": "item",
@@ -88,6 +111,29 @@
    "selected": false,
    "eventPublicId": "2026-10-24-kimi-k31-pro",
    "originalUrl": "https://www.ithome.com/1/022/490.htm"
+  },
+  {
+   "id": "sha256:c65c7708e93995ca",
+   "kind": "item",
+   "title": "Hugging Face：Phonon 端侧 TTS 开源，小模型登 Open TTS 榜领先",
+   "summary": "HF 博客：Phonon 端侧 TTS 开源，Open TTS Leaderboard 多项领先。",
+   "publishedAt": "2026-11-05T00:00:00.000Z",
+   "sourceName": "Hugging Face Blog",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-11-05-phonon-tts",
+   "originalUrl": "https://huggingface.co/blog/phonon-tts"
+  },
+  {
+   "id": "2026-11-05-phonon-tts",
+   "kind": "event",
+   "title": "Hugging Face：Phonon 端侧 TTS 开源，小模型登 Open TTS 榜领先",
+   "summary": "HF 博客：Gradium Phonon 端侧 TTS（约 65–75MB）开源；Phonon 31m Apache 2.0；多语与克隆；Open TTS Leaderboard 多项领先。",
+   "publishedAt": "2026-11-05T00:00:00.000Z",
+   "sourceNames": [
+    "Hugging Face Blog"
+   ],
+   "path": "/events/2026-11-05-phonon-tts/"
   },
   {
    "id": "sha256:60b49bd40bcd399c",

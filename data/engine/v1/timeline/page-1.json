@@ -6,6 +6,52 @@
  },
  "cards": [
   {
+   "key": "sha256:25fa4dd18ec78a48",
+   "anchorAt": "2026-11-05T02:00:00.000Z",
+   "item": {
+    "id": "sha256:25fa4dd18ec78a48",
+    "title": "OpenAI：为负责任 AI 基建设立新标准（社区契约与算力园区政策蓝图）",
+    "summary": "OpenAI 官方：发布 National Community Compact 与 Compute Campus Policy Blueprint。",
+    "reason": "OpenAI：发布负责任 AI 基建社区契约与算力园区政策蓝图",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-11-05T02:00:00.000Z",
+    "timelineAt": "2026-11-05T02:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-05-openai-responsible-ai-infrastructure",
+    "originalUrl": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:c65c7708e93995ca",
+   "anchorAt": "2026-11-05T00:00:00.000Z",
+   "item": {
+    "id": "sha256:c65c7708e93995ca",
+    "title": "Hugging Face：Phonon 端侧 TTS 开源，小模型登 Open TTS 榜领先",
+    "summary": "HF 博客：Phonon 端侧 TTS 开源，Open TTS Leaderboard 多项领先。",
+    "reason": "Hugging Face：Phonon 端侧 TTS 开源，小模型登榜领先",
+    "source": {
+     "name": "Hugging Face Blog"
+    },
+    "publishedAt": "2026-11-05T00:00:00.000Z",
+    "timelineAt": "2026-11-05T00:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-05-phonon-tts",
+    "originalUrl": "https://huggingface.co/blog/phonon-tts"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:1be4fdd8e6ca80f0",
    "anchorAt": "2026-11-04T14:30:00.000Z",
    "item": {
@@ -503,52 +549,6 @@
      "sha256:84abd1857de5dfd9"
     ]
    }
-  },
-  {
-   "key": "sha256:a86d24c59c826150",
-   "anchorAt": "2026-10-30T09:00:00.000Z",
-   "item": {
-    "id": "sha256:a86d24c59c826150",
-    "title": "OpenAI：发布社区安全报告并加强青少年保护",
-    "summary": "OpenAI 官方安全政策与公开报告承诺；过闸。",
-    "reason": "OpenAI：社区安全报告并加强青少年保护",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-30T09:00:00.000Z",
-    "timelineAt": "2026-10-30T09:00:00.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-31-openai-teen-community-safety",
-    "originalUrl": "https://openai.com/index/community-safety-report-and-new-protections-for-teens"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:574dbaf7fc8731e4",
-   "anchorAt": "2026-10-30T00:00:00.000Z",
-   "item": {
-    "id": "sha256:574dbaf7fc8731e4",
-    "title": "OpenAI：合理使用惠及所有人",
-    "summary": "OpenAI 官方 fair use 政策阐述；过闸。",
-    "reason": "OpenAI：阐述合理使用如何惠及创作者与公众",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-30T00:00:00.000Z",
-    "timelineAt": "2026-10-30T00:00:00.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-31-openai-fair-use-benefits",
-    "originalUrl": "https://openai.com/index/fair-use-benefits-everyone"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-2.json",
@@ -556,8 +556,8 @@
   {
    "rank": 1,
    "title": "OpenAI：推出 Images 2.6（更快生成、GIF、精细编辑与 API 控制）",
-   "heat": 26.1,
-   "trend": "up",
+   "heat": 23.5,
+   "trend": "down",
    "storyPublicId": "2026-11-05-chatgpt-animated-gifs",
    "itemId": "sha256:295354ff422b0d4d",
    "participants": [
@@ -583,7 +583,7 @@
   {
    "rank": 2,
    "title": "OpenAI：少一千条通往 root 的路径（自主发现并修补 948 个 Linux 提权漏洞）",
-   "heat": 13.4,
+   "heat": 12.1,
    "trend": "down",
    "storyPublicId": "2026-11-05-openai-thousand-fewer-paths-to-root",
    "itemId": "sha256:fbaa86a829ad59fd",
@@ -602,7 +602,7 @@
   {
    "rank": 3,
    "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
-   "heat": 12.9,
+   "heat": 11.6,
    "trend": "down",
    "storyPublicId": "2026-11-04-openai-acquire-pierre",
    "itemId": "sha256:1be4fdd8e6ca80f0",
@@ -621,7 +621,7 @@
   {
    "rank": 4,
    "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
-   "heat": 6.5,
+   "heat": 5.9,
    "trend": "down",
    "storyPublicId": "2026-11-04-deepmind-antigravity-cheminformatics",
    "itemId": "sha256:23c4f130369cb972",
@@ -639,6 +639,7 @@
   }
  ],
  "dayCounts": {
+  "2026-11-05": 2,
   "2026-11-04": 5,
   "2026-11-03": 1,
   "2026-11-02": 4,
@@ -659,6 +660,6 @@
   "2026-10-17": 1
  },
  "page": 1,
- "pageCount": 5,
- "total": 99
+ "pageCount": 6,
+ "total": 101
 }
