@@ -2,10 +2,10 @@
  "publicId": "2026-11-05-openai-thousand-fewer-paths-to-root",
  "title": "OpenAI：少一千条通往 root 的路径（自主发现并修补 948 个 Linux 提权漏洞）",
  "status": "active",
- "reportCount": 1,
- "sourceCount": 1,
+ "reportCount": 2,
+ "sourceCount": 2,
  "firstReportAt": "2026-11-04T08:00:00.000Z",
- "latestAt": "2026-11-04T08:00:00.000Z",
+ "latestAt": "2026-11-05T01:54:44.000Z",
  "digest": null,
  "digestUpdatedAt": null,
  "summary": "OpenAI 官方：自主流水线发现、验证并为 Linux 内核本地提权漏洞生成补丁，共 948 个。",
@@ -13,18 +13,18 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 1,
-  "newParticipants6h": 0,
-  "recentReports24h": 1,
+  "participants48h": 2,
+  "newParticipants6h": 1,
+  "recentReports24h": 2,
   "observationComplete": true,
-  "rank": null
+  "rank": 2
  },
  "developments": [
   {
    "factId": "fact-2026-11-05-openai-thousand-fewer-paths-to-root",
    "title": "OpenAI：少一千条通往 root 的路径（自主发现并修补 948 个 Linux 提权漏洞）",
    "firstReportAt": "2026-11-04T08:00:00.000Z",
-   "reportCount": 1,
+   "reportCount": 2,
    "representative": {
     "id": "sha256:fbaa86a829ad59fd",
     "title": "OpenAI：少一千条通往 root 的路径（自主发现并修补 948 个 Linux 提权漏洞）",
@@ -54,6 +54,18 @@
   }
  ],
  "timeline": [
+  {
+   "id": "sha256:4e335c2246d1195a",
+   "title": "报道：Linux 内核挖出 948 个漏洞（OpenAI 花费语境）",
+   "summary": "量子位：转述 OpenAI 自主发现 948 个 Linux 提权漏洞；二手并入既有。",
+   "source": {
+    "name": "量子位",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-05T01:54:44.000Z",
+   "selected": false,
+   "originalUrl": "https://www.qbitai.com/2026/11/507697.html"
+  },
   {
    "id": "sha256:fbaa86a829ad59fd",
    "title": "OpenAI：少一千条通往 root 的路径（自主发现并修补 948 个 Linux 提权漏洞）",
@@ -152,6 +164,26 @@
    "hour": "2026-11-05T00:00:00.000Z",
    "heat": 6.3,
    "participants": 1
+  },
+  {
+   "hour": "2026-11-05T01:00:00.000Z",
+   "heat": 6.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T02:00:00.000Z",
+   "heat": 15.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-05T03:00:00.000Z",
+   "heat": 15.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-05T04:00:00.000Z",
+   "heat": 15.0,
+   "participants": 2
   }
  ],
  "related": [],

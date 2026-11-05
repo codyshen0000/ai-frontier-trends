@@ -1,0 +1,221 @@
+{
+ "publicId": "2026-11-05-vllm-kinference",
+ "title": "vLLM：开源 Kinference——面向 vLLM 与 Kubernetes 的推理控制平面",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-11-04T00:00:00.000Z",
+ "latestAt": "2026-11-04T00:00:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "vLLM 官方博客：发布开源 Kinference，作为 vLLM 与 Kubernetes 的推理控制平面。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 0,
+  "recentReports24h": 0,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-11-05-vllm-kinference",
+   "title": "vLLM：开源 Kinference——面向 vLLM 与 Kubernetes 的推理控制平面",
+   "firstReportAt": "2026-11-04T00:00:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:2aca440b2c0823d7",
+    "title": "vLLM：开源 Kinference——面向 vLLM 与 Kubernetes 的推理控制平面",
+    "summary": "vLLM 官方博客：发布开源 Kinference，作为 vLLM 与 Kubernetes 的推理控制平面。",
+    "source": {
+     "name": "vLLM Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-11-04T00:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://vllm.ai/blog/2026-11-04-introducing-kinference"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:2aca440b2c0823d7",
+   "title": "vLLM：开源 Kinference——面向 vLLM 与 Kubernetes 的推理控制平面",
+   "summary": "vLLM 官方博客：发布开源 Kinference，作为 vLLM 与 Kubernetes 的推理控制平面。",
+   "source": {
+    "name": "vLLM Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-04T00:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://vllm.ai/blog/2026-11-04-introducing-kinference"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:2aca440b2c0823d7",
+   "title": "vLLM：开源 Kinference——面向 vLLM 与 Kubernetes 的推理控制平面",
+   "summary": "vLLM 官方博客：发布开源 Kinference，作为 vLLM 与 Kubernetes 的推理控制平面。",
+   "source": {
+    "name": "vLLM Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-04T00:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://vllm.ai/blog/2026-11-04-introducing-kinference"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-11-04T00:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-04T01:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-04T02:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-04T03:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-04T04:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-04T05:00:00.000Z",
+   "heat": 8.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-04T06:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-04T07:00:00.000Z",
+   "heat": 8.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-04T08:00:00.000Z",
+   "heat": 7.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-04T09:00:00.000Z",
+   "heat": 7.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-04T10:00:00.000Z",
+   "heat": 7.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-04T11:00:00.000Z",
+   "heat": 7.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-04T12:00:00.000Z",
+   "heat": 7.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-04T13:00:00.000Z",
+   "heat": 6.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-04T14:00:00.000Z",
+   "heat": 6.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-04T15:00:00.000Z",
+   "heat": 6.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-04T16:00:00.000Z",
+   "heat": 6.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-04T17:00:00.000Z",
+   "heat": 6.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-04T18:00:00.000Z",
+   "heat": 5.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-04T19:00:00.000Z",
+   "heat": 5.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-04T20:00:00.000Z",
+   "heat": 5.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-04T21:00:00.000Z",
+   "heat": 5.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-04T22:00:00.000Z",
+   "heat": 5.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-04T23:00:00.000Z",
+   "heat": 5.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T00:00:00.000Z",
+   "heat": 5.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T01:00:00.000Z",
+   "heat": 4.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T02:00:00.000Z",
+   "heat": 4.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T03:00:00.000Z",
+   "heat": 4.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T04:00:00.000Z",
+   "heat": 4.5,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "vLLM：开源 Kinference 推理控制平面",
+ "primaryUrl": "https://vllm.ai/blog/2026-11-04-introducing-kinference"
+}

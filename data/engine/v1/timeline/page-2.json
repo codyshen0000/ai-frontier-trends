@@ -6,6 +6,36 @@
  },
  "cards": [
   {
+   "key": "sha256:9349f418e7bc7ab4",
+   "anchorAt": "2026-10-29T17:00:00.000Z",
+   "item": {
+    "id": "sha256:9349f418e7bc7ab4",
+    "title": "OpenAI 更新 Model Spec：五条核心价值",
+    "summary": "OpenAI 发布更新版 Model Spec，概述五条核心价值，引导更强模型在判断力、人类能动性与忠实人类意图上的行为。官方对齐规范。",
+    "reason": "OpenAI 更新 Model Spec：五条核心价值引导更强模型",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-29T17:00:00.000Z",
+    "timelineAt": "2026-10-29T17:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-30-openai-updated-model-spec",
+    "originalUrl": "https://openai.com/index/updated-model-spec"
+   },
+   "group": {
+    "factId": "fact-2026-10-30-openai-updated-model-spec",
+    "additionalSourceCount": 2,
+    "reportCount": 3,
+    "memberIds": [
+     "sha256:9349f418e7bc7ab4"
+    ]
+   }
+  },
+  {
    "key": "sha256:f7a1020f473102a5",
    "anchorAt": "2026-10-29T14:36:22.000Z",
    "item": {
@@ -500,29 +530,6 @@
     "originalUrl": "https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark/"
    },
    "group": null
-  },
-  {
-   "key": "sha256:257d2044442d252a",
-   "anchorAt": "2026-10-27T13:00:00.000Z",
-   "item": {
-    "id": "sha256:257d2044442d252a",
-    "title": "Opera 推出 WebAI：浏览器本地部署 AI",
-    "summary": "TechCrunch 报道 Opera 提出 WebAI，让用户在浏览器本地部署 AI；一手见 Opera 博客。",
-    "reason": "Opera 提出 WebAI，浏览器内本地运行 AI 模型",
-    "source": {
-     "name": "TechCrunch · AI"
-    },
-    "publishedAt": "2026-10-27T13:00:00.000Z",
-    "timelineAt": "2026-10-27T13:00:00.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-27-opera-webai-local",
-    "originalUrl": "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-3.json",
@@ -530,5 +537,5 @@
  "dayCounts": {},
  "page": 2,
  "pageCount": 5,
- "total": 98
+ "total": 99
 }

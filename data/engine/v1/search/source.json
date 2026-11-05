@@ -1,6 +1,82 @@
 {
- "generatedAt": "2026-11-05T00:40:00.000Z",
+ "generatedAt": "2026-11-05T04:34:00.000Z",
  "docs": [
+  {
+   "id": "sha256:956920c75bf306b4",
+   "kind": "item",
+   "title": "报道：GPT-Image-2.6 全量上线，直出 GIF/SVG",
+   "summary": null,
+   "publishedAt": "2026-11-05T01:59:37.000Z",
+   "sourceName": "量子位",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-11-05-chatgpt-animated-gifs",
+   "originalUrl": "https://www.qbitai.com/2026/11/507707.html"
+  },
+  {
+   "id": "2026-11-05-chatgpt-animated-gifs",
+   "kind": "event",
+   "title": "OpenAI：推出 Images 2.6（更快生成、GIF、精细编辑与 API 控制）",
+   "summary": "OpenAI 官方：Images 2.6 带来更快生图、GIF 创作、更精确编辑，并在 ChatGPT/Codex/API 提供新控制项。",
+   "publishedAt": "2026-11-05T01:59:37.000Z",
+   "sourceNames": [
+    "OpenAI News",
+    "The Decoder",
+    "The Verge · AI",
+    "量子位"
+   ],
+   "path": "/events/2026-11-05-chatgpt-animated-gifs/"
+  },
+  {
+   "id": "sha256:4e335c2246d1195a",
+   "kind": "item",
+   "title": "报道：Linux 内核挖出 948 个漏洞（OpenAI 花费语境）",
+   "summary": "量子位：转述 OpenAI 自主发现 948 个 Linux 提权漏洞；二手并入既有。",
+   "publishedAt": "2026-11-05T01:54:44.000Z",
+   "sourceName": "量子位",
+   "category": "paper",
+   "selected": false,
+   "eventPublicId": "2026-11-05-openai-thousand-fewer-paths-to-root",
+   "originalUrl": "https://www.qbitai.com/2026/11/507697.html"
+  },
+  {
+   "id": "2026-11-05-openai-thousand-fewer-paths-to-root",
+   "kind": "event",
+   "title": "OpenAI：少一千条通往 root 的路径（自主发现并修补 948 个 Linux 提权漏洞）",
+   "summary": "OpenAI 官方：自主流水线发现、验证并为 Linux 内核本地提权漏洞生成补丁，共 948 个。",
+   "publishedAt": "2026-11-05T01:54:44.000Z",
+   "sourceNames": [
+    "OpenAI News",
+    "量子位"
+   ],
+   "path": "/events/2026-11-05-openai-thousand-fewer-paths-to-root/"
+  },
+  {
+   "id": "sha256:51ece6cc0a6609b6",
+   "kind": "item",
+   "title": "报道：华为昇腾 0 Day 支持 Kimi K3.1 Pro 推理部署",
+   "summary": "IT之家：华为宣布昇腾 0 Day 支持 Kimi K3.1 Pro 推理；并入既有 Kimi 线，未 hop 假一手。",
+   "publishedAt": "2026-11-05T00:45:14.000Z",
+   "sourceName": "IT之家（全站，需关键词过滤）",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-10-24-kimi-k31-pro",
+   "originalUrl": "https://www.ithome.com/1/022/502.htm"
+  },
+  {
+   "id": "2026-10-24-kimi-k31-pro",
+   "kind": "event",
+   "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
+   "summary": "Artificial Analysis：Kimi K3.1 Pro 智能指数 55（较 K3 升 11 分），暂列第四，落后 Claude Opus 5.5 等；智能体与终端基准提升明显。参数仍约 2.8T/104B 激活、百万上下文；权重尚未放出，评测方预计开源后将成为领先开源权重模型之一。",
+   "publishedAt": "2026-11-05T00:45:14.000Z",
+   "sourceNames": [
+    "IT之家（全站，需关键词过滤）",
+    "Latent Space",
+    "Simon Willison",
+    "The Decoder"
+   ],
+   "path": "/events/2026-10-24-kimi-k31-pro/"
+  },
   {
    "id": "sha256:6b991b90f516ac64",
    "kind": "item",
@@ -14,20 +90,6 @@
    "originalUrl": "https://www.ithome.com/1/022/490.htm"
   },
   {
-   "id": "2026-10-24-kimi-k31-pro",
-   "kind": "event",
-   "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
-   "summary": "Artificial Analysis：Kimi K3.1 Pro 智能指数 55（较 K3 升 11 分），暂列第四，落后 Claude Opus 5.5 等；智能体与终端基准提升明显。参数仍约 2.8T/104B 激活、百万上下文；权重尚未放出，评测方预计开源后将成为领先开源权重模型之一。",
-   "publishedAt": "2026-11-05T00:00:15.000Z",
-   "sourceNames": [
-    "IT之家（全站，需关键词过滤）",
-    "Latent Space",
-    "Simon Willison",
-    "The Decoder"
-   ],
-   "path": "/events/2026-10-24-kimi-k31-pro/"
-  },
-  {
    "id": "sha256:60b49bd40bcd399c",
    "kind": "item",
    "title": "报道：ChatGPT 可用 Images 2.6 把文字/照片做成动画 GIF",
@@ -38,19 +100,6 @@
    "selected": false,
    "eventPublicId": "2026-11-05-chatgpt-animated-gifs",
    "originalUrl": "https://the-decoder.com/chatgpt-can-now-turn-text-prompts-and-photos-into-animated-gifs-with-openais-images-2-6-model/"
-  },
-  {
-   "id": "2026-11-05-chatgpt-animated-gifs",
-   "kind": "event",
-   "title": "OpenAI：推出 Images 2.6（更快生成、GIF、精细编辑与 API 控制）",
-   "summary": "OpenAI 官方：Images 2.6 带来更快生图、GIF 创作、更精确编辑，并在 ChatGPT/Codex/API 提供新控制项。",
-   "publishedAt": "2026-11-04T19:44:20.000Z",
-   "sourceNames": [
-    "OpenAI News",
-    "The Decoder",
-    "The Verge · AI"
-   ],
-   "path": "/events/2026-11-05-chatgpt-animated-gifs/"
   },
   {
    "id": "sha256:6f4b50073285632d",
@@ -113,15 +162,16 @@
    "originalUrl": "https://openai.com/index/a-thousand-fewer-paths-to-root"
   },
   {
-   "id": "2026-11-05-openai-thousand-fewer-paths-to-root",
-   "kind": "event",
-   "title": "OpenAI：少一千条通往 root 的路径（自主发现并修补 948 个 Linux 提权漏洞）",
-   "summary": "OpenAI 官方：自主流水线发现、验证并为 Linux 内核本地提权漏洞生成补丁，共 948 个。",
-   "publishedAt": "2026-11-04T08:00:00.000Z",
-   "sourceNames": [
-    "OpenAI News"
-   ],
-   "path": "/events/2026-11-05-openai-thousand-fewer-paths-to-root/"
+   "id": "sha256:2aca440b2c0823d7",
+   "kind": "item",
+   "title": "vLLM：开源 Kinference——面向 vLLM 与 Kubernetes 的推理控制平面",
+   "summary": "vLLM 官方博客：发布开源 Kinference，作为 vLLM 与 Kubernetes 的推理控制平面。",
+   "publishedAt": "2026-11-04T00:00:00.000Z",
+   "sourceName": "vLLM Blog",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-11-05-vllm-kinference",
+   "originalUrl": "https://vllm.ai/blog/2026-11-04-introducing-kinference"
   },
   {
    "id": "sha256:295354ff422b0d4d",
@@ -134,6 +184,17 @@
    "selected": true,
    "eventPublicId": "2026-11-05-chatgpt-animated-gifs",
    "originalUrl": "https://openai.com/index/introducing-images-2-6"
+  },
+  {
+   "id": "2026-11-05-vllm-kinference",
+   "kind": "event",
+   "title": "vLLM：开源 Kinference——面向 vLLM 与 Kubernetes 的推理控制平面",
+   "summary": "vLLM 官方博客：发布开源 Kinference，作为 vLLM 与 Kubernetes 的推理控制平面。",
+   "publishedAt": "2026-11-04T00:00:00.000Z",
+   "sourceNames": [
+    "vLLM Blog"
+   ],
+   "path": "/events/2026-11-05-vllm-kinference/"
   },
   {
    "id": "sha256:e795c34623c8a94d",

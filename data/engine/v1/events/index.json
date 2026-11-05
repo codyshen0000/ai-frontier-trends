@@ -1,30 +1,37 @@
 {
  "events": [
   {
-   "publicId": "2026-10-24-kimi-k31-pro",
-   "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
-   "latestAt": "2026-11-05T00:00:15.000Z",
-   "reportCount": 4,
-   "hotRank": null
-  },
-  {
    "publicId": "2026-11-05-chatgpt-animated-gifs",
    "title": "OpenAI：推出 Images 2.6（更快生成、GIF、精细编辑与 API 控制）",
-   "latestAt": "2026-11-04T19:44:20.000Z",
-   "reportCount": 3,
+   "latestAt": "2026-11-05T01:59:37.000Z",
+   "reportCount": 4,
    "hotRank": 1
+  },
+  {
+   "publicId": "2026-11-05-openai-thousand-fewer-paths-to-root",
+   "title": "OpenAI：少一千条通往 root 的路径（自主发现并修补 948 个 Linux 提权漏洞）",
+   "latestAt": "2026-11-05T01:54:44.000Z",
+   "reportCount": 2,
+   "hotRank": 2
+  },
+  {
+   "publicId": "2026-10-24-kimi-k31-pro",
+   "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
+   "latestAt": "2026-11-05T00:45:14.000Z",
+   "reportCount": 5,
+   "hotRank": null
   },
   {
    "publicId": "2026-11-04-openai-acquire-pierre",
    "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
    "latestAt": "2026-11-04T18:41:03.000Z",
    "reportCount": 2,
-   "hotRank": 2
+   "hotRank": 3
   },
   {
-   "publicId": "2026-11-05-openai-thousand-fewer-paths-to-root",
-   "title": "OpenAI：少一千条通往 root 的路径（自主发现并修补 948 个 Linux 提权漏洞）",
-   "latestAt": "2026-11-04T08:00:00.000Z",
+   "publicId": "2026-11-05-vllm-kinference",
+   "title": "vLLM：开源 Kinference——面向 vLLM 与 Kubernetes 的推理控制平面",
+   "latestAt": "2026-11-04T00:00:00.000Z",
    "reportCount": 1,
    "hotRank": null
   },
@@ -33,7 +40,7 @@
    "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
    "latestAt": "2026-11-03T17:19:56.000Z",
    "reportCount": 2,
-   "hotRank": 3
+   "hotRank": 4
   },
   {
    "publicId": "2026-11-03-openai-bug-bounty-bigger-rewards",

@@ -56,6 +56,36 @@
     "storyPublicId": "2026-11-05-openai-thousand-fewer-paths-to-root",
     "originalUrl": "https://openai.com/index/a-thousand-fewer-paths-to-root"
    },
+   "group": {
+    "factId": "fact-2026-11-05-openai-thousand-fewer-paths-to-root",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:fbaa86a829ad59fd"
+    ]
+   }
+  },
+  {
+   "key": "sha256:2aca440b2c0823d7",
+   "anchorAt": "2026-11-04T00:00:00.000Z",
+   "item": {
+    "id": "sha256:2aca440b2c0823d7",
+    "title": "vLLM：开源 Kinference——面向 vLLM 与 Kubernetes 的推理控制平面",
+    "summary": "vLLM 官方博客：发布开源 Kinference，作为 vLLM 与 Kubernetes 的推理控制平面。",
+    "reason": "vLLM：开源 Kinference 推理控制平面",
+    "source": {
+     "name": "vLLM Blog"
+    },
+    "publishedAt": "2026-11-04T00:00:00.000Z",
+    "timelineAt": "2026-11-04T00:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-05-vllm-kinference",
+    "originalUrl": "https://vllm.ai/blog/2026-11-04-introducing-kinference"
+   },
    "group": null
   },
   {
@@ -81,8 +111,8 @@
    },
    "group": {
     "factId": "fact-2026-11-05-chatgpt-animated-gifs",
-    "additionalSourceCount": 2,
-    "reportCount": 3,
+    "additionalSourceCount": 3,
+    "reportCount": 4,
     "memberIds": [
      "sha256:295354ff422b0d4d"
     ]
@@ -519,36 +549,6 @@
     "originalUrl": "https://openai.com/index/fair-use-benefits-everyone"
    },
    "group": null
-  },
-  {
-   "key": "sha256:9349f418e7bc7ab4",
-   "anchorAt": "2026-10-29T17:00:00.000Z",
-   "item": {
-    "id": "sha256:9349f418e7bc7ab4",
-    "title": "OpenAI 更新 Model Spec：五条核心价值",
-    "summary": "OpenAI 发布更新版 Model Spec，概述五条核心价值，引导更强模型在判断力、人类能动性与忠实人类意图上的行为。官方对齐规范。",
-    "reason": "OpenAI 更新 Model Spec：五条核心价值引导更强模型",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-29T17:00:00.000Z",
-    "timelineAt": "2026-10-29T17:00:00.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-30-openai-updated-model-spec",
-    "originalUrl": "https://openai.com/index/updated-model-spec"
-   },
-   "group": {
-    "factId": "fact-2026-10-30-openai-updated-model-spec",
-    "additionalSourceCount": 2,
-    "reportCount": 3,
-    "memberIds": [
-     "sha256:9349f418e7bc7ab4"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-2.json",
@@ -556,13 +556,17 @@
   {
    "rank": 1,
    "title": "OpenAI：推出 Images 2.6（更快生成、GIF、精细编辑与 API 控制）",
-   "heat": 21.8,
+   "heat": 28.8,
    "trend": "up",
    "storyPublicId": "2026-11-05-chatgpt-animated-gifs",
    "itemId": "sha256:295354ff422b0d4d",
    "participants": [
     {
      "name": "OpenAI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "量子位",
      "kind": "editorial"
     },
     {
@@ -574,13 +578,32 @@
      "kind": "editorial"
     }
    ],
-   "participantCount": 3
+   "participantCount": 4
   },
   {
    "rank": 2,
-   "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
-   "heat": 15.9,
+   "title": "OpenAI：少一千条通往 root 的路径（自主发现并修补 948 个 Linux 提权漏洞）",
+   "heat": 14.8,
    "trend": "up",
+   "storyPublicId": "2026-11-05-openai-thousand-fewer-paths-to-root",
+   "itemId": "sha256:fbaa86a829ad59fd",
+   "participants": [
+    {
+     "name": "OpenAI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "量子位",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2
+  },
+  {
+   "rank": 3,
+   "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
+   "heat": 14.2,
+   "trend": "down",
    "storyPublicId": "2026-11-04-openai-acquire-pierre",
    "itemId": "sha256:1be4fdd8e6ca80f0",
    "participants": [
@@ -596,9 +619,9 @@
    "participantCount": 2
   },
   {
-   "rank": 3,
+   "rank": 4,
    "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
-   "heat": 8.1,
+   "heat": 7.2,
    "trend": "down",
    "storyPublicId": "2026-11-04-deepmind-antigravity-cheminformatics",
    "itemId": "sha256:23c4f130369cb972",
@@ -616,7 +639,7 @@
   }
  ],
  "dayCounts": {
-  "2026-11-04": 4,
+  "2026-11-04": 5,
   "2026-11-03": 1,
   "2026-11-02": 4,
   "2026-11-01": 2,
@@ -637,5 +660,5 @@
  },
  "page": 1,
  "pageCount": 5,
- "total": 98
+ "total": 99
 }

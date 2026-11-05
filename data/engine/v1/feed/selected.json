@@ -30,6 +30,17 @@
    "eventPublicId": "2026-11-05-openai-thousand-fewer-paths-to-root"
   },
   {
+   "guid": "sha256:2aca440b2c0823d7",
+   "title": "vLLM：开源 Kinference——面向 vLLM 与 Kubernetes 的推理控制平面",
+   "summary": "vLLM 官方博客：发布开源 Kinference，作为 vLLM 与 Kubernetes 的推理控制平面。",
+   "originalUrl": "https://vllm.ai/blog/2026-11-04-introducing-kinference",
+   "pubDate": "2026-11-04T00:00:00.000Z",
+   "sourceName": "vLLM Blog",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-11-05-vllm-kinference"
+  },
+  {
    "guid": "sha256:295354ff422b0d4d",
    "title": "OpenAI：推出 Images 2.6（更快生成、GIF、精细编辑与 API 控制）",
    "summary": "OpenAI 官方：Images 2.6 带来更快生图、GIF 创作、更精确编辑，并在 ChatGPT/Codex/API 提供新控制项。",
@@ -545,17 +556,6 @@
    "category": "industry",
    "categoryLabel": "行业",
    "eventPublicId": "2026-10-27-openai-academic-science-collab"
-  },
-  {
-   "guid": "sha256:35e334c198740f74",
-   "title": "OpenAI 发布 GPT-6.1 Terra",
-   "summary": "",
-   "originalUrl": "https://openai.com/index/introducing-gpt-6-1-terra",
-   "pubDate": "2026-10-26T00:00:00.000Z",
-   "sourceName": "OpenAI News",
-   "category": "model",
-   "categoryLabel": "模型",
-   "eventPublicId": "2026-10-27-openai-gpt61-terra"
   }
  ]
 }
