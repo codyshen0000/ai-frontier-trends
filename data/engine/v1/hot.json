@@ -1,251 +1,251 @@
 {
- "computedAt": "2026-11-05T11:38:00.000Z",
- "windowHours": 48,
- "entries": [
-  {
-   "rank": 1,
-   "story": {
-    "publicId": "2026-11-05-chatgpt-animated-gifs",
-    "title": "OpenAI：推出 Images 2.6（更快生成、GIF、精细编辑与 API 控制）"
-   },
-   "heat": 23.5,
-   "trend": "down",
-   "trendPct": -15.8,
-   "badges": [],
-   "participantCount": 4,
-   "sourceCount": 4,
-   "sourceNames": [
-    "量子位",
-    "The Decoder",
-    "The Verge · AI",
-    "OpenAI News"
-   ],
-   "participants": [
+  "computedAt": "2026-11-05T11:38:00.000Z",
+  "windowHours": 48,
+  "entries": [
     {
-     "name": "OpenAI News",
-     "kind": "editorial"
+      "rank": 1,
+      "story": {
+        "publicId": "2026-11-05-chatgpt-animated-gifs",
+        "title": "OpenAI：推出 Images 2.6（更快生成、GIF、精细编辑与 API 控制）"
+      },
+      "heat": 23.9,
+      "trend": "down",
+      "trendPct": -14.3,
+      "badges": [],
+      "participantCount": 4,
+      "sourceCount": 4,
+      "sourceNames": [
+        "量子位",
+        "The Decoder",
+        "The Verge · AI",
+        "OpenAI News"
+      ],
+      "participants": [
+        {
+          "name": "OpenAI News",
+          "kind": "editorial"
+        },
+        {
+          "name": "量子位",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Decoder",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Verge · AI",
+          "kind": "editorial"
+        }
+      ],
+      "spark": [
+        7.3,
+        7.1,
+        6.9,
+        6.7,
+        6.5,
+        6.3,
+        6.1,
+        15.9,
+        15.5,
+        25,
+        24.3,
+        23.6,
+        22.9,
+        22.3,
+        21.6,
+        31,
+        30.1,
+        29.3,
+        28.4,
+        27.6,
+        26.8,
+        26.1,
+        25.3,
+        24.6,
+        23.9
+      ],
+      "summary": "OpenAI 官方：Images 2.6 带来更快生图、GIF 创作、更精确编辑，并在 ChatGPT/Codex/API 提供新控制项。",
+      "latest": null,
+      "cover": null,
+      "rankDelta": 0,
+      "heatDeltaPct": 1.7
     },
     {
-     "name": "量子位",
-     "kind": "editorial"
+      "rank": 2,
+      "story": {
+        "publicId": "2026-11-05-openai-thousand-fewer-paths-to-root",
+        "title": "OpenAI：少一千条通往 root 的路径（自主发现并修补 948 个 Linux 提权漏洞）"
+      },
+      "heat": 12.3,
+      "trend": "down",
+      "trendPct": -14,
+      "badges": [],
+      "participantCount": 2,
+      "sourceCount": 2,
+      "sourceNames": [
+        "量子位",
+        "OpenAI News"
+      ],
+      "participants": [
+        {
+          "name": "OpenAI News",
+          "kind": "editorial"
+        },
+        {
+          "name": "量子位",
+          "kind": "editorial"
+        }
+      ],
+      "spark": [
+        9.2,
+        8.9,
+        8.7,
+        8.4,
+        8.2,
+        7.9,
+        7.7,
+        7.5,
+        7.3,
+        7.1,
+        6.9,
+        6.7,
+        6.5,
+        6.3,
+        6.1,
+        15.9,
+        15.5,
+        15,
+        14.6,
+        14.2,
+        13.8,
+        13.4,
+        13,
+        12.6,
+        12.3
+      ],
+      "summary": "OpenAI 官方：自主流水线发现、验证并为 Linux 内核本地提权漏洞生成补丁，共 948 个。",
+      "latest": null,
+      "cover": null,
+      "rankDelta": 0,
+      "heatDeltaPct": 1.7
     },
     {
-     "name": "The Decoder",
-     "kind": "editorial"
+      "rank": 3,
+      "story": {
+        "publicId": "2026-11-04-openai-acquire-pierre",
+        "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链"
+      },
+      "heat": 11.8,
+      "trend": "down",
+      "trendPct": -13.9,
+      "badges": [],
+      "participantCount": 2,
+      "sourceCount": 2,
+      "sourceNames": [
+        "The Decoder",
+        "OpenAI News"
+      ],
+      "participants": [
+        {
+          "name": "OpenAI News",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Decoder",
+          "kind": "editorial"
+        }
+      ],
+      "spark": [
+        null,
+        null,
+        null,
+        null,
+        9.9,
+        9.6,
+        9.3,
+        9,
+        18.7,
+        18.2,
+        17.6,
+        17.1,
+        16.7,
+        16.2,
+        15.7,
+        15.3,
+        14.8,
+        14.4,
+        14,
+        13.6,
+        13.2,
+        12.8,
+        12.5,
+        12.1,
+        11.8
+      ],
+      "summary": null,
+      "latest": null,
+      "cover": null,
+      "rankDelta": 0,
+      "heatDeltaPct": 1.7
     },
     {
-     "name": "The Verge · AI",
-     "kind": "editorial"
+      "rank": 4,
+      "story": {
+        "publicId": "2026-11-04-deepmind-antigravity-cheminformatics",
+        "title": "DeepMind：Google Antigravity 化学信息学智能体技能"
+      },
+      "heat": 6,
+      "trend": "down",
+      "trendPct": -14.3,
+      "badges": [],
+      "participantCount": 2,
+      "sourceCount": 1,
+      "sourceNames": [
+        "Google DeepMind Blog"
+      ],
+      "participants": [
+        {
+          "name": "Google DeepMind Blog",
+          "kind": "editorial"
+        },
+        {
+          "name": "IT之家（全站，需关键词过滤）",
+          "kind": "signal"
+        }
+      ],
+      "spark": [
+        12,
+        11.6,
+        11.3,
+        11,
+        10.7,
+        10.3,
+        10.1,
+        9.8,
+        9.5,
+        9.2,
+        9,
+        8.7,
+        8.5,
+        8.2,
+        8,
+        7.8,
+        7.5,
+        7.3,
+        7.1,
+        6.9,
+        6.7,
+        6.5,
+        6.3,
+        6.2,
+        6
+      ],
+      "summary": "DeepMind 官方：为 Google Antigravity 推出 Cheminformatics Skills，约一小时内检索数千化合物并做匹配分子对分析、提出可合成刚性大环。",
+      "latest": null,
+      "cover": null,
+      "rankDelta": 0,
+      "heatDeltaPct": 1.7
     }
-   ],
-   "spark": [
-    7.3,
-    7.1,
-    6.9,
-    6.7,
-    6.5,
-    6.3,
-    6.1,
-    15.9,
-    15.5,
-    25.0,
-    24.3,
-    23.6,
-    22.9,
-    22.3,
-    21.6,
-    31.0,
-    30.1,
-    29.3,
-    28.4,
-    27.6,
-    26.8,
-    26.1,
-    25.3,
-    24.6,
-    23.9
-   ],
-   "summary": "OpenAI 官方：Images 2.6 带来更快生图、GIF 创作、更精确编辑，并在 ChatGPT/Codex/API 提供新控制项。",
-   "latest": null,
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -10.0
-  },
-  {
-   "rank": 2,
-   "story": {
-    "publicId": "2026-11-05-openai-thousand-fewer-paths-to-root",
-    "title": "OpenAI：少一千条通往 root 的路径（自主发现并修补 948 个 Linux 提权漏洞）"
-   },
-   "heat": 12.1,
-   "trend": "down",
-   "trendPct": -15.4,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "量子位",
-    "OpenAI News"
-   ],
-   "participants": [
-    {
-     "name": "OpenAI News",
-     "kind": "editorial"
-    },
-    {
-     "name": "量子位",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    9.2,
-    8.9,
-    8.7,
-    8.4,
-    8.2,
-    7.9,
-    7.7,
-    7.5,
-    7.3,
-    7.1,
-    6.9,
-    6.7,
-    6.5,
-    6.3,
-    6.1,
-    15.9,
-    15.5,
-    15.0,
-    14.6,
-    14.2,
-    13.8,
-    13.4,
-    13.0,
-    12.6,
-    12.3
-   ],
-   "summary": "OpenAI 官方：自主流水线发现、验证并为 Linux 内核本地提权漏洞生成补丁，共 948 个。",
-   "latest": null,
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -9.7
-  },
-  {
-   "rank": 3,
-   "story": {
-    "publicId": "2026-11-04-openai-acquire-pierre",
-    "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链"
-   },
-   "heat": 11.6,
-   "trend": "down",
-   "trendPct": -15.3,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "The Decoder",
-    "OpenAI News"
-   ],
-   "participants": [
-    {
-     "name": "OpenAI News",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    null,
-    null,
-    null,
-    null,
-    9.9,
-    9.6,
-    9.3,
-    9.0,
-    18.7,
-    18.2,
-    17.6,
-    17.1,
-    16.7,
-    16.2,
-    15.7,
-    15.3,
-    14.8,
-    14.4,
-    14.0,
-    13.6,
-    13.2,
-    12.8,
-    12.5,
-    12.1,
-    11.8
-   ],
-   "summary": null,
-   "latest": null,
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -10.1
-  },
-  {
-   "rank": 4,
-   "story": {
-    "publicId": "2026-11-04-deepmind-antigravity-cheminformatics",
-    "title": "DeepMind：Google Antigravity 化学信息学智能体技能"
-   },
-   "heat": 5.9,
-   "trend": "down",
-   "trendPct": -15.7,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 1,
-   "sourceNames": [
-    "Google DeepMind Blog"
-   ],
-   "participants": [
-    {
-     "name": "Google DeepMind Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
-    }
-   ],
-   "spark": [
-    12.0,
-    11.6,
-    11.3,
-    11.0,
-    10.7,
-    10.3,
-    10.1,
-    9.8,
-    9.5,
-    9.2,
-    9.0,
-    8.7,
-    8.5,
-    8.2,
-    8.0,
-    7.8,
-    7.5,
-    7.3,
-    7.1,
-    6.9,
-    6.7,
-    6.5,
-    6.3,
-    6.2,
-    6.0
-   ],
-   "summary": "DeepMind 官方：为 Google Antigravity 推出 Cheminformatics Skills，约一小时内检索数千化合物并做匹配分子对分析、提出可合成刚性大环。",
-   "latest": null,
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -9.2
-  }
- ]
+  ]
 }
