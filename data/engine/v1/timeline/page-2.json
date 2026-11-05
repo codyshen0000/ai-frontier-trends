@@ -6,6 +6,59 @@
  },
  "cards": [
   {
+   "key": "sha256:f37fa8ee7ba135be",
+   "anchorAt": "2026-10-30T12:57:42.000Z",
+   "item": {
+    "id": "sha256:f37fa8ee7ba135be",
+    "title": "Wiz：发布 2026 AI 威胁就绪调查报告要点",
+    "summary": null,
+    "reason": "Wiz 发布 2026 AI 威胁就绪调查：影子 AI 与编排风险",
+    "source": {
+     "name": "Wiz Blog"
+    },
+    "publishedAt": "2026-10-30T12:57:42.000Z",
+    "timelineAt": "2026-10-30T12:57:42.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-30-wiz-ai-threat-readiness-2026",
+    "originalUrl": "https://www.wiz.io/blog/ai-threat-readiness-survey-report-2026"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:84abd1857de5dfd9",
+   "anchorAt": "2026-10-30T09:30:00.000Z",
+   "item": {
+    "id": "sha256:84abd1857de5dfd9",
+    "title": "OpenAI：让网站更容易表达 AI 训练偏好",
+    "summary": "OpenAI 将尊重 robots.txt 训练偏好信号；过闸。",
+    "reason": "OpenAI：将尊重网站 robots.txt 训练偏好信号",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-30T09:30:00.000Z",
+    "timelineAt": "2026-10-30T09:30:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-31-openai-ai-training-preferences",
+    "originalUrl": "https://openai.com/index/helping-websites-express-ai-training-preferences"
+   },
+   "group": {
+    "factId": "fact-2026-10-31-openai-ai-training-preferences",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:84abd1857de5dfd9"
+    ]
+   }
+  },
+  {
    "key": "sha256:a86d24c59c826150",
    "anchorAt": "2026-10-30T09:00:00.000Z",
    "item": {
@@ -477,59 +530,6 @@
     "originalUrl": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/"
    },
    "group": null
-  },
-  {
-   "key": "sha256:1d6c5c59e46e52b9",
-   "anchorAt": "2026-10-27T16:12:42.000Z",
-   "item": {
-    "id": "sha256:1d6c5c59e46e52b9",
-    "title": "Hugging Face：LLM 能否可靠评判研究想法新颖性",
-    "summary": null,
-    "reason": null,
-    "source": {
-     "name": "Hugging Face Blog"
-    },
-    "publishedAt": "2026-10-27T16:12:42.000Z",
-    "timelineAt": "2026-10-27T16:12:42.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-28-hf-allenai-novelty-bench",
-    "originalUrl": "https://huggingface.co/blog/allenai/novelty-bench"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:e960e8891f7d7ad8",
-   "anchorAt": "2026-10-27T16:01:38.000Z",
-   "item": {
-    "id": "sha256:e960e8891f7d7ad8",
-    "title": "DeepMind 发布 Genie 4：新一代世界仿真",
-    "summary": "DeepMind 宣布 Genie 4 世界模型，强调实时仿真真实感与原生多模态音画对话。",
-    "reason": "DeepMind 发布 Genie 4 世界模型，强调实时仿真与多模态",
-    "source": {
-     "name": "Google DeepMind Blog"
-    },
-    "publishedAt": "2026-10-27T16:01:38.000Z",
-    "timelineAt": "2026-10-27T16:01:38.000Z",
-    "category": "model",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-28-deepmind-genie-4",
-    "originalUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
-   },
-   "group": {
-    "factId": "fact-2026-10-28-deepmind-genie-4",
-    "additionalSourceCount": 4,
-    "reportCount": 5,
-    "memberIds": [
-     "sha256:e960e8891f7d7ad8"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-3.json",
@@ -537,5 +537,5 @@
  "dayCounts": {},
  "page": 2,
  "pageCount": 6,
- "total": 101
+ "total": 103
 }

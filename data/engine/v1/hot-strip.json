@@ -2,7 +2,7 @@
  {
   "rank": 1,
   "title": "OpenAI：推出 Images 2.6（更快生成、GIF、精细编辑与 API 控制）",
-  "heat": 23.5,
+  "heat": 20.3,
   "trend": "down",
   "storyPublicId": "2026-11-05-chatgpt-animated-gifs",
   "itemId": "sha256:295354ff422b0d4d",
@@ -28,8 +28,27 @@
  },
  {
   "rank": 2,
+  "title": "OpenAI：为负责任 AI 基建设立新标准（社区契约与算力园区政策蓝图）",
+  "heat": 16.0,
+  "trend": "up",
+  "storyPublicId": "2026-11-05-openai-responsible-ai-infrastructure",
+  "itemId": "sha256:25fa4dd18ec78a48",
+  "participants": [
+   {
+    "name": "OpenAI News",
+    "kind": "editorial"
+   },
+   {
+    "name": "The Decoder",
+    "kind": "editorial"
+   }
+  ],
+  "participantCount": 2
+ },
+ {
+  "rank": 3,
   "title": "OpenAI：少一千条通往 root 的路径（自主发现并修补 948 个 Linux 提权漏洞）",
-  "heat": 12.1,
+  "heat": 10.4,
   "trend": "down",
   "storyPublicId": "2026-11-05-openai-thousand-fewer-paths-to-root",
   "itemId": "sha256:fbaa86a829ad59fd",
@@ -46,9 +65,9 @@
   "participantCount": 2
  },
  {
-  "rank": 3,
+  "rank": 4,
   "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
-  "heat": 11.6,
+  "heat": 10.0,
   "trend": "down",
   "storyPublicId": "2026-11-04-openai-acquire-pierre",
   "itemId": "sha256:1be4fdd8e6ca80f0",
@@ -65,9 +84,9 @@
   "participantCount": 2
  },
  {
-  "rank": 4,
+  "rank": 5,
   "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
-  "heat": 5.9,
+  "heat": 5.1,
   "trend": "down",
   "storyPublicId": "2026-11-04-deepmind-antigravity-cheminformatics",
   "itemId": "sha256:23c4f130369cb972",

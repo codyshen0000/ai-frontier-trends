@@ -2,29 +2,29 @@
  "publicId": "2026-11-05-openai-responsible-ai-infrastructure",
  "title": "OpenAI：为负责任 AI 基建设立新标准（社区契约与算力园区政策蓝图）",
  "status": "active",
- "reportCount": 1,
- "sourceCount": 1,
+ "reportCount": 2,
+ "sourceCount": 2,
  "firstReportAt": "2026-11-05T02:00:00.000Z",
- "latestAt": "2026-11-05T02:00:00.000Z",
+ "latestAt": "2026-11-05T14:37:46.000Z",
  "digest": null,
  "digestUpdatedAt": null,
  "summary": "OpenAI 官方：发布 National Community Compact 与 Compute Campus Policy Blueprint，承诺自付能源成本、公开水电噪声影响、本地就业与可追责条款。",
  "excerpt": null,
- "latest": null,
+ "latest": "The Decoder：中期选举后梳理 OpenAI 社区契约，称自愿承诺主要适用于自营园区",
  "latestReport": null,
  "whyHot": {
-  "participants48h": 1,
-  "newParticipants6h": 0,
-  "recentReports24h": 1,
+  "participants48h": 2,
+  "newParticipants6h": 1,
+  "recentReports24h": 2,
   "observationComplete": true,
-  "rank": null
+  "rank": 2
  },
  "developments": [
   {
    "factId": "fact-2026-11-05-openai-responsible-ai-infrastructure",
    "title": "OpenAI：为负责任 AI 基建设立新标准（社区契约与算力园区政策蓝图）",
    "firstReportAt": "2026-11-05T02:00:00.000Z",
-   "reportCount": 1,
+   "reportCount": 2,
    "representative": {
     "id": "sha256:25fa4dd18ec78a48",
     "title": "OpenAI：为负责任 AI 基建设立新标准（社区契约与算力园区政策蓝图）",
@@ -54,6 +54,18 @@
   }
  ],
  "timeline": [
+  {
+   "id": "sha256:13d48b5237229e6c",
+   "title": "报道：中期选举后 OpenAI 争取扩建所需社区支持",
+   "summary": "The Decoder：梳理 OpenAI 自愿社区承诺，称主要适用于自营园区。",
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-05T14:37:46.000Z",
+   "selected": false,
+   "originalUrl": "https://the-decoder.com/after-midterm-rout-openai-tries-to-win-over-communities-it-needs-for-ai-expansion/"
+  },
   {
    "id": "sha256:25fa4dd18ec78a48",
    "title": "OpenAI：为负责任 AI 基建设立新标准（社区契约与算力园区政策蓝图）",
@@ -117,6 +129,31 @@
    "hour": "2026-11-05T11:00:00.000Z",
    "heat": 7.7,
    "participants": 1
+  },
+  {
+   "hour": "2026-11-05T12:00:00.000Z",
+   "heat": 7.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T13:00:00.000Z",
+   "heat": 7.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T14:00:00.000Z",
+   "heat": 7.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T15:00:00.000Z",
+   "heat": 16.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-05T16:00:00.000Z",
+   "heat": 16.3,
+   "participants": 2
   }
  ],
  "related": [],

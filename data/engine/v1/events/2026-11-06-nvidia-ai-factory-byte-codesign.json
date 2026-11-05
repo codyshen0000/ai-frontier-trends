@@ -1,0 +1,81 @@
+{
+ "publicId": "2026-11-06-nvidia-ai-factory-byte-codesign",
+ "title": "NVIDIA：五项协同设计最大化 AI 工厂每一字节价值",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-11-05T16:00:00.000Z",
+ "latestAt": "2026-11-05T16:00:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "NVIDIA 技术博客：五项软硬协同设计提升 AI 工厂内存/带宽效率。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-11-06-nvidia-ai-factory-byte-codesign",
+   "title": "NVIDIA：五项协同设计最大化 AI 工厂每一字节价值",
+   "firstReportAt": "2026-11-05T16:00:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:7a4fd1de9b53747b",
+    "title": "NVIDIA：五项协同设计最大化 AI 工厂每一字节价值",
+    "summary": "NVIDIA 技术博客：五项软硬协同设计提升 AI 工厂内存/带宽效率。",
+    "source": {
+     "name": "NVIDIA Technical Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-11-05T16:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:7a4fd1de9b53747b",
+   "title": "NVIDIA：五项协同设计最大化 AI 工厂每一字节价值",
+   "summary": "NVIDIA 技术博客：五项软硬协同设计提升 AI 工厂内存/带宽效率。",
+   "source": {
+    "name": "NVIDIA Technical Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-05T16:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:7a4fd1de9b53747b",
+   "title": "NVIDIA：五项协同设计最大化 AI 工厂每一字节价值",
+   "summary": "NVIDIA 技术博客：五项软硬协同设计提升 AI 工厂内存/带宽效率。",
+   "source": {
+    "name": "NVIDIA Technical Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-05T16:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-11-05T16:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "NVIDIA：五项协同设计提升 AI 工厂每字节价值",
+ "primaryUrl": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/"
+}

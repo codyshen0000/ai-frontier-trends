@@ -283,6 +283,31 @@
    "hour": "2026-11-05T11:00:00.000Z",
    "heat": 23.9,
    "participants": 4
+  },
+  {
+   "hour": "2026-11-05T12:00:00.000Z",
+   "heat": 23.2,
+   "participants": 4
+  },
+  {
+   "hour": "2026-11-05T13:00:00.000Z",
+   "heat": 22.6,
+   "participants": 4
+  },
+  {
+   "hour": "2026-11-05T14:00:00.000Z",
+   "heat": 21.9,
+   "participants": 4
+  },
+  {
+   "hour": "2026-11-05T15:00:00.000Z",
+   "heat": 21.3,
+   "participants": 4
+  },
+  {
+   "hour": "2026-11-05T16:00:00.000Z",
+   "heat": 20.7,
+   "participants": 4
   }
  ],
  "related": [],

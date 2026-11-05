@@ -6,6 +6,52 @@
  },
  "cards": [
   {
+   "key": "sha256:7a4fd1de9b53747b",
+   "anchorAt": "2026-11-05T16:00:00.000Z",
+   "item": {
+    "id": "sha256:7a4fd1de9b53747b",
+    "title": "NVIDIA：五项协同设计最大化 AI 工厂每一字节价值",
+    "summary": "NVIDIA 技术博客：五项软硬协同设计提升 AI 工厂内存/带宽效率。",
+    "reason": "NVIDIA：五项协同设计提升 AI 工厂每字节价值",
+    "source": {
+     "name": "NVIDIA Technical Blog"
+    },
+    "publishedAt": "2026-11-05T16:00:00.000Z",
+    "timelineAt": "2026-11-05T16:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-06-nvidia-ai-factory-byte-codesign",
+    "originalUrl": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:5bd02a39074589ea",
+   "anchorAt": "2026-11-05T12:00:14.000Z",
+   "item": {
+    "id": "sha256:5bd02a39074589ea",
+    "title": "Mistral：发布 Studio，配合 Le Chonk 构建企业智能体与工作流",
+    "summary": "Mistral 官方：推出 Studio，加速企业智能体/工作流/应用构建与部署。",
+    "reason": "Mistral：发布 Studio，配合 Le Chonk 构建企业智能体",
+    "source": {
+     "name": "Mistral AI News"
+    },
+    "publishedAt": "2026-11-05T12:00:14.000Z",
+    "timelineAt": "2026-11-05T12:00:14.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-06-mistral-studio",
+    "originalUrl": "https://mistral.ai/news/build-with-studio/"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:25fa4dd18ec78a48",
    "anchorAt": "2026-11-05T02:00:00.000Z",
    "item": {
@@ -26,7 +72,14 @@
     "storyPublicId": "2026-11-05-openai-responsible-ai-infrastructure",
     "originalUrl": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure"
    },
-   "group": null
+   "group": {
+    "factId": "fact-2026-11-05-openai-responsible-ai-infrastructure",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:25fa4dd18ec78a48"
+    ]
+   }
   },
   {
    "key": "sha256:c65c7708e93995ca",
@@ -496,59 +549,6 @@
     "originalUrl": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/"
    },
    "group": null
-  },
-  {
-   "key": "sha256:f37fa8ee7ba135be",
-   "anchorAt": "2026-10-30T12:57:42.000Z",
-   "item": {
-    "id": "sha256:f37fa8ee7ba135be",
-    "title": "Wiz：发布 2026 AI 威胁就绪调查报告要点",
-    "summary": null,
-    "reason": "Wiz 发布 2026 AI 威胁就绪调查：影子 AI 与编排风险",
-    "source": {
-     "name": "Wiz Blog"
-    },
-    "publishedAt": "2026-10-30T12:57:42.000Z",
-    "timelineAt": "2026-10-30T12:57:42.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-30-wiz-ai-threat-readiness-2026",
-    "originalUrl": "https://www.wiz.io/blog/ai-threat-readiness-survey-report-2026"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:84abd1857de5dfd9",
-   "anchorAt": "2026-10-30T09:30:00.000Z",
-   "item": {
-    "id": "sha256:84abd1857de5dfd9",
-    "title": "OpenAI：让网站更容易表达 AI 训练偏好",
-    "summary": "OpenAI 将尊重 robots.txt 训练偏好信号；过闸。",
-    "reason": "OpenAI：将尊重网站 robots.txt 训练偏好信号",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-30T09:30:00.000Z",
-    "timelineAt": "2026-10-30T09:30:00.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-31-openai-ai-training-preferences",
-    "originalUrl": "https://openai.com/index/helping-websites-express-ai-training-preferences"
-   },
-   "group": {
-    "factId": "fact-2026-10-31-openai-ai-training-preferences",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:84abd1857de5dfd9"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-2.json",
@@ -556,7 +556,7 @@
   {
    "rank": 1,
    "title": "OpenAI：推出 Images 2.6（更快生成、GIF、精细编辑与 API 控制）",
-   "heat": 23.5,
+   "heat": 20.3,
    "trend": "down",
    "storyPublicId": "2026-11-05-chatgpt-animated-gifs",
    "itemId": "sha256:295354ff422b0d4d",
@@ -582,8 +582,27 @@
   },
   {
    "rank": 2,
+   "title": "OpenAI：为负责任 AI 基建设立新标准（社区契约与算力园区政策蓝图）",
+   "heat": 16.0,
+   "trend": "up",
+   "storyPublicId": "2026-11-05-openai-responsible-ai-infrastructure",
+   "itemId": "sha256:25fa4dd18ec78a48",
+   "participants": [
+    {
+     "name": "OpenAI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2
+  },
+  {
+   "rank": 3,
    "title": "OpenAI：少一千条通往 root 的路径（自主发现并修补 948 个 Linux 提权漏洞）",
-   "heat": 12.1,
+   "heat": 10.4,
    "trend": "down",
    "storyPublicId": "2026-11-05-openai-thousand-fewer-paths-to-root",
    "itemId": "sha256:fbaa86a829ad59fd",
@@ -600,9 +619,9 @@
    "participantCount": 2
   },
   {
-   "rank": 3,
+   "rank": 4,
    "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
-   "heat": 11.6,
+   "heat": 10.0,
    "trend": "down",
    "storyPublicId": "2026-11-04-openai-acquire-pierre",
    "itemId": "sha256:1be4fdd8e6ca80f0",
@@ -619,9 +638,9 @@
    "participantCount": 2
   },
   {
-   "rank": 4,
+   "rank": 5,
    "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
-   "heat": 5.9,
+   "heat": 5.1,
    "trend": "down",
    "storyPublicId": "2026-11-04-deepmind-antigravity-cheminformatics",
    "itemId": "sha256:23c4f130369cb972",
@@ -639,7 +658,8 @@
   }
  ],
  "dayCounts": {
-  "2026-11-05": 2,
+  "2026-11-06": 1,
+  "2026-11-05": 3,
   "2026-11-04": 5,
   "2026-11-03": 1,
   "2026-11-02": 4,
@@ -661,5 +681,5 @@
  },
  "page": 1,
  "pageCount": 6,
- "total": 101
+ "total": 103
 }

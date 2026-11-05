@@ -1,0 +1,96 @@
+{
+ "publicId": "2026-11-06-mistral-studio",
+ "title": "Mistral：发布 Studio，配合 Le Chonk 构建企业智能体与工作流",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-11-05T12:00:14.000Z",
+ "latestAt": "2026-11-05T12:00:14.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Mistral 官方：推出 Studio，加速企业智能体/工作流/应用构建与部署。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-11-06-mistral-studio",
+   "title": "Mistral：发布 Studio，配合 Le Chonk 构建企业智能体与工作流",
+   "firstReportAt": "2026-11-05T12:00:14.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:5bd02a39074589ea",
+    "title": "Mistral：发布 Studio，配合 Le Chonk 构建企业智能体与工作流",
+    "summary": "Mistral 官方：推出 Studio，加速企业智能体/工作流/应用构建与部署。",
+    "source": {
+     "name": "Mistral AI News",
+     "firstParty": true
+    },
+    "publishedAt": "2026-11-05T12:00:14.000Z",
+    "selected": true,
+    "originalUrl": "https://mistral.ai/news/build-with-studio/"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:5bd02a39074589ea",
+   "title": "Mistral：发布 Studio，配合 Le Chonk 构建企业智能体与工作流",
+   "summary": "Mistral 官方：推出 Studio，加速企业智能体/工作流/应用构建与部署。",
+   "source": {
+    "name": "Mistral AI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-05T12:00:14.000Z",
+   "selected": true,
+   "originalUrl": "https://mistral.ai/news/build-with-studio/"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:5bd02a39074589ea",
+   "title": "Mistral：发布 Studio，配合 Le Chonk 构建企业智能体与工作流",
+   "summary": "Mistral 官方：推出 Studio，加速企业智能体/工作流/应用构建与部署。",
+   "source": {
+    "name": "Mistral AI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-05T12:00:14.000Z",
+   "selected": true,
+   "originalUrl": "https://mistral.ai/news/build-with-studio/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-11-05T13:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T14:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T15:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T16:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "Mistral：发布 Studio，配合 Le Chonk 构建企业智能体",
+ "primaryUrl": "https://mistral.ai/news/build-with-studio/"
+}
