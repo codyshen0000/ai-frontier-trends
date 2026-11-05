@@ -1,22 +1,22 @@
 {
  "publicId": "2026-10-24-kimi-k31-pro",
  "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
- "status": "settled",
- "reportCount": 3,
- "sourceCount": 3,
+ "status": "active",
+ "reportCount": 4,
+ "sourceCount": 4,
  "firstReportAt": "2026-10-23T19:00:07.000Z",
- "latestAt": "2026-10-24T07:18:29.000Z",
+ "latestAt": "2026-11-05T00:00:15.000Z",
  "digest": null,
  "digestUpdatedAt": null,
  "summary": "Artificial Analysis：Kimi K3.1 Pro 智能指数 55（较 K3 升 11 分），暂列第四，落后 Claude Opus 5.5 等；智能体与终端基准提升明显。参数仍约 2.8T/104B 激活、百万上下文；权重尚未放出，评测方预计开源后将成为领先开源权重模型之一。",
  "excerpt": null,
- "latest": null,
+ "latest": "按承诺开放 Kimi K3.1 Pro 权重；Agent Arena 开放模型居首（IT之家二手，未 hop）",
  "latestReport": null,
  "whyHot": {
-  "participants48h": 0,
-  "newParticipants6h": 0,
-  "recentReports24h": 0,
-  "observationComplete": false,
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
   "rank": null
  },
  "developments": [
@@ -24,7 +24,7 @@
    "factId": "fact-2026-10-24-kimi-k31-pro",
    "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
    "firstReportAt": "2026-10-23T19:00:07.000Z",
-   "reportCount": 3,
+   "reportCount": 4,
    "representative": {
     "id": "sha256:261b6564023ad66c",
     "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
@@ -41,6 +41,18 @@
  ],
  "officialReports": [],
  "timeline": [
+  {
+   "id": "sha256:6b991b90f516ac64",
+   "title": "报道：月之暗面开放 Kimi K3.1 Pro 权重，登顶 Agent Arena 开源榜",
+   "summary": "IT之家：Moonshot 按承诺于 Hugging Face 开放 Kimi K3.1 Pro 权重，并在 Agent Arena 开放模型居首。",
+   "source": {
+    "name": "IT之家（全站，需关键词过滤）",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-05T00:00:15.000Z",
+   "selected": false,
+   "originalUrl": "https://www.ithome.com/1/022/490.htm"
+  },
   {
    "id": "sha256:a74122a98f64e132",
    "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",

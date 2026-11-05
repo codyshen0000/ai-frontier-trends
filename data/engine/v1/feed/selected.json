@@ -19,6 +19,28 @@
    "eventPublicId": "2026-11-04-openai-acquire-pierre"
   },
   {
+   "guid": "sha256:fbaa86a829ad59fd",
+   "title": "OpenAI：少一千条通往 root 的路径（自主发现并修补 948 个 Linux 提权漏洞）",
+   "summary": "OpenAI 官方：自主流水线发现、验证并为 Linux 内核本地提权漏洞生成补丁，共 948 个。",
+   "originalUrl": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+   "pubDate": "2026-11-04T08:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "paper",
+   "categoryLabel": "论文",
+   "eventPublicId": "2026-11-05-openai-thousand-fewer-paths-to-root"
+  },
+  {
+   "guid": "sha256:295354ff422b0d4d",
+   "title": "OpenAI：推出 Images 2.6（更快生成、GIF、精细编辑与 API 控制）",
+   "summary": "OpenAI 官方：Images 2.6 带来更快生图、GIF 创作、更精确编辑，并在 ChatGPT/Codex/API 提供新控制项。",
+   "originalUrl": "https://openai.com/index/introducing-images-2-6",
+   "pubDate": "2026-11-04T00:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-11-05-chatgpt-animated-gifs"
+  },
+  {
    "guid": "sha256:23c4f130369cb972",
    "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
    "summary": "DeepMind 官方：Antigravity + Cheminformatics Skills，约 1 小时检索/分析数千化合物并提刚性大环设计。",
@@ -534,28 +556,6 @@
    "category": "model",
    "categoryLabel": "模型",
    "eventPublicId": "2026-10-27-openai-gpt61-terra"
-  },
-  {
-   "guid": "sha256:af9112a54e84d14e",
-   "title": "Nvidia 开源 Flora：机器人视频标注数据引擎",
-   "summary": "",
-   "originalUrl": "https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra/",
-   "pubDate": "2026-10-25T10:08:49.000Z",
-   "sourceName": "The Decoder",
-   "category": "paper",
-   "categoryLabel": "论文",
-   "eventPublicId": "2026-10-25-nvidia-flora-robot-data-engine"
-  },
-  {
-   "guid": "sha256:de032cfb4352542b",
-   "title": "Anthropic：单智能体循环往往优于多子智能体",
-   "summary": "Anthropic 称单主智能体常在质量/成本/延迟上优于多子智能体；已开源迁移套件。",
-   "originalUrl": "https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone/",
-   "pubDate": "2026-10-25T09:12:10.000Z",
-   "sourceName": "The Decoder",
-   "category": "industry",
-   "categoryLabel": "行业",
-   "eventPublicId": "2026-10-25-anthropic-single-agent-loop"
   }
  ]
 }

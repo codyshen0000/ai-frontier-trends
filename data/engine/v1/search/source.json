@@ -1,6 +1,57 @@
 {
- "generatedAt": "2026-11-04T19:54:00.000Z",
+ "generatedAt": "2026-11-05T00:40:00.000Z",
  "docs": [
+  {
+   "id": "sha256:6b991b90f516ac64",
+   "kind": "item",
+   "title": "报道：月之暗面开放 Kimi K3.1 Pro 权重，登顶 Agent Arena 开源榜",
+   "summary": "IT之家：Moonshot 按承诺于 Hugging Face 开放 Kimi K3.1 Pro 权重，并在 Agent Arena 开放模型居首。",
+   "publishedAt": "2026-11-05T00:00:15.000Z",
+   "sourceName": "IT之家（全站，需关键词过滤）",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-10-24-kimi-k31-pro",
+   "originalUrl": "https://www.ithome.com/1/022/490.htm"
+  },
+  {
+   "id": "2026-10-24-kimi-k31-pro",
+   "kind": "event",
+   "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
+   "summary": "Artificial Analysis：Kimi K3.1 Pro 智能指数 55（较 K3 升 11 分），暂列第四，落后 Claude Opus 5.5 等；智能体与终端基准提升明显。参数仍约 2.8T/104B 激活、百万上下文；权重尚未放出，评测方预计开源后将成为领先开源权重模型之一。",
+   "publishedAt": "2026-11-05T00:00:15.000Z",
+   "sourceNames": [
+    "IT之家（全站，需关键词过滤）",
+    "Latent Space",
+    "Simon Willison",
+    "The Decoder"
+   ],
+   "path": "/events/2026-10-24-kimi-k31-pro/"
+  },
+  {
+   "id": "sha256:60b49bd40bcd399c",
+   "kind": "item",
+   "title": "报道：ChatGPT 可用 Images 2.6 把文字/照片做成动画 GIF",
+   "summary": "The Decoder：转述 OpenAI Images 2.6 支持文字与照片生成动画 GIF。",
+   "publishedAt": "2026-11-04T19:44:20.000Z",
+   "sourceName": "The Decoder",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-11-05-chatgpt-animated-gifs",
+   "originalUrl": "https://the-decoder.com/chatgpt-can-now-turn-text-prompts-and-photos-into-animated-gifs-with-openais-images-2-6-model/"
+  },
+  {
+   "id": "2026-11-05-chatgpt-animated-gifs",
+   "kind": "event",
+   "title": "OpenAI：推出 Images 2.6（更快生成、GIF、精细编辑与 API 控制）",
+   "summary": "OpenAI 官方：Images 2.6 带来更快生图、GIF 创作、更精确编辑，并在 ChatGPT/Codex/API 提供新控制项。",
+   "publishedAt": "2026-11-04T19:44:20.000Z",
+   "sourceNames": [
+    "OpenAI News",
+    "The Decoder",
+    "The Verge · AI"
+   ],
+   "path": "/events/2026-11-05-chatgpt-animated-gifs/"
+  },
   {
    "id": "sha256:6f4b50073285632d",
    "kind": "item",
@@ -26,6 +77,18 @@
    "path": "/events/2026-11-04-openai-acquire-pierre/"
   },
   {
+   "id": "sha256:7e4f7adddfbaac34",
+   "kind": "item",
+   "title": "报道：ChatGPT 现可生成动画 GIF",
+   "summary": "The Verge。",
+   "publishedAt": "2026-11-04T18:00:00.000Z",
+   "sourceName": "The Verge · AI",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-11-05-chatgpt-animated-gifs",
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6"
+  },
+  {
    "id": "sha256:1be4fdd8e6ca80f0",
    "kind": "item",
    "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
@@ -36,6 +99,41 @@
    "selected": true,
    "eventPublicId": "2026-11-04-openai-acquire-pierre",
    "originalUrl": "https://openai.com/index/openai-to-acquire-pierre"
+  },
+  {
+   "id": "sha256:fbaa86a829ad59fd",
+   "kind": "item",
+   "title": "OpenAI：少一千条通往 root 的路径（自主发现并修补 948 个 Linux 提权漏洞）",
+   "summary": "OpenAI 官方：自主流水线发现、验证并为 Linux 内核本地提权漏洞生成补丁，共 948 个。",
+   "publishedAt": "2026-11-04T08:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "paper",
+   "selected": true,
+   "eventPublicId": "2026-11-05-openai-thousand-fewer-paths-to-root",
+   "originalUrl": "https://openai.com/index/a-thousand-fewer-paths-to-root"
+  },
+  {
+   "id": "2026-11-05-openai-thousand-fewer-paths-to-root",
+   "kind": "event",
+   "title": "OpenAI：少一千条通往 root 的路径（自主发现并修补 948 个 Linux 提权漏洞）",
+   "summary": "OpenAI 官方：自主流水线发现、验证并为 Linux 内核本地提权漏洞生成补丁，共 948 个。",
+   "publishedAt": "2026-11-04T08:00:00.000Z",
+   "sourceNames": [
+    "OpenAI News"
+   ],
+   "path": "/events/2026-11-05-openai-thousand-fewer-paths-to-root/"
+  },
+  {
+   "id": "sha256:295354ff422b0d4d",
+   "kind": "item",
+   "title": "OpenAI：推出 Images 2.6（更快生成、GIF、精细编辑与 API 控制）",
+   "summary": "OpenAI 官方：Images 2.6 带来更快生图、GIF 创作、更精确编辑，并在 ChatGPT/Codex/API 提供新控制项。",
+   "publishedAt": "2026-11-04T00:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-11-05-chatgpt-animated-gifs",
+   "originalUrl": "https://openai.com/index/introducing-images-2-6"
   },
   {
    "id": "sha256:e795c34623c8a94d",
@@ -1741,19 +1839,6 @@
    "selected": false,
    "eventPublicId": "2026-10-24-kimi-k31-pro",
    "originalUrl": "https://latent.space/p/ainews-kimi-31/"
-  },
-  {
-   "id": "2026-10-24-kimi-k31-pro",
-   "kind": "event",
-   "title": "Moonshot 发布 Kimi K3.1 Pro：智能指数 55，暂列第四",
-   "summary": "Artificial Analysis：Kimi K3.1 Pro 智能指数 55（较 K3 升 11 分），暂列第四，落后 Claude Opus 5.5 等；智能体与终端基准提升明显。参数仍约 2.8T/104B 激活、百万上下文；权重尚未放出，评测方预计开源后将成为领先开源权重模型之一。",
-   "publishedAt": "2026-10-24T07:18:29.000Z",
-   "sourceNames": [
-    "Latent Space",
-    "Simon Willison",
-    "The Decoder"
-   ],
-   "path": "/events/2026-10-24-kimi-k31-pro/"
   },
   {
    "id": "sha256:36a9d09833032ab8",

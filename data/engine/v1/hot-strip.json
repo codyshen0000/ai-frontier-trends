@@ -1,9 +1,32 @@
 [
  {
   "rank": 1,
+  "title": "OpenAI：推出 Images 2.6（更快生成、GIF、精细编辑与 API 控制）",
+  "heat": 21.8,
+  "trend": "up",
+  "storyPublicId": "2026-11-05-chatgpt-animated-gifs",
+  "itemId": "sha256:295354ff422b0d4d",
+  "participants": [
+   {
+    "name": "OpenAI News",
+    "kind": "editorial"
+   },
+   {
+    "name": "The Decoder",
+    "kind": "editorial"
+   },
+   {
+    "name": "The Verge · AI",
+    "kind": "editorial"
+   }
+  ],
+  "participantCount": 3
+ },
+ {
+  "rank": 2,
   "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
-  "heat": 18.2,
-  "trend": "new",
+  "heat": 15.9,
+  "trend": "up",
   "storyPublicId": "2026-11-04-openai-acquire-pierre",
   "itemId": "sha256:1be4fdd8e6ca80f0",
   "participants": [
@@ -19,9 +42,9 @@
   "participantCount": 2
  },
  {
-  "rank": 2,
+  "rank": 3,
   "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
-  "heat": 9.2,
+  "heat": 8.1,
   "trend": "down",
   "storyPublicId": "2026-11-04-deepmind-antigravity-cheminformatics",
   "itemId": "sha256:23c4f130369cb972",

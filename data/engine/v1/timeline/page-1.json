@@ -36,6 +36,59 @@
    }
   },
   {
+   "key": "sha256:fbaa86a829ad59fd",
+   "anchorAt": "2026-11-04T08:00:00.000Z",
+   "item": {
+    "id": "sha256:fbaa86a829ad59fd",
+    "title": "OpenAI：少一千条通往 root 的路径（自主发现并修补 948 个 Linux 提权漏洞）",
+    "summary": "OpenAI 官方：自主流水线发现、验证并为 Linux 内核本地提权漏洞生成补丁，共 948 个。",
+    "reason": "OpenAI：自主流水线发现并修补 948 个 Linux 提权漏洞",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-11-04T08:00:00.000Z",
+    "timelineAt": "2026-11-04T08:00:00.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-05-openai-thousand-fewer-paths-to-root",
+    "originalUrl": "https://openai.com/index/a-thousand-fewer-paths-to-root"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:295354ff422b0d4d",
+   "anchorAt": "2026-11-04T00:00:00.000Z",
+   "item": {
+    "id": "sha256:295354ff422b0d4d",
+    "title": "OpenAI：推出 Images 2.6（更快生成、GIF、精细编辑与 API 控制）",
+    "summary": "OpenAI 官方：Images 2.6 带来更快生图、GIF 创作、更精确编辑，并在 ChatGPT/Codex/API 提供新控制项。",
+    "reason": "OpenAI：Images 2.6 带来 GIF、更快生图与 API 控制",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-11-04T00:00:00.000Z",
+    "timelineAt": "2026-11-04T00:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-05-chatgpt-animated-gifs",
+    "originalUrl": "https://openai.com/index/introducing-images-2-6"
+   },
+   "group": {
+    "factId": "fact-2026-11-05-chatgpt-animated-gifs",
+    "additionalSourceCount": 2,
+    "reportCount": 3,
+    "memberIds": [
+     "sha256:295354ff422b0d4d"
+    ]
+   }
+  },
+  {
    "key": "sha256:23c4f130369cb972",
    "anchorAt": "2026-11-03T17:01:49.000Z",
    "item": {
@@ -496,68 +549,38 @@
      "sha256:9349f418e7bc7ab4"
     ]
    }
-  },
-  {
-   "key": "sha256:f7a1020f473102a5",
-   "anchorAt": "2026-10-29T14:36:22.000Z",
-   "item": {
-    "id": "sha256:f7a1020f473102a5",
-    "title": "Wiz：智能体攻击兴起——形态、指纹与走向",
-    "summary": null,
-    "reason": "Wiz：梳理智能体攻击形态与识别指纹",
-    "source": {
-     "name": "Wiz Blog"
-    },
-    "publishedAt": "2026-10-29T14:36:22.000Z",
-    "timelineAt": "2026-10-29T14:36:22.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-29-wiz-agentic-attacks",
-    "originalUrl": "https://www.wiz.io/blog/the-rise-of-agentic-attacks-what-they-look-like-and-where-theyre-headed"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:5a25565ab71a8d06",
-   "anchorAt": "2026-10-29T12:00:07.000Z",
-   "item": {
-    "id": "sha256:5a25565ab71a8d06",
-    "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
-    "summary": "Mistral 发布并开源 Mistral Large 4（代号 Le Chonk）权重：约 1 万亿参数、原生多模态，称在开源权重编码评测领先并强化防御性网络安全；提供多种推理模式以平衡成本与性能，在欧洲基础设施训练。",
-    "reason": "Mistral 开源 Large 4（Le Chonk）1T 多模态权重",
-    "source": {
-     "name": "Mistral AI News"
-    },
-    "publishedAt": "2026-10-29T12:00:07.000Z",
-    "timelineAt": "2026-10-29T12:00:07.000Z",
-    "category": "model",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-29-mistral-large-4-lechonk",
-    "originalUrl": "https://mistral.ai/news/mistral-large-4-oss/"
-   },
-   "group": {
-    "factId": "fact-2026-10-29-mistral-large-4-lechonk",
-    "additionalSourceCount": 5,
-    "reportCount": 6,
-    "memberIds": [
-     "sha256:5a25565ab71a8d06"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-2.json",
  "hot": [
   {
    "rank": 1,
+   "title": "OpenAI：推出 Images 2.6（更快生成、GIF、精细编辑与 API 控制）",
+   "heat": 21.8,
+   "trend": "up",
+   "storyPublicId": "2026-11-05-chatgpt-animated-gifs",
+   "itemId": "sha256:295354ff422b0d4d",
+   "participants": [
+    {
+     "name": "OpenAI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 3
+  },
+  {
+   "rank": 2,
    "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
-   "heat": 18.2,
-   "trend": "new",
+   "heat": 15.9,
+   "trend": "up",
    "storyPublicId": "2026-11-04-openai-acquire-pierre",
    "itemId": "sha256:1be4fdd8e6ca80f0",
    "participants": [
@@ -573,9 +596,9 @@
    "participantCount": 2
   },
   {
-   "rank": 2,
+   "rank": 3,
    "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
-   "heat": 9.2,
+   "heat": 8.1,
    "trend": "down",
    "storyPublicId": "2026-11-04-deepmind-antigravity-cheminformatics",
    "itemId": "sha256:23c4f130369cb972",
@@ -593,7 +616,7 @@
   }
  ],
  "dayCounts": {
-  "2026-11-04": 2,
+  "2026-11-04": 4,
   "2026-11-03": 1,
   "2026-11-02": 4,
   "2026-11-01": 2,
@@ -614,5 +637,5 @@
  },
  "page": 1,
  "pageCount": 5,
- "total": 96
+ "total": 98
 }
