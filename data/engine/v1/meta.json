@@ -2,31 +2,31 @@
  "site": "前沿趋势",
  "contract_version": "1.1",
  "mode": "production",
- "data_as_of": "2026-11-06T00:18:33+08:00",
- "data_as_of_label": "数据截至 2026-11-06 00:18（北京时间）",
- "generated_at": "2026-11-06T00:41:00+08:00",
+ "data_as_of": "2026-11-06T03:21:02+08:00",
+ "data_as_of_label": "数据截至 2026-11-06 03:21（北京时间）",
+ "generated_at": "2026-11-06T04:22:00+08:00",
  "hot_rule_version": "heat-v1-48h-halflife24h (前沿情报 heat48h.py 1.1)",
- "hot_computed_at": "2026-11-06T00:41:00+08:00",
+ "hot_computed_at": "2026-11-06T04:22:00+08:00",
  "window_hours": 48,
  "spark_points": 25,
  "page_size": 20,
  "counts": {
-  "cards": 103,
+  "cards": 106,
   "pages": 6,
-  "events": 103,
-  "hot_entries": 5,
-  "search_docs": 282,
+  "events": 106,
+  "hot_entries": 6,
+  "search_docs": 292,
   "feed_items": 50,
-  "passed_events": 103,
+  "passed_events": 106,
   "below_threshold_events": 0,
   "redirects": 0,
-  "hot_snapshots": 18,
+  "hot_snapshots": 17,
   "covers": 10
  },
  "last_round": {
-  "batch_id": "2026-11-06T0018",
+  "batch_id": "2026-11-06T0321",
   "status": "ok",
-  "finished_at": "2026-11-06T00:35:52+08:00"
+  "finished_at": "2026-11-06T03:35:14+08:00"
  },
  "batches": [
   {
@@ -1452,6 +1452,18 @@
   {
    "batch_id": "2026-11-06T0018",
    "status": "ok"
+  },
+  {
+   "batch_id": "2026-11-06T0119",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-11-06T0229",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-11-06T0321",
+   "status": "ok"
   }
  ],
  "files": [
@@ -1557,12 +1569,13 @@
   "events/2026-11-05-openai-thousand-fewer-paths-to-root.json",
   "events/2026-11-05-phonon-tts.json",
   "events/2026-11-05-vllm-kinference.json",
+  "events/2026-11-06-gemini-omni-12-flash.json",
+  "events/2026-11-06-microsoft-pdd-kit.json",
   "events/2026-11-06-mistral-studio.json",
   "events/2026-11-06-nvidia-ai-factory-byte-codesign.json",
+  "events/2026-11-06-openai-gpt6-cyber.json",
   "events/index.json",
   "feed/selected.json",
-  "hot-snapshots/2026-11-03T00.json",
-  "hot-snapshots/2026-11-03T03.json",
   "hot-snapshots/2026-11-03T08.json",
   "hot-snapshots/2026-11-03T20.json",
   "hot-snapshots/2026-11-03T21.json",
@@ -1579,6 +1592,7 @@
   "hot-snapshots/2026-11-05T15.json",
   "hot-snapshots/2026-11-05T19.json",
   "hot-snapshots/2026-11-06T00.json",
+  "hot-snapshots/2026-11-06T04.json",
   "hot-strip.json",
   "hot.json",
   "meta.json",

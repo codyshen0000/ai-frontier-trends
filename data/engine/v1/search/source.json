@@ -1,6 +1,92 @@
 {
- "generatedAt": "2026-11-05T16:41:00.000Z",
+ "generatedAt": "2026-11-05T20:22:00.000Z",
  "docs": [
+  {
+   "id": "sha256:5f2083e6ffbe0388",
+   "kind": "item",
+   "title": "报道：OpenAI 发布新网络安全模型，这够吗？",
+   "summary": null,
+   "publishedAt": "2026-11-05T19:06:12.000Z",
+   "sourceName": "TechCrunch · AI",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-11-06-openai-gpt6-cyber",
+   "originalUrl": "https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough/"
+  },
+  {
+   "id": "2026-11-06-openai-gpt6-cyber",
+   "kind": "event",
+   "title": "OpenAI：发布 GPT-6 Cyber，推进对齐的网络安全智能体",
+   "summary": "OpenAI 官方：GPT-6 Cyber 面向发现可利用漏洞并开发修复，训练上强调不越权、留在授权范围内。",
+   "publishedAt": "2026-11-05T19:06:12.000Z",
+   "sourceNames": [
+    "OpenAI News",
+    "TechCrunch · AI",
+    "The Verge · AI"
+   ],
+   "path": "/events/2026-11-06-openai-gpt6-cyber/"
+  },
+  {
+   "id": "sha256:b2e861cf858b7f41",
+   "kind": "item",
+   "title": "报道：谷歌 Gemini Omni 1.2 Flash 视频至约 15 秒并降价",
+   "summary": "The Decoder：跟进 Omni 1.2 Flash 时长与定价。",
+   "publishedAt": "2026-11-05T19:05:31.000Z",
+   "sourceName": "The Decoder",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-11-06-gemini-omni-12-flash",
+   "originalUrl": "https://the-decoder.com/googles-gemini-omni-1-2-flash-stretches-ai-video-clips-to-15-seconds-and-cuts-pricing-by-30-percent/"
+  },
+  {
+   "id": "2026-11-06-gemini-omni-12-flash",
+   "kind": "event",
+   "title": "DeepMind：Gemini Omni 1.2 Flash，更长视频片段、更低价格",
+   "summary": "Google DeepMind / Google AI Blog：Gemini Omni 1.2 Flash 宣称更快、更省，并支持更长视频片段。",
+   "publishedAt": "2026-11-05T19:05:31.000Z",
+   "sourceNames": [
+    "Google AI (The Keyword · AI)",
+    "Google DeepMind Blog",
+    "The Decoder"
+   ],
+   "path": "/events/2026-11-06-gemini-omni-12-flash/"
+  },
+  {
+   "id": "sha256:1750855042e8ceec",
+   "kind": "item",
+   "title": "DeepMind：Gemini Omni 1.2 Flash，更长视频片段、更低价格",
+   "summary": "Google DeepMind：Gemini Omni 1.2 Flash 宣称更快更省、支持更长视频。",
+   "publishedAt": "2026-11-05T17:05:16.000Z",
+   "sourceName": "Google DeepMind Blog",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-11-06-gemini-omni-12-flash",
+   "originalUrl": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/"
+  },
+  {
+   "id": "sha256:c84a4cb62f0462d2",
+   "kind": "item",
+   "title": "报道：OpenAI 称新网络安全模型更擅长「不黑其他公司」",
+   "summary": "The Verge：报道 OpenAI 新网络安全模型 GPT-6 Cyber 发布口径。",
+   "publishedAt": "2026-11-05T17:00:00.000Z",
+   "sourceName": "The Verge · AI",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-11-06-openai-gpt6-cyber",
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1027599/openai-gpt-6-cyber-launch"
+  },
+  {
+   "id": "sha256:485654c1f98a7cdc",
+   "kind": "item",
+   "title": "Google：Gemini Omni 1.2 Flash，更长视频、更低价",
+   "summary": "Google AI Blog：同发 Gemini Omni 1.2 Flash。",
+   "publishedAt": "2026-11-05T17:00:00.000Z",
+   "sourceName": "Google AI (The Keyword · AI)",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-11-06-gemini-omni-12-flash",
+   "originalUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+  },
   {
    "id": "sha256:7a4fd1de9b53747b",
    "kind": "item",
@@ -14,6 +100,18 @@
    "originalUrl": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/"
   },
   {
+   "id": "sha256:3a45181f6d992343",
+   "kind": "item",
+   "title": "微软研究院：发布 PDD Kit，形式化验证智能体编写的全栈 Web 应用",
+   "summary": "Microsoft Research：PDD Kit 形式化验证 agent 生成的全栈 Web 应用。",
+   "publishedAt": "2026-11-05T16:00:00.000Z",
+   "sourceName": "Microsoft Research Blog",
+   "category": "paper",
+   "selected": true,
+   "eventPublicId": "2026-11-06-microsoft-pdd-kit",
+   "originalUrl": "https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/"
+  },
+  {
    "id": "2026-11-06-nvidia-ai-factory-byte-codesign",
    "kind": "event",
    "title": "NVIDIA：五项协同设计最大化 AI 工厂每一字节价值",
@@ -23,6 +121,17 @@
     "NVIDIA Technical Blog"
    ],
    "path": "/events/2026-11-06-nvidia-ai-factory-byte-codesign/"
+  },
+  {
+   "id": "2026-11-06-microsoft-pdd-kit",
+   "kind": "event",
+   "title": "微软研究院：发布 PDD Kit，形式化验证智能体编写的全栈 Web 应用",
+   "summary": "Microsoft Research：PDD Kit 用形式化方法验证智能体生成的全栈 Web 应用正确性，面向 agent 写码落地。",
+   "publishedAt": "2026-11-05T16:00:00.000Z",
+   "sourceNames": [
+    "Microsoft Research Blog"
+   ],
+   "path": "/events/2026-11-06-microsoft-pdd-kit/"
   },
   {
    "id": "sha256:13d48b5237229e6c",
@@ -70,6 +179,18 @@
     "Mistral AI News"
    ],
    "path": "/events/2026-11-06-mistral-studio/"
+  },
+  {
+   "id": "sha256:14e90e72d3401ddf",
+   "kind": "item",
+   "title": "OpenAI：发布 GPT-6 Cyber，推进对齐的网络安全智能体",
+   "summary": "OpenAI 官方：GPT-6 Cyber 面向发现可利用漏洞并开发修复，强调授权范围内。",
+   "publishedAt": "2026-11-05T09:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-11-06-openai-gpt6-cyber",
+   "originalUrl": "https://openai.com/index/introducing-gpt-6-cyber"
   },
   {
    "id": "sha256:25fa4dd18ec78a48",

@@ -1,7 +1,7 @@
 {
  "publicId": "2026-11-04-deepmind-antigravity-cheminformatics",
  "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
- "status": "active",
+ "status": "watching",
  "reportCount": 2,
  "sourceCount": 2,
  "firstReportAt": "2026-11-03T17:01:49.000Z",
@@ -13,11 +13,11 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 2,
+  "participants48h": 0,
   "newParticipants6h": 0,
   "recentReports24h": 0,
-  "observationComplete": true,
-  "rank": 5
+  "observationComplete": false,
+  "rank": null
  },
  "developments": [
   {
@@ -79,246 +79,9 @@
    "originalUrl": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/"
   }
  ],
- "heat": [
-  {
-   "hour": "2026-11-03T18:00:00.000Z",
-   "heat": 19.5,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-03T19:00:00.000Z",
-   "heat": 19.0,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-03T20:00:00.000Z",
-   "heat": 18.4,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-03T21:00:00.000Z",
-   "heat": 17.9,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-03T22:00:00.000Z",
-   "heat": 17.4,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-03T23:00:00.000Z",
-   "heat": 16.9,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-04T00:00:00.000Z",
-   "heat": 16.4,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-04T01:00:00.000Z",
-   "heat": 16.0,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-04T02:00:00.000Z",
-   "heat": 15.5,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-04T03:00:00.000Z",
-   "heat": 15.1,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-04T04:00:00.000Z",
-   "heat": 14.6,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-04T05:00:00.000Z",
-   "heat": 14.2,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-04T06:00:00.000Z",
-   "heat": 13.8,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-04T07:00:00.000Z",
-   "heat": 13.4,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-04T08:00:00.000Z",
-   "heat": 13.0,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-04T09:00:00.000Z",
-   "heat": 12.7,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-04T10:00:00.000Z",
-   "heat": 12.3,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-04T11:00:00.000Z",
-   "heat": 12.0,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-04T12:00:00.000Z",
-   "heat": 11.6,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-04T13:00:00.000Z",
-   "heat": 11.3,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-04T14:00:00.000Z",
-   "heat": 11.0,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-04T15:00:00.000Z",
-   "heat": 10.7,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-04T16:00:00.000Z",
-   "heat": 10.3,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-04T17:00:00.000Z",
-   "heat": 10.1,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-04T18:00:00.000Z",
-   "heat": 9.8,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-04T19:00:00.000Z",
-   "heat": 9.5,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-04T20:00:00.000Z",
-   "heat": 9.2,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-04T21:00:00.000Z",
-   "heat": 9.0,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-04T22:00:00.000Z",
-   "heat": 8.7,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-04T23:00:00.000Z",
-   "heat": 8.5,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-05T00:00:00.000Z",
-   "heat": 8.2,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-05T01:00:00.000Z",
-   "heat": 8.0,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-05T02:00:00.000Z",
-   "heat": 7.8,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-05T03:00:00.000Z",
-   "heat": 7.5,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-05T04:00:00.000Z",
-   "heat": 7.3,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-05T05:00:00.000Z",
-   "heat": 7.1,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-05T06:00:00.000Z",
-   "heat": 6.9,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-05T07:00:00.000Z",
-   "heat": 6.7,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-05T08:00:00.000Z",
-   "heat": 6.5,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-05T09:00:00.000Z",
-   "heat": 6.3,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-05T10:00:00.000Z",
-   "heat": 6.2,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-05T11:00:00.000Z",
-   "heat": 6.0,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-05T12:00:00.000Z",
-   "heat": 5.8,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-05T13:00:00.000Z",
-   "heat": 5.6,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-05T14:00:00.000Z",
-   "heat": 5.5,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-05T15:00:00.000Z",
-   "heat": 5.3,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-05T16:00:00.000Z",
-   "heat": 5.2,
-   "participants": 2
-  }
- ],
+ "heat": [],
  "related": [],
  "topics": [],
  "recommendReason": "DeepMind：Antigravity 化学信息学技能加速药物发现",
- "primaryUrl": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
- "rankDelta": -1
+ "primaryUrl": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/"
 }

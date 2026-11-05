@@ -1,0 +1,101 @@
+{
+ "publicId": "2026-11-06-microsoft-pdd-kit",
+ "title": "微软研究院：发布 PDD Kit，形式化验证智能体编写的全栈 Web 应用",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-11-05T16:00:00.000Z",
+ "latestAt": "2026-11-05T16:00:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Microsoft Research：PDD Kit 用形式化方法验证智能体生成的全栈 Web 应用正确性，面向 agent 写码落地。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-11-06-microsoft-pdd-kit",
+   "title": "微软研究院：发布 PDD Kit，形式化验证智能体编写的全栈 Web 应用",
+   "firstReportAt": "2026-11-05T16:00:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:3a45181f6d992343",
+    "title": "微软研究院：发布 PDD Kit，形式化验证智能体编写的全栈 Web 应用",
+    "summary": "Microsoft Research：PDD Kit 形式化验证 agent 生成的全栈 Web 应用。",
+    "source": {
+     "name": "Microsoft Research Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-11-05T16:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:3a45181f6d992343",
+   "title": "微软研究院：发布 PDD Kit，形式化验证智能体编写的全栈 Web 应用",
+   "summary": "Microsoft Research：PDD Kit 形式化验证 agent 生成的全栈 Web 应用。",
+   "source": {
+    "name": "Microsoft Research Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-05T16:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:3a45181f6d992343",
+   "title": "微软研究院：发布 PDD Kit，形式化验证智能体编写的全栈 Web 应用",
+   "summary": "Microsoft Research：PDD Kit 形式化验证 agent 生成的全栈 Web 应用。",
+   "source": {
+    "name": "Microsoft Research Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-05T16:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-11-05T16:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T17:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T18:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T19:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T20:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "微软研究院：PDD Kit 形式化验证智能体全栈应用",
+ "primaryUrl": "https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/"
+}

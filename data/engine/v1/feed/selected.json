@@ -8,6 +8,17 @@
  },
  "items": [
   {
+   "guid": "sha256:485654c1f98a7cdc",
+   "title": "Google：Gemini Omni 1.2 Flash，更长视频、更低价",
+   "summary": "Google AI Blog：同发 Gemini Omni 1.2 Flash。",
+   "originalUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+   "pubDate": "2026-11-05T17:00:00.000Z",
+   "sourceName": "Google AI (The Keyword · AI)",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-11-06-gemini-omni-12-flash"
+  },
+  {
    "guid": "sha256:7a4fd1de9b53747b",
    "title": "NVIDIA：五项协同设计最大化 AI 工厂每一字节价值",
    "summary": "NVIDIA 技术博客：五项软硬协同设计提升 AI 工厂内存/带宽效率。",
@@ -19,6 +30,17 @@
    "eventPublicId": "2026-11-06-nvidia-ai-factory-byte-codesign"
   },
   {
+   "guid": "sha256:3a45181f6d992343",
+   "title": "微软研究院：发布 PDD Kit，形式化验证智能体编写的全栈 Web 应用",
+   "summary": "Microsoft Research：PDD Kit 形式化验证 agent 生成的全栈 Web 应用。",
+   "originalUrl": "https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/",
+   "pubDate": "2026-11-05T16:00:00.000Z",
+   "sourceName": "Microsoft Research Blog",
+   "category": "paper",
+   "categoryLabel": "论文",
+   "eventPublicId": "2026-11-06-microsoft-pdd-kit"
+  },
+  {
    "guid": "sha256:5bd02a39074589ea",
    "title": "Mistral：发布 Studio，配合 Le Chonk 构建企业智能体与工作流",
    "summary": "Mistral 官方：推出 Studio，加速企业智能体/工作流/应用构建与部署。",
@@ -28,6 +50,17 @@
    "category": "product",
    "categoryLabel": "产品",
    "eventPublicId": "2026-11-06-mistral-studio"
+  },
+  {
+   "guid": "sha256:14e90e72d3401ddf",
+   "title": "OpenAI：发布 GPT-6 Cyber，推进对齐的网络安全智能体",
+   "summary": "OpenAI 官方：GPT-6 Cyber 面向发现可利用漏洞并开发修复，强调授权范围内。",
+   "originalUrl": "https://openai.com/index/introducing-gpt-6-cyber",
+   "pubDate": "2026-11-05T09:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-11-06-openai-gpt6-cyber"
   },
   {
    "guid": "sha256:25fa4dd18ec78a48",
@@ -523,39 +556,6 @@
    "category": "product",
    "categoryLabel": "产品",
    "eventPublicId": "2026-10-28-antgroup-ling-31-flash-1019"
-  },
-  {
-   "guid": "sha256:f0e3f8456fcbc65d",
-   "title": "微软发布 MAI-Image-2.7：图像编辑预览登 Artificial Analysis 第二",
-   "summary": "微软 AI 官方宣布推出 MAI Image 2.7 图像编辑预览：主打场景重绘/打光、图内文字与符号修改、素材修复增强；称在 Artificial Analysis 图像编辑榜列第二、Arena Edit 第三，相对 2.6 在全部评测用例与编辑动作上提升，场景与风格项领先约 24 Elo。现阶段以已有图片+指令编辑为主，文生图尚未开放；官方未公布 2.7 API/定价。IT之家等跟进转述。",
-   "originalUrl": "https://microsoft.ai/news/mai-image-2-7-debut/",
-   "pubDate": "2026-10-27T00:00:00.000Z",
-   "sourceName": "Microsoft AI",
-   "category": "product",
-   "categoryLabel": "产品",
-   "eventPublicId": "2026-10-28-microsoft-mai-image-27"
-  },
-  {
-   "guid": "sha256:8d93b09012158ea0",
-   "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
-   "summary": "Cloudflare 官方披露并修复 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题。属官方安全通告。",
-   "originalUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
-   "pubDate": "2026-10-26T22:41:48.000Z",
-   "sourceName": "Cloudflare Blog",
-   "category": "industry",
-   "categoryLabel": "行业",
-   "eventPublicId": "2026-10-27-cloudflare-glm53-kv-cache"
-  },
-  {
-   "guid": "sha256:685d9381627543c3",
-   "title": "Baseten：BDN Sealed Volumes 一次发布处处挂载",
-   "summary": "Baseten 博客发布 BDN Sealed Volumes：一次发布、多处挂载的密封卷能力。",
-   "originalUrl": "https://www.baseten.co/blog/bdn-sealed-volumes-publish-once-mount-anywhere/",
-   "pubDate": "2026-10-26T21:23:55.000Z",
-   "sourceName": "Baseten Blog",
-   "category": "product",
-   "categoryLabel": "产品",
-   "eventPublicId": "2026-10-27-baseten-bdn-sealed-volumes"
   }
  ]
 }

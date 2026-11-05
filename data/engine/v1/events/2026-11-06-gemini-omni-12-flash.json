@@ -1,0 +1,132 @@
+{
+ "publicId": "2026-11-06-gemini-omni-12-flash",
+ "title": "DeepMind：Gemini Omni 1.2 Flash，更长视频片段、更低价格",
+ "status": "active",
+ "reportCount": 3,
+ "sourceCount": 3,
+ "firstReportAt": "2026-11-05T17:00:00.000Z",
+ "latestAt": "2026-11-05T19:05:31.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Google DeepMind / Google AI Blog：Gemini Omni 1.2 Flash 宣称更快、更省，并支持更长视频片段。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 2,
+  "newParticipants6h": 2,
+  "recentReports24h": 3,
+  "observationComplete": true,
+  "rank": 2
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-11-06-gemini-omni-12-flash",
+   "title": "DeepMind：Gemini Omni 1.2 Flash，更长视频片段、更低价格",
+   "firstReportAt": "2026-11-05T17:00:00.000Z",
+   "reportCount": 3,
+   "representative": {
+    "id": "sha256:485654c1f98a7cdc",
+    "title": "Google：Gemini Omni 1.2 Flash，更长视频、更低价",
+    "summary": "Google AI Blog：同发 Gemini Omni 1.2 Flash。",
+    "source": {
+     "name": "Google AI (The Keyword · AI)",
+     "firstParty": true
+    },
+    "publishedAt": "2026-11-05T17:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:1750855042e8ceec",
+   "title": "DeepMind：Gemini Omni 1.2 Flash，更长视频片段、更低价格",
+   "summary": "Google DeepMind：Gemini Omni 1.2 Flash 宣称更快更省、支持更长视频。",
+   "source": {
+    "name": "Google DeepMind Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-05T17:05:16.000Z",
+   "selected": false,
+   "originalUrl": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/"
+  },
+  {
+   "id": "sha256:485654c1f98a7cdc",
+   "title": "Google：Gemini Omni 1.2 Flash，更长视频、更低价",
+   "summary": "Google AI Blog：同发 Gemini Omni 1.2 Flash。",
+   "source": {
+    "name": "Google AI (The Keyword · AI)",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-05T17:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:b2e861cf858b7f41",
+   "title": "报道：谷歌 Gemini Omni 1.2 Flash 视频至约 15 秒并降价",
+   "summary": "The Decoder：跟进 Omni 1.2 Flash 时长与定价。",
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-05T19:05:31.000Z",
+   "selected": false,
+   "originalUrl": "https://the-decoder.com/googles-gemini-omni-1-2-flash-stretches-ai-video-clips-to-15-seconds-and-cuts-pricing-by-30-percent/"
+  },
+  {
+   "id": "sha256:1750855042e8ceec",
+   "title": "DeepMind：Gemini Omni 1.2 Flash，更长视频片段、更低价格",
+   "summary": "Google DeepMind：Gemini Omni 1.2 Flash 宣称更快更省、支持更长视频。",
+   "source": {
+    "name": "Google DeepMind Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-05T17:05:16.000Z",
+   "selected": false,
+   "originalUrl": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/"
+  },
+  {
+   "id": "sha256:485654c1f98a7cdc",
+   "title": "Google：Gemini Omni 1.2 Flash，更长视频、更低价",
+   "summary": "Google AI Blog：同发 Gemini Omni 1.2 Flash。",
+   "source": {
+    "name": "Google AI (The Keyword · AI)",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-05T17:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-11-05T17:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T18:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T19:00:00.000Z",
+   "heat": 9.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T20:00:00.000Z",
+   "heat": 18.9,
+   "participants": 2
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "DeepMind：Gemini Omni 1.2 Flash，更长视频更低价",
+ "primaryUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+}

@@ -21,6 +21,13 @@
    "homepage": "https://hnrss.org"
   },
   {
+   "sourceId": "rss-google-ai-blog",
+   "name": "Google AI (The Keyword · AI)",
+   "tier": "T1",
+   "kind": "editorial",
+   "homepage": "https://blog.google"
+  },
+  {
    "sourceId": "rss-google-deepmind",
    "name": "Google DeepMind Blog",
    "tier": "T1",

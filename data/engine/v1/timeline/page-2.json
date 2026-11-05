@@ -6,6 +6,84 @@
  },
  "cards": [
   {
+   "key": "sha256:3a143d3580b64e5b",
+   "anchorAt": "2026-10-31T00:00:00.000Z",
+   "item": {
+    "id": "sha256:3a143d3580b64e5b",
+    "title": "Anthropic：自动化搜寻「看似无害」却能破坏监督的训练数据",
+    "summary": "Anthropic Alignment：用 Claude 自动生成养蜂/摔跤等虚构语境数据，可训练小模型破坏监督或欺骗；官方页 Automated Subtle Emergent Misalignment Research。",
+    "reason": "Anthropic：用无害文本自动生成可破坏监督的训练数据",
+    "source": {
+     "name": "Anthropic Alignment"
+    },
+    "publishedAt": "2026-10-31T00:00:00.000Z",
+    "timelineAt": "2026-10-31T00:00:00.000Z",
+    "category": "paper",
+    "tags": [
+     "fp_hop_as_rep"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-31-anthropic-automated-em-search",
+    "originalUrl": "https://alignment.anthropic.com/2026/automated-em-search/"
+   },
+   "group": {
+    "factId": "fact-2026-10-31-anthropic-automated-em-search",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:3a143d3580b64e5b"
+    ]
+   }
+  },
+  {
+   "key": "sha256:8e6d8828488a3929",
+   "anchorAt": "2026-10-30T22:51:44.000Z",
+   "item": {
+    "id": "sha256:8e6d8828488a3929",
+    "title": "Wiz：AI 开发平台的「黑色十月」",
+    "summary": "Wiz 官方盘点 AI 开发平台 10 月安全事件；过闸。",
+    "reason": "Wiz：盘点 AI 开发平台「黑色十月」安全事件",
+    "source": {
+     "name": "Wiz Blog"
+    },
+    "publishedAt": "2026-10-30T22:51:44.000Z",
+    "timelineAt": "2026-10-30T22:51:44.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-31-wiz-black-october-ai-dev",
+    "originalUrl": "https://www.wiz.io/blog/black-october-for-ai-developer-platforms"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:b0afceb347e7b188",
+   "anchorAt": "2026-10-30T16:00:00.000Z",
+   "item": {
+    "id": "sha256:b0afceb347e7b188",
+    "title": "NVIDIA：发布 NemoClaw，在可控栈上构建专用智能体",
+    "summary": "NVIDIA 官方 NemoClaw 智能体栈。产品技术文；过闸。",
+    "reason": "NVIDIA 发布 NemoClaw：可控栈上构建专用智能体",
+    "source": {
+     "name": "NVIDIA Technical Blog"
+    },
+    "publishedAt": "2026-10-30T16:00:00.000Z",
+    "timelineAt": "2026-10-30T16:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-31-nvidia-nemoclaw-agents",
+    "originalUrl": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:f37fa8ee7ba135be",
    "anchorAt": "2026-10-30T12:57:42.000Z",
    "item": {
@@ -453,83 +531,6 @@
      "sha256:e97319d8730a2e80"
     ]
    }
-  },
-  {
-   "key": "sha256:1c5b51464767c2ad",
-   "anchorAt": "2026-10-27T17:16:52.000Z",
-   "item": {
-    "id": "sha256:1c5b51464767c2ad",
-    "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族",
-    "summary": null,
-    "reason": "LiquidAI 发布 LFM3：约 2B 多模态同骨干开源族",
-    "source": {
-     "name": "Hugging Face Blog"
-    },
-    "publishedAt": "2026-10-27T17:16:52.000Z",
-    "timelineAt": "2026-10-27T17:16:52.000Z",
-    "category": "model",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-28-liquidai-lfm3",
-    "originalUrl": "https://huggingface.co/blog/LiquidAI/lfm3"
-   },
-   "group": {
-    "factId": "fact-2026-10-28-liquidai-lfm3",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:1c5b51464767c2ad",
-     "sha256:a3a8ddf99df9b0da"
-    ]
-   }
-  },
-  {
-   "key": "sha256:64295c3ae779f4ac",
-   "anchorAt": "2026-10-27T17:08:08.000Z",
-   "item": {
-    "id": "sha256:64295c3ae779f4ac",
-    "title": "OpenAI：公开「指数时间假设为假」预印本材料",
-    "summary": null,
-    "reason": null,
-    "source": {
-     "name": "TechCrunch · AI"
-    },
-    "publishedAt": "2026-10-27T17:08:08.000Z",
-    "timelineAt": "2026-10-27T17:08:08.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-28-frontier-labs-eth-refutation",
-    "originalUrl": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:a9a41b70941237e4",
-   "anchorAt": "2026-10-27T17:00:00.000Z",
-   "item": {
-    "id": "sha256:a9a41b70941237e4",
-    "title": "NVIDIA：RTX Spark 支撑神经渲染与游戏内 AI 角色",
-    "summary": null,
-    "reason": "NVIDIA 介绍 RTX Spark 上的神经渲染与本地 AI 角色",
-    "source": {
-     "name": "NVIDIA Technical Blog"
-    },
-    "publishedAt": "2026-10-27T17:00:00.000Z",
-    "timelineAt": "2026-10-27T17:00:00.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-28-nvidia-rtx-spark-games",
-    "originalUrl": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-3.json",
@@ -537,5 +538,5 @@
  "dayCounts": {},
  "page": 2,
  "pageCount": 6,
- "total": 103
+ "total": 106
 }

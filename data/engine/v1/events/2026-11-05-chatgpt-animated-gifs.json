@@ -15,9 +15,9 @@
  "whyHot": {
   "participants48h": 4,
   "newParticipants6h": 0,
-  "recentReports24h": 3,
+  "recentReports24h": 1,
   "observationComplete": true,
-  "rank": 1
+  "rank": 3
  },
  "developments": [
   {
@@ -308,11 +308,31 @@
    "hour": "2026-11-05T16:00:00.000Z",
    "heat": 20.7,
    "participants": 4
+  },
+  {
+   "hour": "2026-11-05T17:00:00.000Z",
+   "heat": 20.1,
+   "participants": 4
+  },
+  {
+   "hour": "2026-11-05T18:00:00.000Z",
+   "heat": 19.5,
+   "participants": 4
+  },
+  {
+   "hour": "2026-11-05T19:00:00.000Z",
+   "heat": 19.0,
+   "participants": 4
+  },
+  {
+   "hour": "2026-11-05T20:00:00.000Z",
+   "heat": 18.4,
+   "participants": 4
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "OpenAI：Images 2.6 带来 GIF、更快生图与 API 控制",
  "primaryUrl": "https://openai.com/index/introducing-images-2-6",
- "rankDelta": 0
+ "rankDelta": -2
 }

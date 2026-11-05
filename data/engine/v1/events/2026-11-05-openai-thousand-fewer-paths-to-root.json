@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 1,
   "observationComplete": true,
-  "rank": 3
+  "rank": 5
  },
  "developments": [
   {
@@ -244,11 +244,31 @@
    "hour": "2026-11-05T16:00:00.000Z",
    "heat": 10.6,
    "participants": 2
+  },
+  {
+   "hour": "2026-11-05T17:00:00.000Z",
+   "heat": 10.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-05T18:00:00.000Z",
+   "heat": 10.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-05T19:00:00.000Z",
+   "heat": 9.7,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-05T20:00:00.000Z",
+   "heat": 9.5,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "OpenAI：自主流水线发现并修补 948 个 Linux 提权漏洞",
  "primaryUrl": "https://openai.com/index/a-thousand-fewer-paths-to-root",
- "rankDelta": -1
+ "rankDelta": -2
 }

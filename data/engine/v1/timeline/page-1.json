@@ -6,6 +6,36 @@
  },
  "cards": [
   {
+   "key": "sha256:485654c1f98a7cdc",
+   "anchorAt": "2026-11-05T17:00:00.000Z",
+   "item": {
+    "id": "sha256:485654c1f98a7cdc",
+    "title": "Google：Gemini Omni 1.2 Flash，更长视频、更低价",
+    "summary": "Google AI Blog：同发 Gemini Omni 1.2 Flash。",
+    "reason": "DeepMind：Gemini Omni 1.2 Flash，更长视频更低价",
+    "source": {
+     "name": "Google AI (The Keyword · AI)"
+    },
+    "publishedAt": "2026-11-05T17:00:00.000Z",
+    "timelineAt": "2026-11-05T17:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-06-gemini-omni-12-flash",
+    "originalUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+   },
+   "group": {
+    "factId": "fact-2026-11-06-gemini-omni-12-flash",
+    "additionalSourceCount": 2,
+    "reportCount": 3,
+    "memberIds": [
+     "sha256:485654c1f98a7cdc"
+    ]
+   }
+  },
+  {
    "key": "sha256:7a4fd1de9b53747b",
    "anchorAt": "2026-11-05T16:00:00.000Z",
    "item": {
@@ -25,6 +55,29 @@
     "x": null,
     "storyPublicId": "2026-11-06-nvidia-ai-factory-byte-codesign",
     "originalUrl": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:3a45181f6d992343",
+   "anchorAt": "2026-11-05T16:00:00.000Z",
+   "item": {
+    "id": "sha256:3a45181f6d992343",
+    "title": "微软研究院：发布 PDD Kit，形式化验证智能体编写的全栈 Web 应用",
+    "summary": "Microsoft Research：PDD Kit 形式化验证 agent 生成的全栈 Web 应用。",
+    "reason": "微软研究院：PDD Kit 形式化验证智能体全栈应用",
+    "source": {
+     "name": "Microsoft Research Blog"
+    },
+    "publishedAt": "2026-11-05T16:00:00.000Z",
+    "timelineAt": "2026-11-05T16:00:00.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-06-microsoft-pdd-kit",
+    "originalUrl": "https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/"
    },
    "group": null
   },
@@ -50,6 +103,36 @@
     "originalUrl": "https://mistral.ai/news/build-with-studio/"
    },
    "group": null
+  },
+  {
+   "key": "sha256:14e90e72d3401ddf",
+   "anchorAt": "2026-11-05T09:00:00.000Z",
+   "item": {
+    "id": "sha256:14e90e72d3401ddf",
+    "title": "OpenAI：发布 GPT-6 Cyber，推进对齐的网络安全智能体",
+    "summary": "OpenAI 官方：GPT-6 Cyber 面向发现可利用漏洞并开发修复，强调授权范围内。",
+    "reason": "OpenAI：发布 GPT-6 Cyber 对齐网络安全智能体",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-11-05T09:00:00.000Z",
+    "timelineAt": "2026-11-05T09:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-06-openai-gpt6-cyber",
+    "originalUrl": "https://openai.com/index/introducing-gpt-6-cyber"
+   },
+   "group": {
+    "factId": "fact-2026-11-06-openai-gpt6-cyber",
+    "additionalSourceCount": 2,
+    "reportCount": 3,
+    "memberIds": [
+     "sha256:14e90e72d3401ddf"
+    ]
+   }
   },
   {
    "key": "sha256:25fa4dd18ec78a48",
@@ -471,92 +554,56 @@
      "sha256:5bd78febd4a59e34"
     ]
    }
-  },
-  {
-   "key": "sha256:3a143d3580b64e5b",
-   "anchorAt": "2026-10-31T00:00:00.000Z",
-   "item": {
-    "id": "sha256:3a143d3580b64e5b",
-    "title": "Anthropic：自动化搜寻「看似无害」却能破坏监督的训练数据",
-    "summary": "Anthropic Alignment：用 Claude 自动生成养蜂/摔跤等虚构语境数据，可训练小模型破坏监督或欺骗；官方页 Automated Subtle Emergent Misalignment Research。",
-    "reason": "Anthropic：用无害文本自动生成可破坏监督的训练数据",
-    "source": {
-     "name": "Anthropic Alignment"
-    },
-    "publishedAt": "2026-10-31T00:00:00.000Z",
-    "timelineAt": "2026-10-31T00:00:00.000Z",
-    "category": "paper",
-    "tags": [
-     "fp_hop_as_rep"
-    ],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-31-anthropic-automated-em-search",
-    "originalUrl": "https://alignment.anthropic.com/2026/automated-em-search/"
-   },
-   "group": {
-    "factId": "fact-2026-10-31-anthropic-automated-em-search",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:3a143d3580b64e5b"
-    ]
-   }
-  },
-  {
-   "key": "sha256:8e6d8828488a3929",
-   "anchorAt": "2026-10-30T22:51:44.000Z",
-   "item": {
-    "id": "sha256:8e6d8828488a3929",
-    "title": "Wiz：AI 开发平台的「黑色十月」",
-    "summary": "Wiz 官方盘点 AI 开发平台 10 月安全事件；过闸。",
-    "reason": "Wiz：盘点 AI 开发平台「黑色十月」安全事件",
-    "source": {
-     "name": "Wiz Blog"
-    },
-    "publishedAt": "2026-10-30T22:51:44.000Z",
-    "timelineAt": "2026-10-30T22:51:44.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-31-wiz-black-october-ai-dev",
-    "originalUrl": "https://www.wiz.io/blog/black-october-for-ai-developer-platforms"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:b0afceb347e7b188",
-   "anchorAt": "2026-10-30T16:00:00.000Z",
-   "item": {
-    "id": "sha256:b0afceb347e7b188",
-    "title": "NVIDIA：发布 NemoClaw，在可控栈上构建专用智能体",
-    "summary": "NVIDIA 官方 NemoClaw 智能体栈。产品技术文；过闸。",
-    "reason": "NVIDIA 发布 NemoClaw：可控栈上构建专用智能体",
-    "source": {
-     "name": "NVIDIA Technical Blog"
-    },
-    "publishedAt": "2026-10-30T16:00:00.000Z",
-    "timelineAt": "2026-10-30T16:00:00.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-31-nvidia-nemoclaw-agents",
-    "originalUrl": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-2.json",
  "hot": [
   {
    "rank": 1,
+   "title": "OpenAI：发布 GPT-6 Cyber，推进对齐的网络安全智能体",
+   "heat": 25.9,
+   "trend": "up",
+   "storyPublicId": "2026-11-06-openai-gpt6-cyber",
+   "itemId": "sha256:14e90e72d3401ddf",
+   "participants": [
+    {
+     "name": "OpenAI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 3
+  },
+  {
+   "rank": 2,
+   "title": "DeepMind：Gemini Omni 1.2 Flash，更长视频片段、更低价格",
+   "heat": 18.7,
+   "trend": "new",
+   "storyPublicId": "2026-11-06-gemini-omni-12-flash",
+   "itemId": "sha256:485654c1f98a7cdc",
+   "participants": [
+    {
+     "name": "Google DeepMind Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2
+  },
+  {
+   "rank": 3,
    "title": "OpenAI：推出 Images 2.6（更快生成、GIF、精细编辑与 API 控制）",
-   "heat": 20.3,
+   "heat": 18.2,
    "trend": "down",
    "storyPublicId": "2026-11-05-chatgpt-animated-gifs",
    "itemId": "sha256:295354ff422b0d4d",
@@ -581,9 +628,9 @@
    "participantCount": 4
   },
   {
-   "rank": 2,
+   "rank": 4,
    "title": "OpenAI：为负责任 AI 基建设立新标准（社区契约与算力园区政策蓝图）",
-   "heat": 16.0,
+   "heat": 14.4,
    "trend": "up",
    "storyPublicId": "2026-11-05-openai-responsible-ai-infrastructure",
    "itemId": "sha256:25fa4dd18ec78a48",
@@ -600,9 +647,9 @@
    "participantCount": 2
   },
   {
-   "rank": 3,
+   "rank": 5,
    "title": "OpenAI：少一千条通往 root 的路径（自主发现并修补 948 个 Linux 提权漏洞）",
-   "heat": 10.4,
+   "heat": 9.4,
    "trend": "down",
    "storyPublicId": "2026-11-05-openai-thousand-fewer-paths-to-root",
    "itemId": "sha256:fbaa86a829ad59fd",
@@ -617,49 +664,11 @@
     }
    ],
    "participantCount": 2
-  },
-  {
-   "rank": 4,
-   "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
-   "heat": 10.0,
-   "trend": "down",
-   "storyPublicId": "2026-11-04-openai-acquire-pierre",
-   "itemId": "sha256:1be4fdd8e6ca80f0",
-   "participants": [
-    {
-     "name": "OpenAI News",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 2
-  },
-  {
-   "rank": 5,
-   "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
-   "heat": 5.1,
-   "trend": "down",
-   "storyPublicId": "2026-11-04-deepmind-antigravity-cheminformatics",
-   "itemId": "sha256:23c4f130369cb972",
-   "participants": [
-    {
-     "name": "Google DeepMind Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
-    }
-   ],
-   "participantCount": 2
   }
  ],
  "dayCounts": {
-  "2026-11-06": 1,
-  "2026-11-05": 3,
+  "2026-11-06": 3,
+  "2026-11-05": 4,
   "2026-11-04": 5,
   "2026-11-03": 1,
   "2026-11-02": 4,
@@ -681,5 +690,5 @@
  },
  "page": 1,
  "pageCount": 6,
- "total": 103
+ "total": 106
 }
