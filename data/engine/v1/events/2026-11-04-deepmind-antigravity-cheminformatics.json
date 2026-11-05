@@ -254,11 +254,26 @@
    "hour": "2026-11-05T04:00:00.000Z",
    "heat": 7.3,
    "participants": 2
+  },
+  {
+   "hour": "2026-11-05T05:00:00.000Z",
+   "heat": 7.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-05T06:00:00.000Z",
+   "heat": 6.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-05T07:00:00.000Z",
+   "heat": 6.7,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "DeepMind：Antigravity 化学信息学技能加速药物发现",
  "primaryUrl": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
- "rankDelta": -1
+ "rankDelta": 0
 }
