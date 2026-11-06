@@ -13,11 +13,11 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 2,
+  "participants48h": 1,
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 6
+  "rank": null
  },
  "developments": [
   {
@@ -80,21 +80,6 @@
   }
  ],
  "heat": [
-  {
-   "hour": "2026-11-04T08:00:00.000Z",
-   "heat": 10.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-04T09:00:00.000Z",
-   "heat": 9.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-04T10:00:00.000Z",
-   "heat": 9.4,
-   "participants": 1
-  },
   {
    "hour": "2026-11-04T11:00:00.000Z",
    "heat": 9.2,
@@ -319,11 +304,30 @@
    "hour": "2026-11-06T07:00:00.000Z",
    "heat": 6.9,
    "participants": 2
+  },
+  {
+   "hour": "2026-11-06T08:00:00.000Z",
+   "heat": 4.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T09:00:00.000Z",
+   "heat": 4.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T10:00:00.000Z",
+   "heat": 4.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T11:00:00.000Z",
+   "heat": 3.8,
+   "participants": 1
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "OpenAI：自主流水线发现并修补 948 个 Linux 提权漏洞",
- "primaryUrl": "https://openai.com/index/a-thousand-fewer-paths-to-root",
- "rankDelta": 0
+ "primaryUrl": "https://openai.com/index/a-thousand-fewer-paths-to-root"
 }

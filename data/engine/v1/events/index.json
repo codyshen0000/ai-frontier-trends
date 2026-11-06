@@ -61,7 +61,7 @@
    "title": "OpenAI：少一千条通往 root 的路径（自主发现并修补 948 个 Linux 提权漏洞）",
    "latestAt": "2026-11-05T01:54:44.000Z",
    "reportCount": 2,
-   "hotRank": 6
+   "hotRank": null
   },
   {
    "publicId": "2026-10-24-kimi-k31-pro",
@@ -82,7 +82,7 @@
    "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
    "latestAt": "2026-11-04T18:41:03.000Z",
    "reportCount": 2,
-   "hotRank": 7
+   "hotRank": 6
   },
   {
    "publicId": "2026-11-05-vllm-kinference",

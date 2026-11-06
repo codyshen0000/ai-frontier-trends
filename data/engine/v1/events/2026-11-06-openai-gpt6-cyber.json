@@ -15,7 +15,7 @@
  "whyHot": {
   "participants48h": 4,
   "newParticipants6h": 0,
-  "recentReports24h": 4,
+  "recentReports24h": 3,
   "observationComplete": true,
   "rank": 1
  },
@@ -217,6 +217,26 @@
   {
    "hour": "2026-11-06T07:00:00.000Z",
    "heat": 26.5,
+   "participants": 4
+  },
+  {
+   "hour": "2026-11-06T08:00:00.000Z",
+   "heat": 25.7,
+   "participants": 4
+  },
+  {
+   "hour": "2026-11-06T09:00:00.000Z",
+   "heat": 25.0,
+   "participants": 4
+  },
+  {
+   "hour": "2026-11-06T10:00:00.000Z",
+   "heat": 24.3,
+   "participants": 4
+  },
+  {
+   "hour": "2026-11-06T11:00:00.000Z",
+   "heat": 23.6,
    "participants": 4
   }
  ],
