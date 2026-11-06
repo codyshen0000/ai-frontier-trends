@@ -1,433 +1,433 @@
 {
- "computedAt": "2026-11-06T07:53:00.000Z",
- "windowHours": 48,
- "entries": [
-  {
-   "rank": 1,
-   "story": {
-    "publicId": "2026-11-06-openai-gpt6-cyber",
-    "title": "OpenAI：发布 GPT-6 Cyber，推进对齐的网络安全智能体"
-   },
-   "heat": 25.8,
-   "trend": "down",
-   "trendPct": -16.0,
-   "badges": [],
-   "participantCount": 4,
-   "sourceCount": 4,
-   "sourceNames": [
-    "The Decoder",
-    "TechCrunch · AI",
-    "The Verge · AI",
-    "OpenAI News"
-   ],
-   "participants": [
+  "computedAt": "2026-11-06T07:53:00.000Z",
+  "windowHours": 48,
+  "entries": [
     {
-     "name": "OpenAI News",
-     "kind": "editorial"
+      "rank": 1,
+      "story": {
+        "publicId": "2026-11-06-openai-gpt6-cyber",
+        "title": "OpenAI：发布 GPT-6 Cyber，推进对齐的网络安全智能体"
+      },
+      "heat": 26.5,
+      "trend": "down",
+      "trendPct": -13.7,
+      "badges": [],
+      "participantCount": 4,
+      "sourceCount": 4,
+      "sourceNames": [
+        "The Decoder",
+        "TechCrunch · AI",
+        "The Verge · AI",
+        "OpenAI News"
+      ],
+      "participants": [
+        {
+          "name": "OpenAI News",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Decoder",
+          "kind": "editorial"
+        },
+        {
+          "name": "TechCrunch · AI",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Verge · AI",
+          "kind": "editorial"
+        }
+      ],
+      "spark": [
+        null,
+        null,
+        10,
+        9.7,
+        9.4,
+        9.2,
+        8.9,
+        8.7,
+        8.4,
+        8.2,
+        17.9,
+        17.4,
+        16.9,
+        26.2,
+        35.3,
+        34.3,
+        33.4,
+        32.4,
+        31.5,
+        30.6,
+        29.7,
+        28.9,
+        28,
+        27.2,
+        26.5
+      ],
+      "summary": "OpenAI 官方：GPT-6 Cyber 面向发现可利用漏洞并开发修复，训练上强调不越权、留在授权范围内。",
+      "latest": null,
+      "cover": null,
+      "rankDelta": 0,
+      "heatDeltaPct": 2.7
     },
     {
-     "name": "The Decoder",
-     "kind": "editorial"
+      "rank": 2,
+      "story": {
+        "publicId": "2026-11-06-gemini-omni-12-flash",
+        "title": "DeepMind：Gemini Omni 1.2 Flash，更长视频片段、更低价格"
+      },
+      "heat": 20.5,
+      "trend": "down",
+      "trendPct": -13.5,
+      "badges": [],
+      "participantCount": 3,
+      "sourceCount": 2,
+      "sourceNames": [
+        "The Decoder",
+        "Google DeepMind Blog"
+      ],
+      "participants": [
+        {
+          "name": "Google DeepMind Blog",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Decoder",
+          "kind": "editorial"
+        }
+      ],
+      "spark": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        10,
+        19.5,
+        18.9,
+        28.1,
+        27.3,
+        26.5,
+        25.8,
+        25,
+        24.3,
+        23.6,
+        23,
+        22.3,
+        21.7,
+        21.1,
+        20.5
+      ],
+      "summary": "Google DeepMind / Google AI Blog：Gemini Omni 1.2 Flash 宣称更快、更省，并支持更长视频片段。",
+      "latest": null,
+      "cover": null,
+      "rankDelta": 1,
+      "heatDeltaPct": 53
     },
     {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
+      "rank": 3,
+      "story": {
+        "publicId": "2026-11-06-nvidia-ai-factory-byte-codesign",
+        "title": "NVIDIA：五项协同设计最大化 AI 工厂每一字节价值"
+      },
+      "heat": 14.5,
+      "trend": "down",
+      "trendPct": -14.2,
+      "badges": [],
+      "participantCount": 2,
+      "sourceCount": 1,
+      "sourceNames": [
+        "NVIDIA Technical Blog"
+      ],
+      "participants": [
+        {
+          "name": "NVIDIA Technical Blog",
+          "kind": "editorial"
+        },
+        {
+          "name": "IT之家（全站，需关键词过滤）",
+          "kind": "signal"
+        }
+      ],
+      "spark": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        10,
+        9.7,
+        9.4,
+        9.2,
+        8.9,
+        8.7,
+        8.4,
+        8.2,
+        17.8,
+        17.3,
+        16.8,
+        16.3,
+        15.9,
+        15.4,
+        15,
+        14.5
+      ],
+      "summary": "NVIDIA 技术博客：五项软硬协同设计提升 AI 工厂内存/带宽效率。",
+      "latest": "IT之家转述英伟达「全栈协同设计」破内存瓶颈（与既有 byte-codesign 同线；hot_signal 不作代表）",
+      "cover": null,
+      "rankDelta": -1,
+      "heatDeltaPct": 2.1
     },
     {
-     "name": "The Verge · AI",
-     "kind": "editorial"
+      "rank": 4,
+      "story": {
+        "publicId": "2026-11-05-chatgpt-animated-gifs",
+        "title": "OpenAI：推出 Images 2.6（更快生成、GIF、精细编辑与 API 控制）"
+      },
+      "heat": 11.4,
+      "trend": "down",
+      "trendPct": -13.6,
+      "badges": [],
+      "participantCount": 3,
+      "sourceCount": 3,
+      "sourceNames": [
+        "量子位",
+        "The Decoder",
+        "The Verge · AI"
+      ],
+      "participants": [
+        {
+          "name": "量子位",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Decoder",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Verge · AI",
+          "kind": "editorial"
+        }
+      ],
+      "spark": [
+        26.8,
+        26.1,
+        25.3,
+        24.6,
+        23.9,
+        23.2,
+        22.6,
+        21.9,
+        21.3,
+        20.7,
+        20.1,
+        19.5,
+        19,
+        18.4,
+        17.9,
+        17.4,
+        16.9,
+        16.4,
+        13.5,
+        13.1,
+        12.8,
+        12.4,
+        12,
+        11.7,
+        11.4
+      ],
+      "summary": "OpenAI 官方：Images 2.6 带来更快生图、GIF 创作、更精确编辑，并在 ChatGPT/Codex/API 提供新控制项。",
+      "latest": null,
+      "cover": null,
+      "rankDelta": 0,
+      "heatDeltaPct": 2.7
+    },
+    {
+      "rank": 5,
+      "story": {
+        "publicId": "2026-11-05-openai-responsible-ai-infrastructure",
+        "title": "OpenAI：为负责任 AI 基建设立新标准（社区契约与算力园区政策蓝图）"
+      },
+      "heat": 10.6,
+      "trend": "down",
+      "trendPct": -13.1,
+      "badges": [],
+      "participantCount": 2,
+      "sourceCount": 2,
+      "sourceNames": [
+        "The Decoder",
+        "OpenAI News"
+      ],
+      "participants": [
+        {
+          "name": "OpenAI News",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Decoder",
+          "kind": "editorial"
+        }
+      ],
+      "spark": [
+        8.7,
+        8.4,
+        8.2,
+        7.9,
+        7.7,
+        7.5,
+        7.3,
+        7.1,
+        16.8,
+        16.3,
+        15.8,
+        15.4,
+        14.9,
+        14.5,
+        14.1,
+        13.7,
+        13.3,
+        12.9,
+        12.6,
+        12.2,
+        11.9,
+        11.5,
+        11.2,
+        10.9,
+        10.6
+      ],
+      "summary": "OpenAI 官方：发布 National Community Compact 与 Compute Campus Policy Blueprint，承诺自付能源成本、公开水电噪声影响、本地就业与可追责条款。",
+      "latest": "The Decoder：中期选举后梳理 OpenAI 社区契约，称自愿承诺主要适用于自营园区",
+      "cover": null,
+      "rankDelta": 0,
+      "heatDeltaPct": 2.9
+    },
+    {
+      "rank": 6,
+      "story": {
+        "publicId": "2026-11-05-openai-thousand-fewer-paths-to-root",
+        "title": "OpenAI：少一千条通往 root 的路径（自主发现并修补 948 个 Linux 提权漏洞）"
+      },
+      "heat": 6.9,
+      "trend": "down",
+      "trendPct": -13.7,
+      "badges": [],
+      "participantCount": 2,
+      "sourceCount": 2,
+      "sourceNames": [
+        "量子位",
+        "OpenAI News"
+      ],
+      "participants": [
+        {
+          "name": "OpenAI News",
+          "kind": "editorial"
+        },
+        {
+          "name": "量子位",
+          "kind": "editorial"
+        }
+      ],
+      "spark": [
+        13.8,
+        13.4,
+        13,
+        12.6,
+        12.3,
+        11.9,
+        11.6,
+        11.3,
+        10.9,
+        10.6,
+        10.3,
+        10,
+        9.7,
+        9.5,
+        9.2,
+        8.9,
+        8.7,
+        8.4,
+        8.2,
+        8,
+        7.7,
+        7.5,
+        7.3,
+        7.1,
+        6.9
+      ],
+      "summary": "OpenAI 官方：自主流水线发现、验证并为 Linux 内核本地提权漏洞生成补丁，共 948 个。",
+      "latest": null,
+      "cover": null,
+      "rankDelta": 0,
+      "heatDeltaPct": 3
+    },
+    {
+      "rank": 7,
+      "story": {
+        "publicId": "2026-11-04-openai-acquire-pierre",
+        "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链"
+      },
+      "heat": 6.6,
+      "trend": "down",
+      "trendPct": -14.3,
+      "badges": [],
+      "participantCount": 2,
+      "sourceCount": 2,
+      "sourceNames": [
+        "The Decoder",
+        "OpenAI News"
+      ],
+      "participants": [
+        {
+          "name": "OpenAI News",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Decoder",
+          "kind": "editorial"
+        }
+      ],
+      "spark": [
+        13.2,
+        12.8,
+        12.5,
+        12.1,
+        11.8,
+        11.4,
+        11.1,
+        10.8,
+        10.5,
+        10.2,
+        9.9,
+        9.6,
+        9.3,
+        9.1,
+        8.8,
+        8.6,
+        8.3,
+        8.1,
+        7.9,
+        7.6,
+        7.4,
+        7.2,
+        7,
+        6.8,
+        6.6
+      ],
+      "summary": null,
+      "latest": null,
+      "cover": null,
+      "rankDelta": 0,
+      "heatDeltaPct": 3.1
     }
-   ],
-   "spark": [
-    null,
-    null,
-    10.0,
-    9.7,
-    9.4,
-    9.2,
-    8.9,
-    8.7,
-    8.4,
-    8.2,
-    17.9,
-    17.4,
-    16.9,
-    26.2,
-    35.3,
-    34.3,
-    33.4,
-    32.4,
-    31.5,
-    30.6,
-    29.7,
-    28.9,
-    28.0,
-    27.2,
-    26.5
-   ],
-   "summary": "OpenAI 官方：GPT-6 Cyber 面向发现可利用漏洞并开发修复，训练上强调不越权、留在授权范围内。",
-   "latest": null,
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -17.0
-  },
-  {
-   "rank": 2,
-   "story": {
-    "publicId": "2026-11-06-nvidia-ai-factory-byte-codesign",
-    "title": "NVIDIA：五项协同设计最大化 AI 工厂每一字节价值"
-   },
-   "heat": 14.2,
-   "trend": "down",
-   "trendPct": -16.0,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 1,
-   "sourceNames": [
-    "NVIDIA Technical Blog"
-   ],
-   "participants": [
-    {
-     "name": "NVIDIA Technical Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
-    }
-   ],
-   "spark": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    10.0,
-    9.7,
-    9.4,
-    9.2,
-    8.9,
-    8.7,
-    8.4,
-    8.2,
-    17.8,
-    17.3,
-    16.8,
-    16.3,
-    15.9,
-    15.4,
-    15.0,
-    14.5
-   ],
-   "summary": "NVIDIA 技术博客：五项软硬协同设计提升 AI 工厂内存/带宽效率。",
-   "latest": "IT之家转述英伟达「全栈协同设计」破内存瓶颈（与既有 byte-codesign 同线；hot_signal 不作代表）",
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -17.0
-  },
-  {
-   "rank": 3,
-   "story": {
-    "publicId": "2026-11-06-gemini-omni-12-flash",
-    "title": "DeepMind：Gemini Omni 1.2 Flash，更长视频片段、更低价格"
-   },
-   "heat": 13.4,
-   "trend": "down",
-   "trendPct": -16.2,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "The Decoder",
-    "Google DeepMind Blog"
-   ],
-   "participants": [
-    {
-     "name": "Google DeepMind Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    10.0,
-    9.7,
-    9.5,
-    18.9,
-    18.4,
-    17.9,
-    17.4,
-    16.9,
-    16.4,
-    15.9,
-    15.5,
-    15.0,
-    14.6,
-    14.2,
-    13.8
-   ],
-   "summary": "Google DeepMind / Google AI Blog：Gemini Omni 1.2 Flash 宣称更快、更省，并支持更长视频片段。",
-   "latest": null,
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -17.3
-  },
-  {
-   "rank": 4,
-   "story": {
-    "publicId": "2026-11-05-chatgpt-animated-gifs",
-    "title": "OpenAI：推出 Images 2.6（更快生成、GIF、精细编辑与 API 控制）"
-   },
-   "heat": 11.1,
-   "trend": "down",
-   "trendPct": -15.9,
-   "badges": [],
-   "participantCount": 3,
-   "sourceCount": 3,
-   "sourceNames": [
-    "量子位",
-    "The Decoder",
-    "The Verge · AI"
-   ],
-   "participants": [
-    {
-     "name": "量子位",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    26.8,
-    26.1,
-    25.3,
-    24.6,
-    23.9,
-    23.2,
-    22.6,
-    21.9,
-    21.3,
-    20.7,
-    20.1,
-    19.5,
-    19.0,
-    18.4,
-    17.9,
-    17.4,
-    16.9,
-    13.9,
-    13.5,
-    13.1,
-    12.8,
-    12.4,
-    12.0,
-    11.7,
-    11.4
-   ],
-   "summary": "OpenAI 官方：Images 2.6 带来更快生图、GIF 创作、更精确编辑，并在 ChatGPT/Codex/API 提供新控制项。",
-   "latest": null,
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -17.2
-  },
-  {
-   "rank": 5,
-   "story": {
-    "publicId": "2026-11-05-openai-responsible-ai-infrastructure",
-    "title": "OpenAI：为负责任 AI 基建设立新标准（社区契约与算力园区政策蓝图）"
-   },
-   "heat": 10.3,
-   "trend": "down",
-   "trendPct": -15.6,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "The Decoder",
-    "OpenAI News"
-   ],
-   "participants": [
-    {
-     "name": "OpenAI News",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    8.7,
-    8.4,
-    8.2,
-    7.9,
-    7.7,
-    7.5,
-    7.3,
-    7.1,
-    16.8,
-    16.3,
-    15.8,
-    15.4,
-    14.9,
-    14.5,
-    14.1,
-    13.7,
-    13.3,
-    12.9,
-    12.6,
-    12.2,
-    11.9,
-    11.5,
-    11.2,
-    10.9,
-    10.6
-   ],
-   "summary": "OpenAI 官方：发布 National Community Compact 与 Compute Campus Policy Blueprint，承诺自付能源成本、公开水电噪声影响、本地就业与可追责条款。",
-   "latest": "The Decoder：中期选举后梳理 OpenAI 社区契约，称自愿承诺主要适用于自营园区",
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -16.9
-  },
-  {
-   "rank": 6,
-   "story": {
-    "publicId": "2026-11-05-openai-thousand-fewer-paths-to-root",
-    "title": "OpenAI：少一千条通往 root 的路径（自主发现并修补 948 个 Linux 提权漏洞）"
-   },
-   "heat": 6.7,
-   "trend": "down",
-   "trendPct": -16.2,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "量子位",
-    "OpenAI News"
-   ],
-   "participants": [
-    {
-     "name": "OpenAI News",
-     "kind": "editorial"
-    },
-    {
-     "name": "量子位",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    13.8,
-    13.4,
-    13.0,
-    12.6,
-    12.3,
-    11.9,
-    11.6,
-    11.3,
-    10.9,
-    10.6,
-    10.3,
-    10.0,
-    9.7,
-    9.5,
-    9.2,
-    8.9,
-    8.7,
-    8.4,
-    8.2,
-    8.0,
-    7.7,
-    7.5,
-    7.3,
-    7.1,
-    6.9
-   ],
-   "summary": "OpenAI 官方：自主流水线发现、验证并为 Linux 内核本地提权漏洞生成补丁，共 948 个。",
-   "latest": null,
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -17.3
-  },
-  {
-   "rank": 7,
-   "story": {
-    "publicId": "2026-11-04-openai-acquire-pierre",
-    "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链"
-   },
-   "heat": 6.4,
-   "trend": "down",
-   "trendPct": -16.9,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "The Decoder",
-    "OpenAI News"
-   ],
-   "participants": [
-    {
-     "name": "OpenAI News",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    13.2,
-    12.8,
-    12.5,
-    12.1,
-    11.8,
-    11.4,
-    11.1,
-    10.8,
-    10.5,
-    10.2,
-    9.9,
-    9.6,
-    9.3,
-    9.1,
-    8.8,
-    8.6,
-    8.3,
-    8.1,
-    7.9,
-    7.6,
-    7.4,
-    7.2,
-    7.0,
-    6.8,
-    6.6
-   ],
-   "summary": null,
-   "latest": null,
-   "cover": null,
-   "rankDelta": 0,
-   "heatDeltaPct": -17.9
-  }
- ]
+  ]
 }
