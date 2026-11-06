@@ -559,7 +559,7 @@
   {
    "rank": 1,
    "title": "OpenAI：发布 GPT-6 Cyber，推进对齐的网络安全智能体",
-   "heat": 22.9,
+   "heat": 19.9,
    "trend": "down",
    "storyPublicId": "2026-11-06-openai-gpt6-cyber",
    "itemId": "sha256:14e90e72d3401ddf",
@@ -586,7 +586,7 @@
   {
    "rank": 2,
    "title": "NVIDIA：五项协同设计最大化 AI 工厂每一字节价值",
-   "heat": 12.6,
+   "heat": 10.9,
    "trend": "down",
    "storyPublicId": "2026-11-06-nvidia-ai-factory-byte-codesign",
    "itemId": "sha256:7a4fd1de9b53747b",
@@ -605,7 +605,7 @@
   {
    "rank": 3,
    "title": "DeepMind：Gemini Omni 1.2 Flash，更长视频片段、更低价格",
-   "heat": 11.9,
+   "heat": 10.4,
    "trend": "down",
    "storyPublicId": "2026-11-06-gemini-omni-12-flash",
    "itemId": "sha256:485654c1f98a7cdc",
@@ -624,7 +624,7 @@
   {
    "rank": 4,
    "title": "OpenAI：推出 Images 2.6（更快生成、GIF、精细编辑与 API 控制）",
-   "heat": 9.9,
+   "heat": 8.6,
    "trend": "down",
    "storyPublicId": "2026-11-05-chatgpt-animated-gifs",
    "itemId": "sha256:295354ff422b0d4d",
@@ -647,7 +647,7 @@
   {
    "rank": 5,
    "title": "OpenAI：为负责任 AI 基建设立新标准（社区契约与算力园区政策蓝图）",
-   "heat": 9.1,
+   "heat": 7.9,
    "trend": "down",
    "storyPublicId": "2026-11-05-openai-responsible-ai-infrastructure",
    "itemId": "sha256:25fa4dd18ec78a48",
