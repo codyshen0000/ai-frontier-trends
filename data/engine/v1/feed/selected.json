@@ -8,6 +8,17 @@
  },
  "items": [
   {
+   "guid": "sha256:f25b9201ad6bdcc6",
+   "title": "NVIDIA：发布 Cosmos 3 开放模型，面向可交互世界仿真",
+   "summary": "NVIDIA Hugging Face Blog：Cosmos 3 开放模型用于可交互世界仿真；附 nvidia.com/ai/cosmos。",
+   "originalUrl": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+   "pubDate": "2026-11-05T19:35:16.000Z",
+   "sourceName": "Hugging Face Blog",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-11-06-nvidia-cosmos-3-open-models"
+  },
+  {
    "guid": "sha256:485654c1f98a7cdc",
    "title": "Google：Gemini Omni 1.2 Flash，更长视频、更低价",
    "summary": "Google AI Blog：同发 Gemini Omni 1.2 Flash。",
@@ -545,17 +556,6 @@
    "category": "product",
    "categoryLabel": "产品",
    "eventPublicId": "2026-10-28-openai-oracle-apps-chatgpt"
-  },
-  {
-   "guid": "sha256:1a162d33f42d8b8e",
-   "title": "蚂蚁百灵开源 Ling-3.1-flash-1019：560B/25B MoE，AA 智力指数 44",
-   "summary": "",
-   "originalUrl": "https://huggingface.co/inclusionAI/Ling-3.1-flash-1019",
-   "pubDate": "2026-10-27T05:46:51.000Z",
-   "sourceName": "HF 机构新模型 · inclusionAI",
-   "category": "product",
-   "categoryLabel": "产品",
-   "eventPublicId": "2026-10-28-antgroup-ling-31-flash-1019"
   }
  ]
 }

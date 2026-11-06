@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 6
+  "rank": 7
  },
  "developments": [
   {
@@ -229,11 +229,36 @@
    "hour": "2026-11-05T20:00:00.000Z",
    "heat": 9.1,
    "participants": 2
+  },
+  {
+   "hour": "2026-11-05T21:00:00.000Z",
+   "heat": 8.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-05T22:00:00.000Z",
+   "heat": 8.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-05T23:00:00.000Z",
+   "heat": 8.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-06T00:00:00.000Z",
+   "heat": 8.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-06T01:00:00.000Z",
+   "heat": 7.9,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "OpenAI 收购 Pierre，强化 Codex 代码审阅与存储工具",
  "primaryUrl": "https://openai.com/index/openai-to-acquire-pierre",
- "rankDelta": -2
+ "rankDelta": -1
 }

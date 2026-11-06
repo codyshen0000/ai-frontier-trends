@@ -6,6 +6,29 @@
  },
  "cards": [
   {
+   "key": "sha256:de032cfb4352542b",
+   "anchorAt": "2026-10-25T09:12:10.000Z",
+   "item": {
+    "id": "sha256:de032cfb4352542b",
+    "title": "Anthropic：单智能体循环往往优于多子智能体",
+    "summary": "Anthropic 称单主智能体常在质量/成本/延迟上优于多子智能体；已开源迁移套件。",
+    "reason": "官方称单循环智能体常更快更稳",
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-25T09:12:10.000Z",
+    "timelineAt": "2026-10-25T09:12:10.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-25-anthropic-single-agent-loop",
+    "originalUrl": "https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone/"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:514019d7b6342099",
    "anchorAt": "2026-10-25T06:55:22.000Z",
    "item": {
@@ -533,29 +556,6 @@
     "originalUrl": "https://huggingface.co/blog/allenai/olmoearth-v1-3"
    },
    "group": null
-  },
-  {
-   "key": "sha256:d6172869a6c9d34f",
-   "anchorAt": "2026-10-22T16:00:00.000Z",
-   "item": {
-    "id": "sha256:d6172869a6c9d34f",
-    "title": "微软研究院：Flint-interactive 让智能体做交互式数据可视化",
-    "summary": null,
-    "reason": "微软研究院：Flint-interactive 交互可视化语言",
-    "source": {
-     "name": "Microsoft Research Blog"
-    },
-    "publishedAt": "2026-10-22T16:00:00.000Z",
-    "timelineAt": "2026-10-22T16:00:00.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-23-msr-flint-interactive",
-    "originalUrl": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-5.json",
@@ -563,5 +563,5 @@
  "dayCounts": {},
  "page": 4,
  "pageCount": 6,
- "total": 106
+ "total": 107
 }

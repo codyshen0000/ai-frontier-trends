@@ -2,10 +2,10 @@
  "publicId": "2026-11-06-openai-gpt6-cyber",
  "title": "OpenAI：发布 GPT-6 Cyber，推进对齐的网络安全智能体",
  "status": "active",
- "reportCount": 3,
- "sourceCount": 3,
+ "reportCount": 4,
+ "sourceCount": 4,
  "firstReportAt": "2026-11-05T09:00:00.000Z",
- "latestAt": "2026-11-05T19:06:12.000Z",
+ "latestAt": "2026-11-05T20:36:25.000Z",
  "digest": null,
  "digestUpdatedAt": null,
  "summary": "OpenAI 官方：GPT-6 Cyber 面向发现可利用漏洞并开发修复，训练上强调不越权、留在授权范围内。",
@@ -13,9 +13,9 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 3,
-  "newParticipants6h": 2,
-  "recentReports24h": 3,
+  "participants48h": 4,
+  "newParticipants6h": 1,
+  "recentReports24h": 4,
   "observationComplete": true,
   "rank": 1
  },
@@ -24,7 +24,7 @@
    "factId": "fact-2026-11-06-openai-gpt6-cyber",
    "title": "OpenAI：发布 GPT-6 Cyber，推进对齐的网络安全智能体",
    "firstReportAt": "2026-11-05T09:00:00.000Z",
-   "reportCount": 3,
+   "reportCount": 4,
    "representative": {
     "id": "sha256:14e90e72d3401ddf",
     "title": "OpenAI：发布 GPT-6 Cyber，推进对齐的网络安全智能体",
@@ -54,6 +54,18 @@
   }
  ],
  "timeline": [
+  {
+   "id": "sha256:df9d4138a6f415f7",
+   "title": "报道：OpenAI GPT-6 Cyber 可侵入系统并提出修复",
+   "summary": "The Decoder：转述 GPT-6 Cyber 发现漏洞、开发利用并建议补丁。",
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-05T20:36:25.000Z",
+   "selected": false,
+   "originalUrl": "https://the-decoder.com/openais-gpt-6-cyber-can-both-break-into-systems-and-propose-how-to-fix-them/"
+  },
   {
    "id": "sha256:5f2083e6ffbe0388",
    "title": "报道：OpenAI 发布新网络安全模型，这够吗？",
@@ -151,10 +163,36 @@
    "hour": "2026-11-05T20:00:00.000Z",
    "heat": 26.2,
    "participants": 3
+  },
+  {
+   "hour": "2026-11-05T21:00:00.000Z",
+   "heat": 35.3,
+   "participants": 4
+  },
+  {
+   "hour": "2026-11-05T22:00:00.000Z",
+   "heat": 34.3,
+   "participants": 4
+  },
+  {
+   "hour": "2026-11-05T23:00:00.000Z",
+   "heat": 33.4,
+   "participants": 4
+  },
+  {
+   "hour": "2026-11-06T00:00:00.000Z",
+   "heat": 32.4,
+   "participants": 4
+  },
+  {
+   "hour": "2026-11-06T01:00:00.000Z",
+   "heat": 31.5,
+   "participants": 4
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "OpenAI：发布 GPT-6 Cyber 对齐网络安全智能体",
- "primaryUrl": "https://openai.com/index/introducing-gpt-6-cyber"
+ "primaryUrl": "https://openai.com/index/introducing-gpt-6-cyber",
+ "rankDelta": 0
 }

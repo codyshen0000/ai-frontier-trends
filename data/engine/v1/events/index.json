@@ -1,18 +1,32 @@
 {
  "events": [
   {
+   "publicId": "2026-11-06-nvidia-ai-factory-byte-codesign",
+   "title": "NVIDIA：五项协同设计最大化 AI 工厂每一字节价值",
+   "latestAt": "2026-11-05T23:30:40.000Z",
+   "reportCount": 2,
+   "hotRank": 2
+  },
+  {
    "publicId": "2026-11-06-openai-gpt6-cyber",
    "title": "OpenAI：发布 GPT-6 Cyber，推进对齐的网络安全智能体",
-   "latestAt": "2026-11-05T19:06:12.000Z",
-   "reportCount": 3,
+   "latestAt": "2026-11-05T20:36:25.000Z",
+   "reportCount": 4,
    "hotRank": 1
+  },
+  {
+   "publicId": "2026-11-06-nvidia-cosmos-3-open-models",
+   "title": "NVIDIA：发布 Cosmos 3 开放模型，面向可交互世界仿真",
+   "latestAt": "2026-11-05T19:35:16.000Z",
+   "reportCount": 1,
+   "hotRank": null
   },
   {
    "publicId": "2026-11-06-gemini-omni-12-flash",
    "title": "DeepMind：Gemini Omni 1.2 Flash，更长视频片段、更低价格",
    "latestAt": "2026-11-05T19:05:31.000Z",
    "reportCount": 3,
-   "hotRank": 2
+   "hotRank": 3
   },
   {
    "publicId": "2026-11-06-microsoft-pdd-kit",
@@ -22,18 +36,11 @@
    "hotRank": null
   },
   {
-   "publicId": "2026-11-06-nvidia-ai-factory-byte-codesign",
-   "title": "NVIDIA：五项协同设计最大化 AI 工厂每一字节价值",
-   "latestAt": "2026-11-05T16:00:00.000Z",
-   "reportCount": 1,
-   "hotRank": null
-  },
-  {
    "publicId": "2026-11-05-openai-responsible-ai-infrastructure",
    "title": "OpenAI：为负责任 AI 基建设立新标准（社区契约与算力园区政策蓝图）",
    "latestAt": "2026-11-05T14:37:46.000Z",
    "reportCount": 2,
-   "hotRank": 4
+   "hotRank": 5
   },
   {
    "publicId": "2026-11-06-mistral-studio",
@@ -47,14 +54,14 @@
    "title": "OpenAI：推出 Images 2.6（更快生成、GIF、精细编辑与 API 控制）",
    "latestAt": "2026-11-05T01:59:37.000Z",
    "reportCount": 4,
-   "hotRank": 3
+   "hotRank": 4
   },
   {
    "publicId": "2026-11-05-openai-thousand-fewer-paths-to-root",
    "title": "OpenAI：少一千条通往 root 的路径（自主发现并修补 948 个 Linux 提权漏洞）",
    "latestAt": "2026-11-05T01:54:44.000Z",
    "reportCount": 2,
-   "hotRank": 5
+   "hotRank": 6
   },
   {
    "publicId": "2026-10-24-kimi-k31-pro",
@@ -75,7 +82,7 @@
    "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
    "latestAt": "2026-11-04T18:41:03.000Z",
    "reportCount": 2,
-   "hotRank": 6
+   "hotRank": 7
   },
   {
    "publicId": "2026-11-05-vllm-kinference",

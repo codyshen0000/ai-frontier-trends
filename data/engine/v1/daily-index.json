@@ -58,5 +58,11 @@
     "issueNumber": 10,
     "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族",
     "count": 12
+  },
+  {
+    "key": "2026-11-06",
+    "issueNumber": 18,
+    "title": "NVIDIA：发布 Cosmos 3 开放模型，面向可交互世界仿真",
+    "count": 11
   }
 ]

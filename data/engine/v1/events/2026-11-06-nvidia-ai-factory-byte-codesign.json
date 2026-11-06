@@ -2,29 +2,29 @@
  "publicId": "2026-11-06-nvidia-ai-factory-byte-codesign",
  "title": "NVIDIA：五项协同设计最大化 AI 工厂每一字节价值",
  "status": "active",
- "reportCount": 1,
- "sourceCount": 1,
+ "reportCount": 2,
+ "sourceCount": 2,
  "firstReportAt": "2026-11-05T16:00:00.000Z",
- "latestAt": "2026-11-05T16:00:00.000Z",
+ "latestAt": "2026-11-05T23:30:40.000Z",
  "digest": null,
  "digestUpdatedAt": null,
  "summary": "NVIDIA 技术博客：五项软硬协同设计提升 AI 工厂内存/带宽效率。",
  "excerpt": null,
- "latest": null,
+ "latest": "IT之家转述英伟达「全栈协同设计」破内存瓶颈（与既有 byte-codesign 同线；hot_signal 不作代表）",
  "latestReport": null,
  "whyHot": {
-  "participants48h": 1,
+  "participants48h": 2,
   "newParticipants6h": 1,
-  "recentReports24h": 1,
+  "recentReports24h": 2,
   "observationComplete": true,
-  "rank": null
+  "rank": 2
  },
  "developments": [
   {
    "factId": "fact-2026-11-06-nvidia-ai-factory-byte-codesign",
    "title": "NVIDIA：五项协同设计最大化 AI 工厂每一字节价值",
    "firstReportAt": "2026-11-05T16:00:00.000Z",
-   "reportCount": 1,
+   "reportCount": 2,
    "representative": {
     "id": "sha256:7a4fd1de9b53747b",
     "title": "NVIDIA：五项协同设计最大化 AI 工厂每一字节价值",
@@ -54,6 +54,18 @@
   }
  ],
  "timeline": [
+  {
+   "id": "sha256:60b8aaef07f54cc7",
+   "title": "报道：英伟达以全栈协同设计破解 AI 内存瓶颈",
+   "summary": null,
+   "source": {
+    "name": "IT之家（全站，需关键词过滤）",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-05T23:30:40.000Z",
+   "selected": false,
+   "originalUrl": "https://www.ithome.com/1/023/025.htm"
+  },
   {
    "id": "sha256:7a4fd1de9b53747b",
    "title": "NVIDIA：五项协同设计最大化 AI 工厂每一字节价值",
@@ -92,6 +104,31 @@
    "hour": "2026-11-05T20:00:00.000Z",
    "heat": 8.9,
    "participants": 1
+  },
+  {
+   "hour": "2026-11-05T21:00:00.000Z",
+   "heat": 8.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T22:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T23:00:00.000Z",
+   "heat": 8.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T00:00:00.000Z",
+   "heat": 17.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-06T01:00:00.000Z",
+   "heat": 17.3,
+   "participants": 2
   }
  ],
  "related": [],

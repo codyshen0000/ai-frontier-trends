@@ -1,0 +1,106 @@
+{
+ "publicId": "2026-11-06-nvidia-cosmos-3-open-models",
+ "title": "NVIDIA：发布 Cosmos 3 开放模型，面向可交互世界仿真",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-11-05T19:35:16.000Z",
+ "latestAt": "2026-11-05T19:35:16.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "NVIDIA 于 Hugging Face Blog 发布 Cosmos 3 开放模型，面向可交互世界仿真；并附 nvidia.com/ai/cosmos 产品页。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-11-06-nvidia-cosmos-3-open-models",
+   "title": "NVIDIA：发布 Cosmos 3 开放模型，面向可交互世界仿真",
+   "firstReportAt": "2026-11-05T19:35:16.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:f25b9201ad6bdcc6",
+    "title": "NVIDIA：发布 Cosmos 3 开放模型，面向可交互世界仿真",
+    "summary": "NVIDIA Hugging Face Blog：Cosmos 3 开放模型用于可交互世界仿真；附 nvidia.com/ai/cosmos。",
+    "source": {
+     "name": "Hugging Face Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-11-05T19:35:16.000Z",
+    "selected": true,
+    "originalUrl": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:f25b9201ad6bdcc6",
+   "title": "NVIDIA：发布 Cosmos 3 开放模型，面向可交互世界仿真",
+   "summary": "NVIDIA Hugging Face Blog：Cosmos 3 开放模型用于可交互世界仿真；附 nvidia.com/ai/cosmos。",
+   "source": {
+    "name": "Hugging Face Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-05T19:35:16.000Z",
+   "selected": true,
+   "originalUrl": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:f25b9201ad6bdcc6",
+   "title": "NVIDIA：发布 Cosmos 3 开放模型，面向可交互世界仿真",
+   "summary": "NVIDIA Hugging Face Blog：Cosmos 3 开放模型用于可交互世界仿真；附 nvidia.com/ai/cosmos。",
+   "source": {
+    "name": "Hugging Face Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-05T19:35:16.000Z",
+   "selected": true,
+   "originalUrl": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-11-05T20:00:00.000Z",
+   "heat": 9.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T21:00:00.000Z",
+   "heat": 9.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T22:00:00.000Z",
+   "heat": 9.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-05T23:00:00.000Z",
+   "heat": 9.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T00:00:00.000Z",
+   "heat": 8.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T01:00:00.000Z",
+   "heat": 8.6,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "NVIDIA：Cosmos 3 开放模型，面向可交互世界仿真",
+ "primaryUrl": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
+}

@@ -6,6 +6,29 @@
  },
  "cards": [
   {
+   "key": "sha256:f25b9201ad6bdcc6",
+   "anchorAt": "2026-11-05T19:35:16.000Z",
+   "item": {
+    "id": "sha256:f25b9201ad6bdcc6",
+    "title": "NVIDIA：发布 Cosmos 3 开放模型，面向可交互世界仿真",
+    "summary": "NVIDIA Hugging Face Blog：Cosmos 3 开放模型用于可交互世界仿真；附 nvidia.com/ai/cosmos。",
+    "reason": "NVIDIA：Cosmos 3 开放模型，面向可交互世界仿真",
+    "source": {
+     "name": "Hugging Face Blog"
+    },
+    "publishedAt": "2026-11-05T19:35:16.000Z",
+    "timelineAt": "2026-11-05T19:35:16.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-06-nvidia-cosmos-3-open-models",
+    "originalUrl": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:485654c1f98a7cdc",
    "anchorAt": "2026-11-05T17:00:00.000Z",
    "item": {
@@ -56,7 +79,14 @@
     "storyPublicId": "2026-11-06-nvidia-ai-factory-byte-codesign",
     "originalUrl": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/"
    },
-   "group": null
+   "group": {
+    "factId": "fact-2026-11-06-nvidia-ai-factory-byte-codesign",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:7a4fd1de9b53747b"
+    ]
+   }
   },
   {
    "key": "sha256:3a45181f6d992343",
@@ -127,8 +157,8 @@
    },
    "group": {
     "factId": "fact-2026-11-06-openai-gpt6-cyber",
-    "additionalSourceCount": 2,
-    "reportCount": 3,
+    "additionalSourceCount": 3,
+    "reportCount": 4,
     "memberIds": [
      "sha256:14e90e72d3401ddf"
     ]
@@ -522,38 +552,6 @@
      "sha256:042fb889688a1d90"
     ]
    }
-  },
-  {
-   "key": "sha256:5bd78febd4a59e34",
-   "anchorAt": "2026-10-31T00:00:00.000Z",
-   "item": {
-    "id": "sha256:5bd78febd4a59e34",
-    "title": "DeepSeek：开源 Super-agent 原型，Router 与 Worker 双层架构",
-    "summary": null,
-    "reason": "DeepSeek 开源 Super-agent：Router/Worker 双层",
-    "source": {
-     "name": "GitHub · deepseek-ai/dsh-superagent-prototype"
-    },
-    "publishedAt": "2026-10-31T00:00:00.000Z",
-    "timelineAt": "2026-10-31T00:00:00.000Z",
-    "category": "product",
-    "tags": [
-     "fp_hop_as_rep"
-    ],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-31-deepseek-super-agent-router-worker",
-    "originalUrl": "https://github.com/deepseek-ai/dsh-superagent-prototype"
-   },
-   "group": {
-    "factId": "fact-2026-10-31-deepseek-super-agent-router-worker",
-    "additionalSourceCount": 2,
-    "reportCount": 3,
-    "memberIds": [
-     "sha256:5bd78febd4a59e34"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-2.json",
@@ -561,13 +559,17 @@
   {
    "rank": 1,
    "title": "OpenAI：发布 GPT-6 Cyber，推进对齐的网络安全智能体",
-   "heat": 25.9,
+   "heat": 31.1,
    "trend": "up",
    "storyPublicId": "2026-11-06-openai-gpt6-cyber",
    "itemId": "sha256:14e90e72d3401ddf",
    "participants": [
     {
      "name": "OpenAI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
      "kind": "editorial"
     },
     {
@@ -579,13 +581,32 @@
      "kind": "editorial"
     }
    ],
-   "participantCount": 3
+   "participantCount": 4
   },
   {
    "rank": 2,
+   "title": "NVIDIA：五项协同设计最大化 AI 工厂每一字节价值",
+   "heat": 17.1,
+   "trend": "up",
+   "storyPublicId": "2026-11-06-nvidia-ai-factory-byte-codesign",
+   "itemId": "sha256:7a4fd1de9b53747b",
+   "participants": [
+    {
+     "name": "NVIDIA Technical Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
+    }
+   ],
+   "participantCount": 2
+  },
+  {
+   "rank": 3,
    "title": "DeepMind：Gemini Omni 1.2 Flash，更长视频片段、更低价格",
-   "heat": 18.7,
-   "trend": "new",
+   "heat": 16.2,
+   "trend": "down",
    "storyPublicId": "2026-11-06-gemini-omni-12-flash",
    "itemId": "sha256:485654c1f98a7cdc",
    "participants": [
@@ -601,17 +622,13 @@
    "participantCount": 2
   },
   {
-   "rank": 3,
+   "rank": 4,
    "title": "OpenAI：推出 Images 2.6（更快生成、GIF、精细编辑与 API 控制）",
-   "heat": 18.2,
+   "heat": 13.4,
    "trend": "down",
    "storyPublicId": "2026-11-05-chatgpt-animated-gifs",
    "itemId": "sha256:295354ff422b0d4d",
    "participants": [
-    {
-     "name": "OpenAI News",
-     "kind": "editorial"
-    },
     {
      "name": "量子位",
      "kind": "editorial"
@@ -625,13 +642,13 @@
      "kind": "editorial"
     }
    ],
-   "participantCount": 4
+   "participantCount": 3
   },
   {
-   "rank": 4,
+   "rank": 5,
    "title": "OpenAI：为负责任 AI 基建设立新标准（社区契约与算力园区政策蓝图）",
-   "heat": 14.4,
-   "trend": "up",
+   "heat": 12.4,
+   "trend": "down",
    "storyPublicId": "2026-11-05-openai-responsible-ai-infrastructure",
    "itemId": "sha256:25fa4dd18ec78a48",
    "participants": [
@@ -645,29 +662,10 @@
     }
    ],
    "participantCount": 2
-  },
-  {
-   "rank": 5,
-   "title": "OpenAI：少一千条通往 root 的路径（自主发现并修补 948 个 Linux 提权漏洞）",
-   "heat": 9.4,
-   "trend": "down",
-   "storyPublicId": "2026-11-05-openai-thousand-fewer-paths-to-root",
-   "itemId": "sha256:fbaa86a829ad59fd",
-   "participants": [
-    {
-     "name": "OpenAI News",
-     "kind": "editorial"
-    },
-    {
-     "name": "量子位",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 2
   }
  ],
  "dayCounts": {
-  "2026-11-06": 3,
+  "2026-11-06": 4,
   "2026-11-05": 4,
   "2026-11-04": 5,
   "2026-11-03": 1,
@@ -690,5 +688,5 @@
  },
  "page": 1,
  "pageCount": 6,
- "total": 106
+ "total": 107
 }

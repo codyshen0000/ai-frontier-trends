@@ -1,6 +1,79 @@
 {
- "generatedAt": "2026-11-05T20:22:00.000Z",
+ "generatedAt": "2026-11-06T01:26:00.000Z",
  "docs": [
+  {
+   "id": "sha256:60b8aaef07f54cc7",
+   "kind": "item",
+   "title": "报道：英伟达以全栈协同设计破解 AI 内存瓶颈",
+   "summary": null,
+   "publishedAt": "2026-11-05T23:30:40.000Z",
+   "sourceName": "IT之家（全站，需关键词过滤）",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-11-06-nvidia-ai-factory-byte-codesign",
+   "originalUrl": "https://www.ithome.com/1/023/025.htm"
+  },
+  {
+   "id": "2026-11-06-nvidia-ai-factory-byte-codesign",
+   "kind": "event",
+   "title": "NVIDIA：五项协同设计最大化 AI 工厂每一字节价值",
+   "summary": "NVIDIA 技术博客：五项软硬协同设计提升 AI 工厂内存/带宽效率。",
+   "publishedAt": "2026-11-05T23:30:40.000Z",
+   "sourceNames": [
+    "IT之家（全站，需关键词过滤）",
+    "NVIDIA Technical Blog"
+   ],
+   "path": "/events/2026-11-06-nvidia-ai-factory-byte-codesign/"
+  },
+  {
+   "id": "sha256:df9d4138a6f415f7",
+   "kind": "item",
+   "title": "报道：OpenAI GPT-6 Cyber 可侵入系统并提出修复",
+   "summary": "The Decoder：转述 GPT-6 Cyber 发现漏洞、开发利用并建议补丁。",
+   "publishedAt": "2026-11-05T20:36:25.000Z",
+   "sourceName": "The Decoder",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-11-06-openai-gpt6-cyber",
+   "originalUrl": "https://the-decoder.com/openais-gpt-6-cyber-can-both-break-into-systems-and-propose-how-to-fix-them/"
+  },
+  {
+   "id": "2026-11-06-openai-gpt6-cyber",
+   "kind": "event",
+   "title": "OpenAI：发布 GPT-6 Cyber，推进对齐的网络安全智能体",
+   "summary": "OpenAI 官方：GPT-6 Cyber 面向发现可利用漏洞并开发修复，训练上强调不越权、留在授权范围内。",
+   "publishedAt": "2026-11-05T20:36:25.000Z",
+   "sourceNames": [
+    "OpenAI News",
+    "TechCrunch · AI",
+    "The Decoder",
+    "The Verge · AI"
+   ],
+   "path": "/events/2026-11-06-openai-gpt6-cyber/"
+  },
+  {
+   "id": "sha256:f25b9201ad6bdcc6",
+   "kind": "item",
+   "title": "NVIDIA：发布 Cosmos 3 开放模型，面向可交互世界仿真",
+   "summary": "NVIDIA Hugging Face Blog：Cosmos 3 开放模型用于可交互世界仿真；附 nvidia.com/ai/cosmos。",
+   "publishedAt": "2026-11-05T19:35:16.000Z",
+   "sourceName": "Hugging Face Blog",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-11-06-nvidia-cosmos-3-open-models",
+   "originalUrl": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
+  },
+  {
+   "id": "2026-11-06-nvidia-cosmos-3-open-models",
+   "kind": "event",
+   "title": "NVIDIA：发布 Cosmos 3 开放模型，面向可交互世界仿真",
+   "summary": "NVIDIA 于 Hugging Face Blog 发布 Cosmos 3 开放模型，面向可交互世界仿真；并附 nvidia.com/ai/cosmos 产品页。",
+   "publishedAt": "2026-11-05T19:35:16.000Z",
+   "sourceNames": [
+    "Hugging Face Blog"
+   ],
+   "path": "/events/2026-11-06-nvidia-cosmos-3-open-models/"
+  },
   {
    "id": "sha256:5f2083e6ffbe0388",
    "kind": "item",
@@ -12,19 +85,6 @@
    "selected": false,
    "eventPublicId": "2026-11-06-openai-gpt6-cyber",
    "originalUrl": "https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough/"
-  },
-  {
-   "id": "2026-11-06-openai-gpt6-cyber",
-   "kind": "event",
-   "title": "OpenAI：发布 GPT-6 Cyber，推进对齐的网络安全智能体",
-   "summary": "OpenAI 官方：GPT-6 Cyber 面向发现可利用漏洞并开发修复，训练上强调不越权、留在授权范围内。",
-   "publishedAt": "2026-11-05T19:06:12.000Z",
-   "sourceNames": [
-    "OpenAI News",
-    "TechCrunch · AI",
-    "The Verge · AI"
-   ],
-   "path": "/events/2026-11-06-openai-gpt6-cyber/"
   },
   {
    "id": "sha256:b2e861cf858b7f41",
@@ -110,17 +170,6 @@
    "selected": true,
    "eventPublicId": "2026-11-06-microsoft-pdd-kit",
    "originalUrl": "https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/"
-  },
-  {
-   "id": "2026-11-06-nvidia-ai-factory-byte-codesign",
-   "kind": "event",
-   "title": "NVIDIA：五项协同设计最大化 AI 工厂每一字节价值",
-   "summary": "NVIDIA 技术博客：五项软硬协同设计提升 AI 工厂内存/带宽效率。",
-   "publishedAt": "2026-11-05T16:00:00.000Z",
-   "sourceNames": [
-    "NVIDIA Technical Blog"
-   ],
-   "path": "/events/2026-11-06-nvidia-ai-factory-byte-codesign/"
   },
   {
    "id": "2026-11-06-microsoft-pdd-kit",
