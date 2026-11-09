@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 4
+  "rank": 7
  },
  "developments": [
   {
@@ -289,11 +289,36 @@
    "hour": "2026-11-06T19:00:00.000Z",
    "heat": 7.5,
    "participants": 2
+  },
+  {
+   "hour": "2026-11-06T20:00:00.000Z",
+   "heat": 7.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-06T21:00:00.000Z",
+   "heat": 7.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-06T22:00:00.000Z",
+   "heat": 6.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-06T23:00:00.000Z",
+   "heat": 6.7,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-07T00:00:00.000Z",
+   "heat": 6.5,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "OpenAI：发布负责任 AI 基建社区契约与算力园区政策蓝图",
  "primaryUrl": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
- "rankDelta": 1
+ "rankDelta": -2
 }

@@ -1,0 +1,213 @@
+{
+ "publicId": "2026-11-07-anthropic-agent-memory-dreaming",
+ "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
+ "status": "active",
+ "reportCount": 2,
+ "sourceCount": 2,
+ "firstReportAt": "2026-11-06T00:00:00.000Z",
+ "latestAt": "2026-11-06T23:25:14.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Anthropic 官方研究《The components of agent memory》：拆解会话日志/记忆笔记/知识表征/注入上下文，并引入 dreaming 在空闲时巩固记忆；IT之家报道并入，代表为一手研究页。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 2,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": 2
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-11-07-anthropic-agent-memory-dreaming",
+   "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
+   "firstReportAt": "2026-11-06T00:00:00.000Z",
+   "reportCount": 2,
+   "representative": {
+    "id": "sha256:f0247d2be6d23fda",
+    "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
+    "summary": "Anthropic 官方研究：The components of agent memory。",
+    "source": {
+     "name": "Anthropic Research · The components of agent memory",
+     "firstParty": true
+    },
+    "publishedAt": "2026-11-06T00:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://www.anthropic.com/research/components-of-agent-memory"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:f0247d2be6d23fda",
+   "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
+   "summary": "Anthropic 官方研究：The components of agent memory。",
+   "source": {
+    "name": "Anthropic Research · The components of agent memory",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-06T00:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://www.anthropic.com/research/components-of-agent-memory"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:7af9752b435adc83",
+   "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
+   "summary": "IT之家：Anthropic 研究称智能体可靠“做梦”提升；已 hop-as-rep 官方研究页。",
+   "source": {
+    "name": "IT之家（全站，需关键词过滤）",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-06T23:25:14.000Z",
+   "selected": false,
+   "originalUrl": "https://www.ithome.com/1/023/613.htm"
+  },
+  {
+   "id": "sha256:f0247d2be6d23fda",
+   "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
+   "summary": "Anthropic 官方研究：The components of agent memory。",
+   "source": {
+    "name": "Anthropic Research · The components of agent memory",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-06T00:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://www.anthropic.com/research/components-of-agent-memory"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-11-06T00:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T01:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T02:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T03:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T04:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T05:00:00.000Z",
+   "heat": 8.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T06:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T07:00:00.000Z",
+   "heat": 8.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T08:00:00.000Z",
+   "heat": 7.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T09:00:00.000Z",
+   "heat": 7.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T10:00:00.000Z",
+   "heat": 7.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T11:00:00.000Z",
+   "heat": 7.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T12:00:00.000Z",
+   "heat": 7.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T13:00:00.000Z",
+   "heat": 6.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T14:00:00.000Z",
+   "heat": 6.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T15:00:00.000Z",
+   "heat": 6.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T16:00:00.000Z",
+   "heat": 6.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T17:00:00.000Z",
+   "heat": 6.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T18:00:00.000Z",
+   "heat": 5.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T19:00:00.000Z",
+   "heat": 5.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T20:00:00.000Z",
+   "heat": 5.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T21:00:00.000Z",
+   "heat": 5.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T22:00:00.000Z",
+   "heat": 5.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T23:00:00.000Z",
+   "heat": 5.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-07T00:00:00.000Z",
+   "heat": 14.8,
+   "participants": 2
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "Anthropic：智能体记忆组件与“做梦”机制",
+ "primaryUrl": "https://www.anthropic.com/research/components-of-agent-memory"
+}

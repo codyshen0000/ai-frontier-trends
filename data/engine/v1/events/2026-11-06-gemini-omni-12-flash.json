@@ -17,7 +17,7 @@
   "newParticipants6h": 0,
   "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 3
+  "rank": 6
  },
  "developments": [
   {
@@ -238,11 +238,36 @@
    "hour": "2026-11-06T19:00:00.000Z",
    "heat": 9.7,
    "participants": 2
+  },
+  {
+   "hour": "2026-11-06T20:00:00.000Z",
+   "heat": 9.5,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-06T21:00:00.000Z",
+   "heat": 9.2,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-06T22:00:00.000Z",
+   "heat": 8.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-06T23:00:00.000Z",
+   "heat": 8.7,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-07T00:00:00.000Z",
+   "heat": 8.4,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "DeepMind：Gemini Omni 1.2 Flash，更长视频更低价",
  "primaryUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
- "rankDelta": 0
+ "rankDelta": -3
 }

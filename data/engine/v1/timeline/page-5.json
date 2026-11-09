@@ -6,6 +6,89 @@
  },
  "cards": [
   {
+   "key": "sha256:5ddee939d5fa55a3",
+   "anchorAt": "2026-10-22T18:00:00.000Z",
+   "item": {
+    "id": "sha256:5ddee939d5fa55a3",
+    "title": "微软：发布诊断编排器，复杂病例准确率称超医生",
+    "summary": "Verge：Suleyman 称诊断工具准确率高于医生；对标 Science/微软稿。",
+    "reason": "微软 MAI-DxO：复杂病例诊断准确率称超医生",
+    "source": {
+     "name": "The Verge · AI"
+    },
+    "publishedAt": "2026-10-22T18:00:00.000Z",
+    "timelineAt": "2026-10-22T18:00:00.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-23-microsoft-mai-dxo",
+    "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence"
+   },
+   "group": {
+    "factId": "fact-2026-10-23-microsoft-mai-dxo",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:5ddee939d5fa55a3"
+    ]
+   }
+  },
+  {
+   "key": "sha256:7ea705cfe9f05665",
+   "anchorAt": "2026-10-22T17:50:09.000Z",
+   "item": {
+    "id": "sha256:7ea705cfe9f05665",
+    "title": "Google 云：推出 Agent Compute Engine，为智能体提供硬件隔离 microVM",
+    "summary": "Decoder 报道；一跳确认 Google Cloud 官方博客。",
+    "reason": "Google 云推出 Agent Compute Engine 硬件隔离 mic",
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-22T17:50:09.000Z",
+    "timelineAt": "2026-10-22T17:50:09.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-23-google-agent-compute-engine",
+    "originalUrl": "https://the-decoder.com/googles-agent-compute-engine-gives-every-gemini-agent-its-own-hardware-isolated-micro-virtual-machine/"
+   },
+   "group": {
+    "factId": "fact-2026-10-23-google-agent-compute-engine",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:7ea705cfe9f05665"
+    ]
+   }
+  },
+  {
+   "key": "sha256:67297d2df9a3d7f1",
+   "anchorAt": "2026-10-22T16:11:31.000Z",
+   "item": {
+    "id": "sha256:67297d2df9a3d7f1",
+    "title": "AllenAI：发布 OlmoEarth v1.3 全球卫星嵌入与探索工具",
+    "summary": "OlmoEarth v1.3 卫星嵌入 + 全球预计算嵌入与浏览器探索工具。",
+    "reason": "AllenAI：OlmoEarth v1.3 全球卫星嵌入",
+    "source": {
+     "name": "Hugging Face Blog"
+    },
+    "publishedAt": "2026-10-22T16:11:31.000Z",
+    "timelineAt": "2026-10-22T16:11:31.000Z",
+    "category": "model",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-23-allenai-olmoearth-v13",
+    "originalUrl": "https://huggingface.co/blog/allenai/olmoearth-v1-3"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:d6172869a6c9d34f",
    "anchorAt": "2026-10-22T16:00:00.000Z",
    "item": {
@@ -437,82 +520,6 @@
      "sha256:95dedf578de78f3e"
     ]
    }
-  },
-  {
-   "key": "sha256:e270f5ba4688033d",
-   "anchorAt": "2026-10-21T00:00:00.000Z",
-   "item": {
-    "id": "sha256:e270f5ba4688033d",
-    "title": "OpenAI：民主治理前沿 AI 之二——赋能网络防御者",
-    "summary": "OpenAI 治理系列：赋能网络防御与公共机构韧性。",
-    "reason": "OpenAI：前沿 AI 赋能网络防御的治理蓝图",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-21T00:00:00.000Z",
-    "timelineAt": "2026-10-21T00:00:00.000Z",
-    "category": "opinion",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-22-openai-gov-cyber-defenders",
-    "originalUrl": "https://openai.com/index/empowering-cyber-defenders"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:3e7599c6661c19f5",
-   "anchorAt": "2026-10-21T00:00:00.000Z",
-   "item": {
-    "id": "sha256:3e7599c6661c19f5",
-    "title": "vLLM 开源 Humming：面向量化推理的内核库",
-    "summary": "蚂蚁×vLLM 社区开源 Humming 量化推理内核，并给出 dense/MoE 与集成说明。",
-    "reason": "vLLM 开源 Humming 量化推理内核库",
-    "source": {
-     "name": "vLLM Blog"
-    },
-    "publishedAt": "2026-10-21T00:00:00.000Z",
-    "timelineAt": "2026-10-21T00:00:00.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-22-vllm-humming-kernels",
-    "originalUrl": "https://vllm.ai/blog/2026-10-21-humming"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:3b031f6c198ac941",
-   "anchorAt": "2026-10-21T00:00:00.000Z",
-   "item": {
-    "id": "sha256:3b031f6c198ac941",
-    "title": "vLLM 宣布 Day-0 支持 Flint 编码模型",
-    "summary": "vLLM 称 Day-0 支持 Flint 双检查点，单卡单请求约 500 tok/s。",
-    "reason": null,
-    "source": {
-     "name": "vLLM Blog"
-    },
-    "publishedAt": "2026-10-21T00:00:00.000Z",
-    "timelineAt": "2026-10-21T00:00:00.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-22-recursive-flint-coding-model",
-    "originalUrl": "https://vllm.ai/blog/2026-10-21-flint"
-   },
-   "group": {
-    "factId": "fact-2026-10-22-recursive-flint-coding-model",
-    "additionalSourceCount": 2,
-    "reportCount": 3,
-    "memberIds": [
-     "sha256:3b031f6c198ac941"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-6.json",
@@ -520,5 +527,5 @@
  "dayCounts": {},
  "page": 5,
  "pageCount": 6,
- "total": 107
+ "total": 110
 }

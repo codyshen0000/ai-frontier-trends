@@ -8,6 +8,39 @@
  },
  "items": [
   {
+   "guid": "sha256:f0247d2be6d23fda",
+   "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
+   "summary": "Anthropic 官方研究：The components of agent memory。",
+   "originalUrl": "https://www.anthropic.com/research/components-of-agent-memory",
+   "pubDate": "2026-11-06T00:00:00.000Z",
+   "sourceName": "Anthropic Research · The components of agent memory",
+   "category": "paper",
+   "categoryLabel": "论文",
+   "eventPublicId": "2026-11-07-anthropic-agent-memory-dreaming"
+  },
+  {
+   "guid": "sha256:c9e260814e66b368",
+   "title": "Cursor：上线 Voice Chat，可与智能体实时语音协作",
+   "summary": "Cursor 官方 changelog：Voice Chat with Agents。",
+   "originalUrl": "https://cursor.com/changelog/voice-chat",
+   "pubDate": "2026-11-06T00:00:00.000Z",
+   "sourceName": "Cursor Changelog · Voice Chat with Agents",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-11-07-cursor-voice-chat-agents"
+  },
+  {
+   "guid": "sha256:0c01f1148bd8b712",
+   "title": "Amp：上线 Spaces，由主智能体编排协调多 Agent",
+   "summary": "Amp 官方：Spaces 发布页。",
+   "originalUrl": "https://www.ampcode.com/news/spaces",
+   "pubDate": "2026-11-06T00:00:00.000Z",
+   "sourceName": "Amp · Spaces",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-11-07-amp-spaces-launch"
+  },
+  {
    "guid": "sha256:f25b9201ad6bdcc6",
    "title": "NVIDIA：发布 Cosmos 3 开放模型，面向可交互世界仿真",
    "summary": "NVIDIA Hugging Face Blog：Cosmos 3 开放模型用于可交互世界仿真；附 nvidia.com/ai/cosmos。",
@@ -523,39 +556,6 @@
    "category": "tutorial",
    "categoryLabel": "教程",
    "eventPublicId": "2026-10-28-nvidia-nemotron-local-rules"
-  },
-  {
-   "guid": "sha256:b836eb939c37ffa5",
-   "title": "NVIDIA：在 DGX Spark 上加速 MoE 推理的三种方法",
-   "summary": "NVIDIA 技术博客介绍 DGX Spark 上 MoE 推理的内核、量化与 speculative decoding 路径。",
-   "originalUrl": "https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark/",
-   "pubDate": "2026-10-27T15:00:00.000Z",
-   "sourceName": "NVIDIA Technical Blog",
-   "category": "product",
-   "categoryLabel": "产品",
-   "eventPublicId": "2026-10-27-nvidia-moe-dgx-spark-inference"
-  },
-  {
-   "guid": "sha256:257d2044442d252a",
-   "title": "Opera 推出 WebAI：浏览器本地部署 AI",
-   "summary": "TechCrunch 报道 Opera 提出 WebAI，让用户在浏览器本地部署 AI；一手见 Opera 博客。",
-   "originalUrl": "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/",
-   "pubDate": "2026-10-27T13:00:00.000Z",
-   "sourceName": "TechCrunch · AI",
-   "category": "product",
-   "categoryLabel": "产品",
-   "eventPublicId": "2026-10-27-opera-webai-local"
-  },
-  {
-   "guid": "sha256:c417f8e3d39d0b89",
-   "title": "OpenAI：与 Oracle 扩大合作，把应用接入 ChatGPT",
-   "summary": "OpenAI 称与 Oracle 把企业应用与代理接入 ChatGPT，并推出多项 Oracle×OpenAI 产品。",
-   "originalUrl": "https://openai.com/index/oracle-apps-in-chatgpt",
-   "pubDate": "2026-10-27T07:00:00.000Z",
-   "sourceName": "OpenAI News",
-   "category": "product",
-   "categoryLabel": "产品",
-   "eventPublicId": "2026-10-28-openai-oracle-apps-chatgpt"
   }
  ]
 }

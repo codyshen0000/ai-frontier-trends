@@ -140,6 +140,12 @@
    "homepage": "https://www.wiz.io"
   },
   {
+   "sourceId": "web-ampcode-news-spaces",
+   "name": "Amp · Spaces",
+   "tier": "T1",
+   "kind": "editorial"
+  },
+  {
    "sourceId": "web-anthropic-alignment-em-search",
    "name": "Anthropic Alignment",
    "tier": "T1",
@@ -151,6 +157,12 @@
    "tier": "T1",
    "kind": "editorial",
    "homepage": "https://www.anthropic.com"
+  },
+  {
+   "sourceId": "web-anthropic-research-agent-memory",
+   "name": "Anthropic Research · The components of agent memory",
+   "tier": "T1",
+   "kind": "editorial"
   },
   {
    "sourceId": "web-arxiv-2610.14157",
@@ -199,6 +211,12 @@
    "sourceId": "web-ctol",
    "name": "CTOL Digital Solutions",
    "tier": "T2",
+   "kind": "editorial"
+  },
+  {
+   "sourceId": "web-cursor-changelog-voice",
+   "name": "Cursor Changelog · Voice Chat with Agents",
+   "tier": "T1",
    "kind": "editorial"
   },
   {

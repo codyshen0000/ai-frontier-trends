@@ -1,6 +1,114 @@
 {
- "generatedAt": "2026-11-06T19:45:00.000Z",
+ "generatedAt": "2026-11-07T00:45:00.000Z",
  "docs": [
+  {
+   "id": "sha256:7af9752b435adc83",
+   "kind": "item",
+   "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
+   "summary": "IT之家：Anthropic 研究称智能体可靠“做梦”提升；已 hop-as-rep 官方研究页。",
+   "publishedAt": "2026-11-06T23:25:14.000Z",
+   "sourceName": "IT之家（全站，需关键词过滤）",
+   "category": "paper",
+   "selected": false,
+   "eventPublicId": "2026-11-07-anthropic-agent-memory-dreaming",
+   "originalUrl": "https://www.ithome.com/1/023/613.htm"
+  },
+  {
+   "id": "2026-11-07-anthropic-agent-memory-dreaming",
+   "kind": "event",
+   "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
+   "summary": "Anthropic 官方研究《The components of agent memory》：拆解会话日志/记忆笔记/知识表征/注入上下文，并引入 dreaming 在空闲时巩固记忆；IT之家报道并入，代表为一手研究页。",
+   "publishedAt": "2026-11-06T23:25:14.000Z",
+   "sourceNames": [
+    "Anthropic Research · The components of agent memory",
+    "IT之家（全站，需关键词过滤）"
+   ],
+   "path": "/events/2026-11-07-anthropic-agent-memory-dreaming/"
+  },
+  {
+   "id": "sha256:e50dc2500b87b9e4",
+   "kind": "item",
+   "title": "Cursor：上线 Voice Chat，可与智能体实时语音协作",
+   "summary": "IT之家：Cursor 智能体实时语音协作；已 hop-as-rep 官方 changelog。",
+   "publishedAt": "2026-11-06T23:11:36.000Z",
+   "sourceName": "IT之家（全站，需关键词过滤）",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-11-07-cursor-voice-chat-agents",
+   "originalUrl": "https://www.ithome.com/1/023/610.htm"
+  },
+  {
+   "id": "2026-11-07-cursor-voice-chat-agents",
+   "kind": "event",
+   "title": "Cursor：上线 Voice Chat，可与智能体实时语音协作",
+   "summary": "Cursor 官方 changelog：Voice Chat with Agents，可在 Agents Window / IDE / Web 等与智能体实时语音通话；IT之家报道并入，代表为一手 changelog。",
+   "publishedAt": "2026-11-06T23:11:36.000Z",
+   "sourceNames": [
+    "Cursor Changelog · Voice Chat with Agents",
+    "IT之家（全站，需关键词过滤）"
+   ],
+   "path": "/events/2026-11-07-cursor-voice-chat-agents/"
+  },
+  {
+   "id": "sha256:ec55da907a4fc98b",
+   "kind": "item",
+   "title": "Amp：上线 Spaces，由主智能体编排协调多 Agent",
+   "summary": "IT之家：Amp Spaces 上线；已 hop-as-rep 官方新闻页。",
+   "publishedAt": "2026-11-06T23:02:32.000Z",
+   "sourceName": "IT之家（全站，需关键词过滤）",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-11-07-amp-spaces-launch",
+   "originalUrl": "https://www.ithome.com/1/023/609.htm"
+  },
+  {
+   "id": "2026-11-07-amp-spaces-launch",
+   "kind": "event",
+   "title": "Amp：上线 Spaces，由主智能体编排协调多 Agent",
+   "summary": "Amp 官方：Spaces 是更高层的多 Agent 协作方式，一个 space 负责生成并协调多个 agent；IT之家报道并入，代表为一手新闻页。",
+   "publishedAt": "2026-11-06T23:02:32.000Z",
+   "sourceNames": [
+    "Amp · Spaces",
+    "IT之家（全站，需关键词过滤）"
+   ],
+   "path": "/events/2026-11-07-amp-spaces-launch/"
+  },
+  {
+   "id": "sha256:f0247d2be6d23fda",
+   "kind": "item",
+   "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
+   "summary": "Anthropic 官方研究：The components of agent memory。",
+   "publishedAt": "2026-11-06T00:00:00.000Z",
+   "sourceName": "Anthropic Research · The components of agent memory",
+   "category": "paper",
+   "selected": true,
+   "eventPublicId": "2026-11-07-anthropic-agent-memory-dreaming",
+   "originalUrl": "https://www.anthropic.com/research/components-of-agent-memory"
+  },
+  {
+   "id": "sha256:c9e260814e66b368",
+   "kind": "item",
+   "title": "Cursor：上线 Voice Chat，可与智能体实时语音协作",
+   "summary": "Cursor 官方 changelog：Voice Chat with Agents。",
+   "publishedAt": "2026-11-06T00:00:00.000Z",
+   "sourceName": "Cursor Changelog · Voice Chat with Agents",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-11-07-cursor-voice-chat-agents",
+   "originalUrl": "https://cursor.com/changelog/voice-chat"
+  },
+  {
+   "id": "sha256:0c01f1148bd8b712",
+   "kind": "item",
+   "title": "Amp：上线 Spaces，由主智能体编排协调多 Agent",
+   "summary": "Amp 官方：Spaces 发布页。",
+   "publishedAt": "2026-11-06T00:00:00.000Z",
+   "sourceName": "Amp · Spaces",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-11-07-amp-spaces-launch",
+   "originalUrl": "https://www.ampcode.com/news/spaces"
+  },
   {
    "id": "sha256:60b8aaef07f54cc7",
    "kind": "item",

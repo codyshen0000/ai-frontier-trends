@@ -1,0 +1,213 @@
+{
+ "publicId": "2026-11-07-cursor-voice-chat-agents",
+ "title": "Cursor：上线 Voice Chat，可与智能体实时语音协作",
+ "status": "active",
+ "reportCount": 2,
+ "sourceCount": 2,
+ "firstReportAt": "2026-11-06T00:00:00.000Z",
+ "latestAt": "2026-11-06T23:11:36.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "Cursor 官方 changelog：Voice Chat with Agents，可在 Agents Window / IDE / Web 等与智能体实时语音通话；IT之家报道并入，代表为一手 changelog。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 2,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": 3
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-11-07-cursor-voice-chat-agents",
+   "title": "Cursor：上线 Voice Chat，可与智能体实时语音协作",
+   "firstReportAt": "2026-11-06T00:00:00.000Z",
+   "reportCount": 2,
+   "representative": {
+    "id": "sha256:c9e260814e66b368",
+    "title": "Cursor：上线 Voice Chat，可与智能体实时语音协作",
+    "summary": "Cursor 官方 changelog：Voice Chat with Agents。",
+    "source": {
+     "name": "Cursor Changelog · Voice Chat with Agents",
+     "firstParty": true
+    },
+    "publishedAt": "2026-11-06T00:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://cursor.com/changelog/voice-chat"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:c9e260814e66b368",
+   "title": "Cursor：上线 Voice Chat，可与智能体实时语音协作",
+   "summary": "Cursor 官方 changelog：Voice Chat with Agents。",
+   "source": {
+    "name": "Cursor Changelog · Voice Chat with Agents",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-06T00:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://cursor.com/changelog/voice-chat"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:e50dc2500b87b9e4",
+   "title": "Cursor：上线 Voice Chat，可与智能体实时语音协作",
+   "summary": "IT之家：Cursor 智能体实时语音协作；已 hop-as-rep 官方 changelog。",
+   "source": {
+    "name": "IT之家（全站，需关键词过滤）",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-06T23:11:36.000Z",
+   "selected": false,
+   "originalUrl": "https://www.ithome.com/1/023/610.htm"
+  },
+  {
+   "id": "sha256:c9e260814e66b368",
+   "title": "Cursor：上线 Voice Chat，可与智能体实时语音协作",
+   "summary": "Cursor 官方 changelog：Voice Chat with Agents。",
+   "source": {
+    "name": "Cursor Changelog · Voice Chat with Agents",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-06T00:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://cursor.com/changelog/voice-chat"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-11-06T00:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T01:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T02:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T03:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T04:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T05:00:00.000Z",
+   "heat": 8.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T06:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T07:00:00.000Z",
+   "heat": 8.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T08:00:00.000Z",
+   "heat": 7.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T09:00:00.000Z",
+   "heat": 7.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T10:00:00.000Z",
+   "heat": 7.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T11:00:00.000Z",
+   "heat": 7.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T12:00:00.000Z",
+   "heat": 7.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T13:00:00.000Z",
+   "heat": 6.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T14:00:00.000Z",
+   "heat": 6.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T15:00:00.000Z",
+   "heat": 6.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T16:00:00.000Z",
+   "heat": 6.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T17:00:00.000Z",
+   "heat": 6.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T18:00:00.000Z",
+   "heat": 5.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T19:00:00.000Z",
+   "heat": 5.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T20:00:00.000Z",
+   "heat": 5.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T21:00:00.000Z",
+   "heat": 5.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T22:00:00.000Z",
+   "heat": 5.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-06T23:00:00.000Z",
+   "heat": 5.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-07T00:00:00.000Z",
+   "heat": 14.8,
+   "participants": 2
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "Cursor：智能体语音通话 Voice Chat 上线",
+ "primaryUrl": "https://cursor.com/changelog/voice-chat"
+}

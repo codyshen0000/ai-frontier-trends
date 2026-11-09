@@ -15,9 +15,9 @@
  "whyHot": {
   "participants48h": 2,
   "newParticipants6h": 0,
-  "recentReports24h": 1,
+  "recentReports24h": 0,
   "observationComplete": true,
-  "rank": 2
+  "rank": 5
  },
  "developments": [
   {
@@ -219,11 +219,36 @@
    "hour": "2026-11-06T19:00:00.000Z",
    "heat": 10.3,
    "participants": 2
+  },
+  {
+   "hour": "2026-11-06T20:00:00.000Z",
+   "heat": 10.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-06T21:00:00.000Z",
+   "heat": 9.7,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-06T22:00:00.000Z",
+   "heat": 9.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-06T23:00:00.000Z",
+   "heat": 9.2,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-07T00:00:00.000Z",
+   "heat": 8.9,
+   "participants": 2
   }
  ],
  "related": [],
  "topics": [],
  "recommendReason": "NVIDIA：五项协同设计提升 AI 工厂每字节价值",
  "primaryUrl": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/",
- "rankDelta": 0
+ "rankDelta": -3
 }

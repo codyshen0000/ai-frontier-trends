@@ -6,6 +6,93 @@
  },
  "cards": [
   {
+   "key": "sha256:4094d4340f9e66f9",
+   "anchorAt": "2026-11-02T00:00:00.000Z",
+   "item": {
+    "id": "sha256:4094d4340f9e66f9",
+    "title": "OpenAI：Qodo 把公司知识注入 Codex 做代码审阅",
+    "summary": null,
+    "reason": "OpenAI：Qodo 把公司规范注入 Codex 做代码审阅",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-11-02T00:00:00.000Z",
+    "timelineAt": "2026-11-02T00:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-03-openai-qodo-codex-plugin",
+    "originalUrl": "https://openai.com/index/qodo-codex-plugin"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:be583b060c134071",
+   "anchorAt": "2026-11-01T00:00:00.000Z",
+   "item": {
+    "id": "sha256:be583b060c134071",
+    "title": "OpenAI：Daybreak Blue 网络安全会话数据将可用于模型训练",
+    "summary": "OpenAI Help Center Data Controls：Trusted Access / Daybreak Blue 会话此前禁训，现可纳入训练。政策变更；一手为 Help Center。",
+    "reason": "OpenAI：Daybreak Blue 安全会话数据可用于模型训练",
+    "source": {
+     "name": "OpenAI Help · Data Controls in ChatGPT"
+    },
+    "publishedAt": "2026-11-01T00:00:00.000Z",
+    "timelineAt": "2026-11-01T00:00:00.000Z",
+    "category": "industry",
+    "tags": [
+     "fp_hop_as_rep"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-01-openai-daybreak-blue-training",
+    "originalUrl": "https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt"
+   },
+   "group": {
+    "factId": "fact-2026-11-01-openai-daybreak-blue-training",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:be583b060c134071"
+    ]
+   }
+  },
+  {
+   "key": "sha256:042fb889688a1d90",
+   "anchorAt": "2026-11-01T00:00:00.000Z",
+   "item": {
+    "id": "sha256:042fb889688a1d90",
+    "title": "Anthropic：水印上线，两款旧 Claude 模型仍有采样漏洞",
+    "summary": null,
+    "reason": "Anthropic：水印上线留 Opus/Sonnet 4.6 采样漏洞",
+    "source": {
+     "name": "Claude Help · How Claude marks AI-generated content"
+    },
+    "publishedAt": "2026-11-01T00:00:00.000Z",
+    "timelineAt": "2026-11-01T00:00:00.000Z",
+    "category": "industry",
+    "tags": [
+     "fp_hop_as_rep"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-01-anthropic-watermark-older-models",
+    "originalUrl": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content"
+   },
+   "group": {
+    "factId": "fact-2026-11-01-anthropic-watermark-older-models",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:042fb889688a1d90"
+    ]
+   }
+  },
+  {
    "key": "sha256:5bd78febd4a59e34",
    "anchorAt": "2026-10-31T00:00:00.000Z",
    "item": {
@@ -457,82 +544,6 @@
      "sha256:ec733f799e1aaee3"
     ]
    }
-  },
-  {
-   "key": "sha256:a395c7da350b5086",
-   "anchorAt": "2026-10-28T13:15:00.000Z",
-   "item": {
-    "id": "sha256:a395c7da350b5086",
-    "title": "OpenAI 与 ServiceNow 扩大企业工作流合作",
-    "summary": null,
-    "reason": "OpenAI 与 ServiceNow 把模型/智能体与企业工作流双向打通",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-28T13:15:00.000Z",
-    "timelineAt": "2026-10-28T13:15:00.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-28-openai-servicenow-partnership-expansion",
-    "originalUrl": "https://openai.com/index/openai-servicenow-partnership-expansion"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:5b6b315fe4450662",
-   "anchorAt": "2026-10-28T10:56:24.000Z",
-   "item": {
-    "id": "sha256:5b6b315fe4450662",
-    "title": "报道：Cathedral 用 AI 智能体打入 Anthropic 业务系统",
-    "summary": null,
-    "reason": "AI 智能体经第三方软件打入 Anthropic 业务系统",
-    "source": {
-     "name": "The Decoder"
-    },
-    "publishedAt": "2026-10-28T10:56:24.000Z",
-    "timelineAt": "2026-10-28T10:56:24.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-28-cathedral-anthropic-agent-breach",
-    "originalUrl": "https://the-decoder.com/ai-agents-hacked-anthropic-maker-of-arguably-the-most-capable-ai-models-for-cyberdefense/"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:449070727cbfb984",
-   "anchorAt": "2026-10-27T20:50:39.000Z",
-   "item": {
-    "id": "sha256:449070727cbfb984",
-    "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
-    "summary": null,
-    "reason": null,
-    "source": {
-     "name": "NVIDIA Technical Blog"
-    },
-    "publishedAt": "2026-10-27T20:50:39.000Z",
-    "timelineAt": "2026-10-27T20:50:39.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-28-nvidia-cuda-134-gpu-sharing",
-    "originalUrl": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/"
-   },
-   "group": {
-    "factId": "fact-2026-10-28-nvidia-cuda-134-gpu-sharing",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:449070727cbfb984"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-3.json",
@@ -540,5 +551,5 @@
  "dayCounts": {},
  "page": 2,
  "pageCount": 6,
- "total": 107
+ "total": 110
 }

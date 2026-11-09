@@ -6,6 +6,96 @@
  },
  "cards": [
   {
+   "key": "sha256:f0247d2be6d23fda",
+   "anchorAt": "2026-11-06T00:00:00.000Z",
+   "item": {
+    "id": "sha256:f0247d2be6d23fda",
+    "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
+    "summary": "Anthropic 官方研究：The components of agent memory。",
+    "reason": "Anthropic：智能体记忆组件与“做梦”机制",
+    "source": {
+     "name": "Anthropic Research · The components of agent memory"
+    },
+    "publishedAt": "2026-11-06T00:00:00.000Z",
+    "timelineAt": "2026-11-06T00:00:00.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-07-anthropic-agent-memory-dreaming",
+    "originalUrl": "https://www.anthropic.com/research/components-of-agent-memory"
+   },
+   "group": {
+    "factId": "fact-2026-11-07-anthropic-agent-memory-dreaming",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:f0247d2be6d23fda"
+    ]
+   }
+  },
+  {
+   "key": "sha256:c9e260814e66b368",
+   "anchorAt": "2026-11-06T00:00:00.000Z",
+   "item": {
+    "id": "sha256:c9e260814e66b368",
+    "title": "Cursor：上线 Voice Chat，可与智能体实时语音协作",
+    "summary": "Cursor 官方 changelog：Voice Chat with Agents。",
+    "reason": "Cursor：智能体语音通话 Voice Chat 上线",
+    "source": {
+     "name": "Cursor Changelog · Voice Chat with Agents"
+    },
+    "publishedAt": "2026-11-06T00:00:00.000Z",
+    "timelineAt": "2026-11-06T00:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-07-cursor-voice-chat-agents",
+    "originalUrl": "https://cursor.com/changelog/voice-chat"
+   },
+   "group": {
+    "factId": "fact-2026-11-07-cursor-voice-chat-agents",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:c9e260814e66b368"
+    ]
+   }
+  },
+  {
+   "key": "sha256:0c01f1148bd8b712",
+   "anchorAt": "2026-11-06T00:00:00.000Z",
+   "item": {
+    "id": "sha256:0c01f1148bd8b712",
+    "title": "Amp：上线 Spaces，由主智能体编排协调多 Agent",
+    "summary": "Amp 官方：Spaces 发布页。",
+    "reason": "Amp：上线 Spaces，协调多 Agent 协作",
+    "source": {
+     "name": "Amp · Spaces"
+    },
+    "publishedAt": "2026-11-06T00:00:00.000Z",
+    "timelineAt": "2026-11-06T00:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-07-amp-spaces-launch",
+    "originalUrl": "https://www.ampcode.com/news/spaces"
+   },
+   "group": {
+    "factId": "fact-2026-11-07-amp-spaces-launch",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:0c01f1148bd8b712"
+    ]
+   }
+  },
+  {
    "key": "sha256:f25b9201ad6bdcc6",
    "anchorAt": "2026-11-05T19:35:16.000Z",
    "item": {
@@ -465,93 +555,6 @@
     "originalUrl": "https://openai.com/index/lifeval"
    },
    "group": null
-  },
-  {
-   "key": "sha256:4094d4340f9e66f9",
-   "anchorAt": "2026-11-02T00:00:00.000Z",
-   "item": {
-    "id": "sha256:4094d4340f9e66f9",
-    "title": "OpenAI：Qodo 把公司知识注入 Codex 做代码审阅",
-    "summary": null,
-    "reason": "OpenAI：Qodo 把公司规范注入 Codex 做代码审阅",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-11-02T00:00:00.000Z",
-    "timelineAt": "2026-11-02T00:00:00.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-11-03-openai-qodo-codex-plugin",
-    "originalUrl": "https://openai.com/index/qodo-codex-plugin"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:be583b060c134071",
-   "anchorAt": "2026-11-01T00:00:00.000Z",
-   "item": {
-    "id": "sha256:be583b060c134071",
-    "title": "OpenAI：Daybreak Blue 网络安全会话数据将可用于模型训练",
-    "summary": "OpenAI Help Center Data Controls：Trusted Access / Daybreak Blue 会话此前禁训，现可纳入训练。政策变更；一手为 Help Center。",
-    "reason": "OpenAI：Daybreak Blue 安全会话数据可用于模型训练",
-    "source": {
-     "name": "OpenAI Help · Data Controls in ChatGPT"
-    },
-    "publishedAt": "2026-11-01T00:00:00.000Z",
-    "timelineAt": "2026-11-01T00:00:00.000Z",
-    "category": "industry",
-    "tags": [
-     "fp_hop_as_rep"
-    ],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-11-01-openai-daybreak-blue-training",
-    "originalUrl": "https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt"
-   },
-   "group": {
-    "factId": "fact-2026-11-01-openai-daybreak-blue-training",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:be583b060c134071"
-    ]
-   }
-  },
-  {
-   "key": "sha256:042fb889688a1d90",
-   "anchorAt": "2026-11-01T00:00:00.000Z",
-   "item": {
-    "id": "sha256:042fb889688a1d90",
-    "title": "Anthropic：水印上线，两款旧 Claude 模型仍有采样漏洞",
-    "summary": null,
-    "reason": "Anthropic：水印上线留 Opus/Sonnet 4.6 采样漏洞",
-    "source": {
-     "name": "Claude Help · How Claude marks AI-generated content"
-    },
-    "publishedAt": "2026-11-01T00:00:00.000Z",
-    "timelineAt": "2026-11-01T00:00:00.000Z",
-    "category": "industry",
-    "tags": [
-     "fp_hop_as_rep"
-    ],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-11-01-anthropic-watermark-older-models",
-    "originalUrl": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content"
-   },
-   "group": {
-    "factId": "fact-2026-11-01-anthropic-watermark-older-models",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:042fb889688a1d90"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-2.json",
@@ -559,7 +562,7 @@
   {
    "rank": 1,
    "title": "OpenAI：发布 GPT-6 Cyber，推进对齐的网络安全智能体",
-   "heat": 18.3,
+   "heat": 15.9,
    "trend": "down",
    "storyPublicId": "2026-11-06-openai-gpt6-cyber",
    "itemId": "sha256:14e90e72d3401ddf",
@@ -585,8 +588,65 @@
   },
   {
    "rank": 2,
+   "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
+   "heat": 14.5,
+   "trend": "up",
+   "storyPublicId": "2026-11-07-anthropic-agent-memory-dreaming",
+   "itemId": "sha256:f0247d2be6d23fda",
+   "participants": [
+    {
+     "name": "Anthropic Research · The components of agent memory",
+     "kind": "editorial"
+    },
+    {
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
+    }
+   ],
+   "participantCount": 2
+  },
+  {
+   "rank": 3,
+   "title": "Cursor：上线 Voice Chat，可与智能体实时语音协作",
+   "heat": 14.5,
+   "trend": "up",
+   "storyPublicId": "2026-11-07-cursor-voice-chat-agents",
+   "itemId": "sha256:c9e260814e66b368",
+   "participants": [
+    {
+     "name": "Cursor Changelog · Voice Chat with Agents",
+     "kind": "editorial"
+    },
+    {
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
+    }
+   ],
+   "participantCount": 2
+  },
+  {
+   "rank": 4,
+   "title": "Amp：上线 Spaces，由主智能体编排协调多 Agent",
+   "heat": 14.4,
+   "trend": "up",
+   "storyPublicId": "2026-11-07-amp-spaces-launch",
+   "itemId": "sha256:0c01f1148bd8b712",
+   "participants": [
+    {
+     "name": "Amp · Spaces",
+     "kind": "editorial"
+    },
+    {
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
+    }
+   ],
+   "participantCount": 2
+  },
+  {
+   "rank": 5,
    "title": "NVIDIA：五项协同设计最大化 AI 工厂每一字节价值",
-   "heat": 10.1,
+   "heat": 8.7,
    "trend": "down",
    "storyPublicId": "2026-11-06-nvidia-ai-factory-byte-codesign",
    "itemId": "sha256:7a4fd1de9b53747b",
@@ -601,48 +661,10 @@
     }
    ],
    "participantCount": 2
-  },
-  {
-   "rank": 3,
-   "title": "DeepMind：Gemini Omni 1.2 Flash，更长视频片段、更低价格",
-   "heat": 9.5,
-   "trend": "down",
-   "storyPublicId": "2026-11-06-gemini-omni-12-flash",
-   "itemId": "sha256:485654c1f98a7cdc",
-   "participants": [
-    {
-     "name": "Google DeepMind Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 2
-  },
-  {
-   "rank": 4,
-   "title": "OpenAI：为负责任 AI 基建设立新标准（社区契约与算力园区政策蓝图）",
-   "heat": 7.3,
-   "trend": "down",
-   "storyPublicId": "2026-11-05-openai-responsible-ai-infrastructure",
-   "itemId": "sha256:25fa4dd18ec78a48",
-   "participants": [
-    {
-     "name": "OpenAI News",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 2
   }
  ],
  "dayCounts": {
-  "2026-11-06": 4,
+  "2026-11-06": 7,
   "2026-11-05": 4,
   "2026-11-04": 5,
   "2026-11-03": 1,
@@ -665,5 +687,5 @@
  },
  "page": 1,
  "pageCount": 6,
- "total": 107
+ "total": 110
 }

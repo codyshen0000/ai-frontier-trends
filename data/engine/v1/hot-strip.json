@@ -2,7 +2,7 @@
  {
   "rank": 1,
   "title": "OpenAI：发布 GPT-6 Cyber，推进对齐的网络安全智能体",
-  "heat": 18.3,
+  "heat": 15.9,
   "trend": "down",
   "storyPublicId": "2026-11-06-openai-gpt6-cyber",
   "itemId": "sha256:14e90e72d3401ddf",
@@ -28,14 +28,14 @@
  },
  {
   "rank": 2,
-  "title": "NVIDIA：五项协同设计最大化 AI 工厂每一字节价值",
-  "heat": 10.1,
-  "trend": "down",
-  "storyPublicId": "2026-11-06-nvidia-ai-factory-byte-codesign",
-  "itemId": "sha256:7a4fd1de9b53747b",
+  "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
+  "heat": 14.5,
+  "trend": "up",
+  "storyPublicId": "2026-11-07-anthropic-agent-memory-dreaming",
+  "itemId": "sha256:f0247d2be6d23fda",
   "participants": [
    {
-    "name": "NVIDIA Technical Blog",
+    "name": "Anthropic Research · The components of agent memory",
     "kind": "editorial"
    },
    {
@@ -47,38 +47,57 @@
  },
  {
   "rank": 3,
-  "title": "DeepMind：Gemini Omni 1.2 Flash，更长视频片段、更低价格",
-  "heat": 9.5,
-  "trend": "down",
-  "storyPublicId": "2026-11-06-gemini-omni-12-flash",
-  "itemId": "sha256:485654c1f98a7cdc",
+  "title": "Cursor：上线 Voice Chat，可与智能体实时语音协作",
+  "heat": 14.5,
+  "trend": "up",
+  "storyPublicId": "2026-11-07-cursor-voice-chat-agents",
+  "itemId": "sha256:c9e260814e66b368",
   "participants": [
    {
-    "name": "Google DeepMind Blog",
+    "name": "Cursor Changelog · Voice Chat with Agents",
     "kind": "editorial"
    },
    {
-    "name": "The Decoder",
-    "kind": "editorial"
+    "name": "IT之家（全站，需关键词过滤）",
+    "kind": "signal"
    }
   ],
   "participantCount": 2
  },
  {
   "rank": 4,
-  "title": "OpenAI：为负责任 AI 基建设立新标准（社区契约与算力园区政策蓝图）",
-  "heat": 7.3,
-  "trend": "down",
-  "storyPublicId": "2026-11-05-openai-responsible-ai-infrastructure",
-  "itemId": "sha256:25fa4dd18ec78a48",
+  "title": "Amp：上线 Spaces，由主智能体编排协调多 Agent",
+  "heat": 14.4,
+  "trend": "up",
+  "storyPublicId": "2026-11-07-amp-spaces-launch",
+  "itemId": "sha256:0c01f1148bd8b712",
   "participants": [
    {
-    "name": "OpenAI News",
+    "name": "Amp · Spaces",
     "kind": "editorial"
    },
    {
-    "name": "The Decoder",
+    "name": "IT之家（全站，需关键词过滤）",
+    "kind": "signal"
+   }
+  ],
+  "participantCount": 2
+ },
+ {
+  "rank": 5,
+  "title": "NVIDIA：五项协同设计最大化 AI 工厂每一字节价值",
+  "heat": 8.7,
+  "trend": "down",
+  "storyPublicId": "2026-11-06-nvidia-ai-factory-byte-codesign",
+  "itemId": "sha256:7a4fd1de9b53747b",
+  "participants": [
+   {
+    "name": "NVIDIA Technical Blog",
     "kind": "editorial"
+   },
+   {
+    "name": "IT之家（全站，需关键词过滤）",
+    "kind": "signal"
    }
   ],
   "participantCount": 2
