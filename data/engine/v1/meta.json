@@ -2,11 +2,11 @@
  "site": "前沿趋势",
  "contract_version": "1.1",
  "mode": "production",
- "data_as_of": "2026-11-09T15:24:58+08:00",
- "data_as_of_label": "数据截至 2026-11-09 15:24（北京时间）",
- "generated_at": "2026-11-09T15:50:00+08:00",
+ "data_as_of": "2026-11-09T19:21:20+08:00",
+ "data_as_of_label": "数据截至 2026-11-09 19:21（北京时间）",
+ "generated_at": "2026-11-09T19:45:00+08:00",
  "hot_rule_version": "heat-v1-48h-halflife24h (前沿情报 heat48h.py 1.1)",
- "hot_computed_at": "2026-11-09T15:50:00+08:00",
+ "hot_computed_at": "2026-11-09T19:45:00+08:00",
  "window_hours": 48,
  "spark_points": 25,
  "page_size": 20,
@@ -24,9 +24,9 @@
   "covers": 10
  },
  "last_round": {
-  "batch_id": "2026-11-09T1524",
+  "batch_id": "2026-11-09T1921",
   "status": "ok",
-  "finished_at": "2026-11-09T15:39:43+08:00"
+  "finished_at": "2026-11-09T19:36:17+08:00"
  },
  "batches": [
   {
@@ -1584,6 +1584,22 @@
   {
    "batch_id": "2026-11-09T1524",
    "status": "ok"
+  },
+  {
+   "batch_id": "2026-11-09T1620",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-11-09T1719",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-11-09T1822",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-11-09T1921",
+   "status": "ok"
   }
  ],
  "files": [
@@ -1714,5 +1730,5 @@
   "timeline/page-5.json",
   "timeline/page-6.json"
  ],
- "next_round": "2026-11-09T19:25:00+08:00"
+ "next_round": "2026-11-10T08:25:00+08:00"
 }
