@@ -6,7 +6,7 @@
  "generatedAt": "2026-10-19T03:26:16.000Z",
  "lead": {
   "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
-  "leadParagraph": "DeepSeek 发布开放权重模型 V4.1-Flash-1017：基准更好、完成任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API。The Decoder 与量子位均有报道。"
+  "leadParagraph": "DeepSeek 发布开放权重模型 V4.1-Flash-1017，在代理类任务上基准更好、完成任务更快、输出更短，并同步开放自研搜索引擎的 Search 与 Fetch API。 The Decoder 称搜索接口按每千次约 0.75 美元计价；量子位亦报道该版本与搜索 API 同步上线。"
  },
  "leadItemId": "sha256:931ff0f85ef4bf70",
  "overview": "DeepSeek 发布开放权重 V4.1-Flash-1017，基准更好、输出更短，并开放 Search/Fetch API。",
@@ -14,7 +14,7 @@
   {
    "itemId": "sha256:931ff0f85ef4bf70",
    "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
-   "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017：基准更好、完成任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API。The Decoder 与量子位均有报道。",
+   "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017，在代理类任务上基准更好、完成任务更快、输出更短，并同步开放自研搜索引擎的 Search 与 Fetch API。 The Decoder 称搜索接口按每千次约 0.75 美元计价；量子位亦报道该版本与搜索 API 同步上线。",
    "sourceName": "The Decoder",
    "sourceUrl": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/",
    "sourceIconUrl": null,
@@ -33,7 +33,8 @@
    "firstParty": false,
    "publishedAt": "2026-10-17T15:36:11.000Z",
    "available": true,
-   "otherSources": 0
+   "otherSources": 0,
+   "belowThreshold": true
   },
   {
    "itemId": "sha256:0dd91801c3b6e853",
@@ -45,7 +46,8 @@
    "firstParty": false,
    "publishedAt": "2026-10-17T14:06:54.000Z",
    "available": true,
-   "otherSources": 0
+   "otherSources": 0,
+   "belowThreshold": true
   }
  ],
  "sections": [
@@ -56,7 +58,7 @@
     {
      "itemId": "sha256:931ff0f85ef4bf70",
      "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
-     "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017：基准更好、完成任务更快、输出更短；同时开放自研搜索引擎的 Search 与 Fetch API。The Decoder 与量子位均有报道。",
+     "summary": "DeepSeek 发布开放权重模型 V4.1-Flash-1017，在代理类任务上基准更好、完成任务更快、输出更短，并同步开放自研搜索引擎的 Search 与 Fetch API。 The Decoder 称搜索接口按每千次约 0.75 美元计价；量子位亦报道该版本与搜索 API 同步上线。",
      "sourceName": "The Decoder",
      "sourceUrl": "https://the-decoder.com/deepseek-v4-1-flash-1017-beats-larger-rivals-in-agentic-tasks-while-once-again-massively-cutting-per-task-costs/",
      "sourceIconUrl": null,
@@ -66,9 +68,21 @@
      "otherSources": 1
     },
     {
+     "itemId": "sha256:50cb4eba8a3e4759",
+     "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持",
+     "summary": "MiniMax 在 Hugging Face 放出 MiniMax-M3.1-Flash 开源权重（约 428B 总参、23B 激活），并推进首日推理接入。 vLLM 同日宣布在 NVIDIA Blackwell/Rubin 与 AMD MI350 系列提供 Day-0 支持，含 NVFP4 MSA/MegaMoE、DSpark 推测解码与 Day-0 RL（veRL）。",
+     "sourceName": "vLLM Blog",
+     "sourceUrl": "https://vllm.ai/blog/2026-10-23-minimax-m31-flash",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-23T00:00:00.000Z",
+     "available": true,
+     "otherSources": 3
+    },
+    {
      "itemId": "sha256:bfa70917f3b198d1",
      "title": "英伟达发布面向企业与 PC 的开源智能体模型",
-     "summary": "TechCrunch 称英伟达新开源模型，面向企业自建开源模型与端侧本地运行智能体。",
+     "summary": "英伟达推出面向企业常驻智能体与端侧本地运行的开源权重模型：Nemotron 3.5 Super VL（约 1200 亿参数）服务企业代理任务，Bolt 系列则面向搭载 RTX/DGX Spark 的 AI PC 与工作站。 TechCrunch 称 Super VL 与 Bolt 74B-A9B 现已可用，更小的 Bolt E4B 计划本月晚些时候推出；官方强调可在自有基础设施上后训练与部署。",
      "sourceName": "TechCrunch · AI",
      "sourceUrl": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
      "sourceIconUrl": null,
@@ -93,7 +107,8 @@
      "firstParty": false,
      "publishedAt": "2026-10-17T15:36:11.000Z",
      "available": true,
-     "otherSources": 0
+     "otherSources": 0,
+     "belowThreshold": true
     }
    ]
   },
@@ -111,21 +126,83 @@
      "firstParty": false,
      "publishedAt": "2026-10-17T14:06:54.000Z",
      "available": true,
-     "otherSources": 0
+     "otherSources": 0,
+     "belowThreshold": true
     }
    ]
   }
  ],
- "flashes": [],
+ "flashes": [
+  {
+   "itemId": "sha256:3174ec059a8695ea",
+   "title": "4 个 Gemini 4 Argon 智能体无人协助通关《我的世界》",
+   "summary": null,
+   "sourceName": "The Decoder",
+   "sourceUrl": "https://the-decoder.com/four-gemini-4-argon-agents-beat-minecraft-without-any-human-help/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-18T12:39:51.000Z",
+   "available": true,
+   "belowThreshold": true
+  },
+  {
+   "itemId": "sha256:584592e06b7b9958",
+   "title": "Claude 30 分钟内解开 NIST 曲线种子 25 年谜题",
+   "summary": null,
+   "sourceName": "The Decoder",
+   "sourceUrl": "https://the-decoder.com/anthropics-claude-cracks-a-25-year-old-nsa-cryptography-mystery-in-under-30-minutes/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-17T14:42:56.000Z",
+   "available": true,
+   "belowThreshold": true
+  },
+  {
+   "itemId": "sha256:e13a46dd16dbc25c",
+   "title": "研究：AI 智能体会在工作报告中隐瞒错误",
+   "summary": null,
+   "sourceName": "The Decoder",
+   "sourceUrl": "https://the-decoder.com/ai-models-hide-mistakes-in-their-own-work-reports-but-one-sentence-in-your-prompt-can-help/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-17T09:54:36.000Z",
+   "available": true,
+   "belowThreshold": true
+  },
+  {
+   "itemId": "sha256:7fc73ab44f09b73f",
+   "title": "清华等开源智能体操作系统 PilotDeck 2.0",
+   "summary": null,
+   "sourceName": "量子位",
+   "sourceUrl": "https://www.qbitai.com/2026/10/503935.html",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-17T12:10:35.000Z",
+   "available": true,
+   "belowThreshold": true
+  },
+  {
+   "itemId": "sha256:8e1750f4fd35f601",
+   "title": "Taste-Bench：AI 智能体长期决策“品味”不佳",
+   "summary": null,
+   "sourceName": "The Decoder",
+   "sourceUrl": "https://the-decoder.com/ai-agents-have-bad-taste-in-long-term-decisions-and-a-new-benchmark-proves-it/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-18T08:49:41.000Z",
+   "available": true,
+   "belowThreshold": true
+  }
+ ],
  "cover": null,
  "metrics": {
-  "totalEvents": 4,
-  "sourcesCount": 4,
-  "firstPartyEvents": 0,
-  "modelsReleased": 2,
-  "mainCardNote": "今日仅 4 条达收录标准"
+  "totalEvents": 5,
+  "sourcesCount": 6,
+  "firstPartyEvents": 1,
+  "modelsReleased": 3,
+  "mainCardNote": "今日仅 5 条达收录标准"
  },
- "readingMinutes": 1,
+ "readingMinutes": 2,
  "prev": null,
  "next": "2026-10-20"
 }

@@ -15,7 +15,7 @@
 | `daily-index.json` | `dailyIndex` | `ReportNavigationEntry[]`，新→旧 |
 | `fixture.json` | 全部 | `{timeline, hotStrip, hot, dailyIndex, daily, today}` 一次读入 |
 | `meta.json` | （新增） | 见下 |
-| `daily/YYYY-MM-DD.json` | 按日归档 | 与 `daily.json` 同形。本批有 `2026-10-19`–`2026-10-24`；根目录 `daily.json` 等于今天（`2026-10-24`）。加载器仍读根目录 `daily.json`。 |
+| `daily/YYYY-MM-DD.json` | 按日归档 | 与 `daily.json` 同形。本批有 `2026-10-19`–`2026-11-07`（无 `2026-11-02`）；根目录 `daily.json` 等于今天（`2026-11-07`）。加载器仍读根目录 `daily.json`。 |
 
 分片文件优先于 `fixture.json` 同名切片。只有 `fixture.json` 也算引擎模式。
 
@@ -64,13 +64,13 @@ interface EngineMeta {
 - 标题里的 `「[低于门槛补位]」`、日报摘要里的 `「（低于门槛）」` **原样保留**，不得剥离或隐藏。
 - 新导出若只给 `belowThreshold: true`、标题不再带前缀：加载器在渲染前补上 `[低于门槛补位]` / `（低于门槛）`。
 - 热度、分数原样进入壳层，不改写成 0、不因补位隐藏。
-- 本批：过线 50 条 / 补位 10 条；热点 7 条（#1 OpenMobile-2；Kimi WorkBuddy 仍在榜）。Flora / 单智能体循环 / OpenMobile-2 / vLLM NVL72 精选均在。24 日日报仍 14/12/`flashes=20`。T1620–T1921。
+- 本批：过线 114 条 / 补位 11 条；热点 0 条（空榜合法）。日报 19 期，今天 `2026-11-07`。T0425–T0823 已导入。
 
 ## 图片（MIT L2）
 
 只两处大图：
 
-1. 热点 **NO.01** 的 `cover`（本批有 `url`、`width` 为 `null`，加载器保留该链；失败则无图 + 24h spark 面板）
+1. 热点 **NO.01** 的 `cover`（本批热点为空，走无榜空态）
 2. 日报头条 `cover`（本批 v5 价值门为 `null`，走无图报纸布局）
 
 规则：第一张 `width >= 480`。`rank !== 1` 的 cover 丢弃。`url` 热链原文，不走付费代理；加载失败时壳层去掉该图（无图态）。

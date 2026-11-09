@@ -1,0 +1,465 @@
+{
+ "kind": "daily",
+ "key": "2026-10-28",
+ "issueNumber": 10,
+ "title": "AI日报 · 2026-10-28",
+ "generatedAt": "2026-10-28T02:30:00.000Z",
+ "lead": {
+  "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族",
+  "leadParagraph": "LiquidAI 经 Hugging Face 发布 LFM3：以 LFM3-1.7B-Base 衍生文本/视觉/音频/omni/决策等约 2B 模型，强调边缘部署与单卡微调；权重开源。属厂商/HF 一手发布。"
+ },
+ "leadItemId": "sha256:a3a8ddf99df9b0da",
+ "overview": "LiquidAI 发布 LFM3：约 2B 多模态同骨干开源族。",
+ "highlights": [
+  {
+   "itemId": "sha256:a3a8ddf99df9b0da",
+   "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族",
+   "summary": "LiquidAI 经 Hugging Face 发布 LFM3：以 LFM3-1.7B-Base 衍生文本/视觉/音频/omni/决策等约 2B 模型，强调边缘部署与单卡微调；权重开源。属厂商/HF 一手发布。",
+   "sourceName": "Liquid AI Blog",
+   "sourceUrl": "https://huggingface.co/blog/LiquidAI/lfm3",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-27T17:16:52.000Z",
+   "available": true,
+   "otherSources": 1
+  },
+  {
+   "itemId": "sha256:64295c3ae779f4ac",
+   "title": "OpenAI：公开「指数时间假设为假」预印本材料",
+   "summary": "OpenAI math 仓库公开称确定性算法可对固定宽度 k-CNF 做亚指数精确计数，从而挑战 ETH；附预印本与 Lean 形式化范围说明，并由外部工作组审查。TechCrunch 跟进解读。属实验室自报，正确性待外部核验。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://github.com/openai/math/tree/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-25T00:00:00.000Z",
+   "available": true,
+   "otherSources": 0
+  },
+  {
+   "itemId": "sha256:e97319d8730a2e80",
+   "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
+   "summary": "Google Research 提出 sleep 持续学习范式：在活跃交互与离线记忆巩固间切换，用 MoE 扩容与做梦式自改进，报告长上下文与推理基准提升。属一手研究博客。",
+   "sourceName": "Google Research Blog",
+   "sourceUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-27T17:35:00.000Z",
+   "available": true,
+   "otherSources": 1
+  },
+  {
+   "itemId": "sha256:c417f8e3d39d0b89",
+   "title": "OpenAI：与 Oracle 扩大合作，把应用接入 ChatGPT",
+   "summary": "OpenAI 称与 Oracle 扩大合作：把 Oracle 应用与数据接入 ChatGPT（Oracle AI Workspace），并用 OpenAI 模型支撑 AI Security Mesh、SMB Bundle、App Composer 等新产品；美国客户可通过 Oracle Marketplace 采购。属官方通稿。",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/oracle-apps-in-chatgpt",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-27T07:00:00.000Z",
+   "available": true,
+   "otherSources": 0
+  }
+ ],
+ "sections": [
+  {
+   "label": "模型",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:a3a8ddf99df9b0da",
+     "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族",
+     "summary": "LiquidAI 经 Hugging Face 发布 LFM3：以 LFM3-1.7B-Base 衍生文本/视觉/音频/omni/决策等约 2B 模型，强调边缘部署与单卡微调；权重开源。属厂商/HF 一手发布。",
+     "sourceName": "Liquid AI Blog",
+     "sourceUrl": "https://huggingface.co/blog/LiquidAI/lfm3",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-27T17:16:52.000Z",
+     "available": true,
+     "otherSources": 1
+    },
+    {
+     "itemId": "sha256:ec733f799e1aaee3",
+     "title": "NVIDIA 发布开源 Nemotron 3.5 Transcribe 与 Granary v2",
+     "summary": "NVIDIA 在 Hugging Face 发布开源权重 Nemotron 3.5 Transcribe：单检查点可做多语转写（约 40 语）、说话人归属、翻译与音频问答，并可用自然语言提示；同日给出 Granary v2 多语语音数据与微调工具。属官方模型/数据发布。",
+     "sourceName": "Hugging Face Blog",
+     "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-28T14:58:17.000Z",
+     "available": true,
+     "otherSources": 2
+    },
+    {
+     "itemId": "sha256:3e32bae570ff21ee",
+     "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+     "summary": "Google DeepMind 宣布 Gemini 4 Carbon，称其为目前最强一代，在 Artificial Analysis Intelligence Index v5.0 排名第一（59），并在 SEC-bench Pro、ExploitGym、CWE-bench 等网络安全评测领先；内部称可支撑多日长程工程任务。在 Argon 两周后发布。正按美国政府自愿预发布测试流程推进，本周起先向部分网络安全防御方开放，再经 Fairwind 计划扩至可信伙伴；面向开发者与消费者的产品面仍待开放。入门价与 Argon 相同：每百万输入/输出 token 2/10 美元。",
+     "sourceName": "Google DeepMind Blog",
+     "sourceUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-28T17:00:58.000Z",
+     "available": true,
+     "otherSources": 4
+    }
+   ]
+  },
+  {
+   "label": "论文",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:64295c3ae779f4ac",
+     "title": "OpenAI：公开「指数时间假设为假」预印本材料",
+     "summary": "OpenAI math 仓库公开称确定性算法可对固定宽度 k-CNF 做亚指数精确计数，从而挑战 ETH；附预印本与 Lean 形式化范围说明，并由外部工作组审查。TechCrunch 跟进解读。属实验室自报，正确性待外部核验。",
+     "sourceName": "TechCrunch · AI",
+     "sourceUrl": "https://github.com/openai/math/tree/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-25T00:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:e97319d8730a2e80",
+     "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
+     "summary": "Google Research 提出 sleep 持续学习范式：在活跃交互与离线记忆巩固间切换，用 MoE 扩容与做梦式自改进，报告长上下文与推理基准提升。属一手研究博客。",
+     "sourceName": "Google Research Blog",
+     "sourceUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-27T17:35:00.000Z",
+     "available": true,
+     "otherSources": 1
+    },
+    {
+     "itemId": "sha256:1d6c5c59e46e52b9",
+     "title": "Hugging Face：LLM 能否可靠评判研究想法新颖性",
+     "summary": "Hugging Face 博客发布 Ai2 研究 Old Ideas, Novel Problems，评估大模型作新颖性评判的可靠性，并公开基准、数据、代码与自动化评测流水线。属一手研究发布。",
+     "sourceName": "Hugging Face Blog",
+     "sourceUrl": "https://huggingface.co/blog/allenai/novelty-bench",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-27T16:12:42.000Z",
+     "available": true,
+     "otherSources": 0
+    }
+   ]
+  },
+  {
+   "label": "产品",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:c417f8e3d39d0b89",
+     "title": "OpenAI：与 Oracle 扩大合作，把应用接入 ChatGPT",
+     "summary": "OpenAI 称与 Oracle 扩大合作：把 Oracle 应用与数据接入 ChatGPT（Oracle AI Workspace），并用 OpenAI 模型支撑 AI Security Mesh、SMB Bundle、App Composer 等新产品；美国客户可通过 Oracle Marketplace 采购。属官方通稿。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/oracle-apps-in-chatgpt",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-27T07:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:449070727cbfb984",
+     "title": "NVIDIA：CUDA 13.4 在 Kubernetes 上内存强制 GPU 共享",
+     "summary": "NVIDIA 技术博客介绍 CUDA 13.4 在 Kubernetes 中的内存强制 GPU 共享：按显存配额切分单卡，减少小负载独占整卡造成的空闲。属厂商开发者文档级发布。",
+     "sourceName": "NVIDIA Technical Blog",
+     "sourceUrl": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-27T20:50:39.000Z",
+     "available": true,
+     "otherSources": 1
+    },
+    {
+     "itemId": "sha256:1a162d33f42d8b8e",
+     "title": "蚂蚁百灵开源 Ling-3.1-flash-1019：560B/25B MoE，AA 智力指数 44",
+     "summary": "蚂蚁 inclusionAI 在 Hugging Face 开源 Ling-3.1-flash-1019（总参约 560B、每 Token 激活约 25B、混合线性 MoE、MIT）：相对上一版 AA Intelligence Index v4.3.2 从 41 升至 44；AA-Briefcase 约 1400→1524 Elo，AutomationBench-AA 62%→68%，CritPt 18%→26%，SciCode 54%→57%。同步开源基础模型 Ling-3.1-flash-base；面向 Personal Agent / 多步真实任务。量子位跟进报道。",
+     "sourceName": "HF 机构新模型 · inclusionAI",
+     "sourceUrl": "https://huggingface.co/inclusionAI/Ling-3.1-flash-1019",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-27T05:46:51.000Z",
+     "available": true,
+     "otherSources": 1
+    },
+    {
+     "itemId": "sha256:f0e3f8456fcbc65d",
+     "title": "微软发布 MAI-Image-2.7：图像编辑预览登 Artificial Analysis 第二",
+     "summary": "微软 AI 官方宣布推出 MAI Image 2.7 图像编辑预览：主打场景重绘/打光、图内文字与符号修改、素材修复增强；称在 Artificial Analysis 图像编辑榜列第二、Arena Edit 第三，相对 2.6 在全部评测用例与编辑动作上提升，场景与风格项领先约 24 Elo。现阶段以已有图片+指令编辑为主，文生图尚未开放；官方未公布 2.7 API/定价。IT之家等跟进转述。",
+     "sourceName": "Microsoft AI",
+     "sourceUrl": "https://microsoft.ai/news/mai-image-2-7-debut/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-27T00:00:00.000Z",
+     "available": true,
+     "otherSources": 1
+    }
+   ]
+  },
+  {
+   "label": "行业",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:8d93b09012158ea0",
+     "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
+     "summary": "Cloudflare 官方披露并修复 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题，说明影响范围与补救。属官方安全通告。",
+     "sourceName": "Cloudflare Blog",
+     "sourceUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-26T22:41:48.000Z",
+     "available": true,
+     "otherSources": 1
+    },
+    {
+     "itemId": "sha256:3801bfeec8403796",
+     "title": "微软首次披露 Azure 季度营收约 33.2 亿美元",
+     "summary": "TechCrunch 称微软首次以美元披露 Azure 季度营收约 33.2 亿美元；同季总营收约 922.79 亿美元（同比 +19%），并披露来自 OpenAI 安排收入约 10 亿美元。属财报解读二手，关键数字来自业绩披露。",
+     "sourceName": "TechCrunch · AI",
+     "sourceUrl": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
+     "sourceIconUrl": null,
+     "firstParty": false,
+     "publishedAt": "2026-10-28T21:58:32.000Z",
+     "available": true,
+     "otherSources": 1
+    }
+   ]
+  }
+ ],
+ "flashes": [
+  {
+   "itemId": "sha256:c44dc9ed271ff418",
+   "title": "OpenAI：Check Point 用 Daybreak 加速漏洞研究",
+   "summary": "客户案例；未过 T1=60，不进精选。",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/check-point-daybreak",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-27T00:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:532d66983e66bb3d",
+   "title": "跟进：Palisade 称 Qwen 3.8 部分请求路由到公司服务器",
+   "summary": "The Decoder 跟进并入 Cohere「异常外传」事件。",
+   "sourceName": "The Decoder",
+   "sourceUrl": "https://the-decoder.com/alibabas-latest-qwen-models-routed-some-requests-through-company-servers-researchers-find/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T19:45:49.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:db05b50ceb26005a",
+   "title": "报道：家属起诉 OpenAI，称 GPT-4o 诱导停用抗癫痫药",
+   "summary": "诉讼报道；事实待法庭程序，未过 T2=76。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T23:34:27.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:a17083d6bd141e2d",
+   "title": "报道：亚马逊在持续失败后收缩 AI 部门",
+   "summary": null,
+   "sourceName": "Futurism",
+   "sourceUrl": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T16:25:30.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:9a3764356b202945",
+   "title": "报道：美国银行提醒勿把网银密码交给 AI 助手",
+   "summary": "机构风险提示；未过 T2=76。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T21:44:34.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:f74f3a0c358e9a1d",
+   "title": "跟进：谁在 Anthropic IPO 后真正掌权",
+   "summary": "TechCrunch 梳理治理结构；并入 Anthropic S-1 事件。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/10/27/whos-really-in-charge-at-anthropic-after-the-ipo/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T21:38:28.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:1e3ebf94e41ebe19",
+   "title": "OpenAI：Retell 用其模型支撑每月约 1 亿通话",
+   "summary": "客户案例；未过 T1=60。",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/retell-ai",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-27T15:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:578f4a1cc2a6a4ec",
+   "title": "观点：研究者不满 OpenAI 对突破性结果的披露方式",
+   "summary": "The Verge 观点文；未过 T2=76。",
+   "sourceName": "The Verge · AI",
+   "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T20:48:58.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:3f05b58fe78718ef",
+   "title": "报道：甲骨文扩大英伟达供应并引入谷歌 TPU 与 Cerebras",
+   "summary": "IT之家聚合转述；hot_signal 不单列精选。",
+   "sourceName": "IT之家",
+   "sourceUrl": "https://www.ithome.com/1/018/728.htm",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-28T00:20:10.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:2247b97d682bdb4b",
+   "title": "Latent Space：Anthropic 如何用 Claude 交付 Claude",
+   "summary": "脑与手分离交付法；未过 T2=76，进快讯。",
+   "sourceName": "Latent Space",
+   "sourceUrl": "https://latent.space/p/opus55/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T00:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:991356d9e9385200",
+   "title": "报道：Firefox Smart Window 增加 AI 填表与网页监控",
+   "summary": null,
+   "sourceName": "The Verge · AI",
+   "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T00:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:662cec4c533afa61",
+   "title": "报道：国产 AI 3D 大模型 Hi3D 开源可商用",
+   "summary": "量子位报道 Hi3D 开源；未过 T2=76。",
+   "sourceName": "量子位",
+   "sourceUrl": "https://www.qbitai.com/2026/10/505694.html",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T00:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:ff390db43c3b5faf",
+   "title": "报道：Disruptive 募集约 100 亿美元基金做大额押注",
+   "summary": null,
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T00:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:3a6fc6b907c3f034",
+   "title": "报道：人形机器人全栈图纸与运动算法开源",
+   "summary": "量子位称全栈开源；细节待一手仓库核验。",
+   "sourceName": "量子位",
+   "sourceUrl": "https://www.qbitai.com/2026/10/505865.html",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T00:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:b7bdac3bb4ce8ed2",
+   "title": "报道：警方用 AI 判定「可疑」行为拦停司机",
+   "summary": "Gizmodo/HN 热议；未过 T2=76。",
+   "sourceName": "Gizmodo",
+   "sourceUrl": "https://gizmodo.com/police-are-using-ai-to-pull-over-drivers-for-suspicious-behavior-2000831220",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T16:40:15.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:0fa71fcc03f57574",
+   "title": "报道：维基百科清理 AI 生成内容",
+   "summary": null,
+   "sourceName": "IEEE Spectrum",
+   "sourceUrl": "https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T11:08:15.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:93d8b38790e5bd87",
+   "title": "报道：NVIDIA 投资印度初创 Simplismart 做少卡跑模",
+   "summary": "TechCrunch：英伟达押注少 GPU 推理创业。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T11:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:b9b5de18e9156d54",
+   "title": "开源：Survival LLM 本地应急助手与资料库",
+   "summary": null,
+   "sourceName": "Hacker News（AI 关键词 ≥100 分）",
+   "sourceUrl": "https://www.brangus.io/survival-llm",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T19:55:06.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:8128c7853b28b767",
+   "title": "跟进：亚马逊经票据转换在 Anthropic 持股更深",
+   "summary": "TC 解读 Amazon 持股；并入 Anthropic IPO 簇。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-28T01:15:28.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:de6edf7c4f457352",
+   "title": "随笔：AI 时代的人月神话",
+   "summary": null,
+   "sourceName": "Hacker News（AI 关键词 ≥100 分）",
+   "sourceUrl": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-27T06:25:37.000Z",
+   "available": true
+  }
+ ],
+ "cover": null,
+ "metrics": {
+  "totalEvents": 12,
+  "sourcesCount": 17,
+  "firstPartyEvents": 11,
+  "modelsReleased": 3
+ },
+ "readingMinutes": 5,
+ "prev": "2026-10-27",
+ "next": "2026-10-29"
+}

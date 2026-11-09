@@ -1,38 +1,116 @@
 [
-  {
-    "key": "2026-10-24",
-    "issueNumber": 6,
-    "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
-    "count": 12
-  },
-  {
-    "key": "2026-10-23",
-    "issueNumber": 5,
-    "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
-    "count": 12
-  },
-  {
-    "key": "2026-10-22",
-    "issueNumber": 4,
-    "title": "微软研究院：宣布解决数学界 31 年难题 KLS 猜想",
-    "count": 12
-  },
-  {
-    "key": "2026-10-21",
-    "issueNumber": 3,
-    "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
-    "count": 12
-  },
-  {
-    "key": "2026-10-20",
-    "issueNumber": 2,
-    "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
-    "count": 6
-  },
-  {
-    "key": "2026-10-19",
-    "issueNumber": 1,
-    "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
-    "count": 5
-  }
+ {
+  "key": "2026-11-07",
+  "issueNumber": 19,
+  "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
+  "count": 9
+ },
+ {
+  "key": "2026-11-06",
+  "issueNumber": 18,
+  "title": "NVIDIA：发布 Cosmos 3 开放模型，面向可交互世界仿真",
+  "count": 11
+ },
+ {
+  "key": "2026-11-05",
+  "issueNumber": 17,
+  "title": "OpenAI：推出 Images 2.6（更快生成、GIF、精细编辑与 API 控制）",
+  "count": 8
+ },
+ {
+  "key": "2026-11-04",
+  "issueNumber": 16,
+  "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
+  "count": 6
+ },
+ {
+  "key": "2026-11-03",
+  "issueNumber": 15,
+  "title": "OpenAI：Scaling Git at OpenAI（Pando）",
+  "count": 5
+ },
+ {
+  "key": "2026-11-01",
+  "issueNumber": 14,
+  "title": "OpenAI：Daybreak Blue 网络安全会话数据将可用于模型训练",
+  "count": 10
+ },
+ {
+  "key": "2026-10-31",
+  "issueNumber": 13,
+  "title": "OpenAI：合理使用惠及所有人",
+  "count": 11
+ },
+ {
+  "key": "2026-10-30",
+  "issueNumber": 12,
+  "title": null,
+  "count": 5
+ },
+ {
+  "key": "2026-10-29",
+  "issueNumber": 11,
+  "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+  "count": 12
+ },
+ {
+  "key": "2026-10-28",
+  "issueNumber": 10,
+  "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族",
+  "count": 12
+ },
+ {
+  "key": "2026-10-27",
+  "issueNumber": 9,
+  "title": "OpenAI 发布 GPT-6.1 Terra",
+  "count": 9
+ },
+ {
+  "key": "2026-10-26",
+  "issueNumber": 8,
+  "title": "OpenAI 发布 GPT-6.1 Terra",
+  "count": 10
+ },
+ {
+  "key": "2026-10-25",
+  "issueNumber": 7,
+  "title": "vLLM：DeepSeek-V4.1-Flash 在 GB300 NVL72 吞吐逼近 DeepInfer",
+  "count": 12
+ },
+ {
+  "key": "2026-10-24",
+  "issueNumber": 6,
+  "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
+  "count": 12
+ },
+ {
+  "key": "2026-10-23",
+  "issueNumber": 5,
+  "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
+  "count": 12
+ },
+ {
+  "key": "2026-10-22",
+  "issueNumber": 4,
+  "title": "微软研究院：宣布解决数学界 31 年难题 KLS 猜想",
+  "count": 12
+ },
+ {
+  "key": "2026-10-21",
+  "issueNumber": 3,
+  "title": "Mistral 发布 Voxtral 3：实时语音智能体 SDK 与语音模型",
+  "count": 12
+ },
+ {
+  "key": "2026-10-20",
+  "issueNumber": 2,
+  "title": "可灵 AI 发布 4.0：立体声、多语口型同步与更轻 Flash",
+  "count": 6
+ },
+ {
+  "key": "2026-10-19",
+  "issueNumber": 1,
+  "title": "DeepSeek 发布开放权重 V4.1-Flash-1017，并开放搜索 API",
+  "count": 5
+ }
 ]

@@ -1,0 +1,238 @@
+{
+ "kind": "daily",
+ "key": "2026-11-03",
+ "issueNumber": 15,
+ "title": "AI日报 · 2026-11-03",
+ "generatedAt": "2026-11-03T00:33:25.000Z",
+ "lead": {
+  "title": "OpenAI：Scaling Git at OpenAI（Pando）",
+  "leadParagraph": "OpenAI 官方：为 Codex 级开发规模构建 Git 兼容后端 Pando。"
+ },
+ "leadItemId": "sha256:277870ffc8d71544",
+ "overview": "OpenAI：Pando 扩展 Git，支撑 Codex 级开发规模。",
+ "highlights": [
+  {
+   "itemId": "sha256:277870ffc8d71544",
+   "title": "OpenAI：Scaling Git at OpenAI（Pando）",
+   "summary": "OpenAI 官方：为 Codex 级开发规模构建 Git 兼容后端 Pando。",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/scaling-git-at-openai",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-11-02T15:30:00.000Z",
+   "available": true,
+   "otherSources": 0
+  },
+  {
+   "itemId": "sha256:5a014341bc3fc0f1",
+   "title": "OpenAI：发布 LifeVal，测 AI 协助日常事务的能力",
+   "summary": "OpenAI 官方：LifeVal 基准覆盖托儿、理财、政务表格等真实任务，衡量 AI 是否帮得上忙。",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/lifeval",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-11-02T09:00:00.000Z",
+   "available": true,
+   "otherSources": 0
+  },
+  {
+   "itemId": "sha256:4094d4340f9e66f9",
+   "title": "OpenAI：Qodo 把公司知识注入 Codex 做代码审阅",
+   "summary": "OpenAI 官方客户故事：Qodo 将规范与仓库上下文接入 Codex，在开 PR 前抓 P0 问题。",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/qodo-codex-plugin",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-11-02T00:00:00.000Z",
+   "available": true,
+   "otherSources": 0
+  },
+  {
+   "itemId": "sha256:5d33ed0c66ace544",
+   "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网",
+   "summary": "OpenAI 官方：与公用事业合作，未来计算园区在电网紧张时可降低用电；乔治亚试点声称至多约 1000MW 需求响应。",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/grid-protectors-program",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-11-02T15:00:00.000Z",
+   "available": true,
+   "otherSources": 1
+  }
+ ],
+ "sections": [
+  {
+   "label": "产品",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:277870ffc8d71544",
+     "title": "OpenAI：Scaling Git at OpenAI（Pando）",
+     "summary": "OpenAI 官方：为 Codex 级开发规模构建 Git 兼容后端 Pando。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/scaling-git-at-openai",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-02T15:30:00.000Z",
+     "available": true,
+     "otherSources": 0
+    }
+   ]
+  },
+  {
+   "label": "行业",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:5a014341bc3fc0f1",
+     "title": "OpenAI：发布 LifeVal，测 AI 协助日常事务的能力",
+     "summary": "OpenAI 官方：LifeVal 基准覆盖托儿、理财、政务表格等真实任务，衡量 AI 是否帮得上忙。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/lifeval",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-02T09:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:4094d4340f9e66f9",
+     "title": "OpenAI：Qodo 把公司知识注入 Codex 做代码审阅",
+     "summary": "OpenAI 官方客户故事：Qodo 将规范与仓库上下文接入 Codex，在开 PR 前抓 P0 问题。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/qodo-codex-plugin",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-02T00:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:5d33ed0c66ace544",
+     "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网",
+     "summary": "OpenAI 官方：与公用事业合作，未来计算园区在电网紧张时可降低用电；乔治亚试点声称至多约 1000MW 需求响应。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/grid-protectors-program",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-02T15:00:00.000Z",
+     "available": true,
+     "otherSources": 1
+    },
+    {
+     "itemId": "sha256:bca108e4c77bd86b",
+     "title": "OpenAI：大幅提高安全漏洞赏金，最高 $172,000",
+     "summary": "OpenAI 官方：中高危奖励中位数超四倍；核心产品危急最高 3 万，卓越危急加奖励可达 $172,000；并推质量/忠诚乘数。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-02T18:00:00.000Z",
+     "available": true,
+     "otherSources": 1
+    }
+   ]
+  }
+ ],
+ "flashes": [
+  {
+   "itemId": "sha256:896ea6e6a603f203",
+   "title": "报道：高盛收回交易员与银行家的 AI 编码工具",
+   "summary": "Decoder：高盛将 Claude Code/Copilot 限给工程师；交易",
+   "sourceName": "The Decoder",
+   "sourceUrl": "https://the-decoder.com/goldman-sachs-pulls-ai-coding-tools-from-traders-and-bankers/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-11-02T20:00:03.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:62954b6003d956ad",
+   "title": "报道：Anthropic 称已非常接近 RSI（自我改进）能力",
+   "summary": "TC：Anthropic 警告接近自建 AI / RSI；二手策略表态。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-11-02T22:14:50.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:1263ce4e09302da8",
+   "title": "报道：Oracle 拟发售约 200 亿美元股票/债券支撑 AI 扩建",
+   "summary": "CNBC/HN：Oracle 备案约 200 亿美元融资支撑 AI 基建。",
+   "sourceName": "Hacker News（AI 关键词 ≥100 分）",
+   "sourceUrl": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-11-02T19:27:37.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:977334dcf0434eb1",
+   "title": "报道：Trajectory 融资 4500 万美元做非技术专家可训模型",
+   "summary": null,
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-11-02T23:13:53.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:6d49bd650ae9b86b",
+   "title": "NVIDIA：自动工作负载恢复，支撑分布式训练续跑",
+   "summary": "NVIDIA 技术博客：分布式训练故障自动恢复；诚实分未过 T1。",
+   "sourceName": "NVIDIA Technical Blog",
+   "sourceUrl": "https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-11-02T22:43:05.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:0dde73a752eec265",
+   "title": "NVIDIA：用 Attribution 诊断分布式 AI 故障",
+   "summary": "NVIDIA 技术博客：跨 rank 归因；诚实分未过 T1。",
+   "sourceName": "NVIDIA Technical Blog",
+   "sourceUrl": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-11-02T23:39:34.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:9d52bf97ae057251",
+   "title": "发布：llm 0.37",
+   "summary": "Willison：LLM CLI/库两月累积发版；小工具线索。",
+   "sourceName": "Simon Willison",
+   "sourceUrl": "https://simonwillison.net/2026/Nov/2/llm/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-11-02T23:49:30.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:9e8a6cc08fde12e1",
+   "title": "报道：AI 智能体昨夜给小鼠做脑外科手术",
+   "summary": "HN/Twitter：AI agent 小鼠脑手术演示热议；证据链弱。",
+   "sourceName": "Hacker News（AI 关键词 ≥100 分）",
+   "sourceUrl": "https://twitter.com/OcanaSantero/status/2115442964574908902",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-11-02T12:50:59.000Z",
+   "available": true
+  }
+ ],
+ "cover": null,
+ "metrics": {
+  "totalEvents": 5,
+  "sourcesCount": 3,
+  "firstPartyEvents": 5,
+  "modelsReleased": 0,
+  "mainCardNote": "今日仅 5 条达收录标准"
+ },
+ "readingMinutes": 1,
+ "prev": "2026-11-01",
+ "next": "2026-11-04"
+}

@@ -1,0 +1,192 @@
+{
+ "kind": "daily",
+ "key": "2026-10-30",
+ "issueNumber": 12,
+ "title": "AI日报 · 2026-10-30",
+ "generatedAt": "2026-10-30T01:14:31.000Z",
+ "lead": null,
+ "leadItemId": null,
+ "overview": "早报条目为空，不凑数。快讯 8 条。",
+ "highlights": [],
+ "sections": [
+  {
+   "label": "论文",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:0f01adb2acab0a67",
+     "title": "OpenAI：如何监测前沿模型错位",
+     "summary": "OpenAI 介绍分层监测体系，用于发现前沿模型错位与未授权智能体行为，以便响应方在事件升级前介入。属官方安全/对齐运营说明。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-29T09:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    }
+   ]
+  },
+  {
+   "label": "行业",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:f7a1020f473102a5",
+     "title": "Wiz：智能体攻击兴起——形态、指纹与走向",
+     "summary": "Wiz 安全博客梳理「智能体攻击」：攻击者如何用 AI 智能体改变作战方式，给出真实案例分析、指纹识别要点，并讨论对防守方的含义。与既有 PHP2Shell/ARTEX 个案不同，本条为横向攻击形态综述；官方 T1。",
+     "sourceName": "Wiz Blog",
+     "sourceUrl": "https://www.wiz.io/blog/the-rise-of-agentic-attacks-what-they-look-like-and-where-theyre-headed",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-29T14:36:22.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:9349f418e7bc7ab4",
+     "title": "OpenAI 更新 Model Spec",
+     "summary": "OpenAI 发布更新版 Model Spec，概述五条核心价值，引导更强模型在判断力、人类能动性与忠实人类意图上的行为。官方对齐规范。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/updated-model-spec",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-29T17:00:00.000Z",
+     "available": true,
+     "otherSources": 2
+    },
+    {
+     "itemId": "sha256:f37fa8ee7ba135be",
+     "title": "Wiz：发布 2026 AI 威胁就绪调查报告要点",
+     "summary": "Wiz：发布 2026 AI 威胁就绪调查报告要点",
+     "sourceName": "Wiz Blog",
+     "sourceUrl": "https://www.wiz.io/blog/ai-threat-readiness-survey-report-2026",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-30T12:57:42.000Z",
+     "available": true,
+     "otherSources": 0
+    }
+   ]
+  },
+  {
+   "label": "模型",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:5a25565ab71a8d06",
+     "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
+     "summary": "Mistral 发布并开源 Mistral Large 4（代号 Le Chonk）权重：约 1 万亿参数、原生多模态，称在开源权重编码评测领先并强化防御性网络安全；提供多种推理模式以平衡成本与性能，在欧洲基础设施训练。同日 vLLM 宣布 Day-0 支持（稀疏 MLA、跨层 KV 共享等），Hugging Face 发文欢迎上架。",
+     "sourceName": "Mistral AI News",
+     "sourceUrl": "https://mistral.ai/news/mistral-large-4-oss/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-29T12:00:07.000Z",
+     "available": true,
+     "otherSources": 5
+    }
+   ]
+  }
+ ],
+ "flashes": [
+  {
+   "itemId": "sha256:ce60afcfeab588ff",
+   "title": "报道：专家误把智能体随机意见当自己的",
+   "summary": "Decoder 转述 Anthropic 研究：协作中专家采纳智能体随机意见却以",
+   "sourceName": "The Decoder",
+   "sourceUrl": "https://the-decoder.com/experts-adopt-ai-agents-random-opinions-and-think-theyre-their-own-anthropic-study-finds/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-29T19:33:37.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:80efc55f2e01c1cb",
+   "title": "报道：OpenAI Pro 用量上限据称翻倍",
+   "summary": "Decoder：称 Pro 套餐用量上限提高一倍；二手产品线索，未附官方公告。",
+   "sourceName": "The Decoder",
+   "sourceUrl": "https://the-decoder.com/openai-doubles-usage-limits-on-pro-plans-as-competition-with-anthropic-heats-up/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-29T20:01:27.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:5229178591e013ae",
+   "title": "报道：Thrive Holdings 收购 ADT",
+   "summary": "TC：OpenAI 支持的 Thrive Holdings 收购 ADT；资本线",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-29T19:56:19.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:a5f8a01d78a2d93e",
+   "title": "报道：智元 GO-3 Preview 具身模型",
+   "summary": "IT之家：智元发布 GO-3 Preview，称登顶多项具身榜；二手发布快讯。",
+   "sourceName": "IT之家（全站，需关键词过滤）",
+   "sourceUrl": "https://www.ithome.com/1/019/806.htm",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-29T23:22:24.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:a1f8d24a51e36d46",
+   "title": "Zombie stats：AI 引用数字从哪来",
+   "summary": "Trakkr 研究札记：梳理模型常引用「僵尸统计」的来源；研究线索。",
+   "sourceName": "Hacker News（AI 关键词 ≥100 分）",
+   "sourceUrl": "https://trakkr.ai/trakkr-research/zombie-stats",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-29T15:06:17.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:721b5a235fb52364",
+   "title": "报道：Proton 内部 AI 路线争议",
+   "summary": "404 Media：Proton 内部对 AI 产品路线的争论；组织舆论线索。",
+   "sourceName": "Hacker News（AI 关键词 ≥100 分）",
+   "sourceUrl": "https://www.404media.co/manifestos-fear-and-loser-thinking-inside-protons-ai-reckoning/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-29T14:29:06.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:f3117e1d89a120ca",
+   "title": "报道：Rivian×大众合资扩至 AI 助手",
+   "summary": "TC：Rivian 与大众合资纳入车载 AI 助手；汽车+AI 线索。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-29T20:05:47.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:88899755dba00e8d",
+   "title": "ChatGPT 订阅据称可获 API 积分",
+   "summary": "Willison 笔记：符合条件订阅附带 API credits；产品权益线索。",
+   "sourceName": "Simon Willison",
+   "sourceUrl": "https://simonwillison.net/2026/Oct/29/api-credits/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-29T22:48:29.000Z",
+   "available": true
+  }
+ ],
+ "cover": null,
+ "metrics": {
+  "totalEvents": 5,
+  "sourcesCount": 9,
+  "firstPartyEvents": 5,
+  "modelsReleased": 1,
+  "mainCardNote": "今日仅 5 条达收录标准"
+ },
+ "readingMinutes": 1,
+ "prev": "2026-10-29",
+ "next": "2026-10-31"
+}

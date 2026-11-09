@@ -1,0 +1,285 @@
+{
+ "kind": "daily",
+ "key": "2026-11-05",
+ "issueNumber": 17,
+ "title": "AI日报 · 2026-11-05",
+ "generatedAt": "2026-11-05T00:33:17.000Z",
+ "lead": {
+  "title": "OpenAI：推出 Images 2.6（更快生成、GIF、精细编辑与 API 控制）",
+  "leadParagraph": "OpenAI 官方：Images 2.6 带来更快生图、GIF 创作、更精确编辑，并在 ChatGPT/Codex/API 提供新控制项。"
+ },
+ "leadItemId": "sha256:295354ff422b0d4d",
+ "overview": "OpenAI：Images 2.6 带来 GIF、更快生图与 API 控制。",
+ "highlights": [
+  {
+   "itemId": "sha256:295354ff422b0d4d",
+   "title": "OpenAI：推出 Images 2.6（更快生成、GIF、精细编辑与 API 控制）",
+   "summary": "OpenAI 官方：Images 2.6 带来更快生图、GIF 创作、更精确编辑，并在 ChatGPT/Codex/API 提供新控制项。",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/introducing-images-2-6",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-11-04T00:00:00.000Z",
+   "available": true,
+   "otherSources": 3
+  },
+  {
+   "itemId": "sha256:fbaa86a829ad59fd",
+   "title": "OpenAI：少一千条通往 root 的路径（自主发现并修补 948 个 Linux 提权漏洞）",
+   "summary": "OpenAI 官方：自主流水线发现、验证并为 Linux 内核本地提权漏洞生成补丁，共 948 个。",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-11-04T08:00:00.000Z",
+   "available": true,
+   "otherSources": 1
+  },
+  {
+   "itemId": "sha256:1be4fdd8e6ca80f0",
+   "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
+   "summary": "OpenAI 宣布收购 Pierre Computer Company（Code Storage 与 Trees/Diffs 等开源工具团队），以加强 Codex 在构建、理解与审阅代码上的工具链。OpenAI 称 Codex 应用中的文件浏览与变更审阅已使用 Pierre 的 Trees 与 Diffs；交易交割前双方保持独立，交割须监管批准。",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/openai-to-acquire-pierre",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-11-04T14:30:00.000Z",
+   "available": true,
+   "otherSources": 1
+  },
+  {
+   "itemId": "sha256:bca108e4c77bd86b",
+   "title": "OpenAI：大幅提高安全漏洞赏金，最高 $172,000",
+   "summary": "OpenAI 官方：中高危奖励中位数超四倍；核心产品危急最高 3 万，卓越危急加奖励可达 $172,000；并推质量/忠诚乘数。",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-11-02T18:00:00.000Z",
+   "available": true,
+   "otherSources": 1
+  }
+ ],
+ "sections": [
+  {
+   "label": "产品",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:295354ff422b0d4d",
+     "title": "OpenAI：推出 Images 2.6（更快生成、GIF、精细编辑与 API 控制）",
+     "summary": "OpenAI 官方：Images 2.6 带来更快生图、GIF 创作、更精确编辑，并在 ChatGPT/Codex/API 提供新控制项。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/introducing-images-2-6",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-04T00:00:00.000Z",
+     "available": true,
+     "otherSources": 3
+    },
+    {
+     "itemId": "sha256:1be4fdd8e6ca80f0",
+     "title": "OpenAI：收购 Pierre，强化 Codex 代码工具链",
+     "summary": "OpenAI 宣布收购 Pierre Computer Company（Code Storage 与 Trees/Diffs 等开源工具团队），以加强 Codex 在构建、理解与审阅代码上的工具链。OpenAI 称 Codex 应用中的文件浏览与变更审阅已使用 Pierre 的 Trees 与 Diffs；交易交割前双方保持独立，交割须监管批准。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/openai-to-acquire-pierre",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-04T14:30:00.000Z",
+     "available": true,
+     "otherSources": 1
+    },
+    {
+     "itemId": "sha256:23c4f130369cb972",
+     "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
+     "summary": "DeepMind 官方：为 Google Antigravity 推出 Cheminformatics Skills，约一小时内检索数千化合物并做匹配分子对分析、提出可合成刚性大环。",
+     "sourceName": "Google DeepMind Blog",
+     "sourceUrl": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-03T17:01:49.000Z",
+     "available": true,
+     "otherSources": 1
+    },
+    {
+     "itemId": "sha256:c65c7708e93995ca",
+     "title": "Hugging Face：Phonon 端侧 TTS 开源，小模型登 Open TTS 榜领先",
+     "summary": "HF 博客：Gradium Phonon 端侧 TTS（约 65–75MB）开源；Phonon 31m Apache 2.0；多语与克隆；Open TTS Leaderboard 多项领先。",
+     "sourceName": "Hugging Face Blog",
+     "sourceUrl": "https://huggingface.co/blog/phonon-tts",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-05T00:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:2aca440b2c0823d7",
+     "title": "vLLM：开源 Kinference——面向 vLLM 与 Kubernetes 的推理控制平面",
+     "summary": "vLLM 官方博客：发布开源 Kinference，作为 vLLM 与 Kubernetes 的推理控制平面。",
+     "sourceName": "vLLM Blog",
+     "sourceUrl": "https://vllm.ai/blog/2026-11-04-introducing-kinference",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-04T00:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    }
+   ]
+  },
+  {
+   "label": "论文",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:fbaa86a829ad59fd",
+     "title": "OpenAI：少一千条通往 root 的路径（自主发现并修补 948 个 Linux 提权漏洞）",
+     "summary": "OpenAI 官方：自主流水线发现、验证并为 Linux 内核本地提权漏洞生成补丁，共 948 个。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-04T08:00:00.000Z",
+     "available": true,
+     "otherSources": 1
+    }
+   ]
+  },
+  {
+   "label": "行业",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:bca108e4c77bd86b",
+     "title": "OpenAI：大幅提高安全漏洞赏金，最高 $172,000",
+     "summary": "OpenAI 官方：中高危奖励中位数超四倍；核心产品危急最高 3 万，卓越危急加奖励可达 $172,000；并推质量/忠诚乘数。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-02T18:00:00.000Z",
+     "available": true,
+     "otherSources": 1
+    },
+    {
+     "itemId": "sha256:25fa4dd18ec78a48",
+     "title": "OpenAI：为负责任 AI 基建设立新标准（社区契约与算力园区政策蓝图）",
+     "summary": "OpenAI 官方：发布 National Community Compact 与 Compute Campus Policy Blueprint，承诺自付能源成本、公开水电噪声影响、本地就业与可追责条款。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-05T02:00:00.000Z",
+     "available": true,
+     "otherSources": 1
+    }
+   ]
+  }
+ ],
+ "flashes": [
+  {
+   "itemId": "sha256:981785a01550309d",
+   "title": "OpenAI：DevRev GPT-6.1 Sol 企业自助案例",
+   "summary": "官方案例；诚实分 56≪60 未过。",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/devrev-enterprise-self-service",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-11-04T00:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:2f7abd088fe66e28",
+   "title": "报道：Meta 收购 AI 编程公司 Conductor",
+   "summary": "TC：收购 Conductor；T2≪76。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-11-04T21:10:56.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:73bbcb2d707df5a3",
+   "title": "NVIDIA：AI 智能体简化工厂运维",
+   "summary": "官方同线续篇；诚实分 54≪60。",
+   "sourceName": "NVIDIA Technical Blog",
+   "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-11-04T17:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:ac2776547aacb7b8",
+   "title": "报道：DuckDuckGo 向学校推销",
+   "summary": "借谷歌 AI 政策反弹；T2≪76。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/11/04/duckduckgo-pitches-itself-to-schools-amid-backlash-over-googles-ai-policy/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-11-04T19:29:52.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:4c65af7ddad1f5b5",
+   "title": "报道：OpenAI 试图影响 2028 叙事",
+   "summary": "TC；T2≪76。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/11/04/openai-is-already-trying-to-shape-the-2028-election/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-11-04T21:25:44.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:5523ef782a102f94",
+   "title": "报道：AI PAC 中期选举花费",
+   "summary": "TC；T2≪76。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-11-04T22:45:09.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:b531b56f4ce7687d",
+   "title": "报道：高通加码数据中心 AI",
+   "summary": "Verge；T2≪76。",
+   "sourceName": "The Verge · AI",
+   "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1026867/qualcomm-earnings-data-centers",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-11-04T22:42:15.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:261b6564023ad66c",
+   "title": "报道：Kimi K3.1 Pro 开放权重",
+   "summary": "IT之家二手；未 hop 假一手；未过 T2。",
+   "sourceName": "The Decoder",
+   "sourceUrl": "https://www.ithome.com/1/022/490.htm",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-23T19:00:07.000Z",
+   "available": true
+  }
+ ],
+ "cover": {
+  "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/STK155_OPEN_AI_CVirginia__C.jpg?quality=90&strip=all&crop=0,0,100,100",
+  "width": null,
+  "height": null,
+  "alt": "ChatGPT logo against a shaded, patterned backgrond.",
+  "caption": null
+ },
+ "metrics": {
+  "totalEvents": 8,
+  "sourcesCount": 8,
+  "firstPartyEvents": 8,
+  "modelsReleased": 0
+ },
+ "readingMinutes": 2,
+ "prev": "2026-11-04",
+ "next": "2026-11-06"
+}
