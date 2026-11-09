@@ -1,2370 +1,2448 @@
 {
- "site": "前沿趋势",
- "mode": "preview",
- "data_as_of": "2026-11-09T15:25:18+08:00",
- "data_as_of_label": "数据截至 2026-11-09 15:25（北京时间）",
- "generated_at": "2026-11-09T15:25:18+08:00",
- "today": "2026-11-07",
- "hot_rule_version": "heat-v1-48h-halflife24h (v0 port)",
- "window_hours": 48,
- "half_life_hours": 24,
- "spark_hours": 24,
- "spark_points": 25,
- "hot_candidates": 0,
- "passed_count": 114,
- "fill_count": 11,
- "selected_items": 125,
- "batches": [
-  {
-   "batch_id": "2026-10-19T1124",
-   "status": "ok",
-   "imported_at": "2026-10-19T11:28:23+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-19T1221",
-   "status": "ok",
-   "imported_at": "2026-10-19T13:23:23+08:00",
-   "rejected": 2
-  },
-  {
-   "batch_id": "2026-10-19T1323",
-   "status": "ok",
-   "imported_at": "2026-10-19T16:27:16+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-19T1418",
-   "status": "ok",
-   "imported_at": "2026-10-19T16:27:16+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-19T1524",
-   "status": "ok",
-   "imported_at": "2026-10-19T16:27:16+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-19T1627",
-   "status": "ok",
-   "imported_at": "2026-10-19T20:25:37+08:00",
-   "rejected": 1
-  },
-  {
-   "batch_id": "2026-10-19T1726",
-   "status": "ok",
-   "imported_at": "2026-10-19T20:25:37+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-19T1825",
-   "status": "ok",
-   "imported_at": "2026-10-19T20:25:37+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-19T1923",
-   "status": "ok",
-   "imported_at": "2026-10-19T20:25:37+08:00",
-   "rejected": 1
-  },
-  {
-   "batch_id": "2026-10-19T2025",
-   "status": "ok",
-   "imported_at": "2026-10-20T08:45:38+08:00",
-   "rejected": 3
-  },
-  {
-   "batch_id": "2026-10-19T2136",
-   "status": "ok",
-   "imported_at": "2026-10-20T08:45:38+08:00",
-   "rejected": 1
-  },
-  {
-   "batch_id": "2026-10-19T2223",
-   "status": "ok",
-   "imported_at": "2026-10-20T08:45:38+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-19T2347",
-   "status": "ok",
-   "imported_at": "2026-10-20T08:45:38+08:00",
-   "rejected": 2
-  },
-  {
-   "batch_id": "2026-10-20T0051",
-   "status": "ok",
-   "imported_at": "2026-10-20T08:45:38+08:00",
-   "rejected": 1
-  },
-  {
-   "batch_id": "2026-10-20T0121",
-   "status": "ok",
-   "imported_at": "2026-10-20T08:45:38+08:00",
-   "rejected": 1
-  },
-  {
-   "batch_id": "2026-10-20T0224",
-   "status": "ok",
-   "imported_at": "2026-10-20T08:45:38+08:00",
-   "rejected": 4
-  },
-  {
-   "batch_id": "2026-10-20T0321",
-   "status": "ok",
-   "imported_at": "2026-10-20T08:45:38+08:00",
-   "rejected": 3
-  },
-  {
-   "batch_id": "2026-10-20T0418",
-   "status": "ok",
-   "imported_at": "2026-10-20T08:45:38+08:00",
-   "rejected": 1
-  },
-  {
-   "batch_id": "2026-10-20T0522",
-   "status": "ok",
-   "imported_at": "2026-10-20T08:45:38+08:00",
-   "rejected": 2
-  },
-  {
-   "batch_id": "2026-10-20T0621",
-   "status": "ok",
-   "imported_at": "2026-10-20T15:29:06+08:00",
-   "rejected": 4
-  },
-  {
-   "batch_id": "2026-10-20T1055",
-   "status": "ok",
-   "imported_at": "2026-10-20T10:58:45+08:00",
-   "rejected": 3
-  },
-  {
-   "batch_id": "2026-10-20T1122",
-   "status": "ok",
-   "imported_at": "2026-10-20T13:20:21+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-20T1218",
-   "status": "ok",
-   "imported_at": "2026-10-20T13:20:21+08:00",
-   "rejected": 1
-  },
-  {
-   "batch_id": "2026-10-20T1320",
-   "status": "ok",
-   "imported_at": "2026-10-20T16:23:28+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-20T1424",
-   "status": "ok",
-   "imported_at": "2026-10-20T16:23:28+08:00",
-   "rejected": 1
-  },
-  {
-   "batch_id": "2026-10-20T1528",
-   "status": "ok",
-   "imported_at": "2026-10-20T16:23:28+08:00",
-   "rejected": 1
-  },
-  {
-   "batch_id": "2026-10-20T1623",
-   "status": "ok",
-   "imported_at": "2026-10-20T20:25:20+08:00",
-   "rejected": 1
-  },
-  {
-   "batch_id": "2026-10-20T1726",
-   "status": "ok",
-   "imported_at": "2026-10-21T19:56:57+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-20T1822",
-   "status": "ok",
-   "imported_at": "2026-10-20T20:25:20+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-20T1923",
-   "status": "ok",
-   "imported_at": "2026-10-20T20:25:20+08:00",
-   "rejected": 3
-  },
-  {
-   "batch_id": "2026-10-20T2025",
-   "status": "ok",
-   "imported_at": "2026-10-21T09:28:37+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-20T2123",
-   "status": "ok",
-   "imported_at": "2026-10-21T09:28:37+08:00",
-   "rejected": 3
-  },
-  {
-   "batch_id": "2026-10-20T2221",
-   "status": "ok",
-   "imported_at": "2026-10-21T09:28:37+08:00",
-   "rejected": 1
-  },
-  {
-   "batch_id": "2026-10-20T2323",
-   "status": "ok",
-   "imported_at": "2026-10-21T09:28:37+08:00",
-   "rejected": 1
-  },
-  {
-   "batch_id": "2026-10-21T0026",
-   "status": "ok",
-   "imported_at": "2026-10-21T09:28:37+08:00",
-   "rejected": 5
-  },
-  {
-   "batch_id": "2026-10-21T0118",
-   "status": "ok",
-   "imported_at": "2026-10-21T09:28:37+08:00",
-   "rejected": 2
-  },
-  {
-   "batch_id": "2026-10-21T0221",
-   "status": "ok",
-   "imported_at": "2026-10-21T09:28:37+08:00",
-   "rejected": 4
-  },
-  {
-   "batch_id": "2026-10-21T0321",
-   "status": "ok",
-   "imported_at": "2026-10-21T19:56:57+08:00",
-   "rejected": 1
-  },
-  {
-   "batch_id": "2026-10-21T0427",
-   "status": "ok",
-   "imported_at": "2026-10-21T09:28:37+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-21T0520",
-   "status": "ok",
-   "imported_at": "2026-10-21T09:28:37+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-21T0624",
-   "status": "ok",
-   "imported_at": "2026-10-21T09:28:37+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-21T0728",
-   "status": "ok",
-   "imported_at": "2026-10-21T09:28:37+08:00",
-   "rejected": 1
-  },
-  {
-   "batch_id": "2026-10-21T0826",
-   "status": "ok",
-   "imported_at": "2026-10-21T21:00:14+08:00",
-   "rejected": 3
-  },
-  {
-   "batch_id": "2026-10-21T0928",
-   "status": "ok",
-   "imported_at": "2026-10-21T13:20:11+08:00",
-   "rejected": 4
-  },
-  {
-   "batch_id": "2026-10-21T1019",
-   "status": "ok",
-   "imported_at": "2026-10-21T13:20:11+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-21T1118",
-   "status": "ok",
-   "imported_at": "2026-10-21T13:20:11+08:00",
-   "rejected": 2
-  },
-  {
-   "batch_id": "2026-10-21T1227",
-   "status": "ok",
-   "imported_at": "2026-10-21T13:20:11+08:00",
-   "rejected": 3
-  },
-  {
-   "batch_id": "2026-10-21T1320",
-   "status": "ok",
-   "imported_at": "2026-10-21T15:26:57+08:00",
-   "rejected": 1
-  },
-  {
-   "batch_id": "2026-10-21T1419",
-   "status": "ok",
-   "imported_at": "2026-10-21T15:26:57+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-21T1526",
-   "status": "ok",
-   "imported_at": "2026-10-21T16:07:01+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-21T1606",
-   "status": "ok",
-   "imported_at": "2026-10-21T19:56:57+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-21T1626",
-   "status": "ok",
-   "imported_at": "2026-10-21T19:56:57+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-21T1718",
-   "status": "ok",
-   "imported_at": "2026-10-21T19:56:57+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-21T1817",
-   "status": "ok",
-   "imported_at": "2026-10-21T19:56:57+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-21T1925",
-   "status": "ok",
-   "imported_at": "2026-10-21T19:56:57+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-21T2028",
-   "status": "ok",
-   "imported_at": "2026-10-22T08:40:53+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-21T2127",
-   "status": "ok",
-   "imported_at": "2026-10-22T08:40:53+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-21T2218",
-   "status": "ok",
-   "imported_at": "2026-10-22T08:40:53+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-21T2319",
-   "status": "ok",
-   "imported_at": "2026-10-22T08:40:53+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-22T0027",
-   "status": "ok",
-   "imported_at": "2026-10-22T08:40:53+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-22T0125",
-   "status": "ok",
-   "imported_at": "2026-10-22T08:40:53+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-22T0218",
-   "status": "ok",
-   "imported_at": "2026-10-22T08:40:53+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-22T0320",
-   "status": "ok",
-   "imported_at": "2026-10-22T08:40:53+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-22T0417",
-   "status": "ok",
-   "imported_at": "2026-10-22T08:40:53+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-22T0519",
-   "status": "ok",
-   "imported_at": "2026-10-22T08:40:53+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-22T0618",
-   "status": "ok",
-   "imported_at": "2026-10-22T08:40:53+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-22T0725",
-   "status": "ok",
-   "imported_at": "2026-10-22T08:40:53+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-22T0826",
-   "status": "ok",
-   "imported_at": "2026-10-22T16:00:08+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-22T0925",
-   "status": "ok",
-   "imported_at": "2026-10-22T12:29:38+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-22T1018",
-   "status": "ok",
-   "imported_at": "2026-10-22T12:29:38+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-22T1127",
-   "status": "ok",
-   "imported_at": "2026-10-22T12:29:38+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-22T1219",
-   "status": "ok",
-   "imported_at": "2026-10-22T12:29:38+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-22T1320",
-   "status": "ok",
-   "imported_at": "2026-10-22T15:26:23+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-22T1418",
-   "status": "ok",
-   "imported_at": "2026-10-22T15:26:23+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-22T1526",
-   "status": "ok",
-   "imported_at": "2026-10-22T19:39:08+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-22T1624",
-   "status": "ok",
-   "imported_at": "2026-10-22T19:39:08+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-22T1722",
-   "status": "ok",
-   "imported_at": "2026-10-22T19:39:08+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-22T1819",
-   "status": "ok",
-   "imported_at": "2026-10-22T19:39:08+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-22T1923",
-   "status": "ok",
-   "imported_at": "2026-10-22T19:39:08+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-22T2018",
-   "status": "ok",
-   "imported_at": "2026-10-23T01:41:47+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-22T2122",
-   "status": "ok",
-   "imported_at": "2026-10-23T01:41:47+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-22T2221",
-   "status": "ok",
-   "imported_at": "2026-10-23T01:41:47+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-22T2319",
-   "status": "ok",
-   "imported_at": "2026-10-23T01:41:47+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-23T0023",
-   "status": "ok",
-   "imported_at": "2026-10-23T01:41:47+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-23T0119",
-   "status": "ok",
-   "imported_at": "2026-10-23T01:41:47+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-23T0135",
-   "status": "partial",
-   "imported_at": "2026-10-23T01:26:12+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-23T0145",
-   "status": "partial",
-   "imported_at": "2026-10-23T01:35:32+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-23T0150",
-   "status": "partial",
-   "imported_at": "2026-10-23T01:42:27+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-23T0222",
-   "status": "ok",
-   "imported_at": "2026-10-23T03:45:08+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-23T0312",
-   "status": "partial",
-   "imported_at": "2026-10-23T03:14:05+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-23T0322",
-   "status": "ok",
-   "imported_at": "2026-10-23T03:45:08+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-23T0424",
-   "status": "ok",
-   "imported_at": "2026-10-23T08:46:48+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-23T0522",
-   "status": "ok",
-   "imported_at": "2026-10-23T08:46:48+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-23T0627",
-   "status": "ok",
-   "imported_at": "2026-10-23T08:46:49+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-23T0725",
-   "status": "ok",
-   "imported_at": "2026-10-23T08:46:49+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-23T0827",
-   "status": "ok",
-   "imported_at": "2026-10-23T08:46:49+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-23T0856",
-   "status": "ok",
-   "imported_at": "2026-10-23T08:59:11+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-23T0924",
-   "status": "ok",
-   "imported_at": "2026-10-23T12:45:55+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-23T1023",
-   "status": "ok",
-   "imported_at": "2026-10-23T12:45:56+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-23T1121",
-   "status": "ok",
-   "imported_at": "2026-10-23T12:45:56+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-23T1226",
-   "status": "ok",
-   "imported_at": "2026-10-23T12:45:56+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-23T1319",
-   "status": "ok",
-   "imported_at": "2026-10-23T15:46:39+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-23T1520",
-   "status": "ok",
-   "imported_at": "2026-10-23T15:46:39+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-23T1624",
-   "status": "ok",
-   "imported_at": "2026-10-23T19:42:14+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-23T1724",
-   "status": "ok",
-   "imported_at": "2026-10-23T19:42:14+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-23T1815",
-   "status": "ok",
-   "imported_at": "2026-10-23T18:13:14+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-23T1820",
-   "status": "ok",
-   "imported_at": "2026-10-23T19:42:14+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-23T1922",
-   "status": "ok",
-   "imported_at": "2026-10-23T19:42:14+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-23T2021",
-   "status": "ok",
-   "imported_at": "2026-10-24T00:37:24+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-23T2124",
-   "status": "ok",
-   "imported_at": "2026-10-24T00:37:24+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-23T2222",
-   "status": "ok",
-   "imported_at": "2026-10-24T00:37:24+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-23T2326",
-   "status": "ok",
-   "imported_at": "2026-10-24T00:37:24+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-24T0019",
-   "status": "ok",
-   "imported_at": "2026-10-24T00:37:25+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-24T0126",
-   "status": "ok",
-   "imported_at": "2026-10-24T03:50:25+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-24T0221",
-   "status": "ok",
-   "imported_at": "2026-10-24T03:50:25+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-24T0325",
-   "status": "ok",
-   "imported_at": "2026-10-24T03:50:25+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-24T0422",
-   "status": "ok",
-   "imported_at": "2026-10-24T08:41:09+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-24T0522",
-   "status": "ok",
-   "imported_at": "2026-10-24T08:41:09+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-24T0621",
-   "status": "ok",
-   "imported_at": "2026-10-24T08:41:09+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-24T0719",
-   "status": "ok",
-   "imported_at": "2026-10-24T08:41:09+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-24T0824",
-   "status": "ok",
-   "imported_at": "2026-10-24T08:41:09+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-24T0910",
-   "status": "ok",
-   "imported_at": "2026-10-24T09:11:44+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-24T0919",
-   "status": "ok",
-   "imported_at": "2026-10-24T12:47:26+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-24T0930",
-   "status": "ok",
-   "imported_at": "2026-10-24T09:20:00+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-24T1022",
-   "status": "ok",
-   "imported_at": "2026-10-24T12:47:26+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-24T1122",
-   "status": "ok",
-   "imported_at": "2026-10-24T12:47:26+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-24T1222",
-   "status": "ok",
-   "imported_at": "2026-10-24T12:47:26+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-24T1326",
-   "status": "ok",
-   "imported_at": "2026-10-24T15:47:50+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-24T1419",
-   "status": "ok",
-   "imported_at": "2026-10-24T15:47:50+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-24T1525",
-   "status": "ok",
-   "imported_at": "2026-10-24T15:47:50+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-24T1620",
-   "status": "ok",
-   "imported_at": "2026-10-24T19:49:20+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-24T1719",
-   "status": "ok",
-   "imported_at": "2026-10-24T19:49:20+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-24T1821",
-   "status": "ok",
-   "imported_at": "2026-10-24T19:49:20+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-24T1918",
-   "status": "ok",
-   "imported_at": "2026-10-24T19:49:21+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-24T2019",
-   "status": "ok",
-   "imported_at": "2026-10-25T00:33:49+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-24T2119",
-   "status": "ok",
-   "imported_at": "2026-10-25T00:33:49+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-24T2219",
-   "status": "ok",
-   "imported_at": "2026-10-25T00:33:49+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-24T2323",
-   "status": "ok",
-   "imported_at": "2026-10-25T00:33:50+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-25T0020",
-   "status": "ok",
-   "imported_at": "2026-10-25T00:33:50+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-25T0122",
-   "status": "ok",
-   "imported_at": "2026-10-25T03:51:27+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-25T0223",
-   "status": "ok",
-   "imported_at": "2026-10-25T03:51:28+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-25T0323",
-   "status": "ok",
-   "imported_at": "2026-10-25T03:51:28+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-25T0425",
-   "status": "ok",
-   "imported_at": "2026-10-25T08:42:33+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-25T0526",
-   "status": "ok",
-   "imported_at": "2026-10-25T08:42:33+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-25T0626",
-   "status": "ok",
-   "imported_at": "2026-10-25T08:42:34+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-25T0719",
-   "status": "ok",
-   "imported_at": "2026-10-25T08:42:34+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-25T0817",
-   "status": "ok",
-   "imported_at": "2026-10-25T08:42:34+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-25T0922",
-   "status": "ok",
-   "imported_at": "2026-10-25T12:40:55+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-25T1026",
-   "status": "ok",
-   "imported_at": "2026-10-25T12:40:55+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-25T1118",
-   "status": "ok",
-   "imported_at": "2026-10-25T12:40:55+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-25T1223",
-   "status": "ok",
-   "imported_at": "2026-10-25T12:40:55+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-25T1326",
-   "status": "ok",
-   "imported_at": "2026-10-25T15:43:13+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-25T1527",
-   "status": "ok",
-   "imported_at": "2026-10-25T15:43:13+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-25T1620",
-   "status": "ok",
-   "imported_at": "2026-10-25T19:43:18+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-25T1650",
-   "status": "ok",
-   "imported_at": "2026-10-25T17:00:46+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-25T1722",
-   "status": "ok",
-   "imported_at": "2026-10-25T19:43:18+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-25T1823",
-   "status": "ok",
-   "imported_at": "2026-10-25T19:43:18+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-25T1921",
-   "status": "ok",
-   "imported_at": "2026-10-25T19:43:18+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-25T2018",
-   "status": "ok",
-   "imported_at": "2026-10-27T20:38:45+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-25T2121",
-   "status": "ok",
-   "imported_at": "2026-10-27T20:38:45+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-25T2145",
-   "status": "ok",
-   "imported_at": "2026-10-25T21:52:49+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-25T2150",
-   "status": "ok",
-   "imported_at": "2026-10-25T21:57:50+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-25T2223",
-   "status": "ok",
-   "imported_at": "2026-10-27T20:38:45+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-26T2200",
-   "status": "ok",
-   "imported_at": "2026-10-27T20:38:45+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-27T0830",
-   "status": "ok",
-   "imported_at": "2026-10-28T00:45:18+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-27T2006",
-   "status": "ok",
-   "imported_at": "2026-10-27T20:38:45+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-27T2013",
-   "status": "ok",
-   "imported_at": "2026-10-28T00:45:19+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-27T2023",
-   "status": "ok",
-   "imported_at": "2026-10-28T00:45:19+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-27T2106",
-   "status": "ok",
-   "imported_at": "2026-10-27T21:19:07+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-27T2130",
-   "status": "ok",
-   "imported_at": "2026-10-28T00:45:19+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-27T2225",
-   "status": "ok",
-   "imported_at": "2026-10-28T00:45:20+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-27T2324",
-   "status": "ok",
-   "imported_at": "2026-10-28T00:45:20+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-28T0025",
-   "status": "ok",
-   "imported_at": "2026-10-28T00:45:20+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-28T0126",
-   "status": "ok",
-   "imported_at": "2026-10-28T03:50:29+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-28T0220",
-   "status": "ok",
-   "imported_at": "2026-10-28T03:50:29+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-28T0324",
-   "status": "ok",
-   "imported_at": "2026-10-28T03:51:43+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-28T0422",
-   "status": "ok",
-   "imported_at": "2026-10-28T09:03:12+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-28T0520",
-   "status": "ok",
-   "imported_at": "2026-10-28T09:03:12+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-28T0624",
-   "status": "ok",
-   "imported_at": "2026-10-28T09:03:12+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-28T0722",
-   "status": "ok",
-   "imported_at": "2026-10-28T09:03:12+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-28T0827",
-   "status": "ok",
-   "imported_at": "2026-10-28T09:03:13+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-28T0910",
-   "status": "ok",
-   "imported_at": "2026-10-28T09:20:08+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-28T0925",
-   "status": "ok",
-   "imported_at": "2026-10-28T10:21:47+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-28T1027",
-   "status": "ok",
-   "imported_at": "2026-10-28T12:48:47+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-28T1030",
-   "status": "ok",
-   "imported_at": "2026-10-28T10:41:22+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-28T1120",
-   "status": "ok",
-   "imported_at": "2026-10-28T12:48:47+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-28T1226",
-   "status": "ok",
-   "imported_at": "2026-10-28T12:48:47+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-28T1255",
-   "status": "ok",
-   "imported_at": "2026-10-28T13:08:16+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-28T1318",
-   "status": "ok",
-   "imported_at": "2026-10-28T15:55:13+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-28T1417",
-   "status": "ok",
-   "imported_at": "2026-10-28T15:55:13+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-28T1525",
-   "status": "ok",
-   "imported_at": "2026-10-28T15:55:13+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-28T1622",
-   "status": "ok",
-   "imported_at": "2026-10-28T19:54:24+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-28T1724",
-   "status": "ok",
-   "imported_at": "2026-10-28T19:54:24+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-28T1818",
-   "status": "ok",
-   "imported_at": "2026-10-28T19:54:24+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-28T1927",
-   "status": "ok",
-   "imported_at": "2026-10-28T19:54:23+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-28T2023",
-   "status": "ok",
-   "imported_at": "2026-10-29T00:42:30+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-28T2126",
-   "status": "ok",
-   "imported_at": "2026-10-29T00:42:30+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-28T2223",
-   "status": "ok",
-   "imported_at": "2026-10-29T00:42:30+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-28T2327",
-   "status": "ok",
-   "imported_at": "2026-10-29T00:42:30+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-29T0021",
-   "status": "ok",
-   "imported_at": "2026-10-29T00:42:30+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-29T0120",
-   "status": "ok",
-   "imported_at": "2026-10-29T03:49:03+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-29T0227",
-   "status": "ok",
-   "imported_at": "2026-10-29T03:49:03+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-29T0320",
-   "status": "ok",
-   "imported_at": "2026-10-29T03:49:03+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-29T0418",
-   "status": "ok",
-   "imported_at": "2026-10-29T08:51:03+08:00",
-   "rejected": 1
-  },
-  {
-   "batch_id": "2026-10-29T0619",
-   "status": "ok",
-   "imported_at": "2026-10-29T08:51:03+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-29T0726",
-   "status": "ok",
-   "imported_at": "2026-10-29T08:51:03+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-29T0818",
-   "status": "ok",
-   "imported_at": "2026-10-29T08:51:03+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-29T0859",
-   "status": "ok",
-   "imported_at": "2026-10-29T09:06:38+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-29T0925",
-   "status": "ok",
-   "imported_at": "2026-10-29T12:49:18+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-29T1018",
-   "status": "ok",
-   "imported_at": "2026-10-29T12:49:18+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-29T1122",
-   "status": "ok",
-   "imported_at": "2026-10-29T12:49:18+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-29T1221",
-   "status": "ok",
-   "imported_at": "2026-10-29T12:49:18+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-29T1320",
-   "status": "ok",
-   "imported_at": "2026-10-29T15:51:28+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-29T1418",
-   "status": "ok",
-   "imported_at": "2026-10-29T15:51:28+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-29T1525",
-   "status": "ok",
-   "imported_at": "2026-10-29T15:51:29+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-29T1624",
-   "status": "ok",
-   "imported_at": "2026-10-29T19:48:06+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-29T1722",
-   "status": "ok",
-   "imported_at": "2026-10-29T19:48:06+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-29T1823",
-   "status": "ok",
-   "imported_at": "2026-10-29T19:48:06+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-29T1924",
-   "status": "ok",
-   "imported_at": "2026-10-29T19:48:06+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-29T2018",
-   "status": "ok",
-   "imported_at": "2026-10-30T00:51:55+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-29T2123",
-   "status": "ok",
-   "imported_at": "2026-10-30T00:51:55+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-29T2223",
-   "status": "ok",
-   "imported_at": "2026-10-30T00:51:56+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-29T2324",
-   "status": "ok",
-   "imported_at": "2026-10-30T00:51:56+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-30T0019",
-   "status": "ok",
-   "imported_at": "2026-10-30T00:51:56+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-30T0124",
-   "status": "ok",
-   "imported_at": "2026-10-30T03:38:21+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-30T0219",
-   "status": "ok",
-   "imported_at": "2026-10-30T03:38:21+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-30T0318",
-   "status": "ok",
-   "imported_at": "2026-10-30T03:38:21+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-30T0421",
-   "status": "ok",
-   "imported_at": "2026-10-30T09:20:32+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-30T0520",
-   "status": "ok",
-   "imported_at": "2026-10-30T09:20:32+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-30T0622",
-   "status": "ok",
-   "imported_at": "2026-10-30T09:20:32+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-30T0726",
-   "status": "ok",
-   "imported_at": "2026-10-30T09:20:32+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-30T0821",
-   "status": "ok",
-   "imported_at": "2026-10-30T09:20:32+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-30T0919",
-   "status": "ok",
-   "imported_at": "2026-10-30T13:20:32+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-30T1027",
-   "status": "ok",
-   "imported_at": "2026-10-30T13:20:32+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-30T1123",
-   "status": "ok",
-   "imported_at": "2026-10-30T13:20:32+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-30T1225",
-   "status": "ok",
-   "imported_at": "2026-10-30T13:20:32+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-30T1320",
-   "status": "ok",
-   "imported_at": "2026-10-30T16:23:13+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-30T1424",
-   "status": "ok",
-   "imported_at": "2026-10-30T16:23:14+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-30T1522",
-   "status": "ok",
-   "imported_at": "2026-10-30T16:23:14+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-30T1621",
-   "status": "ok",
-   "imported_at": "2026-10-30T20:20:08+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-30T1723",
-   "status": "ok",
-   "imported_at": "2026-10-30T20:20:08+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-30T1825",
-   "status": "ok",
-   "imported_at": "2026-10-30T20:20:08+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-30T1925",
-   "status": "ok",
-   "imported_at": "2026-10-30T20:20:08+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-30T2019",
-   "status": "ok",
-   "imported_at": "2026-10-31T00:43:29+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-30T2125",
-   "status": "ok",
-   "imported_at": "2026-10-31T00:43:30+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-30T2221",
-   "status": "ok",
-   "imported_at": "2026-10-31T00:48:05+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-30T2320",
-   "status": "ok",
-   "imported_at": "2026-10-31T00:43:30+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-31T0022",
-   "status": "ok",
-   "imported_at": "2026-10-31T00:43:30+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-31T0121",
-   "status": "ok",
-   "imported_at": "2026-10-31T03:37:08+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-31T0217",
-   "status": "ok",
-   "imported_at": "2026-10-31T03:37:08+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-31T0321",
-   "status": "ok",
-   "imported_at": "2026-10-31T03:37:08+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-31T0419",
-   "status": "ok",
-   "imported_at": "2026-10-31T08:40:18+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-31T0524",
-   "status": "ok",
-   "imported_at": "2026-10-31T08:40:18+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-31T0624",
-   "status": "ok",
-   "imported_at": "2026-10-31T08:40:18+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-31T0724",
-   "status": "ok",
-   "imported_at": "2026-10-31T08:40:18+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-31T0825",
-   "status": "ok",
-   "imported_at": "2026-10-31T08:40:18+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-31T0927",
-   "status": "ok",
-   "imported_at": "2026-10-31T13:24:28+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-31T1019",
-   "status": "ok",
-   "imported_at": "2026-10-31T13:24:28+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-31T1127",
-   "status": "ok",
-   "imported_at": "2026-10-31T13:24:28+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-31T1220",
-   "status": "ok",
-   "imported_at": "2026-10-31T13:24:28+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-31T1323",
-   "status": "ok",
-   "imported_at": "2026-10-31T16:28:22+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-31T1423",
-   "status": "ok",
-   "imported_at": "2026-10-31T16:28:22+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-31T1520",
-   "status": "ok",
-   "imported_at": "2026-10-31T16:28:22+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-31T1627",
-   "status": "ok",
-   "imported_at": "2026-10-31T20:26:47+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-31T1719",
-   "status": "ok",
-   "imported_at": "2026-10-31T20:26:48+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-31T1828",
-   "status": "ok",
-   "imported_at": "2026-10-31T20:26:48+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-31T1927",
-   "status": "ok",
-   "imported_at": "2026-10-31T20:26:48+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-31T2024",
-   "status": "ok",
-   "imported_at": "2026-11-01T00:42:14+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-31T2123",
-   "status": "ok",
-   "imported_at": "2026-11-01T00:42:14+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-31T2219",
-   "status": "ok",
-   "imported_at": "2026-11-01T00:52:51+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-10-31T2321",
-   "status": "ok",
-   "imported_at": "2026-11-01T00:52:51+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-01T0019",
-   "status": "ok",
-   "imported_at": "2026-11-01T00:42:14+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-01T0123",
-   "status": "ok",
-   "imported_at": "2026-11-01T03:39:29+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-01T0225",
-   "status": "ok",
-   "imported_at": "2026-11-01T03:38:39+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-01T0325",
-   "status": "ok",
-   "imported_at": "2026-11-01T03:40:23+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-01T0422",
-   "status": "ok",
-   "imported_at": "2026-11-01T08:40:22+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-01T0520",
-   "status": "ok",
-   "imported_at": "2026-11-01T08:40:22+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-01T0627",
-   "status": "ok",
-   "imported_at": "2026-11-01T08:40:23+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-01T0718",
-   "status": "ok",
-   "imported_at": "2026-11-01T08:40:23+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-01T0818",
-   "status": "ok",
-   "imported_at": "2026-11-01T08:40:23+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-01T0925",
-   "status": "ok",
-   "imported_at": "2026-11-01T12:43:13+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-01T1023",
-   "status": "ok",
-   "imported_at": "2026-11-01T12:43:13+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-01T1124",
-   "status": "ok",
-   "imported_at": "2026-11-01T12:43:14+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-01T1223",
-   "status": "ok",
-   "imported_at": "2026-11-01T12:43:14+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-02T1621",
-   "status": "ok",
-   "imported_at": "2026-11-02T20:24:15+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-02T1725",
-   "status": "ok",
-   "imported_at": "2026-11-02T20:24:15+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-02T1824",
-   "status": "ok",
-   "imported_at": "2026-11-02T20:24:15+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-02T1925",
-   "status": "ok",
-   "imported_at": "2026-11-02T20:24:15+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-02T2023",
-   "status": "ok",
-   "imported_at": "2026-11-03T00:49:55+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-02T2120",
-   "status": "ok",
-   "imported_at": "2026-11-03T00:49:55+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-02T2227",
-   "status": "ok",
-   "imported_at": "2026-11-03T00:49:56+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-02T2320",
-   "status": "ok",
-   "imported_at": "2026-11-03T00:49:56+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-03T0021",
-   "status": "ok",
-   "imported_at": "2026-11-03T00:49:56+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-03T0123",
-   "status": "ok",
-   "imported_at": "2026-11-03T03:41:23+08:00",
-   "rejected": 1
-  },
-  {
-   "batch_id": "2026-11-03T0227",
-   "status": "ok",
-   "imported_at": "2026-11-03T03:41:23+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-03T0317",
-   "status": "ok",
-   "imported_at": "2026-11-03T03:41:24+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-03T0420",
-   "status": "ok",
-   "imported_at": "2026-11-03T08:38:34+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-03T0523",
-   "status": "ok",
-   "imported_at": "2026-11-03T08:38:34+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-03T0627",
-   "status": "ok",
-   "imported_at": "2026-11-03T08:38:34+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-03T0723",
-   "status": "ok",
-   "imported_at": "2026-11-03T08:38:35+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-03T0822",
-   "status": "ok",
-   "imported_at": "2026-11-03T08:38:35+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-03T0917",
-   "status": "ok",
-   "imported_at": "2026-11-03T20:51:31+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-03T1023",
-   "status": "ok",
-   "imported_at": "2026-11-03T20:51:31+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-03T2025",
-   "status": "ok",
-   "imported_at": "2026-11-03T21:00:43+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-03T2119",
-   "status": "ok",
-   "imported_at": "2026-11-04T00:38:02+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-03T2222",
-   "status": "ok",
-   "imported_at": "2026-11-04T00:38:08+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-03T2323",
-   "status": "ok",
-   "imported_at": "2026-11-04T00:38:09+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-04T0023",
-   "status": "ok",
-   "imported_at": "2026-11-04T00:38:09+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-04T0122",
-   "status": "ok",
-   "imported_at": "2026-11-04T03:42:47+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-04T0223",
-   "status": "ok",
-   "imported_at": "2026-11-04T03:42:47+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-04T0325",
-   "status": "ok",
-   "imported_at": "2026-11-04T03:42:47+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-04T0420",
-   "status": "ok",
-   "imported_at": "2026-11-04T08:44:17+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-04T0525",
-   "status": "ok",
-   "imported_at": "2026-11-04T08:44:17+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-04T0625",
-   "status": "ok",
-   "imported_at": "2026-11-04T08:44:17+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-04T0720",
-   "status": "ok",
-   "imported_at": "2026-11-04T08:44:17+08:00",
-   "rejected": 1
-  },
-  {
-   "batch_id": "2026-11-04T0821",
-   "status": "ok",
-   "imported_at": "2026-11-04T08:44:17+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-04T0920",
-   "status": "ok",
-   "imported_at": "2026-11-04T12:47:23+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-04T1023",
-   "status": "ok",
-   "imported_at": "2026-11-04T12:47:23+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-04T1121",
-   "status": "ok",
-   "imported_at": "2026-11-04T12:47:23+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-04T1219",
-   "status": "ok",
-   "imported_at": "2026-11-04T12:47:23+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-04T1325",
-   "status": "ok",
-   "imported_at": "2026-11-04T16:27:55+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-04T1420",
-   "status": "ok",
-   "imported_at": "2026-11-04T16:27:55+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-04T1521",
-   "status": "ok",
-   "imported_at": "2026-11-04T16:27:55+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-04T1627",
-   "status": "ok",
-   "imported_at": "2026-11-04T20:28:13+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-04T1720",
-   "status": "ok",
-   "imported_at": "2026-11-04T20:28:13+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-04T1821",
-   "status": "ok",
-   "imported_at": "2026-11-04T20:28:13+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-04T1919",
-   "status": "ok",
-   "imported_at": "2026-11-04T20:28:13+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-04T2028",
-   "status": "ok",
-   "imported_at": "2026-11-05T00:48:59+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-04T2117",
-   "status": "ok",
-   "imported_at": "2026-11-05T00:49:00+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-04T2221",
-   "status": "ok",
-   "imported_at": "2026-11-05T00:49:00+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-04T2321",
-   "status": "ok",
-   "imported_at": "2026-11-05T00:49:00+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-05T0019",
-   "status": "ok",
-   "imported_at": "2026-11-05T00:49:00+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-05T0122",
-   "status": "ok",
-   "imported_at": "2026-11-05T03:54:43+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-05T0219",
-   "status": "ok",
-   "imported_at": "2026-11-05T03:54:43+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-05T0320",
-   "status": "ok",
-   "imported_at": "2026-11-05T03:54:43+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-05T0424",
-   "status": "ok",
-   "imported_at": "2026-11-05T08:39:34+08:00",
-   "rejected": 1
-  },
-  {
-   "batch_id": "2026-11-05T0525",
-   "status": "ok",
-   "imported_at": "2026-11-05T08:39:34+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-05T0618",
-   "status": "ok",
-   "imported_at": "2026-11-05T08:39:34+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-05T0735",
-   "status": "ok",
-   "imported_at": "2026-11-05T08:39:34+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-05T0826",
-   "status": "ok",
-   "imported_at": "2026-11-05T08:39:34+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-05T0919",
-   "status": "ok",
-   "imported_at": "2026-11-05T12:34:11+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-05T1026",
-   "status": "ok",
-   "imported_at": "2026-11-05T12:34:11+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-05T1127",
-   "status": "ok",
-   "imported_at": "2026-11-05T12:34:11+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-05T1219",
-   "status": "ok",
-   "imported_at": "2026-11-05T12:34:11+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-05T1319",
-   "status": "ok",
-   "imported_at": "2026-11-05T15:58:00+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-05T1418",
-   "status": "ok",
-   "imported_at": "2026-11-05T15:58:00+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-05T1526",
-   "status": "ok",
-   "imported_at": "2026-11-05T15:58:00+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-05T1631",
-   "status": "ok",
-   "imported_at": "2026-11-05T19:36:57+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-05T1720",
-   "status": "ok",
-   "imported_at": "2026-11-05T19:36:57+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-05T1824",
-   "status": "ok",
-   "imported_at": "2026-11-05T19:36:58+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-05T1927",
-   "status": "ok",
-   "imported_at": "2026-11-05T19:36:58+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-05T2027",
-   "status": "ok",
-   "imported_at": "2026-11-06T00:41:12+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-05T2125",
-   "status": "ok",
-   "imported_at": "2026-11-06T00:41:12+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-05T2224",
-   "status": "ok",
-   "imported_at": "2026-11-06T00:41:12+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-05T2324",
-   "status": "ok",
-   "imported_at": "2026-11-06T00:41:12+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-06T0018",
-   "status": "ok",
-   "imported_at": "2026-11-06T00:41:12+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-06T0119",
-   "status": "ok",
-   "imported_at": "2026-11-06T04:22:00+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-06T0229",
-   "status": "ok",
-   "imported_at": "2026-11-06T04:22:01+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-06T0321",
-   "status": "ok",
-   "imported_at": "2026-11-06T04:22:01+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-06T0421",
-   "status": "ok",
-   "imported_at": "2026-11-06T09:26:17+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-06T0527",
-   "status": "ok",
-   "imported_at": "2026-11-06T09:26:17+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-06T0619",
-   "status": "ok",
-   "imported_at": "2026-11-06T09:26:17+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-06T0721",
-   "status": "ok",
-   "imported_at": "2026-11-06T09:26:17+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-06T0819",
-   "status": "ok",
-   "imported_at": "2026-11-06T09:26:17+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-06T0926",
-   "status": "ok",
-   "imported_at": "2026-11-06T13:22:17+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-06T1022",
-   "status": "ok",
-   "imported_at": "2026-11-06T13:22:17+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-06T1126",
-   "status": "ok",
-   "imported_at": "2026-11-06T13:22:17+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-06T1226",
-   "status": "ok",
-   "imported_at": "2026-11-06T13:22:17+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-06T1321",
-   "status": "ok",
-   "imported_at": "2026-11-06T15:58:09+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-06T1427",
-   "status": "ok",
-   "imported_at": "2026-11-06T15:58:09+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-06T1521",
-   "status": "ok",
-   "imported_at": "2026-11-06T15:58:10+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-06T1628",
-   "status": "ok",
-   "imported_at": "2026-11-06T20:01:31+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-06T1727",
-   "status": "ok",
-   "imported_at": "2026-11-06T20:01:31+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-06T1824",
-   "status": "ok",
-   "imported_at": "2026-11-06T20:01:31+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-06T1926",
-   "status": "ok",
-   "imported_at": "2026-11-06T20:01:32+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-06T2022",
-   "status": "ok",
-   "imported_at": "2026-11-07T00:53:56+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-06T2139",
-   "status": "ok",
-   "imported_at": "2026-11-07T00:53:56+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-06T2254",
-   "status": "ok",
-   "imported_at": "2026-11-07T00:53:56+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-06T2327",
-   "status": "ok",
-   "imported_at": "2026-11-07T00:53:56+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-07T0028",
-   "status": "ok",
-   "imported_at": "2026-11-07T00:53:57+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-07T0128",
-   "status": "ok",
-   "imported_at": "2026-11-07T03:47:19+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-07T0220",
-   "status": "ok",
-   "imported_at": "2026-11-07T03:47:19+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-07T0322",
-   "status": "ok",
-   "imported_at": "2026-11-07T03:47:20+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-07T0425",
-   "status": "ok",
-   "imported_at": "2026-11-09T15:22:15+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-07T0520",
-   "status": "ok",
-   "imported_at": "2026-11-09T15:22:15+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-07T0618",
-   "status": "ok",
-   "imported_at": "2026-11-09T15:22:15+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-07T0721",
-   "status": "ok",
-   "imported_at": "2026-11-09T15:22:15+08:00",
-   "rejected": 0
-  },
-  {
-   "batch_id": "2026-11-07T0823",
-   "status": "ok",
-   "imported_at": "2026-11-09T15:22:15+08:00",
-   "rejected": 0
-  }
- ],
- "daily_keys": [
-  "2026-10-19",
-  "2026-10-20",
-  "2026-10-21",
-  "2026-10-22",
-  "2026-10-23",
-  "2026-10-24",
-  "2026-10-25",
-  "2026-10-26",
-  "2026-10-27",
-  "2026-10-28",
-  "2026-10-29",
-  "2026-10-30",
-  "2026-10-31",
-  "2026-11-01",
-  "2026-11-03",
-  "2026-11-04",
-  "2026-11-05",
-  "2026-11-06",
-  "2026-11-07"
- ],
- "cover_rule": "aihot soft: width≥480 (unknown=800) height≥240 + alt + not logo/avatar/badge; value_class priority when present",
- "cover_note": "cover.url 导出可为 https；物化后改写为 assets/covers/… 同源；失败则空槽不热链"
+  "site": "前沿趋势",
+  "mode": "preview",
+  "data_as_of": "2026-11-10T03:22:25+08:00",
+  "data_as_of_label": "数据截至 2026-11-10 03:22（北京时间）",
+  "generated_at": "2026-11-10T03:54:48+08:00",
+  "today": "2026-11-07",
+  "hot_rule_version": "heat-v1-48h-halflife24h (v0 port)",
+  "window_hours": 48,
+  "half_life_hours": 24,
+  "spark_hours": 24,
+  "spark_points": 25,
+  "hot_candidates": 3,
+  "passed_count": 114,
+  "fill_count": 11,
+  "selected_items": 125,
+  "batches": [
+    {
+      "batch_id": "2026-10-19T1124",
+      "status": "ok",
+      "imported_at": "2026-10-19T11:28:23+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-19T1221",
+      "status": "ok",
+      "imported_at": "2026-10-19T13:23:23+08:00",
+      "rejected": 2
+    },
+    {
+      "batch_id": "2026-10-19T1323",
+      "status": "ok",
+      "imported_at": "2026-10-19T16:27:16+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-19T1418",
+      "status": "ok",
+      "imported_at": "2026-10-19T16:27:16+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-19T1524",
+      "status": "ok",
+      "imported_at": "2026-10-19T16:27:16+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-19T1627",
+      "status": "ok",
+      "imported_at": "2026-10-19T20:25:37+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-19T1726",
+      "status": "ok",
+      "imported_at": "2026-10-19T20:25:37+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-19T1825",
+      "status": "ok",
+      "imported_at": "2026-10-19T20:25:37+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-19T1923",
+      "status": "ok",
+      "imported_at": "2026-10-19T20:25:37+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-19T2025",
+      "status": "ok",
+      "imported_at": "2026-10-20T08:45:38+08:00",
+      "rejected": 3
+    },
+    {
+      "batch_id": "2026-10-19T2136",
+      "status": "ok",
+      "imported_at": "2026-10-20T08:45:38+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-19T2223",
+      "status": "ok",
+      "imported_at": "2026-10-20T08:45:38+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-19T2347",
+      "status": "ok",
+      "imported_at": "2026-10-20T08:45:38+08:00",
+      "rejected": 2
+    },
+    {
+      "batch_id": "2026-10-20T0051",
+      "status": "ok",
+      "imported_at": "2026-10-20T08:45:38+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-20T0121",
+      "status": "ok",
+      "imported_at": "2026-10-20T08:45:38+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-20T0224",
+      "status": "ok",
+      "imported_at": "2026-10-20T08:45:38+08:00",
+      "rejected": 4
+    },
+    {
+      "batch_id": "2026-10-20T0321",
+      "status": "ok",
+      "imported_at": "2026-10-20T08:45:38+08:00",
+      "rejected": 3
+    },
+    {
+      "batch_id": "2026-10-20T0418",
+      "status": "ok",
+      "imported_at": "2026-10-20T08:45:38+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-20T0522",
+      "status": "ok",
+      "imported_at": "2026-10-20T08:45:38+08:00",
+      "rejected": 2
+    },
+    {
+      "batch_id": "2026-10-20T0621",
+      "status": "ok",
+      "imported_at": "2026-10-20T15:29:06+08:00",
+      "rejected": 4
+    },
+    {
+      "batch_id": "2026-10-20T1055",
+      "status": "ok",
+      "imported_at": "2026-10-20T10:58:45+08:00",
+      "rejected": 3
+    },
+    {
+      "batch_id": "2026-10-20T1122",
+      "status": "ok",
+      "imported_at": "2026-10-20T13:20:21+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-20T1218",
+      "status": "ok",
+      "imported_at": "2026-10-20T13:20:21+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-20T1320",
+      "status": "ok",
+      "imported_at": "2026-10-20T16:23:28+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-20T1424",
+      "status": "ok",
+      "imported_at": "2026-10-20T16:23:28+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-20T1528",
+      "status": "ok",
+      "imported_at": "2026-10-20T16:23:28+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-20T1623",
+      "status": "ok",
+      "imported_at": "2026-10-20T20:25:20+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-20T1726",
+      "status": "ok",
+      "imported_at": "2026-10-21T19:56:57+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-20T1822",
+      "status": "ok",
+      "imported_at": "2026-10-20T20:25:20+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-20T1923",
+      "status": "ok",
+      "imported_at": "2026-10-20T20:25:20+08:00",
+      "rejected": 3
+    },
+    {
+      "batch_id": "2026-10-20T2025",
+      "status": "ok",
+      "imported_at": "2026-10-21T09:28:37+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-20T2123",
+      "status": "ok",
+      "imported_at": "2026-10-21T09:28:37+08:00",
+      "rejected": 3
+    },
+    {
+      "batch_id": "2026-10-20T2221",
+      "status": "ok",
+      "imported_at": "2026-10-21T09:28:37+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-20T2323",
+      "status": "ok",
+      "imported_at": "2026-10-21T09:28:37+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-21T0026",
+      "status": "ok",
+      "imported_at": "2026-10-21T09:28:37+08:00",
+      "rejected": 5
+    },
+    {
+      "batch_id": "2026-10-21T0118",
+      "status": "ok",
+      "imported_at": "2026-10-21T09:28:37+08:00",
+      "rejected": 2
+    },
+    {
+      "batch_id": "2026-10-21T0221",
+      "status": "ok",
+      "imported_at": "2026-10-21T09:28:37+08:00",
+      "rejected": 4
+    },
+    {
+      "batch_id": "2026-10-21T0321",
+      "status": "ok",
+      "imported_at": "2026-10-21T19:56:57+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-21T0427",
+      "status": "ok",
+      "imported_at": "2026-10-21T09:28:37+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-21T0520",
+      "status": "ok",
+      "imported_at": "2026-10-21T09:28:37+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-21T0624",
+      "status": "ok",
+      "imported_at": "2026-10-21T09:28:37+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-21T0728",
+      "status": "ok",
+      "imported_at": "2026-10-21T09:28:37+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-21T0826",
+      "status": "ok",
+      "imported_at": "2026-10-21T21:00:14+08:00",
+      "rejected": 3
+    },
+    {
+      "batch_id": "2026-10-21T0928",
+      "status": "ok",
+      "imported_at": "2026-10-21T13:20:11+08:00",
+      "rejected": 4
+    },
+    {
+      "batch_id": "2026-10-21T1019",
+      "status": "ok",
+      "imported_at": "2026-10-21T13:20:11+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-21T1118",
+      "status": "ok",
+      "imported_at": "2026-10-21T13:20:11+08:00",
+      "rejected": 2
+    },
+    {
+      "batch_id": "2026-10-21T1227",
+      "status": "ok",
+      "imported_at": "2026-10-21T13:20:11+08:00",
+      "rejected": 3
+    },
+    {
+      "batch_id": "2026-10-21T1320",
+      "status": "ok",
+      "imported_at": "2026-10-21T15:26:57+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-21T1419",
+      "status": "ok",
+      "imported_at": "2026-10-21T15:26:57+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-21T1526",
+      "status": "ok",
+      "imported_at": "2026-10-21T16:07:01+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-21T1606",
+      "status": "ok",
+      "imported_at": "2026-10-21T19:56:57+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-21T1626",
+      "status": "ok",
+      "imported_at": "2026-10-21T19:56:57+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-21T1718",
+      "status": "ok",
+      "imported_at": "2026-10-21T19:56:57+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-21T1817",
+      "status": "ok",
+      "imported_at": "2026-10-21T19:56:57+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-21T1925",
+      "status": "ok",
+      "imported_at": "2026-10-21T19:56:57+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-21T2028",
+      "status": "ok",
+      "imported_at": "2026-10-22T08:40:53+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-21T2127",
+      "status": "ok",
+      "imported_at": "2026-10-22T08:40:53+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-21T2218",
+      "status": "ok",
+      "imported_at": "2026-10-22T08:40:53+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-21T2319",
+      "status": "ok",
+      "imported_at": "2026-10-22T08:40:53+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T0027",
+      "status": "ok",
+      "imported_at": "2026-10-22T08:40:53+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T0125",
+      "status": "ok",
+      "imported_at": "2026-10-22T08:40:53+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T0218",
+      "status": "ok",
+      "imported_at": "2026-10-22T08:40:53+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T0320",
+      "status": "ok",
+      "imported_at": "2026-10-22T08:40:53+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T0417",
+      "status": "ok",
+      "imported_at": "2026-10-22T08:40:53+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T0519",
+      "status": "ok",
+      "imported_at": "2026-10-22T08:40:53+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T0618",
+      "status": "ok",
+      "imported_at": "2026-10-22T08:40:53+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T0725",
+      "status": "ok",
+      "imported_at": "2026-10-22T08:40:53+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T0826",
+      "status": "ok",
+      "imported_at": "2026-10-22T16:00:08+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T0925",
+      "status": "ok",
+      "imported_at": "2026-10-22T12:29:38+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T1018",
+      "status": "ok",
+      "imported_at": "2026-10-22T12:29:38+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T1127",
+      "status": "ok",
+      "imported_at": "2026-10-22T12:29:38+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T1219",
+      "status": "ok",
+      "imported_at": "2026-10-22T12:29:38+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T1320",
+      "status": "ok",
+      "imported_at": "2026-10-22T15:26:23+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T1418",
+      "status": "ok",
+      "imported_at": "2026-10-22T15:26:23+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T1526",
+      "status": "ok",
+      "imported_at": "2026-10-22T19:39:08+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T1624",
+      "status": "ok",
+      "imported_at": "2026-10-22T19:39:08+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T1722",
+      "status": "ok",
+      "imported_at": "2026-10-22T19:39:08+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T1819",
+      "status": "ok",
+      "imported_at": "2026-10-22T19:39:08+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T1923",
+      "status": "ok",
+      "imported_at": "2026-10-22T19:39:08+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T2018",
+      "status": "ok",
+      "imported_at": "2026-10-23T01:41:47+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T2122",
+      "status": "ok",
+      "imported_at": "2026-10-23T01:41:47+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T2221",
+      "status": "ok",
+      "imported_at": "2026-10-23T01:41:47+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-22T2319",
+      "status": "ok",
+      "imported_at": "2026-10-23T01:41:47+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0023",
+      "status": "ok",
+      "imported_at": "2026-10-23T01:41:47+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0119",
+      "status": "ok",
+      "imported_at": "2026-10-23T01:41:47+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0135",
+      "status": "partial",
+      "imported_at": "2026-10-23T01:26:12+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0145",
+      "status": "partial",
+      "imported_at": "2026-10-23T01:35:32+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0150",
+      "status": "partial",
+      "imported_at": "2026-10-23T01:42:27+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0222",
+      "status": "ok",
+      "imported_at": "2026-10-23T03:45:08+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0312",
+      "status": "partial",
+      "imported_at": "2026-10-23T03:14:05+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0322",
+      "status": "ok",
+      "imported_at": "2026-10-23T03:45:08+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0424",
+      "status": "ok",
+      "imported_at": "2026-10-23T08:46:48+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0522",
+      "status": "ok",
+      "imported_at": "2026-10-23T08:46:48+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0627",
+      "status": "ok",
+      "imported_at": "2026-10-23T08:46:49+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0725",
+      "status": "ok",
+      "imported_at": "2026-10-23T08:46:49+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0827",
+      "status": "ok",
+      "imported_at": "2026-10-23T08:46:49+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0856",
+      "status": "ok",
+      "imported_at": "2026-10-23T08:59:11+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T0924",
+      "status": "ok",
+      "imported_at": "2026-10-23T12:45:55+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T1023",
+      "status": "ok",
+      "imported_at": "2026-10-23T12:45:56+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T1121",
+      "status": "ok",
+      "imported_at": "2026-10-23T12:45:56+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T1226",
+      "status": "ok",
+      "imported_at": "2026-10-23T12:45:56+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T1319",
+      "status": "ok",
+      "imported_at": "2026-10-23T15:46:39+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T1520",
+      "status": "ok",
+      "imported_at": "2026-10-23T15:46:39+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T1624",
+      "status": "ok",
+      "imported_at": "2026-10-23T19:42:14+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T1724",
+      "status": "ok",
+      "imported_at": "2026-10-23T19:42:14+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T1815",
+      "status": "ok",
+      "imported_at": "2026-10-23T18:13:14+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T1820",
+      "status": "ok",
+      "imported_at": "2026-10-23T19:42:14+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T1922",
+      "status": "ok",
+      "imported_at": "2026-10-23T19:42:14+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T2021",
+      "status": "ok",
+      "imported_at": "2026-10-24T00:37:24+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T2124",
+      "status": "ok",
+      "imported_at": "2026-10-24T00:37:24+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T2222",
+      "status": "ok",
+      "imported_at": "2026-10-24T00:37:24+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-23T2326",
+      "status": "ok",
+      "imported_at": "2026-10-24T00:37:24+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T0019",
+      "status": "ok",
+      "imported_at": "2026-10-24T00:37:25+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T0126",
+      "status": "ok",
+      "imported_at": "2026-10-24T03:50:25+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T0221",
+      "status": "ok",
+      "imported_at": "2026-10-24T03:50:25+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T0325",
+      "status": "ok",
+      "imported_at": "2026-10-24T03:50:25+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T0422",
+      "status": "ok",
+      "imported_at": "2026-10-24T08:41:09+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T0522",
+      "status": "ok",
+      "imported_at": "2026-10-24T08:41:09+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T0621",
+      "status": "ok",
+      "imported_at": "2026-10-24T08:41:09+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T0719",
+      "status": "ok",
+      "imported_at": "2026-10-24T08:41:09+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T0824",
+      "status": "ok",
+      "imported_at": "2026-10-24T08:41:09+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T0910",
+      "status": "ok",
+      "imported_at": "2026-10-24T09:11:44+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T0919",
+      "status": "ok",
+      "imported_at": "2026-10-24T12:47:26+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T0930",
+      "status": "ok",
+      "imported_at": "2026-10-24T09:20:00+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T1022",
+      "status": "ok",
+      "imported_at": "2026-10-24T12:47:26+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T1122",
+      "status": "ok",
+      "imported_at": "2026-10-24T12:47:26+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T1222",
+      "status": "ok",
+      "imported_at": "2026-10-24T12:47:26+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T1326",
+      "status": "ok",
+      "imported_at": "2026-10-24T15:47:50+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T1419",
+      "status": "ok",
+      "imported_at": "2026-10-24T15:47:50+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T1525",
+      "status": "ok",
+      "imported_at": "2026-10-24T15:47:50+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T1620",
+      "status": "ok",
+      "imported_at": "2026-10-24T19:49:20+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T1719",
+      "status": "ok",
+      "imported_at": "2026-10-24T19:49:20+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T1821",
+      "status": "ok",
+      "imported_at": "2026-10-24T19:49:20+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T1918",
+      "status": "ok",
+      "imported_at": "2026-10-24T19:49:21+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T2019",
+      "status": "ok",
+      "imported_at": "2026-10-25T00:33:49+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T2119",
+      "status": "ok",
+      "imported_at": "2026-10-25T00:33:49+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T2219",
+      "status": "ok",
+      "imported_at": "2026-10-25T00:33:49+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-24T2323",
+      "status": "ok",
+      "imported_at": "2026-10-25T00:33:50+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-25T0020",
+      "status": "ok",
+      "imported_at": "2026-10-25T00:33:50+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-25T0122",
+      "status": "ok",
+      "imported_at": "2026-10-25T03:51:27+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-25T0223",
+      "status": "ok",
+      "imported_at": "2026-10-25T03:51:28+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-25T0323",
+      "status": "ok",
+      "imported_at": "2026-10-25T03:51:28+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-25T0425",
+      "status": "ok",
+      "imported_at": "2026-10-25T08:42:33+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-25T0526",
+      "status": "ok",
+      "imported_at": "2026-10-25T08:42:33+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-25T0626",
+      "status": "ok",
+      "imported_at": "2026-10-25T08:42:34+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-25T0719",
+      "status": "ok",
+      "imported_at": "2026-10-25T08:42:34+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-25T0817",
+      "status": "ok",
+      "imported_at": "2026-10-25T08:42:34+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-25T0922",
+      "status": "ok",
+      "imported_at": "2026-10-25T12:40:55+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-25T1026",
+      "status": "ok",
+      "imported_at": "2026-10-25T12:40:55+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-25T1118",
+      "status": "ok",
+      "imported_at": "2026-10-25T12:40:55+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-25T1223",
+      "status": "ok",
+      "imported_at": "2026-10-25T12:40:55+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-25T1326",
+      "status": "ok",
+      "imported_at": "2026-10-25T15:43:13+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-25T1527",
+      "status": "ok",
+      "imported_at": "2026-10-25T15:43:13+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-25T1620",
+      "status": "ok",
+      "imported_at": "2026-10-25T19:43:18+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-25T1650",
+      "status": "ok",
+      "imported_at": "2026-10-25T17:00:46+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-25T1722",
+      "status": "ok",
+      "imported_at": "2026-10-25T19:43:18+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-25T1823",
+      "status": "ok",
+      "imported_at": "2026-10-25T19:43:18+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-25T1921",
+      "status": "ok",
+      "imported_at": "2026-10-25T19:43:18+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-25T2018",
+      "status": "ok",
+      "imported_at": "2026-10-27T20:38:45+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-25T2121",
+      "status": "ok",
+      "imported_at": "2026-10-27T20:38:45+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-25T2145",
+      "status": "ok",
+      "imported_at": "2026-10-25T21:52:49+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-25T2150",
+      "status": "ok",
+      "imported_at": "2026-10-25T21:57:50+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-25T2223",
+      "status": "ok",
+      "imported_at": "2026-10-27T20:38:45+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-26T2200",
+      "status": "ok",
+      "imported_at": "2026-10-27T20:38:45+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-27T0830",
+      "status": "ok",
+      "imported_at": "2026-10-28T00:45:18+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-27T2006",
+      "status": "ok",
+      "imported_at": "2026-10-27T20:38:45+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-27T2013",
+      "status": "ok",
+      "imported_at": "2026-10-28T00:45:19+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-27T2023",
+      "status": "ok",
+      "imported_at": "2026-10-28T00:45:19+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-27T2106",
+      "status": "ok",
+      "imported_at": "2026-10-27T21:19:07+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-27T2130",
+      "status": "ok",
+      "imported_at": "2026-10-28T00:45:19+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-27T2225",
+      "status": "ok",
+      "imported_at": "2026-10-28T00:45:20+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-27T2324",
+      "status": "ok",
+      "imported_at": "2026-10-28T00:45:20+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-28T0025",
+      "status": "ok",
+      "imported_at": "2026-10-28T00:45:20+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-28T0126",
+      "status": "ok",
+      "imported_at": "2026-10-28T03:50:29+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-28T0220",
+      "status": "ok",
+      "imported_at": "2026-10-28T03:50:29+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-28T0324",
+      "status": "ok",
+      "imported_at": "2026-10-28T03:51:43+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-28T0422",
+      "status": "ok",
+      "imported_at": "2026-10-28T09:03:12+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-28T0520",
+      "status": "ok",
+      "imported_at": "2026-10-28T09:03:12+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-28T0624",
+      "status": "ok",
+      "imported_at": "2026-10-28T09:03:12+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-28T0722",
+      "status": "ok",
+      "imported_at": "2026-10-28T09:03:12+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-28T0827",
+      "status": "ok",
+      "imported_at": "2026-10-28T09:03:13+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-28T0910",
+      "status": "ok",
+      "imported_at": "2026-10-28T09:20:08+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-28T0925",
+      "status": "ok",
+      "imported_at": "2026-10-28T10:21:47+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-28T1027",
+      "status": "ok",
+      "imported_at": "2026-10-28T12:48:47+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-28T1030",
+      "status": "ok",
+      "imported_at": "2026-10-28T10:41:22+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-28T1120",
+      "status": "ok",
+      "imported_at": "2026-10-28T12:48:47+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-28T1226",
+      "status": "ok",
+      "imported_at": "2026-10-28T12:48:47+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-28T1255",
+      "status": "ok",
+      "imported_at": "2026-10-28T13:08:16+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-28T1318",
+      "status": "ok",
+      "imported_at": "2026-10-28T15:55:13+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-28T1417",
+      "status": "ok",
+      "imported_at": "2026-10-28T15:55:13+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-28T1525",
+      "status": "ok",
+      "imported_at": "2026-10-28T15:55:13+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-28T1622",
+      "status": "ok",
+      "imported_at": "2026-10-28T19:54:24+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-28T1724",
+      "status": "ok",
+      "imported_at": "2026-10-28T19:54:24+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-28T1818",
+      "status": "ok",
+      "imported_at": "2026-10-28T19:54:24+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-28T1927",
+      "status": "ok",
+      "imported_at": "2026-10-28T19:54:23+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-28T2023",
+      "status": "ok",
+      "imported_at": "2026-10-29T00:42:30+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-28T2126",
+      "status": "ok",
+      "imported_at": "2026-10-29T00:42:30+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-28T2223",
+      "status": "ok",
+      "imported_at": "2026-10-29T00:42:30+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-28T2327",
+      "status": "ok",
+      "imported_at": "2026-10-29T00:42:30+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-29T0021",
+      "status": "ok",
+      "imported_at": "2026-10-29T00:42:30+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-29T0120",
+      "status": "ok",
+      "imported_at": "2026-10-29T03:49:03+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-29T0227",
+      "status": "ok",
+      "imported_at": "2026-10-29T03:49:03+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-29T0320",
+      "status": "ok",
+      "imported_at": "2026-10-29T03:49:03+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-29T0418",
+      "status": "ok",
+      "imported_at": "2026-10-29T08:51:03+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-10-29T0619",
+      "status": "ok",
+      "imported_at": "2026-10-29T08:51:03+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-29T0726",
+      "status": "ok",
+      "imported_at": "2026-10-29T08:51:03+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-29T0818",
+      "status": "ok",
+      "imported_at": "2026-10-29T08:51:03+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-29T0859",
+      "status": "ok",
+      "imported_at": "2026-10-29T09:06:38+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-29T0925",
+      "status": "ok",
+      "imported_at": "2026-10-29T12:49:18+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-29T1018",
+      "status": "ok",
+      "imported_at": "2026-10-29T12:49:18+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-29T1122",
+      "status": "ok",
+      "imported_at": "2026-10-29T12:49:18+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-29T1221",
+      "status": "ok",
+      "imported_at": "2026-10-29T12:49:18+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-29T1320",
+      "status": "ok",
+      "imported_at": "2026-10-29T15:51:28+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-29T1418",
+      "status": "ok",
+      "imported_at": "2026-10-29T15:51:28+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-29T1525",
+      "status": "ok",
+      "imported_at": "2026-10-29T15:51:29+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-29T1624",
+      "status": "ok",
+      "imported_at": "2026-10-29T19:48:06+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-29T1722",
+      "status": "ok",
+      "imported_at": "2026-10-29T19:48:06+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-29T1823",
+      "status": "ok",
+      "imported_at": "2026-10-29T19:48:06+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-29T1924",
+      "status": "ok",
+      "imported_at": "2026-10-29T19:48:06+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-29T2018",
+      "status": "ok",
+      "imported_at": "2026-10-30T00:51:55+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-29T2123",
+      "status": "ok",
+      "imported_at": "2026-10-30T00:51:55+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-29T2223",
+      "status": "ok",
+      "imported_at": "2026-10-30T00:51:56+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-29T2324",
+      "status": "ok",
+      "imported_at": "2026-10-30T00:51:56+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-30T0019",
+      "status": "ok",
+      "imported_at": "2026-10-30T00:51:56+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-30T0124",
+      "status": "ok",
+      "imported_at": "2026-10-30T03:38:21+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-30T0219",
+      "status": "ok",
+      "imported_at": "2026-10-30T03:38:21+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-30T0318",
+      "status": "ok",
+      "imported_at": "2026-10-30T03:38:21+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-30T0421",
+      "status": "ok",
+      "imported_at": "2026-10-30T09:20:32+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-30T0520",
+      "status": "ok",
+      "imported_at": "2026-10-30T09:20:32+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-30T0622",
+      "status": "ok",
+      "imported_at": "2026-10-30T09:20:32+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-30T0726",
+      "status": "ok",
+      "imported_at": "2026-10-30T09:20:32+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-30T0821",
+      "status": "ok",
+      "imported_at": "2026-10-30T09:20:32+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-30T0919",
+      "status": "ok",
+      "imported_at": "2026-10-30T13:20:32+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-30T1027",
+      "status": "ok",
+      "imported_at": "2026-10-30T13:20:32+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-30T1123",
+      "status": "ok",
+      "imported_at": "2026-10-30T13:20:32+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-30T1225",
+      "status": "ok",
+      "imported_at": "2026-10-30T13:20:32+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-30T1320",
+      "status": "ok",
+      "imported_at": "2026-10-30T16:23:13+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-30T1424",
+      "status": "ok",
+      "imported_at": "2026-10-30T16:23:14+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-30T1522",
+      "status": "ok",
+      "imported_at": "2026-10-30T16:23:14+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-30T1621",
+      "status": "ok",
+      "imported_at": "2026-10-30T20:20:08+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-30T1723",
+      "status": "ok",
+      "imported_at": "2026-10-30T20:20:08+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-30T1825",
+      "status": "ok",
+      "imported_at": "2026-10-30T20:20:08+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-30T1925",
+      "status": "ok",
+      "imported_at": "2026-10-30T20:20:08+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-30T2019",
+      "status": "ok",
+      "imported_at": "2026-10-31T00:43:29+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-30T2125",
+      "status": "ok",
+      "imported_at": "2026-10-31T00:43:30+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-30T2221",
+      "status": "ok",
+      "imported_at": "2026-10-31T00:48:05+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-30T2320",
+      "status": "ok",
+      "imported_at": "2026-10-31T00:43:30+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-31T0022",
+      "status": "ok",
+      "imported_at": "2026-10-31T00:43:30+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-31T0121",
+      "status": "ok",
+      "imported_at": "2026-10-31T03:37:08+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-31T0217",
+      "status": "ok",
+      "imported_at": "2026-10-31T03:37:08+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-31T0321",
+      "status": "ok",
+      "imported_at": "2026-10-31T03:37:08+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-31T0419",
+      "status": "ok",
+      "imported_at": "2026-10-31T08:40:18+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-31T0524",
+      "status": "ok",
+      "imported_at": "2026-10-31T08:40:18+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-31T0624",
+      "status": "ok",
+      "imported_at": "2026-10-31T08:40:18+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-31T0724",
+      "status": "ok",
+      "imported_at": "2026-10-31T08:40:18+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-31T0825",
+      "status": "ok",
+      "imported_at": "2026-10-31T08:40:18+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-31T0927",
+      "status": "ok",
+      "imported_at": "2026-10-31T13:24:28+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-31T1019",
+      "status": "ok",
+      "imported_at": "2026-10-31T13:24:28+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-31T1127",
+      "status": "ok",
+      "imported_at": "2026-10-31T13:24:28+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-31T1220",
+      "status": "ok",
+      "imported_at": "2026-10-31T13:24:28+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-31T1323",
+      "status": "ok",
+      "imported_at": "2026-10-31T16:28:22+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-31T1423",
+      "status": "ok",
+      "imported_at": "2026-10-31T16:28:22+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-31T1520",
+      "status": "ok",
+      "imported_at": "2026-10-31T16:28:22+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-31T1627",
+      "status": "ok",
+      "imported_at": "2026-10-31T20:26:47+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-31T1719",
+      "status": "ok",
+      "imported_at": "2026-10-31T20:26:48+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-31T1828",
+      "status": "ok",
+      "imported_at": "2026-10-31T20:26:48+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-31T1927",
+      "status": "ok",
+      "imported_at": "2026-10-31T20:26:48+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-31T2024",
+      "status": "ok",
+      "imported_at": "2026-11-01T00:42:14+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-31T2123",
+      "status": "ok",
+      "imported_at": "2026-11-01T00:42:14+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-31T2219",
+      "status": "ok",
+      "imported_at": "2026-11-01T00:52:51+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-10-31T2321",
+      "status": "ok",
+      "imported_at": "2026-11-01T00:52:51+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-01T0019",
+      "status": "ok",
+      "imported_at": "2026-11-01T00:42:14+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-01T0123",
+      "status": "ok",
+      "imported_at": "2026-11-01T03:39:29+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-01T0225",
+      "status": "ok",
+      "imported_at": "2026-11-01T03:38:39+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-01T0325",
+      "status": "ok",
+      "imported_at": "2026-11-01T03:40:23+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-01T0422",
+      "status": "ok",
+      "imported_at": "2026-11-01T08:40:22+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-01T0520",
+      "status": "ok",
+      "imported_at": "2026-11-01T08:40:22+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-01T0627",
+      "status": "ok",
+      "imported_at": "2026-11-01T08:40:23+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-01T0718",
+      "status": "ok",
+      "imported_at": "2026-11-01T08:40:23+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-01T0818",
+      "status": "ok",
+      "imported_at": "2026-11-01T08:40:23+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-01T0925",
+      "status": "ok",
+      "imported_at": "2026-11-01T12:43:13+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-01T1023",
+      "status": "ok",
+      "imported_at": "2026-11-01T12:43:13+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-01T1124",
+      "status": "ok",
+      "imported_at": "2026-11-01T12:43:14+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-01T1223",
+      "status": "ok",
+      "imported_at": "2026-11-01T12:43:14+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-02T1621",
+      "status": "ok",
+      "imported_at": "2026-11-02T20:24:15+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-02T1725",
+      "status": "ok",
+      "imported_at": "2026-11-02T20:24:15+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-02T1824",
+      "status": "ok",
+      "imported_at": "2026-11-02T20:24:15+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-02T1925",
+      "status": "ok",
+      "imported_at": "2026-11-02T20:24:15+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-02T2023",
+      "status": "ok",
+      "imported_at": "2026-11-03T00:49:55+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-02T2120",
+      "status": "ok",
+      "imported_at": "2026-11-03T00:49:55+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-02T2227",
+      "status": "ok",
+      "imported_at": "2026-11-03T00:49:56+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-02T2320",
+      "status": "ok",
+      "imported_at": "2026-11-03T00:49:56+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-03T0021",
+      "status": "ok",
+      "imported_at": "2026-11-03T00:49:56+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-03T0123",
+      "status": "ok",
+      "imported_at": "2026-11-03T03:41:23+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-11-03T0227",
+      "status": "ok",
+      "imported_at": "2026-11-03T03:41:23+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-03T0317",
+      "status": "ok",
+      "imported_at": "2026-11-03T03:41:24+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-03T0420",
+      "status": "ok",
+      "imported_at": "2026-11-03T08:38:34+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-03T0523",
+      "status": "ok",
+      "imported_at": "2026-11-03T08:38:34+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-03T0627",
+      "status": "ok",
+      "imported_at": "2026-11-03T08:38:34+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-03T0723",
+      "status": "ok",
+      "imported_at": "2026-11-03T08:38:35+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-03T0822",
+      "status": "ok",
+      "imported_at": "2026-11-03T08:38:35+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-03T0917",
+      "status": "ok",
+      "imported_at": "2026-11-03T20:51:31+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-03T1023",
+      "status": "ok",
+      "imported_at": "2026-11-03T20:51:31+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-03T2025",
+      "status": "ok",
+      "imported_at": "2026-11-03T21:00:43+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-03T2119",
+      "status": "ok",
+      "imported_at": "2026-11-04T00:38:02+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-03T2222",
+      "status": "ok",
+      "imported_at": "2026-11-04T00:38:08+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-03T2323",
+      "status": "ok",
+      "imported_at": "2026-11-04T00:38:09+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-04T0023",
+      "status": "ok",
+      "imported_at": "2026-11-04T00:38:09+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-04T0122",
+      "status": "ok",
+      "imported_at": "2026-11-04T03:42:47+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-04T0223",
+      "status": "ok",
+      "imported_at": "2026-11-04T03:42:47+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-04T0325",
+      "status": "ok",
+      "imported_at": "2026-11-04T03:42:47+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-04T0420",
+      "status": "ok",
+      "imported_at": "2026-11-04T08:44:17+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-04T0525",
+      "status": "ok",
+      "imported_at": "2026-11-04T08:44:17+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-04T0625",
+      "status": "ok",
+      "imported_at": "2026-11-04T08:44:17+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-04T0720",
+      "status": "ok",
+      "imported_at": "2026-11-04T08:44:17+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-11-04T0821",
+      "status": "ok",
+      "imported_at": "2026-11-04T08:44:17+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-04T0920",
+      "status": "ok",
+      "imported_at": "2026-11-04T12:47:23+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-04T1023",
+      "status": "ok",
+      "imported_at": "2026-11-04T12:47:23+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-04T1121",
+      "status": "ok",
+      "imported_at": "2026-11-04T12:47:23+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-04T1219",
+      "status": "ok",
+      "imported_at": "2026-11-04T12:47:23+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-04T1325",
+      "status": "ok",
+      "imported_at": "2026-11-04T16:27:55+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-04T1420",
+      "status": "ok",
+      "imported_at": "2026-11-04T16:27:55+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-04T1521",
+      "status": "ok",
+      "imported_at": "2026-11-04T16:27:55+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-04T1627",
+      "status": "ok",
+      "imported_at": "2026-11-04T20:28:13+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-04T1720",
+      "status": "ok",
+      "imported_at": "2026-11-04T20:28:13+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-04T1821",
+      "status": "ok",
+      "imported_at": "2026-11-04T20:28:13+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-04T1919",
+      "status": "ok",
+      "imported_at": "2026-11-04T20:28:13+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-04T2028",
+      "status": "ok",
+      "imported_at": "2026-11-05T00:48:59+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-04T2117",
+      "status": "ok",
+      "imported_at": "2026-11-05T00:49:00+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-04T2221",
+      "status": "ok",
+      "imported_at": "2026-11-05T00:49:00+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-04T2321",
+      "status": "ok",
+      "imported_at": "2026-11-05T00:49:00+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-05T0019",
+      "status": "ok",
+      "imported_at": "2026-11-05T00:49:00+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-05T0122",
+      "status": "ok",
+      "imported_at": "2026-11-05T03:54:43+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-05T0219",
+      "status": "ok",
+      "imported_at": "2026-11-05T03:54:43+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-05T0320",
+      "status": "ok",
+      "imported_at": "2026-11-05T03:54:43+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-05T0424",
+      "status": "ok",
+      "imported_at": "2026-11-05T08:39:34+08:00",
+      "rejected": 1
+    },
+    {
+      "batch_id": "2026-11-05T0525",
+      "status": "ok",
+      "imported_at": "2026-11-05T08:39:34+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-05T0618",
+      "status": "ok",
+      "imported_at": "2026-11-05T08:39:34+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-05T0735",
+      "status": "ok",
+      "imported_at": "2026-11-05T08:39:34+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-05T0826",
+      "status": "ok",
+      "imported_at": "2026-11-05T08:39:34+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-05T0919",
+      "status": "ok",
+      "imported_at": "2026-11-05T12:34:11+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-05T1026",
+      "status": "ok",
+      "imported_at": "2026-11-05T12:34:11+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-05T1127",
+      "status": "ok",
+      "imported_at": "2026-11-05T12:34:11+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-05T1219",
+      "status": "ok",
+      "imported_at": "2026-11-05T12:34:11+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-05T1319",
+      "status": "ok",
+      "imported_at": "2026-11-05T15:58:00+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-05T1418",
+      "status": "ok",
+      "imported_at": "2026-11-05T15:58:00+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-05T1526",
+      "status": "ok",
+      "imported_at": "2026-11-05T15:58:00+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-05T1631",
+      "status": "ok",
+      "imported_at": "2026-11-05T19:36:57+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-05T1720",
+      "status": "ok",
+      "imported_at": "2026-11-05T19:36:57+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-05T1824",
+      "status": "ok",
+      "imported_at": "2026-11-05T19:36:58+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-05T1927",
+      "status": "ok",
+      "imported_at": "2026-11-05T19:36:58+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-05T2027",
+      "status": "ok",
+      "imported_at": "2026-11-06T00:41:12+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-05T2125",
+      "status": "ok",
+      "imported_at": "2026-11-06T00:41:12+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-05T2224",
+      "status": "ok",
+      "imported_at": "2026-11-06T00:41:12+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-05T2324",
+      "status": "ok",
+      "imported_at": "2026-11-06T00:41:12+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-06T0018",
+      "status": "ok",
+      "imported_at": "2026-11-06T00:41:12+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-06T0119",
+      "status": "ok",
+      "imported_at": "2026-11-06T04:22:00+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-06T0229",
+      "status": "ok",
+      "imported_at": "2026-11-06T04:22:01+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-06T0321",
+      "status": "ok",
+      "imported_at": "2026-11-06T04:22:01+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-06T0421",
+      "status": "ok",
+      "imported_at": "2026-11-06T09:26:17+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-06T0527",
+      "status": "ok",
+      "imported_at": "2026-11-06T09:26:17+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-06T0619",
+      "status": "ok",
+      "imported_at": "2026-11-06T09:26:17+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-06T0721",
+      "status": "ok",
+      "imported_at": "2026-11-06T09:26:17+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-06T0819",
+      "status": "ok",
+      "imported_at": "2026-11-06T09:26:17+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-06T0926",
+      "status": "ok",
+      "imported_at": "2026-11-06T13:22:17+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-06T1022",
+      "status": "ok",
+      "imported_at": "2026-11-06T13:22:17+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-06T1126",
+      "status": "ok",
+      "imported_at": "2026-11-06T13:22:17+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-06T1226",
+      "status": "ok",
+      "imported_at": "2026-11-06T13:22:17+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-06T1321",
+      "status": "ok",
+      "imported_at": "2026-11-06T15:58:09+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-06T1427",
+      "status": "ok",
+      "imported_at": "2026-11-06T15:58:09+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-06T1521",
+      "status": "ok",
+      "imported_at": "2026-11-06T15:58:10+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-06T1628",
+      "status": "ok",
+      "imported_at": "2026-11-06T20:01:31+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-06T1727",
+      "status": "ok",
+      "imported_at": "2026-11-06T20:01:31+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-06T1824",
+      "status": "ok",
+      "imported_at": "2026-11-06T20:01:31+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-06T1926",
+      "status": "ok",
+      "imported_at": "2026-11-06T20:01:32+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-06T2022",
+      "status": "ok",
+      "imported_at": "2026-11-07T00:53:56+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-06T2139",
+      "status": "ok",
+      "imported_at": "2026-11-07T00:53:56+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-06T2254",
+      "status": "ok",
+      "imported_at": "2026-11-07T00:53:56+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-06T2327",
+      "status": "ok",
+      "imported_at": "2026-11-07T00:53:56+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-07T0028",
+      "status": "ok",
+      "imported_at": "2026-11-07T00:53:57+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-07T0128",
+      "status": "ok",
+      "imported_at": "2026-11-07T03:47:19+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-07T0220",
+      "status": "ok",
+      "imported_at": "2026-11-07T03:47:19+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-07T0322",
+      "status": "ok",
+      "imported_at": "2026-11-07T03:47:20+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-07T0425",
+      "status": "ok",
+      "imported_at": "2026-11-09T15:22:15+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-07T0520",
+      "status": "ok",
+      "imported_at": "2026-11-09T15:22:15+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-07T0618",
+      "status": "ok",
+      "imported_at": "2026-11-09T15:22:15+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-07T0721",
+      "status": "ok",
+      "imported_at": "2026-11-09T15:22:15+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-07T0823",
+      "status": "ok",
+      "imported_at": "2026-11-09T15:22:15+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-09T1524",
+      "status": "ok",
+      "imported_at": "2026-11-09T15:55:07+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-09T1620",
+      "status": "ok",
+      "imported_at": "2026-11-09T19:48:27+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-09T1719",
+      "status": "ok",
+      "imported_at": "2026-11-09T19:48:27+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-09T1822",
+      "status": "ok",
+      "imported_at": "2026-11-09T19:48:27+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-09T1921",
+      "status": "ok",
+      "imported_at": "2026-11-09T19:48:27+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-09T2019",
+      "status": "ok",
+      "imported_at": "2026-11-10T00:43:32+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-09T2119",
+      "status": "ok",
+      "imported_at": "2026-11-10T00:43:32+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-09T2224",
+      "status": "ok",
+      "imported_at": "2026-11-10T00:43:32+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-09T2325",
+      "status": "ok",
+      "imported_at": "2026-11-10T00:43:32+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-10T0021",
+      "status": "ok",
+      "imported_at": "2026-11-10T00:43:33+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-10T0119",
+      "status": "ok",
+      "imported_at": "2026-11-10T03:47:26+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-10T0221",
+      "status": "ok",
+      "imported_at": "2026-11-10T03:47:26+08:00",
+      "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-10T0322",
+      "status": "ok",
+      "imported_at": "2026-11-10T03:47:26+08:00",
+      "rejected": 0
+    }
+  ],
+  "daily_keys": [
+    "2026-10-19",
+    "2026-10-20",
+    "2026-10-21",
+    "2026-10-22",
+    "2026-10-23",
+    "2026-10-24",
+    "2026-10-25",
+    "2026-10-26",
+    "2026-10-27",
+    "2026-10-28",
+    "2026-10-29",
+    "2026-10-30",
+    "2026-10-31",
+    "2026-11-01",
+    "2026-11-03",
+    "2026-11-04",
+    "2026-11-05",
+    "2026-11-06",
+    "2026-11-07"
+  ],
+  "cover_rule": "aihot soft: width≥480 (unknown=800) height≥240 + alt + not logo/avatar/badge; value_class priority when present",
+  "cover_note": "cover.url 导出可为 https；物化后改写为 assets/covers/… 同源；失败则空槽不热链"
 }

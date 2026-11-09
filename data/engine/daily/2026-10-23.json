@@ -79,18 +79,6 @@
      "otherSources": 1
     },
     {
-     "itemId": "sha256:4182359e79e632d3",
-     "title": "Claude：经 Google Cloud 项目可调用 Anthropic 托管的 Claude Models",
-     "summary": "Claude Platform 10 月 22 日说明：Claude Models on Google Cloud（Anthropic 托管）已推出，经你的 Google Cloud 项目调用 Anthropic 运营的 Claude API。",
-     "sourceName": "Claude Platform Release Notes",
-     "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview#october-22-2026",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-22T00:00:00.000Z",
-     "available": true,
-     "otherSources": 0
-    },
-    {
      "itemId": "sha256:8cfd997cf9a921e4",
      "title": "Baseten：开源决策模型 mammoth-1 / elephant-1",
      "summary": "Baseten Base Labs 开源决策模型 mammoth-1（27B）与 elephant-1（9B）：不生成文本，只输出选项概率分布，用于工单路由、反钓鱼与护栏。官方称 mammoth-1 居 Jev Decision Index 208 模型之首；基于 Qwen3.5 后训练，API 可试用一周。",
@@ -193,6 +181,24 @@
      "sourceIconUrl": null,
      "firstParty": true,
      "publishedAt": "2026-10-21T16:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    }
+   ]
+  },
+  {
+   "label": "模型",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:4182359e79e632d3",
+     "title": "Claude：经 Google Cloud 项目可调用 Anthropic 托管的 Claude Models",
+     "summary": "Claude Platform 10 月 22 日说明：Claude Models on Google Cloud（Anthropic 托管）已推出，经你的 Google Cloud 项目调用 Anthropic 运营的 Claude API。",
+     "sourceName": "Claude Platform Release Notes",
+     "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview#october-22-2026",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-22T00:00:00.000Z",
      "available": true,
      "otherSources": 0
     }
@@ -456,7 +462,7 @@
   "totalEvents": 12,
   "sourcesCount": 15,
   "firstPartyEvents": 11,
-  "modelsReleased": 0
+  "modelsReleased": 1
  },
  "readingMinutes": 5,
  "prev": "2026-10-22",

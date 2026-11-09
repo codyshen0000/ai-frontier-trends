@@ -6,6 +6,37 @@
  },
  "cards": [
   {
+   "key": "sha256:4182359e79e632d3",
+   "anchorAt": "2026-11-09T00:00:00.000Z",
+   "item": {
+    "id": "sha256:4182359e79e632d3",
+    "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
+    "summary": "Anthropic 官方发布说明：推出面向高要求推理与长程智能体工作的 Claude Fable 5.2，以及仅向核验机构开放的 Mythos 5.2；两款均为 100 万上下文、12.8 万输出，定价 8/40 美元每百万 token。",
+    "reason": "Anthropic 发布 Fable 5.2 与 Mythos 5.2",
+    "source": {
+     "name": "Claude Platform Release Notes"
+    },
+    "publishedAt": "2026-11-09T00:00:00.000Z",
+    "timelineAt": "2026-11-09T00:00:00.000Z",
+    "category": "model",
+    "score": null,
+    "selected": true,
+    "channel": "news",
+    "tags": [
+     "model_release"
+    ],
+    "x": null
+   },
+   "group": {
+    "factId": "fact-2026-11-10-anthropic-claude-fable-mythos-5-2",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:4182359e79e632d3"
+    ]
+   }
+  },
+  {
    "key": "sha256:f0247d2be6d23fda",
    "anchorAt": "2026-11-06T00:00:00.000Z",
    "item": {
@@ -1715,7 +1746,7 @@
    "group": {
     "factId": "fact-2026-10-27-anthropic-ipo-s1",
     "additionalSourceCount": 5,
-    "reportCount": 19,
+    "reportCount": 20,
     "memberIds": [
      "sha256:fcee7fe2ae9bec9b"
     ]
@@ -2593,30 +2624,6 @@
    }
   },
   {
-   "key": "sha256:4182359e79e632d3",
-   "anchorAt": "2026-10-22T00:00:00.000Z",
-   "item": {
-    "id": "sha256:4182359e79e632d3",
-    "title": "Claude：经 Google Cloud 项目可调用 Anthropic 托管的 Claude Models",
-    "summary": "Claude Platform：Claude Models on Google Cloud（Anthropic 托管）已推出。",
-    "reason": "Claude 经谷歌云项目可调 Anthropic 托管模型",
-    "source": {
-     "name": "Claude Platform Release Notes"
-    },
-    "publishedAt": "2026-10-22T00:00:00.000Z",
-    "timelineAt": "2026-10-22T00:00:00.000Z",
-    "category": "product",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "product_launch"
-    ],
-    "x": null
-   },
-   "group": null
-  },
-  {
    "key": "sha256:258d5ff776fa8f13",
    "anchorAt": "2026-10-21T19:53:20.000Z",
    "item": {
@@ -3479,14 +3486,84 @@
   }
  ],
  "nextCursor": null,
- "hot": null,
+ "hot": [
+  {
+   "rank": 1,
+   "title": "报道：英伟达董事会调查黄仁勋与疑似中方情报人员关系",
+   "heat": 32.6,
+   "trend": "flat",
+   "storyPublicId": "2026-10-29-nvidia-jensen-huang-china-spy",
+   "itemId": "sha256:d07a6f4e30ac5b4d",
+   "participants": [
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "量子位",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 4,
+   "belowThreshold": true
+  },
+  {
+   "rank": 2,
+   "title": "报道：迪士尼与 Adobe 合作开发生成式 AI 工具",
+   "heat": 18.1,
+   "trend": "new",
+   "storyPublicId": "2026-11-10-disney-adobe-gen-ai-partnership",
+   "itemId": "sha256:a1d6a1e656f4ce84",
+   "participants": [
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2,
+   "belowThreshold": true
+  },
+  {
+   "rank": 3,
+   "title": "报道：阿里千问办公 2.0 发布，支持多人与 Agent 协作",
+   "heat": 14.4,
+   "trend": "down",
+   "storyPublicId": "2026-11-09-qwen-office-2-0",
+   "itemId": "sha256:1ea6002e9048371c",
+   "participants": [
+    {
+     "name": "量子位",
+     "kind": "editorial"
+    },
+    {
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
+    }
+   ],
+   "participantCount": 2,
+   "belowThreshold": true
+  }
+ ],
  "dayCounts": {
   "2026-10-29": 7,
-  "2026-10-22": 12,
+  "2026-10-22": 11,
   "2026-10-21": 16,
   "2026-10-23": 13,
   "2026-10-24": 7,
   "2026-10-20": 1,
+  "2026-11-09": 1,
   "2026-10-28": 11,
   "2026-10-27": 9,
   "2026-10-26": 4,

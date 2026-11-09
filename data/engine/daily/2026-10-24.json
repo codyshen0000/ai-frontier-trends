@@ -120,18 +120,6 @@
      "otherSources": 0
     },
     {
-     "itemId": "sha256:4182359e79e632d3",
-     "title": "Claude：经 Google Cloud 项目可调用 Anthropic 托管的 Claude Models",
-     "summary": "Claude Platform 10 月 22 日说明：Claude Models on Google Cloud（Anthropic 托管）已推出，经你的 Google Cloud 项目调用 Anthropic 运营的 Claude API。",
-     "sourceName": "Claude Platform Release Notes",
-     "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview#october-22-2026",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-22T00:00:00.000Z",
-     "available": true,
-     "otherSources": 0
-    },
-    {
      "itemId": "sha256:891b7e0bbf66f86d",
      "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
      "summary": "OpenAI 发布 Decisions API，面向应用内快速、聚焦、低成本决策；与决策模型竞赛相关。官方称可用于任意应用。 TechCrunch：称对标 Jev，决策模型竞争升温。",
@@ -192,6 +180,24 @@
      "available": true,
      "otherSources": 1,
      "belowThreshold": true
+    }
+   ]
+  },
+  {
+   "label": "模型",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:4182359e79e632d3",
+     "title": "Claude：经 Google Cloud 项目可调用 Anthropic 托管的 Claude Models",
+     "summary": "Claude Platform 10 月 22 日说明：Claude Models on Google Cloud（Anthropic 托管）已推出，经你的 Google Cloud 项目调用 Anthropic 运营的 Claude API。",
+     "sourceName": "Claude Platform Release Notes",
+     "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview#october-22-2026",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-22T00:00:00.000Z",
+     "available": true,
+     "otherSources": 0
     }
    ]
   },
@@ -459,7 +465,7 @@
   "totalEvents": 12,
   "sourcesCount": 15,
   "firstPartyEvents": 12,
-  "modelsReleased": 0
+  "modelsReleased": 1
  },
  "readingMinutes": 5,
  "prev": "2026-10-23",
