@@ -1,6 +1,13 @@
 {
  "events": [
   {
+   "publicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
+   "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
+   "latestAt": "2026-11-09T19:00:00.000Z",
+   "reportCount": 2,
+   "hotRank": 1
+  },
+  {
    "publicId": "2026-11-07-anthropic-agent-memory-dreaming",
    "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
    "latestAt": "2026-11-06T23:25:14.000Z",

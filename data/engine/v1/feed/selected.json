@@ -8,6 +8,17 @@
  },
  "items": [
   {
+   "guid": "sha256:4182359e79e632d3",
+   "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
+   "summary": "",
+   "originalUrl": "https://platform.claude.com/docs/en/release-notes/overview#claude-fable-5-2",
+   "pubDate": "2026-11-09T00:00:00.000Z",
+   "sourceName": "Claude Platform Release Notes",
+   "category": "model",
+   "categoryLabel": "模型",
+   "eventPublicId": "2026-11-10-anthropic-claude-fable-mythos-5-2"
+  },
+  {
    "guid": "sha256:f0247d2be6d23fda",
    "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
    "summary": "Anthropic 官方研究：The components of agent memory。",
@@ -545,17 +556,6 @@
    "category": "model",
    "categoryLabel": "模型",
    "eventPublicId": "2026-10-28-deepmind-genie-4"
-  },
-  {
-   "guid": "sha256:5ed14fffd1748be8",
-   "title": "NVIDIA：微调 Nemotron 以掌握本地规则而非仅本地语言",
-   "summary": "NVIDIA 介绍用法德人格数据集与行为契约微调 Nemotron 的后训练流程。",
-   "originalUrl": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/",
-   "pubDate": "2026-10-27T16:00:00.000Z",
-   "sourceName": "NVIDIA Technical Blog",
-   "category": "tutorial",
-   "categoryLabel": "教程",
-   "eventPublicId": "2026-10-28-nvidia-nemotron-local-rules"
   }
  ]
 }

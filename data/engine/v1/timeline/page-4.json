@@ -6,6 +6,36 @@
  },
  "cards": [
   {
+   "key": "sha256:c3d6fb64eb5418e8",
+   "anchorAt": "2026-10-26T15:00:00.000Z",
+   "item": {
+    "id": "sha256:c3d6fb64eb5418e8",
+    "title": "NVIDIA Mission Control 2.5：为 Kubernetes 带来自主恢复",
+    "summary": "NVIDIA 技术博客称 Mission Control 2.5 为 Kubernetes 集群带来自主恢复能力。",
+    "reason": null,
+    "source": {
+     "name": "NVIDIA Technical Blog"
+    },
+    "publishedAt": "2026-10-26T15:00:00.000Z",
+    "timelineAt": "2026-10-26T15:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-27-nvidia-mission-control-25",
+    "originalUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/"
+   },
+   "group": {
+    "factId": "fact-2026-10-27-nvidia-mission-control-25",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:c3d6fb64eb5418e8"
+    ]
+   }
+  },
+  {
    "key": "sha256:8eb6001a836a6e50",
    "anchorAt": "2026-10-26T14:30:00.000Z",
    "item": {
@@ -526,36 +556,6 @@
      "sha256:51888f116f5b0837"
     ]
    }
-  },
-  {
-   "key": "sha256:891b7e0bbf66f86d",
-   "anchorAt": "2026-10-22T19:00:00.000Z",
-   "item": {
-    "id": "sha256:891b7e0bbf66f86d",
-    "title": "OpenAI 推出 Decisions API：低成本快速决策接口",
-    "summary": "OpenAI 发布 Decisions API，面向应用内快速、聚焦、低成本决策。",
-    "reason": "OpenAI 推出面向应用的 Decisions API",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-22T19:00:00.000Z",
-    "timelineAt": "2026-10-22T19:00:00.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-23-openai-decisions-api",
-    "originalUrl": "https://openai.com/index/decisions-api"
-   },
-   "group": {
-    "factId": "fact-2026-10-23-openai-decisions-api",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:891b7e0bbf66f86d"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-5.json",
@@ -563,5 +563,5 @@
  "dayCounts": {},
  "page": 4,
  "pageCount": 6,
- "total": 110
+ "total": 111
 }

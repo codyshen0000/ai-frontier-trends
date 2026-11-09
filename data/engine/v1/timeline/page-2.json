@@ -6,6 +6,29 @@
  },
  "cards": [
   {
+   "key": "sha256:5a014341bc3fc0f1",
+   "anchorAt": "2026-11-02T09:00:00.000Z",
+   "item": {
+    "id": "sha256:5a014341bc3fc0f1",
+    "title": "OpenAI：发布 LifeVal，测 AI 协助日常事务的能力",
+    "summary": "OpenAI 官方：LifeVal 基准覆盖托儿、理财、政务表格等真实任务，衡量 AI 是否帮得上忙。",
+    "reason": "OpenAI：LifeVal 测 AI 帮人办日常事务的能力",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-11-02T09:00:00.000Z",
+    "timelineAt": "2026-11-02T09:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-03-openai-lifeval-benchmark",
+    "originalUrl": "https://openai.com/index/lifeval"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:4094d4340f9e66f9",
    "anchorAt": "2026-11-02T00:00:00.000Z",
    "item": {
@@ -514,36 +537,6 @@
      "sha256:3e32bae570ff21ee"
     ]
    }
-  },
-  {
-   "key": "sha256:ec733f799e1aaee3",
-   "anchorAt": "2026-10-28T14:58:17.000Z",
-   "item": {
-    "id": "sha256:ec733f799e1aaee3",
-    "title": "NVIDIA 发布开源 Nemotron 3.5 Transcribe 与 Granary v2",
-    "summary": "NVIDIA 在 Hugging Face 发布开源权重 Nemotron 3.5 Transcribe：单检查点可做多语转写（约 40 语）、说话人归属、翻译与音频问答，并可用自然语言提示；同日给出 Granary v2 多语语音数据与微调工具。属官方模型/数据发布。",
-    "reason": "NVIDIA 开源可提示多语转写模型 Nemotron 3.5",
-    "source": {
-     "name": "Hugging Face Blog"
-    },
-    "publishedAt": "2026-10-28T14:58:17.000Z",
-    "timelineAt": "2026-10-28T14:58:17.000Z",
-    "category": "model",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-28-nvidia-nemotron-35-transcribe",
-    "originalUrl": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
-   },
-   "group": {
-    "factId": "fact-2026-10-28-nvidia-nemotron-35-transcribe",
-    "additionalSourceCount": 2,
-    "reportCount": 3,
-    "memberIds": [
-     "sha256:ec733f799e1aaee3"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-3.json",
@@ -551,5 +544,5 @@
  "dayCounts": {},
  "page": 2,
  "pageCount": 6,
- "total": 110
+ "total": 111
 }

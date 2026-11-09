@@ -2,31 +2,31 @@
  "site": "前沿趋势",
  "contract_version": "1.1",
  "mode": "production",
- "data_as_of": "2026-11-10T00:21:58+08:00",
- "data_as_of_label": "数据截至 2026-11-10 00:21（北京时间）",
- "generated_at": "2026-11-10T00:45:00+08:00",
+ "data_as_of": "2026-11-10T03:22:25+08:00",
+ "data_as_of_label": "数据截至 2026-11-10 03:22（北京时间）",
+ "generated_at": "2026-11-10T03:45:00+08:00",
  "hot_rule_version": "heat-v1-48h-halflife24h (前沿情报 heat48h.py 1.1)",
- "hot_computed_at": "2026-11-10T00:45:00+08:00",
+ "hot_computed_at": "2026-11-10T03:45:00+08:00",
  "window_hours": 48,
  "spark_points": 25,
  "page_size": 20,
  "counts": {
-  "cards": 110,
+  "cards": 111,
   "pages": 6,
-  "events": 110,
-  "hot_entries": 0,
-  "search_docs": 305,
+  "events": 111,
+  "hot_entries": 1,
+  "search_docs": 308,
   "feed_items": 50,
-  "passed_events": 110,
+  "passed_events": 111,
   "below_threshold_events": 0,
   "redirects": 0,
   "hot_snapshots": 0,
   "covers": 10
  },
  "last_round": {
-  "batch_id": "2026-11-10T0021",
+  "batch_id": "2026-11-10T0322",
   "status": "ok",
-  "finished_at": "2026-11-10T00:33:25+08:00"
+  "finished_at": "2026-11-10T03:35:40+08:00"
  },
  "batches": [
   {
@@ -1620,6 +1620,18 @@
   {
    "batch_id": "2026-11-10T0021",
    "status": "ok"
+  },
+  {
+   "batch_id": "2026-11-10T0119",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-11-10T0221",
+   "status": "ok"
+  },
+  {
+   "batch_id": "2026-11-10T0322",
+   "status": "ok"
   }
  ],
  "files": [
@@ -1734,6 +1746,7 @@
   "events/2026-11-07-amp-spaces-launch.json",
   "events/2026-11-07-anthropic-agent-memory-dreaming.json",
   "events/2026-11-07-cursor-voice-chat-agents.json",
+  "events/2026-11-10-anthropic-claude-fable-mythos-5-2.json",
   "events/index.json",
   "feed/selected.json",
   "hot-strip.json",

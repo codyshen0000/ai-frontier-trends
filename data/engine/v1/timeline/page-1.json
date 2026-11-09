@@ -6,6 +6,36 @@
  },
  "cards": [
   {
+   "key": "sha256:4182359e79e632d3",
+   "anchorAt": "2026-11-09T00:00:00.000Z",
+   "item": {
+    "id": "sha256:4182359e79e632d3",
+    "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
+    "summary": null,
+    "reason": "Anthropic 发布 Fable 5.2 与 Mythos 5.2",
+    "source": {
+     "name": "Claude Platform Release Notes"
+    },
+    "publishedAt": "2026-11-09T00:00:00.000Z",
+    "timelineAt": "2026-11-09T00:00:00.000Z",
+    "category": "model",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
+    "originalUrl": "https://platform.claude.com/docs/en/release-notes/overview#claude-fable-5-2"
+   },
+   "group": {
+    "factId": "fact-2026-11-10-anthropic-claude-fable-mythos-5-2",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:4182359e79e632d3"
+    ]
+   }
+  },
+  {
    "key": "sha256:f0247d2be6d23fda",
    "anchorAt": "2026-11-06T00:00:00.000Z",
    "item": {
@@ -532,34 +562,32 @@
      "sha256:5d33ed0c66ace544"
     ]
    }
-  },
-  {
-   "key": "sha256:5a014341bc3fc0f1",
-   "anchorAt": "2026-11-02T09:00:00.000Z",
-   "item": {
-    "id": "sha256:5a014341bc3fc0f1",
-    "title": "OpenAI：发布 LifeVal，测 AI 协助日常事务的能力",
-    "summary": "OpenAI 官方：LifeVal 基准覆盖托儿、理财、政务表格等真实任务，衡量 AI 是否帮得上忙。",
-    "reason": "OpenAI：LifeVal 测 AI 帮人办日常事务的能力",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-11-02T09:00:00.000Z",
-    "timelineAt": "2026-11-02T09:00:00.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-11-03-openai-lifeval-benchmark",
-    "originalUrl": "https://openai.com/index/lifeval"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-2.json",
- "hot": null,
+ "hot": [
+  {
+   "rank": 1,
+   "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
+   "heat": 15.4,
+   "trend": "up",
+   "storyPublicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
+   "itemId": "sha256:4182359e79e632d3",
+   "participants": [
+    {
+     "name": "Claude Platform Release Notes",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2
+  }
+ ],
  "dayCounts": {
+  "2026-11-09": 1,
   "2026-11-06": 7,
   "2026-11-05": 4,
   "2026-11-04": 5,
@@ -583,5 +611,5 @@
  },
  "page": 1,
  "pageCount": 6,
- "total": 110
+ "total": 111
 }
