@@ -5,35 +5,35 @@
    "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
    "latestAt": "2026-11-06T23:25:14.000Z",
    "reportCount": 2,
-   "hotRank": 2
+   "hotRank": null
   },
   {
    "publicId": "2026-11-07-cursor-voice-chat-agents",
    "title": "Cursor：上线 Voice Chat，可与智能体实时语音协作",
    "latestAt": "2026-11-06T23:11:36.000Z",
    "reportCount": 2,
-   "hotRank": 3
+   "hotRank": null
   },
   {
    "publicId": "2026-11-07-amp-spaces-launch",
    "title": "Amp：上线 Spaces，由主智能体编排协调多 Agent",
    "latestAt": "2026-11-06T23:02:32.000Z",
    "reportCount": 2,
-   "hotRank": 4
+   "hotRank": null
   },
   {
    "publicId": "2026-11-06-nvidia-ai-factory-byte-codesign",
    "title": "NVIDIA：五项协同设计最大化 AI 工厂每一字节价值",
    "latestAt": "2026-11-05T23:30:40.000Z",
    "reportCount": 2,
-   "hotRank": 5
+   "hotRank": null
   },
   {
    "publicId": "2026-11-06-openai-gpt6-cyber",
    "title": "OpenAI：发布 GPT-6 Cyber，推进对齐的网络安全智能体",
    "latestAt": "2026-11-05T20:36:25.000Z",
    "reportCount": 4,
-   "hotRank": 1
+   "hotRank": null
   },
   {
    "publicId": "2026-11-06-nvidia-cosmos-3-open-models",
@@ -47,7 +47,7 @@
    "title": "DeepMind：Gemini Omni 1.2 Flash，更长视频片段、更低价格",
    "latestAt": "2026-11-05T19:05:31.000Z",
    "reportCount": 3,
-   "hotRank": 6
+   "hotRank": null
   },
   {
    "publicId": "2026-11-06-microsoft-pdd-kit",
@@ -61,7 +61,7 @@
    "title": "OpenAI：为负责任 AI 基建设立新标准（社区契约与算力园区政策蓝图）",
    "latestAt": "2026-11-05T14:37:46.000Z",
    "reportCount": 2,
-   "hotRank": 7
+   "hotRank": null
   },
   {
    "publicId": "2026-11-06-mistral-studio",

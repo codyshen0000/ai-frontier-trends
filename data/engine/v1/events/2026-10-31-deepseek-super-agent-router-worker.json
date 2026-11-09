@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-31-deepseek-super-agent-router-worker",
  "title": "DeepSeek：开源 Super-agent 原型，Router 与 Worker 双层架构",
- "status": "watching",
+ "status": "settled",
  "reportCount": 2,
  "sourceCount": 2,
  "firstReportAt": "2026-10-31T00:00:00.000Z",

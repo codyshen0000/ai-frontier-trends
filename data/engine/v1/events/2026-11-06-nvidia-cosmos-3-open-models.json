@@ -1,7 +1,7 @@
 {
  "publicId": "2026-11-06-nvidia-cosmos-3-open-models",
  "title": "NVIDIA：发布 Cosmos 3 开放模型，面向可交互世界仿真",
- "status": "active",
+ "status": "watching",
  "reportCount": 1,
  "sourceCount": 1,
  "firstReportAt": "2026-11-05T19:35:16.000Z",
@@ -13,10 +13,10 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 1,
+  "participants48h": 0,
   "newParticipants6h": 0,
   "recentReports24h": 0,
-  "observationComplete": true,
+  "observationComplete": false,
   "rank": null
  },
  "developments": [
@@ -67,153 +67,7 @@
    "originalUrl": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
   }
  ],
- "heat": [
-  {
-   "hour": "2026-11-05T20:00:00.000Z",
-   "heat": 9.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-05T21:00:00.000Z",
-   "heat": 9.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-05T22:00:00.000Z",
-   "heat": 9.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-05T23:00:00.000Z",
-   "heat": 9.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T00:00:00.000Z",
-   "heat": 8.8,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T01:00:00.000Z",
-   "heat": 8.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T02:00:00.000Z",
-   "heat": 8.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T03:00:00.000Z",
-   "heat": 8.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T04:00:00.000Z",
-   "heat": 7.8,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T05:00:00.000Z",
-   "heat": 7.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T06:00:00.000Z",
-   "heat": 7.4,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T07:00:00.000Z",
-   "heat": 7.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T08:00:00.000Z",
-   "heat": 7.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T09:00:00.000Z",
-   "heat": 6.8,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T10:00:00.000Z",
-   "heat": 6.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T11:00:00.000Z",
-   "heat": 6.4,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T12:00:00.000Z",
-   "heat": 6.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T13:00:00.000Z",
-   "heat": 6.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T14:00:00.000Z",
-   "heat": 5.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T15:00:00.000Z",
-   "heat": 5.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T16:00:00.000Z",
-   "heat": 5.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T17:00:00.000Z",
-   "heat": 5.4,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T18:00:00.000Z",
-   "heat": 5.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T19:00:00.000Z",
-   "heat": 5.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T20:00:00.000Z",
-   "heat": 4.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T21:00:00.000Z",
-   "heat": 4.8,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T22:00:00.000Z",
-   "heat": 4.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T23:00:00.000Z",
-   "heat": 4.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-07T00:00:00.000Z",
-   "heat": 4.4,
-   "participants": 1
-  }
- ],
+ "heat": [],
  "related": [],
  "topics": [],
  "recommendReason": "NVIDIA：Cosmos 3 开放模型，面向可交互世界仿真",

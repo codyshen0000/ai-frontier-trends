@@ -1,7 +1,7 @@
 {
  "publicId": "2026-11-07-anthropic-agent-memory-dreaming",
  "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
- "status": "active",
+ "status": "watching",
  "reportCount": 2,
  "sourceCount": 2,
  "firstReportAt": "2026-11-06T00:00:00.000Z",
@@ -13,11 +13,11 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 2,
-  "newParticipants6h": 1,
-  "recentReports24h": 1,
-  "observationComplete": true,
-  "rank": 2
+  "participants48h": 0,
+  "newParticipants6h": 0,
+  "recentReports24h": 0,
+  "observationComplete": false,
+  "rank": null
  },
  "developments": [
   {
@@ -79,133 +79,7 @@
    "originalUrl": "https://www.anthropic.com/research/components-of-agent-memory"
   }
  ],
- "heat": [
-  {
-   "hour": "2026-11-06T00:00:00.000Z",
-   "heat": 10.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T01:00:00.000Z",
-   "heat": 9.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T02:00:00.000Z",
-   "heat": 9.4,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T03:00:00.000Z",
-   "heat": 9.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T04:00:00.000Z",
-   "heat": 8.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T05:00:00.000Z",
-   "heat": 8.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T06:00:00.000Z",
-   "heat": 8.4,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T07:00:00.000Z",
-   "heat": 8.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T08:00:00.000Z",
-   "heat": 7.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T09:00:00.000Z",
-   "heat": 7.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T10:00:00.000Z",
-   "heat": 7.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T11:00:00.000Z",
-   "heat": 7.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T12:00:00.000Z",
-   "heat": 7.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T13:00:00.000Z",
-   "heat": 6.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T14:00:00.000Z",
-   "heat": 6.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T15:00:00.000Z",
-   "heat": 6.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T16:00:00.000Z",
-   "heat": 6.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T17:00:00.000Z",
-   "heat": 6.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T18:00:00.000Z",
-   "heat": 5.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T19:00:00.000Z",
-   "heat": 5.8,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T20:00:00.000Z",
-   "heat": 5.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T21:00:00.000Z",
-   "heat": 5.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T22:00:00.000Z",
-   "heat": 5.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-06T23:00:00.000Z",
-   "heat": 5.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-07T00:00:00.000Z",
-   "heat": 14.8,
-   "participants": 2
-  }
- ],
+ "heat": [],
  "related": [],
  "topics": [],
  "recommendReason": "Anthropic：智能体记忆组件与“做梦”机制",

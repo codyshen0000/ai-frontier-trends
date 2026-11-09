@@ -1,7 +1,7 @@
 {
  "publicId": "2026-11-01-anthropic-watermark-older-models",
  "title": "Anthropic：水印上线，两款旧 Claude 模型仍有采样漏洞",
- "status": "watching",
+ "status": "settled",
  "reportCount": 2,
  "sourceCount": 2,
  "firstReportAt": "2026-10-31T19:20:55.000Z",
