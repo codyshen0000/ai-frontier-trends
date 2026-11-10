@@ -30,7 +30,7 @@
    "group": {
     "factId": "fact-2026-11-10-anthropic-claude-fable-mythos-5-2",
     "additionalSourceCount": 6,
-    "reportCount": 8,
+    "reportCount": 9,
     "memberIds": [
      "sha256:4182359e79e632d3"
     ]
@@ -3490,21 +3490,21 @@
   {
    "rank": 1,
    "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
-   "heat": 47.8,
-   "trend": "flat",
+   "heat": 44.7,
+   "trend": "up",
    "storyPublicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
    "itemId": "sha256:4182359e79e632d3",
    "participants": [
+    {
+     "name": "量子位",
+     "kind": "editorial"
+    },
     {
      "name": "Latent Space",
      "kind": "editorial"
     },
     {
      "name": "Simon Willison",
-     "kind": "editorial"
-    },
-    {
-     "name": "量子位",
      "kind": "editorial"
     },
     {
@@ -3525,7 +3525,7 @@
   {
    "rank": 2,
    "title": "报道：Meta 发布 Muse Ember，用于智能体执行的轻量模型",
-   "heat": 31.8,
+   "heat": 28.5,
    "trend": "up",
    "storyPublicId": "2026-11-10-meta-muse-ember",
    "itemId": "sha256:e8884a0ba45abd76",
@@ -3553,7 +3553,7 @@
   {
    "rank": 3,
    "title": "报道：英伟达董事会调查黄仁勋与疑似中方情报人员关系",
-   "heat": 25.4,
+   "heat": 22.7,
    "trend": "down",
    "storyPublicId": "2026-10-29-nvidia-jensen-huang-china-spy",
    "itemId": "sha256:d07a6f4e30ac5b4d",
@@ -3581,8 +3581,8 @@
   {
    "rank": 4,
    "title": "报道：字节跳动发布 Seedream 5.5，称可稳定多轮修图而不偏色",
-   "heat": 15.5,
-   "trend": "up",
+   "heat": 13.9,
+   "trend": "down",
    "storyPublicId": "2026-11-10-bytedance-seedream-5-5",
    "itemId": "sha256:fece0721dfed346f",
    "participants": [
@@ -3601,7 +3601,7 @@
   {
    "rank": 5,
    "title": "报道：阿里千问办公 2.0 发布，支持多人与 Agent 协作",
-   "heat": 13.4,
+   "heat": 12.0,
    "trend": "down",
    "storyPublicId": "2026-11-09-qwen-office-2-0",
    "itemId": "sha256:1ea6002e9048371c",
