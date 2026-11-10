@@ -1,6 +1,44 @@
 {
- "generatedAt": "2026-11-09T19:45:00.000Z",
+ "generatedAt": "2026-11-10T00:45:00.000Z",
  "docs": [
+  {
+   "id": "sha256:c988f42abbf6068f",
+   "kind": "item",
+   "title": "报道：Claude Fable 5.2 与 Mythos 5.2 巩固 Anthropic 在 IPO 前的领先地位",
+   "summary": "The Decoder：报道 Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2，称其为迄今最强模型，并置于 IPO 前的竞争格局中。",
+   "publishedAt": "2026-11-09T21:15:23.000Z",
+   "sourceName": "The Decoder",
+   "category": "model",
+   "selected": false,
+   "eventPublicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
+   "originalUrl": "https://the-decoder.com/claude-fable-5-2-and-mythos-5-2-cement-anthropics-ai-lead-just-before-its-ipo/"
+  },
+  {
+   "id": "2026-11-10-anthropic-claude-fable-mythos-5-2",
+   "kind": "event",
+   "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
+   "summary": null,
+   "publishedAt": "2026-11-09T21:15:23.000Z",
+   "sourceNames": [
+    "Claude Platform Release Notes",
+    "TechCrunch · AI",
+    "The Decoder",
+    "The Verge · AI"
+   ],
+   "path": "/events/2026-11-10-anthropic-claude-fable-mythos-5-2/"
+  },
+  {
+   "id": "sha256:a3bc8ca770f44f2d",
+   "kind": "item",
+   "title": "报道：Anthropic 发布新的 Mythos 与 Fable 模型，正值 RSI 担忧升温",
+   "summary": "TechCrunch：报道 Anthropic 发布新的 Mythos 与 Fable 模型，并称其在编程、推理与视觉上有改进，同时提到 RSI 担忧背景。",
+   "publishedAt": "2026-11-09T19:24:51.000Z",
+   "sourceName": "TechCrunch · AI",
+   "category": "model",
+   "selected": false,
+   "eventPublicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
+   "originalUrl": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/"
+  },
   {
    "id": "sha256:ea9e227012293141",
    "kind": "item",
@@ -12,18 +50,6 @@
    "selected": false,
    "eventPublicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
    "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2"
-  },
-  {
-   "id": "2026-11-10-anthropic-claude-fable-mythos-5-2",
-   "kind": "event",
-   "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
-   "summary": null,
-   "publishedAt": "2026-11-09T19:00:00.000Z",
-   "sourceNames": [
-    "Claude Platform Release Notes",
-    "The Verge · AI"
-   ],
-   "path": "/events/2026-11-10-anthropic-claude-fable-mythos-5-2/"
   },
   {
    "id": "sha256:4182359e79e632d3",

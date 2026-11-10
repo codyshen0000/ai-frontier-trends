@@ -2,10 +2,10 @@
  "publicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
  "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
  "status": "active",
- "reportCount": 2,
- "sourceCount": 2,
+ "reportCount": 4,
+ "sourceCount": 4,
  "firstReportAt": "2026-11-09T00:00:00.000Z",
- "latestAt": "2026-11-09T19:00:00.000Z",
+ "latestAt": "2026-11-09T21:15:23.000Z",
  "digest": null,
  "digestUpdatedAt": null,
  "summary": null,
@@ -13,9 +13,9 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 2,
-  "newParticipants6h": 1,
-  "recentReports24h": 2,
+  "participants48h": 4,
+  "newParticipants6h": 3,
+  "recentReports24h": 3,
   "observationComplete": true,
   "rank": 1
  },
@@ -24,7 +24,7 @@
    "factId": "fact-2026-11-10-anthropic-claude-fable-mythos-5-2",
    "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
    "firstReportAt": "2026-11-09T00:00:00.000Z",
-   "reportCount": 2,
+   "reportCount": 4,
    "representative": {
     "id": "sha256:4182359e79e632d3",
     "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
@@ -54,6 +54,30 @@
   }
  ],
  "timeline": [
+  {
+   "id": "sha256:c988f42abbf6068f",
+   "title": "报道：Claude Fable 5.2 与 Mythos 5.2 巩固 Anthropic 在 IPO 前的领先地位",
+   "summary": "The Decoder：报道 Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2，称其为迄今最强模型，并置于 IPO 前的竞争格局中。",
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-09T21:15:23.000Z",
+   "selected": false,
+   "originalUrl": "https://the-decoder.com/claude-fable-5-2-and-mythos-5-2-cement-anthropics-ai-lead-just-before-its-ipo/"
+  },
+  {
+   "id": "sha256:a3bc8ca770f44f2d",
+   "title": "报道：Anthropic 发布新的 Mythos 与 Fable 模型，正值 RSI 担忧升温",
+   "summary": "TechCrunch：报道 Anthropic 发布新的 Mythos 与 Fable 模型，并称其在编程、推理与视觉上有改进，同时提到 RSI 担忧背景。",
+   "source": {
+    "name": "TechCrunch · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-09T19:24:51.000Z",
+   "selected": false,
+   "originalUrl": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/"
+  },
   {
    "id": "sha256:ea9e227012293141",
    "title": "报道：Anthropic 发布新的 Claude Fable 与 Mythos 5.2 模型",
@@ -179,6 +203,31 @@
    "hour": "2026-11-09T19:00:00.000Z",
    "heat": 15.8,
    "participants": 2
+  },
+  {
+   "hour": "2026-11-09T20:00:00.000Z",
+   "heat": 25.2,
+   "participants": 3
+  },
+  {
+   "hour": "2026-11-09T21:00:00.000Z",
+   "heat": 24.4,
+   "participants": 3
+  },
+  {
+   "hour": "2026-11-09T22:00:00.000Z",
+   "heat": 33.5,
+   "participants": 4
+  },
+  {
+   "hour": "2026-11-09T23:00:00.000Z",
+   "heat": 32.6,
+   "participants": 4
+  },
+  {
+   "hour": "2026-11-10T00:00:00.000Z",
+   "heat": 31.7,
+   "participants": 4
   }
  ],
  "related": [],
