@@ -1,5 +1,5 @@
 {
- "computedAt": "2026-11-10T11:44:08.000Z",
+ "computedAt": "2026-11-10T17:13:22.000Z",
  "windowHours": 48,
  "entries": [
   {
@@ -8,21 +8,25 @@
     "publicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
     "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2"
    },
-   "heat": 44.7,
-   "trend": "up",
-   "trendPct": 10.1,
+   "heat": 41.7,
+   "trend": "flat",
+   "trendPct": -8.1,
    "badges": [],
    "participantCount": 6,
    "sourceCount": 6,
    "sourceNames": [
+    "The Decoder",
     "量子位",
     "Latent Space",
     "Simon Willison",
-    "The Decoder",
     "TechCrunch · AI",
     "The Verge · AI"
    ],
    "participants": [
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
     {
      "name": "量子位",
      "kind": "editorial"
@@ -36,10 +40,6 @@
      "kind": "editorial"
     },
     {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
      "name": "TechCrunch · AI",
      "kind": "editorial"
     },
@@ -49,12 +49,6 @@
     }
    ],
    "spark": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
     null,
     null,
     10.0,
@@ -73,10 +67,16 @@
     49.8,
     48.4,
     47.0,
-    45.7
+    45.7,
+    44.4,
+    43.1,
+    41.9,
+    44.5,
+    43.2,
+    42.0
    ],
    "summary": "Anthropic 官方发布说明（Claude Platform release notes，11 月 9 日）：推出 Claude Fable 5.2（claude-fable-5-2），面向高要求推理与长程智能体工作；Claude Mythos 5.2（claude-mythos-5-2）能力相同，仅向通过 Anthropic 核验计划（如 Cyber Verification Program）的机构开放。两款模型均为 100 万 token 上下文、最长 12.8 万输出 token，并始终开启自适应思考（adaptive thinking）；定价为输入 8 美元/百万 token、输出 40 美元/百万 token（5.1 代为 10/50 美元）。本窗跟进包括量子位整理 Anthropic Claude Fable 5.2 发布后的首批实测与网友演示，称覆盖作曲、拍片和 3D 建模等生成任务。属官方双模型正式发布，不是此前关于 Fable/Opus 的传闻，也不得并入上市进程事件。",
-   "latest": null,
+   "latest": "The Decoder 报道 Claude Fable 5.2 在 Remote Labor Index 上约能以专业质量完成 41.3% 的真实自由职业任务（一年前最高约 2.5%）。",
    "cover": {
     "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK269_ANTHROPIC_2_B.jpg?quality=90&strip=all&crop=0,0,100,100",
     "width": null,
@@ -87,15 +87,78 @@
   {
    "rank": 2,
    "story": {
+    "publicId": "2026-10-27-anthropic-ipo-s1",
+    "title": "Anthropic 正式递交公开上市申请"
+   },
+   "heat": 26.9,
+   "trend": "up",
+   "trendPct": 258.7,
+   "badges": [
+    "surge"
+   ],
+   "participantCount": 3,
+   "sourceCount": 3,
+   "sourceNames": [
+    "The Verge · AI",
+    "TechCrunch · AI",
+    "The Decoder"
+   ],
+   "participants": [
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    2.5,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    9.8,
+    9.6,
+    9.3,
+    9.0,
+    8.8,
+    8.5,
+    8.3,
+    8.0,
+    7.8,
+    7.6,
+    7.4,
+    16.9,
+    16.5,
+    28.7,
+    27.9,
+    27.1
+   ],
+   "summary": "Anthropic 上市进程持续：The Decoder 报道公司启动 IPO 路演，发行价区间 70–78 美元，估值最高约 1.02 万亿美元，并称除最高约 644 亿美元的公开发行外，还通过与 Google、Nvidia、Microsoft 等锚定投资者的私募再筹集 260 亿美元。随后 The Verge 与 TechCrunch 报道同一价格区间，并称完全稀释估值最高约 1.4 万亿 / 1.404 万亿美元。属既有 S1 与路演覆盖跟进，不是新的模型发布，也不得并入 Claude Fable/Mythos 5.2。",
+   "latest": null,
+   "cover": null,
+   "belowThreshold": true
+  },
+  {
+   "rank": 3,
+   "story": {
     "publicId": "2026-11-10-meta-muse-ember",
     "title": "报道：Meta 发布 Muse Ember，用于智能体执行的轻量模型"
    },
-   "heat": 28.5,
-   "trend": "up",
-   "trendPct": 22.3,
-   "badges": [
-    "rising"
-   ],
+   "heat": 24.3,
+   "trend": "down",
+   "trendPct": -15.9,
+   "badges": [],
    "participantCount": 4,
    "sourceCount": 3,
    "sourceNames": [
@@ -123,12 +186,6 @@
    ],
    "spark": [
     null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
     10.0,
     9.7,
     19.4,
@@ -146,7 +203,13 @@
     31.7,
     30.8,
     29.9,
-    29.1
+    29.1,
+    28.2,
+    27.4,
+    26.7,
+    25.9,
+    25.2,
+    24.4
    ],
    "summary": "TechCrunch / The Decoder：Meta 发布 Muse Ember，称是面向智能体执行的轻量模型，输入约每百万 token 10 美分，并称比 Haiku、Luna 等前沿竞品便宜。Decoder 跟进称其针对智能体重复性工作（工具调用、路由、数据提取），并称单位成本智力高于 Claude Haiku 5.5 或 GPT-6 Luna，但在实际智能体任务上仍有差距。本窗 Simon Willison 撰文介绍同一发布，把它放在 Claude Haiku / GPT Luna 这一档。此条有别于既有 Muse Spaces / Voice。T2 二手，未见 Meta 官方页进 inbox，未伪造官网，未垫。",
    "latest": null,
@@ -154,14 +217,14 @@
    "belowThreshold": true
   },
   {
-   "rank": 3,
+   "rank": 4,
    "story": {
     "publicId": "2026-10-29-nvidia-jensen-huang-china-spy",
     "title": "报道：英伟达董事会调查黄仁勋与疑似中方情报人员关系"
    },
-   "heat": 22.7,
+   "heat": 19.4,
    "trend": "down",
-   "trendPct": -15.9,
+   "trendPct": -16.0,
    "badges": [],
    "participantCount": 4,
    "sourceCount": 4,
@@ -190,12 +253,6 @@
     }
    ],
    "spark": [
-    23.0,
-    32.2,
-    31.3,
-    30.4,
-    29.6,
-    28.7,
     27.9,
     31.2,
     33.3,
@@ -214,7 +271,13 @@
     25.3,
     24.6,
     23.9,
-    23.2
+    23.2,
+    22.6,
+    21.9,
+    21.3,
+    20.7,
+    20.1,
+    19.5
    ],
    "summary": "The Verge / TechCrunch / The Decoder：英伟达董事会对 CEO 黄仁勋与 Alice Huang（报道称其受中方招募）的关系启动独立调查。TechCrunch 本窗跟进：黄仁勋因争议退出 ElevenLabs Summit；卖空机构 Culper Research 早在丑闻爆发约半年前就质疑这段关系；黄仁勋据报约一年前聘请擅长处理高调性丑闻的公关公司；另有稿件称证券集体诉讼风险上升。The Verge 综述间谍丑闻已知信息，报道特朗普在记者会上回应他对此事的知情程度，并另文分析中国可能从黄仁勋处获得什么。均为 T2 二手，无公司 IR/官方新闻稿可核，诚实分≪76 未垫。",
    "latest": null,
@@ -222,14 +285,191 @@
    "belowThreshold": true
   },
   {
-   "rank": 4,
+   "rank": 5,
+   "story": {
+    "publicId": "2026-10-28-deepmind-gemini-4-carbon",
+    "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升"
+   },
+   "heat": 19.3,
+   "trend": "new",
+   "trendPct": null,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "Google DeepMind Blog",
+    "The Verge · AI"
+   ],
+   "participants": [
+    {
+     "name": "Google DeepMind Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    10.0,
+    19.4
+   ],
+   "summary": "Google DeepMind 宣布 Gemini 4 Carbon，称其为目前最强一代，在 Artificial Analysis Intelligence Index v5.0 排名第一（59），并在 SEC-bench Pro、ExploitGym、CWE-bench 等网络安全评测领先；内部称可支撑多日长程工程任务。在 Argon 两周后发布。正按美国政府自愿预发布测试流程推进，本周起先向部分网络安全防御方开放，再经 Fairwind 计划扩至可信伙伴；面向开发者与消费者的产品面仍待开放。入门价与 Argon 相同：每百万输入/输出 token 2/10 美元。",
+   "latest": "DeepMind 宣布 Gemini 4 Carbon 现已全面开放；The Verge 报道面向公众推出，并提到一项智能体 swarm 功能。",
+   "cover": null
+  },
+  {
+   "rank": 6,
+   "story": {
+    "publicId": "2026-11-10-adobe-max-2026-agentic-ai",
+    "title": "报道：Adobe Max 推出智能体、MCP 与 Firefly 等新工具"
+   },
+   "heat": 18.2,
+   "trend": "new",
+   "trendPct": null,
+   "badges": [
+    "new"
+   ],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "TechCrunch · AI",
+    "The Verge · AI"
+   ],
+   "participants": [
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    10.0,
+    19.5,
+    18.9,
+    18.4
+   ],
+   "summary": "TechCrunch 与 The Verge 报道 Adobe 在 Max 大会上更多地押注智能体式 AI：在 Photoshop、Premiere、Firefly 中加入智能体与新创作工具，推出 MCP 以及 Firefly 中的原型构建工具；The Verge 还报道 Photoshop、Lightroom 和 Premiere 的自动去除功能。属同一天 Adobe Max 产品发布。",
+   "latest": null,
+   "cover": null,
+   "belowThreshold": true
+  },
+  {
+   "rank": 7,
+   "story": {
+    "publicId": "2026-11-09-google-four-tpu-variants-one-year",
+    "title": "报道：谷歌一年内推出四款 TPU 变体，并发布 TPU 8tx 与 8i Max"
+   },
+   "heat": 14.0,
+   "trend": "up",
+   "trendPct": 164.2,
+   "badges": [
+    "rising"
+   ],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "TechCrunch · AI",
+    "The Decoder"
+   ],
+   "participants": [
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    8.9,
+    8.7,
+    8.4,
+    8.2,
+    7.9,
+    7.7,
+    7.5,
+    7.3,
+    7.1,
+    6.9,
+    6.7,
+    6.5,
+    6.3,
+    6.1,
+    5.9,
+    5.8,
+    5.6,
+    5.5,
+    5.3,
+    5.1,
+    5.0,
+    4.9,
+    4.7,
+    14.6,
+    14.1
+   ],
+   "summary": "The Decoder：谷歌在 TPU 8 系列上再推两款专用变体——TPU 8tx 称处理时仍可保持数据加密，TPU 8i Max 把两颗芯片封装在一起以加倍算力与内存；并称近 100 家外部客户、一年内共四款 TPU 变体，对标英伟达 GPU。本窗 TechCrunch 亦报道谷歌推出两款专用芯片，分别面向机密训练和更大内存容量，属于同一 TPU 8tx / 8i Max 产品线。本窗 inbox 未见谷歌官方页。",
+   "latest": null,
+   "cover": null,
+   "belowThreshold": true
+  },
+  {
+   "rank": 8,
    "story": {
     "publicId": "2026-11-10-bytedance-seedream-5-5",
     "title": "报道：字节跳动发布 Seedream 5.5，称可稳定多轮修图而不偏色"
    },
-   "heat": 13.9,
+   "heat": 11.8,
    "trend": "down",
-   "trendPct": -15.8,
+   "trendPct": -16.3,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -250,12 +490,6 @@
    "spark": [
     null,
     null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
     10.0,
     9.7,
     9.4,
@@ -272,7 +506,13 @@
     15.4,
     15.0,
     14.6,
-    14.2
+    14.2,
+    13.8,
+    13.4,
+    13.0,
+    12.6,
+    12.3,
+    11.9
    ],
    "summary": "The Decoder：字节跳动 Seed 推出图像模型 Seedream 5.5，称面向专业制作、可在最多约 100 轮编辑中保持像素稳定且不偏色，并支持原生 RGBA 透明背景；报道称其在真实感上优于 GPT-Image-2.5 Sunburst，且计划推出 Pro 版。本窗量子位跟进同一发布，并称速度有提升、API 价格下降。T2 二手，未见字节跳动官方页进 inbox，未伪造官网，未垫。",
    "latest": null,
@@ -280,14 +520,14 @@
    "belowThreshold": true
   },
   {
-   "rank": 5,
+   "rank": 9,
    "story": {
     "publicId": "2026-11-09-qwen-office-2-0",
     "title": "报道：阿里千问办公 2.0 发布，支持多人与 Agent 协作"
    },
-   "heat": 12.0,
+   "heat": 10.2,
    "trend": "down",
-   "trendPct": -15.5,
+   "trendPct": -15.7,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 1,
@@ -305,12 +545,6 @@
     }
    ],
    "spark": [
-    18.6,
-    18.0,
-    17.5,
-    17.0,
-    16.5,
-    16.1,
     15.6,
     15.2,
     14.7,
@@ -329,7 +563,13 @@
     13.3,
     12.9,
     12.6,
-    12.2
+    12.2,
+    11.9,
+    11.5,
+    11.2,
+    10.9,
+    10.6,
+    10.3
    ],
    "summary": "IT之家援引钉钉官方消息、量子位跟进：千问办公 2.0 作为面向个人与组织的 Team Agent 发布，上线多人与 Agent 协作、人机共创、资料空间、自动任务和三端互联；目前客户端全量上线。本窗量子位另发编辑部日常实测稿，仍属同一产品发布跟进。本窗无已核实官方页进 inbox，代表为既有量子位 T2，未垫。",
    "latest": null,
@@ -337,14 +577,14 @@
    "belowThreshold": true
   },
   {
-   "rank": 6,
+   "rank": 10,
    "story": {
     "publicId": "2026-11-10-disney-adobe-gen-ai-partnership",
     "title": "报道：迪士尼与 Adobe 合作开发生成式 AI 工具"
    },
-   "heat": 11.4,
+   "heat": 9.7,
    "trend": "down",
-   "trendPct": -16.2,
+   "trendPct": -16.4,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
@@ -363,12 +603,6 @@
     }
    ],
    "spark": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    9.9,
     19.6,
     19.0,
     18.5,
@@ -387,7 +621,13 @@
     12.7,
     12.3,
     12.0,
-    11.6
+    11.6,
+    11.3,
+    11.0,
+    10.7,
+    10.4,
+    10.1,
+    9.8
    ],
    "summary": "The Verge / The Decoder：迪士尼与 Adobe 宣布多年合作，开发「由艺术家主导」的专有生成式 AI 模型服务制片流程；Decoder 本窗跟进称迪士尼押注 Adobe Firefly，以打造品牌安全的娱乐帝国 AI 模型，并覆盖主题公园与邮轮等场景。T2 合作发布二手，未见双方官方页进 inbox，未垫。",
    "latest": null,

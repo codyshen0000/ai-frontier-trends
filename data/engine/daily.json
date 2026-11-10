@@ -40,6 +40,60 @@
      "publishedAt": "2026-11-09T00:00:00.000Z",
      "available": true,
      "otherSources": 6
+    },
+    {
+     "itemId": "sha256:0e9fb0eb84f13acf",
+     "title": "DeepMind 发布 AlphaProof Code：用 Lean 验证复杂软件",
+     "summary": "DeepMind 官方博客宣布推出 AlphaProof Code，称这是在深度验证复杂软件方面的突破。其智能体用 Lean 写出证明，用于校验 Signal 的核心加密。这是一次具名的研究/产品发布，不是新的旗舰通用大模型。",
+     "sourceName": "Google DeepMind Blog",
+     "sourceUrl": "https://deepmind.google/blog/introducing-alphaproof-code/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-10T12:02:28.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:6b6709b612e5913e",
+     "title": "DeepMind 发布 Gemini Robotics 2.5：称是其最强视觉-语言-动作模型",
+     "summary": "DeepMind 官方博客宣布 Gemini Robotics 2.5，称这是其最强的视觉-语言-动作（VLA）模型，可提升机器人的灵巧性、可靠性与安全性，并加速现实世界中的通用操作能力。这是机器人模型发布，不是 Gemini 4 Carbon，也不是智元 WITA-Omni。",
+     "sourceName": "Google DeepMind Blog",
+     "sourceUrl": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-09T19:51:47.000Z",
+     "available": true,
+     "otherSources": 0
+    }
+   ]
+  },
+  {
+   "label": "产品",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:5cd7ff8934485154",
+     "title": "NVIDIA 宣布 Kubernetes Engine（NVKE），用于在 GPU 基础设施上管理集群",
+     "summary": "NVIDIA 技术博客宣布推出 NVIDIA Kubernetes Engine（NVKE），以及一个配套开源项目，用于在 GPU 基础设施上构建和运营托管 Kubernetes 服务。",
+     "sourceName": "NVIDIA Technical Blog",
+     "sourceUrl": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-10T15:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:25d05ca668539a66",
+     "title": "NVIDIA 发布开源组件 Snapshot，可在数秒内启动或恢复 GPU 工作负载",
+     "summary": "NVIDIA 技术博客宣布推出 NVIDIA Snapshot，称这是 NVIDIA DSX AI Factory Platform 的新开源组件，让已初始化的 GPU 工作负载可在推理等场景中复用，并能在数秒内启动或恢复。",
+     "sourceName": "NVIDIA Technical Blog",
+     "sourceUrl": "https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-10T15:00:00.000Z",
+     "available": true,
+     "otherSources": 0
     }
    ]
   }
@@ -98,13 +152,13 @@
   "caption": null
  },
  "metrics": {
-  "totalEvents": 1,
-  "sourcesCount": 7,
-  "firstPartyEvents": 1,
-  "modelsReleased": 1,
-  "mainCardNote": "今日仅 1 条达收录标准"
+  "totalEvents": 5,
+  "sourcesCount": 9,
+  "firstPartyEvents": 5,
+  "modelsReleased": 3,
+  "mainCardNote": "今日仅 5 条达收录标准"
  },
- "readingMinutes": 1,
+ "readingMinutes": 3,
  "prev": "2026-11-07",
  "next": null
 }
