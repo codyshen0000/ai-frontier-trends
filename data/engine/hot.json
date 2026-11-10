@@ -1,5 +1,5 @@
 {
- "computedAt": "2026-11-09T19:45:00.000Z",
+ "computedAt": "2026-11-10T00:45:39.000Z",
  "windowHours": 48,
  "entries": [
   {
@@ -8,25 +8,25 @@
     "publicId": "2026-10-29-nvidia-jensen-huang-china-spy",
     "title": "报道：英伟达董事会调查黄仁勋与疑似中方情报人员关系"
    },
-   "heat": 32.6,
+   "heat": 31.2,
    "trend": "flat",
-   "trendPct": 6.5,
+   "trendPct": -7.1,
    "badges": [],
    "participantCount": 4,
    "sourceCount": 4,
    "sourceNames": [
-    "TechCrunch · AI",
     "The Verge · AI",
+    "TechCrunch · AI",
     "The Decoder",
     "量子位"
    ],
    "participants": [
     {
-     "name": "TechCrunch · AI",
+     "name": "The Verge · AI",
      "kind": "editorial"
     },
     {
-     "name": "The Verge · AI",
+     "name": "TechCrunch · AI",
      "kind": "editorial"
     },
     {
@@ -39,11 +39,6 @@
     }
    ],
    "spark": [
-    5.3,
-    5.2,
-    14.9,
-    19.3,
-    19.4,
     18.9,
     28.2,
     27.4,
@@ -63,9 +58,14 @@
     28.7,
     27.9,
     31.2,
-    33.3
+    33.3,
+    32.4,
+    32.0,
+    31.1,
+    30.9,
+    31.9
    ],
-   "summary": "The Verge / TechCrunch / The Decoder：英伟达董事会对 CEO 黄仁勋与 Alice Huang（报道称其受中方招募）的关系启动独立调查；TechCrunch 本窗跟进称这段关系使英伟达对华业务与出口管制游说承压，并引耶鲁大学 Jeffrey Sonnenfeld 估计黄仁勋去留约为五五开；Verge 另有偏评论的性生活角度稿。均为 T2 二手，无公司 IR/官方新闻稿可核，诚实分≪76 未垫。",
+   "summary": "The Verge / TechCrunch / The Decoder：英伟达董事会对 CEO 黄仁勋与 Alice Huang（报道称其受中方招募）的关系启动独立调查。TechCrunch 本窗跟进：黄仁勋因争议退出 ElevenLabs Summit；卖空机构 Culper Research 早在丑闻爆发约半年前就质疑这段关系；黄仁勋据报约一年前聘请擅长处理高调性丑闻的公关公司；另有稿件称证券集体诉讼风险上升。The Verge 综述间谍丑闻已知信息，报道特朗普在记者会上回应他对此事的知情程度，并另文分析中国可能从黄仁勋处获得什么。均为 T2 二手，无公司 IR/官方新闻稿可核，诚实分≪76 未垫。",
    "latest": null,
    "cover": {
     "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/STKP210_JENSEN_HUANG_D.jpg?quality=90&strip=all&crop=0,0,100,100",
@@ -78,15 +78,137 @@
   {
    "rank": 2,
    "story": {
-    "publicId": "2026-11-10-disney-adobe-gen-ai-partnership",
-    "title": "报道：迪士尼与 Adobe 合作开发生成式 AI 工具"
+    "publicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
+    "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2"
    },
-   "heat": 18.1,
+   "heat": 26.1,
    "trend": "new",
    "trendPct": null,
    "badges": [
-    "new"
+    "surge"
    ],
+   "participantCount": 3,
+   "sourceCount": 3,
+   "sourceNames": [
+    "The Decoder",
+    "TechCrunch · AI",
+    "The Verge · AI"
+   ],
+   "participants": [
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    10.0,
+    19.5,
+    19.0,
+    28.2,
+    27.4,
+    26.7
+   ],
+   "summary": "Anthropic 官方发布说明（Claude Platform release notes，11 月 9 日）：推出 Claude Fable 5.2（claude-fable-5-2），面向高要求推理与长程智能体工作；Claude Mythos 5.2（claude-mythos-5-2）能力相同，仅向通过 Anthropic 核验计划（如 Cyber Verification Program）的机构开放。两款模型均为 100 万 token 上下文、最长 12.8 万输出 token，并始终开启自适应思考（adaptive thinking）；定价为输入 8 美元/百万 token、输出 40 美元/百万 token（5.1 代为 10/50 美元）。The Decoder 本窗跟进称其巩固 Anthropic 在 IPO 前的领先地位；TechCrunch 亦报道发布，并提到 RSI 担忧背景。属官方双模型正式发布，不是此前关于 Fable/Opus 的传闻。",
+   "latest": null,
+   "cover": null
+  },
+  {
+   "rank": 3,
+   "story": {
+    "publicId": "2026-11-10-meta-muse-ember",
+    "title": "报道：Meta 发布 Muse Ember，用于智能体执行的轻量模型"
+   },
+   "heat": 16.9,
+   "trend": "up",
+   "trendPct": 72.4,
+   "badges": [
+    "rising"
+   ],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "The Decoder",
+    "TechCrunch · AI"
+   ],
+   "participants": [
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    10.0,
+    9.7,
+    19.4,
+    18.8,
+    18.3,
+    17.7,
+    17.2
+   ],
+   "summary": "TechCrunch / The Decoder：Meta 发布 Muse Ember，称是面向智能体执行的轻量模型，输入约每百万 token 10 美分，并称比 Haiku、Luna 等前沿竞品便宜。Decoder 本窗跟进称其针对智能体重复性工作（工具调用、路由、数据提取），并称单位成本智力高于 Claude Haiku 5.5 或 GPT-6 Luna，但在实际智能体任务上仍有差距。此条有别于既有 Muse Spaces / Voice。T2 二手，未见 Meta 官方页进 inbox，未伪造官网，未垫。",
+   "latest": null,
+   "cover": null,
+   "belowThreshold": true
+  },
+  {
+   "rank": 4,
+   "story": {
+    "publicId": "2026-11-10-disney-adobe-gen-ai-partnership",
+    "title": "报道：迪士尼与 Adobe 合作开发生成式 AI 工具"
+   },
+   "heat": 15.7,
+   "trend": "down",
+   "trendPct": -15.6,
+   "badges": [],
    "participantCount": 2,
    "sourceCount": 2,
    "sourceNames": [
@@ -120,15 +242,15 @@
     null,
     null,
     null,
-    null,
-    null,
-    null,
-    null,
-    null,
     9.9,
     19.6,
     19.0,
-    18.5
+    18.5,
+    18.0,
+    17.5,
+    17.0,
+    16.5,
+    16.0
    ],
    "summary": "The Verge / The Decoder：迪士尼与 Adobe 宣布多年合作，开发「由艺术家主导」的专有生成式 AI 模型服务制片流程；Decoder 本窗跟进称迪士尼押注 Adobe Firefly，以打造品牌安全的娱乐帝国 AI 模型，并覆盖主题公园与邮轮等场景。T2 合作发布二手，未见双方官方页进 inbox，未垫。",
    "latest": null,
@@ -136,14 +258,14 @@
    "belowThreshold": true
   },
   {
-   "rank": 3,
+   "rank": 5,
    "story": {
     "publicId": "2026-11-09-qwen-office-2-0",
     "title": "报道：阿里千问办公 2.0 发布，支持多人与 Agent 协作"
    },
-   "heat": 14.4,
+   "heat": 12.5,
    "trend": "down",
-   "trendPct": -15.8,
+   "trendPct": -15.5,
    "badges": [],
    "participantCount": 2,
    "sourceCount": 1,
@@ -170,11 +292,6 @@
     null,
     null,
     null,
-    null,
-    null,
-    null,
-    null,
-    null,
     19.7,
     19.1,
     18.6,
@@ -185,7 +302,12 @@
     16.1,
     15.6,
     15.2,
-    14.7
+    14.7,
+    14.3,
+    13.9,
+    13.5,
+    13.1,
+    12.7
    ],
    "summary": "IT之家援引钉钉官方消息、量子位跟进：千问办公 2.0 作为面向个人与组织的 Team Agent 发布，上线多人与 Agent 协作、人机共创、资料空间、自动任务和三端互联；目前客户端全量上线。本窗无已核实官方页进 inbox，代表为 T2 媒体，未垫。",
    "latest": null,

@@ -29,8 +29,8 @@
    },
    "group": {
     "factId": "fact-2026-11-10-anthropic-claude-fable-mythos-5-2",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
+    "additionalSourceCount": 3,
+    "reportCount": 4,
     "memberIds": [
      "sha256:4182359e79e632d3"
     ]
@@ -3490,17 +3490,17 @@
   {
    "rank": 1,
    "title": "报道：英伟达董事会调查黄仁勋与疑似中方情报人员关系",
-   "heat": 32.6,
+   "heat": 31.2,
    "trend": "flat",
    "storyPublicId": "2026-10-29-nvidia-jensen-huang-china-spy",
    "itemId": "sha256:d07a6f4e30ac5b4d",
    "participants": [
     {
-     "name": "TechCrunch · AI",
+     "name": "The Verge · AI",
      "kind": "editorial"
     },
     {
-     "name": "The Verge · AI",
+     "name": "TechCrunch · AI",
      "kind": "editorial"
     },
     {
@@ -3517,9 +3517,52 @@
   },
   {
    "rank": 2,
-   "title": "报道：迪士尼与 Adobe 合作开发生成式 AI 工具",
-   "heat": 18.1,
+   "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
+   "heat": 26.1,
    "trend": "new",
+   "storyPublicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
+   "itemId": "sha256:4182359e79e632d3",
+   "participants": [
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 3
+  },
+  {
+   "rank": 3,
+   "title": "报道：Meta 发布 Muse Ember，用于智能体执行的轻量模型",
+   "heat": 16.9,
+   "trend": "up",
+   "storyPublicId": "2026-11-10-meta-muse-ember",
+   "itemId": "sha256:e8884a0ba45abd76",
+   "participants": [
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2,
+   "belowThreshold": true
+  },
+  {
+   "rank": 4,
+   "title": "报道：迪士尼与 Adobe 合作开发生成式 AI 工具",
+   "heat": 15.7,
+   "trend": "down",
    "storyPublicId": "2026-11-10-disney-adobe-gen-ai-partnership",
    "itemId": "sha256:a1d6a1e656f4ce84",
    "participants": [
@@ -3536,9 +3579,9 @@
    "belowThreshold": true
   },
   {
-   "rank": 3,
+   "rank": 5,
    "title": "报道：阿里千问办公 2.0 发布，支持多人与 Agent 协作",
-   "heat": 14.4,
+   "heat": 12.5,
    "trend": "down",
    "storyPublicId": "2026-11-09-qwen-office-2-0",
    "itemId": "sha256:1ea6002e9048371c",
