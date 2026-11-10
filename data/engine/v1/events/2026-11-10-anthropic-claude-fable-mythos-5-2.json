@@ -2,10 +2,10 @@
  "publicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
  "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
  "status": "active",
- "reportCount": 5,
- "sourceCount": 5,
+ "reportCount": 7,
+ "sourceCount": 6,
  "firstReportAt": "2026-11-09T00:00:00.000Z",
- "latestAt": "2026-11-09T23:58:46.000Z",
+ "latestAt": "2026-11-10T06:34:44.000Z",
  "digest": null,
  "digestUpdatedAt": null,
  "summary": null,
@@ -13,9 +13,9 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 5,
-  "newParticipants6h": 1,
-  "recentReports24h": 4,
+  "participants48h": 7,
+  "newParticipants6h": 2,
+  "recentReports24h": 7,
   "observationComplete": true,
   "rank": 1
  },
@@ -24,7 +24,7 @@
    "factId": "fact-2026-11-10-anthropic-claude-fable-mythos-5-2",
    "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
    "firstReportAt": "2026-11-09T00:00:00.000Z",
-   "reportCount": 5,
+   "reportCount": 7,
    "representative": {
     "id": "sha256:4182359e79e632d3",
     "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
@@ -55,8 +55,32 @@
  ],
  "timeline": [
   {
+   "id": "sha256:8915e46a098594e4",
+   "title": "跟进：Latent Space 评述 Anthropic Claude Fable 5.2 重夺榜首，IPO 路演只是时间背景",
+   "summary": "Latent Space AINews：评述 Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2 后重夺榜首，并讨论降价但单任务更耗 token、以及订阅与数据保留限制；文首提到 IPO 路演同日开始，只作发布时间背景，不是上市进程新事实。",
+   "source": {
+    "name": "Latent Space",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-10T06:34:44.000Z",
+   "selected": false,
+   "originalUrl": "https://latent.space/p/ainews-fable-5-2-retakes-world-1-llm-spot-as-ant-ipo-roadshow-begins/"
+  },
+  {
+   "id": "sha256:19c160f4485a55c0",
+   "title": "跟进：Simon Willison 转述 Anthropic 关于 Claude Fable 5.2 的提示词测试",
+   "summary": "Simon Willison 转述 Anthropic 测试：Claude Fable 5.2 对「代码归谁所有」的提示很敏感；若提示未说明所有权或把代码库写成别人的，模型倾向在现有结构上打补丁，若写明代码库归它所有，则更愿意改结构。",
+   "source": {
+    "name": "Simon Willison",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-10T05:34:14.000Z",
+   "selected": false,
+   "originalUrl": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/"
+  },
+  {
    "id": "sha256:9a8fde6cfa9ab68c",
-   "title": "跟进：llm-anthropic 0.31 已加入 Claude Fable 5.2 与 Mythos 5.2",
+   "title": "跟进：llm-anthropic 0.31 已加入 Anthropic Claude Fable 5.2 与 Mythos 5.2",
    "summary": null,
    "source": {
     "name": "Simon Willison",
@@ -233,33 +257,48 @@
   },
   {
    "hour": "2026-11-09T23:00:00.000Z",
-   "heat": 32.6,
-   "participants": 4
+   "heat": 42.3,
+   "participants": 5
   },
   {
    "hour": "2026-11-10T00:00:00.000Z",
-   "heat": 41.6,
-   "participants": 5
+   "heat": 51.1,
+   "participants": 6
   },
   {
    "hour": "2026-11-10T01:00:00.000Z",
-   "heat": 40.5,
-   "participants": 5
+   "heat": 49.7,
+   "participants": 6
   },
   {
    "hour": "2026-11-10T02:00:00.000Z",
-   "heat": 39.3,
-   "participants": 5
+   "heat": 48.3,
+   "participants": 6
   },
   {
    "hour": "2026-11-10T03:00:00.000Z",
-   "heat": 38.2,
-   "participants": 5
+   "heat": 46.9,
+   "participants": 6
   },
   {
    "hour": "2026-11-10T04:00:00.000Z",
-   "heat": 37.1,
-   "participants": 5
+   "heat": 45.5,
+   "participants": 6
+  },
+  {
+   "hour": "2026-11-10T05:00:00.000Z",
+   "heat": 44.2,
+   "participants": 6
+  },
+  {
+   "hour": "2026-11-10T06:00:00.000Z",
+   "heat": 44.5,
+   "participants": 6
+  },
+  {
+   "hour": "2026-11-10T07:00:00.000Z",
+   "heat": 53.1,
+   "participants": 7
   }
  ],
  "related": [],

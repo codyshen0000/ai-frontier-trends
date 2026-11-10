@@ -1,10 +1,50 @@
 {
- "generatedAt": "2026-11-10T04:45:00.000Z",
+ "generatedAt": "2026-11-10T07:45:00.000Z",
  "docs": [
+  {
+   "id": "sha256:8915e46a098594e4",
+   "kind": "item",
+   "title": "跟进：Latent Space 评述 Anthropic Claude Fable 5.2 重夺榜首，IPO 路演只是时间背景",
+   "summary": "Latent Space AINews：评述 Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2 后重夺榜首，并讨论降价但单任务更耗 token、以及订阅与数据保留限制；文首提到 IPO 路演同日开始，只作发布时间背景，不是上市进程新事实。",
+   "publishedAt": "2026-11-10T06:34:44.000Z",
+   "sourceName": "Latent Space",
+   "category": "model",
+   "selected": false,
+   "eventPublicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
+   "originalUrl": "https://latent.space/p/ainews-fable-5-2-retakes-world-1-llm-spot-as-ant-ipo-roadshow-begins/"
+  },
+  {
+   "id": "2026-11-10-anthropic-claude-fable-mythos-5-2",
+   "kind": "event",
+   "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
+   "summary": null,
+   "publishedAt": "2026-11-10T06:34:44.000Z",
+   "sourceNames": [
+    "Claude Platform Release Notes",
+    "Latent Space",
+    "Simon Willison",
+    "TechCrunch · AI",
+    "The Decoder",
+    "The Verge · AI"
+   ],
+   "path": "/events/2026-11-10-anthropic-claude-fable-mythos-5-2/"
+  },
+  {
+   "id": "sha256:19c160f4485a55c0",
+   "kind": "item",
+   "title": "跟进：Simon Willison 转述 Anthropic 关于 Claude Fable 5.2 的提示词测试",
+   "summary": "Simon Willison 转述 Anthropic 测试：Claude Fable 5.2 对「代码归谁所有」的提示很敏感；若提示未说明所有权或把代码库写成别人的，模型倾向在现有结构上打补丁，若写明代码库归它所有，则更愿意改结构。",
+   "publishedAt": "2026-11-10T05:34:14.000Z",
+   "sourceName": "Simon Willison",
+   "category": "model",
+   "selected": false,
+   "eventPublicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
+   "originalUrl": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/"
+  },
   {
    "id": "sha256:9a8fde6cfa9ab68c",
    "kind": "item",
-   "title": "跟进：llm-anthropic 0.31 已加入 Claude Fable 5.2 与 Mythos 5.2",
+   "title": "跟进：llm-anthropic 0.31 已加入 Anthropic Claude Fable 5.2 与 Mythos 5.2",
    "summary": null,
    "publishedAt": "2026-11-09T23:58:46.000Z",
    "sourceName": "Simon Willison",
@@ -12,21 +52,6 @@
    "selected": false,
    "eventPublicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
    "originalUrl": "https://simonwillison.net/2026/Nov/9/llm-anthropic/"
-  },
-  {
-   "id": "2026-11-10-anthropic-claude-fable-mythos-5-2",
-   "kind": "event",
-   "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
-   "summary": null,
-   "publishedAt": "2026-11-09T23:58:46.000Z",
-   "sourceNames": [
-    "Claude Platform Release Notes",
-    "Simon Willison",
-    "TechCrunch · AI",
-    "The Decoder",
-    "The Verge · AI"
-   ],
-   "path": "/events/2026-11-10-anthropic-claude-fable-mythos-5-2/"
   },
   {
    "id": "sha256:c988f42abbf6068f",

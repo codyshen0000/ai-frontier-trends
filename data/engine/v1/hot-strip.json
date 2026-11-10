@@ -2,8 +2,8 @@
  {
   "rank": 1,
   "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
-  "heat": 36.3,
-  "trend": "up",
+  "heat": 51.9,
+  "trend": "flat",
   "storyPublicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
   "itemId": "sha256:4182359e79e632d3",
   "participants": [
@@ -12,7 +12,15 @@
     "kind": "editorial"
    },
    {
+    "name": "Latent Space",
+    "kind": "editorial"
+   },
+   {
     "name": "Simon Willison",
+    "kind": "editorial"
+   },
+   {
+    "name": "量子位",
     "kind": "editorial"
    },
    {
@@ -28,6 +36,6 @@
     "kind": "editorial"
    }
   ],
-  "participantCount": 5
+  "participantCount": 7
  }
 ]
