@@ -1,30 +1,30 @@
 {
  "publicId": "2026-10-28-deepmind-gemini-4-carbon",
  "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
- "status": "settled",
- "reportCount": 2,
- "sourceCount": 2,
+ "status": "active",
+ "reportCount": 4,
+ "sourceCount": 3,
  "firstReportAt": "2026-10-28T17:00:58.000Z",
- "latestAt": "2026-10-28T19:17:58.000Z",
+ "latestAt": "2026-11-10T16:03:47.000Z",
  "digest": null,
  "digestUpdatedAt": null,
  "summary": null,
  "excerpt": null,
- "latest": null,
+ "latest": "DeepMind 宣布 Gemini 4 Carbon 现已全面开放；The Verge 报道面向公众推出，并提到一项智能体 swarm 功能。",
  "latestReport": null,
  "whyHot": {
-  "participants48h": 0,
-  "newParticipants6h": 0,
-  "recentReports24h": 0,
-  "observationComplete": false,
-  "rank": null
+  "participants48h": 2,
+  "newParticipants6h": 2,
+  "recentReports24h": 2,
+  "observationComplete": true,
+  "rank": 2
  },
  "developments": [
   {
    "factId": "fact-2026-10-28-deepmind-gemini-4-carbon",
    "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
    "firstReportAt": "2026-10-28T17:00:58.000Z",
-   "reportCount": 2,
+   "reportCount": 4,
    "representative": {
     "id": "sha256:3e32bae570ff21ee",
     "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
@@ -41,6 +41,18 @@
  ],
  "officialReports": [
   {
+   "id": "sha256:55cb0588b3e8436e",
+   "title": "跟进：DeepMind 宣布 Gemini 4 Carbon 现已全面开放",
+   "summary": "DeepMind 官方博客宣布 Gemini 4 Carbon is now available：在较早向网络安全防御方做有限预览之后，该模型现已全面开放。",
+   "source": {
+    "name": "Google DeepMind Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-10T16:03:47.000Z",
+   "selected": false,
+   "originalUrl": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/"
+  },
+  {
    "id": "sha256:3e32bae570ff21ee",
    "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
    "summary": null,
@@ -54,6 +66,30 @@
   }
  ],
  "timeline": [
+  {
+   "id": "sha256:55cb0588b3e8436e",
+   "title": "跟进：DeepMind 宣布 Gemini 4 Carbon 现已全面开放",
+   "summary": "DeepMind 官方博客宣布 Gemini 4 Carbon is now available：在较早向网络安全防御方做有限预览之后，该模型现已全面开放。",
+   "source": {
+    "name": "Google DeepMind Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-10T16:03:47.000Z",
+   "selected": false,
+   "originalUrl": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/"
+  },
+  {
+   "id": "sha256:8658a0744e2cda3c",
+   "title": "跟进：The Verge 报道 Gemini 4 Carbon 向公众推出，并提到智能体 swarm 功能",
+   "summary": "The Verge：Google 在约两周前向部分网络安全防御方预览后，正把 Gemini 4 Carbon 向公众推出，并提到一项智能体「swarm」功能。",
+   "source": {
+    "name": "The Verge · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-10T16:00:00.000Z",
+   "selected": false,
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout"
+  },
   {
    "id": "sha256:7722fb99a5f289b8",
    "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
@@ -79,9 +115,20 @@
    "originalUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/"
   }
  ],
- "heat": [],
+ "heat": [
+  {
+   "hour": "2026-11-10T16:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-10T17:00:00.000Z",
+   "heat": 19.4,
+   "participants": 2
+  }
+ ],
  "related": [],
  "topics": [],
- "recommendReason": "DeepMind 发布 Gemini 4 Carbon，网安与长程编码领先",
+ "recommendReason": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
  "primaryUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/"
 }

@@ -1,11 +1,46 @@
 {
  "events": [
   {
+   "publicId": "2026-10-28-deepmind-gemini-4-carbon",
+   "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+   "latestAt": "2026-11-10T16:03:47.000Z",
+   "reportCount": 4,
+   "hotRank": 2
+  },
+  {
+   "publicId": "2026-11-10-nvidia-kubernetes-engine",
+   "title": "NVIDIA 宣布 Kubernetes Engine（NVKE），用于在 GPU 基础设施上管理集群",
+   "latestAt": "2026-11-10T15:00:00.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
+   "publicId": "2026-11-10-nvidia-snapshot-dsx",
+   "title": "NVIDIA 发布开源组件 Snapshot，可在数秒内启动或恢复 GPU 工作负载",
+   "latestAt": "2026-11-10T15:00:00.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
+   "publicId": "2026-11-10-alphaproof-code",
+   "title": "DeepMind 发布 AlphaProof Code：用 Lean 验证复杂软件",
+   "latestAt": "2026-11-10T12:02:28.000Z",
+   "reportCount": 1,
+   "hotRank": null
+  },
+  {
    "publicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
    "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
    "latestAt": "2026-11-10T06:34:44.000Z",
    "reportCount": 7,
    "hotRank": 1
+  },
+  {
+   "publicId": "2026-11-10-deepmind-gemini-robotics-2-5",
+   "title": "DeepMind 发布 Gemini Robotics 2.5：称是其最强视觉-语言-动作模型",
+   "latestAt": "2026-11-09T19:51:47.000Z",
+   "reportCount": 1,
+   "hotRank": null
   },
   {
    "publicId": "2026-11-07-anthropic-agent-memory-dreaming",
@@ -271,13 +306,6 @@
    "title": "微软首次披露 Azure 季度营收约 33.2 亿美元",
    "latestAt": "2026-10-28T21:58:32.000Z",
    "reportCount": 4,
-   "hotRank": null
-  },
-  {
-   "publicId": "2026-10-28-deepmind-gemini-4-carbon",
-   "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
-   "latestAt": "2026-10-28T19:17:58.000Z",
-   "reportCount": 2,
    "hotRank": null
   },
   {

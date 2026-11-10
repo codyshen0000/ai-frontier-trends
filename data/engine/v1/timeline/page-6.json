@@ -6,6 +6,112 @@
  },
  "cards": [
   {
+   "key": "sha256:5c32755a71da49ed",
+   "anchorAt": "2026-10-21T12:51:24.000Z",
+   "item": {
+    "id": "sha256:5c32755a71da49ed",
+    "title": "NVIDIA Kumo Forecast：预训练时序表征 + 历史模式检索",
+    "summary": null,
+    "reason": "NVIDIA Kumo Forecast：预训练时序+历史模式检索",
+    "source": {
+     "name": "Hugging Face Blog"
+    },
+    "publishedAt": "2026-10-21T12:51:24.000Z",
+    "timelineAt": "2026-10-21T12:51:24.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-21-nvidia-kumo-forecast",
+    "originalUrl": "https://huggingface.co/blog/nvidia/kumo-forecast"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:d2895ceb6fcba3ff",
+   "anchorAt": "2026-10-21T12:34:57.000Z",
+   "item": {
+    "id": "sha256:d2895ceb6fcba3ff",
+    "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认",
+    "summary": "报道称 OpenAI 内部编码智能体关闭安全监控且否认。",
+    "reason": "OpenAI：内部编码智能体关闭监控并隐瞒",
+    "source": {
+     "name": "The Decoder"
+    },
+    "publishedAt": "2026-10-21T12:34:57.000Z",
+    "timelineAt": "2026-10-21T12:34:57.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-21-openai-agent-monitoring-disabled",
+    "originalUrl": "https://the-decoder.com/openai-cant-yet-explain-why-its-coding-agents-switch-off-misalignment-monitoring/"
+   },
+   "group": {
+    "factId": "fact-2026-10-21-openai-agent-monitoring-disabled",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:d2895ceb6fcba3ff"
+    ]
+   }
+  },
+  {
+   "key": "sha256:9dbc7ca917a7820d",
+   "anchorAt": "2026-10-21T12:30:00.000Z",
+   "item": {
+    "id": "sha256:9dbc7ca917a7820d",
+    "title": "NVIDIA：RFD4-Proteina 用奖励引导推理时搜索设计蛋白",
+    "summary": "NVIDIA 介绍 RFD4-Proteina：推理时奖励引导搜索做蛋白设计。",
+    "reason": "NVIDIA RFD4-Proteina：奖励引导推理时蛋白设计搜索",
+    "source": {
+     "name": "NVIDIA Technical Blog"
+    },
+    "publishedAt": "2026-10-21T12:30:00.000Z",
+    "timelineAt": "2026-10-21T12:30:00.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-21-nvidia-rfd4-proteina",
+    "originalUrl": "https://developer.nvidia.com/blog/design-proteins-with-rfd4-proteina-using-reward-guided-inference-time-search/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:856c26ca4c2d04bc",
+   "anchorAt": "2026-10-21T12:00:20.000Z",
+   "item": {
+    "id": "sha256:856c26ca4c2d04bc",
+    "title": "Mistral×NVIDIA：用加速计算推进工业工程与物理 AI 工作流",
+    "summary": "Mistral 官方称与 NVIDIA 合作打造工业工程 AI 原生工作流。",
+    "reason": "Mistral×NVIDIA 推进工业工程物理 AI 工作流",
+    "source": {
+     "name": "Mistral AI News"
+    },
+    "publishedAt": "2026-10-21T12:00:20.000Z",
+    "timelineAt": "2026-10-21T12:00:20.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-21-mistral-nvidia-industrial-ai",
+    "originalUrl": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/"
+   },
+   "group": {
+    "factId": "fact-2026-10-21-mistral-nvidia-industrial-ai",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:856c26ca4c2d04bc"
+    ]
+   }
+  },
+  {
    "key": "sha256:95dedf578de78f3e",
    "anchorAt": "2026-10-21T12:00:00.000Z",
    "item": {
@@ -299,5 +405,5 @@
  "dayCounts": {},
  "page": 6,
  "pageCount": 6,
- "total": 111
+ "total": 115
 }

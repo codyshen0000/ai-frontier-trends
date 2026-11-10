@@ -10,12 +10,12 @@
  "digestUpdatedAt": null,
  "summary": null,
  "excerpt": null,
- "latest": null,
+ "latest": "The Decoder 报道 Claude Fable 5.2 在 Remote Labor Index 上约能以专业质量完成 41.3% 的真实自由职业任务（一年前最高约 2.5%）。",
  "latestReport": null,
  "whyHot": {
   "participants48h": 7,
-  "newParticipants6h": 2,
-  "recentReports24h": 8,
+  "newParticipants6h": 1,
+  "recentReports24h": 9,
   "observationComplete": true,
   "rank": 1
  },
@@ -318,6 +318,36 @@
   {
    "hour": "2026-11-10T11:00:00.000Z",
    "heat": 49.3,
+   "participants": 7
+  },
+  {
+   "hour": "2026-11-10T12:00:00.000Z",
+   "heat": 47.9,
+   "participants": 7
+  },
+  {
+   "hour": "2026-11-10T13:00:00.000Z",
+   "heat": 46.5,
+   "participants": 7
+  },
+  {
+   "hour": "2026-11-10T14:00:00.000Z",
+   "heat": 45.2,
+   "participants": 7
+  },
+  {
+   "hour": "2026-11-10T15:00:00.000Z",
+   "heat": 47.7,
+   "participants": 7
+  },
+  {
+   "hour": "2026-11-10T16:00:00.000Z",
+   "heat": 46.3,
+   "participants": 7
+  },
+  {
+   "hour": "2026-11-10T17:00:00.000Z",
+   "heat": 45.0,
    "participants": 7
   }
  ],

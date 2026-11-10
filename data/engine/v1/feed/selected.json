@@ -8,6 +8,50 @@
  },
  "items": [
   {
+   "guid": "sha256:5cd7ff8934485154",
+   "title": "NVIDIA 宣布 Kubernetes Engine（NVKE），用于在 GPU 基础设施上管理集群",
+   "summary": "NVIDIA 技术博客宣布推出 NVIDIA Kubernetes Engine（NVKE），以及一个配套开源项目，用于在 GPU 基础设施上构建和运营托管 Kubernetes 服务。",
+   "originalUrl": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/",
+   "pubDate": "2026-11-10T15:00:00.000Z",
+   "sourceName": "NVIDIA Technical Blog",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-11-10-nvidia-kubernetes-engine"
+  },
+  {
+   "guid": "sha256:25d05ca668539a66",
+   "title": "NVIDIA 发布开源组件 Snapshot，可在数秒内启动或恢复 GPU 工作负载",
+   "summary": "NVIDIA 技术博客宣布推出 NVIDIA Snapshot，称这是 DSX AI Factory Platform 的新开源组件，让已初始化的 GPU 工作负载可复用，并能在数秒内启动或恢复。",
+   "originalUrl": "https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot/",
+   "pubDate": "2026-11-10T15:00:00.000Z",
+   "sourceName": "NVIDIA Technical Blog",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-11-10-nvidia-snapshot-dsx"
+  },
+  {
+   "guid": "sha256:0e9fb0eb84f13acf",
+   "title": "DeepMind 发布 AlphaProof Code：用 Lean 验证复杂软件",
+   "summary": "DeepMind 官方博客宣布推出 AlphaProof Code，称其智能体用 Lean 写出证明，用于校验 Signal 的核心加密。",
+   "originalUrl": "https://deepmind.google/blog/introducing-alphaproof-code/",
+   "pubDate": "2026-11-10T12:02:28.000Z",
+   "sourceName": "Google DeepMind Blog",
+   "category": "model",
+   "categoryLabel": "模型",
+   "eventPublicId": "2026-11-10-alphaproof-code"
+  },
+  {
+   "guid": "sha256:6b6709b612e5913e",
+   "title": "DeepMind 发布 Gemini Robotics 2.5：称是其最强视觉-语言-动作模型",
+   "summary": "DeepMind 官方博客宣布 Gemini Robotics 2.5，称这是其最强的视觉-语言-动作模型，可提升机器人的灵巧性、可靠性与安全性。",
+   "originalUrl": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+   "pubDate": "2026-11-09T19:51:47.000Z",
+   "sourceName": "Google DeepMind Blog",
+   "category": "model",
+   "categoryLabel": "模型",
+   "eventPublicId": "2026-11-10-deepmind-gemini-robotics-2-5"
+  },
+  {
    "guid": "sha256:4182359e79e632d3",
    "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
    "summary": "",
@@ -512,50 +556,6 @@
    "category": "model",
    "categoryLabel": "模型",
    "eventPublicId": "2026-10-28-liquidai-lfm3"
-  },
-  {
-   "guid": "sha256:64295c3ae779f4ac",
-   "title": "OpenAI：公开「指数时间假设为假」预印本材料",
-   "summary": "",
-   "originalUrl": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/",
-   "pubDate": "2026-10-27T17:08:08.000Z",
-   "sourceName": "TechCrunch · AI",
-   "category": "paper",
-   "categoryLabel": "论文",
-   "eventPublicId": "2026-10-28-frontier-labs-eth-refutation"
-  },
-  {
-   "guid": "sha256:a9a41b70941237e4",
-   "title": "NVIDIA：RTX Spark 支撑神经渲染与游戏内 AI 角色",
-   "summary": "",
-   "originalUrl": "https://developer.nvidia.com/blog/nvidia-rtx-spark-powers-neural-rendering-and-ai-characters-in-games/",
-   "pubDate": "2026-10-27T17:00:00.000Z",
-   "sourceName": "NVIDIA Technical Blog",
-   "category": "product",
-   "categoryLabel": "产品",
-   "eventPublicId": "2026-10-28-nvidia-rtx-spark-games"
-  },
-  {
-   "guid": "sha256:1d6c5c59e46e52b9",
-   "title": "Hugging Face：LLM 能否可靠评判研究想法新颖性",
-   "summary": "",
-   "originalUrl": "https://huggingface.co/blog/allenai/novelty-bench",
-   "pubDate": "2026-10-27T16:12:42.000Z",
-   "sourceName": "Hugging Face Blog",
-   "category": "paper",
-   "categoryLabel": "论文",
-   "eventPublicId": "2026-10-28-hf-allenai-novelty-bench"
-  },
-  {
-   "guid": "sha256:e960e8891f7d7ad8",
-   "title": "DeepMind 发布 Genie 4：新一代世界仿真",
-   "summary": "DeepMind 宣布 Genie 4 世界模型，强调实时仿真真实感与原生多模态音画对话。",
-   "originalUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-   "pubDate": "2026-10-27T16:01:38.000Z",
-   "sourceName": "Google DeepMind Blog",
-   "category": "model",
-   "categoryLabel": "模型",
-   "eventPublicId": "2026-10-28-deepmind-genie-4"
   }
  ]
 }

@@ -1,6 +1,112 @@
 {
- "generatedAt": "2026-11-10T11:45:00.000Z",
+ "generatedAt": "2026-11-10T17:15:00.000Z",
  "docs": [
+  {
+   "id": "sha256:55cb0588b3e8436e",
+   "kind": "item",
+   "title": "跟进：DeepMind 宣布 Gemini 4 Carbon 现已全面开放",
+   "summary": "DeepMind 官方博客宣布 Gemini 4 Carbon is now available：在较早向网络安全防御方做有限预览之后，该模型现已全面开放。",
+   "publishedAt": "2026-11-10T16:03:47.000Z",
+   "sourceName": "Google DeepMind Blog",
+   "category": "model",
+   "selected": false,
+   "eventPublicId": "2026-10-28-deepmind-gemini-4-carbon",
+   "originalUrl": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/"
+  },
+  {
+   "id": "2026-10-28-deepmind-gemini-4-carbon",
+   "kind": "event",
+   "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+   "summary": null,
+   "publishedAt": "2026-11-10T16:03:47.000Z",
+   "sourceNames": [
+    "Google DeepMind Blog",
+    "The Decoder",
+    "The Verge · AI"
+   ],
+   "path": "/events/2026-10-28-deepmind-gemini-4-carbon/"
+  },
+  {
+   "id": "sha256:8658a0744e2cda3c",
+   "kind": "item",
+   "title": "跟进：The Verge 报道 Gemini 4 Carbon 向公众推出，并提到智能体 swarm 功能",
+   "summary": "The Verge：Google 在约两周前向部分网络安全防御方预览后，正把 Gemini 4 Carbon 向公众推出，并提到一项智能体「swarm」功能。",
+   "publishedAt": "2026-11-10T16:00:00.000Z",
+   "sourceName": "The Verge · AI",
+   "category": "model",
+   "selected": false,
+   "eventPublicId": "2026-10-28-deepmind-gemini-4-carbon",
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout"
+  },
+  {
+   "id": "sha256:5cd7ff8934485154",
+   "kind": "item",
+   "title": "NVIDIA 宣布 Kubernetes Engine（NVKE），用于在 GPU 基础设施上管理集群",
+   "summary": "NVIDIA 技术博客宣布推出 NVIDIA Kubernetes Engine（NVKE），以及一个配套开源项目，用于在 GPU 基础设施上构建和运营托管 Kubernetes 服务。",
+   "publishedAt": "2026-11-10T15:00:00.000Z",
+   "sourceName": "NVIDIA Technical Blog",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-11-10-nvidia-kubernetes-engine",
+   "originalUrl": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/"
+  },
+  {
+   "id": "sha256:25d05ca668539a66",
+   "kind": "item",
+   "title": "NVIDIA 发布开源组件 Snapshot，可在数秒内启动或恢复 GPU 工作负载",
+   "summary": "NVIDIA 技术博客宣布推出 NVIDIA Snapshot，称这是 DSX AI Factory Platform 的新开源组件，让已初始化的 GPU 工作负载可复用，并能在数秒内启动或恢复。",
+   "publishedAt": "2026-11-10T15:00:00.000Z",
+   "sourceName": "NVIDIA Technical Blog",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-11-10-nvidia-snapshot-dsx",
+   "originalUrl": "https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot/"
+  },
+  {
+   "id": "2026-11-10-nvidia-snapshot-dsx",
+   "kind": "event",
+   "title": "NVIDIA 发布开源组件 Snapshot，可在数秒内启动或恢复 GPU 工作负载",
+   "summary": "NVIDIA 技术博客宣布推出 NVIDIA Snapshot，称这是 NVIDIA DSX AI Factory Platform 的新开源组件，让已初始化的 GPU 工作负载可在推理等场景中复用，并能在数秒内启动或恢复。",
+   "publishedAt": "2026-11-10T15:00:00.000Z",
+   "sourceNames": [
+    "NVIDIA Technical Blog"
+   ],
+   "path": "/events/2026-11-10-nvidia-snapshot-dsx/"
+  },
+  {
+   "id": "2026-11-10-nvidia-kubernetes-engine",
+   "kind": "event",
+   "title": "NVIDIA 宣布 Kubernetes Engine（NVKE），用于在 GPU 基础设施上管理集群",
+   "summary": "NVIDIA 技术博客宣布推出 NVIDIA Kubernetes Engine（NVKE），以及一个配套开源项目，用于在 GPU 基础设施上构建和运营托管 Kubernetes 服务。",
+   "publishedAt": "2026-11-10T15:00:00.000Z",
+   "sourceNames": [
+    "NVIDIA Technical Blog"
+   ],
+   "path": "/events/2026-11-10-nvidia-kubernetes-engine/"
+  },
+  {
+   "id": "sha256:0e9fb0eb84f13acf",
+   "kind": "item",
+   "title": "DeepMind 发布 AlphaProof Code：用 Lean 验证复杂软件",
+   "summary": "DeepMind 官方博客宣布推出 AlphaProof Code，称其智能体用 Lean 写出证明，用于校验 Signal 的核心加密。",
+   "publishedAt": "2026-11-10T12:02:28.000Z",
+   "sourceName": "Google DeepMind Blog",
+   "category": "model",
+   "selected": true,
+   "eventPublicId": "2026-11-10-alphaproof-code",
+   "originalUrl": "https://deepmind.google/blog/introducing-alphaproof-code/"
+  },
+  {
+   "id": "2026-11-10-alphaproof-code",
+   "kind": "event",
+   "title": "DeepMind 发布 AlphaProof Code：用 Lean 验证复杂软件",
+   "summary": "DeepMind 官方博客宣布推出 AlphaProof Code，称这是在深度验证复杂软件方面的突破。其智能体用 Lean 写出证明，用于校验 Signal 的核心加密。这是一次具名的研究/产品发布，不是新的旗舰通用大模型。",
+   "publishedAt": "2026-11-10T12:02:28.000Z",
+   "sourceNames": [
+    "Google DeepMind Blog"
+   ],
+   "path": "/events/2026-11-10-alphaproof-code/"
+  },
   {
    "id": "sha256:8915e46a098594e4",
    "kind": "item",
@@ -64,6 +170,29 @@
    "selected": false,
    "eventPublicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
    "originalUrl": "https://the-decoder.com/claude-fable-5-2-and-mythos-5-2-cement-anthropics-ai-lead-just-before-its-ipo/"
+  },
+  {
+   "id": "sha256:6b6709b612e5913e",
+   "kind": "item",
+   "title": "DeepMind 发布 Gemini Robotics 2.5：称是其最强视觉-语言-动作模型",
+   "summary": "DeepMind 官方博客宣布 Gemini Robotics 2.5，称这是其最强的视觉-语言-动作模型，可提升机器人的灵巧性、可靠性与安全性。",
+   "publishedAt": "2026-11-09T19:51:47.000Z",
+   "sourceName": "Google DeepMind Blog",
+   "category": "model",
+   "selected": true,
+   "eventPublicId": "2026-11-10-deepmind-gemini-robotics-2-5",
+   "originalUrl": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/"
+  },
+  {
+   "id": "2026-11-10-deepmind-gemini-robotics-2-5",
+   "kind": "event",
+   "title": "DeepMind 发布 Gemini Robotics 2.5：称是其最强视觉-语言-动作模型",
+   "summary": null,
+   "publishedAt": "2026-11-09T19:51:47.000Z",
+   "sourceNames": [
+    "Google DeepMind Blog"
+   ],
+   "path": "/events/2026-11-10-deepmind-gemini-robotics-2-5/"
   },
   {
    "id": "sha256:a3bc8ca770f44f2d",
@@ -1414,18 +1543,6 @@
    "selected": false,
    "eventPublicId": "2026-10-28-deepmind-gemini-4-carbon",
    "originalUrl": "https://the-decoder.com/google-deepmind-releases-gemini-4-carbon-just-two-weeks-after-argon-with-gains-across-the-board/"
-  },
-  {
-   "id": "2026-10-28-deepmind-gemini-4-carbon",
-   "kind": "event",
-   "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
-   "summary": null,
-   "publishedAt": "2026-10-28T19:17:58.000Z",
-   "sourceNames": [
-    "Google DeepMind Blog",
-    "The Decoder"
-   ],
-   "path": "/events/2026-10-28-deepmind-gemini-4-carbon/"
   },
   {
    "id": "sha256:ab7da4b3ce3cc5a6",

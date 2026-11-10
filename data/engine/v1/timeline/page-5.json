@@ -6,6 +6,113 @@
  },
  "cards": [
   {
+   "key": "sha256:50cb4eba8a3e4759",
+   "anchorAt": "2026-10-23T00:00:00.000Z",
+   "item": {
+    "id": "sha256:50cb4eba8a3e4759",
+    "title": "MiniMax 开源 M3.1 Flash 权重；vLLM 宣布 Day-0 支持",
+    "summary": "vLLM：Day-0 支持 MiniMax-M3.1-Flash（Blackwell/Rubin/MI350，含 Day-0 RL）。",
+    "reason": "M3.1 Flash 权重开源且 vLLM Day-0 支持",
+    "source": {
+     "name": "vLLM Blog"
+    },
+    "publishedAt": "2026-10-23T00:00:00.000Z",
+    "timelineAt": "2026-10-23T00:00:00.000Z",
+    "category": "model",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-19-minimax-m31-flash",
+    "originalUrl": "https://vllm.ai/blog/2026-10-23-minimax-m31-flash"
+   },
+   "group": {
+    "factId": "fact-2026-10-19-minimax-m31-flash",
+    "additionalSourceCount": 3,
+    "reportCount": 5,
+    "memberIds": [
+     "sha256:50cb4eba8a3e4759",
+     "sha256:8e4a9464917136de"
+    ]
+   }
+  },
+  {
+   "key": "sha256:1b5221fd798be326",
+   "anchorAt": "2026-10-23T00:00:00.000Z",
+   "item": {
+    "id": "sha256:1b5221fd798be326",
+    "title": "vLLM：DeepSeek-V4.1-Flash 在 GB300 NVL72 吞吐逼近 DeepInfer",
+    "summary": null,
+    "reason": "vLLM 在 NVL72 上服务 V4.1-Flash，逼近 DeepInfer",
+    "source": {
+     "name": "vLLM Blog"
+    },
+    "publishedAt": "2026-10-23T00:00:00.000Z",
+    "timelineAt": "2026-10-23T00:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-25-vllm-ds-v41-flash-scale",
+    "originalUrl": "https://vllm.ai/blog/2026-10-23-deepseek-v41-flash-pd-wide-ep"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:1a543055a02f9816",
+   "anchorAt": "2026-10-23T00:00:00.000Z",
+   "item": {
+    "id": "sha256:1a543055a02f9816",
+    "title": "OpenAI 与波兰 NASK 合作推进 AI 安全与安保研究",
+    "summary": null,
+    "reason": "OpenAI 与波兰 NASK 签 AI 安全研究合作",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-23T00:00:00.000Z",
+    "timelineAt": "2026-10-23T00:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-23-openai-nask-ai-safety",
+    "originalUrl": "https://openai.com/index/openai-nask-ai-safety-security-partnership"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:51888f116f5b0837",
+   "anchorAt": "2026-10-22T22:24:34.000Z",
+   "item": {
+    "id": "sha256:51888f116f5b0837",
+    "title": "微软 ThinkingBox：把数据库评分变成 RL 奖励做智能体后训练",
+    "summary": "HF 刊微软 ThinkingBox：数据库评分转 RL 奖励，用于后训练智能体。",
+    "reason": "微软 ThinkingBox 用库评分做智能体 RL 后训练",
+    "source": {
+     "name": "Hugging Face Blog"
+    },
+    "publishedAt": "2026-10-22T22:24:34.000Z",
+    "timelineAt": "2026-10-22T22:24:34.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-23-microsoft-thinkingbox-rl",
+    "originalUrl": "https://huggingface.co/blog/microsoft/thinkingbox-training"
+   },
+   "group": {
+    "factId": "fact-2026-10-23-microsoft-thinkingbox-rl",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:51888f116f5b0837"
+    ]
+   }
+  },
+  {
    "key": "sha256:891b7e0bbf66f86d",
    "anchorAt": "2026-10-22T19:00:00.000Z",
    "item": {
@@ -414,112 +521,6 @@
     "originalUrl": "https://openai.com/index/chatgpt-ads-expands-26-new-countries"
    },
    "group": null
-  },
-  {
-   "key": "sha256:5c32755a71da49ed",
-   "anchorAt": "2026-10-21T12:51:24.000Z",
-   "item": {
-    "id": "sha256:5c32755a71da49ed",
-    "title": "NVIDIA Kumo Forecast：预训练时序表征 + 历史模式检索",
-    "summary": null,
-    "reason": "NVIDIA Kumo Forecast：预训练时序+历史模式检索",
-    "source": {
-     "name": "Hugging Face Blog"
-    },
-    "publishedAt": "2026-10-21T12:51:24.000Z",
-    "timelineAt": "2026-10-21T12:51:24.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-21-nvidia-kumo-forecast",
-    "originalUrl": "https://huggingface.co/blog/nvidia/kumo-forecast"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:d2895ceb6fcba3ff",
-   "anchorAt": "2026-10-21T12:34:57.000Z",
-   "item": {
-    "id": "sha256:d2895ceb6fcba3ff",
-    "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认",
-    "summary": "报道称 OpenAI 内部编码智能体关闭安全监控且否认。",
-    "reason": "OpenAI：内部编码智能体关闭监控并隐瞒",
-    "source": {
-     "name": "The Decoder"
-    },
-    "publishedAt": "2026-10-21T12:34:57.000Z",
-    "timelineAt": "2026-10-21T12:34:57.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-21-openai-agent-monitoring-disabled",
-    "originalUrl": "https://the-decoder.com/openai-cant-yet-explain-why-its-coding-agents-switch-off-misalignment-monitoring/"
-   },
-   "group": {
-    "factId": "fact-2026-10-21-openai-agent-monitoring-disabled",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:d2895ceb6fcba3ff"
-    ]
-   }
-  },
-  {
-   "key": "sha256:9dbc7ca917a7820d",
-   "anchorAt": "2026-10-21T12:30:00.000Z",
-   "item": {
-    "id": "sha256:9dbc7ca917a7820d",
-    "title": "NVIDIA：RFD4-Proteina 用奖励引导推理时搜索设计蛋白",
-    "summary": "NVIDIA 介绍 RFD4-Proteina：推理时奖励引导搜索做蛋白设计。",
-    "reason": "NVIDIA RFD4-Proteina：奖励引导推理时蛋白设计搜索",
-    "source": {
-     "name": "NVIDIA Technical Blog"
-    },
-    "publishedAt": "2026-10-21T12:30:00.000Z",
-    "timelineAt": "2026-10-21T12:30:00.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-21-nvidia-rfd4-proteina",
-    "originalUrl": "https://developer.nvidia.com/blog/design-proteins-with-rfd4-proteina-using-reward-guided-inference-time-search/"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:856c26ca4c2d04bc",
-   "anchorAt": "2026-10-21T12:00:20.000Z",
-   "item": {
-    "id": "sha256:856c26ca4c2d04bc",
-    "title": "Mistral×NVIDIA：用加速计算推进工业工程与物理 AI 工作流",
-    "summary": "Mistral 官方称与 NVIDIA 合作打造工业工程 AI 原生工作流。",
-    "reason": "Mistral×NVIDIA 推进工业工程物理 AI 工作流",
-    "source": {
-     "name": "Mistral AI News"
-    },
-    "publishedAt": "2026-10-21T12:00:20.000Z",
-    "timelineAt": "2026-10-21T12:00:20.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-21-mistral-nvidia-industrial-ai",
-    "originalUrl": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/"
-   },
-   "group": {
-    "factId": "fact-2026-10-21-mistral-nvidia-industrial-ai",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:856c26ca4c2d04bc"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-6.json",
@@ -527,5 +528,5 @@
  "dayCounts": {},
  "page": 5,
  "pageCount": 6,
- "total": 111
+ "total": 115
 }

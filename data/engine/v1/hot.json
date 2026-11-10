@@ -1,90 +1,145 @@
 {
-  "computedAt": "2026-11-10T11:45:00.000Z",
-  "windowHours": 48,
-  "entries": [
+ "computedAt": "2026-11-10T17:15:00.000Z",
+ "windowHours": 48,
+ "entries": [
+  {
+   "rank": 1,
+   "story": {
+    "publicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
+    "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2"
+   },
+   "heat": 44.7,
+   "trend": "flat",
+   "trendPct": -8.8,
+   "badges": [],
+   "participantCount": 7,
+   "sourceCount": 7,
+   "sourceNames": [
+    "The Decoder",
+    "量子位",
+    "Latent Space",
+    "Simon Willison",
+    "TechCrunch · AI",
+    "The Verge · AI",
+    "Claude Platform Release Notes"
+   ],
+   "participants": [
     {
-      "rank": 1,
-      "story": {
-        "publicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
-        "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2"
-      },
-      "heat": 48.3,
-      "trend": "flat",
-      "trendPct": 7.8,
-      "badges": [],
-      "participantCount": 7,
-      "sourceCount": 7,
-      "sourceNames": [
-        "量子位",
-        "Latent Space",
-        "Simon Willison",
-        "The Decoder",
-        "TechCrunch · AI",
-        "The Verge · AI",
-        "Claude Platform Release Notes"
-      ],
-      "participants": [
-        {
-          "name": "Claude Platform Release Notes",
-          "kind": "editorial"
-        },
-        {
-          "name": "量子位",
-          "kind": "editorial"
-        },
-        {
-          "name": "Latent Space",
-          "kind": "editorial"
-        },
-        {
-          "name": "Simon Willison",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Decoder",
-          "kind": "editorial"
-        },
-        {
-          "name": "TechCrunch · AI",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Verge · AI",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        7.3,
-        7.1,
-        6.9,
-        6.7,
-        6.5,
-        6.3,
-        6.1,
-        5.9,
-        15.8,
-        25.2,
-        24.4,
-        33.5,
-        42.3,
-        51.1,
-        49.7,
-        48.3,
-        46.9,
-        45.5,
-        44.2,
-        44.5,
-        53.1,
-        53.8,
-        52.2,
-        50.8,
-        49.3
-      ],
-      "summary": null,
-      "latest": null,
-      "cover": null,
-      "rankDelta": 0,
-      "heatDeltaPct": null
+     "name": "Claude Platform Release Notes",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "量子位",
+     "kind": "editorial"
+    },
+    {
+     "name": "Latent Space",
+     "kind": "editorial"
+    },
+    {
+     "name": "Simon Willison",
+     "kind": "editorial"
+    },
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
     }
-  ]
+   ],
+   "spark": [
+    6.1,
+    5.9,
+    15.8,
+    25.2,
+    24.4,
+    33.5,
+    42.3,
+    51.1,
+    49.7,
+    48.3,
+    46.9,
+    45.5,
+    44.2,
+    44.5,
+    53.1,
+    53.8,
+    52.2,
+    50.8,
+    49.3,
+    47.9,
+    46.5,
+    45.2,
+    47.7,
+    46.3,
+    45.0
+   ],
+   "summary": null,
+   "latest": "The Decoder 报道 Claude Fable 5.2 在 Remote Labor Index 上约能以专业质量完成 41.3% 的真实自由职业任务（一年前最高约 2.5%）。",
+   "cover": null
+  },
+  {
+   "rank": 2,
+   "story": {
+    "publicId": "2026-10-28-deepmind-gemini-4-carbon",
+    "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升"
+   },
+   "heat": 19.3,
+   "trend": "new",
+   "trendPct": null,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "Google DeepMind Blog",
+    "The Verge · AI"
+   ],
+   "participants": [
+    {
+     "name": "Google DeepMind Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    10.0,
+    19.4
+   ],
+   "summary": null,
+   "latest": "DeepMind 宣布 Gemini 4 Carbon 现已全面开放；The Verge 报道面向公众推出，并提到一项智能体 swarm 功能。",
+   "cover": null
+  }
+ ]
 }

@@ -6,6 +6,119 @@
  },
  "cards": [
   {
+   "key": "sha256:23c4f130369cb972",
+   "anchorAt": "2026-11-03T17:01:49.000Z",
+   "item": {
+    "id": "sha256:23c4f130369cb972",
+    "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
+    "summary": "DeepMind 官方：Antigravity + Cheminformatics Skills，约 1 小时检索/分析数千化合物并提刚性大环设计。",
+    "reason": "DeepMind：Antigravity 化学信息学技能加速药物发现",
+    "source": {
+     "name": "Google DeepMind Blog"
+    },
+    "publishedAt": "2026-11-03T17:01:49.000Z",
+    "timelineAt": "2026-11-03T17:01:49.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-04-deepmind-antigravity-cheminformatics",
+    "originalUrl": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/"
+   },
+   "group": {
+    "factId": "fact-2026-11-04-deepmind-antigravity-cheminformatics",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:23c4f130369cb972"
+    ]
+   }
+  },
+  {
+   "key": "sha256:bca108e4c77bd86b",
+   "anchorAt": "2026-11-02T18:00:00.000Z",
+   "item": {
+    "id": "sha256:bca108e4c77bd86b",
+    "title": "OpenAI：大幅提高安全漏洞赏金，最高 $172,000",
+    "summary": "OpenAI 官方：中高危奖励中位数超四倍；核心产品危急最高 3 万，卓越危急加奖励可达 $172,000；并推质量/忠诚乘数。",
+    "reason": "OpenAI：漏洞赏金中高危翻倍，卓越危急最高约 $172,000",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-11-02T18:00:00.000Z",
+    "timelineAt": "2026-11-02T18:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-03-openai-bug-bounty-bigger-rewards",
+    "originalUrl": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties"
+   },
+   "group": {
+    "factId": "fact-2026-11-03-openai-bug-bounty-bigger-rewards",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:bca108e4c77bd86b"
+    ]
+   }
+  },
+  {
+   "key": "sha256:277870ffc8d71544",
+   "anchorAt": "2026-11-02T15:30:00.000Z",
+   "item": {
+    "id": "sha256:277870ffc8d71544",
+    "title": "OpenAI：Scaling Git at OpenAI（Pando）",
+    "summary": "OpenAI 官方：为 Codex 级开发规模构建 Git 兼容后端 Pando。",
+    "reason": "OpenAI：Pando 扩展 Git，支撑 Codex 级开发规模",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-11-02T15:30:00.000Z",
+    "timelineAt": "2026-11-02T15:30:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-03-openai-scaling-git-at-openai",
+    "originalUrl": "https://openai.com/index/scaling-git-at-openai"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:5d33ed0c66ace544",
+   "anchorAt": "2026-11-02T15:00:00.000Z",
+   "item": {
+    "id": "sha256:5d33ed0c66ace544",
+    "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网",
+    "summary": null,
+    "reason": "OpenAI：Grid Protectors 让计算园区可减载保电",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-11-02T15:00:00.000Z",
+    "timelineAt": "2026-11-02T15:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-02-openai-grid-protectors-program",
+    "originalUrl": "https://openai.com/index/grid-protectors-program"
+   },
+   "group": {
+    "factId": "fact-2026-11-02-openai-grid-protectors-program",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:5d33ed0c66ace544"
+    ]
+   }
+  },
+  {
    "key": "sha256:5a014341bc3fc0f1",
    "anchorAt": "2026-11-02T09:00:00.000Z",
    "item": {
@@ -429,114 +542,6 @@
     "originalUrl": "https://openai.com/index/how-we-detect-frontier-model-misalignment"
    },
    "group": null
-  },
-  {
-   "key": "sha256:85f94c0fe8f02a81",
-   "anchorAt": "2026-10-29T00:00:00.000Z",
-   "item": {
-    "id": "sha256:85f94c0fe8f02a81",
-    "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 954%",
-    "summary": "OpenAI 客户案例营销；未过闸。",
-    "reason": "OpenAI：Credit Saison 企业试点称 ROI 达 954%",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-29T00:00:00.000Z",
-    "timelineAt": "2026-10-29T00:00:00.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-31-openai-credit-saison-roi",
-    "originalUrl": "https://openai.com/index/credit-saison"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:3801bfeec8403796",
-   "anchorAt": "2026-10-28T21:58:32.000Z",
-   "item": {
-    "id": "sha256:3801bfeec8403796",
-    "title": "微软首次披露 Azure 季度营收约 33.2 亿美元",
-    "summary": null,
-    "reason": "微软首次公布 Azure 单季美元营收约 33.2 亿",
-    "source": {
-     "name": "TechCrunch · AI"
-    },
-    "publishedAt": "2026-10-28T21:58:32.000Z",
-    "timelineAt": "2026-10-28T21:58:32.000Z",
-    "category": "industry",
-    "tags": [
-     "title_fix_grounding"
-    ],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-28-microsoft-fy27-q1-earnings",
-    "originalUrl": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/"
-   },
-   "group": {
-    "factId": "fact-2026-10-28-microsoft-fy27-q1-earnings",
-    "additionalSourceCount": 1,
-    "reportCount": 4,
-    "memberIds": [
-     "sha256:3801bfeec8403796"
-    ]
-   }
-  },
-  {
-   "key": "sha256:ab7da4b3ce3cc5a6",
-   "anchorAt": "2026-10-28T17:39:04.000Z",
-   "item": {
-    "id": "sha256:ab7da4b3ce3cc5a6",
-    "title": "Baseten：优化部署 Qwen3-ASR，批转写吞吐约升 7 倍",
-    "summary": null,
-    "reason": "Baseten 优化开源 Qwen3-ASR 批转写，吞吐约升 7 倍",
-    "source": {
-     "name": "Baseten Blog"
-    },
-    "publishedAt": "2026-10-28T17:39:04.000Z",
-    "timelineAt": "2026-10-28T17:39:04.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-28-baseten-qwen3-asr-batch",
-    "originalUrl": "https://www.baseten.co/blog/fastest-lowest-cost-qwen3-asr-batch-transcription/"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:3e32bae570ff21ee",
-   "anchorAt": "2026-10-28T17:00:58.000Z",
-   "item": {
-    "id": "sha256:3e32bae570ff21ee",
-    "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
-    "summary": null,
-    "reason": "DeepMind 发布 Gemini 4 Carbon，网安与长程编码领先",
-    "source": {
-     "name": "Google DeepMind Blog"
-    },
-    "publishedAt": "2026-10-28T17:00:58.000Z",
-    "timelineAt": "2026-10-28T17:00:58.000Z",
-    "category": "model",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-28-deepmind-gemini-4-carbon",
-    "originalUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/"
-   },
-   "group": {
-    "factId": "fact-2026-10-28-deepmind-gemini-4-carbon",
-    "additionalSourceCount": 4,
-    "reportCount": 5,
-    "memberIds": [
-     "sha256:3e32bae570ff21ee"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-3.json",
@@ -544,5 +549,5 @@
  "dayCounts": {},
  "page": 2,
  "pageCount": 6,
- "total": 111
+ "total": 115
 }

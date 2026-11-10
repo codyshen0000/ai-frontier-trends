@@ -6,6 +6,98 @@
  },
  "cards": [
   {
+   "key": "sha256:5cd7ff8934485154",
+   "anchorAt": "2026-11-10T15:00:00.000Z",
+   "item": {
+    "id": "sha256:5cd7ff8934485154",
+    "title": "NVIDIA 宣布 Kubernetes Engine（NVKE），用于在 GPU 基础设施上管理集群",
+    "summary": "NVIDIA 技术博客宣布推出 NVIDIA Kubernetes Engine（NVKE），以及一个配套开源项目，用于在 GPU 基础设施上构建和运营托管 Kubernetes 服务。",
+    "reason": "NVIDIA 宣布 Kubernetes Engine（NVKE）",
+    "source": {
+     "name": "NVIDIA Technical Blog"
+    },
+    "publishedAt": "2026-11-10T15:00:00.000Z",
+    "timelineAt": "2026-11-10T15:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-10-nvidia-kubernetes-engine",
+    "originalUrl": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:25d05ca668539a66",
+   "anchorAt": "2026-11-10T15:00:00.000Z",
+   "item": {
+    "id": "sha256:25d05ca668539a66",
+    "title": "NVIDIA 发布开源组件 Snapshot，可在数秒内启动或恢复 GPU 工作负载",
+    "summary": "NVIDIA 技术博客宣布推出 NVIDIA Snapshot，称这是 DSX AI Factory Platform 的新开源组件，让已初始化的 GPU 工作负载可复用，并能在数秒内启动或恢复。",
+    "reason": "NVIDIA 发布开源 Snapshot，可秒级恢复 GPU 负载",
+    "source": {
+     "name": "NVIDIA Technical Blog"
+    },
+    "publishedAt": "2026-11-10T15:00:00.000Z",
+    "timelineAt": "2026-11-10T15:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-10-nvidia-snapshot-dsx",
+    "originalUrl": "https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:0e9fb0eb84f13acf",
+   "anchorAt": "2026-11-10T12:02:28.000Z",
+   "item": {
+    "id": "sha256:0e9fb0eb84f13acf",
+    "title": "DeepMind 发布 AlphaProof Code：用 Lean 验证复杂软件",
+    "summary": "DeepMind 官方博客宣布推出 AlphaProof Code，称其智能体用 Lean 写出证明，用于校验 Signal 的核心加密。",
+    "reason": "DeepMind 发布 AlphaProof Code，用 Lean 验证软件",
+    "source": {
+     "name": "Google DeepMind Blog"
+    },
+    "publishedAt": "2026-11-10T12:02:28.000Z",
+    "timelineAt": "2026-11-10T12:02:28.000Z",
+    "category": "model",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-10-alphaproof-code",
+    "originalUrl": "https://deepmind.google/blog/introducing-alphaproof-code/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:6b6709b612e5913e",
+   "anchorAt": "2026-11-09T19:51:47.000Z",
+   "item": {
+    "id": "sha256:6b6709b612e5913e",
+    "title": "DeepMind 发布 Gemini Robotics 2.5：称是其最强视觉-语言-动作模型",
+    "summary": "DeepMind 官方博客宣布 Gemini Robotics 2.5，称这是其最强的视觉-语言-动作模型，可提升机器人的灵巧性、可靠性与安全性。",
+    "reason": "DeepMind 发布 Gemini Robotics 2.5",
+    "source": {
+     "name": "Google DeepMind Blog"
+    },
+    "publishedAt": "2026-11-09T19:51:47.000Z",
+    "timelineAt": "2026-11-09T19:51:47.000Z",
+    "category": "model",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-10-deepmind-gemini-robotics-2-5",
+    "originalUrl": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:4182359e79e632d3",
    "anchorAt": "2026-11-09T00:00:00.000Z",
    "item": {
@@ -29,7 +121,7 @@
    "group": {
     "factId": "fact-2026-11-10-anthropic-claude-fable-mythos-5-2",
     "additionalSourceCount": 6,
-    "reportCount": 9,
+    "reportCount": 10,
     "memberIds": [
      "sha256:4182359e79e632d3"
     ]
@@ -449,119 +541,6 @@
      "sha256:295354ff422b0d4d"
     ]
    }
-  },
-  {
-   "key": "sha256:23c4f130369cb972",
-   "anchorAt": "2026-11-03T17:01:49.000Z",
-   "item": {
-    "id": "sha256:23c4f130369cb972",
-    "title": "DeepMind：Google Antigravity 化学信息学智能体技能",
-    "summary": "DeepMind 官方：Antigravity + Cheminformatics Skills，约 1 小时检索/分析数千化合物并提刚性大环设计。",
-    "reason": "DeepMind：Antigravity 化学信息学技能加速药物发现",
-    "source": {
-     "name": "Google DeepMind Blog"
-    },
-    "publishedAt": "2026-11-03T17:01:49.000Z",
-    "timelineAt": "2026-11-03T17:01:49.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-11-04-deepmind-antigravity-cheminformatics",
-    "originalUrl": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/"
-   },
-   "group": {
-    "factId": "fact-2026-11-04-deepmind-antigravity-cheminformatics",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:23c4f130369cb972"
-    ]
-   }
-  },
-  {
-   "key": "sha256:bca108e4c77bd86b",
-   "anchorAt": "2026-11-02T18:00:00.000Z",
-   "item": {
-    "id": "sha256:bca108e4c77bd86b",
-    "title": "OpenAI：大幅提高安全漏洞赏金，最高 $172,000",
-    "summary": "OpenAI 官方：中高危奖励中位数超四倍；核心产品危急最高 3 万，卓越危急加奖励可达 $172,000；并推质量/忠诚乘数。",
-    "reason": "OpenAI：漏洞赏金中高危翻倍，卓越危急最高约 $172,000",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-11-02T18:00:00.000Z",
-    "timelineAt": "2026-11-02T18:00:00.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-11-03-openai-bug-bounty-bigger-rewards",
-    "originalUrl": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties"
-   },
-   "group": {
-    "factId": "fact-2026-11-03-openai-bug-bounty-bigger-rewards",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:bca108e4c77bd86b"
-    ]
-   }
-  },
-  {
-   "key": "sha256:277870ffc8d71544",
-   "anchorAt": "2026-11-02T15:30:00.000Z",
-   "item": {
-    "id": "sha256:277870ffc8d71544",
-    "title": "OpenAI：Scaling Git at OpenAI（Pando）",
-    "summary": "OpenAI 官方：为 Codex 级开发规模构建 Git 兼容后端 Pando。",
-    "reason": "OpenAI：Pando 扩展 Git，支撑 Codex 级开发规模",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-11-02T15:30:00.000Z",
-    "timelineAt": "2026-11-02T15:30:00.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-11-03-openai-scaling-git-at-openai",
-    "originalUrl": "https://openai.com/index/scaling-git-at-openai"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:5d33ed0c66ace544",
-   "anchorAt": "2026-11-02T15:00:00.000Z",
-   "item": {
-    "id": "sha256:5d33ed0c66ace544",
-    "title": "OpenAI：推出 Grid Protectors，计算园区可减载保电网",
-    "summary": null,
-    "reason": "OpenAI：Grid Protectors 让计算园区可减载保电",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-11-02T15:00:00.000Z",
-    "timelineAt": "2026-11-02T15:00:00.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-11-02-openai-grid-protectors-program",
-    "originalUrl": "https://openai.com/index/grid-protectors-program"
-   },
-   "group": {
-    "factId": "fact-2026-11-02-openai-grid-protectors-program",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:5d33ed0c66ace544"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-2.json",
@@ -569,13 +548,17 @@
   {
    "rank": 1,
    "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
-   "heat": 48.3,
+   "heat": 44.7,
    "trend": "flat",
    "storyPublicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
    "itemId": "sha256:4182359e79e632d3",
    "participants": [
     {
      "name": "Claude Platform Release Notes",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
      "kind": "editorial"
     },
     {
@@ -591,10 +574,6 @@
      "kind": "editorial"
     },
     {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
      "name": "TechCrunch · AI",
      "kind": "editorial"
     },
@@ -604,9 +583,29 @@
     }
    ],
    "participantCount": 7
+  },
+  {
+   "rank": 2,
+   "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+   "heat": 19.3,
+   "trend": "new",
+   "storyPublicId": "2026-10-28-deepmind-gemini-4-carbon",
+   "itemId": "sha256:3e32bae570ff21ee",
+   "participants": [
+    {
+     "name": "Google DeepMind Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2
   }
  ],
  "dayCounts": {
+  "2026-11-10": 4,
   "2026-11-09": 1,
   "2026-11-06": 7,
   "2026-11-05": 4,
@@ -631,5 +630,5 @@
  },
  "page": 1,
  "pageCount": 6,
- "total": 111
+ "total": 115
 }

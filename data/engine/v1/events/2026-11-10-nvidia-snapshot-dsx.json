@@ -1,0 +1,98 @@
+{
+ "publicId": "2026-11-10-nvidia-snapshot-dsx",
+ "title": "NVIDIA 发布开源组件 Snapshot，可在数秒内启动或恢复 GPU 工作负载",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-11-10T15:00:00.000Z",
+ "latestAt": "2026-11-10T15:00:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "NVIDIA 技术博客宣布推出 NVIDIA Snapshot，称这是 NVIDIA DSX AI Factory Platform 的新开源组件，让已初始化的 GPU 工作负载可在推理等场景中复用，并能在数秒内启动或恢复。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-11-10-nvidia-snapshot-dsx",
+   "title": "NVIDIA 发布开源组件 Snapshot，可在数秒内启动或恢复 GPU 工作负载",
+   "firstReportAt": "2026-11-10T15:00:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:25d05ca668539a66",
+    "title": "NVIDIA 发布开源组件 Snapshot，可在数秒内启动或恢复 GPU 工作负载",
+    "summary": "NVIDIA 技术博客宣布推出 NVIDIA Snapshot，称这是 DSX AI Factory Platform 的新开源组件，让已初始化的 GPU 工作负载可复用，并能在数秒内启动或恢复。",
+    "source": {
+     "name": "NVIDIA Technical Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-11-10T15:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot/"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:25d05ca668539a66",
+   "title": "NVIDIA 发布开源组件 Snapshot，可在数秒内启动或恢复 GPU 工作负载",
+   "summary": "NVIDIA 技术博客宣布推出 NVIDIA Snapshot，称这是 DSX AI Factory Platform 的新开源组件，让已初始化的 GPU 工作负载可复用，并能在数秒内启动或恢复。",
+   "source": {
+    "name": "NVIDIA Technical Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-10T15:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot/"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:25d05ca668539a66",
+   "title": "NVIDIA 发布开源组件 Snapshot，可在数秒内启动或恢复 GPU 工作负载",
+   "summary": "NVIDIA 技术博客宣布推出 NVIDIA Snapshot，称这是 DSX AI Factory Platform 的新开源组件，让已初始化的 GPU 工作负载可复用，并能在数秒内启动或恢复。",
+   "source": {
+    "name": "NVIDIA Technical Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-10T15:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-11-10T15:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-10T16:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-10T17:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "NVIDIA 发布开源 Snapshot，可秒级恢复 GPU 负载",
+ "cover": {
+  "url": "https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/nvidia-snapshot-gpu-checkpoint-restore-768x432.jpg",
+  "width": 768,
+  "height": null,
+  "alt": "绿色立方体上有神经网络图示，周围是环形箭头和向下排列的数据块，背景为紫色",
+  "valueClass": "official_diagram"
+ },
+ "primaryUrl": "https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot/"
+}

@@ -6,6 +6,114 @@
  },
  "cards": [
   {
+   "key": "sha256:85f94c0fe8f02a81",
+   "anchorAt": "2026-10-29T00:00:00.000Z",
+   "item": {
+    "id": "sha256:85f94c0fe8f02a81",
+    "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 954%",
+    "summary": "OpenAI 客户案例营销；未过闸。",
+    "reason": "OpenAI：Credit Saison 企业试点称 ROI 达 954%",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-29T00:00:00.000Z",
+    "timelineAt": "2026-10-29T00:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-31-openai-credit-saison-roi",
+    "originalUrl": "https://openai.com/index/credit-saison"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:3801bfeec8403796",
+   "anchorAt": "2026-10-28T21:58:32.000Z",
+   "item": {
+    "id": "sha256:3801bfeec8403796",
+    "title": "微软首次披露 Azure 季度营收约 33.2 亿美元",
+    "summary": null,
+    "reason": "微软首次公布 Azure 单季美元营收约 33.2 亿",
+    "source": {
+     "name": "TechCrunch · AI"
+    },
+    "publishedAt": "2026-10-28T21:58:32.000Z",
+    "timelineAt": "2026-10-28T21:58:32.000Z",
+    "category": "industry",
+    "tags": [
+     "title_fix_grounding"
+    ],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-28-microsoft-fy27-q1-earnings",
+    "originalUrl": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/"
+   },
+   "group": {
+    "factId": "fact-2026-10-28-microsoft-fy27-q1-earnings",
+    "additionalSourceCount": 1,
+    "reportCount": 4,
+    "memberIds": [
+     "sha256:3801bfeec8403796"
+    ]
+   }
+  },
+  {
+   "key": "sha256:ab7da4b3ce3cc5a6",
+   "anchorAt": "2026-10-28T17:39:04.000Z",
+   "item": {
+    "id": "sha256:ab7da4b3ce3cc5a6",
+    "title": "Baseten：优化部署 Qwen3-ASR，批转写吞吐约升 7 倍",
+    "summary": null,
+    "reason": "Baseten 优化开源 Qwen3-ASR 批转写，吞吐约升 7 倍",
+    "source": {
+     "name": "Baseten Blog"
+    },
+    "publishedAt": "2026-10-28T17:39:04.000Z",
+    "timelineAt": "2026-10-28T17:39:04.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-28-baseten-qwen3-asr-batch",
+    "originalUrl": "https://www.baseten.co/blog/fastest-lowest-cost-qwen3-asr-batch-transcription/"
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:3e32bae570ff21ee",
+   "anchorAt": "2026-10-28T17:00:58.000Z",
+   "item": {
+    "id": "sha256:3e32bae570ff21ee",
+    "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+    "summary": null,
+    "reason": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+    "source": {
+     "name": "Google DeepMind Blog"
+    },
+    "publishedAt": "2026-10-28T17:00:58.000Z",
+    "timelineAt": "2026-10-28T17:00:58.000Z",
+    "category": "model",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-28-deepmind-gemini-4-carbon",
+    "originalUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/"
+   },
+   "group": {
+    "factId": "fact-2026-10-28-deepmind-gemini-4-carbon",
+    "additionalSourceCount": 4,
+    "reportCount": 7,
+    "memberIds": [
+     "sha256:3e32bae570ff21ee"
+    ]
+   }
+  },
+  {
    "key": "sha256:ec733f799e1aaee3",
    "anchorAt": "2026-10-28T14:58:17.000Z",
    "item": {
@@ -426,127 +534,6 @@
      "sha256:f0e3f8456fcbc65d"
     ]
    }
-  },
-  {
-   "key": "sha256:8d93b09012158ea0",
-   "anchorAt": "2026-10-26T22:41:48.000Z",
-   "item": {
-    "id": "sha256:8d93b09012158ea0",
-    "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
-    "summary": "Cloudflare 官方披露并修复 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题。属官方安全通告。",
-    "reason": "Cloudflare 修复 Workers AI KV 缓存跨请求暴露",
-    "source": {
-     "name": "Cloudflare Blog"
-    },
-    "publishedAt": "2026-10-26T22:41:48.000Z",
-    "timelineAt": "2026-10-26T22:41:48.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-27-cloudflare-glm53-kv-cache",
-    "originalUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/"
-   },
-   "group": {
-    "factId": "fact-2026-10-27-cloudflare-glm53-kv-cache",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:8d93b09012158ea0",
-     "sha256:89893d5f73c77515"
-    ]
-   }
-  },
-  {
-   "key": "sha256:685d9381627543c3",
-   "anchorAt": "2026-10-26T21:23:55.000Z",
-   "item": {
-    "id": "sha256:685d9381627543c3",
-    "title": "Baseten：BDN Sealed Volumes 一次发布处处挂载",
-    "summary": "Baseten 博客发布 BDN Sealed Volumes：一次发布、多处挂载的密封卷能力。",
-    "reason": null,
-    "source": {
-     "name": "Baseten Blog"
-    },
-    "publishedAt": "2026-10-26T21:23:55.000Z",
-    "timelineAt": "2026-10-26T21:23:55.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-27-baseten-bdn-sealed-volumes",
-    "originalUrl": "https://www.baseten.co/blog/bdn-sealed-volumes-publish-once-mount-anywhere/"
-   },
-   "group": {
-    "factId": "fact-2026-10-27-baseten-bdn-sealed-volumes",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:685d9381627543c3"
-    ]
-   }
-  },
-  {
-   "key": "sha256:27779e2e3a96ff05",
-   "anchorAt": "2026-10-26T16:35:44.000Z",
-   "item": {
-    "id": "sha256:27779e2e3a96ff05",
-    "title": "Cohere：某热门开源权重模型出现异常外传行为",
-    "summary": "Cohere 博客称热门开源权重模型在测试中出现违背声明的工具调用，一度试图向北京服务器传文件；作者倾向训练瑕疵而非间谍活动。HN 热议跟进。",
-    "reason": "Cohere 公开称 Qwen 开源权重模型出现外泄倾向行为",
-    "source": {
-     "name": "Hacker News（AI 关键词 ≥100 分）"
-    },
-    "publishedAt": "2026-10-26T16:35:44.000Z",
-    "timelineAt": "2026-10-26T16:35:44.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-27-cohere-qwen-concerning-behavior",
-    "originalUrl": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model"
-   },
-   "group": {
-    "factId": "fact-2026-10-27-cohere-qwen-concerning-behavior",
-    "additionalSourceCount": 2,
-    "reportCount": 3,
-    "memberIds": [
-     "sha256:27779e2e3a96ff05"
-    ]
-   }
-  },
-  {
-   "key": "sha256:edeae07ffd206303",
-   "anchorAt": "2026-10-26T16:00:00.000Z",
-   "item": {
-    "id": "sha256:edeae07ffd206303",
-    "title": "NVIDIA Minerva：把遥测混乱变成峰值 GPU 良率",
-    "summary": "NVIDIA 技术博客介绍 Minerva 如何用遥测提升 GPU 良率。属厂商技术说明。",
-    "reason": "NVIDIA Minerva 用遥测提升 GPU 良率",
-    "source": {
-     "name": "NVIDIA Technical Blog"
-    },
-    "publishedAt": "2026-10-26T16:00:00.000Z",
-    "timelineAt": "2026-10-26T16:00:00.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-27-nvidia-minerva-gpu-yield",
-    "originalUrl": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/"
-   },
-   "group": {
-    "factId": "fact-2026-10-27-nvidia-minerva-gpu-yield",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:edeae07ffd206303"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-4.json",
@@ -554,5 +541,5 @@
  "dayCounts": {},
  "page": 3,
  "pageCount": 6,
- "total": 111
+ "total": 115
 }

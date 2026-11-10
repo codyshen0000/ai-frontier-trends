@@ -1,0 +1,98 @@
+{
+ "publicId": "2026-11-10-nvidia-kubernetes-engine",
+ "title": "NVIDIA 宣布 Kubernetes Engine（NVKE），用于在 GPU 基础设施上管理集群",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-11-10T15:00:00.000Z",
+ "latestAt": "2026-11-10T15:00:00.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "NVIDIA 技术博客宣布推出 NVIDIA Kubernetes Engine（NVKE），以及一个配套开源项目，用于在 GPU 基础设施上构建和运营托管 Kubernetes 服务。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 1,
+  "newParticipants6h": 1,
+  "recentReports24h": 1,
+  "observationComplete": true,
+  "rank": null
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-11-10-nvidia-kubernetes-engine",
+   "title": "NVIDIA 宣布 Kubernetes Engine（NVKE），用于在 GPU 基础设施上管理集群",
+   "firstReportAt": "2026-11-10T15:00:00.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:5cd7ff8934485154",
+    "title": "NVIDIA 宣布 Kubernetes Engine（NVKE），用于在 GPU 基础设施上管理集群",
+    "summary": "NVIDIA 技术博客宣布推出 NVIDIA Kubernetes Engine（NVKE），以及一个配套开源项目，用于在 GPU 基础设施上构建和运营托管 Kubernetes 服务。",
+    "source": {
+     "name": "NVIDIA Technical Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-11-10T15:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:5cd7ff8934485154",
+   "title": "NVIDIA 宣布 Kubernetes Engine（NVKE），用于在 GPU 基础设施上管理集群",
+   "summary": "NVIDIA 技术博客宣布推出 NVIDIA Kubernetes Engine（NVKE），以及一个配套开源项目，用于在 GPU 基础设施上构建和运营托管 Kubernetes 服务。",
+   "source": {
+    "name": "NVIDIA Technical Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-10T15:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:5cd7ff8934485154",
+   "title": "NVIDIA 宣布 Kubernetes Engine（NVKE），用于在 GPU 基础设施上管理集群",
+   "summary": "NVIDIA 技术博客宣布推出 NVIDIA Kubernetes Engine（NVKE），以及一个配套开源项目，用于在 GPU 基础设施上构建和运营托管 Kubernetes 服务。",
+   "source": {
+    "name": "NVIDIA Technical Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-10T15:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-11-10T15:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-10T16:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-10T17:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "NVIDIA 宣布 Kubernetes Engine（NVKE）",
+ "cover": {
+  "url": "https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/nvke-nvkr-featured-768x432.jpg",
+  "width": 768,
+  "height": null,
+  "alt": "分层计算栈示意：上层是相互连接的 AI 模型，中间是 Kubernetes 层，下层是处理器",
+  "valueClass": "official_diagram"
+ },
+ "primaryUrl": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/"
+}
