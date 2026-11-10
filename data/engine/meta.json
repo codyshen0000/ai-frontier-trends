@@ -1,16 +1,16 @@
 {
  "site": "前沿趋势",
  "mode": "preview",
- "data_as_of": "2026-11-10T08:45:39+08:00",
- "data_as_of_label": "数据截至 2026-11-10 08:45（北京时间）",
- "generated_at": "2026-11-10T08:45:39+08:00",
+ "data_as_of": "2026-11-10T15:51:08+08:00",
+ "data_as_of_label": "数据截至 2026-11-10 15:51（北京时间）",
+ "generated_at": "2026-11-10T15:51:08+08:00",
  "today": "2026-11-10",
  "hot_rule_version": "heat-v1-48h-halflife24h (v0 port)",
  "window_hours": 48,
  "half_life_hours": 24,
  "spark_hours": 24,
  "spark_points": 25,
- "hot_candidates": 5,
+ "hot_candidates": 6,
  "passed_count": 114,
  "fill_count": 11,
  "selected_items": 125,
@@ -2424,31 +2424,73 @@
   {
    "batch_id": "2026-11-10T0423",
    "status": "ok",
-   "imported_at": "2026-11-10T08:43:44+08:00",
+   "imported_at": "2026-11-10T08:54:42+08:00",
    "rejected": 0
   },
   {
    "batch_id": "2026-11-10T0520",
    "status": "ok",
-   "imported_at": "2026-11-10T08:43:44+08:00",
+   "imported_at": "2026-11-10T08:54:42+08:00",
    "rejected": 0
   },
   {
    "batch_id": "2026-11-10T0626",
    "status": "ok",
-   "imported_at": "2026-11-10T08:43:44+08:00",
+   "imported_at": "2026-11-10T08:54:42+08:00",
    "rejected": 0
   },
   {
    "batch_id": "2026-11-10T0726",
    "status": "ok",
-   "imported_at": "2026-11-10T08:43:44+08:00",
+   "imported_at": "2026-11-10T08:54:42+08:00",
    "rejected": 0
   },
   {
    "batch_id": "2026-11-10T0822",
    "status": "ok",
-   "imported_at": "2026-11-10T08:43:44+08:00",
+   "imported_at": "2026-11-10T08:54:42+08:00",
+   "rejected": 0
+  },
+  {
+   "batch_id": "2026-11-10T0924",
+   "status": "ok",
+   "imported_at": "2026-11-10T12:54:17+08:00",
+   "rejected": 0
+  },
+  {
+   "batch_id": "2026-11-10T1018",
+   "status": "ok",
+   "imported_at": "2026-11-10T12:54:18+08:00",
+   "rejected": 0
+  },
+  {
+   "batch_id": "2026-11-10T1119",
+   "status": "ok",
+   "imported_at": "2026-11-10T12:54:18+08:00",
+   "rejected": 0
+  },
+  {
+   "batch_id": "2026-11-10T1220",
+   "status": "ok",
+   "imported_at": "2026-11-10T12:54:18+08:00",
+   "rejected": 0
+  },
+  {
+   "batch_id": "2026-11-10T1327",
+   "status": "ok",
+   "imported_at": "2026-11-10T15:51:07+08:00",
+   "rejected": 0
+  },
+  {
+   "batch_id": "2026-11-10T1427",
+   "status": "ok",
+   "imported_at": "2026-11-10T15:51:08+08:00",
+   "rejected": 0
+  },
+  {
+   "batch_id": "2026-11-10T1529",
+   "status": "ok",
+   "imported_at": "2026-11-10T15:51:08+08:00",
    "rejected": 0
   }
  ],

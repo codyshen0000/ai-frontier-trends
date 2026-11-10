@@ -21,7 +21,7 @@
    "firstParty": true,
    "publishedAt": "2026-11-09T00:00:00.000Z",
    "available": true,
-   "otherSources": 3
+   "otherSources": 6
   }
  ],
  "sections": [
@@ -39,7 +39,7 @@
      "firstParty": true,
      "publishedAt": "2026-11-09T00:00:00.000Z",
      "available": true,
-     "otherSources": 3
+     "otherSources": 6
     }
    ]
   }
@@ -99,7 +99,7 @@
  },
  "metrics": {
   "totalEvents": 1,
-  "sourcesCount": 4,
+  "sourcesCount": 7,
   "firstPartyEvents": 1,
   "modelsReleased": 1,
   "mainCardNote": "今日仅 1 条达收录标准"
