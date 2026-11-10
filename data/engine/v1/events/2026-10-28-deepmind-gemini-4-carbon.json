@@ -2,20 +2,20 @@
  "publicId": "2026-10-28-deepmind-gemini-4-carbon",
  "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
  "status": "active",
- "reportCount": 4,
+ "reportCount": 5,
  "sourceCount": 3,
  "firstReportAt": "2026-10-28T17:00:58.000Z",
- "latestAt": "2026-11-10T16:03:47.000Z",
+ "latestAt": "2026-11-10T18:19:13.000Z",
  "digest": null,
  "digestUpdatedAt": null,
  "summary": null,
  "excerpt": null,
- "latest": "DeepMind 宣布 Gemini 4 Carbon 现已全面开放；The Verge 报道面向公众推出，并提到一项智能体 swarm 功能。",
+ "latest": "DeepMind 宣布 Gemini 4 Carbon 现已全面开放；The Verge 报道面向公众推出，并提到一项智能体 swarm 功能。The Decoder 随后报道称，该模型在约两周测试后全面开放，多项基准领先，部分评测超过 Claude Fable 5.2，且单次任务成本不到一半；并称 Google 正在预览通过 /swarm 协调的智能体团队。",
  "latestReport": null,
  "whyHot": {
-  "participants48h": 2,
-  "newParticipants6h": 2,
-  "recentReports24h": 2,
+  "participants48h": 3,
+  "newParticipants6h": 3,
+  "recentReports24h": 3,
   "observationComplete": true,
   "rank": 2
  },
@@ -24,7 +24,7 @@
    "factId": "fact-2026-10-28-deepmind-gemini-4-carbon",
    "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
    "firstReportAt": "2026-10-28T17:00:58.000Z",
-   "reportCount": 4,
+   "reportCount": 5,
    "representative": {
     "id": "sha256:3e32bae570ff21ee",
     "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
@@ -66,6 +66,18 @@
   }
  ],
  "timeline": [
+  {
+   "id": "sha256:8c4ca9fd50b0aa50",
+   "title": "跟进：报道称 Gemini 4 Carbon 全面开放，部分评测超过 Fable 5.2，并预览 /swarm",
+   "summary": null,
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-10T18:19:13.000Z",
+   "selected": false,
+   "originalUrl": "https://the-decoder.com/gemini-4-carbon-arrives-just-in-time-to-feel-like-yesterdays-news-in-the-fastest-model-cycle-yet/"
+  },
   {
    "id": "sha256:55cb0588b3e8436e",
    "title": "跟进：DeepMind 宣布 Gemini 4 Carbon 现已全面开放",
@@ -125,6 +137,21 @@
    "hour": "2026-11-10T17:00:00.000Z",
    "heat": 19.4,
    "participants": 2
+  },
+  {
+   "hour": "2026-11-10T18:00:00.000Z",
+   "heat": 18.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-10T19:00:00.000Z",
+   "heat": 28.2,
+   "participants": 3
+  },
+  {
+   "hour": "2026-11-10T20:00:00.000Z",
+   "heat": 27.4,
+   "participants": 3
   }
  ],
  "related": [],

@@ -6,6 +6,36 @@
  },
  "cards": [
   {
+   "key": "sha256:295354ff422b0d4d",
+   "anchorAt": "2026-11-04T00:00:00.000Z",
+   "item": {
+    "id": "sha256:295354ff422b0d4d",
+    "title": "OpenAI：推出 Images 2.6（更快生成、GIF、精细编辑与 API 控制）",
+    "summary": "OpenAI 官方：Images 2.6 带来更快生图、GIF 创作、更精确编辑，并在 ChatGPT/Codex/API 提供新控制项。",
+    "reason": "OpenAI：Images 2.6 带来 GIF、更快生图与 API 控制",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-11-04T00:00:00.000Z",
+    "timelineAt": "2026-11-04T00:00:00.000Z",
+    "category": "product",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-05-chatgpt-animated-gifs",
+    "originalUrl": "https://openai.com/index/introducing-images-2-6"
+   },
+   "group": {
+    "factId": "fact-2026-11-05-chatgpt-animated-gifs",
+    "additionalSourceCount": 3,
+    "reportCount": 4,
+    "memberIds": [
+     "sha256:295354ff422b0d4d"
+    ]
+   }
+  },
+  {
    "key": "sha256:23c4f130369cb972",
    "anchorAt": "2026-11-03T17:01:49.000Z",
    "item": {
@@ -519,29 +549,6 @@
      "sha256:5a25565ab71a8d06"
     ]
    }
-  },
-  {
-   "key": "sha256:0f01adb2acab0a67",
-   "anchorAt": "2026-10-29T09:00:00.000Z",
-   "item": {
-    "id": "sha256:0f01adb2acab0a67",
-    "title": "OpenAI：如何监测前沿模型错位",
-    "summary": "OpenAI 介绍分层监测，用于发现前沿模型错位与未授权智能体行为，以便在事件升级前介入。官方安全运营说明。",
-    "reason": "OpenAI：分层监测前沿模型错位与未授权智能体行为",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-29T09:00:00.000Z",
-    "timelineAt": "2026-10-29T09:00:00.000Z",
-    "category": "paper",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-30-openai-frontier-misalignment-detection",
-    "originalUrl": "https://openai.com/index/how-we-detect-frontier-model-misalignment"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-3.json",
@@ -549,5 +556,5 @@
  "dayCounts": {},
  "page": 2,
  "pageCount": 6,
- "total": 115
+ "total": 116
 }

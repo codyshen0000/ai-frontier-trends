@@ -82,6 +82,21 @@
    "hour": "2026-11-10T17:00:00.000Z",
    "heat": 9.4,
    "participants": 1
+  },
+  {
+   "hour": "2026-11-10T18:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-10T19:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-10T20:00:00.000Z",
+   "heat": 8.7,
+   "participants": 1
   }
  ],
  "related": [],

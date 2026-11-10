@@ -1,0 +1,155 @@
+{
+ "publicId": "2026-11-11-openai-chatgpt-businesses",
+ "title": "OpenAI 在 ChatGPT 中推出 Businesses",
+ "status": "active",
+ "reportCount": 3,
+ "sourceCount": 3,
+ "firstReportAt": "2026-11-10T10:00:00.000Z",
+ "latestAt": "2026-11-10T18:49:52.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "OpenAI 官方宣布在 ChatGPT 推出 Businesses：商家可以管理自己的商业信息、查看曝光情况，并把兴趣转化成行动。The Verge 报道将向符合条件的美国电商和在线服务企业提供已认证的「Business Agents」，用户可与代表品牌的智能体对话（例如比价）；该功能作为当天公布的一套商业功能的一部分进入测试。TechCrunch 报道称同时推出商业资料（business profiles），意在让 ChatGPT 更接近发现引擎。这是 ChatGPT 的商业产品功能，不是新模型发布。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 3,
+  "newParticipants6h": 2,
+  "recentReports24h": 3,
+  "observationComplete": true,
+  "rank": 3
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-11-11-openai-chatgpt-businesses",
+   "title": "OpenAI 在 ChatGPT 中推出 Businesses",
+   "firstReportAt": "2026-11-10T10:00:00.000Z",
+   "reportCount": 3,
+   "representative": {
+    "id": "sha256:991ad48e8559b2fe",
+    "title": "OpenAI 在 ChatGPT 中推出 Businesses",
+    "summary": "OpenAI 官方宣布在 ChatGPT 推出 Businesses：商家可以管理商业信息、查看曝光，并把兴趣转化成行动。",
+    "source": {
+     "name": "OpenAI News",
+     "firstParty": true
+    },
+    "publishedAt": "2026-11-10T10:00:00.000Z",
+    "selected": true,
+    "originalUrl": "https://openai.com/index/introducing-businesses-chatgpt"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:991ad48e8559b2fe",
+   "title": "OpenAI 在 ChatGPT 中推出 Businesses",
+   "summary": "OpenAI 官方宣布在 ChatGPT 推出 Businesses：商家可以管理商业信息、查看曝光，并把兴趣转化成行动。",
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-10T10:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/introducing-businesses-chatgpt"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:7e74320883f414fb",
+   "title": "跟进：报道称 OpenAI 推出商业资料，想让 ChatGPT 更接近发现引擎",
+   "summary": "TechCrunch：OpenAI 推出新的商业资料等功能，意在让 ChatGPT 成为更完整的消费发现引擎，并让商家更好地参与其中。",
+   "source": {
+    "name": "TechCrunch · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-10T18:49:52.000Z",
+   "selected": false,
+   "originalUrl": "https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google/"
+  },
+  {
+   "id": "sha256:3ec8add99452b340",
+   "title": "报道：ChatGPT 将推出认证的品牌 Business Agents",
+   "summary": "The Verge：ChatGPT 将向符合条件的美国电商和在线服务企业提供已认证的「Business Agents」，用户可与代表品牌的智能体对话，例如比价；该功能作为当天公布的一套商业功能的一部分进入测试。",
+   "source": {
+    "name": "The Verge · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-10T18:00:00.000Z",
+   "selected": false,
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub"
+  },
+  {
+   "id": "sha256:991ad48e8559b2fe",
+   "title": "OpenAI 在 ChatGPT 中推出 Businesses",
+   "summary": "OpenAI 官方宣布在 ChatGPT 推出 Businesses：商家可以管理商业信息、查看曝光，并把兴趣转化成行动。",
+   "source": {
+    "name": "OpenAI News",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-10T10:00:00.000Z",
+   "selected": true,
+   "originalUrl": "https://openai.com/index/introducing-businesses-chatgpt"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-11-10T10:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-10T11:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-10T12:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-10T13:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-10T14:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-10T15:00:00.000Z",
+   "heat": 8.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-10T16:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-10T17:00:00.000Z",
+   "heat": 8.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-10T18:00:00.000Z",
+   "heat": 17.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-10T19:00:00.000Z",
+   "heat": 27.4,
+   "participants": 3
+  },
+  {
+   "hour": "2026-11-10T20:00:00.000Z",
+   "heat": 26.6,
+   "participants": 3
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "OpenAI 在 ChatGPT 推出 Businesses 与智能体",
+ "primaryUrl": "https://openai.com/index/introducing-businesses-chatgpt"
+}

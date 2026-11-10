@@ -6,6 +6,29 @@
  },
  "cards": [
   {
+   "key": "sha256:5d20b75fc1534a89",
+   "anchorAt": "2026-10-23T00:00:00.000Z",
+   "item": {
+    "id": "sha256:5d20b75fc1534a89",
+    "title": "vLLM：GLM-5.3 在 16×H200 上用 PCP/DCP 与 Hybrid HiSparse",
+    "summary": "vLLM 官方 Part2：PCP/DCP 与 Hybrid HiSparse 服务百万上下文 GLM-5.3。",
+    "reason": "vLLM 在 16×H200 上用 PCP/DCP 服务 GLM-5.3 百万上",
+    "source": {
+     "name": "vLLM Blog"
+    },
+    "publishedAt": "2026-10-23T00:00:00.000Z",
+    "timelineAt": "2026-10-23T00:00:00.000Z",
+    "category": "tutorial",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-24-vllm-glm53-opt-part2",
+    "originalUrl": "https://vllm.ai/blog/2026-10-23-glm53-part2-pcp-dcp-hisparse"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:50cb4eba8a3e4759",
    "anchorAt": "2026-10-23T00:00:00.000Z",
    "item": {
@@ -498,29 +521,6 @@
     "originalUrl": "https://www.wiz.io/blog/litellm-compromised-steals-credentials"
    },
    "group": null
-  },
-  {
-   "key": "sha256:b1215e1aefc04c61",
-   "anchorAt": "2026-10-21T13:00:00.000Z",
-   "item": {
-    "id": "sha256:b1215e1aefc04c61",
-    "title": "OpenAI 详解 ChatGPT 广告栈，并扩至 26 国、广告主破十万",
-    "summary": "ChatGPT Ads 扩展到 26 国，广告主称逾 10 万。",
-    "reason": "OpenAI 详解 ChatGPT 广告栈并扩至 26 国",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-21T13:00:00.000Z",
-    "timelineAt": "2026-10-21T13:00:00.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-21-chatgpt-ads-stack-expansion",
-    "originalUrl": "https://openai.com/index/chatgpt-ads-expands-26-new-countries"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-6.json",
@@ -528,5 +528,5 @@
  "dayCounts": {},
  "page": 5,
  "pageCount": 6,
- "total": 115
+ "total": 116
 }

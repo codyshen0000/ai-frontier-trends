@@ -1,5 +1,5 @@
 {
- "computedAt": "2026-11-10T17:15:00.000Z",
+ "computedAt": "2026-11-10T20:05:00.000Z",
  "windowHours": 48,
  "entries": [
   {
@@ -8,9 +8,9 @@
     "publicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
     "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2"
    },
-   "heat": 44.7,
+   "heat": 41.2,
    "trend": "flat",
-   "trendPct": -8.8,
+   "trendPct": -8.6,
    "badges": [],
    "participantCount": 7,
    "sourceCount": 7,
@@ -54,9 +54,6 @@
     }
    ],
    "spark": [
-    6.1,
-    5.9,
-    15.8,
     25.2,
     24.4,
     33.5,
@@ -78,7 +75,10 @@
     45.2,
     47.7,
     46.3,
-    45.0
+    45.0,
+    43.7,
+    42.5,
+    41.3
    ],
    "summary": null,
    "latest": "The Decoder 报道 Claude Fable 5.2 在 Remote Labor Index 上约能以专业质量完成 41.3% 的真实自由职业任务（一年前最高约 2.5%）。",
@@ -90,19 +90,26 @@
     "publicId": "2026-10-28-deepmind-gemini-4-carbon",
     "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升"
    },
-   "heat": 19.3,
+   "heat": 27.3,
    "trend": "new",
    "trendPct": null,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
+   "badges": [
+    "surge"
+   ],
+   "participantCount": 3,
+   "sourceCount": 3,
    "sourceNames": [
+    "The Decoder",
     "Google DeepMind Blog",
     "The Verge · AI"
    ],
    "participants": [
     {
      "name": "Google DeepMind Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
      "kind": "editorial"
     },
     {
@@ -131,14 +138,137 @@
     null,
     null,
     null,
+    10.0,
+    19.4,
+    18.9,
+    28.2,
+    27.4
+   ],
+   "summary": null,
+   "latest": "DeepMind 宣布 Gemini 4 Carbon 现已全面开放；The Verge 报道面向公众推出，并提到一项智能体 swarm 功能。The Decoder 随后报道称，该模型在约两周测试后全面开放，多项基准领先，部分评测超过 Claude Fable 5.2，且单次任务成本不到一半；并称 Google 正在预览通过 /swarm 协调的智能体团队。",
+   "cover": null
+  },
+  {
+   "rank": 3,
+   "story": {
+    "publicId": "2026-11-11-openai-chatgpt-businesses",
+    "title": "OpenAI 在 ChatGPT 中推出 Businesses"
+   },
+   "heat": 26.5,
+   "trend": "up",
+   "trendPct": 197.8,
+   "badges": [
+    "rising"
+   ],
+   "participantCount": 3,
+   "sourceCount": 3,
+   "sourceNames": [
+    "TechCrunch · AI",
+    "The Verge · AI",
+    "OpenAI News"
+   ],
+   "participants": [
+    {
+     "name": "OpenAI News",
+     "kind": "editorial"
+    },
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
     null,
     null,
     null,
     10.0,
-    19.4
+    9.7,
+    9.4,
+    9.2,
+    8.9,
+    8.7,
+    8.4,
+    8.2,
+    17.9,
+    27.4,
+    26.6
+   ],
+   "summary": "OpenAI 官方宣布在 ChatGPT 推出 Businesses：商家可以管理自己的商业信息、查看曝光情况，并把兴趣转化成行动。The Verge 报道将向符合条件的美国电商和在线服务企业提供已认证的「Business Agents」，用户可与代表品牌的智能体对话（例如比价）；该功能作为当天公布的一套商业功能的一部分进入测试。TechCrunch 报道称同时推出商业资料（business profiles），意在让 ChatGPT 更接近发现引擎。这是 ChatGPT 的商业产品功能，不是新模型发布。",
+   "latest": null,
+   "cover": null
+  },
+  {
+   "rank": 4,
+   "story": {
+    "publicId": "2026-11-10-deepmind-gemini-robotics-2-5",
+    "title": "DeepMind 发布 Gemini Robotics 2.5：称是其最强视觉-语言-动作模型"
+   },
+   "heat": 14.2,
+   "trend": "up",
+   "trendPct": 140.7,
+   "badges": [
+    "rising"
+   ],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "The Decoder",
+    "Google DeepMind Blog"
+   ],
+   "participants": [
+    {
+     "name": "Google DeepMind Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    10.0,
+    9.7,
+    9.4,
+    9.1,
+    8.9,
+    8.6,
+    8.4,
+    8.1,
+    7.9,
+    7.7,
+    7.5,
+    7.2,
+    7.0,
+    6.8,
+    6.6,
+    6.5,
+    6.3,
+    6.1,
+    5.9,
+    5.8,
+    5.6,
+    5.4,
+    15.0,
+    14.6,
+    14.2
    ],
    "summary": null,
-   "latest": "DeepMind 宣布 Gemini 4 Carbon 现已全面开放；The Verge 报道面向公众推出，并提到一项智能体 swarm 功能。",
+   "latest": "The Decoder 报道称，Gemini Robotics 2.5 已与 Apptronik 在匈牙利和德国的奔驰产线上试点，人形机器人 Apollo 2 分拣金属零件的准确率约 96%。",
    "cover": null
   }
  ]

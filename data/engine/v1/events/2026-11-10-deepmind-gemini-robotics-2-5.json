@@ -2,29 +2,29 @@
  "publicId": "2026-11-10-deepmind-gemini-robotics-2-5",
  "title": "DeepMind 发布 Gemini Robotics 2.5：称是其最强视觉-语言-动作模型",
  "status": "active",
- "reportCount": 1,
- "sourceCount": 1,
+ "reportCount": 2,
+ "sourceCount": 2,
  "firstReportAt": "2026-11-09T19:51:47.000Z",
- "latestAt": "2026-11-09T19:51:47.000Z",
+ "latestAt": "2026-11-10T17:11:10.000Z",
  "digest": null,
  "digestUpdatedAt": null,
  "summary": null,
  "excerpt": null,
- "latest": null,
+ "latest": "The Decoder 报道称，Gemini Robotics 2.5 已与 Apptronik 在匈牙利和德国的奔驰产线上试点，人形机器人 Apollo 2 分拣金属零件的准确率约 96%。",
  "latestReport": null,
  "whyHot": {
-  "participants48h": 1,
-  "newParticipants6h": 0,
+  "participants48h": 2,
+  "newParticipants6h": 1,
   "recentReports24h": 1,
   "observationComplete": true,
-  "rank": null
+  "rank": 4
  },
  "developments": [
   {
    "factId": "fact-2026-11-10-deepmind-gemini-robotics-2-5",
    "title": "DeepMind 发布 Gemini Robotics 2.5：称是其最强视觉-语言-动作模型",
    "firstReportAt": "2026-11-09T19:51:47.000Z",
-   "reportCount": 1,
+   "reportCount": 2,
    "representative": {
     "id": "sha256:6b6709b612e5913e",
     "title": "DeepMind 发布 Gemini Robotics 2.5：称是其最强视觉-语言-动作模型",
@@ -54,6 +54,18 @@
   }
  ],
  "timeline": [
+  {
+   "id": "sha256:1452077b5912f8ba",
+   "title": "跟进：报道称 Gemini Robotics 2.5 在奔驰产线试点，分拣准确率约 96%",
+   "summary": "The Decoder：Gemini Robotics 2.5 与 Apptronik 在匈牙利和德国的奔驰产线试点，人形机器人 Apollo 2 分拣金属零件准确率约 96%。",
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-10T17:11:10.000Z",
+   "selected": false,
+   "originalUrl": "https://the-decoder.com/google-deepminds-gemini-robotics-2-5-scores-96-percent-sorting-metal-parts-in-a-mercedes-benz-assembly-pilot/"
+  },
   {
    "id": "sha256:6b6709b612e5913e",
    "title": "DeepMind 发布 Gemini Robotics 2.5：称是其最强视觉-语言-动作模型",
@@ -177,6 +189,21 @@
    "hour": "2026-11-10T17:00:00.000Z",
    "heat": 5.4,
    "participants": 1
+  },
+  {
+   "hour": "2026-11-10T18:00:00.000Z",
+   "heat": 15.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-10T19:00:00.000Z",
+   "heat": 14.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-10T20:00:00.000Z",
+   "heat": 14.2,
+   "participants": 2
   }
  ],
  "related": [],

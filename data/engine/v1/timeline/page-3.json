@@ -6,6 +6,29 @@
  },
  "cards": [
   {
+   "key": "sha256:0f01adb2acab0a67",
+   "anchorAt": "2026-10-29T09:00:00.000Z",
+   "item": {
+    "id": "sha256:0f01adb2acab0a67",
+    "title": "OpenAI：如何监测前沿模型错位",
+    "summary": "OpenAI 介绍分层监测，用于发现前沿模型错位与未授权智能体行为，以便在事件升级前介入。官方安全运营说明。",
+    "reason": "OpenAI：分层监测前沿模型错位与未授权智能体行为",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-29T09:00:00.000Z",
+    "timelineAt": "2026-10-29T09:00:00.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-30-openai-frontier-misalignment-detection",
+    "originalUrl": "https://openai.com/index/how-we-detect-frontier-model-misalignment"
+   },
+   "group": null
+  },
+  {
    "key": "sha256:85f94c0fe8f02a81",
    "anchorAt": "2026-10-29T00:00:00.000Z",
    "item": {
@@ -107,7 +130,7 @@
    "group": {
     "factId": "fact-2026-10-28-deepmind-gemini-4-carbon",
     "additionalSourceCount": 4,
-    "reportCount": 7,
+    "reportCount": 8,
     "memberIds": [
      "sha256:3e32bae570ff21ee"
     ]
@@ -502,38 +525,6 @@
      "sha256:1a162d33f42d8b8e"
     ]
    }
-  },
-  {
-   "key": "sha256:f0e3f8456fcbc65d",
-   "anchorAt": "2026-10-27T00:00:00.000Z",
-   "item": {
-    "id": "sha256:f0e3f8456fcbc65d",
-    "title": "微软发布 MAI-Image-2.7：图像编辑预览登 Artificial Analysis 第二",
-    "summary": "微软 AI 官方宣布推出 MAI Image 2.7 图像编辑预览：主打场景重绘/打光、图内文字与符号修改、素材修复增强；称在 Artificial Analysis 图像编辑榜列第二、Arena Edit 第三，相对 2.6 在全部评测用例与编辑动作上提升，场景与风格项领先约 24 Elo。现阶段以已有图片+指令编辑为主，文生图尚未开放；官方未公布 2.7 API/定价。IT之家等跟进转述。",
-    "reason": "微软官方推出 MAI-Image-2.7 图像编辑预览并报榜单名次",
-    "source": {
-     "name": "Microsoft AI"
-    },
-    "publishedAt": "2026-10-27T00:00:00.000Z",
-    "timelineAt": "2026-10-27T00:00:00.000Z",
-    "category": "product",
-    "tags": [
-     "fp_hop_as_rep"
-    ],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-28-microsoft-mai-image-27",
-    "originalUrl": "https://microsoft.ai/news/mai-image-2-7-debut/"
-   },
-   "group": {
-    "factId": "fact-2026-10-28-microsoft-mai-image-27",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:f0e3f8456fcbc65d"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-4.json",
@@ -541,5 +532,5 @@
  "dayCounts": {},
  "page": 3,
  "pageCount": 6,
- "total": 115
+ "total": 116
 }

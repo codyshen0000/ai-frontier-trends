@@ -1,6 +1,92 @@
 {
- "generatedAt": "2026-11-10T17:15:00.000Z",
+ "generatedAt": "2026-11-10T20:05:00.000Z",
  "docs": [
+  {
+   "id": "sha256:7e74320883f414fb",
+   "kind": "item",
+   "title": "跟进：报道称 OpenAI 推出商业资料，想让 ChatGPT 更接近发现引擎",
+   "summary": "TechCrunch：OpenAI 推出新的商业资料等功能，意在让 ChatGPT 成为更完整的消费发现引擎，并让商家更好地参与其中。",
+   "publishedAt": "2026-11-10T18:49:52.000Z",
+   "sourceName": "TechCrunch · AI",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-11-11-openai-chatgpt-businesses",
+   "originalUrl": "https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google/"
+  },
+  {
+   "id": "2026-11-11-openai-chatgpt-businesses",
+   "kind": "event",
+   "title": "OpenAI 在 ChatGPT 中推出 Businesses",
+   "summary": "OpenAI 官方宣布在 ChatGPT 推出 Businesses：商家可以管理自己的商业信息、查看曝光情况，并把兴趣转化成行动。The Verge 报道将向符合条件的美国电商和在线服务企业提供已认证的「Business Agents」，用户可与代表品牌的智能体对话（例如比价）；该功能作为当天公布的一套商业功能的一部分进入测试。TechCrunch 报道称同时推出商业资料（business profiles），意在让 ChatGPT 更接近发现引擎。这是 ChatGPT 的商业产品功能，不是新模型发布。",
+   "publishedAt": "2026-11-10T18:49:52.000Z",
+   "sourceNames": [
+    "OpenAI News",
+    "TechCrunch · AI",
+    "The Verge · AI"
+   ],
+   "path": "/events/2026-11-11-openai-chatgpt-businesses/"
+  },
+  {
+   "id": "sha256:8c4ca9fd50b0aa50",
+   "kind": "item",
+   "title": "跟进：报道称 Gemini 4 Carbon 全面开放，部分评测超过 Fable 5.2，并预览 /swarm",
+   "summary": null,
+   "publishedAt": "2026-11-10T18:19:13.000Z",
+   "sourceName": "The Decoder",
+   "category": "model",
+   "selected": false,
+   "eventPublicId": "2026-10-28-deepmind-gemini-4-carbon",
+   "originalUrl": "https://the-decoder.com/gemini-4-carbon-arrives-just-in-time-to-feel-like-yesterdays-news-in-the-fastest-model-cycle-yet/"
+  },
+  {
+   "id": "2026-10-28-deepmind-gemini-4-carbon",
+   "kind": "event",
+   "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+   "summary": null,
+   "publishedAt": "2026-11-10T18:19:13.000Z",
+   "sourceNames": [
+    "Google DeepMind Blog",
+    "The Decoder",
+    "The Verge · AI"
+   ],
+   "path": "/events/2026-10-28-deepmind-gemini-4-carbon/"
+  },
+  {
+   "id": "sha256:3ec8add99452b340",
+   "kind": "item",
+   "title": "报道：ChatGPT 将推出认证的品牌 Business Agents",
+   "summary": "The Verge：ChatGPT 将向符合条件的美国电商和在线服务企业提供已认证的「Business Agents」，用户可与代表品牌的智能体对话，例如比价；该功能作为当天公布的一套商业功能的一部分进入测试。",
+   "publishedAt": "2026-11-10T18:00:00.000Z",
+   "sourceName": "The Verge · AI",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-11-11-openai-chatgpt-businesses",
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub"
+  },
+  {
+   "id": "sha256:1452077b5912f8ba",
+   "kind": "item",
+   "title": "跟进：报道称 Gemini Robotics 2.5 在奔驰产线试点，分拣准确率约 96%",
+   "summary": "The Decoder：Gemini Robotics 2.5 与 Apptronik 在匈牙利和德国的奔驰产线试点，人形机器人 Apollo 2 分拣金属零件准确率约 96%。",
+   "publishedAt": "2026-11-10T17:11:10.000Z",
+   "sourceName": "The Decoder",
+   "category": "model",
+   "selected": false,
+   "eventPublicId": "2026-11-10-deepmind-gemini-robotics-2-5",
+   "originalUrl": "https://the-decoder.com/google-deepminds-gemini-robotics-2-5-scores-96-percent-sorting-metal-parts-in-a-mercedes-benz-assembly-pilot/"
+  },
+  {
+   "id": "2026-11-10-deepmind-gemini-robotics-2-5",
+   "kind": "event",
+   "title": "DeepMind 发布 Gemini Robotics 2.5：称是其最强视觉-语言-动作模型",
+   "summary": null,
+   "publishedAt": "2026-11-10T17:11:10.000Z",
+   "sourceNames": [
+    "Google DeepMind Blog",
+    "The Decoder"
+   ],
+   "path": "/events/2026-11-10-deepmind-gemini-robotics-2-5/"
+  },
   {
    "id": "sha256:55cb0588b3e8436e",
    "kind": "item",
@@ -12,19 +98,6 @@
    "selected": false,
    "eventPublicId": "2026-10-28-deepmind-gemini-4-carbon",
    "originalUrl": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/"
-  },
-  {
-   "id": "2026-10-28-deepmind-gemini-4-carbon",
-   "kind": "event",
-   "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
-   "summary": null,
-   "publishedAt": "2026-11-10T16:03:47.000Z",
-   "sourceNames": [
-    "Google DeepMind Blog",
-    "The Decoder",
-    "The Verge · AI"
-   ],
-   "path": "/events/2026-10-28-deepmind-gemini-4-carbon/"
   },
   {
    "id": "sha256:8658a0744e2cda3c",
@@ -108,6 +181,18 @@
    "path": "/events/2026-11-10-alphaproof-code/"
   },
   {
+   "id": "sha256:991ad48e8559b2fe",
+   "kind": "item",
+   "title": "OpenAI 在 ChatGPT 中推出 Businesses",
+   "summary": "OpenAI 官方宣布在 ChatGPT 推出 Businesses：商家可以管理商业信息、查看曝光，并把兴趣转化成行动。",
+   "publishedAt": "2026-11-10T10:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "product",
+   "selected": true,
+   "eventPublicId": "2026-11-11-openai-chatgpt-businesses",
+   "originalUrl": "https://openai.com/index/introducing-businesses-chatgpt"
+  },
+  {
    "id": "sha256:8915e46a098594e4",
    "kind": "item",
    "title": "跟进：Latent Space 评述 Anthropic Claude Fable 5.2 重夺榜首，IPO 路演只是时间背景",
@@ -182,17 +267,6 @@
    "selected": true,
    "eventPublicId": "2026-11-10-deepmind-gemini-robotics-2-5",
    "originalUrl": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/"
-  },
-  {
-   "id": "2026-11-10-deepmind-gemini-robotics-2-5",
-   "kind": "event",
-   "title": "DeepMind 发布 Gemini Robotics 2.5：称是其最强视觉-语言-动作模型",
-   "summary": null,
-   "publishedAt": "2026-11-09T19:51:47.000Z",
-   "sourceNames": [
-    "Google DeepMind Blog"
-   ],
-   "path": "/events/2026-11-10-deepmind-gemini-robotics-2-5/"
   },
   {
    "id": "sha256:a3bc8ca770f44f2d",

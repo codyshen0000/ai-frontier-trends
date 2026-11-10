@@ -41,6 +41,17 @@
    "eventPublicId": "2026-11-10-alphaproof-code"
   },
   {
+   "guid": "sha256:991ad48e8559b2fe",
+   "title": "OpenAI 在 ChatGPT 中推出 Businesses",
+   "summary": "OpenAI 官方宣布在 ChatGPT 推出 Businesses：商家可以管理商业信息、查看曝光，并把兴趣转化成行动。",
+   "originalUrl": "https://openai.com/index/introducing-businesses-chatgpt",
+   "pubDate": "2026-11-10T10:00:00.000Z",
+   "sourceName": "OpenAI News",
+   "category": "product",
+   "categoryLabel": "产品",
+   "eventPublicId": "2026-11-11-openai-chatgpt-businesses"
+  },
+  {
    "guid": "sha256:6b6709b612e5913e",
    "title": "DeepMind 发布 Gemini Robotics 2.5：称是其最强视觉-语言-动作模型",
    "summary": "DeepMind 官方博客宣布 Gemini Robotics 2.5，称这是其最强的视觉-语言-动作模型，可提升机器人的灵巧性、可靠性与安全性。",
@@ -545,17 +556,6 @@
    "category": "paper",
    "categoryLabel": "论文",
    "eventPublicId": "2026-10-28-google-sleep-framework-continual"
-  },
-  {
-   "guid": "sha256:1c5b51464767c2ad",
-   "title": "LiquidAI 发布 LFM3：约 2B 参数多模态同骨干家族",
-   "summary": "",
-   "originalUrl": "https://huggingface.co/blog/LiquidAI/lfm3",
-   "pubDate": "2026-10-27T17:16:52.000Z",
-   "sourceName": "Hugging Face Blog",
-   "category": "model",
-   "categoryLabel": "模型",
-   "eventPublicId": "2026-10-28-liquidai-lfm3"
   }
  ]
 }
