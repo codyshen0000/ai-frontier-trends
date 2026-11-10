@@ -15,7 +15,7 @@
 | `daily-index.json` | `dailyIndex` | `ReportNavigationEntry[]`，新→旧 |
 | `fixture.json` | 全部 | `{timeline, hotStrip, hot, dailyIndex, daily, today}` 一次读入 |
 | `meta.json` | （新增） | 见下 |
-| `daily/YYYY-MM-DD.json` | 按日归档 | 与 `daily.json` 同形。本批有 `2026-10-19`–`2026-11-07`（无 `2026-11-02`）；根目录 `daily.json` 等于今天（`2026-11-07`）。加载器仍读根目录 `daily.json`。 |
+| `daily/YYYY-MM-DD.json` | 按日归档 | 与 `daily.json` 同形。本批有 `2026-10-19`–`2026-11-07` 与 `2026-11-10`（无 `2026-11-02` / `2026-11-08` / `2026-11-09`）；根目录 `daily.json` 等于今天（`2026-11-10`）。加载器仍读根目录 `daily.json`。 |
 
 分片文件优先于 `fixture.json` 同名切片。只有 `fixture.json` 也算引擎模式。
 
@@ -64,7 +64,7 @@ interface EngineMeta {
 - 标题里的 `「[低于门槛补位]」`、日报摘要里的 `「（低于门槛）」` **原样保留**，不得剥离或隐藏。
 - 新导出若只给 `belowThreshold: true`、标题不再带前缀：加载器在渲染前补上 `[低于门槛补位]` / `（低于门槛）`。
 - 热度、分数原样进入壳层，不改写成 0、不因补位隐藏。
-- 本批：过线 114 条 / 补位 11 条；热点 3 条（均为 `belowThreshold` 补位，未垫到 5/10）。日报 19 期，今天 `2026-11-07`。T0322 已导入。
+- 本批：过线 114 条 / 补位 11 条（本窗 `selected=[]`，仅既有 Fable 正式卡）；热点 3 条（均为 `belowThreshold` 补位，未垫到 5/10）。日报 20 期，今天 `2026-11-10`（lead 1 + flash 4；无 11-08/11-09）。T0822 已导入。
 
 ## 图片（MIT L2）
 

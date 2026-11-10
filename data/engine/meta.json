@@ -1,10 +1,10 @@
 {
   "site": "前沿趋势",
   "mode": "preview",
-  "data_as_of": "2026-11-10T03:22:25+08:00",
-  "data_as_of_label": "数据截至 2026-11-10 03:22（北京时间）",
-  "generated_at": "2026-11-10T03:54:48+08:00",
-  "today": "2026-11-07",
+  "data_as_of": "2026-11-10T08:22:34+08:00",
+  "data_as_of_label": "数据截至 2026-11-10 08:22（北京时间）",
+  "generated_at": "2026-11-10T08:45:00+08:00",
+  "today": "2026-11-10",
   "hot_rule_version": "heat-v1-48h-halflife24h (v0 port)",
   "window_hours": 48,
   "half_life_hours": 24,
@@ -2420,6 +2420,26 @@
       "status": "ok",
       "imported_at": "2026-11-10T03:47:26+08:00",
       "rejected": 0
+    },
+    {
+      "batch_id": "2026-11-10T0423",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-11-10T0520",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-11-10T0626",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-11-10T0726",
+      "status": "ok"
+    },
+    {
+      "batch_id": "2026-11-10T0822",
+      "status": "ok"
     }
   ],
   "daily_keys": [
@@ -2441,7 +2461,8 @@
     "2026-11-04",
     "2026-11-05",
     "2026-11-06",
-    "2026-11-07"
+    "2026-11-07",
+    "2026-11-10"
   ],
   "cover_rule": "aihot soft: width≥480 (unknown=800) height≥240 + alt + not logo/avatar/badge; value_class priority when present",
   "cover_note": "cover.url 导出可为 https；物化后改写为 assets/covers/… 同源；失败则空槽不热链"

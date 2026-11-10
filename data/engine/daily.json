@@ -1,269 +1,110 @@
 {
  "kind": "daily",
- "key": "2026-11-07",
- "issueNumber": 19,
- "title": "AI日报 · 2026-11-07",
- "generatedAt": "2026-11-07T00:32:15.000Z",
+ "key": "2026-11-10",
+ "issueNumber": 20,
+ "title": "AI日报 · 2026-11-10",
+ "generatedAt": "2026-11-10T00:36:44.000Z",
  "lead": {
-  "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
-  "leadParagraph": "Anthropic 官方研究《The components of agent memory》：拆解会话日志/记忆笔记/知识表征/注入上下文，并引入 dreaming 在空闲时巩固记忆；IT之家报道并入，代表为一手研究页。"
+  "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
+  "leadParagraph": "Anthropic 官方发布说明（Claude Platform release notes，11 月 9 日）：推出 Claude Fable 5.2（claude-fable-5-2），面向高要求推理与长程智能体工作；Claude Mythos 5.2（claude-mythos-5-2）能力相同，仅向通过 Anthropic 核验计划（如 Cyber Verification Program）的机构开放。两款模型均为 100 万 token 上下文、最长 12.8 万输出 token，并始终开启自适应思考（adaptive thinking）；定价为输入 8 美元/百万 token、输出 40 美元/百万 token（5.1 代为 10/50 美元）。The Decoder 本窗跟进称其巩固 Anthropic 在 IPO 前的领先地位；TechCrunch 亦报道发布，并提到 RSI 担忧背景。属官方双模型正式发布，不是此前关于 Fable/Opus 的传闻。"
  },
- "leadItemId": "sha256:f0247d2be6d23fda",
- "overview": "Anthropic：智能体记忆组件与“做梦”机制。",
+ "leadItemId": "sha256:4182359e79e632d3",
+ "overview": "Anthropic 发布 Fable 5.2 与 Mythos 5.2。",
  "highlights": [
   {
-   "itemId": "sha256:f0247d2be6d23fda",
-   "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
-   "summary": "Anthropic 官方研究《The components of agent memory》：拆解会话日志/记忆笔记/知识表征/注入上下文，并引入 dreaming 在空闲时巩固记忆；IT之家报道并入，代表为一手研究页。",
-   "sourceName": "Anthropic Research · The components of agent memory",
-   "sourceUrl": "https://www.anthropic.com/research/components-of-agent-memory",
+   "itemId": "sha256:4182359e79e632d3",
+   "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
+   "summary": "Anthropic 官方发布说明（Claude Platform release notes，11 月 9 日）：推出 Claude Fable 5.2（claude-fable-5-2），面向高要求推理与长程智能体工作；Claude Mythos 5.2（claude-mythos-5-2）能力相同，仅向通过 Anthropic 核验计划（如 Cyber Verification Program）的机构开放。两款模型均为 100 万 token 上下文、最长 12.8 万输出 token，并始终开启自适应思考（adaptive thinking）；定价为输入 8 美元/百万 token、输出 40 美元/百万 token（5.1 代为 10/50 美元）。The Decoder 本窗跟进称其巩固 Anthropic 在 IPO 前的领先地位；TechCrunch 亦报道发布，并提到 RSI 担忧背景。属官方双模型正式发布，不是此前关于 Fable/Opus 的传闻。",
+   "sourceName": "Claude Platform Release Notes",
+   "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview#claude-fable-5-2",
    "sourceIconUrl": null,
    "firstParty": true,
-   "publishedAt": "2026-11-06T00:00:00.000Z",
-   "available": true,
-   "otherSources": 1
-  },
-  {
-   "itemId": "sha256:c9e260814e66b368",
-   "title": "Cursor：上线 Voice Chat，可与智能体实时语音协作",
-   "summary": "Cursor 官方 changelog：Voice Chat with Agents，可在 Agents Window / IDE / Web 等与智能体实时语音通话；IT之家报道并入，代表为一手 changelog。",
-   "sourceName": "Cursor Changelog · Voice Chat with Agents",
-   "sourceUrl": "https://cursor.com/changelog/voice-chat",
-   "sourceIconUrl": null,
-   "firstParty": true,
-   "publishedAt": "2026-11-06T00:00:00.000Z",
-   "available": true,
-   "otherSources": 1
-  },
-  {
-   "itemId": "sha256:0c01f1148bd8b712",
-   "title": "Amp：上线 Spaces，由主智能体编排协调多 Agent",
-   "summary": "Amp 官方：Spaces 是更高层的多 Agent 协作方式，一个 space 负责生成并协调多个 agent；IT之家报道并入，代表为一手新闻页。",
-   "sourceName": "Amp · Spaces",
-   "sourceUrl": "https://www.ampcode.com/news/spaces",
-   "sourceIconUrl": null,
-   "firstParty": true,
-   "publishedAt": "2026-11-06T00:00:00.000Z",
-   "available": true,
-   "otherSources": 1
-  },
-  {
-   "itemId": "sha256:14e90e72d3401ddf",
-   "title": "OpenAI：发布 GPT-6 Cyber，推进对齐的网络安全智能体",
-   "summary": "OpenAI 官方：GPT-6 Cyber 面向发现可利用漏洞并开发修复，训练上强调不越权、留在授权范围内。",
-   "sourceName": "OpenAI News",
-   "sourceUrl": "https://openai.com/index/introducing-gpt-6-cyber",
-   "sourceIconUrl": null,
-   "firstParty": true,
-   "publishedAt": "2026-11-05T09:00:00.000Z",
+   "publishedAt": "2026-11-09T00:00:00.000Z",
    "available": true,
    "otherSources": 3
   }
  ],
  "sections": [
   {
-   "label": "论文",
+   "label": "模型",
    "summary": null,
    "items": [
     {
-     "itemId": "sha256:f0247d2be6d23fda",
-     "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
-     "summary": "Anthropic 官方研究《The components of agent memory》：拆解会话日志/记忆笔记/知识表征/注入上下文，并引入 dreaming 在空闲时巩固记忆；IT之家报道并入，代表为一手研究页。",
-     "sourceName": "Anthropic Research · The components of agent memory",
-     "sourceUrl": "https://www.anthropic.com/research/components-of-agent-memory",
+     "itemId": "sha256:4182359e79e632d3",
+     "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
+     "summary": "Anthropic 官方发布说明（Claude Platform release notes，11 月 9 日）：推出 Claude Fable 5.2（claude-fable-5-2），面向高要求推理与长程智能体工作；Claude Mythos 5.2（claude-mythos-5-2）能力相同，仅向通过 Anthropic 核验计划（如 Cyber Verification Program）的机构开放。两款模型均为 100 万 token 上下文、最长 12.8 万输出 token，并始终开启自适应思考（adaptive thinking）；定价为输入 8 美元/百万 token、输出 40 美元/百万 token（5.1 代为 10/50 美元）。The Decoder 本窗跟进称其巩固 Anthropic 在 IPO 前的领先地位；TechCrunch 亦报道发布，并提到 RSI 担忧背景。属官方双模型正式发布，不是此前关于 Fable/Opus 的传闻。",
+     "sourceName": "Claude Platform Release Notes",
+     "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview#claude-fable-5-2",
      "sourceIconUrl": null,
      "firstParty": true,
-     "publishedAt": "2026-11-06T00:00:00.000Z",
-     "available": true,
-     "otherSources": 1
-    },
-    {
-     "itemId": "sha256:3a45181f6d992343",
-     "title": "微软研究院：发布 PDD Kit，形式化验证智能体编写的全栈 Web 应用",
-     "summary": "Microsoft Research：PDD Kit 用形式化方法验证智能体生成的全栈 Web 应用正确性，面向 agent 写码落地。",
-     "sourceName": "Microsoft Research Blog",
-     "sourceUrl": "https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-11-05T16:00:00.000Z",
-     "available": true,
-     "otherSources": 0
-    }
-   ]
-  },
-  {
-   "label": "产品",
-   "summary": null,
-   "items": [
-    {
-     "itemId": "sha256:c9e260814e66b368",
-     "title": "Cursor：上线 Voice Chat，可与智能体实时语音协作",
-     "summary": "Cursor 官方 changelog：Voice Chat with Agents，可在 Agents Window / IDE / Web 等与智能体实时语音通话；IT之家报道并入，代表为一手 changelog。",
-     "sourceName": "Cursor Changelog · Voice Chat with Agents",
-     "sourceUrl": "https://cursor.com/changelog/voice-chat",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-11-06T00:00:00.000Z",
-     "available": true,
-     "otherSources": 1
-    },
-    {
-     "itemId": "sha256:0c01f1148bd8b712",
-     "title": "Amp：上线 Spaces，由主智能体编排协调多 Agent",
-     "summary": "Amp 官方：Spaces 是更高层的多 Agent 协作方式，一个 space 负责生成并协调多个 agent；IT之家报道并入，代表为一手新闻页。",
-     "sourceName": "Amp · Spaces",
-     "sourceUrl": "https://www.ampcode.com/news/spaces",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-11-06T00:00:00.000Z",
-     "available": true,
-     "otherSources": 1
-    },
-    {
-     "itemId": "sha256:14e90e72d3401ddf",
-     "title": "OpenAI：发布 GPT-6 Cyber，推进对齐的网络安全智能体",
-     "summary": "OpenAI 官方：GPT-6 Cyber 面向发现可利用漏洞并开发修复，训练上强调不越权、留在授权范围内。",
-     "sourceName": "OpenAI News",
-     "sourceUrl": "https://openai.com/index/introducing-gpt-6-cyber",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-11-05T09:00:00.000Z",
+     "publishedAt": "2026-11-09T00:00:00.000Z",
      "available": true,
      "otherSources": 3
-    },
-    {
-     "itemId": "sha256:f25b9201ad6bdcc6",
-     "title": "NVIDIA：发布 Cosmos 3 开放模型，面向可交互世界仿真",
-     "summary": "NVIDIA 于 Hugging Face Blog 发布 Cosmos 3 开放模型，面向可交互世界仿真；并附 nvidia.com/ai/cosmos 产品页。",
-     "sourceName": "Hugging Face Blog",
-     "sourceUrl": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-11-05T19:35:16.000Z",
-     "available": true,
-     "otherSources": 0
-    },
-    {
-     "itemId": "sha256:5bd02a39074589ea",
-     "title": "Mistral：发布 Studio，配合 Le Chonk 构建企业智能体与工作流",
-     "summary": "Mistral 官方：推出 Studio，加速企业智能体/工作流/应用构建与部署。",
-     "sourceName": "Mistral AI News",
-     "sourceUrl": "https://mistral.ai/news/build-with-studio/",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-11-05T12:00:14.000Z",
-     "available": true,
-     "otherSources": 0
-    },
-    {
-     "itemId": "sha256:485654c1f98a7cdc",
-     "title": "DeepMind：Gemini Omni 1.2 Flash，更长视频片段、更低价格",
-     "summary": "Google DeepMind / Google AI Blog：Gemini Omni 1.2 Flash 宣称更快、更省，并支持更长视频片段。",
-     "sourceName": "Google AI (The Keyword · AI)",
-     "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-11-05T17:00:00.000Z",
-     "available": true,
-     "otherSources": 2
-    }
-   ]
-  },
-  {
-   "label": "行业",
-   "summary": null,
-   "items": [
-    {
-     "itemId": "sha256:7a4fd1de9b53747b",
-     "title": "NVIDIA：五项协同设计最大化 AI 工厂每一字节价值",
-     "summary": "NVIDIA 技术博客：五项软硬协同设计提升 AI 工厂内存/带宽效率。",
-     "sourceName": "NVIDIA Technical Blog",
-     "sourceUrl": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-11-05T16:00:00.000Z",
-     "available": true,
-     "otherSources": 1
     }
    ]
   }
  ],
  "flashes": [
   {
-   "itemId": "sha256:4e0aa3919fe104e5",
-   "title": "NVIDIA：Blackwell 上加速 FLUX 3 Image Klein 图像生成",
-   "summary": "rss-nvidia-dev T1 一手；诚实分 58≪60 未垫。",
-   "sourceName": "NVIDIA Technical Blog",
-   "sourceUrl": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/",
+   "itemId": "sha256:952d2516af2e9054",
+   "title": "OpenAI：上线 Control Room，可在 35 秒内叫停研究侧模型作业",
+   "summary": "rss-openai-news T1 一手安全基础设施说明；诚实分 58≪60",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/control-room",
    "sourceIconUrl": null,
    "firstParty": false,
-   "publishedAt": "2026-11-06T22:20:20.000Z",
+   "publishedAt": "2026-11-09T13:00:00.000Z",
    "available": true
   },
   {
-   "itemId": "sha256:92b8001eea640de4",
-   "title": "GitHub：超越代码生成——智能体工程开发者指南",
-   "summary": "github.blog T1；开发者指南非新产品发布；54≪60。",
-   "sourceName": "GitHub Blog · AI & ML",
-   "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/",
+   "itemId": "sha256:009b316662ff4c3f",
+   "title": "Google：发布 Language Explorer，可视化全球语言多样性",
+   "summary": "rss-google-research T1 一手；博物馆展陈/可视化工具，非模",
+   "sourceName": "Google Research Blog",
+   "sourceUrl": "https://research.google/blog/exploring-the-worlds-languages-with-language-explorer/",
    "sourceIconUrl": null,
    "firstParty": false,
-   "publishedAt": "2026-11-06T22:15:59.000Z",
+   "publishedAt": "2026-11-09T20:29:39.000Z",
    "available": true
   },
   {
-   "itemId": "sha256:24ed9ebcee3dd33c",
-   "title": "报道：Ripple-65B Preview 开源权重模型",
-   "summary": "已 hop-as-rep ricursive.com/ripple；诚实分 56",
-   "sourceName": "Ricursive Intelligence · Ripple-65B Preview",
-   "sourceUrl": "https://ricursive.com/ripple",
+   "itemId": "sha256:02e9abf47eaf3fa0",
+   "title": "OpenAI：CodeRabbit 用 Codex 与 Daybreak 将出货量提升约 20 倍",
+   "summary": "rss-openai-news T1 客户案例，不是新的 Daybreak 发布",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/coderabbit-codex-daybreak",
    "sourceIconUrl": null,
    "firstParty": false,
-   "publishedAt": "2026-11-06T00:00:00.000Z",
+   "publishedAt": "2026-11-09T08:00:00.000Z",
    "available": true
   },
   {
-   "itemId": "sha256:9aeac73058ac351b",
-   "title": "报道：Meta Muse 上线 Spaces，可定制类应用协作空间",
-   "summary": "Verge T2；Meta 官网 Spaces 专文仍 404；56≪76。",
-   "sourceName": "The Verge · AI",
-   "sourceUrl": "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces",
+   "itemId": "sha256:1cd01b15863e291a",
+   "title": "演示：Simon Willison 用 Claude 定位神秘蜂鸣源",
+   "summary": "rss-simon-willison T2 个人技术随笔；44≪76 未垫。",
+   "sourceName": "Simon Willison",
+   "sourceUrl": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
    "sourceIconUrl": null,
    "firstParty": false,
-   "publishedAt": "2026-11-06T18:10:10.000Z",
-   "available": true
-  },
-  {
-   "itemId": "sha256:d9d8ed120c50cfe2",
-   "title": "报道：OpenAI 估值约 1.25 万亿美元，Anthropic 临近 IPO",
-   "summary": "TC/Verge 融资二手；无 OpenAI 官方确认；52≪76。",
-   "sourceName": "TechCrunch · AI",
-   "sourceUrl": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
-   "sourceIconUrl": null,
-   "firstParty": false,
-   "publishedAt": "2026-11-06T22:53:46.000Z",
-   "available": true
-  },
-  {
-   "itemId": "sha256:84864f21844a6bae",
-   "title": "报道：大学图书馆遭 AI 爬虫围攻，公共访问承压",
-   "summary": "CBC/HN；基础设施压力；48≪76。",
-   "sourceName": "Hacker News（AI 关键词 ≥100 分）",
-   "sourceUrl": "https://www.cbc.ca/news/world/university-libraries-ai-data-scraping-bots-9.7408287",
-   "sourceIconUrl": null,
-   "firstParty": false,
-   "publishedAt": "2026-11-06T14:13:09.000Z",
+   "publishedAt": "2026-11-09T23:57:21.000Z",
    "available": true
   }
  ],
- "cover": null,
- "metrics": {
-  "totalEvents": 9,
-  "sourcesCount": 14,
-  "firstPartyEvents": 9,
-  "modelsReleased": 0
+ "cover": {
+  "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK269_ANTHROPIC_2_B.jpg?quality=90&strip=all&crop=0,0,100,100",
+  "width": null,
+  "height": null,
+  "alt": "Anthropic logo on an orange and gray background.",
+  "caption": null
  },
- "readingMinutes": 2,
- "prev": "2026-11-06",
+ "metrics": {
+  "totalEvents": 1,
+  "sourcesCount": 4,
+  "firstPartyEvents": 1,
+  "modelsReleased": 1,
+  "mainCardNote": "今日仅 1 条达收录标准"
+ },
+ "readingMinutes": 1,
+ "prev": "2026-11-07",
  "next": null
 }

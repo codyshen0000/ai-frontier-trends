@@ -1,0 +1,110 @@
+{
+ "kind": "daily",
+ "key": "2026-11-10",
+ "issueNumber": 20,
+ "title": "AI日报 · 2026-11-10",
+ "generatedAt": "2026-11-10T00:36:44.000Z",
+ "lead": {
+  "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
+  "leadParagraph": "Anthropic 官方发布说明（Claude Platform release notes，11 月 9 日）：推出 Claude Fable 5.2（claude-fable-5-2），面向高要求推理与长程智能体工作；Claude Mythos 5.2（claude-mythos-5-2）能力相同，仅向通过 Anthropic 核验计划（如 Cyber Verification Program）的机构开放。两款模型均为 100 万 token 上下文、最长 12.8 万输出 token，并始终开启自适应思考（adaptive thinking）；定价为输入 8 美元/百万 token、输出 40 美元/百万 token（5.1 代为 10/50 美元）。The Decoder 本窗跟进称其巩固 Anthropic 在 IPO 前的领先地位；TechCrunch 亦报道发布，并提到 RSI 担忧背景。属官方双模型正式发布，不是此前关于 Fable/Opus 的传闻。"
+ },
+ "leadItemId": "sha256:4182359e79e632d3",
+ "overview": "Anthropic 发布 Fable 5.2 与 Mythos 5.2。",
+ "highlights": [
+  {
+   "itemId": "sha256:4182359e79e632d3",
+   "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
+   "summary": "Anthropic 官方发布说明（Claude Platform release notes，11 月 9 日）：推出 Claude Fable 5.2（claude-fable-5-2），面向高要求推理与长程智能体工作；Claude Mythos 5.2（claude-mythos-5-2）能力相同，仅向通过 Anthropic 核验计划（如 Cyber Verification Program）的机构开放。两款模型均为 100 万 token 上下文、最长 12.8 万输出 token，并始终开启自适应思考（adaptive thinking）；定价为输入 8 美元/百万 token、输出 40 美元/百万 token（5.1 代为 10/50 美元）。The Decoder 本窗跟进称其巩固 Anthropic 在 IPO 前的领先地位；TechCrunch 亦报道发布，并提到 RSI 担忧背景。属官方双模型正式发布，不是此前关于 Fable/Opus 的传闻。",
+   "sourceName": "Claude Platform Release Notes",
+   "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview#claude-fable-5-2",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-11-09T00:00:00.000Z",
+   "available": true,
+   "otherSources": 3
+  }
+ ],
+ "sections": [
+  {
+   "label": "模型",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:4182359e79e632d3",
+     "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
+     "summary": "Anthropic 官方发布说明（Claude Platform release notes，11 月 9 日）：推出 Claude Fable 5.2（claude-fable-5-2），面向高要求推理与长程智能体工作；Claude Mythos 5.2（claude-mythos-5-2）能力相同，仅向通过 Anthropic 核验计划（如 Cyber Verification Program）的机构开放。两款模型均为 100 万 token 上下文、最长 12.8 万输出 token，并始终开启自适应思考（adaptive thinking）；定价为输入 8 美元/百万 token、输出 40 美元/百万 token（5.1 代为 10/50 美元）。The Decoder 本窗跟进称其巩固 Anthropic 在 IPO 前的领先地位；TechCrunch 亦报道发布，并提到 RSI 担忧背景。属官方双模型正式发布，不是此前关于 Fable/Opus 的传闻。",
+     "sourceName": "Claude Platform Release Notes",
+     "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview#claude-fable-5-2",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-09T00:00:00.000Z",
+     "available": true,
+     "otherSources": 3
+    }
+   ]
+  }
+ ],
+ "flashes": [
+  {
+   "itemId": "sha256:952d2516af2e9054",
+   "title": "OpenAI：上线 Control Room，可在 35 秒内叫停研究侧模型作业",
+   "summary": "rss-openai-news T1 一手安全基础设施说明；诚实分 58≪60",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/control-room",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-11-09T13:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:009b316662ff4c3f",
+   "title": "Google：发布 Language Explorer，可视化全球语言多样性",
+   "summary": "rss-google-research T1 一手；博物馆展陈/可视化工具，非模",
+   "sourceName": "Google Research Blog",
+   "sourceUrl": "https://research.google/blog/exploring-the-worlds-languages-with-language-explorer/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-11-09T20:29:39.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:02e9abf47eaf3fa0",
+   "title": "OpenAI：CodeRabbit 用 Codex 与 Daybreak 将出货量提升约 20 倍",
+   "summary": "rss-openai-news T1 客户案例，不是新的 Daybreak 发布",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/coderabbit-codex-daybreak",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-11-09T08:00:00.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:1cd01b15863e291a",
+   "title": "演示：Simon Willison 用 Claude 定位神秘蜂鸣源",
+   "summary": "rss-simon-willison T2 个人技术随笔；44≪76 未垫。",
+   "sourceName": "Simon Willison",
+   "sourceUrl": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-11-09T23:57:21.000Z",
+   "available": true
+  }
+ ],
+ "cover": {
+  "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK269_ANTHROPIC_2_B.jpg?quality=90&strip=all&crop=0,0,100,100",
+  "width": null,
+  "height": null,
+  "alt": "Anthropic logo on an orange and gray background.",
+  "caption": null
+ },
+ "metrics": {
+  "totalEvents": 1,
+  "sourcesCount": 4,
+  "firstPartyEvents": 1,
+  "modelsReleased": 1,
+  "mainCardNote": "今日仅 1 条达收录标准"
+ },
+ "readingMinutes": 1,
+ "prev": "2026-11-07",
+ "next": null
+}

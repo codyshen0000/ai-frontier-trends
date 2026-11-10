@@ -1,5 +1,11 @@
 [
  {
+  "key": "2026-11-10",
+  "issueNumber": 20,
+  "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
+  "count": 1
+ },
+ {
   "key": "2026-11-07",
   "issueNumber": 19,
   "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
