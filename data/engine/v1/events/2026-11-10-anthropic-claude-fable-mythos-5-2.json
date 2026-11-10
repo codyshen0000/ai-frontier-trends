@@ -2,10 +2,10 @@
  "publicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
  "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
  "status": "active",
- "reportCount": 4,
- "sourceCount": 4,
+ "reportCount": 5,
+ "sourceCount": 5,
  "firstReportAt": "2026-11-09T00:00:00.000Z",
- "latestAt": "2026-11-09T21:15:23.000Z",
+ "latestAt": "2026-11-09T23:58:46.000Z",
  "digest": null,
  "digestUpdatedAt": null,
  "summary": null,
@@ -13,9 +13,9 @@
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 4,
-  "newParticipants6h": 3,
-  "recentReports24h": 3,
+  "participants48h": 5,
+  "newParticipants6h": 1,
+  "recentReports24h": 4,
   "observationComplete": true,
   "rank": 1
  },
@@ -24,7 +24,7 @@
    "factId": "fact-2026-11-10-anthropic-claude-fable-mythos-5-2",
    "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
    "firstReportAt": "2026-11-09T00:00:00.000Z",
-   "reportCount": 4,
+   "reportCount": 5,
    "representative": {
     "id": "sha256:4182359e79e632d3",
     "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
@@ -54,6 +54,18 @@
   }
  ],
  "timeline": [
+  {
+   "id": "sha256:9a8fde6cfa9ab68c",
+   "title": "跟进：llm-anthropic 0.31 已加入 Claude Fable 5.2 与 Mythos 5.2",
+   "summary": null,
+   "source": {
+    "name": "Simon Willison",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-09T23:58:46.000Z",
+   "selected": false,
+   "originalUrl": "https://simonwillison.net/2026/Nov/9/llm-anthropic/"
+  },
   {
    "id": "sha256:c988f42abbf6068f",
    "title": "报道：Claude Fable 5.2 与 Mythos 5.2 巩固 Anthropic 在 IPO 前的领先地位",
@@ -226,12 +238,32 @@
   },
   {
    "hour": "2026-11-10T00:00:00.000Z",
-   "heat": 31.7,
-   "participants": 4
+   "heat": 41.6,
+   "participants": 5
+  },
+  {
+   "hour": "2026-11-10T01:00:00.000Z",
+   "heat": 40.5,
+   "participants": 5
+  },
+  {
+   "hour": "2026-11-10T02:00:00.000Z",
+   "heat": 39.3,
+   "participants": 5
+  },
+  {
+   "hour": "2026-11-10T03:00:00.000Z",
+   "heat": 38.2,
+   "participants": 5
+  },
+  {
+   "hour": "2026-11-10T04:00:00.000Z",
+   "heat": 37.1,
+   "participants": 5
   }
  ],
  "related": [],
  "topics": [],
- "recommendReason": "Anthropic 发布 Fable 5.2 与 Mythos 5.2",
+ "recommendReason": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5",
  "primaryUrl": "https://platform.claude.com/docs/en/release-notes/overview#claude-fable-5-2"
 }
