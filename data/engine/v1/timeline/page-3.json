@@ -130,7 +130,7 @@
    "group": {
     "factId": "fact-2026-10-28-deepmind-gemini-4-carbon",
     "additionalSourceCount": 4,
-    "reportCount": 8,
+    "reportCount": 9,
     "memberIds": [
      "sha256:3e32bae570ff21ee"
     ]

@@ -1,7 +1,7 @@
 {
  "publicId": "2026-11-05-vllm-kinference",
  "title": "vLLM：开源 Kinference——面向 vLLM 与 Kubernetes 的推理控制平面",
- "status": "watching",
+ "status": "settled",
  "reportCount": 1,
  "sourceCount": 1,
  "firstReportAt": "2026-11-04T00:00:00.000Z",

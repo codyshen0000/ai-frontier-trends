@@ -1,0 +1,200 @@
+{
+ "kind": "daily",
+ "key": "2026-11-11",
+ "issueNumber": 21,
+ "title": "AI日报 · 2026-11-11",
+ "generatedAt": "2026-11-11T00:32:15.000Z",
+ "lead": {
+  "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+  "leadParagraph": "2026-10-28，Google DeepMind 宣布 Gemini 4 Carbon，称其为目前最强一代，在 Artificial Analysis Intelligence Index v5.0 排名第一（59），并在 SEC-bench Pro、ExploitGym、CWE-bench 等网络安全评测领先；内部称可支撑多日长程工程任务。当时在 Argon 两周后发布，并称正按美国政府自愿预发布测试流程推进，本周起先向部分网络安全防御方开放，再经 Fairwind 计划扩至可信伙伴；面向开发者与消费者的产品面当时仍待开放。入门价与 Argon 相同：每百万输入/输出 token 2/10 美元。2026-11-10，DeepMind 官方宣布 Gemini 4 Carbon 现已全面开放，面向开发者、企业、科研人员与消费者开放；The Verge 亦报道面向公众推出。IT之家随后报道，Google 与 Artificial Analysis 推出多模态知识智能体基准 MKA，Gemini 4 Carbon 取得第二，完成任务的平均成本约为第一名的六分之一。"
+ },
+ "leadItemId": "sha256:3e32bae570ff21ee",
+ "overview": "今日日报收录 2 条：DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升、OpenAI 在 ChatGPT 中推出 Businesses。快讯 4 条。",
+ "highlights": [
+  {
+   "itemId": "sha256:3e32bae570ff21ee",
+   "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+   "summary": "2026-10-28，Google DeepMind 宣布 Gemini 4 Carbon，称其为目前最强一代，在 Artificial Analysis Intelligence Index v5.0 排名第一（59），并在 SEC-bench Pro、ExploitGym、CWE-bench 等网络安全评测领先；内部称可支撑多日长程工程任务。当时在 Argon 两周后发布，并称正按美国政府自愿预发布测试流程推进，本周起先向部分网络安全防御方开放，再经 Fairwind 计划扩至可信伙伴；面向开发者与消费者的产品面当时仍待开放。入门价与 Argon 相同：每百万输入/输出 token 2/10 美元。2026-11-10，DeepMind 官方宣布 Gemini 4 Carbon 现已全面开放，面向开发者、企业、科研人员与消费者开放；The Verge 亦报道面向公众推出。IT之家随后报道，Google 与 Artificial Analysis 推出多模态知识智能体基准 MKA，Gemini 4 Carbon 取得第二，完成任务的平均成本约为第一名的六分之一。",
+   "sourceName": "Google DeepMind Blog",
+   "sourceUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-10-28T17:00:58.000Z",
+   "available": true,
+   "otherSources": 4
+  },
+  {
+   "itemId": "sha256:991ad48e8559b2fe",
+   "title": "OpenAI 在 ChatGPT 中推出 Businesses",
+   "summary": "OpenAI 官方宣布在 ChatGPT 推出 Businesses：商家可以管理自己的商业信息、查看曝光情况，并把兴趣转化成行动。The Verge 报道将向符合条件的美国电商和在线服务企业提供已认证的「Business Agents」，用户可与代表品牌的智能体对话（例如比价）；该功能作为当天公布的一套商业功能的一部分进入测试。TechCrunch 报道称同时推出商业资料（business profiles），意在让 ChatGPT 更接近发现引擎。这是 ChatGPT 的商业产品功能，不是新模型发布。",
+   "sourceName": "OpenAI News",
+   "sourceUrl": "https://openai.com/index/introducing-businesses-chatgpt",
+   "sourceIconUrl": null,
+   "firstParty": true,
+   "publishedAt": "2026-11-10T10:00:00.000Z",
+   "available": true,
+   "otherSources": 4
+  }
+ ],
+ "sections": [
+  {
+   "label": "模型",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:3e32bae570ff21ee",
+     "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+     "summary": "2026-10-28，Google DeepMind 宣布 Gemini 4 Carbon，称其为目前最强一代，在 Artificial Analysis Intelligence Index v5.0 排名第一（59），并在 SEC-bench Pro、ExploitGym、CWE-bench 等网络安全评测领先；内部称可支撑多日长程工程任务。当时在 Argon 两周后发布，并称正按美国政府自愿预发布测试流程推进，本周起先向部分网络安全防御方开放，再经 Fairwind 计划扩至可信伙伴；面向开发者与消费者的产品面当时仍待开放。入门价与 Argon 相同：每百万输入/输出 token 2/10 美元。2026-11-10，DeepMind 官方宣布 Gemini 4 Carbon 现已全面开放，面向开发者、企业、科研人员与消费者开放；The Verge 亦报道面向公众推出。IT之家随后报道，Google 与 Artificial Analysis 推出多模态知识智能体基准 MKA，Gemini 4 Carbon 取得第二，完成任务的平均成本约为第一名的六分之一。",
+     "sourceName": "Google DeepMind Blog",
+     "sourceUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-28T17:00:58.000Z",
+     "available": true,
+     "otherSources": 4
+    },
+    {
+     "itemId": "sha256:0e9fb0eb84f13acf",
+     "title": "DeepMind 发布 AlphaProof Code：用 Lean 验证复杂软件",
+     "summary": "DeepMind 官方博客宣布推出 AlphaProof Code，称这是在深度验证复杂软件方面的突破。其智能体用 Lean 写出证明，用于校验 Signal 的核心加密。这是一次具名的研究/产品发布，不是新的旗舰通用大模型。",
+     "sourceName": "Google DeepMind Blog",
+     "sourceUrl": "https://deepmind.google/blog/introducing-alphaproof-code/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-10T12:02:28.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:6b6709b612e5913e",
+     "title": "DeepMind 发布 Gemini Robotics 2.5：称是其最强视觉-语言-动作模型",
+     "summary": "DeepMind 官方博客宣布 Gemini Robotics 2.5，称这是其最强的视觉-语言-动作（VLA）模型，可提升机器人的灵巧性、可靠性与安全性，并加速现实世界中的通用操作能力。这是机器人模型发布，不是 Gemini 4 Carbon，也不是智元 WITA-Omni。",
+     "sourceName": "Google DeepMind Blog",
+     "sourceUrl": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-09T19:51:47.000Z",
+     "available": true,
+     "otherSources": 1
+    },
+    {
+     "itemId": "sha256:4182359e79e632d3",
+     "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
+     "summary": "Anthropic 官方发布说明（Claude Platform release notes，11 月 9 日）：推出 Claude Fable 5.2（claude-fable-5-2），面向高要求推理与长程智能体工作；Claude Mythos 5.2（claude-mythos-5-2）能力相同，仅向通过 Anthropic 核验计划（如 Cyber Verification Program）的机构开放。两款模型均为 100 万 token 上下文、最长 12.8 万输出 token，并始终开启自适应思考（adaptive thinking）；定价为输入 8 美元/百万 token、输出 40 美元/百万 token（5.1 代为 10/50 美元）。本窗跟进包括量子位整理 Anthropic Claude Fable 5.2 发布后的首批实测与网友演示，称覆盖作曲、拍片和 3D 建模等生成任务。属官方双模型正式发布，不是此前关于 Fable/Opus 的传闻，也不得并入上市进程事件。",
+     "sourceName": "Claude Platform Release Notes",
+     "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview#october-20-2026-2",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-20T00:00:00.000Z",
+     "available": true,
+     "otherSources": 6
+    }
+   ]
+  },
+  {
+   "label": "产品",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:991ad48e8559b2fe",
+     "title": "OpenAI 在 ChatGPT 中推出 Businesses",
+     "summary": "OpenAI 官方宣布在 ChatGPT 推出 Businesses：商家可以管理自己的商业信息、查看曝光情况，并把兴趣转化成行动。The Verge 报道将向符合条件的美国电商和在线服务企业提供已认证的「Business Agents」，用户可与代表品牌的智能体对话（例如比价）；该功能作为当天公布的一套商业功能的一部分进入测试。TechCrunch 报道称同时推出商业资料（business profiles），意在让 ChatGPT 更接近发现引擎。这是 ChatGPT 的商业产品功能，不是新模型发布。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/introducing-businesses-chatgpt",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-10T10:00:00.000Z",
+     "available": true,
+     "otherSources": 4
+    },
+    {
+     "itemId": "sha256:5cd7ff8934485154",
+     "title": "NVIDIA 宣布 Kubernetes Engine（NVKE），用于在 GPU 基础设施上管理集群",
+     "summary": "NVIDIA 技术博客宣布推出 NVIDIA Kubernetes Engine（NVKE），以及一个配套开源项目，用于在 GPU 基础设施上构建和运营托管 Kubernetes 服务。",
+     "sourceName": "NVIDIA Technical Blog",
+     "sourceUrl": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-10T15:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:25d05ca668539a66",
+     "title": "NVIDIA 发布开源组件 Snapshot，可在数秒内启动或恢复 GPU 工作负载",
+     "summary": "NVIDIA 技术博客宣布推出 NVIDIA Snapshot，称这是 NVIDIA DSX AI Factory Platform 的新开源组件，让已初始化的 GPU 工作负载可在推理等场景中复用，并能在数秒内启动或恢复。",
+     "sourceName": "NVIDIA Technical Blog",
+     "sourceUrl": "https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-10T15:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    }
+   ]
+  }
+ ],
+ "flashes": [
+  {
+   "itemId": "sha256:d48977b6fbc84b1e",
+   "title": "Microsoft：发现 Lazarus 后门，可重编程休眠神经元劫持 AI 智能体",
+   "summary": "微软研究院：发现 Lazarus 后门，可重编程休眠神经元劫持智能体。",
+   "sourceName": "Microsoft Research Blog",
+   "sourceUrl": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-11-10T20:52:56.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:3b53bf6090ab9868",
+   "title": "报道：OpenAI 收购旅行创业公司 Odessia",
+   "summary": "报道称 OpenAI 收购旅行创业公司 Odessia，尚未说明旅行业务计划。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-11-10T21:08:52.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:ae543fdc68f7cb26",
+   "title": "报道：纽约 AI 安全法生效，OpenAI 与 Anthropic 将面临新监管",
+   "summary": "纽约即将执行 AI 安全法，OpenAI 与 Anthropic 将面临新监管。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-11-10T20:52:13.000Z",
+   "available": true
+  },
+  {
+   "itemId": "sha256:8128c7853b28b767",
+   "title": "跟进：报道称 Anthropic 七位创始人计划在 IPO 中各套现约 2.5 亿美元",
+   "summary": "Anthropic 七位联合创始人计划在 IPO 中各套现约 2.5 亿美元。",
+   "sourceName": "TechCrunch · AI",
+   "sourceUrl": "https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo/",
+   "sourceIconUrl": null,
+   "firstParty": false,
+   "publishedAt": "2026-10-28T01:15:28.000Z",
+   "available": true
+  }
+ ],
+ "cover": {
+  "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/STK255_Google_Gemini_A.jpg?quality=90&strip=all&crop=0,0,100,100",
+  "width": null,
+  "height": null,
+  "alt": "An image showing the Gemini logo on a dark blue background",
+  "caption": null
+ },
+ "metrics": {
+  "totalEvents": 7,
+  "sourcesCount": 11,
+  "firstPartyEvents": 7,
+  "modelsReleased": 4,
+  "mainCardNote": "今日仅 7 条达收录标准"
+ },
+ "readingMinutes": 5,
+ "prev": "2026-11-10",
+ "next": null
+}

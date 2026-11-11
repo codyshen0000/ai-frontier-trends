@@ -2,29 +2,29 @@
  "publicId": "2026-11-11-openai-chatgpt-businesses",
  "title": "OpenAI 在 ChatGPT 中推出 Businesses",
  "status": "active",
- "reportCount": 3,
- "sourceCount": 3,
+ "reportCount": 5,
+ "sourceCount": 5,
  "firstReportAt": "2026-11-10T10:00:00.000Z",
- "latestAt": "2026-11-10T18:49:52.000Z",
+ "latestAt": "2026-11-10T22:55:36.000Z",
  "digest": null,
  "digestUpdatedAt": null,
  "summary": "OpenAI 官方宣布在 ChatGPT 推出 Businesses：商家可以管理自己的商业信息、查看曝光情况，并把兴趣转化成行动。The Verge 报道将向符合条件的美国电商和在线服务企业提供已认证的「Business Agents」，用户可与代表品牌的智能体对话（例如比价）；该功能作为当天公布的一套商业功能的一部分进入测试。TechCrunch 报道称同时推出商业资料（business profiles），意在让 ChatGPT 更接近发现引擎。这是 ChatGPT 的商业产品功能，不是新模型发布。",
  "excerpt": null,
- "latest": null,
+ "latest": "The Decoder 报道 OpenAI 把 ChatGPT 做成企业目录，并介绍 Business Hub 与面向美国电商、可在 ChatGPT 内直接接待顾客的 Business Agents。IT之家随后报道企业可认领资料、接入商品数据，并提到可为 Business Agent 投放广告，以及 Shopify 商家可走简化验证。",
  "latestReport": null,
  "whyHot": {
-  "participants48h": 3,
+  "participants48h": 5,
   "newParticipants6h": 2,
-  "recentReports24h": 3,
+  "recentReports24h": 5,
   "observationComplete": true,
-  "rank": 3
+  "rank": 1
  },
  "developments": [
   {
    "factId": "fact-2026-11-11-openai-chatgpt-businesses",
    "title": "OpenAI 在 ChatGPT 中推出 Businesses",
    "firstReportAt": "2026-11-10T10:00:00.000Z",
-   "reportCount": 3,
+   "reportCount": 5,
    "representative": {
     "id": "sha256:991ad48e8559b2fe",
     "title": "OpenAI 在 ChatGPT 中推出 Businesses",
@@ -54,6 +54,30 @@
   }
  ],
  "timeline": [
+  {
+   "id": "sha256:645655827833cc32",
+   "title": "跟进：报道称企业可认领 ChatGPT 商家资料，并为 Business Agent 投放广告",
+   "summary": "IT之家：OpenAI 推出 ChatGPT Businesses 测试版，企业可认领资料、接入商品数据，并提到可为 Business Agent 投放广告；Shopify 商家可走简化验证。",
+   "source": {
+    "name": "IT之家（全站，需关键词过滤）",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-10T22:55:36.000Z",
+   "selected": false,
+   "originalUrl": "https://www.ithome.com/1/025/206.htm"
+  },
+  {
+   "id": "sha256:4bf86764d0679af1",
+   "title": "跟进：报道称 OpenAI 把 ChatGPT 做成企业目录，并提供可接待顾客的 Business Agents",
+   "summary": "The Decoder：OpenAI 开放 ChatGPT 作为企业平台，企业可通过 Business Hub 认领资料、添加产品数据；符合条件的美国电商可使用 Business Agents，在 ChatGPT 内直接与顾客对话。",
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-10T20:17:00.000Z",
+   "selected": false,
+   "originalUrl": "https://the-decoder.com/openai-turns-chatgpt-into-a-business-directory-with-ai-agents-that-handle-customer-questions/"
+  },
   {
    "id": "sha256:7e74320883f414fb",
    "title": "跟进：报道称 OpenAI 推出商业资料，想让 ChatGPT 更接近发现引擎",
@@ -146,10 +170,35 @@
    "hour": "2026-11-10T20:00:00.000Z",
    "heat": 26.6,
    "participants": 3
+  },
+  {
+   "hour": "2026-11-10T21:00:00.000Z",
+   "heat": 35.6,
+   "participants": 4
+  },
+  {
+   "hour": "2026-11-10T22:00:00.000Z",
+   "heat": 34.6,
+   "participants": 4
+  },
+  {
+   "hour": "2026-11-10T23:00:00.000Z",
+   "heat": 43.6,
+   "participants": 5
+  },
+  {
+   "hour": "2026-11-11T00:00:00.000Z",
+   "heat": 42.4,
+   "participants": 5
+  },
+  {
+   "hour": "2026-11-11T01:00:00.000Z",
+   "heat": 41.2,
+   "participants": 5
   }
  ],
  "related": [],
  "topics": [],
- "recommendReason": "OpenAI 在 ChatGPT 推出 Businesses 与智能体",
+ "recommendReason": "OpenAI 在 ChatGPT 中推出 Businesses",
  "primaryUrl": "https://openai.com/index/introducing-businesses-chatgpt"
 }

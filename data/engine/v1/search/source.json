@@ -1,6 +1,45 @@
 {
- "generatedAt": "2026-11-10T20:05:00.000Z",
+ "generatedAt": "2026-11-11T01:10:30.000Z",
  "docs": [
+  {
+   "id": "sha256:645655827833cc32",
+   "kind": "item",
+   "title": "跟进：报道称企业可认领 ChatGPT 商家资料，并为 Business Agent 投放广告",
+   "summary": "IT之家：OpenAI 推出 ChatGPT Businesses 测试版，企业可认领资料、接入商品数据，并提到可为 Business Agent 投放广告；Shopify 商家可走简化验证。",
+   "publishedAt": "2026-11-10T22:55:36.000Z",
+   "sourceName": "IT之家（全站，需关键词过滤）",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-11-11-openai-chatgpt-businesses",
+   "originalUrl": "https://www.ithome.com/1/025/206.htm"
+  },
+  {
+   "id": "2026-11-11-openai-chatgpt-businesses",
+   "kind": "event",
+   "title": "OpenAI 在 ChatGPT 中推出 Businesses",
+   "summary": "OpenAI 官方宣布在 ChatGPT 推出 Businesses：商家可以管理自己的商业信息、查看曝光情况，并把兴趣转化成行动。The Verge 报道将向符合条件的美国电商和在线服务企业提供已认证的「Business Agents」，用户可与代表品牌的智能体对话（例如比价）；该功能作为当天公布的一套商业功能的一部分进入测试。TechCrunch 报道称同时推出商业资料（business profiles），意在让 ChatGPT 更接近发现引擎。这是 ChatGPT 的商业产品功能，不是新模型发布。",
+   "publishedAt": "2026-11-10T22:55:36.000Z",
+   "sourceNames": [
+    "IT之家（全站，需关键词过滤）",
+    "OpenAI News",
+    "TechCrunch · AI",
+    "The Decoder",
+    "The Verge · AI"
+   ],
+   "path": "/events/2026-11-11-openai-chatgpt-businesses/"
+  },
+  {
+   "id": "sha256:4bf86764d0679af1",
+   "kind": "item",
+   "title": "跟进：报道称 OpenAI 把 ChatGPT 做成企业目录，并提供可接待顾客的 Business Agents",
+   "summary": "The Decoder：OpenAI 开放 ChatGPT 作为企业平台，企业可通过 Business Hub 认领资料、添加产品数据；符合条件的美国电商可使用 Business Agents，在 ChatGPT 内直接与顾客对话。",
+   "publishedAt": "2026-11-10T20:17:00.000Z",
+   "sourceName": "The Decoder",
+   "category": "product",
+   "selected": false,
+   "eventPublicId": "2026-11-11-openai-chatgpt-businesses",
+   "originalUrl": "https://the-decoder.com/openai-turns-chatgpt-into-a-business-directory-with-ai-agents-that-handle-customer-questions/"
+  },
   {
    "id": "sha256:7e74320883f414fb",
    "kind": "item",
@@ -12,19 +51,6 @@
    "selected": false,
    "eventPublicId": "2026-11-11-openai-chatgpt-businesses",
    "originalUrl": "https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google/"
-  },
-  {
-   "id": "2026-11-11-openai-chatgpt-businesses",
-   "kind": "event",
-   "title": "OpenAI 在 ChatGPT 中推出 Businesses",
-   "summary": "OpenAI 官方宣布在 ChatGPT 推出 Businesses：商家可以管理自己的商业信息、查看曝光情况，并把兴趣转化成行动。The Verge 报道将向符合条件的美国电商和在线服务企业提供已认证的「Business Agents」，用户可与代表品牌的智能体对话（例如比价）；该功能作为当天公布的一套商业功能的一部分进入测试。TechCrunch 报道称同时推出商业资料（business profiles），意在让 ChatGPT 更接近发现引擎。这是 ChatGPT 的商业产品功能，不是新模型发布。",
-   "publishedAt": "2026-11-10T18:49:52.000Z",
-   "sourceNames": [
-    "OpenAI News",
-    "TechCrunch · AI",
-    "The Verge · AI"
-   ],
-   "path": "/events/2026-11-11-openai-chatgpt-businesses/"
   },
   {
    "id": "sha256:8c4ca9fd50b0aa50",

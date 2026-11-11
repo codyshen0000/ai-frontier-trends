@@ -1,281 +1,281 @@
 {
-  "computedAt": "2026-11-10T20:05:00.000Z",
-  "windowHours": 48,
-  "entries": [
+ "computedAt": "2026-11-11T01:10:30.000Z",
+ "windowHours": 48,
+ "entries": [
+  {
+   "rank": 1,
+   "story": {
+    "publicId": "2026-11-11-openai-chatgpt-businesses",
+    "title": "OpenAI 在 ChatGPT 中推出 Businesses"
+   },
+   "heat": 41.0,
+   "trend": "up",
+   "trendPct": 50.7,
+   "badges": [
+    "rising"
+   ],
+   "participantCount": 5,
+   "sourceCount": 4,
+   "sourceNames": [
+    "The Decoder",
+    "TechCrunch · AI",
+    "The Verge · AI",
+    "OpenAI News"
+   ],
+   "participants": [
     {
-      "rank": 1,
-      "story": {
-        "publicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
-        "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2"
-      },
-      "heat": 41.2,
-      "trend": "flat",
-      "trendPct": -8.6,
-      "badges": [],
-      "participantCount": 7,
-      "sourceCount": 7,
-      "sourceNames": [
-        "The Decoder",
-        "量子位",
-        "Latent Space",
-        "Simon Willison",
-        "TechCrunch · AI",
-        "The Verge · AI",
-        "Claude Platform Release Notes"
-      ],
-      "participants": [
-        {
-          "name": "Claude Platform Release Notes",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Decoder",
-          "kind": "editorial"
-        },
-        {
-          "name": "量子位",
-          "kind": "editorial"
-        },
-        {
-          "name": "Latent Space",
-          "kind": "editorial"
-        },
-        {
-          "name": "Simon Willison",
-          "kind": "editorial"
-        },
-        {
-          "name": "TechCrunch · AI",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Verge · AI",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        25.2,
-        24.4,
-        33.5,
-        42.3,
-        51.1,
-        49.7,
-        48.3,
-        46.9,
-        45.5,
-        44.2,
-        44.5,
-        53.1,
-        53.8,
-        52.2,
-        50.8,
-        49.3,
-        47.9,
-        46.5,
-        45.2,
-        47.7,
-        46.3,
-        45,
-        43.7,
-        42.5,
-        41.3
-      ],
-      "summary": null,
-      "latest": "The Decoder 报道 Claude Fable 5.2 在 Remote Labor Index 上约能以专业质量完成 41.3% 的真实自由职业任务（一年前最高约 2.5%）。",
-      "cover": null,
-      "rankDelta": 0,
-      "heatDeltaPct": null
+     "name": "OpenAI News",
+     "kind": "editorial"
     },
     {
-      "rank": 2,
-      "story": {
-        "publicId": "2026-10-28-deepmind-gemini-4-carbon",
-        "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升"
-      },
-      "heat": 27.4,
-      "trend": "new",
-      "trendPct": null,
-      "badges": [],
-      "participantCount": 3,
-      "sourceCount": 3,
-      "sourceNames": [
-        "The Decoder",
-        "Google DeepMind Blog",
-        "The Verge · AI"
-      ],
-      "participants": [
-        {
-          "name": "Google DeepMind Blog",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Decoder",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Verge · AI",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        10,
-        19.4,
-        18.9,
-        28.2,
-        27.4
-      ],
-      "summary": null,
-      "latest": "DeepMind 宣布 Gemini 4 Carbon 现已全面开放；The Verge 报道面向公众推出，并提到一项智能体 swarm 功能。The Decoder 随后报道称，该模型在约两周测试后全面开放，多项基准领先，部分评测超过 Claude Fable 5.2，且单次任务成本不到一半；并称 Google 正在预览通过 /swarm 协调的智能体团队。",
-      "cover": null,
-      "rankDelta": 0,
-      "heatDeltaPct": 0.4
+     "name": "The Decoder",
+     "kind": "editorial"
     },
     {
-      "rank": 3,
-      "story": {
-        "publicId": "2026-11-11-openai-chatgpt-businesses",
-        "title": "OpenAI 在 ChatGPT 中推出 Businesses"
-      },
-      "heat": 26.6,
-      "trend": "up",
-      "trendPct": 198.9,
-      "badges": [
-        "rising"
-      ],
-      "participantCount": 3,
-      "sourceCount": 3,
-      "sourceNames": [
-        "TechCrunch · AI",
-        "The Verge · AI",
-        "OpenAI News"
-      ],
-      "participants": [
-        {
-          "name": "OpenAI News",
-          "kind": "editorial"
-        },
-        {
-          "name": "TechCrunch · AI",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Verge · AI",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        10,
-        9.7,
-        9.4,
-        9.2,
-        8.9,
-        8.7,
-        8.4,
-        8.2,
-        17.9,
-        27.4,
-        26.6
-      ],
-      "summary": "OpenAI 官方宣布在 ChatGPT 推出 Businesses：商家可以管理自己的商业信息、查看曝光情况，并把兴趣转化成行动。The Verge 报道将向符合条件的美国电商和在线服务企业提供已认证的「Business Agents」，用户可与代表品牌的智能体对话（例如比价）；该功能作为当天公布的一套商业功能的一部分进入测试。TechCrunch 报道称同时推出商业资料（business profiles），意在让 ChatGPT 更接近发现引擎。这是 ChatGPT 的商业产品功能，不是新模型发布。",
-      "latest": null,
-      "cover": null,
-      "rankDelta": 0,
-      "heatDeltaPct": 0.4
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
     },
     {
-      "rank": 4,
-      "story": {
-        "publicId": "2026-11-10-deepmind-gemini-robotics-2-5",
-        "title": "DeepMind 发布 Gemini Robotics 2.5：称是其最强视觉-语言-动作模型"
-      },
-      "heat": 14.2,
-      "trend": "up",
-      "trendPct": 140.7,
-      "badges": [
-        "rising"
-      ],
-      "participantCount": 2,
-      "sourceCount": 2,
-      "sourceNames": [
-        "The Decoder",
-        "Google DeepMind Blog"
-      ],
-      "participants": [
-        {
-          "name": "Google DeepMind Blog",
-          "kind": "editorial"
-        },
-        {
-          "name": "The Decoder",
-          "kind": "editorial"
-        }
-      ],
-      "spark": [
-        10,
-        9.7,
-        9.4,
-        9.1,
-        8.9,
-        8.6,
-        8.4,
-        8.1,
-        7.9,
-        7.7,
-        7.5,
-        7.2,
-        7,
-        6.8,
-        6.6,
-        6.5,
-        6.3,
-        6.1,
-        5.9,
-        5.8,
-        5.6,
-        5.4,
-        15,
-        14.6,
-        14.2
-      ],
-      "summary": null,
-      "latest": "The Decoder 报道称，Gemini Robotics 2.5 已与 Apptronik 在匈牙利和德国的奔驰产线上试点，人形机器人 Apollo 2 分拣金属零件的准确率约 96%。",
-      "cover": null,
-      "rankDelta": 0,
-      "heatDeltaPct": null
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
     }
-  ]
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    10.0,
+    9.7,
+    9.4,
+    9.2,
+    8.9,
+    8.7,
+    8.4,
+    8.2,
+    17.9,
+    27.4,
+    26.6,
+    35.6,
+    34.6,
+    43.6,
+    42.4,
+    41.2
+   ],
+   "summary": "OpenAI 官方宣布在 ChatGPT 推出 Businesses：商家可以管理自己的商业信息、查看曝光情况，并把兴趣转化成行动。The Verge 报道将向符合条件的美国电商和在线服务企业提供已认证的「Business Agents」，用户可与代表品牌的智能体对话（例如比价）；该功能作为当天公布的一套商业功能的一部分进入测试。TechCrunch 报道称同时推出商业资料（business profiles），意在让 ChatGPT 更接近发现引擎。这是 ChatGPT 的商业产品功能，不是新模型发布。",
+   "latest": "The Decoder 报道 OpenAI 把 ChatGPT 做成企业目录，并介绍 Business Hub 与面向美国电商、可在 ChatGPT 内直接接待顾客的 Business Agents。IT之家随后报道企业可认领资料、接入商品数据，并提到可为 Business Agent 投放广告，以及 Shopify 商家可走简化验证。",
+   "cover": null
+  },
+  {
+   "rank": 2,
+   "story": {
+    "publicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
+    "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2"
+   },
+   "heat": 33.1,
+   "trend": "down",
+   "trendPct": -21.7,
+   "badges": [],
+   "participantCount": 6,
+   "sourceCount": 6,
+   "sourceNames": [
+    "The Decoder",
+    "量子位",
+    "Latent Space",
+    "Simon Willison",
+    "TechCrunch · AI",
+    "The Verge · AI"
+   ],
+   "participants": [
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "量子位",
+     "kind": "editorial"
+    },
+    {
+     "name": "Latent Space",
+     "kind": "editorial"
+    },
+    {
+     "name": "Simon Willison",
+     "kind": "editorial"
+    },
+    {
+     "name": "TechCrunch · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    49.7,
+    48.3,
+    46.9,
+    45.5,
+    44.2,
+    44.5,
+    53.1,
+    53.8,
+    52.2,
+    50.8,
+    49.3,
+    47.9,
+    46.5,
+    45.2,
+    47.7,
+    46.3,
+    45.0,
+    43.7,
+    42.5,
+    41.3,
+    40.1,
+    39.0,
+    37.9,
+    34.3,
+    33.3
+   ],
+   "summary": null,
+   "latest": "The Decoder 报道 Claude Fable 5.2 在 Remote Labor Index 上约能以专业质量完成 41.3% 的真实自由职业任务（一年前最高约 2.5%）。",
+   "cover": null
+  },
+  {
+   "rank": 3,
+   "story": {
+    "publicId": "2026-10-28-deepmind-gemini-4-carbon",
+    "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升"
+   },
+   "heat": 32.9,
+   "trend": "up",
+   "trendPct": 17.5,
+   "badges": [
+    "rising"
+   ],
+   "participantCount": 4,
+   "sourceCount": 3,
+   "sourceNames": [
+    "The Decoder",
+    "Google DeepMind Blog",
+    "The Verge · AI"
+   ],
+   "participants": [
+    {
+     "name": "Google DeepMind Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    },
+    {
+     "name": "IT之家（全站，需关键词过滤）",
+     "kind": "signal"
+    }
+   ],
+   "spark": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    10.0,
+    19.4,
+    18.9,
+    28.2,
+    27.4,
+    26.6,
+    25.8,
+    35.0,
+    34.0,
+    33.1
+   ],
+   "summary": null,
+   "latest": "DeepMind 宣布 Gemini 4 Carbon 现已全面开放；The Verge 报道面向公众推出，并提到一项智能体 swarm 功能。The Decoder 随后报道称，该模型在约两周测试后全面开放，多项基准领先，部分评测超过 Claude Fable 5.2，且单次任务成本不到一半；并称 Google 正在预览通过 /swarm 协调的智能体团队。IT之家报道，Google 与 Artificial Analysis 推出多模态知识智能体基准 MKA，Gemini 4 Carbon 取得第二，完成任务的平均成本约为第一名的六分之一。",
+   "cover": null
+  },
+  {
+   "rank": 4,
+   "story": {
+    "publicId": "2026-11-10-deepmind-gemini-robotics-2-5",
+    "title": "DeepMind 发布 Gemini Robotics 2.5：称是其最强视觉-语言-动作模型"
+   },
+   "heat": 12.2,
+   "trend": "down",
+   "trendPct": -15.9,
+   "badges": [],
+   "participantCount": 2,
+   "sourceCount": 2,
+   "sourceNames": [
+    "The Decoder",
+    "Google DeepMind Blog"
+   ],
+   "participants": [
+    {
+     "name": "Google DeepMind Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Decoder",
+     "kind": "editorial"
+    }
+   ],
+   "spark": [
+    8.6,
+    8.4,
+    8.1,
+    7.9,
+    7.7,
+    7.5,
+    7.2,
+    7.0,
+    6.8,
+    6.6,
+    6.5,
+    6.3,
+    6.1,
+    5.9,
+    5.8,
+    5.6,
+    5.4,
+    15.0,
+    14.6,
+    14.2,
+    13.8,
+    13.4,
+    13.0,
+    12.7,
+    12.3
+   ],
+   "summary": null,
+   "latest": "The Decoder 报道称，Gemini Robotics 2.5 已与 Apptronik 在匈牙利和德国的奔驰产线上试点，人形机器人 Apollo 2 分拣金属零件的准确率约 96%。",
+   "cover": null
+  }
+ ]
 }

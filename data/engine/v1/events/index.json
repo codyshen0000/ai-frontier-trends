@@ -3,16 +3,16 @@
   {
    "publicId": "2026-11-11-openai-chatgpt-businesses",
    "title": "OpenAI 在 ChatGPT 中推出 Businesses",
-   "latestAt": "2026-11-10T18:49:52.000Z",
-   "reportCount": 3,
-   "hotRank": 3
+   "latestAt": "2026-11-10T22:55:36.000Z",
+   "reportCount": 5,
+   "hotRank": 1
   },
   {
    "publicId": "2026-10-28-deepmind-gemini-4-carbon",
    "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
    "latestAt": "2026-11-10T18:19:13.000Z",
    "reportCount": 5,
-   "hotRank": 2
+   "hotRank": 3
   },
   {
    "publicId": "2026-11-10-deepmind-gemini-robotics-2-5",
@@ -47,7 +47,7 @@
    "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
    "latestAt": "2026-11-10T06:34:44.000Z",
    "reportCount": 7,
-   "hotRank": 1
+   "hotRank": 2
   },
   {
    "publicId": "2026-11-07-anthropic-agent-memory-dreaming",

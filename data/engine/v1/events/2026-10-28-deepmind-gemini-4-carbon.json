@@ -10,14 +10,14 @@
  "digestUpdatedAt": null,
  "summary": null,
  "excerpt": null,
- "latest": "DeepMind 宣布 Gemini 4 Carbon 现已全面开放；The Verge 报道面向公众推出，并提到一项智能体 swarm 功能。The Decoder 随后报道称，该模型在约两周测试后全面开放，多项基准领先，部分评测超过 Claude Fable 5.2，且单次任务成本不到一半；并称 Google 正在预览通过 /swarm 协调的智能体团队。",
+ "latest": "DeepMind 宣布 Gemini 4 Carbon 现已全面开放；The Verge 报道面向公众推出，并提到一项智能体 swarm 功能。The Decoder 随后报道称，该模型在约两周测试后全面开放，多项基准领先，部分评测超过 Claude Fable 5.2，且单次任务成本不到一半；并称 Google 正在预览通过 /swarm 协调的智能体团队。IT之家报道，Google 与 Artificial Analysis 推出多模态知识智能体基准 MKA，Gemini 4 Carbon 取得第二，完成任务的平均成本约为第一名的六分之一。",
  "latestReport": null,
  "whyHot": {
-  "participants48h": 3,
-  "newParticipants6h": 3,
-  "recentReports24h": 3,
+  "participants48h": 4,
+  "newParticipants6h": 1,
+  "recentReports24h": 4,
   "observationComplete": true,
-  "rank": 2
+  "rank": 3
  },
  "developments": [
   {
@@ -152,6 +152,31 @@
    "hour": "2026-11-10T20:00:00.000Z",
    "heat": 27.4,
    "participants": 3
+  },
+  {
+   "hour": "2026-11-10T21:00:00.000Z",
+   "heat": 26.6,
+   "participants": 3
+  },
+  {
+   "hour": "2026-11-10T22:00:00.000Z",
+   "heat": 25.8,
+   "participants": 3
+  },
+  {
+   "hour": "2026-11-10T23:00:00.000Z",
+   "heat": 35.0,
+   "participants": 4
+  },
+  {
+   "hour": "2026-11-11T00:00:00.000Z",
+   "heat": 34.0,
+   "participants": 4
+  },
+  {
+   "hour": "2026-11-11T01:00:00.000Z",
+   "heat": 33.1,
+   "participants": 4
   }
  ],
  "related": [],
