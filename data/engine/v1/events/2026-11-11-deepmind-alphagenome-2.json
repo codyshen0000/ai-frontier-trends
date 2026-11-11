@@ -1,0 +1,98 @@
+{
+ "publicId": "2026-11-11-deepmind-alphagenome-2",
+ "title": "DeepMind 发布 AlphaGenome 2：预测变异如何影响特定细胞",
+ "status": "active",
+ "reportCount": 2,
+ "sourceCount": 2,
+ "firstReportAt": "2026-11-11T15:00:00.000Z",
+ "latestAt": "2026-11-11T15:00:15.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": "DeepMind 发布下一代 DNA 序列模型 AlphaGenome 2，用于预测 DNA 序列及其变异如何影响特定人类细胞类型，并称可帮助寻找疾病的细胞根源。 官方称新模型改为按单一生物条件做预测，并在超过一亿个单个细胞剖面（profiles）上训练；在 TenK10K 免疫细胞数据上，识别到的因果变异比例约为原版 AlphaGenome 的两倍（30% 对 16%）。AlphaGenome 2 即日起通过 AlphaGenome API 向非商业研究开放，商业研究为私有预览；官方注明仅供研究，尚未用于临床或诊断。",
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 2,
+  "newParticipants6h": 2,
+  "recentReports24h": 2,
+  "observationComplete": true,
+  "rank": 4
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-11-11-deepmind-alphagenome-2",
+   "title": "DeepMind 发布 AlphaGenome 2：预测变异如何影响特定细胞",
+   "firstReportAt": "2026-11-11T15:00:00.000Z",
+   "reportCount": 2,
+   "representative": {
+    "id": "sha256:ba0fcf4e325b4115",
+    "title": "DeepMind 发布 AlphaGenome 2：预测变异如何影响特定细胞",
+    "summary": "DeepMind 发布下一代 DNA 序列模型 AlphaGenome 2，用于预测 DNA 序列及其变异如何影响特定人类细胞类型，并称可帮助寻找疾病的细胞根源。官方称在超过一亿个单个细胞剖面（profiles）上训练，TenK10K 上因果变异识别比例约为原版两倍，并已通过 API 向非商业研究开放。",
+    "source": {
+     "name": "Google DeepMind Blog",
+     "firstParty": true
+    },
+    "publishedAt": "2026-11-11T15:00:15.000Z",
+    "selected": true,
+    "originalUrl": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"
+   }
+  }
+ ],
+ "officialReports": [
+  {
+   "id": "sha256:ba0fcf4e325b4115",
+   "title": "DeepMind 发布 AlphaGenome 2：预测变异如何影响特定细胞",
+   "summary": "DeepMind 发布下一代 DNA 序列模型 AlphaGenome 2，用于预测 DNA 序列及其变异如何影响特定人类细胞类型，并称可帮助寻找疾病的细胞根源。官方称在超过一亿个单个细胞剖面（profiles）上训练，TenK10K 上因果变异识别比例约为原版两倍，并已通过 API 向非商业研究开放。",
+   "source": {
+    "name": "Google DeepMind Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-11T15:00:15.000Z",
+   "selected": true,
+   "originalUrl": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"
+  }
+ ],
+ "timeline": [
+  {
+   "id": "sha256:ba0fcf4e325b4115",
+   "title": "DeepMind 发布 AlphaGenome 2：预测变异如何影响特定细胞",
+   "summary": "DeepMind 发布下一代 DNA 序列模型 AlphaGenome 2，用于预测 DNA 序列及其变异如何影响特定人类细胞类型，并称可帮助寻找疾病的细胞根源。官方称在超过一亿个单个细胞剖面（profiles）上训练，TenK10K 上因果变异识别比例约为原版两倍，并已通过 API 向非商业研究开放。",
+   "source": {
+    "name": "Google DeepMind Blog",
+    "firstParty": true
+   },
+   "publishedAt": "2026-11-11T15:00:15.000Z",
+   "selected": true,
+   "originalUrl": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"
+  },
+  {
+   "id": "sha256:943bd9ebdd36c562",
+   "title": "DeepMind 发布 AlphaGenome 2：预测变异如何影响特定细胞",
+   "summary": null,
+   "source": {
+    "name": "The Verge · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-11T15:00:00.000Z",
+   "selected": false,
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-11-11T15:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-11T16:00:00.000Z",
+   "heat": 19.4,
+   "participants": 2
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "DeepMind 发布 AlphaGenome 2",
+ "primaryUrl": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"
+}

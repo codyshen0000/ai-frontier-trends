@@ -2,7 +2,7 @@
  {
   "rank": 1,
   "title": "OpenAI 在 ChatGPT 中推出 Businesses",
-  "heat": 30.2,
+  "heat": 26.2,
   "trend": "down",
   "storyPublicId": "2026-11-11-openai-chatgpt-businesses",
   "itemId": "sha256:991ad48e8559b2fe",
@@ -33,7 +33,7 @@
  {
   "rank": 2,
   "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
-  "heat": 24.4,
+  "heat": 21.2,
   "trend": "down",
   "storyPublicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
   "itemId": "sha256:4182359e79e632d3",
@@ -68,7 +68,7 @@
  {
   "rank": 3,
   "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
-  "heat": 24.3,
+  "heat": 21.1,
   "trend": "down",
   "storyPublicId": "2026-10-28-deepmind-gemini-4-carbon",
   "itemId": "sha256:3e32bae570ff21ee",
@@ -94,8 +94,27 @@
  },
  {
   "rank": 4,
+  "title": "DeepMind 发布 AlphaGenome 2：预测变异如何影响特定细胞",
+  "heat": 19.1,
+  "trend": "new",
+  "storyPublicId": "2026-11-11-deepmind-alphagenome-2",
+  "itemId": "sha256:ba0fcf4e325b4115",
+  "participants": [
+   {
+    "name": "Google DeepMind Blog",
+    "kind": "editorial"
+   },
+   {
+    "name": "The Verge · AI",
+    "kind": "editorial"
+   }
+  ],
+  "participantCount": 2
+ },
+ {
+  "rank": 5,
   "title": "DeepMind 发布 Gemini Robotics 2.5：称是其最强视觉-语言-动作模型",
-  "heat": 9.0,
+  "heat": 7.8,
   "trend": "down",
   "storyPublicId": "2026-11-10-deepmind-gemini-robotics-2-5",
   "itemId": "sha256:6b6709b612e5913e",

@@ -8,6 +8,17 @@
  },
  "items": [
   {
+   "guid": "sha256:ba0fcf4e325b4115",
+   "title": "DeepMind 发布 AlphaGenome 2：预测变异如何影响特定细胞",
+   "summary": "DeepMind 发布下一代 DNA 序列模型 AlphaGenome 2，用于预测 DNA 序列及其变异如何影响特定人类细胞类型，并称可帮助寻找疾病的细胞根源。官方称在超过一亿个单个细胞剖面（profiles）上训练，TenK10K 上因果变异识别比例约为原版两倍，并已通过 API 向非商业研究开放。",
+   "originalUrl": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+   "pubDate": "2026-11-11T15:00:15.000Z",
+   "sourceName": "Google DeepMind Blog",
+   "category": "model",
+   "categoryLabel": "模型",
+   "eventPublicId": "2026-11-11-deepmind-alphagenome-2"
+  },
+  {
    "guid": "sha256:5cd7ff8934485154",
    "title": "NVIDIA 宣布 Kubernetes Engine（NVKE），用于在 GPU 基础设施上管理集群",
    "summary": "NVIDIA 技术博客宣布推出 NVIDIA Kubernetes Engine（NVKE），以及一个配套开源项目，用于在 GPU 基础设施上构建和运营托管 Kubernetes 服务。",
@@ -545,17 +556,6 @@
    "category": "product",
    "categoryLabel": "产品",
    "eventPublicId": "2026-10-28-nvidia-cuda-134-gpu-sharing"
-  },
-  {
-   "guid": "sha256:e97319d8730a2e80",
-   "title": "Google Research：Sleep 框架让 LLM 持续学习并减少遗忘",
-   "summary": "Google Research 提出 sleep 持续学习范式，交替活跃交互与离线巩固。",
-   "originalUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
-   "pubDate": "2026-10-27T17:35:00.000Z",
-   "sourceName": "Google Research Blog",
-   "category": "paper",
-   "categoryLabel": "论文",
-   "eventPublicId": "2026-10-28-google-sleep-framework-continual"
   }
  ]
 }

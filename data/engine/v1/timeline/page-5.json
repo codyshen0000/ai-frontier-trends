@@ -6,6 +6,36 @@
  },
  "cards": [
   {
+   "key": "sha256:f8c156dba7886826",
+   "anchorAt": "2026-10-23T10:00:00.000Z",
+   "item": {
+    "id": "sha256:f8c156dba7886826",
+    "title": "OpenAI：加固前沿模型训练环境，默认离线并大规模红队",
+    "summary": null,
+    "reason": "OpenAI 默认离线训练并大规模红队加固前沿环境",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-23T10:00:00.000Z",
+    "timelineAt": "2026-10-23T10:00:00.000Z",
+    "category": "industry",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-24-openai-securing-frontier-training",
+    "originalUrl": "https://openai.com/index/securing-our-frontier-model-training-environment"
+   },
+   "group": {
+    "factId": "fact-2026-10-24-openai-securing-frontier-training",
+    "additionalSourceCount": 3,
+    "reportCount": 4,
+    "memberIds": [
+     "sha256:f8c156dba7886826"
+    ]
+   }
+  },
+  {
    "key": "sha256:5d20b75fc1534a89",
    "anchorAt": "2026-10-23T00:00:00.000Z",
    "item": {
@@ -498,29 +528,6 @@
     "originalUrl": "https://huggingface.co/blog/ibm-granite/granite-speech-5"
    },
    "group": null
-  },
-  {
-   "key": "sha256:859a2ca12c0c52e9",
-   "anchorAt": "2026-10-21T13:44:12.000Z",
-   "item": {
-    "id": "sha256:859a2ca12c0c52e9",
-    "title": "Wiz：LiteLLM 1.107.0 被投毒，窃取云与 AI 凭证",
-    "summary": "恶意 LiteLLM 1.107.0 上架 PyPI/Docker，窃取浏览器云与 AI 密钥并含休眠 C2。",
-    "reason": "LiteLLM 恶意包上架 PyPI，窃取云与 AI 凭证",
-    "source": {
-     "name": "Wiz Blog"
-    },
-    "publishedAt": "2026-10-21T13:44:12.000Z",
-    "timelineAt": "2026-10-21T13:44:12.000Z",
-    "category": "industry",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-22-litellm-pypi-compromise",
-    "originalUrl": "https://www.wiz.io/blog/litellm-compromised-steals-credentials"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-6.json",
@@ -528,5 +535,5 @@
  "dayCounts": {},
  "page": 5,
  "pageCount": 6,
- "total": 116
+ "total": 117
 }

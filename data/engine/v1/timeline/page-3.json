@@ -6,6 +6,36 @@
  },
  "cards": [
   {
+   "key": "sha256:5a25565ab71a8d06",
+   "anchorAt": "2026-10-29T12:00:07.000Z",
+   "item": {
+    "id": "sha256:5a25565ab71a8d06",
+    "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
+    "summary": "Mistral 发布并开源 Mistral Large 4（代号 Le Chonk）权重：约 1 万亿参数、原生多模态，称在开源权重编码评测领先并强化防御性网络安全；提供多种推理模式以平衡成本与性能，在欧洲基础设施训练。",
+    "reason": "Mistral 开源 Large 4（Le Chonk）1T 多模态权重",
+    "source": {
+     "name": "Mistral AI News"
+    },
+    "publishedAt": "2026-10-29T12:00:07.000Z",
+    "timelineAt": "2026-10-29T12:00:07.000Z",
+    "category": "model",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-29-mistral-large-4-lechonk",
+    "originalUrl": "https://mistral.ai/news/mistral-large-4-oss/"
+   },
+   "group": {
+    "factId": "fact-2026-10-29-mistral-large-4-lechonk",
+    "additionalSourceCount": 5,
+    "reportCount": 6,
+    "memberIds": [
+     "sha256:5a25565ab71a8d06"
+    ]
+   }
+  },
+  {
    "key": "sha256:0f01adb2acab0a67",
    "anchorAt": "2026-10-29T09:00:00.000Z",
    "item": {
@@ -493,38 +523,6 @@
     "originalUrl": "https://openai.com/index/oracle-apps-in-chatgpt"
    },
    "group": null
-  },
-  {
-   "key": "sha256:1a162d33f42d8b8e",
-   "anchorAt": "2026-10-27T05:46:51.000Z",
-   "item": {
-    "id": "sha256:1a162d33f42d8b8e",
-    "title": "蚂蚁百灵开源 Ling-3.1-flash-1019：560B/25B MoE，AA 智力指数 44",
-    "summary": null,
-    "reason": "蚂蚁开源 Ling-3.1-flash-1019 并报 AA 指数提升",
-    "source": {
-     "name": "HF 机构新模型 · inclusionAI"
-    },
-    "publishedAt": "2026-10-27T05:46:51.000Z",
-    "timelineAt": "2026-10-27T05:46:51.000Z",
-    "category": "product",
-    "tags": [
-     "fp_hop_as_rep"
-    ],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-10-28-antgroup-ling-31-flash-1019",
-    "originalUrl": "https://huggingface.co/inclusionAI/Ling-3.1-flash-1019"
-   },
-   "group": {
-    "factId": "fact-2026-10-28-antgroup-ling-31-flash-1019",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:1a162d33f42d8b8e"
-    ]
-   }
   }
  ],
  "nextCursor": "timeline/page-4.json",
@@ -532,5 +530,5 @@
  "dayCounts": {},
  "page": 3,
  "pageCount": 6,
- "total": 116
+ "total": 117
 }

@@ -1,6 +1,13 @@
 {
  "events": [
   {
+   "publicId": "2026-11-11-deepmind-alphagenome-2",
+   "title": "DeepMind 发布 AlphaGenome 2：预测变异如何影响特定细胞",
+   "latestAt": "2026-11-11T15:00:15.000Z",
+   "reportCount": 2,
+   "hotRank": 4
+  },
+  {
    "publicId": "2026-11-11-openai-chatgpt-businesses",
    "title": "OpenAI 在 ChatGPT 中推出 Businesses",
    "latestAt": "2026-11-10T22:55:36.000Z",
@@ -19,7 +26,7 @@
    "title": "DeepMind 发布 Gemini Robotics 2.5：称是其最强视觉-语言-动作模型",
    "latestAt": "2026-11-10T17:11:10.000Z",
    "reportCount": 2,
-   "hotRank": 4
+   "hotRank": 5
   },
   {
    "publicId": "2026-11-10-nvidia-kubernetes-engine",

@@ -6,6 +6,36 @@
  },
  "cards": [
   {
+   "key": "sha256:ba0fcf4e325b4115",
+   "anchorAt": "2026-11-11T15:00:15.000Z",
+   "item": {
+    "id": "sha256:ba0fcf4e325b4115",
+    "title": "DeepMind 发布 AlphaGenome 2：预测变异如何影响特定细胞",
+    "summary": "DeepMind 发布下一代 DNA 序列模型 AlphaGenome 2，用于预测 DNA 序列及其变异如何影响特定人类细胞类型，并称可帮助寻找疾病的细胞根源。官方称在超过一亿个单个细胞剖面（profiles）上训练，TenK10K 上因果变异识别比例约为原版两倍，并已通过 API 向非商业研究开放。",
+    "reason": "DeepMind 发布 AlphaGenome 2",
+    "source": {
+     "name": "Google DeepMind Blog"
+    },
+    "publishedAt": "2026-11-11T15:00:15.000Z",
+    "timelineAt": "2026-11-11T15:00:15.000Z",
+    "category": "model",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-11-11-deepmind-alphagenome-2",
+    "originalUrl": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"
+   },
+   "group": {
+    "factId": "fact-2026-11-11-deepmind-alphagenome-2",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:ba0fcf4e325b4115"
+    ]
+   }
+  },
+  {
    "key": "sha256:5cd7ff8934485154",
    "anchorAt": "2026-11-10T15:00:00.000Z",
    "item": {
@@ -525,29 +555,6 @@
      "sha256:fbaa86a829ad59fd"
     ]
    }
-  },
-  {
-   "key": "sha256:2aca440b2c0823d7",
-   "anchorAt": "2026-11-04T00:00:00.000Z",
-   "item": {
-    "id": "sha256:2aca440b2c0823d7",
-    "title": "vLLM：开源 Kinference——面向 vLLM 与 Kubernetes 的推理控制平面",
-    "summary": "vLLM 官方博客：发布开源 Kinference，作为 vLLM 与 Kubernetes 的推理控制平面。",
-    "reason": "vLLM：开源 Kinference 推理控制平面",
-    "source": {
-     "name": "vLLM Blog"
-    },
-    "publishedAt": "2026-11-04T00:00:00.000Z",
-    "timelineAt": "2026-11-04T00:00:00.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-11-05-vllm-kinference",
-    "originalUrl": "https://vllm.ai/blog/2026-11-04-introducing-kinference"
-   },
-   "group": null
   }
  ],
  "nextCursor": "timeline/page-2.json",
@@ -555,7 +562,7 @@
   {
    "rank": 1,
    "title": "OpenAI 在 ChatGPT 中推出 Businesses",
-   "heat": 30.2,
+   "heat": 26.2,
    "trend": "down",
    "storyPublicId": "2026-11-11-openai-chatgpt-businesses",
    "itemId": "sha256:991ad48e8559b2fe",
@@ -586,7 +593,7 @@
   {
    "rank": 2,
    "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
-   "heat": 24.4,
+   "heat": 21.2,
    "trend": "down",
    "storyPublicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
    "itemId": "sha256:4182359e79e632d3",
@@ -621,7 +628,7 @@
   {
    "rank": 3,
    "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
-   "heat": 24.3,
+   "heat": 21.1,
    "trend": "down",
    "storyPublicId": "2026-10-28-deepmind-gemini-4-carbon",
    "itemId": "sha256:3e32bae570ff21ee",
@@ -647,8 +654,27 @@
   },
   {
    "rank": 4,
+   "title": "DeepMind 发布 AlphaGenome 2：预测变异如何影响特定细胞",
+   "heat": 19.1,
+   "trend": "new",
+   "storyPublicId": "2026-11-11-deepmind-alphagenome-2",
+   "itemId": "sha256:ba0fcf4e325b4115",
+   "participants": [
+    {
+     "name": "Google DeepMind Blog",
+     "kind": "editorial"
+    },
+    {
+     "name": "The Verge · AI",
+     "kind": "editorial"
+    }
+   ],
+   "participantCount": 2
+  },
+  {
+   "rank": 5,
    "title": "DeepMind 发布 Gemini Robotics 2.5：称是其最强视觉-语言-动作模型",
-   "heat": 9.0,
+   "heat": 7.8,
    "trend": "down",
    "storyPublicId": "2026-11-10-deepmind-gemini-robotics-2-5",
    "itemId": "sha256:6b6709b612e5913e",
@@ -666,6 +692,7 @@
   }
  ],
  "dayCounts": {
+  "2026-11-11": 1,
   "2026-11-10": 5,
   "2026-11-09": 1,
   "2026-11-06": 7,
@@ -691,5 +718,5 @@
  },
  "page": 1,
  "pageCount": 6,
- "total": 116
+ "total": 117
 }
