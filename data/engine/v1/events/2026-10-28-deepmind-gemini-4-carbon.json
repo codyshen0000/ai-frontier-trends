@@ -177,6 +177,21 @@
    "hour": "2026-11-11T01:00:00.000Z",
    "heat": 33.1,
    "participants": 4
+  },
+  {
+   "hour": "2026-11-11T02:00:00.000Z",
+   "heat": 32.1,
+   "participants": 4
+  },
+  {
+   "hour": "2026-11-11T03:00:00.000Z",
+   "heat": 31.2,
+   "participants": 4
+  },
+  {
+   "hour": "2026-11-11T04:00:00.000Z",
+   "heat": 30.3,
+   "participants": 4
   }
  ],
  "related": [],
