@@ -10,7 +10,7 @@
  "digestUpdatedAt": null,
  "summary": null,
  "excerpt": null,
- "latest": null,
+ "latest": "vLLM 官方博客给出 DeepSeek-V4.1-Flash 在 NVIDIA Vera Rubin NVL72 上的新成绩：标题称相对 GB300 NVL72 吞吐约 58 倍，并在 SemiAnalysis AgentX 上给出每用户 P90 约 387 tokens/s 的交互性数字。这是新硬件上的后续成绩，不是新模型发布。",
  "latestReport": null,
  "whyHot": {
   "participants48h": 0,
@@ -71,12 +71,5 @@
  "related": [],
  "topics": [],
  "recommendReason": "vLLM 在 NVL72 上服务 V4.1-Flash，逼近 DeepInfer",
- "cover": {
-  "url": "https://vllm.ai/blog-assets/figures/2026-10-23-deepseek-v41-flash-pd-wide-ep/hero.png",
-  "width": null,
-  "height": null,
-  "alt": "每 GPU 吞吐相对 P90 交互性：P/D+Wide-EP 曲线高于单节点约 7.9 倍",
-  "valueClass": "official_diagram"
- },
  "primaryUrl": "https://vllm.ai/blog/2026-10-23-deepseek-v41-flash-pd-wide-ep"
 }

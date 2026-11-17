@@ -1,22 +1,22 @@
 {
  "publicId": "2026-11-07-anthropic-agent-memory-dreaming",
  "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
- "status": "watching",
- "reportCount": 2,
- "sourceCount": 2,
+ "status": "active",
+ "reportCount": 3,
+ "sourceCount": 3,
  "firstReportAt": "2026-11-06T00:00:00.000Z",
- "latestAt": "2026-11-06T23:25:14.000Z",
+ "latestAt": "2026-11-16T15:25:48.000Z",
  "digest": null,
  "digestUpdatedAt": null,
  "summary": "Anthropic 官方研究《The components of agent memory》：拆解会话日志/记忆笔记/知识表征/注入上下文，并引入 dreaming 在空闲时巩固记忆；IT之家报道并入，代表为一手研究页。",
  "excerpt": null,
- "latest": null,
+ "latest": "The Decoder 跟进 Anthropic 关于智能体记忆的研究，强调关键不在于存储多少，而在于知道该忘记什么。这是同一研究方向的报道，不是新模型发布。",
  "latestReport": null,
  "whyHot": {
-  "participants48h": 0,
+  "participants48h": 1,
   "newParticipants6h": 0,
   "recentReports24h": 0,
-  "observationComplete": false,
+  "observationComplete": true,
   "rank": null
  },
  "developments": [
@@ -24,7 +24,7 @@
    "factId": "fact-2026-11-07-anthropic-agent-memory-dreaming",
    "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
    "firstReportAt": "2026-11-06T00:00:00.000Z",
-   "reportCount": 2,
+   "reportCount": 3,
    "representative": {
     "id": "sha256:f0247d2be6d23fda",
     "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
@@ -55,6 +55,18 @@
  ],
  "timeline": [
   {
+   "id": "sha256:9da45c34799aca3f",
+   "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
+   "summary": "The Decoder 跟进 Anthropic 智能体记忆研究，称关键不在于存储多少，而在于知道该忘记什么。",
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-16T15:25:48.000Z",
+   "selected": false,
+   "originalUrl": "https://the-decoder.com/anthropic-says-the-key-to-agent-memory-is-knowing-what-to-forget-not-how-much-to-store/"
+  },
+  {
    "id": "sha256:7af9752b435adc83",
    "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
    "summary": "IT之家：Anthropic 研究称智能体可靠“做梦”提升；已 hop-as-rep 官方研究页。",
@@ -79,7 +91,133 @@
    "originalUrl": "https://www.anthropic.com/research/components-of-agent-memory"
   }
  ],
- "heat": [],
+ "heat": [
+  {
+   "hour": "2026-11-16T16:00:00.000Z",
+   "heat": 9.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-16T17:00:00.000Z",
+   "heat": 9.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-16T18:00:00.000Z",
+   "heat": 9.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-16T19:00:00.000Z",
+   "heat": 9.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-16T20:00:00.000Z",
+   "heat": 8.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-16T21:00:00.000Z",
+   "heat": 8.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-16T22:00:00.000Z",
+   "heat": 8.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-16T23:00:00.000Z",
+   "heat": 8.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T00:00:00.000Z",
+   "heat": 7.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T01:00:00.000Z",
+   "heat": 7.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T02:00:00.000Z",
+   "heat": 7.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T03:00:00.000Z",
+   "heat": 7.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T04:00:00.000Z",
+   "heat": 7.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T05:00:00.000Z",
+   "heat": 6.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T06:00:00.000Z",
+   "heat": 6.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T07:00:00.000Z",
+   "heat": 6.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T08:00:00.000Z",
+   "heat": 6.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T09:00:00.000Z",
+   "heat": 6.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T10:00:00.000Z",
+   "heat": 5.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T11:00:00.000Z",
+   "heat": 5.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T12:00:00.000Z",
+   "heat": 5.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T13:00:00.000Z",
+   "heat": 5.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T14:00:00.000Z",
+   "heat": 5.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T15:00:00.000Z",
+   "heat": 5.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T16:00:00.000Z",
+   "heat": 4.9,
+   "participants": 1
+  }
+ ],
  "related": [],
  "topics": [],
  "recommendReason": "Anthropic：智能体记忆组件与“做梦”机制",

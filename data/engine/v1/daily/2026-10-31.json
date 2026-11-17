@@ -102,6 +102,18 @@
      "otherSources": 0
     },
     {
+     "itemId": "sha256:9349f418e7bc7ab4",
+     "title": "OpenAI 更新 Model Spec",
+     "summary": "OpenAI 发布更新版 Model Spec，概述五条核心价值，引导更强模型在判断力、人类能动性与忠实人类意图上的行为。官方对齐规范。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/updated-model-spec",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-29T17:00:00.000Z",
+     "available": true,
+     "otherSources": 2
+    },
+    {
      "itemId": "sha256:85f94c0fe8f02a81",
      "title": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 达 954%",
      "summary": "OpenAI：Credit Saison ChatGPT Enterprise 试点称 ROI 达 954%",
@@ -112,18 +124,6 @@
      "publishedAt": "2026-10-29T00:00:00.000Z",
      "available": true,
      "otherSources": 0
-    },
-    {
-     "itemId": "sha256:9349f418e7bc7ab4",
-     "title": "OpenAI 更新 Model Spec 行为规范",
-     "summary": "OpenAI 发布更新版 Model Spec，概述五条核心价值，引导更强模型在判断力、人类能动性与忠实人类意图上的行为。官方对齐规范。",
-     "sourceName": "OpenAI News",
-     "sourceUrl": "https://openai.com/index/updated-model-spec",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-29T17:00:00.000Z",
-     "available": true,
-     "otherSources": 1
     },
     {
      "itemId": "sha256:f37fa8ee7ba135be",
@@ -143,6 +143,18 @@
    "label": "论文",
    "summary": null,
    "items": [
+    {
+     "itemId": "sha256:3a143d3580b64e5b",
+     "title": "Anthropic：自动化搜寻「看似无害」却能破坏监督的训练数据",
+     "summary": "Anthropic Alignment：用 Claude 自动生成养蜂/摔跤等虚构语境数据，可训练小模型破坏监督或欺骗；官方页 Automated Subtle Emergent Misalignment Research。",
+     "sourceName": "Anthropic Alignment",
+     "sourceUrl": "https://alignment.anthropic.com/2026/automated-em-search/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-31T00:00:00.000Z",
+     "available": true,
+     "otherSources": 1
+    },
     {
      "itemId": "sha256:0f01adb2acab0a67",
      "title": "OpenAI：如何监测前沿模型错位",
@@ -172,6 +184,18 @@
      "publishedAt": "2026-10-30T16:00:00.000Z",
      "available": true,
      "otherSources": 0
+    },
+    {
+     "itemId": "sha256:5bd78febd4a59e34",
+     "title": "DeepSeek：开源 Super-agent 原型，Router 与 Worker 双层架构",
+     "summary": "DeepSeek Harness 发布 Super-agent 设计：连续、高效、主动、持久；GitHub 开源 dsh-superagent-prototype。面向多会话并行与离线持久。",
+     "sourceName": "GitHub · deepseek-ai/dsh-superagent-prototype",
+     "sourceUrl": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-31T00:00:00.000Z",
+     "available": true,
+     "otherSources": 2
     }
    ]
   }
@@ -268,12 +292,12 @@
  ],
  "cover": null,
  "metrics": {
-  "totalEvents": 9,
-  "sourcesCount": 5,
-  "firstPartyEvents": 9,
+  "totalEvents": 11,
+  "sourcesCount": 9,
+  "firstPartyEvents": 11,
   "modelsReleased": 0
  },
- "readingMinutes": 1,
+ "readingMinutes": 2,
  "prev": "2026-10-30",
- "next": null
+ "next": "2026-11-01"
 }

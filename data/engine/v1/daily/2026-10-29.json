@@ -21,7 +21,7 @@
    "firstParty": true,
    "publishedAt": "2026-10-28T17:00:58.000Z",
    "available": true,
-   "otherSources": 3
+   "otherSources": 4
   },
   {
    "itemId": "sha256:a395c7da350b5086",
@@ -75,7 +75,7 @@
      "firstParty": true,
      "publishedAt": "2026-10-28T17:00:58.000Z",
      "available": true,
-     "otherSources": 3
+     "otherSources": 4
     },
     {
      "itemId": "sha256:ec733f799e1aaee3",
@@ -132,14 +132,14 @@
      "otherSources": 1
     },
     {
-     "itemId": "sha256:5b6b315fe4450662",
-     "title": "报道：Cathedral 用 AI 智能体打入 Anthropic 业务系统",
-     "summary": "The Decoder 称网络安全初创 Cathedral 在漏洞赏金框架下，用 AI 智能体经第三方业务软件在约 12 小时内摸到 Anthropic 销售/人事/IT 等内部路径；Anthropic 确认有限接触并切断访问，称 Claude 对话、权重与源码未达，并指对方违反赏金规则。属可信二手安全事件报道。",
-     "sourceName": "The Decoder",
-     "sourceUrl": "https://the-decoder.com/ai-agents-hacked-anthropic-maker-of-arguably-the-most-capable-ai-models-for-cyberdefense/",
+     "itemId": "sha256:f7a1020f473102a5",
+     "title": "Wiz：智能体攻击兴起——形态、指纹与走向",
+     "summary": "Wiz 安全博客梳理「智能体攻击」：攻击者如何用 AI 智能体改变作战方式，给出真实案例分析、指纹识别要点，并讨论对防守方的含义。与既有 PHP2Shell/ARTEX 个案不同，本条为横向攻击形态综述；官方 T1。",
+     "sourceName": "Wiz Blog",
+     "sourceUrl": "https://www.wiz.io/blog/the-rise-of-agentic-attacks-what-they-look-like-and-where-theyre-headed",
      "sourceIconUrl": null,
-     "firstParty": false,
-     "publishedAt": "2026-10-28T10:56:24.000Z",
+     "firstParty": true,
+     "publishedAt": "2026-10-29T14:36:22.000Z",
      "available": true,
      "otherSources": 0
     }
@@ -184,18 +184,6 @@
      "publishedAt": "2026-10-27T00:00:00.000Z",
      "available": true,
      "otherSources": 1
-    },
-    {
-     "itemId": "sha256:c417f8e3d39d0b89",
-     "title": "OpenAI：与 Oracle 扩大合作，把应用接入 ChatGPT",
-     "summary": "OpenAI 称与 Oracle 扩大合作：把 Oracle 应用与数据接入 ChatGPT（Oracle AI Workspace），并用 OpenAI 模型支撑 AI Security Mesh、SMB Bundle、App Composer 等新产品；美国客户可通过 Oracle Marketplace 采购。属官方通稿。",
-     "sourceName": "OpenAI News",
-     "sourceUrl": "https://openai.com/index/oracle-apps-in-chatgpt",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-27T07:00:00.000Z",
-     "available": true,
-     "otherSources": 0
     }
    ]
   },
@@ -226,6 +214,24 @@
      "publishedAt": "2026-10-27T16:12:42.000Z",
      "available": true,
      "otherSources": 0
+    }
+   ]
+  },
+  {
+   "label": "其他",
+   "summary": null,
+   "items": [
+    {
+     "itemId": null,
+     "title": "英伟达宣布黄仁勋辞去总裁、CEO 及董事，CFO Colette Kress 任临时 CEO",
+     "summary": "英伟达董事会宣布黄仁勋辞去总裁、CEO 及董事，即时生效；CFO Colette Kress 任临时 CEO 并兼任财务官，直至选定常任继任者。Harvey C. Jones 出任史上首位董事会主席。11 月 17 日仍将发布三季度财报。",
+     "sourceName": "",
+     "sourceUrl": "https://the-decoder.com/chinese-spies-targeted-nvidia-ceo-jensen-huang-according-to-the-new-york-times/",
+     "sourceIconUrl": null,
+     "firstParty": false,
+     "publishedAt": "2026-10-29T16:43:11.000Z",
+     "available": true,
+     "otherSources": 3
     }
    ]
   }
@@ -373,11 +379,11 @@
  },
  "metrics": {
   "totalEvents": 12,
-  "sourcesCount": 11,
+  "sourcesCount": 12,
   "firstPartyEvents": 9,
   "modelsReleased": 3
  },
  "readingMinutes": 5,
  "prev": "2026-10-28",
- "next": null
+ "next": "2026-10-30"
 }

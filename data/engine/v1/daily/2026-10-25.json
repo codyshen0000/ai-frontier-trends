@@ -45,7 +45,7 @@
    "firstParty": false,
    "publishedAt": "2026-10-23T19:00:07.000Z",
    "available": true,
-   "otherSources": 3
+   "otherSources": 4
   },
   {
    "itemId": "sha256:cfa117fe12523c03",
@@ -57,7 +57,7 @@
    "firstParty": false,
    "publishedAt": "2026-10-23T17:19:49.000Z",
    "available": true,
-   "otherSources": 0
+   "otherSources": 2
   }
  ],
  "sections": [
@@ -99,6 +99,18 @@
      "firstParty": false,
      "publishedAt": "2026-10-23T18:00:32.000Z",
      "available": true,
+     "otherSources": 2
+    },
+    {
+     "itemId": "sha256:de032cfb4352542b",
+     "title": "Anthropic：单智能体循环往往优于多子智能体",
+     "summary": "Anthropic 应用团队称，新一代模型可在单循环内完成复杂计划，按需加载技能/工具的单主智能体常在质量、成本与延迟上优于多子智能体；一例称单智能体架构约快一倍。已开源 single-agent-loop-kit 迁移套件；仍保留子智能体于上下文膨胀、真并行或工具选择冲突场景。一手：Anthropic 工程文。",
+     "sourceName": "The Decoder",
+     "sourceUrl": "https://the-decoder.com/anthropic-says-one-ai-agent-beats-many-subagents-now-that-models-can-handle-complexity-alone/",
+     "sourceIconUrl": null,
+     "firstParty": false,
+     "publishedAt": "2026-10-25T09:12:10.000Z",
+     "available": true,
      "otherSources": 0
     }
    ]
@@ -117,7 +129,7 @@
      "firstParty": false,
      "publishedAt": "2026-10-23T19:00:07.000Z",
      "available": true,
-     "otherSources": 3
+     "otherSources": 4
     }
    ]
   },
@@ -135,6 +147,30 @@
      "firstParty": false,
      "publishedAt": "2026-10-23T17:19:49.000Z",
      "available": true,
+     "otherSources": 2
+    },
+    {
+     "itemId": "sha256:1b561faaee9a1ef3",
+     "title": "TasteVal：实验研究品味基准，Clark 将 RSI 预期前移至 2027",
+     "summary": "P-Zero Research 发布 TasteVal，在固定 AI R&D 任务上测模型设计实验与解读结果的效率；称自 2025-12 以来前沿模型计算乘子约每 3 个月翻倍，Opus 5.5 相对人类专家基线约 2.3×。Anthropic 联合创始人 Jack Clark 据此将递归自我改进可能时间从 2028 前移到 2027。基准不测选题能力；作者提示或高估速度。一手：P-Zero / arXiv 2610.06824。",
+     "sourceName": "The Decoder",
+     "sourceUrl": "https://the-decoder.com/anthropic-co-founder-jack-clark-moves-his-prediction-for-self-improving-ai-forward-to-2027/",
+     "sourceIconUrl": null,
+     "firstParty": false,
+     "publishedAt": "2026-10-25T09:37:46.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:af9112a54e84d14e",
+     "title": "Nvidia 开源 Flora：机器人视频标注数据引擎",
+     "summary": "Nvidia GEAR 开源 Flora（TempSeg/Captioner/Rewarder，基于微调 Qwen3.5），用于 GR00T 训练数据标注，称可日标集约 20 万小时、相对 GPT-6 Astra 成本约 125× 更低；在失败步骤召回等指标上自称领先，部分描述精度仍落后 Astra。非商业许可。一手：research.nvidia.com/labs/gear/flora/。",
+     "sourceName": "The Decoder",
+     "sourceUrl": "https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra/",
+     "sourceIconUrl": null,
+     "firstParty": false,
+     "publishedAt": "2026-10-25T10:08:49.000Z",
+     "available": true,
      "otherSources": 0
     },
     {
@@ -147,7 +183,7 @@
      "firstParty": false,
      "publishedAt": "2026-10-25T06:55:22.000Z",
      "available": true,
-     "otherSources": 0
+     "otherSources": 2
     },
     {
      "itemId": "sha256:30a34d758ba63be2",
@@ -159,7 +195,7 @@
      "firstParty": true,
      "publishedAt": "2026-10-23T18:51:33.000Z",
      "available": true,
-     "otherSources": 0
+     "otherSources": 2
     }
    ]
   },
@@ -194,18 +230,6 @@
      "sourceIconUrl": null,
      "firstParty": true,
      "publishedAt": "2026-10-23T00:00:00.000Z",
-     "available": true,
-     "otherSources": 0
-    },
-    {
-     "itemId": "sha256:1456ee151a5392db",
-     "title": "NVIDIA：TensorRT Global Performance Tuner 跨多条构建路线寻优",
-     "summary": "NVIDIA 技术博客（Part 1/2）：介绍 TensorRT 11.1 的 Global Performance Tuner，在多条合法构建路线上做自动、感知精度的性能寻优，突破单条构建路径限制。",
-     "sourceName": "NVIDIA Technical Blog",
-     "sourceUrl": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-2/",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-23T17:27:52.000Z",
      "available": true,
      "otherSources": 0
     }
@@ -258,7 +282,7 @@
    "available": true
   },
   {
-   "itemId": "sha256:60b56cc3037dbda3",
+   "itemId": "sha256:8f9973956bdc5190",
    "title": "Block 发布 Dessa：纯语音训练的全双工对话模型",
    "summary": "Block Dessa：纯语音训练、可本地跑的全双工语音模型。",
    "sourceName": "Block",
@@ -333,12 +357,12 @@
   "caption": null
  },
  "metrics": {
-  "totalEvents": 10,
-  "sourcesCount": 11,
-  "firstPartyEvents": 6,
+  "totalEvents": 12,
+  "sourcesCount": 19,
+  "firstPartyEvents": 5,
   "modelsReleased": 1
  },
- "readingMinutes": 4,
+ "readingMinutes": 6,
  "prev": "2026-10-24",
- "next": null
+ "next": "2026-10-26"
 }

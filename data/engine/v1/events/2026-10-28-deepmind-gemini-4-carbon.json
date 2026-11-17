@@ -1,7 +1,7 @@
 {
  "publicId": "2026-10-28-deepmind-gemini-4-carbon",
  "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
- "status": "active",
+ "status": "watching",
  "reportCount": 5,
  "sourceCount": 3,
  "firstReportAt": "2026-10-28T17:00:58.000Z",
@@ -13,11 +13,11 @@
  "latest": "DeepMind 宣布 Gemini 4 Carbon 现已全面开放；The Verge 报道面向公众推出，并提到一项智能体 swarm 功能。The Decoder 随后报道称，该模型在约两周测试后全面开放，多项基准领先，部分评测超过 Claude Fable 5.2，且单次任务成本不到一半；并称 Google 正在预览通过 /swarm 协调的智能体团队。IT之家报道，Google 与 Artificial Analysis 推出多模态知识智能体基准 MKA，Gemini 4 Carbon 取得第二，完成任务的平均成本约为第一名的六分之一。",
  "latestReport": null,
  "whyHot": {
-  "participants48h": 4,
+  "participants48h": 0,
   "newParticipants6h": 0,
-  "recentReports24h": 2,
-  "observationComplete": true,
-  "rank": 3
+  "recentReports24h": 0,
+  "observationComplete": false,
+  "rank": null
  },
  "developments": [
   {
@@ -127,133 +127,7 @@
    "originalUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/"
   }
  ],
- "heat": [
-  {
-   "hour": "2026-11-10T16:00:00.000Z",
-   "heat": 10.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-10T17:00:00.000Z",
-   "heat": 19.4,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-10T18:00:00.000Z",
-   "heat": 18.9,
-   "participants": 2
-  },
-  {
-   "hour": "2026-11-10T19:00:00.000Z",
-   "heat": 28.2,
-   "participants": 3
-  },
-  {
-   "hour": "2026-11-10T20:00:00.000Z",
-   "heat": 27.4,
-   "participants": 3
-  },
-  {
-   "hour": "2026-11-10T21:00:00.000Z",
-   "heat": 26.6,
-   "participants": 3
-  },
-  {
-   "hour": "2026-11-10T22:00:00.000Z",
-   "heat": 25.8,
-   "participants": 3
-  },
-  {
-   "hour": "2026-11-10T23:00:00.000Z",
-   "heat": 35.0,
-   "participants": 4
-  },
-  {
-   "hour": "2026-11-11T00:00:00.000Z",
-   "heat": 34.0,
-   "participants": 4
-  },
-  {
-   "hour": "2026-11-11T01:00:00.000Z",
-   "heat": 33.1,
-   "participants": 4
-  },
-  {
-   "hour": "2026-11-11T02:00:00.000Z",
-   "heat": 32.1,
-   "participants": 4
-  },
-  {
-   "hour": "2026-11-11T03:00:00.000Z",
-   "heat": 31.2,
-   "participants": 4
-  },
-  {
-   "hour": "2026-11-11T04:00:00.000Z",
-   "heat": 30.3,
-   "participants": 4
-  },
-  {
-   "hour": "2026-11-11T05:00:00.000Z",
-   "heat": 29.5,
-   "participants": 4
-  },
-  {
-   "hour": "2026-11-11T06:00:00.000Z",
-   "heat": 28.6,
-   "participants": 4
-  },
-  {
-   "hour": "2026-11-11T07:00:00.000Z",
-   "heat": 27.8,
-   "participants": 4
-  },
-  {
-   "hour": "2026-11-11T08:00:00.000Z",
-   "heat": 27.0,
-   "participants": 4
-  },
-  {
-   "hour": "2026-11-11T09:00:00.000Z",
-   "heat": 26.2,
-   "participants": 4
-  },
-  {
-   "hour": "2026-11-11T10:00:00.000Z",
-   "heat": 25.5,
-   "participants": 4
-  },
-  {
-   "hour": "2026-11-11T11:00:00.000Z",
-   "heat": 24.8,
-   "participants": 4
-  },
-  {
-   "hour": "2026-11-11T12:00:00.000Z",
-   "heat": 24.1,
-   "participants": 4
-  },
-  {
-   "hour": "2026-11-11T13:00:00.000Z",
-   "heat": 23.4,
-   "participants": 4
-  },
-  {
-   "hour": "2026-11-11T14:00:00.000Z",
-   "heat": 22.7,
-   "participants": 4
-  },
-  {
-   "hour": "2026-11-11T15:00:00.000Z",
-   "heat": 22.1,
-   "participants": 4
-  },
-  {
-   "hour": "2026-11-11T16:00:00.000Z",
-   "heat": 21.4,
-   "participants": 4
-  }
- ],
+ "heat": [],
  "related": [],
  "topics": [],
  "recommendReason": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",

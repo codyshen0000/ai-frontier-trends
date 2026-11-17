@@ -1,0 +1,541 @@
+{
+ "publicId": "2026-10-29-nvidia-jensen-huang-china-spy",
+ "title": "英伟达宣布黄仁勋辞去总裁、CEO 及董事，CFO Colette Kress 任临时 CEO",
+ "status": "active",
+ "reportCount": 23,
+ "sourceCount": 4,
+ "firstReportAt": "2026-10-29T13:42:38.000Z",
+ "latestAt": "2026-11-16T22:03:02.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": null,
+ "excerpt": null,
+ "latest": "本窗续报包括：民主党议员启动对英伟达的调查并就黄仁勋与特朗普的关系发函；特朗普就黄仁勋与疑似中方人员关系发表国家安全评论；有报道称董事会暂不考虑请回黄仁勋；英伟达在黄仁勋离任后新设国家安全常设委员会，负责安全政策、出口管制与全球贸易风险的董事会监督。这些都不改变官方辞职与临时 CEO 任命的基本事实，也不抬既有注意力分数。",
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 2,
+  "newParticipants6h": 1,
+  "recentReports24h": 6,
+  "observationComplete": true,
+  "rank": 2
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-10-29-nvidia-jensen-huang-china-spy",
+   "title": "英伟达宣布黄仁勋辞去总裁、CEO 及董事，CFO Colette Kress 任临时 CEO",
+   "firstReportAt": "2026-10-29T13:42:38.000Z",
+   "reportCount": 23,
+   "representative": {
+    "id": "sha256:e9c996a0e3b8ea61",
+    "title": "英伟达宣布黄仁勋辞去总裁、CEO 及董事，CFO Colette Kress 任临时 CEO",
+    "summary": "本条是黄仁勋辞职后的分析或问询稿，不改变官方辞职与临时 CEO 任命的基本事实。",
+    "source": {
+     "name": "TechCrunch · AI",
+     "firstParty": false
+    },
+    "publishedAt": "2026-11-16T22:03:02.000Z",
+    "selected": false,
+    "originalUrl": "https://techcrunch.com/2026/11/16/all-the-questions-nvidia-should-answer-on-tuesday-but-probably-wont/"
+   }
+  }
+ ],
+ "officialReports": [],
+ "timeline": [
+  {
+   "id": "sha256:e9c996a0e3b8ea61",
+   "title": "英伟达宣布黄仁勋辞去总裁、CEO 及董事，CFO Colette Kress 任临时 CEO",
+   "summary": "本条是黄仁勋辞职后的分析或问询稿，不改变官方辞职与临时 CEO 任命的基本事实。",
+   "source": {
+    "name": "TechCrunch · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-16T22:03:02.000Z",
+   "selected": false,
+   "originalUrl": "https://techcrunch.com/2026/11/16/all-the-questions-nvidia-should-answer-on-tuesday-but-probably-wont/"
+  },
+  {
+   "id": "sha256:236705559d2866e2",
+   "title": "跟进：有人评论黄仁勋相关问题在行业里是否更普遍",
+   "summary": "TechCrunch 以「黄仁勋的不良行为是否比看起来更普遍」为题跟进既有董事会调查，引述一名投资情报顾问称，行业里不少高层都知道这类事正在发生，并且实际上在纵容。这是既有调查的评论跟进，不是独立新案。",
+   "source": {
+    "name": "TechCrunch · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-11T16:16:07.000Z",
+   "selected": false,
+   "originalUrl": "https://techcrunch.com/2026/11/11/is-jensen-huangs-bad-behavior-more-commonplace-than-it-seems/"
+  },
+  {
+   "id": "sha256:f4e4ebe108d8e8cb",
+   "title": "跟进：治理专家评论英伟达董事会对黄仁勋与疑似中方情报人员关系的调查",
+   "summary": null,
+   "source": {
+    "name": "TechCrunch · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-11T07:30:51.000Z",
+   "selected": false,
+   "originalUrl": "https://techcrunch.com/2026/11/10/nvidias-crisis-has-corporate-governance-experts-reaching-for-the-popcorn/"
+  },
+  {
+   "id": "sha256:38f7683430bac085",
+   "title": "跟进：The Verge 评论美国在 AI 竞赛中领先，同时讨论黄仁勋相关争议的风险",
+   "summary": "The Verge 评论文章认为美国目前在 AI 竞赛中领先，同时也讨论黄仁勋相关争议可能带来的风险。",
+   "source": {
+    "name": "The Verge · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-10T19:04:05.000Z",
+   "selected": false,
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy"
+  },
+  {
+   "id": "sha256:4cc686f0d8904bd2",
+   "title": "跟进：TechCrunch 整理黄仁勋与疑似中方情报人员关系的时间线",
+   "summary": "TechCrunch 发布时间线，回顾英伟达 CEO 黄仁勋与疑似中方情报人员的关系，并称可能影响中美 AI 竞赛中的国家安全评估。",
+   "source": {
+    "name": "TechCrunch · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-10T17:04:19.000Z",
+   "selected": false,
+   "originalUrl": "https://techcrunch.com/2026/11/10/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/"
+  },
+  {
+   "id": "sha256:44bb6093a440b817",
+   "title": "分析：中国能从黄仁勋那里得到什么？",
+   "summary": "The Verge 分析稿：讨论在英伟达于人工智能供应链中的地位背景下，中国可能从黄仁勋处获得什么，偏分析、无新的调查硬事实。",
+   "source": {
+    "name": "The Verge · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-09T23:51:58.000Z",
+   "selected": false,
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1030328/what-could-china-get-from-jensen-huang"
+  },
+  {
+   "id": "sha256:cd027b24b17aebaf",
+   "title": "报道：特朗普说他知道哪些关于黄仁勋的事",
+   "summary": "The Verge：报道特朗普在白宫记者会上回应他是否知情英伟达 CEO 黄仁勋与疑似中方间谍的关系。",
+   "source": {
+    "name": "The Verge · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-09T23:47:46.000Z",
+   "selected": false,
+   "originalUrl": "https://www.theverge.com/tech/1030446/trump-jensen-huang-press-conference"
+  },
+  {
+   "id": "sha256:28bf67cf1684b7b2",
+   "title": "报道：黄仁勋据报一年前已聘请擅长处理高调性丑闻的公关公司",
+   "summary": "TechCrunch：称黄仁勋据报在约一年前、纽约时报报道 Alice Huang 商业往来之后，聘请了一家有处理高调性丑闻记录的公关公司。",
+   "source": {
+    "name": "TechCrunch · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-09T23:28:37.000Z",
+   "selected": false,
+   "originalUrl": "https://techcrunch.com/2026/11/09/jensen-huang-reportedly-engaged-a-pr-firm-with-a-history-of-handling-high-profile-sex-scandals-a-year-ago/"
+  },
+  {
+   "id": "sha256:38ea5b66d2595223",
+   "title": "报道：关于针对黄仁勋的英伟达间谍丑闻，目前已知的一切",
+   "summary": "The Verge 综述：汇总英伟达 CEO 黄仁勋与疑似中方情报人员关系调查的已知信息。",
+   "source": {
+    "name": "The Verge · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-09T23:07:59.000Z",
+   "selected": false,
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang"
+  },
+  {
+   "id": "sha256:e105484703996e34",
+   "title": "报道：卖空机构早在丑闻爆发约半年前就质疑黄仁勋与疑似间谍的关系",
+   "summary": "TechCrunch：称 Culper Research 在英伟达间谍丑闻爆发约六个月前，就已质疑黄仁勋与一名中国高管的异常密切关系。",
+   "source": {
+    "name": "TechCrunch · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-09T22:46:09.000Z",
+   "selected": false,
+   "originalUrl": "https://techcrunch.com/2026/11/09/a-short-seller-flagged-nvidia-ceos-ties-to-a-suspected-chinese-spy-six-months-before-the-scandal/"
+  },
+  {
+   "id": "sha256:bda3011897fcd946",
+   "title": "报道：针对英伟达的证券诉讼竞赛已经开始",
+   "summary": "TechCrunch：称英伟达股价在董事会启动调查后下跌超过 4%，并引证券法律师指出公司早前坚称“一切正常”可能变成昂贵问题。",
+   "source": {
+    "name": "TechCrunch · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-09T22:23:42.000Z",
+   "selected": false,
+   "originalUrl": "https://techcrunch.com/2026/11/09/the-race-is-on-to-sue-nvidia/"
+  },
+  {
+   "id": "sha256:e7b41c563c8e101b",
+   "title": "报道：黄仁勋因英伟达争议退出 ElevenLabs Summit",
+   "summary": "TechCrunch：称英伟达 CEO 黄仁勋在争议升温之际退出 ElevenLabs Summit，并提到他早前也退出了一场 Anthropic 活动。",
+   "source": {
+    "name": "TechCrunch · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-09T20:09:06.000Z",
+   "selected": false,
+   "originalUrl": "https://techcrunch.com/2026/11/09/jensen-huang-pulls-out-of-elevenlabs-summit-amid-nvidia-controversy/"
+  },
+  {
+   "id": "sha256:38597062943c6753",
+   "title": "报道：黄仁勋与疑似间谍的外遇使英伟达对华业务承压",
+   "summary": "TechCrunch 新稿：称黄仁勋与疑似中方间谍的关系，使英伟达放松对华芯片出口管制的游说与中国市场准入更加棘手。",
+   "source": {
+    "name": "TechCrunch · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-09T18:09:52.000Z",
+   "selected": false,
+   "originalUrl": "https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny/"
+  },
+  {
+   "id": "sha256:3a3ea27b30526f5b",
+   "title": "评论：人工智能的未来竟系于黄仁勋的私生活？",
+   "summary": "The Verge 评论稿：以偏八卦/意见的口吻讨论黄仁勋私生活与所谓国家安全事件，未提供新的硬事实。",
+   "source": {
+    "name": "The Verge · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-09T17:36:08.000Z",
+   "selected": false,
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1029990/jensen-huang-the-spy-who-loved-me"
+  },
+  {
+   "id": "sha256:653b2bfbd195e338",
+   "title": "报道：英伟达间谍丑闻削弱黄仁勋反对收紧芯片出口管制的游说",
+   "summary": "The Decoder 新稿：称黄仁勋承认婚外情、董事会启动独立调查，并分析此事削弱其反对收紧 AI 芯片出口管制的游说。",
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-09T11:38:43.000Z",
+   "selected": false,
+   "originalUrl": "https://the-decoder.com/nvidia-espionage-scandal-weakens-huangs-lobby-against-tighter-ai-chip-export-controls/"
+  },
+  {
+   "id": "sha256:177dd03271cc9aec",
+   "title": "报道：耶鲁学者估计黄仁勋去留约为五五开",
+   "summary": "TechCrunch：在董事会调查背景下，引耶鲁大学 Jeffrey Sonnenfeld 估计黄仁勋能否留任 CEO 约为五五开。",
+   "source": {
+    "name": "TechCrunch · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-09T05:26:29.000Z",
+   "selected": false,
+   "originalUrl": "https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50/"
+  },
+  {
+   "id": "sha256:0aef263f1a1de6df",
+   "title": "报道：量子位称黄仁勋致歉并称英伟达启动紧急调查",
+   "summary": "量子位以「出轨致歉」转述全员信与董事会调查，并称英伟达暗盘跌约 2%；与 10-29 调查事件同线，无新硬事实可核。",
+   "source": {
+    "name": "量子位",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-09T00:40:50.000Z",
+   "selected": false,
+   "originalUrl": "https://www.qbitai.com/2026/11/508498.html"
+  },
+  {
+   "id": "sha256:f0be6325bfc4dec9",
+   "title": "报道：英伟达董事会调查黄仁勋与疑似中方情报人员关系",
+   "summary": "The Verge 公布黄仁勋致员工备忘录全文，并称董事会已启动调查。",
+   "source": {
+    "name": "The Verge · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-08T22:54:50.000Z",
+   "selected": false,
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia"
+  },
+  {
+   "id": "sha256:8a86cf9d70b8065c",
+   "title": "报道：英伟达将调查黄仁勋与疑似中方间谍的关系",
+   "summary": "TechCrunch：英伟达将对 CEO 与疑似中方间谍的关系展开调查。",
+   "source": {
+    "name": "TechCrunch · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-08T21:00:11.000Z",
+   "selected": false,
+   "originalUrl": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/"
+  },
+  {
+   "id": "sha256:54c06e97d6e0a2b7",
+   "title": "报道：英伟达正在调查黄仁勋与一名中国间谍的关系",
+   "summary": null,
+   "source": {
+    "name": "The Verge · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-08T20:22:39.000Z",
+   "selected": false,
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1029562/nvidia-investigating-jensen-huang-relationship-chinese-spy"
+  },
+  {
+   "id": "sha256:3b069222ecbd3b59",
+   "title": "报道：美情报备忘录称 Megaspeed 高管被招募监视英伟达 CEO",
+   "summary": "TechCrunch：称美情报备忘录指中国国安部门招募女性科技高管监视黄仁勋；与 10-29 线人传闻同线。",
+   "source": {
+    "name": "TechCrunch · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-07T21:17:08.000Z",
+   "selected": false,
+   "originalUrl": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/"
+  },
+  {
+   "id": "sha256:990b533cbb64ab7a",
+   "title": "【传闻】报道：美情报指黄仁勋圈子有中方线人",
+   "summary": null,
+   "source": {
+    "name": "TechCrunch · AI",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-29T16:42:32.000Z",
+   "selected": false,
+   "originalUrl": "https://techcrunch.com/2026/10/29/u-s-investigated-chinese-spy-plot-aimed-at-nvidia-ceo/"
+  },
+  {
+   "id": "sha256:d07a6f4e30ac5b4d",
+   "title": "【传闻】报道：美情报指黄仁勋圈子有中方线人",
+   "summary": null,
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-10-29T13:42:38.000Z",
+   "selected": false,
+   "originalUrl": "https://the-decoder.com/chinese-spies-targeted-nvidia-ceo-jensen-huang-according-to-the-new-york-times/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-11-15T22:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-15T23:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-16T00:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-16T01:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-16T02:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-16T03:00:00.000Z",
+   "heat": 8.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-16T04:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-16T05:00:00.000Z",
+   "heat": 8.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-16T06:00:00.000Z",
+   "heat": 7.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-16T07:00:00.000Z",
+   "heat": 7.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-16T08:00:00.000Z",
+   "heat": 7.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-16T09:00:00.000Z",
+   "heat": 7.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-16T10:00:00.000Z",
+   "heat": 7.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-16T11:00:00.000Z",
+   "heat": 6.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-16T12:00:00.000Z",
+   "heat": 6.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-16T13:00:00.000Z",
+   "heat": 6.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-16T14:00:00.000Z",
+   "heat": 6.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-16T15:00:00.000Z",
+   "heat": 6.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-16T16:00:00.000Z",
+   "heat": 5.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-16T17:00:00.000Z",
+   "heat": 5.8,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-16T18:00:00.000Z",
+   "heat": 5.6,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-16T19:00:00.000Z",
+   "heat": 19.7,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-16T20:00:00.000Z",
+   "heat": 19.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-16T21:00:00.000Z",
+   "heat": 18.9,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-16T22:00:00.000Z",
+   "heat": 18.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-16T23:00:00.000Z",
+   "heat": 18.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-17T00:00:00.000Z",
+   "heat": 19.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-17T01:00:00.000Z",
+   "heat": 18.7,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-17T02:00:00.000Z",
+   "heat": 18.2,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-17T03:00:00.000Z",
+   "heat": 17.7,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-17T04:00:00.000Z",
+   "heat": 17.2,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-17T05:00:00.000Z",
+   "heat": 16.7,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-17T06:00:00.000Z",
+   "heat": 16.2,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-17T07:00:00.000Z",
+   "heat": 15.7,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-17T08:00:00.000Z",
+   "heat": 15.3,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-17T09:00:00.000Z",
+   "heat": 14.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-17T10:00:00.000Z",
+   "heat": 14.4,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-17T11:00:00.000Z",
+   "heat": 14.0,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-17T12:00:00.000Z",
+   "heat": 13.6,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-17T13:00:00.000Z",
+   "heat": 13.2,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-17T14:00:00.000Z",
+   "heat": 12.8,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-17T15:00:00.000Z",
+   "heat": 16.1,
+   "participants": 2
+  },
+  {
+   "hour": "2026-11-17T16:00:00.000Z",
+   "heat": 15.6,
+   "participants": 2
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "primaryUrl": "https://techcrunch.com/2026/11/16/all-the-questions-nvidia-should-answer-on-tuesday-but-probably-wont/"
+}

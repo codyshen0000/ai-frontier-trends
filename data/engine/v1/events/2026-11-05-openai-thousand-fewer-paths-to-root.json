@@ -1,7 +1,7 @@
 {
  "publicId": "2026-11-05-openai-thousand-fewer-paths-to-root",
  "title": "OpenAI：少一千条通往 root 的路径（自主发现并修补 948 个 Linux 提权漏洞）",
- "status": "watching",
+ "status": "settled",
  "reportCount": 2,
  "sourceCount": 2,
  "firstReportAt": "2026-11-04T08:00:00.000Z",

@@ -33,7 +33,7 @@
    "firstParty": true,
    "publishedAt": "2026-10-22T22:24:34.000Z",
    "available": true,
-   "otherSources": 0
+   "otherSources": 1
   },
   {
    "itemId": "sha256:4182359e79e632d3",
@@ -138,10 +138,10 @@
      "otherSources": 0
     },
     {
-     "itemId": "sha256:a9592e53f2c7c709",
+     "itemId": "sha256:5f0504de59280359",
      "title": "NVIDIA：DGX Spark 官方支持 8 机集群，统一内存可达 1TB",
      "summary": "NVIDIA 开发者博客称，GTC Berlin 宣布 DGX Spark 正式支持八节点集群，统一内存扩展至约 1TB，面向桌面侧前沿模型与多智能体工作负载。 NVIDIA Sync 的 Cluster Assistant 负责组网；八节点支持计划年内落地。此前媒体已有二手报道，本条为官方技术说明。",
-     "sourceName": "NVIDIA Technical Blog",
+     "sourceName": "IT之家（全站，需关键词过滤）",
      "sourceUrl": "https://developer.nvidia.com/blog/running-frontier-class-ai-models-across-8-nvidia-dgx-spark-nodes/",
      "sourceIconUrl": null,
      "firstParty": true,
@@ -152,7 +152,7 @@
     {
      "itemId": "sha256:eda525050cea8fce",
      "title": "Uber 全员上线 ChatGPT Work，覆盖约 3 万名员工",
-     "summary": "OpenAI：Uber 将 ChatGPT Work 扩至逾 3 万员工，接入常用办公工具。",
+     "summary": "OpenAI：Uber 将 ChatGPT Work 扩至逾 3 万员工，接入常用办公工具。TechCrunch 同步报道全员推广。",
      "sourceName": "OpenAI News",
      "sourceUrl": "https://openai.com/index/uber-chatgpt-work-rollout",
      "sourceIconUrl": null,
@@ -177,7 +177,7 @@
      "firstParty": true,
      "publishedAt": "2026-10-22T22:24:34.000Z",
      "available": true,
-     "otherSources": 0
+     "otherSources": 1
     },
     {
      "itemId": "sha256:77ec6ad66af3dcc4",
@@ -449,7 +449,7 @@
  "cover": null,
  "metrics": {
   "totalEvents": 12,
-  "sourcesCount": 14,
+  "sourcesCount": 15,
   "firstPartyEvents": 11,
   "modelsReleased": 0
  },

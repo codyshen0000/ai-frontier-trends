@@ -1,11 +1,97 @@
 {
- "generatedAt": "2026-11-11T16:34:53.000Z",
+ "generatedAt": "2026-11-17T16:39:00.000Z",
  "docs": [
+  {
+   "id": "sha256:7b499de51a856296",
+   "kind": "item",
+   "title": "OpenAI 向北约及欧洲盟友提供 Daybreak 等网络安全能力",
+   "summary": "The Decoder 报道 OpenAI 向北约和欧洲政府开放网络安全工具 Daybreak，与 OpenAI 官方说明属同一部署。",
+   "publishedAt": "2026-11-17T15:02:03.000Z",
+   "sourceName": "The Decoder",
+   "category": "industry",
+   "selected": false,
+   "eventPublicId": "2026-11-17-openai-daybreak-nato-allies",
+   "originalUrl": "https://the-decoder.com/openai-opens-its-cybersecurity-tool-daybreak-to-nato-and-european-governments/"
+  },
+  {
+   "id": "2026-11-17-openai-daybreak-nato-allies",
+   "kind": "event",
+   "title": "OpenAI 向北约及欧洲盟友提供 Daybreak 等网络安全能力",
+   "summary": null,
+   "publishedAt": "2026-11-17T15:02:03.000Z",
+   "sourceNames": [
+    "The Decoder"
+   ],
+   "path": "/events/2026-11-17-openai-daybreak-nato-allies/"
+  },
+  {
+   "id": "sha256:e9c996a0e3b8ea61",
+   "kind": "item",
+   "title": "英伟达宣布黄仁勋辞去总裁、CEO 及董事，CFO Colette Kress 任临时 CEO",
+   "summary": "本条是黄仁勋辞职后的分析或问询稿，不改变官方辞职与临时 CEO 任命的基本事实。",
+   "publishedAt": "2026-11-16T22:03:02.000Z",
+   "sourceName": "TechCrunch · AI",
+   "category": "industry",
+   "selected": false,
+   "eventPublicId": "2026-10-29-nvidia-jensen-huang-china-spy",
+   "originalUrl": "https://techcrunch.com/2026/11/16/all-the-questions-nvidia-should-answer-on-tuesday-but-probably-wont/"
+  },
+  {
+   "id": "2026-10-29-nvidia-jensen-huang-china-spy",
+   "kind": "event",
+   "title": "英伟达宣布黄仁勋辞去总裁、CEO 及董事，CFO Colette Kress 任临时 CEO",
+   "summary": null,
+   "publishedAt": "2026-11-16T22:03:02.000Z",
+   "sourceNames": [
+    "TechCrunch · AI",
+    "The Decoder",
+    "The Verge · AI",
+    "量子位"
+   ],
+   "path": "/events/2026-10-29-nvidia-jensen-huang-china-spy/"
+  },
+  {
+   "id": "sha256:9da45c34799aca3f",
+   "kind": "item",
+   "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
+   "summary": "The Decoder 跟进 Anthropic 智能体记忆研究，称关键不在于存储多少，而在于知道该忘记什么。",
+   "publishedAt": "2026-11-16T15:25:48.000Z",
+   "sourceName": "The Decoder",
+   "category": "paper",
+   "selected": false,
+   "eventPublicId": "2026-11-07-anthropic-agent-memory-dreaming",
+   "originalUrl": "https://the-decoder.com/anthropic-says-the-key-to-agent-memory-is-knowing-what-to-forget-not-how-much-to-store/"
+  },
+  {
+   "id": "2026-11-07-anthropic-agent-memory-dreaming",
+   "kind": "event",
+   "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
+   "summary": "Anthropic 官方研究《The components of agent memory》：拆解会话日志/记忆笔记/知识表征/注入上下文，并引入 dreaming 在空闲时巩固记忆；IT之家报道并入，代表为一手研究页。",
+   "publishedAt": "2026-11-16T15:25:48.000Z",
+   "sourceNames": [
+    "Anthropic Research · The components of agent memory",
+    "IT之家（全站，需关键词过滤）",
+    "The Decoder"
+   ],
+   "path": "/events/2026-11-07-anthropic-agent-memory-dreaming/"
+  },
+  {
+   "id": "sha256:236705559d2866e2",
+   "kind": "item",
+   "title": "跟进：有人评论黄仁勋相关问题在行业里是否更普遍",
+   "summary": "TechCrunch 以「黄仁勋的不良行为是否比看起来更普遍」为题跟进既有董事会调查，引述一名投资情报顾问称，行业里不少高层都知道这类事正在发生，并且实际上在纵容。这是既有调查的评论跟进，不是独立新案。",
+   "publishedAt": "2026-11-11T16:16:07.000Z",
+   "sourceName": "TechCrunch · AI",
+   "category": "industry",
+   "selected": false,
+   "eventPublicId": "2026-10-29-nvidia-jensen-huang-china-spy",
+   "originalUrl": "https://techcrunch.com/2026/11/11/is-jensen-huangs-bad-behavior-more-commonplace-than-it-seems/"
+  },
   {
    "id": "sha256:ba0fcf4e325b4115",
    "kind": "item",
    "title": "DeepMind 发布 AlphaGenome 2：预测变异如何影响特定细胞",
-   "summary": "DeepMind 发布下一代 DNA 序列模型 AlphaGenome 2，用于预测 DNA 序列及其变异如何影响特定人类细胞类型，并称可帮助寻找疾病的细胞根源。官方称在超过一亿个单个细胞剖面（profiles）上训练，TenK10K 上因果变异识别比例约为原版两倍，并已通过 API 向非商业研究开放。",
+   "summary": null,
    "publishedAt": "2026-11-11T15:00:15.000Z",
    "sourceName": "Google DeepMind Blog",
    "category": "model",
@@ -17,7 +103,7 @@
    "id": "2026-11-11-deepmind-alphagenome-2",
    "kind": "event",
    "title": "DeepMind 发布 AlphaGenome 2：预测变异如何影响特定细胞",
-   "summary": "DeepMind 发布下一代 DNA 序列模型 AlphaGenome 2，用于预测 DNA 序列及其变异如何影响特定人类细胞类型，并称可帮助寻找疾病的细胞根源。 官方称新模型改为按单一生物条件做预测，并在超过一亿个单个细胞剖面（profiles）上训练；在 TenK10K 免疫细胞数据上，识别到的因果变异比例约为原版 AlphaGenome 的两倍（30% 对 16%）。AlphaGenome 2 即日起通过 AlphaGenome API 向非商业研究开放，商业研究为私有预览；官方注明仅供研究，尚未用于临床或诊断。",
+   "summary": null,
    "publishedAt": "2026-11-11T15:00:15.000Z",
    "sourceNames": [
     "Google DeepMind Blog",
@@ -38,55 +124,28 @@
    "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model"
   },
   {
-   "id": "sha256:645655827833cc32",
+   "id": "sha256:f4e4ebe108d8e8cb",
    "kind": "item",
-   "title": "跟进：报道称企业可认领 ChatGPT 商家资料，并为 Business Agent 投放广告",
-   "summary": "IT之家：OpenAI 推出 ChatGPT Businesses 测试版，企业可认领资料、接入商品数据，并提到可为 Business Agent 投放广告；Shopify 商家可走简化验证。",
-   "publishedAt": "2026-11-10T22:55:36.000Z",
-   "sourceName": "IT之家（全站，需关键词过滤）",
-   "category": "product",
-   "selected": false,
-   "eventPublicId": "2026-11-11-openai-chatgpt-businesses",
-   "originalUrl": "https://www.ithome.com/1/025/206.htm"
-  },
-  {
-   "id": "2026-11-11-openai-chatgpt-businesses",
-   "kind": "event",
-   "title": "OpenAI 在 ChatGPT 中推出 Businesses",
-   "summary": "OpenAI 官方宣布在 ChatGPT 推出 Businesses：商家可以管理自己的商业信息、查看曝光情况，并把兴趣转化成行动。The Verge 报道将向符合条件的美国电商和在线服务企业提供已认证的「Business Agents」，用户可与代表品牌的智能体对话（例如比价）；该功能作为当天公布的一套商业功能的一部分进入测试。TechCrunch 报道称同时推出商业资料（business profiles），意在让 ChatGPT 更接近发现引擎。这是 ChatGPT 的商业产品功能，不是新模型发布。",
-   "publishedAt": "2026-11-10T22:55:36.000Z",
-   "sourceNames": [
-    "IT之家（全站，需关键词过滤）",
-    "OpenAI News",
-    "TechCrunch · AI",
-    "The Decoder",
-    "The Verge · AI"
-   ],
-   "path": "/events/2026-11-11-openai-chatgpt-businesses/"
-  },
-  {
-   "id": "sha256:4bf86764d0679af1",
-   "kind": "item",
-   "title": "跟进：报道称 OpenAI 把 ChatGPT 做成企业目录，并提供可接待顾客的 Business Agents",
-   "summary": "The Decoder：OpenAI 开放 ChatGPT 作为企业平台，企业可通过 Business Hub 认领资料、添加产品数据；符合条件的美国电商可使用 Business Agents，在 ChatGPT 内直接与顾客对话。",
-   "publishedAt": "2026-11-10T20:17:00.000Z",
-   "sourceName": "The Decoder",
-   "category": "product",
-   "selected": false,
-   "eventPublicId": "2026-11-11-openai-chatgpt-businesses",
-   "originalUrl": "https://the-decoder.com/openai-turns-chatgpt-into-a-business-directory-with-ai-agents-that-handle-customer-questions/"
-  },
-  {
-   "id": "sha256:7e74320883f414fb",
-   "kind": "item",
-   "title": "跟进：报道称 OpenAI 推出商业资料，想让 ChatGPT 更接近发现引擎",
-   "summary": "TechCrunch：OpenAI 推出新的商业资料等功能，意在让 ChatGPT 成为更完整的消费发现引擎，并让商家更好地参与其中。",
-   "publishedAt": "2026-11-10T18:49:52.000Z",
+   "title": "跟进：治理专家评论英伟达董事会对黄仁勋与疑似中方情报人员关系的调查",
+   "summary": null,
+   "publishedAt": "2026-11-11T07:30:51.000Z",
    "sourceName": "TechCrunch · AI",
-   "category": "product",
+   "category": "industry",
    "selected": false,
-   "eventPublicId": "2026-11-11-openai-chatgpt-businesses",
-   "originalUrl": "https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google/"
+   "eventPublicId": "2026-10-29-nvidia-jensen-huang-china-spy",
+   "originalUrl": "https://techcrunch.com/2026/11/10/nvidias-crisis-has-corporate-governance-experts-reaching-for-the-popcorn/"
+  },
+  {
+   "id": "sha256:38f7683430bac085",
+   "kind": "item",
+   "title": "跟进：The Verge 评论美国在 AI 竞赛中领先，同时讨论黄仁勋相关争议的风险",
+   "summary": "The Verge 评论文章认为美国目前在 AI 竞赛中领先，同时也讨论黄仁勋相关争议可能带来的风险。",
+   "publishedAt": "2026-11-10T19:04:05.000Z",
+   "sourceName": "The Verge · AI",
+   "category": "industry",
+   "selected": false,
+   "eventPublicId": "2026-10-29-nvidia-jensen-huang-china-spy",
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy"
   },
   {
    "id": "sha256:8c4ca9fd50b0aa50",
@@ -114,18 +173,6 @@
    "path": "/events/2026-10-28-deepmind-gemini-4-carbon/"
   },
   {
-   "id": "sha256:3ec8add99452b340",
-   "kind": "item",
-   "title": "报道：ChatGPT 将推出认证的品牌 Business Agents",
-   "summary": "The Verge：ChatGPT 将向符合条件的美国电商和在线服务企业提供已认证的「Business Agents」，用户可与代表品牌的智能体对话，例如比价；该功能作为当天公布的一套商业功能的一部分进入测试。",
-   "publishedAt": "2026-11-10T18:00:00.000Z",
-   "sourceName": "The Verge · AI",
-   "category": "product",
-   "selected": false,
-   "eventPublicId": "2026-11-11-openai-chatgpt-businesses",
-   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub"
-  },
-  {
    "id": "sha256:1452077b5912f8ba",
    "kind": "item",
    "title": "跟进：报道称 Gemini Robotics 2.5 在奔驰产线试点，分拣准确率约 96%",
@@ -148,6 +195,18 @@
     "The Decoder"
    ],
    "path": "/events/2026-11-10-deepmind-gemini-robotics-2-5/"
+  },
+  {
+   "id": "sha256:4cc686f0d8904bd2",
+   "kind": "item",
+   "title": "跟进：TechCrunch 整理黄仁勋与疑似中方情报人员关系的时间线",
+   "summary": "TechCrunch 发布时间线，回顾英伟达 CEO 黄仁勋与疑似中方情报人员的关系，并称可能影响中美 AI 竞赛中的国家安全评估。",
+   "publishedAt": "2026-11-10T17:04:19.000Z",
+   "sourceName": "TechCrunch · AI",
+   "category": "industry",
+   "selected": false,
+   "eventPublicId": "2026-10-29-nvidia-jensen-huang-china-spy",
+   "originalUrl": "https://techcrunch.com/2026/11/10/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/"
   },
   {
    "id": "sha256:55cb0588b3e8436e",
@@ -223,7 +282,7 @@
    "id": "sha256:0e9fb0eb84f13acf",
    "kind": "item",
    "title": "DeepMind 发布 AlphaProof Code：用 Lean 验证复杂软件",
-   "summary": "DeepMind 官方博客宣布推出 AlphaProof Code，称其智能体用 Lean 写出证明，用于校验 Signal 的核心加密。",
+   "summary": null,
    "publishedAt": "2026-11-10T12:02:28.000Z",
    "sourceName": "Google DeepMind Blog",
    "category": "model",
@@ -235,7 +294,7 @@
    "id": "2026-11-10-alphaproof-code",
    "kind": "event",
    "title": "DeepMind 发布 AlphaProof Code：用 Lean 验证复杂软件",
-   "summary": "DeepMind 官方博客宣布推出 AlphaProof Code，称这是在深度验证复杂软件方面的突破。其智能体用 Lean 写出证明，用于校验 Signal 的核心加密。这是一次具名的研究/产品发布，不是新的旗舰通用大模型。",
+   "summary": null,
    "publishedAt": "2026-11-10T12:02:28.000Z",
    "sourceNames": [
     "Google DeepMind Blog"
@@ -243,80 +302,88 @@
    "path": "/events/2026-11-10-alphaproof-code/"
   },
   {
-   "id": "sha256:991ad48e8559b2fe",
+   "id": "sha256:44bb6093a440b817",
    "kind": "item",
-   "title": "OpenAI 在 ChatGPT 中推出 Businesses",
-   "summary": "OpenAI 官方宣布在 ChatGPT 推出 Businesses：商家可以管理商业信息、查看曝光，并把兴趣转化成行动。",
-   "publishedAt": "2026-11-10T10:00:00.000Z",
-   "sourceName": "OpenAI News",
-   "category": "product",
-   "selected": true,
-   "eventPublicId": "2026-11-11-openai-chatgpt-businesses",
-   "originalUrl": "https://openai.com/index/introducing-businesses-chatgpt"
-  },
-  {
-   "id": "sha256:8915e46a098594e4",
-   "kind": "item",
-   "title": "跟进：Latent Space 评述 Anthropic Claude Fable 5.2 重夺榜首，IPO 路演只是时间背景",
-   "summary": "Latent Space AINews：评述 Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2 后重夺榜首，并讨论降价但单任务更耗 token、以及订阅与数据保留限制；文首提到 IPO 路演同日开始，只作发布时间背景，不是上市进程新事实。",
-   "publishedAt": "2026-11-10T06:34:44.000Z",
-   "sourceName": "Latent Space",
-   "category": "model",
+   "title": "分析：中国能从黄仁勋那里得到什么？",
+   "summary": "The Verge 分析稿：讨论在英伟达于人工智能供应链中的地位背景下，中国可能从黄仁勋处获得什么，偏分析、无新的调查硬事实。",
+   "publishedAt": "2026-11-09T23:51:58.000Z",
+   "sourceName": "The Verge · AI",
+   "category": "industry",
    "selected": false,
-   "eventPublicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
-   "originalUrl": "https://latent.space/p/ainews-fable-5-2-retakes-world-1-llm-spot-as-ant-ipo-roadshow-begins/"
+   "eventPublicId": "2026-10-29-nvidia-jensen-huang-china-spy",
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1030328/what-could-china-get-from-jensen-huang"
   },
   {
-   "id": "2026-11-10-anthropic-claude-fable-mythos-5-2",
-   "kind": "event",
-   "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
-   "summary": null,
-   "publishedAt": "2026-11-10T06:34:44.000Z",
-   "sourceNames": [
-    "Claude Platform Release Notes",
-    "Latent Space",
-    "Simon Willison",
-    "TechCrunch · AI",
-    "The Decoder",
-    "The Verge · AI"
-   ],
-   "path": "/events/2026-11-10-anthropic-claude-fable-mythos-5-2/"
-  },
-  {
-   "id": "sha256:19c160f4485a55c0",
+   "id": "sha256:cd027b24b17aebaf",
    "kind": "item",
-   "title": "跟进：Simon Willison 转述 Anthropic 关于 Claude Fable 5.2 的提示词测试",
-   "summary": "Simon Willison 转述 Anthropic 测试：Claude Fable 5.2 对「代码归谁所有」的提示很敏感；若提示未说明所有权或把代码库写成别人的，模型倾向在现有结构上打补丁，若写明代码库归它所有，则更愿意改结构。",
-   "publishedAt": "2026-11-10T05:34:14.000Z",
-   "sourceName": "Simon Willison",
-   "category": "model",
+   "title": "报道：特朗普说他知道哪些关于黄仁勋的事",
+   "summary": "The Verge：报道特朗普在白宫记者会上回应他是否知情英伟达 CEO 黄仁勋与疑似中方间谍的关系。",
+   "publishedAt": "2026-11-09T23:47:46.000Z",
+   "sourceName": "The Verge · AI",
+   "category": "industry",
    "selected": false,
-   "eventPublicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
-   "originalUrl": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/"
+   "eventPublicId": "2026-10-29-nvidia-jensen-huang-china-spy",
+   "originalUrl": "https://www.theverge.com/tech/1030446/trump-jensen-huang-press-conference"
   },
   {
-   "id": "sha256:9a8fde6cfa9ab68c",
+   "id": "sha256:28bf67cf1684b7b2",
    "kind": "item",
-   "title": "跟进：llm-anthropic 0.31 已加入 Anthropic Claude Fable 5.2 与 Mythos 5.2",
-   "summary": null,
-   "publishedAt": "2026-11-09T23:58:46.000Z",
-   "sourceName": "Simon Willison",
-   "category": "model",
+   "title": "报道：黄仁勋据报一年前已聘请擅长处理高调性丑闻的公关公司",
+   "summary": "TechCrunch：称黄仁勋据报在约一年前、纽约时报报道 Alice Huang 商业往来之后，聘请了一家有处理高调性丑闻记录的公关公司。",
+   "publishedAt": "2026-11-09T23:28:37.000Z",
+   "sourceName": "TechCrunch · AI",
+   "category": "industry",
    "selected": false,
-   "eventPublicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
-   "originalUrl": "https://simonwillison.net/2026/Nov/9/llm-anthropic/"
+   "eventPublicId": "2026-10-29-nvidia-jensen-huang-china-spy",
+   "originalUrl": "https://techcrunch.com/2026/11/09/jensen-huang-reportedly-engaged-a-pr-firm-with-a-history-of-handling-high-profile-sex-scandals-a-year-ago/"
   },
   {
-   "id": "sha256:c988f42abbf6068f",
+   "id": "sha256:38ea5b66d2595223",
    "kind": "item",
-   "title": "报道：Claude Fable 5.2 与 Mythos 5.2 巩固 Anthropic 在 IPO 前的领先地位",
-   "summary": "The Decoder：报道 Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2，称其为迄今最强模型，并置于 IPO 前的竞争格局中。",
-   "publishedAt": "2026-11-09T21:15:23.000Z",
-   "sourceName": "The Decoder",
-   "category": "model",
+   "title": "报道：关于针对黄仁勋的英伟达间谍丑闻，目前已知的一切",
+   "summary": "The Verge 综述：汇总英伟达 CEO 黄仁勋与疑似中方情报人员关系调查的已知信息。",
+   "publishedAt": "2026-11-09T23:07:59.000Z",
+   "sourceName": "The Verge · AI",
+   "category": "industry",
    "selected": false,
-   "eventPublicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
-   "originalUrl": "https://the-decoder.com/claude-fable-5-2-and-mythos-5-2-cement-anthropics-ai-lead-just-before-its-ipo/"
+   "eventPublicId": "2026-10-29-nvidia-jensen-huang-china-spy",
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang"
+  },
+  {
+   "id": "sha256:e105484703996e34",
+   "kind": "item",
+   "title": "报道：卖空机构早在丑闻爆发约半年前就质疑黄仁勋与疑似间谍的关系",
+   "summary": "TechCrunch：称 Culper Research 在英伟达间谍丑闻爆发约六个月前，就已质疑黄仁勋与一名中国高管的异常密切关系。",
+   "publishedAt": "2026-11-09T22:46:09.000Z",
+   "sourceName": "TechCrunch · AI",
+   "category": "industry",
+   "selected": false,
+   "eventPublicId": "2026-10-29-nvidia-jensen-huang-china-spy",
+   "originalUrl": "https://techcrunch.com/2026/11/09/a-short-seller-flagged-nvidia-ceos-ties-to-a-suspected-chinese-spy-six-months-before-the-scandal/"
+  },
+  {
+   "id": "sha256:bda3011897fcd946",
+   "kind": "item",
+   "title": "报道：针对英伟达的证券诉讼竞赛已经开始",
+   "summary": "TechCrunch：称英伟达股价在董事会启动调查后下跌超过 4%，并引证券法律师指出公司早前坚称“一切正常”可能变成昂贵问题。",
+   "publishedAt": "2026-11-09T22:23:42.000Z",
+   "sourceName": "TechCrunch · AI",
+   "category": "industry",
+   "selected": false,
+   "eventPublicId": "2026-10-29-nvidia-jensen-huang-china-spy",
+   "originalUrl": "https://techcrunch.com/2026/11/09/the-race-is-on-to-sue-nvidia/"
+  },
+  {
+   "id": "sha256:e7b41c563c8e101b",
+   "kind": "item",
+   "title": "报道：黄仁勋因英伟达争议退出 ElevenLabs Summit",
+   "summary": "TechCrunch：称英伟达 CEO 黄仁勋在争议升温之际退出 ElevenLabs Summit，并提到他早前也退出了一场 Anthropic 活动。",
+   "publishedAt": "2026-11-09T20:09:06.000Z",
+   "sourceName": "TechCrunch · AI",
+   "category": "industry",
+   "selected": false,
+   "eventPublicId": "2026-10-29-nvidia-jensen-huang-china-spy",
+   "originalUrl": "https://techcrunch.com/2026/11/09/jensen-huang-pulls-out-of-elevenlabs-summit-amid-nvidia-controversy/"
   },
   {
    "id": "sha256:6b6709b612e5913e",
@@ -331,40 +398,112 @@
    "originalUrl": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/"
   },
   {
-   "id": "sha256:a3bc8ca770f44f2d",
+   "id": "sha256:38597062943c6753",
    "kind": "item",
-   "title": "报道：Anthropic 发布新的 Mythos 与 Fable 模型，正值 RSI 担忧升温",
-   "summary": "TechCrunch：报道 Anthropic 发布新的 Mythos 与 Fable 模型，并称其在编程、推理与视觉上有改进，同时提到 RSI 担忧背景。",
-   "publishedAt": "2026-11-09T19:24:51.000Z",
+   "title": "报道：黄仁勋与疑似间谍的外遇使英伟达对华业务承压",
+   "summary": "TechCrunch 新稿：称黄仁勋与疑似中方间谍的关系，使英伟达放松对华芯片出口管制的游说与中国市场准入更加棘手。",
+   "publishedAt": "2026-11-09T18:09:52.000Z",
    "sourceName": "TechCrunch · AI",
-   "category": "model",
+   "category": "industry",
    "selected": false,
-   "eventPublicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
-   "originalUrl": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/"
+   "eventPublicId": "2026-10-29-nvidia-jensen-huang-china-spy",
+   "originalUrl": "https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny/"
   },
   {
-   "id": "sha256:ea9e227012293141",
+   "id": "sha256:3a3ea27b30526f5b",
    "kind": "item",
-   "title": "报道：Anthropic 发布新的 Claude Fable 与 Mythos 5.2 模型",
-   "summary": "The Verge：报道 Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2，称其面向艰巨技术挑战，并在编程、推理与视觉上有改进。",
-   "publishedAt": "2026-11-09T19:00:00.000Z",
+   "title": "评论：人工智能的未来竟系于黄仁勋的私生活？",
+   "summary": "The Verge 评论稿：以偏八卦/意见的口吻讨论黄仁勋私生活与所谓国家安全事件，未提供新的硬事实。",
+   "publishedAt": "2026-11-09T17:36:08.000Z",
    "sourceName": "The Verge · AI",
-   "category": "model",
+   "category": "industry",
    "selected": false,
-   "eventPublicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
-   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2"
+   "eventPublicId": "2026-10-29-nvidia-jensen-huang-china-spy",
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1029990/jensen-huang-the-spy-who-loved-me"
   },
   {
-   "id": "sha256:4182359e79e632d3",
+   "id": "sha256:653b2bfbd195e338",
    "kind": "item",
-   "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
+   "title": "报道：英伟达间谍丑闻削弱黄仁勋反对收紧芯片出口管制的游说",
+   "summary": "The Decoder 新稿：称黄仁勋承认婚外情、董事会启动独立调查，并分析此事削弱其反对收紧 AI 芯片出口管制的游说。",
+   "publishedAt": "2026-11-09T11:38:43.000Z",
+   "sourceName": "The Decoder",
+   "category": "industry",
+   "selected": false,
+   "eventPublicId": "2026-10-29-nvidia-jensen-huang-china-spy",
+   "originalUrl": "https://the-decoder.com/nvidia-espionage-scandal-weakens-huangs-lobby-against-tighter-ai-chip-export-controls/"
+  },
+  {
+   "id": "sha256:177dd03271cc9aec",
+   "kind": "item",
+   "title": "报道：耶鲁学者估计黄仁勋去留约为五五开",
+   "summary": "TechCrunch：在董事会调查背景下，引耶鲁大学 Jeffrey Sonnenfeld 估计黄仁勋能否留任 CEO 约为五五开。",
+   "publishedAt": "2026-11-09T05:26:29.000Z",
+   "sourceName": "TechCrunch · AI",
+   "category": "industry",
+   "selected": false,
+   "eventPublicId": "2026-10-29-nvidia-jensen-huang-china-spy",
+   "originalUrl": "https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50/"
+  },
+  {
+   "id": "sha256:0aef263f1a1de6df",
+   "kind": "item",
+   "title": "报道：量子位称黄仁勋致歉并称英伟达启动紧急调查",
+   "summary": "量子位以「出轨致歉」转述全员信与董事会调查，并称英伟达暗盘跌约 2%；与 10-29 调查事件同线，无新硬事实可核。",
+   "publishedAt": "2026-11-09T00:40:50.000Z",
+   "sourceName": "量子位",
+   "category": "industry",
+   "selected": false,
+   "eventPublicId": "2026-10-29-nvidia-jensen-huang-china-spy",
+   "originalUrl": "https://www.qbitai.com/2026/11/508498.html"
+  },
+  {
+   "id": "sha256:f0be6325bfc4dec9",
+   "kind": "item",
+   "title": "报道：英伟达董事会调查黄仁勋与疑似中方情报人员关系",
+   "summary": "The Verge 公布黄仁勋致员工备忘录全文，并称董事会已启动调查。",
+   "publishedAt": "2026-11-08T22:54:50.000Z",
+   "sourceName": "The Verge · AI",
+   "category": "industry",
+   "selected": false,
+   "eventPublicId": "2026-10-29-nvidia-jensen-huang-china-spy",
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia"
+  },
+  {
+   "id": "sha256:8a86cf9d70b8065c",
+   "kind": "item",
+   "title": "报道：英伟达将调查黄仁勋与疑似中方间谍的关系",
+   "summary": "TechCrunch：英伟达将对 CEO 与疑似中方间谍的关系展开调查。",
+   "publishedAt": "2026-11-08T21:00:11.000Z",
+   "sourceName": "TechCrunch · AI",
+   "category": "industry",
+   "selected": false,
+   "eventPublicId": "2026-10-29-nvidia-jensen-huang-china-spy",
+   "originalUrl": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/"
+  },
+  {
+   "id": "sha256:54c06e97d6e0a2b7",
+   "kind": "item",
+   "title": "报道：英伟达正在调查黄仁勋与一名中国间谍的关系",
    "summary": null,
-   "publishedAt": "2026-11-09T00:00:00.000Z",
-   "sourceName": "Claude Platform Release Notes",
-   "category": "model",
-   "selected": true,
-   "eventPublicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
-   "originalUrl": "https://platform.claude.com/docs/en/release-notes/overview#claude-fable-5-2"
+   "publishedAt": "2026-11-08T20:22:39.000Z",
+   "sourceName": "The Verge · AI",
+   "category": "industry",
+   "selected": false,
+   "eventPublicId": "2026-10-29-nvidia-jensen-huang-china-spy",
+   "originalUrl": "https://www.theverge.com/ai-artificial-intelligence/1029562/nvidia-investigating-jensen-huang-relationship-chinese-spy"
+  },
+  {
+   "id": "sha256:3b069222ecbd3b59",
+   "kind": "item",
+   "title": "报道：美情报备忘录称 Megaspeed 高管被招募监视英伟达 CEO",
+   "summary": "TechCrunch：称美情报备忘录指中国国安部门招募女性科技高管监视黄仁勋；与 10-29 线人传闻同线。",
+   "publishedAt": "2026-11-07T21:17:08.000Z",
+   "sourceName": "TechCrunch · AI",
+   "category": "industry",
+   "selected": false,
+   "eventPublicId": "2026-10-29-nvidia-jensen-huang-china-spy",
+   "originalUrl": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/"
   },
   {
    "id": "sha256:7af9752b435adc83",
@@ -377,18 +516,6 @@
    "selected": false,
    "eventPublicId": "2026-11-07-anthropic-agent-memory-dreaming",
    "originalUrl": "https://www.ithome.com/1/023/613.htm"
-  },
-  {
-   "id": "2026-11-07-anthropic-agent-memory-dreaming",
-   "kind": "event",
-   "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
-   "summary": "Anthropic 官方研究《The components of agent memory》：拆解会话日志/记忆笔记/知识表征/注入上下文，并引入 dreaming 在空闲时巩固记忆；IT之家报道并入，代表为一手研究页。",
-   "publishedAt": "2026-11-06T23:25:14.000Z",
-   "sourceNames": [
-    "Anthropic Research · The components of agent memory",
-    "IT之家（全站，需关键词过滤）"
-   ],
-   "path": "/events/2026-11-07-anthropic-agent-memory-dreaming/"
   },
   {
    "id": "sha256:e50dc2500b87b9e4",
@@ -1492,6 +1619,18 @@
    "originalUrl": "https://openai.com/index/updated-model-spec"
   },
   {
+   "id": "sha256:990b533cbb64ab7a",
+   "kind": "item",
+   "title": "【传闻】报道：美情报指黄仁勋圈子有中方线人",
+   "summary": null,
+   "publishedAt": "2026-10-29T16:42:32.000Z",
+   "sourceName": "TechCrunch · AI",
+   "category": "industry",
+   "selected": false,
+   "eventPublicId": "2026-10-29-nvidia-jensen-huang-china-spy",
+   "originalUrl": "https://techcrunch.com/2026/10/29/u-s-investigated-chinese-spy-plot-aimed-at-nvidia-ceo/"
+  },
+  {
    "id": "sha256:93ab7d0d8252cfce",
    "kind": "item",
    "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
@@ -1537,6 +1676,18 @@
    "selected": false,
    "eventPublicId": "2026-10-29-wiz-agentic-attacks",
    "originalUrl": "https://www.wiz.io/blog/the-rise-of-agentic-attacks"
+  },
+  {
+   "id": "sha256:d07a6f4e30ac5b4d",
+   "kind": "item",
+   "title": "【传闻】报道：美情报指黄仁勋圈子有中方线人",
+   "summary": null,
+   "publishedAt": "2026-10-29T13:42:38.000Z",
+   "sourceName": "The Decoder",
+   "category": "industry",
+   "selected": false,
+   "eventPublicId": "2026-10-29-nvidia-jensen-huang-china-spy",
+   "originalUrl": "https://the-decoder.com/chinese-spies-targeted-nvidia-ceo-jensen-huang-according-to-the-new-york-times/"
   },
   {
    "id": "sha256:5a25565ab71a8d06",
@@ -2356,7 +2507,7 @@
    "category": "model",
    "selected": false,
    "eventPublicId": "2026-10-27-openai-gpt61-terra",
-   "originalUrl": "https://the-decoder.com/gpt-6-1-terra-halves-openais-api%2Dprices-and-still-gains-ground-on-its-larger-models/"
+   "originalUrl": "https://the-decoder.com/gpt-6-1-terra-halves-openais-api-prices-and-still-gains-ground-on-its-larger-models/"
   },
   {
    "id": "sha256:27779e2e3a96ff05",

@@ -6,59 +6,6 @@
  },
  "cards": [
   {
-   "key": "sha256:2aca440b2c0823d7",
-   "anchorAt": "2026-11-04T00:00:00.000Z",
-   "item": {
-    "id": "sha256:2aca440b2c0823d7",
-    "title": "vLLM：开源 Kinference——面向 vLLM 与 Kubernetes 的推理控制平面",
-    "summary": "vLLM 官方博客：发布开源 Kinference，作为 vLLM 与 Kubernetes 的推理控制平面。",
-    "reason": "vLLM：开源 Kinference 推理控制平面",
-    "source": {
-     "name": "vLLM Blog"
-    },
-    "publishedAt": "2026-11-04T00:00:00.000Z",
-    "timelineAt": "2026-11-04T00:00:00.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-11-05-vllm-kinference",
-    "originalUrl": "https://vllm.ai/blog/2026-11-04-introducing-kinference"
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:295354ff422b0d4d",
-   "anchorAt": "2026-11-04T00:00:00.000Z",
-   "item": {
-    "id": "sha256:295354ff422b0d4d",
-    "title": "OpenAI：推出 Images 2.6（更快生成、GIF、精细编辑与 API 控制）",
-    "summary": "OpenAI 官方：Images 2.6 带来更快生图、GIF 创作、更精确编辑，并在 ChatGPT/Codex/API 提供新控制项。",
-    "reason": "OpenAI：Images 2.6 带来 GIF、更快生图与 API 控制",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-11-04T00:00:00.000Z",
-    "timelineAt": "2026-11-04T00:00:00.000Z",
-    "category": "product",
-    "tags": [],
-    "selected": true,
-    "channel": "news",
-    "x": null,
-    "storyPublicId": "2026-11-05-chatgpt-animated-gifs",
-    "originalUrl": "https://openai.com/index/introducing-images-2-6"
-   },
-   "group": {
-    "factId": "fact-2026-11-05-chatgpt-animated-gifs",
-    "additionalSourceCount": 3,
-    "reportCount": 4,
-    "memberIds": [
-     "sha256:295354ff422b0d4d"
-    ]
-   }
-  },
-  {
    "key": "sha256:23c4f130369cb972",
    "anchorAt": "2026-11-03T17:01:49.000Z",
    "item": {
@@ -542,6 +489,59 @@
     "originalUrl": "https://www.wiz.io/blog/the-rise-of-agentic-attacks-what-they-look-like-and-where-theyre-headed"
    },
    "group": null
+  },
+  {
+   "key": "sha256:5a25565ab71a8d06",
+   "anchorAt": "2026-10-29T12:00:07.000Z",
+   "item": {
+    "id": "sha256:5a25565ab71a8d06",
+    "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
+    "summary": "Mistral 发布并开源 Mistral Large 4（代号 Le Chonk）权重：约 1 万亿参数、原生多模态，称在开源权重编码评测领先并强化防御性网络安全；提供多种推理模式以平衡成本与性能，在欧洲基础设施训练。",
+    "reason": "Mistral 开源 Large 4（Le Chonk）1T 多模态权重",
+    "source": {
+     "name": "Mistral AI News"
+    },
+    "publishedAt": "2026-10-29T12:00:07.000Z",
+    "timelineAt": "2026-10-29T12:00:07.000Z",
+    "category": "model",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-29-mistral-large-4-lechonk",
+    "originalUrl": "https://mistral.ai/news/mistral-large-4-oss/"
+   },
+   "group": {
+    "factId": "fact-2026-10-29-mistral-large-4-lechonk",
+    "additionalSourceCount": 5,
+    "reportCount": 6,
+    "memberIds": [
+     "sha256:5a25565ab71a8d06"
+    ]
+   }
+  },
+  {
+   "key": "sha256:0f01adb2acab0a67",
+   "anchorAt": "2026-10-29T09:00:00.000Z",
+   "item": {
+    "id": "sha256:0f01adb2acab0a67",
+    "title": "OpenAI：如何监测前沿模型错位",
+    "summary": "OpenAI 介绍分层监测，用于发现前沿模型错位与未授权智能体行为，以便在事件升级前介入。官方安全运营说明。",
+    "reason": "OpenAI：分层监测前沿模型错位与未授权智能体行为",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-10-29T09:00:00.000Z",
+    "timelineAt": "2026-10-29T09:00:00.000Z",
+    "category": "paper",
+    "tags": [],
+    "selected": true,
+    "channel": "news",
+    "x": null,
+    "storyPublicId": "2026-10-30-openai-frontier-misalignment-detection",
+    "originalUrl": "https://openai.com/index/how-we-detect-frontier-model-misalignment"
+   },
+   "group": null
   }
  ],
  "nextCursor": "timeline/page-3.json",
@@ -549,5 +549,5 @@
  "dayCounts": {},
  "page": 2,
  "pageCount": 6,
- "total": 117
+ "total": 115
 }

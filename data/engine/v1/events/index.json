@@ -1,32 +1,46 @@
 {
  "events": [
   {
+   "publicId": "2026-11-17-openai-daybreak-nato-allies",
+   "title": "OpenAI 向北约及欧洲盟友提供 Daybreak 等网络安全能力",
+   "latestAt": "2026-11-17T15:02:03.000Z",
+   "reportCount": 1,
+   "hotRank": 1
+  },
+  {
+   "publicId": "2026-10-29-nvidia-jensen-huang-china-spy",
+   "title": "英伟达宣布黄仁勋辞去总裁、CEO 及董事，CFO Colette Kress 任临时 CEO",
+   "latestAt": "2026-11-16T22:03:02.000Z",
+   "reportCount": 23,
+   "hotRank": 2
+  },
+  {
+   "publicId": "2026-11-07-anthropic-agent-memory-dreaming",
+   "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
+   "latestAt": "2026-11-16T15:25:48.000Z",
+   "reportCount": 3,
+   "hotRank": null
+  },
+  {
    "publicId": "2026-11-11-deepmind-alphagenome-2",
    "title": "DeepMind 发布 AlphaGenome 2：预测变异如何影响特定细胞",
    "latestAt": "2026-11-11T15:00:15.000Z",
    "reportCount": 2,
-   "hotRank": 4
-  },
-  {
-   "publicId": "2026-11-11-openai-chatgpt-businesses",
-   "title": "OpenAI 在 ChatGPT 中推出 Businesses",
-   "latestAt": "2026-11-10T22:55:36.000Z",
-   "reportCount": 5,
-   "hotRank": 1
+   "hotRank": null
   },
   {
    "publicId": "2026-10-28-deepmind-gemini-4-carbon",
    "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
    "latestAt": "2026-11-10T18:19:13.000Z",
    "reportCount": 5,
-   "hotRank": 3
+   "hotRank": null
   },
   {
    "publicId": "2026-11-10-deepmind-gemini-robotics-2-5",
    "title": "DeepMind 发布 Gemini Robotics 2.5：称是其最强视觉-语言-动作模型",
    "latestAt": "2026-11-10T17:11:10.000Z",
    "reportCount": 2,
-   "hotRank": 5
+   "hotRank": null
   },
   {
    "publicId": "2026-11-10-nvidia-kubernetes-engine",
@@ -47,20 +61,6 @@
    "title": "DeepMind 发布 AlphaProof Code：用 Lean 验证复杂软件",
    "latestAt": "2026-11-10T12:02:28.000Z",
    "reportCount": 1,
-   "hotRank": null
-  },
-  {
-   "publicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
-   "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
-   "latestAt": "2026-11-10T06:34:44.000Z",
-   "reportCount": 7,
-   "hotRank": 2
-  },
-  {
-   "publicId": "2026-11-07-anthropic-agent-memory-dreaming",
-   "title": "Anthropic：发布智能体记忆组件研究，引入“做梦”巩固机制",
-   "latestAt": "2026-11-06T23:25:14.000Z",
-   "reportCount": 2,
    "hotRank": null
   },
   {

@@ -1,22 +1,22 @@
 {
  "publicId": "2026-11-10-alphaproof-code",
  "title": "DeepMind 发布 AlphaProof Code：用 Lean 验证复杂软件",
- "status": "active",
+ "status": "settled",
  "reportCount": 1,
  "sourceCount": 1,
  "firstReportAt": "2026-11-10T12:02:28.000Z",
  "latestAt": "2026-11-10T12:02:28.000Z",
  "digest": null,
  "digestUpdatedAt": null,
- "summary": "DeepMind 官方博客宣布推出 AlphaProof Code，称这是在深度验证复杂软件方面的突破。其智能体用 Lean 写出证明，用于校验 Signal 的核心加密。这是一次具名的研究/产品发布，不是新的旗舰通用大模型。",
+ "summary": null,
  "excerpt": null,
  "latest": null,
  "latestReport": null,
  "whyHot": {
-  "participants48h": 1,
+  "participants48h": 0,
   "newParticipants6h": 0,
   "recentReports24h": 0,
-  "observationComplete": true,
+  "observationComplete": false,
   "rank": null
  },
  "developments": [
@@ -28,7 +28,7 @@
    "representative": {
     "id": "sha256:0e9fb0eb84f13acf",
     "title": "DeepMind 发布 AlphaProof Code：用 Lean 验证复杂软件",
-    "summary": "DeepMind 官方博客宣布推出 AlphaProof Code，称其智能体用 Lean 写出证明，用于校验 Signal 的核心加密。",
+    "summary": null,
     "source": {
      "name": "Google DeepMind Blog",
      "firstParty": true
@@ -43,7 +43,7 @@
   {
    "id": "sha256:0e9fb0eb84f13acf",
    "title": "DeepMind 发布 AlphaProof Code：用 Lean 验证复杂软件",
-   "summary": "DeepMind 官方博客宣布推出 AlphaProof Code，称其智能体用 Lean 写出证明，用于校验 Signal 的核心加密。",
+   "summary": null,
    "source": {
     "name": "Google DeepMind Blog",
     "firstParty": true
@@ -57,7 +57,7 @@
   {
    "id": "sha256:0e9fb0eb84f13acf",
    "title": "DeepMind 发布 AlphaProof Code：用 Lean 验证复杂软件",
-   "summary": "DeepMind 官方博客宣布推出 AlphaProof Code，称其智能体用 Lean 写出证明，用于校验 Signal 的核心加密。",
+   "summary": null,
    "source": {
     "name": "Google DeepMind Blog",
     "firstParty": true
@@ -67,148 +67,7 @@
    "originalUrl": "https://deepmind.google/blog/introducing-alphaproof-code/"
   }
  ],
- "heat": [
-  {
-   "hour": "2026-11-10T13:00:00.000Z",
-   "heat": 9.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-10T14:00:00.000Z",
-   "heat": 9.4,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-10T15:00:00.000Z",
-   "heat": 9.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-10T16:00:00.000Z",
-   "heat": 8.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-10T17:00:00.000Z",
-   "heat": 8.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-10T18:00:00.000Z",
-   "heat": 8.4,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-10T19:00:00.000Z",
-   "heat": 8.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-10T20:00:00.000Z",
-   "heat": 7.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-10T21:00:00.000Z",
-   "heat": 7.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-10T22:00:00.000Z",
-   "heat": 7.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-10T23:00:00.000Z",
-   "heat": 7.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-11T00:00:00.000Z",
-   "heat": 7.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-11T01:00:00.000Z",
-   "heat": 6.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-11T02:00:00.000Z",
-   "heat": 6.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-11T03:00:00.000Z",
-   "heat": 6.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-11T04:00:00.000Z",
-   "heat": 6.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-11T05:00:00.000Z",
-   "heat": 6.1,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-11T06:00:00.000Z",
-   "heat": 6.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-11T07:00:00.000Z",
-   "heat": 5.8,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-11T08:00:00.000Z",
-   "heat": 5.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-11T09:00:00.000Z",
-   "heat": 5.5,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-11T10:00:00.000Z",
-   "heat": 5.3,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-11T11:00:00.000Z",
-   "heat": 5.2,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-11T12:00:00.000Z",
-   "heat": 5.0,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-11T13:00:00.000Z",
-   "heat": 4.9,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-11T14:00:00.000Z",
-   "heat": 4.7,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-11T15:00:00.000Z",
-   "heat": 4.6,
-   "participants": 1
-  },
-  {
-   "hour": "2026-11-11T16:00:00.000Z",
-   "heat": 4.5,
-   "participants": 1
-  }
- ],
+ "heat": [],
  "related": [],
  "topics": [],
  "recommendReason": "DeepMind 发布 AlphaProof Code，用 Lean 验证软件",

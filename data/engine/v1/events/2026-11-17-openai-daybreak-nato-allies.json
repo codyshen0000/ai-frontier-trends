@@ -1,0 +1,148 @@
+{
+ "publicId": "2026-11-17-openai-daybreak-nato-allies",
+ "title": "OpenAI 向北约及欧洲盟友提供 Daybreak 等网络安全能力",
+ "status": "active",
+ "reportCount": 1,
+ "sourceCount": 1,
+ "firstReportAt": "2026-11-17T15:02:03.000Z",
+ "latestAt": "2026-11-17T15:02:03.000Z",
+ "digest": null,
+ "digestUpdatedAt": null,
+ "summary": null,
+ "excerpt": null,
+ "latest": null,
+ "latestReport": null,
+ "whyHot": {
+  "participants48h": 2,
+  "newParticipants6h": 1,
+  "recentReports24h": 2,
+  "observationComplete": true,
+  "rank": 1
+ },
+ "developments": [
+  {
+   "factId": "fact-2026-11-17-openai-daybreak-nato-allies",
+   "title": "OpenAI 向北约及欧洲盟友提供 Daybreak 等网络安全能力",
+   "firstReportAt": "2026-11-17T15:02:03.000Z",
+   "reportCount": 1,
+   "representative": {
+    "id": "sha256:7b499de51a856296",
+    "title": "OpenAI 向北约及欧洲盟友提供 Daybreak 等网络安全能力",
+    "summary": "The Decoder 报道 OpenAI 向北约和欧洲政府开放网络安全工具 Daybreak，与 OpenAI 官方说明属同一部署。",
+    "source": {
+     "name": "The Decoder",
+     "firstParty": false
+    },
+    "publishedAt": "2026-11-17T15:02:03.000Z",
+    "selected": false,
+    "originalUrl": "https://the-decoder.com/openai-opens-its-cybersecurity-tool-daybreak-to-nato-and-european-governments/"
+   }
+  }
+ ],
+ "officialReports": [],
+ "timeline": [
+  {
+   "id": "sha256:7b499de51a856296",
+   "title": "OpenAI 向北约及欧洲盟友提供 Daybreak 等网络安全能力",
+   "summary": "The Decoder 报道 OpenAI 向北约和欧洲政府开放网络安全工具 Daybreak，与 OpenAI 官方说明属同一部署。",
+   "source": {
+    "name": "The Decoder",
+    "firstParty": false
+   },
+   "publishedAt": "2026-11-17T15:02:03.000Z",
+   "selected": false,
+   "originalUrl": "https://the-decoder.com/openai-opens-its-cybersecurity-tool-daybreak-to-nato-and-european-governments/"
+  }
+ ],
+ "heat": [
+  {
+   "hour": "2026-11-17T00:00:00.000Z",
+   "heat": 10.0,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T01:00:00.000Z",
+   "heat": 9.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T02:00:00.000Z",
+   "heat": 9.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T03:00:00.000Z",
+   "heat": 9.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T04:00:00.000Z",
+   "heat": 8.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T05:00:00.000Z",
+   "heat": 8.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T06:00:00.000Z",
+   "heat": 8.4,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T07:00:00.000Z",
+   "heat": 8.2,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T08:00:00.000Z",
+   "heat": 7.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T09:00:00.000Z",
+   "heat": 7.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T10:00:00.000Z",
+   "heat": 7.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T11:00:00.000Z",
+   "heat": 7.3,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T12:00:00.000Z",
+   "heat": 7.1,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T13:00:00.000Z",
+   "heat": 6.9,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T14:00:00.000Z",
+   "heat": 6.7,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T15:00:00.000Z",
+   "heat": 6.5,
+   "participants": 1
+  },
+  {
+   "hour": "2026-11-17T16:00:00.000Z",
+   "heat": 16.0,
+   "participants": 2
+  }
+ ],
+ "related": [],
+ "topics": [],
+ "recommendReason": "OpenAI 向北约及欧洲盟友提供 Daybreak",
+ "primaryUrl": "https://the-decoder.com/openai-opens-its-cybersecurity-tool-daybreak-to-nato-and-european-governments/"
+}

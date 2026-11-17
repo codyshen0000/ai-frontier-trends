@@ -21,10 +21,10 @@
    "firstParty": true,
    "publishedAt": "2026-10-26T00:00:00.000Z",
    "available": true,
-   "otherSources": 2
+   "otherSources": 3
   },
   {
-   "itemId": "sha256:fcee7fe2ae9bec9b",
+   "itemId": "sha256:8128c7853b28b767",
    "title": "Anthropic 正式递交公开上市申请",
    "summary": "Anthropic 向 SEC 递交 S-1，披露收入增长、客户结构、长期算力义务与特殊治理安排，并在附信中重申 Claude 不投放广告。一手文件见 SEC EDGAR；媒体数字转述以招股书为准。",
    "sourceName": "TechCrunch · AI",
@@ -33,7 +33,7 @@
    "firstParty": true,
    "publishedAt": "2026-10-26T00:00:00.000Z",
    "available": true,
-   "otherSources": 4
+   "otherSources": 6
   },
   {
    "itemId": "sha256:6e162aff655bfd4c",
@@ -45,24 +45,24 @@
    "firstParty": true,
    "publishedAt": "2026-10-26T16:35:44.000Z",
    "available": true,
-   "otherSources": 1
+   "otherSources": 2
   },
   {
-   "itemId": "sha256:89893d5f73c77515",
+   "itemId": "sha256:8d93b09012158ea0",
    "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
    "summary": "Cloudflare 披露并修复其 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题，说明影响范围与补救。属官方安全通告。",
-   "sourceName": "Hacker News（AI 关键词 ≥100 分）",
+   "sourceName": "Cloudflare Blog",
    "sourceUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
    "sourceIconUrl": null,
    "firstParty": true,
    "publishedAt": "2026-10-26T22:41:48.000Z",
    "available": true,
-   "otherSources": 0
+   "otherSources": 1
   }
  ],
  "sections": [
   {
-   "label": "模型",
+   "label": "其他",
    "summary": null,
    "items": [
     {
@@ -75,25 +75,7 @@
      "firstParty": true,
      "publishedAt": "2026-10-26T00:00:00.000Z",
      "available": true,
-     "otherSources": 2
-    }
-   ]
-  },
-  {
-   "label": "行业",
-   "summary": null,
-   "items": [
-    {
-     "itemId": "sha256:fcee7fe2ae9bec9b",
-     "title": "Anthropic 正式递交公开上市申请",
-     "summary": "Anthropic 向 SEC 递交 S-1，披露收入增长、客户结构、长期算力义务与特殊治理安排，并在附信中重申 Claude 不投放广告。一手文件见 SEC EDGAR；媒体数字转述以招股书为准。",
-     "sourceName": "TechCrunch · AI",
-     "sourceUrl": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-26T00:00:00.000Z",
-     "available": true,
-     "otherSources": 4
+     "otherSources": 3
     },
     {
      "itemId": "sha256:6e162aff655bfd4c",
@@ -105,19 +87,49 @@
      "firstParty": true,
      "publishedAt": "2026-10-26T16:35:44.000Z",
      "available": true,
-     "otherSources": 1
+     "otherSources": 2
     },
     {
-     "itemId": "sha256:89893d5f73c77515",
+     "itemId": "sha256:c3d6fb64eb5418e8",
+     "title": "NVIDIA Mission Control 2.5：Kubernetes 自主恢复",
+     "summary": "NVIDIA 技术博客称 Mission Control 2.5 为 Kubernetes 环境带来自主恢复能力，减少人工干预。属厂商技术说明。",
+     "sourceName": "NVIDIA Technical Blog",
+     "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-26T15:00:00.000Z",
+     "available": true,
+     "otherSources": 1
+    }
+   ]
+  },
+  {
+   "label": "行业",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:8128c7853b28b767",
+     "title": "Anthropic 正式递交公开上市申请",
+     "summary": "Anthropic 向 SEC 递交 S-1，披露收入增长、客户结构、长期算力义务与特殊治理安排，并在附信中重申 Claude 不投放广告。一手文件见 SEC EDGAR；媒体数字转述以招股书为准。",
+     "sourceName": "TechCrunch · AI",
+     "sourceUrl": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-26T00:00:00.000Z",
+     "available": true,
+     "otherSources": 6
+    },
+    {
+     "itemId": "sha256:8d93b09012158ea0",
      "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
      "summary": "Cloudflare 披露并修复其 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题，说明影响范围与补救。属官方安全通告。",
-     "sourceName": "Hacker News（AI 关键词 ≥100 分）",
+     "sourceName": "Cloudflare Blog",
      "sourceUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
      "sourceIconUrl": null,
      "firstParty": true,
      "publishedAt": "2026-10-26T22:41:48.000Z",
      "available": true,
-     "otherSources": 0
+     "otherSources": 1
     },
     {
      "itemId": "sha256:1b5221fd798be326",
@@ -140,24 +152,6 @@
      "sourceIconUrl": null,
      "firstParty": false,
      "publishedAt": "2026-10-25T09:12:10.000Z",
-     "available": true,
-     "otherSources": 0
-    }
-   ]
-  },
-  {
-   "label": "产品",
-   "summary": null,
-   "items": [
-    {
-     "itemId": "sha256:c3d6fb64eb5418e8",
-     "title": "NVIDIA Mission Control 2.5：Kubernetes 自主恢复",
-     "summary": "NVIDIA 技术博客称 Mission Control 2.5 为 Kubernetes 环境带来自主恢复能力，减少人工干预。属厂商技术说明。",
-     "sourceName": "NVIDIA Technical Blog",
-     "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-26T15:00:00.000Z",
      "available": true,
      "otherSources": 0
     }
@@ -428,18 +422,12 @@
    "available": true
   }
  ],
- "cover": {
-  "url": "https://static.simonwillison.net/static/2026-10-26/terra-max.webp",
-  "width": null,
-  "height": null,
-  "alt": "It",
-  "caption": null
- },
+ "cover": null,
  "metrics": {
   "totalEvents": 10,
-  "sourcesCount": 12,
+  "sourcesCount": 15,
   "firstPartyEvents": 6,
-  "modelsReleased": 1
+  "modelsReleased": 0
  },
  "readingMinutes": 4,
  "prev": "2026-10-25",

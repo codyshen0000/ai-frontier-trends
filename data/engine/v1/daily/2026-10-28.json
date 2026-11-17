@@ -78,16 +78,28 @@
      "otherSources": 1
     },
     {
-     "itemId": "sha256:e960e8891f7d7ad8",
-     "title": "DeepMind 发布 Genie 4：新一代世界仿真",
-     "summary": "Google DeepMind 宣布 Genie 4 世界模型，称提升实时交互仿真真实感，并原生多模态生成音频与对话；依托 Gemini 家族维持连贯。现为可信测试者研究预览，后续面向 Google AI Ultra 等。属官方发布。",
+     "itemId": "sha256:3e32bae570ff21ee",
+     "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+     "summary": "Google DeepMind 宣布 Gemini 4 Carbon，称其为目前最强一代，在 Artificial Analysis Intelligence Index v5.0 排名第一（59），并在 SEC-bench Pro、ExploitGym、CWE-bench 等网络安全评测领先；内部称可支撑多日长程工程任务。在 Argon 两周后发布。正按美国政府自愿预发布测试流程推进，本周起先向部分网络安全防御方开放，再经 Fairwind 计划扩至可信伙伴；面向开发者与消费者的产品面仍待开放。入门价与 Argon 相同：每百万输入/输出 token 2/10 美元。",
      "sourceName": "Google DeepMind Blog",
-     "sourceUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+     "sourceUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
      "sourceIconUrl": null,
      "firstParty": true,
-     "publishedAt": "2026-10-27T16:01:38.000Z",
+     "publishedAt": "2026-10-28T17:00:58.000Z",
      "available": true,
      "otherSources": 4
+    },
+    {
+     "itemId": "sha256:ec733f799e1aaee3",
+     "title": "NVIDIA 发布开源 Nemotron 3.5 Transcribe 与 Granary v2",
+     "summary": "NVIDIA 在 Hugging Face 发布开源权重 Nemotron 3.5 Transcribe：单检查点可做多语转写（约 40 语）、说话人归属、翻译与音频问答，并可用自然语言提示；同日给出 Granary v2 多语语音数据与微调工具。属官方模型/数据发布。",
+     "sourceName": "Hugging Face Blog",
+     "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-28T14:58:17.000Z",
+     "available": true,
+     "otherSources": 2
     }
    ]
   },
@@ -162,28 +174,28 @@
      "otherSources": 1
     },
     {
-     "itemId": "sha256:257d2044442d252a",
-     "title": "Opera 推出 WebAI：浏览器本地部署 AI",
-     "summary": "Opera 称推出 WebAI 预览，让网站与扩展在浏览器内调用本地推理（含开源权重），并称该提案获多家公司支持。一手见 Opera 博客；TechCrunch 跟进。",
-     "sourceName": "TechCrunch · AI",
-     "sourceUrl": "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/",
-     "sourceIconUrl": null,
-     "firstParty": false,
-     "publishedAt": "2026-10-27T13:00:00.000Z",
-     "available": true,
-     "otherSources": 0
-    },
-    {
-     "itemId": "sha256:b836eb939c37ffa5",
-     "title": "NVIDIA：在 DGX Spark 上加速 MoE 推理的三种方法",
-     "summary": "NVIDIA 技术博客以 Ling-3.0-flash 为例，介绍 Humming 内核、在线 FP8 量化与多 token 预测 speculative decoding 等路径，称组合后解码吞吐约提升四成。属厂商技术说明。",
-     "sourceName": "NVIDIA Technical Blog",
-     "sourceUrl": "https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark/",
+     "itemId": "sha256:1a162d33f42d8b8e",
+     "title": "蚂蚁百灵开源 Ling-3.1-flash-1019：560B/25B MoE，AA 智力指数 44",
+     "summary": "蚂蚁 inclusionAI 在 Hugging Face 开源 Ling-3.1-flash-1019（总参约 560B、每 Token 激活约 25B、混合线性 MoE、MIT）：相对上一版 AA Intelligence Index v4.3.2 从 41 升至 44；AA-Briefcase 约 1400→1524 Elo，AutomationBench-AA 62%→68%，CritPt 18%→26%，SciCode 54%→57%。同步开源基础模型 Ling-3.1-flash-base；面向 Personal Agent / 多步真实任务。量子位跟进报道。",
+     "sourceName": "HF 机构新模型 · inclusionAI",
+     "sourceUrl": "https://huggingface.co/inclusionAI/Ling-3.1-flash-1019",
      "sourceIconUrl": null,
      "firstParty": true,
-     "publishedAt": "2026-10-27T15:00:00.000Z",
+     "publishedAt": "2026-10-27T05:46:51.000Z",
      "available": true,
-     "otherSources": 0
+     "otherSources": 1
+    },
+    {
+     "itemId": "sha256:f0e3f8456fcbc65d",
+     "title": "微软发布 MAI-Image-2.7：图像编辑预览登 Artificial Analysis 第二",
+     "summary": "微软 AI 官方宣布推出 MAI Image 2.7 图像编辑预览：主打场景重绘/打光、图内文字与符号修改、素材修复增强；称在 Artificial Analysis 图像编辑榜列第二、Arena Edit 第三，相对 2.6 在全部评测用例与编辑动作上提升，场景与风格项领先约 24 Elo。现阶段以已有图片+指令编辑为主，文生图尚未开放；官方未公布 2.7 API/定价。IT之家等跟进转述。",
+     "sourceName": "Microsoft AI",
+     "sourceUrl": "https://microsoft.ai/news/mai-image-2-7-debut/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-27T00:00:00.000Z",
+     "available": true,
+     "otherSources": 1
     }
    ]
   },
@@ -202,34 +214,16 @@
      "publishedAt": "2026-10-26T22:41:48.000Z",
      "available": true,
      "otherSources": 1
-    }
-   ]
-  },
-  {
-   "label": "其他",
-   "summary": null,
-   "items": [
-    {
-     "itemId": "sha256:c3d6fb64eb5418e8",
-     "title": "NVIDIA Mission Control 2.5：Kubernetes 自主恢复",
-     "summary": "NVIDIA 技术博客称 Mission Control 2.5 为 Kubernetes 环境带来自主恢复能力，减少人工干预。属厂商技术说明。",
-     "sourceName": "NVIDIA Technical Blog",
-     "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-26T15:00:00.000Z",
-     "available": true,
-     "otherSources": 1
     },
     {
-     "itemId": "sha256:edeae07ffd206303",
-     "title": "NVIDIA Minerva：把遥测混乱变成峰值 GPU 良率",
-     "summary": "NVIDIA 技术博客介绍 Minerva 如何用遥测提升 GPU 良率。属厂商技术说明。",
-     "sourceName": "NVIDIA Technical Blog",
-     "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/",
+     "itemId": "sha256:3801bfeec8403796",
+     "title": "微软首次披露 Azure 季度营收约 33.2 亿美元",
+     "summary": "TechCrunch 称微软首次以美元披露 Azure 季度营收约 33.2 亿美元；同季总营收约 922.79 亿美元（同比 +19%），并披露来自 OpenAI 安排收入约 10 亿美元。属财报解读二手，关键数字来自业绩披露。",
+     "sourceName": "TechCrunch · AI",
+     "sourceUrl": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
      "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-26T16:00:00.000Z",
+     "firstParty": false,
+     "publishedAt": "2026-10-28T21:58:32.000Z",
      "available": true,
      "otherSources": 1
     }
@@ -461,11 +455,11 @@
  "cover": null,
  "metrics": {
   "totalEvents": 12,
-  "sourcesCount": 16,
+  "sourcesCount": 17,
   "firstPartyEvents": 11,
-  "modelsReleased": 2
+  "modelsReleased": 3
  },
- "readingMinutes": 4,
+ "readingMinutes": 5,
  "prev": "2026-10-27",
- "next": null
+ "next": "2026-10-29"
 }

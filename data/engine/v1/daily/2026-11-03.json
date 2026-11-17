@@ -118,6 +118,18 @@
      "publishedAt": "2026-11-02T15:00:00.000Z",
      "available": true,
      "otherSources": 1
+    },
+    {
+     "itemId": "sha256:bca108e4c77bd86b",
+     "title": "OpenAI：大幅提高安全漏洞赏金，最高 $172,000",
+     "summary": "OpenAI 官方：中高危奖励中位数超四倍；核心产品危急最高 3 万，卓越危急加奖励可达 $172,000；并推质量/忠诚乘数。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-02T18:00:00.000Z",
+     "available": true,
+     "otherSources": 1
     }
    ]
   }
@@ -214,13 +226,13 @@
  ],
  "cover": null,
  "metrics": {
-  "totalEvents": 4,
-  "sourcesCount": 2,
-  "firstPartyEvents": 4,
+  "totalEvents": 5,
+  "sourcesCount": 3,
+  "firstPartyEvents": 5,
   "modelsReleased": 0,
-  "mainCardNote": "今日仅 4 条达收录标准"
+  "mainCardNote": "今日仅 5 条达收录标准"
  },
  "readingMinutes": 1,
  "prev": "2026-11-01",
- "next": null
+ "next": "2026-11-04"
 }

@@ -21,10 +21,10 @@
    "firstParty": true,
    "publishedAt": "2026-10-26T00:00:00.000Z",
    "available": true,
-   "otherSources": 2
+   "otherSources": 3
   },
   {
-   "itemId": "sha256:fcee7fe2ae9bec9b",
+   "itemId": "sha256:8128c7853b28b767",
    "title": "Anthropic 正式递交公开上市申请",
    "summary": "Anthropic 向 SEC 递交 S-1，披露收入增长、客户结构、长期算力义务与特殊治理安排，并在附信中重申 Claude 不投放广告。一手文件见 SEC EDGAR；媒体数字转述以招股书为准。",
    "sourceName": "TechCrunch · AI",
@@ -33,7 +33,7 @@
    "firstParty": true,
    "publishedAt": "2026-10-26T00:00:00.000Z",
    "available": true,
-   "otherSources": 4
+   "otherSources": 6
   },
   {
    "itemId": "sha256:6e162aff655bfd4c",
@@ -45,24 +45,24 @@
    "firstParty": true,
    "publishedAt": "2026-10-26T16:35:44.000Z",
    "available": true,
-   "otherSources": 1
+   "otherSources": 2
   },
   {
-   "itemId": "sha256:89893d5f73c77515",
+   "itemId": "sha256:8d93b09012158ea0",
    "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
    "summary": "Cloudflare 披露并修复其 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题，说明影响范围与补救。属官方安全通告。",
-   "sourceName": "Hacker News（AI 关键词 ≥100 分）",
+   "sourceName": "Cloudflare Blog",
    "sourceUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
    "sourceIconUrl": null,
    "firstParty": true,
    "publishedAt": "2026-10-26T22:41:48.000Z",
    "available": true,
-   "otherSources": 0
+   "otherSources": 1
   }
  ],
  "sections": [
   {
-   "label": "模型",
+   "label": "其他",
    "summary": null,
    "items": [
     {
@@ -75,25 +75,7 @@
      "firstParty": true,
      "publishedAt": "2026-10-26T00:00:00.000Z",
      "available": true,
-     "otherSources": 2
-    }
-   ]
-  },
-  {
-   "label": "行业",
-   "summary": null,
-   "items": [
-    {
-     "itemId": "sha256:fcee7fe2ae9bec9b",
-     "title": "Anthropic 正式递交公开上市申请",
-     "summary": "Anthropic 向 SEC 递交 S-1，披露收入增长、客户结构、长期算力义务与特殊治理安排，并在附信中重申 Claude 不投放广告。一手文件见 SEC EDGAR；媒体数字转述以招股书为准。",
-     "sourceName": "TechCrunch · AI",
-     "sourceUrl": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-26T00:00:00.000Z",
-     "available": true,
-     "otherSources": 4
+     "otherSources": 3
     },
     {
      "itemId": "sha256:6e162aff655bfd4c",
@@ -105,26 +87,8 @@
      "firstParty": true,
      "publishedAt": "2026-10-26T16:35:44.000Z",
      "available": true,
-     "otherSources": 1
+     "otherSources": 2
     },
-    {
-     "itemId": "sha256:89893d5f73c77515",
-     "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
-     "summary": "Cloudflare 披露并修复其 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题，说明影响范围与补救。属官方安全通告。",
-     "sourceName": "Hacker News（AI 关键词 ≥100 分）",
-     "sourceUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-26T22:41:48.000Z",
-     "available": true,
-     "otherSources": 0
-    }
-   ]
-  },
-  {
-   "label": "产品",
-   "summary": null,
-   "items": [
     {
      "itemId": "sha256:c3d6fb64eb5418e8",
      "title": "NVIDIA Mission Control 2.5：Kubernetes 自主恢复",
@@ -135,7 +99,7 @@
      "firstParty": true,
      "publishedAt": "2026-10-26T15:00:00.000Z",
      "available": true,
-     "otherSources": 0
+     "otherSources": 1
     },
     {
      "itemId": "sha256:edeae07ffd206303",
@@ -147,7 +111,7 @@
      "firstParty": true,
      "publishedAt": "2026-10-26T16:00:00.000Z",
      "available": true,
-     "otherSources": 0
+     "otherSources": 1
     },
     {
      "itemId": "sha256:685d9381627543c3",
@@ -158,6 +122,66 @@
      "sourceIconUrl": null,
      "firstParty": true,
      "publishedAt": "2026-10-26T21:23:55.000Z",
+     "available": true,
+     "otherSources": 1
+    }
+   ]
+  },
+  {
+   "label": "行业",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:8128c7853b28b767",
+     "title": "Anthropic 正式递交公开上市申请",
+     "summary": "Anthropic 向 SEC 递交 S-1，披露收入增长、客户结构、长期算力义务与特殊治理安排，并在附信中重申 Claude 不投放广告。一手文件见 SEC EDGAR；媒体数字转述以招股书为准。",
+     "sourceName": "TechCrunch · AI",
+     "sourceUrl": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-26T00:00:00.000Z",
+     "available": true,
+     "otherSources": 6
+    },
+    {
+     "itemId": "sha256:8d93b09012158ea0",
+     "title": "Cloudflare：Workers AI 上 GLM-5.3 跨请求 KV 缓存暴露",
+     "summary": "Cloudflare 披露并修复其 Workers AI 托管 GLM-5.3 时的跨请求 KV 缓存暴露问题，说明影响范围与补救。属官方安全通告。",
+     "sourceName": "Cloudflare Blog",
+     "sourceUrl": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-26T22:41:48.000Z",
+     "available": true,
+     "otherSources": 1
+    }
+   ]
+  },
+  {
+   "label": "产品",
+   "summary": null,
+   "items": [
+    {
+     "itemId": "sha256:257d2044442d252a",
+     "title": "Opera 推出 WebAI：浏览器本地部署 AI",
+     "summary": "Opera 称推出 WebAI 预览，让网站与扩展在浏览器内调用本地推理（含开源权重），并称该提案获多家公司支持。一手见 Opera 博客；TechCrunch 跟进。",
+     "sourceName": "TechCrunch · AI",
+     "sourceUrl": "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/",
+     "sourceIconUrl": null,
+     "firstParty": false,
+     "publishedAt": "2026-10-27T13:00:00.000Z",
+     "available": true,
+     "otherSources": 0
+    },
+    {
+     "itemId": "sha256:b836eb939c37ffa5",
+     "title": "NVIDIA：在 DGX Spark 上加速 MoE 推理的三种方法",
+     "summary": "NVIDIA 技术博客以 Ling-3.0-flash 为例，介绍 Humming 内核、在线 FP8 量化与多 token 预测 speculative decoding 等路径，称组合后解码吞吐约提升四成。属厂商技术说明。",
+     "sourceName": "NVIDIA Technical Blog",
+     "sourceUrl": "https://developer.nvidia.com/blog/3-ways-to-boost-moe-inference-on-nvidia-dgx-spark/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-27T15:00:00.000Z",
      "available": true,
      "otherSources": 0
     }
@@ -386,21 +410,14 @@
    "available": true
   }
  ],
- "cover": {
-  "url": "https://static.simonwillison.net/static/2026-10-26/terra-max.webp",
-  "width": null,
-  "height": null,
-  "alt": "It",
-  "caption": null
- },
+ "cover": null,
  "metrics": {
-  "totalEvents": 7,
-  "sourcesCount": 10,
-  "firstPartyEvents": 7,
-  "modelsReleased": 1,
-  "mainCardNote": "今日仅 7 条达收录标准"
+  "totalEvents": 9,
+  "sourcesCount": 15,
+  "firstPartyEvents": 8,
+  "modelsReleased": 0
  },
  "readingMinutes": 2,
  "prev": "2026-10-26",
- "next": null
+ "next": "2026-10-28"
 }

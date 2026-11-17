@@ -54,6 +54,18 @@
      "otherSources": 4
     },
     {
+     "itemId": "sha256:ba0fcf4e325b4115",
+     "title": "DeepMind 发布 AlphaGenome 2：预测变异如何影响特定细胞",
+     "summary": "DeepMind 发布下一代 DNA 序列模型 AlphaGenome 2，用于预测 DNA 序列及其变异如何影响特定人类细胞类型，并称可帮助寻找疾病的细胞根源。 官方称新模型改为按单一生物条件做预测，并在超过一亿个单个细胞剖面（profiles）上训练；在 TenK10K 免疫细胞数据上，识别到的因果变异比例约为原版 AlphaGenome 的两倍（30% 对 16%）。AlphaGenome 2 即日起通过 AlphaGenome API 向非商业研究开放，商业研究为私有预览；官方注明仅供研究，尚未用于临床或诊断。",
+     "sourceName": "Google DeepMind Blog",
+     "sourceUrl": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-11-11T15:00:15.000Z",
+     "available": true,
+     "otherSources": 1
+    },
+    {
      "itemId": "sha256:0e9fb0eb84f13acf",
      "title": "DeepMind 发布 AlphaProof Code：用 Lean 验证复杂软件",
      "summary": "DeepMind 官方博客宣布推出 AlphaProof Code，称这是在深度验证复杂软件方面的突破。其智能体用 Lean 写出证明，用于校验 Signal 的核心加密。这是一次具名的研究/产品发布，不是新的旗舰通用大模型。",
@@ -76,18 +88,6 @@
      "publishedAt": "2026-11-09T19:51:47.000Z",
      "available": true,
      "otherSources": 1
-    },
-    {
-     "itemId": "sha256:4182359e79e632d3",
-     "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
-     "summary": "Anthropic 官方发布说明（Claude Platform release notes，11 月 9 日）：推出 Claude Fable 5.2（claude-fable-5-2），面向高要求推理与长程智能体工作；Claude Mythos 5.2（claude-mythos-5-2）能力相同，仅向通过 Anthropic 核验计划（如 Cyber Verification Program）的机构开放。两款模型均为 100 万 token 上下文、最长 12.8 万输出 token，并始终开启自适应思考（adaptive thinking）；定价为输入 8 美元/百万 token、输出 40 美元/百万 token（5.1 代为 10/50 美元）。本窗跟进包括量子位整理 Anthropic Claude Fable 5.2 发布后的首批实测与网友演示，称覆盖作曲、拍片和 3D 建模等生成任务。属官方双模型正式发布，不是此前关于 Fable/Opus 的传闻，也不得并入上市进程事件。",
-     "sourceName": "Claude Platform Release Notes",
-     "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview#october-20-2026-2",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-20T00:00:00.000Z",
-     "available": true,
-     "otherSources": 6
     }
    ]
   },
@@ -106,6 +106,18 @@
      "publishedAt": "2026-11-10T10:00:00.000Z",
      "available": true,
      "otherSources": 4
+    },
+    {
+     "itemId": "sha256:4182359e79e632d3",
+     "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
+     "summary": "Anthropic 官方发布说明（Claude Platform release notes，11 月 9 日）：推出 Claude Fable 5.2（claude-fable-5-2），面向高要求推理与长程智能体工作；Claude Mythos 5.2（claude-mythos-5-2）能力相同，仅向通过 Anthropic 核验计划（如 Cyber Verification Program）的机构开放。两款模型均为 100 万 token 上下文、最长 12.8 万输出 token，并始终开启自适应思考（adaptive thinking）；定价为输入 8 美元/百万 token、输出 40 美元/百万 token（5.1 代为 10/50 美元）。本窗跟进包括量子位整理 Anthropic Claude Fable 5.2 发布后的首批实测与网友演示，称覆盖作曲、拍片和 3D 建模等生成任务。属官方双模型正式发布，不是此前关于 Fable/Opus 的传闻，也不得并入上市进程事件。",
+     "sourceName": "Claude Platform Release Notes",
+     "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview#october-20-2026-2",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-20T00:00:00.000Z",
+     "available": true,
+     "otherSources": 6
     },
     {
      "itemId": "sha256:5cd7ff8934485154",
@@ -188,11 +200,10 @@
   "caption": null
  },
  "metrics": {
-  "totalEvents": 7,
+  "totalEvents": 8,
   "sourcesCount": 11,
-  "firstPartyEvents": 7,
-  "modelsReleased": 4,
-  "mainCardNote": "今日仅 7 条达收录标准"
+  "firstPartyEvents": 8,
+  "modelsReleased": 4
  },
  "readingMinutes": 5,
  "prev": "2026-11-10",

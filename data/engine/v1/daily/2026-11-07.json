@@ -21,7 +21,7 @@
    "firstParty": true,
    "publishedAt": "2026-11-06T00:00:00.000Z",
    "available": true,
-   "otherSources": 1
+   "otherSources": 2
   },
   {
    "itemId": "sha256:c9e260814e66b368",
@@ -75,7 +75,7 @@
      "firstParty": true,
      "publishedAt": "2026-11-06T00:00:00.000Z",
      "available": true,
-     "otherSources": 1
+     "otherSources": 2
     },
     {
      "itemId": "sha256:3a45181f6d992343",
@@ -265,5 +265,5 @@
  },
  "readingMinutes": 2,
  "prev": "2026-11-06",
- "next": null
+ "next": "2026-11-10"
 }
