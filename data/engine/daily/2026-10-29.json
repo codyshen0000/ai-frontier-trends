@@ -100,18 +100,6 @@
      "publishedAt": "2026-10-27T16:01:38.000Z",
      "available": true,
      "otherSources": 4
-    },
-    {
-     "itemId": "sha256:5a25565ab71a8d06",
-     "title": "Mistral 开源 Large 4（Le Chonk）：1T 多模态权重",
-     "summary": "Mistral 发布并开源 Mistral Large 4（代号 Le Chonk）权重：约 1 万亿参数、原生多模态，称在开源权重编码评测领先并强化防御性网络安全；提供多种推理模式以平衡成本与性能，在欧洲基础设施训练。同日 vLLM 宣布 Day-0 支持（稀疏 MLA、跨层 KV 共享等），Hugging Face 发文欢迎上架。",
-     "sourceName": "Mistral AI News",
-     "sourceUrl": "https://mistral.ai/news/mistral-large-4-oss/",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-29T12:00:07.000Z",
-     "available": true,
-     "otherSources": 5
     }
    ]
   },
@@ -226,6 +214,24 @@
      "publishedAt": "2026-10-27T16:12:42.000Z",
      "available": true,
      "otherSources": 0
+    }
+   ]
+  },
+  {
+   "label": "其他",
+   "summary": null,
+   "items": [
+    {
+     "itemId": null,
+     "title": "英伟达宣布黄仁勋辞去总裁、CEO 及董事，CFO Colette Kress 任临时 CEO",
+     "summary": "英伟达董事会宣布黄仁勋辞去总裁、CEO 及董事，即时生效；CFO Colette Kress 任临时 CEO 并兼任财务官，直至选定常任继任者。Harvey C. Jones 出任史上首位董事会主席。11 月 17 日仍将发布三季度财报。",
+     "sourceName": "",
+     "sourceUrl": "https://the-decoder.com/chinese-spies-targeted-nvidia-ceo-jensen-huang-according-to-the-new-york-times/",
+     "sourceIconUrl": null,
+     "firstParty": false,
+     "publishedAt": "2026-10-29T16:43:11.000Z",
+     "available": true,
+     "otherSources": 3
     }
    ]
   }
@@ -373,9 +379,9 @@
  },
  "metrics": {
   "totalEvents": 12,
-  "sourcesCount": 14,
-  "firstPartyEvents": 10,
-  "modelsReleased": 4
+  "sourcesCount": 12,
+  "firstPartyEvents": 9,
+  "modelsReleased": 3
  },
  "readingMinutes": 5,
  "prev": "2026-10-28",

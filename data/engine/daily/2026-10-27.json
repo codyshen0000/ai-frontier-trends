@@ -33,8 +33,7 @@
    "firstParty": true,
    "publishedAt": "2026-10-26T00:00:00.000Z",
    "available": true,
-   "otherSources": 5,
-   "belowThreshold": true
+   "otherSources": 6
   },
   {
    "itemId": "sha256:6e162aff655bfd4c",
@@ -142,8 +141,7 @@
      "firstParty": true,
      "publishedAt": "2026-10-26T00:00:00.000Z",
      "available": true,
-     "otherSources": 5,
-     "belowThreshold": true
+     "otherSources": 6
     },
     {
      "itemId": "sha256:8d93b09012158ea0",

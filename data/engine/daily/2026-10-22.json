@@ -207,8 +207,7 @@
      "firstParty": false,
      "publishedAt": "2026-10-20T16:00:00.000Z",
      "available": true,
-     "otherSources": 0,
-     "belowThreshold": true
+     "otherSources": 0
     },
     {
      "itemId": "sha256:859a2ca12c0c52e9",

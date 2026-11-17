@@ -10,6 +10,24 @@
  "highlights": [],
  "sections": [
   {
+   "label": "其他",
+   "summary": null,
+   "items": [
+    {
+     "itemId": null,
+     "title": "英伟达宣布黄仁勋辞去总裁、CEO 及董事，CFO Colette Kress 任临时 CEO",
+     "summary": "英伟达董事会宣布黄仁勋辞去总裁、CEO 及董事，即时生效；CFO Colette Kress 任临时 CEO 并兼任财务官，直至选定常任继任者。Harvey C. Jones 出任史上首位董事会主席。11 月 17 日仍将发布三季度财报。",
+     "sourceName": "",
+     "sourceUrl": "https://the-decoder.com/chinese-spies-targeted-nvidia-ceo-jensen-huang-according-to-the-new-york-times/",
+     "sourceIconUrl": null,
+     "firstParty": false,
+     "publishedAt": "2026-10-29T16:43:11.000Z",
+     "available": true,
+     "otherSources": 3
+    }
+   ]
+  },
+  {
    "label": "论文",
    "summary": null,
    "items": [
@@ -180,13 +198,13 @@
  ],
  "cover": null,
  "metrics": {
-  "totalEvents": 5,
-  "sourcesCount": 9,
+  "totalEvents": 6,
+  "sourcesCount": 10,
   "firstPartyEvents": 5,
   "modelsReleased": 1,
-  "mainCardNote": "今日仅 5 条达收录标准"
+  "mainCardNote": "今日仅 6 条达收录标准"
  },
- "readingMinutes": 1,
+ "readingMinutes": 2,
  "prev": "2026-10-29",
  "next": "2026-10-31"
 }

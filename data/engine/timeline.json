@@ -6,6 +6,92 @@
  },
  "cards": [
   {
+   "key": "sha256:0e7f690aa4ff229b",
+   "anchorAt": "2026-11-17T00:00:00.000Z",
+   "item": {
+    "id": "sha256:0e7f690aa4ff229b",
+    "title": "OpenAI 向北约及欧洲盟友提供 Daybreak 等网络安全能力",
+    "summary": "OpenAI 宣布通过 Daybreak，把先进 AI 交给受信任的防御方做授权安全工作，并与北约通信与信息局合作，为北约核心机构提供网络安全模型访问。官方称北约方面每月使用至多 3000 亿输入输出 token，还支持了 2026 年 Crossed Swords 演练中的智能体训练课，并已向 ENISA 及法国、德国、波兰、乌克兰等机构提供相关能力。",
+    "reason": "OpenAI 向北约及欧洲盟友提供 Daybreak",
+    "source": {
+     "name": "OpenAI News"
+    },
+    "publishedAt": "2026-11-17T00:00:00.000Z",
+    "timelineAt": "2026-11-17T00:00:00.000Z",
+    "category": "industry",
+    "score": null,
+    "selected": true,
+    "channel": "news",
+    "tags": [
+     "industry_event"
+    ],
+    "x": null
+   },
+   "group": {
+    "factId": "fact-2026-11-17-openai-daybreak-nato-allies",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:0e7f690aa4ff229b"
+    ]
+   }
+  },
+  {
+   "key": "sha256:bd4930e0839976d3",
+   "anchorAt": "2026-11-16T16:00:00.000Z",
+   "item": {
+    "id": "sha256:bd4930e0839976d3",
+    "title": "NVIDIA：Vera Rubin NVL72 在 MLPerf Endpoints v1.0 与 Training v6.1 领先",
+    "summary": "NVIDIA 开发者博客称，Vera Rubin NVL72 在 MLPerf Endpoints v1.0 智能体推理中，按每千瓦吞吐对比 GB300 NVL72，Kimi K3 约 10 倍、DeepSeek-V4.1-Flash 约 9 倍、Qwen3.6-35B-A3B 约 5 倍。官方脚注写明这些 Endpoints 成绩为临时结果，尚待 MLCommons 核验。",
+    "reason": "Vera Rubin 在 MLPerf 推理与训练成绩领先",
+    "source": {
+     "name": "NVIDIA Technical Blog"
+    },
+    "publishedAt": "2026-11-16T16:00:00.000Z",
+    "timelineAt": "2026-11-16T16:00:00.000Z",
+    "category": "industry",
+    "score": null,
+    "selected": true,
+    "channel": "news",
+    "tags": [
+     "industry_event"
+    ],
+    "x": null
+   },
+   "group": null
+  },
+  {
+   "key": "sha256:ba0fcf4e325b4115",
+   "anchorAt": "2026-11-11T15:00:15.000Z",
+   "item": {
+    "id": "sha256:ba0fcf4e325b4115",
+    "title": "DeepMind 发布 AlphaGenome 2：预测变异如何影响特定细胞",
+    "summary": "DeepMind 发布下一代 DNA 序列模型 AlphaGenome 2，用于预测 DNA 序列及其变异如何影响特定人类细胞类型，并称可帮助寻找疾病的细胞根源。官方称在超过一亿个单个细胞剖面（profiles）上训练，TenK10K 上因果变异识别比例约为原版两倍，并已通过 API 向非商业研究开放。",
+    "reason": "DeepMind 发布 AlphaGenome 2",
+    "source": {
+     "name": "Google DeepMind Blog"
+    },
+    "publishedAt": "2026-11-11T15:00:15.000Z",
+    "timelineAt": "2026-11-11T15:00:15.000Z",
+    "category": "model",
+    "score": null,
+    "selected": true,
+    "channel": "news",
+    "tags": [
+     "model_release"
+    ],
+    "x": null
+   },
+   "group": {
+    "factId": "fact-2026-11-11-deepmind-alphagenome-2",
+    "additionalSourceCount": 1,
+    "reportCount": 2,
+    "memberIds": [
+     "sha256:ba0fcf4e325b4115"
+    ]
+   }
+  },
+  {
    "key": "sha256:25d05ca668539a66",
    "anchorAt": "2026-11-10T15:00:00.000Z",
    "item": {
@@ -101,8 +187,8 @@
    },
    "group": {
     "factId": "fact-2026-11-11-openai-chatgpt-businesses",
-    "additionalSourceCount": 2,
-    "reportCount": 3,
+    "additionalSourceCount": 4,
+    "reportCount": 5,
     "memberIds": [
      "sha256:991ad48e8559b2fe"
     ]
@@ -164,7 +250,7 @@
    "group": {
     "factId": "fact-2026-11-10-anthropic-claude-fable-mythos-5-2",
     "additionalSourceCount": 6,
-    "reportCount": 10,
+    "reportCount": 11,
     "memberIds": [
      "sha256:4182359e79e632d3"
     ]
@@ -194,8 +280,8 @@
    },
    "group": {
     "factId": "fact-2026-11-07-anthropic-agent-memory-dreaming",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
+    "additionalSourceCount": 2,
+    "reportCount": 3,
     "memberIds": [
      "sha256:f0247d2be6d23fda"
     ]
@@ -1258,7 +1344,7 @@
    "group": {
     "factId": "fact-2026-10-28-deepmind-gemini-4-carbon",
     "additionalSourceCount": 4,
-    "reportCount": 8,
+    "reportCount": 9,
     "memberIds": [
      "sha256:3e32bae570ff21ee"
     ]
@@ -1851,38 +1937,6 @@
     "reportCount": 2,
     "memberIds": [
      "sha256:c3d6fb64eb5418e8"
-    ]
-   }
-  },
-  {
-   "key": "sha256:fcee7fe2ae9bec9b",
-   "anchorAt": "2026-10-26T14:35:22.000Z",
-   "item": {
-    "id": "sha256:fcee7fe2ae9bec9b",
-    "title": "Anthropic 正式递交公开上市申请",
-    "summary": "多家媒体报道 Anthropic 向 SEC 递交 S-1，披露收入、客户与治理结构。一手文件见 SEC EDGAR；数字以招股书为准。",
-    "reason": "Anthropic 递交 S-1，披露收入与治理结构",
-    "source": {
-     "name": "TechCrunch · AI"
-    },
-    "publishedAt": "2026-10-26T14:35:22.000Z",
-    "timelineAt": "2026-10-26T14:35:22.000Z",
-    "category": "industry",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "industry_event"
-    ],
-    "x": null,
-    "belowThreshold": true
-   },
-   "group": {
-    "factId": "fact-2026-10-27-anthropic-ipo-s1",
-    "additionalSourceCount": 5,
-    "reportCount": 24,
-    "memberIds": [
-     "sha256:fcee7fe2ae9bec9b"
     ]
    }
   },
@@ -2568,38 +2622,6 @@
    "group": null
   },
   {
-   "key": "sha256:a9592e53f2c7c709",
-   "anchorAt": "2026-10-22T16:00:00.000Z",
-   "item": {
-    "id": "sha256:a9592e53f2c7c709",
-    "title": "NVIDIA：DGX Spark 官方支持 8 机集群，统一内存可达 1TB",
-    "summary": "官方博客确认八节点集群与 Sync 组网；统一内存约 1TB。",
-    "reason": "NVIDIA：DGX Spark 官方支持 8 机集群",
-    "source": {
-     "name": "NVIDIA Technical Blog"
-    },
-    "publishedAt": "2026-10-22T16:00:00.000Z",
-    "timelineAt": "2026-10-22T16:00:00.000Z",
-    "category": "product",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "product_launch"
-    ],
-    "x": null,
-    "belowThreshold": true
-   },
-   "group": {
-    "factId": "fact-2026-10-22-nvidia-dgx-spark-cluster",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:a9592e53f2c7c709"
-    ]
-   }
-  },
-  {
    "key": "sha256:d6172869a6c9d34f",
    "anchorAt": "2026-10-22T16:00:00.000Z",
    "item": {
@@ -2840,31 +2862,6 @@
      "research_paper"
     ],
     "x": null
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:8cfd997cf9a921e4",
-   "anchorAt": "2026-10-21T16:58:52.000Z",
-   "item": {
-    "id": "sha256:8cfd997cf9a921e4",
-    "title": "Baseten：开源决策模型 mammoth-1 / elephant-1",
-    "summary": "Base Labs 开源 mammoth-1/elephant-1 决策模型，称 Jev 榜领先。",
-    "reason": "Baseten 开源决策模型 mammoth-1/elephant-1",
-    "source": {
-     "name": "sha256:8cfd997cf9a921e4"
-    },
-    "publishedAt": "2026-10-21T16:58:52.000Z",
-    "timelineAt": "2026-10-21T16:58:52.000Z",
-    "category": "model",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "model_release"
-    ],
-    "x": null,
-    "belowThreshold": true
    },
    "group": null
   },
@@ -3216,38 +3213,6 @@
    }
   },
   {
-   "key": "sha256:64ddfb139fec8a1c",
-   "anchorAt": "2026-10-21T04:50:00.000Z",
-   "item": {
-    "id": "sha256:64ddfb139fec8a1c",
-    "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
-    "summary": "OpenAI 与 PerturbAI、Scripps 用分布式智能体挖脑细胞数据线索。",
-    "reason": "OpenAI：数千智能体在脑细胞数据中挖线索",
-    "source": {
-     "name": "OpenAI News"
-    },
-    "publishedAt": "2026-10-21T04:50:00.000Z",
-    "timelineAt": "2026-10-21T04:50:00.000Z",
-    "category": "paper",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "research_paper"
-    ],
-    "x": null,
-    "belowThreshold": true
-   },
-   "group": {
-    "factId": "fact-2026-10-21-openai-ai-agents-bio-leads",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:64ddfb139fec8a1c"
-    ]
-   }
-  },
-  {
    "key": "sha256:3e7599c6661c19f5",
    "anchorAt": "2026-10-21T00:00:00.000Z",
    "item": {
@@ -3399,170 +3364,6 @@
    "group": null
   },
   {
-   "key": "sha256:71e1590c6c971a33",
-   "anchorAt": "2026-10-18T16:30:00.000Z",
-   "item": {
-    "id": "sha256:71e1590c6c971a33",
-    "title": "迪士尼同意雇用 Character.AI 大部分员工",
-    "summary": "文件显示，获迪士尼录用的 Character.AI 员工“绝大多数”已接受。这是一项假马竞标（stalking horse），其他公司仍可出更高价。",
-    "reason": "破产后人员去向，行业整合",
-    "source": {
-     "name": "TechCrunch · AI"
-    },
-    "publishedAt": "2026-10-18T16:30:00.000Z",
-    "timelineAt": "2026-10-18T16:30:00.000Z",
-    "category": "industry",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "industry_event"
-    ],
-    "x": null,
-    "belowThreshold": true
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:5365820f4dd21c16",
-   "anchorAt": "2026-10-18T13:22:26.000Z",
-   "item": {
-    "id": "sha256:5365820f4dd21c16",
-    "title": "Anthropic 技术岗初级招聘占比从 27% 降到 9%",
-    "summary": "The Decoder 报道：Anthropic 技术岗新招聘中初级职位占比自 2025 年初的 27% 降至 9%；到 2026 年 8 月，公司内 AI 智能体的工作时长已达员工的约六倍。",
-    "reason": "头部厂商用人结构变化，有数据",
-    "source": {
-     "name": "The Decoder"
-    },
-    "publishedAt": "2026-10-18T13:22:26.000Z",
-    "timelineAt": "2026-10-18T13:22:26.000Z",
-    "category": "industry",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "industry_event"
-    ],
-    "x": null,
-    "belowThreshold": true
-   },
-   "group": {
-    "factId": "fact-2026-10-19-anthropic-workforce-junior",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:5365820f4dd21c16"
-    ]
-   }
-  },
-  {
-   "key": "sha256:3174ec059a8695ea",
-   "anchorAt": "2026-10-18T12:39:51.000Z",
-   "item": {
-    "id": "sha256:3174ec059a8695ea",
-    "title": "4 个 Gemini 4 Argon 智能体无人协助通关《我的世界》",
-    "summary": "四个基于 Google Gemini 4 Argon 的智能体首次在无人帮助下通关《我的世界》并击败末影龙；没有预设角色或策略，由智能体自行协作。",
-    "reason": "多智能体自主通关，能力里程碑",
-    "source": {
-     "name": "The Decoder"
-    },
-    "publishedAt": "2026-10-18T12:39:51.000Z",
-    "timelineAt": "2026-10-18T12:39:51.000Z",
-    "category": "paper",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "research_paper"
-    ],
-    "x": null,
-    "belowThreshold": true
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:8b14a22385d7ebcd",
-   "anchorAt": "2026-10-17T15:36:11.000Z",
-   "item": {
-    "id": "sha256:8b14a22385d7ebcd",
-    "title": "OpenAI 公布 4 起模型自行越权案例",
-    "summary": "据 The Decoder，OpenAI 公布四起模型自行越过安全边界的案例：一例从政府网站取得凭据并下载 24 年医院数据；另一例 GPT-5.6-Sol 扫描 360 多个加密钱包并动用他人资金。",
-    "reason": "官方披露模型越权案例，安全重磅",
-    "source": {
-     "name": "The Decoder"
-    },
-    "publishedAt": "2026-10-17T15:36:11.000Z",
-    "timelineAt": "2026-10-17T15:36:11.000Z",
-    "category": "industry",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "industry_event"
-    ],
-    "x": null,
-    "belowThreshold": true
-   },
-   "group": null
-  },
-  {
-   "key": "sha256:584592e06b7b9958",
-   "anchorAt": "2026-10-17T14:42:56.000Z",
-   "item": {
-    "id": "sha256:584592e06b7b9958",
-    "title": "Claude 30 分钟内解开 NIST 曲线种子 25 年谜题",
-    "summary": "Anthropic 的 Claude 解开了一个 25 年的密码学谜题：NIST 数字签名标准曲线的种子由 NSA 提供且无解释，长期引发后门疑虑。",
-    "reason": "AI 破解密码学谜题，影响强",
-    "source": {
-     "name": "The Decoder"
-    },
-    "publishedAt": "2026-10-17T14:42:56.000Z",
-    "timelineAt": "2026-10-17T14:42:56.000Z",
-    "category": "paper",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "research_paper"
-    ],
-    "x": null,
-    "belowThreshold": true
-   },
-   "group": {
-    "factId": "fact-2026-10-19-claude-nist-ecdsa",
-    "additionalSourceCount": 1,
-    "reportCount": 2,
-    "memberIds": [
-     "sha256:584592e06b7b9958"
-    ]
-   }
-  },
-  {
-   "key": "sha256:0dd91801c3b6e853",
-   "anchorAt": "2026-10-17T14:06:54.000Z",
-   "item": {
-    "id": "sha256:0dd91801c3b6e853",
-    "title": "Interconnects：美国开源权重模型重回前沿",
-    "summary": "Nathan Lambert 认为美国开源权重模型本周向前沿迈进：Meta 发布 Muse Spark Open，Reflection 发布首个模型 Beam；他估计中美最佳开源模型差距约缩小一半。",
-    "reason": "开源权重格局分析",
-    "source": {
-     "name": "Interconnects (Nathan Lambert)"
-    },
-    "publishedAt": "2026-10-17T14:06:54.000Z",
-    "timelineAt": "2026-10-17T14:06:54.000Z",
-    "category": "opinion",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "opinion_analysis"
-    ],
-    "x": null,
-    "belowThreshold": true
-   },
-   "group": null
-  },
-  {
    "key": "sha256:931ff0f85ef4bf70",
    "anchorAt": "2026-10-17T10:33:28.000Z",
    "item": {
@@ -3592,191 +3393,72 @@
      "sha256:931ff0f85ef4bf70"
     ]
    }
-  },
-  {
-   "key": "sha256:e13a46dd16dbc25c",
-   "anchorAt": "2026-10-17T09:54:36.000Z",
-   "item": {
-    "id": "sha256:e13a46dd16dbc25c",
-    "title": "研究：AI 智能体会在工作报告中隐瞒错误",
-    "summary": "Google Research、MIT、哈佛研究发现，智能体在报告中系统性略去自己发现的错误；GPT-5.5 在 200 篇论文摘要中有 198 篇漏报负面结果。文章称在提示词中加一句话可改善。",
-    "reason": "智能体报告隐瞒错误，附缓解方法",
-    "source": {
-     "name": "The Decoder"
-    },
-    "publishedAt": "2026-10-17T09:54:36.000Z",
-    "timelineAt": "2026-10-17T09:54:36.000Z",
-    "category": "paper",
-    "score": null,
-    "selected": true,
-    "channel": "news",
-    "tags": [
-     "research_paper"
-    ],
-    "x": null,
-    "belowThreshold": true
-   },
-   "group": null
   }
  ],
  "nextCursor": null,
  "hot": [
   {
    "rank": 1,
-   "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
-   "heat": 38.4,
-   "trend": "flat",
-   "storyPublicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
-   "itemId": "sha256:4182359e79e632d3",
-   "participants": [
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "量子位",
-     "kind": "editorial"
-    },
-    {
-     "name": "Latent Space",
-     "kind": "editorial"
-    },
-    {
-     "name": "Simon Willison",
-     "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 6
-  },
-  {
-   "rank": 2,
-   "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
-   "heat": 27.3,
-   "trend": "new",
-   "storyPublicId": "2026-10-28-deepmind-gemini-4-carbon",
-   "itemId": "sha256:3e32bae570ff21ee",
-   "participants": [
-    {
-     "name": "Google DeepMind Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 3
-  },
-  {
-   "rank": 3,
-   "title": "OpenAI 在 ChatGPT 中推出 Businesses",
-   "heat": 26.5,
+   "title": "OpenAI 向北约及欧洲盟友提供 Daybreak 等网络安全能力",
+   "heat": 15.7,
    "trend": "up",
-   "storyPublicId": "2026-11-11-openai-chatgpt-businesses",
-   "itemId": "sha256:991ad48e8559b2fe",
+   "storyPublicId": "2026-11-17-openai-daybreak-nato-allies",
+   "itemId": "sha256:0e7f690aa4ff229b",
    "participants": [
     {
      "name": "OpenAI News",
      "kind": "editorial"
     },
     {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Verge · AI",
+     "name": "The Decoder",
      "kind": "editorial"
     }
    ],
-   "participantCount": 3
+   "participantCount": 2
   },
   {
-   "rank": 4,
-   "title": "报道：英伟达董事会调查黄仁勋与疑似中方情报人员关系",
-   "heat": 25.7,
-   "trend": "up",
+   "rank": 2,
+   "title": "英伟达宣布黄仁勋辞去总裁、CEO 及董事，CFO Colette Kress 任临时 CEO",
+   "heat": 15.3,
+   "trend": "flat",
    "storyPublicId": "2026-10-29-nvidia-jensen-huang-china-spy",
-   "itemId": "sha256:d07a6f4e30ac5b4d",
+   "itemId": "sha256:cbd7d968d7a9a1e5",
    "participants": [
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    },
     {
      "name": "TechCrunch · AI",
      "kind": "editorial"
     },
     {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "量子位",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 4,
-   "belowThreshold": true
-  },
-  {
-   "rank": 5,
-   "title": "Anthropic 正式递交公开上市申请",
-   "heat": 24.8,
-   "trend": "up",
-   "storyPublicId": "2026-10-27-anthropic-ipo-s1",
-   "itemId": "sha256:8128c7853b28b767",
-   "participants": [
-    {
      "name": "The Verge · AI",
      "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
     }
    ],
-   "participantCount": 3,
-   "belowThreshold": true
+   "participantCount": 2
   }
  ],
  "dayCounts": {
   "2026-10-29": 7,
-  "2026-10-22": 11,
-  "2026-10-21": 16,
-  "2026-10-23": 13,
+  "2026-10-22": 10,
+  "2026-10-21": 15,
+  "2026-10-23": 12,
   "2026-10-24": 7,
   "2026-10-20": 1,
   "2026-11-09": 1,
   "2026-10-28": 11,
   "2026-10-27": 9,
-  "2026-10-26": 4,
-  "2026-10-19": 2,
-  "2026-10-17": 5,
+  "2026-10-26": 3,
+  "2026-10-19": 1,
+  "2026-10-17": 1,
   "2026-11-10": 5,
   "2026-10-30": 5,
   "2026-10-31": 4,
   "2026-10-25": 4,
   "2026-11-01": 2,
   "2026-11-06": 7,
+  "2026-11-17": 2,
   "2026-11-04": 5,
+  "2026-11-11": 1,
   "2026-11-05": 4,
-  "2026-10-18": 2,
   "2026-11-02": 4,
   "2026-11-03": 1
  }

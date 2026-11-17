@@ -1,5 +1,11 @@
 [
  {
+  "key": "2026-11-11",
+  "issueNumber": 21,
+  "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+  "count": 8
+ },
+ {
   "key": "2026-11-10",
   "issueNumber": 20,
   "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
@@ -51,7 +57,7 @@
   "key": "2026-10-30",
   "issueNumber": 12,
   "title": null,
-  "count": 5
+  "count": 6
  },
  {
   "key": "2026-10-29",
