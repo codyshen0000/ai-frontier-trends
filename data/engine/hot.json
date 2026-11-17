@@ -1,170 +1,23 @@
 {
- "computedAt": "2026-11-10T20:05:07.000Z",
+ "computedAt": "2026-11-17T16:39:08.000Z",
  "windowHours": 48,
  "entries": [
   {
    "rank": 1,
    "story": {
-    "publicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
-    "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2"
+    "publicId": "2026-11-17-openai-daybreak-nato-allies",
+    "title": "OpenAI 向北约及欧洲盟友提供 Daybreak 等网络安全能力"
    },
-   "heat": 38.4,
-   "trend": "flat",
-   "trendPct": -8.1,
-   "badges": [],
-   "participantCount": 6,
-   "sourceCount": 6,
-   "sourceNames": [
-    "The Decoder",
-    "量子位",
-    "Latent Space",
-    "Simon Willison",
-    "TechCrunch · AI",
-    "The Verge · AI"
-   ],
-   "participants": [
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "量子位",
-     "kind": "editorial"
-    },
-    {
-     "name": "Latent Space",
-     "kind": "editorial"
-    },
-    {
-     "name": "Simon Willison",
-     "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    19.5,
-    19.0,
-    28.2,
-    37.2,
-    46.1,
-    44.8,
-    43.5,
-    42.3,
-    41.1,
-    39.9,
-    40.3,
-    49.0,
-    49.8,
-    48.4,
-    47.0,
-    45.7,
-    44.4,
-    43.1,
-    41.9,
-    44.5,
-    43.2,
-    42.0,
-    40.8,
-    39.6,
-    38.5
-   ],
-   "summary": "Anthropic 官方发布说明（Claude Platform release notes，11 月 9 日）：推出 Claude Fable 5.2（claude-fable-5-2），面向高要求推理与长程智能体工作；Claude Mythos 5.2（claude-mythos-5-2）能力相同，仅向通过 Anthropic 核验计划（如 Cyber Verification Program）的机构开放。两款模型均为 100 万 token 上下文、最长 12.8 万输出 token，并始终开启自适应思考（adaptive thinking）；定价为输入 8 美元/百万 token、输出 40 美元/百万 token（5.1 代为 10/50 美元）。本窗跟进包括量子位整理 Anthropic Claude Fable 5.2 发布后的首批实测与网友演示，称覆盖作曲、拍片和 3D 建模等生成任务。属官方双模型正式发布，不是此前关于 Fable/Opus 的传闻，也不得并入上市进程事件。",
-   "latest": "The Decoder 报道 Claude Fable 5.2 在 Remote Labor Index 上约能以专业质量完成 41.3% 的真实自由职业任务（一年前最高约 2.5%）。",
-   "cover": {
-    "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK269_ANTHROPIC_2_B.jpg?quality=90&strip=all&crop=0,0,100,100",
-    "width": null,
-    "height": null,
-    "alt": "Anthropic logo on an orange and gray background."
-   }
-  },
-  {
-   "rank": 2,
-   "story": {
-    "publicId": "2026-10-28-deepmind-gemini-4-carbon",
-    "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升"
-   },
-   "heat": 27.3,
-   "trend": "new",
-   "trendPct": null,
-   "badges": [
-    "surge"
-   ],
-   "participantCount": 3,
-   "sourceCount": 3,
-   "sourceNames": [
-    "The Decoder",
-    "Google DeepMind Blog",
-    "The Verge · AI"
-   ],
-   "participants": [
-    {
-     "name": "Google DeepMind Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    10.0,
-    19.4,
-    18.9,
-    28.2,
-    27.4
-   ],
-   "summary": "Google DeepMind 宣布 Gemini 4 Carbon，称其为目前最强一代，在 Artificial Analysis Intelligence Index v5.0 排名第一（59），并在 SEC-bench Pro、ExploitGym、CWE-bench 等网络安全评测领先；内部称可支撑多日长程工程任务。在 Argon 两周后发布。正按美国政府自愿预发布测试流程推进，本周起先向部分网络安全防御方开放，再经 Fairwind 计划扩至可信伙伴；面向开发者与消费者的产品面仍待开放。入门价与 Argon 相同：每百万输入/输出 token 2/10 美元。",
-   "latest": "DeepMind 宣布 Gemini 4 Carbon 现已全面开放；The Verge 报道面向公众推出，并提到一项智能体 swarm 功能。The Decoder 随后报道称，该模型在约两周测试后全面开放，多项基准领先，部分评测超过 Claude Fable 5.2，且单次任务成本不到一半；并称 Google 正在预览通过 /swarm 协调的智能体团队。",
-   "cover": null
-  },
-  {
-   "rank": 3,
-   "story": {
-    "publicId": "2026-11-11-openai-chatgpt-businesses",
-    "title": "OpenAI 在 ChatGPT 中推出 Businesses"
-   },
-   "heat": 26.5,
+   "heat": 15.7,
    "trend": "up",
-   "trendPct": 197.8,
+   "trendPct": 112.2,
    "badges": [
     "rising"
    ],
-   "participantCount": 3,
-   "sourceCount": 3,
+   "participantCount": 2,
+   "sourceCount": 2,
    "sourceNames": [
-    "TechCrunch · AI",
-    "The Verge · AI",
+    "The Decoder",
     "OpenAI News"
    ],
    "participants": [
@@ -173,21 +26,11 @@
      "kind": "editorial"
     },
     {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Verge · AI",
+     "name": "The Decoder",
      "kind": "editorial"
     }
    ],
    "spark": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
     null,
     null,
     null,
@@ -204,288 +47,30 @@
     8.7,
     8.4,
     8.2,
-    17.9,
-    27.4,
-    26.6
+    7.9,
+    7.7,
+    7.5,
+    7.3,
+    7.1,
+    6.9,
+    6.7,
+    6.5,
+    16.0
    ],
-   "summary": "OpenAI 官方宣布在 ChatGPT 推出 Businesses：商家可以管理自己的商业信息、查看曝光情况，并把兴趣转化成行动。The Verge 报道将向符合条件的美国电商和在线服务企业提供已认证的「Business Agents」，用户可与代表品牌的智能体对话（例如比价）；该功能作为当天公布的一套商业功能的一部分进入测试。TechCrunch 报道称同时推出商业资料（business profiles），意在让 ChatGPT 更接近发现引擎。这是 ChatGPT 的商业产品功能，不是新模型发布。",
+   "summary": "OpenAI 宣布通过 Daybreak，把先进 AI 交给受信任的防御方做授权安全工作，包括审软件、查异常、验证漏洞和测试修复，并与北约通信与信息局合作，为北约核心机构提供网络安全模型访问。官方称北约方面每月使用至多 3000 亿输入输出 token，还支持了北约合作网络防御卓越中心 2026 年 Crossed Swords 演练中的智能体训练课。文中还提到已向欧盟网安局 ENISA 以及法国、德国、波兰等国家网安机构和乌克兰数字转型部提供相关能力；ENISA 用其发现并修复了欧盟机构所用软件中的 4 个漏洞。这是官方合作与部署说明，不是新模型发布。",
    "latest": null,
    "cover": null
   },
   {
-   "rank": 4,
+   "rank": 2,
    "story": {
     "publicId": "2026-10-29-nvidia-jensen-huang-china-spy",
-    "title": "报道：英伟达董事会调查黄仁勋与疑似中方情报人员关系"
+    "title": "英伟达宣布黄仁勋辞去总裁、CEO 及董事，CFO Colette Kress 任临时 CEO"
    },
-   "heat": 25.7,
-   "trend": "up",
-   "trendPct": 21.2,
-   "badges": [
-    "rising"
-   ],
-   "participantCount": 4,
-   "sourceCount": 4,
-   "sourceNames": [
-    "The Verge · AI",
-    "TechCrunch · AI",
-    "The Decoder",
-    "量子位"
-   ],
-   "participants": [
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "量子位",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    32.4,
-    32.0,
-    31.1,
-    30.9,
-    31.9,
-    31.0,
-    30.1,
-    29.3,
-    28.4,
-    27.6,
-    26.8,
-    26.1,
-    25.3,
-    24.6,
-    23.9,
-    23.2,
-    22.6,
-    21.9,
-    21.3,
-    20.7,
-    20.1,
-    19.5,
-    22.9,
-    22.2,
-    25.7
-   ],
-   "summary": "The Verge / TechCrunch / The Decoder：英伟达董事会对 CEO 黄仁勋与 Alice Huang（报道称其受中方招募）的关系启动独立调查。TechCrunch 本窗跟进：黄仁勋因争议退出 ElevenLabs Summit；卖空机构 Culper Research 早在丑闻爆发约半年前就质疑这段关系；黄仁勋据报约一年前聘请擅长处理高调性丑闻的公关公司；另有稿件称证券集体诉讼风险上升。The Verge 综述间谍丑闻已知信息，报道特朗普在记者会上回应他对此事的知情程度，并另文分析中国可能从黄仁勋处获得什么。均为 T2 二手，无公司 IR/官方新闻稿可核，诚实分≪76 未垫。",
-   "latest": "TechCrunch 整理了黄仁勋与疑似中方情报人员关系的时间线，并称此事可能影响中美 AI 竞赛中的国家安全评估。The Verge 随后发表评论，认为美国目前在 AI 竞赛中领先，同时也讨论这一争议可能带来的风险。",
-   "cover": null,
-   "belowThreshold": true
-  },
-  {
-   "rank": 5,
-   "story": {
-    "publicId": "2026-10-27-anthropic-ipo-s1",
-    "title": "Anthropic 正式递交公开上市申请"
-   },
-   "heat": 24.8,
-   "trend": "up",
-   "trendPct": 27.2,
-   "badges": [
-    "rising"
-   ],
-   "participantCount": 3,
-   "sourceCount": 3,
-   "sourceNames": [
-    "The Verge · AI",
-    "TechCrunch · AI",
-    "The Decoder"
-   ],
-   "participants": [
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    9.8,
-    9.6,
-    9.3,
-    9.0,
-    8.8,
-    8.5,
-    8.3,
-    8.0,
-    7.8,
-    7.6,
-    7.4,
-    16.9,
-    16.5,
-    28.7,
-    27.9,
-    27.1,
-    26.3,
-    25.6,
-    24.8
-   ],
-   "summary": "Anthropic 上市进程持续：The Decoder 报道公司启动 IPO 路演，发行价区间 70–78 美元，估值最高约 1.02 万亿美元，并称除最高约 644 亿美元的公开发行外，还通过与 Google、Nvidia、Microsoft 等锚定投资者的私募再筹集 260 亿美元。随后 The Verge 与 TechCrunch 报道同一价格区间，并称完全稀释估值最高约 1.4 万亿 / 1.404 万亿美元。属既有 S1 与路演覆盖跟进，不是新的模型发布，也不得并入 Claude Fable/Mythos 5.2。",
-   "latest": null,
-   "cover": null,
-   "belowThreshold": true
-  },
-  {
-   "rank": 6,
-   "story": {
-    "publicId": "2026-11-10-meta-muse-ember",
-    "title": "报道：Meta 发布 Muse Ember，用于智能体执行的轻量模型"
-   },
-   "heat": 22.4,
-   "trend": "down",
-   "trendPct": -15.8,
+   "heat": 15.3,
+   "trend": "flat",
+   "trendPct": 7.7,
    "badges": [],
-   "participantCount": 4,
-   "sourceCount": 3,
-   "sourceNames": [
-    "Simon Willison",
-    "The Decoder",
-    "TechCrunch · AI"
-   ],
-   "participants": [
-    {
-     "name": "Simon Willison",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "IT之家（全站，需关键词过滤）",
-     "kind": "signal"
-    }
-   ],
-   "spark": [
-    19.4,
-    18.8,
-    18.3,
-    17.7,
-    17.2,
-    26.7,
-    26.0,
-    25.2,
-    24.5,
-    23.8,
-    23.2,
-    22.5,
-    31.7,
-    30.8,
-    29.9,
-    29.1,
-    28.2,
-    27.4,
-    26.7,
-    25.9,
-    25.2,
-    24.4,
-    23.7,
-    23.1,
-    22.4
-   ],
-   "summary": "TechCrunch / The Decoder：Meta 发布 Muse Ember，称是面向智能体执行的轻量模型，输入约每百万 token 10 美分，并称比 Haiku、Luna 等前沿竞品便宜。Decoder 跟进称其针对智能体重复性工作（工具调用、路由、数据提取），并称单位成本智力高于 Claude Haiku 5.5 或 GPT-6 Luna，但在实际智能体任务上仍有差距。本窗 Simon Willison 撰文介绍同一发布，把它放在 Claude Haiku / GPT Luna 这一档。此条有别于既有 Muse Spaces / Voice。T2 二手，未见 Meta 官方页进 inbox，未伪造官网，未垫。",
-   "latest": null,
-   "cover": null,
-   "belowThreshold": true
-  },
-  {
-   "rank": 7,
-   "story": {
-    "publicId": "2026-11-11-anthropic-claude-meetings-office",
-    "title": "报道：Anthropic 推出 AI 办公套件与 Claude Meetings"
-   },
-   "heat": 18.6,
-   "trend": "new",
-   "trendPct": null,
-   "badges": [
-    "new"
-   ],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "The Verge · AI",
-    "TechCrunch · AI"
-   ],
-   "participants": [
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    19.7,
-    19.2,
-    18.6
-   ],
-   "summary": "The Verge 报道 Anthropic 推出自有的 AI 办公套件，试图把能力从企业与编程工具扩展到日常办公。同一天 TechCrunch 报道 Anthropic 发布 Claude Meetings：会议进行中，Claude 可以起草正在讨论的计划、在白板上排出时间线、在聊天里回答问题，并调用已连接的工作应用去取数。本窗 inbox 未见 Anthropic 官方页。这是办公/会议产品，不是 Claude Fable 或 Mythos 模型发布，也不得并入上市进程。",
-   "latest": null,
-   "cover": null,
-   "belowThreshold": true
-  },
-  {
-   "rank": 8,
-   "story": {
-    "publicId": "2026-11-10-adobe-max-2026-agentic-ai",
-    "title": "报道：Adobe Max 推出智能体、MCP 与 Firefly 等新工具"
-   },
-   "heat": 16.8,
-   "trend": "up",
-   "trendPct": 68.0,
-   "badges": [
-    "rising"
-   ],
    "participantCount": 2,
    "sourceCount": 2,
    "sourceNames": [
@@ -503,155 +88,35 @@
     }
    ],
    "spark": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    10.0,
-    19.5,
+    5.9,
+    5.8,
+    5.6,
+    19.7,
+    19.4,
     18.9,
-    18.4,
-    17.8,
-    17.3,
-    16.8
+    18.3,
+    18.6,
+    19.3,
+    18.7,
+    18.2,
+    17.7,
+    17.2,
+    16.7,
+    16.2,
+    15.7,
+    15.3,
+    14.8,
+    14.4,
+    14.0,
+    13.6,
+    13.2,
+    12.8,
+    16.1,
+    15.6
    ],
-   "summary": "TechCrunch 与 The Verge 报道 Adobe 在 Max 大会上更多地押注智能体式 AI：在 Photoshop、Premiere、Firefly 中加入智能体与新创作工具，推出 MCP 以及 Firefly 中的原型构建工具；The Verge 还报道 Photoshop、Lightroom 和 Premiere 的自动去除功能。属同一天 Adobe Max 产品发布。",
-   "latest": null,
-   "cover": null,
-   "belowThreshold": true
-  },
-  {
-   "rank": 9,
-   "story": {
-    "publicId": "2026-11-10-deepmind-gemini-robotics-2-5",
-    "title": "DeepMind 发布 Gemini Robotics 2.5：称是其最强视觉-语言-动作模型"
-   },
-   "heat": 14.2,
-   "trend": "up",
-   "trendPct": 140.7,
-   "badges": [
-    "rising"
-   ],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "The Decoder",
-    "Google DeepMind Blog"
-   ],
-   "participants": [
-    {
-     "name": "Google DeepMind Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    10.0,
-    9.7,
-    9.4,
-    9.1,
-    8.9,
-    8.6,
-    8.4,
-    8.1,
-    7.9,
-    7.7,
-    7.5,
-    7.2,
-    7.0,
-    6.8,
-    6.6,
-    6.5,
-    6.3,
-    6.1,
-    5.9,
-    5.8,
-    5.6,
-    5.4,
-    15.0,
-    14.6,
-    14.2
-   ],
-   "summary": "DeepMind 官方博客宣布 Gemini Robotics 2.5，称这是其最强的视觉-语言-动作（VLA）模型，可提升机器人的灵巧性、可靠性与安全性，并加速现实世界中的通用操作能力。这是机器人模型发布，不是 Gemini 4 Carbon，也不是智元 WITA-Omni。",
-   "latest": "The Decoder 报道称，Gemini Robotics 2.5 已与 Apptronik 在匈牙利和德国的奔驰产线上试点，人形机器人 Apollo 2 分拣金属零件的准确率约 96%。",
+   "summary": "英伟达董事会宣布黄仁勋辞去总裁、CEO 及董事，即时生效；CFO Colette Kress 任临时 CEO 并兼任财务官，直至选定常任继任者。Harvey C. Jones 出任史上首位董事会主席。11 月 17 日仍将发布三季度财报。",
+   "latest": "本窗续报包括：民主党议员启动对英伟达的调查并就黄仁勋与特朗普的关系发函；特朗普就黄仁勋与疑似中方人员关系发表国家安全评论；有报道称董事会暂不考虑请回黄仁勋；英伟达在黄仁勋离任后新设国家安全常设委员会，负责安全政策、出口管制与全球贸易风险的董事会监督。这些都不改变官方辞职与临时 CEO 任命的基本事实，也不抬既有注意力分数。",
    "cover": null
-  },
-  {
-   "rank": 10,
-   "story": {
-    "publicId": "2026-11-09-google-four-tpu-variants-one-year",
-    "title": "报道：谷歌一年内推出四款 TPU 变体，并发布 TPU 8tx 与 8i Max"
-   },
-   "heat": 12.9,
-   "trend": "up",
-   "trendPct": 168.8,
-   "badges": [
-    "rising"
-   ],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "TechCrunch · AI",
-    "The Decoder"
-   ],
-   "participants": [
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    8.2,
-    7.9,
-    7.7,
-    7.5,
-    7.3,
-    7.1,
-    6.9,
-    6.7,
-    6.5,
-    6.3,
-    6.1,
-    5.9,
-    5.8,
-    5.6,
-    5.5,
-    5.3,
-    5.1,
-    5.0,
-    4.9,
-    4.7,
-    14.6,
-    14.1,
-    13.7,
-    13.3,
-    13.0
-   ],
-   "summary": "The Decoder：谷歌在 TPU 8 系列上再推两款专用变体——TPU 8tx 称处理时仍可保持数据加密，TPU 8i Max 把两颗芯片封装在一起以加倍算力与内存；并称近 100 家外部客户、一年内共四款 TPU 变体，对标英伟达 GPU。本窗 TechCrunch 亦报道谷歌推出两款专用芯片，分别面向机密训练和更大内存容量，属于同一 TPU 8tx / 8i Max 产品线。本窗 inbox 未见谷歌官方页。",
-   "latest": null,
-   "cover": null,
-   "belowThreshold": true
   }
  ]
 }

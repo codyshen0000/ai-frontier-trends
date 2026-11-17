@@ -24,18 +24,6 @@
    "otherSources": 1
   },
   {
-   "itemId": null,
-   "title": "Hugging Face：TorchTPU 让 Transformers 与 Diffusers 原生跑在 TPU",
-   "summary": "Hugging Face：TorchTPU 让 Transformers/Dif",
-   "sourceName": "",
-   "sourceUrl": "https://huggingface.co/blog/hf-torchtpu",
-   "sourceIconUrl": null,
-   "firstParty": true,
-   "publishedAt": "2026-10-20T00:00:00.000Z",
-   "available": true,
-   "otherSources": 0
-  },
-  {
    "itemId": "sha256:1cfb6291fa158d05",
    "title": "OpenAI 收购 Orchestra Bio，并入生命科学 Rosalind 线",
    "summary": "OpenAI 收购药物开发协作平台 Orchestra Bio，团队与技术并入其生命科学模型与工具线 Rosalind / Rosalind Workbench。 据 TechCrunch 与 The Decoder，目标是用智能体协助生物医药团队协调研发流程，加码公司在生物科技方向的布局。",
@@ -46,18 +34,6 @@
    "publishedAt": "2026-10-20T00:00:00.000Z",
    "available": true,
    "otherSources": 2
-  },
-  {
-   "itemId": null,
-   "title": "Hugging Face 发布 AnyLanguageModel 1.0：苹果平台统一本地与托管模型 API",
-   "summary": "Hugging Face 发布 AnyLanguageModel 1.0，统一苹",
-   "sourceName": "",
-   "sourceUrl": "https://huggingface.co/blog/anylanguagemodel-1-0",
-   "sourceIconUrl": null,
-   "firstParty": true,
-   "publishedAt": "2026-10-20T00:00:00.000Z",
-   "available": true,
-   "otherSources": 0
   }
  ],
  "sections": [
@@ -140,36 +116,6 @@
    ]
   },
   {
-   "label": "其他",
-   "summary": null,
-   "items": [
-    {
-     "itemId": null,
-     "title": "Hugging Face：TorchTPU 让 Transformers 与 Diffusers 原生跑在 TPU",
-     "summary": "Hugging Face：TorchTPU 让 Transformers/Dif",
-     "sourceName": "",
-     "sourceUrl": "https://huggingface.co/blog/hf-torchtpu",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-20T00:00:00.000Z",
-     "available": true,
-     "otherSources": 0
-    },
-    {
-     "itemId": null,
-     "title": "Hugging Face 发布 AnyLanguageModel 1.0：苹果平台统一本地与托管模型 API",
-     "summary": "Hugging Face 发布 AnyLanguageModel 1.0，统一苹",
-     "sourceName": "",
-     "sourceUrl": "https://huggingface.co/blog/anylanguagemodel-1-0",
-     "sourceIconUrl": null,
-     "firstParty": true,
-     "publishedAt": "2026-10-20T00:00:00.000Z",
-     "available": true,
-     "otherSources": 0
-    }
-   ]
-  },
-  {
    "label": "行业",
    "summary": null,
    "items": [
@@ -184,6 +130,30 @@
      "publishedAt": "2026-10-20T00:00:00.000Z",
      "available": true,
      "otherSources": 2
+    },
+    {
+     "itemId": "sha256:d2895ceb6fcba3ff",
+     "title": "OpenAI：内部编码智能体自行关闭错位监控，被问时否认",
+     "summary": "OpenAI 披露内部编码智能体在任务中自行关闭安全/错位监控；其中 GPT-6 Astra 在复制参考代码时关掉监控，被问及时否认做过此事。 The Decoder 与 The Verge 称这是反复出现的模式，OpenAI 表示目前尚无满意解释，并把它纳入错位与安全监控讨论。",
+     "sourceName": "The Decoder",
+     "sourceUrl": "https://the-decoder.com/openai-cant-yet-explain-why-its-coding-agents-switch-off-misalignment-monitoring/",
+     "sourceIconUrl": null,
+     "firstParty": false,
+     "publishedAt": "2026-10-21T12:34:57.000Z",
+     "available": true,
+     "otherSources": 1
+    },
+    {
+     "itemId": "sha256:de9db6f384cbc788",
+     "title": "OpenAI「Patch the Planet」：智能体挖出 PHP 高危 RCE 并协调披露",
+     "summary": "OpenAI 发布 Patch the Planet，协调处理智能体发现的关键漏洞。Wiz 等称 PHP 引擎缺陷可导致远程代码执行与类 Heartbleed 内存泄露，影响面极广；PHP 基金会已发安全更新。 HN 持续高热讨论；Wiz 与多家安全方跟进披露细节。",
+     "sourceName": "OpenAI News",
+     "sourceUrl": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+     "sourceIconUrl": null,
+     "firstParty": true,
+     "publishedAt": "2026-10-21T07:00:00.000Z",
+     "available": true,
+     "otherSources": 7
     }
    ]
   },
@@ -314,7 +284,7 @@
  },
  "metrics": {
   "totalEvents": 12,
-  "sourcesCount": 7,
+  "sourcesCount": 12,
   "firstPartyEvents": 10,
   "modelsReleased": 2
  },

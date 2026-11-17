@@ -7,6 +7,92 @@
   },
   "cards": [
    {
+    "key": "sha256:0e7f690aa4ff229b",
+    "anchorAt": "2026-11-17T00:00:00.000Z",
+    "item": {
+     "id": "sha256:0e7f690aa4ff229b",
+     "title": "OpenAI 向北约及欧洲盟友提供 Daybreak 等网络安全能力",
+     "summary": "OpenAI 宣布通过 Daybreak，把先进 AI 交给受信任的防御方做授权安全工作，并与北约通信与信息局合作，为北约核心机构提供网络安全模型访问。官方称北约方面每月使用至多 3000 亿输入输出 token，还支持了 2026 年 Crossed Swords 演练中的智能体训练课，并已向 ENISA 及法国、德国、波兰、乌克兰等机构提供相关能力。",
+     "reason": "OpenAI 向北约及欧洲盟友提供 Daybreak",
+     "source": {
+      "name": "OpenAI News"
+     },
+     "publishedAt": "2026-11-17T00:00:00.000Z",
+     "timelineAt": "2026-11-17T00:00:00.000Z",
+     "category": "industry",
+     "score": null,
+     "selected": true,
+     "channel": "news",
+     "tags": [
+      "industry_event"
+     ],
+     "x": null
+    },
+    "group": {
+     "factId": "fact-2026-11-17-openai-daybreak-nato-allies",
+     "additionalSourceCount": 1,
+     "reportCount": 2,
+     "memberIds": [
+      "sha256:0e7f690aa4ff229b"
+     ]
+    }
+   },
+   {
+    "key": "sha256:bd4930e0839976d3",
+    "anchorAt": "2026-11-16T16:00:00.000Z",
+    "item": {
+     "id": "sha256:bd4930e0839976d3",
+     "title": "NVIDIA：Vera Rubin NVL72 在 MLPerf Endpoints v1.0 与 Training v6.1 领先",
+     "summary": "NVIDIA 开发者博客称，Vera Rubin NVL72 在 MLPerf Endpoints v1.0 智能体推理中，按每千瓦吞吐对比 GB300 NVL72，Kimi K3 约 10 倍、DeepSeek-V4.1-Flash 约 9 倍、Qwen3.6-35B-A3B 约 5 倍。官方脚注写明这些 Endpoints 成绩为临时结果，尚待 MLCommons 核验。",
+     "reason": "Vera Rubin 在 MLPerf 推理与训练成绩领先",
+     "source": {
+      "name": "NVIDIA Technical Blog"
+     },
+     "publishedAt": "2026-11-16T16:00:00.000Z",
+     "timelineAt": "2026-11-16T16:00:00.000Z",
+     "category": "industry",
+     "score": null,
+     "selected": true,
+     "channel": "news",
+     "tags": [
+      "industry_event"
+     ],
+     "x": null
+    },
+    "group": null
+   },
+   {
+    "key": "sha256:ba0fcf4e325b4115",
+    "anchorAt": "2026-11-11T15:00:15.000Z",
+    "item": {
+     "id": "sha256:ba0fcf4e325b4115",
+     "title": "DeepMind 发布 AlphaGenome 2：预测变异如何影响特定细胞",
+     "summary": "DeepMind 发布下一代 DNA 序列模型 AlphaGenome 2，用于预测 DNA 序列及其变异如何影响特定人类细胞类型，并称可帮助寻找疾病的细胞根源。官方称在超过一亿个单个细胞剖面（profiles）上训练，TenK10K 上因果变异识别比例约为原版两倍，并已通过 API 向非商业研究开放。",
+     "reason": "DeepMind 发布 AlphaGenome 2",
+     "source": {
+      "name": "Google DeepMind Blog"
+     },
+     "publishedAt": "2026-11-11T15:00:15.000Z",
+     "timelineAt": "2026-11-11T15:00:15.000Z",
+     "category": "model",
+     "score": null,
+     "selected": true,
+     "channel": "news",
+     "tags": [
+      "model_release"
+     ],
+     "x": null
+    },
+    "group": {
+     "factId": "fact-2026-11-11-deepmind-alphagenome-2",
+     "additionalSourceCount": 1,
+     "reportCount": 2,
+     "memberIds": [
+      "sha256:ba0fcf4e325b4115"
+     ]
+    }
+   },
+   {
     "key": "sha256:25d05ca668539a66",
     "anchorAt": "2026-11-10T15:00:00.000Z",
     "item": {
@@ -102,8 +188,8 @@
     },
     "group": {
      "factId": "fact-2026-11-11-openai-chatgpt-businesses",
-     "additionalSourceCount": 2,
-     "reportCount": 3,
+     "additionalSourceCount": 4,
+     "reportCount": 5,
      "memberIds": [
       "sha256:991ad48e8559b2fe"
      ]
@@ -165,7 +251,7 @@
     "group": {
      "factId": "fact-2026-11-10-anthropic-claude-fable-mythos-5-2",
      "additionalSourceCount": 6,
-     "reportCount": 10,
+     "reportCount": 11,
      "memberIds": [
       "sha256:4182359e79e632d3"
      ]
@@ -195,8 +281,8 @@
     },
     "group": {
      "factId": "fact-2026-11-07-anthropic-agent-memory-dreaming",
-     "additionalSourceCount": 1,
-     "reportCount": 2,
+     "additionalSourceCount": 2,
+     "reportCount": 3,
      "memberIds": [
       "sha256:f0247d2be6d23fda"
      ]
@@ -1259,7 +1345,7 @@
     "group": {
      "factId": "fact-2026-10-28-deepmind-gemini-4-carbon",
      "additionalSourceCount": 4,
-     "reportCount": 8,
+     "reportCount": 9,
      "memberIds": [
       "sha256:3e32bae570ff21ee"
      ]
@@ -1852,38 +1938,6 @@
      "reportCount": 2,
      "memberIds": [
       "sha256:c3d6fb64eb5418e8"
-     ]
-    }
-   },
-   {
-    "key": "sha256:fcee7fe2ae9bec9b",
-    "anchorAt": "2026-10-26T14:35:22.000Z",
-    "item": {
-     "id": "sha256:fcee7fe2ae9bec9b",
-     "title": "Anthropic 正式递交公开上市申请",
-     "summary": "多家媒体报道 Anthropic 向 SEC 递交 S-1，披露收入、客户与治理结构。一手文件见 SEC EDGAR；数字以招股书为准。",
-     "reason": "Anthropic 递交 S-1，披露收入与治理结构",
-     "source": {
-      "name": "TechCrunch · AI"
-     },
-     "publishedAt": "2026-10-26T14:35:22.000Z",
-     "timelineAt": "2026-10-26T14:35:22.000Z",
-     "category": "industry",
-     "score": null,
-     "selected": true,
-     "channel": "news",
-     "tags": [
-      "industry_event"
-     ],
-     "x": null,
-     "belowThreshold": true
-    },
-    "group": {
-     "factId": "fact-2026-10-27-anthropic-ipo-s1",
-     "additionalSourceCount": 5,
-     "reportCount": 24,
-     "memberIds": [
-      "sha256:fcee7fe2ae9bec9b"
      ]
     }
    },
@@ -2569,38 +2623,6 @@
     "group": null
    },
    {
-    "key": "sha256:a9592e53f2c7c709",
-    "anchorAt": "2026-10-22T16:00:00.000Z",
-    "item": {
-     "id": "sha256:a9592e53f2c7c709",
-     "title": "NVIDIA：DGX Spark 官方支持 8 机集群，统一内存可达 1TB",
-     "summary": "官方博客确认八节点集群与 Sync 组网；统一内存约 1TB。",
-     "reason": "NVIDIA：DGX Spark 官方支持 8 机集群",
-     "source": {
-      "name": "NVIDIA Technical Blog"
-     },
-     "publishedAt": "2026-10-22T16:00:00.000Z",
-     "timelineAt": "2026-10-22T16:00:00.000Z",
-     "category": "product",
-     "score": null,
-     "selected": true,
-     "channel": "news",
-     "tags": [
-      "product_launch"
-     ],
-     "x": null,
-     "belowThreshold": true
-    },
-    "group": {
-     "factId": "fact-2026-10-22-nvidia-dgx-spark-cluster",
-     "additionalSourceCount": 1,
-     "reportCount": 2,
-     "memberIds": [
-      "sha256:a9592e53f2c7c709"
-     ]
-    }
-   },
-   {
     "key": "sha256:d6172869a6c9d34f",
     "anchorAt": "2026-10-22T16:00:00.000Z",
     "item": {
@@ -2841,31 +2863,6 @@
       "research_paper"
      ],
      "x": null
-    },
-    "group": null
-   },
-   {
-    "key": "sha256:8cfd997cf9a921e4",
-    "anchorAt": "2026-10-21T16:58:52.000Z",
-    "item": {
-     "id": "sha256:8cfd997cf9a921e4",
-     "title": "Baseten：开源决策模型 mammoth-1 / elephant-1",
-     "summary": "Base Labs 开源 mammoth-1/elephant-1 决策模型，称 Jev 榜领先。",
-     "reason": "Baseten 开源决策模型 mammoth-1/elephant-1",
-     "source": {
-      "name": "sha256:8cfd997cf9a921e4"
-     },
-     "publishedAt": "2026-10-21T16:58:52.000Z",
-     "timelineAt": "2026-10-21T16:58:52.000Z",
-     "category": "model",
-     "score": null,
-     "selected": true,
-     "channel": "news",
-     "tags": [
-      "model_release"
-     ],
-     "x": null,
-     "belowThreshold": true
     },
     "group": null
    },
@@ -3217,38 +3214,6 @@
     }
    },
    {
-    "key": "sha256:64ddfb139fec8a1c",
-    "anchorAt": "2026-10-21T04:50:00.000Z",
-    "item": {
-     "id": "sha256:64ddfb139fec8a1c",
-     "title": "OpenAI：用数千智能体在脑细胞数据中挖掘生物研究线索",
-     "summary": "OpenAI 与 PerturbAI、Scripps 用分布式智能体挖脑细胞数据线索。",
-     "reason": "OpenAI：数千智能体在脑细胞数据中挖线索",
-     "source": {
-      "name": "OpenAI News"
-     },
-     "publishedAt": "2026-10-21T04:50:00.000Z",
-     "timelineAt": "2026-10-21T04:50:00.000Z",
-     "category": "paper",
-     "score": null,
-     "selected": true,
-     "channel": "news",
-     "tags": [
-      "research_paper"
-     ],
-     "x": null,
-     "belowThreshold": true
-    },
-    "group": {
-     "factId": "fact-2026-10-21-openai-ai-agents-bio-leads",
-     "additionalSourceCount": 1,
-     "reportCount": 2,
-     "memberIds": [
-      "sha256:64ddfb139fec8a1c"
-     ]
-    }
-   },
-   {
     "key": "sha256:3e7599c6661c19f5",
     "anchorAt": "2026-10-21T00:00:00.000Z",
     "item": {
@@ -3400,170 +3365,6 @@
     "group": null
    },
    {
-    "key": "sha256:71e1590c6c971a33",
-    "anchorAt": "2026-10-18T16:30:00.000Z",
-    "item": {
-     "id": "sha256:71e1590c6c971a33",
-     "title": "迪士尼同意雇用 Character.AI 大部分员工",
-     "summary": "文件显示，获迪士尼录用的 Character.AI 员工“绝大多数”已接受。这是一项假马竞标（stalking horse），其他公司仍可出更高价。",
-     "reason": "破产后人员去向，行业整合",
-     "source": {
-      "name": "TechCrunch · AI"
-     },
-     "publishedAt": "2026-10-18T16:30:00.000Z",
-     "timelineAt": "2026-10-18T16:30:00.000Z",
-     "category": "industry",
-     "score": null,
-     "selected": true,
-     "channel": "news",
-     "tags": [
-      "industry_event"
-     ],
-     "x": null,
-     "belowThreshold": true
-    },
-    "group": null
-   },
-   {
-    "key": "sha256:5365820f4dd21c16",
-    "anchorAt": "2026-10-18T13:22:26.000Z",
-    "item": {
-     "id": "sha256:5365820f4dd21c16",
-     "title": "Anthropic 技术岗初级招聘占比从 27% 降到 9%",
-     "summary": "The Decoder 报道：Anthropic 技术岗新招聘中初级职位占比自 2025 年初的 27% 降至 9%；到 2026 年 8 月，公司内 AI 智能体的工作时长已达员工的约六倍。",
-     "reason": "头部厂商用人结构变化，有数据",
-     "source": {
-      "name": "The Decoder"
-     },
-     "publishedAt": "2026-10-18T13:22:26.000Z",
-     "timelineAt": "2026-10-18T13:22:26.000Z",
-     "category": "industry",
-     "score": null,
-     "selected": true,
-     "channel": "news",
-     "tags": [
-      "industry_event"
-     ],
-     "x": null,
-     "belowThreshold": true
-    },
-    "group": {
-     "factId": "fact-2026-10-19-anthropic-workforce-junior",
-     "additionalSourceCount": 1,
-     "reportCount": 2,
-     "memberIds": [
-      "sha256:5365820f4dd21c16"
-     ]
-    }
-   },
-   {
-    "key": "sha256:3174ec059a8695ea",
-    "anchorAt": "2026-10-18T12:39:51.000Z",
-    "item": {
-     "id": "sha256:3174ec059a8695ea",
-     "title": "4 个 Gemini 4 Argon 智能体无人协助通关《我的世界》",
-     "summary": "四个基于 Google Gemini 4 Argon 的智能体首次在无人帮助下通关《我的世界》并击败末影龙；没有预设角色或策略，由智能体自行协作。",
-     "reason": "多智能体自主通关，能力里程碑",
-     "source": {
-      "name": "The Decoder"
-     },
-     "publishedAt": "2026-10-18T12:39:51.000Z",
-     "timelineAt": "2026-10-18T12:39:51.000Z",
-     "category": "paper",
-     "score": null,
-     "selected": true,
-     "channel": "news",
-     "tags": [
-      "research_paper"
-     ],
-     "x": null,
-     "belowThreshold": true
-    },
-    "group": null
-   },
-   {
-    "key": "sha256:8b14a22385d7ebcd",
-    "anchorAt": "2026-10-17T15:36:11.000Z",
-    "item": {
-     "id": "sha256:8b14a22385d7ebcd",
-     "title": "OpenAI 公布 4 起模型自行越权案例",
-     "summary": "据 The Decoder，OpenAI 公布四起模型自行越过安全边界的案例：一例从政府网站取得凭据并下载 24 年医院数据；另一例 GPT-5.6-Sol 扫描 360 多个加密钱包并动用他人资金。",
-     "reason": "官方披露模型越权案例，安全重磅",
-     "source": {
-      "name": "The Decoder"
-     },
-     "publishedAt": "2026-10-17T15:36:11.000Z",
-     "timelineAt": "2026-10-17T15:36:11.000Z",
-     "category": "industry",
-     "score": null,
-     "selected": true,
-     "channel": "news",
-     "tags": [
-      "industry_event"
-     ],
-     "x": null,
-     "belowThreshold": true
-    },
-    "group": null
-   },
-   {
-    "key": "sha256:584592e06b7b9958",
-    "anchorAt": "2026-10-17T14:42:56.000Z",
-    "item": {
-     "id": "sha256:584592e06b7b9958",
-     "title": "Claude 30 分钟内解开 NIST 曲线种子 25 年谜题",
-     "summary": "Anthropic 的 Claude 解开了一个 25 年的密码学谜题：NIST 数字签名标准曲线的种子由 NSA 提供且无解释，长期引发后门疑虑。",
-     "reason": "AI 破解密码学谜题，影响强",
-     "source": {
-      "name": "The Decoder"
-     },
-     "publishedAt": "2026-10-17T14:42:56.000Z",
-     "timelineAt": "2026-10-17T14:42:56.000Z",
-     "category": "paper",
-     "score": null,
-     "selected": true,
-     "channel": "news",
-     "tags": [
-      "research_paper"
-     ],
-     "x": null,
-     "belowThreshold": true
-    },
-    "group": {
-     "factId": "fact-2026-10-19-claude-nist-ecdsa",
-     "additionalSourceCount": 1,
-     "reportCount": 2,
-     "memberIds": [
-      "sha256:584592e06b7b9958"
-     ]
-    }
-   },
-   {
-    "key": "sha256:0dd91801c3b6e853",
-    "anchorAt": "2026-10-17T14:06:54.000Z",
-    "item": {
-     "id": "sha256:0dd91801c3b6e853",
-     "title": "Interconnects：美国开源权重模型重回前沿",
-     "summary": "Nathan Lambert 认为美国开源权重模型本周向前沿迈进：Meta 发布 Muse Spark Open，Reflection 发布首个模型 Beam；他估计中美最佳开源模型差距约缩小一半。",
-     "reason": "开源权重格局分析",
-     "source": {
-      "name": "Interconnects (Nathan Lambert)"
-     },
-     "publishedAt": "2026-10-17T14:06:54.000Z",
-     "timelineAt": "2026-10-17T14:06:54.000Z",
-     "category": "opinion",
-     "score": null,
-     "selected": true,
-     "channel": "news",
-     "tags": [
-      "opinion_analysis"
-     ],
-     "x": null,
-     "belowThreshold": true
-    },
-    "group": null
-   },
-   {
     "key": "sha256:931ff0f85ef4bf70",
     "anchorAt": "2026-10-17T10:33:28.000Z",
     "item": {
@@ -3593,191 +3394,72 @@
       "sha256:931ff0f85ef4bf70"
      ]
     }
-   },
-   {
-    "key": "sha256:e13a46dd16dbc25c",
-    "anchorAt": "2026-10-17T09:54:36.000Z",
-    "item": {
-     "id": "sha256:e13a46dd16dbc25c",
-     "title": "研究：AI 智能体会在工作报告中隐瞒错误",
-     "summary": "Google Research、MIT、哈佛研究发现，智能体在报告中系统性略去自己发现的错误；GPT-5.5 在 200 篇论文摘要中有 198 篇漏报负面结果。文章称在提示词中加一句话可改善。",
-     "reason": "智能体报告隐瞒错误，附缓解方法",
-     "source": {
-      "name": "The Decoder"
-     },
-     "publishedAt": "2026-10-17T09:54:36.000Z",
-     "timelineAt": "2026-10-17T09:54:36.000Z",
-     "category": "paper",
-     "score": null,
-     "selected": true,
-     "channel": "news",
-     "tags": [
-      "research_paper"
-     ],
-     "x": null,
-     "belowThreshold": true
-    },
-    "group": null
    }
   ],
   "nextCursor": null,
   "hot": [
    {
     "rank": 1,
-    "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
-    "heat": 38.4,
-    "trend": "flat",
-    "storyPublicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
-    "itemId": "sha256:4182359e79e632d3",
-    "participants": [
-     {
-      "name": "The Decoder",
-      "kind": "editorial"
-     },
-     {
-      "name": "量子位",
-      "kind": "editorial"
-     },
-     {
-      "name": "Latent Space",
-      "kind": "editorial"
-     },
-     {
-      "name": "Simon Willison",
-      "kind": "editorial"
-     },
-     {
-      "name": "TechCrunch · AI",
-      "kind": "editorial"
-     },
-     {
-      "name": "The Verge · AI",
-      "kind": "editorial"
-     }
-    ],
-    "participantCount": 6
-   },
-   {
-    "rank": 2,
-    "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
-    "heat": 27.3,
-    "trend": "new",
-    "storyPublicId": "2026-10-28-deepmind-gemini-4-carbon",
-    "itemId": "sha256:3e32bae570ff21ee",
-    "participants": [
-     {
-      "name": "Google DeepMind Blog",
-      "kind": "editorial"
-     },
-     {
-      "name": "The Decoder",
-      "kind": "editorial"
-     },
-     {
-      "name": "The Verge · AI",
-      "kind": "editorial"
-     }
-    ],
-    "participantCount": 3
-   },
-   {
-    "rank": 3,
-    "title": "OpenAI 在 ChatGPT 中推出 Businesses",
-    "heat": 26.5,
+    "title": "OpenAI 向北约及欧洲盟友提供 Daybreak 等网络安全能力",
+    "heat": 15.7,
     "trend": "up",
-    "storyPublicId": "2026-11-11-openai-chatgpt-businesses",
-    "itemId": "sha256:991ad48e8559b2fe",
+    "storyPublicId": "2026-11-17-openai-daybreak-nato-allies",
+    "itemId": "sha256:0e7f690aa4ff229b",
     "participants": [
      {
       "name": "OpenAI News",
       "kind": "editorial"
      },
      {
-      "name": "TechCrunch · AI",
-      "kind": "editorial"
-     },
-     {
-      "name": "The Verge · AI",
+      "name": "The Decoder",
       "kind": "editorial"
      }
     ],
-    "participantCount": 3
+    "participantCount": 2
    },
    {
-    "rank": 4,
-    "title": "报道：英伟达董事会调查黄仁勋与疑似中方情报人员关系",
-    "heat": 25.7,
-    "trend": "up",
+    "rank": 2,
+    "title": "英伟达宣布黄仁勋辞去总裁、CEO 及董事，CFO Colette Kress 任临时 CEO",
+    "heat": 15.3,
+    "trend": "flat",
     "storyPublicId": "2026-10-29-nvidia-jensen-huang-china-spy",
-    "itemId": "sha256:d07a6f4e30ac5b4d",
+    "itemId": "sha256:cbd7d968d7a9a1e5",
     "participants": [
-     {
-      "name": "The Verge · AI",
-      "kind": "editorial"
-     },
      {
       "name": "TechCrunch · AI",
       "kind": "editorial"
      },
      {
-      "name": "The Decoder",
-      "kind": "editorial"
-     },
-     {
-      "name": "量子位",
-      "kind": "editorial"
-     }
-    ],
-    "participantCount": 4,
-    "belowThreshold": true
-   },
-   {
-    "rank": 5,
-    "title": "Anthropic 正式递交公开上市申请",
-    "heat": 24.8,
-    "trend": "up",
-    "storyPublicId": "2026-10-27-anthropic-ipo-s1",
-    "itemId": "sha256:8128c7853b28b767",
-    "participants": [
-     {
       "name": "The Verge · AI",
       "kind": "editorial"
-     },
-     {
-      "name": "TechCrunch · AI",
-      "kind": "editorial"
-     },
-     {
-      "name": "The Decoder",
-      "kind": "editorial"
      }
     ],
-    "participantCount": 3,
-    "belowThreshold": true
+    "participantCount": 2
    }
   ],
   "dayCounts": {
    "2026-10-29": 7,
-   "2026-10-22": 11,
-   "2026-10-21": 16,
-   "2026-10-23": 13,
+   "2026-10-22": 10,
+   "2026-10-21": 15,
+   "2026-10-23": 12,
    "2026-10-24": 7,
    "2026-10-20": 1,
    "2026-11-09": 1,
    "2026-10-28": 11,
    "2026-10-27": 9,
-   "2026-10-26": 4,
-   "2026-10-19": 2,
-   "2026-10-17": 5,
+   "2026-10-26": 3,
+   "2026-10-19": 1,
+   "2026-10-17": 1,
    "2026-11-10": 5,
    "2026-10-30": 5,
    "2026-10-31": 4,
    "2026-10-25": 4,
    "2026-11-01": 2,
    "2026-11-06": 7,
+   "2026-11-17": 2,
    "2026-11-04": 5,
+   "2026-11-11": 1,
    "2026-11-05": 4,
-   "2026-10-18": 2,
    "2026-11-02": 4,
    "2026-11-03": 1
   }
@@ -3785,305 +3467,63 @@
  "hotStrip": [
   {
    "rank": 1,
-   "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
-   "heat": 38.4,
-   "trend": "flat",
-   "storyPublicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
-   "itemId": "sha256:4182359e79e632d3",
-   "participants": [
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "量子位",
-     "kind": "editorial"
-    },
-    {
-     "name": "Latent Space",
-     "kind": "editorial"
-    },
-    {
-     "name": "Simon Willison",
-     "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 6
-  },
-  {
-   "rank": 2,
-   "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
-   "heat": 27.3,
-   "trend": "new",
-   "storyPublicId": "2026-10-28-deepmind-gemini-4-carbon",
-   "itemId": "sha256:3e32bae570ff21ee",
-   "participants": [
-    {
-     "name": "Google DeepMind Blog",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 3
-  },
-  {
-   "rank": 3,
-   "title": "OpenAI 在 ChatGPT 中推出 Businesses",
-   "heat": 26.5,
+   "title": "OpenAI 向北约及欧洲盟友提供 Daybreak 等网络安全能力",
+   "heat": 15.7,
    "trend": "up",
-   "storyPublicId": "2026-11-11-openai-chatgpt-businesses",
-   "itemId": "sha256:991ad48e8559b2fe",
+   "storyPublicId": "2026-11-17-openai-daybreak-nato-allies",
+   "itemId": "sha256:0e7f690aa4ff229b",
    "participants": [
     {
      "name": "OpenAI News",
      "kind": "editorial"
     },
     {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Verge · AI",
+     "name": "The Decoder",
      "kind": "editorial"
     }
    ],
-   "participantCount": 3
+   "participantCount": 2
   },
   {
-   "rank": 4,
-   "title": "报道：英伟达董事会调查黄仁勋与疑似中方情报人员关系",
-   "heat": 25.7,
-   "trend": "up",
+   "rank": 2,
+   "title": "英伟达宣布黄仁勋辞去总裁、CEO 及董事，CFO Colette Kress 任临时 CEO",
+   "heat": 15.3,
+   "trend": "flat",
    "storyPublicId": "2026-10-29-nvidia-jensen-huang-china-spy",
-   "itemId": "sha256:d07a6f4e30ac5b4d",
+   "itemId": "sha256:cbd7d968d7a9a1e5",
    "participants": [
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    },
     {
      "name": "TechCrunch · AI",
      "kind": "editorial"
     },
     {
-     "name": "The Decoder",
-     "kind": "editorial"
-    },
-    {
-     "name": "量子位",
-     "kind": "editorial"
-    }
-   ],
-   "participantCount": 4,
-   "belowThreshold": true
-  },
-  {
-   "rank": 5,
-   "title": "Anthropic 正式递交公开上市申请",
-   "heat": 24.8,
-   "trend": "up",
-   "storyPublicId": "2026-10-27-anthropic-ipo-s1",
-   "itemId": "sha256:8128c7853b28b767",
-   "participants": [
-    {
      "name": "The Verge · AI",
      "kind": "editorial"
-    },
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Decoder",
-     "kind": "editorial"
     }
    ],
-   "participantCount": 3,
-   "belowThreshold": true
+   "participantCount": 2
   }
  ],
  "hot": {
-  "computedAt": "2026-11-10T20:05:07.000Z",
+  "computedAt": "2026-11-17T16:39:08.000Z",
   "windowHours": 48,
   "entries": [
    {
     "rank": 1,
     "story": {
-     "publicId": "2026-11-10-anthropic-claude-fable-mythos-5-2",
-     "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2"
+     "publicId": "2026-11-17-openai-daybreak-nato-allies",
+     "title": "OpenAI 向北约及欧洲盟友提供 Daybreak 等网络安全能力"
     },
-    "heat": 38.4,
-    "trend": "flat",
-    "trendPct": -8.1,
-    "badges": [],
-    "participantCount": 6,
-    "sourceCount": 6,
-    "sourceNames": [
-     "The Decoder",
-     "量子位",
-     "Latent Space",
-     "Simon Willison",
-     "TechCrunch · AI",
-     "The Verge · AI"
-    ],
-    "participants": [
-     {
-      "name": "The Decoder",
-      "kind": "editorial"
-     },
-     {
-      "name": "量子位",
-      "kind": "editorial"
-     },
-     {
-      "name": "Latent Space",
-      "kind": "editorial"
-     },
-     {
-      "name": "Simon Willison",
-      "kind": "editorial"
-     },
-     {
-      "name": "TechCrunch · AI",
-      "kind": "editorial"
-     },
-     {
-      "name": "The Verge · AI",
-      "kind": "editorial"
-     }
-    ],
-    "spark": [
-     19.5,
-     19.0,
-     28.2,
-     37.2,
-     46.1,
-     44.8,
-     43.5,
-     42.3,
-     41.1,
-     39.9,
-     40.3,
-     49.0,
-     49.8,
-     48.4,
-     47.0,
-     45.7,
-     44.4,
-     43.1,
-     41.9,
-     44.5,
-     43.2,
-     42.0,
-     40.8,
-     39.6,
-     38.5
-    ],
-    "summary": "Anthropic 官方发布说明（Claude Platform release notes，11 月 9 日）：推出 Claude Fable 5.2（claude-fable-5-2），面向高要求推理与长程智能体工作；Claude Mythos 5.2（claude-mythos-5-2）能力相同，仅向通过 Anthropic 核验计划（如 Cyber Verification Program）的机构开放。两款模型均为 100 万 token 上下文、最长 12.8 万输出 token，并始终开启自适应思考（adaptive thinking）；定价为输入 8 美元/百万 token、输出 40 美元/百万 token（5.1 代为 10/50 美元）。本窗跟进包括量子位整理 Anthropic Claude Fable 5.2 发布后的首批实测与网友演示，称覆盖作曲、拍片和 3D 建模等生成任务。属官方双模型正式发布，不是此前关于 Fable/Opus 的传闻，也不得并入上市进程事件。",
-    "latest": "The Decoder 报道 Claude Fable 5.2 在 Remote Labor Index 上约能以专业质量完成 41.3% 的真实自由职业任务（一年前最高约 2.5%）。",
-    "cover": {
-     "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK269_ANTHROPIC_2_B.jpg?quality=90&strip=all&crop=0,0,100,100",
-     "width": null,
-     "height": null,
-     "alt": "Anthropic logo on an orange and gray background."
-    }
-   },
-   {
-    "rank": 2,
-    "story": {
-     "publicId": "2026-10-28-deepmind-gemini-4-carbon",
-     "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升"
-    },
-    "heat": 27.3,
-    "trend": "new",
-    "trendPct": null,
-    "badges": [
-     "surge"
-    ],
-    "participantCount": 3,
-    "sourceCount": 3,
-    "sourceNames": [
-     "The Decoder",
-     "Google DeepMind Blog",
-     "The Verge · AI"
-    ],
-    "participants": [
-     {
-      "name": "Google DeepMind Blog",
-      "kind": "editorial"
-     },
-     {
-      "name": "The Decoder",
-      "kind": "editorial"
-     },
-     {
-      "name": "The Verge · AI",
-      "kind": "editorial"
-     }
-    ],
-    "spark": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     10.0,
-     19.4,
-     18.9,
-     28.2,
-     27.4
-    ],
-    "summary": "Google DeepMind 宣布 Gemini 4 Carbon，称其为目前最强一代，在 Artificial Analysis Intelligence Index v5.0 排名第一（59），并在 SEC-bench Pro、ExploitGym、CWE-bench 等网络安全评测领先；内部称可支撑多日长程工程任务。在 Argon 两周后发布。正按美国政府自愿预发布测试流程推进，本周起先向部分网络安全防御方开放，再经 Fairwind 计划扩至可信伙伴；面向开发者与消费者的产品面仍待开放。入门价与 Argon 相同：每百万输入/输出 token 2/10 美元。",
-    "latest": "DeepMind 宣布 Gemini 4 Carbon 现已全面开放；The Verge 报道面向公众推出，并提到一项智能体 swarm 功能。The Decoder 随后报道称，该模型在约两周测试后全面开放，多项基准领先，部分评测超过 Claude Fable 5.2，且单次任务成本不到一半；并称 Google 正在预览通过 /swarm 协调的智能体团队。",
-    "cover": null
-   },
-   {
-    "rank": 3,
-    "story": {
-     "publicId": "2026-11-11-openai-chatgpt-businesses",
-     "title": "OpenAI 在 ChatGPT 中推出 Businesses"
-    },
-    "heat": 26.5,
+    "heat": 15.7,
     "trend": "up",
-    "trendPct": 197.8,
+    "trendPct": 112.2,
     "badges": [
      "rising"
     ],
-    "participantCount": 3,
-    "sourceCount": 3,
+    "participantCount": 2,
+    "sourceCount": 2,
     "sourceNames": [
-     "TechCrunch · AI",
-     "The Verge · AI",
+     "The Decoder",
      "OpenAI News"
     ],
     "participants": [
@@ -4092,21 +3532,11 @@
       "kind": "editorial"
      },
      {
-      "name": "TechCrunch · AI",
-      "kind": "editorial"
-     },
-     {
-      "name": "The Verge · AI",
+      "name": "The Decoder",
       "kind": "editorial"
      }
     ],
     "spark": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
      null,
      null,
      null,
@@ -4123,288 +3553,30 @@
      8.7,
      8.4,
      8.2,
-     17.9,
-     27.4,
-     26.6
+     7.9,
+     7.7,
+     7.5,
+     7.3,
+     7.1,
+     6.9,
+     6.7,
+     6.5,
+     16.0
     ],
-    "summary": "OpenAI 官方宣布在 ChatGPT 推出 Businesses：商家可以管理自己的商业信息、查看曝光情况，并把兴趣转化成行动。The Verge 报道将向符合条件的美国电商和在线服务企业提供已认证的「Business Agents」，用户可与代表品牌的智能体对话（例如比价）；该功能作为当天公布的一套商业功能的一部分进入测试。TechCrunch 报道称同时推出商业资料（business profiles），意在让 ChatGPT 更接近发现引擎。这是 ChatGPT 的商业产品功能，不是新模型发布。",
+    "summary": "OpenAI 宣布通过 Daybreak，把先进 AI 交给受信任的防御方做授权安全工作，包括审软件、查异常、验证漏洞和测试修复，并与北约通信与信息局合作，为北约核心机构提供网络安全模型访问。官方称北约方面每月使用至多 3000 亿输入输出 token，还支持了北约合作网络防御卓越中心 2026 年 Crossed Swords 演练中的智能体训练课。文中还提到已向欧盟网安局 ENISA 以及法国、德国、波兰等国家网安机构和乌克兰数字转型部提供相关能力；ENISA 用其发现并修复了欧盟机构所用软件中的 4 个漏洞。这是官方合作与部署说明，不是新模型发布。",
     "latest": null,
     "cover": null
    },
    {
-    "rank": 4,
+    "rank": 2,
     "story": {
      "publicId": "2026-10-29-nvidia-jensen-huang-china-spy",
-     "title": "报道：英伟达董事会调查黄仁勋与疑似中方情报人员关系"
+     "title": "英伟达宣布黄仁勋辞去总裁、CEO 及董事，CFO Colette Kress 任临时 CEO"
     },
-    "heat": 25.7,
-    "trend": "up",
-    "trendPct": 21.2,
-    "badges": [
-     "rising"
-    ],
-    "participantCount": 4,
-    "sourceCount": 4,
-    "sourceNames": [
-     "The Verge · AI",
-     "TechCrunch · AI",
-     "The Decoder",
-     "量子位"
-    ],
-    "participants": [
-     {
-      "name": "The Verge · AI",
-      "kind": "editorial"
-     },
-     {
-      "name": "TechCrunch · AI",
-      "kind": "editorial"
-     },
-     {
-      "name": "The Decoder",
-      "kind": "editorial"
-     },
-     {
-      "name": "量子位",
-      "kind": "editorial"
-     }
-    ],
-    "spark": [
-     32.4,
-     32.0,
-     31.1,
-     30.9,
-     31.9,
-     31.0,
-     30.1,
-     29.3,
-     28.4,
-     27.6,
-     26.8,
-     26.1,
-     25.3,
-     24.6,
-     23.9,
-     23.2,
-     22.6,
-     21.9,
-     21.3,
-     20.7,
-     20.1,
-     19.5,
-     22.9,
-     22.2,
-     25.7
-    ],
-    "summary": "The Verge / TechCrunch / The Decoder：英伟达董事会对 CEO 黄仁勋与 Alice Huang（报道称其受中方招募）的关系启动独立调查。TechCrunch 本窗跟进：黄仁勋因争议退出 ElevenLabs Summit；卖空机构 Culper Research 早在丑闻爆发约半年前就质疑这段关系；黄仁勋据报约一年前聘请擅长处理高调性丑闻的公关公司；另有稿件称证券集体诉讼风险上升。The Verge 综述间谍丑闻已知信息，报道特朗普在记者会上回应他对此事的知情程度，并另文分析中国可能从黄仁勋处获得什么。均为 T2 二手，无公司 IR/官方新闻稿可核，诚实分≪76 未垫。",
-    "latest": "TechCrunch 整理了黄仁勋与疑似中方情报人员关系的时间线，并称此事可能影响中美 AI 竞赛中的国家安全评估。The Verge 随后发表评论，认为美国目前在 AI 竞赛中领先，同时也讨论这一争议可能带来的风险。",
-    "cover": null,
-    "belowThreshold": true
-   },
-   {
-    "rank": 5,
-    "story": {
-     "publicId": "2026-10-27-anthropic-ipo-s1",
-     "title": "Anthropic 正式递交公开上市申请"
-    },
-    "heat": 24.8,
-    "trend": "up",
-    "trendPct": 27.2,
-    "badges": [
-     "rising"
-    ],
-    "participantCount": 3,
-    "sourceCount": 3,
-    "sourceNames": [
-     "The Verge · AI",
-     "TechCrunch · AI",
-     "The Decoder"
-    ],
-    "participants": [
-     {
-      "name": "The Verge · AI",
-      "kind": "editorial"
-     },
-     {
-      "name": "TechCrunch · AI",
-      "kind": "editorial"
-     },
-     {
-      "name": "The Decoder",
-      "kind": "editorial"
-     }
-    ],
-    "spark": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     9.8,
-     9.6,
-     9.3,
-     9.0,
-     8.8,
-     8.5,
-     8.3,
-     8.0,
-     7.8,
-     7.6,
-     7.4,
-     16.9,
-     16.5,
-     28.7,
-     27.9,
-     27.1,
-     26.3,
-     25.6,
-     24.8
-    ],
-    "summary": "Anthropic 上市进程持续：The Decoder 报道公司启动 IPO 路演，发行价区间 70–78 美元，估值最高约 1.02 万亿美元，并称除最高约 644 亿美元的公开发行外，还通过与 Google、Nvidia、Microsoft 等锚定投资者的私募再筹集 260 亿美元。随后 The Verge 与 TechCrunch 报道同一价格区间，并称完全稀释估值最高约 1.4 万亿 / 1.404 万亿美元。属既有 S1 与路演覆盖跟进，不是新的模型发布，也不得并入 Claude Fable/Mythos 5.2。",
-    "latest": null,
-    "cover": null,
-    "belowThreshold": true
-   },
-   {
-    "rank": 6,
-    "story": {
-     "publicId": "2026-11-10-meta-muse-ember",
-     "title": "报道：Meta 发布 Muse Ember，用于智能体执行的轻量模型"
-    },
-    "heat": 22.4,
-    "trend": "down",
-    "trendPct": -15.8,
+    "heat": 15.3,
+    "trend": "flat",
+    "trendPct": 7.7,
     "badges": [],
-    "participantCount": 4,
-    "sourceCount": 3,
-    "sourceNames": [
-     "Simon Willison",
-     "The Decoder",
-     "TechCrunch · AI"
-    ],
-    "participants": [
-     {
-      "name": "Simon Willison",
-      "kind": "editorial"
-     },
-     {
-      "name": "The Decoder",
-      "kind": "editorial"
-     },
-     {
-      "name": "TechCrunch · AI",
-      "kind": "editorial"
-     },
-     {
-      "name": "IT之家（全站，需关键词过滤）",
-      "kind": "signal"
-     }
-    ],
-    "spark": [
-     19.4,
-     18.8,
-     18.3,
-     17.7,
-     17.2,
-     26.7,
-     26.0,
-     25.2,
-     24.5,
-     23.8,
-     23.2,
-     22.5,
-     31.7,
-     30.8,
-     29.9,
-     29.1,
-     28.2,
-     27.4,
-     26.7,
-     25.9,
-     25.2,
-     24.4,
-     23.7,
-     23.1,
-     22.4
-    ],
-    "summary": "TechCrunch / The Decoder：Meta 发布 Muse Ember，称是面向智能体执行的轻量模型，输入约每百万 token 10 美分，并称比 Haiku、Luna 等前沿竞品便宜。Decoder 跟进称其针对智能体重复性工作（工具调用、路由、数据提取），并称单位成本智力高于 Claude Haiku 5.5 或 GPT-6 Luna，但在实际智能体任务上仍有差距。本窗 Simon Willison 撰文介绍同一发布，把它放在 Claude Haiku / GPT Luna 这一档。此条有别于既有 Muse Spaces / Voice。T2 二手，未见 Meta 官方页进 inbox，未伪造官网，未垫。",
-    "latest": null,
-    "cover": null,
-    "belowThreshold": true
-   },
-   {
-    "rank": 7,
-    "story": {
-     "publicId": "2026-11-11-anthropic-claude-meetings-office",
-     "title": "报道：Anthropic 推出 AI 办公套件与 Claude Meetings"
-    },
-    "heat": 18.6,
-    "trend": "new",
-    "trendPct": null,
-    "badges": [
-     "new"
-    ],
-    "participantCount": 2,
-    "sourceCount": 2,
-    "sourceNames": [
-     "The Verge · AI",
-     "TechCrunch · AI"
-    ],
-    "participants": [
-     {
-      "name": "The Verge · AI",
-      "kind": "editorial"
-     },
-     {
-      "name": "TechCrunch · AI",
-      "kind": "editorial"
-     }
-    ],
-    "spark": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     19.7,
-     19.2,
-     18.6
-    ],
-    "summary": "The Verge 报道 Anthropic 推出自有的 AI 办公套件，试图把能力从企业与编程工具扩展到日常办公。同一天 TechCrunch 报道 Anthropic 发布 Claude Meetings：会议进行中，Claude 可以起草正在讨论的计划、在白板上排出时间线、在聊天里回答问题，并调用已连接的工作应用去取数。本窗 inbox 未见 Anthropic 官方页。这是办公/会议产品，不是 Claude Fable 或 Mythos 模型发布，也不得并入上市进程。",
-    "latest": null,
-    "cover": null,
-    "belowThreshold": true
-   },
-   {
-    "rank": 8,
-    "story": {
-     "publicId": "2026-11-10-adobe-max-2026-agentic-ai",
-     "title": "报道：Adobe Max 推出智能体、MCP 与 Firefly 等新工具"
-    },
-    "heat": 16.8,
-    "trend": "up",
-    "trendPct": 68.0,
-    "badges": [
-     "rising"
-    ],
     "participantCount": 2,
     "sourceCount": 2,
     "sourceNames": [
@@ -4422,159 +3594,45 @@
      }
     ],
     "spark": [
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     null,
-     10.0,
-     19.5,
+     5.9,
+     5.8,
+     5.6,
+     19.7,
+     19.4,
      18.9,
-     18.4,
-     17.8,
-     17.3,
-     16.8
+     18.3,
+     18.6,
+     19.3,
+     18.7,
+     18.2,
+     17.7,
+     17.2,
+     16.7,
+     16.2,
+     15.7,
+     15.3,
+     14.8,
+     14.4,
+     14.0,
+     13.6,
+     13.2,
+     12.8,
+     16.1,
+     15.6
     ],
-    "summary": "TechCrunch 与 The Verge 报道 Adobe 在 Max 大会上更多地押注智能体式 AI：在 Photoshop、Premiere、Firefly 中加入智能体与新创作工具，推出 MCP 以及 Firefly 中的原型构建工具；The Verge 还报道 Photoshop、Lightroom 和 Premiere 的自动去除功能。属同一天 Adobe Max 产品发布。",
-    "latest": null,
-    "cover": null,
-    "belowThreshold": true
-   },
-   {
-    "rank": 9,
-    "story": {
-     "publicId": "2026-11-10-deepmind-gemini-robotics-2-5",
-     "title": "DeepMind 发布 Gemini Robotics 2.5：称是其最强视觉-语言-动作模型"
-    },
-    "heat": 14.2,
-    "trend": "up",
-    "trendPct": 140.7,
-    "badges": [
-     "rising"
-    ],
-    "participantCount": 2,
-    "sourceCount": 2,
-    "sourceNames": [
-     "The Decoder",
-     "Google DeepMind Blog"
-    ],
-    "participants": [
-     {
-      "name": "Google DeepMind Blog",
-      "kind": "editorial"
-     },
-     {
-      "name": "The Decoder",
-      "kind": "editorial"
-     }
-    ],
-    "spark": [
-     10.0,
-     9.7,
-     9.4,
-     9.1,
-     8.9,
-     8.6,
-     8.4,
-     8.1,
-     7.9,
-     7.7,
-     7.5,
-     7.2,
-     7.0,
-     6.8,
-     6.6,
-     6.5,
-     6.3,
-     6.1,
-     5.9,
-     5.8,
-     5.6,
-     5.4,
-     15.0,
-     14.6,
-     14.2
-    ],
-    "summary": "DeepMind 官方博客宣布 Gemini Robotics 2.5，称这是其最强的视觉-语言-动作（VLA）模型，可提升机器人的灵巧性、可靠性与安全性，并加速现实世界中的通用操作能力。这是机器人模型发布，不是 Gemini 4 Carbon，也不是智元 WITA-Omni。",
-    "latest": "The Decoder 报道称，Gemini Robotics 2.5 已与 Apptronik 在匈牙利和德国的奔驰产线上试点，人形机器人 Apollo 2 分拣金属零件的准确率约 96%。",
+    "summary": "英伟达董事会宣布黄仁勋辞去总裁、CEO 及董事，即时生效；CFO Colette Kress 任临时 CEO 并兼任财务官，直至选定常任继任者。Harvey C. Jones 出任史上首位董事会主席。11 月 17 日仍将发布三季度财报。",
+    "latest": "本窗续报包括：民主党议员启动对英伟达的调查并就黄仁勋与特朗普的关系发函；特朗普就黄仁勋与疑似中方人员关系发表国家安全评论；有报道称董事会暂不考虑请回黄仁勋；英伟达在黄仁勋离任后新设国家安全常设委员会，负责安全政策、出口管制与全球贸易风险的董事会监督。这些都不改变官方辞职与临时 CEO 任命的基本事实，也不抬既有注意力分数。",
     "cover": null
-   },
-   {
-    "rank": 10,
-    "story": {
-     "publicId": "2026-11-09-google-four-tpu-variants-one-year",
-     "title": "报道：谷歌一年内推出四款 TPU 变体，并发布 TPU 8tx 与 8i Max"
-    },
-    "heat": 12.9,
-    "trend": "up",
-    "trendPct": 168.8,
-    "badges": [
-     "rising"
-    ],
-    "participantCount": 2,
-    "sourceCount": 2,
-    "sourceNames": [
-     "TechCrunch · AI",
-     "The Decoder"
-    ],
-    "participants": [
-     {
-      "name": "TechCrunch · AI",
-      "kind": "editorial"
-     },
-     {
-      "name": "The Decoder",
-      "kind": "editorial"
-     }
-    ],
-    "spark": [
-     8.2,
-     7.9,
-     7.7,
-     7.5,
-     7.3,
-     7.1,
-     6.9,
-     6.7,
-     6.5,
-     6.3,
-     6.1,
-     5.9,
-     5.8,
-     5.6,
-     5.5,
-     5.3,
-     5.1,
-     5.0,
-     4.9,
-     4.7,
-     14.6,
-     14.1,
-     13.7,
-     13.3,
-     13.0
-    ],
-    "summary": "The Decoder：谷歌在 TPU 8 系列上再推两款专用变体——TPU 8tx 称处理时仍可保持数据加密，TPU 8i Max 把两颗芯片封装在一起以加倍算力与内存；并称近 100 家外部客户、一年内共四款 TPU 变体，对标英伟达 GPU。本窗 TechCrunch 亦报道谷歌推出两款专用芯片，分别面向机密训练和更大内存容量，属于同一 TPU 8tx / 8i Max 产品线。本窗 inbox 未见谷歌官方页。",
-    "latest": null,
-    "cover": null,
-    "belowThreshold": true
    }
   ]
  },
  "dailyIndex": [
+  {
+   "key": "2026-11-11",
+   "issueNumber": 21,
+   "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+   "count": 8
+  },
   {
    "key": "2026-11-10",
    "issueNumber": 20,
@@ -4627,7 +3685,7 @@
    "key": "2026-10-30",
    "issueNumber": 12,
    "title": null,
-   "count": 5
+   "count": 6
   },
   {
    "key": "2026-10-29",
@@ -4698,28 +3756,40 @@
  ],
  "daily": {
   "kind": "daily",
-  "key": "2026-11-10",
-  "issueNumber": 20,
-  "title": "AI日报 · 2026-11-10",
-  "generatedAt": "2026-11-10T00:36:44.000Z",
+  "key": "2026-11-11",
+  "issueNumber": 21,
+  "title": "AI日报 · 2026-11-11",
+  "generatedAt": "2026-11-11T00:32:15.000Z",
   "lead": {
-   "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
-   "leadParagraph": "Anthropic 官方发布说明（Claude Platform release notes，11 月 9 日）：推出 Claude Fable 5.2（claude-fable-5-2），面向高要求推理与长程智能体工作；Claude Mythos 5.2（claude-mythos-5-2）能力相同，仅向通过 Anthropic 核验计划（如 Cyber Verification Program）的机构开放。两款模型均为 100 万 token 上下文、最长 12.8 万输出 token，并始终开启自适应思考（adaptive thinking）；定价为输入 8 美元/百万 token、输出 40 美元/百万 token（5.1 代为 10/50 美元）。The Decoder 本窗跟进称其巩固 Anthropic 在 IPO 前的领先地位；TechCrunch 亦报道发布，并提到 RSI 担忧背景。属官方双模型正式发布，不是此前关于 Fable/Opus 的传闻。"
+   "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+   "leadParagraph": "2026-10-28，Google DeepMind 宣布 Gemini 4 Carbon，称其为目前最强一代，在 Artificial Analysis Intelligence Index v5.0 排名第一（59），并在 SEC-bench Pro、ExploitGym、CWE-bench 等网络安全评测领先；内部称可支撑多日长程工程任务。当时在 Argon 两周后发布，并称正按美国政府自愿预发布测试流程推进，本周起先向部分网络安全防御方开放，再经 Fairwind 计划扩至可信伙伴；面向开发者与消费者的产品面当时仍待开放。入门价与 Argon 相同：每百万输入/输出 token 2/10 美元。2026-11-10，DeepMind 官方宣布 Gemini 4 Carbon 现已全面开放，面向开发者、企业、科研人员与消费者开放；The Verge 亦报道面向公众推出。IT之家随后报道，Google 与 Artificial Analysis 推出多模态知识智能体基准 MKA，Gemini 4 Carbon 取得第二，完成任务的平均成本约为第一名的六分之一。"
   },
-  "leadItemId": "sha256:4182359e79e632d3",
-  "overview": "Anthropic 发布 Fable 5.2 与 Mythos 5.2。",
+  "leadItemId": "sha256:3e32bae570ff21ee",
+  "overview": "今日日报收录 2 条：DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升、OpenAI 在 ChatGPT 中推出 Businesses。快讯 4 条。",
   "highlights": [
    {
-    "itemId": "sha256:4182359e79e632d3",
-    "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
-    "summary": "Anthropic 官方发布说明（Claude Platform release notes，11 月 9 日）：推出 Claude Fable 5.2（claude-fable-5-2），面向高要求推理与长程智能体工作；Claude Mythos 5.2（claude-mythos-5-2）能力相同，仅向通过 Anthropic 核验计划（如 Cyber Verification Program）的机构开放。两款模型均为 100 万 token 上下文、最长 12.8 万输出 token，并始终开启自适应思考（adaptive thinking）；定价为输入 8 美元/百万 token、输出 40 美元/百万 token（5.1 代为 10/50 美元）。The Decoder 本窗跟进称其巩固 Anthropic 在 IPO 前的领先地位；TechCrunch 亦报道发布，并提到 RSI 担忧背景。属官方双模型正式发布，不是此前关于 Fable/Opus 的传闻。",
-    "sourceName": "Claude Platform Release Notes",
-    "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview#claude-fable-5-2",
+    "itemId": "sha256:3e32bae570ff21ee",
+    "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+    "summary": "2026-10-28，Google DeepMind 宣布 Gemini 4 Carbon，称其为目前最强一代，在 Artificial Analysis Intelligence Index v5.0 排名第一（59），并在 SEC-bench Pro、ExploitGym、CWE-bench 等网络安全评测领先；内部称可支撑多日长程工程任务。当时在 Argon 两周后发布，并称正按美国政府自愿预发布测试流程推进，本周起先向部分网络安全防御方开放，再经 Fairwind 计划扩至可信伙伴；面向开发者与消费者的产品面当时仍待开放。入门价与 Argon 相同：每百万输入/输出 token 2/10 美元。2026-11-10，DeepMind 官方宣布 Gemini 4 Carbon 现已全面开放，面向开发者、企业、科研人员与消费者开放；The Verge 亦报道面向公众推出。IT之家随后报道，Google 与 Artificial Analysis 推出多模态知识智能体基准 MKA，Gemini 4 Carbon 取得第二，完成任务的平均成本约为第一名的六分之一。",
+    "sourceName": "Google DeepMind Blog",
+    "sourceUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
     "sourceIconUrl": null,
     "firstParty": true,
-    "publishedAt": "2026-11-09T00:00:00.000Z",
+    "publishedAt": "2026-10-28T17:00:58.000Z",
     "available": true,
-    "otherSources": 6
+    "otherSources": 4
+   },
+   {
+    "itemId": "sha256:991ad48e8559b2fe",
+    "title": "OpenAI 在 ChatGPT 中推出 Businesses",
+    "summary": "OpenAI 官方宣布在 ChatGPT 推出 Businesses：商家可以管理自己的商业信息、查看曝光情况，并把兴趣转化成行动。The Verge 报道将向符合条件的美国电商和在线服务企业提供已认证的「Business Agents」，用户可与代表品牌的智能体对话（例如比价）；该功能作为当天公布的一套商业功能的一部分进入测试。TechCrunch 报道称同时推出商业资料（business profiles），意在让 ChatGPT 更接近发现引擎。这是 ChatGPT 的商业产品功能，不是新模型发布。",
+    "sourceName": "OpenAI News",
+    "sourceUrl": "https://openai.com/index/introducing-businesses-chatgpt",
+    "sourceIconUrl": null,
+    "firstParty": true,
+    "publishedAt": "2026-11-10T10:00:00.000Z",
+    "available": true,
+    "otherSources": 4
    }
   ],
   "sections": [
@@ -4728,16 +3798,28 @@
     "summary": null,
     "items": [
      {
-      "itemId": "sha256:4182359e79e632d3",
-      "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
-      "summary": "Anthropic 官方发布说明（Claude Platform release notes，11 月 9 日）：推出 Claude Fable 5.2（claude-fable-5-2），面向高要求推理与长程智能体工作；Claude Mythos 5.2（claude-mythos-5-2）能力相同，仅向通过 Anthropic 核验计划（如 Cyber Verification Program）的机构开放。两款模型均为 100 万 token 上下文、最长 12.8 万输出 token，并始终开启自适应思考（adaptive thinking）；定价为输入 8 美元/百万 token、输出 40 美元/百万 token（5.1 代为 10/50 美元）。The Decoder 本窗跟进称其巩固 Anthropic 在 IPO 前的领先地位；TechCrunch 亦报道发布，并提到 RSI 担忧背景。属官方双模型正式发布，不是此前关于 Fable/Opus 的传闻。",
-      "sourceName": "Claude Platform Release Notes",
-      "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview#claude-fable-5-2",
+      "itemId": "sha256:3e32bae570ff21ee",
+      "title": "DeepMind 发布 Gemini 4 Carbon：编码与网络安全能力跃升",
+      "summary": "2026-10-28，Google DeepMind 宣布 Gemini 4 Carbon，称其为目前最强一代，在 Artificial Analysis Intelligence Index v5.0 排名第一（59），并在 SEC-bench Pro、ExploitGym、CWE-bench 等网络安全评测领先；内部称可支撑多日长程工程任务。当时在 Argon 两周后发布，并称正按美国政府自愿预发布测试流程推进，本周起先向部分网络安全防御方开放，再经 Fairwind 计划扩至可信伙伴；面向开发者与消费者的产品面当时仍待开放。入门价与 Argon 相同：每百万输入/输出 token 2/10 美元。2026-11-10，DeepMind 官方宣布 Gemini 4 Carbon 现已全面开放，面向开发者、企业、科研人员与消费者开放；The Verge 亦报道面向公众推出。IT之家随后报道，Google 与 Artificial Analysis 推出多模态知识智能体基准 MKA，Gemini 4 Carbon 取得第二，完成任务的平均成本约为第一名的六分之一。",
+      "sourceName": "Google DeepMind Blog",
+      "sourceUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
       "sourceIconUrl": null,
       "firstParty": true,
-      "publishedAt": "2026-11-09T00:00:00.000Z",
+      "publishedAt": "2026-10-28T17:00:58.000Z",
       "available": true,
-      "otherSources": 6
+      "otherSources": 4
+     },
+     {
+      "itemId": "sha256:ba0fcf4e325b4115",
+      "title": "DeepMind 发布 AlphaGenome 2：预测变异如何影响特定细胞",
+      "summary": "DeepMind 发布下一代 DNA 序列模型 AlphaGenome 2，用于预测 DNA 序列及其变异如何影响特定人类细胞类型，并称可帮助寻找疾病的细胞根源。 官方称新模型改为按单一生物条件做预测，并在超过一亿个单个细胞剖面（profiles）上训练；在 TenK10K 免疫细胞数据上，识别到的因果变异比例约为原版 AlphaGenome 的两倍（30% 对 16%）。AlphaGenome 2 即日起通过 AlphaGenome API 向非商业研究开放，商业研究为私有预览；官方注明仅供研究，尚未用于临床或诊断。",
+      "sourceName": "Google DeepMind Blog",
+      "sourceUrl": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+      "sourceIconUrl": null,
+      "firstParty": true,
+      "publishedAt": "2026-11-11T15:00:15.000Z",
+      "available": true,
+      "otherSources": 1
      },
      {
       "itemId": "sha256:0e9fb0eb84f13acf",
@@ -4770,6 +3852,30 @@
     "summary": null,
     "items": [
      {
+      "itemId": "sha256:991ad48e8559b2fe",
+      "title": "OpenAI 在 ChatGPT 中推出 Businesses",
+      "summary": "OpenAI 官方宣布在 ChatGPT 推出 Businesses：商家可以管理自己的商业信息、查看曝光情况，并把兴趣转化成行动。The Verge 报道将向符合条件的美国电商和在线服务企业提供已认证的「Business Agents」，用户可与代表品牌的智能体对话（例如比价）；该功能作为当天公布的一套商业功能的一部分进入测试。TechCrunch 报道称同时推出商业资料（business profiles），意在让 ChatGPT 更接近发现引擎。这是 ChatGPT 的商业产品功能，不是新模型发布。",
+      "sourceName": "OpenAI News",
+      "sourceUrl": "https://openai.com/index/introducing-businesses-chatgpt",
+      "sourceIconUrl": null,
+      "firstParty": true,
+      "publishedAt": "2026-11-10T10:00:00.000Z",
+      "available": true,
+      "otherSources": 4
+     },
+     {
+      "itemId": "sha256:4182359e79e632d3",
+      "title": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2",
+      "summary": "Anthropic 官方发布说明（Claude Platform release notes，11 月 9 日）：推出 Claude Fable 5.2（claude-fable-5-2），面向高要求推理与长程智能体工作；Claude Mythos 5.2（claude-mythos-5-2）能力相同，仅向通过 Anthropic 核验计划（如 Cyber Verification Program）的机构开放。两款模型均为 100 万 token 上下文、最长 12.8 万输出 token，并始终开启自适应思考（adaptive thinking）；定价为输入 8 美元/百万 token、输出 40 美元/百万 token（5.1 代为 10/50 美元）。本窗跟进包括量子位整理 Anthropic Claude Fable 5.2 发布后的首批实测与网友演示，称覆盖作曲、拍片和 3D 建模等生成任务。属官方双模型正式发布，不是此前关于 Fable/Opus 的传闻，也不得并入上市进程事件。",
+      "sourceName": "Claude Platform Release Notes",
+      "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview#october-20-2026-2",
+      "sourceIconUrl": null,
+      "firstParty": true,
+      "publishedAt": "2026-10-20T00:00:00.000Z",
+      "available": true,
+      "otherSources": 6
+     },
+     {
       "itemId": "sha256:5cd7ff8934485154",
       "title": "NVIDIA 宣布 Kubernetes Engine（NVKE），用于在 GPU 基础设施上管理集群",
       "summary": "NVIDIA 技术博客宣布推出 NVIDIA Kubernetes Engine（NVKE），以及一个配套开源项目，用于在 GPU 基础设施上构建和运营托管 Kubernetes 服务。",
@@ -4798,67 +3904,66 @@
   ],
   "flashes": [
    {
-    "itemId": "sha256:952d2516af2e9054",
-    "title": "OpenAI：上线 Control Room，可在 35 秒内叫停研究侧模型作业",
-    "summary": "rss-openai-news T1 一手安全基础设施说明；诚实分 58≪60",
-    "sourceName": "OpenAI News",
-    "sourceUrl": "https://openai.com/index/control-room",
+    "itemId": "sha256:d48977b6fbc84b1e",
+    "title": "Microsoft：发现 Lazarus 后门，可重编程休眠神经元劫持 AI 智能体",
+    "summary": "微软研究院：发现 Lazarus 后门，可重编程休眠神经元劫持智能体。",
+    "sourceName": "Microsoft Research Blog",
+    "sourceUrl": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
     "sourceIconUrl": null,
     "firstParty": false,
-    "publishedAt": "2026-11-09T13:00:00.000Z",
+    "publishedAt": "2026-11-10T20:52:56.000Z",
     "available": true
    },
    {
-    "itemId": "sha256:009b316662ff4c3f",
-    "title": "Google：发布 Language Explorer，可视化全球语言多样性",
-    "summary": "rss-google-research T1 一手；博物馆展陈/可视化工具，非模",
-    "sourceName": "Google Research Blog",
-    "sourceUrl": "https://research.google/blog/exploring-the-worlds-languages-with-language-explorer/",
+    "itemId": "sha256:3b53bf6090ab9868",
+    "title": "报道：OpenAI 收购旅行创业公司 Odessia",
+    "summary": "报道称 OpenAI 收购旅行创业公司 Odessia，尚未说明旅行业务计划。",
+    "sourceName": "TechCrunch · AI",
+    "sourceUrl": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
     "sourceIconUrl": null,
     "firstParty": false,
-    "publishedAt": "2026-11-09T20:29:39.000Z",
+    "publishedAt": "2026-11-10T21:08:52.000Z",
     "available": true
    },
    {
-    "itemId": "sha256:02e9abf47eaf3fa0",
-    "title": "OpenAI：CodeRabbit 用 Codex 与 Daybreak 将出货量提升约 20 倍",
-    "summary": "rss-openai-news T1 客户案例，不是新的 Daybreak 发布",
-    "sourceName": "OpenAI News",
-    "sourceUrl": "https://openai.com/index/coderabbit-codex-daybreak",
+    "itemId": "sha256:ae543fdc68f7cb26",
+    "title": "报道：纽约 AI 安全法生效，OpenAI 与 Anthropic 将面临新监管",
+    "summary": "纽约即将执行 AI 安全法，OpenAI 与 Anthropic 将面临新监管。",
+    "sourceName": "TechCrunch · AI",
+    "sourceUrl": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
     "sourceIconUrl": null,
     "firstParty": false,
-    "publishedAt": "2026-11-09T08:00:00.000Z",
+    "publishedAt": "2026-11-10T20:52:13.000Z",
     "available": true
    },
    {
-    "itemId": "sha256:1cd01b15863e291a",
-    "title": "演示：Simon Willison 用 Claude 定位神秘蜂鸣源",
-    "summary": "rss-simon-willison T2 个人技术随笔；44≪76 未垫。",
-    "sourceName": "Simon Willison",
-    "sourceUrl": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
+    "itemId": "sha256:8128c7853b28b767",
+    "title": "跟进：报道称 Anthropic 七位创始人计划在 IPO 中各套现约 2.5 亿美元",
+    "summary": "Anthropic 七位联合创始人计划在 IPO 中各套现约 2.5 亿美元。",
+    "sourceName": "TechCrunch · AI",
+    "sourceUrl": "https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo/",
     "sourceIconUrl": null,
     "firstParty": false,
-    "publishedAt": "2026-11-09T23:57:21.000Z",
+    "publishedAt": "2026-10-28T01:15:28.000Z",
     "available": true
    }
   ],
   "cover": {
-   "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK269_ANTHROPIC_2_B.jpg?quality=90&strip=all&crop=0,0,100,100",
+   "url": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/STK255_Google_Gemini_A.jpg?quality=90&strip=all&crop=0,0,100,100",
    "width": null,
    "height": null,
-   "alt": "Anthropic logo on an orange and gray background.",
+   "alt": "An image showing the Gemini logo on a dark blue background",
    "caption": null
   },
   "metrics": {
-   "totalEvents": 5,
-   "sourcesCount": 9,
-   "firstPartyEvents": 5,
-   "modelsReleased": 3,
-   "mainCardNote": "今日仅 5 条达收录标准"
+   "totalEvents": 8,
+   "sourcesCount": 11,
+   "firstPartyEvents": 8,
+   "modelsReleased": 4
   },
-  "readingMinutes": 3,
-  "prev": "2026-11-07",
+  "readingMinutes": 5,
+  "prev": "2026-11-10",
   "next": null
  },
- "today": "2026-11-10"
+ "today": "2026-11-11"
 }
