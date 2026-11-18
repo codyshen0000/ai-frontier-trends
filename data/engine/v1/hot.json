@@ -1,122 +1,126 @@
 {
- "computedAt": "2026-11-17T16:39:00.000Z",
- "windowHours": 48,
- "entries": [
-  {
-   "rank": 1,
-   "story": {
-    "publicId": "2026-11-17-openai-daybreak-nato-allies",
-    "title": "OpenAI 向北约及欧洲盟友提供 Daybreak 等网络安全能力"
-   },
-   "heat": 15.7,
-   "trend": "up",
-   "trendPct": 112.2,
-   "badges": [
-    "rising"
-   ],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "The Decoder",
-    "OpenAI News"
-   ],
-   "participants": [
+  "computedAt": "2026-11-17T16:39:00.000Z",
+  "windowHours": 48,
+  "entries": [
     {
-     "name": "OpenAI News",
-     "kind": "editorial"
+      "rank": 1,
+      "story": {
+        "publicId": "2026-11-17-openai-daybreak-nato-allies",
+        "title": "OpenAI 向北约及欧洲盟友提供 Daybreak 等网络安全能力"
+      },
+      "heat": 15.7,
+      "trend": "up",
+      "trendPct": 112.2,
+      "badges": [
+        "rising"
+      ],
+      "participantCount": 2,
+      "sourceCount": 2,
+      "sourceNames": [
+        "The Decoder",
+        "OpenAI News"
+      ],
+      "participants": [
+        {
+          "name": "OpenAI News",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Decoder",
+          "kind": "editorial"
+        }
+      ],
+      "spark": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        10,
+        9.7,
+        9.4,
+        9.2,
+        8.9,
+        8.7,
+        8.4,
+        8.2,
+        7.9,
+        7.7,
+        7.5,
+        7.3,
+        7.1,
+        6.9,
+        6.7,
+        6.5,
+        16
+      ],
+      "summary": null,
+      "latest": null,
+      "cover": null,
+      "rankDelta": 0,
+      "heatDeltaPct": null
     },
     {
-     "name": "The Decoder",
-     "kind": "editorial"
+      "rank": 2,
+      "story": {
+        "publicId": "2026-10-29-nvidia-jensen-huang-china-spy",
+        "title": "英伟达宣布黄仁勋辞去总裁、CEO 及董事，CFO Colette Kress 任临时 CEO"
+      },
+      "heat": 6,
+      "trend": "down",
+      "trendPct": -13,
+      "badges": [],
+      "participantCount": 1,
+      "sourceCount": 2,
+      "sourceNames": [
+        "TechCrunch · AI",
+        "The Verge · AI"
+      ],
+      "participants": [
+        {
+          "name": "TechCrunch · AI",
+          "kind": "editorial"
+        },
+        {
+          "name": "The Verge · AI",
+          "kind": "editorial"
+        }
+      ],
+      "spark": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        9.7,
+        9.5,
+        9.2,
+        8.9,
+        8.7,
+        8.4,
+        8.2,
+        7.9,
+        7.7,
+        7.5,
+        7.3,
+        7.1,
+        6.9,
+        6.7,
+        6.5,
+        6.3,
+        6.1,
+        6
+      ],
+      "summary": null,
+      "latest": "本窗续报包括：民主党议员启动对英伟达的调查并就黄仁勋与特朗普的关系发函；特朗普就黄仁勋与疑似中方人员关系发表国家安全评论；有报道称董事会暂不考虑请回黄仁勋；英伟达在黄仁勋离任后新设国家安全常设委员会，负责安全政策、出口管制与全球贸易风险的董事会监督。这些都不改变官方辞职与临时 CEO 任命的基本事实，也不抬既有注意力分数。",
+      "cover": null,
+      "rankDelta": 0,
+      "heatDeltaPct": -60.8
     }
-   ],
-   "spark": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    10.0,
-    9.7,
-    9.4,
-    9.2,
-    8.9,
-    8.7,
-    8.4,
-    8.2,
-    7.9,
-    7.7,
-    7.5,
-    7.3,
-    7.1,
-    6.9,
-    6.7,
-    6.5,
-    16.0
-   ],
-   "summary": null,
-   "latest": null,
-   "cover": null
-  },
-  {
-   "rank": 2,
-   "story": {
-    "publicId": "2026-10-29-nvidia-jensen-huang-china-spy",
-    "title": "英伟达宣布黄仁勋辞去总裁、CEO 及董事，CFO Colette Kress 任临时 CEO"
-   },
-   "heat": 15.3,
-   "trend": "flat",
-   "trendPct": 7.7,
-   "badges": [],
-   "participantCount": 2,
-   "sourceCount": 2,
-   "sourceNames": [
-    "TechCrunch · AI",
-    "The Verge · AI"
-   ],
-   "participants": [
-    {
-     "name": "TechCrunch · AI",
-     "kind": "editorial"
-    },
-    {
-     "name": "The Verge · AI",
-     "kind": "editorial"
-    }
-   ],
-   "spark": [
-    5.9,
-    5.8,
-    5.6,
-    19.7,
-    19.4,
-    18.9,
-    18.3,
-    18.6,
-    19.3,
-    18.7,
-    18.2,
-    17.7,
-    17.2,
-    16.7,
-    16.2,
-    15.7,
-    15.3,
-    14.8,
-    14.4,
-    14.0,
-    13.6,
-    13.2,
-    12.8,
-    16.1,
-    15.6
-   ],
-   "summary": null,
-   "latest": "本窗续报包括：民主党议员启动对英伟达的调查并就黄仁勋与特朗普的关系发函；特朗普就黄仁勋与疑似中方人员关系发表国家安全评论；有报道称董事会暂不考虑请回黄仁勋；英伟达在黄仁勋离任后新设国家安全常设委员会，负责安全政策、出口管制与全球贸易风险的董事会监督。这些都不改变官方辞职与临时 CEO 任命的基本事实，也不抬既有注意力分数。",
-   "cover": null
-  }
- ]
+  ]
 }
